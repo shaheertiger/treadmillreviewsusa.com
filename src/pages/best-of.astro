@@ -1,0 +1,51 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const categories = [
+  {
+    name: 'Home Treadmills',
+    id: 'home',
+    guides: [
+      { title: 'Best Treadmills for Home Use (2026)', description: '7 premium and mid-range treadmills tested over 6 months for motor strength, cushioning, and connectivity.', badge: '#1 Guide', url: '/best-treadmill-for-home-reviews' },
+      { title: 'Best Folding Treadmills', description: 'Space-saving picks tested for real folded footprint, fold time, and hinge durability.', badge: 'Top Pick', url: '/best-folding-treadmill-reviews' },
+      { title: 'Best Treadmills Under $1,000', description: 'Budget treadmills that don’t feel cheap — ranked on motor durability and real value for money.', badge: 'Top Pick', url: '/best-treadmill-under-1000-reviews' },
+    ],
+  },
+];
+---
+<Layout
+  title="Best Treadmills 2026 | All Buying Guides | Treadmill Reviews USA"
+  description="Every Treadmill Reviews USA buying guide in one place — home treadmills, folding treadmills, and budget picks under $1,000, all independently tested."
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#FF5A1F]/10 text-[#FF5A1F] text-xs font-black uppercase tracking-widest border border-[#FF5A1F]/20 mb-6">
+        Updated for 2026
+      </span>
+      <h1 class="text-4xl lg:text-5xl font-black text-gray-900 mb-6">Best Treadmills of 2026</h1>
+      <p class="text-lg text-gray-600 leading-relaxed">
+        Every buying guide we've published, organized by category. Each list is built from hands-on testing, not spec-sheet guessing.
+      </p>
+    </div>
+
+    {categories.map(category => (
+      <div id={category.id} class="mb-16 scroll-mt-24">
+        <h2 class="text-2xl font-black text-gray-900 mb-6 pb-3 border-b border-gray-200">{category.name}</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {category.guides.map(guide => (
+            <a href={guide.url} class="bg-white border border-gray-100 rounded-2xl p-6 hover:shadow-lg hover:border-[#0F62FE] transition-all no-underline block group">
+              <span class="inline-block bg-[#0F62FE]/10 text-[#0F62FE] px-3 py-1 rounded-full text-xs font-bold mb-4">{guide.badge}</span>
+              <h3 class="text-lg font-black text-gray-900 group-hover:text-[#0F62FE] mb-2">{guide.title}</h3>
+              <p class="text-gray-500 text-sm leading-relaxed">{guide.description}</p>
+            </a>
+          ))}
+        </div>
+      </div>
+    ))}
+
+    <div class="bg-[#0F62FE]/5 border border-[#0F62FE]/10 rounded-2xl p-8 text-center">
+      <h3 class="text-xl font-black text-gray-900 mb-2">More guides coming soon</h3>
+      <p class="text-gray-600">We're continually testing new treadmills and treadmill accessories. Check back for commercial-grade, walking pad, and incline-focused guides.</p>
+    </div>
+  </div>
+</Layout>
