@@ -11,6 +11,7 @@ export default defineConfig({
   integrations: [
     react(),
     sitemap({
+      xslURL: '/sitemap.xsl',
       serialize(item) {
         const url = item.url.replace(/\/$/, '');
         const base = 'https://www.treadmillreviewsusa.com';
