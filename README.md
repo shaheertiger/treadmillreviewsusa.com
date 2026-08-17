@@ -35,8 +35,15 @@ Long-form blog/editorial pages (also 2,500+ words, same validator):
 
 - `/treadmill-reviews-2026` — testing methodology, scoring rubric, and category winners across all three flagship guides.
 - `/treadmill-buying-guide-2026` — educational buying guide (motor power, deck size, folding vs. fixed, budget tiers) that funnels readers into the flagship guides.
+- `/treadmill-buyers-guide` — a step-by-step purchase checklist, complementary to (and cross-linked with) the guide above.
 
-All outbound product links use Amazon search URLs tagged with the `sktiger-20` Associates ID (`rel="sponsored nofollow noopener"`). Swap in real ASIN/product links and product photography as they become available.
+Individual model reviews, brand hub pages, and category/price roundups (also 2,500+ words each, same validator) — recreated from prior-site page-performance data. Browse the full set from `/best-of`, or see below:
+
+- **Brand hubs**: `/nordictrack`, `/proform-treadmill`, `/sole-fitness`, `/life-fitness`, `/matrix-fitness`, `/bowflex`
+- **Model reviews**: NordicTrack (`/nordictrack-commercial-1750-treadmill`, `-2450-`, `-2950-`, `-new-commercial-1750-`, `-c-700-`, `-c-990-`, `-c-1650-`, `-x22i-incline-trainer-`, `-x9i-incline-trainer-`), ProForm (`/proform-pro-2000-treadmill`, `-power-995i-`, `-power-1295i-`), Sole (`/sole-f63-treadmill`, `/sole-f65-treadmill`), Life Fitness (`/life-fitness-t3-treadmill`, `/life-fitness-platinum-club-series-treadmill`), Matrix (`/matrix-fitness-t7xe-treadmill`), Bowflex (`/bowflex-max-trainer-m7`, `/bowflex-max-trainer-m5` — cardio machines, not treadmills, framed honestly as such)
+- **Category/price roundups**: `/best-incline-treadmills`, `/commercial-treadmills`, `/best-treadmills`, `/best-folding-treadmills` (quick picks by use case, distinct from the flagship folding guide), `/folding-treadmills` (fold-mechanism primer), `/treadmills-under-1500`, `/treadmills-over-2500`, `/home-treadmills` (routing hub), `/best-treadmills-for-home`
+
+All outbound product links use Amazon search URLs tagged with the `sktiger-20` Associates ID (`rel="sponsored nofollow noopener"`). Swap in real ASIN/product links and product photography as they become available. Product specs on the newly recreated pages are editorial approximations in the site's existing style (same convention as the original flagship guides) — verify against manufacturer data before treating any number as authoritative.
 
 ## Development
 
