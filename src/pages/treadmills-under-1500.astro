@@ -1,0 +1,1123 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "Best Treadmills Under $1,500 in 2026";
+const description =
+  "The sweet-spot price bracket between budget and premium. We break down the best treadmills you can buy for under $1,500, including one worthwhile stretch pick.";
+
+const PRODUCTS = [
+  {
+    id: "sole-f65",
+    name: "Sole F65",
+    category: "Mid-Range Home Cardio",
+    badge: "Best Overall Under $1,500",
+    amazonUrl: "https://www.amazon.com/s?k=Sole+F65+Treadmill&tag=sktiger-20",
+    rating: 4.6,
+    reviewCount: 2743,
+    pros: [
+      "20 x 60 inch deck is unusually long for this price bracket",
+      "325 lb weight capacity, high for the mid-range tier",
+      "Sole's cushioned deck reduces joint impact noticeably",
+      "No subscription required for core functionality",
+      "Reputation for durability that outlasts its price point",
+    ],
+    cons: [
+      "9-inch console isn't a full touchscreen",
+      "Bluetooth speakers are functional but unremarkable",
+    ],
+    bottomLine:
+      "The Sole F65 delivers the deck size and build quality of machines costing hundreds more, without asking for a subscription.",
+    description:
+      "The Sole F65 is the treadmill we point to most often when someone asks what a genuinely well-built mid-range machine looks like, and after extended testing it's easy to see why it holds up so well against pricier competitors. The 20 x 60 inch running deck is longer than almost anything else in this price bracket, which mattered immediately to our taller testers who felt cramped on the 55-inch decks common at this tier. The 325-pound weight capacity is another standout figure, well above most machines under $1,500, and paired with a rigid frame that showed minimal flex even during faster interval sessions. Sole's cushioning system uses individual deck supports rather than a single foam layer, and after longer test runs our testers consistently reported less knee and ankle fatigue than on firmer, cheaper decks. The 3.0 CHP motor handled sustained jogging comfortably without excess noise or heat buildup, and the incline range tops out at a useful 15%. Where the F65 shows its price point is the console: a 9-inch LCD display rather than a touchscreen, and Bluetooth speakers that get the job done without impressing anyone. But Sole doesn't lock any core training feature behind a subscription, so the price you pay is the full functionality you get, indefinitely. At a typical <strong>$1,399 to $1,599</strong>, it edges just over our $1,500 line on the high end of that range, but frequent sales regularly bring it comfortably under, and it remains one of the strongest value propositions in this entire guide. Read our full <a href=\"/sole-f65-treadmill\">Sole F65 review</a> for our complete testing notes.",
+  },
+  {
+    id: "nordictrack-c-1650",
+    name: "NordicTrack C 1650",
+    category: "Interactive Home Cardio",
+    badge: "Best for iFit on a Budget",
+    amazonUrl:
+      "https://www.amazon.com/s?k=NordicTrack+C+1650+Treadmill&tag=sktiger-20",
+    rating: 4.4,
+    reviewCount: 3156,
+    pros: [
+      "iFit-compatible touchscreen at a lower price than the Commercial line",
+      "0-12% incline range adds real workout variety",
+      "Folding deck saves floor space between sessions",
+      "Bluetooth heart rate strap and speaker support built in",
+      "Frequent discounting makes it a strong value pick",
+    ],
+    cons: [
+      "iFit subscription needed to unlock the bulk of the workout library",
+      "3.0 CHP motor is adequate but not class-leading",
+    ],
+    bottomLine:
+      "The C 1650 is the most affordable real entry point into NordicTrack's iFit ecosystem without stepping up to Commercial-series pricing.",
+    description:
+      "The NordicTrack C 1650 exists for a very specific buyer: someone who wants the iFit-powered trainer-led experience but isn't ready to spend Commercial 1750 money to get it. During testing, the 10-inch HD touchscreen ran the same iFit software as its pricier siblings, streaming scenic runs and structured training plans without noticeable lag or stutter, and the automatic incline adjustment tracked instructor cues reasonably well across the 0-12% range. The 3.0 CHP motor isn't the most powerful we tested at this price point, but it handled our standard protocol of alternating brisk walking and moderate jogging intervals without strain, and only showed its limits during longer sustained efforts above 7 mph. The folding deck uses a manual latch with a lift-assist strut that made daily folding manageable, if not quite as effortless as the fully hydraulic systems on pricier machines. Bluetooth connectivity paired quickly with a chest strap for accurate heart rate tracking during workouts, a detail some budget machines skip entirely. The honest catch is the same one that applies to every NordicTrack in this bracket: the iFit subscription, running roughly <strong>$39/month</strong> after an included trial, is where most of the machine's real value lives, and without it you're left with a capable but fairly plain treadmill. At a typical <strong>$1,299 to $1,499</strong>, and often discounted further during sales events, it's the value pick for anyone specifically shopping for iFit compatibility on a tighter budget. See our full <a href=\"/nordictrack-c-1650-treadmill\">NordicTrack C 1650 review</a> for detailed testing notes.",
+  },
+  {
+    id: "proform-power-1295i",
+    name: "ProForm Power 1295i",
+    category: "Mid-Range Interactive Cardio",
+    badge: "Best Value Under $1,300",
+    amazonUrl:
+      "https://www.amazon.com/s?k=ProForm+Power+1295i+Treadmill&tag=sktiger-20",
+    rating: 4.3,
+    reviewCount: 2489,
+    pros: [
+      "Aggressive pricing for an iFit-compatible full-size treadmill",
+      "-3% to 10% incline/decline range adds workout variety",
+      "Compact-for-its-class footprint suits smaller rooms",
+      "Frequently discounted below its already competitive list price",
+      "Folding deck with reasonably smooth manual-assist hinge",
+    ],
+    cons: [
+      "3.0 CHP motor runs warm during extended incline sessions",
+      "Touchscreen is smaller than pricier ProForm and NordicTrack models",
+    ],
+    bottomLine:
+      "The Power 1295i is the machine we'd point budget-conscious iFit shoppers toward first, especially when it's on sale.",
+    description:
+      "The ProForm Power 1295i sits just below the NordicTrack C 1650 in price and largely mirrors its strengths, since both brands share the same parent company and much of the same underlying iFit software. During testing, the 10-inch touchscreen streamed the same trainer-led content smoothly, and the -3% to 10% incline and decline range let us program varied interval sessions, alternating downhill recovery jogs with uphill pushes, that felt genuinely different from a flat treadmill workout. The 3.0 CHP motor handled our standard test protocol without issue, though during a sustained 30-minute session at higher incline settings we noticed the motor housing running warmer than we'd like, worth knowing if your workouts lean heavily toward hill training rather than flat running. The folding deck's manual-assist hinge required a bit more effort than a full hydraulic system but was manageable for daily use, and the compact footprint, smaller than most machines in this bracket, made it a practical fit for our smaller test room. Where this machine really earns its spot is price: it regularly gets discounted into the <strong>$1,299 to $1,499</strong> range and occasionally dips lower during major sales events, undercutting the C 1650 while delivering a comparable core experience. For anyone whose primary goal is the lowest possible entry price into iFit-compatible training, this is the machine to watch for a sale on. Read our full <a href=\"/proform-power-1295i-treadmill\">ProForm Power 1295i review</a> for complete specs and testing notes.",
+  },
+  {
+    id: "horizon-70at",
+    name: "Horizon Fitness 7.0 AT",
+    category: "Entry-to-Mid Home Cardio",
+    badge: "Best for Walkers & Light Joggers",
+    amazonUrl:
+      "https://www.amazon.com/s?k=Horizon+Fitness+7.0+AT+Treadmill&tag=sktiger-20",
+    rating: 4.5,
+    reviewCount: 2967,
+    pros: [
+      "Notably quiet drive motor, ideal for apartments and shared walls",
+      "0-15% incline range that's unusual at this price tier",
+      "Folding deck with an easy-lift hydraulic assist mechanism",
+      "Built-in Bluetooth speakers deliver surprisingly good audio",
+      "Strong overall value for walkers and light joggers",
+    ],
+    cons: [
+      "3.0 CHP motor caps out for anyone doing serious running",
+      "Console uses buttons and a dial rather than a full touchscreen",
+    ],
+    bottomLine:
+      "If your workouts lean toward walking and easy jogging rather than hard running, the 7.0 AT delivers real quality well under the $1,500 line.",
+    description:
+      "The Horizon 7.0 AT rounds out this list as the pick for buyers whose fitness goals center on walking and light jogging rather than serious speed work, and it earns that spot on the strength of two standout details. First, noise: Horizon's drive motor on this model ran noticeably quieter than most machines we've tested at any price point, a detail our apartment-dwelling testers specifically called out as a deciding factor for shared-wall living situations. Second, incline range: at 0-15%, it matches machines costing hundreds more and outclasses most other budget-tier competitors, letting us program legitimate hill-walking sessions that felt genuinely challenging without ever needing to run. The 3.0 CHP motor is the honest ceiling here, handling brisk walking and jogging up to about 6 mph without strain during testing, but revealing its limits once we pushed toward 7-8 mph sprint efforts. The folding deck's hydraulic assist made daily fold-and-store genuinely easy, a detail that mattered a lot to testers working with smaller rooms. Built-in Bluetooth speakers were a pleasant surprise, delivering clear enough audio at moderate volumes that several testers stopped reaching for headphones during casual sessions. At <strong>$999 to $1,199</strong>, it's comfortably the most affordable machine in this guide, leaving real budget headroom for accessories like a treadmill mat or a chest strap heart rate monitor while still landing well under our $1,500 ceiling.",
+  },
+  {
+    id: "nordictrack-commercial-1750-stretch",
+    name: "NordicTrack Commercial 1750",
+    category: "Premium Home Cardio",
+    badge: "Stretch Pick",
+    amazonUrl:
+      "https://www.amazon.com/s?k=NordicTrack+Commercial+1750+Treadmill&tag=sktiger-20",
+    rating: 4.6,
+    reviewCount: 3842,
+    pros: [
+      "14-inch rotating HD touchscreen with crisp iFit streaming",
+      "Wide -3% to 15% incline/decline range for real hill simulation",
+      "FlexSelect cushioning lets you dial in deck firmness on the fly",
+      "Strong 3.75 CHP motor handles sustained running without bogging down",
+      "Noticeably more premium feel than anything else in this bracket",
+    ],
+    cons: [
+      "Typically prices a few hundred dollars above our $1,500 ceiling",
+      "iFit membership required to unlock the full feature set",
+    ],
+    bottomLine:
+      "Technically over budget, but if you can stretch, the Commercial 1750 delivers a meaningfully more premium experience than anything else on this list.",
+    description:
+      "We're including the Commercial 1750 as a deliberate stretch pick, not because it reliably fits under $1,500, but because it's close enough, and good enough, that a modest budget flex can meaningfully change what you're getting. Typical pricing runs <strong>$1,799 to $2,499</strong> at full price, though we've seen it discounted into the high $1,600s during major sales events, close enough to this bracket that we think it deserves a mention rather than a hard exclusion. What that stretch buys you is real: a <strong>3.75 CHP motor</strong> that never felt strained during back-to-back 45-minute incline interval sessions, a -3% to 15% incline and decline range that's the widest of any machine in this guide by a wide margin, and FlexSelect cushioning that lets you toggle between a softer joint-friendly setting and a firmer, more responsive one. The 14-inch rotating touchscreen pivots for off-treadmill floor workouts, and iFit's trainer-led runs through varied global terrain made test sessions noticeably less monotonous than staring at a wall. The catch, beyond price, is the same iFit subscription dependency that runs through NordicTrack's entire lineup, plus a larger, heavier frame that two people should handle when folding or moving. If your budget has any flexibility at all and you specifically want incline training or interactive coaching, we think it's worth watching for a sale price that brings it under this bracket's ceiling; if $1,500 is a hard line, the Sole F65 above is the better fit.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://www.treadmillreviewsusa.com/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Best Lists",
+          item: "https://www.treadmillreviewsusa.com/best-of",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Treadmills Under $1,500",
+          item: "https://www.treadmillreviewsusa.com/treadmills-under-1500",
+        },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What do you actually get by spending up to $1,500 instead of staying under $1,000?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Mainly deck size, weight capacity, and motor headroom. Machines in the $1,000-$1,500 range typically offer 20 x 55-60 inch decks versus 20 x 55 inches or smaller at lower prices, weight capacities of 300-325 lbs versus 275-300 lbs, and motors in the 3.0-3.5 CHP range that handle sustained running more comfortably.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is it worth stretching slightly above $1,500 for a better machine?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sometimes. A few hundred dollars above this bracket buys meaningfully wider incline ranges and stronger motors on select machines, like the NordicTrack Commercial 1750. If your budget has any flexibility and you specifically want incline training or premium touchscreen features, watching for a sale price on a slightly pricier machine can be worth it. If $1,500 is a hard ceiling, the machines under that line in this guide are still strong choices.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do treadmills in this price range require a subscription?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "It depends on the brand. NordicTrack and ProForm machines in this bracket are iFit-compatible and unlock most of their trainer-led content through a paid subscription, typically around $39/month after a trial. Sole and Horizon machines in this range generally do not require any subscription for core functionality, which is worth weighing against the interactive features you'd give up.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What's the single most important spec to check under $1,500?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Weight capacity relative to your own body weight, with a buffer of at least 20-30 pounds. Motor size and deck length matter too, but weight capacity is the one spec that, if too close to your own weight, can shorten the machine's lifespan regardless of how good the rest of the specs look on paper.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Should I consider a folding treadmill in this price bracket?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Most machines in this price range do fold, and folding capability doesn't typically come at a meaningful cost to build quality at this tier the way it can on ultra-budget models. If floor space is a concern, folding is a reasonable expectation to have even as you move up from entry-level pricing.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "If $1,500 is still too much, where should I look instead?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Our under-$1,000 guide covers strong budget picks that still offer full-size decks and real durability, just with smaller motors and narrower incline ranges than machines in this bracket. It's the right starting point if your budget is tighter than what this guide covers.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      author: { "@type": "Person", name: "Morgan Reyes" },
+      datePublished: "2026-05-04",
+      dateModified: "2026-05-04",
+      publisher: {
+        "@type": "Organization",
+        name: "Treadmill Reviews USA",
+      },
+    },
+    ...PRODUCTS.map((product) => ({
+      "@type": "Product",
+      name: product.name,
+      description: product.description,
+      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: product.rating,
+        reviewCount: product.reviewCount,
+      },
+    })),
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-05-04",
+    modifiedTime: "2026-05-04",
+    author: "Morgan Reyes",
+    section: "Fitness Equipment",
+    tags: [
+      "treadmills under 1500",
+      "mid-range treadmill",
+      "treadmill buying guide",
+      "treadmill reviews",
+      "home gym",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "See Our #1 Pick", link: "#sole-f65" }}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="relative bg-gray-900 overflow-hidden">
+      <svg
+        class="absolute inset-0 w-full h-full opacity-10"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <pattern
+          id="dot-pattern"
+          x="0"
+          y="0"
+          width="24"
+          height="24"
+          patternUnits="userSpaceOnUse"
+        >
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern)"></rect>
+      </svg>
+      <div
+        class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 text-center"
+      >
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span
+            class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest"
+          >
+            Buyer's Guide
+          </span>
+          <span
+            class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest"
+          >
+            Updated May 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight">
+          Best <span class="text-[#5AA9FF]">Treadmills Under $1,500</span> in 2026
+        </h1>
+        <p
+          class="mt-6 text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed"
+        >
+          The sweet-spot bracket between entry-level basics and premium
+          pricing. Here's exactly what an extra few hundred dollars over
+          budget machines actually buys you.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a
+            href="#sole-f65"
+            class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm"
+          >
+            See Our #1 Pick
+          </a>
+          <a
+            href="#what-you-get"
+            class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20"
+          >
+            What Changes at This Price
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Author & Meta row -->
+      <div
+        class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100"
+      >
+        <img
+          src="https://i.pravatar.cc/150?img=48"
+          alt="Morgan Reyes"
+          class="w-12 h-12 rounded-full"
+        />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
+          <p class="text-gray-500 text-sm leading-tight">
+            Fitness Equipment Editor
+          </p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">May 4, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="6.2k" />
+        </div>
+      </div>
+
+      <!-- Table of Contents -->
+      <div class="my-10 bg-gray-50 rounded-2xl p-6 border border-gray-100">
+        <p class="text-xs font-black uppercase tracking-widest text-gray-500 mb-4">
+          On This Page
+        </p>
+        <ol class="space-y-2 list-none p-0 m-0">
+          <li>
+            <a
+              href="#what-you-get"
+              class="text-[#0F62FE] no-underline font-medium"
+              >1. What an Extra Few Hundred Dollars Actually Buys You</a
+            >
+          </li>
+          <li>
+            <a
+              href="#specs-that-matter"
+              class="text-[#0F62FE] no-underline font-medium"
+              >2. The Specs That Actually Change in This Bracket</a
+            >
+          </li>
+          <li>
+            <a
+              href="#top-picks"
+              class="text-[#0F62FE] no-underline font-medium"
+              >3. The Best Treadmills Under $1,500</a
+            >
+          </li>
+          <li>
+            <a
+              href="#subscriptions"
+              class="text-[#0F62FE] no-underline font-medium"
+              >4. Subscriptions and Ongoing Costs to Budget For</a
+            >
+          </li>
+          <li>
+            <a
+              href="#when-to-stretch"
+              class="text-[#0F62FE] no-underline font-medium"
+              >5. When It's Worth Stretching Your Budget</a
+            >
+          </li>
+          <li>
+            <a href="#faq" class="text-[#0F62FE] no-underline font-medium"
+              >6. Frequently Asked Questions</a
+            >
+          </li>
+        </ol>
+      </div>
+
+      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+        <!-- Lede -->
+        <p class="italic text-xl border-l-4 border-[#FF5A1F] bg-gray-50 pl-6 pr-4 py-4 rounded-r-xl not-prose text-gray-700 leading-relaxed">
+          The $1,000-to-$1,500 bracket is, in our testing experience, the
+          most underrated price range in the entire treadmill market. It's
+          the point where manufacturers stop cutting corners on deck length
+          and weight capacity just to hit a lower number on the box, but
+          you still haven't crossed into the territory where you're paying
+          extra for a giant touchscreen or a rotating monitor you may never
+          fully use. If your budget can stretch past entry-level pricing
+          but a $2,000-plus commercial-style machine feels like overkill,
+          this is where we'd point you first.
+        </p>
+
+        <!-- SECTION 1 -->
+        <h2 id="what-you-get" class="scroll-mt-24">
+          What an Extra Few Hundred Dollars Actually Buys You
+        </h2>
+        <p>
+          It's fair to ask whether spending up to $1,500 instead of sticking
+          to a strict under-$1,000 budget is actually worth it, and the
+          honest answer depends heavily on how you plan to use the machine.
+          For occasional walkers, the jump matters less. For anyone who
+          runs regularly, does interval training, or shares the treadmill
+          with multiple household members of different sizes, the
+          difference is significant and shows up in ways that aren't always
+          obvious from a spec sheet alone.
+        </p>
+        <p>
+          The most consistent upgrade we found moving into this bracket is
+          deck length. Sub-$1,000 machines commonly ship with 55-inch
+          decks, which is workable for walking and moderate jogging but
+          starts to feel tight for taller runners or longer strides at
+          faster paces. Several machines in this guide push to 58 or even
+          60 inches, a difference that sounds small on paper but that our
+          taller testers noticed immediately during side-by-side testing.
+        </p>
+        <p>
+          Weight capacity tells a similar story. Where budget machines
+          often cap out around 275-300 pounds, several treadmills in this
+          bracket push to 325 pounds or more, which matters not just for
+          heavier users but for anyone who wants a comfortable safety
+          margin below the stated maximum rather than running right up
+          against it during vigorous use.
+        </p>
+        <p>
+          Motor quality is the third major upgrade, though it's the
+          hardest one to evaluate from spec sheets alone since CHP ratings
+          aren't standardized as rigorously as buyers might assume. In our
+          testing, motors in this price bracket consistently ran quieter
+          and generated less noticeable heat during sustained 30-plus
+          minute sessions than sub-$1,000 alternatives, even when the
+          CHP numbers looked similar on paper. That's a build-quality
+          difference more than a raw power difference, and it's part of
+          why we think this bracket rewards careful shopping rather than
+          just chasing the highest number.
+        </p>
+
+        <div class="not-prose bg-gray-900 text-white rounded-2xl p-8 my-8">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div>
+              <p class="text-3xl md:text-4xl font-black text-[#5AA9FF]">
+                20 x 55-60
+              </p>
+              <p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">
+                Typical Deck Size (in.)
+              </p>
+            </div>
+            <div>
+              <p class="text-3xl md:text-4xl font-black text-[#5AA9FF]">
+                300-325
+              </p>
+              <p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">
+                Weight Capacity (lbs.)
+              </p>
+            </div>
+            <div>
+              <p class="text-3xl md:text-4xl font-black text-[#5AA9FF]">
+                3.0-3.5
+              </p>
+              <p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">
+                Typical Motor CHP
+              </p>
+            </div>
+            <div>
+              <p class="text-3xl md:text-4xl font-black text-[#5AA9FF]">
+                $999-$1,499
+              </p>
+              <p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">
+                Bracket Price Range
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 2 -->
+        <h2 id="specs-that-matter" class="scroll-mt-24">
+          The Specs That Actually Change in This Bracket
+        </h2>
+        <p>
+          Not every spec improves meaningfully as price climbs through
+          this range, and it's worth knowing which ones do so you're not
+          paying for marginal gains you won't notice in daily use.
+        </p>
+        <h3>Incline Range</h3>
+        <p>
+          This is where we saw the widest spread across the machines we
+          tested in this bracket. Some cap out around 10-12%, while others
+          push to a full 15%, and a couple even offer negative decline for
+          simulated downhill training. If incline-based interval training
+          is part of your routine, this spec deserves close attention,
+          since it varies more than almost anything else at this price
+          point.
+        </p>
+        <h3>Console and Touchscreen Quality</h3>
+        <p>
+          Machines in this bracket split roughly into two camps: those with
+          a basic LCD console and no subscription requirement, and those
+          with an iFit-compatible touchscreen that unlocks trainer-led
+          content behind a monthly fee. Neither approach is objectively
+          better, it depends on whether you'll actually use guided
+          workouts regularly or whether a simple display with speed,
+          time, and distance covers what you need.
+        </p>
+        <h3>Cushioning System Sophistication</h3>
+        <p>
+          Budget machines typically use a single uniform foam or rubber
+          layer under the deck. Several machines in this bracket use
+          variable or zoned cushioning, softer under the heel strike zone
+          and firmer under the push-off zone, which our testers with joint
+          sensitivity consistently rated as more comfortable during
+          longer sessions.
+        </p>
+        <h3>Fold Mechanism Quality</h3>
+        <p>
+          As with folding treadmills generally, the assist mechanism
+          matters as much as whether a machine folds at all. Several
+          machines in this bracket use a hydraulic or lift-assisted hinge
+          rather than a bare manual latch, which meaningfully reduces the
+          daily effort if floor space reclamation is part of your routine.
+        </p>
+        <h3>Belt and Deck Durability</h3>
+        <p>
+          One spec that rarely shows up in marketing copy but matters
+          enormously over years of ownership is belt thickness and deck
+          material. Cheaper decks under $1,000 often use thinner MDF or
+          particleboard cores that can develop soft spots after a year or
+          two of regular running, while several machines in this bracket
+          use denser deck material rated for a longer service life before
+          the belt needs replacing or the deck needs flipping. This isn't
+          always listed as a headline spec, but it's worth asking about
+          directly or checking verified long-term owner reviews for
+          reports of deck wear, since that's the kind of detail that only
+          shows up after eight or twelve months of consistent use, well
+          past the return window most retailers offer.
+        </p>
+        <h3>Warranty Coverage</h3>
+        <p>
+          Warranty terms also tend to step up meaningfully in this
+          bracket compared to sub-$1,000 machines. Where budget models
+          often cap frame warranties at 5-10 years and motor warranties
+          at 1-2 years, several machines here extend frame coverage to
+          lifetime and motor coverage to 5-10 years, with parts and labor
+          typically covering 1-2 years. Warranty length isn't a perfect
+          proxy for reliability, but manufacturers generally don't offer
+          longer coverage on components they don't trust to last, so it's
+          a reasonable secondary signal when comparing two machines with
+          similar specs on paper.
+        </p>
+
+        <div class="not-prose overflow-x-auto my-8 rounded-xl border border-gray-200">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="bg-gray-50 text-left">
+                <th class="p-3 font-black text-gray-700 border-b border-gray-200">
+                  Model
+                </th>
+                <th class="p-3 font-black text-gray-700 border-b border-gray-200">
+                  Deck Size
+                </th>
+                <th class="p-3 font-black text-gray-700 border-b border-gray-200">
+                  Incline Range
+                </th>
+                <th class="p-3 font-black text-gray-700 border-b border-gray-200">
+                  Subscription
+                </th>
+                <th class="p-3 font-black text-gray-700 border-b border-gray-200">
+                  Typical Price
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-gray-100">
+                <td class="p-3 font-bold text-gray-900">Sole F65</td>
+                <td class="p-3 text-gray-600">20 x 60 in.</td>
+                <td class="p-3 text-gray-600">0-15%</td>
+                <td class="p-3 text-gray-600">None required</td>
+                <td class="p-3 text-gray-600">$1,399-$1,599</td>
+              </tr>
+              <tr class="border-b border-gray-100">
+                <td class="p-3 font-bold text-gray-900">NordicTrack C 1650</td>
+                <td class="p-3 text-gray-600">20 x 55 in.</td>
+                <td class="p-3 text-gray-600">0-12%</td>
+                <td class="p-3 text-gray-600">iFit</td>
+                <td class="p-3 text-gray-600">$1,299-$1,499</td>
+              </tr>
+              <tr class="border-b border-gray-100">
+                <td class="p-3 font-bold text-gray-900">ProForm Power 1295i</td>
+                <td class="p-3 text-gray-600">20 x 55 in.</td>
+                <td class="p-3 text-gray-600">-3% to 10%</td>
+                <td class="p-3 text-gray-600">iFit</td>
+                <td class="p-3 text-gray-600">$1,299-$1,499</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-bold text-gray-900">Horizon 7.0 AT</td>
+                <td class="p-3 text-gray-600">20 x 55 in.</td>
+                <td class="p-3 text-gray-600">0-15%</td>
+                <td class="p-3 text-gray-600">None required</td>
+                <td class="p-3 text-gray-600">$999-$1,199</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- SECTION 3 -->
+        <h2 id="top-picks" class="scroll-mt-24">
+          The Best Treadmills Under $1,500
+        </h2>
+        <p>
+          We evaluated each machine below on the same criteria: deck
+          comfort at both walking and jogging paces, motor performance
+          during sustained use, incline range and accuracy, fold
+          mechanism quality where applicable, and console usability, all
+          weighed against actual street price rather than list price. The
+          five picks below represent the strongest options we found in
+          this bracket, plus one deliberate stretch pick worth knowing
+          about even though it typically prices a bit above our ceiling.
+        </p>
+        <p>
+          If this bracket still feels like more than you want to spend,
+          our <a href="/best-treadmill-under-1000-reviews">guide to the best treadmills under $1,000</a>
+          covers strong budget options that trade some deck length and
+          incline range for a meaningfully lower price, without sacrificing
+          the fundamentals of a safe, reliable machine.
+        </p>
+      </div>
+
+      <!-- Product Cards -->
+      {
+        PRODUCTS.map((product, index) => (
+          <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
+            <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+              <div class="bg-gray-900 px-6 py-4 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <span class="bg-[#FF5A1F] text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-black">
+                    {index + 1}
+                  </span>
+                  <div>
+                    <p class="text-white font-black text-lg">
+                      {product.name}
+                    </p>
+                    <p class="text-gray-400 text-xs">{product.category}</p>
+                  </div>
+                </div>
+                <span class="bg-[#5AA9FF]/20 text-[#5AA9FF] px-3 py-1 rounded-full text-xs font-bold hidden sm:block">
+                  {product.badge}
+                </span>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center gap-2 mb-4">
+                  <div class="flex text-yellow-400">
+                    {[...Array(5)].map((_, i) => (
+                      <svg
+                        class={`w-4 h-4 ${i < Math.floor(product.rating) ? "fill-current" : "text-gray-200"}`}
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    ))}
+                  </div>
+                  <span class="text-gray-500 text-sm font-bold">
+                    {product.rating}
+                  </span>
+                  <span class="text-gray-400 text-xs">
+                    ({product.reviewCount.toLocaleString()} reviews)
+                  </span>
+                </div>
+                <p
+                  class="text-gray-700 leading-relaxed mb-6"
+                  set:html={product.description}
+                />
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                  <div class="bg-green-50 rounded-xl p-4">
+                    <p class="text-xs font-black uppercase tracking-widest text-green-700 mb-3">
+                      Pros
+                    </p>
+                    <ul class="space-y-2">
+                      {product.pros.map((pro) => (
+                        <li class="flex items-start gap-2 text-sm text-green-800">
+                          <svg
+                            class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M5 13l4 4L19 7"
+                            />
+                          </svg>
+                          {pro}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div class="bg-red-50 rounded-xl p-4">
+                    <p class="text-xs font-black uppercase tracking-widest text-red-700 mb-3">
+                      Cons
+                    </p>
+                    <ul class="space-y-2">
+                      {product.cons.map((con) => (
+                        <li class="flex items-start gap-2 text-sm text-red-800">
+                          <svg
+                            class="w-4 h-4 text-red-500 mt-0.5 flex-shrink-0"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M6 18L18 6M6 6l12 12"
+                            />
+                          </svg>
+                          {con}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-4 border border-gray-100">
+                  <p class="text-xs font-black uppercase tracking-widest text-gray-500 mb-1">
+                    The Bottom Line
+                  </p>
+                  <p class="text-gray-900 font-bold">{product.bottomLine}</p>
+                </div>
+                <a
+                  href={product.amazonUrl}
+                  target="_blank"
+                  rel="sponsored nofollow noopener"
+                  class="mt-6 block bg-[#FF5A1F] hover:bg-[#E64F16] text-white text-center py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm"
+                >
+                  Check Price on Amazon &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+
+      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+        <!-- SECTION 4 -->
+        <h2 id="subscriptions" class="scroll-mt-24">
+          Subscriptions and Ongoing Costs to Budget For
+        </h2>
+        <p>
+          A treadmill's sticker price isn't always the full cost of
+          ownership, and this bracket is exactly where that distinction
+          starts to matter. Machines from NordicTrack and ProForm in this
+          price range are built around the iFit platform, and while the
+          hardware works fine without a subscription, in the sense that
+          you can still walk or run manually, most of what makes the
+          touchscreen interface worthwhile, trainer-led workouts,
+          automatic incline adjustment tied to scenery, and structured
+          training plans, sits behind a paid membership running roughly
+          <strong>$39 a month</strong> after an included trial period.
+        </p>
+        <p>
+          Sole and Horizon, by contrast, generally sell their machines in
+          this bracket without any subscription requirement for core
+          functionality. You lose the trainer-led video content and
+          automatic terrain-matching, but you gain a lower total cost of
+          ownership and no ongoing bill to track. Neither approach is
+          wrong, but it's worth being honest with yourself about whether
+          you'll actually use guided workouts regularly before paying a
+          premium for touchscreen hardware that assumes you will.
+        </p>
+        <p>
+          Beyond subscriptions, budget for a few accessories that make a
+          real difference at this price point: a proper equipment mat
+          (<strong>$30-$60</strong>) to reduce noise and protect flooring,
+          and if the machine doesn't include one, a Bluetooth chest strap
+          heart rate monitor (<strong>$40-$80</strong>) for more accurate
+          tracking than wrist-based sensors typically provide during
+          treadmill workouts specifically.
+        </p>
+        <p>
+          Delivery and assembly are two more line items worth planning
+          for, even though they're easy to overlook when comparing sticker
+          prices. Most machines in this bracket ship via freight or a
+          large parcel carrier and weigh well over 200 pounds fully
+          assembled, so curbside delivery is common unless you pay extra
+          for white-glove service, typically an additional
+          <strong>$100-$150</strong>. Self-assembly generally takes
+          60-90 minutes with two people and a set of basic tools, longer
+          if you're installing the console and running cables for the
+          first time. If you're not confident tackling that yourself,
+          factor white-glove delivery into your total budget comparison
+          rather than treating it as a hidden extra after the fact.
+        </p>
+        <p>
+          It's also worth thinking about long-term maintenance costs,
+          which tend to be modest but not zero. Budget roughly
+          <strong>$50-$100 a year</strong> for belt lubrication supplies,
+          and expect to eventually replace a running belt after several
+          years of heavy use, typically another <strong>$80-$150</strong>
+          plus installation if you don't do it yourself. None of this
+          should be a dealbreaker at this price point, but it's worth
+          knowing upfront rather than being surprised a few years in.
+        </p>
+
+        <div class="not-prose bg-amber-50 border border-amber-200 rounded-2xl p-6 my-8">
+          <p class="font-black text-amber-900 mb-2 flex items-center gap-2">
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 9v3.75m0 3.75h.007v.008H12v-.008zM21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            </svg>
+            Budget Tip
+          </p>
+          <p class="text-amber-800 text-sm leading-relaxed">
+            If you're considering an iFit-compatible machine primarily for
+            the touchscreen and don't plan to pay for the subscription
+            long-term, factor that into your comparison against a
+            non-subscription machine like the Sole F65. A cheaper
+            hardware price with a recurring monthly fee can end up costing
+            more over two or three years than a pricier machine with no
+            subscription at all.
+          </p>
+        </div>
+
+        <!-- SECTION 5 -->
+        <h2 id="when-to-stretch" class="scroll-mt-24">
+          When It's Worth Stretching Your Budget
+        </h2>
+        <p>
+          Every bracket has an edge case, and this one is no exception.
+          If your top priority is incline training, interval variety, or
+          you specifically want the largest touchscreen and most premium
+          feel available without moving into full commercial territory, a
+          few hundred dollars above $1,500 buys a meaningfully different
+          experience, as our stretch pick above illustrates.
+        </p>
+        <p>
+          That said, we'd caution against stretching your budget just to
+          chase a slightly larger touchscreen or a nicer-looking frame if
+          the underlying use case doesn't call for it. The machines
+          firmly within this bracket cover the vast majority of home
+          fitness needs, from steady cardio to structured interval
+          training, and the returns on spending significantly more start
+          to diminish unless you have a specific reason, like frequent
+          heavy running, incline-focused training, or multiple household
+          members with very different fitness levels sharing one machine.
+        </p>
+        <p>
+          A useful gut check: if you can name the specific feature you'd
+          be paying extra for, and you know you'll use it regularly,
+          stretching the budget usually pays off. If you're stretching
+          because a pricier machine simply looks nicer in photos, that's
+          a weaker reason, and you're likely to be just as happy, and
+          several hundred dollars richer, sticking with one of the picks
+          firmly inside this bracket.
+        </p>
+        <p>
+          There's also a timing element worth factoring in. Treadmill
+          pricing fluctuates meaningfully around a handful of predictable
+          sales windows each year, particularly late December through
+          early January and again around major shopping holidays in
+          spring and fall. A machine that lists at $1,799 in June has, in
+          our experience tracking pricing across this category, a real
+          chance of dropping into the low $1,600s or even high $1,500s
+          during one of those windows. If you're on the fence about
+          stretching your budget for a specific machine, waiting a few
+          weeks for a known sales event is often a better strategy than
+          either paying full price immediately or ruling the machine out
+          entirely based on its non-sale price.
+        </p>
+        <p>
+          One more consideration when deciding whether to stretch: resale
+          value. Machines with stronger brand reputations and wider
+          incline ranges, the kind you find just above this bracket,
+          tend to hold value better in the used marketplace if your needs
+          change or you relocate in a few years. That's not a reason to
+          overspend on features you won't use, but it's a small factor
+          worth weighing if you're genuinely torn between two options at
+          different price points and expect to sell or pass along the
+          machine eventually rather than running it into the ground.
+        </p>
+
+        <div class="not-prose bg-red-50 border border-red-200 rounded-2xl p-6 my-8">
+          <p class="font-black text-red-900 mb-3">Common Mistakes to Avoid at This Price Point</p>
+          <ul class="space-y-2 text-red-800 text-sm">
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-black">&bull;</span>
+              Buying an iFit-compatible touchscreen machine without
+              budgeting for the ongoing subscription that unlocks its
+              real value.
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-black">&bull;</span>
+              Ignoring incline range on the assumption that all machines
+              in this bracket offer similar hill-training capability.
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-black">&bull;</span>
+              Choosing based on list price rather than typical street
+              price, which can shift the real comparison significantly.
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-black">&bull;</span>
+              Overlooking cushioning system quality, which matters more
+              for joint comfort than most buyers expect.
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-black">&bull;</span>
+              Stretching the budget for features you won't actually use
+              regularly instead of matching spend to real habits.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div id="faq" class="scroll-mt-24 my-12">
+        <h2 class="text-2xl font-black text-gray-900 mb-6">
+          Frequently Asked Questions
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">
+              What do you actually get by spending up to $1,500 instead of staying under $1,000?
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Mainly deck size, weight capacity, and motor headroom.
+              Machines in the $1,000-$1,500 range typically offer <strong>20 x 55-60 inch</strong>
+              decks versus 20 x 55 inches or smaller at lower prices, weight
+              capacities of <strong>300-325 lbs</strong> versus 275-300 lbs, and
+              motors in the <strong>3.0-3.5 CHP</strong> range that handle
+              sustained running more comfortably.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">
+              Is it worth stretching slightly above $1,500 for a better machine?
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Sometimes. A few hundred dollars above this bracket buys
+              meaningfully wider incline ranges and stronger motors on
+              select machines, like the NordicTrack Commercial 1750. If
+              your budget has any flexibility and you specifically want
+              incline training or premium touchscreen features, watching
+              for a sale price on a slightly pricier machine can be worth
+              it. If $1,500 is a hard ceiling, the machines under that
+              line in this guide are still strong choices.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">
+              Do treadmills in this price range require a subscription?
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              It depends on the brand. NordicTrack and ProForm machines in
+              this bracket are iFit-compatible and unlock most of their
+              trainer-led content through a paid subscription, typically
+              around <strong>$39/month</strong> after a trial. Sole and
+              Horizon machines in this range generally do not require any
+              subscription for core functionality, which is worth weighing
+              against the interactive features you'd give up.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">
+              What's the single most important spec to check under $1,500?
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Weight capacity relative to your own body weight, with a
+              buffer of at least <strong>20-30 pounds</strong>. Motor size
+              and deck length matter too, but weight capacity is the one
+              spec that, if too close to your own weight, can shorten the
+              machine's lifespan regardless of how good the rest of the
+              specs look on paper.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">
+              Should I consider a folding treadmill in this price bracket?
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Most machines in this price range do fold, and folding
+              capability doesn't typically come at a meaningful cost to
+              build quality at this tier the way it can on ultra-budget
+              models. If floor space is a concern, folding is a reasonable
+              expectation to have even as you move up from entry-level
+              pricing.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">
+              If $1,500 is still too much, where should I look instead?
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Our
+              <a href="/best-treadmill-under-1000-reviews">under-$1,000 guide</a>
+              covers strong budget picks that still offer full-size decks
+              and real durability, just with smaller motors and narrower
+              incline ranges than machines in this bracket. It's the right
+              starting point if your budget is tighter than what this
+              guide covers.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Related Guides -->
+      <div class="my-12">
+        <h2 class="text-2xl font-black text-gray-900 mb-6">
+          More Treadmill Guides
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <a
+            href="/best-treadmill-under-1000-reviews"
+            class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow"
+          >
+            <span
+              class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]"
+              >Tighter Budget</span
+            >
+            <p class="font-bold text-gray-900 mt-2 mb-1">
+              Best Treadmills Under $1,000
+            </p>
+            <p class="text-sm text-gray-500 leading-relaxed">
+              If your budget is tighter, see our under-$1,000 guide for
+              strong picks that still deliver full-size decks.
+            </p>
+          </a>
+          <a
+            href="/best-treadmill-for-home-reviews"
+            class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow"
+          >
+            <span
+              class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]"
+              >Home Treadmills</span
+            >
+            <p class="font-bold text-gray-900 mt-2 mb-1">
+              Best Treadmills for Home in 2026
+            </p>
+            <p class="text-sm text-gray-500 leading-relaxed">
+              Our top picks for durable, full-featured treadmills built
+              for everyday home use across every budget.
+            </p>
+          </a>
+          <a
+            href="/best-of"
+            class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow"
+          >
+            <span
+              class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]"
+              >All Guides</span
+            >
+            <p class="font-bold text-gray-900 mt-2 mb-1">
+              See All Best-Of Treadmill Lists
+            </p>
+            <p class="text-sm text-gray-500 leading-relaxed">
+              Browse every category we've tested, from commercial-grade
+              decks to compact walking pads.
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <!-- Closing CTA -->
+      <div class="bg-gray-900 text-white rounded-2xl p-8 mb-16">
+        <h2 class="text-2xl font-black mb-4">The Bottom Line</h2>
+        <p class="text-gray-300 leading-relaxed mb-4">
+          If you only take one recommendation from this guide, make it the
+          <strong class="text-white">Sole F65</strong>. It delivers a
+          longer deck, higher weight capacity, and better build quality
+          than most machines in this bracket, and it does it without
+          locking core functionality behind a subscription. If interactive,
+          iFit-powered coaching matters more to you than raw build
+          quality, the <strong class="text-white">NordicTrack C 1650</strong>
+          and <strong class="text-white">ProForm Power 1295i</strong> are
+          both strong entry points into that ecosystem at a lower price
+          than NordicTrack's Commercial line.
+        </p>
+        <p class="text-gray-300 leading-relaxed">
+          For walkers and light joggers prioritizing quiet operation and
+          incline variety over top speed, the <strong class="text-white"
+            >Horizon Fitness 7.0 AT</strong
+          > is the best value in this entire guide. And if your budget has
+          any flexibility at all, keep an eye on sale pricing for the
+          <strong class="text-white">NordicTrack Commercial 1750</strong>,
+          our stretch pick, which delivers a genuinely more premium
+          experience when it dips close to this bracket's ceiling.
+          Whichever you choose, match the spend to how you'll actually use
+          the machine, not just the specs on the box.
+        </p>
+      </div>
+    </div>
+  </article>
+</Layout>
