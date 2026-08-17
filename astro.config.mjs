@@ -36,6 +36,14 @@ export default defineConfig({
           item.changefreq = 'monthly';
           item.lastmod = new Date().toISOString();
           item.priority = 0.9;
+        } else if (url === `${base}/treadmill-reviews-2026`) {
+          item.changefreq = 'monthly';
+          item.lastmod = new Date().toISOString();
+          item.priority = 0.8;
+        } else if (url === `${base}/treadmill-buying-guide-2026`) {
+          item.changefreq = 'monthly';
+          item.lastmod = new Date().toISOString();
+          item.priority = 0.8;
         } else {
           item.changefreq = 'monthly';
           item.lastmod = new Date().toISOString();

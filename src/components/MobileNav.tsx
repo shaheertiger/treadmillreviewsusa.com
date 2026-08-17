@@ -73,6 +73,23 @@ export default function MobileNav() {
                   </div>
                 </a>
               </div>
+              <div className="border-t border-gray-100 pt-4">
+                <p className="text-xs font-black uppercase tracking-widest text-gray-400 mb-3">Blog</p>
+                <a href="/treadmill-reviews-2026" onClick={close} className="flex items-center gap-3 py-2 no-underline">
+                  <span className="text-xl">⭐</span>
+                  <div>
+                    <p className="text-base font-semibold text-gray-900">Treadmill Reviews 2026</p>
+                    <p className="text-xs text-gray-400">How we test &amp; this year's winners</p>
+                  </div>
+                </a>
+                <a href="/treadmill-buying-guide-2026" onClick={close} className="flex items-center gap-3 py-2 no-underline mt-2">
+                  <span className="text-xl">📋</span>
+                  <div>
+                    <p className="text-base font-semibold text-gray-900">Treadmill Buying Guide</p>
+                    <p className="text-xs text-gray-400">What to check before you compare models</p>
+                  </div>
+                </a>
+              </div>
               <a href="/best-of" onClick={close} className="text-left text-lg font-semibold py-2 border-t pt-4 text-[#FF5A1F]">Trending Deals</a>
             </nav>
           </div>

@@ -31,6 +31,11 @@ Flagship long-form review pages (2,500+ words each, tested via `npm run validate
 - `/best-folding-treadmill-reviews`
 - `/best-treadmill-under-1000-reviews`
 
+Long-form blog/editorial pages (also 2,500+ words, same validator):
+
+- `/treadmill-reviews-2026` — testing methodology, scoring rubric, and category winners across all three flagship guides.
+- `/treadmill-buying-guide-2026` — educational buying guide (motor power, deck size, folding vs. fixed, budget tiers) that funnels readers into the flagship guides.
+
 All outbound product links use Amazon search URLs tagged with the `sktiger-20` Associates ID (`rel="sponsored nofollow noopener"`). Swap in real ASIN/product links and product photography as they become available.
 
 ## Development
