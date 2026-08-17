@@ -1,0 +1,936 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "The Complete Home Treadmill Buying Guide (2026): What Actually Matters";
+const description =
+  "A step-by-step guide to choosing the best treadmill for home use in 2026 — motor power, deck size, folding vs. fixed, budget tiers, and the mistakes to avoid before you buy.";
+
+const BUDGET_TIERS = [
+  {
+    tier: "Under $500",
+    motor: "2.0-2.5 CHP",
+    deck: "16-18 x 40-45 in.",
+    bestFor: "Occasional walking, light use a few times a week",
+  },
+  {
+    tier: "$500-$900",
+    motor: "2.5-3.0 CHP",
+    deck: "18-20 x 50-55 in.",
+    bestFor: "Regular walking and light-to-moderate jogging",
+  },
+  {
+    tier: "$900-$1,500",
+    motor: "3.0-3.5 CHP",
+    deck: "20 x 55-60 in.",
+    bestFor: "Daily running, interval training, multiple household users",
+  },
+  {
+    tier: "$1,500+",
+    motor: "3.5+ CHP",
+    deck: "22 x 60+ in.",
+    bestFor: "Serious runners, commercial-grade durability expectations",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://www.treadmillreviewsusa.com/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Treadmill Buying Guide",
+          item: "https://www.treadmillreviewsusa.com/treadmill-buying-guide-2026",
+        },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is the best treadmill for a small home?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "For a small home or apartment, a folding treadmill with a hydraulic-assist fold mechanism is usually the best fit, since it lets you reclaim the floor space when the machine isn't in use. Look for a folded footprint under roughly 34 x 34 inches and confirm the deck is still at least 18 x 50 inches if you plan to jog rather than only walk.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much should I spend on a home treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Most households land in the $600-$1,200 range for a treadmill that comfortably handles daily walking and moderate jogging without feeling flimsy. Spending under $500 is fine for occasional walking use, while serious runners or multi-person households often see real durability benefits from crossing into the $1,200-$2,000 range.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What horsepower do I actually need?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Look at continuous horsepower (CHP), not peak horsepower, since peak numbers are inflated marketing figures. 2.0-2.5 CHP comfortably handles walking, 2.5-3.0 CHP is a safe minimum for regular jogging, and 3.0+ CHP is worth prioritizing if you run regularly or if more than one person in your household will use the machine.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is it worth paying extra for a treadmill with a subscription app?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "It depends on whether you'll actually use guided workouts. Platforms like iFit and JRNY genuinely help some people stay consistent by auto-adjusting incline and pace during trainer-led sessions, but the monthly subscription cost adds up quickly and the hardware is often priced assuming you'll subscribe. If you prefer running your own pace without coaching, a simpler console will save you money without costing you anything you'd actually use.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Should I buy a folding or a fixed-frame treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Choose folding if floor space is limited or you rent and may need to relocate the machine easily. Choose a fixed-frame treadmill if you have a dedicated home gym area, since fixed frames are generally sturdier per dollar and skip the added mechanical complexity of a fold hinge entirely.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What's the biggest mistake first-time treadmill buyers make?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Buying based on peak horsepower and a long features list instead of measuring their available space first. A treadmill that doesn't physically fit where it needs to live, or that requires a fold mechanism the buyer didn't realize they'd need, ends up unused far more often than one bought with a smaller feature set but a clear-eyed view of the room it has to live in.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      author: { "@type": "Person", name: "Morgan Reyes" },
+      datePublished: "2026-06-09",
+      dateModified: "2026-06-09",
+      publisher: {
+        "@type": "Organization",
+        name: "Treadmill Reviews USA",
+      },
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-06-09",
+    modifiedTime: "2026-06-09",
+    author: "Morgan Reyes",
+    section: "Fitness Equipment",
+    tags: [
+      "home treadmill",
+      "best home treadmill",
+      "treadmill buying guide",
+      "treadmills for home",
+      "home gym",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "See Our #1 Home Pick", link: "#which-guide" }}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="relative bg-gray-900 overflow-hidden">
+      <svg
+        class="absolute inset-0 w-full h-full opacity-10"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <pattern
+          id="dot-pattern-guide"
+          x="0"
+          y="0"
+          width="24"
+          height="24"
+          patternUnits="userSpaceOnUse"
+        >
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-guide)"
+        ></rect>
+      </svg>
+      <div
+        class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 text-center"
+      >
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span
+            class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest"
+          >
+            Buying Guide
+          </span>
+          <span
+            class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest"
+          >
+            Updated June 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight">
+          The Complete <span class="text-[#5AA9FF]">Home Treadmill</span> Buying
+          Guide
+        </h1>
+        <p
+          class="mt-6 text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed"
+        >
+          Before you compare specific models, get the fundamentals right.
+          Here's exactly what to check — motor power, deck size, folding vs.
+          fixed, and budget — so the treadmill you buy actually fits your
+          space and your goals.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a
+            href="#which-guide"
+            class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm"
+          >
+            Find Your Guide
+          </a>
+          <a
+            href="#use-case"
+            class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20"
+          >
+            Start From Step 1
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Author & Meta row -->
+      <div
+        class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100"
+      >
+        <img
+          src="https://i.pravatar.cc/150?img=48"
+          alt="Morgan Reyes"
+          class="w-12 h-12 rounded-full"
+        />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
+          <p class="text-gray-500 text-sm leading-tight">
+            Fitness Equipment Editor
+          </p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">June 9, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="9.4k" />
+        </div>
+      </div>
+
+      <!-- Table of Contents -->
+      <div class="my-10 bg-gray-50 rounded-2xl p-6 border border-gray-100">
+        <p
+          class="text-xs font-black uppercase tracking-widest text-gray-500 mb-4"
+        >
+          On This Page
+        </p>
+        <ol class="space-y-2 list-none p-0 m-0">
+          <li>
+            <a href="#use-case" class="text-[#0F62FE] no-underline font-medium"
+              >1. Start With Your Use Case</a
+            >
+          </li>
+          <li>
+            <a
+              href="#motor-power"
+              class="text-[#0F62FE] no-underline font-medium"
+              >2. Motor Power (CHP), Explained</a
+            >
+          </li>
+          <li>
+            <a
+              href="#deck-size"
+              class="text-[#0F62FE] no-underline font-medium"
+              >3. Deck Size and Cushioning</a
+            >
+          </li>
+          <li>
+            <a
+              href="#folding-vs-fixed"
+              class="text-[#0F62FE] no-underline font-medium"
+              >4. Folding vs. Fixed-Frame</a
+            >
+          </li>
+          <li>
+            <a
+              href="#connectivity"
+              class="text-[#0F62FE] no-underline font-medium"
+              >5. Incline, Consoles, and Subscriptions</a
+            >
+          </li>
+          <li>
+            <a
+              href="#budget-tiers"
+              class="text-[#0F62FE] no-underline font-medium"
+              >6. What You Get at Each Budget Tier</a
+            >
+          </li>
+          <li>
+            <a
+              href="#mistakes"
+              class="text-[#0F62FE] no-underline font-medium"
+              >7. Mistakes First-Time Buyers Make</a
+            >
+          </li>
+          <li>
+            <a
+              href="#which-guide"
+              class="text-[#0F62FE] no-underline font-medium"
+              >8. Which of Our Guides Should You Read Next?</a
+            >
+          </li>
+          <li>
+            <a href="#faq" class="text-[#0F62FE] no-underline font-medium"
+              >9. Frequently Asked Questions</a
+            >
+          </li>
+        </ol>
+      </div>
+
+      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+        <!-- Lede -->
+        <p
+          class="italic text-xl border-l-4 border-[#FF5A1F] bg-gray-50 pl-6 pr-4 py-4 rounded-r-xl not-prose text-gray-700 leading-relaxed"
+        >
+          Most people start shopping for a treadmill by comparing model names
+          and star ratings. That's backwards. The models that end up right
+          for you depend entirely on decisions you can make before you ever
+          open a product page — how you'll actually use it, how much floor
+          space you have, and what you're willing to spend. This guide walks
+          through those decisions first, then points you to the specific
+          model roundup that matches what you land on.
+        </p>
+
+        <!-- SECTION 1 -->
+        <h2 id="use-case" class="scroll-mt-24">Start With Your Use Case</h2>
+        <p>
+          Before you look at a single spec, answer one question honestly: how
+          fast will you actually be moving on this thing, most of the time?
+          Treadmill shoppers consistently overestimate their typical pace,
+          picturing themselves training for a 10K when the realistic daily
+          use case is a brisk walk while catching up on a podcast. That's not
+          a knock — walking is genuinely excellent exercise — but it changes
+          which specs matter.
+        </p>
+        <p>
+          If you're walking most sessions, at speeds up to about 4 mph, you
+          can comfortably shop in a lower horsepower and smaller deck range
+          and save real money. If you're jogging or running regularly, at 5
+          mph and above, you need a stronger motor, a longer deck, and better
+          cushioning, or you'll outgrow a walking-focused machine within
+          months and feel it working harder than it should. If your use case
+          is mixed — some walking meetings during the workday, some real
+          runs on the weekend — size up rather than down, since a machine
+          built for running handles walking effortlessly, but the reverse
+          isn't true.
+        </p>
+        <p>
+          Also think about who else in the household will use it. A
+          treadmill bought for one runner's needs might be undersized for a
+          taller partner or a teenager who also wants to use it, and weight
+          capacity in particular needs to comfortably clear the heaviest
+          likely user with room to spare, not just the person doing the
+          shopping.
+        </p>
+
+        <!-- SECTION 2 -->
+        <h2 id="motor-power" class="scroll-mt-24">
+          Motor Power (CHP), Explained
+        </h2>
+        <p>
+          Every treadmill spec sheet lists a horsepower number, and it's
+          nearly always the most misleading figure on the page. Manufacturers
+          love to advertise "peak" horsepower, a number the motor can
+          theoretically hit for a few seconds under ideal conditions and will
+          never actually sustain during a real workout. The number that
+          matters is <strong>continuous horsepower (CHP)</strong> — the power
+          output the motor can maintain reliably over a full session without
+          overheating or straining.
+        </p>
+        <p>
+          As a rough guide: 2.0-2.5 CHP is enough for walking, 2.5-3.0 CHP is
+          a reasonable minimum if you jog regularly, and 3.0 CHP or higher is
+          worth prioritizing if you run consistently, use interval training,
+          or have more than one regular user with a heavier body weight. A
+          motor pushed consistently beyond its comfortable range tends to run
+          hot, get louder over time, and wear out faster — a pattern we've
+          seen repeatedly in long-term testing of underpowered machines used
+          for a purpose they weren't built for.
+        </p>
+        <p>
+          If a listing only shows a "peak" horsepower figure with no
+          continuous rating disclosed anywhere, treat that as a mild red flag
+          about how transparent the rest of the spec sheet is likely to be.
+        </p>
+
+        <div class="not-prose bg-gray-900 text-white rounded-2xl p-8 my-8">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div>
+              <p class="text-3xl md:text-4xl font-black text-[#5AA9FF]">
+                2.0-2.5
+              </p>
+              <p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">
+                CHP for Walking
+              </p>
+            </div>
+            <div>
+              <p class="text-3xl md:text-4xl font-black text-[#5AA9FF]">
+                2.5-3.0
+              </p>
+              <p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">
+                CHP Minimum for Jogging
+              </p>
+            </div>
+            <div>
+              <p class="text-3xl md:text-4xl font-black text-[#5AA9FF]">
+                3.0+
+              </p>
+              <p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">
+                CHP for Running/Multi-User
+              </p>
+            </div>
+            <div>
+              <p class="text-3xl md:text-4xl font-black text-[#5AA9FF]">
+                20-30
+              </p>
+              <p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">
+                Lbs. Capacity Buffer to Leave
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 3 -->
+        <h2 id="deck-size" class="scroll-mt-24">Deck Size and Cushioning</h2>
+        <p>
+          Deck size is measured as width by length, and both numbers matter
+          more than shoppers usually expect. A narrow deck, anything under
+          about 18 inches wide, can feel genuinely uncomfortable at faster
+          paces, since your natural stride has less side-to-side margin for
+          error. A short deck, anything under about 50 inches for anyone over
+          roughly 5'8", can make running feel cramped, with your stride
+          landing uncomfortably close to the front or back of the belt.
+        </p>
+        <p>
+          Cushioning is the other half of the equation and is much harder to
+          judge from a spec sheet alone. Manufacturers use varying terms —
+          "variable response cushioning," "flex deck," "shock absorption
+          zones" — that all point at the same basic idea: a system designed
+          to soften impact at your heel strike while staying firmer where you
+          push off. In our testing, higher-end cushioning systems make a
+          noticeable difference for anyone with knee or joint sensitivity,
+          while flatter, firmer decks on entry-level machines are perfectly
+          fine for walkers but start to feel harsh during longer or faster
+          running sessions.
+        </p>
+        <p>
+          If you can test a treadmill in person before buying, actually jog
+          on it for a minute rather than just walking. Cushioning
+          differences that are barely noticeable at a walking pace become
+          much more obvious once you're landing with real impact.
+        </p>
+
+        <!-- SECTION 4 -->
+        <h2 id="folding-vs-fixed" class="scroll-mt-24">
+          Folding vs. Fixed-Frame
+        </h2>
+        <p>
+          This is often the single biggest decision in choosing a home
+          treadmill, and it comes down almost entirely to your available
+          space rather than performance. A fixed-frame treadmill is
+          generally sturdier per dollar spent, since the frame doesn't need
+          to accommodate a fold hinge, and there's simply one less moving
+          mechanical part that can eventually wear or loosen. If you have a
+          dedicated home gym, a garage, or a room where the treadmill can
+          live permanently, a fixed frame is usually the better value.
+        </p>
+        <p>
+          A folding treadmill trades a small amount of that structural
+          simplicity for the ability to reclaim your floor space. For
+          apartments, shared living rooms, home offices that double as guest
+          rooms, or renters who expect to move within a year or two, that
+          trade-off is well worth it. The fold mechanism itself matters too —
+          hydraulic-assist folds are dramatically easier to live with day to
+          day than manual latch systems if you'll be folding the machine
+          more than once or twice a week. We cover this distinction in much
+          more depth, including specific tested models, in our
+          <a href="/best-folding-treadmill-reviews">folding treadmill guide</a
+          >.
+        </p>
+        <p>
+          One nuance worth flagging: folding treadmills, especially
+          ultra-compact ones, often achieve their small folded footprint
+          partly through a shorter deck and a lighter frame, which can mean
+          a lower weight capacity and a less comfortable running experience
+          than an equivalently priced fixed-frame machine. If you're tall,
+          run rather than walk, or want to maximize deck comfort, it's worth
+          comparing a mid-range folding model against an entry-level fixed
+          model at a similar price before deciding.
+        </p>
+
+        <!-- SECTION 5 -->
+        <h2 id="connectivity" class="scroll-mt-24">
+          Incline, Consoles, and Subscriptions
+        </h2>
+        <p>
+          Automatic incline is one of the more genuinely useful features on
+          modern treadmills, since it lets you add resistance and calorie
+          burn without increasing speed or impact — a real benefit if you
+          have joint concerns. Most home treadmills top out somewhere between
+          10% and 15% incline, which is plenty for the large majority of home
+          users; decline, offered on a smaller number of premium machines, is
+          more of a nice-to-have than a necessity for most people.
+        </p>
+        <p>
+          Consoles range from bare-bones LED displays showing speed, time,
+          and distance, up through large touchscreens running full coaching
+          platforms like iFit or JRNY. The honest question to ask yourself
+          is whether you'll actually use guided, trainer-led workouts, or
+          whether you mostly want to set a pace and run your own session. If
+          it's the latter, paying extra for touchscreen hardware and a
+          required monthly subscription is money that buys you nothing
+          you'll use. If structured coaching genuinely helps you stay
+          consistent, the subscription cost — typically somewhere around
+          $20-$40 a month — is worth budgeting for as an ongoing cost, not a
+          one-time purchase.
+        </p>
+        <p>
+          Bluetooth speaker support and heart rate monitor pairing are
+          common even on mid-range machines now and are worth having, but
+          rarely worth paying a significant premium for on their own if a
+          cheaper model otherwise meets your needs.
+        </p>
+
+        <!-- SECTION 6 -->
+        <h2 id="budget-tiers" class="scroll-mt-24">
+          What You Get at Each Budget Tier
+        </h2>
+        <p>
+          Treadmill pricing follows a fairly predictable pattern, and knowing
+          roughly what to expect at each tier helps you avoid both
+          overpaying for features you won't use and underbuying a machine
+          that can't keep up with how you actually plan to train.
+        </p>
+
+        <div
+          class="not-prose overflow-x-auto my-8 rounded-xl border border-gray-200"
+        >
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="bg-gray-50 text-left">
+                <th
+                  class="p-3 font-black text-gray-700 border-b border-gray-200"
+                >
+                  Price Tier
+                </th>
+                <th
+                  class="p-3 font-black text-gray-700 border-b border-gray-200"
+                >
+                  Typical Motor
+                </th>
+                <th
+                  class="p-3 font-black text-gray-700 border-b border-gray-200"
+                >
+                  Typical Deck
+                </th>
+                <th
+                  class="p-3 font-black text-gray-700 border-b border-gray-200"
+                >
+                  Best For
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {
+                BUDGET_TIERS.map((row, i) => (
+                  <tr class={i < BUDGET_TIERS.length - 1 ? "border-b border-gray-100" : ""}>
+                    <td class="p-3 font-bold text-gray-900">{row.tier}</td>
+                    <td class="p-3 text-gray-600">{row.motor}</td>
+                    <td class="p-3 text-gray-600">{row.deck}</td>
+                    <td class="p-3 text-gray-600">{row.bestFor}</td>
+                  </tr>
+                ))
+              }
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          Most households land comfortably in the $600-$1,200 range for a
+          machine that handles daily walking and moderate jogging without
+          feeling flimsy. If your budget caps out under $500, that's not a
+          dealbreaker — it just means being realistic that the machine is
+          best suited to walking rather than serious running. We break down
+          specific tested picks at the budget end of the market in our
+          <a href="/best-treadmill-under-1000-reviews"
+            >treadmills under $1,000 guide</a
+          >.
+        </p>
+
+        <!-- SECTION 7 -->
+        <h2 id="mistakes" class="scroll-mt-24">
+          Mistakes First-Time Buyers Make
+        </h2>
+        <p>
+          A few patterns show up again and again in the buyer feedback and
+          owner reviews we look through while researching our guides. Here
+          are the ones worth avoiding.
+        </p>
+        <h3>Not measuring the space first</h3>
+        <p>
+          This is, by a wide margin, the most common mistake. "Compact" and
+          "space-saving" are relative marketing terms, not measurements.
+          Measure the exact spot the treadmill will live — including ceiling
+          height if you're considering a folding model that stands upright —
+          before you fall in love with a specific machine online.
+        </p>
+        <h3>Shopping on peak horsepower instead of continuous horsepower</h3>
+        <p>
+          As covered above, peak horsepower numbers are inflated and largely
+          meaningless for real-world use. If a listing doesn't clearly state
+          a continuous horsepower rating, dig for it in the manual or
+          spec sheet before assuming the machine can handle your intended
+          pace.
+        </p>
+        <h3>Buying right at the weight capacity limit</h3>
+        <p>
+          A stated weight capacity is the absolute upper bound under ideal
+          conditions, not a comfortable operating range. Leave a buffer of at
+          least 20-30 pounds below the stated limit for the heaviest regular
+          user, since running impact adds meaningful dynamic load beyond
+          simple standing body weight.
+        </p>
+        <h3>Ignoring the ongoing cost of a subscription-dependent console</h3>
+        <p>
+          A touchscreen console that requires a monthly subscription to
+          unlock most of its value effectively has a hidden recurring cost
+          on top of the sticker price. Factor a year or two of that
+          subscription into your real budget comparison against a simpler,
+          subscription-free machine.
+        </p>
+        <h3>Skipping the return policy and assembly details</h3>
+        <p>
+          Treadmills are heavy, and full assembly is often more involved than
+          buyers expect — sometimes requiring two people. Check the seller's
+          return and exchange policy before buying, since returning a
+          200-pound machine that turns out to be the wrong fit is a far
+          bigger hassle than double-checking dimensions and specs up front.
+        </p>
+
+        <div
+          class="not-prose bg-red-50 border border-red-200 rounded-2xl p-6 my-8"
+        >
+          <p class="font-black text-red-900 mb-3">
+            Quick Pre-Purchase Checklist
+          </p>
+          <ul class="space-y-2 text-red-800 text-sm">
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-black">&bull;</span>
+              Measured the exact space, including ceiling height for folding
+              models.
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-black">&bull;</span>
+              Confirmed continuous horsepower (CHP), not just peak horsepower.
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-black">&bull;</span>
+              Checked weight capacity against the heaviest regular user, with
+              a buffer.
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-black">&bull;</span>
+              Decided honestly whether you'll use a subscription coaching
+              app.
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-black">&bull;</span>
+              Reviewed the return policy before assembly begins.
+            </li>
+          </ul>
+        </div>
+
+        <!-- SECTION 8 -->
+        <h2 id="which-guide" class="scroll-mt-24">
+          Which of Our Guides Should You Read Next?
+        </h2>
+        <p>
+          Now that you know what to look for, the fastest path forward is
+          picking the specific roundup that matches your biggest constraint.
+        </p>
+      </div>
+
+      <!-- Guide Picker Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-10">
+        <a
+          href="/best-treadmill-for-home-reviews"
+          class="block bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow no-underline"
+        >
+          <div class="bg-gray-900 px-6 py-4">
+            <span class="text-2xl">🏠</span>
+            <p class="text-white font-black text-lg mt-2">
+              I have the space and budget
+            </p>
+          </div>
+          <div class="p-6">
+            <p class="text-gray-700 leading-relaxed mb-4">
+              Read our full home treadmill roundup for the most well-rounded
+              picks, led by the NordicTrack Commercial 1750.
+            </p>
+            <span class="text-[#0F62FE] font-bold text-sm"
+              >Best Treadmills for Home &rarr;</span
+            >
+          </div>
+        </a>
+        <a
+          href="/best-folding-treadmill-reviews"
+          class="block bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow no-underline"
+        >
+          <div class="bg-gray-900 px-6 py-4">
+            <span class="text-2xl">📦</span>
+            <p class="text-white font-black text-lg mt-2">
+              Floor space is my constraint
+            </p>
+          </div>
+          <div class="p-6">
+            <p class="text-gray-700 leading-relaxed mb-4">
+              See our tested folding treadmill picks, led by the XTERRA
+              TRX3500's hydraulic one-handed fold.
+            </p>
+            <span class="text-[#0F62FE] font-bold text-sm"
+              >Best Folding Treadmills &rarr;</span
+            >
+          </div>
+        </a>
+        <a
+          href="/best-treadmill-under-1000-reviews"
+          class="block bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow no-underline"
+        >
+          <div class="bg-gray-900 px-6 py-4">
+            <span class="text-2xl">💵</span>
+            <p class="text-white font-black text-lg mt-2">
+              Budget is my constraint
+            </p>
+          </div>
+          <div class="p-6">
+            <p class="text-gray-700 leading-relaxed mb-4">
+              Check out our under-$1,000 picks, led by the Horizon Fitness
+              T101's cushioned deck and strong warranty.
+            </p>
+            <span class="text-[#0F62FE] font-bold text-sm"
+              >Best Under $1,000 &rarr;</span
+            >
+          </div>
+        </a>
+      </div>
+
+      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+        <p>
+          If more than one of those constraints applies to you at once — say,
+          a tight budget and a tight apartment — start with whichever guide
+          addresses the harder constraint to solve. Space limitations are
+          usually less flexible than budget, since you generally can't make a
+          room bigger, while a slightly higher price is sometimes worth
+          stretching for on a machine you'll use for years. For a wider look
+          at how we score and rank treadmills across every category, our
+          <a href="/treadmill-reviews-2026">Treadmill Reviews 2026</a> overview
+          is a good next stop as well.
+        </p>
+      </div>
+
+      <!-- FAQ -->
+      <div id="faq" class="scroll-mt-24 my-12">
+        <h2 class="text-2xl font-black text-gray-900 mb-6">
+          Frequently Asked Questions
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">
+              What is the best treadmill for a small home?
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              For a small home or apartment, a folding treadmill with a
+              hydraulic-assist fold mechanism is usually the best fit, since
+              it lets you reclaim the floor space when the machine isn't in
+              use. Look for a folded footprint under roughly <strong
+                >34 x 34 inches</strong
+              > and confirm the deck is still at least 18 x 50 inches if you plan
+              to jog rather than only walk.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">
+              How much should I spend on a home treadmill?
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Most households land in the <strong>$600-$1,200</strong> range for
+              a treadmill that comfortably handles daily walking and moderate
+              jogging without feeling flimsy. Spending under $500 is fine for
+              occasional walking use, while serious runners or multi-person
+              households often see real durability benefits from crossing
+              into the $1,200-$2,000 range.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">
+              What horsepower do I actually need?
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Look at continuous horsepower (CHP), not peak horsepower, since
+              peak numbers are inflated marketing figures. <strong
+                >2.0-2.5 CHP</strong
+              > comfortably handles walking, <strong>2.5-3.0 CHP</strong> is a
+              safe minimum for regular jogging, and <strong>3.0+ CHP</strong> is
+              worth prioritizing if you run regularly or if more than one person
+              in your household will use the machine.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">
+              Is it worth paying extra for a treadmill with a subscription
+              app?
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              It depends on whether you'll actually use guided workouts.
+              Platforms like iFit and JRNY genuinely help some people stay
+              consistent by auto-adjusting incline and pace during
+              trainer-led sessions, but the monthly subscription cost adds up
+              quickly and the hardware is often priced assuming you'll
+              subscribe. If you prefer running your own pace without
+              coaching, a simpler console will save you money without
+              costing you anything you'd actually use.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">
+              Should I buy a folding or a fixed-frame treadmill?
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Choose folding if floor space is limited or you rent and may
+              need to relocate the machine easily. Choose a fixed-frame
+              treadmill if you have a dedicated home gym area, since fixed
+              frames are generally sturdier per dollar and skip the added
+              mechanical complexity of a fold hinge entirely.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">
+              What's the biggest mistake first-time treadmill buyers make?
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Buying based on peak horsepower and a long features list
+              instead of measuring their available space first. A treadmill
+              that doesn't physically fit where it needs to live, or that
+              requires a fold mechanism the buyer didn't realize they'd need,
+              ends up unused far more often than one bought with a smaller
+              feature set but a clear-eyed view of the room it has to live
+              in.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Related Guides -->
+      <div class="my-12">
+        <h2 class="text-2xl font-black text-gray-900 mb-6">
+          More Treadmill Guides
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <a
+            href="/treadmill-reviews-2026"
+            class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow"
+          >
+            <span
+              class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]"
+              >Reviews Overview</span
+            >
+            <p class="font-bold text-gray-900 mt-2 mb-1">
+              Treadmill Reviews 2026
+            </p>
+            <p class="text-sm text-gray-500 leading-relaxed">
+              How we test and score every treadmill, plus this year's
+              category winners.
+            </p>
+          </a>
+          <a
+            href="/best-of"
+            class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow"
+          >
+            <span
+              class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]"
+              >All Guides</span
+            >
+            <p class="font-bold text-gray-900 mt-2 mb-1">
+              See All Best-Of Treadmill Lists
+            </p>
+            <p class="text-sm text-gray-500 leading-relaxed">
+              Browse every category we've tested, from budget picks to
+              folding models.
+            </p>
+          </a>
+          <a
+            href="/best-treadmill-for-home-reviews"
+            class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow"
+          >
+            <span
+              class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]"
+              >Home Treadmills</span
+            >
+            <p class="font-bold text-gray-900 mt-2 mb-1">
+              Best Treadmills for Home in 2026
+            </p>
+            <p class="text-sm text-gray-500 leading-relaxed">
+              Our top picks for durable, full-featured treadmills built for
+              everyday home use.
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <!-- Closing CTA -->
+      <div class="bg-gray-900 text-white rounded-2xl p-8 mb-16">
+        <h2 class="text-2xl font-black mb-4">The Bottom Line</h2>
+        <p class="text-gray-300 leading-relaxed mb-4">
+          The best home treadmill is the one that fits your actual space,
+          your actual pace, and your actual budget — not the one with the
+          longest feature list. Measure your room, be honest about whether
+          you're walking or running, and use continuous horsepower rather
+          than peak horsepower as your real yardstick.
+        </p>
+        <p class="text-gray-300 leading-relaxed">
+          Once you've nailed down those fundamentals, head to
+          <a
+            href="/best-treadmill-for-home-reviews"
+            class="text-[#5AA9FF] font-bold no-underline"
+            >Best Treadmills for Home</a
+          >, <a
+            href="/best-folding-treadmill-reviews"
+            class="text-[#5AA9FF] font-bold no-underline"
+            >Best Folding Treadmills</a
+          >, or <a
+            href="/best-treadmill-under-1000-reviews"
+            class="text-[#5AA9FF] font-bold no-underline"
+            >Best Treadmills Under $1,000</a
+          > to compare the specific models we've tested and ranked in each category.
+        </p>
+      </div>
+    </div>
+  </article>
+</Layout>
