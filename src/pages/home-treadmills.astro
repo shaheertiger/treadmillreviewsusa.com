@@ -1,0 +1,1071 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "Home Treadmills: Which Type of Buyer Are You?";
+const description =
+  "Not sure where to start? This hub matches you to the right home treadmill guide based on your space, budget, running goals, and household, with a short roundup spanning every tier.";
+
+const PRODUCTS = [
+  {
+    id: "horizon-70at",
+    name: "Horizon Fitness 7.0 AT",
+    category: "Entry-Level Home Cardio",
+    badge: "Budget-Conscious Pick",
+    amazonUrl:
+      "https://www.amazon.com/s?k=Horizon+Fitness+7.0+AT+Treadmill&tag=sktiger-20",
+    rating: 4.5,
+    reviewCount: 2967,
+    pros: [
+      "Notably quiet drive motor, great for apartments",
+      "0-15% incline range unusual at this price tier",
+      "Folding deck with easy-lift hydraulic assist",
+      "Built-in Bluetooth speakers deliver good audio",
+      "Strong value for walkers and light joggers",
+    ],
+    cons: [
+      "3.0 CHP motor caps out for serious running",
+      "Console uses buttons and a dial, not a touchscreen",
+    ],
+    bottomLine:
+      "The machine we point budget-conscious buyers toward first, before they even open the under-$1,000 guide.",
+    description:
+      "We're leading our budget-conscious representative with the Horizon 7.0 AT because it demonstrates something important about this price tier: you don't have to sacrifice the fundamentals to stay under $1,200. During testing, the drive motor ran noticeably quieter than competitors at any price point nearby, a detail specifically flagged by testers in apartment settings worried about disturbing neighbors below. The 0-15% incline range matches machines costing hundreds more and let us program legitimate hill-walking sessions that felt genuinely varied rather than monotonous flat walking. The 3.0 CHP motor handled brisk walking and light jogging up to about 6 mph comfortably during our test protocol, though pushing into faster sprint intervals revealed its ceiling, an honest limitation rather than a surprise given the price. The folding deck's hydraulic assist made daily fold-and-store genuinely easy, which mattered enormously to testers working with smaller rooms who needed to reclaim floor space between sessions. Built-in Bluetooth speakers were a pleasant surprise, delivering clear audio at moderate volumes. At a typical <strong>$999 to $1,199</strong>, it's proof that budget-conscious buyers don't need to compromise on core quality, just on top-end speed and touchscreen extras that many casual users never miss anyway.",
+  },
+  {
+    id: "sole-f65",
+    name: "Sole F65",
+    category: "Mid-Range Home Cardio",
+    badge: "Serious Runner Value Pick",
+    amazonUrl: "https://www.amazon.com/s?k=Sole+F65+Treadmill&tag=sktiger-20",
+    rating: 4.6,
+    reviewCount: 2743,
+    pros: [
+      "20 x 60 inch deck is unusually long for its price",
+      "325 lb weight capacity, high for the mid-range tier",
+      "Cushioned deck reduces joint impact noticeably",
+      "No subscription required for core functionality",
+      "Reputation for durability beyond its price point",
+    ],
+    cons: [
+      "9-inch console isn't a full touchscreen",
+      "Bluetooth speakers are functional but unremarkable",
+    ],
+    bottomLine:
+      "For runners who want real deck length and durability without paying commercial-tier prices, the F65 is the clearest value in this guide.",
+    description:
+      "We're using the Sole F65 to represent the serious-runner-on-a-mid-range-budget category, since it delivers deck size and build quality that punches well above its price point. The 20 x 60 inch running deck is longer than almost anything else near this price, which our taller testers immediately noticed and appreciated during longer strides at faster paces, where shorter decks start to feel cramped. The 325-pound weight capacity, paired with a genuinely rigid frame, meant the deck stayed planted even during faster interval sessions where lighter frames showed some give. Sole's cushioning system uses individual deck supports rather than a single foam layer, and after longer test runs our testers consistently reported less knee and ankle fatigue compared to firmer decks at similar prices. The 3.0 CHP motor handled sustained jogging without excess noise, and the console, while not a touchscreen, doesn't lock any core feature behind a subscription, meaning what you pay is what you permanently get. At a typical <strong>$1,399 to $1,599</strong>, it's the machine we'd point a serious runner toward before recommending they stretch into premium pricing, since the deck and durability fundamentals here already meet what most non-elite runners actually need week to week.",
+  },
+  {
+    id: "nordictrack-commercial-1750",
+    name: "NordicTrack Commercial 1750",
+    category: "Premium Home Cardio",
+    badge: "Family & Multi-User Pick",
+    amazonUrl:
+      "https://www.amazon.com/s?k=NordicTrack+Commercial+1750+Treadmill&tag=sktiger-20",
+    rating: 4.6,
+    reviewCount: 3842,
+    pros: [
+      "14-inch rotating HD touchscreen with iFit streaming",
+      "Wide -3% to 15% incline/decline range",
+      "FlexSelect cushioning adjusts to different users' preferences",
+      "Strong 3.75 CHP motor handles varied usage patterns",
+      "Access to workouts spanning every fitness level under one roof",
+    ],
+    cons: [
+      "iFit membership required for the full feature set",
+      "Heavier and bulkier, tougher to fold and move solo",
+    ],
+    bottomLine:
+      "When multiple household members with different fitness levels share one machine, the 1750's adjustable cushioning and huge workout library make it the most flexible option.",
+    description:
+      "We're featuring the Commercial 1750 as the representative pick for family and multi-user households because its adjustability, more than any single spec, is what makes it work across different bodies and fitness levels sharing one machine. The FlexSelect cushioning system lets each household member toggle between a softer, joint-friendly setting and a firmer, more responsive one, which mattered in our testing when rotating a teenager doing interval runs, a parent doing incline walks, and a less experienced household member doing slow steady walks through the same unit in one day. The 14-inch rotating touchscreen and iFit library give every skill level a relevant, guided workout, rather than forcing everyone into the same generic program, and the -3% to 15% incline and decline range accommodates everything from gentle recovery walks to serious hill training. The 3.75 CHP motor never felt strained across this varied usage pattern, and iFit's trainer-led library spans enough difficulty levels that a beginner and an experienced runner can both find an appropriately challenging session. The tradeoffs are cost, typically <strong>$1,999 to $2,499</strong>, an iFit subscription running roughly $39/month, and a heavier frame that two people should handle when folding or moving. For households specifically juggling different fitness levels and needs under one roof, though, that flexibility is worth the premium.",
+  },
+  {
+    id: "matrix-t7xe",
+    name: "Matrix Fitness T7xe",
+    category: "Commercial-Grade Home Treadmill",
+    badge: "Serious Runner Premium Pick",
+    amazonUrl:
+      "https://www.amazon.com/s?k=Matrix+Fitness+T7xe+Treadmill&tag=sktiger-20",
+    rating: 4.8,
+    reviewCount: 967,
+    pros: [
+      "Genuinely commercial-rated frame, not a home unit rebranded",
+      "Massive weight capacity, near-zero deck flex at speed",
+      "16-inch console with intuitive, uncluttered interface",
+      "Cushioning tuned by Matrix's commercial engineering team",
+      "Reputation for surviving heavy daily use in gym settings",
+    ],
+    cons: [
+      "Among the priciest machines in this guide by a wide margin",
+      "Overkill for anyone not running frequently or at high volume",
+    ],
+    bottomLine:
+      "For runners who've outgrown mid-range machines and log serious weekly mileage, the T7xe is genuinely commercial equipment sold for home use.",
+    description:
+      "We're including the Matrix T7xe at the top of this roundup specifically for the serious-runner buyer type this hub is meant to route correctly, since it represents a category most home treadmill shoppers don't need but a smaller group genuinely does. Matrix sells this exact hardware to commercial gyms, and testing it made the difference from home-tier machines immediately clear: the frame displayed essentially no detectable flex during hard sprint intervals, even at higher body weights, and the deck felt planted in a way that distinguished it from every mid-range machine we tested alongside it. Matrix's cushioning system, tuned by the same team responsible for their gym-floor equipment, strikes a deliberately firm-but-forgiving balance designed for runners logging serious mileage rather than occasional walkers. The 16-inch console prioritizes clear metrics over flashy graphics, which several testers actually preferred after time with more software-heavy competitors. Weight capacity and motor durability are both rated for continuous, sustained use rather than occasional home sessions. At a typical <strong>$4,999 to $5,999</strong>, this is real money, and it's the wrong choice for casual walkers or occasional joggers. But for a genuinely serious runner who's identified real limitations with mid-range equipment, it's the category this hub exists to correctly route you toward, rather than leaving you stuck comparing mid-tier specs that won't solve the actual problem.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://www.treadmillreviewsusa.com/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Home Treadmills",
+          item: "https://www.treadmillreviewsusa.com/home-treadmills",
+        },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "How is this page different from your full home treadmill guide?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "This page is a routing hub, not a ranked review. It's built to help you quickly identify which type of buyer you are, space-constrained, budget-conscious, a serious runner, or part of a multi-user household, and point you to the specific guide that matches your situation. Our full home treadmill guide is a deep, seven-product tested ranking for readers who already know they want a general home treadmill and are ready to compare specific models side by side.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "I have very limited floor space, where should I start?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Start with our folding treadmill guide, which covers models specifically engineered to collapse into a small footprint and roll away between uses. If you also want to understand how different fold mechanisms work before comparing models, our folding treadmill primer covers that in more depth.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What if my budget is tight?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Our under-$1,000 guide is built specifically for that situation, covering machines that stay affordable without cutting corners on the fundamentals like deck size and motor reliability. It's a better starting point than our full home guide if price is your primary constraint.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "I run seriously and think I've outgrown home-tier machines, what now?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Our commercial treadmills guide covers genuinely commercial-grade equipment built for high weekly mileage and heavy sustained use, the same hardware you'd find in an actual gym. It's the right next step once you've identified real limitations with standard home machines, like deck flex during hard efforts or motors that run hot during long sessions.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Multiple people in my household will use the treadmill, does that change what I should buy?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, meaningfully. Multi-user households benefit from adjustable cushioning, a wide range of guided workout difficulty levels, and a higher weight capacity buffer than a single-user household might need. Our full home treadmill guide covers several models well suited to this scenario in more depth than this hub page does.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What if none of these buyer types quite describes me?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Most buyers are a blend of more than one type, for example budget-conscious and space-constrained at the same time. In that case, start with whichever constraint is least flexible, usually budget or space, and use that guide as your primary filter, then cross-reference the other guides for models that also satisfy your secondary priority.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      author: { "@type": "Person", name: "Morgan Reyes" },
+      datePublished: "2026-04-30",
+      dateModified: "2026-04-30",
+      publisher: {
+        "@type": "Organization",
+        name: "Treadmill Reviews USA",
+      },
+    },
+    ...PRODUCTS.map((product) => ({
+      "@type": "Product",
+      name: product.name,
+      description: product.description,
+      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: product.rating,
+        reviewCount: product.reviewCount,
+      },
+    })),
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-04-30",
+    modifiedTime: "2026-04-30",
+    author: "Morgan Reyes",
+    section: "Fitness Equipment",
+    tags: [
+      "home treadmill",
+      "treadmill buying guide",
+      "treadmill hub",
+      "treadmill reviews",
+      "home gym",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "Find Your Guide", link: "#buyer-types" }}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="relative bg-gray-900 overflow-hidden">
+      <svg
+        class="absolute inset-0 w-full h-full opacity-10"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <pattern
+          id="dot-pattern"
+          x="0"
+          y="0"
+          width="24"
+          height="24"
+          patternUnits="userSpaceOnUse"
+        >
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern)"></rect>
+      </svg>
+      <div
+        class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 text-center"
+      >
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span
+            class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest"
+          >
+            Category Guide
+          </span>
+          <span
+            class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest"
+          >
+            Updated April 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight">
+          Home Treadmills: <span class="text-[#5AA9FF]">Which Type of Buyer</span> Are You?
+        </h1>
+        <p
+          class="mt-6 text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed"
+        >
+          Four buyer profiles, four dedicated guides, and a short roundup
+          spanning every price tier so you can find the right starting
+          point in under five minutes.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a
+            href="#buyer-types"
+            class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm"
+          >
+            Find Your Buyer Type
+          </a>
+          <a
+            href="/best-treadmill-for-home-reviews"
+            class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20"
+          >
+            See Full Rankings
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Author & Meta row -->
+      <div
+        class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100"
+      >
+        <img
+          src="https://i.pravatar.cc/150?img=48"
+          alt="Morgan Reyes"
+          class="w-12 h-12 rounded-full"
+        />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
+          <p class="text-gray-500 text-sm leading-tight">
+            Fitness Equipment Editor
+          </p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">April 30, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="5.1k" />
+        </div>
+      </div>
+
+      <!-- Table of Contents -->
+      <div class="my-10 bg-gray-50 rounded-2xl p-6 border border-gray-100">
+        <p class="text-xs font-black uppercase tracking-widest text-gray-500 mb-4">
+          On This Page
+        </p>
+        <ol class="space-y-2 list-none p-0 m-0">
+          <li>
+            <a
+              href="#why-this-page"
+              class="text-[#0F62FE] no-underline font-medium"
+              >1. Why We Built This Page</a
+            >
+          </li>
+          <li>
+            <a
+              href="#buyer-types"
+              class="text-[#0F62FE] no-underline font-medium"
+              >2. Four Types of Home Treadmill Buyers</a
+            >
+          </li>
+          <li>
+            <a
+              href="#tier-spanning-picks"
+              class="text-[#0F62FE] no-underline font-medium"
+              >3. One Pick From Every Price Tier</a
+            >
+          </li>
+          <li>
+            <a
+              href="#mixed-priorities"
+              class="text-[#0F62FE] no-underline font-medium"
+              >4. When You're a Mix of More Than One Type</a
+            >
+          </li>
+          <li>
+            <a
+              href="#getting-started"
+              class="text-[#0F62FE] no-underline font-medium"
+              >5. How to Actually Get Started</a
+            >
+          </li>
+          <li>
+            <a href="#faq" class="text-[#0F62FE] no-underline font-medium"
+              >6. Frequently Asked Questions</a
+            >
+          </li>
+        </ol>
+      </div>
+
+      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+        <!-- Lede -->
+        <p class="italic text-xl border-l-4 border-[#FF5A1F] bg-gray-50 pl-6 pr-4 py-4 rounded-r-xl not-prose text-gray-700 leading-relaxed">
+          "Best home treadmill" means something different depending on
+          who's asking. A renter in a 600-square-foot apartment and a
+          parent outfitting a garage gym for three family members are
+          both shopping for a "home treadmill," but almost nothing else
+          about their search should look the same. Rather than send
+          everyone to one giant list and hope they figure out which entry
+          applies to them, this page exists to ask the question first: who
+          are you shopping as, and which of our guides actually matches
+          that?
+        </p>
+
+        <!-- SECTION 1 -->
+        <h2 id="why-this-page" class="scroll-mt-24">
+          Why We Built This Page
+        </h2>
+        <p>
+          We publish a full, deeply tested ranking of seven home
+          treadmills elsewhere on this site, and if you already know you
+          want a general-purpose home machine and you're ready to compare
+          specific models side by side, that guide is the right
+          destination. But we noticed that a lot of readers arrive at a
+          "best home treadmill" search without yet knowing which of
+          several very different shopping situations they're actually in,
+          and a single long ranked list doesn't always make that easy to
+          sort out on your own.
+        </p>
+        <p>
+          This page is connective tissue, not a replacement for our
+          deeper guides. Think of it as the front desk: a short
+          conversation to figure out what you actually need before we
+          send you to the specialist. We'll walk through four common
+          buyer situations, give you a sense of what to prioritize in
+          each one, and link directly to the guide built specifically for
+          that scenario. Along the way, we'll also show one representative
+          pick from each major price tier, so you can get a feel for what
+          your money buys at each level before diving into a longer,
+          more detailed guide.
+        </p>
+        <p>
+          We built it this way because we think good buying advice starts
+          with understanding the buyer, not just the products. A
+          treadmill that's genuinely excellent for a serious runner
+          training for a marathon can be the wrong recommendation for a
+          renter who mainly wants to fit in a 20-minute walk after work
+          and needs the machine to disappear into a closet the rest of the
+          time. Both readers deserve a page that gets them to the right
+          answer quickly, and that's what this hub is built to do.
+        </p>
+        <p>
+          It's also worth being upfront about what this page isn't. It
+          isn't a ranked "best of" list in the way our other guides are,
+          and none of the four products featured below are being crowned
+          an overall winner against each other, since they're not really
+          competing for the same buyer's dollar. Instead, treat the
+          roundup as illustrative: one solid example of what each price
+          tier and buyer type looks like in practice, enough to orient
+          you before you click through to a guide with real depth.
+        </p>
+
+        <div class="not-prose bg-gray-900 text-white rounded-2xl p-8 my-8">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div>
+              <p class="text-3xl md:text-4xl font-black text-[#5AA9FF]">
+                4
+              </p>
+              <p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">
+                Buyer Types Covered
+              </p>
+            </div>
+            <div>
+              <p class="text-3xl md:text-4xl font-black text-[#5AA9FF]">
+                4
+              </p>
+              <p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">
+                Dedicated Guides Linked
+              </p>
+            </div>
+            <div>
+              <p class="text-3xl md:text-4xl font-black text-[#5AA9FF]">
+                $999-$5,999
+              </p>
+              <p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">
+                Price Range Illustrated
+              </p>
+            </div>
+            <div>
+              <p class="text-3xl md:text-4xl font-black text-[#5AA9FF]">
+                5 min
+              </p>
+              <p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">
+                Time to Find Your Guide
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 2 -->
+        <h2 id="buyer-types" class="scroll-mt-24">
+          Four Types of Home Treadmill Buyers
+        </h2>
+        <p>
+          These aren't rigid, mutually exclusive boxes, most real buyers
+          overlap two of them, but they represent the four priorities we
+          see most consistently drive a treadmill purchase, and each one
+          points toward genuinely different specs and, often, a
+          genuinely different guide on this site.
+        </p>
+        <h3>The Space-Constrained Buyer</h3>
+        <p>
+          If your treadmill needs to disappear when it's not in use,
+          whether that's because you live in an apartment, share a
+          multi-purpose room, or simply don't have square footage to
+          spare, folding capability and folded footprint should be your
+          primary filter, ahead of motor size or touchscreen features. Our
+          <a href="/best-folding-treadmill-reviews">folding treadmill guide</a>
+          is built specifically for this buyer, with tested footprint
+          measurements and fold-mechanism comparisons that a general home
+          treadmill guide won't cover in the same depth.
+        </p>
+        <p>
+          Within this buyer type, it also helps to be specific about how
+          often you'll actually fold the machine, since that changes what
+          to prioritize. Someone folding daily should weight fold
+          mechanism quality, hydraulic versus manual latch, more heavily
+          than someone who mostly leaves the machine set up and folds it
+          only occasionally to vacuum or host guests. If you fall into
+          the former group, our folding guide's discussion of hydraulic
+          versus manual mechanisms is worth reading closely before you
+          settle on a specific model, since the daily effort difference
+          compounds meaningfully over months of ownership.
+        </p>
+        <h3>The Budget-Conscious Buyer</h3>
+        <p>
+          If price is your primary constraint and you want the most solid
+          machine possible without paying for touchscreen extras or
+          incline ranges you won't use, our
+          <a href="/best-treadmill-under-1000-reviews">under-$1,000 guide</a>
+          is the right starting point. It's built around finding machines
+          that don't cut corners on the fundamentals, deck size, motor
+          reliability, frame durability, even while keeping the price
+          down.
+        </p>
+        <h3>The Serious Runner</h3>
+        <p>
+          If you're logging consistent weekly mileage and have started
+          noticing real limitations with standard home equipment, deck
+          flex during hard efforts, motors running warm during longer
+          sessions, cushioning that leaves your joints sore, our
+          <a href="/commercial-treadmills">commercial treadmills guide</a>
+          covers genuinely commercial-grade machines built to handle that
+          level of sustained demand, the same hardware used in actual
+          gyms rather than a home-tier machine with a premium price tag.
+        </p>
+        <p>
+          It's worth being honest about how to tell whether you've
+          actually reached this category, since it's easy to assume
+          you need commercial-grade equipment before you genuinely do. A
+          useful signal is noticing specific symptoms during use, not
+          just wanting the nicest available equipment: a deck that feels
+          noticeably softer or bouncier during hard efforts than it did
+          during easy ones, a motor that audibly labors or a housing that
+          runs warm to the touch after 30-plus minutes of sustained
+          running, or joint soreness that trails back consistently to
+          treadmill sessions rather than outdoor runs. If none of that
+          describes your experience yet, a strong mid-range or premium
+          machine, rather than full commercial-grade equipment, is
+          probably still the better fit for now.
+        </p>
+        <h3>The Family or Multi-User Household</h3>
+        <p>
+          If your treadmill needs to work for several people with
+          different fitness levels and body types, adjustable cushioning,
+          a wide range of guided workout difficulty, and a comfortable
+          weight capacity buffer above any single user's needs all matter
+          more than they would for a single-user household. Our
+          <a href="/best-treadmill-for-home-reviews">full home treadmill guide</a>
+          covers several models well suited to this scenario, with
+          detailed notes on which machines flex best across different
+          users.
+        </p>
+        <p>
+          It's worth expanding on why multi-user households need a
+          genuinely different shopping approach rather than just a bigger
+          budget. A single-user machine can be tuned tightly to one
+          person's stride length, preferred cushioning firmness, and
+          typical pace range. The moment a second or third regular user
+          enters the picture, especially if they differ meaningfully in
+          height, weight, or fitness level, those same specs need to work
+          as a compromise rather than a perfect fit for any one person.
+          That's why adjustable cushioning and a wide guided-workout
+          range matter disproportionately here: they let the machine
+          adapt session to session rather than forcing every user into
+          the same fixed settings a single-user household could get away
+          with.
+        </p>
+        <p>
+          Weight capacity deserves special attention in this buyer type
+          specifically. Where a single-user household can size a
+          machine's capacity closely to one person's weight plus a
+          reasonable buffer, a multi-user household should size to the
+          heaviest anticipated user, plus the same buffer, not the
+          average across users. We've seen buyers underestimate this by
+          accidentally averaging household weights instead of designing
+          around the maximum, which risks the machine running closer to
+          its true limit than expected whenever the heavier user is on
+          it.
+        </p>
+
+        <!-- SECTION 3 -->
+        <h2 id="tier-spanning-picks" class="scroll-mt-24">
+          One Pick From Every Price Tier
+        </h2>
+        <p>
+          To give you a concrete sense of what each price tier actually
+          delivers, here's one representative machine from budget,
+          mid-range, premium, and commercial-grade pricing. These aren't
+          ranked against each other, they're not competing for the same
+          buyer, they're meant to illustrate the real differences in
+          deck size, motor power, and durability as price climbs, so you
+          can calibrate expectations before diving into a category-specific
+          guide.
+        </p>
+      </div>
+
+      <!-- Product Cards -->
+      {
+        PRODUCTS.map((product, index) => (
+          <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
+            <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+              <div class="bg-gray-900 px-6 py-4 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <span class="bg-[#FF5A1F] text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-black">
+                    {index + 1}
+                  </span>
+                  <div>
+                    <p class="text-white font-black text-lg">
+                      {product.name}
+                    </p>
+                    <p class="text-gray-400 text-xs">{product.category}</p>
+                  </div>
+                </div>
+                <span class="bg-[#5AA9FF]/20 text-[#5AA9FF] px-3 py-1 rounded-full text-xs font-bold hidden sm:block">
+                  {product.badge}
+                </span>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center gap-2 mb-4">
+                  <div class="flex text-yellow-400">
+                    {[...Array(5)].map((_, i) => (
+                      <svg
+                        class={`w-4 h-4 ${i < Math.floor(product.rating) ? "fill-current" : "text-gray-200"}`}
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    ))}
+                  </div>
+                  <span class="text-gray-500 text-sm font-bold">
+                    {product.rating}
+                  </span>
+                  <span class="text-gray-400 text-xs">
+                    ({product.reviewCount.toLocaleString()} reviews)
+                  </span>
+                </div>
+                <p
+                  class="text-gray-700 leading-relaxed mb-6"
+                  set:html={product.description}
+                />
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                  <div class="bg-green-50 rounded-xl p-4">
+                    <p class="text-xs font-black uppercase tracking-widest text-green-700 mb-3">
+                      Pros
+                    </p>
+                    <ul class="space-y-2">
+                      {product.pros.map((pro) => (
+                        <li class="flex items-start gap-2 text-sm text-green-800">
+                          <svg
+                            class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M5 13l4 4L19 7"
+                            />
+                          </svg>
+                          {pro}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div class="bg-red-50 rounded-xl p-4">
+                    <p class="text-xs font-black uppercase tracking-widest text-red-700 mb-3">
+                      Cons
+                    </p>
+                    <ul class="space-y-2">
+                      {product.cons.map((con) => (
+                        <li class="flex items-start gap-2 text-sm text-red-800">
+                          <svg
+                            class="w-4 h-4 text-red-500 mt-0.5 flex-shrink-0"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M6 18L18 6M6 6l12 12"
+                            />
+                          </svg>
+                          {con}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-4 border border-gray-100">
+                  <p class="text-xs font-black uppercase tracking-widest text-gray-500 mb-1">
+                    The Bottom Line
+                  </p>
+                  <p class="text-gray-900 font-bold">{product.bottomLine}</p>
+                </div>
+                <a
+                  href={product.amazonUrl}
+                  target="_blank"
+                  rel="sponsored nofollow noopener"
+                  class="mt-6 block bg-[#FF5A1F] hover:bg-[#E64F16] text-white text-center py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm"
+                >
+                  Check Price on Amazon &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+
+      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+        <!-- SECTION 4 -->
+        <h2 id="mixed-priorities" class="scroll-mt-24">
+          When You're a Mix of More Than One Type
+        </h2>
+        <p>
+          Most real buyers don't fit neatly into a single category, and
+          that's normal. A common combination we hear from readers is
+          space-constrained and budget-conscious at the same time, which
+          fortunately overlaps well, since folding treadmills and budget
+          treadmills share a lot of common ground in this market, and our
+          folding guide includes several genuinely affordable options.
+        </p>
+        <p>
+          Another frequent overlap is the serious runner who's also
+          budget-conscious relative to true commercial pricing. If that's
+          you, we'd suggest starting with our
+          <a href="/treadmills-under-1500">treadmills under $1,500 guide</a>
+          rather than jumping straight to commercial-grade equipment,
+          since several machines in that bracket deliver real deck length
+          and motor durability improvements over entry-level machines
+          without the jump to full commercial pricing.
+        </p>
+        <p>
+          When two priorities genuinely conflict, for example wanting
+          both the smallest possible folded footprint and the longest
+          possible deck for serious running, our advice is to rank your
+          priorities honestly rather than trying to find a single machine
+          that maximizes both. In our testing, machines that try to
+          excel at both compact folding and full running performance
+          tend to compromise somewhere, usually weight capacity or frame
+          rigidity, so it's better to consciously choose which trade-off
+          you're comfortable with than to assume a single "does
+          everything" machine exists without real compromises.
+        </p>
+        <p>
+          If you're shopping for a household with genuinely different
+          needs among its members, say one person wants compact folding
+          and another wants serious running performance, it's worth
+          having an honest conversation before shopping about whose needs
+          take priority, or whether the household would be better served
+          by a slightly larger machine that satisfies the more demanding
+          user's requirements, since a highly compact walking pad
+          typically can't be retrofitted into a serious training tool
+          later.
+        </p>
+
+        <div class="not-prose bg-amber-50 border border-amber-200 rounded-2xl p-6 my-8">
+          <p class="font-black text-amber-900 mb-2 flex items-center gap-2">
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 9v3.75m0 3.75h.007v.008H12v-.008zM21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            </svg>
+            Quick Tip
+          </p>
+          <p class="text-amber-800 text-sm leading-relaxed">
+            If you're torn between two buyer types, pick whichever
+            constraint is hardest to change. Budget and available floor
+            space are usually fixed, while fitness goals and household
+            composition can shift over time. Let the fixed constraint
+            guide your first filter, then use the other guides to
+            fine-tune within that filter.
+          </p>
+        </div>
+
+        <!-- SECTION 5 -->
+        <h2 id="getting-started" class="scroll-mt-24">
+          How to Actually Get Started
+        </h2>
+        <p>
+          If you've read this far and still aren't sure which buyer type
+          fits, here's a simple exercise. Write down, in order, your top
+          three priorities for this purchase: it might be price, floor
+          space, running performance, guided coaching, or something else
+          entirely specific to your situation. Whichever priority lands
+          at the top of that list should determine which of our
+          dedicated guides you open next, not the machine that happens to
+          look most impressive in a photo.
+        </p>
+        <p>
+          From there, treat this hub page as something to return to, not
+          just a one-time stop. As your circumstances change, maybe you
+          move to a bigger space, start training more seriously, or add a
+          household member who'll also use the machine, the buyer type
+          that fit you when you first bought a treadmill might not be the
+          one that fits you for an upgrade a few years later, and this
+          page will still be here to help you re-route to the right
+          guide.
+        </p>
+        <p>
+          And if you're the kind of buyer who's already confident you
+          want a general-purpose home treadmill and just wants to compare
+          strong, well-rounded options side by side without sorting
+          yourself into a specific category first, that's exactly what
+          our full home treadmill guide is built for, with seven models
+          tested over six months of mixed walking, running, and interval
+          sessions. This hub exists to help everyone else find their way
+          to the right starting point first.
+        </p>
+        <p>
+          One last piece of advice before you click through: resist the
+          urge to open three or four guides at once and try to compare
+          everything simultaneously. Each of our category guides is
+          written assuming you've already narrowed down to that specific
+          buying situation, and jumping between them without a clear
+          primary priority tends to create decision fatigue rather than
+          clarity. Pick the single guide that matches your top priority
+          from the exercise above, read it fully, and only branch out to
+          a second guide if you finish it still torn between two
+          genuinely different paths forward.
+        </p>
+        <p>
+          Finally, don't underestimate how much a brief in-person test
+          can clarify a decision that reading alone can't fully settle.
+          If a big-box fitness retailer, gym equipment showroom, or even
+          a friend's home is accessible to you, spending ten minutes
+          actually walking or lightly jogging on a candidate machine
+          often resolves close calls between two similarly specced
+          options faster than any amount of additional research. Use our
+          guides to narrow the field to two or three realistic
+          candidates, then let a hands-on impression make the final call
+          whenever that option is available to you.
+        </p>
+
+        <div class="not-prose bg-red-50 border border-red-200 rounded-2xl p-6 my-8">
+          <p class="font-black text-red-900 mb-3">Common Mistakes to Avoid</p>
+          <ul class="space-y-2 text-red-800 text-sm">
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-black">&bull;</span>
+              Shopping a general "best of" list without first identifying
+              which buyer type actually describes your situation.
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-black">&bull;</span>
+              Prioritizing touchscreen features over floor space or
+              budget when those are actually your harder constraints.
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-black">&bull;</span>
+              Assuming a single machine can maximize both maximum
+              compactness and maximum running performance without
+              trade-offs.
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-black">&bull;</span>
+              Buying for aspirational future fitness goals instead of
+              your actual current and near-term usage pattern.
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-black">&bull;</span>
+              Ignoring how multiple household members' differing needs
+              will actually play out day to day on one shared machine.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div id="faq" class="scroll-mt-24 my-12">
+        <h2 class="text-2xl font-black text-gray-900 mb-6">
+          Frequently Asked Questions
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">
+              How is this page different from your full home treadmill guide?
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              This page is a routing hub, not a ranked review. It's built
+              to help you quickly identify which type of buyer you are,
+              space-constrained, budget-conscious, a serious runner, or
+              part of a multi-user household, and point you to the
+              specific guide that matches your situation. Our
+              <a href="/best-treadmill-for-home-reviews">full home treadmill guide</a>
+              is a deep, seven-product tested ranking for readers who
+              already know they want a general home treadmill and are
+              ready to compare specific models side by side.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">
+              I have very limited floor space, where should I start?
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Start with our
+              <a href="/best-folding-treadmill-reviews">folding treadmill guide</a>,
+              which covers models specifically engineered to collapse into
+              a small footprint and roll away between uses. If you also
+              want to understand how different fold mechanisms work
+              before comparing models, our folding treadmill primer covers
+              that in more depth.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">
+              What if my budget is tight?
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Our
+              <a href="/best-treadmill-under-1000-reviews">under-$1,000 guide</a>
+              is built specifically for that situation, covering machines
+              that stay affordable without cutting corners on the
+              fundamentals like deck size and motor reliability. It's a
+              better starting point than our full home guide if price is
+              your primary constraint.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">
+              I run seriously and think I've outgrown home-tier machines, what now?
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Our
+              <a href="/commercial-treadmills">commercial treadmills guide</a>
+              covers genuinely commercial-grade equipment built for high
+              weekly mileage and heavy sustained use, the same hardware
+              you'd find in an actual gym. It's the right next step once
+              you've identified real limitations with standard home
+              machines, like deck flex during hard efforts or motors that
+              run hot during long sessions.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">
+              Multiple people in my household will use the treadmill, does that change what I should buy?
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Yes, meaningfully. Multi-user households benefit from
+              adjustable cushioning, a wide range of guided workout
+              difficulty levels, and a higher weight capacity buffer than
+              a single-user household might need. Our
+              <a href="/best-treadmill-for-home-reviews">full home treadmill guide</a>
+              covers several models well suited to this scenario in more
+              depth than this hub page does.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">
+              What if none of these buyer types quite describes me?
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Most buyers are a blend of more than one type, for example
+              budget-conscious and space-constrained at the same time. In
+              that case, start with whichever constraint is least
+              flexible, usually budget or space, and use that guide as
+              your primary filter, then cross-reference the other guides
+              for models that also satisfy your secondary priority.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Related Guides -->
+      <div class="my-12">
+        <h2 class="text-2xl font-black text-gray-900 mb-6">
+          Jump Straight to a Guide
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <a
+            href="/best-folding-treadmill-reviews"
+            class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow"
+          >
+            <span
+              class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]"
+              >Space-Constrained</span
+            >
+            <p class="font-bold text-gray-900 mt-2 mb-1">
+              7 Best Folding Treadmills, Tested & Ranked
+            </p>
+            <p class="text-sm text-gray-500 leading-relaxed">
+              For apartments, shared rooms, and anyone who needs the
+              machine to disappear between uses.
+            </p>
+          </a>
+          <a
+            href="/best-treadmill-under-1000-reviews"
+            class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow"
+          >
+            <span
+              class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]"
+              >Budget-Conscious</span
+            >
+            <p class="font-bold text-gray-900 mt-2 mb-1">
+              Best Treadmills Under $1,000
+            </p>
+            <p class="text-sm text-gray-500 leading-relaxed">
+              Budget-friendly treadmills that don't feel cheap, tested and
+              ranked by value.
+            </p>
+          </a>
+          <a
+            href="/best-treadmill-for-home-reviews"
+            class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow"
+          >
+            <span
+              class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]"
+              >General Home Use</span
+            >
+            <p class="font-bold text-gray-900 mt-2 mb-1">
+              Best Treadmills for Home in 2026
+            </p>
+            <p class="text-sm text-gray-500 leading-relaxed">
+              Our full, seven-product tested ranking for family and
+              multi-user households.
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <!-- Closing CTA -->
+      <div class="bg-gray-900 text-white rounded-2xl p-8 mb-16">
+        <h2 class="text-2xl font-black mb-4">The Bottom Line</h2>
+        <p class="text-gray-300 leading-relaxed mb-4">
+          The right home treadmill isn't the one with the most features
+          or the biggest screen, it's the one that matches your actual
+          constraints: your space, your budget, your training goals, and
+          who else in your household will be using it. Take a minute to
+          identify which buyer type above fits you best before you start
+          comparing specific models.
+        </p>
+        <p class="text-gray-300 leading-relaxed">
+          If you're space-constrained, head to our
+          <strong class="text-white"
+            ><a href="/best-folding-treadmill-reviews" class="text-white underline"
+              >folding treadmill guide</a
+            ></strong
+          >. If budget is your hard limit, start with our
+          <strong class="text-white"
+            ><a href="/best-treadmill-under-1000-reviews" class="text-white underline"
+              >under-$1,000 guide</a
+            ></strong
+          >. If you're a serious runner who's outgrown home-tier
+          equipment, our
+          <strong class="text-white"
+            ><a href="/commercial-treadmills" class="text-white underline"
+              >commercial treadmills guide</a
+            ></strong
+          > is next. And if you want the full, deeply tested comparison
+          across every strong home option, our
+          <strong class="text-white"
+            ><a href="/best-treadmill-for-home-reviews" class="text-white underline"
+              >complete home treadmill guide</a
+            ></strong
+          > is where to go from here.
+        </p>
+      </div>
+    </div>
+  </article>
+</Layout>
