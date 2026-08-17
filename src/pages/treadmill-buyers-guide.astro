@@ -1,0 +1,1001 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "The Treadmill Buyer's Guide: A Step-by-Step Purchase Checklist";
+const description =
+  "A sequential, step-by-step checklist for buying a treadmill — from setting your budget and measuring your space through delivery, break-in, and long-term ownership.";
+
+const CHECKLIST_STEPS = [
+  "Set your budget range before you look at a single model.",
+  "Measure your room, ceiling height, and doorway width for delivery.",
+  "Decide folding vs. fixed-frame based on your space, not just price.",
+  "If you can visit a showroom, run the full test-drive checklist.",
+  "Read the spec sheet for continuous horsepower and warranty fine print.",
+  "Plan delivery and assembly, including whether you need a second person.",
+  "Track your first 30 days: break-in, belt tension, and return window.",
+  "Set a long-term maintenance schedule and register your warranty.",
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://www.treadmillreviewsusa.com/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Treadmill Buyer's Guide",
+          item: "https://www.treadmillreviewsusa.com/treadmill-buyers-guide",
+        },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Should I buy from a showroom or order online?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ordering online is fine and usually cheaper, but if a showroom is within reasonable driving distance, use it as a research stop rather than a purchase decision. Walk or jog on two or three machines in your budget range to calibrate what 'quiet' and 'smooth' actually feel like in person, then buy whichever specific model fits your space and price best, even if that means ordering it online afterward.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How do I know if a treadmill will actually fit through my doorway?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Check the manufacturer's listed crated dimensions, not the assembled footprint, since the box is what has to travel through your doorways and hallways during delivery. Most standard doorways are 30-32 inches wide, and most treadmill crates fit that on their edge, but narrow stairwells, tight hallway turns, and low basement doorframes are where deliveries actually get stuck. Measure the tightest point in the path, not just the destination room.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What does 'starting at' pricing actually mean on a treadmill listing?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "It almost always means the price shown is for the base configuration without the console, incline range, or accessories shown in the product photos. Treadmill retailers commonly advertise a stripped-down SKU's price while displaying images of a higher trim level. Always click through to the specific configuration you're planning to buy and confirm the price updates to match before treating any headline number as real.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is it normal for a new treadmill belt to need adjustment in the first month?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Belts stretch slightly during their first several weeks of use as the material seats into its running position, and a belt that felt properly tensioned on delivery day often needs a quarter-turn tightening of the rear roller bolts a few weeks in. This is routine maintenance, not a defect, and it's worth checking belt tension and centering around the two-week and six-week marks specifically.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How long is a typical treadmill return window, and does assembly void it?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Return windows commonly range from 30 to 90 days depending on the retailer, and most explicitly allow assembly without voiding the return, since you generally can't evaluate a treadmill without putting it together and running on it. What does commonly void or complicate a return is disposing of the original packaging too early, so hold onto the crate and packing materials until you're past the return window and confident in the machine.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do I need to register my treadmill's warranty separately, or is my receipt enough?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Keep your receipt, but also register the unit directly with the manufacturer, since most brands require an active registration on file to process a warranty claim quickly rather than relying on a retailer receipt alone. Registration typically takes a few minutes online using the serial number found on the frame near the motor housing, and doing it during your first week of ownership means you won't be scrambling to find records months later if something needs a claim.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      author: { "@type": "Person", name: "Morgan Reyes" },
+      datePublished: "2026-06-20",
+      dateModified: "2026-06-20",
+      publisher: {
+        "@type": "Organization",
+        name: "Treadmill Reviews USA",
+      },
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-06-20",
+    modifiedTime: "2026-06-20",
+    author: "Morgan Reyes",
+    section: "Fitness Equipment",
+    tags: [
+      "treadmill buyer's guide",
+      "treadmill checklist",
+      "how to buy a treadmill",
+      "treadmill delivery",
+      "treadmill maintenance",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "Jump to the Checklist", link: "#checklist-box" }}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="relative bg-gray-900 overflow-hidden">
+      <svg
+        class="absolute inset-0 w-full h-full opacity-10"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <pattern
+          id="dot-pattern-buyers"
+          x="0"
+          y="0"
+          width="24"
+          height="24"
+          patternUnits="userSpaceOnUse"
+        >
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-buyers)"
+        ></rect>
+      </svg>
+      <div
+        class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 text-center"
+      >
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span
+            class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest"
+          >
+            Buyer's Checklist
+          </span>
+          <span
+            class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest"
+          >
+            Updated June 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight">
+          The Treadmill <span class="text-[#5AA9FF]">Buyer's Guide</span>: A Step-by-Step
+          Purchase Checklist
+        </h1>
+        <p
+          class="mt-6 text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed"
+        >
+          Not a spec glossary — a process. Follow these eight steps in order,
+          from budget to delivery to the first 30 days of ownership, and
+          you'll end up with a treadmill that actually fits your life instead
+          of one that just fit your search results.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a
+            href="#checklist-box"
+            class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm"
+          >
+            See the Full Checklist
+          </a>
+          <a
+            href="#step-1"
+            class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20"
+          >
+            Start With Step 1
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Author & Meta row -->
+      <div
+        class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100"
+      >
+        <img
+          src="https://i.pravatar.cc/150?img=48"
+          alt="Morgan Reyes"
+          class="w-12 h-12 rounded-full"
+        />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
+          <p class="text-gray-500 text-sm leading-tight">
+            Fitness Equipment Editor
+          </p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">June 20, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="7.1k" />
+        </div>
+      </div>
+
+      <!-- Table of Contents -->
+      <div class="my-10 bg-gray-50 rounded-2xl p-6 border border-gray-100">
+        <p
+          class="text-xs font-black uppercase tracking-widest text-gray-500 mb-4"
+        >
+          On This Page
+        </p>
+        <ol class="space-y-2 list-none p-0 m-0">
+          <li>
+            <a href="#step-1" class="text-[#0F62FE] no-underline font-medium"
+              >Step 1: Set Your Budget Range First</a
+            >
+          </li>
+          <li>
+            <a href="#step-2" class="text-[#0F62FE] no-underline font-medium"
+              >Step 2: Measure Your Space</a
+            >
+          </li>
+          <li>
+            <a href="#step-3" class="text-[#0F62FE] no-underline font-medium"
+              >Step 3: Decide Folding vs. Fixed-Frame</a
+            >
+          </li>
+          <li>
+            <a href="#step-4" class="text-[#0F62FE] no-underline font-medium"
+              >Step 4: The Test-Drive Checklist</a
+            >
+          </li>
+          <li>
+            <a href="#step-5" class="text-[#0F62FE] no-underline font-medium"
+              >Step 5: Read Spec Sheets Critically</a
+            >
+          </li>
+          <li>
+            <a href="#step-6" class="text-[#0F62FE] no-underline font-medium"
+              >Step 6: Plan Delivery and Assembly</a
+            >
+          </li>
+          <li>
+            <a href="#step-7" class="text-[#0F62FE] no-underline font-medium"
+              >Step 7: The First 30 Days</a
+            >
+          </li>
+          <li>
+            <a href="#step-8" class="text-[#0F62FE] no-underline font-medium"
+              >Step 8: Long-Term Ownership</a
+            >
+          </li>
+          <li>
+            <a
+              href="#checklist-box"
+              class="text-[#0F62FE] no-underline font-medium"
+              >Pre-Purchase Checklist</a
+            >
+          </li>
+          <li>
+            <a href="#faq" class="text-[#0F62FE] no-underline font-medium"
+              >Frequently Asked Questions</a
+            >
+          </li>
+        </ol>
+      </div>
+
+      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+        <!-- Lede -->
+        <p
+          class="italic text-xl border-l-4 border-[#FF5A1F] bg-gray-50 pl-6 pr-4 py-4 rounded-r-xl not-prose text-gray-700 leading-relaxed"
+        >
+          Most treadmill content on the internet is organized like a
+          reference manual: a section on motors, a section on decks, a
+          section on price. That's useful information, but it isn't how
+          buying actually happens. Buying a treadmill is a sequence of
+          decisions, each one narrowing the field before the next, and
+          getting the order wrong is exactly how people end up with a machine
+          that's technically excellent and practically wrong for their home.
+          This guide walks through that sequence in the order we'd actually
+          recommend making each call, from the first decision — your budget —
+          through the last one — how you maintain the machine years down the
+          road. If you want the deeper reference breakdown of motor power,
+          continuous horsepower ratings, and deck cushioning instead, our
+          companion piece, the
+          <a href="/treadmill-buying-guide-2026"
+            >Complete Home Treadmill Buying Guide</a
+          >, covers that ground in detail. This page is the checklist you
+          work through alongside it.
+        </p>
+
+        <!-- STEP 1 -->
+        <h2 id="step-1" class="scroll-mt-24">
+          Step 1: Set Your Budget Range First
+        </h2>
+        <p>
+          Before you look at a single model name, decide what you're willing
+          to spend — as a range, not a single number. This sounds obvious,
+          but skipping it is the single most common reason people end up
+          overwhelmed by treadmill shopping. Without a budget range narrowing
+          the field first, you're comparing hundreds of machines spanning
+          $300 to $4,000 against each other on features alone, which makes
+          every listing look either suspiciously cheap or unreasonably
+          expensive depending on what you happened to click on last.
+        </p>
+        <p>
+          Setting the range first flips that. Once you know you're shopping
+          between, say, $700 and $1,200, you're only ever comparing machines
+          against realistic peers, and decisions about which specific model
+          to buy get dramatically easier. We split our own coverage into
+          budget tiers for exactly this reason, so once you've settled on a
+          range, go straight to the roundup that matches it rather than
+          browsing everything:
+        </p>
+        <p>
+          If your ceiling is under $1,500, our
+          <a href="/treadmills-under-1500">treadmills under $1,500 guide</a>
+          covers the sweet spot where most households land — enough budget for
+          a genuinely sturdy frame without paying for commercial-grade
+          overkill. If you're working with an even tighter number, our
+          <a href="/best-treadmill-under-1000-reviews"
+            >treadmills under $1,000 guide</a
+          > narrows further to the best value picks below four figures. And if
+          you've decided this is a long-term investment and you're comfortable
+          spending more to get commercial-grade durability, our
+          <a href="/treadmills-over-2500">treadmills over $2,500 guide</a> covers
+          the higher end, where frame rigidity, motor headroom, and console quality
+          all step up noticeably.
+        </p>
+        <p>
+          One practical tip on setting the number itself: budget for the
+          treadmill you'll actually use in year three, not the one that looks
+          adequate on day one. A machine bought at the very bottom of your
+          comfortable range often feels fine during the first few weeks of
+          motivated new-equipment enthusiasm, then starts to feel
+          underpowered once your pace, frequency, or household usage
+          increases. Padding your range by even $100-$150 above your initial
+          instinct tends to buy meaningfully more durability at the margin,
+          since that's often the gap between an entry-level motor and deck
+          and a genuinely mid-range one.
+        </p>
+
+        <!-- STEP 2 -->
+        <h2 id="step-2" class="scroll-mt-24">Step 2: Measure Your Space</h2>
+        <p>
+          With a budget range set, the next step isn't browsing models — it's
+          grabbing a tape measure. This step gets skipped constantly because
+          it feels less exciting than looking at treadmills, but doing it now
+          rather than after you've already fallen for a specific model saves
+          an enormous amount of frustration later.
+        </p>
+        <h3>Room dimensions</h3>
+        <p>
+          Measure the exact footprint where the treadmill will live during
+          use, not just where you think there's roughly enough room. Most
+          home treadmills need a used footprint of about 3 feet by 7 feet at
+          minimum, and safety guidelines generally recommend at least 2 feet
+          of clearance on both sides and behind the machine — behind
+          especially, since that's the space your body needs if you were to
+          step or stumble off the back of a moving belt. Measure wall to
+          wall, then subtract for any furniture, doorways that swing inward,
+          or radiators and vents that eat into usable floor space.
+        </p>
+        <h3>Ceiling height</h3>
+        <p>
+          This is the measurement people forget most often, and it matters
+          for two different reasons depending on what you're buying. First,
+          for anyone tall or anyone who wants to use the incline function,
+          confirm you have enough vertical clearance above the console at
+          maximum incline — a treadmill inclined to 12-15% raises the front
+          of the deck and console noticeably higher than it sits flat.
+          Second, if you're considering a folding treadmill, measure the
+          ceiling height at the exact spot where it will stand folded
+          upright, since a folded treadmill can stand 5.5 to 6 feet tall, and
+          a sloped basement ceiling or a low light fixture can turn out to be
+          a dealbreaker you only discover after delivery.
+        </p>
+        <h3>Doorway and hallway width for delivery</h3>
+        <p>
+          Even if the assembled treadmill fits your workout room perfectly,
+          it still has to physically get there in its crate, and that's a
+          separate measurement problem. Treadmill delivery boxes are large —
+          often 7 to 8 feet long — and while delivery crews typically tip the
+          box onto its edge to clear standard doorways, tight hallway turns,
+          narrow basement stairwells, or an especially tight 90-degree corner
+          partway through the path can stop a delivery cold. Walk the actual
+          delivery route from your front door to the final room, measuring
+          the tightest point along the way, not just the destination doorway.
+          If your path includes a stairwell turn or an unusually narrow hall,
+          it's worth calling the retailer's delivery line before you buy to
+          ask about their experience with tight spaces — most delivery
+          companies have seen this exact problem before and can tell you
+          what's realistic.
+        </p>
+        <p>
+          Write these three numbers down — usable floor footprint, ceiling
+          clearance, and delivery path width — before you move to the next
+          step. They'll rule out entire categories of machine faster than any
+          amount of feature comparison will.
+        </p>
+
+        <div class="not-prose bg-gray-900 text-white rounded-2xl p-8 my-8">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div>
+              <p class="text-3xl md:text-4xl font-black text-[#5AA9FF]">
+                3x7 ft
+              </p>
+              <p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">
+                Minimum Used Footprint
+              </p>
+            </div>
+            <div>
+              <p class="text-3xl md:text-4xl font-black text-[#5AA9FF]">
+                2 ft
+              </p>
+              <p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">
+                Clearance Behind &amp; Sides
+              </p>
+            </div>
+            <div>
+              <p class="text-3xl md:text-4xl font-black text-[#5AA9FF]">
+                6 ft
+              </p>
+              <p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">
+                Folded Standing Height
+              </p>
+            </div>
+            <div>
+              <p class="text-3xl md:text-4xl font-black text-[#5AA9FF]">
+                30-32 in
+              </p>
+              <p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">
+                Standard Doorway Width
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 3 -->
+        <h2 id="step-3" class="scroll-mt-24">
+          Step 3: Decide Folding vs. Fixed-Frame
+        </h2>
+        <p>
+          With your budget range and your space measurements both in hand,
+          you now have enough information to make this call decisively rather
+          than guessing. If your usable footprint measurement from Step 2
+          shows you have a dedicated area where the treadmill can live
+          permanently — a spare room, a garage bay, a finished basement
+          corner — lean toward a fixed-frame machine. Fixed frames skip the
+          fold hinge entirely, which typically means a sturdier structure per
+          dollar and one less mechanical part that can eventually loosen or
+          wear. Our full breakdown of commercial-grade, fixed-frame options
+          lives in the
+          <a href="/commercial-treadmills">commercial treadmills guide</a>, worth
+          a look if durability and a permanent setup are your priority.
+        </p>
+        <p>
+          If your space measurement came back tight, or if you share the room
+          with something else — a home office, a guest bed, a living room —
+          a folding treadmill is very likely the right call regardless of
+          what your budget range would otherwise support. The specific fold
+          mechanism matters here more than shoppers expect: hydraulic-assist
+          folding systems that let you raise and lower the deck with roughly
+          one hand of effort are dramatically more pleasant to live with day
+          to day than manual latch systems, especially if you'll actually be
+          folding the machine multiple times a week rather than leaving it
+          up semi-permanently. We test and rank fold mechanisms specifically
+          in our
+          <a href="/best-folding-treadmill-reviews"
+            >folding treadmill guide</a
+          >.
+        </p>
+        <p>
+          One thing worth deciding honestly at this step: how often will you
+          realistically fold it? If the answer is "rarely, maybe once a
+          month for cleaning," a heavier folding machine with a so-so fold
+          mechanism is perfectly fine, since ease of folding barely matters
+          at that frequency. If the honest answer is "every single day
+          because it shares a room with my couch," prioritize the fold
+          mechanism quality as heavily as you'd prioritize the motor — you'll
+          interact with it far more often.
+        </p>
+
+        <!-- STEP 4 -->
+        <h2 id="step-4" class="scroll-mt-24">
+          Step 4: The Test-Drive Checklist
+        </h2>
+        <p>
+          If there's a showroom, sporting goods retailer, or big-box store
+          within a reasonable drive that stocks treadmills, use it — not
+          necessarily to buy there, but to calibrate your expectations before
+          you commit to an online order. A short in-person session tells you
+          things a spec sheet simply can't. Here's exactly what to check if
+          you get the chance.
+        </p>
+        <h3>Noise at your actual pace</h3>
+        <p>
+          Don't just stand on the belt at a slow walk — bring it up to
+          whatever pace you'll actually use most days, then listen. Pay
+          attention specifically to motor whine under load and any rhythmic
+          thump from the belt or rollers, since both tend to get worse over
+          years of ownership rather than better. A showroom floor is noisy,
+          so cup a hand behind your ear or lean in close to the motor housing
+          to get a real read.
+        </p>
+        <h3>Belt feel underfoot</h3>
+        <p>
+          Walk, then jog if the machine allows it, and pay attention to
+          whether the belt feels like it's gripping consistently or slipping
+          slightly under push-off. A quality belt and deck combination feels
+          stable and slightly cushioned without feeling spongy or
+          unresponsive. If the belt feels like it hesitates or surges as you
+          change pace, that's often a motor or belt-tension issue rather than
+          something you'd get used to.
+        </p>
+        <h3>Console responsiveness</h3>
+        <p>
+          Change the speed and incline several times in a row using the
+          physical buttons, not just the touchscreen, and confirm the
+          adjustments register immediately rather than lagging half a second
+          behind your input. If there's a touchscreen, tap through a few
+          menus to see whether it feels closer to a modern phone or a
+          sluggish kiosk display — this is a genuine quality signal that
+          varies more between models than shoppers expect.
+        </p>
+        <h3>Fold mechanism smoothness</h3>
+        <p>
+          If you're seriously considering a folding model, actually fold and
+          unfold it yourself in the showroom rather than taking the
+          salesperson's word for how easy it is. Note how much force the
+          deck needs at the moment you release the latch, whether it drops
+          suddenly or lowers in a controlled motion, and whether the locking
+          mechanism at the top of the fold feels secure or flimsy. This is
+          exactly the kind of detail that's nearly impossible to judge from a
+          product photo or a spec listing, and it's the single best reason to
+          make a showroom stop worth the drive.
+        </p>
+        <p>
+          A showroom test doesn't need to end in a showroom purchase — prices
+          are frequently better online, especially during sale periods. Use
+          the visit purely as calibration, then apply what you learned to
+          whichever specific model and retailer offers the best price once
+          you're back to shopping from home.
+        </p>
+
+        <!-- STEP 5 -->
+        <h2 id="step-5" class="scroll-mt-24">
+          Step 5: Read Spec Sheets Critically
+        </h2>
+        <p>
+          Once you've narrowed to a shortlist, this is where a careful read
+          of the actual spec sheet — not just the marketing headline — saves
+          you from a handful of common traps.
+        </p>
+        <h3>Inflated peak-horsepower marketing</h3>
+        <p>
+          Nearly every treadmill listing leads with a horsepower number, and
+          it's almost always the "peak" figure — a number the motor can
+          theoretically hit for a few seconds under ideal lab conditions and
+          will never actually sustain during a real workout. The number that
+          reflects real-world performance is continuous horsepower (CHP),
+          and it's often buried several paragraphs into the product
+          description or left out of the headline entirely. If a listing
+          only advertises a peak figure with no continuous rating disclosed
+          anywhere on the page or in the manual, treat that omission itself
+          as a signal about how straightforward the rest of the listing is
+          likely to be.
+        </p>
+        <h3>Warranty fine print red flags</h3>
+        <p>
+          A headline warranty claim like "lifetime frame warranty" sounds
+          reassuring, but the details matter more than the headline. Check
+          specifically whether labor is covered separately from parts, and
+          for how long — it's extremely common for frame coverage to run for
+          a decade or more while labor coverage runs out after just one year,
+          meaning a legitimate warranty claim in year three could still cost
+          you a technician's callout fee even though the part itself is
+          replaced free. Also check whether the warranty is voided by
+          anything ordinary, like using the treadmill more than a specified
+          number of hours per week — a clause aimed at commercial use that
+          occasionally gets applied more broadly than buyers expect.
+        </p>
+        <h3>"Starting at" pricing tricks</h3>
+        <p>
+          When a listing shows a price with "starting at" in front of it,
+          assume that number describes the base configuration, not
+          necessarily the version pictured in the product photos or
+          described in the feature bullets above the price. It's common for
+          the advertised starting price to reflect a stripped-down SKU
+          without the incline range, console tier, or accessory bundle shown
+          elsewhere on the same page. Click through to the exact
+          configuration you intend to buy and confirm the price updates
+          accordingly before treating any headline number as the real cost
+          you'll pay.
+        </p>
+
+        <!-- STEP 6 -->
+        <h2 id="step-6" class="scroll-mt-24">
+          Step 6: Plan Delivery and Assembly
+        </h2>
+        <p>
+          Buying the treadmill isn't the last decision — getting it into your
+          home and put together is its own small project, and planning for
+          it ahead of time avoids a frustrating delivery day.
+        </p>
+        <p>
+          Most home treadmills ship in a single large crate weighing
+          anywhere from 150 to 300 pounds depending on the model, delivered
+          by a freight carrier rather than a standard parcel service. Curbside
+          delivery is the default for most orders unless you specifically pay
+          for a white-glove option, which means the crate gets left at your
+          door or driveway, not carried into the house — plan for how you'll
+          move a box that heavy from the curb to your assembly space, ideally
+          with a second person or a dolly on hand.
+        </p>
+        <p>
+          Assembly itself commonly takes 60 to 90 minutes solo, or noticeably
+          less with a second person helping, and manufacturers frequently
+          recommend two people specifically for the step where the upright
+          console mast gets lifted and secured into the frame — that
+          component alone can be awkward and heavy enough that doing it alone
+          risks a dropped part or a pinched cable. Most treadmills ship with
+          every tool needed for assembly included in the box, typically a
+          couple of hex keys and a wrench sized to the included bolts, so you
+          generally won't need to hunt down your own toolkit, though having a
+          cordless drill with the right hex bit on hand can speed up an
+          otherwise tedious bolt-by-bolt process considerably.
+        </p>
+        <p>
+          Before your delivery date arrives, clear a flat, open assembly
+          space distinct from the treadmill's final resting spot if possible
+          — you'll want room to lay out hardware bags, unfold packing
+          material, and maneuver the frame before it's in its permanent
+          position. And hold onto the original box and packing foam until
+          you're confident in the machine and past the return window,
+          discussed next — repackaging a treadmill for a return without the
+          original materials is a genuinely difficult task.
+        </p>
+
+        <!-- STEP 7 -->
+        <h2 id="step-7" class="scroll-mt-24">Step 7: The First 30 Days</h2>
+        <p>
+          A treadmill doesn't arrive in its final, settled state — the first
+          month of ownership includes a normal break-in period, and knowing
+          what to expect during it helps you tell the difference between
+          routine settling and an actual problem worth flagging to customer
+          support.
+        </p>
+        <h3>The break-in period</h3>
+        <p>
+          Most manufacturers recommend a lighter first few sessions —
+          shorter duration, moderate pace — to let the belt, deck, and motor
+          settle into regular use rather than jumping straight into a
+          maximum-effort workout on day one. This isn't just caution for its
+          own sake: belts genuinely stretch slightly as the material seats in,
+          and a motor benefits from gradually working up to sustained higher
+          loads rather than starting there immediately.
+        </p>
+        <h3>Initial belt tensioning check</h3>
+        <p>
+          Plan to check belt tension and centering around the two-week mark,
+          and again around six weeks. A belt that felt correctly tensioned on
+          delivery day commonly needs a quarter-turn adjustment of the rear
+          roller bolts a few weeks in as the material stretches slightly under
+          real use. Signs it needs attention include the belt slipping
+          under push-off, drifting toward one side rather than staying
+          centered, or a new rhythmic noise that wasn't present in the first
+          few sessions. This is routine, expected maintenance rather than a
+          sign anything is wrong, and the adjustment itself typically takes
+          only a few minutes once you know where the tensioning bolts are
+          located.
+        </p>
+        <h3>Return window awareness</h3>
+        <p>
+          Know your specific return deadline and put it somewhere you'll
+          actually see it — a calendar reminder a few days before it expires
+          is worth setting the same week the treadmill arrives. Use the
+          full window deliberately: put in enough real sessions, at your
+          actual typical pace, to know whether the machine genuinely fits
+          your routine before the window closes. A treadmill that felt fine
+          for two casual walks can reveal real limitations once you've
+          pushed it through a proper week of your normal training pattern.
+        </p>
+
+        <!-- STEP 8 -->
+        <h2 id="step-8" class="scroll-mt-24">Step 8: Long-Term Ownership</h2>
+        <p>
+          Once you're past the first month, ownership shifts from break-in
+          to routine maintenance, and a treadmill that gets a small amount of
+          regular attention lasts dramatically longer than one that's simply
+          used until something goes wrong.
+        </p>
+        <h3>A realistic maintenance schedule</h3>
+        <p>
+          Wipe down the deck and belt area after sweaty sessions to keep
+          moisture and debris from working into the belt and rollers over
+          time. Vacuum underneath and around the motor housing every month
+          or two, since dust buildup around a motor is a genuine contributor
+          to overheating and reduced lifespan. Lubricate the belt on your
+          manufacturer's recommended schedule — commonly every three to six
+          months depending on usage frequency — since a dry belt forces the
+          motor to work harder than it should, which is one of the most
+          common root causes behind premature motor wear that we see
+          reported in long-term owner reviews.
+        </p>
+        <h3>When to expect belt and deck wear</h3>
+        <p>
+          Even with good maintenance, belts and decks are wear items, not
+          permanent parts. Expect to consider a belt replacement somewhere
+          in the three-to-seven-year range depending on usage frequency and
+          how consistently you've kept it lubricated, and expect the deck
+          itself, if not part of a combined belt-and-deck replacement, to
+          need occasional flipping or resurfacing on higher-end machines that
+          support it. None of this means something has gone wrong — it's the
+          normal lifecycle of a machine that's absorbing thousands of
+          footstrikes a year, and budgeting mentally for an eventual belt
+          replacement is more realistic than expecting the original belt to
+          last indefinitely.
+        </p>
+        <h3>Warranty registration</h3>
+        <p>
+          If you haven't already, register your treadmill's serial number
+          directly with the manufacturer rather than relying on your retailer
+          receipt alone. Most warranty claims move noticeably faster with an
+          active registration on file, and doing it now — while the
+          paperwork and receipt are still easy to find — beats trying to
+          track down proof of purchase months or years after the fact when
+          you actually need to file a claim.
+        </p>
+
+        <!-- Pre-Purchase Checklist -->
+        <h2 id="checklist-box" class="scroll-mt-24">
+          Pre-Purchase Checklist
+        </h2>
+        <p>
+          Here's the entire sequence condensed into one reference list.
+          Work through it top to bottom, and don't skip ahead to Step 4 or 5
+          before Steps 1 and 2 are settled — the order genuinely matters,
+          since each step narrows the field for the one that follows it.
+        </p>
+      </div>
+
+      <div
+        class="not-prose bg-gray-900 text-white rounded-2xl p-8 my-8 border border-gray-800"
+      >
+        <div class="flex items-center gap-3 mb-6">
+          <span
+            class="bg-[#FF5A1F] text-white w-8 h-8 rounded-lg flex items-center justify-center font-black text-sm flex-shrink-0"
+            >✓</span
+          >
+          <p class="font-black text-lg">Pre-Purchase Checklist</p>
+        </div>
+        <ul class="space-y-3">
+          {
+            CHECKLIST_STEPS.map((item, i) => (
+              <li class="flex items-start gap-3">
+                <span class="text-[#5AA9FF] font-black text-sm mt-0.5 flex-shrink-0">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span class="text-gray-200 text-sm leading-relaxed">
+                  {item}
+                </span>
+              </li>
+            ))
+          }
+        </ul>
+        <div class="mt-6 pt-6 border-t border-gray-800">
+          <p class="text-gray-400 text-xs leading-relaxed">
+            Want the deep-dive reference version of steps that touch motor
+            power and deck size? See our companion piece, the
+            <a href="/treadmill-buying-guide-2026" class="text-[#5AA9FF] font-bold no-underline"
+              >Complete Home Treadmill Buying Guide</a
+            >, for the full breakdown.
+          </p>
+        </div>
+      </div>
+
+      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+        <p>
+          If you only take one thing from this checklist, take the order.
+          Budget and space come first because they eliminate entire
+          categories of machine before you've invested any emotional
+          attachment to a specific model. Spec-sheet literacy and delivery
+          planning come in the middle because they protect you from the
+          traps that show up once you're actually comparing finalists. And
+          the ownership steps come last because a good purchase decision
+          still needs a little follow-through to actually pay off over the
+          years you'll own the machine.
+        </p>
+      </div>
+
+      <!-- FAQ -->
+      <div id="faq" class="scroll-mt-24 my-12">
+        <h2 class="text-2xl font-black text-gray-900 mb-6">
+          Frequently Asked Questions
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">
+              Should I buy from a showroom or order online?
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Ordering online is fine and usually cheaper, but if a showroom
+              is within reasonable driving distance, use it as a research
+              stop rather than a purchase decision. Walk or jog on two or
+              three machines in your budget range to calibrate what "quiet"
+              and "smooth" actually feel like in person, then buy whichever
+              specific model fits your space and price best, even if that
+              means ordering it online afterward.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">
+              How do I know if a treadmill will actually fit through my
+              doorway?
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Check the manufacturer's listed crated dimensions, not the
+              assembled footprint, since the box is what has to travel
+              through your doorways and hallways during delivery. Most
+              standard doorways are <strong>30-32 inches</strong> wide, and most
+              treadmill crates fit that on their edge, but narrow stairwells,
+              tight hallway turns, and low basement doorframes are where
+              deliveries actually get stuck. Measure the tightest point in
+              the path, not just the destination room.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">
+              What does "starting at" pricing actually mean on a treadmill
+              listing?
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              It almost always means the price shown is for the base
+              configuration without the console, incline range, or
+              accessories shown in the product photos. Treadmill retailers
+              commonly advertise a stripped-down SKU's price while
+              displaying images of a higher trim level. Always click through
+              to the specific configuration you're planning to buy and
+              confirm the price updates to match before treating any
+              headline number as real.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">
+              Is it normal for a new treadmill belt to need adjustment in the
+              first month?
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Yes. Belts stretch slightly during their first several weeks of
+              use as the material seats into its running position, and a
+              belt that felt properly tensioned on delivery day often needs
+              a quarter-turn tightening of the rear roller bolts a few weeks
+              in. This is routine maintenance, not a defect, and it's worth
+              checking belt tension and centering around the two-week and
+              six-week marks specifically.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">
+              How long is a typical treadmill return window, and does
+              assembly void it?
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Return windows commonly range from <strong
+                >30 to 90 days</strong
+              > depending on the retailer, and most explicitly allow assembly
+              without voiding the return, since you generally can't evaluate a
+              treadmill without putting it together and running on it. What does
+              commonly void or complicate a return is disposing of the original
+              packaging too early, so hold onto the crate and packing materials
+              until you're past the return window and confident in the machine.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">
+              Do I need to register my treadmill's warranty separately, or is
+              my receipt enough?
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Keep your receipt, but also register the unit directly with
+              the manufacturer, since most brands require an active
+              registration on file to process a warranty claim quickly
+              rather than relying on a retailer receipt alone. Registration
+              typically takes a few minutes online using the serial number
+              found on the frame near the motor housing, and doing it during
+              your first week of ownership means you won't be scrambling to
+              find records months later if something needs a claim.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Related Guides -->
+      <div class="my-12">
+        <h2 class="text-2xl font-black text-gray-900 mb-6">
+          More Treadmill Guides
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <a
+            href="/treadmill-buying-guide-2026"
+            class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow"
+          >
+            <span
+              class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]"
+              >Companion Guide</span
+            >
+            <p class="font-bold text-gray-900 mt-2 mb-1">
+              Complete Home Treadmill Buying Guide
+            </p>
+            <p class="text-sm text-gray-500 leading-relaxed">
+              The full reference breakdown of motor power, deck size, and
+              budget tiers.
+            </p>
+          </a>
+          <a
+            href="/best-folding-treadmill-reviews"
+            class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow"
+          >
+            <span
+              class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]"
+              >Folding Treadmills</span
+            >
+            <p class="font-bold text-gray-900 mt-2 mb-1">
+              Best Folding Treadmill Reviews
+            </p>
+            <p class="text-sm text-gray-500 leading-relaxed">
+              Tested fold mechanisms and folded footprints for
+              space-constrained homes.
+            </p>
+          </a>
+          <a
+            href="/best-treadmill-under-1000-reviews"
+            class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow"
+          >
+            <span
+              class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]"
+              >Budget Picks</span
+            >
+            <p class="font-bold text-gray-900 mt-2 mb-1">
+              Best Treadmills Under $1,000
+            </p>
+            <p class="text-sm text-gray-500 leading-relaxed">
+              Our top value picks for buyers working with a tighter budget
+              range.
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <!-- Closing CTA -->
+      <div class="bg-gray-900 text-white rounded-2xl p-8 mb-16">
+        <h2 class="text-2xl font-black mb-4">The Bottom Line</h2>
+        <p class="text-gray-300 leading-relaxed mb-4">
+          Buying a treadmill goes smoothly when you treat it as a sequence,
+          not a single decision. Set your budget, measure your space, decide
+          folding versus fixed, test what you can, read the spec sheet
+          skeptically, plan the delivery, respect the break-in period, and
+          keep up with maintenance afterward. Work the steps in order and the
+          specific model you land on almost picks itself.
+        </p>
+        <p class="text-gray-300 leading-relaxed">
+          Ready to shop your budget tier? Head to
+          <a
+            href="/treadmills-under-1500"
+            class="text-[#5AA9FF] font-bold no-underline">Treadmills Under $1,500</a
+          >, <a
+            href="/best-treadmill-under-1000-reviews"
+            class="text-[#5AA9FF] font-bold no-underline"
+            >Treadmills Under $1,000</a
+          >, or <a
+            href="/treadmills-over-2500"
+            class="text-[#5AA9FF] font-bold no-underline"
+            >Treadmills Over $2,500</a
+          >, or go back for the full reference version in our
+          <a
+            href="/treadmill-buying-guide-2026"
+            class="text-[#5AA9FF] font-bold no-underline"
+            >Complete Home Treadmill Buying Guide</a
+          >.
+        </p>
+      </div>
+    </div>
+  </article>
+</Layout>

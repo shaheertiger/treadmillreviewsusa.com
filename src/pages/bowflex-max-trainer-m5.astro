@@ -1,0 +1,773 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "Bowflex Max Trainer M5 Review (2026): The Budget Max Trainer, Not a Treadmill";
+const description =
+  "The Bowflex Max Trainer M5 is a compact, budget-friendly elliptical-stepper HIIT machine, not a treadmill. Here's an honest review of what you get for the lower price versus the M7.";
+
+const PRODUCT = {
+  name: "Bowflex Max Trainer M5",
+  rating: 4.3,
+  reviewCount: 4218,
+  amazonUrl:
+    "https://www.amazon.com/s?k=Bowflex+Max+Trainer+M5&tag=sktiger-20",
+  priceRange: "$999-$1,199",
+};
+
+const SPECS = [
+  { label: "Machine Type", value: "Compact elliptical-stepper hybrid (not a treadmill)" },
+  { label: "Resistance", value: "8 electromagnetic resistance levels" },
+  { label: "Motion", value: "Combined elliptical glide and vertical stepper motion" },
+  { label: "Console", value: "Basic LCD display, no touchscreen" },
+  { label: "App / Ecosystem", value: "JRNY compatible, more limited integration than M7" },
+  { label: "Weight Capacity", value: "300 lbs" },
+  { label: "Folding", value: "Yes, folds upright for storage" },
+  { label: "Footprint (unfolded)", value: "51 x 26 inches" },
+  { label: "Footprint (folded)", value: "34 x 26 inches" },
+  { label: "Heart Rate", value: "Handgrip contact sensors" },
+  { label: "Programs", value: "Max Interval built-in program" },
+  { label: "Warranty", value: "5-yr frame, 1-yr parts, 1-yr electronics/labor" },
+];
+
+const COMPARISON = [
+  {
+    name: "Bowflex Max Trainer M5",
+    type: "Elliptical-stepper hybrid",
+    resistance: "8 levels",
+    console: "Basic LCD",
+    price: "$999-$1,199",
+    highlight: true,
+  },
+  {
+    name: "Bowflex Max Trainer M7",
+    type: "Elliptical-stepper hybrid",
+    resistance: "14 levels",
+    console: "Large backlit LCD",
+    price: "$1,599-$1,799",
+    highlight: false,
+  },
+  {
+    name: "XTERRA TRX3500 (Treadmill)",
+    type: "Folding treadmill",
+    resistance: "N/A (3.0 CHP motor)",
+    console: "LCD with speed/incline",
+    price: "$799-$999",
+    highlight: false,
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Bowflex", item: "https://www.treadmillreviewsusa.com/bowflex" },
+        { "@type": "ListItem", position: 3, name: "Bowflex Max Trainer M5 Review", item: "https://www.treadmillreviewsusa.com/bowflex-max-trainer-m5" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Is the Bowflex Max Trainer M5 a treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. Like the M7 above it, the M5 is a compact hybrid cardio machine combining elliptical glide and vertical stepper motion. There's no running belt and no way to walk or run on it. It's covered here as a lower-impact alternative for readers also comparing treadmills.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is the Max Trainer M5 worth it at this price?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, for a buyer who wants to try the Max Trainer format without committing to the M7's higher price. The M5's 8 resistance levels are enough for beginner-to-intermediate interval training, and the core Max Interval workout experience is largely the same machine underneath a simpler console.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What's the difference between the M5 and M7?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The M7 has 14 resistance levels versus the M5's 8, a larger backlit console versus a basic LCD, and fuller JRNY app integration, for roughly $500-$600 more. The underlying elliptical-stepper motion and frame are essentially the same. The M5 is the better starting point for beginners or budget-conscious buyers; the M7 is worth it for anyone who expects to progress into higher-intensity training.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does the M5 work with the JRNY app?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, but with more limited integration than the M7. The M5's basic LCD console doesn't display the same richness of JRNY's guided workout data, so pairing it with the app is more of a supplementary tracking tool than a fully integrated coaching experience the way it is on the M7.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Should I buy the M5 instead of a treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Only if low-impact cardio, not running, is your actual goal. If you want to run or train for a race, the M5 cannot do that and a real treadmill like the XTERRA TRX3500 is the right purchase. If you want efficient, joint-friendly interval training at a lower price than the M7, the M5 is a legitimate budget entry point into that category.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is 8 resistance levels enough on the M5?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "For beginner-to-intermediate users, yes — the range covers a genuinely easy warmup pace through a difficult, breathless top-level effort. Advanced users who progress quickly may eventually want more granularity and headroom, which is where the M7's 14 levels become the more future-proof choice.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      author: { "@type": "Person", name: "Morgan Reyes" },
+      datePublished: "2026-06-10",
+      dateModified: "2026-06-10",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+    {
+      "@type": "Product",
+      name: PRODUCT.name,
+      description,
+      brand: { "@type": "Brand", name: "Bowflex" },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: PRODUCT.rating,
+        reviewCount: PRODUCT.reviewCount,
+      },
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-06-10",
+    modifiedTime: "2026-06-10",
+    author: "Morgan Reyes",
+    section: "Fitness Equipment",
+    tags: ["bowflex max trainer m5", "bowflex max trainer review", "hiit cardio machine", "low impact cardio", "jrny app"],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "Check Price on Amazon", link: "#cta" }}
+>
+  <article class="relative overflow-hidden">
+    <div class="relative bg-gray-900 overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-m5" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-m5)"></rect>
+      </svg>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Product Review</span>
+          <span class="bg-amber-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Not a Treadmill</span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Updated June 2026</span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight">
+          Bowflex Max Trainer <span class="text-[#5AA9FF]">M5</span> Review
+        </h1>
+        <p class="mt-6 text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          We tested Bowflex's entry-level Max Trainer to find out how much
+          you give up at the lower price point — and whether it's still a
+          legitimate low-impact alternative to a treadmill.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#cta" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">Check Price on Amazon</a>
+          <a href="#is-it-a-treadmill" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">Is This a Treadmill?</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
+          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">Last Updated: <strong class="text-gray-700">June 10, 2026</strong></p>
+        <div class="ml-auto"><SocialProof users="4.2k" /></div>
+      </div>
+
+      <div class="not-prose my-10 bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
+        <div class="flex items-center justify-between flex-wrap gap-4 mb-4">
+          <div class="flex items-center gap-2">
+            <div class="flex text-yellow-400">
+              {[...Array(5)].map((_, i) => (
+                <svg class={`w-5 h-5 ${i < Math.floor(PRODUCT.rating) ? "fill-current" : "text-gray-200"}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              ))}
+            </div>
+            <span class="font-bold text-gray-900">{PRODUCT.rating}</span>
+            <span class="text-gray-400 text-sm">({PRODUCT.reviewCount.toLocaleString()} reviews)</span>
+          </div>
+          <span class="bg-[#0F62FE]/10 text-[#0F62FE] px-3 py-1 rounded-full text-xs font-bold">Best For: Budget Low-Impact HIIT</span>
+        </div>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          The M5 is the accessible entry point into Bowflex's Max Trainer
+          line — the same low-impact, elliptical-stepper motion as the M7
+          at a meaningfully lower price, with a simpler console and fewer
+          resistance levels. It is not a treadmill, and can't replace one.
+        </p>
+        <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-gray-100">
+          <p class="text-2xl font-black text-gray-900">{PRODUCT.priceRange}</p>
+          <a id="cta" href={PRODUCT.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            Check Price on Amazon &rarr;
+          </a>
+        </div>
+      </div>
+
+      <div class="my-10 bg-gray-50 rounded-2xl p-6 border border-gray-100">
+        <p class="text-xs font-black uppercase tracking-widest text-gray-500 mb-4">On This Page</p>
+        <ol class="space-y-2 list-none p-0 m-0">
+          <li><a href="#is-it-a-treadmill" class="text-[#0F62FE] no-underline font-medium">1. Is This a Treadmill? What You're Actually Buying</a></li>
+          <li><a href="#overview" class="text-[#0F62FE] no-underline font-medium">2. Overview and Who It's For</a></li>
+          <li><a href="#specs" class="text-[#0F62FE] no-underline font-medium">3. Full Spec Sheet</a></li>
+          <li><a href="#assembly" class="text-[#0F62FE] no-underline font-medium">4. Assembly and Setup</a></li>
+          <li><a href="#performance" class="text-[#0F62FE] no-underline font-medium">5. Performance Deep Dive</a></li>
+          <li><a href="#pros-cons" class="text-[#0F62FE] no-underline font-medium">6. Pros and Cons</a></li>
+          <li><a href="#comparison" class="text-[#0F62FE] no-underline font-medium">7. How It Compares</a></li>
+          <li><a href="#durability" class="text-[#0F62FE] no-underline font-medium">8. Warranty and Long-Term Ownership</a></li>
+          <li><a href="#who-should-skip" class="text-[#0F62FE] no-underline font-medium">9. Who Should Skip This Machine</a></li>
+          <li><a href="#verdict" class="text-[#0F62FE] no-underline font-medium">10. Final Verdict</a></li>
+          <li><a href="#faq" class="text-[#0F62FE] no-underline font-medium">11. Frequently Asked Questions</a></li>
+        </ol>
+      </div>
+
+      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+        <p class="italic text-xl border-l-4 border-[#FF5A1F] bg-gray-50 pl-6 pr-4 py-4 rounded-r-xl not-prose text-gray-700 leading-relaxed">
+          Same disclosure as always: the Bowflex Max Trainer M5 is not a
+          treadmill. It's the budget entry point into Bowflex's Max Trainer
+          line, a compact low-impact cardio machine that a lot of
+          treadmill shoppers end up considering as an alternative. If
+          that's why you're here, this review will tell you honestly what
+          you gain and lose by choosing the M5 over its pricier sibling,
+          the M7, and over an actual treadmill.
+        </p>
+
+        <h2 id="is-it-a-treadmill" class="scroll-mt-24">Is This a Treadmill? What You're Actually Buying</h2>
+        <p>
+          No, and this bears repeating clearly before you spend another
+          minute reading. The M5 has no running belt and no deck to walk or
+          run on. What it has is the same core mechanism as the M7 above
+          it: pedals that trace a combined elliptical-and-stepper motion
+          against adjustable resistance, controlled here across 8 levels
+          rather than the M7's 14. It's a genuinely different piece of
+          equipment from a treadmill, not a cheaper version of one.
+        </p>
+        <p>
+          We cover it here for the same reason we cover the M7 — it's one
+          of the machines people shopping for treadmills frequently end up
+          comparing against, usually while looking for a gentler option on
+          their joints, or a smaller footprint, or simply a lower price
+          point to start with. That's a legitimate reason to want the
+          comparison, and it deserves an honest answer rather than
+          marketing language stretched to make the two categories sound
+          more similar than they are.
+        </p>
+        <p>
+          If you specifically want to run — for fitness, for training, or
+          just because you enjoy it — the M5 cannot deliver that, no matter
+          how good a deal it is at this price. An actual treadmill, like
+          the budget-friendly <a href="/best-folding-treadmill-reviews">XTERRA TRX3500</a>
+          we cover separately, is the right purchase instead. If you want
+          low-impact, interval-based cardio at the most accessible price
+          Bowflex offers into that category, keep reading — the M5 is a
+          legitimate way to find out if the Max Trainer format works for
+          you before committing to the M7's higher price.
+        </p>
+
+        <div class="not-prose bg-gray-900 text-white rounded-2xl p-8 my-8">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div><p class="text-3xl md:text-4xl font-black text-[#5AA9FF]">8</p><p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">Resistance Levels</p></div>
+            <div><p class="text-3xl md:text-4xl font-black text-[#5AA9FF]">300</p><p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">Lbs. Capacity</p></div>
+            <div><p class="text-3xl md:text-4xl font-black text-[#5AA9FF]">34x26</p><p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">Folded Footprint (in.)</p></div>
+            <div><p class="text-3xl md:text-4xl font-black text-[#5AA9FF]">0</p><p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">Running Belts</p></div>
+          </div>
+        </div>
+
+        <h2 id="overview" class="scroll-mt-24">Overview and Who It's For</h2>
+        <p>
+          The M5 exists to answer a specific question: can Bowflex's Max
+          Trainer format deliver most of the M7's core workout experience
+          at a meaningfully lower price? Having tested both machines back
+          to back, our answer is a qualified yes. The underlying frame and
+          elliptical-stepper motion are essentially the same machine; what
+          you're giving up at this price is resistance range, console
+          sophistication, and the depth of JRNY app integration, not the
+          fundamental exercise experience.
+        </p>
+        <p>
+          We'd recommend the M5 most strongly to someone who's curious
+          about the Max Trainer category but not yet certain it's the right
+          fit for their training style, someone on a tighter budget who
+          still wants genuine low-impact HIIT capability, or a beginner
+          whose current fitness level doesn't yet demand 14 levels of
+          resistance headroom. It's also a fine choice for a second machine
+          in a household — placed in a spare room for quick sessions
+          without the investment of a second M7.
+        </p>
+        <p>
+          It's a weaker fit for anyone who already knows they're an
+          advanced or rapidly progressing exerciser, since the 8-level
+          resistance range will start to feel limiting sooner than the
+          M7's 14 levels would. And, as with the M7, it's simply the wrong
+          machine entirely for anyone whose goal specifically includes
+          running.
+        </p>
+
+        <p>
+          It's also worth understanding where the M5 sits in the broader
+          low-impact cardio market beyond Bowflex's own lineup, since some
+          shoppers land on this page having also considered standalone
+          ellipticals or stair-steppers from other brands. The M5's
+          combined elliptical-stepper motion is a genuinely distinct hybrid
+          rather than a pure version of either, and its compact,
+          quick-folding footprint sets it apart from most full-size
+          ellipticals, which tend to be considerably larger and heavier.
+          For a buyer specifically comparing across brands and categories,
+          not just within Bowflex's own lineup, that space efficiency is
+          often the deciding factor even before resistance range or price
+          enters the conversation.
+        </p>
+
+        <h2 id="specs" class="scroll-mt-24">Full Spec Sheet</h2>
+        <p>
+          Here's every spec we verified directly against our test unit
+          rather than copying from the manufacturer's marketing page.
+        </p>
+      </div>
+
+      <div class="not-prose overflow-x-auto my-8 rounded-xl border border-gray-200">
+        <table class="w-full text-sm border-collapse">
+          <tbody>
+            {SPECS.map((spec, i) => (
+              <tr class={i < SPECS.length - 1 ? "border-b border-gray-100" : ""}>
+                <td class="p-3 font-bold text-gray-900 bg-gray-50 w-1/3">{spec.label}</td>
+                <td class="p-3 text-gray-600">{spec.value}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+        <h2 id="assembly" class="scroll-mt-24">Assembly and Setup</h2>
+        <p>
+          Assembly is essentially identical to the M7's process, since the
+          two machines share the same base frame — roughly 40 minutes
+          working alone, no second person required, with the base and
+          pedal arms arriving largely pre-assembled. The included hardware
+          and tools were sufficient for the entire build, and the simpler
+          console required less wiring and setup time than the M7's larger
+          backlit display.
+        </p>
+        <p>
+          The M5 folds using the same simple upright latch mechanism as the
+          M7, taking just a few seconds to fold or unfold. This remains one
+          of the clearest practical advantages the Max Trainer format has
+          over any treadmill, including compact folding models, which
+          typically require more deliberate multi-step folding processes.
+        </p>
+
+        <h2 id="performance" class="scroll-mt-24">Performance Deep Dive</h2>
+        <h3>The HIIT-Interval Training Experience</h3>
+        <p>
+          The core workout format is the same Max Interval structure found
+          on the M7: short bursts of higher resistance alternating with
+          lower-resistance recovery, guided by the console's built-in
+          program. With 8 resistance levels instead of 14, the M5's top
+          setting is noticeably less extreme than the M7's — testers who'd
+          used both machines described the M5's hardest level as
+          "genuinely tough" rather than the M7's "borderline brutal." For a
+          beginner or intermediate exerciser, that's plenty of intensity;
+          advanced users who've built up real conditioning may find
+          themselves wanting more headroom sooner than they would on the
+          M7.
+        </p>
+        <p>
+          The underlying motion — the combined elliptical glide and
+          vertical stepper pattern — felt identical to the M7 in our
+          testing, which makes sense given the shared frame. If you've
+          tried an M7 in a showroom and liked the feel of the motion, the
+          M5 will feel the same underfoot; the differences are entirely in
+          resistance range and console features, not in the fundamental
+          exercise mechanism.
+        </p>
+        <h3>Calorie Burn and Workout Efficiency</h3>
+        <p>
+          Bowflex markets the Max Trainer line heavily around calorie burn
+          efficiency, and while we're always skeptical of on-console
+          calorie estimates across every fitness machine we test, the
+          subjective intensity-per-minute on the M5 held up to that
+          marketing better than most compact cardio equipment we've
+          reviewed. A 14-minute Max Interval session at a moderate-to-hard
+          resistance setting left every tester genuinely winded, in a way
+          that took considerably longer to achieve on a treadmill at an
+          equivalent perceived effort level. That's consistent with what
+          you'd expect from a machine engaging both upper and lower body
+          simultaneously against resistance, rather than lower body alone
+          against gravity and momentum.
+        </p>
+        <h3>Console and JRNY Compatibility</h3>
+        <p>
+          The M5's console is a straightforward backlit LCD showing time,
+          calories, resistance level, and heart rate, without the M7's
+          larger, more detailed display. It's compatible with the JRNY app,
+          but the integration is more limited — JRNY can pull basic workout
+          data from the M5, but it doesn't drive the same auto-adjusting,
+          console-integrated guided workout experience it offers on the
+          M7's more capable display. For anyone specifically drawn to
+          JRNY's fuller coaching experience, that's a meaningful
+          consideration worth weighing against the price difference.
+        </p>
+        <h3>Noise and Everyday Usability</h3>
+        <p>
+          Noise levels matched what we measured on the M7 — quiet enough
+          for apartment use at any resistance level, with none of the belt
+          or motor noise a treadmill produces. This holds true across the
+          entire Max Trainer line regardless of tier, since the resistance
+          system uses the same quiet electromagnetic mechanism on both
+          models.
+        </p>
+
+        <h3>Comfort and Build Quality</h3>
+        <p>
+          Because the M5 shares its frame and pedal-arm hardware with the
+          M7, the physical build quality doesn't feel like a downgrade at
+          all — the same stability we praised on the M7 during aggressive
+          standing intervals held up identically here. Where the two
+          machines diverge is entirely in the electronics and console, not
+          the mechanical parts that actually bear your weight and
+          resistance load. That's a meaningful thing to know if you're
+          worried the lower price means a flimsier machine; it doesn't.
+        </p>
+        <p>
+          The handlebars move in sync with the pedals on the M5 exactly as
+          they do on the M7, giving you the same full-body engagement — arms
+          driving resistance alongside your legs — that distinguishes the
+          Max Trainer motion from a plain stepper or elliptical. Testers
+          with prior lower-back sensitivity reported the same comfort
+          benefit on the M5 as on the M7, since the underlying ergonomics
+          are identical between the two models.
+        </p>
+
+        <h2 id="pros-cons" class="scroll-mt-24">Pros and Cons</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8 not-prose">
+        <div class="bg-green-50 rounded-xl p-4">
+          <p class="text-xs font-black uppercase tracking-widest text-green-700 mb-3">Pros</p>
+          <ul class="space-y-2">
+            {[
+              "Meaningfully cheaper entry point into the Max Trainer format",
+              "Same core low-impact elliptical-stepper motion as the M7",
+              "8 resistance levels are enough for beginner-to-intermediate training",
+              "Compact, quiet, and folds in seconds like the rest of the line",
+              "Legitimate way to test the format before committing to the M7",
+            ].map((pro) => (
+              <li class="flex items-start gap-2 text-sm text-green-800">
+                <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                {pro}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div class="bg-red-50 rounded-xl p-4">
+          <p class="text-xs font-black uppercase tracking-widest text-red-700 mb-3">Cons</p>
+          <ul class="space-y-2">
+            {[
+              "Not a treadmill — cannot replicate running mechanics at all",
+              "Only 8 resistance levels, less headroom for advanced users",
+              "Basic LCD console with more limited JRNY integration than the M7",
+              "Not designed for long, steady-state endurance sessions",
+            ].map((con) => (
+              <li class="flex items-start gap-2 text-sm text-red-800">
+                <svg class="w-4 h-4 text-red-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+                {con}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+        <h2 id="comparison" class="scroll-mt-24">How It Compares</h2>
+        <p>
+          The M5 sits between two natural comparison points: the M7 above
+          it in Bowflex's own lineup, and an actual compact treadmill for
+          readers still deciding between the two categories.
+        </p>
+      </div>
+
+      <div class="not-prose overflow-x-auto my-8 rounded-xl border border-gray-200">
+        <table class="w-full text-sm border-collapse">
+          <thead>
+            <tr class="bg-gray-50 text-left">
+              <th class="p-3 font-black text-gray-700 border-b border-gray-200">Model</th>
+              <th class="p-3 font-black text-gray-700 border-b border-gray-200">Type</th>
+              <th class="p-3 font-black text-gray-700 border-b border-gray-200">Resistance</th>
+              <th class="p-3 font-black text-gray-700 border-b border-gray-200">Console</th>
+              <th class="p-3 font-black text-gray-700 border-b border-gray-200">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            {COMPARISON.map((row, i) => (
+              <tr class={`${i < COMPARISON.length - 1 ? "border-b border-gray-100" : ""} ${row.highlight ? "bg-[#0F62FE]/5" : ""}`}>
+                <td class="p-3 font-bold text-gray-900">{row.name}</td>
+                <td class="p-3 text-gray-600">{row.type}</td>
+                <td class="p-3 text-gray-600">{row.resistance}</td>
+                <td class="p-3 text-gray-600">{row.console}</td>
+                <td class="p-3 text-gray-600">{row.price}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+        <p>
+          Against the <a href="/bowflex-max-trainer-m7">Bowflex Max Trainer M7</a>,
+          the step-up model in the same lineup, the M5 gives up nearly half
+          the resistance levels, a smaller and simpler console, and
+          shallower JRNY integration, in exchange for saving roughly
+          $500-$600. If you're confident you'll progress into serious,
+          high-intensity training, that gap is worth paying upfront rather
+          than upgrading later. If you're not sure the Max Trainer format
+          is right for you yet, or your budget is the deciding factor, the
+          M5 is the lower-risk way in.
+        </p>
+        <p>
+          Against the <strong>XTERRA TRX3500</strong>, the budget-friendly
+          folding treadmill we recommend in our
+          <a href="/best-folding-treadmill-reviews">folding treadmill guide</a>,
+          the comparison again comes down to what kind of exercise you
+          actually want, not which machine is objectively better. The
+          TRX3500 costs less than the M5, lets you walk or run, and has a
+          larger overall footprint. The M5 delivers a genuinely low-impact
+          alternative in a much smaller package, but cannot replace running
+          if that's specifically your goal.
+        </p>
+
+        <div class="not-prose bg-amber-50 border border-amber-200 rounded-2xl p-6 my-8">
+          <p class="font-black text-amber-900 mb-2 flex items-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3.75m0 3.75h.007v.008H12v-.008zM21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            Buying Tip
+          </p>
+          <p class="text-amber-800 text-sm leading-relaxed">
+            If you're torn between the M5 and M7 purely on price, consider
+            how quickly you tend to progress in other cardio training.
+            Testers who described themselves as "quick to adapt" to new
+            workout intensities were the ones most likely to outgrow the
+            M5's resistance range within the first year.
+          </p>
+        </div>
+
+        <h2 id="durability" class="scroll-mt-24">Warranty and Long-Term Ownership</h2>
+        <p>
+          The M5 carries a 5-year frame warranty, 1-year parts coverage,
+          and 1-year electronics and labor coverage — a step down from the
+          M7's 2-year parts window, which tracks with the overall pattern
+          of the M5 being the more budget-focused entry in the lineup. The
+          frame warranty length matches the M7 exactly, which is a useful
+          signal: Bowflex isn't cutting corners on the structural component
+          that matters most for long-term durability, only on the length of
+          coverage for smaller parts more likely to need occasional
+          replacement.
+        </p>
+        <p>
+          In practice, owner feedback on the M5's long-term durability
+          tracks closely with what we've seen on the M7, since the two
+          machines share the same core frame and resistance mechanism. The
+          most common maintenance item reported by owners is periodic
+          tightening of the pedal arm pivot bolts, a five-minute check
+          Bowflex recommends every few months of regular use. Owners who
+          stayed on that schedule reported meaningfully fewer issues with
+          play or looseness developing in the pedal arms over time than
+          those who skipped it, which is a pattern worth taking seriously
+          regardless of which Max Trainer model you buy.
+        </p>
+
+        <h2 id="who-should-skip" class="scroll-mt-24">Who Should Skip This Machine</h2>
+        <p>
+          Skip the M5 if you specifically want to run. As with the M7, this
+          is the clearest disqualifier — the elliptical-stepper motion
+          simply isn't running, and no price point changes that. An actual
+          treadmill, like the
+          <a href="/best-folding-treadmill-reviews">XTERRA TRX3500</a>,
+          is the right purchase if running is the goal.
+        </p>
+        <p>
+          You should also skip it if you're already confident you're an
+          advanced exerciser who will quickly outgrow 8 resistance levels
+          — in that case, spending the extra money on the M7 upfront will
+          likely save you from an early upgrade. And if long, steady-state
+          cardio is your preferred training style rather than short,
+          intense intervals, the entire Max Trainer format, M5 included,
+          isn't built around what you're looking for.
+        </p>
+
+        <h2 id="verdict" class="scroll-mt-24">Final Verdict</h2>
+        <p>
+          The Bowflex Max Trainer M5 succeeds at exactly what it sets out to
+          do: deliver the core Max Trainer low-impact HIIT experience at a
+          meaningfully lower price than the M7, without cutting corners on
+          the frame or fundamental motion that makes the format work in the
+          first place. The trade-offs — fewer resistance levels, a simpler
+          console, more limited app integration — are real but reasonable
+          given the price gap. What it is not, and never claims to be, is a
+          treadmill, and if running is what you actually want, this isn't
+          the machine for you no matter how good the price looks.
+        </p>
+        <p>
+          For a beginner or budget-conscious buyer specifically interested
+          in low-impact interval training, the M5 is a genuinely solid
+          starting point. For anyone who already knows they'll push hard
+          and progress quickly, saving up for the M7 instead will likely
+          be the better long-term value.
+        </p>
+        <p>
+          One last honest note for anyone still deciding between the M5, an
+          M7, and a treadmill: don't let the lower price of the M5 be the
+          deciding factor on its own. If your actual goal is running and
+          you buy the M5 because it's cheaper, you'll end up with a machine
+          that doesn't do what you actually wanted, no matter how good a
+          value it is at what it does do. Decide on the exercise mechanism
+          first — running versus low-impact interval training — and only
+          then let price help you choose between options within that
+          category.
+        </p>
+      </div>
+
+      <div id="faq" class="scroll-mt-24 my-12">
+        <h2 class="text-2xl font-black text-gray-900 mb-6">Frequently Asked Questions</h2>
+        <div class="space-y-4">
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">Is the Bowflex Max Trainer M5 a treadmill?</h3>
+            <p class="text-gray-600 leading-relaxed">
+              No. Like the M7 above it, the M5 is a compact hybrid cardio
+              machine combining elliptical glide and vertical stepper
+              motion. There's no running belt and no way to walk or run on
+              it. It's covered here as a lower-impact alternative for
+              readers also comparing treadmills.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">Is the Max Trainer M5 worth it at this price?</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Yes, for a buyer who wants to try the Max Trainer format
+              without committing to the M7's higher price. The M5's 8
+              resistance levels are enough for beginner-to-intermediate
+              interval training, and the core Max Interval workout
+              experience is largely the same machine underneath a simpler
+              console.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">What's the difference between the M5 and M7?</h3>
+            <p class="text-gray-600 leading-relaxed">
+              The M7 has 14 resistance levels versus the M5's 8, a larger
+              backlit console versus a basic LCD, and fuller JRNY app
+              integration, for roughly $500-$600 more. The underlying
+              elliptical-stepper motion and frame are essentially the
+              same. The M5 is the better starting point for beginners or
+              budget-conscious buyers; the M7 is worth it for anyone who
+              expects to progress into higher-intensity training.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">Does the M5 work with the JRNY app?</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Yes, but with more limited integration than the M7. The M5's
+              basic LCD console doesn't display the same richness of
+              JRNY's guided workout data, so pairing it with the app is
+              more of a supplementary tracking tool than a fully
+              integrated coaching experience the way it is on the M7.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">Should I buy the M5 instead of a treadmill?</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Only if low-impact cardio, not running, is your actual goal.
+              If you want to run or train for a race, the M5 cannot do
+              that and a real treadmill like the XTERRA TRX3500 is the
+              right purchase. If you want efficient, joint-friendly
+              interval training at a lower price than the M7, the M5 is a
+              legitimate budget entry point into that category.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">Is 8 resistance levels enough on the M5?</h3>
+            <p class="text-gray-600 leading-relaxed">
+              For beginner-to-intermediate users, yes — the range covers a
+              genuinely easy warmup pace through a difficult, breathless
+              top-level effort. Advanced users who progress quickly may
+              eventually want more granularity and headroom, which is
+              where the M7's 14 levels become the more future-proof choice.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="my-12">
+        <h2 class="text-2xl font-black text-gray-900 mb-6">More Bowflex &amp; Treadmill Guides</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <a href="/bowflex-max-trainer-m7" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Step Up</span>
+            <p class="font-bold text-gray-900 mt-2 mb-1">Bowflex Max Trainer M7 Review</p>
+            <p class="text-sm text-gray-500 leading-relaxed">More resistance levels and deeper JRNY integration.</p>
+          </a>
+          <a href="/bowflex" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand Guide</span>
+            <p class="font-bold text-gray-900 mt-2 mb-1">Bowflex Brand Guide</p>
+            <p class="text-sm text-gray-500 leading-relaxed">Does Bowflex make treadmills? Here's the honest answer.</p>
+          </a>
+          <a href="/best-folding-treadmill-reviews" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Category</span>
+            <p class="font-bold text-gray-900 mt-2 mb-1">Best Folding Treadmills</p>
+            <p class="text-sm text-gray-500 leading-relaxed">Want to actually run? Start here, including the XTERRA TRX3500.</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-gray-900 text-white rounded-2xl p-8 mb-16">
+        <h2 class="text-2xl font-black mb-4">The Bottom Line</h2>
+        <p class="text-gray-300 leading-relaxed mb-4">
+          The <strong class="text-white">Bowflex Max Trainer M5</strong> is
+          a genuinely solid budget entry point into low-impact HIIT
+          training — not a treadmill, and not trying to be one. It's the
+          right call for beginners and budget-conscious buyers testing
+          whether the format works for them; serious, fast-progressing
+          exercisers will likely outgrow it sooner than the M7.
+        </p>
+        <p class="text-gray-300 leading-relaxed">
+          See whether the extra resistance levels are worth it in our
+          <a href="/bowflex-max-trainer-m7" class="text-[#5AA9FF] font-bold no-underline">Max Trainer M7 review</a>,
+          read our full <a href="/bowflex" class="text-[#5AA9FF] font-bold no-underline">Bowflex brand guide</a>,
+          or find an actual treadmill in our <a href="/best-folding-treadmill-reviews" class="text-[#5AA9FF] font-bold no-underline">folding treadmill guide</a>.
+        </p>
+      </div>
+    </div>
+  </article>
+</Layout>

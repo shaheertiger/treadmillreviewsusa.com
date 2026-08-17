@@ -90,7 +90,17 @@ export default function MobileNav() {
                   </div>
                 </a>
               </div>
-              <a href="/best-of" onClick={close} className="text-left text-lg font-semibold py-2 border-t pt-4 text-[#FF5A1F]">Trending Deals</a>
+              <div className="border-t border-gray-100 pt-4">
+                <p className="text-xs font-black uppercase tracking-widest text-gray-400 mb-3">Brands</p>
+                <a href="/nordictrack" onClick={close} className="block py-2 no-underline text-base font-semibold text-gray-900">NordicTrack</a>
+                <a href="/proform-treadmill" onClick={close} className="block py-2 no-underline text-base font-semibold text-gray-900">ProForm</a>
+                <a href="/sole-fitness" onClick={close} className="block py-2 no-underline text-base font-semibold text-gray-900">Sole Fitness</a>
+                <a href="/life-fitness" onClick={close} className="block py-2 no-underline text-base font-semibold text-gray-900">Life Fitness</a>
+                <a href="/matrix-fitness" onClick={close} className="block py-2 no-underline text-base font-semibold text-gray-900">Matrix Fitness</a>
+                <a href="/bowflex" onClick={close} className="block py-2 no-underline text-base font-semibold text-gray-900">Bowflex</a>
+              </div>
+              <a href="/best-of" onClick={close} className="text-left text-lg font-semibold py-2 border-t pt-4 text-[#0F62FE]">See All Guides &amp; Reviews</a>
+              <a href="/best-of" onClick={close} className="text-left text-lg font-semibold py-2 text-[#FF5A1F]">Trending Deals</a>
             </nav>
           </div>
         </>

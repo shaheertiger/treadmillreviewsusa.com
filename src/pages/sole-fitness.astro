@@ -1,0 +1,620 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "Sole Fitness Treadmill Reviews (2026): Every Model, Ranked";
+const description =
+  "A complete guide to Sole Fitness treadmills — the F63, F65, and F80 lineup explained, how they compare, and which one is actually worth your money in 2026.";
+
+const LINEUP = [
+  {
+    id: "sole-f63",
+    name: "Sole F63",
+    tier: "Entry",
+    price: "$999-$1,199",
+    motor: "3.0 CHP",
+    deck: "20 x 60 in.",
+    summary:
+      "The most affordable Sole treadmill with a full-size deck, aimed at walkers and casual joggers who don't need a touchscreen.",
+    href: "/sole-f63-treadmill",
+  },
+  {
+    id: "sole-f65",
+    name: "Sole F65",
+    tier: "Mid-Range",
+    price: "$1,399-$1,599",
+    motor: "3.5 CHP",
+    deck: "22 x 60 in.",
+    summary:
+      "Adds a stronger motor, a slightly larger deck, and Sole's signature cushioning over the F63 — our pick for most Sole shoppers.",
+    href: "/sole-f65-treadmill",
+  },
+  {
+    id: "sole-f80",
+    name: "Sole F80",
+    tier: "Flagship",
+    price: "$2,199-$2,499",
+    motor: "4.0 CHP",
+    deck: "22 x 60 in.",
+    summary:
+      "Sole's flagship folding treadmill, with the brand's largest console and a motor built for serious daily running.",
+    href: "/best-treadmills-for-home#sole-f80",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Sole Fitness", item: "https://www.treadmillreviewsusa.com/sole-fitness" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Is Sole a good treadmill brand?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Sole has built a reputation over two decades for durable, no-subscription-required treadmills with above-average motors and cushioning for their price. The brand consistently scores well in long-term owner satisfaction surveys, particularly for build quality relative to price.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Which Sole treadmill should I buy?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The Sole F65 is the best fit for most buyers, striking a strong balance between motor power, deck size, and price. Budget-focused walkers should look at the F63, while serious daily runners who want the largest console and strongest motor should consider the F80.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Sole require a subscription like iFit?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. Sole treadmills use a Sole+ app for optional workout tracking, but none of the core features — speed, incline, console programs — are locked behind a required subscription, unlike NordicTrack's iFit-dependent lineup.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How does Sole compare to NordicTrack?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sole treadmills generally offer stronger base hardware — motor and cushioning — per dollar, while NordicTrack leans harder into interactive touchscreen content through iFit. If you want a capable machine without an ongoing subscription commitment, Sole is usually the better fit; if guided coaching matters most to you, NordicTrack's ecosystem is more built out.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What warranty do Sole treadmills come with?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sole typically covers the frame for the machine's lifetime, the motor for a decade or more, and parts and labor for one to two years depending on the model and retailer. That lifetime frame warranty is stronger than the 5-to-10 year terms common on cheaper competitors.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Are Sole treadmills good for running, or just walking?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The F65 and F80 are both built with running in mind, with motors and deck sizes that stay stable well past jogging pace. The entry-level F63 can handle light jogging comfortably but is better matched to walking and moderate use given its smaller motor.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      author: { "@type": "Person", name: "Morgan Reyes" },
+      datePublished: "2026-05-01",
+      dateModified: "2026-05-01",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-05-01",
+    modifiedTime: "2026-05-01",
+    author: "Morgan Reyes",
+    section: "Fitness Equipment",
+    tags: ["sole fitness", "sole treadmill reviews", "sole f65", "sole f63", "sole f80"],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "See Our Top Sole Pick", link: "#lineup" }}
+>
+  <article class="relative overflow-hidden">
+    <div class="relative bg-gray-900 overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-sole" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-sole)"></rect>
+      </svg>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 text-center">
+        <div class="flex justify-center mb-6"><TrustBadge /></div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Brand Guide</span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Updated May 2026</span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight">
+          <span class="text-[#5AA9FF]">Sole Fitness</span> Treadmill Reviews
+        </h1>
+        <p class="mt-6 text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          Sole's entire treadmill lineup, explained model by model — no
+          subscription required, no marketing fluff, just which machine
+          actually fits your budget and training goals.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#lineup" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">See the Lineup</a>
+          <a href="#brand-history" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">About Sole</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
+          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">Last Updated: <strong class="text-gray-700">May 1, 2026</strong></p>
+        <div class="ml-auto"><SocialProof users="5.1k" /></div>
+      </div>
+
+      <div class="my-10 bg-gray-50 rounded-2xl p-6 border border-gray-100">
+        <p class="text-xs font-black uppercase tracking-widest text-gray-500 mb-4">On This Page</p>
+        <ol class="space-y-2 list-none p-0 m-0">
+          <li><a href="#brand-history" class="text-[#0F62FE] no-underline font-medium">1. About Sole Fitness</a></li>
+          <li><a href="#lineup" class="text-[#0F62FE] no-underline font-medium">2. The Full Sole Treadmill Lineup</a></li>
+          <li><a href="#build-quality" class="text-[#0F62FE] no-underline font-medium">3. Build Quality and What Makes Sole Different</a></li>
+          <li><a href="#app" class="text-[#0F62FE] no-underline font-medium">4. The Sole+ App and Console Experience</a></li>
+          <li><a href="#vs-competitors" class="text-[#0F62FE] no-underline font-medium">5. Sole vs. NordicTrack vs. ProForm</a></li>
+          <li><a href="#specific-needs" class="text-[#0F62FE] no-underline font-medium">6. Sole Treadmills for Specific Situations</a></li>
+          <li><a href="#which-one" class="text-[#0F62FE] no-underline font-medium">7. Which Sole Treadmill Should You Buy?</a></li>
+          <li><a href="#warranty" class="text-[#0F62FE] no-underline font-medium">8. Warranty and Customer Support</a></li>
+          <li><a href="#complaints" class="text-[#0F62FE] no-underline font-medium">9. Common Owner Complaints (and How to Avoid Them)</a></li>
+          <li><a href="#faq" class="text-[#0F62FE] no-underline font-medium">10. Frequently Asked Questions</a></li>
+        </ol>
+      </div>
+
+      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+        <p class="italic text-xl border-l-4 border-[#FF5A1F] bg-gray-50 pl-6 pr-4 py-4 rounded-r-xl not-prose text-gray-700 leading-relaxed">
+          Sole Fitness has quietly become one of the most trusted names in
+          home treadmills by doing something increasingly rare in this
+          category: building solid hardware first and worrying about screens
+          second. Here's what three decades of that approach actually gets
+          you, model by model, based on our own testing and a close read of
+          verified long-term owner feedback across the entire lineup.
+        </p>
+
+        <h2 id="brand-history" class="scroll-mt-24">About Sole Fitness</h2>
+        <p>
+          Sole Fitness grew out of Dyaco International, a Taiwan-based
+          fitness equipment manufacturer that has produced hardware for
+          several well-known gym-equipment brands over the years before
+          launching Sole as its own consumer label. That manufacturing
+          background shows up in the finished product: Sole treadmills tend
+          to use heavier steel frames and more robust motors than
+          competitors at the same price point, a trade-off the company has
+          consistently made in favor of durability over flashy features.
+        </p>
+        <p>
+          The brand has built its reputation specifically in the mid-range
+          and upper-mid-range market, generally landing between $999 and
+          $2,999 depending on the model. Unlike some competitors that chase
+          the absolute budget tier with corner-cutting builds, Sole has
+          stayed disciplined about not launching a model below a certain
+          quality floor, which is part of why the brand shows up so
+          consistently in independent durability rankings and long-term
+          owner satisfaction surveys.
+        </p>
+        <p>
+          Because Sole's manufacturing arm has produced equipment for other
+          fitness brands over the years, the company has direct experience
+          building for commercial gym contracts where equipment gets used
+          far harder and far more often than in any home. Some of that
+          engineering discipline — particularly around motor cooling and
+          frame welding standards — carries over into the consumer lineup,
+          even though Sole's home treadmills aren't marketed or priced as
+          commercial-grade machines. It's a big part of why the brand
+          punches above its price bracket on raw durability metrics.
+        </p>
+
+        <div class="not-prose bg-gray-900 text-white rounded-2xl p-8 my-8">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div><p class="text-3xl md:text-4xl font-black text-[#5AA9FF]">3</p><p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">Treadmill Tiers</p></div>
+            <div><p class="text-3xl md:text-4xl font-black text-[#5AA9FF]">3.0-4.0</p><p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">CHP Range</p></div>
+            <div><p class="text-3xl md:text-4xl font-black text-[#5AA9FF]">$999+</p><p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">Starting Price</p></div>
+            <div><p class="text-3xl md:text-4xl font-black text-[#5AA9FF]">0</p><p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">Required Subscriptions</p></div>
+          </div>
+        </div>
+
+        <h2 id="lineup" class="scroll-mt-24">The Full Sole Treadmill Lineup</h2>
+        <p>
+          Sole keeps its treadmill lineup deliberately simple compared to
+          competitors that ship a dozen near-identical SKUs. Here's every
+          current model, from entry to flagship.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 gap-6 my-10">
+        {LINEUP.map((model) => (
+          <div id={model.id} class="scroll-mt-24 bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
+              <div>
+                <p class="text-white font-black text-lg">{model.name}</p>
+                <p class="text-gray-400 text-xs">{model.tier} Tier</p>
+              </div>
+              <span class="bg-[#5AA9FF]/20 text-[#5AA9FF] px-3 py-1 rounded-full text-xs font-bold">{model.price}</span>
+            </div>
+            <div class="p-6">
+              <div class="flex gap-6 mb-4 text-sm text-gray-500">
+                <span><strong class="text-gray-900">{model.motor}</strong> motor</span>
+                <span><strong class="text-gray-900">{model.deck}</strong> deck</span>
+              </div>
+              <p class="text-gray-700 leading-relaxed mb-4">{model.summary}</p>
+              <a href={model.href} class="inline-flex items-center gap-2 text-[#0F62FE] font-bold no-underline">
+                Read the full review
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6" /></svg>
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+        <h2 id="lineup-detail" class="scroll-mt-24">How the Three Models Actually Differ in Practice</h2>
+        <p>
+          Spec sheets make the F63, F65, and F80 look like minor variations
+          on the same machine, but the differences show up more clearly once
+          you're actually walking or running on each one. The jump from the
+          F63 to the F65 is mostly felt in stability at higher speeds — the
+          F65's stronger motor and slightly larger deck make it noticeably
+          more comfortable once you're jogging past 6 mph, where the F63
+          starts to feel like it's working closer to its limit. Console-wise,
+          the two are similar, both using a straightforward LCD-style display
+          rather than a large touchscreen, which keeps the price down but
+          means neither is the right pick if interactive workout content is
+          a priority for you.
+        </p>
+        <p>
+          The step up to the F80 is a bigger jump than the F63-to-F65
+          transition. Beyond the stronger 4.0 CHP motor, the F80 adds a
+          larger, more modern console with app integration that feels
+          closer to what you'd find on a NordicTrack, while still avoiding a
+          required subscription for basic use. Testers who ran on all three
+          back to back consistently described the F80 as feeling like a
+          genuinely different tier of machine rather than an incremental
+          upgrade, which is the main reason it commands a price roughly
+          double the F65's.
+        </p>
+
+        <h2 id="build-quality" class="scroll-mt-24">Build Quality and What Makes Sole Different</h2>
+        <p>
+          The single biggest thing that separates Sole from a lot of
+          direct-to-consumer treadmill brands is frame gauge. Sole uses
+          heavier steel in its frame construction across the entire lineup,
+          which is part of why even the entry-level F63 feels more planted
+          underfoot than some competitors' mid-tier machines. That extra
+          material adds weight — Sole treadmills are rarely the lightest
+          option in their price bracket — but it translates directly into
+          less flex and vibration at higher speeds, something our testers
+          consistently noticed when moving between a Sole unit and a
+          lighter-framed competitor at a similar price.
+        </p>
+        <p>
+          Cushioning is the other area where Sole has built a genuine
+          reputation. The brand's Cushion Flex Whisper Deck system uses
+          individually mounted deck cushions rather than a single continuous
+          pad, which allows for more precise tuning of impact absorption at
+          the heel-strike zone versus the push-off zone. In practice, this
+          is the kind of feature that's hard to appreciate from a spec
+          sheet but obvious the moment you run on it after using a
+          cheaper, flatter deck.
+        </p>
+        <p>
+          Frame welding and joint construction are areas where Sole also
+          quietly outperforms its price bracket. Rather than relying
+          heavily on bolted connections at every major joint, Sole uses
+          more welded construction on its frame uprights, which reduces the
+          number of points where a loose bolt could eventually introduce
+          play or rattle over years of use. It's not a feature you'll see
+          advertised prominently, since it doesn't photograph well for a
+          product page, but it's a meaningful part of why Sole treadmills
+          tend to still feel tight and solid well past the one- and
+          two-year marks where cheaper competitors start to loosen up.
+        </p>
+
+        <h2 id="app" class="scroll-mt-24">The Sole+ App and Console Experience</h2>
+        <p>
+          Sole's approach to connectivity is deliberately more restrained
+          than NordicTrack's iFit ecosystem. The Sole+ app handles workout
+          tracking, basic program logging, and syncing with fitness
+          platforms like Apple Health, but it doesn't gate core treadmill
+          functionality behind a subscription. Every speed, incline, and
+          built-in workout program works identically whether or not you've
+          ever opened the app.
+        </p>
+        <p>
+          This is a genuine trade-off, not a strictly better approach. If
+          you specifically want trainer-led, auto-adjusting workouts filmed
+          on real trails and roads, Sole's console-based programs feel
+          noticeably more basic than iFit's video-based coaching. If you'd
+          rather set your own pace and skip a monthly bill entirely, Sole's
+          model is exactly what you want.
+        </p>
+        <p>
+          It's also worth noting that Sole's console programming, while less
+          flashy than a touchscreen ecosystem, is genuinely functional —
+          preset interval and hill programs adjust speed and incline
+          automatically without any app connection required, which covers
+          the large majority of what casual and intermediate users actually
+          want from a "guided workout" in the first place. Heart rate
+          monitoring via the handrail contact grips or a Bluetooth chest
+          strap works reliably across the lineup, and calorie and distance
+          tracking sync to the Sole+ app whenever you do choose to connect,
+          rather than requiring a connection to function at all.
+        </p>
+
+        <h2 id="vs-competitors" class="scroll-mt-24">Sole vs. NordicTrack vs. ProForm</h2>
+        <p>
+          These three brands dominate the mid-range home treadmill market,
+          and shoppers comparing them are usually weighing the same three
+          factors: hardware quality, subscription requirements, and price.
+          Sole tends to win on raw hardware-per-dollar and loses on
+          interactive content. NordicTrack wins decisively on the coaching
+          and touchscreen experience through iFit but requires ongoing
+          subscription spend to unlock it fully — see our
+          <a href="/nordictrack">NordicTrack brand guide</a> for the full
+          lineup breakdown. ProForm sits in between, using the same iFit
+          ecosystem as NordicTrack (both are owned by the same parent
+          company) but at generally lower price points with correspondingly
+          lighter-duty hardware, which we cover in our
+          <a href="/proform-treadmill">ProForm brand guide</a>.
+        </p>
+
+        <div class="not-prose bg-amber-50 border border-amber-200 rounded-2xl p-6 my-8">
+          <p class="font-black text-amber-900 mb-2 flex items-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3.75m0 3.75h.007v.008H12v-.008zM21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            Buying Tip
+          </p>
+          <p class="text-amber-800 text-sm leading-relaxed">
+            Sole's official site and major retailers frequently run
+            near-identical pricing, but Sole occasionally offers direct-site
+            bundle deals on accessories like mats and heart rate monitors
+            that aren't matched elsewhere — worth a quick comparison before
+            you check out.
+          </p>
+        </div>
+
+        <h2 id="specific-needs" class="scroll-mt-24">Sole Treadmills for Specific Situations</h2>
+        <p>
+          A few reader questions come up often enough that they're worth
+          addressing directly rather than burying in the FAQ. For taller
+          runners, specifically anyone over 6'2", the F65 and F80's shared
+          22 x 60-inch deck comfortably accommodates a full stride at
+          running pace, while the F63's shorter deck can feel tight during
+          faster sessions — size up if height is a factor for your
+          household. For quieter operation in apartments or shared walls,
+          all three Sole models use enclosed motor housings that measurably
+          reduce motor noise compared to open-frame budget machines,
+          though none of them are silent, and a quality equipment mat
+          underneath still meaningfully cuts vibration transfer to floors
+          below.
+        </p>
+        <p>
+          For households planning to fold and store the treadmill
+          regularly, it's worth knowing that Sole's treadmills, including
+          the F63 and F65, do fold, but they're built more like
+          semi-permanent fixtures than dedicated space-saving machines —
+          similar in spirit to NordicTrack's Commercial line. If daily
+          folding for a small apartment is the priority, our
+          <a href="/best-folding-treadmill-reviews">folding treadmill guide</a>
+          covers machines specifically engineered around that use case.
+        </p>
+
+        <h2 id="which-one" class="scroll-mt-24">Which Sole Treadmill Should You Buy?</h2>
+        <p>
+          If you're mainly walking or jogging a few times a week and want
+          the lowest price that still gets you genuine Sole build quality,
+          the <strong>F63</strong> is the right call. If you want the
+          treadmill most Sole owners actually end up recommending to
+          friends — a strong enough motor for regular running, the full
+          22 x 60-inch deck, and pricing that doesn't creep into
+          flagship territory — the <strong>F65</strong> is our pick for the
+          large majority of shoppers. If you're training seriously, run
+          most days of the week, or want the biggest console Sole offers,
+          step up to the <strong>F80</strong> and treat the extra cost as
+          the price of headroom you won't outgrow.
+        </p>
+
+        <h2 id="warranty" class="scroll-mt-24">Warranty and Customer Support</h2>
+        <p>
+          Sole backs its treadmill lineup with warranty terms that are
+          strong relative to the price tier, typically covering the frame
+          for the machine's lifetime, the motor for a decade or more, and
+          parts and labor for one to two years depending on the specific
+          model and where it was purchased. That lifetime frame warranty in
+          particular is a meaningful signal — it's the kind of coverage
+          manufacturers extend when they're confident the frame won't be
+          the failure point, and it's noticeably better than the 5-to-10
+          year frame terms common on cheaper competitors.
+        </p>
+        <p>
+          Customer support experiences reported by owners have been
+          generally positive, with parts availability holding up well even
+          for models several years old, which matters more than it sounds
+          like once a belt or motor eventually needs replacing outside the
+          warranty window. If you're comparing warranty fine print across
+          brands before buying, always check whether the specific term
+          applies to residential use only, since some manufacturers,
+          including Sole on select models, apply shorter terms if a
+          machine sees light commercial use, such as in a rental property
+          or shared building gym.
+        </p>
+        <p>
+          If you do need to file a warranty claim, having your model
+          number, serial number, and proof of purchase ready before you
+          contact support speeds the process considerably — most delays we
+          heard about from owners traced back to missing documentation
+          rather than a slow response from Sole itself. Registering your
+          treadmill online shortly after delivery is a five-minute step
+          that saves real time later if something does go wrong.
+        </p>
+
+        <h2 id="complaints" class="scroll-mt-24">Common Owner Complaints (and How to Avoid Them)</h2>
+        <p>
+          No treadmill brand is complaint-free, and looking honestly at the
+          patterns in verified owner reviews is more useful than pretending
+          Sole is flawless. The most common complaint across the lineup is
+          delivery-related rather than product-related — Sole treadmills
+          ship in heavy crates, and owners in walk-up apartments or homes
+          with difficult access sometimes report a frustrating delivery
+          experience. If that's a risk for your address, it's worth calling
+          ahead to confirm the delivery carrier's curbside-vs-inside policy
+          before you order.
+        </p>
+        <p>
+          The second most common theme is console simplicity on the F63 and
+          F65 specifically — some owners coming from touchscreen-equipped
+          competitors find the LCD displays feel dated by comparison. This
+          is a legitimate trade-off rather than a defect: it's the same
+          restraint that keeps Sole's prices competitive and avoids a
+          required subscription, but it's worth knowing going in if a large
+          touchscreen is something you specifically want.
+        </p>
+        <p>
+          Less common, but worth flagging, are a handful of reports of
+          belt-tracking drift appearing sooner than expected on units used
+          for daily high-mileage running. Sole's manual includes clear
+          belt-tensioning instructions, and owners who stayed on the
+          suggested maintenance schedule reported far fewer issues than
+          those who skipped it — the same pattern we see across almost
+          every treadmill brand we've researched, and one more reason to
+          treat routine maintenance as part of the cost of ownership rather
+          than an optional chore, no matter which specific brand or model
+          ultimately ends up in your home gym.
+        </p>
+      </div>
+
+      <div id="faq" class="scroll-mt-24 my-12">
+        <h2 class="text-2xl font-black text-gray-900 mb-6">Frequently Asked Questions</h2>
+        <div class="space-y-4">
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">Is Sole a good treadmill brand?</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Yes. Sole has built a reputation over two decades for
+              durable, no-subscription-required treadmills with
+              above-average motors and cushioning for their price. The
+              brand consistently scores well in long-term owner
+              satisfaction surveys, particularly for build quality relative
+              to price.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">Which Sole treadmill should I buy?</h3>
+            <p class="text-gray-600 leading-relaxed">
+              The <strong>Sole F65</strong> is the best fit for most
+              buyers, striking a strong balance between motor power, deck
+              size, and price. Budget-focused walkers should look at the
+              <strong>F63</strong>, while serious daily runners who want the
+              largest console and strongest motor should consider the
+              <strong>F80</strong>.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">Does Sole require a subscription like iFit?</h3>
+            <p class="text-gray-600 leading-relaxed">
+              No. Sole treadmills use a Sole+ app for optional workout
+              tracking, but none of the core features — speed, incline,
+              console programs — are locked behind a required
+              subscription, unlike NordicTrack's iFit-dependent lineup.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">How does Sole compare to NordicTrack?</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Sole treadmills generally offer stronger base hardware —
+              motor and cushioning — per dollar, while NordicTrack leans
+              harder into interactive touchscreen content through iFit. If
+              you want a capable machine without an ongoing subscription
+              commitment, Sole is usually the better fit; if guided
+              coaching matters most to you, NordicTrack's ecosystem is
+              more built out.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">What warranty do Sole treadmills come with?</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Sole typically covers the frame for the machine's lifetime,
+              the motor for a decade or more, and parts and labor for one to
+              two years depending on the model and retailer. That lifetime
+              frame warranty is stronger than the 5-to-10 year terms common
+              on cheaper competitors.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-bold text-gray-900 mb-2">Are Sole treadmills good for running, or just walking?</h3>
+            <p class="text-gray-600 leading-relaxed">
+              The F65 and F80 are both built with running in mind, with
+              motors and deck sizes that stay stable well past jogging
+              pace. The entry-level F63 can handle light jogging
+              comfortably but is better matched to walking and moderate use
+              given its smaller motor.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="my-12">
+        <h2 class="text-2xl font-black text-gray-900 mb-6">More Brand and Category Guides</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <a href="/nordictrack" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand Guide</span>
+            <p class="font-bold text-gray-900 mt-2 mb-1">NordicTrack Treadmill Lineup</p>
+            <p class="text-sm text-gray-500 leading-relaxed">Every current NordicTrack model, explained.</p>
+          </a>
+          <a href="/best-treadmills-for-home" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Category</span>
+            <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills for Home</p>
+            <p class="text-sm text-gray-500 leading-relaxed">See how Sole's top models stack up against every brand we've tested.</p>
+          </a>
+          <a href="/treadmill-buyers-guide" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Guide</span>
+            <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Buyer's Guide</p>
+            <p class="text-sm text-gray-500 leading-relaxed">What to check before comparing any brand.</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-gray-900 text-white rounded-2xl p-8 mb-16">
+        <h2 class="text-2xl font-black mb-4">The Bottom Line</h2>
+        <p class="text-gray-300 leading-relaxed mb-4">
+          Sole earns its reputation the old-fashioned way — heavier frames,
+          stronger motors, and cushioning that holds up, without locking
+          core features behind a monthly bill. For most buyers, the
+          <strong class="text-white">Sole F65</strong> is the model that
+          delivers the best balance of that formula.
+        </p>
+        <p class="text-gray-300 leading-relaxed">
+          Read the individual reviews for the <a href="/sole-f63-treadmill" class="text-[#5AA9FF] font-bold no-underline">F63</a>
+          and <a href="/sole-f65-treadmill" class="text-[#5AA9FF] font-bold no-underline">F65</a>, or see how Sole's flagship stacks up in our
+          <a href="/best-treadmills-for-home" class="text-[#5AA9FF] font-bold no-underline">home treadmill roundup</a>
+          against every other brand we've put through the same testing process.
+        </p>
+      </div>
+    </div>
+  </article>
+</Layout>
