@@ -1,0 +1,106 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+
+const title = "Contact Us";
+const description =
+  "Get in touch with the Treadmill Reviews USA team — questions about a review, a correction, or a treadmill you'd like us to test next.";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://www.treadmillreviewsusa.com/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Contact Us",
+          item: "https://www.treadmillreviewsusa.com/contact-us",
+        },
+      ],
+    },
+    {
+      "@type": "ContactPage",
+      name: title,
+      description,
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  jsonLd={schema}
+  noindex={false}
+>
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+    <div class="text-center mb-12">
+      <div class="flex justify-center mb-6">
+        <TrustBadge />
+      </div>
+      <h1 class="text-4xl lg:text-5xl font-black text-gray-900 mb-6">
+        Contact Us
+      </h1>
+      <p class="text-lg text-gray-600 leading-relaxed max-w-xl mx-auto">
+        Have a question about one of our reviews, spotted something that
+        needs a correction, or want to suggest a treadmill for us to test
+        next? We'd like to hear from you.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+      <div class="bg-gray-50 rounded-2xl p-6 text-center">
+        <p class="text-xs font-black uppercase tracking-widest text-gray-500 mb-2">
+          Editorial &amp; Corrections
+        </p>
+        <p class="text-gray-900 font-bold">editorial@treadmillreviewsusa.com</p>
+        <p class="text-gray-500 text-sm mt-2 leading-relaxed">
+          Spotted an outdated spec or price? Let us know and we'll take a
+          look.
+        </p>
+      </div>
+      <div class="bg-gray-50 rounded-2xl p-6 text-center">
+        <p class="text-xs font-black uppercase tracking-widest text-gray-500 mb-2">
+          Partnerships
+        </p>
+        <p class="text-gray-900 font-bold">partners@treadmillreviewsusa.com</p>
+        <p class="text-gray-500 text-sm mt-2 leading-relaxed">
+          Brands and retailers looking to get a machine into our testing
+          queue.
+        </p>
+      </div>
+      <div class="bg-gray-50 rounded-2xl p-6 text-center">
+        <p class="text-xs font-black uppercase tracking-widest text-gray-500 mb-2">
+          General Questions
+        </p>
+        <p class="text-gray-900 font-bold">hello@treadmillreviewsusa.com</p>
+        <p class="text-gray-500 text-sm mt-2 leading-relaxed">
+          Not sure which guide is right for you? Ask and we'll point you in
+          the right direction.
+        </p>
+      </div>
+    </div>
+
+    <div class="bg-gray-900 text-white rounded-2xl p-8 text-center">
+      <h2 class="text-xl font-black mb-3">Looking for a specific review?</h2>
+      <p class="text-gray-300 leading-relaxed mb-6">
+        Browse every guide we've published, organized by category, before
+        reaching out.
+      </p>
+      <a
+        href="/best-of"
+        class="inline-block bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm"
+      >
+        See All Guides
+      </a>
+    </div>
+  </div>
+</Layout>

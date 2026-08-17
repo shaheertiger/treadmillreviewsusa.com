@@ -3,7 +3,7 @@ import { join } from 'path';
 
 const PAGES_DIR = join(import.meta.dirname, '..', 'src', 'pages');
 const MIN_WORD_COUNT = 2500;
-const EXCLUDED_PAGES = ['index.astro', 'best-of.astro'];
+const EXCLUDED_PAGES = ['index.astro', 'best-of.astro', 'contact-us.astro'];
 
 function countWords(filePath) {
   const content = readFileSync(filePath, 'utf-8');
