@@ -2,6 +2,8 @@
 
 An SEO-focused Astro + Tailwind affiliate review site for treadmill buying guides, structured after [The Honest Reviewers](https://github.com/shaheertiger/The-Honest-Reviewers).
 
+Vercel's Production Branch is `claude/seo-repo-structure-n1zh7s` — pushes here should trigger a Production Deployment automatically.
+
 ## Stack
 
 - [Astro](https://astro.build) (static site generation)
