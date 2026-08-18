@@ -2,7 +2,7 @@
 
 An SEO-focused Astro + Tailwind affiliate review site for treadmill buying guides, structured after [The Honest Reviewers](https://github.com/shaheertiger/The-Honest-Reviewers).
 
-Vercel's Production Branch is `claude/seo-repo-structure-n1zh7s` — pushes here should trigger a Production Deployment automatically.
+Vercel's Production Branch should be `main`. `claude/seo-repo-structure-n1zh7s` is kept in sync with `main` during the migration off the old branch name.
 
 ## Stack
 
