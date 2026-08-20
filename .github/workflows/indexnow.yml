@@ -1,0 +1,13 @@
+name: IndexNow submit
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: node scripts/indexnow-submit.js
