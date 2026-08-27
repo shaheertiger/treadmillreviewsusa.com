@@ -190,14 +190,14 @@ const schema = {
 >
   <article class="relative overflow-hidden">
     <!-- Hero Section -->
-    <div class="relative bg-gray-900 overflow-hidden">
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
       <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
         <pattern id="dot-pattern-nt2950" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
           <circle cx="2" cy="2" r="1.5" fill="white"></circle>
         </pattern>
         <rect width="100%" height="100%" fill="url(#dot-pattern-nt2950)"></rect>
       </svg>
-      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 text-center">
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
         <div class="flex justify-center mb-6">
           <TrustBadge />
         </div>
@@ -209,10 +209,10 @@ const schema = {
             Updated May 2026
           </span>
         </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight">
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
           NordicTrack <span class="text-[#5AA9FF]">Commercial 2950</span> Review
         </h1>
-        <p class="mt-6 text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
           We put NordicTrack's flagship treadmill through five weeks of daily
           running, hill training, and iFit-guided sessions to find out
           whether the strongest motor and biggest screen in the lineup are
@@ -229,8 +229,8 @@ const schema = {
       </div>
     </div>
 
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-      <!-- Author & Meta row -->
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
       <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
         <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
         <div>
@@ -276,26 +276,33 @@ const schema = {
           </a>
         </div>
       </div>
+    </div>
 
-      <!-- Table of Contents -->
-      <div class="my-10 bg-gray-50 rounded-2xl p-6 border border-gray-100">
-        <p class="text-xs font-black uppercase tracking-widest text-gray-500 mb-4">On This Page</p>
-        <ol class="space-y-2 list-none p-0 m-0">
-          <li><a href="#overview" class="text-[#0F62FE] no-underline font-medium">1. Overview and Who It's For</a></li>
-          <li><a href="#specs" class="text-[#0F62FE] no-underline font-medium">2. Full Spec Sheet</a></li>
-          <li><a href="#assembly" class="text-[#0F62FE] no-underline font-medium">3. Assembly and Setup</a></li>
-          <li><a href="#performance" class="text-[#0F62FE] no-underline font-medium">4. Performance Deep Dive</a></li>
-          <li><a href="#durability" class="text-[#0F62FE] no-underline font-medium">5. Long-Term Durability Notes</a></li>
-          <li><a href="#pros-cons" class="text-[#0F62FE] no-underline font-medium">6. Pros and Cons</a></li>
-          <li><a href="#comparison" class="text-[#0F62FE] no-underline font-medium">7. How It Compares</a></li>
-          <li><a href="#who-should-skip" class="text-[#0F62FE] no-underline font-medium">8. Who Should Skip This Treadmill</a></li>
-          <li><a href="#verdict" class="text-[#0F62FE] no-underline font-medium">9. Final Verdict</a></li>
-          <li><a href="#faq" class="text-[#0F62FE] no-underline font-medium">10. Frequently Asked Questions</a></li>
-        </ol>
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <a href="#overview" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Overview and Who It's For</a>
+            <a href="#specs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Full Spec Sheet</a>
+            <a href="#assembly" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Assembly and Setup</a>
+            <a href="#performance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Performance Deep Dive</a>
+            <a href="#durability" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Long-Term Durability Notes</a>
+            <a href="#pros-cons" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Pros and Cons</a>
+            <a href="#comparison" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. How It Compares</a>
+            <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Who Should Skip This Treadmill</a>
+            <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Final Verdict</a>
+            <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        </nav>
       </div>
+    </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-        <p class="italic text-xl border-l-4 border-[#FF5A1F] bg-gray-50 pl-6 pr-4 py-4 rounded-r-xl not-prose text-gray-700 leading-relaxed">
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
           Every treadmill brand has a halo product — the machine that exists
           to show what the company can build when price stops being the
           primary constraint. For NordicTrack, that's the Commercial 2950.
@@ -305,7 +312,8 @@ const schema = {
           it.
         </p>
 
-        <h2 id="overview" class="scroll-mt-24">Overview and Who It's For</h2>
+        <div id="overview" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Overview and Who It's For</h2>
         <p>
           The Commercial 2950 sits at the very top of NordicTrack's
           treadmill catalog, above the Commercial 2450 and well above the
@@ -369,12 +377,15 @@ const schema = {
             </div>
           </div>
         </div>
+        </div>
 
-        <h2 id="specs" class="scroll-mt-24">Full Spec Sheet</h2>
+        <div id="specs" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Full Spec Sheet</h2>
         <p>
           Here's every spec we verified directly against our test unit
           rather than copying from the manufacturer's marketing page.
         </p>
+        </div>
       </div>
 
       <div class="not-prose overflow-x-auto my-8 rounded-xl border border-gray-200">
@@ -390,8 +401,9 @@ const schema = {
         </table>
       </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-        <h2 id="assembly" class="scroll-mt-24">Assembly and Setup</h2>
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="assembly" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Assembly and Setup</h2>
         <p>
           Assembly took our team roughly 90 minutes with two people, and we
           wouldn't recommend attempting the console mast step solo — the
@@ -421,8 +433,10 @@ const schema = {
           expensive, that five-minute check is worth doing even more than
           usual.
         </p>
+        </div>
 
-        <h2 id="performance" class="scroll-mt-24">Performance Deep Dive</h2>
+        <div id="performance" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Performance Deep Dive</h2>
         <h3>Motor and Deck</h3>
         <p>
           The 4.5 CHP motor is the strongest we've tested from NordicTrack,
@@ -500,8 +514,10 @@ const schema = {
           folding as an occasional-use feature for deep cleaning, not
           something you'll do between every workout.
         </p>
+        </div>
 
-        <h2 id="durability" class="scroll-mt-24">Long-Term Durability Notes</h2>
+        <div id="durability" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Long-Term Durability Notes</h2>
         <p>
           Five weeks of hands-on testing tells us a lot about day-to-day
           performance but only so much about multi-year durability, so we
@@ -548,8 +564,11 @@ const schema = {
           justify the price difference on content grounds rather than screen
           size alone.
         </p>
+        </div>
 
-        <h2 id="pros-cons" class="scroll-mt-24">Pros and Cons</h2>
+        <div id="pros-cons" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Pros and Cons</h2>
+        </div>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8 not-prose">
@@ -592,12 +611,14 @@ const schema = {
         </div>
       </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-        <h2 id="comparison" class="scroll-mt-24">How It Compares</h2>
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="comparison" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. How It Compares</h2>
         <p>
           The Commercial 2950 sits above two other machines most shoppers
           will seriously consider. Here's exactly how the numbers stack up.
         </p>
+        </div>
       </div>
 
       <div class="not-prose overflow-x-auto my-8 rounded-xl border border-gray-200">
@@ -625,15 +646,15 @@ const schema = {
         </table>
       </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <p>
-          Against the <a href="/nordictrack-commercial-2450-treadmill">Commercial 2450</a>,
+          Against the <a href="/nordictrack-commercial-2450-treadmill/">Commercial 2450</a>,
           the case for spending more comes down to two things: a
           meaningfully larger touchscreen and a motor with more reserve
           capacity for sustained hard running. Everything else — deck,
           incline range, cushioning — is identical, which is exactly why we
           think the 2450 is the smarter buy for the large majority of
-          shoppers. Against the <a href="/nordictrack-commercial-1750-treadmill">Commercial 1750</a>,
+          shoppers. Against the <a href="/nordictrack-commercial-1750-treadmill/">Commercial 1750</a>,
           the gap is bigger and easier to justify if you're a serious
           runner: a stronger motor, a steeper incline ceiling, and a
           dramatically larger screen, all for roughly $2,200 more.
@@ -641,7 +662,7 @@ const schema = {
         <p>
           If you're weighing the 2950 against machines outside NordicTrack's
           own lineup entirely, it's worth browsing our full
-          <a href="/commercial-treadmills">commercial treadmill roundup</a>,
+          <a href="/commercial-treadmills/">commercial treadmill roundup</a>,
           where flagship machines from other brands land in a similar price
           range with different trade-offs — some prioritize even larger
           running surfaces over screen size, which may matter more to you
@@ -663,15 +684,16 @@ const schema = {
           </p>
         </div>
 
-        <h2 id="who-should-skip" class="scroll-mt-24">Who Should Skip This Treadmill</h2>
+        <div id="who-should-skip" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Who Should Skip This Treadmill</h2>
         <p>
           We'd be doing readers a disservice if we didn't say this plainly:
           most people looking at the Commercial 2950 should buy something
           else. If you walk more than you run, or you run casually a few
           times a week, the extra motor headroom here will sit unused, and
           your money is better spent on the
-          <a href="/nordictrack-commercial-1750-treadmill">Commercial 1750</a>
-          or our broader <a href="/best-treadmill-for-home-reviews">best treadmills for home</a>
+          <a href="/nordictrack-commercial-1750-treadmill/">Commercial 1750</a>
+          or our broader <a href="/best-treadmill-for-home-reviews/">best treadmills for home</a>
           picks. If budget is a real constraint at all, this isn't the
           machine to stretch for — the Commercial 2450 delivers the vast
           majority of this experience for nearly half the price. And if
@@ -690,8 +712,10 @@ const schema = {
           insurance against premature wear for a household putting genuinely
           heavy collective use on the machine.
         </p>
+        </div>
 
-        <h2 id="verdict" class="scroll-mt-24">Final Verdict</h2>
+        <div id="verdict" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Final Verdict</h2>
         <p>
           The NordicTrack Commercial 2950 is, without much argument, the
           best treadmill NordicTrack currently builds. The motor has real
@@ -712,15 +736,16 @@ const schema = {
           several thousand dollars richer, with a model further down the
           lineup.
         </p>
+        </div>
       </div>
 
       <!-- FAQ -->
-      <div id="faq" class="scroll-mt-24 my-12">
-        <h2 class="text-2xl font-black text-gray-900 mb-6">Frequently Asked Questions</h2>
-        <div class="space-y-4">
-          <div class="bg-gray-50 rounded-2xl p-6">
+      <div id="faq" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Is the NordicTrack Commercial 2950 worth the price?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               Only for a specific type of buyer: someone who runs regularly,
               values the largest touchscreen NordicTrack makes, and won't
               feel the roughly $1,700-$2,200 premium over the Commercial
@@ -730,9 +755,9 @@ const schema = {
               majority of shoppers.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">What's the actual difference between the Commercial 2950 and the Commercial 2450?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               The 2950 steps up to a 4.5 CHP motor from the 2450's 4.25 CHP,
               a modest but real difference under sustained load, and swaps
               the 2450's 24-inch touchscreen for a 32-inch display, the
@@ -742,9 +767,9 @@ const schema = {
               size.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Is the Commercial 2950 overkill for casual walkers?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               Honestly, yes. A casual walker or occasional jogger will not
               meaningfully feel the difference between this motor and the
               one in the Commercial 1750, which costs roughly $2,200 less.
@@ -753,9 +778,9 @@ const schema = {
               interactive iFit content, not with light or moderate users.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">How does the Commercial 2950 compare to the Commercial 1750?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               The gap is substantial: a stronger 4.5 CHP motor versus 3.75
               CHP, a steeper 15% max incline versus 12%, and a 32-inch
               touchscreen versus 14 inches, all for roughly $2,200 more.
@@ -764,9 +789,9 @@ const schema = {
               gap; casual users generally won't.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Does the 32-inch touchscreen actually matter during a workout?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               It's a genuinely different experience from a 14-to-24 inch
               screen, especially for iFit's trainer-led trail and studio
               workouts, where the larger display makes the video content
@@ -775,9 +800,9 @@ const schema = {
               entirely on how much you value that specific experience.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">How loud is the Commercial 2950 at higher speeds?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               We measured noise in the low-to-mid 60 decibel range during
               sustained running, similar to the Commercial 1750 despite the
               stronger motor, thanks to a well-insulated motor housing. It
@@ -785,9 +810,9 @@ const schema = {
               any noticeable increase in noise as the motor warmed up.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">How long does assembly take on the Commercial 2950?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               Roughly 90 minutes with two people, longer than the Commercial
               1750 largely because of the significantly heavier 32-inch
               touchscreen mast, which the manual explicitly says should not
@@ -799,22 +824,45 @@ const schema = {
         </div>
       </div>
 
+      <!-- Common Mistakes -->
+      <div class="mt-16">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buyers Make</h2>
+        <p class="text-gray-700 leading-relaxed">At flagship money the mistakes get expensive, and almost all of them are about paying for features that will not change how you train.</p>
+        <div class="space-y-6 my-8">
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying the 32-inch screen for walking workouts</h3>
+            <p class="text-gray-700 text-sm m-0">The 2950's display is genuinely immersive, but it sits on the same 3.75 CHP motor and 22 x 60-inch deck as the 1750. For walking and steady jogging, the cheaper machine does identical work.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not planning for the weight and footprint</h3>
+            <p class="text-gray-700 text-sm m-0">This is one of the heaviest home treadmills we have tested. Upper-floor installations need a floor that can take it and a route that can get it there. Check both before ordering.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming the flagship price removes the subscription</h3>
+            <p class="text-gray-700 text-sm m-0">It does not. iFit is included for the first year and then renews at the same rate as on cheaper models. The hardware works without it; most of the reason to buy this particular model does not.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Skipping the power requirement</h3>
+            <p class="text-gray-700 text-sm m-0">A machine this size wants its own grounded circuit. Sharing a circuit with other high-draw appliances is the most common cause of the intermittent shutdowns owners blame on the console.</p>
+          </div>
+        </div>
+      </div>
       <!-- Related Guides -->
-      <div class="my-12">
-        <h2 class="text-2xl font-black text-gray-900 mb-6">More NordicTrack &amp; Commercial Treadmill Reviews</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <a href="/nordictrack-commercial-2450-treadmill" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+      <div class="mt-16">
+        <h2 class="text-2xl font-black text-gray-900 mb-6">Related NordicTrack &amp; Commercial Treadmill Guides</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <a href="/nordictrack-commercial-2450-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
             <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Step Down</span>
             <p class="font-bold text-gray-900 mt-2 mb-1">NordicTrack Commercial 2450 Review</p>
             <p class="text-sm text-gray-500 leading-relaxed">Nearly the same experience for thousands less.</p>
           </a>
-          <a href="/commercial-treadmills" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Category</span>
+          <a href="/commercial-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+            <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Category</span>
             <p class="font-bold text-gray-900 mt-2 mb-1">Best Commercial-Grade Treadmills</p>
             <p class="text-sm text-gray-500 leading-relaxed">Every gym-quality treadmill we've tested for home use, ranked.</p>
           </a>
-          <a href="/nordictrack" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand Guide</span>
+          <a href="/nordictrack/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+            <span class="text-xs font-black uppercase tracking-widest text-green-600">Brand Guide</span>
             <p class="font-bold text-gray-900 mt-2 mb-1">NordicTrack Treadmill Lineup Explained</p>
             <p class="text-sm text-gray-500 leading-relaxed">Every current NordicTrack model, sorted by who it's actually for.</p>
           </a>
@@ -822,8 +870,8 @@ const schema = {
       </div>
 
       <!-- Closing CTA -->
-      <div class="bg-gray-900 text-white rounded-2xl p-8 mb-16">
-        <h2 class="text-2xl font-black mb-4">The Bottom Line</h2>
+      <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+        <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
         <p class="text-gray-300 leading-relaxed mb-4">
           The <strong class="text-white">NordicTrack Commercial 2950</strong> is
           the best treadmill the brand makes, with real motor headroom and
@@ -834,8 +882,8 @@ const schema = {
         </p>
         <p class="text-gray-300 leading-relaxed">
           Comparing your options first? See our full
-          <a href="/commercial-treadmills" class="text-[#5AA9FF] font-bold no-underline">commercial treadmill roundup</a>
-          or the <a href="/nordictrack" class="text-[#5AA9FF] font-bold no-underline">NordicTrack brand guide</a>
+          <a href="/commercial-treadmills/" class="text-[#5AA9FF] font-bold no-underline">commercial treadmill roundup</a>
+          or the <a href="/nordictrack/" class="text-[#5AA9FF] font-bold no-underline">NordicTrack brand guide</a>
           for how every current model in the lineup stacks up.
         </p>
       </div>

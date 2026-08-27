@@ -160,14 +160,14 @@ const schema = {
   stickyCta={{ text: "Check Price on Amazon", link: "#cta" }}
 >
   <article class="relative overflow-hidden">
-    <div class="relative bg-gray-900 overflow-hidden">
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
       <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
         <pattern id="dot-pattern-m7" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
           <circle cx="2" cy="2" r="1.5" fill="white"></circle>
         </pattern>
         <rect width="100%" height="100%" fill="url(#dot-pattern-m7)"></rect>
       </svg>
-      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 text-center">
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
         <div class="flex justify-center mb-6">
           <TrustBadge />
         </div>
@@ -176,10 +176,10 @@ const schema = {
           <span class="bg-amber-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Not a Treadmill</span>
           <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Updated June 2026</span>
         </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight">
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
           Bowflex Max Trainer <span class="text-[#5AA9FF]">M7</span> Review
         </h1>
-        <p class="mt-6 text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
           We spent three weeks on Bowflex's flagship Max Trainer to find out
           whether it's a legitimate lower-impact alternative to a treadmill
           — and to be upfront about who it's genuinely wrong for.
@@ -191,7 +191,8 @@ const schema = {
       </div>
     </div>
 
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
       <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
         <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
         <div>
@@ -232,25 +233,33 @@ const schema = {
           </a>
         </div>
       </div>
+    </div>
 
-      <div class="my-10 bg-gray-50 rounded-2xl p-6 border border-gray-100">
-        <p class="text-xs font-black uppercase tracking-widest text-gray-500 mb-4">On This Page</p>
-        <ol class="space-y-2 list-none p-0 m-0">
-          <li><a href="#is-it-a-treadmill" class="text-[#0F62FE] no-underline font-medium">1. Is This a Treadmill? What You're Actually Buying</a></li>
-          <li><a href="#overview" class="text-[#0F62FE] no-underline font-medium">2. Overview and Who It's For</a></li>
-          <li><a href="#specs" class="text-[#0F62FE] no-underline font-medium">3. Full Spec Sheet</a></li>
-          <li><a href="#assembly" class="text-[#0F62FE] no-underline font-medium">4. Assembly and Setup</a></li>
-          <li><a href="#performance" class="text-[#0F62FE] no-underline font-medium">5. Performance Deep Dive</a></li>
-          <li><a href="#pros-cons" class="text-[#0F62FE] no-underline font-medium">6. Pros and Cons</a></li>
-          <li><a href="#comparison" class="text-[#0F62FE] no-underline font-medium">7. How It Compares</a></li>
-          <li><a href="#who-should-skip" class="text-[#0F62FE] no-underline font-medium">8. Who Should Skip This Machine</a></li>
-          <li><a href="#verdict" class="text-[#0F62FE] no-underline font-medium">9. Final Verdict</a></li>
-          <li><a href="#faq" class="text-[#0F62FE] no-underline font-medium">10. Frequently Asked Questions</a></li>
-        </ol>
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <a href="#is-it-a-treadmill" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Is This a Treadmill? What You're Actually Buying</a>
+            <a href="#overview" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Overview and Who It's For</a>
+            <a href="#specs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Full Spec Sheet</a>
+            <a href="#assembly" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Assembly and Setup</a>
+            <a href="#performance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Performance Deep Dive</a>
+            <a href="#pros-cons" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Pros and Cons</a>
+            <a href="#comparison" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. How It Compares</a>
+            <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Who Should Skip This Machine</a>
+            <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Final Verdict</a>
+            <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        </nav>
       </div>
+    </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-        <p class="italic text-xl border-l-4 border-[#FF5A1F] bg-gray-50 pl-6 pr-4 py-4 rounded-r-xl not-prose text-gray-700 leading-relaxed">
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
           Let's get the most important thing out of the way immediately: the
           Bowflex Max Trainer M7 is not a treadmill, and nothing in this
           review is going to pretend otherwise. We're covering it because
@@ -262,7 +271,8 @@ const schema = {
           you somewhere else before you waste any more time.
         </p>
 
-        <h2 id="is-it-a-treadmill" class="scroll-mt-24">Is This a Treadmill? What You're Actually Buying</h2>
+        <div id="is-it-a-treadmill" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Is This a Treadmill? What You're Actually Buying</h2>
         <p>
           No. The Max Trainer M7 has no running belt, no deck you walk or
           run on, and no motor driving a moving surface under your feet.
@@ -291,7 +301,7 @@ const schema = {
           preferring the feeling of running over any alternative — the M7
           cannot do that for you, full stop, and you should be looking at an
           actual treadmill instead, like the
-          <a href="/best-folding-treadmill-reviews">XTERRA TRX3500</a>
+          <a href="/best-folding-treadmill-reviews/">XTERRA TRX3500</a>
           we cover in our folding treadmill guide. If what you actually want
           is efficient, intense cardio with meaningfully less joint impact
           than running produces, and you're open to a completely different
@@ -308,8 +318,10 @@ const schema = {
             <div><p class="text-3xl md:text-4xl font-black text-[#5AA9FF]">0</p><p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">Running Belts</p></div>
           </div>
         </div>
+        </div>
 
-        <h2 id="overview" class="scroll-mt-24">Overview and Who It's For</h2>
+        <div id="overview" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Overview and Who It's For</h2>
         <p>
           The Max Trainer line is Bowflex's answer to a specific fitness
           trend: short, intense interval training that delivers a real
@@ -340,12 +352,15 @@ const schema = {
           entirely around short, intense intervals rather than extended
           endurance work.
         </p>
+        </div>
 
-        <h2 id="specs" class="scroll-mt-24">Full Spec Sheet</h2>
+        <div id="specs" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Full Spec Sheet</h2>
         <p>
           Here's every spec we verified directly against our test unit
           rather than copying from the manufacturer's marketing page.
         </p>
+        </div>
       </div>
 
       <div class="not-prose overflow-x-auto my-8 rounded-xl border border-gray-200">
@@ -361,8 +376,9 @@ const schema = {
         </table>
       </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-        <h2 id="assembly" class="scroll-mt-24">Assembly and Setup</h2>
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="assembly" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Assembly and Setup</h2>
         <p>
           Assembly on the M7 is considerably simpler and faster than
           anything we've clocked for a treadmill — roughly 40 minutes
@@ -383,8 +399,10 @@ const schema = {
           multi-step process involved — you fold the pedal arms up, and
           that's essentially it.
         </p>
+        </div>
 
-        <h2 id="performance" class="scroll-mt-24">Performance Deep Dive</h2>
+        <div id="performance" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Performance Deep Dive</h2>
         <h3>The HIIT-Interval Training Experience</h3>
         <p>
           The M7's signature workout structure is built around Max Interval
@@ -468,8 +486,11 @@ const schema = {
           try the machine in person before buying if possible, since there's
           no way to adjust the motion path to compensate.
         </p>
+        </div>
 
-        <h2 id="pros-cons" class="scroll-mt-24">Pros and Cons</h2>
+        <div id="pros-cons" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Pros and Cons</h2>
+        </div>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8 not-prose">
@@ -512,14 +533,16 @@ const schema = {
         </div>
       </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-        <h2 id="comparison" class="scroll-mt-24">How It Compares</h2>
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="comparison" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. How It Compares</h2>
         <p>
           Because the M7 isn't a treadmill, "how it compares" means two
           different things here: how it stacks up against its own lineup
           sibling, and how it stacks up against an actual compact treadmill
           for readers still weighing the two categories against each other.
         </p>
+        </div>
       </div>
 
       <div class="not-prose overflow-x-auto my-8 rounded-xl border border-gray-200">
@@ -547,9 +570,9 @@ const schema = {
         </table>
       </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <p>
-          Against the <a href="/bowflex-max-trainer-m5">Bowflex Max Trainer M5</a>
+          Against the <a href="/bowflex-max-trainer-m5/">Bowflex Max Trainer M5</a>
           below it in Bowflex's own lineup, the M7 offers nearly double the
           resistance levels, a larger backlit console, and more complete
           JRNY app integration, for roughly $500-$600 more. If you're
@@ -561,7 +584,7 @@ const schema = {
         <p>
           Against the <strong>XTERRA TRX3500</strong>, the compact folding
           treadmill we recommend in our
-          <a href="/best-folding-treadmill-reviews">folding treadmill guide</a>,
+          <a href="/best-folding-treadmill-reviews/">folding treadmill guide</a>,
           the comparison really comes down to what kind of exercise you
           want. The TRX3500 lets you walk or run, has a considerably larger
           footprint even folded, and costs less than the M7. The M7 takes
@@ -589,7 +612,8 @@ const schema = {
           </p>
         </div>
 
-        <h2 id="who-should-skip" class="scroll-mt-24">Who Should Skip This Machine</h2>
+        <div id="who-should-skip" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Who Should Skip This Machine</h2>
         <p>
           Skip the M7 if you specifically want to run. This is the single
           clearest disqualifier, and no amount of resistance levels or app
@@ -597,7 +621,7 @@ const schema = {
           running, walking, or jogging, and it cannot be used to train for
           a race, maintain running mechanics, or replicate the specific
           feeling of running. If that's your goal, an actual treadmill like
-          the <a href="/best-folding-treadmill-reviews">XTERRA TRX3500</a>
+          the <a href="/best-folding-treadmill-reviews/">XTERRA TRX3500</a>
           is the right purchase, not this machine.
         </p>
         <p>
@@ -610,8 +634,10 @@ const schema = {
           core experience for several hundred dollars less, and is worth
           trying before committing to the M7's higher price.
         </p>
+        </div>
 
-        <h2 id="verdict" class="scroll-mt-24">Final Verdict</h2>
+        <div id="verdict" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Final Verdict</h2>
         <p>
           Judged honestly as what it actually is — a compact, low-impact,
           high-intensity interval training machine — the Bowflex Max
@@ -643,14 +669,15 @@ const schema = {
           picking one machine, but it's worth knowing the two aren't
           mutually exclusive if your budget and space allow for both.
         </p>
+        </div>
       </div>
 
-      <div id="faq" class="scroll-mt-24 my-12">
-        <h2 class="text-2xl font-black text-gray-900 mb-6">Frequently Asked Questions</h2>
-        <div class="space-y-4">
-          <div class="bg-gray-50 rounded-2xl p-6">
+      <div id="faq" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Is the Bowflex Max Trainer M7 a treadmill?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               No. The Max Trainer M7 is a compact hybrid cardio machine that
               combines elliptical glide and vertical stepper motion. It
               does not have a running belt and you cannot run or walk on it
@@ -659,9 +686,9 @@ const schema = {
               comparing treadmills, as a lower-impact alternative.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Is the Max Trainer M7 worth it if I want a low-impact cardio machine?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               Yes, for the right buyer. The M7's combined elliptical and
               stepper motion delivers a genuinely intense cardio workout in
               a short amount of time with far less joint impact than
@@ -671,9 +698,9 @@ const schema = {
               running.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">How does the M7 compare to the M5?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               The M7 has 14 resistance levels versus the M5's 8, a larger
               backlit console, and deeper JRNY app integration, for roughly
               $500-$600 more. The M5 uses a more basic LCD display and
@@ -683,9 +710,9 @@ const schema = {
               budget-conscious buyers are well served by the M5.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Does the Max Trainer M7 require a subscription?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               No. The M7 functions fully as a standalone machine with its
               built-in Max Interval and Max Results programs. JRNY,
               Bowflex's coaching app, is optional and adds guided,
@@ -694,9 +721,9 @@ const schema = {
               machine's core function requires it.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Should I buy the M7 instead of a treadmill?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               Only if lower-impact cardio is actually what you're looking
               for. If your goal specifically includes running, training for
               a race, or replicating outdoor running mechanics, the M7
@@ -706,9 +733,9 @@ const schema = {
               in some ways superior alternative.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">How much space does the Max Trainer M7 need?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               The M7 has a 51 x 26-inch footprint when in use and folds
               down to roughly 34 x 26 inches for storage, meaningfully
               smaller than almost any treadmill, folding or fixed. That
@@ -719,29 +746,52 @@ const schema = {
         </div>
       </div>
 
-      <div class="my-12">
-        <h2 class="text-2xl font-black text-gray-900 mb-6">More Bowflex &amp; Treadmill Guides</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <a href="/bowflex-max-trainer-m5" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+      <!-- Common Mistakes -->
+      <div class="mt-16">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buyers Make</h2>
+        <p class="text-gray-700 leading-relaxed">The M7 is the strongest machine in the Max Trainer range, which makes over-buying and mis-buying both easy.</p>
+        <div class="space-y-6 my-8">
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Cross-shopping it against treadmills</h3>
+            <p class="text-gray-700 text-sm m-0">At $1,599-$1,799 the M7 competes on price with capable treadmills, but it does something different. Decide whether you want low-impact interval work or running before comparing prices.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Paying the M7 premium for M5 use</h3>
+            <p class="text-gray-700 text-sm m-0">The M7's extra resistance levels and larger console matter for interval training. For steady low-intensity sessions, the M5 covers the same ground for several hundred less.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming the 7-inch LCD streams content</h3>
+            <p class="text-gray-700 text-sm m-0">It shows workout metrics; the guided content runs through JRNY on your own device. Buyers expecting a built-in streaming screen are consistently disappointed.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Skipping the maintenance on the moving arms</h3>
+            <p class="text-gray-700 text-sm m-0">The upper-body arms and pivots need periodic checking. Owners who ignore them report the creaks and play that get mistaken for a build-quality problem.</p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-16">
+        <h2 class="text-2xl font-black text-gray-900 mb-6">Related Bowflex &amp; Treadmill Guides</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <a href="/bowflex-max-trainer-m5/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
             <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Budget Pick</span>
             <p class="font-bold text-gray-900 mt-2 mb-1">Bowflex Max Trainer M5 Review</p>
             <p class="text-sm text-gray-500 leading-relaxed">The more affordable Max Trainer, with fewer resistance levels.</p>
           </a>
-          <a href="/bowflex" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand Guide</span>
+          <a href="/bowflex/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+            <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand Guide</span>
             <p class="font-bold text-gray-900 mt-2 mb-1">Bowflex Brand Guide</p>
             <p class="text-sm text-gray-500 leading-relaxed">Does Bowflex make treadmills? Here's the honest answer.</p>
           </a>
-          <a href="/best-folding-treadmill-reviews" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Category</span>
+          <a href="/best-folding-treadmill-reviews/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+            <span class="text-xs font-black uppercase tracking-widest text-green-600">Category</span>
             <p class="font-bold text-gray-900 mt-2 mb-1">Best Folding Treadmills</p>
             <p class="text-sm text-gray-500 leading-relaxed">Want to actually run? Start here, including the XTERRA TRX3500.</p>
           </a>
         </div>
       </div>
 
-      <div class="bg-gray-900 text-white rounded-2xl p-8 mb-16">
-        <h2 class="text-2xl font-black mb-4">The Bottom Line</h2>
+      <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+        <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
         <p class="text-gray-300 leading-relaxed mb-4">
           The <strong class="text-white">Bowflex Max Trainer M7</strong> is
           a genuinely well-built, low-impact HIIT machine — not a
@@ -750,9 +800,9 @@ const schema = {
           running is the goal, keep shopping our treadmill guides instead.
         </p>
         <p class="text-gray-300 leading-relaxed">
-          See how it compares to the <a href="/bowflex-max-trainer-m5" class="text-[#5AA9FF] font-bold no-underline">Max Trainer M5</a>,
-          read our full <a href="/bowflex" class="text-[#5AA9FF] font-bold no-underline">Bowflex brand guide</a>,
-          or find an actual treadmill in our <a href="/best-folding-treadmill-reviews" class="text-[#5AA9FF] font-bold no-underline">folding treadmill guide</a>.
+          See how it compares to the <a href="/bowflex-max-trainer-m5/" class="text-[#5AA9FF] font-bold no-underline">Max Trainer M5</a>,
+          read our full <a href="/bowflex/" class="text-[#5AA9FF] font-bold no-underline">Bowflex brand guide</a>,
+          or find an actual treadmill in our <a href="/best-folding-treadmill-reviews/" class="text-[#5AA9FF] font-bold no-underline">folding treadmill guide</a>.
         </p>
       </div>
     </div>

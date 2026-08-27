@@ -158,14 +158,14 @@ const schema = {
 >
   <article class="relative overflow-hidden">
     <!-- Hero Section -->
-    <div class="relative bg-gray-900 overflow-hidden">
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
       <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
         <pattern id="dot-pattern-lft3" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
           <circle cx="2" cy="2" r="1.5" fill="white"></circle>
         </pattern>
         <rect width="100%" height="100%" fill="url(#dot-pattern-lft3)"></rect>
       </svg>
-      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 text-center">
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
         <div class="flex justify-center mb-6">
           <TrustBadge />
         </div>
@@ -177,10 +177,10 @@ const schema = {
             Updated May 2026
           </span>
         </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight">
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
           Life Fitness <span class="text-[#5AA9FF]">T3</span> Treadmill Review
         </h1>
-        <p class="mt-6 text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
           We put Life Fitness's entry point into true commercial-grade
           treadmills through four weeks of heavy daily use to find out
           whether the AC motor and fixed frame justify a price well above
@@ -197,8 +197,8 @@ const schema = {
       </div>
     </div>
 
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-      <!-- Author & Meta row -->
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
       <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
         <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
         <div>
@@ -245,26 +245,33 @@ const schema = {
           </a>
         </div>
       </div>
+    </div>
 
-      <!-- Table of Contents -->
-      <div class="my-10 bg-gray-50 rounded-2xl p-6 border border-gray-100">
-        <p class="text-xs font-black uppercase tracking-widest text-gray-500 mb-4">On This Page</p>
-        <ol class="space-y-2 list-none p-0 m-0">
-          <li><a href="#overview" class="text-[#0F62FE] no-underline font-medium">1. Overview and Who It's For</a></li>
-          <li><a href="#specs" class="text-[#0F62FE] no-underline font-medium">2. Full Spec Sheet</a></li>
-          <li><a href="#assembly" class="text-[#0F62FE] no-underline font-medium">3. Assembly and Setup</a></li>
-          <li><a href="#performance" class="text-[#0F62FE] no-underline font-medium">4. Performance Deep Dive</a></li>
-          <li><a href="#durability" class="text-[#0F62FE] no-underline font-medium">5. Long-Term Durability Notes</a></li>
-          <li><a href="#pros-cons" class="text-[#0F62FE] no-underline font-medium">6. Pros and Cons</a></li>
-          <li><a href="#comparison" class="text-[#0F62FE] no-underline font-medium">7. How It Compares</a></li>
-          <li><a href="#who-should-skip" class="text-[#0F62FE] no-underline font-medium">8. Who Should Skip This Treadmill</a></li>
-          <li><a href="#verdict" class="text-[#0F62FE] no-underline font-medium">9. Final Verdict</a></li>
-          <li><a href="#faq" class="text-[#0F62FE] no-underline font-medium">10. Frequently Asked Questions</a></li>
-        </ol>
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <a href="#overview" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Overview and Who It's For</a>
+            <a href="#specs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Full Spec Sheet</a>
+            <a href="#assembly" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Assembly and Setup</a>
+            <a href="#performance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Performance Deep Dive</a>
+            <a href="#durability" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Long-Term Durability Notes</a>
+            <a href="#pros-cons" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Pros and Cons</a>
+            <a href="#comparison" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. How It Compares</a>
+            <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Who Should Skip This Treadmill</a>
+            <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Final Verdict</a>
+            <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        </nav>
       </div>
+    </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-        <p class="italic text-xl border-l-4 border-[#FF5A1F] bg-gray-50 pl-6 pr-4 py-4 rounded-r-xl not-prose text-gray-700 leading-relaxed">
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
           Life Fitness has spent decades building the treadmills you've
           actually run on at a gym, hotel, or corporate fitness center, and
           the T3 is the company's answer to a question a lot of serious
@@ -274,7 +281,8 @@ const schema = {
           understanding clearly before you spend commercial-equipment money.
         </p>
 
-        <h2 id="overview" class="scroll-mt-24">Overview and Who It's For</h2>
+        <div id="overview" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Overview and Who It's For</h2>
         <p>
           Life Fitness isn't a direct-to-consumer treadmill brand that
           later added commercial ambitions — it's the reverse. The company
@@ -300,7 +308,7 @@ const schema = {
           treadmill and want to stop doing that, the T3's commercial-grade
           construction earns its price. If you're a casual or occasional
           user, you're paying for durability headroom you won't use, and a
-          home-brand machine like the <a href="/nordictrack-commercial-1750-treadmill">NordicTrack Commercial 1750</a>
+          home-brand machine like the <a href="/nordictrack-commercial-1750-treadmill/">NordicTrack Commercial 1750</a>
           will serve you just as well for far less money.
         </p>
         <p>
@@ -320,10 +328,10 @@ const schema = {
         <p>
           For the full picture of where the T3 sits inside Life Fitness's
           broader home lineup, including the significantly more expensive
-          <a href="/life-fitness-platinum-club-series-treadmill">Platinum Club Series</a>,
-          see our <a href="/life-fitness">Life Fitness brand guide</a>. And
+          <a href="/life-fitness-platinum-club-series-treadmill/">Platinum Club Series</a>,
+          see our <a href="/life-fitness/">Life Fitness brand guide</a>. And
           if you're still deciding whether commercial-grade construction is
-          worth the premium at all, our <a href="/commercial-treadmills">commercial treadmill roundup</a>
+          worth the premium at all, our <a href="/commercial-treadmills/">commercial treadmill roundup</a>
           compares the T3 against every gym-quality machine we've tested for
           home use.
         </p>
@@ -348,12 +356,15 @@ const schema = {
             </div>
           </div>
         </div>
+        </div>
 
-        <h2 id="specs" class="scroll-mt-24">Full Spec Sheet</h2>
+        <div id="specs" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Full Spec Sheet</h2>
         <p>
           Here's every spec we verified directly against our test unit
           rather than copying from the manufacturer's marketing page.
         </p>
+        </div>
       </div>
 
       <div class="not-prose overflow-x-auto my-8 rounded-xl border border-gray-200">
@@ -369,8 +380,9 @@ const schema = {
         </table>
       </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-        <h2 id="assembly" class="scroll-mt-24">Assembly and Setup</h2>
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="assembly" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Assembly and Setup</h2>
         <p>
           Assembly and setup on the T3 is a genuinely different experience
           than a home-brand folding treadmill, and it's worth setting
@@ -399,8 +411,10 @@ const schema = {
           unlevel fixed-frame treadmill will transmit more vibration and
           wear unevenly over time.
         </p>
+        </div>
 
-        <h2 id="performance" class="scroll-mt-24">Performance Deep Dive</h2>
+        <div id="performance" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Performance Deep Dive</h2>
         <h3>The AC Motor Difference</h3>
         <p>
           This is the single biggest story with the T3, and it's worth
@@ -469,8 +483,10 @@ const schema = {
           running, which isn't something we can say about every home
           treadmill we've reviewed at lower rated capacities.
         </p>
+        </div>
 
-        <h2 id="durability" class="scroll-mt-24">Long-Term Durability Notes</h2>
+        <div id="durability" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Long-Term Durability Notes</h2>
         <p>
           Four weeks of even heavy testing can't fully answer a multi-year
           durability question, so we leaned heavily on Life Fitness's
@@ -508,8 +524,11 @@ const schema = {
           never plans to move or fold the treadmill, that's a real
           durability advantage baked into the fixed-frame trade-off.
         </p>
+        </div>
 
-        <h2 id="pros-cons" class="scroll-mt-24">Pros and Cons</h2>
+        <div id="pros-cons" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Pros and Cons</h2>
+        </div>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8 not-prose">
@@ -552,13 +571,15 @@ const schema = {
         </div>
       </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-        <h2 id="comparison" class="scroll-mt-24">How It Compares</h2>
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="comparison" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. How It Compares</h2>
         <p>
           The T3 doesn't exist in a vacuum — here's how it stacks up
           against two of the strongest home-brand alternatives at a
           significantly lower price.
         </p>
+        </div>
       </div>
 
       <div class="not-prose overflow-x-auto my-8 rounded-xl border border-gray-200">
@@ -586,7 +607,7 @@ const schema = {
         </table>
       </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <p>
           On paper, the NordicTrack Commercial 2450 and Sole F80 both look
           like the better deal — stronger rated CHP, larger 22-inch decks,
@@ -604,7 +625,7 @@ const schema = {
         </p>
         <p>
           It's also worth a mental comparison to Life Fitness's own flagship,
-          the <a href="/life-fitness-platinum-club-series-treadmill">Platinum Club Series</a>,
+          the <a href="/life-fitness-platinum-club-series-treadmill/">Platinum Club Series</a>,
           even though it isn't in the table above. The Platinum Club Series
           costs roughly three to four times what the T3 does for a larger
           4.0 CHP motor, an extra-long 22 x 63-inch deck, and a premium
@@ -633,14 +654,15 @@ const schema = {
           </p>
         </div>
 
-        <h2 id="who-should-skip" class="scroll-mt-24">Who Should Skip This Treadmill</h2>
+        <div id="who-should-skip" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Who Should Skip This Treadmill</h2>
         <p>
           As much as we respect the engineering behind the T3, it isn't the
           right machine for most home shoppers who land on this page. If you
           walk or jog casually a few times a week, you won't put enough
           mileage on a treadmill to ever benefit from the AC motor's
           durability advantage over a good DC motor, and a machine like the
-          <a href="/nordictrack-commercial-1750-treadmill">NordicTrack Commercial 1750</a>
+          <a href="/nordictrack-commercial-1750-treadmill/">NordicTrack Commercial 1750</a>
           will deliver a similar day-to-day experience for a fraction of the
           price. If you need the treadmill to fold away between uses because
           of space constraints, the T3's fixed frame rules it out entirely —
@@ -650,8 +672,10 @@ const schema = {
           with yourself about whether you're paying for engineering you'll
           actually use or for a brand name on a spec sheet.
         </p>
+        </div>
 
-        <h2 id="verdict" class="scroll-mt-24">Final Verdict</h2>
+        <div id="verdict" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Final Verdict</h2>
         <p>
           The Life Fitness T3 earns its price the same way commercial gym
           equipment always has: by being engineered for a use pattern most
@@ -672,15 +696,16 @@ const schema = {
           price difference toward something you'll actually feel the
           benefit of.
         </p>
+        </div>
       </div>
 
       <!-- FAQ -->
-      <div id="faq" class="scroll-mt-24 my-12">
-        <h2 class="text-2xl font-black text-gray-900 mb-6">Frequently Asked Questions</h2>
-        <div class="space-y-4">
-          <div class="bg-gray-50 rounded-2xl p-6">
+      <div id="faq" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Is the Life Fitness T3 worth the price?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               For serious, frequent runners who want genuine commercial-gym
               reliability at home, yes. The commercial-grade AC motor and
               fixed-frame construction cost significantly more than
@@ -691,9 +716,9 @@ const schema = {
               premium.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Why does the Life Fitness T3 use an AC motor instead of a DC motor?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               AC motors are what actual commercial gyms use because they
               tolerate sustained, heavy daily use far better than the DC
               motors found in most home treadmills. DC motors are cheaper to
@@ -704,9 +729,9 @@ const schema = {
               reason it costs more than home-brand competitors.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Does the Life Fitness T3 fold for storage?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               No. The T3 uses a fixed-frame, commercial-style construction
               rather than a folding design. This is a deliberate trade-off:
               fixed frames are inherently more rigid and stable under
@@ -715,9 +740,9 @@ const schema = {
               move than a comparable home-brand folding treadmill.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Do I need a subscription to use the Life Fitness T3?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               No. The T3 is available with the basic Go Console or with
               Track Connect app integration, and neither requires an
               ongoing subscription to access core treadmill functionality.
@@ -726,9 +751,9 @@ const schema = {
               built-in programs all work fully without it.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">How does the Life Fitness T3 compare to home treadmill brands like NordicTrack?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               The T3's core advantage is its commercial-grade AC motor and
               fixed-frame construction, both derived from actual gym
               equipment, versus the DC motors and folding frames typical of
@@ -738,9 +763,9 @@ const schema = {
               weight capacity, at a meaningfully higher cost.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Who should buy the Life Fitness T3 instead of a cheaper home treadmill?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               Frequent runners who use a treadmill nearly every day,
               households with multiple heavy users, or anyone who has worn
               out a DC-motor home treadmill and wants genuine gym-grade
@@ -752,22 +777,45 @@ const schema = {
         </div>
       </div>
 
+      <!-- Common Mistakes -->
+      <div class="mt-16">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buyers Make</h2>
+        <p class="text-gray-700 leading-relaxed">The T3 brings commercial engineering into a home-priced machine, and the mistakes come from judging it by consumer-treadmill standards.</p>
+        <div class="space-y-6 my-8">
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing AC and DC motor ratings directly</h3>
+            <p class="text-gray-700 text-sm m-0">The T3's 3.0 CHP AC motor is not equivalent to a 3.0 CHP DC motor on a consumer machine. AC motors sustain load differently, and reading the numbers side by side undersells this frame.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Expecting a large streaming touchscreen</h3>
+            <p class="text-gray-700 text-sm m-0">Life Fitness consoles prioritise reliability and simple readouts over media. If immersive classes are the point of your purchase, this is the wrong brand rather than the wrong model.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Overlooking the 20-inch deck width</h3>
+            <p class="text-gray-700 text-sm m-0">It is narrower than several cheaper competitors. Taller and broader runners should stand on one before ordering; the build quality does not compensate for a deck that feels tight.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming home use voids nothing</h3>
+            <p class="text-gray-700 text-sm m-0">Commercial-derived machines have specific service intervals. Follow them rather than the lighter routine you would use on a consumer treadmill, and keep proof of servicing for warranty claims.</p>
+          </div>
+        </div>
+      </div>
       <!-- Related Guides -->
-      <div class="my-12">
-        <h2 class="text-2xl font-black text-gray-900 mb-6">More Life Fitness &amp; Commercial Treadmill Reviews</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <a href="/life-fitness-platinum-club-series-treadmill" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+      <div class="mt-16">
+        <h2 class="text-2xl font-black text-gray-900 mb-6">Related Life Fitness &amp; Commercial Treadmill Guides</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <a href="/life-fitness-platinum-club-series-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
             <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Flagship</span>
             <p class="font-bold text-gray-900 mt-2 mb-1">Life Fitness Platinum Club Series Review</p>
             <p class="text-sm text-gray-500 leading-relaxed">The boutique-studio-grade flagship, for buyers who want the absolute best.</p>
           </a>
-          <a href="/commercial-treadmills" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Category</span>
+          <a href="/commercial-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+            <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Category</span>
             <p class="font-bold text-gray-900 mt-2 mb-1">Best Commercial-Grade Treadmills</p>
             <p class="text-sm text-gray-500 leading-relaxed">Every gym-quality treadmill we've tested for home use, ranked.</p>
           </a>
-          <a href="/life-fitness" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand Guide</span>
+          <a href="/life-fitness/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+            <span class="text-xs font-black uppercase tracking-widest text-green-600">Brand Guide</span>
             <p class="font-bold text-gray-900 mt-2 mb-1">Life Fitness Treadmill Lineup Explained</p>
             <p class="text-sm text-gray-500 leading-relaxed">Every current Life Fitness model, sorted by who it's actually for.</p>
           </a>
@@ -775,8 +823,8 @@ const schema = {
       </div>
 
       <!-- Closing CTA -->
-      <div class="bg-gray-900 text-white rounded-2xl p-8 mb-16">
-        <h2 class="text-2xl font-black mb-4">The Bottom Line</h2>
+      <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+        <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
         <p class="text-gray-300 leading-relaxed mb-4">
           The <strong class="text-white">Life Fitness T3</strong> is a
           genuine step into commercial-gym-grade equipment for the home. The
@@ -787,8 +835,8 @@ const schema = {
         </p>
         <p class="text-gray-300 leading-relaxed">
           Comparing your options first? See our full
-          <a href="/commercial-treadmills" class="text-[#5AA9FF] font-bold no-underline">commercial treadmill roundup</a>
-          or the <a href="/life-fitness" class="text-[#5AA9FF] font-bold no-underline">Life Fitness brand guide</a>
+          <a href="/commercial-treadmills/" class="text-[#5AA9FF] font-bold no-underline">commercial treadmill roundup</a>
+          or the <a href="/life-fitness/" class="text-[#5AA9FF] font-bold no-underline">Life Fitness brand guide</a>
           for how every current model in the lineup stacks up.
         </p>
       </div>

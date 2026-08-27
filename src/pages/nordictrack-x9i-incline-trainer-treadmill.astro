@@ -182,14 +182,14 @@ const schema = {
 >
   <article class="relative overflow-hidden">
     <!-- Hero Section -->
-    <div class="relative bg-gray-900 overflow-hidden">
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
       <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
         <pattern id="dot-pattern-ntx9i" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
           <circle cx="2" cy="2" r="1.5" fill="white"></circle>
         </pattern>
         <rect width="100%" height="100%" fill="url(#dot-pattern-ntx9i)"></rect>
       </svg>
-      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 text-center">
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
         <div class="flex justify-center mb-6">
           <TrustBadge />
         </div>
@@ -201,10 +201,10 @@ const schema = {
             Updated May 2026
           </span>
         </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight">
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
           NordicTrack <span class="text-[#5AA9FF]">X9i Incline Trainer</span> Review
         </h1>
-        <p class="mt-6 text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
           We put NordicTrack's value incline trainer through four weeks of
           steep climbs and controlled descents to find out whether a
           10-inch screen is a real sacrifice or a smart way to save several
@@ -221,8 +221,8 @@ const schema = {
       </div>
     </div>
 
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-      <!-- Author & Meta row -->
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
       <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
         <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
         <div>
@@ -268,26 +268,33 @@ const schema = {
           </a>
         </div>
       </div>
+    </div>
 
-      <!-- Table of Contents -->
-      <div class="my-10 bg-gray-50 rounded-2xl p-6 border border-gray-100">
-        <p class="text-xs font-black uppercase tracking-widest text-gray-500 mb-4">On This Page</p>
-        <ol class="space-y-2 list-none p-0 m-0">
-          <li><a href="#overview" class="text-[#0F62FE] no-underline font-medium">1. Overview and Who It's For</a></li>
-          <li><a href="#specs" class="text-[#0F62FE] no-underline font-medium">2. Full Spec Sheet</a></li>
-          <li><a href="#assembly" class="text-[#0F62FE] no-underline font-medium">3. Assembly and Setup</a></li>
-          <li><a href="#performance" class="text-[#0F62FE] no-underline font-medium">4. Performance Deep Dive</a></li>
-          <li><a href="#durability" class="text-[#0F62FE] no-underline font-medium">5. Long-Term Durability Notes</a></li>
-          <li><a href="#pros-cons" class="text-[#0F62FE] no-underline font-medium">6. Pros and Cons</a></li>
-          <li><a href="#comparison" class="text-[#0F62FE] no-underline font-medium">7. How It Compares</a></li>
-          <li><a href="#who-should-skip" class="text-[#0F62FE] no-underline font-medium">8. Who Should Skip This Treadmill</a></li>
-          <li><a href="#verdict" class="text-[#0F62FE] no-underline font-medium">9. Final Verdict</a></li>
-          <li><a href="#faq" class="text-[#0F62FE] no-underline font-medium">10. Frequently Asked Questions</a></li>
-        </ol>
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <a href="#overview" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Overview and Who It's For</a>
+            <a href="#specs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Full Spec Sheet</a>
+            <a href="#assembly" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Assembly and Setup</a>
+            <a href="#performance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Performance Deep Dive</a>
+            <a href="#durability" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Long-Term Durability Notes</a>
+            <a href="#pros-cons" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Pros and Cons</a>
+            <a href="#comparison" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. How It Compares</a>
+            <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Who Should Skip This Treadmill</a>
+            <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Final Verdict</a>
+            <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        </nav>
       </div>
+    </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-        <p class="italic text-xl border-l-4 border-[#FF5A1F] bg-gray-50 pl-6 pr-4 py-4 rounded-r-xl not-prose text-gray-700 leading-relaxed">
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
           Incline trainers are a small, expensive category, and the X22i's
           22-inch rotating screen tends to hog the spotlight. But after four
           weeks living with its smaller sibling, we think the X9i is the
@@ -296,7 +303,8 @@ const schema = {
           identical, and identical is the part that matters most.
         </p>
 
-        <h2 id="overview" class="scroll-mt-24">Overview and Who It's For</h2>
+        <div id="overview" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Overview and Who It's For</h2>
         <p>
           The X9i is NordicTrack's value entry into the incline trainer
           category, and "value" is doing real work in that description —
@@ -332,7 +340,7 @@ const schema = {
           than NordicTrack's flat Commercial line. Standing folded, it
           occupies a substantial 38 x 84-inch footprint, so if ultra-compact
           storage matters most to you, this isn't the right category — our
-          <a href="/best-folding-treadmill-reviews">folding treadmill guide</a>
+          <a href="/best-folding-treadmill-reviews/">folding treadmill guide</a>
           covers more space-efficient options.
         </p>
         <p>
@@ -344,7 +352,7 @@ const schema = {
           the grade under their feet rather than the video in front of
           them. If display size and the ability to rotate the screen for
           off-treadmill workouts genuinely matter to you, the
-          <a href="/nordictrack-x22i-incline-trainer-treadmill">X22i</a>
+          <a href="/nordictrack-x22i-incline-trainer-treadmill/">X22i</a>
           is worth the extra money; otherwise, the X9i gets you the same
           workout for less.
         </p>
@@ -369,12 +377,15 @@ const schema = {
             </div>
           </div>
         </div>
+        </div>
 
-        <h2 id="specs" class="scroll-mt-24">Full Spec Sheet</h2>
+        <div id="specs" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Full Spec Sheet</h2>
         <p>
           Here's every spec we verified directly against our test unit
           rather than copying from the manufacturer's marketing page.
         </p>
+        </div>
       </div>
 
       <div class="not-prose overflow-x-auto my-8 rounded-xl border border-gray-200">
@@ -390,8 +401,9 @@ const schema = {
         </table>
       </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-        <h2 id="assembly" class="scroll-mt-24">Assembly and Setup</h2>
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="assembly" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Assembly and Setup</h2>
         <p>
           Assembly took our team roughly 80 minutes working alone, and
           closer to 50 minutes with a second person helping lift the
@@ -420,8 +432,10 @@ const schema = {
           treadmill, and a sloped ceiling or overhead fixture can become a
           real problem if you haven't checked clearance in advance.
         </p>
+        </div>
 
-        <h2 id="performance" class="scroll-mt-24">Performance Deep Dive</h2>
+        <div id="performance" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Performance Deep Dive</h2>
         <h3>Motor and Deck Under Real Incline Load</h3>
         <p>
           Since the X9i shares the X22i's 4.0 CHP motor and 22 x 60-inch
@@ -492,8 +506,10 @@ const schema = {
           semi-permanently in a dedicated space, with folding better
           reserved for occasional deep cleaning.
         </p>
+        </div>
 
-        <h2 id="durability" class="scroll-mt-24">Long-Term Durability Notes</h2>
+        <div id="durability" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Long-Term Durability Notes</h2>
         <p>
           Four weeks can't fully answer a multi-year durability question, so
           we cross-referenced our hands-on impressions against patterns in
@@ -535,8 +551,11 @@ const schema = {
           between the two models; the price gap really is concentrated in
           the one component that differs.
         </p>
+        </div>
 
-        <h2 id="pros-cons" class="scroll-mt-24">Pros and Cons</h2>
+        <div id="pros-cons" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Pros and Cons</h2>
+        </div>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8 not-prose">
@@ -579,13 +598,15 @@ const schema = {
         </div>
       </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-        <h2 id="comparison" class="scroll-mt-24">How It Compares</h2>
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="comparison" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. How It Compares</h2>
         <p>
           The X9i doesn't exist in a vacuum — here's how it stacks up
           against its flagship sibling and NordicTrack's flat mid-tier
           model.
         </p>
+        </div>
       </div>
 
       <div class="not-prose overflow-x-auto my-8 rounded-xl border border-gray-200">
@@ -613,16 +634,16 @@ const schema = {
         </table>
       </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <p>
-          The <a href="/nordictrack-x22i-incline-trainer-treadmill">X22i</a>
+          The <a href="/nordictrack-x22i-incline-trainer-treadmill/">X22i</a>
           is the obvious point of comparison, since it's the same motor,
           deck, and incline range wrapped around a considerably larger
           22-inch rotating screen instead of the X9i's 10-inch pivoting one.
           Unless the display itself is a priority, we think the X9i is the
           smarter buy for most shoppers in this category — you're not
           giving up any incline performance to save the money. The
-          <a href="/nordictrack-commercial-1750-treadmill">Commercial 1750</a>
+          <a href="/nordictrack-commercial-1750-treadmill/">Commercial 1750</a>
           is a useful reference point in the other direction: a flat
           treadmill with a 12% max incline, meaningfully cheaper than either
           incline trainer, and the right choice if you've read this far and
@@ -656,25 +677,28 @@ const schema = {
           </p>
         </div>
 
-        <h2 id="who-should-skip" class="scroll-mt-24">Who Should Skip This Treadmill</h2>
+        <div id="who-should-skip" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Who Should Skip This Treadmill</h2>
         <p>
           As much as we like the X9i, it isn't the right machine for every
           shopper. If display size and immersive trail video genuinely
           matter to you, the smaller screen will be a persistent annoyance,
-          and the <a href="/nordictrack-x22i-incline-trainer-treadmill">X22i</a>
+          and the <a href="/nordictrack-x22i-incline-trainer-treadmill/">X22i</a>
           is worth the extra money instead. If you mostly want a
           comfortable flat run or light incline walk, you're paying for
           incline range you'll rarely use — a
-          <a href="/nordictrack-commercial-1750-treadmill">Commercial 1750</a>
+          <a href="/nordictrack-commercial-1750-treadmill/">Commercial 1750</a>
           serves that use case better and for less. And if you know you'll
           never subscribe to iFit, the terrain-matched coaching that
           justifies this category of machine goes unused, making a simpler
           treadmill from our
-          <a href="/best-treadmill-for-home-reviews">home treadmill guide</a>
+          <a href="/best-treadmill-for-home-reviews/">home treadmill guide</a>
           the more sensible purchase.
         </p>
+        </div>
 
-        <h2 id="verdict" class="scroll-mt-24">Final Verdict</h2>
+        <div id="verdict" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Final Verdict</h2>
         <p>
           The NordicTrack X9i is the incline trainer we'd recommend to most
           budget-conscious hikers, trail runners, and incline-focused HIIT
@@ -692,15 +716,16 @@ const schema = {
           to how you'll use the machine. For most shoppers, that extra money
           is better saved or put toward a longer iFit subscription instead.
         </p>
+        </div>
       </div>
 
       <!-- FAQ -->
-      <div id="faq" class="scroll-mt-24 my-12">
-        <h2 class="text-2xl font-black text-gray-900 mb-6">Frequently Asked Questions</h2>
-        <div class="space-y-4">
-          <div class="bg-gray-50 rounded-2xl p-6">
+      <div id="faq" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">What's the real difference between the X9i and the X22i?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               The core hardware is identical: both use a 4.0 CHP motor, a 22
               x 60-inch deck, and the same -6% to 40% incline and decline
               range. The difference is the display. The X9i has a 10-inch
@@ -710,9 +735,9 @@ const schema = {
               workout for several hundred dollars less.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Is a 10-inch screen too small for iFit trail workouts?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               It's noticeably smaller than the X22i's 22-inch display, and
               trail video is less immersive as a result, but it's not too
               small to use comfortably. Our testers had no trouble reading
@@ -722,9 +747,9 @@ const schema = {
               to the larger screen.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Do I need iFit to use the X9i's incline features?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               You can manually adjust incline and decline without a
               subscription, but the automatic terrain-matched incline
               changes during real trail footage require an active iFit
@@ -733,9 +758,9 @@ const schema = {
               signature coached-trail feature goes unused.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Who should buy the X9i instead of the X22i?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               Anyone who wants the full -6% to 40% incline training
               experience but doesn't need or want to pay for a larger
               rotating display. Budget-conscious hikers and trail runners,
@@ -745,9 +770,9 @@ const schema = {
               less money.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">How loud is the X9i during steep incline changes?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               The incline motor is audible during rapid grade changes,
               comparable to the X22i since both share the same incline
               hardware. It's noticeably louder during a shift than a flat
@@ -756,9 +781,9 @@ const schema = {
               stabilizes and isn't disruptive during normal use.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">How long does assembly take?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               Plan for roughly 80 minutes working alone, or about 50 minutes
               with a second person, slightly faster than the X22i thanks to
               the smaller, lighter console. Two people are still recommended
@@ -769,22 +794,45 @@ const schema = {
         </div>
       </div>
 
+      <!-- Common Mistakes -->
+      <div class="mt-16">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buyers Make</h2>
+        <p class="text-gray-700 leading-relaxed">The X9i delivers the incline trainer experience at a lower price, and the mistakes are mostly about what was trimmed to get there.</p>
+        <div class="space-y-6 my-8">
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Expecting the X22i's screen experience</h3>
+            <p class="text-gray-700 text-sm m-0">The 10-inch display is sharp but small for immersive trail content. If the screen is central to why you want an incline trainer, the X9i will disappoint in a way the spec sheet does not convey.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming the incline range is the same</h3>
+            <p class="text-gray-700 text-sm m-0">Check the stated grade range against the X22i before buying on the assumption that both machines climb identically. The workout library is shared; the hardware ceiling is not.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Underestimating the ceiling clearance at grade</h3>
+            <p class="text-gray-700 text-sm m-0">As with any incline trainer, the constraint is your head height at maximum grade, not the machine's resting height. Measure with a user standing on the deck at full incline.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying it to save money on a flat-running machine</h3>
+            <p class="text-gray-700 text-sm m-0">If you will not use steep grades, an incline trainer is the wrong shape of compromise. A conventional treadmill at the same price gives you a better deck and console for flat mileage.</p>
+          </div>
+        </div>
+      </div>
       <!-- Related Guides -->
-      <div class="my-12">
-        <h2 class="text-2xl font-black text-gray-900 mb-6">More NordicTrack &amp; Incline Trainer Reviews</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <a href="/nordictrack-x22i-incline-trainer-treadmill" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+      <div class="mt-16">
+        <h2 class="text-2xl font-black text-gray-900 mb-6">Related NordicTrack &amp; Incline Trainer Guides</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <a href="/nordictrack-x22i-incline-trainer-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
             <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Step Up</span>
             <p class="font-bold text-gray-900 mt-2 mb-1">NordicTrack X22i Incline Trainer Review</p>
             <p class="text-sm text-gray-500 leading-relaxed">The same incline range with a 22-inch rotating screen.</p>
           </a>
-          <a href="/commercial-treadmills" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Category</span>
+          <a href="/commercial-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+            <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Category</span>
             <p class="font-bold text-gray-900 mt-2 mb-1">Best Commercial-Grade Treadmills</p>
             <p class="text-sm text-gray-500 leading-relaxed">Every gym-quality treadmill we've tested for home use, ranked.</p>
           </a>
-          <a href="/nordictrack" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand Guide</span>
+          <a href="/nordictrack/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+            <span class="text-xs font-black uppercase tracking-widest text-green-600">Brand Guide</span>
             <p class="font-bold text-gray-900 mt-2 mb-1">NordicTrack Treadmill Lineup Explained</p>
             <p class="text-sm text-gray-500 leading-relaxed">Every current NordicTrack model, sorted by who it's actually for.</p>
           </a>
@@ -792,8 +840,8 @@ const schema = {
       </div>
 
       <!-- Closing CTA -->
-      <div class="bg-gray-900 text-white rounded-2xl p-8 mb-16">
-        <h2 class="text-2xl font-black mb-4">The Bottom Line</h2>
+      <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+        <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
         <p class="text-gray-300 leading-relaxed mb-4">
           The <strong class="text-white">NordicTrack X9i</strong> is the
           incline trainer we'd recommend to budget-conscious hikers and
@@ -803,9 +851,9 @@ const schema = {
         </p>
         <p class="text-gray-300 leading-relaxed">
           Want the bigger screen instead? See our
-          <a href="/nordictrack-x22i-incline-trainer-treadmill" class="text-[#5AA9FF] font-bold no-underline">X22i review</a>
+          <a href="/nordictrack-x22i-incline-trainer-treadmill/" class="text-[#5AA9FF] font-bold no-underline">X22i review</a>
           for the flagship version of this same incline range, or the
-          <a href="/nordictrack" class="text-[#5AA9FF] font-bold no-underline">NordicTrack brand guide</a>
+          <a href="/nordictrack/" class="text-[#5AA9FF] font-bold no-underline">NordicTrack brand guide</a>
           for how every current model in the lineup stacks up.
         </p>
       </div>

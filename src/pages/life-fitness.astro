@@ -17,7 +17,7 @@ const LINEUP = [
     deck: "20 x 60 in.",
     summary:
       "The most accessible entry point into Life Fitness's home lineup, built around the same AC-motor philosophy as the brand's commercial equipment, on a fixed frame that doesn't fold.",
-    href: "/life-fitness-t3-treadmill",
+    href: "/life-fitness-t3-treadmill/",
   },
   {
     id: "life-fitness-platinum-club-series",
@@ -28,7 +28,7 @@ const LINEUP = [
     deck: "22 x 63 in.",
     summary:
       "Essentially the same machine you'd find on the floor of a high-end club, scaled for a home gym — a genuinely commercial-grade treadmill with a price tag to match.",
-    href: "/life-fitness-platinum-club-series-treadmill",
+    href: "/life-fitness-platinum-club-series-treadmill/",
   },
 ];
 
@@ -122,23 +122,23 @@ const schema = {
   stickyCta={{ text: "See the Life Fitness Lineup", link: "#lineup" }}
 >
   <article class="relative overflow-hidden">
-    <div class="relative bg-gray-900 overflow-hidden">
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
       <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
         <pattern id="dot-pattern-lifefitness" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
           <circle cx="2" cy="2" r="1.5" fill="white"></circle>
         </pattern>
         <rect width="100%" height="100%" fill="url(#dot-pattern-lifefitness)"></rect>
       </svg>
-      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 text-center">
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
         <div class="flex justify-center mb-6"><TrustBadge /></div>
         <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
           <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Brand Guide</span>
           <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Updated May 2026</span>
         </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight">
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
           <span class="text-[#5AA9FF]">Life Fitness</span> Treadmill Reviews
         </h1>
-        <p class="mt-6 text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
           The commercial gym brand behind the treadmills at Equinox, hotel
           fitness centers, and university rec halls now sells a home lineup
           built the same way. Here's whether that's worth it for your house.
@@ -150,7 +150,8 @@ const schema = {
       </div>
     </div>
 
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
       <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
         <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
         <div>
@@ -161,25 +162,33 @@ const schema = {
         <p class="text-gray-500 text-sm">Last Updated: <strong class="text-gray-700">May 14, 2026</strong></p>
         <div class="ml-auto"><SocialProof users="2.8k" /></div>
       </div>
+    </div>
 
-      <div class="my-10 bg-gray-50 rounded-2xl p-6 border border-gray-100">
-        <p class="text-xs font-black uppercase tracking-widest text-gray-500 mb-4">On This Page</p>
-        <ol class="space-y-2 list-none p-0 m-0">
-          <li><a href="#brand-history" class="text-[#0F62FE] no-underline font-medium">1. About Life Fitness</a></li>
-          <li><a href="#lineup" class="text-[#0F62FE] no-underline font-medium">2. The Life Fitness Home Treadmill Lineup</a></li>
-          <li><a href="#build-quality" class="text-[#0F62FE] no-underline font-medium">3. AC Motors and What Makes Life Fitness Different</a></li>
-          <li><a href="#app" class="text-[#0F62FE] no-underline font-medium">4. Console and App Experience</a></li>
-          <li><a href="#vs-competitors" class="text-[#0F62FE] no-underline font-medium">5. Life Fitness vs. NordicTrack vs. Matrix vs. Sole</a></li>
-          <li><a href="#specific-needs" class="text-[#0F62FE] no-underline font-medium">6. Life Fitness for Specific Situations</a></li>
-          <li><a href="#which-one" class="text-[#0F62FE] no-underline font-medium">7. Which Life Fitness Treadmill Should You Buy?</a></li>
-          <li><a href="#warranty" class="text-[#0F62FE] no-underline font-medium">8. Warranty and Customer Support</a></li>
-          <li><a href="#complaints" class="text-[#0F62FE] no-underline font-medium">9. Common Owner Complaints (and How to Avoid Them)</a></li>
-          <li><a href="#faq" class="text-[#0F62FE] no-underline font-medium">10. Frequently Asked Questions</a></li>
-        </ol>
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <a href="#brand-history" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. About Life Fitness</a>
+            <a href="#lineup" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The Life Fitness Home Treadmill Lineup</a>
+            <a href="#build-quality" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. AC Motors and What Makes Life Fitness Different</a>
+            <a href="#app" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Console and App Experience</a>
+            <a href="#vs-competitors" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Life Fitness vs. NordicTrack vs. Matrix vs. Sole</a>
+            <a href="#specific-needs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Life Fitness for Specific Situations</a>
+            <a href="#which-one" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Which Life Fitness Treadmill Should You Buy?</a>
+            <a href="#warranty" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Warranty and Customer Support</a>
+            <a href="#complaints" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Common Owner Complaints (and How to Avoid Them)</a>
+            <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        </nav>
       </div>
+    </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-        <p class="italic text-xl border-l-4 border-[#FF5A1F] bg-gray-50 pl-6 pr-4 py-4 rounded-r-xl not-prose text-gray-700 leading-relaxed">
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
           Life Fitness isn't a home-fitness startup that grew into commercial
           contracts — it's the reverse. This is a company that has spent
           decades building the machines gyms actually buy, and only
@@ -188,7 +197,8 @@ const schema = {
           from it, and it changes who it's actually worth the money for.
         </p>
 
-        <h2 id="brand-history" class="scroll-mt-24">About Life Fitness</h2>
+        <div id="brand-history" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. About Life Fitness</h2>
         <p>
           Life Fitness has been manufacturing exercise equipment since the
           late 1960s, and it's one of the most widely deployed commercial
@@ -233,14 +243,17 @@ const schema = {
             <div><p class="text-3xl md:text-4xl font-black text-[#5AA9FF]">50+</p><p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">Years Building Gym Equipment</p></div>
           </div>
         </div>
+        </div>
 
-        <h2 id="lineup" class="scroll-mt-24">The Life Fitness Home Treadmill Lineup</h2>
+        <div id="lineup" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The Life Fitness Home Treadmill Lineup</h2>
         <p>
           Both current models share the same fixed-frame, AC-motor philosophy
           — the difference between them is almost entirely a matter of scale
           and how closely each one mirrors the equipment Life Fitness sells
           to actual commercial gyms.
         </p>
+        </div>
       </div>
 
       <div class="grid grid-cols-1 gap-6 my-10">
@@ -268,8 +281,9 @@ const schema = {
         ))}
       </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-        <h2 id="lineup-detail" class="scroll-mt-24">How the Two Models Actually Differ in Practice</h2>
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="lineup-detail" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">How the Two Models Actually Differ in Practice</h2>
         <p>
           On paper, the jump from the T3 to the Platinum Club Series looks
           like a straightforward step up: a slightly stronger 4.0 CHP motor
@@ -296,8 +310,10 @@ const schema = {
           gym," which for some buyers is the entire point of paying the
           premium.
         </p>
+        </div>
 
-        <h2 id="build-quality" class="scroll-mt-24">AC Motors and What Makes Life Fitness Different</h2>
+        <div id="build-quality" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. AC Motors and What Makes Life Fitness Different</h2>
         <p>
           The single most important spec on any Life Fitness treadmill isn't
           the CHP rating — it's the motor type. The overwhelming majority of
@@ -349,8 +365,10 @@ const schema = {
           of those failure points, which is part of why commercial gyms
           almost never use folding treadmills in the first place.
         </p>
+        </div>
 
-        <h2 id="app" class="scroll-mt-24">Console and App Experience</h2>
+        <div id="app" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Console and App Experience</h2>
         <p>
           Life Fitness treadmills take a noticeably more restrained approach
           to on-console entertainment and coaching software than brands like
@@ -375,31 +393,33 @@ const schema = {
           approach is arguably the better fit, and it's consistent with the
           same philosophy that governs the rest of the machine.
         </p>
+        </div>
 
-        <h2 id="vs-competitors" class="scroll-mt-24">Life Fitness vs. NordicTrack vs. Matrix vs. Sole</h2>
+        <div id="vs-competitors" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Life Fitness vs. NordicTrack vs. Matrix vs. Sole</h2>
         <p>
           Shoppers who land on a Life Fitness page are usually comparing it
           against one of three other brands, and the honest answer to "which
           one is better" depends entirely on how hard the treadmill will
           actually be used. NordicTrack — see our
-          <a href="/nordictrack-commercial-1750-treadmill">NordicTrack Commercial 1750 review</a>
+          <a href="/nordictrack-commercial-1750-treadmill/">NordicTrack Commercial 1750 review</a>
           — wins decisively on interactive coaching content through iFit and
           costs a fraction of even the entry-level Life Fitness T3, but its
           DC-motor construction isn't built for the same duty cycle. Sole
           sits in a similar position: excellent hardware-per-dollar for a
           home-use pattern, using our
-          <a href="/sole-fitness">Sole Fitness brand guide</a>
+          <a href="/sole-fitness/">Sole Fitness brand guide</a>
           for the full lineup breakdown, but not engineered to the same
           continuous-duty standard as Life Fitness's AC motors.
         </p>
         <p>
           The closer comparison is Matrix Fitness, another genuinely
           commercial-pedigree brand owned by Johnson Health Tech, which we
-          cover in our <a href="/matrix-fitness">Matrix Fitness brand guide</a>.
+          cover in our <a href="/matrix-fitness/">Matrix Fitness brand guide</a>.
           Matrix and Life Fitness occupy similar territory — both sell
           AC-motor, fixed-frame machines built from real commercial
           engineering — but Matrix's current home-lineup entry, the
-          <a href="/matrix-fitness-t7xe-treadmill">T7xe</a>, undercuts the
+          <a href="/matrix-fitness-t7xe-treadmill/">T7xe</a>, undercuts the
           Life Fitness T3 on price while offering a larger touchscreen and a
           more developed app ecosystem. If you specifically want the Life
           Fitness name and its decades of Equinox-and-hotel-gym pedigree,
@@ -423,8 +443,10 @@ const schema = {
             discount.
           </p>
         </div>
+        </div>
 
-        <h2 id="specific-needs" class="scroll-mt-24">Life Fitness for Specific Situations</h2>
+        <div id="specific-needs" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Life Fitness for Specific Situations</h2>
         <p>
           A few reader situations come up often enough with this brand that
           they're worth addressing directly. For households where more than
@@ -448,13 +470,15 @@ const schema = {
           product family as the actual club machines. For anyone whose
           primary concern is space efficiency or the ability to fold the
           treadmill away between uses, neither Life Fitness model is the
-          right fit; our <a href="/best-folding-treadmill-reviews">folding treadmill guide</a>
+          right fit; our <a href="/best-folding-treadmill-reviews/">folding treadmill guide</a>
           covers machines specifically engineered around that constraint,
           and it's worth reading before you commit to a fixed-frame
           purchase you can't easily undo.
         </p>
+        </div>
 
-        <h2 id="which-one" class="scroll-mt-24">Which Life Fitness Treadmill Should You Buy?</h2>
+        <div id="which-one" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Which Life Fitness Treadmill Should You Buy?</h2>
         <p>
           If you want genuine commercial-grade AC motor construction without
           paying full club-equipment pricing, and your household's use
@@ -471,8 +495,10 @@ const schema = {
           makes, full stop. For nearly everyone else, the price gap between
           the two models buys headroom you're unlikely to ever fully use.
         </p>
+        </div>
 
-        <h2 id="warranty" class="scroll-mt-24">Warranty and Customer Support</h2>
+        <div id="warranty" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Warranty and Customer Support</h2>
         <p>
           Life Fitness backs its home treadmills with warranty terms that
           reflect its commercial-equipment confidence: a lifetime frame
@@ -505,8 +531,10 @@ const schema = {
           it's worth keeping that documentation somewhere durable rather
           than assuming you'll remember where it is a decade from now.
         </p>
+        </div>
 
-        <h2 id="complaints" class="scroll-mt-24">Common Owner Complaints (and How to Avoid Them)</h2>
+        <div id="complaints" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Common Owner Complaints (and How to Avoid Them)</h2>
         <p>
           The most consistent complaint we found in owner feedback isn't
           about the machines themselves — it's about price shock relative to
@@ -540,14 +568,15 @@ const schema = {
           show up most often with large, non-folding commercial-style
           equipment.
         </p>
+        </div>
       </div>
 
-      <div id="faq" class="scroll-mt-24 my-12">
-        <h2 class="text-2xl font-black text-gray-900 mb-6">Frequently Asked Questions</h2>
-        <div class="space-y-4">
-          <div class="bg-gray-50 rounded-2xl p-6">
+      <div id="faq" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Is Life Fitness a good treadmill brand?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               Yes, and in a different way than most home-treadmill brands.
               Life Fitness has manufactured commercial gym equipment since
               the late 1960s, and its machines are the ones you'll find in
@@ -558,9 +587,9 @@ const schema = {
               than flashy touchscreen features.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Which Life Fitness treadmill should I buy?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               The <strong>Life Fitness T3</strong> is the right call for most
               households that want genuine commercial-grade construction
               without paying club-level prices. The
@@ -570,9 +599,9 @@ const schema = {
               runs daily, or you're outfitting a serious dedicated home gym.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">What's the difference between an AC motor and a DC motor?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               Most home treadmills use DC (direct current) motors because
               they're cheaper to manufacture and perform fine under light,
               intermittent use. AC (alternating current) motors, which Life
@@ -583,9 +612,9 @@ const schema = {
               replacement — at the cost of a higher price.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Do Life Fitness treadmills fold for storage?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               No. Both the T3 and the Platinum Club Series use fixed,
               non-folding frames, consistent with how commercial gym
               treadmills are built. If folding for storage is a requirement
@@ -594,9 +623,9 @@ const schema = {
               instead.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Is Life Fitness worth the price compared to NordicTrack or Sole?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               It depends on how hard you'll use it. Life Fitness costs
               meaningfully more than NordicTrack or Sole at every comparable
               tier, but that premium buys commercial-grade AC motor
@@ -608,9 +637,9 @@ const schema = {
               day-to-day experience for thousands of dollars less.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">What warranty do Life Fitness treadmills come with?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               Life Fitness backs its home treadmills with a lifetime frame
               warranty, an extended motor warranty typically running a
               decade or more, and multi-year parts and labor coverage that's
@@ -622,29 +651,52 @@ const schema = {
         </div>
       </div>
 
-      <div class="my-12">
-        <h2 class="text-2xl font-black text-gray-900 mb-6">More Brand and Category Guides</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <a href="/matrix-fitness" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+      <!-- Common Mistakes -->
+      <div class="mt-16">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buyers Make</h2>
+        <p class="text-gray-700 leading-relaxed">Life Fitness sells commercial engineering to home buyers, and most mistakes come from applying consumer-treadmill logic to it.</p>
+        <div class="space-y-6 my-8">
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing AC motor ratings to DC ones</h3>
+            <p class="text-gray-700 text-sm m-0">A 3.0 CHP AC motor sustains load in a way a 3.0 CHP DC consumer motor does not. Read the two numbers as different units, not as a like-for-like comparison.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Expecting streaming-first consoles</h3>
+            <p class="text-gray-700 text-sm m-0">Life Fitness prioritises reliability and clear metrics. If coached video content is the reason you are buying, this brand will feel austere however much you spend.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Skipping the access survey</h3>
+            <p class="text-gray-700 text-sm m-0">Club-derived machines are heavy and large. Doorways, stairs, and floor loading need checking before purchase, not after delivery is scheduled.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating service intervals as optional</h3>
+            <p class="text-gray-700 text-sm m-0">Commercial hardware assumes periodic servicing. Owners who skip it lose exactly the longevity advantage that justified the price.</p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-16">
+        <h2 class="text-2xl font-black text-gray-900 mb-6">Related Brand and Category Guides</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <a href="/matrix-fitness/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
             <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand Guide</span>
             <p class="font-bold text-gray-900 mt-2 mb-1">Matrix Fitness Treadmill Lineup</p>
             <p class="text-sm text-gray-500 leading-relaxed">Another commercial-pedigree brand, compared spec for spec.</p>
           </a>
-          <a href="/nordictrack-commercial-1750-treadmill" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Review</span>
+          <a href="/nordictrack-commercial-1750-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+            <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Review</span>
             <p class="font-bold text-gray-900 mt-2 mb-1">NordicTrack Commercial 1750 Review</p>
             <p class="text-sm text-gray-500 leading-relaxed">A lower-cost alternative with a very different console philosophy.</p>
           </a>
-          <a href="/best-treadmill-for-home-reviews" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Category</span>
+          <a href="/best-treadmill-for-home-reviews/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+            <span class="text-xs font-black uppercase tracking-widest text-green-600">Category</span>
             <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills for Home</p>
             <p class="text-sm text-gray-500 leading-relaxed">See how Life Fitness stacks up against every brand we've tested.</p>
           </a>
         </div>
       </div>
 
-      <div class="bg-gray-900 text-white rounded-2xl p-8 mb-16">
-        <h2 class="text-2xl font-black mb-4">The Bottom Line</h2>
+      <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+        <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
         <p class="text-gray-300 leading-relaxed mb-4">
           Life Fitness isn't trying to compete with NordicTrack or Sole on
           price, and it shouldn't be judged by the same yardstick. This is a
@@ -656,10 +708,10 @@ const schema = {
         </p>
         <p class="text-gray-300 leading-relaxed">
           Read the individual reviews for the
-          <a href="/life-fitness-t3-treadmill" class="text-[#5AA9FF] font-bold no-underline">T3</a>
-          and the <a href="/life-fitness-platinum-club-series-treadmill" class="text-[#5AA9FF] font-bold no-underline">Platinum Club Series</a>,
+          <a href="/life-fitness-t3-treadmill/" class="text-[#5AA9FF] font-bold no-underline">T3</a>
+          and the <a href="/life-fitness-platinum-club-series-treadmill/" class="text-[#5AA9FF] font-bold no-underline">Platinum Club Series</a>,
           or see how both stack up against every other brand we've tested in our
-          <a href="/best-treadmill-for-home-reviews" class="text-[#5AA9FF] font-bold no-underline">home treadmill roundup</a>.
+          <a href="/best-treadmill-for-home-reviews/" class="text-[#5AA9FF] font-bold no-underline">home treadmill roundup</a>.
         </p>
       </div>
     </div>
