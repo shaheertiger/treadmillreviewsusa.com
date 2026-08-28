@@ -2,7 +2,7 @@ import { readdirSync } from 'fs';
 import { join } from 'path';
 
 const SITE = 'https://www.treadmillreviewsusa.com';
-const KEY = '205f7bbc7f584a698ab8f36ac7d845b5';
+const KEY = '97943e49c69746038cbd774cb36165fd';
 const KEY_LOCATION = `${SITE}/${KEY}.txt`;
 const PAGES_DIR = join(import.meta.dirname, '..', 'src', 'pages');
 
