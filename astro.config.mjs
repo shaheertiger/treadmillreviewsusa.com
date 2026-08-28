@@ -97,6 +97,9 @@ const priorityByPath = new Map(
 
 export default defineConfig({
   site: 'https://www.treadmillreviewsusa.com',
+  // Every URL is canonically slash-terminated; internal links must match
+  // (enforced by scripts/validate-links.mjs).
+  trailingSlash: 'always',
   vite: {
     plugins: [tailwindcss()],
   },

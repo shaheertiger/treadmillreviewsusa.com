@@ -182,14 +182,14 @@ const schema = {
 >
   <article class="relative overflow-hidden">
     <!-- Hero Section -->
-    <div class="relative bg-gray-900 overflow-hidden">
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
       <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
         <pattern id="dot-pattern-pf-pro2000" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
           <circle cx="2" cy="2" r="1.5" fill="white"></circle>
         </pattern>
         <rect width="100%" height="100%" fill="url(#dot-pattern-pf-pro2000)"></rect>
       </svg>
-      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 text-center">
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
         <div class="flex justify-center mb-6">
           <TrustBadge />
         </div>
@@ -201,10 +201,10 @@ const schema = {
             Updated May 2026
           </span>
         </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight">
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
           ProForm <span class="text-[#5AA9FF]">Pro 2000</span> Review
         </h1>
-        <p class="mt-6 text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
           We put ProForm's flagship "Pro" line through three weeks of walking,
           jogging, and interval sessions to answer the question everyone
           shopping this treadmill actually has: is it a real alternative to
@@ -222,8 +222,8 @@ const schema = {
       </div>
     </div>
 
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-      <!-- Author & Meta row -->
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
       <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
         <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
         <div>
@@ -269,26 +269,33 @@ const schema = {
           </a>
         </div>
       </div>
+    </div>
 
-      <!-- Table of Contents -->
-      <div class="my-10 bg-gray-50 rounded-2xl p-6 border border-gray-100">
-        <p class="text-xs font-black uppercase tracking-widest text-gray-500 mb-4">On This Page</p>
-        <ol class="space-y-2 list-none p-0 m-0">
-          <li><a href="#overview" class="text-[#0F62FE] no-underline font-medium">1. Overview and Who It's For</a></li>
-          <li><a href="#specs" class="text-[#0F62FE] no-underline font-medium">2. Full Spec Sheet</a></li>
-          <li><a href="#assembly" class="text-[#0F62FE] no-underline font-medium">3. Assembly and Setup</a></li>
-          <li><a href="#performance" class="text-[#0F62FE] no-underline font-medium">4. Performance Deep Dive</a></li>
-          <li><a href="#durability" class="text-[#0F62FE] no-underline font-medium">5. Long-Term Durability Notes</a></li>
-          <li><a href="#pros-cons" class="text-[#0F62FE] no-underline font-medium">6. Pros and Cons</a></li>
-          <li><a href="#comparison" class="text-[#0F62FE] no-underline font-medium">7. How It Compares</a></li>
-          <li><a href="#who-should-skip" class="text-[#0F62FE] no-underline font-medium">8. Who Should Skip This Treadmill</a></li>
-          <li><a href="#verdict" class="text-[#0F62FE] no-underline font-medium">9. Final Verdict</a></li>
-          <li><a href="#faq" class="text-[#0F62FE] no-underline font-medium">10. Frequently Asked Questions</a></li>
-        </ol>
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <a href="#overview" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Overview and Who It's For</a>
+            <a href="#specs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Full Spec Sheet</a>
+            <a href="#assembly" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Assembly and Setup</a>
+            <a href="#performance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Performance Deep Dive</a>
+            <a href="#durability" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Long-Term Durability Notes</a>
+            <a href="#pros-cons" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Pros and Cons</a>
+            <a href="#comparison" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. How It Compares</a>
+            <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Who Should Skip This Treadmill</a>
+            <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Final Verdict</a>
+            <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        </nav>
       </div>
+    </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-        <p class="italic text-xl border-l-4 border-[#FF5A1F] bg-gray-50 pl-6 pr-4 py-4 rounded-r-xl not-prose text-gray-700 leading-relaxed">
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
           Every shopper who lands on the ProForm Pro 2000 eventually asks the
           same question: what's actually different between this and the
           NordicTrack Commercial 1750, given how similar the spec sheets
@@ -298,7 +305,8 @@ const schema = {
           lower price tag.
         </p>
 
-        <h2 id="overview" class="scroll-mt-24">Overview and Who It's For</h2>
+        <div id="overview" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Overview and Who It's For</h2>
         <p>
           ProForm and NordicTrack are sister brands under the same parent
           company, iFit Health & Fitness, and the Pro 2000 is the clearest
@@ -328,7 +336,7 @@ const schema = {
           built more like a semi-permanent home gym fixture than a
           fold-away apartment machine. If ultra-compact storage between uses
           is the priority, this isn't the right category of treadmill — see
-          our <a href="/best-folding-treadmill-reviews">folding treadmill guide</a>
+          our <a href="/best-folding-treadmill-reviews/">folding treadmill guide</a>
           for machines specifically engineered around that use case instead.
         </p>
         <p>
@@ -361,13 +369,16 @@ const schema = {
             </div>
           </div>
         </div>
+        </div>
 
-        <h2 id="specs" class="scroll-mt-24">Full Spec Sheet</h2>
+        <div id="specs" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Full Spec Sheet</h2>
         <p>
           Here's every spec we verified directly against our test unit,
           alongside where it sits relative to the NordicTrack Commercial
           1750 it's most often shopped against.
         </p>
+        </div>
       </div>
 
       <div class="not-prose overflow-x-auto my-8 rounded-xl border border-gray-200">
@@ -383,8 +394,9 @@ const schema = {
         </table>
       </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-        <h2 id="assembly" class="scroll-mt-24">Assembly and Setup</h2>
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="assembly" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Assembly and Setup</h2>
         <p>
           Assembly took our team roughly 70 minutes working alone, and
           closer to 40 minutes with a second person helping lift the
@@ -412,8 +424,10 @@ const schema = {
           a five-minute habit that catches rare shipping-damage issues
           early, and it's worth doing on any treadmill, not just this one.
         </p>
+        </div>
 
-        <h2 id="performance" class="scroll-mt-24">Performance Deep Dive</h2>
+        <div id="performance" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Performance Deep Dive</h2>
         <h3>Motor and Deck</h3>
         <p>
           The 3.6 CHP motor handled our full testing range without feeling
@@ -501,8 +515,10 @@ const schema = {
           and it's a cheap upgrade we'd recommend regardless of which
           treadmill you end up buying.
         </p>
+        </div>
 
-        <h2 id="durability" class="scroll-mt-24">Long-Term Durability Notes</h2>
+        <div id="durability" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Long-Term Durability Notes</h2>
         <p>
           Three weeks of hands-on testing can't fully answer a multi-year
           durability question, so we cross-referenced our impressions
@@ -528,8 +544,11 @@ const schema = {
           most common root cause behind the motor strain complaints we've
           seen reported for machines in this class, ProForm included.
         </p>
+        </div>
 
-        <h2 id="pros-cons" class="scroll-mt-24">Pros and Cons</h2>
+        <div id="pros-cons" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Pros and Cons</h2>
+        </div>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8 not-prose">
@@ -572,13 +591,15 @@ const schema = {
         </div>
       </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-        <h2 id="comparison" class="scroll-mt-24">How It Compares</h2>
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="comparison" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. How It Compares</h2>
         <p>
           The Pro 2000 doesn't exist in a vacuum — here's how it stacks up
           against the NordicTrack machine it's most often cross-shopped
           against, and the ProForm model directly below it.
         </p>
+        </div>
       </div>
 
       <div class="not-prose overflow-x-auto my-8 rounded-xl border border-gray-200">
@@ -606,15 +627,15 @@ const schema = {
         </table>
       </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <p>
-          Against the <a href="/nordictrack-commercial-1750-treadmill">NordicTrack Commercial 1750</a>,
+          Against the <a href="/nordictrack-commercial-1750-treadmill/">NordicTrack Commercial 1750</a>,
           the honest summary is this: you're giving up a slightly stronger
           motor and a frame built to a marginally higher duty standard, and
           in exchange you're saving roughly $200 while keeping the same deck
           size, incline range, and touchscreen ecosystem. For moderate home
           use, that's a genuinely good trade. Against the
-          <a href="/proform-power-1295i-treadmill">ProForm Smart Power 1295i</a>,
+          <a href="/proform-power-1295i-treadmill/">ProForm Smart Power 1295i</a>,
           the Pro 2000 is the better choice for taller runners and anyone
           training seriously, thanks to its larger deck and stronger motor —
           but the 1295i is worth a look if you want to save another few
@@ -628,7 +649,7 @@ const schema = {
           regularly, but if your household mostly walks, the 995i covers
           the basics at a meaningfully lower price. We break down that
           entire relationship in our
-          <a href="/proform-treadmill">ProForm brand guide</a>.
+          <a href="/proform-treadmill/">ProForm brand guide</a>.
         </p>
 
         <div class="not-prose bg-amber-50 border border-amber-200 rounded-2xl p-6 my-8">
@@ -663,7 +684,8 @@ const schema = {
           than it does on a spec comparison chart.
         </p>
 
-        <h2 id="who-should-skip" class="scroll-mt-24">Who Should Skip This Treadmill</h2>
+        <div id="who-should-skip" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Who Should Skip This Treadmill</h2>
         <p>
           The Pro 2000 is a strong value, but it isn't the right machine
           for every shopper who lands on this page. If you run daily and
@@ -675,16 +697,18 @@ const schema = {
           to genuinely disappear between uses, its large folded footprint
           will frustrate you more than it helps; a dedicated compact
           folding treadmill from our
-          <a href="/best-folding-treadmill-reviews">folding treadmill guide</a>
+          <a href="/best-folding-treadmill-reviews/">folding treadmill guide</a>
           will serve you better. And if you know for certain you'll never
           pay for an iFit subscription, you're paying for touchscreen
           hardware you'll rarely use at full value — a simpler
           console-based machine, or ProForm's own Power 995i, may be the
           smarter buy from our
-          <a href="/best-treadmill-under-1000-reviews">budget treadmill guide</a>.
+          <a href="/best-treadmill-under-1000-reviews/">budget treadmill guide</a>.
         </p>
+        </div>
 
-        <h2 id="verdict" class="scroll-mt-24">Final Verdict</h2>
+        <div id="verdict" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Final Verdict</h2>
         <p>
           The ProForm Pro 2000 is one of the more honest value propositions
           we've tested in the mid-range treadmill category. It doesn't
@@ -705,15 +729,16 @@ const schema = {
           and want the extra durability margin that comes with NordicTrack's
           slightly heavier-duty build.
         </p>
+        </div>
       </div>
 
       <!-- FAQ -->
-      <div id="faq" class="scroll-mt-24 my-12">
-        <h2 class="text-2xl font-black text-gray-900 mb-6">Frequently Asked Questions</h2>
-        <div class="space-y-4">
-          <div class="bg-gray-50 rounded-2xl p-6">
+      <div id="faq" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Is the ProForm Pro 2000 basically the same treadmill as the NordicTrack Commercial 1750?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               They're closely related but not identical. Both share a
               parent company, iFit Health & Fitness, and both run on the
               same 22 x 60-inch deck, -3% to 12% incline range, and iFit
@@ -724,9 +749,9 @@ const schema = {
               sell it for roughly $200 less.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Does the ProForm Pro 2000 come with iFit included?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               Yes, it ships with a one-year iFit membership, the same
               arrangement NordicTrack uses on its Commercial line. Most of
               the touchscreen's standout features — auto-adjusting incline
@@ -735,9 +760,9 @@ const schema = {
               for the subscription cost once the included year runs out.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">How does the Pro 2000 compare to the ProForm Smart Power 1295i?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               The Pro 2000 is the better machine for taller runners and
               anyone training seriously, thanks to its larger 22 x 60-inch
               deck versus the 1295i's 20 x 60-inch deck and a slightly
@@ -747,9 +772,9 @@ const schema = {
               and stride.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Is the ProForm Pro 2000's deck big enough for running, not just walking?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               Yes. The 22 x 60-inch deck matches the NordicTrack Commercial
               1750's footprint and comfortably fit our taller testers
               during full-stride running. This is one of the areas where
@@ -757,9 +782,9 @@ const schema = {
               expensive NordicTrack sibling.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Is the ProForm Pro 2000 as durable as the NordicTrack Commercial 1750?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               Not quite, and ProForm doesn't really claim otherwise. The
               two machines share a parent company and a lot of the same
               software and design language, but ProForm's hardware sits a
@@ -771,9 +796,9 @@ const schema = {
               long-term bet.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">How long does assembly take on the ProForm Pro 2000?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               Around 70 minutes working alone, or closer to 40 minutes with
               a second person helping lift the upright console mast into
               place, which the manual recommends. The layout and hardware
@@ -785,22 +810,45 @@ const schema = {
         </div>
       </div>
 
+      <!-- Common Mistakes -->
+      <div class="mt-16">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buyers Make</h2>
+        <p class="text-gray-700 leading-relaxed">The Pro 2000 is frequently cross-shopped against the Commercial 1750, and most mistakes come from that comparison.</p>
+        <div class="space-y-6 my-8">
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Expecting Commercial 1750 durability at the lower price</h3>
+            <p class="text-gray-700 text-sm m-0">The Pro 2000's 3.5 CHP motor and lighter frame are a genuine step below the 1750. It is the better value for moderate use; it is not the same machine with a smaller badge.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing deck sizes carelessly</h3>
+            <p class="text-gray-700 text-sm m-0">ProForm sells 20-inch and 22-inch wide decks across nearby models. Confirm which width the listing you are looking at actually ships with rather than assuming the wider one.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating the first-year iFit as permanent</h3>
+            <p class="text-gray-700 text-sm m-0">iFit is included for a year and renews after. As with every machine in this family, decide whether you want the hardware or the subscription before the renewal arrives.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Skipping the break-in period</h3>
+            <p class="text-gray-700 text-sm m-0">The first 20 miles seat the belt and deck. Owners who start with speed work in week one are disproportionately represented in reports of belt slip and uneven tracking.</p>
+          </div>
+        </div>
+      </div>
       <!-- Related Guides -->
-      <div class="my-12">
-        <h2 class="text-2xl font-black text-gray-900 mb-6">More ProForm &amp; Budget-Friendly Treadmill Reviews</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <a href="/proform-power-1295i-treadmill" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+      <div class="mt-16">
+        <h2 class="text-2xl font-black text-gray-900 mb-6">Related ProForm &amp; Budget-Friendly Treadmill Guides</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <a href="/proform-power-1295i-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
             <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">One Step Down</span>
             <p class="font-bold text-gray-900 mt-2 mb-1">ProForm Smart Power 1295i Review</p>
             <p class="text-sm text-gray-500 leading-relaxed">A smaller deck and screen for hundreds less.</p>
           </a>
-          <a href="/proform-treadmill" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand Guide</span>
+          <a href="/proform-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+            <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand Guide</span>
             <p class="font-bold text-gray-900 mt-2 mb-1">ProForm Treadmill Lineup Explained</p>
             <p class="text-sm text-gray-500 leading-relaxed">Every current ProForm model, sorted by who it's actually for.</p>
           </a>
-          <a href="/best-treadmill-under-1000-reviews" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Category</span>
+          <a href="/best-treadmill-under-1000-reviews/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+            <span class="text-xs font-black uppercase tracking-widest text-green-600">Category</span>
             <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills Under $1,000</p>
             <p class="text-sm text-gray-500 leading-relaxed">Budget picks that don't feel cheap.</p>
           </a>
@@ -808,8 +856,8 @@ const schema = {
       </div>
 
       <!-- Closing CTA -->
-      <div class="bg-gray-900 text-white rounded-2xl p-8 mb-16">
-        <h2 class="text-2xl font-black mb-4">The Bottom Line</h2>
+      <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+        <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
         <p class="text-gray-300 leading-relaxed mb-4">
           The <strong class="text-white">ProForm Pro 2000</strong> is the
           rare budget alternative that actually earns the comparison to its
@@ -820,8 +868,8 @@ const schema = {
         </p>
         <p class="text-gray-300 leading-relaxed">
           Comparing your options first? See our full
-          <a href="/proform-treadmill" class="text-[#5AA9FF] font-bold no-underline">ProForm brand guide</a>
-          or the <a href="/best-treadmill-for-home-reviews" class="text-[#5AA9FF] font-bold no-underline">best treadmills for home roundup</a>
+          <a href="/proform-treadmill/" class="text-[#5AA9FF] font-bold no-underline">ProForm brand guide</a>
+          or the <a href="/best-treadmill-for-home-reviews/" class="text-[#5AA9FF] font-bold no-underline">best treadmills for home roundup</a>
           for how every model we've tested stacks up.
         </p>
       </div>

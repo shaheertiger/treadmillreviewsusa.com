@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "astro dev",
     "validate:words": "node scripts/validate-word-count.js",
-    "build": "node scripts/validate-word-count.js && astro build",
+    "validate:links": "node scripts/validate-links.mjs",
+    "validate:format": "node scripts/format-audit.mjs",
+    "build": "npm run validate:words && npm run validate:links && npm run validate:format && astro build",
     "preview": "astro preview"
   },
   "dependencies": {

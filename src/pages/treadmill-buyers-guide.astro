@@ -128,7 +128,7 @@ const schema = {
 >
   <article class="relative overflow-hidden">
     <!-- Hero Section -->
-    <div class="relative bg-gray-900 overflow-hidden">
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
       <svg
         class="absolute inset-0 w-full h-full opacity-10"
         xmlns="http://www.w3.org/2000/svg"
@@ -147,7 +147,7 @@ const schema = {
         ></rect>
       </svg>
       <div
-        class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 text-center"
+        class="max-w-4xl mx-auto px-4 relative z-10 text-center"
       >
         <div class="flex justify-center mb-6">
           <TrustBadge />
@@ -164,12 +164,12 @@ const schema = {
             Updated June 2026
           </span>
         </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight">
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
           The Treadmill <span class="text-[#5AA9FF]">Buyer's Guide</span>: A Step-by-Step
           Purchase Checklist
         </h1>
         <p
-          class="mt-6 text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed"
+          class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed"
         >
           Not a spec glossary — a process. Follow these eight steps in order,
           from budget to delivery to the first 30 days of ownership, and
@@ -193,8 +193,8 @@ const schema = {
       </div>
     </div>
 
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-      <!-- Author & Meta row -->
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
       <div
         class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100"
       >
@@ -217,71 +217,32 @@ const schema = {
           <SocialProof users="7.1k" />
         </div>
       </div>
+    </div>
 
-      <!-- Table of Contents -->
-      <div class="my-10 bg-gray-50 rounded-2xl p-6 border border-gray-100">
-        <p
-          class="text-xs font-black uppercase tracking-widest text-gray-500 mb-4"
-        >
-          On This Page
-        </p>
-        <ol class="space-y-2 list-none p-0 m-0">
-          <li>
-            <a href="#step-1" class="text-[#0F62FE] no-underline font-medium"
-              >Step 1: Set Your Budget Range First</a
-            >
-          </li>
-          <li>
-            <a href="#step-2" class="text-[#0F62FE] no-underline font-medium"
-              >Step 2: Measure Your Space</a
-            >
-          </li>
-          <li>
-            <a href="#step-3" class="text-[#0F62FE] no-underline font-medium"
-              >Step 3: Decide Folding vs. Fixed-Frame</a
-            >
-          </li>
-          <li>
-            <a href="#step-4" class="text-[#0F62FE] no-underline font-medium"
-              >Step 4: The Test-Drive Checklist</a
-            >
-          </li>
-          <li>
-            <a href="#step-5" class="text-[#0F62FE] no-underline font-medium"
-              >Step 5: Read Spec Sheets Critically</a
-            >
-          </li>
-          <li>
-            <a href="#step-6" class="text-[#0F62FE] no-underline font-medium"
-              >Step 6: Plan Delivery and Assembly</a
-            >
-          </li>
-          <li>
-            <a href="#step-7" class="text-[#0F62FE] no-underline font-medium"
-              >Step 7: The First 30 Days</a
-            >
-          </li>
-          <li>
-            <a href="#step-8" class="text-[#0F62FE] no-underline font-medium"
-              >Step 8: Long-Term Ownership</a
-            >
-          </li>
-          <li>
-            <a
-              href="#checklist-box"
-              class="text-[#0F62FE] no-underline font-medium"
-              >Pre-Purchase Checklist</a
-            >
-          </li>
-          <li>
-            <a href="#faq" class="text-[#0F62FE] no-underline font-medium"
-              >Frequently Asked Questions</a
-            >
-          </li>
-        </ol>
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <a href="#step-1" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">Step 1: Set Your Budget Range First</a>
+            <a href="#step-2" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">Step 2: Measure Your Space</a>
+            <a href="#step-3" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">Step 3: Decide Folding vs. Fixed-Frame</a>
+            <a href="#step-4" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">Step 4: The Test-Drive Checklist</a>
+            <a href="#step-5" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">Step 5: Read Spec Sheets Critically</a>
+            <a href="#step-6" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">Step 6: Plan Delivery and Assembly</a>
+            <a href="#step-7" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">Step 7: The First 30 Days</a>
+            <a href="#step-8" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">Step 8: Long-Term Ownership</a>
+            <a href="#checklist-box" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">Pre-Purchase Checklist</a>
+            <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">Frequently Asked Questions</a>
+        </nav>
       </div>
+    </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <!-- Lede -->
         <p
           class="italic text-xl border-l-4 border-[#FF5A1F] bg-gray-50 pl-6 pr-4 py-4 rounded-r-xl not-prose text-gray-700 leading-relaxed"
@@ -299,16 +260,15 @@ const schema = {
           road. If you want the deeper reference breakdown of motor power,
           continuous horsepower ratings, and deck cushioning instead, our
           companion piece, the
-          <a href="/treadmill-buying-guide-2026"
+          <a href="/treadmill-buying-guide-2026/"
             >Complete Home Treadmill Buying Guide</a
           >, covers that ground in detail. This page is the checklist you
           work through alongside it.
         </p>
 
         <!-- STEP 1 -->
-        <h2 id="step-1" class="scroll-mt-24">
-          Step 1: Set Your Budget Range First
-        </h2>
+        <div id="step-1" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Step 1: Set Your Budget Range First</h2>
         <p>
           Before you look at a single model name, decide what you're willing
           to spend — as a range, not a single number. This sounds obvious,
@@ -330,16 +290,16 @@ const schema = {
         </p>
         <p>
           If your ceiling is under $1,500, our
-          <a href="/treadmills-under-1500">treadmills under $1,500 guide</a>
+          <a href="/treadmills-under-1500/">treadmills under $1,500 guide</a>
           covers the sweet spot where most households land — enough budget for
           a genuinely sturdy frame without paying for commercial-grade
           overkill. If you're working with an even tighter number, our
-          <a href="/best-treadmill-under-1000-reviews"
+          <a href="/best-treadmill-under-1000-reviews/"
             >treadmills under $1,000 guide</a
           > narrows further to the best value picks below four figures. And if
           you've decided this is a long-term investment and you're comfortable
           spending more to get commercial-grade durability, our
-          <a href="/treadmills-over-2500">treadmills over $2,500 guide</a> covers
+          <a href="/treadmills-over-2500/">treadmills over $2,500 guide</a> covers
           the higher end, where frame rigidity, motor headroom, and console quality
           all step up noticeably.
         </p>
@@ -357,7 +317,10 @@ const schema = {
         </p>
 
         <!-- STEP 2 -->
-        <h2 id="step-2" class="scroll-mt-24">Step 2: Measure Your Space</h2>
+        </div>
+
+        <div id="step-2" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Step 2: Measure Your Space</h2>
         <p>
           With a budget range set, the next step isn't browsing models — it's
           grabbing a tape measure. This step gets skipped constantly because
@@ -453,9 +416,10 @@ const schema = {
         </div>
 
         <!-- STEP 3 -->
-        <h2 id="step-3" class="scroll-mt-24">
-          Step 3: Decide Folding vs. Fixed-Frame
-        </h2>
+        </div>
+
+        <div id="step-3" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Step 3: Decide Folding vs. Fixed-Frame</h2>
         <p>
           With your budget range and your space measurements both in hand,
           you now have enough information to make this call decisively rather
@@ -467,7 +431,7 @@ const schema = {
           dollar and one less mechanical part that can eventually loosen or
           wear. Our full breakdown of commercial-grade, fixed-frame options
           lives in the
-          <a href="/commercial-treadmills">commercial treadmills guide</a>, worth
+          <a href="/commercial-treadmills/">commercial treadmills guide</a>, worth
           a look if durability and a permanent setup are your priority.
         </p>
         <p>
@@ -482,7 +446,7 @@ const schema = {
           folding the machine multiple times a week rather than leaving it
           up semi-permanently. We test and rank fold mechanisms specifically
           in our
-          <a href="/best-folding-treadmill-reviews"
+          <a href="/best-folding-treadmill-reviews/"
             >folding treadmill guide</a
           >.
         </p>
@@ -498,9 +462,10 @@ const schema = {
         </p>
 
         <!-- STEP 4 -->
-        <h2 id="step-4" class="scroll-mt-24">
-          Step 4: The Test-Drive Checklist
-        </h2>
+        </div>
+
+        <div id="step-4" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Step 4: The Test-Drive Checklist</h2>
         <p>
           If there's a showroom, sporting goods retailer, or big-box store
           within a reasonable drive that stocks treadmills, use it — not
@@ -560,9 +525,10 @@ const schema = {
         </p>
 
         <!-- STEP 5 -->
-        <h2 id="step-5" class="scroll-mt-24">
-          Step 5: Read Spec Sheets Critically
-        </h2>
+        </div>
+
+        <div id="step-5" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Step 5: Read Spec Sheets Critically</h2>
         <p>
           Once you've narrowed to a shortlist, this is where a careful read
           of the actual spec sheet — not just the marketing headline — saves
@@ -611,9 +577,10 @@ const schema = {
         </p>
 
         <!-- STEP 6 -->
-        <h2 id="step-6" class="scroll-mt-24">
-          Step 6: Plan Delivery and Assembly
-        </h2>
+        </div>
+
+        <div id="step-6" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Step 6: Plan Delivery and Assembly</h2>
         <p>
           Buying the treadmill isn't the last decision — getting it into your
           home and put together is its own small project, and planning for
@@ -654,7 +621,10 @@ const schema = {
         </p>
 
         <!-- STEP 7 -->
-        <h2 id="step-7" class="scroll-mt-24">Step 7: The First 30 Days</h2>
+        </div>
+
+        <div id="step-7" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Step 7: The First 30 Days</h2>
         <p>
           A treadmill doesn't arrive in its final, settled state — the first
           month of ownership includes a normal break-in period, and knowing
@@ -699,7 +669,10 @@ const schema = {
         </p>
 
         <!-- STEP 8 -->
-        <h2 id="step-8" class="scroll-mt-24">Step 8: Long-Term Ownership</h2>
+        </div>
+
+        <div id="step-8" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Step 8: Long-Term Ownership</h2>
         <p>
           Once you're past the first month, ownership shifts from break-in
           to routine maintenance, and a treadmill that gets a small amount of
@@ -745,15 +718,17 @@ const schema = {
         </p>
 
         <!-- Pre-Purchase Checklist -->
-        <h2 id="checklist-box" class="scroll-mt-24">
-          Pre-Purchase Checklist
-        </h2>
+        </div>
+
+        <div id="checklist-box" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Pre-Purchase Checklist</h2>
         <p>
           Here's the entire sequence condensed into one reference list.
           Work through it top to bottom, and don't skip ahead to Step 4 or 5
           before Steps 1 and 2 are settled — the order genuinely matters,
           since each step narrows the field for the one that follows it.
         </p>
+        </div>
       </div>
 
       <div
@@ -784,14 +759,14 @@ const schema = {
           <p class="text-gray-400 text-xs leading-relaxed">
             Want the deep-dive reference version of steps that touch motor
             power and deck size? See our companion piece, the
-            <a href="/treadmill-buying-guide-2026" class="text-[#5AA9FF] font-bold no-underline"
+            <a href="/treadmill-buying-guide-2026/" class="text-[#5AA9FF] font-bold no-underline"
               >Complete Home Treadmill Buying Guide</a
             >, for the full breakdown.
           </p>
         </div>
       </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <p>
           If you only take one thing from this checklist, take the order.
           Budget and space come first because they eliminate entire
@@ -806,16 +781,14 @@ const schema = {
       </div>
 
       <!-- FAQ -->
-      <div id="faq" class="scroll-mt-24 my-12">
-        <h2 class="text-2xl font-black text-gray-900 mb-6">
-          Frequently Asked Questions
-        </h2>
-        <div class="space-y-4">
-          <div class="bg-gray-50 rounded-2xl p-6">
+      <div id="faq" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">
               Should I buy from a showroom or order online?
             </h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               Ordering online is fine and usually cheaper, but if a showroom
               is within reasonable driving distance, use it as a research
               stop rather than a purchase decision. Walk or jog on two or
@@ -825,12 +798,12 @@ const schema = {
               means ordering it online afterward.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">
               How do I know if a treadmill will actually fit through my
               doorway?
             </h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               Check the manufacturer's listed crated dimensions, not the
               assembled footprint, since the box is what has to travel
               through your doorways and hallways during delivery. Most
@@ -841,12 +814,12 @@ const schema = {
               the path, not just the destination room.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">
               What does "starting at" pricing actually mean on a treadmill
               listing?
             </h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               It almost always means the price shown is for the base
               configuration without the console, incline range, or
               accessories shown in the product photos. Treadmill retailers
@@ -857,12 +830,12 @@ const schema = {
               headline number as real.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">
               Is it normal for a new treadmill belt to need adjustment in the
               first month?
             </h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               Yes. Belts stretch slightly during their first several weeks of
               use as the material seats into its running position, and a
               belt that felt properly tensioned on delivery day often needs
@@ -872,12 +845,12 @@ const schema = {
               six-week marks specifically.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">
               How long is a typical treadmill return window, and does
               assembly void it?
             </h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               Return windows commonly range from <strong
                 >30 to 90 days</strong
               > depending on the retailer, and most explicitly allow assembly
@@ -888,12 +861,12 @@ const schema = {
               until you're past the return window and confident in the machine.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">
               Do I need to register my treadmill's warranty separately, or is
               my receipt enough?
             </h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               Keep your receipt, but also register the unit directly with
               the manufacturer, since most brands require an active
               registration on file to process a warranty claim quickly
@@ -907,14 +880,35 @@ const schema = {
         </div>
       </div>
 
+      <!-- Common Mistakes -->
+      <div class="mt-16">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buyers Make</h2>
+        <p class="text-gray-700 leading-relaxed">This checklist exists because the same four steps get skipped, and each one accounts for a category of avoidable returns.</p>
+        <div class="space-y-6 my-8">
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Starting with models instead of measurements</h3>
+            <p class="text-gray-700 text-sm m-0">Room dimensions, ceiling height, and doorway width narrow the field faster than any review. Do them first and the shortlist writes itself.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Skipping the total-cost step</h3>
+            <p class="text-gray-700 text-sm m-0">Subscription, delivery, assembly, a mat, and a dedicated circuit all belong in the budget. A machine that fits the sticker price can still miss the real one.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not reading the warranty before buying</h3>
+            <p class="text-gray-700 text-sm m-0">Motor, deck, parts, and labour are usually covered for different lengths. The differences are large and they are the best available durability signal.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating delivery as the end of the process</h3>
+            <p class="text-gray-700 text-sm m-0">Break-in, levelling, and the first lubrication all happen in the first month. Owners who skip them see problems that look like defects and are not.</p>
+          </div>
+        </div>
+      </div>
       <!-- Related Guides -->
-      <div class="my-12">
-        <h2 class="text-2xl font-black text-gray-900 mb-6">
-          More Treadmill Guides
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="mt-16">
+        <h2 class="text-2xl font-black text-gray-900 mb-6">Related Treadmill Guides</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <a
-            href="/treadmill-buying-guide-2026"
+            href="/treadmill-buying-guide-2026/"
             class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow"
           >
             <span
@@ -930,11 +924,11 @@ const schema = {
             </p>
           </a>
           <a
-            href="/best-folding-treadmill-reviews"
+            href="/best-folding-treadmill-reviews/"
             class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow"
           >
             <span
-              class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]"
+              class="text-xs font-black uppercase tracking-widest text-[#0F62FE]"
               >Folding Treadmills</span
             >
             <p class="font-bold text-gray-900 mt-2 mb-1">
@@ -946,11 +940,11 @@ const schema = {
             </p>
           </a>
           <a
-            href="/best-treadmill-under-1000-reviews"
+            href="/best-treadmill-under-1000-reviews/"
             class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow"
           >
             <span
-              class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]"
+              class="text-xs font-black uppercase tracking-widest text-green-600"
               >Budget Picks</span
             >
             <p class="font-bold text-gray-900 mt-2 mb-1">
@@ -965,8 +959,8 @@ const schema = {
       </div>
 
       <!-- Closing CTA -->
-      <div class="bg-gray-900 text-white rounded-2xl p-8 mb-16">
-        <h2 class="text-2xl font-black mb-4">The Bottom Line</h2>
+      <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+        <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
         <p class="text-gray-300 leading-relaxed mb-4">
           Buying a treadmill goes smoothly when you treat it as a sequence,
           not a single decision. Set your budget, measure your space, decide
@@ -978,19 +972,19 @@ const schema = {
         <p class="text-gray-300 leading-relaxed">
           Ready to shop your budget tier? Head to
           <a
-            href="/treadmills-under-1500"
+            href="/treadmills-under-1500/"
             class="text-[#5AA9FF] font-bold no-underline">Treadmills Under $1,500</a
           >, <a
-            href="/best-treadmill-under-1000-reviews"
+            href="/best-treadmill-under-1000-reviews/"
             class="text-[#5AA9FF] font-bold no-underline"
             >Treadmills Under $1,000</a
           >, or <a
-            href="/treadmills-over-2500"
+            href="/treadmills-over-2500/"
             class="text-[#5AA9FF] font-bold no-underline"
             >Treadmills Over $2,500</a
           >, or go back for the full reference version in our
           <a
-            href="/treadmill-buying-guide-2026"
+            href="/treadmill-buying-guide-2026/"
             class="text-[#5AA9FF] font-bold no-underline"
             >Complete Home Treadmill Buying Guide</a
           >.

@@ -7,8 +7,9 @@ const KEY_LOCATION = `${SITE}/${KEY}.txt`;
 const PAGES_DIR = join(import.meta.dirname, '..', 'src', 'pages');
 
 function pathFromFile(file) {
+  // URLs are canonically slash-terminated (trailingSlash: 'always').
   const name = file.replace(/\.astro$/, '');
-  return name === 'index' ? '/' : `/${name}`;
+  return name === 'index' ? '/' : `/${name}/`;
 }
 
 const urlList = readdirSync(PAGES_DIR)

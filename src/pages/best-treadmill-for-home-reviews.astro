@@ -313,13 +313,13 @@ const schema = {
 >
   <article class="relative overflow-hidden">
     <!-- Hero Section -->
-    <section class="relative bg-gray-900 py-16 sm:py-20 overflow-hidden">
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
       <div
         class="absolute inset-0 opacity-10"
         style="background-image: radial-gradient(circle, #ffffff 1px, transparent 1px); background-size: 24px 24px;"
       >
       </div>
-      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
         <div class="flex justify-center mb-6">
           <TrustBadge />
         </div>
@@ -333,10 +333,10 @@ const schema = {
             >Updated June 2026</span
           >
         </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-6">
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
           7 Best Treadmills for <span class="text-[#5AA9FF]">Home Use</span> in 2026
         </h1>
-        <p class="text-gray-300 text-lg lg:text-xl max-w-2xl mx-auto leading-relaxed mb-8">
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
           We spent six months running, walking, and stress-testing seven of the most popular home treadmills on the market. Here's what's actually worth your money, and what to skip.
         </p>
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -354,10 +354,10 @@ const schema = {
           </a>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- Author & Meta row -->
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div class="flex items-center gap-3">
           <img
@@ -381,55 +381,32 @@ const schema = {
       </p>
     </div>
 
-    <!-- Table of Contents -->
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 mb-10">
-      <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-        <p class="text-xs font-black uppercase tracking-widest text-gray-500 mb-4">
-          What's in This Guide
-        </p>
-        <ol class="space-y-2 list-none p-0 m-0">
-          <li>
-            <a href="#why-home-treadmill" class="text-[#0F62FE] no-underline font-semibold">
-              1. Why Buy a Treadmill for Home Use?
-            </a>
-          </li>
-          <li>
-            <a href="#what-to-look-for" class="text-[#0F62FE] no-underline font-semibold">
-              2. What to Look for in a Home Treadmill
-            </a>
-          </li>
-          <li>
-            <a href="#top-picks" class="text-[#0F62FE] no-underline font-semibold">
-              3. The 7 Best Treadmills for Home Use in 2026
-            </a>
-          </li>
-          <li>
-            <a href="#how-to-choose" class="text-[#0F62FE] no-underline font-semibold">
-              4. How to Choose the Right Treadmill for YOUR Home
-            </a>
-          </li>
-          <li>
-            <a href="#setup-and-maintenance" class="text-[#0F62FE] no-underline font-semibold">
-              5. Treadmill Setup, Break-In, and Maintenance
-            </a>
-          </li>
-          <li>
-            <a href="#faq" class="text-[#0F62FE] no-underline font-semibold">
-              6. Frequently Asked Questions
-            </a>
-          </li>
-        </ol>
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#why-home-treadmill" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Why Buy a Treadmill for Home Use?</a>
+          <a href="#what-to-look-for" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What to Look for in a Home Treadmill</a>
+          <a href="#top-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The 7 Best Treadmills for Home Use in 2026</a>
+          <a href="#how-to-choose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. How to Choose the Right Treadmill for YOUR Home</a>
+          <a href="#setup-and-maintenance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Treadmill Setup, Break-In, and Maintenance</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Frequently Asked Questions</a>
+        </nav>
       </div>
     </div>
 
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <p class="italic text-xl border-l-4 border-[#FF5A1F] bg-gray-50 p-6 rounded-r-xl not-prose text-gray-700 leading-relaxed">
           Buying a treadmill used to mean choosing between a flimsy budget machine that would rattle apart within a year or a commercial-grade beast that cost as much as a used car. That's changed. The home treadmill market has matured enough that a genuinely good machine is available at almost every price point, but the flood of options, subscriptions, and marketing claims makes picking the right one harder than it should be. We tested seven of the most popular models for six months to cut through the noise and tell you exactly which ones are worth your money.
         </p>
 
         <!-- Why Buy a Home Treadmill -->
-        <h2 id="why-home-treadmill" class="scroll-mt-24">Why Buy a Treadmill for Home Use?</h2>
+        <div id="why-home-treadmill" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Why Buy a Treadmill for Home Use?</h2>
         <p>
           The case for a home treadmill comes down to three things: convenience, consistency, and cost. A gym commute, even a short one, is a decision point every single day, and decision points are exactly where workout routines fall apart. When your treadmill is in the next room, the excuse of "I don't have time to drive to the gym" disappears entirely. Our testers who trained at home consistently logged more weekly sessions than the national average for gym-goers, largely because there was simply less friction between deciding to work out and actually doing it. That gap between intention and action is, in our experience, the single biggest predictor of whether a fitness habit sticks past the first month, and it's the gap a home treadmill closes most effectively.
         </p>
@@ -465,7 +442,10 @@ const schema = {
         </div>
 
         <!-- What to Look For -->
-        <h2 id="what-to-look-for" class="scroll-mt-24">What to Look for in a Home Treadmill</h2>
+        </div>
+
+        <div id="what-to-look-for" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What to Look for in a Home Treadmill</h2>
         <p>
           Not all treadmill specs matter equally, and marketing copy loves to bury the numbers that actually predict how a machine will feel three years into ownership. Here's what we actually weighted during testing.
         </p>
@@ -552,10 +532,14 @@ const schema = {
         </div>
 
         <!-- Top Picks -->
-        <h2 id="top-picks" class="scroll-mt-24">The 7 Best Treadmills for Home Use in 2026</h2>
+        </div>
+
+        <div id="top-picks" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The 7 Best Treadmills for Home Use in 2026</h2>
         <p>
           Our testing process ran over six months and covered seven treadmills spanning budget to premium tiers. We tracked <strong>motor performance</strong> under sustained running and incline loads, <strong>belt durability and alignment</strong> over hundreds of miles, <strong>noise levels</strong> at varying speeds and inclines using a decibel meter, and <strong>incline accuracy</strong>, comparing displayed grade to measured grade. Multiple testers with different heights, weights, and fitness levels put each machine through walking, jogging, running, and interval sessions. The rankings below reflect that hands-on testing, not spec sheets alone.
         </p>
+        </div>
       </div>
     </div>
 
@@ -627,10 +611,11 @@ const schema = {
       ))
     }
 
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+    <div class="max-w-3xl mx-auto px-4">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <!-- How to Choose -->
-        <h2 id="how-to-choose" class="scroll-mt-24 mt-16">How to Choose the Right Treadmill for YOUR Home</h2>
+        <div id="how-to-choose" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. How to Choose the Right Treadmill for YOUR Home</h2>
         <p>
           The "best" treadmill depends entirely on who's using it and how. Here's how we'd narrow the field based on your specific situation.
         </p>
@@ -668,7 +653,10 @@ const schema = {
         </div>
 
         <!-- Setup and Maintenance -->
-        <h2 id="setup-and-maintenance" class="scroll-mt-24">Treadmill Setup, Break-In, and Maintenance</h2>
+        </div>
+
+        <div id="setup-and-maintenance" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Treadmill Setup, Break-In, and Maintenance</h2>
 
         <h3>Where to Place It</h3>
         <p>
@@ -720,57 +708,84 @@ const schema = {
             </li>
           </ul>
         </div>
-
-        <!-- FAQ -->
-        <h2 id="faq" class="scroll-mt-24">Frequently Asked Questions</h2>
+        </div>
       </div>
     </div>
 
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4 mb-16">
-      <div class="bg-gray-50 rounded-2xl p-6">
-        <h3 class="font-black text-gray-900 text-lg mb-2">What horsepower do I need for a home treadmill?</h3>
-        <p class="text-gray-700 leading-relaxed">
-          For walking and light jogging, a <strong>2.5-3.0 CHP</strong> motor is enough. If you plan to run regularly or share the machine with multiple household members, look for at least <strong>3.5 CHP</strong>, and serious runners should target <strong>3.75 CHP or higher</strong> for reliable long-term performance. Remember to check the continuous duty rating specifically, not the peak horsepower figure printed in bold on the box, since peak numbers can overstate what a motor can actually sustain during a real workout.
-        </p>
-      </div>
-      <div class="bg-gray-50 rounded-2xl p-6">
-        <h3 class="font-black text-gray-900 text-lg mb-2">Is an iFit or JRNY subscription worth the extra cost?</h3>
-        <p class="text-gray-700 leading-relaxed">
-          If you're motivated by trainer-led workouts, scenic routes, and automatically adjusted incline and speed, subscriptions like iFit or JRNY genuinely improve the experience and are worth it for most people. If you prefer to set your own pace manually, you can skip them and still use a treadmill's core functions, though double-check what happens to the console and touchscreen features if you eventually let the subscription lapse.
-        </p>
-      </div>
-      <div class="bg-gray-50 rounded-2xl p-6">
-        <h4 class="font-black text-gray-900 text-lg mb-2">How much weight capacity should I look for in a treadmill?</h4>
-        <p class="text-gray-700 leading-relaxed">
-          Choose a treadmill rated for at least <strong>50 pounds more</strong> than the heaviest user's body weight. Most home machines fall between 300 and 375 pounds, though some models like the <strong>Sole F80</strong> push closer to 375 pounds for extra headroom and durability. A higher-rated capacity is also a decent shortcut for judging overall frame and motor quality, even if you'll never approach the stated limit yourself.
-        </p>
-      </div>
-      <div class="bg-gray-50 rounded-2xl p-6">
-        <h4 class="font-black text-gray-900 text-lg mb-2">Where should I place a treadmill in my house?</h4>
-        <p class="text-gray-700 leading-relaxed">
-          Choose a flat, hard-flooring area with at least <strong>two feet of clearance</strong> behind and to the sides of the machine, and roughly <strong>eight feet of ceiling height</strong> if you plan to use the incline feature. A dedicated treadmill mat helps protect flooring and reduce vibration and noise. Basements and spare rooms tend to work best, both for sound isolation and because a treadmill's weight and vibration are easier to manage on a ground-level, well-supported floor.
-        </p>
-      </div>
-      <div class="bg-gray-50 rounded-2xl p-6">
-        <h4 class="font-black text-gray-900 text-lg mb-2">How long do home treadmills typically last?</h4>
-        <p class="text-gray-700 leading-relaxed">
-          With regular maintenance, most home treadmills last <strong>7 to 10 years</strong>. Budget models with lighter-duty motors tend toward the shorter end, while treadmills with 3.5 CHP or higher motors and heavier frames, like the Sole F80 or NordicTrack Commercial 1750, often last longer with proper belt lubrication and cleaning. Consistent upkeep, especially belt lubrication and keeping the motor compartment free of dust, is usually a bigger factor in lifespan than the specific brand you choose.
-        </p>
-      </div>
-      <div class="bg-gray-50 rounded-2xl p-6">
-        <h4 class="font-black text-gray-900 text-lg mb-2">Do I need a treadmill mat?</h4>
-        <p class="text-gray-700 leading-relaxed">
-          Yes, in most cases. A treadmill mat protects flooring from vibration and debris, reduces noise transfer to rooms below, and helps keep the machine level and stable. It's a low-cost addition that's worth adding regardless of which treadmill you buy, and it also makes cleanup easier by catching dust and sweat that would otherwise land directly on carpet or hardwood.
-        </p>
+    <div class="max-w-3xl mx-auto px-4 pb-16">
+      <div id="faq" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+            <h3 class="font-black text-gray-900 text-lg mb-2">What horsepower do I need for a home treadmill?</h3>
+            <p class="text-gray-700 text-sm leading-relaxed">
+              For walking and light jogging, a <strong>2.5-3.0 CHP</strong> motor is enough. If you plan to run regularly or share the machine with multiple household members, look for at least <strong>3.5 CHP</strong>, and serious runners should target <strong>3.75 CHP or higher</strong> for reliable long-term performance. Remember to check the continuous duty rating specifically, not the peak horsepower figure printed in bold on the box, since peak numbers can overstate what a motor can actually sustain during a real workout.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+            <h3 class="font-black text-gray-900 text-lg mb-2">Is an iFit or JRNY subscription worth the extra cost?</h3>
+            <p class="text-gray-700 text-sm leading-relaxed">
+              If you're motivated by trainer-led workouts, scenic routes, and automatically adjusted incline and speed, subscriptions like iFit or JRNY genuinely improve the experience and are worth it for most people. If you prefer to set your own pace manually, you can skip them and still use a treadmill's core functions, though double-check what happens to the console and touchscreen features if you eventually let the subscription lapse.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+            <h4 class="font-black text-gray-900 text-lg mb-2">How much weight capacity should I look for in a treadmill?</h4>
+            <p class="text-gray-700 leading-relaxed">
+              Choose a treadmill rated for at least <strong>50 pounds more</strong> than the heaviest user's body weight. Most home machines fall between 300 and 375 pounds, though some models like the <strong>Sole F80</strong> push closer to 375 pounds for extra headroom and durability. A higher-rated capacity is also a decent shortcut for judging overall frame and motor quality, even if you'll never approach the stated limit yourself.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+            <h4 class="font-black text-gray-900 text-lg mb-2">Where should I place a treadmill in my house?</h4>
+            <p class="text-gray-700 leading-relaxed">
+              Choose a flat, hard-flooring area with at least <strong>two feet of clearance</strong> behind and to the sides of the machine, and roughly <strong>eight feet of ceiling height</strong> if you plan to use the incline feature. A dedicated treadmill mat helps protect flooring and reduce vibration and noise. Basements and spare rooms tend to work best, both for sound isolation and because a treadmill's weight and vibration are easier to manage on a ground-level, well-supported floor.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+            <h4 class="font-black text-gray-900 text-lg mb-2">How long do home treadmills typically last?</h4>
+            <p class="text-gray-700 leading-relaxed">
+              With regular maintenance, most home treadmills last <strong>7 to 10 years</strong>. Budget models with lighter-duty motors tend toward the shorter end, while treadmills with 3.5 CHP or higher motors and heavier frames, like the Sole F80 or NordicTrack Commercial 1750, often last longer with proper belt lubrication and cleaning. Consistent upkeep, especially belt lubrication and keeping the motor compartment free of dust, is usually a bigger factor in lifespan than the specific brand you choose.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+            <h4 class="font-black text-gray-900 text-lg mb-2">Do I need a treadmill mat?</h4>
+            <p class="text-gray-700 leading-relaxed">
+              Yes, in most cases. A treadmill mat protects flooring from vibration and debris, reduces noise transfer to rooms below, and helps keep the machine level and stable. It's a low-cost addition that's worth adding regardless of which treadmill you buy, and it also makes cleanup easier by catching dust and sweat that would otherwise land directly on carpet or hardwood.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- Related Guides -->
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
-      <h2 class="text-2xl font-black text-gray-900 mb-6">Related Guides</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="max-w-3xl mx-auto px-4">
+      <!-- Common Mistakes -->
+      <div class="mt-16">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buyers Make</h2>
+        <p class="text-gray-700 leading-relaxed">Six months of testing surfaced the same four buying errors again and again, and none of them are about the machines themselves.</p>
+        <div class="space-y-6 my-8">
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Choosing on spec sheet alone</h3>
+            <p class="text-gray-700 text-sm m-0">Deck feel, console responsiveness, and noise are the things owners actually notice daily, and none appear in a specification table. Where you can, stand on the machine before buying.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating peak horsepower as the motor rating</h3>
+            <p class="text-gray-700 text-sm m-0">Continuous-duty horsepower is the number that describes sustained work. Peak figures make weaker motors look competitive with stronger ones.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Forgetting the subscription renews</h3>
+            <p class="text-gray-700 text-sm m-0">Machines that bundle a first year of iFit or JRNY bill annually after. Budget for year two before comparing them against subscription-free rivals.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Skipping the break-in and maintenance routine</h3>
+            <p class="text-gray-700 text-sm m-0">The first 20 miles seat the belt, and periodic lubrication keeps it from dragging. Owners who skip both report problems years earlier than those who do not.</p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-16">
+        <h2 class="text-2xl font-black text-gray-900 mb-6">Related Guides</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
         <a
-          href="/best-folding-treadmill-reviews"
+          href="/best-folding-treadmill-reviews/"
           class="block bg-white border border-gray-200 rounded-2xl p-6 no-underline hover:shadow-md transition-shadow"
         >
           <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Space-Saving</span>
@@ -780,7 +795,7 @@ const schema = {
           </p>
         </a>
         <a
-          href="/best-treadmill-under-1000-reviews"
+          href="/best-treadmill-under-1000-reviews/"
           class="block bg-white border border-gray-200 rounded-2xl p-6 no-underline hover:shadow-md transition-shadow"
         >
           <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Budget Picks</span>
@@ -790,7 +805,7 @@ const schema = {
           </p>
         </a>
         <a
-          href="/best-of"
+          href="/best-of/"
           class="block bg-white border border-gray-200 rounded-2xl p-6 no-underline hover:shadow-md transition-shadow"
         >
           <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">All Guides</span>
@@ -799,13 +814,14 @@ const schema = {
             Browse every hands-on best-of guide we've published across cardio and fitness equipment.
           </p>
         </a>
+        </div>
       </div>
     </div>
 
     <!-- Closing CTA -->
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
-      <div class="bg-gray-900 text-white rounded-2xl p-8">
-        <h2 class="text-2xl font-black mb-4">The Bottom Line</h2>
+    <div class="max-w-3xl mx-auto px-4 pb-16">
+      <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+        <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
         <p class="text-gray-300 leading-relaxed mb-4">
           After six months of testing, the <strong class="text-white">NordicTrack Commercial 1750</strong> is our top overall pick for most home exercisers who want a genuinely interactive, gym-quality experience and don't mind paying for it. If long-term durability and extra legroom matter more than screen size, the <strong class="text-white">Sole F80</strong> is the sturdiest machine we tested, and it doesn't lock any features behind a subscription. Buyers who want most of the premium experience without the premium price should look closely at the <strong class="text-white">Horizon Fitness 7.8 AT</strong>, which offered the best overall value among the machines that impressed us most.
         </p>

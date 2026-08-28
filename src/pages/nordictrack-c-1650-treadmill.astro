@@ -182,14 +182,14 @@ const schema = {
 >
   <article class="relative overflow-hidden">
     <!-- Hero Section -->
-    <div class="relative bg-gray-900 overflow-hidden">
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
       <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
         <pattern id="dot-pattern-ntc1650" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
           <circle cx="2" cy="2" r="1.5" fill="white"></circle>
         </pattern>
         <rect width="100%" height="100%" fill="url(#dot-pattern-ntc1650)"></rect>
       </svg>
-      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 text-center">
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
         <div class="flex justify-center mb-6">
           <TrustBadge />
         </div>
@@ -201,10 +201,10 @@ const schema = {
             Updated June 2026
           </span>
         </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight">
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
           NordicTrack <span class="text-[#5AA9FF]">C 1650</span> Review
         </h1>
-        <p class="mt-6 text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
           We put NordicTrack's mid-tier C-Series treadmill through four
           weeks of walking, jogging, and interval sessions to find out
           whether the longer deck and bigger screen make it the C-Series
@@ -221,8 +221,8 @@ const schema = {
       </div>
     </div>
 
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-      <!-- Author & Meta row -->
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
       <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
         <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
         <div>
@@ -268,26 +268,33 @@ const schema = {
           </a>
         </div>
       </div>
+    </div>
 
-      <!-- Table of Contents -->
-      <div class="my-10 bg-gray-50 rounded-2xl p-6 border border-gray-100">
-        <p class="text-xs font-black uppercase tracking-widest text-gray-500 mb-4">On This Page</p>
-        <ol class="space-y-2 list-none p-0 m-0">
-          <li><a href="#overview" class="text-[#0F62FE] no-underline font-medium">1. Overview and Who It's For</a></li>
-          <li><a href="#specs" class="text-[#0F62FE] no-underline font-medium">2. Full Spec Sheet</a></li>
-          <li><a href="#assembly" class="text-[#0F62FE] no-underline font-medium">3. Assembly and Setup</a></li>
-          <li><a href="#performance" class="text-[#0F62FE] no-underline font-medium">4. Performance Deep Dive</a></li>
-          <li><a href="#durability" class="text-[#0F62FE] no-underline font-medium">5. Long-Term Durability Notes</a></li>
-          <li><a href="#pros-cons" class="text-[#0F62FE] no-underline font-medium">6. Pros and Cons</a></li>
-          <li><a href="#comparison" class="text-[#0F62FE] no-underline font-medium">7. How It Compares</a></li>
-          <li><a href="#who-should-skip" class="text-[#0F62FE] no-underline font-medium">8. Who Should Skip This Treadmill</a></li>
-          <li><a href="#verdict" class="text-[#0F62FE] no-underline font-medium">9. Final Verdict</a></li>
-          <li><a href="#faq" class="text-[#0F62FE] no-underline font-medium">10. Frequently Asked Questions</a></li>
-        </ol>
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <a href="#overview" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Overview and Who It's For</a>
+            <a href="#specs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Full Spec Sheet</a>
+            <a href="#assembly" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Assembly and Setup</a>
+            <a href="#performance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Performance Deep Dive</a>
+            <a href="#durability" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Long-Term Durability Notes</a>
+            <a href="#pros-cons" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Pros and Cons</a>
+            <a href="#comparison" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. How It Compares</a>
+            <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Who Should Skip This Treadmill</a>
+            <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Final Verdict</a>
+            <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        </nav>
       </div>
+    </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-        <p class="italic text-xl border-l-4 border-[#FF5A1F] bg-gray-50 pl-6 pr-4 py-4 rounded-r-xl not-prose text-gray-700 leading-relaxed">
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
           NordicTrack's C-Series exists to answer a simple question: how
           much treadmill can you get without paying Commercial-series
           prices? The C 1650 is our answer to that question after a month
@@ -296,7 +303,8 @@ const schema = {
           well-rounded home treadmill.
         </p>
 
-        <h2 id="overview" class="scroll-mt-24">Overview and Who It's For</h2>
+        <div id="overview" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Overview and Who It's For</h2>
         <p>
           The C 1650 sits above the C 990 in NordicTrack's entry-level
           lineup, and the gap between them is smaller in price than it is
@@ -313,7 +321,7 @@ const schema = {
           It's worth placing the C 1650 accurately within NordicTrack's
           broader lineup before you buy. It's still part of the C-Series,
           positioned below the Commercial-series machines like the
-          <a href="/nordictrack-commercial-1750-treadmill">Commercial 1750</a>
+          <a href="/nordictrack-commercial-1750-treadmill/">Commercial 1750</a>
           and well below the X-Series incline trainers. The C 1650's 20 x
           60-inch deck actually matches the length of the Commercial
           1750's deck, though it's two inches narrower and paired with a
@@ -339,7 +347,7 @@ const schema = {
           cheaper or older treadmill who wants a noticeably better screen
           experience without paying Commercial-series prices. If you're
           purely a walker who never plans to jog, the money might be better
-          saved by sticking with the <a href="/nordictrack-c-990-treadmill">C 990</a>;
+          saved by sticking with the <a href="/nordictrack-c-990-treadmill/">C 990</a>;
           if you're a serious runner logging consistent faster-paced miles,
           the Commercial 1750's stronger motor and wider deck are worth the
           additional investment.
@@ -365,12 +373,15 @@ const schema = {
             </div>
           </div>
         </div>
+        </div>
 
-        <h2 id="specs" class="scroll-mt-24">Full Spec Sheet</h2>
+        <div id="specs" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Full Spec Sheet</h2>
         <p>
           Here's every spec we verified directly against our test unit
           rather than copying from the manufacturer's marketing page.
         </p>
+        </div>
       </div>
 
       <div class="not-prose overflow-x-auto my-8 rounded-xl border border-gray-200">
@@ -386,8 +397,9 @@ const schema = {
         </table>
       </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-        <h2 id="assembly" class="scroll-mt-24">Assembly and Setup</h2>
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="assembly" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Assembly and Setup</h2>
         <p>
           Assembly took our team roughly 65 minutes working alone, similar
           to the C 990 despite the longer deck, since the console and frame
@@ -414,8 +426,10 @@ const schema = {
           immediately when pulled. It's a five-minute habit that catches
           rare shipping-damage issues early.
         </p>
+        </div>
 
-        <h2 id="performance" class="scroll-mt-24">Performance Deep Dive</h2>
+        <div id="performance" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Performance Deep Dive</h2>
         <h3>Motor and Deck</h3>
         <p>
           The 3.0 CHP motor is identical to the one in the C 990, and it
@@ -516,8 +530,10 @@ const schema = {
           of months goes a long way toward keeping the motor from working
           harder than it needs to.
         </p>
+        </div>
 
-        <h2 id="durability" class="scroll-mt-24">Long-Term Durability Notes</h2>
+        <div id="durability" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Long-Term Durability Notes</h2>
         <p>
           Four weeks of testing can't fully answer the multi-year
           durability question, so we cross-referenced our hands-on
@@ -544,8 +560,11 @@ const schema = {
           line's, so skipped maintenance is likely to show up as strain
           sooner than it would on a more powerful machine.
         </p>
+        </div>
 
-        <h2 id="pros-cons" class="scroll-mt-24">Pros and Cons</h2>
+        <div id="pros-cons" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Pros and Cons</h2>
+        </div>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8 not-prose">
@@ -588,13 +607,15 @@ const schema = {
         </div>
       </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-        <h2 id="comparison" class="scroll-mt-24">How It Compares</h2>
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="comparison" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. How It Compares</h2>
         <p>
           The C 1650 doesn't exist in a vacuum — here's how it stacks up
           against the cheaper model in its own series and NordicTrack's
           mid-tier flagship.
         </p>
+        </div>
       </div>
 
       <div class="not-prose overflow-x-auto my-8 rounded-xl border border-gray-200">
@@ -622,15 +643,15 @@ const schema = {
         </table>
       </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <p>
-          The <a href="/nordictrack-c-990-treadmill">C 990</a> is the
+          The <a href="/nordictrack-c-990-treadmill/">C 990</a> is the
           natural comparison if you want to save more — it shares the C
           1650's motor and incline range but trades five inches of deck
           length and a smaller screen for a roughly $300 lower price. If
           you're purely a walker with no plans to run, that trade-off may
           not cost you anything in practice. The
-          <a href="/nordictrack-commercial-1750-treadmill">Commercial 1750</a>
+          <a href="/nordictrack-commercial-1750-treadmill/">Commercial 1750</a>
           is the comparison worth making if you want more headroom: a
           stronger 3.75 CHP motor, a wider 22-inch deck, and a considerably
           larger touchscreen, for roughly $500 more than the C 1650.
@@ -661,26 +682,29 @@ const schema = {
           </p>
         </div>
 
-        <h2 id="who-should-skip" class="scroll-mt-24">Who Should Skip This Treadmill</h2>
+        <div id="who-should-skip" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Who Should Skip This Treadmill</h2>
         <p>
           As much as we like the C 1650, it isn't the right machine for
           every shopper. If you're a purely dedicated walker who will never
           use the extra deck length, the
-          <a href="/nordictrack-c-990-treadmill">C 990</a> saves you real
+          <a href="/nordictrack-c-990-treadmill/">C 990</a> saves you real
           money without costing you anything you'd actually use. If you're
           a serious runner logging consistent faster-paced miles, the
           narrower deck and lower-powered motor relative to the
-          <a href="/nordictrack-commercial-1750-treadmill">Commercial 1750</a>
+          <a href="/nordictrack-commercial-1750-treadmill/">Commercial 1750</a>
           will start to feel limiting, and the extra investment there is
           worth it. And if you know for certain you'll never pay for an
           iFit subscription, you're still buying into hardware built around
           that ecosystem, so it's worth weighing a simpler non-connected
           treadmill from our
-          <a href="/best-treadmill-for-home-reviews">home treadmill guide</a>
+          <a href="/best-treadmill-for-home-reviews/">home treadmill guide</a>
           instead.
         </p>
+        </div>
 
-        <h2 id="verdict" class="scroll-mt-24">Final Verdict</h2>
+        <div id="verdict" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Final Verdict</h2>
         <p>
           The NordicTrack C 1650 is the C-Series model we'd actually
           recommend buying for most households. The 60-inch deck removes
@@ -703,15 +727,16 @@ const schema = {
           screen quality to make daily use genuinely pleasant without
           overspending.
         </p>
+        </div>
       </div>
 
       <!-- FAQ -->
-      <div id="faq" class="scroll-mt-24 my-12">
-        <h2 class="text-2xl font-black text-gray-900 mb-6">Frequently Asked Questions</h2>
-        <div class="space-y-4">
-          <div class="bg-gray-50 rounded-2xl p-6">
+      <div id="faq" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">How does the C 1650 compare to the C 990?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               They share the same 3.0 CHP motor and 0-10% incline range,
               but the C 1650 has a longer 20 x 60-inch deck versus the C
               990's 20 x 55-inch deck, and a larger 10-inch touchscreen
@@ -720,9 +745,9 @@ const schema = {
               walks.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Is the C 1650 good for running, or just walking?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               It handles walking, incline walking, and moderate jogging
               comfortably thanks to its 60-inch deck length, which matches
               NordicTrack's Commercial-series machines. The 3.0 CHP motor
@@ -732,9 +757,9 @@ const schema = {
               runners will be well served here.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Should I buy the C 1650 or save more for the Commercial 1750?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               The Commercial 1750 has a stronger 3.75 CHP motor, a wider
               22-inch deck, and a larger touchscreen for roughly $500 more.
               If your budget realistically stops at the C 1650, you're
@@ -744,9 +769,9 @@ const schema = {
               headroom.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Do I have to pay for iFit to use the C 1650?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               The treadmill runs without an active subscription, but
               automatic incline adjustments during trainer-led workouts and
               the full workout library require iFit. It ships with a
@@ -755,9 +780,9 @@ const schema = {
               afterward.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Is the 10-inch screen a meaningful upgrade over the C 990's 7-inch screen?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               Yes, noticeably. The larger display makes trail video and
               workout content feel closer to watching on a small tablet
               than the C 990's more phone-sized 7-inch screen. Reading
@@ -766,9 +791,9 @@ const schema = {
               cramped.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">How long does assembly take?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               Roughly 65 minutes working alone, similar to the C 990 since
               the frame and console complexity are comparable across the
               C-Series. A second person makes lifting the upright frame
@@ -779,22 +804,45 @@ const schema = {
         </div>
       </div>
 
+      <!-- Common Mistakes -->
+      <div class="mt-16">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buyers Make</h2>
+        <p class="text-gray-700 leading-relaxed">The C 1650 sits between two better-known machines, and most buying mistakes come from misjudging that gap.</p>
+        <div class="space-y-6 my-8">
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Paying the step-up price for the screen</h3>
+            <p class="text-gray-700 text-sm m-0">The jump from the C 990 buys a longer 20 x 60-inch deck and a 10-inch screen for roughly $300. The deck is the part worth paying for. If you only walk, the C 990 does the same job for less.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming the longer deck means a stronger motor</h3>
+            <p class="text-gray-700 text-sm m-0">It does not. The C 1650 keeps the same 3.0 CHP motor as the C 990. It gives runners more room, not more power, so heavy interval work still belongs on a Commercial-series machine.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Overlooking the 0-10% incline ceiling</h3>
+            <p class="text-gray-700 text-sm m-0">The C-Series tops out at 10%. Hill-focused iFit workouts written for the incline trainers will not match on this frame. If simulated climbing is your main goal, an X9i is the honest choice.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying without checking the return window</h3>
+            <p class="text-gray-700 text-sm m-0">Assembled treadmills are awkward to return, and the deck length is the one thing you cannot judge from a spec sheet. Confirm the retailer's return terms before assembly, and do your first full-speed run inside that window.</p>
+          </div>
+        </div>
+      </div>
       <!-- Related Guides -->
-      <div class="my-12">
-        <h2 class="text-2xl font-black text-gray-900 mb-6">More NordicTrack &amp; Mid-Range Treadmill Reviews</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <a href="/nordictrack-c-990-treadmill" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+      <div class="mt-16">
+        <h2 class="text-2xl font-black text-gray-900 mb-6">Related NordicTrack &amp; Mid-Range Treadmill Guides</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <a href="/nordictrack-c-990-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
             <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Save Money</span>
             <p class="font-bold text-gray-900 mt-2 mb-1">NordicTrack C 990 Review</p>
             <p class="text-sm text-gray-500 leading-relaxed">The entry-level C-Series machine for budget-conscious walkers.</p>
           </a>
-          <a href="/nordictrack-commercial-1750-treadmill" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">More Headroom</span>
+          <a href="/nordictrack-commercial-1750-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+            <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">More Headroom</span>
             <p class="font-bold text-gray-900 mt-2 mb-1">NordicTrack Commercial 1750 Review</p>
             <p class="text-sm text-gray-500 leading-relaxed">A stronger motor and wider deck for serious runners.</p>
           </a>
-          <a href="/nordictrack" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand Guide</span>
+          <a href="/nordictrack/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+            <span class="text-xs font-black uppercase tracking-widest text-green-600">Brand Guide</span>
             <p class="font-bold text-gray-900 mt-2 mb-1">NordicTrack Treadmill Lineup Explained</p>
             <p class="text-sm text-gray-500 leading-relaxed">Every current NordicTrack model, sorted by who it's actually for.</p>
           </a>
@@ -802,8 +850,8 @@ const schema = {
       </div>
 
       <!-- Closing CTA -->
-      <div class="bg-gray-900 text-white rounded-2xl p-8 mb-16">
-        <h2 class="text-2xl font-black mb-4">The Bottom Line</h2>
+      <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+        <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
         <p class="text-gray-300 leading-relaxed mb-4">
           The <strong class="text-white">NordicTrack C 1650</strong> is the
           C-Series sweet spot — a 60-inch deck that matches the Commercial
@@ -814,9 +862,9 @@ const schema = {
         </p>
         <p class="text-gray-300 leading-relaxed">
           Want to save more? See our
-          <a href="/nordictrack-c-990-treadmill" class="text-[#5AA9FF] font-bold no-underline">C 990 review</a>
+          <a href="/nordictrack-c-990-treadmill/" class="text-[#5AA9FF] font-bold no-underline">C 990 review</a>
           for the entry-level version of this machine, or the
-          <a href="/nordictrack" class="text-[#5AA9FF] font-bold no-underline">NordicTrack brand guide</a>
+          <a href="/nordictrack/" class="text-[#5AA9FF] font-bold no-underline">NordicTrack brand guide</a>
           for how every current model in the lineup stacks up.
         </p>
       </div>

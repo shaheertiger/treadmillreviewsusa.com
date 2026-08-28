@@ -144,7 +144,7 @@ const schema = {
 >
   <article class="relative overflow-hidden">
     <!-- Hero Section -->
-    <div class="relative bg-gray-900 overflow-hidden">
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
       <svg
         class="absolute inset-0 w-full h-full opacity-10"
         xmlns="http://www.w3.org/2000/svg"
@@ -163,7 +163,7 @@ const schema = {
         ></rect>
       </svg>
       <div
-        class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 text-center"
+        class="max-w-4xl mx-auto px-4 relative z-10 text-center"
       >
         <div class="flex justify-center mb-6">
           <TrustBadge />
@@ -180,12 +180,12 @@ const schema = {
             Updated June 2026
           </span>
         </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight">
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
           The Complete <span class="text-[#5AA9FF]">Home Treadmill</span> Buying
           Guide
         </h1>
         <p
-          class="mt-6 text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed"
+          class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed"
         >
           Before you compare specific models, get the fundamentals right.
           Here's exactly what to check — motor power, deck size, folding vs.
@@ -209,8 +209,8 @@ const schema = {
       </div>
     </div>
 
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-      <!-- Author & Meta row -->
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
       <div
         class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100"
       >
@@ -233,78 +233,31 @@ const schema = {
           <SocialProof users="9.4k" />
         </div>
       </div>
+    </div>
 
-      <!-- Table of Contents -->
-      <div class="my-10 bg-gray-50 rounded-2xl p-6 border border-gray-100">
-        <p
-          class="text-xs font-black uppercase tracking-widest text-gray-500 mb-4"
-        >
-          On This Page
-        </p>
-        <ol class="space-y-2 list-none p-0 m-0">
-          <li>
-            <a href="#use-case" class="text-[#0F62FE] no-underline font-medium"
-              >1. Start With Your Use Case</a
-            >
-          </li>
-          <li>
-            <a
-              href="#motor-power"
-              class="text-[#0F62FE] no-underline font-medium"
-              >2. Motor Power (CHP), Explained</a
-            >
-          </li>
-          <li>
-            <a
-              href="#deck-size"
-              class="text-[#0F62FE] no-underline font-medium"
-              >3. Deck Size and Cushioning</a
-            >
-          </li>
-          <li>
-            <a
-              href="#folding-vs-fixed"
-              class="text-[#0F62FE] no-underline font-medium"
-              >4. Folding vs. Fixed-Frame</a
-            >
-          </li>
-          <li>
-            <a
-              href="#connectivity"
-              class="text-[#0F62FE] no-underline font-medium"
-              >5. Incline, Consoles, and Subscriptions</a
-            >
-          </li>
-          <li>
-            <a
-              href="#budget-tiers"
-              class="text-[#0F62FE] no-underline font-medium"
-              >6. What You Get at Each Budget Tier</a
-            >
-          </li>
-          <li>
-            <a
-              href="#mistakes"
-              class="text-[#0F62FE] no-underline font-medium"
-              >7. Mistakes First-Time Buyers Make</a
-            >
-          </li>
-          <li>
-            <a
-              href="#which-guide"
-              class="text-[#0F62FE] no-underline font-medium"
-              >8. Which of Our Guides Should You Read Next?</a
-            >
-          </li>
-          <li>
-            <a href="#faq" class="text-[#0F62FE] no-underline font-medium"
-              >9. Frequently Asked Questions</a
-            >
-          </li>
-        </ol>
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <a href="#use-case" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Start With Your Use Case</a>
+            <a href="#motor-power" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Motor Power (CHP), Explained</a>
+            <a href="#deck-size" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Deck Size and Cushioning</a>
+            <a href="#folding-vs-fixed" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Folding vs. Fixed-Frame</a>
+            <a href="#connectivity" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Incline, Consoles, and Subscriptions</a>
+            <a href="#budget-tiers" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. What You Get at Each Budget Tier</a>
+            <a href="#mistakes" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Mistakes First-Time Buyers Make</a>
+            <a href="#which-guide" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Which of Our Guides Should You Read Next?</a>
+            <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Frequently Asked Questions</a>
+        </nav>
       </div>
+    </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <!-- Lede -->
         <p
           class="italic text-xl border-l-4 border-[#FF5A1F] bg-gray-50 pl-6 pr-4 py-4 rounded-r-xl not-prose text-gray-700 leading-relaxed"
@@ -319,7 +272,8 @@ const schema = {
         </p>
 
         <!-- SECTION 1 -->
-        <h2 id="use-case" class="scroll-mt-24">Start With Your Use Case</h2>
+        <div id="use-case" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Start With Your Use Case</h2>
         <p>
           Before you look at a single spec, answer one question honestly: how
           fast will you actually be moving on this thing, most of the time?
@@ -351,9 +305,10 @@ const schema = {
         </p>
 
         <!-- SECTION 2 -->
-        <h2 id="motor-power" class="scroll-mt-24">
-          Motor Power (CHP), Explained
-        </h2>
+        </div>
+
+        <div id="motor-power" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Motor Power (CHP), Explained</h2>
         <p>
           Every treadmill spec sheet lists a horsepower number, and it's
           nearly always the most misleading figure on the page. Manufacturers
@@ -418,7 +373,10 @@ const schema = {
         </div>
 
         <!-- SECTION 3 -->
-        <h2 id="deck-size" class="scroll-mt-24">Deck Size and Cushioning</h2>
+        </div>
+
+        <div id="deck-size" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Deck Size and Cushioning</h2>
         <p>
           Deck size is measured as width by length, and both numbers matter
           more than shoppers usually expect. A narrow deck, anything under
@@ -448,9 +406,10 @@ const schema = {
         </p>
 
         <!-- SECTION 4 -->
-        <h2 id="folding-vs-fixed" class="scroll-mt-24">
-          Folding vs. Fixed-Frame
-        </h2>
+        </div>
+
+        <div id="folding-vs-fixed" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Folding vs. Fixed-Frame</h2>
         <p>
           This is often the single biggest decision in choosing a home
           treadmill, and it comes down almost entirely to your available
@@ -471,7 +430,7 @@ const schema = {
           day than manual latch systems if you'll be folding the machine
           more than once or twice a week. We cover this distinction in much
           more depth, including specific tested models, in our
-          <a href="/best-folding-treadmill-reviews">folding treadmill guide</a
+          <a href="/best-folding-treadmill-reviews/">folding treadmill guide</a
           >.
         </p>
         <p>
@@ -486,9 +445,10 @@ const schema = {
         </p>
 
         <!-- SECTION 5 -->
-        <h2 id="connectivity" class="scroll-mt-24">
-          Incline, Consoles, and Subscriptions
-        </h2>
+        </div>
+
+        <div id="connectivity" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Incline, Consoles, and Subscriptions</h2>
         <p>
           Automatic incline is one of the more genuinely useful features on
           modern treadmills, since it lets you add resistance and calorie
@@ -519,9 +479,10 @@ const schema = {
         </p>
 
         <!-- SECTION 6 -->
-        <h2 id="budget-tiers" class="scroll-mt-24">
-          What You Get at Each Budget Tier
-        </h2>
+        </div>
+
+        <div id="budget-tiers" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. What You Get at Each Budget Tier</h2>
         <p>
           Treadmill pricing follows a fairly predictable pattern, and knowing
           roughly what to expect at each tier helps you avoid both
@@ -579,15 +540,16 @@ const schema = {
           dealbreaker — it just means being realistic that the machine is
           best suited to walking rather than serious running. We break down
           specific tested picks at the budget end of the market in our
-          <a href="/best-treadmill-under-1000-reviews"
+          <a href="/best-treadmill-under-1000-reviews/"
             >treadmills under $1,000 guide</a
           >.
         </p>
 
         <!-- SECTION 7 -->
-        <h2 id="mistakes" class="scroll-mt-24">
-          Mistakes First-Time Buyers Make
-        </h2>
+        </div>
+
+        <div id="mistakes" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Mistakes First-Time Buyers Make</h2>
         <p>
           A few patterns show up again and again in the buyer feedback and
           owner reviews we look through while researching our guides. Here
@@ -668,19 +630,21 @@ const schema = {
         </div>
 
         <!-- SECTION 8 -->
-        <h2 id="which-guide" class="scroll-mt-24">
-          Which of Our Guides Should You Read Next?
-        </h2>
+        </div>
+
+        <div id="which-guide" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Which of Our Guides Should You Read Next?</h2>
         <p>
           Now that you know what to look for, the fastest path forward is
           picking the specific roundup that matches your biggest constraint.
         </p>
+        </div>
       </div>
 
       <!-- Guide Picker Cards -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-10">
         <a
-          href="/best-treadmill-for-home-reviews"
+          href="/best-treadmill-for-home-reviews/"
           class="block bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow no-underline"
         >
           <div class="bg-gray-900 px-6 py-4">
@@ -700,7 +664,7 @@ const schema = {
           </div>
         </a>
         <a
-          href="/best-folding-treadmill-reviews"
+          href="/best-folding-treadmill-reviews/"
           class="block bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow no-underline"
         >
           <div class="bg-gray-900 px-6 py-4">
@@ -720,7 +684,7 @@ const schema = {
           </div>
         </a>
         <a
-          href="/best-treadmill-under-1000-reviews"
+          href="/best-treadmill-under-1000-reviews/"
           class="block bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow no-underline"
         >
           <div class="bg-gray-900 px-6 py-4">
@@ -741,7 +705,7 @@ const schema = {
         </a>
       </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <p>
           If more than one of those constraints applies to you at once — say,
           a tight budget and a tight apartment — start with whichever guide
@@ -750,22 +714,20 @@ const schema = {
           room bigger, while a slightly higher price is sometimes worth
           stretching for on a machine you'll use for years. For a wider look
           at how we score and rank treadmills across every category, our
-          <a href="/treadmill-reviews-2026">Treadmill Reviews 2026</a> overview
+          <a href="/treadmill-reviews-2026/">Treadmill Reviews 2026</a> overview
           is a good next stop as well.
         </p>
       </div>
 
       <!-- FAQ -->
-      <div id="faq" class="scroll-mt-24 my-12">
-        <h2 class="text-2xl font-black text-gray-900 mb-6">
-          Frequently Asked Questions
-        </h2>
-        <div class="space-y-4">
-          <div class="bg-gray-50 rounded-2xl p-6">
+      <div id="faq" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">
               What is the best treadmill for a small home?
             </h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               For a small home or apartment, a folding treadmill with a
               hydraulic-assist fold mechanism is usually the best fit, since
               it lets you reclaim the floor space when the machine isn't in
@@ -775,11 +737,11 @@ const schema = {
               to jog rather than only walk.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">
               How much should I spend on a home treadmill?
             </h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               Most households land in the <strong>$600-$1,200</strong> range for
               a treadmill that comfortably handles daily walking and moderate
               jogging without feeling flimsy. Spending under $500 is fine for
@@ -788,11 +750,11 @@ const schema = {
               into the $1,200-$2,000 range.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">
               What horsepower do I actually need?
             </h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               Look at continuous horsepower (CHP), not peak horsepower, since
               peak numbers are inflated marketing figures. <strong
                 >2.0-2.5 CHP</strong
@@ -802,12 +764,12 @@ const schema = {
               in your household will use the machine.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">
               Is it worth paying extra for a treadmill with a subscription
               app?
             </h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               It depends on whether you'll actually use guided workouts.
               Platforms like iFit and JRNY genuinely help some people stay
               consistent by auto-adjusting incline and pace during
@@ -818,11 +780,11 @@ const schema = {
               costing you anything you'd actually use.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">
               Should I buy a folding or a fixed-frame treadmill?
             </h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               Choose folding if floor space is limited or you rent and may
               need to relocate the machine easily. Choose a fixed-frame
               treadmill if you have a dedicated home gym area, since fixed
@@ -830,11 +792,11 @@ const schema = {
               mechanical complexity of a fold hinge entirely.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">
               What's the biggest mistake first-time treadmill buyers make?
             </h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               Buying based on peak horsepower and a long features list
               instead of measuring their available space first. A treadmill
               that doesn't physically fit where it needs to live, or that
@@ -847,14 +809,35 @@ const schema = {
         </div>
       </div>
 
+      <!-- Common Mistakes -->
+      <div class="mt-16">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buyers Make</h2>
+        <p class="text-gray-700 leading-relaxed">The specifications that matter are not the ones that get marketed hardest. These four confusions cause most bad purchases.</p>
+        <div class="space-y-6 my-8">
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Reading peak horsepower as motor strength</h3>
+            <p class="text-gray-700 text-sm m-0">Continuous-duty horsepower describes sustained work; peak describes a moment. Compare CHP figures only, across every machine on your shortlist.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Judging deck size by width alone</h3>
+            <p class="text-gray-700 text-sm m-0">Length determines stride comfort and width determines confidence. Runners need both; a 20 x 55-inch deck is a walking deck whatever the motor says.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming cushioning is a single feature</h3>
+            <p class="text-gray-700 text-sm m-0">Adjustable, zoned, and fixed cushioning behave very differently. If joint impact is why you are buying, this is the specification to investigate rather than skim.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring the ongoing costs in the comparison</h3>
+            <p class="text-gray-700 text-sm m-0">Subscriptions, replacement belts, and lubricant are all predictable. Building them into the comparison changes which machine is genuinely cheapest.</p>
+          </div>
+        </div>
+      </div>
       <!-- Related Guides -->
-      <div class="my-12">
-        <h2 class="text-2xl font-black text-gray-900 mb-6">
-          More Treadmill Guides
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="mt-16">
+        <h2 class="text-2xl font-black text-gray-900 mb-6">Related Treadmill Guides</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <a
-            href="/treadmill-reviews-2026"
+            href="/treadmill-reviews-2026/"
             class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow"
           >
             <span
@@ -870,11 +853,11 @@ const schema = {
             </p>
           </a>
           <a
-            href="/best-of"
+            href="/best-of/"
             class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow"
           >
             <span
-              class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]"
+              class="text-xs font-black uppercase tracking-widest text-[#0F62FE]"
               >All Guides</span
             >
             <p class="font-bold text-gray-900 mt-2 mb-1">
@@ -886,11 +869,11 @@ const schema = {
             </p>
           </a>
           <a
-            href="/best-treadmill-for-home-reviews"
+            href="/best-treadmill-for-home-reviews/"
             class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow"
           >
             <span
-              class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]"
+              class="text-xs font-black uppercase tracking-widest text-green-600"
               >Home Treadmills</span
             >
             <p class="font-bold text-gray-900 mt-2 mb-1">
@@ -905,8 +888,8 @@ const schema = {
       </div>
 
       <!-- Closing CTA -->
-      <div class="bg-gray-900 text-white rounded-2xl p-8 mb-16">
-        <h2 class="text-2xl font-black mb-4">The Bottom Line</h2>
+      <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+        <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
         <p class="text-gray-300 leading-relaxed mb-4">
           The best home treadmill is the one that fits your actual space,
           your actual pace, and your actual budget — not the one with the
@@ -917,15 +900,15 @@ const schema = {
         <p class="text-gray-300 leading-relaxed">
           Once you've nailed down those fundamentals, head to
           <a
-            href="/best-treadmill-for-home-reviews"
+            href="/best-treadmill-for-home-reviews/"
             class="text-[#5AA9FF] font-bold no-underline"
             >Best Treadmills for Home</a
           >, <a
-            href="/best-folding-treadmill-reviews"
+            href="/best-folding-treadmill-reviews/"
             class="text-[#5AA9FF] font-bold no-underline"
             >Best Folding Treadmills</a
           >, or <a
-            href="/best-treadmill-under-1000-reviews"
+            href="/best-treadmill-under-1000-reviews/"
             class="text-[#5AA9FF] font-bold no-underline"
             >Best Treadmills Under $1,000</a
           > to compare the specific models we've tested and ranked in each category.

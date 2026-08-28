@@ -159,14 +159,14 @@ const schema = {
 >
   <article class="relative overflow-hidden">
     <!-- Hero Section -->
-    <div class="relative bg-gray-900 overflow-hidden">
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
       <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
         <pattern id="dot-pattern-solef65" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
           <circle cx="2" cy="2" r="1.5" fill="white"></circle>
         </pattern>
         <rect width="100%" height="100%" fill="url(#dot-pattern-solef65)"></rect>
       </svg>
-      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 text-center">
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
         <div class="flex justify-center mb-6">
           <TrustBadge />
         </div>
@@ -178,10 +178,10 @@ const schema = {
             Updated April 2026
           </span>
         </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight">
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
           Sole <span class="text-[#5AA9FF]">F65</span> Treadmill Review
         </h1>
-        <p class="mt-6 text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
           We put Sole's mid-range treadmill through four weeks of walking,
           jogging, and interval sessions to find out why it's quietly become
           the Sole model most owners tell their friends to buy first.
@@ -197,8 +197,8 @@ const schema = {
       </div>
     </div>
 
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-      <!-- Author & Meta row -->
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
       <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
         <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
         <div>
@@ -245,26 +245,33 @@ const schema = {
           </a>
         </div>
       </div>
+    </div>
 
-      <!-- Table of Contents -->
-      <div class="my-10 bg-gray-50 rounded-2xl p-6 border border-gray-100">
-        <p class="text-xs font-black uppercase tracking-widest text-gray-500 mb-4">On This Page</p>
-        <ol class="space-y-2 list-none p-0 m-0">
-          <li><a href="#overview" class="text-[#0F62FE] no-underline font-medium">1. Overview and Who It's For</a></li>
-          <li><a href="#specs" class="text-[#0F62FE] no-underline font-medium">2. Full Spec Sheet</a></li>
-          <li><a href="#assembly" class="text-[#0F62FE] no-underline font-medium">3. Assembly and Setup</a></li>
-          <li><a href="#performance" class="text-[#0F62FE] no-underline font-medium">4. Performance Deep Dive</a></li>
-          <li><a href="#durability" class="text-[#0F62FE] no-underline font-medium">5. Long-Term Durability Notes</a></li>
-          <li><a href="#pros-cons" class="text-[#0F62FE] no-underline font-medium">6. Pros and Cons</a></li>
-          <li><a href="#comparison" class="text-[#0F62FE] no-underline font-medium">7. How It Compares</a></li>
-          <li><a href="#who-should-skip" class="text-[#0F62FE] no-underline font-medium">8. Who Should Skip This Treadmill</a></li>
-          <li><a href="#verdict" class="text-[#0F62FE] no-underline font-medium">9. Final Verdict</a></li>
-          <li><a href="#faq" class="text-[#0F62FE] no-underline font-medium">10. Frequently Asked Questions</a></li>
-        </ol>
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <a href="#overview" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Overview and Who It's For</a>
+            <a href="#specs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Full Spec Sheet</a>
+            <a href="#assembly" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Assembly and Setup</a>
+            <a href="#performance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Performance Deep Dive</a>
+            <a href="#durability" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Long-Term Durability Notes</a>
+            <a href="#pros-cons" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Pros and Cons</a>
+            <a href="#comparison" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. How It Compares</a>
+            <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Who Should Skip This Treadmill</a>
+            <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Final Verdict</a>
+            <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        </nav>
       </div>
+    </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-        <p class="italic text-xl border-l-4 border-[#FF5A1F] bg-gray-50 pl-6 pr-4 py-4 rounded-r-xl not-prose text-gray-700 leading-relaxed">
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
           Sole's lineup has a clear budget option and a clear flagship, and
           the F65 sits in the middle doing the least glamorous but most
           important job: being the treadmill that just works for the widest
@@ -273,7 +280,8 @@ const schema = {
           searching "Sole treadmill" should actually buy.
         </p>
 
-        <h2 id="overview" class="scroll-mt-24">Overview and Who It's For</h2>
+        <div id="overview" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Overview and Who It's For</h2>
         <p>
           The F65 occupies an unusually well-defined spot in Sole's catalog.
           It costs meaningfully more than the entry-level F63, but instead of
@@ -305,7 +313,7 @@ const schema = {
           machines, but still sized more like a semi-permanent home gym
           fixture than an ultra-compact apartment treadmill. If daily folding
           in a tight space is your top priority, it's worth cross-checking
-          our <a href="/best-folding-treadmill-reviews">folding treadmill guide</a>
+          our <a href="/best-folding-treadmill-reviews/">folding treadmill guide</a>
           for machines built specifically around that use case.
         </p>
         <p>
@@ -315,8 +323,8 @@ const schema = {
           handling everyone from a walking parent to a running teenager
           without anyone feeling like they've outgrown it. For the full
           picture of how the F65 sits inside Sole's broader lineup, including
-          the step-down <a href="/sole-f63-treadmill">Sole F63</a> and the
-          step-up F80, see our <a href="/sole-fitness">Sole Fitness brand guide</a>.
+          the step-down <a href="/sole-f63-treadmill/">Sole F63</a> and the
+          step-up F80, see our <a href="/sole-fitness/">Sole Fitness brand guide</a>.
         </p>
 
         <div class="not-prose bg-gray-900 text-white rounded-2xl p-8 my-8">
@@ -339,12 +347,15 @@ const schema = {
             </div>
           </div>
         </div>
+        </div>
 
-        <h2 id="specs" class="scroll-mt-24">Full Spec Sheet</h2>
+        <div id="specs" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Full Spec Sheet</h2>
         <p>
           Here's every spec we verified directly against our test unit
           rather than copying from the manufacturer's marketing page.
         </p>
+        </div>
       </div>
 
       <div class="not-prose overflow-x-auto my-8 rounded-xl border border-gray-200">
@@ -360,8 +371,9 @@ const schema = {
         </table>
       </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-        <h2 id="assembly" class="scroll-mt-24">Assembly and Setup</h2>
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="assembly" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Assembly and Setup</h2>
         <p>
           Assembly took our team roughly 60 minutes working alone, faster
           than several competitors we've tested at this price, largely
@@ -388,8 +400,10 @@ const schema = {
           quiet from the very first cycle, which isn't universal among
           machines in this price range.
         </p>
+        </div>
 
-        <h2 id="performance" class="scroll-mt-24">Performance Deep Dive</h2>
+        <div id="performance" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Performance Deep Dive</h2>
         <h3>Motor and Deck</h3>
         <p>
           The 3.5 CHP motor handled everything we threw at it without
@@ -466,8 +480,10 @@ const schema = {
           and it's a cheap upgrade we'd recommend regardless of which
           treadmill you end up buying.
         </p>
+        </div>
 
-        <h2 id="durability" class="scroll-mt-24">Long-Term Durability Notes</h2>
+        <div id="durability" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Long-Term Durability Notes</h2>
         <p>
           Four weeks of hands-on testing can't fully answer a multi-year
           durability question on its own, so we cross-referenced our
@@ -514,8 +530,11 @@ const schema = {
           they expected, which is a meaningful, if unglamorous, part of the
           total cost of ownership over the life of the machine.
         </p>
+        </div>
 
-        <h2 id="pros-cons" class="scroll-mt-24">Pros and Cons</h2>
+        <div id="pros-cons" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Pros and Cons</h2>
+        </div>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8 not-prose">
@@ -558,13 +577,15 @@ const schema = {
         </div>
       </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-        <h2 id="comparison" class="scroll-mt-24">How It Compares</h2>
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="comparison" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. How It Compares</h2>
         <p>
           The F65 doesn't exist in a vacuum — here's how it stacks up against
           its own budget sibling and the closest subscription-dependent
           rival at a similar price.
         </p>
+        </div>
       </div>
 
       <div class="not-prose overflow-x-auto my-8 rounded-xl border border-gray-200">
@@ -592,9 +613,9 @@ const schema = {
         </table>
       </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <p>
-          Stepping down to the <a href="/sole-f63-treadmill">Sole F63</a>
+          Stepping down to the <a href="/sole-f63-treadmill/">Sole F63</a>
           saves roughly $400 but trades away two inches of deck width and a
           half-CHP of motor power — fine for walkers, noticeably tighter for
           regular runners. The NordicTrack Commercial 1750 costs several
@@ -632,7 +653,8 @@ const schema = {
           </p>
         </div>
 
-        <h2 id="who-should-skip" class="scroll-mt-24">Who Should Skip This Treadmill</h2>
+        <div id="who-should-skip" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Who Should Skip This Treadmill</h2>
         <p>
           The F65 is our default recommendation in Sole's lineup, but it
           isn't the right machine for every shopper who lands on this page.
@@ -646,11 +668,13 @@ const schema = {
           And if ultra-compact apartment storage is non-negotiable, its
           folded footprint, while smaller than NordicTrack's Commercial
           line, is still sized more like a permanent fixture; check our
-          <a href="/best-folding-treadmill-reviews">folding treadmill guide</a>
+          <a href="/best-folding-treadmill-reviews/">folding treadmill guide</a>
           for machines built specifically around tight storage.
         </p>
+        </div>
 
-        <h2 id="verdict" class="scroll-mt-24">Final Verdict</h2>
+        <div id="verdict" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Final Verdict</h2>
         <p>
           The Sole F65 earns its reputation as the treadmill most Sole owners
           actually recommend because it doesn't cut corners on the two things
@@ -670,15 +694,16 @@ const schema = {
           single workout, not the screen you might glance at occasionally.
           Screens age; a properly built frame and a full-size deck don't.
         </p>
+        </div>
       </div>
 
       <!-- FAQ -->
-      <div id="faq" class="scroll-mt-24 my-12">
-        <h2 class="text-2xl font-black text-gray-900 mb-6">Frequently Asked Questions</h2>
-        <div class="space-y-4">
-          <div class="bg-gray-50 rounded-2xl p-6">
+      <div id="faq" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Is the Sole F65 worth the price?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               Yes, and it's the Sole model we'd point most shoppers toward
               first. The 3.5 CHP motor and full 22 x 60-inch deck give you
               real running-treadmill stability without paying flagship F80
@@ -686,9 +711,9 @@ const schema = {
               purchase price the way there is with several competitors.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Why doesn't the Sole F65 have a touchscreen?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               It's a deliberate design choice rather than a cost-cutting
               oversight. Sole keeps the F65's console to a straightforward
               LCD display so that every core feature works fully without an
@@ -700,9 +725,9 @@ const schema = {
               NordicTrack model instead.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">How does the Sole F65 compare to the Sole F63?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               The F65 steps up to a stronger 3.5 CHP motor and a larger 22 x
               60-inch deck versus the F63's 3.0 CHP motor and 20 x 60-inch
               deck, which translates into noticeably more stability once
@@ -711,9 +736,9 @@ const schema = {
               F65 is worth it.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Is the Sole F65 good for running, or just walking?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               It's genuinely built for running. The 3.5 CHP motor held steady
               through sustained jogging and interval sessions in our
               testing, and the 22 x 60-inch deck comfortably fit testers up
@@ -722,9 +747,9 @@ const schema = {
               earn their keep.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">How much does the Sole F65 weigh and how hard is it to fold?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               The F65 weighs roughly 275 pounds assembled, which is
               substantial but manageable for one adult to fold thanks to the
               assisted hydraulic lift. It folds to a standing footprint of
@@ -733,9 +758,9 @@ const schema = {
               fixture than an ultra-compact apartment machine.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Does the Sole F65 require the Sole+ app to use?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               No. Every speed, incline, and built-in console program works
               fully without ever opening the Sole+ app. The app adds
               optional workout logging and syncing to platforms like Apple
@@ -746,22 +771,45 @@ const schema = {
         </div>
       </div>
 
+      <!-- Common Mistakes -->
+      <div class="mt-16">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buyers Make</h2>
+        <p class="text-gray-700 leading-relaxed">The F65 is the Sole most owners end up recommending, and the mistakes are about paying for the wrong part of it.</p>
+        <div class="space-y-6 my-8">
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying the F63 to save money you will spend twice</h3>
+            <p class="text-gray-700 text-sm m-0">The F65's 3.5 CHP motor and 22 x 60-inch deck are the reason it gets recommended. Buyers who run regularly and choose the F63 on price are the ones who upgrade a year later.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Expecting a streaming ecosystem</h3>
+            <p class="text-gray-700 text-sm m-0">There is no subscription and no large touchscreen. The trade-off is deliberate: no recurring cost, no coached content. Decide which side of that you want before comparing it to an iFit machine.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Underestimating the assembly</h3>
+            <p class="text-gray-700 text-sm m-0">This is a heavy machine that arrives largely assembled but still needs two people and clear access. Plan the route into the room before delivery day.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating the warranty as maintenance-free ownership</h3>
+            <p class="text-gray-700 text-sm m-0">Sole's warranty is strong, but claims still assume the belt has been kept lubricated and tracking true. Keep the schedule and keep the receipts.</p>
+          </div>
+        </div>
+      </div>
       <!-- Related Guides -->
-      <div class="my-12">
-        <h2 class="text-2xl font-black text-gray-900 mb-6">More Sole &amp; Home Treadmill Reviews</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <a href="/sole-f63-treadmill" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+      <div class="mt-16">
+        <h2 class="text-2xl font-black text-gray-900 mb-6">Related Sole &amp; Home Treadmill Guides</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <a href="/sole-f63-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
             <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Budget Option</span>
             <p class="font-bold text-gray-900 mt-2 mb-1">Sole F63 Review</p>
             <p class="text-sm text-gray-500 leading-relaxed">Sole's entry-level model for walkers and casual joggers.</p>
           </a>
-          <a href="/sole-fitness" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand Guide</span>
+          <a href="/sole-fitness/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+            <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand Guide</span>
             <p class="font-bold text-gray-900 mt-2 mb-1">Sole Fitness Treadmill Lineup Explained</p>
             <p class="text-sm text-gray-500 leading-relaxed">Every current Sole model, sorted by who it's actually for.</p>
           </a>
-          <a href="/best-treadmill-for-home-reviews" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Category</span>
+          <a href="/best-treadmill-for-home-reviews/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+            <span class="text-xs font-black uppercase tracking-widest text-green-600">Category</span>
             <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills for Home</p>
             <p class="text-sm text-gray-500 leading-relaxed">See how the F65 stacks up against every brand we've tested.</p>
           </a>
@@ -769,8 +817,8 @@ const schema = {
       </div>
 
       <!-- Closing CTA -->
-      <div class="bg-gray-900 text-white rounded-2xl p-8 mb-16">
-        <h2 class="text-2xl font-black mb-4">The Bottom Line</h2>
+      <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+        <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
         <p class="text-gray-300 leading-relaxed mb-4">
           The <strong class="text-white">Sole F65</strong> is the Sole
           treadmill we'd actually recommend buying. It has the motor and
@@ -781,8 +829,8 @@ const schema = {
         </p>
         <p class="text-gray-300 leading-relaxed">
           Comparing your options first? See the entry-level
-          <a href="/sole-f63-treadmill" class="text-[#5AA9FF] font-bold no-underline">Sole F63 review</a>
-          or the full <a href="/sole-fitness" class="text-[#5AA9FF] font-bold no-underline">Sole Fitness brand guide</a>
+          <a href="/sole-f63-treadmill/" class="text-[#5AA9FF] font-bold no-underline">Sole F63 review</a>
+          or the full <a href="/sole-fitness/" class="text-[#5AA9FF] font-bold no-underline">Sole Fitness brand guide</a>
           for how every current model in the lineup stacks up.
         </p>
       </div>

@@ -160,14 +160,14 @@ const schema = {
   stickyCta={{ text: "Check Price on Amazon", link: "#cta" }}
 >
   <article class="relative overflow-hidden">
-    <div class="relative bg-gray-900 overflow-hidden">
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
       <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
         <pattern id="dot-pattern-t7xe" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
           <circle cx="2" cy="2" r="1.5" fill="white"></circle>
         </pattern>
         <rect width="100%" height="100%" fill="url(#dot-pattern-t7xe)"></rect>
       </svg>
-      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 text-center">
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
         <div class="flex justify-center mb-6">
           <TrustBadge />
         </div>
@@ -175,10 +175,10 @@ const schema = {
           <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Product Review</span>
           <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Updated May 2026</span>
         </div>
-        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight">
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
           Matrix Fitness <span class="text-[#5AA9FF]">T7xe</span> Review
         </h1>
-        <p class="mt-6 text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
           We spent three weeks running on Matrix's commercial-grade AC motor
           treadmill to find out whether it earns its price against the
           Life Fitness T3 and NordicTrack's Commercial line.
@@ -190,7 +190,8 @@ const schema = {
       </div>
     </div>
 
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
       <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
         <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
         <div>
@@ -231,25 +232,33 @@ const schema = {
           </a>
         </div>
       </div>
+    </div>
 
-      <div class="my-10 bg-gray-50 rounded-2xl p-6 border border-gray-100">
-        <p class="text-xs font-black uppercase tracking-widest text-gray-500 mb-4">On This Page</p>
-        <ol class="space-y-2 list-none p-0 m-0">
-          <li><a href="#overview" class="text-[#0F62FE] no-underline font-medium">1. Overview and Who It's For</a></li>
-          <li><a href="#specs" class="text-[#0F62FE] no-underline font-medium">2. Full Spec Sheet</a></li>
-          <li><a href="#assembly" class="text-[#0F62FE] no-underline font-medium">3. Assembly and Setup</a></li>
-          <li><a href="#performance" class="text-[#0F62FE] no-underline font-medium">4. Performance Deep Dive</a></li>
-          <li><a href="#durability" class="text-[#0F62FE] no-underline font-medium">5. Long-Term Durability Notes</a></li>
-          <li><a href="#pros-cons" class="text-[#0F62FE] no-underline font-medium">6. Pros and Cons</a></li>
-          <li><a href="#comparison" class="text-[#0F62FE] no-underline font-medium">7. How It Compares</a></li>
-          <li><a href="#who-should-skip" class="text-[#0F62FE] no-underline font-medium">8. Who Should Skip This Treadmill</a></li>
-          <li><a href="#verdict" class="text-[#0F62FE] no-underline font-medium">9. Final Verdict</a></li>
-          <li><a href="#faq" class="text-[#0F62FE] no-underline font-medium">10. Frequently Asked Questions</a></li>
-        </ol>
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <a href="#overview" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Overview and Who It's For</a>
+            <a href="#specs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Full Spec Sheet</a>
+            <a href="#assembly" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Assembly and Setup</a>
+            <a href="#performance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Performance Deep Dive</a>
+            <a href="#durability" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Long-Term Durability Notes</a>
+            <a href="#pros-cons" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Pros and Cons</a>
+            <a href="#comparison" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. How It Compares</a>
+            <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Who Should Skip This Treadmill</a>
+            <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Final Verdict</a>
+            <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        </nav>
       </div>
+    </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-        <p class="italic text-xl border-l-4 border-[#FF5A1F] bg-gray-50 pl-6 pr-4 py-4 rounded-r-xl not-prose text-gray-700 leading-relaxed">
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
           Matrix Fitness doesn't have the direct-to-consumer name recognition
           of NordicTrack or Sole, but it has something arguably more
           valuable for a serious buyer: decades of building commercial gym
@@ -260,7 +269,8 @@ const schema = {
           think it mostly delivers.
         </p>
 
-        <h2 id="overview" class="scroll-mt-24">Overview and Who It's For</h2>
+        <div id="overview" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Overview and Who It's For</h2>
         <p>
           The T7xe sits at an interesting point in the market: priced well
           above mass-market folding treadmills, but noticeably below
@@ -278,7 +288,7 @@ const schema = {
           apartment dwellers. If your space situation requires a treadmill
           that disappears between sessions, the T7xe is the wrong category
           of machine entirely, and our
-          <a href="/best-folding-treadmill-reviews">folding treadmill guide</a>
+          <a href="/best-folding-treadmill-reviews/">folding treadmill guide</a>
           covers models built specifically for that need.
         </p>
         <p>
@@ -324,12 +334,15 @@ const schema = {
           scaled and priced for a home buyer rather than a gym owner
           purchasing a fleet of machines.
         </p>
+        </div>
 
-        <h2 id="specs" class="scroll-mt-24">Full Spec Sheet</h2>
+        <div id="specs" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Full Spec Sheet</h2>
         <p>
           Here's every spec we verified directly against our test unit
           rather than copying from the manufacturer's marketing page.
         </p>
+        </div>
       </div>
 
       <div class="not-prose overflow-x-auto my-8 rounded-xl border border-gray-200">
@@ -345,8 +358,9 @@ const schema = {
         </table>
       </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-        <h2 id="assembly" class="scroll-mt-24">Assembly and Setup</h2>
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="assembly" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Assembly and Setup</h2>
         <p>
           Assembly on the T7xe is a bigger undertaking than a typical
           folding treadmill, closer in scope to assembling a piece of gym
@@ -375,8 +389,10 @@ const schema = {
           carefully — including clearance behind and beside the deck for
           safe use — before delivery day, not after.
         </p>
+        </div>
 
-        <h2 id="performance" class="scroll-mt-24">Performance Deep Dive</h2>
+        <div id="performance" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Performance Deep Dive</h2>
         <h3>Motor and Deck</h3>
         <p>
           The 4.0 CHP AC commercial motor is the standout feature of this
@@ -454,8 +470,10 @@ const schema = {
           walking comfort as a secondary consideration rather than the
           primary design goal.
         </p>
+        </div>
 
-        <h2 id="durability" class="scroll-mt-24">Long-Term Durability Notes</h2>
+        <div id="durability" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Long-Term Durability Notes</h2>
         <p>
           Three weeks of testing can't fully answer a multi-year durability
           question on its own, so we cross-referenced our hands-on
@@ -488,8 +506,11 @@ const schema = {
           of that lines up with what we'd expect from a brand selling into
           commercial contracts where downtime has a real cost.
         </p>
+        </div>
 
-        <h2 id="pros-cons" class="scroll-mt-24">Pros and Cons</h2>
+        <div id="pros-cons" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Pros and Cons</h2>
+        </div>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8 not-prose">
@@ -532,13 +553,15 @@ const schema = {
         </div>
       </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-        <h2 id="comparison" class="scroll-mt-24">How It Compares</h2>
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="comparison" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. How It Compares</h2>
         <p>
           The T7xe doesn't exist in a vacuum — here's how it stacks up
           against the closest commercial-pedigree rival and a folding
           NordicTrack alternative at a lower price.
         </p>
+        </div>
       </div>
 
       <div class="not-prose overflow-x-auto my-8 rounded-xl border border-gray-200">
@@ -566,15 +589,15 @@ const schema = {
         </table>
       </div>
 
-      <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <p>
-          Against the <a href="/life-fitness-t3-treadmill">Life Fitness T3</a>,
+          Against the <a href="/life-fitness-t3-treadmill/">Life Fitness T3</a>,
           the T7xe wins on raw spec sheet — a stronger motor, wider deck, and
           larger touchscreen — for roughly $1,000-$1,500 more. What the T3
           offers instead is the Life Fitness name and its decades of
           Equinox-and-hotel-gym brand pedigree, which matters to some buyers
           more than the spec gap; see our full
-          <a href="/life-fitness">Life Fitness brand guide</a>
+          <a href="/life-fitness/">Life Fitness brand guide</a>
           for the complete picture. Against the NordicTrack Commercial
           2950, the calculus flips: the NordicTrack costs roughly
           $1,000-$1,500 less and folds for storage, but trades away the AC
@@ -610,14 +633,15 @@ const schema = {
           </p>
         </div>
 
-        <h2 id="who-should-skip" class="scroll-mt-24">Who Should Skip This Treadmill</h2>
+        <div id="who-should-skip" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Who Should Skip This Treadmill</h2>
         <p>
           As much as we like the T7xe, it isn't the right machine for every
           shopper who lands on this page. If you live somewhere space is
           genuinely tight and you need the treadmill to fold away between
           uses, the fixed frame will frustrate you daily — a dedicated
           folding treadmill from our
-          <a href="/best-folding-treadmill-reviews">folding treadmill guide</a>
+          <a href="/best-folding-treadmill-reviews/">folding treadmill guide</a>
           will serve you far better. If your actual use pattern is light —
           walking a few times a month rather than a consistent running
           habit — you're paying for commercial-duty durability you'll never
@@ -637,8 +661,10 @@ const schema = {
           commercial-grade treadmill that strains your budget, no matter how
           much stronger its spec sheet looks on paper.
         </p>
+        </div>
 
-        <h2 id="verdict" class="scroll-mt-24">Final Verdict</h2>
+        <div id="verdict" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Final Verdict</h2>
         <p>
           The Matrix Fitness T7xe earns its place as one of the strongest
           values in the commercial-adjacent home treadmill category,
@@ -659,14 +685,15 @@ const schema = {
           built for continuous duty is wasted on occasional use, and fully
           worth it on daily use.
         </p>
+        </div>
       </div>
 
-      <div id="faq" class="scroll-mt-24 my-12">
-        <h2 class="text-2xl font-black text-gray-900 mb-6">Frequently Asked Questions</h2>
-        <div class="space-y-4">
-          <div class="bg-gray-50 rounded-2xl p-6">
+      <div id="faq" class="scroll-mt-24">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Is the Matrix Fitness T7xe worth the price?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               For a serious home user who runs regularly and wants genuine
               commercial-grade construction, yes. The AC motor, fixed frame,
               and 400-pound weight capacity are built to the same standard
@@ -675,9 +702,9 @@ const schema = {
               commercial-pedigree brands at a similar spec level.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Does the Matrix T7xe require a subscription?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               No. The Matrix app ecosystem handles workout tracking,
               entertainment streaming, and program logging, but every core
               function of the treadmill — speed, incline, built-in workout
@@ -685,9 +712,9 @@ const schema = {
               paying a monthly fee.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">How does the T7xe compare to the Life Fitness T3?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               The T7xe has a stronger 4.0 CHP motor versus the T3's 3.0 CHP,
               a larger 22-inch-wide deck versus 20 inches, and a
               substantially bigger 15.6-inch touchscreen, all for roughly
@@ -699,9 +726,9 @@ const schema = {
               way in.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">How does the T7xe compare to the NordicTrack Commercial 2950?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               The Commercial 2950 costs roughly $1,000-$1,500 less and folds
               for storage, but it uses a DC motor and relies on an iFit
               subscription to unlock most of its coaching features. The
@@ -711,18 +738,18 @@ const schema = {
               function fully.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Does the Matrix T7xe fold for storage?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               No. The T7xe uses a fixed-frame commercial construction and
               does not fold, consistent with how Matrix builds its gym
               equipment. You'll need a dedicated, permanent spot for it
               rather than planning to store it away between sessions.
             </p>
           </div>
-          <div class="bg-gray-50 rounded-2xl p-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Is the T7xe loud at higher speeds?</h3>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-700 text-sm leading-relaxed">
               We measured it in the same low-60 decibel range as other
               well-built AC-motor treadmills during sustained running, and
               the motor noise stayed flat rather than climbing as speed
@@ -733,29 +760,52 @@ const schema = {
         </div>
       </div>
 
-      <div class="my-12">
-        <h2 class="text-2xl font-black text-gray-900 mb-6">More Matrix &amp; Commercial Treadmill Reviews</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <a href="/matrix-fitness" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+      <!-- Common Mistakes -->
+      <div class="mt-16">
+        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buyers Make</h2>
+        <p class="text-gray-700 leading-relaxed">The T7xe is commercial equipment sold to home buyers, and most mistakes come from that mismatch of expectations.</p>
+        <div class="space-y-6 my-8">
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring the fixed 36 x 81-inch footprint</h3>
+            <p class="text-gray-700 text-sm m-0">This machine does not fold. Measure the space it will occupy permanently, including clearance behind it, before ordering. There is no reclaiming the floor later.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Reading the 4.0 CHP AC motor as overkill</h3>
+            <p class="text-gray-700 text-sm m-0">It is sized for continuous use, which is why it stays cool and quiet under load. That is the feature you are buying; buyers who trade it away for a screen usually regret it.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Expecting consumer-style app integration</h3>
+            <p class="text-gray-700 text-sm m-0">Matrix consoles are built around workout reliability rather than streamed classes. Check exactly which apps the console you are ordering supports rather than assuming parity with iFit machines.</p>
+          </div>
+          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Underestimating delivery and installation</h3>
+            <p class="text-gray-700 text-sm m-0">Commercial frames are heavy and often need in-room assembly by the delivery team. Confirm what the shipping option actually includes before you book it.</p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-16">
+        <h2 class="text-2xl font-black text-gray-900 mb-6">Related Matrix &amp; Commercial Treadmill Guides</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <a href="/matrix-fitness/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
             <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand Guide</span>
             <p class="font-bold text-gray-900 mt-2 mb-1">Matrix Fitness Treadmill Lineup Explained</p>
             <p class="text-sm text-gray-500 leading-relaxed">The full brand story and how Matrix compares to the field.</p>
           </a>
-          <a href="/life-fitness" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand Guide</span>
+          <a href="/life-fitness/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+            <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand Guide</span>
             <p class="font-bold text-gray-900 mt-2 mb-1">Life Fitness Treadmill Lineup</p>
             <p class="text-sm text-gray-500 leading-relaxed">Another AC-motor commercial-pedigree brand, compared directly.</p>
           </a>
-          <a href="/nordictrack-commercial-1750-treadmill" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Review</span>
+          <a href="/nordictrack-commercial-1750-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+            <span class="text-xs font-black uppercase tracking-widest text-green-600">Review</span>
             <p class="font-bold text-gray-900 mt-2 mb-1">NordicTrack Commercial 1750 Review</p>
             <p class="text-sm text-gray-500 leading-relaxed">A folding, lower-cost alternative with a very different console philosophy.</p>
           </a>
         </div>
       </div>
 
-      <div class="bg-gray-900 text-white rounded-2xl p-8 mb-16">
-        <h2 class="text-2xl font-black mb-4">The Bottom Line</h2>
+      <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+        <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
         <p class="text-gray-300 leading-relaxed mb-4">
           The <strong class="text-white">Matrix Fitness T7xe</strong> is one
           of the strongest genuinely commercial-grade treadmills available
@@ -767,8 +817,8 @@ const schema = {
         </p>
         <p class="text-gray-300 leading-relaxed">
           Comparing your options first? See the
-          <a href="/matrix-fitness" class="text-[#5AA9FF] font-bold no-underline">Matrix Fitness brand guide</a>
-          or the <a href="/life-fitness" class="text-[#5AA9FF] font-bold no-underline">Life Fitness brand guide</a>
+          <a href="/matrix-fitness/" class="text-[#5AA9FF] font-bold no-underline">Matrix Fitness brand guide</a>
+          or the <a href="/life-fitness/" class="text-[#5AA9FF] font-bold no-underline">Life Fitness brand guide</a>
           for how every current commercial-pedigree model stacks up.
         </p>
       </div>
