@@ -1,0 +1,708 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "Treadmill Troubleshooting (2026): Won't Start, Cuts Out, Errors";
+const description =
+  "A diagnosis order for the faults home treadmills actually develop — dead console, mid-session shutdowns, error codes and new noises — and the ones to stop using.";
+
+const FAULTS = [
+  {
+    symptom: "Nothing at all — console dead",
+    first: "Safety key seated? Outlet live? Power switch on?",
+    then: "Try a different outlet. Check the machine's own fuse if it has one.",
+  },
+  {
+    symptom: "Console lights, belt won't move",
+    first: "Speed set above zero? Any error code showing?",
+    then: "Usually a controller or motor fault. Stop and call support.",
+  },
+  {
+    symptom: "Cuts out mid-session",
+    first: "Extension lead or shared circuit? Machine hot to touch?",
+    then: "Plug direct to a wall outlet. If it recurs, suspect thermal cut-out.",
+  },
+  {
+    symptom: "Trips the breaker on start-up",
+    first: "Shared circuit with another heavy load?",
+    then: "Stop using it. This is an electrical fault for a technician.",
+  },
+  {
+    symptom: "Belt keeps running after the safety key is pulled",
+    first: "Nothing — do not diagnose this one.",
+    then: "Stop using the machine immediately. Safety system failure.",
+  },
+  {
+    symptom: "Burning or hot-plastic smell",
+    first: "Unplug at the wall.",
+    then: "Do not run it again. Motor, controller or wiring fault.",
+  },
+  {
+    symptom: "New grinding or rumbling noise",
+    first: "Front or rear of the machine? Under load or empty?",
+    then: "Rear usually a roller bearing; front often the drive belt or motor.",
+  },
+  {
+    symptom: "Speed surges or fluctuates on its own",
+    first: "Is the deck dry? Is the belt over-tight?",
+    then: "Lubricate and re-check tension. If it persists, controller fault.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Guides", item: "https://www.treadmillreviewsusa.com/best-of/" },
+        { "@type": "ListItem", position: 3, name: "Treadmill Troubleshooting", item: "https://www.treadmillreviewsusa.com/treadmill-troubleshooting/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Why won't my treadmill turn on?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Check the safety key first — it is the single most common cause and it only works when fully seated in its recess. Then confirm the outlet is live with another appliance, that the machine's own power switch is on, and that any reset button or fuse near the power inlet has not tripped. Those four checks resolve most dead-console cases.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Why does my treadmill stop in the middle of a workout?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The most common causes are a power supply that sags under load — usually an extension lead or a shared circuit — and a thermal cut-out tripping because the motor is running hot. Plug the machine directly into a wall outlet on its own circuit, and lubricate the deck, since a dry deck is what makes a motor run hot in the first place.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What does a treadmill error code mean?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Codes are manufacturer-specific and there is no universal standard, so the manual or the support line is the only reliable source. Broadly, they group into speed-sensor faults, motor or controller faults, incline-motor faults and communication faults between the console and the controller. Note the code before you unplug, because many clear on power cycling.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Why is my treadmill making a grinding noise?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Where the noise comes from narrows it quickly. A rumble or grind at the rear is usually a roller bearing, often caused by an over-tightened belt. A squeal or grind at the front is more often the drive belt or the motor. A rhythmic thud in time with your steps is normally the belt seam or a worn deck rather than a bearing.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "When should you stop using a treadmill and call a technician?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Immediately, and without further diagnosis, if you smell burning or hot plastic, if the breaker trips when the machine starts, if the belt keeps moving after the safety key is pulled, or if the speed surges on its own. The first two are electrical faults, the third is a safety-system failure and the fourth is a controller fault. None is a wait-and-see situation.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is it worth repairing an old treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "It depends on which part failed and what the machine cost. Belts, rollers and consoles are usually worth replacing. A motor or controller board on a mid-range machine past five years often costs a third of a better new treadmill, at which point replacement generally wins. On commercial-grade frames the arithmetic flips, because the frame itself is worth keeping.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", name: "Morgan Reyes" },
+      datePublished: "2026-09-03",
+      dateModified: "2026-09-03",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-09-03",
+    modifiedTime: "2026-09-03",
+    author: "Morgan Reyes",
+    section: "Fitness Equipment",
+    tags: [
+      "treadmill troubleshooting",
+      "treadmill not working",
+      "treadmill error code",
+      "treadmill repair",
+      "home gym",
+    ],
+  }}
+  jsonLd={schema}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-trouble" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-trouble)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Owner's Guide
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated September 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          Treadmill <span class="text-[#5AA9FF]">Troubleshooting</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          A useful share of "broken" treadmills are a safety key sitting
+          slightly proud of its recess. Here is what to check, in what order —
+          and the four symptoms that mean stop and call someone rather than
+          investigate.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#table" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            Find Your Symptom
+          </a>
+          <a href="#stop-now" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            When to Stop Immediately
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
+          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">September 3, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="7.3k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-red-50 border border-red-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-red-900">Stop using the machine now</strong> — do
+          not troubleshoot — if you smell burning or hot plastic, if the breaker
+          trips when it starts, if the belt keeps moving after the safety key is
+          pulled, or if the speed surges on its own. Unplug it and contact the
+          manufacturer. Everything else on this page assumes none of those four
+          apply.
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#stop-now" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Four Symptoms: Stop Immediately</a>
+          <a href="#table" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Symptom Lookup Table</a>
+          <a href="#wont-start" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. It Won't Turn On</a>
+          <a href="#cuts-out" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. It Cuts Out Mid-Session</a>
+          <a href="#error-codes" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Error Codes and What They Group Into</a>
+          <a href="#noises" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Diagnosing Noises by Location</a>
+          <a href="#incline" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Incline and Console Faults</a>
+          <a href="#warranty" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Warranty, and What Voids It</a>
+          <a href="#repair-replace" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Repair or Replace?</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          Treadmill faults sort into three groups: things that are not faults at
+          all, things a competent owner can resolve in ten minutes, and things
+          that need a technician and sometimes a decision about whether the
+          machine is worth keeping. The trick is telling them apart before you
+          take anything apart.
+        </p>
+
+        <div id="stop-now" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Four Symptoms: Stop Immediately</h2>
+          <p>
+            These are not diagnostic puzzles. If your machine is doing any of
+            them, unplug it and contact the manufacturer or a technician rather
+            than working through the rest of this page.
+          </p>
+          <p>
+            <strong>A burning or hot-plastic smell.</strong> Something is
+            overheating — motor windings, a controller component, or wiring. A
+            faint smell of warm electronics on a brand new machine during the
+            first few hours is normal and fades; a burning smell on an
+            established machine is not.
+          </p>
+          <p>
+            <strong>The breaker trips when it starts.</strong> A treadmill draws a
+            large surge on start-up, so a shared circuit can trip innocently — try
+            it on its own circuit once. If it still trips, that is a fault in the
+            machine and continuing to reset the breaker is a genuinely bad idea.
+          </p>
+          <p>
+            <strong>The belt keeps moving after the safety key is pulled.</strong>
+            The safety key is the only feature on the machine that helps at the
+            moment something goes wrong. If it does not stop the belt, the machine
+            has no functioning emergency stop and should not be used by anyone
+            until it is repaired.
+          </p>
+          <p>
+            <strong>The speed surges on its own.</strong> Unexpected acceleration
+            is how people get thrown off treadmills. It usually points at the
+            controller or the speed sensor, and neither is an owner-serviceable
+            item.
+          </p>
+        </div>
+
+        <div id="table" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Symptom Lookup Table</h2>
+          <p>
+            Find the closest match, then read the corresponding section below for
+            the detail. "First" is what to check before anything else; "then" is
+            where it usually leads.
+          </p>
+        </div>
+      </div>
+
+      <div class="not-prose my-8 overflow-x-auto">
+        <table class="min-w-[700px] w-full text-sm border border-gray-200 rounded-2xl overflow-hidden">
+          <thead class="bg-gray-900 text-white">
+            <tr>
+              <th class="text-left px-4 py-3 font-black">Symptom</th>
+              <th class="text-left px-4 py-3 font-black">Check First</th>
+              <th class="text-left px-4 py-3 font-black">Where It Usually Leads</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              FAULTS.map((row, i) => (
+                <tr class={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                  <td class="px-4 py-3 font-bold text-gray-900 align-top">{row.symptom}</td>
+                  <td class="px-4 py-3 text-gray-700 align-top">{row.first}</td>
+                  <td class="px-4 py-3 text-gray-500 align-top">{row.then}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="wont-start" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. It Won't Turn On</h2>
+          <p>
+            <strong>The safety key.</strong> Check this first, every time. The
+            magnetic key must sit fully in its recess to close the circuit, and a
+            key that looks seated but is a millimetre proud will leave a console
+            completely dead. Remove it, wipe the recess, and press it firmly home.
+            A large share of "my treadmill died" reports end here. Keys also get
+            weaker over years and are cheap to replace.
+          </p>
+          <p>
+            <strong>The outlet.</strong> Confirm it is live with something else —
+            a lamp or a phone charger. GFCI outlets in garages and basements trip
+            without any obvious indication and are a common culprit for a machine
+            that worked yesterday.
+          </p>
+          <p>
+            <strong>The machine's own switch and fuse.</strong> Most treadmills
+            have a power switch near the inlet, and many have a resettable circuit
+            breaker beside it — a small button that pops out when tripped. Push it
+            back in. If it trips again immediately, stop; that is section one
+            territory.
+          </p>
+          <p>
+            <strong>The lead itself.</strong> Check the cable for damage where it
+            passes under the frame, which is where it gets crushed, and make sure
+            it is plugged firmly into the machine as well as the wall.
+          </p>
+          <p>
+            If all four check out and the console is still dead, the fault is
+            inside — usually the controller board or the console wiring loom — and
+            that is a support call rather than a job for you.
+          </p>
+        </div>
+
+        <div id="cuts-out" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. It Cuts Out Mid-Session</h2>
+          <p>
+            Intermittent shutdowns are the most frequently misdiagnosed treadmill
+            fault, because the machine works perfectly when you go to investigate
+            it. There are two dominant causes and they are both fixable.
+          </p>
+          <p>
+            <strong>Power supply sag.</strong> A treadmill pulls a large surge on
+            start-up and a substantial steady current after that. Run it through an
+            extension lead, a thin cable, or a circuit shared with something else
+            heavy, and the voltage dips enough for the controller to read a fault
+            and shut down protectively. The fix is to plug directly into a wall
+            outlet on a circuit that is not shared. This single change resolves a
+            surprising number of "faulty" machines.
+          </p>
+          <p>
+            <strong>Thermal cut-out.</strong> Most machines will shut down to
+            protect themselves when the motor or controller gets too hot. If the
+            shutdowns happen further into longer sessions, or the motor hood is
+            hot to the touch, that is the pattern. The underlying cause is nearly
+            always friction — a dry deck making the motor work far harder than it
+            should — with dust in the motor compartment trapping the resulting
+            heat. Lubricate the deck and vacuum the housing; our
+            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a>
+            covers the first and the
+            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance schedule</a>
+            the second.
+          </p>
+          <p>
+            A third, less common cause is a failing speed sensor or a magnet that
+            has shifted, which makes the console believe the belt has stopped when
+            it has not. That usually shows an error code alongside the shutdown,
+            which takes you to the next section.
+          </p>
+        </div>
+
+        <div id="error-codes" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Error Codes and What They Group Into</h2>
+          <p>
+            There is no standard for treadmill error codes. An E1 on one brand and
+            an E1 on another are unrelated, and generic lists found online are
+            frequently wrong for your machine. Your manual, or the manufacturer's
+            support line with your model and serial number, is the only reliable
+            source.
+          </p>
+          <p>
+            That said, codes group into four families, and knowing which one you
+            are in tells you how worried to be. <strong>Speed sensor
+            faults</strong> mean the console cannot read belt speed — often a
+            displaced magnet or a loose sensor lead, and sometimes genuinely
+            minor. <strong>Motor and controller faults</strong> mean an overload
+            or an overcurrent condition, and these are the ones that frequently
+            trace back to a dry deck. <strong>Incline faults</strong> mean the
+            incline motor cannot reach its calibrated position, and often clear
+            with a re-calibration routine. <strong>Communication faults</strong>
+            mean the console and the controller have stopped talking, usually a
+            connector rather than a board.
+          </p>
+          <p>
+            Practical steps: note the exact code before you unplug anything, since
+            most clear on a power cycle and you will need it for the support call.
+            Then power the machine down fully at the wall for a minute and restart
+            — this alone resolves a good share of communication and incline faults.
+            If the code recurs, run the machine's calibration routine if it has
+            one; the manual will describe it.
+          </p>
+          <p>
+            A code that returns immediately after a calibration is a hardware
+            fault. At that point you are deciding between a repair quote and a
+            replacement, which is section nine.
+          </p>
+        </div>
+
+        <div id="noises" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Diagnosing Noises by Location</h2>
+          <p>
+            Where a noise comes from narrows the cause faster than what it sounds
+            like. Run the machine empty at a low speed and listen from the front,
+            then the rear, then with someone walking on it.
+          </p>
+          <p>
+            <strong>Rumbling or grinding at the rear.</strong> Usually a rear
+            roller bearing. The most common cause is an over-tightened belt, which
+            loads the bearings continuously — see our
+            <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">belt tension guide</a>
+            for how tight is too tight. A failing bearing gets worse and eventually
+            seizes, so it is worth acting on.
+          </p>
+          <p>
+            <strong>Squealing or grinding at the front.</strong> More often the
+            drive belt inside the motor hood, or the motor bearings. A squeal
+            specifically at start-up or during speed changes points at the drive
+            belt. Both are inside the hood and therefore technician territory on
+            most machines.
+          </p>
+          <p>
+            <strong>A rhythmic thud in time with your footfall.</strong> Normally
+            the belt seam passing over a roller, which is audible on some belts and
+            harmless, or a worn patch in the deck. If it has appeared recently and
+            is getting louder, inspect the deck surface for grooves.
+          </p>
+          <p>
+            <strong>A hum or buzz that was not there before.</strong> Frequently
+            just frame bolts that have settled — re-torque the uprights and the
+            frame fixings, which takes ten minutes and cures more mystery noises
+            than anything else. If it rises and falls with speed, it is the motor.
+          </p>
+          <p>
+            <strong>Clicking that comes and goes.</strong> Check for something
+            trapped under the belt or between the belt and the side rails. It
+            happens more than you would think, and it is the only noise on this
+            list with a satisfying fix.
+          </p>
+        </div>
+
+        <div id="incline" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Incline and Console Faults</h2>
+          <p>
+            Incline motors fail more often than main motors, partly because they
+            are smaller and partly because they are cycled constantly by
+            programmed workouts. The usual symptom is an incline that sticks at
+            one grade, moves in one direction only, or throws a code on start-up
+            during its self-check.
+          </p>
+          <p>
+            Most machines have a calibration routine that drives the incline to
+            both extremes and re-learns its limits, and running it resolves a
+            meaningful share of these faults — particularly after a machine has
+            been moved or folded, which can knock the position sensor out of
+            agreement with reality. The manual will give the button sequence.
+          </p>
+          <p>
+            Console faults split into two. A console that is dead while the machine
+            otherwise has power is usually a connector at the base of the upright,
+            which gets flexed every time a folding machine is folded. A console
+            that works but has an unresponsive area on a touchscreen, or dead
+            buttons, is typically the panel itself and a replacement part.
+          </p>
+          <p>
+            For app-connected machines, a fair number of "console faults" are
+            software: an interrupted firmware update, an expired subscription
+            gating features, or a machine that has lost its network connection and
+            is waiting on a server. Try the machine's manual mode before assuming
+            hardware — if manual speed and incline work, the hardware is fine.
+          </p>
+        </div>
+
+        <div id="warranty" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Warranty, and What Voids It</h2>
+          <p>
+            Before you open anything, find out what you are entitled to. Home
+            treadmill warranties typically run ten years to lifetime on the frame,
+            one to three years on parts, and one year on labour — and the parts and
+            labour terms are what matter for most faults. Many owners pay for
+            repairs they were covered for because they never checked.
+          </p>
+          <p>
+            Opening the motor hood or the console will void the warranty on most
+            machines, and manufacturers can tell. So the sequence on a
+            machine still in warranty is: try the external checks on this page,
+            then call support. Do not get a screwdriver out first, however
+            straightforward the fault looks.
+          </p>
+          <p>
+            Two other things reliably void cover: using a lubricant other than
+            100% silicone, which leaves an unmistakable residue, and evidence of
+            commercial use in a home-warranted machine. If a treadmill lives in an
+            office, a gym or a rental property, check whether the warranty covers
+            that at all — many explicitly do not.
+          </p>
+          <p>
+            Keep the proof of purchase and the serial number somewhere findable.
+            Support lines ask for both, and the serial is usually on a sticker at
+            the front of the frame near the motor hood.
+          </p>
+        </div>
+
+        <div id="repair-replace" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Repair or Replace?</h2>
+          <p>
+            Once you have a quote, the decision is mostly about which part failed
+            and how old the machine is.
+          </p>
+          <p>
+            <strong>Usually worth repairing:</strong> running belts, rear rollers,
+            consoles, safety keys, incline motors. These are consumables or
+            bolt-on parts, they are widely available for mainstream models, and
+            they cost a small fraction of a new machine.
+          </p>
+          <p>
+            <strong>Often not worth repairing:</strong> main drive motors and
+            controller boards on mid-range machines past about five years.
+            Either repair commonly lands at a third of the price of a better new
+            treadmill, and on a machine that has already been running hot for
+            years the other component is frequently next to fail.
+          </p>
+          <p>
+            The exception is commercial-grade hardware, where the frame and motor
+            are built to a standard that justifies keeping. A controller
+            replacement on a Life Fitness or Matrix frame is usually good value
+            precisely because the rest of the machine has a decade left in it.
+          </p>
+          <p>
+            The full version of this arithmetic, including realistic lifespans by
+            tier, is in our
+            <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">treadmill lifespan guide</a>.
+            If you land on replacement, start from
+            <a href="/best-treadmills/" class="text-[#0F62FE] font-medium">our current top picks</a>
+            rather than buying the same model again — the fault that killed the
+            last one is worth designing out.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Why won't my treadmill turn on?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Check the safety key first — it is the single most common cause
+                and it only works when fully seated in its recess. Then confirm
+                the outlet is live with another appliance, that the machine's own
+                power switch is on, and that any reset button or fuse near the
+                power inlet has not tripped. Those four checks resolve most
+                dead-console cases.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Why does my treadmill stop in the middle of a workout?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                The most common causes are a power supply that sags under load —
+                usually an extension lead or a shared circuit — and a thermal
+                cut-out tripping because the motor is running hot. Plug the
+                machine directly into a wall outlet on its own circuit, and
+                lubricate the deck, since a dry deck is what makes a motor run hot
+                in the first place.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What does a treadmill error code mean?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Codes are manufacturer-specific and there is no universal
+                standard, so the manual or the support line is the only reliable
+                source. Broadly, they group into speed-sensor faults, motor or
+                controller faults, incline-motor faults and communication faults
+                between the console and the controller. Note the code before you
+                unplug, because many clear on power cycling.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Why is my treadmill making a grinding noise?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Where the noise comes from narrows it quickly. A rumble or grind
+                at the rear is usually a roller bearing, often caused by an
+                over-tightened belt. A squeal or grind at the front is more often
+                the drive belt or the motor. A rhythmic thud in time with your
+                steps is normally the belt seam or a worn deck rather than a
+                bearing.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">When should you stop using a treadmill and call a technician?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Immediately, and without further diagnosis, if you smell burning
+                or hot plastic, if the breaker trips when the machine starts, if
+                the belt keeps moving after the safety key is pulled, or if the
+                speed surges on its own. The first two are electrical faults, the
+                third is a safety-system failure and the fourth is a controller
+                fault. None is a wait-and-see situation.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is it worth repairing an old treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                It depends on which part failed and what the machine cost. Belts,
+                rollers and consoles are usually worth replacing. A motor or
+                controller board on a mid-range machine past five years often
+                costs a third of a better new treadmill, at which point
+                replacement generally wins. On commercial-grade frames the
+                arithmetic flips, because the frame itself is worth keeping.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Troubleshooting</h2>
+          <p class="text-gray-700 leading-relaxed">Four errors turn a recoverable fault into an expensive one, or a working machine into a voided warranty.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Opening the motor hood while under warranty</h3>
+              <p class="text-gray-700 text-sm m-0">Most manufacturers void cover the moment the hood or console comes off, and they can tell. Since parts are typically covered for one to three years, plenty of owners pay for repairs they were entitled to for free. Run the external checks, then call support — the screwdriver comes out only after you know you are out of warranty.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Resetting a breaker that keeps tripping</h3>
+              <p class="text-gray-700 text-sm m-0">A single trip on a shared circuit can be an innocent start-up surge. A breaker that trips repeatedly on its own circuit is telling you there is a fault drawing current it should not, and resetting it each time to get a workout in is a genuinely bad idea. Stop using the machine and get it looked at.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating a mid-session shutdown as a mystery</h3>
+              <p class="text-gray-700 text-sm m-0">It is nearly always one of two things: an extension lead or shared circuit sagging under load, or a thermal cut-out on a motor running hot because the deck is dry. Both are free to test. Plug directly into a wall outlet, lubricate the deck, vacuum the motor housing — then start suspecting the electronics.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting a generic error-code list online</h3>
+              <p class="text-gray-700 text-sm m-0">Codes are manufacturer-specific and an E1 on one brand means nothing on another, so generic lists send people chasing the wrong component. Note the exact code before you power cycle, then check your manual or ring support with the model and serial number. It takes five minutes and beats replacing a part that was never faulty.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Maintenance Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/treadmill-maintenance/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Pillar Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Maintenance</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The schedule that prevents most of the faults on this page.</p>
+            </a>
+            <a href="/treadmill-belt-slipping/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Fix</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Belt Slipping &amp; Tracking</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Belt-specific symptoms, diagnosed in the right order.</p>
+            </a>
+            <a href="/how-long-do-treadmills-last/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Decision</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">How Long Do Treadmills Last?</p>
+              <p class="text-sm text-gray-500 leading-relaxed">When a repair quote stops being worth paying.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">Safety key, outlet, direct plug, dry
+            deck.</strong> Those four checks account for most home treadmill
+            faults that are not actually faults. Burning smells, tripping
+            breakers, a belt that ignores the safety key and unexpected speed
+            surges are the four that mean stop.
+          </p>
+          <p class="text-gray-300 leading-relaxed">
+            Belt-specific problem? Go to
+            <a href="/treadmill-belt-slipping/" class="text-[#5AA9FF] font-bold no-underline">belt slipping and tracking</a>.
+            Want to stop having these conversations? The
+            <a href="/treadmill-maintenance/" class="text-[#5AA9FF] font-bold no-underline">maintenance schedule</a>
+            prevents most of them.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+</Layout>

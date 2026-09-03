@@ -1,0 +1,696 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "How Long Do Treadmills Last? (2026): Real Lifespans by Tier";
+const description =
+  "Realistic treadmill lifespans by price tier, what actually fails first, the repair-or-replace arithmetic, and why maintained machines last roughly twice as long.";
+
+const TIERS = [
+  {
+    tier: "Budget ($400-$800)",
+    maintained: "5-8 years",
+    neglected: "2-4 years",
+    firstFail: "Deck and belt, then the controller board",
+    note: "Lighter frames and smaller motors leave no margin for a dry deck.",
+  },
+  {
+    tier: "Mid-range ($800-$1,500)",
+    maintained: "8-12 years",
+    neglected: "4-6 years",
+    firstFail: "Belt, then incline motor, then controller",
+    note: "The tier where maintenance makes the biggest difference to outcome.",
+  },
+  {
+    tier: "Premium ($1,500-$2,500)",
+    maintained: "10-15 years",
+    neglected: "5-8 years",
+    firstFail: "Console and electronics before anything mechanical",
+    note: "Frames outlive their touchscreens, which is a real obsolescence risk.",
+  },
+  {
+    tier: "Commercial ($2,500+)",
+    maintained: "15-20 years",
+    neglected: "8-12 years",
+    firstFail: "Belt and deck as routine consumables",
+    note: "Built to be repaired rather than replaced. Parts stay available.",
+  },
+  {
+    tier: "Walking pads ($250-$600)",
+    maintained: "3-5 years",
+    neglected: "2-3 years",
+    firstFail: "Motor, from sustained high duty cycle",
+    note: "Small motors running four hours a day are the limiting factor.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Guides", item: "https://www.treadmillreviewsusa.com/best-of/" },
+        { "@type": "ListItem", position: 3, name: "How Long Do Treadmills Last?", item: "https://www.treadmillreviewsusa.com/how-long-do-treadmills-last/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "How long does a treadmill last on average?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Eight to twelve years for a maintained mid-range home treadmill, and four to six for a neglected one. Budget machines run five to eight years maintained; commercial-grade frames reach fifteen to twenty. The single largest variable is not price but whether the deck has been lubricated, which roughly doubles the outcome at every tier.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What usually breaks first on a treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The belt and deck wear first as normal consumables. After that it depends on the tier: on budget and mid-range machines the controller board or motor is next, usually as a downstream consequence of running hot on a dry deck. On premium machines the console and its software typically become the problem before anything mechanical does.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is it worth repairing a treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Belts, rollers, consoles and incline motors are usually worth replacing. A main motor or controller board on a mid-range machine past five years often costs a third of a better new treadmill, which tips the decision toward replacement. On commercial frames the arithmetic reverses, because the frame and motor have another decade in them.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How many miles will a treadmill last?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Belts are commonly rated in the region of a few thousand miles and decks somewhat longer, but mileage is a poor predictor for home machines. Most home treadmills die from heat damage caused by friction rather than from wearing out, and a lightly used machine that has never been lubricated will fail sooner than a heavily used one that has.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do treadmills last longer if you only walk on them?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Per session, yes — walking loads the motor and deck far less than running. But walkers often use their machines daily and for longer, so total running hours can be higher, and the duty cycle is what wears bearings and belts. The net effect is usually modestly better than a runner's machine, provided the same lubrication schedule is kept.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is a second-hand treadmill a good idea?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "It can be excellent value if you can inspect it, because the failure mode you are avoiding is invisible from a photograph. Lift the belt and feel the deck for dryness, check the belt edges for fraying, run it at several speeds listening for bearing noise, and ask directly when it was last lubricated. A commercial-grade frame at five years old is often a better buy than a new budget machine.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", name: "Morgan Reyes" },
+      datePublished: "2026-09-03",
+      dateModified: "2026-09-03",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-09-03",
+    modifiedTime: "2026-09-03",
+    author: "Morgan Reyes",
+    section: "Fitness Equipment",
+    tags: [
+      "treadmill lifespan",
+      "treadmill repair",
+      "treadmill maintenance",
+      "used treadmill",
+      "home gym",
+    ],
+  }}
+  jsonLd={schema}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-lifespan" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-lifespan)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Owner's Guide
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated September 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          How Long Do <span class="text-[#5AA9FF]">Treadmills</span> Last?
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          Eight to twelve years, or four to six. The gap is not explained by
+          brand or by price — it is almost entirely explained by whether anyone
+          ever lubricated the deck.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#tiers" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            Lifespans by Tier
+          </a>
+          <a href="#repair-replace" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            Repair or Replace?
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
+          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">September 3, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="4.4k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">Where these numbers come from.</strong>
+          The ranges below are drawn from manufacturer warranty terms, owner
+          reports and our own long-term testing, not from a controlled study.
+          Treat them as well-founded expectations rather than measurements — the
+          spread within any tier is wide, and how a machine is used and
+          maintained matters more than which tier it sits in.
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Short Answer</a>
+          <a href="#tiers" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Lifespans by Price Tier</a>
+          <a href="#what-fails" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. What Actually Fails, in Order</a>
+          <a href="#maintenance-effect" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Why Maintenance Doubles the Number</a>
+          <a href="#warranty" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Reading a Warranty as a Lifespan Signal</a>
+          <a href="#obsolescence" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. The Software Obsolescence Problem</a>
+          <a href="#repair-replace" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Repair or Replace: The Arithmetic</a>
+          <a href="#buying-used" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Buying Used, and What to Inspect</a>
+          <a href="#buy-for-life" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Buying for Longevity in the First Place</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          Ask how long a treadmill lasts and the honest answer is a question
+          back: has anyone lubricated the deck? Two identical machines bought on
+          the same day diverge by a factor of two depending on the answer, and
+          that single variable outweighs brand, price and how hard the machine
+          has been worked.
+        </p>
+
+        <div id="short-answer" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. The Short Answer</h2>
+          <p>
+            A maintained mid-range home treadmill lasts eight to twelve years. A
+            neglected one lasts four to six. Budget machines sit a tier below
+            that, commercial-grade frames a tier or two above, and walking pads
+            considerably below everything.
+          </p>
+          <p>
+            What makes those ranges unusual, compared with most household
+            equipment, is how much of the variation is in the owner's hands.
+            Fridges and washing machines fail on a schedule you cannot influence
+            much. Treadmills fail overwhelmingly from one avoidable cause, which
+            means the useful question is not "how long will this last" but "what
+            determines whether it lasts".
+          </p>
+          <p>
+            That framing also changes buying advice. Paying twice as much does buy
+            longevity, but not as much as free maintenance does. A well-maintained
+            $900 machine will comfortably outlive a neglected $2,000 one, and the
+            neglected $2,000 one will feel like the worse purchase to its owner —
+            unfairly.
+          </p>
+        </div>
+
+        <div id="tiers" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Lifespans by Price Tier</h2>
+          <p>
+            "Maintained" below means lubricated every three to six months, belt
+            tension and tracking checked, motor housing kept clean. "Neglected"
+            means none of that, which is the default state of most home
+            treadmills.
+          </p>
+        </div>
+      </div>
+
+      <div class="not-prose my-8 overflow-x-auto">
+        <table class="min-w-[720px] w-full text-sm border border-gray-200 rounded-2xl overflow-hidden">
+          <thead class="bg-gray-900 text-white">
+            <tr>
+              <th class="text-left px-4 py-3 font-black">Tier</th>
+              <th class="text-left px-4 py-3 font-black">Maintained</th>
+              <th class="text-left px-4 py-3 font-black">Neglected</th>
+              <th class="text-left px-4 py-3 font-black">What Fails First</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              TIERS.map((row, i) => (
+                <tr class={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                  <td class="px-4 py-3 font-bold text-gray-900 align-top">{row.tier}</td>
+                  <td class="px-4 py-3 text-green-700 font-bold align-top">{row.maintained}</td>
+                  <td class="px-4 py-3 text-red-700 align-top">{row.neglected}</td>
+                  <td class="px-4 py-3 text-gray-500 align-top">{row.firstFail}<span class="block text-gray-400 mt-1">{row.note}</span></td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p>
+          The pattern worth noticing is that the ratio is roughly two to one at
+          every tier. Maintenance does not add a fixed number of years; it
+          multiplies whatever the machine was capable of. That is consistent with
+          the failure mechanism being thermal rather than mechanical — heat
+          shortens component life proportionally rather than absolutely.
+        </p>
+
+        <div id="what-fails" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. What Actually Fails, in Order</h2>
+          <p>
+            <strong>The belt.</strong> A consumable, and the only part expected to
+            wear out. Years on a lubricated deck; months on a dry one. Replacing
+            it is routine and inexpensive relative to the machine.
+          </p>
+          <p>
+            <strong>The deck board.</strong> Also consumable on many machines, and
+            often reversible — a fair number of decks can be flipped to present an
+            unworn face, effectively doubling their life. Worth asking about
+            before assuming a worn deck is terminal.
+          </p>
+          <p>
+            <strong>The incline motor.</strong> Smaller than the drive motor and
+            cycled constantly by programmed workouts, so it fails more often than
+            people expect. Usually replaceable as a unit.
+          </p>
+          <p>
+            <strong>The controller board.</strong> This is the one that ends
+            machines. It is the component most exposed to cumulative heat, and the
+            heat comes from the motor working against friction. When a four-year
+            treadmill "dies suddenly", this is almost always what died, and a dry
+            deck is almost always why.
+          </p>
+          <p>
+            <strong>The drive motor.</strong> Genuinely durable when run cool.
+            Motors that fail early have nearly always been running against a dry
+            deck or in a dust-choked housing for years.
+          </p>
+          <p>
+            <strong>Rollers and bearings.</strong> Long-lived unless the belt has
+            been over-tightened, which loads them continuously. This is the main
+            way a well-meaning owner shortens a machine's life — see our
+            <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">belt tension guide</a>
+            for how tight is too tight.
+          </p>
+        </div>
+
+        <div id="maintenance-effect" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Why Maintenance Doubles the Number</h2>
+          <p>
+            The mechanism is worth understanding, because it explains why the
+            effect is so large and so invisible. The belt slides across a fixed
+            deck board with your weight pressing them together. Lubricant is the
+            only thing keeping that interface low-friction. As it depletes,
+            friction climbs.
+          </p>
+          <p>
+            The controller responds by feeding the motor more current to hold the
+            set speed, because from its perspective the belt is being slowed by a
+            load. More current is more heat, in the motor windings and in the
+            controller's own power components. Neither has much thermal headroom
+            in a consumer machine.
+          </p>
+          <p>
+            Electronic components degrade with cumulative thermal stress. Running
+            twenty degrees hotter than designed does not fail a board today; it
+            takes years off it. So the owner experiences three quiet years
+            followed by an abrupt failure, and concludes the machine was badly
+            built. The dry deck that caused it was fixable in ten minutes for the
+            price of a bottle of silicone.
+          </p>
+          <p>
+            Dust compounds it. The motor housing draws room air across the motor
+            and controller, and a dust blanket on a board is thermal insulation on
+            the thing that most needs to shed heat. That is why machines on carpet
+            fare worse, and why the annual housing vacuum is on the
+            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance schedule</a>
+            despite feeling optional.
+          </p>
+        </div>
+
+        <div id="warranty" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Reading a Warranty as a Lifespan Signal</h2>
+          <p>
+            Warranty terms are the closest thing to a manufacturer's own estimate
+            of how long each part will last, and they are more informative than
+            the marketing. Read them as three separate numbers.
+          </p>
+          <p>
+            <strong>Frame warranty</strong> is usually ten years to lifetime, and
+            it is the cheapest promise to make — frames rarely fail. A lifetime
+            frame warranty is not evidence of a durable machine.
+          </p>
+          <p>
+            <strong>Parts warranty</strong> is the informative one. One year says
+            the manufacturer expects the electronics to be a risk early. Three to
+            five years is a genuine statement of confidence, and it correlates
+            well with the machines that turn up in owner reports still running at
+            ten years. This is the number to compare between models.
+          </p>
+          <p>
+            <strong>Labour warranty</strong> is usually one year and occasionally
+            two. It matters more than it looks, because a call-out on an
+            out-of-warranty repair is often a meaningful share of the total cost.
+          </p>
+          <p>
+            One caveat that catches people: home warranties are generally void if
+            the machine is used commercially, which includes offices, rental
+            properties and shared building gyms. If that describes your situation,
+            check before you buy — the machine may be uncovered from day one.
+          </p>
+        </div>
+
+        <div id="obsolescence" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. The Software Obsolescence Problem</h2>
+          <p>
+            Mechanical lifespan is no longer the only clock running. On
+            subscription-connected machines, the console is a tablet, and tablets
+            age on a technology cycle rather than an engineering one.
+          </p>
+          <p>
+            The realistic risks are that an app stops supporting older console
+            hardware, that a subscription price rises well beyond what the
+            experience is worth, or that the interactive content the machine was
+            sold on becomes unavailable. None of those stops the belt turning, but
+            all of them can leave a perfectly good frame feeling obsolete after
+            five or six years.
+          </p>
+          <p>
+            This is a real argument for machines that work fully without a
+            subscription. Sole's approach — a plain console with manual speed and
+            incline, no account required — has aged better than the touchscreen
+            generation of the same era, and it is a large part of why those
+            machines appear so often in our recommendations. Our
+            <a href="/sole-fitness/" class="text-[#0F62FE] font-medium">Sole brand guide</a>
+            covers the trade-off, and the
+            <a href="/nordictrack/" class="text-[#0F62FE] font-medium">NordicTrack guide</a>
+            is candid about the other side of it.
+          </p>
+          <p>
+            The practical test before buying: if the subscription ended tomorrow,
+            would this machine still do what you want? If the answer is no, you
+            are buying a service with a treadmill attached, and its useful life is
+            the service's life rather than the frame's.
+          </p>
+        </div>
+
+        <div id="repair-replace" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Repair or Replace: The Arithmetic</h2>
+          <p>
+            A workable rule: if the repair costs more than half what an equivalent
+            new machine would, and the treadmill is past two-thirds of its
+            expected life for its tier, replace it. Otherwise repair.
+          </p>
+          <p>
+            <strong>Repair.</strong> Belts, rollers, consoles, safety keys,
+            incline motors, deck boards. These are bolt-on parts, widely available
+            for mainstream models, and cheap relative to the machine. A belt and
+            deck refresh on a good frame is close to a new treadmill in feel.
+          </p>
+          <p>
+            <strong>Usually replace.</strong> A drive motor or controller board on
+            a budget or mid-range machine past five years. Either repair commonly
+            lands near a third of the price of a better new treadmill, and on a
+            machine that has been running hot for years the other component is
+            frequently next in line. Paying twice is the trap here.
+          </p>
+          <p>
+            <strong>The exception.</strong> Commercial-grade frames invert the
+            rule. A controller replacement on a Life Fitness or Matrix machine is
+            usually good value, because the frame, deck and motor genuinely have
+            another decade in them and parts stay available. These machines are
+            designed to be repaired, and the second-hand market reflects that.
+          </p>
+          <p>
+            If you land on replacement, the fault that killed the last machine is
+            worth designing out rather than repeating: start from our
+            <a href="/best-treadmills/" class="text-[#0F62FE] font-medium">current top picks</a>
+            or, if the machine mainly gets walked on, the
+            <a href="/best-walking-treadmills/" class="text-[#0F62FE] font-medium">walking treadmill guide</a>.
+          </p>
+        </div>
+
+        <div id="buying-used" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Buying Used, and What to Inspect</h2>
+          <p>
+            Second-hand treadmills can be outstanding value precisely because the
+            thing that determines their remaining life is invisible in a listing
+            photograph. A five-year-old commercial frame that has been maintained
+            is a better machine than a new budget treadmill at the same money.
+            A five-year-old one that has not been is scrap.
+          </p>
+          <p>
+            Inspect in this order. <strong>Lift the belt</strong> at the centre of
+            the deck and feel the surface underneath — slick means maintained,
+            bare and dry means the electronics have been cooking. This is the
+            single most informative check and takes ten seconds.
+            <strong>Check the belt edges</strong> for fraying, which indicates it
+            has been running off-centre. <strong>Run it</strong> at several
+            speeds and listen at both ends for bearing noise.
+            <strong>Cycle the incline</strong> through its full range, since
+            incline motors are a common failure. And <strong>ask directly</strong>
+            when it was last lubricated — the answer, and how confidently it
+            comes, tells you most of what you need.
+          </p>
+          <p>
+            Factor in logistics before agreeing a price. Treadmills are heavy and
+            awkward, most need two people and a van, and some will not fit through
+            a standard doorway without partial disassembly. A bargain that needs a
+            professional move is not always a bargain.
+          </p>
+          <p>
+            Finally, check parts availability for the model before buying anything
+            more than a few years old. A machine from a brand that has left the
+            market may be unrepairable regardless of condition.
+          </p>
+        </div>
+
+        <div id="buy-for-life" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Buying for Longevity in the First Place</h2>
+          <p>
+            If you want a machine that lasts, the signals worth weighting are not
+            the ones on the front of the box.
+          </p>
+          <p>
+            <strong>Parts warranty length</strong> over frame warranty length, for
+            the reasons in section five. <strong>Weight capacity</strong> as a
+            proxy for frame gauge — a machine with margin flexes less and holds
+            its tracking. <strong>Machine weight itself</strong>, which correlates
+            with the same thing. <strong>Independence from a subscription</strong>,
+            so the console does not become the limiting factor. And
+            <strong>parts availability</strong>, which favours established brands
+            with a service network over whichever direct-to-consumer name is
+            currently cheapest.
+          </p>
+          <p>
+            What matters less than the marketing suggests: motor horsepower beyond
+            about 3.0 CHP for home use, top speed, and screen size. None of those
+            extends a machine's life, and the last one shortens its useful life if
+            it ties you to a subscription.
+          </p>
+          <p>
+            Then do the maintenance. It is the cheapest performance upgrade
+            available and the only one that compounds: our
+            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance schedule</a>
+            is under an hour a year, and it is worth more to a treadmill's
+            lifespan than doubling the purchase price.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How long does a treadmill last on average?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Eight to twelve years for a maintained mid-range home treadmill,
+                and four to six for a neglected one. Budget machines run five to
+                eight years maintained; commercial-grade frames reach fifteen to
+                twenty. The single largest variable is not price but whether the
+                deck has been lubricated, which roughly doubles the outcome at
+                every tier.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What usually breaks first on a treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                The belt and deck wear first as normal consumables. After that it
+                depends on the tier: on budget and mid-range machines the
+                controller board or motor is next, usually as a downstream
+                consequence of running hot on a dry deck. On premium machines the
+                console and its software typically become the problem before
+                anything mechanical does.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is it worth repairing a treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Belts, rollers, consoles and incline motors are usually worth
+                replacing. A main motor or controller board on a mid-range machine
+                past five years often costs a third of a better new treadmill,
+                which tips the decision toward replacement. On commercial frames
+                the arithmetic reverses, because the frame and motor have another
+                decade in them.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How many miles will a treadmill last?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Belts are commonly rated in the region of a few thousand miles and
+                decks somewhat longer, but mileage is a poor predictor for home
+                machines. Most home treadmills die from heat damage caused by
+                friction rather than from wearing out, and a lightly used machine
+                that has never been lubricated will fail sooner than a heavily
+                used one that has.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Do treadmills last longer if you only walk on them?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Per session, yes — walking loads the motor and deck far less than
+                running. But walkers often use their machines daily and for
+                longer, so total running hours can be higher, and the duty cycle
+                is what wears bearings and belts. The net effect is usually
+                modestly better than a runner's machine, provided the same
+                lubrication schedule is kept.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is a second-hand treadmill a good idea?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                It can be excellent value if you can inspect it, because the
+                failure mode you are avoiding is invisible from a photograph. Lift
+                the belt and feel the deck for dryness, check the belt edges for
+                fraying, run it at several speeds listening for bearing noise, and
+                ask directly when it was last lubricated. A commercial-grade frame
+                at five years old is often a better buy than a new budget machine.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes That Shorten a Treadmill's Life</h2>
+          <p class="text-gray-700 leading-relaxed">Three of these four are things owners actively do. The last is a buying decision made years earlier.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming a lifetime frame warranty means a durable machine</h3>
+              <p class="text-gray-700 text-sm m-0">Frames almost never fail, so a lifetime frame warranty is the cheapest promise a manufacturer can make. The informative number is the parts warranty: one year signals low confidence in the electronics, three to five is a genuine statement. Compare that figure between models and ignore the headline frame term.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying twice as much machine instead of maintaining the one you have</h3>
+              <p class="text-gray-700 text-sm m-0">Price buys longevity, but not nearly as much as free maintenance does. A well-maintained $900 treadmill will outlive a neglected $2,000 one comfortably. If the budget is a choice between a better machine and no maintenance habit, the cheaper machine with the habit is the better outcome.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Repairing a mid-range machine twice</h3>
+              <p class="text-gray-700 text-sm m-0">When a controller board fails on a five-year-old machine that has been running hot, the motor has been through the same years of thermal stress and is often next. Paying a third of a new treadmill's price for the first repair and then facing the second is the common trap. Past two-thirds of expected life, weigh replacement seriously.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring the subscription clock when buying</h3>
+              <p class="text-gray-700 text-sm m-0">A frame can have fifteen years in it while its console has five, and an app that drops support for older hardware ends a machine's useful life without anything breaking. Before buying, ask whether the treadmill still does what you want if the subscription ended tomorrow. If not, you are buying a service with a treadmill attached.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Ownership Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/treadmill-maintenance/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Pillar Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Maintenance</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The under-an-hour-a-year schedule that doubles these numbers.</p>
+            </a>
+            <a href="/treadmill-belt-lubrication/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">How-To</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Belt Lubrication</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The one job that explains most of the gap between the columns.</p>
+            </a>
+            <a href="/treadmill-troubleshooting/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Diagnosis</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Troubleshooting</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Work out what has failed before you price a repair.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">Eight to twelve years maintained, four to
+            six neglected</strong> — and the ratio holds at every price tier,
+            because the failure mechanism is heat rather than wear. Maintenance
+            multiplies whatever the machine was capable of; it does not add a
+            fixed number of years.
+          </p>
+          <p class="text-gray-300 leading-relaxed">
+            Keeping the one you have? Start with the
+            <a href="/treadmill-maintenance/" class="text-[#5AA9FF] font-bold no-underline">maintenance schedule</a>.
+            Replacing it? See our
+            <a href="/best-treadmills/" class="text-[#5AA9FF] font-bold no-underline">current top picks</a>
+            and buy on parts warranty rather than frame warranty.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+</Layout>

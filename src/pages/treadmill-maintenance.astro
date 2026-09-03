@@ -1,0 +1,721 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "Treadmill Maintenance (2026): The Complete Owner's Schedule";
+const description =
+  "The jobs that decide whether a treadmill lasts four years or twelve — belt lubrication, tension, tracking and motor care — with a schedule and honest time costs.";
+
+const SCHEDULE = [
+  {
+    when: "After every session",
+    job: "Wipe the console, handrails and deck rails",
+    time: "30 seconds",
+    why: "Sweat is mildly corrosive and gets into console seams and bolt heads.",
+  },
+  {
+    when: "Weekly",
+    job: "Vacuum around and under the machine",
+    time: "3 minutes",
+    why: "Dust drawn into the motor housing is the single biggest cause of early motor failure.",
+  },
+  {
+    when: "Monthly",
+    job: "Check belt tension and tracking",
+    time: "5 minutes",
+    why: "A drifting belt destroys its own edge against the frame within weeks.",
+  },
+  {
+    when: "Every 3-6 months",
+    job: "Lubricate the deck with 100% silicone",
+    time: "10 minutes",
+    why: "A dry deck multiplies motor load. This is the job that kills treadmills.",
+  },
+  {
+    when: "Every 6 months",
+    job: "Check and re-torque frame and upright bolts",
+    time: "10 minutes",
+    why: "Settled bolts are why a quiet machine develops a hum in year two.",
+  },
+  {
+    when: "Annually",
+    job: "Open the motor hood and vacuum the compartment",
+    time: "20 minutes",
+    why: "Unplug first. Dust on the motor and controller board traps heat.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Guides", item: "https://www.treadmillreviewsusa.com/best-of/" },
+        { "@type": "ListItem", position: 3, name: "Treadmill Maintenance", item: "https://www.treadmillreviewsusa.com/treadmill-maintenance/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "How often should you service a treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Wipe it down after each session, vacuum around it weekly, check belt tension and tracking monthly, lubricate the deck every three to six months, and vacuum inside the motor hood once a year with the machine unplugged. That is roughly forty minutes of work across a whole year, and it is the difference between a machine that lasts four years and one that lasts twelve.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What happens if you never lubricate a treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Friction between the belt and the deck rises steadily, the motor draws more current to hold the same speed, and heat builds in the motor and the speed controller. The usual sequence is a belt that starts to hesitate under foot, then a controller board failure or a burnt-out motor. It is the most common cause of premature treadmill death and the easiest one to avoid.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What lubricant should you use on a treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "100% silicone, applied under the belt, and nothing else. Never use WD-40, petroleum oils, cooking sprays or general-purpose lubricants — they attack the belt backing and the deck laminate, and some are flammable near a warm motor. Check your manual first, because a few decks ship pre-waxed and must not be lubricated at all.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How do you know if a treadmill belt needs tightening?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Walk on it at 3 mph and shift your weight onto one foot. If the belt hesitates or slips momentarily, it is too loose. The other check is to lift the belt at the centre of the deck — you should be able to raise it two to three inches, no more. Over-tightening is a real hazard: it loads the bearings and stretches the belt permanently.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is treadmill maintenance worth doing yourself?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The routine jobs, yes — lubrication, tension, tracking and cleaning need no expertise and no tools beyond the hex key that came in the box. Anything involving the motor, the controller board or mains wiring is a technician's job, and opening the console on a machine still under warranty will usually void it. The line is simple: if it needs a screwdriver on an electrical assembly, stop.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does treadmill maintenance actually extend its life?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Substantially. Owner reports and warranty patterns consistently show maintained machines running eight to twelve years against four to six for neglected ones, and the gap is almost entirely explained by deck lubrication. Given the work amounts to under an hour a year, it is the highest-return thing you can do with a treadmill you already own.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", name: "Morgan Reyes" },
+      datePublished: "2026-09-03",
+      dateModified: "2026-09-03",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-09-03",
+    modifiedTime: "2026-09-03",
+    author: "Morgan Reyes",
+    section: "Fitness Equipment",
+    tags: [
+      "treadmill maintenance",
+      "treadmill lubrication",
+      "treadmill belt",
+      "treadmill care",
+      "home gym",
+    ],
+  }}
+  jsonLd={schema}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-maint" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-maint)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Owner's Guide
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated September 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          Treadmill <span class="text-[#5AA9FF]">Maintenance</span>, Properly
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          Under an hour of work a year is the difference between a treadmill
+          that lasts four years and one that lasts twelve. Here is the whole
+          schedule, what each job actually does, and the three mistakes that
+          destroy machines.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#schedule" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            See the Schedule
+          </a>
+          <a href="#lubrication" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            The Job That Matters Most
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
+          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">September 3, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="4.7k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-red-50 border border-red-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-red-900">Before anything else:</strong> unplug the
+          machine at the wall before you lift a belt, remove a motor hood or put
+          a tool anywhere near it. Treadmills store no dangerous charge once
+          unplugged, but they do start unexpectedly if a console button is
+          knocked while your hands are under the belt. Your manual overrides
+          everything on this page — intervals and lubricant type vary by model,
+          and a few decks must never be lubricated at all.
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#why" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Why Maintenance Decides Lifespan</a>
+          <a href="#schedule" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The Complete Schedule</a>
+          <a href="#lubrication" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Lubrication: The Job That Matters Most</a>
+          <a href="#tension" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Belt Tension and Tracking</a>
+          <a href="#cleaning" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Cleaning, Dust and Sweat</a>
+          <a href="#motor" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Motor, Power and Electronics</a>
+          <a href="#moving" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Folding, Moving and Storage</a>
+          <a href="#technician" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. What to Leave to a Technician</a>
+          <a href="#economics" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. What Neglect Actually Costs</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          Most treadmills do not wear out. They are killed, slowly, by a dry
+          deck — and the owner never knows it is happening, because the failure
+          arrives as a dead controller board four years in and looks like bad
+          luck. The total work required to prevent that is about forty minutes
+          spread across a year.
+        </p>
+
+        <div id="why" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Why Maintenance Decides Lifespan</h2>
+          <p>
+            A treadmill is a belt being dragged across a stationary board with a
+            person standing on it. Everything else — the motor, the controller,
+            the console — exists to keep that happening at a constant speed. So
+            the single variable that determines how hard the whole machine works
+            is the friction between the belt and the deck, and that friction is
+            almost entirely under your control.
+          </p>
+          <p>
+            When a deck is properly lubricated, the motor holds pace with a
+            modest current draw and runs cool. As the lubricant depletes,
+            friction rises, and the controller compensates by feeding the motor
+            more current to maintain the same belt speed. More current means
+            more heat, in both the motor windings and the speed controller
+            board. Heat is what kills electronics, and it does so cumulatively
+            rather than suddenly.
+          </p>
+          <p>
+            This is why the failure mode is so misleading. The owner notices
+            nothing for two or three years, then the machine develops a hesitation
+            under foot, then one day the controller board fails and the repair
+            quote is a third of what the treadmill cost. Nothing dramatic
+            happened. The deck simply ran dry eighteen months earlier and the
+            electronics have been cooking ever since.
+          </p>
+          <p>
+            The practical consequence is that maintenance return is wildly
+            asymmetric. Skipping the annual motor-hood vacuum costs you a little.
+            Skipping lubrication for two years can cost you the machine. If you
+            do exactly one thing from this page, make it the lubrication
+            schedule in section three.
+          </p>
+        </div>
+
+        <div id="schedule" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The Complete Schedule</h2>
+          <p>
+            Intervals below assume normal home use — roughly three to five
+            sessions a week. Halve them if the machine runs several hours a day
+            or lives somewhere dusty like a garage or a carpeted room.
+          </p>
+        </div>
+      </div>
+
+      <div class="not-prose my-8 overflow-x-auto">
+        <table class="min-w-[640px] w-full text-sm border border-gray-200 rounded-2xl overflow-hidden">
+          <thead class="bg-gray-900 text-white">
+            <tr>
+              <th class="text-left px-4 py-3 font-black">Interval</th>
+              <th class="text-left px-4 py-3 font-black">Job</th>
+              <th class="text-left px-4 py-3 font-black">Time</th>
+              <th class="text-left px-4 py-3 font-black">Why It Matters</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              SCHEDULE.map((row, i) => (
+                <tr class={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                  <td class="px-4 py-3 font-bold text-gray-900 align-top">{row.when}</td>
+                  <td class="px-4 py-3 text-gray-700 align-top">{row.job}</td>
+                  <td class="px-4 py-3 text-gray-700 align-top">{row.time}</td>
+                  <td class="px-4 py-3 text-gray-500 align-top">{row.why}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p>
+          Added up, that is well under an hour a year. The reason it does not get
+          done is not the time cost — it is that none of these jobs has a
+          deadline that announces itself. Nothing goes wrong the week you skip
+          them, which is precisely why they get skipped for three years running.
+          Put the lubrication date in a calendar and the rest tends to follow.
+        </p>
+
+        <div id="lubrication" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Lubrication: The Job That Matters Most</h2>
+          <p>
+            Deck lubrication sits between the underside of the belt and the top
+            of the deck board. It is not for the motor, not for the rollers, and
+            not for the hinge. Its entire purpose is to keep the belt sliding
+            over the board with as little resistance as possible, which keeps
+            motor current — and therefore heat — low.
+          </p>
+          <p>
+            <strong>Use 100% silicone and nothing else.</strong> Most
+            manufacturers supply a bottle with the machine and sell refills.
+            Never use WD-40, motor oil, cooking spray or a general-purpose
+            lubricant: petroleum products attack the belt backing and the deck
+            laminate, some are flammable near a warm motor, and all of them will
+            void a warranty the moment a technician sees the residue.
+          </p>
+          <p>
+            <strong>Check whether your deck needs it at all.</strong> A minority
+            of machines ship with a pre-waxed or self-lubricating deck that must
+            not be lubricated, because adding silicone to a waxed surface makes a
+            slurry that increases friction rather than reducing it. Your manual
+            will say. Assume nothing on this point.
+          </p>
+          <p>
+            <strong>The method,</strong> in short: unplug the machine, loosen the
+            belt slightly if it is very taut, lift one edge at the midpoint of
+            the deck, and apply silicone in a line along the underside toward the
+            centre — not at the very edges, where it will simply migrate off.
+            Repeat on the other side. Then plug in and walk at 2 mph for three to
+            five minutes to distribute it evenly. Full step-by-step, including
+            how much to use and how to tell when a deck is genuinely dry, is in
+            our
+            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">belt lubrication guide</a>.
+          </p>
+          <p>
+            <strong>Do not over-apply.</strong> Excess silicone runs off the deck
+            and onto the floor, gets flung into the motor compartment, and
+            attracts dust that then forms an abrasive paste. More is emphatically
+            not better here. If silicone is visibly pooling at the edge of the
+            deck or marking the floor, you have used several times too much.
+          </p>
+        </div>
+
+        <div id="tension" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Belt Tension and Tracking</h2>
+          <p>
+            These are two different adjustments made with the same two bolts at
+            the rear of the machine, and confusing them is how people make things
+            worse. <strong>Tension</strong> is how tight the belt is, adjusted by
+            turning both rear bolts equally. <strong>Tracking</strong> is whether
+            the belt runs centred, adjusted by turning one bolt relative to the
+            other.
+          </p>
+          <p>
+            The tension test: walk at around 3 mph and put your weight firmly onto
+            one foot. If the belt hesitates or slips for an instant, it is too
+            loose — tighten each rear bolt a quarter turn, both sides equally,
+            and re-test. The opposite check matters just as much: with the machine
+            off, you should be able to lift the belt two to three inches at the
+            centre of the deck. If you cannot, it is over-tight, which loads the
+            roller bearings, stretches the belt permanently and puts drag on the
+            motor.
+          </p>
+          <p>
+            Tracking is simpler than it looks. Run the belt empty at 3 mph and
+            watch which way it drifts. If it moves right, turn the right rear
+            bolt a quarter turn clockwise; if left, the left bolt. Wait thirty
+            seconds between adjustments, because the belt takes time to settle
+            and the usual mistake is over-correcting in three quick turns. A belt
+            left drifting will grind its own edge against the frame and destroy
+            itself in a matter of weeks, so this is worth catching early.
+          </p>
+          <p>
+            If the belt slips even after tensioning, or drifts back off-centre
+            within a day of every adjustment, the cause is usually elsewhere — a
+            dry deck, a worn belt, a loose drive belt or an uneven floor. Our
+            <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">belt slipping and tracking guide</a>
+            works through those in order.
+          </p>
+        </div>
+
+        <div id="cleaning" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Cleaning, Dust and Sweat</h2>
+          <p>
+            Dust is the second-biggest killer after friction, and the mechanism
+            is straightforward: the motor compartment has a cooling fan, that fan
+            pulls room air across the motor and the controller board, and
+            whatever is in the room air ends up coating both. A layer of dust on
+            a controller board is a thermal blanket on the component you least
+            want to insulate.
+          </p>
+          <p>
+            So vacuum around and under the machine weekly. This matters far more
+            on carpet than on a hard floor — carpet fibres shed continuously and
+            get drawn straight into the housing, which is the main argument for
+            putting a treadmill on a mat even when noise is not a concern. Once a
+            year, with the machine unplugged, remove the motor hood and vacuum
+            the compartment gently. Use a vacuum rather than compressed air,
+            which just relocates the dust deeper into the assembly.
+          </p>
+          <p>
+            Sweat is the other input. It is mildly corrosive and it collects in
+            console seams, around bolt heads and in the gap between the deck and
+            the side rails. Wipe the console, handrails and rails after every
+            session with a damp cloth — not a soaked one, and never spray cleaner
+            directly at a console, where liquid runs straight into the
+            electronics. Avoid alcohol-based and ammonia-based cleaners on
+            touchscreens, which strip anti-glare coatings.
+          </p>
+        </div>
+
+        <div id="motor" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Motor, Power and Electronics</h2>
+          <p>
+            The motor itself needs nothing from you beyond a clean, cool
+            environment. Home treadmill motors are sealed units with no
+            user-serviceable parts, and the correct maintenance is to keep dust
+            off them and let them run at a sensible current draw — which brings
+            you back to lubrication.
+          </p>
+          <p>
+            Power delivery is where owners can do real good or real harm. Plug
+            the machine directly into a wall outlet on a circuit it does not share
+            with other heavy loads. Avoid extension leads and cheap power strips:
+            a treadmill draws a large surge on start-up, and an undersized lead
+            produces a voltage sag that the controller reads as a fault, which is
+            behind a surprising number of intermittent shutdowns. If you want
+            surge protection, use a unit rated for the machine's current draw
+            rather than a generic office strip.
+          </p>
+          <p>
+            Where the machine sits matters too. It should be level — a treadmill
+            on an uneven floor will fight its own belt tracking indefinitely, and
+            no amount of bolt adjustment fixes a twisted frame. Most machines have
+            adjustable rear feet for this. Keep it out of unheated garages and
+            damp basements where you can: condensation on a cold controller board
+            during a temperature swing causes corrosion that never announces
+            itself until the board fails.
+          </p>
+          <p>
+            Finally, use the shutdown the manual specifies. Some machines want
+            the power switch off rather than just the console asleep, and leaving
+            a controller energised continuously for years is an avoidable stress
+            on it.
+          </p>
+        </div>
+
+        <div id="moving" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Folding, Moving and Storage</h2>
+          <p>
+            Folding treadmills add a hinge and a lift assist to the list of things
+            that can wear. The assist — hydraulic on most machines — is what
+            makes the difference between a fold you do daily and one you do twice
+            and abandon. It needs no lubrication, but it does need to be allowed
+            to work: forcing a deck down against a hydraulic cylinder rather than
+            letting it descend at its own rate is how those cylinders fail. Our
+            <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium">folding mechanism primer</a>
+            covers which designs hold up.
+          </p>
+          <p>
+            Always fold with the machine unplugged and the belt stopped, and check
+            the latch has engaged before you walk away. A deck that drops from the
+            folded position is the most dangerous failure a home treadmill has,
+            and it is nearly always a latch that was not properly seated rather
+            than one that broke.
+          </p>
+          <p>
+            Moving a treadmill is a two-person job on anything above entry level,
+            and the correct grip is the frame, never the console uprights or the
+            handrails. Uprights are bolted, not welded, on most consumer machines,
+            and taking the weight of a 200-pound treadmill through them bends the
+            mounting plate. Use the transport wheels for distance and lift only to
+            clear a threshold.
+          </p>
+          <p>
+            For storage over a season: lubricate before storing rather than after,
+            release belt tension slightly so it does not take a set, cover the
+            machine to keep dust out, and keep it somewhere dry. Bringing a cold
+            machine into a warm room and switching it on immediately is a
+            condensation risk — let it reach room temperature first.
+          </p>
+        </div>
+
+        <div id="technician" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. What to Leave to a Technician</h2>
+          <p>
+            The dividing line is simple and worth holding to: mechanical
+            adjustments accessible with the supplied hex key are yours;
+            anything requiring you to open an electrical assembly is not.
+          </p>
+          <p>
+            <strong>Do yourself:</strong> lubrication, belt tension and tracking,
+            cleaning, re-torquing frame bolts, replacing the safety key, vacuuming
+            the motor compartment with the machine unplugged, levelling the feet.
+          </p>
+          <p>
+            <strong>Call someone:</strong> replacing a motor, a controller board
+            or a drive belt; diagnosing a burning smell or a tripped breaker;
+            anything involving mains wiring; and any repair on a machine still
+            under warranty, where opening the console will usually void it
+            outright. Manufacturers generally cover parts for one to three years
+            and labour for one, so check what you are entitled to before paying
+            anybody.
+          </p>
+          <p>
+            Three symptoms mean stop using the machine and get help rather than
+            investigating yourself: a burning or hot-plastic smell, a breaker that
+            trips when the machine starts, and a belt that continues moving after
+            the stop key is pulled. The first two are electrical faults and the
+            third is a safety system failure. None of them is a wait-and-see
+            situation.
+          </p>
+          <p>
+            For symptoms short of those — a machine that will not start, cuts out
+            mid-session, shows an error code or has developed a new noise — work
+            through our
+            <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">treadmill troubleshooting guide</a>
+            first. A useful share of those turn out to be a safety key seated
+            badly or a dry deck.
+          </p>
+        </div>
+
+        <div id="economics" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. What Neglect Actually Costs</h2>
+          <p>
+            Silicone costs a few pounds a bottle and a bottle lasts a couple of
+            years. A replacement controller board is commonly a couple of hundred,
+            plus a call-out. A replacement motor is more, and on a mid-range
+            machine either repair puts you within sight of the price of a new
+            treadmill — which is why so many four-year-old treadmills go to the
+            tip rather than to a technician.
+          </p>
+          <p>
+            Set against that, the whole annual maintenance load is under an hour
+            and one bottle of silicone. There are very few maintenance decisions
+            in any category of household equipment with that return profile, and
+            the reason it still gets skipped is purely that nothing bad happens
+            immediately.
+          </p>
+          <p>
+            There is a resale argument too. A documented maintenance history and a
+            belt in good condition are what separate a second-hand treadmill that
+            sells for a reasonable fraction of its price from one nobody wants.
+            If you expect to upgrade eventually, the maintenance is partly an
+            investment in that.
+          </p>
+          <p>
+            How long a well-maintained machine should actually last, and when
+            repair stops making sense against replacement, is the subject of our
+            <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">treadmill lifespan guide</a>.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How often should you service a treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Wipe it down after each session, vacuum around it weekly, check
+                belt tension and tracking monthly, lubricate the deck every three
+                to six months, and vacuum inside the motor hood once a year with
+                the machine unplugged. That is roughly forty minutes of work
+                across a whole year, and it is the difference between a machine
+                that lasts four years and one that lasts twelve.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What happens if you never lubricate a treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Friction between the belt and the deck rises steadily, the motor
+                draws more current to hold the same speed, and heat builds in the
+                motor and the speed controller. The usual sequence is a belt that
+                starts to hesitate under foot, then a controller board failure or
+                a burnt-out motor. It is the most common cause of premature
+                treadmill death and the easiest one to avoid.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What lubricant should you use on a treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                100% silicone, applied under the belt, and nothing else. Never use
+                WD-40, petroleum oils, cooking sprays or general-purpose
+                lubricants — they attack the belt backing and the deck laminate,
+                and some are flammable near a warm motor. Check your manual first,
+                because a few decks ship pre-waxed and must not be lubricated at
+                all.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How do you know if a treadmill belt needs tightening?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Walk on it at 3 mph and shift your weight onto one foot. If the
+                belt hesitates or slips momentarily, it is too loose. The other
+                check is to lift the belt at the centre of the deck — you should
+                be able to raise it two to three inches, no more. Over-tightening
+                is a real hazard: it loads the bearings and stretches the belt
+                permanently.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is treadmill maintenance worth doing yourself?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                The routine jobs, yes — lubrication, tension, tracking and
+                cleaning need no expertise and no tools beyond the hex key that
+                came in the box. Anything involving the motor, the controller
+                board or mains wiring is a technician's job, and opening the
+                console on a machine still under warranty will usually void it.
+                The line is simple: if it needs a screwdriver on an electrical
+                assembly, stop.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Does treadmill maintenance actually extend its life?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Substantially. Owner reports and warranty patterns consistently
+                show maintained machines running eight to twelve years against
+                four to six for neglected ones, and the gap is almost entirely
+                explained by deck lubrication. Given the work amounts to under an
+                hour a year, it is the highest-return thing you can do with a
+                treadmill you already own.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Treadmill Owners Make</h2>
+          <p class="text-gray-700 leading-relaxed">These four cause most of the premature failures we see reported, and the first one causes more than the other three combined.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Never lubricating the deck</h3>
+              <p class="text-gray-700 text-sm m-0">A dry deck raises friction, the controller feeds the motor more current to compensate, and both cook slowly for months before anything visible happens. The board or motor then fails and the repair costs a third of a new machine. Lubricate every three to six months with 100% silicone, and put the date in a calendar — nothing about a dry deck announces itself in time.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Using WD-40 or any petroleum lubricant</h3>
+              <p class="text-gray-700 text-sm m-0">Petroleum products attack the belt backing and the deck laminate, some are flammable near a warm motor, and the residue voids warranties on sight. Only 100% silicone belongs under a treadmill belt. Check the manual first too: a minority of decks are pre-waxed and adding silicone to them makes a slurry that increases friction instead of reducing it.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Over-tightening the belt to stop it slipping</h3>
+              <p class="text-gray-700 text-sm m-0">Slipping usually means a dry deck, not a loose belt, and cranking the rear bolts to mask it loads the roller bearings, stretches the belt permanently and adds drag the motor has to overcome. You should still be able to lift the belt two to three inches at the centre of the deck. Lubricate first, then adjust tension a quarter turn at a time.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Running it on an extension lead</h3>
+              <p class="text-gray-700 text-sm m-0">A treadmill draws a large surge on start-up, and an undersized lead or cheap power strip produces a voltage sag the controller interprets as a fault. That is behind a great many intermittent shutdowns and mysterious error codes. Plug straight into a wall outlet on a circuit that is not shared with other heavy loads.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Ownership Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/treadmill-belt-lubrication/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">How-To</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Belt Lubrication</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The step-by-step, how much to use, and how to tell a deck is dry.</p>
+            </a>
+            <a href="/treadmill-troubleshooting/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Diagnosis</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Troubleshooting</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Won't start, cuts out, error codes and new noises, in order.</p>
+            </a>
+            <a href="/how-long-do-treadmills-last/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Lifespan</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">How Long Do Treadmills Last?</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Realistic lifespans, and when repair stops beating replacement.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">Lubricate the deck every three to six
+            months and everything else is detail.</strong> Friction is what
+            drives motor current, motor current is what generates heat, and heat
+            is what kills the electronics. Under an hour of work a year buys you
+            roughly double the machine's life.
+          </p>
+          <p class="text-gray-300 leading-relaxed">
+            Something already going wrong? Start with
+            <a href="/treadmill-belt-slipping/" class="text-[#5AA9FF] font-bold no-underline">belt slipping and tracking</a>
+            or the full
+            <a href="/treadmill-troubleshooting/" class="text-[#5AA9FF] font-bold no-underline">troubleshooting guide</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+</Layout>
