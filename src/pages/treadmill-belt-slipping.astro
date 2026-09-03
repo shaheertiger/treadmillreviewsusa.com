@@ -1,0 +1,664 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "Treadmill Belt Slipping or Drifting? (2026): Fix It Properly";
+const description =
+  "A slipping belt is usually a dry deck, not a loose one — and tightening it makes things worse. Diagnose in the right order, then centre the tracking in five minutes.";
+
+const CAUSES = [
+  {
+    symptom: "Belt hesitates when you plant your weight",
+    cause: "Dry deck (most common)",
+    fix: "Lubricate before touching tension. Friction, not slack, is the usual culprit.",
+  },
+  {
+    symptom: "Belt slips only when starting from a stop",
+    cause: "Loose drive belt inside the motor hood",
+    fix: "Technician job on most machines. Do not adjust the rear bolts for this.",
+  },
+  {
+    symptom: "Belt slips at all speeds, deck is lubricated",
+    cause: "Genuinely under-tensioned running belt",
+    fix: "Quarter turn on each rear bolt, both sides equally, then re-test.",
+  },
+  {
+    symptom: "Belt drifts steadily to one side",
+    cause: "Tracking out of adjustment",
+    fix: "Quarter turn clockwise on the rear bolt on the side it drifts toward.",
+  },
+  {
+    symptom: "Belt re-centres, then drifts again within a day",
+    cause: "Uneven floor or a twisted frame",
+    fix: "Level the machine on its rear feet first. No bolt fixes a twisted frame.",
+  },
+  {
+    symptom: "Belt drifts only when someone is walking on it",
+    cause: "Worn or stretched belt, or an uneven footstrike",
+    fix: "Check the belt edges for fraying. A stretched belt is a replacement.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Guides", item: "https://www.treadmillreviewsusa.com/best-of/" },
+        { "@type": "ListItem", position: 3, name: "Treadmill Belt Slipping", item: "https://www.treadmillreviewsusa.com/treadmill-belt-slipping/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Why does my treadmill belt slip when I walk on it?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Most often because the deck is dry rather than because the belt is loose. Friction between the belt and the deck rises as lubricant depletes, the motor struggles to hold speed, and the result feels exactly like slack. Lubricate first and re-test before you touch the tension bolts — tightening a slipping belt on a dry deck makes the underlying problem worse.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How do you tighten a treadmill belt?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "With the machine unplugged, turn each rear roller bolt a quarter turn clockwise, both sides equally, then plug in and re-test at 3 mph with your weight on one foot. Repeat a quarter turn at a time. Stop as soon as the slipping stops: you should still be able to lift the belt two to three inches at the centre of the deck.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How do you fix a treadmill belt that is off-centre?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Run the belt empty at about 3 mph and watch which way it drifts. Turn the rear bolt on that side a quarter turn clockwise, then wait thirty seconds for the belt to settle before judging the result. The usual mistake is making three fast adjustments and over-correcting; the belt needs time to find its new position.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can you over-tighten a treadmill belt?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, and it is a common way to turn a small problem into an expensive one. An over-tight belt loads the roller bearings, stretches the belt permanently, and adds drag the motor must overcome, which raises current draw and heat. If you cannot lift the belt two to three inches at the centre of the deck, back the bolts off.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Why does my treadmill belt keep going off-centre?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "If it re-centres and then drifts again within a day, the machine is almost certainly not level or the frame is twisted. Adjust the rear levelling feet until it sits flat and re-check. No amount of roller adjustment will hold a belt centred on a frame that is being twisted by an uneven floor, and repeatedly chasing it wears the belt edges.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "When should a treadmill belt be replaced?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "When the edges are fraying, the underside feels rough or looks polished, the surface has visible cracks, or it has stretched so far that it needs re-tensioning every few weeks. A belt on a lubricated deck lasts years; one that has been running on a dry deck can be finished in months. Replacement is a routine consumable rather than a machine failure.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", name: "Morgan Reyes" },
+      datePublished: "2026-09-03",
+      dateModified: "2026-09-03",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-09-03",
+    modifiedTime: "2026-09-03",
+    author: "Morgan Reyes",
+    section: "Fitness Equipment",
+    tags: [
+      "treadmill belt slipping",
+      "treadmill belt tracking",
+      "treadmill belt tension",
+      "treadmill maintenance",
+      "home gym",
+    ],
+  }}
+  jsonLd={schema}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-slip" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-slip)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Owner's Guide
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated September 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          Treadmill Belt <span class="text-[#5AA9FF]">Slipping</span> or Drifting
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          Almost everyone's first move is to tighten the belt. On a dry deck
+          that is the wrong move, and it turns a ten-minute job into a new
+          motor. Here is the diagnosis in the right order.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#diagnose" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            Diagnose the Symptom
+          </a>
+          <a href="#tracking" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            Fix Off-Centre Tracking
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
+          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">September 3, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="5.4k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-red-50 border border-red-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-red-900">Unplug at the wall</strong> before you put
+          a tool near the rear rollers or reach under the belt. And stop using
+          the machine entirely, rather than adjusting it, if you smell burning,
+          the breaker trips, or the belt keeps moving after the safety key is
+          pulled — those are faults for a technician, not adjustments.
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#wrong-first-move" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Why Tightening Is the Wrong First Move</a>
+          <a href="#diagnose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Symptom-to-Cause Table</a>
+          <a href="#two-adjustments" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Tension and Tracking Are Different</a>
+          <a href="#tension" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Setting Tension Correctly</a>
+          <a href="#tracking" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Centring a Drifting Belt</a>
+          <a href="#levelling" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. When the Floor Is the Problem</a>
+          <a href="#drive-belt" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. The Other Belt: Drive Belt Slip</a>
+          <a href="#replace" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. When the Belt Needs Replacing</a>
+          <a href="#stop" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. When to Stop and Call Someone</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          A belt that hesitates under your foot feels loose, so people tighten
+          it. On most machines the actual cause is a dry deck, and tightening
+          adds drag to a machine that is already fighting friction — which
+          raises motor current, raises heat, and brings forward the controller
+          failure by a year or two. Diagnosis order matters more here than
+          technique.
+        </p>
+
+        <div id="wrong-first-move" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Why Tightening Is the Wrong First Move</h2>
+          <p>
+            Two entirely different problems produce the same sensation underfoot.
+            A genuinely loose belt slips because there is not enough grip against
+            the front roller to pull it along. A belt on a dry deck slips because
+            the friction between the belt and the deck board has risen high
+            enough that the roller cannot overcome it. From the top of the
+            machine, those feel identical.
+          </p>
+          <p>
+            The treatments, however, are opposite in effect. Lubricating a dry
+            deck removes the resistance and the slipping stops. Tightening the
+            belt on a dry deck forces the roller to win against the friction by
+            gripping harder, which does stop the slipping — and leaves the motor
+            permanently working against both the original friction and the extra
+            tension you have just added. The symptom disappears and the damage
+            accelerates.
+          </p>
+          <p>
+            This is why the diagnosis order on this page starts with the deck
+            rather than the bolts. If your machine has not been lubricated in the
+            last six months, lubricate it and re-test before you touch anything
+            else. It is a ten-minute job, it is described step by step in our
+            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">belt lubrication guide</a>,
+            and in our experience it resolves the majority of slipping complaints
+            outright.
+          </p>
+        </div>
+
+        <div id="diagnose" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Symptom-to-Cause Table</h2>
+          <p>
+            Match what your machine is doing to the closest row. The differences
+            between these symptoms are small and the causes are not.
+          </p>
+        </div>
+      </div>
+
+      <div class="not-prose my-8 overflow-x-auto">
+        <table class="min-w-[680px] w-full text-sm border border-gray-200 rounded-2xl overflow-hidden">
+          <thead class="bg-gray-900 text-white">
+            <tr>
+              <th class="text-left px-4 py-3 font-black">Symptom</th>
+              <th class="text-left px-4 py-3 font-black">Likely Cause</th>
+              <th class="text-left px-4 py-3 font-black">What to Do</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              CAUSES.map((row, i) => (
+                <tr class={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                  <td class="px-4 py-3 font-bold text-gray-900 align-top">{row.symptom}</td>
+                  <td class="px-4 py-3 text-gray-700 align-top">{row.cause}</td>
+                  <td class="px-4 py-3 text-gray-500 align-top">{row.fix}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="two-adjustments" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Tension and Tracking Are Different</h2>
+          <p>
+            Both adjustments use the same two bolts at the rear corners of the
+            machine, which is why they get confused constantly. The distinction is
+            worth holding clearly in your head before you pick up the hex key.
+          </p>
+          <p>
+            <strong>Tension</strong> is how tight the belt is around the two
+            rollers. You change it by turning <em>both</em> rear bolts the same
+            amount in the same direction. Clockwise tightens, anticlockwise
+            slackens. Tension fixes slipping.
+          </p>
+          <p>
+            <strong>Tracking</strong> is whether the belt runs down the centre of
+            the deck. You change it by turning <em>one</em> bolt relative to the
+            other, which effectively makes one side of the rear roller sit
+            fractionally further back and steers the belt away from it. Tracking
+            fixes drifting.
+          </p>
+          <p>
+            Adjusting one inevitably disturbs the other slightly, so the correct
+            order is tension first, tracking second. Set the tension until the
+            slipping stops, then centre the belt, then re-check the tension. Doing
+            it the other way round means re-doing the tracking after every tension
+            change.
+          </p>
+        </div>
+
+        <div id="tension" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Setting Tension Correctly</h2>
+          <p>
+            Confirm the deck is lubricated first. Then, with the machine
+            unplugged, locate the two bolts at the rear corners — usually recessed
+            in the end caps and taking the hex key that came with the machine.
+          </p>
+          <p>
+            Turn each one a <strong>quarter turn clockwise</strong>, both sides by
+            the same amount. Plug in, run at 3 mph, and test by planting your
+            weight firmly onto one foot. If it still hesitates, unplug and repeat
+            another quarter turn each side. Small increments are the whole
+            technique: a full turn is a large change and over-tightening is easy.
+          </p>
+          <p>
+            Stop the moment the slipping stops, and then verify you have not gone
+            too far. With the machine off, grip the belt at the centre of the deck
+            and lift. You should be able to raise it two to three inches. If you
+            cannot lift it that far, you are over-tight — back both bolts off
+            equally until you can.
+          </p>
+          <p>
+            Over-tightening is not a cosmetic error. It loads the roller bearings,
+            which is how machines develop a rumble or a squeal at the front
+            roller; it stretches the belt permanently, so it will need replacing
+            sooner; and it adds drag the motor has to overcome continuously,
+            which is the same thermal problem a dry deck causes. A belt that needs
+            re-tightening every few weeks has usually been over-tightened at some
+            point and is now stretching.
+          </p>
+        </div>
+
+        <div id="tracking" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Centring a Drifting Belt</h2>
+          <p>
+            A belt that runs off-centre will grind its own edge against the frame
+            and destroy itself within weeks, so this is worth fixing the day you
+            notice it rather than living with.
+          </p>
+          <p>
+            Run the belt <strong>empty</strong> at around 3 mph — never stand on
+            it while adjusting — and watch which way it drifts. If it moves toward
+            the right, turn the <strong>right</strong> rear bolt a quarter turn
+            clockwise. If it moves left, turn the left bolt. Then stop and wait
+            thirty seconds.
+          </p>
+          <p>
+            That wait is the part people skip and the reason tracking adjustments
+            so often go wrong. The belt takes time to migrate to its new position,
+            and making three quick turns because nothing appeared to happen puts
+            you well past centre in the other direction. One quarter turn, thirty
+            seconds, observe, repeat.
+          </p>
+          <p>
+            The belt should sit with roughly equal margin on each side of the
+            deck. Perfect centring is not required and not achievable — a small
+            steady offset that does not touch the frame is fine. What you are
+            eliminating is contact and continuing movement, not asymmetry.
+          </p>
+          <p>
+            If it centres and then drifts again within a day or two, stop
+            adjusting. Repeatedly chasing a belt that will not stay put wears the
+            edges and the cause is elsewhere, which is the next section.
+          </p>
+        </div>
+
+        <div id="levelling" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. When the Floor Is the Problem</h2>
+          <p>
+            A treadmill frame is long and comparatively flexible. Sit one on a
+            floor that is not flat and the frame twists slightly, which
+            permanently steers the belt toward one side. No roller adjustment
+            corrects that, because you are fighting the geometry of the frame
+            rather than the setting of the bolts.
+          </p>
+          <p>
+            Check it directly: put a spirit level across the frame at the front
+            and again at the rear, and along one side rail. Most machines have
+            adjustable feet at the rear — wind them until the frame sits flat and
+            does not rock when you push a corner. On a badly uneven floor a thin
+            rigid packer under one foot does the job; a compressible pad does not,
+            because it simply squashes under load and the twist returns.
+          </p>
+          <p>
+            Two related causes are worth ruling out at the same time. A machine
+            sitting on thick carpet sinks unevenly and behaves exactly like an
+            uneven floor, which is one more argument for a firm mat underneath —
+            our
+            <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">apartment noise guide</a>
+            makes the same recommendation for entirely different reasons. And a
+            folding machine that has been dropped or folded roughly can carry a
+            genuine frame twist, which is a warranty conversation rather than an
+            adjustment.
+          </p>
+          <p>
+            Finally, an honest one: some drift only when a person is on the belt
+            is caused by the person. A markedly uneven footstrike, or habitually
+            running on one side of the deck, will steer a belt. If the belt tracks
+            true when empty and drifts under one particular user, that is the
+            explanation.
+          </p>
+        </div>
+
+        <div id="drive-belt" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. The Other Belt: Drive Belt Slip</h2>
+          <p>
+            There are two belts on a treadmill. The running belt is the one you
+            stand on. The drive belt is a smaller belt inside the motor hood that
+            connects the motor to the front roller, and when it slips the symptom
+            is distinctive: the machine struggles specifically at start-up or when
+            speed changes, rather than under steady load, and there is often a
+            brief squeal from the front of the machine.
+          </p>
+          <p>
+            This matters because the rear bolts have no effect on it whatsoever.
+            Owners who diagnose a drive-belt problem as a running-belt problem end
+            up progressively over-tightening the running belt chasing a symptom
+            that lives somewhere else entirely, and doing real damage in the
+            process.
+          </p>
+          <p>
+            Drive-belt tensioning means removing the motor hood and working around
+            the motor and controller board, and on most consumer machines it is a
+            technician's job — both because it is fiddly and because opening that
+            assembly typically voids a warranty. If your machine is under warranty
+            and showing this symptom, call the manufacturer rather than getting a
+            screwdriver out.
+          </p>
+        </div>
+
+        <div id="replace" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. When the Belt Needs Replacing</h2>
+          <p>
+            A running belt is a consumable, not a permanent part. On a
+            well-lubricated deck it will last many years; on a deck that has been
+            dry it can be finished in months. Replacing one is normal maintenance
+            rather than evidence the machine has failed.
+          </p>
+          <p>
+            The signs are physical and easy to check with the machine unplugged.
+            Fraying or hardened edges mean it has been rubbing the frame. A
+            underside that feels rough, or looks polished and glazed, means it has
+            been running dry. Visible cracking across the surface, or a belt that
+            has stretched so far it needs re-tensioning every few weeks, are both
+            end of life.
+          </p>
+          <p>
+            Replacement belts are widely available for mainstream models and cost
+            a fraction of a new machine. Fitting one is within reach of a
+            competent owner on many machines — it involves removing the rear
+            roller and the side rails — but it is genuinely more involved than the
+            adjustments on this page, and the deck should be inspected at the same
+            time. A new belt on a grooved or worn deck will not last.
+          </p>
+          <p>
+            Whether replacing is worth it on an older machine is a different
+            question from whether it is possible. On a five-year-old mid-range
+            treadmill that also needs a controller board, the arithmetic usually
+            favours replacement, which we work through in
+            <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">how long treadmills last</a>.
+          </p>
+        </div>
+
+        <div id="stop" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. When to Stop and Call Someone</h2>
+          <p>
+            Everything above is a mechanical adjustment made with a hex key on the
+            outside of the machine, and it is entirely reasonable to do it
+            yourself. Some symptoms are not in that category.
+          </p>
+          <p>
+            Stop using the machine and get help if you smell burning or hot
+            plastic, if the breaker trips when it starts, if the belt continues
+            moving after the safety key is pulled, or if the machine surges
+            unexpectedly. The first two are electrical faults, the third is a
+            safety-system failure, and the fourth is a controller problem. None of
+            them is something to adjust around.
+          </p>
+          <p>
+            Also stop if you have made three rounds of adjustment and the
+            behaviour has not improved. Continuing to tension a belt that will not
+            stop slipping is how people end up with stretched belts and damaged
+            bearings on top of the original fault. At that point the cause is
+            something the rear bolts do not control.
+          </p>
+          <p>
+            For symptoms that are not about the belt at all — dead console,
+            cutting out mid-session, error codes, new noises from the motor end —
+            work through our
+            <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">treadmill troubleshooting guide</a>,
+            and see the full
+            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance schedule</a>
+            for keeping the machine out of this position in the first place.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Why does my treadmill belt slip when I walk on it?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Most often because the deck is dry rather than because the belt is
+                loose. Friction between the belt and the deck rises as lubricant
+                depletes, the motor struggles to hold speed, and the result feels
+                exactly like slack. Lubricate first and re-test before you touch
+                the tension bolts — tightening a slipping belt on a dry deck makes
+                the underlying problem worse.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How do you tighten a treadmill belt?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                With the machine unplugged, turn each rear roller bolt a quarter
+                turn clockwise, both sides equally, then plug in and re-test at 3
+                mph with your weight on one foot. Repeat a quarter turn at a time.
+                Stop as soon as the slipping stops: you should still be able to
+                lift the belt two to three inches at the centre of the deck.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How do you fix a treadmill belt that is off-centre?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Run the belt empty at about 3 mph and watch which way it drifts.
+                Turn the rear bolt on that side a quarter turn clockwise, then
+                wait thirty seconds for the belt to settle before judging the
+                result. The usual mistake is making three fast adjustments and
+                over-correcting; the belt needs time to find its new position.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Can you over-tighten a treadmill belt?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Yes, and it is a common way to turn a small problem into an
+                expensive one. An over-tight belt loads the roller bearings,
+                stretches the belt permanently, and adds drag the motor must
+                overcome, which raises current draw and heat. If you cannot lift
+                the belt two to three inches at the centre of the deck, back the
+                bolts off.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Why does my treadmill belt keep going off-centre?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                If it re-centres and then drifts again within a day, the machine
+                is almost certainly not level or the frame is twisted. Adjust the
+                rear levelling feet until it sits flat and re-check. No amount of
+                roller adjustment will hold a belt centred on a frame that is
+                being twisted by an uneven floor, and repeatedly chasing it wears
+                the belt edges.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">When should a treadmill belt be replaced?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                When the edges are fraying, the underside feels rough or looks
+                polished, the surface has visible cracks, or it has stretched so
+                far that it needs re-tensioning every few weeks. A belt on a
+                lubricated deck lasts years; one that has been running on a dry
+                deck can be finished in months. Replacement is a routine
+                consumable rather than a machine failure.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Fixing a Slipping Belt</h2>
+          <p class="text-gray-700 leading-relaxed">Each of these turns a ten-minute adjustment into damage, and the first is close to universal.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Tightening before lubricating</h3>
+              <p class="text-gray-700 text-sm m-0">A dry deck feels exactly like a loose belt from the top of the machine, and tightening does stop the symptom — by forcing the roller to win against friction the motor is already fighting. The drag, the current draw and the heat all go up. Lubricate first, re-test, and only then consider the bolts.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Turning one bolt when you meant to change tension</h3>
+              <p class="text-gray-700 text-sm m-0">Both bolts equally changes tension; one bolt relative to the other changes tracking. Adjusting a single side to cure slipping tightens the belt and steers it off-centre at the same time, so you end up with two problems. Set tension with matched turns first, then centre the belt, then re-check tension.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Over-correcting the tracking in three fast turns</h3>
+              <p class="text-gray-700 text-sm m-0">The belt takes about thirty seconds to migrate to its new position, so nothing appears to happen after the first quarter turn and people keep going. By the time it settles it is well past centre in the other direction. One quarter turn, thirty seconds, observe, repeat — and always with the belt empty, never standing on it.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Chasing a belt that will not stay centred</h3>
+              <p class="text-gray-700 text-sm m-0">If it re-centres and drifts again within a day, the bolts are not the problem — the machine is not level, the frame is twisted, or the belt is stretched. Repeating the adjustment weekly wears the belt edges and hides the cause. Get a spirit level on the frame and adjust the rear feet before touching the rollers again.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Maintenance Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/treadmill-belt-lubrication/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Do This First</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Belt Lubrication</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The ten-minute job that resolves most slipping complaints outright.</p>
+            </a>
+            <a href="/treadmill-maintenance/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Pillar Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Maintenance</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The full schedule that stops these faults appearing at all.</p>
+            </a>
+            <a href="/treadmill-troubleshooting/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Diagnosis</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Troubleshooting</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Won't start, cuts out, error codes and unfamiliar noises.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">Lubricate first, tension second, track
+            third.</strong> A slipping belt is usually a dry deck wearing a
+            different mask, and tightening it hides the symptom while
+            accelerating the damage. Both bolts equally changes tension; one bolt
+            steers.
+          </p>
+          <p class="text-gray-300 leading-relaxed">
+            Not lubricated recently? Start with the
+            <a href="/treadmill-belt-lubrication/" class="text-[#5AA9FF] font-bold no-underline">lubrication guide</a>,
+            then come back. Everything else lives in the
+            <a href="/treadmill-maintenance/" class="text-[#5AA9FF] font-bold no-underline">maintenance schedule</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+</Layout>

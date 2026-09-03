@@ -64,6 +64,25 @@ The cluster is reachable from `/best-of/` under the "Walking & Low-Impact" categ
 health-adjacent pages (`/best-treadmills-for-seniors/`, `/12-3-30-treadmill-workout/`) carry an
 explicit scope note stating that the site reviews equipment and does not give medical advice.
 
+### Maintenance & ownership semantic cluster
+
+The second hub-and-spoke cluster. Maintenance was referenced across ~20 existing pages but no
+page owned the topic, so those references pointed nowhere. This cluster claims that space and
+gives every model and brand page a natural post-purchase link target. Fifteen existing pages
+now link into it, including three pages from the walking cluster.
+
+- **Pillar**: `/treadmill-maintenance/` — the complete owner's schedule (sitemap priority 0.8)
+- **Spokes** (priority 0.7): `/treadmill-belt-lubrication/` (the step-by-step),
+  `/treadmill-belt-slipping/` (slipping vs. tracking, diagnosed in order),
+  `/treadmill-troubleshooting/` (won't start, cuts out, error codes, noises),
+  `/how-long-do-treadmills-last/` (lifespans by tier, repair-or-replace)
+
+Reachable from `/best-of/` under "Maintenance & Ownership". Every page carries a safety callout:
+unplug before servicing, the four symptoms that mean stop using the machine, and the manual as
+the authority on lubrication intervals and deck type. Maintenance intervals, lifespan ranges and
+repair costs are editorial estimates drawn from warranty terms and owner reports, not measured
+data — the lifespan page states this explicitly on the page itself.
+
 All outbound product links use Amazon search URLs tagged with the `sktiger-20` Associates ID (`rel="sponsored nofollow noopener"`). Swap in real ASIN/product links and product photography as they become available. Product specs on the newly recreated pages are editorial approximations in the site's existing style (same convention as the original flagship guides) — verify against manufacturer data before treating any number as authoritative.
 
 ## Development

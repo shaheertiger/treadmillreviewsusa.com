@@ -32,6 +32,23 @@ const PRIORITY_TIERS = [
     ],
   },
   {
+    // Maintenance cluster pillar — hub of the ownership/maintenance topic cluster
+    priority: 0.8,
+    changefreq: 'monthly',
+    paths: ['/treadmill-maintenance'],
+  },
+  {
+    // Maintenance cluster spokes
+    priority: 0.7,
+    changefreq: 'monthly',
+    paths: [
+      '/treadmill-belt-lubrication',
+      '/treadmill-belt-slipping',
+      '/treadmill-troubleshooting',
+      '/how-long-do-treadmills-last',
+    ],
+  },
+  {
     // Walking cluster pillar — hub of the walking/low-impact topic cluster
     priority: 0.8,
     changefreq: 'monthly',
