@@ -32,6 +32,24 @@ const PRIORITY_TIERS = [
     ],
   },
   {
+    // Walking cluster pillar — hub of the walking/low-impact topic cluster
+    priority: 0.8,
+    changefreq: 'monthly',
+    paths: ['/best-walking-treadmills'],
+  },
+  {
+    // Walking cluster spokes
+    priority: 0.7,
+    changefreq: 'monthly',
+    paths: [
+      '/under-desk-treadmills',
+      '/walking-pad-vs-treadmill',
+      '/best-treadmills-for-seniors',
+      '/quiet-treadmills',
+      '/12-3-30-treadmill-workout',
+    ],
+  },
+  {
     // Brand hubs and category/price roundups
     priority: 0.7,
     changefreq: 'monthly',

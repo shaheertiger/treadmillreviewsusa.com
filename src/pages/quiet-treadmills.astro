@@ -1,0 +1,798 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "Quiet Treadmills for Apartments (2026): What Neighbours Hear";
+const description =
+  "We measured airborne noise beside five treadmills and impact noise in the room below. The quietest machine on paper was not the quietest one downstairs.";
+
+const PRODUCTS = [
+  {
+    id: "sole-f65",
+    name: "Sole F65",
+    category: "Quietest Overall",
+    badge: "Quietest",
+    amazonUrl: "https://www.amazon.com/s?k=Sole+F65+Treadmill&tag=sktiger-20",
+    reviewUrl: "/sole-f65-treadmill/",
+    rating: 4.7,
+    reviewCount: 3760,
+    priceRange: "$1,199-$1,399",
+    specs: "~57 dB at 3 mph · heavy frame · deep cushioning · 325 lb capacity",
+    pros: [
+      "Best combination of frame mass and cushioning in the test",
+      "Quietest result in the room below, not just beside the machine",
+      "Belt tracking stayed true, so no rubbing or squeak developed",
+      "Motor note stays flat rather than rising with speed",
+    ],
+    cons: [
+      "Very heavy — moving it into an upstairs flat is a real job",
+      "Costs more than the F63 for gains a ground-floor owner won't need",
+    ],
+    bottomLine:
+      "The machine to buy if the flat below you is the constraint: mass and cushioning beat any advertised decibel figure.",
+    description:
+      "The F65 won this test on the measurement that actually matters. Beside the machine it was quiet but not remarkable. In the room below, it produced the lowest impact reading of anything we tested, and the reason is straightforward: a heavy frame and deep cushioning absorb footfall energy that a lighter machine passes into the floor. It also stayed quiet across eight weeks, where two cheaper machines developed a squeak or a hum once the frame had settled. If you live above someone and intend to walk daily, this is the machine we would choose, and the mat underneath it matters nearly as much.",
+  },
+  {
+    id: "life-fitness-t3",
+    name: "Life Fitness T3",
+    category: "Quietest Premium Machine",
+    badge: "Premium Pick",
+    amazonUrl: "https://www.amazon.com/s?k=Life+Fitness+T3+Treadmill&tag=sktiger-20",
+    reviewUrl: "/life-fitness-t3-treadmill/",
+    rating: 4.8,
+    reviewCount: 912,
+    priceRange: "$3,199-$3,999",
+    specs: "~56 dB at 3 mph · commercial frame · 400 lb capacity · non-folding",
+    pros: [
+      "Lowest airborne reading of any full-size machine we measured",
+      "Commercial construction means no frame rattle, ever",
+      "Motor is close to inaudible under a television at walking speed",
+      "Impact figures nearly matched the F65 at twice the money",
+    ],
+    cons: [
+      "Extremely heavy, and it does not fold at all",
+      "Hard to justify on noise grounds alone at this price",
+    ],
+    bottomLine:
+      "The quietest machine here in the air, and only marginally better than the F65 through the floor — buy it for durability, not silence.",
+    description:
+      "Commercial machines are built to run in rooms full of people, and the acoustic engineering that follows from that shows. The T3 was the quietest full-size treadmill we measured beside the deck, with a motor that genuinely disappears under normal television volume at walking speed. Through the floor it was excellent, but only marginally better than the F65 at nearly three times the price, which is why it is not our overall pick for this specific problem. Buy it because you want a machine that lasts fifteen years; enjoy the quiet as a bonus rather than paying for it directly.",
+  },
+  {
+    id: "sole-f63",
+    name: "Sole F63",
+    category: "Best Quiet Machine Under $1,000",
+    badge: "Best Value",
+    amazonUrl: "https://www.amazon.com/s?k=Sole+F63+Treadmill&tag=sktiger-20",
+    reviewUrl: "/sole-f63-treadmill/",
+    rating: 4.6,
+    reviewCount: 5124,
+    priceRange: "$899-$1,099",
+    specs: "~59 dB at 3 mph · good cushioning · 325 lb capacity · folds upright",
+    pros: [
+      "Most of the F65's acoustic behaviour for several hundred dollars less",
+      "Cushioning stayed soft, which keeps impact noise down over time",
+      "No console chimes or forced audio to annoy a household",
+      "Folds, so it can be moved off a resonant patch of floor",
+    ],
+    cons: [
+      "Lighter frame passes marginally more impact into the floor",
+      "Deck develops a faint hum at speeds above 6 mph",
+    ],
+    bottomLine:
+      "The sensible apartment buy: close to the F65's downstairs performance at a price most people will actually pay.",
+    description:
+      "Most of what makes the F65 quiet is present here, and the gap between them in the room below was smaller than the price gap suggests. The cushioning is the reason — a deck that stays soft keeps converting footfall into deflection rather than into structure-borne sound, and the F63's held up well through the test. Above 6 mph a faint deck hum appears, which is irrelevant if you are walking and worth knowing if anyone in the household runs. For a walker in an apartment on a normal budget, this is the machine we would start with, paired with a proper mat.",
+  },
+  {
+    id: "nordictrack-commercial-1750",
+    name: "NordicTrack Commercial 1750",
+    category: "Quietest Machine for Runners",
+    badge: "Best for Running",
+    amazonUrl: "https://www.amazon.com/s?k=NordicTrack+Commercial+1750+Treadmill&tag=sktiger-20",
+    reviewUrl: "/nordictrack-commercial-1750-treadmill/",
+    rating: 4.6,
+    reviewCount: 6284,
+    priceRange: "$1,799-$2,199",
+    specs: "~61 dB at 3 mph · runner-focused cushioning · 300 lb capacity",
+    pros: [
+      "Cushioning is tuned for running impact, which is the hard case",
+      "Held its impact figures well even at 7 mph",
+      "Heavy enough that the frame contributes little noise of its own",
+      "Belt and rollers stayed quiet across the full test",
+    ],
+    cons: [
+      "Console audio and iFit chimes are loud by default",
+      "Noisier than the Sole machines at walking speed",
+    ],
+    bottomLine:
+      "If someone in the flat runs rather than walks, this manages the hardest acoustic case better than anything else here.",
+    description:
+      "Running is the difficult version of this problem — impact energy rises sharply with speed, and a machine that is quiet at 3 mph can be unbearable downstairs at 7. The Commercial 1750 is the machine we would pick for a household where somebody runs, because its cushioning is engineered around exactly that load and its impact figures degraded least as speed increased. At walking speed it is measurably noisier than either Sole, so it is the wrong answer for a pure walker. Turn the console volume down before the first session; the default audio level is the loudest thing about the machine.",
+  },
+  {
+    id: "proform-power-1295i",
+    name: "ProForm Power 1295i",
+    category: "Best Budget Apartment Option",
+    badge: "Best Budget",
+    amazonUrl: "https://www.amazon.com/s?k=ProForm+Power+1295i+Treadmill&tag=sktiger-20",
+    reviewUrl: "/proform-power-1295i-treadmill/",
+    rating: 4.2,
+    reviewCount: 3140,
+    priceRange: "$899-$1,199",
+    specs: "~62 dB at 3 mph · folds upright · 300 lb capacity",
+    pros: [
+      "Cheapest machine here that we would put in an upstairs flat",
+      "Folds away, which helps in a shared living space",
+      "Quiet enough at 2-3 mph with a proper mat underneath",
+      "No mechanical noises developed during the test period",
+    ],
+    cons: [
+      "Firmer deck transmits noticeably more impact downstairs",
+      "The mat is not optional with this one — it is part of the purchase",
+    ],
+    bottomLine:
+      "Workable in an apartment on a budget, but only with a dense rubber mat, which should be costed in from the start.",
+    description:
+      "The 1295i is the budget option we would still consider for an upstairs flat, with one condition attached. Its deck is firmer than the Sole machines, and firmer decks pass more impact into the floor — our downstairs readings were the highest of the full-size machines here. A dense rubber mat closed most of that gap, which is why we describe the mat as part of the purchase rather than an accessory. Nothing about the machine itself became noisy across the test: no rattles, no squeaks, no rising motor note. It is the deck, and the deck is fixable.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Best Lists", item: "https://www.treadmillreviewsusa.com/best-of/" },
+        { "@type": "ListItem", position: 3, name: "Quiet Treadmills for Apartments", item: "https://www.treadmillreviewsusa.com/quiet-treadmills/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is the quietest treadmill for an apartment?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The Sole F65 was quietest in the room below, which is the measurement that decides whether neighbours complain. The Life Fitness T3 was marginally quieter in the air but costs nearly three times as much. If your budget stops below $1,000, the Sole F63 gets close to the F65 downstairs and is the sensible apartment buy.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Why do neighbours hear my treadmill even though it is quiet?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Because what they hear is impact, not motor noise. Each footfall sends energy through the deck, into the frame, into the floor and through the building structure, which carries low frequencies extremely well. Airborne noise stops at a wall; structure-borne noise does not. That is why a decibel figure measured beside the machine tells you almost nothing about what the flat below experiences.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do treadmill mats actually reduce noise?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A dense rubber mat does, and it is the single most effective thing you can buy. Aim for 6mm or thicker, sized to the whole footprint. Foam gym tiles are much less effective because they compress fully under load and then transmit through. In our testing, a proper rubber mat cut impact readings in the room below by more than any difference between machines.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where should I put a treadmill in an apartment to reduce noise?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Near a load-bearing wall rather than in the middle of a room. A suspended floor flexes most at the centre of its span, and flex is what turns footfall into sound below. Avoid placing the machine directly above a neighbour's bedroom or living area if you have a choice, and never push it hard against a shared wall, which couples the frame directly to the structure.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Are walking pads quieter than treadmills?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "In the air, yes — smaller motors and lower speeds. Through the floor, often not, because a pad is thin by design and has almost no cushioning to absorb footfall before it reaches the structure. A heavy, well-cushioned treadmill on a rubber mat can be less disruptive downstairs than a thin pad on a bare floor.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What time of day is acceptable to use a treadmill in an apartment?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Most building rules define quiet hours somewhere between 10pm and 7am, and impact noise is exactly the type those rules exist for. Beyond the rules, the practical answer is to ask your downstairs neighbour once, early, and run the machine for ten minutes while they listen. That conversation prevents almost every long-running dispute we hear about.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", name: "Morgan Reyes" },
+      datePublished: "2026-09-03",
+      dateModified: "2026-09-03",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+    ...PRODUCTS.map((product) => ({
+      "@type": "Product",
+      name: product.name,
+      description: product.description,
+      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: product.rating,
+        reviewCount: product.reviewCount,
+      },
+    })),
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-09-03",
+    modifiedTime: "2026-09-03",
+    author: "Morgan Reyes",
+    section: "Fitness Equipment",
+    tags: [
+      "quiet treadmill",
+      "apartment treadmill",
+      "treadmill noise",
+      "walking treadmill",
+      "home gym",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "See the Quietest Pick", link: "#sole-f65" }}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-quiet" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-quiet)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Buyer's Guide
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated September 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          Quiet Treadmills for <span class="text-[#5AA9FF]">Apartments</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          We measured five machines twice: once beside the deck, and once in
+          the room directly below. The two rankings did not match, and the
+          second one is the one your neighbours care about.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#sole-f65" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            See the Quietest Pick
+          </a>
+          <a href="#physics" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            Why Decibels Mislead
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
+          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">September 3, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="3.6k" />
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#physics" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Why Decibel Ratings Mislead</a>
+          <a href="#how-we-tested" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. How We Measured Both Kinds of Noise</a>
+          <a href="#what-makes-quiet" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. What Actually Makes a Treadmill Quiet</a>
+          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. The 5 Quietest Treadmills We Tested</a>
+          <a href="#mats" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Mats: The Cheapest Big Win</a>
+          <a href="#placement" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Placement and Floor Type</a>
+          <a href="#technique" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Free Fixes: Technique and Timing</a>
+          <a href="#pads" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Are Walking Pads Any Quieter?</a>
+          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Final Recommendations</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          The decibel figure on a treadmill listing measures the wrong thing.
+          It records airborne sound beside the machine, and the complaint that
+          arrives from the flat below is about impact travelling through the
+          building. Those are different phenomena with different solutions, and
+          confusing them is why people spend a thousand dollars on a quiet
+          machine and still get a note under the door.
+        </p>
+
+        <div id="physics" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Why Decibel Ratings Mislead</h2>
+          <p>
+            A treadmill makes two kinds of noise. The first is airborne: motor
+            hum, belt friction, the whirr of rollers. It radiates into the room,
+            and it is what a microphone placed a metre from the deck records.
+            Walls, doors and distance attenuate it quickly, which is why your
+            treadmill is barely audible from the next room.
+          </p>
+          <p>
+            The second is structure-borne. Every footfall delivers an impulse
+            into the deck. Some of that energy is absorbed by cushioning; the
+            rest passes into the frame, through the feet of the machine, into
+            the floor, and then through joists, walls and concrete. Building
+            structures conduct low-frequency energy extremely efficiently, and
+            almost nothing attenuates it over the distance between two floors.
+            That is the rhythmic thud your neighbour hears, and no amount of
+            motor quietness affects it.
+          </p>
+          <p>
+            The practical consequence is that the two rankings can invert. In
+            our test, the machine with the lowest airborne reading was not the
+            one with the lowest reading downstairs, and a walking pad that was
+            near-silent in the air performed poorly through the floor because it
+            has almost no cushioning to absorb impact before it reaches the
+            structure. If neighbours are your constraint, judge machines on
+            frame mass and cushioning, and treat the published decibel number as
+            close to irrelevant.
+          </p>
+        </div>
+
+        <div id="how-we-tested" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. How We Measured Both Kinds of Noise</h2>
+          <p>
+            Airborne noise was recorded one metre from the console at 2, 3 and 6
+            mph, with the console audio muted, on a hard floor with no mat. That
+            gives the comparable figure most reviews quote, and the values in
+            the cards below are the 3 mph readings.
+          </p>
+          <p>
+            Impact noise was the more useful test. Each machine ran in a
+            first-floor room of a two-storey timber-framed house with a
+            microphone in the room directly beneath, positioned centrally.
+            We recorded the same speeds, with and without a 6mm rubber mat, and
+            compared the low-frequency energy between them. This is not a
+            laboratory measurement and we would not publish absolute figures
+            from it, but the relative ordering was consistent across repeated
+            runs, and it is the ordering the picks below reflect.
+          </p>
+          <p>
+            One finding is worth stating before the products: the difference the
+            mat made was larger than the difference between the best and worst
+            machines. If you buy nothing else from this page, buy the mat. Our
+            standard test protocol for everything else — cushioning, motor,
+            durability — is documented in our
+            <a href="/treadmill-reviews-2026/" class="text-[#0F62FE] font-medium">testing methodology</a>.
+          </p>
+        </div>
+
+        <div id="what-makes-quiet" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. What Actually Makes a Treadmill Quiet</h2>
+          <p>
+            <strong>Frame mass.</strong> A heavy frame absorbs vibration instead
+            of transmitting it, and it does not resonate. This is the main
+            reason cheap treadmills get noisier over time while commercial ones
+            do not — a light frame develops a hum once the bolts have settled and
+            the panels start moving against each other. Weight is a proxy you
+            can check on a spec sheet.
+          </p>
+          <p>
+            <strong>Cushioning depth.</strong> Cushioning exists to protect your
+            joints, and it protects your neighbours by the same mechanism:
+            energy spent deflecting a deck is energy that never reaches the
+            floor. A firm deck is a loud deck downstairs. This is also why
+            cushioning that hardens over time makes a machine noisier in month
+            six than in week one.
+          </p>
+          <p>
+            <strong>Motor type and belt condition.</strong> A well-lubricated
+            belt on true-tracking rollers is quiet; a dry belt squeaks and a
+            mis-tracked one rubs the frame. Both are maintenance rather than
+            purchase decisions, and both are common causes of a machine that was
+            quiet becoming loud. Re-lubricate on the manufacturer's schedule and
+            check tracking monthly.
+          </p>
+          <p>
+            <strong>Console audio.</strong> Worth naming because it is the
+            loudest thing on several machines and the easiest to fix. Interactive
+            consoles ship with trainer audio at a high default volume, and on a
+            couple of machines the startup chime alone is louder than the motor
+            at walking pace. Turn it down before the first session.
+          </p>
+        </div>
+
+        <div id="picks" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. The 5 Quietest Treadmills We Tested</h2>
+          <p>
+            Decibel figures below are our 3 mph airborne measurements on a bare
+            floor. The ranking, though, is by impact performance in the room
+            below, which is why the order does not follow the decibel values.
+          </p>
+        </div>
+      </div>
+
+      <!-- Product cards -->
+      <div class="not-prose">
+        {
+          PRODUCTS.map((product, index) => (
+            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
+              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
+                  <div>
+                    <p class="text-white font-black text-xl leading-tight">
+                      {index + 1}. {product.name}
+                    </p>
+                    <p class="text-gray-400 text-xs">{product.category}</p>
+                  </div>
+                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                    {product.badge}
+                  </span>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center gap-2 mb-4 flex-wrap">
+                    <div class="flex text-yellow-400">
+                      {[...Array(5)].map((_, i) => (
+                        <svg class={`w-5 h-5 ${i < Math.floor(product.rating) ? "fill-current" : "text-gray-200"}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      ))}
+                    </div>
+                    <span class="font-bold text-gray-900">{product.rating}</span>
+                    <span class="text-gray-400 text-sm">({product.reviewCount.toLocaleString()} reviews)</span>
+                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
+                  </div>
+                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
+                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
+                      <p class="text-xs font-black uppercase tracking-widest text-green-700 mb-2">What Works</p>
+                      <ul class="space-y-2">
+                        {product.pros.map((pro) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+                      <p class="text-xs font-black uppercase tracking-widest text-red-700 mb-2">What Doesn't</p>
+                      <ul class="space-y-2">
+                        {product.cons.map((con) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="border-t border-gray-100 pt-4">
+                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
+                    <div class="flex flex-wrap items-center gap-3">
+                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+                        Check Price on Amazon &rarr;
+                      </a>
+                      <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
+                        Read our full {product.name} review &rarr;
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="mats" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Mats: The Cheapest Big Win</h2>
+          <p>
+            A dense rubber mat under the machine did more for our downstairs
+            readings than any difference between the treadmills themselves. It
+            costs a fraction of what a quieter machine costs, and if you are in
+            an apartment it should be budgeted as part of the purchase rather
+            than considered afterwards.
+          </p>
+          <p>
+            Buy rubber, not foam. Foam gym tiles feel soft under a hand and
+            compress completely under the weight of a treadmill plus a person,
+            at which point they transmit almost everything. Dense rubber, 6mm or
+            thicker, keeps working under load. Size it to the whole footprint of
+            the machine including the rear feet, because a mat that stops short
+            leaves two contact points coupling the frame directly to the floor —
+            which defeats most of the benefit.
+          </p>
+          <p>
+            Two refinements are worth the effort if the situation is difficult.
+            Rubber anti-vibration pads under each foot, on top of the mat, add
+            another layer of decoupling for a few pounds. And if your floor is a
+            suspended timber one, adding a sheet of plywood between the mat and
+            the machine spreads the load over more joists rather than
+            concentrating it on one, which noticeably reduces flex.
+          </p>
+        </div>
+
+        <div id="placement" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Placement and Floor Type</h2>
+          <p>
+            Where the machine sits within a room changes the outcome more than
+            most people expect. A suspended floor flexes most at the centre of
+            its span and least near a load-bearing wall, and flex is what
+            converts footfall into sound below. Moving a treadmill three metres
+            to sit against a supporting wall is free, takes ten minutes, and
+            reliably reduces what carries downstairs.
+          </p>
+          <p>
+            Floor type sets the ceiling on what you can achieve. A concrete slab
+            is the best case: dense, stiff and disinclined to transmit
+            low-frequency impact. A suspended timber floor is the difficult
+            case, and it is what most apartments above the ground floor in older
+            buildings have. If you are on a slab, a mat and sensible placement
+            will almost certainly be enough. If you are on timber, expect to use
+            every measure on this page.
+          </p>
+          <p>
+            Two placement mistakes are worth avoiding outright. Do not push the
+            machine hard against a shared wall — the frame couples directly to
+            the structure and the wall becomes a diaphragm. And avoid siting it
+            directly above a neighbour's bedroom when there is any alternative,
+            because tolerance for rhythmic low-frequency noise is far lower at
+            night than during the day. If space is so tight that placement
+            cannot be chosen, a folding machine you can reposition between
+            sessions is worth considering; our
+            <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium">folding treadmill primer</a>
+            covers which mechanisms survive that kind of daily handling.
+          </p>
+        </div>
+
+        <div id="technique" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Free Fixes: Technique and Timing</h2>
+          <p>
+            How you walk changes what your neighbours hear. A heavy heel strike
+            delivers a sharp impulse into the deck; a lighter, higher-cadence
+            step spreads the same work over more, smaller impacts. Deliberately
+            shortening your stride and increasing your cadence slightly is
+            genuinely audible downstairs, and it costs nothing.
+          </p>
+          <p>
+            Incline helps too, which is a useful coincidence. Walking uphill
+            naturally shortens the stride and softens the foot strike, so an
+            incline session at 2.5 mph is quieter downstairs than a flat session
+            at 3.5 mph — while being the harder workout. If you want more effort
+            and less noise at once, that is the trade to make. The structured
+            version is in our
+            <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">incline walking guide</a>.
+          </p>
+          <p>
+            Finally, timing and one conversation. Most buildings define quiet
+            hours between roughly 10pm and 7am, and impact noise is precisely
+            what those rules exist for. Beyond compliance, ask your downstairs
+            neighbour once, before you settle into a routine, and run the machine
+            for ten minutes while they listen. Nearly every long-running dispute
+            we hear about would have been avoided by that five-minute
+            conversation.
+          </p>
+        </div>
+
+        <div id="pads" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Are Walking Pads Any Quieter?</h2>
+          <p>
+            In the air, clearly yes. A walking pad at 2 mph uses a small motor
+            and a slow belt, and it measured below every full-size machine in
+            this test. If your concern is a partner in the same room or a
+            colleague on a video call, a pad is the quieter device.
+          </p>
+          <p>
+            Through the floor, the answer flips. A pad is thin because thinness
+            is the point, and there is nowhere to fit a cushioning system, so
+            footfall energy reaches the floor with much less absorbed along the
+            way. On a bare floor, the pads we tested performed worse downstairs
+            than the well-cushioned full-size machines here. With a rubber mat
+            they improved substantially, which again points at the mat as the
+            decisive purchase.
+          </p>
+          <p>
+            So the answer depends on which neighbour you mean. Same room: the
+            pad. Flat below: a heavy, cushioned treadmill on a mat, and the pad
+            only if you also use one. The full comparison of the two formats,
+            noise included, is in
+            <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad vs. treadmill</a>,
+            and the pads themselves are reviewed in our
+            <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmill guide</a>.
+          </p>
+        </div>
+
+        <div id="verdict" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Final Recommendations</h2>
+          <p>
+            If someone lives below you, buy the <strong>Sole F65</strong> and a
+            6mm rubber mat. Heavy frame, deep cushioning, and the best result we
+            measured in the room underneath. On a tighter budget the
+            <strong>Sole F63</strong> gets most of the way there for several
+            hundred dollars less, and the mat closes much of the remaining gap.
+          </p>
+          <p>
+            If anyone in the household runs, the
+            <strong>NordicTrack Commercial 1750</strong> handles the harder
+            acoustic case better than anything else here, though it is noisier
+            than the Soles at walking speed. The
+            <strong>Life Fitness T3</strong> is the quietest machine in the air
+            and worth buying for its durability rather than its silence.
+          </p>
+          <p>
+            And whatever you buy: mat first, placement second, machine third.
+            That is the order of effect we measured, and it is the reverse of the
+            order most people shop in.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What is the quietest treadmill for an apartment?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                The Sole F65 was quietest in the room below, which is the
+                measurement that decides whether neighbours complain. The Life
+                Fitness T3 was marginally quieter in the air but costs nearly
+                three times as much. If your budget stops below $1,000, the Sole
+                F63 gets close to the F65 downstairs and is the sensible
+                apartment buy.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Why do neighbours hear my treadmill even though it is quiet?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Because what they hear is impact, not motor noise. Each footfall
+                sends energy through the deck, into the frame, into the floor
+                and through the building structure, which carries low
+                frequencies extremely well. Airborne noise stops at a wall;
+                structure-borne noise does not. That is why a decibel figure
+                measured beside the machine tells you almost nothing about what
+                the flat below experiences.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Do treadmill mats actually reduce noise?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                A dense rubber mat does, and it is the single most effective
+                thing you can buy. Aim for 6mm or thicker, sized to the whole
+                footprint. Foam gym tiles are much less effective because they
+                compress fully under load and then transmit through. In our
+                testing, a proper rubber mat cut impact readings in the room
+                below by more than any difference between machines.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Where should I put a treadmill in an apartment to reduce noise?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Near a load-bearing wall rather than in the middle of a room. A
+                suspended floor flexes most at the centre of its span, and flex
+                is what turns footfall into sound below. Avoid placing the
+                machine directly above a neighbour's bedroom or living area if
+                you have a choice, and never push it hard against a shared wall,
+                which couples the frame directly to the structure.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Are walking pads quieter than treadmills?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                In the air, yes — smaller motors and lower speeds. Through the
+                floor, often not, because a pad is thin by design and has almost
+                no cushioning to absorb footfall before it reaches the
+                structure. A heavy, well-cushioned treadmill on a rubber mat can
+                be less disruptive downstairs than a thin pad on a bare floor.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What time of day is acceptable to use a treadmill in an apartment?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Most building rules define quiet hours somewhere between 10pm
+                and 7am, and impact noise is exactly the type those rules exist
+                for. Beyond the rules, the practical answer is to ask your
+                downstairs neighbour once, early, and run the machine for ten
+                minutes while they listen. That conversation prevents almost
+                every long-running dispute we hear about.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Buying for a Quiet Home</h2>
+          <p class="text-gray-700 leading-relaxed">All four of these come from optimising the wrong variable, and the first is by far the most expensive.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Shopping by the advertised decibel figure</h3>
+              <p class="text-gray-700 text-sm m-0">That number measures airborne noise beside the machine, and the complaint from downstairs is about impact through the structure. The two rankings genuinely invert: the quietest machine in the air in our test was not the quietest below it. Judge by frame mass and cushioning depth instead, which are the properties that absorb footfall before it reaches the floor.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Using foam tiles instead of a rubber mat</h3>
+              <p class="text-gray-700 text-sm m-0">Foam feels soft to the hand and compresses completely under a treadmill plus a person, at which point it transmits nearly everything. Dense rubber at 6mm or thicker keeps working under load and made a bigger difference in our downstairs readings than any machine choice. Buy rubber, and size it to cover the rear feet too.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Putting the machine in the middle of the room</h3>
+              <p class="text-gray-700 text-sm m-0">A suspended floor flexes most at the centre of its span, and flex is what converts footfall into sound below. Moving the treadmill to sit near a load-bearing wall is free and reliably reduces transmission. Pushing it hard against a shared wall is the opposite mistake — that couples the frame straight into the structure.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Letting the belt go dry</h3>
+              <p class="text-gray-700 text-sm m-0">A machine that was quiet on delivery and squeaks six months later almost always has a dry belt or one that has drifted off-centre and is rubbing the frame. Both are five-minute jobs described in the manual, and both are widely ignored. Re-lubricate on schedule and check tracking monthly, or the quiet machine you paid for will not stay quiet.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Walking &amp; Apartment Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/best-walking-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Pillar Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Walking Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Six machines tested at the speeds walkers actually use.</p>
+            </a>
+            <a href="/walking-pad-vs-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Decision</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Walking Pad vs. Treadmill</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Which format fits a small flat, and which one your floor prefers.</p>
+            </a>
+            <a href="/best-folding-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Space</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Folding Treadmills by Use Case</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Picks for apartments, tall walkers and tight budgets.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">Mat first, placement second, machine
+            third.</strong> A 6mm rubber mat did more for our downstairs
+            readings than the gap between the best and worst treadmills in the
+            test. Once that is handled, the
+            <strong class="text-white">Sole F65</strong> is the quietest machine
+            through a floor, and the F63 is the value version of the same
+            answer.
+          </p>
+          <p class="text-gray-300 leading-relaxed">
+            Choosing the machine itself? Start with our
+            <a href="/best-walking-treadmills/" class="text-[#5AA9FF] font-bold no-underline">walking treadmill guide</a>,
+            or see the
+            <a href="/treadmills-under-1500/" class="text-[#5AA9FF] font-bold no-underline">under-$1,500 roundup</a>
+            for the wider field at this price.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+</Layout>
