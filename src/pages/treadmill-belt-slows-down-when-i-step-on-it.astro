@@ -1,0 +1,649 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "Treadmill Belt Slows Down When I Step on It (2026): The Fix Order";
+const description =
+  "A belt that sags under your weight is friction four times out of five, not slack. Lubricate, then check tension, then look at the motor — in that order, because tightening first does damage.";
+
+const CAUSES = [
+  {
+    symptom: "Sags under weight, recovers a second later",
+    cause: "Dry deck (most common by far)",
+    fix: "Lubricate and re-test before touching any bolt.",
+  },
+  {
+    symptom: "Sags at all speeds, deck is lubricated",
+    cause: "Genuinely under-tensioned belt",
+    fix: "Quarter turn on both rear bolts, equally, then re-test.",
+  },
+  {
+    symptom: "Only at start-up, brief squeal at the front",
+    cause: "Drive belt slipping inside the motor hood",
+    fix: "Rear bolts do nothing here. Usually a technician job.",
+  },
+  {
+    symptom: "Worse as the session goes on",
+    cause: "Motor or controller overheating",
+    fix: "Stop. Check the hood temperature and the motor's size rating.",
+  },
+  {
+    symptom: "Console speed holds, belt is visibly slower",
+    cause: "Speed sensor or controller fault",
+    fix: "Diagnostic issue. Check the reed switch and its magnet.",
+  },
+  {
+    symptom: "Only under the heaviest household user",
+    cause: "Motor undersized for the load",
+    fix: "Not repairable. Reduce pace or plan a replacement.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Guides", item: "https://www.treadmillreviewsusa.com/best-of/" },
+        { "@type": "ListItem", position: 3, name: "Belt Slows Down When I Step on It", item: "https://www.treadmillreviewsusa.com/treadmill-belt-slows-down-when-i-step-on-it/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Why does my treadmill belt slow down when I step on it?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Usually because the deck is dry. As lubricant depletes, friction between the belt and the deck rises, and the motor can no longer hold the set speed once your weight is added to that resistance. It feels identical to a loose belt, which is why so many owners tighten first and make the underlying problem worse.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Should I tighten the belt if it slows down under my weight?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Not before checking lubrication. Tightening a belt on a dry deck does stop the symptom, by forcing the roller to overcome friction the motor is already fighting, and it leaves the machine working permanently against both. Lubricate, re-test, and only tighten if the belt still sags and lifts more than three inches at the centre of the deck.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is a treadmill belt slowing down under load dangerous?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "It can be. A belt that sags and then catches up suddenly is an inconsistent surface underfoot, and at running pace that is how people fall. Stop using the machine at speed until it is diagnosed, and stop entirely if you also smell hot electronics or the machine cuts out — those point at the motor rather than the belt.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can an underpowered motor cause a treadmill belt to slow down?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, and it is the diagnosis people arrive at last. If the deck is lubricated, the tension is correct, and the belt still sags only under the heaviest user or only at higher speeds, the motor is short of headroom for the work being asked of it. That is a sizing problem rather than a fault, and it is not repairable.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Why does my treadmill slow down after 20 minutes?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "That pattern points at heat rather than friction. As the motor and controller warm up, the controller reduces output to protect itself, so the belt gradually loses speed or the machine cuts out. The usual causes are a dry deck raising current draw, a lint-clogged motor housing, or a motor genuinely undersized for the user.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How do I know if it is the drive belt rather than the running belt?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The drive belt gives itself away by when it slips. If the hesitation happens specifically at start-up or during speed changes rather than under steady load, and there is a brief squeal from the front of the machine, that is the drive belt inside the motor hood. The rear adjuster bolts have no effect on it whatsoever.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", name: "Morgan Reyes" },
+      datePublished: "2026-09-06",
+      dateModified: "2026-09-06",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-09-06",
+    modifiedTime: "2026-09-06",
+    author: "Morgan Reyes",
+    section: "Fitness Equipment",
+    tags: [
+      "treadmill belt slows down",
+      "treadmill belt hesitates",
+      "treadmill troubleshooting",
+      "treadmill motor",
+      "home gym",
+    ],
+  }}
+  jsonLd={schema}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-sag" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-sag)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Troubleshooting
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated September 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          Treadmill Belt <span class="text-[#5AA9FF]">Slows Down</span> When I Step on It
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          Four times out of five this is a dry deck rather than a loose belt, and
+          the two feel identical from the top of the machine. Work through the
+          causes in order — the first one is free and takes ten minutes.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#diagnose" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            Match Your Symptom
+          </a>
+          <a href="#stop" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            When to Stop Using It
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
+          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">September 6, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="5.1k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-red-50 border border-red-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-red-900">Do not run at pace on a belt that
+          hesitates.</strong> A surface that sags and then catches up is how people
+          fall off treadmills. Diagnose at walking speed, and stop using the machine
+          entirely if you also smell hot electronics, the breaker trips, or it cuts
+          out mid-session.
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#what-is-happening" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. What Is Actually Happening</a>
+          <a href="#diagnose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Symptom-to-Cause Table</a>
+          <a href="#step-one" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Step One: The Deck</a>
+          <a href="#step-two" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Step Two: Tension</a>
+          <a href="#step-three" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Step Three: The Drive Belt</a>
+          <a href="#step-four" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Step Four: Motor and Heat</a>
+          <a href="#sensor" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. When the Console Is Lying</a>
+          <a href="#stop" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. When to Stop and Call Someone</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          The instinct when a belt gives under your foot is to tighten it, and on
+          most machines that is the wrong first move by a wide margin. The
+          sensation of slack and the sensation of friction are indistinguishable
+          from the top of the deck, but the treatments pull in opposite directions
+          — one removes load from the motor and the other adds to it.
+        </p>
+
+        <div id="what-is-happening" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. What Is Actually Happening</h2>
+          <p>
+            There are only two mechanisms behind a belt that loses speed under your
+            weight, and telling them apart is the whole diagnosis.
+          </p>
+          <p>
+            <strong>The belt is slipping on the front roller.</strong> The motor is
+            still turning at the right speed, but the belt is not being carried with
+            it. This happens when there is not enough grip — either because the belt
+            is genuinely slack, or, far more often, because the resistance the belt
+            has to overcome has risen so much that the roller loses the argument.
+          </p>
+          <p>
+            <strong>The motor itself is losing speed.</strong> The roller and the
+            belt are moving together, and both are slower than the console claims.
+            This happens when the motor is asked for more torque than it can produce
+            at that moment — because it is undersized, because it is hot, or because
+            something is drawing power it needs.
+          </p>
+          <p>
+            You can tell them apart with a marker. Put a strip of tape across the
+            belt and one on the front roller, run at a low speed, and watch. If the
+            belt marker falls behind the roller marker under your weight, the belt is
+            slipping. If they stay in step and simply both slow, it is the motor.
+          </p>
+          <p>
+            In both cases the most common root cause is the same: friction between
+            the belt and the deck. That is why the fix order below starts where it
+            does, and why tightening the belt — which increases that friction — is
+            close to the worst available first move.
+          </p>
+        </div>
+
+        <div id="diagnose" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Symptom-to-Cause Table</h2>
+          <p>
+            Match what your machine does to the closest row. The differences between
+            these symptoms are small and the causes are not.
+          </p>
+        </div>
+      </div>
+
+      <div class="not-prose my-8 overflow-x-auto">
+        <table class="min-w-[680px] w-full text-sm border border-gray-200 rounded-2xl overflow-hidden">
+          <thead class="bg-gray-900 text-white">
+            <tr>
+              <th class="text-left px-4 py-3 font-black">Symptom</th>
+              <th class="text-left px-4 py-3 font-black">Likely Cause</th>
+              <th class="text-left px-4 py-3 font-black">What to Do</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              CAUSES.map((row, i) => (
+                <tr class={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                  <td class="px-4 py-3 font-bold text-gray-900 align-top">{row.symptom}</td>
+                  <td class="px-4 py-3 text-gray-700 align-top">{row.cause}</td>
+                  <td class="px-4 py-3 text-gray-500 align-top">{row.fix}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p>
+          Work down the table in order regardless of which row you think applies.
+          The first step costs ten minutes and a few dollars, and it resolves the
+          majority of these complaints outright — including a good number that
+          looked like motor problems.
+        </p>
+
+        <div id="step-one" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Step One: The Deck</h2>
+          <p>
+            Unplug the machine. Reach under the belt at the middle of the deck and
+            run a fingertip across the deck surface — the board, not the belt
+            underside. It should feel slightly slick, like a waxed surface, and leave
+            a faint film on your finger.
+          </p>
+          <p>
+            If it feels dry, grippy or dusty, you have found the problem. As
+            lubricant depletes, friction rises steadily; the motor compensates by
+            drawing more current, and there comes a point where adding your body
+            weight to that resistance is more than it can absorb. The belt gives, the
+            motor catches up, and it feels exactly like slack.
+          </p>
+          <p>
+            Lubricate with 100 per cent silicone treadmill lubricant — one to two
+            ounces spread along the centre third under the belt — and run the machine
+            empty for a few minutes to distribute it. Then re-test with your weight
+            on one foot at 3 mph. The method is in the
+            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a>,
+            and how often it should be happening is in
+            <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium">how often to lubricate a treadmill</a>.
+          </p>
+          <p>
+            Test at the centre of the deck rather than the edges. The edges stay
+            lubricated long after the running line has gone dry, and testing there is
+            why some owners are confident the deck is fine when it is not.
+          </p>
+          <p>
+            If the symptom disappears, you are finished — and you have also removed a
+            substantial thermal load from the motor and controller, which matters
+            more than the symptom did.
+          </p>
+        </div>
+
+        <div id="step-two" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Step Two: Tension</h2>
+          <p>
+            Only if the deck is confirmed lubricated and the belt still sags. With
+            the machine off, grip the belt at the middle of the deck and lift: two to
+            three inches is correct. More than about four inches is genuinely slack.
+          </p>
+          <p>
+            If it is slack, unplug and turn each rear bolt a quarter turn clockwise —
+            both sides by exactly the same amount, because equal turns change tension
+            while unequal turns steer the belt sideways. Plug in, run at 3 mph, plant
+            your weight on one foot, and see.
+          </p>
+          <p>
+            Repeat a quarter turn at a time. Stop the moment the sagging stops, then
+            verify with the lift test again: if you cannot raise the belt two inches
+            at the centre, you have overshot and should back both bolts off equally
+            until you can. The full procedure and the reasoning behind the two-to-
+            three-inch figure are in
+            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>.
+          </p>
+          <p>
+            One diagnostic worth noting: if the belt only stops sagging when
+            tightened past the point where you can lift it two inches, tension is not
+            the real fault. That combination means either the deck is still dry, or
+            the belt is stretched and no longer grips properly. A stretched belt has
+            frayed edges, a glazed underside, or rear adjuster bolts near the end of
+            their travel, and it is a replacement rather than an adjustment.
+          </p>
+        </div>
+
+        <div id="step-three" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Step Three: The Drive Belt</h2>
+          <p>
+            There are two belts on a treadmill. The running belt is the one you stand
+            on. The drive belt is a smaller belt inside the motor hood connecting the
+            motor to the front roller, and when it slips the symptom is distinctive.
+          </p>
+          <p>
+            Drive-belt slip shows up specifically <strong>at start-up and during
+            speed changes</strong> rather than under steady load, and it is often
+            accompanied by a brief squeal from the front of the machine. If your belt
+            is fine once it is up to speed and hesitates only when accelerating, this
+            is where to look.
+          </p>
+          <p>
+            The important part: the rear adjuster bolts have no effect on the drive
+            belt at all. Owners who mistake one for the other progressively
+            over-tighten the running belt chasing a symptom that lives elsewhere, and
+            do real damage to bearings and belt in the process. If two rounds of
+            running-belt tension have made no difference to a start-up-only symptom,
+            stop turning bolts.
+          </p>
+          <p>
+            Tensioning or replacing a drive belt means removing the motor hood and
+            working around the motor and controller board. On most consumer machines
+            that is a technician's job, both because it is fiddly and because opening
+            that assembly commonly voids a warranty. If the machine is under
+            warranty, call the manufacturer before you pick up a screwdriver. The
+            adjacent fault — motor runs, belt does not move at all — is covered in
+            <a href="/treadmill-turns-on-but-belt-wont-move/" class="text-[#0F62FE] font-medium">turns on but the belt will not move</a>.
+          </p>
+        </div>
+
+        <div id="step-four" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Step Four: Motor and Heat</h2>
+          <p>
+            If the deck is lubricated, the tension is correct, and the belt still
+            loses speed under load, the motor is not producing the torque being asked
+            of it. There are three versions of that, and they call for different
+            responses.
+          </p>
+          <p>
+            <strong>It gets worse as the session goes on.</strong> That is heat. As
+            the motor and controller warm, the controller reduces output to protect
+            itself. Feel the motor hood after a session: warm is normal, too hot to
+            rest a hand on is not. The usual causes are a dry deck raising current
+            draw, or a motor housing clogged with lint and carpet fibre acting as
+            insulation. Unplug, take the hood off, and clean it with a soft brush —
+            never compressed air, which drives fibre deeper into the windings.
+          </p>
+          <p>
+            <strong>It only happens under the heaviest user.</strong> That is a
+            sizing problem rather than a fault. Motor load scales with the weight
+            pressing belt against deck, and a machine adequate for one household
+            member can be at its limit under another. There is no repair for this;
+            the options are lighter use, lower speeds, or a machine with more
+            headroom. The sizing arithmetic is in our
+            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>.
+          </p>
+          <p>
+            <strong>It happens at every speed, from cold, on a clean lubricated
+            machine.</strong> That points at the motor or controller itself —
+            worn brushes on a brushed DC motor, or a controller no longer delivering
+            full output. Both are diagnostic jobs beyond hand tools, and on an older
+            machine the cost of the repair is worth weighing against replacement,
+            which is the calculation in
+            <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">how long treadmills last</a>.
+          </p>
+        </div>
+
+        <div id="sensor" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. When the Console Is Lying</h2>
+          <p>
+            A less common case worth ruling out, because it produces the same
+            complaint from a completely different cause.
+          </p>
+          <p>
+            Treadmills measure belt speed with a small sensor at the front roller —
+            typically a reed switch or optical sensor triggered by a magnet on the
+            roller or the motor pulley. The controller uses that reading to hold the
+            speed you asked for. If the sensor is dirty, loose, or its magnet has
+            shifted, the controller receives a bad speed reading and responds to it.
+          </p>
+          <p>
+            The signature is a mismatch between what the console says and what the
+            belt does — a machine that surges and slows rhythmically, or reports a
+            speed clearly at odds with your effort, or shows erratic distance
+            readings. If your machine has always felt slightly fast or slow at a
+            given number, this is the reason.
+          </p>
+          <p>
+            With the machine unplugged and the hood off, look for the sensor and its
+            magnet at the front roller or motor. Dust and lint on the sensor face are
+            common and easy to clean; a magnet that has worked loose can sometimes be
+            re-seated. If the sensor itself has failed, it is an inexpensive part on
+            most machines but its replacement is a service job.
+          </p>
+          <p>
+            Anything beyond cleaning here belongs with a technician. Error codes and
+            other console-side faults are covered in the
+            <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a>.
+          </p>
+        </div>
+
+        <div id="stop" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. When to Stop and Call Someone</h2>
+          <p>
+            Lubricating a deck and adjusting rear bolts are reasonable owner jobs.
+            Some symptoms accompanying a slowing belt are not, and they are worth
+            knowing before you spend an afternoon on adjustments.
+          </p>
+          <p>
+            Stop using the machine and get help if you smell burning or hot plastic,
+            if the breaker trips when it starts, if the belt keeps moving after the
+            safety key is pulled, or if the machine surges unexpectedly under you.
+            The first two are electrical faults, the third is a safety-system
+            failure, and the fourth is a controller problem. None of them is
+            something to adjust around.
+          </p>
+          <p>
+            Also stop if you have completed steps one and two properly and the
+            symptom has not changed. Continuing to tension a belt that will not stop
+            sagging is how owners end up with a stretched belt and damaged bearings
+            on top of the original fault — which is now two repairs instead of one.
+          </p>
+          <p>
+            And be honest about the safety question. A belt that sags and then
+            catches is an unpredictable surface, and the moment it catches is the
+            moment people fall. Until it is fixed, walk rather than run on it, or
+            leave it alone. The broader symptom set for belt behaviour is in
+            <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">belt slipping and drifting</a>,
+            and prevention is the whole of the
+            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance schedule</a>.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Why does my treadmill belt slow down when I step on it?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Usually because the deck is dry. As lubricant depletes, friction
+                between the belt and the deck rises, and the motor can no longer hold
+                the set speed once your weight is added to that resistance. It feels
+                identical to a loose belt, which is why so many owners tighten first
+                and make the underlying problem worse.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Should I tighten the belt if it slows down under my weight?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Not before checking lubrication. Tightening a belt on a dry deck does
+                stop the symptom, by forcing the roller to overcome friction the motor
+                is already fighting, and it leaves the machine working permanently
+                against both. Lubricate, re-test, and only tighten if the belt still
+                sags and lifts more than three inches at the centre of the deck.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is a treadmill belt slowing down under load dangerous?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                It can be. A belt that sags and then catches up suddenly is an
+                inconsistent surface underfoot, and at running pace that is how people
+                fall. Stop using the machine at speed until it is diagnosed, and stop
+                entirely if you also smell hot electronics or the machine cuts out —
+                those point at the motor rather than the belt.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Can an underpowered motor cause a treadmill belt to slow down?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Yes, and it is the diagnosis people arrive at last. If the deck is
+                lubricated, the tension is correct, and the belt still sags only under
+                the heaviest user or only at higher speeds, the motor is short of
+                headroom for the work being asked of it. That is a sizing problem
+                rather than a fault, and it is not repairable.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Why does my treadmill slow down after 20 minutes?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                That pattern points at heat rather than friction. As the motor and
+                controller warm up, the controller reduces output to protect itself,
+                so the belt gradually loses speed or the machine cuts out. The usual
+                causes are a dry deck raising current draw, a lint-clogged motor
+                housing, or a motor genuinely undersized for the user.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How do I know if it is the drive belt rather than the running belt?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                The drive belt gives itself away by when it slips. If the hesitation
+                happens specifically at start-up or during speed changes rather than
+                under steady load, and there is a brief squeal from the front of the
+                machine, that is the drive belt inside the motor hood. The rear
+                adjuster bolts have no effect on it whatsoever.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Diagnosing a Sagging Belt</h2>
+          <p class="text-gray-700 leading-relaxed">The first of these is close to universal, and it is the one that turns a ten-minute job into a new controller board.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Tightening before checking the deck</h3>
+              <p class="text-gray-700 text-sm m-0">A dry deck and a loose belt feel identical underfoot. Tightening does stop the symptom, by forcing the roller to win against friction the motor was already fighting, so the machine now works against both permanently. Run a finger across the deck at the centre before touching a bolt.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Chasing a start-up symptom with the rear bolts</h3>
+              <p class="text-gray-700 text-sm m-0">Hesitation only at start-up or during speed changes, with a brief squeal from the front, is the drive belt inside the motor hood. The rear adjusters have no effect on it. Two rounds of tension with no change means stop turning bolts, because from here you are only stretching the running belt.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring a symptom that worsens through the session</h3>
+              <p class="text-gray-700 text-sm m-0">A belt that is fine at first and sags after twenty minutes is a thermal problem, not a mechanical one — the controller is cutting output to protect itself. Adjusting tension does nothing for it. Check the hood temperature, clean the lint out of the motor housing, and confirm the deck is lubricated.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Continuing to run at pace while diagnosing</h3>
+              <p class="text-gray-700 text-sm m-0">A belt that sags and then catches up is an inconsistent surface, and the catch is the dangerous moment. Do every test at walking speed with a hand on the rail, and stop using the machine entirely if there is a hot smell, a tripping breaker or a belt that runs on after the safety key is pulled.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Troubleshooting Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/how-often-to-lubricate-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Do This First</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">How Often to Lubricate</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The finger test that resolves most of these complaints outright.</p>
+            </a>
+            <a href="/treadmill-turns-on-but-belt-wont-move/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Next Fault</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Turns On but Belt Will Not Move</p>
+              <p class="text-sm text-gray-500 leading-relaxed">When the console lights up and nothing happens at all.</p>
+            </a>
+            <a href="/treadmill-troubleshooting/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Pillar Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Troubleshooting</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Error codes, cut-outs and the symptoms that mean stop.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">Deck first, tension second, motor
+            last.</strong> A belt that sags under your foot is friction far more
+            often than slack, and tightening it hides the symptom while adding to
+            the load that caused it. Ten minutes with a bottle of silicone settles
+            most of these.
+          </p>
+          <p class="text-gray-300 leading-relaxed">
+            If lubrication and tension both check out and the belt still sags, look
+            at heat and motor sizing using the
+            <a href="/treadmill-horsepower-guide/" class="text-[#5AA9FF] font-bold no-underline">horsepower guide</a>
+            — and until it is fixed, walk rather than run. Everything else lives in
+            the
+            <a href="/treadmill-troubleshooting/" class="text-[#5AA9FF] font-bold no-underline">troubleshooting guide</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+</Layout>

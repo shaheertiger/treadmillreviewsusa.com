@@ -1,0 +1,657 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "Can You Put a Treadmill on Carpet? (2026): Yes, With Conditions";
+const description =
+  "Carpet does not damage a treadmill. Carpet fibres, blocked ventilation and an unstable base do. What to put underneath, what to check monthly, and when carpet is genuinely the wrong floor.";
+
+const CARPETS = [
+  {
+    type: "Low-pile carpet, firm underlay",
+    verdict: "Fine",
+    action: "A rigid mat is still worth it for fibre control and cleaning.",
+  },
+  {
+    type: "Medium-pile carpet, standard underlay",
+    verdict: "Fine with a mat",
+    action: "Use a dense rubber mat. Re-check levelling after two weeks.",
+  },
+  {
+    type: "Deep or plush pile",
+    verdict: "Needs a rigid board",
+    action: "Mat alone will not stop the frame settling. Add plywood beneath.",
+  },
+  {
+    type: "Thick memory-foam underlay",
+    verdict: "Problematic",
+    action: "Compresses unevenly under load. Rigid board is mandatory.",
+  },
+  {
+    type: "Loose rug over hard floor",
+    verdict: "Avoid",
+    action: "The rug shifts under the frame. Remove it or fix it down.",
+  },
+  {
+    type: "Carpet over a suspended timber floor",
+    verdict: "Check deflection",
+    action: "The floor, not the carpet, is the stability problem here.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Guides", item: "https://www.treadmillreviewsusa.com/best-of/" },
+        { "@type": "ListItem", position: 3, name: "Treadmill on Carpet", item: "https://www.treadmillreviewsusa.com/treadmill-on-carpet/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Can you put a treadmill on carpet?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, and most home treadmills spend their lives on carpet without trouble. The three real problems are carpet fibres drawn into the motor, restricted airflow underneath the machine, and a soft base that lets the frame settle unevenly and throws the belt off track. A dense rubber mat solves the first two and helps with the third.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do I need a mat under a treadmill on carpet?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. On carpet a mat is doing a different job from on a hard floor — it is a barrier against fibres and dust reaching the motor, and it spreads the load so the frame does not sink into the pile unevenly. Choose a dense rubber mat rather than a soft foam one, because foam compresses under the machine and makes the stability problem worse.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Will a treadmill damage my carpet?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "It will leave permanent compression marks under the feet, and on a folding machine the wheels can wear a track in the pile. Neither is avoidable entirely, but a mat spreads the load across a wider area and largely prevents the deep indentations that will not recover. Deep pile carpet marks more visibly than low pile.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does carpet make a treadmill belt go off-centre?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "It can, and it is a common cause of a belt that will not stay centred. A treadmill frame is long and slightly flexible, and carpet compresses at different rates under different feet, which twists the frame and steers the belt. If your belt drifts again within days of every adjustment, check the base before touching the rollers again.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does carpet make a treadmill quieter?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Slightly, for airborne noise in the same room. It does very little for the impact noise transmitted through the structure to the room below, which is what neighbours and downstairs family members actually hear. A dense rubber mat does more for impact noise than carpet does, and neither fully solves a first-floor installation.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How often should I clean under a treadmill on carpet?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Vacuum around and under the machine monthly, and clean inside the motor hood every six months with the machine unplugged. Carpet sheds continuously, the motor fan draws that lint in, and a coating of fibre on the motor and controller board acts as insulation, trapping the heat those components need to shed.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", name: "Morgan Reyes" },
+      datePublished: "2026-09-06",
+      dateModified: "2026-09-06",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-09-06",
+    modifiedTime: "2026-09-06",
+    author: "Morgan Reyes",
+    section: "Fitness Equipment",
+    tags: [
+      "treadmill on carpet",
+      "treadmill mat",
+      "treadmill placement",
+      "home gym setup",
+      "treadmill maintenance",
+    ],
+  }}
+  jsonLd={schema}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-carpet" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-carpet)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Owner's Guide
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated September 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          Can You Put a Treadmill on <span class="text-[#5AA9FF]">Carpet</span>?
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          Yes — most home treadmills live on carpet and are fine. The failure
+          modes are specific and preventable: fibres in the motor, blocked
+          airflow, and a soft base that twists the frame and steers the belt
+          off-centre every week.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#three-problems" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            The Three Real Problems
+          </a>
+          <a href="#mats" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            Choosing a Mat
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
+          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">September 6, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="4.1k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">The short answer.</strong> Carpet is
+          acceptable for almost every treadmill provided you put a dense rubber mat
+          underneath, vacuum around the machine monthly, and clean inside the motor
+          hood twice a year. On deep pile or foam underlay, add a rigid board under
+          the mat so the frame has something flat to sit on.
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#three-problems" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Three Real Problems</a>
+          <a href="#by-carpet" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Which Carpets Are Fine</a>
+          <a href="#fibres" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Fibres, Lint and the Motor</a>
+          <a href="#stability" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Stability and Belt Tracking</a>
+          <a href="#mats" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Choosing the Right Mat</a>
+          <a href="#board" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. When You Need a Rigid Board</a>
+          <a href="#damage" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. What It Does to the Carpet</a>
+          <a href="#routine" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. The Carpet Owner's Routine</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          The internet's answer to this question is a flat no, usually followed by
+          a warning about voided warranties. The truth is more useful: carpet
+          creates three specific, well-understood problems, all of which have
+          cheap fixes, and none of which will surprise an owner who knows to look
+          for them. What is not fine is putting a treadmill on deep pile and
+          forgetting about it.
+        </p>
+
+        <div id="three-problems" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. The Three Real Problems</h2>
+          <p>
+            Carpet does not attack a treadmill. It creates conditions that make
+            three ordinary failure modes more likely, and being specific about them
+            is the difference between managing the risk and worrying about it.
+          </p>
+          <p>
+            <strong>Fibres reaching the motor.</strong> Carpet sheds continuously,
+            and a treadmill's cooling fan draws air — and everything in it — into
+            the motor housing. Over months this builds a felt-like coating on the
+            motor windings and the controller board, which insulates exactly the
+            components that need to shed heat. This is the most genuinely damaging
+            of the three, and it is entirely preventable.
+          </p>
+          <p>
+            <strong>Restricted airflow.</strong> The underside of a treadmill is
+            not sealed, and some machines take cooling air from below the deck.
+            Deep pile pressed against the underside reduces that flow. On a machine
+            that is already near the limit of its motor, as many budget folding
+            treadmills are, this is a real contributor to overheating.
+          </p>
+          <p>
+            <strong>An unstable base.</strong> The one people underestimate. A
+            treadmill frame is long, comparatively flexible, and supported at four
+            points. Carpet compresses under those points at different rates
+            depending on the pile, the underlay, and how the load is distributed —
+            and a frame sitting on an uneven base twists slightly, which steers the
+            belt sideways and makes it impossible to keep centred.
+          </p>
+          <p>
+            Everything else you will read about carpet is secondary to these three.
+            Heat, dust and geometry. Fix those and carpet is simply a floor.
+          </p>
+        </div>
+
+        <div id="by-carpet" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Which Carpets Are Fine</h2>
+          <p>
+            The variable that matters is compressibility, not appearance. A dense
+            commercial-weight carpet with a firm underlay behaves almost like a
+            hard floor. A plush pile over foam behaves like a mattress.
+          </p>
+        </div>
+      </div>
+
+      <div class="not-prose my-8 overflow-x-auto">
+        <table class="min-w-[680px] w-full text-sm border border-gray-200 rounded-2xl overflow-hidden">
+          <thead class="bg-gray-900 text-white">
+            <tr>
+              <th class="text-left px-4 py-3 font-black">Floor Covering</th>
+              <th class="text-left px-4 py-3 font-black">Verdict</th>
+              <th class="text-left px-4 py-3 font-black">What to Do</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              CARPETS.map((row, i) => (
+                <tr class={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                  <td class="px-4 py-3 font-bold text-gray-900 align-top">{row.type}</td>
+                  <td class="px-4 py-3 text-gray-700 align-top">{row.verdict}</td>
+                  <td class="px-4 py-3 text-gray-500 align-top">{row.action}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p>
+          The quickest test costs nothing. Press a thumb hard into the carpet where
+          a treadmill foot will sit. If it sinks noticeably and takes a second or
+          two to recover, you need a rigid board as well as a mat. If it barely
+          moves, a mat alone will do.
+        </p>
+
+        <div id="fibres" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Fibres, Lint and the Motor</h2>
+          <p>
+            This is the failure that actually shortens machines, and it takes
+            years, which is why it is rarely connected to its cause.
+          </p>
+          <p>
+            The motor compartment of a treadmill contains a motor that runs warm, a
+            controller board that runs warmer, and a fan moving air across both.
+            Both components depend on shedding heat to survive. When the fan is
+            drawing air off a carpet, it is drawing fine fibre with it, and that
+            fibre settles wherever airflow slows — on the windings, on the heat
+            sinks, in the fan itself.
+          </p>
+          <p>
+            A layer of lint is an insulator. Components that were running at a safe
+            temperature start running hotter for the same work, and heat is
+            cumulative in its effect on electronics. This is why the controller
+            board is the most common expensive failure on home treadmills, and why
+            machines on carpet in dusty rooms fail earlier than the same model on a
+            hard floor.
+          </p>
+          <p>
+            The fix is a twice-yearly clean, unplugged, with the motor hood off.
+            Take the hood screws out, look at what has accumulated, and remove it
+            with a soft brush and a vacuum held nearby rather than pressed against
+            anything. Do not use compressed air, which drives fibre further into
+            the windings, and do not touch the board with a nozzle. Our
+            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance schedule</a>
+            puts this on the calendar alongside lubrication.
+          </p>
+          <p>
+            A mat helps considerably by covering the carpet immediately around the
+            intake, and vacuuming the surrounding carpet monthly helps more than
+            people expect. Neither replaces looking under the hood twice a year.
+          </p>
+        </div>
+
+        <div id="stability" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Stability and Belt Tracking</h2>
+          <p>
+            If your belt drifts to one side, gets re-centred, and drifts again
+            within a few days, the rollers are almost certainly not the problem.
+            Carpet is one of the two usual causes, alongside a genuinely uneven
+            floor.
+          </p>
+          <p>
+            The mechanism is straightforward. The machine's weight is concentrated
+            at the front where the motor is, so the front feet sink further into the
+            pile than the rear ones. Add a user whose weight lands on one side of
+            the deck more than the other, and the four support points end up at
+            slightly different heights. A long steel frame under that condition
+            twists by a small amount, and the rear roller is no longer square to
+            the front one. A roller that is not square steers the belt, continuously,
+            in the same direction, forever.
+          </p>
+          <p>
+            No amount of tracking adjustment fixes this, because you are correcting
+            for a geometry that changes as the carpet settles and recovers.
+            Owners in this situation typically adjust the belt weekly for months,
+            wearing the belt edges in the process. The full diagnosis, including
+            how to tell this apart from a genuinely stretched belt, is in
+            <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">belt slipping and drifting</a>,
+            and the adjustment procedure itself is in
+            <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">how to centre a treadmill belt</a>.
+          </p>
+          <p>
+            The test takes two minutes. Put a spirit level across the frame at the
+            front, then at the rear, then along one side rail, with the machine in
+            its normal position. Then push down on each corner in turn and see
+            whether it rocks. A machine that rocks on carpet will not hold a belt
+            centred.
+          </p>
+        </div>
+
+        <div id="mats" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Choosing the Right Mat</h2>
+          <p>
+            The mat under a treadmill on carpet is doing a different job from the
+            one under a treadmill on hardwood, and the wrong choice makes the
+            stability problem worse rather than better.
+          </p>
+          <p>
+            On a hard floor, a mat is mostly about protecting the floor and damping
+            vibration. On carpet, it is a barrier against fibre and a load-spreader.
+            That means you want <strong>dense and thin</strong>, not soft and thick.
+            A high-density rubber mat of 4 to 6 mm is close to ideal. Interlocking
+            foam gym tiles are the wrong product here: they compress under the feet
+            exactly like carpet does, and stack a second soft layer on the first.
+          </p>
+          <p>
+            Size it generously. The mat should extend well beyond the footprint at
+            the front, because that is where the motor intake is and where the
+            fibre matters. Extending it behind the machine is also worthwhile —
+            it gives you a defined, clean surface to step onto.
+          </p>
+          <p>
+            One practical note: a new rubber mat in a warm room will have a strong
+            smell for a week or two. Unroll it somewhere ventilated before putting
+            the machine on it, and be aware that some rubber mats can mark light
+            vinyl if you later move to a hard floor. On carpet this is not an
+            issue.
+          </p>
+        </div>
+
+        <div id="board" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. When You Need a Rigid Board</h2>
+          <p>
+            On deep pile, plush carpet or memory-foam underlay, a mat alone is not
+            enough, because a flexible mat on a soft base simply follows the base.
+            What is needed is something that will not bend.
+          </p>
+          <p>
+            The standard solution is a sheet of plywood or MDF, around 18 mm thick,
+            cut to the machine's footprint plus a few inches each way, laid on the
+            carpet with the rubber mat on top of it. That gives the four feet a
+            single flat plane to sit on, regardless of how the carpet beneath is
+            compressing. It is inexpensive, and it removes the tracking problem
+            more reliably than anything else.
+          </p>
+          <p>
+            Two details matter. The board must be big enough that the weight
+            spreads over a large area of carpet rather than concentrating at its
+            corners — undersized boards can rock, which is worse than no board.
+            And the edges should be eased or taped, because a bare board edge is a
+            trip hazard in exactly the wrong place.
+          </p>
+          <p>
+            After installing it, re-level the machine using its rear adjustable
+            feet, and re-check after two weeks. Carpet under a new load continues
+            to compress for some time, and the machine that was level on day one
+            frequently is not on day fourteen. That single re-check resolves a
+            surprising proportion of persistent tracking complaints.
+          </p>
+        </div>
+
+        <div id="damage" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. What It Does to the Carpet</h2>
+          <p>
+            The honest answer is that carpet under a treadmill will not come back
+            to how it was, and the question is how much of that you can prevent.
+          </p>
+          <p>
+            <strong>Compression marks</strong> under the feet are permanent on most
+            carpets. A treadmill concentrates 250 to 350 lb onto four small
+            contact points, and the pile beneath them is crushed rather than bent.
+            A mat, and better still a board, spreads that load and turns deep
+            indentations into shallow ones that partly recover.
+          </p>
+          <p>
+            <strong>Wheel tracks</strong> from folding machines are the second
+            issue. Every fold rolls the transport wheels across the same strip of
+            carpet, and over a couple of years that strip wears visibly. A mat that
+            extends over the whole travel path is the only real answer.
+          </p>
+          <p>
+            <strong>Static and lint migration</strong> are minor but real. Belts
+            generate static, and carpet holds it. The visible effect is a ring of
+            attracted dust around the machine. It is cosmetic, and monthly
+            vacuuming handles it.
+          </p>
+          <p>
+            One thing not to worry about: heat damage to the carpet. Nothing on a
+            correctly functioning treadmill gets hot enough to affect a floor
+            covering. If you find the carpet warm under the motor housing after a
+            session, that is a machine running too hot rather than a carpet
+            problem, and it is worth investigating in our
+            <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a>.
+          </p>
+        </div>
+
+        <div id="routine" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. The Carpet Owner's Routine</h2>
+          <p>
+            Owning a treadmill on carpet adds three items to the normal maintenance
+            list. None takes long, and together they neutralise most of the
+            difference between carpet and a hard floor.
+          </p>
+          <p>
+            <strong>Monthly: vacuum around and under.</strong> Move the machine or
+            fold it, and vacuum the mat and the surrounding carpet properly. The
+            fibre that reaches the motor comes from the immediate area, so this is
+            more effective than it sounds.
+          </p>
+          <p>
+            <strong>Every six months: clean under the hood.</strong> Unplugged,
+            hood off, soft brush, vacuum held nearby. Look at the fan and the
+            heat sinks in particular. This is the single item that most affects how
+            long the machine lasts on carpet.
+          </p>
+          <p>
+            <strong>Every six months: re-check level and tracking.</strong> Spirit
+            level across the frame, push each corner, adjust the rear feet if it
+            rocks. Carpet settles seasonally with humidity, and a machine that has
+            been fine for a year can develop a tracking drift after a wet winter.
+          </p>
+          <p>
+            The rest of the schedule — lubrication above all — is unchanged from
+            any other installation, and lubrication remains the item that matters
+            most for the machine's life regardless of what it is standing on. How
+            often is covered in
+            <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium">how often to lubricate a treadmill</a>.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Can you put a treadmill on carpet?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Yes, and most home treadmills spend their lives on carpet without
+                trouble. The three real problems are carpet fibres drawn into the
+                motor, restricted airflow underneath the machine, and a soft base
+                that lets the frame settle unevenly and throws the belt off track.
+                A dense rubber mat solves the first two and helps with the third.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Do I need a mat under a treadmill on carpet?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Yes. On carpet a mat is doing a different job from on a hard floor
+                — it is a barrier against fibres and dust reaching the motor, and
+                it spreads the load so the frame does not sink into the pile
+                unevenly. Choose a dense rubber mat rather than a soft foam one,
+                because foam compresses under the machine and makes the stability
+                problem worse.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Will a treadmill damage my carpet?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                It will leave permanent compression marks under the feet, and on a
+                folding machine the wheels can wear a track in the pile. Neither is
+                avoidable entirely, but a mat spreads the load across a wider area
+                and largely prevents the deep indentations that will not recover.
+                Deep pile carpet marks more visibly than low pile.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Does carpet make a treadmill belt go off-centre?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                It can, and it is a common cause of a belt that will not stay
+                centred. A treadmill frame is long and slightly flexible, and
+                carpet compresses at different rates under different feet, which
+                twists the frame and steers the belt. If your belt drifts again
+                within days of every adjustment, check the base before touching the
+                rollers again.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Does carpet make a treadmill quieter?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Slightly, for airborne noise in the same room. It does very little
+                for the impact noise transmitted through the structure to the room
+                below, which is what neighbours and downstairs family members
+                actually hear. A dense rubber mat does more for impact noise than
+                carpet does, and neither fully solves a first-floor installation.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How often should I clean under a treadmill on carpet?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Vacuum around and under the machine monthly, and clean inside the
+                motor hood every six months with the machine unplugged. Carpet
+                sheds continuously, the motor fan draws that lint in, and a coating
+                of fibre on the motor and controller board acts as insulation,
+                trapping the heat those components need to shed.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Carpet Installations</h2>
+          <p class="text-gray-700 leading-relaxed">Each of these turns a perfectly workable installation into a machine that needs weekly attention.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Using a soft foam mat</h3>
+              <p class="text-gray-700 text-sm m-0">Interlocking foam tiles and thick foam mats compress under the feet exactly as carpet does, so they add a second soft layer to a base that was already too soft. You want dense rubber, thin rather than thick — its job here is spreading load and blocking fibre, not cushioning.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Chasing belt tracking instead of the base</h3>
+              <p class="text-gray-700 text-sm m-0">A belt that re-centres and drifts again within days is telling you the frame is twisting, not that the rollers are wrong. Every adjustment made in that state wears the belt edges and hides the cause. Get a spirit level on the frame and fix the base before touching the rear bolts again.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Never opening the motor hood</h3>
+              <p class="text-gray-700 text-sm m-0">Carpet lint accumulates on the motor windings and the controller board and insulates them, so components that were running safely start running hot. It takes years and then fails expensively. Twice a year, unplugged, hood off, soft brush — and never compressed air, which drives fibre deeper.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Levelling once and never again</h3>
+              <p class="text-gray-700 text-sm m-0">Carpet keeps compressing under a new load for weeks, and it moves seasonally with humidity. A machine perfectly level on installation day is often not level a fortnight later. Re-check at two weeks and then every six months; it is the cheapest fix for persistent tracking drift there is.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Setup Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/treadmill-dimensions-space-requirements/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Placement</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Dimensions and Space</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Footprint, clearance behind, ceiling height and delivery routes.</p>
+            </a>
+            <a href="/how-to-center-treadmill-belt/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Fix</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">How to Centre a Belt</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The quarter-turn method, and why the base comes first.</p>
+            </a>
+            <a href="/quiet-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Apartments</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Quiet Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Why carpet does little for the noise that reaches downstairs.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">Carpet is fine with a dense rubber mat, a
+            monthly vacuum and a hood clean twice a year.</strong> On deep pile or
+            foam underlay, add a rigid board under the mat — a frame that is not
+            sitting flat is the reason a belt will not stay centred, and no roller
+            adjustment fixes it.
+          </p>
+          <p class="text-gray-300 leading-relaxed">
+            Re-level at two weeks, when the carpet has finished settling. If the
+            belt is already wandering, work through
+            <a href="/how-to-center-treadmill-belt/" class="text-[#5AA9FF] font-bold no-underline">centring the belt</a>,
+            and keep the rest of the machine on the
+            <a href="/treadmill-maintenance/" class="text-[#5AA9FF] font-bold no-underline">maintenance schedule</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+</Layout>

@@ -1,0 +1,654 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "How to Center a Treadmill Belt (2026): The Quarter-Turn Method";
+const description =
+  "Run the belt empty, turn the rear bolt on the side it drifts toward a quarter turn clockwise, then wait thirty seconds. The waiting is the part people skip, and it is why tracking goes wrong.";
+
+const STEPS = [
+  {
+    step: "1. Level the machine first",
+    detail: "Spirit level across the frame",
+    note: "A twisted frame steers the belt. No bolt fixes that.",
+  },
+  {
+    step: "2. Run empty at 3 mph",
+    detail: "Nobody standing on the belt",
+    note: "A user's footstrike masks which way it genuinely drifts.",
+  },
+  {
+    step: "3. Identify the drift side",
+    detail: "Watch for fifteen seconds",
+    note: "Drifting right means the right bolt. Left means the left bolt.",
+  },
+  {
+    step: "4. Quarter turn clockwise",
+    detail: "One bolt only, that side",
+    note: "Both bolts changes tension instead. This is a one-bolt job.",
+  },
+  {
+    step: "5. Wait thirty seconds",
+    detail: "Watch, do not adjust",
+    note: "The belt migrates slowly. This is where over-correction starts.",
+  },
+  {
+    step: "6. Repeat or stop",
+    detail: "Equal margin each side",
+    note: "Small steady offset that touches nothing is a pass.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Guides", item: "https://www.treadmillreviewsusa.com/best-of/" },
+        { "@type": "ListItem", position: 3, name: "How to Center a Treadmill Belt", item: "https://www.treadmillreviewsusa.com/how-to-center-treadmill-belt/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "How do you center a treadmill belt?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Run the belt empty at about 3 mph and watch which side it drifts toward. Turn the rear bolt on that side a quarter turn clockwise, then stop and watch for thirty seconds before deciding whether to turn again. Repeat until the belt sits with roughly equal margin on both sides of the deck.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Which way do you turn the bolt to center a treadmill belt?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Clockwise on the side the belt is drifting toward. Turning that bolt clockwise pulls the roller back on that side, which steers the belt away from it. If the belt runs to the right, turn the right rear bolt clockwise. Turning both bolts together changes tension, not tracking.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Why does my treadmill belt keep going off center?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "If it re-centres and drifts again within a day or two, the rollers are not the cause. The machine is almost certainly not level, or the frame is twisted, or it is standing on carpet that compresses unevenly under the feet. Repeatedly re-adjusting in that state wears the belt edges and hides the real problem.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Should I stand on the treadmill while adjusting the belt?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. Adjust with the belt running empty at a low speed, standing at the side of the machine. Standing on it while working near moving rollers is dangerous, and your own footstrike changes how the belt tracks, so you would be correcting for a condition that only exists while you are on it.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How centered does a treadmill belt need to be?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Roughly equal margin on each side is the target, and perfect centring is neither achievable nor necessary. What matters is that the belt is not touching the frame or side rails and that it is not still moving toward one side. A small, stable offset that contacts nothing is a pass.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What happens if you do not fix an off-center treadmill belt?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The belt edge grinds against the frame or rail and frays, which can destroy a belt in weeks rather than years. The rubbing also adds drag the motor has to overcome, and a belt riding up onto a rail is a genuine trip hazard. It is worth fixing the day you notice it rather than living with it.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", name: "Morgan Reyes" },
+      datePublished: "2026-09-06",
+      dateModified: "2026-09-06",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-09-06",
+    modifiedTime: "2026-09-06",
+    author: "Morgan Reyes",
+    section: "Fitness Equipment",
+    tags: [
+      "center treadmill belt",
+      "treadmill belt tracking",
+      "treadmill belt off centre",
+      "treadmill maintenance",
+      "home gym",
+    ],
+  }}
+  jsonLd={schema}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-centre" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-centre)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Owner's Guide
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated September 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          How to <span class="text-[#5AA9FF]">Center</span> a Treadmill Belt
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          A five-minute job with one bolt and one hex key. The technique is simple
+          and the mistake is universal: people make three fast adjustments because
+          nothing appears to happen after the first, and finish well past centre
+          in the other direction.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#method" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            The Method
+          </a>
+          <a href="#wont-stay" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            If It Will Not Stay Put
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
+          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">September 6, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="4.9k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-red-50 border border-red-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-red-900">Never stand on the belt while adjusting
+          it.</strong> Work from the side of the machine, with the belt running
+          empty at a low speed and the safety key within reach. Unplug at the wall
+          for anything that means reaching under the belt or near the rollers.
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#why-it-drifts" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Why a Belt Drifts</a>
+          <a href="#before" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Two Checks Before You Start</a>
+          <a href="#method" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Quarter-Turn Method</a>
+          <a href="#steps" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. The Steps at a Glance</a>
+          <a href="#waiting" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Why the Thirty Seconds Matters</a>
+          <a href="#good-enough" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. How Centred Is Centred Enough</a>
+          <a href="#wont-stay" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. If It Will Not Stay Put</a>
+          <a href="#stop" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. When to Stop Adjusting</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          A belt that runs off-centre will grind its own edge against the frame and
+          destroy itself in weeks, so this is worth doing the day you notice it.
+          The adjustment takes five minutes. What takes longer is the discipline to
+          make one small change and then do nothing for half a minute, which is the
+          entire difference between fixing the tracking and chasing it.
+        </p>
+
+        <div id="why-it-drifts" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Why a Belt Drifts</h2>
+          <p>
+            A belt runs straight when the two rollers are parallel to each other and
+            square to the frame. Anything that makes one end of the rear roller sit
+            slightly further back than the other steers the belt, continuously, in
+            one direction — exactly as a conveyor does.
+          </p>
+          <p>
+            Three things put the roller out of square. The most common is simply
+            that the rear adjuster bolts have been turned unequally at some point,
+            often while someone was setting tension. The second is that the machine
+            is standing on an uneven floor, which twists the long frame and takes
+            the roller out of square without anyone touching a bolt. The third is a
+            genuinely stretched or worn belt, which no longer sits evenly on the
+            rollers.
+          </p>
+          <p>
+            There is also a human cause that people are reluctant to consider. A
+            markedly uneven footstrike, or habitually running on one side of the
+            deck, will steer a belt. The test is simple: if the belt tracks true
+            when running empty and only drifts under one particular user, the
+            machine is fine.
+          </p>
+          <p>
+            Knowing which of these applies matters because only the first is fixed
+            by adjustment. The rest of this guide covers the adjustment, and section
+            seven covers what to do when the adjustment does not hold.
+          </p>
+        </div>
+
+        <div id="before" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Two Checks Before You Start</h2>
+          <p>
+            Neither takes long, and doing them first prevents the most common wasted
+            afternoon in treadmill ownership.
+          </p>
+          <p>
+            <strong>Is the machine level?</strong> Put a spirit level across the
+            frame at the front, again at the rear, and along one side rail. Then
+            push down on each corner in turn and see whether it rocks. Most machines
+            have adjustable feet at the rear; wind them until the frame sits flat
+            and does not move. On carpet, this is more likely to be your problem
+            than the rollers are — see
+            <a href="/treadmill-on-carpet/" class="text-[#0F62FE] font-medium">treadmill on carpet</a>
+            for why, and for the rigid board that fixes it.
+          </p>
+          <p>
+            <strong>Is the tension right?</strong> Tension and tracking use the same
+            two bolts and disturb each other, so the correct order is tension first,
+            tracking second. With the machine off, lift the belt at the centre of
+            the deck: two to three inches of lift is correct. If it is well outside
+            that, set tension first using
+            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>,
+            then come back here.
+          </p>
+          <p>
+            You need one tool: the hex key that came with the machine, usually
+            stored in a clip under the console or in the box of parts. A standard
+            Allen key set covers it if that has gone missing.
+          </p>
+        </div>
+
+        <div id="method" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The Quarter-Turn Method</h2>
+          <p>
+            Locate the two bolts at the rear corners of the machine, usually recessed
+            into the plastic end caps. These move the rear roller. Turning one
+            clockwise pulls that end of the roller backward, which tightens that side
+            of the belt and steers the belt away from that side.
+          </p>
+          <p>
+            Start the belt <strong>empty</strong> at around 3 mph and stand at the
+            side, not on it. Watch for fifteen seconds and identify which side it is
+            moving toward — not which side it is currently nearer, which may just be
+            where it has already ended up, but which direction it is still
+            travelling.
+          </p>
+          <p>
+            Turn the rear bolt on <strong>that side</strong> a quarter turn
+            clockwise. If the belt is running toward the right, turn the right bolt.
+            One bolt only: turning both together is a tension change, not a tracking
+            change.
+          </p>
+          <p>
+            Now stop and watch for thirty seconds without touching anything. This is
+            the step that decides whether the job goes well.
+          </p>
+          <p>
+            If the belt is still moving toward the same side, repeat: another quarter
+            turn on the same bolt, another thirty seconds. If it has begun moving the
+            other way, you have gone slightly too far — a quarter turn
+            anticlockwise on the same bolt, and wait again. When it settles with
+            roughly equal margin either side and is no longer travelling, stop.
+          </p>
+          <p>
+            Finally, run it for two or three minutes and check it holds, then walk on
+            it for a minute at a slow speed and check again. Some belts track
+            differently under load, and it is better to find that out now.
+          </p>
+        </div>
+
+        <div id="steps" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. The Steps at a Glance</h2>
+          <p>
+            The whole procedure, in order, for reference while you are at the
+            machine.
+          </p>
+        </div>
+      </div>
+
+      <div class="not-prose my-8 overflow-x-auto">
+        <table class="min-w-[680px] w-full text-sm border border-gray-200 rounded-2xl overflow-hidden">
+          <thead class="bg-gray-900 text-white">
+            <tr>
+              <th class="text-left px-4 py-3 font-black">Step</th>
+              <th class="text-left px-4 py-3 font-black">Action</th>
+              <th class="text-left px-4 py-3 font-black">Why</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              STEPS.map((row, i) => (
+                <tr class={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                  <td class="px-4 py-3 font-bold text-gray-900 align-top">{row.step}</td>
+                  <td class="px-4 py-3 text-gray-700 align-top">{row.detail}</td>
+                  <td class="px-4 py-3 text-gray-500 align-top">{row.note}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p>
+          If you prefer to work in the other direction, an equivalent adjustment is
+          to turn the bolt on the opposite side anticlockwise by the same amount.
+          It has the same steering effect but slightly reduces overall tension
+          rather than increasing it, which is the better choice if your belt was
+          already at the tight end of the acceptable range.
+        </p>
+
+        <div id="waiting" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Why the Thirty Seconds Matters</h2>
+          <p>
+            This is the single reason tracking adjustments go wrong, and it is worth
+            understanding rather than just following.
+          </p>
+          <p>
+            When you change the roller geometry, you have not moved the belt. You
+            have changed the direction it will travel from that moment on. The belt
+            then migrates gradually to its new position, at a rate set by the belt
+            speed and how much you turned the bolt. At 3 mph, that migration takes
+            somewhere between twenty and forty seconds to complete.
+          </p>
+          <p>
+            In the first five seconds after a quarter turn, nothing visible happens.
+            The natural response is to conclude the adjustment was too small and
+            turn again. Do that twice and you have applied three quarter turns
+            worth of steering to a belt that had only begun responding to the first
+            — and it will end up hard against the opposite rail.
+          </p>
+          <p>
+            At that point most people turn back, overshoot again in the other
+            direction, and conclude the machine is faulty. It is not; the loop is
+            entirely created by adjusting faster than the belt responds. One quarter
+            turn, thirty seconds, observe, repeat is a slower procedure that finishes
+            sooner.
+          </p>
+          <p>
+            A useful habit: count the turns out loud or write them down. If you have
+            made more than four or five quarter turns on one side without the belt
+            settling, stop and read section seven — you are almost certainly fixing
+            the wrong thing.
+          </p>
+        </div>
+
+        <div id="good-enough" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. How Centred Is Centred Enough</h2>
+          <p>
+            Perfect centring is not achievable and not the goal, and chasing it is
+            how people over-adjust a machine that was already fine.
+          </p>
+          <p>
+            The target is roughly equal margin on each side of the deck. What
+            actually matters is two things: the belt is not touching the frame or
+            the side rails anywhere along its travel, and it is stable — not still
+            moving toward one side.
+          </p>
+          <p>
+            A belt that sits half an inch off centre and stays there indefinitely is
+            correctly adjusted. A belt that is perfectly centred but drifting a
+            millimetre a minute is not, and it will be against the rail by the end of
+            the week.
+          </p>
+          <p>
+            Check along the full length rather than at one point. It is possible for
+            a belt to look centred at the middle of the deck and be rubbing at the
+            rear roller, particularly on machines where the rear guard sits close.
+            Look at where the belt passes the frame at both ends.
+          </p>
+          <p>
+            One useful comparison: look at how it sat when the machine was new, if
+            you remember. Some machines simply run with a small consistent offset
+            from the factory, and matching that is a better target than an
+            abstract idea of centre.
+          </p>
+        </div>
+
+        <div id="wont-stay" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. If It Will Not Stay Put</h2>
+          <p>
+            The important failure case. If you centre the belt and it drifts again
+            within a day or two, stop adjusting — the rollers are not the problem
+            and every further turn wears the belt edges.
+          </p>
+          <p>
+            <strong>Check the floor properly.</strong> A treadmill frame is long and
+            comparatively flexible, and sitting on a floor that is not flat twists it
+            enough to steer the belt permanently. Spirit level across the frame front
+            and rear, then along a side rail. Wind the rear feet until it sits flat
+            and does not rock. On an uneven floor, a thin rigid packer under one foot
+            works; a compressible pad does not, because it squashes under load and
+            the twist returns.
+          </p>
+          <p>
+            <strong>Check the surface it stands on.</strong> Carpet compresses
+            unevenly under the four feet, particularly under the heavier front end,
+            and it keeps compressing for weeks after installation. A dense rubber
+            mat over a rigid board is the fix, and re-levelling two weeks after
+            installation resolves a surprising number of persistent tracking
+            complaints.
+          </p>
+          <p>
+            <strong>Check the belt itself.</strong> Unplugged, look at the edges for
+            fraying or hardening, and the underside for a rough or glazed surface. A
+            stretched belt will not hold a tracking adjustment because it no longer
+            sits evenly on the rollers. If the rear adjuster bolts are near the end
+            of their travel, the belt has stretched past what the machine can take
+            up, and it is a replacement.
+          </p>
+          <p>
+            <strong>Check for a frame twist.</strong> A folding machine that has been
+            dropped, or folded roughly, can carry a genuine frame distortion. That is
+            a warranty conversation rather than an adjustment, and no amount of
+            roller work will correct it.
+          </p>
+        </div>
+
+        <div id="stop" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. When to Stop Adjusting</h2>
+          <p>
+            Tracking is an adjustment anyone can make with a hex key from outside the
+            machine, and it is entirely reasonable to do it yourself. A few symptoms
+            are not in that category.
+          </p>
+          <p>
+            Stop and get help if the belt continues moving after the safety key is
+            pulled, if the breaker trips when the machine starts, if you smell
+            burning or hot plastic, or if the machine surges unexpectedly. Those are
+            safety-system and electrical faults, not tracking problems, and they are
+            covered in our
+            <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a>.
+          </p>
+          <p>
+            Also stop if you have made three rounds of adjustment with proper waiting
+            between them and the belt has not settled. At that point the cause is
+            something the rear bolts do not control, and continuing simply wears the
+            belt. Work through section seven instead.
+          </p>
+          <p>
+            And if the belt has already been damaged — frayed edges, a hardened rim,
+            a section that has been riding on the rail — centring it will stop
+            further damage but will not undo what has happened. A belt with a
+            genuinely worn edge is on a countdown, and planning the replacement is
+            more useful than hoping. The
+            <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">belt slipping and drifting guide</a>
+            covers the full symptom set, and the
+            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance schedule</a>
+            covers keeping it from happening again.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How do you center a treadmill belt?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Run the belt empty at about 3 mph and watch which side it drifts
+                toward. Turn the rear bolt on that side a quarter turn clockwise,
+                then stop and watch for thirty seconds before deciding whether to
+                turn again. Repeat until the belt sits with roughly equal margin on
+                both sides of the deck.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Which way do you turn the bolt to center a treadmill belt?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Clockwise on the side the belt is drifting toward. Turning that bolt
+                clockwise pulls the roller back on that side, which steers the belt
+                away from it. If the belt runs to the right, turn the right rear bolt
+                clockwise. Turning both bolts together changes tension, not tracking.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Why does my treadmill belt keep going off center?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                If it re-centres and drifts again within a day or two, the rollers are
+                not the cause. The machine is almost certainly not level, or the frame
+                is twisted, or it is standing on carpet that compresses unevenly under
+                the feet. Repeatedly re-adjusting in that state wears the belt edges
+                and hides the real problem.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Should I stand on the treadmill while adjusting the belt?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                No. Adjust with the belt running empty at a low speed, standing at the
+                side of the machine. Standing on it while working near moving rollers
+                is dangerous, and your own footstrike changes how the belt tracks, so
+                you would be correcting for a condition that only exists while you are
+                on it.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How centered does a treadmill belt need to be?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Roughly equal margin on each side is the target, and perfect centring
+                is neither achievable nor necessary. What matters is that the belt is
+                not touching the frame or side rails and that it is not still moving
+                toward one side. A small, stable offset that contacts nothing is a
+                pass.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What happens if you do not fix an off-center treadmill belt?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                The belt edge grinds against the frame or rail and frays, which can
+                destroy a belt in weeks rather than years. The rubbing also adds drag
+                the motor has to overcome, and a belt riding up onto a rail is a
+                genuine trip hazard. It is worth fixing the day you notice it rather
+                than living with it.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Centring a Belt</h2>
+          <p class="text-gray-700 leading-relaxed">The first one accounts for most of the tracking adjustments that end worse than they started.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Making three fast turns because nothing happened</h3>
+              <p class="text-gray-700 text-sm m-0">A quarter turn changes the direction the belt will travel, not its position, and migration takes twenty to forty seconds at 3 mph. Turning again during that window applies three adjustments to a belt still responding to the first. One quarter turn, thirty seconds, observe, repeat.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Adjusting with someone standing on the belt</h3>
+              <p class="text-gray-700 text-sm m-0">It is dangerous with hands near moving rollers, and it gives a false reading, because a user's footstrike changes how the belt tracks. Set the tracking with the belt empty, then verify under load afterwards. If it only misbehaves under one particular user, the machine is not the problem.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Turning both bolts to fix drift</h3>
+              <p class="text-gray-700 text-sm m-0">Both bolts equally is a tension change and leaves the belt drifting exactly as before, only tighter. Tracking is a one-bolt job: the side it is drifting toward, clockwise. If you have been turning both, check the lift at the centre of the deck before doing anything else.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Re-centring the same belt every week</h3>
+              <p class="text-gray-700 text-sm m-0">A belt that drifts again within a day or two is telling you the frame is not sitting flat, or the belt is stretched. Repeating the adjustment wears the belt edges and hides the cause. Get a spirit level on the frame, check what it is standing on, and inspect the belt edges before touching a bolt again.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Maintenance Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/how-tight-should-treadmill-belt-be/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Do This First</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">How Tight Should a Belt Be?</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Tension before tracking — the two adjustments disturb each other.</p>
+            </a>
+            <a href="/treadmill-on-carpet/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">If It Recurs</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill on Carpet</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The uneven base that steers belts and defeats every adjustment.</p>
+            </a>
+            <a href="/treadmill-belt-slipping/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Diagnosis</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Belt Slipping or Drifting</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The full symptom-to-cause table for belt behaviour.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">One bolt, the side it drifts toward, a
+            quarter turn clockwise, then thirty seconds of doing nothing.</strong>
+            Run the belt empty, never stand on it while adjusting, and stop when the
+            margin is roughly equal and stable. A small steady offset that touches
+            nothing is a pass.
+          </p>
+          <p class="text-gray-300 leading-relaxed">
+            If it drifts again within days, the bolts are not the answer — level the
+            frame and check what it is standing on, starting with
+            <a href="/treadmill-on-carpet/" class="text-[#5AA9FF] font-bold no-underline">the carpet guide</a>.
+            And set tension first if you have not, using
+            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#5AA9FF] font-bold no-underline">the tension guide</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+</Layout>

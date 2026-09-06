@@ -1,0 +1,676 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "Treadmill Making a Squeaking Noise? (2026): Locate It by Sound";
+const description =
+  "Where the noise comes from, whether it tracks belt speed, and whether it changes with your weight on it — three questions that narrow a squeak to one component.";
+
+const NOISES = [
+  {
+    noise: "Rhythmic squeak, once per belt rotation",
+    source: "The belt seam or a damaged belt spot",
+    fix: "Inspect the belt for a lifted seam or a worn patch.",
+  },
+  {
+    noise: "Squeal from the front, rises with speed",
+    source: "Front roller bearing or drive belt",
+    fix: "Check tension first — over-tight belts kill front bearings.",
+  },
+  {
+    noise: "Squeak only when you step on it",
+    source: "Deck, frame joint or cushioning element",
+    fix: "Usually loose bolts. Check every fastener on the frame.",
+  },
+  {
+    noise: "Dull rubbing or shuffling, speed-related",
+    source: "Dry deck or a belt touching the frame",
+    fix: "Lubricate, then check the belt is centred.",
+  },
+  {
+    noise: "Squeak or clunk on incline changes only",
+    source: "Incline motor or its lifting linkage",
+    fix: "Separate system entirely. Check the linkage pivots.",
+  },
+  {
+    noise: "Grinding or rumbling, worsening weekly",
+    source: "A bearing on its way out",
+    fix: "Not a squeak. Stop using it and get it looked at.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Guides", item: "https://www.treadmillreviewsusa.com/best-of/" },
+        { "@type": "ListItem", position: 3, name: "Treadmill Squeaking Noise", item: "https://www.treadmillreviewsusa.com/treadmill-squeaking-noise/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Why is my treadmill squeaking?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The usual sources are a roller bearing, loose frame or deck bolts, the belt seam passing over a roller, and the deck cushioning elements. Three questions narrow it down: where the sound comes from, whether it speeds up with the belt, and whether it only happens with your weight on the machine.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Should I use WD-40 on a squeaking treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. WD-40 and other petroleum-based sprays damage the deck surface and the belt backing, and they attract dust that makes matters worse. The only lubricant that belongs on a treadmill deck is 100 per cent silicone treadmill lubricant. Pivot points on some frames take a different lubricant — check the manual rather than guessing.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is a squeaking treadmill dangerous?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Most squeaks are not, but some are early warnings. A noise that has been getting steadily worse, a grinding or rumbling rather than a squeak, or any noise accompanied by a burning smell or heat means stop using the machine. Those point at a bearing failing or a motor overheating rather than at something needing tightening.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Why does my treadmill squeak only when I walk on it?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A noise that appears only under load is almost always structural rather than rotational. Loose frame bolts, deck mounting hardware, worn cushioning elements and the folding hinge on a folding machine all move slightly under body weight and stop when you step off. Check and re-torque every accessible bolt before looking further.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can a loose treadmill belt cause squeaking?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A loose belt slipping on the front roller can produce a squeal at start-up or under load. An over-tight belt is the more common noise source, because the extra tension loads the roller bearings and that is what produces a rising squeal or rumble at the front of the machine. Check the lift at the deck centre before adjusting anything.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How do I stop my treadmill from squeaking?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Work in order: check the deck is lubricated, check belt tension and tracking, re-torque every accessible frame and deck bolt, then check the levelling feet. Those four cover most squeaks. What remains is usually a bearing or an incline linkage, and those are service jobs rather than owner adjustments.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", name: "Morgan Reyes" },
+      datePublished: "2026-09-06",
+      dateModified: "2026-09-06",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-09-06",
+    modifiedTime: "2026-09-06",
+    author: "Morgan Reyes",
+    section: "Fitness Equipment",
+    tags: [
+      "treadmill squeaking",
+      "treadmill noise",
+      "treadmill roller bearing",
+      "treadmill troubleshooting",
+      "home gym",
+    ],
+  }}
+  jsonLd={schema}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-squeak" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-squeak)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Troubleshooting
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated September 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          Treadmill Making a <span class="text-[#5AA9FF]">Squeaking Noise</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          Three questions locate almost any treadmill noise: where is it coming
+          from, does it speed up with the belt, and does it only happen with your
+          weight on the machine. Answer those and you have narrowed six possible
+          sources to one.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#locate" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            Locate the Noise
+          </a>
+          <a href="#serious" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            Noises That Mean Stop
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
+          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">September 6, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="4.3k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-red-50 border border-red-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-red-900">Never spray WD-40 or household oil on a
+          treadmill deck.</strong> Petroleum-based products degrade the deck surface
+          and the belt backing and attract dust that makes the noise worse. The only
+          thing that belongs on a deck is 100 per cent silicone treadmill lubricant.
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#three-questions" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Three Questions</a>
+          <a href="#locate" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Noise-to-Source Table</a>
+          <a href="#bolts" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Loose Bolts Come First</a>
+          <a href="#rollers" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Roller Bearings</a>
+          <a href="#belt-noises" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Belt and Deck Noises</a>
+          <a href="#incline" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Incline Motor Noises</a>
+          <a href="#wrong-lubricants" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Lubricants That Cause Damage</a>
+          <a href="#serious" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Noises That Mean Stop</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          Most treadmill squeaks are loose hardware, and most of the rest are a
+          bearing telling you something well before it fails. The difficulty is that
+          a squeak travels through a steel frame and seems to come from everywhere,
+          so people replace the wrong part. Locating it properly takes about five
+          minutes and needs nothing but attention.
+        </p>
+
+        <div id="three-questions" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. The Three Questions</h2>
+          <p>
+            Answer these before touching anything. Together they eliminate most of
+            the candidate list.
+          </p>
+          <p>
+            <strong>Does the noise track belt speed?</strong> Run the machine empty
+            and change the speed. A noise that gets faster as the belt gets faster is
+            rotational — a roller, a bearing, the drive belt, or the belt seam. A
+            noise that stays the same, or only appears at particular speeds, is
+            usually structural or a resonance.
+          </p>
+          <p>
+            <strong>Does it need your weight?</strong> Run it empty, then walk on it
+            slowly. A noise that only appears when you step on is structural: frame
+            bolts, deck mounting hardware, cushioning elements, or a folding hinge.
+            One that is identical empty and loaded is rotational.
+          </p>
+          <p>
+            <strong>Where is it, front or rear?</strong> This is harder than it
+            sounds, because steel carries sound extremely well. Have someone else
+            walk on the machine while you crouch at each end in turn, or use a long
+            screwdriver as a stethoscope — handle to your ear, tip against the frame
+            near each roller housing, with the belt running empty. Keep clear of
+            moving parts.
+          </p>
+          <p>
+            One more piece of information: how long it has been happening, and
+            whether it is getting worse. A stable noise that has been there for
+            months is usually cosmetic. A noise that has developed over a few weeks
+            and is worsening is a component degrading, and that changes the urgency.
+          </p>
+        </div>
+
+        <div id="locate" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Noise-to-Source Table</h2>
+          <p>
+            Match what you are hearing to the closest row. The distinctions between
+            these are small and the causes are quite different.
+          </p>
+        </div>
+      </div>
+
+      <div class="not-prose my-8 overflow-x-auto">
+        <table class="min-w-[680px] w-full text-sm border border-gray-200 rounded-2xl overflow-hidden">
+          <thead class="bg-gray-900 text-white">
+            <tr>
+              <th class="text-left px-4 py-3 font-black">What You Hear</th>
+              <th class="text-left px-4 py-3 font-black">Likely Source</th>
+              <th class="text-left px-4 py-3 font-black">What to Do</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              NOISES.map((row, i) => (
+                <tr class={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                  <td class="px-4 py-3 font-bold text-gray-900 align-top">{row.noise}</td>
+                  <td class="px-4 py-3 text-gray-700 align-top">{row.source}</td>
+                  <td class="px-4 py-3 text-gray-500 align-top">{row.fix}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p>
+          Note the difference between the fourth row and the last. A dull rubbing
+          sound is friction and is fixed with a bottle of silicone. A grinding or
+          rumbling that has been getting worse week by week is a bearing, and it is
+          the one noise on this page that warrants stopping rather than
+          investigating.
+        </p>
+
+        <div id="bolts" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Loose Bolts Come First</h2>
+          <p>
+            The most common cause of a treadmill squeak, the cheapest to fix, and the
+            one people skip because it seems too simple.
+          </p>
+          <p>
+            A treadmill is a bolted steel structure that gets shaken thousands of
+            times per session. Fasteners work loose, and once a joint has a fraction
+            of a millimetre of play in it, two pieces of metal rub every time your
+            foot lands. That produces a squeak or a creak that appears under load and
+            vanishes when you step off.
+          </p>
+          <p>
+            Unplug the machine and go round every accessible bolt with the supplied
+            hex keys and a spanner. The usual offenders are the upright-to-frame
+            bolts at the base of the console mast, the handrail fixings, the side
+            rail screws, the motor hood screws, and the deck mounting hardware.
+            Snug rather than forced: over-torquing into a plastic or thin steel
+            component causes its own problems.
+          </p>
+          <p>
+            Pay particular attention to <strong>folding machines</strong>. The
+            hinge, the latch and the gas strut mounting are all high-stress joints
+            that flex every time the machine folds, and they are the single most
+            common squeak source on a folding treadmill. Some hinges have a
+            specified lubricant; check the manual rather than reaching for whatever
+            is in the cupboard.
+          </p>
+          <p>
+            Also check the levelling feet. A machine that rocks slightly on an uneven
+            floor flexes its frame with every footstrike, and that flex creaks. Get a
+            spirit level across the frame and wind the rear feet until it sits flat
+            and does not move when you push a corner — the same check that fixes
+            belt tracking, described in
+            <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">how to centre a treadmill belt</a>.
+          </p>
+        </div>
+
+        <div id="rollers" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Roller Bearings</h2>
+          <p>
+            The second most common source, and the one worth taking seriously because
+            it usually has a preventable cause.
+          </p>
+          <p>
+            Front and rear rollers run on sealed bearings. When one starts to fail it
+            produces a squeal or rumble that <strong>rises and falls with belt
+            speed</strong> and is loudest at the end of the machine where the bad
+            bearing sits. It is present with the belt running empty, which
+            distinguishes it from the structural noises above.
+          </p>
+          <p>
+            The most common cause is belt over-tension. Tension is a compressive load
+            carried directly by the roller bearings, and a belt tightened well past
+            correct shortens their life considerably. This is why the first thing to
+            check on a front-end squeal is not the bearing but the belt: with the
+            machine off, you should be able to lift the belt two to three inches at
+            the centre of the deck. If you cannot, back both rear bolts off equally —
+            the method is in
+            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>.
+          </p>
+          <p>
+            Loosening the belt to correct will not repair a bearing that has already
+            been damaged, but it stops the damage progressing, and it occasionally
+            resolves a noise that was tension rather than wear. It is a free thing to
+            try before spending anything.
+          </p>
+          <p>
+            A confirmed bad bearing is a replacement roller on most home machines,
+            since consumer rollers usually have pressed-in sealed bearings that are
+            not separately serviceable. It is a straightforward job for a technician
+            and a moderate one for a confident owner, and it is worth doing rather
+            than living with, because a failing bearing adds drag that the motor pays
+            for continuously.
+          </p>
+        </div>
+
+        <div id="belt-noises" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Belt and Deck Noises</h2>
+          <p>
+            Three distinct sounds come from the belt and the surface it runs on, and
+            they are easy to confuse with each other.
+          </p>
+          <p>
+            <strong>A rhythmic tick or squeak once per rotation</strong> is the belt
+            itself. Every running belt has a seam, and a seam that has begun to lift
+            or has hardened makes a noise each time it passes over a roller. Unplug
+            and inspect the belt all the way round, looking for a raised seam, a worn
+            patch, or a nick in the surface. A lifting seam is a belt approaching the
+            end of its life.
+          </p>
+          <p>
+            <strong>A dull rubbing or shuffling that rises with speed</strong> is
+            usually a dry deck. Friction produces a broad, soft noise quite unlike a
+            squeak, and it comes with the other dry-deck symptoms — a belt that
+            hesitates under your weight, a hotter motor hood. Run a finger across the
+            deck under the belt at the centre: slick is fine, dry or grippy means
+            lubricate. The interval is in
+            <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium">how often to lubricate a treadmill</a>.
+          </p>
+          <p>
+            <strong>A scraping or hissing from one side</strong> is a belt riding
+            against the frame or the side rail. Look at the gap on each side of the
+            belt while it runs empty; if it is much wider on one side, the belt has
+            drifted off centre and is grinding its own edge away. That is worth
+            fixing the day you notice it, because it destroys a belt in weeks. The
+            correction is in
+            <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">belt slipping and drifting</a>.
+          </p>
+          <p>
+            One more: some machines have elastomer cushioning elements under the deck
+            that harden with age and squeak under load. If the noise is under your
+            feet, only under load, and every bolt is tight, this is the likely
+            remaining candidate.
+          </p>
+        </div>
+
+        <div id="incline" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Incline Motor Noises</h2>
+          <p>
+            A separate system with its own noises, and the one people misattribute
+            most often.
+          </p>
+          <p>
+            The incline mechanism is a small motor driving a lead screw or an
+            actuator that lifts the front of the frame. It is loud by design — a
+            whirring or grinding noise while the deck is moving is normal on almost
+            every machine, and it stops when the incline reaches the set grade.
+          </p>
+          <p>
+            What is not normal is a squeak or a clunk that happens during incline
+            changes and is new. That usually points at the pivot points of the
+            lifting linkage, where the frame moves against the base. Those pivots
+            take significant load and some are designed to be lubricated
+            periodically, though not with the silicone that goes on the deck. Check
+            the manual for what it specifies.
+          </p>
+          <p>
+            A grinding from the incline motor itself, or an incline that no longer
+            reaches its set grade, or a machine that reports an incline error, is a
+            service issue. It is also worth taking seriously because the incline
+            mechanism carries the weight of the deck and the user.
+          </p>
+          <p>
+            Test it in isolation: with the machine on but the belt stopped, run the
+            incline up and down through its range and listen. That completely
+            separates incline noises from belt noises, and it is the quickest way to
+            rule the system in or out. Machines that spend most of their life at
+            grade — for the
+            <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 workout</a>,
+            for example — put more cycles through this mechanism than average and are
+            worth checking annually.
+          </p>
+        </div>
+
+        <div id="wrong-lubricants" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Lubricants That Cause Damage</h2>
+          <p>
+            The instinct on hearing a squeak is to spray something at it, and on a
+            treadmill that instinct causes more damage than the squeak ever would.
+          </p>
+          <p>
+            <strong>WD-40 and penetrating oils</strong> are the most common mistake.
+            They are solvents rather than lubricants, they degrade the deck surface
+            and the belt backing, and they attract dust that turns into an abrasive
+            paste. A deck that has been sprayed with WD-40 is frequently ruined, and
+            it is not recoverable by cleaning.
+          </p>
+          <p>
+            <strong>Household oils, cooking oils and general-purpose greases</strong>
+            do not belong anywhere on a running deck either. They do not have the
+            right viscosity, they oxidise, and they make an even better dust magnet
+            than a solvent does.
+          </p>
+          <p>
+            <strong>Silicone sprays containing propellants or carriers</strong> are a
+            subtler trap, because the label says silicone. What goes on a deck is
+            100 per cent silicone treadmill lubricant, applied as a liquid under the
+            belt — not sprayed at a distance, and not a product whose main ingredient
+            is a solvent that carries a little silicone.
+          </p>
+          <p>
+            The one legitimate exception is frame pivots and folding hinges, some of
+            which the manufacturer does specify a lubricant for. That is a
+            documented instruction in the manual for a specific point, not
+            permission to spray the machine generally. When in doubt, tighten it
+            rather than lubricate it — the correct application procedure for the
+            deck is in the
+            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a>.
+          </p>
+        </div>
+
+        <div id="serious" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Noises That Mean Stop</h2>
+          <p>
+            Most squeaks are an annoyance. A few are a warning, and the difference is
+            worth knowing before you spend an evening tightening bolts.
+          </p>
+          <p>
+            <strong>Stop using the machine</strong> if the noise comes with a burning
+            or hot-plastic smell, if the breaker trips, if the belt keeps moving after
+            the safety key is pulled, or if the machine surges. Those are electrical
+            and safety-system faults rather than noise problems, and they are covered
+            in the
+            <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a>.
+          </p>
+          <p>
+            <strong>Stop and investigate before the next session</strong> if the noise
+            is a grinding or a rumble rather than a squeak, if it has been getting
+            steadily worse over a few weeks, or if it is accompanied by any change in
+            how the belt feels underfoot. Those describe a bearing degrading, and a
+            bearing that seizes at speed stops the belt abruptly with someone on it.
+          </p>
+          <p>
+            <strong>Investigate at your convenience</strong> if the noise is stable,
+            appears only under load, and nothing else about the machine has changed.
+            That is almost certainly hardware that needs tightening, and it will keep
+            until the weekend.
+          </p>
+          <p>
+            The preventive version of this page is short: keep the deck lubricated,
+            keep the belt at correct tension rather than tight, and go round the bolts
+            once a year. Those three habits eliminate most of what is on this page
+            before it starts, and they are part of the
+            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance schedule</a>.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Why is my treadmill squeaking?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                The usual sources are a roller bearing, loose frame or deck bolts, the
+                belt seam passing over a roller, and the deck cushioning elements.
+                Three questions narrow it down: where the sound comes from, whether it
+                speeds up with the belt, and whether it only happens with your weight
+                on the machine.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Should I use WD-40 on a squeaking treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                No. WD-40 and other petroleum-based sprays damage the deck surface and
+                the belt backing, and they attract dust that makes matters worse. The
+                only lubricant that belongs on a treadmill deck is 100 per cent
+                silicone treadmill lubricant. Pivot points on some frames take a
+                different lubricant — check the manual rather than guessing.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is a squeaking treadmill dangerous?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Most squeaks are not, but some are early warnings. A noise that has
+                been getting steadily worse, a grinding or rumbling rather than a
+                squeak, or any noise accompanied by a burning smell or heat means stop
+                using the machine. Those point at a bearing failing or a motor
+                overheating rather than at something needing tightening.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Why does my treadmill squeak only when I walk on it?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                A noise that appears only under load is almost always structural rather
+                than rotational. Loose frame bolts, deck mounting hardware, worn
+                cushioning elements and the folding hinge on a folding machine all move
+                slightly under body weight and stop when you step off. Check and
+                re-torque every accessible bolt before looking further.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Can a loose treadmill belt cause squeaking?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                A loose belt slipping on the front roller can produce a squeal at
+                start-up or under load. An over-tight belt is the more common noise
+                source, because the extra tension loads the roller bearings and that is
+                what produces a rising squeal or rumble at the front of the machine.
+                Check the lift at the deck centre before adjusting anything.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How do I stop my treadmill from squeaking?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Work in order: check the deck is lubricated, check belt tension and
+                tracking, re-torque every accessible frame and deck bolt, then check
+                the levelling feet. Those four cover most squeaks. What remains is
+                usually a bearing or an incline linkage, and those are service jobs
+                rather than owner adjustments.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Chasing a Treadmill Noise</h2>
+          <p class="text-gray-700 leading-relaxed">The first of these has ended more decks than any other single maintenance error.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Spraying WD-40 at the noise</h3>
+              <p class="text-gray-700 text-sm m-0">It is a solvent, not a lubricant. On a deck it degrades the running surface and the belt backing, and it attracts dust that becomes an abrasive paste. A deck sprayed with it is frequently beyond recovery. Only 100 per cent silicone treadmill lubricant belongs on a deck, applied as a liquid under the belt.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming a front-end squeal is a bad bearing</h3>
+              <p class="text-gray-700 text-sm m-0">Belt tension is a compressive load carried directly by the roller bearings, and over-tightening is the usual reason they start to complain. Check the lift at the deck centre before pricing a roller: if you cannot raise the belt two inches, the tension is the problem and correcting it stops the damage progressing.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Skipping the bolts because it seems too simple</h3>
+              <p class="text-gray-700 text-sm m-0">Loose hardware is the single most common cause of a treadmill squeak, and a noise that appears only under your weight is structural until proven otherwise. Go round the upright bolts, handrail fixings, rail screws and deck mounts before investigating anything rotational — and on a folding machine, check the hinge and latch first.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Living with a noise that is getting worse</h3>
+              <p class="text-gray-700 text-sm m-0">A stable squeak can wait for the weekend. A grinding or rumbling that has worsened over a few weeks is a bearing degrading, and a bearing that seizes at speed stops the belt abruptly with someone standing on it. Any noise with a burning smell, a tripping breaker or a change in belt feel means stop now.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Maintenance Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/how-tight-should-treadmill-belt-be/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Check This</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">How Tight Should a Belt Be?</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Over-tension is the usual reason roller bearings start to squeal.</p>
+            </a>
+            <a href="/how-often-to-lubricate-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Rubbing Noises</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">How Often to Lubricate</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The finger test for the dull rubbing sound of a dry deck.</p>
+            </a>
+            <a href="/quiet-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Noise Control</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Quiet Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">What the room below hears, measured rather than claimed.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">Does it track belt speed, does it need your
+            weight, and which end is it at?</strong> Those three answers separate a
+            loose bolt from a bearing from a dry deck. Tighten the hardware first —
+            it is the most common cause and the cheapest fix.
+          </p>
+          <p class="text-gray-300 leading-relaxed">
+            Never reach for WD-40; only 100 per cent silicone goes near a deck, per
+            the
+            <a href="/treadmill-belt-lubrication/" class="text-[#5AA9FF] font-bold no-underline">lubrication guide</a>.
+            And if the noise is grinding rather than squeaking, and worsening, stop
+            using the machine and read the
+            <a href="/treadmill-troubleshooting/" class="text-[#5AA9FF] font-bold no-underline">troubleshooting guide</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+</Layout>

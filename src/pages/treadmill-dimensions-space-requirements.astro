@@ -1,0 +1,665 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "Treadmill Dimensions & Space Requirements (2026): Will It Fit?";
+const description =
+  "A treadmill needs more room than its footprint — 6 ft of clearance behind, 20 in ceiling headroom above your height, and a doorway it can actually get through. The real numbers.";
+
+const FOOTPRINTS = [
+  {
+    type: "Under-desk walking pad",
+    footprint: "50 x 22 in",
+    space: "Slides under a desk or bed. No dedicated room needed.",
+  },
+  {
+    type: "Compact folding treadmill",
+    footprint: "62 x 28 in",
+    space: "Folds to roughly 62 x 28 x 12 in on end against a wall.",
+  },
+  {
+    type: "Mid-range folding treadmill",
+    footprint: "72 x 34 in",
+    space: "Needs 6 x 3 ft in use, about 3 x 3 ft folded and parked.",
+  },
+  {
+    type: "Full-size home treadmill",
+    footprint: "80 x 36 in",
+    space: "A permanent 7 x 3 ft installation, plus clearance.",
+  },
+  {
+    type: "Incline trainer",
+    footprint: "72 x 40 in",
+    space: "Shorter but far taller. Ceiling height is the binding constraint.",
+  },
+  {
+    type: "Commercial-grade treadmill",
+    footprint: "84 x 38 in",
+    space: "Effectively a fixed installation. Plan delivery route first.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Buying Guides", item: "https://www.treadmillreviewsusa.com/best-of/" },
+        { "@type": "ListItem", position: 3, name: "Treadmill Dimensions and Space", item: "https://www.treadmillreviewsusa.com/treadmill-dimensions-space-requirements/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "How much space do you need for a treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Plan for the machine's footprint plus about 6 feet of clear floor behind it and 2 feet on each side. A typical full-size treadmill is around 80 by 36 inches, so the honest room requirement is closer to 12 feet by 6 feet. The clearance behind is a safety margin, not a comfort one — it is where you land if you come off the back.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What ceiling height do I need for a treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Take your height, add the deck height of the machine, then add at least 12 inches of head clearance. Deck heights run from about 5 inches on a walking pad to 12 inches on a cushioned home machine. For a 6-foot user on a typical treadmill that means a ceiling of roughly 7 foot 9, which rules out many basements. Incline trainers add up to another 15 inches at full grade.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can a treadmill fit through a standard doorway?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Most folding treadmills fit through a standard 32-inch door when folded or tipped on end, but many full-size machines are 36 to 40 inches wide across the rails and will not. Measure the narrowest point of the delivery route, including stair turns and bannisters, before ordering, and check whether the machine ships assembled or in a box.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much clearance do you need behind a treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Safety guidance is consistently around 6 feet of clear space behind the rear of the belt, and 2 feet either side. This is not about comfort — it is the distance a person travels if they lose their footing and are thrown backward off the belt. A wall, a piece of furniture or a stair opening in that zone changes a stumble into an injury.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can you put a treadmill upstairs or on a second floor?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Usually yes, structurally. A treadmill plus user is typically 400 to 600 lb spread across a large footprint, which is within the design load of a normal residential floor. The real problems upstairs are getting the machine there, floor deflection making the frame feel unstable, and noise transmitted to the room below, which is often the deciding factor.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much space does a folded treadmill take up?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A folded mid-range treadmill occupies roughly 3 feet by 3 feet of floor and stands about 5 to 6 feet tall. It is a substantial object rather than something that disappears. Folding saves real floor area — often half the in-use footprint — but plan a parking spot for it rather than assuming it will tuck into a corner.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", name: "Morgan Reyes" },
+      datePublished: "2026-09-06",
+      dateModified: "2026-09-06",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-09-06",
+    modifiedTime: "2026-09-06",
+    author: "Morgan Reyes",
+    section: "Fitness Equipment",
+    tags: [
+      "treadmill dimensions",
+      "treadmill space requirements",
+      "treadmill footprint",
+      "home gym setup",
+      "ceiling height",
+    ],
+  }}
+  jsonLd={schema}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-dims" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-dims)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Buyer's Guide
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated September 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          Treadmill <span class="text-[#5AA9FF]">Dimensions</span> and Space Requirements
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          The footprint on the spec sheet is the smallest number in this
+          calculation. What a treadmill really needs is clearance behind it,
+          headroom above it, and a delivery route wide enough to get it into the
+          room in the first place.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#footprints" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            Footprints by Type
+          </a>
+          <a href="#clearance" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            The Clearance Rules
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
+          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">September 6, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="5.2k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-red-50 border border-red-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-red-900">The clearance behind is not optional.</strong>
+          Six feet of clear floor behind the rear roller is the standard safety
+          margin, and it is the distance a person travels when thrown off the back
+          of a moving belt. A wall, a radiator, a glass door or a stair opening in
+          that zone is the difference between a stumble and an injury.
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#footprints" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Footprints by Machine Type</a>
+          <a href="#clearance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The Clearance Rules</a>
+          <a href="#ceiling" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Ceiling Height and Deck Height</a>
+          <a href="#doorways" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Getting It Into the Room</a>
+          <a href="#folded" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. What Folding Really Saves</a>
+          <a href="#upstairs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Upstairs, Basements and Garages</a>
+          <a href="#measuring" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Measuring Your Room Properly</a>
+          <a href="#small-rooms" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. If the Room Is Genuinely Small</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          Most treadmill returns are not about the treadmill. They are about a
+          machine that arrived, would not go up the stairs, or went up the stairs
+          and left no room to stand behind it. The footprint printed on the
+          product page is the beginning of the space calculation, not the end of
+          it, and the parts it leaves out are the parts that decide whether the
+          purchase works.
+        </p>
+
+        <div id="footprints" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Footprints by Machine Type</h2>
+          <p>
+            These are in-use dimensions for the frame — length by width, as
+            manufacturers quote them. They exclude the clearance discussed in the
+            next section, which is what turns these into real room requirements.
+          </p>
+        </div>
+      </div>
+
+      <div class="not-prose my-8 overflow-x-auto">
+        <table class="min-w-[680px] w-full text-sm border border-gray-200 rounded-2xl overflow-hidden">
+          <thead class="bg-gray-900 text-white">
+            <tr>
+              <th class="text-left px-4 py-3 font-black">Machine Type</th>
+              <th class="text-left px-4 py-3 font-black">Typical Footprint</th>
+              <th class="text-left px-4 py-3 font-black">What That Means at Home</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              FOOTPRINTS.map((row, i) => (
+                <tr class={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                  <td class="px-4 py-3 font-bold text-gray-900 align-top">{row.type}</td>
+                  <td class="px-4 py-3 text-gray-700 align-top">{row.footprint}</td>
+                  <td class="px-4 py-3 text-gray-500 align-top">{row.space}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p>
+          Two entries deserve a warning. Incline trainers look compact because
+          they are short — the deck sits at a steep angle even at zero grade — and
+          then become the tallest object in the room at full incline. And
+          commercial machines are quoted at a footprint that sounds manageable
+          while weighing 350 lb and shipping fully assembled, which makes the
+          delivery route rather than the room the real constraint.
+        </p>
+
+        <div id="clearance" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The Clearance Rules</h2>
+          <p>
+            Three numbers, and only one of them is negotiable.
+          </p>
+          <p>
+            <strong>Six feet behind.</strong> Measured from the rear edge of the
+            belt to whatever is behind it. This is the safety zone, and the
+            reasoning is unpleasant but simple: if you lose your footing at pace,
+            the belt delivers you backward at the speed it was running, and you do
+            not stop immediately. Every manufacturer's manual specifies a figure
+            in this range and it is the one clearance rule that should not be
+            compromised, particularly in a household with children.
+          </p>
+          <p>
+            <strong>Two feet either side.</strong> This is about getting on and
+            off safely and about being able to reach the machine to clean and
+            service it. It is the number most people quietly reduce, and reducing
+            it to about a foot on one side is usually survivable if the other side
+            is clear. Reducing both sides means you cannot lubricate the deck or
+            reach the rear bolts without moving the machine.
+          </p>
+          <p>
+            <strong>Access at the front.</strong> Often forgotten entirely. You
+            need to be able to open the motor hood, reach the power switch, and
+            get at the console. A machine pushed hard against a wall at the front
+            makes routine maintenance a two-person furniture-moving job, which in
+            practice means it does not get done.
+          </p>
+          <p>
+            Adding it up: a full-size machine at 80 by 36 inches with proper
+            clearance wants a floor area of roughly 12 feet by 7 feet. That is the
+            number to measure your room against, and it is why spare bedrooms work
+            and hallway alcoves generally do not.
+          </p>
+        </div>
+
+        <div id="ceiling" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Ceiling Height and Deck Height</h2>
+          <p>
+            The calculation nobody does until the machine is assembled. You do not
+            run at your own height on a treadmill — you run at your height plus the
+            deck height, and the deck is further off the floor than it looks.
+          </p>
+          <p>
+            Deck heights vary more than you would expect. An under-desk walking pad
+            sits about 5 inches off the floor. A typical home treadmill with real
+            cushioning sits 8 to 12 inches up. Commercial machines are often 10 to
+            14 inches. That is up to a foot of height you did not have standing on
+            the floor.
+          </p>
+          <p>
+            The formula is your height, plus the deck height, plus at least 12
+            inches of head clearance. Twelve inches sounds generous and is not:
+            running involves vertical oscillation of several inches, and a ceiling
+            fan, a light fitting or a beam within that margin is a genuine hazard.
+            For a 6-foot user on a 10-inch deck that means about 7 foot 10 of
+            ceiling — more than many finished basements have.
+          </p>
+          <p>
+            Incline machines change the picture again, and this is the trap. As the
+            deck rises, so does your standing position, by roughly the rise of the
+            front of the deck. A machine at 15 per cent grade on a 55-inch deck
+            lifts you around 8 inches higher than it does at zero. Incline trainers
+            reaching 40 per cent can add over a foot. If you are buying for the
+            <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 workout</a>
+            or looking at
+            <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">incline trainers</a>,
+            measure your ceiling before anything else.
+          </p>
+        </div>
+
+        <div id="doorways" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Getting It Into the Room</h2>
+          <p>
+            The most common expensive surprise. A machine that fits the room
+            perfectly is worth nothing if it cannot reach the room.
+          </p>
+          <p>
+            Start with how it ships. Most home treadmills arrive in a box, part
+            assembled, and the box is the object that has to fit — typically around
+            75 by 35 by 12 inches and 150 to 250 lb. Boxes travel awkwardly but
+            they are flat, which is a considerable advantage on a stair turn.
+            Commercial machines and some premium home models arrive assembled on a
+            pallet, and at that point the machine's full width is the constraint.
+          </p>
+          <p>
+            Measure the narrowest point of the whole route, not the doorway. In
+            practice the binding constraint is usually a stair turn, a bannister, a
+            radiator on a landing, or the diagonal clearance at the top of a flight
+            of stairs. A standard interior door is about 32 inches clear, which
+            most folded or boxed machines clear and many assembled full-size
+            machines, at 36 to 40 inches across the rails, do not.
+          </p>
+          <p>
+            Two practical points. First, ask before ordering whether the delivery
+            is kerbside, threshold, or room-of-choice, because kerbside delivery of
+            a 200 lb box is a problem you will be solving alone on a Tuesday
+            afternoon. Second, check whether the console mast detaches — on many
+            machines the uprights unbolt, which reduces the width substantially and
+            is often the difference between fitting and not.
+          </p>
+        </div>
+
+        <div id="folded" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. What Folding Really Saves</h2>
+          <p>
+            Folding is genuinely useful and consistently oversold. Understanding
+            exactly what it recovers is the difference between a machine that gets
+            put away and one that lives permanently unfolded.
+          </p>
+          <p>
+            A folded treadmill does not disappear. A mid-range folding machine
+            stands about 5 to 6 feet tall on a floor area of roughly 3 feet by
+            3 feet. Compared with the 6 by 3 feet it occupies in use, that halves
+            the floor area — real, but a long way from the marketing image of a
+            machine tucked behind a door.
+          </p>
+          <p>
+            It also does not fold the clearance away. You still need the 6 feet
+            behind it while you are using it, so a folding machine does not let you
+            place a treadmill in a space that is too short. What it does is let
+            that same floor be a room again between sessions, which is the correct
+            reason to buy one.
+          </p>
+          <p>
+            The mechanism matters more than the fold. A hydraulic assist makes the
+            difference between a fold that happens daily and one that happens
+            twice. On a heavy machine, a manual latch fold is a two-handed lift of
+            a substantial weight, and most owners stop doing it within a month. Our
+            <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium">folding mechanisms guide</a>
+            compares hydraulic, manual and motorised systems on exactly this point.
+          </p>
+          <p>
+            Also worth knowing: the folded machine has to be parked on a flat
+            surface where it will not be knocked, and folded machines on carpet can
+            settle unevenly. Plan the parking spot as carefully as the running
+            spot.
+          </p>
+        </div>
+
+        <div id="upstairs" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Upstairs, Basements and Garages</h2>
+          <p>
+            Three common locations, three different sets of problems.
+          </p>
+          <p>
+            <strong>Upstairs.</strong> Structurally this is usually fine. A
+            treadmill plus a user is typically 400 to 600 lb spread over a large
+            footprint, which is well inside the design load of a residential floor.
+            The genuine problems are getting it up there, floor deflection making
+            the machine feel bouncy at pace, and noise. Impact noise travels
+            downward through structure far more effectively than airborne noise,
+            and this is the most common reason a first-floor treadmill gets moved.
+            Our
+            <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">apartment noise testing</a>
+            measured the same machines beside the deck and in the room below, and
+            the two rankings did not agree.
+          </p>
+          <p>
+            <strong>Basements.</strong> Excellent for noise and floor rigidity,
+            frequently disqualified by ceiling height. Check the height at the
+            lowest point over the machine, which is often a duct or a beam rather
+            than the ceiling proper. Humidity is the second issue: a damp basement
+            is hard on electronics and on the deck, and a dehumidifier is a
+            sensible companion purchase.
+          </p>
+          <p>
+            <strong>Garages.</strong> The space is usually there and the
+            environment usually is not. Temperature swings cause condensation
+            inside the console and motor housing, dust from a working garage gets
+            into the motor, and cold makes belt lubricant stiff enough to add real
+            drag at start-up. If a garage is the only option, keep the machine
+            covered, and let it warm before running it hard in winter.
+          </p>
+        </div>
+
+        <div id="measuring" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Measuring Your Room Properly</h2>
+          <p>
+            Ten minutes with a tape and a roll of masking tape will settle this
+            more reliably than any amount of comparing numbers on product pages.
+          </p>
+          <p>
+            Mark the machine's actual footprint on the floor with tape. Then mark
+            the 6-foot zone behind it and the 2-foot strips at the sides. Live with
+            the outline for a day. It is a strikingly effective test, because you
+            will immediately notice that the door no longer opens, or the radiator
+            is inside the safety zone, or you cannot get to the window.
+          </p>
+          <p>
+            Measure the ceiling at the position where you will be standing, not at
+            the middle of the room. Sloped ceilings, dropped soffits and light
+            fittings all bite here, and the relevant number is the one directly
+            above the front third of the deck where you actually run.
+          </p>
+          <p>
+            Check the power situation while you are there. A treadmill should be on
+            a grounded outlet, ideally on its own circuit, and extension leads are
+            explicitly discouraged by most manufacturers because of the current
+            draw at start-up. If the only outlet is across the room, that is a
+            constraint on placement, and it is covered further in our
+            <a href="/treadmill-electricity-usage/" class="text-[#0F62FE] font-medium">electricity use guide</a>.
+          </p>
+          <p>
+            Finally, check what the machine will sit on. A hard, level floor is
+            ideal. Carpet complicates both stability and ventilation and has its
+            own set of rules, which we work through in
+            <a href="/treadmill-on-carpet/" class="text-[#0F62FE] font-medium">putting a treadmill on carpet</a>.
+          </p>
+        </div>
+
+        <div id="small-rooms" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. If the Room Is Genuinely Small</h2>
+          <p>
+            Sometimes the numbers do not work, and the useful response is to change
+            the machine rather than to shave the clearance.
+          </p>
+          <p>
+            The most effective substitution is a walking pad. At around 50 by 22
+            inches and 5 inches tall, it stores under a bed or a sofa, needs no
+            ceiling calculation, and — because walking speeds are low — the
+            clearance behind matters far less than it does on a running machine.
+            For anyone whose honest use case is walking, this is not a compromise
+            at all; it is the right product. We compare the two formats directly in
+            <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad versus treadmill</a>.
+          </p>
+          <p>
+            The second option is a compact folding machine with a shorter deck,
+            accepting the stride limitation knowingly rather than discovering it
+            later. A 50-inch deck is a walking deck, and if the room can only take
+            a walking deck it is better to buy one deliberately than to buy a
+            running machine that does not fit.
+          </p>
+          <p>
+            What is not a good option is reducing the rear clearance. If the only
+            place a treadmill will go has a wall four feet behind it, the honest
+            answer is that the room does not take a running treadmill. Orientation
+            sometimes rescues this — turning the machine to run along the longest
+            diagonal, or facing it into the room rather than at a wall — and it is
+            worth trying with the tape outline before giving up.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How much space do you need for a treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Plan for the machine's footprint plus about 6 feet of clear floor
+                behind it and 2 feet on each side. A typical full-size treadmill is
+                around 80 by 36 inches, so the honest room requirement is closer to
+                12 feet by 6 feet. The clearance behind is a safety margin, not a
+                comfort one — it is where you land if you come off the back.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What ceiling height do I need for a treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Take your height, add the deck height of the machine, then add at
+                least 12 inches of head clearance. Deck heights run from about 5
+                inches on a walking pad to 12 inches on a cushioned home machine.
+                For a 6-foot user on a typical treadmill that means a ceiling of
+                roughly 7 foot 9, which rules out many basements. Incline trainers
+                add up to another 15 inches at full grade.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Can a treadmill fit through a standard doorway?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Most folding treadmills fit through a standard 32-inch door when
+                folded or tipped on end, but many full-size machines are 36 to 40
+                inches wide across the rails and will not. Measure the narrowest
+                point of the delivery route, including stair turns and bannisters,
+                before ordering, and check whether the machine ships assembled or
+                in a box.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How much clearance do you need behind a treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Safety guidance is consistently around 6 feet of clear space behind
+                the rear of the belt, and 2 feet either side. This is not about
+                comfort — it is the distance a person travels if they lose their
+                footing and are thrown backward off the belt. A wall, a piece of
+                furniture or a stair opening in that zone changes a stumble into an
+                injury.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Can you put a treadmill upstairs or on a second floor?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Usually yes, structurally. A treadmill plus user is typically 400 to
+                600 lb spread across a large footprint, which is within the design
+                load of a normal residential floor. The real problems upstairs are
+                getting the machine there, floor deflection making the frame feel
+                unstable, and noise transmitted to the room below, which is often
+                the deciding factor.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How much space does a folded treadmill take up?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                A folded mid-range treadmill occupies roughly 3 feet by 3 feet of
+                floor and stands about 5 to 6 feet tall. It is a substantial object
+                rather than something that disappears. Folding saves real floor
+                area — often half the in-use footprint — but plan a parking spot for
+                it rather than assuming it will tuck into a corner.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Planning Treadmill Space</h2>
+          <p class="text-gray-700 leading-relaxed">Three of these cost money and one of them costs rather more than that.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating the rear clearance as a suggestion</h3>
+              <p class="text-gray-700 text-sm m-0">Six feet behind the belt is a safety distance, not a comfort one, and it exists because a belt running at 7 mph delivers you backward at 7 mph. A wall, a radiator, a glass door or a stairwell inside that zone changes the consequence of a stumble entirely. If the room cannot give you that space, it cannot take a running treadmill.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Forgetting the deck adds to your height</h3>
+              <p class="text-gray-700 text-sm m-0">You run at your height plus 8 to 12 inches of deck, and you need a foot of clearance above that. A 6-foot user needs roughly 7 foot 10 of ceiling, and an incline machine at grade needs considerably more. Measure at the spot above the front of the deck, where the ducts and light fittings usually are.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Measuring the doorway and not the route</h3>
+              <p class="text-gray-700 text-sm m-0">The doorway is rarely the narrowest point. Stair turns, bannisters, landing radiators and the diagonal at the top of a flight are what actually stop deliveries. Measure the whole path, confirm whether the machine arrives boxed or assembled, and check whether the uprights unbolt to reduce its width.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Believing a folded treadmill disappears</h3>
+              <p class="text-gray-700 text-sm m-0">Folded, a mid-range machine is a 6-foot-tall object standing on 3 feet by 3 feet of floor. It halves the in-use footprint, which is worthwhile, but it does not tuck behind a door and it does not remove the need for clearance while you are running. Plan the parked position before you buy, not after.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Setup Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/treadmill-on-carpet/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Placement</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill on Carpet</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Stability, ventilation and the fibre problem, honestly assessed.</p>
+            </a>
+            <a href="/quiet-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Apartments</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Quiet Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Measured beside the deck and in the room below.</p>
+            </a>
+            <a href="/folding-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Space Saving</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Folding Treadmills Explained</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Hydraulic, manual latch and motorised mechanisms compared.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">Footprint plus 6 feet behind, 2 feet either
+            side, and a foot above your head once the deck has lifted you.</strong>
+            For a full-size machine that is roughly 12 by 7 feet of room and about
+            7 foot 10 of ceiling. Tape the outline on the floor and live with it
+            for a day before ordering anything.
+          </p>
+          <p class="text-gray-300 leading-relaxed">
+            If the numbers do not work, change the machine rather than the
+            clearance — a
+            <a href="/walking-pad-vs-treadmill/" class="text-[#5AA9FF] font-bold no-underline">walking pad</a>
+            solves most small-room cases outright, and the
+            <a href="/treadmill-belt-size-guide/" class="text-[#5AA9FF] font-bold no-underline">belt size guide</a>
+            explains exactly what a shorter deck costs you.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+</Layout>
