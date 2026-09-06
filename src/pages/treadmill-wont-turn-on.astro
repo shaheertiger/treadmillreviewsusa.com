@@ -1,0 +1,649 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "Treadmill Won't Turn On? (2026): Work Through It in This Order";
+const description =
+  "Four out of five dead treadmills are a safety key, a tripped reset switch, a dead outlet or a blown fuse. Check those before assuming the console or the controller board has failed.";
+
+const CHECKS = [
+  {
+    check: "Safety key seated",
+    symptom: "Console completely dark or shows a key prompt",
+    note: "The single most common cause. Reseat it firmly; magnets weaken.",
+  },
+  {
+    check: "Machine's own reset switch",
+    symptom: "No power despite a live outlet",
+    note: "A small button or breaker near the power inlet. Press it in.",
+  },
+  {
+    check: "Wall outlet is live",
+    symptom: "Nothing at all, no lights, no sound",
+    note: "Test with a lamp. GFCI outlets trip silently and often.",
+  },
+  {
+    check: "Household breaker",
+    symptom: "Died mid-session, will not restart",
+    note: "Check the panel. A tripped breaker can look only half-thrown.",
+  },
+  {
+    check: "Power cord and inlet",
+    symptom: "Intermittent power, flickers when moved",
+    note: "Check both ends. The machine-side socket works loose over time.",
+  },
+  {
+    check: "Internal fuse",
+    symptom: "Dead after a storm or a surge",
+    note: "Under the motor hood on many machines. Replace like for like.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Guides", item: "https://www.treadmillreviewsusa.com/best-of/" },
+        { "@type": "ListItem", position: 3, name: "Treadmill Will Not Turn On", item: "https://www.treadmillreviewsusa.com/treadmill-wont-turn-on/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Why will my treadmill not turn on?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "In most cases the safety key is not seated, the machine's own reset switch has tripped, the outlet is dead, or an internal fuse has blown. Work through those four before considering the console or the controller board, because they account for the large majority of dead treadmills and all four cost nothing to check.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where is the reset button on a treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Usually on the front frame near where the power cord enters the machine, close to the on-off switch. It is a small button or a miniature circuit breaker, sometimes recessed, and when tripped it stands slightly proud. Press it firmly in. On some machines it is inside the motor hood instead, and the manual will say.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can a treadmill safety key stop it turning on?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, and it is the most common cause of all. The key holds a magnet against a switch on the console, and the machine is dead without it. Keys get lost, magnets weaken with age, and the switch can be fouled by dust. Reseat it firmly, try a different position, and clean the recess before assuming worse.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How do I know if my treadmill fuse is blown?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The machine is completely dead — no console, no sound — despite a confirmed live outlet, a seated safety key and an untripped reset switch. Many machines have a fuse near the power inlet or on the controller board. A blown fuse is visibly broken or blackened inside, and it must be replaced with the same rating.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can a power surge kill a treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. The controller board is sensitive to mains surges, and a machine that died during or shortly after a storm has usually taken one. Sometimes the damage stops at a fuse, which is a cheap repair. If the board itself is gone, the cost on a mid-range machine is often a substantial fraction of a replacement.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is it worth repairing a treadmill that will not turn on?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "It depends entirely on which part failed. A fuse, a safety key or a switch is a cheap fix worth doing on any machine. A controller board on a five-year-old mid-range treadmill frequently costs a third to a half of a new machine fitted, at which point the arithmetic usually favours replacing it.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", name: "Morgan Reyes" },
+      datePublished: "2026-09-06",
+      dateModified: "2026-09-06",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-09-06",
+    modifiedTime: "2026-09-06",
+    author: "Morgan Reyes",
+    section: "Fitness Equipment",
+    tags: [
+      "treadmill won't turn on",
+      "treadmill no power",
+      "treadmill reset switch",
+      "treadmill safety key",
+      "treadmill troubleshooting",
+    ],
+  }}
+  jsonLd={schema}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-dead" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-dead)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Troubleshooting
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated September 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          Treadmill <span class="text-[#5AA9FF]">Won't Turn On</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          Before you assume the controller board has died, check the four things
+          that account for most dead treadmills: the safety key, the machine's own
+          reset switch, the outlet, and an internal fuse. All four are free to
+          check and take about five minutes.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#checks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            Run the Checks
+          </a>
+          <a href="#board" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            If It Is the Board
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
+          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">September 6, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="6.7k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-red-50 border border-red-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-red-900">Unplug at the wall</strong> before removing
+          the motor hood or touching anything inside the machine. Capacitors can
+          hold a charge after disconnection, so do not probe the controller board.
+          Everything in the first five checks is done from outside the machine.
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#checks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Six Checks in Order</a>
+          <a href="#safety-key" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The Safety Key</a>
+          <a href="#reset" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Machine's Reset Switch</a>
+          <a href="#outlet" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. The Outlet and the Breaker</a>
+          <a href="#cord" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. The Cord and Its Connections</a>
+          <a href="#fuse" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. The Internal Fuse</a>
+          <a href="#board" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Console and Controller Board</a>
+          <a href="#repair-or-replace" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Repair or Replace</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          A completely dead treadmill feels like an expensive problem, and most of
+          the time it is not one. The overwhelming majority of these turn out to be
+          a safety key that is not seated, a reset switch that has tripped, a GFCI
+          outlet that has quietly gone off, or a fuse that did exactly what fuses
+          are for. Work through them in order before spending anything.
+        </p>
+
+        <div id="checks" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. The Six Checks in Order</h2>
+          <p>
+            Do these in sequence, because each one rules out a cause and the order
+            runs from most likely to least. All six are outside the machine except
+            the last.
+          </p>
+        </div>
+      </div>
+
+      <div class="not-prose my-8 overflow-x-auto">
+        <table class="min-w-[680px] w-full text-sm border border-gray-200 rounded-2xl overflow-hidden">
+          <thead class="bg-gray-900 text-white">
+            <tr>
+              <th class="text-left px-4 py-3 font-black">Check</th>
+              <th class="text-left px-4 py-3 font-black">Matching Symptom</th>
+              <th class="text-left px-4 py-3 font-black">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              CHECKS.map((row, i) => (
+                <tr class={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                  <td class="px-4 py-3 font-bold text-gray-900 align-top">{row.check}</td>
+                  <td class="px-4 py-3 text-gray-700 align-top">{row.symptom}</td>
+                  <td class="px-4 py-3 text-gray-500 align-top">{row.note}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p>
+          One useful piece of information before you start: what was happening when
+          it died. A machine that failed mid-session points at heat or a tripped
+          breaker. One that was fine yesterday and dead today, with no session in
+          between, points at the outlet, a surge, or a safety key that has been
+          moved.
+        </p>
+
+        <div id="safety-key" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The Safety Key</h2>
+          <p>
+            The single most common cause, and the one people dismiss because the key
+            looks like it is in place.
+          </p>
+          <p>
+            The key is a magnet in a plastic housing. It sits against a reed switch
+            behind the console, and the machine will not power up without the
+            magnetic field holding that switch closed. It is a safety interlock, and
+            it is designed to fail closed — meaning dead — for good reason.
+          </p>
+          <p>
+            Take it out and put it back firmly. Try seating it slightly differently
+            — a millimetre matters when a weak magnet is involved. Then check three
+            things: whether the recess is full of dust or lint, whether the magnet
+            has come loose inside its housing, and whether the key is the right one
+            for this machine, which matters in households with two.
+          </p>
+          <p>
+            Magnets weaken with age, and a five-year-old key can be too weak to hold
+            the switch while looking perfectly normal. Replacement keys are
+            inexpensive and available for most mainstream models. Try one before
+            concluding the switch has failed — it is a fraction of the cost and it
+            resolves this more often than not.
+          </p>
+          <p>
+            What not to do: tape a magnet over the switch to bypass it. The
+            interlock exists so the belt stops when someone comes off the back of
+            it, and defeating it removes the one protection that matters most on a
+            machine that throws people backward.
+          </p>
+        </div>
+
+        <div id="reset" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The Machine's Reset Switch</h2>
+          <p>
+            Almost every treadmill has its own overcurrent protection, separate from
+            the household breaker, and a great many owners do not know it exists.
+          </p>
+          <p>
+            Look at the front of the frame near where the power cord enters, usually
+            beside the on-off switch. You are looking for a small button or a
+            miniature circuit breaker, often red or black, sometimes recessed into
+            the plastic. When it has tripped it typically stands a few millimetres
+            proud of its normal position.
+          </p>
+          <p>
+            Press it firmly in. If it clicks and stays, it had tripped, and the
+            machine should now power up. On some machines the reset is inside the
+            motor hood rather than outside, and the manual will say which.
+          </p>
+          <p>
+            A reset that trips once is unremarkable — a start-up current spike, a
+            momentary overload. A reset that trips repeatedly is telling you
+            something and should not be repeatedly pressed. The usual causes are a
+            dry deck raising current draw well past normal, a motor working beyond
+            its rating, or a genuine electrical fault developing. Investigate rather
+            than reset; the friction side of that is covered in
+            <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium">how often to lubricate a treadmill</a>.
+          </p>
+        </div>
+
+        <div id="outlet" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. The Outlet and the Breaker</h2>
+          <p>
+            Obvious, frequently skipped, and the reason for a certain number of
+            unnecessary service calls.
+          </p>
+          <p>
+            Plug a lamp into the same outlet and confirm it is live. GFCI outlets —
+            common in basements, garages and converted spaces, which is where
+            treadmills live — trip silently and often, and a tripped GFCI upstream
+            can kill several outlets that have no visible test button of their own.
+            Look for a GFCI outlet anywhere on the same circuit and press its reset.
+          </p>
+          <p>
+            Then check the household panel. A tripped breaker does not always look
+            obviously off; some sit in a middle position that reads as on at a
+            glance. Switch the suspect breaker fully off and then fully on again
+            rather than nudging it.
+          </p>
+          <p>
+            If the breaker trips again as soon as the treadmill starts, stop.
+            Repeatedly resetting a breaker into a fault is not troubleshooting.
+            Start-up current on a treadmill is several times running current, and a
+            machine that trips a breaker every time is either sharing an overloaded
+            circuit or has a fault. The circuit requirements are covered in our
+            <a href="/treadmill-electricity-usage/" class="text-[#0F62FE] font-medium">electricity use guide</a>.
+          </p>
+          <p>
+            While you are here: if the machine is on an extension lead, take it off.
+            Voltage drop under start-up load makes the motor draw harder and heats
+            the lead, and it is a genuine fire risk rather than a warranty
+            disclaimer.
+          </p>
+        </div>
+
+        <div id="cord" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. The Cord and Its Connections</h2>
+          <p>
+            Two ends, and the machine end is the one that fails.
+          </p>
+          <p>
+            Most treadmills use a detachable cord into a socket on the frame. That
+            socket gets vibrated at every session for years, and the connection
+            works loose. The signature is intermittent power — a machine that works,
+            then does not, or one that flickers when someone leans on the console or
+            the machine is moved.
+          </p>
+          <p>
+            Unplug at the wall, then unplug and firmly reseat the cord at the
+            machine end. Look at the pins for discolouration or pitting, which
+            indicates arcing and means the cord or the inlet needs replacing rather
+            than reseating.
+          </p>
+          <p>
+            Check the full length of the cord for damage, particularly where it
+            passes under or behind the machine. A folding treadmill can trap and
+            crush its own cord over time, and cords running under a machine on
+            carpet get compressed at every session.
+          </p>
+          <p>
+            A cord is a cheap part, and swapping in a known-good one of the correct
+            rating is a quick way to eliminate this as a cause. Do not substitute a
+            lighter-gauge cord from another appliance; treadmill draw is higher than
+            most household electronics.
+          </p>
+        </div>
+
+        <div id="fuse" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. The Internal Fuse</h2>
+          <p>
+            If the outlet is confirmed live, the key is seated, the reset is in and
+            the cord is sound, and the machine is still entirely dead, a fuse is the
+            next candidate — particularly if it died during a storm or a power
+            event.
+          </p>
+          <p>
+            Unplug at the wall and leave it for several minutes before removing the
+            motor hood. Many machines have a fuse near the power inlet or mounted on
+            the controller board, usually a glass or ceramic cartridge in a clip or
+            holder. A blown fuse is often visibly broken or blackened inside,
+            though not always.
+          </p>
+          <p>
+            Replace it with exactly the same rating and type. Fitting a higher-rated
+            fuse because it is what you have in a drawer removes the protection the
+            designer put there and can turn a cheap failure into an expensive or
+            dangerous one.
+          </p>
+          <p>
+            A fuse that blows once may simply have done its job during a surge. A
+            fuse that blows again immediately is reporting a fault downstream — a
+            shorted motor winding or a failed component on the board — and replacing
+            it a third time is not the answer. At that point it is a technician's
+            job.
+          </p>
+          <p>
+            If you are not comfortable with the hood off, this is a reasonable place
+            to stop and call someone. Nothing beyond this point is an owner
+            adjustment.
+          </p>
+        </div>
+
+        <div id="board" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Console and Controller Board</h2>
+          <p>
+            With everything simple eliminated, two components remain, and they
+            present differently.
+          </p>
+          <p>
+            <strong>The console</strong> is the display and its electronics. A
+            console fault typically shows as a dead or partial display while the
+            machine has power — sometimes a faint backlight, sometimes segments
+            missing, sometimes an error code. If the belt still responds to the
+            manual controls, or the machine makes any sound when switched on, the
+            power side is alive and the console is the suspect. Console faults are
+            often a loose ribbon connector where the wiring passes through the
+            upright, which is a genuinely common failure point on folding machines.
+          </p>
+          <p>
+            <strong>The controller board</strong> — the motor control board under
+            the hood — is the more expensive answer. It is the component most
+            damaged by mains surges and by cumulative heat, which is why the
+            maintenance case for keeping a deck lubricated is really a case about
+            this board. A failed board usually means a machine that is completely
+            dead with a good fuse, or one that powers up but cannot drive the motor.
+          </p>
+          <p>
+            Neither is a hand-tools repair. Boards are model-specific, and diagnosis
+            without the right meter and the service documentation tends to mean
+            replacing parts speculatively. If your machine is under warranty, this
+            is the point to call the manufacturer rather than opening anything
+            further — some warranties are void the moment the hood comes off.
+          </p>
+        </div>
+
+        <div id="repair-or-replace" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Repair or Replace</h2>
+          <p>
+            Which failure you have found determines whether repair makes sense, and
+            the range is wide.
+          </p>
+          <p>
+            <strong>Always worth fixing:</strong> a safety key, a fuse, a power cord,
+            a reset switch, a loose connector. These are small parts, widely
+            available for mainstream brands, and the repair is a fraction of the
+            machine's value at any age.
+          </p>
+          <p>
+            <strong>Usually worth fixing:</strong> a console on a machine under about
+            five years old, particularly if the fault is a connector rather than the
+            board itself. Consoles are model-specific and not cheap, but they are
+            less than a controller board.
+          </p>
+          <p>
+            <strong>Do the arithmetic:</strong> a controller board. Fitted, on a
+            mid-range home treadmill, this frequently runs to a third or a half of
+            the price of a new machine. On a two-year-old premium treadmill it is
+            clearly worth it. On a six-year-old budget machine that also has a worn
+            belt and a glazed deck, it usually is not, and the full calculation is in
+            <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">how long treadmills last</a>.
+          </p>
+          <p>
+            One thing worth doing whichever way you go: fit surge protection. The
+            controller board is the most expensive part of a treadmill and mains
+            surges are one of the main ways it dies. A surge protector rated for the
+            machine's draw, or simply unplugging it when it will be unused for weeks,
+            is cheap insurance. For faults where the machine powers up but nothing
+            moves, continue with
+            <a href="/treadmill-turns-on-but-belt-wont-move/" class="text-[#0F62FE] font-medium">turns on but the belt will not move</a>,
+            and for everything else there is the
+            <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a>.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Why will my treadmill not turn on?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                In most cases the safety key is not seated, the machine's own reset
+                switch has tripped, the outlet is dead, or an internal fuse has
+                blown. Work through those four before considering the console or the
+                controller board, because they account for the large majority of dead
+                treadmills and all four cost nothing to check.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Where is the reset button on a treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Usually on the front frame near where the power cord enters the
+                machine, close to the on-off switch. It is a small button or a
+                miniature circuit breaker, sometimes recessed, and when tripped it
+                stands slightly proud. Press it firmly in. On some machines it is
+                inside the motor hood instead, and the manual will say.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Can a treadmill safety key stop it turning on?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Yes, and it is the most common cause of all. The key holds a magnet
+                against a switch on the console, and the machine is dead without it.
+                Keys get lost, magnets weaken with age, and the switch can be fouled
+                by dust. Reseat it firmly, try a different position, and clean the
+                recess before assuming worse.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How do I know if my treadmill fuse is blown?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                The machine is completely dead — no console, no sound — despite a
+                confirmed live outlet, a seated safety key and an untripped reset
+                switch. Many machines have a fuse near the power inlet or on the
+                controller board. A blown fuse is visibly broken or blackened inside,
+                and it must be replaced with the same rating.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Can a power surge kill a treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Yes. The controller board is sensitive to mains surges, and a machine
+                that died during or shortly after a storm has usually taken one.
+                Sometimes the damage stops at a fuse, which is a cheap repair. If the
+                board itself is gone, the cost on a mid-range machine is often a
+                substantial fraction of a replacement.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is it worth repairing a treadmill that will not turn on?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                It depends entirely on which part failed. A fuse, a safety key or a
+                switch is a cheap fix worth doing on any machine. A controller board
+                on a five-year-old mid-range treadmill frequently costs a third to a
+                half of a new machine fitted, at which point the arithmetic usually
+                favours replacing it.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With a Dead Treadmill</h2>
+          <p class="text-gray-700 leading-relaxed">Two of these cost money unnecessarily. The other two are genuinely unsafe.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming the board has died</h3>
+              <p class="text-gray-700 text-sm m-0">A dead console reads as an expensive electronics failure, and it usually is not. The safety key, the machine's own reset switch, a tripped GFCI and a blown fuse together account for most of these, and all four are free to check. Work the list before booking a service call.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Repeatedly resetting into a fault</h3>
+              <p class="text-gray-700 text-sm m-0">A reset switch or breaker that trips once is unremarkable. One that trips every time the machine starts is reporting an overload — a dry deck, an oversized load, or a developing electrical fault. Pressing it in again and again is not diagnosis, and each cycle puts the fault current through the machine once more.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Fitting a higher-rated fuse</h3>
+              <p class="text-gray-700 text-sm m-0">A fuse is sized to fail before something more expensive does. Substituting a bigger one because it was in the drawer removes that protection entirely and can turn a cheap failure into a dangerous one. Replace like for like, and if the new fuse blows immediately, stop — there is a fault downstream.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Bypassing the safety key</h3>
+              <p class="text-gray-700 text-sm m-0">Taping a magnet over the reed switch does make a machine with a weak key start. It also removes the interlock that stops the belt when someone comes off the back of it, which is the one protection that matters most on a treadmill. Replacement keys are inexpensive for most mainstream models.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Troubleshooting Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/treadmill-turns-on-but-belt-wont-move/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Next Fault</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Turns On but Belt Will Not Move</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Console lights, nothing happens — a different set of causes.</p>
+            </a>
+            <a href="/treadmill-troubleshooting/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Pillar Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Troubleshooting</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Error codes, cut-outs and the four symptoms that mean stop.</p>
+            </a>
+            <a href="/treadmill-electricity-usage/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Electrical</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Electricity Use</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Circuits, start-up current and why extension leads fail.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">Safety key, reset switch, outlet, cord,
+            fuse — in that order, before anything else.</strong> Those five cover
+            most dead treadmills, cost nothing to check, and take about five
+            minutes. The console and the controller board are the last two
+            candidates, not the first.
+          </p>
+          <p class="text-gray-300 leading-relaxed">
+            Whatever the outcome, fit surge protection afterwards — the board is the
+            expensive part and surges are how it dies. If the machine powers up but
+            the belt does nothing, continue with
+            <a href="/treadmill-turns-on-but-belt-wont-move/" class="text-[#5AA9FF] font-bold no-underline">turns on but will not move</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+</Layout>

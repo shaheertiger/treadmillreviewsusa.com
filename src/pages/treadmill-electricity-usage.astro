@@ -1,0 +1,664 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "How Much Electricity Does a Treadmill Use? (2026) — Real Numbers";
+const description =
+  "A home treadmill draws 300 to 900 watts in use and costs most households under 4 dollars a month. Here is the arithmetic, what actually moves the number, and the standby draw nobody mentions.";
+
+const COSTS = [
+  {
+    profile: "Walking pad, 60 min/day at 3 mph",
+    draw: "~180 W",
+    cost: "About $0.90 per month",
+  },
+  {
+    profile: "Home treadmill, 30 min/day walking",
+    draw: "~450 W",
+    cost: "About $1.15 per month",
+  },
+  {
+    profile: "Home treadmill, 45 min/day jogging",
+    draw: "~750 W",
+    cost: "About $2.85 per month",
+  },
+  {
+    profile: "Home treadmill, 60 min/day running at incline",
+    draw: "~1,100 W",
+    cost: "About $5.60 per month",
+  },
+  {
+    profile: "Commercial AC machine, 60 min/day",
+    draw: "~1,500 W",
+    cost: "About $7.60 per month",
+  },
+  {
+    profile: "Standby only, plugged in and idle",
+    draw: "2 – 8 W",
+    cost: "About $0.10 – $0.40 per month",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Guides", item: "https://www.treadmillreviewsusa.com/best-of/" },
+        { "@type": "ListItem", position: 3, name: "Treadmill Electricity Usage", item: "https://www.treadmillreviewsusa.com/treadmill-electricity-usage/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "How much electricity does a treadmill use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A home treadmill draws roughly 300 to 900 watts while running, depending on the motor, your weight and your pace. At the US average of about 17 cents per kilowatt-hour, 45 minutes a day of jogging costs around 3 dollars a month. Walking costs about a third of that. It is a small line on a household bill by any measure.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How do I calculate my treadmill's running cost?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Multiply the watts drawn by the hours used to get watt-hours, divide by 1,000 for kilowatt-hours, then multiply by your electricity rate. A 750-watt machine used 45 minutes a day is 0.56 kWh per day, about 17 kWh a month, or roughly 2.85 dollars at 17 cents per kWh. Use the label figure only as a ceiling, since it states maximum draw rather than typical.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does a treadmill use a lot of electricity compared to other appliances?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. A treadmill in use draws about the same as a microwave or a hairdryer, but it runs for well under an hour a day rather than continuously. A refrigerator, a tumble dryer, an electric water heater and air conditioning all cost a household far more per year than a home treadmill does.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does using incline increase treadmill electricity use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, in two ways. The incline motor itself draws power while it is changing grade, though only briefly. More significantly, running at incline means the drive motor is lifting your body weight as well as moving the belt, which raises the sustained draw. A steep incline walk can use more power than a flat jog for the same person.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Should I unplug my treadmill when not in use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "For the electricity saving alone, it is not worth it — standby is typically 2 to 8 watts, which is a few cents a month. There is a better reason to unplug: it protects the controller board from power surges, which is a common cause of a treadmill that will not turn on. Use a surge protector rated for the machine's draw if you would rather leave it connected.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does a treadmill need its own circuit?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Most home treadmills are fine on a standard grounded 15-amp household circuit provided nothing else heavy is sharing it. Manufacturers commonly recommend a dedicated 20-amp circuit for larger machines, and most explicitly advise against extension leads, because start-up current draw is much higher than running draw and a marginal connection heats up.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", name: "Morgan Reyes" },
+      datePublished: "2026-09-06",
+      dateModified: "2026-09-06",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-09-06",
+    modifiedTime: "2026-09-06",
+    author: "Morgan Reyes",
+    section: "Fitness Equipment",
+    tags: [
+      "treadmill electricity",
+      "treadmill running cost",
+      "treadmill watts",
+      "home gym running costs",
+      "treadmill power",
+    ],
+  }}
+  jsonLd={schema}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-elec" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-elec)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Owner's Guide
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated September 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          How Much <span class="text-[#5AA9FF]">Electricity</span> Does a Treadmill Use?
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          Less than almost everyone assumes. A home treadmill in daily use adds
+          somewhere between one and six dollars a month to a typical bill — but
+          the wattage on the label is not the number to calculate with, and the
+          circuit it is plugged into matters more than the cost.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#costs" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            See the Costs
+          </a>
+          <a href="#circuits" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            Circuits and Safety
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
+          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">September 6, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="3.6k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">The short answer.</strong> A home treadmill
+          draws 300 to 900 watts in use. Forty-five minutes a day of jogging works
+          out to roughly 3 dollars a month at the US average rate of about 17 cents
+          per kilowatt-hour. Running costs are not a reason to choose one treadmill
+          over another, and they are not a reason to avoid buying one.
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#the-maths" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Calculation in One Line</a>
+          <a href="#costs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Monthly Cost by Use Pattern</a>
+          <a href="#label" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Why the Label Wattage Misleads</a>
+          <a href="#variables" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What Actually Moves the Number</a>
+          <a href="#standby" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Standby Draw and Unplugging</a>
+          <a href="#comparison" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Compared With Other Appliances</a>
+          <a href="#circuits" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Circuits, Extension Leads and Surges</a>
+          <a href="#reducing" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Genuinely Reducing Consumption</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          This question is usually asked in the wrong spirit. People want to know
+          whether a treadmill will noticeably raise the bill, and the answer is no
+          — a few dollars a month for most households. The question worth asking
+          instead is what the machine is plugged into, because the electrical
+          detail that matters is not cost, it is start-up current and surge
+          protection.
+        </p>
+
+        <div id="the-maths" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. The Calculation in One Line</h2>
+          <p>
+            Watts times hours, divided by a thousand, times your rate. That is the
+            whole thing, and doing it once for your own machine is more useful than
+            any average.
+          </p>
+          <p>
+            Take a machine drawing 750 watts, used 45 minutes a day. That is 750
+            multiplied by 0.75 hours, which is 563 watt-hours, or 0.56 kilowatt-
+            hours per day. Over a 30-day month that is about 17 kWh. At the US
+            residential average of roughly 17 cents per kWh in 2026, the monthly
+            cost is around 2.85 dollars, and the annual cost around 34 dollars.
+          </p>
+          <p>
+            Your own rate is the variable that moves this most, and it varies
+            enormously — from around 11 cents per kWh in parts of the South to over
+            30 cents in Hawaii, California and much of New England. Check the rate
+            on your own bill rather than using a national figure, because the
+            difference between 11 and 30 cents nearly triples every number on this
+            page.
+          </p>
+          <p>
+            The other variable is honesty about usage. Most people calculate for
+            the training they intend to do rather than the training they do. If the
+            machine gets used three times a week rather than daily, halve
+            everything here. That is not a criticism — it is the single largest
+            error in every home-gym running-cost estimate.
+          </p>
+        </div>
+
+        <div id="costs" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Monthly Cost by Use Pattern</h2>
+          <p>
+            Figures below assume 17 cents per kilowatt-hour and thirty days of use
+            per month. Draw figures are typical sustained draw for a user around
+            180 lb, not the peak on the machine's rating plate.
+          </p>
+        </div>
+      </div>
+
+      <div class="not-prose my-8 overflow-x-auto">
+        <table class="min-w-[680px] w-full text-sm border border-gray-200 rounded-2xl overflow-hidden">
+          <thead class="bg-gray-900 text-white">
+            <tr>
+              <th class="text-left px-4 py-3 font-black">Machine and Use</th>
+              <th class="text-left px-4 py-3 font-black">Typical Draw</th>
+              <th class="text-left px-4 py-3 font-black">Cost at 17c/kWh</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              COSTS.map((row, i) => (
+                <tr class={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                  <td class="px-4 py-3 font-bold text-gray-900 align-top">{row.profile}</td>
+                  <td class="px-4 py-3 text-gray-700 align-top">{row.draw}</td>
+                  <td class="px-4 py-3 text-gray-500 align-top">{row.cost}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p>
+          The spread between the cheapest and the most expensive row is about seven
+          dollars a month. That is the entire range of the question, from a walking
+          pad to a commercial AC machine run for an hour daily. For context, it is
+          roughly what a single household tumble-dryer cycle costs per week.
+        </p>
+
+        <div id="label" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Why the Label Wattage Misleads</h2>
+          <p>
+            The rating plate on the frame or under the motor hood states the
+            machine's maximum draw, and it is typically 1,500 to 2,000 watts on a
+            home treadmill. Calculating from that number produces a cost estimate
+            two to four times too high, which is why so many published figures for
+            this question are wrong.
+          </p>
+          <p>
+            The reason for the gap is that a motor draws power in proportion to the
+            work it is doing, not in proportion to what it could do. A 3.0 CHP
+            motor moving a 160 lb walker at 3 mph on a well-lubricated deck is
+            producing a small fraction of its rated output and drawing accordingly.
+            The rating plate is an electrical safety figure — it tells an
+            electrician what the circuit must tolerate — rather than a consumption
+            figure.
+          </p>
+          <p>
+            The distinction is the same one that runs through our
+            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>:
+            peak capacity and sustained output are different quantities, and the
+            marketing consistently quotes the one that flatters.
+          </p>
+          <p>
+            If you want a real number for your own machine, a plug-in energy
+            monitor costs very little and settles the question in one session. It
+            will also show you something more interesting than the total, which is
+            how sharply the draw changes with incline and pace.
+          </p>
+        </div>
+
+        <div id="variables" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What Actually Moves the Number</h2>
+          <p>
+            Four things change consumption meaningfully, and two of them are within
+            your control.
+          </p>
+          <p>
+            <strong>Your weight.</strong> The motor is working against the friction
+            between belt and deck, and that friction scales with the load pressing
+            them together. A 250 lb user draws appreciably more than a 150 lb user
+            at the same speed on the same machine. This is the largest single
+            variable and it is not adjustable.
+          </p>
+          <p>
+            <strong>Incline.</strong> Larger than most people expect. At grade, the
+            motor is not only moving the belt but contributing to lifting your mass
+            against gravity, and the draw rises steeply. A 12 per cent walk can
+            consume more than a flat jog for the same person, which is worth
+            knowing if you follow the
+            <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 protocol</a>
+            daily.
+          </p>
+          <p>
+            <strong>Deck condition.</strong> This one is adjustable and it is the
+            reason maintenance appears in an article about electricity. A dry deck
+            raises friction substantially, and the motor compensates by drawing
+            more current to hold the set speed. A neglected machine can use
+            noticeably more power than a maintained one doing identical work — and
+            the extra energy is going into heat, which is what kills controllers.
+            Ten minutes with the
+            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a>
+            is the only energy-saving measure here that is genuinely worth doing.
+          </p>
+          <p>
+            <strong>Belt tension.</strong> The same logic. An over-tightened belt
+            adds continuous drag the motor must overcome, raising both draw and
+            heat. It is one of several reasons over-tensioning is a costly habit,
+            covered in
+            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>.
+          </p>
+        </div>
+
+        <div id="standby" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Standby Draw and Unplugging</h2>
+          <p>
+            A treadmill plugged in but switched off still draws a small amount to
+            keep the console alive and, on connected machines, the wireless radio
+            listening. Typical figures are 2 to 8 watts, which over a month is
+            roughly 1.5 to 6 kWh — call it 25 cents to a dollar.
+          </p>
+          <p>
+            Purely as an economy measure, unplugging is not worth the walk across
+            the room. Smart-console machines sit at the higher end of that range,
+            and if a machine is unused for months the standby total becomes
+            slightly more noticeable, but it is still small.
+          </p>
+          <p>
+            There is a much better reason to unplug, and it has nothing to do with
+            the bill. The controller board is the component most likely to fail on
+            a home treadmill, and mains surges are one of the ways it fails. A
+            machine that sits unused for weeks is exposed to every storm and grid
+            event in that period for no benefit at all. Unplugging is cheap
+            insurance on the most expensive part.
+          </p>
+          <p>
+            If you would rather leave it connected, use a surge protector rated for
+            the machine's current draw rather than a basic power strip. And note
+            that a surge protector is not the same thing as an extension lead used
+            to reach a distant outlet, which is a different and worse idea — see
+            the next section. A treadmill that has stopped responding entirely is
+            often a board that took a hit, which we work through in
+            <a href="/treadmill-wont-turn-on/" class="text-[#0F62FE] font-medium">treadmill will not turn on</a>.
+          </p>
+        </div>
+
+        <div id="comparison" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Compared With Other Appliances</h2>
+          <p>
+            The useful framing is not watts but watt-hours, because duration
+            dominates. A treadmill has a high draw and a very short duty cycle,
+            which is the opposite profile to most of what raises a household bill.
+          </p>
+          <p>
+            In use, a treadmill draws about what a microwave or a hairdryer draws.
+            Nobody worries about the running cost of a hairdryer, and for the same
+            reason — it is on for minutes. A treadmill used 45 minutes a day is a
+            hairdryer used 45 minutes a day, and the annual figure lands around 30
+            to 40 dollars.
+          </p>
+          <p>
+            The genuinely expensive things in a house all share the property of
+            running for a long time or working against a large temperature
+            difference: air conditioning, electric water heating, a tumble dryer, a
+            refrigerator that runs 24 hours a day at low draw. Any one of those
+            costs a multiple of the treadmill's annual consumption.
+          </p>
+          <p>
+            The one genuinely fair comparison is against a gym membership, which is
+            what most people are really weighing. A home treadmill's electricity is
+            roughly a tenth of one month of typical gym fees per year. Whatever the
+            case for or against home equipment, the power bill is not part of it.
+          </p>
+        </div>
+
+        <div id="circuits" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Circuits, Extension Leads and Surges</h2>
+          <p>
+            This is the part of the electrical question that actually matters, and
+            it is not about money.
+          </p>
+          <p>
+            Start-up current is much higher than running current. When a stationary
+            belt with a person on it begins to move, the motor briefly demands
+            several times its steady draw. That momentary demand is what
+            manufacturers size their circuit recommendations around, and it is why
+            a machine can run happily for months and then trip a breaker the first
+            time someone starts it while standing on the belt.
+          </p>
+          <p>
+            Most home treadmills are fine on a standard grounded 15-amp circuit
+            provided nothing else substantial shares it. Larger machines,
+            particularly AC-motored
+            <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial-grade treadmills</a>,
+            commonly specify a dedicated 20-amp circuit. Check the manual, because
+            this is one of the few manufacturer recommendations with a real
+            engineering basis behind it.
+          </p>
+          <p>
+            Nearly every manufacturer advises against extension leads, and the
+            reason is worth understanding rather than dismissing. A thin or long
+            lead has enough resistance to drop voltage under a heavy start-up
+            draw, which makes the motor pull more current to compensate, which
+            heats the lead. It is a slow, self-reinforcing problem, and it is a
+            genuine fire risk rather than a liability disclaimer. If the machine
+            cannot reach an outlet, the correct fix is to move the machine or add
+            an outlet.
+          </p>
+          <p>
+            One more habit worth adopting: start the belt before you step on it,
+            not while standing on it. It reduces the start-up load considerably,
+            and on a marginal circuit it is the difference between running and
+            tripping the breaker.
+          </p>
+        </div>
+
+        <div id="reducing" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Genuinely Reducing Consumption</h2>
+          <p>
+            Given the totals involved, most energy-saving advice for treadmills is
+            not worth the effort. Three things are.
+          </p>
+          <p>
+            <strong>Keep the deck lubricated.</strong> This is the only measure
+            with a meaningful effect, and its real benefit is not the electricity —
+            it is that the extra current a dry deck draws becomes heat inside the
+            motor and controller, which is how machines die. The energy saving is a
+            side effect of the maintenance being worth doing anyway.
+          </p>
+          <p>
+            <strong>Do not over-tension the belt.</strong> Same mechanism, same
+            small saving, same much larger benefit in component life. A belt you can
+            lift two to three inches at the centre of the deck is correctly
+            tensioned.
+          </p>
+          <p>
+            <strong>Use incline deliberately rather than by default.</strong>
+            Incline is the largest controllable variable in the consumption
+            calculation. This is not a reason to avoid incline training, which is
+            genuinely effective — it is simply worth knowing that a permanent
+            2 per cent default costs power for a benefit you may not be seeking.
+          </p>
+          <p>
+            What is not worth doing: buying a smaller motor to save power. A larger
+            motor doing the same work draws similar current and runs cooler doing
+            it, so the underpowered machine is not the economical choice on any
+            timescale that matters. And manual treadmills, which use no electricity
+            at all, are a genuinely different training experience rather than an
+            efficiency upgrade — the full ownership picture is in
+            <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">how long treadmills last</a>.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How much electricity does a treadmill use?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                A home treadmill draws roughly 300 to 900 watts while running,
+                depending on the motor, your weight and your pace. At the US
+                average of about 17 cents per kilowatt-hour, 45 minutes a day of
+                jogging costs around 3 dollars a month. Walking costs about a third
+                of that. It is a small line on a household bill by any measure.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How do I calculate my treadmill's running cost?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Multiply the watts drawn by the hours used to get watt-hours,
+                divide by 1,000 for kilowatt-hours, then multiply by your
+                electricity rate. A 750-watt machine used 45 minutes a day is 0.56
+                kWh per day, about 17 kWh a month, or roughly 2.85 dollars at 17
+                cents per kWh. Use the label figure only as a ceiling, since it
+                states maximum draw rather than typical.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Does a treadmill use a lot of electricity compared to other appliances?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                No. A treadmill in use draws about the same as a microwave or a
+                hairdryer, but it runs for well under an hour a day rather than
+                continuously. A refrigerator, a tumble dryer, an electric water
+                heater and air conditioning all cost a household far more per year
+                than a home treadmill does.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Does using incline increase treadmill electricity use?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Yes, in two ways. The incline motor itself draws power while it is
+                changing grade, though only briefly. More significantly, running at
+                incline means the drive motor is lifting your body weight as well
+                as moving the belt, which raises the sustained draw. A steep
+                incline walk can use more power than a flat jog for the same
+                person.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Should I unplug my treadmill when not in use?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                For the electricity saving alone, it is not worth it — standby is
+                typically 2 to 8 watts, which is a few cents a month. There is a
+                better reason to unplug: it protects the controller board from
+                power surges, which is a common cause of a treadmill that will not
+                turn on. Use a surge protector rated for the machine's draw if you
+                would rather leave it connected.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Does a treadmill need its own circuit?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Most home treadmills are fine on a standard grounded 15-amp
+                household circuit provided nothing else heavy is sharing it.
+                Manufacturers commonly recommend a dedicated 20-amp circuit for
+                larger machines, and most explicitly advise against extension
+                leads, because start-up current draw is much higher than running
+                draw and a marginal connection heats up.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes About Treadmill Power</h2>
+          <p class="text-gray-700 leading-relaxed">The first two produce wrong numbers. The last two produce dead controller boards.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Calculating from the rating plate</h3>
+              <p class="text-gray-700 text-sm m-0">The 1,500 to 2,000 watts on the label is maximum draw for circuit-sizing purposes, not what the machine consumes in use. Estimates built on it come out two to four times too high, which is why so many published figures for this question are wrong. A plug-in energy monitor settles it for a few dollars.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring what a dry deck costs</h3>
+              <p class="text-gray-700 text-sm m-0">Friction is what the motor is fighting, so an unlubricated deck raises current draw at every speed. The wasted electricity is trivial; the heat it puts into the motor and the controller board sitting beside it is not. This is the one energy-saving measure worth doing, and it is worth doing for the other reason.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Running the machine on an extension lead</h3>
+              <p class="text-gray-700 text-sm m-0">Start-up current is several times running current. A long or thin lead drops voltage under that load, the motor draws harder to compensate, and the lead heats. Manufacturers warn against this for engineering reasons rather than legal ones. If the outlet is out of reach, move the machine or add an outlet.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Starting the belt while standing on it</h3>
+              <p class="text-gray-700 text-sm m-0">Accelerating a stationary belt with a person on it is the single largest current demand the machine ever makes, and on a marginal circuit it is what trips the breaker. Straddle the rails, start the belt, then step on. It is also easier on the drive belt and the controller.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Ownership Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/treadmill-wont-turn-on/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Electrical Faults</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Will Not Turn On</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Breakers, safety keys, fuses and the board that took a surge.</p>
+            </a>
+            <a href="/treadmill-maintenance/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Pillar Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Maintenance</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The schedule that keeps current draw and heat where they belong.</p>
+            </a>
+            <a href="/treadmill-horsepower-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Specs</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Horsepower Guide</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Why rated capacity and actual consumption are different numbers.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">Running cost is not a real consideration —
+            one to six dollars a month covers almost every household.</strong>
+            Calculate from actual draw rather than the rating plate, and remember
+            that your own electricity rate matters more than which machine you
+            bought.
+          </p>
+          <p class="text-gray-300 leading-relaxed">
+            The electrical detail worth acting on is the circuit: a grounded
+            outlet, no extension lead, and surge protection for the controller
+            board. Keep the deck lubricated using the
+            <a href="/treadmill-belt-lubrication/" class="text-[#5AA9FF] font-bold no-underline">lubrication guide</a>,
+            and if the machine is already dead, start with
+            <a href="/treadmill-wont-turn-on/" class="text-[#5AA9FF] font-bold no-underline">will not turn on</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+</Layout>

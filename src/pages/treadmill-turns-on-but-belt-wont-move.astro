@@ -1,0 +1,667 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "Treadmill Turns On but Belt Won't Move (2026): Diagnose It Properly";
+const description =
+  "Console lights, nothing happens. Whether the motor hums, clicks or stays silent tells you which of five causes you have — and only two of them are owner repairs.";
+
+const SOUNDS = [
+  {
+    sound: "Silent, console lit, no response",
+    cause: "Speed not set, key issue, or controller not commanding",
+    fix: "Check speed is above zero and the key is fully seated.",
+  },
+  {
+    sound: "Motor hums but nothing turns",
+    cause: "Seized roller, jammed belt, or failed capacitor",
+    fix: "Stop within seconds. A humming stalled motor overheats fast.",
+  },
+  {
+    sound: "Clicks once, then nothing",
+    cause: "Relay engaging, controller not delivering to the motor",
+    fix: "Controller-side fault. Not an owner repair.",
+  },
+  {
+    sound: "Motor runs, belt stays still",
+    cause: "Drive belt snapped or off its pulley",
+    fix: "Hood off to confirm. Common and often repairable.",
+  },
+  {
+    sound: "Belt moves briefly, then stops",
+    cause: "Overload cut-out, or extreme friction",
+    fix: "Almost always a dry deck or an over-tightened belt.",
+  },
+  {
+    sound: "Error code on the console",
+    cause: "The machine is telling you which subsystem failed",
+    fix: "Look the code up in the manual before touching anything.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Guides", item: "https://www.treadmillreviewsusa.com/best-of/" },
+        { "@type": "ListItem", position: 3, name: "Turns On but Belt Will Not Move", item: "https://www.treadmillreviewsusa.com/treadmill-turns-on-but-belt-wont-move/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Why does my treadmill turn on but the belt will not move?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The five usual causes are a speed setting still at zero, a broken or dislodged drive belt inside the motor hood, a seized roller or jammed running belt, a failed motor capacitor, and a controller that is no longer delivering power to the motor. What the machine sounds like when you press start tells you which one you have.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What does it mean if the treadmill motor hums but the belt does not move?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The motor is receiving power but cannot turn. That means something is physically stopping it — a seized roller, a jammed belt, or an over-tightened belt — or the motor's start capacitor has failed. Stop within a few seconds either way, because a stalled motor draws heavy current and overheats very quickly.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can a broken drive belt stop a treadmill belt from moving?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, and it is one of the more common causes. The drive belt is a smaller belt under the motor hood connecting the motor to the front roller. If it snaps or slips off its pulley, the motor runs normally and the running belt does not move at all. You can usually hear the motor spinning freely.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Why does my treadmill belt start then stop?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Usually an overload cut-out. The controller senses excessive current and shuts down to protect itself, most often because friction is very high — a dry deck or a badly over-tightened belt. It can also be a failing speed sensor, which leaves the controller with no valid reading and no safe way to hold a speed.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How do I know if my treadmill motor is dead?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A genuinely dead motor is usually silent when the machine is commanded to start, with no hum and no click. Before concluding that, rule out the free checks — a speed setting at zero, a safety key, a snapped drive belt, and a seized roller. Motors are less often the cause than the controller board or the drive belt.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is a treadmill belt that will not move worth repairing?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A drive belt, a roller or a capacitor is a reasonable repair on almost any machine. A motor or a controller board on an older mid-range treadmill often costs a third to a half of a replacement fitted, at which point the arithmetic depends on the machine's age and what else is worn.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", name: "Morgan Reyes" },
+      datePublished: "2026-09-06",
+      dateModified: "2026-09-06",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-09-06",
+    modifiedTime: "2026-09-06",
+    author: "Morgan Reyes",
+    section: "Fitness Equipment",
+    tags: [
+      "treadmill belt won't move",
+      "treadmill drive belt",
+      "treadmill motor hums",
+      "treadmill troubleshooting",
+      "home gym",
+    ],
+  }}
+  jsonLd={schema}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-nomove" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-nomove)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Troubleshooting
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated September 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          Treadmill Turns On but the <span class="text-[#5AA9FF]">Belt Won't Move</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          The console lights up, the machine accepts the start command, and nothing
+          happens. What it sounds like in those first two seconds — silence, a hum,
+          a click, or a motor spinning freely — narrows five possible causes down
+          to one.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#listen" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            Listen and Diagnose
+          </a>
+          <a href="#drive-belt" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            The Drive Belt
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
+          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">September 6, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="5.6k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-red-50 border border-red-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-red-900">If the motor hums and nothing turns, switch
+          off within a few seconds.</strong> A stalled motor draws heavy current and
+          overheats very quickly. Repeated attempts to force it through a jam is how
+          a cheap mechanical fault becomes a burnt-out motor or a failed controller
+          board.
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#free-checks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Three Free Checks First</a>
+          <a href="#listen" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What the Sound Tells You</a>
+          <a href="#hand-turn" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Hand-Turn Test</a>
+          <a href="#drive-belt" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. The Drive Belt</a>
+          <a href="#seized" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Seized Rollers and Jams</a>
+          <a href="#starts-stops" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Starts, Then Stops</a>
+          <a href="#electronics" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Capacitor, Motor and Controller</a>
+          <a href="#worth-it" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. What Is Worth Repairing</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          This fault is more informative than a completely dead machine, because a
+          treadmill that powers up has already proved that the outlet, the cord, the
+          fuse and much of the console are fine. What remains is the chain between
+          the start command and the belt, and each link in it fails with a
+          distinctive sound.
+        </p>
+
+        <div id="free-checks" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Three Free Checks First</h2>
+          <p>
+            Do these before listening to anything. Each one is embarrassing to
+            discover after an afternoon with the hood off.
+          </p>
+          <p>
+            <strong>Is the speed actually set above zero?</strong> Many machines
+            start at 0.0 and require an explicit speed input, and some reset to zero
+            after a stop or a programme ends. Press the speed-up button several
+            times rather than assuming quick-start will do it.
+          </p>
+          <p>
+            <strong>Is the safety key fully seated?</strong> A partly seated key can
+            let the console power up while leaving the motor circuit disabled on
+            some machines, which produces exactly this symptom. Remove it and reseat
+            it firmly, and try a slightly different position — magnets weaken with
+            age.
+          </p>
+          <p>
+            <strong>Is the console showing an error code?</strong> If there is a
+            code, look it up in the manual before doing anything else. The machine is
+            telling you which subsystem it thinks has failed, and that is more
+            reliable information than any guess made from outside. Codes vary
+            completely between manufacturers, so a generic answer is not useful —
+            the manual, or the manufacturer's support line, is.
+          </p>
+          <p>
+            If the machine is under warranty, this is also the point to call rather
+            than open anything. Removing the motor hood voids warranty cover on many
+            machines.
+          </p>
+        </div>
+
+        <div id="listen" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What the Sound Tells You</h2>
+          <p>
+            Stand beside the machine, set a low speed, press start, and listen to the
+            first two seconds. If there is a hum with no movement, switch off
+            immediately — do not hold it on to listen longer.
+          </p>
+        </div>
+      </div>
+
+      <div class="not-prose my-8 overflow-x-auto">
+        <table class="min-w-[680px] w-full text-sm border border-gray-200 rounded-2xl overflow-hidden">
+          <thead class="bg-gray-900 text-white">
+            <tr>
+              <th class="text-left px-4 py-3 font-black">What You Hear</th>
+              <th class="text-left px-4 py-3 font-black">Likely Cause</th>
+              <th class="text-left px-4 py-3 font-black">What to Do</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              SOUNDS.map((row, i) => (
+                <tr class={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                  <td class="px-4 py-3 font-bold text-gray-900 align-top">{row.sound}</td>
+                  <td class="px-4 py-3 text-gray-700 align-top">{row.cause}</td>
+                  <td class="px-4 py-3 text-gray-500 align-top">{row.fix}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p>
+          The two rows that most owners can act on are the fourth and the fifth — a
+          drive belt off its pulley, and a machine cutting out from excessive
+          friction. The rest are either mechanical jobs that need the hood off or
+          controller-side faults that need a technician.
+        </p>
+
+        <div id="hand-turn" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The Hand-Turn Test</h2>
+          <p>
+            The most useful single test available to an owner, and it separates
+            mechanical causes from electrical ones in about ten seconds.
+          </p>
+          <p>
+            Unplug the machine at the wall. Take hold of the running belt and push it
+            by hand, in the direction it normally travels. You are feeling for how
+            much resistance there is.
+          </p>
+          <p>
+            <strong>If it moves with firm but reasonable effort</strong>, the
+            mechanical path is intact — rollers turn, bearings are alive, the belt is
+            not jammed. That points the diagnosis at the electrical side: the motor,
+            the capacitor, or the controller.
+          </p>
+          <p>
+            <strong>If it will barely move or will not move at all</strong>, you have
+            a mechanical fault. Something is seized or jammed, or the belt has been
+            over-tightened to the point where the motor cannot break it free. That is
+            the cause of the humming in the table above, and it is genuinely good
+            news compared with the alternative.
+          </p>
+          <p>
+            <strong>If it moves unusually freely, with almost no resistance</strong>,
+            the drive belt has probably snapped or come off its pulley. The running
+            belt is disconnected from the motor entirely, so it rolls as though the
+            machine were a manual treadmill.
+          </p>
+          <p>
+            Do the test at more than one position around the belt. A jam caused by a
+            foreign object or a damaged roller can be intermittent, and it may only
+            bind at one point in the rotation.
+          </p>
+        </div>
+
+        <div id="drive-belt" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. The Drive Belt</h2>
+          <p>
+            A treadmill has two belts. The running belt is the one you stand on. The
+            drive belt is a smaller ribbed belt inside the motor hood connecting the
+            motor pulley to the front roller pulley, and it is a genuinely common
+            cause of this fault.
+          </p>
+          <p>
+            The signature is unmistakable once you know it: <strong>the motor runs
+            normally and the running belt does not move at all</strong>. You can hear
+            the motor spin up and change pitch as you change the speed setting, with
+            nothing happening on the deck. The running belt also pushes very freely
+            by hand.
+          </p>
+          <p>
+            To confirm, unplug at the wall, wait several minutes, and remove the
+            motor hood — usually a few screws along the front and sides. The drive
+            belt is immediately visible. A snapped belt will be lying in the
+            housing; a dislodged one will be off one of the pulleys.
+          </p>
+          <p>
+            Fitting a replacement drive belt is within reach of a competent owner on
+            many machines, and the part is inexpensive. Two things matter: get the
+            exact belt for your model, because length and rib count are specific, and
+            set the tension to the manufacturer's specification. Too loose and it
+            slips at start-up; too tight and it loads the motor bearings.
+          </p>
+          <p>
+            The related and less severe fault — a drive belt that slips rather than
+            breaks, producing hesitation only at start-up — is covered in
+            <a href="/treadmill-belt-slows-down-when-i-step-on-it/" class="text-[#0F62FE] font-medium">belt slows down when I step on it</a>.
+            If you are not comfortable working around the motor and controller, this
+            is a reasonable and inexpensive service call.
+          </p>
+        </div>
+
+        <div id="seized" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Seized Rollers and Jams</h2>
+          <p>
+            If the hand-turn test found heavy resistance, the fault is physical, and
+            there are three common versions.
+          </p>
+          <p>
+            <strong>A seized roller bearing.</strong> Front and rear rollers run on
+            bearings that can fail, usually after a long period of running
+            over-tightened or after water ingress. A failing bearing normally warns
+            you first with a rumble or a grinding noise for weeks beforehand — the
+            sounds catalogued in our
+            <a href="/treadmill-squeaking-noise/" class="text-[#0F62FE] font-medium">noise guide</a>.
+            A fully seized one stops the machine.
+          </p>
+          <p>
+            <strong>A foreign object.</strong> More common than it sounds. Small
+            items find their way under the belt or into the roller ends — a
+            headphone, a shoelace, a child's toy, a stray screw. Unplug, lift the
+            belt edges, and look along both rollers and the deck. This is the best
+            possible outcome and costs nothing.
+          </p>
+          <p>
+            <strong>A badly over-tightened belt.</strong> Enough tension can stop a
+            motor from breaking the belt free at start-up, particularly on a
+            lower-powered machine on a cold morning. Check the lift: with the machine
+            off, you should be able to raise the belt two to three inches at the
+            centre of the deck. If you cannot, back both rear bolts off a quarter
+            turn each and try again — the procedure is in
+            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>.
+          </p>
+          <p>
+            In all three cases, stop trying to start the machine while the jam
+            persists. Each attempt puts stall current through the motor and the
+            controller, and that is how an inexpensive mechanical problem becomes an
+            expensive electrical one.
+          </p>
+        </div>
+
+        <div id="starts-stops" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Starts, Then Stops</h2>
+          <p>
+            A distinct variant: the belt moves for a second or two, or for a few
+            minutes, and then stops on its own. The machine is protecting itself, and
+            the question is what from.
+          </p>
+          <p>
+            The most common cause is <strong>excessive friction</strong>. A dry deck
+            raises current draw substantially, and if the draw exceeds what the
+            controller will allow it cuts output. This is the same underlying problem
+            as a belt that sags under load, arriving in a more advanced form. Check
+            the deck: unplugged, run a finger across it under the belt at the centre.
+            Dry or grippy means lubricate before anything else, and the interval that
+            should have applied is in
+            <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium">how often to lubricate a treadmill</a>.
+          </p>
+          <p>
+            The second is <strong>heat</strong>. If it runs for ten or twenty minutes
+            and then stops, and works again once cooled, the controller is hitting a
+            thermal limit. Feel the motor hood; too hot to rest a hand on confirms
+            it. The causes are a dry deck, a motor housing packed with lint and
+            carpet fibre, or a motor undersized for the user.
+          </p>
+          <p>
+            The third is a <strong>failing speed sensor</strong>. The controller
+            depends on a reading from a small sensor at the front roller to hold a
+            speed, and with no valid reading the safe response is to stop. The
+            signature is erratic console readings, surging, or distances that make no
+            sense. Dust on the sensor face is common and easy to clean.
+          </p>
+        </div>
+
+        <div id="electronics" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Capacitor, Motor and Controller</h2>
+          <p>
+            If the belt turns freely by hand, the drive belt is intact and there is no
+            jam, the fault is electrical. Three components are in the frame, and none
+            is a hand-tools repair.
+          </p>
+          <p>
+            <strong>The capacitor.</strong> Some treadmill motors use a capacitor to
+            provide starting torque. When it fails, the classic symptom is exactly
+            the one in the table: the motor hums but does not turn, and it may start
+            if the belt is nudged by hand. It is an inexpensive part. It also stores
+            a charge that can be dangerous well after the machine is unplugged, which
+            is why this is a technician job rather than a weekend one.
+          </p>
+          <p>
+            <strong>The motor.</strong> Less often the culprit than owners assume.
+            Brushed DC motors wear their brushes, which is a serviceable item on some
+            machines, and windings can fail after prolonged overheating — which is
+            the end point of running a dry deck for years. A genuinely dead motor is
+            usually silent rather than humming.
+          </p>
+          <p>
+            <strong>The controller board.</strong> The most likely electrical
+            candidate. It is the component most damaged by surges and by cumulative
+            heat, and when its output stage fails the console still works perfectly
+            while the motor gets nothing. A single click at start with no motor sound
+            often points here — the relay is engaging and nothing follows it.
+          </p>
+          <p>
+            All three want a technician with a meter and the service documentation.
+            If your machine went dead rather than merely refusing to drive the belt,
+            the earlier steps are in
+            <a href="/treadmill-wont-turn-on/" class="text-[#0F62FE] font-medium">treadmill will not turn on</a>.
+          </p>
+        </div>
+
+        <div id="worth-it" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. What Is Worth Repairing</h2>
+          <p>
+            The answer depends entirely on which of the causes above you found, and
+            the range runs from free to most of the price of a new machine.
+          </p>
+          <p>
+            <strong>Free or nearly free:</strong> a speed setting at zero, a safety
+            key, a foreign object under the belt, an over-tightened belt, a dry deck.
+            Between them these account for a meaningful share of this fault, which is
+            the argument for working through the checks before calling anyone.
+          </p>
+          <p>
+            <strong>Modest and worth doing at any age:</strong> a drive belt, a
+            capacitor, a speed sensor, a roller. These are inexpensive parts, and
+            even with a service call attached they are a small fraction of a machine's
+            value.
+          </p>
+          <p>
+            <strong>Worth the arithmetic:</strong> a motor or a controller board.
+            Fitted, either can run to a third or a half of the cost of a comparable
+            new machine. On a young premium treadmill that is clearly worth paying.
+            On a six-year-old budget machine with a worn belt and a glazed deck it
+            usually is not, and the full calculation is in
+            <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">how long treadmills last</a>.
+          </p>
+          <p>
+            Whichever way it goes, the preventable version of this fault is worth
+            naming. Most motor and controller failures on home treadmills trace back
+            to heat, and most of that heat traces back to friction from a dry deck.
+            Ten minutes of maintenance a quarter is the difference, and it is set out
+            in the
+            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance schedule</a>.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Why does my treadmill turn on but the belt will not move?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                The five usual causes are a speed setting still at zero, a broken or
+                dislodged drive belt inside the motor hood, a seized roller or jammed
+                running belt, a failed motor capacitor, and a controller that is no
+                longer delivering power to the motor. What the machine sounds like
+                when you press start tells you which one you have.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What does it mean if the treadmill motor hums but the belt does not move?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                The motor is receiving power but cannot turn. That means something is
+                physically stopping it — a seized roller, a jammed belt, or an
+                over-tightened belt — or the motor's start capacitor has failed. Stop
+                within a few seconds either way, because a stalled motor draws heavy
+                current and overheats very quickly.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Can a broken drive belt stop a treadmill belt from moving?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Yes, and it is one of the more common causes. The drive belt is a
+                smaller belt under the motor hood connecting the motor to the front
+                roller. If it snaps or slips off its pulley, the motor runs normally
+                and the running belt does not move at all. You can usually hear the
+                motor spinning freely.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Why does my treadmill belt start then stop?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Usually an overload cut-out. The controller senses excessive current
+                and shuts down to protect itself, most often because friction is very
+                high — a dry deck or a badly over-tightened belt. It can also be a
+                failing speed sensor, which leaves the controller with no valid
+                reading and no safe way to hold a speed.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How do I know if my treadmill motor is dead?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                A genuinely dead motor is usually silent when the machine is
+                commanded to start, with no hum and no click. Before concluding that,
+                rule out the free checks — a speed setting at zero, a safety key, a
+                snapped drive belt, and a seized roller. Motors are less often the
+                cause than the controller board or the drive belt.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is a treadmill belt that will not move worth repairing?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                A drive belt, a roller or a capacitor is a reasonable repair on almost
+                any machine. A motor or a controller board on an older mid-range
+                treadmill often costs a third to a half of a replacement fitted, at
+                which point the arithmetic depends on the machine's age and what else
+                is worn.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With a Belt That Will Not Move</h2>
+          <p class="text-gray-700 leading-relaxed">The first one converts a cheap fault into an expensive one in about thirty seconds.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Holding start while the motor hums</h3>
+              <p class="text-gray-700 text-sm m-0">A humming motor that cannot turn is drawing stall current, and stall current heats windings and controller components very fast. Every retry adds damage to a fault that was probably a jam or a capacitor. Switch off within a couple of seconds, unplug, and do the hand-turn test instead.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Skipping the free checks</h3>
+              <p class="text-gray-700 text-sm m-0">A speed setting at zero, a partly seated safety key and a foreign object under the belt cost nothing to rule out and account for a real share of this fault. Every one of them has sent a machine to a service centre that needed nothing. Spend the two minutes before removing anything.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming the motor when the drive belt has gone</h3>
+              <p class="text-gray-700 text-sm m-0">A motor that spins up freely with no belt movement is almost always a snapped or dislodged drive belt, not a dead motor. The running belt will also push unusually easily by hand. It is an inexpensive part and a straightforward replacement on many machines — check under the hood before pricing a motor.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Probing inside the hood with the machine plugged in</h3>
+              <p class="text-gray-700 text-sm m-0">Motor capacitors hold a charge after disconnection, and controller boards carry mains voltage. Unplug at the wall, wait several minutes, and limit yourself to looking and to mechanical work. Anything involving the capacitor, the motor or the board belongs with a technician — and on many machines opening the hood ends the warranty.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Troubleshooting Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/treadmill-wont-turn-on/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">If It Is Dead</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Will Not Turn On</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Safety key, reset switch, outlet and fuse, in order.</p>
+            </a>
+            <a href="/treadmill-belt-slows-down-when-i-step-on-it/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Milder Version</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Belt Slows Under My Weight</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The same friction problem, one stage earlier.</p>
+            </a>
+            <a href="/treadmill-troubleshooting/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Pillar Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Troubleshooting</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Error codes, cut-outs and the symptoms that mean stop.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">Listen first, then push the belt by
+            hand.</strong> A motor that hums means something is jammed or the
+            capacitor has failed — switch off within seconds. A motor that spins
+            freely with no belt movement means the drive belt. A belt that turns
+            normally by hand points at the electronics.
+          </p>
+          <p class="text-gray-300 leading-relaxed">
+            Rule out the free causes first — speed at zero, safety key, an object
+            under the belt, an over-tight belt. If the machine is dead rather than
+            unresponsive, start at
+            <a href="/treadmill-wont-turn-on/" class="text-[#5AA9FF] font-bold no-underline">will not turn on</a>,
+            and prevent the next one with the
+            <a href="/treadmill-maintenance/" class="text-[#5AA9FF] font-bold no-underline">maintenance schedule</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+</Layout>

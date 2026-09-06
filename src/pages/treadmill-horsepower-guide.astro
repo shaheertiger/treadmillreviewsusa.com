@@ -1,0 +1,685 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "What Horsepower Do I Need in a Treadmill? (2026) — Honest Answer";
+const description =
+  "CHP, peak HP and continuous duty are three different numbers, and only one predicts whether a motor survives. Here is what each rating means and the figure to buy at your weight and pace.";
+
+const NEEDS = [
+  {
+    use: "Walking only, under 200 lb",
+    chp: "2.0 – 2.5 CHP",
+    note: "Anything above this is money you will not feel underfoot.",
+  },
+  {
+    use: "Walking only, over 200 lb",
+    chp: "2.5 – 3.0 CHP",
+    note: "Load matters more than speed. Do not buy on speed rating alone.",
+  },
+  {
+    use: "Jogging 3–5 times a week, under 200 lb",
+    chp: "2.75 – 3.0 CHP",
+    note: "The most common home requirement, and the most commonly under-bought.",
+  },
+  {
+    use: "Jogging 3–5 times a week, over 200 lb",
+    chp: "3.0 – 3.5 CHP",
+    note: "Every 50 lb of user weight is worth roughly 0.25 CHP.",
+  },
+  {
+    use: "Running daily, any weight",
+    chp: "3.5 – 4.0 CHP",
+    note: "Duty cycle, not top speed, is what kills motors at this level.",
+  },
+  {
+    use: "Multiple household runners, daily",
+    chp: "4.0 CHP or an AC motor",
+    note: "At this usage a commercial AC machine is genuinely cheaper per year.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Buying Guides", item: "https://www.treadmillreviewsusa.com/best-of/" },
+        { "@type": "ListItem", position: 3, name: "Treadmill Horsepower Guide", item: "https://www.treadmillreviewsusa.com/treadmill-horsepower-guide/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "How much horsepower do I need in a treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "For walking, 2.0 to 2.5 CHP is enough. For jogging a few times a week, buy 2.75 to 3.0 CHP. For daily running, 3.5 CHP or more. Add roughly 0.25 CHP for every 50 lb of user weight above 200 lb. The number that matters is continuous horsepower, not the larger peak figure printed on the box.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the difference between CHP and peak horsepower?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Continuous horsepower (CHP) is what the motor can sustain indefinitely without overheating. Peak horsepower is the momentary maximum it can hit for a second or two, usually at start-up, and it is typically 1.5 to 2 times the continuous figure. Peak horsepower tells you nothing about durability, which is exactly why budget machines advertise it.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is 2.5 HP enough for a treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "It is enough for walking at any realistic body weight, and enough for occasional light jogging by a lighter user. It is not enough for regular running, and it is not enough for a heavier user who jogs several times a week. If the 2.5 figure is peak rather than continuous, treat the machine as walking-only regardless of who is using it.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does more horsepower mean a faster treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. Top speed is set by the controller and the gearing, and almost every home treadmill tops out at 10 to 12 mph regardless of motor size. Horsepower determines how hard the motor can work at a given speed without overheating, so a bigger motor buys you headroom and longevity rather than a higher number on the console.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What happens if a treadmill motor is underpowered?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "It runs hot. Heat is the enemy of both the motor windings and the controller board sitting next to them, so an underpowered machine tends to fail electronically before it fails mechanically. The warning signs are a belt that hesitates under your footstrike, a hot smell after longer sessions, and cutting out partway through a run.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Are AC treadmill motors better than DC?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "For heavy daily use, yes. AC motors run at a constant speed with the load handled by gearing, which is why commercial gym machines use them and why they last decades. They are also louder, heavier, more expensive, and often need a dedicated circuit. For a household running under about two hours a day, a good DC motor is the more sensible buy.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", name: "Morgan Reyes" },
+      datePublished: "2026-09-06",
+      dateModified: "2026-09-06",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-09-06",
+    modifiedTime: "2026-09-06",
+    author: "Morgan Reyes",
+    section: "Fitness Equipment",
+    tags: [
+      "treadmill horsepower",
+      "chp vs peak hp",
+      "treadmill motor",
+      "treadmill buying guide",
+      "home gym",
+    ],
+  }}
+  jsonLd={schema}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-hp" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-hp)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Buyer's Guide
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated September 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          What <span class="text-[#5AA9FF]">Horsepower</span> Do I Need in a Treadmill?
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          Three different horsepower numbers get printed on treadmill boxes and
+          only one of them predicts whether the machine is still working in five
+          years. Here is which number to read, and what it should say for your
+          weight and your pace.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#how-much" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            See the Numbers
+          </a>
+          <a href="#chp-vs-peak" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            CHP vs Peak HP
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
+          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">September 6, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="6.1k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">The short answer.</strong> Buy 2.5 CHP for
+          walking, 3.0 CHP for regular jogging, and 3.5 CHP or more for daily
+          running — then add roughly a quarter of a horsepower for every 50 lb of
+          user weight above 200 lb. If the spec sheet says peak horsepower rather
+          than continuous, halve it before comparing.
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#chp-vs-peak" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. CHP, Peak HP and Treadmill Duty</a>
+          <a href="#how-much" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. How Much You Actually Need</a>
+          <a href="#weight" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Why Your Weight Changes the Answer</a>
+          <a href="#duty-cycle" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Duty Cycle: The Missing Spec</a>
+          <a href="#ac-vs-dc" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. AC Motors vs DC Motors</a>
+          <a href="#underpowered" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. What an Underpowered Motor Does</a>
+          <a href="#overbuying" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Where Extra Horsepower Is Wasted</a>
+          <a href="#reading-specs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Reading a Spec Sheet Honestly</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          Horsepower is the single most misrepresented number in the treadmill
+          market. Two machines can both claim 3.0 HP and differ by a factor of
+          two in what the motor will actually sustain, because one figure is
+          measured at the moment of maximum strain and the other is measured
+          across an hour of steady work. Getting this one number right is most of
+          getting the purchase right.
+        </p>
+
+        <div id="chp-vs-peak" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. CHP, Peak HP and Treadmill Duty</h2>
+          <p>
+            There are three ratings in circulation, and manufacturers pick
+            whichever one flatters the machine. Knowing the difference between
+            them is the whole skill.
+          </p>
+          <p>
+            <strong>Continuous horsepower (CHP)</strong> is the output the motor
+            can hold indefinitely without its windings exceeding a safe
+            temperature. It is the honest figure, and it is the one every
+            recommendation on this page refers to. Reputable brands quote it
+            because it is a harder number to hit and therefore worth advertising.
+          </p>
+          <p>
+            <strong>Peak horsepower</strong> is the momentary maximum, drawn for a
+            second or two when the belt is accelerating from a standstill. It is
+            typically between 1.5 and 2 times the continuous figure. A motor
+            rated 4.0 peak may only sustain 2.0 or 2.25, which is a walking
+            motor. Peak horsepower is not a lie exactly — the motor does briefly
+            produce it — but as a purchasing signal it is close to meaningless.
+          </p>
+          <p>
+            <strong>Treadmill duty</strong> or <strong>treadmill horsepower</strong>
+            is the vaguest of the three. It has no standard definition and is
+            usually somewhere between the other two, chosen so the number looks
+            competitive. If a spec sheet uses this phrasing and offers nothing
+            else, assume the honest continuous figure is roughly two thirds of it
+            and shop accordingly.
+          </p>
+          <p>
+            The practical rule: if a listing does not say the word
+            <em>continuous</em>, it is not quoting continuous horsepower. Silence
+            here is not an oversight. On a machine where the continuous rating is
+            good, the marketing says so in the first line.
+          </p>
+        </div>
+
+        <div id="how-much" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. How Much You Actually Need</h2>
+          <p>
+            The figures below are continuous horsepower for a machine that will be
+            used for years rather than months. They assume the deck is
+            lubricated; a dry deck adds drag that eats headroom fast, which is
+            covered further down.
+          </p>
+        </div>
+      </div>
+
+      <div class="not-prose my-8 overflow-x-auto">
+        <table class="min-w-[680px] w-full text-sm border border-gray-200 rounded-2xl overflow-hidden">
+          <thead class="bg-gray-900 text-white">
+            <tr>
+              <th class="text-left px-4 py-3 font-black">How You Will Use It</th>
+              <th class="text-left px-4 py-3 font-black">Buy This Much</th>
+              <th class="text-left px-4 py-3 font-black">Why</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              NEEDS.map((row, i) => (
+                <tr class={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                  <td class="px-4 py-3 font-bold text-gray-900 align-top">{row.use}</td>
+                  <td class="px-4 py-3 text-gray-700 align-top">{row.chp}</td>
+                  <td class="px-4 py-3 text-gray-500 align-top">{row.note}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p>
+          Two things about that table are worth saying out loud. The first is
+          that walking is genuinely undemanding — a 2.0 CHP motor moving a 180 lb
+          person at 3 mph is barely working, and buying 3.5 CHP for that job wins
+          you nothing you can feel. The second is that the jump from walking to
+          jogging is much larger than it looks, because footstrike force rises
+          sharply with pace and each strike is a load spike the motor has to
+          absorb.
+        </p>
+        <p>
+          If you are between two rows — you walk most days and jog on Saturdays,
+          say — buy the higher one. Motor headroom is the cheapest insurance on a
+          treadmill, and it is the one component you cannot upgrade later without
+          effectively buying a new machine. Our
+          <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">complete buying guide</a>
+          works through how motor choice interacts with deck size and price band.
+        </p>
+
+        <div id="weight" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Why Your Weight Changes the Answer</h2>
+          <p>
+            Motor load is a function of how much mass has to be kept moving
+            against the friction of the deck. A heavier user increases the normal
+            force between belt and deck, which increases friction, which
+            increases the current the motor draws to hold the set speed. The
+            relationship is close enough to linear that a simple adjustment
+            works: add about 0.25 CHP for every 50 lb above 200 lb.
+          </p>
+          <p>
+            This matters more than the speed you run at, and it is the single
+            most common sizing mistake we see. A 260 lb walker puts more sustained
+            load on a motor than a 150 lb jogger, but the marketing is organised
+            around pace rather than mass, so the walker buys a walking machine and
+            wears it out in two years.
+          </p>
+          <p>
+            Do not confuse the horsepower question with the stated
+            <strong>user weight capacity</strong>, which is a frame and deck
+            rating rather than a motor rating. A machine can be structurally
+            certified to 300 lb and still have a motor that is working at its
+            limit carrying 280 lb at a jog. The two numbers are set by different
+            parts of the machine and manufacturers are not obliged to make them
+            agree.
+          </p>
+          <p>
+            A practical check: find the continuous rating, find the weight
+            capacity, and be suspicious of any machine claiming a 300 lb-plus
+            capacity on less than 3.0 CHP. That combination is a frame written
+            for one buyer and a motor priced for another.
+          </p>
+        </div>
+
+        <div id="duty-cycle" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Duty Cycle: The Missing Spec</h2>
+          <p>
+            Horsepower says how hard the motor can work. Duty cycle says how long
+            it can keep doing it, and almost no consumer treadmill publishes one.
+            It is the reason two machines with identical CHP ratings can have very
+            different lifespans in a busy household.
+          </p>
+          <p>
+            The physical constraint is heat. A DC motor converts some fraction of
+            its input to waste heat, and that heat has to leave through the
+            housing and whatever airflow the machine provides. Under about forty
+            minutes of continuous running, most home motors shed heat as fast as
+            they make it. Beyond that, the temperature climbs, and the controller
+            board — which usually sits within a few inches of the motor — climbs
+            with it.
+          </p>
+          <p>
+            This is why the failure pattern on over-used home machines is so
+            consistent: the controller dies first, not the motor. Boards are
+            sensitive to sustained heat in a way copper windings are not. Owners
+            describe it as the treadmill cutting out mid-session, or refusing to
+            hold a set speed, or throwing an error code and needing ten minutes
+            before it will restart.
+          </p>
+          <p>
+            The way to buy around a missing duty cycle spec is to buy horsepower
+            you will not use. A 3.5 CHP motor asked to produce 2.0 CHP runs cool
+            indefinitely. The same 2.0 CHP output from a 2.25 CHP motor is a
+            machine living permanently at 90 per cent of its rating, and it will
+            not last. If your household will put more than about ninety minutes a
+            day through the machine, look at
+            <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial-grade machines</a>
+            rather than a larger home motor.
+          </p>
+        </div>
+
+        <div id="ac-vs-dc" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. AC Motors vs DC Motors</h2>
+          <p>
+            Almost every home treadmill uses a DC motor, and almost every gym
+            treadmill uses an AC motor. The difference is not a quality tier so
+            much as two different engineering answers to the same problem.
+          </p>
+          <p>
+            A <strong>DC motor</strong> varies its speed directly with the voltage
+            the controller supplies, which makes speed control simple, quiet and
+            cheap. It is well suited to intermittent use with frequent speed
+            changes, which describes home training accurately. Its weakness is
+            sustained high load: it heats, and its controller heats with it.
+          </p>
+          <p>
+            An <strong>AC motor</strong> runs at an essentially fixed speed and
+            uses gearing to deliver belt speed, which means it is always operating
+            in its efficient range regardless of how slowly the belt is moving.
+            That is why gym machines run for fourteen hours a day for a decade.
+            The costs are real: they are heavier, noticeably louder, considerably
+            more expensive, and larger AC machines sometimes want a dedicated
+            20-amp circuit rather than sharing a household one.
+          </p>
+          <p>
+            For the overwhelming majority of home buyers the DC machine is the
+            right call, and the question is simply how much of it to buy. AC
+            becomes the better purchase at the point where the machine is running
+            more than about two hours a day, or where three or four people in the
+            house are training on it seriously. Below that threshold you are
+            paying for durability you will never consume, and accepting noise you
+            will notice every session.
+          </p>
+        </div>
+
+        <div id="underpowered" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. What an Underpowered Motor Does</h2>
+          <p>
+            An undersized motor rarely fails dramatically. It degrades, and the
+            symptoms are easy to mistake for other faults, which is why owners
+            often spend money on the wrong repair.
+          </p>
+          <p>
+            The first sign is <strong>hesitation under footstrike</strong>. You
+            plant your weight, the belt momentarily gives, and the machine catches
+            up half a second later. Most owners read this as a loose belt and
+            tighten it, which adds drag to a motor that is already short of
+            headroom and accelerates exactly the failure they are trying to
+            avoid. We work through that diagnosis properly in
+            <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">belt slipping and drifting</a>.
+          </p>
+          <p>
+            The second is <strong>heat</strong>. A warm motor hood after a long
+            session is normal. A hood too hot to rest a hand on, or a faint smell
+            of hot electronics, is a motor at its limit. The third is
+            <strong>cutting out</strong> — the machine stopping partway through a
+            run, often with an error code, and working normally again once it has
+            cooled. That is thermal protection doing its job, and it is a clear
+            statement that the machine is the wrong size for the work.
+          </p>
+          <p>
+            The fourth is subtler: <strong>speed sag under load</strong>. The
+            console reads 6.0 mph, but the belt is genuinely slower when you are
+            on it than when it runs empty. If your effort at a given console speed
+            has quietly increased over months, and the deck is lubricated, the
+            motor is losing the argument.
+          </p>
+          <p>
+            None of these repairs cheaply. A replacement motor and controller on a
+            mid-range machine frequently costs more than half the price of a new
+            one, which is the arithmetic we lay out in
+            <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">how long treadmills last</a>.
+          </p>
+        </div>
+
+        <div id="overbuying" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Where Extra Horsepower Is Wasted</h2>
+          <p>
+            The honest counterweight to everything above: horsepower has a ceiling
+            beyond which you are buying a number rather than a benefit, and the
+            industry is happy to sell it to you.
+          </p>
+          <p>
+            More horsepower does not make a treadmill faster. Top speed is a
+            function of the controller and the roller gearing, and essentially
+            every home machine on the market stops between 10 and 12 mph
+            regardless of motor size. It does not make the machine quieter either
+            — a larger motor at low load is usually quieter, but deck construction
+            and roller quality dominate the noise a downstairs neighbour hears, as
+            our
+            <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">apartment noise testing</a>
+            found.
+          </p>
+          <p>
+            It does not improve cushioning, incline range, belt size, console
+            quality or build tolerance, all of which you will notice daily. A
+            4.0 CHP motor mounted in a machine with a 55-inch belt and a flimsy
+            frame is a worse purchase for a runner than a 3.0 CHP motor in a
+            machine with a 60-inch belt and a stable deck.
+          </p>
+          <p>
+            The sensible way to spend a fixed budget is to buy enough motor for
+            your weight and pace with a margin, then put every remaining pound
+            into deck length, cushioning and frame rigidity. Motor headroom past
+            the point of sufficiency is the fastest way to overspend on a
+            treadmill.
+          </p>
+        </div>
+
+        <div id="reading-specs" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Reading a Spec Sheet Honestly</h2>
+          <p>
+            Four habits will keep you out of most of the traps in this market.
+          </p>
+          <p>
+            <strong>Look for the word continuous.</strong> If a listing says
+            3.0 CHP, take it at face value. If it says 3.0 HP, 3.0 peak, or
+            3.0 treadmill duty, assume the sustainable figure is somewhere between
+            1.5 and 2.0 and decide whether that is enough for you. Manufacturers
+            who have a good continuous number say so.
+          </p>
+          <p>
+            <strong>Check the warranty on the motor separately.</strong> This is
+            the most reliable signal available, because it is the one claim that
+            costs the manufacturer money if it is wrong. A lifetime motor warranty
+            on a home machine is a genuine statement of confidence. A two-year
+            motor warranty next to a 4.0 peak horsepower claim tells you which of
+            the two numbers the manufacturer believes.
+          </p>
+          <p>
+            <strong>Compare within a price band, not across one.</strong> Under
+            about 800 dollars, most machines are walking machines whatever they
+            claim, and the honest question is which one has the best deck and
+            frame. Above about 1,500 dollars, continuous ratings become
+            trustworthy and the comparison gets easier.
+          </p>
+          <p>
+            <strong>Weigh the machine.</strong> Shipping weight is published and
+            hard to fake. A heavier machine at the same price generally has more
+            steel in the frame and more copper in the motor. It is a crude proxy,
+            but on a market this full of soft numbers, a hard one is worth having.
+            The
+            <a href="/treadmill-buyers-guide/" class="text-[#0F62FE] font-medium">purchase checklist</a>
+            covers the rest of the specification in the same spirit.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How much horsepower do I need in a treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                For walking, 2.0 to 2.5 CHP is enough. For jogging a few times a
+                week, buy 2.75 to 3.0 CHP. For daily running, 3.5 CHP or more.
+                Add roughly 0.25 CHP for every 50 lb of user weight above 200 lb.
+                The number that matters is continuous horsepower, not the larger
+                peak figure printed on the box.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What is the difference between CHP and peak horsepower?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Continuous horsepower (CHP) is what the motor can sustain
+                indefinitely without overheating. Peak horsepower is the momentary
+                maximum it can hit for a second or two, usually at start-up, and
+                it is typically 1.5 to 2 times the continuous figure. Peak
+                horsepower tells you nothing about durability, which is exactly
+                why budget machines advertise it.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is 2.5 HP enough for a treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                It is enough for walking at any realistic body weight, and enough
+                for occasional light jogging by a lighter user. It is not enough
+                for regular running, and it is not enough for a heavier user who
+                jogs several times a week. If the 2.5 figure is peak rather than
+                continuous, treat the machine as walking-only regardless of who is
+                using it.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Does more horsepower mean a faster treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                No. Top speed is set by the controller and the gearing, and almost
+                every home treadmill tops out at 10 to 12 mph regardless of motor
+                size. Horsepower determines how hard the motor can work at a given
+                speed without overheating, so a bigger motor buys you headroom and
+                longevity rather than a higher number on the console.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What happens if a treadmill motor is underpowered?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                It runs hot. Heat is the enemy of both the motor windings and the
+                controller board sitting next to them, so an underpowered machine
+                tends to fail electronically before it fails mechanically. The
+                warning signs are a belt that hesitates under your footstrike, a
+                hot smell after longer sessions, and cutting out partway through a
+                run.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Are AC treadmill motors better than DC?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                For heavy daily use, yes. AC motors run at a constant speed with
+                the load handled by gearing, which is why commercial gym machines
+                use them and why they last decades. They are also louder, heavier,
+                more expensive, and often need a dedicated circuit. For a
+                household running under about two hours a day, a good DC motor is
+                the more sensible buy.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying on Horsepower</h2>
+          <p class="text-gray-700 leading-relaxed">These four account for most of the underpowered treadmills sitting unused in American garages.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing a peak rating against a continuous one</h3>
+              <p class="text-gray-700 text-sm m-0">A 3.5 peak machine looks stronger than a 3.0 CHP machine and is roughly half as capable. This is the single most effective piece of misdirection in the category. Before comparing any two treadmills, confirm both numbers are continuous, and if one refuses to say, treat it as peak and halve it.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Sizing on pace and ignoring body weight</h3>
+              <p class="text-gray-700 text-sm m-0">A 260 lb walker loads a motor harder than a 150 lb jogger, but the marketing is organised entirely around speed. Add 0.25 CHP for every 50 lb above 200 lb before you look at any recommendation, including the ones on this page.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Reading weight capacity as a motor rating</h3>
+              <p class="text-gray-700 text-sm m-0">A 300 lb weight capacity is a statement about the frame and deck, set by a different team from the one that specified the motor. A machine rated to 300 lb on a 2.5 CHP motor will hold you up and will not keep up. Read the two numbers separately and buy for the lower one.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Spending the whole budget on the motor</h3>
+              <p class="text-gray-700 text-sm m-0">Past the point of sufficiency, extra horsepower buys nothing you can feel — not speed, not cushioning, not quiet. A 3.0 CHP machine with a 60-inch belt and a rigid frame beats a 4.0 CHP machine with a 55-inch belt for anyone who runs. Buy enough motor, then spend on the deck.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Buying Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/treadmill-belt-size-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Next Spec</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Belt Size Guide</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Deck length and width by height and stride — the other number that matters.</p>
+            </a>
+            <a href="/treadmill-buying-guide-2026/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Pillar Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Complete Buying Guide</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Motor, deck, folding and budget tiers in one place.</p>
+            </a>
+            <a href="/how-long-do-treadmills-last/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Ownership</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">How Long Do Treadmills Last?</p>
+              <p class="text-sm text-gray-500 leading-relaxed">What fails first, and the repair-or-replace arithmetic.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">Buy continuous horsepower, size it to your
+            weight as well as your pace, and stop once you have a margin.</strong>
+            2.5 CHP walks, 3.0 CHP jogs, 3.5 CHP runs daily — plus a quarter
+            horsepower per 50 lb above 200. Any figure that does not say
+            continuous is worth roughly half what it claims.
+          </p>
+          <p class="text-gray-300 leading-relaxed">
+            With the motor settled, the next number that changes how the machine
+            feels is deck size — see the
+            <a href="/treadmill-belt-size-guide/" class="text-[#5AA9FF] font-bold no-underline">belt size guide</a>
+            — and the one that decides whether it fits at all is in
+            <a href="/treadmill-dimensions-space-requirements/" class="text-[#5AA9FF] font-bold no-underline">dimensions and space requirements</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+</Layout>

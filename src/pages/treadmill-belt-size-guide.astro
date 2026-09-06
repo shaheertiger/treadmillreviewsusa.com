@@ -1,0 +1,675 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "Treadmill Belt Size Guide (2026): Deck Length and Width by Height";
+const description =
+  "Deck length is set by your stride, not your height alone, and 55 inches is the line where taller runners start clipping the motor hood. The sizes that work, by user and by pace.";
+
+const SIZES = [
+  {
+    user: "Under 5'3\", walking only",
+    size: "48 x 18 in",
+    verdict: "Compact decks are genuinely fine here. Do not overpay for length.",
+  },
+  {
+    user: "5'3\" – 5'10\", walking only",
+    size: "50 – 55 x 18 in",
+    verdict: "Comfortable. Width matters more than length at walking speeds.",
+  },
+  {
+    user: "Under 5'10\", jogging",
+    size: "55 x 20 in",
+    verdict: "The mainstream home size, and adequate for most joggers.",
+  },
+  {
+    user: "5'10\" – 6'2\", jogging or running",
+    size: "60 x 20 in",
+    verdict: "The point where 55 in starts feeling short on the back stride.",
+  },
+  {
+    user: "Over 6'2\", any running",
+    size: "60 – 62 x 22 in",
+    verdict: "Non-negotiable. A short deck forces a shortened, unnatural gait.",
+  },
+  {
+    user: "Sprint or interval training",
+    size: "60 x 22 in minimum",
+    verdict: "Stride lengthens sharply with pace. Width buys recovery room.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Buying Guides", item: "https://www.treadmillreviewsusa.com/best-of/" },
+        { "@type": "ListItem", position: 3, name: "Treadmill Belt Size Guide", item: "https://www.treadmillreviewsusa.com/treadmill-belt-size-guide/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What size treadmill belt do I need?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "For walking, 50 to 55 inches long by 18 inches wide is enough for most people. For jogging under 5 foot 10, buy 55 by 20 inches. For running, or for anyone over 5 foot 10, buy 60 by 20 inches, and over 6 foot 2 look for 60 by 22. Length follows your stride, and stride grows faster with pace than with height.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is a 55 inch treadmill belt long enough for running?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "It is long enough for a runner under about 5 foot 10 at moderate pace, and short for anyone taller or faster. The symptom of a deck that is too short is not falling off the back — it is unconsciously shortening your stride to stay on it, which changes your gait and is the reason some people find treadmill running uncomfortable in a way outdoor running is not.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does treadmill belt width matter?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "It matters more than most buyers expect, because it determines your margin for lateral error. An 18-inch belt is fine for walking, where your feet land in a predictable line. At running pace, and particularly when tired, foot placement wanders, and 20 to 22 inches is what keeps a slightly wide step on the belt rather than on the side rail.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How do I measure my treadmill belt for a replacement?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Measure the belt itself rather than the deck. With the machine unplugged, mark a point on the belt edge, run a tape along the full loop until you return to the mark, and measure the width across the belt. Replacement belts are sold by loop length and width, and a belt sized to the deck instead of the loop will not fit.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is a bigger treadmill belt always better?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. A larger deck adds footprint, weight and cost, and needs a stronger motor to move the extra belt mass. For a household that walks, a 60-inch deck is a large object bought for a benefit nobody in the house will use. Buy the deck your longest stride needs and put the remaining budget into motor headroom and cushioning.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the standard treadmill belt size?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The most common home size is 55 by 20 inches, which is the default in the 800 to 1,500 dollar band. Budget and folding machines usually run 50 by 18 inches or smaller, and machines above about 1,500 dollars typically move to 60 by 20. Commercial gym treadmills are usually 60 by 22.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", name: "Morgan Reyes" },
+      datePublished: "2026-09-06",
+      dateModified: "2026-09-06",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-09-06",
+    modifiedTime: "2026-09-06",
+    author: "Morgan Reyes",
+    section: "Fitness Equipment",
+    tags: [
+      "treadmill belt size",
+      "treadmill deck length",
+      "treadmill running surface",
+      "treadmill buying guide",
+      "home gym",
+    ],
+  }}
+  jsonLd={schema}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-size" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-size)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Buyer's Guide
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated September 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          Treadmill <span class="text-[#5AA9FF]">Belt Size</span> Guide
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          Deck length is the specification people notice last and regret first.
+          It is set by your stride rather than your height, and the difference
+          between 55 and 60 inches decides whether treadmill running feels
+          natural or slightly wrong in a way you cannot name.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#sizes" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            Find Your Size
+          </a>
+          <a href="#measuring" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            Measuring a Replacement
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
+          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">September 6, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="4.7k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">The short answer.</strong> Walkers are fine
+          on 50 by 18 inches. Joggers under 5 foot 10 want 55 by 20. Runners, and
+          anyone over 5 foot 10, want 60 by 20. Over 6 foot 2, or doing intervals,
+          want 60 by 22. Buying more deck than your stride needs costs floor space
+          and motor load for nothing.
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#why-stride" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Why Stride Beats Height</a>
+          <a href="#sizes" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The Size Table</a>
+          <a href="#length" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. What Deck Length Actually Buys</a>
+          <a href="#width" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Width Is the Underrated Number</a>
+          <a href="#too-short" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. How a Short Deck Feels</a>
+          <a href="#tradeoffs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. What a Bigger Deck Costs You</a>
+          <a href="#measuring" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Measuring for a Replacement Belt</a>
+          <a href="#thickness" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Belt Thickness and Ply</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          Nobody returns a treadmill because the belt is an inch too narrow. They
+          keep it, use it less than they intended, and never quite work out why
+          running on it feels like a compromise. Deck size is the specification
+          most responsible for that quiet disappointment, and it is completely
+          predictable before you buy.
+        </p>
+
+        <div id="why-stride" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Why Stride Beats Height</h2>
+          <p>
+            Every belt size chart on the internet indexes on height, and height is
+            only a proxy. What the deck has to accommodate is the distance between
+            your footfalls, and that distance grows with pace far more sharply
+            than it grows with leg length.
+          </p>
+          <p>
+            A 5 foot 8 walker moving at 3 mph puts down roughly 26 to 28 inches
+            between heel strikes. The same person at a 9-minute mile is closer to
+            48 inches, and at a sprint might exceed 60. Height changes the
+            baseline by a few inches. Pace changes it by a factor of two. That is
+            why the size table below is organised by what you will do on the
+            machine first and how tall you are second.
+          </p>
+          <p>
+            You also need more deck than your stride length, not exactly your
+            stride length. Your foot lands somewhere in the front half of the
+            belt, travels backward with it, and lifts before the rear roller. The
+            usable running surface is roughly the belt length minus the four to
+            six inches at the front where the motor hood intrudes and the few
+            inches at the back you would not want to be standing on. A 55-inch
+            belt gives a genuine working surface of something closer to 46.
+          </p>
+          <p>
+            The practical method: take your normal training pace, not your fastest
+            or your slowest. If you can honestly say you will walk on this
+            machine, buy for walking and spend the saving elsewhere. If you intend
+            to run and are buying a walking deck because it fits the room, be
+            aware you are buying a walking machine, and consider whether a
+            <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium">folding machine</a>
+            with a full-size deck solves the space problem better.
+          </p>
+        </div>
+
+        <div id="sizes" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The Size Table</h2>
+          <p>
+            Sizes are belt dimensions, not deck or frame dimensions, which is how
+            manufacturers quote them. Length first, width second, as the industry
+            writes it.
+          </p>
+        </div>
+      </div>
+
+      <div class="not-prose my-8 overflow-x-auto">
+        <table class="min-w-[680px] w-full text-sm border border-gray-200 rounded-2xl overflow-hidden">
+          <thead class="bg-gray-900 text-white">
+            <tr>
+              <th class="text-left px-4 py-3 font-black">User and Use</th>
+              <th class="text-left px-4 py-3 font-black">Belt Size</th>
+              <th class="text-left px-4 py-3 font-black">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              SIZES.map((row, i) => (
+                <tr class={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                  <td class="px-4 py-3 font-bold text-gray-900 align-top">{row.user}</td>
+                  <td class="px-4 py-3 text-gray-700 align-top">{row.size}</td>
+                  <td class="px-4 py-3 text-gray-500 align-top">{row.verdict}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p>
+          Where a household spans two rows, buy for the taller and faster user.
+          The person who needs less deck is not inconvenienced by having more of
+          it, and the person who needs more is genuinely constrained by having
+          less. This is the one specification where the shared-machine compromise
+          runs entirely one way.
+        </p>
+
+        <div id="length" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. What Deck Length Actually Buys</h2>
+          <p>
+            Length does one thing: it gives your foot somewhere to land that is
+            not the motor hood at the front or thin air at the back. Everything
+            else people attribute to deck length is really about the deck
+            construction underneath.
+          </p>
+          <p>
+            The front matters more than the back, which is counter-intuitive. Most
+            people picture falling off the rear, but the constraint that actually
+            bites is how close your leading foot comes to the console shroud as
+            your stride opens up. Runners on short decks report the sensation of
+            running slightly uphill into an obstacle, and they compensate by
+            moving backward on the belt, which puts them nearer the rear roller
+            and makes the machine feel unstable.
+          </p>
+          <p>
+            Fifty-five inches is the industry's compromise and it is a reasonable
+            one for a lot of people. It is also exactly the point at which a
+            6-foot runner's stride stops fitting comfortably. If you are between
+            5 foot 10 and 6 foot and you genuinely run, 60 inches is the upgrade
+            worth paying for even at the cost of a smaller screen or fewer
+            programmes.
+          </p>
+          <p>
+            Above 60 inches, returns fall off quickly for home use. Sixty-two and
+            63-inch decks exist and are useful for very tall runners and for
+            sprint work, but the extra length adds footprint and belt mass for a
+            narrow benefit. It is not the place to spend a marginal 300 dollars
+            unless you are over about 6 foot 4.
+          </p>
+        </div>
+
+        <div id="width" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Width Is the Underrated Number</h2>
+          <p>
+            Length gets all the attention and width is the one people notice
+            underfoot. It governs your margin for lateral error, and that margin
+            is what determines whether you can relax on the machine.
+          </p>
+          <p>
+            At walking pace, feet land in a narrow, repeatable line and 18 inches
+            is genuinely enough. This is why walking pads and
+            <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmills</a>
+            can be narrow without being unpleasant. At running pace, and
+            especially in the last third of a session when form degrades, foot
+            placement wanders by an inch or two either side. On an 18-inch belt
+            that is a clipped side rail. On a 20-inch belt it is nothing.
+          </p>
+          <p>
+            The other thing width buys is the ability to step off safely. Straddling
+            the belt onto the side rails to pause is a routine manoeuvre, and the
+            rails on a narrow machine are correspondingly narrow. Anyone with
+            balance concerns should treat width as a safety specification, which is
+            part of why it features in our
+            <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">senior treadmill scoring</a>.
+          </p>
+          <p>
+            Twenty-two inches is a genuine step up in feel for runners and is
+            standard on commercial machines, but it comes with a real cost: the
+            machine gets wider by more than two inches once you account for rails
+            and frame, and belt mass rises, which asks more of the motor. It is
+            worth it for tall runners and interval work, and unnecessary for
+            steady-state jogging.
+          </p>
+        </div>
+
+        <div id="too-short" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. How a Short Deck Feels</h2>
+          <p>
+            The failure mode of an undersized deck is not dramatic. Almost nobody
+            runs off the back of a treadmill. What happens instead is that you
+            adapt, unconsciously and immediately, and the adaptation is the
+            problem.
+          </p>
+          <p>
+            The most common adaptation is stride shortening with a higher cadence.
+            You take smaller steps more often to keep the same speed on a surface
+            that does not have room for your natural step. That changes the
+            mechanics of the movement — more time on the forefoot, less hip
+            extension — and it is why some people find that treadmill running
+            aggravates a calf or hip niggle that outdoor running never touches.
+          </p>
+          <p>
+            The second adaptation is drifting rearward. Runners who feel crowded at
+            the front settle further back on the belt, where the deck is often less
+            supported and the rear roller is close. It is the main reason people
+            describe a machine as feeling flimsy at pace when the frame is
+            actually fine.
+          </p>
+          <p>
+            The third is simply using it less. This is the one that costs the most
+            money, and it is invisible because nobody attributes it to a
+            specification. A machine that is slightly wrong for you gets used
+            twice a week instead of five times, and no amount of console features
+            fixes it.
+          </p>
+          <p>
+            If you already own a machine that feels short, there is no
+            modification that adds deck. What you can do is make sure the deck you
+            have performs properly — a well-lubricated deck feels meaningfully
+            better underfoot than a dry one, which our
+            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a>
+            covers — and reserve faster work for outdoors.
+          </p>
+        </div>
+
+        <div id="tradeoffs" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. What a Bigger Deck Costs You</h2>
+          <p>
+            The honest other side. Deck size is not free, and the reflex to buy the
+            biggest one available is as wasteful as buying too small is
+            frustrating.
+          </p>
+          <p>
+            <strong>Footprint.</strong> A 60-inch deck typically means a machine
+            around 80 inches long overall, against roughly 70 for a 50-inch deck.
+            In a spare room that difference is trivial. In a bedroom or a
+            hallway-adjacent space it decides whether the machine fits at all, and
+            it changes the safety clearance you need behind it — see
+            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">dimensions and space requirements</a>
+            for the numbers that include clearance.
+          </p>
+          <p>
+            <strong>Weight.</strong> Bigger decks mean heavier machines, typically
+            30 to 60 lb more. That is good for stability and bad for anyone who
+            needs to move the machine, get it upstairs, or fold it away daily. A
+            folding machine with a 60-inch deck is a heavy object to lift even
+            with a hydraulic assist.
+          </p>
+          <p>
+            <strong>Motor load.</strong> A longer, wider belt is more mass to keep
+            moving and more surface area in contact with the deck, so it draws
+            more from the motor at the same speed. A large deck on a modest motor
+            is a genuinely bad combination, and it is common in the folding
+            category where the marketing sells deck size. Pair deck size with the
+            motor advice in our
+            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
+            rather than treating them as separate decisions.
+          </p>
+          <p>
+            <strong>Money.</strong> Roughly speaking, moving from 55 to 60 inches
+            within a manufacturer's range costs a few hundred dollars, and that
+            money could otherwise buy a better motor or better cushioning. For a
+            household of walkers, it is the wrong place to spend it.
+          </p>
+        </div>
+
+        <div id="measuring" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Measuring for a Replacement Belt</h2>
+          <p>
+            If you are here because a belt has worn out rather than because you are
+            shopping, the numbers you need are different. Replacement belts are
+            sold by the dimensions of the loop, not the dimensions of the deck,
+            and the two are not the same.
+          </p>
+          <p>
+            With the machine unplugged, mark a point on the belt edge with a piece
+            of tape. Run a flexible tape measure along the belt, keeping it on the
+            surface, and advance the belt by hand until your mark comes back
+            around. That total is the loop length, and it will be noticeably more
+            than twice the deck length because the belt wraps both rollers. Then
+            measure straight across the belt for the width.
+          </p>
+          <p>
+            Check the belt itself for a printed part number before you measure
+            anything — many manufacturers print one on the underside near the
+            seam, and ordering by part number removes the guesswork entirely. The
+            model number of the machine, on the sticker at the front of the frame
+            or under the hood, is the next best route.
+          </p>
+          <p>
+            One thing worth deciding at the same time: inspect the deck board while
+            the belt is off. A deck with a visible groove worn along the running
+            line, or a surface that has gone rough, will destroy a new belt within
+            months. Many decks are reversible and can be flipped to an unused face,
+            which is cheap and effective. Fitting a new belt to a worn deck is
+            money spent twice.
+          </p>
+        </div>
+
+        <div id="thickness" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Belt Thickness and Ply</h2>
+          <p>
+            Length and width are the numbers on the box. Thickness and construction
+            are the ones that decide how the belt lasts, and they are rarely
+            advertised at all on home machines.
+          </p>
+          <p>
+            Belts are described by <strong>ply</strong> — the number of bonded
+            layers. A one-ply belt is thin, light and easy for a small motor to
+            move, and it wears through faster. A two-ply belt has a fabric backing
+            bonded to the running surface, lasts substantially longer, feels more
+            solid underfoot and asks more of the motor. Commercial machines
+            sometimes use three or four ply, which is a durability choice for
+            fourteen-hour days rather than anything you would feel.
+          </p>
+          <p>
+            For a home machine that will be run daily, two-ply is worth having and
+            worth asking about, because it is the difference between replacing the
+            belt in year three and replacing it in year seven. Where a
+            manufacturer does not publish it, machine weight and price band are
+            reasonable proxies: budget folding machines are almost universally
+            one-ply.
+          </p>
+          <p>
+            Thicker is not automatically better on an underpowered machine. A
+            two-ply belt on a 2.0 CHP motor adds drag the motor is not sized for,
+            and the manufacturer specified one-ply for a reason. When replacing,
+            match what came out unless you are also confident the motor has
+            headroom to spare.
+          </p>
+          <p>
+            Whatever the construction, the thing that determines belt life is not
+            the belt. It is whether the deck beneath it has lubricant on it. A
+            one-ply belt on a lubricated deck outlasts a two-ply belt on a dry one
+            by a wide margin, which is the argument our
+            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance schedule</a>
+            makes at length.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What size treadmill belt do I need?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                For walking, 50 to 55 inches long by 18 inches wide is enough for
+                most people. For jogging under 5 foot 10, buy 55 by 20 inches. For
+                running, or for anyone over 5 foot 10, buy 60 by 20 inches, and
+                over 6 foot 2 look for 60 by 22. Length follows your stride, and
+                stride grows faster with pace than with height.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is a 55 inch treadmill belt long enough for running?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                It is long enough for a runner under about 5 foot 10 at moderate
+                pace, and short for anyone taller or faster. The symptom of a deck
+                that is too short is not falling off the back — it is
+                unconsciously shortening your stride to stay on it, which changes
+                your gait and is the reason some people find treadmill running
+                uncomfortable in a way outdoor running is not.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Does treadmill belt width matter?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                It matters more than most buyers expect, because it determines your
+                margin for lateral error. An 18-inch belt is fine for walking,
+                where your feet land in a predictable line. At running pace, and
+                particularly when tired, foot placement wanders, and 20 to 22
+                inches is what keeps a slightly wide step on the belt rather than
+                on the side rail.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How do I measure my treadmill belt for a replacement?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Measure the belt itself rather than the deck. With the machine
+                unplugged, mark a point on the belt edge, run a tape along the full
+                loop until you return to the mark, and measure the width across the
+                belt. Replacement belts are sold by loop length and width, and a
+                belt sized to the deck instead of the loop will not fit.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is a bigger treadmill belt always better?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                No. A larger deck adds footprint, weight and cost, and needs a
+                stronger motor to move the extra belt mass. For a household that
+                walks, a 60-inch deck is a large object bought for a benefit nobody
+                in the house will use. Buy the deck your longest stride needs and
+                put the remaining budget into motor headroom and cushioning.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What is the standard treadmill belt size?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                The most common home size is 55 by 20 inches, which is the default
+                in the 800 to 1,500 dollar band. Budget and folding machines
+                usually run 50 by 18 inches or smaller, and machines above about
+                1,500 dollars typically move to 60 by 20. Commercial gym treadmills
+                are usually 60 by 22.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Choosing a Belt Size</h2>
+          <p class="text-gray-700 leading-relaxed">Deck size is hard to change after purchase, which makes these four expensive.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Sizing on height instead of pace</h3>
+              <p class="text-gray-700 text-sm m-0">Height moves your stride by a few inches; pace can double it. A 5 foot 6 runner needs more deck than a 6 foot walker, and every height-indexed chart gets that backwards. Decide what you will actually do on the machine first, then adjust for height.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a short deck to fit the room</h3>
+              <p class="text-gray-700 text-sm m-0">A running deck that does not fit is a real constraint, but a walking deck bought by a runner is a machine that gets used twice a week. Before compromising on deck length, check whether a folding machine with a full-size deck solves the space problem, because most of the footprint is recovered when it folds.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Pairing a large deck with a small motor</h3>
+              <p class="text-gray-700 text-sm m-0">A 60 by 22 inch belt is significantly more mass and contact area than a 50 by 18, and it draws more from the motor at every speed. Budget folding machines advertise deck size precisely because it is cheap to add. Check the continuous horsepower rating before being impressed by the dimensions.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ordering a replacement belt by deck length</h3>
+              <p class="text-gray-700 text-sm m-0">Belts are sold by loop length, which is more than twice the deck length because the belt wraps both rollers. Measure the full loop by marking the belt and walking a tape around it, or better, order by the part number printed on the underside. A belt ordered to deck dimensions will not fit at all.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Buying Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/treadmill-horsepower-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Paired Spec</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Horsepower Guide</p>
+              <p class="text-sm text-gray-500 leading-relaxed">CHP versus peak, and the figure your weight and pace need.</p>
+            </a>
+            <a href="/treadmill-dimensions-space-requirements/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Before You Buy</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Dimensions and Space</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Overall footprint, ceiling height and the clearance behind.</p>
+            </a>
+            <a href="/treadmill-belt-lubrication/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Maintenance</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Belt Lubrication</p>
+              <p class="text-sm text-gray-500 leading-relaxed">What actually determines how long any belt lasts.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">Size the deck to your stride, and your
+            stride is set by pace before height.</strong> Walkers are well served
+            at 50 by 18. Joggers want 55 by 20. Anyone running, or anyone over
+            5 foot 10, should treat 60 by 20 as the floor rather than the
+            upgrade.
+          </p>
+          <p class="text-gray-300 leading-relaxed">
+            Pair the deck decision with the
+            <a href="/treadmill-horsepower-guide/" class="text-[#5AA9FF] font-bold no-underline">motor sizing guide</a>,
+            because a large belt on a small motor is worse than either problem
+            alone, and check the machine physically fits using
+            <a href="/treadmill-dimensions-space-requirements/" class="text-[#5AA9FF] font-bold no-underline">dimensions and space requirements</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+</Layout>

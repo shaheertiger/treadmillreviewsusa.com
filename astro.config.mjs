@@ -46,6 +46,35 @@ const PRIORITY_TIERS = [
       '/treadmill-belt-slipping',
       '/treadmill-troubleshooting',
       '/how-long-do-treadmills-last',
+      '/how-often-to-lubricate-treadmill',
+      '/how-tight-should-treadmill-belt-be',
+      '/how-to-center-treadmill-belt',
+      '/treadmill-on-carpet',
+    ],
+  },
+  {
+    // Fault-diagnosis spokes — hang off the troubleshooting guide
+    priority: 0.7,
+    changefreq: 'monthly',
+    paths: [
+      '/treadmill-belt-slows-down-when-i-step-on-it',
+      '/treadmill-wont-turn-on',
+      '/treadmill-turns-on-but-belt-wont-move',
+      '/treadmill-squeaking-noise',
+    ],
+  },
+  {
+    // Specification and sizing explainers — spokes off the buying guides
+    priority: 0.7,
+    changefreq: 'monthly',
+    paths: [
+      '/treadmill-horsepower-guide',
+      '/treadmill-belt-size-guide',
+      '/treadmill-dimensions-space-requirements',
+      '/treadmill-electricity-usage',
+      '/treadmill-incline-percent-vs-degrees',
+      '/treadmill-vs-elliptical',
+      '/used-treadmill-buying-checklist',
     ],
   },
   {
