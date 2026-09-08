@@ -3,7 +3,7 @@ import { walkPages, routeFor, draftRoutes } from './lib/pages.mjs';
 import { SECTIONS } from '../src/data/sections.ts';
 
 const SITE = 'https://www.treadmillreviewsusa.com';
-const KEY = '97943e49c69746038cbd774cb36165fd';
+const KEY = 'c475feb28de6490ca15029d78eabc8b4';
 const KEY_LOCATION = `${SITE}/${KEY}.txt`;
 const PAGES_DIR = join(import.meta.dirname, '..', 'src', 'pages');
 
@@ -68,6 +68,43 @@ async function waitForDeploy() {
   return { ok: false, missing };
 }
 
+/**
+ * IndexNow verifies ownership by fetching the key file and checking it contains
+ * the key. A rotated key is useless until that file is deployed, so confirm it
+ * is actually being served before submitting — this is the single most common
+ * cause of a 403 and the cheapest thing to rule out.
+ */
+async function fetchKeyFile() {
+  try {
+    const res = await fetch(KEY_LOCATION, { headers: { 'Cache-Control': 'no-cache' } });
+    if (!res.ok) return { ok: false, reason: `HTTP ${res.status}` };
+    const body = (await res.text()).trim();
+    if (body !== KEY) return { ok: false, reason: `serves "${body.slice(0, 40)}", expected the key` };
+    return { ok: true };
+  } catch (error) {
+    return { ok: false, reason: error.message };
+  }
+}
+
+/**
+ * Polls, because the sitemap check above only detects newly *added pages* — a
+ * commit that rotates the key without adding any leaves the previous sitemap
+ * already complete, so it passes instantly against the old deploy while the
+ * new key file is still 404.
+ */
+async function keyFileIsLive() {
+  const deadline = Date.now() + LIVENESS_TIMEOUT_MS;
+  let last = await fetchKeyFile();
+
+  while (!last.ok && Date.now() < deadline) {
+    console.log('  waiting for the key file to deploy — %s', last.reason);
+    await sleep(POLL_INTERVAL_MS);
+    last = await fetchKeyFile();
+  }
+
+  return last;
+}
+
 if (!process.argv.includes('--skip-liveness')) {
   console.log('Checking the deploy has landed before submitting...');
   const deploy = await waitForDeploy();
@@ -88,7 +125,23 @@ if (!process.argv.includes('--skip-liveness')) {
     );
     process.exit(1);
   }
-  console.log('Deploy confirmed — every URL is in the live sitemap.\n');
+  console.log('Deploy confirmed — every URL is in the live sitemap.');
+
+  const keyFile = await keyFileIsLive();
+  if (!keyFile.ok) {
+    console.error(
+      [
+        '',
+        `The key file at ${KEY_LOCATION} is not serving the key (${keyFile.reason}).`,
+        '',
+        'IndexNow verifies ownership by fetching that file, so every submission will',
+        'be rejected until it is deployed. Check public/<key>.txt exists, contains',
+        'exactly the key, and has shipped in the current build.',
+      ].join('\n')
+    );
+    process.exit(1);
+  }
+  console.log('Key file confirmed at %s\n', KEY_LOCATION);
 }
 
 // The shared endpoint forwards to every participating engine, so it is tried
