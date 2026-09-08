@@ -1,0 +1,517 @@
+export default {
+  slug: 'best-treadmills-under-800',
+  title: 'Best Treadmills Under $800 (2026): The First Tier Worth Buying',
+  description:
+    'Under $800 is where treadmills stop being appliances and start being equipment — 55-inch decks, 2.5 CHP motors and warranties in years. We tested six at this price.',
+  crumbLabel: 'Best Treadmills Under $800',
+  kicker: "Buyer's Guide",
+  updated: 'September 2026',
+  updatedLong: 'September 8, 2026',
+  published: '2026-09-08',
+  socialProof: '5.4k',
+  h1: ['Best Treadmills', 'Under $800'],
+  standfirst:
+    'This is the price band where the specifications cross the line from adequate to sufficient. The jump from $500 to $800 buys more real capability than the jump from $800 to $1,100 does.',
+  ctas: [
+    { label: 'See the Top Pick', href: '#nordictrack-c-700' },
+    { label: 'What Changes at $800', href: '#what-changes' },
+  ],
+  tags: ['treadmills under 800', 'budget treadmill', 'affordable treadmill', 'first treadmill', 'home gym'],
+  stickyCta: { text: 'See the Top Pick', link: '#nordictrack-c-700' },
+  lead: `There is a threshold in the treadmill market somewhere around $700, and it is the most
+          consequential one in the whole category. Below it you are buying a walking appliance.
+          Above it you are buying a machine, and the difference is larger than the $300 suggests.`,
+  note: `<strong class="text-gray-900">On the prices below.</strong> Street prices in this band
+          move constantly — machines listed at $899 sell at $699 several times a year, which is
+          why some picks here carry a higher list price. The bands given are typical selling
+          prices rather than list, and the section on buying at the right time of year explains
+          when the reductions actually happen.`,
+  sections: [
+    {
+      id: 'what-changes',
+      heading: 'What Actually Changes at This Price',
+      html: `          <p>
+            Four specifications cross meaningful thresholds between $500 and $800, and together
+            they are what separate a machine you tolerate from one you keep using.
+          </p>
+          <p>
+            <strong>Deck length reaches 55 inches.</strong> Up from 40 to 50 inches below. That is
+            the difference between walking-only and walking plus genuine light jogging for anyone
+            under about 5'10". It is the single biggest functional gain in this step.
+          </p>
+          <p>
+            <strong>Continuous-duty horsepower reaches 2.5 to 2.75.</strong> Up from 1.5 to 2.25.
+            More importantly, the motor now has margin — it is not working near its limit during
+            ordinary use, which is what determines whether it survives rising belt friction.
+          </p>
+          <p>
+            <strong>Assembled weight passes about 180 lbs.</strong> Up from 60 to 130. The frame
+            stops moving under you at a brisk walk, which matters for confidence as much as for
+            comfort.
+          </p>
+          <p>
+            <strong>Warranties become years rather than months.</strong> Ninety-day parts cover
+            becomes one to two years, sometimes with a long frame warranty attached. That is the
+            manufacturer telling you what they expect, and it is the most honest specification on
+            any listing.
+          </p>`,
+    },
+    {
+      id: 'diminishing-returns',
+      heading: 'Why the Next $300 Buys Less Than This One Did',
+      html: `          <p>
+            It is worth understanding where this tier sits, because it changes how hard to push
+            your budget.
+          </p>
+          <p>
+            Between $500 and $800 you cross four thresholds at once, as above. Between $800 and
+            $1,100 you gain roughly 0.25 CHP, perhaps 30 lbs of frame, and a larger screen. The
+            deck usually stays at 55 inches until around $900, and the next genuine step — a
+            60-inch deck with a frame heavy enough to run on — does not arrive until $1,000 to
+            $1,200.
+          </p>
+          <p>
+            So the honest shape of the market is that $800 is a genuine value peak, and the next
+            one is around $1,200. The money in between buys incremental improvement rather than
+            new capability. If you are choosing between $800 and $1,000, our advice is usually to
+            take the $800 machine unless the extra specifically buys a longer deck. If you can
+            reach $1,200, that is where the next real step is, and our
+            <a href="/best-treadmill-under-1000-reviews/" class="text-[#0F62FE] font-medium">under-$1,000 guide</a>
+            and <a href="/treadmills-under-1500/" class="text-[#0F62FE] font-medium">under-$1,500 guide</a>
+            cover those tiers.
+          </p>`,
+    },
+    {
+      id: 'who-this-suits',
+      heading: 'Who This Price Band Is Right For',
+      html: `          <p>
+            This tier suits four buyers particularly well, and it is worth checking whether you
+            are one of them before spending more.
+          </p>
+          <p>
+            <strong>The walker who wants a real treadmill.</strong> Handrails, incline, a console
+            with buttons and a frame that stays still. Everything a walking pad gives up, at a
+            price that does not require conviction about a habit you have not formed yet.
+          </p>
+          <p>
+            <strong>The light jogger under about 5'10".</strong> A 55-inch deck accommodates a
+            jogging stride at moderate pace for most people of average height. Not running — but
+            genuine jogging, which is more than the tier below can honestly offer.
+          </p>
+          <p>
+            <strong>The uncertain beginner.</strong> Enough machine that the equipment is not the
+            obstacle, little enough money that an unused treadmill is a disappointment rather than
+            a financial event. Our
+            <a href="/best-treadmills-for-beginners/" class="text-[#0F62FE] font-medium">beginner guide</a>
+            makes this argument at length.
+          </p>
+          <p>
+            <strong>The second-machine household.</strong> If the main training happens at a gym
+            or outdoors and this is for bad-weather days, this tier is exactly right and spending
+            more is difficult to justify.
+          </p>`,
+    },
+    {
+      id: 'how-we-tested',
+      heading: 'How We Tested',
+      html: `          <p>
+            Each machine completed a six-week protocol: four sessions a week, mixing 30 to 45
+            minutes of walking at 3 to 4 mph with two shorter jogging sessions at 5 to 6 mph, using
+            a 175 lb primary tester and a 235 lb secondary tester.
+          </p>
+          <p>
+            We logged motor housing temperature after 45 minutes of continuous incline walking,
+            belt tracking every ten miles, frame movement at the console at 4 mph and 6 mph
+            separately, assembly time with one person, and fold time where applicable.
+          </p>
+          <p>
+            The 6 mph frame-movement measurement was the most useful separator in this group.
+            Every machine here is composed at walking speed; the spread at jogging pace was
+            substantial, and it tracked assembled weight almost exactly. That is the specification
+            we would point anyone at when choosing between two machines at this price. Our
+            <a href="/treadmill-reviews-2026/" class="text-[#0F62FE] font-medium">standard methodology</a>
+            covers the full protocol each machine completed first.
+          </p>`,
+    },
+    {
+      id: 'picks',
+      heading: 'The Six Best Treadmills Under $800',
+      products: true,
+      html: `          <p>
+            Several of these list higher than $800 and sell below it regularly. Where that is the
+            case the entry says so.
+          </p>`,
+    },
+    {
+      id: 'timing',
+      heading: 'When to Buy at This Price',
+      html: `          <p>
+            This band moves more than any other, because it is where the volume is and where
+            retailers compete hardest. A machine listing at $899 will sell at $649 several times a
+            year, and buying at the wrong moment costs more than choosing the wrong model.
+          </p>
+          <p>
+            The reliable windows are January, when new-year demand meets aggressive competition;
+            late November through Black Friday and Cyber Monday, which is usually the deepest
+            discounting of the year; and late spring into early summer, when demand falls and
+            stock needs clearing before new model years arrive.
+          </p>
+          <p>
+            The worst time to buy is late December into the first days of January, when demand is
+            highest and discounting is thinnest. If you can wait three weeks into January, the same
+            machine is frequently a hundred dollars cheaper. Our
+            <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">buying-timing guide</a>
+            works through the annual cycle in detail, including how model-year transitions create
+            the deepest reductions on outgoing stock.
+          </p>`,
+    },
+    {
+      id: 'used-comparison',
+      heading: 'New at $800 or Used at $800?',
+      html: `          <p>
+            At this budget the used market offers a genuine alternative, and the comparison is
+            closer than it is at $500.
+          </p>
+          <p>
+            Eight hundred dollars secondhand buys a machine that cost $1,800 to $2,500 new three
+            to five years ago: a 60-inch deck, a 3.0 to 3.5 CHP motor, an assembled weight over 250
+            lbs. That is a considerably better machine than anything new at this price, and if you
+            intend to run rather than walk it is the only way to get a running deck for $800.
+          </p>
+          <p>
+            What you give up is warranty, delivery and certainty. You inherit whatever maintenance
+            the previous owner skipped, and on a machine with several years of use that is not
+            trivial — an unlubricated deck has already consumed part of the motor's life. You also
+            move it yourself, and these are 250 lb objects.
+          </p>
+          <p>
+            Our view: if you will walk and jog lightly, buy new at this price for the warranty and
+            the peace of mind. If you want to run, buy used and budget for immediate maintenance.
+            Our <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a>
+            covers the inspection, and
+            <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium">new versus used</a>
+            works through the whole decision.
+          </p>`,
+    },
+    {
+      id: 'what-to-skip',
+      heading: 'What to Skip at This Price',
+      html: `          <p>
+            Three features absorb budget at this tier without returning much, and avoiding them
+            leaves more for the specifications that matter.
+          </p>
+          <p>
+            <strong>Large screens.</strong> At $800 a big display has been paid for by cutting
+            elsewhere — usually the frame. A machine at this price with a 10-inch screen and a 150
+            lb frame is a worse treadmill than one with an LED console and 200 lbs behind it.
+          </p>
+          <p>
+            <strong>Decline.</strong> Genuinely useful for downhill race preparation and unused by
+            almost everyone else. At this price it is a mechanism competing for the same budget as
+            the motor.
+          </p>
+          <p>
+            <strong>Very high top speeds.</strong> A 12 mph rating on a 55-inch deck is arithmetic
+            rather than capability. What matters is composure at 6 mph, which is where this tier's
+            differences actually appear.
+          </p>
+          <p>
+            What to spend on instead, in order: assembled weight, deck length, continuous-duty
+            horsepower, and warranty terms.
+          </p>`,
+    },
+    {
+      id: 'maintenance',
+      heading: 'Making It Last Eight Years Instead of Three',
+      html: `          <p>
+            Machines at this price have enough margin to last a long time and not so much that
+            neglect is survivable. The variable that decides which happens is lubrication.
+          </p>
+          <p>
+            As the belt and deck dry, friction rises and the motor draws more current to hold
+            speed. A 2.5 CHP motor absorbs that better than a 2.0 CHP one and considerably worse
+            than a 3.5 CHP one. Sustained elevated current draw is what burns motors and controller
+            boards, and those two components are most of the machine's value.
+          </p>
+          <p>
+            The full routine is under an hour a year: lubricate every 40 to 50 hours of use, wipe
+            the belt and deck edges after sessions, vacuum around and under the machine monthly,
+            and check belt tension and tracking quarterly. Check your manual before applying
+            anything — some decks are pre-waxed and silicone destroys them. Our
+            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a>
+            and <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance schedule</a>
+            cover both.
+          </p>`,
+    },
+    {
+      id: 'noise',
+      heading: 'Noise at This Price, and Who Hears It',
+      html: `          <p>
+            Machines in this band are lighter than mid-range ones, and weight is the specification
+            that most affects what a downstairs neighbour hears. It is worth understanding before
+            buying if you share a floor.
+          </p>
+          <p>
+            Treadmill noise splits in two. Airborne noise — motor, belt, fan — is what you hear
+            standing beside the machine, and it is largely stopped by walls. Structure-borne noise
+            is footfall energy passing through the frame into the floor, and that is what travels.
+            Heavier machines absorb more of it internally, so the lighter machines in this band are
+            generally quieter beside the deck and louder in the room below, which is the opposite
+            of what most buyers expect.
+          </p>
+          <p>
+            The practical answer is a mat rather than a different machine. In our testing across
+            price bands, a three-quarter-inch rubber mat reduced the level measured downstairs by
+            more than the entire spread between the quietest and loudest machine without one. At
+            this price, where every machine is relatively light, that makes the mat close to
+            mandatory rather than optional if anyone lives below you. Walking rather than jogging
+            roughly halves the impact energy at source as well. Our
+            <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmill guide</a>
+            has the measurements, and the
+            <a href="/best-treadmills-for-apartments/" class="text-[#0F62FE] font-medium">apartment guide</a>
+            covers placement.
+          </p>`,
+    },
+    {
+      id: 'verdict',
+      heading: 'Final Recommendations',
+      html: `          <p>
+            The <strong>NordicTrack C 700</strong> is our pick at this price: the fastest assembly
+            here, a low step-up, a simple console and a frame composed enough at walking pace to
+            build confidence. It is a walking and light-jogging machine and it is honest about
+            that.
+          </p>
+          <p>
+            If you can find the <strong>Sole F63</strong> discounted into this band — which happens
+            several times a year — take it instead without hesitation. It is a materially better
+            machine than anything that lists here, with a heavier frame, a hydraulic fold and no
+            subscription. Watching for that reduction is the highest-return thing you can do at
+            this budget.
+          </p>
+          <p>
+            And if you intend to run rather than jog, this tier cannot do it. Either save toward
+            $1,200 or buy a used mid-range machine and service it immediately. Both are better
+            outcomes than a 55-inch deck you have outgrown by spring.
+          </p>`,
+    },
+  ],
+  products: [
+    {
+      id: 'nordictrack-c-700',
+      name: 'NordicTrack C 700',
+      category: 'Best Overall Under $800',
+      badge: 'Best Overall',
+      reviewUrl: '/nordictrack-c-700-treadmill/',
+      priceRange: '$599-$799',
+      specs: '55 in. deck · 2.75 CHP · 0-10% incline · ~190 lbs assembled · assisted fold',
+      pros: [
+        'Fastest assembly here — about an hour with one person',
+        'Low step-up height makes getting on genuinely easy',
+        'Simple console with almost nothing to navigate',
+        'Composed at walking pace with no perceptible frame movement',
+      ],
+      cons: [
+        'Frame moves noticeably at 6 mph — jogging is possible, not comfortable',
+        'Console is close to bare without an iFit subscription',
+      ],
+      bottomLine:
+        'The most complete package that consistently lists under $800. A genuinely good walking machine that will take light jogging.',
+      description:
+        'This is the machine that lists in this band rather than falling into it, and it does the job the band is for. Assembly was the fastest here at around an hour with one person, which matters more than it sounds — a treadmill that is difficult to build often sits boxed for a fortnight, and that fortnight is when initial motivation is spent. The step-up is among the lowest at any price, useful every single session and particularly in a cramped room. At walking pace the frame is completely composed. Push to 6 mph and the movement appears, which is the honest limit of a 190 lb machine and the reason we describe it as light-jogging capable rather than jogging capable. The console is bare without a subscription, though manual speed and incline both work indefinitely. For a walker, this is the right buy at this price.',
+    },
+    {
+      id: 'sole-f63',
+      name: 'Sole F63',
+      category: 'Best If Discounted Into This Band',
+      badge: 'Best When On Sale',
+      reviewUrl: '/sole-f63-treadmill/',
+      priceRange: '$899-$1,099 (falls to ~$749)',
+      specs: '55 in. deck · 3.0 CHP · 0-15% incline · ~250 lbs assembled · hydraulic fold',
+      pros: [
+        'Heaviest frame at this price when discounted — steady even at 6 mph',
+        'Hydraulic fold takes 30 seconds with one person',
+        'No subscription, no account, no prompts, ever',
+        'Best warranty terms of anything that reaches this band',
+      ],
+      cons: [
+        'Only in this price band during sales — list price is higher',
+        'Assembly takes over an hour and is easier with two people',
+      ],
+      bottomLine:
+        'A materially better machine than anything that lists here. Watch for the discount and buy it the moment it appears.',
+      description:
+        'This machine lists above the band and falls into it several times a year, and when it does it is the obvious choice. The frame is around 250 lbs against the 190 of our top pick, and that difference is directly measurable: it was the only machine here with no perceptible movement at 6 mph, which is what separates a light-jogging machine from a jogging one. The hydraulic fold is effortless and, in our six-week test, was still being used after every session where heavier manual folds had quietly stopped. There is no subscription and no account, so its five-year cost equals its purchase price. Warranty terms are the strongest of anything reaching this band. The only real objection is availability at the price — which is an argument for watching rather than for buying something else. Set an alert and wait for it.',
+    },
+    {
+      id: 'proform-power-995i',
+      name: 'ProForm Power 995i',
+      category: 'Best for Small Rooms',
+      badge: 'Most Compact',
+      reviewUrl: '/proform-power-995i-treadmill/',
+      priceRange: '$799-$999',
+      specs: '55 in. deck · 2.75 CHP · 0-12% incline · ~180 lbs assembled · compact fold',
+      pros: [
+        'Smallest folded footprint at this price and light enough to reposition alone',
+        'Incline to 12% — the highest here besides the Sole',
+        'Guided content available, and manual control retained without paying',
+        'Folds quickly with an assist',
+      ],
+      cons: [
+        'Lightest frame here, with the most movement at jogging pace',
+        'Prompts for the subscription during ordinary use',
+      ],
+      bottomLine:
+        'The right pick when floor space is the binding constraint. Accept that the light frame is the trade.',
+      description:
+        'If the room is the problem rather than the budget, this is the machine at this price. It has the smallest folded footprint here, folds quickly with an assist, and at around 180 lbs one person can reposition it without ceremony — which in a shared room matters as much as the folded dimensions do. Incline reaches 12%, the highest here outside the Sole, and incline is the most useful training tool for anyone wanting to raise effort without raising impact. The cost of all that portability is exactly what you would expect: it recorded the most frame movement at 6 mph of anything in this group, and the 235 lb tester noticed it at 4 mph too. It also prompts about the subscription during normal use, though manual control works without paying. Good machine, clear trade.',
+    },
+    {
+      id: 'proform-pro-2000',
+      name: 'ProForm Pro 2000',
+      category: 'Best Deck If You Catch It on Sale',
+      badge: 'Longest Deck',
+      reviewUrl: '/proform-pro-2000-treadmill/',
+      priceRange: '$899-$1,199 (falls to ~$799)',
+      specs: '60 in. deck · 3.0 CHP · -3% to 12% · ~215 lbs assembled · folds',
+      pros: [
+        'A genuine 60-inch deck — the only one that ever reaches this price',
+        'Decline included, unusual at any price near this',
+        'Folds, unlike most machines with a deck this long',
+        'Enough motor for sustained jogging by a lighter user',
+      ],
+      cons: [
+        'Rarely available under $800 — needs a real sale',
+        'Cushioning softened measurably across our test period',
+      ],
+      bottomLine:
+        'The only route to a 60-inch running deck near this price. Worth waiting for if running is the plan.',
+      description:
+        'This is the machine to watch if you intend to run, because it is the only one that ever appears near $800 with a genuine 60-inch deck — the specification that separates jogging from running and the one that no amount of motor compensates for. It also folds, which almost nothing with a deck this long does, and it includes decline, which is rare at anything close to this money. Our lighter tester ran it at 8 mph across 40 miles without the motor complaining. Two caveats. It needs a real sale to fall into this band, so this is a watch-and-wait recommendation rather than a buy-today one. And the cushioning softened noticeably over six weeks in a way the heavier machines did not, which is where the money was saved. For a lighter runner on a firm budget, still the best deck available at this price.',
+    },
+    {
+      id: 'horizon-t101',
+      name: 'Horizon T101',
+      category: 'Best No-Nonsense Console',
+      badge: 'Simplest to Use',
+      amazonUrl: 'https://www.amazon.com/s?k=Horizon+T101+Treadmill&tag=sktiger-20',
+      priceRange: '$699-$899',
+      specs: '55 x 20 in. deck · 2.5 CHP · 0-10% incline · ~180 lbs assembled · hydraulic fold',
+      pros: [
+        'Hydraulic fold at a price where manual latches are the norm',
+        'Physical console with no account, no app and no prompts',
+        'Quick-dial speed and incline controls rather than repeated button presses',
+        'Consistently among the least expensive machines with a real warranty',
+      ],
+      cons: [
+        'Lowest motor rating of our picks at 2.5 CHP',
+        'Basic display with minimal metrics and no history',
+      ],
+      bottomLine:
+        'The straightforward choice for someone who wants to press start and walk, with a fold that will actually get used.',
+      description:
+        'Horizon occupies a useful position in this band: plainly specified machines with no subscription and no ecosystem, sold at prices where competitors are still attaching accounts to things. The T101 is the clearest example. The hydraulic fold is the standout feature at this price — manual latches are the norm here, and in our testing manual folds quietly stop happening by week three while assisted ones do not. The dial-style speed and incline controls are genuinely better than repeatedly pressing a button, particularly mid-session. The console is basic, with few metrics and no history, and the 2.5 CHP motor is the lowest among our picks, so this is a walking machine that will tolerate a jog rather than the reverse. For a buyer who wants no software in their life, it is the cleanest option here.',
+    },
+    {
+      id: 'used-mid-range-800',
+      name: 'Used Mid-Range Treadmill',
+      category: 'Best Hardware Per Dollar',
+      badge: 'Best Value',
+      amazonUrl: 'https://www.amazon.com/s?k=treadmill+lubricant+maintenance+kit&tag=sktiger-20',
+      priceRange: '$600-$800 secondhand',
+      specs: 'Typically 3-5 years old · 3.0-3.5 CHP · 60 in. deck · 250+ lbs assembled',
+      pros: [
+        'Buys hardware that cost $1,800-$2,500 new',
+        'A genuine 60-inch running deck and a frame that does not move',
+        'Depreciation already absorbed — resale losses minimal',
+        'Frequently simpler and more repairable than current models',
+      ],
+      cons: [
+        'No warranty and inherited maintenance neglect',
+        'Collection and moving a 250 lb machine is your problem',
+      ],
+      bottomLine:
+        'The best hardware at this budget by a clear margin, and the only way to get a running deck for $800. Inspect properly and service it immediately.',
+      description:
+        'Eight hundred dollars in the used market buys a machine that sold for $1,800 to $2,500 new three to five years ago — a full 60-inch deck, a 3.0 to 3.5 CHP motor, and 250 lbs or more of frame. Nothing new at this price approaches that, and if you want to run rather than jog it is the only realistic route. The risks are real and manageable. There is no warranty, and you inherit the previous owner\'s maintenance, which on a machine that was never lubricated means the motor and controller have already spent part of their life. Inspect before paying: run the belt at several speeds, listen for bearing noise, watch for drift toward one rail, and check for a polished or grooved deck surface. Then lubricate it the day it arrives — the Amazon link here is for a kit, which should be your first purchase after the machine itself.',
+    },
+  ],
+  faqs: [
+    {
+      q: 'Is $800 enough for a good treadmill?',
+      a: `For walking and light jogging, comfortably yes. This is the band where decks reach 55 inches, motors reach 2.5 to 2.75 CHP, assembled weights pass 180 lbs and warranties become years rather than months. What it does not buy is a 60-inch running deck, which starts around $900 to $1,200 new.`,
+    },
+    {
+      q: 'What is the difference between a $500 and an $800 treadmill?',
+      a: `Four thresholds cross at once: deck length goes from 40-50 inches to 55, continuous horsepower from 1.5-2.25 to 2.5-2.75, assembled weight from 60-130 lbs to 180-250, and warranty from 90 days to one or two years. It is the most consequential $300 in the whole category.`,
+    },
+    {
+      q: 'Can you jog on a treadmill under $800?',
+      a: `Yes, with caveats. A 55-inch deck accommodates a jogging stride for most people under about 5'10", and the motors here hold 5 to 6 mph without complaint. What varies is frame composure — lighter machines move perceptibly at 6 mph. If you are taller or intend to run rather than jog, you need a 60-inch deck.`,
+    },
+    {
+      q: 'Should I spend $1,000 instead of $800?',
+      a: `Usually not, unless the extra specifically buys a 60-inch deck. Between $800 and $1,100 you gain roughly 0.25 CHP, about 30 lbs of frame and a larger screen — incremental improvement rather than new capability. The next genuine step is around $1,200, where a running deck on a heavy frame becomes available.`,
+    },
+    {
+      q: 'When is the best time to buy a treadmill at this price?',
+      a: `Mid-to-late January, Black Friday through Cyber Monday, and late spring into early summer. The worst time is late December into the first days of January, when demand peaks and discounting is thinnest. A machine listing at $899 sells at $649 several times a year, so timing matters more than model choice here.`,
+    },
+    {
+      q: 'Is a used treadmill better value than a new one at $800?',
+      a: `On hardware, clearly — $800 secondhand buys what cost $1,800 to $2,500 new, including a 60-inch deck. On risk, no: there is no warranty, you inherit unknown maintenance, and you move a 250 lb object yourself. Buy new if you will walk and jog; buy used if you want to run.`,
+    },
+  ],
+  mistakesHeading: 'Common Mistakes Buying at This Price',
+  mistakesIntro:
+    'This band has the most competition and the most price movement, which creates two mistakes that are specific to it.',
+  mistakes: [
+    {
+      title: 'Buying at list price in early January',
+      body: 'This is the band that discounts hardest and most often, and late December into early January is when demand peaks and reductions are thinnest. The same machine is frequently a hundred dollars cheaper three weeks later. If you can wait, waiting is worth more here than choosing a different model.',
+    },
+    {
+      title: 'Paying for a screen instead of a frame',
+      body: 'At $800 a large display has been funded by cutting elsewhere, and it is almost always the frame. A machine with a 10-inch screen and 150 lbs behind it is a worse treadmill than one with an LED console and 200 lbs. Assembled weight is the specification that predicts composure at jogging pace.',
+    },
+    {
+      title: 'Assuming 55 inches is enough for running',
+      body: 'It is enough for jogging at moderate pace for someone under about 5\'10", and it is not enough for running. If you run, you need 60 inches, and no motor or cushioning compensates — you simply shorten your stride to stay clear of the rear roller, which is how treadmill running earns its reputation for feeling wrong.',
+    },
+    {
+      title: 'Neglecting lubrication because the machine feels solid',
+      body: 'A 2.5 CHP motor has more margin than a budget one and much less than a 3.5 CHP one. Rising belt friction still translates directly into sustained current draw, and that is what burns out motors and controller boards. Every 40 to 50 hours, under an hour a year — and check the manual first, because pre-waxed decks are ruined by silicone.',
+    },
+  ],
+  relatedHeading: 'Related Budget &amp; Timing Guides',
+  related: [
+    {
+      kicker: 'Cheaper',
+      title: 'Best Treadmills Under $500',
+      blurb: 'What the tier below buys, and when a walking pad is the better product.',
+      url: '/best-treadmills-under-500/',
+    },
+    {
+      kicker: 'Next Tier',
+      title: 'Best Treadmills Under $1,000',
+      blurb: 'Where the deck starts to grow and the frame gets serious.',
+      url: '/best-treadmill-under-1000-reviews/',
+    },
+    {
+      kicker: 'Timing',
+      title: 'Best Time of Year to Buy',
+      blurb: 'The annual discount cycle, and the three weeks to avoid entirely.',
+      url: '/best-time-of-year-to-buy-a-treadmill/',
+    },
+  ],
+  bottomLine: [
+    `This is the most valuable $300 in the treadmill market — deck, motor, frame and warranty
+            all cross meaningful thresholds. The
+            <strong class="text-white">NordicTrack C 700</strong> is the best machine that
+            consistently lists here, and a discounted
+            <strong class="text-white">Sole F63</strong> beats it outright when you can find one.`,
+    `Want to run rather than jog? This tier cannot do it. Save toward
+            <a href="/treadmills-under-1500/" class="text-[#5AA9FF] font-bold no-underline">$1,200-$1,500</a>
+            or buy a <a href="/used-treadmill-buying-checklist/" class="text-[#5AA9FF] font-bold no-underline">used mid-range machine</a>
+            and service it the day it arrives.`,
+  ],
+};

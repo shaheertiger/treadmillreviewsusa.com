@@ -1,0 +1,195 @@
+---
+import Layout from "./Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import { SECTIONS, pageCount, type Section } from "../data/sections";
+
+interface Props {
+  section: Section;
+}
+
+const { section } = Astro.props;
+
+const SITE = "https://www.treadmillreviewsusa.com";
+const hubUrl = `${SITE}/${section.slug}/`;
+
+const allPages = section.groups.flatMap((group) => group.pages);
+const otherSections = SECTIONS.filter((other) => other.slug !== section.slug);
+const total = pageCount(section);
+
+// Group anchors are only worth rendering when there is more than one.
+const showGroupNav = section.groups.length > 1;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
+        { "@type": "ListItem", position: 2, name: section.name, item: hubUrl },
+      ],
+    },
+    {
+      "@type": "CollectionPage",
+      name: section.title,
+      description: section.metaDescription,
+      url: hubUrl,
+      isPartOf: { "@type": "WebSite", name: "Treadmill Reviews USA", url: `${SITE}/` },
+      mainEntity: {
+        "@type": "ItemList",
+        numberOfItems: total,
+        itemListElement: allPages.map((page, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          name: page.title,
+          url: `${SITE}${page.url}`,
+        })),
+      },
+    },
+  ],
+};
+
+const slug = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+---
+
+<Layout
+  title={`${section.title} | Treadmill Reviews USA`}
+  description={section.metaDescription}
+  jsonLd={schema}
+  noindex={section.noindex}
+>
+  <div class="relative overflow-hidden">
+    <!-- Hero -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <div class="absolute inset-0 opacity-10">
+        <svg width="100%" height="100%">
+          <defs>
+            <pattern id="hub-dots" width="24" height="24" patternUnits="userSpaceOnUse">
+              <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#hub-dots)"></rect>
+        </svg>
+      </div>
+
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-2 mb-6">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#FF5A1F]/15 text-[#FF5A1F] text-xs font-black uppercase tracking-widest border border-[#FF5A1F]/25">
+            <span aria-hidden="true">{section.icon}</span>
+            {section.name}
+          </span>
+          <span class="inline-flex items-center px-3 py-1.5 rounded-full bg-green-500/15 text-green-400 text-xs font-black uppercase tracking-widest border border-green-500/25">
+            {total} guides
+          </span>
+        </div>
+
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          {section.heading}{" "}
+          <span class="text-[#5AA9FF]">{section.highlight}</span>
+        </h1>
+
+        <p class="text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto">
+          {section.standfirst}
+        </p>
+      </div>
+    </div>
+
+    <!-- Intro -->
+    <div class="max-w-3xl mx-auto px-4 pt-12 lg:pt-16">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        {section.intro.map((paragraph, index) => (
+          <p class={index === 0 ? "text-xl font-medium text-gray-900" : undefined}>{paragraph}</p>
+        ))}
+      </div>
+
+      {showGroupNav && (
+        <nav class="flex flex-wrap gap-2 mt-10" aria-label="Jump to a group">
+          {section.groups.map((group) => (
+            <a
+              href={`#${slug(group.name)}`}
+              class="bg-gray-50 hover:bg-[#0F62FE]/10 hover:text-[#0F62FE] text-gray-600 px-4 py-2 rounded-full text-sm font-bold no-underline transition-colors border border-gray-200"
+            >
+              {group.name}
+            </a>
+          ))}
+        </nav>
+      )}
+    </div>
+
+    <!-- Groups -->
+    <div class="max-w-6xl mx-auto px-4 py-12 lg:py-16">
+      {section.groups.map((group) => (
+        <div id={slug(group.name)} class="mb-14 scroll-mt-24">
+          <h2 class="text-2xl font-black text-gray-900 mb-6 pb-3 border-b border-gray-200">
+            {group.name}
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {group.pages.map((page) => (
+              <a
+                href={page.url}
+                class="bg-white border border-gray-100 rounded-2xl p-6 hover:shadow-lg hover:border-[#0F62FE] transition-all no-underline block group"
+              >
+                <span class="inline-block bg-[#0F62FE]/10 text-[#0F62FE] px-3 py-1 rounded-full text-xs font-bold mb-4">
+                  {page.badge}
+                </span>
+                <h3 class="text-lg font-black text-gray-900 group-hover:text-[#0F62FE] mb-2">
+                  {page.title}
+                </h3>
+                <p class="text-gray-500 text-sm leading-relaxed">{page.description}</p>
+              </a>
+            ))}
+          </div>
+        </div>
+      ))}
+
+      <!-- Sibling hubs -->
+      <div class="mt-16">
+        <h2 class="text-2xl font-black text-gray-900 mb-2">Browse another section</h2>
+        <p class="text-gray-500 mb-6">
+          Every guide on the site sits in one of these nine sections.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {otherSections.map((other) => (
+            <a
+              href={`/${other.slug}/`}
+              class="bg-gray-50 border border-gray-100 rounded-2xl p-5 hover:bg-white hover:shadow-lg hover:border-[#0F62FE] transition-all no-underline block group"
+            >
+              <span class="text-2xl" aria-hidden="true">{other.icon}</span>
+              <h3 class="text-base font-black text-gray-900 group-hover:text-[#0F62FE] mt-3 mb-1">
+                {other.name}
+              </h3>
+              <p class="text-gray-500 text-xs leading-relaxed">{other.tagline}</p>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <div class="mt-12 bg-gray-900 text-white rounded-2xl p-8 text-center">
+        <h2 class="text-2xl font-black text-white mb-4">Not sure where to start?</h2>
+        <p class="text-gray-300 leading-relaxed max-w-2xl mx-auto mb-6">
+          The full index lists every guide, brand page and model review we have published, grouped
+          the same way. If you would rather answer a few questions than browse, the home-treadmill
+          router narrows the field in about a minute.
+        </p>
+        <div class="flex flex-wrap justify-center gap-3">
+          <a
+            href="/best-of/"
+            class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-bold no-underline transition-colors"
+          >
+            See every guide
+          </a>
+          <a
+            href="/home-treadmills/"
+            class="bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-xl font-bold no-underline transition-colors"
+          >
+            Which buyer are you?
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

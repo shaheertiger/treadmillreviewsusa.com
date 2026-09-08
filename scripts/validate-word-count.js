@@ -1,9 +1,13 @@
-import { readFileSync, readdirSync } from 'fs';
+import { readFileSync } from 'fs';
 import { join } from 'path';
+import { walkPages, isLandingPage, isDraft, routeFor } from './lib/pages.mjs';
 
 const PAGES_DIR = join(import.meta.dirname, '..', 'src', 'pages');
 const MIN_WORD_COUNT = 2500;
-const EXCLUDED_PAGES = ['index.astro', 'best-of.astro', 'contact-us.astro'];
+// Drafts are exempt from the published minimum because they are incomplete by
+// definition, but they still have to be substantial — the exemption is not a
+// route to a thin page going live the moment DATA_PENDING is removed.
+const MIN_DRAFT_WORD_COUNT = 2000;
 
 function countWords(filePath) {
   const content = readFileSync(filePath, 'utf-8');
@@ -28,32 +32,61 @@ function countWords(filePath) {
   return words.length;
 }
 
-const files = readdirSync(PAGES_DIR).filter(
-  (f) => f.endsWith('.astro') && !EXCLUDED_PAGES.includes(f)
-);
+const all = walkPages(PAGES_DIR).filter((f) => !isLandingPage(f));
+
+// Editorial drafts are incomplete by definition and are noindex. The minimum
+// applies again the moment DATA_PENDING is removed, which is when it matters.
+const drafts = all.filter((f) => isDraft(PAGES_DIR, f));
+const files = all.filter((f) => !isDraft(PAGES_DIR, f));
 
 let hasFailures = false;
 
-console.log('Validating article word counts (minimum: %d words)\n', MIN_WORD_COUNT);
+console.log(
+  'Validating article word counts (published: %d words, drafts: %d)\n',
+  MIN_WORD_COUNT,
+  MIN_DRAFT_WORD_COUNT
+);
+
+for (const file of drafts) {
+  const wordCount = countWords(join(PAGES_DIR, file));
+
+  if (wordCount < MIN_DRAFT_WORD_COUNT) {
+    hasFailures = true;
+    console.log(
+      'FAIL  %s — %d words (draft minimum %d, need %d more)',
+      routeFor(file),
+      wordCount,
+      MIN_DRAFT_WORD_COUNT,
+      MIN_DRAFT_WORD_COUNT - wordCount
+    );
+  } else {
+    console.log('DRAFT %s — %d words', routeFor(file), wordCount);
+  }
+}
 
 for (const file of files) {
-  const filePath = join(PAGES_DIR, file);
-  const wordCount = countWords(filePath);
-  const passed = wordCount >= MIN_WORD_COUNT;
+  const wordCount = countWords(join(PAGES_DIR, file));
 
-  if (!passed) {
+  if (wordCount < MIN_WORD_COUNT) {
     hasFailures = true;
-    console.log('FAIL  %s — %d words (need %d more)', file, wordCount, MIN_WORD_COUNT - wordCount);
+    console.log('FAIL  %s — %d words (need %d more)', routeFor(file), wordCount, MIN_WORD_COUNT - wordCount);
   } else {
-    console.log('PASS  %s — %d words', file, wordCount);
+    console.log('PASS  %s — %d words', routeFor(file), wordCount);
   }
 }
 
 console.log('');
 
 if (hasFailures) {
-  console.error('Word count validation failed. All articles must have at least %d words.', MIN_WORD_COUNT);
+  console.error(
+    'Word count validation failed. Published articles need %d words; drafts need %d.',
+    MIN_WORD_COUNT,
+    MIN_DRAFT_WORD_COUNT
+  );
   process.exit(1);
 } else {
-  console.log('All articles meet the minimum word count requirement.');
+  console.log('All %d published articles meet the minimum word count requirement.', files.length);
+  if (drafts.length > 0) {
+    console.log('All %d draft(s) meet the %d-word draft minimum.', drafts.length, MIN_DRAFT_WORD_COUNT);
+  }
 }

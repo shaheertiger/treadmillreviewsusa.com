@@ -1,18 +1,24 @@
-import { readFileSync, readdirSync } from 'fs';
+import { readFileSync } from 'fs';
 import { join } from 'path';
+import { walkFiles, walkPages, routeFor } from './lib/pages.mjs';
 
-const PAGES_DIR = join(import.meta.dirname, '..', 'src', 'pages');
-const COMPONENTS_DIR = join(import.meta.dirname, '..', 'src', 'components');
-const LAYOUTS_DIR = join(import.meta.dirname, '..', 'src', 'layouts');
+const SRC_DIR = join(import.meta.dirname, '..', 'src');
+const PAGES_DIR = join(SRC_DIR, 'pages');
+
+// Every directory whose files may contain internal links, and the extensions
+// worth reading there. `data` carries the section manifest, so its URLs are
+// held to the same standard as markup.
+const SOURCES = [
+  { label: 'pages', dir: PAGES_DIR, extensions: ['.astro'] },
+  { label: 'components', dir: join(SRC_DIR, 'components'), extensions: ['.astro', '.tsx'] },
+  { label: 'layouts', dir: join(SRC_DIR, 'layouts'), extensions: ['.astro'] },
+  { label: 'data', dir: join(SRC_DIR, 'data'), extensions: ['.ts'] },
+];
 
 // The site root is a valid target that has no <slug> of its own.
 const ROOT_ROUTE = '/';
 
-const slugs = new Set(
-  readdirSync(PAGES_DIR)
-    .filter((f) => f.endsWith('.astro'))
-    .map((f) => `/${f.replace(/\.astro$/, '')}/`)
-);
+const routes = new Set(walkPages(PAGES_DIR).map(routeFor));
 
 function collectLinks(contents) {
   const links = [];
@@ -37,11 +43,8 @@ function collectLinks(contents) {
   return links;
 }
 
-const dirs = [PAGES_DIR, COMPONENTS_DIR, LAYOUTS_DIR];
-const files = dirs.flatMap((dir) =>
-  readdirSync(dir)
-    .filter((f) => f.endsWith('.astro') || f.endsWith('.tsx'))
-    .map((f) => ({ dir, file: f }))
+const files = SOURCES.flatMap(({ dir, extensions }) =>
+  walkFiles(dir, extensions).map((file) => ({ dir, file }))
 );
 
 let failures = 0;
@@ -63,8 +66,8 @@ for (const { dir, file } of files) {
       continue;
     }
 
-    if (!slugs.has(link)) {
-      problems.push(`${link} — no matching src/pages${link.replace(/\/$/, '')}.astro`);
+    if (!routes.has(link)) {
+      problems.push(`${link} — no page under src/pages serves this route`);
     }
   }
 

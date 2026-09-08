@@ -1,7 +1,27 @@
+import { readdirSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { draftRoutes } from './scripts/lib/pages.mjs';
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
+
+// The section hubs of the site's information architecture, derived from the
+// filesystem so this list cannot drift from src/data/sections.ts: every
+// subdirectory of src/pages holds exactly one hub at its index.astro.
+const SECTION_HUBS = readdirSync(fileURLToPath(new URL('./src/pages', import.meta.url)), {
+  withFileTypes: true,
+})
+  .filter((entry) => entry.isDirectory())
+  .map((entry) => `/${entry.name}`);
+
+// Hubs that render with `noindex` because they have no destinations of their
+// own yet. Kept out of the sitemap so the two signals agree.
+const UNINDEXED_HUBS = ['/tools'];
+
+// Editorial drafts awaiting verified product data render noindex and must stay
+// out of the sitemap so the two signals agree.
+const DRAFT_ROUTES = draftRoutes(fileURLToPath(new URL('./src/pages', import.meta.url)));
 
 // Sitemap priority tiers, highest to lowest. A path's priority is the
 // highest tier it appears in; anything not listed falls through to the
@@ -11,6 +31,12 @@ const PRIORITY_TIERS = [
     priority: 0.9,
     changefreq: 'weekly',
     paths: ['/best-of'],
+  },
+  {
+    // Section hubs — the top level of the IA, one per topic cluster
+    priority: 0.9,
+    changefreq: 'weekly',
+    paths: SECTION_HUBS,
   },
   {
     priority: 0.9,
@@ -171,6 +197,13 @@ export default defineConfig({
     react(),
     sitemap({
       xslURL: '/sitemap.xsl',
+      filter: (page) => {
+        const path = new URL(page).pathname;
+        return (
+          !UNINDEXED_HUBS.some((hub) => path.replace(/\/$/, '') === hub) &&
+          !DRAFT_ROUTES.includes(path)
+        );
+      },
       serialize(item) {
         const base = 'https://www.treadmillreviewsusa.com';
         const url = item.url.replace(/\/$/, '');

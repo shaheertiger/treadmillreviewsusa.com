@@ -1,0 +1,572 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "Horizon Fitness Treadmills (2026): Brand Guide";
+const description =
+  "How Horizon positions itself in the treadmill market, what to check across the lineup, and the questions worth asking a retailer before you buy one.";
+
+// This page is an editorial draft. The items below need verified product
+// data before it is published; until DATA_PENDING is removed the page renders
+// a banner and is excluded from search. See README, "Pages awaiting data".
+const DATA_PENDING = [
+  "Current model lineup with exact model-year designations for each machine",
+  "Street price ranges per model, and which models are being discontinued",
+  "Motor continuous-duty ratings, deck dimensions and roller diameters per model",
+  "Weight capacities and full warranty terms (frame / parts / labour, in-home or return-to-base)",
+  "Subscription position — what the console does with no subscription active, per model",
+  "Which models are sold under different numbers at different retailers",
+  "Commonly reported ownership issues, sourced from owner reports rather than inference",
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Best Lists", item: "https://www.treadmillreviewsusa.com/best-of/" },
+        { "@type": "ListItem", position: 3, name: "Horizon Fitness Treadmills", item: "https://www.treadmillreviewsusa.com/horizon-fitness/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Why does this page not list Horizon models and prices?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Because we have not verified them. Treadmill specifications change between model years under unchanged product names, and a page asserting unverified motor ratings, deck sizes or warranty terms reads as authoritative while being wrong. The banner at the top lists exactly what is being confirmed before publication.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What should I check before buying any Horizon treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Seven things, in writing, for the exact model and model year: deck length and width, continuous-duty horsepower (not peak), roller diameter, assembled weight, weight capacity, what the console does with no subscription active, and the warranty terms — particularly the labour period and whether service is in-home.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is it better to buy last year's treadmill model?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Frequently yes. Annual refreshes in this category are overwhelmingly console and software changes while the frame, motor, deck and rollers carry over unchanged, so the outgoing model is often mechanically identical for several hundred dollars less. Ask the retailer what changed, and treat a vague answer as meaning the screen.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much does a treadmill subscription add to the cost?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "At around $39 a month it is roughly $470 a year and about $2,350 over five years — for most mid-market machines, more than the treadmill cost. Establish what the console does with nothing paid before comparing purchase prices, because two machines $500 apart can be $2,850 apart in reality.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What warranty terms actually matter on a treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The parts and labour periods, not the frame. Frames very rarely fail; motors and controller boards do, and labour is a large share of any repair. A five-year parts term with one year of labour is weaker than the headline suggests. Also check whether service is in-home, since returning a 250 lb machine is not a real remedy.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does the brand matter for treadmill maintenance?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Barely. The dominant failure mode is identical across manufacturers: belt-to-deck friction rises, the motor draws more current, and sustained draw destroys motors and boards. Lubricating every 40 to 50 hours addresses it on any machine — check the manual first, since some decks are pre-waxed and are ruined by silicone.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", name: "Morgan Reyes" },
+      datePublished: "2026-09-08",
+      dateModified: "2026-09-08",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-09-08",
+    modifiedTime: "2026-09-08",
+    author: "Morgan Reyes",
+    section: "Fitness Equipment",
+    tags: [
+      "horizon fitness treadmills",
+      "horizon treadmill",
+      "treadmill brands",
+      "horizon 7.4 at",
+      "brand guide",
+    ],
+  }}
+  jsonLd={schema}
+  noindex
+  stickyCta={{ text: "See What to Verify", link: "#what-to-verify" }}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-horizonfitness" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-horizonfitness)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Brand Guide
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated September 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          Horizon Fitness <span class="text-[#5AA9FF]">Treadmills</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          A brand guide built around what to verify rather than what to assume. The framework below applies to any Horizon machine; the model-specific figures are being confirmed before publication.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#what-to-verify" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            What to Verify
+          </a>
+          <a href="#reading-a-lineup" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            How to Read a Lineup
+          </a>
+        </div>
+      </div>
+    </div>
+
+      <!-- Editorial draft banner -->
+      <div class="max-w-3xl mx-auto px-4">
+        <div class="not-prose my-8 bg-amber-50 border-2 border-amber-300 rounded-2xl p-6">
+          <p class="text-xs font-black uppercase tracking-widest text-amber-800 mb-2">
+            Editorial draft — not yet published
+          </p>
+          <p class="text-sm text-gray-800 leading-relaxed m-0 mb-3">
+            The framing and analysis below are complete. The following need verified
+            manufacturer data before this page goes live, and nothing on this page should be
+            treated as factual until they are filled in:
+          </p>
+          <ul class="text-sm text-gray-800 leading-relaxed m-0 pl-5">
+            {DATA_PENDING.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
+          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">September 8, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="2.4k" />
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#reading-a-lineup" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. How to Read a Treadmill Lineup</a>
+          <a href="#what-to-verify" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The Seven Things to Verify Before Buying</a>
+          <a href="#subscription-question" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Subscription Question</a>
+          <a href="#warranty-structure" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Reading a Warranty Properly</a>
+          <a href="#cross-shopping" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. What to Cross-Shop Against</a>
+          <a href="#ownership" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. What Ownership Looks Like, Whatever You Buy</a>
+          <a href="#what-is-pending" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. What This Page Still Needs</a>
+          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. How to Use This Page Today</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          This guide is deliberately structured around questions rather than answers. Treadmill
+          brand pages that assert specifications they have not verified are worse than useless,
+          because they read as authoritative — so what follows is the framework we apply to any
+          Horizon machine, with the model-specific figures marked as pending.
+        </p>
+
+        <div id="reading-a-lineup" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. How to Read a Treadmill Lineup</h2>
+<p>
+            Treadmill model numbers are not designed to be informative to shoppers, and Horizon is
+            no exception. Before comparing any two machines in a lineup, establish three things.
+          </p>
+          <p>
+            <strong>What the number encodes.</strong> Most manufacturers use a series prefix and a
+            tier number, where the prefix indicates the product family and the number indicates
+            position within it. What that does not tell you is whether two machines share a frame,
+            a motor or a deck — which is the thing that actually determines how they compare.
+          </p>
+          <p>
+            <strong>Where the model-year boundary falls.</strong> Annual refreshes in this category
+            are overwhelmingly console and software changes, with frame, motor, deck and rollers
+            carried over unchanged. That makes the outgoing model year frequently the best value in
+            any lineup, and it makes "the latest model" a weak reason to pay more. Ask the retailer
+            explicitly what changed between years, and treat a vague answer as evidence that the
+            answer is the screen.
+          </p>
+          <p>
+            <strong>Which retailer-specific variants exist.</strong> The same chassis is often sold
+            under different model numbers at different retailers, occasionally with a genuine
+            specification difference and more often without. This is the single most common source
+            of confusion when comparing prices across sellers.
+          </p>
+        </div>
+
+        <div id="what-to-verify" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The Seven Things to Verify Before Buying</h2>
+<p>
+            These are the specifications that determine whether a machine suits you, listed in the
+            order we would establish them. Every one of them should come from the manufacturer or
+            the retailer in writing, for the exact model and model year you are buying.
+          </p>
+          <p>
+            <strong>One: deck length and width.</strong> Sixty inches is the running threshold for
+            anyone over about 5'8"; 55 is walking and light jogging. Ask for the usable flat deck
+            measurement rather than the belt figure, which runs one to two inches longer.
+          </p>
+          <p>
+            <strong>Two: continuous-duty horsepower.</strong> Not peak. If only a peak figure is
+            quoted, the continuous rating is unflattering.
+          </p>
+          <p>
+            <strong>Three: roller diameter.</strong> The least advertised and most predictive
+            longevity specification. Budget machines use 1.9 inches, good ones 2.5, commercial
+            3 or more.
+          </p>
+          <p>
+            <strong>Four: assembled weight.</strong> The best available proxy for frame rigidity,
+            which is the most immediately perceptible difference between machines.
+          </p>
+          <p>
+            <strong>Five: weight capacity</strong>, treated as 50 to 75 lbs lower than stated,
+            because it is a warranty boundary rather than a comfortable operating point.
+          </p>
+          <p>
+            <strong>Six: subscription position</strong> — specifically what the console does with
+            nothing paid, and whether automatic incline control sits behind the paywall.
+          </p>
+          <p>
+            <strong>Seven: warranty terms</strong>, especially the labour period and whether
+            service is in-home or return-to-base. Returning a 250 lb machine is not a real remedy.
+          </p>
+        </div>
+
+        <div id="subscription-question" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The Subscription Question</h2>
+<p>
+            This is the question we would settle first on any modern treadmill, because it changes
+            the cost of ownership more than any hardware difference.
+          </p>
+          <p>
+            A subscription at around $39 a month is roughly $2,350 over five years — for most
+            machines in the mid-market, more than the treadmill itself cost. Two machines that look
+            $500 apart on a comparison page can be $2,850 apart in reality.
+          </p>
+          <p>
+            There are three positions a manufacturer can take, and it is worth establishing which
+            applies to the specific model rather than to the brand, because it varies within
+            lineups. Some machines have no subscription at all. Some offer optional content while
+            retaining full manual speed and incline control unpaid. And some are
+            subscription-dependent, where the console does very little without a fee and you have
+            paid a premium for a screen you can no longer use.
+          </p>
+          <p>
+            Our <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">guide to subscription-free treadmills</a>
+            covers the five questions to ask a retailer, and what each answer means for the
+            five-year figure.
+          </p>
+        </div>
+
+        <div id="warranty-structure" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Reading a Warranty Properly</h2>
+<p>
+            Warranty terms are the most honest specification on any listing, because they are the
+            manufacturer stating in writing how long they expect their own components to last. They
+            are also routinely misread.
+          </p>
+          <p>
+            <strong>Frame warranties</strong> of ten years or lifetime look generous and cover the
+            component least likely to fail. A treadmill frame very rarely breaks.
+          </p>
+          <p>
+            <strong>Parts warranties</strong> cover what does fail — motors and controller boards,
+            which are the expensive components and the ones that friction destroys.
+          </p>
+          <p>
+            <strong>Labour warranties</strong> are the ones that matter most and are usually
+            shortest, often a single year. Labour is a large share of any repair, and a five-year
+            parts term with one year of labour is meaningfully weaker cover than the headline
+            suggests.
+          </p>
+          <p>
+            Two clauses are worth finding: whether service is in-home or return-to-base, and
+            whether documented maintenance is required. Some manufacturers can decline a motor
+            claim on a deck that was clearly never lubricated, which is another reason to keep to
+            the <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium">maintenance schedule</a>
+            and note the dates.
+          </p>
+        </div>
+
+        <div id="cross-shopping" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. What to Cross-Shop Against</h2>
+<p>
+            Any mid-market treadmill brand should be compared against the alternatives at the same
+            price, and the useful comparison is on the specifications above rather than on brand
+            reputation.
+          </p>
+          <p>
+            <strong>Against Sole</strong>, if the appeal is buying hardware without an ecosystem
+            attached. Sole's position is that machines run with no account and no fee, which makes
+            them the reference point for anyone comparing five-year costs. Our
+            <a href="/sole-fitness/" class="text-[#0F62FE] font-medium">Sole brand guide</a>
+            covers that lineup.
+          </p>
+          <p>
+            <strong>Against NordicTrack and ProForm</strong>, if guided content is genuinely
+            wanted. Both are built around a content ecosystem, and the honest comparison there is
+            subscription-inclusive. Our
+            <a href="/nordictrack/" class="text-[#0F62FE] font-medium">NordicTrack</a> and
+            <a href="/proform-treadmill/" class="text-[#0F62FE] font-medium">ProForm</a>
+            guides cover them.
+          </p>
+          <p>
+            <strong>Against the used market</strong>, which at this price band buys considerably
+            more hardware per dollar — a machine that cost twice as much three to five years ago.
+            Our <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium">new versus used comparison</a>
+            works through when that trade makes sense.
+          </p>
+        </div>
+
+        <div id="ownership" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. What Ownership Looks Like, Whatever You Buy</h2>
+<p>
+            The maintenance requirements of a treadmill are essentially brand-independent, and they
+            matter more to how long a machine lasts than the badge does.
+          </p>
+          <p>
+            The dominant failure mode across every manufacturer is the same: belt-to-deck friction
+            rises as the surface dries, the motor draws more current to hold speed, and sustained
+            current draw destroys motors and controller boards. Lubricating every 40 to 50 hours of
+            use addresses it directly, takes ten minutes, and roughly doubles a machine's life.
+          </p>
+          <p>
+            Check your manual for deck type before applying anything — some decks are pre-waxed and
+            are ruined by silicone. Our
+            <a href="/best-treadmill-lubricant/" class="text-[#0F62FE] font-medium">lubricant guide</a>
+            covers identifying which you have, and the
+            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance pillar</a>
+            covers the full schedule.
+          </p>
+          <p>
+            Expect a belt and deck refresh somewhere around year seven at $250 to $500, which is
+            normal wear rather than failure. Our
+            <a href="/treadmill-maintenance-cost/" class="text-[#0F62FE] font-medium">maintenance cost guide</a>
+            covers the whole ownership picture.
+          </p>
+        </div>
+
+        <div id="what-is-pending" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. What This Page Still Needs</h2>
+<p>
+            The banner at the top of this page lists what we are verifying before publishing model
+            recommendations. We want to set out plainly why those items are held back rather than
+            estimated.
+          </p>
+          <p>
+            Specifications in this category change between model years under unchanged product
+            names. Motor ratings, deck dimensions, weight capacities and warranty terms all move,
+            and a page asserting last year's figures for this year's machine is actively
+            misleading to someone about to spend a thousand dollars. Roller diameter in particular
+            is rarely published at all, which means an unverified figure is a guess presented as a
+            fact.
+          </p>
+          <p>
+            Subscription positions change too, and they change retroactively — a console that
+            worked fully unpaid at launch can be altered by a firmware update. That is precisely
+            the kind of claim that has to come from current manufacturer documentation rather than
+            from inference.
+          </p>
+          <p>
+            Until those are confirmed, this page is excluded from search and carries the draft
+            banner. In the meantime, the framework above is genuinely usable: take the seven
+            verification points to any retailer and the answers will tell you more than most brand
+            pages will.
+          </p>
+        </div>
+
+        <div id="verdict" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. How to Use This Page Today</h2>
+<p>
+            Take the <strong>seven verification points</strong> to the retailer and get the answers
+            in writing for the exact model and model year. Deck length and width, continuous-duty
+            horsepower, roller diameter, assembled weight, weight capacity, subscription position
+            and warranty terms.
+          </p>
+          <p>
+            <strong>Settle the subscription question before comparing prices</strong>, because it
+            changes five-year cost more than any hardware difference in this price band.
+          </p>
+          <p>
+            <strong>Ask what changed from last year's model</strong>, and if the answer is the
+            console, buy the outgoing one.
+          </p>
+          <p>
+            And whatever you buy,
+            <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium">lubricate it every 40 to 50 hours</a>.
+            That single habit affects lifespan more than the choice between any two machines at the
+            same price.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Why does this page not list Horizon models and prices?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Because we have not verified them. Treadmill specifications change between model years under unchanged product names, and a page asserting unverified motor ratings, deck sizes or warranty terms reads as authoritative while being wrong. The banner at the top lists exactly what is being confirmed before publication.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What should I check before buying any Horizon treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Seven things, in writing, for the exact model and model year: deck length and width, continuous-duty horsepower (not peak), roller diameter, assembled weight, weight capacity, what the console does with no subscription active, and the warranty terms — particularly the labour period and whether service is in-home.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is it better to buy last year's treadmill model?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Frequently yes. Annual refreshes in this category are overwhelmingly console and software changes while the frame, motor, deck and rollers carry over unchanged, so the outgoing model is often mechanically identical for several hundred dollars less. Ask the retailer what changed, and treat a vague answer as meaning the screen.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How much does a treadmill subscription add to the cost?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                At around $39 a month it is roughly $470 a year and about $2,350 over five years — for most mid-market machines, more than the treadmill cost. Establish what the console does with nothing paid before comparing purchase prices, because two machines $500 apart can be $2,850 apart in reality.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What warranty terms actually matter on a treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                The parts and labour periods, not the frame. Frames very rarely fail; motors and controller boards do, and labour is a large share of any repair. A five-year parts term with one year of labour is weaker than the headline suggests. Also check whether service is in-home, since returning a 250 lb machine is not a real remedy.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Does the brand matter for treadmill maintenance?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Barely. The dominant failure mode is identical across manufacturers: belt-to-deck friction rises, the motor draws more current, and sustained draw destroys motors and boards. Lubricating every 40 to 50 hours addresses it on any machine — check the manual first, since some decks are pre-waxed and are ruined by silicone.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying Within Any Brand Lineup</h2>
+          <p class="text-gray-700 leading-relaxed">These apply to any manufacturer, and they are the errors that a brand page asserting unverified specifications would encourage rather than prevent.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming the model number tells you what changed</h3>
+              <p class="text-gray-700 text-sm m-0">Series prefixes and tier numbers indicate position within a family, not whether two machines share a frame, motor or deck. Ask specifically which components differ between two models before paying for the higher number — it is often the console and very little else.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Paying for the current model year without asking what changed</h3>
+              <p class="text-gray-700 text-sm m-0">Annual refreshes are overwhelmingly console and software updates on carried-over hardware. That makes the outgoing model frequently the best value in any lineup. Ask the retailer directly what differs, and treat an evasive answer as confirmation that the difference is the screen.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing prices across retailers without checking the model variant</h3>
+              <p class="text-gray-700 text-sm m-0">The same chassis is often sold under different model numbers at different retailers, sometimes with a genuine specification difference and often without. This is the most common reason two apparently identical machines carry different prices, and it is resolved by comparing the actual specifications rather than the numbers.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Reading the frame warranty as the warranty</h3>
+              <p class="text-gray-700 text-sm m-0">Ten-year and lifetime frame cover protects the component least likely to fail. What matters is the parts term, the labour term — usually the shortest — and whether service is in-home or return-to-base. Shipping a 250 lb treadmill back to a manufacturer is not a remedy anyone actually uses.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Brand &amp; Buying Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/sole-fitness/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Cross-Shop</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Sole Fitness Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The subscription-free reference point for any mid-market comparison.</p>
+            </a>
+            <a href="/best-treadmills-without-subscriptions/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Cost</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills Without Subscriptions</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The five questions to ask, and what each answer costs over five years.</p>
+            </a>
+            <a href="/treadmill-buying-guide-2026/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Buying</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">The Complete Treadmill Buying Guide</p>
+              <p class="text-sm text-gray-500 leading-relaxed">What to settle before comparing any two machines.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            This page is an editorial draft. The <strong class="text-white">seven verification
+            points</strong> above are usable today — take them to any retailer and get the answers
+            in writing for the exact model and model year you are considering.
+          </p>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            Model-specific figures are held back deliberately rather than estimated, because
+            specifications in this category change between model years under unchanged names. Until
+            they are confirmed, the
+            <a href="/treadmill-buying-guide-2026/" class="text-[#5AA9FF] font-bold no-underline">buying guide</a>
+            and the <a href="/best-treadmills-without-subscriptions/" class="text-[#5AA9FF] font-bold no-underline">subscription guide</a>
+            will get you further than any brand page.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+</Layout>

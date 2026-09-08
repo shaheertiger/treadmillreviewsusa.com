@@ -18,12 +18,102 @@ Vercel's Production Branch should be `main`. `claude/seo-repo-structure-n1zh7s` 
 ```
 src/
   components/   SEO.astro, TrustBadge.astro, SocialProof.astro, AdUnit.astro, MobileNav.tsx
-  layouts/      Layout.astro (shared header/footer/ad slots)
-  data/         constants.ts (categories, brand colors, Amazon affiliate tag)
-  pages/        index.astro, best-of.astro, and long-form review pages
+  layouts/      Layout.astro (shared header/footer/ad slots), SectionHub.astro (section hubs)
+  data/         constants.ts (brand colors, Amazon tag), sections.ts (the site IA)
+  pages/        index.astro, best-of.astro, long-form article pages, and
+                <section>/index.astro for each of the nine section hubs
 scripts/
-  validate-word-count.js   enforces a 2,500-word minimum on review pages before build
+  lib/pages.mjs            recursive page walk + route/landing-page rules, shared by all validators
+  validate-word-count.js   enforces a 2,500-word minimum on article pages before build
+  validate-links.mjs       every internal link must resolve and carry a trailing slash
+  format-audit.mjs         every article page must carry the 13 structural elements
+  validate-ia.mjs          every article belongs to a hub; every hub matches sections.ts
+  build-articles.mjs       renders article pages from the content specs in src/content/articles/
 ```
+
+## Article pipeline
+
+Article pages carry 13 required structural elements with exact class strings, checked against
+page *source* by `scripts/format-audit.mjs`. Hand-copying ~300 lines of that markup per page is
+how drift gets in, so it lives once in `scripts/build-articles.mjs` and pages are rendered from
+content specs:
+
+```bash
+npm run articles                 # regenerate every page from src/content/articles/
+node scripts/build-articles.mjs best-treadmills-for-running   # or just one
+```
+
+Generated `.astro` files are committed and are what Astro builds. **Edit the spec and
+regenerate — do not edit a generated page**, since regeneration overwrites it.
+
+### Pages awaiting data
+
+A spec may declare `dataPending: ['...']` for a page whose framing is complete but whose
+product figures are not yet verified. Those pages:
+
+- render a prominent amber "Editorial draft — not yet published" banner listing exactly what is
+  outstanding,
+- are served `noindex`,
+- are excluded from the sitemap (`astro.config.mjs`) and from IndexNow submission,
+- are exempt from the 2,500-word minimum and from the hub-coverage requirement,
+- still have to pass the format audit and the link checker.
+
+`npm run validate:ia` lists them on every build, and fails if a page declares `DATA_PENDING`
+without being `noindex`. Removing the `dataPending` field re-imposes the word minimum and the
+hub-coverage requirement, so a page cannot quietly go live incomplete or orphaned.
+
+This exists because the site's positioning is honesty: a brand or comparison page asserting
+unverified motor ratings, deck dimensions or warranty terms reads as authoritative while being
+wrong, and fabricated `aggregateRating` in Product JSON-LD is a structured-data policy breach
+that risks a manual action. New pages therefore carry no `aggregateRating` at all.
+
+## Information architecture
+
+Nine section hubs sit above the article pages and group them by the decision a reader is
+making. **Articles keep their original flat URLs** — the hubs are a navigation and
+topical-authority layer, not a URL migration, so nothing was redirected and no existing
+ranking URL changed.
+
+| Hub | Groups | Covers |
+|---|---|---|
+| `/best/` | 4 | Use-case roundups — home, folding, walking, incline |
+| `/price/` | 3 | Budget tiers, premium, and spending less |
+| `/brands/` | 3 | Consumer, commercial, and cross-shopped alternatives |
+| `/reviews/` | 4 | Individual model reviews by brand |
+| `/compare/` | 1 | Head-to-head format and machine-type decisions |
+| `/guides/` | 4 | Buying guides and spec explainers |
+| `/problems/` | 4 | Fault diagnosis by symptom |
+| `/maintenance/` | 3 | The ownership schedule, lubrication, tension and tracking |
+| `/tools/` | 1 | Planned calculators — `noindex` until they exist |
+
+`src/data/sections.ts` is the single source of truth: it defines each hub's copy and the
+articles it links to, and it drives the hub pages, the header "Browse" menu, the footer
+section row, the `/best-of/` section grid and the sibling-hub grids. Each hub page is a
+six-line file handing its section to `src/layouts/SectionHub.astro`. Sitemap priority (0.9)
+is derived in `astro.config.mjs` from the subdirectories of `src/pages`, so it cannot drift.
+
+All 66 article pages are reachable from a hub, and `npm run validate:ia` fails the build if one
+is not. Each article sits in exactly one topical hub, with three deliberate exceptions:
+`/tools/` also points at `/home-treadmills/`, `/treadmill-dimensions-space-requirements/` and
+`/treadmill-electricity-usage/` as the interim answers to its three planned calculators. The
+validator prints those three so the list stays intentional.
+
+`/tools/` has no destinations of its own yet, so it renders `noindex` and is filtered out of the
+sitemap; clear both flags together once the calculators ship.
+
+### Not yet written
+
+The IA names eleven pages that do not exist yet. They are deliberately absent rather than
+stubbed — a hub linking to placeholder pages is worse than a hub that is honest about its size:
+
+- **Roundups**: `/best/running/`, `/best/apartments/`, `/best/heavy-users/`, `/price/under-500/`
+- **Brand hub**: `/brands/horizon/`
+- **Review**: `/reviews/sole-f80/`
+- **Comparisons**: `/compare/sole-f80-vs-f85/`, `/compare/nordictrack-1750-vs-2450/`
+- **Tools**: space calculator, electricity-cost calculator, treadmill selector
+
+Article pages nest exactly like flat ones (`src/pages/best/running.astro` → `/best/running/`)
+and are held to the same three build gates.
 
 ## Content
 
@@ -91,8 +181,14 @@ All outbound product links use Amazon search URLs tagged with the `sktiger-20` A
 npm install
 npm run dev       # http://localhost:3000
 npm run validate:words
-npm run build
+npm run build     # runs all three validators, then Astro
 ```
+
+A green build does not mean a page renders correctly — Tailwind breakpoints are viewport-based,
+so a wide element inside a narrow column still fires at large widths. After any layout change,
+load the page and compare `document.documentElement.scrollWidth` against `clientWidth` at
+390 / 768 / 1024 / 1280px. That check is what caught the header dropdown that had been giving
+every page a horizontal scrollbar.
 
 ## Notes
 

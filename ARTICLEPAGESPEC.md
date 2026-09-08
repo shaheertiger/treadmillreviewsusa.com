@@ -15,6 +15,7 @@ anything here is ambiguous, open those files and copy what they do.
 - **Astro** + **Tailwind**, React only for interactive islands. Deployed on Vercel.
 - **One file per URL.** `src/pages/<slug>.astro` → `https://www.treadmillreviewsusa.com/<slug>/`.
   There is no content collection and no markdown — every article is a hand-written `.astro` page.
+  Nested pages work the same way: `src/pages/best/running.astro` → `/best/running/`.
 - `trailingSlash: 'always'` in `astro.config.mjs`. Every internal link must end in `/`.
 - Site URL is `https://www.treadmillreviewsusa.com`.
 - Shared chrome (header, footer, mobile nav, ad slots, analytics) lives in
@@ -22,14 +23,18 @@ anything here is ambiguous, open those files and copy what they do.
 
 ## 2. The build gates — read this before writing anything
 
-`npm run build` runs three validators before Astro compiles. All three must pass or the
+`npm run build` runs four validators before Astro compiles. All four must pass or the
 deploy fails. They are the fastest way to check your work:
 
 | Command | Rule |
 |---|---|
-| `npm run validate:words` | **Every page needs ≥ 2,500 words.** Counted after stripping frontmatter, tags, class attributes and `{expressions}` — so only real prose counts. Excludes `index.astro`, `best-of.astro` and `contact-us.astro`. |
-| `npm run validate:links` | Every internal `href="/..."`, and every `url:`/`link:`/`href:` string in a data object, must resolve to a real `src/pages/<slug>.astro` **and** end with a trailing slash. Anchors travel with the link (`/slug/#anchor`); files under `public/` are exempt. |
-| `npm run validate:format` | Every article page must contain all 13 structural elements listed in §4. Implemented in `scripts/format-audit.mjs`; it prints exactly which pages are missing which elements. |
+| `npm run validate:words` | **Every page needs ≥ 2,500 words.** Counted after stripping frontmatter, tags, class attributes and `{expressions}` — so only real prose counts. Landing pages are exempt: `best-of.astro`, `contact-us.astro`, and any `index.astro` (the home page and every section hub). |
+| `npm run validate:links` | Every internal `href="/..."`, and every `url:`/`link:`/`href:` string in a data object, must resolve to a page under `src/pages/` **and** end with a trailing slash. Anchors travel with the link (`/slug/#anchor`); files under `public/` are exempt. It reads `src/pages` (recursively), `src/components`, `src/layouts` and `src/data`, so URLs in `sections.ts` are checked too. |
+| `npm run validate:format` | Every article page must contain all 13 structural elements listed in §4. Implemented in `scripts/format-audit.mjs`; it prints exactly which pages are missing which elements. Landing pages are exempt on the same rule as the word count. |
+| `npm run validate:ia` | Every article must be linked from at least one section hub, every section in `src/data/sections.ts` must have a hub page, and every hub page must have a manifest entry. This is what stops a new article becoming an orphan. |
+
+All four walk `src/pages` recursively via `scripts/lib/pages.mjs`, which also decides what
+counts as a landing page. A new article in a subdirectory is gated exactly like a root-level one.
 
 Run `npm run validate:format` after any structural edit. It is cheap and catches drift immediately.
 
@@ -233,13 +238,37 @@ Breadcrumb position 2 is always `/best-of/`; only the label changes — `Best Li
 
 ## 10. After the page exists
 
-1. `npm run build` — all three validators plus Astro.
-2. Add a card for it in **`src/pages/best-of.astro`** so it is reachable from the hub
-   (`{ title, description, badge, url: '/slug/' }`).
+1. `npm run build` — all four validators plus Astro.
+2. Add a card for it in **`src/data/sections.ts`**, under the group of the section it belongs
+   to (`{ title, description, badge, url: '/slug/' }`). That is what puts it on its section hub,
+   in the header "Browse" menu and in the footer. Add it to **`src/pages/best-of.astro`** too if
+   it belongs in the flat index.
 3. Optionally add the slug to a `PRIORITY_TIERS` entry in **`astro.config.mjs`** to raise its
    sitemap priority above the 0.5 default.
 4. Ship it. `.github/workflows/indexnow.yml` submits every page URL to IndexNow on each push
    to `main`; run `node scripts/indexnow-submit.js` by hand only if you need to re-submit.
+
+## 10a. The section hubs
+
+Nine hubs sit above the flat article URLs and group them by the decision a reader is making:
+`/best/`, `/price/`, `/brands/`, `/reviews/`, `/compare/`, `/guides/`, `/problems/`,
+`/maintenance/` and `/tools/`.
+
+- **Articles keep their flat URLs.** The hubs are a navigation and topical-authority layer, not
+  a migration. Nothing was redirected, so `/nordictrack-c-700-treadmill/` is still that page.
+- **`src/data/sections.ts` is the single source of truth.** It defines each hub's copy and the
+  grouped list of articles it links to. The hub pages themselves are six-line files that hand a
+  section to `src/layouts/SectionHub.astro`.
+- **Hubs are landing pages**, so they are exempt from the word-count and format gates. Their
+  intro copy is still real editorial — treat a thin hub as a bug.
+- **Sitemap priority 0.9**, derived in `astro.config.mjs` from the subdirectories of
+  `src/pages`, so the list cannot drift.
+- **`/tools/` is `noindex`** until the calculators exist, and is filtered out of the sitemap so
+  the two signals agree. Clear both flags together when it has real destinations.
+
+To add a section: add an entry to `SECTIONS`, create `src/pages/<slug>/index.astro` with the
+same six lines as its siblings, and rebuild. Nav, footer, sibling-hub grids and sitemap priority
+all follow automatically.
 
 ## 11. Mistakes that have actually happened here
 
@@ -255,6 +284,11 @@ Breadcrumb position 2 is always `/best-of/`; only the label changes — `Best Li
   copy is a duplicate.
 - **Linking without the trailing slash.** Instant build failure.
 - **A contents entry with no matching anchor.** Add `id="…"` and `scroll-mt-24` to the section.
+- **An absolutely-positioned dropdown centred under a right-hand nav item.** The header's Brands
+  menu was `left-1/2 -translate-x-1/2` on a `w-64` panel and hung 26px past the viewport at every
+  width, giving the whole site a horizontal scrollbar. Anchor menus near the right edge with
+  `right-0`. Nothing in the build catches this — only loading a page and comparing
+  `document.documentElement.scrollWidth` against `clientWidth` does.
 
 ## 12. Caveat worth knowing
 

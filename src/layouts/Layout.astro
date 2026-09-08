@@ -4,6 +4,7 @@ import SEO from "../components/SEO.astro";
 import MobileNav from "../components/MobileNav";
 import Analytics from "@vercel/analytics/astro";
 import AdUnit from "../components/AdUnit.astro";
+import { SECTIONS } from "../data/sections";
 
 interface Props {
   title?: string;
@@ -32,6 +33,10 @@ const {
   jsonLd,
   noindex,
 } = Astro.props;
+
+// Section hubs shown in navigation. Hubs still waiting on their own content
+// are excluded here as well as from the sitemap.
+const navSections = SECTIONS.filter((section) => !section.noindex);
 ---
 
 <!doctype html>
@@ -79,12 +84,57 @@ const {
             </a>
 
             <!-- Desktop Nav -->
-            <nav class="hidden md:flex space-x-8 items-center">
+            <nav class="hidden md:flex space-x-6 items-center">
               <a
                 href="/"
                 class="text-gray-600 hover:text-[#0F62FE] font-medium no-underline"
                 >Home</a
               >
+
+              <!-- Section hubs dropdown -->
+              <div class="relative group">
+                <button
+                  class="flex items-center gap-1 text-gray-600 hover:text-[#0F62FE] font-medium cursor-pointer bg-transparent border-0 p-0"
+                >
+                  Browse
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="transition-transform group-hover:rotate-180"
+                    ><path d="M6 9l6 6 6-6"></path></svg
+                  >
+                </button>
+                <div
+                  class="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[30rem] bg-white border border-gray-100 rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
+                >
+                  <div class="p-2 grid grid-cols-2 gap-1">
+                    {
+                      navSections.map((section) => (
+                        <a
+                          href={`/${section.slug}/`}
+                          class="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 no-underline group/item transition-colors"
+                        >
+                          <span class="text-xl shrink-0 mt-0.5" aria-hidden="true">{section.icon}</span>
+                          <div>
+                            <p class="text-sm font-bold text-gray-900 group-hover/item:text-[#0F62FE]">
+                              {section.name}
+                            </p>
+                            <p class="text-xs text-gray-400 mt-0.5">{section.tagline}</p>
+                          </div>
+                        </a>
+                      ))
+                    }
+                  </div>
+                </div>
+              </div>
+
               <a
                 href="/best-of/"
                 class="text-gray-600 hover:text-[#0F62FE] font-medium no-underline"
@@ -227,7 +277,7 @@ const {
                   >
                 </button>
                 <div
-                  class="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-64 bg-white border border-gray-100 rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
+                  class="absolute top-full right-0 mt-3 w-64 bg-white border border-gray-100 rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
                 >
                   <div class="p-2">
                     <a href="/nordictrack/" class="block p-3 rounded-xl hover:bg-gray-50 no-underline text-sm font-bold text-gray-900 hover:text-[#0F62FE]">NordicTrack</a>
@@ -314,6 +364,23 @@ const {
         class="bg-gray-50 border-t border-gray-200 pt-16 pb-24 md:pb-16 mt-20"
       >
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="pb-12 mb-12 border-b border-gray-200">
+            <h3 class="font-bold mb-4">Browse by section</h3>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              {
+                navSections.map((section) => (
+                  <a
+                    href={`/${section.slug}/`}
+                    class="flex items-center gap-2 bg-white border border-gray-200 rounded-xl px-4 py-3 no-underline hover:border-[#0F62FE] hover:text-[#0F62FE] text-gray-600 text-sm font-bold transition-colors"
+                  >
+                    <span aria-hidden="true">{section.icon}</span>
+                    {section.name}
+                  </a>
+                ))
+              }
+            </div>
+          </div>
+
           <div class="grid grid-cols-1 md:grid-cols-5 gap-12">
             <div class="col-span-1 md:col-span-2">
               <h2 class="text-xl font-bold mb-4">Treadmill Reviews USA</h2>

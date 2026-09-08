@@ -1,5 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { SECTIONS } from '../data/sections';
+
+const navSections = SECTIONS.filter((section) => !section.noindex);
 
 const categories = [
   {
@@ -143,6 +146,22 @@ const categories = [
       <p class="text-lg text-gray-600 leading-relaxed">
         Every buying guide, brand guide, and model review we've published, organized by category. Built from hands-on testing, not spec-sheet guessing.
       </p>
+    </div>
+
+    <div class="mb-16">
+      <h2 class="text-2xl font-black text-gray-900 mb-2 text-center">Browse by section</h2>
+      <p class="text-gray-500 text-center mb-6">
+        Every guide below also sits in one of these sections, grouped by the decision it helps you make.
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {navSections.map(section => (
+          <a href={`/${section.slug}/`} class="bg-gray-50 border border-gray-100 rounded-2xl p-5 hover:bg-white hover:shadow-lg hover:border-[#0F62FE] transition-all no-underline block group">
+            <span class="text-2xl" aria-hidden="true">{section.icon}</span>
+            <h3 class="text-base font-black text-gray-900 group-hover:text-[#0F62FE] mt-3 mb-1">{section.name}</h3>
+            <p class="text-gray-500 text-xs leading-relaxed">{section.tagline}</p>
+          </a>
+        ))}
+      </div>
     </div>
 
     <div class="flex flex-wrap justify-center gap-2 mb-16">
