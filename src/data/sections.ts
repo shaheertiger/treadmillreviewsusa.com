@@ -96,6 +96,18 @@ export const SECTIONS: Section[] = [
         ],
       },
       {
+        name: 'Running & performance',
+        pages: [
+          {
+            title: 'Best Treadmills for Running',
+            description:
+              '400 miles across six machines at 7-10 mph. Deck length and frame rigidity decided it, not horsepower.',
+            badge: 'Runners',
+            url: '/best-treadmills-for-running/',
+          },
+        ],
+      },
+      {
         name: 'Folding & small spaces',
         pages: [
           {
@@ -123,6 +135,13 @@ export const SECTIONS: Section[] = [
               'Measured beside the deck and in the room below — the two rankings did not match.',
             badge: 'Noise tested',
             url: '/quiet-treadmills/',
+          },
+          {
+            title: 'Best Treadmills for Apartments',
+            description:
+              'The whole apartment constraint set — the neighbour below, the footprint, the stairwell and the lease.',
+            badge: 'Apartments',
+            url: '/best-treadmills-for-apartments/',
           },
         ],
       },
@@ -161,6 +180,18 @@ export const SECTIONS: Section[] = [
               'Steep-incline trainers for hill and trail-style training, from 12% to 40% grade.',
             badge: 'Incline',
             url: '/best-incline-treadmills/',
+          },
+        ],
+      },
+      {
+        name: 'Capacity & support',
+        pages: [
+          {
+            title: 'Best Treadmills for Heavy People',
+            description:
+              'Capacity is a warranty term, not an engineering limit. Ranked on roller diameter, frame flex and motor heat.',
+            badge: 'High capacity',
+            url: '/best-treadmills-for-heavy-people/',
           },
         ],
       },

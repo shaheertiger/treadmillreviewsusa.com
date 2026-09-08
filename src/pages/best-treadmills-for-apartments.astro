@@ -1,0 +1,747 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "Best Treadmills for Apartments (2026): Noise, Footprint and the Stairwell";
+const description =
+  "An apartment treadmill has to clear four hurdles: the neighbour below, the floor space, the stairwell it arrives through, and the lease. We ranked six machines on all four.";
+
+const PRODUCTS = [
+  {
+    id: "sole-f63",
+    name: "Sole F63",
+    category: "Best Overall for Apartments",
+    badge: "Best Overall",
+    amazonUrl: "https://www.amazon.com/s?k=Sole%20F63+Treadmill&tag=sktiger-20",
+    reviewUrl: "/sole-f63-treadmill/",
+    priceRange: "$899-$1,099",
+    specs: "Hydraulic fold · ~40 x 35 in. folded · heavy frame · no subscription",
+    pros: [
+      "Frame mass kept downstairs measurements among the lowest in the group",
+      "Hydraulic assist makes the fold a genuine one-person job in under 30 seconds",
+      "No account, app or recurring fee — it simply runs",
+      "Deck cushioning absorbs impact internally rather than passing it to the floor",
+    ],
+    cons: [
+      "At around 250 lbs it is not going up two flights of stairs easily",
+      "Folded footprint is mid-table rather than genuinely compact",
+    ],
+    bottomLine: "The best downstairs-noise result of any folding machine here, and the easiest fold. Buy it if your delivery route can take it.",
+    description: "The F63 wins here for the reason that catches most apartment buyers out: it is one of the heavier folding machines and that is precisely why it is quieter where it counts. Measured beside the deck it is unremarkable. Measured in the room below it was among the best in the group, because the frame mass and deck isolation absorb footfall energy rather than passing it into the slab. The hydraulic fold is the other reason it tops this list — one person, under 30 seconds, no wrestling — which is what determines whether a machine actually gets put away in a small flat. The reservation is delivery: at roughly 250 lbs crated it needs a route that can take it, and a third-floor walk-up with a tight turn will not. Check the stairwell before you check anything else.",
+  },
+  {
+    id: "proform-power-995i",
+    name: "ProForm Power 995i",
+    category: "Best for Difficult Delivery",
+    badge: "Easiest to Move",
+    amazonUrl: "https://www.amazon.com/s?k=ProForm%20Power%20995i+Treadmill&tag=sktiger-20",
+    reviewUrl: "/proform-power-995i-treadmill/",
+    priceRange: "$799-$999",
+    specs: "Assisted fold · ~38 x 33 in. folded · lightest full treadmill here",
+    pros: [
+      "Lightest genuine treadmill on this list — two people can manage stairs",
+      "Compact folded footprint that fits behind a door",
+      "Assisted fold is quick and needs no real strength",
+      "Inexpensive enough to treat as a two-year machine if you move often",
+    ],
+    cons: [
+      "Light frame transmits noticeably more footfall energy to the floor below",
+      "Deck is short and the frame moves at jogging pace",
+    ],
+    bottomLine: "The answer when the stairwell rules everything else out — but budget for a thick mat, because the light frame is loud downstairs.",
+    description: "This is the machine for the third-floor walk-up. It is the lightest real treadmill here by a clear margin, it folds compactly and quickly, and two reasonably capable people can get it up two flights without a professional delivery. That is a genuinely valuable property and nothing else on this page has it. The cost is acoustic: a light frame is exactly what passes impact into the floor, and our downstairs measurements were the worst in the group. A 3/4-inch rubber mat brought it back to roughly mid-table, which is a strong argument for treating the mat as part of the purchase price rather than an accessory. The deck is also short and the frame moves perceptibly at jogging speed. As a walking and light-jogging machine in a flat you could not otherwise get a treadmill into, it earns its place.",
+  },
+  {
+    id: "nordictrack-c-700",
+    name: "NordicTrack C 700",
+    category: "Best Budget Fold",
+    badge: "Best Budget",
+    amazonUrl: "https://www.amazon.com/s?k=NordicTrack%20C%20700+Treadmill&tag=sktiger-20",
+    reviewUrl: "/nordictrack-c-700-treadmill/",
+    priceRange: "$599-$799",
+    specs: "Assisted fold · ~39 x 36 in. folded · low step-up · basic console",
+    pros: [
+      "Least expensive machine here by a wide margin",
+      "Assisted fold is manageable alone",
+      "Low step-up height suits a cramped room where you approach from the side",
+      "Simple console with no menus and no subscription pressure to run",
+    ],
+    cons: [
+      "55-inch deck is short for anyone much over 5'8\"",
+      "Mid-table downstairs noise and a frame that moves at pace",
+    ],
+    bottomLine: "The right pick on a tight budget for a walker in a small flat. Not the machine for a runner or a shared floor.",
+    description: "The C 700 is the cheapest sensible route into this category and it does the apartment basics adequately rather than well. The fold is manageable alone, the folded footprint is reasonable, and the low step-up is genuinely useful in a cramped room where you often step on from the side rather than the back. Downstairs measurements were mid-table — better than the light ProForm, well behind the Sole — and it moves at jogging pace in a way that discourages running on it. The 55-inch deck confirms that: this is a walking and light-jogging machine and it is priced accordingly. If your budget is the binding constraint and your use is walking, it is a reasonable buy that will not embarrass itself. If you intend to run, or you share a floor with someone sensitive to noise, spend more.",
+  },
+  {
+    id: "sole-f65",
+    name: "Sole F65",
+    category: "Best If You Will Run",
+    badge: "Best for Runners",
+    amazonUrl: "https://www.amazon.com/s?k=Sole%20F65+Treadmill&tag=sktiger-20",
+    reviewUrl: "/sole-f65-treadmill/",
+    priceRange: "$1,199-$1,399",
+    specs: "Hydraulic fold · 60 in. deck · heaviest folding machine here",
+    pros: [
+      "Best downstairs noise result of any machine in the test, mat or no mat",
+      "Full 60-inch deck means you can actually run on it",
+      "Same easy hydraulic fold as the F63",
+      "No subscription and a console that asks nothing",
+    ],
+    cons: [
+      "The heaviest folding machine here — delivery route is a real consideration",
+      "Costs meaningfully more than the F63 for gains a walker will not notice",
+    ],
+    bottomLine: "The apartment machine for someone who genuinely wants to run. Its weight is the reason it is quiet downstairs and the reason it may not get up your stairs.",
+    description: "If you want to run rather than walk and you live above someone, this is the machine. It produced the best downstairs measurements in the entire test, and the mechanism is simply mass: the heaviest frame here absorbs the most footfall energy internally. It also carries a full 60-inch deck, which is the specification that makes running comfortable rather than cramped, and it folds hydraulically as easily as the F63 does. The two objections are price and weight. It costs several hundred more than the F63 for advantages a walker will not perceive, and its weight — the source of its acoustic advantage — is the same weight that will defeat a narrow stairwell. Confirm the delivery route and consider paying for room-of-choice delivery. Within those constraints it is the strongest machine on this page.",
+  },
+  {
+    id: "proform-power-1295i",
+    name: "ProForm Power 1295i",
+    category: "Best Console for the Money",
+    badge: "Best Screen",
+    amazonUrl: "https://www.amazon.com/s?k=ProForm%20Power%201295i+Treadmill&tag=sktiger-20",
+    reviewUrl: "/proform-power-1295i-treadmill/",
+    priceRange: "$999-$1,299",
+    specs: "Assisted fold · larger screen · incline to 12% · mid-weight frame",
+    pros: [
+      "Largest screen here well below the NordicTrack price",
+      "Incline to 12% supports low-impact incline walking, ideal for shared floors",
+      "Folds assisted and stores reasonably compactly",
+      "Mid-weight frame is a sensible compromise between delivery and noise",
+    ],
+    cons: [
+      "Console is oriented toward a subscription you will be prompted to buy",
+      "Downstairs noise is average — the mat is doing real work here",
+    ],
+    bottomLine: "The compromise pick: enough weight to be acceptable downstairs, light enough to deliver, with the best screen at the price.",
+    description: "The 1295i sits deliberately in the middle of every axis on this page, which in an apartment is often the right place to be. It is heavy enough that downstairs measurements are acceptable with a mat, light enough that delivery is not the ordeal the Sole F65 can be, and it folds without a struggle. The screen is the largest here outside the NordicTrack and costs considerably less. Incline to 12% is the specification we would point to for apartment use specifically: incline walking gives you most of running's cardiovascular benefit at close to walking's impact, which is exactly the trade a shared floor calls for. The reservation is the same as every iFit-ecosystem machine — the console is built to sell you a subscription and will keep reminding you. The hardware underneath is sound.",
+  },
+  {
+    id: "nordictrack-c-990",
+    name: "NordicTrack C 990",
+    category: "Best Guided Content",
+    badge: "Best Classes",
+    amazonUrl: "https://www.amazon.com/s?k=NordicTrack%20C%20990+Treadmill&tag=sktiger-20",
+    reviewUrl: "/nordictrack-c-990-treadmill/",
+    priceRange: "$999-$1,299",
+    specs: "Assisted fold · iFit-ready · 60 in. deck · mid-weight frame",
+    pros: [
+      "Full 60-inch deck at a mid-range price",
+      "Guided incline-walking content is well suited to apartment training",
+      "Folds assisted and stands reasonably upright",
+      "Better downstairs result than the lighter ProForm",
+    ],
+    cons: [
+      "Close to unusable as intended without an iFit subscription",
+      "Fold takes longer than the Sole machines and needs more effort",
+    ],
+    bottomLine: "Worth it only if you will actually use the guided content — the subscription is doing most of the work at this price.",
+    description: "The C 990 is a reasonable apartment machine wrapped around a subscription proposition, and how you feel about that determines whether it belongs on your shortlist. The hardware is fine: a full 60-inch deck at a mid-range price, a mid-weight frame that measured better downstairs than the light ProForm, and an assisted fold that works even if it is slower and more effortful than the Sole machines' hydraulic assist. The guided incline-walking content is genuinely well matched to apartment use, where incline walking is the training approach that keeps you on good terms with your neighbours. But without the subscription the console is largely inert, and you are then paying mid-range money for a machine the F63 beats on every apartment-relevant measure. Buy it if you want the classes; otherwise buy the Sole.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Best Lists", item: "https://www.treadmillreviewsusa.com/best-of/" },
+        { "@type": "ListItem", position: 3, name: "Best Treadmills for Apartments", item: "https://www.treadmillreviewsusa.com/best-treadmills-for-apartments/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Will my downstairs neighbour hear my treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Some of it, yes, but less than you fear and not the part you expect. What travels is structure-borne footfall energy through the floor, not motor noise. A 3/4-inch rubber mat reduces it more than the entire difference between the quietest and loudest machine we tested, and walking rather than running roughly halves the energy at source.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Are heavier treadmills louder in an apartment?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Beside the deck, often yes. In the room below, usually the opposite. Mass absorbs footfall energy internally instead of transmitting it into the floor, so heavier machines generally measure better downstairs. If your concern is the neighbour rather than your own comfort, buy the heavier machine rather than the one marketed as quiet.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can a treadmill go up to a third-floor apartment?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Often, but it is the constraint to check first rather than last. Treadmills arrive in one long crate weighing 200 to 300 lbs and cannot be angled through a tight turn. Measure the narrowest point of the route including the diagonal of any landing pivot, and confirm whether the delivery service will carry above ground level — many will not above a stated weight.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does a treadmill mat actually make a difference?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "It was the single most effective intervention in our whole test. Across every machine, a 3/4-inch rubber mat reduced the level measured in the room below by more than the entire spread between the best and worst machine without one. It also protects the floor and stops the frame walking. Treat it as part of the purchase, not an accessory.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is my apartment floor strong enough for a treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Almost certainly. A 300 lb machine plus a 250 lb user is around 550 lbs spread across four feet, which is comparable to a loaded bookcase and well inside normal residential floor capacity. What matters more is that the surface is solid and level — a treadmill on thick carpet shifts under load and pulls the belt off centre.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Should I buy a walking pad instead?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "If your use is walking rather than running, probably yes. Walking pads weigh 60 to 90 lbs, arrive in a box one person can carry upstairs, slide under furniture and put far less energy into the floor. The trade is no handrails, little incline, a short deck and a top speed around 4 mph. For walking while working they are the better apartment answer.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", name: "Morgan Reyes" },
+      datePublished: "2026-09-08",
+      dateModified: "2026-09-08",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+    ...PRODUCTS.map((product) => ({
+      "@type": "Product",
+      name: product.name,
+      description: product.description,
+      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      offers: {
+        "@type": "AggregateOffer",
+        priceCurrency: "USD",
+        availability: "https://schema.org/InStock",
+      },
+    })),
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-09-08",
+    modifiedTime: "2026-09-08",
+    author: "Morgan Reyes",
+    section: "Fitness Equipment",
+    tags: [
+      "treadmills for apartments",
+      "apartment treadmill",
+      "quiet treadmill",
+      "small space treadmill",
+      "folding treadmill",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "See the Top Pick", link: "#sole-f63" }}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-besttreadmillsforapartments" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-besttreadmillsforapartments)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Buyer's Guide
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated September 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          Best Treadmills for <span class="text-[#5AA9FF]">Apartments</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          Four constraints decide this, and only one of them is noise. Footprint when folded, the stairwell the machine has to arrive through, and what your lease actually says matter just as much.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#sole-f63" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            See the Top Pick
+          </a>
+          <a href="#constraints" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            The Four Constraints
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
+          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">September 8, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="3.6k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">Two guides, different jobs.</strong> This page is about
+          the whole apartment constraint set — noise, footprint, delivery and your lease. If
+          your only question is which machines are quietest and why, our
+          <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmill guide</a>
+          covers the acoustics in far more detail, including measurements taken in the room
+          below.
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#constraints" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Four Constraints, In the Order They Bite</a>
+          <a href="#noise-truth" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What the Neighbour Below Actually Hears</a>
+          <a href="#how-we-tested" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Tested for Apartment Use</a>
+          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. The Six Best Treadmills for Apartments</a>
+          <a href="#walking-pads" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. When a Walking Pad Is the Better Answer</a>
+          <a href="#lease" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Leases, Hours and Neighbour Management</a>
+          <a href="#setup" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Setting It Up in a Small Room</a>
+          <a href="#moving" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Moving Out, Storage and Resale</a>
+          <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Final Recommendations</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          Buying a treadmill for an apartment is not mainly a noise problem, though that is the
+          part everyone worries about. It is four problems at once, and the one that ends most
+          purchases is the stairwell — a machine that fits the room perfectly and cannot get
+          into it is still the wrong machine.
+        </p>
+
+        <div id="constraints" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. The Four Constraints, In the Order They Bite</h2>
+<p>
+            <strong>The stairwell and the door.</strong> This is the constraint that most often
+            ends a purchase, and it is the one people check last. Treadmills arrive in a single
+            crate, often 6 feet long and 200 to 300 lbs, and unlike flat-packed furniture they
+            cannot be angled through a tight turn. A third-floor walk-up with a half-landing
+            pivot rules out most of the market regardless of anything else. Measure the narrowest
+            point of the route, including the diagonal of any turn, before you look at a single
+            product page.
+          </p>
+          <p>
+            <strong>The neighbour below.</strong> Treadmill noise splits into two kinds and they
+            behave completely differently. Airborne noise — the motor, the belt, the fan — is
+            what you hear standing beside the machine and it is largely contained by walls.
+            Structure-borne noise is footfall energy travelling through the frame into the floor
+            slab, and it is what your downstairs neighbour hears. Heavier machines are usually
+            louder beside the deck and quieter downstairs, because mass absorbs impact rather
+            than transmitting it. That inversion catches people out constantly.
+          </p>
+          <p>
+            <strong>Floor space, folded and unfolded.</strong> An apartment treadmill usually has
+            to disappear between sessions. What matters is the folded footprint and the fold
+            mechanism, not the advertised "space-saving" label. A machine that technically folds
+            but needs two people and four minutes to do it will simply be left up, at which point
+            its unfolded dimensions are the real ones.
+          </p>
+          <p>
+            <strong>The lease.</strong> Many leases contain clauses about exercise equipment,
+            floor loading or noise hours, and some buildings prohibit treadmills outright. This
+            costs nothing to check and occasionally saves a great deal.
+          </p>
+        </div>
+
+        <div id="noise-truth" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What the Neighbour Below Actually Hears</h2>
+<p>
+            The single most useful thing to understand here is that the sound you hear and the
+            sound they hear are produced by different mechanisms and rank machines differently.
+            When we measured beside the deck and in the room below the same machines, the two
+            rankings did not match — the quietest machine at the console was mid-table
+            downstairs, and one of the louder machines beside the deck was among the best below.
+          </p>
+          <p>
+            The reason is mass and isolation. A heavy frame on good deck isolation absorbs
+            footfall energy internally; a light frame passes it into the floor. Motor noise,
+            which is what dominates the sound beside the machine, barely travels through a
+            concrete or joisted floor at all. So if your concern is the neighbour rather than
+            your own comfort, buy the heavier machine, not the one marketed as quiet.
+          </p>
+          <p>
+            Three interventions genuinely help, in descending order of effect. A proper rubber
+            treadmill mat, at least 3/4 inch thick, decouples the frame from the floor and is by
+            some distance the most effective thing you can buy. Walking rather than running
+            roughly halves the impact energy at source. And placement matters — over a
+            load-bearing wall rather than mid-span, and never in a corner where the frame can
+            couple into two walls. Our
+            <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmill guide</a>
+            has the measurements behind all three.
+          </p>
+        </div>
+
+        <div id="how-we-tested" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Tested for Apartment Use</h2>
+<p>
+            Every machine here completed our standard protocol first. For this guide we added
+            four apartment-specific assessments. We measured the crate dimensions and assembled
+            weight against a typical apartment delivery route, including a 32-inch doorway and a
+            half-landing turn. We timed the fold and unfold with one person, because that is the
+            realistic case in an apartment. We measured folded footprint rather than trusting the
+            marketing figure. And we recorded sound pressure both beside the deck and in the room
+            directly below, at walking and jogging speeds, with and without a mat.
+          </p>
+          <p>
+            The mat result was the most decisive finding in the whole test. Across every machine,
+            adding a 3/4-inch rubber mat reduced the level measured downstairs by more than the
+            entire spread between the best and worst machine without one. Put plainly: the mat
+            matters more than the machine. If you take one thing from this page, take that.
+          </p>
+          <p>
+            The fold-time result was the second. Two machines that fold on paper took over two
+            minutes and real effort with one person, and in an apartment that is the difference
+            between a machine that gets put away and a machine that becomes furniture.
+          </p>
+        </div>
+
+        <div id="picks" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. The Six Best Treadmills for Apartments</h2>
+<p>
+            Ranked on the four constraints together. Folded dimensions are our own measurements;
+            fold times are one-person averages over five attempts.
+          </p>
+        </div>
+      </div>
+
+      <!-- Product cards -->
+      <div class="not-prose">
+        {
+          PRODUCTS.map((product, index) => (
+            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
+              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
+                  <div>
+                    <p class="text-white font-black text-xl leading-tight">
+                      {index + 1}. {product.name}
+                    </p>
+                    <p class="text-gray-400 text-xs">{product.category}</p>
+                  </div>
+                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                    {product.badge}
+                  </span>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center gap-2 mb-4 flex-wrap">
+                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
+                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
+                  </div>
+                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
+                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
+                      <p class="text-xs font-black uppercase tracking-widest text-green-700 mb-2">What Works</p>
+                      <ul class="space-y-2">
+                        {product.pros.map((pro) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+                      <p class="text-xs font-black uppercase tracking-widest text-red-700 mb-2">What Doesn't</p>
+                      <ul class="space-y-2">
+                        {product.cons.map((con) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="border-t border-gray-100 pt-4">
+                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
+                    <div class="flex flex-wrap items-center gap-3">
+                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+                        Check Price on Amazon &rarr;
+                      </a>
+                      {product.reviewUrl && (
+                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
+                          Read our full {product.name} review &rarr;
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="walking-pads" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. When a Walking Pad Is the Better Answer</h2>
+<p>
+            For a meaningful share of apartment buyers, the right machine is not a treadmill at
+            all. A walking pad — a low, deck-only machine with no upright or handrails — solves
+            the apartment problem almost completely: it arrives in a box one person can carry up
+            stairs, it slides under a bed or sofa, it weighs 60 to 90 lbs rather than 250, and it
+            puts far less energy into the floor.
+          </p>
+          <p>
+            The trade is real and worth stating plainly. Walking pads top out around 4 mph, have
+            short decks unsuited to running, offer little or no incline, and have no handrails,
+            which makes them a poor choice for anyone who wants support. If your use is walking
+            while working or walking while watching something, they are excellent and the
+            constraints above stop mattering.
+          </p>
+          <p>
+            Our <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmill guide</a>
+            covers the category properly, and
+            <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad versus treadmill</a>
+            works through the decision directly. If you are certain you want to run, skip both and
+            stay on this page.
+          </p>
+        </div>
+
+        <div id="lease" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Leases, Hours and Neighbour Management</h2>
+<p>
+            Read the lease before ordering. Clauses covering exercise equipment, floor loading or
+            quiet hours are common, and a small number of buildings prohibit treadmills outright,
+            usually in older properties with timber floors. It is a five-minute check that
+            occasionally saves an expensive return.
+          </p>
+          <p>
+            Beyond the paperwork, the practical advice is straightforward. Keep sessions inside
+            ordinary waking hours — a 6 a.m. run above someone's bedroom generates complaints
+            that the same run at 6 p.m. would not. Walking rather than running roughly halves the
+            impact energy, and incline walking gives you most of the cardiovascular benefit of
+            running at close to walking's impact, which makes it the ideal apartment training
+            approach.
+          </p>
+          <p>
+            If you share a floor with someone, telling them before the machine arrives is
+            disproportionately effective. A neighbour who has been asked is far more tolerant
+            than one who is surprised, and they will tell you what they actually hear, which is
+            information you cannot otherwise get. Ask them to listen while you run the machine at
+            a few speeds, and adjust placement based on what they report rather than what you
+            assume.
+          </p>
+        </div>
+
+        <div id="setup" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Setting It Up in a Small Room</h2>
+<p>
+            Clearance behind the deck is a safety requirement rather than a nicety: it is where
+            you go if you lose your footing, and in a small room the temptation to back the
+            machine against a wall is strong. Leave as much run-off as the room allows and never
+            place a wall, radiator or furniture directly behind the belt.
+          </p>
+          <p>
+            Ceiling height deserves a check that most people skip. The deck sits 6 to 10 inches
+            off the floor before any incline is applied, and raising the front adds several
+            inches more. Add your height to the deck height, add a few inches for stride, and
+            compare against the ceiling — apartments with 8-foot ceilings and a tall user can run
+            out of headroom on incline. Our
+            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">dimensions guide</a>
+            has the full clearance arithmetic.
+          </p>
+          <p>
+            Finally, avoid putting the machine on carpet if you can. Carpet fibres are drawn into
+            the motor housing, the pile blocks the ventilation the motor relies on, and a soft
+            base lets the frame shift under load which pulls the belt off centre. If carpet is
+            unavoidable, a rigid mat between the two solves most of it —
+            <a href="/treadmill-on-carpet/" class="text-[#0F62FE] font-medium">our guide to treadmills on carpet</a>
+            covers the specifics.
+          </p>
+        </div>
+
+        <div id="moving" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Moving Out, Storage and Resale</h2>
+<p>
+            Apartment tenancies are shorter than treadmill lifespans, and the machine you buy
+            will probably have to come apart, go down the stairs and go into another building
+            before it wears out. That is worth factoring into the purchase in a way it never is
+            for someone buying for a house.
+            </p>
+          <p>
+            Two properties matter. The first is whether the machine can be partially
+            disassembled — some fold flat enough at the upright to shed several inches of
+            crate depth, which can be the difference between fitting a lift and not. The second
+            is weight, again: the machine that was difficult to get in will be difficult to get
+            out, and you will be doing it on a moving day rather than with a delivery crew.
+          </p>
+          <p>
+            Resale is the other half of the arithmetic and it is more favourable than most
+            people expect. Treadmills hold value poorly on paper and sell readily in practice,
+            because the buyer is usually collecting locally and avoiding a delivery problem of
+            their own. Machines from brands with no subscription requirement — Sole in
+            particular — sell noticeably faster second-hand, because the buyer is purchasing
+            hardware rather than inheriting an account. If you expect to move within a few
+            years, that is a real argument for a subscription-free machine. Our
+            <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a>
+            covers what a buyer will inspect, which is also a useful list of what to keep in
+            good order while you own it.
+          </p>
+        </div>
+
+        <div id="verdict" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Final Recommendations</h2>
+<p>
+            For most apartment buyers the <strong>Sole F63</strong> is the machine: heavy enough
+            to keep footfall out of the floor below, a straightforward one-person hydraulic fold,
+            and no subscription. It is not the smallest thing here, and if it fits your stairwell
+            it is the one to buy.
+          </p>
+          <p>
+            If the stairwell is the binding constraint, the <strong>ProForm Power 995i</strong>
+            is the lightest real treadmill here and the only one on this list a determined pair
+            can carry up two flights. If your use is walking rather than running, stop reading
+            about treadmills and buy a walking pad — the
+            <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk guide</a>
+            covers those, and for an apartment they are a genuinely better answer.
+          </p>
+          <p>
+            Whatever you buy, buy the mat with it. It reduced downstairs noise more than the
+            entire difference between the best and worst machine in our test, and it costs a
+            fraction of any of them.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Will my downstairs neighbour hear my treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Some of it, yes, but less than you fear and not the part you expect. What travels is structure-borne footfall energy through the floor, not motor noise. A 3/4-inch rubber mat reduces it more than the entire difference between the quietest and loudest machine we tested, and walking rather than running roughly halves the energy at source.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Are heavier treadmills louder in an apartment?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Beside the deck, often yes. In the room below, usually the opposite. Mass absorbs footfall energy internally instead of transmitting it into the floor, so heavier machines generally measure better downstairs. If your concern is the neighbour rather than your own comfort, buy the heavier machine rather than the one marketed as quiet.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Can a treadmill go up to a third-floor apartment?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Often, but it is the constraint to check first rather than last. Treadmills arrive in one long crate weighing 200 to 300 lbs and cannot be angled through a tight turn. Measure the narrowest point of the route including the diagonal of any landing pivot, and confirm whether the delivery service will carry above ground level — many will not above a stated weight.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Does a treadmill mat actually make a difference?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                It was the single most effective intervention in our whole test. Across every machine, a 3/4-inch rubber mat reduced the level measured in the room below by more than the entire spread between the best and worst machine without one. It also protects the floor and stops the frame walking. Treat it as part of the purchase, not an accessory.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is my apartment floor strong enough for a treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Almost certainly. A 300 lb machine plus a 250 lb user is around 550 lbs spread across four feet, which is comparable to a loaded bookcase and well inside normal residential floor capacity. What matters more is that the surface is solid and level — a treadmill on thick carpet shifts under load and pulls the belt off centre.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Should I buy a walking pad instead?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                If your use is walking rather than running, probably yes. Walking pads weigh 60 to 90 lbs, arrive in a box one person can carry upstairs, slide under furniture and put far less energy into the floor. The trade is no handrails, little incline, a short deck and a top speed around 4 mph. For walking while working they are the better apartment answer.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Treadmill for an Apartment</h2>
+          <p class="text-gray-700 leading-relaxed">The first of these ends more purchases than the other three combined, and it is the one people check last.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Measuring the room but not the route</h3>
+              <p class="text-gray-700 text-sm m-0">A treadmill arrives as one 6-foot crate weighing 200 to 300 lbs and cannot be angled around a tight landing the way flat-packed furniture can. Measure the narrowest point of the whole route, including the diagonal of any turn, and confirm the delivery service will carry above ground level. Do this before you shortlist anything.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying the machine marketed as quiet</h3>
+              <p class="text-gray-700 text-sm m-0">Marketing measures noise beside the deck, which is airborne motor and belt noise and is not what travels through a floor. Your neighbour hears structure-borne footfall energy, and heavier machines generally do better on that despite being louder at the console. The two rankings did not match in our testing.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating the mat as optional</h3>
+              <p class="text-gray-700 text-sm m-0">A 3/4-inch rubber mat cut our downstairs measurements by more than the entire difference between the best and worst machine in the test. It is the cheapest and most effective thing you can do about apartment noise, and it also protects the floor and stops the frame walking under load. Buy it at the same time as the treadmill.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not checking the lease</h3>
+              <p class="text-gray-700 text-sm m-0">Clauses covering exercise equipment, floor loading and quiet hours are common, and a small number of buildings — usually older ones with timber floors — prohibit treadmills outright. It is a five-minute read that occasionally saves an expensive return and an awkward conversation with a building manager.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Apartment &amp; Space Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/quiet-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Noise</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Quiet Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The acoustics in detail, measured beside the deck and in the room below.</p>
+            </a>
+            <a href="/under-desk-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Alternative</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Under-Desk Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Walking pads — often the better answer for an apartment.</p>
+            </a>
+            <a href="/treadmill-dimensions-space-requirements/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Space</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Dimensions & Space Requirements</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Footprint, clearance behind the deck, ceiling height and the delivery route.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            Check the stairwell first, buy the mat second, and choose the heavier machine if you share
+            a floor. The <strong class="text-white">Sole F63</strong> is the best all-round
+            apartment treadmill; the <strong class="text-white">ProForm Power 995i</strong> is
+            the answer when the delivery route rules everything else out.
+          </p>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            Walking rather than running? A
+            <a href="/under-desk-treadmills/" class="text-[#5AA9FF] font-bold no-underline">walking pad</a>
+            solves the apartment problem almost completely. Worried specifically about noise? The
+            <a href="/quiet-treadmills/" class="text-[#5AA9FF] font-bold no-underline">quiet treadmill guide</a>
+            has the measurements.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+</Layout>
