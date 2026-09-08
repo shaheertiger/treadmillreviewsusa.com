@@ -4,6 +4,10 @@ import { walkPages, isLandingPage, isDraft, routeFor } from './lib/pages.mjs';
 
 const PAGES_DIR = join(import.meta.dirname, '..', 'src', 'pages');
 const MIN_WORD_COUNT = 2500;
+// Drafts are exempt from the published minimum because they are incomplete by
+// definition, but they still have to be substantial — the exemption is not a
+// route to a thin page going live the moment DATA_PENDING is removed.
+const MIN_DRAFT_WORD_COUNT = 2000;
 
 function countWords(filePath) {
   const content = readFileSync(filePath, 'utf-8');
@@ -37,7 +41,28 @@ const files = all.filter((f) => !isDraft(PAGES_DIR, f));
 
 let hasFailures = false;
 
-console.log('Validating article word counts (minimum: %d words)\n', MIN_WORD_COUNT);
+console.log(
+  'Validating article word counts (published: %d words, drafts: %d)\n',
+  MIN_WORD_COUNT,
+  MIN_DRAFT_WORD_COUNT
+);
+
+for (const file of drafts) {
+  const wordCount = countWords(join(PAGES_DIR, file));
+
+  if (wordCount < MIN_DRAFT_WORD_COUNT) {
+    hasFailures = true;
+    console.log(
+      'FAIL  %s — %d words (draft minimum %d, need %d more)',
+      routeFor(file),
+      wordCount,
+      MIN_DRAFT_WORD_COUNT,
+      MIN_DRAFT_WORD_COUNT - wordCount
+    );
+  } else {
+    console.log('DRAFT %s — %d words', routeFor(file), wordCount);
+  }
+}
 
 for (const file of files) {
   const wordCount = countWords(join(PAGES_DIR, file));
@@ -53,11 +78,15 @@ for (const file of files) {
 console.log('');
 
 if (hasFailures) {
-  console.error('Word count validation failed. All articles must have at least %d words.', MIN_WORD_COUNT);
+  console.error(
+    'Word count validation failed. Published articles need %d words; drafts need %d.',
+    MIN_WORD_COUNT,
+    MIN_DRAFT_WORD_COUNT
+  );
   process.exit(1);
 } else {
   console.log('All %d published articles meet the minimum word count requirement.', files.length);
   if (drafts.length > 0) {
-    console.log('%d draft(s) skipped (awaiting data, noindex): %s', drafts.length, drafts.map(routeFor).join(' '));
+    console.log('All %d draft(s) meet the %d-word draft minimum.', drafts.length, MIN_DRAFT_WORD_COUNT);
   }
 }
