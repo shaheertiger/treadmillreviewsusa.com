@@ -846,6 +846,13 @@ export const SECTIONS: Section[] = [
             badge: 'Pillar guide',
             url: '/treadmill-maintenance/',
           },
+          {
+            title: 'Treadmill Maintenance Checklist',
+            description:
+              'Every task organised by interval — after each session, monthly, every 40-50 hours, annually.',
+            badge: 'Checklist',
+            url: '/treadmill-maintenance-checklist/',
+          },
         ],
       },
       {
@@ -864,6 +871,20 @@ export const SECTIONS: Section[] = [
             badge: 'Interval',
             url: '/how-often-to-lubricate-treadmill/',
           },
+          {
+            title: 'Best Treadmill Lubricant',
+            description:
+              '100% silicone, and which applicator — plus how to tell whether your deck is pre-waxed.',
+            badge: 'Products',
+            url: '/best-treadmill-lubricant/',
+          },
+          {
+            title: 'Can You Use WD-40 on a Treadmill?',
+            description:
+              'No. It is a solvent, not a lubricant, and the residue makes friction worse. What to do if you already have.',
+            badge: 'Warning',
+            url: '/can-you-use-wd40-on-a-treadmill/',
+          },
         ],
       },
       {
@@ -880,6 +901,51 @@ export const SECTIONS: Section[] = [
             description: 'The two-to-three-inch lift test, and why over-tightening costs motors and bearings.',
             badge: 'Adjustment',
             url: '/how-tight-should-treadmill-belt-be/',
+          },
+        ],
+      },
+      {
+        name: 'Deep cleaning',
+        pages: [
+          {
+            title: 'How to Clean Under a Treadmill Belt',
+            description:
+              'The annual deep clean that makes lubrication work — and what the debris you find tells you.',
+            badge: 'Annual',
+            url: '/how-to-clean-under-treadmill-belt/',
+          },
+          {
+            title: 'How to Vacuum a Motor Compartment',
+            description:
+              'The most skipped task in treadmill maintenance, done safely — and what not to touch.',
+            badge: 'Annual',
+            url: '/how-to-vacuum-treadmill-motor-compartment/',
+          },
+        ],
+      },
+      {
+        name: 'Wear, cost & lifespan',
+        pages: [
+          {
+            title: 'Treadmill Maintenance Cost',
+            description:
+              '$15-$40 a year in upkeep against $300-$800 per failure it prevents. The full cost picture.',
+            badge: 'Cost',
+            url: '/treadmill-maintenance-cost/',
+          },
+          {
+            title: 'How Often to Replace a Treadmill Belt',
+            description:
+              'Five to ten years maintained, two to three neglected. The five signs, and why the deck goes with it.',
+            badge: 'Wear part',
+            url: '/how-often-should-a-treadmill-belt-be-replaced/',
+          },
+          {
+            title: 'How Long Do Treadmill Motors Last?',
+            description:
+              'Motors die of heat, and heat comes from friction — which makes this a property of the owner.',
+            badge: 'Lifespan',
+            url: '/how-long-do-treadmill-motors-last/',
           },
         ],
       },
