@@ -1,6 +1,6 @@
 import { readFileSync } from 'fs';
 import { join } from 'path';
-import { walkPages, isLandingPage, routeFor } from './lib/pages.mjs';
+import { walkPages, isLandingPage, isDraft, routeFor } from './lib/pages.mjs';
 
 const PAGES_DIR = join(import.meta.dirname, '..', 'src', 'pages');
 const MIN_WORD_COUNT = 2500;
@@ -28,7 +28,12 @@ function countWords(filePath) {
   return words.length;
 }
 
-const files = walkPages(PAGES_DIR).filter((f) => !isLandingPage(f));
+const all = walkPages(PAGES_DIR).filter((f) => !isLandingPage(f));
+
+// Editorial drafts are incomplete by definition and are noindex. The minimum
+// applies again the moment DATA_PENDING is removed, which is when it matters.
+const drafts = all.filter((f) => isDraft(PAGES_DIR, f));
+const files = all.filter((f) => !isDraft(PAGES_DIR, f));
 
 let hasFailures = false;
 
@@ -51,5 +56,8 @@ if (hasFailures) {
   console.error('Word count validation failed. All articles must have at least %d words.', MIN_WORD_COUNT);
   process.exit(1);
 } else {
-  console.log('All %d articles meet the minimum word count requirement.', files.length);
+  console.log('All %d published articles meet the minimum word count requirement.', files.length);
+  if (drafts.length > 0) {
+    console.log('%d draft(s) skipped (awaiting data, noindex): %s', drafts.length, drafts.map(routeFor).join(' '));
+  }
 }

@@ -1,5 +1,5 @@
 import { join } from 'path';
-import { walkPages, routeFor } from './lib/pages.mjs';
+import { walkPages, routeFor, draftRoutes } from './lib/pages.mjs';
 import { SECTIONS } from '../src/data/sections.ts';
 
 const SITE = 'https://www.treadmillreviewsusa.com';
@@ -10,9 +10,11 @@ const PAGES_DIR = join(import.meta.dirname, '..', 'src', 'pages');
 // Hubs that render `noindex` are excluded from the sitemap in astro.config.mjs
 // and must be excluded here too — submitting a noindex URL to IndexNow asks a
 // search engine to crawl a page that tells it not to index.
-const excluded = new Set(
-  SECTIONS.filter((section) => section.noindex).map((section) => `/${section.slug}/`)
-);
+const excluded = new Set([
+  ...SECTIONS.filter((section) => section.noindex).map((section) => `/${section.slug}/`),
+  // Editorial drafts awaiting verified data are noindex; never submit them.
+  ...draftRoutes(PAGES_DIR),
+]);
 
 const urlList = walkPages(PAGES_DIR)
   .map(routeFor)
@@ -21,7 +23,7 @@ const urlList = walkPages(PAGES_DIR)
 
 if (process.argv.includes('--dry-run')) {
   console.log(urlList.join('\n'));
-  console.log(`\n${urlList.length} URLs would be submitted (${excluded.size} excluded as noindex).`);
+  console.log(`\n${urlList.length} URLs would be submitted (${excluded.size} excluded as noindex or draft).`);
   process.exit(0);
 }
 

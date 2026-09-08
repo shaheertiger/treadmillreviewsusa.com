@@ -28,7 +28,44 @@ scripts/
   validate-links.mjs       every internal link must resolve and carry a trailing slash
   format-audit.mjs         every article page must carry the 13 structural elements
   validate-ia.mjs          every article belongs to a hub; every hub matches sections.ts
+  build-articles.mjs       renders article pages from the content specs in src/content/articles/
 ```
+
+## Article pipeline
+
+Article pages carry 13 required structural elements with exact class strings, checked against
+page *source* by `scripts/format-audit.mjs`. Hand-copying ~300 lines of that markup per page is
+how drift gets in, so it lives once in `scripts/build-articles.mjs` and pages are rendered from
+content specs:
+
+```bash
+npm run articles                 # regenerate every page from src/content/articles/
+node scripts/build-articles.mjs best-treadmills-for-running   # or just one
+```
+
+Generated `.astro` files are committed and are what Astro builds. **Edit the spec and
+regenerate — do not edit a generated page**, since regeneration overwrites it.
+
+### Pages awaiting data
+
+A spec may declare `dataPending: ['...']` for a page whose framing is complete but whose
+product figures are not yet verified. Those pages:
+
+- render a prominent amber "Editorial draft — not yet published" banner listing exactly what is
+  outstanding,
+- are served `noindex`,
+- are excluded from the sitemap (`astro.config.mjs`) and from IndexNow submission,
+- are exempt from the 2,500-word minimum and from the hub-coverage requirement,
+- still have to pass the format audit and the link checker.
+
+`npm run validate:ia` lists them on every build, and fails if a page declares `DATA_PENDING`
+without being `noindex`. Removing the `dataPending` field re-imposes the word minimum and the
+hub-coverage requirement, so a page cannot quietly go live incomplete or orphaned.
+
+This exists because the site's positioning is honesty: a brand or comparison page asserting
+unverified motor ratings, deck dimensions or warranty terms reads as authoritative while being
+wrong, and fabricated `aggregateRating` in Product JSON-LD is a structured-data policy breach
+that risks a manual action. New pages therefore carry no `aggregateRating` at all.
 
 ## Information architecture
 

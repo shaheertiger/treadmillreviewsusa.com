@@ -1,12 +1,15 @@
-import { existsSync } from 'fs';
+import { existsSync, readFileSync } from 'fs';
 import { join } from 'path';
-import { walkPages, isLandingPage, routeFor } from './lib/pages.mjs';
+import { walkPages, isLandingPage, isDraft, routeFor } from './lib/pages.mjs';
 import { SECTIONS } from '../src/data/sections.ts';
 
 const PAGES_DIR = join(import.meta.dirname, '..', 'src', 'pages');
 
+// Drafts are noindex and deliberately kept out of navigation. They rejoin the
+// coverage requirement the moment DATA_PENDING is removed, which is exactly
+// when an orphan would matter.
 const articles = walkPages(PAGES_DIR)
-  .filter((file) => !isLandingPage(file))
+  .filter((file) => !isLandingPage(file) && !isDraft(PAGES_DIR, file))
   .map(routeFor);
 
 // Which hubs link to each article.
@@ -45,16 +48,29 @@ for (const article of articles) {
   }
 }
 
+// 4. Every draft must actually be noindex, or an unverified page could be indexed.
+const drafts = walkPages(PAGES_DIR).filter((file) => isDraft(PAGES_DIR, file));
+for (const file of drafts) {
+  if (!/\bnoindex\b/.test(readFileSync(join(PAGES_DIR, file), 'utf-8'))) {
+    problems.push(`${routeFor(file)} declares DATA_PENDING but is not noindex`);
+  }
+}
+
 console.log('Validating the information architecture\n');
 
 const multiHomed = [...hubsByUrl.entries()].filter(([, hubs]) => hubs.length > 1);
-console.log('%d articles, all reachable from a section hub.', articles.length);
+console.log('%d published articles, all reachable from a section hub.', articles.length);
 console.log('%d sections, each served by a hub page.', SECTIONS.length);
 if (multiHomed.length > 0) {
   console.log('\n%d article(s) deliberately listed on more than one hub:', multiHomed.length);
   for (const [url, hubs] of multiHomed) {
     console.log('        %s — %s', url, hubs.map((hub) => `/${hub}/`).join(', '));
   }
+}
+
+if (drafts.length > 0) {
+  console.log('\n%d page(s) awaiting verified data (noindex, excluded from sitemap):', drafts.length);
+  for (const file of drafts) console.log('        %s', routeFor(file));
 }
 
 if (problems.length > 0) {

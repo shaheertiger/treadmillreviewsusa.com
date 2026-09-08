@@ -195,6 +195,43 @@ const PRODUCT_CARDS = `      <!-- Product cards -->
       </div>
 `;
 
+/**
+ * Pages awaiting verified product data render a visible editorial banner and
+ * are marked noindex, so an unverified draft cannot be published by accident.
+ * The DATA_PENDING constant is the marker the validators look for.
+ */
+function dataPendingBlock(spec) {
+  if (!spec.dataPending?.length) return '';
+  return `// This page is an editorial draft. The items below need verified product
+// data before it is published; until DATA_PENDING is removed the page renders
+// a banner and is excluded from search. See README, "Pages awaiting data".
+const DATA_PENDING = [
+${spec.dataPending.map((x) => `  ${jsStr(x)},`).join('\n')}
+];
+
+`;
+}
+
+const DATA_PENDING_BANNER = `      <!-- Editorial draft banner -->
+      <div class="max-w-3xl mx-auto px-4">
+        <div class="not-prose my-8 bg-amber-50 border-2 border-amber-300 rounded-2xl p-6">
+          <p class="text-xs font-black uppercase tracking-widest text-amber-800 mb-2">
+            Editorial draft — not yet published
+          </p>
+          <p class="text-sm text-gray-800 leading-relaxed m-0 mb-3">
+            The framing and analysis below are complete. The following need verified
+            manufacturer data before this page goes live, and nothing on this page should be
+            treated as factual until they are filled in:
+          </p>
+          <ul class="text-sm text-gray-800 leading-relaxed m-0 pl-5">
+            {DATA_PENDING.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+`;
+
 function render(spec) {
   const dot = `dot-pattern-${spec.slug.replace(/[^a-z0-9]/g, '')}`;
   const sections = spec.sections;
@@ -223,7 +260,7 @@ const title = ${jsStr(spec.title)};
 const description =
   ${jsStr(spec.description)};
 
-${productsBlock(spec.products)}${schemaBlock(spec)}
+${dataPendingBlock(spec)}${productsBlock(spec.products)}${schemaBlock(spec)}
 ---
 
 <Layout
@@ -239,7 +276,7 @@ ${productsBlock(spec.products)}${schemaBlock(spec)}
 ${spec.tags.map((t) => `      ${jsStr(t)},`).join('\n')}
     ],
   }}
-  jsonLd={schema}
+  jsonLd={schema}${spec.dataPending?.length ? '\n  noindex' : ''}
   stickyCta={{ text: ${jsStr(spec.stickyCta.text)}, link: ${jsStr(spec.stickyCta.link)} }}
 >
   <article class="relative overflow-hidden">
@@ -280,6 +317,7 @@ ${spec.tags.map((t) => `      ${jsStr(t)},`).join('\n')}
       </div>
     </div>
 
+${spec.dataPending?.length ? DATA_PENDING_BANNER : ''}
     <!-- Author & Meta -->
     <div class="max-w-3xl mx-auto px-4 pt-12">
       <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">

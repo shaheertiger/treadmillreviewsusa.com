@@ -1,4 +1,4 @@
-import { readdirSync } from 'fs';
+import { readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 
 // Root-level pages that carry navigation rather than article prose. Section
@@ -54,4 +54,20 @@ export function isLandingPage(relPath) {
     relPath.endsWith('/index.astro') ||
     LANDING_PAGES.includes(relPath)
   );
+}
+
+/**
+ * A page is an editorial draft when it declares DATA_PENDING — it is awaiting
+ * verified product data, renders a banner saying so, and is kept out of both
+ * the sitemap and the IndexNow submission until the marker is removed.
+ */
+export function isDraft(pagesDir, relPath) {
+  return readFileSync(join(pagesDir, relPath), 'utf-8').includes('const DATA_PENDING');
+}
+
+/** Public routes of every draft page under `pagesDir`. */
+export function draftRoutes(pagesDir) {
+  return walkPages(pagesDir)
+    .filter((file) => isDraft(pagesDir, file))
+    .map(routeFor);
 }
