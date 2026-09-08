@@ -105,6 +105,13 @@ export const SECTIONS: Section[] = [
             badge: 'Runners',
             url: '/best-treadmills-for-running/',
           },
+          {
+            title: 'Best Treadmills for Tall Runners',
+            description:
+              'Usable deck length measured rather than quoted, plus the ceiling height nobody checks before buying.',
+            badge: 'Over 6 ft',
+            url: '/best-treadmills-for-tall-runners/',
+          },
         ],
       },
       {
@@ -143,6 +150,13 @@ export const SECTIONS: Section[] = [
             badge: 'Apartments',
             url: '/best-treadmills-for-apartments/',
           },
+          {
+            title: 'Best Treadmills for Small Spaces',
+            description:
+              'Folded footprints measured at the widest point, and why fold effort decides this rather than fold size.',
+            badge: 'Compact',
+            url: '/best-treadmills-for-small-spaces/',
+          },
         ],
       },
       {
@@ -169,6 +183,13 @@ export const SECTIONS: Section[] = [
             badge: 'Accessibility',
             url: '/best-treadmills-for-seniors/',
           },
+          {
+            title: 'Best Treadmills for Bad Knees',
+            description:
+              'Deck give and rebound measured. The softest deck is not the kindest — incline is the real tool.',
+            badge: 'Low impact',
+            url: '/best-treadmills-for-bad-knees/',
+          },
         ],
       },
       {
@@ -180,6 +201,25 @@ export const SECTIONS: Section[] = [
               'Steep-incline trainers for hill and trail-style training, from 12% to 40% grade.',
             badge: 'Incline',
             url: '/best-incline-treadmills/',
+          },
+        ],
+      },
+      {
+        name: 'Getting started & ownership',
+        pages: [
+          {
+            title: 'Best Treadmills for Beginners',
+            description:
+              'Ranked on assembly, console simplicity and safety — and an argument for spending less than you think.',
+            badge: 'First treadmill',
+            url: '/best-treadmills-for-beginners/',
+          },
+          {
+            title: 'Best Treadmills Without Subscriptions',
+            description:
+              'What each machine becomes when you stop paying, and the five-year cost of the ones that need a fee.',
+            badge: 'No fees',
+            url: '/best-treadmills-without-subscriptions/',
           },
         ],
       },
