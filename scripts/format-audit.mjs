@@ -1,10 +1,8 @@
-import { readFileSync, readdirSync } from 'fs';
+import { readFileSync } from 'fs';
 import { join } from 'path';
+import { walkPages, isLandingPage, routeFor } from './lib/pages.mjs';
 
 const PAGES_DIR = join(import.meta.dirname, '..', 'src', 'pages');
-
-// Landing/utility pages are not articles and are exempt from the article format.
-const EXCLUDED_PAGES = ['index.astro', 'best-of.astro', 'contact-us.astro'];
 
 // The 13 structural elements every article page must contain, in page order.
 // Each check gets the raw file contents and returns true when the element is present.
@@ -72,9 +70,7 @@ const CHECKS = [
   { name: 'Article JSON-LD', test: (s) => /"@type":\s*"Article"/.test(s) },
 ];
 
-const files = readdirSync(PAGES_DIR)
-  .filter((f) => f.endsWith('.astro') && !EXCLUDED_PAGES.includes(f))
-  .sort();
+const files = walkPages(PAGES_DIR).filter((f) => !isLandingPage(f));
 
 let failed = 0;
 
@@ -86,12 +82,12 @@ for (const file of files) {
 
   if (missing.length > 0) {
     failed += 1;
-    console.log('FAIL  %s', file);
+    console.log('FAIL  %s', routeFor(file));
     for (const name of missing) {
       console.log('        missing: %s', name);
     }
   } else {
-    console.log('PASS  %s', file);
+    console.log('PASS  %s', routeFor(file));
   }
 }
 

@@ -8,8 +8,9 @@
     "validate:words": "node scripts/validate-word-count.js",
     "validate:links": "node scripts/validate-links.mjs",
     "validate:format": "node scripts/format-audit.mjs",
-    "build": "npm run validate:words && npm run validate:links && npm run validate:format && astro build",
-    "preview": "astro preview"
+    "build": "npm run validate:words && npm run validate:links && npm run validate:format && npm run validate:ia && astro build",
+    "preview": "astro preview",
+    "validate:ia": "node scripts/validate-ia.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.10",

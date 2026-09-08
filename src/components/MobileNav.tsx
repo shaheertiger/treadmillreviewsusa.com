@@ -1,5 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { SECTIONS } from '../data/sections';
+
+// Section hubs shown in navigation; hubs awaiting their own content are hidden.
+const navSections = SECTIONS.filter((section) => !section.noindex);
 
 export default function MobileNav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,6 +53,22 @@ export default function MobileNav() {
             <nav className="flex flex-col space-y-4">
               <a href="/" onClick={close} className="text-left text-lg font-semibold py-2">Home</a>
               <a href="/best-of/" onClick={close} className="text-left text-lg font-semibold py-2">Best of 2026</a>
+              <div className="border-t border-gray-100 pt-4">
+                <p className="text-xs font-black uppercase tracking-widest text-gray-400 mb-3">Browse by Section</p>
+                <div className="grid grid-cols-2 gap-2">
+                  {navSections.map((section) => (
+                    <a
+                      key={section.slug}
+                      href={`/${section.slug}/`}
+                      onClick={close}
+                      className="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 no-underline text-sm font-semibold text-gray-900"
+                    >
+                      <span aria-hidden="true">{section.icon}</span>
+                      {section.name}
+                    </a>
+                  ))}
+                </div>
+              </div>
               <div className="border-t border-gray-100 pt-4">
                 <p className="text-xs font-black uppercase tracking-widest text-gray-400 mb-3">Treadmill Guides</p>
                 <a href="/best-treadmill-for-home-reviews/" onClick={close} className="flex items-center gap-3 py-2 no-underline">
