@@ -27,6 +27,70 @@ if (process.argv.includes('--dry-run')) {
   process.exit(0);
 }
 
+// The workflow fires on push to main, but the Vercel deploy takes a minute or
+// two — so without this the submission races the deploy and reports URLs that
+// are still 404. The live sitemap is generated at build time and shipped with
+// the site, so it is a precise signal for "the new build is serving": once it
+// lists everything we are about to submit, the deploy has landed.
+const SITEMAP = `${SITE}/sitemap-0.xml`;
+const LIVENESS_TIMEOUT_MS = 6 * 60 * 1000;
+const POLL_INTERVAL_MS = 15 * 1000;
+
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+async function deployedUrls() {
+  try {
+    const res = await fetch(SITEMAP, { headers: { 'Cache-Control': 'no-cache' } });
+    if (!res.ok) return null;
+    const xml = await res.text();
+    return new Set([...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1].trim()));
+  } catch {
+    return null;
+  }
+}
+
+async function waitForDeploy() {
+  const deadline = Date.now() + LIVENESS_TIMEOUT_MS;
+  let missing = urlList;
+
+  while (Date.now() < deadline) {
+    const live = await deployedUrls();
+    if (live) {
+      missing = urlList.filter((url) => !live.has(url));
+      if (missing.length === 0) return { ok: true };
+      console.log('  waiting for deploy — %d of %d URLs not yet in the live sitemap', missing.length, urlList.length);
+    } else {
+      console.log('  waiting for deploy — could not read the live sitemap');
+    }
+    await sleep(POLL_INTERVAL_MS);
+  }
+
+  return { ok: false, missing };
+}
+
+if (!process.argv.includes('--skip-liveness')) {
+  console.log('Checking the deploy has landed before submitting...');
+  const deploy = await waitForDeploy();
+  if (!deploy.ok) {
+    console.error(
+      [
+        '',
+        `Gave up after ${LIVENESS_TIMEOUT_MS / 60000} minutes: ${deploy.missing.length} URL(s) are still absent`,
+        'from the live sitemap, so the deploy has not finished (or has failed).',
+        '',
+        'Submitting now would report URLs that return 404, which is worse than not',
+        'submitting at all. Re-run this job once the deploy is green, or run with',
+        '--skip-liveness to submit anyway.',
+        '',
+        'Examples still missing:',
+        ...deploy.missing.slice(0, 5).map((u) => `  ${u}`),
+      ].join('\n')
+    );
+    process.exit(1);
+  }
+  console.log('Deploy confirmed — every URL is in the live sitemap.\n');
+}
+
 // The shared endpoint forwards to every participating engine, so it is tried
 // first. When it rejects the host — as Bing currently does for this site, see
 // the note below — the engines are tried individually so a working one still
