@@ -194,12 +194,18 @@ if (results.some((r) => r.status === 403)) {
     [
       '',
       'A 403 UserForbiddedToAccessSite means the engine will not accept submissions',
-      'for this host. It is not a key problem when the key file is reachable and',
-      `returns its own name — verify with: curl ${KEY_LOCATION}`,
+      'for this host with this key.',
       '',
-      'Bing currently rejects this host while Yandex accepts the identical payload,',
-      'which points at site status rather than the key. Fix: add and verify the site',
-      'in Bing Webmaster Tools (bing.com/webmasters), then re-run this script.',
+      'The key file has already been verified as live above, so the likely cause is',
+      'the key rather than the file: a key that is stale, or was never associated',
+      "with this host in the engine's system, is rejected even when it is served",
+      'correctly. This site hit exactly that — two key files were being served at',
+      '200, bingbot could fetch them, and Yandex accepted the identical payload, yet',
+      'Bing refused. Rotating to a freshly generated key fixed it immediately.',
+      '',
+      'Fix: generate a new key in Bing Webmaster Tools (bing.com/webmasters), save it',
+      'as public/<key>.txt containing exactly the key, update KEY at the top of this',
+      'script, and deploy before re-running.',
     ].join('\n')
   );
 }
