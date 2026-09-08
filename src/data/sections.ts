@@ -259,6 +259,20 @@ export const SECTIONS: Section[] = [
         name: 'Budget tiers',
         pages: [
           {
+            title: 'Best Treadmills Under $500',
+            description:
+              'What this budget genuinely buys — and why a walking pad is usually the better product here.',
+            badge: 'Entry',
+            url: '/best-treadmills-under-500/',
+          },
+          {
+            title: 'Best Treadmills Under $800',
+            description:
+              'The first tier worth buying. Deck, motor, frame and warranty all cross thresholds here.',
+            badge: 'Value peak',
+            url: '/best-treadmills-under-800/',
+          },
+          {
             title: 'Best Treadmills Under $1,000',
             description:
               'Budget treadmills that don’t feel cheap — ranked on motor durability and real value for money.',
@@ -270,6 +284,44 @@ export const SECTIONS: Section[] = [
             description: 'The sweet spot between entry-level and commercial-grade — five tested picks.',
             badge: 'Mid tier',
             url: '/treadmills-under-1500/',
+          },
+        ],
+      },
+      {
+        name: 'The running tier',
+        pages: [
+          {
+            title: 'Best Treadmills Under $2,000',
+            description:
+              'Where 60-inch decks meet frames heavy enough to run on, and where subscriptions start costing more than the hardware.',
+            badge: 'Runners',
+            url: '/best-treadmills-under-2000/',
+          },
+        ],
+      },
+      {
+        name: 'Deciding what to spend',
+        pages: [
+          {
+            title: 'How Much Should You Spend?',
+            description:
+              'Five questions about your actual use, and the budget falls out of the answers.',
+            badge: 'Framework',
+            url: '/how-much-should-you-spend-on-a-treadmill/',
+          },
+          {
+            title: 'Cheap vs. Premium Treadmill',
+            description:
+              'Component by component, what the extra money buys — and which three parts you will notice.',
+            badge: 'Comparison',
+            url: '/cheap-vs-premium-treadmill/',
+          },
+          {
+            title: 'Best Time of Year to Buy',
+            description:
+              'The same machine swings 20-35% across a year. The cycle, and the three weeks to avoid.',
+            badge: 'Timing',
+            url: '/best-time-of-year-to-buy-a-treadmill/',
           },
         ],
       },
@@ -305,6 +357,13 @@ export const SECTIONS: Section[] = [
             description: 'Realistic lifespans by tier, what fails first, and the repair-or-replace arithmetic.',
             badge: 'Cost of ownership',
             url: '/how-long-do-treadmills-last/',
+          },
+          {
+            title: 'New vs. Used Treadmill',
+            description:
+              'Used buys roughly twice the hardware per dollar. What you give up, and how to inspect properly.',
+            badge: 'Used market',
+            url: '/new-vs-used-treadmill/',
           },
         ],
       },
