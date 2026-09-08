@@ -231,6 +231,8 @@ export default {
             building a percent at a time.
           </p>
           <p>
+            Our <a href="/treadmill-workouts/" class="text-[#0F62FE] font-medium">training guide</a>
+            covers the wider week once this build-up is complete.
             The rule throughout is to change one variable at a time — duration or incline or speed,
             never two together — so that if something aggravates the knee you know what it was.
             Soreness during a session is a signal to stop that session. Soreness the following day

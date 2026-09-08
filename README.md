@@ -173,6 +173,35 @@ the authority on lubrication intervals and deck type. Maintenance intervals, lif
 repair costs are editorial estimates drawn from warranty terms and owner reports, not measured
 data — the lifespan page states this explicitly on the page itself.
 
+### Workouts & training semantic cluster
+
+The third hub-and-spoke cluster, and it exists for the same reason the maintenance one did.
+Training concepts were referenced constantly across the site — 58 pages mention "workout", 56
+"interval", 92 "pace" — while exactly one page owned any training topic, and it was an
+incline-walking protocol absorbing 17 inbound links for a subject it is not about. "Weight loss"
+and "couch to 5k" appeared on no page at all.
+
+- **Pillar**: `/treadmill-workouts/` — the four session types (easy steady, intervals, incline,
+  long), how to build a week, and how to progress (sitemap priority 0.9 as a section hub member)
+- **Spokes**: `/treadmill-interval-workouts/` (five structures, and why a belt that does not slow
+  as you tire changes how you set the pace), `/treadmill-pace-and-speed-chart/` (mph to pace to
+  km/h, plus incline equivalents), `/treadmill-workout-for-weight-loss/`,
+  `/couch-to-5k-treadmill/` (the nine-week progression), `/treadmill-heart-rate-zones/`, and the
+  pre-existing `/12-3-30-treadmill-workout/`, which moved into this cluster from `/guides/`
+
+The pillar links to all six spokes; every spoke links back up and laterally to at least two
+siblings; and 16 pages outside the cluster link into it. The cluster has its own section hub at
+**`/training/`**, since "what do I do on it" is a different reader intent from "which should I
+buy".
+
+Health-adjacent pages carry explicit scope notes stating that the site reviews equipment and is
+not giving medical, coaching or nutrition advice. The weight-loss page is deliberately honest
+that exercise is a weaker lever on body weight than the category usually implies, that console
+calorie figures run optimistic, and that nutrition questions belong with a registered dietitian.
+The heart-rate page states that 220-minus-age misses individuals by ten to twelve beats routinely
+and that beta blockers invalidate the arithmetic entirely.
+
+
 All outbound product links use Amazon search URLs tagged with the `sktiger-20` Associates ID (`rel="sponsored nofollow noopener"`). Swap in real ASIN/product links and product photography as they become available. Product specs on the newly recreated pages are editorial approximations in the site's existing style (same convention as the original flagship guides) — verify against manufacturer data before treating any number as authoritative.
 
 ## Development

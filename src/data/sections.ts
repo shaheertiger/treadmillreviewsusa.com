@@ -724,18 +724,6 @@ export const SECTIONS: Section[] = [
           },
         ],
       },
-      {
-        name: 'Using the machine',
-        pages: [
-          {
-            title: 'The 12-3-30 Treadmill Workout',
-            description:
-              'What the incline-walking protocol demands, a four-week build-up, and which machines reach 12%.',
-            badge: 'Training',
-            url: '/12-3-30-treadmill-workout/',
-          },
-        ],
-      },
     ],
   },
   {
@@ -946,6 +934,95 @@ export const SECTIONS: Section[] = [
               'Motors die of heat, and heat comes from friction — which makes this a property of the owner.',
             badge: 'Lifespan',
             url: '/how-long-do-treadmill-motors-last/',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'training',
+    name: 'Workouts & Training',
+    icon: '🏃',
+    tagline: 'What to actually do once the machine is in the room.',
+    title: 'Treadmill Workouts & Training Guides (2026)',
+    metaDescription:
+      'How to structure treadmill training — the four session types, interval workouts, pace conversions, heart rate zones, and beginner progressions that people finish.',
+    heading: 'What to do once the',
+    highlight: 'machine is in the room',
+    standfirst:
+      'Buying the treadmill is the easy part. These guides cover what to do on it — and the two errors, making every session the same and making every session hard, that end most treadmill habits.',
+    intro: [
+      'Almost every abandoned treadmill was abandoned for a training reason rather than an equipment one. The two failure patterns look like opposites and share a cause: doing the same moderate session every time until it stops working, or doing hard sessions so often that fatigue accumulates faster than fitness. Both come from having one setting.',
+      'The guides here are built around four session types — easy steady, intervals, incline and long — and one rule about how to combine them: most of your week should be genuinely easy, and the hard sessions should be genuinely hard and genuinely rare. That distribution feels wrong to most people, which is precisely why it is worth stating.',
+      'Where a topic is health-adjacent, these pages say what they are not. We review equipment; we are not clinicians, coaches or dietitians. Training guidance here is about how to use a machine consistently, and anything involving a medical condition, medication that affects heart rate, or a history of disordered eating belongs with a professional rather than a review site.',
+    ],
+    groups: [
+      {
+        name: 'Start here',
+        pages: [
+          {
+            title: 'Treadmill Workouts',
+            description:
+              'The four session types, how to build a week from them, and how to progress without breaking the habit.',
+            badge: 'Pillar guide',
+            url: '/treadmill-workouts/',
+          },
+        ],
+      },
+      {
+        name: 'Session types',
+        pages: [
+          {
+            title: 'Treadmill Interval Workouts',
+            description:
+              'Five structures from beginner to hard, and why the belt not slowing when you tire changes how you set the pace.',
+            badge: 'Intervals',
+            url: '/treadmill-interval-workouts/',
+          },
+          {
+            title: 'The 12-3-30 Treadmill Workout',
+            description:
+              'What the incline-walking protocol demands, a four-week build-up, and which machines reach 12%.',
+            badge: 'Incline',
+            url: '/12-3-30-treadmill-workout/',
+          },
+        ],
+      },
+      {
+        name: 'By goal',
+        pages: [
+          {
+            title: 'Couch to 5K on a Treadmill',
+            description:
+              'The nine-week walk-to-run progression, the speeds to set, and what to do when a week is too hard.',
+            badge: 'Beginner',
+            url: '/couch-to-5k-treadmill/',
+          },
+          {
+            title: 'Treadmill Workouts for Weight Loss',
+            description:
+              'The honest version — why consistency beats intensity, and why the console calorie count misleads.',
+            badge: 'Weight',
+            url: '/treadmill-workout-for-weight-loss/',
+          },
+        ],
+      },
+      {
+        name: 'Reference',
+        pages: [
+          {
+            title: 'Treadmill Pace & Speed Chart',
+            description:
+              'mph to minutes per mile to km/h, and what each incline grade is worth in flat-running effort.',
+            badge: 'Conversions',
+            url: '/treadmill-pace-and-speed-chart/',
+          },
+          {
+            title: 'Treadmill Heart Rate Zones',
+            description:
+              'How the five zones work, why 220-minus-age misleads, and why grip sensors are the wrong instrument.',
+            badge: 'Zones',
+            url: '/treadmill-heart-rate-zones/',
           },
         ],
       },

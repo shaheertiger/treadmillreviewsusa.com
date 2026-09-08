@@ -171,7 +171,8 @@ export default {
             If you are training for a road race, there is a second argument for a firmer deck:
             what you train on should resemble what you race on. Runners who do their entire
             build-up on a very soft treadmill and then race on tarmac frequently report calf and
-            shin soreness in the first hard road sessions. Mixing surfaces through a training
+            shin soreness in the first hard road sessions. Our <a href="/treadmill-workouts/" class="text-[#0F62FE] font-medium">training guide</a>
+            covers how to structure a week around that. Mixing surfaces through a training
             block is the sensible answer, and if the treadmill is your only option, firmer is the
             better default.
           </p>`,

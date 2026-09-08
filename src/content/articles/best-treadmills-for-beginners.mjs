@@ -192,6 +192,8 @@ export default {
             it is far more valuable than three punishing weeks followed by nothing. Add minutes
             before speed, and incline before speed: incline raises effort without raising impact or
             the risk of catching a foot, which makes it the better lever early on. Our
+            <a href="/treadmill-workouts/" class="text-[#0F62FE] font-medium">guide to treadmill workouts</a>
+            covers what comes after that first month, and the
             <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 guide</a>
             includes a gentler build-up if structured incline walking appeals later.
           </p>`,

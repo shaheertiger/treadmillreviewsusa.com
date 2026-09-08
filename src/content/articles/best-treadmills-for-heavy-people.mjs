@@ -199,7 +199,9 @@ export default {
             <a href="/best-walking-treadmills/" class="text-[#0F62FE] font-medium">walking treadmill guide</a>
             and the
             <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 incline protocol</a>
-            both cover that approach, and the protocol page includes a gentler build-up.
+            both cover that approach, and the protocol page includes a gentler build-up. Our
+            <a href="/treadmill-workout-for-weight-loss/" class="text-[#0F62FE] font-medium">guide to treadmills and weight loss</a>
+            is honest about what training alone does and does not achieve.
           </p>`,
     },
     {
