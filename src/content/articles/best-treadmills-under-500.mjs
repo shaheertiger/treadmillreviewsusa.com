@@ -146,6 +146,13 @@ export default {
       html: `          <p>
             Two of these are walking pads rather than treadmills, and they are here because at
             this price they are frequently the better product. Each entry says who it is for.
+          </p>
+          <p>
+            One machine that is no longer an option deserves a mention, because it is still what
+            people search for at this budget: the
+            <a href="/weslo-cadence-g-5-9-treadmill/" class="text-[#0F62FE] font-medium">Weslo Cadence G 5.9</a>
+            has been discontinued. Its review covers what a used one is worth and why a walking pad
+            now does that job better.
           </p>`,
     },
     {

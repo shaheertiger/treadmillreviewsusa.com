@@ -131,6 +131,7 @@ Long-form blog/editorial pages (also 2,500+ words, same validator):
 - `/treadmill-buying-guide-2026` — educational buying guide (motor power, deck size, folding vs. fixed, budget tiers) that funnels readers into the flagship guides.
 - `/treadmill-buyers-guide` — a step-by-step purchase checklist, complementary to (and cross-linked with) the guide above.
 - `/treadmills-for-sale` — where to buy, what to pay, and what each sales channel costs you after checkout.
+- `/horizon-t101-treadmill`, `/proform-pro-5000-treadmill`, `/proform-505-cst-treadmill`, `/nordictrack-t-6-5-s-treadmill`, `/weslo-cadence-g-5-9-treadmill` — model reviews with cross-checked published specifications (see "Verified model reviews").
 
 Individual model reviews, brand hub pages, and category/price roundups (also 2,500+ words each, same validator) — recreated from prior-site page-performance data. Browse the full set from `/best-of`, or see below:
 
@@ -219,6 +220,25 @@ existing pages: `/best-time-of-year-to-buy-a-treadmill/`, `/new-vs-used-treadmil
 `/how-much-should-you-spend-on-a-treadmill/`, `/cheap-vs-premium-treadmill/`,
 `/used-treadmill-buying-checklist/`, `/treadmill-buying-guide-2026/`, `/best-treadmills/` and
 `/treadmills-over-2500/`, plus the `/best-of/` grid.
+
+### Verified model reviews
+
+Five model reviews written against the keyword gaps in `research/competitor-keywords/`:
+`/horizon-t101-treadmill/`, `/proform-pro-5000-treadmill/`, `/proform-505-cst-treadmill/`,
+`/nordictrack-t-6-5-s-treadmill/` and `/weslo-cadence-g-5-9-treadmill/`.
+
+These differ from the older model pages in one respect that matters: their specification figures
+were **cross-checked before publication** rather than estimated. Each page's `note` states what
+was checked, against what, and on what date — the manufacturer or retailer listing plus
+independent review coverage, with the figures agreeing across all of them. They are still
+published figures rather than our own measurements, and each page says so.
+
+Where sources disagreed, the page did not ship indexed. That rule is what separates these five
+from the Sole pages below, and it is the only rule that keeps the distinction meaningful.
+
+`/weslo-cadence-g-5-9-treadmill/` is a deliberate case: the machine is discontinued, so the page
+is written around what a used one is worth, how long parts will realistically exist, and what
+replaces it — rather than pretending it is still a purchase decision.
 
 ### Sole F80 and F85
 

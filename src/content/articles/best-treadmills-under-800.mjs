@@ -140,6 +140,15 @@ export default {
       html: `          <p>
             Several of these list higher than $800 and sell below it regularly. Where that is the
             case the entry says so.
+          </p>
+          <p>
+            Three machines in this band have reviews of their own, and they divide the tier neatly:
+            the <a href="/horizon-t101-treadmill/" class="text-[#0F62FE] font-medium">Horizon T101</a>
+            for a lifetime frame warranty and no subscription, the
+            <a href="/proform-505-cst-treadmill/" class="text-[#0F62FE] font-medium">ProForm 505 CST</a>
+            for the highest published capacity at the price, and the
+            <a href="/nordictrack-t-6-5-s-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack T 6.5 S</a>
+            as the cheapest way into a content platform.
           </p>`,
     },
     {

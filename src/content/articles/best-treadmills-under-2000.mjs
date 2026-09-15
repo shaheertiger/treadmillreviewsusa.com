@@ -142,6 +142,13 @@ export default {
       html: `          <p>
             Ranked for running, since that is what this tier is for. Each entry notes the
             subscription position, because at this price it changes the arithmetic.
+          </p>
+          <p>
+            The clearest illustration of that arithmetic is the
+            <a href="/proform-pro-5000-treadmill/" class="text-[#0F62FE] font-medium">ProForm Pro 5000</a>,
+            which delivers a 22 by 60-inch deck and decline for well under the ceiling here and
+            attaches a content platform to the console. Its review works the five-year total
+            through against the subscription-free alternatives.
           </p>`,
     },
     {
