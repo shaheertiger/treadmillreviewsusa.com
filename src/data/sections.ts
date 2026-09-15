@@ -462,7 +462,7 @@ export const SECTIONS: Section[] = [
     intro: [
       'These are single-machine assessments. Each one covers the motor and deck on their own terms, the console and any subscription attached to it, the assembly and the footprint once assembled, and the failure modes owners report after the first year.',
       'Every review carries real cons. That is the site’s position: a machine with no listed drawbacks has not been used properly. Where a fault is common to a whole lineup rather than one model, the review says so and links to the brand guide that covers it.',
-      'Specifications on these pages are editorial approximations in the site’s established style — verify against manufacturer data before treating any figure as authoritative.',
+      'Specifications on the older reviews here are editorial approximations in the site’s established style. The newer ones state where their figures came from and when they were checked: those pages carry the manufacturer’s published figures, cross-checked against retailer listings and independent coverage on a stated date. Either way, a model name can outlive the hardware underneath it — verify against the exact model year you are buying before treating any figure as authoritative.',
     ],
     groups: [
       {
@@ -522,6 +522,12 @@ export const SECTIONS: Section[] = [
             badge: 'Incline trainer',
             url: '/nordictrack-x9i-incline-trainer-treadmill/',
           },
+          {
+            title: 'NordicTrack T 6.5 S',
+            description: 'The entry machine — a walking treadmill wearing a running brand, and what it does without iFit.',
+            badge: 'Entry level',
+            url: '/nordictrack-t-6-5-s-treadmill/',
+          },
         ],
       },
       {
@@ -545,6 +551,18 @@ export const SECTIONS: Section[] = [
             badge: 'Review',
             url: '/proform-power-1295i-treadmill/',
           },
+          {
+            title: 'ProForm Pro 5000',
+            description: 'A 22 x 60-inch deck and decline for well under $2,000 — the best running hardware ProForm sells for the money.',
+            badge: 'Best value deck',
+            url: '/proform-pro-5000-treadmill/',
+          },
+          {
+            title: 'ProForm 505 CST',
+            description: 'A 325 lb capacity at a price where 300 is the ceiling. The volume budget machine.',
+            badge: 'Best capacity',
+            url: '/proform-505-cst-treadmill/',
+          },
         ],
       },
       {
@@ -561,6 +579,23 @@ export const SECTIONS: Section[] = [
             description: 'The Sole treadmill most owners actually recommend.',
             badge: 'Review',
             url: '/sole-f65-treadmill/',
+          },
+        ],
+      },
+      {
+        name: 'Budget & entry-level',
+        pages: [
+          {
+            title: 'Horizon T101',
+            description: 'The walker’s default — no subscription, and a lifetime frame and motor warranty under $1,000.',
+            badge: 'Walker’s pick',
+            url: '/horizon-t101-treadmill/',
+          },
+          {
+            title: 'Weslo Cadence G 5.9',
+            description: 'Discontinued. What it was, what a used one is worth, and what to buy instead.',
+            badge: 'Discontinued',
+            url: '/weslo-cadence-g-5-9-treadmill/',
           },
         ],
       },
