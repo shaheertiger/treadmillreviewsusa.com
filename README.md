@@ -239,6 +239,14 @@ ten pages that mention the F80 in passing.
 
 All outbound product links use Amazon search URLs tagged with the `sktiger-20` Associates ID (`rel="sponsored nofollow noopener"`). Swap in real ASIN/product links and product photography as they become available. Product specs on the newly recreated pages are editorial approximations in the site's existing style (same convention as the original flagship guides) — verify against manufacturer data before treating any number as authoritative.
 
+## Keyword research
+
+`research/competitor-keywords/` holds the supplied competitor exports verbatim, with a README
+covering provenance, which columns are verified and which are assumed, and the gap analysis
+against our current pages. It is data, not site content — nothing under `research/` is built,
+linked or validated. New pages that exist because of a keyword gap should be traceable back to
+a row in there.
+
 ## Development
 
 ```bash
