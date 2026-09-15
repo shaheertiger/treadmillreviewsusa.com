@@ -197,6 +197,13 @@ export default {
             <strong>Private sale.</strong> The lowest prices and the highest variance. This is
             where the "used twice, must go" machines are, and also where the neglected ones are.
             The inspection above is doing all the work here.
+          </p>
+          <p>
+            Worth holding all four against the new market before deciding:
+            <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">where to buy and what to pay</a>
+            covers the four channels selling new machines and what each is actually good at, and
+            the gap between a cleared model year and a three-year-old private sale is often
+            smaller than it looks.
           </p>`,
     },
     {

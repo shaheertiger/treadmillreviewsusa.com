@@ -271,6 +271,13 @@ export default {
             Every one of those is a threshold crossing rather than an increment.
           </p>
           <p>
+            Which is also why the middle of the range rewards patience more than any other band:
+            a mid-market machine on model-year clearance often costs what a budget machine costs
+            at full price. <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">Where to buy and what to pay</a>
+            covers which channels carry cleared stock and what the warranty looks like when they
+            do.
+          </p>
+          <p>
             Going from $1,200 to $3,500 changes the motor from DC to AC, the rollers from 2.5 to 3
             inches and the warranty from three years to eight. All real, all durability rather than
             capability, and none of it perceptible on a given run.
