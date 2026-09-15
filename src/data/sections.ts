@@ -303,6 +303,13 @@ export const SECTIONS: Section[] = [
         name: 'Deciding what to spend',
         pages: [
           {
+            title: 'Treadmills for Sale: Where to Buy',
+            description:
+              'Four markets sell the same machine at four prices. What each is good at, and when the discount is real.',
+            badge: 'Where to buy',
+            url: '/treadmills-for-sale/',
+          },
+          {
             title: 'How Much Should You Spend?',
             description:
               'Five questions about your actual use, and the budget falls out of the answers.',

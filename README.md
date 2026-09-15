@@ -108,7 +108,9 @@ stubbed — a hub linking to placeholder pages is worse than a hub that is hones
 
 - **Roundups**: `/best/running/`, `/best/apartments/`, `/best/heavy-users/`, `/price/under-500/`
 - **Brand hub**: `/brands/horizon/`
-- **Review**: `/reviews/sole-f80/`
+- **Review**: `/reviews/sole-f80/` — the flat `/sole-f80-treadmill/` and `/sole-f85-treadmill/`
+  pages now exist as editorial drafts (see "Pages awaiting data"); they join `/reviews/` when
+  their specifications are confirmed
 - **Comparisons**: `/compare/sole-f80-vs-f85/`, `/compare/nordictrack-1750-vs-2450/`
 - **Tools**: space calculator, electricity-cost calculator, treadmill selector
 
@@ -128,6 +130,7 @@ Long-form blog/editorial pages (also 2,500+ words, same validator):
 - `/treadmill-reviews-2026` — testing methodology, scoring rubric, and category winners across all three flagship guides.
 - `/treadmill-buying-guide-2026` — educational buying guide (motor power, deck size, folding vs. fixed, budget tiers) that funnels readers into the flagship guides.
 - `/treadmill-buyers-guide` — a step-by-step purchase checklist, complementary to (and cross-linked with) the guide above.
+- `/treadmills-for-sale` — where to buy, what to pay, and what each sales channel costs you after checkout.
 
 Individual model reviews, brand hub pages, and category/price roundups (also 2,500+ words each, same validator) — recreated from prior-site page-performance data. Browse the full set from `/best-of`, or see below:
 
@@ -201,6 +204,38 @@ calorie figures run optimistic, and that nutrition questions belong with a regis
 The heart-rate page states that 220-minus-age misses individuals by ten to twelve beats routinely
 and that beta blockers invalidate the arithmetic entirely.
 
+
+### Buy-intent cluster
+
+`/treadmills-for-sale/` claims the "treadmill for sale" / "treadmills for sale" head term, which
+the site had no page for despite owning most of the pages a reader needs after it. It is framed
+around the four markets that sell the same machine at four different prices — new retail,
+model-year clearance, open-box/refurbished and private used — and what each one is worth once
+delivery, warranty and returns are priced in. It carries no product specifications, so nothing on
+it needs verifying against a manufacturer.
+
+It sits in `/price/` under "Deciding what to spend" and is linked contextually from eight
+existing pages: `/best-time-of-year-to-buy-a-treadmill/`, `/new-vs-used-treadmill/`,
+`/how-much-should-you-spend-on-a-treadmill/`, `/cheap-vs-premium-treadmill/`,
+`/used-treadmill-buying-checklist/`, `/treadmill-buying-guide-2026/`, `/best-treadmills/` and
+`/treadmills-over-2500/`, plus the `/best-of/` grid.
+
+### Sole F80 and F85
+
+Both machines were referenced across the site — the F80 on ten pages — with no page to point at,
+and both are among the highest-volume model queries in the category. They are written and shipped
+as **editorial drafts** rather than published pages, because their published specifications
+genuinely conflict: several generations have been sold under each name with real changes
+underneath, retailer listings carry forward older specification blocks, and the manufacturer's own
+current listings do not agree with the review sources on motor rating or weight capacity. Rather
+than pick a version of the numbers, each page is built around the verification framework and
+declares the contested figures in `dataPending`.
+
+The consequence is that both are `noindex`, excluded from the sitemap and unlinked from
+navigation, exactly like `/horizon-fitness/`. Confirm the listed figures against the manufacturer
+for a specific model year, add them to the spec, delete the `dataPending` block and regenerate —
+at which point they become indexable and can be linked from `/reviews/`, `/sole-fitness/` and the
+ten pages that mention the F80 in passing.
 
 All outbound product links use Amazon search URLs tagged with the `sktiger-20` Associates ID (`rel="sponsored nofollow noopener"`). Swap in real ASIN/product links and product photography as they become available. Product specs on the newly recreated pages are editorial approximations in the site's existing style (same convention as the original flagship guides) — verify against manufacturer data before treating any number as authoritative.
 
