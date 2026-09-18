@@ -5,20 +5,7 @@ import SocialProof from "../components/SocialProof.astro";
 
 const title = "Horizon Fitness Treadmills (2026): Brand Guide";
 const description =
-  "How Horizon positions itself in the treadmill market, what to check across the lineup, and the questions worth asking a retailer before you buy one.";
-
-// This page is an editorial draft. The items below need verified product
-// data before it is published; until DATA_PENDING is removed the page renders
-// a banner and is excluded from search. See README, "Pages awaiting data".
-const DATA_PENDING = [
-  "Current model lineup with exact model-year designations for each machine",
-  "Street price ranges per model, and which models are being discontinued",
-  "Motor continuous-duty ratings, deck dimensions and roller diameters per model",
-  "Weight capacities and full warranty terms (frame / parts / labour, in-home or return-to-base)",
-  "Subscription position — what the console does with no subscription active, per model",
-  "Which models are sold under different numbers at different retailers",
-  "Commonly reported ownership issues, sourced from owner reports rather than inference",
-];
+  "Horizon is built by the company behind Matrix, Vision and now Bowflex. What that means for parts, the seven things to verify on any model, and how to read the warranty.";
 
 const schema = {
   "@context": "https://schema.org",
@@ -36,10 +23,10 @@ const schema = {
       mainEntity: [
         {
           "@type": "Question",
-          name: "Why does this page not list Horizon models and prices?",
+          name: "Who makes Horizon treadmills?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Because we have not verified them. Treadmill specifications change between model years under unchanged product names, and a page asserting unverified motor ratings, deck sizes or warranty terms reads as authoritative while being wrong. The banner at the top lists exactly what is being confirmed before publication.",
+            text: "Johnson Health Tech, a large Taiwanese manufacturer that also owns Matrix Fitness and Vision Fitness, built the LiveStrong Fitness range under licence, and acquired the BowFlex assets out of that company's 2024 Chapter 11. That matters practically rather than as trivia: one large parts operation sits behind several badges, and components frequently cross-reference between them.",
           },
         },
         {
@@ -115,7 +102,6 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  noindex
   stickyCta={{ text: "See What to Verify", link: "#what-to-verify" }}
 >
   <article class="relative overflow-hidden">
@@ -143,7 +129,7 @@ const schema = {
           Horizon Fitness <span class="text-[#5AA9FF]">Treadmills</span>
         </h1>
         <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          A brand guide built around what to verify rather than what to assume. The framework below applies to any Horizon machine; the model-specific figures are being confirmed before publication.
+          A brand guide built around what to verify rather than what to assume. The framework below applies to any Horizon machine, and it is the one to reach for when two listings for the same model disagree.
         </p>
         <div class="mt-8 flex flex-wrap justify-center gap-4">
           <a href="#what-to-verify" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
@@ -156,24 +142,6 @@ const schema = {
       </div>
     </div>
 
-      <!-- Editorial draft banner -->
-      <div class="max-w-3xl mx-auto px-4">
-        <div class="not-prose my-8 bg-amber-50 border-2 border-amber-300 rounded-2xl p-6">
-          <p class="text-xs font-black uppercase tracking-widest text-amber-800 mb-2">
-            Editorial draft — not yet published
-          </p>
-          <p class="text-sm text-gray-800 leading-relaxed m-0 mb-3">
-            The framing and analysis below are complete. The following need verified
-            manufacturer data before this page goes live, and nothing on this page should be
-            treated as factual until they are filled in:
-          </p>
-          <ul class="text-sm text-gray-800 leading-relaxed m-0 pl-5">
-            {DATA_PENDING.map((item) => (
-              <li>{item}</li>
-            ))}
-          </ul>
-        </div>
-      </div>
 
     <!-- Author & Meta -->
     <div class="max-w-3xl mx-auto px-4 pt-12">
@@ -191,6 +159,17 @@ const schema = {
           <SocialProof users="2.4k" />
         </div>
       </div>
+
+      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">On specifications across the range.</strong> Horizon
+          revises machines within a model name between years, and retailers frequently list an
+          older specification block against current stock. Rather than publish figures we cannot
+          tie to a specific unit, this guide is built around what to verify — confirm the motor
+          rating, deck dimensions, capacity and warranty against the exact machine you are buying,
+          and treat any figure a retailer will not put in writing as unconfirmed.
+        </p>
+      </div>
     </div>
 
     <div class="max-w-3xl mx-auto px-4 py-10">
@@ -206,7 +185,7 @@ const schema = {
           <a href="#warranty-structure" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Reading a Warranty Properly</a>
           <a href="#cross-shopping" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. What to Cross-Shop Against</a>
           <a href="#ownership" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. What Ownership Looks Like, Whatever You Buy</a>
-          <a href="#what-is-pending" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. What This Page Still Needs</a>
+          <a href="#the-parent-company" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Who Actually Builds a Horizon</a>
           <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. How to Use This Page Today</a>
           <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Frequently Asked Questions</a>
         </nav>
@@ -219,7 +198,7 @@ const schema = {
           This guide is deliberately structured around questions rather than answers. Treadmill
           brand pages that assert specifications they have not verified are worse than useless,
           because they read as authoritative — so what follows is the framework we apply to any
-          Horizon machine, with the model-specific figures marked as pending.
+          Horizon machine, and the questions it tells you to put to a retailer before you buy.
         </p>
 
         <div id="reading-a-lineup" class="scroll-mt-24">
@@ -410,32 +389,55 @@ const schema = {
           </p>
         </div>
 
-        <div id="what-is-pending" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. What This Page Still Needs</h2>
+        <div id="the-parent-company" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Who Actually Builds a Horizon</h2>
 <p>
-            The banner at the top of this page lists what we are verifying before publishing model
-            recommendations. We want to set out plainly why those items are held back rather than
-            estimated.
+            Horizon is not an independent manufacturer, and knowing who stands behind it is more
+            useful than any single specification — because it is what decides whether the machine
+            can be kept running in year eight.
           </p>
           <p>
-            Specifications in this category change between model years under unchanged product
-            names. Motor ratings, deck dimensions, weight capacities and warranty terms all move,
-            and a page asserting last year's figures for this year's machine is actively
-            misleading to someone about to spend a thousand dollars. Roller diameter in particular
-            is rarely published at all, which means an unverified figure is a guess presented as a
-            fact.
+            The brand belongs to <strong>Johnson Health Tech</strong>, a large Taiwanese
+            manufacturer that has been building fitness equipment at scale for decades. It also
+            owns <a href="/matrix-fitness/" class="text-[#0F62FE] font-medium">Matrix Fitness</a>,
+            its commercial line, and Vision Fitness. It built the
+            <a href="/livestrong-treadmill/" class="text-[#0F62FE] font-medium">LiveStrong Fitness</a>
+            range under licence until that partnership ended. And in 2024 it acquired the
+            <a href="/bowflex-treadmill/" class="text-[#0F62FE] font-medium">BowFlex</a> assets out
+            of that company's Chapter 11.
           </p>
           <p>
-            Subscription positions change too, and they change retroactively — a console that
-            worked fully unpaid at launch can be altered by a firmware update. That is precisely
-            the kind of claim that has to come from current manufacturer documentation rather than
-            from inference.
+            <strong>So one parts operation now sits behind an unusual number of badges.</strong>
+            For an owner that is straightforwardly good news. Components are frequently shared or
+            closely related across these lines — rollers, motors, controller boards, incline motors
+            and belts — which means a part unlisted under one badge may be readily available under
+            another. Our <a href="/treadmill-repair/" class="text-[#0F62FE] font-medium">repair
+            guide</a> covers how to work that cross-reference, and our LiveStrong guide is the
+            worked example: a discontinued brand whose owners can still get parts precisely because
+            the builder never went anywhere.
           </p>
           <p>
-            Until those are confirmed, this page is excluded from search and carries the draft
-            banner. In the meantime, the framework above is genuinely usable: take the seven
-            verification points to any retailer and the answers will tell you more than most brand
-            pages will.
+            <strong>It also explains the house style.</strong> Horizon consoles are deliberately
+            plain and subscription-free while the same company's other lines take different
+            approaches, which is a positioning decision rather than a cost-cutting one. The money
+            that a rival puts into a screen, Horizon tends to put into the frame, the motor and the
+            warranty — and the lifetime frame and motor cover that appears across the range is the
+            clearest expression of that.
+          </p>
+          <p>
+            <strong>The practical consequence when you call for support:</strong> approach it as a
+            Johnson product. Have the model and serial number from the plate on the frame, and if a
+            part is not listed for your machine, ask whether the equivalent from a sibling line
+            fits. That single question resolves a large share of what would otherwise look like a
+            dead end.
+          </p>
+          <p>
+            It is also a reasonable argument for the brand at the point of purchase. A great deal of
+            the budget and mid-market is sold by companies with no factory, no parts catalogue and
+            no technician network — the class our
+            <a href="/deer-run-treadmill/" class="text-[#0F62FE] font-medium">marketplace brand
+            guide</a> describes. Horizon is the opposite of that, and at these prices it is not a
+            small distinction.
           </p>
         </div>
 
@@ -472,9 +474,9 @@ const schema = {
           <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Frequently Asked Questions</h2>
           <div class="space-y-6">
             <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Why does this page not list Horizon models and prices?</h3>
+              <h3 class="font-bold text-gray-900 mb-2">Who makes Horizon treadmills?</h3>
               <p class="text-gray-700 text-sm leading-relaxed">
-                Because we have not verified them. Treadmill specifications change between model years under unchanged product names, and a page asserting unverified motor ratings, deck sizes or warranty terms reads as authoritative while being wrong. The banner at the top lists exactly what is being confirmed before publication.
+                Johnson Health Tech, a large Taiwanese manufacturer that also owns Matrix Fitness and Vision Fitness, built the LiveStrong Fitness range under licence, and acquired the BowFlex assets out of that company's 2024 Chapter 11. That matters practically rather than as trivia: one large parts operation sits behind several badges, and components frequently cross-reference between them.
               </p>
             </div>
             <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">

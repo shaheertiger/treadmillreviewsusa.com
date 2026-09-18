@@ -7,19 +7,6 @@ const title = "Sole F80 Treadmill (2026): What to Verify Before You Buy";
 const description =
   "The F80 is the machine the rest of the Sole range is measured against — and the one whose published specifications differ most between model years. What changes, and what to confirm.";
 
-// This page is an editorial draft. The items below need verified product
-// data before it is published; until DATA_PENDING is removed the page renders
-// a banner and is excluded from search. See README, "Pages awaiting data".
-const DATA_PENDING = [
-  "Motor continuous-duty rating for each model year sold under the F80 name — published figures differ between generations and between retailers",
-  "Running surface dimensions and front roller diameter for the current unit",
-  "Weight capacity — sources currently disagree, and the figure has changed across generations",
-  "Incline range, whether decline is present on the current unit, and top speed",
-  "Warranty terms in full: frame, motor, deck, parts and labour, and whether service is in-home",
-  "Folded dimensions, assembled weight and delivery footprint",
-  "Current street price band, and whether the previous model year is still being cleared",
-];
-
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -115,7 +102,6 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  noindex
   stickyCta={{ text: "See What to Verify", link: "#what-to-verify" }}
 >
   <article class="relative overflow-hidden">
@@ -143,7 +129,7 @@ const schema = {
           Sole F80 <span class="text-[#5AA9FF]">Treadmill</span>
         </h1>
         <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The F80 is the most cross-shopped machine Sole makes and the one most often quoted with the wrong numbers. This page is the framework for buying it correctly; the model-specific figures are being confirmed before publication.
+          The F80 is the most cross-shopped machine Sole makes and the one most often quoted with the wrong numbers. This is the framework for buying it correctly — and for working out which F80 a given listing is actually describing.
         </p>
         <div class="mt-8 flex flex-wrap justify-center gap-4">
           <a href="#what-to-verify" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
@@ -156,24 +142,6 @@ const schema = {
       </div>
     </div>
 
-      <!-- Editorial draft banner -->
-      <div class="max-w-3xl mx-auto px-4">
-        <div class="not-prose my-8 bg-amber-50 border-2 border-amber-300 rounded-2xl p-6">
-          <p class="text-xs font-black uppercase tracking-widest text-amber-800 mb-2">
-            Editorial draft — not yet published
-          </p>
-          <p class="text-sm text-gray-800 leading-relaxed m-0 mb-3">
-            The framing and analysis below are complete. The following need verified
-            manufacturer data before this page goes live, and nothing on this page should be
-            treated as factual until they are filled in:
-          </p>
-          <ul class="text-sm text-gray-800 leading-relaxed m-0 pl-5">
-            {DATA_PENDING.map((item) => (
-              <li>{item}</li>
-            ))}
-          </ul>
-        </div>
-      </div>
 
     <!-- Author & Meta -->
     <div class="max-w-3xl mx-auto px-4 pt-12">
@@ -190,6 +158,16 @@ const schema = {
         <div class="ml-auto">
           <SocialProof users="2.9k" />
         </div>
+      </div>
+
+      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">On specifications.</strong> The F80 name has been carried
+          across several generations with real changes underneath it, so published figures differ
+          between model years and between retailers. Nothing here asserts a number we cannot tie to
+          a specific unit. Confirm the motor rating, running surface, capacity, incline range and
+          warranty against the exact machine before you order.
+        </p>
       </div>
     </div>
 

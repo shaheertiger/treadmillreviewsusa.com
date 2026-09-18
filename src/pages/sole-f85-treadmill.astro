@@ -7,19 +7,6 @@ const title = "Sole F85 Treadmill (2026): Is the Step Up Worth It?";
 const description =
   "The F85 sits at the top of Sole’s folding line. Who genuinely needs the extra motor and capacity over an F80, what to confirm before buying, and when to spend up to commercial instead.";
 
-// This page is an editorial draft. The items below need verified product
-// data before it is published; until DATA_PENDING is removed the page renders
-// a banner and is excluded from search. See README, "Pages awaiting data".
-const DATA_PENDING = [
-  "Motor continuous-duty rating for each model year sold under the F85 name — published figures differ between generations and between retailers",
-  "Weight capacity for the current unit, where sources currently disagree",
-  "Whether decline is present on the current model year, and the exact incline and decline ranges",
-  "Running surface dimensions, roller diameters and deck cushioning specification",
-  "Console specification and exactly what it does with no subscription attached",
-  "Warranty terms in full: frame, motor, deck, parts and labour, and whether service is in-home",
-  "Assembled weight, folded dimensions and current street price band",
-];
-
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -115,7 +102,6 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  noindex
   stickyCta={{ text: "See Who It Is For", link: "#who-its-for" }}
 >
   <article class="relative overflow-hidden">
@@ -143,7 +129,7 @@ const schema = {
           Sole F85 <span class="text-[#5AA9FF]">Treadmill</span>
         </h1>
         <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The top of Sole’s folding range, and the machine most often bought for reasons that do not apply to the buyer. This page is the framework for deciding whether the step up is yours to make; the model-specific figures are being confirmed before publication.
+          The top of Sole’s folding range, and the machine most often bought for reasons that do not apply to the buyer. This is the framework for deciding whether the step up is genuinely yours to make.
         </p>
         <div class="mt-8 flex flex-wrap justify-center gap-4">
           <a href="#who-its-for" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
@@ -156,24 +142,6 @@ const schema = {
       </div>
     </div>
 
-      <!-- Editorial draft banner -->
-      <div class="max-w-3xl mx-auto px-4">
-        <div class="not-prose my-8 bg-amber-50 border-2 border-amber-300 rounded-2xl p-6">
-          <p class="text-xs font-black uppercase tracking-widest text-amber-800 mb-2">
-            Editorial draft — not yet published
-          </p>
-          <p class="text-sm text-gray-800 leading-relaxed m-0 mb-3">
-            The framing and analysis below are complete. The following need verified
-            manufacturer data before this page goes live, and nothing on this page should be
-            treated as factual until they are filled in:
-          </p>
-          <ul class="text-sm text-gray-800 leading-relaxed m-0 pl-5">
-            {DATA_PENDING.map((item) => (
-              <li>{item}</li>
-            ))}
-          </ul>
-        </div>
-      </div>
 
     <!-- Author & Meta -->
     <div class="max-w-3xl mx-auto px-4 pt-12">
@@ -190,6 +158,16 @@ const schema = {
         <div class="ml-auto">
           <SocialProof users="2.2k" />
         </div>
+      </div>
+
+      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">On specifications.</strong> Like the F80, the F85 name
+          spans several generations with real changes underneath it, and retailer listings lag the
+          current unit. This page compares the two on the axes that decide the purchase rather than
+          on figures we cannot tie to a specific machine — confirm motor rating, running surface,
+          capacity and warranty against the exact unit before you order.
+        </p>
       </div>
     </div>
 

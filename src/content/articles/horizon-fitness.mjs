@@ -2,7 +2,7 @@ export default {
   slug: 'horizon-fitness',
   title: 'Horizon Fitness Treadmills (2026): Brand Guide',
   description:
-    'How Horizon positions itself in the treadmill market, what to check across the lineup, and the questions worth asking a retailer before you buy one.',
+    'Horizon is built by the company behind Matrix, Vision and now Bowflex. What that means for parts, the seven things to verify on any model, and how to read the warranty.',
   crumbLabel: 'Horizon Fitness Treadmills',
   kicker: 'Brand Guide',
   updated: 'September 2026',
@@ -11,26 +11,23 @@ export default {
   socialProof: '2.4k',
   h1: ['Horizon Fitness', 'Treadmills'],
   standfirst:
-    'A brand guide built around what to verify rather than what to assume. The framework below applies to any Horizon machine; the model-specific figures are being confirmed before publication.',
+    'A brand guide built around what to verify rather than what to assume. The framework below applies to any Horizon machine, and it is the one to reach for when two listings for the same model disagree.',
   ctas: [
     { label: 'What to Verify', href: '#what-to-verify' },
     { label: 'How to Read a Lineup', href: '#reading-a-lineup' },
   ],
   tags: ['horizon fitness treadmills', 'horizon treadmill', 'treadmill brands', 'horizon 7.4 at', 'brand guide'],
   stickyCta: { text: 'See What to Verify', link: '#what-to-verify' },
-  dataPending: [
-    'Current model lineup with exact model-year designations for each machine',
-    'Street price ranges per model, and which models are being discontinued',
-    'Motor continuous-duty ratings, deck dimensions and roller diameters per model',
-    'Weight capacities and full warranty terms (frame / parts / labour, in-home or return-to-base)',
-    'Subscription position — what the console does with no subscription active, per model',
-    'Which models are sold under different numbers at different retailers',
-    'Commonly reported ownership issues, sourced from owner reports rather than inference',
-  ],
   lead: `This guide is deliberately structured around questions rather than answers. Treadmill
           brand pages that assert specifications they have not verified are worse than useless,
           because they read as authoritative — so what follows is the framework we apply to any
-          Horizon machine, with the model-specific figures marked as pending.`,
+          Horizon machine, and the questions it tells you to put to a retailer before you buy.`,
+  note: `<strong class="text-gray-900">On specifications across the range.</strong> Horizon
+          revises machines within a model name between years, and retailers frequently list an
+          older specification block against current stock. Rather than publish figures we cannot
+          tie to a specific unit, this guide is built around what to verify — confirm the motor
+          rating, deck dimensions, capacity and warranty against the exact machine you are buying,
+          and treat any figure a retailer will not put in writing as unconfirmed.`,
   sections: [
     {
       id: 'reading-a-lineup',
@@ -221,32 +218,55 @@ export default {
           </p>`,
     },
     {
-      id: 'what-is-pending',
-      heading: 'What This Page Still Needs',
+      id: 'the-parent-company',
+      heading: 'Who Actually Builds a Horizon',
       html: `          <p>
-            The banner at the top of this page lists what we are verifying before publishing model
-            recommendations. We want to set out plainly why those items are held back rather than
-            estimated.
+            Horizon is not an independent manufacturer, and knowing who stands behind it is more
+            useful than any single specification — because it is what decides whether the machine
+            can be kept running in year eight.
           </p>
           <p>
-            Specifications in this category change between model years under unchanged product
-            names. Motor ratings, deck dimensions, weight capacities and warranty terms all move,
-            and a page asserting last year's figures for this year's machine is actively
-            misleading to someone about to spend a thousand dollars. Roller diameter in particular
-            is rarely published at all, which means an unverified figure is a guess presented as a
-            fact.
+            The brand belongs to <strong>Johnson Health Tech</strong>, a large Taiwanese
+            manufacturer that has been building fitness equipment at scale for decades. It also
+            owns <a href="/matrix-fitness/" class="text-[#0F62FE] font-medium">Matrix Fitness</a>,
+            its commercial line, and Vision Fitness. It built the
+            <a href="/livestrong-treadmill/" class="text-[#0F62FE] font-medium">LiveStrong Fitness</a>
+            range under licence until that partnership ended. And in 2024 it acquired the
+            <a href="/bowflex-treadmill/" class="text-[#0F62FE] font-medium">BowFlex</a> assets out
+            of that company's Chapter 11.
           </p>
           <p>
-            Subscription positions change too, and they change retroactively — a console that
-            worked fully unpaid at launch can be altered by a firmware update. That is precisely
-            the kind of claim that has to come from current manufacturer documentation rather than
-            from inference.
+            <strong>So one parts operation now sits behind an unusual number of badges.</strong>
+            For an owner that is straightforwardly good news. Components are frequently shared or
+            closely related across these lines — rollers, motors, controller boards, incline motors
+            and belts — which means a part unlisted under one badge may be readily available under
+            another. Our <a href="/treadmill-repair/" class="text-[#0F62FE] font-medium">repair
+            guide</a> covers how to work that cross-reference, and our LiveStrong guide is the
+            worked example: a discontinued brand whose owners can still get parts precisely because
+            the builder never went anywhere.
           </p>
           <p>
-            Until those are confirmed, this page is excluded from search and carries the draft
-            banner. In the meantime, the framework above is genuinely usable: take the seven
-            verification points to any retailer and the answers will tell you more than most brand
-            pages will.
+            <strong>It also explains the house style.</strong> Horizon consoles are deliberately
+            plain and subscription-free while the same company's other lines take different
+            approaches, which is a positioning decision rather than a cost-cutting one. The money
+            that a rival puts into a screen, Horizon tends to put into the frame, the motor and the
+            warranty — and the lifetime frame and motor cover that appears across the range is the
+            clearest expression of that.
+          </p>
+          <p>
+            <strong>The practical consequence when you call for support:</strong> approach it as a
+            Johnson product. Have the model and serial number from the plate on the frame, and if a
+            part is not listed for your machine, ask whether the equivalent from a sibling line
+            fits. That single question resolves a large share of what would otherwise look like a
+            dead end.
+          </p>
+          <p>
+            It is also a reasonable argument for the brand at the point of purchase. A great deal of
+            the budget and mid-market is sold by companies with no factory, no parts catalogue and
+            no technician network — the class our
+            <a href="/deer-run-treadmill/" class="text-[#0F62FE] font-medium">marketplace brand
+            guide</a> describes. Horizon is the opposite of that, and at these prices it is not a
+            small distinction.
           </p>`,
     },
     {
@@ -276,8 +296,8 @@ export default {
   ],
   faqs: [
     {
-      q: 'Why does this page not list Horizon models and prices?',
-      a: `Because we have not verified them. Treadmill specifications change between model years under unchanged product names, and a page asserting unverified motor ratings, deck sizes or warranty terms reads as authoritative while being wrong. The banner at the top lists exactly what is being confirmed before publication.`,
+      q: 'Who makes Horizon treadmills?',
+      a: `Johnson Health Tech, a large Taiwanese manufacturer that also owns Matrix Fitness and Vision Fitness, built the LiveStrong Fitness range under licence, and acquired the BowFlex assets out of that company's 2024 Chapter 11. That matters practically rather than as trivia: one large parts operation sits behind several badges, and components frequently cross-reference between them.`,
     },
     {
       q: 'What should I check before buying any Horizon treadmill?',

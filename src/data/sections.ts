@@ -196,6 +196,24 @@ export const SECTIONS: Section[] = [
             badge: 'Low impact',
             url: '/best-treadmills-for-bad-knees/',
           },
+          {
+            title: 'Walking Pads Explained',
+            description: 'The format, what it gives up, and the specs in order of importance.',
+            badge: 'Category guide',
+            url: '/walking-pad/',
+          },
+          {
+            title: 'Foldable Walking Pads',
+            description: 'What the double fold buys, and what the hinge costs you.',
+            badge: 'Buyer’s guide',
+            url: '/foldable-walking-pad/',
+          },
+          {
+            title: 'Walking Pads with Incline',
+            description: 'The feature that takes a pad from steps to genuine training.',
+            badge: 'Buyer’s guide',
+            url: '/walking-pad-with-incline/',
+          },
         ],
       },
       {
@@ -359,6 +377,12 @@ export const SECTIONS: Section[] = [
             badge: 'Retail guide',
             url: '/dicks-sporting-goods-treadmills/',
           },
+          {
+            title: 'Treadmill Black Friday',
+            description: 'Which discounts are real, and why November is rarely the year’s low.',
+            badge: 'Timing guide',
+            url: '/treadmill-black-friday/',
+          },
         ],
       },
       {
@@ -462,6 +486,24 @@ export const SECTIONS: Section[] = [
             badge: 'Brand guide',
             url: '/bowflex-treadmill/',
           },
+          {
+            title: 'Horizon Fitness Treadmills',
+            description: 'Built by the company behind Matrix, Vision and now Bowflex — and what that buys you.',
+            badge: 'Brand guide',
+            url: '/horizon-fitness/',
+          },
+          {
+            title: 'Echelon Treadmills',
+            description: 'The cheaper connected option, and whether the saving survives five years.',
+            badge: 'Brand guide',
+            url: '/echelon-treadmill/',
+          },
+          {
+            title: 'Weslo Treadmills',
+            description: 'The budget brand that went quiet — and where its parts still come from.',
+            badge: 'Owner’s guide',
+            url: '/weslo-treadmill/',
+          },
         ],
       },
       {
@@ -524,6 +566,29 @@ export const SECTIONS: Section[] = [
             description: 'A licensed badge with no single maker — how to find yours.',
             badge: 'Owner’s guide',
             url: '/reebok-treadmill/',
+          },
+        ],
+      },
+      {
+        name: 'Walking pad brands',
+        pages: [
+          {
+            title: 'KingSmith WalkingPad',
+            description: 'The brand that named the category, and whether it is still the buy.',
+            badge: 'Brand guide',
+            url: '/kingsmith-walking-pad/',
+          },
+          {
+            title: 'UREVO Walking Pads',
+            description: 'The marketplace volume leader — what a best-seller badge really means.',
+            badge: 'Brand guide',
+            url: '/urevo-walking-pad/',
+          },
+          {
+            title: 'Sperax Walking Pads',
+            description: 'Buying at the bottom of the market without getting burned.',
+            badge: 'Brand guide',
+            url: '/sperax-walking-pad/',
           },
         ],
       },
@@ -667,6 +732,18 @@ export const SECTIONS: Section[] = [
             description: 'The Sole treadmill most owners actually recommend.',
             badge: 'Review',
             url: '/sole-f65-treadmill/',
+          },
+          {
+            title: 'Sole F80 Treadmill',
+            description: 'The most cross-shopped Sole, and how to tell which F80 a listing describes.',
+            badge: 'Model review',
+            url: '/sole-f80-treadmill/',
+          },
+          {
+            title: 'Sole F85 Treadmill',
+            description: 'The top of the folding range — whether the step up from an F80 is yours to make.',
+            badge: 'Model review',
+            url: '/sole-f85-treadmill/',
           },
         ],
       },
@@ -886,6 +963,12 @@ export const SECTIONS: Section[] = [
             description: 'The height arithmetic that decides it, and the realistic speed for real work.',
             badge: 'Setup guide',
             url: '/treadmill-desk/',
+          },
+          {
+            title: 'Anti-Gravity Treadmills',
+            description: 'How air-pressure unweighting works, and why you book one rather than buy one.',
+            badge: 'Explainer',
+            url: '/anti-gravity-treadmill/',
           },
         ],
       },
@@ -1209,21 +1292,18 @@ export const SECTIONS: Section[] = [
     slug: 'tools',
     name: 'Tools & Calculators',
     icon: '🧮',
-    // No calculators are built yet, so the hub is kept out of the index until
-    // it has destinations of its own rather than pointers to articles.
-    noindex: true,
-    tagline: 'Interactive answers to the three questions that need arithmetic.',
+    tagline: 'The treadmill questions that need arithmetic, with the arithmetic shown.',
     title: 'Treadmill Tools & Calculators',
     metaDescription:
-      'Planned Treadmill Reviews USA calculators for room fit, running cost and model selection — with the guides that answer each question in full today.',
+      'The treadmill questions that come down to numbers — calories by speed and incline, room fit including clearance, running cost at your rate — with the equations and tables to work each one out.',
     heading: 'Tools and',
     highlight: 'calculators',
     standfirst:
-      'Three treadmill questions need arithmetic rather than prose. Until the calculators land, the guides below answer each one in full.',
+      'Four treadmill questions come down to arithmetic rather than judgement. Each page below gives you the equation, the worked tables and the figures a calculator would use.',
     intro: [
-      'Most treadmill decisions are judgement calls, but three are pure arithmetic: whether a given machine fits your room once you include the clearance behind it, what it will add to your electricity bill at your rate and usage, and which model matches your height, weight, pace and budget.',
-      'Interactive versions of all three are in progress. This page is the home they will land on, and it is deliberately excluded from search until they exist — a hub that only points elsewhere is not worth indexing.',
-      'In the meantime, each guide below answers its question completely, including the figures a calculator would use.',
+      'Most treadmill decisions are judgement calls, but a few are pure arithmetic: how many calories a given speed and incline actually costs someone your weight, whether a machine fits your room once you include the clearance behind the deck, what it will add to your electricity bill at your rate and usage, and which model matches your height, stride and budget.',
+      'Each page here answers its question completely rather than hiding the method behind a widget. The calorie page carries the published metabolic equations and the tables worked out from them; the space and running-cost guides carry the same figures a calculator would use. That is deliberate — a number you can reproduce is worth more than one you have to trust.',
+      'Interactive versions are in progress and will land on this page as they are built.',
     ],
     groups: [
       {

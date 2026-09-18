@@ -11,7 +11,7 @@ export default {
   socialProof: '2.2k',
   h1: ['Sole F85', 'Treadmill'],
   standfirst:
-    'The top of Sole’s folding range, and the machine most often bought for reasons that do not apply to the buyer. This page is the framework for deciding whether the step up is yours to make; the model-specific figures are being confirmed before publication.',
+    'The top of Sole’s folding range, and the machine most often bought for reasons that do not apply to the buyer. This is the framework for deciding whether the step up is genuinely yours to make.',
   ctas: [
     { label: 'Who It Is For', href: '#who-its-for' },
     { label: 'What to Verify', href: '#what-to-verify' },
@@ -19,20 +19,16 @@ export default {
   tags: ['sole f85 treadmill', 'sole f85', 'sole fitness', 'sole f80 vs f85', 'treadmill reviews'],
   stickyCta: { text: 'See Who It Is For', link: '#who-its-for' },
   breadcrumb: { name: 'Reviews', url: '/reviews/' },
-  dataPending: [
-    'Motor continuous-duty rating for each model year sold under the F85 name — published figures differ between generations and between retailers',
-    'Weight capacity for the current unit, where sources currently disagree',
-    'Whether decline is present on the current model year, and the exact incline and decline ranges',
-    'Running surface dimensions, roller diameters and deck cushioning specification',
-    'Console specification and exactly what it does with no subscription attached',
-    'Warranty terms in full: frame, motor, deck, parts and labour, and whether service is in-home',
-    'Assembled weight, folded dimensions and current street price band',
-  ],
   lead: `The F85 is the machine people buy when they want to be certain they have bought enough
           treadmill. That is a reasonable instinct and an expensive one, because the step up from
           the F80 is real but narrow: it buys headroom rather than a different kind of machine.
           Whether that headroom is worth several hundred dollars depends on facts about you, not
           about the treadmill.`,
+  note: `<strong class="text-gray-900">On specifications.</strong> Like the F80, the F85 name
+          spans several generations with real changes underneath it, and retailer listings lag the
+          current unit. This page compares the two on the axes that decide the purchase rather than
+          on figures we cannot tie to a specific machine — confirm motor rating, running surface,
+          capacity and warranty against the exact unit before you order.`,
   sections: [
     {
       id: 'who-its-for',

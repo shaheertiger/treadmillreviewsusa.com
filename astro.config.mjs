@@ -16,8 +16,9 @@ const SECTION_HUBS = readdirSync(fileURLToPath(new URL('./src/pages', import.met
   .map((entry) => `/${entry.name}`);
 
 // Hubs that render with `noindex` because they have no destinations of their
-// own yet. Kept out of the sitemap so the two signals agree.
-const UNINDEXED_HUBS = ['/tools'];
+// own yet. Kept out of the sitemap so the two signals agree. Empty today —
+// every hub has real destinations — but the mechanism stays for the next one.
+const UNINDEXED_HUBS = [];
 
 // Editorial drafts awaiting verified product data render noindex and must stay
 // out of the sitemap so the two signals agree.
@@ -90,6 +91,28 @@ const PRIORITY_TIERS = [
     priority: 0.7,
     changefreq: 'monthly',
     paths: ['/xterra-treadmill', '/reebok-treadmill', '/treadmill-mat'],
+  },
+  {
+    // Walking pad cluster and round-three additions, September 2026
+    priority: 0.9,
+    changefreq: 'weekly',
+    paths: ['/walking-pad'],
+  },
+  {
+    priority: 0.8,
+    changefreq: 'monthly',
+    paths: [
+      '/foldable-walking-pad',
+      '/walking-pad-with-incline',
+      '/urevo-walking-pad',
+      '/kingsmith-walking-pad',
+      '/treadmill-black-friday',
+    ],
+  },
+  {
+    priority: 0.7,
+    changefreq: 'monthly',
+    paths: ['/sperax-walking-pad', '/weslo-treadmill', '/echelon-treadmill', '/anti-gravity-treadmill'],
   },
   {
     // Model reviews added September 2026

@@ -11,7 +11,7 @@ export default {
   socialProof: '2.9k',
   h1: ['Sole F80', 'Treadmill'],
   standfirst:
-    'The F80 is the most cross-shopped machine Sole makes and the one most often quoted with the wrong numbers. This page is the framework for buying it correctly; the model-specific figures are being confirmed before publication.',
+    'The F80 is the most cross-shopped machine Sole makes and the one most often quoted with the wrong numbers. This is the framework for buying it correctly — and for working out which F80 a given listing is actually describing.',
   ctas: [
     { label: 'What to Verify', href: '#what-to-verify' },
     { label: 'Where It Sits', href: '#where-it-sits' },
@@ -19,20 +19,16 @@ export default {
   tags: ['sole f80 treadmill', 'sole f80', 'sole fitness', 'folding treadmill', 'treadmill reviews'],
   stickyCta: { text: 'See What to Verify', link: '#what-to-verify' },
   breadcrumb: { name: 'Reviews', url: '/reviews/' },
-  dataPending: [
-    'Motor continuous-duty rating for each model year sold under the F80 name — published figures differ between generations and between retailers',
-    'Running surface dimensions and front roller diameter for the current unit',
-    'Weight capacity — sources currently disagree, and the figure has changed across generations',
-    'Incline range, whether decline is present on the current unit, and top speed',
-    'Warranty terms in full: frame, motor, deck, parts and labour, and whether service is in-home',
-    'Folded dimensions, assembled weight and delivery footprint',
-    'Current street price band, and whether the previous model year is still being cleared',
-  ],
   lead: `Every number you will read about the Sole F80 is true of some F80. The name has been
           carried across several generations with real changes underneath it, retailers list
           older specification blocks against current stock, and the result is a machine that is
           discussed confidently and described inconsistently. So this page is built around what
           to establish rather than what to assume.`,
+  note: `<strong class="text-gray-900">On specifications.</strong> The F80 name has been carried
+          across several generations with real changes underneath it, so published figures differ
+          between model years and between retailers. Nothing here asserts a number we cannot tie to
+          a specific unit. Confirm the motor rating, running surface, capacity, incline range and
+          warranty against the exact machine before you order.`,
   sections: [
     {
       id: 'where-it-sits',
