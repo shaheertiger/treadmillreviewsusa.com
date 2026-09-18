@@ -1,0 +1,416 @@
+export default {
+  slug: 'treadmill-calorie-calculator',
+  title: 'Treadmill Calorie Calculator (2026): The Real Numbers and the Formula',
+  description:
+    'The ACSM equations your treadmill console is not using, worked tables by speed, incline and body weight, and why the number on the display is roughly a third too high.',
+  crumbLabel: 'Treadmill Calorie Calculator',
+  kicker: 'Reference',
+  updated: 'September 2026',
+  updatedLong: 'September 18, 2026',
+  published: '2026-09-18',
+  socialProof: '4.2k',
+  h1: ['Treadmill Calorie', 'Calculator'],
+  standfirst:
+    'Your console does not know what you weigh, and it reports gross rather than net expenditure. Here are the published equations, the tables worked out, and the arithmetic to do it properly for yourself.',
+  ctas: [
+    { label: 'The Tables', href: '#tables' },
+    { label: 'Do It Yourself', href: '#the-formula' },
+  ],
+  tags: ['treadmill calorie calculator', 'treadmill calories burned', 'met values', 'acsm equation', 'incline calories'],
+  stickyCta: { text: 'Jump to the Tables', link: '#tables' },
+  breadcrumb: { name: 'Guides', url: '/guides/' },
+  lead: `There is no mystery in this calculation. Exercise physiology has published equations for
+          the oxygen cost of walking and running on a treadmill for decades, they are the basis of
+          every calculator online, and you can run them on a phone in about thirty seconds once
+          you know what they are.`,
+  note: `<strong class="text-gray-900">On the figures below.</strong> These are calculated from the
+          American College of Sports Medicine’s published metabolic equations for treadmill walking
+          and running. They are population estimates, not measurements of you — individual
+          efficiency, fitness, gait and body composition all move the real number, and the walking
+          equation is validated for roughly 1.9 to 3.7 mph while the running one applies from about
+          5 mph. Treat everything here as a good estimate rather than a measurement.`,
+  sections: [
+    {
+      id: 'why-the-console-is-wrong',
+      heading: 'Why the Console Number Is Too High',
+      html: `          <p>
+            Three separate reasons, and they compound.
+          </p>
+          <p>
+            <strong>It does not know your weight.</strong> Unless you entered it — and most people
+            never do — the console is using a default, commonly somewhere around 150 to 170 lbs.
+            Energy cost scales almost directly with body mass, so a 120 lb walker reading a
+            display calibrated for 165 lbs is being told they burned roughly a third more than they
+            did. The error runs the other way for a heavier user, which is the one case where
+            consoles under-report.
+          </p>
+          <p>
+            <strong>It reports gross rather than net expenditure.</strong> This is the big one and
+            almost nobody accounts for it. The equations below give total energy cost, which
+            includes the calories you would have burned in that half hour anyway simply by being
+            alive. Resting metabolism is about 1 MET, and at walking intensities that is a large
+            slice of the total. A 150 lb person walking 30 minutes at 3 mph on the flat has a gross
+            cost of around 118 kcal — but roughly 36 of those would have happened on the sofa. The
+            walk is worth about 82. That is a 30% overstatement, and it is the single biggest reason
+            treadmill calorie figures feel inflated.
+          </p>
+          <p>
+            <strong>It does not know your efficiency.</strong> Two people of the same weight at the
+            same speed can differ meaningfully in oxygen cost through gait, fitness and economy. The
+            equations describe a population average.
+          </p>
+          <p>
+            <strong>And if you hold the handrails, all of it is optimistic.</strong> Supporting body
+            weight through your arms substantially reduces the work your legs do, and the effect is
+            largest exactly where people hold on most — at steep inclines. A
+            <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30
+            session</a> done while gripping the rails is a different and much easier session than
+            the same numbers done unsupported, and no console can tell the difference.
+          </p>`,
+    },
+    {
+      id: 'the-formula',
+      heading: 'The Equations, and How to Use Them',
+      html: `          <p>
+            Two equations, one for walking and one for running. Both return <strong>VO2 in
+            millilitres of oxygen per kilogram per minute</strong>, which converts straight into
+            calories.
+          </p>
+          <p>
+            <strong>Walking</strong> (validated for roughly 1.9 to 3.7 mph):<br />
+            VO2 = (0.1 × speed) + (1.8 × speed × grade) + 3.5
+          </p>
+          <p>
+            <strong>Running</strong> (from about 5 mph, or lower if you are genuinely jogging rather
+            than walking fast):<br />
+            VO2 = (0.2 × speed) + (0.9 × speed × grade) + 3.5
+          </p>
+          <p>
+            <strong>Speed is in metres per minute</strong>, so multiply mph by 26.8.
+            <strong>Grade is a decimal fraction</strong>, so 10% incline is 0.10. The trailing 3.5
+            is resting metabolism, and it is exactly the term you subtract if you want net rather
+            than gross.
+          </p>
+          <p>
+            <strong>To get calories:</strong><br />
+            kcal per minute = VO2 × your weight in kg ÷ 200
+          </p>
+          <p>
+            Pounds to kilograms is divide by 2.205. And if you prefer thinking in METs, one MET is
+            3.5 mL/kg/min, so MET = VO2 ÷ 3.5.
+          </p>
+          <p>
+            <strong>Worked example.</strong> A 150 lb person walking 30 minutes at 3.0 mph on a 5%
+            incline. Speed is 3.0 × 26.8 = 80.4 m/min. Grade is 0.05. VO2 = (0.1 × 80.4) + (1.8 ×
+            80.4 × 0.05) + 3.5 = 8.04 + 7.24 + 3.5 = 18.78 mL/kg/min — about 5.4 METs. Weight is
+            150 ÷ 2.205 = 68 kg. So kcal/min = 18.78 × 68 ÷ 200 = 6.39, and 30 minutes is about
+            <strong>192 kcal gross</strong>. For net, drop the 3.5: VO2 becomes 15.28, giving about
+            156 kcal. The difference between those two numbers is the one your console is not
+            telling you about.
+          </p>`,
+    },
+    {
+      id: 'tables',
+      heading: 'The Tables, Worked Out',
+      html: `          <p>
+            Calculated from the equations above. The first table gives the intensity of each
+            combination in METs, which is useful for comparing efforts regardless of body weight.
+          </p>
+          <div class="not-prose my-8">
+            <div class="overflow-x-auto rounded-2xl border border-gray-200">
+              <table class="min-w-[520px] w-full text-sm text-left">
+                <thead class="bg-gray-900 text-white">
+                  <tr>
+                    <th class="px-4 py-3 font-bold">Speed</th>
+                    <th class="px-4 py-3 font-bold">0% grade</th>
+                    <th class="px-4 py-3 font-bold">5% grade</th>
+                    <th class="px-4 py-3 font-bold">10% grade</th>
+                    <th class="px-4 py-3 font-bold">12% grade</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100">
+                  <tr><td class="px-4 py-3 font-bold text-gray-900">2.5 mph walk</td><td class="px-4 py-3">2.9</td><td class="px-4 py-3">4.6</td><td class="px-4 py-3">6.3</td><td class="px-4 py-3">7.0</td></tr>
+                  <tr class="bg-gray-50"><td class="px-4 py-3 font-bold text-gray-900">3.0 mph walk</td><td class="px-4 py-3">3.3</td><td class="px-4 py-3">5.4</td><td class="px-4 py-3">7.4</td><td class="px-4 py-3">8.3</td></tr>
+                  <tr><td class="px-4 py-3 font-bold text-gray-900">3.5 mph walk</td><td class="px-4 py-3">3.7</td><td class="px-4 py-3">6.1</td><td class="px-4 py-3">8.5</td><td class="px-4 py-3">9.7</td></tr>
+                  <tr class="bg-gray-50"><td class="px-4 py-3 font-bold text-gray-900">5.0 mph run</td><td class="px-4 py-3">8.7</td><td class="px-4 py-3">10.4</td><td class="px-4 py-3">12.1</td><td class="px-4 py-3">12.8</td></tr>
+                  <tr><td class="px-4 py-3 font-bold text-gray-900">6.0 mph run</td><td class="px-4 py-3">10.2</td><td class="px-4 py-3">12.3</td><td class="px-4 py-3">14.3</td><td class="px-4 py-3">15.1</td></tr>
+                  <tr class="bg-gray-50"><td class="px-4 py-3 font-bold text-gray-900">7.0 mph run</td><td class="px-4 py-3">11.7</td><td class="px-4 py-3">14.1</td><td class="px-4 py-3">16.5</td><td class="px-4 py-3">17.4</td></tr>
+                  <tr><td class="px-4 py-3 font-bold text-gray-900">8.0 mph run</td><td class="px-4 py-3">13.3</td><td class="px-4 py-3">16.0</td><td class="px-4 py-3">18.8</td><td class="px-4 py-3">19.9</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="text-xs text-gray-500 mt-3 m-0">Intensity in METs, calculated from the ACSM walking and running equations. One MET is resting metabolism.</p>
+          </div>
+          <p>
+            The second table converts that into <strong>gross calories for a 30-minute
+            session</strong> at three body weights. Remember that these include the roughly 35 to 50
+            kcal your resting metabolism would have accounted for anyway.
+          </p>
+          <div class="not-prose my-8">
+            <div class="overflow-x-auto rounded-2xl border border-gray-200">
+              <table class="min-w-[520px] w-full text-sm text-left">
+                <thead class="bg-gray-900 text-white">
+                  <tr>
+                    <th class="px-4 py-3 font-bold">30 minutes at…</th>
+                    <th class="px-4 py-3 font-bold">125 lb</th>
+                    <th class="px-4 py-3 font-bold">150 lb</th>
+                    <th class="px-4 py-3 font-bold">200 lb</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100">
+                  <tr><td class="px-4 py-3 font-bold text-gray-900">2.5 mph, flat</td><td class="px-4 py-3">87</td><td class="px-4 py-3">104</td><td class="px-4 py-3">139</td></tr>
+                  <tr class="bg-gray-50"><td class="px-4 py-3 font-bold text-gray-900">3.0 mph, flat</td><td class="px-4 py-3">98</td><td class="px-4 py-3">118</td><td class="px-4 py-3">157</td></tr>
+                  <tr><td class="px-4 py-3 font-bold text-gray-900">3.0 mph, 5%</td><td class="px-4 py-3">160</td><td class="px-4 py-3">192</td><td class="px-4 py-3">255</td></tr>
+                  <tr class="bg-gray-50"><td class="px-4 py-3 font-bold text-gray-900">3.0 mph, 10%</td><td class="px-4 py-3">221</td><td class="px-4 py-3">265</td><td class="px-4 py-3">354</td></tr>
+                  <tr><td class="px-4 py-3 font-bold text-gray-900">3.0 mph, 12% (12-3-30)</td><td class="px-4 py-3">246</td><td class="px-4 py-3">295</td><td class="px-4 py-3">393</td></tr>
+                  <tr class="bg-gray-50"><td class="px-4 py-3 font-bold text-gray-900">3.5 mph, flat</td><td class="px-4 py-3">110</td><td class="px-4 py-3">131</td><td class="px-4 py-3">175</td></tr>
+                  <tr><td class="px-4 py-3 font-bold text-gray-900">3.5 mph, 10%</td><td class="px-4 py-3">253</td><td class="px-4 py-3">304</td><td class="px-4 py-3">405</td></tr>
+                  <tr class="bg-gray-50"><td class="px-4 py-3 font-bold text-gray-900">5.0 mph, flat</td><td class="px-4 py-3">258</td><td class="px-4 py-3">309</td><td class="px-4 py-3">412</td></tr>
+                  <tr><td class="px-4 py-3 font-bold text-gray-900">6.0 mph, flat</td><td class="px-4 py-3">303</td><td class="px-4 py-3">364</td><td class="px-4 py-3">485</td></tr>
+                  <tr class="bg-gray-50"><td class="px-4 py-3 font-bold text-gray-900">6.0 mph, 5%</td><td class="px-4 py-3">365</td><td class="px-4 py-3">438</td><td class="px-4 py-3">584</td></tr>
+                  <tr><td class="px-4 py-3 font-bold text-gray-900">7.0 mph, flat</td><td class="px-4 py-3">349</td><td class="px-4 py-3">418</td><td class="px-4 py-3">558</td></tr>
+                  <tr class="bg-gray-50"><td class="px-4 py-3 font-bold text-gray-900">8.0 mph, flat</td><td class="px-4 py-3">395</td><td class="px-4 py-3">473</td><td class="px-4 py-3">631</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="text-xs text-gray-500 mt-3 m-0">Gross kilocalories for 30 minutes, calculated from the ACSM equations. Subtract roughly 35 to 50 kcal for the net, exercise-only figure.</p>
+          </div>`,
+    },
+    {
+      id: 'incline',
+      heading: 'What Incline Actually Does',
+      html: `          <p>
+            The incline term is the most useful thing in the walking equation, because the
+            multiplier on grade is large relative to the multiplier on speed.
+          </p>
+          <p>
+            Look at the numbers. Walking at 3.0 mph on the flat is about 3.3 METs. At 10% grade the
+            same speed is about 7.4 METs — the work has more than doubled without walking any faster.
+            At 12%, it reaches roughly 8.3 METs, which is in the same territory as running about 5
+            mph on the flat.
+          </p>
+          <p>
+            <strong>That is the entire physiological argument for incline walking</strong>, and it
+            explains why the <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30
+            protocol</a> produces the results people report. You get a running-equivalent metabolic
+            cost at a walking impact load, which is a genuinely good trade for anyone whose joints do
+            not tolerate running. Our
+            <a href="/best-treadmills-for-bad-knees/" class="text-[#0F62FE] font-medium">low-impact
+            guide</a> covers that reasoning, and our
+            <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">incline roundup</a>
+            covers which machines actually reach 12% and hold it.
+          </p>
+          <p>
+            <strong>Two caveats that matter more than the arithmetic.</strong>
+          </p>
+          <p>
+            First, <strong>the numbers assume you are not holding on.</strong> Gripping the rails at
+            a steep incline transfers a substantial share of the load to your arms and the frame, and
+            it is most tempting exactly where the effect is largest. If you cannot walk the grade
+            unsupported, the honest move is to reduce the grade rather than to hold the rail and keep
+            the number.
+          </p>
+          <p>
+            Second, <strong>the running equation has a much smaller grade coefficient</strong> — 0.9
+            against the walking equation's 1.8. Incline adds proportionally less when you are
+            running, because running on the flat is already expensive. That is worth knowing before
+            assuming hill running is the efficient route to a high calorie figure; it is excellent
+            training, but the metabolic return per percent of grade is lower than it is when walking.
+          </p>
+          <p>
+            Our <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#0F62FE] font-medium">percent
+            versus degrees guide</a> is worth reading alongside this, because a treadmill's 10% is
+            not 10 degrees and the two get confused constantly.
+          </p>`,
+    },
+    {
+      id: 'weight-and-speed',
+      heading: 'Weight and Speed: Which Matters More',
+      html: `          <p>
+            <strong>Body weight scales the whole thing almost linearly.</strong> A 200 lb person
+            burns roughly 60% more than a 125 lb person doing the identical session, because they are
+            moving 60% more mass. This is why any calculator that does not ask your weight is
+            guessing, and why the same walk genuinely is worth more calories to a heavier person —
+            one of the few places where the arithmetic works in favour of someone trying to lose
+            weight.
+          </p>
+          <p>
+            <strong>Speed matters more when running than when walking.</strong> In the walking
+            equation the speed coefficient is 0.1; in the running equation it is 0.2. Doubling
+            walking speed from 2.5 to 5 mph does not double the cost — it roughly triples it, because
+            you cross from the walking equation into the running one, and that transition is where
+            the big jump lives. Between 2.5 and 3.5 mph, a whole mile per hour of extra walking speed
+            adds only about 0.8 METs, which is less than a 3% incline would.
+          </p>
+          <p>
+            <strong>The practical conclusion for a walker:</strong> if you want to raise the
+            intensity of a walk, raise the incline rather than the speed. It is more effective per
+            unit of effort, it is easier on the joints than walking near the edge of your comfortable
+            pace, and it does not push you into the awkward speeds between fast walking and slow
+            jogging where gait becomes inefficient.
+          </p>
+          <p>
+            <strong>And for a runner:</strong> duration and pace both do real work, and our
+            <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">pace and
+            speed chart</a> converts between mph, min/mile and min/km if you are working from a
+            training plan.
+          </p>`,
+    },
+    {
+      id: 'heart-rate',
+      heading: 'Heart Rate, Watches and Which to Trust',
+      html: `          <p>
+            If your watch, your chest strap and your treadmill all disagree — and they will — here is
+            how to rank them.
+          </p>
+          <p>
+            <strong>A chest strap with a good watch is the most reliable</strong> of the everyday
+            options. It knows your weight, your heart rate and usually your resting rate and fitness
+            estimate, and heart-rate-based expenditure models are better than speed-based ones for
+            steady work.
+          </p>
+          <p>
+            <strong>The equations on this page are next</strong>, and for steady treadmill walking or
+            running they are genuinely good — this is exactly the controlled, measurable situation
+            they were derived for. On a treadmill you know the speed and grade precisely, which is
+            more than you can say for an outdoor run.
+          </p>
+          <p>
+            <strong>A wrist-only optical watch is reasonable for steady work</strong> and poor during
+            intervals, where it lags the actual heart rate by several seconds at exactly the moments
+            that matter.
+          </p>
+          <p>
+            <strong>The treadmill console is last</strong>, for the reasons at the top of this page —
+            unless you have entered your weight, in which case it moves up considerably, because the
+            machine knows speed and grade better than anything on your wrist does.
+          </p>
+          <p>
+            <strong>The more useful point:</strong> for training purposes, effort is a better guide
+            than calories. Our
+            <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">heart rate zone
+            guide</a> covers structuring sessions by intensity rather than by a number that every
+            device estimates differently. Calorie figures are best used as a consistent relative
+            measure — comparing this week against last week on the same device — rather than as an
+            absolute you can budget food against.
+          </p>`,
+    },
+    {
+      id: 'weight-loss',
+      heading: 'Using These Numbers Honestly for Weight Loss',
+      html: `          <p>
+            A few things follow from the tables that are worth stating plainly, because they are the
+            reason people become disillusioned with treadmill training.
+          </p>
+          <p>
+            <strong>The numbers are smaller than the culture suggests.</strong> Half an hour of flat
+            walking is around 100 to 160 gross calories depending on your weight, and less than that
+            net. That is a biscuit. It is not a reason to skip the walk — it is a reason not to build
+            a plan on out-eating a treadmill.
+          </p>
+          <p>
+            <strong>Consistency beats intensity in the totals.</strong> Six modest sessions a week
+            comfortably outweigh two hard ones, because the hard ones are the ones that get skipped
+            and cause soreness. This is the same argument our
+            <a href="/treadmill-desk/" class="text-[#0F62FE] font-medium">treadmill desk guide</a>
+            makes about slow walking: the hourly rate is unimpressive and the weekly total is
+            substantial.
+          </p>
+          <p>
+            <strong>Incline is the best return available to a walker</strong>, per the section above.
+          </p>
+          <p>
+            <strong>Do not subtract exercise calories from your food target twice.</strong> If your
+            daily target already assumes you are active, adding a session's gross figure on top
+            double-counts — and the gross figure is itself about 30% too generous at walking
+            intensities. Our
+            <a href="/treadmill-workout-for-weight-loss/" class="text-[#0F62FE] font-medium">weight
+            loss session guide</a> covers structuring the training side of this.
+          </p>
+          <p>
+            <strong>Treat the number as a ruler, not a bank balance.</strong> Its real value is
+            comparative — telling you that today's session was harder than Tuesday's, or that adding
+            two percent of grade was worth more than adding half a mile an hour. It was never
+            accurate enough to be anything else.
+          </p>`,
+    },
+  ],
+  faqs: [
+    {
+      q: 'How many calories does 30 minutes on a treadmill burn?',
+      a: `It depends almost entirely on your weight, the speed and the incline. A 150 lb person burns roughly 118 gross kcal walking 30 minutes at 3 mph on the flat, about 295 at 3 mph and 12% incline, and around 364 running at 6 mph. A 200 lb person burns roughly 30 to 35% more for the same session, and a 125 lb person correspondingly less.`,
+    },
+    {
+      q: 'Why is my treadmill calorie count wrong?',
+      a: `Three reasons that compound. It probably does not know your weight and is using a default around 150 to 170 lbs. It reports gross expenditure, which includes the calories you would have burned resting anyway — roughly 30% of the total at walking intensities. And it cannot know your individual efficiency. If you hold the handrails, every figure is optimistic on top of that.`,
+    },
+    {
+      q: 'What is the formula for treadmill calories burned?',
+      a: `Use the ACSM equations. Walking: VO2 = (0.1 × speed) + (1.8 × speed × grade) + 3.5. Running: VO2 = (0.2 × speed) + (0.9 × speed × grade) + 3.5. Speed is in metres per minute, so multiply mph by 26.8, and grade is a decimal. Then calories per minute = VO2 × your weight in kg ÷ 200. Drop the trailing 3.5 for net rather than gross.`,
+    },
+    {
+      q: 'Does incline really burn more calories?',
+      a: `Substantially, and more than increasing speed does when walking. At 3 mph, going from flat to 10% grade takes the intensity from about 3.3 METs to about 7.4 — the work more than doubles at the same speed. At 12% it reaches roughly 8.3 METs, comparable to running 5 mph on the flat. The catch is that all of it assumes you are not holding the handrails.`,
+    },
+    {
+      q: 'Is gross or net calories the right number?',
+      a: `Net, if you are asking what the exercise added. Gross includes the resting metabolism you would have spent anyway, which is roughly 35 to 50 kcal per half hour and a large share of a walking session's total. Consoles and most online calculators report gross. Subtract the resting component — drop the 3.5 term in the equation — to get the honest figure.`,
+    },
+    {
+      q: 'Should I trust my watch or the treadmill for calories?',
+      a: `A chest strap with a good watch is generally the most reliable, since it knows your weight and heart rate. The ACSM equations come next and are genuinely good on a treadmill, where speed and grade are known precisely. A wrist-only optical sensor is fine for steady work and poor during intervals. The console is last — unless you have entered your weight, which moves it up considerably.`,
+    },
+  ],
+  mistakesHeading: 'Common Mistakes with Treadmill Calorie Numbers',
+  mistakesIntro:
+    'The first two are the reason people eat back more than they burned, which is the most consequential error on this page.',
+  mistakes: [
+    {
+      title: 'Never entering your body weight into the console',
+      body: 'Most people skip the setup screen, so the machine estimates from a default somewhere around 150 to 170 lbs. Since energy cost scales almost directly with mass, a lighter user is being told they burned far more than they did, and a heavier user is being under-credited. Thirty seconds in the settings menu fixes the single largest source of error in the number.',
+    },
+    {
+      title: 'Treating the gross figure as what the exercise added',
+      body: 'Every console and most online calculators report gross expenditure, which includes the resting metabolism you would have spent lying down. At walking intensities that is roughly 30% of the total. Subtract about 35 to 50 kcal per half hour before using the number for anything, and never add a gross figure on top of a food target that already assumes you are active.',
+    },
+    {
+      title: 'Holding the handrails and keeping the number',
+      body: 'Gripping the rails transfers a real share of the load to your arms and the frame, and the effect is largest at exactly the steep inclines where people hold on most. No console can detect it, so the displayed figure stays high while the actual work drops. If you cannot walk the grade unsupported, lower the grade rather than holding on and believing the display.',
+    },
+    {
+      title: 'Raising speed instead of incline to work harder',
+      body: 'For a walker this is the inefficient lever. Between 2.5 and 3.5 mph, a whole extra mile per hour adds less intensity than about 3% of grade would, and it pushes you toward the awkward speeds between fast walking and slow jogging where gait becomes inefficient. Add grade instead — more return per unit of effort, and easier on the joints.',
+    },
+  ],
+  relatedHeading: 'Related Training &amp; Reference Guides',
+  related: [
+    {
+      kicker: 'Reference',
+      title: 'Treadmill Pace &amp; Speed Chart',
+      blurb: 'Converting between mph, min/mile and min/km for a training plan.',
+      url: '/treadmill-pace-and-speed-chart/',
+    },
+    {
+      kicker: 'Intensity',
+      title: 'Treadmill Heart Rate Zones',
+      blurb: 'Structuring sessions by effort rather than by an estimated number.',
+      url: '/treadmill-heart-rate-zones/',
+    },
+    {
+      kicker: 'Protocol',
+      title: 'The 12-3-30 Workout',
+      blurb: 'Why 3 mph at 12% costs about what running 5 mph costs.',
+      url: '/12-3-30-treadmill-workout/',
+    },
+  ],
+  bottomLine: [
+    `The console is wrong for three compounding reasons: it does not know your weight, it
+            reports gross rather than net, and it cannot see you holding the rails. Enter your
+            weight, then <strong class="text-white">subtract roughly 35 to 50 kcal per half hour</strong>
+            to get the figure the exercise actually added.`,
+    `If you walk, <a href="/best-incline-treadmills/" class="text-[#5AA9FF] font-bold no-underline">add incline rather than speed</a>
+            — at 3 mph, 12% grade costs about what running 5 mph costs. And treat the number as a
+            ruler for comparing sessions rather than a balance to eat against; it was never accurate
+            enough to be the second thing.`,
+  ],
+};

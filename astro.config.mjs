@@ -73,6 +73,25 @@ const PRIORITY_TIERS = [
     ],
   },
   {
+    // Round-two category, brand and service pages added September 2026
+    priority: 0.8,
+    changefreq: 'monthly',
+    paths: [
+      '/portable-treadmill',
+      '/bowflex-treadmill',
+      '/precor-treadmill',
+      '/deer-run-treadmill',
+      '/treadmill-repair',
+      '/treadmill-calorie-calculator',
+      '/dicks-sporting-goods-treadmills',
+    ],
+  },
+  {
+    priority: 0.7,
+    changefreq: 'monthly',
+    paths: ['/xterra-treadmill', '/reebok-treadmill', '/treadmill-mat'],
+  },
+  {
     // Model reviews added September 2026
     priority: 0.7,
     changefreq: 'monthly',

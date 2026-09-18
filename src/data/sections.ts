@@ -157,6 +157,12 @@ export const SECTIONS: Section[] = [
             badge: 'Compact',
             url: '/best-treadmills-for-small-spaces/',
           },
+          {
+            title: 'Portable Treadmills',
+            description: 'Why folding is not the same as movable, and the four weight classes.',
+            badge: 'Buyer’s guide',
+            url: '/portable-treadmill/',
+          },
         ],
       },
       {
@@ -347,6 +353,12 @@ export const SECTIONS: Section[] = [
             badge: 'Retail guide',
             url: '/costco-treadmill/',
           },
+          {
+            title: 'Treadmills at Dick’s Sporting Goods',
+            description: 'The one thing a shop floor does that no listing can — and the four-minute test.',
+            badge: 'Retail guide',
+            url: '/dicks-sporting-goods-treadmills/',
+          },
         ],
       },
       {
@@ -444,6 +456,12 @@ export const SECTIONS: Section[] = [
             badge: 'Owner’s guide',
             url: '/livestrong-treadmill/',
           },
+          {
+            title: 'Bowflex Treadmills',
+            description: 'The T-series, decline, and who owns the brand after the 2024 Chapter 11.',
+            badge: 'Brand guide',
+            url: '/bowflex-treadmill/',
+          },
         ],
       },
       {
@@ -467,6 +485,12 @@ export const SECTIONS: Section[] = [
             badge: 'Brand guide',
             url: '/woodway-treadmill/',
           },
+          {
+            title: 'Precor Treadmills',
+            description: 'Gym and hotel hardware, Peloton-owned — and why you buy it secondhand.',
+            badge: 'Brand guide',
+            url: '/precor-treadmill/',
+          },
         ],
       },
       {
@@ -477,6 +501,29 @@ export const SECTIONS: Section[] = [
             description: 'The Max Trainer M5 and M7 — not treadmills, but a popular alternative.',
             badge: 'Not a treadmill',
             url: '/bowflex/',
+          },
+        ],
+      },
+      {
+        name: 'Budget &amp; marketplace brands',
+        pages: [
+          {
+            title: 'XTERRA Treadmills',
+            description: 'The cheapest tier that still has a real parts channel behind it.',
+            badge: 'Brand guide',
+            url: '/xterra-treadmill/',
+          },
+          {
+            title: 'DeerRun &amp; Marketplace Brands',
+            description: 'How to judge a treadmill brand that exists only inside a listing.',
+            badge: 'Brand guide',
+            url: '/deer-run-treadmill/',
+          },
+          {
+            title: 'Reebok Treadmills',
+            description: 'A licensed badge with no single maker — how to find yours.',
+            badge: 'Owner’s guide',
+            url: '/reebok-treadmill/',
           },
         ],
       },
@@ -811,6 +858,12 @@ export const SECTIONS: Section[] = [
             badge: 'Placement',
             url: '/treadmill-on-carpet/',
           },
+          {
+            title: 'Treadmill Mats',
+            description: 'What a mat fixes, what it does not, and why density beats thickness.',
+            badge: 'Buyer’s guide',
+            url: '/treadmill-mat/',
+          },
         ],
       },
       {
@@ -865,6 +918,12 @@ export const SECTIONS: Section[] = [
               'Won’t start, cuts out, error codes and new noises — plus the four symptoms that mean stop.',
             badge: 'Pillar guide',
             url: '/treadmill-troubleshooting/',
+          },
+          {
+            title: 'Treadmill Repair',
+            description: 'What each fix costs, where the DIY line sits, and when to stop paying.',
+            badge: 'Repair guide',
+            url: '/treadmill-repair/',
           },
         ],
       },
@@ -1136,6 +1195,12 @@ export const SECTIONS: Section[] = [
             badge: 'Zones',
             url: '/treadmill-heart-rate-zones/',
           },
+          {
+            title: 'Treadmill Calorie Calculator',
+            description: 'The ACSM equations, worked tables, and why the console reads about a third high.',
+            badge: 'Reference',
+            url: '/treadmill-calorie-calculator/',
+          },
         ],
       },
     ],
@@ -1184,6 +1249,13 @@ export const SECTIONS: Section[] = [
               'The routing guide that narrows the field by budget, room, stride and how you will actually use it.',
             badge: 'Selector → guide',
             url: '/home-treadmills/',
+          },
+          {
+            title: 'How Many Calories Did That Burn?',
+            description:
+              'The published equations, worked tables by speed, incline and body weight, and the net-versus-gross correction.',
+            badge: 'Calorie calculator → guide',
+            url: '/treadmill-calorie-calculator/',
           },
         ],
       },
