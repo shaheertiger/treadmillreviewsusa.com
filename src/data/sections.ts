@@ -235,6 +235,17 @@ export const SECTIONS: Section[] = [
           },
         ],
       },
+      {
+        name: 'Specialist machines',
+        pages: [
+          {
+            title: 'Dog Treadmills',
+            description: 'Three types, how to size one, and why a human treadmill is the wrong answer.',
+            badge: 'Buyer’s guide',
+            url: '/dog-treadmill/',
+          },
+        ],
+      },
     ],
   },
   {
@@ -330,6 +341,12 @@ export const SECTIONS: Section[] = [
             badge: 'Timing',
             url: '/best-time-of-year-to-buy-a-treadmill/',
           },
+          {
+            title: 'Buying a Treadmill at Costco',
+            description: 'What the return policy is really worth, and the model-number trap.',
+            badge: 'Retail guide',
+            url: '/costco-treadmill/',
+          },
         ],
       },
       {
@@ -415,6 +432,18 @@ export const SECTIONS: Section[] = [
             badge: 'Brand guide',
             url: '/sole-fitness/',
           },
+          {
+            title: 'Peloton Treadmills',
+            description: 'The Tread and Tread+, and the subscription maths behind both.',
+            badge: 'Brand guide',
+            url: '/peloton-treadmill/',
+          },
+          {
+            title: 'LiveStrong Treadmills',
+            description: 'Discontinued, but still repairable — who built them and where parts come from.',
+            badge: 'Owner’s guide',
+            url: '/livestrong-treadmill/',
+          },
         ],
       },
       {
@@ -431,6 +460,12 @@ export const SECTIONS: Section[] = [
             description: 'Commercial-grade hardware from the makers of real gym equipment.',
             badge: 'Brand guide',
             url: '/matrix-fitness/',
+          },
+          {
+            title: 'Woodway Treadmills',
+            description: 'Slat belts, no lubrication ever, and a price that needs explaining.',
+            badge: 'Brand guide',
+            url: '/woodway-treadmill/',
           },
         ],
       },
@@ -563,6 +598,12 @@ export const SECTIONS: Section[] = [
             badge: 'Best capacity',
             url: '/proform-505-cst-treadmill/',
           },
+          {
+            title: 'ProForm Carbon TL',
+            description: 'The honest entry point — a walking deck sold at a running price.',
+            badge: 'Model review',
+            url: '/proform-carbon-tl-treadmill/',
+          },
         ],
       },
       {
@@ -596,6 +637,12 @@ export const SECTIONS: Section[] = [
             description: 'Discontinued. What it was, what a used one is worth, and what to buy instead.',
             badge: 'Discontinued',
             url: '/weslo-cadence-g-5-9-treadmill/',
+          },
+          {
+            title: 'Horizon 7.0 AT',
+            description: 'Dial controls and a fast-responding motor — the interval machine under $1,200.',
+            badge: 'Model review',
+            url: '/horizon-7-0-at-treadmill/',
           },
         ],
       },
@@ -763,6 +810,29 @@ export const SECTIONS: Section[] = [
               'Yes, with conditions — fibres in the motor, blocked airflow, and a base that steers the belt.',
             badge: 'Placement',
             url: '/treadmill-on-carpet/',
+          },
+        ],
+      },
+      {
+        name: 'Machine types',
+        pages: [
+          {
+            title: 'Curved Treadmills',
+            description: 'How non-motorised running feels, and the three reasons most people should not buy one.',
+            badge: 'Category guide',
+            url: '/curved-treadmill/',
+          },
+          {
+            title: 'Manual Treadmills',
+            description: 'Where cheap flat-belt machines genuinely make sense — a narrower case than it looks.',
+            badge: 'Category guide',
+            url: '/manual-treadmill/',
+          },
+          {
+            title: 'Treadmill Desks',
+            description: 'The height arithmetic that decides it, and the realistic speed for real work.',
+            badge: 'Setup guide',
+            url: '/treadmill-desk/',
           },
         ],
       },

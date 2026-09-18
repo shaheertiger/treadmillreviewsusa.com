@@ -58,6 +58,27 @@ const PRIORITY_TIERS = [
     ],
   },
   {
+    // High-volume category, brand and retail pages added September 2026
+    priority: 0.8,
+    changefreq: 'monthly',
+    paths: [
+      '/peloton-treadmill',
+      '/dog-treadmill',
+      '/woodway-treadmill',
+      '/livestrong-treadmill',
+      '/curved-treadmill',
+      '/treadmill-desk',
+      '/manual-treadmill',
+      '/costco-treadmill',
+    ],
+  },
+  {
+    // Model reviews added September 2026
+    priority: 0.7,
+    changefreq: 'monthly',
+    paths: ['/horizon-7-0-at-treadmill', '/proform-carbon-tl-treadmill'],
+  },
+  {
     // Maintenance cluster pillar — hub of the ownership/maintenance topic cluster
     priority: 0.8,
     changefreq: 'monthly',
