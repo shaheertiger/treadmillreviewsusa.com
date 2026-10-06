@@ -264,6 +264,22 @@ costs are typical ranges, labelled as such; iFIT and Peloton prices are delibera
 as current. Not written: "are Deer Run treadmills good" (a model/brand page that needs verified
 specifications first) and two queries with no editorial value.
 
+### Second October batch: forty gap-filling guides
+
+Forty more pages, chosen to fill intents the site linked around but did not answer. Like the
+first batch, none carries product specifications, so none needs `dataPending`.
+
+- **Fault diagnosis**: belt jerking, blank console, safety key, heart-rate sensors, shaking,
+  static shock, speed accuracy (new "Console & sensors" group)
+- **Maintenance**: cleaning, motor brushes, drive belt (new "Repairs" group); assembly, folding,
+  storage, garage use (new "Setup & storage" group)
+- **Buying guides & price**: AC vs. DC motors, smart vs. regular, safety tips, warranties,
+  Costco, Black Friday, refurbished, rental, portable treadmills
+- **Comparisons**: NordicTrack vs. ProForm, incline trainer, folding vs. non-folding, exercise
+  bike, rowing machine, gym membership
+- **Training**: hill workouts, warm-up and cool-down, marathon training, running form, zone 2,
+  walking workouts, walking speed, steps per mile, boredom, benefits, treadmill desks
+
 ### Sole F80 and F85
 
 Both machines were referenced across the site — the F80 on ten pages — with no page to point at,

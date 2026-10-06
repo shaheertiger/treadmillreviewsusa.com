@@ -1,0 +1,366 @@
+export default {
+  slug: 'treadmill-vs-rowing-machine',
+  title: 'Treadmill vs Rowing Machine (2026): Which Should You Buy?',
+  description:
+    'Rower vs treadmill: full-body versus lower-body work, impact, technique, back considerations, space, noise and cost compared — with a clear verdict on which to buy.',
+  crumbLabel: 'Treadmill vs Rowing Machine',
+  kicker: 'Comparison',
+  breadcrumb: { name: 'Comparisons', url: '/compare/' },
+  updated: 'October 2026',
+  updatedLong: 'October 6, 2026',
+  published: '2026-10-06',
+  socialProof: '1.5k',
+  h1: ['Treadmill vs', 'Rowing Machine'],
+  standfirst:
+    'A rower works more of the body with no impact and stores away more easily. A treadmill needs no technique, trains the walking and running you do every day, and loads your bones. Neither is better — they suit different people.',
+  ctas: [
+    { label: 'The Verdict', href: '#verdict' },
+    { label: 'Who Should Buy Which', href: '#who-should-buy' },
+  ],
+  tags: ['treadmill vs rowing machine', 'rower vs treadmill', 'rowing machine', 'full body cardio', 'home cardio machine'],
+  stickyCta: { text: 'See the Verdict', link: '#verdict' },
+  lead: `Rowing machines have gone from a corner of the gym to one of the most popular home cardio
+          machines, mostly on the strength of one claim: that rowing works the whole body. That claim
+          is largely true, with qualifications. Whether it makes a rower the better buy than a treadmill
+          depends on your joints, your back, your space and — more than people expect — whether you are
+          willing to learn a technique.`,
+  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review exercise
+          equipment. This is a comparison of two machines, not medical or physiotherapy advice. Rowing
+          places specific demands on the lower back, and walking and running load the legs and joints in
+          their own ways. If you have back, hip or knee problems, a heart condition, or are returning from
+          injury or surgery, ask a doctor or physiotherapist which suits you. Sizes and prices below are
+          typical ranges for each category, not measurements of particular models.`,
+  sections: [
+    {
+      id: 'verdict',
+      heading: 'Rower vs Treadmill: The Verdict',
+      html: `          <p>
+            <strong>Choose a rowing machine if you want low-impact, whole-body conditioning in a machine
+            that is quiet underfoot and stores easily, and you are willing to learn the stroke properly.
+            Choose a treadmill if you want to walk or run, want something you can use well from day one,
+            or want the bone-loading benefit of weight-bearing exercise.</strong>
+          </p>
+          <p>
+            A rower works the legs, hips, back and arms in every stroke, with no impact at all, and many
+            models stand upright or fold for storage. Its costs are a genuine technique learning curve,
+            demands on the lower back that matter if you have a history of back pain, and a low seat that
+            some people find hard to get on and off.
+          </p>
+          <p>
+            A treadmill works mainly the lower body and needs no skill to walk on. It trains a movement you
+            use every day, offers incline as a way to work hard without speed, and suits a wider range of
+            ages and abilities. Its costs are impact when running, more floor space including a safety
+            zone, footfall noise for neighbours below, and more maintenance.
+          </p>`,
+    },
+    {
+      id: 'full-body',
+      heading: 'Full Body vs Lower Body: How True Is It?',
+      html: `          <p>
+            The full-body claim for rowing is real, but it is often misunderstood. A rowing stroke is not
+            an arm exercise. The drive starts with the legs pushing the seat back, continues as the hips
+            open and the torso swings back, and finishes with the arms drawing the handle in. Coaches
+            commonly describe the power as coming mostly from the legs — often summarised as roughly 60%
+            legs, with the trunk and arms contributing the rest.
+          </p>
+          <p>
+            So rowing is best understood as a leg-dominant exercise that also works the posterior chain,
+            the upper back and the arms. That is more muscle than a treadmill uses, and it is part of why
+            rowing can feel so demanding so quickly.
+          </p>
+          <p>
+            A treadmill is primarily a lower-body machine — calves, quadriceps, hamstrings and glutes —
+            with the trunk working to stabilise you and the arms swinging rather than pulling. Incline
+            shifts more of the work toward the glutes and calves, as our guide to
+            <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what incline to walk on</a>
+            explains. Neither machine is a substitute for strength training, but the rower covers more of
+            the body in a single movement.
+          </p>`,
+    },
+    {
+      id: 'impact',
+      heading: 'Impact and Joints',
+      html: `          <p>
+            A rowing machine has no impact phase. You are seated, your feet are strapped to the
+            footplates, and the movement is a controlled slide. For people who cannot tolerate the
+            repeated landing of running, that is a significant advantage.
+          </p>
+          <p>
+            A treadmill's impact depends on what you do on it. Running produces ground reaction forces in
+            the region of two to three times body weight per step; walking produces close to 1.2 times. So
+            a treadmill used for walking is a low-impact machine, and the impact argument for the rower is
+            much stronger against running than against walking. Our guide to whether
+            <a href="/are-treadmills-bad-for-your-knees/" class="text-[#0F62FE] font-medium">treadmills are bad for your knees</a>
+            covers that evidence in detail.
+          </p>
+          <p>
+            No impact is not the same as no load. Rowing takes the knees and hips through a deep bend at
+            the start of every stroke, which some people with knee or hip problems find uncomfortable, and
+            it asks a lot of the lower back, which the next sections cover. Low impact makes a machine
+            gentler on some joints, not on all of them.
+          </p>`,
+    },
+    {
+      id: 'technique',
+      heading: 'The Technique Learning Curve',
+      html: `          <p>
+            This is the rower's most underrated drawback. Anyone can walk on a treadmill competently in
+            minutes, and our
+            <a href="/how-to-use-a-treadmill/" class="text-[#0F62FE] font-medium">guide to using a treadmill</a>
+            covers the few safety habits that matter. Rowing well takes practice.
+          </p>
+          <p>
+            The stroke has a sequence: legs, then body, then arms on the drive; arms, then body, then legs
+            on the way back. Most beginners get the order wrong in predictable ways — bending the arms
+            early instead of pushing with the legs, letting the seat shoot back before the handle moves,
+            reaching too far forward at the catch, or rounding the lower back to reach. Each of those makes
+            the exercise less effective and, in the case of a rounded back under load, less comfortable for
+            the spine.
+          </p>
+          <p>
+            The good news is that the basics can be learned. Most manufacturers publish technique videos,
+            many connected rowers include coached classes, and a session or two with a coach — at a gym or
+            rowing club — pays for itself. Start with short sessions at modest effort and treat the first
+            few weeks as learning, not training. Higher resistance settings are not harder in a useful way
+            for beginners; they mostly make poor technique worse.
+          </p>`,
+    },
+    {
+      id: 'back',
+      heading: 'Back Considerations',
+      html: `          <p>
+            The lower back deserves its own section because it is the most common reason people find
+            rowing does not agree with them.
+          </p>
+          <p>
+            At the front of the stroke, the hips are deeply flexed and the trunk leans forward. With good
+            technique the back stays long and the hips hinge; with poor technique, or when fatigue sets in,
+            the lower back rounds under load. Long sessions, high volume and poor form are commonly
+            associated with lower back complaints in people who row regularly.
+          </p>
+          <p>
+            That does not make rowing bad for backs — many people with healthy backs row for decades, and
+            a strong posterior chain is generally an asset. But if you have a history of back pain, a disc
+            problem or have had spinal surgery, ask a clinician before choosing a rower, and pay close
+            attention to technique if you do.
+          </p>
+          <p>
+            Walking on a treadmill is generally well tolerated by people with back pain, and walking is
+            often part of what clinicians recommend. Holding on to the handrails and leaning forward at
+            steep incline is the habit to avoid, because it puts the back in an awkward, loaded position.
+          </p>`,
+    },
+    {
+      id: 'calories',
+      heading: 'Calorie Burn and Intensity',
+      html: `          <p>
+            Because rowing recruits more muscle, it can reach very high intensities, and a hard rowing
+            session is among the most demanding things you can do on a home machine. At the same heart
+            rate and duration, though, the two machines tend to produce broadly similar energy use for
+            most people. The difference is less about efficiency than about how easily each machine lets
+            you reach and sustain a given effort.
+          </p>
+          <p>
+            Treadmills enforce effort — you cannot coast on a moving belt — and incline lets you raise
+            intensity without running. Rowers let you vary effort stroke by stroke, which is excellent for
+            intervals but also makes it easy to row gently without realising. A heart rate monitor is a
+            better guide than either console; our article on
+            <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium">whether treadmill calories are accurate</a>
+            explains why console figures drift.
+          </p>
+          <p>
+            For weight management, the familiar caveats apply: diet is the bigger lever, and consistency
+            beats intensity. Our
+            <a href="/treadmill-workout-for-weight-loss/" class="text-[#0F62FE] font-medium">weight-loss workout guide</a>
+            is honest about both.
+          </p>`,
+    },
+    {
+      id: 'bone',
+      heading: 'Bone Loading',
+      html: `          <p>
+            Bone adapts to the loads placed on it and responds most to weight-bearing activity and impact.
+            Walking and running on a treadmill provide that stimulus to the legs, hips and spine with every
+            step.
+          </p>
+          <p>
+            Rowing is seated, so it is not weight-bearing through the legs in the same way. It does load the
+            skeleton through muscle pull, but it provides less of the weight-bearing stimulus that is
+            routinely recommended for maintaining bone density, particularly for older adults and
+            post-menopausal women. If bone health is a priority, it belongs in the decision; many rowers add
+            walking or strength training for exactly this reason. A clinician can advise if you have, or are
+            at risk of, low bone density.
+          </p>`,
+    },
+    {
+      id: 'space',
+      heading: 'Space and Storage',
+      html: `          <p>
+            A rowing machine is long but narrow. Typical models run somewhere around 7 to 9 feet in length
+            and around 2 feet wide, and you need a little room around them for the handle and your arms.
+            The decisive point is storage: many rowers stand upright on end or separate into two pieces,
+            taking up very little floor when not in use, and many have wheels at one end so they can be
+            tipped and rolled.
+          </p>
+          <p>
+            A treadmill needs its full footprint plus clearance either side and roughly 6 feet of clear
+            floor behind the deck as a safety margin. Folding treadmills reduce storage space but not
+            working space, as our
+            <a href="/folding-vs-non-folding-treadmill/" class="text-[#0F62FE] font-medium">folding vs non-folding comparison</a>
+            explains, and our
+            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements guide</a>
+            covers the full arithmetic.
+          </p>
+          <p>
+            Ceiling height rarely matters for a rower, which sits near the floor. That low seat cuts the
+            other way for some users: getting down to it and back up can be difficult for people with
+            limited mobility or stiff hips and knees, which is worth trying before buying.
+          </p>`,
+    },
+    {
+      id: 'noise',
+      heading: 'Noise and Neighbours',
+      html: `          <p>
+            Noise depends heavily on the rower's resistance type. <strong>Magnetic</strong> rowers are very
+            quiet. <strong>Water</strong> rowers make a rhythmic swish that many people find pleasant.
+            <strong>Air</strong> rowers use a fan, and the whoosh gets loud at high effort — fine in a
+            garage, intrusive in a shared living room.
+          </p>
+          <p>
+            What a rower lacks is footfall impact. Treadmill noise that reaches a downstairs neighbour is
+            mostly the thud of steps transmitted through the floor, and it is hard to eliminate fully. A
+            rower transmits much less of that, though the seat's travel and the end of each stroke can
+            still produce a rhythmic sound through a lightweight floor. If you live above someone, a
+            magnetic or water rower is usually the easier neighbour. Our
+            <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills</a>
+            guide covers how much a well-chosen treadmill and mat can reduce the problem.
+          </p>`,
+    },
+    {
+      id: 'cost',
+      heading: 'Cost and Maintenance',
+      html: `          <p>
+            A good rowing machine generally costs less than a treadmill of comparable build quality, and it
+            is a simpler machine. There is no drive motor, no belt to lubricate and no controller board
+            handling large currents; care is mostly wiping the rail, checking the chain or strap, and
+            keeping fasteners tight. Water rowers need occasional water treatment. Many rowers need no mains
+            power at all.
+          </p>
+          <p>
+            A treadmill needs periodic deck lubrication and belt checks, and its motor and controller board
+            are the expensive components if something fails. None of that is onerous — our
+            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance schedule</a>
+            takes well under an hour a year — but it is more than a rower asks.
+          </p>
+          <p>
+            Both categories include connected models with screens and subscriptions; check what the machine
+            does without one before you buy.
+          </p>`,
+    },
+    {
+      id: 'who-should-buy',
+      heading: 'Who Should Buy Which',
+      html: `          <p>
+            <strong>Choose a treadmill if:</strong> you want to walk or run; you are training for a
+            walking, hiking or running event; you want something usable well from the first session; you
+            find getting down to a low seat difficult; you have a history of back problems and a clinician
+            has suggested walking; or bone health is a priority. Our
+            <a href="/best-treadmills-for-beginners/" class="text-[#0F62FE] font-medium">beginner treadmill picks</a>
+            are a sensible place to start.
+          </p>
+          <p>
+            <strong>Choose a rowing machine if:</strong> you want whole-body conditioning with no impact;
+            you are short of space and need to store the machine away; you have neighbours below; you want
+            lower cost and maintenance; and you are willing to learn the stroke properly.
+          </p>
+          <p>
+            <strong>Consider both over time</strong> if you enjoy variety. They complement each other well:
+            the treadmill covers walking, running and bone loading, and the rower adds upper-body and
+            posterior-chain work without more impact.
+          </p>
+          <p>
+            Whichever you lean toward, try both for twenty minutes first if you can. Rowing in particular is
+            hard to judge from a product page — a short session tells you quickly whether the movement suits
+            your back and hips.
+          </p>`,
+    },
+  ],
+  faqs: [
+    {
+      q: 'Is a rowing machine better than a treadmill?',
+      a: `Neither is better overall. A rower works more of the body with no impact and stores easily, but it has a technique learning curve and asks a lot of the lower back. A treadmill needs no skill, trains walking and running, and provides weight-bearing loading for bone. Choose the one that fits your body, space and goals.`,
+    },
+    {
+      q: 'Rower vs treadmill: which burns more calories?',
+      a: `At the same heart rate and duration, broadly similar for most people. Rowing recruits more muscle and can reach very high intensities, while a treadmill enforces effort and lets incline raise intensity without running. Console calorie figures on both are estimates and tend to run optimistic.`,
+    },
+    {
+      q: 'Is a rowing machine really a full-body workout?',
+      a: `Largely, yes, but it is leg-dominant. The drive is commonly described as mostly legs — often summarised as roughly 60% — with the trunk and arms contributing the rest. It works more muscle than a treadmill, but it is not an arm exercise and not a substitute for strength training.`,
+    },
+    {
+      q: 'Is rowing bad for your back?',
+      a: `Not inherently, but the lower back is where rowing most often causes complaints, usually from poor technique, fatigue or high volume. Keeping the back long and hinging at the hips matters. If you have a history of back pain or disc problems, ask a clinician before choosing a rower.`,
+    },
+    {
+      q: 'Is a rowing machine easier on the knees than a treadmill?',
+      a: `It removes impact, which helps compared with running. But rowing takes the knees through a deep bend each stroke, which some people find uncomfortable, and walking on a treadmill is already low impact. Which suits your knees is a question for a physiotherapist.`,
+    },
+    {
+      q: 'Does a rowing machine take up less space than a treadmill?',
+      a: `In storage, usually much less: many rowers stand upright or separate into two pieces. In use, a rower is long — typically around 7 to 9 feet — but narrow, and needs no safety zone behind it, whereas a treadmill needs its footprint plus roughly 6 feet of clearance behind the deck.`,
+    },
+  ],
+  mistakesHeading: 'Common Mistakes Choosing Between a Rower and a Treadmill',
+  mistakesIntro:
+    'The full-body headline makes rowers easy to oversell. These are the four mistakes that follow most often.',
+  mistakes: [
+    {
+      title: 'Buying a rower and skipping the technique',
+      body: 'Rowing well takes practice. Pulling with the arms first, letting the seat shoot back or rounding the lower back to reach makes the session less effective and harder on the spine. Treat the first weeks as learning, and use the manufacturer\'s technique videos or a coach.',
+    },
+    {
+      title: 'Cranking the resistance up',
+      body: 'High resistance does not make a beginner fitter faster; it mostly magnifies poor technique and loads the back. Most people row better, and harder overall, at moderate settings with a good stroke rhythm.',
+    },
+    {
+      title: 'Comparing a rower with running when you will walk',
+      body: 'The no-impact argument is strongest against running. Walking produces close to 1.2 times body weight per step and is itself low impact, so if walking is your plan, the decision rests on space, noise and preference rather than joints alone.',
+    },
+    {
+      title: 'Not trying the low seat',
+      body: 'A rower\'s seat sits close to the floor. For people with stiff hips or knees or limited mobility, getting down and back up can be the real obstacle. Try one before buying, or look for a model with a raised seat.',
+    },
+  ],
+  relatedHeading: 'Related Comparison Guides',
+  related: [
+    {
+      kicker: 'Comparison',
+      title: 'Treadmill vs Exercise Bike',
+      blurb: 'Weight loss, knees, bone loading and space, compared honestly.',
+      url: '/treadmill-vs-exercise-bike/',
+    },
+    {
+      kicker: 'Comparison',
+      title: 'Treadmill vs Elliptical',
+      blurb: 'The no-impact alternative that keeps you on your feet.',
+      url: '/treadmill-vs-elliptical/',
+    },
+    {
+      kicker: 'Health',
+      title: 'Are Treadmills Bad for Your Knees?',
+      blurb: 'What the evidence says about walking, running and knee health.',
+      url: '/are-treadmills-bad-for-your-knees/',
+    },
+  ],
+  bottomLine: [
+    `<strong class="text-white">A rower gives whole-body, no-impact work and stores easily</strong>,
+            at the cost of a technique learning curve and real demands on the lower back. A treadmill needs
+            no skill, trains walking and running, and loads your bones.`,
+    `Choose the <strong class="text-white">rower</strong> for space, quiet and upper-body work if you
+            will learn the stroke; choose the <strong class="text-white">treadmill</strong> for walking,
+            running and ease of use — our
+            <a href="/treadmill-buying-guide-2026/" class="text-[#5AA9FF] font-bold no-underline">buying guide</a>
+            covers what to look for.`,
+  ],
+};
