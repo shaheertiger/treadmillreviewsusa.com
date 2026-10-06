@@ -755,6 +755,13 @@ export const SECTIONS: Section[] = [
             url: '/treadmill-belt-size-guide/',
           },
           {
+            title: 'Treadmill Weight Capacity Guide',
+            description:
+              'What a weight limit really means, why running multiplies the load, and how much capacity to buy.',
+            badge: 'Sizing',
+            url: '/treadmill-weight-capacity-guide/',
+          },
+          {
             title: 'Incline: Percentage vs. Degrees',
             description: '15 per cent is only 8.5 degrees. The conversion chart and what each grade demands.',
             badge: 'Spec',
@@ -791,6 +798,20 @@ export const SECTIONS: Section[] = [
               'Yes, with conditions — fibres in the motor, blocked airflow, and a base that steers the belt.',
             badge: 'Placement',
             url: '/treadmill-on-carpet/',
+          },
+          {
+            title: 'Do You Need a Treadmill Mat?',
+            description:
+              'When a mat is essential, what it can and can’t do for noise, and how to choose thickness and size.',
+            badge: 'Setup',
+            url: '/do-you-need-a-treadmill-mat/',
+          },
+          {
+            title: 'Do You Need a Surge Protector?',
+            description:
+              'Surge protectors, power strips and extension cords: what manuals say, what to buy, what to avoid.',
+            badge: 'Electrical',
+            url: '/treadmill-surge-protector/',
           },
         ],
       },
