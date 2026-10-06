@@ -699,6 +699,13 @@ export const SECTIONS: Section[] = [
             badge: 'Indoor vs. road',
             url: '/treadmill-vs-running-outside/',
           },
+          {
+            title: 'StairMaster vs. Treadmill',
+            description:
+              'Muscles, calories, knees and home fit compared, with a verdict and the incline-treadmill middle ground.',
+            badge: 'Machine type',
+            url: '/stairmaster-vs-treadmill/',
+          },
         ],
       },
     ],
@@ -1168,6 +1175,13 @@ export const SECTIONS: Section[] = [
             badge: 'Pillar guide',
             url: '/treadmill-workouts/',
           },
+          {
+            title: 'How to Use a Treadmill',
+            description:
+              'Safety key, straddling the belt, stepping off safely, running form and a first-week plan.',
+            badge: 'Beginner',
+            url: '/how-to-use-a-treadmill/',
+          },
         ],
       },
       {
@@ -1187,6 +1201,20 @@ export const SECTIONS: Section[] = [
             badge: 'Incline',
             url: '/12-3-30-treadmill-workout/',
           },
+          {
+            title: 'What Incline Should I Walk On?',
+            description:
+              '3–6% for most walks, 8–12% for hard sessions, and how to progress without sore calves.',
+            badge: 'Incline',
+            url: '/what-incline-should-i-walk-on-a-treadmill/',
+          },
+          {
+            title: 'Walking Backwards on a Treadmill',
+            description:
+              'Backward walking works quads and calves and tests balance. How to start safely.',
+            badge: 'Retro walking',
+            url: '/walking-backwards-on-a-treadmill/',
+          },
         ],
       },
       {
@@ -1205,6 +1233,20 @@ export const SECTIONS: Section[] = [
               'The honest version — why consistency beats intensity, and why the console calorie count misleads.',
             badge: 'Weight',
             url: '/treadmill-workout-for-weight-loss/',
+          },
+          {
+            title: 'Does a Treadmill Burn Belly Fat?',
+            description:
+              'No exercise targets belly or thigh fat, but treadmill work helps whole-body and visceral fat loss.',
+            badge: 'Myth vs. fact',
+            url: '/does-treadmill-burn-belly-fat/',
+          },
+          {
+            title: 'How Long Should I Walk on a Treadmill?',
+            description:
+              'About 30 minutes on most days for health, more for weight loss, with a beginner plan.',
+            badge: 'Duration',
+            url: '/how-long-should-i-walk-on-a-treadmill/',
           },
         ],
       },
@@ -1231,6 +1273,20 @@ export const SECTIONS: Section[] = [
               'What the exercise ECG looks for, how the Bruce protocol runs, how long it takes and how to prepare.',
             badge: 'Explainer',
             url: '/treadmill-stress-test/',
+          },
+          {
+            title: 'Are Treadmill Calories Accurate?',
+            description:
+              'Why console calorie counts run high, plus realistic burns per 30 minutes at 150 and 200 lb.',
+            badge: 'Calories',
+            url: '/are-treadmill-calories-accurate/',
+          },
+          {
+            title: 'Are Treadmills Bad for Your Knees?',
+            description:
+              'What research says about running and knees, and the treadmill habits that actually cause pain.',
+            badge: 'Knees',
+            url: '/are-treadmills-bad-for-your-knees/',
           },
         ],
       },
