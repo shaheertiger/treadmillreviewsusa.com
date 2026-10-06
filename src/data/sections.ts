@@ -317,6 +317,13 @@ export const SECTIONS: Section[] = [
             url: '/how-much-should-you-spend-on-a-treadmill/',
           },
           {
+            title: 'How Much Does a Treadmill Cost?',
+            description:
+              'Typical US prices from walking pads to gym machines, what each tier buys, and the costs after checkout.',
+            badge: 'Price tiers',
+            url: '/how-much-does-a-treadmill-cost/',
+          },
+          {
             title: 'Cheap vs. Premium Treadmill',
             description:
               'Component by component, what the extra money buys — and which three parts you will notice.',
@@ -762,6 +769,13 @@ export const SECTIONS: Section[] = [
             url: '/treadmill-weight-capacity-guide/',
           },
           {
+            title: 'How Fast Do Treadmills Go?',
+            description:
+              'Typical top and minimum speeds by type, the speeds people actually use, and why max speed rarely matters.',
+            badge: 'Speed',
+            url: '/how-fast-do-treadmills-go/',
+          },
+          {
             title: 'Incline: Percentage vs. Degrees',
             description: '15 per cent is only 8.5 degrees. The conversion chart and what each grade demands.',
             badge: 'Spec',
@@ -785,6 +799,13 @@ export const SECTIONS: Section[] = [
               'Footprint, six feet of clearance behind, ceiling height and the delivery route.',
             badge: 'Space',
             url: '/treadmill-dimensions-space-requirements/',
+          },
+          {
+            title: 'How Much Does a Treadmill Weigh?',
+            description:
+              'Typical weights by type, boxed vs. assembled, floor load, and how weight differs from capacity.',
+            badge: 'Weight',
+            url: '/how-much-does-a-treadmill-weigh/',
           },
           {
             title: 'How Much Electricity Does a Treadmill Use?',
