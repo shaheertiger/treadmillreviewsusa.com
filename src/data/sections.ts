@@ -863,6 +863,20 @@ export const SECTIONS: Section[] = [
             badge: 'No motion',
             url: '/treadmill-turns-on-but-belt-wont-move/',
           },
+          {
+            title: 'Treadmill Shuts Off by Itself',
+            description:
+              'Keeps stopping mid-workout? Sort it by when it stops: at start, after minutes, under load or at speed.',
+            badge: 'Cuts out',
+            url: '/treadmill-shuts-off-by-itself/',
+          },
+          {
+            title: 'Treadmill Tripping the Breaker',
+            description:
+              'Breaker or GFCI tripping? Tell a crowded circuit from a real fault, and what never to do at the panel.',
+            badge: 'Electrical',
+            url: '/treadmill-trips-breaker/',
+          },
         ],
       },
       {
@@ -884,13 +898,20 @@ export const SECTIONS: Section[] = [
         ],
       },
       {
-        name: 'Noise',
+        name: 'Noise & smell',
         pages: [
           {
             title: 'Treadmill Making a Squeaking Noise',
             description: 'Three questions that locate any treadmill noise, and the lubricants that ruin decks.',
             badge: 'Noise',
             url: '/treadmill-squeaking-noise/',
+          },
+          {
+            title: 'Treadmill Burning Smell',
+            description:
+              'Burning rubber, hot plastic or dust? Which smells mean unplug now, and what to check after.',
+            badge: 'Stop symptom',
+            url: '/treadmill-burning-smell/',
           },
         ],
       },
