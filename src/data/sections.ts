@@ -423,6 +423,46 @@ export const SECTIONS: Section[] = [
           },
         ],
       },
+      {
+        name: 'Where to buy',
+        pages: [
+          {
+            title: 'Buying a Treadmill on Amazon',
+            description:
+              'Check the seller, read listings and reviews critically, and know how freight delivery and returns work.',
+            badge: 'Amazon',
+            url: '/buying-a-treadmill-on-amazon/',
+          },
+          {
+            title: 'Dick’s Sporting Goods Treadmills',
+            description:
+              'Use the in-store test, then check delivery, assembly, returns and price matching before you pay.',
+            badge: 'In store',
+            url: '/dicks-sporting-goods-treadmills/',
+          },
+          {
+            title: 'Best Buy Treadmills',
+            description:
+              'What an electronics retailer gets right and wrong on treadmills, plus open-box, returns and restocking fees.',
+            badge: 'Open-box',
+            url: '/best-buy-treadmills/',
+          },
+          {
+            title: 'Treadmill Stores Near Me',
+            description:
+              'Six kinds of store, a 10-minute in-store test, questions for the salesperson and how to negotiate.',
+            badge: 'Near me',
+            url: '/where-to-buy-a-treadmill-near-me/',
+          },
+          {
+            title: 'Where to Buy a Used Treadmill',
+            description:
+              'Where used treadmills turn up, how to collect safely, fair prices, and the scams to avoid.',
+            badge: 'Used',
+            url: '/where-to-buy-a-used-treadmill/',
+          },
+        ],
+      },
     ],
   },
   {
