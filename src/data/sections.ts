@@ -878,6 +878,13 @@ export const SECTIONS: Section[] = [
             url: '/treadmill-wont-turn-on/',
           },
           {
+            title: 'How to Reset a NordicTrack Treadmill',
+            description:
+              'Turning it on in the right order, the reset breaker, console factory resets, and taking it apart to move.',
+            badge: 'NordicTrack',
+            url: '/how-to-reset-nordictrack-treadmill/',
+          },
+          {
             title: 'Turns On but the Belt Won’t Move',
             description:
               'Silence, a hum, a click or a free-spinning motor — each points somewhere different.',
@@ -1037,6 +1044,13 @@ export const SECTIONS: Section[] = [
             badge: 'Adjustment',
             url: '/how-tight-should-treadmill-belt-be/',
           },
+          {
+            title: 'How to Adjust a Treadmill Belt',
+            description:
+              'Tension vs. tracking, the quarter-turn method on the rear bolts, and when tightening is the wrong fix.',
+            badge: 'How-to',
+            url: '/how-to-adjust-treadmill-belt/',
+          },
         ],
       },
       {
@@ -1095,6 +1109,13 @@ export const SECTIONS: Section[] = [
               'Motors die of heat, and heat comes from friction — which makes this a property of the owner.',
             badge: 'Lifespan',
             url: '/how-long-do-treadmill-motors-last/',
+          },
+          {
+            title: 'How to Dispose of a Treadmill',
+            description:
+              'Selling, donating, haul-away, bulk pickup, scrap and junk removal costs, and wiping the console first.',
+            badge: 'End of life',
+            url: '/how-to-dispose-of-a-treadmill/',
           },
         ],
       },
