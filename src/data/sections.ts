@@ -911,6 +911,13 @@ export const SECTIONS: Section[] = [
             badge: 'Methodology',
             url: '/treadmill-reviews-2026/',
           },
+          {
+            title: 'Treadmill Buying Mistakes',
+            description:
+              'Fifteen pre-order mistakes, from peak horsepower and short decks to ceiling height and subscription lock-in.',
+            badge: 'Checklist',
+            url: '/treadmill-buying-mistakes/',
+          },
         ],
       },
       {
@@ -1059,6 +1066,39 @@ export const SECTIONS: Section[] = [
               'Curbside to white glove: what each delivery tier includes, typical costs, and what to check before signing.',
             badge: 'Delivery',
             url: '/treadmill-delivery-guide/',
+          },
+        ],
+      },
+      {
+        name: 'Choosing for your situation',
+        pages: [
+          {
+            title: 'Best Treadmill for Weight Loss',
+            description:
+              'Incline, deck comfort, a daily-rated motor and capacity headroom, and why no machine causes weight loss.',
+            badge: 'Weight loss',
+            url: '/best-treadmill-for-weight-loss/',
+          },
+          {
+            title: 'Family Treadmill Guide',
+            description:
+              'Size for the tallest runner and heaviest user, rate the motor for combined hours, plan for kids and noise.',
+            badge: 'Shared use',
+            url: '/family-treadmill-guide/',
+          },
+          {
+            title: 'Gym Treadmill for Home',
+            description:
+              'Commercial machines at home: floors, stairs, 20-amp circuits, ceiling height, warranty terms, ex-gym units.',
+            badge: 'Commercial',
+            url: '/gym-treadmill-for-home/',
+          },
+          {
+            title: 'Best Treadmill Brands',
+            description:
+              'How to judge a treadmill brand, and where NordicTrack, ProForm, Sole, Life Fitness and Matrix fit.',
+            badge: 'Brands',
+            url: '/best-treadmill-brands/',
           },
         ],
       },
