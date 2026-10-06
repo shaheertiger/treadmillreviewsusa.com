@@ -836,6 +836,25 @@ export const SECTIONS: Section[] = [
           },
         ],
       },
+      {
+        name: 'Background & tech',
+        pages: [
+          {
+            title: 'History of the Treadmill',
+            description:
+              'From Roman treadwheels and the 1818 prison treadmill to the medical machine and the first home treadmill.',
+            badge: 'History',
+            url: '/history-of-the-treadmill/',
+          },
+          {
+            title: 'Connect an Apple Watch to a Treadmill',
+            description:
+              'GymKit pairing, Indoor Run workouts without it, why distances disagree, and logging runs on Strava.',
+            badge: 'How-to',
+            url: '/how-to-connect-apple-watch-to-treadmill/',
+          },
+        ],
+      },
     ],
   },
   {
@@ -1205,6 +1224,13 @@ export const SECTIONS: Section[] = [
               'How the five zones work, why 220-minus-age misleads, and why grip sensors are the wrong instrument.',
             badge: 'Zones',
             url: '/treadmill-heart-rate-zones/',
+          },
+          {
+            title: 'Treadmill Stress Test Explained',
+            description:
+              'What the exercise ECG looks for, how the Bruce protocol runs, how long it takes and how to prepare.',
+            badge: 'Explainer',
+            url: '/treadmill-stress-test/',
           },
         ],
       },
