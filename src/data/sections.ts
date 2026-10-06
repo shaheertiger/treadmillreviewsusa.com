@@ -877,6 +877,13 @@ export const SECTIONS: Section[] = [
             badge: 'Electrical',
             url: '/treadmill-trips-breaker/',
           },
+          {
+            title: 'Treadmill Incline Not Working',
+            description:
+              'Stuck or stopping at one level? Calibration, obstructions, power, sensors and the motor, in order.',
+            badge: 'Incline',
+            url: '/treadmill-incline-not-working/',
+          },
         ],
       },
       {
@@ -905,6 +912,13 @@ export const SECTIONS: Section[] = [
             description: 'Three questions that locate any treadmill noise, and the lubricants that ruin decks.',
             badge: 'Noise',
             url: '/treadmill-squeaking-noise/',
+          },
+          {
+            title: 'Treadmill Thumping Noise',
+            description:
+              'Time a thump against the belt and your stride to trace it to the belt, deck, rollers, motor or incline.',
+            badge: 'Noise',
+            url: '/treadmill-thumping-noise/',
           },
           {
             title: 'Treadmill Burning Smell',
@@ -1046,6 +1060,13 @@ export const SECTIONS: Section[] = [
               'Five to ten years maintained, two to three neglected. The five signs, and why the deck goes with it.',
             badge: 'Wear part',
             url: '/how-often-should-a-treadmill-belt-be-replaced/',
+          },
+          {
+            title: 'How to Replace a Treadmill Belt',
+            description:
+              'Measure the old belt, order the right one, fit it step by step, then tension, centre and break it in.',
+            badge: 'How-to',
+            url: '/how-to-replace-treadmill-belt/',
           },
           {
             title: 'How Long Do Treadmill Motors Last?',
