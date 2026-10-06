@@ -739,6 +739,13 @@ export const SECTIONS: Section[] = [
             badge: 'Spec',
             url: '/treadmill-incline-percent-vs-degrees/',
           },
+          {
+            title: 'Treadmill Cushioning Explained',
+            description:
+              'How deck suspension works, why "% less impact" claims can’t be checked, and how to judge it yourself.',
+            badge: 'Spec',
+            url: '/treadmill-cushioning-explained/',
+          },
         ],
       },
       {
@@ -950,6 +957,13 @@ export const SECTIONS: Section[] = [
               'The most skipped task in treadmill maintenance, done safely — and what not to touch.',
             badge: 'Annual',
             url: '/how-to-vacuum-treadmill-motor-compartment/',
+          },
+          {
+            title: 'How to Move a Treadmill',
+            description:
+              'Weights, measuring the route, locking the deck, stairs with a dolly, and the checks to do before running.',
+            badge: 'Moving',
+            url: '/how-to-move-a-treadmill/',
           },
         ],
       },
