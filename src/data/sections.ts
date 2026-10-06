@@ -197,6 +197,13 @@ export const SECTIONS: Section[] = [
             badge: 'Low impact',
             url: '/best-treadmills-for-bad-knees/',
           },
+          {
+            title: 'Walking Pad Buying Guide',
+            description:
+              'Belt length, motor rating, capacity, desk height, warranty and where to try one: what to check first.',
+            badge: 'Walking pads',
+            url: '/walking-pad-buying-guide/',
+          },
         ],
       },
       {
@@ -365,6 +372,13 @@ export const SECTIONS: Section[] = [
             badge: 'Deals',
             url: '/treadmill-black-friday-deals/',
           },
+          {
+            title: 'Treadmill Financing',
+            description:
+              '0% vs. deferred interest, buy now pay later, store cards and subscription bundles, with worked examples.',
+            badge: 'Financing',
+            url: '/treadmill-financing/',
+          },
         ],
       },
       {
@@ -460,6 +474,13 @@ export const SECTIONS: Section[] = [
               'Where used treadmills turn up, how to collect safely, fair prices, and the scams to avoid.',
             badge: 'Used',
             url: '/where-to-buy-a-used-treadmill/',
+          },
+          {
+            title: 'Treadmill Return Policies',
+            description:
+              'Trial periods, restocking fees, pickup charges and packaging rules, and how to read a policy before buying.',
+            badge: 'Returns',
+            url: '/treadmill-return-policies/',
           },
         ],
       },
@@ -826,6 +847,13 @@ export const SECTIONS: Section[] = [
             badge: 'Machine type',
             url: '/treadmill-vs-rowing-machine/',
           },
+          {
+            title: 'Choosing Home Cardio Equipment',
+            description:
+              'Treadmill, walking pad, bike, elliptical, rower or stair climber: choose by goal, joints, space and noise.',
+            badge: 'Decision guide',
+            url: '/home-cardio-equipment-guide/',
+          },
         ],
       },
       {
@@ -1009,7 +1037,7 @@ export const SECTIONS: Section[] = [
         ],
       },
       {
-        name: 'Safety & warranty',
+        name: 'Safety, warranty & delivery',
         pages: [
           {
             title: 'Treadmill Safety Tips',
@@ -1024,6 +1052,13 @@ export const SECTIONS: Section[] = [
               'Frame, motor, parts and labor terms, what "lifetime" means, what voids cover, and how to claim.',
             badge: 'Warranty',
             url: '/treadmill-warranty-guide/',
+          },
+          {
+            title: 'Treadmill Delivery Options',
+            description:
+              'Curbside to white glove: what each delivery tier includes, typical costs, and what to check before signing.',
+            badge: 'Delivery',
+            url: '/treadmill-delivery-guide/',
           },
         ],
       },
