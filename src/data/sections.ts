@@ -324,6 +324,13 @@ export const SECTIONS: Section[] = [
             url: '/cheap-vs-premium-treadmill/',
           },
           {
+            title: 'Is iFIT Worth It?',
+            description:
+              'What the membership gets you, what the machine does without it, and the five- to ten-year cost.',
+            badge: 'Subscription',
+            url: '/is-ifit-worth-it/',
+          },
+          {
             title: 'Best Time of Year to Buy',
             description:
               'The same machine swings 20-35% across a year. The cycle, and the three weeks to avoid.',
@@ -670,6 +677,20 @@ export const SECTIONS: Section[] = [
               'Joints, calorie burn, bone density, footprint, noise and ten-year cost — compared honestly.',
             badge: 'Machine type',
             url: '/treadmill-vs-elliptical/',
+          },
+          {
+            title: 'Manual vs. Motorized Treadmill',
+            description:
+              'Flat manual, curved self-powered or motorized: which is worth buying, and who each one suits.',
+            badge: 'Machine type',
+            url: '/manual-vs-motorized-treadmill/',
+          },
+          {
+            title: 'Treadmill vs. Running Outside',
+            description:
+              'Why the same pace is a little easier indoors, what the 1% incline rule means, and how to blend both.',
+            badge: 'Indoor vs. road',
+            url: '/treadmill-vs-running-outside/',
           },
         ],
       },
