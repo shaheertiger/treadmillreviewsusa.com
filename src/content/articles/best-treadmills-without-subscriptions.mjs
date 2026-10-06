@@ -224,7 +224,9 @@ export default {
           <p>
             The buyers who should avoid subscriptions are the ones who intend to press start and
             walk or run — which, on the evidence of how these machines are actually used, is most
-            people.
+            people. If the machine you are weighing runs on iFIT specifically, our
+            <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">Is iFIT worth it?</a> guide works through the
+            membership on its own terms.
           </p>`,
     },
     {
