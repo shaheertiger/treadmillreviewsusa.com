@@ -240,6 +240,30 @@ from the Sole pages below, and it is the only rule that keeps the distinction me
 is written around what a used one is worth, how long parts will realistically exist, and what
 replaces it — rather than pretending it is still a purchase decision.
 
+### October 2026 batch: problems, ownership and informational queries
+
+Thirty-one pages written against supplied page-performance and keyword data. Each targets one
+search intent; queries that an existing page already answers (lubrication, elliptical vs.
+treadmill, where to buy, lifespan, 12-3-30) were folded into that page rather than given a
+competing one. None carries product specifications or `products`, so none needs `dataPending`.
+
+- **Fault diagnosis** (`/problems/`): shuts off by itself, trips the breaker, burning smell,
+  thumping noise, incline not working, resetting a NordicTrack
+- **Maintenance** (`/maintenance/`): adjusting the belt, replacing the belt, moving a treadmill,
+  disposing of one
+- **Buying guides** (`/guides/`): weight capacity, top speed, cushioning, machine weight, mats,
+  surge protectors, plus a Background & tech group (history, Apple Watch/Strava)
+- **Comparisons** (`/compare/`): manual vs. motorized, treadmill vs. running outside,
+  stair climber vs. treadmill
+- **Price** (`/price/`): how much a treadmill costs, is iFIT worth it
+- **Training** (`/training/`): how to use a treadmill, what incline to walk on, walking
+  backwards, belly fat, how long to walk, calorie accuracy, knees, the treadmill stress test
+
+Health-adjacent pages carry the not-medical-advice scope note. Prices, weights, intervals and
+costs are typical ranges, labelled as such; iFIT and Peloton prices are deliberately not quoted
+as current. Not written: "are Deer Run treadmills good" (a model/brand page that needs verified
+specifications first) and two queries with no editorial value.
+
 ### Sole F80 and F85
 
 Both machines were referenced across the site — the F80 on ten pages — with no page to point at,

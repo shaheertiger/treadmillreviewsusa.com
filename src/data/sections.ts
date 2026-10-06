@@ -317,11 +317,25 @@ export const SECTIONS: Section[] = [
             url: '/how-much-should-you-spend-on-a-treadmill/',
           },
           {
+            title: 'How Much Does a Treadmill Cost?',
+            description:
+              'Typical US prices from walking pads to gym machines, what each tier buys, and the costs after checkout.',
+            badge: 'Price tiers',
+            url: '/how-much-does-a-treadmill-cost/',
+          },
+          {
             title: 'Cheap vs. Premium Treadmill',
             description:
               'Component by component, what the extra money buys — and which three parts you will notice.',
             badge: 'Comparison',
             url: '/cheap-vs-premium-treadmill/',
+          },
+          {
+            title: 'Is iFIT Worth It?',
+            description:
+              'What the membership gets you, what the machine does without it, and the five- to ten-year cost.',
+            badge: 'Subscription',
+            url: '/is-ifit-worth-it/',
           },
           {
             title: 'Best Time of Year to Buy',
@@ -671,6 +685,27 @@ export const SECTIONS: Section[] = [
             badge: 'Machine type',
             url: '/treadmill-vs-elliptical/',
           },
+          {
+            title: 'Manual vs. Motorized Treadmill',
+            description:
+              'Flat manual, curved self-powered or motorized: which is worth buying, and who each one suits.',
+            badge: 'Machine type',
+            url: '/manual-vs-motorized-treadmill/',
+          },
+          {
+            title: 'Treadmill vs. Running Outside',
+            description:
+              'Why the same pace is a little easier indoors, what the 1% incline rule means, and how to blend both.',
+            badge: 'Indoor vs. road',
+            url: '/treadmill-vs-running-outside/',
+          },
+          {
+            title: 'StairMaster vs. Treadmill',
+            description:
+              'Muscles, calories, knees and home fit compared, with a verdict and the incline-treadmill middle ground.',
+            badge: 'Machine type',
+            url: '/stairmaster-vs-treadmill/',
+          },
         ],
       },
     ],
@@ -734,10 +769,31 @@ export const SECTIONS: Section[] = [
             url: '/treadmill-belt-size-guide/',
           },
           {
+            title: 'Treadmill Weight Capacity Guide',
+            description:
+              'What a weight limit really means, why running multiplies the load, and how much capacity to buy.',
+            badge: 'Sizing',
+            url: '/treadmill-weight-capacity-guide/',
+          },
+          {
+            title: 'How Fast Do Treadmills Go?',
+            description:
+              'Typical top and minimum speeds by type, the speeds people actually use, and why max speed rarely matters.',
+            badge: 'Speed',
+            url: '/how-fast-do-treadmills-go/',
+          },
+          {
             title: 'Incline: Percentage vs. Degrees',
             description: '15 per cent is only 8.5 degrees. The conversion chart and what each grade demands.',
             badge: 'Spec',
             url: '/treadmill-incline-percent-vs-degrees/',
+          },
+          {
+            title: 'Treadmill Cushioning Explained',
+            description:
+              'How deck suspension works, why "% less impact" claims can’t be checked, and how to judge it yourself.',
+            badge: 'Spec',
+            url: '/treadmill-cushioning-explained/',
           },
         ],
       },
@@ -752,6 +808,13 @@ export const SECTIONS: Section[] = [
             url: '/treadmill-dimensions-space-requirements/',
           },
           {
+            title: 'How Much Does a Treadmill Weigh?',
+            description:
+              'Typical weights by type, boxed vs. assembled, floor load, and how weight differs from capacity.',
+            badge: 'Weight',
+            url: '/how-much-does-a-treadmill-weigh/',
+          },
+          {
             title: 'How Much Electricity Does a Treadmill Use?',
             description: 'Real draw figures, the monthly cost, and the circuit advice that actually matters.',
             badge: 'Running cost',
@@ -763,6 +826,39 @@ export const SECTIONS: Section[] = [
               'Yes, with conditions — fibres in the motor, blocked airflow, and a base that steers the belt.',
             badge: 'Placement',
             url: '/treadmill-on-carpet/',
+          },
+          {
+            title: 'Do You Need a Treadmill Mat?',
+            description:
+              'When a mat is essential, what it can and can’t do for noise, and how to choose thickness and size.',
+            badge: 'Setup',
+            url: '/do-you-need-a-treadmill-mat/',
+          },
+          {
+            title: 'Do You Need a Surge Protector?',
+            description:
+              'Surge protectors, power strips and extension cords: what manuals say, what to buy, what to avoid.',
+            badge: 'Electrical',
+            url: '/treadmill-surge-protector/',
+          },
+        ],
+      },
+      {
+        name: 'Background & tech',
+        pages: [
+          {
+            title: 'History of the Treadmill',
+            description:
+              'From Roman treadwheels and the 1818 prison treadmill to the medical machine and the first home treadmill.',
+            badge: 'History',
+            url: '/history-of-the-treadmill/',
+          },
+          {
+            title: 'Connect an Apple Watch to a Treadmill',
+            description:
+              'GymKit pairing, Indoor Run workouts without it, why distances disagree, and logging runs on Strava.',
+            badge: 'How-to',
+            url: '/how-to-connect-apple-watch-to-treadmill/',
           },
         ],
       },
@@ -808,11 +904,39 @@ export const SECTIONS: Section[] = [
             url: '/treadmill-wont-turn-on/',
           },
           {
+            title: 'How to Reset a NordicTrack Treadmill',
+            description:
+              'Turning it on in the right order, the reset breaker, console factory resets, and taking it apart to move.',
+            badge: 'NordicTrack',
+            url: '/how-to-reset-nordictrack-treadmill/',
+          },
+          {
             title: 'Turns On but the Belt Won’t Move',
             description:
               'Silence, a hum, a click or a free-spinning motor — each points somewhere different.',
             badge: 'No motion',
             url: '/treadmill-turns-on-but-belt-wont-move/',
+          },
+          {
+            title: 'Treadmill Shuts Off by Itself',
+            description:
+              'Keeps stopping mid-workout? Sort it by when it stops: at start, after minutes, under load or at speed.',
+            badge: 'Cuts out',
+            url: '/treadmill-shuts-off-by-itself/',
+          },
+          {
+            title: 'Treadmill Tripping the Breaker',
+            description:
+              'Breaker or GFCI tripping? Tell a crowded circuit from a real fault, and what never to do at the panel.',
+            badge: 'Electrical',
+            url: '/treadmill-trips-breaker/',
+          },
+          {
+            title: 'Treadmill Incline Not Working',
+            description:
+              'Stuck or stopping at one level? Calibration, obstructions, power, sensors and the motor, in order.',
+            badge: 'Incline',
+            url: '/treadmill-incline-not-working/',
           },
         ],
       },
@@ -835,13 +959,27 @@ export const SECTIONS: Section[] = [
         ],
       },
       {
-        name: 'Noise',
+        name: 'Noise & smell',
         pages: [
           {
             title: 'Treadmill Making a Squeaking Noise',
             description: 'Three questions that locate any treadmill noise, and the lubricants that ruin decks.',
             badge: 'Noise',
             url: '/treadmill-squeaking-noise/',
+          },
+          {
+            title: 'Treadmill Thumping Noise',
+            description:
+              'Time a thump against the belt and your stride to trace it to the belt, deck, rollers, motor or incline.',
+            badge: 'Noise',
+            url: '/treadmill-thumping-noise/',
+          },
+          {
+            title: 'Treadmill Burning Smell',
+            description:
+              'Burning rubber, hot plastic or dust? Which smells mean unplug now, and what to check after.',
+            badge: 'Stop symptom',
+            url: '/treadmill-burning-smell/',
           },
         ],
       },
@@ -932,6 +1070,13 @@ export const SECTIONS: Section[] = [
             badge: 'Adjustment',
             url: '/how-tight-should-treadmill-belt-be/',
           },
+          {
+            title: 'How to Adjust a Treadmill Belt',
+            description:
+              'Tension vs. tracking, the quarter-turn method on the rear bolts, and when tightening is the wrong fix.',
+            badge: 'How-to',
+            url: '/how-to-adjust-treadmill-belt/',
+          },
         ],
       },
       {
@@ -950,6 +1095,13 @@ export const SECTIONS: Section[] = [
               'The most skipped task in treadmill maintenance, done safely — and what not to touch.',
             badge: 'Annual',
             url: '/how-to-vacuum-treadmill-motor-compartment/',
+          },
+          {
+            title: 'How to Move a Treadmill',
+            description:
+              'Weights, measuring the route, locking the deck, stairs with a dolly, and the checks to do before running.',
+            badge: 'Moving',
+            url: '/how-to-move-a-treadmill/',
           },
         ],
       },
@@ -971,11 +1123,25 @@ export const SECTIONS: Section[] = [
             url: '/how-often-should-a-treadmill-belt-be-replaced/',
           },
           {
+            title: 'How to Replace a Treadmill Belt',
+            description:
+              'Measure the old belt, order the right one, fit it step by step, then tension, centre and break it in.',
+            badge: 'How-to',
+            url: '/how-to-replace-treadmill-belt/',
+          },
+          {
             title: 'How Long Do Treadmill Motors Last?',
             description:
               'Motors die of heat, and heat comes from friction — which makes this a property of the owner.',
             badge: 'Lifespan',
             url: '/how-long-do-treadmill-motors-last/',
+          },
+          {
+            title: 'How to Dispose of a Treadmill',
+            description:
+              'Selling, donating, haul-away, bulk pickup, scrap and junk removal costs, and wiping the console first.',
+            badge: 'End of life',
+            url: '/how-to-dispose-of-a-treadmill/',
           },
         ],
       },
@@ -1009,6 +1175,13 @@ export const SECTIONS: Section[] = [
             badge: 'Pillar guide',
             url: '/treadmill-workouts/',
           },
+          {
+            title: 'How to Use a Treadmill',
+            description:
+              'Safety key, straddling the belt, stepping off safely, running form and a first-week plan.',
+            badge: 'Beginner',
+            url: '/how-to-use-a-treadmill/',
+          },
         ],
       },
       {
@@ -1027,6 +1200,20 @@ export const SECTIONS: Section[] = [
               'What the incline-walking protocol demands, a four-week build-up, and which machines reach 12%.',
             badge: 'Incline',
             url: '/12-3-30-treadmill-workout/',
+          },
+          {
+            title: 'What Incline Should I Walk On?',
+            description:
+              '3–6% for most walks, 8–12% for hard sessions, and how to progress without sore calves.',
+            badge: 'Incline',
+            url: '/what-incline-should-i-walk-on-a-treadmill/',
+          },
+          {
+            title: 'Walking Backwards on a Treadmill',
+            description:
+              'Backward walking works quads and calves and tests balance. How to start safely.',
+            badge: 'Retro walking',
+            url: '/walking-backwards-on-a-treadmill/',
           },
         ],
       },
@@ -1047,6 +1234,20 @@ export const SECTIONS: Section[] = [
             badge: 'Weight',
             url: '/treadmill-workout-for-weight-loss/',
           },
+          {
+            title: 'Does a Treadmill Burn Belly Fat?',
+            description:
+              'No exercise targets belly or thigh fat, but treadmill work helps whole-body and visceral fat loss.',
+            badge: 'Myth vs. fact',
+            url: '/does-treadmill-burn-belly-fat/',
+          },
+          {
+            title: 'How Long Should I Walk on a Treadmill?',
+            description:
+              'About 30 minutes on most days for health, more for weight loss, with a beginner plan.',
+            badge: 'Duration',
+            url: '/how-long-should-i-walk-on-a-treadmill/',
+          },
         ],
       },
       {
@@ -1065,6 +1266,27 @@ export const SECTIONS: Section[] = [
               'How the five zones work, why 220-minus-age misleads, and why grip sensors are the wrong instrument.',
             badge: 'Zones',
             url: '/treadmill-heart-rate-zones/',
+          },
+          {
+            title: 'Treadmill Stress Test Explained',
+            description:
+              'What the exercise ECG looks for, how the Bruce protocol runs, how long it takes and how to prepare.',
+            badge: 'Explainer',
+            url: '/treadmill-stress-test/',
+          },
+          {
+            title: 'Are Treadmill Calories Accurate?',
+            description:
+              'Why console calorie counts run high, plus realistic burns per 30 minutes at 150 and 200 lb.',
+            badge: 'Calories',
+            url: '/are-treadmill-calories-accurate/',
+          },
+          {
+            title: 'Are Treadmills Bad for Your Knees?',
+            description:
+              'What research says about running and knees, and the treadmill habits that actually cause pain.',
+            badge: 'Knees',
+            url: '/are-treadmills-bad-for-your-knees/',
           },
         ],
       },
