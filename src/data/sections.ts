@@ -197,6 +197,13 @@ export const SECTIONS: Section[] = [
             badge: 'Low impact',
             url: '/best-treadmills-for-bad-knees/',
           },
+          {
+            title: 'Walking Pad Buying Guide',
+            description:
+              'Belt length, motor rating, capacity, desk height, warranty and where to try one: what to check first.',
+            badge: 'Walking pads',
+            url: '/walking-pad-buying-guide/',
+          },
         ],
       },
       {
@@ -365,6 +372,13 @@ export const SECTIONS: Section[] = [
             badge: 'Deals',
             url: '/treadmill-black-friday-deals/',
           },
+          {
+            title: 'Treadmill Financing',
+            description:
+              '0% vs. deferred interest, buy now pay later, store cards and subscription bundles, with worked examples.',
+            badge: 'Financing',
+            url: '/treadmill-financing/',
+          },
         ],
       },
       {
@@ -420,6 +434,53 @@ export const SECTIONS: Section[] = [
               'When renting makes sense, why rent-to-own can cost 2-3x retail, and the buy-used-then-resell option.',
             badge: 'Renting',
             url: '/rent-a-treadmill/',
+          },
+        ],
+      },
+      {
+        name: 'Where to buy',
+        pages: [
+          {
+            title: 'Buying a Treadmill on Amazon',
+            description:
+              'Check the seller, read listings and reviews critically, and know how freight delivery and returns work.',
+            badge: 'Amazon',
+            url: '/buying-a-treadmill-on-amazon/',
+          },
+          {
+            title: 'Dick’s Sporting Goods Treadmills',
+            description:
+              'Use the in-store test, then check delivery, assembly, returns and price matching before you pay.',
+            badge: 'In store',
+            url: '/dicks-sporting-goods-treadmills/',
+          },
+          {
+            title: 'Best Buy Treadmills',
+            description:
+              'What an electronics retailer gets right and wrong on treadmills, plus open-box, returns and restocking fees.',
+            badge: 'Open-box',
+            url: '/best-buy-treadmills/',
+          },
+          {
+            title: 'Treadmill Stores Near Me',
+            description:
+              'Six kinds of store, a 10-minute in-store test, questions for the salesperson and how to negotiate.',
+            badge: 'Near me',
+            url: '/where-to-buy-a-treadmill-near-me/',
+          },
+          {
+            title: 'Where to Buy a Used Treadmill',
+            description:
+              'Where used treadmills turn up, how to collect safely, fair prices, and the scams to avoid.',
+            badge: 'Used',
+            url: '/where-to-buy-a-used-treadmill/',
+          },
+          {
+            title: 'Treadmill Return Policies',
+            description:
+              'Trial periods, restocking fees, pickup charges and packaging rules, and how to read a policy before buying.',
+            badge: 'Returns',
+            url: '/treadmill-return-policies/',
           },
         ],
       },
@@ -786,6 +847,13 @@ export const SECTIONS: Section[] = [
             badge: 'Machine type',
             url: '/treadmill-vs-rowing-machine/',
           },
+          {
+            title: 'Choosing Home Cardio Equipment',
+            description:
+              'Treadmill, walking pad, bike, elliptical, rower or stair climber: choose by goal, joints, space and noise.',
+            badge: 'Decision guide',
+            url: '/home-cardio-equipment-guide/',
+          },
         ],
       },
       {
@@ -842,6 +910,13 @@ export const SECTIONS: Section[] = [
               'How we test and score every treadmill, plus this year’s category winners.',
             badge: 'Methodology',
             url: '/treadmill-reviews-2026/',
+          },
+          {
+            title: 'Treadmill Buying Mistakes',
+            description:
+              'Fifteen pre-order mistakes, from peak horsepower and short decks to ceiling height and subscription lock-in.',
+            badge: 'Checklist',
+            url: '/treadmill-buying-mistakes/',
           },
         ],
       },
@@ -969,7 +1044,7 @@ export const SECTIONS: Section[] = [
         ],
       },
       {
-        name: 'Safety & warranty',
+        name: 'Safety, warranty & delivery',
         pages: [
           {
             title: 'Treadmill Safety Tips',
@@ -984,6 +1059,46 @@ export const SECTIONS: Section[] = [
               'Frame, motor, parts and labor terms, what "lifetime" means, what voids cover, and how to claim.',
             badge: 'Warranty',
             url: '/treadmill-warranty-guide/',
+          },
+          {
+            title: 'Treadmill Delivery Options',
+            description:
+              'Curbside to white glove: what each delivery tier includes, typical costs, and what to check before signing.',
+            badge: 'Delivery',
+            url: '/treadmill-delivery-guide/',
+          },
+        ],
+      },
+      {
+        name: 'Choosing for your situation',
+        pages: [
+          {
+            title: 'Best Treadmill for Weight Loss',
+            description:
+              'Incline, deck comfort, a daily-rated motor and capacity headroom, and why no machine causes weight loss.',
+            badge: 'Weight loss',
+            url: '/best-treadmill-for-weight-loss/',
+          },
+          {
+            title: 'Family Treadmill Guide',
+            description:
+              'Size for the tallest runner and heaviest user, rate the motor for combined hours, plan for kids and noise.',
+            badge: 'Shared use',
+            url: '/family-treadmill-guide/',
+          },
+          {
+            title: 'Gym Treadmill for Home',
+            description:
+              'Commercial machines at home: floors, stairs, 20-amp circuits, ceiling height, warranty terms, ex-gym units.',
+            badge: 'Commercial',
+            url: '/gym-treadmill-for-home/',
+          },
+          {
+            title: 'Best Treadmill Brands',
+            description:
+              'How to judge a treadmill brand, and where NordicTrack, ProForm, Sole, Life Fitness and Matrix fit.',
+            badge: 'Brands',
+            url: '/best-treadmill-brands/',
           },
         ],
       },
