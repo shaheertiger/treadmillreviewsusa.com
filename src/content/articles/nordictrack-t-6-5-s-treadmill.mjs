@@ -58,6 +58,7 @@ export default {
   sections: [
     {
       id: 'what-it-is',
+      products: true,
       heading: 'The Entry Machine in a Running Brand’s Lineup',
       html: `          <p>
             NordicTrack's identity is built on the Commercial series — heavy machines with 60-inch

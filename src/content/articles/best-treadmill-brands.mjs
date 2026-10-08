@@ -51,8 +51,8 @@ export default {
             — convenient and inexpensive, with shorter expected lifespans and thinner support.</li>
           </ul>
           <p>
-            Bowflex is a well-known fitness brand that shoppers often ask about in this context; its
-            cardio line is better known for the Max Trainer than for treadmills, and our
+            Bowflex is a well-known fitness brand that shoppers often ask about in this context; it
+            now sells three folding treadmills alongside the better-known Max Trainer, and our
             <a href="/bowflex/" class="text-[#0F62FE] font-medium">Bowflex page</a> explains where it
             stands. Within any brand, choose the model by the specifications that matter for you —
             motor, deck, weight capacity — using our
@@ -274,19 +274,22 @@ export default {
     },
     {
       id: 'bowflex',
-      heading: 'Bowflex: A Strength Brand Shoppers Ask About',
+      heading: 'Bowflex: Treadmills and the Max Trainer',
       html: `          <p>
             Bowflex is one of the best-known names in home fitness, built originally on strength
-            equipment. It comes up in treadmill searches because of that name recognition and
-            because of its Max Trainer, a low-impact elliptical-stepper hybrid with a JRNY coaching
-            app that some shoppers consider as an alternative to a treadmill.
+            equipment and now owned by Johnson Health Tech, which also owns Horizon and Matrix. It
+            sells three folding treadmills — the T6, T9 and T16 — each marketed as working without a
+            subscription; our <a href="/bowflex-t6-treadmill/" class="text-[#0F62FE] font-medium">Bowflex T6 review</a> covers the entry
+            model. It is still best known in cardio for the Max Trainer, a low-impact
+            elliptical-stepper hybrid with a JRNY coaching app that some shoppers consider as an
+            alternative to a treadmill.
           </p>
           <p>
             Whether a Max Trainer is a sensible alternative depends on the goal. For lower-impact
             cardio it can be a strong option; for anyone who specifically wants to run or walk, it is
             a different kind of machine. Our
-            <a href="/bowflex/" class="text-[#0F62FE] font-medium">Bowflex guide</a> covers the brand's
-            current position on treadmills and compares its Max Trainer models, and
+            <a href="/bowflex/" class="text-[#0F62FE] font-medium">Bowflex guide</a> covers the full
+            range and compares its Max Trainer models, and
             <a href="/treadmill-vs-elliptical/" class="text-[#0F62FE] font-medium">treadmill versus elliptical</a>
             covers the broader choice between those two formats.
           </p>`,
@@ -318,6 +321,9 @@ export default {
             covers what to check before buying one, and
             <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad versus treadmill</a>
             covers when one is the right choice.
+          </p>
+          <p>
+            For a worked example of reading one of these listings critically — which figures are the seller's claims, which are disputed and what the warranty really covers — see our <a href="/wellfit-tm037-treadmill/" class="text-[#0F62FE] font-medium">Wellfit TM037 review</a>.
           </p>`,
     },
     {

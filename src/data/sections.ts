@@ -548,9 +548,9 @@ export const SECTIONS: Section[] = [
         name: 'Cross-shopped alternatives',
         pages: [
           {
-            title: 'Bowflex Cardio Machines',
-            description: 'The Max Trainer M5 and M7 — not treadmills, but a popular alternative.',
-            badge: 'Not a treadmill',
+            title: 'Bowflex',
+            description: 'Three folding treadmills, the T6, T9 and T16, plus the Max Trainer M5 and M7, and who owns the brand now.',
+            badge: 'Treadmills + Max Trainer',
             url: '/bowflex/',
           },
         ],
@@ -693,6 +693,18 @@ export const SECTIONS: Section[] = [
         ],
       },
       {
+        name: 'Bowflex',
+        pages: [
+          {
+            title: 'Bowflex T6',
+            description:
+              'A 20 x 60 in. deck, 15% incline and no subscription required, read against the Bowflex T9 and the Sole F63.',
+            badge: 'Bowflex',
+            url: '/bowflex-t6-treadmill/',
+          },
+        ],
+      },
+      {
         name: 'Budget & entry-level',
         pages: [
           {
@@ -706,6 +718,13 @@ export const SECTIONS: Section[] = [
             description: 'Discontinued. What it was, what a used one is worth, and what to buy instead.',
             badge: 'Discontinued',
             url: '/weslo-cadence-g-5-9-treadmill/',
+          },
+          {
+            title: 'Wellfit TM037',
+            description:
+              'A budget 2-in-1 walking pad: what the listing claims, what an independent teardown disputes, and who it suits.',
+            badge: 'Walking pad',
+            url: '/wellfit-tm037-treadmill/',
           },
         ],
       },
@@ -834,6 +853,13 @@ export const SECTIONS: Section[] = [
               'Same owner, same iFIT software: where the two brands differ, where they overlap, and how to compare models.',
             badge: 'Brands',
             url: '/nordictrack-vs-proform/',
+          },
+          {
+            title: 'NordicTrack Commercial 1250 vs. 1750',
+            description:
+              'The confirmed differences are the screen, the motor warranty and the price. What is the same, and what sources disagree on.',
+            badge: 'NordicTrack',
+            url: '/nordictrack-commercial-1250-vs-1750/',
           },
         ],
       },

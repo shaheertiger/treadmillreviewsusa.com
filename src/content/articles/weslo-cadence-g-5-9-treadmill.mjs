@@ -60,6 +60,7 @@ export default {
   sections: [
     {
       id: 'why-it-sold',
+      products: true,
       heading: 'Why It Sold in Those Numbers',
       html: `          <p>
             The Cadence G 5.9 was never the best treadmill at anything. It was the cheapest one

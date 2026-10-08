@@ -1,0 +1,646 @@
+export default {
+  slug: 'bowflex-t6-treadmill',
+  title: 'Bowflex T6 Treadmill Review (2026): Specs, Warranty, T9 and F63',
+  description:
+    'A 20 x 60 in. folding deck, 15% incline and lifetime frame and motor cover for $999-$1,299. What the 3.0 HP test rating means, and when the T9 or Sole F63 wins.',
+  crumbLabel: 'Bowflex T6 Treadmill',
+  kicker: 'Model Review',
+  updated: 'October 2026',
+  updatedLong: 'October 8, 2026',
+  published: '2026-10-08',
+  socialProof: '1.9k',
+  h1: ['Bowflex T6', 'Treadmill Review'],
+  standfirst:
+    'The T6 is the entry point to Bowflex’s folding range, and on paper it is a complete machine: a full-length deck, incline to 15%, and a console that works without any subscription. The questions worth answering are what its horsepower figure actually means, and whether the T9 or a Sole F63 is the better use of the same money.',
+  ctas: [
+    { label: 'The Specifications', href: '#bowflex-t6' },
+    { label: 'Who Should Buy It', href: '#who-should-buy' },
+  ],
+  tags: ['bowflex t6 treadmill', 'bowflex t6 folding treadmill', 'bowflex bxt6 treadmill', 'bowflex t6 vs t9', 'bowflex t6 vs sole f63'],
+  stickyCta: { text: 'See the Verdict', link: '#bowflex-t6' },
+  breadcrumb: { name: 'Reviews', url: '/reviews/' },
+  lead: `The T6 is the treadmill most people mean when they search for a Bowflex folding treadmill,
+          and its specification sheet reads well: a 20 by 60-inch running area, motorised incline
+          to 15%, 12 mph, 325 lb of rated capacity and a lifetime warranty on the frame and motor.
+          Two things on that sheet need reading carefully rather than at face value — the 3.0 HP
+          figure, which Bowflex itself says is a test rating, and the one year of labour cover.
+          This review works through both, and through the two comparisons that decide most
+          purchases: the T9 above it and the Sole F63 beside it.`,
+  note: `<strong class="text-gray-900">On the numbers below.</strong> The specifications on this
+          page are Bowflex's published figures for the T6 (SKU BTM0011-01), cross-checked on
+          8 October 2026 against an independent reviewer's published spec table and a specialist
+          fitness retailer's listing, which all agree. The T9 figures are from Bowflex's own
+          product page on the same date, and the Sole F63 figures are the core numbers on which
+          independent reviews agree. None of them are our own measurements — we have not tested
+          the T6. Prices are those shown on bowflex.com on the day we checked and change often,
+          so confirm the price, the specification and the warranty terms against the exact unit
+          you are buying before you order.`,
+  products: [
+    {
+      id: 'bowflex-t6',
+      name: 'Bowflex T6',
+      category: 'Folding Treadmill With 15% Incline',
+      badge: 'Mid-Range Pick',
+      priceRange: '$999-$1,299',
+      specs: '20 x 60 in. deck · 3.0 HP (test rating) · 0-15% incline · 0.5-12 mph · 325 lb capacity',
+      pros: [
+        'Full 60-inch running length and motorised incline to 15% at a price where 10% to 12% is common',
+        'No subscription needed to use the treadmill; connects over Bluetooth to JRNY, Peloton or Zwift if you choose to pay for one',
+        'Lifetime frame and motor warranty, plus three years on mechanical parts',
+        'Folds from 76 to 44 inches long, with a 325 lb maximum user weight',
+      ],
+      cons: [
+        'The 3.0 HP figure is a test rating that Bowflex says does not reflect operational horsepower, so it cannot be compared directly with a continuous-duty rating',
+        '20-inch width is fine for most users but leaves less lateral margin than the 22 inches on the T9',
+        'One year of in-home labour is short next to the lifetime frame and motor cover',
+        'About 234 lb assembled and 71 inches tall when folded, so it is not a machine you tuck away casually',
+      ],
+      bottomLine:
+        'A well-specified folding treadmill for walkers, incline walkers and most runners of average build, best bought at the sale price and with the labour term understood.',
+      description:
+        'The T6 pairs a 20 by 60-inch running area on a FlexZone deck with a drive motor Bowflex rates at 3.0 HP under test settings, a 500 lb-thrust incline motor giving 0 to 15% (no decline), and a speed range of 0.5 to 12 mph. Maximum user weight is 325 lb. The console is a dual LED and LCD layout — an 8.8 by 2-inch backlit LCD with four LED windows, no touchscreen — with Bluetooth FTMS for JRNY, Peloton and Zwift, and NFC tap-to-connect for Apple Watch and Samsung Galaxy Watch. Assembled it measures 76 by 35 by 71 inches and folds to 44 inches long. The US warranty is lifetime on the frame and motor, three years on mechanical parts and one year of in-home labour. At the time of writing bowflex.com listed it at $1,299 regular and $999 on sale.',
+    },
+  ],
+  sections: [
+    {
+      id: 'short-answer',
+      heading: 'The Short Answer',
+      products: true,
+      html: `          <p>
+            The Bowflex T6 is a sensible folding treadmill with no obvious weak point in its core
+            specification. A 60-inch running length is the figure most people should care about
+            first, and the T6 has it. Incline to 15% is more than most machines at this price
+            offer, 12 mph covers everything short of fast interval work, and a 325 lb maximum user
+            weight implies a frame built with reasonable margin. Nothing on the console needs a
+            membership to work.
+          </p>
+          <p>
+            The two places to slow down are the motor figure and the warranty. Bowflex quotes
+            3.0 HP but footnotes it as a rating under test settings that does not reflect the
+            operational horsepower of the motor in use — which means it is not the continuous-duty
+            figure some competitors publish, and two machines labelled 3.0 are not necessarily
+            equal. The warranty is genuinely strong on the frame and motor and short on labour.
+            Neither is a reason to avoid the T6; both are reasons to read the sheet properly.
+          </p>
+          <p>
+            Buy it at or near the sale price if you walk, incline-walk or run at moderate paces and
+            are of roughly average build. Look at the T9 if you are tall, broad or simply want more
+            belt either side of you, and put the Sole F63 next to it on the day — on paper the two
+            are close to identical, and the decision comes down to price, warranty detail, console
+            preference and service. We have not tested the T6 ourselves; everything below is what
+            the published figures imply.
+          </p>`,
+    },
+    {
+      id: 'where-it-sits',
+      heading: 'Where the T6 Sits in the Bowflex Range',
+      html: `          <p>
+            Bowflex's current T range runs from the T6 through the T9 to the T16. The T6 is the entry point,
+            listed at $1,299 regular and $999 on sale when we checked. The T9 sits above it at
+            $1,799 regular and $1,499 on sale, with a wider deck, a slightly higher motor rating
+            and a colour console. The T16 is the top of the range at $2,299 regular and $1,999 on
+            sale, positioned as the entertainment model; we have not verified its specification,
+            so we say nothing more about it here. Our
+            <a href="/bowflex/" class="text-[#0F62FE] font-medium">Bowflex brand overview</a>
+            covers the rest of the catalogue.
+          </p>
+          <p>
+            The ownership has changed, and it is worth knowing why. BowFlex, Inc. — the company
+            formerly called Nautilus, Inc. — filed for Chapter 11 in March 2024. Johnson Health
+            Tech bought the BowFlex, Schwinn and JRNY brands, and the sale closed in April 2024.
+            Johnson Health Tech also owns Horizon, whose
+            <a href="/horizon-t101-treadmill/" class="text-[#0F62FE] font-medium">T101</a>
+            is a long-standing budget recommendation, and
+            <a href="/matrix-fitness/" class="text-[#0F62FE] font-medium">Matrix</a>,
+            its commercial and premium-home brand.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What the ownership change means for a buyer</h3>
+          <p>
+            For someone buying a T6 new today, the practical point is that the warranty is offered
+            by the current owner of the brand, which is a large and established equipment maker.
+            That is a better position than buying from a company in financial difficulty, and it
+            is the main reason the bankruptcy is not a reason to avoid the brand now.
+          </p>
+          <p>
+            For someone buying a used Bowflex treadmill made before 2024, it is a reason to ask
+            questions. Do not assume how older warranties, parts supply or service arrangements are
+            handled — ask Bowflex directly, quote the serial number, and get the answer in writing
+            before you rely on it. We come back to this in the section on the BXT6 name and buying
+            second-hand.
+          </p>
+          <p>
+            What the ownership does not tell you is anything about how the T6 is built. Shared
+            ownership with Horizon and Matrix is sometimes read as shared engineering; we have no
+            verified information either way, and we would not pay a premium on that assumption.
+          </p>`,
+    },
+    {
+      id: 'deck-and-motor',
+      heading: 'The Deck and the Motor, Read Honestly',
+      html: `          <p>
+            The running area is 20 by 60 inches on what Bowflex calls a FlexZone deck. The deck is
+            0.75 inches thick and the belt is 1.6 mm. Those last two figures are worth noting but
+            not over-reading: they are published, they are not unusual, and on their own they tell
+            you very little about how the deck feels underfoot.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Length: the figure that matters most</h3>
+          <p>
+            Sixty inches is the length that running guidance generally settles on for adults who
+            intend to run rather than jog, because a full running stride needs room in front and
+            behind without the runner shortening it to stay off the rear roller. The T6 meets
+            that, which is the single most important thing it gets right. Our
+            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
+            works through the stride arithmetic if you want the detail.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Width: fine for most, tighter for some</h3>
+          <p>
+            Twenty inches is the standard home-treadmill width and it is enough for most walkers
+            and runners. Width matters most to people with a broad build, a gait that drifts side
+            to side, or a tendency to swing the arms wide at speed, and it matters more as the pace
+            rises and attention drops late in a session. The T9's 22 inches is not a dramatic
+            difference, but it is an extra inch either side, and for the people it suits it is the
+            most useful thing the extra money buys.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Why 3.0 HP is not the same as 3.0 CHP</h3>
+          <p>
+            Bowflex rates the T6's drive motor at 3.0 HP and footnotes that figure as a rating
+            under test settings that does not reflect the operational horsepower of the motor in
+            use. That is an honest footnote, and it changes how the number should be used. A
+            continuous-duty rating — CHP — describes what a motor can sustain over a long session,
+            which is the figure that matters for a 45-minute incline walk or a steady run. A test
+            rating describes the motor under conditions Bowflex chose, and Bowflex itself is
+            telling you it is not that.
+          </p>
+          <p>
+            The practical consequence is that you cannot line the T6 up against another machine's
+            3.0 CHP and conclude they are equal, and you should not conclude the T6 is weaker
+            either. The comparison simply is not available from the label. Our
+            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
+            explains the different ratings — peak, continuous and test — and why the warranty term
+            on the motor is often a more useful signal of confidence than the number itself. On
+            that measure the T6 does well: the motor carries a lifetime warranty.
+          </p>
+          <p>
+            What the specification implies is a machine designed for walking, incline walking and
+            running at moderate paces, with a 12 mph ceiling that equates to a five-minute mile.
+            Very few home users run at that pace for long. Heavier users running hard at steep
+            incline put the most sustained demand on any drive system, and they are the buyers who
+            should weigh the T9, whose motor is rated higher on the same test basis, and whose
+            maximum user weight is 350 lb rather than 325 lb.
+          </p>`,
+    },
+    {
+      id: 'incline',
+      heading: 'Incline to 15% and What It Is Good For',
+      html: `          <p>
+            The T6 inclines from 0 to 15% on a motorised lift with 500 lb of thrust. There is no
+            decline. Fifteen percent is the T6's most distinctive figure at its price, where folding
+            machines commonly stop at 10% or 12%, and it is the reason to choose this machine over
+            a cheaper one if incline walking is the plan.
+          </p>
+          <p>
+            Steep incline walking is where most people get the most useful training effect from a
+            treadmill in the time they have. It raises effort substantially without the impact of
+            running, which suits beginners, heavier users and anyone whose knees object to pace.
+            The popular
+            <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 workout</a>
+            uses 12% incline, which the T6 covers with room to progress beyond it, and our guide
+            to <a href="/incline-walking-vs-running/" class="text-[#0F62FE] font-medium">incline walking versus running</a>
+            sets out when each is the better choice.
+          </p>
+          <p>
+            Two cautions apply to any machine with this much lift. First, sustained steep incline
+            is a heavy, continuous load on the drive motor, because the motor is effectively
+            lifting you for the whole session. That is the use case where a continuous-duty
+            rating would be most informative and where the T6 does not give you one — the
+            lifetime motor warranty is the reassurance instead. Second, steep walking tempts
+            people to hold the handrails, which removes much of the benefit. If you need the rails
+            at 15%, the incline is too steep for now; take it down until you can walk freely.
+          </p>
+          <p>
+            What 15% is not good for is replicating outdoor downhill running, because there is no
+            decline. If you are training for a hilly course with long descents, that is a gap, and
+            it is one shared by most machines in this class.
+          </p>`,
+    },
+    {
+      id: 'console-and-apps',
+      heading: 'Console, Apps and the No-Subscription Question',
+      html: `          <p>
+            The T6's console is a dual LED and LCD layout: an 8.8 by 2-inch backlit LCD plus four
+            LED windows. There is no touchscreen. Around it you get a three-speed fan and a media
+            shelf for a tablet or phone, which is where most owners will put their entertainment.
+          </p>
+          <p>
+            The treadmill does not need a subscription to work. That matters more than it sounds,
+            because a growing number of machines in this price band are built around a screen and
+            a membership, and do noticeably less once the trial ends. The T6 starts, runs, inclines
+            and shows your data on its own, permanently. Our
+            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">guide to treadmills without subscriptions</a>
+            sets out the five-year cost arithmetic and why hardware that works unattached also
+            holds its value better on the used market.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">JRNY, Peloton and Zwift</h3>
+          <p>
+            The T6 connects over Bluetooth using FTMS, the standard fitness-machine protocol, and
+            works with the JRNY, Peloton and Zwift apps. Each of those is a separate paid
+            subscription with its own price, so check the current price of whichever you are
+            considering rather than assuming one membership covers another. JRNY is Bowflex's own
+            platform; Peloton and Zwift are independent services that support the protocol.
+          </p>
+          <p>
+            Zwift on a treadmill is a different experience from Zwift on a bike, and how well it
+            works depends on pairing and on whether you also use a footpod. Our
+            <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium">Zwift treadmill guide</a>
+            covers the set-up and the common pairing problems. Note that FTMS compatibility tells
+            you the machine can talk to an app; it does not guarantee every app controls speed or
+            incline automatically, so check the specific feature you want in the app's own
+            documentation before you buy for it.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Watches</h3>
+          <p>
+            NFC tap-to-connect is supported for Apple Watch and Samsung Galaxy Watch, which lets a
+            watch pick up treadmill data rather than estimating distance from your wrist. If you
+            track runs on one of those watches, that is a quietly useful feature; if you do not,
+            ignore it.
+          </p>
+          <p>
+            The honest limitation of the console is the one shared by every machine without a
+            screen: you supply the motivation. If a trainer on a screen is what gets you moving,
+            budget for an app subscription from the start and count it in the price.
+          </p>`,
+    },
+    {
+      id: 'folding-and-space',
+      heading: 'Folding, Footprint and Ceiling Height',
+      html: `          <p>
+            Assembled, the T6 measures 76 inches long, 35 inches wide and 71 inches tall. Folded,
+            it is 44 inches long with the same width and height. Worked through, that takes the
+            floor area from roughly 18.5 square feet in use to roughly 10.7 square feet folded —
+            a real saving, and the main reason to choose a folding machine.
+          </p>
+          <p>
+            Folding does not make it light. The T6 weighs about 234 lb assembled, so plan the
+            delivery route, the stairs and the final position before it arrives. Move it on hard
+            floors where you can, and expect carpet to make the job considerably harder. Upright,
+            it stays 71 inches tall, which rules out most under-stair and cupboard plans.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Ceiling height: do this sum first</h3>
+          <p>
+            Bowflex's minimum ceiling-height guidance is the user's height plus 20.75 inches. The
+            extra allows for the deck height, incline and the bounce of a running stride. For a
+            standard 8-foot ceiling (96 inches), that works out as follows:
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Tallest user</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Minimum ceiling (height + 20.75 in.)</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Under an 8 ft ceiling</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5 ft 6 in (66 in.)</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">86.75 in.</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Comfortable margin</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5 ft 10 in (70 in.)</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">90.75 in.</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Fits</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">6 ft 2 in (74 in.)</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">94.75 in.</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Just fits</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">6 ft 4 in (76 in.)</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">96.75 in.</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Below guidance</td>
+              </tr>
+            </tbody>
+          </table></div>
+          <p>
+            Basements and rooms with a beam, a duct or a low-hanging light are where this catches
+            people out. Measure the lowest point above where you will stand on the belt, not the
+            ceiling in the middle of the room.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Clearance behind the deck</h3>
+          <p>
+            The floor area above is the machine alone. You also need clear space behind the deck —
+            it is where you go if you lose your footing — and space at the sides to step on and
+            off. Follow the clearances in the T6 manual, and do not count the folded footprint as
+            the space the machine needs, because it needs the full in-use footprint plus clearance
+            every time you use it. Our
+            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">dimensions and space guide</a>
+            covers the typical clearance figures, and
+            <a href="/where-to-put-a-treadmill/" class="text-[#0F62FE] font-medium">where to put a treadmill</a>
+            covers floors, rooms, power and the noise that travels into the structure below.
+          </p>`,
+    },
+    {
+      id: 'warranty',
+      heading: 'The Warranty, Read Properly',
+      html: `          <p>
+            The US warranty on the T6 is lifetime on the frame and motor, three years on mechanical
+            parts, and one year of in-home labour. Optional paid protection plans extend the cover;
+            if you are considering one, get the full terms and compare the price against what a
+            likely repair would cost.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The strong part</h3>
+          <p>
+            Lifetime frame and motor cover is genuinely good at this price, and on the motor in
+            particular it is more informative than the horsepower figure. A manufacturer that
+            commits to replacing a motor for the life of the machine is expressing confidence in
+            it, and that commitment is the best answer available to the question the test rating
+            leaves open. Three years on mechanical parts is also respectable, and longer than the
+            one year that is common lower down the market.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The short part</h3>
+          <p>
+            One year of labour is the term to plan around. From the second year, a covered part
+            may arrive free while the visit to fit it does not, which means either paying for a
+            technician or fitting it yourself. Many parts on a treadmill — belts, rollers and
+            console boards among them — are within reach of a careful owner with the manual, but
+            some jobs are awkward on a machine this heavy. Factor in the cost of a technician's
+            call-out where you live before deciding the labour term does not matter.
+          </p>
+          <p>
+            Two further points. Warranties of this kind usually require the machine to be
+            maintained as the manual describes, so keep a simple log of belt lubrication and
+            adjustments. And read what counts as a mechanical part versus a wear item, because the
+            distinction decides whether a worn belt in year two is covered. Our
+            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
+            explains how to read the split and what to ask before you buy.
+          </p>`,
+    },
+    {
+      id: 't6-vs-t9',
+      heading: 'Bowflex T6 vs T9: Who Should Pay the Extra',
+      html: `          <p>
+            The T9 is the obvious step up, and the comparison is cleaner than most because both
+            machines come from the same range with the same rating conventions. At the prices
+            shown when we checked, the gap was $500 whether you compare regular or sale prices.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Published figure</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Bowflex T6</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Bowflex T9</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Running area</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20 x 60 in.</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22 x 60 in.</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Motor (Bowflex test rating)</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.0 HP</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.5 HP</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Incline / speed</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0-15% / 0.5-12 mph</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0-15% / 0.5-12 mph</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Max user weight</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">325 lb</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">350 lb</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Console</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">8.8 x 2 in. backlit LCD + LED windows</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">7.6 x 3 in. colour LCD, backlit</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Folded</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">44 in. long</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">48.6 in. long (does not fold flat)</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Warranty</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime frame and motor, 3 yr parts, 1 yr labour</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime frame and motor, 3 yr parts, 1 yr labour</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Price at check (regular / sale)</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,299 / $999</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,799 / $1,499</td>
+              </tr>
+            </tbody>
+          </table></div>
+          <p>
+            Read the table for what is the same as much as for what differs. Incline, speed and
+            warranty are identical, so the extra $500 is not buying range or cover. It buys three
+            things: two more inches of width, a higher motor rating on the same test basis, and
+            25 lb more rated capacity. The colour console is a nicety rather than a reason.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Pay the extra if</h3>
+          <ul>
+            <li>You are a runner over about six feet tall, or broad through the shoulders, and want more belt either side of you.</li>
+            <li>You are close to the T6's 325 lb limit and want margin rather than a machine run at its ceiling.</li>
+            <li>You plan long, steep, heavy sessions and would rather have the higher motor rating, accepting that neither figure is a continuous-duty rating.</li>
+          </ul>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Keep the money if</h3>
+          <ul>
+            <li>You mainly walk or incline-walk, where 20 inches of width is ample.</li>
+            <li>You are a runner of average build at moderate paces.</li>
+            <li>Floor space is tight: the T6 folds to a shorter, flat footprint and the T9 does not fold flat.</li>
+          </ul>
+          <p>
+            Our <a href="/best-treadmills-for-tall-runners/" class="text-[#0F62FE] font-medium">guide for tall runners</a>
+            covers the case for a 22-inch deck in more detail, including machines outside the
+            Bowflex range.
+          </p>`,
+    },
+    {
+      id: 't6-vs-sole-f63',
+      heading: 'Bowflex T6 vs Sole F63: Near-Identical on Paper',
+      html: `          <p>
+            This is the comparison most people searching for the T6 end up making, and the honest
+            answer is that the core specifications barely separate them. The figures that
+            independent reviews agree on for the Sole F63 are a 3.0 HP motor, a 20 by 60-inch
+            running area, 0 to 15% incline, a top speed of 12 mph, a 325 lb maximum user weight and
+            a lifetime warranty on the frame and motor. Lay that next to the T6 and every headline
+            number matches.
+          </p>
+          <p>
+            One caution on the motor. Bowflex states that its 3.0 HP is a test rating rather than
+            operational horsepower. Two brands printing 3.0 does not prove two motors are equal,
+            because the brands may not be measuring the same thing. Treat the motor as a draw on
+            paper, and let the motor warranty term speak for each.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What actually decides it</h3>
+          <ol>
+            <li><strong>Price on the day.</strong> Both brands discount often. With specifications this close, a meaningful price difference at the moment you buy is a legitimate tie-breaker on its own. Compare delivered prices, including any assembly charge.</li>
+            <li><strong>Warranty detail beyond the headline.</strong> Both carry lifetime frame and motor cover. The T6's parts and labour terms are three years and one year; Sole's deck, parts and labour terms vary between sources, so get Sole's current terms in writing and compare them line by line.</li>
+            <li><strong>Console preference.</strong> The T6 has a dual LCD and LED console with Bluetooth FTMS for JRNY, Peloton and Zwift and NFC for Apple and Samsung watches. Check what the F63's console offers for the apps and devices you actually use.</li>
+            <li><strong>Service where you live.</strong> Ask each seller who carries out in-home warranty work in your area and how long a visit typically takes to arrange. A strong warranty is only as good as the technician who turns up.</li>
+          </ol>
+          <p>
+            If those four come out even, pick the one whose console you prefer to look at; you
+            will be looking at it for years. Our full
+            <a href="/sole-f63-treadmill/" class="text-[#0F62FE] font-medium">Sole F63 review</a>
+            covers that machine in depth — check its warranty and price details against Sole's
+            current listing too, since terms and prices move.
+          </p>`,
+    },
+    {
+      id: 'bxt6-and-used',
+      heading: 'The BXT6 Name and Buying a T6 Used',
+      html: `          <p>
+            Many people search for the Bowflex BXT6. Bowflex's current listing uses only the name
+            T6, and we have not verified any specification published under the BXT6 name, so do
+            not assume a BXT6 matches the figures on this page. Treat it as a related or earlier
+            model until you have checked otherwise.
+          </p>
+          <p>
+            That matters most on the used market, where listings often use whichever name the
+            seller remembers. Before you pay, find the model and serial label on the machine
+            itself — the manual shows where it sits — photograph it, and check that model against Bowflex's documentation. The label, not the listing, tells
+            you what you are buying.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What to check on a used T6</h3>
+          <ul>
+            <li><strong>The warranty position.</strong> Many manufacturer warranties apply only to the original purchaser. Ask Bowflex whether any cover transfers, and remember the 2024 ownership change when asking about older units.</li>
+            <li><strong>Incline through its full range.</strong> Run it from 0 to 15% and back. The incline motor works hard on a machine that goes this steep, and hesitation or noise is worth noting.</li>
+            <li><strong>Belt and deck wear.</strong> Lift the belt edge and feel the deck surface. A dry or glazed deck suggests it was not lubricated, which shortens belt life and loads the motor.</li>
+            <li><strong>The fold.</strong> Fold and unfold it, and check the lock engages cleanly every time.</li>
+            <li><strong>The console and connectivity.</strong> Check every display window, and pair a phone over Bluetooth if you plan to use an app.</li>
+          </ul>
+          <p>
+            Our <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill buying checklist</a>
+            runs through the full inspection, including what to listen for at speed. Factor the
+            machine's weight into the price as well — at about 234 lb assembled, collection is a
+            two- or three-person job with a vehicle that can take it.
+          </p>`,
+    },
+    {
+      id: 'who-should-buy',
+      heading: 'Who Should Buy It, and Who Should Not',
+      html: `          <p>
+            <strong>Buy it if you want a complete folding treadmill without a subscription.</strong>
+            The T6 covers walking, steep incline walking and running at moderate paces on a
+            full-length deck, and the console works on its own. At the sale price it is a strong
+            set of published figures for the money.
+          </p>
+          <p>
+            <strong>Buy it if incline is the plan.</strong> Fifteen percent of motorised lift is the
+            T6's most distinctive feature at its price. For anyone who mostly walks uphill, it
+            offers more room to progress than most folding machines nearby.
+          </p>
+          <p>
+            <strong>Look at the T9 or another 22-inch deck if you are a runner over about six feet
+            tall, or broad.</strong> Width is the T6's tightest dimension for those buyers, and the
+            T9's two extra inches, 350 lb rating and higher motor figure are the right reasons to
+            spend $500 more.
+          </p>
+          <p>
+            <strong>Look elsewhere if you mainly walk at a flat or gentle grade and want to spend
+            less.</strong> A machine built specifically for walking can do that job well for less
+            money — our
+            <a href="/best-walking-treadmills/" class="text-[#0F62FE] font-medium">walking treadmill roundup</a>
+            covers the options, including the Horizon T101.
+          </p>
+          <p>
+            <strong>Look elsewhere if a screen is the point.</strong> The T6 has no touchscreen.
+            If guided classes on a built-in display are what gets you on the machine, buy one that
+            has it and price the membership over five years, not the first month.
+          </p>
+          <p>
+            <strong>Cross-shop it</strong> against the Sole F63 on the day, and against the field in
+            our <a href="/best-treadmill-under-1000-reviews/" class="text-[#0F62FE] font-medium">under-$1,000 guide</a>.
+            If you are stretching toward a larger budget, our comparison of the
+            <a href="/nordictrack-commercial-1250-vs-1750/" class="text-[#0F62FE] font-medium">NordicTrack Commercial 1250 and 1750</a>
+            shows what a screen-led machine at a higher price offers instead.
+          </p>`,
+    },
+  ],
+  faqs: [
+    {
+      q: 'Is the Bowflex T6 a good treadmill?',
+      a: `On its published specification, yes. It has a 20 by 60-inch running area, incline to 15%, a 12 mph top speed, a 325 lb capacity and a lifetime frame and motor warranty, and it needs no subscription. The caveats are that its 3.0 HP is a test rating rather than a continuous-duty figure, and labour cover is one year. We have not tested it ourselves.`,
+    },
+    {
+      q: 'Does the Bowflex T6 treadmill fold up?',
+      a: `Yes. Bowflex lists it at 76 inches long, 35 wide and 71 tall assembled, and 44 inches long folded with the same width and height. That cuts the floor area from roughly 18.5 to 10.7 square feet. It still weighs about 234 lb, so folding saves space rather than making it portable. Check ceiling height too: the user's height plus 20.75 inches.`,
+    },
+    {
+      q: 'Bowflex T6 vs T9: which should I buy?',
+      a: `Both have 15% incline, 12 mph and the same warranty. The T9 adds a 22-inch-wide deck instead of 20, a 3.5 HP test rating instead of 3.0, a 350 lb capacity instead of 325 and a colour console, for about $500 more at the prices we saw. Tall or broad runners and heavier users benefit most; walkers rarely need it.`,
+    },
+    {
+      q: 'Bowflex T6 vs Sole F63: which is better?',
+      a: `On paper they are near-identical: 3.0 HP, 20 by 60-inch running area, 0 to 15% incline, 12 mph, 325 lb capacity and lifetime frame and motor cover. Decide on the delivered price on the day, the full parts and labour terms in writing, which console you prefer, and who carries out warranty service where you live.`,
+    },
+    {
+      q: 'Do you need a JRNY subscription for the Bowflex T6?',
+      a: `No. The treadmill works fully without any subscription. It connects over Bluetooth to JRNY, Peloton and Zwift if you want app content, but each of those is a separate paid subscription, so check the current price of the one you want. The console, fan, speed and incline controls all work on their own.`,
+    },
+    {
+      q: 'Is the Bowflex BXT6 the same as the T6?',
+      a: `Not necessarily. People search for the BXT6, but Bowflex's current listing uses only the T6 name, and we have not verified any BXT6 specification. If you are buying used, find the model and serial label on the machine, check it against Bowflex's documentation, and ask Bowflex directly about any remaining warranty before you pay.`,
+    },
+  ],
+  mistakesHeading: 'Common Mistakes Buying a Bowflex T6',
+  mistakesIntro:
+    'The T6 is a straightforward machine with a few figures that are easy to misread. These are the errors that cost buyers money or space.',
+  mistakes: [
+    {
+      title: 'Comparing the 3.0 HP figure with another brand’s CHP',
+      body: `Bowflex says its 3.0 HP is a rating under test settings that does not reflect operational horsepower. Setting it against a competitor's 3.0 CHP and calling them equal, or calling the T6 weaker, is comparing two different measurements. Use the motor warranty term as the confidence signal instead — on the T6 it is lifetime — and compare like with like only where brands state the same basis.`,
+    },
+    {
+      title: 'Buying at the regular price',
+      body: `At the time of writing the T6 was listed at $1,299 regular and $999 on sale, and Bowflex discounts regularly. Paying the regular price for a machine that is frequently cheaper is the easiest avoidable loss here. Watch the price for a few weeks if you can, and compare the delivered total, including any assembly fee, against the Sole F63 on the same day.`,
+    },
+    {
+      title: 'Forgetting the ceiling in a basement',
+      body: `Bowflex's guidance is the user's height plus 20.75 inches. A 6 ft 4 in user needs 96.75 inches, which is more than a standard 8-foot ceiling, and basements with beams or ducts are often lower than that. Measure the lowest point above where you will stand on the belt, for the tallest person in the household, before ordering.`,
+    },
+    {
+      title: 'Assuming the lifetime warranty covers everything for life',
+      body: `The lifetime cover is on the frame and motor. Mechanical parts are covered for three years and in-home labour for one. From year two, a covered part may still mean paying for the visit to fit it. Keep a lubrication log, read the definition of wear items, and price a local technician's call-out before deciding whether a protection plan is worth it.`,
+    },
+  ],
+  relatedHeading: 'Related Reviews &amp; Guides',
+  related: [
+    {
+      kicker: 'Rival',
+      title: 'Sole F63 Treadmill Review',
+      blurb: 'The machine the T6 most often goes head to head with, on near-identical figures.',
+      url: '/sole-f63-treadmill/',
+    },
+    {
+      kicker: 'Cross-Shop',
+      title: 'Best Treadmills Under $1,000',
+      blurb: 'The field the T6 competes in at its sale price, and what each machine trades away.',
+      url: '/best-treadmill-under-1000-reviews/',
+    },
+    {
+      kicker: 'Cost',
+      title: 'Best Treadmills Without Subscriptions',
+      blurb: 'Why a console that works on its own is worth more than it looks over five years.',
+      url: '/best-treadmills-without-subscriptions/',
+    },
+  ],
+  bottomLine: [
+    `<strong class="text-white">Buy the Bowflex T6 at or near its sale price if you walk,
+            incline-walk or run at moderate paces and are of roughly average build.</strong> A
+            20 by 60-inch deck, 15% incline, 325 lb capacity, a console that needs no subscription
+            and lifetime frame and motor cover make a complete set of published figures. Read its
+            3.0 HP as a test rating, not a continuous-duty figure, and plan for the one-year labour
+            term.`,
+    `Tall or broad runners and heavier users should price the T9, whose 22-inch deck and
+            350 lb rating are the right reasons to spend $500 more. Everyone else should put the
+            T6 next to the
+            <a href="/sole-f63-treadmill/" class="text-[#5AA9FF] font-bold no-underline">Sole F63</a>
+            on the day and decide on price, warranty detail, console and service.`,
+  ],
+};

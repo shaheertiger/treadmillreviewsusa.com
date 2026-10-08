@@ -175,6 +175,9 @@ export default {
             section is how to answer it. Our guide to
             <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">how much to spend on a treadmill</a>
             helps decide which rung of either ladder you need in the first place.
+          </p>
+          <p>
+            The same logic applies within NordicTrack's own range. Our comparison of the <a href="/nordictrack-commercial-1250-vs-1750/" class="text-[#0F62FE] font-medium">NordicTrack Commercial 1250 vs. 1750</a> sets out what is confirmed to differ between two neighbouring models and what sources disagree on.
           </p>`,
     },
     {
