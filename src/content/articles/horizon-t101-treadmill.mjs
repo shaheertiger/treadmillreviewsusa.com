@@ -58,6 +58,7 @@ export default {
   sections: [
     {
       id: 'what-it-is',
+      products: true,
       heading: 'What the T101 Actually Is',
       html: `          <p>
             The T101 sits at the bottom of Horizon's folding range and has held the same position

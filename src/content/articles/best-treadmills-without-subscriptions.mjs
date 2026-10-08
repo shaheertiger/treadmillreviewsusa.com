@@ -174,6 +174,9 @@ export default {
             between an expensive connected machine and a cheaper plain one plus a tablet mount,
             the plain machine is usually the better value and it never stops being the treadmill
             you bought.
+          </p>
+          <p>
+            Bowflex has also re-entered this part of the market: its folding treadmills are marketed as working without a subscription, with apps as an option. Our <a href="/bowflex-t6-treadmill/" class="text-[#0F62FE] font-medium">Bowflex T6 review</a> reads the entry model's specifications and warranty against the Sole F63.
           </p>`,
     },
     {

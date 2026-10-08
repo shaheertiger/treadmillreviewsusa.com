@@ -303,6 +303,35 @@ Calorie and time tables are arithmetic from stated inputs (MET-style estimates, 
 as estimates on the page. Health-adjacent pages, the dog page included, carry the not-medical-advice
 scope note; the dog page says to consult a vet and never to tether a dog to a machine.
 
+### Competitor-gap pages: Bowflex T6, Wellfit TM037, NordicTrack 1250 vs. 1750
+
+Written against nine supplied treadmillreviews.net URLs (2026-10-08). Semrush page-level keyword
+data showed three real gaps; the other six already have a page here (`/best-folding-treadmill-reviews/`,
+`/nordictrack-t-6-5-s-treadmill/`, `/weslo-cadence-g-5-9-treadmill/`, `/proform-treadmill/`,
+`/sole-f85-treadmill/` as a draft, and `/what-incline-should-i-walk-on-a-treadmill/`, whose
+competitor equivalent earns almost no traffic).
+
+- `/bowflex-t6-treadmill/` — **verified**: every figure matches Bowflex's listing and two
+  independent sources. Bowflex states a 3.0 HP *test* rating, not CHP, and the page says so.
+- `/wellfit-tm037-treadmill/` — built around the fact that only **listing claims** exist. The
+  motor is disputed by one independent teardown and the warranty terms conflict; the page presents
+  both as such and says we have not tested the machine.
+- `/nordictrack-commercial-1250-vs-1750/` — states only what NordicTrack confirms (screen, motor
+  warranty, identical speed and incline ranges, the 1250's 400 lb rating and warranty). Motor
+  ratings, deck widths and the 1750's capacity conflict across sources and model years, so the
+  page lists them as unconfirmed rather than picking a number.
+
+The Bowflex brand page previously said Bowflex sells no treadmill and is owned by Nautilus. Both
+were out of date: Bowflex sells the T6, T9 and T16, and Johnson Health Tech bought the brand out of
+BowFlex Inc's Chapter 11 in April 2024. `/bowflex/`, its hub card and `/best-treadmill-brands/`
+were corrected.
+
+Two fixes found while writing these. Six model-review specs (the five verified reviews and the
+Wellfit page) never rendered their product card, because the generator only places cards after a
+section marked `products: true`; their top buttons pointed at an anchor that did not exist. And
+`/sole-f63-treadmill/` gave a 10 mph top speed and a 10-year motor warranty, where independent
+sources agree on 12 mph and lifetime frame-and-motor cover.
+
 ### Sole F80 and F85
 
 Both machines were referenced across the site — the F80 on ten pages — with no page to point at,

@@ -58,6 +58,7 @@ export default {
   sections: [
     {
       id: 'the-capacity-story',
+      products: true,
       heading: 'Why 325 lb Is the Headline',
       html: `          <p>
             Weight capacity is the most misread specification in this category. People treat it as

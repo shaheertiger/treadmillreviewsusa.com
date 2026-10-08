@@ -57,6 +57,7 @@ export default {
   sections: [
     {
       id: 'the-deck',
+      products: true,
       heading: 'The Deck Is Why This Machine Is on Anyone’s List',
       html: `          <p>
             Sixty inches by twenty-two is the specification a serious home runner wants, and it is
