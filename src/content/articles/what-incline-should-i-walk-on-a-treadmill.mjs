@@ -181,6 +181,9 @@ export default {
             12%, which feels far tougher than the speed suggests. The
             <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">pace and speed chart</a>
             helps if you want to understand the speed side of the equation.
+          </p>
+          <p>
+            We compare the two directly — energy cost, impact, muscle emphasis and weight loss — in <a href="/incline-walking-vs-running/" class="text-[#0F62FE] font-medium">incline walking vs. running</a>.
           </p>`,
     },
     {

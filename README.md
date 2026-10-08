@@ -280,6 +280,29 @@ first batch, none carries product specifications, so none needs `dataPending`.
 - **Training**: hill workouts, warm-up and cool-down, marathon training, running form, zone 2,
   walking workouts, walking speed, steps per mile, boredom, benefits, treadmill desks
 
+### Third October batch: twenty demand-led guides
+
+Twenty pages chosen from a Semrush US keyword pull (2026-10-08) against the slugs the site
+already had. Topics went in on volume and on whether an existing page already owned the intent:
+"treadmill incline workout" (2,400/mo) was skipped because `/treadmill-hill-workout/` is that
+page, and "nordictrack treadmill troubleshooting" because `/how-to-reset-nordictrack-treadmill/`
+already absorbs it. None carries product specifications or `products`, so none needs
+`dataPending`; subscription prices are deliberately not quoted anywhere.
+
+- **Fault diagnosis**: speed sensor, overheating, ProForm troubleshooting and reset
+- **Maintenance**: the repair decision guide (DIY vs. technician, typical costs, the motor
+  control board, repair-or-replace), belt replacement cost, deck replacement and flipping
+- **Buying guides**: extension cords and dedicated circuits, where to put a treadmill (room by
+  room), Zwift with a treadmill, calibrating the belt and a watch, treadmills for dogs
+- **Comparisons**: curved manual treadmills, iFIT vs. Peloton (new "Apps & subscriptions" group)
+- **Training**: HIIT, sprints, incline walking vs. running, a beginner's first four weeks,
+  treadmill before or after weights, calories-burned estimate tables, and mile / 5K /
+  10,000-step times
+
+Calorie and time tables are arithmetic from stated inputs (MET-style estimates, 60 ÷ mph), labelled
+as estimates on the page. Health-adjacent pages, the dog page included, carry the not-medical-advice
+scope note; the dog page says to consult a vet and never to tether a dog to a machine.
+
 ### Sole F80 and F85
 
 Both machines were referenced across the site — the F80 on ten pages — with no page to point at,

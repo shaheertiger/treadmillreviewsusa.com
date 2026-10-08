@@ -147,6 +147,9 @@ export default {
             covers the other half, since an over-tightened belt also increases drag. If the deck
             or belt has worn smooth or rough past the point where lubricant helps, replacement is
             the real repair.
+          </p>
+          <p>
+            A machine that runs hot without yet smelling of anything is the earlier stage of the same fault; our guide to a <a href="/treadmill-overheating/" class="text-[#0F62FE] font-medium">treadmill that is overheating</a> covers the causes in order of likelihood.
           </p>`,
     },
     {

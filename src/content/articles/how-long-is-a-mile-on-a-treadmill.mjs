@@ -1,0 +1,591 @@
+export default {
+  slug: 'how-long-is-a-mile-on-a-treadmill',
+  title: 'How Long Is a Mile on a Treadmill? (2026): Times, 5K and 10,000 Steps',
+  description:
+    'A treadmill mile is a mile; the time depends on speed. Minutes per mile from 2 to 10 mph, 5K and 10K times, 10,000 steps, distance in 30 minutes, and accuracy.',
+  crumbLabel: 'How Long Is a Mile on a Treadmill',
+  breadcrumb: { name: 'Workouts & Training', url: '/training/' },
+  kicker: 'Training',
+  updated: 'October 2026',
+  updatedLong: 'October 8, 2026',
+  published: '2026-10-08',
+  socialProof: '1.9k',
+  h1: ['How Long Is a Mile', 'on a Treadmill?'],
+  standfirst:
+    'The belt measures distance the same way the road does, so a mile is a mile. What people are really asking is how long it takes, how many steps it is, and how far a 30-minute session gets them. Here are the tables, the arithmetic behind them, and the honest caveats about console accuracy.',
+  ctas: [
+    { label: 'Time per Mile Table', href: '#time-per-mile' },
+    { label: '10,000 Steps on a Treadmill', href: '#ten-thousand-steps' },
+  ],
+  tags: ['how long is a mile on a treadmill', 'treadmill mile time', '10000 steps on treadmill', '5k on treadmill', 'treadmill distance'],
+  stickyCta: { text: 'See the Time Table', link: '#time-per-mile' },
+  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
+          This is a distance-and-time reference built from simple arithmetic — it is not medical,
+          coaching or nutrition advice, and we are not qualified to give any of those. How long a
+          mile should take you, and how many miles you should walk or run, depends on your health,
+          history and goals; if you have a heart, joint or other condition, an injury, or any
+          concern about exercise, talk to a doctor, physical therapist or qualified coach before
+          setting a target. <strong class="text-gray-900">On the figures below:</strong> times are
+          pure arithmetic from the stated speed, step counts are typical ranges rather than
+          measurements, and treadmill consoles vary in how accurately they report both.`,
+  lead: `How long a mile is on a treadmill has two answers. In distance, it is exactly a mile: the
+          console counts belt travel and a mile of belt is a mile of ground. In time, it is
+          whatever the speed makes it — thirty minutes at a slow 2 mph walk, twenty minutes at 3
+          mph, ten minutes at a 6 mph jog, six minutes at 10 mph. This page lays out the time for
+          every common speed, extends it to 5K, 10K and 10,000 steps, and explains where the
+          console can quietly drift from the truth.`,
+  sections: [
+    {
+      id: 'short-answer',
+      heading: 'How Long Is a Mile on a Treadmill? The Short Answer',
+      html: `          <p>
+            <strong>A treadmill mile takes 60 divided by your speed in mph.</strong> At 3 mph, a
+            comfortable walking pace, that is 20 minutes. At 4 mph, a brisk walk for most people,
+            15 minutes. At 6 mph, an easy jog, 10 minutes. At 8 mph, a quick run, 7 minutes 30
+            seconds. The full table from 2 to 10 mph is below, in minutes and seconds.
+          </p>
+          <p>
+            The distance itself does not change. A treadmill measures how far the belt has moved,
+            and a mile of belt under your feet is the same mile you would cover on a track or a
+            road. What changes is the time, which is set entirely by the speed you choose, and the
+            number of steps, which depends on your height and stride rather than on the machine.
+            For most adults walking at a normal pace, a mile is typically somewhere in the region
+            of 2,000 to 2,500 steps; running it takes fewer, longer strides.
+          </p>
+          <p>
+            Two honest caveats apply to everything on this page. The console's distance figure is
+            only as accurate as its belt-speed reading, and on many home machines that reading is
+            an estimate rather than a measurement, so the "mile" it reports can be a little short
+            or long; our guide to
+            <a href="/is-my-treadmill-speed-accurate/" class="text-[#0F62FE] font-medium">treadmill speed accuracy</a>
+            covers why. And for running, a belt mile is commonly held to be slightly easier than a
+            road mile, which is why a small incline is often suggested to compensate — a convention
+            discussed further down, not a measured fact.
+          </p>`,
+    },
+    {
+      id: 'time-per-mile',
+      heading: 'Time per Mile by Treadmill Speed',
+      html: `          <p>
+            This table is pure arithmetic: minutes per mile equals 60 divided by the speed in miles
+            per hour. If your console shows pace rather than speed, the figure in the second column
+            is what it will display at that setting. The descriptions in the third column are what
+            each speed typically feels like for an adult of average height; your own walking-to-
+            running transition will sit somewhere between about 4 and 5 mph.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Speed (mph)</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Time per mile</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Typically</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">30:00</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Slow walk, warm-up, recovery</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.5</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">24:00</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Easy walk</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20:00</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Comfortable walk</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.5</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">17:09</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Purposeful walk</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4.0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15:00</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Brisk walk</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4.5</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">13:20</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Very fast walk or slow jog</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5.0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">12:00</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Easy jog</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5.5</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10:55</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Easy jog</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">6.0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10:00</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Steady run</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">6.5</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">9:14</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Steady run</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">7.0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">8:34</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Moderate run</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">7.5</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">8:00</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Moderate run</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">8.0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">7:30</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Quick run</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">8.5</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">7:04</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Quick run</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">9.0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">6:40</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Fast run, tempo for many</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">9.5</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">6:19</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Fast run</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10.0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">6:00</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Hard run, interval pace for many</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            A detail worth noticing: the time saved per half-mile-per-hour shrinks as you go
+            faster. Going from 2 to 2.5 mph saves six minutes a mile; going from 9 to 9.5 saves
+            twenty-one seconds. That is simply the shape of the arithmetic, but it has a practical
+            consequence for walkers — small speed increases at the low end change session length
+            a lot, so nudging from 2.5 to 3 mph is a bigger step than it looks.
+          </p>
+          <p>
+            For conversions to kilometres per hour, and a longer version of this table with
+            kilometre pace, see our
+            <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">treadmill pace and speed chart</a>.
+          </p>`,
+    },
+    {
+      id: 'five-k-and-ten-k',
+      heading: 'How Long Is a 5K or 10K on a Treadmill?',
+      html: `          <p>
+            A 5K is 3.1 miles (3.107 to be a little more exact) and a 10K is 6.2 miles. The times
+            below are, again, arithmetic from the stated speed. Many treadmill consoles let you set
+            a distance goal and count down, which is the easiest way to run either without
+            watching the display.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Speed (mph)</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">5K (3.1 miles)</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">10K (6.2 miles)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.5 (walk)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1:14:34</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2:29:08</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.0 (walk)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1:02:08</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2:04:17</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.5 (walk)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">53:16</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1:46:32</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4.0 (brisk walk)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">46:36</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1:33:13</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5.0 (jog)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">37:17</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1:14:34</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">6.0 (run)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">31:04</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1:02:08</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">7.0 (run)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">26:38</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">53:16</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">8.0 (run)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">23:18</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">46:36</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            A 5K at 6 mph is just over 31 minutes, which is why "a 30-minute 5K" is such a common
+            first running target: it corresponds to holding a shade over 6 mph for the whole
+            distance. If you are working towards that from scratch, the sessions in our
+            <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">couch to 5K treadmill plan</a>
+            build the distance first and the speed afterwards, which is the right order.
+          </p>
+          <p>
+            One practical note for people training towards an outdoor 5K: console distance and
+            road distance may not match exactly, so a treadmill 5K at your goal pace is good
+            evidence, not proof. The section on belt miles versus road miles below explains why,
+            and why most people find the outdoor version a touch harder.
+          </p>`,
+    },
+    {
+      id: 'kilometres',
+      heading: 'How Long Is a Kilometre on a Treadmill?',
+      html: `          <p>
+            Many treadmills can be switched between miles and kilometres, and plenty of runners
+            think in one unit while their machine reports the other. A kilometre is 0.621 miles,
+            so the time per kilometre at a given mph is 37.28 divided by the speed. At common
+            settings:
+          </p>
+          <ul>
+            <li><strong>3.0 mph:</strong> about 12:26 per kilometre.</li>
+            <li><strong>4.0 mph:</strong> about 9:19 per kilometre.</li>
+            <li><strong>5.0 mph:</strong> about 7:27 per kilometre.</li>
+            <li><strong>6.0 mph:</strong> about 6:13 per kilometre.</li>
+            <li><strong>7.0 mph:</strong> about 5:20 per kilometre.</li>
+            <li><strong>8.0 mph:</strong> about 4:40 per kilometre.</li>
+            <li><strong>10.0 mph:</strong> about 3:44 per kilometre.</li>
+          </ul>
+          <p>
+            Going the other way, a treadmill set to kilometres per hour covers a mile in 96.56
+            divided by the km/h figure: at 8 km/h a mile takes about 12 minutes, at 10 km/h about
+            9:40, at 12 km/h about 8 minutes. The conversions catch people out most often on a
+            machine in a hotel or a gym abroad, where a familiar "6" on the display turns out to be
+            6 km/h rather than 6 mph — a brisk walk, not a run.
+          </p>
+          <p>
+            Two practical notes. First, check which unit the console is in before trusting any of
+            the tables on this page; the setting is usually in a user or engineering menu, and
+            some machines revert to a default after a power cut. Second, if you log sessions in an
+            app that assumes one unit while the treadmill reports the other, every distance in the
+            record is wrong by a factor of about 1.6, and a surprising number of "I ran further
+            than I thought" stories trace back to exactly that.
+          </p>
+          <p>
+            <strong>On incline and the mile.</strong> Incline does not change how long a mile
+            takes — a mile of belt at 3 mph is 20 minutes whether the deck is flat or raised — but
+            it changes the effort considerably. A 20-minute mile at a 10% grade is a very different
+            session from a 20-minute mile on the flat, and for a walker it is often the better
+            use of the same time. The time tables here are about distance; the effort of an
+            inclined mile belongs to our reference on
+            <a href="/treadmill-calories-burned/" class="text-[#0F62FE] font-medium">treadmill calories burned</a>,
+            where incline is the variable that moves the number most.
+          </p>`,
+    },
+    {
+      id: 'ten-thousand-steps',
+      heading: '10,000 Steps on a Treadmill: How Far and How Long?',
+      html: `          <p>
+            The treadmill does not count steps; it counts distance. So the 10,000-steps question
+            has to go through stride length, which depends on your height, your walking speed and
+            your own gait. There is no single right answer, only a typical range.
+          </p>
+          <p>
+            <strong>Steps per mile.</strong> For most adults walking at an ordinary pace, a mile is
+            typically somewhere between about 2,000 and 2,500 steps. Taller people and faster
+            walkers take longer strides and sit at the lower end; shorter people and slower walkers
+            sit at the higher end. Running shortens the step count further, often to somewhere in
+            the region of 1,400 to 1,800 per mile, because each stride covers more ground. Our
+            guide to
+            <a href="/how-many-steps-in-a-mile-on-a-treadmill/" class="text-[#0F62FE] font-medium">how many steps are in a treadmill mile</a>
+            goes into how to measure your own figure, which is worth doing once.
+          </p>
+          <p>
+            <strong>10,000 steps in miles.</strong> At 2,000 steps a mile, 10,000 steps is 5 miles.
+            At 2,200 steps a mile, about 4.5 miles. At 2,500 steps a mile, 4 miles. So for a
+            walker, 10,000 steps is typically in the region of four to five miles of belt.
+          </p>
+          <p>
+            <strong>10,000 steps in minutes.</strong> Combining those distances with the walking
+            speeds in the first table:
+          </p>
+          <ul>
+            <li><strong>At 2.5 mph:</strong> roughly 1 hour 35 minutes to 2 hours.</li>
+            <li><strong>At 3.0 mph:</strong> roughly 1 hour 20 minutes to 1 hour 40 minutes.</li>
+            <li><strong>At 3.5 mph:</strong> roughly 1 hour 10 minutes to 1 hour 25 minutes.</li>
+          </ul>
+          <p>
+            That is a long session, and it is the honest answer to why most people do not get all
+            10,000 steps on the treadmill. The usual pattern is a 30 to 45-minute treadmill walk
+            contributing somewhere around 3,000 to 5,000 steps, with the rest coming from the day.
+            Under-desk walking pads exist precisely to spread that time across working hours at a
+            slow pace rather than concentrating it.
+          </p>
+          <p>
+            If you want the treadmill to count steps, a wrist tracker will do it, with the usual
+            caveat that holding the handrails stops the wrist moving and the count collapses. Some
+            consoles display a step estimate derived from distance and an assumed stride; treat it
+            as a guess, because it is one.
+          </p>`,
+    },
+    {
+      id: 'distance-by-time',
+      heading: 'How Far Is 20, 30, 45 or 60 Minutes on a Treadmill?',
+      html: `          <p>
+            This is the same arithmetic the other way round: distance equals speed multiplied by
+            time in hours. It is useful when a session is defined by the clock — a lunchtime
+            half hour, a programme that runs for 45 minutes — and you want to know what it adds up
+            to.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Speed (mph)</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">20 min</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">30 min</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">45 min</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">60 min</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.5</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.83 mi</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1.25 mi</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1.88 mi</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.5 mi</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1.0 mi</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1.5 mi</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.25 mi</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.0 mi</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.5</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1.17 mi</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1.75 mi</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.63 mi</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.5 mi</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4.0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1.33 mi</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.0 mi</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.0 mi</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4.0 mi</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5.0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1.67 mi</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.5 mi</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.75 mi</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5.0 mi</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">6.0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.0 mi</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.0 mi</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4.5 mi</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">6.0 mi</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">7.0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.33 mi</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.5 mi</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5.25 mi</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">7.0 mi</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            So "how far is 30 minutes on a treadmill" is typically one and a half miles for a
+            comfortable walker, two miles for a brisk one, and three miles for a steady runner.
+            Remember that a real session rarely holds one speed for the whole time. A 30-minute
+            walk that starts with five minutes at 2.5 mph, holds 3.5 mph for twenty, and cools
+            down for five at 2.5 covers about 1.58 miles rather than the 1.75 the peak speed
+            suggests. The console tracks this for you, which is the one thing it is reliably good
+            at.
+          </p>
+          <p>
+            How long you should walk is a different question from how far you will get, and our
+            guide to
+            <a href="/how-long-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long to walk on a treadmill</a>
+            takes it by goal rather than by arithmetic.
+          </p>`,
+    },
+    {
+      id: 'belt-vs-road',
+      heading: 'Does a Treadmill Mile Equal a Road Mile?',
+      html: `          <p>
+            In distance, yes, allowing for console accuracy. In effort, the honest answer is
+            "close for walking, slightly easier for running, and the exact difference is not
+            something we can put a number on".
+          </p>
+          <p>
+            <strong>Walking.</strong> At walking speeds the differences are small. There is no
+            meaningful wind resistance to remove, the belt is flat and even, and the main
+            difference people notice is that the treadmill holds the pace for them rather than
+            letting it drift. A treadmill walking mile is, for practical purposes, a walking
+            mile.
+          </p>
+          <p>
+            <strong>Running.</strong> Two things make a belt mile a little easier than a road mile
+            at the same pace. The first is air resistance: outdoors you push through still air at
+            your running speed, and on a treadmill you do not, which matters more the faster you
+            go. The second is that the belt is moving under you, so the leg does not have to pull
+            the body forward in quite the same way; how much that changes the mechanics is debated,
+            and the effect for recreational runners appears to be modest. A perfectly even surface,
+            no corners, no wind and a controlled temperature all make the treadmill mile feel
+            smoother as well.
+          </p>
+          <p>
+            <strong>The 1% incline convention.</strong> It is common advice to set the treadmill
+            to a 1% grade to make the effort of running feel closer to a road mile. We would
+            describe that as a widely used rule of thumb rather than a measured correction: it is
+            a reasonable, small adjustment that many runners and coaches use, it makes most sense
+            at faster paces where air resistance matters more, and it is not necessary for easy
+            running or walking. If you use it, use it consistently so your treadmill times mean
+            the same thing from week to week. Our comparison of
+            <a href="/treadmill-vs-running-outside/" class="text-[#0F62FE] font-medium">treadmill versus running outside</a>
+            covers the rest of the differences — surface, weather, pacing skill and boredom among
+            them.
+          </p>
+          <p>
+            For most people the practical conclusion is simple: do not expect a treadmill mile time
+            to transfer exactly to the road, especially on a hot or windy day, and do not be
+            discouraged when it does not. Train on the treadmill for the consistency, race outside
+            for the result.
+          </p>`,
+    },
+    {
+      id: 'console-accuracy',
+      heading: 'How Accurate Is the Console Distance, and Why It Drifts',
+      html: `          <p>
+            The treadmill calculates distance from belt speed and time. If it knows the belt speed
+            accurately, its distance is accurate. The trouble is that many home treadmills do not
+            measure belt speed directly; they infer it.
+          </p>
+          <p>
+            <strong>How it is measured.</strong> Most motorised treadmills have a speed sensor on
+            the front roller or the motor, usually a magnet passing a sensor once per revolution.
+            The controller multiplies the roller revolutions by the roller's circumference to get
+            belt travel. Some budget designs use the motor's commanded speed rather than a sensor
+            at all, which assumes the belt is doing exactly what it was told.
+          </p>
+          <p>
+            <strong>Why it drifts.</strong> Several things can push the real distance away from the
+            displayed one:
+          </p>
+          <ul>
+            <li><strong>Belt slip.</strong> If the belt slips on the roller under your foot strike
+            — a loose belt, a worn belt, a dry deck — the roller turns but the belt moves less, so
+            the console over-reports distance. Our guide to a
+            <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">treadmill belt that slips</a>
+            covers the symptom.</li>
+            <li><strong>Load.</strong> On lower-powered machines the belt can slow slightly under a
+            heavy user's foot strike and recover between strides. The display may show the set
+            speed throughout while the average belt speed is a touch lower.</li>
+            <li><strong>Calibration.</strong> The controller's stored roller circumference, or its
+            speed calibration, can be wrong from the factory or after a control-board replacement.
+            This is a fixed-percentage error that affects every session the same way, and it is
+            what our guide to
+            <a href="/treadmill-calibration/" class="text-[#0F62FE] font-medium">treadmill calibration</a>
+            deals with.</li>
+            <li><strong>Rounding and display lag.</strong> Consoles update distance in steps, so a
+            short interval can be off by a hundredth or two.</li>
+          </ul>
+          <p>
+            <strong>How to check.</strong> The simplest test is to mark the belt with a piece of
+            tape, measure the belt's full length with a tape measure, run it at a slow known speed
+            and count how many times the mark passes in a timed minute. Belt length multiplied by
+            passes per minute gives true feet per minute, which converts to mph by dividing by 88.
+            If the result is within a few percent of the display, the console distance is fine for
+            any practical purpose. If it is off by more, a calibration or a belt-tension adjustment
+            is usually the fix. A wrist device with a stride sensor can be used as a second opinion
+            but is itself an estimate.
+          </p>
+          <p>
+            The useful perspective is that a fixed error does not matter much for training as long
+            as it is consistent. A treadmill that always reads 3% long still tells you whether
+            this week was better than last week. It only matters when you compare against the road,
+            another machine or a race target.
+          </p>`,
+    },
+    {
+      id: 'walk-or-run-speed',
+      heading: 'Picking a Speed: What a Mile Should Feel Like',
+      html: `          <p>
+            The tables tell you how long a mile takes at a given speed, but not which speed to
+            choose. That depends on your height, fitness and purpose, and the right answer is the
+            one you can sustain for the whole distance at the effort you intended.
+          </p>
+          <p>
+            <strong>For walkers,</strong> most adults find a comfortable conversational pace
+            somewhere around 2.5 to 3.5 mph, a brisk pace at roughly 3.5 to 4.0 mph, and a point
+            around 4.0 to 4.5 mph where walking becomes awkward and jogging becomes easier. Taller
+            people tend to sit at the higher end of each band, shorter people at the lower. Our
+            guide to
+            <a href="/what-speed-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what speed to walk on a treadmill</a>
+            works through it by goal. If your treadmill mile is for fitness rather than time, a
+            moderate speed with some incline is often a better session than a flat fast walk, and
+            takes the same twenty minutes.
+          </p>
+          <p>
+            <strong>For runners,</strong> an easy mile should feel easy — you can speak in short
+            sentences — which for many recreational runners is somewhere between 5 and 6.5 mph.
+            A mile at a pace you can only hold for a mile is a different session with a different
+            purpose, and running it every day is how people get hurt. If you are new to running,
+            start with run-walk intervals and let the mile time fall as a by-product rather than
+            chasing it.
+          </p>
+          <p>
+            <strong>On the effort of a fixed mile.</strong> Because the belt sets the pace, the
+            treadmill removes the natural slowing that happens outdoors when you tire. That makes
+            it easy to pick a speed that is fine for half a mile and grim for the second half.
+            Choose the speed for the last quarter, not the first, and use the speed buttons during
+            the mile if you got it wrong. There is no prize for refusing to.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Why a treadmill mile feels longer than it is</h3>
+          <p>
+            Almost everyone reports that a mile on the belt feels longer than the same mile
+            outside, and the clock says it is not. The reasons are mostly about attention. Outdoors
+            there are landmarks, turns, a changing surface and the sense of getting somewhere; on
+            a treadmill there is a display counting hundredths of a mile and nothing else to look
+            at, so the mind has the distance in front of it for the whole twenty minutes. The
+            fixed pace removes the small natural variations that make outdoor effort feel
+            uneven and therefore shorter. And the console itself is the problem: watching the
+            distance tick over is the slowest way to cover it.
+          </p>
+          <p>
+            The practical fixes are simple. Cover the distance readout, or turn the console to
+            time or to a programme view, and check it only at planned points. Break the mile into
+            quarters with a small change at each — a nudge of incline, a change of music, a sip
+            of water — so the session has structure. Use the distance-goal mode so the machine
+            counts down to the finish and tells you when it arrives. And accept that the first
+            treadmill mile of any session is the slowest to pass; the second rarely feels as
+            long. Our guide to
+            <a href="/how-to-make-treadmill-running-less-boring/" class="text-[#0F62FE] font-medium">making treadmill running less boring</a>
+            has the longer list, most of which comes down to giving the mind something other than
+            the belt to do.
+          </p>`,
+    },
+    {
+      id: 'distance-vs-time-goals',
+      heading: 'Setting a Goal: Distance or Time?',
+      html: `          <p>
+            Most treadmill consoles let you set a session by time, by distance or by calories.
+            Which to pick is partly preference and partly what you are trying to achieve.
+          </p>
+          <p>
+            <strong>Time goals</strong> suit habit-building and busy schedules. "Thirty minutes,
+            five days a week" fits around life, and the belt does not care whether you covered 1.4
+            miles or 2.0. Time goals are also kinder when you are tired or unwell, because you can
+            slow down without failing. For general fitness, for most beginners and for anyone who
+            has struggled to stick with exercise, time is the better anchor.
+          </p>
+          <p>
+            <strong>Distance goals</strong> suit training towards an event, building endurance and
+            tracking progress, because a mile is a fixed unit and a time is not. Running three
+            miles in 31 minutes this month and 29 next month is a measurable improvement;
+            running for 30 minutes twice tells you less. Distance goals also work well for walking
+            programmes, where "two miles" is a concrete, satisfying thing to have done.
+          </p>
+          <p>
+            <strong>A combined approach</strong> often works best: a fixed time slot in the
+            calendar, and a distance target within it that rises slowly. Decide the slot first,
+            because a session that does not fit your day does not happen. Then let the distance
+            inside it creep up — a tenth of a mile a week is plenty — and note it. When the
+            distance stops rising, raise the time or the incline rather than forcing the speed.
+          </p>
+          <p>
+            <strong>Calorie goals</strong> are the least useful of the three, because the console
+            figure is an estimate with generous assumptions, as explained in the calories
+            reference linked above. Distance and time are the things the machine actually
+            knows.
+          </p>`,
+    },
+    {
+      id: 'worked-examples',
+      heading: 'Three Worked Examples',
+      html: `          <p>
+            To show how the tables fit together, here are three common questions answered end to
+            end.
+          </p>
+          <p>
+            <strong>"I have 30 minutes at lunch and want to walk a mile and a half."</strong> A mile
+            and a half in 30 minutes is 3.0 mph held throughout. With a 3-minute warm-up and a
+            3-minute cool-down at 2.5 mph, the middle 24 minutes needs about 3.1 mph to make the
+            same distance. Set the console to distance and it will tell you when you are there.
+          </p>
+          <p>
+            <strong>"I want to run a 5K in under 30 minutes outdoors."</strong> On the belt that is
+            6.3 mph for 3.1 miles, or about 29 minutes 36 seconds. Allowing for the road being a
+            little harder, being able to hold 6.3 to 6.5 mph for the full 5K on the treadmill,
+            comfortably, is a reasonable sign that the outdoor target is realistic on a decent day.
+            Build to it with the distance first at an easy pace and the speed afterwards.
+          </p>
+          <p>
+            <strong>"I need 10,000 steps and I have had 3,000 by evening."</strong> You need around
+            7,000 more. At a typical 2,200 steps per mile that is roughly 3.2 miles, which at 3.5
+            mph is about 55 minutes. If that is too long, 30 minutes at 3.5 mph is 1.75 miles and
+            roughly 3,800 steps, leaving the rest to come from a walk to the shops. The point of
+            the arithmetic is to make the decision, not to hit the number at any cost.
+          </p>`,
+    },
+  ],
+  faqs: [
+    {
+      q: 'How long does it take to walk a mile on a treadmill?',
+      a: `At 3 mph, a comfortable pace for most adults, 20 minutes. At 2.5 mph it is 24 minutes, at 3.5 mph about 17 minutes, and at a brisk 4 mph, 15 minutes. The arithmetic is 60 divided by speed in mph. The console distance is only as accurate as its belt-speed reading, which on some home machines runs a little off.`,
+    },
+    {
+      q: 'How long does it take to run a mile on a treadmill?',
+      a: `At an easy 5 mph, 12 minutes; at 6 mph, 10 minutes; at 7 mph, about 8 and a half minutes; at 8 mph, 7 minutes 30 seconds; at 10 mph, 6 minutes. An easy mile should feel conversational. A mile at the fastest pace you can hold is a hard session, not something to repeat daily.`,
+    },
+    {
+      q: 'How many miles is 10,000 steps on a treadmill?',
+      a: `Typically somewhere between four and five miles for a walker, because a walking mile is usually in the region of 2,000 to 2,500 steps depending on height and stride. At 3 mph that is roughly 1 hour 20 minutes to 1 hour 40 minutes, which is why most people get only part of their daily steps on the machine.`,
+    },
+    {
+      q: 'How long is a 5K on a treadmill?',
+      a: `A 5K is 3.1 miles. At 3 mph walking it takes just over an hour; at 4 mph about 47 minutes; at 5 mph about 37 minutes; at 6 mph about 31 minutes; at 8 mph about 23 minutes. A sub-30-minute 5K needs a shade over 6.2 mph held for the whole distance.`,
+    },
+    {
+      q: 'How far is 30 minutes on a treadmill?',
+      a: `Distance is speed multiplied by half an hour: 1.25 miles at 2.5 mph, 1.5 miles at 3 mph, 2 miles at 4 mph, 2.5 miles at 5 mph, 3 miles at 6 mph. A real session with a warm-up and cool-down covers a little less than the peak speed suggests, which the console tracks for you.`,
+    },
+    {
+      q: 'Is a mile on a treadmill the same as a mile outside?',
+      a: `In distance, yes, allowing for console accuracy. In effort, walking is close to identical, and running on a belt is commonly held to be slightly easier than the road because there is no air resistance and the surface is perfectly even. Setting a 1% incline to compensate is a widely used convention rather than a measured correction.`,
+    },
+  ],
+  mistakesHeading: 'Common Mistakes With Treadmill Distance and Time',
+  mistakesIntro:
+    'The arithmetic is simple. The mistakes come from trusting it more than it deserves, or using it for the wrong thing.',
+  mistakes: [
+    {
+      title: 'Treating the console mile as exact',
+      body: `The display calculates distance from belt speed, and on many home machines that is inferred rather than measured. Belt slip, load and calibration can all push the figure a few percent either way. Check it once with the tape-and-stopwatch method described above, then treat the console as consistent rather than precise, and compare only against itself.`,
+    },
+    {
+      title: 'Expecting treadmill times to transfer to the road',
+      body: `A belt mile has no wind, no corners and a perfect surface, and the belt holds the pace for you. Outdoor times are usually a little slower, more so on hot or windy days. Use treadmill times to track your own progress and treat outdoor results as a separate record, not a disappointment.`,
+    },
+    {
+      title: 'Picking the speed for the first quarter mile',
+      body: `The belt does not slow down when you tire, so a speed that felt fine at the start can be unsustainable by the end. Choose the speed you could hold for the last quarter, and use the speed buttons mid-session without embarrassment. Finishing at a lower speed beats stopping at a higher one.`,
+    },
+    {
+      title: 'Trying to get all 10,000 steps on the machine',
+      body: `Ten thousand walking steps is typically four to five miles and well over an hour at ordinary speeds. Treating that as a daily treadmill target is how people burn out in a fortnight. Use the treadmill for a fixed 30 to 45-minute block and let the remaining steps come from the rest of the day.`,
+    },
+  ],
+  relatedHeading: 'Related Training Guides',
+  related: [
+    {
+      kicker: 'Reference',
+      title: 'Treadmill Pace and Speed Chart',
+      blurb: 'mph, km/h and minutes per mile, side by side, with what each pace feels like.',
+      url: '/treadmill-pace-and-speed-chart/',
+    },
+    {
+      kicker: 'Steps',
+      title: 'How Many Steps in a Mile on a Treadmill?',
+      blurb: 'Why the count varies with height and speed, and how to measure your own.',
+      url: '/how-many-steps-in-a-mile-on-a-treadmill/',
+    },
+    {
+      kicker: 'Accuracy',
+      title: 'Is My Treadmill Speed Accurate?',
+      blurb: 'How the belt speed is measured, why it drifts, and how to check it.',
+      url: '/is-my-treadmill-speed-accurate/',
+    },
+  ],
+  bottomLine: [
+    `<strong class="text-white">A treadmill mile is a mile; the time is 60 divided by your
+            speed.</strong> Twenty minutes at a 3 mph walk, fifteen at a brisk 4 mph, ten at a 6
+            mph jog, and the 5K, 10K and 10,000-step figures follow from the same arithmetic.`,
+    `Treat the console distance as consistent rather than exact, do not expect belt times to
+            transfer perfectly to the road, and set goals by time for habit and by distance for
+            progress. For the full speed-to-pace conversion, see our
+            <a href="/treadmill-pace-and-speed-chart/" class="text-[#5AA9FF] font-bold no-underline">treadmill pace and speed chart</a>.`,
+  ],
+};

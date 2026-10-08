@@ -85,6 +85,9 @@ export default {
           <p>
             When this page compares "manual" with motorized on a specific point, it says which
             manual it means, because on most points the answer differs.
+          </p>
+          <p>
+            Curved manual treadmills are the more capable and more expensive branch, and they have their own trade-offs; our <a href="/curved-treadmill-guide/" class="text-[#0F62FE] font-medium">curved treadmill guide</a> covers how they work, which benefits are real and who should not buy one.
           </p>`,
     },
     {

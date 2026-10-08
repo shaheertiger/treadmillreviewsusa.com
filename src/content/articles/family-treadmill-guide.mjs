@@ -192,6 +192,9 @@ export default {
             <a href="/folding-vs-non-folding-treadmill/" class="text-[#0F62FE] font-medium">folding versus non-folding</a>
             covers the hinge and latch. Pets need the same thought, for the same reasons. Never
             disable or bypass a safety feature for convenience.
+          </p>
+          <p>
+            One family member we are asked about more than you might expect is the dog; our guide to <a href="/treadmill-for-dogs/" class="text-[#0F62FE] font-medium">treadmills for dogs</a> explains why a human treadmill is a compromise and the safety rules that are not negotiable.
           </p>`,
     },
     {

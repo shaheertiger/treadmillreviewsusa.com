@@ -367,6 +367,9 @@ export default {
             <a href="/how-long-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long to walk on a treadmill</a>
             covers sensible session lengths once the first week is behind you. Changing one variable at a time is how you find out what your body
             tolerates.
+          </p>
+          <p>
+            If you want that first month laid out session by session, our <a href="/treadmill-workout-for-beginners/" class="text-[#0F62FE] font-medium">treadmill workouts for beginners</a> gives a walking-first four-week plan with the progression rules.
           </p>`,
     },
     {
