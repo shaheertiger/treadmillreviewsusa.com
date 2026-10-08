@@ -411,6 +411,9 @@ export default {
             warm-up; 5 to 10 minutes of easy walking at the end, with water, is the cool-down. Long
             runs are the sessions most likely to leave you lightheaded, so take the cool-down
             seriously.
+          </p>
+          <p>
+            If the treadmill session sits in the same hour as a weights session, the order matters a little and the warm-up matters more; see <a href="/treadmill-before-or-after-weights/" class="text-[#0F62FE] font-medium">treadmill before or after weights</a>.
           </p>`,
     },
     {

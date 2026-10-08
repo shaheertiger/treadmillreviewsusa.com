@@ -138,6 +138,9 @@ export default {
             <strong>Five — Sustained (36 min).</strong> Warm up 10. Then 4 rounds of 4 minutes
             hard, 90 seconds easy. Cool down 5. Genuinely difficult. Only once sessions one to four
             are comfortable.
+          </p>
+          <p>
+            For the harder end of this — near-maximal efforts with real recoveries, and the belt-lag problem that comes with them — see our <a href="/treadmill-hiit-workout/" class="text-[#0F62FE] font-medium">treadmill HIIT workout</a> and, for the top gear, our <a href="/treadmill-sprint-workout/" class="text-[#0F62FE] font-medium">treadmill sprint workout</a>.
           </p>`,
     },
     {

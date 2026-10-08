@@ -1,0 +1,530 @@
+export default {
+  slug: 'treadmill-extension-cord',
+  title: 'Treadmill Extension Cord (2026): Can You Use One, and What Kind',
+  description:
+    'Can you use an extension cord with a treadmill? Why manuals say no, what a safer cord looks like, the dedicated-circuit question, GFCI trips and power cords.',
+  crumbLabel: 'Treadmill Extension Cord',
+  breadcrumb: { name: 'Buying Guides', url: '/guides/' },
+  kicker: 'Buying Guide',
+  updated: 'October 2026',
+  updatedLong: 'October 8, 2026',
+  published: '2026-10-08',
+  socialProof: '1.7k',
+  h1: ['Treadmill Extension Cords:', 'What the Manual Says and Why'],
+  standfirst:
+    'Nearly every treadmill manual says not to use an extension cord, and nearly every owner has at some point wanted to. Here is what the warning is protecting against, what a cord would need to be if you ignore it, and the outlet, circuit and placement questions that come with the same search.',
+  ctas: [
+    { label: 'If You Must Use One', href: '#lesser-evil' },
+    { label: 'Dedicated Circuit?', href: '#dedicated-circuit' },
+  ],
+  tags: ['treadmill extension cord', 'treadmill power cord', 'treadmill dedicated circuit', 'treadmill outlet', 'treadmill electrical'],
+  stickyCta: { text: 'Does It Need Its Own Circuit?', link: '#dedicated-circuit' },
+  lead: `A treadmill is one of the more electrically demanding things most people own, and the
+          demand is not steady: it spikes every time the belt starts, every time a foot lands, and
+          every time the incline motor lifts the deck. That pattern is why manufacturers tell you to
+          plug straight into a grounded wall outlet and leave extension cords, power strips and
+          adapters out of it. This page explains the reasoning honestly, sets out what a cord would
+          need to be if there is genuinely no alternative, and covers the related questions about
+          circuits, GFCI outlets and replacement power cords.`,
+  note: `<strong class="text-gray-900">The manual is the authority, and some faults mean stop.</strong>
+          Your treadmill's manual states the outlet, circuit and cord requirements for your model,
+          and where it disagrees with the general guidance on this page, follow the manual. Unplug
+          the machine before inspecting any cord or inlet. Stop using the treadmill entirely for a
+          burning smell, a plug or cord that is hot to the touch, a breaker that trips on start-up,
+          speed that surges on its own, or a belt that does not stop when the safety key is pulled.
+          We review treadmills; we are not electricians. Anything involving house wiring, a new
+          circuit or a replacement outlet is a job for a licensed electrician.`,
+  sections: [
+    {
+      id: 'short-answer',
+      heading: 'Can You Use an Extension Cord With a Treadmill?',
+      html: `          <p>
+            <strong>Manufacturers say no, and the safe answer is to plug the treadmill directly
+            into a grounded wall outlet on a circuit that is not shared with other heavy
+            appliances.</strong> The warning is not a formality. A treadmill motor draws a large
+            surge of current every time the belt starts and smaller surges with every footstrike
+            and every incline change, and a cord that is too long or too thin for that load loses
+            voltage, heats up, and starves the controller of the power it expects.
+          </p>
+          <p>
+            If there is genuinely no outlet within reach of the power cord and no way to move the
+            machine, a short, heavy-gauge, three-prong grounded extension cord rated for the
+            machine's current is the lesser evil — never a thin household cord, never a power strip,
+            and never a cord run under a rug or across a doorway. Treat it as a temporary measure
+            while you arrange an outlet where the treadmill lives, and be aware that some
+            manufacturers' warranty language treats damage traced to an extension cord as excluded.
+          </p>
+          <p>
+            Most home treadmills are designed to run from a standard household circuit, and on a
+            lightly loaded circuit they do. Where a dedicated circuit matters is when the treadmill
+            shares with a refrigerator, a space heater, a window air conditioner or a microwave, or
+            when the outlet is on a ground-fault circuit interrupter in a garage or basement that
+            trips the moment the belt starts. The sections below cover each of those in turn, along
+            with replacing a damaged power cord and the placement choices that make the whole
+            question go away.
+          </p>`,
+    },
+    {
+      id: 'why-no',
+      heading: 'Why Manufacturers Say No Extension Cord',
+      html: `          <p>
+            The instruction appears in almost every treadmill manual, usually alongside a warning
+            against adapters and power strips. Four things are behind it.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Voltage drop under load</h3>
+          <p>
+            Every conductor has resistance, and a longer or thinner conductor has more of it. When
+            current flows through resistance, voltage is lost along the way, and the more current
+            flows the more is lost. A treadmill's current is not steady: the motor draws its
+            heaviest surge when the belt starts from rest, it draws more every time a foot lands
+            and the belt has to be pulled back up to speed, and the incline motor adds its own load
+            when the deck lifts. Through a long thin cord, those surges arrive at the machine as
+            dips in voltage. The motor controller sees supply it was not designed for, and the
+            results range from sluggish starts and a belt that hesitates underfoot to error codes,
+            shutdowns and, over time, stress on the controller's components.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Heat</h3>
+          <p>
+            The voltage lost in the cord does not vanish; it turns into heat in the conductor.
+            A cord that is under-sized for the current warms up, and a cord that is coiled, run
+            under a rug or packed behind the machine cannot shed that heat. A warm plug or a cord
+            that is warm along its length is a cord carrying more than it should.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">A tripping hazard around a moving belt</h3>
+          <p>
+            A cord trailing across the floor near a treadmill is a hazard in its own right. A foot
+            caught in it while stepping off the belt, a cord pulled out mid-session, or a cord run
+            under the machine where the belt or the frame can wear through it over months are all
+            real failure modes. Manufacturers would rather the cord ran the short distance the
+            fitted one allows and no further.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Warranty language</h3>
+          <p>
+            Many manuals state the extension-cord rule as a condition, and some warranty terms
+            exclude damage caused by improper power supply. In practice a controller failure is not
+            always traceable to a cord, but if a technician finds one in use it gives the
+            manufacturer a reason to decline. Our
+            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
+            covers the exclusions that commonly appear.
+          </p>
+          <p>
+            None of this means a single session on a sensible cord will destroy a treadmill. It
+            means the manufacturer sized the fitted cord for the machine and tested the machine
+            with it, and anything you add in between is a variable they did not test and will not
+            stand behind.
+          </p>`,
+    },
+    {
+      id: 'lesser-evil',
+      heading: 'If You Must: What a Suitable Cord Looks Like',
+      html: `          <p>
+            There are situations where an extension cord is the only practical option for a
+            while — a rented home where you cannot add an outlet, a room where the only outlet is
+            on the wrong wall, a machine too heavy to move until help arrives. If you are in one,
+            the aim is to make the cord as close to invisible to the machine as possible. That
+            means the following, described generically because the right figures for your model
+            are in its manual.
+          </p>
+          <ul>
+            <li><strong>As short as possible.</strong> Length is resistance. Buy the shortest cord
+            that reaches without stretching, and never daisy-chain two cords to make a longer
+            one.</li>
+            <li><strong>Heavy gauge.</strong> Wire thickness is given as an AWG number, and a
+            lower number means a thicker conductor. Household extension cords are commonly a thin
+            gauge intended for lamps and phone chargers; a treadmill needs a cord sold as
+            heavy-duty or appliance grade, in a gauge rated for the machine's current and the
+            cord's length. If the manual permits a cord at all, it will state the gauge; use that
+            figure, not ours.</li>
+            <li><strong>Rated for the machine's amperage.</strong> The treadmill's rating is on a
+            label near the power inlet and in the manual. The cord's rating is on its packaging and
+            often printed along its jacket. The cord's rating must exceed the machine's, with
+            margin.</li>
+            <li><strong>Three-prong, grounded.</strong> The treadmill's plug has a ground pin and
+            the cord must carry it through. Never use a two-prong cord, a cheater adapter or a
+            cord with the ground pin missing.</li>
+            <li><strong>A single, direct run.</strong> Wall outlet to cord to treadmill, with
+            nothing else on the cord. Not a power strip, not a multi-way adapter, not a timer or
+            smart plug.</li>
+            <li><strong>Uncoiled and in the open.</strong> Lay the excess in a loose loop where it
+            can shed heat, not wound tight, not under a rug or the treadmill mat, not through a
+            doorway or across a walking route.</li>
+            <li><strong>Undamaged.</strong> No nicks in the jacket, no bent or loose pins, no
+            warmth at either plug after a session.</li>
+          </ul>
+          <p>
+            Check it during the first few sessions. With the machine unplugged, feel the plug at
+            the wall, the junction between cord and treadmill plug, and the cord itself. Any
+            warmth is a sign the cord is marginal. Any softening of the belt's response at speed,
+            a start that feels slower than at a wall outlet, or a console that resets or shows an
+            error under load is the voltage drop described above, and the cord is not adequate.
+          </p>
+          <p>
+            And then make it temporary. The honest end state for an extension cord on a treadmill
+            is an outlet installed where the machine lives, or the machine moved to where an outlet
+            already is.
+          </p>`,
+    },
+    {
+      id: 'power-strips',
+      heading: 'Power Strips, Surge Protectors and Smart Plugs',
+      html: `          <p>
+            The same searches that bring people here also ask whether a treadmill can go on a
+            power strip, and the answer is simpler than the extension-cord one: no. A typical power
+            strip is built for several small loads, its internal conductors and switch are not
+            sized for a motor's start-up surge, and the thin cord it hangs from is the worst kind of
+            extension cord. Manuals usually say so explicitly.
+          </p>
+          <p>
+            <strong>Surge protectors</strong> are a separate question, because the word covers two
+            different things. A cheap strip with "surge protection" printed on it is still a power
+            strip and should not carry a treadmill. A dedicated single-outlet surge protector rated
+            for the treadmill's current, plugged into the wall with the treadmill plugged into it,
+            is what some manufacturers recommend and others merely tolerate, and it is a reasonable
+            way to protect a console and controller from spikes on the supply. Our guide to
+            <a href="/treadmill-surge-protector/" class="text-[#0F62FE] font-medium">treadmill surge protectors</a>
+            covers what to look for and what the manual for your model is likely to say. Unplugging
+            the treadmill when it is not in use, particularly during storms, does the same job for
+            nothing.
+          </p>
+          <p>
+            <strong>Smart plugs, timers and energy monitors</strong> sit in the same category as
+            power strips: most are rated for far smaller loads than a treadmill's start-up draw and
+            can fail, stick or overheat under it. If you want to know what the machine costs to
+            run, our guide to <a href="/treadmill-electricity-usage/" class="text-[#0F62FE] font-medium">treadmill electricity usage</a>
+            works it through without any hardware in the circuit.
+          </p>
+          <p>
+            <strong>Plug adapters.</strong> A three-to-two prong adapter defeats the ground, and on
+            a treadmill the ground matters for two reasons: it is the path that clears a fault
+            safely, and it is the path that drains the static the belt generates. A machine that
+            shocks you when you touch the console is often an ungrounded one; our guide to
+            <a href="/treadmill-static-shock/" class="text-[#0F62FE] font-medium">treadmill static shock</a>
+            explains why.
+          </p>`,
+    },
+    {
+      id: 'dedicated-circuit',
+      heading: 'Does a Treadmill Need a Dedicated Circuit?',
+      html: `          <p>
+            It depends on what else is on the circuit, which is why manuals tend to recommend a
+            dedicated one without quite requiring it. Here is the reasoning in general terms.
+          </p>
+          <p>
+            <strong>What a home treadmill draws.</strong> Most home treadmills are designed to run
+            from a standard household circuit, typically a 15-amp circuit at ordinary household
+            voltage, and some larger machines and most commercial ones want a 20-amp circuit. The
+            figure for your model is on the label by the power inlet and in the manual; we are
+            deliberately not quoting numbers for specific machines here. What matters more than the
+            running draw is the surge on start-up and under load, which can be several times the
+            steady figure for a fraction of a second.
+          </p>
+          <p>
+            <strong>Why sharing trips breakers.</strong> A circuit breaker protects the wiring in
+            the wall by cutting the supply when the total current through it exceeds its rating.
+            A treadmill alone on a circuit rarely gets there. A treadmill starting its belt at the
+            same moment a refrigerator compressor kicks in, a space heater is running, a window air
+            conditioner cycles or a microwave is in use can. The result is a breaker that trips
+            apparently at random, often when you increase speed or incline, and a household that
+            blames the treadmill. Our guide to a
+            <a href="/treadmill-trips-breaker/" class="text-[#0F62FE] font-medium">treadmill that trips the breaker</a>
+            separates a shared-circuit nuisance trip from a fault in the machine, which is a
+            different and more serious problem.
+          </p>
+          <p>
+            <strong>How to find out what shares the circuit.</strong> With the treadmill unplugged,
+            switch off the breaker you think serves its outlet and see what else goes dead. Outlets
+            in older houses are often grouped in ways that are not obvious, and a bedroom outlet
+            can share with a bathroom heater or a hallway. If the treadmill's outlet shares with
+            anything that draws heavily or cycles on its own, the practical options are to move the
+            treadmill to a different outlet, move the other appliance, or have an electrician add a
+            dedicated circuit.
+          </p>
+          <p>
+            <strong>When a dedicated circuit is clearly worth it.</strong> A heavier machine that
+            specifies a 20-amp supply, a home gym where several machines run at once, a garage or
+            basement installation where the existing circuit already serves a freezer or a
+            workshop, or any case where nuisance trips have become routine. The cost of a new
+            circuit varies widely with the distance from the panel and the state of the house; it
+            is usually modest against the price of the treadmill and the frustration it removes.
+          </p>`,
+    },
+    {
+      id: 'gfci',
+      heading: 'GFCI Outlets, Garages and Basements',
+      html: `          <p>
+            A ground-fault circuit interrupter is an outlet or breaker that compares the current
+            going out on the live conductor with the current coming back on the neutral, and cuts
+            the supply if the two differ by a tiny amount — the sign that current is leaking
+            somewhere it should not, possibly through a person. Building codes in many places
+            require them in garages, basements, bathrooms, kitchens and outdoors, which is exactly
+            where treadmills often end up.
+          </p>
+          <p>
+            <strong>Why treadmills trip them.</strong> Motor controllers use filtering components
+            that allow a small, harmless leakage current to ground by design, and that leakage can
+            be close to the threshold at which a GFCI acts. Add the static a belt generates, a
+            little damp in a basement, or a controller that is beginning to age, and the GFCI
+            trips the moment the belt starts, or a few minutes into a session. The treadmill is
+            usually not faulty; it is operating as designed on a protective device with a very
+            low tolerance.
+          </p>
+          <p>
+            <strong>What the manuals say.</strong> Many manufacturers state that the treadmill
+            should not be used on a GFCI-protected outlet because of nuisance tripping. That advice
+            collides with building codes that require GFCI protection in those rooms, and the
+            resolution is not to defeat the protection. Options, in order of preference: use an
+            outlet in a room that does not require GFCI protection; have an electrician assess
+            whether a dedicated circuit with the protection arranged to suit the room's code can be
+            installed; or, where codes allow, a single dedicated outlet of a type the electrician
+            judges appropriate. Do not bypass a GFCI yourself, and do not run an extension cord
+            from a non-GFCI outlet in another room into a garage to avoid one.
+          </p>
+          <p>
+            <strong>Rule out a real fault first.</strong> A GFCI that has lived with the treadmill
+            for years and suddenly starts tripping has a reason: moisture in the motor compartment,
+            a damaged power cord, a controller beginning to fail, or a build-up of damp dust. Unplug
+            and inspect the cord and inlet, and if the tripping began with a change — a wet winter,
+            a leak, a move to a damp room — treat the machine as suspect until it has been checked.
+          </p>
+          <p>
+            Garages bring their own issues beyond the outlet: temperature swings, dust and
+            condensation on the electronics. Our guide to
+            <a href="/treadmill-in-garage/" class="text-[#0F62FE] font-medium">putting a treadmill in a garage</a>
+            covers the whole picture, and the power question is only part of it.
+          </p>`,
+    },
+    {
+      id: 'replacement-cord',
+      heading: 'Replacing a Treadmill Power Cord',
+      html: `          <p>
+            The other half of the "treadmill power cord" search is owners whose fitted cord is
+            damaged, missing after a house move, or chewed by a pet. The rules here are
+            straightforward.
+          </p>
+          <p>
+            <strong>Identify the inlet type.</strong> Treadmills take their power in one of two
+            ways. Many use a detachable cord with a standard appliance connector on one end,
+            plugging into a recessed inlet on the frame near the on/off switch. Others have the cord
+            hard-wired into the machine, entering through a strain relief grommet. For a detachable
+            cord, note the shape of the inlet — the common appliance connector types differ in
+            shape and in current rating, and a treadmill usually uses a heavier-rated type than a
+            computer or kettle. The manual's parts list names it.
+          </p>
+          <p>
+            <strong>Order by model.</strong> The manufacturer's part, ordered by model and serial
+            number, is the certain route and is not an expensive part. A generic cord of the same
+            connector type, the same or heavier gauge, the same or higher current rating and the
+            same plug type is an acceptable alternative for a detachable cord. Do not use a
+            lighter-gauge cord that happens to fit the inlet; a computer power lead will often
+            plug in and will not safely carry a motor's load.
+          </p>
+          <p>
+            <strong>Do not splice.</strong> A cord with a damaged section should be replaced
+            whole, not cut and joined. A spliced joint on a cord carrying a motor's surge current
+            is a point of resistance, heat and eventual failure, and it is usually the first thing
+            a technician or an insurer will find.
+          </p>
+          <p>
+            <strong>Hard-wired cords</strong> are a different job. Replacing one means opening the
+            motor compartment and working at the terminal block, which is a task for a technician
+            or a competent person comfortable with mains wiring, with the machine unplugged and the
+            manual open. On a machine still under warranty, it is a support call.
+          </p>
+          <p>
+            <strong>Check the inlet while you are there.</strong> A cord that was damaged by heat
+            at the plug end may have damaged the inlet too. Look for discolouration, a loose
+            socket, or pins that have lost their spring. A machine that will not power up with a
+            known-good cord has a fault further in; our guide to a
+            <a href="/treadmill-wont-turn-on/" class="text-[#0F62FE] font-medium">treadmill that won't turn on</a>
+            picks up the diagnosis from there.
+          </p>`,
+    },
+    {
+      id: 'placement',
+      heading: 'Placing the Treadmill So No Cord Is Needed',
+      html: `          <p>
+            The best extension cord is the one you never buy. A little planning before the
+            treadmill goes into a room usually removes the problem altogether, and it costs
+            nothing but a tape measure.
+          </p>
+          <ul>
+            <li><strong>Find the outlets before choosing the wall.</strong> Fitted power cords on
+            home treadmills are typically only a few feet long, and the inlet is at the front of
+            the machine near the floor. The treadmill's front needs to end up within that distance
+            of an outlet, with the cord running clear of the belt, the walking route and the
+            incline mechanism.</li>
+            <li><strong>Turn the machine, not the room.</strong> Facing the treadmill along a wall
+            rather than across the room, or putting the front toward the outlet wall and leaving the
+            clearance zone at the back open, often solves it.</li>
+            <li><strong>Check what the outlet shares</strong> using the breaker test described
+            above, before the machine is assembled in front of it.</li>
+            <li><strong>Avoid outlets behind the machine.</strong> A cord that runs from the front
+            inlet back under the deck to an outlet behind the treadmill is the one most likely to
+            be crushed by the frame or worn by the belt.</li>
+            <li><strong>Add an outlet if you are settling in.</strong> For a machine that will live
+            in one spot for years, having an electrician add an outlet on the right wall — on a
+            dedicated circuit if the house needs it — is a one-off cost that ends the question.</li>
+          </ul>
+          <p>
+            Room choice interacts with all of this: a basement outlet may be GFCI-protected, a
+            garage outlet may share with a freezer, a bedroom outlet may be on the far wall. Our
+            room-by-room guide to
+            <a href="/where-to-put-a-treadmill/" class="text-[#0F62FE] font-medium">where to put a treadmill</a>
+            works through those trade-offs, and our guide to
+            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">treadmill dimensions and space requirements</a>
+            covers the footprint and clearance that fix where the front of the machine can go.
+          </p>`,
+    },
+    {
+      id: 'warning-signs',
+      heading: 'Warning Signs of a Power Supply Problem',
+      html: `          <p>
+            Whether the treadmill is on a cord, a shared circuit or a marginal outlet, the
+            symptoms of a supply that is not keeping up look alike. Learn them, because the fix is
+            often at the wall rather than in the machine.
+          </p>
+          <ul>
+            <li><strong>Slow or laboured starts.</strong> The belt takes longer to come up to speed
+            than it used to, or the motor sounds strained as it starts.</li>
+            <li><strong>Hesitation under load.</strong> The belt slows momentarily as each foot
+            lands at running pace, especially at higher speeds or on incline. This is also a
+            symptom of a dry deck, so check lubrication before blaming the supply.</li>
+            <li><strong>Console resets, dimming or error codes</strong> that appear when speed or
+            incline is increased, and not at rest.</li>
+            <li><strong>A breaker or GFCI that trips</strong> on start-up, on incline, or when
+            another appliance switches on.</li>
+            <li><strong>Lights dimming elsewhere in the house</strong> when the belt starts, which
+            is a shared circuit announcing itself.</li>
+            <li><strong>A warm plug, cord or inlet</strong> after a session. This is the one to act
+            on immediately: unplug, and do not use the machine on that cord or outlet again until
+            the cause is found.</li>
+            <li><strong>Heat or a hot-electrics smell from the motor hood.</strong> A motor starved
+            of voltage runs hotter than it should, and a motor that is already working hard against
+            a dry deck or a tight belt runs hotter still. Our guide to a
+            <a href="/treadmill-overheating/" class="text-[#0F62FE] font-medium">treadmill that is overheating</a>
+            covers the mechanical causes that are often sitting underneath the electrical ones.</li>
+          </ul>
+          <p>
+            A burning smell, a plug that is hot rather than warm, or a breaker that trips every
+            time on start-up means stop, unplug and get the machine and the outlet checked before
+            anything else. Those are not symptoms to run through. The broader habits around
+            safe use — the safety key, the clearance zone, children and the machine — are in our
+            guide to <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety tips</a>.
+          </p>`,
+    },
+    {
+      id: 'checklist',
+      heading: 'A Practical Power Checklist',
+      html: `          <p>
+            Pulling the page together, here is the order in which to settle the power question for
+            a treadmill, new or moved.
+          </p>
+          <ol>
+            <li><strong>Read the electrical page of the manual</strong> for the circuit rating,
+            the outlet type, the GFCI advice and the extension-cord and surge-protector wording for
+            your model.</li>
+            <li><strong>Choose a wall with an outlet</strong> within reach of the fitted cord, with
+            the clearance zone at the back of the machine kept open.</li>
+            <li><strong>Test what shares the outlet's circuit.</strong> If it is a refrigerator,
+            heater, air conditioner, freezer or microwave, choose another outlet or plan a dedicated
+            circuit.</li>
+            <li><strong>Check whether the outlet is GFCI-protected.</strong> If it is and the
+            manual advises against it, talk to an electrician rather than bypassing anything.</li>
+            <li><strong>Plug straight into the wall.</strong> No power strip, no adapter, no smart
+            plug. A dedicated surge protector rated for the machine is the only acceptable thing in
+            between, if the manual allows it.</li>
+            <li><strong>If a cord is unavoidable for now,</strong> make it short, heavy-gauge,
+            grounded, rated above the machine's current, laid in the open and used alone — and
+            make it temporary.</li>
+            <li><strong>After the first sessions,</strong> unplug and feel the plug, inlet and
+            cord for warmth, and note any start-up sluggishness or breaker trips.</li>
+            <li><strong>Unplug when not in use</strong>, especially during storms, which protects
+            the electronics and also removes the machine as a hazard for children.</li>
+          </ol>
+          <p>
+            Most of this takes ten minutes and a tape measure, and it prevents the three most
+            common electrical complaints about home treadmills: the breaker that trips, the console
+            that resets, and the belt that never quite feels as strong as it did in the showroom.
+          </p>`,
+    },
+  ],
+  faqs: [
+    {
+      q: 'Can you use an extension cord with a treadmill?',
+      a: `Manufacturers say no, and the safe answer is to plug directly into a grounded wall outlet. The motor's start-up and incline surges lose voltage and generate heat in a long or thin cord. If there is genuinely no alternative for a while, use the shortest heavy-gauge, three-prong cord rated above the machine's current, on its own, laid in the open, and treat it as temporary.`,
+    },
+    {
+      q: 'What gauge extension cord do I need for a treadmill?',
+      a: `Use the figure in your manual if it permits a cord at all. Generically, a lower AWG number means a thicker conductor, and a treadmill needs a heavy-duty or appliance-grade cord in a gauge rated for its current over the cord's length, never the thin cord sold for lamps. Keep it as short as possible, grounded, and check the plug for warmth after a session.`,
+    },
+    {
+      q: 'Does a treadmill need a dedicated circuit?',
+      a: `Not always, but it helps. Most home treadmills are designed for a standard household circuit and run fine on one that is lightly loaded. Problems come from sharing with a refrigerator, space heater, air conditioner or microwave, which trips the breaker when loads coincide. Larger and commercial machines often specify a 20-amp supply; check the label by the inlet and the manual.`,
+    },
+    {
+      q: 'Can you plug a treadmill into a power strip?',
+      a: `No. A typical power strip is built for several small loads, and its conductors, switch and thin lead are not sized for a motor's start-up surge. Manuals usually prohibit it. A dedicated single-outlet surge protector rated for the treadmill's current, plugged straight into the wall, is the only reasonable device to put between the machine and the outlet.`,
+    },
+    {
+      q: 'Why does my treadmill trip the GFCI outlet?',
+      a: `Motor controllers allow a small leakage current to ground by design, and that can sit close to the very low threshold at which a GFCI trips, particularly with static from the belt or damp in a basement or garage. Many manuals advise against GFCI outlets for this reason. Do not bypass the protection; talk to an electrician about a suitable dedicated outlet, and rule out moisture or a damaged cord first.`,
+    },
+    {
+      q: 'Can I replace a treadmill power cord myself?',
+      a: `If the cord is detachable, yes: order the manufacturer's part by model number, or a generic cord with the same connector type, equal or heavier gauge and equal or higher current rating. Never use a lighter computer lead that happens to fit, and never splice a damaged cord. A hard-wired cord means opening the motor compartment, which is a job for a technician.`,
+    },
+  ],
+  mistakesHeading: 'Common Mistakes With Treadmill Power and Extension Cords',
+  mistakesIntro:
+    'Most electrical trouble with home treadmills starts at the wall rather than in the machine, and usually with one of these four.',
+  mistakes: [
+    {
+      title: 'Using the household cord from the drawer',
+      body: `The thin extension cord that runs a lamp is the worst thing to put a treadmill on: it loses voltage under every start-up surge, warms along its length and starves the controller. If a cord is unavoidable, buy the shortest heavy-gauge, grounded, appliance-rated cord you can, use it alone, and plan an outlet so it becomes unnecessary.`,
+    },
+    {
+      title: 'Plugging into a power strip or smart plug',
+      body: `Power strips, timers and smart plugs are rated for small loads and can stick, overheat or fail under a motor's start-up draw. Manuals prohibit them. Plug straight into the wall, with at most a dedicated single-outlet surge protector rated for the machine in between, and unplug when the treadmill is not in use.`,
+    },
+    {
+      title: 'Blaming the treadmill for a shared circuit',
+      body: `A breaker that trips when the belt starts, speed rises or the refrigerator kicks in is usually a shared circuit, not a faulty machine. Switch off the breaker and see what else goes dead. Move the treadmill or the other appliance, or have an electrician add a dedicated circuit, before paying for a repair the machine does not need.`,
+    },
+    {
+      title: 'Splicing a damaged power cord',
+      body: `A cut-and-joined cord on a motor load is a point of resistance, heat and eventual failure, and it is the first thing a technician or insurer notices. Replace a detachable cord whole with the manufacturer's part or an equal-rated generic of the same connector type, and leave hard-wired cords to a technician.`,
+    },
+  ],
+  relatedHeading: 'Related Buying Guides',
+  related: [
+    {
+      kicker: 'Diagnosis',
+      title: 'Treadmill Trips the Breaker',
+      blurb: 'Shared-circuit nuisance trips versus a fault in the machine.',
+      url: '/treadmill-trips-breaker/',
+    },
+    {
+      kicker: 'Protection',
+      title: 'Treadmill Surge Protector',
+      blurb: 'What to look for, and what the manual for your model says.',
+      url: '/treadmill-surge-protector/',
+    },
+    {
+      kicker: 'Placement',
+      title: 'Where to Put a Treadmill',
+      blurb: 'A room-by-room guide, with outlets and circuits in mind.',
+      url: '/where-to-put-a-treadmill/',
+    },
+  ],
+  bottomLine: [
+    `<strong class="text-white">Plug a treadmill straight into a grounded wall outlet, on a
+            circuit that does not share with a fridge, heater or air conditioner.</strong> No power
+            strip, no adapter, no smart plug. An extension cord is a temporary lesser evil only when
+            it is short, heavy-gauge, grounded, rated above the machine and used alone.`,
+    `<strong class="text-white">Solve it with placement, not hardware.</strong> Put the front
+            of the machine within reach of a suitable outlet, test what shares the circuit, and add
+            an outlet if the treadmill is staying. If the breaker is already tripping, our guide to a
+            <a href="/treadmill-trips-breaker/" class="text-[#5AA9FF] font-bold no-underline">treadmill that trips the breaker</a>
+            tells you whether it is the house or the machine.`,
+  ],
+};

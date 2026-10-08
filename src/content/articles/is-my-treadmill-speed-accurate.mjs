@@ -300,6 +300,9 @@ export default {
             <strong>Retest.</strong> If the loaded and unloaded counts now agree and both are close
             to the display, you are done. If both readings are off by the same amount, the issue is
             calibration rather than slip, which is the next section.
+          </p>
+          <p>
+            A reading that is wildly wrong, or a belt that surges and stops, points at the sensor rather than at slip; our guide to the <a href="/treadmill-speed-sensor/" class="text-[#0F62FE] font-medium">treadmill speed sensor</a> covers the symptoms, the test and the replacement.
           </p>`,
     },
     {
@@ -329,6 +332,9 @@ export default {
             <a href="/how-to-reset-nordictrack-treadmill/" class="text-[#0F62FE] font-medium">resetting a NordicTrack treadmill</a>
             makes the related point that a wrong or surging speed is more often a sensor, drive or
             tension issue than something a calibration fixes.
+          </p>
+          <p>
+            For the calibration procedure itself — the belt-speed and incline service modes, the mark-and-count check and calibrating a Garmin or Apple Watch to the machine — see our guide to <a href="/treadmill-calibration/" class="text-[#0F62FE] font-medium">treadmill calibration</a>.
           </p>`,
     },
     {

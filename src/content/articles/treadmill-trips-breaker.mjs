@@ -277,6 +277,9 @@ export default {
           <p>
             <strong>Two-prong adapters</strong> that bypass the ground pin should never be used.
             The ground is part of the machine's safety design.
+          </p>
+          <p>
+            Our guide to <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium">treadmill extension cords and outlets</a> goes further on gauge, length, dedicated circuits and the replacement power cord question.
           </p>`,
     },
     {

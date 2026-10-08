@@ -257,6 +257,9 @@ export default {
             of the setup — for heart rate, or to record the session in the Health app — though running
             the virtual app and a separate watch workout at once can create a duplicate activity, so
             decide which one is your record and turn off syncing from the other.
+          </p>
+          <p>
+            For the full set-up — where the speed signal comes from, foot pods, calibration and the common connection faults — see our guide to <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium">using Zwift with a treadmill</a>.
           </p>`,
     },
     {

@@ -77,6 +77,9 @@ export default {
             not reversible, a replacement deck may be worth ordering at the same time. Ask the
             parts supplier whether your deck is reversible when you order the belt; it is a short
             question that can save a separate job later.
+          </p>
+          <p>
+            If the deck itself is the problem, many are reversible once and some can only be replaced; our guide to <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium">treadmill deck replacement</a> covers how to tell, the flip procedure and what the job costs.
           </p>`,
     },
     {
@@ -413,6 +416,9 @@ export default {
           <p>
             Otherwise, this is a job most practical owners can do in an afternoon, and the parts
             and know-how involved are the same you need for routine maintenance anyway.
+          </p>
+          <p>
+            We break the figures down further — belt, labour, the extras that tend to come with the job and the repair-or-replace maths — in our guide to <a href="/treadmill-belt-replacement-cost/" class="text-[#0F62FE] font-medium">treadmill belt replacement cost</a>.
           </p>`,
     },
   ],

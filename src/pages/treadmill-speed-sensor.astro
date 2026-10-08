@@ -1,0 +1,798 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "Treadmill Speed Sensor (2026): Symptoms, Testing and Replacement";
+const description =
+  "What a treadmill speed sensor does, the symptoms when it fails, how to inspect, test and replace it safely, and when the controller board is the real fault.";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Fault Diagnosis", item: "https://www.treadmillreviewsusa.com/problems/" },
+        { "@type": "ListItem", position: 3, name: "Treadmill Speed Sensor", item: "https://www.treadmillreviewsusa.com/treadmill-speed-sensor/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What does a treadmill speed sensor do?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "It measures how fast the front roller is turning and reports that to the motor controller, which adjusts motor power to hold the speed you selected. It is usually a magnet on the roller pulley with a reed or Hall-effect sensor beside it, or sometimes an optical sensor reading a slotted disc. The same signal drives the speed and distance display.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What are the symptoms of a bad treadmill speed sensor?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The belt starts, runs a few seconds and stops with a speed-related error; the console shows zero speed while the belt moves; the belt surges, pulses or hunts between speeds; or the machine stops randomly mid-session. A belt that will not move at all with no attempt to start is more often the safety key, drive belt, motor or controller.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How do I test a treadmill speed sensor?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Unplug the machine, remove the motor hood, and confirm the magnet is on the roller, the gap is a few millimetres and the wiring is intact. For a two-wire reed sensor, disconnect it and use a multimeter on continuity: it should close as the magnet passes and open otherwise. Three-wire Hall sensors need power to test, so check wiring continuity and substitute a new sensor.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where is the speed sensor on a treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Under the motor hood, next to the front roller. Look for a small plastic block on a bracket with two or three thin wires leading to the controller board, pointing at a magnet set into the drive pulley or the end of the roller shaft. On optical designs it is a U-shaped sensor straddling a slotted disc. The parts diagram in the manual shows the exact position.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Why does my treadmill speed up and slow down on its own?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "An unstable speed signal makes the controller add and cut motor power as it chases a reading it cannot trust, so the belt surges or hunts. Common causes are a loose magnet, a sensor gap that has opened, a chafed wire or a dusty optical sensor; a failing controller can do the same. Stop using the machine until it is fixed, because a surging belt can throw a user.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much does a treadmill speed sensor cost to replace?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The sensor itself is one of the cheaper parts on a treadmill, typically a small fraction of what a motor or controller board costs, and many owners fit it themselves with the machine unplugged. If a technician does it, the call-out fee will usually be most of the bill. If a new sensor does not fix the fault, the controller board is the next suspect and is considerably dearer.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", name: "Morgan Reyes" },
+      datePublished: "2026-10-08",
+      dateModified: "2026-10-08",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-10-08",
+    modifiedTime: "2026-10-08",
+    author: "Morgan Reyes",
+    section: "Fitness Equipment",
+    tags: [
+      "treadmill speed sensor",
+      "treadmill speed sensor not working",
+      "how to test treadmill speed sensor",
+      "treadmill speed error",
+      "treadmill troubleshooting",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "Test the Sensor", link: "#testing" }}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-treadmillspeedsensor" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-treadmillspeedsensor)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Troubleshooting
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated October 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          Treadmill Speed Sensor <span class="text-[#5AA9FF]">Not Working? Symptoms, Tests and Fixes</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          The speed sensor is a small, cheap part that tells the controller how fast the belt is really moving. When it fails, the treadmill either refuses to run, runs and then stops with a speed error, or hunts up and down on its own. Here is how to tell a sensor fault from a controller fault, and how to test it without guessing.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#symptoms" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            Symptoms of a Bad Sensor
+          </a>
+          <a href="#testing" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            How to Test It
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
+          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">October 8, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="1.8k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">Unplug before you touch anything.</strong> The speed sensor
+          sits under the motor hood, next to the drive belt, the front roller and the controller
+          board. Unplug the treadmill at the wall before removing the hood, and keep fingers and
+          tools clear of the belt and pulleys when you do plug it back in to test. If the belt
+          <strong class="text-gray-900">surges or changes speed on its own</strong>, stop using the
+          machine until the fault is found and fixed — a belt that accelerates without being asked
+          is one of the few treadmill faults that can throw a user off the back. Your manual is
+          the authority on your model, including where the sensor is and what any error message
+          means.
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Treadmill Speed Sensor Not Working: The Short Answer</a>
+          <a href="#how-it-works" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. What the Speed Sensor Is and How It Works</a>
+          <a href="#symptoms" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Symptoms of a Failing Speed Sensor</a>
+          <a href="#error-codes" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Error Messages and Why We Do Not List Codes</a>
+          <a href="#not-the-sensor" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Faults That Look Like a Speed Sensor but Are Not</a>
+          <a href="#stop-rule" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. The Rule for a Belt That Surges on Its Own</a>
+          <a href="#inspection" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. How to Inspect the Speed Sensor Safely</a>
+          <a href="#testing" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. How to Test a Treadmill Speed Sensor</a>
+          <a href="#replacement" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Replacing and Realigning the Sensor</a>
+          <a href="#controller" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. When It Is the Controller Board Instead</a>
+          <a href="#prevention" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Keeping the Speed Sensor Working</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          A treadmill motor does not know how fast it is going. It relies on a speed sensor —
+          usually a magnet on the front roller and a small switch or chip beside it — to report
+          back to the controller, which then adjusts the power to hold the speed you asked for.
+          When that report stops arriving, or arrives wrongly, the controller either shuts down
+          to be safe or chases a signal it cannot trust. Most of the resulting faults are
+          cheap to fix, and a handful of checks with the machine unplugged will usually tell you
+          whether the sensor, its wiring or the controller is to blame.
+        </p>
+
+        <div id="short-answer" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Treadmill Speed Sensor Not Working: The Short Answer</h2>
+<p>
+            A <strong>treadmill speed sensor</strong> is a small sensor near the front roller that
+            counts how fast the roller is turning and sends that signal to the motor controller.
+            When it stops working, the controller loses its only measure of belt speed. The
+            classic symptoms are a belt that starts, runs for a few seconds and then stops with a
+            speed-related error; a console that shows zero speed while the belt is plainly
+            moving; or a belt that surges, hesitates or hunts between speeds without being
+            asked.
+          </p>
+          <p>
+            The causes, in rough order of likelihood, are: the <strong>magnet on the roller pulley
+            has come loose, shifted or fallen off</strong>; the <strong>gap between magnet and
+            sensor has grown</strong> because the sensor bracket has been knocked or the roller
+            has been adjusted; a <strong>wire or connector between sensor and controller has
+            failed</strong>, often from vibration or after the machine was moved; dust and fluff
+            have built up over an optical sensor; or the sensor itself has failed. Less often, the
+            sensor is fine and the controller board is the part that is not reading it.
+          </p>
+          <p>
+            The checks are simple and do not need special tools: unplug, remove the motor hood,
+            find the magnet and the sensor, confirm the magnet is present and the gap is small and
+            consistent, check the wiring to the board, and then test the sensor with a multimeter
+            or, on some designs, by watching the console while turning the roller by hand. A
+            replacement sensor is one of the cheaper parts on the machine. If the sensor passes
+            every test and the fault remains, the controller is the next suspect, and our
+            <a href="/treadmill-repair-guide/" class="text-[#0F62FE] font-medium">treadmill repair guide</a>
+            covers what that means for cost and who should do the job.
+          </p>
+        </div>
+
+        <div id="how-it-works" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What the Speed Sensor Is and How It Works</h2>
+<p>
+            Every motorised treadmill with a variable speed has some way of measuring how fast the
+            belt is actually moving. Without it the controller could only guess: it would send a
+            fixed amount of power to the motor and hope the belt speed followed, which it would
+            not, because a heavy runner, a steep incline or a dry deck all slow the belt for the
+            same power. The speed sensor closes that loop. It tells the controller the real belt
+            speed many times a second, and the controller trims the motor power up or down to
+            hold the speed you selected. It is also why the display can show a number that
+            reflects the belt rather than the dial.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Magnetic sensors: reed and Hall effect</h3>
+          <p>
+            On the large majority of home treadmills the sensor is magnetic. A small permanent
+            magnet is fixed to the front roller, usually set into the face of the pulley that the
+            drive belt runs on, or into the end of the roller shaft. A sensor sits a few
+            millimetres away on a bracket. Each time the roller turns, the magnet sweeps past the
+            sensor and produces a pulse. The controller counts pulses over time and, knowing the
+            roller's circumference, works out belt speed.
+          </p>
+          <p>
+            The sensor itself is one of two things. A <strong>reed switch</strong> is a pair of
+            contacts in a small sealed glass tube that close when a magnet is near — the same
+            device used behind many safety-key recesses. A <strong>Hall-effect sensor</strong> is
+            a small semiconductor chip that produces a voltage change when a magnetic field
+            passes it. Reed switches are simple and cheap but have moving contacts; Hall sensors
+            have no moving parts but need a supply voltage from the controller and are a little
+            fussier about orientation. From the outside they look similar: a small plastic block
+            with two or three wires leading to the controller board.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Optical sensors</h3>
+          <p>
+            Some machines, particularly older designs and some with brushless or AC motors, use an
+            optical sensor instead: a slotted or toothed disc on the roller or motor shaft passes
+            through a U-shaped sensor with an infrared emitter on one side and a detector on the
+            other, interrupting the beam many times per revolution. These give a finer speed
+            signal, but they are sensitive to dust and fluff on the disc or the sensor faces,
+            which is a common cause of erratic readings on machines that have not been vacuumed.
+          </p>
+          <p>
+            On many machines, this same signal is used for more than speed control. It is what
+            tells the controller that the belt has actually started, what the distance readout is
+            calculated from, and on some designs what the controller uses to decide that
+            something is wrong and shut down. That is why one small failed part can produce such
+            a confusing mix of symptoms.
+          </p>
+        </div>
+
+        <div id="symptoms" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Symptoms of a Failing Speed Sensor</h2>
+<p>
+            Because the controller depends on this one signal, a sensor fault shows up in several
+            distinct ways. Which one you see depends on how the controller is programmed to react
+            to a missing or unstable signal.
+          </p>
+          <ul>
+            <li><strong>The belt starts, runs for a few seconds and stops.</strong> This is the
+            most common pattern. The controller starts the motor, waits for speed pulses to confirm
+            the belt is moving, receives none, and shuts down as a safety measure. Many consoles
+            show a speed-related error or a generic fault message at this point. The belt usually
+            runs normally during those few seconds, which is the clue that the motor and the
+            drive system are fine.</li>
+            <li><strong>The console shows zero speed while the belt moves.</strong> On machines
+            that do not shut down for a missing signal, the belt keeps running at whatever power
+            the controller sends, but the speed display, distance and pace readouts stay at zero
+            or freeze. Programmes that rely on speed will behave strangely.</li>
+            <li><strong>The belt surges, hunts or runs faster than set.</strong> An intermittent or
+            noisy signal makes the controller think the belt is slower than it is, so it adds
+            power; the signal then catches up and it cuts power; and so on. The result is a belt
+            that pulses, speeds up on its own or wanders above the set speed. This is the symptom
+            to take most seriously, for reasons covered below.</li>
+            <li><strong>Speed reads wrong but steady.</strong> A sensor that is counting double
+            pulses, or a replacement magnet set up differently from the original, can produce a
+            display that is consistently out. Our guide to
+            <a href="/is-my-treadmill-speed-accurate/" class="text-[#0F62FE] font-medium">whether your treadmill speed is accurate</a>
+            covers how to check that against a measured belt length and a stopwatch.</li>
+            <li><strong>Random stops mid-session.</strong> A loose connector or a magnet that is
+            just at the edge of the sensor's range produces a signal that drops out under
+            vibration, so the machine runs for minutes and then stops with an error. Our guide to
+            a <a href="/treadmill-shuts-off-by-itself/" class="text-[#0F62FE] font-medium">treadmill that shuts off by itself</a>
+            lists the other causes of that pattern.</li>
+          </ul>
+          <p>
+            One thing a speed sensor fault does <em>not</em> usually produce is a belt that will
+            not move at all with no attempt to start. If you press start, hear nothing and the
+            belt never twitches, the fault is more likely in the safety key, the controller, the
+            motor or the drive belt, and our guide to a
+            <a href="/treadmill-turns-on-but-belt-wont-move/" class="text-[#0F62FE] font-medium">treadmill that turns on but the belt will not move</a>
+            is the better starting point. The exception is a controller that checks for the
+            sensor before it will even energise the motor, which some do; the manual or the error
+            message will usually say so.
+          </p>
+        </div>
+
+        <div id="error-codes" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Error Messages and Why We Do Not List Codes</h2>
+<p>
+            Most consoles report a speed sensor problem as an error code, and the natural
+            instinct is to search for that code. We deliberately do not publish a list of codes
+            and meanings here, because the same code means different things on different brands,
+            and sometimes on different models from the same brand. A code that means "no speed
+            signal" on one machine means "motor overcurrent" on another, and acting on the wrong
+            table leads people to replace parts that were never faulty.
+          </p>
+          <p>
+            What is consistent is the pattern. Speed sensor errors tend to appear a few seconds
+            after start, after the controller has tried to run the motor and heard nothing back.
+            Errors that appear the instant you press start, before any motion, are more often
+            about the safety key, the console-to-controller communication or the controller's
+            own self-test. Errors that appear after minutes of normal running are more often
+            about an intermittent connection, an overheating component or a motor drawing too
+            much current.
+          </p>
+          <p>
+            Find the code in your manual, or in the manufacturer's online support for your exact
+            model number, which is on a sticker on the frame rather than on the console. If the
+            manual says the code relates to speed, speed sensing, "no RPM" or a similar phrase,
+            the checks on this page apply. If it does not, work through the general sequence in our
+            <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">treadmill troubleshooting guide</a>
+            before assuming the sensor is the problem.
+          </p>
+          <p>
+            Note the exact code, how long after start it appeared, and whether the belt moved at
+            all. That is the information a support line or a technician will ask for first, and it
+            is easy to forget once the console has been power-cycled.
+          </p>
+        </div>
+
+        <div id="not-the-sensor" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Faults That Look Like a Speed Sensor but Are Not</h2>
+<p>
+            Before opening the hood it is worth ruling out the things that produce similar
+            symptoms, because some of them are quicker to check and more common.
+          </p>
+          <p>
+            <strong>A belt that slips under load.</strong> If the belt hesitates when your foot
+            lands but runs smoothly with nobody on it, the sensor is probably reporting the truth:
+            the belt really is slowing. That is a dry deck, a loose walking belt or a worn drive
+            belt, not a sensor fault. Our guide to a
+            <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">treadmill belt that slips</a>
+            covers the difference. The tell is that a sensor fault produces the same behaviour
+            with the belt unloaded.
+          </p>
+          <p>
+            <strong>A slipping or broken drive belt.</strong> The short ribbed belt from the motor
+            to the front roller can glaze, stretch or shed ribs. When it slips, the motor spins
+            while the roller does not, the sensor on the roller correctly reports low or zero
+            speed, and the controller shuts down with what looks like a sensor error. With the
+            machine unplugged, try turning the front roller by hand and watch whether the motor
+            pulley turns with it. Our
+            <a href="/treadmill-drive-belt/" class="text-[#0F62FE] font-medium">drive belt guide</a>
+            explains how to check it properly.
+          </p>
+          <p>
+            <strong>A dry deck making the controller work too hard.</strong> A deck that needs
+            lubrication raises the motor current under load. Some controllers cut out on
+            overcurrent and report it with an error that owners read as a speed fault. If the
+            belt is hard to move by hand with the machine unplugged, or the deck has not been
+            lubricated in a year, deal with that first.
+          </p>
+          <p>
+            <strong>A safety key barely making contact.</strong> A weak key that loses contact
+            under vibration produces random stops that look like a speed signal dropping out.
+            Reseat and clean the key before suspecting anything under the hood.
+          </p>
+          <p>
+            <strong>Calibration rather than a fault.</strong> After a controller or console has
+            been replaced, or on some machines after a factory reset, the controller may need to
+            be told the roller size and speed range again. A machine that runs but reads wrong
+            after that kind of work is usually a calibration job, which our
+            <a href="/treadmill-calibration/" class="text-[#0F62FE] font-medium">treadmill calibration guide</a>
+            covers, rather than a sensor replacement.
+          </p>
+        </div>
+
+        <div id="stop-rule" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. The Rule for a Belt That Surges on Its Own</h2>
+<p>
+            Most speed sensor faults are a nuisance: the machine stops, you are annoyed, nobody is
+            hurt. A surging belt is different and deserves its own section.
+          </p>
+          <p>
+            When the controller receives an unstable speed signal, it can respond by adding power
+            to a belt it thinks is slow. The belt accelerates. On some controllers the overshoot
+            is small and the belt merely pulses. On others, particularly where the signal
+            disappears entirely for a moment, the belt can jump well above the set speed before
+            the controller notices. A walker at a gentle pace who is suddenly on a belt moving at
+            running speed has very little time to react, and the handrails and safety key are the
+            only things between them and the floor behind the machine.
+          </p>
+          <p>
+            So the rule is simple. If the belt speed changes without you touching the controls —
+            it surges, pulses, climbs or lurches — stop the session with the key or the stop
+            button, unplug the machine, and do not use it again until the cause has been found
+            and fixed and the repair has been tested at a slow speed with nobody on the belt.
+            This applies whether the cause turns out to be the sensor, the controller, a loose
+            connector or something else. Our troubleshooting guide lists it alongside a burning smell, a breaker that trips on start-up and a belt that
+            does not stop when the key is pulled as the four faults that mean stop immediately.
+          </p>
+          <p>
+            It also means a surging belt is not a fault to live with. Owners sometimes do, because
+            the machine still "works" most of the time. A sensor and its wiring are cheap; a fall
+            at running speed is not.
+          </p>
+        </div>
+
+        <div id="inspection" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. How to Inspect the Speed Sensor Safely</h2>
+<p>
+            Inspection is the step that finds most sensor faults, and it needs nothing more than a
+            screwdriver and a torch. Unplug the treadmill at the wall first. Remove the motor hood
+            — usually a handful of screws around the edge, sometimes with a clip at the front —
+            and set it aside.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Find the sensor</h3>
+          <p>
+            Look at the front roller, the one the drive belt runs to. On the side with the drive
+            pulley, or at the opposite end of the roller shaft, you are looking for a small plastic
+            block on a metal bracket with two or three thin wires leading away to the controller
+            board. On an optical design, look for a slotted disc with a U-shaped sensor straddling
+            it. If you cannot find it, the parts diagram in the manual will show it.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Check the magnet</h3>
+          <p>
+            Turn the roller slowly by hand and watch the pulley face or the shaft end where the
+            sensor points. There should be a small magnet, often a dark grey disc or a small
+            cylinder pressed into a hole. Confirm that it is there, that it is seated flush and not
+            working its way out, and that it passes the sensor once per revolution. A magnet that
+            has fallen out is one of the most common findings; it is sometimes lying in the base
+            of the motor compartment, still usable. A magnet that is loose in its hole can be
+            re-secured with a small amount of a suitable adhesive, but it must sit at the
+            original depth or the gap will be wrong.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Check the gap</h3>
+          <p>
+            The sensor needs to be close to the magnet — typically a few millimetres, and the
+            manual may give a figure — and the gap should be the same all the way round as the
+            roller turns. A bracket that has been bent by a knock, a sensor that has slid in its
+            slot, or a front roller that has been moved by belt tensioning can all open the gap
+            enough to lose the signal. Look also for a sensor that has been pushed so close it is
+            touching or rubbing; a scuffed sensor face is the sign.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Check the wiring</h3>
+          <p>
+            Follow the sensor wires to the controller board. Look for a connector that is not
+            fully pushed home, a wire that has chafed against the drive belt or the flywheel, a
+            crimp that has pulled out of its housing, or a wire that has been caught and
+            stretched when the machine was moved or folded. Unplug and firmly replug the
+            connector at the board end. On an optical sensor, clean dust and fluff off the disc
+            and from between the arms of the sensor with a soft brush, not a damp cloth. While the
+            hood is off, this is also the moment to vacuum the compartment, which our guide to
+            <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium">vacuuming the motor compartment</a>
+            covers.
+          </p>
+          <p>
+            A surprising number of sensor faults end at this point: a missing magnet, a gap that
+            has opened, or a connector that was half out. If everything looks right, the next step
+            is to test it.
+          </p>
+        </div>
+
+        <div id="testing" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. How to Test a Treadmill Speed Sensor</h2>
+<p>
+            There are two practical ways to test a sensor at home, one without tools and one with
+            a basic multimeter. Both are described generically; the wire colours and connector
+            layout on your machine may differ, and the manual's wiring diagram is the reference.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The console test</h3>
+          <p>
+            On many machines, with the power on and the safety key in but the belt not started,
+            turning the front roller by hand will make the speed or distance display register
+            movement, or will make a diagnostic mode count pulses. Some manuals describe a
+            technician or engineering mode that shows the raw sensor signal; if yours does, use
+            it. To do this safely, put the hood back on loosely or keep hands well clear of the
+            drive belt and flywheel, have the key out until you are ready, and never start the
+            belt with the hood off and your hands near the roller. If the display registers
+            movement when the roller is turned by hand, the sensor and its wiring are working. If
+            it does not, that is not yet proof of a bad sensor, because not every console responds
+            this way, but it points firmly at the sensor circuit.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The multimeter test</h3>
+          <p>
+            With the treadmill <strong>unplugged</strong>, disconnect the sensor's connector from
+            the controller board so you are testing the sensor and its wires on their own.
+          </p>
+          <p>
+            For a <strong>reed switch</strong> sensor, which has two wires, set the meter to
+            continuity or resistance. Connect the probes across the two sensor wires. With the
+            magnet away from the sensor, the meter should show an open circuit. Turn the roller
+            slowly until the magnet is directly in front of the sensor; the meter should now show
+            continuity, or near-zero resistance. Keep turning and it should open again. A switch
+            that stays open regardless of magnet position, stays closed regardless, or only closes
+            when the magnet is pressed hard against it, has failed or the magnet is too weak.
+            Flex the wires gently while watching the meter to catch an intermittent break.
+          </p>
+          <p>
+            For a <strong>Hall-effect sensor</strong>, which usually has three wires — supply,
+            ground and signal — a simple continuity test does not work, because the sensor needs
+            power to produce a signal. Testing it properly means applying the supply voltage
+            specified in the manual and measuring the signal wire as the magnet passes, which is
+            a job for someone comfortable with low-voltage electronics. For most owners the
+            practical approach is to confirm the magnet and gap, check continuity of each wire
+            from the sensor to the connector pin to rule out a broken wire, and then substitute a
+            new sensor, which is cheap enough that it is a reasonable diagnostic step in itself.
+          </p>
+          <p>
+            For an <strong>optical sensor</strong>, the same applies: it needs power to work, so
+            inspection and cleaning come first, then wire continuity, then substitution.
+          </p>
+          <p>
+            Whatever the type, test the wiring too. A sensor that passes on the bench but fails in
+            the machine often has a wire broken inside its insulation, usually where it flexes or
+            where it is clamped. Continuity from each sensor pin to the corresponding pin at the
+            board end, while flexing the loom, finds that.
+          </p>
+        </div>
+
+        <div id="replacement" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Replacing and Realigning the Sensor</h2>
+<p>
+            A speed sensor is a genuinely owner-replaceable part on most home treadmills, provided
+            the machine is unplugged and you are methodical about the alignment afterwards.
+          </p>
+          <p>
+            <strong>Get the right part.</strong> Order by model and serial number from the
+            manufacturer's parts channel or a supplier who lists your model. Reed and Hall sensors
+            are not interchangeable, and connector types vary. A generic sensor may well work, but
+            it is a gamble that the manufacturer's part is not. If a new magnet is supplied, use it;
+            a magnet of a different strength or size changes the gap the sensor needs.
+          </p>
+          <p>
+            <strong>Photograph before you remove.</strong> Take a picture of the old sensor in
+            place, showing its position on the bracket, its orientation and where the wires run.
+            Hall sensors in particular can be orientation-sensitive, and a new one fitted the wrong
+            way round will not work even though nothing is broken.
+          </p>
+          <p>
+            <strong>Fit and align.</strong> Mount the new sensor in the same position. Set the gap
+            to the manual's figure if it gives one, otherwise match the original as closely as you
+            can — close enough that the magnet passes within a few millimetres, not so close that
+            anything touches. Turn the roller a full revolution by hand and confirm the gap stays
+            consistent and nothing rubs. Tighten the bracket. Route the wires away from the drive
+            belt and the flywheel, secure them with the original clips or a cable tie, and push the
+            connector fully home on the board.
+          </p>
+          <p>
+            <strong>Test before you refit the hood.</strong> Stand clear, plug in, insert the key
+            and start the belt at its slowest speed with nobody on it. Watch that the speed display
+            registers, that the belt holds a steady speed for a minute or two, and that there is no
+            surging. Stop, unplug, and refit the hood. Then test again at walking pace holding the
+            handrails, and confirm that pulling the key stops the belt.
+          </p>
+          <p>
+            <strong>Check the reading.</strong> A new sensor on a machine with an adjustable
+            calibration can read slightly differently from the old one. If the display looks
+            wrong, the measured-belt-and-stopwatch method described earlier will show whether it
+            needs calibrating.
+          </p>
+        </div>
+
+        <div id="controller" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. When It Is the Controller Board Instead</h2>
+<p>
+            If the magnet is in place, the gap is right, the wiring tests good and a new sensor
+            makes no difference, the sensor is not the problem. The controller board — the board
+            under the hood that drives the motor, as opposed to the console board up top — is the
+            next suspect, and the diagnosis changes character here because it is a more expensive
+            part and usually not an owner repair.
+          </p>
+          <p>
+            Signs that point at the controller rather than the sensor:
+          </p>
+          <ul>
+            <li>The belt will not move at all, with no attempt by the motor, even though the
+            console is lit and the key is in. A sensor fault usually lets the motor try first.</li>
+            <li>The fault appeared after a power cut, a lightning storm or a tripped breaker.
+            Controllers are vulnerable to surges in a way sensors are not, which is one of the
+            arguments for a surge protector on the supply.</li>
+            <li>There are scorch marks, a burnt smell, a bulging capacitor or a blown fuse on the
+            board. Any burning smell means stop and unplug.</li>
+            <li>The belt surges even with a brand-new sensor correctly aligned and the signal
+            confirmed good.</li>
+            <li>Speed and incline both misbehave, or the console reports communication errors as
+            well as speed errors.</li>
+          </ul>
+          <p>
+            A controller can also fail in a way that is specific to the sensor circuit: the input
+            that reads the sensor, or the supply it feeds to a Hall sensor, can fail while the rest
+            of the board works. That looks exactly like a dead sensor, which is why substituting a
+            known-good sensor is the decisive test before condemning the board.
+          </p>
+          <p>
+            Replacing a controller means finding the exact board for the model, and sometimes
+            calibrating the new one. The cost of the part plus a technician's visit can be a large
+            fraction of the value of a budget machine, which is where the repair-or-replace
+            arithmetic in our repair guide comes in. On a machine still under a parts warranty, it is a support call rather than a
+            purchase; check your warranty document before buying anything.
+          </p>
+        </div>
+
+        <div id="prevention" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Keeping the Speed Sensor Working</h2>
+<p>
+            Speed sensors do not wear in the way belts and brushes do, and most of the faults on
+            this page are caused by something else disturbing them. A few habits keep that from
+            happening.
+          </p>
+          <ul>
+            <li><strong>Vacuum the motor compartment a few times a year.</strong> Dust and belt
+            fluff collect around the front roller, and on an optical sensor they are the main cause
+            of a flickering signal. The same dust insulates the motor and the controller and
+            shortens their lives too.</li>
+            <li><strong>Lubricate the deck on schedule.</strong> A dry deck does not harm the
+            sensor directly, but it raises the motor load, heats the controller and makes
+            overcurrent shutdowns more likely — and those get blamed on the sensor. Our
+            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">belt lubrication guide</a>
+            covers how often and how much.</li>
+            <li><strong>Be careful when tensioning the belt.</strong> Tracking and tension
+            adjustments move the rear roller on most machines, but on some the front roller moves
+            too, and that changes the sensor gap. After any adjustment near the front, check the
+            gap.</li>
+            <li><strong>Check the wiring after moving or folding.</strong> Looms get caught and
+            stretched when a machine is tilted onto its wheels or folded. If a fault appears after a
+            move, a half-out connector is the first thing to look for.</li>
+            <li><strong>Use a surge protector.</strong> It protects the controller rather than the
+            sensor, but a controller that survives a surge is a sensor fault you will not be
+            misdiagnosing later.</li>
+            <li><strong>Keep the error history.</strong> Write down any code, when it appeared and
+            what the belt was doing. Intermittent faults are far easier to diagnose from a short log
+            than from memory.</li>
+          </ul>
+          <p>
+            None of this takes long, and it addresses most of what sends owners to this page: a
+            loose magnet, a dusty sensor, a disturbed gap or a tugged wire.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What does a treadmill speed sensor do?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                It measures how fast the front roller is turning and reports that to the motor controller, which adjusts motor power to hold the speed you selected. It is usually a magnet on the roller pulley with a reed or Hall-effect sensor beside it, or sometimes an optical sensor reading a slotted disc. The same signal drives the speed and distance display.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What are the symptoms of a bad treadmill speed sensor?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                The belt starts, runs a few seconds and stops with a speed-related error; the console shows zero speed while the belt moves; the belt surges, pulses or hunts between speeds; or the machine stops randomly mid-session. A belt that will not move at all with no attempt to start is more often the safety key, drive belt, motor or controller.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How do I test a treadmill speed sensor?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Unplug the machine, remove the motor hood, and confirm the magnet is on the roller, the gap is a few millimetres and the wiring is intact. For a two-wire reed sensor, disconnect it and use a multimeter on continuity: it should close as the magnet passes and open otherwise. Three-wire Hall sensors need power to test, so check wiring continuity and substitute a new sensor.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Where is the speed sensor on a treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Under the motor hood, next to the front roller. Look for a small plastic block on a bracket with two or three thin wires leading to the controller board, pointing at a magnet set into the drive pulley or the end of the roller shaft. On optical designs it is a U-shaped sensor straddling a slotted disc. The parts diagram in the manual shows the exact position.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Why does my treadmill speed up and slow down on its own?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                An unstable speed signal makes the controller add and cut motor power as it chases a reading it cannot trust, so the belt surges or hunts. Common causes are a loose magnet, a sensor gap that has opened, a chafed wire or a dusty optical sensor; a failing controller can do the same. Stop using the machine until it is fixed, because a surging belt can throw a user.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How much does a treadmill speed sensor cost to replace?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                The sensor itself is one of the cheaper parts on a treadmill, typically a small fraction of what a motor or controller board costs, and many owners fit it themselves with the machine unplugged. If a technician does it, the call-out fee will usually be most of the bill. If a new sensor does not fix the fault, the controller board is the next suspect and is considerably dearer.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Treadmill Speed Sensors</h2>
+          <p class="text-gray-700 leading-relaxed">Most sensor repairs go wrong before the new part is even ordered. These four account for most of the wasted money.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Replacing the sensor without checking the magnet</h3>
+              <p class="text-gray-700 text-sm m-0">A missing, shifted or loose magnet produces exactly the same symptoms as a dead sensor, and it is the more common finding. Unplug, remove the hood and turn the roller by hand before ordering anything. A magnet lying in the base of the compartment can often be refitted at its original depth for nothing.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Diagnosing from an error code found online</h3>
+              <p class="text-gray-700 text-sm m-0">Codes are not standard between brands, or even between models from one brand. A code that means no speed signal on one machine means something unrelated on another. Look the code up for your exact model number in the manual or the manufacturer's support pages, and note when it appears relative to pressing start.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Carrying on with a belt that surges</h3>
+              <p class="text-gray-700 text-sm m-0">Because the machine still works most of the time, owners keep using a belt that pulses or jumps speed. That is the one sensor symptom that can cause a fall, particularly for a walker who is suddenly at running pace. Stop, unplug and fix it, then test at a slow speed with nobody on the belt before trusting it again.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Fitting the new sensor without photographing the old one</h3>
+              <p class="text-gray-700 text-sm m-0">Hall-effect sensors can be orientation-sensitive, brackets have a correct position, and the wire route matters because the drive belt will chew through a loom that touches it. Photograph the original in place, match the gap to the manual, turn the roller a full revolution to check nothing rubs, and test before the hood goes back on.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Fault Diagnosis Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/treadmill-turns-on-but-belt-wont-move/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Diagnosis</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Turns On but Belt Won't Move</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The checks when the console is lit and nothing happens.</p>
+            </a>
+            <a href="/is-my-treadmill-speed-accurate/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Accuracy</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Is My Treadmill Speed Accurate?</p>
+              <p class="text-sm text-gray-500 leading-relaxed">How to measure real belt speed with a tape and a stopwatch.</p>
+            </a>
+            <a href="/treadmill-shuts-off-by-itself/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Diagnosis</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Shuts Off by Itself</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Random stops, from the safety key to an overheating motor.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">Check the magnet, the gap and the wiring before buying
+            anything.</strong> Most speed sensor faults are a magnet that has moved, a bracket
+            that has been knocked or a connector that is half out, and all three are found with the
+            hood off and the machine unplugged.
+          </p>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">Test, then substitute, then suspect the controller.</strong> A
+            reed sensor is a two-minute multimeter check, a new sensor is cheap enough to be a
+            diagnostic step, and only when both are good is the board the likely fault — at which
+            point the
+            <a href="/treadmill-repair-guide/" class="text-[#5AA9FF] font-bold no-underline">repair-or-replace arithmetic</a>
+            matters. And a belt that surges on its own is a stop-now fault, not one to live with.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+</Layout>

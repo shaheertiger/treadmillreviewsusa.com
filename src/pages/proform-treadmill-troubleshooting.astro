@@ -1,0 +1,756 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "ProForm Treadmill Troubleshooting (2026): Reset, Belt and iFIT Fixes";
+const description =
+  "ProForm treadmill troubleshooting: the safety key, console reset, a frozen iFIT screen, a belt that will not move or slips, incline faults and calling support.";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Fault Diagnosis", item: "https://www.treadmillreviewsusa.com/problems/" },
+        { "@type": "ListItem", position: 3, name: "ProForm Treadmill Troubleshooting", item: "https://www.treadmillreviewsusa.com/proform-treadmill-troubleshooting/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "How do I reset a ProForm treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Remove the safety key, switch the machine off, unplug it at the wall and wait several minutes, then plug in, switch on, let the console boot fully and insert the key. Also check the reset breaker next to the power inlet has not tripped. Console factory resets use a pinhole button or a button sequence that differs by model, so confirm it in your manual.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Why will my ProForm treadmill not turn on?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Work from the wall inwards: test the outlet with a lamp, plug straight into the wall rather than an extension, check the power cord is fully in, check the power switch and the reset breaker beside it, confirm the safety key is in and seated, and reseat the console cable if the machine was recently moved or assembled. Then try a proper power cycle.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Why does my ProForm treadmill turn on but the belt will not move?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Check the safety key first. Then, with the machine unplugged, confirm the belt moves by hand and nothing is jammed. If the motor spins but the belt does not, the drive belt has slipped or broken. If the motor does not try to run at all with the console lit, the motor controller is not sending power, which is a support call or a technician job.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How do I recalibrate the incline on a ProForm treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Most ProForm consoles have a calibration routine that runs the incline to its full extent and back to zero to relearn the end points. It is entered by a button sequence at power-up on LCD consoles or from a settings menu on touchscreens, with nobody on the deck and nothing beneath it. The sequence differs by model, so confirm it in your manual before trying one.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Why is my ProForm iFIT screen frozen or stuck on update?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Do a full power cycle with the key out and the machine unplugged for several minutes, then wait for the complete boot. An update on a weak Wi-Fi connection can take a long time, so give it longer than feels reasonable before intervening. If it freezes repeatedly at the same point, try the console reset for your model or contact iFIT support, who can push the update.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is ProForm the same as NordicTrack?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "They are sister brands owned by the same parent company, iFIT Health and Fitness, and they share consoles, controllers, incline systems and the iFIT platform. ProForm is positioned as the more affordable range. Most troubleshooting and reset procedures carry across between the two, which is why NordicTrack guides are often useful to ProForm owners, though the exact button sequences still differ by model.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", name: "Morgan Reyes" },
+      datePublished: "2026-10-08",
+      dateModified: "2026-10-08",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-10-08",
+    modifiedTime: "2026-10-08",
+    author: "Morgan Reyes",
+    section: "Fitness Equipment",
+    tags: [
+      "proform treadmill troubleshooting",
+      "proform treadmill reset",
+      "proform treadmill not working",
+      "proform treadmill wont start",
+      "proform treadmill problems",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "Reset Your ProForm", link: "#reset" }}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-proformtreadmilltroubleshooting" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-proformtreadmilltroubleshooting)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Troubleshooting
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated October 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          ProForm Treadmill Troubleshooting: <span class="text-[#5AA9FF]">Reset, Belt, Incline and iFIT Problems</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          Most ProForm faults are one of a short list: a safety key not seated, a console that needs a proper reset, an iFIT screen stuck on something, a belt that slips or will not move, or an incline that has lost its place. Here is the order to check them in, what to do yourself, and what to have ready before you call support.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#reset" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            How to Reset It
+          </a>
+          <a href="#support" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            Call Support: What to Have Ready
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
+          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">October 8, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="2.1k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">The manual is the authority for your model.</strong>
+          ProForm has sold a great many models over the years, and reset sequences, calibration
+          modes and error messages differ between them. This page describes each procedure in
+          general terms and tells you when to confirm the exact steps for your machine in its manual
+          or on the ProForm support site. Unplug the treadmill at the wall before any inspection
+          under the motor hood. Stop using the machine for a burning smell, a breaker that trips on
+          start-up, a belt that surges on its own or a belt that does not stop when the safety key is
+          pulled. Check your warranty document before opening anything.
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. ProForm Treadmill Not Working? The Short Answer</a>
+          <a href="#safety-key" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Start With the Safety Key</a>
+          <a href="#reset" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How to Reset a ProForm Treadmill</a>
+          <a href="#wont-turn-on" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. ProForm Treadmill Will Not Turn On</a>
+          <a href="#console-sleep" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Console Sleep, Wake-on-Power and a Screen That Looks Dead</a>
+          <a href="#ifit-console" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. iFIT Console Problems: Frozen, Stuck on Update, No Wi-Fi</a>
+          <a href="#belt-wont-move" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Console Lit but the Belt Will Not Move</a>
+          <a href="#belt-slipping" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Belt Slipping, Hesitating or Jerking</a>
+          <a href="#incline" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Incline Stuck, Wrong or Needing Calibration</a>
+          <a href="#error-messages" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Error Messages on a ProForm Console</a>
+          <a href="#support" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. When to Call ProForm Support and What to Have Ready</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          ProForm treadmills are built by iFIT Health and Fitness, the same parent company as
+          NordicTrack, and the two brands share consoles, controllers, incline systems and a great
+          deal of their troubleshooting. Many of the problems owners search for are not faults at
+          all but a console that has gone to sleep, an update that has stalled or a safety key that
+          is a millimetre out of place. The real faults — a dry deck, a slipping belt, an incline
+          that has lost calibration, a controller that has given up — follow a predictable
+          sequence, and this page works through it in the order that finds the cause fastest.
+        </p>
+
+        <div id="short-answer" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. ProForm Treadmill Not Working? The Short Answer</h2>
+<p>
+            When a <strong>ProForm treadmill is not working</strong>, the checks go in this order:
+            the <strong>safety key</strong> is in, seated and the right one; the <strong>power
+            switch and reset breaker</strong> near the power cord are on and have not tripped; the
+            console is actually awake rather than asleep; a <strong>proper power cycle</strong> —
+            unplugged for a few minutes with the key out — has been tried; and, for an iFIT
+            touchscreen console, the screen is not simply waiting on an update or a Wi-Fi
+            connection.
+          </p>
+          <p>
+            That sequence resolves the large majority of "ProForm won't start" and "ProForm
+            console frozen" searches without a tool being picked up. What remains splits into a
+            few recognisable faults. A console that lights but a belt that will not move is usually
+            the key, the drive belt or the motor controller. A belt that hesitates underfoot is a
+            dry deck or a loose belt. An incline that is stuck, will not go to zero or reads wrong
+            is usually a calibration job, occasionally a failed incline motor. And a console that
+            will not get past a logo, an update or a login screen is a software or network problem
+            that a reset or a wired check will usually clear.
+          </p>
+          <p>
+            Because ProForm and NordicTrack share so much, our guide to
+            <a href="/how-to-reset-nordictrack-treadmill/" class="text-[#0F62FE] font-medium">how to reset a NordicTrack treadmill</a>
+            applies almost word for word to most ProForm consoles, and it is worth reading
+            alongside this page. If none of the steps here finds the cause, the last section sets
+            out when to call ProForm support and what to have in front of you when you do; and if
+            the question is whether the machine is worth keeping, our
+            <a href="/proform-treadmill/" class="text-[#0F62FE] font-medium">ProForm treadmill guide</a>
+            covers the range and its common strengths and weaknesses.
+          </p>
+        </div>
+
+        <div id="safety-key" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Start With the Safety Key</h2>
+<p>
+            Every ProForm treadmill has a magnetic safety key that sits in a recess on the console
+            with a cord that clips to your clothing. With the key out, the machine will not run,
+            and on many models the console will not light at all or will show a prompt to insert
+            it. That is deliberate, and it is the first thing to check for any fault that looks
+            like a dead machine.
+          </p>
+          <ul>
+            <li><strong>Is it in?</strong> Keys get removed after sessions and put in drawers, and
+            family members remove them to keep children off the machine. Ask before diagnosing.</li>
+            <li><strong>Is it seated?</strong> Pull it out and push it back in firmly. A key sitting
+            fractionally proud of the recess will not register.</li>
+            <li><strong>Is the recess clean?</strong> Unplug the machine and look into the recess
+            with a torch. Lint, hair or dust is enough to hold the key away from the switch. Clean
+            it with a dry cloth or soft brush, not with anything metal or wet.</li>
+            <li><strong>Is it the right key?</strong> Keys differ between brands and sometimes
+            between models. A key that came with a second-hand machine or from another treadmill in
+            the house may fit the recess without working.</li>
+            <li><strong>Has the magnet weakened?</strong> A key that only works when pressed, or that
+            cuts the machine out when the cord is tugged by an arm swing, has a magnet that is
+            barely holding the switch. Replace it.</li>
+          </ul>
+          <p>
+            Our guide to a
+            <a href="/treadmill-safety-key-not-working/" class="text-[#0F62FE] font-medium">treadmill safety key that is not working</a>
+            covers each of these in detail and explains why bypassing the key with a loose magnet
+            is a bad idea. If the key is in, seated and clean and the console still shows nothing,
+            move on to the reset.
+          </p>
+        </div>
+
+        <div id="reset" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How to Reset a ProForm Treadmill</h2>
+<p>
+            "Reset" means three different things on a ProForm, and it is worth knowing which one
+            you are doing.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The reset breaker near the power cord</h3>
+          <p>
+            Most ProForm treadmills have a small button or switch next to the power inlet,
+            sometimes labelled reset, that is a circuit breaker protecting the machine. If it has
+            tripped — after a surge, a stall or an overload — the machine is dead until it is reset.
+            Switch the power switch off, press the reset button in or flip it back, wait a moment
+            and switch on again. A breaker that trips again straight away is a fault, not something
+            to keep resetting.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The power cycle</h3>
+          <p>
+            This is the reset that fixes most console problems, and it has to be done properly.
+            Remove the safety key. Switch the machine off at its power switch. Unplug it at the
+            wall. Wait several minutes rather than several seconds; the console and controller hold
+            charge, and a brief unplug does not clear them. Plug back in, switch on, wait for the
+            console to boot fully, then insert the key. Owners who report that "unplugging did not
+            work" have very often unplugged for ten seconds with the key still in.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The console reset</h3>
+          <p>
+            Many ProForm consoles have a way to reset the console software itself — on some it is a
+            small pinhole reset button on the back or underside of the console, on others a
+            sequence of buttons held during power-up, and on iFIT touchscreens a factory reset
+            option in the settings or a hold-button sequence at boot. We deliberately do not
+            publish a single sequence here, because they differ between models and an incorrect
+            one does nothing at best and enters a calibration or engineering mode at worst. Find
+            your model number — on a sticker on the frame, usually near the front or the power
+            inlet, not on the console — and confirm the procedure in the manual or on the ProForm
+            support site. A factory reset on an iFIT console will usually remove the user's login
+            and settings, so have the account details ready.
+          </p>
+          <p>
+            Try the power cycle first. If the console comes back but the fault returns, try the
+            console reset. If neither helps, the fault is not software.
+          </p>
+        </div>
+
+        <div id="wont-turn-on" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. ProForm Treadmill Will Not Turn On</h2>
+<p>
+            A ProForm that is completely dark — no console lights, no response to the power switch
+            — has lost power somewhere between the wall and the console, or it is being told not to
+            run. Work from the wall inwards.
+          </p>
+          <ol>
+            <li><strong>The outlet.</strong> Plug a lamp into the same socket. Check the breaker in
+            the house panel and any GFCI outlet on the circuit. If the treadmill is on an extension
+            cord or power strip, plug it directly into the wall.</li>
+            <li><strong>The power cord.</strong> Confirm it is fully pushed into the inlet on the
+            treadmill; it works loose when the machine is moved or folded. Look for damage along its
+            length.</li>
+            <li><strong>The power switch and reset breaker</strong> next to the inlet, as above.</li>
+            <li><strong>The safety key</strong>, because on many ProForm consoles a missing key means
+            a dark console rather than a prompt.</li>
+            <li><strong>The console cable.</strong> On a folding ProForm, the cable from the base to
+            the console runs up inside one of the uprights and connects behind the console. It can
+            work loose, particularly after assembly or a move. Unplug the machine, remove the console
+            screws if the manual shows how, and reseat the connector. Do not force anything.</li>
+            <li><strong>Sleep mode.</strong> Some consoles go dark after a period of inactivity and
+            wake on a button press rather than on the power switch. See the next section.</li>
+          </ol>
+          <p>
+            If power is reaching the machine — the power switch lights, or you can hear a relay
+            click when it is switched on — but the console stays dark, the fault is in the console,
+            its cable or the controller's supply to it. Our guide to a
+            <a href="/treadmill-wont-turn-on/" class="text-[#0F62FE] font-medium">treadmill that won't turn on</a>
+            goes through this in the general case, and our guide to a
+            <a href="/treadmill-console-not-working/" class="text-[#0F62FE] font-medium">treadmill console that is not working</a>
+            covers the upright cable and the console board specifically. A dark console with power
+            confirmed at the machine is usually the point at which a call to support is the
+            efficient next step.
+          </p>
+        </div>
+
+        <div id="console-sleep" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Console Sleep, Wake-on-Power and a Screen That Looks Dead</h2>
+<p>
+            A good proportion of "my ProForm console is dead" reports are consoles doing exactly
+            what they were set to do. It is worth understanding the behaviour before assuming a
+            fault.
+          </p>
+          <p>
+            <strong>Sleep mode.</strong> Both the simpler LCD consoles and the iFIT touchscreens
+            go to sleep after a period without input. On an LCD console the display blanks; on a
+            touchscreen the screen goes dark. Pressing a button, tapping the screen or, on some
+            models, inserting the safety key wakes it. A console that is asleep looks identical to a
+            console with no power, and the difference is whether it responds to a press.
+          </p>
+          <p>
+            <strong>Boot time.</strong> An iFIT touchscreen is a small computer and takes a while
+            to boot after power is applied — sometimes long enough that an impatient owner
+            switches off and on again before it has finished, which starts the boot over. After
+            switching on, wait, and watch for the logo.
+          </p>
+          <p>
+            <strong>Wake on power.</strong> Some touchscreen consoles have a setting that decides
+            whether the screen turns on automatically when the machine is powered at the switch or
+            waits for a tap. If a console that used to light up now stays dark until touched, or
+            the other way round, look for that setting rather than assuming a fault.
+          </p>
+          <p>
+            <strong>The screen is on but black.</strong> A touchscreen that is lit — you can see a
+            faint glow in a dark room — but shows nothing is usually a software hang, and the power
+            cycle clears it. A screen that is completely unlit on a machine with confirmed power is
+            a different matter and points at the console cable or the console itself.
+          </p>
+          <p>
+            <strong>Standby draw.</strong> A touchscreen console that is left plugged in keeps the
+            computer in standby, which is why some owners find the screen warm when the machine has
+            not been used. Switching off at the power switch between sessions is reasonable; it will
+            just mean a full boot next time.
+          </p>
+        </div>
+
+        <div id="ifit-console" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. iFIT Console Problems: Frozen, Stuck on Update, No Wi-Fi</h2>
+<p>
+            ProForm's touchscreen consoles run iFIT, and a class of problems exists on them that
+            the simpler LCD consoles do not have. They are software and network problems, and they
+            are approached differently from mechanical faults.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">A frozen screen</h3>
+          <p>
+            A screen that does not respond to touch, or is stuck on the logo or a spinning
+            indicator, needs a proper power cycle: key out, power off, unplugged for several
+            minutes, power on, wait for the full boot. If it freezes again at the same point, note
+            exactly what is on the screen and try the console reset for your model. A screen that
+            freezes only during workouts, or only when streaming video, is more likely a network
+            or memory issue than a hardware fault.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Stuck on an update</h3>
+          <p>
+            iFIT consoles download updates, and an update that stalls — on a slow connection, or
+            when the machine is switched off part-way through — can leave the console looping or
+            sitting on a progress screen for a very long time. Give it longer than feels
+            reasonable, with a good Wi-Fi signal, before intervening. If it has made no progress
+            after a long wait, power cycle and let it try again. If it fails repeatedly, support can
+            usually push the update or walk you through recovering the console.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Wi-Fi and login</h3>
+          <p>
+            A console that cannot connect usually has a weak signal where the treadmill sits, a
+            router that needs restarting, or a network setting it does not like. Check the signal
+            with a phone standing on the deck; move the router or add an extender if it is poor.
+            Forget the network on the console and reconnect. Restart the router. If the console
+            connects but will not log in, the iFIT account itself — password, subscription status —
+            is the place to look, and that is an account question rather than a treadmill fault.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Using the machine without iFIT</h3>
+          <p>
+            A ProForm touchscreen console can be used in a manual mode without a subscription, with
+            speed and incline controlled directly, though the exact way to reach it varies by console
+            and some owners find it awkward. If you are weighing whether to keep paying, our guide to
+            <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">whether iFIT is worth it</a>
+            sets out what you get and what you lose; check the current price rather than relying on
+            any figure you have seen quoted.
+          </p>
+        </div>
+
+        <div id="belt-wont-move" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Console Lit but the Belt Will Not Move</h2>
+<p>
+            The console works, you press start, and either nothing happens or the motor hums
+            without the belt moving. This is one of the more common ProForm complaints and it has a
+            short list of causes.
+          </p>
+          <ul>
+            <li><strong>The safety key</strong>, again. On consoles that stay lit without the key,
+            a missing or unseated key produces a console that works and a belt that does not,
+            usually with a prompt on the display. Check it first.</li>
+            <li><strong>Something physically stopping the belt.</strong> An object under the belt,
+            a belt jammed against a side rail, or a belt so tight after a tensioning attempt that the
+            motor cannot turn it. With the machine unplugged, try moving the belt by hand.</li>
+            <li><strong>The drive belt.</strong> If the motor runs — you hear it spin up — but the
+            walking belt does not move, the short ribbed belt between motor and front roller has
+            slipped off, snapped or is slipping on its pulleys. Unplug, remove the motor hood and
+            look. This is a replaceable part.</li>
+            <li><strong>The motor controller.</strong> If the motor does not try to run at all with
+            the key in and the console lit, the controller is not sending it power. A tripped reset
+            breaker, a blown fuse on the board, a failed board after a surge or a loose motor
+            connector are the usual reasons. Scorch marks or a burnt smell under the hood mean stop
+            and call a technician.</li>
+            <li><strong>The motor itself.</strong> Less common, but a motor with worn brushes can
+            fail to start under load while still humming. A motor that is seized will not turn by
+            hand with the drive belt removed.</li>
+          </ul>
+          <p>
+            Our guide to a
+            <a href="/treadmill-turns-on-but-belt-wont-move/" class="text-[#0F62FE] font-medium">treadmill that turns on but the belt will not move</a>
+            works through these with the checks for each. On a ProForm that is still within its
+            parts warranty, a controller or motor fault is a support call rather than a purchase;
+            check your warranty document before buying anything, because opening the motor hood
+            for an inspection is one thing and replacing a board is another.
+          </p>
+        </div>
+
+        <div id="belt-slipping" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Belt Slipping, Hesitating or Jerking</h2>
+<p>
+            A belt that pauses for an instant when your foot lands, jerks at low speed or drifts
+            to one side is a maintenance problem rather than a fault, and on a ProForm it is almost
+            always one of three things.
+          </p>
+          <p>
+            <strong>A dry deck.</strong> ProForm, like NordicTrack, specifies silicone lubrication
+            of the deck at intervals given in the manual, and a deck that has run dry makes the belt
+            drag so that the motor momentarily loses the fight with your foot. Unplug, lift the edge
+            of the belt and feel the deck; dry and dusty means it needs lubricant. Use the lubricant
+            and the quantity the manual specifies. This is the first thing to do for any slip,
+            before touching the tension bolts.
+          </p>
+          <p>
+            <strong>Belt tension.</strong> If the deck is lubricated and the belt still slips under
+            a firm foot plant, it may be loose. The two bolts at the rear of the deck tension the
+            belt; turn each the same amount, a quarter-turn at a time, and test between turns. A
+            belt that is too tight makes the motor run hot and wears the rollers, so stop at the
+            point where the slip goes, not beyond.
+          </p>
+          <p>
+            <strong>Tracking.</strong> A belt that drifts left or right is corrected with the same
+            rear bolts, turned individually. Run the belt at a slow speed with nobody on it, turn
+            the bolt on the side the belt has drifted towards a quarter-turn, wait, and repeat until
+            it runs centrally.
+          </p>
+          <p>
+            A belt that slips with the deck lubricated and the tension correct is a stretched belt,
+            a worn deck surface or a glazed drive belt. Our guide to a
+            <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">treadmill belt that slips</a>
+            goes through the sequence, including the lift test for tension and when a belt is past
+            adjusting. Do not simply keep tightening: a drum-tight belt on a dry deck is one of the
+            more reliable ways to shorten the life of a ProForm motor.
+          </p>
+        </div>
+
+        <div id="incline" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Incline Stuck, Wrong or Needing Calibration</h2>
+<p>
+            ProForm inclines are driven by a motor under the deck or at the front of the frame,
+            with a sensor that tells the console where the deck is. Three faults are common.
+          </p>
+          <p>
+            <strong>The incline will not move at all.</strong> Check that the machine is not in a
+            mode that locks incline, that the safety key is in, and that nothing is under the deck
+            or in the path of the incline mechanism. Then, with the machine unplugged, look at the
+            incline motor connector at the base. A loose connector after a move is a common finding.
+            An incline motor that hums without moving, or that is silent when the console calls for
+            incline, is a motor or controller fault.
+          </p>
+          <p>
+            <strong>The incline moves but reads wrong or will not return to zero.</strong> The
+            console has lost track of where the deck is. This typically happens after a power
+            interruption during an incline change, after a console or controller replacement, or
+            after the machine has been moved while powered. The fix is to recalibrate.
+          </p>
+          <p>
+            <strong>The incline hunts or moves on its own.</strong> The position sensor is giving an
+            unstable reading, or the console is trying and failing to reach a calibrated position.
+            Recalibrate first; if it persists, the sensor or its wiring is suspect.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Incline calibration</h3>
+          <p>
+            Most ProForm consoles have a calibration routine in which the machine runs the incline
+            to its full extent and back to zero, relearning the end points from the position
+            sensor. It is entered with a button sequence during power-up on LCD consoles or from a
+            settings or maintenance menu on touchscreens, and it takes a minute or two with nobody
+            on the deck. The exact way in differs by model, and some sequences also calibrate speed
+            or reset other settings, so confirm the procedure for your model number in the manual
+            or on the support site rather than trying a sequence found for a different machine.
+            Make sure nothing is under the deck before running it; the deck will go to its lowest
+            position. Our guide to a
+            <a href="/treadmill-incline-not-working/" class="text-[#0F62FE] font-medium">treadmill incline that is not working</a>
+            covers the incline motor, the sensor and the wiring in the general case.
+          </p>
+        </div>
+
+        <div id="error-messages" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Error Messages on a ProForm Console</h2>
+<p>
+            ProForm consoles report faults with codes, letters or short messages, and the
+            temptation is to search for the code and act on the first table that comes up. We do
+            not list codes and meanings here, deliberately. ProForm has used many console designs
+            over the years, the same code does not mean the same thing across them, and a table
+            compiled for one model will send the owner of another to replace a part that was never
+            at fault.
+          </p>
+          <p>
+            What is reliable is the context. Write down the exact message, whether it appeared at
+            power-up, immediately on pressing start, a few seconds after the belt began moving, or
+            minutes into a session, and what the belt and incline were doing at the time. Then look
+            the message up for your model number — on the frame sticker — in the manual or on the
+            ProForm support site, which lists messages by model.
+          </p>
+          <p>
+            Some general patterns do hold. A message at power-up, before anything moves, is usually
+            the console failing to talk to the controller in the base: a loose console cable or a
+            controller fault. A message immediately on start is often the safety key or the
+            controller's self-check. A message a few seconds after the belt starts is characteristic
+            of the controller not seeing a speed signal from the sensor on the front roller. A
+            message after minutes of normal running points at overheating, an overcurrent from a
+            dry deck, or an intermittent connection. A message during an incline change is the
+            incline system.
+          </p>
+          <p>
+            Clear the message with a proper power cycle before anything else. Many messages are a
+            single event — a momentary voltage dip, a key that lost contact — and do not come back.
+            A message that returns every time is a fault, and the pattern above tells you which part
+            of the machine to look at. Our
+            <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">treadmill troubleshooting guide</a>
+            works through the general sequence by symptom.
+          </p>
+        </div>
+
+        <div id="support" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. When to Call ProForm Support and What to Have Ready</h2>
+<p>
+            There is a point at which carrying on alone costs more than it saves. Call ProForm or
+            iFIT support when:
+          </p>
+          <ul>
+            <li>The machine is within its warranty period for the part concerned. Check your
+            warranty document; the cover for frame, motor, parts and labour differs, and opening
+            the hood to inspect is not the same as replacing a board.</li>
+            <li>Power is confirmed at the machine but the console stays dark.</li>
+            <li>The console is lit and the key is in but the motor does not attempt to run, and the
+            drive belt is intact.</li>
+            <li>There is any burning smell, scorching, or a breaker that trips on start-up.</li>
+            <li>An iFIT console is stuck on an update or will not boot after a reset.</li>
+            <li>An error message returns every time after a proper power cycle.</li>
+            <li>The incline will not calibrate, or the incline motor does not respond.</li>
+            <li>The belt surges or changes speed on its own, or does not stop when the key is
+            pulled. Stop using the machine until it is fixed.</li>
+          </ul>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Have this ready</h3>
+          <ul>
+            <li><strong>The model number</strong> from the sticker on the frame — near the front,
+            the power inlet or under the motor hood — not the marketing name on the console. Several
+            consoles share names across model years.</li>
+            <li><strong>The serial number</strong>, from the same sticker.</li>
+            <li><strong>Proof of purchase</strong> with the date, for any warranty question.</li>
+            <li><strong>The exact error message</strong> and when it appears, written down.</li>
+            <li><strong>A short video</strong> of the symptom on your phone: the belt hesitating,
+            the console freezing, the noise. A video of the fault happening is worth more than
+            a description of it, and support can often diagnose from it directly.</li>
+            <li><strong>What you have already tried</strong>, so the call does not start from the
+            beginning.</li>
+            <li><strong>Your iFIT account email</strong> if the console is a touchscreen.</li>
+          </ul>
+          <p>
+            Out of warranty, support can still sell the correct part by model number, which is
+            worth it for anything model-specific such as a controller board, and can tell you
+            whether an authorised technician covers your area. For the repair-or-replace question
+            on an older machine, the cost of the part plus a technician visit against the value of
+            the treadmill is the deciding arithmetic, and our
+            <a href="/treadmill-repair-guide/" class="text-[#0F62FE] font-medium">treadmill repair guide</a>
+            works through it.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How do I reset a ProForm treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Remove the safety key, switch the machine off, unplug it at the wall and wait several minutes, then plug in, switch on, let the console boot fully and insert the key. Also check the reset breaker next to the power inlet has not tripped. Console factory resets use a pinhole button or a button sequence that differs by model, so confirm it in your manual.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Why will my ProForm treadmill not turn on?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Work from the wall inwards: test the outlet with a lamp, plug straight into the wall rather than an extension, check the power cord is fully in, check the power switch and the reset breaker beside it, confirm the safety key is in and seated, and reseat the console cable if the machine was recently moved or assembled. Then try a proper power cycle.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Why does my ProForm treadmill turn on but the belt will not move?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Check the safety key first. Then, with the machine unplugged, confirm the belt moves by hand and nothing is jammed. If the motor spins but the belt does not, the drive belt has slipped or broken. If the motor does not try to run at all with the console lit, the motor controller is not sending power, which is a support call or a technician job.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How do I recalibrate the incline on a ProForm treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Most ProForm consoles have a calibration routine that runs the incline to its full extent and back to zero to relearn the end points. It is entered by a button sequence at power-up on LCD consoles or from a settings menu on touchscreens, with nobody on the deck and nothing beneath it. The sequence differs by model, so confirm it in your manual before trying one.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Why is my ProForm iFIT screen frozen or stuck on update?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Do a full power cycle with the key out and the machine unplugged for several minutes, then wait for the complete boot. An update on a weak Wi-Fi connection can take a long time, so give it longer than feels reasonable before intervening. If it freezes repeatedly at the same point, try the console reset for your model or contact iFIT support, who can push the update.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is ProForm the same as NordicTrack?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                They are sister brands owned by the same parent company, iFIT Health and Fitness, and they share consoles, controllers, incline systems and the iFIT platform. ProForm is positioned as the more affordable range. Most troubleshooting and reset procedures carry across between the two, which is why NordicTrack guides are often useful to ProForm owners, though the exact button sequences still differ by model.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With ProForm Treadmill Troubleshooting</h2>
+          <p class="text-gray-700 leading-relaxed">Most ProForm faults are simple. These four are how owners make them take longer or cost more than they should.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Unplugging for ten seconds and calling it a reset</h3>
+              <p class="text-gray-700 text-sm m-0">The console and controller hold charge, and a brief unplug does not clear them. A proper power cycle is key out, power switch off, unplugged at the wall for several minutes, then power on and a full boot before the key goes back in. Most frozen screens and one-off error messages clear with this and not with a quick flick of the switch.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trying a reset or calibration sequence from another model</h3>
+              <p class="text-gray-700 text-sm m-0">Button sequences found online for a different ProForm or NordicTrack console may do nothing, or may enter an engineering mode and change settings you did not intend. Find the model number on the frame sticker, not the console name, and confirm the sequence in the manual or on the support site for that exact model before pressing anything.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Tightening the belt to cure a slip</h3>
+              <p class="text-gray-700 text-sm m-0">Slip on a ProForm is usually a dry deck. Tightening the belt until the slip stops presses it onto a deck that was already dragging, so the motor runs hotter and the rollers wear. Lubricate the deck as the manual specifies first, then adjust tension a quarter-turn at a time on both rear bolts, stopping as soon as the slip is gone.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Calling support without the model number or a video</h3>
+              <p class="text-gray-700 text-sm m-0">Several ProForm consoles share marketing names across years, so the name on the console is not enough. Have the model and serial number from the frame sticker, proof of purchase, the exact error message and a short phone video of the fault happening. A video lets support diagnose directly and saves a second call.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Fault Diagnosis Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/how-to-reset-nordictrack-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Sister Brand</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">How to Reset a NordicTrack Treadmill</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The same consoles and controllers, with the reset sequence explained.</p>
+            </a>
+            <a href="/treadmill-wont-turn-on/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Diagnosis</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Won't Turn On</p>
+              <p class="text-sm text-gray-500 leading-relaxed">From the outlet to the console cable, in order.</p>
+            </a>
+            <a href="/treadmill-incline-not-working/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Diagnosis</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Incline Not Working</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The incline motor, the position sensor and calibration.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">Key, breaker, proper power cycle, then the manual.</strong>
+            Most ProForm problems are a safety key not seated, a tripped reset breaker, a console
+            that needed a real unplug or an iFIT screen waiting on an update, and none of them need
+            a tool.
+          </p>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">For anything else, diagnose before you pay.</strong> A slipping
+            belt is a dry deck, a wrong incline is a calibration, and a lit console with a dead belt
+            is the drive belt or the controller. Confirm the procedure for your model number, have
+            the sticker and a video ready for support, and read our
+            <a href="/how-to-reset-nordictrack-treadmill/" class="text-[#5AA9FF] font-bold no-underline">NordicTrack reset guide</a>
+            for the shared console steps.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+</Layout>

@@ -317,6 +317,9 @@ export default {
             workouts, a podcast, or a printed interval plan cost little or nothing. Our
             <a href="/treadmill-workouts/" class="text-[#0F62FE] font-medium">treadmill workouts guide</a>
             has structured sessions that need nothing but manual mode.
+          </p>
+          <p>
+            If the real question is iFIT against the other large connected-fitness platform, our comparison of <a href="/ifit-vs-peloton/" class="text-[#0F62FE] font-medium">iFIT vs. Peloton</a> sets out hardware lock-in, training feel and what each is like without the subscription.
           </p>`,
     },
     {

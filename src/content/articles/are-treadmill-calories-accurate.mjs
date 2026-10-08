@@ -188,6 +188,9 @@ export default {
             roughly 35 calories per half-hour at 150 lb, or 45 at 200 lb. For speeds not listed,
             our <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">pace and speed chart</a>
             converts mph to minutes per mile.
+          </p>
+          <p>
+            Our <a href="/treadmill-calories-burned/" class="text-[#0F62FE] font-medium">treadmill calories burned</a> reference expands this into estimate tables by speed, incline and body weight, with the arithmetic shown.
           </p>`,
     },
     {

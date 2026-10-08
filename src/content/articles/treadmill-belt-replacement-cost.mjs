@@ -1,0 +1,566 @@
+export default {
+  slug: 'treadmill-belt-replacement-cost',
+  title: 'Treadmill Belt Replacement Cost (2026): Parts, Labour and Extras',
+  description:
+    'Treadmill belt replacement cost: generic versus OEM belt prices, technician labour, hidden extras, how to tell a belt is worn, and the repair-or-replace maths.',
+  crumbLabel: 'Treadmill Belt Replacement Cost',
+  breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
+  kicker: 'Maintenance',
+  updated: 'October 2026',
+  updatedLong: 'October 8, 2026',
+  published: '2026-10-08',
+  socialProof: '1.8k',
+  h1: ['Treadmill Belt Replacement Cost:', 'What You Will Actually Pay'],
+  standfirst:
+    'A new treadmill belt is not an expensive part, but the bill can grow quickly once labour, lubricant and a worn deck are added. Here are the typical ranges, how to tell whether the belt really needs replacing, and when the money is better spent on a different machine.',
+  ctas: [
+    { label: 'The Cost Breakdown', href: '#belt-cost' },
+    { label: 'Repair or Replace?', href: '#repair-or-replace' },
+  ],
+  tags: ['treadmill belt replacement cost', 'treadmill belt price', 'replace treadmill belt', 'treadmill repair cost', 'treadmill maintenance'],
+  stickyCta: { text: 'See the Cost Breakdown', link: '#belt-cost' },
+  lead: `Ask what it costs to replace a treadmill belt and you will get three very different
+          answers depending on who you ask: the price of a belt on a parts website, the price a
+          technician quotes for the whole job, and the price an owner remembers paying after the
+          deck turned out to be worn as well. All three are correct. This page separates them,
+          labels every figure as the typical range it is, and walks through the decision that
+          matters more than any of them — whether this machine is worth the money at all.`,
+  note: `<strong class="text-gray-900">Unplug before you touch anything.</strong> Every check on
+          this page that involves lifting the belt edge, feeling the deck or looking at the rollers
+          is done with the treadmill unplugged at the wall, not merely switched off. Stop using the
+          machine entirely for a burning smell, a breaker that trips on start-up, speed that surges
+          on its own, or a belt that does not stop when the safety key is pulled. Your manual is
+          the authority on your model; where it disagrees with the general guidance here, follow
+          the manual.`,
+  sections: [
+    {
+      id: 'short-answer',
+      heading: 'How Much Does It Cost to Replace a Treadmill Belt?',
+      html: `          <p>
+            For a typical home treadmill, <strong>the belt itself commonly costs somewhere in the
+            region of $60 to $150 for a generic replacement and $100 to $250 or more for the
+            manufacturer's own part</strong>, with larger belts for long-deck and commercial-style
+            machines sitting at the top of those ranges or above them. If you fit it yourself,
+            that is close to the whole bill, plus a bottle of lubricant.
+          </p>
+          <p>
+            If you pay a technician, owners commonly report a total in the region of $200 to $400
+            for a straightforward belt swap, made up of a call-out or diagnostic fee, an hour or
+            two of labour and the part. Where the deck is worn as well — which is common, because
+            the two wear together — a belt-and-deck job can run from roughly $300 to $600 or more,
+            and on a budget machine that figure can exceed what the treadmill is now worth.
+          </p>
+          <p>
+            Those are typical ranges, not quotes. Prices vary by belt size, by brand, by where you
+            live and by who you call. Before you spend anything, though, the first question is
+            whether the belt actually needs replacing. A belt that slips, hesitates or squeaks is
+            more often dry or loose than worn out, and the fixes for those are measured in minutes
+            and a few dollars rather than hundreds. The next section covers how to tell.
+          </p>`,
+    },
+    {
+      id: 'does-it-need-replacing',
+      heading: 'Does the Belt Actually Need Replacing?',
+      html: `          <p>
+            Most belts that get replaced on a hunch did not need to be. The symptoms that send
+            owners shopping for a belt — slipping, hesitation underfoot, a belt that drifts to one
+            side, noise — are shared with three cheaper problems: a dry deck, a loose belt and a
+            belt that is simply off-centre. Rule those out first.
+          </p>
+          <p>
+            <strong>Lubricate first.</strong> If the underside of the belt feels dry when you slide
+            a hand under the edge (machine unplugged), the deck needs lubricant. A dry deck makes
+            the belt drag, which makes it slip under load, which makes the motor labour. Our guide
+            to <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">treadmill belt lubrication</a>
+            covers the how and how much. If the symptoms clear after lubrication and a short run,
+            the belt was fine.
+          </p>
+          <p>
+            <strong>Then check tension and tracking.</strong> A belt that slips when you push off
+            but runs smoothly with nobody on it is usually loose, not worn. Tightening the rear
+            roller bolts a quarter-turn at a time, equally on both sides, is the standard
+            procedure, and our guide to
+            <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">a slipping treadmill belt</a>
+            walks through it. A belt that rubs one side rail needs centring, not replacing.
+          </p>
+          <p>
+            <strong>Signs the belt genuinely is worn.</strong> If lubrication and tension do not
+            help, or if you can see any of the following, the belt is at or near the end of its
+            life:
+          </p>
+          <ul>
+            <li><strong>Fraying or feathering at the edges</strong>, where the fabric backing shows
+            through or threads trail off the side.</li>
+            <li><strong>A glazed, shiny or smooth underside.</strong> A healthy belt has a slightly
+            textured fabric underside that holds lubricant. Once it has worn smooth, it cannot hold
+            lubricant and drags on the deck however much you apply.</li>
+            <li><strong>Curling or lifting edges</strong> that no longer lie flat on the deck.</li>
+            <li><strong>Seam separation.</strong> Most belts are joined with a diagonal seam; if it
+            is lifting, cracking or you can feel a bump every revolution, the belt is finished and
+            should not be run.</li>
+            <li><strong>Worn-through top surface</strong>, with the texture gone in the foot-strike
+            zone or the backing visible through it.</li>
+            <li><strong>Slipping that lubrication and correct tension do not fix</strong>, which
+            usually means the underside has glazed.</li>
+            <li><strong>Lubricant that vanishes almost immediately</strong>, which can mean the
+            belt is glazed or the deck surface is worn — see the extras section below.</li>
+          </ul>
+          <p>
+            A belt can look acceptable from above and be finished underneath, so check the
+            underside with a torch, not just the walking surface. Our guide to
+            <a href="/how-often-should-a-treadmill-belt-be-replaced/" class="text-[#0F62FE] font-medium">how often a treadmill belt should be replaced</a>
+            puts these symptoms in the context of mileage and age.
+          </p>`,
+    },
+    {
+      id: 'belt-cost',
+      heading: 'What the Belt Itself Costs',
+      html: `          <p>
+            The belt is a loop of two-ply or three-ply material — a textured PVC or rubber top
+            surface bonded to a fabric backing — sized to the specific rollers and deck of the
+            machine. The price depends on three things: its dimensions, its construction, and
+            whether it comes from the manufacturer or a third party.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Generic replacement belts</h3>
+          <p>
+            Third-party belt makers cut belts to order or stock common sizes, and list them by
+            dimensions and often by the models they fit. Typical pricing for a home-treadmill size
+            is in the region of $60 to $150. The good ones are perfectly serviceable and some
+            technicians fit nothing else. The risks are a belt cut fractionally the wrong length, a
+            thinner construction than the original, or a seam that does not last. Buy from a
+            supplier who lists the exact dimensions, states the ply, and accepts returns.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">OEM belts</h3>
+          <p>
+            A belt from the treadmill's manufacturer, ordered by model and serial number, is the
+            safe choice and usually the more expensive one — commonly $100 to $250, and more for
+            large or commercial-grade belts. You are paying for the guarantee that it is the right
+            length, width and thickness, and sometimes for a lower-friction underside that the
+            machine's controller was set up for. On machines still in warranty, an OEM belt is
+            also the one that keeps the cover intact.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Why dimensions and ply matter</h3>
+          <p>
+            Belt length is set by the distance between the front and rear rollers plus the
+            adjustment range of the rear roller. A belt an inch too long cannot be tensioned; an
+            inch too short will not go on. Width is set by the deck. Thickness matters because the
+            controller and motor were sized for a belt of a particular weight and stiffness, and
+            because a thicker belt changes the gap under the motor hood and at the side rails.
+          </p>
+          <p>
+            Ply is the number of bonded layers. Two-ply belts are the norm on home machines; some
+            heavier-duty and commercial decks use three-ply or specialist low-friction belts. A
+            thicker belt is not automatically better — on a home motor it can mean more drag and
+            more heat — so match what the machine came with unless the manufacturer specifies
+            otherwise. Our
+            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">treadmill belt size guide</a>
+            goes into dimensions in detail.
+          </p>
+          <p>
+            One thing not to do is shop by price alone across different sizes. A cheap belt listed
+            for a small folding treadmill will not fit a long-deck runner's machine, and a cheap
+            belt of the right length but the wrong width will rub the side rails until it shreds.
+          </p>`,
+    },
+    {
+      id: 'labour-cost',
+      heading: 'What a Technician Charges',
+      html: `          <p>
+            If you do not want to do the job yourself, the labour side of the bill has two or three
+            parts, and it helps to ask for them separately when getting a quote.
+          </p>
+          <ul>
+            <li><strong>A call-out or diagnostic fee.</strong> Most independent fitness-equipment
+            technicians charge a flat fee to come to the house and look at the machine, commonly
+            in the region of $75 to $150. Some waive it or fold it into the job if you go ahead
+            with the repair; some do not. Ask.</li>
+            <li><strong>Labour for the swap.</strong> A belt replacement on a home treadmill is
+            typically an hour to two hours for someone who does it regularly — longer if the
+            machine has to be partly dismantled to get the belt over the deck, or if the deck is
+            being replaced or flipped at the same time. Hourly rates vary widely by area.</li>
+            <li><strong>Parts mark-up.</strong> A technician who supplies the belt will usually
+            charge more for it than you would pay ordering it yourself, in exchange for guaranteeing
+            it fits and taking the hassle of returns.</li>
+          </ul>
+          <p>
+            Put together, owners commonly report belt-only jobs in the region of $200 to $400
+            all-in, and belt-and-deck jobs from around $300 to $600 or more. Manufacturer-authorised
+            service, where it exists in your area, often costs more than an independent but can
+            be the only route that preserves a warranty.
+          </p>
+          <p>
+            Two questions worth asking before you book: whether the quote includes lubricating and
+            tracking the new belt (it should), and whether the technician will inspect the deck,
+            rollers and drive belt while the machine is open. The hour the machine is apart is the
+            cheapest time to find the next problem. If your machine is still under a parts or
+            labour warranty, start with the manufacturer rather than an independent, because a
+            worn belt within the warranty period is sometimes covered and sometimes a symptom of a
+            defect that is. Our
+            <a href="/treadmill-repair-guide/" class="text-[#0F62FE] font-medium">treadmill repair guide</a>
+            covers how to find and brief a technician.
+          </p>`,
+    },
+    {
+      id: 'hidden-extras',
+      heading: 'The Hidden Extras That Inflate the Bill',
+      html: `          <p>
+            The belt is rarely the only thing that needs attention when it is replaced, because
+            whatever wore the belt out has been working on the rest of the machine too. These are
+            the items that turn a $100 part into a $400 job.
+          </p>
+          <p>
+            <strong>Lubricant.</strong> A new belt goes onto a cleaned, freshly lubricated deck,
+            without exception. Silicone treadmill lubricant is inexpensive — a bottle is usually
+            well under $20 and lasts several applications — but it is a line on the bill and a
+            thing to have in the house before the belt arrives. Our guide to the
+            <a href="/best-treadmill-lubricant/" class="text-[#0F62FE] font-medium">best treadmill lubricant</a>
+            covers what to buy and what to avoid.
+          </p>
+          <p>
+            <strong>A worn deck.</strong> This is the big one. The deck is the board the belt runs
+            over, and its low-friction surface wears at the same time as the belt, usually in the
+            same foot-strike zone. Fit a new belt to a worn deck and the new belt drags, heats,
+            slips and glazes, and you are back where you started within months. Many decks can be
+            flipped once to present a fresh surface, which costs labour but not a part; a deck that
+            has already been flipped, or is grooved, soft or delaminated, needs replacing, which
+            typically adds a part costing somewhere in the region of $100 to $300 or more. Our
+            guide to <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium">treadmill deck replacement</a>
+            covers how to tell, and what a flip involves.
+          </p>
+          <p>
+            <strong>Rollers.</strong> The front and rear rollers carry the belt, and a bearing that
+            has started to grumble or a roller whose rubber or crowned surface has worn can cause
+            the new belt to track badly or wear fast. Rollers are not usually expensive parts on
+            home machines, but they add labour, and a seized bearing is a reason to look at the
+            whole machine's value before proceeding.
+          </p>
+          <p>
+            <strong>The drive belt.</strong> Not the walking belt but the short ribbed belt between
+            the motor and the front roller. If it is cracked, glazed or has stretched, it is a
+            modest part that is sensible to replace while the motor hood is off. Our guide to the
+            <a href="/treadmill-drive-belt/" class="text-[#0F62FE] font-medium">treadmill drive belt</a>
+            explains the symptoms.
+          </p>
+          <p>
+            <strong>A second visit.</strong> If a technician diagnoses on one visit and returns
+            with parts on another, you may be charged for both. Ask up front whether the belt can
+            be ordered from the model number before the first visit, so the job is done in one.
+          </p>
+          <p>
+            The honest way to think about all of this is that a belt replacement is a service, not
+            a part swap. Our guide to <a href="/treadmill-maintenance-cost/" class="text-[#0F62FE] font-medium">treadmill maintenance cost</a>
+            puts it against the other costs of ownership over a machine's life.
+          </p>`,
+    },
+    {
+      id: 'cost-table',
+      heading: 'Typical Costs at a Glance',
+      html: `          <p>
+            Everything below is a typical range gathered from what owners and technicians commonly
+            report, not a price list. Large belts, commercial machines, urban call-out rates and
+            authorised service can all land above these figures.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Item</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Typical range</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Generic belt</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$60 to $150</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Order by exact dimensions and ply</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">OEM belt</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$100 to $250 or more</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Order by model and serial number</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Silicone lubricant</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Under $20</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Always applied with a new belt</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Call-out or diagnostic</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$75 to $150</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sometimes credited against the job</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Belt swap, technician, all-in</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$200 to $400</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Includes part, labour, lubrication and tracking</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Replacement deck, part only</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$100 to $300 or more</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A flip costs labour but no part</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Belt and deck, technician, all-in</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$300 to $600 or more</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Often exceeds a budget machine's value</td>
+              </tr>
+            </tbody>
+          </table></div>
+          <p>
+            The gap between the DIY row and the technician row is the price of your own afternoon
+            and the risk of getting it wrong. For many owners that trade is worth making; for
+            others, particularly with a heavy non-folding machine, it is not. The section on DIY
+            versus professional below is meant to help you decide honestly.
+          </p>`,
+    },
+    {
+      id: 'measuring',
+      heading: 'Measuring Your Belt and Ordering the Right One',
+      html: `          <p>
+            Ordering the wrong belt is the most common way a cheap DIY job becomes an expensive
+            one, because a belt is not always returnable once it has been fitted and run. There are
+            three ways to get the size, in order of reliability.
+          </p>
+          <p>
+            <strong>Use the model and serial number.</strong> The sticker is usually on the frame
+            near the front, by the power inlet or under the motor hood. Manufacturers and the
+            better parts suppliers list belts by model, and some models changed belt size between
+            production years, which is why the serial matters too. This is the route that produces
+            the fewest mistakes.
+          </p>
+          <p>
+            <strong>Read the old belt.</strong> Some belts have the dimensions or a part number
+            printed on the underside near the seam. Worth a look with a torch before measuring
+            anything.
+          </p>
+          <p>
+            <strong>Measure it.</strong> If neither of those works, measure the belt itself with
+            the machine unplugged. Width is straightforward: measure across the belt, edge to edge.
+            Length is the full loop. The usual method is to mark a spot on the belt with chalk or
+            tape, lay a flexible tape measure along the top surface from the mark to the rear
+            roller, around and underneath as far as you can, and continue in stages, rolling the
+            belt by hand, until you return to the mark. Measure twice; a belt stretched slightly
+            by years of tension can measure a little longer than its original specification, which
+            is a reason to prefer the model-number route when the two disagree.
+          </p>
+          <p>
+            Also note the thickness of the old belt, and whether the underside is a plain fabric or
+            a specialist low-friction coating, so that the replacement matches. Our
+            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
+            has the detail, including what to do when the measured length falls between two
+            listed sizes.
+          </p>
+          <p>
+            When the belt arrives, check it against the old one before you remove anything:
+            same width, same length within a small margin, same approximate thickness, and a seam
+            that lies flat. A belt that fails any of those is easier to return in its box than
+            after an afternoon of fitting.
+          </p>`,
+    },
+    {
+      id: 'diy-vs-pro',
+      heading: 'DIY or Professional? An Honest Comparison',
+      html: `          <p>
+            Replacing a treadmill belt is within reach of a reasonably handy owner with basic
+            tools, a free afternoon and patience for the re-tensioning and tracking that follows.
+            It is not a trivial job, and it is harder on some machines than others.
+          </p>
+          <p>
+            <strong>What the job involves, in outline.</strong> Unplug the machine, remove the
+            motor hood, loosen the rear roller fully, slacken or remove the front roller, remove
+            the side rails and foot rails, lift the belt and deck free, slide the old belt off,
+            clean and lubricate the deck, slide the new belt on (seam direction matters on many
+            belts — check the manual or the supplier's note), reassemble, tension, then centre the
+            belt by running it slowly and adjusting the rear roller bolts a quarter-turn at a time.
+            Our step-by-step guide to
+            <a href="/how-to-replace-treadmill-belt/" class="text-[#0F62FE] font-medium">how to replace a treadmill belt</a>
+            covers each stage with the common snags.
+          </p>
+          <p>
+            <strong>Where DIY makes sense.</strong> A folding home treadmill of modest weight, a
+            manual that documents the belt procedure, an owner comfortable with hex keys and
+            screwdrivers, and a willingness to spend the first few runs fine-tuning tracking. The
+            saving is typically the whole labour portion — in the region of $150 to $300 against
+            a technician's all-in price.
+          </p>
+          <p>
+            <strong>Where a professional is the better call.</strong> Heavy non-folding machines,
+            commercial-style decks that need two people to lift, machines still under a labour
+            warranty, and any case where the deck also needs replacing or flipping, which roughly
+            doubles the dismantling. Also worth considering if the symptoms are ambiguous — a
+            technician who diagnoses a bad bearing or a weak motor before you buy a belt has saved
+            you the belt.
+          </p>
+          <p>
+            <strong>The common DIY failures</strong> are over-tightening the new belt, which loads
+            the motor and bearings and shortens everything's life; fitting the belt with the seam
+            running the wrong way; forgetting to lubricate; and giving up on tracking after two
+            adjustments. None of these is a reason not to try, but all are reasons to read the
+            procedure through before starting. Our guide to
+            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">how tight a treadmill belt should be</a>
+            covers the lift test that stops the first one.
+          </p>`,
+    },
+    {
+      id: 'repair-or-replace',
+      heading: 'The Repair-or-Replace Maths',
+      html: `          <p>
+            This is the question that matters more than any price on this page. A belt replacement
+            is worth doing when the machine underneath is sound and has useful life left. It is
+            money wasted when the belt is the first of several things about to fail.
+          </p>
+          <p>
+            <strong>A rough rule.</strong> If the total repair — belt, deck if needed, labour —
+            comes to more than about half of what a comparable new machine would cost, or more than
+            the machine would fetch second-hand in working order, stop and think. That is a
+            judgement, not a formula, but it is where most technicians draw the line.
+          </p>
+          <p>
+            <strong>Age and mileage.</strong> A home treadmill that is a few years old, lightly
+            used and otherwise quiet is an easy case: fit the belt. One that is approaching ten
+            years, has had heavy use and is starting to show its age in other ways — a motor that
+            runs hot, a console that is slow, an incline that groans — is a harder one, because a
+            new belt does nothing for any of those. Our guide to
+            <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">how long treadmills last</a>
+            gives a sense of where a machine sits in its life.
+          </p>
+          <p>
+            <strong>The price tier.</strong> On a budget treadmill, a technician's belt-and-deck
+            job can cost most of what the machine cost new, which is an obvious no — though a DIY
+            belt on the same machine, at the cost of the part and an afternoon, is often a
+            reasonable yes. On a mid-range or premium machine with a strong frame and motor, a belt
+            and deck every several years is simply the cost of ownership, and far cheaper than
+            replacing the machine.
+          </p>
+          <p>
+            <strong>What else is wrong.</strong> Before committing, list every symptom, not just
+            the belt. A machine that also needs a drive belt, a roller bearing and a motor brush
+            set is telling you something. If the frame is sound and the motor is healthy, those
+            are modest; if the motor is tired, they are a reason to put the money towards a new
+            machine instead.
+          </p>
+          <p>
+            <strong>Warranty.</strong> Check it before you pay anyone. Belts and decks are wear
+            items and are often excluded or given a short cover period, but frames and motors
+            usually carry longer cover, and a worn belt on a young machine can be the result of a
+            tracking or alignment defect that is covered. Our
+            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
+            explains what the typical tiers cover.
+          </p>`,
+    },
+    {
+      id: 'making-it-last',
+      heading: 'Making the Next Belt Last Longer',
+      html: `          <p>
+            The cheapest belt replacement is the one you postpone by years. Most premature belt
+            wear on home treadmills comes down to a short list of avoidable causes.
+          </p>
+          <ul>
+            <li><strong>Lubricate on schedule.</strong> A dry deck is the single biggest cause of
+            glazed belts and worn decks. Follow the manual's interval, check the underside of the
+            belt by hand between times, and use silicone lubricant made for treadmills — not
+            household oils or sprays. Our guide to
+            <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium">how often to lubricate a treadmill</a>
+            sets out a sensible schedule.</li>
+            <li><strong>Keep tension correct, not tight.</strong> An over-tightened belt wears
+            itself, the deck, the rollers and the motor. Tension only enough to stop slipping under
+            load.</li>
+            <li><strong>Keep it centred.</strong> A belt that runs against a side rail frays that
+            edge quickly. Check tracking every few weeks and correct it early.</li>
+            <li><strong>Keep grit out.</strong> Dust and carpet fibre under the belt act as an
+            abrasive. Vacuum around and under the machine regularly, and clean under the belt
+            occasionally. Our guide to
+            <a href="/how-to-clean-under-treadmill-belt/" class="text-[#0F62FE] font-medium">cleaning under a treadmill belt</a>
+            covers it.</li>
+            <li><strong>Use a mat.</strong> On carpet especially, a mat keeps fibres and dust away
+            from the belt and the motor compartment.</li>
+            <li><strong>Respect the machine's limits.</strong> Heavy runners on a light-duty belt
+            and deck wear both quickly. If that is the mismatch, the long-term answer is a machine
+            built for it rather than a cycle of belts.</li>
+          </ul>
+          <p>
+            Belts do wear out eventually, and a machine that has run many thousands of miles has
+            earned its replacement. The aim is for that to be a planned expense rather than a
+            surprise.
+          </p>`,
+    },
+  ],
+  faqs: [
+    {
+      q: 'How much does a treadmill belt cost?',
+      a: `A generic replacement belt for a typical home treadmill commonly costs somewhere in the region of $60 to $150, and a manufacturer's own belt ordered by model number is often $100 to $250 or more. Larger belts for long-deck or commercial-style machines sit at the top of those ranges or above. Add a bottle of silicone lubricant, which is inexpensive.`,
+    },
+    {
+      q: 'How much does it cost to have a treadmill belt replaced professionally?',
+      a: `Owners commonly report an all-in total in the region of $200 to $400 for a straightforward belt replacement by an independent technician, covering a call-out fee, an hour or two of labour and the part. If the deck also needs replacing, the job often runs from roughly $300 to $600 or more. Rates vary by area and by brand.`,
+    },
+    {
+      q: 'How do I know if my treadmill belt needs replacing or just lubricating?',
+      a: `Lubricate and check tension first, because slipping and hesitation are more often caused by a dry deck or a loose belt. The belt genuinely needs replacing if the edges are fraying, the underside has worn smooth and shiny, the edges curl, the seam is separating, or slipping continues after lubrication and correct tension.`,
+    },
+    {
+      q: 'Is it worth replacing a treadmill belt?',
+      a: `Usually yes on a mid-range or premium machine with a sound frame and healthy motor, where a belt every several years is simply part of ownership. It is harder to justify on an old or budget machine when a technician's belt-and-deck job approaches half the cost of a comparable new treadmill, especially if other parts are also showing their age.`,
+    },
+    {
+      q: 'Can I replace a treadmill belt myself?',
+      a: `Yes, if you are comfortable with basic tools and have an afternoon. The job involves removing the motor hood and side rails, loosening both rollers, swapping the belt, cleaning and lubricating the deck, then re-tensioning and centring. Heavy non-folding machines, deck replacements and machines under a labour warranty are better left to a technician.`,
+    },
+    {
+      q: 'How do I measure a treadmill belt for replacement?',
+      a: `Order by model and serial number where possible, since that avoids measuring errors. Otherwise, with the machine unplugged, measure the width edge to edge, then mark the belt and measure the full loop in stages with a flexible tape, rolling the belt by hand. Note the thickness and underside material so the replacement matches.`,
+    },
+  ],
+  mistakesHeading: 'Common Mistakes With Treadmill Belt Replacement',
+  mistakesIntro:
+    'Most of the money wasted on treadmill belts goes on one of these four, and two of them happen before a belt is even ordered.',
+  mistakes: [
+    {
+      title: 'Replacing a belt that only needed lubricant',
+      body: `Slipping, hesitation and a laboured motor are more often a dry deck or a loose belt than a worn one. Lubricate, run it for a few minutes, then check tension before spending anything. Only fraying, a glazed underside, curling edges or a separating seam confirm the belt itself is finished.`,
+    },
+    {
+      title: 'Fitting a new belt on a worn deck',
+      body: `The deck wears with the belt, and a fresh belt on a worn surface drags, heats and glazes within months. Inspect the deck while the belt is off: feel for grooves, dips and soft spots in the foot-strike zone. Flip it if the design allows, or budget for a replacement at the same time.`,
+    },
+    {
+      title: 'Ordering by price instead of dimensions',
+      body: `A belt an inch too long cannot be tensioned and one too wide shreds against the side rails. Order by model and serial number, or measure width and full loop length carefully, and match the thickness and ply. Buy from a supplier who accepts returns and check the new belt against the old one before fitting.`,
+    },
+    {
+      title: 'Over-tightening the new belt',
+      body: `A tight belt stops slipping and quietly wears the belt, deck, roller bearings and motor. Tension only enough to stop slip under a hard push-off, using the lift test in your manual, then centre the belt a quarter-turn at a time. If it still slips at correct tension, look for a drive-belt or lubrication problem instead.`,
+    },
+  ],
+  relatedHeading: 'Related Maintenance Guides',
+  related: [
+    {
+      kicker: 'How-To',
+      title: 'How to Replace a Treadmill Belt',
+      blurb: 'The full procedure, stage by stage, with the common snags.',
+      url: '/how-to-replace-treadmill-belt/',
+    },
+    {
+      kicker: 'Sizing',
+      title: 'Treadmill Belt Size Guide',
+      blurb: 'Measuring length, width and thickness so the new belt fits.',
+      url: '/treadmill-belt-size-guide/',
+    },
+    {
+      kicker: 'Costs',
+      title: 'Treadmill Maintenance Cost',
+      blurb: 'What a treadmill costs to keep running over its life.',
+      url: '/treadmill-maintenance-cost/',
+    },
+  ],
+  bottomLine: [
+    `<strong class="text-white">Expect a belt to cost in the region of $60 to $250 as a part, and
+            $200 to $400 fitted by a technician</strong> — more if the deck is worn too, which it
+            often is. Rule out a dry deck and a loose belt before you spend any of it.`,
+    `<strong class="text-white">Fit the belt on a sound machine; put the money elsewhere on a
+            tired one.</strong> If the repair approaches half the price of a comparable new
+            treadmill, check what else is wearing first. If you decide to do the job yourself, our
+            <a href="/how-to-replace-treadmill-belt/" class="text-[#5AA9FF] font-bold no-underline">step-by-step belt replacement guide</a>
+            takes you through it.`,
+  ],
+};

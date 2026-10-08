@@ -141,6 +141,9 @@ export default {
           <p>
             <strong>Service call-out: $80-$150</strong> before any parts or labour, and many
             engineers charge it whether or not you proceed.
+          </p>
+          <p>
+            For the fuller decision — which faults are safe to attempt yourself, what a technician call-out typically costs and when a repair is no longer worth it against the machine's value — our <a href="/treadmill-repair-guide/" class="text-[#0F62FE] font-medium">treadmill repair guide</a> works through it component by component.
           </p>`,
     },
     {

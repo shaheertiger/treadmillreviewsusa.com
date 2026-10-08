@@ -1,0 +1,530 @@
+export default {
+  slug: 'treadmill-calibration',
+  title: 'Treadmill Calibration (2026): Speed, Incline, Distance and Your Watch',
+  description:
+    'How to calibrate a treadmill and your watch: check belt speed with a mark and stopwatch, fix incline, use service modes safely, calibrate a Garmin or foot pod.',
+  crumbLabel: 'Treadmill Calibration',
+  breadcrumb: { name: 'Buying Guides', url: '/guides/' },
+  kicker: 'Spec Explainer',
+  updated: 'October 2026',
+  updatedLong: 'October 8, 2026',
+  published: '2026-10-08',
+  socialProof: '1.9k',
+  h1: ['Treadmill Calibration:', 'The Machine, the Watch and Which to Trust'],
+  standfirst:
+    '"Calibrate my treadmill" means two different jobs: making the machine report its true speed and incline, and teaching your watch or foot pod what the treadmill is actually doing. Here is how each works, how to check with nothing more than tape and a stopwatch, and when an error is a fault rather than a setting.',
+  ctas: [
+    { label: 'Check Belt Speed Yourself', href: '#manual-speed-check' },
+    { label: 'Calibrating a Watch or Foot Pod', href: '#watch-calibration' },
+  ],
+  tags: ['treadmill calibration', 'calibrate treadmill speed', 'garmin treadmill calibration', 'treadmill distance accuracy', 'treadmill incline calibration'],
+  stickyCta: { text: 'Do the Speed Check', link: '#manual-speed-check' },
+  lead: `A treadmill console is a confident reporter of numbers it does not directly measure.
+          Speed is usually inferred from the motor or a roller sensor, distance is derived from
+          speed, and incline is a count of motor steps. Each can drift. Meanwhile the watch on your
+          wrist is making its own estimate from arm swing and guessing too. When the two disagree,
+          calibration is the process of working out which is closer to the truth and correcting the
+          other — and it is far less mysterious than the word suggests.`,
+  sections: [
+    {
+      id: 'short-answer',
+      heading: 'Treadmill Calibration: The Short Answer',
+      html: `          <p>
+            <strong>Calibrating a treadmill</strong> means one of two things, and it is worth
+            deciding which you need before you start pressing buttons.
+          </p>
+          <p>
+            <strong>Calibrating the machine itself</strong> is about making the displayed speed and
+            incline match what the belt and deck are actually doing. Many consoles have a
+            calibration or service mode that sets the speed range and runs the incline motor
+            through its full travel to re-learn the end points. The manual-only method, which works
+            on every treadmill, is to mark the belt, measure its length, time a number of
+            revolutions at a set speed and do the arithmetic: belt length multiplied by revolutions,
+            divided by time, gives the true belt speed.
+          </p>
+          <p>
+            <strong>Calibrating a device to the treadmill</strong> is about your watch or foot pod.
+            Wrist and shoe sensors estimate running speed from movement, and they can be corrected
+            against a known distance. The common flow on running watches is to run a set distance,
+            then correct the recorded figure at the end to match the treadmill; some watches and
+            foot pods learn from outdoor GPS runs instead. The catch is that both methods treat the
+            treadmill as the reference, so verify the treadmill first.
+          </p>
+          <p>
+            What to expect: a well-maintained treadmill typically holds speed within a small margin
+            of what it displays at walking pace, with the error growing at higher speeds and under
+            heavier riders. A console that reads a long way off, or an error that gets worse week
+            by week, is a maintenance problem or a fault, not a calibration one. Our guide to
+            <a href="/is-my-treadmill-speed-accurate/" class="text-[#0F62FE] font-medium">whether your treadmill speed is accurate</a>
+            covers why consoles drift; this page covers what to do about it.
+          </p>`,
+    },
+    {
+      id: 'why-accuracy-drifts',
+      heading: 'Why Treadmill Speed and Distance Drift in the First Place',
+      html: `          <p>
+            Understanding what the console actually measures explains most calibration puzzles.
+          </p>
+          <p>
+            <strong>Speed is usually not measured at the belt.</strong> On most home treadmills,
+            the controller either infers speed from the voltage it is sending to the motor, or
+            reads a sensor — often a magnet and reed switch, or an optical sensor — on the front
+            roller or motor. Either way, the number assumes the belt is moving with the roller. If
+            the belt slips on the roller, the display stays confident while your feet go slower.
+            Our guide to the
+            <a href="/treadmill-speed-sensor/" class="text-[#0F62FE] font-medium">treadmill speed sensor</a>
+            explains how that sensor works and how it fails.
+          </p>
+          <p>
+            <strong>Distance is just speed multiplied by time.</strong> There is no separate
+            measurement. Every speed error becomes a distance error of the same proportion, which is
+            why a treadmill that reads a little fast makes every mile a little short. Our guide to
+            <a href="/how-long-is-a-mile-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long a treadmill mile really is</a>
+            works through that relationship.
+          </p>
+          <p>
+            <strong>The belt slows under load.</strong> A belt turning freely with nobody on it may
+            match the display closely. Put a person on it and each footstrike presses the belt
+            into the deck, adding friction that the motor has to overcome. A well-lubricated deck
+            and a healthy motor recover almost instantly; a dry deck, a tired motor or a weak
+            controller let the belt sag with every step. The heavier the runner and the faster the
+            pace, the larger this effect.
+          </p>
+          <p>
+            <strong>Belt stretch and roller wear.</strong> Belts lengthen slightly over their life,
+            and rollers wear a little smaller. A belt that was tensioned correctly a year ago may
+            now be loose enough to slip under acceleration. Rollers that have worn change the
+            relationship between roller revolutions and belt distance, which shifts a roller-based
+            speed reading. These are slow, cumulative drifts, which is why a treadmill that was
+            accurate when new may not be now.
+          </p>
+          <p>
+            <strong>Incline is a count, not a measurement.</strong> The incline motor on most home
+            machines is a linear actuator with a position sensor, and the console tracks grade as a
+            position between learned limits. If the limits are forgotten after a power loss or a
+            board replacement, or the actuator skips, the displayed grade and the real grade part
+            company. Our guide to
+            <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#0F62FE] font-medium">incline percent versus degrees</a>
+            covers what the number means in the first place.
+          </p>`,
+    },
+    {
+      id: 'manual-speed-check',
+      heading: 'How to Check Belt Speed Yourself: The Mark-and-Time Method',
+      html: `          <p>
+            This is the one calibration check that works on every treadmill ever built, needs no
+            service mode, and tells you the truth rather than what the controller believes. It
+            takes ten minutes.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Step 1: Measure the belt length</h3>
+          <p>
+            With the treadmill unplugged, put a small piece of masking tape or a chalk mark on the
+            edge of the belt. Mark the deck beside it. Rotate the belt by hand, measuring with a
+            tape measure along the surface as it goes, until the mark comes back round to the deck
+            mark. That is the full belt circumference. On most home treadmills it is somewhere in
+            the region of 100 to 130 inches, but measure yours; the manual sometimes states it, and
+            our
+            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">treadmill belt size guide</a>
+            explains how belt dimensions are quoted. Convert to feet or metres, whichever you prefer
+            to work in.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Step 2: Time revolutions at a set speed</h3>
+          <p>
+            Plug the machine in, set a speed you care about — a walking speed first, then a running
+            one — and let it settle. Ideally, have a second person stand at the side with a
+            stopwatch while you walk or run on the belt, so the measurement is under load. Start
+            timing as the mark passes a fixed point and count revolutions; ten is a comfortable
+            number. Stop the watch as the mark passes the same point on the tenth pass.
+          </p>
+          <p>
+            If you are on your own, the unloaded measurement is still useful, but note that it will
+            flatter the machine, because the belt runs faster with nobody on it.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Step 3: The arithmetic</h3>
+          <p>
+            True speed equals belt length multiplied by revolutions, divided by time.
+          </p>
+          <ul>
+            <li><strong>Worked example in miles per hour.</strong> Belt length 120 inches, which is
+            10 feet. Ten revolutions is 100 feet. If those ten revolutions took 11.4 seconds, the
+            belt is moving at 100 divided by 11.4, which is about 8.77 feet per second. Multiply by
+            3,600 for feet per hour (about 31,580) and divide by 5,280 for miles per hour: roughly
+            5.98 mph. If the console said 6.0, that is excellent agreement.</li>
+            <li><strong>The same in kilometres per hour.</strong> A 3.05 metre belt times ten
+            revolutions is 30.5 metres. In 11.4 seconds that is about 2.68 metres per second;
+            multiply by 3.6 to get roughly 9.6 km/h.</li>
+          </ul>
+          <p>
+            Repeat at two or three speeds. A small, consistent error — the belt reads 2 or 3 percent
+            slow at every speed, say — is normal drift. An error that grows sharply with speed or
+            with a heavier person on the belt points to slip or a motor that cannot hold load, which
+            is a maintenance issue rather than a calibration one, covered below.
+          </p>
+          <p>
+            Once you have the true speed, you can simply know it and use the
+            <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">pace and speed chart</a>
+            with corrected figures, adjust the console in its calibration mode if it has one, or
+            calibrate your watch or pod to the measured figure rather than the displayed one.
+          </p>`,
+    },
+    {
+      id: 'service-mode',
+      heading: 'Console Calibration and Service Modes',
+      html: `          <p>
+            Many treadmill consoles have a hidden calibration or engineering mode, reached with a
+            key sequence at power-up or by holding a combination of buttons. What it does varies
+            widely, and this is one of the few places where we will insist that the manual, or the
+            manufacturer's service documentation for your model, is the only authority. Key
+            sequences are model-specific and we will not guess at them.
+          </p>
+          <p>
+            Broadly, these modes can offer some of the following:
+          </p>
+          <ul>
+            <li><strong>Speed calibration.</strong> The machine runs the belt at its minimum and
+            maximum speeds and the controller learns, or you set, the motor output corresponding
+            to each. On some designs this is automatic; on others you adjust a value until a
+            measured belt speed matches the display, which is exactly where the mark-and-time
+            method comes in.</li>
+            <li><strong>Incline calibration.</strong> The deck is driven to its lowest and highest
+            positions so the console re-learns the end stops. This is the usual fix after a
+            power-cut mid-incline, a new console or a replaced incline motor, and it is often the
+            answer to a grade display that no longer matches the deck.</li>
+            <li><strong>Unit and wheel-size settings.</strong> Miles or kilometres, and on some
+            machines a roller diameter or pulses-per-revolution figure that the speed calculation
+            depends on. A wrong value here makes every reading wrong in proportion.</li>
+            <li><strong>Diagnostics.</strong> Sensor readings, error logs and motor current, useful
+            to a technician and occasionally to an owner trying to describe a fault to support.</li>
+          </ul>
+          <p>
+            <strong>A clear warning.</strong> Some service modes expose motor controller parameters
+            — maximum motor voltage, acceleration rates, current limits — that have nothing to do
+            with calibration and that can make a machine unsafe if changed. A treadmill whose top
+            speed has been raised beyond its design, or whose acceleration ramp has been shortened,
+            can surge, overheat or throw a user. If you are in a menu and do not know what a
+            setting does, back out without changing it. If the machine behaves differently after a
+            visit to service mode — speed that jumps, a belt that does not stop promptly when the
+            safety key is pulled, a burning smell — stop using it, unplug it and contact the
+            manufacturer.
+          </p>
+          <p>
+            Calibration modes are also not a cure for mechanical problems. If the belt is slipping
+            on the roller, teaching the console a new speed value just moves the error around. Fix
+            the belt first.
+          </p>`,
+    },
+    {
+      id: 'incline-calibration',
+      heading: 'Incline Calibration: Checking and Correcting Grade',
+      html: `          <p>
+            Incline errors are more common than people realise, because nobody checks. The console
+            says 5 percent, the deck is at whatever angle it is at, and the two are only loosely
+            acquainted after a few years and a couple of power cuts.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Checking grade yourself</h3>
+          <p>
+            Grade in percent is rise divided by run, times 100. With the deck at a set incline,
+            measure the height of the deck surface at two points a known distance apart along the
+            running surface, for example at the front and rear of the belt. Divide the difference in
+            height by the horizontal distance between the points, and multiply by 100. A deck that
+            is 3 inches higher at a point 60 inches further forward is at 5 percent. A long
+            spirit level and a ruler do the same job: level the ruler, measure the gap.
+          </p>
+          <p>
+            Check first at zero incline. Many home treadmills sit with a slight built-in grade even
+            at their lowest setting, which is a design choice rather than a fault, but it is worth
+            knowing. Then check at a middle setting and at the top. A console that reads correctly
+            at zero and increasingly wrong higher up usually has a learned-limits problem; one that
+            is offset by the same amount everywhere may just have a floor that is not level under
+            the treadmill.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Correcting it</h3>
+          <p>
+            On most machines the fix is the incline calibration routine in the service mode, which
+            runs the deck through its travel and re-learns the end points. If there is no such
+            routine, some manuals describe a power-cycle procedure that forces the incline motor to
+            re-home at start-up. If the deck does not move at all, or moves and stalls, that is a
+            fault rather than calibration, and our guide to a
+            <a href="/treadmill-incline-not-working/" class="text-[#0F62FE] font-medium">treadmill incline that is not working</a>
+            is the next stop.
+          </p>
+          <p>
+            Keep perspective. For training purposes, a grade error of a fraction of a percent is
+            irrelevant; the effort of a hill session does not depend on the number being exact.
+            It matters more for anyone using a treadmill grade to simulate a specific course, or
+            comparing their treadmill to an outdoor hill, where a 2 percent discrepancy is a
+            different workout.
+          </p>`,
+    },
+    {
+      id: 'watch-calibration',
+      heading: 'Calibrating a Watch or Foot Pod to the Treadmill',
+      html: `          <p>
+            The second thing people mean by treadmill calibration is the other way round: the
+            treadmill is the reference, and the device on the wrist or shoe is what gets corrected.
+            This works, provided the treadmill is accurate — which is why the mark-and-time check
+            belongs first.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Running watches: the correct-at-the-end flow</h3>
+          <p>
+            A watch in treadmill or indoor-run mode has no GPS to lean on, so it estimates speed
+            from the motion of your arm and whatever it has learned about your stride. The common
+            calibration flow on several brands of running watch, in general terms, is this: run the
+            treadmill session, and when you stop, the watch asks whether you want to calibrate and
+            save. You enter the distance the treadmill showed, the watch adjusts its recorded
+            distance to match and updates its internal model so that future indoor runs are closer.
+            Several sessions at different paces improve the model; one calibration at an easy jog
+            will not fix a tempo run. The exact menu names and the number of runs the watch wants
+            vary by brand and software version, so follow the device's own instructions.
+          </p>
+          <p>
+            Two things to know. First, you are teaching the watch to agree with the treadmill, so if
+            the treadmill reads 3 percent fast, you have just taught the watch to read 3 percent
+            fast too. Enter the <em>measured</em> distance if you have one. Second, arm swing is a
+            poor proxy for leg speed. Holding the handrails, carrying a bottle or watching a screen
+            with your arm still will all produce an underestimate, calibration or not.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Apple Watch: calibration by outdoor runs</h3>
+          <p>
+            Apple Watch takes a different approach. Rather than asking you to correct an indoor
+            run, it refines its stride model during outdoor walks and runs recorded with GPS, with
+            location services enabled, and then applies that model indoors. The practical advice is
+            to record a handful of outdoor sessions at a range of paces on open ground where the GPS
+            is good, and to let the watch do the rest. There is no manual distance entry at the end
+            of an indoor run on the stock app. Our guide to
+            <a href="/how-to-connect-apple-watch-to-treadmill/" class="text-[#0F62FE] font-medium">connecting an Apple Watch to a treadmill</a>
+            covers what the watch can and cannot pull from the machine.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Foot pods</h3>
+          <p>
+            A foot pod measures the foot, which is a better place to measure running speed than the
+            wrist. Most pods still allow a calibration factor, set by running a known distance or
+            at a known speed and adjusting until the pod agrees. The better ones need little
+            correction; the cheaper ones need it at more than one pace. If you use the pod to feed a
+            virtual running app, calibration also determines how honest your on-screen pace is, and
+            our <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium">Zwift treadmill guide</a>
+            goes into that side of it.
+          </p>`,
+    },
+    {
+      id: 'console-vs-watch',
+      heading: 'Console Distance vs Watch Distance: Which to Trust?',
+      html: `          <p>
+            This is the question behind most searches for treadmill calibration: the console says
+            5.0 miles, the watch says 4.6, and the runner wants to know which one to log. The
+            honest answer is that neither measures distance directly, and the one to trust depends
+            on which you have verified.
+          </p>
+          <p>
+            <strong>The case for the console.</strong> It is tied to the belt, not to your arm. On
+            a healthy, maintained treadmill, roller-based speed is a decent approximation of belt
+            speed, and distance follows. It does not care whether you held the handrails or how you
+            swung your arms. Its weaknesses are belt slip, under-load sag, roller wear and the fact
+            that it was never checked at the factory to a tolerance anyone will tell you.
+          </p>
+          <p>
+            <strong>The case for the watch.</strong> It is consistent across treadmills, so a run on
+            a gym machine and a run at home are measured the same way. Its weaknesses are that it
+            is estimating from motion, that the estimate degrades with handrail use and odd arm
+            carriage, and that it has usually been calibrated against a treadmill that may itself be
+            wrong.
+          </p>
+          <p>
+            <strong>What we suggest.</strong> Do the mark-and-time check once, at a walking and a
+            running speed, under load. If the console is close, trust the console and calibrate the
+            watch to it. If the console is well off and you cannot correct it in a calibration mode,
+            treat the measured speed as the truth, calibrate the watch to the measured distance, and
+            mentally correct the console from then on. If you cannot be bothered with any of that,
+            pick one source and use it consistently; for training, consistency matters far more
+            than absolute accuracy. A run that is 4 percent shorter than you thought every week is
+            not harming anything. A run that is 4 percent shorter one week and 4 percent longer the
+            next makes your training log meaningless.
+          </p>
+          <p>
+            A separate point about heart-rate and calorie figures: these are estimates on both the
+            console and the watch, built on different assumptions, and calibrating speed does
+            nothing to make them agree. They are a different problem and a less solvable one.
+          </p>`,
+    },
+    {
+      id: 'reasonable-accuracy',
+      heading: 'What Accuracy Is Reasonable to Expect?',
+      html: `          <p>
+            Treadmill manufacturers rarely publish a speed tolerance, and we have not measured a
+            representative sample ourselves, so what follows is drawn from the general experience of
+            owners and technicians rather than from a test.
+          </p>
+          <ul>
+            <li><strong>A new, well-made home treadmill, unloaded</strong> is commonly very close
+            to its displayed speed, within a couple of percent.</li>
+            <li><strong>The same machine with a runner on it</strong> typically reads a little
+            high — the belt is slower than the display — with the gap larger for heavier users and
+            at faster speeds. Owners who check often find errors in the low single-digit percent
+            range, which over a 5-mile run is a couple of hundred yards.</li>
+            <li><strong>Budget machines with small motors</strong> tend to sag more under load,
+            because the controller has less reserve to hold the belt against each footstrike.</li>
+            <li><strong>Older or neglected machines</strong> can be off by considerably more, almost
+            always in the direction of a belt that runs slower than displayed.</li>
+            <li><strong>Incline</strong> on a machine that has been through its calibration routine
+            is usually within a fraction of a percent at the settings people use; machines that
+            have lost their limits can be off by several percent at the top of the range.</li>
+          </ul>
+          <p>
+            An error of a few percent is, for most purposes, nothing to worry about. If you want
+            your treadmill paces to be comparable with outdoor paces, the honest answer is that
+            they are only ever roughly comparable anyway, because there is no wind, the belt moves
+            under you and the surface is consistent. Calibration narrows the gap; it does not close
+            it.
+          </p>`,
+    },
+    {
+      id: 'when-its-a-fault',
+      heading: 'When a Persistent Error Points to a Fault',
+      html: `          <p>
+            Calibration corrects a steady, modest discrepancy between the display and reality. It
+            does not fix a machine that cannot hold speed, and attempting to calibrate around a
+            mechanical problem usually makes things worse. These patterns suggest something other
+            than a setting.
+          </p>
+          <ul>
+            <li><strong>The belt hesitates or lurches with each footstrike.</strong> A momentary
+            slow-down under load that recovers between steps is slip or a dry deck, not a speed
+            error. Our guides to a
+            <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">slipping belt</a>
+            and a
+            <a href="/treadmill-belt-slows-down-when-i-step-on-it/" class="text-[#0F62FE] font-medium">belt that slows when you step on it</a>
+            cover tension, lubrication and the motor-side causes.</li>
+            <li><strong>The error gets worse week by week.</strong> Drift from belt stretch is
+            slow; a reading that changes noticeably between sessions points to a loosening belt,
+            a failing speed sensor or a controller problem.</li>
+            <li><strong>The display speed jumps or the belt surges on its own.</strong> This is not
+            a calibration symptom. Stop using the machine, unplug it and treat it as a controller or
+            sensor fault; surging speed is on our short list of symptoms that mean stop now.</li>
+            <li><strong>A large, fixed error that calibration mode will not correct.</strong> A
+            wrong roller size or pulse setting, a replaced motor that does not match the
+            controller's expectations, or a speed sensor reading a magnet that has shifted.</li>
+            <li><strong>Incline that reads correctly but the deck is visibly at the wrong angle,
+            or moves and stops short.</strong> An actuator or sensor problem rather than learned
+            limits.</li>
+            <li><strong>A burning smell or a breaker that trips on start-up</strong> while you are
+            investigating any of this. Stop, unplug, and do not calibrate anything.</li>
+          </ul>
+          <p>
+            In all of these, the manual is the authority on your model, and the first calls are to
+            maintenance basics — belt tension and tracking, deck lubrication, a clean motor
+            compartment — before anything in a service menu. A machine that is mechanically right
+            is usually close to calibrated without any help.
+          </p>`,
+    },
+    {
+      id: 'calibration-routine',
+      heading: 'A Sensible Calibration Routine',
+      html: `          <p>
+            Pulling it together, this is the order that makes sense for most owners. None of it
+            needs tools beyond a tape measure, masking tape and a stopwatch, and the whole routine
+            takes an evening the first time and twenty minutes thereafter.
+          </p>
+          <ol>
+            <li><strong>Maintenance first.</strong> Check belt tension and tracking, lubricate the
+            deck if it is due, and make sure nothing is dragging. A belt that is slipping cannot be
+            calibrated.</li>
+            <li><strong>Measure the belt length</strong> with the machine unplugged, and write it
+            down somewhere you will find it again. It does not change meaningfully.</li>
+            <li><strong>Mark-and-time at two or three speeds, under load.</strong> Note the
+            true speed against the displayed speed at each. Decide whether the error is small and
+            consistent (fine), small and worth correcting (console calibration mode, if you have
+            one), or large and variable (back to maintenance, or a fault).</li>
+            <li><strong>Check incline at zero, middle and top</strong> with a level and a ruler.
+            Run the incline calibration routine if the console has one and the readings are off.</li>
+            <li><strong>Calibrate your device to the measured figures.</strong> Watch, foot pod or
+            both. Use the corrected distance, not the console distance, if they differ.</li>
+            <li><strong>Repeat the speed check after any belt, deck or motor work</strong>, after
+            a firmware update, and once or twice a year regardless. Belt stretch and roller wear
+            are slow, but they are real.</li>
+          </ol>
+          <p>
+            One last habit worth building: pick a reference speed you use every week — a steady
+            walking pace, say — and once a month count ten revolutions at it. If the time changes,
+            something has changed, and you will catch belt drift months before it becomes a slip.
+          </p>`,
+    },
+  ],
+  faqs: [
+    {
+      q: 'How do I calibrate my treadmill speed?',
+      a: `Mark the belt, measure its full length, then time ten revolutions at a set speed with someone on the belt. True speed is belt length times revolutions divided by time; convert to mph or km/h. If the console has a calibration mode, adjust the speed value there until it matches your measurement, following the manual for the key sequence. Fix belt slip first, because calibration cannot correct it.`,
+    },
+    {
+      q: 'How do I calibrate my Garmin watch for the treadmill?',
+      a: `In general terms, record a treadmill run in indoor mode, and when you save it the watch offers to calibrate. Enter the distance the treadmill showed, or better, a distance you have verified yourself, and the watch corrects the run and refines its stride model. Several runs at different paces improve it. Menu names vary by model, so check the watch manual.`,
+    },
+    {
+      q: 'Why does my watch distance not match the treadmill?',
+      a: `Because neither measures distance directly. The console derives it from a roller or motor speed that may not reflect belt slip or under-load sag, and the watch estimates it from arm motion, which handrail use and arm carriage disrupt. Verify the treadmill with the mark-and-time method, then calibrate the watch to the verified figure, and use one source consistently.`,
+    },
+    {
+      q: 'How do I calibrate the incline on a treadmill?',
+      a: `Most consoles have a calibration routine in a service mode that drives the deck to its lowest and highest positions and re-learns the limits; the manual gives the key sequence. To check grade yourself, measure the deck height at two points a known distance apart, divide the rise by the run and multiply by 100. A small built-in grade at zero is common.`,
+    },
+    {
+      q: 'Is treadmill distance accurate?',
+      a: `Usually within a few percent on a maintained machine, with the belt typically running slightly slower than displayed under load, so the real distance is a little less than the console shows. The error grows with speed, user weight, belt stretch and a dry deck. Checking belt speed with a mark and a stopwatch tells you the actual error on your machine.`,
+    },
+    {
+      q: 'Does Apple Watch need calibrating for a treadmill?',
+      a: `Apple Watch calibrates its stride model from outdoor walks and runs recorded with GPS rather than by correcting an indoor run at the end. Record a few outdoor sessions at a range of paces on open ground with location services on, and the watch applies what it learns to indoor workouts. There is no manual distance entry on the stock workout app.`,
+    },
+  ],
+  mistakesHeading: 'Common Mistakes With Treadmill Calibration',
+  mistakesIntro:
+    'Calibration goes wrong in predictable ways, and most of them involve trusting a number that nobody has checked.',
+  mistakes: [
+    {
+      title: 'Calibrating the watch to an unverified console',
+      body: `Entering the console distance at the end of a run teaches the watch to agree with the treadmill, errors included. Do the mark-and-time check once under load, work out the true distance, and enter that. A watch calibrated to a measured figure is useful on any treadmill; one calibrated to a wrong console is wrong everywhere.`,
+    },
+    {
+      title: 'Measuring belt speed with nobody on the belt',
+      body: `An unloaded belt runs closer to the displayed speed than a loaded one, because every footstrike adds friction the motor has to overcome. Have someone time the revolutions while you walk or run at the speeds you actually use. The under-load figure is the one your training is based on, and the one worth writing down.`,
+    },
+    {
+      title: 'Using service mode to paper over a mechanical fault',
+      body: `A belt that slips, a dry deck or a tired motor will not be fixed by changing a calibration value; the error just moves. Sort tension, tracking and lubrication first. And never alter motor parameters you do not understand — a machine with its acceleration or top speed changed can surge and injure someone.`,
+    },
+    {
+      title: 'Chasing perfection',
+      body: `A small, consistent error of a few percent changes nothing about your training. Consistency matters more than absolute accuracy: pick one source, log it every time, and re-check the belt speed twice a year. Spend the hour you would have spent fine-tuning on a deck lubrication, which protects accuracy for longer.`,
+    },
+  ],
+  relatedHeading: 'Related Buying Guides',
+  related: [
+    {
+      kicker: 'Accuracy',
+      title: 'Is My Treadmill Speed Accurate?',
+      blurb: 'Why consoles drift, and how much it actually matters.',
+      url: '/is-my-treadmill-speed-accurate/',
+    },
+    {
+      kicker: 'Reference',
+      title: 'Treadmill Pace and Speed Chart',
+      blurb: 'Convert mph, km/h and minutes per mile at a glance.',
+      url: '/treadmill-pace-and-speed-chart/',
+    },
+    {
+      kicker: 'Wearables',
+      title: 'Connect an Apple Watch to a Treadmill',
+      blurb: 'What the watch can pull from the machine and what it guesses.',
+      url: '/how-to-connect-apple-watch-to-treadmill/',
+    },
+  ],
+  bottomLine: [
+    `<strong class="text-white">Check the belt before you calibrate anything else.</strong>
+            Mark it, measure it, time ten revolutions under load, and work out the real speed. A
+            small consistent error is normal; a large or growing one is maintenance or a fault, and
+            no calibration menu will fix a slipping belt.`,
+    `Calibrate your watch or foot pod to the measured figure, not the console, and then use one
+            source consistently. If the numbers still puzzle you, our guide to
+            <a href="/is-my-treadmill-speed-accurate/" class="text-[#5AA9FF] font-bold no-underline">treadmill speed accuracy</a>
+            explains where the drift comes from.`,
+  ],
+};

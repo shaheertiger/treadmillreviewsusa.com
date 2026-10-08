@@ -305,6 +305,9 @@ export default {
             does the rest. For anyone who sits at a desk, an
             <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmill</a>
             can add a surprising number of slow, high-step-per-mile miles across a working day.
+          </p>
+          <p>
+            To turn that into minutes on the belt at a given speed — and for 5K and 10K times — see our guide to <a href="/how-long-is-a-mile-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long a mile takes on a treadmill</a>.
           </p>`,
     },
     {

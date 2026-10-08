@@ -374,6 +374,9 @@ export default {
             is right for you in the long run, our list of the
             <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">best treadmills without subscriptions</a>
             covers the simpler alternative.
+          </p>
+          <p>
+            ProForm machines share the same parent company and much of the same console behaviour; owners of those should see our <a href="/proform-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">ProForm treadmill troubleshooting</a> guide.
           </p>`,
     },
     {
