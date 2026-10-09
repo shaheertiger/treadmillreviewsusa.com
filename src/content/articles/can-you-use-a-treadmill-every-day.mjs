@@ -1,0 +1,491 @@
+export default {
+  slug: 'can-you-use-a-treadmill-every-day',
+  title: 'Can You Use a Treadmill Every Day? (2026): Walking, Running, Wear',
+  description:
+    'Daily walking is fine for most people. Daily running depends on easy-hard balance and rest. Warning signs of overuse, plus what daily use means for the machine.',
+  crumbLabel: 'Can You Use a Treadmill Every Day',
+  breadcrumb: { name: 'Workouts & Training', url: '/training/' },
+  kicker: 'Question Answered',
+  updated: 'October 2026',
+  updatedLong: 'October 9, 2026',
+  published: '2026-10-09',
+  socialProof: '1.6k',
+  h1: ['Can You Use a Treadmill', 'Every Day?'],
+  standfirst:
+    'For walking, yes — most people can walk on a treadmill every day, and many would benefit from it. For running, it depends: daily running works for some experienced runners who keep most days easy, and goes badly for beginners who run hard every day. Here is how to tell the difference, the warning signs of doing too much, and what daily use asks of the machine itself.',
+  ctas: [
+    { label: 'The Short Answer', href: '#short-answer' },
+    { label: 'Can the Machine Take It?', href: '#machine-daily' },
+  ],
+  tags: ['can you use a treadmill every day', 'can you walk on a treadmill every day', 'can you run on a treadmill every day', 'is it ok to use a treadmill daily', 'treadmill every day'],
+  stickyCta: { text: 'Read the Short Answer', link: '#short-answer' },
+  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
+          This is a general guide to daily treadmill use and daily-use maintenance — it is not
+          medical, physiotherapy or coaching advice, and we are not qualified to give any of
+          those. How often you should walk or run depends on your health, history, fitness and
+          goals; if you have a heart, lung, joint or other condition, an injury, are pregnant, or
+          are returning from illness, talk to a doctor or physical therapist first, and stop and
+          get checked if something hurts or feels wrong. <strong class="text-gray-900">On the
+          machine side:</strong> always unplug the treadmill before any cleaning or servicing,
+          and treat your owner's manual as the authority on usage limits and maintenance
+          intervals.`,
+  lead: `"Every day" is two questions. One is about your body: can you walk or run on a treadmill
+          daily without wearing yourself down? The other is about the machine: can a home
+          treadmill take daily use, and what does it need if it is going to? The body answer is
+          yes for walking and "it depends" for running, with the difference coming down to
+          intensity, variety and rest. The machine answer is yes for most decent treadmills used
+          within their limits, with maintenance that scales with the hours. This page takes both
+          in turn.`,
+  sections: [
+    {
+      id: 'short-answer',
+      heading: 'Can You Use a Treadmill Every Day? The Short Answer',
+      html: `          <p>
+            <strong>Yes for walking — most people can walk on a treadmill every day. Running every
+            day depends on your experience and how hard you run: most runners do better with
+            easy days, harder days and at least one rest or walking day a week.</strong> The
+            machine can usually take daily use too, provided it is used within its weight and
+            usage limits and maintained more often than a once-a-week machine.
+          </p>
+          <p>
+            Walking is low-impact, easy to recover from and the kind of activity the US physical
+            activity guidelines encourage people to spread across the week. A daily treadmill walk
+            at a comfortable pace is closer to a healthy habit than a training risk, as long as
+            you vary it a little and listen to anything that starts to hurt.
+          </p>
+          <p>
+            Running is a heavier load. Each stride lands with more force than a walking step, and
+            the body needs time between sessions to adapt. Some experienced runners run every day
+            with most of those runs genuinely easy; beginners who run hard every day are the
+            classic overuse story. The deciding factors are how much you have built up, how hard
+            the sessions are, and whether you are taking real recovery.
+          </p>
+          <p>
+            On the machine side, daily use mostly means more hours, which means cleaning,
+            checking and lubricating on a shorter cycle than the manual's "occasional use"
+            schedule. A treadmill that is too light for the user or the speed will show it sooner
+            under daily use than under weekly use.
+          </p>`,
+    },
+    {
+      id: 'walking-daily',
+      heading: 'Is It OK to Walk on a Treadmill Every Day?',
+      html: `          <p>
+            For most people, yes. Walking is the most forgiving form of exercise there is, and
+            doing it daily is how many people meet the US guidelines of at least 150 minutes of
+            moderate activity a week — five 30-minute walks, or seven of a little over 20 minutes.
+            The guidelines encourage spreading activity across the week rather than concentrating
+            it, and a daily walk does exactly that.
+          </p>
+          <p>
+            A few things make daily walking work better:
+          </p>
+          <ul>
+            <li><strong>Vary the intensity.</strong> Not every walk needs to be brisk or steep. A
+            mix of easy strolls, brisk walks and a couple of incline sessions is more sustainable
+            than the same hard walk seven days running.</li>
+            <li><strong>Vary the length.</strong> A 20-minute walk on busy days and a 45-minute one
+            when there is time is better than forcing the same session every day.</li>
+            <li><strong>Watch the steep incline.</strong> Walking at a high gradient every day is
+            a much bigger load on the calves, Achilles tendons and shins than flat walking. More on
+            that below.</li>
+            <li><strong>Walk outside sometimes.</strong> The flat belt never changes, and varied
+            ground gives the ankles and hips work the treadmill cannot.</li>
+            <li><strong>Mind your feet.</strong> Daily walking in worn-out shoes is a common source
+            of foot and knee aches. Replace shoes when the cushioning or tread has gone.</li>
+          </ul>
+          <p>
+            How long each walk should be, by goal and fitness level, is covered in our guide to
+            <a href="/how-long-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long to walk on a treadmill</a>.
+            The short version: a daily walk does not need to be long to be worthwhile, and
+            consistency matters more than duration.
+          </p>
+          <p>
+            The exceptions are people for whom any new exercise should start with medical advice
+            — those with heart or lung conditions, balance problems, recent surgery or injury — and
+            people with a specific joint or foot problem that daily walking aggravates. For them,
+            the right frequency is a conversation with a doctor or physical therapist.
+          </p>`,
+    },
+    {
+      id: 'running-daily',
+      heading: 'Can You Run on a Treadmill Every Day?',
+      html: `          <p>
+            Some people can; most people should not start that way. Running daily is not
+            inherently harmful, and some experienced runners do it for years. But they tend to
+            share a pattern: they built up to it over a long time, most of their daily runs are
+            short and easy, and they are quick to drop a day when something feels wrong. That is
+            very different from a beginner running hard every day because the treadmill is
+            right there.
+          </p>
+          <p>
+            The underlying issue is recovery. Running loads bones, tendons and muscles, and those
+            tissues adapt in the time between sessions. Run hard again before that adaptation has
+            happened, repeatedly, and the load accumulates instead of building fitness. Heart and
+            lung fitness improve quickly, so a beginner often feels capable of daily running well
+            before their legs are — a mismatch that is behind many of the shin, Achilles and knee
+            complaints new runners develop.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">A rough guide by experience</h3>
+          <ul>
+            <li><strong>New to running (first few months):</strong> three runs a week, with walking
+            or rest days in between, is a common and sensible starting point.</li>
+            <li><strong>Running regularly for six months or more:</strong> four or five runs a week,
+            with a mix of easy and harder sessions and at least one full rest day, suits many
+            recreational runners.</li>
+            <li><strong>Experienced, high-volume runners:</strong> daily running can work if most
+            runs are easy and short, hard sessions are limited to one or two a week, and the
+            runner is attentive to warning signs.</li>
+          </ul>
+          <p>
+            Those are rules of thumb rather than thresholds. If you want to use the treadmill
+            every day but are not ready to run every day, the obvious answer is to walk on the
+            days you do not run. That keeps the habit and the time on the machine while giving
+            your legs the recovery they need. How long each run should be is covered in
+            <a href="/how-long-should-i-run-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long should I run on a treadmill</a>.
+          </p>`,
+    },
+    {
+      id: 'easy-hard',
+      heading: 'How Do You Alternate Easy and Hard Days?',
+      html: `          <p>
+            By deciding in advance which sessions are hard and keeping everything else genuinely
+            easy. The hard-easy principle is one of the oldest ideas in training: a demanding
+            session is followed by one or more easy days so the body can absorb it. On a treadmill
+            this is easy to plan, because speed and incline are exact.
+          </p>
+          <p>
+            <strong>What counts as hard:</strong> interval sessions, tempo runs, steep incline
+            work, and runs noticeably longer than usual. <strong>What counts as easy:</strong> a run
+            or walk at a pace where you can talk in full sentences, finishing feeling as if you
+            could have done more.
+          </p>
+          <p>
+            A daily-use week for a regular runner might look like this:
+          </p>
+          <ul>
+            <li><strong>Monday:</strong> easy 30-minute walk.</li>
+            <li><strong>Tuesday:</strong> interval session, about 35 minutes including warm-up and
+            cool-down.</li>
+            <li><strong>Wednesday:</strong> easy 25-minute run.</li>
+            <li><strong>Thursday:</strong> incline walk, moderate gradient, 30 minutes.</li>
+            <li><strong>Friday:</strong> rest, or a gentle 20-minute walk.</li>
+            <li><strong>Saturday:</strong> longer easy run, 45 to 60 minutes.</li>
+            <li><strong>Sunday:</strong> easy walk, or rest.</li>
+          </ul>
+          <p>
+            That uses the treadmill most days, but only two sessions are hard and there is real
+            recovery between them. The common mistake is the opposite: every session at the same
+            moderately hard effort, which is too hard to recover from and too easy to build much
+            fitness. Our guide to
+            <a href="/treadmill-workouts/" class="text-[#0F62FE] font-medium">structuring a week of treadmill workouts</a>
+            explains the four session types and how to combine them.
+          </p>`,
+    },
+    {
+      id: 'rest-days',
+      heading: 'Do You Need Rest Days?',
+      html: `          <p>
+            For running, most people do. For walking, a full rest day is less essential, but an
+            easier day is still useful. Rest days are not a pause in training; they are when the
+            adaptation actually happens. Tissue that has been loaded repairs and gets stronger in
+            the hours and days afterwards, and a body that never gets that time accumulates
+            fatigue instead.
+          </p>
+          <p>
+            Rest does not have to mean doing nothing. "Active recovery" — a gentle walk, some
+            stretching, an easy bike ride — keeps you moving without adding meaningful load. For
+            someone who wants to use the treadmill every day, a slow, flat 20-minute walk is a
+            reasonable rest-day session.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">How many rest days?</h3>
+          <p>
+            A common rule of thumb for recreational runners is at least one full rest day a week,
+            and more for beginners, older runners, and anyone coming back from injury or illness.
+            The right number for you depends on your age, history, sleep, stress and how hard the
+            other days are. Signs that you need more rest are covered in the next section, and
+            they are a better guide than any fixed schedule.
+          </p>
+          <p>
+            Sleep and life stress count too. A week of poor sleep, illness or heavy work pressure
+            reduces how well you recover, and the same training load can tip from manageable to
+            too much. Treating those weeks as easier weeks is not a lack of discipline; it is
+            sensible planning.
+          </p>`,
+    },
+    {
+      id: 'warning-signs',
+      heading: 'What Are the Warning Signs You Are Overdoing It?',
+      html: `          <p>
+            Your body usually tells you before an overuse problem becomes an injury. The trick is
+            to listen to the early signals rather than running through them. Signs worth taking
+            seriously include:
+          </p>
+          <ul>
+            <li><strong>Pain that worsens during a session</strong> rather than easing after the
+            warm-up.</li>
+            <li><strong>A tender spot on a bone</strong> — on the shin, the top of the foot or the
+            heel — that hurts to press.</li>
+            <li><strong>Pain the next morning</strong> on the stairs or the first steps out of
+            bed, especially around the heel, Achilles tendon or knee.</li>
+            <li><strong>Swelling</strong> around a joint or tendon.</li>
+            <li><strong>Pain that changes how you walk or run.</strong> A limp is a stop
+            sign.</li>
+            <li><strong>Persistent fatigue.</strong> Ordinary sessions feeling much harder than
+            usual for several days in a row, often with poor sleep, irritability or low
+            motivation.</li>
+            <li><strong>A resting heart rate that stays noticeably higher than your normal</strong>
+            for several mornings, if you track it.</li>
+          </ul>
+          <p>
+            The sensible response is to reduce: swap runs for walks, take a few days off, drop the
+            incline and speed. If the pain does not settle within a few days, or if it is sharp,
+            localised or getting worse, see a doctor or physical therapist. And stop immediately,
+            and get checked, for chest pain or pressure, severe breathlessness, dizziness or
+            fainting during exercise.
+          </p>
+          <p>
+            Wider questions about whether treadmill running is safe — heat, falls, form and
+            knees — are covered in
+            <a href="/is-running-on-a-treadmill-bad-for-you/" class="text-[#0F62FE] font-medium">is running on a treadmill bad for you</a>.
+          </p>`,
+    },
+    {
+      id: 'incline-daily',
+      heading: 'Is Daily Incline Walking Too Much?',
+      html: `          <p>
+            It can be, if every walk is at a steep gradient. Incline walking is popular precisely
+            because it makes walking much harder without running, and that same extra work
+            falls largely on the calves, Achilles tendons, shins, hips and lower back. Done every
+            day at a high gradient, without a build-up, it is a common source of calf and Achilles
+            soreness and of shin pain.
+          </p>
+          <p>
+            The fix is the same as for running: vary it. Use steep incline on two or three days a
+            week, moderate incline on others, and flat or near-flat walking on the rest. Build the
+            gradient up over several weeks rather than starting at the steepest setting. Walk
+            without holding the rails — holding on at a high incline changes your posture and takes
+            much of the work out of the legs, which defeats the point.
+          </p>
+          <p>
+            Our guide to
+            <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what incline to walk at on a treadmill</a>
+            covers choosing a gradient, and
+            <a href="/what-does-incline-walking-do/" class="text-[#0F62FE] font-medium">what incline walking does</a>
+            explains what changes as the deck tilts.
+          </p>`,
+    },
+    {
+      id: 'machine-daily',
+      heading: 'Can a Treadmill Handle Being Used Every Day?',
+      html: `          <p>
+            Most can, if they are used within their limits. Daily use is not unusual for a home
+            treadmill; plenty of households walk or run on one every day for years. What matters
+            is whether the machine is built for the kind of daily use you have in mind — a
+            30-minute walk is a very different load from an hour's run by a heavier user.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What "duty cycle" means for a treadmill</h3>
+          <p>
+            In industry, duty cycle describes how long a motor can run under load before it needs
+            to rest. Home treadmills rarely publish a duty cycle as such, but the idea still
+            applies, and it shows up in a few places:
+          </p>
+          <ul>
+            <li><strong>Continuous motor rating.</strong> A motor's continuous horsepower is what
+            it can sustain, as opposed to its peak. A machine with a modest continuous rating
+            doing long runs at speed every day works harder than one with headroom. Our
+            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">treadmill horsepower guide</a>
+            explains how to read the figures.</li>
+            <li><strong>Usage limits in the manual.</strong> Some manuals state a maximum
+            continuous running time, a rest period between sessions, or a daily-use limit,
+            particularly on compact and folding machines. If yours does, that is the number to
+            follow.</li>
+            <li><strong>Residential versus commercial classification.</strong> Treadmills sold for
+            home use are designed for home hours. Gym machines are built for many hours a day,
+            and their price reflects it.</li>
+            <li><strong>Weight capacity.</strong> Using a treadmill near its maximum user weight
+            every day puts more strain on the motor, belt, deck and rollers than occasional use
+            does.</li>
+          </ul>
+          <p>
+            Under-desk walking pads are a special case. Many are designed for slow walking over
+            long periods and have their own stated limits on speed and continuous use; running
+            on them, or running them for many hours a day if the manual says otherwise, shortens
+            their life.
+          </p>
+          <p>
+            The signs that a daily-use treadmill is struggling are the same as for any treadmill:
+            a hot or burning smell, the belt hesitating under foot strike, the motor sounding
+            laboured, or the machine cutting out mid-session. Any of those is a reason to stop,
+            unplug and investigate. How long a treadmill typically lasts, and what shortens it, is
+            covered in
+            <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">how long do treadmills last</a>.
+          </p>`,
+    },
+    {
+      id: 'maintenance',
+      heading: 'What Maintenance Does a Daily-Use Treadmill Need?',
+      html: `          <p>
+            More frequent maintenance than the same machine used twice a week, because most wear
+            tracks hours of use rather than the calendar. Many manuals give lubrication and
+            inspection intervals in hours or miles, or offer separate schedules for light and
+            heavy use; if yours does, a daily user should follow the heavier one. Always unplug the
+            treadmill before cleaning or servicing it.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">A typical daily-use routine</h3>
+          <ul>
+            <li><strong>After each session:</strong> wipe sweat off the console, handrails and
+            frame. Sweat is corrosive and gets into electronics.</li>
+            <li><strong>Weekly:</strong> wipe the belt and side rails, vacuum around and under the
+            machine, and check the belt is still centred and not slipping.</li>
+            <li><strong>Monthly:</strong> check the belt tension and alignment, look for wear on
+            the belt edges, check bolts and the frame for looseness, and inspect the power cord.</li>
+            <li><strong>As the manual specifies:</strong> lubricate the deck. Daily users usually
+            reach the manual's lubrication interval much sooner than occasional users, so keep a
+            note of when it was last done. Our guide to
+            <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium">how often to lubricate a treadmill</a>
+            goes into intervals and the signs of a dry deck.</li>
+            <li><strong>Periodically:</strong> with the machine unplugged, remove the motor cover
+            and vacuum out the dust, which builds up faster with daily use and makes motors run
+            hotter.</li>
+          </ul>
+          <p>
+            None of this takes long, and it is what separates a daily-use treadmill that lasts
+            many years from one that starts slipping, squeaking and overheating within a couple.
+            Our full
+            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">treadmill maintenance guide</a>
+            sets out the schedule and each job in detail.
+          </p>`,
+    },
+    {
+      id: 'household',
+      heading: 'What If Several People Use It Every Day?',
+      html: `          <p>
+            Then add the hours together, because the machine does. A treadmill used for 30 minutes
+            by each of three people is doing an hour and a half a day, every day — a very different
+            life from one person's daily walk. The same applies to wear on the belt and deck, dust
+            in the motor compartment, and the interval between lubrications.
+          </p>
+          <p>
+            Three practical points for shared machines. First, base the maintenance schedule on the
+            combined hours and the heaviest regular user, not the lightest. Second, if the manual
+            suggests a rest period between long sessions, build it into the household routine
+            rather than letting one person start the moment another finishes. Third, if the
+            treadmill will be shared by people who run, or by heavier users, its continuous motor
+            rating and weight capacity matter more than they would for one walker. Our
+            <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">treadmill weight capacity guide</a>
+            explains why buying with headroom pays off.
+          </p>
+          <p>
+            Shared machines also need the safety habits applied every time: safety key clipped on,
+            and removed and stored out of reach after use if there are children in the house.
+          </p>`,
+    },
+    {
+      id: 'sustainable',
+      heading: 'How Do You Make Daily Treadmill Use Sustainable?',
+      html: `          <p>
+            By making most days easy and some days different. People who use a treadmill every day
+            for years tend to do the same few things:
+          </p>
+          <ol>
+            <li><strong>Mostly easy sessions.</strong> Walks and conversational runs make up the
+            bulk of the week.</li>
+            <li><strong>One or two harder sessions.</strong> Intervals, a tempo run or a steep
+            incline walk — not more.</li>
+            <li><strong>Variety in length.</strong> Short sessions on busy days, a longer one at
+            the weekend.</li>
+            <li><strong>At least one very easy or rest day.</strong> Especially if you run.</li>
+            <li><strong>Gradual changes.</strong> Add time, speed or incline slowly, about 10% a
+            week as a rule of thumb, one variable at a time.</li>
+            <li><strong>Attention to warning signs.</strong> Dropping a day early beats losing a
+            month later.</li>
+            <li><strong>A maintained machine.</strong> A treadmill that slips or overheats is no
+            use to anyone, every day or otherwise.</li>
+          </ol>
+          <p>
+            Used that way, a treadmill is one of the easiest pieces of equipment to use daily: it
+            is at home, it works in any weather and it lets you make each session exactly as easy
+            or hard as the day calls for.
+          </p>`,
+    },
+  ],
+  faqs: [
+    {
+      q: 'Is it OK to walk on a treadmill every day?',
+      a: `For most people, yes. Daily walking is a common way to meet the US guidelines of at least 150 minutes of moderate activity a week. Vary the speed, incline and length rather than repeating the same hard walk, wear decent shoes, and ease off if something starts to hurt. People with medical conditions should check with a doctor first.`,
+    },
+    {
+      q: 'Is it bad to run on a treadmill every day?',
+      a: `Not necessarily, but it is risky for beginners and for anyone running hard every day. Some experienced runners run daily with most runs short and easy. Most recreational runners do better with three to five runs a week, a mix of easy and harder sessions, and at least one rest day. Walking on non-running days keeps the habit going.`,
+    },
+    {
+      q: 'How many days a week should I use a treadmill?',
+      a: `For walking, anywhere from three days to every day is reasonable for most people. For running, three days a week with rest or walking days between is a common start, rising to four or five for regular runners. The right number depends on how hard the sessions are, your experience and how well you are recovering.`,
+    },
+    {
+      q: 'Can I walk on the treadmill twice a day?',
+      a: `Yes, for most people. Splitting walking into two shorter sessions, such as 20 minutes in the morning and 20 in the evening, still counts towards weekly activity and can be easier to fit in. Keep at least one of them easy. On the machine side, check whether your manual recommends a rest period between sessions.`,
+    },
+    {
+      q: 'Will using a treadmill every day wear it out faster?',
+      a: `More hours mean more wear, so a daily-use treadmill will need belt, deck and motor attention sooner than an occasionally used one. A machine used within its weight and usage limits, cleaned regularly and lubricated on schedule can still last many years. Follow the manual's heavier-use maintenance schedule, and unplug before any servicing.`,
+    },
+    {
+      q: 'Can I walk on an incline every day?',
+      a: `You can, but steep incline every day is a large load on the calves, Achilles tendons and shins. Most people do better using steep gradients on two or three days a week and moderate or flat walking on the others, building the gradient up over several weeks. Walk without holding the rails so your legs do the work.`,
+    },
+  ],
+  mistakesHeading: 'Common Mistakes With Daily Treadmill Use',
+  mistakesIntro:
+    'Using a treadmill every day is fine for most people. These are the habits that make it go wrong, for the body and for the machine.',
+  mistakes: [
+    {
+      title: 'Making every day a hard day',
+      body: `Running fast or walking at a steep incline every session leaves no time to recover, and fatigue builds instead of fitness. Decide in advance which one or two sessions a week are hard and keep the rest genuinely easy, at a pace where you can talk in full sentences. Swap a run for a walk when in doubt.`,
+    },
+    {
+      title: 'Running through pain that keeps coming back',
+      body: `A tender spot on the shin, heel pain on the first steps in the morning, or an ache that worsens during a session are early warnings of overuse. Running through them every day is how a niggle becomes a layoff. Reduce or rest for a few days, and see a doctor or physical therapist if it does not settle.`,
+    },
+    {
+      title: 'Keeping the occasional-use maintenance schedule',
+      body: `Daily use reaches the manual's lubrication and inspection intervals far sooner than weekly use. A dry deck, a loose belt or a dusty motor compartment all add strain. Follow the heavier-use schedule if the manual gives one, keep a note of when you last lubricated, and always unplug before servicing.`,
+    },
+    {
+      title: 'Using a light-duty machine beyond its limits',
+      body: `Compact treadmills and walking pads often have modest motors, lower weight limits and stated limits on speed or continuous use. Running long sessions on them daily, or sharing them between several heavy users, shortens their life. Check the manual's limits, respect any rest periods, and stop if the motor smells hot or the belt hesitates.`,
+    },
+  ],
+  relatedHeading: 'Related Training Guides',
+  related: [
+    {
+      kicker: 'Planning',
+      title: 'Treadmill Workouts',
+      blurb: 'The four session types and how to build a week with easy and hard days.',
+      url: '/treadmill-workouts/',
+    },
+    {
+      kicker: 'Walking',
+      title: 'How Long Should I Walk on a Treadmill?',
+      blurb: 'Walking time by goal and fitness, and what the guidelines suggest.',
+      url: '/how-long-should-i-walk-on-a-treadmill/',
+    },
+    {
+      kicker: 'Maintenance',
+      title: 'Treadmill Maintenance Guide',
+      blurb: 'Cleaning, lubrication, belt tension and the schedule that keeps a machine running.',
+      url: '/treadmill-maintenance/',
+    },
+  ],
+  bottomLine: [
+    `<strong class="text-white">You can walk on a treadmill every day; running every day depends
+            on your experience and how hard you run.</strong> Most people do best with mostly easy
+            sessions, one or two harder ones, and at least one rest or easy walking day a week.`,
+    `Watch for pain that worsens during sessions or lingers the next morning, and reduce when it
+            appears. On the machine side, daily use means more hours, so follow the heavier-use
+            maintenance schedule, respect the manual's limits and unplug before servicing. Our
+            <a href="/treadmill-maintenance/" class="text-[#5AA9FF] font-bold no-underline">treadmill maintenance guide</a>
+            has the full routine.`,
+  ],
+};

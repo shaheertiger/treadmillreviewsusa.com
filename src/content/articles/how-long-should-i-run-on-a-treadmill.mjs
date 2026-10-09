@@ -1,0 +1,479 @@
+export default {
+  slug: 'how-long-should-i-run-on-a-treadmill',
+  title: 'How Long Should I Run on a Treadmill? (2026): By Goal and Level',
+  description:
+    'Beginners: 20 to 30 minutes with walk breaks. After that it depends on your goal. Session lengths by goal, the US guidelines, building up, long runs and intervals.',
+  crumbLabel: 'How Long Should I Run on a Treadmill',
+  breadcrumb: { name: 'Workouts & Training', url: '/training/' },
+  kicker: 'Question Answered',
+  updated: 'October 2026',
+  updatedLong: 'October 9, 2026',
+  published: '2026-10-09',
+  socialProof: '2.1k',
+  h1: ['How Long Should I Run', 'on a Treadmill?'],
+  standfirst:
+    'There is no single right number, but there is a sensible starting point and a sensible way to build from it. A beginner is usually best served by 20 to 30 minutes including walk breaks; a regular runner by sessions that vary in length across the week. Here is how long to run by goal and experience, what the US guidelines actually ask for, how fast to add time, and how to stay on the belt long enough to get there.',
+  ctas: [
+    { label: 'Session Length by Goal', href: '#by-goal' },
+    { label: 'If You Are a Beginner', href: '#beginners' },
+  ],
+  tags: ['how long should i run on a treadmill', 'how long should you run on a treadmill', 'treadmill running time', 'treadmill run length', 'how long to run on treadmill for beginners'],
+  stickyCta: { text: 'See Lengths by Goal', link: '#by-goal' },
+  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
+          This is a general guide to session length — it is not medical, coaching or nutrition
+          advice, and we are not qualified to give any of those. How long you should run depends
+          on your health, history, current fitness and goals; if you have a heart, lung, joint or
+          other condition, an injury, are pregnant, or have not exercised for a long time, talk
+          to a doctor or physical therapist before you start, and stop and get checked if
+          something hurts or feels wrong. <strong class="text-gray-900">On the figures below:</strong>
+          the weekly activity amounts are the US physical activity guidelines; session lengths and
+          progression rates are typical starting points and rules of thumb, not prescriptions.`,
+  lead: `How long you should run on a treadmill depends on two things: what you are running for,
+          and how much running your body is used to. A complete beginner and someone training for a
+          half marathon need very different answers, and the same person needs different answers
+          on different days of the week. This page gives a starting point for each common goal,
+          explains where the widely quoted weekly targets come from, sets out the usual rule of
+          thumb for adding time, and deals with the treadmill-specific problems of long sessions —
+          heat, boredom and a belt that never changes.`,
+  sections: [
+    {
+      id: 'short-answer',
+      heading: 'How Long Should I Run on a Treadmill? The Short Answer',
+      html: `          <p>
+            <strong>If you are new to running, start with 20 to 30 minutes in total, including a
+            warm-up, walk breaks and a cool-down, three times a week.</strong> If you already run
+            regularly, most sessions will sit somewhere between 20 and 60 minutes depending on the
+            type — shorter for intervals, longer for easy and long runs — and the weekly total
+            matters more than any single session.
+          </p>
+          <p>
+            For general health, the US physical activity guidelines suggest that adults get at
+            least 150 minutes of moderate-intensity activity a week, or 75 minutes of vigorous
+            activity, or an equivalent mix. For most people, steady running counts as vigorous.
+            So three runs of about 25 minutes, or two of about 40, meet the vigorous version of
+            the guideline. That is a useful floor, not a ceiling.
+          </p>
+          <p>
+            Beyond that, session length is about the goal. Running for fitness and health, a
+            handful of 20 to 45-minute sessions a week is plenty for most people. Training for a
+            5K or 10K adds one longer run. Training for a half or full marathon adds a long run
+            that grows towards two hours or more, which is where treadmill-specific problems such
+            as heat and boredom start to matter.
+          </p>
+          <p>
+            Whatever the goal, the same principle applies: add time gradually. The common rule of
+            thumb is no more than about 10% more running per week, and most of the running should
+            be at an easy, conversational pace.
+          </p>`,
+    },
+    {
+      id: 'guidelines',
+      heading: 'How Much Running Do the Guidelines Suggest?',
+      html: `          <p>
+            The figures most often quoted come from the US physical activity guidelines for
+            adults. In outline, they suggest:
+          </p>
+          <ul>
+            <li><strong>At least 150 minutes a week of moderate-intensity aerobic activity</strong>
+            — the kind that raises your breathing and heart rate but still lets you talk, such as
+            brisk walking — <strong>or at least 75 minutes a week of vigorous activity</strong>,
+            such as running, or an equivalent combination of the two.</li>
+            <li><strong>More than that brings additional benefit</strong>, with the guidelines
+            describing higher amounts as a further target rather than a cap.</li>
+            <li><strong>Muscle-strengthening activity on two or more days a week</strong>, which a
+            treadmill does not provide on its own.</li>
+            <li><strong>Spread it across the week</strong> rather than in one burst, and recognise
+            that some activity is better than none.</li>
+          </ul>
+          <p>
+            For a runner, the arithmetic is simple. If running counts as vigorous for you, 75
+            minutes a week can be three sessions of 25 minutes, or two of 30 and one of 15. A
+            mix also works: a 30-minute run counts as 30 vigorous minutes, and a 30-minute brisk
+            walk on another day adds 30 moderate ones. Under the guideline's common convention
+            that one vigorous minute is roughly worth two moderate ones, those two sessions add up
+            to the equivalent of 90 moderate minutes.
+          </p>
+          <p>
+            Two caveats. First, whether running is "vigorous" depends on you: an easy jog for a
+            trained runner may be moderate, and the same pace may be vigorous for a beginner. The
+            talk test is a reasonable guide — moderate lets you hold a conversation, vigorous
+            limits you to a few words at a time. Second, the guidelines are about health, not
+            performance. Running a good 10K or a marathon needs more than the minimum, and
+            building to it needs time.
+          </p>
+          <p>
+            If you also walk on the treadmill, our guide to
+            <a href="/how-long-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long to walk on a treadmill</a>
+            covers the moderate side of the same guidelines in detail.
+          </p>`,
+    },
+    {
+      id: 'by-goal',
+      heading: 'How Long Should a Treadmill Run Be, by Goal?',
+      html: `          <p>
+            The table below gives typical starting points by goal. They are rules of thumb drawn
+            from common training practice rather than prescriptions, and they assume you are
+            already able to run continuously for the shorter durations. If you cannot yet, start
+            with the beginner section below.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Goal</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Typical session</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Sessions a week</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Starting out</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20–30 min including walk breaks</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Run-walk intervals; rest day between</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">General health</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20–40 min</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3–4</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Meets the vigorous guideline of 75 min/week</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Weight management</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">30–45 min, some longer walks</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4–5 (mixed run and walk)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Total weekly time matters most</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">First 5K</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">25–40 min</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Build to running the distance before speed</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10K</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">30–50 min; long run 50–75 min</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3–4</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">One interval session, one long run</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Half marathon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">30–60 min; long run building towards 2 hours</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4–5</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Some long runs outdoors if you can</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Interval session</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20–40 min including warm-up and cool-down</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1–2</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Hard minutes are a small part of the total</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Easy or recovery run</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20–40 min</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">As needed</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Conversational; finish feeling fresh</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Two things stand out. First, most sessions for most goals sit in the 20 to 45-minute
+            range. Long sessions are the exception, used once a week by people training for
+            longer events. Second, the weekly picture matters more than any individual day: a week
+            of one hard hour and nothing else is a worse plan than four 30-minute runs of mixed
+            types.
+          </p>
+          <p>
+            For weight management specifically, the honest answer is that running time is only
+            part of it. The calories a run uses depend on your weight, speed and incline, and the
+            console's figure is an estimate. Our reference on
+            <a href="/treadmill-calories-burned/" class="text-[#0F62FE] font-medium">treadmill calories burned</a>
+            covers the arithmetic.
+          </p>`,
+    },
+    {
+      id: 'beginners',
+      heading: 'How Long Should a Beginner Run on a Treadmill?',
+      html: `          <p>
+            About 20 to 30 minutes in total, and most of that will not be running at first. A
+            typical beginner session is five minutes of brisk walking to warm up, then alternating
+            short runs with walking breaks, then five minutes of easy walking to cool down. The
+            running portion grows over several weeks while the total time stays roughly the same.
+          </p>
+          <p>
+            A common early pattern looks like this:
+          </p>
+          <ul>
+            <li><strong>Weeks 1–2:</strong> 1 minute of easy jogging, 2 minutes of walking,
+            repeated six to eight times, between the warm-up and cool-down.</li>
+            <li><strong>Weeks 3–4:</strong> 2 minutes jogging, 2 minutes walking, repeated five or
+            six times.</li>
+            <li><strong>Weeks 5–6:</strong> 3 to 5 minutes jogging, 1 to 2 minutes walking.</li>
+            <li><strong>Weeks 7 onward:</strong> longer continuous runs, building towards 20 to 30
+            minutes without a walk break.</li>
+          </ul>
+          <p>
+            That is a sketch rather than a plan, and many people need to repeat a week, which is
+            completely normal. If you want a structured version that runs from the first jog to
+            running a 5K, our
+            <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">couch to 5K treadmill plan</a>
+            sets out each session.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">How fast should the running parts be?</h3>
+          <p>
+            Slow enough to talk in short sentences. For many beginners that is somewhere around 4
+            to 5.5 mph, and there is no shame in a pace that is barely faster than a brisk walk.
+            The single most common beginner mistake is running too fast, getting out of breath
+            within a minute, and concluding they "cannot run". The answer is almost always to slow
+            down, not to stop.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">How often?</h3>
+          <p>
+            Three sessions a week, with a rest or walking day between each, is a common starting
+            point. The rest days are when bones, tendons and muscles adapt to the new load. Walking
+            on those days is fine and helps build the habit. Running on consecutive days can wait
+            until the sessions feel comfortable.
+          </p>`,
+    },
+    {
+      id: 'building-up',
+      heading: 'How Quickly Can You Run Longer?',
+      html: `          <p>
+            Gradually. The most widely quoted rule of thumb is to increase your weekly running
+            time or distance by no more than about 10% from one week to the next. It is a rough
+            guide rather than a law — some people progress faster from a very low base, others
+            need to go slower — but it is a useful brake on enthusiasm.
+          </p>
+          <p>
+            The reason for caution is that different parts of the body adapt at different rates.
+            Heart and lung fitness improve quickly, so a run that felt hard a month ago starts to
+            feel easy. Tendons, bones and the tissue around joints adapt more slowly. That is why
+            so many new runners feel great for a few weeks and then develop sore shins, a sore
+            Achilles or a knee that complains: the fitness was ready for more, the structures were
+            not.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Practical ways to build</h3>
+          <ul>
+            <li><strong>Change one thing at a time.</strong> Add time, or add speed, or add incline
+            — not all three in the same week.</li>
+            <li><strong>Add time to one session first.</strong> Lengthen the run you enjoy most, or
+            the weekend one, rather than every session.</li>
+            <li><strong>Hold, then build.</strong> Many runners add time for two or three weeks,
+            then hold or reduce slightly for a week before building again.</li>
+            <li><strong>Count time, not just distance.</strong> On a treadmill, time is easy to
+            track and does not reward running faster. A 10% increase from 90 minutes a week is
+            about 9 extra minutes, which is easy to add as a few minutes per session.</li>
+            <li><strong>Go back a step when needed.</strong> After illness, a holiday or a
+            niggle, return at a lower level than you left, not where you stopped.</li>
+          </ul>
+          <p>
+            If something starts to hurt — pain that worsens as you run, a tender spot on a bone,
+            pain the next morning — stop building, reduce, and get it checked if it does not
+            settle within a few days. Whether daily running is wise is its own question, answered
+            in
+            <a href="/can-you-use-a-treadmill-every-day/" class="text-[#0F62FE] font-medium">can you use a treadmill every day</a>.
+          </p>`,
+    },
+    {
+      id: 'long-runs',
+      heading: 'How Long Should a Long Run on a Treadmill Be?',
+      html: `          <p>
+            It depends on what you are training for, and it should be clearly longer than your
+            other runs without dominating the week. A long run for a 10K is often 50 to 75
+            minutes; for a half marathon it typically builds towards about two hours; for a
+            marathon, longer. A common convention is to keep the long run to no more than about a
+            third of your weekly running — a rule of thumb, but a sensible one, because a long run
+            that makes up most of your week is a large single dose of load.
+          </p>
+          <p>
+            The long run should be easy. That is the point of it: time on your feet at a pace you
+            could sustain for much longer, building endurance without the cost of hard running.
+            If you finish a long run unable to speak, it was too fast.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What changes on a treadmill</h3>
+          <ul>
+            <li><strong>Heat builds.</strong> With no air moving past you, a long run indoors gets
+            hot. Put a fan at chest height, keep the room cool, and have water in reach. Expect
+            your heart rate to drift upward over the session more than it would outside.</li>
+            <li><strong>Boredom is the main enemy.</strong> Ninety minutes on a belt is a long
+            time. Split the run into blocks, use a programme, and plan entertainment.</li>
+            <li><strong>Your stride never changes.</strong> Small changes of speed and incline every
+            ten minutes or so spread the load.</li>
+            <li><strong>Check the machine.</strong> Some treadmill manuals give a maximum
+            continuous running time or ask you to rest the machine between long sessions. If
+            yours does, follow it; it exists to protect the motor.</li>
+          </ul>
+          <p>
+            Many runners training for longer events do their long runs outdoors when they can and
+            use the treadmill for the rest of the week. That is not because the treadmill is
+            inadequate, but because a race is outside, with hills, turns and weather, and some
+            practice on that surface helps. Our comparison of
+            <a href="/treadmill-vs-running-outside/" class="text-[#0F62FE] font-medium">treadmill versus running outside</a>
+            covers how runners blend the two.
+          </p>`,
+    },
+    {
+      id: 'intervals',
+      heading: 'Why Are Interval Sessions Shorter?',
+      html: `          <p>
+            Because the hard running is the point, and there is not much of it. A typical interval
+            session might be a 10-minute warm-up, six repeats of 1 to 3 minutes at a hard pace
+            with recoveries in between, and a 5 to 10-minute cool-down. The whole thing takes 30 to
+            40 minutes, and the hard running itself may add up to only 10 to 15 minutes.
+          </p>
+          <p>
+            That is enough. Hard running is costly — it takes more recovery than easy running —
+            and most training approaches keep it to a small share of the week. Making an interval
+            session longer by adding more repeats usually makes the last ones slower and sloppier,
+            which defeats the purpose. One or two interval sessions a week is a common ceiling for
+            recreational runners, and beginners are usually better off waiting until they have a
+            few months of steady running behind them.
+          </p>
+          <p>
+            The treadmill is very good at intervals: the speed is exact, the recoveries are exact,
+            and you cannot cheat on a hill or a tailwind. Its one hazard is the transition. Change
+            speed with the buttons rather than jumping on and off the belt, and never straddle the
+            rails while the belt is at full speed and then step back on. Our guide to
+            <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">treadmill interval workouts</a>
+            has sessions for different levels.
+          </p>
+          <p>
+            The warm-up and cool-down count towards the session length, and they matter more for
+            intervals than for easy runs. Going from cold straight into hard repeats is
+            uncomfortable at best.
+          </p>`,
+    },
+    {
+      id: 'too-long',
+      heading: 'How Long Is Too Long to Run on a Treadmill?',
+      html: `          <p>
+            There is no fixed limit, but there are signs that a session has gone on too long for
+            you, today. A run is probably too long if:
+          </p>
+          <ul>
+            <li>Your form falls apart — you are shuffling, slumping or grabbing the rails.</li>
+            <li>You have to slow down a lot to finish, when the plan was a steady pace.</li>
+            <li>Something starts to hurt and keeps getting worse.</li>
+            <li>You feel dizzy, sick, unusually hot or confused. Stop the belt properly and sit
+            down somewhere cool.</li>
+            <li>You are wiped out for the rest of the day, or the next run feels much harder than
+            it should.</li>
+          </ul>
+          <p>
+            For most people training for general fitness, sessions longer than about an hour are
+            optional rather than necessary. The health benefits in the guidelines come from the
+            weekly total, and an hour of running in one go is a lot of repetitive load for a body
+            that is not used to it. If you want more running time, adding another moderate session
+            is usually kinder than stretching one session much longer.
+          </p>
+          <p>
+            There is also the machine to consider. Home treadmills vary widely in how well they
+            cope with long continuous use, especially at running speed with a heavier user. A
+            motor that smells hot, a belt that hesitates or a console that shuts down mid-run is
+            the machine telling you it is at its limit. Our guide to
+            <a href="/treadmill-overheating/" class="text-[#0F62FE] font-medium">treadmill overheating</a>
+            covers what causes it and what to check.
+          </p>`,
+    },
+    {
+      id: 'boredom',
+      heading: 'How Do You Stay on the Treadmill Long Enough?',
+      html: `          <p>
+            For many people the limit is not fitness but boredom. Thirty minutes on a belt can
+            feel longer than an hour outdoors, because there is nothing to look at and the display
+            counts every second. Session length is only useful if you can actually complete it,
+            so managing boredom is part of the answer.
+          </p>
+          <ul>
+            <li><strong>Hide the clock.</strong> Cover the display, switch it to a view without
+            time, or check it only at planned points.</li>
+            <li><strong>Break the run into blocks.</strong> Five or ten-minute segments with a
+            small change at each — a little incline, a tenth of a mile per hour, a sip of water —
+            give the session structure.</li>
+            <li><strong>Use a programme.</strong> A built-in hill or interval programme does the
+            changing for you.</li>
+            <li><strong>Save something for the treadmill.</strong> A series, a podcast or an
+            audiobook you only allow yourself while running is a surprisingly strong pull.</li>
+            <li><strong>Count down, not up.</strong> Set the session as a target time and let the
+            machine count down to zero.</li>
+            <li><strong>Mix in walking.</strong> A run-walk session can last longer than a
+            continuous run and still do the job.</li>
+          </ul>
+          <p>
+            Our guide to
+            <a href="/how-to-make-treadmill-running-less-boring/" class="text-[#0F62FE] font-medium">making treadmill running less boring</a>
+            has the longer list. The short version is to give your mind something other than the
+            belt and the clock to think about.
+          </p>`,
+    },
+    {
+      id: 'sample-weeks',
+      heading: 'What Does a Sensible Week Look Like?',
+      html: `          <p>
+            Here are three example weeks, to show how session lengths fit together. They are
+            illustrations, not plans, and they assume you have built up to them.
+          </p>
+          <p>
+            <strong>New runner, three months in.</strong> Monday: 25-minute easy run including
+            warm-up and cool-down. Wednesday: 30 minutes of run-walk at a slightly quicker pace in
+            the running parts. Friday: 25-minute easy run. Weekend: a 30 to 40-minute walk, on the
+            treadmill or outside. About 80 minutes of running and a walk on top.
+          </p>
+          <p>
+            <strong>General fitness.</strong> Tuesday: 30-minute easy run. Thursday: 35-minute
+            interval session. Saturday: 45-minute easy run. Sunday: incline walk of 30 to 40
+            minutes. Comfortably above the guideline amounts, with only one hard day.
+          </p>
+          <p>
+            <strong>Training for a 10K.</strong> Monday: rest. Tuesday: 40-minute session with
+            intervals. Wednesday: 30-minute easy run. Friday: 35-minute easy run with a few short
+            pick-ups. Sunday: 60 to 70-minute long run, easy. Saturday or Thursday: rest or walk.
+          </p>
+          <p>
+            Each week has easy days, at most one or two hard sessions, at least one rest day, and
+            only one session much longer than the rest. That shape is more important than the
+            exact minutes. Our guide to
+            <a href="/treadmill-workouts/" class="text-[#0F62FE] font-medium">structuring a week of treadmill workouts</a>
+            explains the four session types and how to combine them.
+          </p>`,
+    },
+  ],
+  faqs: [
+    {
+      q: 'Is 30 minutes of running on a treadmill enough?',
+      a: `For general health, 30 minutes of steady running three times a week exceeds the 75 minutes of vigorous activity in the US guidelines. It is a sensible session length for most people. Whether it is enough for a specific goal, such as a 10K or a marathon, depends on the goal; longer events need at least one longer run each week.`,
+    },
+    {
+      q: 'Is 20 minutes on the treadmill enough?',
+      a: `Twenty minutes of running is a worthwhile session, especially for beginners and on busy days. Three or four 20-minute runs a week reaches or approaches the 75 vigorous minutes in the US guidelines. Short sessions done consistently beat long sessions done occasionally. Add time gradually once 20 minutes feels comfortable, if your goals call for it.`,
+    },
+    {
+      q: 'How long should I run on a treadmill to lose weight?',
+      a: `There is no single number, because weight change depends on diet, total activity and the individual. Running burns energy in proportion to your weight and distance, so more total weekly time helps, but adding it gradually matters more than any single long session. Mixing runs with incline walks lets you build total time without overloading your legs.`,
+    },
+    {
+      q: 'How long should a beginner run on a treadmill?',
+      a: `About 20 to 30 minutes in total, including a five-minute walking warm-up, alternating short jogs with walking breaks, and a five-minute cool-down. Three sessions a week with rest or walking days between is a common start. The running portions lengthen over several weeks while the total time stays about the same.`,
+    },
+    {
+      q: 'Can I run for an hour on a treadmill?',
+      a: `If you have built up to it, yes. An hour at an easy pace is a normal long run for many runners. Use a fan, keep water in reach, vary speed and incline a little, and check whether your treadmill manual specifies a maximum continuous running time. If you are new to running, build up gradually rather than starting with an hour.`,
+    },
+    {
+      q: 'Does the warm-up count towards my running time?',
+      a: `Usually, yes. Most plans give session lengths including the warm-up and cool-down, and the guidelines count moderate activity such as brisk walking too. What matters is being consistent about how you count, so that your weekly totals are comparable. If a plan specifies running minutes separately, follow its convention.`,
+    },
+  ],
+  mistakesHeading: 'Common Mistakes With Treadmill Run Length',
+  mistakesIntro:
+    'Most problems with session length come from adding too much too soon or from every session being the same.',
+  mistakes: [
+    {
+      title: 'Doubling session length overnight',
+      body: `Going from 20 minutes to 40 because the last run felt easy is the classic route to sore shins or a sore Achilles. Fitness improves faster than tendons and bones adapt. Add time gradually, around 10% a week as a rule of thumb, and change only one thing at a time: duration, speed or incline.`,
+    },
+    {
+      title: 'Making every run long and hard',
+      body: `If every session is the longest and fastest you can manage, there are no easy days and no recovery. Most runs should be conversational, with at most one or two hard sessions and one longer run a week. The variety of lengths and efforts is what lets you keep running week after week.`,
+    },
+    {
+      title: 'Running too fast to last the session',
+      body: `Beginners often set a speed they cannot hold for more than a minute or two, then conclude they cannot run for 20 minutes. Slow down until you can talk in short sentences, use walk breaks, and let the running portions lengthen. Session length is limited by pace far more often than by fitness.`,
+    },
+    {
+      title: 'Ignoring heat on long treadmill runs',
+      body: `A long run indoors has no breeze, so body temperature and heart rate climb faster than outside, and the same pace becomes harder as the session goes on. Use a standalone fan, keep the room cool, drink, and slow down if your effort climbs. Stop for dizziness, nausea or confusion.`,
+    },
+  ],
+  relatedHeading: 'Related Training Guides',
+  related: [
+    {
+      kicker: 'Walking',
+      title: 'How Long Should I Walk on a Treadmill?',
+      blurb: 'Walking time by goal and fitness, and the moderate side of the guidelines.',
+      url: '/how-long-should-i-walk-on-a-treadmill/',
+    },
+    {
+      kicker: 'Beginners',
+      title: 'Couch to 5K on a Treadmill',
+      blurb: 'A session-by-session plan from the first jog to running a full 5K.',
+      url: '/couch-to-5k-treadmill/',
+    },
+    {
+      kicker: 'Planning',
+      title: 'Treadmill Workouts',
+      blurb: 'The four session types and how to build a week that works.',
+      url: '/treadmill-workouts/',
+    },
+  ],
+  bottomLine: [
+    `<strong class="text-white">Start with 20 to 30 minutes including walk breaks, three times a
+            week, and build from there.</strong> Most sessions for most goals sit between 20 and 45
+            minutes; intervals are shorter, long runs are longer, and the weekly total matters
+            more than any one day.`,
+    `The US guidelines suggest at least 75 minutes of vigorous or 150 of moderate activity a
+            week as a floor. Add time by about 10% a week as a rule of thumb, keep most runs easy,
+            and manage heat and boredom on longer sessions. For a ready-made progression, see our
+            <a href="/couch-to-5k-treadmill/" class="text-[#5AA9FF] font-bold no-underline">couch to 5K treadmill plan</a>.`,
+  ],
+};
