@@ -116,7 +116,9 @@ export default {
             <li><strong>Building toward running:</strong> three to four sessions of 20 to 30
             minutes of walk-run intervals. A structured
             <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">Couch to 5K plan</a>
-            handles the progression for you.</li>
+            handles the progression for you, and
+            <a href="/how-long-should-i-run-on-a-treadmill/" class="text-[#0F62FE] font-medium">how long to run on a treadmill</a>
+            covers session length once you are running.</li>
             <li><strong>Desk walking:</strong> slow walking for an hour or more, spread across the
             working day. It counts as light activity and helps break up sitting, but it is usually
             too slow to count as moderate exercise.</li>

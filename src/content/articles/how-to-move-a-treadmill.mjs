@@ -156,7 +156,8 @@ export default {
             Partial disassembly turns many impossible moves into ordinary ones. Taking the console
             and uprights off a non-folding treadmill reduces it to a deck-and-motor base that is
             lower, narrower and noticeably lighter, and that base is far easier to get round a
-            stair turn or through a doorway.
+            stair turn or through a doorway. The full sequence is in our guide to
+            <a href="/how-to-disassemble-a-treadmill/" class="text-[#0F62FE] font-medium">disassembling a treadmill</a>.
           </p>
           <p>
             It is worth doing if the route measurements say the assembled machine will not fit, if

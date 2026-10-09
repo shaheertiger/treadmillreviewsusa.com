@@ -46,7 +46,8 @@ export default {
             calves. <strong>Running</strong> reaches higher intensities than walking can, builds
             running-specific fitness that walking does not, and covers more distance in the same
             time — at the cost of a flight phase on every stride, which is where the impact comes
-            from.
+            from. If you only want the walking side, see
+            <a href="/what-does-incline-walking-do/" class="text-[#0F62FE] font-medium">what incline walking does</a>.
           </p>
           <p>
             For general fitness and weight loss, the two are closer than the marketing on either

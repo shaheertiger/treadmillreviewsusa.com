@@ -33,6 +33,9 @@ export default {
       id: 'short-answer',
       heading: 'What to Look For in a Walking Pad: The Short Answer',
       html: `          <p>
+            If you are still deciding whether you want one at all, start with
+            <a href="/what-is-a-walking-pad/" class="text-[#0F62FE] font-medium">what a walking pad is</a> and
+            <a href="/are-walking-pads-worth-it/" class="text-[#0F62FE] font-medium">whether walking pads are worth it</a>.
             In order of how much each one matters, a walking pad should have:
           </p>
           <ul>
@@ -351,7 +354,9 @@ export default {
             under the belt — commonly every few months under heavy use, as the manual specifies.
             Check the pad comes with the tool and the lubricant, or can be serviced with standard
             ones. Our <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a>
-            covers the method, and the manual sets the interval and product.
+            covers the method, and the manual sets the interval and product. For a low deck with
+            no rails to lift, see
+            <a href="/how-to-lubricate-a-walking-pad/" class="text-[#0F62FE] font-medium">how to lubricate a walking pad</a>.
           </p>`,
     },
     {

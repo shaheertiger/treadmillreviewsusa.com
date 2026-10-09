@@ -1,0 +1,483 @@
+export default {
+  slug: 'what-is-a-walking-pad',
+  title: 'What Is a Walking Pad? (2026): How It Differs From a Treadmill',
+  description:
+    'A walking pad is a compact, low, motorised walking belt with no console arm and usually no handrail. How it differs from a treadmill, speeds, incline, who it suits.',
+  crumbLabel: 'What Is a Walking Pad?',
+  breadcrumb: { name: 'Buying Guides', url: '/guides/' },
+  kicker: 'Question Answered',
+  updated: 'October 2026',
+  updatedLong: 'October 9, 2026',
+  published: '2026-10-09',
+  socialProof: '1.6k',
+  h1: ['What Is a', 'Walking Pad?'],
+  standfirst:
+    'A walking pad is a small, flat, motorised belt built for walking rather than running, usually with no handrail and a remote instead of a console. Here is exactly what one is, how it differs from a treadmill, how fast it goes, and who it actually suits.',
+  ctas: [
+    { label: 'Walking Pad vs Treadmill Table', href: '#how-it-differs' },
+    { label: 'Who It Is For', href: '#who-it-is-for' },
+  ],
+  tags: ['what is a walking pad', 'walking pad', 'walking pad vs treadmill', 'under desk treadmill', 'walking pad speed'],
+  stickyCta: { text: 'See How It Differs', link: '#how-it-differs' },
+  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills
+          and walking pads. This is a plain explanation of the category, not a product test or a
+          health recommendation. Figures for deck length, top speed and weight are typical ranges
+          for the category rather than the specification of any particular model, and individual
+          pads sit above and below them — the manufacturer's manual and listing are the authority
+          on any machine you are considering. If you have a balance, joint or heart condition, or
+          any concern about walking for long periods, talk to a doctor or physical therapist before
+          adding hours of walking to your day.`,
+  lead: `A walking pad is the stripped-down end of the treadmill family: a motor, a short belt,
+          a low deck and a remote control, with almost everything else taken away. No console arm,
+          usually no handrail, no running speeds and, in most cases, no incline. What it gains in
+          return is size — thin enough to slide under a sofa or a bed, light enough for one person
+          to move, and quiet enough at walking pace to use under a desk while working. This page
+          explains what the category is, how it differs from a conventional treadmill, the speeds
+          it runs at, and the people it suits and does not suit. If you have already decided you
+          want one, our buying guide covers what to look for; this page is about what the thing
+          actually is.`,
+  sections: [
+    {
+      id: 'short-answer',
+      heading: 'What Is a Walking Pad? The Short Answer',
+      html: `          <p>
+            <strong>A walking pad is a compact, low-profile motorised walking belt with no console
+            arm and usually no handrail, controlled by a remote or app and designed for walking at
+            roughly 0.5 to 4 mph.</strong> It is a type of treadmill, built for steady walking
+            rather than running, and sized to be stored flat under furniture or used under a
+            standing desk.
+          </p>
+          <p>
+            The defining features are what it leaves out. A conventional treadmill has an upright
+            frame at the front carrying the console and a pair of handrails, a deck commonly 55 to
+            60 inches long, a motor sized for running, and usually a powered incline. A walking pad
+            typically has none of the upright structure, a belt in the region of 40 inches long, a
+            smaller motor, and a flat deck. Some models add a handrail that folds up from the front
+            of the deck, and those often reach a higher top speed when the rail is raised; they are
+            usually sold as 2-in-1 or folding walking pads and sit between the two categories.
+          </p>
+          <p>
+            The name itself began as one manufacturer's product name and has become the generic
+            word for the whole category, in the same way a brand name can become the everyday word
+            for a vacuum cleaner. You will also see these machines listed as under-desk treadmills,
+            walking treadmills, flat treadmills or slim treadmills. The labels overlap heavily, and
+            they mostly describe the same kind of machine.
+          </p>
+          <p>
+            What a walking pad is for, in one sentence: adding low-intensity walking to time you
+            would otherwise spend sitting or standing still, in a space that could not take a full
+            treadmill. What it is not for is running, steep incline work, or replacing a proper
+            training machine for someone who wants to get faster or fitter in a structured way.
+          </p>`,
+    },
+    {
+      id: 'how-it-differs',
+      heading: 'How Is a Walking Pad Different From a Treadmill?',
+      html: `          <p>
+            The short version is that a walking pad trades capability for size. The table below
+            sets out the typical differences across the categories. Treat every figure as a typical
+            range rather than a rule: some pads are longer, some treadmills are shorter, and the
+            2-in-1 models blur the line on purpose.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Feature</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Typical walking pad</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Typical home treadmill</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Handrail</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">None, or a rail that folds up from the deck</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Fixed side and front rails on an upright frame</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Controls</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Handheld remote, phone app, small display in the deck</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Console at chest height with buttons or a screen</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Belt length</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Commonly around 40 inches, some shorter or longer</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Commonly 55 to 60 inches</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Top speed</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Commonly 3.5 to 4 mph flat; about 6 mph on some rail-up models</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Commonly 10 to 12 mph</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Incline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Usually none; a few offer a small fixed or powered incline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Usually powered, commonly to 10 to 15%</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Storage</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Slides flat under a sofa or bed, or stands on end</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Folds upright, or does not fold at all</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Moving it</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">One person, on its front wheels</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Usually two people, or stays put</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Built for</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Steady, easy walking for long periods</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walking, incline work and running</td></tr>
+            </tbody>
+          </table></div>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">No rail, or a folding rail</h3>
+          <p>
+            The most visible difference is the missing upright. On a flat walking pad there is
+            nothing to hold and nothing in front of you except, usually, your desk. That is the
+            point — the desk is the thing you lean on and look at — but it also means the machine
+            relies on you staying centred on the belt by yourself. Folding-rail models put a short
+            bar back in front of you, which helps balance and gives somewhere to mount a small
+            display, but it is not the same structure as a treadmill's frame.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">A short deck</h3>
+          <p>
+            A 40-inch belt is fine for a relaxed walk for most people. Stride length grows with
+            speed, though, and taller walkers find that a short belt starts to cramp their natural
+            gait well before the pad's top speed. This is the single biggest practical difference
+            between the categories, and our
+            <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad vs treadmill comparison</a>
+            goes through it in detail, along with incline, cost per year and which machine people
+            end up using.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">A low top speed and a small motor</h3>
+          <p>
+            Walking pads are geared for walking pace. The motor is sized to keep a belt moving
+            steadily under a walker for long stretches, not to absorb the impact of a runner
+            landing on it several times a second. The low top speed is not a fault; it reflects
+            what the machine is for.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">A remote instead of a console</h3>
+          <p>
+            Because there is no upright, the controls move to your hand or your phone. Most pads
+            ship with a small remote for start, stop and speed, and many add a phone app and a
+            small LED readout set into the front of the deck. Some offer an automatic mode in which
+            the belt speeds up when you walk towards the front and slows when you drift back.
+            Lose the remote and, on some models, you lose the ability to change speed, which is a
+            small but real ownership consideration.
+          </p>`,
+    },
+    {
+      id: 'is-it-a-treadmill',
+      heading: 'Is a Walking Pad a Treadmill?',
+      html: `          <p>
+            Yes, mechanically a walking pad is a treadmill: a motor turns a front roller, the
+            roller drives a belt over a deck, and the belt carries you backwards while you walk
+            forwards. Every part that makes a treadmill a treadmill is present. It is a narrower
+            interpretation of the idea, not a different machine.
+          </p>
+          <p>
+            Where the distinction matters is in what each word implies to a buyer. When people say
+            "treadmill" they usually picture the full machine with a console and rails, capable of
+            running speeds and incline. When they say "walking pad" they mean the flat, compact
+            version that only walks. If you are shopping, the useful question is not which label a
+            listing uses but whether the machine in front of you can do what you want: run, incline,
+            or simply walk for hours. Listings sometimes call a walking pad a treadmill and
+            occasionally call a compact folding treadmill a walking pad, so read the speed range,
+            belt length and incline before relying on the name.
+          </p>
+          <p>
+            There is also a middle category worth knowing about. Compact folding treadmills keep a
+            short upright and handrails but fold flat-ish for storage, and many reach running
+            speeds. Our guide to
+            <a href="/portable-treadmills/" class="text-[#0F62FE] font-medium">portable treadmills</a>
+            sets out the three kinds of compact machine — flat pads, 2-in-1 pads with a folding rail,
+            and compact folding treadmills — and what each gives up to be movable.
+          </p>`,
+    },
+    {
+      id: 'speeds',
+      heading: 'How Fast Does a Walking Pad Go?',
+      html: `          <p>
+            Most flat walking pads without a rail top out somewhere around 3.5 to 4 mph, and most
+            start from about 0.5 mph. Models with a fold-up handrail commonly allow a higher top
+            speed with the rail raised, often about 6 mph. Those are typical figures for the
+            category; the listing and manual give the range for any specific pad.
+          </p>
+          <p>
+            In practice the speeds people actually use are lower than the top speed. The table
+            below shows what each walking speed means in time per mile — pure arithmetic, 60
+            divided by the speed in mph — and how the speed is typically used on a walking pad.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Speed (mph)</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Time per mile</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Typical use on a pad</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1.0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">60:00</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Getting used to it; reading or detailed work</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1.5</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">40:00</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Typing and calls for many people</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">30:00</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Common desk pace once settled</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.5</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">24:00</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Upper end for typing; easy walk with TV</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20:00</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Comfortable walk away from the desk</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.5</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">17:09</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Purposeful walk; short belts start to feel short</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4.0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15:00</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Brisk walk; top speed of many flat pads</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            The interesting point in that table is how slow desk walking is. At 1.5 mph a mile
+            takes forty minutes, and at 2 mph it takes thirty. That is far slower than most people
+            walk outdoors, and it is deliberate: below about 2 mph, most people can type, read and
+            hold a conversation without the walking interfering. Above that, the work starts to
+            suffer. The value of a walking pad comes from hours at a slow pace, not minutes at a
+            fast one.
+          </p>
+          <p>
+            Two further details are worth knowing. Speed steps on a remote are usually in
+            increments of 0.1 or so, which makes it easy to find a pace that suits a particular task.
+            And because a walking pad's speed is typically estimated from the motor rather than
+            measured at the belt, the displayed speed and distance are best treated as consistent
+            rather than exact.
+          </p>`,
+    },
+    {
+      id: 'how-people-use',
+      heading: 'How Do People Actually Use a Walking Pad?',
+      html: `          <p>
+            Most walking pads end up in one of three roles, and knowing which one you have in mind
+            is the most useful thing to settle before buying.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Under a standing desk</h3>
+          <p>
+            This is the use the category was designed around. The pad sits under a standing desk,
+            the desk is raised to elbow height while walking, and the owner walks slowly through
+            emails, calls and reading for blocks of the working day. The pace is low — commonly
+            1.5 to 2.5 mph — and the sessions are long. The desk has to rise high enough to allow
+            for the pad's deck height on top of your standing height, which is a measurement worth
+            taking before buying either. Our guide to
+            <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmills</a>
+            covers desk height, walking speed while working, and how the setup holds up over time.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">In the living room</h3>
+          <p>
+            The second common use is a pad that comes out from under the sofa in the evening for
+            a walk in front of the television, then goes back. This is where the low profile pays
+            for itself: there is no machine taking up a corner of the room for the 22 hours a day
+            it is not being used. Sessions tend to be shorter and slightly faster than at a desk,
+            often 2.5 to 3.5 mph, and the owner treats it as a substitute for an evening walk
+            outside when the weather, the dark or childcare make going out awkward.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Short walks between other things</h3>
+          <p>
+            The third is less planned: a pad left out in a home office or spare room and used for
+            ten or fifteen minutes at a time, during a phone call, between meetings, or while a
+            podcast plays. This pattern works well for some people and badly for others. It depends
+            entirely on the pad being left out and plugged in, because a machine that has to be
+            dragged out from under something for a ten-minute walk usually stops being used for
+            ten-minute walks.
+          </p>
+          <p>
+            What all three have in common is that the pad is filling time that would otherwise be
+            sedentary, not replacing a workout. People who buy one expecting it to stand in for a
+            run or a gym session tend to be disappointed; people who buy one to turn sitting time
+            into walking time tend to be the ones who keep using it.
+          </p>`,
+    },
+    {
+      id: 'who-it-is-for',
+      heading: 'Who Is a Walking Pad For, and Who Is It Not For?',
+      html: `          <p>
+            A walking pad suits people whose problem is too much sitting rather than too little
+            hard exercise, and whose space or budget rules out a full treadmill. It does not suit
+            runners, people who want incline training, or anyone who needs something to hold on to.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">It tends to suit</h3>
+          <ul>
+            <li><strong>Desk workers with a standing desk</strong>, or a plan to get one, who want
+            to turn part of the working day into walking.</li>
+            <li><strong>People in small homes and apartments</strong> where a full treadmill would
+            take over a room and a machine that slides under the bed is the only realistic option.</li>
+            <li><strong>Walkers who struggle to get out</strong> because of weather, darkness,
+            shift patterns or caring responsibilities, and who want an easy indoor walk at short
+            notice.</li>
+            <li><strong>People easing back into activity</strong> who want slow, steady walking
+            and nothing more — with the proviso in the note at the top of this page about checking
+            with a doctor or physical therapist first if there is a medical reason for caution.</li>
+            <li><strong>Uncertain buyers</strong> who want to find out whether they will use a
+            walking machine at all, without committing to the price and size of a treadmill.</li>
+          </ul>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">It tends not to suit</h3>
+          <ul>
+            <li><strong>Runners and joggers.</strong> Flat pads stop at walking speeds, and even
+            the rail-up models that reach about 6 mph have a short belt and a small motor. Our page
+            on <a href="/can-you-run-on-a-walking-pad/" class="text-[#0F62FE] font-medium">whether you can run on a walking pad</a>
+            explains the limits.</li>
+            <li><strong>Incline walkers.</strong> If steep walking is the workout you want, a pad
+            without a meaningful incline cannot provide it.</li>
+            <li><strong>Tall walkers who walk fast.</strong> A short belt and a long stride at 3.5
+            mph and above do not get on.</li>
+            <li><strong>Anyone who needs support.</strong> If balance is a concern, a flat pad with
+            nothing to hold is the wrong machine; a treadmill with full handrails is the safer
+            choice.</li>
+            <li><strong>Heavier users at the top of the range.</strong> Weight limits on pads are
+            often lower than on full treadmills. Check the stated limit and leave a margin.</li>
+          </ul>
+          <p>
+            If you are in the middle — some walking at a desk, some brisk walking at the weekend —
+            a 2-in-1 pad with a folding rail, or a compact folding treadmill, is often the better
+            compromise than a flat pad.
+          </p>`,
+    },
+    {
+      id: 'incline',
+      heading: 'Do Walking Pads Have Incline?',
+      html: `          <p>
+            Most do not. The standard walking pad is flat, and that is part of how it stays so
+            thin: an incline motor and lift mechanism add height, weight and cost that the category
+            is designed to avoid.
+          </p>
+          <p>
+            A minority of pads do offer incline, in one of two forms. Some have a small fixed
+            incline built into the deck shape or set by fold-out feet, so the belt is permanently
+            angled slightly upwards. Others have a modest powered incline adjustable from the remote
+            or app. In both cases the range is typically small — a few percent — compared with the
+            10 to 15% a home incline treadmill commonly reaches. A small incline adds a little
+            effort to a walk; it does not turn a pad into an incline trainer.
+          </p>
+          <p>
+            Two practical points follow. First, incline lengthens the stride, so a short belt
+            feels shorter on a slope than on the flat. Second, if incline walking is the main
+            reason you want a machine, you are almost always better served by a treadmill built
+            for it. Our page on
+            <a href="/what-does-incline-walking-do/" class="text-[#0F62FE] font-medium">what incline walking does</a>
+            explains why people seek it out and what changes as the grade rises.
+          </p>`,
+    },
+    {
+      id: 'carpet',
+      heading: 'Can You Put a Walking Pad on Carpet?',
+      html: `          <p>
+            Usually yes, with a firm mat underneath, but check the manual first. A walking pad sits
+            very low, and on deep or soft carpet the underside of the deck and the motor housing
+            can sit close to the pile. That restricts airflow around the motor, lets carpet fibres
+            and dust get drawn towards the belt, and lets the pad rock slightly as the carpet
+            compresses under each step.
+          </p>
+          <p>
+            A firm, flat equipment mat solves most of this: it gives the pad a level, stable base,
+            keeps fibres away from the underside, and protects the carpet from the pressure marks a
+            heavy machine leaves. Low, dense carpet with a mat is generally fine; deep shag is the
+            case to avoid. Our guide to
+            <a href="/treadmill-on-carpet/" class="text-[#0F62FE] font-medium">putting a treadmill on carpet</a>
+            covers mats, airflow and the checks to make, and all of it applies to a walking pad.
+          </p>`,
+    },
+    {
+      id: 'loud',
+      heading: 'Are Walking Pads Loud?',
+      html: `          <p>
+            At walking pace they are generally quieter than a full treadmill, but not silent. The
+            sound comes from two places: a motor hum and belt noise that rise with speed, and the
+            thud of footsteps, which is mostly a function of how heavily you walk and what the pad
+            is sitting on.
+          </p>
+          <p>
+            In a room on its own, most people find a pad at desk speeds quiet enough to take calls
+            on. The noise that causes complaints is the footfall travelling through the floor to
+            the room or flat below, and that is the part a good mat and a softer walking style
+            reduce more than any choice of machine. Our
+            <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">guide to quiet treadmills</a>
+            explains where the noise comes from and what actually reduces it. A pad that grows
+            noticeably louder over time — a squeak, a whine or a rhythmic slap — usually needs its
+            belt checked, centred or lubricated rather than replacing.
+          </p>`,
+    },
+    {
+      id: 'before-you-buy',
+      heading: 'What Else Should You Know Before Getting One?',
+      html: `          <p>
+            A walking pad is simple to own, but three things catch new owners out. None is a reason
+            not to buy one; all are worth knowing in advance.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">It needs some maintenance</h3>
+          <p>
+            Like any treadmill, a pad's belt slides over a deck, and most need occasional
+            lubrication under the belt and the odd tracking adjustment to keep the belt centred.
+            Many ship with the hex key and a small bottle of silicone for exactly this. The job is
+            slightly different on a pad because there is no rail to lift the belt against, and our
+            step-by-step guide to
+            <a href="/how-to-lubricate-a-walking-pad/" class="text-[#0F62FE] font-medium">lubricating a walking pad</a>
+            covers the method. Some pads use a pre-waxed deck and say not to lubricate at all; the
+            manual decides.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Lifespan and support vary widely</h3>
+          <p>
+            Many pads are sold under brands with little presence beyond online marketplaces.
+            Warranties are commonly one to two years, and under heavy daily desk use a realistic
+            lifespan for a budget pad is often a few years rather than a decade. That does not make
+            them poor value, but it does change the arithmetic — our page on
+            <a href="/are-walking-pads-worth-it/" class="text-[#0F62FE] font-medium">whether walking pads are worth it</a>
+            works through the cost per use and who tends to regret the purchase.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The specifications that matter are not the headline ones</h3>
+          <p>
+            Listings tend to lead with peak motor power and app features. The figures that decide
+            whether a pad works for you are belt length against your height and walking speed, the
+            continuous motor rating, the stated weight limit, the deck height under your desk, and
+            any maximum continuous running time in the manual. Our
+            <a href="/walking-pad-buying-guide/" class="text-[#0F62FE] font-medium">walking pad buying guide</a>
+            takes each of those in turn, along with warranty, parts and where to try one before
+            buying.
+          </p>`,
+    },
+  ],
+  faqs: [
+    {
+      q: 'What is the difference between a walking pad and a treadmill?',
+      a: `A walking pad is a compact treadmill built only for walking. It usually has no handrail or console upright, a belt commonly around 40 inches long, a top speed of roughly 3.5 to 4 mph, no incline, and a remote for control. A typical home treadmill has rails, a console, a 55 to 60-inch belt, running speeds and powered incline.`,
+    },
+    {
+      q: 'Is a walking pad good for exercise?',
+      a: `It is good for adding easy walking to time you would otherwise spend sitting, which is what it is designed for. It is not a training machine: speeds are low and most have no incline. Think of it as a way to accumulate gentle movement across the day rather than as a replacement for a workout, and set expectations accordingly.`,
+    },
+    {
+      q: 'Can you use a walking pad without a standing desk?',
+      a: `Yes. Many owners use one in the living room in front of the television, or for short walks during phone calls, with no desk at all. A standing desk is only needed if you want to work while walking. Without one, you will need somewhere to rest a phone or tablet, or simply walk without a screen.`,
+    },
+    {
+      q: 'How long can you walk on a walking pad at once?',
+      a: `Check the manual. Some pads state a maximum continuous running time followed by a rest period, which matters for long desk sessions. If there is no stated limit, many owners walk in blocks of 30 to 60 minutes with breaks. Start with short sessions and build up, because hours of slow walking take some getting used to.`,
+    },
+    {
+      q: 'Do walking pads need to be plugged in?',
+      a: `Yes. A walking pad has an electric motor and runs from a wall socket. It is not a manual treadmill. Plug it directly into a wall outlet where possible, as manuals commonly advise against extension leads or power strips for motorised fitness equipment, and keep the cable clear of the belt and of your walking path.`,
+    },
+    {
+      q: 'Are walking pads safe?',
+      a: `For steady walking at sensible speeds, they are generally safe for people with good balance. The risks come from the missing handrail: stepping off the side, drifting off the back, or using the pad while distracted. Keep the remote in reach, start slowly, keep pets and children away, and choose a model with a rail if balance is any concern.`,
+    },
+  ],
+  mistakesHeading: 'Common Mistakes With Walking Pads',
+  mistakesIntro:
+    'Most walking pad disappointments come from expecting a different machine. These are the four that come up most.',
+  mistakes: [
+    {
+      title: 'Buying one expecting to run on it',
+      body: `Flat pads stop at walking speeds, and even rail-up models that reach about 6 mph have a short belt and a small motor. If running is any part of the plan, buy a treadmill built for it. A pad is a walking machine, and treating it as anything else ends in either disappointment or a worn-out motor.`,
+    },
+    {
+      title: 'Ignoring belt length because the listing does not lead with it',
+      body: `Belt length is the specification that most often decides whether a pad is comfortable, and it is easy to miss under the motor and app claims. Taller walkers and anyone planning to walk briskly should check it first. If a pad's belt is short for your stride at the speed you want, nothing else about it will compensate.`,
+    },
+    {
+      title: 'Storing it somewhere that takes effort to reach',
+      body: `A pad that has to be dragged out from under a bed and plugged in behind the sofa gets used less often. If you can, leave it where it is used, plugged in and ready. The less effort a session takes to start, the more sessions happen, and a pad is only useful in the hours it is actually turning.`,
+    },
+    {
+      title: 'Walking too fast at the desk',
+      body: `Desk walking works at a slow pace, commonly 1.5 to 2.5 mph. Pushing the speed up makes typing harder, tires you sooner and shortens the sessions, which defeats the purpose. Settle on a pace you can sustain for an hour without thinking about it, and save brisker walking for time away from the keyboard.`,
+    },
+  ],
+  relatedHeading: 'Related Walking Pad Guides',
+  related: [
+    {
+      kicker: 'Buying',
+      title: 'Walking Pad Buying Guide',
+      blurb: 'Belt length, motor ratings, weight limits, deck height and warranty, in order.',
+      url: '/walking-pad-buying-guide/',
+    },
+    {
+      kicker: 'Comparison',
+      title: 'Walking Pad vs Treadmill',
+      blurb: 'Deck length, incline, space, noise and the true cost per year, side by side.',
+      url: '/walking-pad-vs-treadmill/',
+    },
+    {
+      kicker: 'Verdict',
+      title: 'Are Walking Pads Worth It?',
+      blurb: 'Who they are worth it for, who regrets them, and the cost-per-use arithmetic.',
+      url: '/are-walking-pads-worth-it/',
+    },
+  ],
+  bottomLine: [
+    `<strong class="text-white">A walking pad is a compact treadmill built only for
+            walking.</strong> No upright, usually no handrail, a short belt, a top speed of roughly
+            3.5 to 4 mph, little or no incline, and a remote instead of a console — all traded for a
+            machine thin enough to slide under the sofa or sit under a standing desk.`,
+    `It suits people whose problem is too much sitting and too little space, and it does not
+            suit runners, incline walkers or anyone who needs something to hold. If it sounds like
+            the right machine, our
+            <a href="/walking-pad-buying-guide/" class="text-[#5AA9FF] font-bold no-underline">walking pad buying guide</a>
+            covers what to check before you buy one.`,
+  ],
+};
