@@ -435,6 +435,13 @@ export const SECTIONS: Section[] = [
             badge: 'Renting',
             url: '/rent-a-treadmill/',
           },
+          {
+            title: 'Are Treadmills HSA or FSA Eligible?',
+            description:
+              'When a treadmill can qualify, what a Letter of Medical Necessity does, and why the retailer label decides nothing.',
+            badge: 'HSA / FSA',
+            url: '/are-treadmills-hsa-fsa-eligible/',
+          },
         ],
       },
       {
@@ -963,6 +970,13 @@ export const SECTIONS: Section[] = [
             badge: 'Checklist',
             url: '/treadmill-buying-mistakes/',
           },
+          {
+            title: 'How to Turn On a Treadmill',
+            description:
+              'The power switch, the safety key, the console boot and quick start — and what to check when nothing happens.',
+            badge: 'First use',
+            url: '/how-to-turn-on-a-treadmill/',
+          },
         ],
       },
       {
@@ -1182,6 +1196,32 @@ export const SECTIONS: Section[] = [
           },
         ],
       },
+      {
+        name: 'Walking pads, answered',
+        pages: [
+          {
+            title: 'What Is a Walking Pad?',
+            description:
+              'How a walking pad differs from a treadmill, who it suits, the speeds, and what it cannot do.',
+            badge: 'Explainer',
+            url: '/what-is-a-walking-pad/',
+          },
+          {
+            title: 'Are Walking Pads Worth It?',
+            description:
+              'Who gets their money back and who regrets it, with cost-per-use arithmetic and the lifespan question.',
+            badge: 'Verdict',
+            url: '/are-walking-pads-worth-it/',
+          },
+          {
+            title: 'Can You Run on a Walking Pad?',
+            description:
+              'Why most cannot take a running stride, what the 2-in-1 fold-up models allow, and what to buy instead.',
+            badge: 'Running',
+            url: '/can-you-run-on-a-walking-pad/',
+          },
+        ],
+      },
     ],
   },
   {
@@ -1271,6 +1311,13 @@ export const SECTIONS: Section[] = [
               'Resetting the console, iFIT screens that freeze, belt and incline faults, and what to have ready for support.',
             badge: 'ProForm',
             url: '/proform-treadmill-troubleshooting/',
+          },
+          {
+            title: 'Treadmill Water Damage',
+            description:
+              'What to do before switching it back on, what water harms first, typical repair costs and when to replace.',
+            badge: 'Water',
+            url: '/treadmill-water-damage/',
           },
         ],
       },
@@ -1448,6 +1495,13 @@ export const SECTIONS: Section[] = [
             badge: 'Warning',
             url: '/can-you-use-wd40-on-a-treadmill/',
           },
+          {
+            title: 'How to Lubricate a Walking Pad',
+            description:
+              'Lubricating a deck with no rails to lift: loosen, lift the edge, apply silicone, re-tension and re-centre.',
+            badge: 'Walking pad',
+            url: '/how-to-lubricate-a-walking-pad/',
+          },
         ],
       },
       {
@@ -1617,6 +1671,13 @@ export const SECTIONS: Section[] = [
               'Cold, condensation, dust, GFCI outlets and concrete floors, and the warranty clause to check first.',
             badge: 'Garage',
             url: '/treadmill-in-garage/',
+          },
+          {
+            title: 'How to Disassemble a Treadmill',
+            description:
+              'Taking one apart for a move or disposal: tools, the order to work in, the console harness and reassembly.',
+            badge: 'Disassembly',
+            url: '/how-to-disassemble-a-treadmill/',
           },
         ],
       },
@@ -1888,6 +1949,95 @@ export const SECTIONS: Section[] = [
               'Time per mile at every speed, 5K and 10K times, 10,000 steps in miles and minutes, and distance per 30 minutes.',
             badge: 'Distance',
             url: '/how-long-is-a-mile-on-a-treadmill/',
+          },
+        ],
+      },
+      {
+        name: 'Common questions, answered',
+        pages: [
+          {
+            title: 'What Muscles Does a Treadmill Work?',
+            description:
+              'Walking, running, incline and backwards compared — what each loads, and what a treadmill does not train.',
+            badge: 'Muscles',
+            url: '/what-muscles-does-a-treadmill-work/',
+          },
+          {
+            title: 'What Does Incline Walking Do?',
+            description:
+              'Heart rate, calories, muscle and joint load at a grade, and the fat-loss question answered honestly.',
+            badge: 'Incline',
+            url: '/what-does-incline-walking-do/',
+          },
+          {
+            title: 'Does Incline Walking Build Glutes?',
+            description:
+              'What incline changes for the glutes, where it stops helping, and why strength work still matters.',
+            badge: 'Glutes',
+            url: '/does-incline-walking-build-glutes/',
+          },
+          {
+            title: 'Is Running on a Treadmill Bad for You?',
+            description:
+              'The real downsides — heat, monotony, falls, sudden mileage jumps — and the myths that are not.',
+            badge: 'Running',
+            url: '/is-running-on-a-treadmill-bad-for-you/',
+          },
+          {
+            title: 'Is Treadmill Walking the Same as Outside?',
+            description:
+              'Where belt walking matches the pavement and where it does not: surface, stride, balance and tracking.',
+            badge: 'Walking',
+            url: '/is-walking-on-a-treadmill-the-same-as-walking-outside/',
+          },
+          {
+            title: 'How Long Should I Run on a Treadmill?',
+            description:
+              'Session lengths by goal and experience, the weekly guideline figures, and how to build up safely.',
+            badge: 'Duration',
+            url: '/how-long-should-i-run-on-a-treadmill/',
+          },
+          {
+            title: 'Can You Use a Treadmill Every Day?',
+            description:
+              'Daily walking versus daily running, rest and easy days, warning signs, and what daily use does to the machine.',
+            badge: 'Frequency',
+            url: '/can-you-use-a-treadmill-every-day/',
+          },
+          {
+            title: 'Should You Hold the Handrails?',
+            description:
+              'When holding on is the right call, what habitual gripping costs, and how to wean off it.',
+            badge: 'Handrails',
+            url: '/should-you-hold-the-handrails-on-a-treadmill/',
+          },
+          {
+            title: 'Can You Walk Barefoot on a Treadmill?',
+            description:
+              'Friction, heat, toes near the hood and hygiene — the risks, and what to wear instead.',
+            badge: 'Footwear',
+            url: '/can-you-walk-barefoot-on-a-treadmill/',
+          },
+          {
+            title: 'What Are METs on a Treadmill?',
+            description:
+              'What the console MET figure means, the standard equations behind it, and turning METs into calories.',
+            badge: 'METs',
+            url: '/what-are-mets-on-a-treadmill/',
+          },
+          {
+            title: 'Does a Tracker Count Steps on a Treadmill?',
+            description:
+              'Why wrist trackers usually do, why holding the rails stops them, and why watch and console distance disagree.',
+            badge: 'Trackers',
+            url: '/does-a-fitness-tracker-count-steps-on-a-treadmill/',
+          },
+          {
+            title: 'Do Walking Pads Help You Lose Weight?',
+            description:
+              'What slow all-day walking adds in calories, why it is a modest lever, and how to make it count.',
+            badge: 'Walking pad',
+            url: '/do-walking-pads-help-you-lose-weight/',
           },
         ],
       },

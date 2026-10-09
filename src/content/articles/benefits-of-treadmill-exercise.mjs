@@ -310,7 +310,9 @@ export default {
           <p>
             <strong>Against an exercise bike or rower,</strong> a treadmill is weight-bearing, which
             matters for bone, but involves more impact if you run. Bikes are gentler on the joints
-            and rowers involve the upper body. Our comparisons of the
+            and rowers involve the upper body; our page on
+            <a href="/what-muscles-does-a-treadmill-work/" class="text-[#0F62FE] font-medium">what muscles a treadmill works</a>
+            covers the legs in detail. Our comparisons of the
             <a href="/treadmill-vs-exercise-bike/" class="text-[#0F62FE] font-medium">treadmill and exercise bike</a>
             and the
             <a href="/treadmill-vs-rowing-machine/" class="text-[#0F62FE] font-medium">treadmill and rowing machine</a>

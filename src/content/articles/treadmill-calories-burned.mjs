@@ -265,7 +265,9 @@ export default {
             The practical rule: if you cannot hold a speed and grade combination with your hands
             free, it is too much for now, and the honest fix is to lower one of them. Light contact
             for balance is fine, particularly for older or less steady users; for everyone else,
-            the rails are for getting on and off. Our guide to
+            the rails are for getting on and off, and our page on
+            <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium">whether to hold the handrails</a>
+            covers how to wean off them. Our guide to
             <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">treadmill heart rate zones</a>
             notes the same problem from the other side: holding the rails also lowers heart rate,
             so a chest strap will quietly confirm that the session got easier.

@@ -44,7 +44,9 @@ export default {
             its motor, the shorter and narrower its belt, and the less stable it is under a fast or
             heavy stride. A walking pad suits walking at modest speeds; a folding treadmill on wheels
             suits walking and running but moves only short distances on a smooth floor; a manual
-            treadmill suits walking for people who want no motor at all.
+            treadmill suits walking for people who want no motor at all. Whether a pad can take a
+            jog is answered in
+            <a href="/can-you-run-on-a-walking-pad/" class="text-[#0F62FE] font-medium">can you run on a walking pad</a>.
           </p>
           <p>
             For most buyers the right question is not "how portable" but "how often will it move,

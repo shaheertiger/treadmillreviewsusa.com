@@ -282,7 +282,9 @@ export default {
             Wear proper walking or running shoes with a secure fit and laces tied — double-knotted
             if they tend to loosen. Socks, bare feet and slippers offer no grip and no protection,
             and a bare foot that touches the side rail or the belt edge at speed can be badly
-            burned.
+            burned. Our answer to
+            <a href="/can-you-walk-barefoot-on-a-treadmill/" class="text-[#0F62FE] font-medium">can you walk barefoot on a treadmill</a>
+            goes through the risks in more detail.
           </p>
           <p>
             Loose clothing, dangling drawstrings and long untied hair can catch in the belt or be

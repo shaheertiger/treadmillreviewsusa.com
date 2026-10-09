@@ -332,6 +332,32 @@ section marked `products: true`; their top buttons pointed at an anchor that did
 `/sole-f63-treadmill/` gave a 10 mph top speed and a 10-year motor warranty, where independent
 sources agree on 12 mph and lifetime frame-and-motor cover.
 
+### Question-answer batch: twenty pages
+
+Twenty pages written as direct answers to question queries from a Semrush US question pull
+(2026-10-09) against the slugs the site already had. Each opens with a `short-answer` section whose
+first paragraph is a bold, one-to-two-sentence answer, and most later headings are the follow-up
+questions a reader asks next. They carry `kicker: 'Question Answered'`. Questions an existing page
+already owns (is running on a treadmill easier, belly fat, lubrication intervals, carpet, Strava)
+were linked to rather than given a competing page. None carries product specifications or
+`products`, so none needs `dataPending`.
+
+- **Walking pads** (new "Walking pads, answered" group in `/guides/`): what is a walking pad, are
+  walking pads worth it, can you run on a walking pad; plus how to lubricate one (`/maintenance/`)
+  and whether they help with weight loss (`/training/`)
+- **Training** (new "Common questions, answered" group in `/training/`): what muscles a treadmill
+  works, what incline walking does, does it build glutes, is treadmill running bad for you, is
+  treadmill walking the same as outside, how long to run, daily use, holding the handrails, walking
+  barefoot, METs, and whether trackers count treadmill steps
+- **Ownership**: how to turn on a treadmill (`/guides/`), how to disassemble one (`/maintenance/`),
+  water damage (`/problems/`), and whether treadmills are HSA/FSA eligible (`/price/`)
+
+The METs page states the ACSM walking and running equations and computes its tables from them;
+calorie figures elsewhere are the same MET arithmetic, labelled as estimates. Health-adjacent pages
+carry the not-medical-advice scope note, the HSA/FSA page a not-tax-advice note that defers to IRS
+Publication 502 and the plan administrator, and the water-damage page an electrical-safety note.
+Eighteen existing specs gained contextual links into the batch.
+
 ### Sole F80 and F85
 
 Both machines were referenced across the site — the F80 on ten pages — with no page to point at,
