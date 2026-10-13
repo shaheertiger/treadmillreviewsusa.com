@@ -440,8 +440,10 @@ export default {
             motorised belt for a dog that cannot operate a stop button.</li>
           </ul>
           <p>
-            We do not review dog treadmills and will not recommend one here. What we can say from
-            the equipment side is what to look for in any of them: a deck long enough for the
+            We have not tested dog treadmills ourselves; our
+            <a href="/best-dog-treadmills/" class="text-[#0F62FE] font-medium">best dog treadmills</a>
+            roundup lists current machines on their published specifications. Whatever you buy,
+            what matters from the equipment side is the same: a deck long enough for the
             dog's full stride at the fastest pace you intend to use, side rails or panels, a
             minimum speed that is a genuine slow walk for that dog, a quiet drive, a clear front
             with nothing at nose height, and a way to stop the belt instantly from beside the

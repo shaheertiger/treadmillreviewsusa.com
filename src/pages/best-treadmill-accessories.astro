@@ -1,0 +1,859 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "Best Treadmill Accessories (2026): Seven Worth Buying";
+const description =
+  "Seven treadmill accessories, one per category: a mat, 100% silicone lubricant, a chest strap, a foot pod, a surge protector (with the caveats), a fan and a cleaning cloth.";
+
+const PRODUCTS = [
+  {
+    id: "supermats-treadmat",
+    name: "SuperMats TreadMat",
+    category: "Category: Mat",
+    badge: "Best Mat",
+    amazonUrl: "https://www.amazon.com/s?k=SuperMats+Heavy+Duty+TreadMat+Treadmill+Mat&tag=sktiger-20",
+    reviewUrl: null,
+    priceRange: "$50–$75",
+    specs: "30 x 72, 36 x 78 or 36 x 90 in. · heavy-duty vinyl · made in USA",
+    pros: [
+      "Cut to treadmill lengths rather than exercise-bike sizes",
+      "Protects hard floors from dents, scuffs and sweat, and keeps dust away from the motor",
+      "Vinyl the maker describes as odour-free, and it wipes clean",
+      "Made in the USA and named a top treadmill mat by independent home-gym reviewers",
+    ],
+    cons: [
+      "Sellers list its thickness inconsistently",
+      "Vinyl does little for noise in the room below; upstairs, choose thick rubber",
+    ],
+    bottomLine: "The mat to buy for a treadmill on a hard ground-floor surface. The 36 x 78 suits most folding machines.",
+    description: "A mat is the first accessory to buy because it protects two expensive things at once: the floor, and the motor, whose cooling fan otherwise draws in carpet fibre and dust. SuperMats sells the TreadMat in heavy-duty vinyl at 30 x 72, 36 x 78 and 36 x 90 inches, sizes that match real treadmills rather than the exercise bikes most equipment mats are cut for. The maker describes the vinyl as odour-free and non-slip, retailers describe it as made in the USA, and Garage Gym Reviews and BarBend both name a SuperMats mat as their top treadmill mat. It is the right default for a hard ground-floor surface. It is not the right mat for every situation: sellers disagree on its thickness, and as vinyl it protects the floor rather than damping vibration. For carpet, an upstairs room, a walking pad or a very wide machine, our treadmill mat guide has a better-matched pick for each.",
+  },
+  {
+    id: "lube-n-walk",
+    name: "Lube-N-Walk Treadmill Lubricating Kit",
+    category: "Category: Belt Lubricant",
+    badge: "Best Lubricant",
+    amazonUrl: "https://www.amazon.com/s?k=Lube-N-Walk+Treadmill+Lubricating+Kit+100%25+Silicone&tag=sktiger-20",
+    reviewUrl: null,
+    priceRange: "$17–$25",
+    specs: "100% silicone · 24 in. applicator wand · made in USA",
+    pros: [
+      "100% silicone, the lubricant most home treadmill manuals specify",
+      "The 24-inch wand reaches the centre of the deck without loosening the belt",
+      "Refill bottles are sold separately, so the wand is a one-off purchase",
+      "Made in the USA and listed by independent treadmill reviewers among the better lubricants",
+    ],
+    cons: [
+      "Wrong for pre-waxed or maintenance-free decks; check the manual first",
+      "A little more expensive than a plain bottle of silicone",
+    ],
+    bottomLine: "For any treadmill whose manual calls for 100% silicone. Buy the silicone version, not the wax one, unless your deck is pre-waxed.",
+    description: "The lubricant matters more than its price suggests. A deck that runs dry raises friction between belt and deck, the motor draws more current to hold speed, and sustained extra load is what wears out motors and controller boards. Lube-N-Walk's kit is 100% silicone, which is what most home treadmill manuals call for, and its main advantage over a plain bottle is the 24-inch flexible wand, which slides under the belt and reaches the centre of the deck without loosening anything. Retailers describe the system as made in the USA since 1998, and refill bottles are sold separately. TreadmillReviewGuru lists it among its preferred treadmill lubricants, noting only that it costs a little more than others. Two cautions. Lube-N-Walk also sells a wax version for pre-waxed decks, so make sure you buy the one your manual specifies. And if your deck is pre-waxed or described as maintenance-free, silicone of any brand will damage it. Our lubricant guide covers the deck check in full.",
+  },
+  {
+    id: "polar-h10",
+    name: "Polar H10 Heart Rate Sensor",
+    category: "Category: Heart-Rate Monitor",
+    badge: "Best HR Monitor",
+    amazonUrl: "https://www.amazon.com/s?k=Polar+H10+Heart+Rate+Sensor&tag=sktiger-20",
+    reviewUrl: null,
+    priceRange: "$90–$105",
+    specs: "Chest strap · Bluetooth and ANT+ · CR2025 coin cell, up to 400 h · water resistant to 30 m",
+    pros: [
+      "Chest-strap ECG-type sensing, far steadier than handrail grip sensors",
+      "Bluetooth and ANT+, so it pairs with most consoles, watches and training apps",
+      "Replaceable coin-cell battery rated at up to 400 hours, with no charging",
+      "Independent reviewers consistently describe it as highly accurate",
+    ],
+    cons: [
+      "Some owners report connection drop-outs as the battery runs low",
+      "A chest strap takes a few sessions to position comfortably",
+      "Some treadmills only accept their own or a specific type of strap",
+    ],
+    bottomLine: "For anyone training to heart-rate zones on a treadmill. Check that your console or app accepts Bluetooth or ANT+ straps before buying.",
+    description: "Treadmill grip sensors only read while you hold the rails, and holding the rails changes how you move, so if you train to heart-rate zones they are the weakest number on the console. A chest strap fixes that, and the Polar H10 is the long-standing reference choice. Polar lists it with Bluetooth and ANT+, a replaceable CR2025 coin cell rated at up to 400 hours, and water resistance to 30 metres; retailer spec sheets also list the older 5 kHz transmission some gym equipment uses. Because it speaks both main wireless standards, it pairs with most treadmill consoles, watches and apps, and Polar lists dual Bluetooth connections. TechRadar and other reviewers describe it as comfortable and very accurate. The common complaints are connection problems as the battery runs down and a strap that takes some adjustment to sit right. It is a training tool, not a medical device. Our heart-rate monitor guide compares it with optical armbands and cheaper straps.",
+  },
+  {
+    id: "stryd-5",
+    name: "Stryd 5.0 Foot Pod",
+    category: "Category: Running Foot Pod",
+    badge: "Best Foot Pod",
+    amazonUrl: "https://www.amazon.com/s?k=Stryd+5.0+Running+Power+Meter+Foot+Pod&tag=sktiger-20",
+    reviewUrl: null,
+    priceRange: "$199–$299",
+    specs: "Clips to the shoe · Bluetooth and ANT+ · USB-C magnetic charger · membership optional",
+    pros: [
+      "Measures pace from your stride, so it works on any treadmill, connected or not",
+      "Bluetooth and ANT+, for watches, phones and Zwift",
+      "Membership is optional; the pod and free training plans work without one",
+      "Adds running power and form metrics for runners who want them",
+    ],
+    cons: [
+      "Expensive for a pace sensor; the lower price has been tied to promotions",
+      "Battery life is short next to a coin-cell sensor, so it needs regular charging",
+      "Overkill for walking or easy running",
+    ],
+    bottomLine: "For runners who train to pace or run in Zwift on a treadmill that does not broadcast its own speed.",
+    description: "A treadmill's displayed speed comes from the motor and can drift from the belt's real speed, and many machines cannot send their speed to apps at all. A foot pod sidesteps both problems by measuring pace from your shoe. The Stryd 5.0, launched in late 2025, is the current version of the pod most often recommended for this. It broadcasts over Bluetooth and ANT+, charges from a magnetic USB-C keychain charger, and Stryd says its paid membership is optional — the pod and its free training plans work without it. Zwift has long published guidance on using Stryd pods as a speed source in Zwift Run. The trade-offs are cost and battery. Stryd's US store has shown it at $199 against a $299 regular price, and independent coverage reports battery life of around 20 hours, which means charging it every week or two for a regular runner. It is for runners who train to pace; walkers do not need one.",
+  },
+  {
+    id: "panamax-md2",
+    name: "Panamax MD2 Surge Protector",
+    category: "Category: Surge Protector",
+    badge: "Best Surge Protector",
+    amazonUrl: "https://www.amazon.com/s?k=Panamax+MD2+Surge+Protector&tag=sktiger-20",
+    reviewUrl: null,
+    priceRange: "$30–$70",
+    specs: "2 outlets · 15 A · 1,350 joules · UL 1449 3rd ed., 400 V VPR (line to neutral) · direct plug-in",
+    pros: [
+      "Plugs directly into the wall with no cord, so there is no strip or extension in the chain",
+      "Rated for 15 amps, with a 400-volt line-to-neutral protection rating",
+      "Disconnects power in a catastrophic surge rather than passing it through",
+      "Two status lights show protection and wiring faults; lifetime limited product warranty",
+    ],
+    cons: [
+      "Many treadmill makers say to plug directly into the wall — check your manual first",
+      "Two outlets; where a manual calls for single-outlet, leave the second empty or choose a single-outlet unit",
+      "Not for treadmills with a 20-amp plug",
+    ],
+    bottomLine: "Only for treadmills whose manual permits or recommends a surge protector, with a standard 15-amp plug, and with nothing else plugged in.",
+    description: "Start with the caveat, because it decides whether you need this at all: many treadmill manufacturers tell owners to plug the treadmill directly into a grounded wall outlet with nothing in between, and if yours does, follow it. Where a manual permits or recommends a surge protector, the requirement is usually specific — a UL 1449 listing, a suppressed voltage rating of 400 volts or less, a 15-amp rating and a status light. The Panamax MD2 meets those on paper. Panamax lists it at 15 amps, 1,350 joules and a UL 1449 3rd edition voltage protection rating of 400 volts line to neutral, with two status lights and circuitry that disconnects power in a catastrophic surge. It plugs straight into the wall, so there is no cord to overheat. It has two outlets: use one, for the treadmill only. It is not for treadmills with a 20-amp plug. Our surge protector guide covers every caveat in detail.",
+  },
+  {
+    id: "vornado-630",
+    name: "Vornado 630 Air Circulator",
+    category: "Category: Fan",
+    badge: "Best Fan",
+    amazonUrl: "https://www.amazon.com/s?k=Vornado+630+Mid-Size+Air+Circulator+Fan&tag=sktiger-20",
+    reviewUrl: null,
+    priceRange: "$40–$85",
+    specs: "3 speeds · tilting head · air moves up to 70 ft · 5-year limited warranty",
+    pros: [
+      "Compact enough to sit on a stand or shelf in front of the treadmill",
+      "Tilting head lets you aim the air at your torso rather than your shins",
+      "Throws air a long way, so it can sit clear of the machine",
+      "Five-year limited warranty and a removable grille for cleaning",
+    ],
+    cons: [
+      "On the floor it is too low; it needs raising to deck height or above",
+      "Manual dial only, with no remote or timer",
+    ],
+    bottomLine: "For anyone whose sessions run longer than 20 minutes indoors. Raise it to chest height and plug it into a separate outlet from the treadmill.",
+    description: "Indoors there is no airflow, and on a treadmill heat builds faster than most people expect; a fan is the cheapest thing that makes a 40-minute session tolerable. The Vornado 630 is a compact air circulator with three speeds, a tilting head and, according to Vornado, airflow that reaches up to 70 feet, which lets it sit well clear of the machine and still reach you. It carries a five-year limited warranty, and Vornado cites a Wirecutter recommendation for it. On a treadmill, placement matters more than the fan: the deck lifts you eight inches or more, so a fan on the floor blows at your legs. Put it on a stand, shelf or table in front of the machine and tilt it up toward your chest. Plug it into its own outlet, never into a strip or protector shared with the treadmill. Vornado's own store showed it out of stock when we checked, but it was available from major retailers.",
+  },
+  {
+    id: "e-cloth-general-purpose",
+    name: "E-Cloth General Purpose Cloth",
+    category: "Category: Cleaning",
+    badge: "Best Cleaning Pick",
+    amazonUrl: "https://www.amazon.com/s?k=E-Cloth+General+Purpose+Cloth&tag=sktiger-20",
+    reviewUrl: null,
+    priceRange: "$10–$20",
+    specs: "Microfibre · cleans with water alone · sold singly or in packs",
+    pros: [
+      "Cleans with just water, so nothing slippery or harsh goes on the belt or console",
+      "Matches the damp-cloth routine most treadmill manuals recommend",
+      "Washable and reusable, with a wash guarantee from the maker",
+      "Cheap, and useful for the rails, console and frame as well as the belt",
+    ],
+    cons: [
+      "The wash-guarantee figure varies between listings",
+      "Does not replace vacuuming around and under the machine",
+    ],
+    bottomLine: "For the after-session wipe and weekly clean. Pair it with a vacuum crevice tool for the floor and the motor area.",
+    description: "Most treadmill cleaning is sweat and dust, and the damage usually comes from the cleaner rather than the dirt: bleach, ammonia, solvents and oily wipes can harm the belt and leave it slick, and sprays drift into the console. Most treadmill manuals recommend a damp cloth and, at most, mild soap, which is exactly what a good microfibre cloth is for. E-Cloth's General Purpose Cloth is designed to clean with water alone, it is washable and reusable, and it is sold singly and in packs for little money. Keep one for damp work and one for drying, and wipe the rails, console and the visible belt after each session. Listings disagree on how many washes the maker guarantees, so we have left that figure out. A cloth is not the whole job: vacuum around the machine regularly, and inside the motor compartment occasionally with the machine unplugged. Our cleaning guide has the full routine.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Buying Guides", item: "https://www.treadmillreviewsusa.com/guides/" },
+        { "@type": "ListItem", position: 3, name: "Best Treadmill Accessories", item: "https://www.treadmillreviewsusa.com/best-treadmill-accessories/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What accessories do I need for a new treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Start with a mat and the lubricant your manual specifies, because they protect the floor and the machine. Add a fan for longer sessions, a chest strap if you train to heart-rate zones, and a foot pod if you train to pace. Buy a surge protector only if your manual permits or recommends one.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Should I plug my treadmill into a surge protector?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Only if your manual allows it. Some manufacturers recommend a UL 1449-listed surge suppressor rated for 15 amps; others say to plug directly into a grounded wall outlet. Never use an ordinary power strip or an extension cord, plug nothing else into the same device, and ask a licensed electrician about any wiring or circuit question.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What lubricant should I use on a treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "For most home treadmills, 100% silicone, applied every 40 to 50 hours of use. Check the manual first: some decks are pre-waxed or maintenance-free and must not receive silicone, and some manufacturers specify their own product. Never use petroleum-based sprays, household oils or belt dressings under a treadmill belt.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is a chest strap better than a treadmill grip sensor?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Grip sensors only read while you hold the rails, readings jump as your grip changes, and holding on alters how you walk or run. A chest strap reads continuously and is the reference standard for home training. Check whether your treadmill or app accepts Bluetooth or ANT+ straps before buying one.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do I need a foot pod for Zwift on a treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Only if your treadmill cannot send its speed to Zwift. Some connected treadmills broadcast speed directly, and then a foot pod adds little. For any other machine, a foot pod clipped to your shoe is the universal way to get your pace into Zwift. A phone or watch can work too, but is generally less precise.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the best way to clean a treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Unplug it, then wipe the rails, console and belt with a barely damp microfibre cloth, using a little mild soap only where needed, and dry everything afterwards. Vacuum around and under the machine regularly. Avoid bleach, ammonia, solvents, oily wipes and spraying anything directly onto the console or belt.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", name: "Morgan Reyes" },
+      datePublished: "2026-10-13",
+      dateModified: "2026-10-13",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+    ...PRODUCTS.map((product) => ({
+      "@type": "Product",
+      name: product.name,
+      description: product.description,
+      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      offers: {
+        "@type": "AggregateOffer",
+        priceCurrency: "USD",
+        availability: "https://schema.org/InStock",
+      },
+    })),
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-10-13",
+    modifiedTime: "2026-10-13",
+    author: "Morgan Reyes",
+    section: "Fitness Equipment",
+    tags: [
+      "best treadmill accessories",
+      "treadmill accessories",
+      "treadmill mat",
+      "treadmill lubricant",
+      "treadmill surge protector",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "See Our Top Picks", link: "#picks" }}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-besttreadmillaccessories" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-besttreadmillaccessories)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Buying Guide
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated October 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          Best Treadmill Accessories <span class="text-[#5AA9FF]">Worth Buying</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          Most treadmill accessories are clutter. A handful protect the machine, make the data honest or make the sessions bearable, and those are the seven below — one per category, with the checks to make before buying each.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            See the Picks
+          </a>
+          <a href="#buy-first" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            What to Buy First
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
+          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">October 13, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="2.6k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">On the products below.</strong> Specifications, prices and
+          warranty terms were checked on 13 October 2026 against each maker's own product page,
+          at least one major retailer, and independent reviews where we could find them. Where
+          sources disagreed on a figure, we left it out of the specification line. None of these
+          figures are our own measurements; we have not tested these products. Prices are the
+          ranges we saw on that date and change often, so confirm the price and specification
+          against the exact listing before ordering. The heart-rate monitor is a training tool, not
+          a medical device, and nothing here is medical advice. The surge protector section is
+          general information, not electrical advice: your treadmill's manual takes precedence,
+          and wiring questions are for a licensed electrician. We earn a commission if you buy
+          through the Amazon links on this page; it does not change which products we list or what
+          we say about them.
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
+          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 7 Treadmill Accessories Worth Buying</a>
+          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Accessories</a>
+          <a href="#buy-first" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What to Buy First</a>
+          <a href="#surge-caveats" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Surge Protection: Read the Manual First</a>
+          <a href="#lubricant-check" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Lubricant: Check Your Deck Before Buying</a>
+          <a href="#data-accessories" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Heart Rate and Pace: Getting Honest Numbers</a>
+          <a href="#setting-up" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Setting Up and Looking After the Kit</a>
+          <a href="#skip-these" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Accessories We Would Skip</a>
+          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Who Should Buy Something Else</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          The accessories worth owning fall into three groups. Two protect the machine: a mat and
+          the right lubricant. Two make the numbers honest: a chest strap for heart rate and a foot
+          pod for pace. And two make the sessions tolerable: a fan, and something to keep the
+          machine clean. Surge protection sits in its own category, because whether you should use
+          one at all depends on what your manual says. One product per category is below, with the
+          reasons and the caveats.
+        </p>
+
+        <div id="quick-picks" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+<p>
+            If you buy only two things, make them the mat and the lubricant: they are cheap and they
+            protect a machine that cost far more. The rest depend on how you train and where the
+            treadmill lives.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead><tr>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Category</th>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Pick</th>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Why</th>
+            </tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Mat</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">SuperMats TreadMat</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Treadmill-length vinyl mat, protects the floor and the motor</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lubricant</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lube-N-Walk Lubricating Kit</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">100% silicone with a 24 in. wand that reaches under the belt</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Heart-rate monitor</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Polar H10</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Chest strap with Bluetooth and ANT+, and a replaceable coin cell</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Foot pod</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Stryd 5.0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Pace from your foot, for Zwift and watches, on any treadmill</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Surge protector</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Panamax MD2</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15 A, UL 1449 listed, plugs straight into the wall — only if your manual allows one</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Fan</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Vornado 630</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Compact, tilting, three speeds and a five-year warranty</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Cleaning</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">E-Cloth General Purpose Cloth</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Cleans with water, so nothing slippery or harsh goes on the belt</td></tr>
+            </tbody>
+          </table></div>
+        </div>
+
+        <div id="picks" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 7 Treadmill Accessories Worth Buying</h2>
+<p>
+            Each card names its category first, then the product we would buy in that category and
+            who it suits. Where a category has its own full guide on this site, the description
+            links to it, because the right choice in some of these — lubricant and surge protection
+            especially — depends on your specific machine.
+          </p>
+        </div>
+      </div>
+
+      <!-- Product cards -->
+      <div class="not-prose">
+        {
+          PRODUCTS.map((product, index) => (
+            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
+              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
+                  <div>
+                    <p class="text-white font-black text-xl leading-tight">
+                      {index + 1}. {product.name}
+                    </p>
+                    <p class="text-gray-400 text-xs">{product.category}</p>
+                  </div>
+                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                    {product.badge}
+                  </span>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center gap-2 mb-4 flex-wrap">
+                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
+                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
+                  </div>
+                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
+                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
+                      <p class="text-xs font-black uppercase tracking-widest text-green-700 mb-2">What Works</p>
+                      <ul class="space-y-2">
+                        {product.pros.map((pro) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+                      <p class="text-xs font-black uppercase tracking-widest text-red-700 mb-2">What Doesn't</p>
+                      <ul class="space-y-2">
+                        {product.cons.map((con) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="border-t border-gray-100 pt-4">
+                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
+                    <div class="flex flex-wrap items-center gap-3">
+                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+                        Check Price on Amazon &rarr;
+                      </a>
+                      {product.reviewUrl && (
+                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
+                          Read our full {product.name} review &rarr;
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="how-we-chose" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Accessories</h2>
+<p>
+            We have not tested these products. They were chosen from published specifications,
+            manufacturer listings, warranty terms and independent coverage, and the claims on this
+            page stay within what those sources support.
+          </p>
+          <p>
+            We started from the jobs an accessory can actually do for a treadmill owner — protect
+            the floor and motor, keep the belt and deck healthy, measure heart rate and pace
+            honestly, manage the electrical risk, keep the user cool, and keep the machine clean —
+            and picked one product for each. In every category we preferred a product from an
+            established maker, currently sold, with a published specification we could check
+            against a retailer and, where possible, an independent review.
+          </p>
+          <p>
+            For the categories with safety or compatibility implications we held the picks to the
+            treadmill makers' own requirements rather than to general advice. The lubricant had to
+            be 100% silicone, because that is what most home treadmill manuals specify. The surge
+            protector had to meet the kind of requirement treadmill manuals set out — a UL 1449
+            listing, a voltage protection rating of 400 volts or less, a 15-amp rating and a status
+            light — and to plug directly into the wall. Where a figure varied between sources, we
+            left it out of the specification line.
+          </p>
+          <p>
+            We deliberately left out several popular categories, and the section on accessories we
+            would skip explains why.
+          </p>
+        </div>
+
+        <div id="buy-first" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What to Buy First</h2>
+<p>
+            If you are buying for a new treadmill, the order matters more than the brands, because
+            two of these protect the machine and the rest improve the experience of using it.
+          </p>
+          <p>
+            <strong>1. A mat, before the treadmill arrives.</strong> It is far easier to lay a mat
+            on an empty floor than to lift one end of a 250 lb machine later. On carpet it keeps
+            fibre away from the motor, and on any finished floor it prevents dents and scuffs. Our
+            <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">treadmill mat guide</a>
+            covers sizes for every machine and floor.
+          </p>
+          <p>
+            <strong>2. Lubricant, within the first few months.</strong> Many new treadmills arrive
+            with the deck already lubricated, and some come with a small bottle. Check the manual
+            for the type and interval, then buy the right product before the first application is
+            due. A dry deck makes the motor and controller work harder, and that is what wears
+            them out.
+          </p>
+          <p>
+            <strong>3. A fan, as soon as sessions get longer than 20 minutes.</strong> Indoors there
+            is no airflow, and heat builds quickly. A fan is the single cheapest way to make longer
+            sessions tolerable.
+          </p>
+          <p>
+            <strong>4. A chest strap or foot pod, when the numbers start to matter.</strong> If you
+            are training to heart-rate zones or running to pace targets, the treadmill's own grip
+            sensors and speed display are the weakest data you have. Buy whichever one matches how
+            you train.
+          </p>
+          <p>
+            <strong>5. Surge protection, only after reading the manual.</strong> This is the one
+            accessory where the manufacturer's instruction overrides general advice, in either
+            direction.
+          </p>
+        </div>
+
+        <div id="surge-caveats" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Surge Protection: Read the Manual First</h2>
+<p>
+            Treadmills are one of the few household appliances where plugging into a surge
+            protector can be the wrong thing to do, and manufacturer guidance genuinely splits.
+          </p>
+          <p>
+            Some manuals recommend or require a surge suppressor and set out what it must meet. A
+            typical specification, found in several ProForm manuals, is a single-outlet, UL
+            1449-listed unit with a suppressed voltage rating of 400 volts or less, at least 450
+            joules, a 120-volt, 15-amp rating, and a light showing it is working. Other
+            manufacturers tell owners to plug the treadmill directly into a grounded wall outlet with
+            nothing in between, usually because a protector or strip that trips or overheats under
+            a motor's starting current causes more trouble than it prevents. Many treadmills also
+            want a dedicated circuit, and some need a 20-amp outlet with a matching plug.
+          </p>
+          <p>
+            So the order is fixed. Read the manual's electrical section. If it says to plug directly
+            into the wall, do that and buy nothing from this category. If it permits or recommends
+            a surge protector, buy one that meets its stated requirements, plug it directly into
+            the wall, and plug only the treadmill into it — no fan, no phone charger, no second
+            device. Never use an ordinary power strip or an extension cord, and never use an
+            adapter to fit a 20-amp plug into a 15-amp device.
+          </p>
+          <p>
+            Our pick, the Panamax MD2, has two outlets, so if your manual specifies a single-outlet
+            device, leave the second outlet empty or choose a single-outlet unit that meets the same
+            ratings. Our full guide to
+            <a href="/treadmill-surge-protector/" class="text-[#0F62FE] font-medium">treadmill surge protectors</a>
+            covers joule ratings, clamping voltage, when protectors wear out, and when whole-house
+            protection or a dedicated circuit is the better answer. Anything involving wiring, a new
+            circuit or a warm or discoloured outlet is a job for a licensed electrician.
+          </p>
+        </div>
+
+        <div id="lubricant-check" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Lubricant: Check Your Deck Before Buying</h2>
+<p>
+            Lubricant is the accessory most likely to do harm if bought on autopilot, so it is worth
+            a separate check.
+          </p>
+          <p>
+            Most home treadmills have a standard deck that needs periodic 100% silicone lubricant —
+            typically every 40 to 50 hours of use, sooner for heavier users or dusty rooms. Some
+            decks are pre-waxed or described as maintenance-free, and silicone on those contaminates
+            the surface. And a few manufacturers specify their own product. The manual settles
+            which you have in two minutes.
+          </p>
+          <p>
+            What you should never use is a household lubricant. Petroleum-based sprays, multi-purpose
+            oils and belt dressings break down the belt's underside and the deck surface. If the
+            label does not say 100% silicone, or the specific product your manual names, it does not
+            go under a treadmill belt. Our
+            <a href="/best-treadmill-lubricant/" class="text-[#0F62FE] font-medium">treadmill lubricant guide</a>
+            covers bottle versus aerosol applicators, how much to apply and the signs a deck has run
+            dry.
+          </p>
+        </div>
+
+        <div id="data-accessories" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Heart Rate and Pace: Getting Honest Numbers</h2>
+<p>
+            Two of the picks exist because the treadmill's own data is weaker than most owners
+            assume.
+          </p>
+          <p>
+            <strong>Heart rate.</strong> Grip sensors on the handrails only read while you hold
+            them, and holding on changes how you walk or run. Optical sensors in watches are
+            reasonable at steady effort and less reliable during intervals. A chest strap reads the
+            heart's electrical signal directly and is the reference standard for training at home.
+            Check how it will connect: most current treadmill consoles and apps use Bluetooth, many
+            watches and older head units use ANT+, and some machines accept only their own or a
+            specific type of strap. A strap that does both covers almost every combination. Our
+            <a href="/best-heart-rate-monitors-for-treadmill/" class="text-[#0F62FE] font-medium">heart-rate monitor guide</a>
+            compares the alternatives.
+          </p>
+          <p>
+            <strong>Pace.</strong> A treadmill's displayed speed comes from the motor, and it can
+            drift from the belt's real speed, especially on older or budget machines. If you train
+            to pace, or run in Zwift on a treadmill that does not broadcast its own speed, a foot
+            pod measures pace from your stride instead. It is the universal answer for any machine,
+            but it needs a moment's thought about calibration and pairing. Our
+            <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium">Zwift treadmill guide</a>
+            covers the set-up and the common fixes.
+          </p>
+          <p>
+            Neither is needed for easy walking. If you are not training to zones or pace targets,
+            spend the money on the mat and the fan instead.
+          </p>
+        </div>
+
+        <div id="setting-up" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Setting Up and Looking After the Kit</h2>
+<p>
+            Accessories bought well can still be undone by how they are set up. A few habits keep
+            them doing their jobs.
+          </p>
+          <p>
+            <strong>Plan the outlets before the machine arrives.</strong> The treadmill wants its
+            own wall outlet, ideally on a circuit it does not share with a heater or other heavy
+            load. The fan, a phone charger and anything else go on a different outlet. Route every
+            cable away from the rear of the deck, where a cord can be caught by the belt or crushed
+            when a folding machine is raised, and never run a cord under the mat or the machine.
+          </p>
+          <p>
+            <strong>Keep the mat clear at the front.</strong> The motor draws cooling air from
+            around the front of the machine. Do not park the fan stand, a water bottle crate or a
+            laundry basket against the motor hood, and vacuum the mat's front margin when you
+            vacuum the room.
+          </p>
+          <p>
+            <strong>Look after the strap.</strong> Rinse a chest strap's fabric band after
+            sessions and let it dry before putting it away; dried sweat stiffens the band and
+            corrodes the contacts over time. Detach the sensor when the strap is not in use, which
+            also saves the battery on many models. Replace the coin cell at the first sign of
+            drop-outs rather than waiting for it to die mid-session.
+          </p>
+          <p>
+            <strong>Calibrate the foot pod, then leave it alone.</strong> Pair it, run a steady
+            session at a known speed, and compare. Most pods let you set a calibration factor in
+            the companion app or on the watch. Once pace agrees with a trusted reference, stop
+            adjusting it to match the treadmill console, which is often the less accurate of the
+            two.
+          </p>
+          <p>
+            <strong>Date the lubricant and the surge protector.</strong> Write the date of each
+            lubrication on the bottle, so you can count hours instead of guessing. Surge protectors
+            wear out as they absorb surges; if the protection light goes off, or the device is
+            several years old and has been through storms, replace it.
+          </p>
+        </div>
+
+        <div id="skip-these" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Accessories We Would Skip</h2>
+<p>
+            Several products are sold as treadmill accessories and are either unnecessary or
+            counter-productive.
+          </p>
+          <p>
+            <strong>Power strips and extension cords.</strong> The most common accessory mistake
+            and the one with real consequences. Most treadmill manuals prohibit extension cords,
+            and an ordinary strip is not built for a motor's starting current.
+          </p>
+          <p>
+            <strong>Thick foam floor tiles.</strong> They compress under the machine's feet and let
+            the frame rock. Use a proper treadmill mat.
+          </p>
+          <p>
+            <strong>Generic lubricants and sprays.</strong> Covered above: anything that is not 100%
+            silicone or the product your manual names stays away from the deck.
+          </p>
+          <p>
+            <strong>Disinfectant wipes and harsh cleaners on the belt.</strong> Bleach, ammonia,
+            solvents and oily wipes can damage the belt and leave it slippery. A damp microfibre
+            cloth and, where needed, a little mild soap handles nearly everything. Our guide to
+            <a href="/how-to-clean-a-treadmill/" class="text-[#0F62FE] font-medium">cleaning a treadmill</a>
+            has the routine.
+          </p>
+          <p>
+            <strong>Clip-on desks and heavy console add-ons.</strong> Anything that hangs weight off
+            the console or handrails can stress parts that were not designed to carry it, so check
+            the manual before attaching anything. If you want to work while walking, an under-desk walking pad
+            at a proper desk is a better arrangement.
+          </p>
+        </div>
+
+        <div id="who-should-skip" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Who Should Buy Something Else</h2>
+<p>
+            <strong>If your treadmill shipped with a mat, lubricant or a chest strap</strong>, use
+            those first. Bundled straps in particular are often matched to the console, and a
+            third-party strap only helps if the machine accepts it.
+          </p>
+          <p>
+            <strong>If you walk at an easy pace</strong>, you do not need the chest strap or the
+            foot pod. The mat, the lubricant, the fan and a cloth are the whole list.
+          </p>
+          <p>
+            <strong>If your treadmill broadcasts its own speed to Zwift</strong> or your training
+            app, a foot pod adds little except a second opinion on pace. Check whether your machine
+            is supported before buying one.
+          </p>
+          <p>
+            <strong>If your manual says to plug the treadmill directly into the wall</strong>, skip
+            the surge protector entirely, and read our
+            <a href="/treadmill-surge-protector/" class="text-[#0F62FE] font-medium">surge protector guide</a>
+            for the alternatives, including whole-house protection fitted by an electrician.
+          </p>
+          <p>
+            <strong>If you own a walking pad</strong> rather than a full treadmill, most of this
+            still applies, but buy a smaller mat — our
+            <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">mat guide</a>
+            has a walking-pad size — and check the pad's manual for its lubricant, because some are
+            different from full-size machines.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What accessories do I need for a new treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Start with a mat and the lubricant your manual specifies, because they protect the floor and the machine. Add a fan for longer sessions, a chest strap if you train to heart-rate zones, and a foot pod if you train to pace. Buy a surge protector only if your manual permits or recommends one.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Should I plug my treadmill into a surge protector?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Only if your manual allows it. Some manufacturers recommend a UL 1449-listed surge suppressor rated for 15 amps; others say to plug directly into a grounded wall outlet. Never use an ordinary power strip or an extension cord, plug nothing else into the same device, and ask a licensed electrician about any wiring or circuit question.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What lubricant should I use on a treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                For most home treadmills, 100% silicone, applied every 40 to 50 hours of use. Check the manual first: some decks are pre-waxed or maintenance-free and must not receive silicone, and some manufacturers specify their own product. Never use petroleum-based sprays, household oils or belt dressings under a treadmill belt.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is a chest strap better than a treadmill grip sensor?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Yes. Grip sensors only read while you hold the rails, readings jump as your grip changes, and holding on alters how you walk or run. A chest strap reads continuously and is the reference standard for home training. Check whether your treadmill or app accepts Bluetooth or ANT+ straps before buying one.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Do I need a foot pod for Zwift on a treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Only if your treadmill cannot send its speed to Zwift. Some connected treadmills broadcast speed directly, and then a foot pod adds little. For any other machine, a foot pod clipped to your shoe is the universal way to get your pace into Zwift. A phone or watch can work too, but is generally less precise.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What is the best way to clean a treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Unplug it, then wipe the rails, console and belt with a barely damp microfibre cloth, using a little mild soap only where needed, and dry everything afterwards. Vacuum around and under the machine regularly. Avoid bleach, ammonia, solvents, oily wipes and spraying anything directly onto the console or belt.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying Treadmill Accessories</h2>
+          <p class="text-gray-700 leading-relaxed">Two of these can damage the machine, and two waste money on things the treadmill already does or does not need.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Plugging the treadmill into a power strip or extension cord</h3>
+              <p class="text-gray-700 text-sm m-0">An ordinary strip is not built for a motor’s starting current and can trip, overheat or melt, and most manuals prohibit extension cords outright. Plug directly into the wall, or into a surge protector that meets your manual’s requirements and is itself plugged directly into the wall, with nothing else sharing it.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying lubricant without checking the deck type</h3>
+              <p class="text-gray-700 text-sm m-0">Silicone on a pre-waxed or maintenance-free deck contaminates it, and the deck may then need replacing. Household lubricants damage any deck. Read the manual, buy the type it names — usually 100% silicone — and apply it at the stated interval.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a strap the treadmill cannot read</h3>
+              <p class="text-gray-700 text-sm m-0">Some consoles accept only Bluetooth straps, some only their own, and older ones a specific analogue signal. Check what your machine and your app accept before buying a heart-rate monitor, or buy one that broadcasts over both Bluetooth and ANT+ and use it with a watch or app if the console will not pair.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Leaving the fan on the floor</h3>
+              <p class="text-gray-700 text-sm m-0">A treadmill deck lifts you eight inches or more, so a floor fan blows at your shins. Raise the fan to chest height in front of the machine and tilt it toward you. Plug it into a separate outlet, never into the same strip or protector as the treadmill.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Accessory Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/best-treadmill-lubricant/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Maintenance</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill Lubricant</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Why it is almost always 100% silicone, and the deck check to make before buying any.</p>
+            </a>
+            <a href="/treadmill-surge-protector/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Electrical</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Surge Protectors</p>
+              <p class="text-sm text-gray-500 leading-relaxed">When to use one, when your manual says not to, and why power strips and extension cords fail.</p>
+            </a>
+            <a href="/best-heart-rate-monitors-for-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Heart Rate</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Heart-Rate Monitors for the Treadmill</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Chest straps against optical armbands, and which consoles and apps each will pair with.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            Buy the two protective accessories first: a properly sized mat such as the
+            <strong class="text-white">SuperMats TreadMat</strong>, and the lubricant your manual
+            specifies — for most machines a 100% silicone product like
+            <strong class="text-white">Lube-N-Walk</strong>. Add a fan for longer sessions, and a
+            chest strap or foot pod only when you are training to heart rate or pace.
+          </p>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            Treat surge protection as a manual question, not a shopping one. If the manual says to
+            plug directly into the wall, do that; if it allows a protector, buy one that meets its
+            stated ratings and plug only the treadmill into it. Our
+            <a href="/treadmill-surge-protector/" class="text-[#5AA9FF] font-bold no-underline">surge protector guide</a>
+            has the detail.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+</Layout>

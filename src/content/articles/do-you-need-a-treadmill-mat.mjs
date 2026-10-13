@@ -382,7 +382,9 @@ export default {
             <strong>On carpet, finished floors and upper floors, buy one.</strong> It protects the
             floor, keeps fibre and dust away from the motor and controller board, and reduces some
             of the vibration passing into the building. On bare concrete it is a convenience rather
-            than a necessity.
+            than a necessity. Our
+            <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">best treadmill mats</a>
+            roundup has picks by floor and machine size.
           </p>
           <p>
             <strong>Be realistic about noise.</strong> A mat helps with structure-borne thuds and
