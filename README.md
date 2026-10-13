@@ -464,6 +464,34 @@ ten pages that mention the F80 in passing.
 
 All outbound product links use Amazon search URLs tagged with the `sktiger-20` Associates ID (`rel="sponsored nofollow noopener"`). Swap in real ASIN/product links and product photography as they become available. Product specs on the newly recreated pages are editorial approximations in the site's existing style (same convention as the original flagship guides) — verify against manufacturer data before treating any number as authoritative.
 
+## Amazon product links
+
+Product buttons link straight to the Amazon listing (`/dp/<ASIN>?tag=sktiger-20`) when the product
+has a verified ASIN, and fall back to a tagged Amazon search otherwise, so every click is credited
+either way. ASINs come from the Amazon Creators API, following the pipeline used on The Honest
+Reviewers:
+
+```bash
+npm run amazon:asins   # search Amazon for each product name; record confident matches
+npm run amazon:apply   # write /dp/ links into hand-written pages and regenerate spec pages
+```
+
+- **Credentials** live in a git-ignored `.env`: `AMAZON_CREATORS_CLIENT_ID`,
+  `AMAZON_CREATORS_CLIENT_SECRET`, `AMAZON_CREATORS_VERSION` (3.1), `AMAZON_CREATORS_PARTNER_TAG`
+  (`sktiger-20`). Never commit them; the build itself needs neither the credentials nor the network.
+- **Matching is strict** (`scripts/amazon/lib.mjs`): the brand and every model-number token must
+  appear in the Amazon title; variant words (Pro, Plus, Max, Lite, Connect, Carbon, AV…) must agree
+  on both sides; and titles naming a part or a different machine (cover, belt, replacement,
+  compatible, remote, bike, wheel…) are rejected unless the product name itself uses the word. The
+  first unfiltered run matched replacement belts, covers and power cords to the machines they fit,
+  and a Strol 2E to the Strol 2E Pro; each rule exists because of a real false match.
+- `src/data/product-asins.json` holds name → ASIN, the Amazon title it was matched on and the date.
+  `scripts/amazon/asin-report.json` lists every product with the outcome and, for rejections, the
+  top Amazon title, so a near-miss can be checked by hand.
+- First run (2026-10-13): 48 of 141 products matched, giving 120 direct links; the rest are mostly
+  dealer-only machines (Woodway, TrueForm, dogPACER), discontinued models, or products Amazon lists
+  under a name that does not carry the model number, and keep their search links.
+
 ## Keyword research
 
 `research/competitor-keywords/` holds the supplied competitor exports verbatim, with a README

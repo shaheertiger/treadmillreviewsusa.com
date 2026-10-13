@@ -20,6 +20,15 @@ const PAGES_DIR = join(ROOT, 'src', 'pages');
 const SITE = 'https://www.treadmillreviewsusa.com';
 const AUTHOR = 'Morgan Reyes';
 
+// Verified Amazon ASINs, keyed by product name, written by scripts/amazon/fetch-asins.mjs.
+// A product with one links straight to its listing; any other keeps its tagged search link.
+const ASIN_PATH = join(ROOT, 'src', 'data', 'product-asins.json');
+const ASINS = existsSync(ASIN_PATH) ? JSON.parse(readFileSync(ASIN_PATH, 'utf8')) : {};
+const amazonUrl = (p) =>
+  ASINS[p.name]
+    ? `https://www.amazon.com/dp/${ASINS[p.name].asin}?tag=sktiger-20&linkCode=ll1`
+    : p.amazonUrl ?? `https://www.amazon.com/s?k=${encodeURIComponent(p.name)}+Treadmill&tag=sktiger-20`;
+
 const esc = (s) => String(s).replace(/\\/g, '\\\\').replace(/`/g, '\\`').replace(/\$\{/g, '\\${');
 const jsStr = (s) => JSON.stringify(String(s));
 
@@ -42,7 +51,7 @@ ${products
     name: ${jsStr(p.name)},
     category: ${jsStr(p.category)},
     badge: ${jsStr(p.badge)},
-    amazonUrl: ${jsStr(p.amazonUrl ?? `https://www.amazon.com/s?k=${encodeURIComponent(p.name)}+Treadmill&tag=sktiger-20`)},
+    amazonUrl: ${jsStr(amazonUrl(p))},
     reviewUrl: ${p.reviewUrl ? jsStr(p.reviewUrl) : 'null'},
     priceRange: ${jsStr(p.priceRange)},
     specs: ${jsStr(p.specs)},
