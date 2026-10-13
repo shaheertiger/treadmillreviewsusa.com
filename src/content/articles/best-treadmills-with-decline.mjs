@@ -171,7 +171,8 @@ export default {
       heading: 'Our Picks at a Glance',
       html: `          <p>
             Five machines, two brands, two decline figures. The table puts each in one line; the
-            cards below carry the confirmed specifications and the caveats.
+            cards below carry the confirmed specifications and the caveats. If you are not sure you need it, read
+            <a href="/what-is-treadmill-decline-good-for/" class="text-[#0F62FE] font-medium">what treadmill decline is good for</a>.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead><tr>

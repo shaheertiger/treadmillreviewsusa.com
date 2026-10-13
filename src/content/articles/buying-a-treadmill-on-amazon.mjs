@@ -140,7 +140,9 @@ export default {
       html: `          <p>
             Reviews are the main reason people buy treadmills on Amazon, and they are genuinely
             useful — but only if you read them for the right things. A star rating on its own tells
-            you very little about a machine you will use for years.
+            you very little about a machine you will use for years. (Our longer guide on
+            <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium">how to read treadmill reviews</a>
+            goes beyond Amazon.)
           </p>
           <p>
             <strong>Check which version the review describes.</strong> Product pages often group

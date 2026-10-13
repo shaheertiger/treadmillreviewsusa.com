@@ -365,7 +365,7 @@ export default {
     },
     {
       q: 'How high should a treadmill desk be?',
-      a: `High enough that your elbows sit at about 90 degrees with relaxed shoulders while you stand on the belt in your shoes. Because the deck raises you — a couple of inches on a walking pad and much more on a full-size treadmill — the desk needs to be higher than your usual standing height, and some desks cannot reach it.`,
+      a: `High enough that your elbows sit at about 90 degrees with relaxed shoulders while you stand on the belt in your shoes. Because the deck raises you — typically around 4 to 7 inches on a walking pad and more on a full-size treadmill — the desk needs to be higher than your usual standing height, and some desks cannot reach it.`,
     },
     {
       q: 'Can you use a walking pad with a standing desk?',

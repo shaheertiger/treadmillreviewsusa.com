@@ -42,7 +42,8 @@ export default {
             Most readers need one of the first two. The others exist because a carpeted floor, an
             upstairs room, a long commercial-style machine or a walking pad each changes what a mat
             has to do. One mat appears twice: the rubber mat we chose for big machines is also the
-            one we would put on carpet.
+            one we would put on carpet. Not sure what thickness you need? See our guide to
+            <a href="/how-thick-should-a-treadmill-mat-be/" class="text-[#0F62FE] font-medium">how thick a treadmill mat should be</a>.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead><tr>

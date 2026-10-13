@@ -409,6 +409,42 @@ a motor rating Horizon no longer publishes and does not mention the 2022 T101-05
 several older pages (`/best-treadmills-under-500/`, `/best-treadmills-under-800/`, both Sole model
 pages, `/treadmill-desk-guide/`) carry first-person testing claims.
 
+### Supporting articles: twenty companions to the roundups
+
+One informational article per affiliate roundup (2026-10-13), written to answer a real query and pass
+the reader to its money page. Each links its roundup four times (short answer, a closing "what to buy"
+section, the first related card and the bottom line), and each roundup now links back from its
+quick-picks intro. No supporting page carries `products` or model specifications beyond what its
+roundup states; new brand, app or recall facts were checked against the manufacturer or cpsc.gov plus
+an independent source.
+
+| Supporting article | Money page |
+|---|---|
+| how-thick-should-a-treadmill-mat-be | best-treadmill-mats |
+| how-to-stay-cool-on-a-treadmill | best-treadmill-accessories |
+| chest-strap-vs-wrist-heart-rate | best-heart-rate-monitors-for-treadmill |
+| how-to-use-a-manual-treadmill | best-manual-treadmills |
+| curved-treadmill-workouts | best-curved-treadmills |
+| can-you-use-nordictrack-without-ifit | best-smart-treadmills |
+| nordictrack-t-series-vs-commercial | best-nordictrack-treadmills |
+| dog-treadmill-vs-human-treadmill | best-dog-treadmills |
+| how-long-do-walking-pads-last | best-walking-pads-with-incline |
+| treadmill-foot-pod-guide | best-treadmills-for-zwift |
+| is-proform-a-good-brand | best-proform-treadmills |
+| sole-vs-nordictrack | best-sole-treadmills |
+| is-horizon-a-good-treadmill-brand | best-horizon-treadmills |
+| how-to-read-treadmill-reviews | best-treadmills-on-amazon |
+| how-to-make-a-cheap-treadmill-last-longer | best-treadmills-under-300 |
+| what-happens-if-you-exceed-treadmill-weight-limit | best-walking-pads-for-heavy-people |
+| walking-pad-vs-folding-treadmill | best-walking-pads-with-handrail |
+| standing-desk-height-for-walking-pad | best-treadmill-desks |
+| how-often-to-replace-running-shoes | best-running-shoes-for-treadmill |
+| what-is-treadmill-decline-good-for | best-treadmills-with-decline |
+
+Two existing errors fixed while writing them: `/best-treadmill-desks/` said a keyboard tray helps when
+a desk is too low (a tray lowers the keyboard; it cannot add height), and `/treadmill-desk-guide/`
+said a walking pad raises you "a couple of inches" (typically 4 to 7).
+
 ### Sole F80 and F85
 
 Both machines were referenced across the site — the F80 on ten pages — with no page to point at,

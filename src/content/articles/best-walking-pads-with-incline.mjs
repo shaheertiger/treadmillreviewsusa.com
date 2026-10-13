@@ -49,7 +49,8 @@ export default {
             Five pads, chosen so that each kind of incline buyer has an obvious answer. The short
             version: the UREVO SpaceWalk 3S for most people, the MERACH W60 Plus if you want the
             steepest powered incline in a pad, and the DeerRun Z10 if you want powered incline for
-            the least money and can live with a short belt.
+            the least money and can live with a short belt. Before you buy, it is worth knowing
+            <a href="/how-long-do-walking-pads-last/" class="text-[#0F62FE] font-medium">how long walking pads last</a>.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead>

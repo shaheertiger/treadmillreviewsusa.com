@@ -46,7 +46,8 @@ export default {
       html: `          <p>
             Six machines across the size range. Match the machine to your dog's length and weight
             first and to features second; a well-specified treadmill that is too short is the wrong
-            treadmill.
+            treadmill. If you are wondering whether your own treadmill would do, we compare
+            <a href="/dog-treadmill-vs-human-treadmill/" class="text-[#0F62FE] font-medium">dog treadmills versus human treadmills</a>.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead>

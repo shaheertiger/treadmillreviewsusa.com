@@ -48,7 +48,8 @@ export default {
       html: `          <p>
             Five pads, each with a different reason to exist. The short version: the MERACH NovaWalk
             W50 TrekPad for most heavier walkers, the LifeSpan TX6-GlowUp if you walk for hours every
-            working day and can pay for it, and the WalkingPad MX8 if you want something to hold.
+            working day and can pay for it, and the WalkingPad MX8 if you want something to hold. Why margin matters is explained in
+            <a href="/what-happens-if-you-exceed-treadmill-weight-limit/" class="text-[#0F62FE] font-medium">what happens when you exceed a treadmill weight limit</a>.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead>
