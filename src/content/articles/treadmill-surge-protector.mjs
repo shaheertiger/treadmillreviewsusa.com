@@ -128,7 +128,9 @@ export default {
       heading: 'What to Look For in a Treadmill Surge Protector',
       html: `          <p>
             If your manual allows one, the right device is closer to an appliance-grade surge
-            protector than an office power strip. Five things matter.
+            protector than an office power strip. Five things matter. (The unit in our
+            <a href="/best-treadmill-accessories/" class="text-[#0F62FE] font-medium">treadmill accessories</a>
+            roundup was chosen against them.)
           </p>
           <p>
             <strong>A safety listing to UL 1449.</strong> UL 1449 is the US safety standard for

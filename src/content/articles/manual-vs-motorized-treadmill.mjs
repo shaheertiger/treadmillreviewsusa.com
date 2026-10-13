@@ -22,7 +22,9 @@ export default {
   lead: `"Manual treadmill" describes two machines that share a name and very little else: a
           cheap flat-belt unit sold as a budget alternative to a motorized treadmill, and a
           commercial curved trainer that costs more than most motorized ones. Which one you are
-          looking at decides whether the answer is "avoid" or "excellent, for the right person".`,
+          looking at decides whether the answer is "avoid" or "excellent, for the right person". For
+          current machines of both kinds, see our
+          <a href="/best-manual-treadmills/" class="text-[#0F62FE] font-medium">best manual treadmills</a>.`,
   note: `<strong class="text-gray-900">On the figures.</strong> Prices and specifications below
           are broad typical ranges for each category rather than measurements of particular
           models, and they move with promotions and model years. Check the manufacturer's current

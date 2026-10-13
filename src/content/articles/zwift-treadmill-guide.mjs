@@ -103,7 +103,8 @@ export default {
             the console is the speed on screen.
           </p>
           <p>
-            We deliberately do not name models here. Which treadmills pair with Zwift changes with
+            This guide does not name models; our <a href="/best-treadmills-for-zwift/" class="text-[#0F62FE] font-medium">best treadmills for Zwift</a>
+            roundup does, dated and sourced. Which treadmills pair with Zwift changes with
             firmware updates on both sides, and a machine that worked last year can need a firmware
             update, a different pairing mode or a workaround this year. Zwift publishes and updates
             a compatibility list; check it for the exact model and firmware you are considering

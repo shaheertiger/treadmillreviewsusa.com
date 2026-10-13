@@ -19,7 +19,8 @@ export default {
   ],
   tags: ['amazon treadmill', 'treadmill machine amazon', 'buying a treadmill on amazon', 'amazon treadmill reviews', 'where to buy a treadmill'],
   stickyCta: { text: 'How to Read a Listing', link: '#reading-listings' },
-  lead: `This page does not recommend particular treadmills on Amazon, because listings change
+  lead: `This page does not recommend particular treadmills on Amazon (our dated
+          <a href="/best-treadmills-on-amazon/" class="text-[#0F62FE] font-medium">best treadmills on Amazon</a> roundup does), because listings change
           constantly, the same product page can quietly switch to a different version, and any
           list would be stale within weeks. It covers how to judge whatever you are looking at: who
           is actually selling it, which numbers on the listing mean something, how to read reviews

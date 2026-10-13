@@ -207,7 +207,9 @@ export default {
       html: `          <p>
             Sole has built its reputation on durable, no-subscription-required treadmills with
             strong motors and cushioning for their price. Its consoles run speed, incline and
-            built-in programmes without any membership; its app is optional workout tracking rather
+            built-in programmes without any membership (our
+            <a href="/best-sole-treadmills/" class="text-[#0F62FE] font-medium">best Sole treadmills</a>
+            ranks the current range); its app is optional workout tracking rather
             than a gate on features.
           </p>
           <p>
@@ -233,9 +235,10 @@ export default {
             ProForm by shoppers at those prices.
           </p>
           <p>
-            We are deliberately cautious here. Our full Horizon guide is still being completed while
-            we verify current model designations, warranty terms and subscription positions, and we
-            would rather not assert brand-wide claims we have not confirmed. If you are considering
+            We are deliberately cautious about brand-wide claims here. The current models, checked
+            against Horizon's own listings, are ranked in our
+            <a href="/best-horizon-treadmills/" class="text-[#0F62FE] font-medium">best Horizon treadmills</a>;
+            we would rather not assert anything broader we have not confirmed. If you are considering
             a Horizon machine, apply the framework above directly: check the continuous motor rating,
             deck size and weight capacity against your needs, read the motor, parts and labour terms,
             ask who services it locally, and confirm what the console does without any app.

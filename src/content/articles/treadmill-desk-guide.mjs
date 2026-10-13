@@ -273,7 +273,8 @@ export default {
       heading: 'Standing Desk Compatibility',
       html: `          <p>
             Most treadmill desks are a walking pad under an electric sit-stand desk. Before
-            pairing them, check four things.
+            pairing them, check four things; our
+            <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium">best treadmill desks</a> applies them to current desks.
           </p>
           <ul>
             <li><strong>Height range.</strong> The desk must reach your standing elbow height plus

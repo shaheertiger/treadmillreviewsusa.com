@@ -384,8 +384,9 @@ export default {
       heading: 'What to Check Before Buying a Curved Treadmill',
       html: `          <p>
             Because this is a smaller market with a wide spread of quality, the checklist is a
-            little different from a motorised machine's. We do not give model specifications here;
-            these are the questions to put to any listing or showroom.
+            little different from a motorised machine's. This page gives no model specifications —
+            our <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium">best curved treadmills</a>
+            roundup does — and these are the questions to put to any listing or showroom.
           </p>
           <ul>
             <li><strong>Slat belt or continuous belt?</strong> Slats are the premium design:
