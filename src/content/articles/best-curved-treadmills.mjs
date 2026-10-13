@@ -244,7 +244,7 @@ export default {
             rarely fail; slats, bearings and consoles are what wear. So look past the frame term to
             the moving parts and labour. The TrueForm Trainer's 5 years on moving parts and the
             AssaultRunner Pro's 3 years plus a mileage-rated belt are meaningfully stronger than the
-            SOLE C80's single year on parts and labour, even though the SOLE's frame term reads
+            SOLE C80's single year on parts (and a labour term Sole's current listing puts at 90 days), even though the SOLE's frame term reads
             best. Several makers also restrict the home warranty to non-commercial use, so a
             machine used for paid personal training sessions at home may not be covered. Older
             reviews quote different terms for some of these models — Assault's frame warranty, for
@@ -370,7 +370,7 @@ export default {
         'Bluetooth console works with SOLE+, Zwift and Kinomap',
       ],
       cons: [
-        'One year on deck, parts, electronics and labour is short at this price',
+        'One year on deck, parts and electronics, and 90 days on labour per Sole\'s listing, is short at this price',
         'Newer model with limited long-term owner evidence so far',
       ],
       bottomLine:
@@ -382,7 +382,8 @@ export default {
         sled-style pushes or harder sprints. The slat deck is 62 by 19 inches — the widest confirmed
         figure here — the user rating is 330 lb and the machine weighs 261 lb. The Bluetooth console
         connects to SOLE's own app and to third-party platforms. The warranty is the main reservation:
-        lifetime on the frame but one year on the deck, parts, electronics and labour, which is the
+        lifetime on the frame but one year on the deck, parts and electronics, and Sole's current
+        listing gives 90 days on labour, which is the
         shortest parts cover of the mid-priced machines here. Independent coverage is positive but
         thinner than for the AssaultRunner, simply because the C80 is newer. See our
         <a href="/sole-fitness/" class="text-[#0F62FE] font-medium">SOLE brand overview</a> for context.`,

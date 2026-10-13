@@ -211,6 +211,20 @@ export const SECTIONS: Section[] = [
             badge: 'Incline pad',
             url: '/best-walking-pads-with-incline/',
           },
+          {
+            title: 'Best Walking Pads With Handrail',
+            description:
+              '2-in-1 pads with a fold-up rail, what the rail unlocks, and who needs a real treadmill instead.',
+            badge: 'Handrail',
+            url: '/best-walking-pads-with-handrail/',
+          },
+          {
+            title: 'Best Treadmill Desks',
+            description:
+              'Integrated treadmill desks and standing desks that suit a walking pad, compared on height range and stability.',
+            badge: 'Desk',
+            url: '/best-treadmill-desks/',
+          },
         ],
       },
       {
@@ -222,6 +236,13 @@ export const SECTIONS: Section[] = [
               'Steep-incline trainers for hill and trail-style training, from 12% to 40% grade.',
             badge: 'Incline',
             url: '/best-incline-treadmills/',
+          },
+          {
+            title: 'Best Treadmills With Decline',
+            description:
+              'Machines with confirmed powered decline for downhill race and hiking prep, and how much decline is useful.',
+            badge: 'Decline',
+            url: '/best-treadmills-with-decline/',
           },
         ],
       },
@@ -253,6 +274,13 @@ export const SECTIONS: Section[] = [
               'Capacity is a warranty term, not an engineering limit. Ranked on roller diameter, frame flex and motor heat.',
             badge: 'High capacity',
             url: '/best-treadmills-for-heavy-people/',
+          },
+          {
+            title: 'Best Walking Pads for Heavy People',
+            description:
+              'High-capacity walking pads where the rating holds up across sources, and when a full treadmill is the better buy.',
+            badge: 'High capacity',
+            url: '/best-walking-pads-for-heavy-people/',
           },
         ],
       },
@@ -345,6 +373,13 @@ export const SECTIONS: Section[] = [
             description: 'The sweet spot between entry-level and commercial-grade — five tested picks.',
             badge: 'Mid tier',
             url: '/treadmills-under-1500/',
+          },
+          {
+            title: 'Best Treadmills Under $300',
+            description:
+              'What around $300 really buys — mostly walking pads and compact folders — and the picks worth having.',
+            badge: 'Under $300',
+            url: '/best-treadmills-under-300/',
           },
         ],
       },
@@ -536,6 +571,13 @@ export const SECTIONS: Section[] = [
             badge: 'Returns',
             url: '/treadmill-return-policies/',
           },
+          {
+            title: 'Best Treadmills on Amazon',
+            description:
+              'Machines sold by Amazon or the brand itself, with the delivery, return and seller traps explained.',
+            badge: 'Amazon',
+            url: '/best-treadmills-on-amazon/',
+          },
         ],
       },
     ],
@@ -585,6 +627,27 @@ export const SECTIONS: Section[] = [
               'The current T, Commercial and X lines ranked by buyer, with what NordicTrack confirms and what it does not.',
             badge: 'NordicTrack',
             url: '/best-nordictrack-treadmills/',
+          },
+          {
+            title: 'Best ProForm Treadmills',
+            description:
+              'The current ProForm lineup ranked by buyer, with only the figures ProForm and independent coverage agree on.',
+            badge: 'ProForm',
+            url: '/best-proform-treadmills/',
+          },
+          {
+            title: 'Best Sole Treadmills',
+            description:
+              'The current Sole range sorted by use, with the contested F80 and F85 figures handled honestly.',
+            badge: 'Sole',
+            url: '/best-sole-treadmills/',
+          },
+          {
+            title: 'Best Horizon Treadmills',
+            description:
+              'Horizon models that work without a subscription, from the entry folders to the 7-series.',
+            badge: 'Horizon',
+            url: '/best-horizon-treadmills/',
           },
         ],
       },
@@ -1292,6 +1355,13 @@ export const SECTIONS: Section[] = [
               'One verified pick per category: mat, lubricant, heart-rate strap, power protection, fan and more.',
             badge: 'Accessories',
             url: '/best-treadmill-accessories/',
+          },
+          {
+            title: 'Best Running Shoes for Treadmill',
+            description:
+              'Current daily trainers, tempo, stability and walking shoes suited to belt running, and when to replace them.',
+            badge: 'Shoes',
+            url: '/best-running-shoes-for-treadmill/',
           },
         ],
       },

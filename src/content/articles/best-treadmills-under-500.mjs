@@ -33,7 +33,8 @@ export default {
       heading: 'What $500 Cannot Buy, Stated Plainly',
       html: `          <p>
             Three things are effectively unavailable at this price, and knowing that up front
-            makes the rest of the decision straightforward.
+            makes the rest of the decision straightforward. (For the tier below, see the
+            <a href="/best-treadmills-under-300/" class="text-[#0F62FE] font-medium">best treadmills under $300</a>.)
           </p>
           <p>
             <strong>A running deck.</strong> Decks at this price run 40 to 50 inches. A 60-inch

@@ -497,7 +497,9 @@ export default {
             <strong>If you want the ProForm equivalent.</strong> ProForm is NordicTrack's sister
             brand on the same iFIT platform, generally at lower prices; the
             <a href="/nordictrack-vs-proform/" class="text-[#0F62FE] font-medium">NordicTrack vs ProForm comparison</a>
-            explains where the two genuinely differ.
+            explains where the two genuinely differ, and our
+            <a href="/best-proform-treadmills/" class="text-[#0F62FE] font-medium">best ProForm treadmills</a>
+            ranks the current ProForm lineup.
           </p>`,
     },
   ],

@@ -385,6 +385,30 @@ around the discontinued C-Series and 2950); they are flagged here, not yet corre
 Eleven existing specs gained contextual links into the batch, and `/treadmill-for-dogs/` no longer
 says the site will not recommend a dog treadmill.
 
+### Affiliate roundups, second batch: ten more "best" pages
+
+Same rules as the first batch (2026-10-13): products confirmed as currently sold, figures
+cross-checked and conflicting ones left off the cards, no testing claims or ratings, tagged
+Amazon search links. This batch also searched cpsc.gov for every brand before listing a product.
+
+- `/brands/`: ProForm (four cards — proform.com sells only four treadmills), Sole (contested
+  2026 F-series figures stated as unconfirmed rather than chosen) and Horizon
+- `/price/`: best treadmills on Amazon (Where to buy) and under $300 (Budget tiers)
+- `/best/`: walking pads for heavy people, walking pads with handrail, treadmill desks and
+  treadmills with decline
+- `/guides/`: running shoes for treadmill (Accessories)
+
+Ten existing specs gained contextual links; `/best-treadmill-brands/` no longer says its Horizon
+coverage is unfinished. The Sole C80 labour term on the curved and manual roundups now follows
+Sole's current listing (90 days).
+
+Found while checking, not yet corrected: `/sole-f65-treadmill/` disagrees with Sole's 2026 listing
+on motor, deck, capacity, warranty and console; `/proform-pro-2000-treadmill/` and
+`/proform-treadmill/` describe models no longer on proform.com; `/horizon-t101-treadmill/` states
+a motor rating Horizon no longer publishes and does not mention the 2022 T101-05 recall; and
+several older pages (`/best-treadmills-under-500/`, `/best-treadmills-under-800/`, both Sole model
+pages, `/treadmill-desk-guide/`) carry first-person testing claims.
+
 ### Sole F80 and F85
 
 Both machines were referenced across the site — the F80 on ten pages — with no page to point at,

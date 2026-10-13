@@ -140,7 +140,9 @@ export default {
           <p>
             <strong>Walking pads and compact under-desk machines: roughly 220 to 265 lb.</strong>
             These are built light so they can be moved and stored, with small rollers and modest
-            motors. Many are intended for walking only, and the capacity figure assumes walking.
+            motors. Many are intended for walking only, and the capacity figure assumes walking. A
+            smaller group is now rated at 330 to 400 lb; see the
+            <a href="/best-walking-pads-for-heavy-people/" class="text-[#0F62FE] font-medium">best walking pads for heavy people</a>.
           </p>
           <p>
             <strong>Budget folding treadmills: typically around 250 lb.</strong> Ratings in the 220

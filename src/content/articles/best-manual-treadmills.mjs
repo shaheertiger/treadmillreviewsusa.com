@@ -478,7 +478,7 @@ export default {
         'Bluetooth console works with SOLE+, Zwift and Kinomap',
       ],
       cons: [
-        'Parts, deck, electronics and labour are covered for 1 year only',
+        'Parts, deck and electronics covered for 1 year; Sole\'s listing gives 90 days on labour',
         'Newer model with thinner independent coverage than the AssaultRunner',
         'Does not fold, weighs 261 lb and has no incline',
       ],
@@ -491,8 +491,8 @@ export default {
         controlled way to make it heavier for sled-push work or resisted sprints. The 62 by 19-inch
         slat deck is the widest here, the user rating is 330 lb, and the machine weighs 261 lb. The
         console connects over Bluetooth to SOLE's app and third-party platforms such as Zwift. SOLE
-        lists a lifetime frame warranty but only a year on the deck, parts, electronics and labour,
-        which is short for a $2,000-plus machine. It is newer than its rivals, so long-term owner
+        lists a lifetime frame warranty but only a year on the deck, parts and electronics and 90
+        days on labour, which is short for a $2,000-plus machine. It is newer than its rivals, so long-term owner
         evidence is still limited. Our <a href="/sole-fitness/" class="text-[#0F62FE] font-medium">SOLE brand overview</a>
         covers the company's motorised range.`,
     },
