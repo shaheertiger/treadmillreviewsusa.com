@@ -364,6 +364,20 @@ export const SECTIONS: Section[] = [
             badge: 'VR',
             url: '/best-vr-treadmills/',
           },
+          {
+            title: 'Best Dog Treadmills for Large Dogs',
+            description:
+              'Machines with the length and capacity for large and giant breeds, and the safety rules.',
+            badge: 'Large dogs',
+            url: '/best-dog-treadmills-for-large-dogs/',
+          },
+          {
+            title: 'Underwater Treadmills for Dogs',
+            description:
+              'Canine hydrotherapy: what it is, who provides it, what sessions cost, and home units.',
+            badge: 'Hydrotherapy',
+            url: '/underwater-treadmill-for-dogs/',
+          },
         ],
       },
     ],
@@ -719,6 +733,20 @@ export const SECTIONS: Section[] = [
             badge: 'Horizon',
             url: '/is-horizon-a-good-treadmill-brand/',
           },
+          {
+            title: 'Spirit Fitness Treadmills',
+            description:
+              "Dyaco's heavier-built line: the XT485 and XT685, capacities, and the conflicting retailer figures.",
+            badge: 'Spirit',
+            url: '/spirit-treadmills/',
+          },
+          {
+            title: 'LifeSpan Treadmills',
+            description:
+              'Walking pads, treadmill desks and folders: what is in stock and the figures LifeSpan states two ways.',
+            badge: 'LifeSpan',
+            url: '/lifespan-treadmills/',
+          },
         ],
       },
       {
@@ -735,6 +763,20 @@ export const SECTIONS: Section[] = [
             description: 'Commercial-grade hardware from the makers of real gym equipment.',
             badge: 'Brand guide',
             url: '/matrix-fitness/',
+          },
+          {
+            title: 'Landice Treadmills',
+            description:
+              'The family-owned New Jersey maker: the L7, L8 and M2, warranty conditions and where to try one.',
+            badge: 'Landice',
+            url: '/landice-treadmills/',
+          },
+          {
+            title: 'Star Trac Treadmills',
+            description:
+              'A commercial brand most home buyers meet used or refurbished: what to check and what it costs.',
+            badge: 'Star Trac',
+            url: '/star-trac-treadmills/',
           },
         ],
       },
@@ -753,6 +795,41 @@ export const SECTIONS: Section[] = [
               'A discontinued US brand: buying one used, finding parts and manuals, and what replaced it.',
             badge: 'Legacy',
             url: '/trimline-treadmill/',
+          },
+          {
+            title: 'LIVESTRONG Treadmills',
+            description:
+              'A discontinued Johnson Health Tech line: the LS10.0T, buying used, parts and what replaced it.',
+            badge: 'Legacy',
+            url: '/livestrong-treadmill/',
+          },
+          {
+            title: "Gold's Gym Treadmills",
+            description:
+              "Why no current Gold's Gym treadmill could be found, and what to know about the older ICON-made models.",
+            badge: 'Legacy',
+            url: '/golds-gym-treadmill/',
+          },
+          {
+            title: 'Reebok Treadmills',
+            description:
+              'Who makes Reebok treadmills, the i-Run and FR models by market, and thin US availability.',
+            badge: 'Reebok',
+            url: '/reebok-treadmills/',
+          },
+          {
+            title: 'MaxKare Treadmills',
+            description:
+              'A Walmart-led marketplace brand: what its listings claim and where they contradict themselves.',
+            badge: 'Marketplace',
+            url: '/maxkare-treadmill/',
+          },
+          {
+            title: 'Famistar Treadmills',
+            description:
+              'Another marketplace brand: the listings, the three warranty lengths, and the shipping terms.',
+            badge: 'Marketplace',
+            url: '/famistar-treadmill/',
           },
         ],
       },
@@ -839,6 +916,27 @@ export const SECTIONS: Section[] = [
             badge: 'Entry level',
             url: '/nordictrack-t-6-5-s-treadmill/',
           },
+          {
+            title: 'NordicTrack Commercial 1250 Review',
+            description:
+              'The current NTL14125 checked against NordicTrack and two retailers: 3.6 CHP, 22 x 60 in., 400 lb.',
+            badge: 'NordicTrack',
+            url: '/nordictrack-commercial-1250-treadmill/',
+          },
+          {
+            title: 'NordicTrack T Series Review',
+            description:
+              'The T Series 10 and 16 on nordictrack.com and the retailer-only T Series 8, with the figures that agree.',
+            badge: 'NordicTrack',
+            url: '/nordictrack-t-series-treadmill/',
+          },
+          {
+            title: 'NordicTrack EXP 7i',
+            description:
+              'An older model no longer in the US range: what it was, buying one used, and the current equivalents.',
+            badge: 'Older model',
+            url: '/nordictrack-exp-7i-treadmill/',
+          },
         ],
       },
       {
@@ -874,6 +972,20 @@ export const SECTIONS: Section[] = [
             badge: 'Best capacity',
             url: '/proform-505-cst-treadmill/',
           },
+          {
+            title: 'ProForm Carbon Pro 9000 Review',
+            description:
+              'The current 16 in. touchscreen model, and how it differs from the older Pro 9000 people still search for.',
+            badge: 'ProForm',
+            url: '/proform-carbon-pro-9000-treadmill/',
+          },
+          {
+            title: 'ProForm Carbon TLS Review',
+            description:
+              "ProForm's compact entry machine: confirmed figures, the motor and warranty conflicts, and the price gap.",
+            badge: 'ProForm',
+            url: '/proform-carbon-tls-treadmill/',
+          },
         ],
       },
       {
@@ -898,6 +1010,20 @@ export const SECTIONS: Section[] = [
             badge: 'Withdrawn',
             url: '/sole-f89-treadmill/',
           },
+          {
+            title: 'Sole F80 Treadmill Review',
+            description:
+              'The 2026 F80 checked against Sole and independent sources, with the older versions explained.',
+            badge: 'Sole',
+            url: '/sole-f80-treadmill/',
+          },
+          {
+            title: 'Sole F85 Treadmill Review',
+            description:
+              'The 2026 F85 on what Sole confirms, the conflicting older figures, and who should buy it.',
+            badge: 'Sole',
+            url: '/sole-f85-treadmill/',
+          },
         ],
       },
       {
@@ -916,6 +1042,13 @@ export const SECTIONS: Section[] = [
               'The 22 x 60 in. JRNY folder checked against Bowflex and two independent reviews, with the owner complaints that recur.',
             badge: 'Bowflex',
             url: '/bowflex-t9-treadmill/',
+          },
+          {
+            title: 'Bowflex T16 Treadmill Review',
+            description:
+              'The 16 in. touchscreen flagship checked against Bowflex and two independent reviews.',
+            badge: 'Bowflex',
+            url: '/bowflex-t16-treadmill/',
           },
         ],
       },
@@ -961,6 +1094,27 @@ export const SECTIONS: Section[] = [
               'Why the "compact foldable electric treadmill" listings describe furniture, and what to buy instead.',
             badge: 'Wayfair',
             url: '/east-urban-home-treadmill/',
+          },
+          {
+            title: 'Horizon 7.0 AT Review',
+            description:
+              "Horizon's best-selling folder: confirmed specs, the missing motor rating, and how to judge a sale price.",
+            badge: 'Horizon',
+            url: '/horizon-7-0-at-treadmill/',
+          },
+          {
+            title: 'Goplus 2-in-1 Treadmill Review',
+            description:
+              'The SuperFit 2-in-1 behind the long listing title, its versions, and what the warranty really is.',
+            badge: 'Walking pad',
+            url: '/goplus-2-in-1-treadmill/',
+          },
+          {
+            title: 'Redliro Under Desk Treadmill',
+            description:
+              'What Redliro listings claim, where they disagree, and the return terms to read first.',
+            badge: 'Walking pad',
+            url: '/redliro-under-desk-treadmill/',
           },
         ],
       },
@@ -1017,6 +1171,62 @@ export const SECTIONS: Section[] = [
               "Reebok's cushioned folder: confirmed specs, why US stock is thin, and the alternatives.",
             badge: 'Reebok',
             url: '/reebok-fr20z-floatride-treadmill/',
+          },
+          {
+            title: 'Life Fitness Run CX Review',
+            description:
+              'A gym-derived home treadmill with FlexDeck cushioning, checked against Life Fitness and dealers.',
+            badge: 'Life Fitness',
+            url: '/life-fitness-run-cx-treadmill/',
+          },
+          {
+            title: 'Life Fitness Integrity Series Treadmill',
+            description:
+              'The commercial Integrity+ for home buyers: naming, delivery and installation, and the warranty conflict.',
+            badge: 'Commercial',
+            url: '/life-fitness-integrity-series-treadmill/',
+          },
+          {
+            title: 'Matrix T5x Treadmill',
+            description:
+              'A commercial machine sold remanufactured in the US: confirmed figures, conflicts and the recalls to know.',
+            badge: 'Commercial',
+            url: '/matrix-t5x-treadmill/',
+          },
+          {
+            title: 'iMovR Unsit Treadmill Desk',
+            description:
+              'The office treadmill and Lander desk set: what iMovR confirms and the figures it states three ways.',
+            badge: 'Desk',
+            url: '/imovr-unsit-treadmill-desk/',
+          },
+          {
+            title: 'Pro 6 Arcadia Air Runner',
+            description:
+              'A curved trainer sold by Pro 6 and its dealers, on what the spec sheet claims.',
+            badge: 'Curved',
+            url: '/pro-6-arcadia-air-runner/',
+          },
+          {
+            title: 'TKO AirRaid Runner Treadmill',
+            description:
+              'The 8CTM, now sold as the AirRaid Force, and how it differs from the newer AirRaid Runner.',
+            badge: 'Curved',
+            url: '/tko-airraid-runner-treadmill/',
+          },
+          {
+            title: 'NOHrD Sprintbok',
+            description:
+              'The German-made wooden slat treadmill: confirmed figures, prices by finish and the warranty by market.',
+            badge: 'Curved',
+            url: '/nohrd-sprintbok/',
+          },
+          {
+            title: 'SB Fitness CT700 Curved Treadmill',
+            description:
+              "The CT550's steel-bearing sibling, and the three weight limits in the seller's own documents.",
+            badge: 'Curved',
+            url: '/sb-fitness-ct700-curved-treadmill/',
           },
         ],
       },
@@ -1420,6 +1630,13 @@ export const SECTIONS: Section[] = [
             badge: 'Calibration',
             url: '/treadmill-calibration/',
           },
+          {
+            title: 'Anti-Gravity Treadmills',
+            description:
+              'What AlterG and other anti-gravity treadmills are, who uses them, and what a session costs.',
+            badge: 'AlterG',
+            url: '/anti-gravity-treadmill/',
+          },
         ],
       },
       {
@@ -1703,6 +1920,13 @@ export const SECTIONS: Section[] = [
               'Once per revolution, with each step, or on its own: time the jerk to find the fault, and know when to stop.',
             badge: 'Speed faults',
             url: '/treadmill-belt-jerking/',
+          },
+          {
+            title: 'Treadmill Cracked Deck',
+            description:
+              'The symptoms of a cracked or broken deck, why to stop using it, and repair or replace.',
+            badge: 'Deck',
+            url: '/treadmill-cracked-deck/',
           },
         ],
       },
@@ -2013,6 +2237,13 @@ export const SECTIONS: Section[] = [
             badge: 'Deck',
             url: '/treadmill-deck-replacement/',
           },
+          {
+            title: 'Treadmill Repair Near Me',
+            description:
+              'Finding a qualified technician through the manufacturer or independently, typical costs and red flags.',
+            badge: 'Repair',
+            url: '/treadmill-repair-near-me/',
+          },
         ],
       },
       {
@@ -2052,6 +2283,13 @@ export const SECTIONS: Section[] = [
               'Taking one apart for a move or disposal: tools, the order to work in, the console harness and reassembly.',
             badge: 'Disassembly',
             url: '/how-to-disassemble-a-treadmill/',
+          },
+          {
+            title: 'How to Pack a Treadmill',
+            description:
+              'Packing for a move, storage or a return: securing the deck, labelling hardware, and carrier limits.',
+            badge: 'Packing',
+            url: '/how-to-pack-a-treadmill/',
           },
         ],
       },

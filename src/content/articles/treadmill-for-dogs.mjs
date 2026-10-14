@@ -328,7 +328,7 @@ export default {
       html: `          <p>
             Even done perfectly, a treadmill session gives a dog one thing: physical movement at a
             fixed pace in a fixed place. That is a real benefit in a narrow set of circumstances,
-            and it is a very small part of what a walk provides.
+            and it is a very small part of what a walk provides. Rehabilitation usually means water work, covered in <a href="/underwater-treadmill-for-dogs/" class="text-[#0F62FE] font-medium">underwater treadmills for dogs</a>.
           </p>
           <p>
             <strong>What it can do.</strong> Supplement exercise for a healthy, high-energy adult
@@ -420,7 +420,7 @@ export default {
             Everything above points the same way: a human treadmill can work for an occasional,
             supervised, slow walk with a suitable dog, and a purpose-built dog treadmill is the
             right tool for anything beyond that. These are the signs that the dog version is the
-            one to buy — or that a treadmill is not the answer at all.
+            one to buy — or that a treadmill is not the answer at all. For bigger breeds, see the <a href="/best-dog-treadmills-for-large-dogs/" class="text-[#0F62FE] font-medium">best dog treadmills for large dogs</a>.
           </p>
           <ul>
             <li><strong>The dog needs to trot or run.</strong> A working breed, a sporting dog, or

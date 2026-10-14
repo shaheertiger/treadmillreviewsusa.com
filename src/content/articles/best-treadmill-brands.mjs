@@ -210,7 +210,7 @@ export default {
             built-in programmes without any membership (our
             <a href="/best-sole-treadmills/" class="text-[#0F62FE] font-medium">best Sole treadmills</a>
             ranks the current range); its app is optional workout tracking rather
-            than a gate on features.
+            than a gate on features. Sole's parent also makes the heavier <a href="/spirit-treadmills/" class="text-[#0F62FE] font-medium">Spirit Fitness</a> range.
           </p>
           <p>
             <strong>Strengths:</strong> base hardware per dollar, warranty terms that are strong for
@@ -255,7 +255,7 @@ export default {
             Life Fitness and Matrix Fitness are primarily commercial gym-equipment manufacturers —
             the brands behind many machines in health clubs, hotels and university gyms — and both
             sell home lines built on that engineering. Matrix is a brand of Johnson Health Tech; Life
-            Fitness has made commercial equipment since the late 1960s.
+            Fitness has made commercial equipment since the late 1960s. Two more names in this space have their own guides: <a href="/landice-treadmills/" class="text-[#0F62FE] font-medium">Landice</a> and <a href="/star-trac-treadmills/" class="text-[#0F62FE] font-medium">Star Trac</a>.
           </p>
           <p>
             <strong>Strengths:</strong> commercial construction philosophy, typically including AC
@@ -303,7 +303,7 @@ export default {
       html: `          <p>
             The fastest-growing part of the market is compact under-desk walking pads, sold largely
             online under a wide and changing set of brand names. We treat them as a category rather
-            than profiling each brand, because the trade-offs are shared and the names come and go.
+            than profiling each brand, because the trade-offs are shared and the names come and go. For one of the longer-established names, see our guide to <a href="/lifespan-treadmills/" class="text-[#0F62FE] font-medium">LifeSpan treadmills</a>.
           </p>
           <p>
             <strong>Strengths:</strong> low prices, small footprints, easy storage, and genuinely good

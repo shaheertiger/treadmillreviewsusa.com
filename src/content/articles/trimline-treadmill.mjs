@@ -333,7 +333,7 @@ export default {
       html: `          <p>
             If your Trimline has reached the end, or you were looking for one because you wanted a
             simple, affordable home treadmill, the same qualities are easy to find in current
-            machines with warranties and available parts.
+            machines with warranties and available parts. Another discontinued line people still search for is <a href="/livestrong-treadmill/" class="text-[#0F62FE] font-medium">LIVESTRONG</a>.
           </p>
           <p>
             For simple, subscription-free walking and jogging, the

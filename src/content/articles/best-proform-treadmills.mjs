@@ -73,6 +73,7 @@ export default {
     {
       id: 'proform-carbon-pro-9000',
       name: 'ProForm Carbon Pro 9000',
+      reviewUrl: '/proform-carbon-pro-9000-treadmill/',
       category: 'Biggest screen and most motor ProForm sells',
       badge: 'Premium Pick',
       amazonUrl: 'https://www.amazon.com/s?k=ProForm+Carbon+Pro+9000+Treadmill&tag=sktiger-20',
@@ -97,6 +98,7 @@ export default {
     {
       id: 'proform-carbon-tls',
       name: 'ProForm Carbon TLS',
+      reviewUrl: '/proform-carbon-tls-treadmill/',
       category: 'Cheapest treadmill ProForm sells',
       badge: 'Best Budget',
       amazonUrl: 'https://www.amazon.com/s?k=ProForm+Carbon+TLS+Treadmill&tag=sktiger-20',

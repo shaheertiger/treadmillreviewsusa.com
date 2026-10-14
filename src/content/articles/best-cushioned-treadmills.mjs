@@ -73,6 +73,7 @@ export default {
     {
       id: 'life-fitness-run-cx',
       name: 'Life Fitness Run CX',
+      reviewUrl: '/life-fitness-run-cx-treadmill/',
       category: 'Best premium cushioned treadmill',
       badge: 'Premium Pick',
       amazonUrl: 'https://www.amazon.com/s?k=Life+Fitness+Run+CX+Treadmill&tag=sktiger-20',
@@ -122,6 +123,7 @@ export default {
     {
       id: 'bowflex-t9',
       name: 'Bowflex T9',
+      reviewUrl: '/bowflex-t9-treadmill/',
       category: 'Best zoned cushioning for the money',
       badge: 'Best Value',
       amazonUrl: 'https://www.amazon.com/s?k=Bowflex+T9+Treadmill&tag=sktiger-20',
@@ -146,6 +148,7 @@ export default {
     {
       id: 'horizon-7-0-at',
       name: 'Horizon 7.0 AT',
+      reviewUrl: '/horizon-7-0-at-treadmill/',
       category: 'Best budget cushioned treadmill',
       badge: 'Best Budget',
       amazonUrl: 'https://www.amazon.com/s?k=Horizon+7.0+AT+Treadmill&tag=sktiger-20',

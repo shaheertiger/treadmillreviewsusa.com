@@ -95,6 +95,9 @@ const ACCESSORY = new Set([
 const VARIANT = new Set(['pro', 'plus', 'max', 'lite', 'mini', 'ultra', 'elite', 'connect', 'carbon', 'av', 'se', 'xl']);
 // Placeholder products on older pages that name no real model.
 export const GENERIC = new Set(['Flat-Fold Walking Pad', '2-in-1 Walking Pad With Rail']);
+// Names sold in several generations where an Amazon listing cannot be tied to the
+// version a page describes; these keep their tagged search links until checked by hand.
+export const VERSION_UNCLEAR = new Set(['Sole F80', 'Sole F85']);
 
 /**
  * Strict match, 0 to 1. The brand (first word) and every token carrying a digit —
@@ -104,7 +107,7 @@ export const GENERIC = new Set(['Flat-Fold Walking Pad', '2-in-1 Walking Pad Wit
  * "Polar H9"; "Commercial 1750" never matches "Commercial 1250".
  */
 export function matchScore(name, title) {
-  if (GENERIC.has(name) || !title) return 0;
+  if (GENERIC.has(name) || VERSION_UNCLEAR.has(name) || !title) return 0;
   const n = tokens(name);
   const nSet = new Set(n);
   const t = new Set(tokens(title));

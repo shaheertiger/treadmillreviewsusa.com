@@ -1,367 +1,572 @@
+const TH = 'text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4';
+const TD = 'border-b border-gray-100 py-2 pr-4 text-gray-700 align-top';
+const row = (cells) => `<tr>${cells.map((c) => `<td class="${TD}">${c}</td>`).join('')}</tr>`;
+const table = (head, rows) => `<div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead><tr>${head.map((h) => `<th class="${TH}">${h}</th>`).join('')}</tr></thead>
+            <tbody>
+              ${rows.map(row).join('\n              ')}
+            </tbody>
+          </table></div>`;
+
 export default {
   slug: 'sole-f80-treadmill',
-  title: 'Sole F80 Treadmill (2026): What to Verify Before You Buy',
+  title: 'Sole F80 Treadmill Reviews (2026): The New Model, Checked',
   description:
-    'The F80 is the machine the rest of the Sole range is measured against — and the one whose published specifications differ most between model years. What changes, and what to confirm.',
+    'Sole F80 treadmill reviews quote three different machines. The 2026 F80 has a 3.25 HP brushless motor, a 20 x 60 in. deck and a 10.1 in. touchscreen. What changed, what conflicts and who it suits.',
   crumbLabel: 'Sole F80 Treadmill',
   kicker: 'Model Review',
-  updated: 'September 2026',
-  updatedLong: 'September 15, 2026',
-  published: '2026-09-15',
+  updated: 'October 2026',
+  updatedLong: 'October 14, 2026',
+  published: '2026-10-14',
   socialProof: '2.9k',
-  h1: ['Sole F80', 'Treadmill'],
+  h1: ['Sole F80 Treadmill', 'Review for 2026'],
   standfirst:
-    'The F80 is the most cross-shopped machine Sole makes and the one most often quoted with the wrong numbers. This page is the framework for buying it correctly; the model-specific figures are being confirmed before publication.',
+    'Most Sole F80 treadmill reviews describe an earlier machine. Sole redesigned the F80 for 2026 with a smaller, brushless motor, a narrower deck and a much lighter frame, and kept the name. This review sets out the current figures Sole and independent sources agree on, the figures that still conflict, and who the new F80 actually suits.',
   ctas: [
-    { label: 'What to Verify', href: '#what-to-verify' },
-    { label: 'Where It Sits', href: '#where-it-sits' },
+    { label: 'The Short Answer', href: '#short-answer' },
+    { label: 'Why Reviews Disagree', href: '#generations' },
   ],
-  tags: ['sole f80 treadmill', 'sole f80', 'sole fitness', 'folding treadmill', 'treadmill reviews'],
-  stickyCta: { text: 'See What to Verify', link: '#what-to-verify' },
+  tags: ['sole f80 treadmill reviews', 'sole f80 treadmill', 'sole f80 review', 'sole f80 2026', 'sole f80 vs f85'],
+  stickyCta: { text: 'See the Verdict', link: '#short-answer' },
   breadcrumb: { name: 'Reviews', url: '/reviews/' },
-  dataPending: [
-    'Motor continuous-duty rating for each model year sold under the F80 name — published figures differ between generations and between retailers',
-    'Running surface dimensions and front roller diameter for the current unit',
-    'Weight capacity — sources currently disagree, and the figure has changed across generations',
-    'Incline range, whether decline is present on the current unit, and top speed',
-    'Warranty terms in full: frame, motor, deck, parts and labour, and whether service is in-home',
-    'Folded dimensions, assembled weight and delivery footprint',
-    'Current street price band, and whether the previous model year is still being cleared',
+  lead: `Read five Sole F80 treadmill reviews and you will find three different machines: one with
+          a 3.5 CHP motor and a 375 lb rating, one with a 3.5 HP motor, a 22-inch deck and a
+          touchscreen, and the one Sole sells today, with a 3.25 HP brushless motor, a 20 by 60-inch
+          deck and a 10.1-inch touchscreen on a frame Sole lists at 218 lb. All three are called the
+          F80. This review is about the third one, the 2026 model on Sole's own store, and it
+          only states a figure where Sole's listing and an independent source agree. Where they do
+          not, it says what each side says.`,
+  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
+          14 October 2026 we read Sole's US product page and product feed for the F80 (listed as new
+          for 2026, item F80-2026), including its full specification table, warranty table and
+          delivery options. We cross-checked each figure against two independent sources describing
+          the same 2026 model: Run Reviews' F80 review (last updated 30 July 2026) and the Flex Marks
+          the Spot product listing, a third-party price-tracking site. We also read the Sole-branded
+          specification sheet on the site of Dyaco, Sole's parent company, and older reviews from
+          BarBend, OutdoorGearLab, Garage Gym Reviews and Home Gym Verdict to identify which figures
+          belong to earlier F80s. Every figure on this page is one that Sole's current listing and at
+          least one independent source agree on; where sources disagree, we state both figures and
+          where each comes from rather than choosing. We have not tested the F80, and nothing here is
+          our own measurement. Prices are those shown on 14 October 2026 and change often, so confirm
+          the price, the specification and the warranty for the exact unit before you order. We earn
+          a commission if you buy through the Amazon link on this page; it does not change what we
+          say about the machine.`,
+  products: [
+    {
+      id: 'sole-f80',
+      name: 'Sole F80 (2026)',
+      category: 'Folding Touchscreen Treadmill',
+      badge: '2026 Model',
+      amazonUrl: 'https://www.amazon.com/s?k=Sole+F80+Treadmill&tag=sktiger-20',
+      priceRange: 'Around $1,500–$1,600',
+      specs: '20 x 60 in. deck · 3.25 HP brushless · 0.5-12 mph · 0-15% incline · 350 lb capacity · 10.1 in. touchscreen · folding',
+      pros: [
+        'A 10.1-inch tilting and swivelling touchscreen with Wi-Fi, Bluetooth speakers and screen mirroring, and no subscription needed for any treadmill function',
+        'Lifetime frame and motor cover on Sole’s listing, with three years on the deck, electronics and parts and one year of labour',
+        'A 350 lb maximum user weight and incline to 15%, figures every source agrees on',
+        'Listed at 218 lb, far lighter to deliver and move than earlier F80s',
+      ],
+      cons: [
+        'The 20-inch belt is two inches narrower than the 22 inches most reviews still quote for the F80',
+        'The 3.25 HP motor rating is lower than the 3.5 HP of the previous version',
+        'No decline, and 12 mph is the top speed',
+        'Older stock and older specification blocks are still in circulation, so the unit you are offered may not be this machine',
+      ],
+      bottomLine:
+        'A sensible folding treadmill for walkers, incline walkers and runners of average build who want a built-in screen without a subscription; not the F80 that most reviews describe.',
+      description:
+        "The 2026 F80 pairs a 20 by 60-inch running surface with a 3.25 HP brushless drive motor, 0.5 to 12 mph and incline from 0 to 15%, with no decline. Sole, Run Reviews and the Flex Marks the Spot listing all give a 350 lb maximum user weight. The console is a 10.1-inch touchscreen that tilts and swivels, with a secondary white LED window, Wi-Fi, Bluetooth speakers, screen mirroring and a USB-C charging port; Sole's SOLE+ app is free and nothing on the treadmill needs a membership. Sole lists it at 75 by 34 by 52 inches set up, 48 by 36 by 66 inches folded and 218 lb. Sole's warranty table gives lifetime cover on the frame and motor, three years on the deck, electronics and wear parts, one year of labour and 90 days on cosmetic items. On 14 October 2026 Sole listed it at $1,499.99, down from $1,599.99.",
+    },
   ],
-  lead: `Every number you will read about the Sole F80 is true of some F80. The name has been
-          carried across several generations with real changes underneath it, retailers list
-          older specification blocks against current stock, and the result is a machine that is
-          discussed confidently and described inconsistently. So this page is built around what
-          to establish rather than what to assume.`,
   sections: [
     {
-      id: 'where-it-sits',
-      heading: 'Where the F80 Sits in the Sole Range',
+      id: 'short-answer',
+      heading: 'Sole F80 Treadmill Reviews: The Short Answer',
+      products: true,
       html: `          <p>
-            Sole's treadmill line is a ladder, and unusually for this category the rungs
-            correspond to structural differences rather than console features. Understanding the
-            shape of the ladder is most of what you need, because it tells you what a step up
-            actually buys.
+            The 2026 Sole F80 is a good folding treadmill with a different job from the F80 most
+            reviews describe. It keeps what made the name popular: a heavy-duty folding frame, a
+            lifetime frame and motor warranty, a 350 lb user rating, incline to 15% and a touchscreen
+            that works without a paid membership. What changed is underneath. Sole's 2026 listing gives
+            a 3.25 HP brushless motor where the previous model had 3.5 HP, a 20-inch belt where it had
+            22 inches, and a machine weight of 218 lb where reviews of the earlier version measured
+            about 274 lb.
           </p>
           <p>
-            The <a href="/sole-f63-treadmill/" class="text-[#0F62FE] font-medium">F63</a> is the
-            entry machine: the smallest motor and the shortest deck in the range, aimed at
-            walkers and light joggers. The
-            <a href="/sole-f65-treadmill/" class="text-[#0F62FE] font-medium">F65</a> adds deck
-            length, which is the step that changes who the machine is for — a longer belt is what
-            separates a walking treadmill from one a runner can use without shortening their
-            stride.
+            Read together, those changes make the F80 a lighter, easier-to-place machine that suits
+            walkers, incline walkers and most runners of average build, and a less obvious choice for
+            heavier runners and anyone who liked the old F80 precisely for its 22-inch deck. If belt
+            width matters to you, the current
+            <a href="#f80-vs-range" class="text-[#0F62FE] font-medium">F85</a> keeps 22 inches, at a
+            higher price.
           </p>
           <p>
-            The F80 sits above it as the range's volume model and the one most often recommended
-            without qualification. Its position is defined by a larger motor and a wider belt than
-            the F65, on a frame heavy enough that the extra power is usable. Above it, the
-            F85 adds motor and capacity again for buyers who are heavier, faster, or sharing the
-            machine across a household.
-          </p>
-          <p>
-            The practical consequence: if you are choosing between an F65 and an F80, you are
-            choosing between belt width and motor headroom, not between a basic machine and a good
-            one. If you are choosing between an F80 and an F85, you are usually paying for
-            capacity you may not need. Both decisions turn on figures that must be checked against
-            the exact unit in front of you, which is the subject of the next section.
+            The caution is about paperwork rather than hardware. Retailers, older reviews and even
+            Sole's own older articles still quote the previous figures, and some sellers will still
+            have previous-generation stock. Before you buy, confirm which F80 the seller is shipping.
+            The rest of this page sets out the figures that are confirmed, the ones that are not, and
+            how to tell the versions apart.
           </p>`,
     },
     {
-      id: 'model-year-problem',
-      heading: 'Why Published F80 Specifications Disagree',
+      id: 'specs',
+      heading: 'The 2026 F80 Specifications, Checked',
       html: `          <p>
-            Search for this machine and you will find its motor quoted at more than one
-            continuous-duty rating, its weight capacity quoted at more than one figure, and its
-            deck quoted with and without decline. These are not errors so much as different
-            generations being described in the present tense.
+            These are the figures on Sole's US product page for the F80 marked new for 2026, checked
+            on 14 October 2026, with the independent source that agrees with each. Run Reviews is an
+            independent review site whose F80 review was last updated on 30 July 2026; Flex Marks the
+            Spot (FMTS) is a third-party product and price-tracking site with a listing for the 2026
+            F80. Figures that only Sole publishes, such as roller diameters, deck thickness and box
+            dimensions, are left out because we could not confirm them independently.
           </p>
+          ${table(
+            ['Specification', 'Sole’s 2026 listing', 'Also given by'],
+            [
+              ['Running surface', '20 x 60 in.', 'Run Reviews (spec table), FMTS'],
+              ['Drive motor', '3.25 HP, brushless', 'Run Reviews (3.25 HP), FMTS (3.25 HP brushless)'],
+              ['Speed', '0.5 to 12 mph', 'Run Reviews, FMTS'],
+              ['Incline', '0 to 15%, no decline', 'Run Reviews, FMTS'],
+              ['Maximum user weight', '350 lb', 'Run Reviews, FMTS'],
+              ['Console', '10.1 in. touchscreen plus white LED window, tilts and swivels', 'Run Reviews, FMTS'],
+              ['Connectivity', 'Wi-Fi, Bluetooth, screen mirroring, Bluetooth speakers, USB-C', 'FMTS'],
+              ['Set-up size', '75 x 34 x 52 in.', 'FMTS'],
+              ['Folded size', '48 x 36 x 66 in.', 'FMTS'],
+              ['Machine weight', '218 lb', 'FMTS'],
+              ['Warranty', 'Lifetime frame and motor; 3 years deck, electronics and parts; 1 year labour; 90 days cosmetic', 'Run Reviews and FMTS on parts and labour; see the warranty section for the motor term'],
+              ['Subscription', 'None required; SOLE+ app is free', 'Run Reviews'],
+            ],
+          )}
           <p>
-            Three things drive it. <strong>Generational revision under an unchanged name</strong>
-            is the largest: manufacturers in this category refresh machines without renaming them,
-            and a revision that changes a motor rating or a capacity is described in exactly the
-            same words as one that changed the screen.
-          </p>
-          <p>
-            <strong>Retailer listings age badly.</strong> A marketplace specification block is
-            copied forward when stock is replenished, so the figures shown against a current unit
-            are routinely the previous generation's. This is the single most common source of a
-            buyer receiving a machine that does not match the page they bought from.
-          </p>
-          <p>
-            <strong>Review content compounds it.</strong> A long-lived review updated by
-            refreshing its date rather than its measurements keeps old figures in circulation for
-            years, and those figures then get cited by newer pages that never saw the machine.
-          </p>
-          <p>
-            None of this makes the F80 a bad machine — it is a widely liked one. It makes the
-            specification block on any given page an unreliable basis for a purchase, which is why
-            we are holding ours back rather than picking whichever version of the numbers reads
-            best.
-          </p>`,
-    },
-    {
-      id: 'what-to-verify',
-      heading: 'The Seven Figures to Get in Writing',
-      html: `          <p>
-            Take this list to the seller and get the answers against the exact model year you are
-            being sold. A retailer who cannot answer them for the unit in their warehouse is
-            telling you something useful.
-          </p>
-          <p>
-            <strong>1. Continuous-duty horsepower, not peak.</strong> Peak is a burst figure the
-            motor cannot sustain and appears on packaging for that reason. CHP is the number that
-            predicts whether the machine holds pace under a heavier runner, and our
+            Two details are worth reading closely. First, Sole's specification table describes the
+            incline range as "0-15 levels", while its feature panels on the same page and its quick
+            keys describe 0, 5, 10 and 15%; the independent sources give 15%. We use the percentage.
+            Second, Sole quotes the motor simply as 3.25 HP. It does not say whether that is a
+            continuous-duty or a peak figure; Run Reviews describes it as continuous duty. Our
             <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
-            explains why the gap between the two is as large as it is.
+            explains why that distinction matters when you compare it with other brands.
           </p>
           <p>
-            <strong>2. Running surface, measured.</strong> Ask for belt length and width in
-            inches. Then check them against your stride rather than against the category average —
-            the <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
-            works through the arithmetic, and the short version is that usable deck is always
-            shorter than the published figure.
-          </p>
-          <p>
-            <strong>3. Weight capacity.</strong> Sources disagree on this machine, and the figure
-            matters twice: once as a limit, and once as a proxy for frame rigidity. Treat your own
-            weight plus 25% as the working threshold rather than the headline number.
-          </p>
-          <p>
-            <strong>4. Incline range, and whether decline exists.</strong> Decline has appeared on
-            some machines in this family and not others. If you are buying for hill work, confirm
-            it rather than inferring it from a sibling model.
-          </p>
-          <p>
-            <strong>5. Warranty, in full.</strong> Frame, motor, deck, parts and labour are five
-            separate terms, and the labour term is the one that decides what a fault costs you in
-            year four. Ask whether service is in-home or return-to-base.
-          </p>
-          <p>
-            <strong>6. Folded dimensions and assembled weight.</strong> Both decide whether the
-            machine fits your room and your delivery route.
-            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">Dimensions and space requirements</a>
-            covers the clearance behind the deck, which people measure last and should measure
-            first.
-          </p>
-          <p>
-            <strong>7. What the console does with no subscription.</strong> Sole's positioning
-            here is a genuine differentiator, and it is worth confirming for the current console
-            rather than assuming it has been carried forward.
+            One Sole-branded source does not agree with the US listing. The specification sheet for
+            the F80 2026 on the site of Dyaco, Sole's parent company, gives a maximum user weight of
+            330 lb (150 kg), set-up dimensions of 77 by 36 by 59 inches and a net weight of 220 lb.
+            That sheet names no market, and it may describe a different regional configuration. For
+            a US purchase we have used the US listing, which the independent sources match, but if
+            the user rating matters to you, ask Sole to confirm 350 lb for the unit you are buying.
           </p>`,
     },
     {
-      id: 'subscription',
-      heading: 'The Subscription Question',
+      id: 'generations',
+      heading: 'Why Sole F80 Reviews Disagree: Three Machines, One Name',
       html: `          <p>
-            The reason the F80 comes up so often in comparisons against NordicTrack and ProForm
-            machines is not the hardware. It is that Sole has historically sold treadmills as
-            hardware — you press start and it runs, with no account, no trial and no annual fee
-            arriving in year two.
+            Sole has kept the F80 name across several versions, and most of the coverage you will find
+            was written about an earlier one. That is why one review gives 3.25 HP and another 3.5 CHP,
+            and why deck widths, weights and user ratings vary. Roughly, three specification sets are
+            in circulation.
           </p>
           <p>
-            That position is worth pricing properly. A subscription-driven console at a lower
-            purchase price can cost more over five years than a more expensive machine that asks
-            nothing, and the comparison is rarely presented that way at the point of sale. Our
-            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">guide to subscription-free treadmills</a>
-            sets out the arithmetic and the five questions to ask.
+            <strong>The older non-touchscreen F80.</strong> Garage Gym Reviews' F80 versus F85
+            comparison, last updated in August 2024, describes an F80 with a 3.5 CHP motor, a 375 lb
+            user rating, a 278 lb machine weight and no touchscreen, with a warranty of lifetime
+            cover on the frame, motor and deck, five years on electronics and parts and two years of
+            labour. Big Guy Treadmill Review's Sole comparison chart (July 2026) still quotes 3.5 CHP
+            and 375 lb.
           </p>
           <p>
-            The thing to verify is what the current console actually does unattached. "Works
-            without a subscription" covers everything from full functionality to a machine that
-            will run but not record anything. Ask specifically: can you set speed and incline
-            manually, do the built-in programmes run, and is any workout history retained without
-            an account?
+            <strong>The previous touchscreen F80.</strong> This is the machine most current reviews
+            describe: a 3.5 HP motor, a 22 by 60-inch deck, a 350 lb rating and a 10.1-inch
+            touchscreen. BarBend's review (last dated October 2024), OutdoorGearLab's review, Garage
+            Gym Reviews' F80 review (updated March 2026) and Home Gym Verdict's Sole roundup (updated
+            August 2026) all give 3.5 HP and 22 by 60 inches, and OutdoorGearLab gives a machine
+            weight of 274 lb. Sole's own F80 versus F85 article, dated May 2024 but titled as a 2026
+            guide, also still lists 3.5 HP and 22 by 60 inches.
           </p>
           <p>
-            This also affects resale. A machine that functions completely on its own holds value
-            in the used market in a way that a subscription-dependent console does not, which is
-            worth something even if you never intend to sell — see
-            <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium">new versus used</a>
-            for how that plays out on the other side of the transaction.
+            <strong>The 2026 F80.</strong> The machine on Sole's store now, added to its product feed
+            in June 2026 and marked new for 2026: 3.25 HP brushless, 20 by 60 inches, 350 lb and 218
+            lb, with the 10.1-inch screen redesigned to tilt and swivel.
+          </p>
+          ${table(
+            ['Figure', 'Sole’s 2026 listing', 'Figure elsewhere', 'Where the other figure appears'],
+            [
+              ['Motor', '3.25 HP brushless', '3.5 HP; 3.5 CHP', 'BarBend, OutdoorGearLab, Garage Gym Reviews, Home Gym Verdict, Sole’s 2024 article; Big Guy Treadmill Review'],
+              ['Running surface', '20 x 60 in.', '22 x 60 in.', 'The same reviews and Sole’s 2024 article'],
+              ['Maximum user weight', '350 lb', '375 lb; 330 lb', 'Garage Gym Reviews (2024 comparison), Big Guy Treadmill Review; Dyaco-hosted Sole sheet'],
+              ['Machine weight', '218 lb', '274 lb; 278 lb; 220 lb', 'OutdoorGearLab; Garage Gym Reviews (2024); Dyaco-hosted Sole sheet'],
+              ['Motor warranty', 'Lifetime', '3 years', 'Run Reviews'],
+            ],
+          )}
+          <p>
+            The practical rules follow from the table. Read the specification on Sole's current
+            product page, not a review, and save a copy with your order. If you buy from a retailer,
+            ask which version the unit is and get the motor rating, deck width and user rating in
+            writing. And if a listing quotes figures better than Sole's own, such as a 22-inch deck,
+            treat it as possibly older stock and ask before assuming it is a bargain. Our guide to
+            <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium">reading treadmill reviews</a>
+            covers the general problem of reviews that update their date but not their measurements.
           </p>`,
     },
     {
-      id: 'folding-and-placement',
-      heading: 'Folding, Footprint and Where It Will Actually Live',
+      id: 'deck-and-motor',
+      heading: 'The 20-Inch Deck and the 3.25 HP Brushless Motor',
       html: `          <p>
-            The F80 folds, and folding is the specification most often misunderstood in this
-            category. A folding treadmill does not become small. It becomes shorter in one
-            dimension while remaining exactly as heavy, and the width and the height it needs when
-            upright are unchanged.
+            The two changes most likely to matter to a buyer are the deck and the motor, and neither
+            is simply a downgrade.
           </p>
           <p>
-            What folding genuinely buys is floor area in a shared room and the ability to clean
-            underneath, which matters more than it sounds — dust under a deck is a real
-            contributor to motor compartment heat. What it does not buy is portability. Transport
-            wheels help across hard floors and are close to useless on carpet, and a machine in
-            this weight class is a two-person move regardless.
+            <strong>The deck.</strong> A 20 by 60-inch running surface is a standard full-size deck.
+            Sixty inches is the length usually recommended for running, and 20 inches of width is
+            enough for most people at a steady pace. What two extra inches buy is margin: room for
+            your stride to wander at speed, for a wider gait, or for a moment of fatigue late in a
+            session. Taller and heavier runners and anyone doing fast intervals notice it most. Our
+            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
+            works through what length and width your height and pace call for. If you are choosing an
+            F80 because older reviews praised its wide deck, that praise does not apply to the 2026
+            machine.
           </p>
           <p>
-            <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium">Our folding mechanism primer</a>
-            covers hydraulic assist and what to check on the lock, and the
-            <a href="/best-folding-treadmills/" class="text-[#0F62FE] font-medium">folding roundup</a>
-            covers the machines where folding is the point rather than a feature.
+            Sole describes the deck as cushioned with its CushionFlex system. Sole makes a joint-impact
+            claim for its cushioning that we cannot verify, and independent reviews of earlier F80s
+            describe the cushioning as moderate rather than soft. Our
+            <a href="/treadmill-cushioning-explained/" class="text-[#0F62FE] font-medium">cushioning explainer</a>
+            covers what deck cushioning does and does not change.
           </p>
           <p>
-            On placement: measure the clearance behind the deck before anything else, because that
-            is the space you travel into if you lose your footing and it is not optional. If the
-            machine is going upstairs or onto carpet, read
+            <strong>The motor.</strong> On paper 3.25 HP is a small step down from 3.5 HP. Sole pairs
+            it with a switch to a brushless motor, which it says runs quieter, lasts longer and is more
+            efficient; those are Sole's claims, and the 2026 model is too new for long-term evidence
+            either way. A brushless motor has no carbon brushes to wear out, which removes one routine
+            replacement part found on brushed DC treadmill motors. Our guides to
+            <a href="/treadmill-motor-brushes/" class="text-[#0F62FE] font-medium">motor brushes</a>
+            and <a href="/ac-vs-dc-treadmill-motor/" class="text-[#0F62FE] font-medium">AC versus DC motors</a>
+            explain the trade-offs.
+          </p>
+          <p>
+            For most home use, the motor rating is unlikely to be the limit. It matters more for heavier
+            runners who use the machine daily, because a motor working close to its rating for long
+            sessions runs hotter. If that is you, the F85's 3.5 HP motor and 22-inch deck are the more
+            comfortable margin, or look at our
+            <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">high-capacity treadmills</a>.
+          </p>`,
+    },
+    {
+      id: 'console',
+      heading: 'Console, Apps and the No-Subscription Position',
+      html: `          <p>
+            The F80's console is the clearest difference between it and the cheaper F63 and F65, which
+            use LED displays. The 2026 F80 has a 10.1-inch touchscreen that tilts and swivels, so it can
+            face a floor mat for off-treadmill work, with a secondary white LED window that keeps your
+            basic workout numbers visible while the screen shows something else. Sole lists Wi-Fi,
+            Bluetooth, screen mirroring, two Bluetooth speakers, a crossflow cooling fan, a USB-C
+            charging port and roller-dial speed and incline controls, with quick keys for set speeds
+            and inclines.
+          </p>
+          <p>
+            Sole's position on subscriptions is the main reason the F80 is shopped against NordicTrack
+            and ProForm. Sole's listing describes the SOLE+ app as free with no monthly subscription,
+            and Run Reviews agrees that no subscription is necessary. Speed, incline and the built-in
+            programs work from the console itself; the touchscreen adds streaming and Sole's app rather
+            than unlocking treadmill functions. That is the opposite of the iFIT model, where much of
+            the screen's value depends on a membership that renews for as long as you want the classes.
+          </p>
+          <p>
+            The honest framing is that you are paying for a built-in screen, not for access to the
+            machine. If you already watch on a tablet, the F80's screen is a convenience you may not
+            need, and the LED models do the same training job for less. If you want a screen that is
+            part of the treadmill and costs nothing after purchase, this is one of the few at this
+            price. Our
+            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a>
+            roundup prices the five-year difference, and
+            <a href="/sole-vs-nordictrack/" class="text-[#0F62FE] font-medium">Sole versus NordicTrack</a>
+            compares the two approaches directly.
+          </p>
+          <p>
+            One question to ask before buying: screens and their software are the parts of a smart
+            treadmill most likely to age first. A touchscreen that loses app support still leaves you a
+            treadmill that runs from the console, which is a better position than a machine whose
+            controls depend on an online account.
+          </p>`,
+    },
+    {
+      id: 'warranty',
+      heading: 'The Warranty, Read by Component',
+      html: `          <p>
+            Sole's warranty table for the 2026 F80 gives lifetime cover on the frame and on the motor,
+            three years on the deck, three years on electronics, three years on wear items and parts,
+            one year of labour and 90 days on cosmetic items. Run Reviews and the FMTS listing agree on
+            three years for parts and one year for labour, and Run Reviews agrees on three years for
+            the deck and electronics.
+          </p>
+          <p>
+            <strong>The one conflict is the motor term.</strong> Sole's listing gives the motor
+            lifetime cover, as Sole has historically offered. Run Reviews instead gives three years on
+            the motor and comments that the lifetime motor warranty seems to have changed. We have not
+            found anything from Sole that supports a three-year motor term, and the product page is
+            explicit, but because the two sources disagree we are stating both. If the motor term
+            matters to your decision, and on a lifetime-warranty brand it usually does, get it confirmed
+            in writing for your unit.
+          </p>
+          <p>
+            <strong>Labour is the short term.</strong> One year of labour means a technician's visit in
+            year two is normally at your expense even when the part is covered, so a covered motor can
+            still cost you a service call. That is common across the category, and it is the term worth
+            comparing between brands, alongside whether a brand covers its motor for life at all. Our
+            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
+            explains how to read each component term.
+          </p>
+          <p>
+            <strong>Earlier F80 warranties were different.</strong> Garage Gym Reviews' 2024 comparison
+            gives lifetime cover on the deck as well as the frame and motor, five years on electronics
+            and parts and two years of labour for the older F80. If you are buying older stock, the
+            warranty that applies is the one attached to that unit, so ask. Warranty terms can also
+            vary by retailer and are usually conditional on residential use.
+          </p>
+          <p>
+            We found no CPSC recall or product safety warning for Sole treadmills when we searched on
+            14 October 2026.
+          </p>`,
+    },
+    {
+      id: 'space-and-delivery',
+      heading: 'Size, Folding, Delivery and Assembly',
+      html: `          <p>
+            The 2026 F80 is markedly easier to live with than earlier versions on paper. Sole lists it
+            at 218 lb, against the 274 lb OutdoorGearLab gave for the previous model, and at 75 by 34
+            by 52 inches set up. It folds upright with a kick-release mechanism to 48 by 36 by 66
+            inches. Note that the folded width Sole lists is slightly greater than the set-up width,
+            so measure for 36 inches when planning where it will stand folded.
+          </p>
+          <p>
+            Folding saves floor length, not weight. A 218 lb machine still needs two people to move any
+            distance, transport wheels work on hard floors and badly on carpet, and the clearance
+            behind the deck is needed whether or not it folds. Our
+            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements guide</a>
+            covers run-off space and ceiling height, and the
+            <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium">folding treadmill primer</a>
+            covers fold locks and hydraulic assist.
+          </p>
+          <p>
+            <strong>Delivery.</strong> Sole ships the F80 by LTL freight to your curb, quoting 10 to
+            14 business days depending on location, and offers two upgrades at checkout: delivery to
+            the room of your choice for $200 more, or room of choice with assembly for $350 more.
+            Garage Gym Reviews describes the same three tiers for the F85. Sole also lists a 30-day
+            satisfaction guarantee. Curbside means the box stops at your curb, so if you cannot move a
+            heavy crate up steps or stairs yourself, the upgrade is worth pricing in from the start.
+            Our <a href="/treadmill-delivery-guide/" class="text-[#0F62FE] font-medium">treadmill delivery guide</a>
+            explains what each level of service includes.
+          </p>
+          <p>
+            <strong>Power and placement.</strong> As with any motorised treadmill, plug it into a
+            grounded outlet on a circuit it does not share with a large appliance, and avoid extension
+            leads. If it is going on carpet, read
             <a href="/treadmill-on-carpet/" class="text-[#0F62FE] font-medium">treadmills on carpet</a>
-            first — carpet changes both airflow into the motor compartment and how the frame
-            settles under load.
+            first, because carpet affects airflow into the motor compartment.
           </p>`,
     },
     {
-      id: 'ownership',
-      heading: 'What Ownership Looks Like',
+      id: 'what-reviewers-report',
+      heading: 'What Independent Reviews Report',
       html: `          <p>
-            Sole's reputation rests on machines that keep working, and the ownership pattern that
-            produces that is unglamorous. The failure modes in this class are overwhelmingly
-            maintenance-driven rather than manufacturing defects: a deck run dry, a belt run
-            slack, and a motor compartment that has never been opened.
+            The 2026 F80 is new enough that there is very little hands-on coverage of it, and most of
+            what has been published describes the previous machine. With that caveat, a few points
+            recur across more than one independent review and are likely to carry over because they
+            concern things the redesign did not obviously change.
           </p>
           <p>
-            Lubrication is the one that matters most and the one most often skipped. A deck run
-            without lubricant increases the load on the motor and wears the belt from the
-            underside, and by the time it presents as a symptom the belt is usually already
-            finished. Follow the manual's interval for the specific deck type —
-            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">our lubrication walkthrough</a>
-            covers the method and
-            <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium">how often</a>
-            covers the interval question properly.
+            <strong>Cushioning is moderate.</strong> OutdoorGearLab describes the previous F80's deck
+            as forgiving but with less give than many machines it tested, and Garage Gym Reviews lists
+            cushioning that is less shock-absorbing than some rivals among its F80 cons. If you want a
+            notably soft deck, look at our
+            <a href="/best-cushioned-treadmills/" class="text-[#0F62FE] font-medium">cushioned treadmill roundup</a>.
           </p>
           <p>
-            Belt tension and tracking are the second pair. A belt that slips under a footfall and
-            one that drifts toward a rail are different faults with different adjustments, and
-            treating one as the other is how people end up over-tightening a belt and destroying a
-            roller bearing. Work through
-            <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">slipping versus tracking</a>
-            in order rather than guessing.
+            <strong>Assembly is real work.</strong> OutdoorGearLab found setup relatively challenging,
+            and Garage Gym Reviews lists difficult assembly as a con of the F85, which shares the same
+            construction approach. The 2026 F80's lower weight should help, but paying for assembly is
+            a reasonable decision rather than an extravagance.
           </p>
           <p>
-            Beyond that: vacuum the motor compartment periodically, keep the machine off a
-            circuit shared with a large appliance, and unplug it before any service.
-            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">The complete maintenance schedule</a>
-            is the full version, and
-            <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">lifespans by tier</a>
-            explains what a maintained machine in this class should reasonably last.
+            <strong>The no-subscription console is a genuine advantage.</strong> Run Reviews and
+            OutdoorGearLab both count the lack of a required subscription in the F80's favour, and
+            Garage Gym Reviews says the same of the F85's free SOLE+ app.
+          </p>
+          <p>
+            Things we would not carry over: any measured noise level, incline speed or stability
+            verdict from an earlier F80, because the motor, deck and frame weight have all changed.
+            Treat those as unknown for the 2026 model until independent reviewers have used it.
           </p>`,
     },
     {
-      id: 'cross-shop',
-      heading: 'What to Cross-Shop It Against',
+      id: 'f80-vs-range',
+      heading: 'Sole F80 vs F85, F65 and F63',
       html: `          <p>
-            <strong>Within the range.</strong> Against the
-            <a href="/sole-f65-treadmill/" class="text-[#0F62FE] font-medium">F65</a> if your
-            budget is the binding constraint and you are not running long. Against the F85 if you
-            are heavier, sharing the machine, or running most days — the step up is capacity and
-            motor headroom rather than a different kind of machine.
+            The 2026 redesign changed how the F80 sits in Sole's range, and the comparison worth making
+            is different from the one older reviews describe.
           </p>
           <p>
-            <strong>Against the subscription ecosystems.</strong> The
-            <a href="/nordictrack-commercial-1750-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack Commercial 1750</a>
-            is the machine this one is most often compared with, and the comparison is genuinely
-            about what you want from a console rather than about deck quality. Price five years of
-            membership into it before deciding.
+            <strong>F80 vs F85.</strong> On Sole's 2026 listings both carry the same 350 lb user rating,
+            0.5 to 12 mph, incline to 15% with no decline and the same component warranty. The F85 adds
+            a 22-inch belt instead of 20, a 3.5 HP brushless motor instead of 3.25 HP and a 15.6-inch
+            touchscreen instead of 10.1 inches, on a heavier frame Sole lists at 243 lb. On 14 October
+            2026 that cost $600 more on Sole's store. Older comparisons describe a bigger gap, with the
+            F85 carrying more user capacity and decline; the 2026 versions do not. The deciding
+            question is whether you want the wider deck. Our
+            <a href="/sole-f85-treadmill/" class="text-[#0F62FE] font-medium">Sole F85 review</a>
+            covers it in detail.
           </p>
           <p>
-            <strong>Against the budget tier.</strong> If the F80's price is a stretch, the
-            honest question is whether you need what it has rather than whether something cheaper
-            exists. <a href="/best-treadmill-under-1000-reviews/" class="text-[#0F62FE] font-medium">Under $1,000</a>
-            and <a href="/treadmills-under-1500/" class="text-[#0F62FE] font-medium">under $1,500</a>
-            cover what each band delivers, and
-            <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">how much to spend</a>
-            works back from use rather than from budget.
+            <strong>F80 vs F65.</strong> On Sole's 2026 listing the F65 has the same 3.25 HP motor
+            rating and a 20 by 60-inch deck, with an LED console instead of a touchscreen and two
+            years rather than three on the deck, electronics and parts, for $200 less. Reviews of the
+            earlier F65 give it a 22-inch deck, so the same version question applies; our
+            <a href="/best-sole-treadmills/" class="text-[#0F62FE] font-medium">Sole range guide</a>
+            sets out the conflicting F65 figures.
           </p>
           <p>
-            <strong>On price and timing.</strong> This machine is discounted on a predictable
-            cycle and appears regularly as an outgoing model year, which is usually the best
-            value available on it. See
-            <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">where to buy and what to pay</a>
-            for the channel trade-offs, and
+            <strong>F80 vs F63.</strong> The F63 also has a 20 by 60-inch deck and incline to 15%, with
+            a 3.0 HP motor, a 325 lb user rating and an LED console, typically for several hundred
+            dollars less. For a single user who watches on a tablet, it does most of what the F80 does.
+          </p>
+          <p>
+            <strong>Outside Sole.</strong> Sole lists a new F83 between the F80 and F85, with a wider
+            deck and the F80's screen size; we found no independent coverage of the 2026 F83 to confirm
+            its figures. If you want trainer-led classes that control the machine,
+            the <a href="/nordictrack-commercial-1750-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack Commercial 1750</a>
+            is the usual alternative, with a subscription attached. If you want decline, the current
+            F80 does not have it; see our
+            <a href="/best-treadmills-with-decline/" class="text-[#0F62FE] font-medium">decline treadmill roundup</a>.
+            And the <a href="/sole-f89-treadmill/" class="text-[#0F62FE] font-medium">Sole F89</a>,
+            which had decline and a larger screen, is no longer on Sole's US store.
+          </p>`,
+    },
+    {
+      id: 'price',
+      heading: 'Price, Sales and Black Friday',
+      html: `          <p>
+            On 14 October 2026 Sole's store listed the 2026 F80 at $1,499.99, down from $1,599.99,
+            under a "Deal Days" banner; the FMTS listing showed the same two prices. Delivery upgrades
+            and any protection plan are extra. Earlier generations were sold at higher list prices,
+            which is one more reason older reviews quote figures that no longer match.
+          </p>
+          <p>
+            Sole discounts its treadmills regularly, and both the F80 and the F85 were marked down by
+            $100 on Sole's store when we checked. We cannot tell you what the F80 will cost on Black Friday or in
+            any other sale, and a sale price is only a good one if it is for the machine you think you
+            are buying. If you see an F80 well below Sole's own price, check whether it is the 2026
+            model or earlier stock with a 22-inch deck and 3.5 HP motor, which some buyers may prefer,
+            but which should be priced as what it is.
+          </p>
+          <p>
+            Our <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday guide</a>
+            explains how to check price history and spot inflated list prices, and
             <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">the timing guide</a>
-            for the windows.
+            covers when discounts tend to be real.
+          </p>`,
+    },
+    {
+      id: 'who-should-buy',
+      heading: 'Who Should Buy the Sole F80, and Who Should Not',
+      html: `          <p>
+            <strong>Buy it if</strong> you want a folding treadmill with a built-in touchscreen and no
+            ongoing fee, you walk, incline walk or run at moderate pace, you weigh comfortably under the
+            350 lb rating, and you value a lifetime frame and motor warranty. The lower machine weight
+            also makes it a more practical choice than earlier F80s for upstairs rooms and shared
+            spaces.
+          </p>
+          <p>
+            <strong>Look elsewhere if</strong> you specifically want a 22-inch deck, which the F85 has;
+            you need decline; you are a heavier runner who will use the machine daily and wants more
+            margin; or you want instructor-led classes that adjust the treadmill for you, which is what
+            the iFIT machines are built around.
+          </p>
+          <p>
+            <strong>Our verdict.</strong> The 2026 F80 is a well-specified, subscription-free folding
+            treadmill at about $1,500, with Sole's lifetime frame and motor cover on its current
+            listing. It is a different machine from the one its reputation was built on: lighter, with
+            a narrower deck and a slightly smaller brushless motor. That makes it a better fit for some
+            buyers and a worse one for others, and the only real mistake is buying it on the strength of
+            a review written about the old one.
           </p>`,
     },
   ],
   faqs: [
     {
-      q: 'Is the Sole F80 good for running?',
-      a: `It is positioned as the range's running machine, with a longer and wider deck than the F63 and F65 and more motor behind it. Whether it is right for your running depends on two figures you should confirm for the exact unit — belt length against your stride, and weight capacity as a proxy for frame rigidity — rather than on the model name.`,
+      q: 'Is the Sole F80 a good treadmill?',
+      a: 'The 2026 F80 is a well-specified folding treadmill: a 20 by 60-inch deck, a 3.25 HP brushless motor, incline to 15%, a 350 lb user rating, a 10.1-inch touchscreen and lifetime frame and motor cover on Sole’s listing, with no subscription needed. It suits walkers and runners of average build. Most published reviews describe the earlier version, which had a 22-inch deck and a 3.5 HP motor.',
+    },
+    {
+      q: 'Why do Sole F80 treadmill reviews list different specs?',
+      a: 'Because several versions have been sold as the F80. Sole’s 2026 listing gives 3.25 HP, a 20 by 60-inch deck, 350 lb and 218 lb; many reviews still give 3.5 HP and 22 by 60 inches, and some older ones give 3.5 CHP and 375 lb. Check Sole’s current product page and confirm the version with the seller.',
+    },
+    {
+      q: 'What motor does the 2026 Sole F80 have?',
+      a: 'Sole lists a 3.25 HP brushless motor, and the independent sources we checked agree. Sole does not say whether the figure is continuous-duty or peak; Run Reviews describes it as continuous duty. The previous F80 had a 3.5 HP motor.',
+    },
+    {
+      q: 'How wide is the Sole F80 belt?',
+      a: 'The 2026 F80 has a 20 by 60-inch running surface on Sole’s listing and in the independent sources that describe the current model. The 22 by 60-inch figure in many reviews belongs to the previous F80. If you want a 22-inch belt from Sole’s current range, the F85 has one.',
     },
     {
       q: 'Does the Sole F80 need a subscription?',
-      a: `Sole has historically sold treadmills that run fully without an account or a recurring fee, and that positioning is the main reason the F80 is cross-shopped against NordicTrack and ProForm machines. Confirm it for the current console specifically: ask whether speed and incline can be set manually, whether built-in programmes run, and whether any history is kept without an account.`,
+      a: 'No. Sole describes its SOLE+ app as free with no monthly subscription, and speed, incline and the built-in programs work from the console. The touchscreen adds streaming apps and screen mirroring rather than unlocking treadmill functions.',
     },
     {
-      q: 'Why do different sites list different specs for the Sole F80?',
-      a: `Because several generations have been sold under the same name with real changes underneath it, and retailer listings carry specification blocks forward when stock is replenished. Add long-lived reviews that refresh their date rather than their measurements and old figures stay in circulation for years. Verify against the manufacturer's page for your model year before treating any figure as current.`,
+      q: 'What is the Sole F80 warranty?',
+      a: 'Sole’s 2026 listing gives lifetime cover on the frame and motor, three years on the deck, electronics and wear parts, one year of labour and 90 days on cosmetic items. One independent review gives three years on the motor instead of lifetime, so get the motor term confirmed in writing for your unit.',
     },
     {
-      q: 'What is the difference between the Sole F80 and the F85?',
-      a: `Broadly, motor headroom and weight capacity, on a heavier frame — not a different class of machine. The step up is worth it for a heavier runner, a household sharing the machine, or someone running most days. For a single user of average weight running a few times a week it is usually capacity you will not reach.`,
-    },
-    {
-      q: 'Does the Sole F80 fold up?',
-      a: `Yes, and it is worth being clear about what that buys. Folding reclaims floor area in a shared room and lets you clean under the deck; it does not make the machine light or portable. Transport wheels work on hard floors and poorly on carpet, and moving a machine in this weight class is a two-person job either way.`,
-    },
-    {
-      q: 'How long should a Sole F80 last?',
-      a: `Machines in this class are generally limited by maintenance rather than by manufacturing. A deck lubricated on schedule, a belt kept correctly tensioned and a motor compartment vacuumed periodically is the difference between a machine that lasts several years and one that lasts well over a decade. Our lifespan guide covers the repair-or-replace arithmetic when something does fail.`,
+      q: 'Does the Sole F80 have decline?',
+      a: 'No. The 2026 F80 inclines from 0 to 15% with no decline, on Sole’s listing and the independent sources. If decline matters, Sole’s current US range does not offer it on a folding model, so look at our decline treadmill roundup.',
     },
   ],
-  mistakesHeading: 'Common Mistakes Buying an F80',
+  mistakesHeading: 'Common Mistakes Buying a Sole F80',
   mistakesIntro:
-    'Three of these four come from trusting a specification block rather than the manufacturer, which on this particular machine is a more expensive habit than usual.',
+    'Almost all of these come from the same fact: the F80 name has stayed the same while the machine has changed.',
   mistakes: [
     {
-      title: 'Buying against a retailer specification block',
-      body: 'This is the mistake that specifically catches F80 buyers. Marketplace listings routinely carry the previous generation’s figures against current stock, and the model name does not change when the hardware does. Confirm motor rating, deck dimensions and capacity on the manufacturer’s page for your model year before ordering, and screenshot it.',
+      title: 'Buying on the strength of an old review',
+      body: 'Most F80 reviews describe the previous 3.5 HP, 22-inch-deck machine. The 2026 F80 has a 3.25 HP brushless motor and a 20-inch deck. Praise for the old deck width or a measured noise level does not transfer. Read Sole’s current product page and save a copy with your order.',
     },
     {
-      title: 'Comparing peak horsepower against continuous-duty',
-      body: 'Cross-shopping this machine against one quoting peak horsepower is comparing two different measurements and concluding the wrong thing. Peak describes a burst the motor cannot hold; continuous duty describes what it will sustain. If a competing listing gives only a peak figure, the comparison is not available and the absence is informative.',
+      title: 'Assuming a cheaper listing is the same machine',
+      body: 'A retailer quoting a 22-inch deck or a 3.5 HP motor may be selling earlier stock. That may suit you, but it is a different specification and possibly a different warranty. Ask which version the unit is and get the figures in writing before comparing prices.',
     },
     {
-      title: 'Assuming the subscription position carries forward',
-      body: 'Sole’s subscription-free reputation is well earned and is also a reason people stop checking. Console software changes between generations across this whole category. Ask what the specific console in front of you does with no account attached, and get it answered rather than inferred from the brand.',
+      title: 'Reading the lifetime warranty as covering everything',
+      body: 'Lifetime cover applies to the frame and motor. The deck, electronics and parts are covered for three years and labour for one year on Sole’s current listing, so a service visit in year two is usually at your expense.',
     },
     {
-      title: 'Measuring the floor but not the clearance behind it',
-      body: 'A folding machine encourages the belief that footprint is flexible. The clearance behind the deck is not: it is where you go if you lose your footing, and it is needed whether or not the machine folds. Measure the run-off space before ordering, along with the delivery route, since this is a crated freight item of substantial weight.',
+      title: 'Planning for the set-up footprint only',
+      body: 'Sole lists the F80 as 34 inches wide set up but 36 inches wide folded, and it needs clearance behind the deck whether or not it folds. Measure for the folded size, the run-off space and the delivery route before ordering.',
     },
   ],
-  relatedHeading: 'Related Sole &amp; Buying Guides',
+  relatedHeading: 'Related Sole Reviews &amp; Guides',
   related: [
     {
-      kicker: 'Brand',
-      title: 'Sole Fitness Treadmills',
-      blurb: 'How the range is laid out, and what each step up the ladder buys.',
-      url: '/sole-fitness/',
+      kicker: 'Model Review',
+      title: 'Sole F85 Treadmill Review',
+      blurb: 'The 22-inch-deck step up, and what changed for 2026.',
+      url: '/sole-f85-treadmill/',
     },
     {
-      kicker: 'Cross-Shop',
-      title: 'Best Treadmills Without Subscriptions',
-      blurb: 'Five questions to ask, and what each answer costs over five years.',
+      kicker: 'Buying Guide',
+      title: 'Best Sole Treadmills',
+      blurb: 'The current Sole range ranked, with the conflicting figures flagged.',
+      url: '/best-sole-treadmills/',
+    },
+    {
+      kicker: 'No Membership',
+      title: 'Treadmills Without Subscriptions',
+      blurb: 'Machines that work fully without a paid platform.',
       url: '/best-treadmills-without-subscriptions/',
-    },
-    {
-      kicker: 'Buying',
-      title: 'Treadmills for Sale: Where to Buy',
-      blurb: 'The four markets, what each is good at, and when the discounts are real.',
-      url: '/treadmills-for-sale/',
     },
   ],
   bottomLine: [
-    `This page is an editorial draft. The <strong class="text-white">seven figures</strong>
-            above are usable today — take them to the seller and get the answers in writing for
-            the exact model year you are being offered.`,
-    `The model-specific numbers are held back deliberately rather than estimated, because this
-            machine in particular is quoted inconsistently across generations. Until they are
-            confirmed, the
-            <a href="/sole-fitness/" class="text-[#5AA9FF] font-bold no-underline">Sole brand guide</a>
-            and <a href="/treadmills-for-sale/" class="text-[#5AA9FF] font-bold no-underline">where to buy</a>
-            will get you further than any specification block.`,
+    `The 2026 <strong class="text-white">Sole F80</strong> is a subscription-free folding
+            treadmill with a 10.1-inch touchscreen, a 20 by 60-inch deck, a 3.25 HP brushless motor
+            and a 350 lb rating, listed at about $1,500 with lifetime frame and motor cover.`,
+    `It is not the F80 most reviews describe. Confirm the version with the seller, get the motor
+            warranty in writing, and if a 22-inch deck matters, compare the
+            <a href="/sole-f85-treadmill/" class="text-[#5AA9FF] font-bold no-underline">Sole F85</a>
+            before you buy.`,
   ],
 };

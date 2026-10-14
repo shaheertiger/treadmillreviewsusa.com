@@ -39,6 +39,7 @@ export default {
     {
       id: 'nordictrack-commercial-1250',
       name: 'NordicTrack Commercial 1250',
+      reviewUrl: '/nordictrack-commercial-1250-treadmill/',
       category: 'The Default Choice for Most Buyers',
       badge: 'Better Value',
       priceRange: '$1,500-$1,900',

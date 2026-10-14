@@ -66,11 +66,12 @@ export default {
       bottomLine:
         'The Sole to buy for most walkers and runners: a full-length deck, 15% incline and lifetime motor cover, with every important figure confirmed.',
       description:
-        "The F63 is the cheapest Sole with a 60-inch deck and the one most buyers should start from. Sole's 2026 listing and independent coverage agree on a 20 by 60-inch belt, a 3.0 HP motor, 0.5 to 12 mph, incline to 15%, a 325 lb maximum user weight and a folding frame, with lifetime cover on the frame and motor. That is an unusually clean set: on a brand where model names often hide changes, the F63's headline figures have stayed consistent. Two things have changed for 2026. The console is now a white LED display with dial controls rather than the LCD older reviews describe, and Sole lists a lighter machine than earlier specification sheets did, so treat older descriptions of the console and weight as out of date. Sole's current listing gives two years on the deck and electronics, one year on wear parts and 90 days on labour; other sources quote different parts and labour terms, so confirm them for your unit. Independent coverage describes it as well built for walking and jogging, and one review notes it is less suited to sustained fast running.",
+        "The F63 is the cheapest Sole with a 60-inch deck and the one most buyers should start from. Sole's 2026 listing and independent coverage agree on a 20 by 60-inch belt, a 3.0 HP motor, 0.5 to 12 mph, incline to 15%, a 325 lb maximum user weight and a folding frame, with lifetime cover on the frame and motor. That is an unusually clean set: on a brand where model names often hide changes, the F63's headline figures have stayed consistent. Two things have changed for 2026. The console is now a white LED display with dial controls rather than the LCD older reviews describe, and Sole lists a lighter machine than earlier specification sheets did, so treat older descriptions of the console and weight as out of date. Sole's current listing gives two years on the deck, electronics and parts, one year on labour and 90 days on cosmetic items; other sources quote different parts and labour terms, so confirm them for your unit. Independent coverage describes it as well built for walking and jogging, and one review notes it is less suited to sustained fast running.",
     },
     {
       id: 'sole-f80',
       name: 'Sole F80',
+      reviewUrl: '/sole-f80-treadmill/',
       category: 'Best Sole with a touchscreen',
       badge: 'Best Touchscreen',
       amazonUrl: 'https://www.amazon.com/s?k=Sole+F80+Treadmill&tag=sktiger-20',
@@ -90,11 +91,12 @@ export default {
       bottomLine:
         'For a buyer who wants a built-in screen for streaming without paying for a subscription — provided you confirm the motor and deck for the unit in the box.',
       description:
-        "The F80 is the name most people know, and it is also the clearest example of why this page leaves figures out. Sole's 2026 listing and independent coverage agree on a 10.1-inch touchscreen, 0.5 to 12 mph, incline to 15%, a 350 lb maximum user weight, a folding frame and lifetime cover on the frame and motor. They do not agree on the motor or the deck. Sole's current listing gives a 3.25 HP motor and a 20 by 60-inch running surface; independent reviews and roundups updated within the last few months still give 3.5 HP and 22 by 60 inches, the figures for earlier F80s. We cannot tell from outside which a given unit will have, so neither is on the card — confirm both with Sole or the retailer before ordering, and if a 22-inch deck matters to you, look at the F85, whose 22-inch width every source agrees on. Sole's current listing gives three years on the deck and electronics, one year on wear parts and 90 days on labour. The touchscreen runs streaming apps and Sole's free app; nothing on the machine needs a membership.",
+        "The F80 is the name most people know, and it is also the clearest example of why this page leaves figures out. Sole's 2026 listing and independent coverage agree on a 10.1-inch touchscreen, 0.5 to 12 mph, incline to 15%, a 350 lb maximum user weight, a folding frame and lifetime cover on the frame and motor. They do not agree on the motor or the deck. Sole's current listing gives a 3.25 HP motor and a 20 by 60-inch running surface; independent reviews and roundups updated within the last few months still give 3.5 HP and 22 by 60 inches, the figures for earlier F80s. We cannot tell from outside which a given unit will have, so neither is on the card — confirm both with Sole or the retailer before ordering, and if a 22-inch deck matters to you, look at the F85, whose 22-inch width every source agrees on. Sole's current listing gives three years on the deck, electronics and parts, one year on labour and 90 days on cosmetic items. The touchscreen runs streaming apps and Sole's free app; nothing on the machine needs a membership.",
     },
     {
       id: 'sole-f85',
       name: 'Sole F85',
+      reviewUrl: '/sole-f85-treadmill/',
       category: 'Best Sole for running',
       badge: 'Best for Running',
       amazonUrl: 'https://www.amazon.com/s?k=Sole+F85+Treadmill&tag=sktiger-20',
@@ -114,7 +116,7 @@ export default {
       bottomLine:
         'The folding Sole for regular runners who want the wider deck and the biggest screen — after confirming the motor, capacity and decline for the unit you are buying.',
       description:
-        "The F85 is the top of Sole's folding range and the model to choose if belt width matters. Sole's 2026 listing and independent coverage agree on a 22 by 60-inch belt, a 15.6-inch touchscreen, a 12 mph top speed, incline to 15%, a folding frame and lifetime cover on the frame and motor. Beyond that, the sources split along generational lines. Sole's current listing gives a 3.5 HP motor, a 350 lb maximum user weight and an incline range starting at zero; independent reviews and roundups describe a 4.0 HP motor, a 375 lb rating and decline to -6%, which are the figures for earlier F85s. Those are not small differences — decline in particular is a feature some buyers choose the F85 for — so confirm all three with Sole before ordering. Sole's current listing gives three years on the deck and electronics, one year on wear parts and 90 days on labour. Independent reviewers consistently describe it as stable and quiet, and one notes a step-up height of about eight inches, which is high for anyone with limited mobility.",
+        "The F85 is the top of Sole's folding range and the model to choose if belt width matters. Sole's 2026 listing and independent coverage agree on a 22 by 60-inch belt, a 15.6-inch touchscreen, a 12 mph top speed, incline to 15%, a folding frame and lifetime cover on the frame and motor. Beyond that, the sources split along generational lines. Sole's current listing gives a 3.5 HP motor, a 350 lb maximum user weight and an incline range starting at zero; independent reviews and roundups describe a 4.0 HP motor, a 375 lb rating and decline to -6%, which are the figures for earlier F85s. Those are not small differences — decline in particular is a feature some buyers choose the F85 for — so confirm all three with Sole before ordering. Sole's current listing gives three years on the deck, electronics and parts, one year on labour and 90 days on cosmetic items. Independent reviewers consistently describe it as stable and quiet, and one notes a step-up height of about eight inches, which is high for anyone with limited mobility.",
     },
     {
       id: 'sole-f65',
@@ -138,7 +140,7 @@ export default {
       bottomLine:
         'Worth the step up from the F63 only if you confirm a figure that matters to you — the deck or the user rating — for the unit you are buying.',
       description:
-        "The F65 has always sat between the F63 and F80, and the 2026 redesign has made the gap to the F63 harder to see. Sole's current listing and independent coverage agree on a 3.25 HP motor, 0.5 to 12 mph, incline to 15%, a folding frame and lifetime cover on the frame and motor. They disagree on three things buyers often choose the F65 for. Sole's 2026 listing gives a 20 by 60-inch deck, a 350 lb maximum user weight and a white LED console; independent reviews of earlier F65s give a 22 by 60-inch deck, a 325 lb rating and a 9-inch LCD. If the current machine really has a 20-inch deck, its main advantages over the F63 are a slightly higher motor rating and, on Sole's figures, 25 lb more user capacity, for about $200 more. That may still be worth it to a heavier user, but confirm the deck and the rating with Sole before paying for them. Sole's current listing gives two years on the deck and electronics, one year on wear parts and 90 days on labour.",
+        "The F65 has always sat between the F63 and F80, and the 2026 redesign has made the gap to the F63 harder to see. Sole's current listing and independent coverage agree on a 3.25 HP motor, 0.5 to 12 mph, incline to 15%, a folding frame and lifetime cover on the frame and motor. They disagree on three things buyers often choose the F65 for. Sole's 2026 listing gives a 20 by 60-inch deck, a 350 lb maximum user weight and a white LED console; independent reviews of earlier F65s give a 22 by 60-inch deck, a 325 lb rating and a 9-inch LCD. If the current machine really has a 20-inch deck, its main advantages over the F63 are a slightly higher motor rating and, on Sole's figures, 25 lb more user capacity, for about $200 more. That may still be worth it to a heavier user, but confirm the deck and the rating with Sole before paying for them. Sole's current listing gives two years on the deck, electronics and parts, one year on labour and 90 days on cosmetic items.",
     },
     {
       id: 'sole-c80',
@@ -155,14 +157,14 @@ export default {
         'Lifetime frame warranty',
       ],
       cons: [
-        'Only one year on the deck, electronics and wear parts, and 90 days on labour on Sole’s current listing',
+        'Only one year on the deck, electronics, parts and labour on Sole’s current listing',
         'Does not fold, and Sole lists it at 261 lb',
         'Independent long-term coverage is still thin because the model is new',
       ],
       bottomLine:
         'For runners who want a curved, self-powered trainer for intervals and sprints, and value adjustable resistance over a motor.',
       description:
-        "The C80 is the odd one out in Sole's range: a curved, self-powered slat treadmill rather than a motorised folding one. Sole's listing, a retailer listing and independent coverage agree on a 62 by 19-inch slat belt, eight levels of magnetic resistance, a 330 lb maximum user weight and a lifetime frame warranty. On a curved deck you set the pace by where you stand — move forward up the curve to speed up, drift back to slow down — and the resistance makes the belt heavier for pushes and hard sprints. That makes it a training tool for intervals and conditioning more than a machine for long, steady walks. The warranty is where it falls short of Sole's folding models: Sole's current listing gives lifetime cover on the frame but one year on the deck, electronics and wear parts and 90 days on labour, and slats and bearings are what wear on a curved trainer. It does not fold. Our curved treadmill roundup compares it with the AssaultRunner, Tru Grit and Woodway machines it is usually shopped against.",
+        "The C80 is the odd one out in Sole's range: a curved, self-powered slat treadmill rather than a motorised folding one. Sole's listing, a retailer listing and independent coverage agree on a 62 by 19-inch slat belt, eight levels of magnetic resistance, a 330 lb maximum user weight and a lifetime frame warranty. On a curved deck you set the pace by where you stand — move forward up the curve to speed up, drift back to slow down — and the resistance makes the belt heavier for pushes and hard sprints. That makes it a training tool for intervals and conditioning more than a machine for long, steady walks. The warranty is where it falls short of Sole's folding models: Sole's current listing gives lifetime cover on the frame but one year on the deck, electronics, parts and labour, and slats and bearings are what wear on a curved trainer. It does not fold. Our curved treadmill roundup compares it with the AssaultRunner, Tru Grit and Woodway machines it is usually shopped against.",
     },
   ],
   sections: [
@@ -324,11 +326,11 @@ export default {
             as Sole's 2026 figures and confirm them for your unit.
           </p>
           <p>
-            <strong>Wear parts and labour: short.</strong> Sole's current listings give one year on
-            wear items and 90 days on labour for the F63, F65, F80, F85 and C80. Short labour cover
-            means a technician's visit after the first three months is usually at your expense,
-            even when the part is covered. That is the weak point in an otherwise long warranty,
-            and it is worth knowing before you compare it with a brand that offers a year of labour.
+            <strong>Parts and labour: the shorter terms.</strong> Sole's current listings give two years
+            on parts for the F63 and F65, three years for the F80 and F85 and one year for the C80,
+            with one year on labour across the range and 90 days on cosmetic items. After the first
+            year, a technician's visit is usually at your expense even when the part is covered,
+            which is worth knowing before you compare Sole with a brand that offers longer labour.
           </p>
           <p>
             Warranty terms vary by retailer and change between model years. Our
@@ -469,7 +471,7 @@ export default {
     },
     {
       q: 'How long is the Sole treadmill warranty?',
-      a: 'Sole’s current listings give lifetime cover on the frame and motor for every folding model, two or three years on the deck and electronics depending on the model, one year on wear parts and 90 days on labour. The C80 curved trainer has a lifetime frame warranty. Terms vary by retailer and model year, so confirm them for your unit.',
+      a: 'Sole’s current listings give lifetime cover on the frame and motor for every folding model, two or three years on the deck, electronics and parts depending on the model, one year on labour and 90 days on cosmetic items. The C80 curved trainer has a lifetime frame warranty. Terms vary by retailer and model year, so confirm them for your unit.',
     },
   ],
   mistakesHeading: 'Common Mistakes Buying a Sole',
@@ -486,7 +488,7 @@ export default {
     },
     {
       title: 'Reading the lifetime warranty as covering everything',
-      body: 'Lifetime cover applies to the frame and motor. Wear parts are covered for a year and labour for 90 days on Sole’s current listings, so a service call after the first few months is usually at your expense.',
+      body: 'Lifetime cover applies to the frame and motor. Parts are covered for two or three years and labour for one year on Sole’s current listings, so a service call after the first year is usually at your expense.',
     },
     {
       title: 'Paying for a touchscreen you will not use',
@@ -521,6 +523,6 @@ export default {
             to the <strong class="text-white">F85</strong> for a 22-inch wide deck.`,
     `Whichever you choose, read the specification on Sole's current product page rather than an
             older review, confirm the model year if you buy from a retailer, and budget for labour
-            after the first 90 days.`,
+            after the first year.`,
   ],
 };
