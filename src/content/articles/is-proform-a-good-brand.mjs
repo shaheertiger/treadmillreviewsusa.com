@@ -1,0 +1,455 @@
+export default {
+  slug: 'is-proform-a-good-brand',
+  title: 'Is ProForm a Good Brand? (2026): An Honest Assessment',
+  description:
+    'Is ProForm a good treadmill brand? Who owns it, what it does well and badly, its warranty pattern, how much it depends on iFIT, and who should — and should not — buy one.',
+  crumbLabel: 'Is ProForm a Good Brand?',
+  breadcrumb: { name: 'Brands', url: '/brands/' },
+  kicker: 'Question Answered',
+  updated: 'October 2026',
+  updatedLong: 'October 13, 2026',
+  published: '2026-10-13',
+  socialProof: '1.8k',
+  h1: ['Is ProForm', 'a Good Brand?'],
+  standfirst:
+    'ProForm is a sound value brand with a clear set of trade-offs: full-size decks and iFIT at prices below NordicTrack, in exchange for short motor warranties, a 12% incline ceiling and a machine that leans on a subscription. Whether it is good for you depends on which side of those trade-offs you sit.',
+  ctas: [
+    { label: 'The Short Answer', href: '#short-answer' },
+    { label: 'Who Should Buy One', href: '#who-should-buy' },
+  ],
+  tags: ['is proform a good brand', 'is proform a good treadmill', 'proform treadmill reviews', 'who owns proform', 'proform vs nordictrack'],
+  stickyCta: { text: 'See Who Should Buy One', link: '#who-should-buy' },
+  note: `<strong class="text-gray-900">What this assessment is based on.</strong> The figures
+          on this page come from our
+          <a href="/best-proform-treadmills/" class="text-[#0F62FE] font-medium">ProForm range guide</a>,
+          which checked ProForm's own US site against independent review coverage on 13 October
+          2026 and carries only figures they agree on. Ownership details were checked against
+          iFIT's own announcement and independent sources. We have not tested ProForm's current
+          machines, and we do not have access to failure-rate or service data for any brand, so
+          we do not claim one; where we describe the brand's strengths and weaknesses, they rest
+          on published specifications, warranty terms and independent review coverage. ProForm
+          changes its range, prices and terms often, so confirm the specification and warranty
+          for the exact unit before you order.`,
+  lead: `"Is ProForm a good brand?" usually means one of three things. Will the machine last?
+          Is it good value next to NordicTrack and Sole? And is the iFIT subscription a trap? The
+          honest answer to each is more useful than a verdict, because ProForm is not a bad brand
+          or a great one — it is a brand built to a specific price, and the compromises it makes
+          to hit that price are visible in its warranty and specification if you know where to
+          look.`,
+  sections: [
+    {
+      id: 'short-answer',
+      heading: 'Is ProForm a Good Brand? The Short Answer',
+      html: `          <p>
+            <strong>Yes, for the right buyer: ProForm is a reasonable value brand for walkers and
+            moderate runners who want iFIT classes at a lower price than NordicTrack. It is a
+            poor fit for anyone who wants a long motor warranty, steep incline or decline, or a
+            treadmill that works independently of a subscription.</strong>
+          </p>
+          <p>
+            ProForm is owned by iFIT Health &amp; Fitness — the company formerly called ICON Health
+            &amp; Fitness, based in Logan, Utah — which also owns NordicTrack. Its current US range
+            is four folding treadmills, three of them with a full 20 by 60-inch belt, all running
+            iFIT, and all regularly discounted. Its frames carry ten years of cover. Its motors
+            carry two years at most, which is short against both Sole and NordicTrack's better
+            machines, and nothing it currently sells goes beyond 12% incline or below 0%.
+          </p>
+          <p>
+            That is a coherent product: a sensibly sized treadmill with a capable software
+            platform, at a price the sister brand does not reach. If those are your priorities,
+            ProForm is a good brand. Our
+            <a href="/best-proform-treadmills/" class="text-[#0F62FE] font-medium">guide to the best ProForm treadmills</a>
+            ranks the four current models and says which to skip.
+          </p>`,
+    },
+    {
+      id: 'who-owns-proform',
+      heading: 'Who Owns ProForm, and Why It Matters',
+      html: `          <p>
+            ProForm belongs to iFIT Health &amp; Fitness. The company was called ICON Health &amp;
+            Fitness until June 2021, when it took the name of its software platform, iFIT. It is
+            based in Logan, Utah, and owns NordicTrack as well as ProForm.
+          </p>
+          <p>
+            That ownership explains most of what is distinctive about ProForm. It is the value
+            badge in a two-badge strategy: NordicTrack carries the larger screens, the incline
+            trainers and the lifetime motor warranties; ProForm offers the same platform on
+            lighter, cheaper machines. Both brands run the same iFIT software, so the experience on
+            a ProForm screen is the experience on a NordicTrack screen, with different hardware
+            underneath. Our
+            <a href="/nordictrack-vs-proform/" class="text-[#0F62FE] font-medium">NordicTrack vs ProForm comparison</a>
+            goes into where the two genuinely differ and where, in the middle of the price range,
+            the badge stops mattering.
+          </p>
+          <p>
+            It also means that a judgement about ProForm is partly a judgement about iFIT. The
+            platform's plans, prices and policies apply equally to both brands, and so do its
+            decisions about software support. When iFIT ended support for older-generation
+            machines that used an external iFIT Wi-Fi module in April 2023, its announcement said
+            owners would keep manual mode and any preloaded workouts but lose updates and iFIT
+            workouts. That applied across the group, not to one badge.
+          </p>
+          <p>
+            One thing ownership does not tell you is how a particular ProForm model is built. The
+            two brands share a parent and a platform, not a specification sheet, and the gap
+            between a cheap ProForm and an expensive NordicTrack is real.
+          </p>`,
+    },
+    {
+      id: 'what-proform-does-well',
+      heading: 'What ProForm Does Well',
+      html: `          <p>
+            The case for ProForm rests on four things, all visible in the current range.
+          </p>
+          <p>
+            <strong>Full-size decks at the price.</strong> Three of ProForm's four current
+            treadmills have a 20 by 60-inch belt, the length generally recommended for running.
+            At ProForm's prices that is not a given; many machines in the same bracket shorten the
+            deck to save money. Only the entry Carbon TLS has a shorter 18 by 55-inch belt, and it
+            is honest about being a walking machine.
+          </p>
+          <p>
+            <strong>A capable platform.</strong> iFIT is a large content library with trainer-led
+            classes and outdoor-route workouts, and on every current ProForm it can change speed
+            and incline for you during a session. For people who stick with exercise because
+            someone else is setting the pace, that is a real benefit, and ProForm is one of the
+            cheapest ways to get it.
+          </p>
+          <p>
+            <strong>Easy to live with.</strong> All four current models fold, and ProForm lists a
+            7.75-inch step-up height for each, which is low for a folding treadmill and helps
+            anyone who finds stepping onto a deck awkward. The Pro Series machines are rated to
+            350 lb and the Carbon Series to 300 lb, which is reasonable headroom at this price.
+          </p>
+          <p>
+            <strong>A choice of screen or no screen.</strong> The Pro Series has a built-in
+            touchscreen; the Carbon Series has a small LCD and a shelf for your own tablet, which
+            then runs iFIT and controls the machine. Keeping the screen separate from the
+            treadmill means the part that ages fastest is the part you can replace cheaply. Few
+            value brands give you that option within one range.
+          </p>`,
+    },
+    {
+      id: 'where-proform-falls-short',
+      heading: 'Where ProForm Falls Short',
+      html: `          <p>
+            The case against ProForm is just as visible, and it is mostly about longevity
+            signals and range.
+          </p>
+          <p>
+            <strong>Short motor warranties.</strong> ProForm covers the motor for two years on the
+            Pro Series, and its own pages give the Carbon Series motor two years in one place and
+            one year in another. Either way, that is short. Sole covers the motor for life on its
+            folding treadmills, and NordicTrack does on its Commercial 1750, 2450 and X Series. A
+            warranty term is a manufacturer's own statement of how long it expects a component to
+            last, and ProForm's statement is modest.
+          </p>
+          <p>
+            <strong>A ceiling on incline and no decline.</strong> Every current ProForm stops at 12%
+            incline and none declines. That covers most incline walking and running, but it rules
+            ProForm out for steep hiking training and for iFIT route workouts that would use a
+            descent. NordicTrack's incline trainers reach 40%, and its Commercial series declines.
+          </p>
+          <p>
+            <strong>Speed and width limits for serious runners.</strong> Every ProForm tops out at
+            12 mph, and the widest belt is 20 inches. Neither is a problem for most users, but a
+            runner doing fast intervals or a broad-shouldered runner who drifts will find the
+            margin thin.
+          </p>
+          <p>
+            <strong>Inconsistent published figures.</strong> ProForm's own pages disagree with
+            each other in places — two motor ratings for the Carbon Pro 2000 on one product page,
+            two motor warranty terms for the Carbon Series. These are almost certainly copy errors,
+            but a buyer cannot know which figure is the error. That is a reason to get the
+            specification and warranty in writing for the unit you buy.
+          </p>
+          <p>
+            <strong>Reviewer criticisms.</strong> Independent reviews of the current Pro Series
+            mention slow incline changes, and of the Carbon Pro 9000 a firm deck and some screen
+            glare. None is a deal-breaker, but they are the kind of detail that marks a value
+            machine.
+          </p>`,
+    },
+    {
+      id: 'warranty-pattern',
+      heading: 'The Warranty Pattern, and What It Tells You',
+      html: `          <p>
+            Read by component, ProForm's warranty is consistent across the range, and the pattern
+            says more than any single figure.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Component</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Pro Series</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Carbon Series</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Frame</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10 years</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10 years</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Motor</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2 years</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2 years or 1 year — ProForm's pages disagree</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Parts</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2 years</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2 years per ProForm; 1 year per independent reviews</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Screen (tablet)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1 year</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No built-in touchscreen</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Labour</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1 year</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1 year</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            <strong>The frame term is long; everything that moves is short.</strong> Ten years on
+            the frame is the same as NordicTrack and an easy promise to make, because steel frames
+            rarely fail. The parts that do wear and fail — motors, control boards, screens — carry
+            one or two years. After that, a repair is at your expense.
+          </p>
+          <p>
+            <strong>Compared with the alternatives.</strong> Sole's folding treadmills carry
+            lifetime frame and motor cover, but only 90 days of labour. NordicTrack's better
+            machines carry lifetime motor cover and a year of labour. ProForm's year of labour is
+            better than Sole's, and its motor term is worse than both. Which matters more depends
+            on whether you would rather be protected against an expensive part or an expensive visit.
+          </p>
+          <p>
+            Warranty terms vary by retailer and model year, so confirm them in writing for the
+            exact unit.
+          </p>`,
+    },
+    {
+      id: 'service',
+      heading: 'Service, Support and Buying Experience',
+      html: `          <p>
+            We do not have access to service data for ProForm or any other brand, and owner
+            reviews of customer service are too self-selecting to turn into a rating. What we can
+            describe is how ProForm structures the purchase and the cover, which shapes the
+            experience whatever the individual service call is like.
+          </p>
+          <p>
+            <strong>Delivery.</strong> On ProForm's own site, standard shipping is curbside, with
+            in-home delivery and assembly costing extra. The boxes are heavy — ProForm lists about
+            205 lb for the Carbon TLS and about 250 lb for the others — so decide early whether to
+            pay for help.
+          </p>
+          <p>
+            <strong>Trial and returns.</strong> ProForm offers a 30-day in-home trial with a return
+            fee. Use it properly: run the machine at the speeds and inclines you plan to use, listen
+            for motor or roller noise, watch whether the belt drifts, and time the incline changes
+            that reviewers describe as slow. A fault found in the first month is a return; the same
+            fault found later is a warranty claim.
+          </p>
+          <p>
+            <strong>Labour after year one.</strong> With a year of labour cover, a technician's
+            visit in year two is usually at your expense even when the part is covered. That is
+            normal at this price, but it is worth budgeting for.
+          </p>
+          <p>
+            <strong>Self-help first.</strong> Many treadmill faults — a console that will not
+            start, a belt that will not move, an incline that stops responding — are fixed by a
+            power cycle, a reset or a belt adjustment. Our
+            <a href="/proform-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">ProForm troubleshooting guide</a>
+            covers the checks to try before booking a visit. Unplug the machine before any check
+            beyond the console, and follow the manual for your model.
+          </p>`,
+    },
+    {
+      id: 'ifit-dependence',
+      heading: 'How Much a ProForm Depends on iFIT',
+      html: `          <p>
+            This is the question that should weigh most in a decision about ProForm, because it
+            affects the machine for as long as you own it.
+          </p>
+          <p>
+            <strong>What ProForm says.</strong> Its current product pages state that a free iFIT
+            account and agreement to terms are required to activate the equipment, and a paid iFIT
+            subscription and Wi-Fi are required for the full content and features. Memberships
+            auto-renew unless cancelled. ProForm.com purchases included a month of membership on
+            the day our range guide was checked.
+          </p>
+          <p>
+            <strong>What that means in practice.</strong> Without a paid membership, a ProForm
+            runs in a manual mode where you set speed and incline yourself, and the motor, deck and
+            frame work as normal. The class library, automatic control and streaming go. On the
+            Pro Series that leaves a built-in screen largely idle; on the Carbon Series it leaves
+            less unused hardware, but an independent review reports that the Carbon TLX still has
+            to be unlocked through the app on a phone or tablet before first use.
+          </p>
+          <p>
+            <strong>Why that matters for the brand judgement.</strong> A ProForm is not a
+            subscription-free treadmill even if you never subscribe, because of the activation
+            step. And a good part of what you paid for — the screen on the Pro Series, the
+            automatic control on all four — is only worth its price while you pay for iFIT. For
+            someone who will use the classes several times a week, that is fine. For someone who
+            will not, it makes ProForm poorer value than its sticker suggests. Our
+            <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">guide to whether iFIT is worth it</a>
+            works through the arithmetic, and our guide to
+            <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">using an iFIT machine without a membership</a>
+            covers what the sister brand's consoles do when the membership stops — the same
+            platform, the same pattern.
+          </p>`,
+    },
+    {
+      id: 'old-models',
+      heading: 'The Old-Model Problem',
+      html: `          <p>
+            One reason ProForm's reputation is hard to read is that most of what is written about
+            it describes machines it no longer sells.
+          </p>
+          <p>
+            On 13 October 2026 ProForm's US site listed four treadmills: the Carbon Pro 2000 and
+            Carbon Pro 9000, and the Carbon TLX and Carbon TLS. The names that fill older reviews —
+            the Pro 5000, the Power 995i and 1295i, the 505 CST, the Trainer and Sport machines,
+            and the Carbon TL — were not on that list. Some still appear at third-party retailers.
+          </p>
+          <p>
+            That matters in two ways. First, a good or bad review of a retired model tells you
+            little about the current one, and some names have been reused for different machines:
+            earlier Pro 9000s had a 22-inch screen and decline, and the current Carbon Pro 9000 has
+            neither. Second, older brand overviews, including our own
+            <a href="/proform-treadmill/" class="text-[#0F62FE] font-medium">ProForm brand overview</a>,
+            describe a lineup that has since changed, so use them for the background on how the
+            brand works rather than for current model figures.
+          </p>
+          <p>
+            If you are offered a discontinued ProForm at a clearance price, it can be a fair buy,
+            but check how old the stock is, which software version it runs, whether iFIT still
+            fully supports it, and who honours the warranty.
+          </p>`,
+    },
+    {
+      id: 'who-should-buy',
+      heading: 'Who Should Buy a ProForm, and Who Should Not',
+      html: `          <p>
+            <strong>ProForm suits you if</strong> you mainly walk, incline-walk or run at moderate
+            pace a few times a week; you want trainer-led classes and will pay for iFIT; you want a
+            full 60-inch deck and a folding frame at a price below NordicTrack; and everyone in the
+            household is comfortably within the 300 or 350 lb rating.
+          </p>
+          <p>
+            <strong>Look at NordicTrack instead if</strong> you want the same platform with decline,
+            steeper incline, a pivoting or larger screen, or a lifetime motor warranty. The
+            Commercial 1750 is where that lifetime cover starts. Our
+            <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">NordicTrack roundup</a>
+            ranks the current range.
+          </p>
+          <p>
+            <strong>Look at Sole instead if</strong> you do not want a subscription at all and want
+            the longest motor cover. Sole's folding treadmills carry lifetime frame and motor
+            warranties, reach 15% incline, and describe their app as free. Our
+            <a href="/best-sole-treadmills/" class="text-[#0F62FE] font-medium">Sole roundup</a>
+            covers them, and our
+            <a href="/sole-vs-nordictrack/" class="text-[#0F62FE] font-medium">Sole vs NordicTrack comparison</a>
+            sets out the hardware-first and platform-first approaches side by side.
+          </p>
+          <p>
+            <strong>Look elsewhere if</strong> you run fast and often, weigh more than about 300 lb,
+            or want a machine that is entirely independent of any platform. Our
+            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a>
+            roundup is the starting point for the last of those.
+          </p>`,
+    },
+    {
+      id: 'what-to-buy',
+      heading: 'If You Are Shopping: Choosing the Right ProForm',
+      html: `          <p>
+            If ProForm fits, the choice within the range is narrow, because there are only four
+            machines, and it comes down to two questions: do you need a 60-inch deck, and do you
+            want a built-in screen or your own tablet?
+          </p>
+          <p>
+            <strong>For most buyers,</strong> the Carbon Pro 2000 is the one to start from: a 20 by
+            60-inch deck, a 10-inch touchscreen and a 350 lb rating. <strong>For the biggest screen
+            and the most motor,</strong> the Carbon Pro 9000 adds a 16-inch screen and a 3.6 CHP
+            rating on the same deck. <strong>For walkers on a budget,</strong> the Carbon TLS has
+            an 18 by 55-inch deck and uses your own device. <strong>For runners who prefer their
+            own tablet,</strong> the Carbon TLX has the full deck without a touchscreen — worth it
+            only when it is priced clearly below the Pro 2000.
+          </p>
+          <p>
+            Whichever you choose, three habits apply. Never pay list price, because ProForm
+            discounts constantly. Read the specification and warranty on ProForm's current page for
+            the exact model, not an older review. And diary the iFIT renewal date the day the
+            machine arrives.
+          </p>
+          <p>
+            Our
+            <a href="/best-proform-treadmills/" class="text-[#0F62FE] font-medium">ProForm treadmill rankings</a>
+            carry the confirmed specification for each model, the figures ProForm's own pages
+            disagree on, and the older models to avoid.
+          </p>`,
+    },
+  ],
+  faqs: [
+    {
+      q: 'Is ProForm a good treadmill brand?',
+      a: 'For walkers and moderate runners who want iFIT classes at a lower price than NordicTrack, yes. Most current models have a full 20 by 60-inch deck, fold, and carry ten years on the frame. The weaknesses are short motor warranties of two years at most, a 12% incline ceiling with no decline, and a machine that needs an iFIT account to activate.',
+    },
+    {
+      q: 'Who owns ProForm?',
+      a: 'iFIT Health & Fitness, the company formerly called ICON Health & Fitness, based in Logan, Utah. It renamed itself after its iFIT software platform in June 2021. The same company owns NordicTrack, which is why the two brands run the same iFIT software on different hardware at different price points.',
+    },
+    {
+      q: 'Is ProForm the same as NordicTrack?',
+      a: 'Same parent company and the same iFIT platform, but different hardware. NordicTrack is the premium line, with incline trainers, decline, larger pivoting screens and lifetime motor cover on its better machines. ProForm is the value line, with lighter machines, a 12% incline ceiling and motor cover of two years at most. In the middle of the price range they overlap.',
+    },
+    {
+      q: 'How long do ProForm treadmills last?',
+      a: 'We do not have failure data for any brand, so we will not give a number. The best published signal is the warranty: ten years on the frame, but two years at most on the motor, and one year on labour. That suggests a machine built for moderate home use rather than heavy daily running. Use well within the user rating and regular maintenance both help.',
+    },
+    {
+      q: 'Do you need iFIT to use a ProForm treadmill?',
+      a: 'You need a free iFIT account to activate it, according to ProForm’s product pages, and a paid membership for classes, automatic control and streaming. Without a paid membership you set speed and incline yourself in manual mode, and the motor, deck and frame work as normal. An independent review says the Carbon TLX must be unlocked through the app first.',
+    },
+    {
+      q: 'Is ProForm or Sole better?',
+      a: 'They suit different buyers. Sole is hardware-first: lifetime frame and motor cover on its folding treadmills, incline to 15% and no subscription. ProForm is platform-first: iFIT classes and automatic control at a value price, with shorter motor cover. If you will not pay for classes, Sole is usually better value; if the classes keep you training, ProForm can be.',
+    },
+  ],
+  mistakesHeading: 'Common Mistakes When Judging ProForm',
+  mistakesIntro:
+    'Most of these come from reading ProForm’s reputation off machines it no longer sells, or from ignoring the subscription.',
+  mistakes: [
+    {
+      title: 'Judging the brand on retired models',
+      body: 'Much of what is written about ProForm describes the Pro 5000, Power series or older Pro 9000, none of which ProForm’s US site currently lists. Judge the current Carbon range on its own specification and warranty, and treat older reviews as background only.',
+    },
+    {
+      title: 'Treating the frame warranty as the headline',
+      body: 'Ten years on the frame sounds generous, but frames rarely fail. The motor, parts, screen and labour carry one or two years. Compare those terms with Sole and NordicTrack before deciding a ProForm is the better deal.',
+    },
+    {
+      title: 'Buying for the screen and never subscribing',
+      body: 'Without a paid membership, much of a Pro Series screen sits idle and automatic control goes. If you are not going to pay for iFIT, you are paying for features you will not use, and a brand built without a platform is better value.',
+    },
+    {
+      title: 'Assuming the published figures are always right',
+      body: 'ProForm’s own pages disagree in places — two motor ratings for one model, two motor warranty terms for a series. Get the specification and warranty in writing for the exact unit, particularly when buying from a third-party retailer.',
+    },
+  ],
+  relatedHeading: 'Related ProForm Guides',
+  related: [
+    {
+      kicker: 'Buying Guide',
+      title: 'Best ProForm Treadmills',
+      blurb: 'The four current models ranked, with confirmed figures and the ones to skip.',
+      url: '/best-proform-treadmills/',
+    },
+    {
+      kicker: 'Sister Brand',
+      title: 'NordicTrack vs ProForm',
+      blurb: 'Same parent company and platform — where the two actually differ.',
+      url: '/nordictrack-vs-proform/',
+    },
+    {
+      kicker: 'The Platform',
+      title: 'Is iFIT Worth It?',
+      blurb: 'What the membership includes and what it costs over the life of a treadmill.',
+      url: '/is-ifit-worth-it/',
+    },
+  ],
+  bottomLine: [
+    `<strong class="text-white">ProForm is a good brand for the buyer it is built for:</strong>
+            a walker or moderate runner who wants iFIT classes and a full-size folding deck at a
+            price below NordicTrack. Its weaknesses — motor cover of two years at most, no decline,
+            a 12% ceiling and a machine tied to an iFIT account — are real but clearly signposted.`,
+    `If you will pay for iFIT and run moderately, a ProForm can be the right choice; if you
+            will not, or you want lifetime motor cover, look at Sole or NordicTrack. To choose
+            between the four current models, see our
+            <a href="/best-proform-treadmills/" class="text-[#5AA9FF] font-bold no-underline">ranking of ProForm's current treadmills</a>.`,
+  ],
+};

@@ -149,7 +149,8 @@ export default {
       heading: 'Our Picks at a Glance',
       html: `          <p>
             ProForm's current US range is four treadmills in two series. The table puts each in one
-            line; the cards below carry the confirmed specifications and the caveats.
+            line; the cards below carry the confirmed specifications and the caveats. Still weighing the brand itself? We answer
+            <a href="/is-proform-a-good-brand/" class="text-[#0F62FE] font-medium">whether ProForm is a good brand</a>.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead><tr>

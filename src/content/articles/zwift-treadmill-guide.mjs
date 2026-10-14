@@ -120,7 +120,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">2. A foot pod or stride sensor</h3>
           <p>
             A foot pod is a small sensor that clips to your laces or slots into a pocket in the
-            insole. It uses an accelerometer to measure each stride and converts that into speed and
+            insole (our <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium">treadmill foot pod guide</a> covers calibration). It uses an accelerometer to measure each stride and converts that into speed and
             cadence, then broadcasts over Bluetooth, ANT+ or both. It works on every treadmill ever
             made, because it measures you, not the machine.
           </p>

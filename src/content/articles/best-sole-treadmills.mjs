@@ -171,7 +171,8 @@ export default {
       heading: 'Our Picks at a Glance',
       html: `          <p>
             Five of Sole's current treadmills, one line each. The cards below carry the confirmed
-            specifications and, for each model, the figures that are still in dispute.
+            specifications and, for each model, the figures that are still in dispute. Cross-shopping? We compare
+            <a href="/sole-vs-nordictrack/" class="text-[#0F62FE] font-medium">Sole and NordicTrack</a>.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead><tr>

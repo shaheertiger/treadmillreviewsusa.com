@@ -44,7 +44,8 @@ export default {
             Three of the five are flat folding walkers under about $320; two are curved trainers
             above $2,000. If your budget sits between those, read the
             <a href="#flat-vs-curved" class="text-[#0F62FE] font-medium">flat versus curved section</a>
-            before deciding, because there is very little worth buying in the gap.
+            before deciding, because there is very little worth buying in the gap. New to pushing your own belt? See
+            <a href="/how-to-use-a-manual-treadmill/" class="text-[#0F62FE] font-medium">how to use a manual treadmill</a>.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead><tr>

@@ -197,7 +197,8 @@ export default {
             Six machines, one for each of the main ways to get a screen and guided training onto a
             treadmill. Four have a built-in touchscreen tied to a content platform; two use your
             own tablet and an app of your choosing. The table is the short version; the cards below
-            have the specifications and the caveats.
+            have the specifications and the caveats. Worried about the subscription? We cover
+            <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">whether a NordicTrack works without iFIT</a>.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead><tr>

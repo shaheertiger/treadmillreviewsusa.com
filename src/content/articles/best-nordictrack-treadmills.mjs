@@ -218,7 +218,8 @@ export default {
       heading: 'Our Picks at a Glance',
       html: `          <p>
             NordicTrack's current range is seven treadmills in three series. The table puts each in
-            one line; the cards below carry the confirmed specifications and the caveats.
+            one line; the cards below carry the confirmed specifications and the caveats. If you are torn between lines, read our comparison of
+            <a href="/nordictrack-t-series-vs-commercial/" class="text-[#0F62FE] font-medium">NordicTrack T Series versus Commercial</a>.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead><tr>

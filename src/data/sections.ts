@@ -322,6 +322,13 @@ export const SECTIONS: Section[] = [
             badge: 'Dogs',
             url: '/best-dog-treadmills/',
           },
+          {
+            title: 'Dog Treadmill vs. Human Treadmill',
+            description:
+              'Belt length, side panels, speed and controls compared, and when a human machine is a poor fit for a dog.',
+            badge: 'Dogs',
+            url: '/dog-treadmill-vs-human-treadmill/',
+          },
         ],
       },
     ],
@@ -649,6 +656,20 @@ export const SECTIONS: Section[] = [
             badge: 'Horizon',
             url: '/best-horizon-treadmills/',
           },
+          {
+            title: 'Is ProForm a Good Brand?',
+            description:
+              'What ProForm does well and less well, its iFIT dependence and warranty patterns, and who should buy one.',
+            badge: 'ProForm',
+            url: '/is-proform-a-good-brand/',
+          },
+          {
+            title: 'Is Horizon a Good Treadmill Brand?',
+            description:
+              'The no-subscription approach, warranty patterns, what Horizon does not publish, and its recall history.',
+            badge: 'Horizon',
+            url: '/is-horizon-a-good-treadmill-brand/',
+          },
         ],
       },
       {
@@ -966,6 +987,13 @@ export const SECTIONS: Section[] = [
             badge: 'Curved',
             url: '/curved-treadmill-guide/',
           },
+          {
+            title: 'Walking Pad vs. Folding Treadmill',
+            description:
+              'Footprint, storage, deck, speed, incline and rail compared, with 2-in-1 pads as the middle ground.',
+            badge: 'Format',
+            url: '/walking-pad-vs-folding-treadmill/',
+          },
         ],
       },
       {
@@ -985,6 +1013,20 @@ export const SECTIONS: Section[] = [
             badge: 'NordicTrack',
             url: '/nordictrack-commercial-1250-vs-1750/',
           },
+          {
+            title: 'NordicTrack T Series vs. Commercial',
+            description:
+              'The two lines compared on what NordicTrack confirms, and who each one suits.',
+            badge: 'NordicTrack',
+            url: '/nordictrack-t-series-vs-commercial/',
+          },
+          {
+            title: 'Sole vs. NordicTrack',
+            description:
+              'Hardware-first and subscription-free against the iFIT ecosystem, with the warranty structures side by side.',
+            badge: 'Sole vs. NordicTrack',
+            url: '/sole-vs-nordictrack/',
+          },
         ],
       },
       {
@@ -996,6 +1038,13 @@ export const SECTIONS: Section[] = [
               'The two connected-fitness ecosystems compared for treadmill buyers: hardware lock-in, training feel, life without the subscription.',
             badge: 'Subscriptions',
             url: '/ifit-vs-peloton/',
+          },
+          {
+            title: 'Can You Use NordicTrack Without iFIT?',
+            description:
+              'What still works without a membership, what does not, and what that means for resale.',
+            badge: 'iFIT',
+            url: '/can-you-use-nordictrack-without-ifit/',
           },
         ],
       },
@@ -1093,6 +1142,13 @@ export const SECTIONS: Section[] = [
               'The power switch, the safety key, the console boot and quick start — and what to check when nothing happens.',
             badge: 'First use',
             url: '/how-to-turn-on-a-treadmill/',
+          },
+          {
+            title: 'How to Read Treadmill Reviews',
+            description:
+              'Merged listings, incentivised reviews and what the one-star reviews actually tell you about failure.',
+            badge: 'Reviews',
+            url: '/how-to-read-treadmill-reviews/',
           },
         ],
       },
@@ -1311,6 +1367,13 @@ export const SECTIONS: Section[] = [
             badge: 'Dogs',
             url: '/treadmill-for-dogs/',
           },
+          {
+            title: 'What Happens If You Exceed the Weight Limit?',
+            description:
+              'What fails first, what it does to the warranty, and how much capacity margin to buy.',
+            badge: 'Capacity',
+            url: '/what-happens-if-you-exceed-treadmill-weight-limit/',
+          },
         ],
       },
       {
@@ -1362,6 +1425,20 @@ export const SECTIONS: Section[] = [
               'Current daily trainers, tempo, stability and walking shoes suited to belt running, and when to replace them.',
             badge: 'Shoes',
             url: '/best-running-shoes-for-treadmill/',
+          },
+          {
+            title: 'How Thick Should a Treadmill Mat Be?',
+            description:
+              'Thickness bands and what each does for floors, noise and carpet, and why too soft makes a machine unstable.',
+            badge: 'Mat thickness',
+            url: '/how-thick-should-a-treadmill-mat-be/',
+          },
+          {
+            title: 'Standing Desk Height for a Walking Pad',
+            description:
+              'The elbow-height arithmetic with the deck added, a height table, and why many desks top out too low.',
+            badge: 'Desk height',
+            url: '/standing-desk-height-for-walking-pad/',
           },
         ],
       },
@@ -1749,6 +1826,20 @@ export const SECTIONS: Section[] = [
             badge: 'Cost',
             url: '/treadmill-belt-replacement-cost/',
           },
+          {
+            title: 'How Long Do Walking Pads Last?',
+            description:
+              'Typical lifespans by daily hours, what wears first, warranty lengths and repair-or-replace.',
+            badge: 'Walking pads',
+            url: '/how-long-do-walking-pads-last/',
+          },
+          {
+            title: 'Make a Cheap Treadmill Last Longer',
+            description:
+              'Capacity, session length, lubrication, tension, power and placement for budget machines.',
+            badge: 'Budget care',
+            url: '/how-to-make-a-cheap-treadmill-last-longer/',
+          },
         ],
       },
       {
@@ -1882,6 +1973,13 @@ export const SECTIONS: Section[] = [
             badge: 'Beginner',
             url: '/treadmill-workout-for-beginners/',
           },
+          {
+            title: 'How to Use a Manual Treadmill',
+            description:
+              'Starting the belt, posture on flat and curved machines, resistance, and stopping safely.',
+            badge: 'Manual',
+            url: '/how-to-use-a-manual-treadmill/',
+          },
         ],
       },
       {
@@ -1956,6 +2054,20 @@ export const SECTIONS: Section[] = [
               'Energy cost, impact, muscle emphasis and weight loss compared honestly, and the rail-holding problem.',
             badge: 'Incline',
             url: '/incline-walking-vs-running/',
+          },
+          {
+            title: 'Curved Treadmill Workouts',
+            description:
+              'Sprint repeats, tempo, resisted pushes and walking intervals built for a self-powered curved belt.',
+            badge: 'Curved',
+            url: '/curved-treadmill-workouts/',
+          },
+          {
+            title: 'What Is Treadmill Decline Good For?',
+            description:
+              'Downhill race and hiking prep, eccentric quad loading, how much decline and how to introduce it.',
+            badge: 'Decline',
+            url: '/what-is-treadmill-decline-good-for/',
           },
         ],
       },
@@ -2099,6 +2211,34 @@ export const SECTIONS: Section[] = [
               'Chest straps and arm bands that pair with treadmill consoles and apps, and why they beat the grip sensors.',
             badge: 'Heart rate',
             url: '/best-heart-rate-monitors-for-treadmill/',
+          },
+          {
+            title: 'How to Stay Cool on a Treadmill',
+            description:
+              'Why indoor sessions run hot, fan placement, room conditions and the warning signs to stop.',
+            badge: 'Heat',
+            url: '/how-to-stay-cool-on-a-treadmill/',
+          },
+          {
+            title: 'Chest Strap vs. Wrist Heart Rate',
+            description:
+              'Electrical versus optical sensing, why wrists lag in intervals, and which to trust for zones.',
+            badge: 'Heart rate',
+            url: '/chest-strap-vs-wrist-heart-rate/',
+          },
+          {
+            title: 'Treadmill Foot Pod Guide',
+            description:
+              'How a foot pod measures pace, calibrating it against the belt, and when you need one for Zwift.',
+            badge: 'Foot pod',
+            url: '/treadmill-foot-pod-guide/',
+          },
+          {
+            title: 'How Often to Replace Running Shoes',
+            description:
+              'The mileage convention, why treadmill wear differs, and the signs a pair is finished.',
+            badge: 'Shoes',
+            url: '/how-often-to-replace-running-shoes/',
           },
         ],
       },

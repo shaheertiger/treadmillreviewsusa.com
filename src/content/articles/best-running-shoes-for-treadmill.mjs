@@ -48,7 +48,8 @@ export default {
       html: `          <p>
             If you want one shoe for easy and steady treadmill running, start with the first two.
             The others are for specific needs: faster sessions, more support, a wider toe box,
-            longer runs, or walking on a steep incline.
+            longer runs, or walking on a steep incline. On when a pair is finished, see
+            <a href="/how-often-to-replace-running-shoes/" class="text-[#0F62FE] font-medium">how often to replace running shoes</a>.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead><tr>

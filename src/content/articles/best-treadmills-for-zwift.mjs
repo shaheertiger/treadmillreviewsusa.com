@@ -47,7 +47,8 @@ export default {
       html: `          <p>
             Four treadmills whose manufacturers state Zwift support, plus one foot pod. The short
             version: the Horizon 7.0 AT for most runners, the Bowflex T6 when it is on sale, and a
-            Stryd pod if you already own a treadmill you like.
+            Stryd pod if you already own a treadmill you like. Already own a treadmill? Read our
+            <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium">treadmill foot pod guide</a>.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead>

@@ -129,7 +129,9 @@ export default {
       heading: 'Can You Use a NordicTrack or ProForm Without iFIT?',
       html: `          <p>
             Yes — the treadmill does not stop being a treadmill. What it becomes without a
-            membership is the question, and the honest answer is that it varies.
+            membership is the question, and the honest answer is that it varies; our answer to
+            <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">whether a NordicTrack works without iFIT</a>
+            goes through it feature by feature.
           </p>
           <p>
             <strong>What works on the machines we are aware of:</strong> a manual mode in which you
