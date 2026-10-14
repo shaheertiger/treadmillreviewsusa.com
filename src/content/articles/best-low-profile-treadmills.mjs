@@ -141,6 +141,7 @@ export default {
     {
       id: 'goplus-superfit-2-in-1',
       name: 'Goplus SuperFit 2-in-1',
+      reviewUrl: '/goplus-2-in-1-treadmill/',
       category: 'Best budget lightweight folding treadmill',
       badge: 'Best Budget',
       amazonUrl: 'https://www.amazon.com/s?k=Goplus+SuperFit+2+in+1+Folding+Treadmill&tag=sktiger-20',

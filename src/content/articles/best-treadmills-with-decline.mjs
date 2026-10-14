@@ -94,6 +94,7 @@ export default {
     {
       id: 'nordictrack-commercial-1250',
       name: 'NordicTrack Commercial 1250',
+      reviewUrl: '/nordictrack-commercial-1250-treadmill/',
       category: 'Cheapest treadmill with powered decline',
       badge: 'Best Value',
       amazonUrl: 'https://www.amazon.com/s?k=NordicTrack+Commercial+1250+Treadmill&tag=sktiger-20',

@@ -399,13 +399,12 @@ Amazon search links. This batch also searched cpsc.gov for every brand before li
 - `/guides/`: running shoes for treadmill (Accessories)
 
 Ten existing specs gained contextual links; `/best-treadmill-brands/` no longer says its Horizon
-coverage is unfinished. The Sole C80 labour term on the curved and manual roundups now follows
-Sole's current listing (90 days).
+coverage is unfinished. (An earlier note here said Sole's labour term was 90 days; that was a misreading of Sole's
+warranty table, where 90 days is cosmetic cover. Labour is one year; corrected 2026-10-14.)
 
 Found while checking, not yet corrected: `/sole-f65-treadmill/` disagrees with Sole's 2026 listing
 on motor, deck, capacity, warranty and console; `/proform-pro-2000-treadmill/` and
-`/proform-treadmill/` describe models no longer on proform.com; `/horizon-t101-treadmill/` states
-a motor rating Horizon no longer publishes and does not mention the 2022 T101-05 recall; and
+`/proform-treadmill/` describe models no longer on proform.com; `/horizon-t101-treadmill/` (since corrected — see the second keyword batch); and
 several older pages (`/best-treadmills-under-500/`, `/best-treadmills-under-800/`, both Sole model
 pages, `/treadmill-desk-guide/`) carry first-person testing claims.
 
@@ -475,22 +474,49 @@ with the old figures, testing claims and an invented aggregateRating (4.6 from 8
 hand-written pages still emit `aggregateRating` from invented `rating`/`reviewCount` values in their
 JSON-LD — the policy breach described under "Pages awaiting data".
 
+### Second keyword batch (2026-10-14): thirty-three pages and three updates
+
+Written against a second supplied keyword list, on the same rules as the first. Keywords an
+existing page already owns were mapped to it.
+
+- **Brand guides**: Landice, Spirit, Star Trac, LIVESTRONG (discontinued; the LS10.0T), Gold's Gym
+  (no current treadmill could be found — the ICON licence ended in 2019), LifeSpan, Reebok (no
+  treadmills on Reebok's US store), MaxKare and Famistar (marketplace brands; listing claims only).
+- **Reviews**: NordicTrack Commercial 1250 (NTL14125: 3.6 CHP, 22 x 60 in., 400 lb, confirmed),
+  T Series, EXP 7i (no longer in the US range), ProForm Carbon Pro 9000 and Carbon TLS, Horizon
+  7.0 AT (with a dated sale-price section), Bowflex T16, Life Fitness Run CX and Integrity, Matrix
+  T5x (sold remanufactured), iMovR Unsit, Redliro, Goplus 2-in-1 (the SuperFit behind the long
+  listing title), Pro 6 Arcadia, TKO AirRaid (the 8CTM, now sold as the AirRaid Force), NOHrD
+  Sprintbok and SB Fitness CT700.
+- **Guides**: packing a treadmill, finding repair near you, anti-gravity (AlterG) treadmills,
+  underwater treadmills for dogs, cracked decks, and a large-dog treadmill roundup.
+- **Updates**: Sole F80 and F85 published (above); `/horizon-t101-treadmill/` re-verified — motor
+  claim removed, the 2022 T101-05 recall and the August 2026 civil penalty added from cpsc.gov,
+  and a manual section.
+
+Also: Sole warranty wording corrected on three roundups (labour is one year, not 90 days);
+`/best-treadmill-desks/` no longer calls WorkWhileWalking independent (it was founded by iMovR's
+chief executive); `/matrix-fitness/` carries a notice of the January 2026 recall of Matrix T30,
+TF30, T50, TF50 and T75 treadmills (power cord, fire hazard). Twenty roundup cards gained
+`reviewUrl`s, sixteen pages gained contextual links, and four more products matched exact Amazon
+listings (65 stored).
+
+Found and not yet changed: `/best-dog-treadmills/`'s two top picks (dogPACER LF 3.1 and 4.0) appear
+unavailable in the US, and its GoPet PR720F and Dog Trotter details are out of date;
+`/nordictrack-commercial-1250-vs-1750/` and `/best-nordictrack-treadmills/` still list the 1250's and
+1750's motor, deck and capacity as unconfirmed; `/matrix-fitness/` still describes the T7xe as the
+only home model; `/life-fitness/` omits the Run CX and Integrity.
+
 ### Sole F80 and F85
 
-Both machines were referenced across the site — the F80 on ten pages — with no page to point at,
-and both are among the highest-volume model queries in the category. They are written and shipped
-as **editorial drafts** rather than published pages, because their published specifications
-genuinely conflict: several generations have been sold under each name with real changes
-underneath, retailer listings carry forward older specification blocks, and the manufacturer's own
-current listings do not agree with the review sources on motor rating or weight capacity. Rather
-than pick a version of the numbers, each page is built around the verification framework and
-declares the contested figures in `dataPending`.
-
-The consequence is that both are `noindex`, excluded from the sitemap and unlinked from
-navigation, exactly like `/horizon-fitness/`. Confirm the listed figures against the manufacturer
-for a specific model year, add them to the spec, delete the `dataPending` block and regenerate —
-at which point they become indexable and can be linked from `/reviews/`, `/sole-fitness/` and the
-ten pages that mention the F80 in passing.
+Both were shipped first as `dataPending` editorial drafts because their published figures conflict
+across generations. On 2026-10-14 both were re-verified against Sole's own 2026 listings (item
+numbers F80-2026 and F85-2026) plus independent coverage, and **published**: every figure on each
+page is now either confirmed by Sole and at least one independent source, or set out in a table of
+conflicting figures with the source of each. Each page explains the three versions sold under the
+name. `dataPending` is gone, so both are indexed, in the sitemap and linked from `/reviews/` and
+`/best-sole-treadmills/`. Their Amazon buttons stay on tagged search links (`VERSION_UNCLEAR` in
+`scripts/amazon/lib.mjs`) because no Amazon listing could be tied to the 2026 version.
 
 All outbound product links use Amazon search URLs tagged with the `sktiger-20` Associates ID (`rel="sponsored nofollow noopener"`). Swap in real ASIN/product links and product photography as they become available. Product specs on the newly recreated pages are editorial approximations in the site's existing style (same convention as the original flagship guides) — verify against manufacturer data before treating any number as authoritative.
 

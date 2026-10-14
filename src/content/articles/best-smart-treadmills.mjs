@@ -70,6 +70,7 @@ export default {
     {
       id: 'nordictrack-t-series-10',
       name: 'NordicTrack T Series 10',
+      reviewUrl: '/nordictrack-t-series-treadmill/',
       category: 'Best budget treadmill with a built-in screen',
       badge: 'Best Budget',
       amazonUrl: 'https://www.amazon.com/s?k=NordicTrack+T+Series+10+Treadmill&tag=sktiger-20',

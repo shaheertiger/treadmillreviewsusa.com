@@ -1,0 +1,457 @@
+export default {
+  slug: 'treadmill-cracked-deck',
+  title: 'Treadmill Cracked Deck (2026): Symptoms, Causes and Repair Cost',
+  description:
+    'A treadmill cracked or broken deck: how to recognise it, what causes it, why it should not be flipped or glued, what replacement typically costs, and when to stop using the machine.',
+  crumbLabel: 'Treadmill Cracked Deck',
+  breadcrumb: { name: 'Fault Diagnosis', url: '/problems/' },
+  kicker: 'Troubleshooting',
+  updated: 'October 2026',
+  updatedLong: 'October 14, 2026',
+  published: '2026-10-14',
+  socialProof: '1.5k',
+  h1: ['Treadmill Cracked Deck:', 'What It Means and What to Do Next'],
+  standfirst:
+    'A cracked treadmill deck is not a wear problem to manage; it is a structural failure under the surface you run on. Here is how to tell whether the deck has really cracked, what usually causes it, why patching and flipping are poor ideas, and what a replacement typically costs.',
+  ctas: [
+    { label: 'The Short Answer', href: '#short-answer' },
+    { label: 'Repair or Replace?', href: '#repair-or-replace' },
+  ],
+  tags: ['treadmill cracked deck', 'treadmill broken deck', 'cracked treadmill deck repair', 'treadmill deck crack', 'treadmill deck replacement cost'],
+  stickyCta: { text: 'Stop Using It? Check Here', link: '#stop-using' },
+  lead: `Most treadmill deck problems are slow: the surface wears, the belt drags, the motor works
+          harder, and over months the owner notices. A cracked deck is different. It often
+          announces itself with a sharp crack or a new give underfoot, and from that moment the
+          board under the belt is no longer a single rigid surface. This page covers how to
+          confirm a crack, the causes worth knowing about, the repairs that are and are not
+          reasonable, and the cost of fixing it. For worn-but-intact decks, flipping and the full
+          replacement procedure, see our guide to
+          <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium">treadmill deck replacement</a>,
+          which this page builds on rather than repeats.`,
+  note: `<strong class="text-gray-900">Stop using a treadmill with a cracked deck, and unplug it
+          before you look.</strong> A cracked board can give way under a footstrike, and the belt
+          can catch on a raised edge. Inspect only with the treadmill unplugged at the wall and the
+          safety key removed, and get help to lift or tilt the machine. Stop using it entirely for a
+          burning smell, a breaker that trips, a belt that surges or does not stop when the safety
+          key is pulled, or any crack in the steel frame. Your manual is the authority on your
+          model's deck and its removal. Every cost figure here is a labelled estimate, "in the
+          region of", consistent with our deck replacement and repair guides, not a quote.`,
+  sections: [
+    {
+      id: 'short-answer',
+      heading: 'Treadmill Cracked Deck: The Short Answer',
+      html: `          <p>
+            <strong>A treadmill cracked deck should be replaced, not flipped, glued or patched,
+            and the machine should not be used until it is.</strong> The deck is the board the belt
+            runs over and you land on; once it has cracked through, it can flex, sag or break under
+            a footstrike, and a raised edge can damage the belt. Replacing it is the same job as
+            any deck replacement, and is usually done together with a new belt.
+          </p>
+          <p>
+            As typical estimates, a replacement deck as a part commonly costs somewhere in the
+            region of $100 to $300 for a home treadmill, and a technician fitting a deck and belt
+            together commonly comes to $300 to $600 or more all in, the same bands we use in our
+            <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium">deck replacement guide</a>.
+            Before paying, check two things: whether the crack is really in the deck rather than
+            in the frame, a plastic rail or the belt, and whether the warranty still applies,
+            because a deck that cracks early on a machine used within its weight limit may be a
+            defect rather than wear.
+          </p>
+          <p>
+            The rest of this page covers how to recognise a cracked or broken deck, what tends to
+            cause one, how to tell it apart from other faults, and whether repair is worth it on
+            your machine.
+          </p>`,
+    },
+    {
+      id: 'symptoms',
+      heading: 'What Are the Symptoms of a Cracked Treadmill Deck?',
+      html: `          <p>
+            The usual signs of a cracked treadmill deck are a sudden crack or pop under foot, a
+            new soft spot or dip where you land, a repeating thump or click as the belt passes
+            over a point, and a belt that starts catching or tracking differently.
+          </p>
+          <ul>
+            <li><strong>A sharp crack or pop, once.</strong> Many owners describe a single loud
+            sound mid-session, often on a heavy footstrike, after which the machine feels
+            different. That is the board giving way.</li>
+            <li><strong>A soft spot or a dip.</strong> Walk slowly on the stopped belt in socks
+            with the machine unplugged. A cracked deck often flexes at one point, usually in the
+            foot-strike zone a few feet from the front, or sags between two supports.</li>
+            <li><strong>Creaking or clicking under load.</strong> The two sides of a crack moving
+            against each other can creak with every step.</li>
+            <li><strong>A rhythmic thump or catch.</strong> If one edge of the crack has lifted,
+            the belt's underside can catch on it with each pass, giving a thump or a hesitation in
+            time with the belt rather than with your steps. Our guide to a
+            <a href="/treadmill-thumping-noise/" class="text-[#0F62FE] font-medium">treadmill thumping noise</a>
+            covers the other causes of that sound.</li>
+            <li><strong>Belt wear in one spot.</strong> A scuffed, cut or fraying line across the
+            underside of the belt can come from a raised crack edge.</li>
+            <li><strong>Visible damage.</strong> With the belt lifted, a line across the deck
+            surface, a split at the edge, or a section that sits lower than the rest.</li>
+          </ul>
+          <p>
+            Some of these symptoms overlap with a worn deck, loose bolts and hardened cushions.
+            The difference is usually suddenness: wear builds over months, while a crack tends to
+            arrive in a moment and feel different immediately.
+          </p>`,
+    },
+    {
+      id: 'stop-using',
+      heading: 'Should You Stop Using a Treadmill With a Cracked Deck?',
+      html: `          <p>
+            Yes. Stop using the treadmill as soon as you suspect the deck has cracked, unplug it,
+            and remove the safety key so that nobody else uses it before it is inspected.
+          </p>
+          <p>
+            The reasons are straightforward. The deck is what holds you up between the rollers.
+            A cracked board can flex more with each step and eventually break through, and that
+            can happen at speed with someone on it. A raised edge can cut or tear the belt, and a
+            belt that catches loads the motor and the motor control board. Continuing to walk on
+            it, even slowly, turns a deck replacement into a deck, belt and possibly electronics
+            replacement.
+          </p>
+          <p>
+            The same applies, more strongly, to a crack in the frame. If the crack is in the steel
+            frame, a weld, an upright or the folding hinge rather than in the board, the machine
+            must not be used until a technician or the manufacturer has looked at it. Our guide to a
+            <a href="/treadmill-shaking-or-wobbling/" class="text-[#0F62FE] font-medium">treadmill that shakes or wobbles</a>
+            describes frame faults that mean stop.
+          </p>
+          <p>
+            If others use the machine, put a note on the console. A treadmill that looks normal is
+            easy to step onto.
+          </p>`,
+    },
+    {
+      id: 'confirm-it',
+      heading: 'How Do You Confirm the Deck Is Cracked?',
+      html: `          <p>
+            Confirm a cracked deck by looking at it: unplug the treadmill, slacken the belt enough
+            to lift an edge well clear, and inspect the deck surface and edges with a torch at a
+            low angle, then check the underside from below if you can.
+          </p>
+          <ol>
+            <li><strong>Unplug and remove the key.</strong> Lower any incline before unplugging.</li>
+            <li><strong>Note the rear roller bolt positions</strong> so you can return them to the
+            same setting, then back them off evenly to slacken the belt.</li>
+            <li><strong>Lift one belt edge</strong> and shine a torch across the deck. Look for a
+            line across the surface, a step where one side sits lower, lifted laminate along a line,
+            or a split at the deck edge.</li>
+            <li><strong>Press along the deck</strong> with the heel of your hand, especially in the
+            foot-strike zone. A section that moves relative to its neighbour is cracked.</li>
+            <li><strong>Look underneath.</strong> With help, and with the machine unplugged, tilt or
+            fold it if the design allows and look at the underside. Cracks often show more clearly
+            there, and you can see the cushions and the frame at the same time.</li>
+            <li><strong>Check around the bolt holes.</strong> Cracks sometimes start at the mounting
+            bolts, especially if they were over-tightened.</li>
+          </ol>
+          <p>
+            Photograph anything you find, with something for scale. You will want the pictures for
+            a warranty claim, for a technician quote, or for ordering a part.
+          </p>`,
+    },
+    {
+      id: 'not-the-deck',
+      heading: 'Is It the Deck, or Something Else That Is Broken?',
+      html: `          <p>
+            People searching for a treadmill broken deck sometimes have a different broken part,
+            so rule out the frame, the side rails, the deck cushions and the belt before ordering
+            a deck.
+          </p>
+          <ul>
+            <li><strong>Cracked plastic side rails or foot rails.</strong> The rails either side
+            of the belt are often plastic-capped and crack easily, especially after a move. They
+            look alarming and are usually an inexpensive part that does not stop the machine from
+            working, as long as no sharp edge can catch a foot or the belt.</li>
+            <li><strong>Hardened, cracked or missing cushions.</strong> The deck sits on elastomer
+            cushions or isolators. If one has split or fallen out, the deck can rock or thump and
+            feel broken when it is not. Replacing cushions is a cheap fix, and leaving them missing
+            can crack the deck later.</li>
+            <li><strong>A loose deck bolt.</strong> A deck bolt that has backed out lets the board
+            move and creak. Tightening it may be the whole fix; if the hole around it has crumbled,
+            the deck has failed there.</li>
+            <li><strong>A split or torn belt.</strong> A belt with a lifting seam or torn edge
+            produces a thump each revolution and can feel like a deck fault. Our guide to
+            <a href="/treadmill-belt-replacement-cost/" class="text-[#0F62FE] font-medium">treadmill belt replacement cost</a>
+            covers that repair.</li>
+            <li><strong>A cracked frame, weld or hinge.</strong> The most serious possibility. A
+            crack in the steel under the deck or at a folding hinge is a frame problem, not a deck
+            problem, and frame warranties are often the longest on the machine, so contact the
+            manufacturer.</li>
+          </ul>`,
+    },
+    {
+      id: 'causes',
+      heading: 'What Causes a Treadmill Deck to Crack?',
+      html: `          <p>
+            Treadmill decks usually crack because the board was loaded beyond what it could take
+            at that moment: a user above the weight limit, a board already softened by wear or
+            moisture, an impact from a dropped object or a dropped folding deck, or missing
+            support underneath.
+          </p>
+          <ul>
+            <li><strong>Exceeding the weight limit.</strong> Running or jumping on a machine near or
+            above its stated maximum user weight puts loads on the deck that it was not designed
+            for. Our guide to
+            <a href="/what-happens-if-you-exceed-treadmill-weight-limit/" class="text-[#0F62FE] font-medium">exceeding a treadmill's weight limit</a>
+            explains why decks are one of the first things to suffer.</li>
+            <li><strong>A deck already softened.</strong> Most home decks are fibreboard or plywood
+            with a hard laminate surface. When the surface wears through, or moisture gets in from
+            sweat, spills or a damp room, the board loses strength and can then crack under a load
+            it once took easily. Our guide to
+            <a href="/treadmill-water-damage/" class="text-[#0F62FE] font-medium">treadmill water damage</a>
+            explains how damp affects the deck.</li>
+            <li><strong>Impact.</strong> A dumbbell or kettlebell dropped on the belt, a child
+            jumping onto it from a height, or a folded deck that dropped because the latch let go,
+            can crack a sound board.</li>
+            <li><strong>Moving damage.</strong> A treadmill moved on its side, dropped down a step,
+            or carried by the deck end can crack the deck or its mounts. Our guide to
+            <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">moving a treadmill</a>
+            covers how to avoid it.</li>
+            <li><strong>Missing or failed cushions.</strong> If the cushions under the deck have
+            hardened, split or fallen out, the board spans further unsupported and flexes more on
+            each step.</li>
+            <li><strong>Over-tightened bolts.</strong> Cranking the deck bolts down can crush the
+            board around the hole and start a crack.</li>
+            <li><strong>A defect.</strong> Occasionally a deck cracks early on a machine used
+            within its limits, maintained and never dropped. That is what warranties are for.</li>
+          </ul>`,
+    },
+    {
+      id: 'flip-or-patch',
+      heading: 'Can a Cracked Treadmill Deck Be Flipped or Repaired?',
+      html: `          <p>
+            A cracked deck should not be flipped, and gluing, screwing or bracing it is not a
+            reliable repair; the safe fix is a new deck.
+          </p>
+          <p>
+            <strong>Why not flip it?</strong> Flipping a reversible deck gives a fresh running
+            surface when the old face is worn but the board is sound. A crack goes through the
+            board, so the other face sits on the same broken structure. As our
+            <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium">deck replacement guide</a>
+            explains, a deck that is soft, delaminated, swollen or cracked should not be flipped,
+            because the fresh face will not stay flat.
+          </p>
+          <p>
+            <strong>Why not glue or brace it?</strong> Owners sometimes glue a crack, or screw a
+            metal plate or a strip of plywood under the deck to bridge it. The problems are
+            practical. The deck surface has to stay flat and smooth for the belt to slide over it
+            with lubricant, and a glued crack rarely stays flush under repeated impact. A brace
+            underneath adds thickness that can foul the frame, the cushions or the belt's return
+            run, and it changes how the deck flexes. Screws through the deck can work loose and
+            rise into the belt. Even when such a patch seems to hold, it is holding a person moving
+            at speed on a motorised belt, which is not where a temporary repair belongs.
+          </p>
+          <p>
+            <strong>What can reasonably be repaired.</strong> The things around the deck often can:
+            a split cushion, a loose deck bolt, a cracked plastic rail, or a damaged belt. If the
+            board itself has a crack through it, the repair is a replacement.
+          </p>`,
+    },
+    {
+      id: 'cost',
+      heading: 'What Does a Cracked Deck Cost to Fix?',
+      html: `          <p>
+            A cracked deck costs the same to fix as any deck replacement: a part commonly in the
+            region of $100 to $300, or roughly $300 to $600 or more fitted by a technician together
+            with a belt. Those ranges match our deck replacement and repair guides.
+          </p>
+          <div class="not-prose overflow-x-auto my-6">
+            <table class="w-full min-w-[480px] text-sm border-collapse">
+              <thead>
+                <tr class="bg-gray-50 text-left">
+                  <th class="p-3 font-bold text-gray-900 border-b border-gray-200">Item</th>
+                  <th class="p-3 font-bold text-gray-900 border-b border-gray-200">Typical cost, in the region of</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td class="p-3 border-b border-gray-100">Replacement deck, part only</td><td class="p-3 border-b border-gray-100">$100 to $300 for a typical home treadmill; more for long or heavy-duty boards</td></tr>
+                <tr><td class="p-3 border-b border-gray-100">Technician call-out or diagnostic fee</td><td class="p-3 border-b border-gray-100">$75 to $150</td></tr>
+                <tr><td class="p-3 border-b border-gray-100">Deck and belt, fitted by a technician</td><td class="p-3 border-b border-gray-100">$300 to $600 or more, all in</td></tr>
+                <tr><td class="p-3 border-b border-gray-100">Walking belt, if damaged by the crack</td><td class="p-3 border-b border-gray-100">$80 to $250 as a part</td></tr>
+                <tr><td class="p-3 border-b border-gray-100">Deck cushions, while the deck is out</td><td class="p-3 border-b border-gray-100">A modest part</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            These are estimates gathered from typical owner and technician reports, not quotes.
+            Premium and commercial machines sit above them, and labour varies by area.
+          </p>
+          <p>
+            <strong>Order by model and serial number.</strong> Decks are model-specific: length,
+            width, thickness and the bolt pattern all have to match. Order from the manufacturer or
+            an authorised parts supplier with the serial number from the frame sticker. A generic
+            cut-to-size board is sometimes the only option for a discontinued model, but it needs
+            careful measuring and a supplier who will confirm the surface type.
+          </p>
+          <p>
+            <strong>Replace the belt too, in most cases.</strong> A belt that ran over a crack is
+            often scored or damaged, and an old glazed belt will wear a new deck. The dismantling
+            is the same for both, so doing them together saves labour.
+          </p>
+          <p>
+            <strong>DIY or technician.</strong> Fitting a new deck is the same job as flipping one,
+            described step by step in our
+            <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium">deck replacement guide</a>.
+            It is manageable for a careful owner with a helper and the manual. A technician makes
+            sense for a heavy non-folding machine, a machine still under labour warranty, or when
+            you are not certain whether the frame is also damaged; our guide to finding
+            <a href="/treadmill-repair-near-me/" class="text-[#0F62FE] font-medium">treadmill repair near you</a>
+            covers how to choose one.
+          </p>`,
+    },
+    {
+      id: 'warranty',
+      heading: 'Is a Cracked Deck Covered by Warranty?',
+      html: `          <p>
+            Sometimes. Decks are often treated as wear items with shorter cover than the frame or
+            motor, but a deck that cracks on a young machine used within its weight limit can be a
+            defect claim, and a crack in the frame falls under the frame warranty.
+          </p>
+          <p>
+            Read your warranty document for the deck term specifically; some brands list the deck
+            separately and some include it in parts. Then contact the manufacturer before ordering
+            anything, with the serial number, proof of purchase, photographs of the crack and a
+            plain account of how it happened. Expect questions about user weight, use and whether
+            the machine has been moved; overloading, impact damage and moving damage are commonly
+            excluded. If your machine was bought second-hand, check whether the warranty transfers,
+            since many apply to the original purchaser only. Our
+            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
+            explains how the frame, motor, parts and labour terms usually work.
+          </p>
+          <p>
+            Do not dismantle the machine or fit an aftermarket deck before the manufacturer has
+            responded, as that can complicate the claim.
+          </p>`,
+    },
+    {
+      id: 'repair-or-replace',
+      heading: 'Repair or Replace the Treadmill?',
+      html: `          <p>
+            Replacing a cracked deck is usually worth it on a mid-range or premium treadmill with a
+            sound frame and motor, and often not on an old budget machine where the repair
+            approaches half the price of a comparable new one.
+          </p>
+          <p>
+            Consider the whole machine. A deck that cracked because the surface had worn through
+            means the motor has been working against friction for a while; if the motor runs hot,
+            the rollers are noisy or the console is unreliable, the deck is one item on a list. A
+            machine whose user is regularly above its weight limit will crack the next deck too,
+            and the right answer there is a machine rated for the load. Parts availability can
+            decide the matter: if no deck exists for the model, a generic board on an old machine
+            may not be worth the risk. Our guide to
+            <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">how long treadmills last</a>
+            helps place a machine in its life.
+          </p>
+          <p>
+            If you replace the machine, our guide on
+            <a href="/how-to-dispose-of-a-treadmill/" class="text-[#0F62FE] font-medium">disposing of a treadmill</a>
+            covers what to do with the old one.
+          </p>`,
+    },
+    {
+      id: 'prevention',
+      heading: 'How Do You Stop the Next Deck Cracking?',
+      html: `          <p>
+            Keep within the weight limit, keep the deck lubricated, dry and supported, and keep
+            heavy objects and impacts off it.
+          </p>
+          <ul>
+            <li><strong>Respect the maximum user weight</strong>, with a margin for running.</li>
+            <li><strong>Lubricate on schedule</strong> so the surface does not wear through and
+            soften the board; our
+            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">belt lubrication guide</a>
+            covers how.</li>
+            <li><strong>Keep it dry.</strong> Wipe sweat off after sessions, keep drinks off the
+            console above the belt, and avoid damp rooms or use a dehumidifier.</li>
+            <li><strong>Check the cushions and deck bolts</strong> once or twice a year, with the
+            machine unplugged. Replace split cushions; tighten bolts to the manual's figure, not
+            beyond.</li>
+            <li><strong>No weights on the belt.</strong> Do strength work beside the treadmill,
+            not on it.</li>
+            <li><strong>Move it properly</strong>, with the deck locked and strapped or lowered,
+            never on its side.</li>
+          </ul>`,
+    },
+  ],
+  faqs: [
+    {
+      q: 'Can I keep using a treadmill with a cracked deck?',
+      a: `No. A cracked deck can flex more with each step and eventually break under a footstrike, and a raised edge can damage the belt and load the motor. Unplug the treadmill, remove the safety key so nobody else uses it, and get the deck inspected and replaced before using the machine again.`,
+    },
+    {
+      q: 'Can you flip a cracked treadmill deck?',
+      a: `No. Flipping only helps when the old surface is worn but the board is sound. A crack runs through the board, so the other face sits on the same broken structure and will not stay flat. A cracked deck needs replacing, usually together with the belt.`,
+    },
+    {
+      q: 'Can a cracked treadmill deck be glued or repaired?',
+      a: `It is not a reliable repair. A glued crack rarely stays flush under repeated impact, a brace screwed underneath can foul the frame or belt, and screws can rise into the belt. Because the deck carries a person on a moving belt, replacement is the safe fix. Cushions, bolts, rails and belts around the deck can often be repaired.`,
+    },
+    {
+      q: 'How much does it cost to replace a cracked treadmill deck?',
+      a: `As typical estimates, a replacement deck commonly costs in the region of $100 to $300 as a part for a home treadmill, and a technician fitting a deck and belt together commonly comes to $300 to $600 or more all in. Premium and commercial machines cost more. Check the warranty before paying.`,
+    },
+    {
+      q: 'What causes a treadmill deck to crack?',
+      a: `Common causes are a user above the weight limit, a board already softened by surface wear or moisture, impacts from dropped weights or a dropped folding deck, damage during a move, missing or split cushions under the deck, and over-tightened deck bolts. Occasionally it is a manufacturing defect, which a warranty may cover.`,
+    },
+    {
+      q: 'Is a cracked treadmill deck covered under warranty?',
+      a: `It can be. Decks are often covered for shorter terms than frames or motors, but an early crack on a machine used within its weight limit may be a defect, and a crack in the steel frame falls under the frame warranty. Contact the manufacturer with photographs, the serial number and proof of purchase before ordering parts.`,
+    },
+  ],
+  mistakesHeading: 'Common Mistakes With a Cracked Deck',
+  mistakesIntro:
+    'Most of the extra cost after a deck cracks comes from using the machine anyway or from a repair that does not hold.',
+  mistakes: [
+    {
+      title: 'Walking on it "just slowly"',
+      body: `Even at walking pace a cracked board flexes, the crack grows, and a raised edge can cut the belt and overload the motor. Unplug the machine, take the safety key out, and leave it until the deck is replaced.`,
+    },
+    {
+      title: 'Flipping a cracked deck',
+      body: `Flipping solves surface wear, not structural failure. The fresh face sits on the same cracked board and will not stay flat. Replace a cracked deck rather than turning it over.`,
+    },
+    {
+      title: 'Ordering a deck before checking the warranty',
+      body: `An early crack on a machine used within its limits, or a crack in the frame, may be covered. Contact the manufacturer with photographs and the serial number first, and do not dismantle the machine until they reply.`,
+    },
+    {
+      title: 'Fitting a new deck under an old belt',
+      body: `A belt that ran over a crack is often scored, and an old glazed belt wears a new deck quickly. Replace them together unless the belt is nearly new and undamaged.`,
+    },
+  ],
+  relatedHeading: 'Related Deck and Repair Guides',
+  related: [
+    {
+      kicker: 'Maintenance',
+      title: 'Treadmill Deck Replacement',
+      blurb: 'Worn decks, flipping, the replacement procedure and costs.',
+      url: '/treadmill-deck-replacement/',
+    },
+    {
+      kicker: 'Repair',
+      title: 'Treadmill Repair Guide',
+      blurb: 'What you can fix yourself, what needs a technician, and typical costs.',
+      url: '/treadmill-repair-guide/',
+    },
+    {
+      kicker: 'Capacity',
+      title: 'Exceeding a Treadmill Weight Limit',
+      blurb: 'Why decks are among the first parts to suffer.',
+      url: '/what-happens-if-you-exceed-treadmill-weight-limit/',
+    },
+  ],
+  bottomLine: [
+    `<strong class="text-white">A treadmill cracked deck is a structural failure, so stop using
+            the machine and replace the deck rather than flipping or patching it.</strong> Confirm
+            the crack is in the board rather than the frame, a rail, a cushion or the belt, and
+            check the warranty before buying anything.`,
+    `<strong class="text-white">A replacement deck is commonly $100 to $300 as a part, or $300 to
+            $600 or more with a belt and a technician.</strong> It is usually worth doing on a sound
+            mid-range machine and often not on an old budget one. Our
+            <a href="/treadmill-deck-replacement/" class="text-[#5AA9FF] font-bold no-underline">deck replacement guide</a>
+            walks through the job itself.`,
+  ],
+};

@@ -1,0 +1,778 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "NordicTrack EXP 7i Review (2026): Specs, Status and What Replaces It";
+const description =
+  "The NordicTrack EXP 7i: 7 in. touchscreen, 20 x 55 in. belt, 2.6 CHP, 10 mph, 300 lb. It is no longer in NordicTrack’s lineup — what a used one is worth checking, and the current equivalents.";
+
+const PRODUCTS = [
+  {
+    id: "nordictrack-exp-7i",
+    name: "NordicTrack EXP 7i",
+    category: "Compact iFIT Treadmill (Older Model)",
+    badge: "No Longer in the Lineup",
+    amazonUrl: "https://www.amazon.com/s?k=NordicTrack+EXP+7i+Treadmill&tag=sktiger-20",
+    reviewUrl: null,
+    priceRange: "Used and clearance prices vary",
+    specs: "20 x 55 in. belt · 2.6 CHP · 0-12% incline · 0-10 mph · 300 lb max user · 7 in. tilting touchscreen",
+    pros: [
+      "Compact for a touchscreen treadmill: 70.8 by 34.9 inches on NordicTrack’s figures",
+      "Incline to 12%, which covers almost all incline-walking workouts",
+      "A 300 lb rating and a cushioned deck that reviewers describe as comfortable",
+      "Folds, with an EasyLift assist and a device shelf for your own tablet",
+    ],
+    cons: [
+      "No longer in NordicTrack’s current treadmill range",
+      "A 55-inch belt and 10 mph ceiling make it a walking and jogging machine, not a running one",
+      "The 7-inch screen is small for following iFIT classes",
+      "Any warranty is likely to have expired or not to transfer to a second owner",
+    ],
+    bottomLine: "A reasonable used buy for a walker if the price is well below a new T Series 8 and the unit checks out; otherwise a current model is better value.",
+    description: "The EXP 7i (NordicTrack model NTL10423) has a 20 by 55-inch belt with Runner’s Flex cushioning, a 2.6 CHP motor, 0 to 10 mph, 0 to 12% incline and no decline, a 300 lb maximum user weight and a 7-inch tilting HD touchscreen that runs iFIT. It folds with EasyLift assist, has OneTouch speed and incline buttons, 1.9-inch rollers, Bluetooth for headphones and heart-rate monitors, and a device shelf. NordicTrack gives the footprint as 70.8 by 34.9 by 59.7 inches and the boxed weight as 228 lb. The warranty was ten years on the frame, two years on parts and one year of labour. NordicTrack no longer lists it among its treadmills.",
+  },
+  {
+    id: "nordictrack-t-series-8",
+    name: "NordicTrack T Series 8",
+    category: "Closest Current Equivalent: LCD and Tablet Shelf",
+    badge: "Current Retail Model",
+    amazonUrl: "https://www.amazon.com/s?k=NordicTrack+T+Series+8+Treadmill&tag=sktiger-20",
+    reviewUrl: "/nordictrack-t-series-treadmill/",
+    priceRange: "Around $999",
+    specs: "0-12% incline · 0-12 mph · 325 lb max user · SelectFlex deck · folding · 7 in. LCD (retailer listings)",
+    pros: [
+      "A longer belt (60 in. on retailer listings) and 12 mph against the EXP 7i’s 55 in. and 10 mph",
+      "A higher 325 lb rating on NordicTrack’s own sheet",
+      "New, with a manufacturer warranty from the date you buy",
+    ],
+    cons: [
+      "An LCD console rather than a touchscreen; iFIT runs on your own device",
+      "Sold through retailers, not nordictrack.com, so the retailer’s return terms apply",
+      "Motor rating quoted differently by different sellers",
+    ],
+    bottomLine: "The closest new replacement in price and spirit: the same tablet-shelf idea on a longer, faster deck.",
+    description: "The T Series 8 (NTL10425) is sold through retailers rather than on NordicTrack’s site. NordicTrack’s product sheet and Abt Electronics’ listing agree on a 325 lb rating, 0 to 12 mph, 0 to 12% incline, SelectFlex cushioning, folding, and ten years on the frame, two on parts and one of labour. Abt’s listing adds a 7-inch LCD with a device shelf and a 20 by 60-inch belt. Abt listed it at $999 on 14 October 2026.",
+  },
+  {
+    id: "nordictrack-t-series-10",
+    name: "NordicTrack T Series 10",
+    category: "Current Touchscreen Replacement",
+    badge: "Sold on NordicTrack.com",
+    amazonUrl: "https://www.amazon.com/dp/B0D7XGWMRD?tag=sktiger-20&linkCode=ll1",
+    reviewUrl: "/nordictrack-t-series-treadmill/",
+    priceRange: "$1,299-$1,799",
+    specs: "20 x 60 in. belt · 3.0 CHP (NordicTrack rating) · 0-12% incline · 0-12 mph · 325 lb max user · 10 in. tilting touchscreen",
+    pros: [
+      "The current touchscreen equivalent, with a larger 10-inch screen",
+      "A 60-inch belt and 12 mph",
+      "Adjustable SelectFlex cushioning and an 8.3-inch step-up",
+    ],
+    cons: [
+      "Costs more than the EXP 7i did new",
+      "No decline, and two years on the motor",
+      "Larger footprint: 75.1 by 34.3 inches",
+    ],
+    bottomLine: "What the EXP 7i became, roughly: the same idea with a longer deck, a bigger screen and more speed.",
+    description: "The T Series 10 (NTL15425) is the entry model on NordicTrack’s own site. NordicTrack and Treadmill Review Guru agree on a 20 by 60-inch belt, a 10-inch tilting touchscreen, 0 to 12% incline, 12 mph, a 325 lb rating and a 3.0 CHP motor rating, with ten years on the frame, two on the motor and parts, and one on the screen and labour. NordicTrack listed it at $1,599.99 and P.C. Richard at $1,299 on 14 October 2026.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Reviews", item: "https://www.treadmillreviewsusa.com/reviews/" },
+        { "@type": "ListItem", position: 3, name: "NordicTrack EXP 7i", item: "https://www.treadmillreviewsusa.com/nordictrack-exp-7i-treadmill/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Is the NordicTrack EXP 7i discontinued?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "It is no longer in NordicTrack’s treadmill range: on 14 October 2026 NordicTrack’s US treadmill category listed seven models and not the EXP 7i. An old product page still loads on nordictrack.com with a price, but its price record had not changed since 2024 and the Canadian page showed it out of stock. Call NordicTrack before relying on that page.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What are the NordicTrack EXP 7i specs?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "NordicTrack lists a 20 x 55-inch belt, a 2.6 CHP motor, 0-10 mph, 0-12% incline with no decline, a 300 lb maximum user weight and a 7-inch tilting touchscreen, with a 70.8 x 34.9 x 59.7-inch footprint. Two independent reviews agree. One other source gives 3.0 CHP and 12 mph, which we treat as an error.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can you run on a NordicTrack EXP 7i?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You can jog on it, but it is not built for regular running. The 55-inch belt is shorter than most guidance recommends for adult runners, and the top speed is 10 mph. For running, NordicTrack’s Commercial series is the better fit.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What replaced the NordicTrack EXP 7i?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "There is no exact successor. The closest current models are the retail-only T Series 8, with an LCD and device shelf on a 60-inch belt, and the T Series 10, with a 10-inch touchscreen, both sold new with a 325 lb rating and 12 mph.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is a used NordicTrack EXP 7i worth buying?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "It can be, for a walker, if the price leaves a clear margin under a new T Series 8 and the unit passes an inspection of the belt, deck, motor, incline and screen. Assume no warranty transfers to you unless NordicTrack confirms otherwise.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", name: "Morgan Reyes" },
+      datePublished: "2026-10-14",
+      dateModified: "2026-10-14",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+    ...PRODUCTS.map((product) => ({
+      "@type": "Product",
+      name: product.name,
+      description: product.description,
+      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      offers: {
+        "@type": "AggregateOffer",
+        priceCurrency: "USD",
+        availability: "https://schema.org/InStock",
+      },
+    })),
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-10-14",
+    modifiedTime: "2026-10-14",
+    author: "Morgan Reyes",
+    section: "Fitness Equipment",
+    tags: [
+      "nordictrack exp 7i",
+      "nordictrack exp 7i treadmill",
+      "nordictrack exp 7i review",
+      "nordictrack exp 7i specs",
+      "used nordictrack exp 7i",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "See What Replaces It", link: "#current-equivalents" }}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-nordictrackexp7itreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-nordictrackexp7itreadmill)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Model Review
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated October 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          NordicTrack EXP 7i <span class="text-[#5AA9FF]">Treadmill Review</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          The EXP 7i was NordicTrack’s most compact touchscreen treadmill, and it still turns up in searches, on the used market and on an old product page. It is no longer one of the treadmills NordicTrack lists in its range. This page sets out what the machine was, the figures NordicTrack and independent reviewers agree on, what to check on a used one, and which current models replace it.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#status" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            Is It Still Sold?
+          </a>
+          <a href="#current-equivalents" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            What Replaces It
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
+          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">October 14, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="1.1k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
+          14 October 2026 we read NordicTrack's US treadmill category, which listed seven treadmills and
+          not the EXP 7i, and the product page for the EXP 7i (SKU NTL10423) that still loads on
+          nordictrack.com, including its specification block. We cross-checked those figures against
+          independent reviews by TreadmillReviews.com (updated October 2023) and OutdoorGearLab
+          (March 2024), which agree on the 2.6 CHP motor rating, the 20 x 55 in. belt, 10 mph, the
+          7 in. touchscreen and the 300 lb rating; NordicTrack and TreadmillReviews.com also agree on the
+          0-12% incline, the footprint, the boxed weight and the warranty. Garage Gym Reviews' summary
+          gives a 3.0 CHP motor and a 12 mph top speed, which conflict with every other source, so we do
+          not use them. The alternative models' figures are from our
+          <a href="/nordictrack-t-series-treadmill/" class="text-[#0F62FE] font-medium">T Series review</a>,
+          checked the same day. We have not tested the EXP 7i or any machine here, and none of the figures
+          are our own measurements. Prices change constantly; those given are what we saw on 14 October
+          2026. We earn a commission if you buy through the Amazon links on this page; it does not change
+          what we say.
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. NordicTrack EXP 7i: The Short Answer</a>
+          <a href="#status" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Is the NordicTrack EXP 7i Still Sold?</a>
+          <a href="#specs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Specifications NordicTrack and Reviewers Agree On</a>
+          <a href="#what-it-is-for" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What the EXP 7i Is Good For, and What It Is Not</a>
+          <a href="#vs-t-6-5-s" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. EXP 7i vs the NordicTrack T 6.5 S</a>
+          <a href="#what-reviewers-report" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. What Independent Reviewers Reported</a>
+          <a href="#buying-used" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Buying a Used EXP 7i: What to Check</a>
+          <a href="#current-equivalents" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. What Replaces the EXP 7i Now</a>
+          <a href="#ownership" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Owning One: Maintenance and Common Faults</a>
+          <a href="#who-should-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Who Should Buy an EXP 7i Now</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          The NordicTrack EXP 7i is a compact folding treadmill with a 7-inch touchscreen, a 20 by
+          55-inch belt and a 10 mph top speed, sold as the smallest machine in NordicTrack's iFIT range
+          a few years ago. If you are searching for it now, you are probably looking at a used one, a
+          clearance listing or an old deal post. That changes what a review needs to answer: not
+          whether to buy it new at list price, but whether a particular unit is worth the asking price,
+          what it costs to keep running, and what you would get for similar money from NordicTrack's
+          current range.
+        </p>
+
+        <div id="short-answer" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. NordicTrack EXP 7i: The Short Answer</h2>
+<p>
+            <strong>The NordicTrack EXP 7i is an older compact iFIT treadmill — 20 by 55-inch belt, 2.6 CHP,
+            0 to 12% incline, 10 mph, 300 lb rating, 7-inch touchscreen — that NordicTrack no longer lists in
+            its treadmill range. It suits walkers and joggers, not runners. Buy one used only if the price is
+            well below a new T Series 8 and the unit passes a proper inspection; otherwise a current T Series
+            model is the better value.</strong>
+          </p>
+          <p>
+            Three things decide it. The first is the deck: 55 inches long and 20 wide is fine for walking and
+            easy jogging, and short for a full running stride. The second is the warranty: on a used or old
+            machine it has probably expired, and many treadmill warranties do not transfer to a second owner
+            anyway, so you carry every repair. The third is the console: a 7-inch screen running iFIT
+            depends on software support and a paid membership, both of which are the seller's problem today
+            and yours tomorrow.
+          </p>
+          <p>
+            We have not tested the EXP 7i. What follows is built from NordicTrack's published figures and the
+            independent reviews that agree with them. If you are choosing between new NordicTrack machines
+            rather than looking at an EXP 7i, our
+            <a href="/nordictrack-t-series-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack T Series review</a>
+            and <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">best NordicTrack treadmills</a>
+            roundup are the better starting points.
+          </p>
+        </div>
+      </div>
+
+      <!-- Product cards -->
+      <div class="not-prose">
+        {
+          PRODUCTS.map((product, index) => (
+            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
+              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
+                  <div>
+                    <p class="text-white font-black text-xl leading-tight">
+                      {index + 1}. {product.name}
+                    </p>
+                    <p class="text-gray-400 text-xs">{product.category}</p>
+                  </div>
+                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                    {product.badge}
+                  </span>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center gap-2 mb-4 flex-wrap">
+                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
+                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
+                  </div>
+                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
+                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
+                      <p class="text-xs font-black uppercase tracking-widest text-green-700 mb-2">What Works</p>
+                      <ul class="space-y-2">
+                        {product.pros.map((pro) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+                      <p class="text-xs font-black uppercase tracking-widest text-red-700 mb-2">What Doesn't</p>
+                      <ul class="space-y-2">
+                        {product.cons.map((con) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="border-t border-gray-100 pt-4">
+                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
+                    <div class="flex flex-wrap items-center gap-3">
+                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+                        Check Price on Amazon &rarr;
+                      </a>
+                      {product.reviewUrl && (
+                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
+                          Read our full {product.name} review &rarr;
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="status" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Is the NordicTrack EXP 7i Still Sold?</h2>
+<p>
+            Not as part of NordicTrack's current range. On 14 October 2026 NordicTrack's US treadmill category
+            listed seven machines: the T Series 10 and 16, the Commercial 1250, 1750 and 2450, and the X16 and
+            X24 incline trainers. The EXP 7i was not among them, and our
+            <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">NordicTrack roundup</a>
+            already counted it among the discontinued models still sold as new by some retailers.
+          </p>
+          <p>
+            There is a wrinkle. An old product page for the EXP 7i (model NTL10423) still loads on
+            nordictrack.com if you go to it directly. On the day we checked it showed a $1,299 price and an
+            "in stock" message, but the price record behind it had not been updated since October 2024, the
+            page was not linked from the treadmill category, and its Canadian equivalent showed the machine as
+            out of stock. We would not treat that page as evidence that the EXP 7i is a current product. If you
+            want to buy one new from NordicTrack, call its sales line and ask before ordering.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Where it was sold</h3>
+          <p>
+            The EXP 7i was sold by NordicTrack directly and through sporting-goods retailers; deal coverage
+            records it at Dick's Sporting Goods, and Canadian Tire carried it in Canada, where a store listing
+            we found marks it as discontinued at the stores it checked. That history matters if you find one new in a box: a retailer's
+            clearance unit may have been in a warehouse for some time, and the warranty, if any, runs from the
+            date of sale on that retailer's terms.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Check the model number</h3>
+          <p>
+            This page covers the US EXP 7i, model NTL10423. Do not read its figures across to other compact
+            NordicTrack treadmills with similar names, and confirm the model number on the frame label of any
+            unit you look at.
+          </p>
+        </div>
+
+        <div id="specs" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The Specifications NordicTrack and Reviewers Agree On</h2>
+<p>
+            The figures below are NordicTrack's, from the product page for NTL10423, repeated by at least one
+            independent review. Where a source disagrees, we say so.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Specification</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Figure</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Confirmed by</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Running belt</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20 x 55 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack, TreadmillReviews.com, OutdoorGearLab</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Motor</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.6 CHP</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack, TreadmillReviews.com, OutdoorGearLab (Garage Gym Reviews gives 3.0)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Speed</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0-10 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack, TreadmillReviews.com, OutdoorGearLab (Garage Gym Reviews gives 12)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Incline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0-12%, no decline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack, TreadmillReviews.com</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Maximum user weight</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">300 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack, TreadmillReviews.com, OutdoorGearLab</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Screen</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">7 in. tilting HD touchscreen</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack, TreadmillReviews.com, OutdoorGearLab</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Footprint (L x W x H)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">70.8 x 34.9 x 59.7 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack, TreadmillReviews.com</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Boxed weight</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">228 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack, TreadmillReviews.com</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rollers</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1.9 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack, TreadmillReviews.com</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Warranty (original buyer)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10 yr frame; 2 yr parts; 1 yr labour</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack, TreadmillReviews.com</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            NordicTrack also lists Runner's Flex cushioning, OneTouch speed and incline buttons, Bluetooth for
+            headphones and heart-rate monitors, speakers, a device shelf, Google Maps route workouts and the
+            SpaceSaver fold with EasyLift assist. OutdoorGearLab measured the folded machine at about 34 by
+            35.75 by 67 inches; NordicTrack does not publish folded dimensions. NordicTrack's CHP footnote
+            describes such ratings as laboratory dynamometer figures for consumer comparison that do not denote
+            operational horsepower in household use. Our
+            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
+            explains what that means.
+          </p>
+          <p>
+            The two figures we left out are Garage Gym Reviews' 3.0 CHP and 12 mph. NordicTrack's own page and
+            two other independent reviews give 2.6 CHP and 10 mph, so we read those as errors or as describing
+            a different machine.
+          </p>
+        </div>
+
+        <div id="what-it-is-for" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What the EXP 7i Is Good For, and What It Is Not</h2>
+<p>
+            Read as a compact walking treadmill with iFIT, the EXP 7i makes sense. Read as a running machine,
+            it does not, and most disappointed owners bought it as the second thing.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Good for: walking and incline walking</h3>
+          <p>
+            Incline to 12% is the same ceiling as NordicTrack's current T and Commercial series, which covers
+            incline walking and the <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 workout</a>
+            at full setting. A 2.6 CHP rating is adequate for sustained walking at incline. The 300 lb rating
+            gives most users a reasonable margin. And at 70.8 by 34.9 inches, it takes less floor than any
+            current NordicTrack touchscreen model. Our
+            <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">incline walking guide</a>
+            covers how to use the range.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Not for: regular running</h3>
+          <p>
+            A 55-inch belt is about five inches shorter than running guidance generally recommends for adults
+            who run rather than jog, and a 10 mph ceiling is a six-minute mile. Most joggers will never reach
+            the speed limit, but taller runners will feel the deck length, and a lighter motor working at
+            running pace for long sessions is working near its limits. TreadmillReviews.com describes the motor
+            as better suited to walking than heavy running. Our
+            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
+            sets out what length suits which height and pace.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The screen</h3>
+          <p>
+            Seven inches is small for following trainer-led video. Both TreadmillReviews.com and OutdoorGearLab
+            list the screen size as a drawback, and both note the device shelf as the workaround: put your own
+            tablet on it. iFIT's trainer-controlled speed and incline need a paid membership; without one, the
+            treadmill runs in manual mode. Whether an older console still receives software support is worth
+            checking with iFIT for any unit you are buying. Our guides to
+            <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">whether iFIT is worth it</a>
+            and <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">using a NordicTrack without iFIT</a>
+            cover both sides.
+          </p>
+        </div>
+
+        <div id="vs-t-6-5-s" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. EXP 7i vs the NordicTrack T 6.5 S</h2>
+<p>
+            The machine the EXP 7i is most often confused with on the used market is the T 6.5 S, the older
+            entry-level NordicTrack that our
+            <a href="/nordictrack-t-6-5-s-treadmill/" class="text-[#0F62FE] font-medium">T 6.5 S review</a>
+            covers. On the figures in that review, the two share a great deal: a 20 by 55-inch deck, a 2.6 CHP
+            motor rating, a 10 mph top speed and a 300 lb maximum user weight. If you are comparing two used
+            listings, those numbers will not separate them.
+          </p>
+          <p>
+            What separates them is the incline and the console. The EXP 7i inclines to 12% against the
+            T 6.5 S's 10%, which matters if incline walking is the point of the purchase, since the steepest
+            settings are where much of the work in a walking session happens. And the EXP 7i has a 7-inch
+            tilting touchscreen where the T 6.5 S has a 5-inch display, so iFIT's trainer-led video is at least
+            watchable on the console itself rather than only on your own tablet. Neither difference changes what
+            the machines are for. Both are compact walking and jogging treadmills, and both are older models with
+            the same questions about warranty, parts and software support. Between two units in similar
+            condition at similar prices, the EXP 7i is the more capable walker; between a tidy T 6.5 S and a
+            tired EXP 7i, condition matters more than the badge.
+          </p>
+        </div>
+
+        <div id="what-reviewers-report" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. What Independent Reviewers Reported</h2>
+<p>
+            We include a point only when more than one independent source makes it. The main independent
+            reviews of the EXP 7i date from 2023 and 2024, when it was still in the range.
+          </p>
+          <ul>
+            <li><strong>The screen is small.</strong> TreadmillReviews.com and OutdoorGearLab both list the 7-inch screen as the main drawback, and both point to the device shelf for a larger tablet.</li>
+            <li><strong>The deck is comfortable.</strong> OutdoorGearLab lists a comfortable deck among its pros, and TreadmillReviews.com describes the cushioning as among the softest of entry-level treadmills.</li>
+            <li><strong>The 300 lb rating is generous for its size.</strong> Both reviews note it, and it is higher than several compact treadmills of the same era.</li>
+          </ul>
+          <p>
+            Single-source points, for what they are worth: TreadmillReviews.com found the incline motor loud and
+            its transitions rough, and OutdoorGearLab found assembly slow and noted there is no fan. None of these
+            is a reason to rule a machine out, but each is something to check on a used unit.
+          </p>
+          <p>
+            Safety record: we searched the US Consumer Product Safety Commission's recall listings on 14 October
+            2026 and found no recall of the EXP 7i or any NordicTrack treadmill. iFIT's recent NordicTrack
+            recalls covered a rowing machine and adjustable dumbbells.
+          </p>
+        </div>
+
+        <div id="buying-used" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Buying a Used EXP 7i: What to Check</h2>
+<p>
+            Most people looking for an EXP 7i in 2026 are looking at a used one. A compact treadmill a few years
+            old can be a good buy, but only if you check the things that are expensive to fix.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Before you go</h3>
+          <ul>
+            <li><strong>Ask for the model number.</strong> NTL10423 is the US EXP 7i. Ask for a photo of the label on the frame.</li>
+            <li><strong>Ask about use and storage.</strong> Who used it, how often, walking or running, and where it was kept. A cold garage or a damp basement is hard on electronics and belts.</li>
+            <li><strong>Ask whether the iFIT account can be removed.</strong> The seller should be able to sign out of their account so the console can be set up fresh.</li>
+          </ul>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">On the machine</h3>
+          <ul>
+            <li><strong>Run it through the full range.</strong> Walk at low speed, jog at 5 to 6 mph, and run the incline from 0 to 12% and back. Listen for grinding, clicking or a motor that labours.</li>
+            <li><strong>Check the belt and deck.</strong> Look for fraying edges, glazing or a belt that slips when you plant a foot. Lift the belt edge and feel the deck for wear.</li>
+            <li><strong>Check the screen.</strong> Make sure it boots, responds to touch and connects to Wi-Fi.</li>
+            <li><strong>Fold it and lower it.</strong> The EasyLift assist should hold the deck up and let it down under control.</li>
+            <li><strong>Check the safety key and stop.</strong> The machine should stop promptly when the key is pulled.</li>
+          </ul>
+          <p>
+            Our <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a>
+            runs through the full inspection, and <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium">new vs used treadmill</a>
+            sets out when used is worth it.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Warranty and parts</h3>
+          <p>
+            Many treadmill warranties apply only to the original purchaser. Ask NordicTrack, with the serial
+            number, whether any cover remains and whether it transfers; assume it does not until told otherwise.
+            For a machine no longer in the range, parts availability tends to narrow over time, and the console
+            is the part most likely to be hard to replace. Belts and lubricant are standard; a control board or
+            screen is not. Our <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">treadmill lifespan guide</a>
+            and <a href="/treadmill-repair-guide/" class="text-[#0F62FE] font-medium">repair guide</a>
+            cover what tends to fail and what it costs.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What it is worth</h3>
+          <p>
+            We do not publish a used price, because condition and local supply decide it. What we can give is
+            the comparison: on 14 October 2026 the current retail-only T Series 8 was $999 new at Abt, with a
+            longer belt, 12 mph, a 325 lb rating and a fresh warranty, and the T Series 10 was $1,299 at
+            P.C. Richard. A used EXP 7i is worth buying only at a price that leaves a clear margin under those,
+            enough to cover a belt, a technician's visit or a year without warranty. Our guide to
+            <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">treadmills for sale</a>
+            explains how new, open-box and used prices compare once delivery and warranty are priced in, and
+            <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">how to move a treadmill</a>
+            covers collecting one.
+          </p>
+        </div>
+
+        <div id="current-equivalents" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. What Replaces the EXP 7i Now</h2>
+<p>
+            NordicTrack's current range does not have an exact successor with a 55-inch belt and a 7-inch
+            touchscreen. The nearest machines are in the T Series, and they are a step up in deck and speed.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">T Series 8: the closest in price and idea</h3>
+          <p>
+            Sold through retailers rather than on NordicTrack's site, the T Series 8 pairs an LCD console and a
+            device shelf with the T Series deck: 0 to 12 mph and 0 to 12% on NordicTrack's sheet, a 325 lb rating
+            and, on retailer listings, a 20 by 60-inch belt. That is five more inches of belt, two more mph and
+            25 lb more rating than the EXP 7i, for $999 new at the retailer we checked. It gives up the
+            touchscreen, which on the EXP 7i was small anyway.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">T Series 10: the touchscreen replacement</h3>
+          <p>
+            The T Series 10 is the entry model on NordicTrack's own site: a 10-inch tilting touchscreen, a 20 by
+            60-inch belt, 12 mph, 0 to 12% and 325 lb, with a 3.0 CHP rating and an 8.3-inch step-up. It costs
+            more, at $1,299 at P.C. Richard and $1,599.99 at NordicTrack when we checked, and it takes more floor
+            at 75.1 by 34.3 inches. Our
+            <a href="/nordictrack-t-series-treadmill/" class="text-[#0F62FE] font-medium">T Series review</a>
+            covers the 8, 10 and 16 in detail.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Smaller and cheaper</h3>
+          <p>
+            If floor space was the reason you wanted an EXP 7i, the retail-only T Series 5 is NordicTrack's
+            smallest current machine, though its 10 mph and 10% incline are a step down; our T Series review
+            notes what we could and could not confirm about it. ProForm's Carbon TLS, in our
+            <a href="/best-proform-treadmills/" class="text-[#0F62FE] font-medium">ProForm roundup</a>,
+            offers 12% incline on an 18 by 55-inch belt. And if you only walk, a walking pad may be all you need;
+            our <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad vs treadmill</a>
+            guide sets out the trade.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">If you will run</h3>
+          <p>
+            None of the above is a running treadmill in the full sense. The
+            <a href="/nordictrack-commercial-1250-treadmill/" class="text-[#0F62FE] font-medium">Commercial 1250</a>
+            is NordicTrack's cheapest machine with a 22-inch belt, decline and a 400 lb rating.
+          </p>
+        </div>
+
+        <div id="ownership" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Owning One: Maintenance and Common Faults</h2>
+<p>
+            An older compact treadmill rewards basic care more than a new one, because nothing is under
+            warranty. Lubricate the deck on the manual's schedule with the lubricant it specifies; a dry deck
+            loads a 2.6 CHP motor harder than it needs. Keep the belt tensioned and centred. Our
+            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a>
+            and <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance schedule</a>
+            cover the routine.
+          </p>
+          <p>
+            Console freezes and update problems are the faults NordicTrack owners most often search for, and
+            many clear with a restart; our
+            <a href="/how-to-reset-nordictrack-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack reset guide</a>
+            goes through the sequence. Before servicing anything, unplug the machine and remove the safety key.
+            If you notice a burning smell, a belt that will not stop, sparking or a tripping breaker, stop using
+            it; our <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a>
+            covers when a fault needs a technician.
+          </p>
+        </div>
+
+        <div id="who-should-buy" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Who Should Buy an EXP 7i Now</h2>
+<p>
+            <strong>Buy a used EXP 7i if you mainly walk or incline-walk, have limited floor space, and find one
+            at a price well below a new T Series 8</strong> that passes the checks above. It is a capable
+            compact walking machine.
+          </p>
+          <p>
+            <strong>Do not buy one to run on regularly.</strong> The 55-inch belt and 10 mph ceiling are the
+            limits that matter, and no price makes them go away.
+          </p>
+          <p>
+            <strong>Do not pay near its old list price for a "new" one</strong> without confirming the warranty
+            terms in writing. At that money, a current T Series model with a fresh warranty is the better buy.
+          </p>
+          <p>
+            <strong>If you want iFIT on a touchscreen,</strong> the T Series 10 is the current machine to look at;
+            if you are happy with your own tablet, the T Series 8 is closer to the EXP 7i's price.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is the NordicTrack EXP 7i discontinued?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                It is no longer in NordicTrack’s treadmill range: on 14 October 2026 NordicTrack’s US treadmill category listed seven models and not the EXP 7i. An old product page still loads on nordictrack.com with a price, but its price record had not changed since 2024 and the Canadian page showed it out of stock. Call NordicTrack before relying on that page.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What are the NordicTrack EXP 7i specs?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                NordicTrack lists a 20 x 55-inch belt, a 2.6 CHP motor, 0-10 mph, 0-12% incline with no decline, a 300 lb maximum user weight and a 7-inch tilting touchscreen, with a 70.8 x 34.9 x 59.7-inch footprint. Two independent reviews agree. One other source gives 3.0 CHP and 12 mph, which we treat as an error.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Can you run on a NordicTrack EXP 7i?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                You can jog on it, but it is not built for regular running. The 55-inch belt is shorter than most guidance recommends for adult runners, and the top speed is 10 mph. For running, NordicTrack’s Commercial series is the better fit.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What replaced the NordicTrack EXP 7i?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                There is no exact successor. The closest current models are the retail-only T Series 8, with an LCD and device shelf on a 60-inch belt, and the T Series 10, with a 10-inch touchscreen, both sold new with a 325 lb rating and 12 mph.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is a used NordicTrack EXP 7i worth buying?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                It can be, for a walker, if the price leaves a clear margin under a new T Series 8 and the unit passes an inspection of the belt, deck, motor, incline and screen. Assume no warranty transfers to you unless NordicTrack confirms otherwise.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With the EXP 7i</h2>
+          <p class="text-gray-700 leading-relaxed">Most regrets with this machine come from treating an older compact walker as a current running treadmill.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying it to run on</h3>
+              <p class="text-gray-700 text-sm m-0">A 55-inch belt and a 10 mph ceiling suit walking and jogging. If you plan to run several times a week, a longer deck is worth the extra money.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming the warranty comes with it</h3>
+              <p class="text-gray-700 text-sm m-0">Many treadmill warranties cover only the original buyer, and on an older machine most terms will have expired. Ask NordicTrack with the serial number before paying.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Paying near list price for an old unit</h3>
+              <p class="text-gray-700 text-sm m-0">A new-in-box EXP 7i at close to its old price competes with current models that have longer decks, more speed and a fresh warranty. Compare before buying.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Skipping the inspection</h3>
+              <p class="text-gray-700 text-sm m-0">Belts, decks, incline motors and consoles are the expensive parts. Run the machine through its full speed and incline range, and check the screen boots and connects, before handing over money.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Reviews &amp; Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/nordictrack-t-series-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Review</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">NordicTrack T Series Review</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The current T Series 10 and 16, and the retail-only T Series 8 and 5.</p>
+            </a>
+            <a href="/used-treadmill-buying-checklist/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Checklist</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Used Treadmill Buying Checklist</p>
+              <p class="text-sm text-gray-500 leading-relaxed">What to inspect, test and ask before you pay for a second-hand machine.</p>
+            </a>
+            <a href="/best-nordictrack-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Roundup</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best NordicTrack Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The whole current range ranked, with older models to skip.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">The NordicTrack EXP 7i is an older compact walking treadmill, no longer
+            in NordicTrack's range.</strong> Its 20 by 55-inch belt, 2.6 CHP motor, 12% incline, 10 mph and
+            300 lb rating suit walkers and joggers, and its 7-inch screen is small. Buy one used only at a price
+            well under a new T Series 8, and only after a proper inspection.
+          </p>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            If you want a new machine, the
+            <a href="/nordictrack-t-series-treadmill/" class="text-[#5AA9FF] font-bold no-underline">NordicTrack T Series</a>
+            is the current equivalent, with a longer deck, more speed and a fresh warranty.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+</Layout>

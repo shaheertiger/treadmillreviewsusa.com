@@ -206,7 +206,7 @@ export default {
             repaired rather than replaced. A well-refurbished commercial machine can outlast a new
             home machine at the same price. Our
             <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial treadmills guide</a>
-            explains what the label actually guarantees.
+            explains what the label actually guarantees. Commercial names you will meet here include <a href="/star-trac-treadmills/" class="text-[#0F62FE] font-medium">Star Trac</a> and the <a href="/matrix-t5x-treadmill/" class="text-[#0F62FE] font-medium">Matrix T5x</a>.
           </p>
           <p>
             Four things to check before buying one for a home.

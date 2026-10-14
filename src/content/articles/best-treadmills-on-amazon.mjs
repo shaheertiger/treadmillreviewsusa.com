@@ -343,6 +343,7 @@ export default {
     {
       id: 'horizon-7-0-at',
       name: 'Horizon 7.0 AT',
+      reviewUrl: '/horizon-7-0-at-treadmill/',
       category: 'Best Treadmill on Amazon for Running',
       badge: 'Best for Running',
       amazonUrl: 'https://www.amazon.com/s?k=Horizon+Fitness+7.0+AT+Treadmill&tag=sktiger-20',
@@ -367,6 +368,7 @@ export default {
     {
       id: 'nordictrack-t-series-5',
       name: 'NordicTrack T Series 5',
+      reviewUrl: '/nordictrack-t-series-treadmill/',
       category: 'Best Budget Full-Size Treadmill on Amazon',
       badge: 'Best Value',
       amazonUrl: 'https://www.amazon.com/s?k=NordicTrack+T+Series+5+Treadmill&tag=sktiger-20',

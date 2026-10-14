@@ -100,7 +100,7 @@ export default {
             find it again — taped inside a sealed bag to the console is better than a pocket. If
             the power cord is detachable at the machine, remove it and pack it with the key. If it
             is fixed, coil it and tie it off against the frame so it cannot drag under a wheel or
-            catch on a stair tread.
+            catch on a stair tread. If it needs boxing for storage or shipping, see <a href="/how-to-pack-a-treadmill/" class="text-[#0F62FE] font-medium">how to pack a treadmill</a>.
           </p>
           <p>
             <strong>Lower the incline to zero before you unplug.</strong> If the machine has power

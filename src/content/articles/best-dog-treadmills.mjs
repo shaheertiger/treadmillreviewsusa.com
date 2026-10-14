@@ -126,7 +126,7 @@ export default {
             Belt length is the single most important specification on a dog treadmill, and it is
             measured against the dog's body rather than its weight. A dog at a trot or run reaches
             forward with its front legs and extends behind with its back legs, and it needs the
-            whole of that stride on the belt with room to spare.
+            whole of that stride on the belt with room to spare. Owners of large and giant breeds should start with the <a href="/best-dog-treadmills-for-large-dogs/" class="text-[#0F62FE] font-medium">best dog treadmills for large dogs</a>.
           </p>
           <p>
             <strong>Measure your dog.</strong> Stand the dog square and measure from the tip of the

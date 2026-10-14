@@ -69,6 +69,7 @@ export default {
     {
       id: 'nordictrack-commercial-1250',
       name: 'NordicTrack Commercial 1250',
+      reviewUrl: '/nordictrack-commercial-1250-treadmill/',
       category: 'Cheapest Commercial-series model',
       badge: 'Best Value',
       amazonUrl: 'https://www.amazon.com/s?k=NordicTrack+Commercial+1250+Treadmill&tag=sktiger-20',
@@ -93,6 +94,7 @@ export default {
     {
       id: 'nordictrack-t-series-10',
       name: 'NordicTrack T Series 10',
+      reviewUrl: '/nordictrack-t-series-treadmill/',
       category: 'Best budget NordicTrack',
       badge: 'Best Budget',
       amazonUrl: 'https://www.amazon.com/s?k=NordicTrack+T+Series+10+Treadmill&tag=sktiger-20',
@@ -117,6 +119,7 @@ export default {
     {
       id: 'nordictrack-t-series-16',
       name: 'NordicTrack T Series 16',
+      reviewUrl: '/nordictrack-t-series-treadmill/',
       category: 'Biggest screen for the least money',
       badge: 'Best Big Screen',
       amazonUrl: 'https://www.amazon.com/s?k=NordicTrack+T+Series+16+Treadmill&tag=sktiger-20',

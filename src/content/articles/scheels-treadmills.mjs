@@ -93,7 +93,7 @@ export default {
       html: `          <p>
             On 14 October 2026, the treadmill listings we found on scheels.com came from five
             brands. The range changes through the year and not every model is in every store, so
-            treat this as a snapshot.
+            treat this as a snapshot. Landice is covered in our <a href="/landice-treadmills/" class="text-[#0F62FE] font-medium">Landice treadmills</a> guide.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead>

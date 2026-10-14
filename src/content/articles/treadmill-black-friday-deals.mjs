@@ -96,7 +96,7 @@ export default {
       html: `          <p>
             The only comparison that matters is between the price you can pay now and the price you
             could have paid recently. Everything on a deal page — the strikethrough, the percentage,
-            the "you save" figure — is calculated from something else.
+            the "you save" figure — is calculated from something else. Our <a href="/horizon-7-0-at-treadmill/" class="text-[#0F62FE] font-medium">Horizon 7.0 AT review</a> works through a real reference-versus-sale-price example.
           </p>
           <p>
             <strong>Use price history, not the reference price.</strong> If you did not record a

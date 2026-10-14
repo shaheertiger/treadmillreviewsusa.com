@@ -313,7 +313,7 @@ export default {
       html: `          <p>
             "Treadmill repair near me" returns a mix of manufacturer service networks, independent
             fitness-equipment technicians, general appliance repairers and the occasional handyman.
-            They are not equivalent.
+            They are not equivalent. Our guide to <a href="/treadmill-repair-near-me/" class="text-[#0F62FE] font-medium">finding treadmill repair near you</a> goes through the routes in detail.
           </p>
           <p>
             <strong>Manufacturer-authorised service.</strong> The brand's support line will either

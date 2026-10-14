@@ -313,6 +313,7 @@ export default {
     {
       id: 'horizon-7-0-at',
       name: 'Horizon 7.0 AT',
+      reviewUrl: '/horizon-7-0-at-treadmill/',
       category: 'Best Overall Treadmill for Zwift',
       badge: 'Best Overall',
       amazonUrl: 'https://www.amazon.com/s?k=Horizon+7.0+AT+Treadmill&tag=sktiger-20',

@@ -1,0 +1,756 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "LifeSpan Treadmill Guide (2026): Desk Treadmills, Pads and Folding Models";
+const description =
+  "LifeSpan Fitness makes under-desk treadmills and treadmill desks, and used to sell folding treadmills. What it sells now, the confirmed figures, warranty, service record and what to buy.";
+
+const PRODUCTS = [
+  {
+    id: "lifespan-tx6-glowup",
+    name: "LifeSpan TX6-GlowUp",
+    category: "Heavy-Duty Under-Desk Treadmill",
+    badge: "In Stock on LifeSpan",
+    amazonUrl: "https://www.amazon.com/s?k=LifeSpan+TX6+GlowUp+Under+Desk+Treadmill&tag=sktiger-20",
+    reviewUrl: null,
+    priceRange: "$1,300–$1,500",
+    specs: "20 x 48 in. belt · 400 lb capacity · 0.4–6.0 mph · no incline · does not fold",
+    pros: [
+      "A 20 by 48-inch belt, as wide as many full treadmills and longer than most walking pads",
+      "A 400 lb maximum user weight, confirmed by LifeSpan and independent spec coverage",
+      "A 0.7-inch phenolic deck, aluminium side rails and a stated seven hours of daily use",
+      "Warranty of 10 years on the frame, two on parts and one on labour",
+    ],
+    cons: [
+      "Expensive next to folding pads, and at 98.5 lb heavy to move",
+      "Only a 4.5 HP peak motor figure is published, and step-up height is given as 4.6, 5 and 5.8 inches",
+      "Top speed drops to 4 mph when paired with LifeSpan’s desk console, and owner reports on service are mixed",
+    ],
+    bottomLine: "The LifeSpan to buy for long daily desk walking, heavier users or tall walkers who want a wide belt and a long frame warranty.",
+    description: "The TX6-GlowUp is LifeSpan’s heavy-duty under-desk treadmill and the only one of its current pads that was in stock on its US store on 14 October 2026, at $1,499 with delivery quoted at five to seven business days. LifeSpan lists a 20 by 48-inch belt on a 0.7-inch phenolic deck, a 400 lb maximum user weight, a speed range of 0.4 to 6.0 mph, six compression shocks, aluminium side rails, a self-lubricating belt, a unit weight of 98.5 lb and a recommended limit of seven hours a day; independent spec coverage agrees on the belt, capacity and speed. It works with a remote and its own display, or with LifeSpan’s Omni-Hub desk console, which limits it to 4 mph. It has no incline and does not fold. LifeSpan’s page now gives a 5.8-inch step-up height, while other sources give 4.6 or 5 inches, so measure your desk range against the higher figure. The warranty is 10 years on the frame, two years on parts and one on labour. Our roundups for heavy and tall walkers both list it for the same reasons.",
+  },
+  {
+    id: "lifespan-tr1200pro-glowup",
+    name: "LifeSpan TR1200Pro-GlowUp",
+    category: "Office Under-Desk Treadmill",
+    badge: "Pre-Order",
+    amazonUrl: "https://www.amazon.com/s?k=LifeSpan+TR1200+GlowUp+Under+Desk+Treadmill&tag=sktiger-20",
+    reviewUrl: null,
+    priceRange: "$1,100–$1,300",
+    specs: "20 x 48 in. belt · 0.4–4.0 mph · 4.6 in. step-up height · does not fold",
+    pros: [
+      "The same 20 by 48-inch belt as the TX6, at a lower price",
+      "A low 4.6-inch step-up height at the belt, which helps under a standing desk",
+      "A speed cap that can be set at 2 mph for shared office use",
+      "Warranty of 10 years on the frame, two on parts and one on labour",
+    ],
+    cons: [
+      "Capacity is disputed: LifeSpan says 330 lb, an Amazon listing 400 lb",
+      "LifeSpan’s own page gives two different motor descriptions",
+      "On pre-order on LifeSpan’s store, with shipping from 20 October 2026",
+    ],
+    bottomLine: "LifeSpan’s long-running office treadmill, for desk walkers at a steady pace who want a full-width belt and do not need the TX6’s higher capacity.",
+    description: "The TR1200 is the model that made LifeSpan’s name, and the current Pro Glow-Up version is its mid-priced desk treadmill. LifeSpan lists a 20 by 48-inch belt, a speed range of 0.4 to 4.0 mph that can be capped at 2 mph, a 4.6-inch step-up height at the belt (5.25 inches at the side rails), a unit weight of 77.6 lb and a recommended six hours a day, with 10 years on the frame, two on parts and one on labour; an independent spec tracker repeats the belt, speed and warranty. Two figures need care. LifeSpan’s page gives a 330 lb maximum user weight while an Amazon listing has claimed 400 lb, so plan on 330 lb. And the same page describes a 3.5 HP peak brushless motor in one place and a 3.0 HP continuous-duty motor in another, so we give neither. On 14 October 2026 LifeSpan showed it at $1,099 against $1,299, on pre-order with shipping from 20 October. It is designed to be paired with the Omni-Hub desk console, which LifeSpan adds to the order.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Brands", item: "https://www.treadmillreviewsusa.com/brands/" },
+        { "@type": "ListItem", position: 3, name: "LifeSpan Treadmills", item: "https://www.treadmillreviewsusa.com/lifespan-treadmills/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Who makes LifeSpan treadmills?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "LifeSpan Fitness, an American brand long based in Salt Lake City, sells them; they are manufactured in Taiwan and China. Strength Master Fitness Tech, a Taiwanese manufacturer, presents LifeSpan products in its award listings, and one desk-treadmill review site reported in 2022 that it now owns and runs LifeSpan. We could not confirm the ownership from a primary source.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is LifeSpan the same as Lifespan Fitness Australia?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. Lifespan Fitness in Australia is a separate retailer founded in Melbourne in 2007, with its own brands and partnerships with Reebok, Adidas and WalkingPad. Its about page does not mention the American LifeSpan. Australian prices or a .com.au address mean you are looking at the Australian company.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the weight limit on LifeSpan walking pads?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The TX6-GlowUp is rated for 400 lb by LifeSpan, and independent coverage agrees. LifeSpan lists the new TR5000B Pro+ at 400 lb as well, which we could not cross-check. The TR1200Pro Glow-Up is 330 lb on LifeSpan’s page, although an Amazon listing has claimed 400 lb; plan on 330 lb.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does LifeSpan still sell folding treadmills?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Not on 14 October 2026. Every folding model on LifeSpan’s US store, from the TR1200i to the TR5500iM, was marked unavailable, as were its light-commercial and commercial treadmills. We found no statement that they are discontinued, so check the store again if you want one, and confirm parts support before buying an older model used.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What warranty do LifeSpan treadmills have?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The current under-desk treadmills carry 10 years on the frame, two years on parts and one year on labour, according to LifeSpan’s product pages. No separate motor term is listed. Extended protection plans are sold through a third-party provider. Register the treadmill and keep proof of purchase, as service reports from owners are mixed.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is a LifeSpan under-desk treadmill worth the price?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "For hours of walking every working day, often yes: a 20-inch belt, published deck and duty figures and a 10-year frame warranty are rare among walking pads. For occasional use, a good folding pad costing a fraction as much is the better buy. Weigh the mixed service reports, and confirm stock before you count on a delivery date.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", name: "Morgan Reyes" },
+      datePublished: "2026-10-14",
+      dateModified: "2026-10-14",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+    ...PRODUCTS.map((product) => ({
+      "@type": "Product",
+      name: product.name,
+      description: product.description,
+      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      offers: {
+        "@type": "AggregateOffer",
+        priceCurrency: "USD",
+        availability: "https://schema.org/InStock",
+      },
+    })),
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-10-14",
+    modifiedTime: "2026-10-14",
+    author: "Morgan Reyes",
+    section: "Fitness Equipment",
+    tags: [
+      "lifespan treadmill",
+      "lifespan treadmills",
+      "lifespan walking pad",
+      "lifespan treadmill desk",
+      "lifespan tx6 glowup",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "See the Current Models", link: "#current-models" }}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-lifespantreadmills" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-lifespantreadmills)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Brand Guide
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated October 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          LifeSpan Treadmills: <span class="text-[#5AA9FF]">What the Brand Sells Now</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          LifeSpan Fitness helped create the office treadmill desk, and its under-desk treadmills are still among the few walking pads with a full 20-inch belt and a long frame warranty. Its folding treadmills, though, were all marked unavailable on its US store when we checked. This guide covers who LifeSpan is, the current range, the figures we could confirm, its service record and which models to look at.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            The Short Answer
+          </a>
+          <a href="#current-models" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            Current Models
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
+          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">October 14, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="1.5k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">What we checked, and what we have not done.</strong> On 14 October
+          2026 we checked LifeSpan Fitness’s US store, product pages and contact page; LifeSpan’s
+          catalogue of what is in and out of stock; Strength Master Fitness Tech’s award listings in
+          Taiwan; Lifespan Fitness Australia’s own about page; independent desk-treadmill coverage;
+          and the US Consumer Product Safety Commission’s recall database, which lists no LifeSpan
+          recall. The two models with product cards repeat figures we cross-checked against LifeSpan
+          and an independent spec tracker for our walking-pad roundups, re-checked against LifeSpan’s
+          pages on this date. Where LifeSpan’s own pages, or LifeSpan and other listings, disagree, we
+          say so and leave the figure out of the card. We have not tested any LifeSpan treadmill.
+          Prices are those shown on this date and change often. We earn a commission if you buy
+          through the Amazon links on this page; it does not change what we say.
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Are LifeSpan Treadmills Any Good? The Short Answer</a>
+          <a href="#who-is-lifespan" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Who Makes LifeSpan Treadmills?</a>
+          <a href="#current-models" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Current LifeSpan Range, Model by Model</a>
+          <a href="#what-lifespan-does-well" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What LifeSpan Does Well, and Less Well</a>
+          <a href="#lifespan-vs-budget-pads" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. LifeSpan or a Budget Walking Pad?</a>
+          <a href="#warranty-returns-service" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Warranty, Returns and Getting Help</a>
+          <a href="#folding-treadmills" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. LifeSpan Folding Treadmills: What Happened?</a>
+          <a href="#desk-set-up" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Setting Up a LifeSpan Treadmill Desk</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          LifeSpan Fitness is best known for one thing: under-desk treadmills built to run for hours
+          a day in offices. It also sold folding home treadmills, bikes and standing desks, and the
+          name is easy to confuse with an unrelated Australian retailer. If you have searched for a
+          LifeSpan treadmill, you are probably choosing between one of its desk treadmills and a
+          cheaper walking pad, or you own one of its older folding models and want to know whether
+          the brand still supports it. This page answers both, using only what LifeSpan publishes and
+          what independent sources confirm.
+        </p>
+
+        <div id="short-answer" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Are LifeSpan Treadmills Any Good? The Short Answer</h2>
+<p>
+            <strong>A LifeSpan treadmill is a sound choice if you want an under-desk treadmill built
+            for long working days: its current pads have 20-inch-wide belts, published deck and
+            daily-use figures, and 10-year frame warranties that few walking pads match.</strong>
+            The cautions are price, mixed reports about customer service, and the fact that its
+            folding home treadmills were all marked unavailable on its US store on 14 October 2026.
+          </p>
+          <p>
+            Of LifeSpan’s three current under-desk treadmills, the TX6-GlowUp was the only one in
+            stock, at $1,499. The TR1200Pro Glow-Up and the new TR5000B Pro+ Glow-Up were on
+            pre-order, with shipping from 20 October 2026. Its full-set treadmill desks were sold out,
+            though bundles pairing a pad with LifeSpan’s glass standing desk were available. Its
+            folding treadmills — the TR1200i, TR2000i, TR3000i, TR4000i and TR5500iM — were all marked
+            unavailable.
+          </p>
+          <p>
+            So, for most readers: if you will walk at a desk for hours every day, a LifeSpan pad is
+            worth the premium over a budget pad, and the TX6-GlowUp is the one to look at first. If
+            you want a folding running treadmill, look elsewhere for now. Our roundups of
+            <a href="/best-walking-pads-for-heavy-people/" class="text-[#0F62FE] font-medium">walking pads for heavy people</a>
+            and
+            <a href="/best-walking-pads-for-tall-people/" class="text-[#0F62FE] font-medium">walking pads for tall people</a>
+            set the LifeSpan pads against their competitors.
+          </p>
+        </div>
+
+        <div id="who-is-lifespan" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Who Makes LifeSpan Treadmills?</h2>
+<p>
+            LifeSpan Fitness is an American brand that says it has been in the home fitness market for
+            about 25 years. It was long based in Salt Lake City, Utah: Metropolis magazine interviewed
+            its then president, Peter Schenk, at the company’s headquarters there. Its
+            current contact page gives a support phone line and email address with Pacific-time hours,
+            and says email is the preferred route.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The Taiwanese manufacturer</h3>
+          <p>
+            The machines are made in Taiwan and China. Strength Master Fitness Tech, a Taiwanese
+            manufacturer, presents LifeSpan products in its Taiwan Excellence award listings and
+            cites LifeSpan’s reputation in the US. A long-running desk-treadmill review site reported
+            in 2022 that LifeSpan had never been the factory itself, that Strength Master had long
+            made its products, and that LifeSpan was by then wholly owned and run by that former
+            manufacturing partner after its founding management left around 2019. We could not
+            confirm the ownership from a primary record, so we give it as that site’s account. It
+            matters mainly because the same account links the change to the service complaints
+            discussed below.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Not the Australian Lifespan Fitness</h3>
+          <p>
+            Lifespan Fitness in Australia is a different company. Its own about page describes it as a
+            Melbourne business founded in 2007, with showrooms in Victoria and New South Wales, its
+            own CORTEX and Regen8 brands, and product partnerships with Reebok, Adidas and WalkingPad.
+            It does not mention the American LifeSpan. If your search turns up Australian prices, an
+            Australian retailer selling Reebok treadmills, or a .com.au address, that is the other
+            company — our
+            <a href="/reebok-fr20z-floatride-treadmill/" class="text-[#0F62FE] font-medium">Reebok FR20z review</a>
+            mentions it as one of the FR20z’s stockists.
+          </p>
+        </div>
+
+        <div id="current-models" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The Current LifeSpan Range, Model by Model</h2>
+<p>
+            This is what LifeSpan’s US store listed on 14 October 2026. Prices are those shown that
+            day; LifeSpan runs frequent sales, so the list price and the price you pay often differ.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Model</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Type</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Price shown</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TX6-GlowUp</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Under-desk treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,499</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">In stock</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR1200Pro Glow-Up</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Under-desk treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,099 (list $1,299)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Pre-order</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR5000B Pro+ Glow-Up</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Under-desk treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,699 (list $1,899)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Pre-order</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Pad and desk bundles</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Pad plus SDG glass standing desk</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">From $2,039</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Two of three available</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR1000, TR1200 and TR5000 desks</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Full-set treadmill desks</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">—</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sold out</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR1200i to TR5500iM</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Folding home treadmills</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">—</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Unavailable</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR6000i, TR7000iM</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Light-commercial and commercial</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">—</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Unavailable</td></tr>
+            </tbody>
+          </table></div>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The TR5000B Pro+ Glow-Up</h3>
+          <p>
+            LifeSpan’s premium desk treadmill had just been relisted when we checked, and we found no
+            independent coverage of this version, so it has no card here. LifeSpan’s listing claims a
+            20 by 48.4-inch belt, a 5.0 HP peak brushless motor, 0.4 to 4.0 mph, a 400 lb maximum
+            user weight, a 4.6-inch step-up height, 84 lb of machine and a recommended nine hours a
+            day, with the same 10-year frame, two-year parts and one-year labour warranty. Those are
+            listing claims until someone else confirms them. On paper it sits between the TR1200 and
+            the TX6: the TX6’s capacity and the TR1200’s low profile, at a 4 mph ceiling.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Which one?</h3>
+          <p>
+            The two cards below are the models whose figures we could confirm. The TX6-GlowUp is the
+            more capable pad — higher capacity, 6 mph, a heavier frame — and the one you could
+            actually receive this month. The TR1200Pro Glow-Up is lower and cheaper and suits a
+            steady desk pace, but its capacity is disputed, so heavier users should choose the TX6.
+            Both use a 20 by 48-inch belt, which is the main reason to buy a LifeSpan over a
+            budget folding pad.
+          </p>
+        </div>
+      </div>
+
+      <!-- Product cards -->
+      <div class="not-prose">
+        {
+          PRODUCTS.map((product, index) => (
+            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
+              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
+                  <div>
+                    <p class="text-white font-black text-xl leading-tight">
+                      {index + 1}. {product.name}
+                    </p>
+                    <p class="text-gray-400 text-xs">{product.category}</p>
+                  </div>
+                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                    {product.badge}
+                  </span>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center gap-2 mb-4 flex-wrap">
+                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
+                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
+                  </div>
+                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
+                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
+                      <p class="text-xs font-black uppercase tracking-widest text-green-700 mb-2">What Works</p>
+                      <ul class="space-y-2">
+                        {product.pros.map((pro) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+                      <p class="text-xs font-black uppercase tracking-widest text-red-700 mb-2">What Doesn't</p>
+                      <ul class="space-y-2">
+                        {product.cons.map((con) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="border-t border-gray-100 pt-4">
+                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
+                    <div class="flex flex-wrap items-center gap-3">
+                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+                        Check Price on Amazon &rarr;
+                      </a>
+                      {product.reviewUrl && (
+                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
+                          Read our full {product.name} review &rarr;
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="what-lifespan-does-well" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What LifeSpan Does Well, and Less Well</h2>
+<h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Does well</h3>
+          <ul class="list-disc pl-6 space-y-2">
+            <li><strong>Belt width.</strong> Every current LifeSpan pad has a 20-inch belt. Many
+            walking pads are 16 to 17.5 inches wide. On a desk treadmill, where you are looking at a
+            screen rather than your feet, those extra inches are a real margin.</li>
+            <li><strong>Published duty figures.</strong> LifeSpan states a recommended number of hours
+            a day for each pad — six, seven and nine — and publishes the deck material and thickness.
+            Most pad makers publish neither. Our
+            <a href="/what-happens-if-you-exceed-treadmill-weight-limit/" class="text-[#0F62FE] font-medium">guide to exceeding a weight limit</a>
+            explains why deck and duty figures matter as much as the headline capacity.</li>
+            <li><strong>Frame warranties.</strong> Ten years on the frame is unusual in the category,
+            where one-year cover on everything is common.</li>
+            <li><strong>Desk integration.</strong> The Omni-Hub console puts controls and a step
+            count on the desktop, and the low step-up heights help a standing desk reach the right
+            height.</li>
+          </ul>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Does less well</h3>
+          <ul class="list-disc pl-6 space-y-2">
+            <li><strong>Price.</strong> A LifeSpan pad costs two to five times as much as a capable
+            folding pad. That premium buys build and width, not features.</li>
+            <li><strong>Consistency of its own figures.</strong> LifeSpan’s pages disagree with each
+            other on the TR1200Pro’s motor and with other listings on its capacity, and the TX6’s
+            step-up height has been given three ways. Confirm the figure you care about before
+            ordering.</li>
+            <li><strong>Service reports.</strong> An independent spec tracker and a desk-treadmill
+            review site both record mixed experiences with LifeSpan’s customer service, and the latter
+            reported in 2022 that warranty claims and phone support had become hard to get. We cannot
+            measure service ourselves; the pattern appears in more than one place, so we pass it on.</li>
+            <li><strong>Stock.</strong> Much of the range was sold out or on pre-order when we
+            checked. Do not plan around a delivery date until the order confirms one.</li>
+          </ul>
+        </div>
+
+        <div id="lifespan-vs-budget-pads" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. LifeSpan or a Budget Walking Pad?</h2>
+<p>
+            The question most LifeSpan shoppers are really asking is whether a $1,100 to $1,500 desk
+            treadmill is worth it when folding walking pads sell for a few hundred dollars. The
+            answer depends almost entirely on how many hours a week the belt will turn.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What the premium buys</h3>
+          <p>
+            Set the TX6-GlowUp against the budget pads in our
+            <a href="/best-treadmills-under-300/" class="text-[#0F62FE] font-medium">under-$300 roundup</a>
+            and the differences are structural rather than cosmetic: a belt three or four inches wider
+            and several inches longer, a deck whose material and thickness are published, a machine
+            roughly twice as heavy, a stated daily-use limit of seven hours, and a frame warranty
+            measured in a decade rather than a year. None of that makes the walk feel dramatically
+            different on day one. It is about what happens after a year of daily use, which is where
+            budget pads tend to show their limits — a belt that drifts, a motor that labours under a
+            heavier user, a remote that cannot be replaced.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What it does not buy</h3>
+          <p>
+            It does not buy features. The LifeSpan pads have no incline, do not fold and are not built
+            for running; a cheaper pad may offer an incline, a fold-in-half frame or a jogging speed
+            the LifeSpan lacks. If you want incline, our
+            <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">walking pads with incline</a>
+            are a different category. And it does not guarantee good service, which is the weak point
+            in LifeSpan’s record.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">A simple way to decide</h3>
+          <p>
+            Divide the price by the hours you realistically expect to walk over three years. A pad
+            used for two hours every working day clocks up roughly 1,500 hours in three years, and at
+            that rate a $1,499 LifeSpan costs about a dollar an hour of walking — arithmetic, not a
+            prediction of its life. A pad used twice a week for half an hour barely reaches 150
+            hours, and a budget pad is the obvious choice. Our page asking
+            <a href="/are-walking-pads-worth-it/" class="text-[#0F62FE] font-medium">whether walking pads are worth it</a>
+            works through the same sum.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Buying a used LifeSpan</h3>
+          <p>
+            Office refurbishments put a steady trickle of used LifeSpan desk treadmills onto resale
+            sites. Warranties generally follow the original buyer, so assume none. Ask for the model
+            and serial number, see it run at its top speed for ten minutes, check that the console
+            works and that the belt runs centrally, and price it well below new. LifeSpan’s own
+            listing notes that treadmills bought during or before 2012 are not compatible with its
+            current DT3 consoles, so on an older unit make sure the console it comes with works,
+            because a replacement may not fit and a missing console can leave the treadmill without
+            any practical way to set its speed. Our
+            <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a>
+            covers the rest.
+          </p>
+        </div>
+
+        <div id="warranty-returns-service" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Warranty, Returns and Getting Help</h2>
+<p>
+            LifeSpan’s current under-desk treadmills carry the same published warranty: 10 years on
+            the frame, two years on parts and one year on labour. None of the product pages lists a
+            separate motor term, so treat the motor as a part under the two-year cover unless the
+            warranty document you receive says otherwise. Extended protection plans are sold
+            alongside, through a third-party provider.
+          </p>
+          <p>
+            The TX6-GlowUp page displayed a 30-day return banner when we checked. Before you buy, read
+            LifeSpan’s full return policy for who pays return freight on a 100 lb treadmill and
+            whether a restocking fee applies, because those two lines decide what a return really
+            costs. Our guide to
+            <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies</a>
+            lists the questions to ask.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Support and parts</h3>
+          <p>
+            LifeSpan’s contact page gives a phone line, an email address and weekday hours on Pacific
+            time, and says email is the preferred route, with replies in one to three business days.
+            It runs a help centre, an owner’s-manual page, product registration and a separate parts
+            store. Register the treadmill when it arrives and keep the order confirmation: in any
+            warranty dispute, proof of purchase and a registered serial number are what count.
+          </p>
+          <p>
+            On 14 October 2026 LifeSpan’s own store listed its silicone belt lubricant as available,
+            while several replacement safety keys and a power cord were out of stock. Older folding
+            models may be harder to support than the desk range. Check the manual for your model
+            before lubricating: some LifeSpan belts are described as self-lubricating. Our guide to
+            <a href="/how-to-lubricate-a-walking-pad/" class="text-[#0F62FE] font-medium">lubricating a walking pad</a>
+            covers the method.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Subscriptions and apps</h3>
+          <p>
+            LifeSpan does not tie its treadmills to a workout subscription. The pads run from a
+            remote, their own display or the Omni-Hub console, and LifeSpan offers a LifeSpan Fit app
+            that, by its own description, now syncs with Strava. Nothing about using the treadmill
+            depends on the app.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Safety</h3>
+          <p>
+            We searched the Consumer Product Safety Commission’s recall database on 14 October 2026
+            and found no recall or warning for any LifeSpan product. LifeSpan’s TX6 page specifies a
+            115-volt, non-GFCI circuit; plug a treadmill straight into a wall socket, not a power
+            strip.
+          </p>
+        </div>
+
+        <div id="folding-treadmills" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. LifeSpan Folding Treadmills: What Happened?</h2>
+<p>
+            LifeSpan sold a range of folding home treadmills — the TR1200i, TR2000i, TR3000i, TR4000i
+            and TR5500iM — and above them a TR6000i light-commercial and TR7000iM commercial machine.
+            All of them were marked unavailable on its US store on 14 October 2026. We found no
+            statement that they have been discontinued, so the honest description is out of stock
+            with no date given.
+          </p>
+          <p>
+            LifeSpan’s listing for the TR5500iM, its top folding model, describes a 4.0 HP
+            continuous-duty DC motor, a 10-inch touchscreen that can mirror video, speeds to 13.5 mph
+            and 13 incline levels. That is LifeSpan’s description; we could not cross-check it, and
+            with the machine unavailable we have not tried to.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">If you own one</h3>
+          <p>
+            A LifeSpan folding treadmill that runs well is worth maintaining: belts, drive belts and
+            lubricant are generic enough to source, and a technician can usually fit them. For
+            electronics, contact LifeSpan’s support and parts store with the model and serial number
+            before ordering anything elsewhere. Our
+            <a href="/treadmill-repair-guide/" class="text-[#0F62FE] font-medium">treadmill repair guide</a>
+            covers when a repair is worth it.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">If you wanted one</h3>
+          <p>
+            For a folding running treadmill available now, our
+            <a href="/best-folding-treadmills/" class="text-[#0F62FE] font-medium">folding treadmill picks</a>
+            list machines we could confirm as in stock, and our
+            <a href="/walking-pad-vs-folding-treadmill/" class="text-[#0F62FE] font-medium">walking pad versus folding treadmill</a>
+            comparison helps if you are torn between a LifeSpan desk pad and a full machine.
+          </p>
+        </div>
+
+        <div id="desk-set-up" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Setting Up a LifeSpan Treadmill Desk</h2>
+<p>
+            LifeSpan’s full-set treadmill desks were sold out when we checked, and our roundup of the
+            <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium">best treadmill desks</a>
+            covers the integrated and build-your-own alternatives. If you buy a LifeSpan pad on its own
+            or in a bundle, three checks decide whether it works at your desk.
+          </p>
+          <ul class="list-disc pl-6 space-y-2">
+            <li><strong>Desk height.</strong> A pad lifts you by its step-up height. With LifeSpan’s
+            figures between 4.6 and 5.8 inches, a tall user may need a desk that rises well above
+            the common 48-inch maximum. Our guide to
+            <a href="/standing-desk-height-for-walking-pad/" class="text-[#0F62FE] font-medium">standing desk height for a walking pad</a>
+            gives the formula.</li>
+            <li><strong>Desk depth and legs.</strong> At about 60 inches long and 28 wide, a LifeSpan
+            pad needs room between the desk legs and behind you. Measure before you order.</li>
+            <li><strong>Console cable.</strong> LifeSpan says the Omni-Hub console needs a wired
+            connection to the treadmill, so plan the cable route along a desk leg rather than across
+            the floor.</li>
+          </ul>
+          <p>
+            Expect to walk slowly. LifeSpan’s desk pads top out at 4 mph with the console, and as a
+            rule of thumb many desk walkers settle somewhere around 1.5 to 2.5 mph while typing. Our guide to
+            <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmills</a>
+            covers the habit side, and our page on
+            <a href="/how-long-do-walking-pads-last/" class="text-[#0F62FE] font-medium">how long walking pads last</a>
+            explains why daily-use ratings like LifeSpan’s matter.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Who makes LifeSpan treadmills?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                LifeSpan Fitness, an American brand long based in Salt Lake City, sells them; they are manufactured in Taiwan and China. Strength Master Fitness Tech, a Taiwanese manufacturer, presents LifeSpan products in its award listings, and one desk-treadmill review site reported in 2022 that it now owns and runs LifeSpan. We could not confirm the ownership from a primary source.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is LifeSpan the same as Lifespan Fitness Australia?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                No. Lifespan Fitness in Australia is a separate retailer founded in Melbourne in 2007, with its own brands and partnerships with Reebok, Adidas and WalkingPad. Its about page does not mention the American LifeSpan. Australian prices or a .com.au address mean you are looking at the Australian company.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What is the weight limit on LifeSpan walking pads?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                The TX6-GlowUp is rated for 400 lb by LifeSpan, and independent coverage agrees. LifeSpan lists the new TR5000B Pro+ at 400 lb as well, which we could not cross-check. The TR1200Pro Glow-Up is 330 lb on LifeSpan’s page, although an Amazon listing has claimed 400 lb; plan on 330 lb.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Does LifeSpan still sell folding treadmills?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Not on 14 October 2026. Every folding model on LifeSpan’s US store, from the TR1200i to the TR5500iM, was marked unavailable, as were its light-commercial and commercial treadmills. We found no statement that they are discontinued, so check the store again if you want one, and confirm parts support before buying an older model used.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What warranty do LifeSpan treadmills have?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                The current under-desk treadmills carry 10 years on the frame, two years on parts and one year on labour, according to LifeSpan’s product pages. No separate motor term is listed. Extended protection plans are sold through a third-party provider. Register the treadmill and keep proof of purchase, as service reports from owners are mixed.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is a LifeSpan under-desk treadmill worth the price?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                For hours of walking every working day, often yes: a 20-inch belt, published deck and duty figures and a 10-year frame warranty are rare among walking pads. For occasional use, a good folding pad costing a fraction as much is the better buy. Weigh the mixed service reports, and confirm stock before you count on a delivery date.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a LifeSpan Treadmill</h2>
+          <p class="text-gray-700 leading-relaxed">LifeSpan’s pads are well specified, but its listings and stock need checking. These are the four mistakes to avoid.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Taking the TR1200’s capacity from the wrong listing</h3>
+              <p class="text-gray-700 text-sm m-0">LifeSpan gives the TR1200Pro Glow-Up 330 lb, while an Amazon listing has claimed 400 lb. If you are near either figure, buy the TX6-GlowUp, which LifeSpan and independent coverage both rate at 400 lb, rather than relying on the higher claim.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring the step-up height</h3>
+              <p class="text-gray-700 text-sm m-0">A pad that raises you 5.8 inches needs a desk nearly six inches higher than your standing height setting. Check your desk’s maximum against the highest figure quoted for the pad you want, and measure the space between the desk legs.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Counting on a delivery date for a pre-order</h3>
+              <p class="text-gray-700 text-sm m-0">Two of LifeSpan’s three desk pads were on pre-order when we checked, and its full desks and folding treadmills were unavailable. Wait for the order confirmation to show a ship date before you sell an old machine or plan a room around the new one.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Confusing the American and Australian companies</h3>
+              <p class="text-gray-700 text-sm m-0">Lifespan Fitness Australia is a separate retailer with different products, prices and warranties. A manual, part or warranty answer from one does not apply to the other. Check the web address and currency before you rely on anything you find.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/best-walking-pads-for-heavy-people/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Roundup</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Walking Pads for Heavy People</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Where the TX6-GlowUp sits against other 400 lb pads.</p>
+            </a>
+            <a href="/best-walking-pads-for-tall-people/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Roundup</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Walking Pads for Tall People</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Long belts, including both LifeSpan pads with 48-inch decks.</p>
+            </a>
+            <a href="/best-treadmill-desks/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Roundup</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill Desks</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Integrated and build-your-own walking desks you can buy now.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">LifeSpan’s under-desk treadmills remain among the best-specified
+          walking pads for long working days, with 20-inch belts, published deck and duty figures and
+          10-year frame warranties.</strong> The TX6-GlowUp, rated for 400 lb and in stock when we
+          checked, is the one to start with; the TR1200Pro Glow-Up is a cheaper, lower option whose
+          capacity you should take as 330 lb.
+          </p>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            Weigh the price and the mixed service reports, confirm stock before relying on a delivery
+          date, and look elsewhere for a folding running treadmill while LifeSpan’s are unavailable.
+          To compare the pads with their rivals, see our
+          <a href="/best-walking-pads-for-heavy-people/" class="text-[#5AA9FF] font-bold no-underline">walking pads for heavy people</a>
+          and
+          <a href="/best-treadmill-desks/" class="text-[#5AA9FF] font-bold no-underline">best treadmill desks</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+</Layout>
