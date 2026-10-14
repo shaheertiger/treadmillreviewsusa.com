@@ -147,7 +147,7 @@ export default {
             For a meaningful share of people reading this page, the right answer is not a folding
             treadmill at all. A walking pad — a low deck with no upright and no handrails — is the
             only machine in this category that genuinely disappears: 4 to 6 inches tall, 60 to 90
-            lbs, and it slides under a bed or a sofa in a few seconds.
+            lbs, and it slides under a bed or a sofa in a few seconds. If step-up height or storage height is the constraint, see the <a href="/best-low-profile-treadmills/" class="text-[#0F62FE] font-medium">best low-profile treadmills</a>.
           </p>
           <p>
             The trade-offs are real and should not be glossed over. Top speeds are around 4 mph, so

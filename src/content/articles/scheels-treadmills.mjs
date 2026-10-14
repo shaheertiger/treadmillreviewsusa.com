@@ -1,0 +1,468 @@
+export default {
+  slug: 'scheels-treadmills',
+  title: 'Scheels Treadmills (2026): Brands, Delivery, Returns, Price Match',
+  description:
+    'Buying a treadmill at Scheels: which brands it sells, in-store vs online, freight delivery and surcharges, assembly, the 90-day return policy and price matching, checked October 2026.',
+  crumbLabel: 'Scheels Treadmills',
+  breadcrumb: { name: 'By Price', url: '/price/' },
+  kicker: 'Where to Buy',
+  updated: 'October 2026',
+  updatedLong: 'October 14, 2026',
+  published: '2026-10-14',
+  socialProof: '1.1k',
+  h1: ['Scheels Treadmills:', 'What to Know Before You Buy'],
+  standfirst:
+    'Scheels is a large, employee-owned sporting goods chain with a serious fitness department, and in some stores you can stand on a premium treadmill you would otherwise only see online. Here is what it sells, how delivery and returns actually work for a machine that arrives on a freight truck, and how its price match applies.',
+  ctas: [
+    { label: 'Brands at Scheels', href: '#brands' },
+    { label: 'Returns and Price Match', href: '#returns' },
+  ],
+  tags: ['scheels treadmills', 'scheels treadmill', 'treadmills at scheels', 'scheels return policy treadmill', 'where to buy a treadmill'],
+  stickyCta: { text: 'Check Returns First', link: '#returns' },
+  lead: `Scheels treadmills are mostly mainstream home brands sold online and in a few dozen large
+          stores, with a premium, store-only tier in some locations. This page sets out what we could
+          confirm on scheels.com on 14 October 2026 — the brands listed, how oversized items ship, the
+          return window and what it excludes, and the price-match conditions — and what you still need
+          to ask before paying. It does not list current prices for individual models, because those
+          change weekly; it gives the range we saw instead.`,
+  note: `<strong class="text-gray-900">On the details below.</strong> This site is independent and not
+          affiliated with Scheels or any brand it sells. Brands, policies and figures were checked on
+          scheels.com on 14 October 2026, with company facts and policy summaries cross-checked against
+          independent sources; where an independent source disagreed with Scheels' own pages, we say so
+          and follow Scheels. Ranges, fulfilment options and policies change and can differ by product
+          and store, so confirm the current terms on the product page or with the store before you buy.
+          We have not tested the machines mentioned here.`,
+  sections: [
+    {
+      id: 'short-answer',
+      heading: 'Should You Buy a Treadmill at Scheels? The Short Answer',
+      html: `          <p>
+            <strong>Scheels is a reasonable place to buy a treadmill, especially if you live near a
+            store and want to try a machine first; its 90-day return window and price match are
+            useful, but check the freight surcharge and the return logistics for a boxed treadmill
+            before you pay.</strong> On 14 October 2026 scheels.com listed treadmills from NordicTrack,
+            ProForm, Horizon and Landice, and its treadmill category also names Bowflex, at listed
+            prices running from around $600 to more than $5,000.
+          </p>
+          <p>
+            Three details matter more at Scheels than the headline price. First, oversized items
+            carry a shipping surcharge shown on the product page, and Scheels' return policy says
+            shipping fees and surcharges are not refundable. Second, some machines ship directly
+            from the manufacturer, and the premium Landice models we saw were marked available in
+            store only. Third, Scheels' help pages do not list treadmill assembly as a service, so
+            ask how the machine reaches the room and who builds it.
+          </p>
+          <p>
+            If those answers work for you, the decision comes down to the machine itself. Our
+            <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">treadmill buying guide</a>
+            covers what separates a good one from a poor one, and our guide to
+            <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium">treadmills for sale</a>
+            compares Scheels-type retailers with every other channel.
+          </p>`,
+    },
+    {
+      id: 'about-scheels',
+      heading: 'What Is Scheels, and Where Are the Stores?',
+      html: `          <p>
+            Scheels is an employee-owned sporting goods retailer headquartered in Fargo, North
+            Dakota. It traces its history to a hardware and general store opened in Sabin, Minnesota,
+            in 1902, and today runs large-format stores that sell everything from hunting and
+            fishing gear to golf, team sports, footwear and fitness equipment. Its stores are large-format,
+            and the ones we looked at advertise an exercise and fitness department.
+          </p>
+          <p>
+            Scheels' store directory, checked on 14 October 2026, listed 34 open stores in 16 states
+            — Arizona, Colorado, Idaho, Illinois, Iowa, Kansas, Minnesota, Montana, Nebraska, Nevada,
+            North Dakota, Oklahoma, South Dakota, Texas, Utah and Wisconsin — plus four more marked as
+            coming soon (Littleton, Colorado; Blaine, Minnesota; Oklahoma City, Oklahoma; and
+            Wauwatosa, Wisconsin). An independent company profile gives the same count of 34 stores
+            in 16 states. The footprint is concentrated in the Midwest, the Plains and the Mountain
+            West; if you live on either coast, Scheels is an online retailer for you rather than a
+            store.
+          </p>
+          <p>
+            That matters for treadmills more than for most products. The main advantage of buying
+            from a store is the chance to stand on the machine, and the main hassle of buying online
+            is freight delivery. Which of those you get from Scheels depends on whether one of its
+            stores is within reach.
+          </p>`,
+    },
+    {
+      id: 'brands',
+      heading: 'Which Treadmill Brands Does Scheels Sell?',
+      html: `          <p>
+            On 14 October 2026, the treadmill listings we found on scheels.com came from five
+            brands. The range changes through the year and not every model is in every store, so
+            treat this as a snapshot.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Brand</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">What we saw on scheels.com</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Our coverage</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Commercial-series treadmills, shown as shipped by NordicTrack, with an iFIT trial</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Brand roundup</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">ProForm</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Entry and mid-range folding treadmills</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Brand roundup</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The T101 folding treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Model review and brand roundup</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Landice</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">L7 and M2 models, the L7 we checked marked available in store only</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Premium and commercial guides</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bowflex</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Named in Scheels' treadmill category description</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Brand page</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            The mix is typical of a large sporting goods chain at the mainstream end — NordicTrack and
+            ProForm are both iFIT brands, and Horizon and Bowflex both sit under Johnson Health Tech —
+            with one unusual addition. Landice is a premium, US-built brand more often sold through
+            specialist fitness dealers, and being able to see one in a sporting goods store is a
+            genuine reason to visit if you are shopping at that level.
+          </p>
+          <p>
+            For independent coverage of the brands, see our roundups of the
+            <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">best NordicTrack treadmills</a>,
+            <a href="/best-proform-treadmills/" class="text-[#0F62FE] font-medium">best ProForm treadmills</a>
+            and <a href="/best-horizon-treadmills/" class="text-[#0F62FE] font-medium">best Horizon treadmills</a>,
+            and our page on <a href="/bowflex/" class="text-[#0F62FE] font-medium">Bowflex</a>.
+            Listed prices on the Scheels treadmills we checked ran from around $600 to more than
+            $5,000, with sale prices on some; for what each tier of that range typically buys, see
+            <a href="/how-much-does-a-treadmill-cost/" class="text-[#0F62FE] font-medium">how much a treadmill costs</a>.
+          </p>`,
+    },
+    {
+      id: 'in-store-online',
+      heading: 'Is It Better to Buy at a Scheels Store or Online?',
+      html: `          <p>
+            If you live near a store, start there: trying a treadmill before you buy it is worth more
+            than any listing, and the premium Landice models we saw on scheels.com were marked
+            available in store only. If you do not, the website carries the same brands with ship-to-home
+            delivery.
+          </p>
+          <p>
+            <strong>In store.</strong> Scheels describes its fitness staff as Exercise and Fitness
+            Experts and suggests contacting the local department about new arrivals and product
+            questions. Call ahead if you want to try a particular model, because floor stock differs
+            between stores. When you get there, test properly: walk and run at your real speeds in
+            your own shoes, use the incline, listen to the motor and fold the machine. Our
+            <a href="/where-to-buy-a-treadmill-near-me/" class="text-[#0F62FE] font-medium">in-store treadmill test</a>
+            sets out the ten-minute version.
+          </p>
+          <p>
+            <strong>Online.</strong> Treadmill pages on scheels.com show a ship option and a store
+            pick-up option, with an estimated delivery window and a "Check Availability" button for
+            store stock. A pick-up option on a 200 lb-plus box is only useful if you have a vehicle
+            and the help to load and unload it; ask what the boxed weight is before choosing it. Our
+            guide to <a href="/how-much-does-a-treadmill-weigh/" class="text-[#0F62FE] font-medium">how much a treadmill weighs</a>
+            gives typical boxed weights.
+          </p>
+          <p>
+            <strong>Confirm the model number.</strong> Whichever route you take, make sure the
+            machine you buy has the same model number as the one you tried or researched. Treadmill
+            names are reused across model years with real changes underneath.
+          </p>`,
+    },
+    {
+      id: 'delivery',
+      heading: 'How Does Scheels Deliver a Treadmill?',
+      html: `          <p>
+            Treadmills from scheels.com ship as oversized items, which Scheels says are delivered by
+            LTL (less-than-truckload) freight carriers, carry an additional shipping surcharge based
+            on size and weight, and need extra time. These are the points we confirmed on Scheels'
+            shipping and help pages on 14 October 2026:
+          </p>
+          <ul>
+            <li><strong>Surcharges are separate from free shipping.</strong> Scheels offers free
+            standard shipping on orders over $75, but oversized items carry an additional surcharge,
+            shown on the product page and at checkout. The treadmill pages we checked all noted that
+            a surcharge applies.</li>
+            <li><strong>Freight and vendor-direct shipping.</strong> Oversized items go by LTL freight
+            carrier, and items shipped directly from a vendor need standard ground shipping and
+            extended time. One NordicTrack listing we checked was marked as shipped by NordicTrack.
+            Scheels notes that some LTL shipments may not receive a tracking number.</li>
+            <li><strong>Estimated windows.</strong> The treadmill pages we checked gave estimated
+            delivery windows of roughly one to three weeks from the date we looked.</li>
+          </ul>
+          <p>
+            What Scheels' pages do not say is how far the freight carrier brings the box. LTL
+            delivery in general is often to the curb, driveway or garage rather than into the room,
+            and a treadmill box can weigh as much as an adult. Before ordering, ask Scheels — or, for
+            vendor-shipped items, the manufacturer — where delivery ends, whether an appointment is
+            scheduled, and whether an upgraded in-home service is available. Our
+            <a href="/treadmill-delivery-guide/" class="text-[#0F62FE] font-medium">treadmill delivery guide</a>
+            explains the levels of delivery service and what each costs you on the day.
+          </p>
+          <p>
+            Measure the room and the route to it — doorways, stair turns and hallway corners — before
+            the truck arrives. The
+            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements guide</a>
+            covers the clearances a treadmill needs once it is in place.
+          </p>`,
+    },
+    {
+      id: 'assembly',
+      heading: 'Does Scheels Assemble Treadmills?',
+      html: `          <p>
+            We could not confirm a treadmill assembly service at Scheels. Its online help pages, as
+            checked on 14 October 2026, list assembly of roof and trunk racks and nothing for fitness
+            equipment, and the treadmill pages we checked did not offer assembly as an add-on. That
+            may differ by store, so ask the local fitness department directly.
+          </p>
+          <p>
+            If assembly is not available from Scheels, you have three options. Some manufacturers
+            sell their own assembly or in-home delivery upgrade, particularly for machines they ship
+            themselves, so check with the brand. Local fitness equipment technicians and general
+            assembly services will build a treadmill for a fee. Or you can do it yourself: most home
+            treadmills arrive with the heavy base pre-assembled and need the uprights, console and
+            handrails attaching, a two-person job of an hour or two. Our
+            <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">treadmill assembly guide</a>
+            sets out the job.
+          </p>
+          <p>
+            One return-related reason to think about this early: Scheels' return policy asks for
+            items in their original packaging and condition for a full refund. Once a treadmill is
+            built and the box is in the recycling, returning it becomes much harder. Keep the box and
+            packing material until you are sure.
+          </p>`,
+    },
+    {
+      id: 'returns',
+      heading: "What Is Scheels' Return Policy on Treadmills?",
+      html: `          <p>
+            Scheels' return policy, as published on scheels.com on 14 October 2026, gives 90 days
+            for returns, with free mail-in returns for online orders using a prepaid label and
+            in-store returns or exchanges with proof of purchase. Treadmills are not on its list of
+            non-returnable items, and the treadmill pages we checked showed a "Free Returns" label.
+            The conditions are what matter for a treadmill:
+          </p>
+          <ul>
+            <li><strong>Original packaging and condition.</strong> Items must be returned in their
+            original packaging and condition for a full refund, and partial refunds may apply where
+            components are missing.</li>
+            <li><strong>Surcharges are not refunded.</strong> The policy says shipping fees, package
+            protection and other surcharges are non-refundable, so the oversized-item surcharge on a
+            treadmill would not come back with the product price.</li>
+            <li><strong>Refund method.</strong> Refunds go to the original payment method, or a
+            Scheels gift card; returns without proof of purchase require ID and receive store
+            credit.</li>
+          </ul>
+          <p>
+            The policy does not explain how a mail-in return works for an item that arrived on a
+            freight truck. Before buying, ask how a treadmill return would physically happen: whether
+            Scheels or the manufacturer arranges collection, whether you would need to take it to a
+            store, and whether any cost applies. Get the answer in writing or on the order.
+          </p>
+          <p>
+            <strong>A conflict worth knowing about.</strong> Several third-party summaries of Scheels'
+            returns, including ones updated in 2026, still describe a longer window of up to a year.
+            Scheels' own policy page said 90 days when we checked, so follow Scheels' page and treat
+            the longer figure as out of date. Our guide to
+            <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies</a>
+            compares how other retailers and manufacturers handle large-item returns.
+          </p>`,
+    },
+    {
+      id: 'price-match',
+      heading: 'Does Scheels Price Match Treadmills?',
+      html: `          <p>
+            Yes, Scheels runs a price-match policy, and on 14 October 2026 its own pages set out the
+            conditions. A treadmill qualifies only if the competitor's item is:
+          </p>
+          <ul>
+            <li><strong>The same product</strong> — the exact same brand, model or style, size and
+            colour.</li>
+            <li><strong>From an authorised retailer</strong> — Scheels' customer service can confirm
+            whether a retailer counts.</li>
+            <li><strong>In stock</strong> — available for purchase both on scheels.com and on the
+            website you are matching.</li>
+          </ul>
+          <p>
+            Scheels also says that if the competitor charges for shipping and handling, that amount
+            is included in the comparison; that used, opened and display items cannot be matched;
+            that items with purchase limits are excluded; and that price matching is at Scheels'
+            discretion. A separate note says discounts such as the military discount cannot be
+            combined with a price match. An independent price-match guide agrees on the core
+            conditions — identical item, authorised competitor, available at both.
+          </p>
+          <p>
+            For treadmills, the "same product" rule is the one to watch. Model numbers vary between
+            retailers and model years, and a machine with a similar name and a different number may
+            not qualify. Compare the full model number before asking, and compare delivered prices,
+            since the competitor's shipping is counted and Scheels' oversized surcharge is a real
+            part of its price.
+          </p>
+          <p>
+            Some third-party guides say Scheels will also adjust the price for a period after
+            purchase or match Amazon specifically. We could not confirm either on Scheels' own
+            pages, so ask before relying on them. For when treadmill prices typically fall across the
+            market, see our guide to the
+            <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy a treadmill</a>.
+          </p>`,
+    },
+    {
+      id: 'warranty-recalls',
+      heading: 'Who Handles the Warranty, and What About Recalls?',
+      html: `          <p>
+            Warranty cover on a treadmill bought at Scheels comes from the manufacturer, and the
+            terms are listed on the product page — the NordicTrack and Horizon pages we checked both
+            stated the manufacturer's warranty. Warranty claims, parts and in-home
+            service generally run through the brand rather than the store, so register the machine
+            with the manufacturer, keep the model and serial numbers with your Scheels receipt, and
+            check whether the brand has service technicians in your area. Our
+            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a>
+            explains how to read the terms, particularly the labour period.
+          </p>
+          <p>
+            We searched cpsc.gov for each brand listed above on 14 October 2026 and found no current
+            recall or stop-use warning covering the treadmill models we saw listed. One past recall is worth
+            knowing about because the T101 is on sale at Scheels: in October 2022 Johnson Health Tech
+            recalled about 192,000 Horizon T101-05 treadmills with certain serial numbers because
+            they could change speed or stop unexpectedly, and the remedy was a free software update.
+            If you are offered an older or used T101, check its model and serial number against the
+            CPSC notice. For any treadmill, registering with the manufacturer is how you hear about
+            a future recall.
+          </p>`,
+    },
+    {
+      id: 'judging',
+      heading: 'How Do You Judge a Treadmill at Scheels?',
+      html: `          <p>
+            Judge it on the same figures you would anywhere, not on the screen or the sale tag.
+            Scheels' own treadmill buying guide, shown on its product pages, suggests a deck of 55 to
+            60 inches for runners and taller users, and a motor of at least 2.5 continuous
+            horsepower (CHP) for walking or 2.75 CHP for running. Those are sensible floors and in
+            line with our own guidance.
+          </p>
+          <ul>
+            <li><strong>Motor:</strong> continuous-duty horsepower, not peak. See the
+            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>.</li>
+            <li><strong>Running surface:</strong> length and width against your stride and height.
+            See the <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>.</li>
+            <li><strong>Maximum user weight</strong>, with a margin to spare.</li>
+            <li><strong>Warranty</strong>, with labour read separately from frame and motor.</li>
+            <li><strong>Subscription:</strong> whether the console needs one, what a trial converts
+            to, and what the machine does without it.</li>
+          </ul>
+          <p>
+            If you are shopping for a connected machine, read our
+            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a>
+            guide before deciding whether the classes are worth the ongoing cost.
+          </p>`,
+    },
+    {
+      id: 'compare-checklist',
+      heading: 'How Does Scheels Compare, and What Should You Check Before Paying?',
+      html: `          <p>
+            Scheels sits between a general sporting goods chain and a specialist fitness store. Its
+            range is mainstream with a premium tier in some stores, its fitness departments are large,
+            and its 90-day return window and price match are clearly written. Against that, its store
+            footprint is regional, treadmill delivery is freight with a surcharge, and assembly is
+            not advertised. Compared with
+            <a href="/dicks-sporting-goods-treadmills/" class="text-[#0F62FE] font-medium">Dick's Sporting Goods</a>
+            or <a href="/best-buy-treadmills/" class="text-[#0F62FE] font-medium">Best Buy</a>,
+            the buying process for mainstream machines is similar; the store-only Landice tier is the
+            main point of difference we saw.
+          </p>
+          <p>
+            Before you pay, run through this list:
+          </p>
+          <ul>
+            <li><strong>Tested, or researched properly.</strong> Walked, run, inclined and folded in
+            store, or read independent coverage of the exact model.</li>
+            <li><strong>Model number confirmed</strong> against what you tried or researched.</li>
+            <li><strong>Specification checked:</strong> continuous horsepower, running surface,
+            maximum user weight and warranty labour term.</li>
+            <li><strong>Delivered price known:</strong> product price plus the oversized surcharge,
+            compared with the delivered price elsewhere.</li>
+            <li><strong>Delivery level:</strong> curb, garage, door or room — and who carries it in.</li>
+            <li><strong>Assembly:</strong> available through the store or the brand, or yours to do.</li>
+            <li><strong>Return logistics:</strong> how a freight item comes back, and the reminder
+            that surcharges are not refunded.</li>
+            <li><strong>Price match:</strong> identical model number, authorised competitor, in
+            stock at both.</li>
+          </ul>
+          <p>
+            If the specification fits and the numbers work, Scheels is a sound place to buy. If you
+            are still deciding how much to spend, start with our guide to
+            <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">how much to spend on a treadmill</a>.
+          </p>`,
+    },
+  ],
+  faqs: [
+    {
+      q: 'Does Scheels sell treadmills?',
+      a: `Yes. On 14 October 2026 scheels.com listed treadmills from NordicTrack, ProForm, Horizon and Landice, and its treadmill category also names Bowflex. Most ship to your home or can be picked up in store; some premium Landice models were marked available in store only. Ranges change, so check the site or call your nearest store.`,
+    },
+    {
+      q: 'What is the Scheels return policy on treadmills?',
+      a: `Scheels' published policy gives 90 days, with free mail-in returns for online orders and in-store returns with proof of purchase. Items must be in original packaging and condition for a full refund, and shipping fees and surcharges are not refunded. Ask how a freight-delivered treadmill would physically be returned before you buy.`,
+    },
+    {
+      q: 'Does Scheels price match treadmills?',
+      a: `Yes, at its discretion. The competitor's item must be the exact same brand and model, from an authorised retailer, and in stock on both scheels.com and the competitor's site; competitor shipping is included in the comparison. Used, opened and display items are excluded. Model numbers often differ between retailers, so compare them first.`,
+    },
+    {
+      q: 'Does Scheels deliver and assemble treadmills?',
+      a: `Scheels ships treadmills as oversized items by freight carrier, with a shipping surcharge shown on the product page, and some ship directly from the manufacturer. We could not confirm a treadmill assembly service on Scheels' pages, so ask the store or the brand, and ask how far the delivery brings the box.`,
+    },
+    {
+      q: 'Can you try treadmills at Scheels?',
+      a: `In stores with floor models, yes, and that is one of the main reasons to shop there. Floor stock differs between locations, so call the fitness department before visiting. Wear your own shoes, walk and run at your usual speeds, use the incline and fold the machine, and confirm the model number you buy matches what you tried.`,
+    },
+    {
+      q: 'Where are Scheels stores located?',
+      a: `Scheels listed 34 open stores in 16 states on 14 October 2026, concentrated in the Midwest, the Plains and the Mountain West, from North Dakota and Minnesota to Texas, Utah and Arizona, with four more marked as coming soon. If there is no store near you, scheels.com ships treadmills nationally as freight.`,
+    },
+  ],
+  mistakesHeading: 'Common Mistakes When Buying a Treadmill at Scheels',
+  mistakesIntro:
+    'None of these is specific to Scheels, but its freight delivery and written policies make each one easy to avoid.',
+  mistakes: [
+    {
+      title: 'Comparing the price without the surcharge',
+      body: 'Free shipping over $75 does not cover the oversized-item surcharge. Compare the delivered price with what the same machine costs delivered elsewhere.',
+    },
+    {
+      title: 'Throwing away the box',
+      body: 'A full refund needs the original packaging and condition. Keep the box and packing material until you are sure you are keeping the treadmill.',
+    },
+    {
+      title: 'Assuming freight means room delivery',
+      body: 'LTL delivery is often to the curb or garage. Ask where delivery ends and who carries the box in before ordering, and plan for the gap.',
+    },
+    {
+      title: 'Asking for a match on a different model number',
+      body: 'Price matching needs the identical brand and model. Check the full model number on both listings before you ask, rather than matching a similar-looking machine.',
+    },
+  ],
+  relatedHeading: 'Related Price Guides',
+  related: [
+    {
+      kicker: 'Where to Buy',
+      title: "Dick's Sporting Goods Treadmills",
+      blurb: 'The other big sporting goods chain, compared.',
+      url: '/dicks-sporting-goods-treadmills/',
+    },
+    {
+      kicker: 'Where to Buy',
+      title: 'Treadmills for Sale',
+      blurb: 'Where to buy, what to pay and what each channel includes.',
+      url: '/treadmills-for-sale/',
+    },
+    {
+      kicker: 'Policies',
+      title: 'Treadmill Return Policies',
+      blurb: 'How large-item returns really work, retailer by retailer.',
+      url: '/treadmill-return-policies/',
+    },
+  ],
+  bottomLine: [
+    `<strong class="text-white">Scheels is a sound place to buy a treadmill if the logistics work for you.</strong>
+            It sells mainstream NordicTrack, ProForm, Horizon and Bowflex machines plus a store-only
+            Landice tier, with a 90-day return window and a written price match. Check the freight
+            surcharge, where delivery ends, who assembles it and how a return would work before you
+            pay.`,
+    `Then compare the delivered price with
+            <a href="/treadmills-for-sale/" class="text-[#5AA9FF] font-bold no-underline">other places to buy</a>.
+            If the specification fits and the numbers work, buy it with confidence.`,
+  ],
+};

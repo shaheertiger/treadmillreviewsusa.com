@@ -288,7 +288,7 @@ export default {
       html: `          <p>
             The curved design is excellent at sprints, intervals and conditioning, and wrong for a
             surprising number of the reasons people buy treadmills. Be honest about which of these
-            describes you before spending $2,000 or more.
+            describes you before spending $2,000 or more. For a cheaper direct-sold option, see our page on the <a href="/sb-fitness-ct550-curved-treadmill/" class="text-[#0F62FE] font-medium">SB Fitness CT550</a>.
           </p>
           <ul>
             <li><strong>Walkers who want incline.</strong> None of these machines offers incline
@@ -327,6 +327,7 @@ export default {
     {
       id: 'assaultrunner-pro',
       name: 'AssaultRunner Pro',
+      reviewUrl: '/assaultrunner-pro-treadmill/',
       category: 'Curved Slat Trainer',
       badge: 'Best Overall',
       amazonUrl: 'https://www.amazon.com/s?k=Assault+Fitness+AssaultRunner+Pro&tag=sktiger-20',

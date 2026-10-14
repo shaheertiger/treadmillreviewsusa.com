@@ -350,7 +350,9 @@ export default {
             <strong>Yes, within limits.</strong> A properly suspended deck is more comfortable
             than a hard surface and worth having, especially for runners. Among decent home
             treadmills, though, the differences are smaller than marketing suggests, and they are
-            easily outweighed by your shoes, your training load and the rest of the machine.
+            easily outweighed by your shoes, your training load and the rest of the machine. If
+            cushioning is still your priority, see the
+            <a href="/best-cushioned-treadmills/" class="text-[#0F62FE] font-medium">best cushioned treadmills</a>.
           </p>
           <p>
             <strong>Firm and responsive beats soft and slow.</strong> Look for a deck that gives

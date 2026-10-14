@@ -445,6 +445,36 @@ Two existing errors fixed while writing them: `/best-treadmill-desks/` said a ke
 a desk is too low (a tray lowers the keyboard; it cannot add height), and `/treadmill-desk-guide/`
 said a walking pad raises you "a couple of inches" (typically 4 to 7).
 
+### Keyword batch (2026-10-14): twenty-one pages and the 1750 rewrite
+
+Written against a supplied keyword list. Keywords an existing page already owns were mapped to it
+rather than given a competing page; everything else got one page each. All product facts were
+checked on 14 October 2026 (manufacturer or official retailer plus an independent source, CPSC
+searched per brand); conflicts are stated, not resolved by guessing.
+
+- **Rewrite**: `/nordictrack-commercial-1750-treadmill/` (14,800/mo) is now a spec-generated verified
+  review of the current NTL17125 — 4.25 CHP, 22 x 60 in., 400 lb, 16 in. screen, confirmed against
+  NordicTrack and a retailer listing for the same model number. The old page's 3.75 CHP / 14 in. /
+  300 lb figures, testing claims and aggregateRating are gone. URL unchanged.
+- **Reviews**: AssaultRunner Pro, Bowflex T9, Reebok FR20z Floatride (sold in the UK and Australia;
+  unavailable in the US on the day), Sole F89 (withdrawn from Sole's stores — written as such), SB
+  Fitness CT550 (listing claims), TREAFLOW 3100W, Streamdale (a reseller with unbranded machines),
+  and East Urban Home — no treadmill under that Wayfair label could be found; the listings carrying
+  the searched title describe furniture, and the page says so.
+- **Roundups**: highest-incline treadmills, cushioned (low-impact) treadmills, low-profile treadmills,
+  walking pads for tall people, VR treadmills, walking shoes and women's running shoes for treadmill.
+- **Guides**: treadmill settings for fat loss, types of treadmills, outdoor use (quoting ProForm's
+  and Sole's manuals, both of which say indoors only), Trimline (a discontinued US brand), and
+  where-to-buy pages for Wayfair and Scheels.
+
+The Amazon pipeline matched 14 more products (62 stored). Fourteen existing specs gained contextual
+links; `/walking-pad-buying-guide/` now gives pad belts as 34 to 48 in.
+
+Found and not yet changed: `/nordictrack-new-commercial-1750-treadmill/` duplicates the 1750 page
+with the old figures, testing claims and an invented aggregateRating (4.6 from 892 reviews); and 34
+hand-written pages still emit `aggregateRating` from invented `rating`/`reviewCount` values in their
+JSON-LD — the policy breach described under "Pages awaiting data".
+
 ### Sole F80 and F85
 
 Both machines were referenced across the site — the F80 on ten pages — with no page to point at,

@@ -1,0 +1,557 @@
+export default {
+  slug: 'sole-f89-treadmill',
+  title: 'Sole F89 Treadmill Review (2026): Specs, Status and What Replaced It',
+  description:
+    'The Sole F89 was Sole’s 21.5-inch touchscreen folding treadmill. What its specs were, why it is no longer on Sole’s US store, and what to buy or check now.',
+  crumbLabel: 'Sole F89 Treadmill',
+  kicker: 'Model Review',
+  updated: 'October 2026',
+  updatedLong: 'October 14, 2026',
+  published: '2026-10-14',
+  socialProof: '1.7k',
+  h1: ['Sole F89', 'Treadmill Review'],
+  standfirst:
+    'The F89 was the top of Sole’s folding range: a 22-inch deck, decline as well as incline, and the largest screen Sole has put on a folding treadmill. As of mid-October 2026 it is no longer listed on Sole’s US store, so this review covers what it was, what still holds, and what to check if you find one for sale.',
+  ctas: [
+    { label: 'Is It Discontinued?', href: '#status' },
+    { label: 'What Replaced It', href: '#f89-vs-current-range' },
+  ],
+  tags: ['sole f89 treadmill', 'sole f89', 'sole f89 review', 'sole f89 vs f85', 'sole f89 discontinued'],
+  stickyCta: { text: 'See What Replaced It', link: '#f89-vs-current-range' },
+  breadcrumb: { name: 'Reviews', url: '/reviews/' },
+  lead: `Most people searching for the Sole F89 treadmill want one of two things: a verdict on a
+          machine they have seen at a good price, or confirmation of what happened to it. Both
+          answers start in the same place. On 14 October 2026 the F89 was not among the eight
+          treadmills on Sole's US store, and its product page there no longer loads. It has not
+          been a regional or retailer-only model — Sole sold it directly, Dick's Sporting Goods
+          carried it, and it appeared with retailers in the UK and New Zealand — and as recently as
+          the summer Sole was still promoting it. This review sets out what the F89 was, which of
+          its published figures the sources agree on, and how to approach one now.`,
+  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
+          14 October 2026 we checked Sole's US store and its product feed (the F89 is not listed,
+          and its product page returns "not found"), Sole's Canadian and UK sites (no F89 listed),
+          two of Sole's own articles about the F89 (October 2024 and July 2026), the product page
+          for the F89 on the site of Dyaco, Sole's parent company, and independent reviews from
+          RunToTheFinish (updated November 2025) and Treadmill Review Guru (2024). The figures on
+          this page are the ones on which Sole and at least one independent source agree. Where
+          they disagree — machine weight, frame material, the decline range — we say so rather than
+          choose. We found no announcement from Sole explaining the F89's removal. We have not
+          tested the F89; nothing here is our own measurement. Prices are past listings, not
+          current offers.`,
+  products: [
+    {
+      id: 'sole-f89',
+      name: 'Sole F89',
+      category: 'Folding Treadmill With 21.5 in. Touchscreen',
+      badge: 'No Longer on Sole’s US Store',
+      priceRange: 'Last seen at $2,599.99 sale ($3,099.99 regular)',
+      amazonUrl: 'https://www.amazon.com/s?k=Sole+F89+Treadmill&tag=sktiger-20',
+      specs: '22 x 60 in. deck · 4.0 HP · 0.5-12 mph · 15 incline and 6 decline levels · 375 lb max user · 21.5 in. touchscreen',
+      pros: [
+        'Full 22 by 60-inch running surface, which every source agrees on',
+        'Incline and decline on one folding frame, which few folding machines offer',
+        'A 21.5-inch Android touchscreen with Sole’s free app — no paid subscription needed to use it',
+        '375 lb maximum user weight and lifetime frame and motor cover on the terms Sole published',
+      ],
+      cons: [
+        'No longer listed on Sole’s US, Canadian or UK stores as of 14 October 2026, so new stock is whatever retailers still hold',
+        'Very heavy — published weights of 314 to 319 lb assembled — and large even when folded',
+        'Published decline figures disagree, and one independent reviewer measured less than the listed range',
+        'A large Android console ages faster than the frame and motor, and its software support depends on Sole',
+      ],
+      bottomLine:
+        'A well-specified folding treadmill that was strong on paper. Worth buying now only as remaining or open-box stock at a clear discount, with the warranty confirmed in writing.',
+      description:
+        'The F89 sat above the F85 at the top of Sole’s folding range. Sole and independent reviewers agree on a 22 by 60-inch running surface, a 4.0 HP motor, a speed range of 0.5 to 12 mph, 15 levels of incline and a 375 lb maximum user weight, with a 21.5-inch Android touchscreen that runs Sole’s free app, streaming apps, Zwift and Kinomap. Sole lists six levels of decline; how far that goes in percentage terms is not consistent across sources. Assembled it measures about 83 by 38 by 68 inches and folds to about 44 inches long. Sole’s published warranty was lifetime on the frame and motor, three years on the deck and parts, and one year of labour. Sole was still selling it in July 2026 at $2,599.99 on sale against $3,099.99 regular; by 14 October 2026 it was no longer on Sole’s US store.',
+    },
+  ],
+  sections: [
+    {
+      id: 'short-answer',
+      heading: 'The Sole F89 Treadmill: The Short Answer',
+      products: true,
+      html: `          <p>
+            <strong>The Sole F89 treadmill was the flagship of Sole's folding range, and as of
+            14 October 2026 it is no longer sold on Sole's US website.</strong> It was a big, heavy,
+            well-specified machine: a 22 by 60-inch deck, a 4.0 HP motor, 12 mph, incline and
+            decline, a 375 lb user rating and a 21.5-inch touchscreen that needed no subscription.
+            Independent reviewers who used it describe it as solid and stable. Nothing we found
+            suggests it was a bad treadmill.
+          </p>
+          <p>
+            What changed is availability. Sole's US store now lists eight treadmills — the F50,
+            F63, F65, F80, F83, F85, TT8 and C80 — and the F89 is not one of them. Its product page
+            returns "not found". Sole's Canadian and UK sites do not list it either. Sole had not,
+            as far as we could find, published a notice saying the F89 was discontinued or naming a
+            replacement, so the accurate description is that it has been withdrawn from Sole's own
+            stores. Whatever stock remains is with retailers, in open-box and clearance channels,
+            or on the used market.
+          </p>
+          <p>
+            That makes the decision different from an ordinary review. If you find a new or
+            open-box F89 at a clear discount, from a seller who will put the warranty terms in
+            writing, it is still a capable machine. If you are paying close to its old price, the
+            current Sole range — reviewed in our
+            <a href="/best-sole-treadmills/" class="text-[#0F62FE] font-medium">guide to the best Sole treadmills</a>
+            — is the safer purchase, because you get a model Sole is actively selling and
+            supporting. And if all you need is a dependable folding treadmill, the
+            <a href="/sole-f63-treadmill/" class="text-[#0F62FE] font-medium">Sole F63</a>
+            does the core job for far less. We have not tested the F89; everything below is what
+            Sole and independent reviewers have published.
+          </p>`,
+    },
+    {
+      id: 'what-it-was',
+      heading: 'What the Sole F89 Was',
+      html: `          <p>
+            The F89 was introduced as the new top model in Sole's F-series of folding treadmills.
+            Dick's Sporting Goods catalogued it as the "F89-2023", and independent reviews
+            describe it as Sole's 2024 release, so it reached most buyers across 2023 and 2024.
+            Sole is owned by Dyaco International, the Taiwanese equipment maker that also owns
+            Spirit Fitness and Xterra, and the F89 still has a product page on a Dyaco-run Sole site
+            listing both 110-volt and 220 to 230-volt versions — one reason it turned up with
+            retailers outside the US.
+          </p>
+          <p>
+            It was not a retailer exclusive or a regional variant. Sole sold it directly in the US,
+            Dick's carried it, a UK retailer listed it as the "F89 ENT", and a New Zealand
+            retailer carried it through its online range; the New Zealand listing we found no longer
+            loads. The F89 is simply a model Sole sold widely and has now taken off its own stores.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">How it related to the F85</h3>
+          <p>
+            Sole's own comparison, published in July 2026, set the F89 against the F85 and described
+            the two as sharing their mechanical core: the same motor rating, the same 22 by 60-inch
+            deck, the same speed range, incline and decline, and the same user rating. It gave
+            the F89 two differences: a 21.5-inch Android touchscreen where the F85 had a 15.6-inch
+            screen, and an anodised aluminium Z-frame where the F85 used steel. Independent
+            reviewers reached the same conclusion from the other direction — the F89 was not a
+            meaningful performance step over the F85, and the screen was the main reason to pay
+            more.
+          </p>
+          <p>
+            One caution about that comparison. The F85 figures in Sole's July article are the
+            older F85's — a 4.0 HP motor, 375 lb rating and decline. Sole's current F85 listing gives
+            a 3.5 HP motor, a 350 lb rating and incline from zero with no decline. So the F89 is
+            closest to the earlier F85, not the one Sole sells today. We come back to that in the
+            section on what replaced it.
+          </p>`,
+    },
+    {
+      id: 'status',
+      heading: 'Is the Sole F89 Discontinued?',
+      html: `          <p>
+            Sole has withdrawn it from its own stores; whether Sole calls that "discontinued" we
+            cannot say, because we found no statement from Sole either way. Here is exactly what we
+            found on 14 October 2026.
+          </p>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>Sole's US treadmill collection lists eight machines: F50, F63, F65, F80, F83, F85,
+            TT8 (marked sold out) and the C80 curved manual trainer. The F89 is not among them.</li>
+            <li>The F89's product page on Sole's US store returns "not found", and the F89 does not
+            appear in the store's product feed at all, which is different from a model that is
+            simply out of stock.</li>
+            <li>Sole's Canadian site lists the F63, F65, F80, F85, S77 and TT8; Sole's UK site lists
+            the F63, F65, F80, F85 and TT8. Neither lists an F89.</li>
+            <li>In July 2026 Sole's own blog still described the F89 as on sale at $2,599.99 against
+            a $3,099.99 regular price, and an independent roundup updated at the end of August
+            still listed it among Sole's current models. The withdrawal is therefore recent.</li>
+          </ul>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What that means in practice</h3>
+          <p>
+            A model leaving a manufacturer's own store usually means one of three things: it has
+            been discontinued, it is between production runs, or it is being replaced by a
+            successor that has not launched yet. The 2026 refresh of Sole's range — most of the
+            current F-series is marked new for 2026, and the F83 is an all-new model — makes a
+            range change the most likely explanation, but that is our inference, not Sole's
+            statement. If the F89 matters to you, ask Sole directly whether it will return.
+          </p>
+          <p>
+            For a buyer today, the practical point is the same either way. New F89s will be
+            whatever retailers still hold, plus open-box and returned units. Treat any listing as
+            remaining stock, check the date of manufacture, and confirm who will honour the warranty
+            before you pay. Our page on
+            <a href="/refurbished-treadmills/" class="text-[#0F62FE] font-medium">refurbished and open-box treadmills</a>
+            covers what those channels do and do not include.
+          </p>`,
+    },
+    {
+      id: 'specifications',
+      heading: 'The Sole F89 Specifications the Sources Agree On',
+      html: `          <p>
+            The table lists each figure with the sources behind it. "Agreed" means Sole's own
+            material and at least one independent review give the same number. Figures that
+            disagree are marked as such; we have not picked between them.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Item</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Published figure</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Running surface</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22 x 60 in</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Agreed</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Motor</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4.0 HP</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Agreed</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Speed</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.5-12 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Agreed</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Incline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15 levels</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Agreed</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Decline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">6 levels, also written as -6%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Conflicting (see below)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Max user weight</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">375 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Agreed</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Screen</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">21.5 in Android touchscreen</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Agreed</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Assembled size</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">83 x 38 x 68 in</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Agreed</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Folded size</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">44 in long, about 71 in tall</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Agreed</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Machine weight</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">314 lb or 319 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Conflicting</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Frame</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Aluminium or steel Z-frame</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Conflicting</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Warranty</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime frame and motor, 3 yr deck and parts, 1 yr labour</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Agreed</td></tr>
+            </tbody>
+          </table></div>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The decline figure</h3>
+          <p>
+            Sole's July 2026 comparison and one independent review give the decline as -6%. The
+            Dyaco product page lists it as six levels, from -6 to 15 on the same scale as the
+            incline. One independent reviewer who measured the deck found roughly -4.7% at the
+            lowest decline setting and roughly 13.7% at the top incline setting, which suggests the
+            levels are settings rather than exact percentages. At least one other review lists
+            "no decline" among its drawbacks. What is clear is that the F89 has a decline function;
+            how steep it is depends on which source you trust. If decline is a reason you want this
+            machine, our explainer on
+            <a href="/what-is-treadmill-decline-good-for/" class="text-[#0F62FE] font-medium">what treadmill decline is good for</a>
+            and our roundup of
+            <a href="/best-treadmills-with-decline/" class="text-[#0F62FE] font-medium">treadmills with decline</a>
+            will help you judge how much it matters.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Weight and frame</h3>
+          <p>
+            Sole's own assembly guide gives 314 lb assembled and 351 lb boxed; the Dyaco page and one
+            independent spec table give 319 lb. The difference is small and does not change any
+            decision — this is one of the heaviest folding treadmills sold for home use either
+            way. Sole's US material and Dick's describe an anodised aluminium Z-frame, while the
+            Dyaco page refers to a steel Z-frame. We do not know which applies to a given unit. The
+            same Sole assembly guide also lists the user weight as "35 lbs" in one place and 375 lb
+            elsewhere; the first is plainly a typo.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The motor figure</h3>
+          <p>
+            Sole quotes 4.0 HP without stating, in the material we saw, whether that is a
+            continuous-duty rating; one independent comparison table labels it 4.0 CHP. On a deck
+            this size and a machine this heavy, the motor is unlikely to be the limiting factor
+            for walking or running at home, but if you are comparing it against machines quoted in
+            continuous horsepower, read our
+            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
+            before treating the numbers as equivalent.
+          </p>`,
+    },
+    {
+      id: 'console',
+      heading: 'The 21.5-Inch Touchscreen, Apps and Subscriptions',
+      html: `          <p>
+            The screen is the F89's defining feature. It is a 21.5-inch touchscreen running
+            Android, fixed in place rather than swivelling, with Wi-Fi and Bluetooth. The Dyaco
+            product page lists a manual mode, seven standard programs, two heart-rate programs and
+            seven military fitness tests, plus up to twelve saved custom workouts and video
+            classes. Independent reviewers describe access to streaming apps such as Netflix,
+            Hulu and Disney+ on the console.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">No subscription required</h3>
+          <p>
+            Sole's own app, SOLE+, is free, and nothing on the F89 requires a paid membership to
+            work. The console connects over Bluetooth using the FTMS standard, and Sole names
+            Zwift and Kinomap as compatible; those are separate services with their own pricing,
+            which you would pay to the provider, not to Sole. Workout data can be shared with Apple
+            Health, Google Fit, Strava and others. Our guide to
+            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills that work without a subscription</a>
+            explains why that matters over the life of a machine, and our
+            <a href="/best-smart-treadmills/" class="text-[#0F62FE] font-medium">smart treadmill roundup</a>
+            covers machines built around a screen.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The risk with a large Android console</h3>
+          <p>
+            A big built-in screen is the part of a treadmill most likely to date. The frame, motor
+            and deck of a well-built machine can last a decade or more with maintenance; an Android
+            tablet built into a console depends on software updates and app compatibility that
+            the manufacturer controls. On a model Sole no longer sells, it is reasonable to ask how
+            long streaming apps and SOLE+ will keep running on that console, and what a
+            replacement console would cost if the screen failed after the warranty. We have no
+            information that support is ending, but it is a question to put to the seller and to
+            Sole before you pay a premium for the screen.
+          </p>
+          <p>
+            The console also handles the basics most owners use daily: toggle controls for speed
+            and incline, hand-pulse sensors, a heart-rate receiver for chest straps, cooling fans, a
+            tablet holder, wireless phone charging and Bluetooth speakers. Those work whether or not
+            you ever open an app.
+          </p>`,
+    },
+    {
+      id: 'what-reviewers-report',
+      heading: 'What Independent Reviewers Consistently Report',
+      html: `          <p>
+            We only repeat points that appear in more than one independent source. Three do.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">It is solid and stable</h3>
+          <p>
+            Reviewers who used the F89 describe it as stable and well built, including at speed and
+            during quick incline changes. That fits the published figures: a heavy frame, a 22-inch
+            deck and a 375 lb rating are the ingredients of a machine that does not move around
+            under a runner.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">It is very large and very heavy</h3>
+          <p>
+            Every source flags the size. At 314 to 319 lb assembled and with a boxed weight of
+            about 351 lb, this is not a machine you move without help or a dolly, and "folding" here
+            means it stands up rather than tucks away — folded it is still about 44 inches long
+            and roughly 71 inches tall. The step-up height is about eight inches, which is high
+            for anyone with limited mobility. Our guide to
+            <a href="/how-much-does-a-treadmill-weigh/" class="text-[#0F62FE] font-medium">how much a treadmill weighs</a>
+            explains what that means for floors and stairs.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The screen is the main difference from the F85</h3>
+          <p>
+            Reviewers and Sole itself place the F89 as an F85 with a larger screen and a different
+            frame, not a faster or stronger machine. The value question was always whether the
+            bigger screen was worth the difference in price.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Complaints and an open investigation</h3>
+          <p>
+            Individual owners have reported defective units and difficult warranty experiences on
+            retailer pages, as happens with every model; we have not counted them as a pattern.
+            Separately, in February 2026 a US law firm announced it was investigating reports of
+            console failures, early malfunctions and motor problems on the Sole ST90, F89, F85 and
+            F80, inviting owners to contact it. An investigation is not a finding, and we found no
+            lawsuit described on that page. We also searched the Consumer Product Safety
+            Commission's recall database for Sole on 14 October 2026 and found no recall or
+            stop-use warning for any Sole treadmill.
+          </p>`,
+    },
+    {
+      id: 'warranty-and-delivery',
+      heading: 'Warranty, Delivery and Assembly',
+      html: `          <p>
+            The F89's published warranty was lifetime on the frame and motor, three years on the
+            deck, parts and wear items, and one year of labour. Sole's own material and two
+            independent reviews agree on that. It is a strong set of terms, and one of the reasons
+            Sole's folding machines have long been recommended.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Check the terms for the unit you are buying</h3>
+          <p>
+            Two things complicate that now. First, Sole's 2026 models are listed with shorter
+            labour cover — 90 days on the current F63, F65, F80 and F85 — so do not assume the terms
+            that applied to the F89 when it was on Sole's store apply to a unit sold today. Second,
+            open-box, returned and ex-display units are often sold with reduced or seller-provided
+            cover rather than the manufacturer's full warranty. Before you buy, get in writing:
+            whether the unit is new, open-box or used; whether Sole's warranty applies and from what
+            date; what it covers and for how long; and who arranges a technician. Our
+            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
+            lists the questions.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Delivery and assembly</h3>
+          <p>
+            The box is about 86 by 39 by 17 inches and weighs around 351 lb. Kerbside delivery of a
+            box that size leaves you with a serious job getting it indoors, so price in-home
+            delivery or assembly if the seller offers it, and measure doorways, stairs and turns
+            first. Assembled, plan for a footprint of about 83 by 38 inches plus clearance behind
+            the deck, and a ceiling high enough for your height plus the step-up and incline. Our
+            <a href="/treadmill-delivery-guide/" class="text-[#0F62FE] font-medium">delivery guide</a>
+            covers what kerbside and white-glove service actually include.
+          </p>`,
+    },
+    {
+      id: 'f89-vs-current-range',
+      heading: 'Sole F89 vs F85, and What Replaced It',
+      html: `          <p>
+            Sole has not named a direct successor to the F89. On its US store today the top folding
+            model is the F85, and the newly added F83 sits below it. Neither has the F89's 21.5-inch
+            screen, and on Sole's current listings neither has decline.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Model</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Screen</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Deck</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Grade range</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">F89</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">21.5 in</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22 x 60 in</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Incline and decline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Off Sole’s store</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">F85 (2026 listing)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15.6 in</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22 x 60 in</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0-15%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Current, $2,099.99</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">F83 (2026 listing)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10.1 in</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22 x 60 in</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0-15%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Current, $1,699.99</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">F63</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">White LED</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20 x 60 in</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15 incline levels</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Current, $1,099.99</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            The F85, F83 and F63 figures are from Sole's own 2026 listings on 14 October 2026; prices are
+            Sole's sale prices that day. Sole lists the current F85 with a 3.5 HP motor and a 350 lb
+            rating, and the F83 with a 3.5 HP brushless motor and a 350 lb rating. Many reviews
+            still quote higher figures for the F85 from earlier production, which is why our
+            <a href="/best-sole-treadmills/" class="text-[#0F62FE] font-medium">Sole buying guide</a>
+            treats several current figures as unconfirmed — read it before relying on any F85 or F80
+            number you see elsewhere.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Which to choose</h3>
+          <p>
+            <strong>If you wanted the F89 for its deck and stability,</strong> the current F85 or F83
+            give you the same 22-inch width on a model Sole is selling now, for less money. You
+            give up the large screen and decline, and on Sole's listings some motor and capacity
+            headroom.
+          </p>
+          <p>
+            <strong>If you wanted it for decline,</strong> no current Sole folding model offers it
+            on Sole's listings. Look at our
+            <a href="/best-treadmills-with-decline/" class="text-[#0F62FE] font-medium">decline roundup</a>,
+            or at remaining F89 stock if the discount is real.
+          </p>
+          <p>
+            <strong>If you wanted a big built-in screen,</strong> the F89 was unusual in pairing one
+            with no required subscription. Most large-screen treadmills now come from
+            subscription-led brands; our
+            <a href="/sole-vs-nordictrack/" class="text-[#0F62FE] font-medium">Sole versus NordicTrack comparison</a>
+            sets out that trade-off.
+          </p>
+          <p>
+            <strong>If you simply want a reliable folding treadmill,</strong> the
+            <a href="/sole-f63-treadmill/" class="text-[#0F62FE] font-medium">F63</a>
+            is the value pick in Sole's range and covers walking and running for most people of
+            average build.
+          </p>`,
+    },
+    {
+      id: 'buying-one-now',
+      heading: 'Buying a Sole F89 Now: Remaining Stock, Open-Box and Used',
+      html: `          <p>
+            Because the F89 is no longer on Sole's own stores, every unit you find will come
+            through one of three channels, and each needs a different set of checks.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Remaining new stock at a retailer</h3>
+          <p>
+            A sealed unit from an authorised retailer is the best case. Ask when it was made —
+            the date is usually on the serial label — and confirm the warranty is Sole's full
+            manufacturer warranty starting from your delivery date. Compare the price against the
+            current F85: if the F89 is not clearly cheaper, the newer model with active support is
+            the better buy unless you specifically need decline or the larger screen.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Open-box, returned or ex-display</h3>
+          <p>
+            These can be good value on a machine this size, because a returned treadmill is often
+            a delivery or space problem rather than a fault. But the warranty may be reduced, the
+            console may have been used heavily on a shop floor, and parts can be missing. Ask for
+            the condition grade, what is included, and the warranty in writing. Our
+            <a href="/refurbished-treadmills/" class="text-[#0F62FE] font-medium">open-box and refurbished guide</a>
+            explains the grades.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Used, privately</h3>
+          <p>
+            A used F89 is a heavy machine with a complex console, so inspect it running. Walk and
+            run on it, take it through the full incline and decline range, fold and unfold it, and
+            check that the touchscreen boots, connects to Wi-Fi and opens SOLE+. Ask whether the
+            seller registered it with Sole and whether any warranty remains; manufacturers often
+            limit cover to the original owner. Then price in moving it: at over 300 lb, collection
+            is a two- or three-person job with a dolly. Our
+            <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a>
+            covers the rest.
+          </p>`,
+    },
+    {
+      id: 'verdict',
+      heading: 'The Verdict',
+      html: `          <p>
+            On its published figures the Sole F89 was one of the best-specified folding treadmills
+            sold for home use: a full 22 by 60-inch deck, a 375 lb rating, incline and decline, and
+            a very large screen that did not lock you into a subscription. Reviewers who used it
+            found it stable and solid. Its weaknesses were size, weight, price and a console that
+            will age faster than the rest of the machine.
+          </p>
+          <p>
+            The decision now turns on availability rather than quality. With the F89 gone from
+            Sole's US, Canadian and UK stores, buy one only as remaining, open-box or used stock at
+            a price clearly below the current F85, and only with the warranty confirmed in writing.
+            If the discount is small, or the warranty unclear, buy a model Sole is still selling.
+            We have not tested the F89; this verdict is based on what Sole and independent
+            reviewers have published.
+          </p>`,
+    },
+  ],
+  faqs: [
+    {
+      q: 'Is the Sole F89 discontinued?',
+      a: 'It has been removed from Sole’s own stores. On 14 October 2026 it was not among the eight treadmills on Sole’s US site, its product page returned not found, and Sole’s Canadian and UK sites did not list it. We found no statement from Sole confirming discontinuation or naming a replacement, so ask Sole directly if it matters to you.',
+    },
+    {
+      q: 'What replaced the Sole F89?',
+      a: 'Sole has not named a direct replacement. Its top folding model on the US store is now the F85, with a 22 by 60-inch deck and 15.6-inch screen, and the new F83 also has a 22-inch deck. Neither has the F89’s 21.5-inch screen, and Sole’s current listings show no decline on either.',
+    },
+    {
+      q: 'What is the difference between the Sole F85 and F89?',
+      a: 'Sole’s own comparison described the same core: a 4.0 HP motor, 22 by 60-inch deck, 12 mph, incline and decline and a 375 lb rating. The F89 added a 21.5-inch Android touchscreen and an aluminium frame. Those F85 figures describe the earlier F85; Sole’s current F85 listing gives 3.5 HP, 350 lb and no decline.',
+    },
+    {
+      q: 'How much does the Sole F89 weigh?',
+      a: 'Sole’s assembly guide gives 314 lb assembled and 351 lb in the box; Sole’s parent company’s product page and one independent spec table give 319 lb. Either way it is one of the heaviest folding treadmills for home use, and moving it safely takes at least two people and a dolly.',
+    },
+    {
+      q: 'Does the Sole F89 need a subscription?',
+      a: 'No. The console runs Sole’s free SOLE+ app and its built-in programs without any membership. Zwift and Kinomap are supported over Bluetooth if you choose to pay for them, and streaming apps can be used with your own accounts. Nothing on the treadmill itself stops working without a subscription.',
+    },
+    {
+      q: 'Is a used Sole F89 worth buying?',
+      a: 'It can be, at a fair discount, if you test it running through its full incline and decline range, confirm the touchscreen boots and connects, and can move a machine of over 300 lb. Ask whether any warranty remains and whether it transfers. If the price is close to a new current Sole model, buy the new one.',
+    },
+  ],
+  mistakesHeading: 'Common Mistakes Buying a Sole F89',
+  mistakesIntro:
+    'With the F89 off Sole’s own stores, the risks are mostly about warranty, price and old figures. These are the four that matter most.',
+  mistakes: [
+    {
+      title: 'Assuming the old warranty applies to the unit you are buying',
+      body: 'The lifetime frame and motor terms were published for new units sold through Sole’s channels. An open-box, ex-display or used F89 may carry reduced cover, seller cover or none. Get the terms for the exact unit in writing — length, what is covered, labour, and who sends a technician — before you pay.',
+    },
+    {
+      title: 'Paying close to the old price for remaining stock',
+      body: 'The F89 was last listed by Sole at $2,599.99 on sale. A model that has left the manufacturer’s store should cost noticeably less than a current one with active support. If the F89 is priced near the current F85, the F85 is the safer purchase unless you specifically need decline or the larger screen.',
+    },
+    {
+      title: 'Mixing up F89 and F85 figures',
+      body: 'Many reviews and even Sole’s own July 2026 comparison quote the earlier F85’s 4.0 HP, 375 lb and decline. Sole’s current F85 listing gives 3.5 HP, 350 lb and no decline. When you compare the two, use the current listing for the F85 and the agreed F89 figures, not a page that blends generations.',
+    },
+    {
+      title: 'Underestimating the size and weight',
+      body: 'At 314 to 319 lb, about 83 by 38 inches assembled and roughly 71 inches tall when folded, the F89 is not a machine that disappears. Measure the route in, the room, the ceiling height and the floor before you commit, and plan the move with help and a dolly rather than finding out on delivery day.',
+    },
+  ],
+  relatedHeading: 'Related Reviews &amp; Guides',
+  related: [
+    {
+      kicker: 'Brand Roundup',
+      title: 'Best Sole Treadmills',
+      blurb: 'Sole’s current 2026 range, with the contested figures left out.',
+      url: '/best-sole-treadmills/',
+    },
+    {
+      kicker: 'Model Review',
+      title: 'Sole F63 Treadmill',
+      blurb: 'The value pick in Sole’s folding range for most walkers and runners.',
+      url: '/sole-f63-treadmill/',
+    },
+    {
+      kicker: 'Roundup',
+      title: 'Treadmills With Decline',
+      blurb: 'Current machines that go downhill as well as up.',
+      url: '/best-treadmills-with-decline/',
+    },
+  ],
+  bottomLine: [
+    `<strong class="text-white">The Sole F89 was a strong flagship folding treadmill, and as of
+          14 October 2026 it is no longer sold on Sole's own stores.</strong> Its 22 by 60-inch
+          deck, 375 lb rating, incline and decline and 21.5-inch subscription-free screen made it
+          one of the best-specified machines of its type, and reviewers found it stable. Its
+          weaknesses were size, weight, price and a console that will date before the frame does.`,
+    `Buy one now only as remaining, open-box or used stock at a clear discount, with the warranty
+          in writing. Otherwise choose from Sole's current range in our
+          <a href="/best-sole-treadmills/" class="text-[#5AA9FF] font-bold no-underline">best Sole treadmills guide</a>,
+          or start with the
+          <a href="/sole-f63-treadmill/" class="text-[#5AA9FF] font-bold no-underline">Sole F63</a>
+          if you want a dependable folding treadmill for far less.`,
+  ],
+};

@@ -1,0 +1,491 @@
+export default {
+  slug: 'east-urban-home-treadmill',
+  title: 'East Urban Home Compact Foldable Electric Treadmill (2026): A Listing Check',
+  description:
+    'Is there an East Urban Home compact foldable electric treadmill? Who makes Wayfair house-brand products, what the listings show, returns, warranty and what to check.',
+  crumbLabel: 'East Urban Home Treadmill',
+  kicker: 'Model Review',
+  updated: 'October 2026',
+  updatedLong: 'October 14, 2026',
+  published: '2026-10-14',
+  socialProof: '1.4k',
+  h1: ['East Urban Home Compact Foldable', 'Electric Treadmill, Checked'],
+  standfirst:
+    'East Urban Home is one of Wayfair’s house labels, not a fitness brand. When we went looking for its compact foldable electric treadmill, what we found was a listing title shared across several Wayfair labels — and spec sheets that describe tables and chaise cushions rather than a treadmill.',
+  ctas: [
+    { label: 'What We Found', href: '#what-we-found' },
+    { label: 'What to Check', href: '#what-to-check' },
+  ],
+  tags: [
+    'east urban home compact foldable electric treadmill',
+    'east urban home treadmill',
+    'east urban home folding treadmill',
+    'wayfair compact foldable electric treadmill',
+    'east urban home brand',
+  ],
+  stickyCta: { text: 'See What to Check', link: '#what-to-check' },
+  breadcrumb: { name: 'Reviews', url: '/reviews/' },
+  lead: `People search for the East Urban Home compact foldable electric treadmill as if it were a
+          model, the way they would search for a Bowflex T6 or a Sole F63. It is not one, as far as
+          we can establish. East Urban Home is a Wayfair house label that sits on curtains, bath
+          rugs, bed frames and cat scratchers, and the "Compact Foldable Electric Treadmill" title
+          is used on listings under several other Wayfair labels too. This page sets out what can
+          be confirmed about the brand and the listings, what cannot, and what to check before you
+          spend money on any treadmill sold this way.`,
+  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
+          14 October 2026 we searched wayfair.com for East Urban Home treadmills and for the
+          "Compact Foldable Electric Treadmill" title, opened every matching listing we could find
+          and recorded the brand label, price, product type, weight and description shown on each.
+          We checked the East Urban Home brand page on Wayfair, Wayfair’s annual report for 2025
+          (filed with the SEC in February 2026) and an independent explainer on Wayfair’s house
+          brands, and we searched the CPSC recall database for the label. We could not find an East
+          Urban Home treadmill listing, so this page gives no specifications for one, and we have
+          not tested any machine sold under this title. Wayfair listings change often; a listing may
+          be corrected, replaced or removed after the date above.`,
+  sections: [
+    {
+      id: 'short-answer',
+      heading: 'East Urban Home Compact Foldable Electric Treadmill: The Short Answer',
+      html: `          <p>
+            <strong>We could not confirm that an East Urban Home compact foldable electric treadmill
+            exists as a distinct, specified machine.</strong> East Urban Home is a Wayfair house
+            label, not a treadmill manufacturer, and on 14 October 2026 a search of Wayfair for East
+            Urban Home treadmills returned cat exercise wheels, gym mirrors and a weight bench under
+            that label — but no treadmill for people.
+          </p>
+          <p>
+            What does exist is the listing title. "Compact Foldable Electric Treadmill", with small
+            variations, appears on Wayfair listings under at least seven other house labels: August
+            Grove, Red Barrel Studio, Rosalind Wheeler, 17 Stories, Latitude Run, Ebern Designs and
+            Wrought Studio. Every one of those listings that we opened carried a specification sheet
+            for something else entirely — a round coffee table, a six-seat dining table, a glass side
+            table, a pool chaise cushion, a chaise lounge set. None had a single customer review.
+          </p>
+          <p>
+            So the honest answer is not a verdict on a machine, because there is no machine we can
+            identify. It is advice about the listing: do not buy a treadmill from a page whose title
+            and specification sheet describe different products, whatever the price. If you want an
+            inexpensive folding treadmill or walking pad, buy one whose maker you can name, whose
+            specification you can check against a second source, and whose warranty you can read
+            before you order. Our
+            <a href="/wayfair-treadmills/" class="text-[#0F62FE] font-medium">guide to buying a treadmill on Wayfair</a>
+            explains how to do that on Wayfair specifically.
+          </p>`,
+    },
+    {
+      id: 'who-makes-it',
+      heading: 'Who Makes East Urban Home Products?',
+      html: `          <p>
+            Nobody called East Urban Home makes them. East Urban Home is one of the names Wayfair
+            uses to group and present products that are made by other companies, and that is how
+            Wayfair describes the arrangement itself.
+          </p>
+          <p>
+            Wayfair’s annual report for 2025 says the company sells more than 40 million products
+            from approximately 20 thousand suppliers, and that it has built "a portfolio of over one
+            hundred house brands" which offer "curated selections refined by style and price point".
+            The same report says the majority of its products are shipped directly from suppliers:
+            its primary fulfilment method is a drop-ship network in which an order goes straight to a
+            supplier’s warehouse and Wayfair arranges shipment from that warehouse to your home, with
+            a growing share passing through Wayfair’s own CastleGate warehouses instead.
+          </p>
+          <p>
+            An independent explainer published by Gear Patrol puts it more bluntly: Wayfair does not
+            own factories, typically does not design products itself, and most of what it sells are
+            white-label products bought from a supplier and given a new name. That article dates from
+            2022, but the model it describes matches what Wayfair’s own 2025 filing says.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What that means for a treadmill</h3>
+          <p>
+            For a sofa or a rug, a house label is a reasonable way to shop by style. For a motorised
+            treadmill it hides the one piece of information that matters most after purchase: who
+            made the machine, and therefore who stands behind the motor, the controller and the
+            spare parts. A treadmill is a powered machine that people stand on at speed. The name on
+            the listing should lead you to a manufacturer with a manual, a parts supply and a
+            warranty process. A house label does not.
+          </p>
+          <p>
+            You can see the arrangement in East Urban Home’s own range. On 14 October 2026 Wayfair
+            listed under that label, among much else, blackout curtains, bath rug sets, platform bed
+            frames, counter stools, floor lamps, writing desks, cat scratchers, frameless gym mirrors
+            and three cat exercise wheels described as "cat treadmills". One listing carried both
+            names in its title: an East Urban Home adjustable weight bench that also names Soozier,
+            a fitness brand that Wayfair also lists under its own name. That is the white-label model in a
+            single line — a supplier’s product, presented under a Wayfair label.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Not the same as other "East Urban Home" websites</h3>
+          <p>
+            Searching for the name also turns up independent websites using it for furniture and
+            printed décor businesses. We did not establish any link between those sites and
+            Wayfair’s label, and neither sells exercise equipment. If you are trying to reach whoever
+            stands behind a Wayfair East Urban Home product, the route is Wayfair’s customer service,
+            not a website that happens to share the name.
+          </p>`,
+    },
+    {
+      id: 'what-we-found',
+      heading: 'What We Found When We Looked for the Treadmill',
+      html: `          <p>
+            We searched Wayfair on 14 October 2026 for East Urban Home treadmills and for the
+            compact foldable electric treadmill title, then opened each listing and read its
+            specification block. The table records what each listing showed on that day.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">House label on listing</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Price shown</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">What the specification sheet describes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">August Grove (two listings)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$273.99 and $289.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Coffee table, about 29 lb, 60 lb capacity</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Red Barrel Studio</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$269.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Coffee table, about 29 lb</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rosalind Wheeler</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$279.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Coffee table, about 29 lb</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">17 Stories</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$299.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Dining table seating six, about 74 lb</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Latitude Run</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$649.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Chaise lounge set, about 45 lb</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Ebern Designs</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$109.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Single chaise cushion, about 4.4 lb</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Wrought Studio</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$128.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Tempered-glass round table, about 7.9 lb</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">East Urban Home</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No listing found</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not applicable</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            The descriptions were inconsistent in the same way. Some listings opened with general
+            treadmill copy — adjustable speed, space-saving design, a smooth and quiet run — and then
+            gave a specification sheet for furniture. Others had a description of a farmhouse round
+            table or a rattan chaise under the treadmill title. The main images we opened on two of
+            the listings showed a wooden round table and a trestle dining table. None of the
+            listings had any customer reviews.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What this does and does not tell you</h3>
+          <p>
+            It tells you that the title is not a reliable guide to the product on these pages. A
+            treadmill does not weigh 4.4 lb or carry a 60 lb weight limit, and a listing that says
+            otherwise cannot be read as a description of a treadmill. It does not tell you why the
+            listings look like this. It may be a data error in a supplier’s feed, a mismatch between
+            the title and the product record, or something else, and we have no information about
+            which. We are not suggesting anyone set out to mislead; we are saying the listings, as
+            published on that day, did not describe a treadmill you could evaluate.
+          </p>
+          <p>
+            It also does not tell you that no East Urban Home treadmill has ever been listed. Wayfair
+            listings come and go, and the search volume behind this keyword suggests people have seen
+            the name attached to the title somewhere. If you find such a listing, the checks later on
+            this page apply to it exactly as they apply to the ones in the table.
+          </p>`,
+    },
+    {
+      id: 'specifications',
+      heading: 'East Urban Home Treadmill Specifications: What Can Be Confirmed',
+      html: `          <p>
+            None. We cannot give a motor rating, belt size, speed range, incline, weight capacity,
+            folded size or machine weight for an East Urban Home compact foldable electric treadmill,
+            because we could not find a listing for one, and the listings that use the same title
+            under other labels do not describe a treadmill at all.
+          </p>
+          <p>
+            This is the point at which many pages about a product like this fill the gap with typical
+            figures for a budget folding treadmill and present them as the product’s specification.
+            We are not going to do that. A specification on this site is a figure the manufacturer or
+            its official retailer publishes and at least one independent source agrees with. Here
+            there is no manufacturer to check against, and the retailer listings contradict
+            themselves.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The figures you should insist on seeing</h3>
+          <p>
+            If you are considering any compact folding treadmill sold under a house label, these are
+            the numbers that should be on the listing, consistent with each other and with the
+            photographs, before you buy:
+          </p>
+          <ul>
+            <li><strong>Belt or running area</strong>, length and width. Our
+              <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
+              explains what length a walking or running stride needs.</li>
+            <li><strong>Motor rating</strong>, and whether it is a continuous or a peak figure. Our
+              <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
+              explains why a peak number on its own says little.</li>
+            <li><strong>Speed range and incline</strong>, and whether the incline is motorised or set
+              by hand.</li>
+            <li><strong>Maximum user weight</strong>, read alongside the machine’s own weight. Our
+              <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">weight capacity guide</a>
+              explains why the two belong together.</li>
+            <li><strong>Assembled and folded dimensions</strong>, and the machine weight, so you know
+              whether one person can move it.</li>
+            <li><strong>Warranty length by component</strong> — frame, motor, parts, labour — and who
+              honours it.</li>
+          </ul>
+          <p>
+            A listing that cannot supply these, or supplies figures that plainly belong to another
+            product, has not described a machine you can judge. That is reason enough to move on.
+          </p>`,
+    },
+    {
+      id: 'warranty-returns',
+      heading: 'Warranty and Returns When You Buy Through Wayfair',
+      html: `          <p>
+            Because Wayfair is the retailer of record for house-label products, its policies are the
+            ones you deal with. Wayfair’s annual report describes the company as the party
+            responsible for fulfilling the order, setting the price and selecting the supplier, so
+            for a house-label item your contract is with Wayfair rather than with an unnamed factory.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Returns</h3>
+          <p>
+            The listings we opened all carried Wayfair’s standard notice: returns for most items
+            within 30 days of delivery, for a refund or store credit. "Most items" is doing real work
+            in that sentence. Independent guides to Wayfair’s policy describe conditions that matter
+            for a treadmill in particular: items generally need to be in original condition and
+            packaging, return shipping is usually the buyer’s cost unless the item arrived damaged or
+            defective, and items marked non-returnable on the listing are excluded. One widely read
+            guide says items should be unassembled, which on a treadmill you have already built and
+            tried is a significant condition. Check the current wording on the listing and in
+            Wayfair’s help centre before you order, and our
+            <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies guide</a>
+            lists the questions to ask.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Warranty</h3>
+          <p>
+            The warranty fields on these listings were thin. They showed "Limited Warranty",
+            "Commercial Warranty: No" and, on some, a warranty length of 90 days or 30 days. On a
+            listing whose specification sheet describes a coffee table, there is no way to know
+            whether that warranty field was written for the table or for a treadmill, and either way
+            it does not say who services a failed motor. For a real treadmill you want a named
+            manufacturer, cover stated by component, and a process for getting parts. Our
+            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
+            explains what a reasonable minimum looks like at each price.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Protection plans and assembly add-ons</h3>
+          <p>
+            Several of the listings offered a five-year protection plan and a professional assembly
+            service as checkout add-ons. Wayfair’s protection plans are administered by SquareTrade,
+            an Allstate company, and for mechanical and electrical products the administrator’s
+            Wayfair page says breakdown cover begins after the manufacturer’s warranty ends. Buying
+            five years of cover on a product you cannot identify is not protection in any useful
+            sense. If you buy a treadmill on Wayfair and want a plan, buy it for a machine whose
+            maker and base warranty you know, and read the plan’s terms for how fitness equipment is
+            treated.
+          </p>`,
+    },
+    {
+      id: 'what-to-check',
+      heading: 'What to Check Before Buying Any Wayfair House-Brand Treadmill',
+      html: `          <p>
+            The same checks work whether the label is East Urban Home, August Grove or any of the
+            others, and they take about ten minutes.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">1. Read the specification sheet before the title</h3>
+          <p>
+            Scroll past the title and the bullet points to the specifications block. The product
+            type should say treadmill, the weight should be plausible for a motorised machine, and
+            the dimensions should match a deck you could walk on. A treadmill title over a coffee
+            table’s dimensions is the end of the evaluation, not the start of a negotiation.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">2. Look at every photograph</h3>
+          <p>
+            Check that the images show a treadmill, that the console and deck in the photos match
+            the features described, and that the photographs are consistent with each other. Mixed
+            photo sets are a common sign that a listing has been assembled from more than one
+            product record.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">3. Find the maker</h3>
+          <p>
+            Ask Wayfair customer service, in writing, who manufactures the item and what its model
+            number is. If they can tell you, search that model number elsewhere and see whether the
+            figures agree. If nobody can tell you, you will not be able to find a manual, buy a
+            replacement belt or motor controller, or check for a recall.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">4. Look for reviews of this exact listing</h3>
+          <p>
+            A listing with no reviews is not automatically bad; every product starts with none. But
+            for a powered machine at a low price, a complete absence of owner reports means you are
+            the test. If reviews exist, read the one- and two-star ones first and check that they
+            describe a treadmill. Our
+            <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium">guide to reading treadmill reviews</a>
+            covers what to look for.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">5. Confirm returns and warranty in writing</h3>
+          <p>
+            Check the listing for a non-returnable flag, ask how a return of a boxed treadmill would
+            be collected and what it would cost, and get the warranty terms — length, components,
+            who honours it — before you pay. Keep the reply with your order confirmation.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">6. Check for recalls and warnings</h3>
+          <p>
+            Search cpsc.gov for the manufacturer and model once you know them. On 14 October 2026 we
+            found no CPSC recall under the East Urban Home name, but a house label is not what a
+            recall notice would name; it would name the maker. That is one more reason the
+            manufacturer’s name matters.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">7. If the listing fails, report it and buy elsewhere</h3>
+          <p>
+            A listing whose title and specification describe different products is worth reporting
+            to Wayfair so it can be corrected. Then buy a machine you can identify, from Wayfair or
+            anywhere else.
+          </p>`,
+    },
+    {
+      id: 'if-you-want-one',
+      heading: 'If You Want a Compact Foldable Electric Treadmill, Start Here Instead',
+      html: `          <p>
+            The underlying want behind this search is clear enough: a small, inexpensive, electric
+            treadmill that folds away. That is a real category with real, identifiable products, and
+            there is no need to take a chance on an unidentifiable one to get it.
+          </p>
+          <p>
+            <strong>Decide whether you need a treadmill or a walking pad.</strong> If you mainly want
+            to walk — at a desk, while watching television, in short sessions — a walking pad is
+            smaller, lighter and cheaper. If you want to jog or run, you need a longer belt, a higher
+            top speed and a heavier frame, and that means a folding treadmill. Our
+            <a href="/walking-pad-vs-folding-treadmill/" class="text-[#0F62FE] font-medium">walking pad versus folding treadmill comparison</a>
+            sets out where the line falls.
+          </p>
+          <p>
+            <strong>For a budget walking pad,</strong> our
+            <a href="/best-treadmills-under-300/" class="text-[#0F62FE] font-medium">treadmills under $300</a>
+            roundup lists machines whose makers and figures we could cross-check, and the
+            <a href="/walking-pad-buying-guide/" class="text-[#0F62FE] font-medium">walking pad buying guide</a>
+            explains which listing claims to trust. Our reviews of the
+            <a href="/treaflow-walking-pad/" class="text-[#0F62FE] font-medium">Treaflow walking pad</a>
+            and the
+            <a href="/wellfit-tm037-treadmill/" class="text-[#0F62FE] font-medium">Wellfit TM037</a>
+            show what reading a budget listing carefully looks like.
+          </p>
+          <p>
+            <strong>For a folding treadmill you can jog on,</strong> start with our
+            <a href="/best-treadmills-under-500/" class="text-[#0F62FE] font-medium">treadmills under $500</a>
+            and
+            <a href="/best-folding-treadmill-reviews/" class="text-[#0F62FE] font-medium">best folding treadmills</a>
+            pages, and use
+            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">our space requirements guide</a>
+            to check that it fits the room with the clearance behind it.
+          </p>
+          <p>
+            <strong>If you specifically want to buy from Wayfair</strong> — for its delivery, its
+            financing or a gift card — that is perfectly workable. Search by a manufacturer name you
+            recognise rather than by a house label, and apply the checks above. Our
+            <a href="/wayfair-treadmills/" class="text-[#0F62FE] font-medium">Wayfair treadmill buying guide</a>
+            covers the rest. The same caution applies to marketplace-only names elsewhere; our page on
+            the
+            <a href="/streamdale-folding-treadmill/" class="text-[#0F62FE] font-medium">Streamdale folding treadmill</a>
+            works through a seller whose catalogue raises similar questions.
+          </p>`,
+    },
+    {
+      id: 'why-it-matters',
+      heading: 'Why the Maker Matters More on a Treadmill Than on Furniture',
+      html: `          <p>
+            It is easy to read all this as fussiness. Plenty of people buy house-label furniture
+            without knowing the factory, and it works out fine. A treadmill is different in three
+            ways that make the maker’s name worth insisting on.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">It wears out in predictable places</h3>
+          <p>
+            A sofa can last decades with no parts. A treadmill has a belt, a deck, rollers, a drive
+            belt, a motor and a controller, all of which wear, and on budget machines the controller
+            and motor are the common failures. Replacing them needs the right part for the right
+            model. Without a manufacturer and model number you cannot order one, and a cheap machine
+            that fails after the warranty becomes scrap rather than a repair. Our
+            <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">guide to how long treadmills last</a>
+            covers what to expect at each price.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">It can hurt you if it goes wrong</h3>
+          <p>
+            A belt that surges, a stop control that does not stop it, or a controller that overheats
+            is a safety problem, not an inconvenience. In April 2026 the CPSC told owners of Sperax
+            walking pads to stop using them after reports of uncontrolled speed changes, falls and
+            fires, and said the importer had refused an acceptable recall. That warning could only
+            reach owners because the product had a name. Our
+            <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety guide</a>
+            covers what to watch for on any machine.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Its specifications are easy to inflate</h3>
+          <p>
+            Peak horsepower, capacity and noise figures on budget machines are often marketing
+            numbers. The only check on them is comparison: the same model described the same way by
+            its maker and by someone independent. A label that exists only on one retailer’s site
+            removes that check entirely.
+          </p>`,
+    },
+  ],
+  faqs: [
+    {
+      q: 'Who makes the East Urban Home compact foldable electric treadmill?',
+      a: `We could not identify a maker, or confirm that an East Urban Home treadmill is currently listed. East Urban Home is a Wayfair house label applied to products from outside suppliers. Wayfair says it sells products from roughly 20 thousand suppliers and uses over one hundred house brands. Ask Wayfair customer service in writing for the manufacturer and model number of any listing before buying.`,
+    },
+    {
+      q: 'Is East Urban Home a real brand?',
+      a: `It is a real Wayfair label, used on a very wide range of products including curtains, rugs, beds, lamps, desks and pet items. It is not an independent company that designs or builds treadmills. Other websites using the same name for furniture and décor businesses are not, as far as we could establish, connected to Wayfair's label.`,
+    },
+    {
+      q: 'Why does the compact foldable electric treadmill listing show a table?',
+      a: `We do not know. On 14 October 2026 every Wayfair listing we opened with this title, under seven house labels, had a specification sheet for another product, such as a coffee table, dining table, glass side table or chaise cushion. It may be a data error. Whatever the cause, do not buy a treadmill from a listing whose title and specifications disagree.`,
+    },
+    {
+      q: 'What warranty does an East Urban Home treadmill come with?',
+      a: `We cannot say, because we found no East Urban Home treadmill listing. The similar listings under other labels showed only a limited warranty of 30 or 90 days with no component breakdown. For any treadmill, get the warranty length for frame, motor, parts and labour, and the name of whoever honours it, in writing before you order.`,
+    },
+    {
+      q: 'Can I return a treadmill to Wayfair?',
+      a: `Wayfair accepts returns on most items within 30 days of delivery, for a refund or store credit. Independent guides say return shipping is usually deducted unless the item is damaged or defective, items should be in original condition and packaging, and listings marked non-returnable are excluded. Check the listing and Wayfair's help centre for the current terms before buying.`,
+    },
+    {
+      q: 'What should I buy instead?',
+      a: `A treadmill or walking pad whose maker and model you can name and whose figures agree across two sources. For walking, a budget walking pad from a known brand is usually the better buy; for jogging, a folding treadmill with a longer belt. Our roundups of treadmills under $300 and under $500 list machines we could cross-check.`,
+    },
+  ],
+  mistakesHeading: 'Common Mistakes With House-Brand Treadmill Listings',
+  mistakesIntro:
+    'Most of these come from reading a retailer listing as if the title were a specification. These are the four that matter most.',
+  mistakes: [
+    {
+      title: 'Treating a house label as a manufacturer',
+      body: `A Wayfair label tells you how the product is merchandised, not who built it or who supplies its parts. For a treadmill that matters, because motors, controllers and belts wear out and must be replaced with parts for that exact model. Before you buy, find out the manufacturer and model number. If nobody can tell you, assume you will not be able to repair it.`,
+    },
+    {
+      title: 'Reading the title and skipping the specification sheet',
+      body: `On the listings we checked, the title said treadmill and the specification block said coffee table, dining table or chaise cushion. Titles are the easiest part of a listing to write and the least reliable. Read the product type, weight and dimensions first. A treadmill weighing a few pounds, or carrying a 60 lb limit, is not a treadmill you can evaluate.`,
+    },
+    {
+      title: 'Buying a protection plan for an unidentified product',
+      body: `Checkout add-ons such as a five-year protection plan look like reassurance. But a plan's value depends on knowing the base warranty it follows and the product it covers, and for mechanical products breakdown cover generally starts after the manufacturer's warranty ends. Identify the machine and its maker's warranty first, then decide whether extra cover is worth paying for.`,
+    },
+    {
+      title: 'Assuming the return window solves everything',
+      body: `Thirty days sounds generous, but treadmill returns usually involve return shipping costs deducted from the refund, original packaging and condition requirements, and a non-returnable flag on some listings. Building and trying a treadmill can make it harder to return. Confirm the exact terms before ordering, keep the box, and test the machine properly in the first few days.`,
+    },
+  ],
+  relatedHeading: 'Related Reviews &amp; Guides',
+  related: [
+    {
+      kicker: 'Where to Buy',
+      title: 'Buying a Treadmill on Wayfair',
+      blurb: 'House brands, name brands, delivery, returns and protection plans.',
+      url: '/wayfair-treadmills/',
+    },
+    {
+      kicker: 'Buying Guide',
+      title: 'Walking Pad Buying Guide',
+      blurb: 'Which budget listing claims to trust, and which to discount.',
+      url: '/walking-pad-buying-guide/',
+    },
+    {
+      kicker: 'Price',
+      title: 'Best Treadmills Under $500',
+      blurb: 'Folding machines whose makers and figures we could cross-check.',
+      url: '/best-treadmills-under-500/',
+    },
+  ],
+  bottomLine: [
+    `<strong class="text-white">There is no East Urban Home treadmill we can identify, and the
+            listings that share its title describe furniture.</strong> East Urban Home is a Wayfair
+            house label applied to other companies’ products. On the day we checked, the "Compact
+            Foldable Electric Treadmill" title sat on listings under seven other Wayfair labels whose
+            specification sheets described tables and chaise cushions, and we found no East Urban
+            Home version at all.`,
+    `Do not buy a treadmill from a listing you cannot reconcile. Buy one whose maker, model and
+            warranty you can name — the
+            <a href="/wayfair-treadmills/" class="text-[#5AA9FF] font-bold no-underline">Wayfair treadmill buying guide</a>
+            shows how to do that on Wayfair, and
+            <a href="/best-treadmills-under-500/" class="text-[#5AA9FF] font-bold no-underline">our under-$500 roundup</a>
+            lists machines we could check.`,
+  ],
+};

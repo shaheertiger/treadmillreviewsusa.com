@@ -40,7 +40,7 @@ export default {
           </p>
           <ul>
             <li><strong>A belt long enough for your stride.</strong> Pads commonly run from about
-            34 to 47 inches of belt length. Longer is better for anyone around 5 foot 8 or taller,
+            34 to 48 inches of belt length. Longer is better for anyone around 5 foot 8 or taller,
             or anyone who will walk faster than about 3 mph.</li>
             <li><strong>A continuous-duty motor rating</strong>, not just a peak figure, and a top
             speed that covers how fast you actually walk.</li>
@@ -88,10 +88,11 @@ export default {
       heading: 'Belt Length and Width',
       html: `          <p>
             <strong>Length is the first filter.</strong> Walking pad belts commonly range from
-            about 34 to 47 inches long, against roughly 55 to 60 inches on a full treadmill. Stride
+            about 34 to 48 inches long, against roughly 55 to 60 inches on a full treadmill. Stride
             length grows with speed and with height, and a belt that is fine at a slow amble can
             force a shortened, unnatural step at a brisk walk. You tend to adapt without noticing,
-            which is exactly why it causes trouble later.
+            which is exactly why it causes trouble later. If you are tall, start with the
+            <a href="/best-walking-pads-for-tall-people/" class="text-[#0F62FE] font-medium">best walking pads for tall people</a>.
           </p>
           <p>
             As a working rule, if you are under about 5 foot 8 and walking below about 3 mph, most
@@ -404,7 +405,7 @@ export default {
     },
     {
       q: 'How long should a walking pad belt be?',
-      a: `Walking pad belts commonly run from about 34 to 47 inches. If you are under about 5 foot 8 and walk below about 3 mph, most lengths will not limit you. If you are taller, walk faster, or several people of different heights will use it, choose a longer belt and buy for the tallest user.`,
+      a: `Walking pad belts commonly run from about 34 to 48 inches. If you are under about 5 foot 8 and walk below about 3 mph, most lengths will not limit you. If you are taller, walk faster, or several people of different heights will use it, choose a longer belt and buy for the tallest user.`,
     },
     {
       q: 'Is a walking pad with a handrail better?',

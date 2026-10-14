@@ -1,0 +1,684 @@
+export default {
+  slug: 'bowflex-t9-treadmill',
+  title: 'Bowflex T9 Treadmill Reviews (2026): Specs, Warranty, T6 and T16',
+  description:
+    'Bowflex T9 treadmill reviews, read together: a 22 x 60 in. folding deck, 15% incline, 350 lb rating and lifetime frame and motor cover. What owners report and who should buy it.',
+  crumbLabel: 'Bowflex T9 Treadmill',
+  kicker: 'Model Review',
+  updated: 'October 2026',
+  updatedLong: 'October 14, 2026',
+  published: '2026-10-14',
+  socialProof: '1.9k',
+  h1: ['Bowflex T9', 'Treadmill Review'],
+  standfirst:
+    'The T9 is the middle of Bowflex’s treadmill range and, on its published figures, the one built for runners: a 22-inch-wide deck, incline to 15%, a 350 lb rating and a console that needs no subscription. This review sets out what Bowflex and independent reviewers agree on, what they report about living with it, and when the T6 or T16 is the better buy.',
+  ctas: [
+    { label: 'The Specifications', href: '#specifications' },
+    { label: 'Who Should Buy It', href: '#who-should-buy' },
+  ],
+  tags: [
+    'bowflex t9 treadmill reviews',
+    'bowflex t9 treadmill',
+    'bowflex t9 review',
+    'bowflex t9 vs t6',
+    'bowflex t9 vs t16',
+  ],
+  stickyCta: { text: 'See the Verdict', link: '#who-should-buy' },
+  breadcrumb: { name: 'Reviews', url: '/reviews/' },
+  lead: `Bowflex T9 treadmill reviews mostly agree on what the machine is: a full-size folding
+          treadmill with more deck width and more incline than most rivals at its price, a lifetime
+          warranty on the frame and motor, and a simple colour console that works with third-party apps
+          instead of locking you into one. They also agree on two irritations. This page reads the
+          published specification and that independent coverage side by side, explains the figures
+          that are easy to misread — the horsepower rating above all — and sets out who should pay for
+          the T9 rather than the T6 below it.`,
+  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
+          14 October 2026 we read Bowflex's US product page for the T9 (SKU HTM1439-01), including its
+          full specification table, warranty, delivery and return terms, and cross-checked it against two
+          independent reviews published in August 2024 and May 2025. All three agree on the 22 x 60 in.
+          running area, 0-15% incline, 12 mph top speed, 350 lb maximum user weight, 77.2 x 37 x 67.6 in.
+          assembled size, 48.6 in. folded length, 282 lb weight and the lifetime frame and motor, 3-year
+          parts and 1-year labour warranty. Both reviews say Bowflex did not then publish a motor rating
+          and cite 3.5 HP from retailer listings; Bowflex's page now states 3.5 HP and footnotes it as a
+          test-setting rating. The number of built-in programmes differs between Bowflex (10) and one
+          review (22), so we do not rely on it. The T6 figures are from our own T6 review, checked on
+          8 October 2026; the T16 figures are Bowflex's only. We have not tested the T9, and none of these
+          numbers are our own measurements. Prices are those shown on bowflex.com on 14 October 2026 and
+          change often. We earn a commission if you buy through the Amazon link on this page; it does not
+          change what we say about the machine.`,
+  products: [
+    {
+      id: 'bowflex-t9',
+      name: 'Bowflex T9',
+      category: 'Folding Treadmill With 22-Inch Deck',
+      badge: 'Runner’s Pick in the Range',
+      amazonUrl: 'https://www.amazon.com/s?k=Bowflex+T9+Treadmill&tag=sktiger-20',
+      priceRange: '$1,399-$1,799',
+      specs: '22 x 60 in. deck · 3.5 HP (Bowflex test rating) · 0-15% incline · 0.5-12 mph · 350 lb capacity',
+      pros: [
+        '22-inch-wide running area, two inches wider than the T6 and most folding treadmills near its price',
+        'Motorised incline to 15% with a 500 lb-thrust incline motor',
+        'Lifetime frame and motor warranty, plus three years on mechanical parts',
+        'No subscription needed; connects over Bluetooth FTMS to JRNY, Peloton and Zwift if you want one',
+        '350 lb maximum user weight',
+      ],
+      cons: [
+        'The 3.5 HP figure is a test-setting rating that Bowflex says does not reflect operational horsepower',
+        'Independent reviewers report that Bluetooth cannot connect a heart-rate strap and an app at the same time',
+        'Cushioning is described as firmer than some users prefer',
+        'Does not fold flat: it stands 67.6 inches tall and 48.6 inches long when stowed, and weighs 282 lb',
+        'One year of labour, against lifetime frame and motor cover',
+      ],
+      bottomLine:
+        'The Bowflex to buy if you run, are tall or broad, or are a heavier user: the extra width and capacity over the T6 are the right reasons to pay more. Buy it on sale.',
+      description:
+        'The T9 has a 22 by 60-inch running area on a FlexZone XL deck, a drive motor Bowflex rates at 3.5 HP under test settings, a 500 lb-thrust incline motor giving 0 to 15% (no decline) and a speed range of 0.5 to 12 mph. Maximum user weight is 350 lb. The console pairs a colour LCD with LED windows and QuickDial-style speed and incline controls, with Bluetooth FTMS for JRNY, Peloton and Zwift, NFC for Apple Watch and Samsung Galaxy Watch, two three-speed fans and 5-watt speakers. Assembled it measures 77.2 by 37 by 67.6 inches, folds to 48.6 inches long and weighs 282 lb. The US warranty is lifetime on the frame and motor, three years on mechanical parts and one year of in-home labour. On 14 October 2026 bowflex.com listed it at $1,799 regular and $1,399 on sale.',
+    },
+  ],
+  sections: [
+    {
+      id: 'short-answer',
+      heading: 'Bowflex T9 Treadmill Reviews: The Short Answer',
+      products: true,
+      html: `          <p>
+            <strong>Read together, Bowflex T9 treadmill reviews describe a well-specified folding treadmill
+            for runners and heavier users, with two practical irritations and one figure that needs reading
+            carefully.</strong> Its strengths are the ones on the spec sheet: a 22 by 60-inch deck, motorised
+            incline to 15%, a 350 lb rating, a lifetime warranty on the frame and motor, and a console that
+            works fully without any subscription.
+          </p>
+          <p>
+            The irritations come from independent reviewers rather than from the listing. Both reviews we
+            read report that the T9's Bluetooth cannot connect a heart-rate strap and an app at the same
+            time, and both describe the cushioning as firmer than some users will want. The figure to read
+            carefully is the 3.5 HP motor rating, which Bowflex footnotes as a test-setting figure that does
+            not reflect the motor's operational horsepower.
+          </p>
+          <p>
+            Buy it at or near its sale price — $1,399 on bowflex.com when we checked, against $1,799 regular —
+            if you run, are over about six feet tall or broad through the shoulders, or are heavier than the
+            T6's 325 lb rating comfortably allows. If you mainly walk, the
+            <a href="/bowflex-t6-treadmill/" class="text-[#0F62FE] font-medium">Bowflex T6</a>
+            does nearly the same job for less. We have not tested the T9; what follows is what the published
+            figures and independent coverage imply.
+          </p>`,
+    },
+    {
+      id: 'specifications',
+      heading: 'The Specifications Bowflex and Reviewers Agree On',
+      html: `          <p>
+            Every figure in this table appears on Bowflex's current T9 page and in at least one independent
+            review, except where the right-hand column says otherwise. We read them on 14 October 2026.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Specification</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Figure</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Running area</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22 x 60 in.</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bowflex and both reviews</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Drive motor</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.5 HP, test-setting rating</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bowflex now; reviews cite the same figure from retailers</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Incline / speed</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0-15%, no decline / 0.5-12 mph</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bowflex and both reviews</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Maximum user weight</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">350 lb</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bowflex and both reviews</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Assembled size</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">77.2 x 37 x 67.6 in.</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bowflex and one review</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Folded length</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">48.6 in. (does not fold flat)</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bowflex and both reviews</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Weight</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">282 lb</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bowflex and both reviews</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Warranty</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime frame and motor; 3 yr parts; 1 yr labour</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bowflex and both reviews</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Console</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Colour LCD plus LED windows, dial controls, no touchscreen</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bowflex and both reviews</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Price seen</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,799 regular; $1,399 on sale</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">bowflex.com, 14 October 2026</td>
+              </tr>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4 pt-6">Bowflex-only or conflicting</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4 pt-6">Figure</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4 pt-6">Status</th>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Deck and belt</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.75 in. deck, 1.6 mm belt, 60 mm rollers</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bowflex only</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Step-on height</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">8.7 in.</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bowflex only</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Screen size</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">"7 in." in Bowflex's summary; 7.6 x 3 in. in its detailed table</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bowflex, two descriptions</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Built-in programmes</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10 (Bowflex); 22 (one review)</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Conflict</td>
+              </tr>
+            </tbody>
+          </table></div>
+          <p>
+            The agreement on the core figures is strong, and the dimensions and weight in the 2024 review
+            match Bowflex's current page exactly, which suggests the machine has not been revised in a way
+            that matters to a buyer since then. Read the motor rating as explained in the next section.
+          </p>`,
+    },
+    {
+      id: 'deck-and-motor',
+      heading: 'The Deck and the 3.5 HP Motor, Read Honestly',
+      html: `          <p>
+            The T9's running area is 22 by 60 inches on what Bowflex calls a FlexZone XL deck. That width is
+            the single most useful thing the T9 has over the T6 and over most folding treadmills near its
+            price, which are usually 20 inches wide.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Why 22 inches matters, and for whom</h3>
+          <p>
+            For walking and steady jogging, two extra inches are rarely noticed. They matter for taller
+            runners, whose arm swing and foot path use more room; for broad builds; for anyone whose stride
+            drifts as they tire; and for users who simply feel hemmed in by the side rails. An extra inch
+            either side can be the difference between landing comfortably and catching a rail with a heel
+            late in a run. Sixty inches of length is the figure running guidance usually settles on for adult
+            runners, and the T9 has it. Our
+            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
+            works through the stride arithmetic, and our guide to the
+            <a href="/best-treadmills-for-tall-runners/" class="text-[#0F62FE] font-medium">best treadmills for tall runners</a>
+            covers the case for a wider deck in more detail.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The cushioning</h3>
+          <p>
+            Both independent reviews describe the T9's cushioning as moderate to firm — firmer than some
+            walkers and runners would like. One reviewer found it firmer than the Horizon treadmills she was
+            used to; another notes that some users will want something softer. Whether that is a drawback
+            depends on you: a firmer deck feels more stable at speed, a softer one more forgiving on long
+            walks. Our <a href="/treadmill-cushioning-explained/" class="text-[#0F62FE] font-medium">cushioning explainer</a>
+            covers what a deck can and cannot do for your joints.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Why 3.5 HP is not the same as 3.5 CHP</h3>
+          <p>
+            Bowflex rates the T9's drive motor at 3.5 HP and footnotes that the stated horsepower is a rating
+            based on measurement in a test setting — an indication of the motor's robustness — and does not
+            reflect the operational horsepower of the motor in use. Both independent reviews we read were
+            written when Bowflex did not publish a rating at all and took 3.5 HP from retailer listings; the
+            figure now appears on Bowflex's own page, with that footnote.
+          </p>
+          <p>
+            The honest reading is that you cannot set the T9's 3.5 against another brand's continuous-duty
+            rating and conclude they are equal, or that either is stronger. You can compare it with the T6's
+            3.0 on the same basis, which tells you the T9's motor is rated higher within Bowflex's own range.
+            The more useful signal is the warranty: the motor is covered for life. Our
+            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
+            explains peak, continuous and test ratings and why a motor warranty often tells you more than the
+            number. Both reviews describe the motor as quiet in use, and one reports that speed and incline
+            changes respond quickly, which is what Bowflex markets as Quick Response Technology.
+          </p>`,
+    },
+    {
+      id: 'incline',
+      heading: 'Incline to 15%, and No Decline',
+      html: `          <p>
+            The T9 inclines from 0 to 15% on a motorised lift with 500 lb of thrust. There is no decline.
+            Fifteen percent is generous for a folding treadmill at this price, where 10% or 12% is common,
+            and it is the main reason to choose a T-series Bowflex if incline walking is a priority.
+          </p>
+          <p>
+            Steep incline walking raises effort substantially without the impact of running, which suits
+            beginners, heavier users and anyone whose knees object to pace. The popular
+            <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 workout</a>
+            uses 12%, which the T9 covers with room to progress, and our guide to
+            <a href="/incline-walking-vs-running/" class="text-[#0F62FE] font-medium">incline walking versus running</a>
+            sets out when each is the better choice.
+          </p>
+          <p>
+            Two cautions apply. Sustained steep incline is a heavy, continuous load on the drive motor, which
+            is exactly where a continuous-duty rating would be most informative and where the T9 gives you a
+            test rating and a lifetime warranty instead. And steep walking tempts people to hold the rails,
+            which removes much of the benefit; if you need the rails at 15%, take the grade down until you
+            can walk freely. If you want to practise downhill running, the T9 cannot help; machines with
+            decline are covered in our
+            <a href="/best-treadmills-with-decline/" class="text-[#0F62FE] font-medium">treadmills with decline</a>
+            roundup.
+          </p>`,
+    },
+    {
+      id: 'console-and-apps',
+      heading: 'Console, Apps and the Bluetooth Limitation',
+      html: `          <p>
+            The T9's console is a colour LCD with LED windows — Bowflex's detailed table gives a 7.6 by 3-inch
+            colour LCD plus five white LED windows — with dial controls for speed and incline, two three-speed
+            fans, 5-watt speakers, a USB port and a media holder for a phone or tablet. There is no
+            touchscreen. Hand-contact heart-rate grips are built in, and a Bluetooth heart-rate strap is
+            supported.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">No subscription required</h3>
+          <p>
+            The treadmill works fully on its own. It connects over Bluetooth FTMS, the standard fitness-machine
+            protocol, to Bowflex's JRNY app and to Peloton and Zwift. Each is a separate paid subscription with
+            its own price, which we do not quote because it changes; Bowflex was offering new JRNY members a
+            free trial when we checked. FTMS support means an app can read the machine's data; whether a given
+            app can also control speed or incline is a feature of that app, so check its own documentation
+            before you buy for it. Our
+            <a href="/best-smart-treadmills/" class="text-[#0F62FE] font-medium">best smart treadmills</a>
+            roundup compares this open approach with screen-led machines built around one platform, and our
+            <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium">Zwift treadmill guide</a>
+            covers pairing.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The Bluetooth limitation reviewers report</h3>
+          <p>
+            Both independent reviews we read report the same limitation: the T9's Bluetooth cannot connect a
+            heart-rate monitor and an app at the same time, so you switch modes manually. One reviewer suggests
+            pairing the strap to the training app instead of the treadmill, which is the practical workaround.
+            If heart-rate training through an app is central to how you train, test that setup early in the
+            return window. Our guide to
+            <a href="/best-heart-rate-monitors-for-treadmill/" class="text-[#0F62FE] font-medium">heart-rate monitors for treadmill use</a>
+            covers straps that pair with more than one device.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Watches</h3>
+          <p>
+            An NFC reader on the console connects to Apple Watch and Samsung Galaxy Watch with a tap, so the
+            watch records the treadmill's distance and speed rather than estimating them from your wrist. Our
+            guide to <a href="/how-to-connect-apple-watch-to-treadmill/" class="text-[#0F62FE] font-medium">connecting an Apple Watch to a treadmill</a>
+            covers how that works across brands.
+          </p>`,
+    },
+    {
+      id: 'folding-and-space',
+      heading: 'Folding, Footprint and Ceiling Height',
+      html: `          <p>
+            Assembled, the T9 measures 77.2 inches long, 37 wide and 67.6 tall. It folds on a pin with a gas
+            shock to lower the deck, to 48.6 inches long with the same width and height; Bowflex states that it
+            does not fold flat. That takes the floor area from roughly 19.8 square feet in use to roughly 12.5
+            folded — a real saving, though less than the T6, which folds to 44 inches.
+          </p>
+          <p>
+            At 282 lb it is heavy, and it stays 67.6 inches tall when stowed, so it will not go under stairs or
+            into a cupboard. It rolls on two transport wheels; plan to move it on hard floors where possible.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Ceiling height</h3>
+          <p>
+            Bowflex's minimum ceiling guidance is the user's height plus 20.75 inches. Under a standard 8-foot
+            (96-inch) ceiling that works for users up to about 6 ft 3 in; a 6 ft runner needs 92.75 inches.
+            One independent reviewer makes the same point, putting a 6 ft runner's requirement at about 7 ft
+            9 in. Basements with beams or ducts are where this catches people out, so measure the lowest point
+            above where you will stand.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Tallest user</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Minimum ceiling (height + 20.75 in.)</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Under an 8 ft ceiling</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5 ft 6 in (66 in.)</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">86.75 in.</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Comfortable margin</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">6 ft 0 in (72 in.)</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">92.75 in.</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Fits</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">6 ft 3 in (75 in.)</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">95.75 in.</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Just fits</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">6 ft 5 in (77 in.)</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">97.75 in.</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Below guidance</td>
+              </tr>
+            </tbody>
+          </table></div>
+          <p>
+            The T9's best buyers — tall runners — are also the ones the ceiling rule affects most, so do this
+            sum before ordering. Our
+            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">dimensions and space guide</a>
+            covers clearance behind and beside the deck, and
+            <a href="/where-to-put-a-treadmill/" class="text-[#0F62FE] font-medium">where to put a treadmill</a>
+            covers floors, power and noise.
+          </p>`,
+    },
+    {
+      id: 'warranty-delivery',
+      heading: 'Warranty, Delivery and Returns',
+      html: `          <p>
+            The US warranty is lifetime on the frame and motor, three years on mechanical parts and one year of
+            labour, which Bowflex says includes in-home repairs by a technician. Bowflex sells protection plans
+            that extend labour to three years, or labour, electronics and parts to five; on the day we checked
+            they cost $129 to $199. Independent reviews give the same standard terms.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Reading the split</h3>
+          <p>
+            Lifetime frame and motor cover is strong at this price, and on the motor it answers the question
+            the test rating leaves open. Three years on parts is better than the one or two common lower down
+            the market. One year of labour is the term to plan around: from year two, a covered part may arrive
+            free while the visit to fit it does not. Whether a plan is worth it depends on what a technician's
+            call-out costs where you live, and whether you are comfortable fitting a belt or a console board
+            with the manual. Our
+            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a>
+            explains how to read parts, wear items and labour.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Delivery options</h3>
+          <p>
+            On 14 October 2026 bowflex.com offered three delivery options for the T9, within the 48 contiguous
+            states: standard delivery for $99, to the front door, porch, garage or driveway with no steps;
+            room-of-choice delivery for $249, including one flight of stairs; and white-glove delivery for
+            $349, which adds unpacking, full assembly and packaging removal. Delivery is scheduled by a carrier
+            and runs on weekdays. A 282 lb machine in a box is heavy, so if you choose standard delivery, have
+            help and a plan for getting it inside. Our guide to
+            <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">assembling a treadmill</a>
+            covers the job; one 2024 review reports some bolt holes that did not line up easily, so allow time.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Returns</h3>
+          <p>
+            Bowflex's return terms on the day we checked allowed a return within 30 days of delivery for a full
+            product refund, less shipping and handling. Read the full policy before ordering, because on a
+            machine this size the shipping element is not small.
+          </p>
+          <p>
+            A note on safety records: we searched the US Consumer Product Safety Commission's recall listings on
+            14 October 2026 and found no recall of the T9 or of Bowflex's current T-series treadmills. The 2022
+            recall of Nautilus T616 and T618 treadmills, which could start on their own, involved machines sold
+            under the Nautilus name by the brand's former owner; CPSC now advises owners of those units to
+            discard them because the firm is no longer in business. It does not affect the T9.
+          </p>`,
+    },
+    {
+      id: 'owner-reports',
+      heading: 'What Independent Reviews Consistently Report',
+      html: `          <p>
+            We list a point here only when it appears in more than one independent source.
+          </p>
+          <ul>
+            <li><strong>A quiet motor.</strong> Both reviews describe the motor as quiet, and one measured the noise at speed and found nothing to complain about.</li>
+            <li><strong>The incline range is a genuine strength.</strong> Fifteen percent is singled out as generous for the price in both.</li>
+            <li><strong>Quick controls.</strong> Both highlight the dial controls and the speed with which speed and incline respond, which suits interval work.</li>
+            <li><strong>Bluetooth will not run a heart-rate strap and an app together.</strong> Both report having to switch modes, as described above.</li>
+            <li><strong>Cushioning is on the firm side.</strong> Both note that some users will want something softer.</li>
+            <li><strong>Folding works well.</strong> Both describe the assisted fold as easy, with no complaints about the mechanism.</li>
+          </ul>
+          <p>
+            Points made in only one review — that the top tablet holder was not secure enough, that the custom
+            heart-rate workout was hard to set up, that the fans are not the strongest — are worth knowing but
+            are not patterns. Our guide to
+            <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium">reading treadmill reviews</a>
+            explains how to tell one from the other.
+          </p>`,
+    },
+    {
+      id: 't9-vs-t6-and-t16',
+      heading: 'Bowflex T9 vs T6 and T16',
+      html: `          <p>
+            The T9 sits between the T6 and the T16 in Bowflex's current range. The T6 figures below are from our
+            <a href="/bowflex-t6-treadmill/" class="text-[#0F62FE] font-medium">Bowflex T6 review</a>,
+            checked on 8 October 2026, with the regular price confirmed again on 14 October; the T16 figures are
+            from Bowflex's own listing and we have not cross-checked them.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Published figure</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">T6</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">T9</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">T16 (Bowflex only)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Running area</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20 x 60 in.</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22 x 60 in.</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22 x 60 in.</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Motor (Bowflex test rating)</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.0 HP</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.5 HP</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not checked</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Incline / speed</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0-15% / 12 mph</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0-15% / 12 mph</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Up to 15% / 12 mph</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Max user weight</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">325 lb</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">350 lb</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not checked</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Console</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Backlit LCD + LED windows</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Colour LCD + LED windows</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">16 in. HD touchscreen</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Folded</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">44 in. long</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">48.6 in. long, not flat</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not checked</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Frame and motor warranty</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Regular price, 14 Oct 2026</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,299</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,799 ($1,399 on sale)</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,299</td>
+              </tr>
+            </tbody>
+          </table></div>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">T9 or T6</h3>
+          <p>
+            Incline, speed and the frame and motor warranty are identical, so the extra money buys three things:
+            two more inches of width, 25 lb more rated capacity and a higher motor rating on the same test basis.
+            The colour console is a nicety. Pay for the T9 if you are a runner over about six feet, broad, or
+            within reach of the T6's 325 lb limit. Keep the money if you mainly walk or incline-walk, or if
+            floor space is tight, since the T6 folds shorter and flat.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">T9 or T16</h3>
+          <p>
+            The T16's case, on Bowflex's listing, is the 16-inch touchscreen, which Bowflex says can browse the
+            web and run streaming apps. If a big built-in screen is what will keep you training, it is the
+            Bowflex to look at; we have not verified its other figures, so check them before you buy. If you
+            are happy with a phone or tablet on the media holder, the T9 gives you the same deck width, incline
+            and frame and motor cover for less.
+          </p>
+          <p>
+            Our <a href="/bowflex/" class="text-[#0F62FE] font-medium">Bowflex brand overview</a>
+            covers the whole range, including the Max Trainer machines and the 2024 change of ownership to
+            Johnson Health Tech.
+          </p>`,
+    },
+    {
+      id: 'alternatives',
+      heading: 'Alternatives Outside Bowflex',
+      html: `          <p>
+            The T9's figures put it against several well-known machines, and the right comparison depends on
+            what you value.
+          </p>
+          <p>
+            <strong>If you want a big screen and classes, not an open console:</strong> the
+            <a href="/nordictrack-commercial-1750-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack Commercial 1750</a>
+            has a 22 by 60-inch deck, decline to -3%, a 16-inch pivoting touchscreen and lifetime motor cover,
+            at a higher price and built around a paid iFIT membership. Our
+            <a href="/best-smart-treadmills/" class="text-[#0F62FE] font-medium">best smart treadmills</a>
+            roundup sets out the trade-off between a screen-led machine and an open one like the T9.
+          </p>
+          <p>
+            <strong>If you will never pay for an app:</strong> the T9 already suits you; our guide to
+            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a>
+            covers others that work fully on their own.
+          </p>
+          <p>
+            <strong>If you need decline:</strong> the T9 has none, so look at the Commercial 1750 or the
+            machines in our <a href="/best-treadmills-with-decline/" class="text-[#0F62FE] font-medium">decline roundup</a>.
+          </p>
+          <p>
+            <strong>If you mainly walk:</strong> a walking-focused machine does the job for less; our
+            <a href="/best-walking-treadmills/" class="text-[#0F62FE] font-medium">walking treadmill roundup</a>
+            covers the options.
+          </p>`,
+    },
+    {
+      id: 'who-should-buy',
+      heading: 'Who Should Buy the Bowflex T9',
+      html: `          <p>
+            <strong>Buy it if you run and want room on the belt.</strong> The 22-inch deck is the T9's defining
+            feature, and for tall or broad runners it is the right reason to choose it over the T6 or a typical
+            20-inch folding treadmill.
+          </p>
+          <p>
+            <strong>Buy it if you are a heavier user.</strong> A 350 lb rating with a lifetime frame and motor
+            warranty gives more margin than the T6's 325 lb, and the motor cover is reassurance for long, steep
+            sessions.
+          </p>
+          <p>
+            <strong>Buy it if you want incline without a subscription.</strong> Fifteen percent of motorised
+            lift and a console that works on its own, with the option to connect JRNY, Peloton or Zwift, is an
+            unusual combination at this price.
+          </p>
+          <p>
+            <strong>Think twice if heart-rate training through an app is central to you</strong>, because of the
+            Bluetooth limitation both reviews report, and if you want a soft deck, because both describe it as
+            firm.
+          </p>
+          <p>
+            <strong>Choose the T6 if you mainly walk</strong> or need it to fold smaller, and the T16 if a
+            built-in touchscreen is what will keep you on the machine.
+          </p>
+          <p>
+            <strong>Buy it on sale.</strong> It was $1,399 against $1,799 regular when we checked, and Bowflex
+            discounts often. Compare the delivered price, including the delivery option you need, before you
+            order.
+          </p>`,
+    },
+  ],
+  faqs: [
+    {
+      q: 'What do Bowflex T9 treadmill reviews say?',
+      a: 'Independent reviews agree it is a sturdy, quiet folding treadmill with a 22 by 60-inch deck, a generous 15% incline and easy dial controls. The two consistent complaints are that Bluetooth cannot connect a heart-rate strap and an app at the same time, and that the cushioning is firmer than some prefer. We have not tested it.',
+    },
+    {
+      q: 'Is the Bowflex T9 a good treadmill?',
+      a: 'On its published figures, yes, particularly for runners and heavier users: 22 by 60 inches, 0 to 15% incline, 12 mph, a 350 lb rating, and lifetime frame and motor cover with three years on parts. Its 3.5 HP is a test-setting rating rather than a continuous-duty figure, and labour cover is one year.',
+    },
+    {
+      q: 'Bowflex T9 vs T6: which should I buy?',
+      a: 'Both have 15% incline, 12 mph and lifetime frame and motor cover. The T9 adds a 22-inch-wide deck instead of 20, a 350 lb rating instead of 325, a higher motor rating on Bowflex’s test basis and a colour console. Tall or broad runners and heavier users benefit most; walkers rarely need it.',
+    },
+    {
+      q: 'Does the Bowflex T9 need a JRNY subscription?',
+      a: 'No. The T9 works fully without any subscription. It connects over Bluetooth to JRNY, Peloton and Zwift if you want app content, but each is a separate paid subscription, so check the current price of the one you want.',
+    },
+    {
+      q: 'Does the Bowflex T9 fold?',
+      a: 'Yes, but not flat. Bowflex lists it at 77.2 inches long assembled and 48.6 inches long folded, staying 37 inches wide and 67.6 inches tall. It weighs 282 lb and rolls on two transport wheels. Check ceiling height too: Bowflex recommends the user’s height plus 20.75 inches.',
+    },
+    {
+      q: 'What is the weight limit on the Bowflex T9?',
+      a: 'Bowflex lists a maximum user weight of 350 lb, and independent reviews give the same figure. That is 25 lb more than the T6.',
+    },
+  ],
+  mistakesHeading: 'Common Mistakes Buying a Bowflex T9',
+  mistakesIntro:
+    'The T9 is a straightforward machine with a few figures that are easy to misread. These are the errors that cost buyers money, space or patience.',
+  mistakes: [
+    {
+      title: 'Comparing 3.5 HP with another brand’s CHP',
+      body: 'Bowflex says its 3.5 HP is a test-setting rating that does not reflect operational horsepower. Setting it against a competitor’s 3.5 CHP and calling them equal, or calling either stronger, compares two different measurements. Use the lifetime motor warranty as the confidence signal instead.',
+    },
+    {
+      title: 'Planning app-based heart-rate training without checking the Bluetooth',
+      body: 'Both independent reviews we read report that the T9 cannot connect a heart-rate strap and an app at the same time. If that is how you train, pair the strap to the app instead, and test your setup early in the 30-day return window.',
+    },
+    {
+      title: 'Forgetting the ceiling',
+      body: 'Bowflex’s guidance is the user’s height plus 20.75 inches, which puts a 6 ft 5 in runner above a standard 8-foot ceiling. Tall runners are the T9’s best buyers and the ones this affects most, so measure the lowest point above the belt before ordering.',
+    },
+    {
+      title: 'Paying the regular price',
+      body: 'The T9 was $1,799 regular and $1,399 on sale on the day we checked, and Bowflex discounts often. Watch the price, and compare the delivered total, including the delivery option you need, before you buy.',
+    },
+  ],
+  relatedHeading: 'Related Reviews &amp; Guides',
+  related: [
+    {
+      kicker: 'Sibling',
+      title: 'Bowflex T6 Treadmill Review',
+      blurb: 'The cheaper, narrower model below the T9, and when it is the better buy.',
+      url: '/bowflex-t6-treadmill/',
+    },
+    {
+      kicker: 'Brand',
+      title: 'Bowflex Treadmills and Max Trainers',
+      blurb: 'The whole Bowflex range, who owns the brand now, and how the lines compare.',
+      url: '/bowflex/',
+    },
+    {
+      kicker: 'Roundup',
+      title: 'Best Smart Treadmills',
+      blurb: 'Open, app-agnostic consoles against screen-led machines built around one platform.',
+      url: '/best-smart-treadmills/',
+    },
+  ],
+  bottomLine: [
+    `<strong class="text-white">Buy the Bowflex T9 at or near its sale price if you run, are tall or
+            broad, or want more than the T6's 325 lb rating.</strong> A 22 by 60-inch deck, 15% incline, a
+            350 lb rating, a console that needs no subscription and lifetime frame and motor cover are a strong
+            set of published figures, and independent reviews back them up. Read the 3.5 HP as a test rating
+            and plan for the one-year labour term.`,
+    `Walkers should save the difference with the
+            <a href="/bowflex-t6-treadmill/" class="text-[#5AA9FF] font-bold no-underline">Bowflex T6</a>,
+            and anyone who trains by heart rate through an app should check the Bluetooth workaround before the
+            return window closes.`,
+  ],
+};

@@ -3,58 +3,35 @@ import Layout from "../layouts/Layout.astro";
 import TrustBadge from "../components/TrustBadge.astro";
 import SocialProof from "../components/SocialProof.astro";
 
-const title = "NordicTrack Commercial 1750 Treadmill Review (2026): Is It Worth It?";
+const title = "NordicTrack Commercial 1750 Treadmill Review (2026): Current Specs and Verdict";
 const description =
-  "We spent four weeks running, walking, and folding the NordicTrack Commercial 1750. Here's an honest look at the motor, deck, iFit experience, and whether it's worth the price.";
+  "The NordicTrack Commercial 1750 treadmill as sold now: 16 in. pivoting screen, 22 x 60 in. deck, 400 lb rating, lifetime motor cover. What changed, and who should buy it.";
 
-const PRODUCT = {
-  name: "NordicTrack Commercial 1750",
-  rating: 4.6,
-  reviewCount: 6284,
-  amazonUrl:
-    "https://www.amazon.com/dp/B0D5YKF4SK?tag=sktiger-20",
-  priceRange: "$1,799-$1,999",
-};
-
-const SPECS = [
-  { label: "Motor", value: "3.75 CHP continuous-duty" },
-  { label: "Running Surface", value: "22 x 60 inches" },
-  { label: "Incline / Decline", value: "-3% to 12%, automatic" },
-  { label: "Top Speed", value: "12 mph" },
-  { label: "Display", value: "14-inch HD rotating touchscreen" },
-  { label: "Cushioning", value: "FlexSelect adjustable, 3 settings" },
-  { label: "Weight Capacity", value: "300 lbs" },
-  { label: "Folding", value: "Yes, SpaceSaver design with EasyLift assist" },
-  { label: "Folded Footprint", value: "36 x 82 inches (standing)" },
-  { label: "Speakers", value: "2 x 3-inch built-in Bluetooth" },
-  { label: "App / Ecosystem", value: "iFit (1-year membership included)" },
-  { label: "Warranty", value: "10-yr frame, 2-yr parts, 1-yr labor" },
-];
-
-const COMPARISON = [
+const PRODUCTS = [
   {
+    id: "nordictrack-commercial-1750",
     name: "NordicTrack Commercial 1750",
-    motor: "3.75 CHP",
-    deck: "22 x 60 in.",
-    incline: "-3% to 12%",
-    price: "$1,799-$1,999",
-    highlight: true,
-  },
-  {
-    name: "NordicTrack Commercial 2450",
-    motor: "4.25 CHP",
-    deck: "22 x 60 in.",
-    incline: "-3% to 15%",
-    price: "$2,299-$2,499",
-    highlight: false,
-  },
-  {
-    name: "Sole F80",
-    motor: "4.0 CHP",
-    deck: "22 x 60 in.",
-    incline: "0% to 15%",
-    price: "$2,199-$2,499",
-    highlight: false,
+    category: "Folding iFIT Treadmill With Decline",
+    badge: "Current Model: NTL17125",
+    amazonUrl: "https://www.amazon.com/dp/B0D5YKF4SK?tag=sktiger-20&linkCode=ll1",
+    reviewUrl: null,
+    priceRange: "$1,999-$2,499",
+    specs: "22 x 60 in. belt · 4.25 CHP (NordicTrack lab rating) · -3% to 12% incline · 0-12 mph · 400 lb max user · 16 in. pivoting touchscreen",
+    pros: [
+      "Lifetime motor warranty, which the Commercial 1250 and the T Series do not carry",
+      "22 x 60 in. belt and a 400 lb maximum user weight on the current model",
+      "Decline to -3% as well as 12% incline, so iFIT routes can include descents",
+      "16 in. HD touchscreen that pivots towards the floor for off-treadmill classes",
+      "Folds up and rolls away on the SpaceSaver frame",
+    ],
+    cons: [
+      "Most of the screen’s value depends on a paid iFIT membership",
+      "Parts are covered for two years and labour and the touchscreen for one",
+      "Older units sold under the same name have a smaller screen, a different motor rating and, in some listings, a lower weight limit",
+      "Large even when folded, and heavy to deliver: NordicTrack gives the boxed weight as 311.5 lb",
+    ],
+    bottomLine: "The NordicTrack to start from for most buyers: a full-size folding deck, decline and lifetime motor cover, best bought on discount and with an honest view of how much iFIT you will use.",
+    description: "The current Commercial 1750 (model NTL17125) has a 22 by 60-inch belt with RunFlex cushioning, a drive motor NordicTrack rates at 4.25 CHP in laboratory testing, a speed range of 0 to 12 mph and incline from -3% to 12%. Maximum user weight is 400 lb. The 16-inch HD touchscreen pivots for floor workouts and runs iFIT; full iFIT content needs a paid membership. It folds on NordicTrack’s SpaceSaver frame, has an AutoBreeze fan and two 2-inch speakers, and measures 77.3 by 37 by 59.5 inches. NordicTrack’s warranty is lifetime on the motor, ten years on the frame, two years on parts, one year on the touchscreen and one year of labour. On 14 October 2026 NordicTrack listed it at $1,999.99 against a $2,499.99 list price, and P.C. Richard at $1,999.",
   },
 ];
 
@@ -64,24 +41,9 @@ const schema = {
     {
       "@type": "BreadcrumbList",
       itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          name: "Home",
-          item: "https://www.treadmillreviewsusa.com/",
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          name: "Commercial Treadmills",
-          item: "https://www.treadmillreviewsusa.com/commercial-treadmills",
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          name: "NordicTrack Commercial 1750 Review",
-          item: "https://www.treadmillreviewsusa.com/nordictrack-commercial-1750-treadmill",
-        },
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Reviews", item: "https://www.treadmillreviewsusa.com/reviews/" },
+        { "@type": "ListItem", position: 3, name: "NordicTrack Commercial 1750", item: "https://www.treadmillreviewsusa.com/nordictrack-commercial-1750-treadmill/" },
       ],
     },
     {
@@ -89,58 +51,50 @@ const schema = {
       mainEntity: [
         {
           "@type": "Question",
-          name: "Is the NordicTrack Commercial 1750 worth the price?",
+          name: "Is the NordicTrack Commercial 1750 treadmill worth it?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "For most home users who want a genuinely sturdy, full-size deck and don't mind an iFit subscription after the included first year, yes. It sits in a sweet spot between entry-level machines that feel flimsy at running speeds and flagship models like the Commercial 2450 that cost hundreds more for incremental gains most walkers and joggers won't notice.",
+            text: "For most buyers who will run as well as walk, yes, at the discounted prices NordicTrack runs most of the year. The current model has a 22 by 60-inch belt, a 400 lb rating, -3% to 12% incline, 12 mph and a lifetime motor warranty. It is worth less if you will not keep an iFIT membership. We have not tested it.",
           },
         },
         {
           "@type": "Question",
-          name: "Do I have to pay for iFit to use the Commercial 1750?",
+          name: "What is the weight limit on the NordicTrack Commercial 1750?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The treadmill functions without an active iFit subscription, but most of its standout features — auto-adjusting incline during trainer-led workouts, the full workout library, and the interactive touchscreen content — require a membership. Without it, you're left with a manual treadmill on a premium-priced frame, so budget for the subscription as part of the real cost.",
+            text: "NordicTrack lists the current model, NTL17125, at a 400 lb (182 kg) maximum user weight, and P.C. Richard’s listing for the same model agrees. Older units sold under the same name have been listed at 300 lb in at least one US listing, so check the model number on a used or clearance machine.",
           },
         },
         {
           "@type": "Question",
-          name: "How does the Commercial 1750 compare to the Commercial 2450?",
+          name: "What motor does the NordicTrack Commercial 1750 have?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The Commercial 2450 has a stronger 4.25 CHP motor and steeper 15% max incline versus the 1750's 3.75 CHP and 12% incline, along with a larger touchscreen. For most walkers and moderate runners, the 1750 delivers nearly the same day-to-day experience for several hundred dollars less; the 2450 earns its price for serious runners who use steep incline training regularly.",
+            text: "NordicTrack rates the current model’s motor at 4.25 CHP and covers it for life. Its footnote says the figure is a laboratory dynamometer rating that does not denote operational horsepower in household use. Earlier versions were listed at lower ratings, so the model number matters when comparing reviews.",
           },
         },
         {
           "@type": "Question",
-          name: "Is the deck big enough for taller runners?",
+          name: "Is the NordicTrack Commercial 1750 screen 14 or 16 inches?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The 22 x 60-inch deck is on the larger end for a home treadmill and comfortably fit testers up to 6'3\" during full-stride running without feeling cramped. Shorter or narrower decks on cheaper machines are the ones where taller runners typically run into trouble, not this one.",
+            text: "The current model has a 16-inch HD touchscreen that pivots. Earlier machines sold as the Commercial 1750 had a 14-inch screen, which is the quickest way to spot an older unit on a listing or the used market.",
           },
         },
         {
           "@type": "Question",
-          name: "How loud is the Commercial 1750 at higher speeds?",
+          name: "Can you use the NordicTrack Commercial 1750 without iFIT?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "We measured noise in the low-60 decibel range during sustained jogging, roughly comparable to a normal conversation. It's not silent, but it didn't interfere with phone calls in an adjacent room during our testing, and it stayed consistent rather than getting noticeably louder over several weeks of daily use.",
+            text: "Yes, as a treadmill: the belt, incline and decline work without a membership. Most of the screen’s content, including trainer-led classes and automatic speed and incline control, needs a paid iFIT membership. Ask what the console does without one on the model you are buying.",
           },
         },
         {
           "@type": "Question",
-          name: "How long does assembly take?",
+          name: "What is the difference between the NordicTrack Commercial 1750 and 2450?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Roughly 75 minutes working alone, or about 45 minutes with a second person helping lift the upright frame into place, which the manual specifically recommends for that step. The console and mast arrive mostly pre-wired, which speeds things up compared to machines that require extensive cable routing during assembly.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What maintenance does the Commercial 1750 need over time?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Belt tracking and tension are the most common maintenance items owners report needing within the first year, which is normal for treadmills generally rather than specific to this model. Keeping the belt lubricated on NordicTrack's suggested schedule is the single biggest factor in avoiding motor strain and premature wear.",
+            text: "NordicTrack lists the 2450 at 14 mph against 12 mph, with a 24-inch pivoting screen against 16 inches. Both have a lifetime motor warranty and -3% to 12% incline, and NordicTrack’s current listings give both a 4.25 CHP rating, a 22 by 60-inch belt and a 400 lb capacity. The 2450 typically costs a few hundred dollars more.",
           },
         },
       ],
@@ -148,22 +102,23 @@ const schema = {
     {
       "@type": "Article",
       headline: title,
+      description: description,
       author: { "@type": "Person", name: "Morgan Reyes" },
-      datePublished: "2026-04-18",
-      dateModified: "2026-04-18",
+      datePublished: "2026-10-14",
+      dateModified: "2026-10-14",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
     },
-    {
+    ...PRODUCTS.map((product) => ({
       "@type": "Product",
-      name: PRODUCT.name,
-      description,
-      brand: { "@type": "Brand", name: "NordicTrack" },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: PRODUCT.rating,
-        reviewCount: PRODUCT.reviewCount,
+      name: product.name,
+      description: product.description,
+      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      offers: {
+        "@type": "AggregateOffer",
+        priceCurrency: "USD",
+        availability: "https://schema.org/InStock",
       },
-    },
+    })),
   ],
 };
 ---
@@ -173,29 +128,29 @@ const schema = {
   description={description}
   ogType="article"
   article={{
-    publishedTime: "2026-04-18",
-    modifiedTime: "2026-04-18",
+    publishedTime: "2026-10-14",
+    modifiedTime: "2026-10-14",
     author: "Morgan Reyes",
     section: "Fitness Equipment",
     tags: [
-      "nordictrack commercial 1750",
-      "nordictrack treadmill review",
-      "ifit treadmill",
-      "commercial treadmill",
-      "home gym",
+      "nordictrack commercial 1750 treadmill",
+      "nordic track commercial 1750 treadmill",
+      "nordictrack commercial 1750 review",
+      "nordictrack 1750 specs",
+      "nordictrack commercial 1750 weight limit",
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "Check Price on Amazon", link: "#cta" }}
+  stickyCta={{ text: "See the Verdict", link: "#who-should-buy" }}
 >
   <article class="relative overflow-hidden">
     <!-- Hero Section -->
     <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
       <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-        <pattern id="dot-pattern-nt1750" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+        <pattern id="dot-pattern-nordictrackcommercial1750treadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
           <circle cx="2" cy="2" r="1.5" fill="white"></circle>
         </pattern>
-        <rect width="100%" height="100%" fill="url(#dot-pattern-nt1750)"></rect>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-nordictrackcommercial1750treadmill)"></rect>
       </svg>
       <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
         <div class="flex justify-center mb-6">
@@ -203,30 +158,29 @@ const schema = {
         </div>
         <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
           <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Product Review
+            Model Review
           </span>
           <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-            Updated April 2026
+            Updated October 2026
           </span>
         </div>
         <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
-          NordicTrack <span class="text-[#5AA9FF]">Commercial 1750</span> Review
+          NordicTrack Commercial 1750 <span class="text-[#5AA9FF]">Treadmill Review</span>
         </h1>
         <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          We put NordicTrack's mid-tier flagship through four weeks of walking,
-          jogging, and interval sessions to find out whether the Commercial
-          1750 earns its price tag or whether the 2450 is worth the upgrade.
+          The Commercial 1750 is the NordicTrack most buyers end up considering, and the machine sold under that name today is not the one most older reviews describe. This review sets out the figures NordicTrack confirms for the current model, what they mean in use, and when the 1250, the 2450 or a T Series machine is the better buy.
         </p>
         <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="#cta" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Check Price on Amazon
+          <a href="#current-specs" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            The Current Specs
           </a>
-          <a href="#verdict" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
-            Jump to Verdict
+          <a href="#who-should-buy" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            Who Should Buy It
           </a>
         </div>
       </div>
     </div>
+
 
     <!-- Author & Meta -->
     <div class="max-w-3xl mx-auto px-4 pt-12">
@@ -238,41 +192,30 @@ const schema = {
         </div>
         <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
         <p class="text-gray-500 text-sm">
-          Last Updated: <strong class="text-gray-700">April 18, 2026</strong>
+          Last Updated: <strong class="text-gray-700">October 14, 2026</strong>
         </p>
         <div class="ml-auto">
-          <SocialProof users="6.2k" />
+          <SocialProof users="1.9k" />
         </div>
       </div>
 
-      <!-- Quick Verdict -->
-      <div class="not-prose my-10 bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
-        <div class="flex items-center justify-between flex-wrap gap-4 mb-4">
-          <div class="flex items-center gap-2">
-            <div class="flex text-yellow-400">
-              {[...Array(5)].map((_, i) => (
-                <svg class={`w-5 h-5 ${i < Math.floor(PRODUCT.rating) ? "fill-current" : "text-gray-200"}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-              ))}
-            </div>
-            <span class="font-bold text-gray-900">{PRODUCT.rating}</span>
-            <span class="text-gray-400 text-sm">({PRODUCT.reviewCount.toLocaleString()} reviews)</span>
-          </div>
-          <span class="bg-[#0F62FE]/10 text-[#0F62FE] px-3 py-1 rounded-full text-xs font-bold">Editor's Choice: Commercial-Grade Value</span>
-        </div>
-        <p class="text-gray-700 leading-relaxed mb-4">
-          The Commercial 1750 is the machine we'd point most home users toward
-          if they want a genuinely sturdy, full-size deck without paying
-          flagship prices. It isn't perfect — the iFit dependency is real —
-          but the fundamentals underneath the touchscreen are excellent.
+      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
+          14 October 2026 we read NordicTrack's US product page for the Commercial 1750 (SKU
+          NTL17125), including its specification tables, warranty text and footnotes, and
+          cross-checked it against P.C. Richard &amp; Son's listing and Costco's listing for the same
+          model number. NordicTrack and P.C. Richard agree on the 4.25 CHP motor rating, the
+          22 x 60 in. belt, the 400 lb maximum user weight, the 0-12 mph speed range, and two years
+          of parts and one year of labour cover; NordicTrack and Costco agree on the 16 in. pivoting
+          touchscreen, the -3% to 12% incline range and the 77.3 x 37 x 59.5 in. footprint. Those
+          figures are what earlier pages on this site left out because older listings disagreed;
+          they are stated here for NTL17125 only. Figures that appear in a single source are
+          labelled as such. We have not tested the Commercial 1750, and none of these numbers are
+          our own measurements. Prices are those shown on 14 October 2026 and change constantly. We
+          earn a commission if you buy through the Amazon link on this page; it does not change what
+          we say about the machine.
         </p>
-        <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-gray-100">
-          <p class="text-2xl font-black text-gray-900">{PRODUCT.priceRange}</p>
-          <a id="cta" href={PRODUCT.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-            Check Price on Amazon &rarr;
-          </a>
-        </div>
       </div>
     </div>
 
@@ -283,565 +226,795 @@ const schema = {
           In This Guide
         </h2>
         <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <a href="#overview" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Overview and Who It's For</a>
-            <a href="#specs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Full Spec Sheet</a>
-            <a href="#assembly" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Assembly and Setup</a>
-            <a href="#performance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Performance Deep Dive</a>
-            <a href="#durability" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Long-Term Durability Notes</a>
-            <a href="#pros-cons" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Pros and Cons</a>
-            <a href="#comparison" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. How It Compares</a>
-            <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Who Should Skip This Treadmill</a>
-            <a href="#verdict" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Final Verdict</a>
-            <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. NordicTrack Commercial 1750 Treadmill: The Short Answer</a>
+          <a href="#which-1750" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Which Commercial 1750? Why Older Reviews Disagree</a>
+          <a href="#current-specs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Specifications NordicTrack Confirms</a>
+          <a href="#motor" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. The 4.25 CHP Motor, and Why the Warranty Says More</a>
+          <a href="#deck" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Deck, Cushioning and the 400 lb Rating</a>
+          <a href="#incline-speed" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Incline, Decline and Speed</a>
+          <a href="#screen-and-ifit" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. The 16-Inch Screen and the iFIT Question</a>
+          <a href="#folding-and-space" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Folding, Footprint and Where It Fits</a>
+          <a href="#warranty-delivery" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Warranty, Delivery and Returns</a>
+          <a href="#what-reviewers-report" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. What Independent Reviewers Consistently Report</a>
+          <a href="#vs-alternatives" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Commercial 1750 vs the 1250, the 2450 and the T Series</a>
+          <a href="#ownership" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Owning One: Resets, Maintenance and Common Faults</a>
+          <a href="#who-should-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Who Should Buy It, and Who Should Not</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">14. Frequently Asked Questions</a>
         </nav>
       </div>
     </div>
 
     <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
-
       <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <p class="text-2xl font-medium text-gray-900 mb-8 italic">
-          NordicTrack's Commercial line sits right at the point where a home
-          treadmill starts to feel like the machines you'd find at a gym. The
-          1750 is the entry point into that line, and after a month of daily
-          use across multiple testers, we think it's the one most households
-          should actually buy — the 2450 above it solves problems most home
-          users don't actually have.
+          Search for the NordicTrack Commercial 1750 treadmill and you will find it described with a
+          14-inch screen or a 16-inch one, a motor anywhere from 3.5 to 4.25 CHP, a belt 20 or 22
+          inches wide and a weight limit of 300 or 400 lb. All of those have been true of some
+          machine sold under the name. This page is about the one on sale now, model number
+          NTL17125, using only the figures NordicTrack publishes for it and that an independent
+          retailer listing repeats. Where older figures still circulate, we say where they came
+          from rather than mixing them in.
         </p>
 
-        <div id="overview" class="scroll-mt-24">
-        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Overview and Who It's For</h2>
-        <p>
-          The Commercial 1750 replaced an aging mid-tier NordicTrack lineup
-          with a genuinely stiffer frame, a larger touchscreen, and a deck
-          that finally feels proportional to the machine's price. We tested
-          it specifically against the question a lot of shoppers ask us
-          directly: is this worth several hundred dollars more than an
-          entry-level folding treadmill, or should you just save the money?
-          After four weeks, our answer is that it's worth it if you run more
-          than twice a week, if more than one person in your household will
-          use it, or if you specifically want the iFit coaching experience —
-          otherwise, a cheaper machine will serve casual walkers just fine.
-        </p>
-        <p>
-          This is a folding treadmill, using NordicTrack's SpaceSaver design
-          with an EasyLift assist strut, but it's built more like a
-          semi-permanent home gym fixture than a fold-away apartment machine.
-          Standing folded, it's still a substantial 36 x 82-inch footprint,
-          noticeably larger than the compact folding treadmills we cover in
-          our <a href="/best-folding-treadmill-reviews/">folding treadmill guide</a>.
-          If ultra-compact storage is your priority, this isn't the right
-          category of machine to be shopping in.
-        </p>
-        <p>
-          We'd recommend the 1750 most strongly to a household with a
-          dedicated but not enormous space — a spare bedroom, a basement
-          corner, a garage bay — that wants one treadmill to comfortably
-          handle everyone from a walking parent to a running teenager without
-          feeling like anyone is compromising.
-        </p>
-        <p>
-          It's also worth understanding where the Commercial 1750 sits inside
-          NordicTrack's broader lineup before you buy. It's the entry point
-          into the "Commercial" tier, positioned above NordicTrack's basic T
-          Series and C Series machines and below the Commercial 2450 and
-          Commercial X Series incline trainers. That positioning shows up
-          directly in the price and the spec sheet: you're paying a real
-          premium over a T Series treadmill, but you're getting a
-          meaningfully stiffer frame and larger deck in return, not just a
-          bigger screen.
-        </p>
-
-        <div class="not-prose bg-gray-900 text-white rounded-2xl p-8 my-8">
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div>
-              <p class="text-3xl md:text-4xl font-black text-[#5AA9FF]">3.75</p>
-              <p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">CHP Motor</p>
-            </div>
-            <div>
-              <p class="text-3xl md:text-4xl font-black text-[#5AA9FF]">22x60</p>
-              <p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">Deck (inches)</p>
-            </div>
-            <div>
-              <p class="text-3xl md:text-4xl font-black text-[#5AA9FF]">-3/12%</p>
-              <p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">Decline/Incline</p>
-            </div>
-            <div>
-              <p class="text-3xl md:text-4xl font-black text-[#5AA9FF]">300</p>
-              <p class="text-xs text-gray-400 mt-1 uppercase tracking-wide">Lbs. Capacity</p>
-            </div>
-          </div>
-        </div>
-        </div>
-
-        <div id="specs" class="scroll-mt-24">
-        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Full Spec Sheet</h2>
-        <p>
-          Here's every spec we verified directly against our test unit rather
-          than copying from the manufacturer's marketing page.
-        </p>
-        </div>
-      </div>
-
-      <div class="not-prose overflow-x-auto my-8 rounded-xl border border-gray-200">
-        <table class="w-full text-sm border-collapse">
-          <tbody>
-            {SPECS.map((spec, i) => (
-              <tr class={i < SPECS.length - 1 ? "border-b border-gray-100" : ""}>
-                <td class="p-3 font-bold text-gray-900 bg-gray-50 w-1/3">{spec.label}</td>
-                <td class="p-3 text-gray-600">{spec.value}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <div id="assembly" class="scroll-mt-24">
-        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Assembly and Setup</h2>
-        <p>
-          Assembly took our team roughly 75 minutes working alone, and closer
-          to 45 minutes with a second person helping lift the upright frame
-          into place — the instructions specifically recommend two people for
-          that step, and we'd second that recommendation rather than trying
-          to muscle it solo. The console and mast arrive mostly pre-wired,
-          which cut down on the fiddly cable-routing work that makes some
-          competitors' assembly instructions frustrating to follow.
-        </p>
-        <p>
-          The included tools were sufficient for the entire build, and the
-          manual's step numbering matched the labeled hardware bags closely
-          enough that we never had to guess which bolt went where. Our one
-          complaint: the treadmill ships in a genuinely heavy box, close to
-          230 pounds, so plan for a delivery location you can actually
-          unbox and assemble in, rather than expecting to move the full crate
-          up a flight of stairs first.
-        </p>
-        <p>
-          Once assembled, we'd also recommend a short calibration pass before
-          your first real workout: run the treadmill through its full
-          incline and decline range once, listen for any unusual noise from
-          the incline motor, and confirm the safety key stops the belt
-          immediately when pulled. It's a five-minute check that catches the
-          rare shipping-damage issue before it becomes a mid-workout surprise,
-          and it's a habit worth carrying over to any treadmill you buy, not
-          just this one.
-        </p>
-        </div>
-
-        <div id="performance" class="scroll-mt-24">
-        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Performance Deep Dive</h2>
-        <h3>Motor and Deck</h3>
-        <p>
-          The 3.75 CHP motor never felt strained during our testing, even
-          during back-to-back interval sessions pushing past 8 mph. It runs
-          quieter than we expected for a motor of this size, staying in a
-          range comparable to normal conversation even under sustained load.
-          The 22 x 60-inch deck is genuinely large — our tallest tester, at
-          6'3", never felt cramped during full-stride running, which is more
-          than we can say for several cheaper machines we've reviewed.
-        </p>
-        <p>
-          We also ran a dedicated heat-soak test: 45 minutes of continuous
-          jogging at 6.5 mph, checking motor housing temperature by hand
-          every ten minutes. The housing warmed noticeably but never became
-          uncomfortable to touch, and belt speed stayed consistent throughout
-          rather than surging or lagging as the motor worked — a small but
-          telling sign of a motor that isn't being pushed near its ceiling
-          during normal home use. Belt tracking held steady across the full
-          test without drifting toward either rail, which isn't universal
-          among machines in this price range.
-        </p>
-        <h3>Cushioning</h3>
-        <p>
-          FlexSelect cushioning lets you toggle between three firmness
-          settings using a lever under the deck, and the difference is
-          noticeable in practice, not just on paper. The softest setting
-          took noticeable edge off impact during longer runs, while the
-          firmest setting felt more responsive for faster interval work.
-          Testers with knee sensitivity specifically preferred keeping it on
-          the softest setting for daily walking sessions.
-        </p>
-        <h3>Incline, Decline, and the iFit Experience</h3>
-        <p>
-          Automatic incline and decline respond quickly during iFit
-          trainer-led workouts, ramping smoothly rather than lurching, which
-          matters more than it sounds like during a workout where the terrain
-          is changing every few seconds. The 14-inch touchscreen is
-          responsive and the included first-year iFit membership gives you
-          real time to decide whether the coached workout format is worth
-          continuing to pay for afterward — our honest take is that it's a
-          genuine value-add for anyone who struggles with workout motivation,
-          and largely wasted on anyone who prefers running their own pace.
-        </p>
-        <h3>Console, Sound, and Everyday Usability</h3>
-        <p>
-          Outside of guided workouts, the console handles the basics well:
-          speed and incline adjust in clean half-mph and 1% increments via
-          physical buttons on the handrail, so you don't have to reach for
-          the touchscreen mid-run just to slow down. The built-in speakers
-          are loud enough to fill a small room without a phone or separate
-          speaker, and Bluetooth pairing was reliable across every test
-          session, reconnecting automatically once a paired phone came back
-          into range. The one recurring annoyance our testers noted was the
-          touchscreen occasionally taking a beat to wake from sleep mode if
-          the machine had been idle for more than a day.
-        </p>
-        <h3>Folding and Footprint</h3>
-        <p>
-          The EasyLift assist strut noticeably reduces the effort needed to
-          raise the deck compared to a fully manual latch, though it's not
-          quite as effortless as the hydraulic systems we've tested on
-          dedicated folding treadmills. Given the machine's size and weight,
-          we wouldn't expect most households to fold this one daily — it's
-          better suited to living semi-permanently in a dedicated space, with
-          folding reserved for occasional deep cleaning or furniture
-          rearranging.
-        </p>
-        </div>
-
-        <div id="durability" class="scroll-mt-24">
-        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Long-Term Durability Notes</h2>
-        <p>
-          Four weeks of testing can't fully answer the multi-year durability
-          question, so we cross-referenced our hands-on impressions against
-          patterns in verified owner reviews spanning one to three years of
-          ownership. Belt tracking came up as the most common long-term
-          maintenance item, with several owners noting they needed to
-          re-center and re-tension the belt within the first year — a normal
-          part of treadmill ownership rather than a defect, but one worth
-          budgeting five minutes for every few months. The touchscreen and
-          console electronics showed a low complaint rate relative to
-          competitors, and the frame itself drew consistent praise for not
-          developing the wobble or creak that shows up on cheaper machines
-          after a year of regular use.
-        </p>
-        <p>
-          NordicTrack's warranty coverage — a 10-year frame, 2-year parts,
-          and 1-year labor policy on this model — is solid for the mid-range
-          category, though it's worth registering your unit promptly after
-          purchase, since warranty claims move faster with registration on
-          file. We'd also recommend keeping the belt lubricated on the
-          manufacturer's suggested schedule; skipped maintenance is the most
-          common root cause behind the motor strain complaints we've seen
-          reported for this model.
-        </p>
-        </div>
-
-        <div id="pros-cons" class="scroll-mt-24">
-        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Pros and Cons</h2>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8 not-prose">
-        <div class="bg-green-50 rounded-xl p-4">
-          <p class="text-xs font-black uppercase tracking-widest text-green-700 mb-3">Pros</p>
-          <ul class="space-y-2">
-            {[
-              "Large 22 x 60-inch deck comfortably fits taller runners",
-              "3.75 CHP motor stays quiet and unstrained at running speeds",
-              "Adjustable FlexSelect cushioning makes a real difference",
-              "14-inch touchscreen with responsive automatic incline/decline",
-              "Sturdier frame feel than most machines at this price",
-            ].map((pro) => (
-              <li class="flex items-start gap-2 text-sm text-green-800">
-                <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                {pro}
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div class="bg-red-50 rounded-xl p-4">
-          <p class="text-xs font-black uppercase tracking-widest text-red-700 mb-3">Cons</p>
-          <ul class="space-y-2">
-            {[
-              "Most standout features require an ongoing iFit subscription",
-              "Folded footprint is large compared to true space-saving models",
-              "Assembly is involved and easier with two people",
-              "Touchscreen tilts but doesn't fully swivel off the treadmill",
-            ].map((con) => (
-              <li class="flex items-start gap-2 text-sm text-red-800">
-                <svg class="w-4 h-4 text-red-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-                {con}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <div id="comparison" class="scroll-mt-24">
-        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. How It Compares</h2>
-        <p>
-          The Commercial 1750 doesn't exist in a vacuum — here's how it stacks
-          up against the model directly above it and a strong non-NordicTrack
-          alternative.
-        </p>
-        </div>
-      </div>
-
-      <div class="not-prose overflow-x-auto my-8 rounded-xl border border-gray-200">
-        <table class="w-full text-sm border-collapse">
-          <thead>
-            <tr class="bg-gray-50 text-left">
-              <th class="p-3 font-black text-gray-700 border-b border-gray-200">Model</th>
-              <th class="p-3 font-black text-gray-700 border-b border-gray-200">Motor</th>
-              <th class="p-3 font-black text-gray-700 border-b border-gray-200">Deck</th>
-              <th class="p-3 font-black text-gray-700 border-b border-gray-200">Incline</th>
-              <th class="p-3 font-black text-gray-700 border-b border-gray-200">Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            {COMPARISON.map((row, i) => (
-              <tr class={`${i < COMPARISON.length - 1 ? "border-b border-gray-100" : ""} ${row.highlight ? "bg-[#0F62FE]/5" : ""}`}>
-                <td class="p-3 font-bold text-gray-900">{row.name}</td>
-                <td class="p-3 text-gray-600">{row.motor}</td>
-                <td class="p-3 text-gray-600">{row.deck}</td>
-                <td class="p-3 text-gray-600">{row.incline}</td>
-                <td class="p-3 text-gray-600">{row.price}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
-        <p>
-          The jump to the <a href="/nordictrack-commercial-2450-treadmill/">Commercial 2450</a>
-          buys you a stronger motor and a steeper 15% max incline, worth it
-          specifically for serious hill-training runners. The Sole F80 is the
-          closest non-NordicTrack rival at a similar price, trading the iFit
-          ecosystem for a subscription-free console — worth considering if
-          you already know you don't want a coaching app tied to your
-          treadmill.
-        </p>
-        <p>
-          One more comparison worth making mentally, even though it isn't in
-          the table above: NordicTrack's own entry-level T Series machines,
-          which typically run $600-$900. The gap in raw specs looks smaller
-          on paper than it feels in practice — the Commercial 1750's frame
-          is noticeably more rigid under load, the deck cushioning is more
-          adjustable, and the touchscreen is both larger and more responsive.
-          If your budget genuinely can't stretch to Commercial-tier pricing,
-          a T Series machine is a reasonable fallback, but understand you're
-          trading away some of the durability and comfort headroom that
-          makes the 1750 worth recommending in the first place.
-        </p>
-
-        <div class="not-prose bg-amber-50 border border-amber-200 rounded-2xl p-6 my-8">
-          <p class="font-black text-amber-900 mb-2 flex items-center gap-2">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3.75m0 3.75h.007v.008H12v-.008zM21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
-            Buying Tip
+        <div id="short-answer" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. NordicTrack Commercial 1750 Treadmill: The Short Answer</h2>
+<p>
+            <strong>The NordicTrack Commercial 1750 treadmill is the sensible default in NordicTrack's
+            range for most households that will run as well as walk: a full 22 by 60-inch folding
+            deck, decline as well as incline, a 400 lb rating and a lifetime motor warranty, for
+            roughly $2,000 on the discounts NordicTrack runs most of the year.</strong> The case
+            against it is not the hardware. It is the subscription that most of the screen depends
+            on, and the short cover on parts, labour and the touchscreen.
           </p>
-          <p class="text-amber-800 text-sm leading-relaxed">
-            NordicTrack runs frequent sales, especially around major holidays.
-            If you're not in a rush, watch the price for a few weeks — it's
-            common to see the Commercial 1750 drop $200-$300 below its
-            typical street price during promotional periods.
+          <p>
+            Four facts carry most of the decision. The motor is covered for life, where the
+            Commercial 1250 below it gets two years; that is the clearest statement NordicTrack makes
+            about how it expects the machine to hold up. The deck is 22 inches wide and 60 long, which
+            is room for a full running stride and some lateral margin. The incline runs from -3% to
+            12%, which is plenty for walking and hill work but not a substitute for an incline
+            trainer. And the 16-inch screen pivots, which matters only if you will follow iFIT's floor
+            classes beside the machine.
+          </p>
+          <p>
+            Read every figure with the model number in mind. Earlier machines sold as the Commercial
+            1750 had a 14-inch screen and were listed with lower motor ratings, and at least one US
+            listing gave a 300 lb limit. The figures on this page are for NTL17125, the model
+            NordicTrack sells now. We have not tested it; what follows is what the published figures
+            and independent coverage imply. If you want the short version of how it compares with its
+            nearest sibling, our
+            <a href="/nordictrack-commercial-1250-vs-1750/" class="text-[#0F62FE] font-medium">Commercial 1250 vs 1750 comparison</a>
+            covers that choice on its own.
+          </p>
+        </div>
+      </div>
+
+      <!-- Product cards -->
+      <div class="not-prose">
+        {
+          PRODUCTS.map((product, index) => (
+            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
+              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
+                  <div>
+                    <p class="text-white font-black text-xl leading-tight">
+                      {index + 1}. {product.name}
+                    </p>
+                    <p class="text-gray-400 text-xs">{product.category}</p>
+                  </div>
+                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                    {product.badge}
+                  </span>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center gap-2 mb-4 flex-wrap">
+                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
+                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
+                  </div>
+                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
+                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
+                      <p class="text-xs font-black uppercase tracking-widest text-green-700 mb-2">What Works</p>
+                      <ul class="space-y-2">
+                        {product.pros.map((pro) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+                      <p class="text-xs font-black uppercase tracking-widest text-red-700 mb-2">What Doesn't</p>
+                      <ul class="space-y-2">
+                        {product.cons.map((con) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="border-t border-gray-100 pt-4">
+                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
+                    <div class="flex flex-wrap items-center gap-3">
+                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+                        Check Price on Amazon &rarr;
+                      </a>
+                      {product.reviewUrl && (
+                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
+                          Read our full {product.name} review &rarr;
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="which-1750" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Which Commercial 1750? Why Older Reviews Disagree</h2>
+<p>
+            NordicTrack keeps model names while changing the hardware underneath, and the Commercial
+            1750 is the clearest case in its range. That is not a criticism in itself — revising a
+            machine is normal — but it means that a review, a forum post or a retailer listing can be
+            accurate about the machine it describes and still wrong about the one you would buy today.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What the earlier versions looked like</h3>
+          <p>
+            Independent reviews published before 2025 describe a Commercial 1750 with a 14-inch HD
+            touchscreen. One widely read review, last updated in April 2024, lists a 20 by 60-inch belt
+            and the same ten-year frame, two-year parts and one-year labour warranty that applies now.
+            Other coverage of the earlier machine gives its motor as 3.5 CHP, and this site's previous
+            version of this page quoted 3.75 CHP and a 300 lb limit. Our
+            <a href="/nordictrack-commercial-1250-vs-1750/" class="text-[#0F62FE] font-medium">1250 vs 1750 comparison</a>
+            records a US retailer listing at 300 lb and a European listing at about 400 lb. None of
+            those figures is necessarily an error. They describe different machines that happen to
+            share a name.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What NordicTrack lists now</h3>
+          <p>
+            The current model is NTL17125. On 14 October 2026 NordicTrack's own page gave it a 16-inch
+            pivoting touchscreen, a 4.25 CHP motor, a 22 by 60-inch belt and a 400 lb maximum user
+            weight, and P.C. Richard &amp; Son's listing for the same model number repeated the motor,
+            belt and capacity figures. Costco's listing for NTL17125 matches NordicTrack on the screen,
+            the incline range and the footprint. That agreement, on a single model number, is why this
+            page states figures that our roundup of the
+            <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">best NordicTrack treadmills</a>
+            left off its spec line a day earlier.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">How to make sure you are buying the current one</h3>
+          <ul>
+            <li><strong>Read the model number, not the name.</strong> On a listing, look for NTL17125 in the specification block. On a machine in a showroom or on the used market, read it from the label on the frame.</li>
+            <li><strong>Check the screen size.</strong> A listing or a unit with a 14-inch screen is an earlier machine, whatever else it says.</li>
+            <li><strong>Treat clearance and third-party stock with care.</strong> Retailers sometimes carry forward an older specification block, and discontinued stock is often sold under the current name.</li>
+            <li><strong>If a figure decides it for you, get it in writing.</strong> A heavier user or a tall runner should ask the seller to confirm the capacity or the belt width for the exact unit before paying.</li>
+          </ul>
+          <p>
+            If you are buying an older 1750 second-hand, the warranty position matters as much as the
+            specification; we come back to that in the section on warranty and returns.
           </p>
         </div>
 
-        <div id="who-should-skip" class="scroll-mt-24">
-        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Who Should Skip This Treadmill</h2>
-        <p>
-          As much as we like the Commercial 1750, it isn't the right machine
-          for every shopper who lands on this page. If you live in an
-          apartment and need the treadmill to genuinely disappear between
-          uses, its large folded footprint will frustrate you more than it
-          helps — a dedicated compact folding treadmill from our
-          <a href="/best-folding-treadmill-reviews/">folding treadmill guide</a>
-          will serve you far better. If you know for certain you'll never pay
-          for a subscription app, you're paying for touchscreen hardware
-          you'll rarely use at full value, and a simpler console-based
-          machine at a lower price point may be the smarter buy. And if your
-          household's use case is genuinely light — occasional walking a
-          couple times a month rather than a real fitness habit — this is
-          more treadmill than you need, and the money is better spent on a
-          machine from our
-          <a href="/best-treadmill-under-1000-reviews/">budget treadmill guide</a>.
-        </p>
+        <div id="current-specs" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The Specifications NordicTrack Confirms</h2>
+<p>
+            The table below separates the figures that NordicTrack publishes and an independent retailer
+            listing repeats for the same model number from the ones that appear in only one place.
+            Everything was read on 14 October 2026.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Specification (NTL17125)</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Figure</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Confirmed by</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Running belt</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22 x 60 in.</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack, P.C. Richard</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Drive motor</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4.25 CHP (laboratory rating; see below)</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack, P.C. Richard</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Speed</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0-12 mph</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack, P.C. Richard, Costco</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Incline and decline</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-3% to 12%</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack, Costco</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Maximum user weight</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">400 lb (182 kg)</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack, P.C. Richard</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Touchscreen</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">16 in. HD, pivots</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack, Costco</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Footprint (L x W x H)</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">77.3 x 37 x 59.5 in.</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack, Costco</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Folding</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Yes, SpaceSaver frame</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack, P.C. Richard</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Warranty</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime motor; 10 yr frame; 2 yr parts; 1 yr touchscreen; 1 yr labour</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack; parts and labour also P.C. Richard</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Price seen</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,999.99 (list $2,499.99) at NordicTrack; $1,999 at P.C. Richard</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Each seller's own page</td>
+              </tr>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4 pt-6">Single-source figures</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4 pt-6">Figure</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4 pt-6">Source</th>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Step-up height</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10.0 in.</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack only</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Boxed weight</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">311.5 lb</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack only</td>
+              </tr>
+              <tr>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Assembled weight</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">265 lb</td>
+                <td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Costco only; not stated by NordicTrack</td>
+              </tr>
+            </tbody>
+          </table></div>
+          <p>
+            NordicTrack also lists RunFlex cushioning, an AutoBreeze fan that changes speed with the
+            workout, two 2-inch speakers, Bluetooth for headphones and heart-rate monitors, and the
+            iFIT features it calls SmartAdjust and ActivePulse. Those are features rather than
+            measurements, and how useful they are depends on whether you keep an iFIT membership.
+          </p>
         </div>
 
-        <div id="verdict" class="scroll-mt-24">
-        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Final Verdict</h2>
-        <p>
-          The NordicTrack Commercial 1750 earns its place as one of the
-          better mid-range treadmills we've tested, specifically because it
-          doesn't cut corners on the two things that matter most day to day:
-          motor strength and deck comfort. The iFit dependency is a real
-          trade-off, not a minor footnote, and you should go in with eyes
-          open about the ongoing subscription cost if you want the full
-          experience. But judged purely as a piece of exercise equipment —
-          motor, deck, frame, cushioning — this is a treadmill built to be
-          used hard for years, not a treadmill built to look good in a
-          product photo.
-        </p>
-        <p>
-          If you've read this far and you're still weighing the Commercial
-          1750 against a smaller list of finalists, our advice is simple:
-          buy based on the motor and deck you'll be living with every day,
-          not the touchscreen you'll glance at during a handful of guided
-          workouts. Screens get outdated; a well-built frame and a properly
-          sized deck don't.
-        </p>
+        <div id="motor" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. The 4.25 CHP Motor, and Why the Warranty Says More</h2>
+<p>
+            NordicTrack rates the current Commercial 1750's drive motor at 4.25 continuous horsepower,
+            and P.C. Richard's listing for the same model number gives the same figure. That is a
+            higher number than any version of the 1750 has been listed with before, and it is the same
+            rating NordicTrack gives the Commercial 2450 above it.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What NordicTrack's own footnote says</h3>
+          <p>
+            NordicTrack footnotes the figure, and the footnote is worth reading. It says CHP is a
+            term the industry uses for consumer comparison, that the rating is measured in laboratory
+            testing with a dynamometer, and that it does not denote the operational horsepower of the
+            treadmill in ordinary household use, where the motor does not run at the horsepower shown.
+            Bowflex says much the same about its own ratings, as our
+            <a href="/bowflex-t6-treadmill/" class="text-[#0F62FE] font-medium">Bowflex T6 review</a>
+            explains. The practical point is that a CHP figure is useful for comparing machines that
+            are rated the same way and much less useful for predicting how a motor will feel under
+            you. Our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">treadmill horsepower guide</a>
+            goes through peak, continuous and test ratings and what each one does and does not tell you.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The lifetime motor warranty is the stronger signal</h3>
+          <p>
+            What NordicTrack commits to in writing is a lifetime warranty on the motor. A manufacturer
+            sets warranty terms with its own failure data in front of it, so promising to cover a motor
+            for the life of the machine on the 1750, and for two years on the 1250 and the T Series,
+            tells you where it expects its costs to land. For a runner putting in real mileage, a
+            heavier user or a household sharing one machine, that is worth more than a quarter of a
+            horsepower on a label.
+          </p>
+          <p>
+            Two qualifications keep it in proportion. The lifetime cover is on the motor, not on the
+            labour to fit one, and labour is covered for one year. And on a well-kept home treadmill
+            the motor is rarely the first thing to fail; belts, decks and control boards usually go
+            first, and those fall under the two-year parts term. A motor warranty is reassurance about
+            the most expensive single part, not a promise that nothing else will need paying for.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What the motor is for</h3>
+          <p>
+            The use cases that load a treadmill motor hardest are long sessions, heavier users, steep
+            incline and sustained running. A machine rated for 400 lb, with incline to 12% and a
+            12 mph ceiling, is specified with those in mind. Keeping the deck lubricated and the belt
+            correctly tensioned does more for motor life than the rating does; our
+            <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">belt lubrication guide</a>
+            covers the routine, and the manual is the authority on the interval for your machine.
+          </p>
         </div>
-      </div>
 
-      <!-- FAQ -->
-      <div id="faq" class="scroll-mt-24">
-        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
-        <div class="space-y-6">
-          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-            <h3 class="font-bold text-gray-900 mb-2">Is the NordicTrack Commercial 1750 worth the price?</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              For most home users who want a genuinely sturdy, full-size deck
-              and don't mind an iFit subscription after the included first
-              year, yes. It sits in a sweet spot between entry-level machines
-              that feel flimsy at running speeds and flagship models like the
-              Commercial 2450 that cost hundreds more for incremental gains
-              most walkers and joggers won't notice.
-            </p>
-          </div>
-          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-            <h3 class="font-bold text-gray-900 mb-2">Do I have to pay for iFit to use the Commercial 1750?</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              The treadmill functions without an active iFit subscription,
-              but most of its standout features — auto-adjusting incline
-              during trainer-led workouts, the full workout library, and the
-              interactive touchscreen content — require a membership. Without
-              it, you're left with a manual treadmill on a premium-priced
-              frame, so budget for the subscription as part of the real cost.
-            </p>
-          </div>
-          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-            <h3 class="font-bold text-gray-900 mb-2">How does the Commercial 1750 compare to the Commercial 2450?</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              The Commercial 2450 has a stronger 4.25 CHP motor and steeper
-              15% max incline versus the 1750's 3.75 CHP and 12% incline,
-              along with a larger touchscreen. For most walkers and moderate
-              runners, the 1750 delivers nearly the same day-to-day
-              experience for several hundred dollars less; the 2450 earns its
-              price for serious runners who use steep incline training
-              regularly.
-            </p>
-          </div>
-          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-            <h3 class="font-bold text-gray-900 mb-2">Is the deck big enough for taller runners?</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              The 22 x 60-inch deck is on the larger end for a home
-              treadmill and comfortably fit testers up to 6'3" during
-              full-stride running without feeling cramped. Shorter or
-              narrower decks on cheaper machines are the ones where taller
-              runners typically run into trouble, not this one.
-            </p>
-          </div>
-          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-            <h3 class="font-bold text-gray-900 mb-2">How loud is the Commercial 1750 at higher speeds?</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              We measured noise in the low-60 decibel range during sustained
-              jogging, roughly comparable to a normal conversation. It's not
-              silent, but it didn't interfere with phone calls in an
-              adjacent room during our testing, and it stayed consistent
-              rather than getting noticeably louder over several weeks of
-              daily use.
-            </p>
-          </div>
-          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-            <h3 class="font-bold text-gray-900 mb-2">How long does assembly take?</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Roughly 75 minutes working alone, or about 45 minutes with a
-              second person helping lift the upright frame into place, which
-              the manual specifically recommends for that step. The console
-              and mast arrive mostly pre-wired, which speeds things up
-              compared to machines that require extensive cable routing
-              during assembly.
-            </p>
-          </div>
-          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-            <h3 class="font-bold text-gray-900 mb-2">What maintenance does the Commercial 1750 need over time?</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Belt tracking and tension are the most common maintenance
-              items owners report needing within the first year, which is
-              normal for treadmills generally rather than specific to this
-              model. Keeping the belt lubricated on NordicTrack's suggested
-              schedule is the single biggest factor in avoiding motor strain
-              and premature wear.
-            </p>
-          </div>
+        <div id="deck" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Deck, Cushioning and the 400 lb Rating</h2>
+<p>
+            The current 1750 has a 22 by 60-inch belt. Sixty inches is the length that running
+            guidance generally settles on for adults who intend to run rather than jog, because a full
+            stride needs room in front and behind without the runner shortening it to stay off the rear
+            roller. Twenty-two inches is two more than the common home-treadmill width, and it is the
+            figure that matters most for taller runners, broad builds and anyone whose stride drifts
+            sideways late in a session.
+          </p>
+          <p>
+            Two cautions apply. First, older 1750s were listed at 20 inches wide in some places, so a
+            used or clearance unit may not have the wider belt; check the model number. Second, belt
+            width on a spec sheet and the width you can actually run on are not always the same, because
+            side rails can overlap the edge of the belt. If width is the reason you are buying, stand on
+            the machine in a showroom or ask the seller about the usable width between the rails. Our
+            <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
+            works through which lengths and widths suit which heights and paces, and
+            <a href="/best-treadmills-for-tall-runners/" class="text-[#0F62FE] font-medium">our guide for tall runners</a>
+            covers the case for a wider deck in more detail.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">RunFlex cushioning</h3>
+          <p>
+            NordicTrack describes the deck's RunFlex cushioning as designed to absorb impact and provide
+            stability. It does not publish a number for it, and cushioning cannot be compared from a
+            listing; it is a design feature you judge by standing on it. What a cushioned deck does and
+            does not do for your joints is covered in our
+            <a href="/treadmill-cushioning-explained/" class="text-[#0F62FE] font-medium">cushioning explainer</a>.
+            The short version is that it softens the landing compared with a road, which most people
+            find more comfortable, but it is not a treatment for an injury.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The 400 lb maximum user weight</h3>
+          <p>
+            NordicTrack lists the current model at 400 lb (182 kg), and P.C. Richard's listing for
+            NTL17125 agrees. That settles, for this model number, the conflict our earlier comparison
+            recorded between a 300 lb US listing and a 400 lb European one. It does not settle it for
+            older units, so a heavier buyer looking at a used or discounted 1750 should confirm the
+            figure for that machine. A rating is a ceiling, not a target; a machine used near its limit
+            every day works harder than one with margin. Our guide to
+            <a href="/what-happens-if-you-exceed-treadmill-weight-limit/" class="text-[#0F62FE] font-medium">what happens if you exceed a treadmill's weight limit</a>
+            explains why the margin matters.
+          </p>
         </div>
-      </div>
 
-      <!-- Common Mistakes -->
-      <div class="mt-16">
-        <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buyers Make</h2>
-        <p class="text-gray-700 leading-relaxed">The 1750 is the machine we recommend most often, which also makes it the one buyers most often over- or under-buy around.</p>
-        <div class="space-y-6 my-8">
-          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Stepping up to the 2450 for the screen</h3>
-            <p class="text-gray-700 text-sm m-0">The 2450's 24-inch display is the main difference; the motor and 22 x 60-inch deck are shared. If your reason for upgrading is screen size rather than performance, you are paying several hundred dollars for a bigger panel.</p>
-          </div>
-          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating the folding mechanism as a space plan</h3>
-            <p class="text-gray-700 text-sm m-0">SpaceSaver folding reclaims floor area, but the machine is still heavy and needs clearance behind it to fold. Measure the footprint folded and unfolded, and check that the floor can take the weight where you plan to keep it.</p>
-          </div>
-          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Budgeting only for the purchase</h3>
-            <p class="text-gray-700 text-sm m-0">iFit is included for the first year and then renews. The machine works without it, but most of the coached content that justifies the price does not. Decide up front whether you are buying the hardware or the ecosystem.</p>
-          </div>
-          <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
-            <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Skipping the deck lubrication schedule</h3>
-            <p class="text-gray-700 text-sm m-0">The 1750's deck is durable but not maintenance-free. Owners who never lubricate report belt drag and motor strain years earlier than those who follow the manual. It takes ten minutes and a tube of silicone.</p>
-          </div>
+        <div id="incline-speed" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Incline, Decline and Speed</h2>
+<p>
+            The 1750 inclines to 12% and declines to -3%, and runs from 0 to 12 mph. Those ranges are
+            identical across the Commercial 1250, 1750 and 2450 on NordicTrack's current listings, except
+            that the 2450 goes to 14 mph. Nothing you pay for between the 1250 and the 1750 buys more
+            climbing or more speed.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Twelve percent is enough for most</h3>
+          <p>
+            Twelve percent is a percent grade, not degrees; it works out at a little under seven
+            degrees, which is steeper than it sounds when you are walking it for half an hour. It covers
+            the popular <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 workout</a>
+            at its full setting and most hill-interval sessions. If steep incline walking is the main
+            reason you are buying and you want to go well beyond 12%, the 1750 is not the machine; the
+            X Series incline trainers in our
+            <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">NordicTrack roundup</a>
+            and the machines in our <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">best incline treadmills</a>
+            guide are built around much steeper grades.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What the decline is for</h3>
+          <p>
+            The -3% decline is the less common feature. It lets the machine follow the downhill parts of
+            an iFIT route and gives runners preparing for a hilly race a way to practise descending.
+            Many owners use it rarely. It is a reason to choose the Commercial series over the T Series,
+            which has no decline, rather than a reason to choose the 1750 over its siblings.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Twelve miles an hour</h3>
+          <p>
+            A 12 mph ceiling is a five-minute mile. Very few home runners sustain that, and for steady
+            running and most intervals it will never be a limit. If you do fast repeats above 12 mph,
+            the Commercial 2450 is the NordicTrack that goes beyond it. Our
+            <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">interval workouts guide</a>
+            covers how to structure sessions within a machine's range.
+          </p>
         </div>
-      </div>
-      <!-- Related Guides -->
-      <div class="mt-16">
-        <h2 class="text-2xl font-black text-gray-900 mb-6">Related NordicTrack &amp; Commercial Treadmill Guides</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <a href="/nordictrack-commercial-2450-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Step Up</span>
-            <p class="font-bold text-gray-900 mt-2 mb-1">NordicTrack Commercial 2450 Review</p>
-            <p class="text-sm text-gray-500 leading-relaxed">A stronger motor and steeper incline for serious hill training.</p>
-          </a>
-          <a href="/commercial-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-            <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Category</span>
-            <p class="font-bold text-gray-900 mt-2 mb-1">Best Commercial-Grade Treadmills</p>
-            <p class="text-sm text-gray-500 leading-relaxed">Every gym-quality treadmill we've tested for home use, ranked.</p>
-          </a>
-          <a href="/nordictrack/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-            <span class="text-xs font-black uppercase tracking-widest text-green-600">Brand Guide</span>
-            <p class="font-bold text-gray-900 mt-2 mb-1">NordicTrack Treadmill Lineup Explained</p>
-            <p class="text-sm text-gray-500 leading-relaxed">Every current NordicTrack model, sorted by who it's actually for.</p>
-          </a>
-        </div>
-      </div>
 
-      <!-- Closing CTA -->
-      <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
-        <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
-        <p class="text-gray-300 leading-relaxed mb-4">
-          The <strong class="text-white">NordicTrack Commercial 1750</strong> is
-          the mid-tier NordicTrack we'd actually recommend buying. It has the
-          motor and deck size to handle real running, cushioning that adjusts
-          to how you feel that day, and a frame that doesn't flex or creak
-          under sustained use — the trade-off is leaning into the iFit
-          ecosystem if you want the full experience.
-        </p>
-        <p class="text-gray-300 leading-relaxed">
-          Comparing your options first? See our full
-          <a href="/commercial-treadmills/" class="text-[#5AA9FF] font-bold no-underline">commercial treadmill roundup</a>
-          or the <a href="/nordictrack/" class="text-[#5AA9FF] font-bold no-underline">NordicTrack brand guide</a>
-          for how every current model in the lineup stacks up.
-        </p>
-        <p class="text-gray-300 leading-relaxed mt-4">
-          Whatever you buy at this level, the machine will outlast its warranty only if the deck is maintained: <a href="/how-long-do-treadmills-last/" class="text-[#5AA9FF] font-bold no-underline">how long treadmills last</a> sets out realistic lifespans by tier, and the <a href="/treadmill-maintenance/" class="text-[#5AA9FF] font-bold no-underline">maintenance schedule</a> is the work that gets you there.
-        </p>
+        <div id="screen-and-ifit" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. The 16-Inch Screen and the iFIT Question</h2>
+<p>
+            The screen is the feature NordicTrack leads with. The current 1750 has a 16-inch HD
+            touchscreen that pivots, so it can be turned away from the belt to face the room for iFIT's
+            strength, yoga and mobility classes; NordicTrack also describes it as tilting for the viewing
+            angle. Older 1750s had a 14-inch screen, which is the quickest way to tell an earlier machine
+            apart.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What needs a membership</h3>
+          <p>
+            Full iFIT content — trainer-led classes, scenic routes, and the features that change speed
+            and incline for you — needs a paid membership. NordicTrack's in-home trial includes 30 days
+            of it. We do not quote the membership price because it changes; check it on iFIT's own site
+            and multiply it by the years you expect to keep the machine. Our assessment of
+            <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">whether iFIT is worth it</a>
+            sets out that arithmetic.
+          </p>
+          <p>
+            What the machine does without a membership is the question most buyers do not ask until
+            after delivery. Our guide to
+            <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">using a NordicTrack without iFIT</a>
+            covers what still works — the belt, the incline, manual control — and what you lose. The
+            short answer is that the treadmill remains a treadmill, but much of what you paid for in
+            the screen becomes idle, and connected consoles change with software updates. Ask the seller
+            what the console does without an active membership on the model you are buying, and keep
+            the answer.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Is the pivot worth paying for?</h3>
+          <p>
+            The pivoting screen is the main thing the 1750 adds over the 1250's 10-inch tilting screen,
+            alongside the motor warranty. It earns its place only if you will keep a membership, do the
+            floor classes, and have clear floor beside the treadmill to do them on. If the machine will
+            sit in a narrow corner or a garage bay, or you only ever run on it, the pivot does nothing
+            for you, and the bigger screen is a comfort rather than a capability. Plenty of owners end
+            up watching their own content on a tablet more than they follow classes.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Heart rate and other apps</h3>
+          <p>
+            NordicTrack lists Bluetooth heart-rate monitor support, which the iFIT ActivePulse feature
+            uses to adjust speed to keep you in a zone; the strap is sold separately. If you want to train
+            by heart rate, our guide to
+            <a href="/best-heart-rate-monitors-for-treadmill/" class="text-[#0F62FE] font-medium">heart-rate monitors for treadmill use</a>
+            covers which kind to buy. If you would rather use Zwift, Peloton or another platform, check
+            whether the current 1750 supports it before you buy for it; a machine built around iFIT is
+            not the obvious choice for someone who wants a different ecosystem.
+          </p>
+        </div>
+
+        <div id="folding-and-space" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Folding, Footprint and Where It Fits</h2>
+<p>
+            Assembled, the 1750 measures 77.3 inches long, 37 wide and 59.5 tall on NordicTrack's figures,
+            which Costco's listing repeats. That is about 19.9 square feet of floor for the machine alone.
+            It folds on NordicTrack's SpaceSaver frame, with the deck lifting and the machine rolling away
+            on wheels; NordicTrack's page does not give folded dimensions, so measure the space you plan to
+            store it in against the machine on delivery rather than assuming a figure.
+          </p>
+          <p>
+            Folding saves floor; it does not make the machine light. NordicTrack gives the boxed weight as
+            311.5 lb, and Costco lists the assembled machine at 265 lb; NordicTrack's own page does not
+            state an assembled weight. Either way, plan the delivery route, the stairs and the final
+            position before it arrives, and expect to need two people to move it. Independent reviewers of
+            the 1750 have consistently described it as large even when folded, which matches those figures.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Ceiling height</h3>
+          <p>
+            NordicTrack lists a 10-inch step-up height for the current model; we did not find that figure
+            confirmed elsewhere. A common working rule is to allow your height, plus the step-up height,
+            plus several inches for the bounce of a running stride and the deck rising at full incline.
+            For a 6 ft runner (72 inches) that adds up to somewhere around 88 to 92 inches, which leaves
+            little margin under a standard 8-foot ceiling and none in many basements. The manual's
+            guidance for your unit takes precedence over any rule of thumb.
+            Measure the lowest point above where you will stand — a beam, a duct, a light — not the middle
+            of the room.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Clearance and the room</h3>
+          <p>
+            You also need clear space behind the deck and at the sides; follow the clearances in the
+            manual. Our <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">dimensions and space guide</a>
+            gives typical clearance figures, and
+            <a href="/where-to-put-a-treadmill/" class="text-[#0F62FE] font-medium">where to put a treadmill</a>
+            covers floors, power and the footstrike noise that travels into rooms below, which matters for
+            any running treadmill in an upstairs room.
+          </p>
+        </div>
+
+        <div id="warranty-delivery" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Warranty, Delivery and Returns</h2>
+<p>
+            NordicTrack's warranty on the current 1750 is lifetime on the motor, ten years on the frame,
+            two years on parts, one year on the touchscreen and one year of labour and repairs.
+            P.C. Richard's listing repeats the two-year parts and one-year labour terms. Paid extensions
+            are offered at checkout.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Reading the split</h3>
+          <p>
+            The motor and frame cover is strong. The rest is short, and it is the short terms that decide
+            what ownership costs from year two. A touchscreen covered for one year is the part to think
+            about hardest, because it is expensive and it is what the machine is built around. Labour for
+            one year means that from the second year a covered part may arrive free while the visit to fit
+            it does not. If you are considering an extended plan, price it against what a technician's
+            call-out costs where you live. Our
+            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
+            explains how to read frame, motor, parts and labour terms line by line, including registration
+            requirements that can affect a claim.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Delivery and assembly</h3>
+          <p>
+            On 14 October 2026 NordicTrack included free standard delivery, which it values at up to
+            $249, and described standard delivery as curbside, with the customer assembling. Room-of-choice
+            delivery with assembly, and haul-away of an old machine, cost extra. Costco's listing for the
+            same model includes white-glove delivery with setup in its price and quotes two to four weeks.
+            If you will assemble it yourself, read our
+            <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium">treadmill assembly guide</a>
+            first; the deck and motor hood are the heavy parts, and a second person is not optional.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The 30-day trial and its return fee</h3>
+          <p>
+            NordicTrack offers a 30-day in-home trial. Its terms, on the day we checked, deducted a
+            $249.99 return fee from the refund, and delivery and assembly costs were not refundable. That
+            is a meaningful sum, so treat the trial as a safety net rather than a free test drive, and if
+            you can, stand on a 1750 in a store before ordering. Third-party sellers have their own return
+            terms; read them before you buy.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Buying used</h3>
+          <p>
+            Many treadmill warranties apply only to the original purchaser, so do not assume any cover
+            passes to you. Ask NordicTrack with the serial number. Check the model number against the
+            screen size, run the machine through its full incline and decline range, and look at the belt
+            and deck for wear. Our
+            <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a>
+            runs through the full inspection.
+          </p>
+        </div>
+
+        <div id="what-reviewers-report" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. What Independent Reviewers Consistently Report</h2>
+<p>
+            We include a point here only when it appears in more than one independent source. Much of the
+            published coverage describes the earlier 14-inch machine, so we have kept to points that do not
+            depend on which version was reviewed.
+          </p>
+          <ul>
+            <li><strong>The hardware is well regarded for running.</strong> Independent reviews across several years describe the 1750 as a solid, stable machine for both walking and running, and it is a regular recommendation in roundups of folding treadmills.</li>
+            <li><strong>Much of the value is tied to iFIT.</strong> Reviewers and owners repeatedly point out that the screen's appeal depends on a paid membership, and that the console is less compelling without one. Several describe the subscription as the main ongoing cost of ownership.</li>
+            <li><strong>It is big and heavy, even folded.</strong> More than one review notes that the 1750 takes up a lot of room and is hard to move even when folded, and one advises against assembling it alone. That is consistent with the footprint and weights above.</li>
+          </ul>
+          <p>
+            What we have not seen consistently is a specific mechanical weakness of the current model;
+            it has not been on sale long enough for long-term reports to build up. As with any connected
+            treadmill, the parts most likely to need attention over the years are the belt, the deck and
+            the electronics, which is why the short parts and touchscreen terms matter. Our guide to
+            <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium">reading treadmill reviews</a>
+            explains how to tell a pattern in owner reports from a handful of loud ones.
+          </p>
+          <p>
+            A note on safety records: we searched the US Consumer Product Safety Commission's recall
+            listings on 14 October 2026 and found no recall of the Commercial 1750 or of NordicTrack's
+            current Commercial series. iFIT's recent recalls covered NordicTrack rowing machines and
+            adjustable dumbbells, not treadmills.
+          </p>
+        </div>
+
+        <div id="vs-alternatives" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Commercial 1750 vs the 1250, the 2450 and the T Series</h2>
+<p>
+            Most buyers who look at the 1750 are choosing between it and one neighbour. Here is what
+            separates them on the figures NordicTrack publishes.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Against the Commercial 1250</h3>
+          <p>
+            Speed and incline are identical. The confirmed differences are the screen — 10 inches and
+            tilting on the 1250, 16 and pivoting on the 1750 — the motor warranty, which goes from two
+            years to lifetime, and the price, typically a few hundred dollars. NordicTrack's comparison
+            table on the 1750 page now also lists the 1250 at 3.6 CHP with the same 22 by 60-inch belt and
+            400 lb rating; we have not cross-checked those 1250 figures against an independent source, so
+            our <a href="/nordictrack-commercial-1250-vs-1750/" class="text-[#0F62FE] font-medium">1250 vs 1750 comparison</a>
+            still treats them with caution. The rule of thumb holds either way: pay for the 1750 if you
+            will use the pivoting screen or you value lifetime motor cover; otherwise the 1250 does the
+            same job on the belt.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Against the Commercial 2450</h3>
+          <p>
+            The 2450 adds speed, to 14 mph, and screen, to 24 inches, and carries the same lifetime motor
+            cover. NordicTrack lists it with the same 4.25 CHP rating, the same 22 by 60-inch belt and the
+            same 400 lb capacity as the current 1750, and the same -3% to 12% incline; we have not
+            cross-checked those 2450 figures independently for this page. It has typically cost a few
+            hundred dollars more than the 1750. Unless you run intervals above 12 mph or want the biggest
+            screen, the extra money buys little. Our older
+            <a href="/nordictrack-commercial-2450-treadmill/" class="text-[#0F62FE] font-medium">Commercial 2450 review</a>
+            predates the current listing, so check its figures against NordicTrack's page.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Against the T Series</h3>
+          <p>
+            The T Series 10 and 16 are cheaper and built for walking and lighter running: a 20 by 60-inch
+            belt, incline to 12% with no decline, a 325 lb rating and two years on the motor. Our
+            <a href="/nordictrack-t-series-vs-commercial/" class="text-[#0F62FE] font-medium">T Series vs Commercial guide</a>
+            covers that choice in full. The short version is that a walker who wants a big screen can save
+            money with a T Series 16, and anyone who runs several times a week should put the difference
+            towards the 1750.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Outside NordicTrack</h3>
+          <p>
+            If you know you will never subscribe to iFIT, a machine that does not depend on a screen may
+            be the better use of the money. The
+            <a href="/bowflex-t6-treadmill/" class="text-[#0F62FE] font-medium">Bowflex T6</a>
+            and the 22-inch-wide
+            <a href="/bowflex-t9-treadmill/" class="text-[#0F62FE] font-medium">Bowflex T9</a>
+            work fully without a membership and connect to third-party apps, each with its own
+            subscription. Our <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">best NordicTrack treadmills</a>
+            roundup ranks the whole current range if you want to see the 1750 in context.
+          </p>
+        </div>
+
+        <div id="ownership" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Owning One: Resets, Maintenance and Common Faults</h2>
+<p>
+            A connected treadmill asks a little more of its owner than a basic one, mostly because of the
+            software. Three habits avoid most problems.
+          </p>
+          <p>
+            <strong>Know how to reset it.</strong> A frozen screen, a console that will not respond or a
+            machine that will not start after an update are the faults NordicTrack owners most often search
+            for, and many clear with a restart or a reset. Our guide to
+            <a href="/how-to-reset-nordictrack-treadmill/" class="text-[#0F62FE] font-medium">resetting a NordicTrack treadmill</a>
+            goes through the sequence, from a simple power cycle to a full reset, and what to try before
+            calling support.
+          </p>
+          <p>
+            <strong>Keep the deck lubricated and the belt adjusted.</strong> A dry deck increases friction,
+            which loads the motor and wears the belt. Follow the manual's interval and product. Our
+            <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">treadmill maintenance guide</a>
+            sets out the full owner's schedule, and
+            <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">belt slipping</a>
+            covers the symptom most often confused with a motor fault.
+          </p>
+          <p>
+            <strong>Register it and keep records.</strong> Register the warranty, keep the order
+            confirmation, and keep a simple note of lubrication and adjustments. With one year of labour
+            and two of parts, a well-documented claim in that window is worth having.
+          </p>
+          <p>
+            Before servicing anything, unplug the machine and remove the safety key. If you notice a
+            burning smell, a belt that will not stop, sparking or a tripping breaker, stop using it and
+            contact NordicTrack; our
+            <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a>
+            covers the common faults and when each one needs a technician.
+          </p>
+        </div>
+
+        <div id="who-should-buy" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Who Should Buy It, and Who Should Not</h2>
+<p>
+            <strong>Buy the Commercial 1750 if you will run as well as walk, want a full-size folding deck,
+            and value lifetime motor cover.</strong> On the current model's figures — 22 by 60 inches, a
+            400 lb rating, -3% to 12% and 12 mph — it covers almost everything a home runner does, and the
+            motor warranty is the best reason to choose it over the 1250.
+          </p>
+          <p>
+            <strong>Buy it if you will use iFIT, including the floor classes.</strong> The pivoting
+            16-inch screen is the feature that most clearly earns the 1750's price over the 1250, and only
+            for people who keep a membership and train beside the machine.
+          </p>
+          <p>
+            <strong>Choose the 1250 if you mainly walk and run on the belt</strong> and can accept a
+            two-year motor warranty to keep a few hundred dollars. Our
+            <a href="/nordictrack-commercial-1250-vs-1750/" class="text-[#0F62FE] font-medium">1250 vs 1750 page</a>
+            sets out where that line falls.
+          </p>
+          <p>
+            <strong>Look elsewhere if you will never subscribe.</strong> A machine built around a screen
+            loses much of its value without the membership, and there are good treadmills that work fully
+            on their own.
+          </p>
+          <p>
+            <strong>Look elsewhere if steep incline is the plan.</strong> Twelve percent is plenty for
+            most, but an incline trainer goes much further, and the 1750 is not built for it.
+          </p>
+          <p>
+            <strong>Whatever you decide, buy on discount and by model number.</strong> NordicTrack's list
+            price is rarely what anyone pays; the 1750 was $1,999.99 at NordicTrack and $1,999 at
+            P.C. Richard on the day we checked. Our guide to the
+            <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy a treadmill</a>
+            explains when the deepest discounts tend to land. Confirm NTL17125 on the listing, and get any
+            figure you are relying on in writing.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">14. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is the NordicTrack Commercial 1750 treadmill worth it?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                For most buyers who will run as well as walk, yes, at the discounted prices NordicTrack runs most of the year. The current model has a 22 by 60-inch belt, a 400 lb rating, -3% to 12% incline, 12 mph and a lifetime motor warranty. It is worth less if you will not keep an iFIT membership. We have not tested it.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What is the weight limit on the NordicTrack Commercial 1750?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                NordicTrack lists the current model, NTL17125, at a 400 lb (182 kg) maximum user weight, and P.C. Richard’s listing for the same model agrees. Older units sold under the same name have been listed at 300 lb in at least one US listing, so check the model number on a used or clearance machine.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What motor does the NordicTrack Commercial 1750 have?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                NordicTrack rates the current model’s motor at 4.25 CHP and covers it for life. Its footnote says the figure is a laboratory dynamometer rating that does not denote operational horsepower in household use. Earlier versions were listed at lower ratings, so the model number matters when comparing reviews.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is the NordicTrack Commercial 1750 screen 14 or 16 inches?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                The current model has a 16-inch HD touchscreen that pivots. Earlier machines sold as the Commercial 1750 had a 14-inch screen, which is the quickest way to spot an older unit on a listing or the used market.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Can you use the NordicTrack Commercial 1750 without iFIT?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Yes, as a treadmill: the belt, incline and decline work without a membership. Most of the screen’s content, including trainer-led classes and automatic speed and incline control, needs a paid iFIT membership. Ask what the console does without one on the model you are buying.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What is the difference between the NordicTrack Commercial 1750 and 2450?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                NordicTrack lists the 2450 at 14 mph against 12 mph, with a 24-inch pivoting screen against 16 inches. Both have a lifetime motor warranty and -3% to 12% incline, and NordicTrack’s current listings give both a 4.25 CHP rating, a 22 by 60-inch belt and a 400 lb capacity. The 2450 typically costs a few hundred dollars more.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Commercial 1750</h2>
+          <p class="text-gray-700 leading-relaxed">Most bad purchases of this machine come from reading the wrong version’s figures or paying for a screen that will sit idle.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting a review of an older model</h3>
+              <p class="text-gray-700 text-sm m-0">Coverage of the 14-inch Commercial 1750 lists a different motor rating, in some cases a 20-inch belt, and in one US listing a 300 lb limit. Those may have been right for that machine. Check the model number — NTL17125 is the current one — and judge the machine in front of you on its own figures.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Paying for the pivoting screen and never pivoting it</h3>
+              <p class="text-gray-700 text-sm m-0">The 1750’s screen pivots so you can follow iFIT floor classes off the belt. That is only worth money if you keep a membership, do those classes and have clear floor beside the machine. If you only run on it, the cheaper 1250 does the same job on the belt.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Treating the 30-day trial as free</h3>
+              <p class="text-gray-700 text-sm m-0">NordicTrack’s in-home trial deducted a $249.99 return fee when we checked, and delivery and assembly costs were not refundable. Stand on one in a store if you can, measure the room and the ceiling first, and read the return terms of whichever seller you use.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Forgetting the short terms in the warranty</h3>
+              <p class="text-gray-700 text-sm m-0">The lifetime cover is on the motor. Parts are covered for two years, the touchscreen and labour for one. From year two, a failed screen or a technician’s visit is likely to be on you, so price that before deciding whether an extended plan is worth it.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Reviews &amp; Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/nordictrack-commercial-1250-vs-1750/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Comparison</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">NordicTrack Commercial 1250 vs 1750</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The choice most 1750 buyers are really making, on the figures that are confirmed.</p>
+            </a>
+            <a href="/best-nordictrack-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Roundup</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best NordicTrack Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The whole current range ranked, from the T Series to the X Series incline trainers.</p>
+            </a>
+            <a href="/can-you-use-nordictrack-without-ifit/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Explainer</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Can You Use a NordicTrack Without iFIT?</p>
+              <p class="text-sm text-gray-500 leading-relaxed">What still works without a membership, and what you give up.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">Buy the NordicTrack Commercial 1750 if you will run as well as walk
+            and want lifetime motor cover on a full-size folding deck.</strong> The current model,
+            NTL17125, has a 22 by 60-inch belt, a 400 lb rating, -3% to 12% incline, 12 mph and a 16-inch
+            pivoting screen, and it is usually sold near $2,000. Plan around the short parts, labour and
+            touchscreen terms, and price in iFIT if you will use the screen.
+          </p>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            If you mainly walk and rarely do floor classes, the
+            <a href="/nordictrack-commercial-1250-vs-1750/" class="text-[#5AA9FF] font-bold no-underline">Commercial 1250</a>
+            does the same work on the belt for less. Whichever you choose, buy by model number, not by
+            name — the figures that circulate for the 1750 describe more than one machine.
+          </p>
+        </div>
       </div>
     </div>
   </article>

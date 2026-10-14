@@ -382,7 +382,7 @@ export default {
       html: `          <p>
             The T9 is the obvious step up, and the comparison is cleaner than most because both
             machines come from the same range with the same rating conventions. At the prices
-            shown when we checked, the gap was $500 whether you compare regular or sale prices.
+            shown when we checked, the gap was $500 whether you compare regular or sale prices. Our full <a href="/bowflex-t9-treadmill/" class="text-[#0F62FE] font-medium">Bowflex T9 review</a> covers the bigger machine on its own.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead>

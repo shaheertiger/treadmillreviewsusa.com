@@ -269,7 +269,7 @@ export default {
       heading: 'Fix Six: Scenic Runs, Classes and Virtual Races',
       html: `          <p>
             For some people, the best cure for boredom is pretending not to be on a treadmill at
-            all.
+            all. At the far end of the idea are <a href="/best-vr-treadmills/" class="text-[#0F62FE] font-medium">VR treadmills</a>, which are a different kind of machine altogether.
           </p>
           <p>
             <strong>Scenic route videos.</strong> First-person videos of runs and walks through
