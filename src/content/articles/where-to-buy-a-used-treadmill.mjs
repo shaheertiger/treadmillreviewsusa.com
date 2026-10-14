@@ -62,7 +62,7 @@ export default {
             marketplaces and buy-and-sell groups carry a steady supply of home treadmills, many
             lightly used. Prices are the lowest of any source, and the quality ranges from nearly new
             to neglected. You can usually message the seller, ask questions and see their profile
-            history before arranging a visit.
+            history before arranging a visit. If the listing is an old Trimline, our <a href="/trimline-treadmill/" class="text-[#0F62FE] font-medium">Trimline treadmill guide</a> covers parts and what to check.
           </p>
           <p>
             <strong>Classified listings sites.</strong> Similar to marketplaces, sometimes with

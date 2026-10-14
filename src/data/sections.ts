@@ -164,6 +164,13 @@ export const SECTIONS: Section[] = [
             badge: 'Portable',
             url: '/portable-treadmills/',
           },
+          {
+            title: 'Best Low-Profile Treadmills',
+            description:
+              'Low step-up, slim folded height and light weight: the three meanings of low profile, with picks for each.',
+            badge: 'Low profile',
+            url: '/best-low-profile-treadmills/',
+          },
         ],
       },
       {
@@ -225,6 +232,20 @@ export const SECTIONS: Section[] = [
             badge: 'Desk',
             url: '/best-treadmill-desks/',
           },
+          {
+            title: 'Best Cushioned Treadmills',
+            description:
+              'Machines with named deck-cushioning systems for low-impact walking and running, and what cushioning does.',
+            badge: 'Cushioned',
+            url: '/best-cushioned-treadmills/',
+          },
+          {
+            title: 'Best Walking Pads for Tall People',
+            description:
+              'Pads with belts of 48 in. or more, the stride arithmetic, and when a full treadmill is better.',
+            badge: 'Tall users',
+            url: '/best-walking-pads-for-tall-people/',
+          },
         ],
       },
       {
@@ -243,6 +264,13 @@ export const SECTIONS: Section[] = [
               'Machines with confirmed powered decline for downhill race and hiking prep, and how much decline is useful.',
             badge: 'Decline',
             url: '/best-treadmills-with-decline/',
+          },
+          {
+            title: 'Treadmills With the Highest Incline',
+            description:
+              'Machines ranked by maximum grade, from 15% folders to 40% incline trainers, with degrees explained.',
+            badge: 'Max incline',
+            url: '/treadmills-with-the-highest-incline/',
           },
         ],
       },
@@ -328,6 +356,13 @@ export const SECTIONS: Section[] = [
               'Belt length, side panels, speed and controls compared, and when a human machine is a poor fit for a dog.',
             badge: 'Dogs',
             url: '/dog-treadmill-vs-human-treadmill/',
+          },
+          {
+            title: 'Best VR Treadmills',
+            description:
+              'Omnidirectional VR treadmills for home, what they cost, and why they are not fitness treadmills.',
+            badge: 'VR',
+            url: '/best-vr-treadmills/',
           },
         ],
       },
@@ -585,6 +620,20 @@ export const SECTIONS: Section[] = [
             badge: 'Amazon',
             url: '/best-treadmills-on-amazon/',
           },
+          {
+            title: 'Wayfair Treadmills',
+            description:
+              'House brands, marketplace sellers, delivery, the 30-day return terms and protection plans.',
+            badge: 'Wayfair',
+            url: '/wayfair-treadmills/',
+          },
+          {
+            title: 'Scheels Treadmills',
+            description:
+              'Brands Scheels carries, the 90-day returns, freight delivery and its price-match conditions.',
+            badge: 'Scheels',
+            url: '/scheels-treadmills/',
+          },
         ],
       },
     ],
@@ -697,6 +746,13 @@ export const SECTIONS: Section[] = [
             description: 'Three folding treadmills, the T6, T9 and T16, plus the Max Trainer M5 and M7, and who owns the brand now.',
             badge: 'Treadmills + Max Trainer',
             url: '/bowflex/',
+          },
+          {
+            title: 'Trimline Treadmills',
+            description:
+              'A discontinued US brand: buying one used, finding parts and manuals, and what replaced it.',
+            badge: 'Legacy',
+            url: '/trimline-treadmill/',
           },
         ],
       },
@@ -835,6 +891,13 @@ export const SECTIONS: Section[] = [
             badge: 'Review',
             url: '/sole-f65-treadmill/',
           },
+          {
+            title: 'Sole F89 Treadmill',
+            description:
+              "Sole's former flagship folder: what it was, where it is still sold, and what to buy from the current range.",
+            badge: 'Withdrawn',
+            url: '/sole-f89-treadmill/',
+          },
         ],
       },
       {
@@ -846,6 +909,13 @@ export const SECTIONS: Section[] = [
               'A 20 x 60 in. deck, 15% incline and no subscription required, read against the Bowflex T9 and the Sole F63.',
             badge: 'Bowflex',
             url: '/bowflex-t6-treadmill/',
+          },
+          {
+            title: 'Bowflex T9 Treadmill Review',
+            description:
+              'The 22 x 60 in. JRNY folder checked against Bowflex and two independent reviews, with the owner complaints that recur.',
+            badge: 'Bowflex',
+            url: '/bowflex-t9-treadmill/',
           },
         ],
       },
@@ -870,6 +940,27 @@ export const SECTIONS: Section[] = [
               'A budget 2-in-1 walking pad: what the listing claims, what an independent teardown disputes, and who it suits.',
             badge: 'Walking pad',
             url: '/wellfit-tm037-treadmill/',
+          },
+          {
+            title: 'TREAFLOW Walking Pad Review',
+            description:
+              'The 3100W peg-incline pad on what its listing and independent trackers agree, and what remains a claim.',
+            badge: 'Walking pad',
+            url: '/treaflow-walking-pad/',
+          },
+          {
+            title: 'Streamdale Folding Treadmill',
+            description:
+              'Who Streamdale is, what its unbranded folding treadmills claim, and the return terms to read first.',
+            badge: 'Marketplace',
+            url: '/streamdale-folding-treadmill/',
+          },
+          {
+            title: 'East Urban Home Treadmill',
+            description:
+              'Why the "compact foldable electric treadmill" listings describe furniture, and what to buy instead.',
+            badge: 'Wayfair',
+            url: '/east-urban-home-treadmill/',
           },
         ],
       },
@@ -905,6 +996,27 @@ export const SECTIONS: Section[] = [
             description: 'The entry-level Max Trainer, fewer resistance levels.',
             badge: 'Not a treadmill',
             url: '/bowflex-max-trainer-m5/',
+          },
+          {
+            title: 'AssaultRunner Pro Review',
+            description:
+              'The best-known curved trainer: confirmed figures, the conflicting frame warranty, and who should buy it.',
+            badge: 'Curved',
+            url: '/assaultrunner-pro-treadmill/',
+          },
+          {
+            title: 'SB Fitness CT550 Curved Treadmill',
+            description:
+              'A direct-sold budget curved trainer, its listing claims, the restocking fee and the sprinting caveat.',
+            badge: 'Curved',
+            url: '/sb-fitness-ct550-curved-treadmill/',
+          },
+          {
+            title: 'Reebok FR20z Floatride Treadmill',
+            description:
+              "Reebok's cushioned folder: confirmed specs, why US stock is thin, and the alternatives.",
+            badge: 'Reebok',
+            url: '/reebok-fr20z-floatride-treadmill/',
           },
         ],
       },
@@ -1150,6 +1262,13 @@ export const SECTIONS: Section[] = [
             badge: 'Reviews',
             url: '/how-to-read-treadmill-reviews/',
           },
+          {
+            title: 'Types of Treadmills',
+            description:
+              'Every kind of treadmill explained, from walking pads to incline trainers, with who each one suits.',
+            badge: 'Explainer',
+            url: '/types-of-treadmills/',
+          },
         ],
       },
       {
@@ -1374,6 +1493,13 @@ export const SECTIONS: Section[] = [
             badge: 'Capacity',
             url: '/what-happens-if-you-exceed-treadmill-weight-limit/',
           },
+          {
+            title: 'Can You Use a Treadmill Outdoors?',
+            description:
+              'Porches, patios and covered decks, what manufacturers actually say, and the electrical rules.',
+            badge: 'Outdoors',
+            url: '/outdoor-treadmill/',
+          },
         ],
       },
       {
@@ -1439,6 +1565,20 @@ export const SECTIONS: Section[] = [
               'The elbow-height arithmetic with the deck added, a height table, and why many desks top out too low.',
             badge: 'Desk height',
             url: '/standing-desk-height-for-walking-pad/',
+          },
+          {
+            title: 'Best Walking Shoes for Treadmill',
+            description:
+              'Cushioned walking and hybrid shoes for belt and incline walking, with the confirmed specs.',
+            badge: 'Walking shoes',
+            url: '/best-walking-shoes-for-treadmill/',
+          },
+          {
+            title: "Best Women's Running Shoes for Treadmill",
+            description:
+              "Women's versions of current trainers, lasts and widths, and sizing for belt running.",
+            badge: "Women's shoes",
+            url: '/best-womens-running-shoes-for-treadmill/',
           },
         ],
       },
@@ -2122,6 +2262,13 @@ export const SECTIONS: Section[] = [
               'Order by goal, the interference effect kept honest, and sample weekly layouts for strength, running and general fitness.',
             badge: 'Order',
             url: '/treadmill-before-or-after-weights/',
+          },
+          {
+            title: 'Best Treadmill Settings for Fat Loss',
+            description:
+              'Speed and incline starting points by fitness level, the calorie arithmetic, and how to progress.',
+            badge: 'Settings',
+            url: '/best-treadmill-settings-for-fat-loss/',
           },
         ],
       },

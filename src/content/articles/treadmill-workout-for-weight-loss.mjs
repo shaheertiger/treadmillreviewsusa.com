@@ -152,7 +152,7 @@ export default {
       heading: 'Why Incline Beats Speed Here',
       html: `          <p>
             For this goal specifically, raising the grade is almost always the better choice than
-            raising the pace, for four reasons that compound.
+            raising the pace, for four reasons that compound. For concrete starting numbers, see the <a href="/best-treadmill-settings-for-fat-loss/" class="text-[#0F62FE] font-medium">best treadmill settings for fat loss</a>.
           </p>
           <p>
             <strong>More work at the same impact.</strong> Incline raises cardiovascular demand

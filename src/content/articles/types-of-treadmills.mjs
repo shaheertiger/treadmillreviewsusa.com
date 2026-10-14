@@ -1,0 +1,502 @@
+export default {
+  slug: 'types-of-treadmills',
+  title: 'Types of Treadmills (2026): Every Kind Explained, and Who It Suits',
+  description:
+    'The different types of treadmills explained: folding and non-folding motorized, manual, curved, walking pads, under-desk, incline trainers, commercial, smart, dog and VR machines.',
+  crumbLabel: 'Types of Treadmills',
+  breadcrumb: { name: 'Buying Guides', url: '/guides/' },
+  kicker: 'Explainer',
+  updated: 'October 2026',
+  updatedLong: 'October 14, 2026',
+  published: '2026-10-14',
+  socialProof: '1.6k',
+  h1: ['Types of Treadmills,', 'Explained'],
+  standfirst:
+    'A walking pad, a curved sprint trainer and a gym machine are all called treadmills, and they have almost nothing else in common. Here is every kind of running machine you are likely to meet, what sets each one apart, what it typically costs, and who it actually suits.',
+  ctas: [
+    { label: 'Types at a Glance', href: '#at-a-glance' },
+    { label: 'Which Type Is Right for You', href: '#how-to-choose' },
+  ],
+  tags: ['types of treadmills', 'different types of treadmills', 'different kinds of treadmills', 'types of running machines', 'treadmill types explained'],
+  stickyCta: { text: 'Compare the Types', link: '#at-a-glance' },
+  note: `<strong class="text-gray-900">On the figures below.</strong> Price bands are typical US
+          ranges for new machines as of October 2026, drawn from our own roundups and current
+          listings; they are not quotes for any named product, and prices move through the year.
+          Motor, deck and capacity figures are general characteristics of each type rather than
+          specifications of any model — check the manufacturer's listing for the machine you are
+          considering. We have not tested the products in each category; where this page names a
+          product to illustrate a type, it is an example, not a recommendation.`,
+  lead: `"Treadmill" covers a wider range of machines than almost any other piece of home exercise
+          equipment. At one end is a slim, handrail-free walking pad that slides under a sofa; at the
+          other is a commercial running machine built for hours of daily use that may need its own
+          circuit. In between sit folding and non-folding home treadmills, unpowered flat and
+          curved machines, incline trainers, desk treadmills, dog treadmills, and the omnidirectional
+          platforms sold for virtual reality. Knowing which type of treadmill you need narrows the
+          market far more than any brand or feature list, so this page sets out the types first and
+          points to our detailed guides and roundups for each.`,
+  sections: [
+    {
+      id: 'short-answer',
+      heading: 'What Are the Different Types of Treadmills? The Short Answer',
+      html: `          <p>
+            <strong>The main types of treadmills are motorized (folding and non-folding), manual
+            (flat and curved), walking pads and under-desk treadmills, incline trainers, and
+            commercial treadmills, with smart, dog and VR treadmills as specialist kinds.</strong>
+            The first split is power: a motorized treadmill drives the belt for you at a set speed,
+            while a manual one moves only when you push it. The second is purpose: walking, running,
+            working at a desk, steep hill training, gym-level use, or something more specialised.
+          </p>
+          <p>
+            For most homes the choice comes down to three types. A <strong>folding motorized
+            treadmill</strong> suits most walkers and joggers who need to reclaim floor space. A
+            <strong>non-folding motorized treadmill</strong> suits regular runners and heavier users
+            who want the most stable deck for the money. A <strong>walking pad</strong> suits people
+            who only want to walk, often while working, and need something that disappears under
+            furniture.
+          </p>
+          <p>
+            The specialist types are worth knowing about because they solve problems the mainstream
+            ones do not. A <strong>curved manual treadmill</strong> is a sprint and interval tool
+            with no plug. An <strong>incline trainer</strong> climbs far steeper than a standard
+            treadmill. A <strong>commercial treadmill</strong> is built for hours of use a day. And
+            "smart" describes a feature rather than a format: most of the types above can be bought
+            with or without a connected screen.
+          </p>`,
+    },
+    {
+      id: 'at-a-glance',
+      heading: 'The Types of Treadmills at a Glance',
+      html: `          <p>
+            The table compares the types on the things that separate them most: whether they need
+            power, what they are best at, how much room they take, and what a new one typically
+            costs. The price bands are typical ranges as of October 2026, not quotes.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Type</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Powered?</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Best for</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Typical new price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Motorized, folding</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Yes</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walkers and joggers short of space</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $400-$2,500</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Motorized, non-folding</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Yes</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Regular runners, heavier users</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $1,000-$4,000</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Manual, flat</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Occasional walking with no outlet</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $200-$400</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Manual, curved</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sprints, intervals, athletes</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $2,100 to over $10,000</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walking pad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Yes</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walking only, tiny spaces</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $200-$600</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Under-desk / treadmill desk</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Yes</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walking while working</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Pad about $200-$600, plus the desk</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Incline trainer</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Yes</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Steep hill walking, hikers</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Premium home bracket</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Commercial</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Yes, often AC</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Gyms, very heavy home use</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $4,000-$10,000+</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Smart / connected</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Yes</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Guided classes and apps</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $900-$3,500+, plus any subscription</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Dog treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Usually; slatmills are not</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Exercising dogs under supervision</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $500-$1,300</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">VR / omnidirectional</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Usually no belt</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Moving around inside VR games</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Specialist; check the maker</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Two patterns are worth noticing. Price tracks durability and running capability far
+            more than it tracks features — a walking pad and a commercial treadmill differ less in
+            their screens than in their motors, frames and decks. And the cheapest types are
+            cheapest because they do less: a manual flat treadmill or a walking pad is a fine walking
+            tool and a poor running one. For what each price tier buys in more detail, see our guide
+            to <a href="/how-much-does-a-treadmill-cost/" class="text-[#0F62FE] font-medium">how much a treadmill costs</a>.
+          </p>`,
+    },
+    {
+      id: 'motorized',
+      heading: 'Motorized Treadmills: Folding vs Non-Folding',
+      html: `          <p>
+            A motorized treadmill is what most people picture: an electric motor turns a front
+            roller, which drives the belt over a deck at the speed you set, usually with a powered
+            incline. It is the most common type for home use because it is the most versatile: you
+            can walk, jog, run, climb and run intervals on the same machine, and the belt holds an
+            exact speed whether you are fresh or tired.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Folding treadmills</h3>
+          <p>
+            A folding treadmill hinges at the front so the deck lifts to stand roughly upright,
+            usually with a gas-assisted mechanism to help raise and lower it. Folding reduces the
+            footprint while it is stored, though not the height, and most still need moving on
+            their transport wheels if you want the floor clear. The trade-off is that a hinge and a
+            lighter frame generally make for a little less stability at running speed than a fixed
+            frame of the same price, and many folding models have shorter decks.
+          </p>
+          <p>
+            Folding is the right choice for most walkers and joggers in smaller homes and
+            apartments. Our <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium">folding treadmill primer</a>
+            explains the mechanisms, and the
+            <a href="/best-folding-treadmills/" class="text-[#0F62FE] font-medium">best folding treadmills</a>
+            roundup picks machines by use case.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Non-folding treadmills</h3>
+          <p>
+            A non-folding treadmill has a fixed frame. At the same price, that usually buys a
+            sturdier structure, a longer deck and a stronger motor, because none of the budget has
+            gone into a hinge. It is the type to favour if you run regularly, are tall, are heavier
+            than average, or simply want the deck to feel as solid as possible at speed. The cost is
+            a permanent footprint that typically needs several feet of clearance behind it.
+          </p>
+          <p>
+            Our comparison of
+            <a href="/folding-vs-non-folding-treadmill/" class="text-[#0F62FE] font-medium">folding vs non-folding treadmills</a>
+            sets out the decision in detail, and the
+            <a href="/best-treadmills-for-running/" class="text-[#0F62FE] font-medium">best treadmills for running</a>
+            lists machines with the decks and motors runners need.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">DC and AC motors</h3>
+          <p>
+            Home motorized treadmills almost all use DC motors, which are quiet, efficient and run
+            on an ordinary household outlet. Commercial machines often use AC motors built for
+            continuous duty across many hours a day. The motor type matters less to most home buyers
+            than the continuous-duty rating, which our guide to
+            <a href="/ac-vs-dc-treadmill-motor/" class="text-[#0F62FE] font-medium">AC vs DC treadmill motors</a>
+            explains.
+          </p>`,
+    },
+    {
+      id: 'manual',
+      heading: 'Manual Treadmills: Flat and Curved',
+      html: `          <p>
+            A manual treadmill has no motor driving the belt. You move it with your own legs, which
+            means no plug, no electronics to fail beyond a small battery console, and a pace that
+            responds instantly to how hard you push. Beyond that, the two kinds of manual treadmill
+            are entirely different machines.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Flat manual treadmills</h3>
+          <p>
+            Flat manual treadmills are the cheapest full-size type. They are usually small,
+            lightweight and folding, with a short deck set at a fixed incline so that gravity helps
+            the belt move, and often a magnetic resistance knob. Walking on one feels like pushing
+            the belt rather than being carried by it, and the fixed slope means you cannot walk on
+            the flat. They are fine for occasional walking where there is no outlet or budget is
+            tight, and poor for running. Our comparison of
+            <a href="/manual-vs-motorized-treadmill/" class="text-[#0F62FE] font-medium">manual vs motorized treadmills</a>
+            covers the trade-offs.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Curved manual treadmills</h3>
+          <p>
+            A curved treadmill has a concave running surface, usually made of rubber-topped slats
+            on bearings rather than a belt sliding over a deck. Stepping forward onto the curve sets
+            it moving; staying near the front speeds it up, drifting back slows it down. There is
+            no speed button. That makes curved machines superb for sprints and intervals, because
+            the pace changes as fast as you do, and they are popular in performance gyms and
+            athletic training.
+          </p>
+          <p>
+            They are also expensive, long, heavy and generally do not fold, and walking slowly on
+            one takes more effort than people expect. Our
+            <a href="/curved-treadmill-guide/" class="text-[#0F62FE] font-medium">curved treadmill guide</a>
+            explains how they work, and the
+            <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium">best curved treadmills</a>
+            and <a href="/best-manual-treadmills/" class="text-[#0F62FE] font-medium">best manual treadmills</a>
+            roundups compare current models across both kinds.
+          </p>`,
+    },
+    {
+      id: 'walking-pads',
+      heading: 'Walking Pads and Under-Desk Treadmills',
+      html: `          <p>
+            A walking pad is a compact, low-profile motorized treadmill designed for walking. Most
+            have no console upright and no handrail, use a remote control or app, top out at a
+            walking speed or a slow jog, and are thin enough to slide under a bed or sofa or stand
+            on end. Some fold in half. They exist to answer the most common reason people do not
+            buy a treadmill: there is nowhere to put it.
+          </p>
+          <p>
+            The compromises follow from the size. Decks are short and narrow, motors are small,
+            incline is absent or limited, and many are not designed for running at all. Some models
+            add a fold-up handrail or a small fixed incline. Our explainer on
+            <a href="/what-is-a-walking-pad/" class="text-[#0F62FE] font-medium">what a walking pad is</a>
+            covers the type, and
+            <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad vs treadmill</a>
+            helps decide between them.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Under-desk treadmills and treadmill desks</h3>
+          <p>
+            An under-desk treadmill is, in practice, a walking pad used beneath a standing desk, and
+            the two terms are used almost interchangeably. What matters for desk use is a low
+            maximum speed that holds steady at 1 to 2 mph, a quiet motor, a step-up height that
+            still lets you set the desk correctly, and a deck long enough for a relaxed stride. A
+            treadmill desk is either a pad paired with a separate desk or a single integrated unit
+            with a work surface fixed above the deck.
+          </p>
+          <p>
+            Our guide to
+            <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmills</a>
+            covers the type, and the
+            <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium">best treadmill desks</a>
+            and <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">best walking pads with incline</a>
+            roundups compare current models. One safety note applies across the category: in April
+            2026 the US Consumer Product Safety Commission told owners to stop using Sperax walking
+            pads and treadmills, citing uncontrolled speed changes, falls and fire reports, after the
+            importer declined a recall. Check cpsc.gov
+            for any walking pad before you buy, especially an unfamiliar brand.
+          </p>`,
+    },
+    {
+      id: 'incline-trainers',
+      heading: 'Incline Trainers and Decline Treadmills',
+      html: `          <p>
+            An incline trainer is a motorized treadmill built around a much steeper incline range
+            than standard. Most home treadmills top out at around 10 to 15% grade; incline trainers
+            typically reach around 40%, and most also decline a few percent below level. The
+            machine is heavier, rarely folds and costs a substantial premium over a standard
+            treadmill with similar running specifications.
+          </p>
+          <p>
+            The type suits people training for hiking, mountain events or steep trail races, and
+            walkers who want a hard workout without running. For most others the extra range goes
+            unused: if you rarely reach the top of a standard treadmill's incline, a 40% ceiling is
+            not an upgrade you need. Our comparison of
+            <a href="/incline-trainer-vs-treadmill/" class="text-[#0F62FE] font-medium">incline trainers vs treadmills</a>
+            sets out who genuinely benefits.
+          </p>
+          <p>
+            Decline is a related feature rather than a type of its own. A small number of standard
+            treadmills, as well as most incline trainers, can tilt the deck downhill to simulate
+            descents. It is useful for runners preparing for hilly races and a load on the knees
+            and quadriceps for everyone, which is why it is introduced gradually. Our roundup of
+            <a href="/best-treadmills-with-decline/" class="text-[#0F62FE] font-medium">treadmills with decline</a>
+            lists machines that genuinely go downhill.
+          </p>`,
+    },
+    {
+      id: 'commercial',
+      heading: 'Commercial Treadmills',
+      html: `          <p>
+            A commercial treadmill is built to run for many hours a day under many different users,
+            the job a gym asks of it. That shows in the parts: heavier frames, larger rollers,
+            thicker decks and belts, motors rated for continuous duty (often AC), and service
+            designs that assume a technician will be visiting. Commercial machines are typically
+            longer and much heavier than home treadmills and do not fold.
+          </p>
+          <p>
+            For a home, the type makes sense for very heavy use — several family members running
+            daily, or a single serious runner logging high mileage — and for buyers who find a good
+            ex-gym machine at a fair price. It comes with practical questions that home machines
+            avoid: whether it fits through your doors and up your stairs, whether your floor is
+            suitable, and whether the manufacturer asks for a dedicated circuit or a specific plug.
+            Our guide to putting a
+            <a href="/gym-treadmill-for-home/" class="text-[#0F62FE] font-medium">gym treadmill in your home</a>
+            covers those, and the
+            <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial treadmills</a>
+            page covers the category.
+          </p>
+          <p>
+            Check warranty terms before buying a commercial machine for home use. Some manufacturers
+            write separate terms for residential and commercial installations, and a used gym
+            machine usually carries no warranty at all.
+          </p>`,
+    },
+    {
+      id: 'smart',
+      heading: 'Smart Treadmills: A Feature, Not a Format',
+      html: `          <p>
+            A smart treadmill is any treadmill with built-in connectivity: usually a touchscreen,
+            Wi-Fi and Bluetooth, and a subscription platform offering trainer-led classes,
+            scenic routes and automatic control of speed and incline. Some have no screen of their
+            own but connect to third-party apps on a tablet or phone. Smart is a layer on top of the
+            types above rather than a type of its own: there are smart folding treadmills, smart
+            non-folding treadmills, smart incline trainers and even app-connected walking pads.
+          </p>
+          <p>
+            Two questions matter more than the screen size. First, what the treadmill does without
+            a subscription: some work fully in manual mode, some restrict features, and the
+            ongoing cost of a membership adds up over a machine's life. Second, whether the
+            hardware underneath is worth the price on its own, since a large screen can make a
+            modest motor and deck look like a premium machine. Our comparison of
+            <a href="/smart-treadmill-vs-regular/" class="text-[#0F62FE] font-medium">smart vs regular treadmills</a>
+            covers both, the <a href="/best-smart-treadmills/" class="text-[#0F62FE] font-medium">best smart treadmills</a>
+            roundup compares current models, and our list of
+            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a>
+            covers the other side.
+          </p>
+          <p>
+            A related group are treadmills that work with third-party running platforms such as
+            Zwift, either through built-in Bluetooth speed reporting or a foot pod. Our
+            <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium">Zwift treadmill guide</a>
+            explains how that connection works.
+          </p>`,
+    },
+    {
+      id: 'dog',
+      heading: 'Dog Treadmills',
+      html: `          <p>
+            A dog treadmill is built for a dog's gait and behaviour rather than a person's. Typical
+            differences are a lower step-up height, side panels or walls that keep the dog centred
+            and stop it stepping off, a longer belt relative to the machine's footprint for larger
+            breeds, and controls placed out of the dog's reach. Most are motorized; slatmills, used
+            for high-drive working and sporting dogs, are non-motorized and let the dog set the
+            pace, rather like a curved manual treadmill for people.
+          </p>
+          <p>
+            A human treadmill can sometimes be used for a calm dog under close supervision, but the
+            open sides, high deck and controls designed for people make it a compromise. Whichever
+            machine you use, never tether a dog to a running treadmill, and ask your vet before
+            starting, particularly for puppies, older dogs and breeds prone to joint or breathing
+            problems. Our guide to
+            <a href="/treadmill-for-dogs/" class="text-[#0F62FE] font-medium">treadmills for dogs</a>
+            covers safe introduction, and the
+            <a href="/best-dog-treadmills/" class="text-[#0F62FE] font-medium">best dog treadmills</a>
+            roundup compares current models by size.
+          </p>`,
+    },
+    {
+      id: 'vr',
+      heading: 'VR and Omnidirectional Treadmills',
+      html: `          <p>
+            A VR treadmill lets you walk or run in any direction inside a virtual-reality game while
+            staying in one place. Despite the name, most consumer models do not have a belt. The
+            Virtuix Omni One and the KAT Walk C2, two of the better-known examples, both use a
+            low-friction base and special overshoes: you slide your feet across the surface, sensors
+            track the movement, and a support arm or harness holds you in place, with a VR headset
+            providing the picture. Motorised omnidirectional floors that move under you in two
+            directions exist too, but mostly as research and commercial installations.
+          </p>
+          <p>
+            As exercise equipment, VR treadmills are a different proposition from everything else on
+            this page. They are designed to make moving around in a game feel natural rather than
+            to give you a set speed, incline or distance, the sliding gait is not the same as
+            walking or running, and reviewers consistently describe a learning curve. They can be
+            physically demanding in the way active games are, and that is a fine reason to buy one,
+            but they are not a replacement for a treadmill if your goal is walking or running
+            fitness. Prices and the headsets they support change frequently, so check the maker's
+            current listing; they are priced as specialist gaming hardware rather than as entry
+            fitness equipment.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Medical and clinical treadmills</h3>
+          <p>
+            For completeness, there are also treadmills built for clinical use: machines for
+            cardiac stress testing, body-weight-supported and underwater treadmills used in
+            rehabilitation, and others found in hospitals, physical therapy clinics and research
+            labs. They are medical equipment rather than consumer types, used under supervision.
+            Our explainer on the
+            <a href="/treadmill-stress-test/" class="text-[#0F62FE] font-medium">treadmill stress test</a>
+            covers the one most people meet.
+          </p>`,
+    },
+    {
+      id: 'how-to-choose',
+      heading: 'Which Type of Treadmill Is Right for You?',
+      html: `          <p>
+            The right type of treadmill follows from three answers: whether you will run or only
+            walk, how much space you can give it, and how many hours a week it will work. Settle
+            those before comparing brands.
+          </p>
+          <ul>
+            <li><strong>You only walk, and space is tight:</strong> a walking pad, or an under-desk
+            pad if you want to walk while you work.</li>
+            <li><strong>You walk briskly with incline, and jog sometimes:</strong> a folding
+            motorized treadmill with a powered incline.</li>
+            <li><strong>You run several times a week, are tall, or are heavier than average:</strong>
+            a non-folding motorized treadmill with a long deck and a strong continuous-duty motor,
+            or a sturdy folding one if space forces it.</li>
+            <li><strong>You want steep hill walking or train for mountain events:</strong> an
+            incline trainer.</li>
+            <li><strong>You do sprints and intervals, or train athletes:</strong> a curved manual
+            treadmill.</li>
+            <li><strong>Many users or very high mileage:</strong> a commercial treadmill, new or a
+            well-chosen used one.</li>
+            <li><strong>No outlet, very tight budget, walking only:</strong> a flat manual
+            treadmill, accepting its limits.</li>
+            <li><strong>You want guided classes:</strong> a smart version of whichever type fits
+            the answers above, with the subscription cost counted in.</li>
+          </ul>
+          <p>
+            Then measure. Every type needs clearance behind and beside the deck, and the folded
+            dimensions of a folding machine are often larger than people expect. Our guide to
+            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">treadmill dimensions and space requirements</a>
+            sets out the numbers, and the
+            <a href="/treadmill-buying-guide-2026/" class="text-[#0F62FE] font-medium">treadmill buying guide</a>
+            covers motor, deck, cushioning and warranty once you know the type. If you are still
+            undecided, the <a href="/portable-treadmills/" class="text-[#0F62FE] font-medium">portable treadmills</a>
+            guide compares the space-saving types side by side.
+          </p>
+          <p>
+            Whatever the type, check cpsc.gov for recalls and warnings on the brand and model before
+            buying, register the machine with the manufacturer so you hear about any future recall,
+            and read the manual's installation and electrical requirements before it arrives.
+          </p>`,
+    },
+  ],
+  faqs: [
+    {
+      q: 'What are the main types of treadmills?',
+      a: `The main types are motorized treadmills, which come in folding and non-folding designs; manual treadmills, which are either flat or curved; walking pads and under-desk treadmills; incline trainers; and commercial treadmills. Smart, dog and VR treadmills are specialist kinds. The biggest split is whether a motor drives the belt or you do.`,
+    },
+    {
+      q: 'What is the difference between a manual and a motorized treadmill?',
+      a: `A motorized treadmill uses an electric motor to drive the belt at a speed you set, usually with a powered incline. A manual treadmill has no motor: you move the belt with your legs. Flat manual models are cheap and basic walkers; curved manual models are expensive sprint and interval trainers. Manual machines need no outlet.`,
+    },
+    {
+      q: 'Is a walking pad a type of treadmill?',
+      a: `Yes. A walking pad is a compact motorized treadmill designed for walking, usually without a console upright or handrail, controlled by a remote or app, and low enough to slide under furniture. Decks and motors are smaller than on a full treadmill and many are not designed for running, so it suits walkers rather than runners.`,
+    },
+    {
+      q: 'What type of treadmill is best for home use?',
+      a: `For most homes, a folding motorized treadmill with a powered incline is the most versatile choice. Regular runners, tall users and heavier users are usually better served by a non-folding machine with a longer deck and stronger motor. People who only walk and are short of space are often happiest with a walking pad.`,
+    },
+    {
+      q: 'What is the difference between a treadmill and an incline trainer?',
+      a: `An incline trainer is a motorized treadmill with a much steeper incline range, typically up to around 40% against about 10 to 15% on most treadmills, and usually a decline function as well. It costs more, weighs more and rarely folds. It suits hikers and steep walkers; most other people never use the extra range.`,
+    },
+    {
+      q: 'Are VR treadmills good for exercise?',
+      a: `They can be physically demanding, but they are designed for moving naturally inside virtual-reality games rather than for walking or running fitness. Most consumer models have no belt: you slide your feet on a low-friction base wearing special shoes, held by a harness or support arm. They do not replace a treadmill if fitness is the main goal.`,
+    },
+  ],
+  mistakesHeading: 'Common Mistakes When Choosing a Type of Treadmill',
+  mistakesIntro:
+    'Most regrettable treadmill purchases are the wrong type rather than the wrong brand. These are the usual ones.',
+  mistakes: [
+    {
+      title: 'Buying a walking pad to run on',
+      body: 'Most walking pads are built for walking, with short decks and small motors. If you intend to run, even occasionally, a full motorized treadmill is the right type.',
+    },
+    {
+      title: 'Choosing a curved treadmill for easy walking',
+      body: 'Curved manual treadmills shine at sprints and intervals, but slow, steady walking on one takes more effort than people expect. For daily walking, a motorized treadmill is easier to live with.',
+    },
+    {
+      title: 'Treating smart as a type',
+      body: 'A large screen can sit on modest hardware. Choose the type and the running specification first, then decide whether you want connected features and the subscription that comes with them.',
+    },
+    {
+      title: 'Not measuring for the type',
+      body: 'Non-folding, commercial and curved machines are long and heavy, and even folded treadmills take more room than expected. Measure the space and the delivery route before choosing.',
+    },
+  ],
+  relatedHeading: 'Related Buying Guides',
+  related: [
+    {
+      kicker: 'Compare',
+      title: 'Folding vs Non-Folding Treadmill',
+      blurb: 'The decision most home buyers actually face.',
+      url: '/folding-vs-non-folding-treadmill/',
+    },
+    {
+      kicker: 'Compare',
+      title: 'Manual vs Motorized Treadmill',
+      blurb: 'What you gain and lose without a motor.',
+      url: '/manual-vs-motorized-treadmill/',
+    },
+    {
+      kicker: 'Question Answered',
+      title: 'What Is a Walking Pad?',
+      blurb: 'The compact walking type, explained.',
+      url: '/what-is-a-walking-pad/',
+    },
+  ],
+  bottomLine: [
+    `<strong class="text-white">The type of treadmill matters more than the brand.</strong> Folding
+            and non-folding motorized machines cover most homes, walking pads cover walkers short of
+            space, and curved, incline, commercial, dog and VR machines each solve one specialist
+            problem well. Decide whether you will run, how much room you have and how hard it will
+            work, and the type follows.`,
+    `Once you know the type, our
+            <a href="/treadmill-buying-guide-2026/" class="text-[#5AA9FF] font-bold no-underline">treadmill buying guide</a>
+            covers the motor, deck, cushioning and warranty that separate a good machine of that
+            type from a poor one.`,
+  ],
+};

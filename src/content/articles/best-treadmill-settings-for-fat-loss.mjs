@@ -1,0 +1,598 @@
+export default {
+  slug: 'best-treadmill-settings-for-fat-loss',
+  title: 'Best Treadmill Settings for Fat Loss (2026): Speed, Incline and Time',
+  description:
+    'The best treadmill settings for fat loss by fitness level: speed, incline and time as starting points, the built-in program to pick, calorie arithmetic and why diet matters more.',
+  crumbLabel: 'Best Treadmill Settings for Fat Loss',
+  breadcrumb: { name: 'Workouts & Training', url: '/training/' },
+  kicker: 'Guide',
+  updated: 'October 2026',
+  updatedLong: 'October 14, 2026',
+  published: '2026-10-14',
+  socialProof: '1.8k',
+  h1: ['Best Treadmill Settings', 'for Fat Loss'],
+  standfirst:
+    'There is no magic number on the console, but there are sensible ones. Here are concrete speed, incline and time settings for four fitness levels, the built-in program worth choosing, what those settings burn by plain arithmetic, and the honest reason the kitchen matters more than the console.',
+  ctas: [
+    { label: 'Settings by Fitness Level', href: '#settings-by-level' },
+    { label: 'A Weekly Settings Plan', href: '#weekly-routine' },
+  ],
+  tags: ['best treadmill settings for fat loss', 'best treadmill program for weight loss', 'best treadmill routine for weight loss', 'treadmill speed and incline for weight loss', 'fat burn treadmill program'],
+  stickyCta: { text: 'See the Settings Table', link: '#settings-by-level' },
+  note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review treadmills.
+          The settings below are general starting points built from published exercise equations and
+          common training conventions — they are not medical, coaching or nutrition advice, and we are
+          not qualified to give any of those. Weight loss depends far more on diet, sleep, medication
+          and health than on any treadmill setting. If you have a heart, lung, joint, metabolic or
+          other condition, are pregnant, take medication that affects heart rate (such as beta
+          blockers), have an injury, or have not exercised for a long time, talk to a doctor or
+          physical therapist before starting, and a registered dietitian for anything about food.
+          <strong class="text-gray-900">On the figures below:</strong> MET values come from the ACSM
+          walking and running equations and calorie figures are arithmetic from those values, both
+          labelled as estimates; they are not measurements and real individuals vary.`,
+  lead: `Ask what the best treadmill settings for fat loss are and you will be offered everything from
+          a single "fat burn" button to a twelve-step interval plan. The honest answer is simpler. For
+          most people, the setting that matters most is incline, the number that matters second is
+          time, and speed matters least — at least until you are fit enough to run comfortably. This
+          page turns that into actual numbers you can type into the console, by fitness level, then
+          shows the arithmetic behind them so you can see what each setting is worth, and why the
+          numbers on the treadmill are only ever part of the story.`,
+  sections: [
+    {
+      id: 'short-answer',
+      heading: 'What Are the Best Treadmill Settings for Fat Loss? The Short Answer',
+      html: `          <p>
+            <strong>For most people, the best treadmill settings for fat loss are a brisk walk of
+            about 3.0 to 3.5 mph at an incline of 4 to 10%, for 30 to 45 minutes, three to five times
+            a week, at an effort where you can still talk in sentences.</strong> Beginners should
+            start lower — around 2.5 to 3.0 mph at 1 to 3% for 15 to 25 minutes — and build up.
+            Confident runners can use easy runs of 5.0 to 6.5 mph at 1% instead of, or as well as,
+            incline walking.
+          </p>
+          <p>
+            Those numbers are starting points, not prescriptions. The right speed is the one at which
+            you walk naturally without holding the rails, and the right incline is the one you could
+            hold for the full session. If you cannot, the setting is too high, whatever a chart says.
+          </p>
+          <p>
+            Three things make the difference more than any single setting. <strong>Incline does more
+            than speed for walkers</strong>: by the standard exercise equations, raising the grade
+            from 0% to 5% at 3 mph adds roughly five times as much effort as speeding up from 3.0 to
+            3.5 mph on the flat. <strong>Time and frequency beat intensity</strong>, because the
+            settings you can repeat four times a week beat the ones that leave you sore for three
+            days. And <strong>diet is the bigger lever</strong>: a solid treadmill week is worth
+            something in the region of 1,000 to 1,500 calories for many people, which is a few days
+            of modest changes to what you eat. Our guide to
+            <a href="/treadmill-workout-for-weight-loss/" class="text-[#0F62FE] font-medium">treadmill workouts for weight loss</a>
+            covers the sessions and the wider plan; this page is about what to type into the
+            console.
+          </p>`,
+    },
+    {
+      id: 'settings-by-level',
+      heading: 'Starting Treadmill Settings by Fitness Level',
+      html: `          <p>
+            The table gives a warm-up, a main block and a session length for four broad levels. Pick
+            the row that describes you honestly, not the one you would like to be in. The MET column
+            is an estimate of the effort of the main block from the ACSM equations, for someone
+            walking or running hands-free; it is there so you can compare rows, not as a measurement
+            of you.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Level</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Warm-up (5 min)</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Main block</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Main block time</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Est. METs</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">New or returning</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.0-2.5 mph, 0%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.5-3.0 mph, 1-3%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15-25 min</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">about 3.5-4.5</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Regular walker</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.5 mph, 0-1%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.0-3.5 mph, 4-8%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">30-40 min</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">about 5-7.5</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Fit walker</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.0 mph, 1-2%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.0-3.5 mph, 8-12%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">30-45 min</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">about 6.5-9.5</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Comfortable runner</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.5 mph walk, then 4.5 mph jog</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5.0-6.5 mph, 1%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">30-45 min</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">about 9-11.5</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Finish every session with three to five minutes of easy walking on the flat. Our guide to
+            the <a href="/treadmill-warm-up-and-cool-down/" class="text-[#0F62FE] font-medium">treadmill warm-up and cool-down</a>
+            explains why the first and last few minutes are worth keeping even when you are short of
+            time.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">How the main block should feel</h3>
+          <p>
+            For the first three rows, the target is what coaches often call conversational effort:
+            you are breathing noticeably and could not sing, but you could hold a conversation in
+            full or short sentences. That is the talk test, a convention rather than a measurement,
+            and it is a better guide than any number in the table. If you are gasping, lower the
+            incline before you lower the speed. If you could recite a speech, raise the incline by
+            1%.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Finding your speed</h3>
+          <p>
+            The speeds above assume an adult of average height. Taller people often find 3.0 mph
+            slow and shorter people may find 3.5 mph a stretch. Your walking speed is the fastest
+            pace at which you still walk naturally — long, relaxed strides, arms swinging, no
+            shuffling and no urge to break into a jog. For most adults that sits somewhere between
+            about 3 and 4 mph. Our guide to
+            <a href="/what-speed-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what speed to walk on a treadmill</a>
+            sets out how to find it.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Which row are you?</h3>
+          <p>
+            If you have not exercised regularly for months, start in the first row, even if it feels
+            too easy. The first two or three weeks are about building the habit and letting your
+            calves, shins and feet adapt to the new load; the fitness follows. If you already walk
+            several times a week, start in the second row. The third row is for people who can
+            already walk 30 minutes at 6 to 8% without holding on. The fourth is for people who
+            already run, not for people who want to start running — for that, a structured
+            <a href="/couch-to-5k-treadmill/" class="text-[#0F62FE] font-medium">walk-to-run progression</a>
+            is the safer route.
+          </p>`,
+    },
+    {
+      id: 'why-incline',
+      heading: 'Why Is Incline the Setting That Moves the Number?',
+      html: `          <p>
+            Incline is the most effective single setting for walkers because it raises the work you
+            do without raising your speed or the impact of each footfall. The ACSM walking equation,
+            which most treadmill consoles use in some form, makes this explicit: the climbing term
+            grows with both speed and grade, and its coefficient is large. Our page on
+            <a href="/what-are-mets-on-a-treadmill/" class="text-[#0F62FE] font-medium">METs on a treadmill</a>
+            sets out both equations in full.
+          </p>
+          <p>
+            The table below shows several combinations that land at roughly the same effort, by that
+            arithmetic. Each block is a set of settings you could swap between and expect a similar
+            workload.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Target effort</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Setting</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Est. METs</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About 6 METs</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.5 mph at 8%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5.7</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About 6 METs</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.0 mph at 6%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5.8</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About 6 METs</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.5 mph at 5%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">6.1</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About 8 METs</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.5 mph at 14%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">7.7</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About 8 METs</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.0 mph at 11%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">7.8</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About 8 METs</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.5 mph at 9%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">8.0</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About 8 METs</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Jogging 4.5 mph at 0%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">7.9</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Two things stand out. First, a walker on the flat cannot easily reach 6 METs: by the
+            same equation, even 4.0 mph on the flat comes out at about 4.1 METs, and 5.0 mph
+            walking — faster than most people can walk naturally — at only about 4.8. Effort on the
+            flat runs out at the point where you would rather jog. Incline removes that ceiling.
+            Second, a brisk walk at 3.5 mph on a 9% grade lands at about the same estimated effort
+            as jogging at 4.5 mph on the flat, without the impact of running. For anyone carrying
+            extra weight, or with sore knees, that is the whole argument in one row.
+          </p>
+          <p>
+            For runners the picture flips. In the running equation the climbing term is half the
+            walking one, so each percent of grade adds relatively little and speed is the bigger
+            lever. A runner gets more from a slightly faster easy pace than from cranking the
+            incline. Our guide to
+            <a href="/what-incline-should-i-walk-on-a-treadmill/" class="text-[#0F62FE] font-medium">what incline to walk on</a>
+            covers the grade-by-goal detail, including calves, Achilles tendons and lower backs; this
+            page only borrows the conclusion.
+          </p>
+          <p>
+            One rule makes or breaks every incline setting: <strong>do not hold the handrails</strong>.
+            Leaning on the rails transfers your weight to the frame and your arms while the console
+            carries on reporting the same grade. If you cannot walk the incline with no hands or the
+            lightest touch for balance, the incline is too high for you today.
+          </p>`,
+    },
+    {
+      id: 'calorie-arithmetic',
+      heading: 'How Many Calories Do These Settings Burn? The Arithmetic',
+      html: `          <p>
+            The estimates below are arithmetic, not measurements. They take the ACSM MET value for
+            each setting and apply the standard conversion: calories per minute equal METs × 3.5 ×
+            body weight in kilograms ÷ 200. We show two figures. Gross is the total the equation
+            gives, which is roughly what a console shows if it knows your weight. Net subtracts the
+            one MET you would have burned anyway by sitting still, which is the honest figure for
+            what the session added.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">30 minutes at</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">METs</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">150 lb (gross / net)</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">200 lb (gross / net)</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">250 lb (gross / net)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.0 mph, 0%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.3</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">118 / 82</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">157 / 110</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">196 / 137</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.8 mph, 2%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.9</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">139 / 104</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">186 / 138</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">232 / 173</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.0 mph, 5%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5.4</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">193 / 157</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">257 / 210</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">321 / 262</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.2 mph, 6%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">6.1</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">218 / 182</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">291 / 243</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">363 / 304</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.5 mph, 9%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">8.0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">286 / 250</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">381 / 333</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">476 / 417</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.0 mph, 12%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">8.3</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">296 / 261</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">395 / 348</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">494 / 435</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5.5 mph run, 1%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">9.8</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">350 / 314</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">467 / 419</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">583 / 524</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            A worked example shows where the numbers come from. A 200 lb person is about 90.7 kg.
+            At 3.2 mph and 6%, the equation gives about 6.1 METs. Calories per minute are 6.1 × 3.5 ×
+            90.7 ÷ 200, which is about 9.7. Over 30 minutes that is about 291 gross. Subtract the
+            resting MET (1 × 3.5 × 90.7 ÷ 200 × 30, about 48) and the net figure is about 243.
+          </p>
+          <p>
+            Read the table with three caveats. The equations describe an average person walking
+            hands-free on an accurately calibrated belt; holding the rails, a console that over-reads
+            its speed, or simply being more economical than average all push the true figure down.
+            Heavier people burn more at the same setting, which is why the same session is worth
+            more to someone at 250 lb than at 150 lb. And the difference between the gross and net
+            columns is exactly the gap that makes many console readouts look generous. Our guide to
+            <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium">treadmill calorie accuracy</a>
+            explains the other reasons a display can drift.
+          </p>`,
+    },
+    {
+      id: 'diet-lever',
+      heading: 'Why Is Diet the Bigger Lever Than Any Setting?',
+      html: `          <p>
+            Diet is the bigger lever because the calories a treadmill session adds are modest next to
+            the calories in ordinary food, and because the body partly compensates for extra
+            exercise. That is not a reason to skip the treadmill. It is a reason to set expectations
+            honestly, so that you keep going when the scale moves more slowly than the console
+            implies.
+          </p>
+          <p>
+            Here is the arithmetic for a good week. Take a 200 lb person doing four 40-minute
+            sessions at 3.2 mph and 6%. Using the net figure from the table above, each session adds
+            roughly 325 calories, so the week adds about 1,300. A person at 150 lb doing the same
+            week adds about 970. The old rule of thumb that a pound of body fat is about 3,500
+            calories would turn the heavier person's week into a little over a third of a pound.
+            That rule is widely criticised as too simple, because the body adapts over time and real
+            losses usually run below it, so treat it as an upper bound rather than a forecast.
+          </p>
+          <p>
+            Now compare the other side of the ledger. Eating 200 fewer calories a day — a modest
+            change, the kind of thing one swapped drink or snack can account for — removes about
+            1,400 calories a week, which is more than the entire treadmill week above. Equally, it is
+            easy to undo a session completely by eating back what the console says you earned. That
+            is why "eat back your exercise calories" is one of the most common ways a sensible
+            treadmill plan fails to show on the scale.
+          </p>
+          <p>
+            None of this makes treadmill work pointless for fat loss. Regular walking and running
+            are associated with a long list of health benefits regardless of weight, many people
+            find it easier to keep their eating in check when they are exercising regularly, and
+            activity helps people maintain weight they have already lost. The point is only that
+            the treadmill works best as one part of a plan, and that the plan's food side is where a
+            registered dietitian, not a treadmill review site, should advise you. Our page on
+            <a href="/does-treadmill-burn-belly-fat/" class="text-[#0F62FE] font-medium">whether a treadmill burns belly fat</a>
+            covers why you also cannot choose where the fat comes off.
+          </p>`,
+    },
+    {
+      id: 'console-programs',
+      heading: 'What Is the Best Treadmill Program for Weight Loss?',
+      html: `          <p>
+            The best treadmill program for weight loss is usually the one you will repeat: for most
+            people that means Manual mode with the settings above, or a hill program you have
+            checked and adjusted, rather than the button labelled "Fat Burn". Built-in programs vary
+            by brand and model, so read what yours actually does before relying on it.
+          </p>
+          <p>
+            <strong>Manual.</strong> You set the speed and incline yourself. It is the most
+            predictable option and the easiest to progress, because you know exactly what you did
+            last time and can change one number at a time.
+          </p>
+          <p>
+            <strong>Hill or incline programs.</strong> These change the grade on a profile through
+            the session. They are a good fit for fat loss because they put the work where it is most
+            effective for walkers — on the incline — and they break up the monotony. Check the
+            profile before you start: some peak at the treadmill's maximum incline, which may be
+            more than you should be walking at yet. Most consoles let you scale the program's
+            intensity or override the incline mid-session.
+          </p>
+          <p>
+            <strong>"Fat burn" programs.</strong> On many consoles these hold a low to moderate
+            intensity, sometimes with a modest incline profile. There is nothing wrong with them,
+            but the name oversells the idea. Lower intensities burn a higher share of fat as fuel,
+            while higher intensities burn more calories overall; for fat loss, total energy over the
+            week is what counts. Treat a fat-burn program as an easy steady session, not a special
+            one.
+          </p>
+          <p>
+            <strong>Interval programs.</strong> These alternate harder and easier stretches. One
+            interval session a week is useful once you are consistent; several a week tends to leave
+            beginners sore and less likely to do the steady sessions that add up. Our
+            <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">interval guide</a>
+            covers the structures.
+          </p>
+          <p>
+            <strong>Heart-rate control programs.</strong> Where a treadmill has one, it adjusts
+            speed or incline to keep you near a target heart rate, usually from a chest strap or a
+            paired monitor. That can be a good way to keep easy days easy. It only works with a
+            reliable heart-rate signal, and any target based on an age formula can be well off for
+            an individual.
+          </p>
+          <p>
+            <strong>Connected classes.</strong> On subscription machines, trainer-led workouts can
+            change speed and incline automatically. They are a strong motivator for some people.
+            The settings logic is the same: choose classes whose effort matches your row in the
+            table, not the hardest ones.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The one setting nearly everyone skips</h3>
+          <p>
+            Enter your weight. Most consoles assume a default body weight if you do not, and the
+            calorie display then has little to do with you. It will not change what the session
+            does for you, but it stops a misleading figure from steering your eating.
+          </p>`,
+    },
+    {
+      id: 'heart-rate-settings',
+      heading: 'Which Heart-Rate Zone Should You Set for Fat Loss?',
+      html: `          <p>
+            For most fat-loss sessions, aim for a moderate effort — commonly described as roughly 60
+            to 75% of maximum heart rate, or simply "conversational" — with one harder session a
+            week at most. That band is easy enough to repeat and hard enough to add up.
+          </p>
+          <p>
+            The so-called fat-burning zone is the lower part of that band. It is real in the narrow
+            sense that a higher share of the energy comes from fat at lower intensities, but a
+            harder session that burns more calories in total can still use more fat overall. The
+            practical answer is to spend most of your time at an effort you can sustain and repeat,
+            which for most people sits in the moderate band anyway.
+          </p>
+          <p>
+            Maximum heart rate is the weak link. The common formula of 220 minus your age misses
+            many individuals by a wide margin, and medication such as beta blockers changes the
+            picture entirely. If your number and your breathing disagree, trust the breathing and
+            the talk test. Our guide to
+            <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">treadmill heart-rate zones</a>
+            explains the formulas and their limits, and why wrist-based readings are less reliable
+            than a chest strap during exercise.
+          </p>`,
+    },
+    {
+      id: 'weekly-routine',
+      heading: 'The Best Treadmill Routine for Weight Loss: A Weekly Settings Plan',
+      html: `          <p>
+            A good weekly routine combines three or four steady incline walks with one longer easy
+            session and, once you are consistent, one interval session. The table below expresses
+            that as console settings for a regular walker; scale every number down a row if you are
+            starting out, or up a row if you are already fit. The reasons for each session type are
+            covered on our <a href="/treadmill-workout-for-weight-loss/" class="text-[#0F62FE] font-medium">weight-loss workout page</a>,
+            so they are not repeated here.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Day</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Session</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Console settings</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Mon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Steady incline walk</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5 min at 2.5 mph, 1%; 30 min at 3.2 mph, 6%; 5 min at 2.5 mph, 0%</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Tue</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rest or easy flat walk</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Optional 20-30 min at 2.8-3.0 mph, 0-1%</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Wed</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Steady incline walk</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">As Monday</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Thu</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Incline intervals (once consistent)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10 min warm-up; 6 rounds of 90 sec at 3.2 mph, 9% and 90 sec at 3.2 mph, 2%; 5 min easy</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Fri</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rest</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">None</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sat</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Long easy walk</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">45-60 min at 3.0 mph, 2-4%</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sun</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Steady incline walk or rest</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">As Monday, or rest if legs are heavy</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Hold the speed constant during the intervals and change only the incline. That keeps
+            the session simple to run on any console and keeps the harder stretches walking rather
+            than jogging. If your treadmill's incline is slow to move, lengthen each stretch to two
+            minutes so that you spend most of it at the target grade rather than waiting for the
+            deck to rise.
+          </p>
+          <p>
+            Popular named routines fit the same logic. The 12-3-30 workout — 12% incline, 3 mph, 30
+            minutes — is the "fit walker" row of the settings table at its upper end, and it is a
+            demanding session for anyone who is not already walking on a steep grade. Our page on
+            the <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 treadmill workout</a>
+            sets out who it suits and how to build up to it.
+          </p>`,
+    },
+    {
+      id: 'progression',
+      heading: 'How Should You Progress the Settings?',
+      html: `          <p>
+            Progress by changing one setting at a time, by a small step, only after the current
+            settings feel comfortable for a full week. That is a convention rather than a law, but
+            it is the most reliable way to keep improving without the sore shins and tight calves
+            that make people stop.
+          </p>
+          <p>
+            <strong>Time first.</strong> Extend the main block by five minutes a week until you
+            reach your target session length — 30 to 45 minutes for most people. Time is the safest
+            variable to add, and it adds energy use in direct proportion.
+          </p>
+          <p>
+            <strong>Then incline.</strong> Add 1% at a time. Each step of grade adds a meaningful
+            amount of work for a walker, and your calves and Achilles tendons need a week or two to
+            adapt to each new level.
+          </p>
+          <p>
+            <strong>Speed last, and in small steps.</strong> Add 0.1 to 0.2 mph at a time, and only
+            while you still walk naturally. If a faster speed has you shortening your stride or
+            bouncing, you have found your ceiling for walking; return to incline as the lever.
+          </p>
+          <p>
+            <strong>Never raise two at once.</strong> Raising speed and incline together is the
+            commonest way to turn a sustainable session into one you cannot finish.
+          </p>
+          <p>
+            <strong>Expect a plateau.</strong> After several weeks the same settings feel easier,
+            partly because you are fitter and partly because your body has become more economical
+            at that exact task. That is the moment to move a row down the table, add a session, or
+            add the weekly interval — not to abandon the plan. If you are unsure how long to keep at
+            each stage, our
+            <a href="/treadmill-workout-for-beginners/" class="text-[#0F62FE] font-medium">beginner's first four weeks</a>
+            sets out a gentler ramp.
+          </p>`,
+    },
+    {
+      id: 'settings-to-avoid',
+      heading: 'Which Settings Look Good but Do Less?',
+      html: `          <p>
+            Several popular settings look impressive on the console and add less than they appear
+            to, or carry more risk than they are worth.
+          </p>
+          <p>
+            <strong>Maximum incline while holding on.</strong> A 15% grade with both hands on the
+            rails is a lean, not a climb. The console still credits the full grade, but much of the
+            work has gone to the frame. A lower incline walked properly is worth more.
+          </p>
+          <p>
+            <strong>Sprint settings for beginners.</strong> Short, very fast bursts burn a lot per
+            minute but not much per session for someone who can only manage a few of them, and they
+            carry the highest risk of a stumble or a strained calf. Leave sprints until you can
+            already run comfortably; our
+            <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety tips</a>
+            cover the safety key and stopping procedure for faster work.
+          </p>
+          <p>
+            <strong>Long sessions at a steep grade from day one.</strong> An hour at 12% is a
+            serious load on the calves and lower back for someone not used to it. Build up to steep
+            grades over weeks.
+          </p>
+          <p>
+            <strong>The calorie target.</strong> Setting a goal of a fixed number of console
+            calories encourages chasing a figure that may be inflated, and then eating against it.
+            A time or distance target, at a known speed and incline, is more honest and easier to
+            repeat.
+          </p>
+          <p>
+            <strong>Walking at a running pace.</strong> Somewhere between about 4 and 5 mph most
+            people reach the point where walking becomes awkward and jogging would be more natural.
+            Forcing a walk at that speed shortens and stiffens the stride. Either drop the speed and
+            add incline, or let yourself jog.
+          </p>`,
+    },
+    {
+      id: 'what-machine',
+      heading: 'What Does Your Treadmill Need to Run These Settings?',
+      html: `          <p>
+            Most of the settings on this page are within reach of any motorised home treadmill with
+            a powered incline. A few features make them easier to live with.
+          </p>
+          <p>
+            <strong>Powered incline to at least 10% or 12%.</strong> The "fit walker" row and the
+            interval session both need it. Many walking pads have no incline or only a small fixed
+            one, which limits them to the first row of the table; that is a real limitation for fat
+            loss, as our page on
+            <a href="/do-walking-pads-help-you-lose-weight/" class="text-[#0F62FE] font-medium">whether walking pads help you lose weight</a>
+            explains.
+          </p>
+          <p>
+            <strong>A motor that copes with slow, steep walking.</strong> Walking slowly at a steep
+            grade under a heavier user is a demanding job for a motor. Check the continuous-duty
+            rating rather than a peak figure, and the maximum user weight with some margin to
+            spare.
+          </p>
+          <p>
+            <strong>Quick-select buttons.</strong> One-touch incline and speed buttons make
+            intervals much easier to run than holding an arrow key for twenty presses.
+          </p>
+          <p>
+            <strong>Stable handrails for balance, not support.</strong> You should not lean on them,
+            but a sturdy rail you can touch for balance makes steeper walking safer, especially for
+            beginners and older users.
+          </p>
+          <p>
+            Our roundup of the
+            <a href="/best-treadmill-for-weight-loss/" class="text-[#0F62FE] font-medium">best treadmills for weight loss</a>
+            lists machines with the incline range and capacity these settings need, and the
+            <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">best incline treadmills</a>
+            go further for steep walkers.
+          </p>`,
+    },
+  ],
+  faqs: [
+    {
+      q: 'What is the best treadmill setting to lose weight?',
+      a: `For most people, a brisk walk of about 3.0 to 3.5 mph at a 4 to 10% incline for 30 to 45 minutes, three to five times a week, at an effort where you can still talk in sentences. Beginners should start lower, around 2.5 to 3.0 mph at 1 to 3%, and build up one setting at a time. Treat these as starting points, not prescriptions.`,
+    },
+    {
+      q: 'Is it better to walk on an incline or run for weight loss?',
+      a: `Either works if you do it consistently. Running burns more per minute, but steep incline walking can match a slow jog: by the standard ACSM equations, 3.5 mph at 9% is about the same estimated effort as jogging at 4.5 mph on the flat, with less impact. For beginners and heavier people, incline walking is usually easier to sustain week after week.`,
+    },
+    {
+      q: 'What is the best treadmill program for weight loss?',
+      a: `Usually Manual mode with sensible settings, or a hill program you have checked, because both put the work on the incline and are easy to repeat and progress. A fat-burn program is fine as an easy session, but its name oversells it. Add one interval program a week once you are consistent, and enter your weight so the calorie figure is less misleading.`,
+    },
+    {
+      q: 'How long should I be on the treadmill to lose weight?',
+      a: `Most plans build to 30 to 45 minutes per session, three to five times a week, plus a longer easy walk at the weekend. Start shorter if you are new, adding about five minutes a week. Time is the safest setting to increase, but how much weight you lose depends more on what you eat than on how long you spend on the belt.`,
+    },
+    {
+      q: 'Is the fat-burning zone the best setting for fat loss?',
+      a: `Not especially. At lower intensities a higher share of the energy comes from fat, but a harder session that burns more calories in total can use as much fat or more. For fat loss, the total energy you use across the week matters more than the fuel mix. A moderate, conversational effort you can repeat often is the practical sweet spot.`,
+    },
+    {
+      q: 'How many calories does 30 minutes of incline walking burn?',
+      a: `By ACSM arithmetic, 30 minutes at 3.2 mph and 6% is about 218 calories gross for a 150 lb person and about 291 for a 200 lb person, of which roughly 182 and 243 are added by the session itself. These are estimates for hands-free walking on an accurate belt; holding the rails or a console that over-reads its speed lowers the real figure.`,
+    },
+  ],
+  mistakesHeading: 'Common Mistakes With Treadmill Settings for Fat Loss',
+  mistakesIntro:
+    'Most fat-loss plans on a treadmill fail for the same few reasons, and none of them is choosing the wrong program.',
+  mistakes: [
+    {
+      title: 'Starting on the hardest row',
+      body: 'Beginning at a steep grade or a running pace leaves calves and shins sore and makes the second week less likely. Start a row lower than you think and build up one setting at a time.',
+    },
+    {
+      title: 'Holding the rails on a steep incline',
+      body: 'Leaning on the handrails moves the work to the frame while the console credits the full grade. If you cannot walk the incline hands-free, lower it until you can.',
+    },
+    {
+      title: 'Eating back the console calories',
+      body: 'Console figures are gross estimates that often run high. Treating them as calories earned can cancel the session entirely; keep food decisions separate from the readout.',
+    },
+    {
+      title: 'Raising speed and incline together',
+      body: 'Changing two settings at once turns a sustainable session into one you cannot finish. Add time first, then incline in 1% steps, then speed in small steps.',
+    },
+  ],
+  relatedHeading: 'Related Training Guides',
+  related: [
+    {
+      kicker: 'Training',
+      title: 'Treadmill Workouts for Weight Loss',
+      blurb: 'The sessions, the plan and what a treadmill can and cannot do.',
+      url: '/treadmill-workout-for-weight-loss/',
+    },
+    {
+      kicker: 'Training',
+      title: 'What Incline Should I Walk On?',
+      blurb: 'Grade by goal, and how to protect calves and back.',
+      url: '/what-incline-should-i-walk-on-a-treadmill/',
+    },
+    {
+      kicker: 'Question Answered',
+      title: 'Does a Treadmill Burn Belly Fat?',
+      blurb: 'Why spot reduction fails and what actually helps.',
+      url: '/does-treadmill-burn-belly-fat/',
+    },
+  ],
+  bottomLine: [
+    `<strong class="text-white">The best treadmill settings for fat loss are the ones you can repeat.</strong>
+            For most people that is a brisk walk at about 3.0 to 3.5 mph on a 4 to 10% incline for 30
+            to 45 minutes, several times a week, hands off the rails, with time added first, then
+            incline, then speed. Beginners start lower; runners can use easy runs instead.`,
+    `Use the console figures as estimates, not as a licence to eat, and remember that diet is the
+            bigger lever. For the sessions and the wider plan, see our guide to
+            <a href="/treadmill-workout-for-weight-loss/" class="text-[#5AA9FF] font-bold no-underline">treadmill workouts for weight loss</a>.`,
+  ],
+};

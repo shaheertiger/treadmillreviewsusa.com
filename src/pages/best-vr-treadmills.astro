@@ -1,0 +1,796 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "Best VR Treadmill (2026): Five Home Options, Honestly Compared";
+const description =
+  "The best VR treadmill for home use in 2026: the Virtuix Omni One range and KAT Walk C2 series compared on price, headset support, space and limits, and why none is a fitness treadmill in the usual sense.";
+
+const PRODUCTS = [
+  {
+    id: "virtuix-omni-one",
+    name: "Virtuix Omni One",
+    category: "Complete standalone VR treadmill system",
+    badge: "Best Overall",
+    amazonUrl: "https://www.amazon.com/s?k=Virtuix+Omni+One+VR+Treadmill&tag=sktiger-20",
+    reviewUrl: null,
+    priceRange: "$2,500–$3,000",
+    specs: "Includes customised Pico 4 Ultra headset · users 4 ft 4 in to 6 ft 4 in, up to 250 lb · 48 x 60 x 48 in., 150 lb",
+    pros: [
+      "The only complete system here: treadmill, headset, controllers and trackers in one box",
+      "No gaming PC needed",
+      "Compact, about four feet across, with built-in wheels",
+      "30-day refund guarantee and 12-month home warranty by Virtuix’s listing",
+    ],
+    cons: [
+      "The most expensive option here",
+      "Games come from Virtuix’s own store; the bundled headset is not your choice",
+      "A 250 lb user limit and a 6 ft 4 in maximum height",
+    ],
+    bottomLine: "For people who want the most finished, least fiddly VR treadmill experience and do not already own a headset or gaming PC.",
+    description: "The Omni One is Virtuix's consumer treadmill, and in its full form it is the only option here that needs nothing else. Virtuix's store lists it at $2,995, or $104 a month, with a customised Pico 4 Ultra headset, controllers, overshoes, foot trackers and a cleaning kit, a 30-day refund guarantee and a 12-month home warranty; it launched at $2,595 with a Pico headset, according to 2024 coverage, and Virtuix has run $500-off codes since, so our band runs from $2,500 to $3,000. Virtuix lists users from 4 feet 4 inches to 6 feet 4 inches and up to 250 lb, and gives the unit as 48 by 60 by 48 inches and 150 lb. One hands-on reviewer was walking, jogging and running comfortably after about 15 minutes; others found the first hour awkward and compared the feel to walking on ice. Games come from Virtuix's Omni One store. It is a gaming device, not a fitness treadmill, and it ships to the US and Canada only.",
+  },
+  {
+    id: "virtuix-omni-one-for-quest",
+    name: "Virtuix Omni One for Quest",
+    category: "VR treadmill for Meta Quest headsets",
+    badge: "Best for Quest Owners",
+    amazonUrl: "https://www.amazon.com/s?k=Virtuix+Omni+One+for+Quest&tag=sktiger-20",
+    reviewUrl: null,
+    priceRange: "Around $2,600",
+    specs: "Works with Meta Quest 2, 3 and 3S · users up to 250 lb · no headset included",
+    pros: [
+      "Uses the Quest you already own instead of a second headset",
+      "Official Meta support, and sold through Meta’s accessory store as well as Virtuix",
+      "Cheaper than the full Omni One, by about $400 at list",
+      "Launched with a bundle of compatible Quest games",
+    ],
+    cons: [
+      "Not every Quest game supports it yet",
+      "Still a large outlay for a VR accessory",
+      "The same 250 lb limit and sliding gait as the full Omni One",
+    ],
+    bottomLine: "For Meta Quest owners who play free-movement games and want to walk and run in them rather than use a thumbstick.",
+    description: "Omni One for Quest launched in June 2026 as the first VR treadmill with official Meta Quest support. Road to VR, TechSpot and Virtuix all give the price as $2,595, and Virtuix's store listed it at that figure when we checked, with a monthly plan also offered. Virtuix's listing says it works with Quest 2, Quest 3 and Quest 3S headsets; Road to VR reported Quest 2 and 3 support at launch and named optimised games including VAIL, Forefront and Star Trek: Infection, with four titles bundled free for a limited time. It uses the same treadmill as the full Omni One, so the same 250 lb user limit and the same learning curve apply, but you supply the headset. Road to VR's one real caveat was that not all Quest games are supported, so check the titles you care about first. Launch coverage also pointed out the obvious: at $2,595 it costs several times as much as the headset it works with. Virtuix ships it to the US, Canada, the EU and the UK.",
+  },
+  {
+    id: "virtuix-omni-one-core",
+    name: "Virtuix Omni One Core",
+    category: "VR treadmill for PC VR and SteamVR",
+    badge: "Best Omni for PC VR",
+    amazonUrl: "https://www.amazon.com/s?k=Virtuix+Omni+One+Core&tag=sktiger-20",
+    reviewUrl: null,
+    priceRange: "$2,500–$2,600",
+    specs: "Treadmill only, for PC VR headsets and SteamVR games · users up to 250 lb · overshoes and foot trackers included",
+    pros: [
+      "Works with a wide range of PC VR headsets you may already own",
+      "Access to compatible SteamVR games rather than one store",
+      "Same compact Omni One base with built-in wheels",
+      "Sold in the US, Canada, the EU and the UK",
+    ],
+    cons: [
+      "Needs a VR-ready gaming PC as well as a headset",
+      "Costs much more than the KAT Walk C2 series, which also targets PC VR",
+      "Games must support free movement; PSVR2 is not supported",
+    ],
+    bottomLine: "For PC VR players who want the Omni One platform and already own a capable headset and PC.",
+    description: "The Omni One Core is the Omni One treadmill without a headset, for people who already play on PC. Virtuix's store listed it at $2,495, or $87 a month, when we checked; Yanko Design and TweakTown gave $2,595 at its December 2024 launch, and in Europe it sells for €2,995 or £2,795 through Unbound XR, according to Auganix and Virtuix's own announcement. Coverage of the launch lists the treadmill, overshoes, foot trackers and a Bluetooth adapter in the box, with no headset. Virtuix's Omni Connect app links it to a PC and translates your movement into game input for supported SteamVR titles, and Virtuix lists a wide range of PC VR headsets as compatible, but not PSVR2. The user limits are the same as the full Omni One. The question with the Core is value: it costs well over the KAT Walk C2 Plus, which targets the same PC VR buyer. You are paying for Virtuix's platform, its compact design and its software rather than for extra hardware.",
+  },
+  {
+    id: "kat-walk-c2-plus-enhanced",
+    name: "KAT Walk C2 Plus Enhanced",
+    category: "PC VR treadmill with haptics and seat module",
+    badge: "Best Value for PC VR",
+    amazonUrl: "https://www.amazon.com/s?k=KAT+Walk+C2+Plus+VR+Treadmill&tag=sktiger-20",
+    reviewUrl: null,
+    priceRange: "$1,200–$1,700",
+    specs: "Users up to about 286 lb (130 kg) · 49.2 x 49.2 x 62 in., 57 kg · PC VR headsets; Quest via Nexus adapter",
+    pros: [
+      "Roughly half the price of the Omni One Core for the same PC VR buyer",
+      "Built-in haptic feedback and a seat module for seated play",
+      "Broad PC VR headset support, and Quest support through an optional adapter",
+      "Higher user weight limit than the Omni One",
+    ],
+    cons: [
+      "Needs a VR-ready PC unless you add the Nexus adapter for a Quest",
+      "Pricing depends heavily on rolling promotions, so the real price is hard to pin down",
+      "Sources disagree on the supported height range",
+    ],
+    bottomLine: "For PC VR players who want a capable omnidirectional treadmill without paying Omni One prices.",
+    description: "KAT VR's C2 series is the main alternative to Virtuix, and the C2 Plus Enhanced is its flagship home model. KAT's store listed it at $1,499 to $1,697 depending on options when we checked, with a promotion code taking it to $1,199, and Knoxlabs, an authorised retailer, lists it from $1,499. Knoxlabs gives it a footprint of 49.2 by 49.2 inches, a height of about 62 inches, a weight of 57 kg and a user weight limit below 286 lb, or 130 kg, which a university lab's equipment page and KAT's own blog repeat. The supported height range differs between sources, so we have left it out. Over the C2 Core it adds haptic feedback, a seat module for seated play and LED lighting, and KAT claims it runs about 37 percent quieter. Knoxlabs lists support for most PC VR headsets, Quest through KAT's Nexus adapter or a PC link, and only limited PSVR support. KAT's store was offering extended warranty terms as part of a promotion; get them in writing.",
+  },
+  {
+    id: "kat-walk-c2-core-enhanced",
+    name: "KAT Walk C2 Core Enhanced",
+    category: "Entry-level PC VR treadmill",
+    badge: "Lowest Price",
+    amazonUrl: "https://www.amazon.com/s?k=KAT+Walk+C2+Core+VR+Treadmill&tag=sktiger-20",
+    reviewUrl: null,
+    priceRange: "$800–$1,500",
+    specs: "Users up to about 286 lb (130 kg) · PC VR headsets; Quest via Nexus adapter · seat module optional",
+    pros: [
+      "The lowest price of any home VR treadmill we could confirm",
+      "Same 286 lb class user limit as the C2 Plus",
+      "Optional seat module and Nexus adapter let you add features later",
+      "Same headset compatibility as the C2 Plus",
+    ],
+    cons: [
+      "No haptics, LED lighting or built-in wheels, and louder than the Plus by KAT’s account",
+      "Needs a VR-ready PC unless you add the Nexus adapter",
+      "Little independent coverage specific to the Core",
+    ],
+    bottomLine: "For PC VR players who want to try omnidirectional movement for the least money, and can live without haptics.",
+    description: "The C2 Core Enhanced is the stripped-back version of KAT's C2, and it is the cheapest route into a home VR treadmill we could confirm. KAT's store listed it at $999 on its own, $1,098 with the Nexus adapter for Quest, and up to $1,497 with the seat module and adapter, with promotion codes advertising $799 bundles when we checked; our band reflects that spread. It shares the C2 platform, so a university lab running a C2 and Knoxlabs give the same user limit of below 286 lb, or 130 kg. KAT's own comparison says the Core lacks the Plus's haptic feedback, LED lighting and built-in wheels, comes without the seat module unless you add it, and is louder. Independent hands-on coverage is mostly of the original C2; VRScout found it took a couple of hours to set up. If you are not sure VR locomotion is for you, this is the lowest-cost way to find out, but it still needs a VR-ready PC or a Quest with the adapter.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Best Treadmills", item: "https://www.treadmillreviewsusa.com/best/" },
+        { "@type": "ListItem", position: 3, name: "Best VR Treadmills", item: "https://www.treadmillreviewsusa.com/best-vr-treadmills/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is the best VR treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "For a complete system that needs no PC, the Virtuix Omni One, which comes with its own headset. For Meta Quest owners, the Omni One for Quest. For PC VR players on a budget, the KAT Walk C2 Plus Enhanced or the cheaper C2 Core. All are gaming devices rather than fitness treadmills, and prices move a lot with promotions.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much does a VR treadmill cost?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "On 14 October 2026, home VR treadmills ranged from about $800 for a promotional KAT Walk C2 Core bundle to about $3,000 for a complete Virtuix Omni One with headset. The Omni One for Quest was $2,595, and the Omni One Core $2,495. Commercial models such as the KAT Walk Mini S cost far more.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is a VR treadmill good exercise?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "It can be active, depending on the game, but it is not a fitness treadmill. There is no belt, motor, set pace or incline; you slide your feet on a low-friction base while a harness holds you. If exercise is the main goal, a conventional treadmill does more for less money. A VR treadmill makes sense if you already play VR and want to move physically.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do VR treadmills work with Meta Quest?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Some do. Virtuix's Omni One for Quest has official Meta support for Quest 2, 3 and 3S by Virtuix's listing, though not every Quest game supports it. The KAT Walk C2 series can work with a Quest through KAT's optional Nexus adapter or through a PC link. PlayStation VR2 is not supported by either maker's current models.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can you buy an Infinadeck for home use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Not as of October 2026, as far as we could find. Infinadeck's motorised omnidirectional treadmill is sold to enterprise, medical and government customers with no published price, and coverage suggests a cost far beyond consumer products. Its maker has talked about a consumer version but has not announced one.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much space does a VR treadmill need?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The base is about four feet across — Virtuix gives the Omni One as 48 by 60 inches, and Knoxlabs gives the KAT C2 Plus as 49.2 inches square. Add clear space around it for your arms and controllers, and check your ceiling height against the maker's supported height range, especially in a basement.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", name: "Morgan Reyes" },
+      datePublished: "2026-10-14",
+      dateModified: "2026-10-14",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+    ...PRODUCTS.map((product) => ({
+      "@type": "Product",
+      name: product.name,
+      description: product.description,
+      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      offers: {
+        "@type": "AggregateOffer",
+        priceCurrency: "USD",
+        availability: "https://schema.org/InStock",
+      },
+    })),
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-10-14",
+    modifiedTime: "2026-10-14",
+    author: "Morgan Reyes",
+    section: "Fitness Equipment",
+    tags: [
+      "best vr treadmill",
+      "vr treadmill for home",
+      "omnidirectional treadmill",
+      "virtuix omni one",
+      "kat walk c2",
+      "vr treadmill price",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "See Our Top Picks", link: "#picks" }}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-bestvrtreadmills" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-bestvrtreadmills)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Buying Guide
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated October 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          Best VR Treadmill <span class="text-[#5AA9FF]">Five Home Options, Honestly Compared</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          A VR treadmill lets you walk, run and turn inside a virtual world while staying in one spot. The home models we could confirm on sale in the US come from two companies, in five main configurations. Here is what each costs, which headsets it works with, how much room it needs — and why none of them is a fitness treadmill in the sense the rest of this site means.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            See the Options
+          </a>
+          <a href="#not-a-treadmill" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            Is It a Real Treadmill?
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
+          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">October 14, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="1.5k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">On the products below.</strong> We have not used or tested
+          these machines. Prices, configurations, headset compatibility, user limits and dimensions
+          were checked on 14 October 2026 against each maker's own store and product pages
+          (Virtuix and KAT VR) and cross-checked against at least one independent source — Road to
+          VR, TechSpot, Auganix, Yanko Design and TweakTown coverage, hands-on impressions from Road
+          to VR, Tom's Guide, GameSpace and VRScout, an authorised retailer (Knoxlabs) and a
+          university lab's equipment page. Where sources disagreed, as they do on KAT's supported
+          height range, the figure is left out and the description says so. Prices for these
+          machines move a lot with promotions and bundles, so we give dated bands rather than a
+          single figure; confirm the price, what is in the box and the warranty before ordering. We
+          searched cpsc.gov for Virtuix and KAT VR and found no recall or warning. These are gaming
+          and VR locomotion devices, not exercise equipment in the usual sense, and nothing here is
+          fitness or medical advice. We earn a commission if you buy through the Amazon links on
+          this page; it does not change which products we list or what we say about them.
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
+          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best VR Treadmills for Home Use</a>
+          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose</a>
+          <a href="#not-a-treadmill" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Why a VR Treadmill Is Not a Fitness Treadmill</a>
+          <a href="#headsets-games" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Headsets, PCs and Games</a>
+          <a href="#omni-vs-kat" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Omni One vs KAT Walk C2: The Real Differences</a>
+          <a href="#total-cost" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. What a VR Treadmill Really Costs</a>
+          <a href="#space-and-setup" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Space, Ceiling and Setup</a>
+          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Who Should Look Elsewhere</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          The best VR treadmill for most people at home in 2026 is one of two things: a Virtuix
+          Omni One, if you want the most finished system and are happy to pay for it, or a KAT
+          Walk C2, if you want something cheaper and already own a PC VR setup. Both are
+          omnidirectional platforms: you stand in a harness or ring on a low-friction base, wear
+          special shoes or overshoes, and slide your feet in a walking or running motion while
+          sensors turn that into movement in a game. That is very different from a motorised belt,
+          and it is worth understanding before spending $1,000 to $3,000. This page lists the five
+          main home configurations from those two makers, what each costs as of October 2026, the
+          headsets each supports, and an honest account of what these machines are and are not
+          good for.
+        </p>
+
+        <div id="quick-picks" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+<p>
+            If you want a complete system that works out of the box, choose the Omni One. If you
+            already own a Meta Quest, the Omni One for Quest saves you buying a second headset. If
+            you already own a PC VR setup and want to spend less, the KAT Walk C2 Core is the
+            cheapest serious option. If what you actually want is exercise, read
+            <a href="#not-a-treadmill" class="text-[#0F62FE] font-medium">why these are not fitness treadmills</a>
+            first.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead><tr>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Pick</th>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Best for</th>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Price seen, Oct 2026</th>
+            </tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Virtuix Omni One</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A complete system, no PC</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,500–$3,000</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Virtuix Omni One for Quest</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Meta Quest owners</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Around $2,600</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Virtuix Omni One Core</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">PC VR and SteamVR owners</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,500–$2,600</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">KAT Walk C2 Plus Enhanced</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">PC VR on a mid budget, with haptics</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,200–$1,700</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">KAT Walk C2 Core Enhanced</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The lowest price</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$800–$1,500</td></tr>
+            </tbody>
+          </table></div>
+        </div>
+
+        <div id="picks" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best VR Treadmills for Home Use</h2>
+<p>
+            These are the five consumer configurations we could confirm as currently sold in the US.
+            Three are versions of Virtuix's Omni One, differing mainly in which headset they work
+            with; two are KAT VR's C2 series. Price bands reflect the list prices, bundles and
+            promotion codes we saw on 14 October 2026, and these move often.
+          </p>
+        </div>
+      </div>
+
+      <!-- Product cards -->
+      <div class="not-prose">
+        {
+          PRODUCTS.map((product, index) => (
+            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
+              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
+                  <div>
+                    <p class="text-white font-black text-xl leading-tight">
+                      {index + 1}. {product.name}
+                    </p>
+                    <p class="text-gray-400 text-xs">{product.category}</p>
+                  </div>
+                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                    {product.badge}
+                  </span>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center gap-2 mb-4 flex-wrap">
+                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
+                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
+                  </div>
+                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
+                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
+                      <p class="text-xs font-black uppercase tracking-widest text-green-700 mb-2">What Works</p>
+                      <ul class="space-y-2">
+                        {product.pros.map((pro) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+                      <p class="text-xs font-black uppercase tracking-widest text-red-700 mb-2">What Doesn't</p>
+                      <ul class="space-y-2">
+                        {product.cons.map((con) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="border-t border-gray-100 pt-4">
+                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
+                    <div class="flex flex-wrap items-center gap-3">
+                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+                        Check Price on Amazon &rarr;
+                      </a>
+                      {product.reviewUrl && (
+                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
+                          Read our full {product.name} review &rarr;
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="how-we-chose" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose</h2>
+<p>
+            We have not used or tested these machines. They were chosen from the makers' own stores
+            and specifications, an authorised retailer's listing, launch and pricing coverage from
+            VR trade press, and hands-on impressions from independent reviewers, and the claims on
+            this page stay within what those sources support.
+          </p>
+          <p>
+            The field is small, so the main job was establishing what is actually for sale to a
+            home buyer in the US today. Several names that come up in VR treadmill searches are not:
+            Infinadeck's motorised omnidirectional treadmill is sold to enterprise, medical and
+            government customers, with no published price, and its maker has talked about a consumer
+            version without announcing one. KAT VR's Walk Mini S and Virtuix's Omni One Enterprise
+            are business products. We list only what a person can order for home use now.
+          </p>
+          <p>
+            For each configuration we checked the price on the maker's store, what is in the box,
+            the headsets it supports, the user height and weight limits, and the footprint, and we
+            looked for at least one independent source for each. Where an independent source gave a
+            different figure, we said so rather than choosing. We searched cpsc.gov for both makers
+            and found no recall or warning.
+          </p>
+        </div>
+
+        <div id="not-a-treadmill" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Why a VR Treadmill Is Not a Fitness Treadmill</h2>
+<p>
+            This site is about treadmills for exercise, so it is worth being direct: a VR treadmill
+            is a locomotion controller for virtual reality. It can make you move, sometimes hard,
+            but it is built for games, not training, and it differs from a motorised treadmill in
+            almost every way that matters for fitness.
+          </p>
+          <ul class="list-disc pl-6 space-y-2 text-gray-700">
+            <li><strong>Nothing moves under you.</strong> There is no belt and no motor. You slide your
+            feet across a low-friction, slightly concave base while a harness or waist ring holds you
+            in place. Reviewers who have tried the Omni One describe the feel as closer to gliding
+            than striding — like walking on slippery ice, or in snowshoes.</li>
+            <li><strong>No set pace, no incline.</strong> You cannot dial in 6 mph at 5 percent and hold
+            it. Your speed in the game follows how you move, and the effort depends on the game.</li>
+            <li><strong>The gait is different.</strong> The sliding motion uses your legs and hips
+            differently from walking or running on a belt or the road, so it does not train you for
+            either in the way a treadmill does.</li>
+            <li><strong>There is a learning curve.</strong> Hands-on reviewers report feeling awkward at
+            first, needing anywhere from about 15 minutes to several hours before walking, turning and
+            moving backwards feel natural.</li>
+            <li><strong>Lower user limits.</strong> The Omni One supports users up to 250 lb and the KAT
+            C2 series up to about 286 lb, below many home treadmills.</li>
+          </ul>
+          <p>
+            What a VR treadmill does well is presence. Turning your body to look around, walking
+            down a corridor and breaking into a run when something chases you all feel more natural
+            than pushing a thumbstick, and that is what buyers are paying for. One reviewer who
+            spent several hours on the Omni One found the first hour awkward but the fifth
+            dramatically different, so judge it after a week, not after a single session.
+          </p>
+          <p>
+            None of that makes a VR treadmill a bad buy. For the right person — someone who already
+            spends hours in VR games and wants to move physically rather than push a joystick — it is
+            a genuine upgrade, and the activity can be vigorous. But if your goal is fitness, a
+            conventional treadmill will do more for less money, and our guides to
+            <a href="/best-smart-treadmills/" class="text-[#0F62FE] font-medium">smart treadmills</a>
+            and
+            <a href="/best-treadmills-for-zwift/" class="text-[#0F62FE] font-medium">treadmills for Zwift</a>
+            cover the interactive end of that market.
+          </p>
+        </div>
+
+        <div id="headsets-games" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Headsets, PCs and Games</h2>
+<p>
+            A VR treadmill is only as useful as the headset and games it works with, and this is
+            where the configurations differ most.
+          </p>
+          <p>
+            <strong>Standalone, no PC.</strong> The full Omni One ships with a customised Pico 4
+            Ultra headset and controllers and runs games from Virtuix's own Omni One store. It is the
+            only option here that needs nothing else, and the only one tied to a single store and
+            headset.
+          </p>
+          <p>
+            <strong>Meta Quest.</strong> Omni One for Quest works with Quest 2, Quest 3 and Quest 3S
+            headsets by Virtuix's listing and with Quest games that support it; Road to VR noted at
+            launch that not all Quest games are supported yet. The KAT Walk C2 series can work with
+            a Quest through KAT's Nexus adapter, sold as an option, or through a PC using Link, Air
+            Link or Virtual Desktop, according to Knoxlabs.
+          </p>
+          <p>
+            <strong>PC VR and SteamVR.</strong> The Omni One Core and both KAT Walk C2 models work
+            with PC VR headsets and SteamVR games. That means you need a VR-ready PC as well as the
+            headset, which is a substantial extra cost if you do not already have one. Virtuix's
+            Omni Connect app links the treadmill to the PC over Bluetooth and stands in for
+            controller movement input, according to its product coverage, so games need to support
+            free movement rather than teleporting.
+          </p>
+          <p>
+            <strong>PlayStation VR2</strong> is not supported by the Omni One, by Virtuix's page, and
+            Knoxlabs lists it as not yet supported by the KAT C2.
+          </p>
+          <p>
+            <strong>Subscriptions.</strong> Virtuix sells an Omni Online membership, listed on its
+            store at $84 to $140 a year, which it describes as a premium service with free games and
+            online multiplayer. We could not confirm from Virtuix's pages whether any features you
+            would consider essential sit behind it; ask before you buy. We did not find a
+            subscription requirement for the KAT C2 series.
+          </p>
+        </div>
+
+        <div id="omni-vs-kat" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Omni One vs KAT Walk C2: The Real Differences</h2>
+<p>
+            With only two makers in the home market, most buyers end up choosing between them. The
+            differences are less about the walking surface than about everything around it.
+          </p>
+          <p>
+            <strong>Price.</strong> KAT's C2 series costs roughly half as much as the Omni One range
+            at list, and less again on promotion. If you already own a PC VR setup, the C2 Plus
+            Enhanced does broadly the same job as the Omni One Core for about $1,000 less.
+          </p>
+          <p>
+            <strong>Ecosystem.</strong> Virtuix sells a complete, closed system with its own headset
+            and game store, a Quest version with official Meta support, and a PC version. KAT sells
+            hardware for the PC VR world, with an adapter for Quest. If you want something that works
+            without tinkering, Virtuix's full system is the simpler path; if you like choosing your
+            own headset and games, KAT's approach is more open and cheaper.
+          </p>
+          <p>
+            <strong>User limits.</strong> The KAT C2 series supports heavier users, up to about 286
+            lb against the Omni One's 250 lb. Virtuix publishes a clear height range, 4 feet 4 inches
+            to 6 feet 4 inches; KAT's supported range differs between sources, so ask KAT directly if
+            you are near either end.
+          </p>
+          <p>
+            <strong>Footprint.</strong> The two bases are similar, around four feet across. The Omni
+            One and the C2 Plus have wheels; KAT says the C2 Core does not.
+          </p>
+          <p>
+            <strong>Pricing clarity.</strong> Virtuix's prices are fairly stable, with occasional
+            discount codes. KAT's store runs near-constant promotions and bundles, which makes the
+            real price hard to compare; work out exactly what is in the box at the price you are
+            quoted.
+          </p>
+        </div>
+
+        <div id="total-cost" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. What a VR Treadmill Really Costs</h2>
+<p>
+            The treadmill is only part of the bill. Worked out from the prices we saw on 14 October
+            2026, the cheapest complete setup for each option looks roughly like this.
+          </p>
+          <ul class="list-disc pl-6 space-y-2 text-gray-700">
+            <li><strong>Omni One:</strong> about $3,000 all in, including the headset, or less with a
+            discount code. Nothing else is needed.</li>
+            <li><strong>Omni One for Quest:</strong> $2,595 plus a Quest headset if you do not have one.
+            Virtuix's own store lists the Quest 3S at $349 and the Quest 3 at $599.</li>
+            <li><strong>KAT Walk C2 Core with Nexus:</strong> $1,098 at list, or less on promotion,
+            plus a Quest. This is the cheapest complete route we found, at around $1,450 with a Quest
+            3S before promotions.</li>
+            <li><strong>Omni One Core or KAT Walk C2 Plus for PC VR:</strong> $2,495 or about $1,500
+            respectively, plus a PC VR headset and a VR-ready PC. If you own neither, that can double
+            the cost.</li>
+          </ul>
+          <p>
+            Add any subscription you decide you want, spare overshoes or shoe parts, and the games
+            themselves, many of which are paid. None of this is unreasonable for a dedicated VR
+            player, but it is a lot more than the headline price suggests, and far more than a
+            capable home treadmill for exercise.
+          </p>
+        </div>
+
+        <div id="space-and-setup" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Space, Ceiling and Setup</h2>
+<p>
+            A VR treadmill needs less floor than you might expect, but more space around it than its
+            footprint suggests, because your arms, controllers and occasionally your whole body move
+            beyond its edge.
+          </p>
+          <p>
+            <strong>Footprint.</strong> Virtuix gives the Omni One as 48 by 60 by 48 inches and 150
+            lb, describing a base about four feet across, with built-in wheels. Knoxlabs gives the
+            KAT Walk C2 Plus as 49.2 by 49.2 inches and about 62 inches tall, at 57 kg. Leave clear
+            space around either for your arms and controllers, and keep it away from walls, shelves,
+            lights and anything fragile.
+          </p>
+          <p>
+            <strong>Ceiling.</strong> The support arm or frame, plus a tall user with arms raised,
+            needs headroom. A university lab that runs a KAT C2 notes its own low ceiling may reduce
+            the usable height range, which is a useful warning for basements. Check the maker's
+            height range against your ceiling before ordering.
+          </p>
+          <p>
+            <strong>Floor and weight.</strong> These are not as heavy as a commercial treadmill, but
+            150 lb plus a moving user is a real load. A firm, level floor matters, and on carpet you
+            may want a hard mat beneath. Our guide to
+            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">treadmill space requirements</a>
+            covers the general principles.
+          </p>
+          <p>
+            <strong>Setup.</strong> VRScout found the KAT C2 took a couple of hours to get running.
+            Expect to spend time on pairing shoes or foot trackers, calibrating, and setting up
+            games, and then several sessions learning to move.
+          </p>
+        </div>
+
+        <div id="who-should-skip" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Who Should Look Elsewhere</h2>
+<p>
+            <strong>If you want to get fit,</strong> buy a treadmill. A conventional machine gives you
+            pace, incline, distance and heart-rate training for a fraction of the price, and our
+            guide to the
+            <a href="/best-treadmills/" class="text-[#0F62FE] font-medium">best treadmills</a>
+            is the place to start. If boredom is the problem, our guide to
+            <a href="/how-to-make-treadmill-running-less-boring/" class="text-[#0F62FE] font-medium">making treadmill running less boring</a>
+            covers scenic and game-based apps that work on ordinary machines.
+          </p>
+          <p>
+            <strong>If you are over about 250 lb,</strong> the Omni One is ruled out by its limit, and
+            the KAT C2 series' roughly 286 lb limit leaves little margin for many people.
+          </p>
+          <p>
+            <strong>If you do not already play VR regularly,</strong> try VR first. Some people find
+            VR uncomfortable or nauseating, and we have not seen independent evidence that a VR
+            treadmill prevents that. Spending $1,000 to $3,000 on a locomotion device before you know
+            you enjoy VR is a large bet.
+          </p>
+          <p>
+            <strong>If you play mostly seated or teleport-based games,</strong> a VR treadmill adds
+            little. It earns its keep in games built around walking and running through large
+            worlds.
+          </p>
+          <p>
+            <strong>If you have balance, joint or heart problems,</strong> talk to a doctor before
+            using any VR locomotion device. The harness holds you upright, but you are moving with
+            your vision fully inside a headset.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What is the best VR treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                For a complete system that needs no PC, the Virtuix Omni One, which comes with its own headset. For Meta Quest owners, the Omni One for Quest. For PC VR players on a budget, the KAT Walk C2 Plus Enhanced or the cheaper C2 Core. All are gaming devices rather than fitness treadmills, and prices move a lot with promotions.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How much does a VR treadmill cost?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                On 14 October 2026, home VR treadmills ranged from about $800 for a promotional KAT Walk C2 Core bundle to about $3,000 for a complete Virtuix Omni One with headset. The Omni One for Quest was $2,595, and the Omni One Core $2,495. Commercial models such as the KAT Walk Mini S cost far more.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is a VR treadmill good exercise?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                It can be active, depending on the game, but it is not a fitness treadmill. There is no belt, motor, set pace or incline; you slide your feet on a low-friction base while a harness holds you. If exercise is the main goal, a conventional treadmill does more for less money. A VR treadmill makes sense if you already play VR and want to move physically.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Do VR treadmills work with Meta Quest?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Some do. Virtuix's Omni One for Quest has official Meta support for Quest 2, 3 and 3S by Virtuix's listing, though not every Quest game supports it. The KAT Walk C2 series can work with a Quest through KAT's optional Nexus adapter or through a PC link. PlayStation VR2 is not supported by either maker's current models.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Can you buy an Infinadeck for home use?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Not as of October 2026, as far as we could find. Infinadeck's motorised omnidirectional treadmill is sold to enterprise, medical and government customers with no published price, and coverage suggests a cost far beyond consumer products. Its maker has talked about a consumer version but has not announced one.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How much space does a VR treadmill need?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                The base is about four feet across — Virtuix gives the Omni One as 48 by 60 inches, and Knoxlabs gives the KAT C2 Plus as 49.2 inches square. Add clear space around it for your arms and controllers, and check your ceiling height against the maker's supported height range, especially in a basement.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a VR Treadmill</h2>
+          <p class="text-gray-700 leading-relaxed">Most of these come from expecting a VR treadmill to be a treadmill, or forgetting what else it needs.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying one as a fitness machine</h3>
+              <p class="text-gray-700 text-sm m-0">A VR treadmill has no belt, set pace or incline, and its sliding gait is not the same as walking or running. If fitness is the goal, a conventional treadmill gives you more training for less money; a VR treadmill is for people who want to move inside VR games.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Forgetting the PC and headset</h3>
+              <p class="text-gray-700 text-sm m-0">Only the full Omni One includes a headset and needs nothing else. The Omni One Core and both KAT C2 models need a PC VR headset and a VR-ready PC, or a Quest with the right adapter or version. Price the whole setup, not just the treadmill.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not checking your games</h3>
+              <p class="text-gray-700 text-sm m-0">These treadmills replace thumbstick movement, so they suit games with free locomotion. Not every game is supported, and Road to VR noted that not all Quest titles work with Omni One for Quest yet. Check the specific games you play before buying.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring the user limits</h3>
+              <p class="text-gray-700 text-sm m-0">The Omni One supports users up to 250 lb and 6 feet 4 inches; the KAT C2 series up to about 286 lb. Both are lower than most home treadmills, so check the limits, and your ceiling height, against the tallest and heaviest person who will use it.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/best-smart-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Buying Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Smart Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Interactive treadmills with screens and classes, for training rather than gaming.</p>
+            </a>
+            <a href="/best-treadmills-for-zwift/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Buying Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills for Zwift</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Run in a virtual world on a real treadmill, with pace and incline control.</p>
+            </a>
+            <a href="/how-to-make-treadmill-running-less-boring/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Workouts</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Making Treadmill Running Less Boring</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Apps, routes and session ideas that make indoor running more engaging.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            The best VR treadmill for most people is the
+            <strong class="text-white">Virtuix Omni One</strong>, the only complete system that needs
+            no PC, or its Quest version if you already own a Meta headset. If you play on a PC and
+            want to spend less, the <strong class="text-white">KAT Walk C2 Plus Enhanced</strong>
+            costs roughly half as much as the Omni One Core, and the C2 Core is the cheapest way in.
+          </p>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            Be clear about what you are buying: a locomotion device for VR games, not a fitness
+            treadmill. If what you want is training, a conventional machine does more for less, and
+            our guide to
+            <a href="/best-smart-treadmills/" class="text-[#5AA9FF] font-bold no-underline">smart treadmills</a>
+            covers the interactive options.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+</Layout>

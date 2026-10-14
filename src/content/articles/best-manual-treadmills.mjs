@@ -338,6 +338,7 @@ export default {
     {
       id: 'assaultrunner-pro',
       name: 'AssaultRunner Pro',
+      reviewUrl: '/assaultrunner-pro-treadmill/',
       category: 'Curved Non-Motorised Trainer',
       badge: 'Best Overall',
       amazonUrl: 'https://www.amazon.com/s?k=Assault+Fitness+AssaultRunner+Pro&tag=sktiger-20',

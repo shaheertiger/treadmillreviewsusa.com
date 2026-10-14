@@ -342,7 +342,7 @@ export default {
       heading: 'The Sole Models We Did Not Rank, and Which to Skip',
       html: `          <p>
             Three of Sole's current treadmills are not in the cards above, and several older names
-            are still on sale elsewhere. Here is why.
+            are still on sale elsewhere. Here is why. The former flagship has its own page: <a href="/sole-f89-treadmill/" class="text-[#0F62FE] font-medium">the Sole F89</a>.
           </p>
           <p>
             <strong>The F50.</strong> New for 2026 and the cheapest Sole, with a 20 by 55-inch deck,
