@@ -335,7 +335,7 @@ export default {
       badge: 'Best When On Sale',
       reviewUrl: '/sole-f63-treadmill/',
       priceRange: '$899-$1,099 (falls to ~$749)',
-      specs: '55 in. deck · 3.0 CHP · 0-15% incline · ~250 lbs assembled · hydraulic fold',
+      specs: '20 x 60 in. deck · 3.0 HP · 0-15% incline · ~250 lbs assembled · hydraulic fold',
       pros: [
         'Heaviest frame at this price when discounted — steady even at 6 mph',
         'Hydraulic fold takes 30 seconds with one person',

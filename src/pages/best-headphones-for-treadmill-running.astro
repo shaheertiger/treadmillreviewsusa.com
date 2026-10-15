@@ -1,0 +1,899 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "Best Headphones for Treadmill Running (2026): Six Picks by Fit";
+const description =
+  "Six sport earbuds and open-ear headphones for treadmill running, checked against maker and retailer listings: bone conduction, ear-hooks, wingtips and budget.";
+
+const PRODUCTS = [
+  {
+    id: "shokz-openrun-pro-2",
+    name: "Shokz OpenRun Pro 2",
+    category: "Open-ear bone conduction headset",
+    badge: "Best Overall",
+    amazonUrl: "https://www.amazon.com/s?k=Shokz+OpenRun+Pro+2&tag=sktiger-20",
+    reviewUrl: null,
+    priceRange: "$120–$180",
+    specs: "Open-ear bone conduction · IP55 · up to 12 hr per charge · Bluetooth 5.3 · multipoint · Standard and Mini bands",
+    pros: [
+      "Leaves your ears fully open, so you hear the household as well as the music",
+      "Nothing in the ear to fall out on the belt or trap sweat",
+      "Up to 12 hours per charge, a figure one independent review measured close to",
+      "Sold in Standard and Mini band sizes, which matters for a secure fit at pace",
+    ],
+    cons: [
+      "Competes with the motor rather than blocking it; on a loud treadmill you may want more volume than is comfortable",
+      "IP55 is a lower water rating than the IP67 of the cheaper OpenRun",
+      "Bone conduction sound is good for the type but not a match for sealed earbuds",
+    ],
+    bottomLine: "The pair to buy if you need to hear the house while you run. On a loud machine, choose a sealed pair with an ambient mode instead.",
+    description: "The OpenRun Pro 2 is Shokz's flagship open-ear sports headset and our first choice for treadmill runners who need to hear what is going on around them. A band wraps behind the head and the transducers rest in front of the ears, leaving the ear canal open; Shokz pairs bone conduction with a separate air-conduction element for bass. Shokz rates it IP55 for sweat and splashes and lists up to 12 hours per charge, Bluetooth 5.3 and multipoint pairing; RTINGS confirms the IP55 rating, SoundGuys lists Bluetooth 5.3 with multipoint, and GSMArena measured battery life close to the claim. It comes in Standard and Mini band sizes. Listings disagree on its weight and standby time, so we have left those out. The honest limit on a treadmill is that open ears also hear the motor, and reviewers note it can be hard to hear in loud places. Shokz listed it at $179.95 on 15 October 2026; it has been widely discounted at Amazon.",
+  },
+  {
+    id: "shokz-openrun",
+    name: "Shokz OpenRun",
+    category: "Budget open-ear bone conduction headset",
+    badge: "Best Budget Open-Ear",
+    amazonUrl: "https://www.amazon.com/s?k=Shokz+OpenRun+Bone+Conduction+Headphones&tag=sktiger-20",
+    reviewUrl: null,
+    priceRange: "$90–$130",
+    specs: "Open-ear bone conduction · IP67 · Standard and Mini bands · magnetic or USB-C charging versions",
+    pros: [
+      "The same open-ear design as the Pro 2 for noticeably less money",
+      "IP67, the highest water rating on this page, for the sweatiest sessions",
+      "Nothing in or over the ear canal, so nothing to fall out on the belt",
+      "Sold in two band sizes and two charging versions",
+    ],
+    cons: [
+      "Older, simpler sound than the Pro 2, and reviewers note some leakage at volume",
+      "Check which charging version you are buying; the magnetic one needs its own cable",
+    ],
+    bottomLine: "The cheaper way into open-ear headphones, and the better choice if heavy sweat is your main worry.",
+    description: "The OpenRun is Shokz's established bone-conduction headset, and Shokz still sells it alongside the Pro 2 at a lower price. The design is the same in principle: a wraparound band, transducers in front of the ears, and nothing in the ear canal, so you can hear someone call from the next room. Its water rating is higher than the Pro 2's. Shokz rates it IP67, and reviewers including TechRadar and SoundGuys confirm that rating, which covers dust and temporary immersion; it is still not a swimming headset. Shokz's store lists Standard and Mini band sizes and two charging versions, one with Shokz's magnetic connector and one with a standard USB-C port, so check which one a listing is selling. We have not printed a battery figure because the one we could cross-check applies to the magnetic version only. Reviewers describe the sound as good for bone conduction but behind regular earphones. Shokz listed it at $129.95 on 15 October 2026, and Amazon has discounted it to around $90.",
+  },
+  {
+    id: "beats-powerbeats-pro-2",
+    name: "Beats Powerbeats Pro 2",
+    category: "Ear-hook in-ear earbuds with ANC",
+    badge: "Best With Noise Cancelling",
+    amazonUrl: "https://www.amazon.com/s?k=Beats+Powerbeats+Pro+2&tag=sktiger-20",
+    reviewUrl: null,
+    priceRange: "$200–$250",
+    specs: "In-ear with ear-hook · ANC and Transparency · IPX4 earbuds · heart-rate sensor · up to 8 hr per charge with ANC on",
+    pros: [
+      "Ear-hooks hold the buds in place even when the seal loosens with sweat",
+      "Active noise cancelling suits the steady drone of a motor and belt",
+      "Transparency mode lets the household back in at the press of a button",
+      "Built-in heart-rate sensor that can share readings with fitness apps",
+    ],
+    cons: [
+      "The most expensive pair here",
+      "IPX4 earbuds, and Apple says the charging case is not water resistant",
+      "The heart-rate sensor is handy, but reviewers do not treat it as a replacement for a chest strap",
+    ],
+    bottomLine: "The pair for runners who want to shut the treadmill out and know the buds will not move. Use Transparency when someone might need you.",
+    description: "Beats' second-generation Powerbeats Pro is the most secure and most capable sealed pair on this page. Ear-hooks wrap over the top of each ear, so the buds stay in place even when sweat loosens the seal, and active noise cancelling works best on exactly the kind of steady sound a treadmill motor and belt produce. Transparency mode lets outside sound back in when you need to hear the house. Apple rates the earbuds IPX4 and says the charging case is not water resistant; it gives battery life as 8 hours per charge with ANC on and 36 hours with the case, figures Digital Trends repeats. The built-in optical heart-rate sensor can share readings with Apple Fitness, the Health app and compatible third-party apps; RTINGS calls it handy but not a replacement for a dedicated monitor, and Apple notes that cold, moisture and fit can affect accuracy. Best Buy listed it on 15 October 2026, and retailer prices we saw ran from around $200 on sale to the $249.99 list price.",
+  },
+  {
+    id: "beats-powerbeats-fit",
+    name: "Beats Powerbeats Fit",
+    category: "Wingtip in-ear earbuds with ANC",
+    badge: "Best Wingtip Fit",
+    amazonUrl: "https://www.amazon.com/s?k=Beats+Powerbeats+Fit&tag=sktiger-20",
+    reviewUrl: null,
+    priceRange: "$170–$200",
+    specs: "In-ear with flexible wingtip · ANC and Transparency · IPX4 earbuds and case · Apple H1 chip",
+    pros: [
+      "Nothing behind the ear, which suits glasses wearers and people who dislike hooks",
+      "Active noise cancelling and Transparency, as on the Pro 2",
+      "IPX4 rating covers the case as well as the earbuds",
+      "Smaller case than the Beats Fit Pro it replaces",
+    ],
+    cons: [
+      "No heart-rate sensor, unlike the Powerbeats Pro 2",
+      "Wingtip hold depends on the shape of your outer ear more than a hook does",
+      "Listings disagree on battery life, so we have not printed a figure",
+    ],
+    bottomLine: "The sealed pair for runners who find ear-hooks uncomfortable or wear glasses. Choose the Pro 2 instead if you want the heart-rate sensor.",
+    description: "The Powerbeats Fit launched in September 2025 as the successor to the Beats Fit Pro, and it is the pick for runners who want sealed earbuds without a hook behind the ear. A soft wingtip tucks into the ridge of the outer ear to brace each bud; Beats made it more flexible than the Fit Pro's and describes the hold as comparable to an ear-hook, and reviewers who ran in them, including over a half marathon, report that they stayed secure. It has active noise cancelling and Transparency mode, and Apple rates both the earbuds and the case IPX4. It uses Apple's H1 chip rather than the newer H2, and TechRadar confirms it has no heart-rate sensor. Apple's battery figures are stated inconsistently between its listings, so we have left battery life out. Best Buy listed it on 15 October 2026. The list price is $199.99, and Amazon, Target and Best Buy have repeatedly sold it at around $170.",
+  },
+  {
+    id: "soundcore-sport-x20",
+    name: "Soundcore Sport X20",
+    category: "Budget ear-hook earbuds with adaptive ANC",
+    badge: "Best Budget ANC",
+    amazonUrl: "https://www.amazon.com/s?k=Soundcore+Sport+X20+by+Anker&tag=sktiger-20",
+    reviewUrl: null,
+    priceRange: "$70–$80",
+    specs: "In-ear with ear-hook · adaptive ANC · hooks rotate up to 30° and extend 4 mm · up to 12 hr per charge (ANC off)",
+    pros: [
+      "Noise cancelling and ear-hooks for well under $100",
+      "Hooks rotate and extend to suit different ears, a rare adjustment",
+      "Up to 12 hours per charge with ANC off, a figure reviewers repeat",
+      "Reviewers describe the ANC as good for the price on steady gym-type noise",
+    ],
+    cons: [
+      "Water rating is not stated consistently across listings; check the exact listing",
+      "Bass-forward tuning, and some reviewers report hook pressure over long sessions, especially with glasses",
+      "Battery life drops substantially with ANC on",
+    ],
+    bottomLine: "The budget way to get both a secure hook and noise cancelling. Buy it if the Powerbeats Pro 2 is more than you want to spend.",
+    description: "Anker's Soundcore Sport X20 combines the two features that matter most for loud treadmills — an ear-hook and active noise cancelling — at a fraction of the Beats price. Its hooks are unusually adjustable: Soundcore says they rotate up to 30 degrees and extend by 4 mm, and multiple independent reviews repeat those figures and praise the hold during sprints. Soundcore lists adaptive ANC with manual adjustment, and reviewers describe it as strong on steady noise and weaker on sudden sounds, which is the right profile for a motor drone. Soundcore gives battery life as up to 12 hours per charge and 48 hours with the case with ANC off, and 7 and 28 hours with it on. On water resistance we found disagreement: Soundcore's UK page and comparison table say IP68, its US page gives no rating, and one retailer lists a different figure, so we have left it out of the specification line. Soundcore's US store listed it at $79.99 on 15 October 2026.",
+  },
+  {
+    id: "jlab-go-sport-plus",
+    name: "JLab GO Sport+",
+    category: "Budget ear-hook true wireless earbuds",
+    badge: "Best Cheap Pair",
+    amazonUrl: "https://www.amazon.com/s?k=JLab+GO+Sport%2B+True+Wireless+Earbuds&tag=sktiger-20",
+    reviewUrl: null,
+    priceRange: "$20–$32",
+    specs: "In-ear with ear-hook · IP55 · Be Aware ambient mode · Dual Connect",
+    pros: [
+      "Ear-hooks that stay put for around the price of a takeaway",
+      "IP55, a higher water rating than either Beats pair",
+      "Be Aware mode lets the room in without taking them out",
+      "Charging case has a built-in USB-C cable, so there is nothing extra to lose",
+    ],
+    cons: [
+      "No active noise cancelling, so the seal alone has to deal with motor noise",
+      "Battery life is listed differently by different sellers, so we have not printed a figure",
+      "Sound and microphones are basic, as the price suggests",
+    ],
+    bottomLine: "The cheapest pair we would trust to stay in at running pace. Ideal as a first pair, a spare, or the pair that lives in the treadmill room.",
+    description: "JLab's GO Sport+ replaces the GO Air Sport, which JLab's own pages now say has been upgraded to this model. It is a plain, inexpensive ear-hook earbud, and for treadmill running that is most of what you need: the hook keeps the bud in place, and JLab and multiple retailers agree on an IP55 rating for sweat and splashes. JLab and retailers list a Be Aware mode that lets in ambient sound and Dual Connect, so either bud can be used alone, and JLab says the charging case has a USB-C cable built in. There is no active noise cancelling, so a good tip seal is your only defence against motor noise. JLab's own listing and most retailers give one battery figure and another retailer gives a lower one, so we have left battery life out. JLab's store listed it at $31.99 on 15 October 2026, and Amazon and Walmart listings have recently been lower, around $20 to $25.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Buying Guides", item: "https://www.treadmillreviewsusa.com/guides/" },
+        { "@type": "ListItem", position: 3, name: "Best Headphones for Treadmill Running", item: "https://www.treadmillreviewsusa.com/best-headphones-for-treadmill-running/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What are the best headphones for treadmill running?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "It depends on whether you need to hear the room. If you do, open-ear bone-conduction headphones such as the Shokz OpenRun Pro 2 leave your ears free. If you want to block the motor, sealed earbuds with an ear-hook and noise cancelling, such as the Beats Powerbeats Pro 2, suit most runners. On a budget, the JLab GO Sport+ stays in at a low price.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do noise cancelling earbuds block treadmill noise?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "They reduce it. Active noise cancelling works best on steady, continuous sound, which is what a motor and belt produce, so it takes the edge off the drone. It does less for the thud of your footfalls. A well-fitted ear tip does much of the work on its own, so try every tip size in the box before judging the noise cancelling.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Are bone conduction headphones good for the treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "They are good when you need to hear the household, because they leave your ears completely open and cannot fall out onto the belt. Their weakness indoors is that they do nothing to block motor noise, so on a loud treadmill you may need more volume than is comfortable. On a quiet machine or at walking pace they work well.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How do I stop earbuds falling out when running on a treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Choose a design with an ear-hook or wingtip, and try every ear tip size until one seals and grips firmly. Test them at your normal running pace for a few minutes before a long session. If a bud does fall out, stop the belt before picking it up; never reach down to a moving belt.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What IP rating do I need for workout earbuds?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "For treadmill running, IPX4, which covers splashing water from any direction, is a sensible minimum. IP55 and IP67 give more margin for heavy sweat. No rating makes earbuds suitable for swimming unless the maker says so, and makers note that water resistance can diminish over time, so wipe and dry them after every session.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I connect Bluetooth headphones to my treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Some treadmill consoles can pair with Bluetooth headphones to play their own audio, and many cannot; check the manual for your model. Most people pair the headphones to a phone or tablet in the console tray instead. Keeping the device in front of you, within a metre or so, avoids most dropouts.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", name: "Morgan Reyes" },
+      datePublished: "2026-10-15",
+      dateModified: "2026-10-15",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+    ...PRODUCTS.map((product) => ({
+      "@type": "Product",
+      name: product.name,
+      description: product.description,
+      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      offers: {
+        "@type": "AggregateOffer",
+        priceCurrency: "USD",
+        availability: "https://schema.org/InStock",
+      },
+    })),
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-10-15",
+    modifiedTime: "2026-10-15",
+    author: "Morgan Reyes",
+    section: "Fitness Equipment",
+    tags: [
+      "best headphones for treadmill",
+      "best earbuds for running on treadmill",
+      "best workout earbuds",
+      "bone conduction headphones treadmill",
+      "ear hook earbuds running",
+      "noise cancelling earbuds treadmill",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "See Our Top Picks", link: "#quick-picks" }}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-bestheadphonesfortreadmillrunning" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-bestheadphonesfortreadmillrunning)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Buying Guide
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated October 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          Best Headphones <span class="text-[#5AA9FF]">for Treadmill Running</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          On a treadmill the questions are different from the road: how loud the motor is, whether you need to hear the house, whether a cable can catch the safety key cord, and whether the buds stay put when you are sweating in still air. Here are six pairs that answer those questions in different ways, and how to choose between them.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#quick-picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            See the Picks
+          </a>
+          <a href="#noise-and-anc" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            Does ANC Help?
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
+          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">October 15, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="1.7k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">On the products below.</strong> We have not tested these
+          headphones. Model names, water-resistance ratings, battery figures and features were
+          checked on 15 October 2026 against each maker's own product page or store listing and
+          at least one independent review or major retailer listing. A figure appears on a card
+          only where those sources agree; where they disagreed — battery life on the JLab pair,
+          the water rating on the Soundcore pair, weight and standby time on the OpenRun Pro 2 — we
+          left it out and say so in the description. None of these figures are our own
+          measurements. Prices are the ranges we saw on maker stores and retailer listings on or
+          shortly before that date, and they change often, so confirm the price and the exact
+          variant before ordering. We earn a commission if you buy through the Amazon links on
+          this page; it does not change which products we list or what we say about them.
+          <strong class="text-gray-900">What this page is, and is not.</strong> This site reviews
+          equipment. It is not giving medical or audiology advice, and nothing here is a claim
+          that any headphone type is better or worse for your hearing. Keep the volume moderate,
+          and if you have a concern about your hearing or your ears, talk to a qualified
+          professional.
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
+          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 6 Best Headphones for Treadmill Running</a>
+          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Headphones</a>
+          <a href="#noise-and-anc" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Treadmill Noise and Whether Noise Cancelling Helps</a>
+          <a href="#open-ear" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Open-Ear Versus Sealed: Hearing the Household</a>
+          <a href="#fit-at-pace" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Staying In at Running Pace</a>
+          <a href="#sweat-and-ip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Sweat, IP Ratings and Looking After Them</a>
+          <a href="#cables-and-bluetooth" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Cables, the Safety Key and Bluetooth Range</a>
+          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Who Should Buy Something Else</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          Most running-headphone advice is written for the road, where the overriding concern is
+          hearing traffic. Indoors the concerns shift. A treadmill makes its own steady noise, so
+          you either drown it out, block it, or accept it. Nobody is overtaking you, but someone
+          may be calling you from the next room, and a cable can still find its way to the safety
+          key cord. Sweat is worse, because there is no breeze to dry it. The six pairs below are
+          chosen for those conditions, and the guide after them explains which trade-off suits
+          which runner.
+        </p>
+
+        <div id="quick-picks" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+<p>
+            Six pairs across the four designs that suit treadmill running: open-ear bone
+            conduction, in-ear buds with an ear-hook, in-ear buds with a wingtip, and two budget
+            ear-hooks. The short version: the Shokz OpenRun Pro 2 if you need to hear the house,
+            the Powerbeats Pro 2 if you want to shut the motor out, and the JLab GO Sport+ if you
+            want something cheap that stays in.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead><tr>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Pick</th>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Best for</th>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Why</th>
+            </tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Shokz OpenRun Pro 2</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best overall, open-ear</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Leaves your ears open to the house; IP55, up to 12 hours, two band sizes</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Shokz OpenRun</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Budget open-ear, heavy sweat</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The older Shokz design with the higher IP67 rating, for less</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Beats Powerbeats Pro 2</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Ear-hook with noise cancelling</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Hooks hold them in; ANC takes the edge off motor drone; built-in heart-rate sensor</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Beats Powerbeats Fit</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Wingtip in-ear, glasses wearers</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No hook behind the ear, ANC, IPX4 earbuds and case</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Soundcore Sport X20</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Budget noise cancelling</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Adjustable hooks and adaptive ANC for well under $100</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">JLab GO Sport+</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Cheapest pair that stays in</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Ear-hooks, IP55 and an ambient mode for around $20 to $32</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Headphones are one part of making treadmill time pass. If the real problem is that the
+            sessions drag, our guide to
+            <a href="/how-to-make-treadmill-running-less-boring/" class="text-[#0F62FE] font-medium">making treadmill running less boring</a>
+            covers the workouts, screens and routines that do more than any pair of earbuds.
+          </p>
+        </div>
+
+        <div id="picks" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 6 Best Headphones for Treadmill Running</h2>
+<p>
+            Each card gives the design, the water-resistance rating the maker publishes, the
+            features we could confirm and the price range we saw. Read the design line first. On a
+            treadmill, open-ear versus sealed matters more than any sound-quality difference
+            between these pairs, and it is the one choice you cannot change after buying.
+          </p>
+          <p>
+            The order runs from open-ear to sealed, then cheapest last. None of these pairs is a
+            bad buy; each is matched to a different answer to the question of what you want to
+            hear while you run.
+          </p>
+        </div>
+      </div>
+
+      <!-- Product cards -->
+      <div class="not-prose">
+        {
+          PRODUCTS.map((product, index) => (
+            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
+              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
+                  <div>
+                    <p class="text-white font-black text-xl leading-tight">
+                      {index + 1}. {product.name}
+                    </p>
+                    <p class="text-gray-400 text-xs">{product.category}</p>
+                  </div>
+                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                    {product.badge}
+                  </span>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center gap-2 mb-4 flex-wrap">
+                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
+                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
+                  </div>
+                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
+                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
+                      <p class="text-xs font-black uppercase tracking-widest text-green-700 mb-2">What Works</p>
+                      <ul class="space-y-2">
+                        {product.pros.map((pro) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+                      <p class="text-xs font-black uppercase tracking-widest text-red-700 mb-2">What Doesn't</p>
+                      <ul class="space-y-2">
+                        {product.cons.map((con) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="border-t border-gray-100 pt-4">
+                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
+                    <div class="flex flex-wrap items-center gap-3">
+                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+                        Check Price on Amazon &rarr;
+                      </a>
+                      {product.reviewUrl && (
+                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
+                          Read our full {product.name} review &rarr;
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="how-we-chose" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Headphones</h2>
+<p>
+            We have not tested these headphones. They were chosen from manufacturer
+            specifications, store listings, support documentation and independent reviews, and the
+            claims on this page are limited to what those sources support. Everything was checked
+            on 15 October 2026.
+          </p>
+          <p>
+            We started from the designs that suit treadmill running and looked for a current,
+            widely sold model in each: open-ear bone conduction, in-ear buds held by an ear-hook,
+            in-ear buds held by a wingtip, and budget versions of the ear-hook. For each candidate
+            we confirmed the exact current name on the maker's own site or store and on at least one
+            major retailer, then checked every figure we wanted to print — the IP rating above all,
+            plus battery life, Bluetooth version and fit details — against an independent review or
+            a second retailer.
+          </p>
+          <p>
+            Where sources disagreed we left the figure out. That removed more than you might
+            expect. JLab's own listing and some retailers give one battery figure for the GO
+            Sport+ and another retailer gives a lower one. Soundcore's UK page and its comparison
+            table give the Sport X20 an IP68 rating, but its US product page gives no IP figure and
+            one retailer lists a different rating. Listings disagree on the weight of the OpenRun
+            Pro 2, and on the Powerbeats Fit's battery life with noise cancelling on or off. In
+            each case the card says so rather than picking a number.
+          </p>
+          <p>
+            We excluded models that have been replaced or withdrawn. The Beats Fit Pro has been
+            succeeded by the Powerbeats Fit, and JLab's GO Air Sport pages now point to the GO
+            Sport+. Jabra, whose Elite Active earbuds were long-standing workout picks, announced in
+            2024 that it was winding down its consumer earbud lines, so we did not list them. We also
+            left out the Shokz OpenFit 2 open-ear buds because the signals on whether that exact
+            model is still current were mixed.
+          </p>
+          <p>
+            Finally, we searched the US Consumer Product Safety Commission's recall listings for
+            every brand here. We found no recall of any listed model. The only results were for
+            other products from two of the brands: a 2015 recall of a Beats portable speaker, and
+            2025 recalls of some Anker power banks and Soundcore Bluetooth speakers. None of those
+            are headphones, and none affect the earbuds on this page.
+          </p>
+        </div>
+
+        <div id="noise-and-anc" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Treadmill Noise and Whether Noise Cancelling Helps</h2>
+<p>
+            A running treadmill is a noisy room. There is the motor, which produces a steady hum or
+            whine that rises with speed; the belt and rollers, which add a constant rushing sound;
+            and your footfalls, which arrive as rhythmic thuds that also travel through the frame.
+            How loud that is depends heavily on the machine — our guide to
+            <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills</a>
+            covers why some are much louder than others — but on almost any treadmill it is louder
+            than a quiet road.
+          </p>
+          <p>
+            That matters because the natural response to background noise is to turn the volume
+            up. With open-ear headphones, which do nothing to block the room, you are competing
+            with the motor directly, and on a loud machine you may find yourself pushing the volume
+            further than you would outdoors. That is the main argument for a sealed in-ear design
+            on a treadmill.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What active noise cancelling does and does not do</h3>
+          <p>
+            Active noise cancelling, or ANC, works best on steady, continuous sound — exactly the
+            kind a motor and belt produce. As a general rule it is less effective on sudden,
+            irregular sounds, so expect it to take the edge off the drone and do less about the
+            thump of your own feet. Reviewers of the Soundcore Sport X20 describe this pattern
+            directly: strong on steady gym and ventilation hum, weaker on sudden clanks.
+          </p>
+          <p>
+            Much of the benefit of a sealed earbud comes before the ANC switches on. A properly
+            sized ear tip blocks a good share of the room on its own, which is why the fit section
+            below matters as much as the ANC feature list. A sealed pair that fits badly will
+            leak noise in and leak bass out, and you will end up turning it up anyway.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The trade-off</h3>
+          <p>
+            ANC and a tight seal also block the things you might want to hear, which is the subject
+            of the next section. Every sealed pair on this page has a mode that lets outside sound
+            in — Transparency on the Beats pairs, an ambient mode on the Soundcore, Be Aware mode on
+            the JLab — so you can switch between shutting the room out and letting it in. On a
+            treadmill in a shared home, that switch is worth more than the strength of the
+            cancelling.
+          </p>
+          <p>
+            Whichever design you choose, keep the volume moderate. A quieter room helps you do
+            that more than any headphone feature: a mat will not touch motor noise, but placing the
+            treadmill away from hard, echoing walls and maintaining the belt so it runs quietly
+            both reduce what you are trying to drown out.
+          </p>
+        </div>
+
+        <div id="open-ear" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Open-Ear Versus Sealed: Hearing the Household</h2>
+<p>
+            Outdoors, the case for open-ear headphones is traffic. Indoors it is people. If you run
+            on a treadmill while children are awake, while you are waiting for a delivery, or while
+            someone in the house might need you, open-ear headphones let you hear a call from
+            another room without stopping the music.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">How the open-ear picks work</h3>
+          <p>
+            Both Shokz picks are bone-conduction headsets: a band wraps around the back of the head,
+            and the transducers rest on your cheekbones in front of the ears, leaving the ear canal
+            completely open. You hear the room exactly as you would with nothing on. The
+            OpenRun Pro 2 adds a separate air-conduction element for bass, which Shokz calls
+            DualPitch. Reviewers generally describe the sound of bone conduction as good for the
+            type but not a match for sealed earbuds, particularly in bass, and both Shokz pairs
+            leak some sound at higher volumes.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The weakness on a treadmill</h3>
+          <p>
+            Open ears also hear the motor. On a quiet machine at walking pace, that is not a
+            problem. On a loud machine at running speed, the motor and belt compete with the music,
+            and reviewers note that the OpenRun Pro 2 can be hard to hear in loud places. If your
+            treadmill is loud and you find yourself turning open-ear headphones up to compensate,
+            a sealed pair with an ambient mode is the better tool.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">A simple way to decide</h3>
+          <ul>
+            <li><strong>You need to hear the house at all times</strong> — open-ear. Choose the
+            OpenRun Pro 2 for better sound or the OpenRun for a lower price and a higher water
+            rating.</li>
+            <li><strong>You run alone, or the treadmill is loud</strong> — sealed with ANC. The
+            Powerbeats Pro 2, the Powerbeats Fit or, on a budget, the Soundcore Sport X20.</li>
+            <li><strong>Both, at different times</strong> — a sealed pair with a transparency or
+            ambient mode, used with the mode switched on when someone might need you.</li>
+          </ul>
+          <p>
+            Open-ear headphones also suit people who find in-ear tips uncomfortable over a long
+            session, and they leave nothing in the ear to trap sweat. That last point matters more
+            indoors, as the next sections explain.
+          </p>
+        </div>
+
+        <div id="fit-at-pace" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Staying In at Running Pace</h2>
+<p>
+            Earbuds that are perfectly secure at walking pace can work loose at running pace. The
+            repeated impact of each footfall jolts the bud, and sweat makes the skin and the ear
+            tip slippery. On a treadmill there is an extra cost to a bud falling out: it lands on a
+            moving belt, gets carried to the back of the deck and can be thrown off or crushed,
+            and reaching for it mid-stride is a good way to stumble.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The three ways these pairs stay put</h3>
+          <p>
+            <strong>A band.</strong> The Shokz headsets do not sit in the ear at all, so they cannot
+            fall out of it. The band holds them against the head. The OpenRun and OpenRun Pro 2 are
+            both sold in a standard and a Mini size, and choosing the right one matters: a band that
+            is too long sits loose and can bounce or drift down the neck.
+          </p>
+          <p>
+            <strong>An ear-hook.</strong> A flexible hook over the top of the ear holds the bud in
+            place even if the seal loosens. The Powerbeats Pro 2, the Soundcore Sport X20 and the
+            JLab GO Sport+ all use one, and the Soundcore's hooks rotate up to 30 degrees and extend
+            by 4 mm to fit different ears. Ear-hooks are the most secure in-ear design for running,
+            but some people find them uncomfortable over long sessions, especially with glasses,
+            and reviewers of the Sport X20 report that the hooks can cause pressure for some
+            wearers.
+          </p>
+          <p>
+            <strong>A wingtip.</strong> A soft fin on the bud tucks into the ridge of the outer ear
+            and braces it. The Powerbeats Fit uses this design; Beats made its wingtip more
+            flexible than the Beats Fit Pro's and describes the hold as comparable to an ear-hook.
+            Reviewers who ran in them report that they stayed secure. Wingtips leave nothing behind
+            the ear, which suits glasses wearers, but their hold depends more on the shape of your
+            outer ear than a hook does.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Get the tip size right</h3>
+          <p>
+            For any in-ear design, the ear tip does two jobs: it seals out noise and it grips the
+            ear canal. Try every size in the box, and do not assume the medium tips fitted at the
+            factory are yours. Apple notes for the Powerbeats Pro 2 that the tip size that seals
+            best for sound may differ from the one that gives the best heart-rate reading. A
+            sensible test is a few minutes at your normal running pace before you rely on them for
+            a long session.
+          </p>
+        </div>
+
+        <div id="sweat-and-ip" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Sweat, IP Ratings and Looking After Them</h2>
+<p>
+            Indoor running usually feels sweatier than outdoor running at the same effort,
+            because there is no moving air to carry sweat away. Headphones sit right where it runs, so water
+            resistance is not a nice extra. Our guide to
+            <a href="/how-to-stay-cool-on-a-treadmill/" class="text-[#0F62FE] font-medium">staying cool on a treadmill</a>
+            covers the fan and room changes that reduce the problem at source.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Reading the IP code</h3>
+          <p>
+            An IP rating has two digits. The first is protection against dust and solids, the
+            second against water; an X means that part was not rated. On this page:
+          </p>
+          <ul>
+            <li><strong>IPX4</strong> (both Beats pairs) means protection against splashing water
+            from any direction. Apple describes these as sweat and water resistant for non-water
+            sports.</li>
+            <li><strong>IP55</strong> (OpenRun Pro 2, JLab GO Sport+) adds dust protection and
+            protection against low-pressure jets of water.</li>
+            <li><strong>IP67</strong> (OpenRun) means dust-tight and able to survive temporary
+            immersion, which reviewers describe as up to a metre for 30 minutes. It is not a
+            swimming rating.</li>
+          </ul>
+          <p>
+            For a treadmill, IPX4 is the practical minimum and anything higher is extra margin.
+            Two details are easy to miss. Apple says the Powerbeats Pro 2 charging case is not
+            water resistant, while the Powerbeats Fit case is rated IPX4; and both Apple and Shokz
+            warn that water resistance is not permanent and can diminish with wear.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">After every session</h3>
+          <ul>
+            <li>Wipe the earbuds or band with a dry, soft cloth before they go back in the case.</li>
+            <li>Let them dry fully before charging, especially pairs with charging contacts.</li>
+            <li>Rinse or replace silicone ear tips periodically; sweat and skin oil build up on
+            them.</li>
+            <li>Do not leave them in a closed gym bag overnight with damp clothes.</li>
+          </ul>
+          <p>
+            The same discipline protects the treadmill. Sweat dripping onto the console and the
+            motor hood is a common cause of corrosion, and a towel over the rail does more for the
+            machine than it looks.
+          </p>
+        </div>
+
+        <div id="cables-and-bluetooth" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Cables, the Safety Key and Bluetooth Range</h2>
+<p>
+            Every pick on this page is wireless, and on a treadmill that is more than convenience.
+            A wired headphone cable running from your ears to a phone in the console tray is a loop
+            waiting to catch something — the handrail, your swinging arm, or the safety key cord
+            clipped to your clothing.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Why the safety key matters here</h3>
+          <p>
+            The safety key cord is meant to pull free and stop the belt if you drift back or fall.
+            Anything that tangles with it can either pull the key out when you did not mean to stop,
+            or, worse, stop it pulling freely when you do need it. Clip the cord to your waistband,
+            not to a pocket where a cable or a phone sits, and keep everything else clear of it. Our
+            <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety tips</a>
+            cover how to wear the key properly, and why it should always be attached.
+          </p>
+          <p>
+            Even a wireless neckband or the cord on some sport buds can swing, so tuck anything
+            loose under your shirt. And if a bud falls out, let it go: stop the belt, then pick it
+            up. Do not reach down while the belt is moving.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Bluetooth range and where to put the phone</h3>
+          <p>
+            Most sports headphones are specified for a range of roughly 10 metres, or about 33
+            feet, in open air. Shokz quotes that for the OpenRun Pro 2, and JLab quotes 30 feet or
+            more for the GO Sport+. In practice range is shorter through bodies and walls, and
+            signal drops are more likely when the phone is behind you or in a pocket on the
+            opposite side from the earbud that handles the connection.
+          </p>
+          <p>
+            The simple fix on a treadmill is to put the phone in the console tray or on a holder in
+            front of you, where it is within a metre and in line of sight. Some treadmill consoles
+            can also pair with Bluetooth headphones directly to play their own audio; check your
+            manual, because console Bluetooth audio varies a lot between machines. If you also
+            watch video on a tablet, multipoint pairing — supported on the OpenRun Pro 2 — lets
+            the headphones stay connected to two devices at once.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Heart rate from the earbuds</h3>
+          <p>
+            The Powerbeats Pro 2 has a built-in optical heart-rate sensor. Apple says it can share
+            readings with Apple Fitness, the Health app, compatible third-party apps and some
+            compatible gym equipment; RTINGS describes it as handy but not a replacement for a
+            dedicated monitor. If you train to heart-rate zones, our guide to
+            <a href="/best-heart-rate-monitors-for-treadmill/" class="text-[#0F62FE] font-medium">heart rate monitors for the treadmill</a>
+            explains why a chest strap is still the more dependable choice.
+          </p>
+        </div>
+
+        <div id="who-should-skip" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Who Should Buy Something Else</h2>
+<p>
+            <strong>If you only walk.</strong> At walking pace on a walking pad, almost any
+            comfortable wireless earbuds stay in. You do not need ear-hooks or a sport design; the
+            buds you already own are probably fine, and the money is better spent elsewhere.
+          </p>
+          <p>
+            <strong>If you watch screens while you run.</strong> If the treadmill runs a streaming
+            or class app, check whether the console supports Bluetooth audio and how it handles
+            lip-sync before buying headphones for it. Our guide to
+            <a href="/best-treadmill-workout-apps/" class="text-[#0F62FE] font-medium">treadmill workout apps</a>
+            covers the apps themselves.
+          </p>
+          <p>
+            <strong>If you swim as well.</strong> None of these pairs is sold for swimming. The IP67
+            OpenRun survives immersion but is not designed for laps; a dedicated swimming headset
+            is the right purchase for that.
+          </p>
+          <p>
+            <strong>If your treadmill is very loud.</strong> Before spending more on noise
+            cancelling, check whether the machine needs attention. A belt that needs lubricating or
+            adjusting, a worn roller or a loose part can make a treadmill much noisier than it
+            should be, and fixing that helps everyone in the house, not just you.
+          </p>
+          <p>
+            <strong>If you are kitting out a new treadmill.</strong> Headphones are a personal
+            choice; a mat, the right lubricant and a fan are not. Our
+            <a href="/best-treadmill-accessories/" class="text-[#0F62FE] font-medium">treadmill accessories guide</a>
+            covers the items that protect the machine and make sessions bearable, and our guide to
+            <a href="/best-treadmill-fans/" class="text-[#0F62FE] font-medium">treadmill fans</a>
+            covers the one that does most for the sweat problem.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What are the best headphones for treadmill running?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                It depends on whether you need to hear the room. If you do, open-ear bone-conduction headphones such as the Shokz OpenRun Pro 2 leave your ears free. If you want to block the motor, sealed earbuds with an ear-hook and noise cancelling, such as the Beats Powerbeats Pro 2, suit most runners. On a budget, the JLab GO Sport+ stays in at a low price.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Do noise cancelling earbuds block treadmill noise?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                They reduce it. Active noise cancelling works best on steady, continuous sound, which is what a motor and belt produce, so it takes the edge off the drone. It does less for the thud of your footfalls. A well-fitted ear tip does much of the work on its own, so try every tip size in the box before judging the noise cancelling.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Are bone conduction headphones good for the treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                They are good when you need to hear the household, because they leave your ears completely open and cannot fall out onto the belt. Their weakness indoors is that they do nothing to block motor noise, so on a loud treadmill you may need more volume than is comfortable. On a quiet machine or at walking pace they work well.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How do I stop earbuds falling out when running on a treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Choose a design with an ear-hook or wingtip, and try every ear tip size until one seals and grips firmly. Test them at your normal running pace for a few minutes before a long session. If a bud does fall out, stop the belt before picking it up; never reach down to a moving belt.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What IP rating do I need for workout earbuds?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                For treadmill running, IPX4, which covers splashing water from any direction, is a sensible minimum. IP55 and IP67 give more margin for heavy sweat. No rating makes earbuds suitable for swimming unless the maker says so, and makers note that water resistance can diminish over time, so wipe and dry them after every session.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Can I connect Bluetooth headphones to my treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Some treadmill consoles can pair with Bluetooth headphones to play their own audio, and many cannot; check the manual for your model. Most people pair the headphones to a phone or tablet in the console tray instead. Keeping the device in front of you, within a metre or so, avoids most dropouts.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Choosing Headphones for the Treadmill</h2>
+          <p class="text-gray-700 leading-relaxed">Each of these turns a sensible purchase into one that is uncomfortable, unsafe or simply too quiet to enjoy.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Running with a wired headset</h3>
+              <p class="text-gray-700 text-sm m-0">A cable looped from your ears to a phone in the console tray can catch the handrail, your arm or the safety key cord. That can pull the key when you did not mean to stop, or stop it pulling freely when you need it. Use wireless headphones, tuck anything loose under your shirt, and clip the key cord to your waistband.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying open-ear for a loud machine</h3>
+              <p class="text-gray-700 text-sm m-0">Open-ear headphones are excellent when you need to hear the house, but they do nothing to block a loud motor. If you find yourself turning them up to hear over the belt, they are the wrong tool for that treadmill. A sealed pair with an ambient or Transparency mode lets you choose when to hear the room.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Sticking with the factory ear tips</h3>
+              <p class="text-gray-700 text-sm m-0">The tips fitted in the box are just a starting point. A tip that is too small leaks noise and bass, so you turn the volume up, and works loose with sweat; a tip that is too big gets pushed out. Try every size, test at running pace, and replace tips that have gone slick or lost their shape.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Charging them straight after a sweaty run</h3>
+              <p class="text-gray-700 text-sm m-0">Sweat left on charging contacts and in the case is an avoidable way to shorten the life of workout earbuds, and makers note that water resistance diminishes with wear. Wipe the buds or band dry after every session, let them air before they go into the case or onto the charger, and do not leave them in a damp gym bag.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Buying Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/best-treadmill-accessories/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Accessories</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill Accessories</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The mat, lubricant, fan and sensors worth buying with a new treadmill.</p>
+            </a>
+            <a href="/quiet-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Noise</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Quiet Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Why some machines are much louder than others, and what to look for.</p>
+            </a>
+            <a href="/how-to-make-treadmill-running-less-boring/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Motivation</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Making Treadmill Running Less Boring</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Workouts, screens and routines that make the time pass faster.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            If you need to hear the household, buy the
+            <strong class="text-white">Shokz OpenRun Pro 2</strong>, or the OpenRun to save money
+            and gain a higher water rating. If you want to shut out a loud motor and know the buds
+            will not move, buy the <strong class="text-white">Beats Powerbeats Pro 2</strong>, or
+            the Soundcore Sport X20 for a fraction of the price. For a cheap pair that stays in,
+            the JLab GO Sport+ is enough.
+          </p>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            Whichever you choose, go wireless, keep the safety key cord clear, wipe them dry after
+            every session and keep the volume moderate. If the treadmill itself is the noise
+            problem, start with our guide to
+            <a href="/quiet-treadmills/" class="text-[#5AA9FF] font-bold no-underline">quiet treadmills</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+</Layout>

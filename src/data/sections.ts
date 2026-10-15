@@ -93,6 +93,20 @@ export const SECTIONS: Section[] = [
             badge: 'Router',
             url: '/home-treadmills/',
           },
+          {
+            title: 'Best Non-Folding Treadmills',
+            description:
+              'Fixed-deck machines for buyers who want stability over storage, and who should fold after all.',
+            badge: 'Non-folding',
+            url: '/best-non-folding-treadmills/',
+          },
+          {
+            title: 'Best Treadmills for a Garage',
+            description:
+              'Machines and set-ups that cope with cold, damp and dust, and the warranty small print to check.',
+            badge: 'Garage',
+            url: '/best-treadmills-for-garage/',
+          },
         ],
       },
       {
@@ -111,6 +125,27 @@ export const SECTIONS: Section[] = [
               'Usable deck length measured rather than quoted, plus the ceiling height nobody checks before buying.',
             badge: 'Over 6 ft',
             url: '/best-treadmills-for-tall-runners/',
+          },
+          {
+            title: 'Best Treadmills for HIIT',
+            description:
+              'Fast speed and incline changes, motors for hard efforts, and the curved-treadmill option.',
+            badge: 'HIIT',
+            url: '/best-treadmills-for-hiit/',
+          },
+          {
+            title: 'Best Treadmills for Marathon Training',
+            description:
+              'Long decks, motors and cooling for two- and three-hour runs, plus decline for hilly courses.',
+            badge: 'Marathon',
+            url: '/best-treadmills-for-marathon-training/',
+          },
+          {
+            title: 'Best Wide Treadmills',
+            description:
+              'Treadmills with a verified 22-inch running surface, and listed width versus usable width.',
+            badge: 'Wide deck',
+            url: '/best-wide-treadmills/',
           },
         ],
       },
@@ -246,6 +281,13 @@ export const SECTIONS: Section[] = [
             badge: 'Tall users',
             url: '/best-walking-pads-for-tall-people/',
           },
+          {
+            title: 'Best Quiet Walking Pads',
+            description:
+              'Walking pads for apartments and shared offices, and why the dB claim is not the noise that matters.',
+            badge: 'Quiet',
+            url: '/best-quiet-walking-pads/',
+          },
         ],
       },
       {
@@ -378,6 +420,13 @@ export const SECTIONS: Section[] = [
             badge: 'Hydrotherapy',
             url: '/underwater-treadmill-for-dogs/',
           },
+          {
+            title: 'Best Treadmills for Apple Watch',
+            description:
+              'GymKit and tap-to-connect machines, and what works fine without pairing at all.',
+            badge: 'Apple Watch',
+            url: '/best-treadmills-for-apple-watch/',
+          },
         ],
       },
     ],
@@ -436,6 +485,13 @@ export const SECTIONS: Section[] = [
               'What around $300 really buys — mostly walking pads and compact folders — and the picks worth having.',
             badge: 'Under $300',
             url: '/best-treadmills-under-300/',
+          },
+          {
+            title: 'Best Budget Treadmills',
+            description:
+              'The best cheap treadmill at each realistic budget, what each band gives up, and where cheap gets expensive.',
+            badge: 'Budget',
+            url: '/best-budget-treadmills/',
           },
         ],
       },
@@ -1797,6 +1853,62 @@ export const SECTIONS: Section[] = [
             badge: "Women's shoes",
             url: '/best-womens-running-shoes-for-treadmill/',
           },
+          {
+            title: 'Best Foot Pods for Treadmill',
+            description:
+              'Foot pods for accurate treadmill pace and Zwift, with the watches and apps each one pairs with.',
+            badge: 'Foot pod',
+            url: '/best-foot-pods-for-treadmill/',
+          },
+          {
+            title: 'Best Headphones for Treadmill Running',
+            description:
+              'Open-ear, ear-hook and in-ear options that stay put at pace, and the safety-key cord problem.',
+            badge: 'Audio',
+            url: '/best-headphones-for-treadmill-running/',
+          },
+          {
+            title: 'Best Treadmill Fans',
+            description:
+              'Floor, pedestal and purpose-built training fans, where to put one, and sharing the circuit.',
+            badge: 'Cooling',
+            url: '/best-treadmill-fans/',
+          },
+          {
+            title: 'Best Surge Protectors for Treadmills',
+            description:
+              'Single-outlet protectors rated for the load, why a power strip is the wrong tool, and what the manual says.',
+            badge: 'Electrical',
+            url: '/best-surge-protectors-for-treadmills/',
+          },
+          {
+            title: 'Best Treadmill Tablet Holders',
+            description:
+              'Mounts that stay steady at running pace without blocking the stop button or safety key.',
+            badge: 'Mounts',
+            url: '/best-treadmill-tablet-holders/',
+          },
+          {
+            title: 'Best Treadmill Covers',
+            description:
+              'Dust and garage covers, measuring folded versus unfolded, and why breathable matters.',
+            badge: 'Covers',
+            url: '/best-treadmill-covers/',
+          },
+          {
+            title: 'Best Treadmill Cleaning Products',
+            description:
+              'Console-safe cleaners, cloths and tools for under the belt, and the products to keep away from a deck.',
+            badge: 'Cleaning',
+            url: '/best-treadmill-cleaning-products/',
+          },
+          {
+            title: 'Best Treadmill Anti-Vibration Pads',
+            description:
+              'Isolation pads and feet for upstairs rooms, what they can fix, and what only a mat or a move will.',
+            badge: 'Vibration',
+            url: '/best-treadmill-anti-vibration-pads/',
+          },
         ],
       },
     ],
@@ -2508,6 +2620,13 @@ export const SECTIONS: Section[] = [
             badge: 'Settings',
             url: '/best-treadmill-settings-for-fat-loss/',
           },
+          {
+            title: 'Best Weighted Vests for Walking',
+            description:
+              'Vests for incline walking and rucking on a treadmill, with the capacity and posture rules first.',
+            badge: 'Weighted vest',
+            url: '/best-weighted-vests-for-walking/',
+          },
         ],
       },
       {
@@ -2624,6 +2743,27 @@ export const SECTIONS: Section[] = [
               'The mileage convention, why treadmill wear differs, and the signs a pair is finished.',
             badge: 'Shoes',
             url: '/how-often-to-replace-running-shoes/',
+          },
+          {
+            title: 'Best Running Watches for Treadmill',
+            description:
+              'Watches with treadmill modes, post-run calibration and foot-pod support, checked model by model.',
+            badge: 'Watches',
+            url: '/best-running-watches-for-treadmill/',
+          },
+          {
+            title: 'Best Treadmill Workout Apps',
+            description:
+              'iFIT, Peloton, Zwift, Kinomap and the free options: what each does on a treadmill and what it controls.',
+            badge: 'Apps',
+            url: '/best-treadmill-workout-apps/',
+          },
+          {
+            title: 'Best Fitness Trackers for a Walking Pad',
+            description:
+              'Why wrist trackers under-count at a desk, and the trackers and placements that count properly.',
+            badge: 'Steps',
+            url: '/best-fitness-trackers-for-walking-pad/',
           },
         ],
       },
