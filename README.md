@@ -507,6 +507,33 @@ unavailable in the US, and its GoPet PR720F and Dog Trotter details are out of d
 1750's motor, deck and capacity as unconfirmed; `/matrix-fitness/` still describes the T7xe as the
 only home model; `/life-fitness/` omits the Run CX and Integrity.
 
+### Affiliate roundups, third batch: twenty "best" pages (2026-10-15)
+
+Same rules as the first two batches: products confirmed as currently sold, every printed figure
+cross-checked between the maker (or the Amazon listing) and an independent source, conflicting
+figures left off the cards, a CPSC recall check per brand (via the saferproducts.gov recall API),
+no testing claims, no ratings, tagged Amazon search links, and the affiliate disclosure in each note.
+Semrush had no API units left, so topics were chosen on coverage gaps rather than fresh volumes.
+
+- `/best/`: non-folding, garage, HIIT, marathon training, wide (22 in.) decks, Apple Watch / GymKit,
+  quiet walking pads
+- `/price/`: budget treadmills, one pick per realistic budget band, linking every tier page
+- `/guides/` Accessories: foot pods, headphones, fans, surge protectors, tablet holders, covers,
+  cleaning products, anti-vibration pads
+- `/training/`: running watches, workout apps (no product cards — apps are not Amazon products),
+  fitness trackers for a walking pad, weighted vests
+
+The shared web-search allowance ran out partway through, so several writers finished by fetching
+maker pages, manuals and spec sheets directly. Some pages list fewer than five products as a result
+(surge protectors, covers, fans) and say why. Findings worth knowing:
+
+- The 2026 Sole F80 manual and the Bowflex T6/T9 manuals void the warranty for garage use; the garage
+  page quotes them and excludes those machines.
+- `/best-treadmills-under-800/` listed the Sole F63 with a 55 in. deck; corrected to 20 x 60 in.
+  That page still carries older "we tested" wording.
+- `/nordictrack-commercial-2450-treadmill/` still describes the 12 mph version; NordicTrack now lists
+  14 mph. Eight roundups link to it. It needs a rewrite.
+
 ### Sole F80 and F85
 
 Both were shipped first as `dataPending` editorial drafts because their published figures conflict

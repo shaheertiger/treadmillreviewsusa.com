@@ -1,0 +1,501 @@
+export default {
+  slug: 'best-treadmill-workout-apps',
+  title: 'Best Treadmill Workout Apps (2026): Eight Apps, What Each Controls',
+  description:
+    'Eight treadmill apps checked against their makers and a second source: which can change your speed or incline, what devices they need, which have a free tier.',
+  crumbLabel: 'Best Treadmill Workout Apps',
+  breadcrumb: { name: 'Workouts & Training', url: '/training/' },
+  kicker: 'Buying Guide',
+  updated: 'October 2026',
+  updatedLong: 'October 15, 2026',
+  published: '2026-10-15',
+  socialProof: '2.2k',
+  h1: ['Best Treadmill Workout Apps', 'and What Each One Controls'],
+  standfirst:
+    'Some treadmill apps drive the machine for you; most give you a coach, a route or a plan and leave the buttons to you. Here are eight worth knowing, what each does on a treadmill, what it needs to work, and which ones cost nothing to use.',
+  ctas: [
+    { label: 'See the Apps', href: '#quick-picks' },
+    { label: 'Which Apps Control a Treadmill', href: '#control-explained' },
+  ],
+  tags: ['best treadmill app', 'best treadmill workout app', 'treadmill apps for running', 'treadmill running app', 'apps that control treadmill incline'],
+  stickyCta: { text: 'See the Apps', link: '#quick-picks' },
+  lead: `The phrase "treadmill app" covers very different things. A few apps can take over a
+          compatible treadmill, raising the incline as a filmed road climbs or matching a trainer's
+          speed changes. Others are virtual worlds that need only your speed. Many more are coaching
+          apps that tell you what to do and trust you to press the buttons, and one of the best known
+          is really a training log. Which one is right depends far less on the app than on the
+          treadmill you own and what you want from a session. This page sorts them by that.`,
+  note: `<strong class="text-gray-900">On the products below.</strong> These are apps, not
+          products we sell or link to, and we have not tested them. What each app does, which
+          treadmills it can control, which devices it runs on and whether it has a free tier were
+          checked on 15 October 2026 against the app maker's own website and at least one other
+          source — the app's App Store listing, an independent reference, or treadmill makers' own
+          compatibility statements. Where a claim appeared in only one place or the sources
+          disagreed, we left it out or say so. We do not quote subscription prices, which change
+          often; check the current price with each app before you sign up. <strong class="text-gray-900">What
+          this page is, and is not.</strong> We review equipment and software; we are not giving
+          medical, coaching or nutrition advice. If you have a medical condition, an injury or a
+          concern about starting a training plan, talk to a qualified professional first.`,
+  sections: [
+    {
+      id: 'quick-picks',
+      heading: 'Our Picks at a Glance',
+      html: `          <p>
+            The quick version: iFIT if you own or are buying a NordicTrack or ProForm treadmill and
+            want the machine to follow the workout; Zwift or Kinomap if you want a virtual route on a
+            machine you already own; Nike Run Club if you want a free coach in your ear; Runna if you
+            are training for a race; and Strava to keep the record whatever else you use.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead><tr>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">App</th>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Best for</th>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Why</th>
+            </tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">iFIT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack and ProForm owners</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Changes speed and incline automatically on iFIT-enabled machines</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Peloton App</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Instructor-led classes on any treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Studio-style running classes on phone, tablet or TV</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Zwift</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Virtual worlds and group runs</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Works with nearly any treadmill through a foot pod</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Kinomap</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Real-world video routes</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Free version, and says it can set the incline on compatible machines</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Nike Run Club</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Free guided runs</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Audio-guided treadmill runs and plans at no cost</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Apple Fitness+</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">iPhone and Apple TV households</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Video treadmill workouts; an Apple Watch is optional</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Runna</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Race training plans</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Personalised plans that sync to Garmin and Apple Watch</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Strava</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Logging every run</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Free version; collects runs from most of the apps above</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            If you are choosing a treadmill and an app together, read our guide to
+            <a href="/smart-treadmill-vs-regular/" class="text-[#0F62FE] font-medium">smart versus regular treadmills</a>
+            first: whether an app can control the machine is decided by the treadmill, not the app
+            store.
+          </p>`,
+    },
+    {
+      id: 'how-we-chose',
+      heading: 'How We Chose These Apps',
+      html: `          <p>
+            We have not tested these apps. They were chosen because they are the apps treadmill
+            owners most often weigh up, and because together they cover the four things a treadmill
+            app can be: a system that controls the machine, a virtual world, a coach and a log.
+          </p>
+          <p>
+            For each app we checked four things on 15 October 2026: what it does on a treadmill;
+            whether it can change the treadmill's speed or incline, and on which equipment; which
+            devices it runs on; and whether there is a free tier. Each claim was checked on the app
+            maker's own website and against at least one other source. For most apps the second
+            source was the app's current App Store listing; for Apple Fitness+ and Zwift we also
+            used an independent reference; for Kinomap, whose website did not load in a readable
+            form, we used its App Store listing alongside treadmill makers' own statements of
+            Kinomap compatibility. Zwift's incline-control details come from Zwift's support
+            documentation, which we checked for our Zwift treadmill guides earlier this week.
+          </p>
+          <p>
+            <strong>What we left out.</strong> Subscription prices, which change often. Free-trial
+            lengths, where we could confirm only that a trial exists. The exact number of treadmill
+            classes Peloton's cheaper app tier allows each month, which appeared only on Peloton's
+            own comparison page. The number of workout types in Apple Fitness+, which Apple and an
+            independent reference count differently. Library sizes and compatible-model counts,
+            which are marketing figures we could not check. And Android availability for apps where
+            only one source confirmed it.
+          </p>
+          <p>
+            We did not include treadmill makers' own free companion apps, which vary by brand and
+            model, or general fitness apps that do not offer treadmill sessions.
+          </p>`,
+    },
+    {
+      id: 'ifit',
+      heading: 'iFIT',
+      html: `          <p>
+            iFIT is the platform behind NordicTrack and ProForm treadmills, and it is the clearest
+            example of an app that drives the machine. On a compatible treadmill, a trainer-led
+            workout or a filmed outdoor route changes the speed and incline for you; you run, and
+            the deck rises when the trainer climbs.
+          </p>
+          <ul>
+            <li><strong>On a treadmill:</strong> trainer-led workouts, filmed routes and programmes, with the machine following along on iFIT-enabled equipment. On other treadmills you can follow the workouts and adjust the console yourself.</li>
+            <li><strong>Controls speed or incline:</strong> yes, on iFIT-enabled equipment from NordicTrack, ProForm and Freemotion. iFIT's own pages describe the machine automatically following the trainer's incline and speed, and the App Store listing says the same.</li>
+            <li><strong>Runs on:</strong> phones and tablets, and the built-in touchscreens on iFIT treadmills. iFIT sells one membership for phone or tablet use with Bluetooth iFIT-ready machines that have no screen, and another for machines with built-in touchscreens that covers more users.</li>
+            <li><strong>Free tier:</strong> no. iFIT says a paid membership is required to access its content and features; a free iFIT account is needed just to operate the equipment.</li>
+            <li><strong>Price:</strong> check the current price on iFIT's site.</li>
+          </ul>
+          <p>
+            iFIT is the right answer if you want the treadmill to do the work of following a
+            session, and wrong if you do not own, or want, an iFIT machine. Our guides to
+            <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">whether iFIT is worth it</a>
+            and to
+            <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">using a NordicTrack without iFIT</a>
+            cover what the membership adds and what the machine does without it.
+          </p>`,
+    },
+    {
+      id: 'peloton-app',
+      heading: 'Peloton App',
+      html: `          <p>
+            The Peloton App brings Peloton's instructor-led classes to equipment that is not made
+            by Peloton, or to no equipment at all. For treadmill users, that means instructor-led
+            running classes in which you follow the instructor's cues.
+          </p>
+          <ul>
+            <li><strong>On a treadmill:</strong> instructor-led running and treadmill classes, plus strength, yoga and other classes off the treadmill.</li>
+            <li><strong>Controls speed or incline:</strong> not on other makers' treadmills. You hear the instructor's cue and set your own console.</li>
+            <li><strong>Runs on:</strong> phones, tablets and TVs, including an Apple TV app, according to both Peloton and its App Store listing.</li>
+            <li><strong>Free tier:</strong> none listed. Peloton offers a free trial for new members. Its comparison page shows two app tiers, App One and App+, and says the cheaper one limits how many treadmill and other equipment classes you can take each month while App+ is unlimited. Owners of Peloton's own treadmills need its All-Access membership instead.</li>
+            <li><strong>Price:</strong> check the current price on Peloton's site.</li>
+          </ul>
+          <p>
+            Choose it if the energy of a studio class is what keeps you running, and you are happy
+            to press the buttons yourself. If you are deciding between Peloton and iFIT more
+            broadly, our
+            <a href="/ifit-vs-peloton/" class="text-[#0F62FE] font-medium">iFIT vs Peloton</a>
+            comparison sets the two side by side.
+          </p>`,
+    },
+    {
+      id: 'zwift',
+      heading: 'Zwift',
+      html: `          <p>
+            Zwift is a virtual world you run through as an avatar, alongside other Zwift users
+            around the world. What it needs from your treadmill is your speed, and that is what
+            makes it so widely usable.
+          </p>
+          <ul>
+            <li><strong>On a treadmill:</strong> running or walking through Zwift's virtual worlds, with your avatar moving at the speed your treadmill or sensor reports.</li>
+            <li><strong>Controls speed or incline:</strong> almost never. Zwift's own support documentation names one treadmill whose incline it can control, the Wahoo KICKR RUN. On every other compatible treadmill, the hills in the virtual world are yours to match by hand.</li>
+            <li><strong>Runs on:</strong> Zwift says most newer PCs, Apple devices and Android; its App Store listing names smartphones, tablets and Apple TV. To run, it needs a speed signal from a treadmill that connects directly or from a foot pod, smart shoe or supported smartwatch.</li>
+            <li><strong>Free tier:</strong> we could not confirm one. Zwift and its App Store listing both offer a free trial for first-time users.</li>
+            <li><strong>Price:</strong> check the current price on Zwift's site.</li>
+          </ul>
+          <p>
+            The foot-pod route is the important one for most readers: with a pod on your shoe,
+            Zwift works on nearly any treadmill, including a basic machine with no Bluetooth. Our
+            <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium">Zwift treadmill guide</a>
+            covers set-up and calibration, and our
+            <a href="/best-treadmills-for-zwift/" class="text-[#0F62FE] font-medium">best treadmills for Zwift</a>
+            page explains the KICKR RUN and the machines that send their speed directly.
+          </p>`,
+    },
+    {
+      id: 'kinomap',
+      heading: 'Kinomap',
+      html: `          <p>
+            Kinomap is built around real-world video: routes filmed by its users, played back at
+            the pace you run. It also has coaching videos, structured workouts, a map mode for
+            your own GPS tracks and multiplayer sessions.
+          </p>
+          <ul>
+            <li><strong>On a treadmill:</strong> filmed routes, coaching videos, structured workouts and live sessions with other users, with your activity recorded from the connected console.</li>
+            <li><strong>Controls speed or incline:</strong> on compatible machines, Kinomap says it takes control of the equipment and changes the treadmill's incline to follow the route. Which treadmills it can tilt depends on the model, so check Kinomap's compatibility list for yours. Several treadmill makers, including Horizon, Sole and Spirit, name Kinomap among the apps their machines work with.</li>
+            <li><strong>Runs on:</strong> iPhone and iPad, with video on a TV through Apple TV or an HDMI adapter; it can take heart rate from an Apple Watch.</li>
+            <li><strong>Free tier:</strong> yes. Kinomap says its app has a free version with no time or usage limit, alongside a paid Premium version.</li>
+            <li><strong>Price:</strong> check the current price for Premium in the app.</li>
+          </ul>
+          <p>
+            Kinomap is the app to try first if you want scenery rather than a cartoon world, and the
+            free version makes it a low-risk experiment. Its incline control is the main reason to
+            check compatibility carefully: on an unsupported machine, it is a video you follow by
+            hand. It also syncs activities to Strava.
+          </p>`,
+    },
+    {
+      id: 'nike-run-club',
+      heading: 'Nike Run Club',
+      html: `          <p>
+            Nike Run Club is a running app first, with GPS tracking for outdoor runs, but its
+            Audio-Guided Runs and training plans work just as well on a treadmill, and its App
+            Store listing names treadmill sessions among its guided runs.
+          </p>
+          <ul>
+            <li><strong>On a treadmill:</strong> audio-guided runs with a coach talking you through the session, including treadmill and interval runs, plus training plans for distances up to the marathon. Training plans are available in selected countries.</li>
+            <li><strong>Controls speed or incline:</strong> no. Nike's page and the App Store listing describe tracking and coaching, not any connection to treadmills.</li>
+            <li><strong>Runs on:</strong> iPhone, with an Apple Watch app; it records workouts to Apple Health.</li>
+            <li><strong>Free tier:</strong> the app is free to download, and neither Nike's page nor its App Store listing describes a paid tier.</li>
+            <li><strong>Price:</strong> free at the time of checking; check the app for any change.</li>
+          </ul>
+          <p>
+            The catch on a treadmill is distance. Without GPS, a phone or watch estimates treadmill
+            distance from motion, and the result can differ from the console, so treat the app's
+            figure as approximate and take pace from the treadmill. For many people the coach's
+            voice is the whole point, and our guide on
+            <a href="/how-to-make-treadmill-running-less-boring/" class="text-[#0F62FE] font-medium">making treadmill running less boring</a>
+            has more ideas in the same spirit.
+          </p>`,
+    },
+    {
+      id: 'apple-fitness-plus',
+      heading: 'Apple Fitness+',
+      html: `          <p>
+            Apple Fitness+ is Apple's subscription video workout service, and treadmill running is
+            one of its workout types. Trainers lead the session on screen and call out effort and
+            pace changes.
+          </p>
+          <ul>
+            <li><strong>On a treadmill:</strong> video treadmill workouts led by a trainer, alongside many other workout types. An independent reference lists separate treadmill run and treadmill walk workouts.</li>
+            <li><strong>Controls speed or incline:</strong> no. Neither Apple's page nor the independent reference describes Fitness+ changing a treadmill's settings; you follow the trainer and set the machine yourself.</li>
+            <li><strong>Runs on:</strong> iPhone, iPad and Apple TV. Apple says an iPhone is all you need and an Apple Watch is not required, although wearing one adds live metrics such as heart rate.</li>
+            <li><strong>Free tier:</strong> no; it is a subscription, with a free trial for new subscribers.</li>
+            <li><strong>Price:</strong> check the current price on Apple's site.</li>
+          </ul>
+          <p>
+            It suits a household already using an iPhone and an Apple TV, where a trainer on the big
+            screen is the appeal. Separately, some treadmills can pair with an Apple Watch through
+            Apple's GymKit to share data; that is a watch feature, not Fitness+, and our guide to
+            <a href="/how-to-connect-apple-watch-to-treadmill/" class="text-[#0F62FE] font-medium">connecting an Apple Watch to a treadmill</a>
+            explains it.
+          </p>`,
+    },
+    {
+      id: 'runna',
+      heading: 'Runna',
+      html: `          <p>
+            Runna is a training-plan app: you set a goal, such as a faster 5K or a first marathon,
+            and it builds a personalised plan of sessions around your schedule. It is now published
+            by Strava, and Strava sells the two together.
+          </p>
+          <ul>
+            <li><strong>On a treadmill:</strong> you follow the plan's session for the day and set the pace on the treadmill yourself.</li>
+            <li><strong>Controls speed or incline:</strong> no. Neither Runna's site nor its App Store listing describes any connection to treadmills.</li>
+            <li><strong>Runs on:</strong> iOS and Android phones, with workouts synced to watches including Apple Watch, Garmin and COROS, and a connection to Strava.</li>
+            <li><strong>Free tier:</strong> the app is free to download; the coaching plans are the paid Premium subscription, and Runna offers a free trial.</li>
+            <li><strong>Price:</strong> check the current price on Runna's site.</li>
+          </ul>
+          <p>
+            Runna is for someone working towards a race or a specific target who uses the treadmill
+            for some or all of their sessions. Its value is the plan, not the treadmill experience,
+            so pair it with a watch that shows the workout on your wrist. If you are just starting
+            out, our
+            <a href="/treadmill-workout-for-beginners/" class="text-[#0F62FE] font-medium">beginner treadmill workout</a>
+            guide is a gentler first step.
+          </p>`,
+    },
+    {
+      id: 'strava',
+      heading: 'Strava (as Your Log)',
+      html: `          <p>
+            Strava is not a treadmill workout app in the way the others are. It is a training log
+            and social network, and for treadmill runners its value is as the place every session
+            ends up, whichever app or watch recorded it.
+          </p>
+          <ul>
+            <li><strong>On a treadmill:</strong> it records and stores your runs, including those synced from other apps and devices. Zwift, Kinomap and Runna all describe syncing to Strava.</li>
+            <li><strong>Controls speed or incline:</strong> no.</li>
+            <li><strong>Runs on:</strong> phones, and it connects with watches and devices from Apple, Garmin, Fitbit and many others.</li>
+            <li><strong>Free tier:</strong> yes. Strava has a free version and a subscription; features such as routes, segment leaderboards and advanced training analysis are on the paid side.</li>
+            <li><strong>Price:</strong> check the current price on Strava's site.</li>
+          </ul>
+          <p>
+            One caution for treadmill runners: indoor and virtual runs depend on the distance your
+            device or app reports, and Strava's own guidance says inaccurate virtual data is not
+            allowed on its leaderboards, and suggests making an activity private if the data looks
+            wrong. If your treadmill's distance and your watch's disagree, our guide to
+            <a href="/treadmill-calibration/" class="text-[#0F62FE] font-medium">treadmill calibration</a>
+            explains which to trust.
+          </p>`,
+    },
+    {
+      id: 'control-explained',
+      heading: 'Which Apps Can Control Your Treadmill',
+      html: `          <p>
+            Automatic control is the feature people most often assume they are getting and most
+            often are not. It depends on three things lining up: the treadmill, the connection
+            and the app.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The treadmill has to accept commands</h3>
+          <p>
+            Most treadmills with Bluetooth broadcast data — speed, sometimes incline, distance —
+            but far fewer accept instructions back. A machine that sends its speed to an app is
+            "compatible" in the sense that the app can show your pace; it is not the same as a
+            machine the app can drive. Listings rarely make that distinction clear.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Closed systems control their own machines</h3>
+          <p>
+            iFIT controls speed and incline on iFIT-enabled NordicTrack, ProForm and Freemotion
+            treadmills, because the company designs the hardware and the software together. That is
+            the most complete version of automatic control, and the most locked-in.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Open apps control less</h3>
+          <p>
+            Kinomap says it can set the incline on compatible machines from other brands. Zwift's
+            documentation names a single treadmill whose incline it controls. The Peloton App on a
+            non-Peloton treadmill, Apple Fitness+, Nike Run Club and Runna control nothing; you
+            follow the cue. For many runners that is not a drawback: pressing a button when the
+            coach says so is easy, and nothing changes speed under your feet without warning.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">A foot pod makes any treadmill readable</h3>
+          <p>
+            If your treadmill has no Bluetooth at all, a foot pod on your shoe reports your speed to
+            apps such as Zwift. It cannot change the treadmill's settings, but it brings a basic
+            machine into the virtual-world apps. Our
+            <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium">foot pod guide</a>
+            covers how they work and how to calibrate one.
+          </p>
+          <p>
+            Before buying a treadmill for an app, check the app maker's own compatibility page for
+            the exact model and year, not the treadmill listing. Compatibility can change with
+            firmware on either side.
+          </p>`,
+    },
+    {
+      id: 'free-vs-paid',
+      heading: 'Free Tiers, Trials and What You Pay For',
+      html: `          <p>
+            Of the eight apps here, three have a free way in that does not expire: Nike Run Club,
+            Kinomap's free version, and Strava's free version. The others are subscriptions with a
+            free trial, or in iFIT's case a membership the content depends on.
+          </p>
+          <p>
+            Before subscribing to anything, it is worth being clear about what you are paying for.
+            With iFIT, it is the automatic control and the filmed content on a machine that was
+            built around it. With Peloton, Apple Fitness+ and Zwift, it is the class library or the
+            world, the instructors and the community. With Runna, it is the plan. Strava's
+            subscription is mostly analysis and route features that matter more outdoors than on a
+            treadmill.
+          </p>
+          <p>
+            Three practical habits save money. Start trials on a week when you can actually use
+            them. Set a reminder before a trial converts, because most renew automatically. And do
+            not stack overlapping subscriptions: one coaching or class app plus a free log is
+            enough for most people. If the ongoing cost is what puts you off, our guide to the
+            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">best treadmills without subscriptions</a>
+            covers machines that are complete without one.
+          </p>
+          <p>
+            Prices and tier structures for apps like these can change at any time, so check the
+            current price and what each tier includes on the maker's site before you commit.
+          </p>`,
+    },
+    {
+      id: 'setup',
+      heading: 'Setting Up an App on a Treadmill',
+      html: `          <p>
+            Most app frustration on a treadmill is set-up frustration, and a few minutes beforehand
+            avoid it.
+          </p>
+          <ul>
+            <li><strong>Put the screen where you can see it without looking down.</strong> Looking down at a phone on the console shelf shortens your stride and pulls you towards the front of the belt. A tablet holder at eye level, or a TV in front of the treadmill, is safer and more comfortable. Our <a href="/best-treadmill-tablet-holders/" class="text-[#0F62FE] font-medium">treadmill tablet holder</a> guide covers the options.</li>
+            <li><strong>Pair before you start the belt.</strong> Connect the treadmill or foot pod to the app while standing on the side rails, not while running.</li>
+            <li><strong>Check that distance agrees.</strong> Run a short, steady session and compare the app's distance with the console. A large gap means the sensor or the treadmill needs calibrating.</li>
+            <li><strong>Keep the safety key clipped on.</strong> An app that changes speed or incline automatically is a reason to wear the clip, not to skip it. Know where the stop button is.</li>
+            <li><strong>Learn the override.</strong> On a machine an app controls, find out how to take control back — on some set-ups, touching the console's own speed or incline buttons does it — before the first steep section.</li>
+          </ul>
+          <p>
+            If you are doing hill sessions by hand while following a video, our
+            <a href="/treadmill-hill-workout/" class="text-[#0F62FE] font-medium">treadmill hill workout</a>
+            guide explains how to build them sensibly.
+          </p>`,
+    },
+    {
+      id: 'which-app',
+      heading: 'Which App Should You Use?',
+      html: `          <p>
+            Start from the treadmill you have, then what keeps you running.
+          </p>
+          <p>
+            <strong>You own an iFIT-enabled NordicTrack or ProForm.</strong> iFIT is the app the
+            machine was built for, and the automatic control is the reason to have it. Without the
+            membership the machine can still be run by hand, though its touchscreen does less.
+          </p>
+          <p>
+            <strong>You own a treadmill with Bluetooth from another brand.</strong> Check whether
+            Kinomap lists it for incline control; if so, its free version is the obvious first try.
+            If you want a world and other runners, Zwift; if you want instructors, the Peloton App
+            or Apple Fitness+.
+          </p>
+          <p>
+            <strong>You own a basic treadmill with no connectivity.</strong> Nike Run Club costs
+            nothing and works on any treadmill. A foot pod opens up Zwift and similar apps.
+          </p>
+          <p>
+            <strong>You are training for a race.</strong> Runna, or a free plan from Nike Run Club,
+            with Strava as the log.
+          </p>
+          <p>
+            <strong>You get bored easily.</strong> Video routes or a virtual world usually help more
+            than a plan. Kinomap and Zwift are the two to try.
+          </p>
+          <p>
+            And if none of this appeals, that is fine. A clear plan on paper and a podcast is a
+            perfectly good way to train on a treadmill, and it costs nothing.
+          </p>`,
+    },
+  ],
+  faqs: [
+    {
+      q: 'What is the best app to use on a treadmill?',
+      a: `It depends on your treadmill. On an iFIT-enabled NordicTrack or ProForm, iFIT is best because it controls speed and incline. On other Bluetooth treadmills, Kinomap and Zwift add routes or virtual worlds. For a free coach on any machine, Nike Run Club is hard to beat, and Strava is the best place to keep a log of every run.`,
+    },
+    {
+      q: 'Is there a free treadmill workout app?',
+      a: `Yes. Nike Run Club is free and has audio-guided runs that work on a treadmill. Kinomap says it offers a free version with no time or usage limit, and Strava has a free version for logging runs. Most other treadmill apps, including iFIT, Peloton, Zwift, Apple Fitness+ and Runna, are subscriptions, some with free trials.`,
+    },
+    {
+      q: 'Which apps can control treadmill speed and incline?',
+      a: `iFIT controls both on iFIT-enabled NordicTrack, ProForm and Freemotion treadmills. Kinomap says it can set the incline on compatible machines, so check its list for your model. Zwift's documentation names one treadmill whose incline it controls, the Wahoo KICKR RUN. Peloton on other brands, Apple Fitness+, Nike Run Club and Runna leave the buttons to you.`,
+    },
+    {
+      q: 'Can I use the Peloton app on any treadmill?',
+      a: `Yes. The Peloton App runs on phones, tablets and TVs and offers running and walking classes you can follow on any treadmill. It does not control other brands' machines, so you set the speed and incline yourself from the instructor's cues. Peloton lists more than one app tier, so check what each includes before choosing.`,
+    },
+    {
+      q: 'Do I need a smart treadmill to use Zwift?',
+      a: `No. Zwift needs your running speed, which a compatible treadmill can send directly or a foot pod on your shoe can supply on nearly any treadmill. A smart treadmill saves you the pod, but Zwift's documentation names only one treadmill whose incline it can control, so on most machines you change the incline yourself.`,
+    },
+    {
+      q: 'Do I need an Apple Watch for Apple Fitness+ treadmill workouts?',
+      a: `No. Apple says an iPhone is all you need for Fitness+, and the workouts can play on iPhone, iPad or Apple TV. Wearing an Apple Watch adds live metrics such as heart rate. Fitness+ does not change the treadmill's speed or incline; you follow the trainer and adjust the machine yourself.`,
+    },
+  ],
+  mistakesHeading: 'Common Mistakes Choosing a Treadmill App',
+  mistakesIntro:
+    'Each of these leads to paying for a feature you do not get, or a session that is less safe than it should be.',
+  mistakes: [
+    {
+      title: 'Assuming "compatible" means the app controls the treadmill',
+      body: `Many treadmills send their speed to apps but accept no instructions back, and listings rarely say which. If automatic speed or incline is the reason you are buying, check the app maker's own compatibility page for the exact model and year, and treat a treadmill listing's app logos as a sign the machine shares data, nothing more.`,
+    },
+    {
+      title: 'Watching a phone on the console shelf',
+      body: `Looking down at a small screen pulls you forward on the belt, shortens your stride and makes a misstep more likely. Mount a tablet at eye level or put a screen in front of the treadmill, pair devices before the belt starts, and keep the safety key clipped on, especially with an app that can change the speed or incline.`,
+    },
+    {
+      title: 'Letting a free trial roll into a subscription you will not use',
+      body: `Most app trials renew automatically. Start one in a week when you can train, set a reminder a couple of days before it ends, and decide then. Avoid stacking several class or coaching subscriptions; one paid app plus a free log such as Strava covers most treadmill runners, and the free apps here may be enough.`,
+    },
+    {
+      title: 'Trusting app distance over the console',
+      body: `On a treadmill there is no GPS, so a phone or watch app estimates distance from motion or a sensor, and it can disagree with the console. Compare the two on a steady run. If the gap is large, calibrate the foot pod or watch, or check the treadmill itself, before you base training paces on either figure.`,
+    },
+  ],
+  relatedHeading: 'Related Training Guides',
+  related: [
+    {
+      kicker: 'Zwift',
+      title: 'Zwift Treadmill Guide',
+      blurb: 'Set-up, foot pods, calibration and what Zwift can and cannot control.',
+      url: '/zwift-treadmill-guide/',
+    },
+    {
+      kicker: 'iFIT',
+      title: 'Is iFIT Worth It?',
+      blurb: 'What the membership adds to a NordicTrack or ProForm, and what the machine does without it.',
+      url: '/is-ifit-worth-it/',
+    },
+    {
+      kicker: 'Motivation',
+      title: 'Making Treadmill Running Less Boring',
+      blurb: 'Session ideas, entertainment and structure that keep you on the belt.',
+      url: '/how-to-make-treadmill-running-less-boring/',
+    },
+  ],
+  bottomLine: [
+    `<strong class="text-white">Match the app to the treadmill you own.</strong> On an iFIT-enabled
+            NordicTrack or ProForm, iFIT is the only app that fully drives the machine. On another
+            Bluetooth treadmill, try Kinomap's free version for video routes or Zwift for a virtual
+            world; on any treadmill at all, Nike Run Club is a free coach, and Strava keeps the log.`,
+    `Whichever you choose, check the current price and the exact compatibility on the app maker's
+            site before subscribing, and mount the screen where you can see it without looking down.
+            If you are still choosing the treadmill itself, our guide to
+            <a href="/smart-treadmill-vs-regular/" class="text-[#5AA9FF] font-bold no-underline">smart versus regular treadmills</a>
+            is the place to start.`,
+  ],
+};

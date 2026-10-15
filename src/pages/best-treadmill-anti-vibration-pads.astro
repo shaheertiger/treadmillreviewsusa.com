@@ -1,0 +1,842 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "Best Treadmill Anti-Vibration Pads (2026): Five Picks, Honestly";
+const description =
+  "Five anti-vibration options checked against maker and retailer listings: Sorbothane pads, a rubber-cork pad and two heavy rubber mats, and what pads cannot fix.";
+
+const PRODUCTS = [
+  {
+    id: "isolate-it-sorbothane-4x4",
+    name: "Isolate It! Sorbothane Vibration Isolation Square Pad (4 x 4 in.)",
+    category: "Sorbothane isolation pad for treadmill feet",
+    badge: "Best Overall",
+    amazonUrl: "https://www.amazon.com/s?k=Isolate+It+Sorbothane+Vibration+Isolation+Square+Pad+4+x+4&tag=sktiger-20",
+    reviewUrl: null,
+    priceRange: "$15–$29 per 2-pack",
+    specs: "4 x 4 in. · 0.10 to 0.50 in. thick · 30, 50 or 70 durometer · sold in 2-packs · Sorbothane",
+    pros: [
+      "Genuine Sorbothane, the purpose-made isolation material, rather than generic rubber",
+      "A 4 x 4-inch footprint is larger than most treadmill feet, so the foot sits fully on the pad",
+      "Choice of hardness and thickness lets you favour stability for a running treadmill",
+      "Two packs cover a four-footed treadmill for well under the price of a heavy mat",
+    ],
+    cons: [
+      "No load rating we could confirm for this size; listings that give one disagree wildly",
+      "Raw Sorbothane is slightly tacky and may mark some pale or vinyl floors",
+      "Helps with hum and rattle more than with the thud of running",
+    ],
+    bottomLine: "The pad to buy for a treadmill on a hard floor. Choose a firm grade and a thickness of 1/4 to 1/2 inch, and buy two packs for four feet.",
+    description: "Isolate It sells these 4 x 4-inch Sorbothane pads in a range of thicknesses from 0.10 to 0.50 inches, in 30, 50 and 70 durometer, as 2-packs; Sorbothane's own Standard Products Guide lists the same 4 x 4-inch sizes, thicknesses and hardness grades. Sorbothane is a viscoelastic urethane that is designed to absorb vibration rather than simply cushion, and that is the reason this is our default pick. The 4-inch footprint is wider than most treadmill feet, so the foot sits fully on the pad rather than on its edge. For a running treadmill we would lean towards the firmer 50 or 70 grades and a thickness of 1/4 to 1/2 inch, which keeps the machine steady while still damping motor and belt vibration. The honest gap is load rating. Sorbothane's guide publishes none for this size, and a marketplace listing for the same pad claims a figure in the thousands of pounds, so we have left it out. Expect less hum and rattle in the floor, and a softer edge to footfalls, not silence.",
+  },
+  {
+    id: "isolate-it-sorbothane-fabric-pads",
+    name: "Isolate It! Sorbothane Reinforced Heavy Duty Square Pad (2.5 x 2.5 in.)",
+    category: "Fabric-faced Sorbothane pad that can be repositioned",
+    badge: "Best for Machines You Move",
+    amazonUrl: "https://www.amazon.com/s?k=Isolate+It+Sorbothane+Reinforced+Heavy+Duty+Square+Pad+fabric&tag=sktiger-20",
+    reviewUrl: null,
+    priceRange: "$50–$70",
+    specs: "2.5 x 2.5 x 0.25 in. · 30, 50 or 70 durometer · fabric top and bottom · Sorbothane",
+    pros: [
+      "Fabric faces stop the pad sticking to the treadmill foot or the floor",
+      "Designed to be repositioned yet stay stable once loaded, which suits folding machines",
+      "A thin 1/4-inch pad raises the machine very little",
+      "Small footprint suits walking pads and treadmills with narrow feet",
+    ],
+    cons: [
+      "Smaller than the feet on some treadmills; check yours before ordering",
+      "Pack count and load rating could not be confirmed in a second source",
+      "Costs more per pad than plain Sorbothane or rubber-cork pads",
+    ],
+    bottomLine: "For a folding treadmill or walking pad that gets moved, where loose tacky pads would be a nuisance. Check the foot size first.",
+    description: "This is a standard Sorbothane part — 2.5 x 2.5 inches and 0.25 inches thick, in 30, 50 or 70 durometer — with fabric bonded to the top and bottom. Sorbothane, Inc. describes the fabric as stopping the pad sticking to whatever sits on it without reducing its isolation, and says the pad can be repositioned yet stays stable once the load is applied. Isolate It sells it under the Reinforced Heavy Duty name. That combination makes it the pick for machines that move. If you fold a treadmill and wheel it away, or slide a walking pad under a desk, raw Sorbothane can grip the floor and leave pads out of place; these lift off cleanly. The trade-offs are size and information. At 2.5 inches square, the pad is smaller than some treadmill feet, so check yours. Isolate It publishes a load range for each hardness, but Sorbothane's own guide lists none, and we could not confirm the pack count anywhere but Isolate It's listing, so check both on the page you buy from.",
+  },
+  {
+    id: "diversitech-mp-4c",
+    name: "DiversiTech MP-4C Rubber/Cork Anti-Vibration Pad",
+    category: "Budget rubber-and-cork equipment pad",
+    badge: "Best Budget",
+    amazonUrl: "https://www.amazon.com/s?k=DiversiTech+MP-4C+Anti-Vibration+Pad+4x4x7%2F8&tag=sktiger-20",
+    reviewUrl: null,
+    priceRange: "$3–$9 each",
+    specs: "4 x 4 x 7/8 in. · cork laminated between two ribbed rubber layers",
+    pros: [
+      "A full set of four costs less than a single pack of most branded pads",
+      "Ribbed faces on both sides are designed to stop equipment creeping across the pad",
+      "Firm rubber and cork keeps a heavy machine steady",
+      "Widely stocked by heating and cooling suppliers, so easy to find",
+    ],
+    cons: [
+      "At 7/8 inch thick it raises every foot noticeably, so all four must match",
+      "Sold for refrigeration and air-conditioning equipment, not tested or marketed for treadmills",
+      "Sellers list different load ratings, so we have left that figure out",
+    ],
+    bottomLine: "The cheapest sensible way to stop a treadmill rattling on a hard floor. Buy four, and be prepared to re-level the machine.",
+    description: "DiversiTech is a long-established maker of pads for heating and cooling equipment, and the MP-4C is one of its standard parts: a 4 x 4 x 7/8-inch pad with a cork layer laminated between two rubber layers, each ribbed on both faces. Distributors including SupplyHouse, The Granite Group, Ferguson and G.T. Sanders agree on the size and construction, and several note that the ribs are there to reduce walking, or creep, under vibration — a useful property under a treadmill. It is sold by the pad, often for a few dollars, so a set of four costs very little. The honest caveats are that it is not a treadmill product and that the details vary by seller. DiversiTech describes it for refrigeration and air-conditioning units, and the load rating is given as 50 psi by some distributors and 180 psi by another, so we have left it out. It is also thick: 7/8 inch under each foot is a real change in height, so fit all four, re-level the machine and check the belt still tracks centrally.",
+  },
+  {
+    id: "flooringinc-premium-rubber-3-8",
+    name: "FlooringInc Premium Rubber Mat (4 x 6 ft, 3/8 in.)",
+    category: "Dense rubber mat in place of pads",
+    badge: "Best Mat Alternative",
+    amazonUrl: "https://www.amazon.com/s?k=FlooringInc+Premium+Rubber+Mat+4x6+3%2F8&tag=sktiger-20",
+    reviewUrl: null,
+    priceRange: "$140–$155",
+    specs: "48 x 72 in. · 3/8 in. thick (also sold in 8 mm) · recycled vulcanized rubber",
+    pros: [
+      "Damps vibration across the whole footprint, not only under the feet",
+      "Protects the floor from sweat and belt dust as well as reducing transmitted vibration",
+      "Vulcanized rubber is dense and resists the indentation that soft mats suffer",
+      "A firmer base than foam, so the machine stays steady",
+    ],
+    cons: [
+      "Expensive next to pads, and heavy to carry upstairs",
+      "At 72 inches long it is shorter than many full-size treadmills; measure first",
+    ],
+    bottomLine: "For a treadmill in an upstairs room, where you want the most damping you can get without making the machine unstable.",
+    description: "FlooringInc sells its 4 x 6-foot Premium mats in vulcanized rubber, at 8 mm and 3/8 inch thick, and a current Walmart listing describes the same mat as 3/8-inch, 100% recycled vulcanized rubber. We include it because, for a treadmill upstairs, a dense mat under the whole machine often does more than pads alone. It spreads the load of each footfall across a far larger area of floor, it damps the vibration that pads would otherwise handle at four small points, and it protects the floor at the same time. It is also firm enough that the machine does not rock on it, which is the failure mode of soft foam. The limits are price, weight and length. It costs several times as much as a set of pads, it is heavy, and at 72 inches it is shorter than many full-size treadmills, so check your machine's overall length; two mats butted together are the fix if it is too short. If you add pads on top, keep them firm and thin. Our mats guide covers this mat in more detail.",
+  },
+  {
+    id: "tractor-supply-stall-mat",
+    name: "Tractor Supply Thick Rubber Stall Mat (4 x 6 ft, 3/4 in.)",
+    category: "Heavy rubber mat for garages and basements",
+    badge: "Best Heavy Mat",
+    amazonUrl: "https://www.amazon.com/s?k=4+x+6+ft+3%2F4+in+thick+rubber+stall+mat&tag=sktiger-20",
+    reviewUrl: null,
+    priceRange: "$40–$57",
+    specs: "48 x 72 in. · 3/4 in. thick · recycled vulcanized rubber · 5-year limited warranty",
+    pros: [
+      "The thickest and heaviest option on this page for the least money",
+      "Heavy enough to stay put under a treadmill without adhesive",
+      "Widely used as home-gym flooring, and covered by a five-year limited warranty",
+      "A firm base on a garage or basement slab that also cushions the floor",
+    ],
+    cons: [
+      "Sold in Tractor Supply stores and on its website, not on Amazon",
+      "Very heavy and awkward to move; listings disagree on the exact weight",
+      "Textured surface and a strong rubber smell when new make it a garage mat, not a bedroom one",
+    ],
+    bottomLine: "The budget choice for a treadmill on concrete in a garage or basement. Too heavy, smelly and industrial for most living rooms.",
+    description: "Horse-stall mats have been a home-gym staple for years, and this one from Tractor Supply is the usual example: 4 x 6 feet and 3/4 inch thick, in recycled vulcanized rubber, with a five-year limited warranty according to both Tractor Supply's listing and Garage Gym Reviews. It is here as the heavy-mat alternative to pads for treadmills on a concrete slab, where the aim is a firm, dense base that will not shift, protects the floor and takes some sting out of each footfall. At 3/4 inch, it is twice as thick as our upstairs pick and costs far less. The catches are practical. It is sold through Tractor Supply rather than Amazon, so the Amazon link here is only a search for similar mats. It is very heavy — Tractor Supply's listing and a reviewer give different weights, so we have left the figure out — and reviewers describe a textured surface. Recycled rubber of this kind typically smells strongly when new, so air it outside before use. Like the FlooringInc mat, it is 72 inches long; measure your machine first.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Buying Guides", item: "https://www.treadmillreviewsusa.com/guides/" },
+        { "@type": "ListItem", position: 3, name: "Best Treadmill Anti-Vibration Pads", item: "https://www.treadmillreviewsusa.com/best-treadmill-anti-vibration-pads/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Do anti-vibration pads work for treadmills?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, within limits. Pads reduce the vibration a treadmill passes into the floor, which softens motor hum, rattles and the sharper part of each footfall. They do not stop the heavy thud of running reaching the room below, and they do nothing for noise in the room itself. They make the biggest difference to walking treadmills and walking pads on timber floors.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Are Sorbothane pads better than rubber pads under a treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sorbothane is designed to absorb vibration rather than simply cushion, so for the same thickness it generally does more for hum and rattle than plain rubber. Rubber and rubber-cork pads are firmer and cheaper, which makes them very stable. For a running treadmill, a firm grade of Sorbothane is a good balance; rubber-cork is the budget alternative.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Will anti-vibration pads stop my downstairs neighbors hearing my treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "They will reduce what your neighbours hear, not stop it. The rhythmic thud of running is a slow, heavy impact that no pad can fully absorb without letting the treadmill bounce. A thick dense rubber mat usually helps more than pads alone. Walking rather than running, training at sensible hours and choosing a quieter machine make the biggest difference.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How thick should treadmill vibration pads be?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "For a treadmill with a runner on it, thin to moderate pads, roughly 1/4 to 1/2 inch for Sorbothane, are the sensible range. Thicker, softer pads isolate more in theory but let the machine move and rock. Every contact point needs an identical pad, and you should re-level the treadmill after fitting them and check the belt still runs centrally.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Should I put pads under a treadmill mat or on top of it?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "If you use both, the mat goes on the floor and firm, thin pads go on top of it under each foot. That adds a second layer of isolation. Keep the pads firm, because every soft layer adds movement, and never put pads on a soft foam mat. On carpet, use a dense rubber mat alone rather than pads.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can anti-vibration pads make a treadmill unsafe?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "They can if they are too soft, too thick, mismatched or out of position. A treadmill that rocks or shifts on its pads can let the belt drift and makes a stumble more likely. Use identical firm pads under every contact point, do not stack them, level the machine after fitting, and remove them if the treadmill moves while you run.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", name: "Morgan Reyes" },
+      datePublished: "2026-10-15",
+      dateModified: "2026-10-15",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+    ...PRODUCTS.map((product) => ({
+      "@type": "Product",
+      name: product.name,
+      description: product.description,
+      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      offers: {
+        "@type": "AggregateOffer",
+        priceCurrency: "USD",
+        availability: "https://schema.org/InStock",
+      },
+    })),
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-10-15",
+    modifiedTime: "2026-10-15",
+    author: "Morgan Reyes",
+    section: "Fitness Equipment",
+    tags: [
+      "treadmill anti vibration pads",
+      "treadmill vibration pads",
+      "treadmill noise reduction pads",
+      "treadmill isolation pads",
+      "sorbothane pads treadmill",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "See Our Top Picks", link: "#quick-picks" }}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-besttreadmillantivibrationpads" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-besttreadmillantivibrationpads)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Buying Guide
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated October 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          Best Treadmill Anti-Vibration Pads <span class="text-[#5AA9FF]">and What They Can Really Do</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          Pads under a treadmill's feet can take the edge off the hum and rattle that travels into a floor. They cannot make a running treadmill silent for the people below, and the wrong pad can make the machine less stable. Here are five options that cover the real situations, and how to fit them safely.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#quick-picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            See the Picks
+          </a>
+          <a href="#what-pads-can-do" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            What Pads Can Do
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
+          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">October 15, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="1.7k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">On the products below.</strong> We have not tested these
+          pads or mats. Sizes, thicknesses, materials, hardness options and pack counts were checked
+          on 15 October 2026 against each maker's own product page or published product guide where
+          one exists, and against at least one other retailer or distributor listing or independent
+          review. A figure appears on a card only where those sources agreed; where they disagreed —
+          load ratings on all three pads, and the weight of the stall mat — we left it out and say so
+          in the description. None of these figures are our own measurements. Prices are the ranges
+          we saw on that date and change often, so check the size, thickness and pack count on the
+          exact listing before you order. We earn a commission if you buy through the Amazon links on
+          this page; it does not change which products we list or what we say about them.
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
+          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Treadmill Anti-Vibration Pads and Mats</a>
+          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Pads</a>
+          <a href="#what-pads-can-do" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What Pads Can and Cannot Do</a>
+          <a href="#stability" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Stability Comes First</a>
+          <a href="#choosing-pads" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Choosing Size, Thickness and Hardness</a>
+          <a href="#pads-vs-mat" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Pads, a Mat, or Both</a>
+          <a href="#fitting" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Fitting Pads Without Making Things Worse</a>
+          <a href="#downstairs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. If the Complaint Comes From Downstairs</a>
+          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Who Should Buy Something Else</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          Anti-vibration pads are sold with big promises, and most of the disappointment comes from
+          asking them to do a job they were never able to do. A pad is a small, slightly soft block
+          between a machine and a floor. It can stop a frame rattling on tile, soften the hum a
+          motor sends into a timber floor, and take some of the sting out of each footfall. It cannot
+          absorb the full weight of a runner landing two or three times a second, and if it is too
+          soft, too thick or uneven it will make the treadmill rock. This page picks the pads and
+          mats worth buying and explains, in plain terms, what to expect from them.
+        </p>
+
+        <div id="quick-picks" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+<p>
+            Three of these are pads that go under the treadmill's feet; two are heavy rubber mats
+            that do a similar job across the whole footprint. Most readers with a treadmill on a
+            hard floor should start with the first pick. If the treadmill is upstairs and the
+            complaint is coming from below, read the section on what pads can and cannot do before
+            buying anything.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead><tr>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Pick</th>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Best for</th>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Why</th>
+            </tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Isolate It! Sorbothane Square Pad (4 x 4 in.)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best overall pad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Genuine Sorbothane in three hardnesses and several thicknesses, sized for treadmill feet</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Isolate It! Sorbothane Reinforced Square Pad (2.5 x 2.5 in.)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Machines you move</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Fabric top and bottom, so it does not stick and can be repositioned</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">DiversiTech MP-4C</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Budget</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rubber-cork equipment pad for a few dollars each, ribbed to resist creeping</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">FlooringInc Premium Rubber Mat (3/8 in.)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Upstairs rooms</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Dense vulcanized rubber across the footprint, not just under the feet</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Tractor Supply Rubber Stall Mat (3/4 in.)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Garages and basements</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The thickest, heaviest option here for the least money</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            If you are not sure whether you need a mat as well as, or instead of, pads, our guide to
+            <a href="/do-you-need-a-treadmill-mat/" class="text-[#0F62FE] font-medium">whether you need a treadmill mat</a>
+            covers what a mat does for the floor and the motor. This page is about vibration and
+            noise.
+          </p>
+        </div>
+
+        <div id="picks" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Treadmill Anti-Vibration Pads and Mats</h2>
+<p>
+            Each card gives only the sizes, materials and options we could confirm in more than one
+            place, the price range we saw, and who the product suits. Read the thickness line
+            carefully: anything you put under a treadmill's feet raises the machine, and every
+            contact point needs the same pad.
+          </p>
+          <p>
+            None of the three pads is sold specifically as a treadmill product. Sorbothane pads and
+            rubber-cork pads are general-purpose isolators used under appliances, audio equipment and
+            heating and cooling units. That is not a mark against them; it is simply what the
+            category is. Treadmill-branded pads on marketplaces are usually the same materials with
+            less information attached.
+          </p>
+        </div>
+      </div>
+
+      <!-- Product cards -->
+      <div class="not-prose">
+        {
+          PRODUCTS.map((product, index) => (
+            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
+              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
+                  <div>
+                    <p class="text-white font-black text-xl leading-tight">
+                      {index + 1}. {product.name}
+                    </p>
+                    <p class="text-gray-400 text-xs">{product.category}</p>
+                  </div>
+                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                    {product.badge}
+                  </span>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center gap-2 mb-4 flex-wrap">
+                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
+                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
+                  </div>
+                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
+                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
+                      <p class="text-xs font-black uppercase tracking-widest text-green-700 mb-2">What Works</p>
+                      <ul class="space-y-2">
+                        {product.pros.map((pro) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+                      <p class="text-xs font-black uppercase tracking-widest text-red-700 mb-2">What Doesn't</p>
+                      <ul class="space-y-2">
+                        {product.cons.map((con) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="border-t border-gray-100 pt-4">
+                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
+                    <div class="flex flex-wrap items-center gap-3">
+                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+                        Check Price on Amazon &rarr;
+                      </a>
+                      {product.reviewUrl && (
+                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
+                          Read our full {product.name} review &rarr;
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="how-we-chose" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Pads</h2>
+<p>
+            We have not tested these products. They were chosen from published specifications, the
+            makers' own product pages and product guides, distributor and retailer listings, and
+            independent coverage, and every claim on the cards is limited to what those sources
+            support.
+          </p>
+          <p>
+            We started from the three materials that matter: Sorbothane, the viscoelastic urethane
+            used in purpose-made isolation pads; rubber and rubber-cork pads of the kind used under
+            heavy equipment; and dense rubber mats, which do a similar job across the whole
+            footprint. For each we looked for a product that is on sale now, whose maker or a major
+            seller describes its size and material, and that a second source confirms. For the two
+            Sorbothane pads we checked Isolate It's listings against Sorbothane, Inc.'s own product
+            page and its Standard Products Guide. For the DiversiTech pad we compared several HVAC
+            distributors. For the mats we checked the maker's or retailer's listing against a second
+            retailer or an independent review.
+          </p>
+          <p>
+            <strong>What we left out, and why.</strong> Load ratings were the most inconsistent
+            figures in the category. One marketplace listing for a 4 x 4-inch Sorbothane pad claims a
+            load rating in the thousands of pounds per pad; Sorbothane's own guide gives no rating
+            for that size; and DiversiTech's pad is listed at 50 psi by some sellers and 180 psi by
+            another. We have left every load rating off the cards. We excluded Isolate It's Industrial
+            Silent Feet, because the maker's own recommended maximum for a set of four is 200 lb,
+            which a treadmill and its user can exceed on their own, and its washing-machine pads,
+            which are designed for a different machine. We also left out pads we could only find on
+            marketplace listings with no maker information, a rubber pad set whose only source was
+            its own seller, and a rubber-cork pad whose listings disagreed on pack count.
+          </p>
+          <p>
+            <strong>Safety check.</strong> We searched the US Consumer Product Safety Commission's
+            recall database for every brand and seller on this page — Sorbothane, Isolate It,
+            DiversiTech, FlooringInc and Tractor Supply. None of these products is under a recall or
+            a CPSC warning; Tractor Supply's recalls in the database concern unrelated products.
+          </p>
+        </div>
+
+        <div id="what-pads-can-do" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What Pads Can and Cannot Do</h2>
+<p>
+            A treadmill makes two kinds of noise, and pads only touch one of them. <strong>Airborne
+            noise</strong> — motor whine, belt slap, the sound of your feet in the room — travels
+            through the air, and nothing under the feet changes it. <strong>Structure-borne
+            noise</strong> is vibration passed from the frame into the floor, which the floor then
+            radiates as sound, often in a room below or next door. That is the part a pad can reduce.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">How a pad works, in plain terms</h3>
+          <p>
+            An isolation pad is a soft spring and a shock absorber in one small block. It lets the
+            machine move very slightly on top of it, and soaks up some of that movement as heat
+            instead of passing it straight into the floor. It works best on fast, small vibrations —
+            the steady buzz of a motor, the chatter of a belt, a frame rattling against a hard
+            floor. Those can be noticeably reduced.
+          </p>
+          <p>
+            It works least well on slow, heavy impacts, and footfall is exactly that. A runner lands
+            two or three times a second, and each landing pushes far more force through the deck than
+            the machine's weight alone. To isolate a slow thump like that, a pad would have to be so
+            soft that the treadmill bounced visibly every stride — which would be unpleasant and
+            unsafe. So every pad sold for this job is a compromise: firm enough to keep the machine
+            steady, soft enough to take the edge off the higher-pitched part of each thud.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What to expect</h3>
+          <ul>
+            <li>On a concrete floor, pads mainly stop rattles and protect the floor. Little reaches neighbours anyway.</li>
+            <li>On a timber floor, pads can soften the hum and the sharp edge of footfalls in the room below. The dull thud of running remains.</li>
+            <li>Walking produces far less impact than running, and pads make a proportionally bigger difference to a walking treadmill or walking pad.</li>
+            <li>A dense mat under the whole machine often helps more than pads alone, because it spreads the load as well as damping it.</li>
+          </ul>
+          <p>
+            If the noise you are trying to fix is a knock, thump or squeak that the machine itself
+            makes, a pad will not cure it. Our guide to
+            <a href="/treadmill-thumping-noise/" class="text-[#0F62FE] font-medium">treadmill thumping noises</a>
+            covers the mechanical causes worth ruling out first.
+          </p>
+        </div>
+
+        <div id="stability" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Stability Comes First</h2>
+<p>
+            Anything placed under a treadmill changes how it stands, and the first job of a pad is
+            not to make that worse. A treadmill that rocks, shifts or sits off level is a safety
+            problem and a wear problem: the belt drifts to one side, the frame flexes, and a stumble
+            on a moving belt is a genuinely dangerous thing.
+          </p>
+          <p>
+            <strong>Use identical pads under every contact point.</strong> The same material, the
+            same thickness, the same hardness. Mixing a firm pad at the front with a soft one at the
+            back, or a thick one with a thin one, tilts the deck and can twist the frame. If a
+            treadmill rests on more than four points — many walking pads do — every one of them
+            needs a pad, or none should.
+          </p>
+          <p>
+            <strong>Do not stack pads.</strong> Two pads on top of each other double the height and
+            more than double the room for movement, and stacked soft pads are the most common way a
+            stable machine becomes a wobbly one.
+          </p>
+          <p>
+            <strong>Prefer firm over thick.</strong> A firmer, thinner pad keeps the machine steady
+            and still does useful work on vibration. A thick, soft pad looks like it should be
+            better and usually is not, because the deck sinks and rocks under each stride. If you
+            notice the treadmill moving on its pads when you run, the pad is too soft or too thick
+            for the load.
+          </p>
+          <p>
+            <strong>Keep them where they belong.</strong> A pad that has crept half out from under a
+            foot is now holding up one edge of the machine. Check the pads after the first few
+            sessions and periodically after that, and re-level the treadmill once the pads have
+            settled. If the machine shakes or wobbles even after you have levelled it on its pads,
+            take them out and work through our guide to a
+            <a href="/treadmill-shaking-or-wobbling/" class="text-[#0F62FE] font-medium">treadmill that shakes or wobbles</a>
+            before going any further; pads should never be used to disguise a loose frame or a
+            failing part.
+          </p>
+        </div>
+
+        <div id="choosing-pads" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Choosing Size, Thickness and Hardness</h2>
+<p>
+            Three numbers describe an isolation pad: its footprint, its thickness and its hardness.
+            Getting them roughly right matters more than the brand.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Footprint</h3>
+          <p>
+            The pad should be larger than the foot sitting on it, so the whole foot is supported
+            and the pad does not roll at the edges. Look underneath your treadmill before you buy.
+            Many folding treadmills stand on two adjustable rear feet and two front points at the
+            motor end, often wheels or a frame rail. A 4 x 4-inch pad covers most adjustable feet
+            with room to spare. Walking pads usually sit on a row of small rubber feet along the
+            base, which suits smaller pads, one per foot.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Thickness</h3>
+          <p>
+            Thicker pads isolate more, but they also let the machine move more and raise it further.
+            Sorbothane's own product guide shows the trade-off clearly: for the same footprint and
+            hardness, the recommended load per pad falls as the pad gets thicker. In other words, a
+            thick pad is meant for a lighter load. For a treadmill, which carries a person as well as
+            its own weight, thin-to-moderate thicknesses are the sensible range; the 1/4 to 1/2-inch
+            Sorbothane pads on this page sit in it.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Hardness</h3>
+          <p>
+            Sorbothane is sold in durometers — a measure of softness — and the three common grades
+            are 30, 50 and 70. Lower numbers are softer and carry less load; 70 is the firmest. For a
+            treadmill with a runner on it, the firmer grades are generally the safer starting point,
+            because a soft grade under a heavy, moving load is where rocking begins. Rubber and
+            rubber-cork pads are firmer still, which makes them stable but less effective on fine
+            vibration.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Load ratings</h3>
+          <p>
+            Sorbothane's approach to sizing is simple: divide the total weight by the number of
+            pads to get the load on each, then choose a pad rated for that load. The difficulty for
+            treadmills is that the load is not constant — each footfall briefly adds far more than
+            body weight — and that published ratings for the larger pads are missing or
+            inconsistent, as we found. Treat any single load figure on a listing with caution, start
+            with a firmer grade, and judge by whether the machine stays steady.
+          </p>
+        </div>
+
+        <div id="pads-vs-mat" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Pads, a Mat, or Both</h2>
+<p>
+            Pads and mats overlap, and the right answer depends on the floor and on what you are
+            trying to fix.
+          </p>
+          <p>
+            <strong>Pads</strong> concentrate their effect where the machine touches the floor. They
+            are small, cheap, easy to hide and good at stopping rattles and reducing motor hum. They
+            do nothing to protect the floor from sweat, belt dust or dropped water bottles, and on
+            carpet they can sink unevenly into the pile.
+          </p>
+          <p>
+            <strong>A dense rubber mat</strong> spreads the load across a much bigger area, protects
+            the floor, keeps carpet fibre away from the motor, and does a similar damping job. It is
+            heavier, more expensive and more visible. For a treadmill upstairs, a thick dense mat is
+            usually the bigger single improvement; our
+            <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">best treadmill mats</a>
+            guide covers the thinner floor-protection mats too, and our guide to
+            <a href="/how-thick-should-a-treadmill-mat-be/" class="text-[#0F62FE] font-medium">how thick a treadmill mat should be</a>
+            explains the trade-offs of going thicker.
+          </p>
+          <p>
+            <strong>Both together</strong> can work, with care. A firm pad under each foot, on top of
+            a dense rubber mat, adds a second layer of isolation. But every soft layer adds
+            movement, so keep the pads firm and thin if you combine them, and check the machine is
+            still level and steady. Do not put pads on top of a soft foam mat; that is two soft
+            layers and a recipe for rocking.
+          </p>
+          <p>
+            On carpet, a mat is the better choice. Pads pressed into carpet pile can sink at
+            different rates and tilt the machine.
+          </p>
+        </div>
+
+        <div id="fitting" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Fitting Pads Without Making Things Worse</h2>
+<p>
+            Fitting pads takes ten minutes, and most problems afterwards come from rushing it.
+          </p>
+          <ol>
+            <li><strong>Unplug the treadmill</strong> and remove the safety key. Treat it as you would any other maintenance job.</li>
+            <li><strong>Look underneath</strong> and identify every point that touches the floor, including front wheels or frame rails that bear weight when the machine is in use.</li>
+            <li><strong>Lift one end at a time</strong>, with a helper for anything heavier than a walking pad, and slide a pad centrally under each contact point at that end. Never put a hand under a raised frame without someone holding it.</li>
+            <li><strong>Lower it gently</strong> and check each pad is still centred. Repeat at the other end.</li>
+            <li><strong>Level the machine on its pads</strong> using the rear adjustment feet, then walk on it at low speed and watch for rocking or the belt drifting off centre.</li>
+            <li><strong>Check again after a week</strong>. Sorbothane and rubber settle slightly under load; re-centre any pad that has crept and re-level if needed.</li>
+          </ol>
+          <p>
+            Folding treadmills need one extra thought. When you fold the deck and wheel the machine
+            away, loose pads stay behind and may not be in quite the right place when you set it up
+            again. Either leave the pads where the feet land and check them each time, or choose a
+            fabric-faced pad, which is designed to be repositioned without sticking. Some raw
+            Sorbothane pads are slightly tacky, which helps them stay put but can mark some floor
+            finishes; if your floor is pale wood or vinyl, check under the pads after the first few
+            weeks.
+          </p>
+          <p>
+            For a walking pad, which is light and often moved daily, a thin mat cut to the
+            footprint is usually more practical than a set of loose pads. Our
+            <a href="/best-quiet-walking-pads/" class="text-[#0F62FE] font-medium">quietest walking pads</a>
+            guide covers the machine side of that choice.
+          </p>
+        </div>
+
+        <div id="downstairs" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. If the Complaint Comes From Downstairs</h2>
+<p>
+            The most common reason people search for anti-vibration pads is a neighbour, and it is
+            worth being realistic before you spend anything.
+          </p>
+          <p>
+            Ask someone to stand in the room below while you walk and then run. If what they hear is
+            a hum or a whine, pads under the feet will help noticeably. If it is a rhythmic thud
+            that matches your stride, pads will soften it but not remove it, and a thick dense mat
+            under the whole machine is the better first step. If the thud is loud even when you
+            walk, the floor itself is the issue: lightweight timber floors carry impact well, and no
+            product sold for this job changes that much.
+          </p>
+          <p>
+            What helps most, roughly in order: walking rather than running, a smoother running
+            style with shorter, lighter strides, a dense rubber mat, firm isolation pads, and the
+            time of day you train. The machine matters too. Heavier, more rigid treadmills generally
+            transmit less rattle than light ones, and some motors are simply quieter. Our guides to
+            <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmills</a>
+            and the
+            <a href="/best-treadmills-for-apartments/" class="text-[#0F62FE] font-medium">best treadmills for apartments</a>
+            cover the choices that make the biggest difference before you ever reach for a pad.
+          </p>
+          <p>
+            Check your lease or building rules as well. Some buildings set quiet hours or flooring
+            requirements, and a short conversation with the neighbour below about when you train
+            will often do more than any pad.
+          </p>
+        </div>
+
+        <div id="who-should-skip" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Who Should Buy Something Else</h2>
+<p>
+            <strong>If your treadmill is on a ground-floor concrete slab</strong>, vibration has
+            nowhere much to go. A floor-protection mat is useful; isolation pads add little.
+          </p>
+          <p>
+            <strong>If the noise is coming from the machine</strong> — a squeak, a knock, a motor
+            that sounds strained — fix the cause first. Pads will hide nothing that matters, and some
+            of those noises are early signs of wear.
+          </p>
+          <p>
+            <strong>If the treadmill is on thick carpet</strong>, choose a heavy rubber mat, and on
+            deep pile a rigid board beneath it, rather than pads that sink into the pile.
+          </p>
+          <p>
+            <strong>If you want a quiet machine for an upstairs flat and have not bought one yet</strong>,
+            spend the time on the treadmill rather than the accessories. A walking pad used for
+            walking, or a heavier treadmill with a well-supported deck, will usually do more for the
+            people below than anything you can put under a lighter machine.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Do anti-vibration pads work for treadmills?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Yes, within limits. Pads reduce the vibration a treadmill passes into the floor, which softens motor hum, rattles and the sharper part of each footfall. They do not stop the heavy thud of running reaching the room below, and they do nothing for noise in the room itself. They make the biggest difference to walking treadmills and walking pads on timber floors.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Are Sorbothane pads better than rubber pads under a treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Sorbothane is designed to absorb vibration rather than simply cushion, so for the same thickness it generally does more for hum and rattle than plain rubber. Rubber and rubber-cork pads are firmer and cheaper, which makes them very stable. For a running treadmill, a firm grade of Sorbothane is a good balance; rubber-cork is the budget alternative.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Will anti-vibration pads stop my downstairs neighbors hearing my treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                They will reduce what your neighbours hear, not stop it. The rhythmic thud of running is a slow, heavy impact that no pad can fully absorb without letting the treadmill bounce. A thick dense rubber mat usually helps more than pads alone. Walking rather than running, training at sensible hours and choosing a quieter machine make the biggest difference.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How thick should treadmill vibration pads be?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                For a treadmill with a runner on it, thin to moderate pads, roughly 1/4 to 1/2 inch for Sorbothane, are the sensible range. Thicker, softer pads isolate more in theory but let the machine move and rock. Every contact point needs an identical pad, and you should re-level the treadmill after fitting them and check the belt still runs centrally.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Should I put pads under a treadmill mat or on top of it?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                If you use both, the mat goes on the floor and firm, thin pads go on top of it under each foot. That adds a second layer of isolation. Keep the pads firm, because every soft layer adds movement, and never put pads on a soft foam mat. On carpet, use a dense rubber mat alone rather than pads.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Can anti-vibration pads make a treadmill unsafe?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                They can if they are too soft, too thick, mismatched or out of position. A treadmill that rocks or shifts on its pads can let the belt drift and makes a stumble more likely. Use identical firm pads under every contact point, do not stack them, level the machine after fitting, and remove them if the treadmill moves while you run.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes With Treadmill Anti-Vibration Pads</h2>
+          <p class="text-gray-700 leading-relaxed">Each of these turns a cheap fix into one that either does nothing or makes the treadmill less safe.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying the softest, thickest pad</h3>
+              <p class="text-gray-700 text-sm m-0">Soft, thick pads look like they should absorb the most, but under a moving runner they let the deck sink and rock with every stride. That is uncomfortable, wears the frame and belt, and makes a stumble more likely. Choose a firm grade and a moderate thickness, and judge success by whether the machine stays steady, not by how squashy the pad feels.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Padding only some of the feet</h3>
+              <p class="text-gray-700 text-sm m-0">Putting pads under the two rear feet and leaving the front on the floor tilts the deck and twists the frame. The same goes for mixing pad types or thicknesses. Every point that carries weight when the treadmill is running needs an identical pad. Then level the machine on its pads and check that the belt still tracks centrally.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Expecting pads to silence running upstairs</h3>
+              <p class="text-gray-700 text-sm m-0">Pads soften hum and rattle and take the edge off footfalls, but the slow thud of a runner landing is more than any pad can absorb without the treadmill bouncing. If the complaint is a rhythmic thump, add a thick dense rubber mat, walk rather than run at sensitive times, and talk to the neighbour about when you train.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Never checking the pads again</h3>
+              <p class="text-gray-700 text-sm m-0">Pads settle and creep, especially under folding treadmills that are moved and set up again. A pad that has slid half out from under a foot is holding one corner of the machine on its edge. Check the pads after the first few sessions and every few weeks after that, re-centre any that have moved, and re-level the treadmill if needed.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Buying Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/best-treadmill-mats/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Mats</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill Mats</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Floor-protection and noise mats sized for real machines, from vinyl to thick rubber.</p>
+            </a>
+            <a href="/quiet-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Noise</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Quiet Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The machine side of the noise problem, which matters more than any pad.</p>
+            </a>
+            <a href="/best-treadmills-for-apartments/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Apartments</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills for Apartments</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Machines and habits that keep the peace with the people below.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">For a treadmill on a hard floor, buy a set of firm Sorbothane pads such
+            as the Isolate It! 4 x 4-inch squares</strong>, identical under every foot, and level the
+            machine after fitting them. If the treadmill is upstairs, put a thick dense rubber mat
+            under it first; pads alone will soften the noise below, not remove it.
+          </p>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            Whatever you choose, stability comes first: no stacking, no soft foam, no mismatched pads,
+            and check them every few weeks. If the treadmill rocks or shakes even on a level floor,
+            the pads are not the answer —
+            <a href="/treadmill-shaking-or-wobbling/" class="text-[#5AA9FF] font-bold no-underline">start with the causes of a wobbling treadmill</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+</Layout>
