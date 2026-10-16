@@ -13,7 +13,8 @@ const PRODUCTS = [
     name: "ProForm Pro 5000",
     category: "Best Running Deck for the Money",
     badge: "Best Value Deck",
-    amazonUrl: "https://www.amazon.com/s?k=ProForm%20Pro%205000+Treadmill&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=ProForm+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$1,499-$1,999",
     specs: "60 x 22 in. deck · 3.75 CHP · -3% to 15% incline · 0-12 mph · 300 lb capacity",
@@ -315,7 +316,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

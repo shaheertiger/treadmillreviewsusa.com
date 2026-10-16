@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Heavy-duty vinyl treadmill mat",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=SuperMats+Heavy+Duty+TreadMat+Treadmill+Mat&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$50–$75",
     specs: "30 x 72, 36 x 78 or 36 x 90 in. · heavy-duty vinyl · made in USA",
@@ -36,7 +37,8 @@ const PRODUCTS = [
     name: "Sunny Health & Fitness Floor Protector Mat",
     category: "Budget PVC foam mat in four sizes",
     badge: "Best Budget",
-    amazonUrl: "https://www.amazon.com/s?k=Sunny+Health+Fitness+Treadmill+Floor+Protector+Mat&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B01GSMN9WY?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$20–$45",
     specs: "79 x 35.5 in. (M) or 90.5 x 39.5 in. (L) · 0.16 in. thick · high-density PVC foam",
@@ -60,6 +62,7 @@ const PRODUCTS = [
     category: "Recycled rubber mat for big machines and carpet",
     badge: "Best for Carpet & Big Machines",
     amazonUrl: "https://www.amazon.com/dp/B001VA8NRU?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$75–$90",
     specs: "48 x 90 in. (also 48 x 78 in.) · recycled tyre rubber",
@@ -82,7 +85,8 @@ const PRODUCTS = [
     name: "FlooringInc Premium Rubber Mat (4 x 6 ft, 3/8 in.)",
     category: "Thick vulcanized rubber mat for upstairs rooms",
     badge: "Best for Upstairs",
-    amazonUrl: "https://www.amazon.com/s?k=FlooringInc+Premium+Rubber+Mat+4x6+3%2F8&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=rubber+gym+floor+mat+4x6+3%2F8+inch&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$140–$210",
     specs: "48 x 72 in. · 3/8 in. thick · 100% recycled vulcanized rubber · 5-year warranty",
@@ -105,7 +109,8 @@ const PRODUCTS = [
     name: "BalanceFrom High Density Equipment Mat (2.5 x 5 ft)",
     category: "Compact mat sized for walking pads",
     badge: "Best for Walking Pads",
-    amazonUrl: "https://www.amazon.com/s?k=BalanceFrom+High+Density+Treadmill+Exercise+Bike+Equipment+Mat+2.5+x+5&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=high+density+exercise+equipment+mat&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$15–$35",
     specs: "30 x 60 in. (also 24 x 48 in. and 36 x 78 in.) · high-density mat",
@@ -425,7 +430,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

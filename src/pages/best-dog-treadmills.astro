@@ -13,7 +13,8 @@ const PRODUCTS = [
     name: "dogPACER LF 3.1",
     category: "Best overall dog treadmill for medium and large dogs",
     badge: "Best Overall",
-    amazonUrl: "https://www.amazon.com/s?k=dogPACER+LF+3.1+Dog+Treadmill&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=dog+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$500–$600",
     specs: "71 x 16.5 in. running area · 0.5–7.5 mph · dogs up to 179 lb · folds for storage",
@@ -36,7 +37,8 @@ const PRODUCTS = [
     name: "dogPACER LF 4.0",
     category: "Best app-controlled dog treadmill",
     badge: "Best Smart Pick",
-    amazonUrl: "https://www.amazon.com/s?k=dogPACER+LF+4.0+Smart+Dog+Treadmill&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=dog+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$750–$800",
     specs: "0.5–7.5 mph · dogs up to 179 lb · adjustable incline, can run flat · Bluetooth app control · folds",
@@ -59,7 +61,8 @@ const PRODUCTS = [
     name: "GoPet PetRun PR700",
     category: "Best dog treadmill for toy breeds",
     badge: "Best for Toy Breeds",
-    amazonUrl: "https://www.amazon.com/s?k=GoPet+PetRun+PR700+Dog+Treadmill&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=dog+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "Around $590",
     specs: "28 x 16 in. running area · up to 8 mph · dogs up to 44 lb · remote control",
@@ -82,7 +85,8 @@ const PRODUCTS = [
     name: "GoPet PetRun PR720F",
     category: "Best dog treadmill for small and medium dogs",
     badge: "Best for Small–Medium Dogs",
-    amazonUrl: "https://www.amazon.com/s?k=GoPet+PetRun+PR720F+Dog+Treadmill&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=dog+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$795–$1,250",
     specs: "52 x 16 in. running area · dogs up to 132 lb",
@@ -105,7 +109,8 @@ const PRODUCTS = [
     name: "Dog Runner Revolution Pro",
     category: "Best dog treadmill for large and giant breeds",
     badge: "Best for Giant Breeds",
-    amazonUrl: "https://www.amazon.com/s?k=Dog+Runner+Revolution+Pro+Dog+Treadmill&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=dog+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$2,400–$2,500",
     specs: "0.5–11.2 mph · 0–15% powered incline · 3.5 HP motor",
@@ -129,6 +134,7 @@ const PRODUCTS = [
     category: "Best non-motorised dog treadmill",
     badge: "Best Slatmill",
     amazonUrl: "https://www.amazon.com/s?k=Dog+Trotter+USA+Classic+Slatmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$2,700–$3,900",
     specs: "Non-motorised slatmill · Medium, Large and Maxx sizes · Maxx rated for dogs up to 170 lb",
@@ -456,7 +462,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Folding under-desk walking pad",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=WalkingPad+A1+Pro+Foldable+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$530–$700",
     specs: "47 x 16.5 in. running area · 0.5–3.75 mph · folds to 32.5 x 21.5 x 5 in.",
@@ -37,6 +38,7 @@ const PRODUCTS = [
     category: "Budget folding walking pad",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/dp/B0H2YYZTL8?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$299–$329",
     specs: "47.6 in. walking area length · 1–4 mph · 242 lb capacity · folds to about 32 in.",
@@ -59,7 +61,8 @@ const PRODUCTS = [
     name: "LifeSpan TR1200Pro-GlowUp",
     category: "Non-folding under-desk treadmill",
     badge: "Best for Long Workdays",
-    amazonUrl: "https://www.amazon.com/s?k=LifeSpan+TR1200+GlowUp+Under+Desk+Treadmill&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=under+desk+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$1,100–$1,300",
     specs: "20 x 48 in. belt · 0.4–4.0 mph · 4.6 in. step-up height",
@@ -83,6 +86,7 @@ const PRODUCTS = [
     category: "Heavy-duty under-desk treadmill",
     badge: "Best for Tall and Heavy",
     amazonUrl: "https://www.amazon.com/s?k=LifeSpan+TX6+GlowUp+Under+Desk+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$1,300–$1,500",
     specs: "20 x 48 in. belt · 400 lb capacity · 0.4–6.0 mph",
@@ -106,6 +110,7 @@ const PRODUCTS = [
     category: "Vertical-fold walking treadmill with handles",
     badge: "Best With Handles",
     amazonUrl: "https://www.amazon.com/s?k=WalkingPad+MX10+Vertical+Fold+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$699–$899",
     specs: "48 x 16.1 in. running area · 1–6.5 mph · 265 lb capacity · foldable side handles",
@@ -129,6 +134,7 @@ const PRODUCTS = [
     category: "Folding 2-in-1 walking and running pad",
     badge: "Best for Walking and Jogging",
     amazonUrl: "https://www.amazon.com/dp/B0F8VSLK43?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$799–$999",
     specs: "47.2 x 17.3 in. running area · 1–7.5 mph · folding side handrails · 265 lb capacity",
@@ -454,7 +460,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

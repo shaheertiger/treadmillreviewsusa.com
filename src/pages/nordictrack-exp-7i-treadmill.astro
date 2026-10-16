@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Compact iFIT Treadmill (Older Model)",
     badge: "No Longer in the Lineup",
     amazonUrl: "https://www.amazon.com/s?k=NordicTrack+EXP+7i+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Used and clearance prices vary",
     specs: "20 x 55 in. belt · 2.6 CHP · 0-12% incline · 0-10 mph · 300 lb max user · 7 in. tilting touchscreen",
@@ -38,6 +39,7 @@ const PRODUCTS = [
     category: "Closest Current Equivalent: LCD and Tablet Shelf",
     badge: "Current Retail Model",
     amazonUrl: "https://www.amazon.com/s?k=NordicTrack+T+Series+8+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/nordictrack-t-series-treadmill/",
     priceRange: "Around $999",
     specs: "0-12% incline · 0-12 mph · 325 lb max user · SelectFlex deck · folding · 7 in. LCD (retailer listings)",
@@ -60,6 +62,7 @@ const PRODUCTS = [
     category: "Current Touchscreen Replacement",
     badge: "Sold on NordicTrack.com",
     amazonUrl: "https://www.amazon.com/dp/B0D7XGWMRD?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/nordictrack-t-series-treadmill/",
     priceRange: "$1,299-$1,799",
     specs: "20 x 60 in. belt · 3.0 CHP (NordicTrack rating) · 0-12% incline · 0-12 mph · 325 lb max user · 10 in. tilting touchscreen",
@@ -363,7 +366,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

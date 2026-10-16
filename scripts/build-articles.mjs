@@ -24,10 +24,19 @@ const AUTHOR = 'Morgan Reyes';
 // A product with one links straight to its listing; any other keeps its tagged search link.
 const ASIN_PATH = join(ROOT, 'src', 'data', 'product-asins.json');
 const ASINS = existsSync(ASIN_PATH) ? JSON.parse(readFileSync(ASIN_PATH, 'utf8')) : {};
+// Products Amazon US does not carry (sold direct or through dealers) get a tagged search for
+// their category instead of their own name, which would return nothing useful. Their button
+// says "Shop Similar" so the click is honest about where it goes.
+const FALLBACK_PATH = join(ROOT, 'src', 'data', 'amazon-fallbacks.json');
+const FALLBACKS = existsSync(FALLBACK_PATH) ? JSON.parse(readFileSync(FALLBACK_PATH, 'utf8')) : {};
+const searchUrl = (q) => `https://www.amazon.com/s?k=${encodeURIComponent(q).replace(/%20/g, '+')}&tag=sktiger-20`;
+const isFallback = (p) => !ASINS[p.name] && Boolean(FALLBACKS[p.name]);
 const amazonUrl = (p) =>
   ASINS[p.name]
     ? `https://www.amazon.com/dp/${ASINS[p.name].asin}?tag=sktiger-20&linkCode=ll1`
-    : p.amazonUrl ?? `https://www.amazon.com/s?k=${encodeURIComponent(p.name)}+Treadmill&tag=sktiger-20`;
+    : FALLBACKS[p.name]
+      ? searchUrl(FALLBACKS[p.name])
+      : p.amazonUrl ?? `https://www.amazon.com/s?k=${encodeURIComponent(p.name)}+Treadmill&tag=sktiger-20`;
 
 const esc = (s) => String(s).replace(/\\/g, '\\\\').replace(/`/g, '\\`').replace(/\$\{/g, '\\${');
 const jsStr = (s) => JSON.stringify(String(s));
@@ -52,6 +61,7 @@ ${products
     category: ${jsStr(p.category)},
     badge: ${jsStr(p.badge)},
     amazonUrl: ${jsStr(amazonUrl(p))},
+    amazonLabel: ${jsStr(isFallback(p) ? 'Shop Similar on Amazon' : 'Check Price on Amazon')},
     reviewUrl: ${p.reviewUrl ? jsStr(p.reviewUrl) : 'null'},
     priceRange: ${jsStr(p.priceRange)},
     specs: ${jsStr(p.specs)},
@@ -187,7 +197,7 @@ const PRODUCT_CARDS = `      <!-- Product cards -->
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Best Overall Treadmill for a Garage",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Spirit+Fitness+XT685+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$2,899–$3,199",
     specs: "22 x 60 in. running surface · 4.0 HP · 0.5–12 mph · 425 lb capacity · 6.9 in. step-up · non-folding",
@@ -36,7 +37,8 @@ const PRODUCTS = [
     name: "Spirit XT385",
     category: "Best Folding Treadmill for a Garage",
     badge: "Best Folding",
-    amazonUrl: "https://www.amazon.com/s?k=Spirit+Fitness+XT385+Treadmill&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B006BE8T0W?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$2,399–$2,699",
     specs: "60 in. deck length · 3.5 HP · 0.5–12 mph · 375 lb capacity · folds to 43 in. long",
@@ -60,6 +62,7 @@ const PRODUCTS = [
     category: "Best Garage Treadmill for Walkers",
     badge: "Lowest Price",
     amazonUrl: "https://www.amazon.com/s?k=Spirit+Fitness+XT185+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$1,899–$2,199",
     specs: "20 x 55 in. running surface · 3.0 HP · 0.5–10 mph · 275 lb capacity · folds to 42 in. long",
@@ -82,7 +85,8 @@ const PRODUCTS = [
     name: "Spirit XT285",
     category: "Narrower Folding Option for Runners",
     badge: "If Discounted",
-    amazonUrl: "https://www.amazon.com/s?k=Spirit+Fitness+XT285+Treadmill&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B07DLJ1QMH?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$2,299–$2,599",
     specs: "20 x 60 in. running surface · 3.25 HP · 0.5–12 mph · 350 lb capacity · folds to 44.3 in. long",
@@ -106,6 +110,7 @@ const PRODUCTS = [
     category: "Premium Non-Folding Pick (Garage Terms Unconfirmed)",
     badge: "Ask First",
     amazonUrl: "https://www.amazon.com/s?k=Life+Fitness+Run+CX+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/life-fitness-run-cx-treadmill/",
     priceRange: "Around $4,899",
     specs: "22 x 60 in. belt · 3.0 HP continuous · 0.5–12 mph · 0–15% incline · 400 lb capacity · non-folding",
@@ -442,7 +447,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

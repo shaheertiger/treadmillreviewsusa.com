@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Highest incline for the money",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=NordicTrack+X16+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $2,800–$3,500",
     specs: "22 x 60 in. deck · -6% to 40% incline · 0-12 mph · 400 lb capacity · non-folding",
@@ -37,6 +38,7 @@ const PRODUCTS = [
     category: "Highest incline with the biggest screen",
     badge: "Premium Pick",
     amazonUrl: "https://www.amazon.com/s?k=NordicTrack+X24+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $3,000–$4,000",
     specs: "22 x 60 in. deck · -6% to 40% incline · 0-12 mph · 24 in. pivoting touchscreen · 400 lb capacity · non-folding",
@@ -59,7 +61,8 @@ const PRODUCTS = [
     name: "TRUE Alpine Runner",
     category: "Highest incline on a commercial-grade machine",
     badge: "Commercial Pick",
-    amazonUrl: "https://www.amazon.com/s?k=TRUE+Fitness+Alpine+Runner+Incline+Trainer&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=incline+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "From about $10,300",
     specs: "22 x 60 in. running surface · -3% to 30% incline · 400 lb capacity · non-folding · dedicated 20-amp circuit",
@@ -83,6 +86,7 @@ const PRODUCTS = [
     category: "Best 15% treadmill without a subscription",
     badge: "Best 15% Incline",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+7.8+AT+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $1,900–$2,000",
     specs: "22 x 60 in. deck · 0-15% incline · 0.5-12 mph · 375 lb capacity · folding",
@@ -106,6 +110,7 @@ const PRODUCTS = [
     category: "Cheapest full-size 15% incline with lifetime motor cover",
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+7.0+AT+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/horizon-7-0-at-treadmill/",
     priceRange: "Around $930–$1,100",
     specs: "20 x 60 in. deck · 0-15% incline · 0.5-12 mph · 325 lb capacity · folding",
@@ -129,6 +134,7 @@ const PRODUCTS = [
     category: "Cheapest 15% incline from a major brand",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/s?k=Bowflex+T6+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/bowflex-t6-treadmill/",
     priceRange: "Around $900–$1,300",
     specs: "20 x 60 in. deck · 0-15% incline · 0.5-12 mph · 325 lb capacity · folding",
@@ -481,7 +487,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

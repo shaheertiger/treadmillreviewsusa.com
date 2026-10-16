@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Commercial Club Treadmill Sold for Home Use",
     badge: "Commercial Grade",
     amazonUrl: "https://www.amazon.com/s?k=Life+Fitness+Integrity+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "About $10,299 new (SL console)",
     specs: "22 x 60 in. deck · 4 HP continuous AC (8 HP peak) · 0.5-14 mph · 0-15% incline · 400 lb capacity · dedicated 120 V / 20 A circuit",
@@ -332,7 +333,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

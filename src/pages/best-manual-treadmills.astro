@@ -13,7 +13,8 @@ const PRODUCTS = [
     name: "AssaultRunner Pro",
     category: "Curved Non-Motorised Trainer",
     badge: "Best Overall",
-    amazonUrl: "https://www.amazon.com/s?k=Assault+Fitness+AssaultRunner+Pro&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=curved+manual+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: "/assaultrunner-pro-treadmill/",
     priceRange: "Around $3,200–$3,500",
     specs: "62 x 17 in. curved slat deck · 350 lb max user · 280 lb · no motor or outlet needed",
@@ -37,6 +38,7 @@ const PRODUCTS = [
     category: "Flat Folding Manual Walker",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/s?k=Sunny+Health+Fitness+SF-T1407SMART+Manual+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$200–$240",
     specs: "42 in. long deck · fixed 14% (8°) incline · dual flywheels · Bluetooth console · folds",
@@ -59,7 +61,8 @@ const PRODUCTS = [
     name: "Stamina Avari Adjustable Height Treadmill",
     category: "Flat Manual With Magnetic Resistance",
     badge: "Best Adjustable",
-    amazonUrl: "https://www.amazon.com/s?k=Stamina+Avari+Adjustable+Height+Magnetic+Manual+Treadmill&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=manual+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$200–$320",
     specs: "41.75 x 12.5 in. belt · 8 magnetic levels · 5°, 6.5° or 8° incline · 250 lb max · 54 lb",
@@ -82,7 +85,8 @@ const PRODUCTS = [
     name: "Stamina InMotion T900 Manual Treadmill",
     category: "Basic Folding Manual Walker",
     badge: "Simplest",
-    amazonUrl: "https://www.amazon.com/s?k=Stamina+InMotion+T900+Manual+Treadmill&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=manual+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$240–$300",
     specs: "41 x 12.4 in. belt · 8° or 10° incline · dual flywheels · 225 lb max · 52 lb",
@@ -106,6 +110,7 @@ const PRODUCTS = [
     category: "Curved Trainer With Magnetic Resistance",
     badge: "Best Curved Value",
     amazonUrl: "https://www.amazon.com/dp/B0H2KC6YL5?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$2,200–$2,400",
     specs: "62 x 19 in. slat belt · 8 magnetic levels · 330 lb max user · 261 lb",
@@ -421,7 +426,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

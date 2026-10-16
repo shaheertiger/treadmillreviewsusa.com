@@ -13,7 +13,8 @@ const PRODUCTS = [
     name: "Isolate It! Sorbothane Vibration Isolation Square Pad (4 x 4 in.)",
     category: "Sorbothane isolation pad for treadmill feet",
     badge: "Best Overall",
-    amazonUrl: "https://www.amazon.com/s?k=Isolate+It+Sorbothane+Vibration+Isolation+Square+Pad+4+x+4&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=sorbothane+vibration+isolation+pad&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$15–$29 per 2-pack",
     specs: "4 x 4 in. · 0.10 to 0.50 in. thick · 30, 50 or 70 durometer · sold in 2-packs · Sorbothane",
@@ -36,7 +37,8 @@ const PRODUCTS = [
     name: "Isolate It! Sorbothane Reinforced Heavy Duty Square Pad (2.5 x 2.5 in.)",
     category: "Fabric-faced Sorbothane pad that can be repositioned",
     badge: "Best for Machines You Move",
-    amazonUrl: "https://www.amazon.com/s?k=Isolate+It+Sorbothane+Reinforced+Heavy+Duty+Square+Pad+fabric&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B00K32IGN8?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$50–$70",
     specs: "2.5 x 2.5 x 0.25 in. · 30, 50 or 70 durometer · fabric top and bottom · Sorbothane",
@@ -59,7 +61,8 @@ const PRODUCTS = [
     name: "DiversiTech MP-4C Rubber/Cork Anti-Vibration Pad",
     category: "Budget rubber-and-cork equipment pad",
     badge: "Best Budget",
-    amazonUrl: "https://www.amazon.com/s?k=DiversiTech+MP-4C+Anti-Vibration+Pad+4x4x7%2F8&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=rubber+cork+anti+vibration+pad&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$3–$9 each",
     specs: "4 x 4 x 7/8 in. · cork laminated between two ribbed rubber layers",
@@ -82,7 +85,8 @@ const PRODUCTS = [
     name: "FlooringInc Premium Rubber Mat (4 x 6 ft, 3/8 in.)",
     category: "Dense rubber mat in place of pads",
     badge: "Best Mat Alternative",
-    amazonUrl: "https://www.amazon.com/s?k=FlooringInc+Premium+Rubber+Mat+4x6+3%2F8&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=rubber+gym+floor+mat+4x6+3%2F8+inch&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$140–$155",
     specs: "48 x 72 in. · 3/8 in. thick (also sold in 8 mm) · recycled vulcanized rubber",
@@ -104,7 +108,8 @@ const PRODUCTS = [
     name: "Tractor Supply Thick Rubber Stall Mat (4 x 6 ft, 3/4 in.)",
     category: "Heavy rubber mat for garages and basements",
     badge: "Best Heavy Mat",
-    amazonUrl: "https://www.amazon.com/s?k=4+x+6+ft+3%2F4+in+thick+rubber+stall+mat&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=rubber+stall+mat+4x6+3%2F4+inch&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$40–$57",
     specs: "48 x 72 in. · 3/4 in. thick · recycled vulcanized rubber · 5-year limited warranty",
@@ -433,7 +438,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

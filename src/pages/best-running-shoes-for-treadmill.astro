@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Neutral daily trainer",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0FP79W5FR?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $150",
     specs: "36/26 mm stack · 10 mm drop · about 10.2 oz (men’s 9) · DNA Loft v3 foam",
@@ -37,6 +38,7 @@ const PRODUCTS = [
     category: "Neutral cushioned trainer",
     badge: "Best for Hot Rooms",
     amazonUrl: "https://www.amazon.com/dp/B0H2NP59W3?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $155",
     specs: "41.5/33.5 mm stack (men’s) · 8 mm drop · FF Blast Max and FF Turbo Squared foams",
@@ -60,6 +62,7 @@ const PRODUCTS = [
     category: "Max-cushion neutral trainer",
     badge: "Best for Long Runs",
     amazonUrl: "https://www.amazon.com/dp/B0F4MDCB2X?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $170",
     specs: "40/34 mm stack · 6 mm drop · Infinion foam",
@@ -83,6 +86,7 @@ const PRODUCTS = [
     category: "Neutral daily trainer",
     badge: "Best for Wider Feet",
     amazonUrl: "https://www.amazon.com/dp/B0FRN9QWPD?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$140–$145",
     specs: "37/27 mm stack · 10 mm drop · ReactX foam with full-length Air Zoom unit",
@@ -106,6 +110,7 @@ const PRODUCTS = [
     category: "Lighter tempo trainer (nylon plate)",
     badge: "Best for Tempo Runs",
     amazonUrl: "https://www.amazon.com/dp/B0DJWPPTPQ?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$170–$175",
     specs: "36/28 mm stack · 8 mm drop · about 8.4 oz (men’s 9) · nylon plate",
@@ -129,6 +134,7 @@ const PRODUCTS = [
     category: "Stability daily trainer",
     badge: "Best Stability Shoe",
     amazonUrl: "https://www.amazon.com/dp/B0DM3DL995?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $145",
     specs: "37/27 mm stack · 10 mm drop · about 10.6 oz (men’s 9) · GuideRails support",
@@ -152,6 +158,7 @@ const PRODUCTS = [
     category: "Max-cushion shoe for walking and easy running",
     badge: "Best for Incline Walking",
     amazonUrl: "https://www.amazon.com/dp/B0D5FVDNS6?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $170",
     specs: "43/38 mm stack · 5 mm drop (HOKA) · about 10.5 oz (men’s 9) · supercritical EVA foam",
@@ -474,7 +481,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

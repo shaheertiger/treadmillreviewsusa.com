@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Best Overall Foot Pod for Treadmill",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Stryd+5.0+Footpod&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $299",
     specs: "8 g shoe pod · ANT+ + Bluetooth · rechargeable, about 20 hr of running · on Zwift footpod list",
@@ -36,6 +37,7 @@ const PRODUCTS = [
     category: "Best Foot Pod for COROS Watches",
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/s?k=COROS+POD+2&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$99",
     specs: "5.6 g pod · Bluetooth to COROS watches · 3 ATM · rechargeable with charging dock",
@@ -58,6 +60,7 @@ const PRODUCTS = [
     category: "Best Treadmill Pace Sensor for Garmin Watches",
     badge: "Garmin Pick",
     amazonUrl: "https://www.amazon.com/dp/B0F7Z6N7BR?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $170",
     specs: "Chest strap · ANT+ + Bluetooth · rechargeable, up to 2 months at 1 hr/day · 5 ATM",
@@ -79,7 +82,8 @@ const PRODUCTS = [
     name: "NPE Runn Smart Treadmill Sensor",
     category: "Best Belt Sensor for a Home Treadmill",
     badge: "Measures the Belt",
-    amazonUrl: "https://www.amazon.com/s?k=NPE+Runn+Smart+Treadmill+Sensor&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=running+foot+pod&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "Around $125",
     specs: "Mounts on the treadmill · reads belt speed · ANT+ + Bluetooth · speed, incline and cadence",
@@ -101,7 +105,8 @@ const PRODUCTS = [
     name: "Stryd Duo 5.0",
     category: "Two-Pod Option for Data-Led Runners",
     badge: "Premium Pick",
-    amazonUrl: "https://www.amazon.com/s?k=Stryd+Duo+5.0&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=running+foot+pod&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "Around $599",
     specs: "Two 8 g shoe pods · ANT+ + Bluetooth · dual-sided metrics · magnetic keychain charging",
@@ -431,7 +436,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

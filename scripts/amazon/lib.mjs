@@ -88,6 +88,8 @@ const ACCESSORY = new Set([
   'card', 'filter', 'supply', 'charger', 'part', 'parts', 'bike', 'elliptical', 'rower', 'mat',
   'case', 'kit', 'insoles', 'laces', 'battery', 'screen', 'protector', 'sticker', 'decal',
   'cross', 'wheel', 'wheels', 'pedal', 'pedals', 'seat', 'cushion', 'bracket', 'knob', 'key',
+  // Used or refurbished stock is not the product a page recommends.
+  'renewed', 'refurbished',
 ]);
 // Words that distinguish one model from its sibling (Strol 2E vs Strol 2E Pro,
 // W60 vs W60 Plus, Pro 2000 vs Carbon Pro 2000, MD2 vs MD2-AV). They must appear
@@ -98,6 +100,16 @@ export const GENERIC = new Set(['Flat-Fold Walking Pad', '2-in-1 Walking Pad Wit
 // Names sold in several generations where an Amazon listing cannot be tied to the
 // version a page describes; these keep their tagged search links until checked by hand.
 export const VERSION_UNCLEAR = new Set(['Sole F80', 'Sole F85']);
+// Products whose best Amazon match was checked by hand on 2026-10-16 and rejected:
+// a book, a cement set for a cast-iron one, an older model, a coax variant, bundles,
+// a refurbished or limited-edition listing, a different size or configuration from
+// the one the page prices. They keep tagged search links until a clean listing exists.
+export const HAND_REJECTED = new Set([
+  'Life Fitness F3', 'Life Fitness Club Series+', 'CAP Strength Adjustable Cast Iron Dumbbell Set, 40 lb',
+  'COROS POD 2', 'Beats Powerbeats Fit', 'Theragun Mini (3rd Gen)', 'Panamax MD2', 'Wahoo KICKR Headwind',
+  "Mrs. Meyer's Clean Day Liquid Dish Soap", 'Bells of Steel Cable Tower (Plate-Loaded)',
+  'REP Fitness Strata Weight Vest', 'PowerBlock Elite USA 90', 'Garmin Forerunner 170', 'PowerBlock Pro 100 EXP',
+]);
 
 /**
  * Strict match, 0 to 1. The brand (first word) and every token carrying a digit —
@@ -107,7 +119,7 @@ export const VERSION_UNCLEAR = new Set(['Sole F80', 'Sole F85']);
  * "Polar H9"; "Commercial 1750" never matches "Commercial 1250".
  */
 export function matchScore(name, title) {
-  if (GENERIC.has(name) || VERSION_UNCLEAR.has(name) || !title) return 0;
+  if (GENERIC.has(name) || VERSION_UNCLEAR.has(name) || HAND_REJECTED.has(name) || !title) return 0;
   const n = tokens(name);
   const nSet = new Set(n);
   const t = new Set(tokens(title));

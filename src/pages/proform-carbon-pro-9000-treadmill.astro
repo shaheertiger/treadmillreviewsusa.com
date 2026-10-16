@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "ProForm’s Flagship Folding Treadmill",
     badge: "Current Model: PFTL16925",
     amazonUrl: "https://www.amazon.com/dp/B0FKTTWRZW?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$1,599-$1,799",
     specs: "20 x 60 in. belt · 3.6 CHP · 0-12% incline · 0-12 mph · 350 lb max user · 16 in. HD touchscreen",
@@ -324,7 +325,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Best Overall for Small Rooms",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Sole%20F63+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/sole-f63-treadmill/",
     priceRange: "$899-$1,099",
     specs: "Folded ~40 x 35 in., 58 in. tall · hydraulic fold, ~30 sec · one person",
@@ -36,6 +37,7 @@ const PRODUCTS = [
     category: "Smallest Measured Footprint",
     badge: "Most Compact",
     amazonUrl: "https://www.amazon.com/s?k=ProForm%20Power%20995i+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/proform-power-995i-treadmill/",
     priceRange: "$799-$999",
     specs: "Folded ~38 x 33 in., 55 in. tall · assisted fold, ~40 sec · lightest here",
@@ -58,6 +60,7 @@ const PRODUCTS = [
     category: "Best Budget Compact",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/s?k=NordicTrack%20C%20700+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/nordictrack-c-700-treadmill/",
     priceRange: "$599-$799",
     specs: "Folded ~39 x 36 in., 56 in. tall · assisted fold, ~45 sec · low step-up",
@@ -80,6 +83,7 @@ const PRODUCTS = [
     category: "Best Compact Machine You Can Run On",
     badge: "Best for Runners",
     amazonUrl: "https://www.amazon.com/dp/B0HFSZR19W?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/sole-f65-treadmill/",
     priceRange: "$1,199-$1,399",
     specs: "Folded ~42 x 37 in., 60 in. tall · hydraulic fold, ~30 sec · 60 in. deck",
@@ -102,6 +106,7 @@ const PRODUCTS = [
     category: "Best Compact With a Screen",
     badge: "Best Display",
     amazonUrl: "https://www.amazon.com/s?k=ProForm%20Power%201295i+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/proform-power-1295i-treadmill/",
     priceRange: "$999-$1,299",
     specs: "Folded ~41 x 36 in., 57 in. tall · assisted fold, ~50 sec · incline to 12%",
@@ -124,6 +129,7 @@ const PRODUCTS = [
     category: "Best Compact With Guided Content",
     badge: "Best Classes",
     amazonUrl: "https://www.amazon.com/s?k=NordicTrack%20C%20990+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/nordictrack-c-990-treadmill/",
     priceRange: "$999-$1,299",
     specs: "Folded ~42 x 37 in., 58 in. tall · assisted fold, ~55 sec · 60 in. deck",
@@ -506,7 +512,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

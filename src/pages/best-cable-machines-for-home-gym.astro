@@ -1,0 +1,932 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "Best Cable Machines for a Home Gym (2026): Six Picks by Type";
+const description =
+  "Six home cable machines checked against maker pages and reviews: a functional trainer, rack add-on, plate-loaded tower, all-in-one and two digital units.";
+
+const PRODUCTS = [
+  {
+    id: "rep-arcadia",
+    name: "REP Fitness Arcadia Functional Trainer",
+    category: "Dual-stack functional trainer",
+    badge: "Best Overall",
+    amazonUrl: "https://www.amazon.com/dp/B0CZLZRP6G?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    reviewUrl: null,
+    priceRange: "$2,199.99",
+    specs: "2 x 170 lb stacks (upgradeable to 220 lb) · 2:1 ratio · 35.8 x 55.3 x 80.8 in (L x W x H) · 81 in cable travel",
+    pros: [
+      "Two 170 lb stacks at 2:1 give about 85 lb of felt resistance per side, with smaller felt steps than a 1:1 stack",
+      "At 35.8 in deep, it is compact for a dual-stack functional trainer",
+      "Stacks can be upgraded to 220 lb each later, and REP sells add-on weights for finer jumps",
+      "Long cable travel for tall users and full-range movements",
+    ],
+    cons: [
+      "Felt load tops out well below what many lifters row or pull down with a barbell or a 1:1 machine",
+      "Usable width between the uprights is narrow, a drawback Garage Gym Reviews flags",
+      "Assembly is long; owners and reviewers describe several hours with a helper",
+    ],
+    bottomLine: "The pick for anyone with floor space who wants a cable machine as the centre of a home gym. Check the 55.3 in front width and your ceiling first.",
+    description: "REP designed the Arcadia as a compact functional trainer, and the figures that matter agree between REP's page and Garage Gym Reviews: two 170 lb weight stacks, a 2:1 pulley ratio, and a frame 35.8 in deep, 55.3 in wide at the front and 80.8 in tall, with 81 in of cable travel. At 2:1, each 170 lb stack feels like about 85 lb at the handle, and REP's own description is plain about it: moving 100 lb feels like 50. That makes it excellent for accessory, single-arm and athletic work and only moderate for heavy pulldowns. Both stacks can be upgraded to 220 lb each. REP gives the number of cable positions as 32 and a reviewer gives 36, so we have left the count out; either way there is plenty of adjustment. Garage Gym Reviews lists the narrow usable width between uprights and a lengthy assembly as the main drawbacks. It is sold direct from REP and ships by freight; check that any marketplace listing is from REP or an authorised dealer.",
+  },
+  {
+    id: "rep-athena",
+    name: "REP Fitness Athena Selectorized Side-Mount Functional Trainer",
+    category: "Rack-mounted cable attachment",
+    badge: "Best Rack-Mounted",
+    amazonUrl: "https://www.amazon.com/s?k=REP+Fitness+Athena+Side-Mount+Functional+Trainer&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    reviewUrl: null,
+    priceRange: "$949.99–$1,799.99",
+    specs: "170 lb stack per unit (upgradeable to 220 lb) · 2:1 ratio · fits REP PR-4000 or PR-5000 V2 racks, 80 or 93 in · adds 1.8 in of height",
+    pros: [
+      "Adds a functional trainer inside a rack you already own, with almost no extra floor space",
+      "Same 2:1, 170 lb stack format as the standalone REP trainers",
+      "Buy one side now and the second later; single and dual set-ups are sold",
+      "Up to 106 in of cable travel on a 93 in rack, per REP and Garage Gym Reviews",
+    ],
+    cons: [
+      "Only fits REP PR-4000 and PR-5000 V2 racks, in a matching height; not flat-footed REP racks",
+      "Each stack still feels like about 85 lb at 2:1, so heavy pulling is limited",
+      "Installation into the rack is a substantial job; owners suggest setting aside a day",
+    ],
+    bottomLine: "The best way to add cables if you already own a compatible REP rack. If you do not, it is not an option.",
+    description: "The Athena is a selectorized cable stack and pulley column that bolts into the side of a REP PR-4000 or PR-5000 V2 power rack, so the cables share the rack's footprint rather than needing their own. REP and Garage Gym Reviews agree on the essentials: a 170 lb stack per unit, upgradeable to 220 lb, at a 2:1 ratio, so each side feels like about 85 lb at the handle, and up to 106 in of cable travel on a 93 in rack. It adds 1.8 in to the rack's height. REP's page gives two different figures for how much depth it adds at the front of the rack, so we have left that out. It comes in left, right and dual set-ups; we saw $949.99 for one side and $1,799.99 for two at REP. Compatibility is the catch: REP says it fits only those two rack lines, in the same height as the rack, and not its flat-footed racks. A 2021 CPSC recall alert covered strap safety brackets for these racks, not the Athena itself. It is sold direct from REP.",
+  },
+  {
+    id: "bells-of-steel-cable-tower",
+    name: "Bells of Steel Cable Tower (Plate-Loaded)",
+    category: "Plate-loaded pulley tower",
+    badge: "Best Budget / Plate-Loaded",
+    amazonUrl: "https://www.amazon.com/s?k=Bells+of+Steel+Plate+Loaded+Cable+Tower&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    reviewUrl: null,
+    priceRange: "$434.99–$542.99",
+    specs: "2:1 ratio by default, 1:1 by joining the cables · 250 lb cable capacity (plate-loaded) · more than 30 height settings · nylon pulleys, aluminium upgrade available",
+    pros: [
+      "The cheapest way on this page to get a fully adjustable cable, if you already own plates",
+      "Two ratios: 2:1 for accessories, 1:1 with the adapter for heavier pulldowns and rows",
+      "Small base, and it can be mounted to a wall, the floor or a compatible rack",
+      "Also sold with selectorized stacks if you would rather not load plates",
+    ],
+    cons: [
+      "Must be secured to a wall, floor or rack; anchors are not included",
+      "One cable at a time, and plate changes are slower than a pin",
+      "The Garage Gym Reviews founder found it slightly low for a garage gym; check your height needs",
+    ],
+    bottomLine: "For a tight budget and a lifter who already owns plates. Plan where it will be anchored before you order.",
+    description: "Bells of Steel sells this tower plate-loaded or with a selectorized stack; the plate-loaded version is the budget pick here. Bells of Steel and Garage Gym Reviews agree that it runs at 2:1 by default and can give a 1:1 pull by joining the cables with the adapter, that the plate-loaded version's cable is rated to 250 lb, that its standard pulleys are nylon with an aluminium upgrade available, and that it should be bolted to a wall, the floor or a rack. Both describe more than 30 height settings. We saw it at $434.99, or $542.99 with the rear upright that adds stability when floor-mounting. Bells of Steel's own page gives two different base footprints, and its height differs from the reviewer's by under half an inch, so we have left both out; check the current figure against your ceiling. Garage Gym Reviews' founder called the tower slightly low for a garage gym and well suited to basements. Bells of Steel says the plate-loaded version cannot later be converted to a stack. It is sold direct from Bells of Steel.",
+  },
+  {
+    id: "bells-of-steel-all-in-one-trainer",
+    name: "Bells of Steel All-in-One Trainer",
+    category: "Compact all-in-one cable machine and rack",
+    badge: "Best Compact All-in-One",
+    amazonUrl: "https://www.amazon.com/s?k=Bells+of+Steel+All-in-One+Trainer&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    reviewUrl: null,
+    priceRange: "$1,299.99–$1,899.99",
+    specs: "54.6 x 59 in footprint (L x W) · 2:1 side pulleys, 1:1 centre pulleys · 300 lb max cable capacity · plate-loaded or weight-stack versions",
+    pros: [
+      "Cables, a lat pulldown and low row, and rack uprights in one corner-friendly frame",
+      "True 1:1 centre pulleys for heavy rows and pulldowns as well as 2:1 side pulleys",
+      "Start plate-loaded and add a weight-stack kit later",
+      "Accepts Bells of Steel J-cups and safety arms, so it can work as a half rack",
+    ],
+    cons: [
+      "Must be bolted down, and Bells of Steel does not include the hardware",
+      "Some movements feel restricted, as is common on all-in-one machines",
+      "Fixed frame height, so check your ceiling and the stated assembly clearance",
+    ],
+    bottomLine: "For a small room that has to hold both a cable station and a rack. Budget for anchors, flooring and an afternoon of assembly.",
+    description: "The All-in-One Trainer combines dual adjustable cables, a lat pulldown and low row station and rack uprights in one frame. Bells of Steel and Garage Gym Reviews agree on a 54.6 x 59 in footprint, 2:1 side pulleys with 1:1 centre pulleys, a 300 lb maximum cable capacity and a choice of plate-loaded or weight-stack versions; the two sources give heights an inch apart, so we have left height out. We saw $1,299.99 for the plate-loaded version and $1,899.99 with the stack. The important safety note is the maker's own: Bells of Steel says the plate-loaded version must be bolted down, and that both versions must be bolted down for barbell exercises; Garage Gym Reviews lists the lack of included bolting hardware as its main con. Bells of Steel also states an assembly clearance higher than the frame. The included lat bar is shortened to fit between the uprights. It is sold direct from Bells of Steel.",
+  },
+  {
+    id: "tonal-2",
+    name: "Tonal 2",
+    category: "Wall-mounted digital-resistance machine",
+    badge: "Best Wall-Mounted Digital",
+    amazonUrl: "https://www.amazon.com/s?k=Tonal+2+Smart+Home+Gym&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    reviewUrl: null,
+    priceRange: "$4,295",
+    specs: "5–250 lb digital resistance · 50.9 x 21.5 in (H x W) · wall-mounted, professional installation · needs 7 ft of wall, 7 x 7 ft of floor, 7 ft 10 in ceiling · 2-year warranty",
+    pros: [
+      "The smallest floor footprint here when not in use: it hangs on the wall",
+      "Resistance from 5 to 250 lb set by the machine, with no plates or pins",
+      "Built-in camera for form feedback, per Tonal and Garage Gym Reviews",
+      "Installed by Tonal, so the wall mounting is not left to you",
+    ],
+    cons: [
+      "A 12-month membership commitment is required, and most features need an active membership; check the current price",
+      "Accessories are sold separately and needed for many movements",
+      "The 250 lb maximum will not satisfy strong lifters on heavy compound lifts",
+    ],
+    bottomLine: "For someone who values guided training and a clear floor over maximum load, and who is happy to pay a membership. Not for heavy lifters.",
+    description: "Tonal 2 is a wall-mounted unit with two adjustable arms and motors that produce resistance from 5 to 250 lb, figures that Tonal and Garage Gym Reviews agree on. It mounts to wall studs or solid concrete and is installed by Tonal's own team; Tonal and Garage Gym Reviews both give the space needed as 7 ft of unobstructed wall, a 7 x 7 ft floor area and 7 ft 10 in of ceiling for the arms to extend fully. Both put the unit at 50.9 in tall and 21.5 in wide; the depth it projects from the wall differs by a quarter of an inch between them, so we have left that out. The hardware price we saw at Tonal was $4,295. That is not the whole cost: each purchase requires a 12-month membership commitment, most features need an active membership, and Tonal's accessory bundles, needed for many movements, are extra. Check the current price of each. The warranty is two years, with paid extensions. Tonal sells it directly and through retail partners; buy from Tonal or an authorised seller.",
+  },
+  {
+    id: "speediance-gym-monster-2",
+    name: "Speediance Gym Monster 2",
+    category: "Freestanding digital-resistance machine",
+    badge: "Best Freestanding Digital",
+    amazonUrl: "https://www.amazon.com/dp/B0DFH1NYR6?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    reviewUrl: null,
+    priceRange: "$3,387–$3,849",
+    specs: "220 lb maximum (110 lb per side) · about 48 x 27 x 73 in unfolded, about 14.5 in deep folded · about 172 lb",
+    pros: [
+      "No drilling or wall mounting; it stands on its own base and folds for storage",
+      "Folds to about 14.5 in deep, the least intrusive storage of any freestanding pick here",
+      "Basic strength training works without the optional subscription, PCWorld reports",
+      "Packages include benches and a rowing attachment, depending on the bundle",
+    ],
+    cons: [
+      "At about 172 lb and shipped in heavy crates, it is hard to move alone",
+      "220 lb in total, 110 lb per side, is a ceiling strong lifters will reach on heavy lower-body lifts",
+      "Some functions need a paid subscription; PCWorld also found weight changes cumbersome in some exercises",
+    ],
+    bottomLine: "For a renter or anyone who cannot drill a wall but wants digital resistance. Choose Tonal 2 instead if wall mounting is fine and you want more load.",
+    description: "The Gym Monster 2 is a freestanding digital machine: two motors produce up to 220 lb of resistance, 110 lb per side, figures Speediance and PCWorld agree on. Both put it at about 48 in deep, 27 in wide and 73 in tall unfolded, about 14.5 in deep folded, and about 172 lb. Speediance says it needs no assembly, drilling or wall mounting, which makes it the obvious digital choice for renters, and it stands on its own base rather than hanging on a wall. Delivery is a different matter: PCWorld describes three packages totalling just under 353 lb, so plan for help getting it into the room. Speediance sells an optional Wellness+ subscription; PCWorld says you can use the machine without it for classic strength training, but that some functions require it. Check the current price. We saw the Basic package at $3,387, down from $3,849; other packages add benches and a rowing attachment. It is sold mainly through Speediance's own store.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Home Gym", item: "https://www.treadmillreviewsusa.com/home-gym/" },
+        { "@type": "ListItem", position: 3, name: "Best Home Cable Machines", item: "https://www.treadmillreviewsusa.com/best-cable-machines-for-home-gym/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is the best cable machine for a home gym?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "For most people with the space, a dual-stack functional trainer such as the REP Arcadia, because weight and height changes are quick and it covers almost every cable movement. If you already own a compatible rack, a rack-mounted attachment saves floor space. On a tight budget with plates already owned, a plate-loaded tower is the cheapest proper option.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What does a 2:1 pulley ratio mean on a cable machine?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A 2:1 ratio halves the felt resistance. With 100 pounds selected on the stack, you feel roughly 50 pounds at the handle, and the handle travels about twice as far as the stack moves. A 1:1 machine gives you the full selected weight with shorter cable travel. Always halve a 2:1 stack to know your real top load.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much ceiling height do I need for a cable machine?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Measure first. Many functional trainers and towers stand somewhere around six and a half to seven feet tall, flooring raises them further, and assembly often needs extra clearance above the frame. Tonal states that its wall unit needs 7 feet 10 inches of ceiling for the arms to extend fully. Check each maker's stated height and assembly clearance.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do cable machines need to be bolted down?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Many do. Bells of Steel says its plate-loaded All-in-One Trainer must be bolted down and recommends anchoring its Cable Tower to a wall, floor or rack. Tall, narrow frames can tip under sideways pulls. Follow the maker's instructions exactly, and if you cannot drill the floor, a bolted timber platform is a common alternative.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is a functional trainer better than a rack-mounted cable attachment?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A standalone functional trainer is more versatile and works anywhere, but needs its own floor space. A rack attachment fits inside the rack footprint and usually costs less, but only fits specific racks, and the rack must be anchored. If you already own a compatible rack, the attachment is usually the better use of space.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do Tonal and Speediance need a subscription?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Tonal requires a 12-month membership commitment with each purchase, and an active membership is needed for most features. Speediance sells an optional subscription; reviewers report the machine works without it for basic strength training but some functions need it. Prices change, so check the current membership price before buying either machine.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", name: "Morgan Reyes" },
+      datePublished: "2026-10-16",
+      dateModified: "2026-10-16",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+    ...PRODUCTS.map((product) => ({
+      "@type": "Product",
+      name: product.name,
+      description: product.description,
+      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      offers: {
+        "@type": "AggregateOffer",
+        priceCurrency: "USD",
+        availability: "https://schema.org/InStock",
+      },
+    })),
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-10-16",
+    modifiedTime: "2026-10-16",
+    author: "Morgan Reyes",
+    section: "Fitness Equipment",
+    tags: [
+      "cable machine for home gym",
+      "best home cable machine",
+      "functional trainer for home",
+      "home gym cable tower",
+      "pulley ratio 2:1",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "See Our Top Picks", link: "#quick-picks" }}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-bestcablemachinesforhomegym" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-bestcablemachinesforhomegym)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Buying Guide
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated October 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          Best Cable Machines <span class="text-[#5AA9FF]">for a Home Gym</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          A home cable machine can be a freestanding functional trainer, an add-on for a rack you already own, a plate-loaded tower bolted to a wall, or a screen with motors behind it. Here are six that cover those types, what the pulley ratio on each really means, and the ceiling, anchoring and space checks to make before you order.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#quick-picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            See the Picks
+          </a>
+          <a href="#pulley-ratio" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            2:1 vs 1:1 Explained
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
+          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">October 16, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="1.9k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">On the products below.</strong> We have not tested these
+          machines, and no figure on this page is our own measurement. Each was confirmed as
+          currently sold on 16 October 2026 on the maker's own store (REP Fitness, Bells of Steel,
+          Tonal and Speediance), and its weight stack or resistance, pulley ratio, footprint and
+          price were checked on that date against at least one independent source — chiefly
+          Garage Gym Reviews and PCWorld. A figure appears in a product's specification line only
+          where the maker and an independent source agree; where they conflicted — on several
+          heights, footprints and position counts — we left it out and say so on the card. Prices
+          are those we saw on that date and change often; for the digital machines we give the
+          hardware price only, and the membership or subscription is extra, so check the current
+          price. We earn a commission if you buy through the Amazon links on this page; it does
+          not change which products we list or what we say about them.
+          <strong class="text-gray-900">What this page is, and is not.</strong> We review home
+          fitness equipment; we are not giving medical, physiotherapy, coaching or nutrition
+          advice. Strength training loads your joints, spine and heart, so if you have an injury,
+          a joint, back or heart condition, are pregnant or recently postpartum, or are returning
+          from surgery, talk to a qualified professional before you start. Rated capacities on
+          this page are manufacturer figures, not ours.
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
+          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 6 Best Cable Machines for a Home Gym</a>
+          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Machines</a>
+          <a href="#pulley-ratio" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Pulley Ratio: What 2:1 and 1:1 Mean in Plain Terms</a>
+          <a href="#types" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Which Type of Cable Machine Suits Your Space</a>
+          <a href="#space-and-ceiling" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Footprint, Ceiling Height and Cable Travel</a>
+          <a href="#anchoring-and-safety" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Anchoring, Wall Mounting and Safe Use</a>
+          <a href="#attachments" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Attachments: What Comes in the Box and What to Add</a>
+          <a href="#reading-listings" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Reading a Cable Machine Listing</a>
+          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Who Should Buy Something Else</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          A cable machine is the most versatile single piece of strength equipment you can put in
+          a home gym, and also the easiest to buy badly. The weight on the stack is not the weight
+          you feel, the footprint on the listing is not the room you need, and a tall, narrow
+          tower that looks freestanding often is not meant to be. The six picks below each
+          represent a different way of getting cables into a home, and the guide after them
+          explains pulley ratios, ceiling height, anchoring and attachments in plain terms, so you
+          can tell which type suits your space and your training.
+        </p>
+
+        <div id="quick-picks" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+<p>
+            Six machines, one for each common way of adding cables to a home gym. The short
+            version: the REP Arcadia if you have the floor space for a standalone functional
+            trainer, the REP Athena if you already own a compatible REP rack, and the Bells of
+            Steel Cable Tower if you want cables for the least money and already own plates. If you
+            are still deciding what belongs in the room at all, our
+            <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a>
+            put cables alongside the other big purchases.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead><tr>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Pick</th>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Best for</th>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Why</th>
+            </tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">REP Fitness Arcadia Functional Trainer</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best overall (dual-stack functional trainer)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Two 170 lb stacks at 2:1 in a 35.8 in deep frame</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">REP Fitness Athena Side-Mount Functional Trainer</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Owners of a REP PR-4000 or PR-5000 rack</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Puts a selectorized stack inside the rack footprint</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bells of Steel Cable Tower (plate-loaded)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lowest cost, plates already owned</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2:1 by default, 1:1 by joining the cables; mounts to wall, floor or rack</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bells of Steel All-in-One Trainer</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">One machine for cables and barbell work</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2:1 side pulleys, 1:1 centre pulleys, rack uprights, must be bolted down</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Tonal 2</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Smallest footprint, guided training</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5 to 250 lb of digital resistance on a wall-mounted unit</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Speediance Gym Monster 2</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Digital resistance without drilling</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Freestanding, folds to about 14.5 in deep, 220 lb maximum</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            A cable machine often sits next to a rack. If you are planning both, read our guide to
+            <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">the best squat racks for a home gym</a>
+            first, because the rack you choose decides whether a rack-mounted cable attachment is
+            even an option.
+          </p>
+        </div>
+
+        <div id="picks" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 6 Best Cable Machines for a Home Gym</h2>
+<p>
+            Each card gives the figures we could confirm from two sources, the price range we saw
+            on 16 October 2026, and who the machine suits. Read the ratio and the footprint lines
+            first: the ratio tells you what the stack will actually feel like, and the footprint
+            and mounting notes tell you whether it will fit and stay put in your room.
+          </p>
+          <p>
+            Two of the six are digital machines that need a paid membership or subscription for
+            some or all of their features. We give their hardware prices only; check the current
+            price of the membership before you decide.
+          </p>
+        </div>
+      </div>
+
+      <!-- Product cards -->
+      <div class="not-prose">
+        {
+          PRODUCTS.map((product, index) => (
+            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
+              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
+                  <div>
+                    <p class="text-white font-black text-xl leading-tight">
+                      {index + 1}. {product.name}
+                    </p>
+                    <p class="text-gray-400 text-xs">{product.category}</p>
+                  </div>
+                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                    {product.badge}
+                  </span>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center gap-2 mb-4 flex-wrap">
+                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
+                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
+                  </div>
+                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
+                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
+                      <p class="text-xs font-black uppercase tracking-widest text-green-700 mb-2">What Works</p>
+                      <ul class="space-y-2">
+                        {product.pros.map((pro) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+                      <p class="text-xs font-black uppercase tracking-widest text-red-700 mb-2">What Doesn't</p>
+                      <ul class="space-y-2">
+                        {product.cons.map((con) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="border-t border-gray-100 pt-4">
+                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
+                    <div class="flex flex-wrap items-center gap-3">
+                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+                        {product.amazonLabel} &rarr;
+                      </a>
+                      {product.reviewUrl && (
+                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
+                          Read our full {product.name} review &rarr;
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="how-we-chose" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Machines</h2>
+<p>
+            We have not tested these machines. They were chosen from published specifications,
+            maker product pages and FAQs, and independent reviews, and the claims on this page are
+            limited to what those sources support.
+          </p>
+          <p>
+            We started from the five ways people actually add cables to a home gym: a freestanding
+            functional trainer with two weight stacks, a cable attachment that bolts into an
+            existing rack, a plate-loaded pulley tower, a compact all-in-one machine that combines
+            cables with rack uprights, and a connected machine that uses motors instead of iron.
+            For each type we looked for a current model from a maker that publishes a full
+            specification, then checked that it was on sale under that name on 16 October 2026.
+          </p>
+          <p>
+            We then compared the stack weight, pulley ratio, footprint, height and price on the
+            maker's page with at least one independent source — Garage Gym Reviews for the REP and
+            Bells of Steel machines and the Tonal 2, and PCWorld for the Speediance. Where the two
+            agreed, the figure went on the card. Where they did not, we left it out: the overall
+            height of the Bells of Steel Cable Tower and All-in-One Trainer differs by up to an
+            inch between sources, the Arcadia's number of cable positions is given as 32 by REP and
+            36 by a reviewer, REP's own Athena page gives two different figures for the depth it
+            adds to a rack, and the Tonal 2's wall depth differs by a quarter of an inch between
+            Tonal and a reviewer. None of those gaps is large, but we would rather tell you to
+            check than pick one.
+          </p>
+          <p>
+            We checked every brand on this page against the US Consumer Product Safety
+            Commission's recall database on 16 October 2026. We found no recalls for Bells of
+            Steel, Tonal or Speediance. REP Fitness had a 2021 recall alert for the strap safety
+            brackets sold for its PR-4000 and PR-5000 racks — not for any cable attachment, but
+            worth knowing because the Athena mounts to those racks; if you are buying a used REP
+            rack, check which brackets came with it. The database also lists a December 2024
+            recall of Precor's Resolute cable multi-station, a commercial machine not on this page,
+            which is relevant if you are shopping for used commercial cable equipment.
+          </p>
+          <p>
+            We excluded several marketplace functional trainers that appear in many online
+            roundups, because their own listings and the roundups gave different stack weights for
+            the same model, and we could not find a maker specification to settle it. We also
+            left out machines we could only find as discontinued or renamed listings.
+          </p>
+        </div>
+
+        <div id="pulley-ratio" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Pulley Ratio: What 2:1 and 1:1 Mean in Plain Terms</h2>
+<p>
+            The pulley ratio is the single most misunderstood number on a cable machine, and it
+            decides what the weight stack actually feels like in your hands.
+          </p>
+          <p>
+            On a <strong>1:1</strong> machine, the cable runs from the handle over the pulleys
+            straight to the stack. Pull the handle one foot and the stack rises one foot. What you
+            select is what you lift: 100 pounds on the pin feels like 100 pounds at the handle.
+          </p>
+          <p>
+            On a <strong>2:1</strong> machine, the cable is routed round a moving pulley so the
+            effort is shared, a bit like a block and tackle. A 2:1 ratio halves the felt
+            resistance: 100 pounds on the pin feels like roughly 50 pounds at the handle. In
+            exchange, the handle travels twice as far as the stack moves, which is why 2:1 machines
+            can offer long cable travel from a compact frame, and why they suit fast, full-range
+            movements such as woodchops, lateral raises and single-arm presses.
+          </p>
+          <p>
+            That has three practical consequences.
+          </p>
+          <ul>
+            <li><strong>Halve the stack to know your top weight.</strong> A functional trainer
+            with two 170 lb stacks at 2:1, like the Arcadia, gives you about 85 pounds of felt
+            resistance per side. That is plenty for most single-arm and accessory work and may not
+            be enough for heavy lat pulldowns or rows.</li>
+            <li><strong>2:1 gives finer steps.</strong> A 10 lb plate on a 2:1 stack changes the
+            felt load by about 5 pounds, which is genuinely useful for shoulders and arms.</li>
+            <li><strong>Joining two cables gives you 1:1.</strong> Several machines, including
+            both Bells of Steel units here, let you link the two cable ends or use centre pulleys
+            to get a 1:1 pull for heavy pulldowns and rows. You give up cable travel and gain
+            load.</li>
+          </ul>
+          <p>
+            Listings write ratios inconsistently. Some write 1:2 or 1/2:1 for what others call 2:1,
+            and a few say "dual ratio" without explaining which pulley does what. The reliable test
+            is the maker's own wording about felt weight: REP, for example, says that on its 2:1
+            machines moving 100 pounds feels like 50. If a listing will not tell you what the
+            stack feels like at the handle, assume nothing.
+          </p>
+          <p>
+            Digital machines such as the Tonal 2 and Speediance Gym Monster 2 do not have a stack
+            or a pulley ratio in this sense. The figure they quote is the resistance the motors
+            produce at the handles, so it compares with felt weight on an iron machine, not with
+            stack weight.
+          </p>
+        </div>
+
+        <div id="types" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Which Type of Cable Machine Suits Your Space</h2>
+<p>
+            The five types on this page solve different problems, and the right one usually
+            follows from what you already own and how much floor you can give up.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Functional trainer (dual weight stack)</h3>
+          <p>
+            Two columns, each with its own stack and an adjustable pulley carriage, joined by a
+            frame and usually a pull-up bar. It is the most versatile type and the easiest to live
+            with, because weight changes are a pin and height changes are a pop-pin. The cost is
+            floor space: even a compact unit like the Arcadia is more than four and a half feet
+            wide at the front. Choose this if the cable machine is the main event.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Rack-mounted cable attachment</h3>
+          <p>
+            A stack and pulley system that bolts into the uprights of a power rack, so the cables
+            live inside a footprint you have already given up. It is the most space-efficient
+            option and often cheaper than a standalone trainer, but it only fits specific racks,
+            and the rack has to be anchored as its maker specifies. Choose this if you already own
+            a compatible rack, and check which racks have attachment systems worth buying into
+            before you choose one.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Plate-loaded pulley tower</h3>
+          <p>
+            A single upright with a pulley carriage and a loading pin or sleeve for your own
+            plates. It is the cheapest way to get a proper adjustable cable, and the load is
+            limited only by the cable's rating and your plates. The trade-offs are slower weight
+            changes, one handle at a time, and a tall, narrow frame that has to be bolted to
+            something. Choose this on a tight budget if you already own plates.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Compact all-in-one</h3>
+          <p>
+            A frame that combines cable columns with rack uprights, so one footprint covers
+            pulldowns, rows, crossovers and, with J-cups and safety arms, barbell work. It saves
+            space against a rack plus a trainer, but every compromise of both shows up somewhere:
+            narrower uprights, a shorter lat bar, movements that are cramped. Choose this if you
+            want one large machine instead of two.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Connected digital-resistance machine</h3>
+          <p>
+            Motors provide the resistance, a screen runs the training, and there is no iron at
+            all. These are the most compact and the quietest to adjust, and they can do things a
+            stack cannot, such as adding load on the lowering phase. The costs are a lower maximum
+            load than iron machines, dependence on software and power, and, for most, a paid
+            membership or subscription for some or all features. Choose this if guided training
+            matters more to you than maximum weight.
+          </p>
+        </div>
+
+        <div id="space-and-ceiling" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Footprint, Ceiling Height and Cable Travel</h2>
+<p>
+            Three measurements decide whether a cable machine fits, and the listed footprint is
+            only one of them.
+          </p>
+          <p>
+            <strong>Ceiling height.</strong> Most functional trainers and towers stand somewhere
+            around six and a half to seven feet tall before you add flooring. Measure your ceiling
+            at the exact spot the machine will go — basements often have beams, ducts or a low
+            soffit exactly where you want the machine — and subtract the thickness of any rubber
+            flooring or platform, which raises the machine. Then add room above the frame for
+            assembly: tall uprights are usually stood up from lying flat, and a frame that is only
+            just shorter than the ceiling may not tip up into place. Several makers, including Bells
+            of Steel, state an assembly clearance that is higher than the machine itself; check it
+            on the product page. If you also want pull-ups on the built-in bar, you need clearance
+            for your head above the bar, too.
+          </p>
+          <p>
+            <strong>Working space, not footprint.</strong> The base dimensions tell you what the
+            frame covers. Cable exercises happen in front of it, and often to the side: a standing
+            cable row or a crossover needs several feet of clear floor in front of the machine,
+            and a woodchop needs room to rotate. Tonal recommends a 7 x 7-foot floor area in front
+            of its unit, which is a sensible rule of thumb for any cable machine. Our guide to
+            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements for treadmills</a>
+            uses the same approach — machine footprint plus a use zone plus a safety margin — and
+            the method transfers directly.
+          </p>
+          <p>
+            <strong>Cable travel.</strong> This is how far the handle can be pulled from the
+            pulley. Short travel limits tall users on overhead movements, long-stride lunges and
+            full-range rows. A 2:1 ratio roughly doubles travel compared with 1:1 on the same
+            frame, which is one reason most home trainers use it.
+          </p>
+          <p>
+            Width between the uprights matters on functional trainers and all-in-ones. A narrow
+            gap makes crossovers and some pressing movements feel cramped, and Garage Gym Reviews
+            lists the Arcadia's usable width between uprights as a drawback. If you are broad or
+            tall, check the internal width as well as the outside dimensions.
+          </p>
+        </div>
+
+        <div id="anchoring-and-safety" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Anchoring, Wall Mounting and Safe Use</h2>
+<p>
+            A cable machine pulls sideways and upwards on its own frame every rep, and a tall,
+            narrow frame is easier to tip than it looks. How each type is secured is part of the
+            purchase, not an afterthought.
+          </p>
+          <ul>
+            <li><strong>Bolt down or anchor what the maker says to.</strong> Bells of Steel says
+            the plate-loaded All-in-One Trainer must be bolted down, and that both versions must be
+            bolted down for barbell work; it recommends bolting its Cable Tower to a wall, the floor
+            or a rack. Neither ships with the anchors. If you cannot drill your floor, many owners
+            build a timber platform and bolt the machine to that — see our guide to
+            <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">lifting platforms</a>.</li>
+            <li><strong>Rack attachments are only as secure as the rack.</strong> A rack-mounted
+            stack adds weight and leverage to one side of the rack. Anchor the rack as its maker
+            specifies before adding one.</li>
+            <li><strong>Wall-mounted digital machines need the right wall.</strong> The Tonal 2 is
+            installed by Tonal's own installers onto wall studs or solid concrete, much like a
+            heavy TV bracket, and needs a grounded outlet nearby. If your wall is unusual — old
+            plaster, a stud layout you are unsure of, a partition wall — ask before you buy, and do
+            not try to hang one yourself on drywall alone.</li>
+            <li><strong>Upstairs and heavy machines.</strong> A dual-stack trainer with its stacks
+            plus a pile of plates puts a lot of weight on a small area. On a ground-floor slab that
+            is rarely a concern; on a suspended timber floor, place the machine near a load-bearing
+            wall and across the joists rather than in the middle of a span, and consult a
+            structural engineer for an older house or anything unusual.</li>
+          </ul>
+          <p>
+            In use, the habits that prevent most cable injuries are simple. Check cables for
+            fraying, kinks or flattened spots before you load the stack, and stop using a cable that
+            shows any of them — on most machines cables and pulleys are consumables with a much
+            shorter warranty than the frame. Keep fingers clear of the stack and the pulley
+            carriage while adjusting. Confirm the selector pin or pop-pin is fully seated before
+            you pull. Lower the stack under control rather than letting it crash, which is hard on
+            the cables as well as noisy. Keep children away from stacks and carriages, and on
+            digital machines use the maker's child lock or power-down routine. Treat every rated
+            capacity on this page as a manufacturer figure, and stay well inside it.
+          </p>
+        </div>
+
+        <div id="attachments" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Attachments: What Comes in the Box and What to Add</h2>
+<p>
+            Most cable machines come with very little. REP says the Arcadia ships with D-handles
+            and the Athena with a urethane D-handle, and Bells of Steel lists adjustable nylon
+            handles, carabiners and its 2-to-1 adapter with the stack version of its Cable Tower. That is enough to start, but most owners add a few
+            attachments in the first month.
+          </p>
+          <p>
+            The ones worth buying first, in rough order of usefulness:
+          </p>
+          <ul>
+            <li><strong>Tricep rope.</strong> Pushdowns, face pulls, overhead extensions and
+            cable crunches. Cheap and used constantly.</li>
+            <li><strong>Lat pulldown bar.</strong> Check whether one is included; the Bells of
+            Steel All-in-One Trainer has its own shortened bar that fits between its uprights,
+            and a standard-length bar will not.</li>
+            <li><strong>Close-grip row handle (V or double-D).</strong> Seated and standing rows,
+            and close-grip pulldowns.</li>
+            <li><strong>Ankle straps.</strong> Kickbacks, hip abduction and leg curls.</li>
+            <li><strong>Straight or EZ bar.</strong> Curls, upright rows and pressdowns with both
+            hands.</li>
+          </ul>
+          <p>
+            Most home cable machines use standard carabiner connections, so third-party
+            attachments generally fit, but check the carabiner opening and the width of any bar
+            against the gap between uprights. Digital machines are different: Tonal sells its own
+            accessory bundles, priced separately from the unit, that are required to unlock many
+            movements, and Speediance sells its machine in packages with different accessories.
+            Price the accessories you need before comparing a digital machine with an iron one.
+            Our guide to
+            <a href="/best-home-gym-accessories/" class="text-[#0F62FE] font-medium">home gym accessories</a>
+            covers storage for all of it.
+          </p>
+        </div>
+
+        <div id="reading-listings" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Reading a Cable Machine Listing</h2>
+<p>
+            Cable machine listings are full of numbers that sound comparable and are not. Five
+            checks will catch most of the traps.
+          </p>
+          <ol>
+            <li><strong>Stack weight or felt weight?</strong> A listing that says "340 lb of
+            resistance" may mean two 170 lb stacks at 2:1, which is about 85 pounds per handle.
+            Find the ratio, then halve if it is 2:1.</li>
+            <li><strong>Is the "max capacity" a cable rating or a stack?</strong> On plate-loaded
+            and band-assisted machines, the headline figure is often the most the cable is rated
+            to carry, not a weight that comes with the machine.</li>
+            <li><strong>Does the price include the stack?</strong> Some trainers are sold with
+            stacks, some without, and some with a smaller stack and an upgrade kit.</li>
+            <li><strong>What mounting does it need, and is the hardware included?</strong> If the
+            listing says "must be bolted" or "wall-mounted", find out what to and with what.</li>
+            <li><strong>Which rack does it fit?</strong> Rack attachments are usually specific to
+            one maker's racks, hole size and upright dimensions, and sometimes to one generation
+            of a rack.</li>
+          </ol>
+          <p>
+            Be particularly careful with marketplace functional trainers and multi-gyms that
+            appear in long online roundups. In our checks, the same model was described with
+            different stack weights in different places. When figures disagree and the maker does
+            not publish a spec sheet, treat every number with suspicion.
+          </p>
+          <p>
+            For digital machines, read the membership terms as closely as the hardware spec. Tonal
+            states that each purchase requires a 12-month membership commitment and that an active
+            membership is needed for most features. Speediance offers an optional subscription,
+            and PCWorld's review notes that some functions require it. In both cases, check the
+            current price.
+          </p>
+        </div>
+
+        <div id="who-should-skip" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Who Should Buy Something Else</h2>
+<p>
+            <strong>If you mainly want heavy compound lifts</strong>, a rack, a barbell and plates
+            will do more for the money than any cable machine, and you can add a rack-mounted cable
+            attachment later. Most home cable machines top out at a felt load that is fine for
+            accessories and modest for heavy pulling.
+          </p>
+          <p>
+            <strong>If your budget is under a few hundred dollars</strong>, resistance bands and a
+            door anchor cover many cable movements for a fraction of the cost, and adjustable
+            dumbbells cover most of the rest. Our guide to
+            <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">adjustable dumbbells</a>
+            is the better starting point.
+          </p>
+          <p>
+            <strong>If you need a commercial-duty machine</strong> for a studio or a shared
+            building gym, look at commercial lines with longer cable warranties and service
+            networks. Our guide to
+            <a href="/commercial-gym-equipment/" class="text-[#0F62FE] font-medium">commercial gym equipment</a>
+            explains what changes at that level.
+          </p>
+          <p>
+            <strong>If cardio is the priority</strong>, a cable machine will not replace it. Many
+            home gyms pair one strength station with one cardio machine, and our
+            <a href="/home-cardio-equipment-guide/" class="text-[#0F62FE] font-medium">home cardio equipment guide</a>
+            helps with that side of the decision, including whether a treadmill, bike or rower
+            earns the floor space next to your cable machine.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What is the best cable machine for a home gym?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                For most people with the space, a dual-stack functional trainer such as the REP Arcadia, because weight and height changes are quick and it covers almost every cable movement. If you already own a compatible rack, a rack-mounted attachment saves floor space. On a tight budget with plates already owned, a plate-loaded tower is the cheapest proper option.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What does a 2:1 pulley ratio mean on a cable machine?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                A 2:1 ratio halves the felt resistance. With 100 pounds selected on the stack, you feel roughly 50 pounds at the handle, and the handle travels about twice as far as the stack moves. A 1:1 machine gives you the full selected weight with shorter cable travel. Always halve a 2:1 stack to know your real top load.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How much ceiling height do I need for a cable machine?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Measure first. Many functional trainers and towers stand somewhere around six and a half to seven feet tall, flooring raises them further, and assembly often needs extra clearance above the frame. Tonal states that its wall unit needs 7 feet 10 inches of ceiling for the arms to extend fully. Check each maker's stated height and assembly clearance.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Do cable machines need to be bolted down?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Many do. Bells of Steel says its plate-loaded All-in-One Trainer must be bolted down and recommends anchoring its Cable Tower to a wall, floor or rack. Tall, narrow frames can tip under sideways pulls. Follow the maker's instructions exactly, and if you cannot drill the floor, a bolted timber platform is a common alternative.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is a functional trainer better than a rack-mounted cable attachment?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                A standalone functional trainer is more versatile and works anywhere, but needs its own floor space. A rack attachment fits inside the rack footprint and usually costs less, but only fits specific racks, and the rack must be anchored. If you already own a compatible rack, the attachment is usually the better use of space.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Do Tonal and Speediance need a subscription?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Tonal requires a 12-month membership commitment with each purchase, and an active membership is needed for most features. Speediance sells an optional subscription; reviewers report the machine works without it for basic strength training but some functions need it. Prices change, so check the current membership price before buying either machine.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Home Cable Machine</h2>
+          <p class="text-gray-700 leading-relaxed">Each of these turns an expensive, heavy purchase into one that disappoints or does not fit.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Reading stack weight as felt weight</h3>
+              <p class="text-gray-700 text-sm m-0">Two 170 lb stacks at 2:1 give about 85 pounds per handle, not 340. Buyers who plan heavy pulldowns and rows on a 2:1 machine often find it runs out early. Check the ratio, halve a 2:1 stack, and if heavy pulling matters, choose a machine with a 1:1 option or keep a barbell for those lifts.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Measuring the floor but not the ceiling</h3>
+              <p class="text-gray-700 text-sm m-0">A machine that fits the floor can still fail at the ceiling: flooring raises it, beams and ducts sit exactly where you want it, and tall uprights need extra clearance to stand up during assembly. Measure at the exact spot, subtract flooring thickness, and check the stated assembly clearance as well as the frame height.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Skipping the anchoring</h3>
+              <p class="text-gray-700 text-sm m-0">Tall, narrow cable frames are pulled sideways every rep, and several makers state they must be bolted to the floor, a wall or a rack, with hardware not included. Treat anchors as part of the purchase. If you cannot drill, plan a bolted platform before delivery rather than training on an unsecured frame.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Pricing a digital machine on hardware alone</h3>
+              <p class="text-gray-700 text-sm m-0">The screen price is not the cost of ownership. Tonal requires a membership commitment and sells accessories separately; Speediance sells an optional subscription and bundles with different accessories. Add the membership, accessories and installation to the hardware price, then compare the total with an iron machine plus the attachments you would add to it.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/best-squat-racks-for-home-gym/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Racks</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Squat Racks for a Home Gym</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The rack you choose decides whether a rack-mounted cable attachment is possible.</p>
+            </a>
+            <a href="/home-workout-equipment-reviews/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Overview</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Home Workout Equipment Reviews</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Where a cable machine fits among the big home gym purchases.</p>
+            </a>
+            <a href="/commercial-gym-equipment/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Commercial</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Commercial Gym Equipment</p>
+              <p class="text-sm text-gray-500 leading-relaxed">What changes when cable machines are built for daily shared use.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">If you have the floor space, buy a dual-stack functional trainer
+            such as the REP Arcadia</strong>; if you already own a compatible REP rack, the Athena
+            puts the same stack inside it; and if money is tight and you own plates, the Bells of
+            Steel Cable Tower gets you a proper adjustable cable for the least. Choose a digital
+            machine for guided training and a clear floor, not for maximum load.
+          </p>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            Whichever type you choose, halve a 2:1 stack to know what it really feels like, measure
+            the ceiling at the exact spot, and anchor the frame exactly as its maker specifies. If
+            a rack is also on your list, read our
+            <a href="/best-squat-racks-for-home-gym/" class="text-[#5AA9FF] font-bold no-underline">squat rack guide</a>
+            before you buy either.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+</Layout>

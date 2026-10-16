@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Best Overall Under $2,000",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0D5YKF4SK?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/nordictrack-commercial-1750-treadmill/",
     priceRange: "$1,799-$2,299",
     specs: "60 x 22 in. deck (58.5 usable) · 3.5 CHP · -3% to 12% · ~340 lbs · subscription-oriented",
@@ -36,6 +37,7 @@ const PRODUCTS = [
     category: "Best Value Once You Count Five Years",
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/dp/B0HFSZR19W?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/sole-f65-treadmill/",
     priceRange: "$1,199-$1,399",
     specs: "60 x 20 in. deck (58 usable) · 3.25 CHP · 0-15% · ~250 lbs · no subscription",
@@ -58,6 +60,7 @@ const PRODUCTS = [
     category: "Best for Hill Training",
     badge: "Best for Hills",
     amazonUrl: "https://www.amazon.com/dp/B0D5YKDXDV?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/nordictrack-commercial-2450-treadmill/",
     priceRange: "$2,299-$2,799 (falls under $2,000)",
     specs: "60 x 22 in. deck · 3.6 CHP · -3% to 12% · fast incline transitions · ~350 lbs",
@@ -80,6 +83,7 @@ const PRODUCTS = [
     category: "Best Budget Entry to This Tier",
     badge: "Cheapest 60 in. Deck",
     amazonUrl: "https://www.amazon.com/dp/B08N3NL32C?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/proform-pro-2000-treadmill/",
     priceRange: "$899-$1,199",
     specs: "60 x 20 in. deck (57.5 usable) · 3.0 CHP · -3% to 12% · ~215 lbs · folds",
@@ -102,6 +106,7 @@ const PRODUCTS = [
     category: "Best If You Mostly Walk",
     badge: "Walking Value",
     amazonUrl: "https://www.amazon.com/s?k=Sole%20F63+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/sole-f63-treadmill/",
     priceRange: "$899-$1,099",
     specs: "55 in. deck · 3.0 CHP · 0-15% · ~250 lbs · no subscription · hydraulic fold",
@@ -124,6 +129,7 @@ const PRODUCTS = [
     category: "Best Screen Under $2,000",
     badge: "Best Display",
     amazonUrl: "https://www.amazon.com/s?k=ProForm%20Power%201295i+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/proform-power-1295i-treadmill/",
     priceRange: "$999-$1,299",
     specs: "60 in. deck · 3.0 CHP · 0-12% · large touchscreen · ~220 lbs · optional subscription",
@@ -518,7 +524,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

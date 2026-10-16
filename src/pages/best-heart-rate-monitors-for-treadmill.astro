@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Best overall chest strap for treadmill training",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B07PM54P4N?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$90–$105",
     specs: "Chest strap · CR2025 coin cell, up to 400 hr · Bluetooth + ANT+ + 5 kHz · dual Bluetooth · water-resistant to 30 m",
@@ -37,6 +38,7 @@ const PRODUCTS = [
     category: "Best value strap for Garmin watch owners",
     badge: "Best for Garmin",
     amazonUrl: "https://www.amazon.com/dp/B0DQB2F5GD?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$70–$80",
     specs: "Chest strap · CR2032 coin cell, up to 1 yr at 1 hr/day · ANT+ + Bluetooth (3 connections) · 3 ATM",
@@ -59,6 +61,7 @@ const PRODUCTS = [
     category: "Best rechargeable chest strap",
     badge: "Best Rechargeable",
     amazonUrl: "https://www.amazon.com/dp/B0D52P8XS1?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$90–$100",
     specs: "Chest strap · rechargeable, 100+ hr per charge · Bluetooth + ANT+ · up to 3 Bluetooth connections",
@@ -82,6 +85,7 @@ const PRODUCTS = [
     category: "Best premium strap for Garmin runners",
     badge: "Best Premium",
     amazonUrl: "https://www.amazon.com/dp/B0F7Z6N7BR?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$150–$170",
     specs: "Chest strap · rechargeable, up to 2 months at 1 hr/day · ANT+ + Bluetooth (3 connections) · 5 ATM · records without a watch",
@@ -105,6 +109,7 @@ const PRODUCTS = [
     category: "Best optical arm band",
     badge: "Best Arm Band",
     amazonUrl: "https://www.amazon.com/dp/B0C5D7HW9D?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$90–$105",
     specs: "Optical arm band · rechargeable, up to 30 hr · Bluetooth (2 connections) + ANT+ · 16 MB memory · water-resistant to 50 m",
@@ -128,6 +133,7 @@ const PRODUCTS = [
     category: "Best value strap for older treadmill consoles",
     badge: "Best for Older Consoles",
     amazonUrl: "https://www.amazon.com/dp/B08411DQ96?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$55–$70",
     specs: "Chest strap · coin cell, up to 400 hr · Bluetooth + ANT+ + 5 kHz · water-resistant to 30 m",
@@ -150,6 +156,7 @@ const PRODUCTS = [
     category: "Best budget chest strap",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/dp/B07R8741CN?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$35–$50",
     specs: "Chest strap · CR2032 coin cell, up to 300 hr · Bluetooth + ANT+",
@@ -476,7 +483,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

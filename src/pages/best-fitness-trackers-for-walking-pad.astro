@@ -13,7 +13,8 @@ const PRODUCTS = [
     name: "Fitbit Inspire 3",
     category: "Best Overall Fitness Tracker for a Walking Pad",
     badge: "Best Overall",
-    amazonUrl: "https://www.amazon.com/s?k=Fitbit+Inspire+3+Health+Fitness+Tracker&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0B5F9SZW7?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $100",
     specs: "Up to 10-day battery · 5 ATM water resistance · colour touchscreen · connected GPS via phone · clip sold separately by Google",
@@ -36,7 +37,8 @@ const PRODUCTS = [
     name: "3DFitBud Simple Step Counter",
     category: "Simplest clip-on pedometer",
     badge: "Best Budget",
-    amazonUrl: "https://www.amazon.com/s?k=3DFitBud+Simple+Step+Counter+Pedometer+A420S&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B09KY5133T?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $25",
     specs: "Steps only · 3-axis sensor · CR2032 coin cell, pre-installed · clip and lanyard included · no app",
@@ -60,6 +62,7 @@ const PRODUCTS = [
     category: "Clip-on pedometer with distance and calories",
     badge: "Best Pedometer With Distance",
     amazonUrl: "https://www.amazon.com/s?k=3DTriSport+Walking+3D+Pedometer+Clip+Lanyard&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $25",
     specs: "Steps, distance, calories and exercise time · 3-axis sensor · clip and lanyard included · no app or Bluetooth",
@@ -83,6 +86,7 @@ const PRODUCTS = [
     category: "Running foot pod that measures at the shoe",
     badge: "Best for Runners",
     amazonUrl: "https://www.amazon.com/s?k=Stryd+5.0+Running+Power+Meter+Footpod&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$199–$299",
     specs: "Clips to the shoe · 8 g · ANT+ and Bluetooth · about 20 hours of continuous running per charge · membership optional",
@@ -105,7 +109,8 @@ const PRODUCTS = [
     name: "Oura Ring 4",
     category: "Smart ring — comfortable, but still on your hand",
     badge: "Best Ring (With Caveats)",
-    amazonUrl: "https://www.amazon.com/s?k=Oura+Ring+4&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0D9WVKXLK?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$349–$499",
     specs: "Titanium inside and out · several finishes · Oura Membership needed for most features · free sizing kit first",
@@ -439,7 +444,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

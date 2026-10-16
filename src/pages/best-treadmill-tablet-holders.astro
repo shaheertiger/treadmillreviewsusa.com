@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Clamp-on tablet holder for round bars",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Arkon+TAB131+Slim-Grip+Tablet+Mount+Clamp&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$31–$34",
     specs: "7 to 18.4 in. screens · clamps bars 12 to 40 mm · 10 support legs · 360° rotation",
@@ -35,7 +36,8 @@ const PRODUCTS = [
     name: "Arkon Handlebar Slim-Grip Tablet Strap Mount (TAB134)",
     category: "Strap-on tablet holder for thick rails",
     badge: "Best for Thick Rails",
-    amazonUrl: "https://www.amazon.com/s?k=Arkon+TAB134+Handlebar+Tablet+Strap+Mount&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B073SCFKYV?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$25",
     specs: "7 to 18.4 in. screens · strap fits bars 15 to 50 mm",
@@ -58,6 +60,7 @@ const PRODUCTS = [
     category: "Quick-release clamp holder for 9 to 12 in. tablets",
     badge: "Best for Quick Removal",
     amazonUrl: "https://www.amazon.com/s?k=Arkon+TABPB031+Clamp+Tablet+Mount&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$28",
     specs: "Tablets up to 9 in. tall (9 to 12 in. screens) · clamps bars 12 to 40 mm · one-touch release · 360° rotation",
@@ -80,6 +83,7 @@ const PRODUCTS = [
     category: "Strap-on phone holder",
     badge: "Best Phone Holder",
     amazonUrl: "https://www.amazon.com/s?k=Arkon+SM634+Slim-Grip+Ultra+Handlebar+Phone+Mount&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$25",
     specs: "Phones · strap fits bars 15 to 50 mm · 8 support legs · elastic securing strap",
@@ -102,6 +106,7 @@ const PRODUCTS = [
     category: "Desk-edge tablet mount for walking pads and treadmill desks",
     badge: "Best for Walking Pads",
     amazonUrl: "https://www.amazon.com/s?k=Arkon+TAB804+Tablet+Clamp+Mount+Extension+Arm&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$72–$80",
     specs: "7 to 18.4 in. screens · C-clamp opens to 3 in. · 10 in. arm · 10 support legs",
@@ -435,7 +440,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

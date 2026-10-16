@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Best Budget Walking Pad",
     badge: "Best Under $300",
     amazonUrl: "https://www.amazon.com/s?k=UREVO+SpaceWalk+3S+Walking+Pad&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$250–$350",
     specs: "0.6–4.0 mph · 0–9% powered incline · 42.5 in. belt length · 265 lb capacity · 6.5 in. tall",
@@ -37,6 +38,7 @@ const PRODUCTS = [
     category: "Best Budget Folding Machine Under $500",
     badge: "Best Under $500",
     amazonUrl: "https://www.amazon.com/s?k=UREVO+Foldi+3S+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$320–$470",
     specs: "0.6–7.6 mph · 0–9% powered incline · 42.5 x 16.5 in. belt · 265 lb capacity · folds",
@@ -60,6 +62,7 @@ const PRODUCTS = [
     category: "Best Budget Full-Size Treadmill, $800–$1,000",
     badge: "Best Under $1,000",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+Fitness+T202+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $899",
     specs: "20 x 60 in. deck · 0.5–12 mph · 0–12% incline · 325 lb capacity · hydraulic fold",
@@ -83,6 +86,7 @@ const PRODUCTS = [
     category: "Best Budget Treadmill on Sale, $800–$1,000",
     badge: "Best Value on Sale",
     amazonUrl: "https://www.amazon.com/s?k=Bowflex+T6+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/bowflex-t6-treadmill/",
     priceRange: "$899–$1,299",
     specs: "20 x 60 in. deck · 0.5–12 mph · 0–15% incline · 325 lb capacity · folds",
@@ -106,6 +110,7 @@ const PRODUCTS = [
     category: "Best Budget Running Treadmill, $1,000–$1,500",
     badge: "Best for Running",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+Fitness+7.0+AT+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/horizon-7-0-at-treadmill/",
     priceRange: "Around $1,099",
     specs: "20 x 60 in. deck · 0.5–12 mph · 0–15% incline · 325 lb capacity · hydraulic fold",
@@ -129,6 +134,7 @@ const PRODUCTS = [
     category: "Best Budget Running Treadmill With No Subscription",
     badge: "No Subscription",
     amazonUrl: "https://www.amazon.com/s?k=SOLE+F63+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/sole-f63-treadmill/",
     priceRange: "$1,100–$1,200",
     specs: "20 x 60 in. deck · 0.5–12 mph · 0–15% incline · 325 lb capacity · folds",
@@ -468,7 +474,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

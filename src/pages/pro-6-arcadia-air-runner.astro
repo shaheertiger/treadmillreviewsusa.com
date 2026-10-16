@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Curved Non-Motorized Treadmill",
     badge: "Listing Claims",
     amazonUrl: "https://www.amazon.com/dp/B083THFK3S?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$4,495–$4,595 (dealers and direct)",
     specs: "Listed: 69 x 17 in. curved running surface · 6 resistance levels · 325 lb machine · 72.5 x 30.5 x 61.5 in. · no power needed · max user weight not published",
@@ -335,7 +336,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

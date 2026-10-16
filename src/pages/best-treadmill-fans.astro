@@ -13,7 +13,8 @@ const PRODUCTS = [
     name: "Vornado 660 Large Whole Room Air Circulator",
     category: "Compact air circulator with tilting head",
     badge: "Best Overall",
-    amazonUrl: "https://www.amazon.com/s?k=Vornado+660+Large+Whole+Room+Air+Circulator&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B00KF60O00?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$120",
     specs: "4 speeds · moves air up to 100 ft (Vornado figure) · tilts horizontal to vertical · 5-year warranty",
@@ -36,6 +37,7 @@ const PRODUCTS = [
     category: "Smart training fan with heart-rate control",
     badge: "Best Training Fan",
     amazonUrl: "https://www.amazon.com/s?k=Wahoo+KICKR+Headwind+Smart+Fan&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$270–$320",
     specs: "Up to 30 mph (Wahoo figure) · 4 manual speeds plus heart-rate mode · Bluetooth and ANT+ · 12 lb",
@@ -58,7 +60,8 @@ const PRODUCTS = [
     name: "Vornado 683 Pedestal Air Circulator",
     category: "Air circulator on an adjustable pedestal",
     badge: "Best Pedestal",
-    amazonUrl: "https://www.amazon.com/s?k=Vornado+683+Pedestal+Air+Circulator&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B01IE8Q8N2?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$80–$85",
     specs: "3 speeds · adjustable-height pedestal · front-facing control",
@@ -81,6 +84,7 @@ const PRODUCTS = [
     category: "20-inch floor or wall-mount circulator",
     badge: "Best for Garages",
     amazonUrl: "https://www.amazon.com/s?k=Lasko+3520+Cyclone+20+inch+Air+Circulator+Fan&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$60–$90",
     specs: "20 in. · 3 speeds · pivoting head · floor or wall mount",
@@ -104,6 +108,7 @@ const PRODUCTS = [
     category: "Compact high-velocity blower fan",
     badge: "Best Compact",
     amazonUrl: "https://www.amazon.com/s?k=Lasko+U12104+Pivoting+High+Velocity+Blower+Fan&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$80–$115",
     specs: "12 in. · 3 speeds · pivoting head · 10 ft cord · circuit breaker with reset · two outlets",
@@ -434,7 +439,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

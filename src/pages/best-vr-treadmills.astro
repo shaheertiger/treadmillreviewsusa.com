@@ -13,7 +13,8 @@ const PRODUCTS = [
     name: "Virtuix Omni One",
     category: "Complete standalone VR treadmill system",
     badge: "Best Overall",
-    amazonUrl: "https://www.amazon.com/s?k=Virtuix+Omni+One+VR+Treadmill&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=VR+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$2,500–$3,000",
     specs: "Includes customised Pico 4 Ultra headset · users 4 ft 4 in to 6 ft 4 in, up to 250 lb · 48 x 60 x 48 in., 150 lb",
@@ -36,7 +37,8 @@ const PRODUCTS = [
     name: "Virtuix Omni One for Quest",
     category: "VR treadmill for Meta Quest headsets",
     badge: "Best for Quest Owners",
-    amazonUrl: "https://www.amazon.com/s?k=Virtuix+Omni+One+for+Quest&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=VR+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "Around $2,600",
     specs: "Works with Meta Quest 2, 3 and 3S · users up to 250 lb · no headset included",
@@ -59,7 +61,8 @@ const PRODUCTS = [
     name: "Virtuix Omni One Core",
     category: "VR treadmill for PC VR and SteamVR",
     badge: "Best Omni for PC VR",
-    amazonUrl: "https://www.amazon.com/s?k=Virtuix+Omni+One+Core&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=VR+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$2,500–$2,600",
     specs: "Treadmill only, for PC VR headsets and SteamVR games · users up to 250 lb · overshoes and foot trackers included",
@@ -83,6 +86,7 @@ const PRODUCTS = [
     category: "PC VR treadmill with haptics and seat module",
     badge: "Best Value for PC VR",
     amazonUrl: "https://www.amazon.com/s?k=KAT+Walk+C2+Plus+VR+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$1,200–$1,700",
     specs: "Users up to about 286 lb (130 kg) · 49.2 x 49.2 x 62 in., 57 kg · PC VR headsets; Quest via Nexus adapter",
@@ -106,6 +110,7 @@ const PRODUCTS = [
     category: "Entry-level PC VR treadmill",
     badge: "Lowest Price",
     amazonUrl: "https://www.amazon.com/s?k=KAT+Walk+C2+Core+VR+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$800–$1,500",
     specs: "Users up to about 286 lb (130 kg) · PC VR headsets; Quest via Nexus adapter · seat module optional",
@@ -429,7 +434,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

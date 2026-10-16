@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Open-ear bone conduction headset",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Shokz+OpenRun+Pro+2&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$120–$180",
     specs: "Open-ear bone conduction · IP55 · up to 12 hr per charge · Bluetooth 5.3 · multipoint · Standard and Mini bands",
@@ -37,6 +38,7 @@ const PRODUCTS = [
     category: "Budget open-ear bone conduction headset",
     badge: "Best Budget Open-Ear",
     amazonUrl: "https://www.amazon.com/s?k=Shokz+OpenRun+Bone+Conduction+Headphones&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$90–$130",
     specs: "Open-ear bone conduction · IP67 · Standard and Mini bands · magnetic or USB-C charging versions",
@@ -59,6 +61,7 @@ const PRODUCTS = [
     category: "Ear-hook in-ear earbuds with ANC",
     badge: "Best With Noise Cancelling",
     amazonUrl: "https://www.amazon.com/s?k=Beats+Powerbeats+Pro+2&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$200–$250",
     specs: "In-ear with ear-hook · ANC and Transparency · IPX4 earbuds · heart-rate sensor · up to 8 hr per charge with ANC on",
@@ -82,6 +85,7 @@ const PRODUCTS = [
     category: "Wingtip in-ear earbuds with ANC",
     badge: "Best Wingtip Fit",
     amazonUrl: "https://www.amazon.com/s?k=Beats+Powerbeats+Fit&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$170–$200",
     specs: "In-ear with flexible wingtip · ANC and Transparency · IPX4 earbuds and case · Apple H1 chip",
@@ -104,7 +108,8 @@ const PRODUCTS = [
     name: "Soundcore Sport X20",
     category: "Budget ear-hook earbuds with adaptive ANC",
     badge: "Best Budget ANC",
-    amazonUrl: "https://www.amazon.com/s?k=Soundcore+Sport+X20+by+Anker&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0CRT6HQ82?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$70–$80",
     specs: "In-ear with ear-hook · adaptive ANC · hooks rotate up to 30° and extend 4 mm · up to 12 hr per charge (ANC off)",
@@ -127,7 +132,8 @@ const PRODUCTS = [
     name: "JLab GO Sport+",
     category: "Budget ear-hook true wireless earbuds",
     badge: "Best Cheap Pair",
-    amazonUrl: "https://www.amazon.com/s?k=JLab+GO+Sport%2B+True+Wireless+Earbuds&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0CYNFWD2R?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$20–$32",
     specs: "In-ear with ear-hook · IP55 · Be Aware ambient mode · Dual Connect",
@@ -461,7 +467,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

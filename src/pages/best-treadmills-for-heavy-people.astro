@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Best Overall for Heavy Users",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B008PAS1HG?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/life-fitness-t3-treadmill/",
     priceRange: "$3,199-$3,999",
     specs: "400 lb capacity · commercial AC motor · 60 x 22 in. deck · 3 in. rollers",
@@ -36,6 +37,7 @@ const PRODUCTS = [
     category: "Best Value Under 260 lbs",
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/dp/B0HFSZR19W?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/sole-f65-treadmill/",
     priceRange: "$1,199-$1,399",
     specs: "325 lb capacity · 3.25 CHP DC · 60 x 20 in. deck · 2.5 in. rollers",
@@ -58,6 +60,7 @@ const PRODUCTS = [
     category: "Best With a Screen",
     badge: "Best Console",
     amazonUrl: "https://www.amazon.com/dp/B0D5YKF4SK?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/nordictrack-commercial-1750-treadmill/",
     priceRange: "$1,799-$2,299",
     specs: "300 lb capacity · 3.5 CHP DC · 60 x 22 in. deck · 2.5 in. rollers",
@@ -80,6 +83,7 @@ const PRODUCTS = [
     category: "Best Deck Under Load",
     badge: "Best Cushioning",
     amazonUrl: "https://www.amazon.com/s?k=Matrix%20Fitness%20T7xe+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/matrix-fitness-t7xe-treadmill/",
     priceRange: "$3,499-$4,299",
     specs: "400 lb capacity · commercial motor · 60 x 22 in. deck · 3 in. rollers",
@@ -102,6 +106,7 @@ const PRODUCTS = [
     category: "Best for Incline Walking",
     badge: "Best for Incline",
     amazonUrl: "https://www.amazon.com/dp/B0D5YKDXDV?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/nordictrack-commercial-2450-treadmill/",
     priceRange: "$2,299-$2,799",
     specs: "300 lb capacity · 3.6 CHP DC · 60 x 22 in. deck · 2.5 in. rollers",
@@ -124,6 +129,7 @@ const PRODUCTS = [
     category: "Best If Budget Is Not the Constraint",
     badge: "Flagship",
     amazonUrl: "https://www.amazon.com/s?k=Life%20Fitness%20Platinum%20Club%20Series+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/life-fitness-platinum-club-series-treadmill/",
     priceRange: "$8,000-$12,000",
     specs: "400 lb capacity · commercial AC motor · 60 x 22 in. deck · commercial rollers",
@@ -496,7 +502,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

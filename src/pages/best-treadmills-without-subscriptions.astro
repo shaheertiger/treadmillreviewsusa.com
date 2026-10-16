@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Best Overall, No Subscription",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0HFSZR19W?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/sole-f65-treadmill/",
     priceRange: "$1,199-$1,399",
     specs: "No subscription · no account required · onboard programs · Bluetooth export",
@@ -36,6 +37,7 @@ const PRODUCTS = [
     category: "Best Budget, No Subscription",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/s?k=Sole%20F63+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/sole-f63-treadmill/",
     priceRange: "$899-$1,099",
     specs: "No subscription · no account required · onboard programs · hydraulic fold",
@@ -58,6 +60,7 @@ const PRODUCTS = [
     category: "Best Commercial, No Subscription",
     badge: "Longest Lasting",
     amazonUrl: "https://www.amazon.com/dp/B008PAS1HG?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/life-fitness-t3-treadmill/",
     priceRange: "$3,199-$3,999",
     specs: "No subscription · commercial AC motor · onboard programs · console-only operation",
@@ -80,6 +83,7 @@ const PRODUCTS = [
     category: "Best Console Without a Fee",
     badge: "Best Display",
     amazonUrl: "https://www.amazon.com/s?k=Matrix%20Fitness%20T7xe+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/matrix-fitness-t7xe-treadmill/",
     priceRange: "$3,499-$4,299",
     specs: "No mandatory subscription · commercial motor · large touchscreen · onboard programs",
@@ -102,6 +106,7 @@ const PRODUCTS = [
     category: "Best Optional-Subscription Machine",
     badge: "Optional Fee",
     amazonUrl: "https://www.amazon.com/dp/B08N3NL32C?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/proform-pro-2000-treadmill/",
     priceRange: "$899-$1,199",
     specs: "Subscription optional · manual mode retained · some onboard programs · 60 in. deck",
@@ -124,6 +129,7 @@ const PRODUCTS = [
     category: "Cheapest Machine That Still Works Unpaid",
     badge: "Budget Option",
     amazonUrl: "https://www.amazon.com/s?k=NordicTrack%20C%20700+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/nordictrack-c-700-treadmill/",
     priceRange: "$599-$799",
     specs: "Subscription optional · basic manual mode · minimal onboard programs · 55 in. deck",
@@ -517,7 +523,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

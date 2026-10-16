@@ -13,7 +13,8 @@ const PRODUCTS = [
     name: "COROS PACE 4",
     category: "Best Overall Running Watch for Treadmill",
     badge: "Best Overall",
-    amazonUrl: "https://www.amazon.com/s?k=COROS+PACE+4&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0FYGTNYRW?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$249",
     specs: "Indoor Run mode · post-run distance calibration · manual treadmill speed entry · COROS POD 2 and Stryd over Bluetooth · up to 19 days daily use",
@@ -36,6 +37,7 @@ const PRODUCTS = [
     category: "Best Garmin Running Watch for Most Treadmill Runners",
     badge: "Most Runners",
     amazonUrl: "https://www.amazon.com/s?k=Garmin+Forerunner+170&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $300",
     specs: "Treadmill running mode · ANT+ and Bluetooth foot pods · HRM pace and distance · up to 20 hr GPS-only",
@@ -57,7 +59,8 @@ const PRODUCTS = [
     name: "Garmin Forerunner 970",
     category: "Best Premium Running Watch for Treadmill Training",
     badge: "Premium Pick",
-    amazonUrl: "https://www.amazon.com/s?k=Garmin+Forerunner+970&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0F8QWPVNK?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $750",
     specs: "Treadmill running mode · foot pod capable · up to 26 hr GPS-only · up to 15 days smartwatch",
@@ -80,6 +83,7 @@ const PRODUCTS = [
     category: "Best for iPhone Users and Gym Treadmills",
     badge: "GymKit Pick",
     amazonUrl: "https://www.amazon.com/s?k=Apple+Watch+Series+12&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "From $399",
     specs: "Indoor Run workout · GymKit gym equipment pairing · calibrates from outdoor GPS runs",
@@ -103,6 +107,7 @@ const PRODUCTS = [
     category: "Best Polar Watch for Treadmill Runners on a Budget",
     badge: "Budget Pick",
     amazonUrl: "https://www.amazon.com/s?k=Polar+Street+X&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $250",
     specs: "Treadmill running profile · speed and distance from the wrist · Bluetooth stride sensor pairing and calibration",
@@ -125,6 +130,7 @@ const PRODUCTS = [
     category: "Best Lightweight Running Watch for Treadmill and Road",
     badge: "Simple Pick",
     amazonUrl: "https://www.amazon.com/s?k=Suunto+Run+watch&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $249",
     specs: "Treadmill mode · foot POD support with automatic calibration · Bluetooth heart rate straps",
@@ -454,7 +460,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

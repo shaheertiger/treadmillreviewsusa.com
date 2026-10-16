@@ -534,6 +534,31 @@ maker pages, manuals and spec sheets directly. Some pages list fewer than five p
 - `/nordictrack-commercial-2450-treadmill/` still describes the 12 mph version; NordicTrack now lists
   14 mph. Eight roundups link to it. It needs a rewrite.
 
+### Home Gym hub: fourteen commercial pages (2026-10-16)
+
+A new section hub, `/home-gym/`, for commercial-intent keywords beyond treadmills. Every treadmill
+keyword on the supplied list already had a page, and informational queries ("how to set up a home
+gym") and the protein-powder review (a nutrition product, outside this site's scope) were not
+written.
+
+- **Start here**: home workout equipment reviews (pillar: best pick per category, equipment types,
+  how to read an equipment review), commercial gym equipment
+- **Cardio machines**: best cardio machines for home, best ellipticals
+- **Strength**: squat racks (with 2x3 vs 3x3 uprights), lifting platforms, cable machines, converging
+  chest press machines, adjustable dumbbells (with a recall-check section)
+- **Recovery, boxing & accessories**: recovery tools, boxing equipment, home gym accessories
+- **Product reviews**: GymProLuxe (a verifiable UK seller; conflicting return terms reported as
+  such), LifePro Waver vibration plate (health claims presented as the seller's)
+
+Same product rules as the treadmill roundups. Strength pages cover anchoring, safeties and floor
+loading; recovery, boxing and strength pages carry the not-medical-advice scope note. Recall checks
+used the saferproducts.gov API: query by `RecallTitle=`, `Manufacturer=` or `RecallDescription=`
+(with `RecallDateStart`), not `ProductName=`, which matches product names and misses brand recalls.
+Exclusions on safety grounds include BowFlex SelectTech 552/1090 dumbbells (June 2025, stop using),
+several other recalled adjustable dumbbell sets, the NordicTrack RW900 rower and the original Peloton
+Bike+ (PL02). `/bowflex/` also had a leftover "No Treadmills in This Lineup" badge and a "0 treadmills"
+stat from before its October correction; both fixed.
+
 ### Sole F80 and F85
 
 Both were shipped first as `dataPending` editorial drafts because their published figures conflict
@@ -574,6 +599,20 @@ npm run amazon:apply   # write /dp/ links into hand-written pages and regenerate
 - First run (2026-10-13): 48 of 141 products matched, giving 120 direct links; the rest are mostly
   dealer-only machines (Woodway, TrueForm, dogPACER), discontinued models, or products Amazon lists
   under a name that does not carry the model number, and keep their search links.
+- Second run (2026-10-16), over the 200 products added since: 55 matches accepted by the matcher,
+  41 kept after a hand review of every accepted title. The 14 rejected were a book, a cement set
+  matched to a cast-iron one, an older model, a coax variant, bundles, a refurbished and a
+  limited-edition listing, and listings for a different size or configuration from the one the page
+  prices. They are in `HAND_REJECTED` in `scripts/amazon/lib.mjs`, and renewed/refurbished titles
+  are now rejected automatically. 106 of 320 products have a verified ASIN (194 direct links); the
+  rest keep tagged search links, mostly because they are sold direct (Rogue, REP's own range,
+  Nike Strength, Hammer Strength, FightCamp) or not on Amazon US at all.
+- Products Amazon US does not carry get a tagged **category search** instead of a search for their
+  own name, which returned nothing useful (`src/data/amazon-fallbacks.json`, 69 products: Rogue
+  racks → "power rack", dealer chest presses → "plate loaded chest press machine", dog treadmills →
+  "dog treadmill", and so on). Those cards say "Shop Similar on Amazon" rather than "Check Price",
+  so the button is honest about where it goes. Products Amazon does carry under their brand keep
+  their exact-name search.
 
 ## Keyword research
 

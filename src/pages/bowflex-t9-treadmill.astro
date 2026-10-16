@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Folding Treadmill With 22-Inch Deck",
     badge: "Runner’s Pick in the Range",
     amazonUrl: "https://www.amazon.com/s?k=Bowflex+T9+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$1,399-$1,799",
     specs: "22 x 60 in. deck · 3.5 HP (Bowflex test rating) · 0-15% incline · 0.5-12 mph · 350 lb capacity",
@@ -328,7 +329,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

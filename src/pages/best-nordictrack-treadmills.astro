@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Best NordicTrack for most people",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0D5YKF4SK?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/nordictrack-commercial-1750-treadmill/",
     priceRange: "Around $1,900–$2,300",
     specs: "16 in. pivoting touchscreen · 0-12 mph · -3% to 12% incline · folding · lifetime motor warranty",
@@ -37,6 +38,7 @@ const PRODUCTS = [
     category: "Cheapest Commercial-series model",
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/dp/B0D5YJ4YW4?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/nordictrack-commercial-1250-treadmill/",
     priceRange: "Around $1,600–$1,800",
     specs: "10 in. tilting touchscreen · 0-12 mph · -3% to 12% incline · folding · 400 lb capacity",
@@ -60,6 +62,7 @@ const PRODUCTS = [
     category: "Best budget NordicTrack",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/dp/B0D7XGWMRD?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/nordictrack-t-series-treadmill/",
     priceRange: "Around $1,200–$1,600",
     specs: "20 x 60 in. deck · 10 in. tilting touchscreen · 0-12% incline · up to 12 mph · 325 lb capacity",
@@ -83,6 +86,7 @@ const PRODUCTS = [
     category: "Biggest screen for the least money",
     badge: "Best Big Screen",
     amazonUrl: "https://www.amazon.com/dp/B0FBYJPXQ9?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/nordictrack-t-series-treadmill/",
     priceRange: "Around $1,300–$2,000",
     specs: "20 x 60 in. deck · 16 in. tilting touchscreen · 0-12% incline · up to 12 mph · 325 lb capacity",
@@ -106,6 +110,7 @@ const PRODUCTS = [
     category: "Best NordicTrack for fast runners",
     badge: "Best for Running",
     amazonUrl: "https://www.amazon.com/dp/B0D5YKDXDV?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/nordictrack-commercial-2450-treadmill/",
     priceRange: "Around $2,500–$3,000",
     specs: "22 x 60 in. deck · 24 in. pivoting touchscreen · 0-14 mph · -3% to 12% incline · folding",
@@ -129,6 +134,7 @@ const PRODUCTS = [
     category: "Best NordicTrack incline trainer",
     badge: "Best for Incline",
     amazonUrl: "https://www.amazon.com/s?k=NordicTrack+X16+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $2,700–$3,700",
     specs: "22 x 60 in. deck · 16 in. pivoting touchscreen · -6% to 40% incline · 0-12 mph · 400 lb capacity",
@@ -152,6 +158,7 @@ const PRODUCTS = [
     category: "Best premium NordicTrack",
     badge: "Premium Pick",
     amazonUrl: "https://www.amazon.com/s?k=NordicTrack+X24+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $3,000–$4,500",
     specs: "22 x 60 in. deck · 24 in. pivoting touchscreen · -6% to 40% incline · 0-12 mph · 400 lb capacity",
@@ -472,7 +479,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

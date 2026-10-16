@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Category: Mat",
     badge: "Best Mat",
     amazonUrl: "https://www.amazon.com/s?k=SuperMats+Heavy+Duty+TreadMat+Treadmill+Mat&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$50–$75",
     specs: "30 x 72, 36 x 78 or 36 x 90 in. · heavy-duty vinyl · made in USA",
@@ -36,6 +37,7 @@ const PRODUCTS = [
     category: "Category: Belt Lubricant",
     badge: "Best Lubricant",
     amazonUrl: "https://www.amazon.com/s?k=Lube-N-Walk+Treadmill+Lubricating+Kit+100%25+Silicone&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$17–$25",
     specs: "100% silicone · 24 in. applicator wand · made in USA",
@@ -58,6 +60,7 @@ const PRODUCTS = [
     category: "Category: Heart-Rate Monitor",
     badge: "Best HR Monitor",
     amazonUrl: "https://www.amazon.com/dp/B07PM54P4N?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$90–$105",
     specs: "Chest strap · Bluetooth and ANT+ · CR2025 coin cell, up to 400 h · water resistant to 30 m",
@@ -80,7 +83,8 @@ const PRODUCTS = [
     name: "Stryd 5.0 Foot Pod",
     category: "Category: Running Foot Pod",
     badge: "Best Foot Pod",
-    amazonUrl: "https://www.amazon.com/s?k=Stryd+5.0+Running+Power+Meter+Foot+Pod&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=running+foot+pod&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$199–$299",
     specs: "Clips to the shoe · Bluetooth and ANT+ · USB-C magnetic charger · membership optional",
@@ -104,6 +108,7 @@ const PRODUCTS = [
     category: "Category: Surge Protector",
     badge: "Best Surge Protector",
     amazonUrl: "https://www.amazon.com/s?k=Panamax+MD2+Surge+Protector&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$30–$70",
     specs: "2 outlets · 15 A · 1,350 joules · UL 1449 3rd ed., 400 V VPR (line to neutral) · direct plug-in",
@@ -127,6 +132,7 @@ const PRODUCTS = [
     category: "Category: Fan",
     badge: "Best Fan",
     amazonUrl: "https://www.amazon.com/dp/B000E5WAUO?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$40–$85",
     specs: "3 speeds · tilting head · air moves up to 70 ft · 5-year limited warranty",
@@ -149,6 +155,7 @@ const PRODUCTS = [
     category: "Category: Cleaning",
     badge: "Best Cleaning Pick",
     amazonUrl: "https://www.amazon.com/s?k=E-Cloth+General+Purpose+Cloth&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$10–$20",
     specs: "Microfibre · cleans with water alone · sold singly or in packs",
@@ -465,7 +472,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
