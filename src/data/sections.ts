@@ -2859,6 +2859,149 @@ export const SECTIONS: Section[] = [
     ],
   },
   {
+    slug: 'home-gym',
+    name: 'Home Gym',
+    icon: '🏋️',
+    tagline: 'The rest of the room: racks, weights, cardio machines and recovery.',
+    title: 'Home Gym Equipment Reviews and Buying Guides (2026)',
+    metaDescription:
+      'Home gym equipment reviews: cardio machines, ellipticals, squat racks, lifting platforms, cable machines, dumbbells, recovery tools and accessories, checked product by product.',
+    heading: 'Home gym equipment,',
+    highlight: 'checked before it is recommended',
+    standfirst:
+      'A treadmill is often the first machine in a home gym, rarely the last. These guides cover the rest of the room with the same rules: products confirmed as on sale, figures cross-checked, and nothing claimed that was not checked.',
+    intro: [
+      'Most home gyms are built in the wrong order. The expensive machine arrives first, and the cheap things that decide whether it gets used — flooring, a bench, somewhere to put the weights — arrive later or never. The pillar guide sets out a buying order that starts with what you will use most and leaves the specialist kit for when the habit is established.',
+      'Strength equipment carries different risks from cardio machines. A rack has to be anchored the way its maker specifies, safeties have to be set at the right height, and a heavy rack or platform in an upstairs room is a floor-loading question as much as a fitness one. Every strength guide here covers those points before it recommends anything.',
+      'The product rules are the same as on our treadmill roundups. Each product was confirmed as currently sold, each printed figure was checked against the maker or a major retailer and an independent source, any figure the sources disagreed on was left out, and every brand was checked against the CPSC recall database. We have not tested these products, and the pages say so.',
+    ],
+    groups: [
+      {
+        name: 'Start here',
+        pages: [
+          {
+            title: 'Home Workout Equipment Reviews',
+            description:
+              'The best pick in each core category, the equipment types explained, and how to read an equipment review honestly.',
+            badge: 'Pillar',
+            url: '/home-workout-equipment-reviews/',
+          },
+          {
+            title: 'Commercial Gym Equipment',
+            description:
+              'What commercial-grade really means, quote-only pricing, power and warranty terms, and when it is worth it at home.',
+            badge: 'Commercial',
+            url: '/commercial-gym-equipment/',
+          },
+        ],
+      },
+      {
+        name: 'Cardio machines',
+        pages: [
+          {
+            title: 'Best Cardio Machines for Home',
+            description:
+              'Treadmill, bike, rower, elliptical, air bike and stepper picks, and which gym machines translate to a home.',
+            badge: 'Cardio',
+            url: '/best-cardio-machines-for-home/',
+          },
+          {
+            title: 'Best Elliptical Machines for Home',
+            description:
+              'Stride length, drive position, ceiling height and noise, with picks across price points.',
+            badge: 'Elliptical',
+            url: '/best-elliptical-machines-for-home/',
+          },
+        ],
+      },
+      {
+        name: 'Strength',
+        pages: [
+          {
+            title: 'Best Squat Racks for a Home Gym',
+            description:
+              'Folding, half and full racks, 2x3 versus 3x3 uprights, ceiling height and anchoring.',
+            badge: 'Racks',
+            url: '/best-squat-racks-for-home-gym/',
+          },
+          {
+            title: 'Best Lifting Platforms',
+            description:
+              'Platforms, drop pads and the stall-mat route, and what each does for floors and noise.',
+            badge: 'Platform',
+            url: '/best-lifting-platforms/',
+          },
+          {
+            title: 'Best Cable Machines for a Home Gym',
+            description:
+              'Functional trainers, rack attachments and digital machines, and what a 2:1 pulley ratio means.',
+            badge: 'Cable',
+            url: '/best-cable-machines-for-home-gym/',
+          },
+          {
+            title: 'Best Converging Chest Press Machines',
+            description:
+              'Converging versus parallel paths, plate-loaded versus selectorized, and the space they need.',
+            badge: 'Chest press',
+            url: '/best-converging-chest-press-machines/',
+          },
+          {
+            title: 'Best Adjustable Dumbbells',
+            description:
+              'Dial, pin, twist and plate-loaded designs, the honest pros and cons, and adjustable versus fixed.',
+            badge: 'Dumbbells',
+            url: '/best-adjustable-dumbbells/',
+          },
+        ],
+      },
+      {
+        name: 'Recovery, boxing & accessories',
+        pages: [
+          {
+            title: 'Best Recovery Tools for Weightlifters',
+            description:
+              'Massage guns, rollers, balls and compression, and the plain evidence picture behind them.',
+            badge: 'Recovery',
+            url: '/best-recovery-tools-for-weightlifters/',
+          },
+          {
+            title: 'Best Boxing Equipment for Home',
+            description:
+              'Bags, stands, gloves and wraps, plus mounting and apartment noise.',
+            badge: 'Boxing',
+            url: '/best-boxing-equipment-for-home/',
+          },
+          {
+            title: 'Best Home Gym Accessories',
+            description:
+              'The accessories worth buying, and the ones that are commonly oversold.',
+            badge: 'Accessories',
+            url: '/best-home-gym-accessories/',
+          },
+        ],
+      },
+      {
+        name: 'Product reviews',
+        pages: [
+          {
+            title: 'GymProLuxe Review',
+            description:
+              'What we could and could not verify about the seller and its products before you buy.',
+            badge: 'Review',
+            url: '/gymproluxe-review/',
+          },
+          {
+            title: 'LifePro Waver Vibration Plate Review',
+            description:
+              'The specifications checked, the marketing claims read carefully, and who should ask a doctor first.',
+            badge: 'Review',
+            url: '/lifepro-waver-vibration-plate-review/',
+          },
+        ],
+      },
+    ],
+  },
+  {
     slug: 'tools',
     name: 'Tools & Calculators',
     icon: '🧮',

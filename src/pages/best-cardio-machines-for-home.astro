@@ -1,0 +1,986 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "Best Cardio Machines for Home (2026): One Pick per Machine Type";
+const description =
+  "Seven cardio machines checked in October 2026: treadmill, bike, rower, elliptical, air bike, stepper and walking pad, plus which gym machines work at home.";
+
+const PRODUCTS = [
+  {
+    id: "bowflex-t6",
+    name: "BowFlex T6",
+    category: "Best Treadmill for Home",
+    badge: "Best Treadmill",
+    amazonUrl: "https://www.amazon.com/s?k=BowFlex+T6+Treadmill&tag=sktiger-20",
+    reviewUrl: "/bowflex-t6-treadmill/",
+    priceRange: "$899–$1,299",
+    specs: "3.0 HP (BowFlex test rating) · 0.5–12 mph · 0–15% incline · 20 x 60 in. deck · 325 lb max user · 76 x 35 in. footprint · folds · lifetime frame and motor warranty",
+    pros: [
+      "A full 20 x 60-inch running deck with incline to 15%, on a folding frame",
+      "Lifetime frame and motor, 3 years mechanical parts and 1 year in-home labour",
+      "Works with JRNY, Peloton and Zwift apps over Bluetooth, or with no app at all",
+      "NFC tap-to-connect for Apple Watch and Samsung Galaxy Watch",
+    ],
+    cons: [
+      "No touchscreen: entertainment comes from your own tablet",
+      "Heavy at about 234 lb, and it folds upright rather than flat",
+      "The list price is $1,299; independent coverage says it is routinely discounted, so wait for a sale",
+    ],
+    bottomLine: "The treadmill for most homes: a full running deck, steep incline and an excellent warranty, with no subscription required.",
+    description: "The T6 is the treadmill we would buy for a home where someone wants to walk and run. BowFlex’s page and an independent hands-on review agree on a 20 by 60-inch running area, 0.5 to 12 mph, incline to 15%, a 325 lb maximum user weight, an assembled footprint of 76 by 35 inches, a weight of about 234 lb, a folding frame, and a warranty of lifetime on the frame and motor, three years on mechanical parts and one year of in-home labour. BowFlex rates the motor at 3.0 HP and footnotes that this is a test rating rather than operating output. The console is a backlit LCD with LED windows and a tablet holder; it connects over Bluetooth to JRNY, Peloton and Zwift, each a separate subscription, and taps to connect with Apple and Galaxy watches. BowFlex had it at $899 against a $1,299 list price. Our full review covers it in more depth.",
+  },
+  {
+    id: "schwinn-ic4",
+    name: "Schwinn IC4",
+    category: "Best Exercise Bike for Home",
+    badge: "Best Bike",
+    amazonUrl: "https://www.amazon.com/s?k=Schwinn+IC4+Indoor+Cycling+Bike&tag=sktiger-20",
+    reviewUrl: null,
+    priceRange: "$799–$999",
+    specs: "100 magnetic resistance levels · 330 lb max user · 54.6 x 30.7 in. footprint · dual-sided SPD and toe-cage pedals · backlit LCD · 10-year frame warranty",
+    pros: [
+      "The quietest machine on this page: magnetic resistance and no motor",
+      "Connects to the app you choose rather than one built-in service",
+      "Dual-sided pedals take SPD cleats or ordinary trainers",
+      "10-year frame, 3-year parts and electronics warranty, agreed by Schwinn and an independent review",
+    ],
+    cons: [
+      "No built-in workouts or screen: you need a phone or tablet and an app subscription for classes",
+      "An independent review says it is not the bike for anyone who needs highly accurate workout metrics",
+    ],
+    bottomLine: "For riders who want a solid, quiet bike for app-based classes without being tied to one platform.",
+    description: "The IC4 is an indoor cycling bike without a built-in screen, and for most homes that is a strength. Schwinn’s page and a June 2026 independent review agree on 100 levels of magnetic resistance, a 330 lb maximum user weight, a 54.6 by 30.7-inch footprint, a weight of about 114 lb, a backlit LCD console, and dual-sided pedals with an SPD clip on one side and a toe cage on the other. The warranty is 10 years on the frame, three years on parts and electronics, and one year of labour. It connects over Bluetooth to apps on your own device; Schwinn lists JRNY, Peloton, Zwift and others, each with its own subscription, so check the current price. Schwinn was selling it for $799 against a $999 list price. It has no workouts of its own, and an independent reviewer says riders who need precise metrics should look elsewhere. For quiet, low-impact cardio in a small space, it is the pick.",
+  },
+  {
+    id: "concept2-rowerg",
+    name: "Concept2 RowErg",
+    category: "Best Rowing Machine for Home",
+    badge: "Best Rower",
+    amazonUrl: "https://www.amazon.com/s?k=Concept2+RowErg+Rowing+Machine&tag=sktiger-20",
+    reviewUrl: null,
+    priceRange: "$990–$1,155",
+    specs: "Air resistance with adjustable damper · PM5 monitor · 96 x 24 in. footprint · 500 lb max user (Concept2 rating) · 57 lb (standard legs) · separates in two",
+    pros: [
+      "The same rower used in many gyms and rowing clubs, so your results compare with anyone’s",
+      "Splits into two pieces for storage; 57 lb with standard legs",
+      "Needs no outlet: the PM5 monitor runs on batteries topped up by the flywheel",
+      "Tall-leg version raises the seat for easier getting on and off",
+    ],
+    cons: [
+      "Long: about 8 feet of floor before you add room to move",
+      "Air resistance is louder than magnetic or water rowers, and the built-in programmes are basic",
+    ],
+    bottomLine: "For anyone who wants full-body, low-impact cardio on the same machine they would use at a gym or club.",
+    description: "The RowErg is the cardio machine that translates most exactly from gym to home, because it is the gym machine. Concept2’s page and a June 2026 independent review agree on a 96 by 24-inch footprint, a weight of 57 lb with standard legs, a 500 lb maximum user weight, air resistance adjusted with a damper, the PM5 performance monitor, and a frame that separates into two for storage. Concept2 notes that the 500 lb figure comes from its own testing and that its rating under the European test standard is lower. It sells direct at $990 with standard legs or $1,155 with tall legs, which raise the seat. The monitor runs on batteries topped up by the flywheel, so it needs no outlet, and it connects to many training apps. The drawbacks are length and noise: a rower needs a long strip of floor, and an air rower whooshes. Independent reviewers call its built-in programming basic, which matters less once you use an app.",
+  },
+  {
+    id: "sole-e35",
+    name: "Sole E35",
+    category: "Best Elliptical for Home",
+    badge: "Best Elliptical",
+    amazonUrl: "https://www.amazon.com/s?k=Sole+E35+Elliptical&tag=sktiger-20",
+    reviewUrl: null,
+    priceRange: "$1,699–$1,799",
+    specs: "25 lb flywheel · 20 in. stride · 20 resistance levels · 20-level power incline · 350 lb max user · 10.1 in. touchscreen · lifetime frame warranty",
+    pros: [
+      "A heavy 25 lb flywheel for a smooth, quiet stride",
+      "Power incline in 20 levels, adjustable mid-workout",
+      "350 lb maximum user weight, agreed by Sole and an independent review",
+      "Adjustable pedals and several grip positions",
+    ],
+    cons: [
+      "About $1,700, and it does not fold",
+      "Listings disagree on its length and unit weight after the 2026 update",
+      "Tall in use with incline raised; check your ceiling",
+    ],
+    bottomLine: "For long, low-impact sessions with a gym-like stride, in a room with the height and floor space to keep it set up.",
+    description: "The E35 is the most expensive machine on this page and the one that comes closest to a gym elliptical. Sole’s 2026 page and a June 2026 independent review agree on a front-drive design with a 25 lb flywheel, a 20-inch stride, 20 levels of eddy-current magnetic resistance, a 20-level power incline, a 350 lb maximum user weight, a 10.1-inch colour touchscreen and a lifetime frame warranty. Sole had it at $1,699.99 against a $1,799.99 list price. Some older coverage describes a smaller display and a different capacity, and we found conflicting figures for its length and unit weight, so those are not on the card; read Sole’s current spec sheet. Sole lists two years on parts and one year of labour, and one independent source described different terms, so confirm in writing. A hands-on reviewer noted only a slight wobble at high speeds. It is heavy and tall and does not fold. The elliptical roundup has more compact options.",
+  },
+  {
+    id: "schwinn-airdyne-ad7",
+    name: "Schwinn AirDyne AD7",
+    category: "Best Air Bike for Home",
+    badge: "Best Air Bike",
+    amazonUrl: "https://www.amazon.com/s?k=Schwinn+AirDyne+AD7+Air+Bike&tag=sktiger-20",
+    reviewUrl: null,
+    priceRange: "$999–$1,299",
+    specs: "Fan resistance · belt drive · 350 lb max user · 53 x 26.5 in. footprint · 113 lb · battery-powered console · 10-year frame warranty",
+    pros: [
+      "Belt drive: quieter and lower-maintenance than a chain, according to a hands-on reviewer",
+      "Rated to 350 lb, agreed by Schwinn and independent coverage",
+      "No outlet needed; the console runs on batteries",
+      "Moving arms make it a full-body machine for short, hard intervals",
+    ],
+    cons: [
+      "Fan noise is unavoidable on any air bike",
+      "A hands-on reviewer found the belt drive harder to push than a chain, and the console is not backlit",
+      "Parts and labour warranty terms differ between sources; Schwinn lists 2 years parts and 6 months labour",
+    ],
+    bottomLine: "For interval training at home: the hardest workout per minute on this page, with nothing to plug in.",
+    description: "An air bike is the simplest cardio machine there is: a fan for resistance, moving handles for your arms, and resistance that rises with your effort. Schwinn’s page and an independent hands-on review agree on a 350 lb maximum user weight, a 53 by 26.5-inch footprint, a weight of 113 lb, a belt-driven fan and a 10-year frame warranty. Schwinn now lists two years on mechanical parts and electronics and six months of labour; other sources give shorter parts terms, so check before buying. The console runs on batteries, so it can go anywhere. Schwinn was selling it for $999 against a $1,299 list price. The reviewer found the belt drive smooth, quiet and low-maintenance but harder to push than a chain, and another notes the display is not backlit. It is loud by nature. For short, hard intervals in a garage or basement, it is the pick.",
+  },
+  {
+    id: "bowflex-max-trainer-m6",
+    name: "BowFlex Max Trainer M6",
+    category: "Best Stepper for Home",
+    badge: "Best Stepper",
+    amazonUrl: "https://www.amazon.com/s?k=BowFlex+Max+Trainer+M6&tag=sktiger-20",
+    reviewUrl: null,
+    priceRange: "$999–$1,299",
+    specs: "Stepper-elliptical motion with moving arms · 300 lb max user · backlit LCD, no touchscreen · JRNY compatible · 2-year frame and parts warranty",
+    pros: [
+      "A stair-climbing effort with moving arms in a much smaller footprint than a gym stair machine",
+      "Low impact: your feet stay on the pedals",
+      "Works with the JRNY app, or on its own console",
+      "Suited to short interval sessions",
+    ],
+    cons: [
+      "Short warranty: 2 years on the frame and parts and 90 days of labour, agreed by BowFlex and an independent source",
+      "No touchscreen and a basic display",
+      "At 300 lb, the lowest maximum user weight among the full-size machines here",
+    ],
+    bottomLine: "For anyone who misses the stair climber at the gym and wants that effort at home without a machine the size of a staircase.",
+    description: "Gym stair climbers rarely fit in a house. The Max Trainer is BowFlex’s answer: a compact machine that combines a stepper’s climbing motion with an elliptical’s moving handles. On 16 October 2026 the M6 was the only conventional Max Trainer on BowFlex’s store, at $999 against a $1,299 list price; the M5 and M7 we reviewed earlier were no longer listed. BowFlex and an independent source agree on a 300 lb maximum user weight, a backlit LCD console without a touchscreen, JRNY compatibility, and a warranty of two years on the frame and mechanical parts with 90 days of labour. That warranty is the weak point: most machines on this page cover the frame for ten years or life. BowFlex lists resistance levels and dimensions we could not confirm independently, so they are not on the card. BowFlex gives a minimum ceiling height in its specifications; measure before you order, as a stepper lifts you as you climb.",
+  },
+  {
+    id: "urevo-spacewalk-3s",
+    name: "UREVO SpaceWalk 3S",
+    category: "Best Walking Pad",
+    badge: "Best Walking Pad",
+    amazonUrl: "https://www.amazon.com/s?k=UREVO+SpaceWalk+3S+Walking+Pad&tag=sktiger-20",
+    reviewUrl: null,
+    priceRange: "$250–$350",
+    specs: "0–9% powered incline · 0.6–4.0 mph · 42.5 x 16.5 in. belt · 265 lb max user · 6.5 in. tall",
+    pros: [
+      "Powered incline is rare at this price, and it is the main way to make a 4 mph pad harder",
+      "A 42.5-inch belt, long for a walking pad, so taller walkers are less cramped",
+      "Slides under a bed or sofa, and has a handle and wheels for moving",
+      "Brand page and an independent tracker agree on speed, belt, incline and capacity",
+    ],
+    cons: [
+      "Walking only: 4 mph is the ceiling",
+      "Motor type is disputed between listings, and the 2.5 HP figure is a peak rating",
+      "The warranty is one year, with the extra 180 days depending on app registration",
+    ],
+    bottomLine: "For walking at a desk or in front of the television, with incline for variety, on the smallest budget and footprint here.",
+    description: "Not everyone needs a full cardio machine. If your goal is more walking, a pad is the cheapest and smallest way to get it, and the SpaceWalk 3S is the one we would buy. UREVO’s page and an independent walking pad tracker agree on a 0 to 9% powered incline, a 0.6 to 4.0 mph speed range, a 42.5 by 16.5-inch belt and a 265 lb maximum user weight, and UREVO gives its height as 6.5 inches. UREVO was selling it for $249.99 against a $349.99 list price. The disputed detail is the motor: one deal listing calls it brushless, while the tracker says neither the manual nor the current product page does, and treats it as brushed. We have left the motor type off the card. The warranty is one year plus a 180-day extension, which the tracker reports depends on app registration. It is a walking machine only, and owner feedback on consistency is mixed, so check the return terms.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Home Gym", item: "https://www.treadmillreviewsusa.com/home-gym/" },
+        { "@type": "ListItem", position: 3, name: "Best Cardio Machines for Home", item: "https://www.treadmillreviewsusa.com/best-cardio-machines-for-home/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is the best cardio machine for home use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The one you will use most. For most people that is a treadmill, because walking is the easiest habit to keep. If you want quiet and low impact, a magnetic exercise bike; for full-body work in little floor space, a rowing machine. Our picks are the BowFlex T6, Schwinn IC4 and Concept2 RowErg, but choose the type before the brand.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Which cardio machine burns the most calories?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The one you can work hardest on for longest. Machines that use arms and legs together, such as air bikes, rowers and ellipticals, let you do more total work at a given effort, but the figure on any console is an estimate. Choose a machine you enjoy enough to use often; that decides results far more than the machine type.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Which cardio machine is easiest on the knees?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Seated machines and those where your feet never leave the pedals put the least impact through the joints: exercise bikes, rowing machines and ellipticals. A stepper is low impact but works the knees through a deep range. If you have a knee condition, ask a physiotherapist which movement suits you before buying; we review equipment, not injuries.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What cardio machines are at the gym?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Most gyms have treadmills, upright and recumbent bikes, ellipticals, rowing machines, stair climbers, and often air bikes and indoor cycling bikes. Rowers, air bikes and cycling bikes translate almost exactly to home versions. Treadmills and ellipticals translate with compromises in weight and duty cycle. Revolving-stair climbers rarely fit in a house.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is a treadmill or an exercise bike better for home?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A treadmill suits walkers and runners and trains a movement you use every day. A bike is quieter, smaller, cheaper for the quality, and easier on the joints, which makes it the better choice for flats and upstairs rooms. If you are unsure, our treadmill vs exercise bike comparison goes through the trade-offs in detail.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do home cardio machines need a subscription?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "None of the machines on this page do. Several connect to apps such as JRNY, Peloton or Zwift, and those apps charge their own subscriptions, so check the current price. Machines with a built-in screen often tie the best content to the maker's own service. A machine that works fully from its own console is cheaper to own over time.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", name: "Morgan Reyes" },
+      datePublished: "2026-10-16",
+      dateModified: "2026-10-16",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+    ...PRODUCTS.map((product) => ({
+      "@type": "Product",
+      name: product.name,
+      description: product.description,
+      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      offers: {
+        "@type": "AggregateOffer",
+        priceCurrency: "USD",
+        availability: "https://schema.org/InStock",
+      },
+    })),
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-10-16",
+    modifiedTime: "2026-10-16",
+    author: "Morgan Reyes",
+    section: "Fitness Equipment",
+    tags: [
+      "cardio machines",
+      "best cardio machines for home",
+      "cardio machines at gym",
+      "home cardio equipment",
+      "best home exercise machine",
+      "air bike",
+      "stepper machine",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "See Our Top Picks", link: "#quick-picks" }}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-bestcardiomachinesforhome" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-bestcardiomachinesforhome)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Buying Guide
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated October 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          Best Cardio Machines <span class="text-[#5AA9FF]">for Home</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          Seven cardio machines, one of each type, each checked against its maker and at least one independent source. What each is best at, what it costs, which of the machines you know from the gym actually work at home, and the listing claims to ignore.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#quick-picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            See the Picks
+          </a>
+          <a href="#gym-machines" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            Gym Machines at Home
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
+          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">October 16, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="1.9k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">On the products below.</strong> We have not tested these
+          machines. Each was confirmed on 16 October 2026 as currently sold on its maker's own store
+          (BowFlex, Schwinn, Concept2, Sole and UREVO), and its figures were checked on that date
+          against the maker's product page and at least one independent source — published
+          hands-on reviews and, for the walking pad, an independent tracker that reads owner's
+          manuals. A figure appears in a product's specification line only where those sources
+          agree; where they conflicted — on motor type, unit weights, dimensions after a model
+          refresh and some warranty terms — we left the figure out and say so in the text. None of
+          these are our own measurements. Prices are those we saw on 16 October 2026; the cardio
+          market runs on constant sales, so confirm the price, the seller and the specification
+          against the exact listing before you order. We earn a commission if you buy through the
+          Amazon links on this page; it does not change which products we list or what we say about
+          them. <strong class="text-gray-900">What this page is, and is not.</strong> This site
+          reviews equipment and is not giving medical, physiotherapy or coaching advice. If you have
+          a heart, joint, back or balance condition, are pregnant, are returning from injury, or
+          are unsure whether vigorous exercise is right for you, talk to a doctor or another
+          qualified professional before you start.
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
+          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 7 Best Cardio Machines for Home</a>
+          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Machines</a>
+          <a href="#machine-types" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What Each Cardio Machine Is Best At</a>
+          <a href="#gym-machines" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Cardio Machines at the Gym, and Which Translate to Home</a>
+          <a href="#specs-that-matter" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. The Specifications That Matter on Each Machine</a>
+          <a href="#what-to-spend" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. What to Spend on Each Type of Machine</a>
+          <a href="#apps-subscriptions" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Apps, Screens and Subscriptions</a>
+          <a href="#setting-up" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Delivery, Power, Flooring and Noise</a>
+          <a href="#reading-listings" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Reading a Cardio Machine Listing</a>
+          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Who Should Buy Something Else</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          "Cardio machines" covers at least seven quite different pieces of equipment, and the best
+          one for your home depends more on how you like to move than on any specification. This
+          page is the product roundup: one machine of each type that held up when we checked it,
+          with what it is good at and what it is not. If you have not yet decided which type of
+          machine you want, the decision guide linked below is the better place to start; come
+          back here when you have.
+        </p>
+
+        <div id="quick-picks" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+<p>
+            One machine of each type. The short version: the BowFlex T6 if you want to walk and run,
+            the Schwinn IC4 if you want the quietest machine, and the Concept2 RowErg if you want the
+            most work from the least floor space once it is stored. Still choosing between types?
+            Our
+            <a href="/home-cardio-equipment-guide/" class="text-[#0F62FE] font-medium">home cardio equipment guide</a>
+            works through goals, joints, space, noise and budget, and we have not repeated it here.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Pick</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Best for</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Why</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">BowFlex T6</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20 x 60 in. deck, 15% incline, lifetime frame and motor warranty; $899 on sale</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Schwinn IC4</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Exercise bike</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Quiet magnetic resistance and your choice of app; $799 on sale</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Concept2 RowErg</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rowing machine</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The same rower gyms use; splits in two for storage</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sole E35</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Elliptical</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">25 lb flywheel and power incline for a gym-like stride</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Schwinn AirDyne AD7</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Air bike</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Belt drive, 350 lb rating, no outlet needed</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">BowFlex Max Trainer M6</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Stepper</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Stair-climbing motion with moving arms in a small footprint</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UREVO SpaceWalk 3S</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walking pad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Powered 9% incline on a 42.5-inch belt for about $250</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Building a whole home gym rather than buying one machine? Our
+            <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a>
+            pillar picks the best product in each strength and cardio category and sets out a
+            sensible buying order.
+          </p>
+        </div>
+
+        <div id="picks" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 7 Best Cardio Machines for Home</h2>
+<p>
+            Seven machine types, one pick each, ranging from a walking pad at about $250 to an
+            elliptical at about $1,700. The specification line on each card carries only figures
+            that the maker and at least one independent source agree on. Where a card is missing
+            something you would expect — a motor type, a footprint, a unit weight — the
+            description says why.
+          </p>
+        </div>
+      </div>
+
+      <!-- Product cards -->
+      <div class="not-prose">
+        {
+          PRODUCTS.map((product, index) => (
+            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
+              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
+                  <div>
+                    <p class="text-white font-black text-xl leading-tight">
+                      {index + 1}. {product.name}
+                    </p>
+                    <p class="text-gray-400 text-xs">{product.category}</p>
+                  </div>
+                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                    {product.badge}
+                  </span>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center gap-2 mb-4 flex-wrap">
+                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
+                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
+                  </div>
+                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
+                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
+                      <p class="text-xs font-black uppercase tracking-widest text-green-700 mb-2">What Works</p>
+                      <ul class="space-y-2">
+                        {product.pros.map((pro) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+                      <p class="text-xs font-black uppercase tracking-widest text-red-700 mb-2">What Doesn't</p>
+                      <ul class="space-y-2">
+                        {product.cons.map((con) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="border-t border-gray-100 pt-4">
+                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
+                    <div class="flex flex-wrap items-center gap-3">
+                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+                        Check Price on Amazon &rarr;
+                      </a>
+                      {product.reviewUrl && (
+                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
+                          Read our full {product.name} review &rarr;
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="how-we-chose" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Machines</h2>
+<p>
+            We have not tested these machines. The picks were made from manufacturer specifications
+            and manuals, published hands-on reviews, retailer listings, warranty terms and the US
+            Consumer Product Safety Commission's recall database, all checked on 16 October 2026.
+            The BowFlex T6 has
+            <a href="/bowflex-t6-treadmill/" class="text-[#0F62FE] font-medium">its own review on this site</a>,
+            which is also a reading of the published evidence rather than a hands-on test.
+          </p>
+          <p>
+            Four rules decided the list. <strong>Currently sold:</strong> each machine had to be on
+            sale on its maker's own store, under that name, on the day we checked.
+            <strong>Agreement:</strong> capacity, speed or resistance range, and size had to match
+            between the maker and a source that does not sell the machine. <strong>Support:</strong>
+            every brand here sells direct and publishes its warranty terms. <strong>No safety
+            action:</strong> we searched the CPSC's recall database by brand for every maker on the
+            list and checked its published warnings.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What we left out, and why</h3>
+          <p>
+            <strong>BowFlex Max Trainer M5 and M7.</strong> We have reviewed both, but on 16 October
+            2026 BowFlex's store listed only the Max Trainer M6 and the Max Total 16. A machine its
+            maker no longer sells new is not a pick; if you find an M7 secondhand, our
+            <a href="/bowflex-max-trainer-m7/" class="text-[#0F62FE] font-medium">Max Trainer M7 review</a>
+            still applies.
+          </p>
+          <p>
+            <strong>NordicTrack RW900 rower.</strong> In October 2025 iFIT recalled NordicTrack
+            rowing machines with model number NTRW19147 because the console can overheat and ignite.
+            <strong>Original Peloton Bike+.</strong> In November 2025 Peloton recalled Original
+            Series Bike+ units with model number PL02 because the seat post can break. Both recalls
+            offer repairs, but neither machine is one we would point a new buyer towards, and both
+            are worth checking carefully if you are offered one secondhand.
+          </p>
+          <p>
+            <strong>Sperax walking pads.</strong> The CPSC has warned consumers to stop using Sperax
+            walking pads and treadmills immediately, and the seller has not agreed to a recall. They
+            are excluded from every list on this site.
+          </p>
+          <p>
+            We also passed over machines whose figures could not be settled on the day. The most
+            common cause was a model refresh: the maker's page describes the new version and the
+            reviews describe the old one. Two picks here, the Sole E35 and the walking pad, carry
+            notes for exactly that reason.
+          </p>
+        </div>
+
+        <div id="machine-types" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What Each Cardio Machine Is Best At</h2>
+<p>
+            The full decision — by goal, by joints, by space and by noise — is in our
+            <a href="/home-cardio-equipment-guide/" class="text-[#0F62FE] font-medium">home cardio equipment guide</a>.
+            This is the one-line version for each machine on this page, with the head-to-head
+            comparisons if you are torn between two.
+          </p>
+          <ul>
+            <li><strong>Treadmill:</strong> the most natural movement and the easiest to start,
+            and the only machine that trains running itself. Largest footprint, most noise and
+            impact. Torn? Read
+            <a href="/treadmill-vs-elliptical/" class="text-[#0F62FE] font-medium">treadmill vs elliptical</a>.</li>
+            <li><strong>Exercise bike:</strong> the quietest and most compact, with no impact; it
+            trains legs and fitness, not the upper body. See
+            <a href="/treadmill-vs-exercise-bike/" class="text-[#0F62FE] font-medium">treadmill vs exercise bike</a>.</li>
+            <li><strong>Rowing machine:</strong> legs, back and arms together, seated and low
+            impact, but it rewards technique. See
+            <a href="/treadmill-vs-rowing-machine/" class="text-[#0F62FE] font-medium">treadmill vs rowing machine</a>.</li>
+            <li><strong>Elliptical:</strong> a gliding, low-impact stride with arm handles, good
+            for long steady sessions. Tall and heavy.</li>
+            <li><strong>Air bike:</strong> arms and legs against a fan whose resistance rises the
+            harder you push, built for short, hard intervals. Loud, and brutally honest.</li>
+            <li><strong>Stepper:</strong> a climbing motion that is hard on the legs and lungs and
+            easy on the joints, in a small footprint. See
+            <a href="/stairmaster-vs-treadmill/" class="text-[#0F62FE] font-medium">StairMaster vs treadmill</a>.</li>
+            <li><strong>Walking pad:</strong> walking only, under a desk or in front of the
+            television, and stored flat under a bed or sofa.</li>
+          </ul>
+          <p>
+            If two of these appeal equally, choose the one you would be happy to use on a tired
+            evening. Consistency matters more than which machine is theoretically better, and no
+            specification predicts it.
+          </p>
+        </div>
+
+        <div id="gym-machines" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Cardio Machines at the Gym, and Which Translate to Home</h2>
+<p>
+            Most people's idea of a cardio machine comes from a gym floor, and some of those
+            machines move into a house far better than others. Here is how the familiar gym cardio
+            machines translate. Our guide to
+            <a href="/commercial-gym-equipment/" class="text-[#0F62FE] font-medium">commercial gym equipment</a>
+            covers buying the real commercial versions in more depth.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Translates almost exactly</h3>
+          <p>
+            <strong>Rowers.</strong> The Concept2 on this page is the same model you will find in many
+            gyms and rowing clubs. It weighs 57 lb, splits in two and needs no outlet, so a home
+            buyer gets the gym experience without compromise. <strong>Air bikes.</strong> The air
+            bikes in functional-fitness gyms are the same class of machine as the AirDyne AD7: no
+            motor, no outlet, a fan for resistance. The home versions are effectively the gym
+            versions. <strong>Indoor cycling bikes.</strong> A home bike like the IC4 is lighter than
+            a club studio bike, but the riding position and magnetic resistance are close enough that
+            classes translate directly.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Translates with compromises</h3>
+          <p>
+            <strong>Treadmills.</strong> A gym treadmill is heavier, longer, usually non-folding and
+            built for many hours a day, and some commercial models need a dedicated electrical
+            circuit. A home folding treadmill like the T6 gives you the same deck size and incline
+            but a lighter frame and a shorter duty cycle. If you want the gym feel specifically, our
+            <a href="/gym-treadmill-for-home/" class="text-[#0F62FE] font-medium">gym treadmill for home</a>
+            guide explains what buying a commercial or ex-gym treadmill involves.
+            <strong>Ellipticals.</strong> Gym ellipticals are longer-stride and heavier; good home
+            models like the E35 come close on stride and flywheel but not on bulk, and most will not
+            fit through a narrow doorway assembled.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Rarely translates</h3>
+          <p>
+            <strong>Revolving-stair climbers.</strong> The machines with a moving staircase are
+            tall, very heavy and expensive, and few homes have the ceiling height or floor for one.
+            The home answer is a stepper-type machine such as the Max Trainer M6, which gives a
+            similar climbing effort in a fraction of the space; our
+            <a href="/stairmaster-vs-treadmill/" class="text-[#0F62FE] font-medium">StairMaster vs treadmill</a>
+            comparison explains the difference in effort. <strong>Arc trainers and other
+            specialist gym machines</strong> rarely come in home versions at all; a good elliptical
+            or stepper is the closest substitute.
+          </p>
+          <p>
+            One more translation worth making: a gym gives you every machine. At home you get one or
+            two, so the choice matters more, and it is worth trying the movement at a gym before you
+            buy the machine.
+          </p>
+        </div>
+
+        <div id="specs-that-matter" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. The Specifications That Matter on Each Machine</h2>
+<p>
+            Every machine type has two or three figures that decide whether it will suit you, and
+            several that are marketing. These are the ones worth comparing.
+          </p>
+          <p>
+            <strong>Treadmills: deck size, incline and maximum user weight.</strong> A 20 by 60-inch
+            deck is the comfortable size for running; walkers can manage with less. Motor horsepower
+            matters, but makers rate it differently — BowFlex footnotes its figure as a test
+            rating that does not reflect operating output — so compare it only within a brand. Our
+            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
+            explains why.
+          </p>
+          <p>
+            <strong>Bikes: resistance type, adjustability and maximum user weight.</strong>
+            Magnetic resistance is quiet and needs no maintenance; felt-pad friction resistance is
+            cheaper and wears. Check that the seat and handlebars adjust in both directions to fit
+            your height. The number of resistance levels is less important than how finely they are
+            spaced.
+          </p>
+          <p>
+            <strong>Rowers: resistance type, length and storage.</strong> Air, magnetic and water
+            rowers feel different and make different noises. Check the length in use and how the
+            rower stores — standing on end or splitting in two — before the brand.
+          </p>
+          <p>
+            <strong>Ellipticals: stride length, flywheel weight and step-up height.</strong> A
+            20-inch stride suits most adults; shorter strides feel choppy for taller users. A heavier
+            flywheel generally gives a smoother motion. Step-up height plus your own height decides
+            whether you will hit the ceiling.
+          </p>
+          <p>
+            <strong>Air bikes: drive type and console.</strong> Belt drives are quieter and need
+            less maintenance than chains. Resistance is set by your effort, so "levels" do not
+            apply.
+          </p>
+          <p>
+            <strong>Steppers: maximum user weight, ceiling height and warranty.</strong> A stepper
+            lifts you as you climb; makers give a minimum ceiling height, and it is worth measuring.
+          </p>
+          <p>
+            <strong>Walking pads: belt length, speed range and real capacity.</strong> Belt length
+            decides comfort, a 4 mph ceiling means walking only, and capacity figures differ between
+            listings more than any other number. Our
+            <a href="/walking-pad-buying-guide/" class="text-[#0F62FE] font-medium">walking pad buying guide</a>
+            covers the details.
+          </p>
+        </div>
+
+        <div id="what-to-spend" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. What to Spend on Each Type of Machine</h2>
+<p>
+            Cardio machines are priced very differently by type, and the cheapest machine of one
+            type can cost more than a good machine of another. These are the prices we saw on
+            makers' own stores on 16 October 2026, for the picks and for the models either side of
+            them in the same ranges. They move constantly, so treat them as a snapshot.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Type</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Our pick, as seen</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Nearby models we saw</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walking pad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$249.99 (SpaceWalk 3S)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UREVO pads from $139.99 to $399.99</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Exercise bike</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$799 (IC4)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Schwinn IC3 at $599</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$899 (T6)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sole F63 at $1,099.99; BowFlex T9 at $1,399</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rowing machine</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$990 (RowErg, standard legs)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,155 with tall legs</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Air bike</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$999 (AirDyne AD7)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">List price $1,299</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Stepper</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$999 (Max Trainer M6)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Max Total 16 at $1,999</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Elliptical</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,699.99 (E35)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sole E25 at $1,199.99; Schwinn 411 at $699</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Three things stand out. First, a good walking pad costs a third of a good bike, but it
+            only does one job. Second, the five mid-priced types — bike, treadmill, rower, air bike
+            and stepper — all cluster between about $800 and $1,000 on sale, so price should not
+            decide between them; the movement should. Third, ellipticals are the most expensive type
+            to buy well, because a smooth stride needs a heavy flywheel and a long, rigid frame.
+          </p>
+          <p>
+            Sale prices on most of these machines were $200 to $400 below list when we checked. If a
+            machine is at full price, it is usually worth waiting; our guide to the
+            <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy a treadmill</a>
+            explains the sale calendar, which applies to most cardio equipment.
+          </p>
+        </div>
+
+        <div id="apps-subscriptions" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Apps, Screens and Subscriptions</h2>
+<p>
+            Most cardio machines now connect to an app, and the business model behind that app
+            often matters more than the machine's screen. Every machine on this page works without a
+            subscription. That was deliberate.
+          </p>
+          <p>
+            <strong>Bring-your-own-screen machines</strong> — the T6, IC4 and Max Trainer M6 —
+            have a basic console and a holder for your phone or tablet. They connect over Bluetooth
+            to apps you choose: BowFlex lists JRNY, Peloton and Zwift for the T6, and Schwinn lists
+            JRNY, Peloton, Zwift and others for the IC4. Each of those apps needs its own
+            subscription; check the current price, as these change often. The advantage is that if
+            an app raises its price or shuts down, the machine carries on.
+          </p>
+          <p>
+            <strong>Built-in-screen machines</strong> like the Sole E35, with its 10.1-inch
+            touchscreen, put the content on the machine. That is more convenient, but the screen
+            ages faster than the frame, and the content is tied to whatever the maker supports.
+          </p>
+          <p>
+            <strong>Machines with no app at all</strong> — the AirDyne AD7 runs on batteries and
+            needs no outlet — are the simplest to own. The Concept2's monitor does connect to apps,
+            but it works perfectly well alone.
+          </p>
+          <p>
+            If you are weighing up a subscription-first machine, our guide to the
+            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">best treadmills without subscriptions</a>
+            sets out what you give up and what you save.
+          </p>
+        </div>
+
+        <div id="setting-up" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Delivery, Power, Flooring and Noise</h2>
+<p>
+            The practical side of owning a cardio machine is where most disappointments start, and
+            it differs more between machine types than people expect.
+          </p>
+          <p>
+            <strong>Delivery and assembly.</strong> A treadmill or elliptical arrives in a box well
+            over 200 lb, often on a pallet left at the kerb unless you pay for room-of-choice
+            delivery. Plan the route through the house, measure doorways and stairs, and consider
+            paid assembly for the two heaviest machine types. A bike, rower, air bike or walking pad
+            can usually be carried in and assembled by one or two people.
+          </p>
+          <p>
+            <strong>Power.</strong> Treadmills, walking pads and most ellipticals plug in; the
+            rower and air bike on this page do not need to. Plug a treadmill directly into a wall
+            outlet rather than an extension lead, and check the manual for the circuit it expects.
+            Our guide to
+            <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium">treadmill extension cords</a>
+            explains why.
+          </p>
+          <p>
+            <strong>Flooring.</strong> A mat protects the floor from scuffs, sweat and the grit
+            that wears a belt, and steadies a machine on an uneven surface. It reduces some
+            vibration but does not soundproof a room. Our
+            <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">treadmill mats</a>
+            roundup applies to every machine here.
+          </p>
+          <p>
+            <strong>Noise.</strong> Roughly, from quietest to loudest: magnetic bike, walking pad
+            at walking pace, elliptical, stepper, treadmill at running pace, air rower, air bike.
+            Fans are loud by design, and a running treadmill adds footfall that travels through
+            floors. For flats and upstairs rooms, the bike or elliptical is the safer choice.
+          </p>
+          <p>
+            <strong>Ceiling height.</strong> Treadmills with incline, ellipticals and steppers all
+            lift you. BowFlex, for example, gives the T6's minimum ceiling height as your height
+            plus 20.75 inches. Measure before you order, not after.
+          </p>
+        </div>
+
+        <div id="reading-listings" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Reading a Cardio Machine Listing</h2>
+<p>
+            Three things caught us out while checking the machines on this page, and they will catch
+            out anyone comparing listings.
+          </p>
+          <p>
+            <strong>Model refreshes under the same name.</strong> Sole updated the E35 for 2026
+            with a new console. Older coverage describes a smaller display and a different
+            capacity, and we found conflicting figures for its length and unit weight. If two
+            sources disagree on a machine with the same name, assume one of them is describing a
+            different version, and trust the maker's current spec sheet and manual.
+          </p>
+          <p>
+            <strong>Motor claims on walking pads.</strong> One deal listing for the UREVO SpaceWalk 3S
+            calls its motor brushless; an independent tracker that reads the manual says the manual
+            and current product page do not, and treats it as brushed. Peak horsepower on a pad
+            tells you very little either way. We left the motor type off the card.
+          </p>
+          <p>
+            <strong>Discontinued machines still for sale.</strong> Marketplace listings can carry
+            on long after a maker stops selling a model new, as the BowFlex Max Trainer M5 and M7
+            show. That is not necessarily bad — it may be a bargain — but check that parts and
+            warranty support still exist before you buy.
+          </p>
+          <p>
+            And the usual rules apply: treat "was" prices with suspicion, look for the warranty in
+            writing, and check the seller. Our guide to
+            <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">buying a treadmill on Amazon</a>
+            covers the general method, and it works for every machine type here.
+          </p>
+        </div>
+
+        <div id="who-should-skip" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Who Should Buy Something Else</h2>
+<p>
+            A cardio machine is the right purchase for most people who want to exercise at home.
+            Several buyers should think again before spending.
+          </p>
+          <p>
+            <strong>If you already pay for a gym you use,</strong> a home machine may duplicate it.
+            Our
+            <a href="/home-treadmill-vs-gym-membership/" class="text-[#0F62FE] font-medium">home treadmill vs gym membership</a>
+            comparison sets out when owning pays off.
+          </p>
+          <p>
+            <strong>If you want to run seriously,</strong> the treadmill is the only machine here
+            that trains it, and you may want a heavier non-folding model; see the
+            <a href="/best-treadmills-for-home/" class="text-[#0F62FE] font-medium">best treadmills for home</a>.
+          </p>
+          <p>
+            <strong>If you prefer gliding cardio,</strong> the
+            <a href="/best-elliptical-machines-for-home/" class="text-[#0F62FE] font-medium">best elliptical machines for home</a>
+            roundup has cheaper and more compact options than the E35.
+          </p>
+          <p>
+            <strong>If you live upstairs or share walls,</strong> skip the treadmill and air bike
+            and look at the bike or elliptical. A walking pad at walking pace is a reasonable
+            compromise.
+          </p>
+          <p>
+            <strong>If you have a heart, joint or balance condition,</strong> talk to your doctor
+            before choosing, and favour machines with full handrails or a seat. We review
+            equipment; this is not medical advice.
+          </p>
+          <p>
+            And if you are still unsure what kind of machine you want, read the
+            <a href="/home-cardio-equipment-guide/" class="text-[#0F62FE] font-medium">decision guide</a>
+            before any product page. It will save you more money than any sale.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What is the best cardio machine for home use?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                The one you will use most. For most people that is a treadmill, because walking is the easiest habit to keep. If you want quiet and low impact, a magnetic exercise bike; for full-body work in little floor space, a rowing machine. Our picks are the BowFlex T6, Schwinn IC4 and Concept2 RowErg, but choose the type before the brand.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Which cardio machine burns the most calories?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                The one you can work hardest on for longest. Machines that use arms and legs together, such as air bikes, rowers and ellipticals, let you do more total work at a given effort, but the figure on any console is an estimate. Choose a machine you enjoy enough to use often; that decides results far more than the machine type.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Which cardio machine is easiest on the knees?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Seated machines and those where your feet never leave the pedals put the least impact through the joints: exercise bikes, rowing machines and ellipticals. A stepper is low impact but works the knees through a deep range. If you have a knee condition, ask a physiotherapist which movement suits you before buying; we review equipment, not injuries.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What cardio machines are at the gym?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Most gyms have treadmills, upright and recumbent bikes, ellipticals, rowing machines, stair climbers, and often air bikes and indoor cycling bikes. Rowers, air bikes and cycling bikes translate almost exactly to home versions. Treadmills and ellipticals translate with compromises in weight and duty cycle. Revolving-stair climbers rarely fit in a house.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is a treadmill or an exercise bike better for home?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                A treadmill suits walkers and runners and trains a movement you use every day. A bike is quieter, smaller, cheaper for the quality, and easier on the joints, which makes it the better choice for flats and upstairs rooms. If you are unsure, our treadmill vs exercise bike comparison goes through the trade-offs in detail.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Do home cardio machines need a subscription?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                None of the machines on this page do. Several connect to apps such as JRNY, Peloton or Zwift, and those apps charge their own subscriptions, so check the current price. Machines with a built-in screen often tie the best content to the maker's own service. A machine that works fully from its own console is cheaper to own over time.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Cardio Machine for Home</h2>
+          <p class="text-gray-700 leading-relaxed">Most cardio machine regrets come from the room, the floor or the habit, not from the machine itself.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Choosing by specification instead of by movement</h3>
+              <p class="text-gray-700 text-sm m-0">A machine with better figures is no use if you dislike the motion. Try the movement first — at a gym, a friend’s house or a shop — and buy the type you would choose on a tired evening. Then compare specifications within that type. The decision guide linked on this page is built around exactly that order.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring ceiling height</h3>
+              <p class="text-gray-700 text-sm m-0">Treadmills on incline, ellipticals and steppers all lift you well above the floor. Makers publish minimum ceiling heights, often as your height plus a set figure, and a machine that fits the floor can still put your head in the ceiling. Measure the room height where the machine will stand before you order.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Putting a loud machine in the wrong room</h3>
+              <p class="text-gray-700 text-sm m-0">An air bike, an air rower or a treadmill at running pace will be heard elsewhere in the house and, upstairs, by neighbours. A mat helps with vibration but does not soundproof a room. If noise matters, choose a magnetic bike or elliptical, or put the loud machine in a garage or ground-floor room.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting an old review of a refreshed machine</h3>
+              <p class="text-gray-700 text-sm m-0">Makers update machines under the same name, and reviews from before the update can describe a different console, capacity or size. If a figure in a review does not match the maker’s current page, assume the review is describing the earlier version. Trust the current spec sheet and manual for the unit you are buying.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/home-cardio-equipment-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Decision Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Home Cardio Equipment Guide</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Choose the right machine type by goal, joints, space, noise and budget.</p>
+            </a>
+            <a href="/best-elliptical-machines-for-home/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Ellipticals</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Elliptical Machines for Home</p>
+              <p class="text-sm text-gray-500 leading-relaxed">More elliptical picks, from compact to gym-grade, with what to check.</p>
+            </a>
+            <a href="/commercial-gym-equipment/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Gym Kit</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Commercial Gym Equipment at Home</p>
+              <p class="text-sm text-gray-500 leading-relaxed">What changes when you buy gym-grade machines for a house or garage.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">Choose the machine type first, then the model.</strong> For most
+            homes the <strong class="text-white">BowFlex T6</strong> is the treadmill to buy, the
+            <strong class="text-white">Schwinn IC4</strong> is the quiet choice, and the
+            <strong class="text-white">Concept2 RowErg</strong> gives the most complete workout for
+            its stored size. The E35, AD7, Max Trainer M6 and SpaceWalk 3S each win their own
+            category, for the buyers who want that kind of cardio.
+          </p>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            If you have not settled on a type yet, do that before comparing prices: the
+            <a href="/home-cardio-equipment-guide/" class="text-[#5AA9FF] font-bold no-underline">home cardio equipment guide</a>
+            walks through the decision, and the head-to-head comparisons linked above settle the
+            closest calls.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+</Layout>
