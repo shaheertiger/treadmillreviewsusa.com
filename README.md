@@ -599,6 +599,14 @@ npm run amazon:apply   # write /dp/ links into hand-written pages and regenerate
 - First run (2026-10-13): 48 of 141 products matched, giving 120 direct links; the rest are mostly
   dealer-only machines (Woodway, TrueForm, dogPACER), discontinued models, or products Amazon lists
   under a name that does not carry the model number, and keep their search links.
+- Second run (2026-10-16), over the 200 products added since: 55 matches accepted by the matcher,
+  41 kept after a hand review of every accepted title. The 14 rejected were a book, a cement set
+  matched to a cast-iron one, an older model, a coax variant, bundles, a refurbished and a
+  limited-edition listing, and listings for a different size or configuration from the one the page
+  prices. They are in `HAND_REJECTED` in `scripts/amazon/lib.mjs`, and renewed/refurbished titles
+  are now rejected automatically. 106 of 320 products have a verified ASIN (194 direct links); the
+  rest keep tagged search links, mostly because they are sold direct (Rogue, REP's own range,
+  Nike Strength, Hammer Strength, FightCamp) or not on Amazon US at all.
 
 ## Keyword research
 
