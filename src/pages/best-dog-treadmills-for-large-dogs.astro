@@ -13,7 +13,8 @@ const PRODUCTS = [
     name: "Dog Runner Revolution Pro",
     category: "Best motorised dog treadmill for large dogs",
     badge: "Best Overall",
-    amazonUrl: "https://www.amazon.com/s?k=Dog+Runner+Revolution+Pro+Dog+Treadmill&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=dog+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$2,400–$2,500",
     specs: "70.9 x 18.1 in. running surface · 0.5–11.2 mph · 0–15% powered incline · 3.5 HP motor",
@@ -36,7 +37,8 @@ const PRODUCTS = [
     name: "Dog Runner Ortho Pro",
     category: "Best large-dog treadmill for older dogs and vet-directed work",
     badge: "Best for Rehab",
-    amazonUrl: "https://www.amazon.com/s?k=Dog+Runner+Ortho+Pro+Dog+Treadmill&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=dog+treadmill+large+dogs&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$2,350–$2,600",
     specs: "3.5 HP motor · powered incline · extra-cushioned deck",
@@ -59,7 +61,8 @@ const PRODUCTS = [
     name: "Jog A Dog DC7",
     category: "Best dog treadmill for giant breeds",
     badge: "Best for Giant Breeds",
-    amazonUrl: "https://www.amazon.com/s?k=Jog+A+Dog+DC7+XL+Dog+Treadmill&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=dog+treadmill+large+dogs&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "Around $3,000",
     specs: "84 x 24 in. running surface · four-position adjustable incline · side guardrails",
@@ -83,6 +86,7 @@ const PRODUCTS = [
     category: "Best slatmill for large dogs",
     badge: "Best Slatmill",
     amazonUrl: "https://www.amazon.com/s?k=Dog+Trotter+USA+Classic+Slatmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$2,900–$4,150",
     specs: "Non-motorised slatmill · Large: 61 x 14 in. running surface · Maxx: 16 in. wide",
@@ -105,7 +109,8 @@ const PRODUCTS = [
     name: "Dog Trotter USA Evo Pro Slatmill",
     category: "Best large-dog slatmill for working and sport dogs",
     badge: "Best for Working Dogs",
-    amazonUrl: "https://www.amazon.com/s?k=Dog+Trotter+USA+Evo+Pro+Slatmill&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=dog+treadmill+large+dogs&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$4,350–$6,000",
     specs: "Non-motorised slatmill · remote-controlled incline · resistance brake · digital speedometer",
@@ -437,7 +442,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Dual-stack functional trainer",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0CZLZRP6G?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$2,199.99",
     specs: "2 x 170 lb stacks (upgradeable to 220 lb) · 2:1 ratio · 35.8 x 55.3 x 80.8 in (L x W x H) · 81 in cable travel",
@@ -37,6 +38,7 @@ const PRODUCTS = [
     category: "Rack-mounted cable attachment",
     badge: "Best Rack-Mounted",
     amazonUrl: "https://www.amazon.com/s?k=REP+Fitness+Athena+Side-Mount+Functional+Trainer&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$949.99–$1,799.99",
     specs: "170 lb stack per unit (upgradeable to 220 lb) · 2:1 ratio · fits REP PR-4000 or PR-5000 V2 racks, 80 or 93 in · adds 1.8 in of height",
@@ -60,6 +62,7 @@ const PRODUCTS = [
     category: "Plate-loaded pulley tower",
     badge: "Best Budget / Plate-Loaded",
     amazonUrl: "https://www.amazon.com/s?k=Bells+of+Steel+Plate+Loaded+Cable+Tower&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$434.99–$542.99",
     specs: "2:1 ratio by default, 1:1 by joining the cables · 250 lb cable capacity (plate-loaded) · more than 30 height settings · nylon pulleys, aluminium upgrade available",
@@ -83,6 +86,7 @@ const PRODUCTS = [
     category: "Compact all-in-one cable machine and rack",
     badge: "Best Compact All-in-One",
     amazonUrl: "https://www.amazon.com/s?k=Bells+of+Steel+All-in-One+Trainer&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$1,299.99–$1,899.99",
     specs: "54.6 x 59 in footprint (L x W) · 2:1 side pulleys, 1:1 centre pulleys · 300 lb max cable capacity · plate-loaded or weight-stack versions",
@@ -106,6 +110,7 @@ const PRODUCTS = [
     category: "Wall-mounted digital-resistance machine",
     badge: "Best Wall-Mounted Digital",
     amazonUrl: "https://www.amazon.com/s?k=Tonal+2+Smart+Home+Gym&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$4,295",
     specs: "5–250 lb digital resistance · 50.9 x 21.5 in (H x W) · wall-mounted, professional installation · needs 7 ft of wall, 7 x 7 ft of floor, 7 ft 10 in ceiling · 2-year warranty",
@@ -129,6 +134,7 @@ const PRODUCTS = [
     category: "Freestanding digital-resistance machine",
     badge: "Best Freestanding Digital",
     amazonUrl: "https://www.amazon.com/dp/B0DFH1NYR6?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$3,387–$3,849",
     specs: "220 lb maximum (110 lb per side) · about 48 x 27 x 73 in unfolded, about 14.5 in deep folded · about 172 lb",
@@ -466,7 +472,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

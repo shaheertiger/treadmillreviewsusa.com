@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Mild soap for the belt, rails and frame",
     badge: "Best Mild Cleaner",
     amazonUrl: "https://www.amazon.com/s?k=Mrs.+Meyer%27s+Clean+Day+Liquid+Dish+Soap&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$4.79–$5.29",
     specs: "Liquid dish soap · several scents · use a few drops in warm water",
@@ -36,6 +37,7 @@ const PRODUCTS = [
     category: "Microfibre cloths for every surface",
     badge: "Best Cloths",
     amazonUrl: "https://www.amazon.com/s?k=E-Cloth+General+Purpose+Cloth+4+Pack&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$20",
     specs: "4 cloths · 12.5 x 12.5 in. · microfibre · reusable and washable · 1-year or 100-wash promise",
@@ -58,6 +60,7 @@ const PRODUCTS = [
     category: "Alcohol- and ammonia-free screen cleaner",
     badge: "Best for Screens",
     amazonUrl: "https://www.amazon.com/s?k=WHOOSH%21+Screen+Shine+Screen+Cleaner&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$12–$20",
     specs: "Spray screen cleaner · alcohol- and ammonia-free · supplied with a microfibre cloth · 1 to 16.9 fl oz bottles",
@@ -80,6 +83,7 @@ const PRODUCTS = [
     category: "Handheld vacuum with crevice tool for dust and fibre",
     badge: "Best Vacuum",
     amazonUrl: "https://www.amazon.com/s?k=BLACK%2BDECKER+dustbuster+AdvancedClean+CHV1410L&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$60",
     specs: "Cordless handheld vacuum · 16V battery · 605 ml dust bowl · pull-out crevice tool and flip-up brush · washable filter · 2-year limited warranty",
@@ -102,6 +106,7 @@ const PRODUCTS = [
     category: "Low-residue cleaning wipes for gym equipment",
     badge: "Best Gym Wipes",
     amazonUrl: "https://www.amazon.com/dp/B015QVHD4S?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$148–$214 per case of 4",
     specs: "700 towelettes per refill · plant-based compostable fabric · low-residue cleaning wipe, not a disinfectant",
@@ -425,7 +430,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

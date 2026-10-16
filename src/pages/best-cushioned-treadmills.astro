@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Best cushioned treadmill for most people",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+7.8+AT+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $1,900–$2,000",
     specs: "22 x 60 in. deck · 3-Zone Variable Response Cushioning · 0-15% incline · 0.5-12 mph · 375 lb capacity · folding",
@@ -37,6 +38,7 @@ const PRODUCTS = [
     category: "Best premium cushioned treadmill",
     badge: "Premium Pick",
     amazonUrl: "https://www.amazon.com/s?k=Life+Fitness+Run+CX+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/life-fitness-run-cx-treadmill/",
     priceRange: "Around $4,300–$4,900",
     specs: "22 x 60 in. deck · FlexDeck shock absorption · 0-15% incline · 0.5-12 mph · 400 lb capacity · 6 in. step-up · non-folding",
@@ -60,6 +62,7 @@ const PRODUCTS = [
     category: "Best cushioned treadmill with decline and a touchscreen",
     badge: "Best Smart Pick",
     amazonUrl: "https://www.amazon.com/dp/B0D5YKF4SK?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/nordictrack-commercial-1750-treadmill/",
     priceRange: "Around $1,900–$2,300",
     specs: "16 in. pivoting touchscreen · RunFlex cushioned deck · -3% to 12% incline · folding · lifetime motor warranty",
@@ -83,6 +86,7 @@ const PRODUCTS = [
     category: "Best zoned cushioning for the money",
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/s?k=Bowflex+T9+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/bowflex-t9-treadmill/",
     priceRange: "Around $1,400–$1,800",
     specs: "22 x 60 in. deck · FlexZone XL cushioning · 0-15% incline · 0.5-12 mph · 350 lb capacity · folding",
@@ -106,6 +110,7 @@ const PRODUCTS = [
     category: "Best budget cushioned treadmill",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+7.0+AT+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/horizon-7-0-at-treadmill/",
     priceRange: "Around $930–$1,100",
     specs: "20 x 60 in. deck · 3-Zone Variable Response Cushioning · 0-15% incline · 0.5-12 mph · 325 lb capacity · folding",
@@ -129,6 +134,7 @@ const PRODUCTS = [
     category: "Best cushioned treadmill with iFIT for less",
     badge: "Best iFIT Value",
     amazonUrl: "https://www.amazon.com/dp/B0FFDKN27H?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $1,200–$1,500",
     specs: "20 x 60 in. deck · ProShox cushioning · 10 in. touchscreen · 0-12% incline · 0-12 mph · 350 lb capacity · folding",
@@ -477,7 +483,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

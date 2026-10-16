@@ -11,9 +11,13 @@
  */
 import { readdirSync, readFileSync, writeFileSync, existsSync } from 'fs';
 import { join } from 'path';
-import { PAGES_DIR, SPECS_DIR, dpLink, loadAsins } from './lib.mjs';
+import { PAGES_DIR, SPECS_DIR, ROOT, dpLink, loadAsins } from './lib.mjs';
 
 const asins = loadAsins();
+// Category searches for products Amazon US does not carry (see src/data/amazon-fallbacks.json).
+const FALLBACK_PATH = join(ROOT, 'src', 'data', 'amazon-fallbacks.json');
+const fallbacks = existsSync(FALLBACK_PATH) ? JSON.parse(readFileSync(FALLBACK_PATH, 'utf8')) : {};
+const searchUrl = (q) => `https://www.amazon.com/s?k=${encodeURIComponent(q).replace(/%20/g, '+')}&tag=sktiger-20`;
 let changed = 0;
 for (const f of readdirSync(PAGES_DIR).filter((f) => f.endsWith('.astro'))) {
   if (existsSync(join(SPECS_DIR, f.replace(/\.astro$/, '.mjs')))) continue; // generated
@@ -22,10 +26,15 @@ for (const f of readdirSync(PAGES_DIR).filter((f) => f.endsWith('.astro'))) {
   const out = src.replace(/(name:\s*"([^"]+)"[\s\S]*?amazonUrl:\s*)"(https:\/\/www\.amazon\.com\/s\?[^"]*)"/g, (whole, head, name, url) => {
     if (/name:\s*"/.test(head.slice(5))) return whole; // matched across two products
     const hit = asins[name];
-    if (!hit) return whole;
+    if (hit) {
+      changed++;
+      return `${head}"${dpLink(hit.asin)}"`;
+    }
+    const q = fallbacks[name];
+    if (!q || url === searchUrl(q)) return whole;
     changed++;
-    return `${head}"${dpLink(hit.asin)}"`;
+    return `${head}"${searchUrl(q)}"`;
   });
   if (out !== src) writeFileSync(path, out);
 }
-console.log(`Replaced ${changed} search link(s) with verified /dp/ links.`);
+console.log(`Replaced ${changed} search link(s) with verified /dp/ or category-search links.`);

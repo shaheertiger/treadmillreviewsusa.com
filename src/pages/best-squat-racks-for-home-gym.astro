@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Configurable 3x3 full power rack",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=REP+Fitness+PR-5000+Power+Rack&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$900–$1,500",
     specs: "3x3 in. 11-gauge steel · 1 in. holes · 16, 30 or 41 in. depths · 1,000 lb rackable capacity (maker)",
@@ -36,7 +37,8 @@ const PRODUCTS = [
     name: "Rogue Bolt-Together R-3 Power Rack",
     category: "2x3 full power rack, bolt-down",
     badge: "Best 2x3 Power Rack",
-    amazonUrl: "https://www.amazon.com/s?k=Rogue+R-3+Power+Rack&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=power+rack&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$870–$895",
     specs: "2x3 in. 11-gauge uprights · Westside hole spacing · 5/8 in. hardware · must be bolted to the floor",
@@ -59,7 +61,8 @@ const PRODUCTS = [
     name: "Rogue HR-2 Half Rack",
     category: "3x3 half rack, no bolting required",
     badge: "Best Half Rack",
-    amazonUrl: "https://www.amazon.com/s?k=Rogue+HR-2+Half+Rack&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=half+rack&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$765–$800",
     specs: "3x3 in. 11-gauge uprights · 2x3 in. 11-gauge base · Westside hole spacing · 48 x 49 in. footprint",
@@ -83,6 +86,7 @@ const PRODUCTS = [
     category: "Folding wall-mounted 3x3 rack",
     badge: "Best Folding Rack",
     amazonUrl: "https://www.amazon.com/dp/B09BDHXJRN?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$1,050–$1,100",
     specs: "3x3 in. 11-gauge uprights · 81, 89 or 95 in. heights · 5/8 in. holes · folds to 4 in. from the wall · 1,000 lb capacity (maker)",
@@ -106,6 +110,7 @@ const PRODUCTS = [
     category: "Budget 2x3 squat stand for low ceilings",
     badge: "Best Squat Stand",
     amazonUrl: "https://www.amazon.com/dp/B086H6Q399?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$300–$380",
     specs: "2x3 in. 11-gauge uprights · Westside hole spacing · 73.5 in. tall · 47 x 48 in. base · 1,000 lb capacity (maker)",
@@ -129,6 +134,7 @@ const PRODUCTS = [
     category: "Budget 2x2 full power rack",
     badge: "Best Budget Power Rack",
     amazonUrl: "https://www.amazon.com/dp/B07CHR5QDQ?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$379–$400",
     specs: "2x2 in. 14-gauge steel · 1 in. holes, 3 in. spacing · 85 in. tall · 58.1 x 48.5 in. footprint · 700 lb rackable capacity (maker)",
@@ -471,7 +477,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

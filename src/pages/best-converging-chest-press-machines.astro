@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Plate-loaded home multi-press",
     badge: "Best Budget Home Multi-Press",
     amazonUrl: "https://www.amazon.com/dp/B0DWF74DMW?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$1,199.99–$1,229.99",
     specs: "Independent converging scissor arms · flat, incline, decline and shoulder press · 67.3 x about 67 x 59.6 in (L x W x H) · 260 lb · 3 x 3 in, 14-gauge frame · 2 in Olympic plates",
@@ -36,7 +37,8 @@ const PRODUCTS = [
     name: "Temple of Gainz The Omnipress",
     category: "Plate-loaded converging Smith-style press",
     badge: "Most Adjustable Home Press",
-    amazonUrl: "https://www.amazon.com/s?k=Temple+of+Gainz+Omnipress+Converging+Smith+Machine&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=plate+loaded+chest+press+machine&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$2,799.99–$3,199.99",
     specs: "Converging Smith-style arms · 13 angles from -15 to 75 degrees · 30 mm carriage and 40 mm bench guide rods · 3 handle widths · 6 storage horns · 12 in pads",
@@ -59,7 +61,8 @@ const PRODUCTS = [
     name: "Hammer Strength Plate-Loaded Iso-Lateral Wide Chest",
     category: "Commercial plate-loaded converging press",
     badge: "Commercial Benchmark",
-    amazonUrl: "https://www.amazon.com/s?k=Hammer+Strength+Plate-Loaded+Iso-Lateral+Wide+Chest&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=plate+loaded+chest+press+machine&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$4,135",
     specs: "Iso-lateral converging arms · upright seated, decline-style press · plate-loaded with integrated plate storage · 305 lb machine",
@@ -82,7 +85,8 @@ const PRODUCTS = [
     name: "HOIST ROC-IT Chest Press (RPL-5301)",
     category: "Plate-loaded converging press with moving seat",
     badge: "Best Moving-Seat Design",
-    amazonUrl: "https://www.amazon.com/s?k=Hoist+ROC-IT+Plate+Loaded+Chest+Press+RPL-5301&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=plate+loaded+chest+press+machine&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$3,432–$3,815",
     specs: "Independent, converging press arms · ROC-IT moving seat · counter-balanced arms · plate-loaded with built-in storage",
@@ -104,7 +108,8 @@ const PRODUCTS = [
     name: "Precor Discovery Series Plate Loaded Chest Press (DPL0540)",
     category: "Commercial plate-loaded converging press",
     badge: "Price-on-Request Commercial",
-    amazonUrl: "https://www.amazon.com/s?k=Precor+Discovery+Series+Plate+Loaded+Chest+Press&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=plate+loaded+chest+press+machine&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "Price on request",
     specs: "43 x 67 x 70 in (L x W x H) · 353 lb · independent arms with converging pushing angles · 6 weight horns storing over 800 lb of plates",
@@ -444,7 +449,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

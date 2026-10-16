@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Free-standing punching bag",
     badge: "Best Free-Standing Bag",
     amazonUrl: "https://www.amazon.com/dp/B093JSL5GH?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$200–$220",
     specs: "7 height settings, 47–68 in. · high-density foam · rounded base filled with sand or water",
@@ -37,6 +38,7 @@ const PRODUCTS = [
     category: "Hanging heavy bag",
     badge: "Best Hanging Bag",
     amazonUrl: "https://www.amazon.com/dp/B077G9WW54?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$159–$179",
     specs: "5 ft (60 in.) tall · ships unfilled · synthetic leather",
@@ -60,6 +62,7 @@ const PRODUCTS = [
     category: "Training gloves",
     badge: "Best Gloves",
     amazonUrl: "https://www.amazon.com/dp/B07S323CF4?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$159–$169",
     specs: "10, 12, 14, 16 and 18 oz · Vylar engineered leather · Dual-X wrist closure with splinted wrist support",
@@ -82,6 +85,7 @@ const PRODUCTS = [
     category: "Stretch hand wraps",
     badge: "Best Hand Wraps",
     amazonUrl: "https://www.amazon.com/s?k=Everlast+Elite+Hand+Wraps+180&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$15",
     specs: "180 in. long · wide-mouth thumb loop · hook-and-loop closure · machine washable",
@@ -104,6 +108,7 @@ const PRODUCTS = [
     category: "Double-end bag",
     badge: "Best Double-End Bag",
     amazonUrl: "https://www.amazon.com/dp/B09M5BZCGH?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$30–$40",
     specs: "5 or 8 in. diameter · engineered leather cover · two rubber cables with S-hooks included",
@@ -125,7 +130,8 @@ const PRODUCTS = [
     name: "Rogue SR-1 Bearing Speed Rope",
     category: "Speed jump rope",
     badge: "Best Jump Rope",
-    amazonUrl: "https://www.amazon.com/s?k=Rogue+SR-1+Bearing+Speed+Rope&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=speed+jump+rope&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$35",
     specs: "120 in. (10 ft) coated cable, cut to length · ball-bearing handles",
@@ -148,7 +154,8 @@ const PRODUCTS = [
     name: "FightCamp",
     category: "Connected boxing system",
     badge: "Best Connected System",
-    amazonUrl: "https://www.amazon.com/s?k=FightCamp+Boxing+Bag+Package&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=free+standing+punching+bag&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$299–$899 plus membership",
     specs: "Console connects to a TV · punch trackers · free-standing bag in the larger packages · needs about 67 in. of height",
@@ -480,7 +487,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

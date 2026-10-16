@@ -13,7 +13,8 @@ const PRODUCTS = [
     name: "Rogue Deadlift Platform",
     category: "8 x 4 ft steel deadlift platform frame",
     badge: "Best Overall",
-    amazonUrl: "https://www.amazon.com/s?k=Rogue+Deadlift+Platform&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=deadlift+platform&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$495–$850",
     specs: "8 ft 4 in. x 4 ft 4 in. footprint · 2x2 in. 11-gauge steel frame · takes 24 x 24 x 1.5 in. rubber tiles (sold separately) · band pegs",
@@ -37,6 +38,7 @@ const PRODUCTS = [
     category: "Budget 8 x 4 ft deadlift platform frame",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/dp/B07B5R6NM5?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$300–$730",
     specs: "99 x 59.5 in. overall · 2 in. 11-gauge steel frame · optional 1.6 in. rubber tiles · band pegs and floor clips included · 1-year warranty",
@@ -60,6 +62,7 @@ const PRODUCTS = [
     category: "Complete Olympic weightlifting platform",
     badge: "Best for Olympic Lifting",
     amazonUrl: "https://www.amazon.com/s?k=Valor+Fitness+Olympic+Weightlifting+Platform&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$1,499",
     specs: "101 x 81.5 in. · 1.25 in. high-impact rubber tiles with bamboo-lined centre boards · steel frame · transition plate",
@@ -82,7 +85,8 @@ const PRODUCTS = [
     name: "Bells of Steel Deadlift Pads (Pair)",
     category: "Foam drop pads for noise",
     badge: "Best Drop Pads",
-    amazonUrl: "https://www.amazon.com/s?k=Bells+of+Steel+Deadlift+Pads&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=deadlift+drop+pads&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$200–$210",
     specs: "30 in. long · 6 in. tall · 600-denier polyester cover · noise-reducing foam · sold as a pair",
@@ -105,7 +109,8 @@ const PRODUCTS = [
     name: "Tractor Supply Rubber Stall Mat (4 x 6 ft, 3/4 in.)",
     category: "DIY platform and gym floor rubber",
     badge: "Best DIY",
-    amazonUrl: "https://www.amazon.com/s?k=4+x+6+ft+3%2F4+in+rubber+stall+mat&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=rubber+stall+mat+4x6+3%2F4+inch&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$47–$62",
     specs: "4 x 6 ft · 3/4 in. thick · 100% recycled vulcanized rubber · 5-year limited warranty",
@@ -439,7 +444,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

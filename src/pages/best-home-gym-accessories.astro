@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Flat, incline and decline bench",
     badge: "Best Bench",
     amazonUrl: "https://www.amazon.com/s?k=REP+Fitness+AB-3000+2.0+FID+Adjustable+Weight+Bench&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "About $350",
     specs: "1,000 lb rated capacity · 8 back pad angles from -12 to 85 degrees · 2.1 in. pad gap · flat, incline and decline",
@@ -36,7 +37,8 @@ const PRODUCTS = [
     name: "Tractor Supply Thick Rubber Stall Mat (4 x 6 ft, 3/4 in.)",
     category: "Recycled rubber flooring sheet",
     badge: "Best Flooring",
-    amazonUrl: "https://www.amazon.com/s?k=3%2F4+inch+rubber+stall+mat+4x6&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=rubber+stall+mat+4x6+3%2F4+inch&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$55–$60",
     specs: "4 x 6 ft · 3/4 in. thick · recycled rubber",
@@ -59,7 +61,8 @@ const PRODUCTS = [
     name: "Rogue Monster Bands",
     category: "Looped latex resistance bands",
     badge: "Best Resistance Bands",
-    amazonUrl: "https://www.amazon.com/s?k=Rogue+Monster+Bands+resistance+bands&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=pull+up+resistance+bands&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$17–$75",
     specs: "41 in. loops · natural latex · rated 9 to 225 lb across the range · sold singly, in pairs or as pull-up packages",
@@ -82,7 +85,8 @@ const PRODUCTS = [
     name: "REP Fitness Wall-Mounted Multi-Grip Pull-Up Bar",
     category: "Wall- or ceiling-mounted pull-up station",
     badge: "Best Pull-Up Bar",
-    amazonUrl: "https://www.amazon.com/s?k=REP+Fitness+Wall+Mounted+Multi-Grip+Pull-Up+Bar&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=wall+mounted+pull+up+bar&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "About $140",
     specs: "700 lb rated capacity when installed correctly · 50.75 x 21.5 x 17.5 in. · powder-coated steel · five grip types",
@@ -106,6 +110,7 @@ const PRODUCTS = [
     category: "Lever-lock barbell collars",
     badge: "Best Collars",
     amazonUrl: "https://www.amazon.com/dp/B01MRGIOQH?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$45–$53",
     specs: "For Olympic bars · resin frame with elastomer pads · spring-loaded snap latch",
@@ -128,7 +133,8 @@ const PRODUCTS = [
     name: "Rogue SR-2 Speed Rope 3.0",
     category: "Ball-bearing speed rope, cut to length",
     badge: "Best Jump Rope",
-    amazonUrl: "https://www.amazon.com/s?k=Rogue+SR-2+Speed+Rope+3.0&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=speed+jump+rope&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$45–$49",
     specs: "120 in. coated cable, cut to length · 6.75 in. aluminium handles · ball-bearing swivel",
@@ -461,7 +467,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

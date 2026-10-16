@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Best Overall for Apartments",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Sole%20F63+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/sole-f63-treadmill/",
     priceRange: "$899-$1,099",
     specs: "Hydraulic fold · ~40 x 35 in. folded · heavy frame · no subscription",
@@ -36,6 +37,7 @@ const PRODUCTS = [
     category: "Best for Difficult Delivery",
     badge: "Easiest to Move",
     amazonUrl: "https://www.amazon.com/s?k=ProForm%20Power%20995i+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/proform-power-995i-treadmill/",
     priceRange: "$799-$999",
     specs: "Assisted fold · ~38 x 33 in. folded · lightest full treadmill here",
@@ -58,6 +60,7 @@ const PRODUCTS = [
     category: "Best Budget Fold",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/s?k=NordicTrack%20C%20700+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/nordictrack-c-700-treadmill/",
     priceRange: "$599-$799",
     specs: "Assisted fold · ~39 x 36 in. folded · low step-up · basic console",
@@ -80,6 +83,7 @@ const PRODUCTS = [
     category: "Best If You Will Run",
     badge: "Best for Runners",
     amazonUrl: "https://www.amazon.com/dp/B0HFSZR19W?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/sole-f65-treadmill/",
     priceRange: "$1,199-$1,399",
     specs: "Hydraulic fold · 60 in. deck · heaviest folding machine here",
@@ -102,6 +106,7 @@ const PRODUCTS = [
     category: "Best Console for the Money",
     badge: "Best Screen",
     amazonUrl: "https://www.amazon.com/s?k=ProForm%20Power%201295i+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/proform-power-1295i-treadmill/",
     priceRange: "$999-$1,299",
     specs: "Assisted fold · larger screen · incline to 12% · mid-weight frame",
@@ -124,6 +129,7 @@ const PRODUCTS = [
     category: "Best Guided Content",
     badge: "Best Classes",
     amazonUrl: "https://www.amazon.com/s?k=NordicTrack%20C%20990+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/nordictrack-c-990-treadmill/",
     priceRange: "$999-$1,299",
     specs: "Assisted fold · iFit-ready · 60 in. deck · mid-weight frame",
@@ -489,7 +495,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

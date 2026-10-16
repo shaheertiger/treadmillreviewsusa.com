@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "The Default Choice for Most Buyers",
     badge: "Better Value",
     amazonUrl: "https://www.amazon.com/dp/B0D5YJ4YW4?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/nordictrack-commercial-1250-treadmill/",
     priceRange: "$1,500-$1,900",
     specs: "10 in. tilting touchscreen · -3% to 12% incline · 0-12 mph · folding · 400 lb listed capacity",
@@ -37,6 +38,7 @@ const PRODUCTS = [
     category: "For Floor Classes and Long Ownership",
     badge: "Lifetime Motor Cover",
     amazonUrl: "https://www.amazon.com/dp/B0D5YKF4SK?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/nordictrack-commercial-1750-treadmill/",
     priceRange: "$1,800-$2,300",
     specs: "16 in. pivoting touchscreen · -3% to 12% incline · 0-12 mph · folding · lifetime motor warranty",
@@ -452,7 +454,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

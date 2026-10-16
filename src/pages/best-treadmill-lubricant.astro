@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Best for Almost Every Treadmill",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=100%25+silicone+treadmill+lubricant+applicator+bottle&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$10-$18",
     specs: "100% silicone · long applicator tube · 3-6 applications per bottle · no propellant",
@@ -36,6 +37,7 @@ const PRODUCTS = [
     category: "Best for Tight Belt Clearance",
     badge: "For Awkward Decks",
     amazonUrl: "https://www.amazon.com/s?k=100%25+silicone+treadmill+lubricant+spray&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$12-$20",
     specs: "100% silicone · precision straw · aerosol · faster application",
@@ -57,7 +59,8 @@ const PRODUCTS = [
     name: "Manufacturer-Specified Wax or Proprietary Product",
     category: "For Pre-Waxed Decks Only",
     badge: "Check Your Manual",
-    amazonUrl: "https://www.amazon.com/s?k=treadmill+deck+wax+lubricant&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=treadmill+belt+lubricant&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$15-$30",
     specs: "Paraffin or proprietary formulation · for pre-waxed decks · never mix with silicone",
@@ -80,6 +83,7 @@ const PRODUCTS = [
     category: "Buy Alongside Whatever You Choose",
     badge: "Essential Companion",
     amazonUrl: "https://www.amazon.com/s?k=isopropyl+alcohol+microfiber+cloths&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$8-$15",
     specs: "Isopropyl alcohol · lint-free microfibre cloths · for cleaning before lubricating",
@@ -446,7 +450,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

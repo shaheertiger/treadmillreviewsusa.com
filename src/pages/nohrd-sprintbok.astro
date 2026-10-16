@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Wooden Curved Manual Treadmill",
     badge: "Design-Led Premium",
     amazonUrl: "https://www.amazon.com/s?k=NOHrD+Sprintbok+Curved+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$8,199–$10,299 (V2); Pro from $8,899",
     specs: "160 x 45 cm (about 63 x 17.7 in.) curved surface · 62 linoleum-faced slats · 160 kg (about 353 lb) max user · 160 kg machine · no motor",
@@ -321,7 +322,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

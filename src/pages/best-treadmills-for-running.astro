@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Best Overall for Running",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0D5YKF4SK?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/nordictrack-commercial-1750-treadmill/",
     priceRange: "$1,799-$2,299",
     specs: "60 x 22 in. deck · 3.5 CHP · -3% to 12% · 300 lb capacity",
@@ -36,6 +37,7 @@ const PRODUCTS = [
     category: "Best Without a Subscription",
     badge: "No Subscription",
     amazonUrl: "https://www.amazon.com/dp/B0HFSZR19W?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/sole-f65-treadmill/",
     priceRange: "$1,199-$1,399",
     specs: "60 x 20 in. deck · 3.25 CHP · 0-15% · 325 lb capacity",
@@ -58,6 +60,7 @@ const PRODUCTS = [
     category: "Best Budget Running Deck",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/dp/B08N3NL32C?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/proform-pro-2000-treadmill/",
     priceRange: "$899-$1,199",
     specs: "60 x 20 in. deck · 3.0 CHP · -3% to 12% · 300 lb capacity",
@@ -80,6 +83,7 @@ const PRODUCTS = [
     category: "Best for Hill Training",
     badge: "Best for Hills",
     amazonUrl: "https://www.amazon.com/dp/B0D5YKDXDV?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/nordictrack-commercial-2450-treadmill/",
     priceRange: "$2,299-$2,799",
     specs: "60 x 22 in. deck · 3.6 CHP · -3% to 12% · 300 lb capacity",
@@ -102,6 +106,7 @@ const PRODUCTS = [
     category: "Best for High Mileage",
     badge: "Longest Lasting",
     amazonUrl: "https://www.amazon.com/dp/B008PAS1HG?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/life-fitness-t3-treadmill/",
     priceRange: "$3,199-$3,999",
     specs: "60 x 22 in. deck · commercial AC motor · 0-15% · 400 lb capacity",
@@ -124,6 +129,7 @@ const PRODUCTS = [
     category: "Best Commercial Alternative",
     badge: "Gym Grade",
     amazonUrl: "https://www.amazon.com/s?k=Matrix%20Fitness%20T7xe+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/matrix-fitness-t7xe-treadmill/",
     priceRange: "$3,499-$4,299",
     specs: "60 x 22 in. deck · commercial motor · 0-15% · 400 lb capacity",
@@ -495,7 +501,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

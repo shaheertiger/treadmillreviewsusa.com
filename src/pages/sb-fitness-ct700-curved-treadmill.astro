@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Self-Generated Curved Treadmill",
     badge: "Listing Claims",
     amazonUrl: "https://www.amazon.com/dp/B08ZJW2XNC?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$2,595 direct (scratch-and-dent $2,245)",
     specs: "Listed: 19 x 66.6 in. running surface · 8 magnetic resistance levels · stainless steel track bearings · 308 lb · max user 350–475 lb (seller sources conflict) · no motor",
@@ -333,7 +334,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

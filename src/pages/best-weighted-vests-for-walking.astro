@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Best Overall Weighted Vest for Treadmill Walking",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B07JVHBKDS?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$260–$395",
     specs: "Sizes S–XL · sold loaded at 10, 15, 20 or 25 lb · 2.25 oz steel weights · up to 25 lb in XL, less in smaller sizes · CORDURA stretch fabric",
@@ -37,6 +38,7 @@ const PRODUCTS = [
     category: "Adjustable plate carrier, front and back",
     badge: "Best Plate Carrier",
     amazonUrl: "https://www.amazon.com/s?k=REP+Fitness+Strata+Weight+Vest&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$88–$110 (vest only)",
     specs: "750D Cordura nylon · one size, adjustable shoulders and waist · takes plate pairs from 5 to 20 lb (sold separately) · up to 40 lb · 3-year home-use warranty",
@@ -60,6 +62,7 @@ const PRODUCTS = [
     category: "Back-loaded carrier for rucking",
     badge: "Best for Rucking",
     amazonUrl: "https://www.amazon.com/dp/B0DB4424HH?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$115–$135 (plates extra)",
     specs: "1000D CORDURA · back-loaded, chest open · Standard takes 10, 20 or 30 lb Ruck Plates; Long takes 30 or 45 lb · plates sold separately · Scars Lifetime Guarantee",
@@ -83,6 +86,7 @@ const PRODUCTS = [
     category: "Women-specific weighted vest",
     badge: "Best for Women",
     amazonUrl: "https://www.amazon.com/dp/B0G2CQRV9M?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$85–$115",
     specs: "Women-specific cut · sizes S, M, L · up to 10 lb · removable 0.5 lb steel-pellet weights · no weight over the bust",
@@ -104,7 +108,8 @@ const PRODUCTS = [
     name: "Fringe Sport WODmaster 20lb Weight Vest",
     category: "Fixed-weight budget vest",
     badge: "Best Budget",
-    amazonUrl: "https://www.amazon.com/s?k=Fringe+Sport+WODmaster+20lb+Weight+Vest&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=20+lb+weight+vest&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "Around $72",
     specs: "Fixed 20 lb · neoprene with nylon straps · one universal size, adjustable straps · reflective details · 1-year warranty",
@@ -437,7 +442,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

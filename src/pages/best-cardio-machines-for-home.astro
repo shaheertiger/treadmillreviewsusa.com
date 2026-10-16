@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Best Treadmill for Home",
     badge: "Best Treadmill",
     amazonUrl: "https://www.amazon.com/s?k=BowFlex+T6+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/bowflex-t6-treadmill/",
     priceRange: "$899–$1,299",
     specs: "3.0 HP (BowFlex test rating) · 0.5–12 mph · 0–15% incline · 20 x 60 in. deck · 325 lb max user · 76 x 35 in. footprint · folds · lifetime frame and motor warranty",
@@ -37,6 +38,7 @@ const PRODUCTS = [
     category: "Best Exercise Bike for Home",
     badge: "Best Bike",
     amazonUrl: "https://www.amazon.com/s?k=Schwinn+IC4+Indoor+Cycling+Bike&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$799–$999",
     specs: "100 magnetic resistance levels · 330 lb max user · 54.6 x 30.7 in. footprint · dual-sided SPD and toe-cage pedals · backlit LCD · 10-year frame warranty",
@@ -59,6 +61,7 @@ const PRODUCTS = [
     category: "Best Rowing Machine for Home",
     badge: "Best Rower",
     amazonUrl: "https://www.amazon.com/s?k=Concept2+RowErg+Rowing+Machine&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$990–$1,155",
     specs: "Air resistance with adjustable damper · PM5 monitor · 96 x 24 in. footprint · 500 lb max user (Concept2 rating) · 57 lb (standard legs) · separates in two",
@@ -81,6 +84,7 @@ const PRODUCTS = [
     category: "Best Elliptical for Home",
     badge: "Best Elliptical",
     amazonUrl: "https://www.amazon.com/s?k=Sole+E35+Elliptical&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$1,699–$1,799",
     specs: "25 lb flywheel · 20 in. stride · 20 resistance levels · 20-level power incline · 350 lb max user · 10.1 in. touchscreen · lifetime frame warranty",
@@ -104,6 +108,7 @@ const PRODUCTS = [
     category: "Best Air Bike for Home",
     badge: "Best Air Bike",
     amazonUrl: "https://www.amazon.com/s?k=Schwinn+AirDyne+AD7+Air+Bike&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$999–$1,299",
     specs: "Fan resistance · belt drive · 350 lb max user · 53 x 26.5 in. footprint · 113 lb · battery-powered console · 10-year frame warranty",
@@ -126,7 +131,8 @@ const PRODUCTS = [
     name: "BowFlex Max Trainer M6",
     category: "Best Stepper for Home",
     badge: "Best Stepper",
-    amazonUrl: "https://www.amazon.com/s?k=BowFlex+Max+Trainer+M6&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=Bowflex+Max+Trainer&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$999–$1,299",
     specs: "Stepper-elliptical motion with moving arms · 300 lb max user · backlit LCD, no touchscreen · JRNY compatible · 2-year frame and parts warranty",
@@ -150,6 +156,7 @@ const PRODUCTS = [
     category: "Best Walking Pad",
     badge: "Best Walking Pad",
     amazonUrl: "https://www.amazon.com/s?k=UREVO+SpaceWalk+3S+Walking+Pad&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$250–$350",
     specs: "0–9% powered incline · 0.6–4.0 mph · 42.5 x 16.5 in. belt · 265 lb max user · 6.5 in. tall",
@@ -486,7 +493,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

@@ -13,7 +13,8 @@ const PRODUCTS = [
     name: "TKO AirRaid Runner 8CTM (AirRaid Force)",
     category: "Curved Manual Treadmill with Magnetic Resistance",
     badge: "Commercial Build",
-    amazonUrl: "https://www.amazon.com/s?k=TKO+AirRaid+Runner+8CTM+Curved+Treadmill&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=curved+manual+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$5,000–$5,500 (dealers and direct)",
     specs: "68 x 32 x 67 in. · 350 lb max user (TKO sell sheet) · 4 magnetic resistance levels · ANT+ and Bluetooth · no motor · machine weight 297 or 330 lb (sources conflict)",
@@ -327,7 +328,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

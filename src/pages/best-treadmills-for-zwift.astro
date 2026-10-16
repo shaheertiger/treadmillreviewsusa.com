@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Best Overall Treadmill for Zwift",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+7.0+AT+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/horizon-7-0-at-treadmill/",
     priceRange: "Around $930–$1,100",
     specs: "20 x 60 in. deck · 0.5–12 mph · 0–15% incline · 325 lb capacity · Bluetooth FTMS",
@@ -37,6 +38,7 @@ const PRODUCTS = [
     category: "Best Value Treadmill for Zwift",
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/s?k=Bowflex+T6+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/bowflex-t6-treadmill/",
     priceRange: "$899–$1,299",
     specs: "20 x 60 in. deck · 0.5–12 mph · 0–15% incline · 325 lb capacity · Bluetooth FTMS",
@@ -59,6 +61,7 @@ const PRODUCTS = [
     category: "Best Zwift Treadmill for Bigger Runners",
     badge: "Heavy-Duty Pick",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+7.8+AT+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$1,899–$1,999",
     specs: "22 x 60 in. deck · 0.5–12 mph · 0–15% incline · 375 lb capacity · Bluetooth FTMS",
@@ -82,6 +85,7 @@ const PRODUCTS = [
     category: "Only Treadmill With Zwift Incline Control",
     badge: "Premium Pick",
     amazonUrl: "https://www.amazon.com/s?k=Wahoo+KICKR+RUN+Smart+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $6,500–$7,000",
     specs: "-3% to 15% grade · 4:00/mile top speed · 250 lb capacity · 1-year warranty",
@@ -104,7 +108,8 @@ const PRODUCTS = [
     name: "Stryd 5.0 Footpod",
     category: "Best Way to Add Zwift to Any Treadmill",
     badge: "Any Treadmill",
-    amazonUrl: "https://www.amazon.com/s?k=Stryd+Footpod&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=running+foot+pod&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "Around $200",
     specs: "Clip-on shoe pod · rechargeable · Stryd footpods on Zwift’s compatible list",
@@ -432,7 +437,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Best Commercial Treadmill",
     badge: "Treadmill",
     amazonUrl: "https://www.amazon.com/s?k=Life+Fitness+Integrity+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Price on request",
     specs: "22 x 60 in. running surface · 0.5–14 mph · 0–15% incline · 400 lb max user · 4 HP AC motor (8 HP peak)",
@@ -37,6 +38,7 @@ const PRODUCTS = [
     category: "Best Commercial Indoor Bike",
     badge: "Bike",
     amazonUrl: "https://www.amazon.com/dp/B00LSX8AA0?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$2,985 (Amazon bundle); commercial price on request",
     specs: "Fits riders 4 ft 10 in. to 7 ft · 350 lb capacity · magnetic resistance · Poly-V belt drive · rear flywheel",
@@ -60,6 +62,7 @@ const PRODUCTS = [
     category: "Best Commercial Rowing Machine",
     badge: "Rower",
     amazonUrl: "https://www.amazon.com/s?k=Concept2+RowErg+Rowing+Machine&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$990–$1,155",
     specs: "500 lb capacity (Concept2 test) · 96 x 24 in. footprint · 57 lb (standard legs) · 5-year frame, 2-year parts and monitor warranty · separates in two",
@@ -82,7 +85,8 @@ const PRODUCTS = [
     name: "Rogue RML-390C Power Rack 3.0",
     category: "Best Commercial-Standard Power Rack",
     badge: "Rack",
-    amazonUrl: "https://www.amazon.com/s?k=Rogue+RML-390C+Power+Rack&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=power+rack&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$1,015 before options",
     specs: "3 x 3 in. 11-gauge steel uprights · 34 or 40 x 53 in. footprint · Westside hole spacing · must be bolted to the floor · made in Columbus, Ohio",
@@ -105,7 +109,8 @@ const PRODUCTS = [
     name: "Hammer Strength Plate-Loaded Iso-Lateral Row",
     category: "Best Plate-Loaded Commercial Machine",
     badge: "Machine",
-    amazonUrl: "https://www.amazon.com/s?k=Hammer+Strength+Plate-Loaded+Iso-Lateral+Row&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=plate+loaded+row+machine&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$4,135 (Life Fitness store); facility price on request",
     specs: "280 lb machine weight · 12 lb starting resistance per arm · 11-gauge steel frame · independent arms",
@@ -128,7 +133,8 @@ const PRODUCTS = [
     name: "Rogue Urethane Dumbbells",
     category: "Best Commercial Dumbbells",
     badge: "Dumbbells",
-    amazonUrl: "https://www.amazon.com/s?k=Rogue+Urethane+Dumbbells&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=urethane+dumbbells&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$54–$844 per pair",
     specs: "5–150 lb pairs in 5 lb steps · 31 mm handle up to 45 lb, 34 mm from 50 lb · steel heads with urethane coating · medium knurl",
@@ -468,7 +474,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

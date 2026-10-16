@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Firm 13-inch foam roller",
     badge: "Best Foam Roller",
     amazonUrl: "https://www.amazon.com/s?k=TriggerPoint+GRID+1.0+Foam+Roller&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$29–$40",
     specs: "13 x 5.5 in. · EVA foam over a hollow core · patterned GRID surface",
@@ -36,7 +37,8 @@ const PRODUCTS = [
     name: "TriggerPoint Massage Lacrosse Ball 2-Pack",
     category: "Solid rubber massage balls",
     badge: "Best Massage Ball",
-    amazonUrl: "https://www.amazon.com/s?k=TriggerPoint+Massage+Lacrosse+Ball+2-Pack&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=lacrosse+massage+ball&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$10",
     specs: "Two balls · 2.5 in. diameter · 5.1 oz each · vulcanized solid rubber",
@@ -59,6 +61,7 @@ const PRODUCTS = [
     category: "Multi-loop stretching strap",
     badge: "Best Stretching Strap",
     amazonUrl: "https://www.amazon.com/dp/B00065X222?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$17–$18",
     specs: "10 hand and foot loops · non-elastic woven nylon",
@@ -80,7 +83,8 @@ const PRODUCTS = [
     name: "Rogue Monster Bands",
     category: "Latex loop bands for mobility work",
     badge: "Best Mobility Tool",
-    amazonUrl: "https://www.amazon.com/s?k=Rogue+Monster+Bands&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=pull+up+resistance+bands&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$17–$75",
     specs: "41 in. loop · natural latex rubber",
@@ -104,6 +108,7 @@ const PRODUCTS = [
     category: "Compact massage gun",
     badge: "Best Massage Gun",
     amazonUrl: "https://www.amazon.com/s?k=Theragun+Mini+3rd+Gen&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$220",
     specs: "3 speeds: 1,750, 2,100 and 2,400 percussions per minute · up to 150 min battery (maker figure) · 3 attachments · 1-year limited warranty",
@@ -127,6 +132,7 @@ const PRODUCTS = [
     category: "Air compression boots",
     badge: "Best Compression Boots",
     amazonUrl: "https://www.amazon.com/dp/B0B72QBWHC?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$899",
     specs: "5 zones · 7 compression levels · up to 3 hr battery · short, standard and tall sizes",
@@ -456,7 +462,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

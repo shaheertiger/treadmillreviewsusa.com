@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Best Overall Walking Pad With Incline",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=UREVO+SpaceWalk+3S+Walking+Pad&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$250–$350",
     specs: "0–9% powered incline · 0.6–4.0 mph · 42.5 in. belt length · 265 lb capacity · 6.5 in. tall",
@@ -37,6 +38,7 @@ const PRODUCTS = [
     category: "Steepest Incline in a Walking Pad",
     badge: "Most Incline",
     amazonUrl: "https://www.amazon.com/s?k=MERACH+UltraWalk+W60+Plus+Walking+Pad&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$280–$500",
     specs: "0–12% powered incline · 0.6–4.0 mph · 41.3 x 16.5 in. belt",
@@ -60,6 +62,7 @@ const PRODUCTS = [
     category: "Best Budget Powered Incline",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/dp/B0H2HV9KD5?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$200–$240",
     specs: "12-level powered incline · 0.6–3.8 mph · 35 x 16 in. belt · 300 lb capacity",
@@ -83,6 +86,7 @@ const PRODUCTS = [
     category: "Best Fixed-Incline Walking Pad",
     badge: "Fixed 5% Incline",
     amazonUrl: "https://www.amazon.com/dp/B08R37V99Q?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$300–$480",
     specs: "Fixed 5% incline · 0.6–3.1 mph · 34 x 16.5 in. walking area · no handrail",
@@ -106,6 +110,7 @@ const PRODUCTS = [
     category: "Best Budget Manual Incline With a Rail",
     badge: "Lowest Price",
     amazonUrl: "https://www.amazon.com/s?k=Wellfit+TM037+Walking+Pad&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/wellfit-tm037-treadmill/",
     priceRange: "$140–$260",
     specs: "0–5% manual incline · 0.6–6.2 mph · 36 x 16 in. belt · fold-up handrail",
@@ -436,7 +441,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

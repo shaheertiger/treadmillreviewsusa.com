@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Best overall smart treadmill",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0D5YKF4SK?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/nordictrack-commercial-1750-treadmill/",
     priceRange: "Around $1,900–$2,300",
     specs: "16 in. pivoting touchscreen · 0-12 mph · -3% to 12% incline · folding · lifetime motor warranty",
@@ -37,6 +38,7 @@ const PRODUCTS = [
     category: "Best budget treadmill with a built-in screen",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/dp/B0D7XGWMRD?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/nordictrack-t-series-treadmill/",
     priceRange: "Around $1,200–$1,600",
     specs: "20 x 60 in. deck · 10 in. tilting touchscreen · 0-12% incline · up to 12 mph · 325 lb capacity",
@@ -60,6 +62,7 @@ const PRODUCTS = [
     category: "Best for Peloton classes and form feedback",
     badge: "Best for Peloton",
     amazonUrl: "https://www.amazon.com/dp/B0HDRFM27D?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $3,500",
     specs: "23.8 in. swivel touchscreen · 0-12.5 mph · 0-12.5% incline · non-folding",
@@ -83,6 +86,7 @@ const PRODUCTS = [
     category: "Best smart treadmill for small spaces",
     badge: "Best Auto-Fold",
     amazonUrl: "https://www.amazon.com/s?k=Echelon+Stride-6s+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $1,700–$2,300",
     specs: "20.5 x 60 in. deck · 10 in. touchscreen · auto-fold · 300 lb capacity",
@@ -106,6 +110,7 @@ const PRODUCTS = [
     category: "Best for JRNY or your own tablet",
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/s?k=Bowflex+T6+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: "/bowflex-t6-treadmill/",
     priceRange: "$899–$1,299",
     specs: "20 x 60 in. deck · 3.0 HP (test rating) · 0-15% incline · 0.5-12 mph · 325 lb capacity",
@@ -129,6 +134,7 @@ const PRODUCTS = [
     category: "Best smart treadmill with no subscription",
     badge: "No Subscription",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+7.8+AT+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $2,000–$2,700",
     specs: "22 x 60 in. deck · 0.5-12 mph · 0-15% incline · 375 lb capacity · lifetime frame and motor",
@@ -451,7 +457,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

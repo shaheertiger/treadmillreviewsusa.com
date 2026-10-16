@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Neutral daily trainer",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0F9LM68ZD?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$140–$145",
     specs: "8 mm drop · about 7.7 oz (women’s 8) · PWRRUN+ foam",
@@ -37,6 +38,7 @@ const PRODUCTS = [
     category: "Neutral daily trainer in four widths",
     badge: "Best Width Range",
     amazonUrl: "https://www.amazon.com/dp/B0D2Y91MBF?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$140–$150",
     specs: "40.5/34.5 mm stack · 6 mm drop · women’s widths 2A narrow, B, D wide and 2E extra wide",
@@ -60,6 +62,7 @@ const PRODUCTS = [
     category: "Max-cushion neutral trainer",
     badge: "Most Cushioned",
     amazonUrl: "https://www.amazon.com/dp/B0FV6W4KWQ?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $170",
     specs: "42.5/34.5 mm stack (women’s) · 8 mm drop (ASICS) · about 8.5 oz (women’s 8)",
@@ -83,6 +86,7 @@ const PRODUCTS = [
     category: "Stability daily trainer",
     badge: "Best Stability Shoe",
     amazonUrl: "https://www.amazon.com/dp/B0H6GQL9DS?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $150",
     specs: "8 mm drop · FF BLAST MAX foam · women’s narrow, regular, wide and extra wide",
@@ -106,6 +110,7 @@ const PRODUCTS = [
     category: "Max-cushion neutral trainer",
     badge: "Best High-Drop Shoe",
     amazonUrl: "https://www.amazon.com/dp/B0F2G7L5FX?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$150–$155",
     specs: "46/36 mm stack · 10 mm drop · about 9.3 oz (women’s 8) · ZoomX and ReactX foams",
@@ -129,6 +134,7 @@ const PRODUCTS = [
     category: "Daily trainer for running and walking",
     badge: "Best for Run-Walk",
     amazonUrl: "https://www.amazon.com/dp/B0G364Q1WK?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$150–$155",
     specs: "8 mm drop · about 8.2 oz (women’s 8) · CMEVA foam",
@@ -453,7 +459,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

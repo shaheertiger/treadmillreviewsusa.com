@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Best Overall Walking Pad for Heavy People",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0HJTT2S6R?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$300–$480",
     specs: "400 lb capacity · 41.3 x 16.5 in. belt · 0.6–4.0 mph · 12% powered incline",
@@ -37,6 +38,7 @@ const PRODUCTS = [
     category: "Best Premium Walking Pad for Heavy People",
     badge: "Best Premium",
     amazonUrl: "https://www.amazon.com/s?k=LifeSpan+TX6+GlowUp+Under+Desk+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$1,300–$1,500",
     specs: "400 lb capacity · 20 x 48 in. belt · 0.4–6.0 mph · no incline",
@@ -60,6 +62,7 @@ const PRODUCTS = [
     category: "Best High-Capacity Pad With Handles",
     badge: "Best With Handles",
     amazonUrl: "https://www.amazon.com/dp/B0GR5R4QXX?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$550–$700",
     specs: "330 lb capacity · 39.4 x 15 in. running area · 1–5 mph · removable side handles",
@@ -83,6 +86,7 @@ const PRODUCTS = [
     category: "Best Low-Profile 350 lb Walking Pad",
     badge: "Best Low Profile",
     amazonUrl: "https://www.amazon.com/s?k=MERACH+W50+Lite+Walking+Pad&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$280–$360",
     specs: "350 lb capacity · 0.6–4.0 mph · 10% powered incline · about 5.2 in. tall",
@@ -106,6 +110,7 @@ const PRODUCTS = [
     category: "Best Fold-Up Handrail Model",
     badge: "Best With a Rail",
     amazonUrl: "https://www.amazon.com/s?k=UREVO+FoldiMix+5L+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$310–$500",
     specs: "39.4 x 15.8 in. running area · 0.6–4.0 mph walking, to 7.6 mph running · 0–9% powered incline · folds to 6.1 in.",
@@ -436,7 +441,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

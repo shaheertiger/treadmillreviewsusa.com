@@ -14,6 +14,7 @@ const PRODUCTS = [
     category: "Switch-selector adjustable dumbbells, 5 to 60 lb",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0CQ8WCGR6?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$336–$576",
     specs: "5–60 lb per hand · 5 lb steps, 2.5 lb with micro plates · 18.5 in. long at 60 lb · lifetime warranty · sold as a pair",
@@ -37,6 +38,7 @@ const PRODUCTS = [
     category: "Twist-handle adjustable dumbbells, 5 to 50 lb",
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/dp/B01J8S38LW?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$380–$400",
     specs: "5–50 lb per hand · 5 lb steps (10 settings) · 14.5 in. long at 50 lb · 2-year warranty · sold as a pair",
@@ -59,6 +61,7 @@ const PRODUCTS = [
     category: "Expandable pin-selector dumbbells, to 100 lb",
     badge: "Best for Heavy Lifting",
     amazonUrl: "https://www.amazon.com/s?k=PowerBlock+Pro+100+EXP+Adjustable+Dumbbells&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$539–$1,196",
     specs: "5–100 lb per hand with expansion kits · magnetic selector pin · about 19.2 in. long at 100 lb · 5-year residential warranty · sold as a pair",
@@ -81,7 +84,8 @@ const PRODUCTS = [
     name: "SMRTFT NÜOBELL 80 lb Adjustable Dumbbells",
     category: "Twist-lock adjustable dumbbells, 5 to 80 lb",
     badge: "Best Twist-Handle to 80 lb",
-    amazonUrl: "https://www.amazon.com/s?k=NUOBELL+80+lb+Adjustable+Dumbbells&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=adjustable+dumbbells+80+lb&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$845–$865",
     specs: "5–80 lb per hand · 5 lb steps (16 settings) · about 17 in. long · 2-year warranty · sold as a pair",
@@ -104,7 +108,8 @@ const PRODUCTS = [
     name: "Ironmaster Quick-Lock Adjustable Dumbbell System (75 lb Set)",
     category: "Plate-loaded screw-lock dumbbells, all metal",
     badge: "Most Durable",
-    amazonUrl: "https://www.amazon.com/s?k=Ironmaster+Quick-Lock+Adjustable+Dumbbell+System+75&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=plate+loaded+adjustable+dumbbells&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "About $700",
     specs: "10–75 lb per hand · 2.5 lb steps · 14.5 in. long at 75 lb · 1.25 in. grip · lifetime warranty",
@@ -128,6 +133,7 @@ const PRODUCTS = [
     category: "Classic spin-lock handles and plates",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/s?k=CAP+Barbell+40+lb+Adjustable+Cast+Iron+Dumbbell+Set&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "About $50",
     specs: "40 lb set total · four 5 lb and four 2.5 lb cast-iron plates · two threaded handles · four spin-lock collars",
@@ -150,7 +156,8 @@ const PRODUCTS = [
     name: "Nike Adjustable Dumbbells",
     category: "Cast-iron adjustable dumbbells, 10 to 65 lb",
     badge: "If You Want Nike",
-    amazonUrl: "https://www.amazon.com/s?k=Nike+Adjustable+Dumbbells+10-65+lb&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=adjustable+dumbbells&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$899–$1,164",
     specs: "10–65 lb per hand · 5 lb steps (12 settings) · 15.5 in. long fully loaded · 35 mm knurled handle · sold as a pair",
@@ -486,7 +493,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

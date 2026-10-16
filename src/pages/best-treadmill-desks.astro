@@ -13,7 +13,8 @@ const PRODUCTS = [
     name: "UPLIFT Treadmill Desk (V3 Desk + Inclining Walking Pad)",
     category: "Kind: Integrated set — standing desk and walking pad sold together",
     badge: "Best Overall",
-    amazonUrl: "https://www.amazon.com/s?k=UPLIFT+V3+Standing+Desk+Inclining+Walking+Pad&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=treadmill+desk&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "Around $940–$1,300",
     specs: "V3 desk, 355 lb lift, 15-year warranty · pad: 4 mph, 7% incline, 39.4 x 15.4 in. belt, 243 lb limit",
@@ -36,7 +37,8 @@ const PRODUCTS = [
     name: "iMovR Lander Treadmill Desk with Unsit Treadmill",
     category: "Kind: Integrated set — office-grade desk and treadmill",
     badge: "Best Premium",
-    amazonUrl: "https://www.amazon.com/s?k=iMovR+Lander+Unsit+Treadmill+Desk&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=treadmill+desk&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: "/imovr-unsit-treadmill-desk/",
     priceRange: "Around $3,800–$4,500",
     specs: "Unsit belt 30 x 40 in. · top speed 2.0 mph · lifetime frame warranty",
@@ -60,6 +62,7 @@ const PRODUCTS = [
     category: "Kind: Standing desk for a walking pad",
     badge: "Most Stable Desk",
     amazonUrl: "https://www.amazon.com/s?k=FlexiSpot+E7+Plus+4+Leg+Standing+Desk&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $550–$700",
     specs: "4 legs, 3-stage · 26–51.6 in. · 15-year warranty",
@@ -83,6 +86,7 @@ const PRODUCTS = [
     category: "Kind: Standing desk for a walking pad",
     badge: "Best for Typing Comfort",
     amazonUrl: "https://www.amazon.com/dp/B0CT94PMSR?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $650–$1,000",
     specs: "25–50.5 in. · 4 height presets · UL 962 listed · contoured front edge",
@@ -106,6 +110,7 @@ const PRODUCTS = [
     category: "Kind: Standing desk for a walking pad",
     badge: "Best for an Existing Pad",
     amazonUrl: "https://www.amazon.com/dp/B07RRRC295?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $600–$900",
     specs: "From 22.6 in. · 355 lb lift · no low crossbar · 15-year warranty",
@@ -429,7 +434,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">

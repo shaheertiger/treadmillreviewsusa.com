@@ -607,6 +607,12 @@ npm run amazon:apply   # write /dp/ links into hand-written pages and regenerate
   are now rejected automatically. 106 of 320 products have a verified ASIN (194 direct links); the
   rest keep tagged search links, mostly because they are sold direct (Rogue, REP's own range,
   Nike Strength, Hammer Strength, FightCamp) or not on Amazon US at all.
+- Products Amazon US does not carry get a tagged **category search** instead of a search for their
+  own name, which returned nothing useful (`src/data/amazon-fallbacks.json`, 69 products: Rogue
+  racks → "power rack", dealer chest presses → "plate loaded chest press machine", dog treadmills →
+  "dog treadmill", and so on). Those cards say "Shop Similar on Amazon" rather than "Check Price",
+  so the button is honest about where it goes. Products Amazon does carry under their brand keep
+  their exact-name search.
 
 ## Keyword research
 

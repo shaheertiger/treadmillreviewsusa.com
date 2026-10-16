@@ -13,7 +13,8 @@ const PRODUCTS = [
     name: "AssaultRunner Pro",
     category: "Curved Slat Trainer",
     badge: "Best Overall",
-    amazonUrl: "https://www.amazon.com/s?k=Assault+Fitness+AssaultRunner+Pro&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=curved+manual+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: "/assaultrunner-pro-treadmill/",
     priceRange: "Around $3,200–$3,500",
     specs: "62 x 17 in. curved slat deck · 62 slats · 350 lb max user · 280 lb · Bluetooth and ANT+",
@@ -37,6 +38,7 @@ const PRODUCTS = [
     category: "Curved Trainer With Magnetic Resistance",
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/dp/B0H2KC6YL5?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$2,200–$2,400",
     specs: "62 x 19 in. slat belt · 8 magnetic levels · 330 lb max user · 261 lb",
@@ -58,7 +60,8 @@ const PRODUCTS = [
     name: "Tru Grit Runner Curved Manual Treadmill",
     category: "Curved Trainer With Sled-Push Resistance",
     badge: "Best for Sled Work",
-    amazonUrl: "https://www.amazon.com/s?k=Tru+Grit+Runner+Curved+Manual+Treadmill&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/s?k=curved+manual+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "$2,250–$2,500",
     specs: "Curved deck · 6 resistance levels · 330 lb max user · steel and aluminum frame",
@@ -82,6 +85,7 @@ const PRODUCTS = [
     category: "Lightweight Curved Trainer",
     badge: "Lightest",
     amazonUrl: "https://www.amazon.com/s?k=Sunny+Health+Fitness+SF-X7110+Curved+Manual+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$2,100–$2,500",
     specs: "59 x 17.7 in. running surface · 8 magnetic levels · 330 lb max user · 157 lb",
@@ -105,6 +109,7 @@ const PRODUCTS = [
     category: "Shallow-Curve Trainer",
     badge: "Best for Heavier Users",
     amazonUrl: "https://www.amazon.com/s?k=TrueForm+Trainer+Curved+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$3,500–$4,000",
     specs: "Shallow curve · 400 lb max user · rubber or turf tread · no resistance setting",
@@ -128,6 +133,7 @@ const PRODUCTS = [
     category: "Home Version of a Commercial Curved Trainer",
     badge: "Best Ride Engineering",
     amazonUrl: "https://www.amazon.com/s?k=Woodway+Curve+LTG+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$3,500–$4,000",
     specs: "TPE slat belt · about 3% curvature · 350 lb max user · no motor or outlet needed",
@@ -151,6 +157,7 @@ const PRODUCTS = [
     category: "Premium Built-to-Order Curved Trainer",
     badge: "Best Premium",
     amazonUrl: "https://www.amazon.com/s?k=TrueForm+Runner+Curved+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "About $6,200–$10,200 by configuration",
     specs: "Rubber, turf, track or Naboso tread · hand-built in Wisconsin · ships in about 14 weeks",
@@ -470,7 +477,7 @@ const schema = {
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
-                        Check Price on Amazon &rarr;
+                        {product.amazonLabel} &rarr;
                       </a>
                       {product.reviewUrl && (
                         <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
