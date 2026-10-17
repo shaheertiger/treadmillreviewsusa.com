@@ -20,7 +20,8 @@ const PAGES_DIR = join(ROOT, 'src', 'pages');
 const SITE = 'https://www.treadmillreviewsusa.com';
 const AUTHOR = 'Shaheer Ali Khan';
 const AUTHOR_URL = 'https://www.linkedin.com/in/shaheer-ali-khan-data/';
-const AUTHOR_ROLE = 'Author and lab tester';
+const AUTHOR_ROLE = 'Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS';
+const AUTHOR_PAGE = '/editorial-standards/#who';
 
 // Verified Amazon ASINs, keyed by product name, written by scripts/amazon/fetch-asins.mjs.
 // A product with one links straight to its listing; any other keeps its tagged search link.
@@ -166,7 +167,7 @@ ${spec.faqs
       "@type": "Article",
       headline: title,
       description: description,
-      author: { "@type": "Person", name: "${AUTHOR}", url: "${AUTHOR_URL}", sameAs: ["${AUTHOR_URL}"], jobTitle: "${AUTHOR_ROLE}", worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
+      author: { "@type": "Person", "@id": "${SITE}/editorial-standards/#shaheer-ali-khan", name: "${AUTHOR}", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "${SITE}${AUTHOR_PAGE}", sameAs: ["${AUTHOR_URL}"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: ${jsStr(spec.published)},
       dateModified: ${jsStr(spec.modified ?? spec.published)},
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
@@ -316,15 +317,22 @@ ${items}
 const AUTHOR_BOX = `
         <!-- Meet the Author -->
         <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
-          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
+          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
           <div>
             <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
-            <p class="text-sm text-gray-700 leading-relaxed m-0">
-              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="author noopener" target="_blank" class="font-bold text-gray-900">Shaheer Ali Khan</a>
-              writes and lab-tests for Treadmill Reviews USA. Every guide says what was checked, against
-              which sources and on what date, and says plainly when a product has not been tested
-              hands-on. Read our
-              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">editorial standards</a>.
+            <p class="text-sm font-bold text-gray-900 m-0">
+              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
+              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+            </p>
+            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
+              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
+              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
+              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
+              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
+              running ergonomics, noise and long-term durability. Every guide says what was checked and
+              when, and says plainly when a product has not been tested hands-on.
+              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
+              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
             </p>
           </div>
         </div>
@@ -419,9 +427,9 @@ ${spec.dataPending?.length ? DATA_PENDING_BANNER : ''}
     <!-- Author & Meta -->
     <div class="max-w-3xl mx-auto px-4 pt-12">
       <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="/authors/shaheer-ali-khan.png" alt="${AUTHOR}" width="48" height="48" class="w-12 h-12 rounded-full" />
+        <img src="/authors/shaheer-ali-khan.png" alt="${AUTHOR}, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
         <div>
-          <p class="font-bold text-gray-900 leading-tight"><a href="${AUTHOR_URL}" rel="author noopener" target="_blank" class="text-gray-900 no-underline hover:underline">${AUTHOR}</a></p>
+          <p class="font-bold text-gray-900 leading-tight"><a href="${AUTHOR_PAGE}" rel="author" class="text-gray-900 no-underline hover:underline">${AUTHOR}, PhD</a></p>
           <p class="text-gray-500 text-sm leading-tight">${AUTHOR_ROLE}</p>
         </div>
         <div class="hidden sm:block w-px h-8 bg-gray-200"></div>

@@ -96,7 +96,7 @@ order. `validate:format` checks for each item marked ✅.
    - two CTAs: solid `bg-[#FF5A1F]` anchored to the top pick, and `bg-white/10` anchored to a
      key section
 2. ✅ **Byline strip** — `<!-- Author & Meta -->` then `<div class="max-w-3xl mx-auto px-4 pt-12">`:
-   avatar (`/authors/shaheer-ali-khan.png`), author name linked to LinkedIn, role (`Author and lab tester`),
+   avatar (`/authors/shaheer-ali-khan.png`), author name `Shaheer Ali Khan, PhD` linked to `/editorial-standards/#who`, role (`Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS`),
    a `Last Updated` date, and ✅ `<SocialProof users="…" />` (renders the reader-supported disclosure; the `users` value is ignored) pushed right with `ml-auto`.
    A review's quick-verdict card sits in this same column, directly under the byline.
 3. ✅ **Contents card** — `<div class="max-w-3xl mx-auto px-4 py-10">` wrapping a

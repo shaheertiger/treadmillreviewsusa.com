@@ -2422,7 +2422,7 @@ export const SECTIONS: Section[] = [
     intro: [
       'Almost every abandoned treadmill was abandoned for a training reason rather than an equipment one. The two failure patterns look like opposites and share a cause: doing the same moderate session every time until it stops working, or doing hard sessions so often that fatigue accumulates faster than fitness. Both come from having one setting.',
       'The guides here are built around four session types — easy steady, intervals, incline and long — and one rule about how to combine them: most of your week should be genuinely easy, and the hard sessions should be genuinely hard and genuinely rare. That distribution feels wrong to most people, which is precisely why it is worth stating.',
-      'Where a topic is health-adjacent, these pages say what they are not. We review equipment; we are not clinicians, coaches or dietitians. Training guidance here is about how to use a machine consistently, and anything involving a medical condition, medication that affects heart rate, or a history of disordered eating belongs with a professional rather than a review site.',
+      'Where a topic is health-adjacent, these pages say what they are not. Our author is an exercise physiologist and certified strength and conditioning specialist, not a physician or dietitian, and these guides are general rather than individual coaching. Training guidance here is about how to use a machine consistently, and anything involving a medical condition, medication that affects heart rate, or a history of disordered eating belongs with a professional rather than a review site.',
     ],
     groups: [
       {

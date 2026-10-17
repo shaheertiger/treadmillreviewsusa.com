@@ -674,4 +674,4 @@ every page a horizontal scrollbar.
 ## Notes
 
 - `AdUnit.astro` is wired for Google AdSense but ships with a placeholder `ca-pub-0000000000000000` client ID — swap in a real AdSense publisher ID (and load the AdSense script in `Layout.astro`) once approved.
-- Author: Shaheer Ali Khan (author and lab tester), linked to LinkedIn in every byline and in Person JSON-LD. Pages only claim hands-on testing where a real test was done; publish real lab results (photos, method, figures) on a page before claiming them.
+- Author: Shaheer Ali Khan, PhD (Exercise Physiology & Biomechanics Specialist; PhD Kinesiology, University of Michigan; ACSM-EP, CSCS, ACSM-CPT). Bylines link to `/editorial-standards/#who`, which carries the full credentials and the Person JSON-LD (`hasCredential`, `alumniOf`); article Person nodes reference it by `@id` and list LinkedIn in `sameAs`. Pages only claim hands-on testing where a real test was done; publish real lab results (photos, method, figures) on a page before claiming them.

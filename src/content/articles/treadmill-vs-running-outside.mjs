@@ -399,7 +399,7 @@ export default {
     },
     {
       q: 'Can I train for a race only on a treadmill?',
-      a: `Many people do much of their training indoors, but some race skills are hard to build on a belt: downhill running, turns, uneven ground, self-pacing and running in wind or heat. Most runners find it worth including some outdoor running before an outdoor race. For a specific plan, ask a qualified coach — we are an equipment site rather than coaches.`,
+      a: `Many people do much of their training indoors, but some race skills are hard to build on a belt: downhill running, turns, uneven ground, self-pacing and running in wind or heat. Most runners find it worth including some outdoor running before an outdoor race. For a specific plan, ask a qualified coach who can see your training; a general guide like this cannot write an individual plan.`,
     },
     {
       q: 'Does a treadmill change your running form?',
