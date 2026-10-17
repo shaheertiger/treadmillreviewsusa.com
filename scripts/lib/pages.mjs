@@ -3,7 +3,7 @@ import { join } from 'path';
 
 // Root-level pages that carry navigation rather than article prose. Section
 // hubs are recognised structurally instead — see isLandingPage below.
-const LANDING_PAGES = ['best-of.astro', 'contact-us.astro'];
+const LANDING_PAGES = ['best-of.astro', 'contact-us.astro', 'editorial-standards.astro'];
 
 /**
  * Every file under `dir` with one of `extensions`, as paths relative to `dir`

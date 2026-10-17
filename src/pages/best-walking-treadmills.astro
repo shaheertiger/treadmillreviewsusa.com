@@ -3,25 +3,24 @@ import Layout from "../layouts/Layout.astro";
 import TrustBadge from "../components/TrustBadge.astro";
 import SocialProof from "../components/SocialProof.astro";
 
-const title = "Best Walking Treadmills (2026): 6 Machines Tested for Walkers";
+const title = "Best Walking Treadmills (2026): 6 Machines Compared for Walkers";
 const description =
-  "We tested six treadmills at 2.5-4 mph for eight weeks — the speeds walkers actually use — scoring deck length, step-up height, belt noise and incline range.";
+  "We compared six treadmills for 2.5-4 mph walking — the speeds walkers actually use — on deck length, cushioning, frame, incline range and warranty.";
 
 const PRODUCTS = [
   {
     id: "sole-f63",
     name: "Sole F63",
+    editorialScore: 4.6,
     category: "Best Overall Walking Treadmill",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Sole+F63+Treadmill&tag=sktiger-20",
     reviewUrl: "/sole-f63-treadmill/",
-    rating: 4.6,
-    reviewCount: 5124,
     priceRange: "$899-$1,099",
     specs: "3.0 CHP · 20 x 60 in. deck · 0-15% incline · 325 lb capacity",
     pros: [
       "Full 60-inch deck at a price where most rivals drop to 55 inches",
-      "Cushioning is soft enough for daily hour-long walks without heel ache",
+      "Sole's cushioning is designed for long daily walks",
       "No subscription required — the console works entirely on its own",
       "15% incline is enough for genuine hill-walking sessions",
     ],
@@ -32,17 +31,16 @@ const PRODUCTS = [
     bottomLine:
       "The walking treadmill we recommend most often: a long, well-cushioned deck and no monthly fee attached to it.",
     description:
-      "The F63 is the machine that kept coming back to the top of our notes. Walkers spend their time in the 2.5-4 mph band, where motor headroom is barely tested, so the differences that matter are deck length, cushioning quality and how the frame behaves under an hour of continuous low-speed load. The F63 wins on all three at its price. The 20 x 60-inch deck gives a comfortable stride even for taller walkers who lengthen their gait on incline, the cushioning stayed consistent across our eight-week test rather than firming up as the deck warmed, and the frame did not develop the low-frequency hum that cheaper machines pick up after a few weeks of daily use. Crucially, Sole sells hardware rather than a subscription, so nothing about the machine degrades if you never create an account.",
+      "The F63 is the machine that comes out on top for walkers on paper. Walkers spend their time in the 2.5-4 mph band, where motor headroom is barely tested, so the differences that matter are deck length, cushioning quality and how the frame copes with an hour of continuous low-speed load. The F63 is strong on all three at its price. The 20 x 60-inch deck gives a comfortable stride even for taller walkers who lengthen their gait on incline, Sole's cushioning is designed for long daily sessions, and a 325 lb capacity points to a frame with margin, which generally means less vibration and hum under daily use than cheaper machines. Crucially, Sole sells hardware rather than a subscription, so nothing about the machine degrades if you never create an account.",
   },
   {
     id: "nordictrack-c-700",
     name: "NordicTrack C 700",
+    editorialScore: 4.3,
     category: "Best Budget Walking Treadmill",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/s?k=NordicTrack+folding+treadmill&tag=sktiger-20",
     reviewUrl: "/nordictrack-c-700-treadmill/",
-    rating: 4.3,
-    reviewCount: 3912,
     priceRange: "$599-$799",
     specs: "2.75 CHP · 20 x 55 in. deck · 0-10% incline · 300 lb capacity",
     pros: [
@@ -58,17 +56,16 @@ const PRODUCTS = [
     bottomLine:
       "If your budget stops below $800 and you are walking rather than running, this is the machine that makes the fewest compromises that matter.",
     description:
-      "The C 700's reputation as a compromised treadmill comes almost entirely from running reviews, and those reviews are fair — the 2.75 CHP motor and 55-inch deck are genuinely undersized above 6 mph. At walking speed, none of that applies. The motor is loafing at 3 mph and stays cool through hour-long sessions, and the deck length only becomes a problem for taller walkers. What you are actually buying is a NordicTrack frame and a 10-year frame warranty for several hundred dollars less than anything else wearing the badge. The trade-off you should take seriously is the 10% incline ceiling, which rules out the steeper incline-walking protocols. Our full breakdown is in the C 700 review.",
+      "The C 700's reputation as a compromised treadmill comes almost entirely from running reviews, and those reviews are fair — the 2.75 CHP motor and 55-inch deck are genuinely undersized above 6 mph. At walking speed, none of that applies. A 2.75 CHP motor has plenty of headroom at 3 mph, and the deck length only becomes a problem for taller walkers. What you are actually buying is a NordicTrack frame and a 10-year frame warranty for several hundred dollars less than anything else wearing the badge. The trade-off you should take seriously is the 10% incline ceiling, which rules out the steeper incline-walking protocols. Our full breakdown is in the C 700 review.",
   },
   {
     id: "nordictrack-x9i",
     name: "NordicTrack X9i Incline Trainer",
+    editorialScore: 4.5,
     category: "Best for Incline Walking",
     badge: "Best Incline",
     amazonUrl: "https://www.amazon.com/s?k=NordicTrack+incline+treadmill&tag=sktiger-20",
     reviewUrl: "/nordictrack-x9i-incline-trainer-treadmill/",
-    rating: 4.5,
-    reviewCount: 2187,
     priceRange: "$1,799-$2,199",
     specs: "3.0 CHP · 20 x 60 in. deck · -6% to 40% incline · 300 lb capacity",
     pros: [
@@ -89,12 +86,11 @@ const PRODUCTS = [
   {
     id: "proform-power-995i",
     name: "ProForm Power 995i",
+    editorialScore: 4.2,
     category: "Best Folding Walking Treadmill",
     badge: "Best Folding",
     amazonUrl: "https://www.amazon.com/s?k=ProForm+treadmill&tag=sktiger-20",
     reviewUrl: "/proform-power-995i-treadmill/",
-    rating: 4.2,
-    reviewCount: 4408,
     priceRange: "$799-$999",
     specs: "3.0 CHP · 20 x 60 in. deck · 0-12% incline · 300 lb capacity",
     pros: [
@@ -104,30 +100,29 @@ const PRODUCTS = [
       "Priced below the Sole F63 while keeping the 60-inch deck",
     ],
     cons: [
-      "Deck cushioning firms up noticeably after the first month",
+      "Cushioning is less substantial than the Sole machines'",
       "Console pushes the iFit subscription harder than we like",
     ],
     bottomLine:
       "The pick for walkers who need the machine out of the way between sessions but refuse to give up a 60-inch deck.",
     description:
-      "Folding usually costs you deck length, and for walkers that is the wrong thing to give up. The 995i is the cleanest exception we tested: a full 20 x 60-inch surface on a frame that still folds upright into a footprint you can push against a wall. The hydraulic assist is the part that decides whether a folding treadmill actually gets folded, and here it is good enough that our testers used it daily rather than giving up after a week. The cushioning is the honest weak point — it is soft out of the box and measurably firmer after four weeks, which matters more to a walker logging an hour a day than to a runner doing 20 minutes. If folding is your central requirement, our folding treadmill guide compares the mechanisms directly.",
+      "Folding usually costs you deck length, and for walkers that is the wrong thing to give up. The 995i is the cleanest exception in this roundup: a full 20 x 60-inch surface on a frame that still folds upright into a footprint you can push against a wall. The hydraulic assist is the part that decides whether a folding treadmill actually gets folded, and an assisted lift like this one makes daily folding far more realistic than a manual latch. The cushioning is the honest weak point — it is less substantial than the Sole machines', which matters more to a walker logging an hour a day than to a runner doing 20 minutes. If folding is your central requirement, our folding treadmill guide compares the mechanisms directly.",
   },
   {
     id: "sole-f65",
     name: "Sole F65",
+    editorialScore: 4.7,
     category: "Best for Two-Walker Households",
     badge: "Best for Couples",
     amazonUrl: "https://www.amazon.com/dp/B0HFSZR19W?tag=sktiger-20&linkCode=ll1",
     reviewUrl: "/sole-f65-treadmill/",
-    rating: 4.7,
-    reviewCount: 3760,
     priceRange: "$1,199-$1,399",
     specs: "3.25 CHP · 20 x 60 in. deck · 0-15% incline · 325 lb capacity",
     pros: [
-      "Heavier frame absorbs two people's daily mileage without complaint",
-      "Cushioning held up best of anything we tested over eight weeks",
+      "Heavier frame suits two people's daily mileage",
+      "Same Sole cushioning approach as the F63, on a heavier frame",
       "Still no subscription requirement anywhere in the console",
-      "Genuinely quiet at walking speed once the belt is bedded in",
+      "Heavier frame and stronger motor suit quiet walking-speed use",
     ],
     cons: [
       "Roughly $300 more than the F63 for changes most solo walkers won't feel",
@@ -136,24 +131,23 @@ const PRODUCTS = [
     bottomLine:
       "Worth the step up from the F63 only when two people are walking on it most days — then it is the better long-term buy.",
     description:
-      "The F65 is the F63 with more metal in the places that wear out. For one walker doing 45 minutes a day, that difference is close to invisible and the extra money is hard to justify. For a household where two people each walk daily, the picture changes: the machine is absorbing roughly double the hours, and the heavier frame and stronger motor are what keep cushioning and belt tracking consistent into year three rather than year two. This was also the quietest full-size machine in the test once the belt had bedded in, which matters if walking sessions happen early or late in a shared home. Our F65 review covers the assembly process in more detail, because it is the part buyers underestimate.",
+      "The F65 is the F63 with more metal in the places that wear out. For one walker doing 45 minutes a day, that difference is close to invisible and the extra money is hard to justify. For a household where two people each walk daily, the picture changes: the machine is absorbing roughly double the hours, and the heavier frame and stronger motor are what keep cushioning and belt tracking consistent into year three rather than year two. A heavier frame also tends to transmit less vibration, which matters if walking sessions happen early or late in a shared home. Our F65 review covers the assembly process in more detail, because it is the part buyers underestimate.",
   },
   {
     id: "life-fitness-t3",
     name: "Life Fitness T3",
+    editorialScore: 4.8,
     category: "Best Long-Term Investment",
     badge: "Premium Pick",
     amazonUrl: "https://www.amazon.com/dp/B006BE6HW4?tag=sktiger-20",
     reviewUrl: "/life-fitness-t3-treadmill/",
-    rating: 4.8,
-    reviewCount: 912,
     priceRange: "$3,199-$3,999",
     specs: "3.0 CHP · 20 x 60 in. deck · 0-15% incline · 400 lb capacity",
     pros: [
       "Genuine commercial pedigree; built for hours of daily use, not minutes",
-      "The most consistent cushioning of anything in this test",
+      "Commercial cushioning designed for consistent feel under daily use",
       "400 lb capacity is the highest here by a clear margin",
-      "Feels the same in year five as it does in week one",
+      "Commercial construction is built for long-term consistency",
     ],
     cons: [
       "Three to four times the price of the machines above it in this list",
@@ -162,7 +156,7 @@ const PRODUCTS = [
     bottomLine:
       "Overkill for most walkers, and the right answer for the ones who will still be using the machine in a decade.",
     description:
-      "Commercial-grade hardware is usually a poor fit for home walking — you pay for motor headroom you will never touch. The T3 is the exception worth naming because what commercial construction actually buys you is consistency, and consistency is precisely what a daily walker needs. The deck feels identical at the end of a two-hour session as at the start, the belt tracking did not need a single adjustment across our test, and the 400 lb capacity brings a whole group of buyers into scope who are poorly served by 300 lb budget machines. It does not fold and it costs three times what the F63 does. If those are acceptable, this is a machine you buy once. See our commercial treadmill roundup for how it compares to the rest of that tier.",
+      "Commercial-grade hardware is usually a poor fit for home walking — you pay for motor headroom you will never touch. The T3 is the exception worth naming because what commercial construction actually buys you is consistency, and consistency is precisely what a daily walker needs. Commercial decks and drivetrains are built to feel the same at the end of a two-hour session as at the start and to hold belt tracking under heavy daily use, and the 400 lb capacity brings a whole group of buyers into scope who are poorly served by 300 lb budget machines. It does not fold and it costs three times what the F63 does. If those are acceptable, this is a machine you buy once. See our commercial treadmill roundup for how it compares to the rest of that tier.",
   },
 ];
 
@@ -170,7 +164,7 @@ const CLUSTER = [
   {
     kicker: "Format",
     url: "/under-desk-treadmills/",
-    name: "Under-Desk Treadmills Tested",
+    name: "Under-Desk Treadmills Compared",
     blurb: "Walking pads for desk work — what they do well and where they fall apart.",
   },
   {
@@ -233,7 +227,7 @@ const schema = {
           name: "What is the best treadmill for walking only?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The Sole F63 is our overall pick for walking-only use. It pairs a full 20 x 60-inch deck with cushioning that stayed consistent across eight weeks of hour-long sessions, and it requires no subscription. If your budget stops below $800, the NordicTrack C 700 makes the fewest compromises that a walker will actually feel.",
+            text: "The Sole F63 is our overall pick for walking-only use. It pairs a full 20 x 60-inch deck with cushioning designed for long daily walks, and it requires no subscription. If your budget stops below $800, the NordicTrack C 700 makes the fewest compromises that a walker will actually feel.",
           },
         },
         {
@@ -282,7 +276,7 @@ const schema = {
       "@type": "Article",
       headline: title,
       description: description,
-      author: { "@type": "Person", name: "Morgan Reyes" },
+      author: { "@type": "Person", name: "Shaheer Ali Khan", url: "https://www.linkedin.com/in/shaheer-ali-khan-data/", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], jobTitle: "Author and lab tester", worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: "2026-09-03",
       dateModified: "2026-09-03",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
@@ -292,11 +286,6 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: product.rating,
-        reviewCount: product.reviewCount,
-      },
     })),
   ],
 };
@@ -309,7 +298,7 @@ const schema = {
   article={{
     publishedTime: "2026-09-03",
     modifiedTime: "2026-09-03",
-    author: "Morgan Reyes",
+    author: "Shaheer Ali Khan",
     section: "Fitness Equipment",
     tags: [
       "walking treadmill",
@@ -348,9 +337,9 @@ const schema = {
         </h1>
         <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
           Almost every treadmill review is written by someone running on it.
-          We spent eight weeks doing the opposite — hour-long sessions at 2.5
-          to 4 mph — because that is what most treadmills in American homes
-          are actually used for.
+          We compared six machines for the opposite — hour-long sessions at
+          2.5 to 4 mph — because that is what most treadmills in American
+          homes are actually used for.
         </p>
         <div class="mt-8 flex flex-wrap justify-center gap-4">
           <a href="#sole-f63" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
@@ -366,10 +355,10 @@ const schema = {
     <!-- Author & Meta -->
     <div class="max-w-3xl mx-auto px-4 pt-12">
       <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan" width="48" height="48" class="w-12 h-12 rounded-full" />
         <div>
-          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
-          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+          <p class="font-bold text-gray-900 leading-tight"><a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="author noopener" target="_blank" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan</a></p>
+          <p class="text-gray-500 text-sm leading-tight">Author and lab tester</p>
         </div>
         <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
         <p class="text-gray-500 text-sm">
@@ -389,7 +378,7 @@ const schema = {
         </h2>
         <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
           <a href="#why-different" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Why Walking Is a Different Purchase</a>
-          <a href="#how-we-tested" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. How We Tested for Walkers</a>
+          <a href="#how-we-tested" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. How We Chose for Walkers</a>
           <a href="#specs-that-matter" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Specs That Actually Matter</a>
           <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. The 6 Best Walking Treadmills</a>
           <a href="#format" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Full Treadmill or Walking Pad?</a>
@@ -444,8 +433,9 @@ const schema = {
             time: whether the cushioning stays consistent, whether the belt
             needs re-tracking every fortnight, whether the frame develops a
             resonant hum once the bolts have settled. None of that shows up in
-            a twenty-minute showroom test, which is why our testing period for
-            this guide was eight weeks rather than eight days.
+            a twenty-minute showroom test, which is why this guide leans on the
+            specifications that predict it — cushioning design, frame mass and
+            weight capacity — rather than first impressions.
           </p>
           <p>
             The last difference is intensity. A runner increases difficulty by
@@ -460,28 +450,23 @@ const schema = {
         </div>
 
         <div id="how-we-tested" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. How We Tested for Walkers</h2>
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. How We Chose for Walkers</h2>
           <p>
-            Every machine here logged a minimum of thirty hours, all of it
-            between 2.5 and 4 mph, spread across eight weeks. Sessions ran
-            forty-five to seventy-five minutes, because the problems that
-            matter to walkers are the ones that appear in the second half of a
-            long session rather than the first five minutes. Two testers of
-            different heights — 5 foot 4 and 6 foot 1 — used every machine, so
-            deck-length complaints could be attributed to the deck rather than
-            to one person's stride.
+            We have not tested these machines ourselves. We compared them on
+            published specifications, warranty terms and design, judged for
+            the way walkers use a treadmill: forty-five to seventy-five minutes
+            at 2.5 to 4 mph, where the problems that matter appear in the second
+            half of a long session rather than the first five minutes.
           </p>
           <p>
-            We scored five things. Deck comfort was judged at the forty-minute
-            mark rather than at the start, and again after four weeks to catch
-            cushioning that firms up as the elastomers bed in. Stride room was
-            measured at 0%, 6% and maximum incline, since stride lengthens as
-            the deck rises. Noise was recorded a metre from the machine and,
-            more usefully, in the room directly below where one was available.
-            Console usability was scored on whether a walker can change incline
-            mid-stride without breaking rhythm. Finally, we tracked
-            maintenance: how often the belt needed re-tensioning or re-centring
-            across the test.
+            We weighed five things. Deck length, since stride lengthens as the
+            deck rises and taller walkers need more room on incline. Cushioning
+            design, since a deck has to stay comfortable for an hour, not five
+            minutes. Frame mass and weight capacity, which predict vibration,
+            noise transmitted to the room below, and how well belt tracking
+            holds under daily use. Console layout, judged on whether a walker
+            can change incline mid-stride without breaking rhythm. And incline
+            range, the walker's main progression lever.
           </p>
           <p>
             Two things we deliberately did not weight heavily: top speed and
@@ -490,7 +475,7 @@ const schema = {
             is a preference rather than a performance characteristic. Where a
             machine's price is largely explained by its screen, we have said
             so plainly. Our broader
-            <a href="/treadmill-reviews-2026/" class="text-[#0F62FE] font-medium">testing methodology and scoring rubric</a>
+            <a href="/treadmill-reviews-2026/" class="text-[#0F62FE] font-medium">ranking methodology and scoring rubric</a>
             explains how the same framework applies across the rest of the
             site.
           </p>
@@ -510,9 +495,8 @@ const schema = {
           <p>
             <strong>Cushioning that stays cushioned.</strong> Almost every
             treadmill feels soft in week one. The question is what it feels
-            like in week six, and the answer varies enormously — two machines
-            in this test were noticeably firmer after a month, which is the
-            difference between an hour of walking being pleasant and being
+            like in week six, and the answer varies enormously — cushioning
+            that firms up after a month is the difference between an hour of walking being pleasant and being
             something your heels complain about. Firmer decks also transmit
             more impact into the floor, which ties directly into the noise
             question below.
@@ -523,12 +507,12 @@ const schema = {
             the widely used 12-3-30 session. What is less often discussed is
             how quickly the incline motor responds: a machine that takes twelve
             seconds to move from 3% to 10% makes interval-style incline walking
-            frustrating. Where a machine was slow, we have said so.
+            frustrating, so check the incline speed if intervals are your plan.
           </p>
           <p>
             <strong>Step-up height.</strong> The distance from the floor to the
-            belt surface ranges from about 6 to 10 inches across the machines
-            here. It is irrelevant to most buyers and decisive for some — older
+            belt surface ranges from about 6 to 10 inches across home
+            treadmills. It is irrelevant to most buyers and decisive for some — older
             walkers, anyone with balance or hip limitations, and anyone
             positioning the treadmill in a room with a low ceiling. Our
             <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">guide to treadmills for seniors</a>
@@ -565,7 +549,7 @@ const schema = {
         <div id="picks" class="scroll-mt-24">
           <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. The 6 Best Walking Treadmills</h2>
           <p>
-            Prices below are the street ranges we saw during testing rather
+            Prices below are typical street ranges rather
             than list prices, which almost nobody pays. Each pick links to our
             full standalone review where one exists.
           </p>
@@ -591,15 +575,7 @@ const schema = {
                 </div>
                 <div class="p-6">
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
-                    <div class="flex text-yellow-400">
-                      {[...Array(5)].map((_, i) => (
-                        <svg class={`w-5 h-5 ${i < Math.floor(product.rating) ? "fill-current" : "text-gray-200"}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                      ))}
-                    </div>
-                    <span class="font-bold text-gray-900">{product.rating}</span>
-                    <span class="text-gray-400 text-sm">({product.reviewCount.toLocaleString()} reviews)</span>
+                    {product.editorialScore && (<p class="text-sm text-gray-600 mt-1 mb-0">Our editorial score: <strong class="text-gray-900">{product.editorialScore}</strong>/5</p>)}
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
                   </div>
                   <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
@@ -796,8 +772,8 @@ const schema = {
             For most walkers, the <strong>Sole F63</strong> is the machine to
             buy. It gets the three things that matter to a walker right — deck
             length, cushioning that lasts, and a usable incline range — and it
-            does not attach a subscription to any of them. Nothing else in the
-            test offered a better combination for the money.
+            does not attach a subscription to any of them. Nothing else in this
+            roundup offers a better combination for the money.
           </p>
           <p>
             Below $800, the <strong>NordicTrack C 700</strong> is the
@@ -844,8 +820,8 @@ const schema = {
               <h3 class="font-bold text-gray-900 mb-2">What is the best treadmill for walking only?</h3>
               <p class="text-gray-700 text-sm leading-relaxed">
                 The Sole F63 is our overall pick for walking-only use. It pairs
-                a full 20 x 60-inch deck with cushioning that stayed consistent
-                across eight weeks of hour-long sessions, and it requires no
+                a full 20 x 60-inch deck with cushioning designed for long
+                daily walks, and it requires no
                 subscription. If your budget stops below $800, the NordicTrack
                 C 700 makes the fewest compromises that a walker will actually
                 feel.

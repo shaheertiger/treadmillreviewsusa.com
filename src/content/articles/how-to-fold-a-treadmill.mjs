@@ -1,6 +1,6 @@
 export default {
   slug: 'how-to-fold-a-treadmill',
-  title: 'How to Fold a Treadmill (2026): Folding, Unfolding and When It Won\'t Latch',
+  title: "How to Fold a Treadmill (2026): And When It Won't Latch",
   description:
     'How to fold a treadmill safely: incline to zero, lift with your legs, seat the latch and pin. Plus how to unfold it, and what to check when the deck will not fold or latch.',
   crumbLabel: 'How to Fold a Treadmill',

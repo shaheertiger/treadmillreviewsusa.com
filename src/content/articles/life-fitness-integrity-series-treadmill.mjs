@@ -1,6 +1,6 @@
 export default {
   slug: 'life-fitness-integrity-series-treadmill',
-  title: 'Life Fitness Integrity Series Treadmill (2026): Integrity+, Free Delivery and Install?',
+  title: 'Life Fitness Integrity Series Treadmill (2026): Integrity+ Guide',
   description:
     'The Life Fitness Integrity Series treadmill for home: the current Integrity+ specs, the SL and SE4 consoles, what it costs, where home buyers can get one, and what free delivery and install really covers.',
   crumbLabel: 'Life Fitness Integrity Series Treadmill',

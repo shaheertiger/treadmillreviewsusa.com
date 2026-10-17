@@ -17,47 +17,90 @@ interface Props {
 }
 
 const {
-  title,
-  description,
+  title: rawTitle,
+  description: rawDescription,
   canonical,
-  ogImage = 'https://picsum.photos/seed/treadmillog/1200/630',
+  ogImage: ogImageProp,
   ogType = 'website',
   article,
   jsonLd,
   noindex = false,
 } = Astro.props;
 
-const siteUrl = Astro.site?.toString() ?? 'https://www.treadmillreviewsusa.com';
-const canonicalUrl = canonical ?? new URL(Astro.url.pathname, siteUrl).toString();
+const siteUrl = (Astro.site?.toString() ?? 'https://www.treadmillreviewsusa.com/').replace(/\/$/, '');
+const abs = (path: string) => new URL(path, `${siteUrl}/`).toString();
+const canonicalUrl = canonical ?? abs(Astro.url.pathname);
+const ogImage = ogImageProp ? abs(ogImageProp) : abs('/og-default.png');
+
+// Bing and other engines truncate titles at roughly 60-70 characters. Pages append the site
+// name; drop it when it would push the title past 65 so the page's own words are what shows.
+const SUFFIX = ' | Treadmill Reviews USA';
+const title = rawTitle.endsWith(SUFFIX) && rawTitle.length > 65 ? rawTitle.slice(0, -SUFFIX.length) : rawTitle;
+
+// Meta descriptions over ~160 characters are cut off in results. Trim at the last full
+// sentence that fits, or else at a word boundary with an ellipsis.
+function fitDescription(text: string, max = 160): string {
+  const t = text.replace(/\s+/g, ' ').trim();
+  if (t.length <= max) return t;
+  const window = t.slice(0, max);
+  const sentenceEnd = Math.max(window.lastIndexOf('. '), window.lastIndexOf('? '), window.lastIndexOf('! '));
+  if (sentenceEnd >= 100) return window.slice(0, sentenceEnd + 1);
+  const cut = t.slice(0, max - 1);
+  return `${cut.slice(0, cut.lastIndexOf(' ')).replace(/[,;:\-–—]+$/, '')}…`;
+}
+const description = fitDescription(rawDescription);
 
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'Treadmill Reviews USA',
-  url: siteUrl,
-  logo: `${siteUrl}/logo.png`,
-  description: 'Independent, hands-on treadmill reviews and buying guides to help you find the right machine for your home and budget.',
-  sameAs: [],
+  url: `${siteUrl}/`,
+  logo: abs('/logo.png'),
+  publishingPrinciples: abs('/editorial-standards/'),
+  description:
+    'Independent treadmill and home gym buying guides. Product specifications are checked against published sources; we earn commissions from qualifying purchases.',
 };
 
 const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: 'Treadmill Reviews USA',
-  url: siteUrl,
-  potentialAction: {
-    '@type': 'SearchAction',
-    target: `${siteUrl}/search?q={search_term_string}`,
-    'query-input': 'required name=search_term_string',
-  },
+  url: `${siteUrl}/`,
 };
 
-const schemas: Record<string, unknown>[] = [organizationSchema, websiteSchema];
+/**
+ * Structured data must describe what is actually on the page (Bing Webmaster Guidelines:
+ * misleading structured data is ignored or penalised). Applied to every page's JSON-LD:
+ * - Product nodes never carry aggregateRating or review: the site has no measured ratings.
+ * - An AggregateOffer without a price is dropped rather than published half-empty.
+ * - Article nodes get an image and a publisher with a logo if the page did not supply them.
+ */
+function sanitize(node: unknown): unknown {
+  if (Array.isArray(node)) return node.map(sanitize);
+  if (!node || typeof node !== 'object') return node;
+  const out: Record<string, unknown> = {};
+  for (const [k, v] of Object.entries(node as Record<string, unknown>)) out[k] = sanitize(v);
+  const type = out['@type'];
+  if (type === 'Product') {
+    delete out.aggregateRating;
+    delete out.review;
+    const offers = out.offers as Record<string, unknown> | undefined;
+    if (offers && !('price' in offers) && !('lowPrice' in offers)) delete out.offers;
+  }
+  if (type === 'Article' || type === 'BlogPosting' || type === 'Review') {
+    if (!out.image) out.image = ogImage;
+    out.publisher = { '@type': 'Organization', name: 'Treadmill Reviews USA', logo: { '@type': 'ImageObject', url: abs('/logo.png') } };
+    if (!out.mainEntityOfPage) out.mainEntityOfPage = canonicalUrl;
+  }
+  return out;
+}
+
+const schemas: unknown[] = [organizationSchema, websiteSchema];
 if (jsonLd) {
   if (Array.isArray(jsonLd)) {
-    schemas.push(...jsonLd);
+    schemas.push(...jsonLd.map(sanitize));
   } else {
-    schemas.push(jsonLd);
+    schemas.push(sanitize(jsonLd));
   }
 }
 ---
@@ -66,7 +109,9 @@ if (jsonLd) {
 <meta name="title" content={title} />
 <meta name="description" content={description} />
 <link rel="canonical" href={canonicalUrl} />
-{noindex && <meta name="robots" content="noindex, nofollow" />}
+{noindex
+  ? <meta name="robots" content="noindex, follow" />
+  : <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />}
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content={ogType} />
@@ -84,11 +129,11 @@ if (jsonLd) {
 {article?.tags?.map(tag => <meta property="article:tag" content={tag} />)}
 
 <!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content={canonicalUrl} />
-<meta property="twitter:title" content={title} />
-<meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={ogImage} />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content={canonicalUrl} />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImage} />
 
 <!-- JSON-LD Structured Data -->
 {schemas.map(schema => (

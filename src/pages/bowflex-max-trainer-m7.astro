@@ -3,14 +3,13 @@ import Layout from "../layouts/Layout.astro";
 import TrustBadge from "../components/TrustBadge.astro";
 import SocialProof from "../components/SocialProof.astro";
 
-const title = "Bowflex Max Trainer M7 Review (2026): Not a Treadmill, and That's the Point";
+const title = "Bowflex Max Trainer M7 Review (2026): Not a Treadmill";
 const description =
   "The Bowflex Max Trainer M7 is a compact elliptical-stepper HIIT machine, not a treadmill. Here's an honest review of the M7 for anyone comparing it as a lower-impact cardio alternative.";
 
 const PRODUCT = {
   name: "Bowflex Max Trainer M7",
-  rating: 4.4,
-  reviewCount: 5107,
+  editorialScore: 4.4,
   amazonUrl:
     "https://www.amazon.com/s?k=Bowflex+Max+Trainer+M7&tag=sktiger-20",
   priceRange: "$1,599-$1,799",
@@ -125,7 +124,7 @@ const schema = {
     {
       "@type": "Article",
       headline: title,
-      author: { "@type": "Person", name: "Morgan Reyes" },
+      author: { "@type": "Person", name: "Shaheer Ali Khan", url: "https://www.linkedin.com/in/shaheer-ali-khan-data/", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], jobTitle: "Author and lab tester", worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: "2026-06-03",
       dateModified: "2026-06-03",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
@@ -135,11 +134,6 @@ const schema = {
       name: PRODUCT.name,
       description,
       brand: { "@type": "Brand", name: "Bowflex" },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: PRODUCT.rating,
-        reviewCount: PRODUCT.reviewCount,
-      },
     },
   ],
 };
@@ -152,7 +146,7 @@ const schema = {
   article={{
     publishedTime: "2026-06-03",
     modifiedTime: "2026-06-03",
-    author: "Morgan Reyes",
+    author: "Shaheer Ali Khan",
     section: "Fitness Equipment",
     tags: ["bowflex max trainer m7", "bowflex max trainer review", "hiit cardio machine", "low impact cardio", "jrny app"],
   }}
@@ -180,7 +174,7 @@ const schema = {
           Bowflex Max Trainer <span class="text-[#5AA9FF]">M7</span> Review
         </h1>
         <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          We spent three weeks on Bowflex's flagship Max Trainer to find out
+          We looked closely at Bowflex's flagship Max Trainer to find out
           whether it's a legitimate lower-impact alternative to a treadmill
           — and to be upfront about who it's genuinely wrong for.
         </p>
@@ -194,10 +188,10 @@ const schema = {
     <!-- Author & Meta -->
     <div class="max-w-3xl mx-auto px-4 pt-12">
       <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan" width="48" height="48" class="w-12 h-12 rounded-full" />
         <div>
-          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
-          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+          <p class="font-bold text-gray-900 leading-tight"><a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="author noopener" target="_blank" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan</a></p>
+          <p class="text-gray-500 text-sm leading-tight">Author and lab tester</p>
         </div>
         <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
         <p class="text-gray-500 text-sm">Last Updated: <strong class="text-gray-700">June 3, 2026</strong></p>
@@ -206,18 +200,8 @@ const schema = {
 
       <div class="not-prose my-10 bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
         <div class="flex items-center justify-between flex-wrap gap-4 mb-4">
-          <div class="flex items-center gap-2">
-            <div class="flex text-yellow-400">
-              {[...Array(5)].map((_, i) => (
-                <svg class={`w-5 h-5 ${i < Math.floor(PRODUCT.rating) ? "fill-current" : "text-gray-200"}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-              ))}
-            </div>
-            <span class="font-bold text-gray-900">{PRODUCT.rating}</span>
-            <span class="text-gray-400 text-sm">({PRODUCT.reviewCount.toLocaleString()} reviews)</span>
-          </div>
           <span class="bg-[#0F62FE]/10 text-[#0F62FE] px-3 py-1 rounded-full text-xs font-bold">Best For: Low-Impact HIIT, Not Running</span>
+          {PRODUCT.editorialScore && (<p class="text-sm text-gray-600 mt-1 mb-0">Our editorial score: <strong class="text-gray-900">{PRODUCT.editorialScore}</strong>/5</p>)}
         </div>
         <p class="text-gray-700 leading-relaxed mb-4">
           The M7 is an excellent machine for what it actually is: a compact,
@@ -357,8 +341,8 @@ const schema = {
         <div id="specs" class="scroll-mt-24">
         <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Full Spec Sheet</h2>
         <p>
-          Here's every spec we verified directly against our test unit
-          rather than copying from the manufacturer's marketing page.
+          Here's every spec for the M7, taken from Bowflex's published
+          specifications. We have not tested the machine ourselves.
         </p>
         </div>
       </div>
@@ -380,11 +364,10 @@ const schema = {
         <div id="assembly" class="scroll-mt-24">
         <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Assembly and Setup</h2>
         <p>
-          Assembly on the M7 is considerably simpler and faster than
-          anything we've clocked for a treadmill — roughly 40 minutes
-          working alone, with no need for a second person at any step. The
-          base, pedal arms, and console arrive largely pre-assembled, and
-          the included tools covered every step of the build. This is one
+          Assembly on the M7 is considerably simpler and faster than a
+          typical treadmill's, and it is realistic for one person working
+          alone. The base, pedal arms, and console arrive largely
+          pre-assembled, and the necessary tools are included. This is one
           of the M7's underrated practical advantages: unlike a treadmill,
           which often requires careful frame alignment and torque
           specifications on major bolts, the Max Trainer's more compact,
@@ -408,12 +391,11 @@ const schema = {
           The M7's signature workout structure is built around Max Interval
           Training: short bursts of high resistance followed by lower-
           resistance recovery periods, all guided by the console's built-in
-          Max Interval and Max Results programs. In practice, this felt
-          noticeably more intense per minute than a comparable treadmill
-          interval session — testers consistently reported hitting a higher
-          heart rate faster on the M7 than during equivalent-duration
-          treadmill intervals, which tracks with Bowflex's own positioning
-          of the machine as a time-efficient cardio tool.
+          Max Interval and Max Results programs. Because it works arms and
+          legs together against resistance, this format can raise heart rate
+          faster than an equivalent-duration treadmill interval session,
+          which is how Bowflex positions the machine: as a time-efficient
+          cardio tool.
         </p>
         <p>
           The combined elliptical-stepper motion takes a few sessions to
@@ -421,9 +403,8 @@ const schema = {
           elliptical. It's a genuinely different movement pattern —
           somewhere between a stair-climber and an elliptical, with a
           slightly more vertical component than a pure elliptical glide.
-          Testers with prior elliptical experience adapted within one or
-          two sessions; those with no elliptical background took slightly
-          longer to find a smooth rhythm.
+          Anyone with prior elliptical experience is likely to adapt faster
+          than someone with no elliptical background.
         </p>
         <h3>Resistance and Progression</h3>
         <p>
@@ -431,8 +412,8 @@ const schema = {
           and months, which matters for anyone using this as a primary
           cardio tool rather than an occasional supplement. Lower levels
           are genuinely easy and appropriate for a warmup or a deconditioned
-          starting point, while the top few levels produced a legitimately
-          difficult, breathless effort even from fit testers. The
+          starting point, while the top few levels are designed to challenge
+          even fit users. The
           resistance changes are electromagnetic rather than mechanical,
           which means they're quiet and near-instant when you adjust them
           mid-workout, a meaningful advantage during interval sessions where
@@ -454,9 +435,9 @@ const schema = {
         </p>
         <h3>Noise and Everyday Usability</h3>
         <p>
-          Noise levels were noticeably lower than any treadmill we've
-          tested, even at the highest resistance settings, since there's no
-          belt friction or motor driving a moving surface — just the
+          A machine like this is inherently quieter than a treadmill, even
+          at the highest resistance settings, since there's no belt
+          friction or motor driving a moving surface — just the
           mechanical resistance system and the pedal arms' motion. This
           makes the M7 a genuinely strong choice for apartment living or
           early-morning and late-night workouts where treadmill noise would
@@ -468,22 +449,19 @@ const schema = {
           The handlebars move in sync with the pedal motion, giving the M7
           a full-body element that a treadmill workout doesn't naturally
           provide — your arms are actively driving resistance alongside
-          your legs rather than just swinging along for the ride. Testers
-          with prior lower-back sensitivity specifically noted that the
-          seated-adjacent, low-impact motion felt noticeably easier on the
-          spine than running, even at high resistance and heart rate. The
-          pedal arms themselves felt stable and free of the wobble or play
-          we've occasionally noted on cheaper compact ellipticals, even
-          during aggressive standing intervals at the top resistance
-          levels.
+          your legs rather than just swinging along for the ride. The
+          low-impact motion avoids the repeated landing forces of running,
+          which is why it appeals to people with lower-back or joint
+          sensitivity. The pedal arms are built for aggressive standing
+          intervals at the top resistance levels, where cheaper compact
+          ellipticals are more prone to wobble or play.
         </p>
         <p>
           One adjustment worth flagging for shorter or taller users: the
           M7's stride pattern is fixed rather than adjustable, unlike some
-          full-size ellipticals that let you customize stride length. Our
-          testers ranging from 5'2" to 6'1" all found the fixed stride
-          comfortable, but anyone significantly outside that range should
-          try the machine in person before buying if possible, since there's
+          full-size ellipticals that let you customize stride length. Anyone
+          much shorter or taller than average should try the machine in
+          person before buying if possible, since there's
           no way to adjust the motion path to compensate.
         </p>
         </div>
@@ -607,8 +585,8 @@ const schema = {
             Bowflex frequently bundles a limited JRNY trial with new Max
             Trainer purchases. Try the full built-in console programs first
             before deciding whether the ongoing JRNY subscription is worth
-            it for you — many testers found the standalone Max Interval
-            program covered most of what they actually wanted.
+            it for you — the standalone Max Interval program may cover most
+            of what you actually want.
           </p>
         </div>
 
@@ -660,8 +638,8 @@ const schema = {
         <p>
           It's also worth thinking about how this machine fits into a
           broader training routine rather than evaluating it purely as a
-          standalone purchase. Several testers who already owned a
-          treadmill found real value in adding an M7 alongside it — using
+          standalone purchase. If you already own a
+          treadmill, there can be real value in adding an M7 alongside it — using
           the treadmill for longer, easier-paced sessions and the Max
           Trainer for short, hard interval days, splitting the joint
           impact across two different movement patterns rather than putting

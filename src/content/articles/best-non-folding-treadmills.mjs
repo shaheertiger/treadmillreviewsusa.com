@@ -84,7 +84,7 @@ export default {
             specification table, a product description or its own buying advice.
           </p>
           <p>
-            That last test sounds pedantic, but it removed one well-known machine from the list,
+            That last rule sounds pedantic, but it removed one well-known machine from the list,
             and it is a useful habit when you shop: listings and reviews sometimes describe a machine
             as fixed-frame when the maker's own page is silent, and folding treadmills are
             occasionally described the other way round.

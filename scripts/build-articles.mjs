@@ -18,7 +18,9 @@ const ROOT = join(import.meta.dirname, '..');
 const SPECS_DIR = join(ROOT, 'src', 'content', 'articles');
 const PAGES_DIR = join(ROOT, 'src', 'pages');
 const SITE = 'https://www.treadmillreviewsusa.com';
-const AUTHOR = 'Morgan Reyes';
+const AUTHOR = 'Shaheer Ali Khan';
+const AUTHOR_URL = 'https://www.linkedin.com/in/shaheer-ali-khan-data/';
+const AUTHOR_ROLE = 'Author and lab tester';
 
 // Verified Amazon ASINs, keyed by product name, written by scripts/amazon/fetch-asins.mjs.
 // A product with one links straight to its listing; any other keeps its tagged search link.
@@ -37,6 +39,13 @@ const amazonUrl = (p) =>
     : FALLBACKS[p.name]
       ? searchUrl(FALLBACKS[p.name])
       : p.amazonUrl ?? `https://www.amazon.com/s?k=${encodeURIComponent(p.name)}+Treadmill&tag=sktiger-20`;
+
+// Low and high prices for the Product AggregateOffer, read from the card's visible price range
+// ("$999-$1,299", "About $2,700", "$148–$214 per case"). No price → no offer is published.
+const priceBounds = (range) => {
+  const nums = [...String(range ?? '').matchAll(/\$\s?([\d,]+(?:\.\d+)?)/g)].map((m) => Number(m[1].replace(/,/g, '')));
+  return nums.length ? { low: Math.min(...nums), high: Math.max(...nums) } : null;
+};
 
 const esc = (s) => String(s).replace(/\\/g, '\\\\').replace(/`/g, '\\`').replace(/\$\{/g, '\\${');
 const jsStr = (s) => JSON.stringify(String(s));
@@ -64,6 +73,7 @@ ${products
     amazonLabel: ${jsStr(isFallback(p) ? 'Shop Similar on Amazon' : 'Check Price on Amazon')},
     reviewUrl: ${p.reviewUrl ? jsStr(p.reviewUrl) : 'null'},
     priceRange: ${jsStr(p.priceRange)},
+    priceBounds: ${JSON.stringify(priceBounds(p.priceRange))},
     specs: ${jsStr(p.specs)},
     pros: [
 ${p.pros.map((x) => `      ${jsStr(x)},`).join('\n')}
@@ -81,6 +91,24 @@ ${p.cons.map((x) => `      ${jsStr(x)},`).join('\n')}
 `;
 }
 
+// The ranked picks as an ItemList, the markup the top-ranking roundups use for a list of
+// products: names and on-page anchors only, no ratings.
+function itemListNode(spec) {
+  if (!spec.products?.length) return '';
+  return `    {
+      "@type": "ItemList",
+      name: title,
+      numberOfItems: ${spec.products.length},
+      itemListElement: PRODUCTS.map((product, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: product.name,
+        url: \`${SITE}/${spec.slug}/#\${product.id}\`,
+      })),
+    },
+`;
+}
+
 function schemaBlock(spec) {
   const crumb = spec.breadcrumb ?? { name: 'Best Lists', url: '/best-of/' };
   // Product nodes carry no aggregateRating: the site has no measured rating data
@@ -91,11 +119,17 @@ function schemaBlock(spec) {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
-      offers: {
-        "@type": "AggregateOffer",
-        priceCurrency: "USD",
-        availability: "https://schema.org/InStock",
-      },
+      ...(product.priceBounds
+        ? {
+            offers: {
+              "@type": "AggregateOffer",
+              priceCurrency: "USD",
+              lowPrice: product.priceBounds.low,
+              highPrice: product.priceBounds.high,
+              url: product.amazonUrl,
+            },
+          }
+        : {}),
     })),
 `
     : '';
@@ -132,12 +166,12 @@ ${spec.faqs
       "@type": "Article",
       headline: title,
       description: description,
-      author: { "@type": "Person", name: "${AUTHOR}" },
+      author: { "@type": "Person", name: "${AUTHOR}", url: "${AUTHOR_URL}", sameAs: ["${AUTHOR_URL}"], jobTitle: "${AUTHOR_ROLE}", worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: ${jsStr(spec.published)},
       dateModified: ${jsStr(spec.modified ?? spec.published)},
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
     },
-${productNodes}  ],
+${productNodes}${itemListNode(spec)}  ],
 };`;
 }
 
@@ -159,9 +193,9 @@ const PRODUCT_CARDS = `      <!-- Product cards -->
               <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
                 <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
                   <div>
-                    <p class="text-white font-black text-xl leading-tight">
+                    <h3 class="text-white font-black text-xl leading-tight m-0">
                       {index + 1}. {product.name}
-                    </p>
+                    </h3>
                     <p class="text-gray-400 text-xs">{product.category}</p>
                   </div>
                   <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
@@ -177,7 +211,7 @@ const PRODUCT_CARDS = `      <!-- Product cards -->
                   <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
                   <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                     <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <p class="text-xs font-black uppercase tracking-widest text-green-700 mb-2">What Works</p>
+                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
                       <ul class="space-y-2">
                         {product.pros.map((pro) => (
                           <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
@@ -185,7 +219,7 @@ const PRODUCT_CARDS = `      <!-- Product cards -->
                       </ul>
                     </div>
                     <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <p class="text-xs font-black uppercase tracking-widest text-red-700 mb-2">What Doesn't</p>
+                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
                       <ul class="space-y-2">
                         {product.cons.map((con) => (
                           <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
@@ -249,6 +283,51 @@ const DATA_PENDING_BANNER = `      <!-- Editorial draft banner -->
           </ul>
         </div>
       </div>
+`;
+
+// "Our top picks" box near the top of a roundup: each pick's award and a jump link to its
+// card, so a reader (and a search snippet) gets the answer before the detail.
+function topPicksBox(spec) {
+  if (!spec.products || spec.products.length < 3) return '';
+  const items = spec.products
+    .slice(0, 5)
+    .map(
+      (p) => `          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">${p.badge}:</span>
+            <a href="#${p.id}" class="font-bold text-gray-900 no-underline hover:underline">${p.name}</a>
+            <a href="#${p.id}" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>`
+    )
+    .join('\n');
+  return `
+    <div class="max-w-3xl mx-auto px-4 pt-8">
+      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
+        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
+        <ul class="list-none m-0 p-0">
+${items}
+        </ul>
+      </div>
+    </div>
+`;
+}
+
+// "Meet the author" box at the end of every article, linking the author's profile and the
+// editorial standards page that explains how products are chosen and checked.
+const AUTHOR_BOX = `
+        <!-- Meet the Author -->
+        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
+          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
+          <div>
+            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
+            <p class="text-sm text-gray-700 leading-relaxed m-0">
+              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="author noopener" target="_blank" class="font-bold text-gray-900">Shaheer Ali Khan</a>
+              writes and lab-tests for Treadmill Reviews USA. Every guide says what was checked, against
+              which sources and on what date, and says plainly when a product has not been tested
+              hands-on. Read our
+              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">editorial standards</a>.
+            </p>
+          </div>
+        </div>
 `;
 
 function render(spec) {
@@ -340,10 +419,10 @@ ${spec.dataPending?.length ? DATA_PENDING_BANNER : ''}
     <!-- Author & Meta -->
     <div class="max-w-3xl mx-auto px-4 pt-12">
       <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="https://i.pravatar.cc/150?img=48" alt="${AUTHOR}" class="w-12 h-12 rounded-full" />
+        <img src="/authors/shaheer-ali-khan.png" alt="${AUTHOR}" width="48" height="48" class="w-12 h-12 rounded-full" />
         <div>
-          <p class="font-bold text-gray-900 leading-tight">${AUTHOR}</p>
-          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+          <p class="font-bold text-gray-900 leading-tight"><a href="${AUTHOR_URL}" rel="author noopener" target="_blank" class="text-gray-900 no-underline hover:underline">${AUTHOR}</a></p>
+          <p class="text-gray-500 text-sm leading-tight">${AUTHOR_ROLE}</p>
         </div>
         <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
         <p class="text-gray-500 text-sm">
@@ -365,7 +444,7 @@ ${
     : ''
 }    </div>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
+${topPicksBox(spec)}    <div class="max-w-3xl mx-auto px-4 py-10">
       <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
         <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
@@ -443,6 +522,7 @@ ${spec.related
           <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
 ${spec.bottomLine.map((p) => `          <p class="text-gray-300 leading-relaxed mb-4">\n            ${p}\n          </p>`).join('\n')}
         </div>
+${AUTHOR_BOX}
       </div>
     </div>
   </article>

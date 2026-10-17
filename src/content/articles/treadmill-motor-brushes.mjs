@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-motor-brushes',
-  title: 'Treadmill Motor Brushes (2026): Signs of Wear and How Replacement Works',
+  title: 'Treadmill Motor Brushes (2026): Signs of Wear and Replacement',
   description:
     'Signs of worn treadmill motor brushes, which motors have them, how to inspect and replace them safely, matching the right part, and when the commutator means a technician.',
   crumbLabel: 'Treadmill Motor Brushes',

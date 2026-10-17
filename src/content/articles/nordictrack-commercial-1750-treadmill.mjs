@@ -1,6 +1,6 @@
 export default {
   slug: 'nordictrack-commercial-1750-treadmill',
-  title: 'NordicTrack Commercial 1750 Treadmill Review (2026): Current Specs and Verdict',
+  title: 'NordicTrack Commercial 1750 Review (2026): Specs and Verdict',
   description:
     'The NordicTrack Commercial 1750 treadmill as sold now: 16 in. pivoting screen, 22 x 60 in. deck, 400 lb rating, lifetime motor cover. What changed, and who should buy it.',
   crumbLabel: 'NordicTrack Commercial 1750',

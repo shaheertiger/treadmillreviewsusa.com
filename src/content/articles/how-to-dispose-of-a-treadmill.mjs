@@ -1,6 +1,6 @@
 export default {
   slug: 'how-to-dispose-of-a-treadmill',
-  title: 'How to Dispose of a Treadmill (2026): Sell, Donate, Recycle or Haul Away',
+  title: 'How to Dispose of a Treadmill (2026): Sell, Donate or Recycle',
   description:
     'How to get rid of a treadmill: selling it, charities that may take it, retailer haul-away, bulk pickup, scrap recycling, junk removal costs and wiping the console.',
   crumbLabel: 'How to Dispose of a Treadmill',

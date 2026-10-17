@@ -5,12 +5,11 @@ import SocialProof from "../components/SocialProof.astro";
 
 const title = "Sole F65 Treadmill Review (2026): The Sole Most Owners Recommend";
 const description =
-  "We spent four weeks running, walking, and living with the Sole F65. Here's an honest look at the motor, deck, console, and why it's the Sole treadmill most owners tell their friends to buy.";
+  "We compared the Sole F65 on its published specs and warranty. Here's an honest look at the motor, deck, console, and why it's the Sole treadmill we'd point most shoppers toward first.";
 
 const PRODUCT = {
   name: "Sole F65",
-  rating: 4.7,
-  reviewCount: 3182,
+  editorialScore: 4.7,
   amazonUrl: "https://www.amazon.com/dp/B0HFSZR19W?tag=sktiger-20&linkCode=ll1",
   priceRange: "$1,399-$1,599",
 };
@@ -91,7 +90,7 @@ const schema = {
           name: "How does the Sole F65 compare to the Sole F63?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The F65 steps up to a stronger 3.5 CHP motor and a larger 22 x 60-inch deck versus the F63's 3.0 CHP motor and 20 x 60-inch deck, which translates into noticeably more stability once you're jogging past 6 mph. For anyone who plans to run regularly rather than mostly walk, the roughly $400 jump to the F65 is worth it.",
+            text: "The F65 steps up to a stronger 3.5 CHP motor and a larger 22 x 60-inch deck versus the F63's 3.0 CHP motor and 20 x 60-inch deck, which translates into more motor headroom and more running room once you're jogging at a steady pace. For anyone who plans to run regularly rather than mostly walk, the roughly $400 jump to the F65 is worth it.",
           },
         },
         {
@@ -99,7 +98,7 @@ const schema = {
           name: "Is the Sole F65 good for running, or just walking?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "It's genuinely built for running. The 3.5 CHP motor held steady through sustained jogging and interval sessions in our testing, and the 22 x 60-inch deck comfortably fit testers up to 6'2\" during full-stride running. It handles walking just as well, but running is where its motor and deck size actually earn their keep.",
+            text: "It's genuinely built for running. A 3.5 CHP motor is sized for sustained jogging and interval sessions, and the 22 x 60-inch deck is a full-size running surface with room for most taller runners at full stride. It handles walking just as well, but running is where its motor and deck size actually earn their keep.",
           },
         },
         {
@@ -123,7 +122,7 @@ const schema = {
     {
       "@type": "Article",
       headline: title,
-      author: { "@type": "Person", name: "Morgan Reyes" },
+      author: { "@type": "Person", name: "Shaheer Ali Khan", url: "https://www.linkedin.com/in/shaheer-ali-khan-data/", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], jobTitle: "Author and lab tester", worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: "2026-04-22",
       dateModified: "2026-04-22",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
@@ -133,11 +132,6 @@ const schema = {
       name: PRODUCT.name,
       description,
       brand: { "@type": "Brand", name: "Sole Fitness" },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: PRODUCT.rating,
-        reviewCount: PRODUCT.reviewCount,
-      },
     },
   ],
 };
@@ -150,7 +144,7 @@ const schema = {
   article={{
     publishedTime: "2026-04-22",
     modifiedTime: "2026-04-22",
-    author: "Morgan Reyes",
+    author: "Shaheer Ali Khan",
     section: "Fitness Equipment",
     tags: ["sole f65", "sole f65 review", "sole treadmill", "no subscription treadmill", "home gym"],
   }}
@@ -182,9 +176,7 @@ const schema = {
           Sole <span class="text-[#5AA9FF]">F65</span> Treadmill Review
         </h1>
         <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          We put Sole's mid-range treadmill through four weeks of walking,
-          jogging, and interval sessions to find out why it's quietly become
-          the Sole model most owners tell their friends to buy first.
+          We went through Sole's mid-range treadmill spec by spec to find out why it's the Sole model we'd point most shoppers toward first.
         </p>
         <div class="mt-8 flex flex-wrap justify-center gap-4">
           <a href="#cta" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
@@ -200,10 +192,10 @@ const schema = {
     <!-- Author & Meta -->
     <div class="max-w-3xl mx-auto px-4 pt-12">
       <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan" width="48" height="48" class="w-12 h-12 rounded-full" />
         <div>
-          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
-          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+          <p class="font-bold text-gray-900 leading-tight"><a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="author noopener" target="_blank" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan</a></p>
+          <p class="text-gray-500 text-sm leading-tight">Author and lab tester</p>
         </div>
         <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
         <p class="text-gray-500 text-sm">
@@ -217,18 +209,8 @@ const schema = {
       <!-- Quick Verdict -->
       <div class="not-prose my-10 bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
         <div class="flex items-center justify-between flex-wrap gap-4 mb-4">
-          <div class="flex items-center gap-2">
-            <div class="flex text-yellow-400">
-              {[...Array(5)].map((_, i) => (
-                <svg class={`w-5 h-5 ${i < Math.floor(PRODUCT.rating) ? "fill-current" : "text-gray-200"}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-              ))}
-            </div>
-            <span class="font-bold text-gray-900">{PRODUCT.rating}</span>
-            <span class="text-gray-400 text-sm">({PRODUCT.reviewCount.toLocaleString()} reviews)</span>
-          </div>
           <span class="bg-[#0F62FE]/10 text-[#0F62FE] px-3 py-1 rounded-full text-xs font-bold">Editor's Choice: Best Sole for Most Buyers</span>
+          {PRODUCT.editorialScore && (<p class="text-sm text-gray-600 mt-1 mb-0">Our editorial score: <strong class="text-gray-900">{PRODUCT.editorialScore}</strong>/5</p>)}
         </div>
         <p class="text-gray-700 leading-relaxed mb-4">
           The F65 is the Sole treadmill we'd point most households toward. It
@@ -275,8 +257,7 @@ const schema = {
           Sole's lineup has a clear budget option and a clear flagship, and
           the F65 sits in the middle doing the least glamorous but most
           important job: being the treadmill that just works for the widest
-          range of households. After a month of daily testing across
-          multiple runners and walkers, we think it's the one most people
+          range of households. Judged on its motor, deck, frame, and warranty, we think it's the one most people
           searching "Sole treadmill" should actually buy.
         </p>
 
@@ -295,10 +276,7 @@ const schema = {
           you'll glance at occasionally.
         </p>
         <p>
-          We tested it against the exact question most shoppers land on this
-          page asking: is the F65 worth roughly $400 more than the F63, or
-          should you just save the money and go smaller? After a month of
-          use, our answer is that it depends almost entirely on how you
+          We looked at it through the exact question most shoppers land on this page asking: is the F65 worth roughly $400 more than the F63, or should you just save the money and go smaller? Our answer is that it depends almost entirely on how you
           intend to use it. If you're walking a few times a week or jogging
           occasionally, the F63 will serve you fine. If you plan to run
           regularly, if more than one person in the household will use the
@@ -306,9 +284,7 @@ const schema = {
           another treadmill in two years, the F65 is worth the jump.
         </p>
         <p>
-          This is a folding treadmill, and Sole's hydraulic-assisted lift
-          made raising and lowering the deck noticeably easier than we
-          expected given the machine's weight. Folded, it stands at roughly
+          This is a folding treadmill, and Sole's hydraulic-assisted lift is designed to make raising and lowering the deck easier despite the machine's weight. Folded, it stands at roughly
           36 x 78 inches — smaller than NordicTrack's Commercial-tier
           machines, but still sized more like a semi-permanent home gym
           fixture than an ultra-compact apartment treadmill. If daily folding
@@ -352,8 +328,7 @@ const schema = {
         <div id="specs" class="scroll-mt-24">
         <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Full Spec Sheet</h2>
         <p>
-          Here's every spec we verified directly against our test unit
-          rather than copying from the manufacturer's marketing page.
+          Here's the full spec sheet, taken from Sole's published specifications for the F65.
         </p>
         </div>
       </div>
@@ -375,30 +350,17 @@ const schema = {
         <div id="assembly" class="scroll-mt-24">
         <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Assembly and Setup</h2>
         <p>
-          Assembly took our team roughly 60 minutes working alone, faster
-          than several competitors we've tested at this price, largely
-          because the F65's upright posts arrive already attached to the
+          Assembly should be simpler than on several competitors at this price, largely because the F65's upright posts arrive already attached to the
           base rather than requiring a separate lift-and-bolt step. A second
-          person still helps with positioning the console assembly, but it's
-          genuinely a one-person job if you have to do it that way.
+          person still helps with positioning the console assembly, but it's a manageable one-person job if you have to do it that way.
         </p>
         <p>
-          The included tools covered the entire build, and Sole's manual
-          uses clear numbered diagrams rather than dense text instructions,
-          which our testers found easier to follow than some competitors'
-          documentation. The unit ships in a heavy box — expect somewhere
-          around 250 pounds including packaging — so plan a delivery and
+          Check that the included tools cover every step before you begin; Sole's manual uses numbered diagrams rather than dense text instructions. The unit ships in a heavy box, so plan a delivery and
           unboxing location you can actually work in rather than trying to
           haul the full crate up a narrow stairwell first.
         </p>
         <p>
-          Once assembled, we ran the same calibration pass we recommend for
-          every new treadmill: cycle through the full incline range once,
-          listen for unusual noise from the incline motor, and confirm the
-          safety key stops the belt immediately when pulled. On the F65, that
-          check turned up nothing to flag — the incline motor was smooth and
-          quiet from the very first cycle, which isn't universal among
-          machines in this price range.
+          Once assembled, run the same calibration pass we recommend for every new treadmill: cycle through the full incline range once, listen for unusual noise from the incline motor, and confirm the safety key stops the belt immediately when pulled. It's a quick check that catches rare shipping-damage issues before your first real workout.
         </p>
         </div>
 
@@ -406,35 +368,17 @@ const schema = {
         <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Performance Deep Dive</h2>
         <h3>Motor and Deck</h3>
         <p>
-          The 3.5 CHP motor handled everything we threw at it without
-          straining, including back-to-back interval sessions pushing past
-          7.5 mph. It's not quite as effortless at the top of its range as
-          NordicTrack's larger 3.75 CHP unit in the Commercial 1750, but for
-          the overwhelming majority of home runners — anyone training below
-          a roughly 8-minute mile pace — the difference is academic. The 22
-          x 60-inch deck is the same size used on Sole's flagship F80, and
-          it shows: our tallest tester, at 6'2", never felt cramped during
-          full-stride running.
+          A 3.5 CHP motor is sized for real running, including back-to-back interval sessions. On paper it has a little less in reserve at the top of its range than NordicTrack's larger 3.75 CHP unit in the Commercial 1750, but for the large majority of home runners the difference is unlikely to matter. The 22 x 60-inch deck is the same size used on Sole's flagship F80, which gives most taller runners room for a full stride.
         </p>
         <p>
-          We also ran a 45-minute heat-soak test at a sustained 6 mph,
-          checking motor housing temperature by hand every ten minutes. The
-          housing warmed but never became uncomfortable to touch, and belt
-          speed held consistent throughout without the surging some cheaper
-          motors exhibit under sustained load. Belt tracking stayed centered
-          across the entire test, never drifting toward either rail.
+          We have not run the F65 ourselves, so we can't report how warm its motor gets or how its belt tracks over a long session. What the spec sheet does show is a motor with more continuous horsepower than the F63's, which generally means it works at a lower share of its capacity for the same workout; belt tracking and tension remain the routine items to check every few months.
         </p>
         <h3>Cushioning</h3>
         <p>
           The Cushion Flex Whisper Deck system uses individually mounted
           cushions rather than one continuous pad underneath the belt, which
           lets Sole tune impact absorption differently at the heel-strike
-          zone versus the push-off zone. In practice, this is genuinely
-          noticeable — testers with knee sensitivity specifically called out
-          how much softer the F65 felt during longer walking sessions
-          compared to a flatter, single-pad deck on a cheaper machine, while
-          the push-off zone stayed responsive enough that faster running
-          didn't feel mushy or delayed.
+          zone versus the push-off zone. The idea is a softer landing zone for longer walking sessions than a flatter, single-pad deck on a cheaper machine provides, while keeping the push-off zone firm enough that faster running doesn't feel mushy or delayed.
         </p>
         <h3>Console and Everyday Usability</h3>
         <p>
@@ -456,28 +400,12 @@ const schema = {
         </p>
         <h3>Incline and Speed Response</h3>
         <p>
-          Manual incline adjusts in clean 1% increments from 0% up to 15%,
-          responding within a second or two of a button press rather than
-          the slower ramp we've measured on some budget machines. Speed
-          changes are similarly quick and precise in half-mph increments,
-          which matters more than it sounds like during interval training
-          where you're changing pace every 30 to 60 seconds — a sluggish
-          response either leaves you jogging in place waiting for the belt
-          to catch up or forces you to anticipate the change a few seconds
-          early, and the F65 never put us in that position.
+          Manual incline adjusts in 1% increments from 0% up to 15%, and speed changes in half-mph increments, with quick-adjust buttons on the handrails. That matters more than it sounds like during interval training where you're changing pace every 30 to 60 seconds — being able to jump straight to a speed rather than tapping through every step keeps the intervals on schedule.
         </p>
 
         <h3>Noise and Vibration</h3>
         <p>
-          We measured noise in the mid-to-high 50-decibel range during
-          brisk walking and the low 60s during sustained jogging, which
-          stayed consistent even after an hour of continuous use rather than
-          creeping louder as the motor warmed up. Placed on a hard floor
-          without a mat, we noticed some vibration transfer at higher
-          speeds, which is common to nearly every treadmill in this weight
-          class rather than specific to the F65 — a quality equipment mat
-          underneath cut that transfer noticeably during our follow-up test,
-          and it's a cheap upgrade we'd recommend regardless of which
+          We haven't measured the F65's noise ourselves. Its fully enclosed motor housing helps keep motor noise down, and at running pace footfall on the deck is usually the bigger source of sound on any treadmill. On a hard floor, some vibration transfer at higher speeds is common to nearly every treadmill in this weight class rather than specific to the F65 — a quality equipment mat underneath helps reduce it, and it's a cheap upgrade we'd recommend regardless of which
           treadmill you end up buying.
         </p>
         </div>
@@ -485,9 +413,7 @@ const schema = {
         <div id="durability" class="scroll-mt-24">
         <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Long-Term Durability Notes</h2>
         <p>
-          Four weeks of hands-on testing can't fully answer a multi-year
-          durability question on its own, so we cross-referenced our
-          impressions against patterns in verified owner reviews spanning
+          We have not tested the F65 ourselves, and a spec sheet can't answer a multi-year durability question on its own, so we looked at patterns in verified owner reviews spanning
           one to four years of ownership. The most consistent theme was
           positive: owners report the frame staying tight and rattle-free
           well past the two-year mark, which tracks with Sole's heavier
@@ -543,8 +469,8 @@ const schema = {
           <ul class="space-y-2">
             {[
               "Full 22 x 60-inch deck, the same size used on Sole's flagship F80",
-              "3.5 CHP motor stays stable and quiet through real running paces",
-              "Cushion Flex Whisper Deck noticeably softens impact without feeling mushy",
+              "3.5 CHP motor is sized for real running paces",
+              "Cushion Flex Whisper Deck uses zoned cushions rather than a single pad",
               "No required subscription — every feature works fully out of the box",
               "Lifetime frame warranty is stronger than most competitors at this price",
             ].map((pro) => (
@@ -676,8 +602,7 @@ const schema = {
         <div id="verdict" class="scroll-mt-24">
         <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Final Verdict</h2>
         <p>
-          The Sole F65 earns its reputation as the treadmill most Sole owners
-          actually recommend because it doesn't cut corners on the two things
+          The Sole F65 earns its place as the Sole treadmill we'd recommend first because it doesn't cut corners on the two things
           that matter most day to day: motor strength and deck comfort,
           delivered without a subscription tax. The plain console is a real
           trade-off, not a minor footnote, and if interactive coaching
@@ -728,23 +653,13 @@ const schema = {
           <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">How does the Sole F65 compare to the Sole F63?</h3>
             <p class="text-gray-700 text-sm leading-relaxed">
-              The F65 steps up to a stronger 3.5 CHP motor and a larger 22 x
-              60-inch deck versus the F63's 3.0 CHP motor and 20 x 60-inch
-              deck, which translates into noticeably more stability once
-              you're jogging past 6 mph. For anyone who plans to run
-              regularly rather than mostly walk, the roughly $400 jump to the
-              F65 is worth it.
+              The F65 steps up to a stronger 3.5 CHP motor and a larger 22 x 60-inch deck versus the F63's 3.0 CHP motor and 20 x 60-inch deck, which translates into more motor headroom and more running room once you're jogging at a steady pace. For anyone who plans to run regularly rather than mostly walk, the roughly $400 jump to the F65 is worth it.
             </p>
           </div>
           <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Is the Sole F65 good for running, or just walking?</h3>
             <p class="text-gray-700 text-sm leading-relaxed">
-              It's genuinely built for running. The 3.5 CHP motor held steady
-              through sustained jogging and interval sessions in our
-              testing, and the 22 x 60-inch deck comfortably fit testers up
-              to 6'2" during full-stride running. It handles walking just as
-              well, but running is where its motor and deck size actually
-              earn their keep.
+              It's genuinely built for running. A 3.5 CHP motor is sized for sustained jogging and interval sessions, and the 22 x 60-inch deck is a full-size running surface with room for most taller runners at full stride. It handles walking just as well, but running is where its motor and deck size actually earn their keep.
             </p>
           </div>
           <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
@@ -811,7 +726,7 @@ const schema = {
           <a href="/best-treadmill-for-home-reviews/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
             <span class="text-xs font-black uppercase tracking-widest text-green-600">Category</span>
             <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills for Home</p>
-            <p class="text-sm text-gray-500 leading-relaxed">See how the F65 stacks up against every brand we've tested.</p>
+            <p class="text-sm text-gray-500 leading-relaxed">See how the F65 stacks up against every brand we've covered.</p>
           </a>
         </div>
       </div>

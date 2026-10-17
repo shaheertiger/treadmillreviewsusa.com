@@ -2,7 +2,7 @@ export default {
   slug: 'best-treadmills-for-running',
   title: 'Best Treadmills for Running (2026): Deck Length First, Motor Second',
   description:
-    'We ran 400 miles across six treadmills at 7-10 mph. Deck length and frame rigidity separated them; motor horsepower, the spec everyone shops on, barely mattered.',
+    'We compared six running treadmills on deck length, frame mass, motor rating and warranty. Deck length and frame rigidity separate them; motor horsepower, the spec everyone shops on, barely matters.',
   crumbLabel: 'Best Treadmills for Running',
   kicker: "Buyer's Guide",
   updated: 'September 2026',
@@ -11,7 +11,7 @@ export default {
   socialProof: '4.2k',
   h1: ['Best Treadmills for', 'Running'],
   standfirst:
-    'Six machines, 400 miles, every run logged at 7 mph or faster. The ranking is decided by deck length and frame rigidity — not by the horsepower figure on the box.',
+    'Six machines, compared on the specifications that matter at 7 mph and faster. The ranking is decided by deck length and frame rigidity — not by the horsepower figure on the box.',
   ctas: [
     { label: 'See the Top Pick', href: '#nordictrack-commercial-1750' },
     { label: 'The Runner’s Four Specs', href: '#criteria' },
@@ -26,7 +26,9 @@ export default {
           ratings and weight capacities are the manufacturers' published figures, and price
           bands are typical street prices rather than live pricing. Specifications change
           between model years without the product name changing, so confirm the deck length and
-          motor rating against the exact unit you are buying before you order.`,
+          motor rating against the exact unit you are buying before you order. We have not
+          tested these machines: the judgements below come from those published figures and from
+          what the specifications imply for a runner. None of them are our own measurements.`,
   sections: [
     {
       id: 'why-running-differs',
@@ -93,33 +95,35 @@ export default {
             An over-cushioned deck absorbs the elastic return your calves and Achilles are meant
             to get back from each footfall, which makes long runs feel like running on sand and
             trains a gait that does not transfer outdoors. What you want is firm with controlled
-            give — closer to a good road shoe than to a mattress. Every machine here was assessed
-            on that basis rather than on how soft it felt in the first minute.
+            give — closer to a good road shoe than to a mattress. Every machine here was judged
+            on that basis, from its published deck construction and frame mass, rather
+            than on how soft it is said to feel in the first minute.
           </p>`,
     },
     {
       id: 'how-we-tested',
-      heading: 'How We Tested',
+      heading: 'How We Chose',
       html: `          <p>
-            Each machine covered a minimum of 60 miles over at least six weeks, with every
-            session logged at 7 mph or faster. The protocol included steady runs of 30 to 60
-            minutes, interval sessions at 9 to 10 mph, and at least two runs over 70 minutes,
-            because the problems that matter to runners — deck feel degrading, belt drift under
-            sustained load, motor heat — show up late rather than early.
+            We have not run on these machines, and nothing on this page should be read as if we
+            had. Each one was chosen and ranked from the manufacturer's published specifications,
+            its warranty terms and what those figures imply for a runner, with the weight on the problems that matter to runners — deck feel degrading, belt drift
+            under sustained load, motor heat — because those show up late in ownership rather
+            than in a showroom.
           </p>
           <p>
-            We measured usable deck length rather than quoting the published belt figure, taking
-            the distance from the front roller housing to the point where the rear roller becomes
-            a hazard. That number is consistently shorter than the marketing figure, sometimes by
-            two inches. We also logged belt drift by marking the belt edge and checking alignment
-            after every ten miles, and recorded sound pressure beside the deck at a steady 8 mph.
+            Published belt length is not the same as usable deck length. The front roller
+            housing and the curve onto the rear roller both take some of the quoted figure, so
+            the surface you can actually run on is shorter than the marketing number. That is why
+            we treat 60 inches as the working minimum rather than a comfortable margin, and why
+            we give real weight to assembled machine mass as the most reliable available proxy
+            for frame rigidity, which is not something manufacturers publish.
           </p>
           <p>
-            Two testers ran every machine: one at 5'7" and 145 lbs, one at 6'2" and 205 lbs. That
-            spread matters, because several machines that were entirely adequate for the first
-            tester were not for the second, and a single-tester review would have missed it. Our
-            full <a href="/treadmill-reviews-2026/" class="text-[#0F62FE] font-medium">testing methodology</a>
-            covers the standard protocol every machine completes first.
+            Runner size matters as much as the machine. A lighter runner and a taller, heavier
+            one can reach opposite verdicts on the same treadmill, so where a machine's deck or
+            frame makes it better suited to one than the other, its entry says so. Our
+            full <a href="/treadmill-reviews-2026/" class="text-[#0F62FE] font-medium">review methodology</a>
+            explains how we assess machines from published data.
           </p>`,
     },
     {
@@ -135,10 +139,10 @@ export default {
       id: 'tall-runners',
       heading: 'If You Are Over Six Feet',
       html: `          <p>
-            Height changes the shortlist more than any other personal variable. At 6'2" our
-            second tester was compromised on every 55-inch deck and comfortable on every
-            60-inch one, and that line was clean — there was no machine where a short deck was
-            redeemed by something else.
+            Height changes the shortlist more than any other personal variable. The stride
+            arithmetic is unforgiving: at 6'2" and above, a 55-inch deck leaves almost no margin
+            behind the foot at running pace and a 60-inch one does, and that line is clean —
+            there is no other specification that redeems a short deck.
           </p>
           <p>
             Above roughly 6'3", start looking at the 22-inch-wide, 60-inch decks specifically,
@@ -163,9 +167,9 @@ export default {
           </p>
           <p>
             The practical target is a deck that gives measurably under load and returns quickly —
-            firm, not soft. All six machines here cleared that bar; the two commercial-grade
-            options did it best, which is unsurprising given they are built for people running
-            all day.
+            firm, not soft. All six machines here are built around running decks rather than
+            soft walking ones; the two commercial-grade options are the strongest on paper,
+            which is unsurprising given they are built for people running all day.
           </p>
           <p>
             If you are training for a road race, there is a second argument for a firmer deck:
@@ -234,10 +238,10 @@ export default {
       priceRange: '$1,799-$2,299',
       specs: '60 x 22 in. deck · 3.5 CHP · -3% to 12% · 300 lb capacity',
       pros: [
-        'Full 60 x 22-inch deck — no stride compromise for either tester',
-        'Frame stayed planted through 10 mph intervals with no perceptible flex',
+        'Full 60 x 22-inch deck — room for a full stride, even for tall runners',
+        'Frame mass of the kind that stays planted at interval pace',
         'Decline to -3% is genuinely useful for downhill race preparation',
-        'Cushioning is firm with quick return rather than soft and absorbent',
+        'A heavy running deck, the type built firm rather than soft and absorbent',
       ],
       cons: [
         'The console is built around a subscription you will be prompted toward constantly',
@@ -246,7 +250,7 @@ export default {
       bottomLine:
         'The best combination of deck, frame and price for a serious home runner — provided you are content to ignore the subscription prompts.',
       description:
-        'This is the machine we kept choosing for the hard sessions. The 60 x 22-inch deck gave our 6\'2" tester full stride at 9 mph without the rear-roller anxiety that shortens gait on smaller decks, and the frame is heavy enough that interval work produces no detectable movement. Cushioning is the character we look for — firm, with a quick elastic return, so an hour-long run does not leave your calves feeling like they have been working through sand. Decline is a real bonus rather than a spec-sheet line if you race anything with descent in it. The reservation is the console: the hardware is excellent and the software is relentlessly oriented toward a subscription, and while you can run without one, you will be reminded that you are not paying. Judged purely as a running machine, nothing else here matches it at the price.',
+        'This is the machine we would choose for the hard sessions. The 60 x 22-inch deck leaves room for a tall runner\'s full stride at 9 mph without the rear-roller anxiety that shortens gait on smaller decks, and at roughly 340 lbs assembled the frame has the mass that keeps interval work steady. What we look for in cushioning is firm, with a quick elastic return, so an hour-long run does not leave your calves feeling like they have been working through sand, and that is the profile a heavy running deck like this one is built for. Decline is a real bonus rather than a spec-sheet line if you race anything with descent in it. The reservation is the console: the hardware is excellent and the software is relentlessly oriented toward a subscription, and while you can run without one, you will be reminded that you are not paying. Judged purely as a running machine, nothing else here matches it at the price.',
     },
     {
       id: 'sole-f65',
@@ -259,7 +263,7 @@ export default {
       pros: [
         'Runs fully without an account, an app or a recurring fee',
         'Full 60-inch deck at a price where 55 inches is the norm',
-        '325 lb capacity and a frame that feels heavier than the price suggests',
+        '325 lb capacity and a frame built heavier than the price suggests',
         'Console is plain, immediate, and never asks for anything',
       ],
       cons: [
@@ -269,7 +273,7 @@ export default {
       bottomLine:
         'The runner\'s machine for people who want to buy hardware rather than join an ecosystem — and the one we recommend most often.',
       description:
-        'Sole builds treadmills the way they were built before screens, and for a certain kind of runner that is exactly the appeal. You press start and it runs. There is no account, no pairing, no trial, and no annual fee waiting in year two. The 60-inch deck is the important part: at this price most competitors ship 55 inches, and that difference is the whole reason this machine is on the list. The frame is heavier than the price band suggests and stayed steady through interval work with our heavier tester. Two honest limitations: the belt is 20 inches rather than 22, which our 6\'2" tester noticed on runs past the hour mark as his foot placement started to wander, and there is no decline. Neither is disqualifying, and for the money this is the most straightforward running machine here.',
+        'Sole builds treadmills the way they were built before screens, and for a certain kind of runner that is exactly the appeal. You press start and it runs. There is no account, no pairing, no trial, and no annual fee waiting in year two. The 60-inch deck is the important part: at this price most competitors ship 55 inches, and that difference is the whole reason this machine is on the list. The frame is heavier than the price band suggests, and mass is what keeps a machine steady through interval work under a heavier runner. Two honest limitations: the belt is 20 inches rather than 22, which tall runners are likely to notice on runs past the hour mark as fatigue makes foot placement wander, and there is no decline. Neither is disqualifying, and for the money this is the most straightforward running machine here.',
     },
     {
       id: 'proform-pro-2000',
@@ -283,16 +287,16 @@ export default {
         'A genuine 60-inch deck for well under $1,200',
         'Decline included at a price where it is normally absent',
         'Folds, which none of the heavier machines here do',
-        'Motor held 8 mph steadily for our lighter tester across 60 miles',
+        '3.0 CHP motor is enough to hold a steady 8 mph for a lighter runner',
       ],
       cons: [
         'Lighter frame moves perceptibly under a heavier runner at interval pace',
-        'Cushioning softened measurably over the test period',
+        'A lighter deck is more likely to soften with mileage than the heavier machines',
       ],
       bottomLine:
         'The cheapest way to get the specification that matters most. Best suited to runners under roughly 180 lbs.',
       description:
-        'The Pro 2000 exists to answer one question: what is the least you can spend and still get a 60-inch deck? The answer is around a thousand dollars, and this is the machine. For our 5\'7", 145 lb tester it was entirely adequate across 60 miles, holding 8 mph without complaint and folding away between sessions, which nothing else on this list does. Under our heavier tester the compromise appeared: at 9 mph and above there is detectable frame movement, not alarming but present, and it is the kind of thing that becomes tiring on a long run. Cushioning also softened noticeably by the end of the test in a way the heavier machines did not. Buy it if you are a lighter runner on a firm budget, and understand that the frame is where the money was saved.',
+        'The Pro 2000 exists to answer one question: what is the least you can spend and still get a 60-inch deck? The answer is around a thousand dollars, and this is the machine. For a lighter runner it should be entirely adequate, with a 3.0 CHP motor that is enough to hold 8 mph and a frame that folds away between sessions, which nothing else on this list does. For a heavier runner the compromise is the frame: a lighter, folding chassis is the kind that moves perceptibly at 9 mph and above, not alarmingly but enough to become tiring on a long run. A lighter deck is also more likely to soften with mileage than those on the heavier machines. Buy it if you are a lighter runner on a firm budget, and understand that the frame is where the money was saved.',
     },
     {
       id: 'nordictrack-commercial-2450',
@@ -303,10 +307,10 @@ export default {
       priceRange: '$2,299-$2,799',
       specs: '60 x 22 in. deck · 3.6 CHP · -3% to 12% · 300 lb capacity',
       pros: [
-        'Motor holds pace on sustained steep incline better than anything below it here',
+        'Largest motor rating of the NordicTracks here, which is what sustained steep incline asks for',
         'Same 60 x 22-inch deck as the 1750 with more frame behind it',
-        'Noticeably quieter at 8 mph than the 1750 despite the larger motor',
-        'Incline changes are fast enough for structured hill intervals',
+        'Same -3% to 12% range as the 1750, with more motor behind it',
+        'Built for incline changes quick enough for structured hill intervals',
       ],
       cons: [
         'The upgrade over the 1750 is marginal unless you specifically train hills',
@@ -315,7 +319,7 @@ export default {
       bottomLine:
         'Worth the premium over the 1750 only if sustained incline work is a real part of your training rather than an occasional session.',
       description:
-        'The 2450 is the 1750 with more motor and more frame, and whether that is worth several hundred dollars depends entirely on whether you run hills. On flat running the two are close to indistinguishable, and we would not tell anyone to spend the difference. On sustained incline — 8% and above, held for ten minutes or more — the 2450 keeps its pace where the 1750 audibly works harder, and incline transitions happen fast enough to run structured hill intervals rather than approximations of them. It is also quieter at speed, which is counter-intuitive for a larger motor and comes down to better isolation. The console reservation is identical to the 1750\'s. If hills are a genuine part of your training, this is the machine; if they are not, buy the 1750 and keep the money.',
+        'The 2450 is the 1750 with more motor and more frame, and whether that is worth several hundred dollars depends entirely on whether you run hills. On flat running the two are close to identical on paper, and we would not tell anyone to spend the difference. On sustained incline — 8% and above, held for ten minutes or more — the larger motor and heavier frame are what keep pace steady, and that is exactly the load where the 1750 has less in reserve. The console reservation is identical to the 1750\'s. If hills are a genuine part of your training, this is the machine; if they are not, buy the 1750 and keep the money.',
     },
     {
       id: 'life-fitness-t3',
@@ -326,9 +330,9 @@ export default {
       priceRange: '$3,199-$3,999',
       specs: '60 x 22 in. deck · commercial AC motor · 0-15% · 400 lb capacity',
       pros: [
-        'Frame does not move at any speed we could run on it',
+        'Commercial frame built not to move at any pace a home runner can hold',
         'Commercial AC motor is a genuinely different class of component',
-        'Deck feel stayed identical from mile one to mile sixty',
+        'Commercial deck built to keep its feel over years of mileage',
         '400 lb capacity and warranty terms written for real daily use',
       ],
       cons: [
@@ -338,7 +342,7 @@ export default {
       bottomLine:
         'The machine to buy if you are running high mileage for a decade rather than training for one race. Overkill for anyone else, and honestly so.',
       description:
-        'This is what the money buys: nothing changes. The deck felt the same at mile sixty as at mile one, the frame is simply immovable, and the AC motor runs without the heat build-up that DC motors develop on long sessions. Life Fitness builds for gyms where machines run eight hours a day, and a home user running an hour a day is operating far inside the design envelope — which is exactly why these machines last. The honest counterpoint is that most home runners will not perceive the difference between this and the Commercial 1750 on any single run. What they would perceive is the difference in year seven. If you run 40 miles a week and intend to keep doing so, the arithmetic works. If you run 15, buy the NordicTrack and spend the difference on shoes.',
+        'This is what the money buys: nothing changes. A commercial deck is built to feel the same in year five as on day one, a frame of this mass is effectively immovable, and an AC motor is designed to run without the heat build-up that DC motors develop on long sessions. Life Fitness builds for gyms where machines run eight hours a day, and a home user running an hour a day is operating far inside the design envelope — which is exactly why these machines last. The honest counterpoint is that most home runners will not perceive the difference between this and the Commercial 1750 on any single run. What they would perceive is the difference in year seven. If you run 40 miles a week and intend to keep doing so, the arithmetic works. If you run 15, buy the NordicTrack and spend the difference on shoes.',
     },
     {
       id: 'matrix-t7xe',
@@ -349,9 +353,9 @@ export default {
       priceRange: '$3,499-$4,299',
       specs: '60 x 22 in. deck · commercial motor · 0-15% · 400 lb capacity',
       pros: [
-        'Deck cushioning is the best-judged on this list — firm with genuine return',
-        'Console is high-contrast and readable at pace without squinting',
-        'Belt tracking did not need a single adjustment across the whole test',
+        'Commercial deck of the firm, responsive type runners want',
+        'High-contrast console designed to be readable at pace',
+        'Commercial build tolerances, which is what keeps belt tracking true',
         'Gym-grade frame and warranty terms',
       ],
       cons: [
@@ -359,9 +363,9 @@ export default {
         'Touchscreen adds menus a runner mid-interval does not want',
       ],
       bottomLine:
-        'A genuine commercial machine with the best deck feel on this page — cross-shop it directly against the Life Fitness T3 on price and support.',
+        'A genuine commercial machine with a gym-grade deck — cross-shop it directly against the Life Fitness T3 on price and support.',
       description:
-        'Matrix builds for the same commercial market Life Fitness does, and the T7xe is a straight alternative to the T3 rather than a step above or below it. Its deck is the best-judged surface on this page: firm enough to feel like running rather than wading, with enough give that an hour on it is comfortable, and it did not change character across the test. Belt tracking was flawless — the only machine here that needed no adjustment at all over 60 miles, which says something about build tolerances. Against it: the touchscreen introduces menus, and mid-interval the last thing you want is to navigate anything. It is also the most expensive machine here without being the best running machine here. Choose between this and the T3 on price, delivery and local service support, because on running quality they are level.',
+        'Matrix builds for the same commercial market Life Fitness does, and the T7xe is a straight alternative to the T3 rather than a step above or below it. Its deck is a commercial running deck, the type built to be firm enough to feel like running rather than wading, with enough give that an hour on it should be comfortable, and to keep that character for years. Commercial build tolerances are also what keep belt tracking true over high mileage. Against it: the touchscreen introduces menus, and mid-interval the last thing you want is to navigate anything. It is also the most expensive machine here without being the best running machine here. Choose between this and the T3 on price, delivery and local service support, because on running quality they are level.',
     },
   ],
   faqs: [

@@ -1,6 +1,6 @@
 export default {
   slug: 'weslo-cadence-g-5-9-treadmill',
-  title: 'Weslo Cadence G 5.9 Treadmill Review (2026): Discontinued, and What to Do Now',
+  title: 'Weslo Cadence G 5.9 Review (2026): Discontinued, What Now',
   description:
     'For years the best-selling budget treadmill in America, and now discontinued. What the Cadence G 5.9 actually was, what it is worth used, and what to buy instead.',
   crumbLabel: 'Weslo Cadence G 5.9',

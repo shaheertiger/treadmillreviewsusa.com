@@ -17,6 +17,7 @@ const PRODUCTS = [
     amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $2,800–$3,500",
+    priceBounds: {"low":2800,"high":3500},
     specs: "22 x 60 in. deck · -6% to 40% incline · 0-12 mph · 400 lb capacity · non-folding",
     pros: [
       "A 40% maximum incline, about 21.8 degrees, the steepest grade we could confirm on a current home treadmill",
@@ -41,6 +42,7 @@ const PRODUCTS = [
     amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $3,000–$4,000",
+    priceBounds: {"low":3000,"high":4000},
     specs: "22 x 60 in. deck · -6% to 40% incline · 0-12 mph · 24 in. pivoting touchscreen · 400 lb capacity · non-folding",
     pros: [
       "The same -6% to 40% range as the X16, the highest grade we could confirm",
@@ -65,6 +67,7 @@ const PRODUCTS = [
     amazonLabel: "Shop Similar on Amazon",
     reviewUrl: null,
     priceRange: "From about $10,300",
+    priceBounds: {"low":10300,"high":10300},
     specs: "22 x 60 in. running surface · -3% to 30% incline · 400 lb capacity · non-folding · dedicated 20-amp circuit",
     pros: [
       "A 30% maximum incline, about 16.7 degrees, on a gym-grade frame",
@@ -89,6 +92,7 @@ const PRODUCTS = [
     amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $1,900–$2,000",
+    priceBounds: {"low":1900,"high":2000},
     specs: "22 x 60 in. deck · 0-15% incline · 0.5-12 mph · 375 lb capacity · folding",
     pros: [
       "Incline to 15% and a 12 mph top speed with no platform subscription needed",
@@ -113,6 +117,7 @@ const PRODUCTS = [
     amazonLabel: "Check Price on Amazon",
     reviewUrl: "/horizon-7-0-at-treadmill/",
     priceRange: "Around $930–$1,100",
+    priceBounds: {"low":930,"high":1100},
     specs: "20 x 60 in. deck · 0-15% incline · 0.5-12 mph · 325 lb capacity · folding",
     pros: [
       "15% incline and 12 mph for around $1,000",
@@ -137,6 +142,7 @@ const PRODUCTS = [
     amazonLabel: "Check Price on Amazon",
     reviewUrl: "/bowflex-t6-treadmill/",
     priceRange: "Around $900–$1,300",
+    priceBounds: {"low":900,"high":1300},
     specs: "20 x 60 in. deck · 0-15% incline · 0.5-12 mph · 325 lb capacity · folding",
     pros: [
       "Motorised incline to 15% at about $900 on Bowflex’s own store when we checked",
@@ -222,7 +228,7 @@ const schema = {
       "@type": "Article",
       headline: title,
       description: description,
-      author: { "@type": "Person", name: "Morgan Reyes" },
+      author: { "@type": "Person", name: "Shaheer Ali Khan", url: "https://www.linkedin.com/in/shaheer-ali-khan-data/", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], jobTitle: "Author and lab tester", worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: "2026-10-14",
       dateModified: "2026-10-14",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
@@ -232,12 +238,29 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
-      offers: {
-        "@type": "AggregateOffer",
-        priceCurrency: "USD",
-        availability: "https://schema.org/InStock",
-      },
+      ...(product.priceBounds
+        ? {
+            offers: {
+              "@type": "AggregateOffer",
+              priceCurrency: "USD",
+              lowPrice: product.priceBounds.low,
+              highPrice: product.priceBounds.high,
+              url: product.amazonUrl,
+            },
+          }
+        : {}),
     })),
+    {
+      "@type": "ItemList",
+      name: title,
+      numberOfItems: 6,
+      itemListElement: PRODUCTS.map((product, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: product.name,
+        url: `https://www.treadmillreviewsusa.com/treadmills-with-the-highest-incline/#${product.id}`,
+      })),
+    },
   ],
 };
 ---
@@ -249,7 +272,7 @@ const schema = {
   article={{
     publishedTime: "2026-10-14",
     modifiedTime: "2026-10-14",
-    author: "Morgan Reyes",
+    author: "Shaheer Ali Khan",
     section: "Fitness Equipment",
     tags: [
       "treadmill with the highest incline",
@@ -305,10 +328,10 @@ const schema = {
     <!-- Author & Meta -->
     <div class="max-w-3xl mx-auto px-4 pt-12">
       <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan" width="48" height="48" class="w-12 h-12 rounded-full" />
         <div>
-          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
-          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+          <p class="font-bold text-gray-900 leading-tight"><a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="author noopener" target="_blank" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan</a></p>
+          <p class="text-gray-500 text-sm leading-tight">Author and lab tester</p>
         </div>
         <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
         <p class="text-gray-500 text-sm">
@@ -340,6 +363,39 @@ const schema = {
       </div>
     </div>
 
+
+    <div class="max-w-3xl mx-auto px-4 pt-8">
+      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
+        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
+        <ul class="list-none m-0 p-0">
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
+            <a href="#nordictrack-x16" class="font-bold text-gray-900 no-underline hover:underline">NordicTrack X16</a>
+            <a href="#nordictrack-x16" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Premium Pick:</span>
+            <a href="#nordictrack-x24" class="font-bold text-gray-900 no-underline hover:underline">NordicTrack X24</a>
+            <a href="#nordictrack-x24" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Commercial Pick:</span>
+            <a href="#true-alpine-runner" class="font-bold text-gray-900 no-underline hover:underline">TRUE Alpine Runner</a>
+            <a href="#true-alpine-runner" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best 15% Incline:</span>
+            <a href="#horizon-7-8-at" class="font-bold text-gray-900 no-underline hover:underline">Horizon 7.8 AT</a>
+            <a href="#horizon-7-8-at" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Value:</span>
+            <a href="#horizon-7-0-at" class="font-bold text-gray-900 no-underline hover:underline">Horizon 7.0 AT</a>
+            <a href="#horizon-7-0-at" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div class="max-w-3xl mx-auto px-4 py-10">
       <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
         <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
@@ -449,9 +505,9 @@ const schema = {
               <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
                 <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
                   <div>
-                    <p class="text-white font-black text-xl leading-tight">
+                    <h3 class="text-white font-black text-xl leading-tight m-0">
                       {index + 1}. {product.name}
-                    </p>
+                    </h3>
                     <p class="text-gray-400 text-xs">{product.category}</p>
                   </div>
                   <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
@@ -467,7 +523,7 @@ const schema = {
                   <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
                   <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                     <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <p class="text-xs font-black uppercase tracking-widest text-green-700 mb-2">What Works</p>
+                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
                       <ul class="space-y-2">
                         {product.pros.map((pro) => (
                           <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
@@ -475,7 +531,7 @@ const schema = {
                       </ul>
                     </div>
                     <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <p class="text-xs font-black uppercase tracking-widest text-red-700 mb-2">What Doesn't</p>
+                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
                       <ul class="space-y-2">
                         {product.cons.map((con) => (
                           <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
@@ -845,6 +901,22 @@ const schema = {
             and <strong class="text-white">Bowflex T6</strong> do it for around $1,000 or less.
           </p>
         </div>
+
+        <!-- Meet the Author -->
+        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
+          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
+          <div>
+            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
+            <p class="text-sm text-gray-700 leading-relaxed m-0">
+              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="author noopener" target="_blank" class="font-bold text-gray-900">Shaheer Ali Khan</a>
+              writes and lab-tests for Treadmill Reviews USA. Every guide says what was checked, against
+              which sources and on what date, and says plainly when a product has not been tested
+              hands-on. Read our
+              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">editorial standards</a>.
+            </p>
+          </div>
+        </div>
+
       </div>
     </div>
   </article>

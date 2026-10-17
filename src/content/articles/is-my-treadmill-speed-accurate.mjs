@@ -1,6 +1,6 @@
 export default {
   slug: 'is-my-treadmill-speed-accurate',
-  title: 'Is My Treadmill Speed Accurate? (2026): How to Check Speed and Distance Yourself',
+  title: 'Is My Treadmill Speed Accurate? (2026): How to Check It',
   description:
     'Is your treadmill speed accurate? How the console measures speed, why it drifts, and a simple belt-count test with worked arithmetic to check speed and distance at home.',
   crumbLabel: 'Is My Treadmill Speed Accurate?',

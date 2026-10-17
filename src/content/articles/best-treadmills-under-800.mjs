@@ -2,7 +2,7 @@ export default {
   slug: 'best-treadmills-under-800',
   title: 'Best Treadmills Under $800 (2026): The First Tier Worth Buying',
   description:
-    'Under $800 is where treadmills stop being appliances and start being equipment — 55-inch decks, 2.5 CHP motors and warranties in years. We tested six at this price.',
+    'Under $800 is where treadmills stop being appliances and start being equipment — 55-inch decks, 2.5 CHP motors and warranties in years. We compared six at this price on their published specifications.',
   crumbLabel: 'Best Treadmills Under $800',
   kicker: "Buyer's Guide",
   updated: 'September 2026',
@@ -25,7 +25,9 @@ export default {
           move constantly — machines listed at $899 sell at $699 several times a year, which is
           why some picks here carry a higher list price. The bands given are typical selling
           prices rather than list, and the section on buying at the right time of year explains
-          when the reductions actually happen.`,
+          when the reductions actually happen. We have not tested these machines: the
+          specifications are the manufacturers' published figures, and judgements on how they run
+          come from what those figures imply, not from our own measurements.`,
   sections: [
     {
       id: 'what-changes',
@@ -113,24 +115,27 @@ export default {
     },
     {
       id: 'how-we-tested',
-      heading: 'How We Tested',
+      heading: 'How We Chose',
       html: `          <p>
-            Each machine completed a six-week protocol: four sessions a week, mixing 30 to 45
-            minutes of walking at 3 to 4 mph with two shorter jogging sessions at 5 to 6 mph, using
-            a 175 lb primary tester and a 235 lb secondary tester.
+            We have not tested these machines, and nothing on this page should be read as if we
+            had. They were chosen from the manufacturers' published specifications — deck length,
+            continuous-duty motor rating, incline range and assembled weight — together with
+            warranty terms, which are the manufacturer's own statement of how long it expects
+            the parts to last.
           </p>
           <p>
-            We logged motor housing temperature after 45 minutes of continuous incline walking,
-            belt tracking every ten miles, frame movement at the console at 4 mph and 6 mph
-            separately, assembly time with one person, and fold time where applicable.
+            Assembled weight carried the most weight in the ranking. Every machine here should be
+            composed at walking speed; the spread appears at jogging pace, and because frame flex
+            is not something manufacturers publish, assembled weight is the most reliable proxy for
+            it. That is the specification we would point anyone at when choosing between two
+            machines at this price.
           </p>
           <p>
-            The 6 mph frame-movement measurement was the most useful separator in this group.
-            Every machine here is composed at walking speed; the spread at jogging pace was
-            substantial, and it tracked assembled weight almost exactly. That is the specification
-            we would point anyone at when choosing between two machines at this price. Our
+            Where something matters that a specification sheet cannot show — how manageable
+            assembly is likely to be, whether a fold will stay easy to use — the entry reasons
+            from the machine's weight and fold type rather than claiming a result. Our
             <a href="/treadmill-reviews-2026/" class="text-[#0F62FE] font-medium">standard methodology</a>
-            covers the full protocol each machine completed first.
+            explains how we assess machines from published data.
           </p>`,
     },
     {
@@ -269,14 +274,14 @@ export default {
             of what most buyers expect.
           </p>
           <p>
-            The practical answer is a mat rather than a different machine. In our testing across
-            price bands, a three-quarter-inch rubber mat reduced the level measured downstairs by
-            more than the entire spread between the quietest and loudest machine without one. At
+            The practical answer is a mat rather than a different machine. Across price bands, a
+            three-quarter-inch rubber mat typically does more to cut what is heard downstairs than
+            choosing between the quietest and the loudest machine would. At
             this price, where every machine is relatively light, that makes the mat close to
             mandatory rather than optional if anyone lives below you. Walking rather than jogging
             roughly halves the impact energy at source as well. Our
             <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmill guide</a>
-            has the measurements, and the
+            covers the acoustics, and the
             <a href="/best-treadmills-for-apartments/" class="text-[#0F62FE] font-medium">apartment guide</a>
             covers placement.
           </p>`,
@@ -285,8 +290,8 @@ export default {
       id: 'verdict',
       heading: 'Final Recommendations',
       html: `          <p>
-            The <strong>NordicTrack C 700</strong> is our pick at this price: the fastest assembly
-            here, a low step-up, a simple console and a frame composed enough at walking pace to
+            The <strong>NordicTrack C 700</strong> is our pick at this price: an assisted fold,
+            a low step-up, a simple console and a frame composed enough at walking pace to
             build confidence. It is a walking and light-jogging machine and it is honest about
             that.
           </p>
@@ -314,19 +319,19 @@ export default {
       priceRange: '$599-$799',
       specs: '55 in. deck · 2.75 CHP · 0-10% incline · ~190 lbs assembled · assisted fold',
       pros: [
-        'Fastest assembly here — about an hour with one person',
+        'Assisted fold that makes daily storage practical',
         'Low step-up height makes getting on genuinely easy',
         'Simple console with almost nothing to navigate',
-        'Composed at walking pace with no perceptible frame movement',
+        'Enough frame mass to stay composed at walking pace',
       ],
       cons: [
-        'Frame moves noticeably at 6 mph — jogging is possible, not comfortable',
+        'A 190 lb frame is likely to move at 6 mph — jogging is possible, not comfortable',
         'Console is close to bare without an iFit subscription',
       ],
       bottomLine:
         'The most complete package that consistently lists under $800. A genuinely good walking machine that will take light jogging.',
       description:
-        'This is the machine that lists in this band rather than falling into it, and it does the job the band is for. Assembly was the fastest here at around an hour with one person, which matters more than it sounds — a treadmill that is difficult to build often sits boxed for a fortnight, and that fortnight is when initial motivation is spent. The step-up is among the lowest at any price, useful every single session and particularly in a cramped room. At walking pace the frame is completely composed. Push to 6 mph and the movement appears, which is the honest limit of a 190 lb machine and the reason we describe it as light-jogging capable rather than jogging capable. The console is bare without a subscription, though manual speed and incline both work indefinitely. For a walker, this is the right buy at this price.',
+        'This is the machine that lists in this band rather than falling into it, and it does the job the band is for. Ease of assembly matters more than it sounds — a treadmill that is difficult to build often sits boxed for a fortnight, and that fortnight is when initial motivation is spent — and a machine of this weight and simplicity is among the more manageable to build alone. The step-up is among the lowest at any price, useful every single session and particularly in a cramped room. At walking pace a frame of this mass should be composed. Push to 6 mph and movement is likely to appear, which is the honest limit of a 190 lb machine and the reason we describe it as light-jogging capable rather than jogging capable. The console is bare without a subscription, though manual speed and incline both work indefinitely. For a walker, this is the right buy at this price.',
     },
     {
       id: 'sole-f63',
@@ -337,19 +342,19 @@ export default {
       priceRange: '$899-$1,099 (falls to ~$749)',
       specs: '20 x 60 in. deck · 3.0 HP · 0-15% incline · ~250 lbs assembled · hydraulic fold',
       pros: [
-        'Heaviest frame at this price when discounted — steady even at 6 mph',
-        'Hydraulic fold takes 30 seconds with one person',
+        'Heaviest frame at this price when discounted — the mass to stay steady at 6 mph',
+        'Hydraulic fold that one person can manage',
         'No subscription, no account, no prompts, ever',
         'Best warranty terms of anything that reaches this band',
       ],
       cons: [
         'Only in this price band during sales — list price is higher',
-        'Assembly takes over an hour and is easier with two people',
+        'Assembly is a long job and easier with two people',
       ],
       bottomLine:
         'A materially better machine than anything that lists here. Watch for the discount and buy it the moment it appears.',
       description:
-        'This machine lists above the band and falls into it several times a year, and when it does it is the obvious choice. The frame is around 250 lbs against the 190 of our top pick, and that difference is directly measurable: it was the only machine here with no perceptible movement at 6 mph, which is what separates a light-jogging machine from a jogging one. The hydraulic fold is effortless and, in our six-week test, was still being used after every session where heavier manual folds had quietly stopped. There is no subscription and no account, so its five-year cost equals its purchase price. Warranty terms are the strongest of anything reaching this band. The only real objection is availability at the price — which is an argument for watching rather than for buying something else. Set an alert and wait for it.',
+        'This machine lists above the band and falls into it several times a year, and when it does it is the obvious choice. The frame is around 250 lbs against the 190 of our top pick, and that difference matters: it is the only new machine here with the frame mass to stay steady at 6 mph, which is what separates a light-jogging machine from a jogging one. The hydraulic fold matters too: a fold that takes no effort is one that keeps being used, where a heavy manual latch tends to be abandoned. There is no subscription and no account, so its five-year cost equals its purchase price. Warranty terms are the strongest of anything reaching this band. The only real objection is availability at the price — which is an argument for watching rather than for buying something else. Set an alert and wait for it.',
     },
     {
       id: 'proform-power-995i',
@@ -372,7 +377,7 @@ export default {
       bottomLine:
         'The right pick when floor space is the binding constraint. Accept that the light frame is the trade.',
       description:
-        'If the room is the problem rather than the budget, this is the machine at this price. It has the smallest folded footprint here, folds quickly with an assist, and at around 180 lbs one person can reposition it without ceremony — which in a shared room matters as much as the folded dimensions do. Incline reaches 12%, the highest here outside the Sole, and incline is the most useful training tool for anyone wanting to raise effort without raising impact. The cost of all that portability is exactly what you would expect: it recorded the most frame movement at 6 mph of anything in this group, and the 235 lb tester noticed it at 4 mph too. It also prompts about the subscription during normal use, though manual control works without paying. Good machine, clear trade.',
+        'If the room is the problem rather than the budget, this is the machine at this price. It has the smallest folded footprint here, folds quickly with an assist, and at around 180 lbs one person can reposition it without ceremony — which in a shared room matters as much as the folded dimensions do. Incline reaches 12%, the highest here outside the Sole, and incline is the most useful training tool for anyone wanting to raise effort without raising impact. The cost of all that portability is exactly what you would expect: as the lightest frame here it is the most likely to move at 6 mph, and a heavier user may notice it at walking pace too. It also prompts about the subscription during normal use, though manual control works without paying. Good machine, clear trade.',
     },
     {
       id: 'proform-pro-2000',
@@ -390,12 +395,12 @@ export default {
       ],
       cons: [
         'Rarely available under $800 — needs a real sale',
-        'Cushioning softened measurably across our test period',
+        'Lighter deck is more likely to soften with mileage than heavier machines',
       ],
       bottomLine:
         'The only route to a 60-inch running deck near this price. Worth waiting for if running is the plan.',
       description:
-        'This is the machine to watch if you intend to run, because it is the only one that ever appears near $800 with a genuine 60-inch deck — the specification that separates jogging from running and the one that no amount of motor compensates for. It also folds, which almost nothing with a deck this long does, and it includes decline, which is rare at anything close to this money. Our lighter tester ran it at 8 mph across 40 miles without the motor complaining. Two caveats. It needs a real sale to fall into this band, so this is a watch-and-wait recommendation rather than a buy-today one. And the cushioning softened noticeably over six weeks in a way the heavier machines did not, which is where the money was saved. For a lighter runner on a firm budget, still the best deck available at this price.',
+        'This is the machine to watch if you intend to run, because it is the only one that ever appears near $800 with a genuine 60-inch deck — the specification that separates jogging from running and the one that no amount of motor compensates for. It also folds, which almost nothing with a deck this long does, and it includes decline, which is rare at anything close to this money. Its 3.0 CHP motor is enough for a lighter runner at 8 mph. Two caveats. It needs a real sale to fall into this band, so this is a watch-and-wait recommendation rather than a buy-today one. And its lighter deck is more likely to soften with mileage than those on heavier machines, which is where the money was saved. For a lighter runner on a firm budget, still the best deck available at this price.',
     },
     {
       id: 'horizon-t101',
@@ -418,7 +423,7 @@ export default {
       bottomLine:
         'The straightforward choice for someone who wants to press start and walk, with a fold that will actually get used.',
       description:
-        'Horizon occupies a useful position in this band: plainly specified machines with no subscription and no ecosystem, sold at prices where competitors are still attaching accounts to things. The T101 is the clearest example. The hydraulic fold is the standout feature at this price — manual latches are the norm here, and in our testing manual folds quietly stop happening by week three while assisted ones do not. The dial-style speed and incline controls are genuinely better than repeatedly pressing a button, particularly mid-session. The console is basic, with few metrics and no history, and the 2.5 CHP motor is the lowest among our picks, so this is a walking machine that will tolerate a jog rather than the reverse. For a buyer who wants no software in their life, it is the cleanest option here.',
+        'Horizon occupies a useful position in this band: plainly specified machines with no subscription and no ecosystem, sold at prices where competitors are still attaching accounts to things. The T101 is the clearest example. The hydraulic fold is the standout feature at this price — manual latches are the norm here, and a manual fold that takes effort tends to stop being used, while an assisted one does not. The dial-style speed and incline controls are genuinely better than repeatedly pressing a button, particularly mid-session. The console is basic, with few metrics and no history, and the 2.5 CHP motor is the lowest among our picks, so this is a walking machine that will tolerate a jog rather than the reverse. For a buyer who wants no software in their life, it is the cleanest option here.',
     },
     {
       id: 'used-mid-range-800',
@@ -455,7 +460,7 @@ export default {
     },
     {
       q: 'Can you jog on a treadmill under $800?',
-      a: `Yes, with caveats. A 55-inch deck accommodates a jogging stride for most people under about 5'10", and the motors here hold 5 to 6 mph without complaint. What varies is frame composure — lighter machines move perceptibly at 6 mph. If you are taller or intend to run rather than jog, you need a 60-inch deck.`,
+      a: `Yes, with caveats. A 55-inch deck accommodates a jogging stride for most people under about 5'10", and the motors here are rated to hold 5 to 6 mph comfortably. What varies is frame composure — lighter machines are likely to move perceptibly at 6 mph. If you are taller or intend to run rather than jog, you need a 60-inch deck.`,
     },
     {
       q: 'Should I spend $1,000 instead of $800?',

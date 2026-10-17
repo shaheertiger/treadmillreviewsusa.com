@@ -78,8 +78,8 @@ export default {
           </p>
           <p>
             <strong>Cushioning.</strong> Budget: basic elastomers that compress permanently. Mid:
-            engineered systems that hold their character for years. Premium: multi-zone decks that
-            do not change measurably at all.
+            engineered systems that hold their character for years. Premium: multi-zone decks built
+            to change very little at all.
           </p>
           <p>
             <strong>Warranty.</strong> Budget: 90 days to a year on parts. Mid: 1-3 years parts,
@@ -141,15 +141,13 @@ export default {
             feels on day one — it is whether it feels the same on day four hundred.
           </p>
           <p>
-            Budget decks use simple elastomer blocks that compress permanently over time. In our
-            testing, cheaper machines measurably softened across six weeks, which sounds pleasant
-            and is not: a deck that has lost its rebound absorbs the elastic energy your lower leg
+            Budget decks use simple elastomer blocks that compress permanently over time. A deck that
+            softens as it ages sounds pleasant and is not: a deck that has lost its rebound absorbs the elastic energy your lower leg
             should get back, so each stride costs more work and you fatigue faster.
           </p>
           <p>
-            Mid-range and premium decks use engineered systems that hold their character. The
-            machines we tested above $1,500 measured the same for deflection and recovery at the
-            end of the test as at the beginning. That consistency is most of what the money buys,
+            Mid-range and premium decks use engineered systems designed to hold their character,
+            keeping the same deflection and recovery over years of use rather than months. That consistency is most of what the money buys,
             and it is invisible in a showroom — which is precisely why it is under-valued by
             buyers and over-marketed as softness.
           </p>`,

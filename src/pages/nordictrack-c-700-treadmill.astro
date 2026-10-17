@@ -5,12 +5,11 @@ import SocialProof from "../components/SocialProof.astro";
 
 const title = "NordicTrack C 700 Treadmill Review (2026): The Budget Entry Point";
 const description =
-  "We tested NordicTrack's cheapest treadmill, the C 700, for three weeks of walking and light jogging. Here's an honest look at what you give up at this price — and what you don't.";
+  "We compared NordicTrack's cheapest treadmill, the C 700, on its published specs, warranty and features. Here's an honest look at what you give up at this price — and what you don't.";
 
 const PRODUCT = {
   name: "NordicTrack C 700",
-  rating: 4.3,
-  reviewCount: 3912,
+  editorialScore: 4.3,
   amazonUrl:
     "https://www.amazon.com/s?k=NordicTrack+folding+treadmill&tag=sktiger-20",
   priceRange: "$599-$799",
@@ -108,7 +107,7 @@ const schema = {
           name: "Can you run on the NordicTrack C 700, or is it just for walking?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "You can jog on it comfortably up to roughly 6 mph, but the 2.75 CHP motor and 20 x 55-inch deck are noticeably undersized for sustained running compared to NordicTrack's Commercial line. We'd call this a walking-and-light-jogging treadmill rather than a running treadmill, and shoppers who run several times a week should budget for a Commercial-tier model instead.",
+            text: "You can jog on it, but the 2.75 CHP motor and 20 x 55-inch deck are undersized for sustained running compared to NordicTrack's Commercial line. We'd call this a walking-and-light-jogging treadmill rather than a running treadmill, and shoppers who run several times a week should budget for a Commercial-tier model instead.",
           },
         },
         {
@@ -132,7 +131,7 @@ const schema = {
           name: "How long does the NordicTrack C 700 last?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Owner reports and our own durability research point to a realistic 5-to-8 year lifespan under regular home walking use, assuming basic belt maintenance is kept up. That's shorter than what we'd expect from the heavier Commercial-series frames, which is a fair trade-off given the price gap.",
+            text: "A realistic expectation is roughly 5 to 8 years under regular home walking use, assuming basic belt maintenance is kept up. That is an estimate based on its motor rating and build class, not a measured figure, and it's shorter than what we'd expect from the heavier Commercial-series frames, which is a fair trade-off given the price gap.",
           },
         },
       ],
@@ -140,7 +139,7 @@ const schema = {
     {
       "@type": "Article",
       headline: title,
-      author: { "@type": "Person", name: "Morgan Reyes" },
+      author: { "@type": "Person", name: "Shaheer Ali Khan", url: "https://www.linkedin.com/in/shaheer-ali-khan-data/", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], jobTitle: "Author and lab tester", worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: "2026-04-22",
       dateModified: "2026-04-22",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
@@ -150,11 +149,6 @@ const schema = {
       name: PRODUCT.name,
       description,
       brand: { "@type": "Brand", name: "NordicTrack" },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: PRODUCT.rating,
-        reviewCount: PRODUCT.reviewCount,
-      },
     },
   ],
 };
@@ -167,7 +161,7 @@ const schema = {
   article={{
     publishedTime: "2026-04-22",
     modifiedTime: "2026-04-22",
-    author: "Morgan Reyes",
+    author: "Shaheer Ali Khan",
     section: "Fitness Equipment",
     tags: [
       "nordictrack c 700",
@@ -205,8 +199,7 @@ const schema = {
           NordicTrack <span class="text-[#5AA9FF]">C 700</span> Review
         </h1>
         <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          We spent three weeks walking and light-jogging on NordicTrack's
-          cheapest current treadmill to answer a simple question: how much do
+          We went through the spec sheet of NordicTrack's cheapest current treadmill to answer a simple question: how much do
           you actually give up when you skip the touchscreen and buy the
           entry point into the lineup instead?
         </p>
@@ -224,10 +217,10 @@ const schema = {
     <!-- Author & Meta -->
     <div class="max-w-3xl mx-auto px-4 pt-12">
       <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan" width="48" height="48" class="w-12 h-12 rounded-full" />
         <div>
-          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
-          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+          <p class="font-bold text-gray-900 leading-tight"><a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="author noopener" target="_blank" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan</a></p>
+          <p class="text-gray-500 text-sm leading-tight">Author and lab tester</p>
         </div>
         <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
         <p class="text-gray-500 text-sm">
@@ -241,18 +234,8 @@ const schema = {
       <!-- Quick Verdict -->
       <div class="not-prose my-10 bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
         <div class="flex items-center justify-between flex-wrap gap-4 mb-4">
-          <div class="flex items-center gap-2">
-            <div class="flex text-yellow-400">
-              {[...Array(5)].map((_, i) => (
-                <svg class={`w-5 h-5 ${i < Math.floor(PRODUCT.rating) ? "fill-current" : "text-gray-200"}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-              ))}
-            </div>
-            <span class="font-bold text-gray-900">{PRODUCT.rating}</span>
-            <span class="text-gray-400 text-sm">({PRODUCT.reviewCount.toLocaleString()} reviews)</span>
-          </div>
           <span class="bg-[#0F62FE]/10 text-[#0F62FE] px-3 py-1 rounded-full text-xs font-bold">Best For: Budget-First Buyers</span>
+          {PRODUCT.editorialScore && (<p class="text-sm text-gray-600 mt-1 mb-0">Our editorial score: <strong class="text-gray-900">{PRODUCT.editorialScore}</strong>/5</p>)}
         </div>
         <p class="text-gray-700 leading-relaxed mb-4">
           The C 700 is the treadmill we'd point toward anyone who wants a
@@ -299,8 +282,7 @@ const schema = {
           touchscreens and iFit trainer-led workouts, so it's easy to forget
           the brand still sells a genuinely no-frills treadmill. The C 700 is
           that machine — the absolute entry point into the NordicTrack range
-          — and after three weeks of daily use, we think it's one of the more
-          honest budget treadmills currently on the market, as long as you
+          — and on paper, we think it's one of the more honest budget treadmills currently on the market, as long as you
           understand exactly what it is and isn't built to do.
         </p>
 
@@ -319,13 +301,7 @@ const schema = {
           even the Commercial 1750.
         </p>
         <p>
-          We tested it specifically against the shopper who's comparing a
-          NordicTrack C 700 against generic no-name treadmills in the same
-          $600-$800 price bracket, and our conclusion is that the NordicTrack
-          badge earns its modest premium here. The frame felt noticeably more
-          planted underfoot than several off-brand machines we've tested at
-          similar prices, and the 10-year frame warranty is longer than what
-          most budget competitors offer. That said, this is not a smaller,
+          We looked at it specifically for the shopper who's comparing a NordicTrack C 700 against generic no-name treadmills in the same $600-$800 price bracket, and our conclusion is that the NordicTrack badge earns its modest premium here. The 10-year frame warranty is longer than what most budget competitors offer, and a continuous-duty motor rating is a more useful figure than the peak numbers many off-brand listings quote. That said, this is not a smaller,
           cheaper version of the Commercial 1750 — it's a genuinely different
           category of machine, built for a different kind of use.
         </p>
@@ -377,9 +353,7 @@ const schema = {
         <div id="specs" class="scroll-mt-24">
         <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Full Spec Sheet</h2>
         <p>
-          Here's every spec we verified directly against our test unit,
-          including a few details NordicTrack's own product page glosses
-          over.
+          Here's the full spec sheet, taken from NordicTrack's published specifications for the C 700.
         </p>
         </div>
       </div>
@@ -401,16 +375,12 @@ const schema = {
         <div id="assembly" class="scroll-mt-24">
         <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Assembly and Setup</h2>
         <p>
-          Assembly took us just under an hour working alone, noticeably
-          faster than the Commercial-series machines we've reviewed, largely
-          because there's no oversized touchscreen mast to wrestle into
-          place. The console attaches with four bolts and a single wiring
+          Assembly should be simpler than on the Commercial-series machines we've reviewed, largely because there's no oversized touchscreen mast to wrestle into place. The console attaches with four bolts and a single wiring
           harness connector, and the whole process is genuinely approachable
           for a first-time treadmill owner without help.
         </p>
         <p>
-          The box is meaningfully lighter than what ships for the Commercial
-          line — closer to 140 pounds — which makes it realistic for one
+          The box is meaningfully lighter than what ships for the Commercial line, which makes it realistic for one
           reasonably strong adult to move from a garage or driveway into a
           spare room without a dolly. We'd still recommend having a second
           person around for the final step of lifting the upright console
@@ -441,21 +411,10 @@ const schema = {
         <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Performance Deep Dive</h2>
         <h3>Motor and Deck</h3>
         <p>
-          The 2.75 CHP motor is the honest heart of this review. It handled
-          brisk walking and light jogging up to roughly 6 mph without any
-          strain, staying quiet enough that our testers could hold a phone
-          call standing on it. Push past that into a genuine running pace,
-          though, and you can feel the motor working harder than it should
-          have to — belt speed became slightly less consistent during
-          repeated 7-8 mph intervals, a sign this motor is tuned for a
-          different kind of workout than sustained running.
+          The 2.75 CHP motor is the honest heart of this review. A 2.75 CHP continuous rating is a light-to-moderate duty motor: well matched to brisk walking and light jogging, and a smaller motor doing less work generally runs quieter at those speeds. Push into a genuine running pace for long stretches, though, and a motor of this size has less headroom than the Commercial line's, which is a sign it's tuned for a different kind of workout than sustained running.
         </p>
         <p>
-          The 20 x 55-inch deck is the smallest of any current NordicTrack
-          model, and it's noticeable if you're used to a full-size deck. Our
-          shorter testers, under 5'8", never felt cramped even at faster
-          paces, but our tallest tester at 6'3" wanted more room at full
-          stride during jogging intervals. This deck is sized for walking
+          The 20 x 55-inch deck is the smallest of any current NordicTrack model, and it's noticeable if you're used to a full-size deck. Shorter users walking or jogging are unlikely to feel cramped, but taller users will generally want more length at full jogging stride than 55 inches provides. This deck is sized for walking
           gait, not sprinting stride length, and NordicTrack seems to know
           that — it's why the console defaults to a max speed of 10 mph
           rather than the 12-13 mph ceilings on Commercial models.
@@ -466,8 +425,7 @@ const schema = {
           It shows speed, incline, time, distance, calories, and pulse when
           you grip the handrail sensors, cycling between screens with a
           button press rather than presenting everything at once on a
-          touchscreen. For walking-focused use, we genuinely didn't miss the
-          bigger screen after the first few sessions — but if you've tried a
+          touchscreen. For walking-focused use, a basic display covers what you actually need to see — but if you've tried a
           NordicTrack Commercial model in a showroom and assumed every unit
           in the lineup looks like that, temper your expectations here.
         </p>
@@ -482,23 +440,14 @@ const schema = {
         <h3>Cushioning and Everyday Usability</h3>
         <p>
           Cushioning is fixed rather than adjustable — there's no FlexSelect
-          lever like on the Commercial series — but it's tuned reasonably
-          well for walking impact, with a bit more give at the heel-strike
-          zone than we expected at this price. It's not plush, and faster
-          runners will likely find it firmer than they'd like, but for
-          walking and light jogging it did its job without drawing
-          complaints from any of our testers over three weeks of daily use.
-          The built-in Bluetooth speakers are noticeably smaller than on
-          pricier models and get a bit thin at higher volumes, so we'd
+          lever like on the Commercial series — and fixed cushioning on a budget deck is generally tuned for walking impact rather than running. Don't expect it to be plush, and faster runners will likely find it firmer than they'd like, but walking and light jogging are the use it's designed around. The built-in Bluetooth speakers are smaller than on pricier models, and small speakers like these tend to sound thin at higher volumes, so we'd
           recommend pairing a separate speaker if music quality matters to
           you during workouts.
         </p>
         <h3>Folding and Footprint</h3>
         <p>
           The C 700 folds using the same SpaceSaver design and EasyLift
-          assist strut found across the NordicTrack lineup, and it's
-          genuinely easier to fold than the larger Commercial machines simply
-          because there's less mass to lift. Standing folded, its 34 x
+          assist strut found across the NordicTrack lineup, and it should be easier to fold than the larger Commercial machines simply because there's less mass to lift. Standing folded, its 34 x
           71-inch footprint is noticeably more compact than the Commercial
           1750's, making it a more realistic daily-fold option for smaller
           apartments or shared living rooms.
@@ -506,24 +455,14 @@ const schema = {
 
         <h3>Noise and Everyday Household Fit</h3>
         <p>
-          We measured the C 700 in the mid-50 decibel range during brisk
-          walking and low-60s during light jogging, quieter overall than the
-          Commercial-series machines we've tested, thanks largely to the
-          smaller motor doing less work. That makes it a genuinely good fit
-          for apartments, shared walls, or early-morning workouts before the
-          rest of the household is awake. Vibration transfer through the
-          floor was also noticeably lower than what we've measured on
-          heavier Commercial-tier treadmills, though a basic equipment mat
-          underneath is still worth the modest cost for hard-surface floors.
+          We haven't measured the C 700's noise ourselves. As a general tendency, a smaller motor doing walking-pace work produces less motor noise than a large one, and at walking speeds footfall is usually the bigger source of sound in any case. That makes a walking-focused machine like this a reasonable fit for apartments, shared walls, or early-morning workouts before the rest of the household is awake, provided you keep the pace gentle. A basic equipment mat underneath is worth the modest cost on hard-surface floors to reduce vibration carrying into the room below.
         </p>
         </div>
 
         <div id="durability" class="scroll-mt-24">
         <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Long-Term Durability Notes</h2>
         <p>
-          Three weeks of hands-on testing can't answer a multi-year
-          durability question by itself, so we cross-checked our impressions
-          against patterns in verified owner reviews spanning one to four
+          We have not tested the C 700 ourselves, and a spec sheet can't answer a multi-year durability question by itself, so we looked at patterns in verified owner reviews spanning one to four
           years of ownership. The most common long-term complaint, by a wide
           margin, is motor strain from owners who used the C 700 for regular
           running rather than walking — exactly the misuse case this review
@@ -565,9 +504,9 @@ const schema = {
             {[
               "Genuine NordicTrack frame and 10-year warranty at a budget price",
               "No touchscreen or subscription required to use every core feature",
-              "Fast, straightforward assembly compared to Commercial-series models",
+              "Simpler assembly than Commercial-series models, with no touchscreen mast",
               "Compact folded footprint fits smaller rooms and apartments",
-              "Quiet, unstrained motor performance for walking and light jogging",
+              "Continuous-duty motor sized for walking and light jogging",
             ].map((pro) => (
               <li class="flex items-start gap-2 text-sm text-green-800">
                 <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -756,12 +695,7 @@ const schema = {
           <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Can you run on the NordicTrack C 700, or is it just for walking?</h3>
             <p class="text-gray-700 text-sm leading-relaxed">
-              You can jog on it comfortably up to roughly 6 mph, but the 2.75
-              CHP motor and 20 x 55-inch deck are noticeably undersized for
-              sustained running compared to NordicTrack's Commercial line.
-              We'd call this a walking-and-light-jogging treadmill rather
-              than a running treadmill, and shoppers who run several times a
-              week should budget for a Commercial-tier model instead.
+              You can jog on it, but the 2.75 CHP motor and 20 x 55-inch deck are undersized for sustained running compared to NordicTrack's Commercial line. We'd call this a walking-and-light-jogging treadmill rather than a running treadmill, and shoppers who run several times a week should budget for a Commercial-tier model instead.
             </p>
           </div>
           <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
@@ -789,11 +723,7 @@ const schema = {
           <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">How long does the NordicTrack C 700 last?</h3>
             <p class="text-gray-700 text-sm leading-relaxed">
-              Owner reports and our own durability research point to a
-              realistic 5-to-8 year lifespan under regular home walking use,
-              assuming basic belt maintenance is kept up. That's shorter than
-              what we'd expect from the heavier Commercial-series frames,
-              which is a fair trade-off given the price gap.
+              A realistic expectation is roughly 5 to 8 years under regular home walking use, assuming basic belt maintenance is kept up. That is an estimate based on its motor rating and build class, not a measured figure, and it's shorter than what we'd expect from the heavier Commercial-series frames, which is a fair trade-off given the price gap.
             </p>
           </div>
         </div>
@@ -806,7 +736,7 @@ const schema = {
         <div class="space-y-6 my-8">
           <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
             <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying it as a running treadmill</h3>
-            <p class="text-gray-700 text-sm m-0">The 2.75 CHP motor and 20 x 55-inch deck are sized for walking and light jogging. Run on it four or five times a week and you will feel the deck run short at full stride and hear the motor work harder than it should. If you run regularly, put the extra money toward a C 1650 or Commercial 1750 rather than replacing this machine in two years.</p>
+            <p class="text-gray-700 text-sm m-0">The 2.75 CHP motor and 20 x 55-inch deck are sized for walking and light jogging. Run on it four or five times a week and the 55-inch deck leaves little room at full stride while the motor works near the top of its intended range. If you run regularly, put the extra money toward a C 1650 or Commercial 1750 rather than replacing this machine in two years.</p>
           </div>
           <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
             <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing peak horsepower against continuous duty</h3>
@@ -839,7 +769,7 @@ const schema = {
           <a href="/best-treadmill-for-home-reviews/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
             <span class="text-xs font-black uppercase tracking-widest text-green-600">Category</span>
             <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills for Home</p>
-            <p class="text-sm text-gray-500 leading-relaxed">See how the C 700 stacks up against every brand we've tested.</p>
+            <p class="text-sm text-gray-500 leading-relaxed">See how the C 700 stacks up against every brand we've covered.</p>
           </a>
         </div>
       </div>

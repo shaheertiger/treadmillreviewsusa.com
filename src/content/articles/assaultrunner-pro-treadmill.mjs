@@ -1,6 +1,6 @@
 export default {
   slug: 'assaultrunner-pro-treadmill',
-  title: 'AssaultRunner Pro Treadmill Review (2026): Specs, Warranty and Who It Suits',
+  title: 'AssaultRunner Pro Review (2026): Specs, Warranty, Who It Suits',
   description:
     'The AssaultRunner Pro treadmill is a 17 x 62 in. curved, motorless slat trainer rated to 350 lb. What Assault confirms, the warranty conflict, stock, and who it suits.',
   crumbLabel: 'AssaultRunner Pro',

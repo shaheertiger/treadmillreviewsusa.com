@@ -1,6 +1,6 @@
 export default {
   slug: 'lifespan-treadmills',
-  title: 'LifeSpan Treadmill Guide (2026): Desk Treadmills, Pads and Folding Models',
+  title: 'LifeSpan Treadmill Guide (2026): Desk, Walking Pad and Folding',
   description:
     'LifeSpan Fitness makes under-desk treadmills and treadmill desks, and used to sell folding treadmills. What it sells now, the confirmed figures, warranty, service record and what to buy.',
   crumbLabel: 'LifeSpan Treadmills',

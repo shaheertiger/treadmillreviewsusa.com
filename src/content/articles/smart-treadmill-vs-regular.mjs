@@ -1,6 +1,6 @@
 export default {
   slug: 'smart-treadmill-vs-regular',
-  title: 'Smart Treadmill vs Regular Treadmill (2026): Are Smart Treadmills Worth It?',
+  title: 'Smart vs Regular Treadmill (2026): Are Smart Treadmills Worth It?',
   description:
     'Touchscreens, auto-adjusting classes and subscriptions against a plain console and your own tablet. What a smart treadmill adds, what it costs over time and what can break.',
   crumbLabel: 'Smart Treadmill vs Regular',

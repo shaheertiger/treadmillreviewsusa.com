@@ -1,6 +1,6 @@
 export default {
   slug: 'horizon-7-0-at-treadmill',
-  title: 'Horizon Fitness 7.0 AT Treadmill Review (2026): Specs, Warranty, Black Friday',
+  title: 'Horizon 7.0 AT Treadmill Review (2026): Specs and Warranty',
   description:
     'The Horizon Fitness 7.0 AT treadmill checked against Horizon’s listing and three independent reviews: 20 x 60 in. deck, 12 mph, 15% incline, 325 lb, no subscription. Plus how its sale pricing works around Black Friday.',
   crumbLabel: 'Horizon 7.0 AT Treadmill',

@@ -3,14 +3,13 @@ import Layout from "../layouts/Layout.astro";
 import TrustBadge from "../components/TrustBadge.astro";
 import SocialProof from "../components/SocialProof.astro";
 
-const title = "Life Fitness Platinum Club Series Treadmill Review (2026): The Aspirational Flagship";
+const title = "Life Fitness Platinum Club Series Review (2026): The Flagship";
 const description =
-  "We spent a month running on Life Fitness's ultra-premium Platinum Club Series treadmill — the same machine found in boutique studios and hotel gyms. Here's who genuinely needs it, and who doesn't.";
+  "A close look at Life Fitness's ultra-premium Platinum Club Series treadmill — the same machine found in boutique studios and hotel gyms. Here's who genuinely needs it, and who doesn't.";
 
 const PRODUCT = {
   name: "Life Fitness Platinum Club Series",
-  rating: 4.9,
-  reviewCount: 214,
+  editorialScore: 4.9,
   amazonUrl:
     "https://www.amazon.com/s?k=Life+Fitness+Platinum+Club+Series+Treadmill&tag=sktiger-20",
   priceRange: "$11,999-$15,999",
@@ -128,7 +127,7 @@ const schema = {
     {
       "@type": "Article",
       headline: title,
-      author: { "@type": "Person", name: "Morgan Reyes" },
+      author: { "@type": "Person", name: "Shaheer Ali Khan", url: "https://www.linkedin.com/in/shaheer-ali-khan-data/", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], jobTitle: "Author and lab tester", worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: "2026-06-03",
       dateModified: "2026-06-03",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
@@ -138,11 +137,6 @@ const schema = {
       name: PRODUCT.name,
       description,
       brand: { "@type": "Brand", name: "Life Fitness" },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: PRODUCT.rating,
-        reviewCount: PRODUCT.reviewCount,
-      },
     },
   ],
 };
@@ -155,7 +149,7 @@ const schema = {
   article={{
     publishedTime: "2026-06-03",
     modifiedTime: "2026-06-03",
-    author: "Morgan Reyes",
+    author: "Shaheer Ali Khan",
     section: "Fitness Equipment",
     tags: [
       "life fitness platinum club series",
@@ -193,7 +187,7 @@ const schema = {
           Life Fitness <span class="text-[#5AA9FF]">Platinum Club Series</span> Review
         </h1>
         <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          We spent a month running on the same treadmill you'd find at a
+          We looked closely at the same treadmill you'd find at a
           high-end boutique studio or hotel fitness center to find out who,
           if anyone, should actually put one of these in a home.
         </p>
@@ -211,10 +205,10 @@ const schema = {
     <!-- Author & Meta -->
     <div class="max-w-3xl mx-auto px-4 pt-12">
       <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan" width="48" height="48" class="w-12 h-12 rounded-full" />
         <div>
-          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
-          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+          <p class="font-bold text-gray-900 leading-tight"><a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="author noopener" target="_blank" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan</a></p>
+          <p class="text-gray-500 text-sm leading-tight">Author and lab tester</p>
         </div>
         <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
         <p class="text-gray-500 text-sm">
@@ -228,18 +222,8 @@ const schema = {
       <!-- Quick Verdict -->
       <div class="not-prose my-10 bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
         <div class="flex items-center justify-between flex-wrap gap-4 mb-4">
-          <div class="flex items-center gap-2">
-            <div class="flex text-yellow-400">
-              {[...Array(5)].map((_, i) => (
-                <svg class={`w-5 h-5 ${i < Math.floor(PRODUCT.rating) ? "fill-current" : "text-gray-200"}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-              ))}
-            </div>
-            <span class="font-bold text-gray-900">{PRODUCT.rating}</span>
-            <span class="text-gray-400 text-sm">({PRODUCT.reviewCount.toLocaleString()} reviews)</span>
-          </div>
           <span class="bg-[#0F62FE]/10 text-[#0F62FE] px-3 py-1 rounded-full text-xs font-bold">Aspirational Flagship — Not For Most Buyers</span>
+          {PRODUCT.editorialScore && (<p class="text-sm text-gray-600 mt-1 mb-0">Our editorial score: <strong class="text-gray-900">{PRODUCT.editorialScore}</strong>/5</p>)}
         </div>
         <p class="text-gray-700 leading-relaxed mb-4">
           The Platinum Club Series is a genuinely exceptional treadmill, and
@@ -285,8 +269,8 @@ const schema = {
         <p class="text-2xl font-medium text-gray-900 mb-8 italic">
           We're going to be unusually direct up front: this is a
           $12,000-to-$16,000 treadmill, and for nearly everyone reading this
-          review, it is not the right purchase. We tested it anyway, and
-          reviewed it seriously anyway, because a genuine minority of
+          review, it is not the right purchase. We have not tested it, but we
+          reviewed its specifications seriously anyway, because a genuine minority of
           readers are the exact buyer this machine is built for — and they
           deserve an honest answer about whether it's worth it, not a
           breathless product page.
@@ -338,7 +322,7 @@ const schema = {
           brand guide</a> covers how the Platinum Club Series relates to the
           T3 and other models, and our <a href="/commercial-treadmills/">commercial
           treadmill roundup</a> puts it in context against every other
-          gym-quality machine we've tested for home use, including several
+          gym-quality machine we've compared for home use, including several
           at far more accessible prices.
         </p>
 
@@ -367,8 +351,8 @@ const schema = {
         <div id="specs" class="scroll-mt-24">
         <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Full Spec Sheet</h2>
         <p>
-          Here's every spec we verified directly against our test unit
-          rather than copying from the manufacturer's marketing page.
+          Here's every spec for the Platinum Club Series, taken from Life
+          Fitness's published specifications.
         </p>
         </div>
       </div>
@@ -393,10 +377,10 @@ const schema = {
           At this price tier, assembly is not a DIY affair, and Life Fitness
           treats it accordingly. Delivery and installation are handled by
           professional white-glove service as a standard part of the
-          purchase, not an optional upcharge — our test unit arrived largely
-          pre-assembled, with the installation team handling final
-          placement, leveling, console attachment, and a full functional
-          test before leaving. Total time on-site ran just under two hours.
+          purchase, not an optional upcharge — the machine is designed to
+          arrive largely pre-assembled, with the installation team handling
+          final placement, leveling, console attachment, and a functional
+          check before leaving.
         </p>
         <p>
           Because the frame is fixed and the machine weighs well over 400
@@ -408,10 +392,9 @@ const schema = {
           rather than a quick DIY fix.
         </p>
         <p>
-          The installation team also handled network setup for the Discover
-          SE4 touchscreen's streaming apps during our test, walking through
-          Wi-Fi pairing and account linking as part of the standard
-          installation — a level of white-glove service that matches what
+          Ask whether the installation team will also handle network setup
+          for the Discover SE4 touchscreen's streaming apps, such as Wi-Fi
+          pairing and account linking — a level of white-glove service that matches what
           you'd expect buying equipment at this price, and a meaningful
           difference from unboxing a home-brand treadmill yourself.
         </p>
@@ -422,13 +405,11 @@ const schema = {
         <h3>The 4.0 CHP AC Motor</h3>
         <p>
           The Platinum Club Series steps up from the T3's 3.0 CHP AC motor
-          to a 4.0 CHP unit, and the difference is immediately apparent even
-          before you consider long-term durability. Acceleration to top
-          speed is smoother and faster, incline transitions during
-          interval-style workouts happen with essentially no perceptible
-          lag, and the motor showed zero signs of strain even during
-          extended sprint intervals that would have a home-brand DC motor
-          working audibly hard. This is, quite simply, gym-floor performance
+          to a 4.0 CHP unit, a meaningful jump in headroom even before you
+          consider long-term durability. A commercial AC motor of this rating
+          is built for extended sprint intervals and frequent speed and
+          incline changes that would have a home-brand DC motor working
+          hard. This is, quite simply, gym-floor performance
           — because it's genuinely gym-floor equipment.
         </p>
         <h3>Deck Size and Feel</h3>
@@ -436,12 +417,10 @@ const schema = {
           At 22 x 63 inches, the deck is the largest in this entire review
           batch, with three extra inches of length over the T3's 60-inch
           deck. That extra length matters specifically for taller runners
-          and for anyone with a long stride at faster paces — our tallest
-          tester, at 6'4", described it as the first home-accessible
-          treadmill deck that never once felt like it was accommodating him
-          rather than simply fitting him. The Flex Deck cushioning system
-          gets additional under-deck cushioning tuning on this model versus
-          the T3, striking a feel that's firmer and more responsive than
+          and for anyone with a long stride at faster paces, including
+          runners well over six feet. The Flex Deck cushioning system gets
+          additional under-deck cushioning tuning on this model versus the
+          T3, designed for a feel that's firmer and more responsive than
           plush home-brand cushioning, consistent with what serious runners
           training on it at a boutique studio would expect and want.
         </p>
@@ -449,10 +428,9 @@ const schema = {
         <p>
           The 19-inch or 22-inch Discover SE4 HD touchscreen is a
           genuinely different console tier than anything else in this
-          review batch, or frankly most home treadmills we've tested at any
-          price. It supports streaming entertainment apps directly, runs
-          smoothly with no lag or sleep-wake delay, and the display quality
-          is closer to a high-end television than a fitness console. Core
+          review batch, or frankly most home treadmills at any price. It
+          supports streaming entertainment apps directly, and it is built to
+          be closer to a high-end television than a fitness console. Core
           treadmill functionality — speed, incline, workout programs — works
           entirely without connecting to any app or subscription; the
           streaming apps themselves may carry their own separate
@@ -461,13 +439,12 @@ const schema = {
         </p>
         <h3>Stability, Noise, and the "Boutique Studio" Feel</h3>
         <p>
-          Running on the Platinum Club Series at home genuinely does
-          recreate the feel of a high-end studio treadmill, which is the
-          entire point of the machine and the hardest thing to convey in a
-          spec sheet. The frame shows zero perceptible flex even during hard
-          sprinting, noise stays remarkably low and consistent across the
-          full speed range, and the overall experience feels less like
-          "exercise equipment" and more like a precision instrument. For
+          The Platinum Club Series is built to recreate the feel of a
+          high-end studio treadmill at home, which is the entire point of
+          the machine and the hardest thing to convey in a spec sheet. Its
+          fixed commercial frame is designed to resist flex during hard
+          sprinting, and a motor working well within its capacity tends to
+          run quieter and more consistently than a smaller one pushed hard. For
           buyers specifically chasing that experience at home, this is where
           the machine justifies itself in a way no comparison table fully
           captures.
@@ -475,16 +452,11 @@ const schema = {
 
         <h3>Noise, Space, and Living With It Day to Day</h3>
         <p>
-          Even at this tier, day-to-day livability details matter, and a
-          few stood out during our month with the machine. Noise stayed
-          remarkably low even at top speed — quieter, subjectively, than
-          both the T3 and every home-brand treadmill in this review batch —
-          which our testers attributed to a combination of the larger
-          motor working well within its capacity and additional sound
-          dampening in the frame construction. The console's speakers,
-          built for streaming entertainment rather than just workout
-          feedback, produced noticeably fuller sound than the smaller
-          speakers on home-brand touchscreens, which matters if you plan to
+          Even at this tier, day-to-day livability details matter. A
+          larger motor working well within its capacity and a heavy fixed
+          frame are the two things that generally keep a treadmill quiet at
+          speed. The console's speakers are built for streaming
+          entertainment rather than just workout feedback, which matters if you plan to
           actually use it for movies or shows during longer sessions rather
           than just workout tracking.
         </p>
@@ -839,7 +811,7 @@ const schema = {
           <a href="/commercial-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
             <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Category</span>
             <p class="font-bold text-gray-900 mt-2 mb-1">Best Commercial-Grade Treadmills</p>
-            <p class="text-sm text-gray-500 leading-relaxed">Every gym-quality treadmill we've tested for home use, ranked.</p>
+            <p class="text-sm text-gray-500 leading-relaxed">Every gym-quality treadmill we've compared for home use, ranked.</p>
           </a>
           <a href="/life-fitness/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
             <span class="text-xs font-black uppercase tracking-widest text-green-600">Brand Guide</span>

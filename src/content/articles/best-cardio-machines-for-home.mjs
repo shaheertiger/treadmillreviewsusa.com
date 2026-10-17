@@ -38,8 +38,8 @@ export default {
           qualified professional before you start.`,
   lead: `"Cardio machines" covers at least seven quite different pieces of equipment, and the best
           one for your home depends more on how you like to move than on any specification. This
-          page is the product roundup: one machine of each type that held up when we checked it,
-          with what it is good at and what it is not. If you have not yet decided which type of
+          page is the product roundup: one machine of each type whose published figures held up
+          when we checked them, with what it is good at and what it is not. If you have not yet decided which type of
           machine you want, the decision guide linked below is the better place to start; come
           back here when you have.`,
   sections: [

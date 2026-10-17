@@ -1,8 +1,8 @@
 export default {
   slug: 'best-treadmills-for-bad-knees',
-  title: 'Best Treadmills for Bad Knees (2026): Firm Decks and Incline, Not Softness',
+  title: 'Best Treadmills for Bad Knees (2026): Firm Decks and Incline',
   description:
-    'The softest deck is not the kindest to your knees. We measured deck give and rebound on six machines and ranked them on cushioning quality, incline range and speed control.',
+    'The softest deck is not the kindest to your knees. We compared six machines on deck construction, incline range and speed control, and ranked on cushioning quality, not softness.',
   crumbLabel: 'Best Treadmills for Bad Knees',
   kicker: "Buyer's Guide",
   updated: 'September 2026',
@@ -11,7 +11,7 @@ export default {
   socialProof: '3.7k',
   h1: ['Best Treadmills for', 'Bad Knees'],
   standfirst:
-    'Every machine here is marketed on cushioning, and the softest one is not the answer. We measured how far each deck gives and how quickly it returns, then ranked on incline range and fine speed control.',
+    'Every machine here is marketed on cushioning, and the softest one is not the answer. We ranked on what each deck is built to do — give under load and return quickly — then on incline range and fine speed control.',
   ctas: [
     { label: 'See the Top Pick', href: '#nordictrack-commercial-1750' },
     { label: 'Why Softer Is Not Better', href: '#softness-myth' },
@@ -27,7 +27,10 @@ export default {
           running is appropriate for your knees. If you have arthritis, a meniscus or ligament
           injury, a replacement, or pain you have not had assessed, speak to your doctor or a
           physiotherapist before starting. What follows is about which machines reduce load and
-          give you finer control over it.`,
+          give you finer control over it. We have not tested these machines: incline ranges, speed
+          increments and step-up heights are published specifications, and what we say about deck
+          character is inferred from each machine's construction and class, not from our own
+          measurements.`,
   sections: [
     {
       id: 'softness-myth',
@@ -54,8 +57,9 @@ export default {
           </p>
           <p>
             So the specification to look for is give with quick return — measurable deflection
-            under load, and a fast recovery to shape between footfalls. Every machine here was
-            assessed on both, and the rankings do not match the marketing.
+            under load, and a fast recovery to shape between footfalls. Neither is published as a
+            number, so every machine here was judged on how its deck is built, and the rankings do
+            not match the marketing.
           </p>`,
     },
     {
@@ -111,27 +115,28 @@ export default {
     },
     {
       id: 'how-we-tested',
-      heading: 'How We Measured Cushioning',
+      heading: 'How We Judged Cushioning',
       html: `          <p>
-            We measured deck deflection under a static 180 lb load at the centre of the belt, then
-            recorded recovery time to within a millimetre of resting height. Those two figures
-            together describe cushioning quality far better than any manufacturer's marketing term,
-            and they separated the machines here more clearly than anything else we measured.
+            We have not measured these decks, and nothing on this page should be read as if we
+            had. Manufacturers do not publish deflection or recovery figures, and their cushioning
+            names are marketing terms rather than measurements, so deck character here is
+            inferred from construction: commercial decks built for gyms, heavy running decks on
+            high-mass frames, and lighter consumer decks on folding frames behave differently, and
+            those differences are consistent enough to rank on.
           </p>
           <p>
-            The results were instructive. The machine with the greatest deflection — the softest
-            deck by a clear margin — had among the slowest recovery, which is the combination that
-            produces the "running on sand" sensation on longer sessions. Two machines with
-            noticeably less deflection returned to shape fastest, and those are the decks our
-            testers preferred over 45 minutes without exception.
+            The general pattern is instructive. The softest decks tend to sit on lighter, cheaper
+            machines, and softness without a quick recovery is the combination that produces the
+            "running on sand" sensation on longer sessions. Firmer decks with a fast return to
+            shape are typically found on heavier and commercial machines, and they are the profile
+            to prefer for a knee you are trying to protect.
           </p>
           <p>
-            Each machine then ran a six-week protocol of walking and incline walking, three to four
-            sessions a week, including at least four sessions over 40 minutes because deck
-            behaviour changes as you fatigue. We also logged speed increments, minimum speed and
-            step-up height. Our full
-            <a href="/treadmill-reviews-2026/" class="text-[#0F62FE] font-medium">testing methodology</a>
-            covers the standard protocol.
+            Everything else came from published specifications: incline range, speed increments,
+            minimum speed and step-up height, which matter as much to this buyer as the deck does.
+            Our full
+            <a href="/treadmill-reviews-2026/" class="text-[#0F62FE] font-medium">review methodology</a>
+            explains how we assess machines from published data.
           </p>`,
     },
     {
@@ -245,15 +250,14 @@ export default {
       heading: 'Final Recommendations',
       html: `          <p>
             For most people in this category the <strong>NordicTrack Commercial 1750</strong> is
-            the machine: firm cushioning with the quickest recovery we measured outside the
-            commercial machines, incline to 12% for low-impact work, 0.1 mph increments, and a deck
+            the machine: a firm running deck on a heavy frame, incline to 12% for low-impact work, 0.1 mph increments, and a deck
             long enough to run on later if that becomes possible.
           </p>
           <p>
             If running is genuinely off the table and it will stay that way, the
             <strong>Sole F63</strong> does the walking job well for considerably less, with long
             side rails that are useful on a day when the knee is unhappy. If you want the best deck
-            we have measured and cost is not the constraint, the <strong>Matrix T7xe</strong> is
+            here on paper and cost is not the constraint, the <strong>Matrix T7xe</strong> is
             that machine.
           </p>
           <p>
@@ -271,9 +275,9 @@ export default {
       badge: 'Best Overall',
       reviewUrl: '/nordictrack-commercial-1750-treadmill/',
       priceRange: '$1,799-$2,299',
-      specs: 'Firm deck, fast recovery · 0-12% incline · 0.1 mph steps · 60 in. deck',
+      specs: 'Firm running deck · 0-12% incline · 0.1 mph steps · 60 in. deck',
       pros: [
-        'Second-fastest deck recovery we measured — firm with genuine return',
+        'Heavy running deck of the firm, quick-return type',
         'Incline to 12% covers the full range of low-impact work',
         '0.1 mph increments let you find the exact comfortable pace',
         'Long enough deck to return to running on without changing machine',
@@ -285,7 +289,7 @@ export default {
       bottomLine:
         'The best combination of cushioning quality, incline range and fine speed control. The machine that still works if you return to running.',
       description:
-        'This machine measured well on exactly the properties that matter here. Deck deflection under our 180 lb static load was mid-range and recovery to resting height was the second fastest in the group, which is the combination our testers preferred without exception over 45-minute sessions — firm underfoot but never harsh, and no sense of working against the surface as fatigue set in. Incline to 12% covers everything a low-impact programme needs, and 0.1 mph increments matter more than they sound when your comfortable range is narrow. The 60-inch deck means that if running becomes possible again, you are not buying another treadmill. Two notes: it has decline, which is the function most likely to aggravate a knee and which we would simply not use, and the console will keep asking about a subscription. Neither affects the hardware case.',
+        'This machine lines up well on exactly the properties that matter here. It pairs a heavy running deck with a high-mass frame, which is the construction that typically gives moderate give and a quick return — firm underfoot but not harsh, and less sense of working against the surface as fatigue sets in. Incline to 12% covers everything a low-impact programme needs, and 0.1 mph increments matter more than they sound when your comfortable range is narrow. The 60-inch deck means that if running becomes possible again, you are not buying another treadmill. Two notes: it has decline, which is the function most likely to aggravate a knee and which we would simply not use, and the console will keep asking about a subscription. Neither affects the hardware case.',
     },
     {
       id: 'sole-f63',
@@ -294,7 +298,7 @@ export default {
       badge: 'Best Value',
       reviewUrl: '/sole-f63-treadmill/',
       priceRange: '$899-$1,099',
-      specs: 'Soft-but-controlled deck · 0-15% incline · 0.1 mph steps · long side rails',
+      specs: 'Cushioned deck · 0-15% incline · 0.1 mph steps · long side rails',
       pros: [
         'Higher incline ceiling than the NordicTrack at half the price',
         'Long side rails give real support on a day the knee is unhappy',
@@ -302,36 +306,36 @@ export default {
         'No subscription and no prompts',
       ],
       cons: [
-        'Deck recovery was mid-table — softer feel, slower return',
+        'Consumer deck rather than a heavy running or commercial one',
         '55-inch usable feel is limiting if you return to running',
       ],
       bottomLine:
         'The sensible choice if walking is the plan and will stay the plan. Excellent incline range for the money.',
       description:
-        'For a walker with knee pain this is the value answer, and its 15% incline ceiling is genuinely useful — higher than our top pick and available for roughly half the money, which matters because incline is the main tool in this category. The long side rails deserve specific mention: on a day when the knee is complaining, having something to rest a hand on for the whole stride rather than a stub beside the console is worth a lot. Speed control is fine-grained and the minimum speed is low enough for very cautious early sessions. Where it gives ground is deck quality: deflection was greater than the NordicTrack and recovery slower, which is the softer-feeling but less efficient combination, and over 45 minutes our testers noticed more quadriceps fatigue on it. If you plan to walk and not run, that trade is acceptable at the price.',
+        'For a walker with knee pain this is the value answer, and its 15% incline ceiling is genuinely useful — higher than our top pick and available for roughly half the money, which matters because incline is the main tool in this category. The long side rails deserve specific mention: on a day when the knee is complaining, having something to rest a hand on for the whole stride rather than a stub beside the console is worth a lot. Speed control is fine-grained and the minimum speed is low enough for very cautious early sessions. Where it gives ground is the deck: it is a consumer walking-and-jogging deck rather than a heavy running one, and decks of this class tend toward the softer-feeling but less efficient combination, which can mean more quadriceps fatigue on long sessions. If you plan to walk and not run, that trade is acceptable at the price.',
     },
     {
       id: 'matrix-t7xe',
       name: 'Matrix Fitness T7xe',
-      category: 'Best Deck We Have Measured',
+      category: 'Best Commercial Deck',
       badge: 'Best Cushioning',
       reviewUrl: '/matrix-fitness-t7xe-treadmill/',
       priceRange: '$3,499-$4,299',
-      specs: 'Fastest deck recovery measured · 0-15% incline · 0.1 mph steps · commercial frame',
+      specs: 'Commercial deck · 0-15% incline · 0.1 mph steps · commercial frame',
       pros: [
-        'Fastest recovery to resting height of any deck we have tested',
-        'Deck feel identical at minute five and minute forty-five',
+        'Commercial deck built for firm give and fast recovery',
+        'Commercial construction built to keep its feel through long sessions',
         'Immovable frame — no instability transmitted through the stride',
-        'Incline to 15% with smooth, quiet transitions',
+        'Incline to 15% for the full range of low-impact work',
       ],
       cons: [
         'Very expensive for a machine that will be used at walking pace',
         'Touchscreen menus slow down mid-session speed adjustments',
       ],
       bottomLine:
-        'Objectively the best cushioning here. Hard to justify at walking pace unless the budget genuinely allows it.',
+        'The strongest deck here on paper. Hard to justify at walking pace unless the budget genuinely allows it.',
       description:
-        'On our measurements this is the best-cushioned treadmill we have tested, and the reason is recovery rather than softness: it deflects a moderate amount under load and returns to shape faster than anything else, which is precisely the profile that keeps a stride efficient as you tire. Our testers reported the least quadriceps fatigue on it across 45-minute sessions, and the deck felt identical at the end as at the start, which several cheaper machines did not. The frame is immovable, so nothing destabilising reaches the knee through the footfall. The obvious problem is price: this is commercial hardware being recommended to someone who may use it at 2.8 mph, and the honest position is that the NordicTrack delivers most of the benefit for roughly half. If budget is not the constraint, this is the best deck available.',
+        'On paper this is the best-cushioned treadmill here, and the reason is recovery rather than softness: a commercial deck is built to give a moderate amount under load and return to shape quickly, which is precisely the profile that keeps a stride efficient as you tire, and to keep that behaviour through long sessions in a way cheaper decks often do not. The frame is immovable, so nothing destabilising reaches the knee through the footfall. The obvious problem is price: this is commercial hardware being recommended to someone who may use it at 2.8 mph, and the honest position is that the NordicTrack delivers most of the benefit for roughly half. If budget is not the constraint, this is the best deck on this page.',
     },
     {
       id: 'nordictrack-commercial-2450',
@@ -340,12 +344,12 @@ export default {
       badge: 'Best for Incline',
       reviewUrl: '/nordictrack-commercial-2450-treadmill/',
       priceRange: '$2,299-$2,799',
-      specs: 'Firm deck, fast recovery · 0-12% incline · fast transitions · 60 in. deck',
+      specs: 'Firm running deck · 0-12% incline · fast transitions · 60 in. deck',
       pros: [
-        'Holds pace on sustained grades where lighter machines labour',
-        'Fastest incline transitions here — useful for graded walking sessions',
+        'Larger motor for sustained grades, where lighter machines have less in reserve',
+        'Fast incline transitions — useful for graded walking sessions',
         'Same well-judged deck as the 1750',
-        'Runs quieter under sustained incline load',
+        'Heavier frame and motor for long incline sessions',
       ],
       cons: [
         'Meaningful premium over the 1750 for incline performance alone',
@@ -354,7 +358,7 @@ export default {
       bottomLine:
         'Worth the step up from the 1750 only if incline walking will be your main session, which for this buyer it often should be.',
       description:
-        'Since incline walking is the training approach we would point most people with knee pain toward, the machine best suited to sustained incline deserves a place here. The 2450 holds its pace on 8 to 10% grades where the 1750 audibly works harder, and its incline transitions are the quickest in the group, which matters if you are running graded sessions that step up and down rather than holding one setting. It shares the 1750\'s deck, which measured among the best for recovery. It also runs quieter under sustained load, because the larger motor is working further inside its envelope. The question is whether that is worth several hundred dollars over the 1750, and the answer depends entirely on whether steep sustained walking will be your main session. If it will, this is the better machine; if not, the 1750 is the same deck for less.',
+        'Since incline walking is the training approach we would point most people with knee pain toward, the machine best suited to sustained incline deserves a place here. The 2450\'s larger motor is better suited to 8 to 10% grades held for long periods, where the 1750 has less in reserve, and its incline transitions are built to be quick, which matters if you are running graded sessions that step up and down rather than holding one setting. It shares the 1750\'s deck, and its larger motor works further inside its envelope under sustained load. The question is whether that is worth several hundred dollars over the 1750, and the answer depends entirely on whether steep sustained walking will be your main session. If it will, this is the better machine; if not, the 1750 is the same deck for less.',
     },
     {
       id: 'life-fitness-t3',
@@ -368,16 +372,16 @@ export default {
         'Lowest step-up height here at roughly 6.5 inches',
         'Full-length handrails at a genuinely supportive height',
         'Speed and incline controls on the rails, not just the console',
-        'Deck behaviour completely consistent across long sessions',
+        'Commercial deck built to behave consistently across long sessions',
       ],
       cons: [
         'Very expensive, and does not fold',
-        'Deck recovery slightly behind the Matrix despite the price',
+        'Ranked behind the Matrix on deck alone, despite the price',
       ],
       bottomLine:
         'The machine to choose if getting on, staying steady and adjusting without letting go are the difficulties. Excellent for cautious rehabilitation.',
       description:
-        'Where the other machines here are ranked mainly on deck behaviour, this one earns its place on everything around the deck. The step-up is roughly 6.5 inches, an inch and a half lower than most, which is the single most useful number for anyone whose knee makes climbing onto a raised platform unpleasant. The handrails run the full length of the deck at a height that supports rather than stoops, and — the detail we rate most highly — speed and incline controls sit on the rails themselves, so you never have to let go and reach forward to slow down. For cautious early rehabilitation that is a genuinely different experience. The deck is very good without quite matching the Matrix on recovery. It is expensive and it does not fold. For someone whose difficulty is confidence and access rather than cushioning, it is the right machine.',
+        'Where the other machines here are ranked mainly on deck behaviour, this one earns its place on everything around the deck. The step-up is roughly 6.5 inches, an inch and a half lower than most, which is the single most useful number for anyone whose knee makes climbing onto a raised platform unpleasant. The handrails run the full length of the deck at a height that supports rather than stoops, and — the detail we rate most highly — speed and incline controls sit on the rails themselves, so you never have to let go and reach forward to slow down. For cautious early rehabilitation that is a genuinely different experience. The deck is a commercial one, ranked just behind the Matrix here. It is expensive and it does not fold. For someone whose difficulty is confidence and access rather than cushioning, it is the right machine.',
     },
     {
       id: 'proform-power-1295i',
@@ -394,13 +398,13 @@ export default {
         'Retains manual control without a subscription',
       ],
       cons: [
-        'Deck deflection was the greatest here with the slowest recovery',
-        'Lighter frame introduces some movement at walking pace on incline',
+        'Lightest-built deck here, of the soft, slower-return type',
+        'Lighter frame is likely to move a little on incline under a heavier walker',
       ],
       bottomLine:
         'The cheapest route to a proper incline range. The deck is the compromise, and for longer sessions it is a real one.',
       description:
-        'Included because incline is the most important function in this category and this is the least expensive machine here that does it properly. Twelve per cent is enough for any low-impact programme, the 0.1 mph increments are better than the price suggests, and it folds. But the deck is where the money was saved and our measurements were unambiguous: it deflected furthest under load and recovered slowest, which is the soft-and-slow combination that feels plush initially and produces the most fatigue over 40 minutes. Our testers consistently reported more quadriceps tiredness on it than on any other machine here. There is also some frame movement at incline under a heavier walker. If budget makes this the choice, keep sessions shorter and treat the incline range as the reason you bought it.',
+        'Included because incline is the most important function in this category and this is the least expensive machine here that does it properly. Twelve per cent is enough for any low-impact programme, the 0.1 mph increments are better than the price suggests, and it folds. But the deck is where the money was saved: a lighter consumer deck on a folding frame is the construction most likely to give the soft-and-slow combination that feels plush initially and produces more fatigue over 40 minutes. A lighter frame is also likely to move a little at incline under a heavier walker. If budget makes this the choice, keep sessions shorter and treat the incline range as the reason you bought it.',
     },
   ],
   faqs: [

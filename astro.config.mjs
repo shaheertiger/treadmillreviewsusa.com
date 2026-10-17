@@ -1,4 +1,5 @@
-import { readdirSync } from 'node:fs';
+import { readdirSync, readFileSync } from 'node:fs';
+import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { draftRoutes } from './scripts/lib/pages.mjs';
 import { defineConfig } from 'astro/config';
@@ -22,6 +23,24 @@ const UNINDEXED_HUBS = ['/tools'];
 // Editorial drafts awaiting verified product data render noindex and must stay
 // out of the sitemap so the two signals agree.
 const DRAFT_ROUTES = draftRoutes(fileURLToPath(new URL('./src/pages', import.meta.url)));
+
+// Each page's real last-modified date for the sitemap, read from the dateModified in its
+// Article JSON-LD. Bing uses <lastmod> to schedule recrawls and stops trusting it when it
+// changes on every build, so pages without a date (hubs, home) get the newest article date
+// rather than the build time.
+const PAGES_DIR = fileURLToPath(new URL('./src/pages', import.meta.url));
+const LASTMOD = new Map();
+(function collect(dir, base = '') {
+  for (const entry of readdirSync(dir, { withFileTypes: true })) {
+    const rel = base ? `${base}/${entry.name}` : entry.name;
+    if (entry.isDirectory()) collect(join(dir, entry.name), rel);
+    else if (entry.name.endsWith('.astro')) {
+      const m = readFileSync(join(dir, entry.name), 'utf8').match(/dateModified:\s*["'](\d{4}-\d{2}-\d{2})["']/);
+      if (m) LASTMOD.set('/' + rel.replace(/\.astro$/, '').replace(/(^|\/)index$/, ''), m[1]);
+    }
+  }
+})(PAGES_DIR);
+const NEWEST = [...LASTMOD.values()].sort().at(-1);
 
 // Sitemap priority tiers, highest to lowest. A path's priority is the
 // highest tier it appears in; anything not listed falls through to the
@@ -214,7 +233,7 @@ export default defineConfig({
 
         item.priority = priority;
         item.changefreq = changefreq;
-        item.lastmod = new Date().toISOString();
+        item.lastmod = LASTMOD.get(path) ?? NEWEST;
 
         return item;
       },

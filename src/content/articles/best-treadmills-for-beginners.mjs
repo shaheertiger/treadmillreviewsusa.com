@@ -25,7 +25,9 @@ export default {
           guide, not a training programme. If you have been inactive for a long time, have a
           heart condition, or are carrying an injury, it is worth speaking to your doctor before
           beginning regular exercise. What follows is about which machine makes starting easier,
-          not about whether you should.`,
+          not about whether you should. We have not tested these machines: what follows is drawn
+          from published specifications and what they imply for a first-time owner, not from our
+          own measurements.`,
   sections: [
     {
       id: 'why-abandoned',
@@ -93,13 +95,13 @@ export default {
           <p>
             <strong>Assembly difficulty.</strong> A treadmill that takes two people and three hours
             to build is a treadmill that sits in its box for a fortnight. Assembly time and whether
-            it genuinely needs two people are worth more attention than most specifications, and we
-            timed both for every machine here.
+            it genuinely needs two people are worth more attention than most specifications, and
+            both are worth checking in the manual before you order.
           </p>
           <p>
             <strong>Fold and placement.</strong> If the machine has to share a room, the fold
             mechanism determines whether it gets put away or becomes permanent furniture. A
-            hydraulic assist that works in thirty seconds with one person is worth real money over
+            hydraulic assist that one person can work easily is worth real money over
             a manual latch that needs effort.
           </p>
           <p>
@@ -140,26 +142,27 @@ export default {
     },
     {
       id: 'how-we-tested',
-      heading: 'How We Tested for Beginners',
+      heading: 'How We Chose for Beginners',
       html: `          <p>
-            Every machine here completed our standard protocol. For this guide we added
-            beginner-specific assessments, the most useful of which was handing each machine to a
-            tester who had never assembled or used a treadmill before and timing them without help.
+            We have not tested these machines, and nothing on this page should be read as if we
+            had. They were chosen from the manufacturers' published specifications and warranty
+            terms, judged against the things that decide whether a first treadmill is still in use
+            in month three: how much assembly a machine of its size and weight involves, how simple
+            the console is, how the fold works, and the safety basics.
           </p>
           <p>
-            That test produced the largest separation in the group. Assembly times ranged from 45
-            minutes to over three hours, and two machines genuinely could not be completed alone.
-            We also asked each novice tester to start a 20-minute walk at 3 mph with a 2% incline
-            without reading the manual, and recorded how long it took and whether they succeeded.
-            On the simplest console it took under a minute; on the most complex, one tester gave up
-            and read the manual.
+            Console simplicity is the clearest separator on paper. A machine with physical speed
+            and incline buttons and a plain display lets a beginner start a walk without reading
+            anything; a large touchscreen puts menus between intention and action. Assembly is the
+            next: heavier machines with more parts take longer, and some genuinely need two people,
+            which is worth planning for rather than discovering.
           </p>
           <p>
-            We then ran each machine through a realistic beginner block — four weeks of walking
-            three to four times a week, building from 15 to 35 minutes — and noted what became
-            irritating over time rather than what impressed on day one. Our full
-            <a href="/treadmill-reviews-2026/" class="text-[#0F62FE] font-medium">testing methodology</a>
-            covers the standard protocol each machine completed first.
+            We also weighed what tends to become irritating over the first weeks rather than what
+            impresses on day one — subscription prompts, an awkward fold, a frame that moves at a
+            brisk walk. Our full
+            <a href="/treadmill-reviews-2026/" class="text-[#0F62FE] font-medium">review methodology</a>
+            explains how we assess machines from published data.
           </p>`,
     },
     {
@@ -167,8 +170,8 @@ export default {
       heading: 'The Six Best Treadmills for Beginners',
       products: true,
       html: `          <p>
-            Assembly times are one-person averages with a novice tester. Where a machine needs two
-            people, the entry says so.
+            Where a machine is heavy enough that assembly is realistically a two-person job, the
+            entry says so.
           </p>
           <p>
             If you want one recommendation rather than six, the
@@ -258,9 +261,9 @@ export default {
       id: 'verdict',
       heading: 'Final Recommendations',
       html: `          <p>
-            For most first-time buyers the <strong>Sole F63</strong> is the machine. It assembles
-            in reasonable time, folds in thirty seconds with one person, has a console you can
-            operate without reading anything, and carries no subscription — so its cost is its
+            For most first-time buyers the <strong>Sole F63</strong> is the machine. It has a
+            hydraulic fold one person can manage, a console of physical buttons you can operate
+            without reading anything, and carries no subscription — so its cost is its
             price. It is more machine than a beginner strictly needs, and that is why it survives
             the transition from beginner to regular user.
           </p>
@@ -284,21 +287,21 @@ export default {
       badge: 'Best Overall',
       reviewUrl: '/sole-f63-treadmill/',
       priceRange: '$899-$1,099',
-      specs: '~75 min assembly, one person · hydraulic fold · no subscription · long side rails',
+      specs: 'Hydraulic fold · no subscription · long side rails',
       pros: [
-        'Novice tester started a 20-minute incline walk in under a minute, no manual',
-        'Hydraulic fold takes about 30 seconds with one person',
+        'Physical buttons and an obvious display — a walk can start without the manual',
+        'Hydraulic fold that one person can manage',
         'No account, no app, no fee — nothing between you and a walk',
         'Long side rails and a legible display build confidence early',
       ],
       cons: [
         'Costs more than a beginner strictly needs to spend',
-        'Assembly still took our novice tester over an hour',
+        'Assembly is still a substantial job for a first-timer',
       ],
       bottomLine:
         'The machine that is still right when you stop being a beginner. Simple to start, easy to store, and it owes nobody a monthly fee.',
       description:
-        'This was the clearest result in our beginner testing. Handed the machine cold, our novice tester had a 20-minute walk at 3 mph and 2% incline running in under a minute without opening the manual — physical buttons, an obvious display, nothing to navigate. The hydraulic fold is the other decisive feature: about thirty seconds, one person, no wrestling, which is what determines whether a machine in a shared room gets put away or becomes furniture. There is no subscription, so what you pay is what it costs. Assembly took our novice just over an hour, which was mid-table rather than exceptional. The real argument for it is longevity of relevance: it is slightly more machine than a beginner needs, which is exactly why it is still the right machine in year three when you are walking further and faster.',
+        'On paper this is the clearest fit for a beginner. The console is physical buttons and an obvious display with nothing to navigate, the kind a first-time user can start a walk on without opening the manual. The hydraulic fold is the other decisive feature: one person, no wrestling, which is what determines whether a machine in a shared room gets put away or becomes furniture. There is no subscription, so what you pay is what it costs. Assembly is a substantial job rather than a quick one, as it is for any machine of this weight. The real argument for it is longevity of relevance: it is slightly more machine than a beginner needs, which is exactly why it is still the right machine in year three when you are walking further and faster.',
     },
     {
       id: 'nordictrack-c-700',
@@ -307,21 +310,21 @@ export default {
       badge: 'Best Budget',
       reviewUrl: '/nordictrack-c-700-treadmill/',
       priceRange: '$599-$799',
-      specs: '~60 min assembly, one person · assisted fold · low step-up · basic console',
+      specs: 'Assisted fold · low step-up · basic console',
       pros: [
-        'Cheapest machine here and the fastest to assemble',
+        'Cheapest machine here, and lighter to assemble than most',
         'Low step-up height makes getting on genuinely easy',
         'Simple console with almost nothing to navigate',
         'Runs without a subscription, if with a bare display',
       ],
       cons: [
         '55-inch deck limits it to walking and light jogging',
-        'Light frame moves noticeably once you pick up pace',
+        'Light frame is likely to move once you pick up pace',
       ],
       bottomLine:
         'The sensible cheap option for a walker. Buy it knowing you may outgrow it if the habit takes hold.',
       description:
-        'If the budget is firm, this is the machine we would point you to, and it does the beginner basics well. It assembled fastest of anything here — about an hour with one novice tester — and its console is simple enough that starting a walk requires no thought. The step-up height is among the lowest on this page, which sounds trivial and matters every single session, particularly in a cramped room where you step on from the side. It runs without a subscription, though the display is bare in that state. The honest limits are the deck and the frame: 55 inches confines it to walking and light jogging, and the light frame moves under you once you pass a brisk walk, which is exactly when a beginner is starting to gain confidence. Buy it as a walking machine and accept you may want more in two years.',
+        'If the budget is firm, this is the machine we would point you to, and it does the beginner basics well. As one of the lighter and simpler machines here it should be among the more manageable to assemble, and its console is simple enough that starting a walk requires no thought. The step-up height is among the lowest on this page, which sounds trivial and matters every single session, particularly in a cramped room where you step on from the side. It runs without a subscription, though the display is bare in that state. The honest limits are the deck and the frame: 55 inches confines it to walking and light jogging, and a light frame is likely to move under you once you pass a brisk walk, which is exactly when a beginner is starting to gain confidence. Buy it as a walking machine and accept you may want more in two years.',
     },
     {
       id: 'proform-power-995i',
@@ -330,7 +333,7 @@ export default {
       badge: 'Best for Structure',
       reviewUrl: '/proform-power-995i-treadmill/',
       priceRange: '$799-$999',
-      specs: '~90 min assembly, two people easier · assisted fold · optional subscription',
+      specs: 'Assisted fold · optional subscription',
       pros: [
         'Guided sessions supply the structure many beginners actually need',
         'Still runs with full manual control if you never subscribe',
@@ -339,12 +342,12 @@ export default {
       ],
       cons: [
         'Prompts for the subscription during ordinary use',
-        'Assembly is genuinely easier with two people',
+        'Assembly is likely to be easier with two people',
       ],
       bottomLine:
         'The right pick if being told what to do is what will keep you on the machine. Works unpaid, but expect to be asked.',
       description:
-        'A large share of people who abandon a treadmill do so because they do not know what to do on it, and for them guided content is not a luxury — it is the thing that supplies the structure. This is the least expensive way to get that. The sessions build sensibly for someone starting out, and the machine keeps full manual speed and incline control if you never pay, so you are not buying a device that switches off. Two caveats. It will prompt you about the subscription during ordinary use, not constantly but often enough to notice. And assembly took our novice tester an hour and a half and would have been considerably easier with a second person, which is worth planning for rather than discovering. Good value for the buyer who wants to be told what to do.',
+        'A large share of people who abandon a treadmill do so because they do not know what to do on it, and for them guided content is not a luxury — it is the thing that supplies the structure. This is the least expensive way to get that. The sessions build sensibly for someone starting out, and the machine keeps full manual speed and incline control if you never pay, so you are not buying a device that switches off. Two caveats. It will prompt you about the subscription during ordinary use, not constantly but often enough to notice. And assembly is likely to be considerably easier with a second person, which is worth planning for rather than discovering. Good value for the buyer who wants to be told what to do.',
     },
     {
       id: 'sole-f65',
@@ -353,21 +356,21 @@ export default {
       badge: 'Buy Once',
       reviewUrl: '/sole-f65-treadmill/',
       priceRange: '$1,199-$1,399',
-      specs: '~90 min assembly, two people needed · hydraulic fold · 60 in. deck · no subscription',
+      specs: 'Hydraulic fold · 60 in. deck · no subscription',
       pros: [
         'Full 60-inch deck means you will not outgrow it if you start running',
-        'Heavier frame is completely steady — confidence-building early on',
+        'Heavier frame built to stay steady — confidence-building early on',
         'Same simple console and easy hydraulic fold as the F63',
         'No subscription and strong resale if you change your mind',
       ],
       cons: [
-        'Assembly genuinely requires two people',
+        'A machine this heavy is realistically a two-person assembly',
         'More machine and more money than most beginners need',
       ],
       bottomLine:
         'The buy-once option. Sensible if you are fairly confident this will stick, or if two people will use it.',
       description:
-        'The argument for spending more as a beginner is not that you need the specification now — it is that you avoid buying twice. The F65 is the machine that covers both the walking you will do this year and the running you might do next year, with a full 60-inch deck and a frame heavy enough that it does not move at all under you. That steadiness is worth more to a nervous beginner than it sounds; a machine that shifts underfoot erodes confidence quickly. It shares the F63\'s simple console and thirty-second hydraulic fold. Against it: assembly genuinely needs two people, and it is more money than the evidence says most beginners should spend. If two of you will use it, or you are fairly sure the habit will stick, the arithmetic works. If you are testing whether you like treadmills at all, buy the F63.',
+        'The argument for spending more as a beginner is not that you need the specification now — it is that you avoid buying twice. The F65 is the machine that covers both the walking you will do this year and the running you might do next year, with a full 60-inch deck and a frame heavy enough that it should not move under you. That steadiness is worth more to a nervous beginner than it sounds; a machine that shifts underfoot erodes confidence quickly. It shares the F63\'s simple console and easy hydraulic fold. Against it: at this weight assembly is a two-person job, and it is more money than the evidence says most beginners should spend. If two of you will use it, or you are fairly sure the habit will stick, the arithmetic works. If you are testing whether you like treadmills at all, buy the F63.',
     },
     {
       id: 'proform-power-1295i',
@@ -376,7 +379,7 @@ export default {
       badge: 'Best Display',
       reviewUrl: '/proform-power-1295i-treadmill/',
       priceRange: '$999-$1,299',
-      specs: '~100 min assembly, two people easier · larger screen · incline to 12%',
+      specs: 'Larger screen · incline to 12%',
       pros: [
         'Largest screen at this price by a clear margin',
         'Incline to 12% supports low-impact incline walking',
@@ -385,12 +388,12 @@ export default {
       ],
       cons: [
         'The screen adds menus between you and starting a session',
-        'Longest assembly of the mid-range machines here',
+        'A larger machine with more to assemble than the simpler consoles',
       ],
       bottomLine:
         'Good hardware, but the screen is the thing a beginner least needs. Consider the F63 first unless the display genuinely appeals.',
       description:
-        'This is a capable machine and we are including it with a caveat rather than a recommendation. The hardware is sound — incline to 12% supports the low-impact incline walking that suits beginners well, and the frame is a sensible middle weight. The screen is the largest at this price. But screen size is the specification we would encourage a beginner to care about least, and there is a real cost to it: our novice tester took noticeably longer to start a simple session here than on the physical-button consoles, because the interface puts menus between intention and action. Assembly was also the longest of the mid-range machines at around an hour and forty minutes. If a big display is genuinely what will get you onto the machine, this is the affordable way to have one. If not, the F63 does the beginner job better for less.',
+        'This is a capable machine and we are including it with a caveat rather than a recommendation. The hardware is sound — incline to 12% supports the low-impact incline walking that suits beginners well, and the frame is a sensible middle weight. The screen is the largest at this price. But screen size is the specification we would encourage a beginner to care about least, and there is a real cost to it: starting a simple session on a touchscreen takes more steps than on a physical-button console, because the interface puts menus between intention and action. Assembly is also a bigger job than on the simpler machines. If a big display is genuinely what will get you onto the machine, this is the affordable way to have one. If not, the F63 does the beginner job better for less.',
     },
     {
       id: 'nordictrack-c-990',
@@ -399,7 +402,7 @@ export default {
       badge: 'Best Classes',
       reviewUrl: '/nordictrack-c-990-treadmill/',
       priceRange: '$999-$1,299',
-      specs: '~110 min assembly, two people needed · iFit-ready · 60 in. deck',
+      specs: 'iFit-ready · 60 in. deck',
       pros: [
         'The most extensive guided content of anything at this price',
         'Full 60-inch deck, so no need to upgrade if you start running',
@@ -408,12 +411,12 @@ export default {
       ],
       cons: [
         'Largely inert without a subscription — the console is the product',
-        'Slowest assembly here and needs two people',
+        'A large machine to assemble, realistically with two people',
       ],
       bottomLine:
         'Only worth it if you are confident you will use the classes and keep paying. Without the subscription, the F63 is a better machine for less.',
       description:
-        'The C 990 has the strongest guided-content proposition at this price and the weakest unsubscribed proposition on the page, and both facts should carry equal weight. The classes are genuinely well-judged for beginners — they build gradually, the automatic incline adjustment removes a real friction point mid-session, and for someone who needs external structure that combination works. The deck is a full 60 inches, so a beginner who becomes a runner will not need to replace it. But cancel the subscription and the console is close to inert, which means you have paid mid-range money for a machine the Sole F63 beats on every other measure. Assembly was also the slowest here at close to two hours and genuinely needs two people. Buy it for the classes, with the five-year subscription cost counted, or do not buy it.',
+        'The C 990 has the strongest guided-content proposition at this price and the weakest unsubscribed proposition on the page, and both facts should carry equal weight. The classes are genuinely well-judged for beginners — they build gradually, the automatic incline adjustment removes a real friction point mid-session, and for someone who needs external structure that combination works. The deck is a full 60 inches, so a beginner who becomes a runner will not need to replace it. But cancel the subscription and the console is close to inert, which means you have paid mid-range money for a machine the Sole F63 beats on every other measure. Assembly is also a large job and realistically needs two people. Buy it for the classes, with the five-year subscription cost counted, or do not buy it.',
     },
   ],
   faqs: [
@@ -427,7 +430,7 @@ export default {
     },
     {
       q: 'How long does it take to assemble a treadmill?',
-      a: `Between about 45 minutes and three hours depending on the machine, and several genuinely require two people. It is worth more attention than most specifications, because a treadmill that is difficult to build often sits in its box for a fortnight — and that fortnight is when the initial motivation is spent.`,
+      a: `It varies widely with the machine, and heavier ones genuinely require two people. It is worth more attention than most specifications, because a treadmill that is difficult to build often sits in its box for a fortnight — and that fortnight is when the initial motivation is spent.`,
     },
     {
       q: 'How often should a beginner use a treadmill?',
@@ -435,7 +438,7 @@ export default {
     },
     {
       q: 'Should a beginner buy a folding treadmill?',
-      a: `If the machine has to share a room, yes — but judge the fold mechanism rather than the label. A hydraulic assist that works in thirty seconds with one person genuinely gets used; a manual latch needing effort and two people means the machine stays up permanently, at which point its unfolded dimensions are the real ones.`,
+      a: `If the machine has to share a room, yes — but judge the fold mechanism rather than the label. A hydraulic assist that one person can work easily genuinely gets used; a manual latch needing effort and two people means the machine stays up permanently, at which point its unfolded dimensions are the real ones.`,
     },
     {
       q: 'Do I need to maintain a new treadmill?',

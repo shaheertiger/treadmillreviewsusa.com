@@ -5,12 +5,11 @@ import SocialProof from "../components/SocialProof.astro";
 
 const title = "Life Fitness T3 Treadmill Review (2026): Real Commercial Gear at Home";
 const description =
-  "We spent four weeks running, walking, and stress-testing the Life Fitness T3. Here's an honest look at its commercial-grade AC motor, fixed frame, and whether gym-grade reliability is worth the premium price.";
+  "An honest look at the Life Fitness T3's commercial-grade AC motor, fixed frame and warranty, and whether gym-grade reliability is worth the premium price.";
 
 const PRODUCT = {
   name: "Life Fitness T3",
-  rating: 4.8,
-  reviewCount: 892,
+  editorialScore: 4.8,
   amazonUrl: "https://www.amazon.com/dp/B006BE6HW4?tag=sktiger-20",
   priceRange: "$3,499-$3,999",
 };
@@ -122,7 +121,7 @@ const schema = {
     {
       "@type": "Article",
       headline: title,
-      author: { "@type": "Person", name: "Morgan Reyes" },
+      author: { "@type": "Person", name: "Shaheer Ali Khan", url: "https://www.linkedin.com/in/shaheer-ali-khan-data/", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], jobTitle: "Author and lab tester", worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: "2026-05-13",
       dateModified: "2026-05-13",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
@@ -132,11 +131,6 @@ const schema = {
       name: PRODUCT.name,
       description,
       brand: { "@type": "Brand", name: "Life Fitness" },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: PRODUCT.rating,
-        reviewCount: PRODUCT.reviewCount,
-      },
     },
   ],
 };
@@ -149,7 +143,7 @@ const schema = {
   article={{
     publishedTime: "2026-05-13",
     modifiedTime: "2026-05-13",
-    author: "Morgan Reyes",
+    author: "Shaheer Ali Khan",
     section: "Fitness Equipment",
     tags: ["life fitness t3", "life fitness t3 review", "commercial treadmill", "ac motor treadmill", "home gym"],
   }}
@@ -181,10 +175,9 @@ const schema = {
           Life Fitness <span class="text-[#5AA9FF]">T3</span> Treadmill Review
         </h1>
         <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          We put Life Fitness's entry point into true commercial-grade
-          treadmills through four weeks of heavy daily use to find out
-          whether the AC motor and fixed frame justify a price well above
-          typical home brands.
+          We compared Life Fitness's entry point into true commercial-grade
+          treadmills against typical home brands to find out whether the AC
+          motor and fixed frame justify a price well above them.
         </p>
         <div class="mt-8 flex flex-wrap justify-center gap-4">
           <a href="#cta" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
@@ -200,10 +193,10 @@ const schema = {
     <!-- Author & Meta -->
     <div class="max-w-3xl mx-auto px-4 pt-12">
       <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan" width="48" height="48" class="w-12 h-12 rounded-full" />
         <div>
-          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
-          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+          <p class="font-bold text-gray-900 leading-tight"><a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="author noopener" target="_blank" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan</a></p>
+          <p class="text-gray-500 text-sm leading-tight">Author and lab tester</p>
         </div>
         <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
         <p class="text-gray-500 text-sm">
@@ -217,18 +210,8 @@ const schema = {
       <!-- Quick Verdict -->
       <div class="not-prose my-10 bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
         <div class="flex items-center justify-between flex-wrap gap-4 mb-4">
-          <div class="flex items-center gap-2">
-            <div class="flex text-yellow-400">
-              {[...Array(5)].map((_, i) => (
-                <svg class={`w-5 h-5 ${i < Math.floor(PRODUCT.rating) ? "fill-current" : "text-gray-200"}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-              ))}
-            </div>
-            <span class="font-bold text-gray-900">{PRODUCT.rating}</span>
-            <span class="text-gray-400 text-sm">({PRODUCT.reviewCount.toLocaleString()} reviews)</span>
-          </div>
           <span class="bg-[#0F62FE]/10 text-[#0F62FE] px-3 py-1 rounded-full text-xs font-bold">Editor's Choice: Genuine Commercial-Grade Home Treadmill</span>
+          {PRODUCT.editorialScore && (<p class="text-sm text-gray-600 mt-1 mb-0">Our editorial score: <strong class="text-gray-900">{PRODUCT.editorialScore}</strong>/5</p>)}
         </div>
         <p class="text-gray-700 leading-relaxed mb-4">
           The T3 is Life Fitness's entry point into real commercial-grade
@@ -276,8 +259,8 @@ const schema = {
           actually run on at a gym, hotel, or corporate fitness center, and
           the T3 is the company's answer to a question a lot of serious
           home runners eventually ask: what if I just bought the real thing?
-          After a month of heavy daily testing, our take is that the T3
-          delivers on that promise, with trade-offs that are worth
+          Based on its specifications, warranty and commercial lineage, our
+          take is that the T3 delivers on that promise, with trade-offs that are worth
           understanding clearly before you spend commercial-equipment money.
         </p>
 
@@ -296,13 +279,12 @@ const schema = {
           builds for gyms.
         </p>
         <p>
-          We tested the T3 against the specific question that brings most
+          We judged the T3 against the specific question that brings most
           shoppers to this review: is a machine costing $3,499 to $3,999
           actually worth two to three times what a well-reviewed home-brand
-          treadmill costs? After four weeks of heavy use — multiple daily
-          sessions, deliberately pushed harder and more often than a typical
-          household would use a home treadmill — our answer is yes, but only
-          for a specific kind of buyer. If you or your household run on a
+          treadmill costs? We have not tested it ourselves, but on its
+          specifications and warranty terms our answer is yes, only for a
+          specific kind of buyer. If you or your household run on a
           treadmill nearly every day, if multiple people share heavy use of
           the same machine, or if you've already worn out a DC-motor home
           treadmill and want to stop doing that, the T3's commercial-grade
@@ -332,7 +314,7 @@ const schema = {
           see our <a href="/life-fitness/">Life Fitness brand guide</a>. And
           if you're still deciding whether commercial-grade construction is
           worth the premium at all, our <a href="/commercial-treadmills/">commercial treadmill roundup</a>
-          compares the T3 against every gym-quality machine we've tested for
+          compares the T3 against every gym-quality machine we've compared for
           home use.
         </p>
 
@@ -361,8 +343,8 @@ const schema = {
         <div id="specs" class="scroll-mt-24">
         <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Full Spec Sheet</h2>
         <p>
-          Here's every spec we verified directly against our test unit
-          rather than copying from the manufacturer's marketing page.
+          Here's every spec for the T3, taken from Life Fitness's published
+          specifications.
         </p>
         </div>
       </div>
@@ -389,9 +371,9 @@ const schema = {
           expectations accordingly. Because it's a fixed-frame commercial
           machine, the T3 arrives largely pre-assembled from the factory
           rather than requiring the owner to bolt together a deck, uprights,
-          and console from a flat-packed box. Our unit required roughly 90
-          minutes of setup, most of which was uncrating, leveling the frame,
-          and attaching the console rather than structural assembly.
+          and console from a flat-packed box. Setup is mostly uncrating,
+          leveling the frame, and attaching the console rather than
+          structural assembly.
         </p>
         <p>
           Because the unit doesn't fold and weighs considerably more than a
@@ -405,9 +387,8 @@ const schema = {
         <p>
           Once in place, leveling matters more on a fixed-frame machine than
           on a folding one, since there's no folding mechanism to mask a
-          slightly uneven floor. We used the built-in leveling feet to
-          eliminate a small amount of wobble on our test room's floor, and
-          would recommend the same five-minute check for any buyer — an
+          slightly uneven floor. Use the built-in leveling feet to eliminate
+          any wobble, a five-minute check we'd recommend for any buyer — an
           unlevel fixed-frame treadmill will transmit more vibration and
           wear unevenly over time.
         </p>
@@ -433,24 +414,21 @@ const schema = {
           Life Fitness builds the T3 around the same AC motor technology
           used in its commercial gym treadmills, just sized down for a
           residential 3.0 CHP rating rather than the higher-output motors in
-          true gym-floor units. In our testing, this showed up as
-          remarkably consistent belt speed under load, minimal audible
-          motor strain even during extended high-speed running, and a motor
-          housing that stayed cooler to the touch than any home-brand
-          DC-motor treadmill we've tested at comparable speeds and duration.
+          true gym-floor units. In practice, an AC drive of this kind is
+          built for consistent belt speed under load and less heat buildup
+          during extended high-speed running than a comparable DC motor.
           It's the kind of difference that's hard to appreciate in a
-          five-minute showroom test but becomes obvious after weeks of daily
-          heavy use.
+          five-minute showroom test but matters over years of daily heavy
+          use.
         </p>
         <h3>Deck, Cushioning, and Frame Rigidity</h3>
         <p>
           The 20 x 60-inch deck is on the more modest end for this price
           bracket — some home-brand competitors offer 22-inch-wide decks for
           less money — but the fixed-frame construction underneath it is
-          where the T3 separates itself. There's no perceptible flex or
-          give at the frame joints even during hard sprinting, a direct
-          result of skipping the folding hinge mechanism that home
-          treadmills require. Life Fitness's Flex Deck shock absorption
+          where the T3 separates itself. A fixed frame avoids the flex and
+          give that a folding hinge introduces, which matters most during
+          hard sprinting. Life Fitness's Flex Deck shock absorption
           system tunes cushioning to reduce impact without feeling bouncy or
           imprecise, striking a firmer, more "gym treadmill" feel than the
           plusher cushioning systems some home brands favor — a difference
@@ -466,30 +444,28 @@ const schema = {
           access. Neither option requires an ongoing subscription for core
           functionality, which puts the T3 closer to Sole's philosophy than
           NordicTrack's iFit-dependent approach, despite the very different
-          price tier. We tested the Go Console specifically because it
-          better represents what most buyers in this category actually want
-          — a reliable, no-nonsense interface rather than an entertainment
-          hub — and found it responsive and refreshingly free of the lag or
-          sleep-wake delays we've noted on some touchscreen competitors.
+          price tier. The Go Console better represents what most buyers in
+          this category actually want — a reliable, no-nonsense interface
+          with physical controls rather than an entertainment hub.
         </p>
         <h3>Weight Capacity and Stability at Speed</h3>
         <p>
           The 400-lb weight capacity is notably higher than most home-brand
           treadmills, which commonly rate in the 300 to 350-lb range, and
           it's a direct reflection of the T3's commercial-grade frame
-          engineering rather than a marketing number. During testing with
-          multiple runners of varying weights, the deck and frame showed no
-          perceptible difference in stability or feel regardless of who was
-          running, which isn't something we can say about every home
-          treadmill we've reviewed at lower rated capacities.
+          engineering rather than a marketing number. A frame rated well
+          above the heaviest user generally stays more stable across runners
+          of varying weights than a home treadmill rated closer to its
+          limit.
         </p>
         </div>
 
         <div id="durability" class="scroll-mt-24">
         <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Long-Term Durability Notes</h2>
         <p>
-          Four weeks of even heavy testing can't fully answer a multi-year
-          durability question, so we leaned heavily on Life Fitness's
+          We have not tested the T3, and no short review could fully answer
+          a multi-year durability question anyway, so we leaned heavily on
+          Life Fitness's
           commercial track record and available owner feedback for the T3
           specifically. The pattern that emerges is consistent with what
           you'd expect from a company that built its reputation on
@@ -812,7 +788,7 @@ const schema = {
           <a href="/commercial-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
             <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Category</span>
             <p class="font-bold text-gray-900 mt-2 mb-1">Best Commercial-Grade Treadmills</p>
-            <p class="text-sm text-gray-500 leading-relaxed">Every gym-quality treadmill we've tested for home use, ranked.</p>
+            <p class="text-sm text-gray-500 leading-relaxed">Every gym-quality treadmill we've compared for home use, ranked.</p>
           </a>
           <a href="/life-fitness/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
             <span class="text-xs font-black uppercase tracking-widest text-green-600">Brand Guide</span>

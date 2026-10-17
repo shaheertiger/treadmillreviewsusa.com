@@ -1,0 +1,108 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+
+const title = "Editorial Standards: How We Choose and Test";
+const description =
+  "How Treadmill Reviews USA chooses products, checks specifications, handles recalls, tests, discloses affiliate links and corrects mistakes.";
+
+const AUTHOR_URL = "https://www.linkedin.com/in/shaheer-ali-khan-data/";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Editorial Standards", item: "https://www.treadmillreviewsusa.com/editorial-standards/" },
+      ],
+    },
+    {
+      "@type": "AboutPage",
+      name: title,
+      description,
+      dateModified: "2026-10-17",
+      author: {
+        "@type": "Person",
+        name: "Shaheer Ali Khan",
+        url: AUTHOR_URL,
+        sameAs: [AUTHOR_URL],
+        jobTitle: "Author and lab tester",
+      },
+    },
+  ],
+};
+---
+
+<Layout title={`${title} | Treadmill Reviews USA`} description={description} jsonLd={schema}>
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+    <div class="text-center mb-12">
+      <div class="flex justify-center mb-6"><TrustBadge /></div>
+      <h1 class="text-4xl lg:text-5xl font-black text-gray-900 mb-6">Editorial Standards</h1>
+      <p class="text-lg text-gray-600 leading-relaxed max-w-xl mx-auto">
+        How we choose the products we recommend, how we check what we say about them, and what we
+        do when we get something wrong.
+      </p>
+    </div>
+
+    <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+      <h2 id="who">Who writes these guides</h2>
+      <p>
+        Treadmill Reviews USA is written by
+        <a href={AUTHOR_URL} rel="author noopener" target="_blank">Shaheer Ali Khan</a>, the site's
+        author and lab tester, based in the United States. Every guide carries the date it was last
+        checked.
+      </p>
+
+      <h2 id="testing">Testing, and saying when we have not tested</h2>
+      <p>
+        Where a product has been tested hands-on, the guide says so and describes what was done.
+        Where it has not, the guide says that plainly too. Many of our guides compare products on
+        their published specifications, warranties and safety records rather than on hands-on
+        testing, and they are labelled that way. We do not publish test results, measurements or
+        customer-review figures that did not come from a real test or a named source. Where a guide
+        shows a score out of five, it is our editorial score — our judgement of the product against
+        the others in that guide — and it is labelled as ours.
+      </p>
+
+      <h2 id="choosing">How we choose products</h2>
+      <ul>
+        <li><strong>Currently sold.</strong> A product has to be on sale under that name on the
+        maker's site or a major retailer on the date we check it. Discontinued and renamed products
+        are left out or labelled as used-market options.</li>
+        <li><strong>Specifications cross-checked.</strong> A figure appears on a product card only
+        when the maker (or a major retailer listing) and an independent source agree on it. When
+        sources disagree, we leave the figure out and say that listings conflict rather than pick
+        one.</li>
+        <li><strong>Safety records checked.</strong> We check every brand against the US Consumer
+        Product Safety Commission's recall database before listing a product, and we exclude
+        products under a recall or a "stop using" warning.</li>
+        <li><strong>Who it is for.</strong> Each pick says who should buy it and who should buy
+        something else.</li>
+      </ul>
+
+      <h2 id="money">How the site makes money</h2>
+      <p>
+        We earn commissions when readers buy through some of our links, including as a participant
+        in the Amazon Services LLC Associates Program. Affiliate links are marked as sponsored. A
+        commission never decides which products we list, how we rank them or what we say about
+        them, and we do not accept payment for placement.
+      </p>
+
+      <h2 id="health">Health and safety topics</h2>
+      <p>
+        We review equipment. We are not doctors, physiotherapists, coaches or dietitians, and pages
+        that touch on health say so. Anyone with a medical condition, injury or concern should talk
+        to a qualified professional before starting a new exercise routine.
+      </p>
+
+      <h2 id="corrections">Corrections and updates</h2>
+      <p>
+        Prices, specifications and product ranges change. We revisit guides and update the date
+        when we do. If you spot an outdated figure or a mistake, please
+        <a href="/contact-us/">contact us</a> and we will check it and correct the page.
+      </p>
+    </div>
+  </div>
+</Layout>

@@ -1,6 +1,6 @@
 export default {
   slug: 'nordictrack-commercial-1250-treadmill',
-  title: 'NordicTrack Commercial 1250 Treadmill Review (2026): Current Specs and Verdict',
+  title: 'NordicTrack Commercial 1250 Review (2026): Specs and Verdict',
   description:
     'The NordicTrack Commercial 1250 treadmill as sold now (NTL14125): 3.6 CHP, 22 x 60 in. belt, 400 lb rating, -3% to 12% incline, 10 in. screen. What changed, and who should buy it.',
   crumbLabel: 'NordicTrack Commercial 1250',

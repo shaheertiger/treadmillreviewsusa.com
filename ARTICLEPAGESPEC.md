@@ -72,12 +72,11 @@ was tested and how. Not a summary of the article.
   category: "Best Overall Home Treadmill",
   badge: "Best Overall",               // "Best Budget", "Best Folding", …
   amazonUrl: "https://www.amazon.com/s?k=…&tag=sktiger-20",
-  rating: 4.6,                         // feeds Product/aggregateRating
-  reviewCount: 6284,
+  editorialScore: 4.6,                 // optional; shown as "Our editorial score", never in JSON-LD
   pros: [ /* 4–5 specific strings */ ],
   cons: [ /* 2–3 honest strings */ ],
   bottomLine: "One or two sentences: who should buy this and why.",
-  description: "150–250 words of real testing detail.",
+  description: "150–250 words; claim hands-on testing only where a real test was done.",
 }
 ```
 
@@ -97,8 +96,8 @@ order. `validate:format` checks for each item marked ✅.
    - two CTAs: solid `bg-[#FF5A1F]` anchored to the top pick, and `bg-white/10` anchored to a
      key section
 2. ✅ **Byline strip** — `<!-- Author & Meta -->` then `<div class="max-w-3xl mx-auto px-4 pt-12">`:
-   avatar (`https://i.pravatar.cc/150?img=48`), author name, role (`Fitness Equipment Editor`),
-   a `Last Updated` date, and ✅ `<SocialProof users="3.9k" />` pushed right with `ml-auto`.
+   avatar (`/authors/shaheer-ali-khan.png`), author name linked to LinkedIn, role (`Author and lab tester`),
+   a `Last Updated` date, and ✅ `<SocialProof users="…" />` (renders the reader-supported disclosure; the `users` value is ignored) pushed right with `ml-auto`.
    A review's quick-verdict card sits in this same column, directly under the byline.
 3. ✅ **Contents card** — `<div class="max-w-3xl mx-auto px-4 py-10">` wrapping a
    `bg-gray-50 border border-gray-200 rounded-2xl` card. Heading is the list icon SVG plus the
@@ -141,7 +140,7 @@ Also checked by the validator: ✅ `jsonLd={schema}` passed to `<Layout>`, and �
   article={{
     publishedTime: "2026-04-22",   // ISO date
     modifiedTime: "2026-04-22",
-    author: "Morgan Reyes",
+    author: "Shaheer Ali Khan",
     section: "Fitness Equipment",
     tags: ["nordictrack c 700", "budget treadmill", "home gym"],
   }}
@@ -184,7 +183,7 @@ const schema = {
     {
       "@type": "Article",
       headline: title,
-      author: { "@type": "Person", name: "Morgan Reyes" },
+      author: { "@type": "Person", name: "Shaheer Ali Khan", url: "https://www.linkedin.com/in/shaheer-ali-khan-data/" },
       datePublished: "2026-04-22",
       dateModified: "2026-04-22",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
@@ -195,11 +194,8 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: product.rating,
-        reviewCount: product.reviewCount,
-      },
+      // No aggregateRating or review: the site has no customer-review data, and SEO.astro
+      // strips them anyway. Offers carry real lowPrice/highPrice from the visible price range.
     })),
   ],
 };
@@ -213,7 +209,7 @@ Breadcrumb position 2 is always `/best-of/`; only the label changes — `Best Li
 | Component | Props | Notes |
 |---|---|---|
 | `TrustBadge.astro` | none | Required, in the hero |
-| `SocialProof.astro` | `users: string` (e.g. `"3.9k"`) | Required, in the byline strip |
+| `SocialProof.astro` | `users?: string` (ignored) | Required, in the byline strip; renders the affiliate disclosure |
 | `MobileNav.tsx` | none | React island, rendered by `Layout` |
 | `AdUnit.astro` | `variant?: "in-article" \| "display" \| "top"` | **Injected by `Layout` already** — do not add to a page |
 
@@ -292,8 +288,4 @@ all follow automatically.
 
 ## 12. Caveat worth knowing
 
-The `SocialProof` "Join 3.9k others who chose this" counts are **not measured figures** — they
-are per-page values chosen to look plausible, and they exist on every article page. They are part
-of the established format, so a new page carries one for consistency, but treat the number as
-decoration rather than data. If the site ever wires up real analytics, this is the thing to
-replace first.
+`SocialProof` used to render invented "Join 3.9k others" counts beside stock avatars. It now renders the reader-supported disclosure instead. Never add unmeasured counts, ratings or review numbers to a page; Bing treats them as misleading.
