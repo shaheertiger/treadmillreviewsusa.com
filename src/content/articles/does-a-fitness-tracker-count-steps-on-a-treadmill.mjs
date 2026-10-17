@@ -291,27 +291,22 @@ export default {
     },
     {
       id: 'strava',
-      heading: 'Does Strava Track Treadmill Walks and Runs?',
+      heading: 'What About Strava and Treadmill Distance?',
       html: `          <p>
-            Yes, Strava can record treadmill walks and runs, but it cannot use GPS for them, so the
-            distance comes from a watch's motion-based estimate, a connected treadmill or app, or a
-            figure you enter yourself.
+            Yes, but not through the Strava phone app on its own. Strava's help centre says the
+            mobile app cannot currently record an indoor run or measure distance with a pedometer, so
+            a treadmill session reaches Strava from a watch's indoor mode (or the Strava Apple Watch
+            app), from a linked platform such as Zwift, iFIT or Peloton, or as a manual entry.
           </p>
           <p>
-            The common routes are recording an indoor workout on a watch that syncs to Strava,
-            recording with the Strava app on a device that can estimate indoor distance, or linking
-            a treadmill platform or training app that pushes completed sessions across. In every
-            case, the distance Strava shows is only as good as its source — so the handrail,
-            stride and calibration points above apply in full. If the source counted too few steps,
-            the Strava activity is short by the same amount.
-          </p>
-          <p>
-            Two habits keep a Strava record tidy. Mark the activity as a treadmill or indoor
-            activity, so it is not treated like an outdoor GPS run; and if the distance is clearly
-            wrong, check the activity's edit options, where Strava has offered a way to correct
-            treadmill distance. Pace follows whichever distance is saved. Our guide to
-            <a href="/how-to-connect-apple-watch-to-treadmill/" class="text-[#0F62FE] font-medium">connecting an Apple Watch to a treadmill</a>
-            walks through the Strava routes for that watch in more detail.
+            In every case the distance Strava shows is only as good as its source, so the handrail,
+            stride and calibration points above apply in full. If the watch counted too few steps,
+            the Strava activity is short by the same amount, and Strava's help pages describe no way
+            to edit the distance of a device-recorded run afterwards. Fix the distance on the watch
+            before it syncs, or enter the session manually with the console figure. Indoor activities
+            have no map and do not compete on real-world segments. Our guide to
+            <a href="/does-strava-work-on-a-treadmill/" class="text-[#0F62FE] font-medium">whether Strava works on a treadmill</a>
+            walks through each route.
           </p>
           <p>
             The same principles apply to other fitness platforms: without GPS, a treadmill session
@@ -417,8 +412,8 @@ export default {
       a: `Wrist trackers recognise walking from the rhythm of your arm swing. With your hand on a rail, your wrist barely moves, so the tracker sees little of the pattern it looks for and may miss many steps or almost all of them. A phone in a pocket or a waist clip counts body movement instead and copes far better.`,
     },
     {
-      q: 'Does Strava track treadmill runs?',
-      a: `Yes, Strava can record treadmill runs and walks, but without GPS the distance comes from a watch or phone estimate, a connected treadmill or app, or a number you enter. Mark the activity as a treadmill or indoor activity, and correct the distance in the activity's edit options if it is clearly wrong. Pace follows the saved distance.`,
+      q: 'Why is my treadmill run short on Strava?',
+      a: `Because Strava shows whatever distance its source recorded. Without GPS, that is a watch's step-based estimate, a linked app's figure or a number you typed. Holding the rails, a changed stride or an uncalibrated watch all make the estimate short. Strava's help pages describe no fix after upload, so correct it on the watch first or enter the run manually.`
     },
     {
       q: 'Should I trust my watch or the treadmill for distance?',

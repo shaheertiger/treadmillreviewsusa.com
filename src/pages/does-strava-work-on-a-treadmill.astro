@@ -1,0 +1,746 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "Does Strava Work on a Treadmill? (2026): How to Record Indoor Runs";
+const description =
+  "Yes, but not from the phone app alone. How to log a treadmill run on Strava by watch, manual entry, Zwift, iFIT or Peloton, and why maps and segments differ.";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Buying Guides", item: "https://www.treadmillreviewsusa.com/guides/" },
+        { "@type": "ListItem", position: 3, name: "Strava on a Treadmill", item: "https://www.treadmillreviewsusa.com/does-strava-work-on-a-treadmill/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Does Strava work on a treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, but not from the Strava phone app alone. Strava's help centre says the mobile app cannot currently record indoor runs or measure distance with a pedometer. Record with the Strava Apple Watch app, a watch's own indoor run mode that syncs to Strava, a connected platform such as Zwift, iFIT or Peloton, or add a manual activity with the console distance.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does Strava track treadmill runs?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Strava stores and analyses treadmill runs, but it does not measure them itself. The distance comes from a watch's motion sensors, a foot pod, a treadmill platform that knows the belt speed, or a figure you type in. The activity will have no map and will not appear on real-world segment leaderboards, but it counts toward your training totals.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How do I record a treadmill run on Strava?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The simplest routes are an Indoor Run on Apple Watch synced through Apple Health, the Strava Apple Watch app, a Garmin or other watch's treadmill profile synced to Strava, or a manual entry. For a manual entry, tap the plus icon in the Strava app, choose Manual Activity, pick Run, and enter the time and console distance.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can you edit the distance of a treadmill run on Strava?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "For a manual activity, yes: Strava says you can edit its distance in the mobile app. For a run recorded by a watch or platform, the website's Correct Distance option recalculates from GPS, which does not help indoors. The practical fix is to calibrate on the watch before the activity syncs, or replace a badly wrong run with a manual entry.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do treadmill runs count for Strava segments?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. Segment times depend on crossing a segment's start and end points on a GPS track, and a treadmill run has no route. Virtual runs that carry GPS data can match segments, but Strava does not allow those times on public real-world leaderboards. Tagging an activity as Indoor removes it from segment leaderboards and hides the map.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Why does Strava show no map for my treadmill run?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Because there is no GPS route to draw. Strava says indoor activities do not show a map unless virtual GPS data was recorded and uploaded, as platforms like Zwift do. Instead, the activity page highlights the performance graph, showing heart rate, speed or cadence if your device recorded them. You still get credit for your elapsed time.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
+      datePublished: "2026-10-17",
+      dateModified: "2026-10-17",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-10-17",
+    modifiedTime: "2026-10-17",
+    author: "Shaheer Ali Khan",
+    section: "Fitness Equipment",
+    tags: [
+      "strava treadmill",
+      "does strava work on treadmill",
+      "strava treadmill run",
+      "strava indoor run",
+      "record treadmill run on strava",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "Pick the Right Method", link: "#which-method" }}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-doesstravaworkonatreadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-doesstravaworkonatreadmill)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            How-To
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated October 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          Does Strava Work on a Treadmill? <span class="text-[#5AA9FF]">How to Record a Treadmill Run</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          Strava will happily store a treadmill run, but it cannot measure one through your phone. The distance has to come from a watch, a connected treadmill app or a number you type in. Here is each route, checked against Strava’s own help pages, and how to keep the record honest.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            The Short Answer
+          </a>
+          <a href="#which-method" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            Which Method to Use
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
+          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">October 17, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="1.8k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">What we checked, and what we could not.</strong> On 17 October
+          2026 we checked Strava’s help centre articles on indoor, treadmill and trainer activities;
+          manual activities; how distance is calculated; changing activity type; virtual trainer
+          activities; getting activities to Strava; Apple Health, Health Connect and Google Health;
+          the Strava Apple Watch app; and the Garmin, Zwift, iFIT and Peloton integrations. We also
+          checked Apple’s support pages on Apple Watch accuracy and calibration, Garmin’s owner’s
+          manuals on treadmill calibration, and Zwift’s own page on uploading runs. Independent
+          coverage we found was older and contradicted Strava’s current help pages in places, so
+          where they disagree we follow Strava. We could not find a Strava help article describing
+          a way to edit the distance of a treadmill run recorded by a device, so we do not claim one
+          exists. Strava changes its features often; its help centre is the authority. We have not
+          tested these integrations ourselves.
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Does Strava Work on a Treadmill? The Short Answer</a>
+          <a href="#phone-app" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Can You Record a Treadmill Run in the Strava Phone App?</a>
+          <a href="#apple-watch" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Recording on Apple Watch: the Strava App or Apple Workout</a>
+          <a href="#garmin-and-other-watches" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Garmin and Other Watches</a>
+          <a href="#manual-entry" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. How to Add a Treadmill Run to Strava by Hand</a>
+          <a href="#connected-platforms" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Zwift, iFIT, Peloton and Other Platforms That Upload to Strava</a>
+          <a href="#fixing-distance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Fixing the Distance on a Treadmill Activity</a>
+          <a href="#maps-segments" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Maps, Segments and Leaderboards on Indoor Runs</a>
+          <a href="#activity-type" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Labelling the Activity Correctly</a>
+          <a href="#accurate-data" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Getting Cleaner Treadmill Data Into Strava</a>
+          <a href="#which-method" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Which Method Should You Use?</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          Strava was built around GPS, and a treadmill gives GPS nothing to work with: you run for
+          an hour and end up exactly where you started. That does not stop Strava recording the
+          session, but it changes where the numbers come from. Depending on how you record it, the
+          distance comes from your watch’s motion sensors, from a treadmill platform that knows the
+          belt speed, or from the console figure you type in afterwards. This guide covers each
+          route as Strava describes it in October 2026, what does and does not appear on an indoor
+          activity, and how to make the distance close enough to trust.
+        </p>
+
+        <div id="short-answer" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Does Strava Work on a Treadmill? The Short Answer</h2>
+<p>
+            <strong>Yes, Strava records treadmill runs, but not through the Strava phone app on its
+            own.</strong> Strava’s help centre says that in the mobile app it is not currently
+            possible to record indoor runs or to measure distance using a pedometer or other sensors.
+            The practical routes are:
+          </p>
+          <ul>
+            <li><strong>A watch.</strong> Record with the Strava Apple Watch app, which uses the
+            watch’s pedometer indoors, or with a watch’s own indoor or treadmill run mode (Apple
+            Workout, Garmin and others) and let it sync to Strava.</li>
+            <li><strong>A connected platform.</strong> Zwift, iFIT and Peloton can each send
+            completed sessions to Strava once you link the accounts.</li>
+            <li><strong>A manual entry.</strong> Type in the time and the console distance after the
+            run.</li>
+          </ul>
+          <p>
+            Whichever you use, the activity will not have a map, will not compete on real-world
+            segment leaderboards, and will only be as accurate as the source of its distance. If your
+            watch and the treadmill disagree, our guide to
+            <a href="/treadmill-calibration/" class="text-[#0F62FE] font-medium">treadmill calibration</a>
+            explains which one is more likely to be wrong.
+          </p>
+        </div>
+
+        <div id="phone-app" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Can You Record a Treadmill Run in the Strava Phone App?</h2>
+<p>
+            Not as a run with distance. Strava’s help article on indoor, treadmill and trainer
+            activities, dated 16 September 2026, says the mobile app can record a short list of
+            indoor sport types — CrossFit, elliptical, stair stepper, weight training, yoga and
+            workout — showing elapsed time, start time and heart rate from a paired monitor. It then
+            states plainly that recording indoor runs or rides, or measuring distance with a
+            pedometer or other sensors, is not currently possible in the mobile app.
+          </p>
+          <p>
+            This catches people out because older articles, and plenty of forum advice, describe
+            starting a run on the phone with GPS off and letting it estimate distance. That is not
+            what Strava’s current help says. If you start an ordinary outdoor run in the phone app
+            on a treadmill, it will try to use GPS, and the result is likely to be a near-zero
+            distance or a scribble of GPS drift rather than a useful record.
+          </p>
+          <p>
+            <strong>The indoor sport types it can record.</strong> If what you want is a timed session
+            with heart rate rather than a distance, the phone app can record one of its supported
+            indoor types, such as Workout, with a paired heart rate strap. That logs the effort, but
+            it will not appear as a run, will not carry a distance and will not add to your running
+            totals. For most treadmill runners that is the wrong compromise; a manual run entry or a
+            watch recording is better.
+          </p>
+          <p>
+            <strong>What the phone app is still good for.</strong> Adding a manual activity
+            afterwards (covered below), editing an activity’s sport type, and linking the accounts
+            that bring treadmill sessions in from elsewhere. If you only have a phone, a manual entry
+            with the console distance is the honest option. Our guide to whether
+            <a href="/does-a-fitness-tracker-count-steps-on-a-treadmill/" class="text-[#0F62FE] font-medium">a fitness tracker counts steps on a treadmill</a>
+            explains why a phone in a pocket or a console tray is a poor distance estimator anyway.
+          </p>
+        </div>
+
+        <div id="apple-watch" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Recording on Apple Watch: the Strava App or Apple Workout</h2>
+<p>
+            Apple Watch owners have two good routes, and the choice mainly decides which app holds
+            the original recording.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The Strava Apple Watch app</h3>
+          <p>
+            Strava says you can record indoor runs with its Apple Watch app, using the watch’s
+            pedometer to measure distance. Its setup article lists support for watchOS 10 or later
+            with iOS 17 or later, and says Apple Watch Series 4 or later can record without your
+            iPhone. Strava needs permission to read heart rate from Apple Health to show it. The
+            activity uploads when the phone is in range or the watch has a network connection.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Apple’s Workout app, synced to Strava</h3>
+          <p>
+            Apple’s guidance is to choose the workout type that matches what you are doing — for a
+            treadmill, Indoor Run — and it says the watch uses its accelerometer when you run
+            indoors. To get that workout into Strava, connect Apple Health in the Strava app under
+            Settings, Manage Apps and Devices, Health, and turn on Automatic Uploads. Strava’s help
+            sets two limits: only workouts recorded with Apple’s own Workout app sync, and only those
+            from the past 30 days. Workouts another company’s app wrote into Apple Health will not
+            come across this way.
+          </p>
+          <p>
+            <strong>Calibration matters more than the app.</strong> Apple says the watch learns your
+            stride from outdoor walks and runs with good GPS, and suggests about 20 minutes at your
+            normal pace, repeated at each speed you commonly use. A watch that has never been
+            calibrated outdoors will tend to be further off on a treadmill. If your treadmill
+            supports Apple GymKit, the treadmill can share its own data with the watch; our guide on
+            <a href="/how-to-connect-apple-watch-to-treadmill/" class="text-[#0F62FE] font-medium">connecting an Apple Watch to a treadmill</a>
+            covers that pairing.
+          </p>
+          <p>
+            <strong>Which of the two to choose.</strong> The Strava watch app puts the recording
+            straight into Strava, which suits people who live in Strava and want its own pace and
+            split screens on the wrist. Apple Workout keeps the original in Apple Health and Apple’s
+            Activity rings, and Strava picks it up from there, which suits people who already use
+            Apple Workout for everything else. The distance estimate comes from the same watch
+            sensors either way; what changes is the app on your wrist and where the master copy lives.
+            Just remember the 30-day window if you plan to import older Apple workouts.
+          </p>
+          <p>
+            Record with one app, not both. Strava does not allow duplicate activities, and running
+            the Strava watch app and Apple Workout at the same time simply gives you two estimates of
+            the same run to reconcile.
+          </p>
+        </div>
+
+        <div id="garmin-and-other-watches" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Garmin and Other Watches</h2>
+<p>
+            Most running watches have a treadmill or indoor run profile that switches off GPS and
+            estimates distance from wrist motion or a foot pod. The workout then reaches Strava
+            through the watch maker’s own account.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Garmin</h3>
+          <p>
+            Connect Garmin Connect to Strava once — from the Strava app under Settings, Connect an App
+            or Device, Garmin, or from Strava’s website settings — and activities sync automatically
+            after that. Strava notes that Garmin will only sync to the most recently created Strava
+            account if you have more than one, and that you can upload the original FIT file by hand
+            if an activity goes missing.
+          </p>
+          <p>
+            Garmin’s owner’s manuals describe treadmill distance calibration on supported watches:
+            after a long enough treadmill run, you enter the distance from the treadmill display, and
+            later you can use the Calibrate and Save option to adjust it again. The minimum run
+            distance and button names vary by model, so check your watch’s manual. Garmin also
+            suggests recalibrating when you change treadmills. Calibrate on the watch, before the
+            activity is saved and synced, because the number Strava receives is the one the watch
+            saved.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Other watches and trackers</h3>
+          <p>
+            Strava lists COROS, Polar, Suunto and Wahoo among the devices that commonly sync
+            automatically, and its integration directory covers many more. For Fitbit trackers and
+            Pixel Watch, Strava’s help describes an updated Google Health integration that can send
+            any activity type to Strava, with or without GPS, once you update the connection. On
+            Android, note that Strava’s Health Connect integration works the other way: Strava sends
+            GPS-based activities to Health Connect, so Health Connect is not a route for getting a
+            treadmill run into Strava.
+          </p>
+          <p>
+            If you are choosing a watch partly for treadmill work, our roundup of
+            <a href="/best-running-watches-for-treadmill/" class="text-[#0F62FE] font-medium">running watches for the treadmill</a>
+            covers indoor accuracy and foot pod support.
+          </p>
+        </div>
+
+        <div id="manual-entry" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. How to Add a Treadmill Run to Strava by Hand</h2>
+<p>
+            A manual activity is the simplest way to log a treadmill run with the treadmill’s own
+            distance, and for someone without a watch it is often the most accurate one, provided the
+            treadmill is reasonably calibrated. Strava describes the steps as follows:
+          </p>
+          <ol>
+            <li><strong>On the web:</strong> select the plus icon at the top right and choose Add
+            manual entry.</li>
+            <li><strong>On iPhone:</strong> on the You tab, tap the plus icon at the top right, then
+            Manual Activity.</li>
+            <li><strong>On Android:</strong> on the Home tab, tap the plus icon at the bottom right of
+            your feed, then Manual Activity.</li>
+            <li>Choose the sport (Run or Walk), enter the time, duration and distance from the
+            console, and save.</li>
+          </ol>
+          <p>
+            <strong>Editing it later.</strong> Strava says you can edit a manual activity’s start
+            time, distance and duration in the mobile app, but not its elevation. On the website you
+            cannot edit those values; you would have to delete the activity and create a new one,
+            which removes its kudos, comments and photos. So if you mistype the distance, fix it in
+            the app.
+          </p>
+          <p>
+            <strong>The trade-off.</strong> A manual entry has no heart rate, pace graph or splits —
+            just the totals you typed. Before relying on the console distance, it is worth checking
+            the belt once with the method in our guide to whether
+            <a href="/is-my-treadmill-speed-accurate/" class="text-[#0F62FE] font-medium">your treadmill speed is accurate</a>.
+          </p>
+        </div>
+
+        <div id="connected-platforms" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Zwift, iFIT, Peloton and Other Platforms That Upload to Strava</h2>
+<p>
+            If you run with a training platform, it usually knows the belt speed — from the treadmill
+            itself or from a foot pod — and can send the session to Strava with that distance. These
+            are the integrations we checked on 17 October 2026.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Zwift</h3>
+          <p>
+            Zwift says your activity uploads automatically to Strava or Garmin Connect once you
+            finish, after you connect the accounts. Strava’s help describes the connection from your
+            Zwift profile under Settings, Connections, Connect to Strava, and a manual route if an
+            upload fails: download the activity’s FIT file from your Zwift account and upload it on
+            Strava’s website. Past activities do not sync retroactively. Our
+            <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium">Zwift treadmill guide</a>
+            covers getting a reliable speed signal into Zwift in the first place.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">iFIT</h3>
+          <p>
+            Strava’s iFIT article says you connect from the iFIT app under Settings, Connected Apps,
+            Strava, after which activities from iFIT-enabled equipment signed in to your account sync
+            to Strava when you open the iFIT app on your phone. Only activities recorded after the
+            connection sync. Strava also warns that calories and distance can be displayed
+            differently on the two platforms for the same session.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Peloton</h3>
+          <p>
+            Strava’s Peloton article says that on a Peloton Tread you connect Strava from your
+            profile settings under Connected Apps, then share individual workouts from your workout
+            history or turn on automatic posting. Peloton App members connect through Peloton’s
+            members website instead.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">When more than one source sends the same run</h3>
+          <p>
+            It is easy to end up with two routes into Strava for one session — say, a Garmin watch
+            recording the treadmill run while iFIT or Zwift also posts it. Strava does not accept
+            duplicate activities, but two recordings with slightly different start times or
+            distances can both arrive. Decide which source you trust more for treadmill distance,
+            usually the platform reading the belt or a calibrated foot pod, and switch off automatic
+            posting from the other. Strava also notes that iFIT and Strava can display different
+            calories and distance for the same session, so pick one place to look at the numbers.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">File uploads</h3>
+          <p>
+            For anything without a direct link, Strava accepts GPX, TCX and FIT files up to 25 MB,
+            uploaded on its website, as long as the file contains workout data.
+          </p>
+        </div>
+
+        <div id="fixing-distance" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Fixing the Distance on a Treadmill Activity</h2>
+<p>
+            This is the question most treadmill runners on Strava end up asking, and the honest
+            answer in October 2026 is that it depends on how the activity was created.
+          </p>
+          <ul>
+            <li><strong>Manual activities</strong> can have their distance edited in the Strava
+            mobile app.</li>
+            <li><strong>Activities recorded by a watch or platform</strong> are harder. Strava’s
+            website has a Correct Distance option, but Strava describes it as recalculating distance
+            from the activity’s GPS points after upload. A treadmill run recorded with GPS off has no
+            useful GPS track, so this option is not a fix for treadmill distance. We could not find
+            a Strava help article describing another way to edit the distance of a device-recorded
+            treadmill run.</li>
+          </ul>
+          <p>
+            That leaves three practical approaches:
+          </p>
+          <ol>
+            <li><strong>Fix it at the source, before it syncs.</strong> On watches that support
+            treadmill calibration, such as many Garmin models, enter the console distance on the
+            watch when you finish so the saved activity carries the corrected figure.</li>
+            <li><strong>Improve the source over time.</strong> Calibrate an Apple Watch outdoors, or
+            use a foot pod, so future indoor runs start closer to the belt distance. Our
+            <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium">foot pod guide</a>
+            explains how pods are calibrated.</li>
+            <li><strong>Replace it with a manual entry.</strong> If one run is badly wrong and the
+            total matters to you, delete it and add a manual activity with the console distance,
+            accepting that you lose the heart rate data and any kudos.</li>
+          </ol>
+          <p>
+            <strong>Is it worth fixing?</strong> For a training log, consistency matters more than a
+            perfect number. If your watch reads a little short on every treadmill run, your trends
+            are still meaningful, and calibrating once is a better use of time than editing every
+            activity. It is worth correcting when a run is clearly wrong — a watch that lost contact,
+            a pod that dropped out — or when the distance feeds something you care about, such as a
+            training plan or a challenge.
+          </p>
+          <p>
+            Pace on Strava is calculated from distance over moving time, so whichever distance is
+            saved also sets the pace. A short distance makes the run look slow; it does not mean you
+            ran slowly.
+          </p>
+        </div>
+
+        <div id="maps-segments" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Maps, Segments and Leaderboards on Indoor Runs</h2>
+<p>
+            An indoor run on Strava looks different from an outdoor one, and that is by design.
+          </p>
+          <p>
+            <strong>No map.</strong> Strava says the indoor activity page will not show a map, unless
+            you are recording and uploading virtual GPS data, as platforms such as Zwift do. Instead
+            the page highlights the performance graph — heart rate, speed, cadence or power, where
+            available. With no sensor data at all there may be no graph, but you still get credit for
+            your elapsed time.
+          </p>
+          <p>
+            <strong>No real-world segments.</strong> Segment times are based on when you cross a
+            segment’s start and end points, and Strava says distance does not contribute to segments
+            at all. A treadmill run with no GPS track never crosses one. Virtual activities that do
+            carry GPS data can match segments, but Strava does not allow those times on public
+            real-world leaderboards, and its help lists ways to keep them off: flagging the activity,
+            making it private, or tagging it as Indoor, which removes it from segment leaderboards and
+            hides the map.
+          </p>
+          <p>
+            <strong>Totals still count.</strong> Distance from indoor activities contributes to your
+            training totals and profile stats. Whether a treadmill run counts toward a particular
+            distance challenge depends on that challenge’s rules, so read its eligibility details
+            before relying on it.
+          </p>
+        </div>
+
+        <div id="activity-type" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Labelling the Activity Correctly</h2>
+<p>
+            Strava lets you change an activity’s sport type at any time: on the website, through the
+            pencil icon on the activity page and the Sport menu; in the app, through the ellipsis
+            menu, Edit and the sport type list. Strava notes that changing the type can change which
+            segments an activity is matched to.
+          </p>
+          <p>
+            <strong>Virtual Run is not a label you can choose.</strong> Strava says a virtual sport
+            type can only be applied if the activity was originally recorded as a virtual activity on
+            a supported virtual trainer or treadmill, and that athletes cannot classify activities as
+            virtual by hand. Once an activity is a Virtual Run, its type cannot be changed to anything
+            else without a support ticket. A treadmill run from your watch will normally arrive as an
+            ordinary run.
+          </p>
+          <p>
+            <strong>Why it is worth getting right.</strong> Clear labelling keeps your treadmill runs
+            off outdoor leaderboards, makes your training log easier to read, and stops a short,
+            under-counted indoor run being mistaken for a slow outdoor one by the people who follow
+            you.
+          </p>
+        </div>
+
+        <div id="accurate-data" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Getting Cleaner Treadmill Data Into Strava</h2>
+<p>
+            Strava can only show what it was given, so accuracy is decided before the upload. In
+            rough order of impact:
+          </p>
+          <ul>
+            <li><strong>Check the treadmill first.</strong> If you are going to calibrate a watch to
+            the console, the console needs to be right. A quick belt-speed check tells you whether it
+            is.</li>
+            <li><strong>Calibrate the watch.</strong> Outdoors with GPS for Apple Watch; with the
+            treadmill calibration option on watches that have one.</li>
+            <li><strong>Let your arms swing.</strong> Wrist-based estimates rely on arm motion. Apple
+            notes that for walks the arm wearing the watch should swing naturally. Holding the
+            handrails undercounts badly; our guide on
+            <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium">holding the handrails</a>
+            covers why that also changes the workout.</li>
+            <li><strong>Consider a foot pod.</strong> A pod on the shoe measures foot motion
+            directly, so it does not depend on how your arms move. Our list of the
+            <a href="/best-foot-pods-for-treadmill/" class="text-[#0F62FE] font-medium">best foot pods for treadmill running</a>
+            covers compatible options.</li>
+            <li><strong>Switch GPS off.</strong> Strava advises disabling GPS when recording indoors,
+            especially with speed, cadence or power sensors, to keep distance and speed analysis
+            clean.</li>
+            <li><strong>Use one recorder.</strong> Pick one app or device per run, and link only the
+            accounts you need, so the same session does not arrive twice.</li>
+          </ul>
+        </div>
+
+        <div id="which-method" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Which Method Should You Use?</h2>
+<p>
+            Match the method to what you already own:
+          </p>
+          <ul>
+            <li><strong>Phone only, no watch:</strong> add a manual activity with the console
+            distance and time after each run. It is quick, and it uses the most accurate distance
+            you have.</li>
+            <li><strong>Apple Watch:</strong> record an Indoor Run in Apple Workout with Automatic
+            Uploads on, or use the Strava watch app. Calibrate the watch outdoors first.</li>
+            <li><strong>Garmin or another running watch:</strong> use its treadmill or indoor run
+            profile, calibrate to the console when you finish if it offers that, and let Garmin
+            Connect or the maker’s app sync to Strava.</li>
+            <li><strong>Zwift, iFIT or Peloton:</strong> link the platform to Strava once, and let it
+            send each session with the platform’s distance.</li>
+          </ul>
+          <p>
+            <strong>A worked example.</strong> Someone who runs outdoors at weekends with a Garmin
+            and on a gym treadmill twice a week might use the watch’s treadmill profile for the gym
+            runs, enter the console distance at the end of each one using the watch’s calibration
+            prompt, and let Garmin Connect sync everything. Their Strava log then shows outdoor runs
+            with maps and segments, treadmill runs without them, and weekly totals that include both.
+            Someone with only a phone would add each treadmill run as a manual activity in the Strava
+            app straight after the session, while the console figures are in front of them.
+          </p>
+          <p>
+            Whatever you choose, think of a treadmill run on Strava as a training log entry rather
+            than a measured route. It will be consistent if you record it the same way every time,
+            and that consistency is more useful for tracking progress than any single run being
+            exactly right.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Does Strava work on a treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Yes, but not from the Strava phone app alone. Strava's help centre says the mobile app cannot currently record indoor runs or measure distance with a pedometer. Record with the Strava Apple Watch app, a watch's own indoor run mode that syncs to Strava, a connected platform such as Zwift, iFIT or Peloton, or add a manual activity with the console distance.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Does Strava track treadmill runs?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Strava stores and analyses treadmill runs, but it does not measure them itself. The distance comes from a watch's motion sensors, a foot pod, a treadmill platform that knows the belt speed, or a figure you type in. The activity will have no map and will not appear on real-world segment leaderboards, but it counts toward your training totals.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How do I record a treadmill run on Strava?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                The simplest routes are an Indoor Run on Apple Watch synced through Apple Health, the Strava Apple Watch app, a Garmin or other watch's treadmill profile synced to Strava, or a manual entry. For a manual entry, tap the plus icon in the Strava app, choose Manual Activity, pick Run, and enter the time and console distance.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Can you edit the distance of a treadmill run on Strava?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                For a manual activity, yes: Strava says you can edit its distance in the mobile app. For a run recorded by a watch or platform, the website's Correct Distance option recalculates from GPS, which does not help indoors. The practical fix is to calibrate on the watch before the activity syncs, or replace a badly wrong run with a manual entry.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Do treadmill runs count for Strava segments?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                No. Segment times depend on crossing a segment's start and end points on a GPS track, and a treadmill run has no route. Virtual runs that carry GPS data can match segments, but Strava does not allow those times on public real-world leaderboards. Tagging an activity as Indoor removes it from segment leaderboards and hides the map.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Why does Strava show no map for my treadmill run?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Because there is no GPS route to draw. Strava says indoor activities do not show a map unless virtual GPS data was recorded and uploaded, as platforms like Zwift do. Instead, the activity page highlights the performance graph, showing heart rate, speed or cadence if your device recorded them. You still get credit for your elapsed time.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes When Recording Treadmill Runs on Strava</h2>
+          <p class="text-gray-700 leading-relaxed">Most bad treadmill data on Strava comes from one of these four habits, and each is easy to fix.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Starting an outdoor run on the phone</h3>
+              <p class="text-gray-700 text-sm m-0">The Strava phone app cannot record an indoor run with distance, so an outdoor run started on a treadmill relies on GPS that has nothing to measure. The result is a near-zero distance or random drift. Use a watch's indoor mode, a connected platform, or add a manual activity with the console figures once you finish.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Recording the same run twice</h3>
+              <p class="text-gray-700 text-sm m-0">Running the Strava watch app and Apple Workout together, or linking both a watch and a treadmill platform, can send two versions of one session. Strava rejects exact duplicates, but near-duplicates still muddle your log. Choose one recorder per run and switch off automatic uploads from the sources you do not use.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Expecting Correct Distance to fix it</h3>
+              <p class="text-gray-700 text-sm m-0">Strava's Correct Distance option recalculates from GPS points after upload. A treadmill run with GPS off has no meaningful track, so it cannot help. Correct the distance on the watch before saving if your watch supports treadmill calibration, or replace a badly wrong run with a manual entry using the console distance.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Calibrating to an unchecked console</h3>
+              <p class="text-gray-700 text-sm m-0">Matching your watch to the treadmill display only helps if the display is right. Belt speed drifts with wear, slipping and set-up. Check the belt speed once with a simple mark-and-time test, then calibrate the watch or foot pod to the figure you trust, and recalibrate when you switch treadmills.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Buying Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/how-to-connect-apple-watch-to-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Apple Watch</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">How to Connect Apple Watch to a Treadmill</p>
+              <p class="text-sm text-gray-500 leading-relaxed">GymKit pairing, Indoor Run and why the numbers disagree.</p>
+            </a>
+            <a href="/zwift-treadmill-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Zwift</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Zwift Treadmill Guide</p>
+              <p class="text-sm text-gray-500 leading-relaxed">How Zwift Run works with almost any treadmill.</p>
+            </a>
+            <a href="/treadmill-calibration/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Accuracy</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Calibration</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Checking belt speed, incline and your watch against each other.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">Strava works on a treadmill, as long as something else measures the run.</strong>
+            Record with a watch’s indoor mode or the Strava Apple Watch app, link Zwift, iFIT or
+            Peloton, or type in the console distance as a manual activity. The phone app alone cannot
+            record an indoor run with distance.
+          </p>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            Expect no map and no segments, and fix distance at the source rather than after upload. A
+            calibrated watch, a foot pod or a checked console makes the biggest difference, and our
+            guide to whether a
+            <a href="/does-a-fitness-tracker-count-steps-on-a-treadmill/" class="text-[#5AA9FF] font-bold no-underline">fitness tracker counts treadmill steps</a>
+            explains why wrist data drifts indoors.
+          </p>
+        </div>
+
+        <!-- Meet the Author -->
+        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
+          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
+          <div>
+            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
+            <p class="text-sm font-bold text-gray-900 m-0">
+              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
+              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+            </p>
+            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
+              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
+              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
+              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
+              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
+              running ergonomics, noise and long-term durability. Every guide says what was checked and
+              when, and says plainly when a product has not been tested hands-on.
+              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
+              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </article>
+</Layout>

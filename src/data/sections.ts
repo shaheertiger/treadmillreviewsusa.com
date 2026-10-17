@@ -532,6 +532,13 @@ export const SECTIONS: Section[] = [
             url: '/how-much-does-a-treadmill-cost/',
           },
           {
+            title: 'How Much Is a Peloton Treadmill?',
+            description:
+              'Tread Flex, Tread Vision and Tread+ Vision prices checked on Peloton US, plus assembly, financing and the recall.',
+            badge: 'Peloton',
+            url: '/how-much-is-a-peloton-treadmill/',
+          },
+          {
             title: 'Cheap vs. Premium Treadmill',
             description:
               'Component by component, what the extra money buys — and which three parts you will notice.',
@@ -1664,6 +1671,20 @@ export const SECTIONS: Section[] = [
               'GymKit pairing, Indoor Run workouts without it, why distances disagree, and logging runs on Strava.',
             badge: 'How-to',
             url: '/how-to-connect-apple-watch-to-treadmill/',
+          },
+          {
+            title: 'Does Strava Work on a Treadmill?',
+            description:
+              'Why the phone app cannot record indoor runs, and the watch, platform and manual routes that work.',
+            badge: 'How-to',
+            url: '/does-strava-work-on-a-treadmill/',
+          },
+          {
+            title: 'Does Pokémon GO Work on a Treadmill?',
+            description:
+              'How Adventure Sync counts treadmill walking, hatching eggs indoors, and why spoofing risks a ban.',
+            badge: 'How-to',
+            url: '/does-pokemon-go-work-on-a-treadmill/',
           },
           {
             title: 'Smart Treadmill vs. Regular',

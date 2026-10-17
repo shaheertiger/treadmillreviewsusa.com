@@ -202,35 +202,30 @@ export default {
     },
     {
       id: 'strava',
-      heading: 'Does Strava Work on a Treadmill?',
+      heading: 'Getting Apple Watch Treadmill Runs Onto Strava',
       html: `          <p>
-            <strong>Yes.</strong> Strava records treadmill runs and walks, and there are three common
-            ways to get one there.
+            Strava stores treadmill runs, but its help centre says the Strava phone app cannot
+            currently record an indoor run or measure distance with a pedometer, so the distance has
+            to come from somewhere else. With an Apple Watch there are two clean routes.
           </p>
           <p>
-            <strong>From your Apple Watch workout.</strong> Record an Indoor Run or Walk with the
-            Workout app (or a GymKit session), then let it sync to Strava. Strava can import workouts
-            from Apple Health once you allow it in the Strava app's settings, and Strava also has its
-            own Apple Watch app. The workout arrives with heart rate and the watch's distance, or the
-            treadmill's distance if GymKit was used.
+            <strong>Apple's Workout app, synced through Apple Health.</strong> Record an Indoor Run
+            or Indoor Walk (or a GymKit session) in the Workout app, then allow Strava to read from
+            Apple Health in the Strava app's settings. Strava says only workouts recorded in Apple's
+            own Workout app import this way, and only recent ones, so turn the link on before you
+            rely on it.
           </p>
           <p>
-            <strong>From the Strava app directly.</strong> You can record an activity on your phone or
-            watch with the Strava app. Indoors there is no GPS route, so distance comes from motion
-            sensors where the device supports that, or you enter it afterwards. A phone in your pocket
-            or on the console is a poorer distance estimator than a watch on your wrist.
+            <strong>The Strava Apple Watch app.</strong> Strava's own watch app can record an indoor
+            run, using the watch's pedometer for distance.
           </p>
           <p>
-            <strong>From a connected app.</strong> Many treadmill platforms and training apps can
-            push completed sessions to Strava once you link the accounts, often with the treadmill's
-            own distance and speed data.
-          </p>
-          <p>
-            <strong>Mark it as a treadmill run.</strong> Strava lets you flag a run as a treadmill or
-            indoor activity, which keeps it from being compared against outdoor segments and routes.
-            Strava has also offered a way to correct the distance of a treadmill activity after it is
-            uploaded, so it matches the belt; where available, it is in the activity's edit options.
-            Pace on Strava follows whichever distance is saved, so fixing the distance fixes the pace.
+            Either way the activity has no map and does not compete on real-world segments. Strava's
+            help pages describe no way to edit the distance of a run recorded by a device, so get the
+            distance right on the watch: calibrate outdoors and keep your arms moving. Connected
+            platforms such as Zwift, iFIT and Peloton can also upload sessions. Our guide to
+            <a href="/does-strava-work-on-a-treadmill/" class="text-[#0F62FE] font-medium">whether Strava works on a treadmill</a>
+            covers every route, manual entry included.
           </p>`,
     },
     {
@@ -271,8 +266,8 @@ export default {
             duplicates.</li>
             <li><strong>Calibrate outdoors occasionally.</strong> A few GPS runs or walks with the
             watch improve its indoor estimates.</li>
-            <li><strong>Correct distance at the end</strong> where your watchOS version or Strava
-            offers it, using the treadmill's figure.</li>
+            <li><strong>Correct distance at the end</strong> where your watchOS version offers it,
+            using the treadmill's figure, before the workout syncs anywhere else.</li>
             <li><strong>Keep arms moving naturally</strong> where it is safe to do so; holding the
             rails ruins wrist-based distance.</li>
             <li><strong>Use a chest strap</strong> for intervals if heart-rate accuracy matters.</li>
@@ -315,8 +310,8 @@ export default {
       a: `If the treadmill supports Apple GymKit (look for a "Connects to Apple Watch" logo), make sure gym-equipment detection is on in your watch's Workout settings, hold the watch near the contactless reader on the console until it confirms, then press start. If the treadmill does not support GymKit, start an Indoor Run or Indoor Walk in the Workout app instead; there is nothing to pair.`,
     },
     {
-      q: 'Does Strava work on a treadmill?',
-      a: `Yes. Record the session as an Indoor Run on your Apple Watch and sync it to Strava, record with the Strava app, or link a treadmill or training app that uploads to Strava. Mark the activity as a treadmill run so it is not compared with outdoor segments, and correct the distance after upload where Strava offers that option.`,
+      q: 'Does Strava work on a treadmill with an Apple Watch?',
+      a: `Yes. Record an Indoor Run in the Workout app and let Strava import it from Apple Health, or record with the Strava Apple Watch app, which uses the watch's pedometer indoors. The Strava phone app cannot record an indoor run on its own. The activity has no map or segments, so get the distance right on the watch.`
     },
     {
       q: 'Is Apple Watch accurate on a treadmill?',
@@ -383,8 +378,8 @@ export default {
             not, so <strong class="text-white">start an Indoor Run or Indoor Walk</strong> on the watch
             instead, keep your arms moving, and correct the distance at the end where your watchOS
             version allows.`,
-    `Strava works fine on a treadmill: sync the watch workout, mark it as a treadmill run, and
-            fix the distance if needed. If you are buying a machine, prioritise build quality over
+    `Strava works on a treadmill through the watch, not the phone: record the session on the
+            Apple Watch and let it sync, and get the distance right on the watch first. If you are buying a machine, prioritise build quality over
             watch integration — our
             <a href="/treadmill-buying-guide-2026/" class="text-[#5AA9FF] font-bold no-underline">buying guide</a>
             explains what matters most.`,

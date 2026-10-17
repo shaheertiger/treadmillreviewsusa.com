@@ -55,10 +55,10 @@ const schema = {
         },
         {
           "@type": "Question",
-          name: "Does Strava track treadmill runs?",
+          name: "Why is my treadmill run short on Strava?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes, Strava can record treadmill runs and walks, but without GPS the distance comes from a watch or phone estimate, a connected treadmill or app, or a number you enter. Mark the activity as a treadmill or indoor activity, and correct the distance in the activity's edit options if it is clearly wrong. Pace follows the saved distance.",
+            text: "Because Strava shows whatever distance its source recorded. Without GPS, that is a watch's step-based estimate, a linked app's figure or a number you typed. Holding the rails, a changed stride or an uncalibrated watch all make the estimate short. Strava's help pages describe no fix after upload, so correct it on the watch first or enter the run manually.",
           },
         },
         {
@@ -189,7 +189,7 @@ const schema = {
           <a href="#indoor-mode" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Do You Need to Start an Indoor Walk or Run Workout?</a>
           <a href="#distance-disagree" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Why Does My Tracker Distance Not Match the Treadmill?</a>
           <a href="#stride-calibration" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. How Do You Calibrate a Tracker for Treadmill Walking?</a>
-          <a href="#strava" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Does Strava Track Treadmill Walks and Runs?</a>
+          <a href="#strava" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. What About Strava and Treadmill Distance?</a>
           <a href="#walking-pads" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. What About Walking Pads and Desk Walking?</a>
           <a href="#what-to-trust" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Which Number Should You Trust: Tracker, Phone or Console?</a>
           <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
@@ -463,27 +463,22 @@ const schema = {
         </div>
 
         <div id="strava" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Does Strava Track Treadmill Walks and Runs?</h2>
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. What About Strava and Treadmill Distance?</h2>
 <p>
-            Yes, Strava can record treadmill walks and runs, but it cannot use GPS for them, so the
-            distance comes from a watch's motion-based estimate, a connected treadmill or app, or a
-            figure you enter yourself.
+            Yes, but not through the Strava phone app on its own. Strava's help centre says the
+            mobile app cannot currently record an indoor run or measure distance with a pedometer, so
+            a treadmill session reaches Strava from a watch's indoor mode (or the Strava Apple Watch
+            app), from a linked platform such as Zwift, iFIT or Peloton, or as a manual entry.
           </p>
           <p>
-            The common routes are recording an indoor workout on a watch that syncs to Strava,
-            recording with the Strava app on a device that can estimate indoor distance, or linking
-            a treadmill platform or training app that pushes completed sessions across. In every
-            case, the distance Strava shows is only as good as its source — so the handrail,
-            stride and calibration points above apply in full. If the source counted too few steps,
-            the Strava activity is short by the same amount.
-          </p>
-          <p>
-            Two habits keep a Strava record tidy. Mark the activity as a treadmill or indoor
-            activity, so it is not treated like an outdoor GPS run; and if the distance is clearly
-            wrong, check the activity's edit options, where Strava has offered a way to correct
-            treadmill distance. Pace follows whichever distance is saved. Our guide to
-            <a href="/how-to-connect-apple-watch-to-treadmill/" class="text-[#0F62FE] font-medium">connecting an Apple Watch to a treadmill</a>
-            walks through the Strava routes for that watch in more detail.
+            In every case the distance Strava shows is only as good as its source, so the handrail,
+            stride and calibration points above apply in full. If the watch counted too few steps,
+            the Strava activity is short by the same amount, and Strava's help pages describe no way
+            to edit the distance of a device-recorded run afterwards. Fix the distance on the watch
+            before it syncs, or enter the session manually with the console figure. Indoor activities
+            have no map and do not compete on real-world segments. Our guide to
+            <a href="/does-strava-work-on-a-treadmill/" class="text-[#0F62FE] font-medium">whether Strava works on a treadmill</a>
+            walks through each route.
           </p>
           <p>
             The same principles apply to other fitness platforms: without GPS, a treadmill session
@@ -604,9 +599,9 @@ const schema = {
               </p>
             </div>
             <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Does Strava track treadmill runs?</h3>
+              <h3 class="font-bold text-gray-900 mb-2">Why is my treadmill run short on Strava?</h3>
               <p class="text-gray-700 text-sm leading-relaxed">
-                Yes, Strava can record treadmill runs and walks, but without GPS the distance comes from a watch or phone estimate, a connected treadmill or app, or a number you enter. Mark the activity as a treadmill or indoor activity, and correct the distance in the activity's edit options if it is clearly wrong. Pace follows the saved distance.
+                Because Strava shows whatever distance its source recorded. Without GPS, that is a watch's step-based estimate, a linked app's figure or a number you typed. Holding the rails, a changed stride or an uncalibrated watch all make the estimate short. Strava's help pages describe no fix after upload, so correct it on the watch first or enter the run manually.
               </p>
             </div>
             <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
