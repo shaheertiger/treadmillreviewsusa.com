@@ -23,13 +23,31 @@ const schema = {
       name: title,
       description,
       dateModified: "2026-10-17",
-      author: {
-        "@type": "Person",
-        name: "Shaheer Ali Khan",
-        url: AUTHOR_URL,
-        sameAs: [AUTHOR_URL],
-        jobTitle: "Author and lab tester",
-      },
+      author: { "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan" },
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan",
+      name: "Shaheer Ali Khan",
+      honorificSuffix: "PhD",
+      jobTitle: "Exercise Physiology & Biomechanics Specialist",
+      url: "https://www.treadmillreviewsusa.com/editorial-standards/#who",
+      image: "https://www.treadmillreviewsusa.com/authors/shaheer-ali-khan.png",
+      sameAs: [AUTHOR_URL],
+      worksFor: { "@type": "Organization", name: "Treadmill Reviews USA", url: "https://www.treadmillreviewsusa.com/" },
+      alumniOf: [
+        { "@type": "CollegeOrUniversity", name: "University of Michigan" },
+        { "@type": "CollegeOrUniversity", name: "University of Florida" },
+      ],
+      hasCredential: [
+        { "@type": "EducationalOccupationalCredential", credentialCategory: "degree", name: "PhD in Kinesiology (Biomechanics)", recognizedBy: { "@type": "CollegeOrUniversity", name: "University of Michigan" } },
+        { "@type": "EducationalOccupationalCredential", credentialCategory: "degree", name: "MS in Exercise Physiology", recognizedBy: { "@type": "CollegeOrUniversity", name: "University of Florida" } },
+        { "@type": "EducationalOccupationalCredential", credentialCategory: "degree", name: "BS in Exercise Science", recognizedBy: { "@type": "CollegeOrUniversity", name: "University of Florida" } },
+        { "@type": "EducationalOccupationalCredential", credentialCategory: "certification", name: "ACSM Certified Exercise Physiologist (ACSM-EP)", recognizedBy: { "@type": "Organization", name: "American College of Sports Medicine" } },
+        { "@type": "EducationalOccupationalCredential", credentialCategory: "certification", name: "Certified Strength and Conditioning Specialist (CSCS)", recognizedBy: { "@type": "Organization", name: "National Strength and Conditioning Association" } },
+        { "@type": "EducationalOccupationalCredential", credentialCategory: "certification", name: "ACSM Certified Personal Trainer (ACSM-CPT)", recognizedBy: { "@type": "Organization", name: "American College of Sports Medicine" } },
+      ],
+      knowsAbout: ["Treadmill performance evaluation", "Running biomechanics", "Exercise physiology", "Fitness equipment analysis"],
     },
   ],
 };
@@ -49,11 +67,26 @@ const schema = {
     <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
       <h2 id="who">Who writes these guides</h2>
       <p>
-        Treadmill Reviews USA is written by
-        <a href={AUTHOR_URL} rel="author noopener" target="_blank">Shaheer Ali Khan</a>, the site's
-        author and lab tester, based in the United States. Every guide carries the date it was last
-        checked.
+        Treadmill Reviews USA is written by <strong>Shaheer Ali Khan, PhD</strong>, an exercise
+        physiology and biomechanics specialist based in the United States
+        (<a href={AUTHOR_URL} rel="noopener" target="_blank">LinkedIn</a>). His work focuses on treadmill
+        performance evaluation, running biomechanics, exercise physiology and fitness equipment
+        analysis. His testing looks at motor performance, belt stability, shock absorption, incline
+        accuracy, running ergonomics, noise and long-term durability, so that readers can match a
+        machine to their goals, training and budget. Every guide carries the date it was last checked.
       </p>
+      <h3>Education</h3>
+      <ul>
+        <li>PhD in Kinesiology (Biomechanics), University of Michigan</li>
+        <li>MS in Exercise Physiology, University of Florida</li>
+        <li>BS in Exercise Science, University of Florida</li>
+      </ul>
+      <h3>Certifications</h3>
+      <ul>
+        <li>ACSM Certified Exercise Physiologist (ACSM-EP), American College of Sports Medicine</li>
+        <li>Certified Strength and Conditioning Specialist (CSCS), National Strength and Conditioning Association</li>
+        <li>ACSM Certified Personal Trainer (ACSM-CPT), American College of Sports Medicine</li>
+      </ul>
 
       <h2 id="testing">Testing, and saying when we have not tested</h2>
       <p>
@@ -92,9 +125,11 @@ const schema = {
 
       <h2 id="health">Health and safety topics</h2>
       <p>
-        We review equipment. We are not doctors, physiotherapists, coaches or dietitians, and pages
-        that touch on health say so. Anyone with a medical condition, injury or concern should talk
-        to a qualified professional before starting a new exercise routine.
+        Our author is an exercise physiologist and strength and conditioning specialist, not a
+        physician, physiotherapist or dietitian. Our guides give general information about equipment
+        and training, not individual medical or coaching advice, and pages that touch on health say
+        so. Anyone with a medical condition, injury or concern should talk to their doctor before
+        starting a new exercise routine.
       </p>
 
       <h2 id="corrections">Corrections and updates</h2>
