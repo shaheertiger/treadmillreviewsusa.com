@@ -648,6 +648,15 @@ npm run amazon:apply   # write /dp/ links into hand-written pages and regenerate
   so the button is honest about where it goes. Products Amazon does carry under their brand keep
   their exact-name search.
 
+- Third run (2026-10-17), over the 212 still unmatched: 2 new matches (Schwinn 810, Isolate It!
+  Sorbothane 4 x 4 in. pad), both checked by hand. `apply-hand-pages.mjs` also had a bug where a
+  product that already had a direct link hid the next product's search link from the swap; fixed,
+  which also moved three Sole F65 cards onto their stored ASIN.
+- Every "Check Price on Amazon" button goes to Amazon. The 18 single-product reviews that still
+  pointed their hero button and mobile sticky bar at the page's `#cta` anchor now link to
+  `PRODUCT.amazonUrl` directly, and the sticky bar gets `rel="sponsored nofollow noopener"` for
+  Amazon links (in-page anchors no longer open a new tab).
+
 ## Keyword research
 
 `research/competitor-keywords/` holds the supplied competitor exports verbatim, with a README

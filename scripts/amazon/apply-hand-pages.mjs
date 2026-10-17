@@ -23,8 +23,9 @@ for (const f of readdirSync(PAGES_DIR).filter((f) => f.endsWith('.astro'))) {
   if (existsSync(join(SPECS_DIR, f.replace(/\.astro$/, '.mjs')))) continue; // generated
   const path = join(PAGES_DIR, f);
   const src = readFileSync(path, 'utf8');
-  const out = src.replace(/(name:\s*"([^"]+)"[\s\S]*?amazonUrl:\s*)"(https:\/\/www\.amazon\.com\/s\?[^"]*)"/g, (whole, head, name, url) => {
-    if (/name:\s*"/.test(head.slice(5))) return whole; // matched across two products
+  // The gap between name and amazonUrl may not contain another product's name, so a
+  // product whose link is already direct can't swallow the next product's search link.
+  const out = src.replace(/(name:\s*"([^"]+)"(?:(?!name:\s*")[\s\S])*?amazonUrl:\s*)"(https:\/\/www\.amazon\.com\/s\?[^"]*)"/g, (whole, head, name, url) => {
     const hit = asins[name];
     if (hit) {
       changed++;
