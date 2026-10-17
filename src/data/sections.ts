@@ -881,6 +881,13 @@ export const SECTIONS: Section[] = [
             url: '/reebok-treadmills/',
           },
           {
+            title: 'Are DeerRun Treadmills Good?',
+            description:
+              'Who is behind DeerRun, the walking-pad range, warranty, support and where budget pads fall short.',
+            badge: 'DeerRun',
+            url: '/are-deer-run-treadmills-good/',
+          },
+          {
             title: 'MaxKare Treadmills',
             description:
               'A Walmart-led marketplace brand: what its listings claim and where they contradict themselves.',
@@ -1671,6 +1678,13 @@ export const SECTIONS: Section[] = [
               'GymKit pairing, Indoor Run workouts without it, why distances disagree, and logging runs on Strava.',
             badge: 'How-to',
             url: '/how-to-connect-apple-watch-to-treadmill/',
+          },
+          {
+            title: 'What Is a Treadmill?',
+            description:
+              'What a treadmill is and does, its main parts, the seven types, and what it cannot do.',
+            badge: 'Explainer',
+            url: '/what-is-a-treadmill/',
           },
           {
             title: 'Does Strava Work on a Treadmill?',
@@ -2469,6 +2483,13 @@ export const SECTIONS: Section[] = [
               'A full session in order: warm-up, starting pace, stride, posture, run/walk intervals and cooldown.',
             badge: 'How-to',
             url: '/how-to-run-on-a-treadmill/',
+          },
+          {
+            title: 'How to Use a Planet Fitness Treadmill',
+            description:
+              'Starting a gym treadmill, the safety clip, controls, Apple Watch pairing and the 12-3-30 workout.',
+            badge: 'How-to',
+            url: '/how-to-use-a-planet-fitness-treadmill/',
           },
           {
             title: 'Warm Up and Cool Down',
