@@ -1,6 +1,6 @@
 export default {
   slug: 'how-to-disassemble-a-treadmill',
-  title: 'How Do You Disassemble a Treadmill? (2026): Steps, Tools and Safety',
+  title: 'How to Disassemble a Treadmill (2026): Take Apart a NordicTrack',
   description:
     'How to take apart a treadmill for moving, stairs or disposal: tools, safety, console cable, uprights, folding frame, motor hood and deck, labelling bolts, and reassembly.',
   crumbLabel: 'How to Disassemble a Treadmill',

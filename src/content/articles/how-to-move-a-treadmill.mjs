@@ -1,6 +1,6 @@
 export default {
   slug: 'how-to-move-a-treadmill',
-  title: 'How to Move a Treadmill (2026): Upstairs, Downstairs and Across Town',
+  title: 'How to Move a Treadmill (2026): Transport, Stairs and Moving Day',
   description:
     'Moving a treadmill safely: typical weights, measuring the route, locking the deck, stairs with a dolly, loading a van, and the checks to do before you run on it again.',
   crumbLabel: 'How to Move a Treadmill',

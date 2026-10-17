@@ -375,8 +375,8 @@ export default {
       a: `Wrist-worn trackers detect steps from arm swing, so holding the handrails, resting your hands on a desk or holding a phone can cause them to miss steps. Indoors they also estimate distance from steps and an assumed step length rather than GPS. Walk with a natural arm swing for the most accurate count.`,
     },
     {
-      q: 'How many miles is 10,000 steps on a treadmill?',
-      a: `Roughly 4 to 5 miles for most people walking, at 2,000 to 2,500 steps per mile. At a brisk 3 mph that is around 90 to 100 minutes of walking. Most people treat 10,000 as a daily total including everyday movement rather than something to achieve in one treadmill session.`,
+      q: 'How long does it take to walk 10,000 steps on a treadmill?',
+      a: `Typically around 75 to 100 minutes of walking, depending on pace. That covers roughly 4 to 5 miles for most people at 2,000 to 2,500 steps per mile, and at a brisk 3 mph it works out at about 90 minutes. Most people treat 10,000 as a daily total including everyday movement rather than something to achieve in one treadmill session.`,
     },
     {
       q: 'Does height affect steps per mile?',

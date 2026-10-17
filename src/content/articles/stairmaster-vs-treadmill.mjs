@@ -296,8 +296,8 @@ export default {
       a: `Not overall. A stair climber (StairMaster is the best-known brand) is better for short, hard, low-impact sessions that work the glutes and quads intensely. A treadmill is more versatile, suits more fitness levels and is far more practical to own at home. For most home buyers a treadmill, ideally with incline, is the better choice; in a gym, using both is best.`,
     },
     {
-      q: 'Is StairMaster better than treadmill for weight loss?',
-      a: `Not inherently. Calorie burn is driven mainly by effort, duration and body weight. A stair climber gets most people to a high effort quickly, but a jog or a steep incline walk at the same effort burns a similar amount. The machine you use consistently matters far more, and console calorie figures are optimistic estimates.`,
+      q: 'What burns more calories, a StairMaster or a treadmill?',
+      a: `Neither, inherently. Calorie burn is driven mainly by effort, duration and body weight. A stair climber gets most people to a high effort quickly, but a jog or a steep incline walk at the same effort burns a similar amount. The machine you use consistently matters far more, and console calorie figures are optimistic estimates.`,
     },
     {
       q: 'Does a stair climber work the glutes more than a treadmill?',

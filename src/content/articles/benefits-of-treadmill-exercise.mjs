@@ -1,6 +1,6 @@
 export default {
   slug: 'benefits-of-treadmill-exercise',
-  title: 'Benefits of Treadmill Exercise (2026): Is a Treadmill Good Exercise?',
+  title: 'Treadmill Benefits (2026): What a Treadmill Does to Your Body',
   description:
     'The honest list of treadmill benefits — heart and lung fitness, precise control, weather-proof habit, weight-bearing loading — plus the real downsides most pages leave out.',
   crumbLabel: 'Benefits of Treadmill Exercise',
@@ -419,7 +419,7 @@ export default {
       a: `The main benefits are improved heart and lung fitness, the ability to exercise consistently regardless of weather or darkness, precise control of speed and incline for gradual progression, weight-bearing loading that supports bone and muscle, and a more even surface than roads. Regular exercise is also associated with better mood and sleep.`,
     },
     {
-      q: 'Is a treadmill good exercise?',
+      q: 'Is walking on a treadmill good for you?',
       a: `Yes. Walking and running are among the best-studied forms of exercise, and a treadmill delivers the same core benefits while making them available every day. Brisk walking for 30 minutes on five days a week meets the core US activity guideline for adults. Add strength training twice a week for a complete routine.`,
     },
     {

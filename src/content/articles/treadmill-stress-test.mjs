@@ -354,6 +354,10 @@ export default {
       a: `It shows how your heart responds to increasing exercise. An ECG records the heart's electrical activity while you walk at rising speed and incline, and staff track your blood pressure and symptoms. The test looks for changes that can suggest reduced blood flow to the heart muscle, abnormal heart rhythms, an unusual blood pressure response, and your overall exercise capacity. Your clinician interprets the result.`,
     },
     {
+      q: 'How do you pass a treadmill stress test?',
+      a: `It is not a fitness exam you pass by being fit. The result is what the ECG, blood pressure and your symptoms show as the workload rises, and the clinician interprets it. What you control is preparation: follow the clinic's instructions on food, caffeine and medication, wear proper walking shoes, give an honest effort, and tell the team straight away about chest pain, dizziness or breathlessness.`,
+    },
+    {
       q: 'How does a treadmill stress test work?',
       a: `Electrodes are placed on your chest and a blood pressure cuff on your arm, and resting readings are taken. You then walk on a treadmill that gets faster and steeper in stages — commonly every three minutes under the Bruce protocol — while your ECG is monitored continuously. The test stops at a planned end-point, when you are too tired, or if symptoms or changes appear, followed by several minutes of monitored recovery.`,
     },
