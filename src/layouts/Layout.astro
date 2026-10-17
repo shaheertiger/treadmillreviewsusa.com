@@ -340,8 +340,8 @@ const navSections = SECTIONS.filter((section) => !section.noindex);
           <div class="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 z-50 shadow-[0_-4px_10px_rgba(0,0,0,0.05)]">
             <a
               href={stickyCta.link}
-              target="_blank"
-              rel="noopener noreferrer"
+              target={/^https?:/.test(stickyCta.link) ? "_blank" : undefined}
+              rel={/amazon\.com/.test(stickyCta.link) ? "sponsored nofollow noopener" : /^https?:/.test(stickyCta.link) ? "noopener noreferrer" : undefined}
               class="w-full bg-[#FF5A1F] hover:bg-[#E64F16] text-white py-4 rounded-xl font-bold flex items-center justify-center gap-2 transition-all active:scale-95 shadow-lg no-underline"
             >
               {stickyCta.text}
