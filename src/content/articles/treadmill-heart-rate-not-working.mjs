@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-heart-rate-not-working',
-  title: 'Treadmill Heart Rate Monitor Not Working? (2026): Grips, Straps, Watches',
+  title: 'Treadmill Heart Rate Monitor Not Working? (2026 Fixes)',
   description:
     'Treadmill grip sensors that read nothing or nonsense, chest straps that will not pair, watches that disagree: why each happens, what fixes it, and which number to trust.',
   crumbLabel: 'Treadmill Heart Rate Not Working',

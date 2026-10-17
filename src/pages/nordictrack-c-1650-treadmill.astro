@@ -5,12 +5,11 @@ import SocialProof from "../components/SocialProof.astro";
 
 const title = "NordicTrack C 1650 Treadmill Review (2026): Is It Worth It?";
 const description =
-  "We spent four weeks walking and jogging on the NordicTrack C 1650, the longer-decked step up in NordicTrack's C-Series. Here's an honest look at whether the extra deck length and bigger screen are worth the price jump.";
+  "We compared the NordicTrack C 1650, the longer-decked step up in NordicTrack's C-Series, on its published specs and warranty. Here's an honest look at whether the extra deck length and bigger screen are worth the price jump.";
 
 const PRODUCT = {
   name: "NordicTrack C 1650",
-  rating: 4.5,
-  reviewCount: 2210,
+  editorialScore: 4.5,
   amazonUrl:
     "https://www.amazon.com/s?k=NordicTrack+treadmill&tag=sktiger-20",
   priceRange: "$1,299-$1,499",
@@ -124,7 +123,7 @@ const schema = {
           name: "Is the 10-inch screen a meaningful upgrade over the C 990's 7-inch screen?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes, noticeably. The larger display makes trail video and workout content feel closer to watching on a small tablet than a phone, and stats are easier to read at a glance during faster-paced workouts. It's still smaller than the touchscreens on NordicTrack's Commercial-series machines, but it's a real step up from the C 990.",
+            text: "Yes, noticeably. The larger display makes trail video and workout content feel closer to watching on a small tablet than the C 990's more phone-sized 7-inch screen. Reading stats at a glance during faster-paced workouts is easier too, since text and numbers render larger without feeling cramped.",
           },
         },
         {
@@ -132,7 +131,7 @@ const schema = {
           name: "How long does assembly take?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Roughly 65 minutes working alone, similar to the C 990 since the frame and console are comparable in complexity despite the longer deck. A second person makes lifting the upright frame into place easier, but this remains a manageable solo project for most people with basic tools.",
+            text: "Assembly is similar in scope to the C 990, since the frame and console are comparable in complexity despite the longer deck. A second person makes lifting the upright frame into place easier, but it is a reasonable solo project for most people with basic tools.",
           },
         },
       ],
@@ -140,7 +139,7 @@ const schema = {
     {
       "@type": "Article",
       headline: title,
-      author: { "@type": "Person", name: "Morgan Reyes" },
+      author: { "@type": "Person", name: "Shaheer Ali Khan", url: "https://www.linkedin.com/in/shaheer-ali-khan-data/", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], jobTitle: "Author and lab tester", worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: "2026-06-03",
       dateModified: "2026-06-03",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
@@ -150,11 +149,6 @@ const schema = {
       name: PRODUCT.name,
       description,
       brand: { "@type": "Brand", name: "NordicTrack" },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: PRODUCT.rating,
-        reviewCount: PRODUCT.reviewCount,
-      },
     },
   ],
 };
@@ -167,7 +161,7 @@ const schema = {
   article={{
     publishedTime: "2026-06-03",
     modifiedTime: "2026-06-03",
-    author: "Morgan Reyes",
+    author: "Shaheer Ali Khan",
     section: "Fitness Equipment",
     tags: [
       "nordictrack c 1650",
@@ -205,10 +199,7 @@ const schema = {
           NordicTrack <span class="text-[#5AA9FF]">C 1650</span> Review
         </h1>
         <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          We put NordicTrack's mid-tier C-Series treadmill through four
-          weeks of walking, jogging, and interval sessions to find out
-          whether the longer deck and bigger screen make it the C-Series
-          sweet spot.
+          We weighed NordicTrack's mid-tier C-Series treadmill against its siblings on motor, deck, screen, and warranty to find out whether the longer deck and bigger screen make it the C-Series sweet spot.
         </p>
         <div class="mt-8 flex flex-wrap justify-center gap-4">
           <a href="#cta" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
@@ -224,10 +215,10 @@ const schema = {
     <!-- Author & Meta -->
     <div class="max-w-3xl mx-auto px-4 pt-12">
       <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan" width="48" height="48" class="w-12 h-12 rounded-full" />
         <div>
-          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
-          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+          <p class="font-bold text-gray-900 leading-tight"><a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="author noopener" target="_blank" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan</a></p>
+          <p class="text-gray-500 text-sm leading-tight">Author and lab tester</p>
         </div>
         <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
         <p class="text-gray-500 text-sm">
@@ -241,18 +232,8 @@ const schema = {
       <!-- Quick Verdict -->
       <div class="not-prose my-10 bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
         <div class="flex items-center justify-between flex-wrap gap-4 mb-4">
-          <div class="flex items-center gap-2">
-            <div class="flex text-yellow-400">
-              {[...Array(5)].map((_, i) => (
-                <svg class={`w-5 h-5 ${i < Math.floor(PRODUCT.rating) ? "fill-current" : "text-gray-200"}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-              ))}
-            </div>
-            <span class="font-bold text-gray-900">{PRODUCT.rating}</span>
-            <span class="text-gray-400 text-sm">({PRODUCT.reviewCount.toLocaleString()} reviews)</span>
-          </div>
           <span class="bg-[#0F62FE]/10 text-[#0F62FE] px-3 py-1 rounded-full text-xs font-bold">Editor's Choice: C-Series Sweet Spot</span>
+          {PRODUCT.editorialScore && (<p class="text-sm text-gray-600 mt-1 mb-0">Our editorial score: <strong class="text-gray-900">{PRODUCT.editorialScore}</strong>/5</p>)}
         </div>
         <p class="text-gray-700 leading-relaxed mb-4">
           The C 1650 is the machine we'd point most C-Series shoppers
@@ -297,8 +278,7 @@ const schema = {
         <p class="text-2xl font-medium text-gray-900 mb-8 italic">
           NordicTrack's C-Series exists to answer a simple question: how
           much treadmill can you get without paying Commercial-series
-          prices? The C 1650 is our answer to that question after a month
-          of daily use — it's the model in the C-Series lineup that stops
+          prices? Judged on its spec sheet against the rest of the lineup, the C 1650 is our answer to that question — it's the model in the C-Series lineup that stops
           feeling like a compromise and starts feeling like a genuinely
           well-rounded home treadmill.
         </p>
@@ -308,14 +288,7 @@ const schema = {
         <p>
           The C 1650 sits above the C 990 in NordicTrack's entry-level
           lineup, and the gap between them is smaller in price than it is
-          in usable deck length. We tested it specifically against the
-          question shoppers ask us most when comparing these two models:
-          is the roughly $300 jump from the C 990 actually worth it, or is
-          it just a bigger number on the spec sheet? After four weeks, our
-          answer is that the extra five inches of deck length is genuinely
-          noticeable in daily use, particularly for anyone who jogs rather
-          than only walks, and the larger touchscreen is a real quality-of-
-          life upgrade rather than a marketing footnote.
+          in usable deck length. We looked at it specifically through the question shoppers ask us most when comparing these two models: is the roughly $300 jump from the C 990 actually worth it, or is it just a bigger number on the spec sheet? Our answer is that the extra five inches of deck length is a meaningful difference, particularly for anyone who jogs rather than only walks, since a longer deck leaves more room for a full stride, and the larger touchscreen is a real quality-of-life upgrade rather than a marketing footnote.
         </p>
         <p>
           It's worth placing the C 1650 accurately within NordicTrack's
@@ -378,8 +351,7 @@ const schema = {
         <div id="specs" class="scroll-mt-24">
         <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Full Spec Sheet</h2>
         <p>
-          Here's every spec we verified directly against our test unit
-          rather than copying from the manufacturer's marketing page.
+          Here's the full spec sheet, taken from NordicTrack's published specifications for the C 1650.
         </p>
         </div>
       </div>
@@ -401,25 +373,13 @@ const schema = {
         <div id="assembly" class="scroll-mt-24">
         <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Assembly and Setup</h2>
         <p>
-          Assembly took our team roughly 65 minutes working alone, similar
-          to the C 990 despite the longer deck, since the console and frame
-          complexity are comparable across the C-Series. A second person
-          still makes lifting the upright frame into place noticeably
-          easier, and the manual recommends it, but this remains a
-          manageable solo project for most people with basic tools and
-          about an hour of free time.
+          Assembly is similar in scope to the C 990 despite the longer deck, since the console and frame complexity are comparable across the C-Series. A second person still makes lifting the upright frame into place noticeably easier, and the manual recommends it, but this is a reasonable solo project for most people with basic tools and some free time.
         </p>
         <p>
-          The console arrives mostly pre-wired, and the included tools
-          were sufficient for the entire build. The instructions were
-          clear and the hardware bags matched the manual's step numbering
-          closely enough that we never had to guess which bolt went where.
-          The box is somewhat heavier than the C 990's given the longer
-          deck rails, closer to 200 pounds, so plan your delivery and
-          unboxing location accordingly.
+          Before you start, lay out the hardware bags and match them to the manual's step numbering so you aren't guessing which bolt goes where, and check that the included tools cover every step. The box is heavier than the C 990's given the longer deck rails, so plan your delivery and unboxing location accordingly.
         </p>
         <p>
-          As with every treadmill we test, we'd recommend a short
+          As with any new treadmill, we'd recommend a short
           calibration pass before your first real workout: run the machine
           through its full 0-10% incline range once, listen for any
           unusual noise, and confirm the safety key stops the belt
@@ -432,37 +392,18 @@ const schema = {
         <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Performance Deep Dive</h2>
         <h3>Motor and Deck</h3>
         <p>
-          The 3.0 CHP motor is identical to the one in the C 990, and it
-          performed the same way here — comfortable and unstrained during
-          walking and moderate jogging, with more audible effort showing up
-          during sustained running above roughly 7 mph. What's different is
-          the deck: at 20 x 60 inches, the C 1650 matches the Commercial
-          1750's deck length, and the difference versus the C 990's 55-inch
-          deck was immediately noticeable to our taller testers. Runners
-          over 6 feet who felt cramped on the C 990 reported feeling
-          comfortable at full stride on the C 1650, which is the single
-          biggest practical upgrade this model offers over its cheaper
-          sibling.
+          The 3.0 CHP motor is identical to the one in the C 990, so you should expect the same character: a 3.0 CHP rating suits walking and moderate jogging, with less headroom for sustained running at faster paces than the Commercial line's 3.75 CHP. What's different is the deck: at 20 x 60 inches, the C 1650 matches the Commercial 1750's deck length, and the five extra inches over the C 990's 55-inch deck matter most to taller users. A longer deck gives a full running stride more room front to back, which is the single biggest practical upgrade this model offers over its cheaper sibling.
         </p>
         <p>
-          We ran the same heat-soak protocol we use on every treadmill: 45
-          minutes of continuous activity, checking motor housing
-          temperature by hand every ten minutes, capped at 6 mph given the
-          shared motor's intended use case. The housing warmed steadily but
-          stayed comfortable to the touch throughout, and belt speed held
-          consistent through the test. Belt tracking stayed centered
-          without drifting, matching what we saw on the C 990 and
-          suggesting consistent quality control across the C-Series line.
+          We have not run the C 1650 ourselves, so we can't speak to how warm its motor gets or how its belt behaves over a long session. What the spec sheet does tell you is that the motor and incline hardware are shared with the C 990, so the two machines should behave very similarly under load. On any treadmill, belt tracking and tension are the routine items to keep an eye on, and checking them every few months helps keep the belt centered and the motor from working harder than it needs to.
         </p>
         <h3>Incline and the iFit Experience</h3>
         <p>
           The 0-10% incline range matches the C 990 exactly, and it remains
           a genuinely useful range for incline walking rather than a token
-          gesture toward the feature. Automatic incline adjustments during
-          iFit-guided workouts responded smoothly, and the included
+          gesture toward the feature. Automatic incline adjustments during iFit-guided workouts are built in, and the included
           first-year iFit membership gives new users time to evaluate
-          whether the coached format is worth continuing to pay for. The
-          experience here is functionally identical to the C 990's, which
+          whether the coached format is worth continuing to pay for. The experience here should be functionally identical to the C 990's, which
           makes sense given the shared incline hardware — the differences
           between these two models live in the deck and the screen, not
           the incline system.
@@ -470,15 +411,8 @@ const schema = {
         <h3>The 10-Inch Touchscreen</h3>
         <p>
           This is the other major upgrade over the C 990, and it's a
-          meaningful one. The 10-inch display made trail video and workout
-          content noticeably easier to engage with, closer to watching on a
-          small tablet than the C 990's more phone-sized 7-inch screen.
-          Reading stats at a glance during faster-paced workouts was
-          easier too, since text and numbers render larger without feeling
-          cramped. It's still a step below the touchscreens on NordicTrack's
-          Commercial-series machines, but the jump from the C 990 is real
-          and, in our testing, was the upgrade our testers commented on
-          unprompted most often.
+          meaningful one. A 10-inch display makes trail video and workout content easier to engage with, closer to watching on a small tablet than the C 990's more phone-sized 7-inch screen. Reading stats at a glance during faster-paced workouts is easier too, since text and numbers render larger without feeling cramped. It's still a step below the touchscreens on NordicTrack's
+          Commercial-series machines, but the jump from the C 990 is real and it is the most visible day-to-day difference between the two machines.
         </p>
         <h3>Console, Sound, and Everyday Usability</h3>
         <p>
@@ -488,16 +422,11 @@ const schema = {
           adjustments. The built-in speakers are the same size as the C
           990's and correspondingly modest, fine for a small to
           medium-sized room but not designed to fill a larger space
-          without help from a separate speaker. Bluetooth pairing was
-          reliable throughout testing.
+          without help from a separate speaker. Bluetooth lets you play audio from your phone through them.
         </p>
         <h3>Folding and Footprint</h3>
         <p>
-          The EasyLift assist strut works as expected, and while the C
-          1650 is somewhat heavier than the C 990 given its longer deck,
-          folding still felt manageable for a single person. It's not
-          quite as effortless as folding the C 990, but it's considerably
-          easier than folding a Commercial-series machine, striking a
+          The EasyLift assist strut is designed to take much of the weight when you fold the deck, and while the C 1650 is somewhat heavier than the C 990 given its longer deck, folding should still be manageable for a single person. Expect it to be a little more effort than folding the C 990, but less than folding a Commercial-series machine, striking a
           reasonable middle ground that matches its positioning in the
           lineup.
         </p>
@@ -507,15 +436,7 @@ const schema = {
           Like the C 990, the C 1650 uses NordicTrack's standard FlexSelect
           cushioning rather than the adjustable multi-setting version found
           on the Commercial-series machines, so there's no lever to toggle
-          firmness for different workout types. In practice, the fixed
-          tuning felt slightly firmer underfoot than we expected walking in
-          after testing the Commercial 1750, though not uncomfortably so —
-          it's a reasonable middle ground that favors stability at jogging
-          paces over plush softness during long walks. Testers who moved
-          directly from the C 990 to the C 1650 didn't notice a meaningful
-          difference in cushioning feel between the two, which suggests the
-          cushioning tuning is consistent across the C-Series rather than
-          scaling with price the way deck length and screen size do.
+          firmness for different workout types. A single fixed setting is generally a middle ground that favors stability at jogging paces over plush softness during long walks, and it can feel firmer than the softest setting on an adjustable Commercial-series deck. Because the C 990 and C 1650 use the same cushioning system, there's no reason to expect a meaningful difference in feel between the two; on paper, cushioning is consistent across the C-Series rather than scaling with price the way deck length and screen size do.
         </p>
         <h3>A Maintenance Tip Worth Following</h3>
         <p>
@@ -535,12 +456,8 @@ const schema = {
         <div id="durability" class="scroll-mt-24">
         <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Long-Term Durability Notes</h2>
         <p>
-          Four weeks of testing can't fully answer the multi-year
-          durability question, so we cross-referenced our hands-on
-          impressions against patterns in verified owner reviews spanning
-          one to three years of ownership. Belt tracking and tension came
-          up as the most common maintenance item, consistent with what we
-          found on the C 990 and with treadmills generally. Owners who
+          We have not tested the C 1650 ourselves, and no short look can answer the multi-year durability question, so we looked at patterns in verified owner reviews spanning one to three years of ownership. Belt tracking and tension came
+          up as the most common maintenance item, consistent with the C 990 and with treadmills generally. Owners who
           used the C 1650 primarily for running reported the shared 3.0 CHP
           motor showing more audible effort over time than NordicTrack's
           Commercial-series machines, though complaint rates specific to
@@ -591,7 +508,7 @@ const schema = {
           <p class="text-xs font-black uppercase tracking-widest text-red-700 mb-3">Cons</p>
           <ul class="space-y-2">
             {[
-              "3.0 CHP motor shows strain during sustained faster running",
+              "3.0 CHP motor has limited headroom for sustained faster running",
               "Deck is narrower than the Commercial 1750 at 20 inches vs. 22",
               "Most standout features still require an ongoing iFit subscription",
               "Speakers are modest, same as the cheaper C 990",
@@ -707,12 +624,10 @@ const schema = {
         <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Final Verdict</h2>
         <p>
           The NordicTrack C 1650 is the C-Series model we'd actually
-          recommend buying for most households. The 60-inch deck removes
-          the cramped feeling taller runners reported on the C 990, and the
+          recommend buying for most households. The 60-inch deck gives taller runners the stride room the C 990's 55-inch deck lacks, and the
           10-inch touchscreen makes the iFit experience feel considerably
           less like an entry-level afterthought. It's still built around a
-          3.0 CHP motor that shows its limits during sustained faster
-          running, and the iFit dependency for full functionality remains a
+          3.0 CHP motor with limited headroom for sustained faster running, and the iFit dependency for full functionality remains a
           real consideration, but as an all-around home treadmill for
           walking, incline walking, and moderate jogging, it's a
           genuinely well-balanced machine.
@@ -794,11 +709,7 @@ const schema = {
           <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">How long does assembly take?</h3>
             <p class="text-gray-700 text-sm leading-relaxed">
-              Roughly 65 minutes working alone, similar to the C 990 since
-              the frame and console complexity are comparable across the
-              C-Series. A second person makes lifting the upright frame
-              into place easier, but this remains a manageable solo project
-              for most people with basic tools.
+              Assembly is similar in scope to the C 990, since the frame and console are comparable in complexity despite the longer deck. A second person makes lifting the upright frame into place easier, but it is a reasonable solo project for most people with basic tools.
             </p>
           </div>
         </div>
@@ -857,8 +768,7 @@ const schema = {
           C-Series sweet spot — a 60-inch deck that matches the Commercial
           1750's length, a genuinely usable 10-inch touchscreen, and a
           price that stays well under Commercial-tier territory. The
-          trade-off is a 3.0 CHP motor that shows its limits during
-          sustained faster running.
+          trade-off is a 3.0 CHP motor with limited headroom for sustained faster running.
         </p>
         <p class="text-gray-300 leading-relaxed">
           Want to save more? See our

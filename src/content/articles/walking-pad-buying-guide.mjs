@@ -25,8 +25,8 @@ export default {
           those three, and the warranty tells you how long the seller expects it to last.`,
   note: `<strong class="text-gray-900">On the figures below.</strong> Specification ranges on this
           page are typical of the walking pad category as of late 2026, not measurements of any
-          particular model, and this guide deliberately names no products. For our tested picks,
-          see our under-desk treadmill roundup. Always check the current listing and the manual
+          particular model, and this guide deliberately names no products. For our specification-based
+          picks, see our under-desk treadmill roundup. Always check the current listing and the manual
           for the exact figures of the machine you are considering.`,
   sections: [
     {
@@ -53,10 +53,10 @@ export default {
           </ul>
           <p>
             After those come controls, handrail or not, noise, incline and price. If you want our
-            tested recommendations rather than a checklist, our
+            recommendations rather than a checklist, our
             <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmill roundup</a>
             covers the machines; this page is about how to judge any pad you find, including ones
-            we have not tested.
+            that roundup does not cover.
           </p>`,
     },
     {
@@ -450,7 +450,7 @@ export default {
     {
       kicker: 'Our Picks',
       title: 'Best Under-Desk Treadmills',
-      blurb: 'The walking pads we tested at a real desk.',
+      blurb: 'The walking pads we compared for desk use.',
       url: '/under-desk-treadmills/',
     },
     {
@@ -471,7 +471,7 @@ export default {
             first.</strong> Those three decide whether a walking pad suits you and how long it
             lasts. Then make sure it fits where it will live, and that the warranty comes from a
             seller you can actually reach.`,
-    `Handrail, app, remote and a small incline are preferences, not essentials. For our tested
+    `Handrail, app, remote and a small incline are preferences, not essentials. For our
             picks see the
             <a href="/under-desk-treadmills/" class="text-[#5AA9FF] font-bold no-underline">under-desk treadmill roundup</a>,
             and if you are still unsure a pad is the right machine, start with

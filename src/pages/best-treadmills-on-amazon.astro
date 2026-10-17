@@ -17,6 +17,7 @@ const PRODUCTS = [
     amazonLabel: "Check Price on Amazon",
     reviewUrl: "/horizon-t101-treadmill/",
     priceRange: "Around $700",
+    priceBounds: {"low":700,"high":700},
     specs: "20 x 55 in. deck · 0.5–10 mph · 0–10% incline · 300 lb capacity · folds",
     pros: [
       "Sold and shipped by Amazon on the listing we checked, so there is no question about the seller or the warranty",
@@ -41,6 +42,7 @@ const PRODUCTS = [
     amazonLabel: "Check Price on Amazon",
     reviewUrl: "/horizon-7-0-at-treadmill/",
     priceRange: "Around $935–$1,100",
+    priceBounds: {"low":935,"high":1100},
     specs: "20 x 60 in. deck · 0.5–12 mph · 0–15% incline · 325 lb capacity · folds",
     pros: [
       "A 60-inch deck and 12 mph top speed, the running specification, at a price under most running treadmills",
@@ -65,6 +67,7 @@ const PRODUCTS = [
     amazonLabel: "Check Price on Amazon",
     reviewUrl: "/nordictrack-t-series-treadmill/",
     priceRange: "$420–$600",
+    priceBounds: {"low":420,"high":600},
     specs: "0–10 mph · 0–10% incline · 55 in. belt length · 300 lb capacity · 5 in. LCD",
     pros: [
       "A powered 10% incline and 10 mph top speed for well under the price of most full-size treadmills",
@@ -89,6 +92,7 @@ const PRODUCTS = [
     amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$250–$350",
+    priceBounds: {"low":250,"high":350},
     specs: "0–9% powered incline · 0.6–4.0 mph · 42.5 in. belt length · 265 lb capacity · 6.5 in. tall",
     pros: [
       "Powered incline from 0 to 9% in nine levels, which most pads at this price do not have",
@@ -113,6 +117,7 @@ const PRODUCTS = [
     amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$170–$250",
+    priceBounds: {"low":170,"high":250},
     specs: "0.6–6.2 mph with bar raised · 40.2 x 15 in. belt · 265 lb capacity · fold-down handlebar · no incline",
     pros: [
       "Raising the front bar lifts the top speed from 4 mph to 6.2 mph, enough for a light jog",
@@ -137,6 +142,7 @@ const PRODUCTS = [
     amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $200",
+    priceBounds: {"low":200,"high":200},
     specs: "42 in. long deck · fixed 14% incline · Bluetooth console · folds · no motor",
     pros: [
       "About $200 from one of the largest budget fitness brands on Amazon",
@@ -222,7 +228,7 @@ const schema = {
       "@type": "Article",
       headline: title,
       description: description,
-      author: { "@type": "Person", name: "Morgan Reyes" },
+      author: { "@type": "Person", name: "Shaheer Ali Khan", url: "https://www.linkedin.com/in/shaheer-ali-khan-data/", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], jobTitle: "Author and lab tester", worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: "2026-10-13",
       dateModified: "2026-10-13",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
@@ -232,12 +238,29 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
-      offers: {
-        "@type": "AggregateOffer",
-        priceCurrency: "USD",
-        availability: "https://schema.org/InStock",
-      },
+      ...(product.priceBounds
+        ? {
+            offers: {
+              "@type": "AggregateOffer",
+              priceCurrency: "USD",
+              lowPrice: product.priceBounds.low,
+              highPrice: product.priceBounds.high,
+              url: product.amazonUrl,
+            },
+          }
+        : {}),
     })),
+    {
+      "@type": "ItemList",
+      name: title,
+      numberOfItems: 6,
+      itemListElement: PRODUCTS.map((product, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: product.name,
+        url: `https://www.treadmillreviewsusa.com/best-treadmills-on-amazon/#${product.id}`,
+      })),
+    },
   ],
 };
 ---
@@ -249,7 +272,7 @@ const schema = {
   article={{
     publishedTime: "2026-10-13",
     modifiedTime: "2026-10-13",
-    author: "Morgan Reyes",
+    author: "Shaheer Ali Khan",
     section: "Fitness Equipment",
     tags: [
       "best treadmill on amazon",
@@ -306,10 +329,10 @@ const schema = {
     <!-- Author & Meta -->
     <div class="max-w-3xl mx-auto px-4 pt-12">
       <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan" width="48" height="48" class="w-12 h-12 rounded-full" />
         <div>
-          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
-          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+          <p class="font-bold text-gray-900 leading-tight"><a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="author noopener" target="_blank" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan</a></p>
+          <p class="text-gray-500 text-sm leading-tight">Author and lab tester</p>
         </div>
         <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
         <p class="text-gray-500 text-sm">
@@ -341,6 +364,39 @@ const schema = {
       </div>
     </div>
 
+
+    <div class="max-w-3xl mx-auto px-4 pt-8">
+      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
+        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
+        <ul class="list-none m-0 p-0">
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
+            <a href="#horizon-t101-connect" class="font-bold text-gray-900 no-underline hover:underline">Horizon T101 Connect</a>
+            <a href="#horizon-t101-connect" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Running:</span>
+            <a href="#horizon-7-0-at" class="font-bold text-gray-900 no-underline hover:underline">Horizon 7.0 AT</a>
+            <a href="#horizon-7-0-at" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Value:</span>
+            <a href="#nordictrack-t-series-5" class="font-bold text-gray-900 no-underline hover:underline">NordicTrack T Series 5</a>
+            <a href="#nordictrack-t-series-5" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Walking Pad:</span>
+            <a href="#urevo-spacewalk-3s" class="font-bold text-gray-900 no-underline hover:underline">UREVO SpaceWalk 3S</a>
+            <a href="#urevo-spacewalk-3s" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Under $250:</span>
+            <a href="#urevo-strol-2e" class="font-bold text-gray-900 no-underline hover:underline">UREVO Strol 2E</a>
+            <a href="#urevo-strol-2e" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div class="max-w-3xl mx-auto px-4 py-10">
       <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
         <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
@@ -428,9 +484,9 @@ const schema = {
               <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
                 <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
                   <div>
-                    <p class="text-white font-black text-xl leading-tight">
+                    <h3 class="text-white font-black text-xl leading-tight m-0">
                       {index + 1}. {product.name}
-                    </p>
+                    </h3>
                     <p class="text-gray-400 text-xs">{product.category}</p>
                   </div>
                   <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
@@ -446,7 +502,7 @@ const schema = {
                   <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
                   <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                     <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <p class="text-xs font-black uppercase tracking-widest text-green-700 mb-2">What Works</p>
+                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
                       <ul class="space-y-2">
                         {product.pros.map((pro) => (
                           <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
@@ -454,7 +510,7 @@ const schema = {
                       </ul>
                     </div>
                     <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <p class="text-xs font-black uppercase tracking-widest text-red-700 mb-2">What Doesn't</p>
+                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
                       <ul class="space-y-2">
                         {product.cons.map((con) => (
                           <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
@@ -816,6 +872,22 @@ const schema = {
             covers getting a 300 lb box into the right room.
           </p>
         </div>
+
+        <!-- Meet the Author -->
+        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
+          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
+          <div>
+            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
+            <p class="text-sm text-gray-700 leading-relaxed m-0">
+              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="author noopener" target="_blank" class="font-bold text-gray-900">Shaheer Ali Khan</a>
+              writes and lab-tests for Treadmill Reviews USA. Every guide says what was checked, against
+              which sources and on what date, and says plainly when a product has not been tested
+              hands-on. Read our
+              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">editorial standards</a>.
+            </p>
+          </div>
+        </div>
+
       </div>
     </div>
   </article>

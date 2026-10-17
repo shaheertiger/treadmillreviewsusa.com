@@ -91,7 +91,7 @@ export default {
             page stay within what those sources support.
           </p>
           <p>
-            For the integrated sets, the first test was simply whether the product is sold today.
+            For the integrated sets, the first check was simply whether the product is sold today.
             Several names that still dominate older treadmill-desk articles are not: iMovR
             discontinued its ThermoTread GT treadmill and now sells the Unsit in its place,
             LifeSpan's full-set treadmill desks were all marked sold out on its US site, and Rebel
@@ -379,7 +379,7 @@ export default {
       specs: 'Unsit belt 30 x 40 in. · top speed 2.0 mph · lifetime frame warranty',
       pros: [
         'A 30-inch-wide belt, far wider than a walking pad, so drifting sideways while typing matters less',
-        'The Unsit was measured at 42.9 dB at top speed, quiet enough for calls',
+        'iMovR quotes 42.9 dB for the Unsit at top speed, which would be quiet enough for calls',
         'A sturdy frame-mounted desk sold to go with the treadmill, with iMovR height extenders available',
         'Lifetime frame warranties, iMovR height extenders and a walking-specific keyboard tray',
       ],

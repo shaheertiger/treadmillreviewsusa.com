@@ -2,7 +2,7 @@ export default {
   slug: 'best-treadmills-under-500',
   title: 'Best Treadmills Under $500 (2026): What This Budget Actually Buys',
   description:
-    'Under $500 you are buying a walking machine, and the honest question is which compromises are acceptable. We tested six, and two of them are walking pads rather than treadmills.',
+    'Under $500 you are buying a walking machine, and the honest question is which compromises are acceptable. We compared six options, and two of them are walking pads rather than treadmills.',
   crumbLabel: 'Best Treadmills Under $500',
   kicker: "Buyer's Guide",
   updated: 'September 2026',
@@ -25,8 +25,10 @@ export default {
           than any other: models are discontinued, rebadged and revised constantly, and
           specifications shift under unchanged product names. We describe categories and the
           specifications to look for as much as individual machines, because the specific model
-          on sale when you read this may not be the one we tested. Verify the motor rating, deck
-          size and weight capacity for the exact unit before ordering.`,
+          on sale when you read this may not be the one described here. We have not tested these
+          machines; what follows is drawn from published specifications and what they imply, not
+          from our own measurements. Verify the motor rating, deck size and weight capacity for
+          the exact unit before ordering.`,
   sections: [
     {
       id: 'what-you-cannot-get',
@@ -119,25 +121,25 @@ export default {
     },
     {
       id: 'how-we-tested',
-      heading: 'How We Tested',
+      heading: 'How We Chose',
       html: `          <p>
-            Each machine ran a six-week walking protocol — three to four sessions a week, 20 to 45
-            minutes, at 2.5 to 4 mph — with a 175 lb primary tester and a 240 lb secondary tester
-            using each machine for at least two weeks.
+            We have not tested these machines, and nothing on this page should be read as if we
+            had. Because models at this price change so often, the picks are categories as much
+            as products, chosen on the specifications that decide whether a budget machine is
+            worth having: continuous-duty motor rating, deck size, assembled weight, weight
+            capacity and warranty terms.
           </p>
           <p>
-            We logged motor housing temperature after 40 minutes of continuous walking, belt
-            tracking every ten miles, frame movement at the console at 4 mph, and sound pressure
-            beside the machine. We also recorded assembly time and, for the folding machines,
-            fold time with one person.
+            Of those, the continuous motor rating matters most. A 1.5 to 2.25 CHP motor is a
+            light-duty rating, and on a walking machine it spends much of each session close to
+            its working limit. That is not a defect — these motors are doing exactly what they
+            were built to do — but it is why heat and belt friction matter more here than at any
+            other price.
           </p>
           <p>
-            The most consistent finding was heat. Three of the six machines were running hot after
-            40 minutes, which at this motor rating is the expected result rather than a defect —
-            these are motors near their working limit doing exactly what they were built to do.
             It is also why the maintenance advice at the end of this page is not optional. Our
             <a href="/treadmill-reviews-2026/" class="text-[#0F62FE] font-medium">standard methodology</a>
-            covers the full protocol.
+            explains how we assess machines from published data.
           </p>`,
     },
     {
@@ -298,7 +300,7 @@ export default {
       pros: [
         'The money goes into the belt and motor rather than a frame you would not use',
         'Genuinely disappears — slides under a bed or sofa in seconds',
-        'Quietest category here by a clear margin at walking speed',
+        'Typically the quietest category here at walking speed, with no upright to rattle',
         'One person can carry it upstairs, which no folding treadmill here manages',
       ],
       cons: [
@@ -308,7 +310,7 @@ export default {
       bottomLine:
         'The best product at this price for anyone who simply wants to walk. Buy this unless you specifically need rails or incline.',
       description:
-        'At $500 the structural argument is decisive: a walking pad spends your entire budget on the two components that matter — the belt and the motor — where a folding treadmill spends half of it on an upright, a console and handrails. The result is that pads in this bracket consistently have better belts, quieter motors and smoother speed control than folding machines at the same money. Ours ran cooler after 40 minutes than any of the folding treadmills tested and was the quietest thing here at walking pace. It also solves storage completely, sliding under furniture in seconds and weighing little enough for one person to carry upstairs. The limits are absolute rather than negotiable: no handrails, no incline, and a 4 mph ceiling. If those are acceptable — and for a walker they usually are — nothing else at this price competes.',
+        'At $500 the structural argument is decisive: a walking pad spends your entire budget on the two components that matter — the belt and the motor — where a folding treadmill spends half of it on an upright, a console and handrails. The result is that pads in this bracket consistently have better belts, quieter motors and smoother speed control than folding machines at the same money. It also solves storage completely, sliding under furniture in seconds and weighing little enough for one person to carry upstairs. The limits are absolute rather than negotiable: no handrails, no incline, and a 4 mph ceiling. If those are acceptable — and for a walker they usually are — nothing else at this price competes.',
     },
     {
       id: 'walking-pad-2in1',
@@ -349,12 +351,12 @@ export default {
       ],
       cons: [
         'Weakest belt and motor of anything here — the budget is spread across more parts',
-        'Frame moves noticeably above a brisk walk',
+        'Light frame typically moves above a brisk walk',
       ],
       bottomLine:
         'The only way to get incline and full handrails at this price, and you pay for both in belt and motor quality.',
       description:
-        'This is the machine most people picture when they search for a cheap treadmill, and it is the one we would recommend least often — not because it is bad, but because the same money buys a better walking machine elsewhere. What it uniquely offers is incline and full-length handrails, and both are genuinely valuable: incline is the most effective way to make a walk harder without adding impact, and proper rails matter if balance is a consideration. The cost is that your $500 is now buying a frame, an upright, a console, rails and an incline mechanism as well as a belt and motor, and everything is thinner for it. Ours ran hot after 40 minutes and the frame moved perceptibly at 4 mph. Buy it if incline or handrails are requirements. If they are not, buy a pad.',
+        'This is the machine most people picture when they search for a cheap treadmill, and it is the one we would recommend least often — not because it is bad, but because the same money buys a better walking machine elsewhere. What it uniquely offers is incline and full-length handrails, and both are genuinely valuable: incline is the most effective way to make a walk harder without adding impact, and proper rails matter if balance is a consideration. The cost is that your $500 is now buying a frame, an upright, a console, rails and an incline mechanism as well as a belt and motor, and everything is thinner for it. A 2.0 to 2.25 CHP motor carrying all of that works close to its limit, and a frame this light typically moves above a brisk walk. Buy it if incline or handrails are requirements. If they are not, buy a pad.',
     },
     {
       id: 'compact-manual-treadmill',
@@ -484,7 +486,7 @@ export default {
     {
       kicker: 'Alternative',
       title: 'Under-Desk Treadmills',
-      blurb: 'The walking pad category in detail, tested over six weeks of workdays.',
+      blurb: 'The walking pad category in detail, for use through the working day.',
       url: '/under-desk-treadmills/',
     },
     {

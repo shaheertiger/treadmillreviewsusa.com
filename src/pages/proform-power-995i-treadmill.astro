@@ -3,14 +3,13 @@ import Layout from "../layouts/Layout.astro";
 import TrustBadge from "../components/TrustBadge.astro";
 import SocialProof from "../components/SocialProof.astro";
 
-const title = "ProForm Power 995i Treadmill Review (2026): The Value Pick Worth a Look?";
+const title = "ProForm Power 995i Treadmill Review (2026): The Value Pick?";
 const description =
-  "We spent three weeks testing the ProForm Power 995i, the brand's mid-tier value treadmill. Here's an honest look at the motor, deck, incline range, and whether the lower price costs you too much.";
+  "We compared the ProForm Power 995i, the brand's mid-tier value treadmill, on its published specs. Here's an honest look at the motor, deck, incline range, and whether the lower price costs you too much.";
 
 const PRODUCT = {
   name: "ProForm Power 995i",
-  rating: 4.3,
-  reviewCount: 2946,
+  editorialScore: 4.3,
   amazonUrl:
     "https://www.amazon.com/s?k=ProForm+treadmill&tag=sktiger-20",
   priceRange: "$999-$1,099",
@@ -115,7 +114,7 @@ const schema = {
           name: "Is the ProForm Power 995i's deck big enough for taller users?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The 20 x 60-inch deck is a solid, full-length running surface, though it's narrower than the 22-inch decks on ProForm's Pro 2000 or NordicTrack's Commercial 1750. Testers over 6 feet tall had no issue with stride length but noticed the narrower width more during faster running than during walking.",
+            text: "The 20 x 60-inch deck is a solid, full-length running surface, though it's narrower than the 22-inch decks on ProForm's Pro 2000 or NordicTrack's Commercial 1750. For users over 6 feet tall, 60 inches of length generally leaves enough stride room, and the narrower width is more likely to matter during faster running than during walking.",
           },
         },
         {
@@ -131,7 +130,7 @@ const schema = {
           name: "How long does assembly take on the ProForm Power 995i?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Around 55 minutes working alone, somewhat faster than ProForm's larger models since the console mast is lighter and easier to maneuver into place solo. A second person still speeds things up, but it's less essential here than on the heavier Pro 2000.",
+            text: "Expect it to go somewhat faster than ProForm's larger models, since the console mast is lighter and easier to maneuver into place solo. A second person still speeds things up, but it's less essential here than on the heavier Pro 2000.",
           },
         },
       ],
@@ -139,7 +138,7 @@ const schema = {
     {
       "@type": "Article",
       headline: title,
-      author: { "@type": "Person", name: "Morgan Reyes" },
+      author: { "@type": "Person", name: "Shaheer Ali Khan", url: "https://www.linkedin.com/in/shaheer-ali-khan-data/", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], jobTitle: "Author and lab tester", worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: "2026-04-27",
       dateModified: "2026-04-27",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
@@ -149,11 +148,6 @@ const schema = {
       name: PRODUCT.name,
       description,
       brand: { "@type": "Brand", name: "ProForm" },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: PRODUCT.rating,
-        reviewCount: PRODUCT.reviewCount,
-      },
     },
   ],
 };
@@ -166,7 +160,7 @@ const schema = {
   article={{
     publishedTime: "2026-04-27",
     modifiedTime: "2026-04-27",
-    author: "Morgan Reyes",
+    author: "Shaheer Ali Khan",
     section: "Fitness Equipment",
     tags: [
       "proform power 995i",
@@ -204,10 +198,7 @@ const schema = {
           ProForm <span class="text-[#5AA9FF]">Power 995i</span> Review
         </h1>
         <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          We put ProForm's mid-tier value treadmill through three weeks of
-          walking, jogging, and everyday use to find out whether a sub-$1,100
-          machine can still deliver a full-size deck and a motor that
-          doesn't feel underpowered.
+          We went through ProForm's mid-tier value treadmill spec by spec to find out whether a sub-$1,100 machine can still deliver a full-size deck and a motor that isn't underpowered for everyday use.
         </p>
         <div class="mt-8 flex flex-wrap justify-center gap-4">
           <a href="#cta" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
@@ -223,10 +214,10 @@ const schema = {
     <!-- Author & Meta -->
     <div class="max-w-3xl mx-auto px-4 pt-12">
       <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan" width="48" height="48" class="w-12 h-12 rounded-full" />
         <div>
-          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
-          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+          <p class="font-bold text-gray-900 leading-tight"><a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="author noopener" target="_blank" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan</a></p>
+          <p class="text-gray-500 text-sm leading-tight">Author and lab tester</p>
         </div>
         <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
         <p class="text-gray-500 text-sm">
@@ -240,23 +231,12 @@ const schema = {
       <!-- Quick Verdict -->
       <div class="not-prose my-10 bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
         <div class="flex items-center justify-between flex-wrap gap-4 mb-4">
-          <div class="flex items-center gap-2">
-            <div class="flex text-yellow-400">
-              {[...Array(5)].map((_, i) => (
-                <svg class={`w-5 h-5 ${i < Math.floor(PRODUCT.rating) ? "fill-current" : "text-gray-200"}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-              ))}
-            </div>
-            <span class="font-bold text-gray-900">{PRODUCT.rating}</span>
-            <span class="text-gray-400 text-sm">({PRODUCT.reviewCount.toLocaleString()} reviews)</span>
-          </div>
           <span class="bg-[#0F62FE]/10 text-[#0F62FE] px-3 py-1 rounded-full text-xs font-bold">Best Value Under $1,100</span>
+          {PRODUCT.editorialScore && (<p class="text-sm text-gray-600 mt-1 mb-0">Our editorial score: <strong class="text-gray-900">{PRODUCT.editorialScore}</strong>/5</p>)}
         </div>
         <p class="text-gray-700 leading-relaxed mb-4">
           The Power 995i is ProForm's mid-tier value pick, and it earns that
-          label honestly. A full 20 x 60-inch deck and a 3.0 CHP motor that
-          doesn't feel strained during regular walking and jogging, for
+          label honestly. A full 20 x 60-inch deck and a 3.0 CHP motor sized for regular walking and jogging, for
           under $1,100 — the trade-offs are a more basic 0-10% incline range
           and a smaller touchscreen than ProForm's pricier models.
         </p>
@@ -318,8 +298,7 @@ const schema = {
           We'd recommend the Power 995i most strongly to a household that
           walks regularly and jogs occasionally, rather than a household
           training for race pace or running daily at speed. The 10 mph top
-          speed and 3.0 CHP motor comfortably cover that use case without
-          feeling like the machine is working near its limit, and the
+          speed and 3.0 CHP motor are sized for that use case rather than for running near the machine's limit, and the
           full-size deck means you're not sacrificing comfort to get there.
           If your household includes a serious runner who wants steep
           incline training or trainer-led coached workouts built in, the
@@ -328,8 +307,7 @@ const schema = {
           the extra money instead.
         </p>
         <p>
-          This is a folding treadmill, though like every ProForm model we've
-          tested, it's built more like a semi-permanent home fixture than a
+          This is a folding treadmill, though like every ProForm model we've reviewed, it's built more like a semi-permanent home fixture than a
           true space-saving machine. If you need a treadmill that
           disappears into a closet daily, our
           <a href="/best-folding-treadmill-reviews/">folding treadmill guide</a>
@@ -371,8 +349,7 @@ const schema = {
         <div id="specs" class="scroll-mt-24">
         <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Full Spec Sheet</h2>
         <p>
-          Here's every spec we verified directly against our test unit
-          rather than copying from the manufacturer's marketing page.
+          Here's the full spec sheet, taken from ProForm's published specifications for the Power 995i.
         </p>
         </div>
       </div>
@@ -394,18 +371,13 @@ const schema = {
         <div id="assembly" class="scroll-mt-24">
         <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Assembly and Setup</h2>
         <p>
-          Assembly took our team around 55 minutes working alone, faster
-          than the larger ProForm models we've tested since the console
-          mast is noticeably lighter and easier to maneuver into place
+          Assembly should go faster than on the larger ProForm models we've reviewed, since the console mast is lighter and easier to maneuver into place
           solo. A second person still speeds things along, particularly for
           holding the mast steady while the base bolts are tightened, but
           it's less essential here than on the heavier Pro 2000.
         </p>
         <p>
-          The included tools covered the full build, and the manual's step
-          numbering matched the labeled hardware bags closely enough that
-          we never had to guess which bolt went where. The box is
-          noticeably more manageable than ProForm's flagship models too,
+          Before you start, match the labeled hardware bags to the manual's step numbering so you aren't guessing which bolt goes where, and check that the included tools cover every step. The box is more manageable than ProForm's flagship models too,
           which matters if you're navigating a narrow hallway or a flight
           of stairs to get it to its final spot.
         </p>
@@ -423,33 +395,17 @@ const schema = {
         <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Performance Deep Dive</h2>
         <h3>Motor and Deck</h3>
         <p>
-          The 3.0 CHP motor handled walking and jogging comfortably
-          throughout our testing, staying composed up to its 10 mph top
-          speed without the strained sound we've heard from smaller motors
-          in cheaper machines. It's not built for serious daily running at
-          speed — that's not its job — but for its intended use case, it
-          never felt like the limiting factor. The 20 x 60-inch deck is the
-          standout feature here: full length, and wide enough that our
-          testers up to 6 feet tall had no complaints about stride room
-          during jogging.
+          A 3.0 CHP continuous rating is well matched to walking and jogging up to the machine's 10 mph top speed. It's not built for serious daily running at speed — that's not its job — but for its intended use case, the motor shouldn't be the limiting factor. The 20 x 60-inch deck is the standout feature here: full length, and wide enough for most users to jog with a comfortable stride.
         </p>
         <p>
-          We ran our standard heat-soak test — 30 minutes of continuous
-          jogging at 5.5 mph, checking motor housing temperature by hand
-          every ten minutes, scaled down slightly from our 45-minute
-          protocol given this motor's lower duty rating. The housing warmed
-          steadily but stayed within a comfortable range to the touch, and
-          belt speed held consistent throughout. Belt tracking stayed
-          centered across the full test.
+          We have not run the 995i ourselves, so we can't report how warm its motor gets or how its belt tracks over a long session. Given its lower duty rating, the sensible approach is to keep long continuous sessions at moderate speeds and to check belt tracking and tension every few months.
         </p>
         <h3>Incline Range</h3>
         <p>
           The 0% to 10% incline range is the most notable spec compromise
           on the 995i relative to ProForm's pricier models. There's no
           decline function, and the ceiling tops out lower than the Smart
-          Power 1295i's 12% or the Pro 2000's 12%. In practice, most
-          walkers and casual joggers rarely push incline training past 8%
-          or 9% anyway, so the gap matters most to shoppers specifically
+          Power 1295i's 12% or the Pro 2000's 12%. Most walkers and casual joggers rarely need the very top of an incline range anyway, so the gap matters most to shoppers specifically
           planning serious hill-training workouts — for them, stepping up
           to a pricier ProForm model is worth it.
         </p>
@@ -470,18 +426,11 @@ const schema = {
         <p>
           The physical buttons on the handrail make basic speed and
           incline adjustments easy without needing to touch the screen
-          mid-workout. Built-in Bluetooth speakers were loud enough for a
-          small room, and pairing was reliable throughout our testing. The
-          smaller 10-inch touchscreen is noticeably less immersive than the
-          14-inch screen on the Pro 2000, which is an expected trade-off at
-          this price, but menu navigation stayed responsive and we never
-          ran into lag scrolling through workout programs.
+          mid-workout. Built-in Bluetooth speakers let you play audio from your phone, and like most built-in treadmill speakers they suit a small room. The smaller 10-inch touchscreen is less immersive than the 14-inch screen on the Pro 2000, which is an expected trade-off at this price.
         </p>
         <h3>Folding and Footprint</h3>
         <p>
-          The Power 995i folds for storage, and the lighter overall build
-          made the fold-up motion noticeably easier than on ProForm's
-          heavier flagship models. It's still not a true space-saving
+          The Power 995i folds for storage, and the lighter overall build should make the fold-up motion easier than on ProForm's heavier flagship models. It's still not a true space-saving
           machine in the way a dedicated compact folding treadmill is, but
           for a household that folds it occasionally rather than daily,
           it's a reasonable middle ground.
@@ -489,14 +438,7 @@ const schema = {
 
         <h3>Noise Levels</h3>
         <p>
-          We measured noise in the mid-60 decibel range during sustained
-          jogging near the machine's top speed, a bit louder than the
-          bigger-motored ProForm models, though still well within the
-          range of a normal household conversation. At walking pace, the
-          995i was noticeably quiet, which matters given that walking is
-          the use case it's most obviously built for. A basic equipment mat
-          underneath reduced floor vibration noticeably in our testing,
-          which is a worthwhile add whether you're in an apartment with
+          We haven't measured the 995i's noise ourselves. As a general tendency, a smaller motor working near its top speed is louder than a larger motor at the same pace, while walking speeds are much quieter on any treadmill, which suits a machine built mainly for walking. A basic equipment mat underneath helps reduce floor vibration, which is a worthwhile add whether you're in an apartment with
           downstairs neighbors or simply want to protect flooring.
         </p>
         </div>
@@ -504,9 +446,7 @@ const schema = {
         <div id="durability" class="scroll-mt-24">
         <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Long-Term Durability Notes</h2>
         <p>
-          Three weeks can't fully answer a multi-year durability question,
-          so we cross-referenced our hands-on impressions against patterns
-          in verified owner reviews spanning one to two years of ownership.
+          We have not tested the 995i ourselves, and a spec sheet can't answer a multi-year durability question, so we looked at patterns in verified owner reviews spanning one to two years of ownership.
           For its intended use case — regular walking, occasional jogging —
           the Power 995i's reliability record looked solid, with belt
           tracking as the most commonly reported maintenance item, which is
@@ -544,7 +484,7 @@ const schema = {
               "Full 20 x 60-inch deck is rare at this price point",
               "3.0 CHP motor comfortably handles walking and regular jogging",
               "No forced iFit subscription — works fully as a standalone console",
-              "Lighter build makes assembly and folding noticeably easier",
+              "Lighter build makes assembly and folding easier",
               "Same 10-year frame warranty as ProForm's pricier models",
             ].map((pro) => (
               <li class="flex items-start gap-2 text-sm text-green-800">
@@ -765,12 +705,7 @@ const schema = {
           <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Is the ProForm Power 995i's deck big enough for taller users?</h3>
             <p class="text-gray-700 text-sm leading-relaxed">
-              The 20 x 60-inch deck is a solid, full-length running
-              surface, though it's narrower than the 22-inch decks on
-              ProForm's Pro 2000 or NordicTrack's Commercial 1750. Testers
-              over 6 feet tall had no issue with stride length but noticed
-              the narrower width more during faster running than during
-              walking.
+              The 20 x 60-inch deck is a solid, full-length running surface, though it's narrower than the 22-inch decks on ProForm's Pro 2000 or NordicTrack's Commercial 1750. For users over 6 feet tall, 60 inches of length generally leaves enough stride room, and the narrower width is more likely to matter during faster running than during walking.
             </p>
           </div>
           <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
@@ -788,11 +723,7 @@ const schema = {
           <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">How long does assembly take on the ProForm Power 995i?</h3>
             <p class="text-gray-700 text-sm leading-relaxed">
-              Around 55 minutes working alone, somewhat faster than
-              ProForm's larger models since the console mast is lighter
-              and easier to maneuver into place solo. A second person
-              still speeds things up, but it's less essential here than
-              on the heavier Pro 2000.
+              Expect it to go somewhat faster than ProForm's larger models, since the console mast is lighter and easier to maneuver into place solo. A second person still speeds things up, but it's less essential here than on the heavier Pro 2000.
             </p>
           </div>
         </div>
@@ -809,7 +740,7 @@ const schema = {
           </div>
           <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
             <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming the 10-inch screen matches the pricier models</h3>
-            <p class="text-gray-700 text-sm m-0">It runs the same iFit library at a smaller size and with a less responsive console. Judge it as a value screen, not as a cheaper version of the 14-inch panel.</p>
+            <p class="text-gray-700 text-sm m-0">It runs the same iFit library at a smaller size. Judge it as a value screen, not as a cheaper version of the 14-inch panel.</p>
           </div>
           <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
             <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring the weight capacity buffer</h3>
@@ -857,7 +788,7 @@ const schema = {
           Comparing your options first? See our full
           <a href="/proform-treadmill/" class="text-[#5AA9FF] font-bold no-underline">ProForm brand guide</a>
           or the <a href="/best-treadmill-under-1000-reviews/" class="text-[#5AA9FF] font-bold no-underline">best treadmills under $1,000 roundup</a>
-          for how every budget model we've tested stacks up.
+          for how every budget model we've covered stacks up.
         </p>
       </div>
     </div>

@@ -1,6 +1,6 @@
 export default {
   slug: 'proform-pro-5000-treadmill',
-  title: 'ProForm Pro 5000 Treadmill Review (2026): Running Hardware, Subscription Attached',
+  title: 'ProForm Pro 5000 Review (2026): Running Hardware, iFIT Attached',
   description:
     'A 3.75 CHP motor, a 22 x 60-inch deck and decline to -3% — genuine running specifications at a mid-market price. The catch is the console, and it is worth pricing properly.',
   crumbLabel: 'ProForm Pro 5000',

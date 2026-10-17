@@ -59,7 +59,7 @@ export default {
             </tr></thead>
             <tbody>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Brooks Ghost 18</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most treadmill runners</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Familiar, predictable daily trainer in several widths</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">ASICS Novablast 6</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Hot rooms, varied paces</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bouncy, high-stack and the most breathable daily trainer here in lab tests</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">ASICS Novablast 6</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Hot rooms, varied paces</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bouncy, high-stack and the most breathable daily trainer here in independent lab tests</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">New Balance 1080 v15</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Long, easy runs</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Plush new foam and a low 6 mm drop</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Nike Pegasus 42</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Wider forefeet, mixed use</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Roomier toe box and a full-length Air Zoom unit</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Saucony Endorphin Speed 5</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Tempo and interval sessions</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lighter, nylon-plated, very well ventilated</td></tr>
@@ -310,13 +310,13 @@ export default {
       pros: [
         'A familiar, predictable ride that suits steady treadmill miles and heel strikers',
         'Several width options, unusual at this price',
-        'Durable outsole and well-padded heel in lab testing',
+        'Durable outsole and well-padded heel in independent lab testing',
         'List price unchanged from the previous version',
       ],
       cons: [
-        'Runs warm: below-average breathability in lab tests and in reviewers’ experience',
+        'Runs warm: below-average breathability in independent lab tests and in reviewers’ experience',
         'Heavy for a daily trainer, and the toe box is tapered',
-        'Lab measurements put the drop nearer 12 mm than the stated 10 mm',
+        'Independent lab measurements put the drop nearer 12 mm than the stated 10 mm',
       ],
       bottomLine:
         'The default choice for most treadmill runners, especially existing Ghost wearers and heel strikers. Pair it with a fan if you run hot.',
@@ -332,9 +332,9 @@ export default {
       priceRange: 'Around $155',
       specs: '41.5/33.5 mm stack (men’s) · 8 mm drop · FF Blast Max and FF Turbo Squared foams',
       pros: [
-        'Above-average breathability in lab testing, the best of the daily trainers here',
+        'Above-average breathability in independent lab testing, the best of the daily trainers here',
         'Bouncy, high-stack ride that reviewers find works from easy runs to faster efforts',
-        'Durable outsole and toe box in lab testing',
+        'Durable outsole and toe box in independent lab testing',
         'Light for its stack height',
       ],
       cons: [
@@ -357,12 +357,12 @@ export default {
       specs: '40/34 mm stack · 6 mm drop · Infinion foam',
       pros: [
         'Plush cushioning from a new, lighter foam, noticeably lighter than version 14',
-        'Low 6 mm drop that lab testing confirms',
+        'Low 6 mm drop that independent lab testing confirms',
         'Multiple width options and a premium knit upper',
         'Reviewers find it more capable at faster paces than earlier 1080s',
       ],
       cons: [
-        'Below-average breathability in lab testing, which matters indoors',
+        'Below-average breathability in independent lab testing, which matters indoors',
         'The ultra-soft feel will not suit everyone, and stability is limited',
         'Among the most expensive shoes on this page',
       ],
@@ -405,12 +405,12 @@ export default {
       specs: '36/28 mm stack · 8 mm drop · about 8.4 oz (men’s 9) · nylon plate',
       pros: [
         'Nearly 2 oz lighter than the Ghost 18, which helps on intervals and tempo runs',
-        'Top-scoring ventilation in lab testing, very welcome indoors',
+        'Top-scoring ventilation in independent lab testing, very welcome indoors',
         'Nylon plate and rocker give snap without the stiffness of a carbon racer',
         'Secure heel lockdown and a roomy toe box in RunRepeat’s testing',
       ],
       cons: [
-        'Lab testing found weaker toe-box durability than its predecessor',
+        'Independent lab testing found weaker toe-box durability than its predecessor',
         'Version 6 is opening for orders, so check you are buying the version you mean',
         'Not a shoe for every easy run; most runners pair it with a daily trainer',
       ],
@@ -430,12 +430,12 @@ export default {
       pros: [
         'Subtle, effective stability from Brooks’ GuideRails system',
         'Softer midsole than the previous version, with improved shock absorption',
-        'Exceptionally durable outsole in lab testing',
+        'Exceptionally durable outsole in independent lab testing',
         'Lower 10 mm drop than the GTS 24 makes it more versatile',
       ],
       cons: [
         'Heavier than many rivals',
-        'Below-average breathability in lab testing',
+        'Below-average breathability in independent lab testing',
         'The GTS 26 is due on 1 November 2026, so stock and prices will shift',
       ],
       bottomLine:
@@ -460,12 +460,12 @@ export default {
       cons: [
         'Narrow toe box; not for wide feet',
         'Heavy and clunky at faster running paces',
-        'Lab measurement puts the drop far above the stated 5 mm',
+        'Independent lab measurement puts the drop far above the stated 5 mm',
       ],
       bottomLine:
         'For walkers who spend long sessions on an incline, and for slow, easy runs. Choose something lighter for faster running.',
       description:
-        "Incline walkers spend a long time on their feet at a slow pace, which is exactly what a maximum-cushion shoe is good at, and the Bondi is HOKA's most cushioned road shoe. HOKA lists a 43 mm heel and 38 mm forefoot, a 5 mm drop and about 10.5 oz for a men's size 9, figures Doctors of Running repeats. The version 9 midsole is a lighter supercritical EVA. Doctors of Running notes it is one of the top-selling shoes for walking and standing, and RunRepeat calls it a good casual walker that is stable for its height and comfortable to step into. Two cautions. RunRepeat measured its drop at about 9 mm, attributing part of the gap to where HOKA measures, so do not choose it on the 5 mm figure. And its toe box is narrow, with breathability slightly below average in lab testing. At running pace it is heavy and clunky; this is a walking and slow-running shoe, and for that it is very good.",
+        "Incline walkers spend a long time on their feet at a slow pace, which is exactly what a maximum-cushion shoe is good at, and the Bondi is HOKA's most cushioned road shoe. HOKA lists a 43 mm heel and 38 mm forefoot, a 5 mm drop and about 10.5 oz for a men's size 9, figures Doctors of Running repeats. The version 9 midsole is a lighter supercritical EVA. Doctors of Running notes it is one of the top-selling shoes for walking and standing, and RunRepeat calls it a good casual walker that is stable for its height and comfortable to step into. Two cautions. RunRepeat measured its drop at about 9 mm, attributing part of the gap to where HOKA measures, so do not choose it on the 5 mm figure. And its toe box is narrow, with breathability slightly below average in independent lab testing. At running pace it is heavy and clunky; this is a walking and slow-running shoe, and for that it is very good.",
     },
   ],
   faqs: [
@@ -475,7 +475,7 @@ export default {
     },
     {
       q: 'What is the best running shoe for the treadmill?',
-      a: `For most runners, a cushioned daily trainer such as the Brooks Ghost 18. If you run hot, the ASICS Novablast 6 scored better for breathability in lab tests. Add a lighter shoe such as the Saucony Endorphin Speed 5 for faster sessions, and choose a stability shoe only if you know you prefer one.`,
+      a: `For most runners, a cushioned daily trainer such as the Brooks Ghost 18. If you run hot, the ASICS Novablast 6 scored better for breathability in independent lab tests. Add a lighter shoe such as the Saucony Endorphin Speed 5 for faster sessions, and choose a stability shoe only if you know you prefer one.`,
     },
     {
       q: 'Are running shoes or walking shoes better for treadmill walking?',

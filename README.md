@@ -559,6 +559,40 @@ several other recalled adjustable dumbbell sets, the NordicTrack RW900 rower and
 Bike+ (PL02). `/bowflex/` also had a leftover "No Treadmills in This Lineup" badge and a "0 treadmills"
 stat from before its October correction; both fixed.
 
+### Bing & DuckDuckGo compliance pass (2026-10-17)
+
+DuckDuckGo sources traditional results largely from Bing and also runs DuckDuckBot, so the site was
+audited against Bing's Webmaster Guidelines, whose abuse list includes misleading structured data,
+thin affiliate pages and content that misrepresents the site. Changes:
+
+- **Titles and descriptions** (`SEO.astro`): the " | Treadmill Reviews USA" suffix is dropped when
+  it pushes a title past 65 characters; descriptions over 160 are trimmed at a sentence or word.
+- **Structured data** (`SEO.astro` sanitiser, applied to every page): Product nodes never carry
+  `aggregateRating`/`review`; an AggregateOffer without a price is dropped; Articles get an image,
+  a publisher with a logo and `mainEntityOfPage`. Spec pages publish real `lowPrice`/`highPrice`
+  read from the visible price range and an `ItemList` of the picks. The WebSite SearchAction (no
+  search page exists) and the broken `/logo.png` reference were removed; `logo.png`,
+  `og-default.png` and `publishingPrinciples` → `/editorial-standards/` added.
+- **Trust signals**: the "Lab-Tested & Verified" badge became "Independent Buying Guide"; the
+  invented "Join 3.9k others" line and stock avatars became a reader-supported disclosure; the
+  placeholder author became Shaheer Ali Khan; the footer's "hands-on reviews" line and dead "About"
+  link were fixed. A new `/editorial-standards/` page explains choosing, checking, testing,
+  affiliate income and corrections.
+- **Content honesty**: 123 files were reviewed; invented test protocols, tester stats, timings,
+  decibel and temperature readings and "we tested" claims without a real test behind them were
+  removed or reframed. Invented customer review counts were removed; the scores were kept as
+  clearly labelled editorial scores ("Our editorial score: 4.6/5") with no review counts and no
+  rating markup.
+- **Crawling**: sitemap `<lastmod>` is each page's real `dateModified` instead of the build time;
+  noindex pages use `noindex, follow`; indexable pages carry `max-snippet:-1,
+  max-image-preview:large`; `vercel.json` redirects slash-less URLs to the canonical slash form.
+- **From the #1-ranking Bob Vila roundup**: top-picks box with jump links, product names as H3 and
+  "What We Like / What We Don't Like" as H4, ItemList markup, and a "Meet the Author" box.
+
+Still for the owner: verify the site in Bing Webmaster Tools (import from Google Search Console or
+add the `msvalidate.01` code), write a privacy policy for the footer link, and set the apex domain
+to redirect straight to `https://www.` in Vercel (it currently takes two hops).
+
 ### Sole F80 and F85
 
 Both were shipped first as `dataPending` editorial drafts because their published figures conflict
@@ -640,4 +674,4 @@ every page a horizontal scrollbar.
 ## Notes
 
 - `AdUnit.astro` is wired for Google AdSense but ships with a placeholder `ca-pub-0000000000000000` client ID — swap in a real AdSense publisher ID (and load the AdSense script in `Layout.astro`) once approved.
-- Author byline ("Morgan Reyes") and testing claims are placeholder editorial content — replace with real testers/data as available.
+- Author: Shaheer Ali Khan (author and lab tester), linked to LinkedIn in every byline and in Person JSON-LD. Pages only claim hands-on testing where a real test was done; publish real lab results (photos, method, figures) on a page before claiming them.

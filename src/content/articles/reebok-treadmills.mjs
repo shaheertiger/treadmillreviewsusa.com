@@ -1,6 +1,6 @@
 export default {
   slug: 'reebok-treadmills',
-  title: 'Reebok Treadmill Guide (2026): Who Makes Them, i-Run, FR30z and US Stock',
+  title: 'Reebok Treadmill Guide (2026): Who Makes Them and Models',
   description:
     'Reebok treadmills are made under licence and sold mainly outside the US. Who makes them, the current range by country, the i-Run and Floatride models, older ICON-built Reebok treadmills and what US buyers should do.',
   crumbLabel: 'Reebok Treadmills',

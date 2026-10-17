@@ -1,6 +1,6 @@
 export default {
   slug: 'streamdale-folding-treadmill',
-  title: 'Streamdale Folding Treadmill Review (2026): Who Sells It, What to Check',
+  title: 'Streamdale Folding Treadmill Review (2026): What to Check',
   description:
     'Streamdale folding treadmill explained: who Streamdale Furniture is, what its treadmill listings claim, returns, shipping and warranty terms, and what to check before buying.',
   crumbLabel: 'Streamdale Folding Treadmill',

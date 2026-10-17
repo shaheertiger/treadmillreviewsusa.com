@@ -3,9 +3,9 @@ import Layout from "../layouts/Layout.astro";
 import TrustBadge from "../components/TrustBadge.astro";
 import SocialProof from "../components/SocialProof.astro";
 
-const title = "Best Treadmills for Heavy People (2026): Capacity Is Not the Spec That Matters";
+const title = "Best Treadmills for Heavy People (2026): Beyond Weight Capacity";
 const description =
-  "Weight capacity is a warranty term, not an engineering limit. We tested six treadmills at 280-330 lbs for frame flex, roller diameter, motor heat and deck recovery.";
+  "Weight capacity is a warranty term, not an engineering limit. We compared six treadmills on roller diameter, motor type, frame mass and deck width instead.";
 
 const PRODUCTS = [
   {
@@ -17,19 +17,20 @@ const PRODUCTS = [
     amazonLabel: "Check Price on Amazon",
     reviewUrl: "/life-fitness-t3-treadmill/",
     priceRange: "$3,199-$3,999",
+    priceBounds: {"low":3199,"high":3999},
     specs: "400 lb capacity · commercial AC motor · 60 x 22 in. deck · 3 in. rollers",
     pros: [
-      "Commercial AC motor showed the lowest housing temperature in the group by a wide margin",
-      "No measurable deck deflection change between our 285 lb and 330 lb loads",
+      "Commercial AC motor, the motor type best suited to sustained heavy load",
+      "400 lb capacity leaves a real margin for users near 300 lbs",
       "3-inch rollers — the largest here, and the specification that most affects longevity",
-      "Frame did not move at any speed or load we tested",
+      "Commercial frame built to stay still under heavy load",
     ],
     cons: [
       "The most expensive machine here by a considerable margin",
       "Does not fold and needs a planned permanent location",
     ],
-    bottomLine: "The only machine here we would put a 330 lb user on without qualification. If the budget reaches, this is the buy.",
-    description: "Commercial machines are designed for continuous use by users of every size, and this category is where that design brief pays off most obviously. The AC motor was the standout result in our testing: after 45 minutes of incline walking at 285 lbs the housing was warm rather than hot, where two of the DC machines here were uncomfortable to touch. Deck deflection barely changed between our two testers, which means the cushioning still has travel left at the top of the range rather than bottoming out. The 3-inch rollers are the largest on this page and are the specification we would point to if asked why this machine will still be running in ten years. It costs roughly double the Sole and does not fold. For a user near 300 lbs intending to use it daily for years, the arithmetic is straightforward, and we would rather someone bought this than two cheaper machines in sequence.",
+    bottomLine: "On its specifications, the machine here we would choose for a 330 lb user. If the budget reaches, this is the buy.",
+    description: "Commercial machines are designed for continuous use by users of every size, and this category is where that design brief pays off most obviously. The AC motor is the standout specification: AC motors handle sustained load without the heat build-up that DC motors develop on long incline sessions. The 400 lb capacity means a user near 300 lbs is well inside the range, where the cushioning should still have travel left rather than bottoming out. The 3-inch rollers are the largest on this page and are the specification we would point to if asked why this machine will still be running in ten years. It costs roughly double the Sole and does not fold. For a user near 300 lbs intending to use it daily for years, the arithmetic is straightforward, and we would rather someone bought this than two cheaper machines in sequence.",
   },
   {
     id: "sole-f65",
@@ -40,19 +41,20 @@ const PRODUCTS = [
     amazonLabel: "Check Price on Amazon",
     reviewUrl: "/sole-f65-treadmill/",
     priceRange: "$1,199-$1,399",
+    priceBounds: {"low":1199,"high":1399},
     specs: "325 lb capacity · 3.25 CHP DC · 60 x 20 in. deck · 2.5 in. rollers",
     pros: [
       "2.5-inch rollers at a price where 1.9 inches is common",
-      "Heavier frame than anything else near its price — no flex at walking pace",
+      "Heavier frame than anything else near its price",
       "325 lb stated capacity with construction that supports the claim",
       "No subscription, no account, no recurring cost",
     ],
     cons: [
-      "DC motor ran noticeably warmer than the commercial machines on long incline sessions",
+      "DC motor will run warmer than the commercial AC machines on long incline sessions",
       "20-inch belt is tighter than ideal for a wider stance",
     ],
     bottomLine: "The best value here for a user up to about 260 lbs. Above that, the DC motor becomes the limiting factor rather than the frame.",
-    description: "Sole builds heavier than its price band implies, and the F65 is the clearest example. The 2.5-inch rollers matter here more than anywhere: at this price most competitors fit 1.9-inch rollers, which spin faster, load their bearings harder and flex the belt more tightly on every rotation. The frame took our 285 lb tester's walking sessions with no perceptible movement. Where it reaches its limit is heat — after 45 minutes of incline walking the motor housing was hot rather than warm, and while it never faltered, that is the wear mechanism that ends DC treadmills. Our judgement is that this is an excellent machine to about 260 lbs and an acceptable one to 285 if you keep sessions moderate and lubricate on the shorter interval. The 20-inch belt is the other reservation for wider users.",
+    description: "Sole builds heavier than its price band implies, and the F65 is the clearest example. The 2.5-inch rollers matter here more than anywhere: at this price most competitors fit 1.9-inch rollers, which spin faster, load their bearings harder and flex the belt more tightly on every rotation. The frame is heavier than the price band implies. Where it reaches its limit is heat: a 3.25 CHP DC motor on long incline sessions at a higher body weight builds heat, and that is the wear mechanism that ends DC treadmills. Our judgement is that this is an excellent machine to about 260 lbs and an acceptable one to 285 if you keep sessions moderate and lubricate on the shorter interval. The 20-inch belt is the other reservation for wider users.",
   },
   {
     id: "nordictrack-commercial-1750",
@@ -63,11 +65,12 @@ const PRODUCTS = [
     amazonLabel: "Check Price on Amazon",
     reviewUrl: "/nordictrack-commercial-1750-treadmill/",
     priceRange: "$1,799-$2,299",
+    priceBounds: {"low":1799,"high":2299},
     specs: "300 lb capacity · 3.5 CHP DC · 60 x 22 in. deck · 2.5 in. rollers",
     pros: [
       "22-inch belt width is a genuine comfort gain for a wider stance",
-      "3.5 CHP is the highest DC rating here and held pace under load",
-      "Heavy frame stayed planted through jogging at 285 lbs",
+      "3.5 CHP is a strong DC rating for this use",
+      "Heavy frame with the mass to stay planted under load",
       "Guided incline walking content suits how most users here will actually train",
     ],
     cons: [
@@ -75,7 +78,7 @@ const PRODUCTS = [
       "Subscription prompts are constant and the console is built around them",
     ],
     bottomLine: "The right pick if guided content will keep you using it — but only up to about 240 lbs, given the 300 lb rating.",
-    description: "The 1750 has the widest belt here at 22 inches, and for a heavier user that is a more meaningful specification than it sounds: a wider stance is common and a 20-inch belt produces constant small corrections to avoid the rails. The 3.5 CHP motor is the strongest DC unit on this page and held pace comfortably under our primary tester. Frame mass is ample. The constraint is the stated capacity: at 300 lbs it is the lowest here, and applying the margin we recommend throughout this guide puts its comfortable ceiling around 240 lbs. That is a real limitation for many readers of this page, and it is why a machine we rate highly elsewhere is third here. If you are within that range and guided incline sessions are what will keep you on the machine, it is an excellent choice.",
+    description: "The 1750 has the widest belt here at 22 inches, and for a heavier user that is a more meaningful specification than it sounds: a wider stance is common and a 20-inch belt produces constant small corrections to avoid the rails. The 3.5 CHP motor is among the strongest DC ratings on this page. Frame mass is ample. The constraint is the stated capacity: at 300 lbs it is the lowest here, and applying the margin we recommend throughout this guide puts its comfortable ceiling around 240 lbs. That is a real limitation for many readers of this page, and it is why a machine we rate highly elsewhere is third here. If you are within that range and guided incline sessions are what will keep you on the machine, it is an excellent choice.",
   },
   {
     id: "matrix-t7xe",
@@ -86,10 +89,11 @@ const PRODUCTS = [
     amazonLabel: "Check Price on Amazon",
     reviewUrl: "/matrix-fitness-t7xe-treadmill/",
     priceRange: "$3,499-$4,299",
+    priceBounds: {"low":3499,"high":4299},
     specs: "400 lb capacity · commercial motor · 60 x 22 in. deck · 3 in. rollers",
     pros: [
-      "Deck recovered fully between footfalls at every load we tested",
-      "Belt tracking needed no adjustment across the entire test period",
+      "Commercial deck built to recover between footfalls under heavy load",
+      "Commercial build tolerances, which is what keeps belt tracking true under load",
       "Gym-grade frame and 400 lb capacity that is genuinely engineered",
       "High-contrast console readable at a glance",
     ],
@@ -98,7 +102,7 @@ const PRODUCTS = [
       "Touchscreen menus are an obstacle rather than a feature for many buyers",
     ],
     bottomLine: "Level with the Life Fitness T3 on capability. Choose between them on price, delivery and local service rather than specification.",
-    description: "Matrix and Life Fitness compete for the same commercial buyer, and for this category they arrive at the same place by slightly different routes. The T7xe's deck was the best performer in our recovery test — the measure of whether cushioning returns to shape between footfalls rather than staying compressed — which is the specification that determines whether a machine still feels cushioned at the top of its weight range. Belt tracking was flawless across six weeks, which is unusual and speaks to build tolerances. It is also the most expensive machine on this page while offering nothing the T3 does not for a heavy user, and the touchscreen adds menu navigation that a plain console avoids. Cross-shop the two on delivery terms and whether there is a local service engineer, because on hardware they are level.",
+    description: "Matrix and Life Fitness compete for the same commercial buyer, and for this category they arrive at the same place by slightly different routes. The T7xe's case rests on its commercial deck and its 400 lb capacity. Deck recovery — whether cushioning returns to shape between footfalls rather than staying compressed — is what determines whether a machine still feels cushioned at the top of its weight range, and a commercial deck with this much capacity behind it is built for exactly that. It is also the most expensive machine on this page while offering nothing the T3 does not for a heavy user, and the touchscreen adds menu navigation that a plain console avoids. Cross-shop the two on delivery terms and whether there is a local service engineer, because on hardware they are level.",
   },
   {
     id: "nordictrack-commercial-2450",
@@ -109,19 +113,20 @@ const PRODUCTS = [
     amazonLabel: "Check Price on Amazon",
     reviewUrl: "/nordictrack-commercial-2450-treadmill/",
     priceRange: "$2,299-$2,799",
+    priceBounds: {"low":2299,"high":2799},
     specs: "300 lb capacity · 3.6 CHP DC · 60 x 22 in. deck · 2.5 in. rollers",
     pros: [
-      "Held pace on sustained 8-10% grades where lighter-motored machines audibly laboured",
-      "Ran cooler than the 1750 under the same incline load despite a larger motor",
+      "Larger 3.6 CHP motor for sustained 8-10% grades",
+      "A larger motor works further inside its envelope under the same incline load",
       "22-inch belt and full 60-inch deck",
-      "Incline changes fast enough for structured interval walking",
+      "Built for incline changes quick enough for structured interval walking",
     ],
     cons: [
       "Same 300 lb stated capacity as the 1750, so the same practical ceiling applies",
       "Expensive relative to the Sole for gains only incline walkers will notice",
     ],
     bottomLine: "The best machine here for sustained incline walking, which is how many heavier users should be training — within the same 240 lb practical limit.",
-    description: "Incline walking is the training approach we would recommend to most people reading this page: substantially more work done per session with roughly half the joint impact of running. The 2450 is the machine best suited to it below commercial prices. Its larger motor held steady pace on sustained 8 to 10% grades where the 1750 was working audibly harder, and — counter-intuitively — it ran cooler doing so, because the motor is operating further inside its envelope. Incline transitions are quick enough to run genuine intervals rather than approximations. The limitation is identical to the 1750's: a 300 lb stated capacity that, with the margin we recommend, means a practical ceiling around 240 lbs. Within that range and for an incline-focused user, it is the strongest non-commercial option here.",
+    description: "Incline walking is the training approach we would recommend to most people reading this page: substantially more work done per session with roughly half the joint impact of running. The 2450 is the machine best suited to it below commercial prices. Its larger motor is better suited to sustained 8 to 10% grades than the 1750's, because it operates further inside its envelope under the same load, which is also what keeps a motor cooler. Incline transitions are built to be quick enough to run genuine intervals rather than approximations. The limitation is identical to the 1750's: a 300 lb stated capacity that, with the margin we recommend, means a practical ceiling around 240 lbs. Within that range and for an incline-focused user, it is the strongest non-commercial option here.",
   },
   {
     id: "life-fitness-platinum-club-series",
@@ -132,11 +137,12 @@ const PRODUCTS = [
     amazonLabel: "Check Price on Amazon",
     reviewUrl: "/life-fitness-platinum-club-series-treadmill/",
     priceRange: "$8,000-$12,000",
+    priceBounds: {"low":8000,"high":12000},
     specs: "400 lb capacity · commercial AC motor · 60 x 22 in. deck · commercial rollers",
     pros: [
       "Boutique-gym build quality throughout, with service support to match",
-      "Quietest machine here under load despite the largest motor",
-      "Deck and frame are entirely unaffected by user weight within the rated range",
+      "Commercial AC motor and commercial rollers throughout",
+      "Deck and frame built so user weight within the rated range makes little difference",
       "Designed for eight-hour-a-day commercial duty cycles",
     ],
     cons: [
@@ -144,7 +150,7 @@ const PRODUCTS = [
       "Delivery and installation need planning and often professional help",
     ],
     bottomLine: "Genuinely excellent and genuinely hard to justify at home. Buy the T3 and spend the difference on something else.",
-    description: "Included for completeness rather than as a recommendation. Everything about this machine is built to a commercial standard, it is the quietest thing here under load, and a home user operating it an hour a day is using perhaps an eighth of its designed duty cycle. All of that is true and none of it makes it a sensible home purchase for most people, including most people shopping this category. The honest position is that the T3 delivers the specifications that matter for a heavy home user — AC motor, 3-inch rollers, 400 lb capacity, immovable frame — at a fraction of the cost, and the additional money here buys durability margin that a home duty cycle will never consume. If cost genuinely is not a consideration and you want the best available, this is it. Otherwise it is the wrong answer to the right question.",
+    description: "Included for completeness rather than as a recommendation. Everything about this machine is built to a commercial standard, and a home user operating it an hour a day is using perhaps an eighth of its designed duty cycle. All of that is true and none of it makes it a sensible home purchase for most people, including most people shopping this category. The honest position is that the T3 delivers the specifications that matter for a heavy home user — AC motor, 3-inch rollers, 400 lb capacity, immovable frame — at a fraction of the cost, and the additional money here buys durability margin that a home duty cycle will never consume. If cost genuinely is not a consideration and you want the best available, this is it. Otherwise it is the wrong answer to the right question.",
   },
 ];
 
@@ -216,7 +222,7 @@ const schema = {
       "@type": "Article",
       headline: title,
       description: description,
-      author: { "@type": "Person", name: "Morgan Reyes" },
+      author: { "@type": "Person", name: "Shaheer Ali Khan", url: "https://www.linkedin.com/in/shaheer-ali-khan-data/", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], jobTitle: "Author and lab tester", worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: "2026-09-08",
       dateModified: "2026-09-08",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
@@ -226,12 +232,29 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
-      offers: {
-        "@type": "AggregateOffer",
-        priceCurrency: "USD",
-        availability: "https://schema.org/InStock",
-      },
+      ...(product.priceBounds
+        ? {
+            offers: {
+              "@type": "AggregateOffer",
+              priceCurrency: "USD",
+              lowPrice: product.priceBounds.low,
+              highPrice: product.priceBounds.high,
+              url: product.amazonUrl,
+            },
+          }
+        : {}),
     })),
+    {
+      "@type": "ItemList",
+      name: title,
+      numberOfItems: 6,
+      itemListElement: PRODUCTS.map((product, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: product.name,
+        url: `https://www.treadmillreviewsusa.com/best-treadmills-for-heavy-people/#${product.id}`,
+      })),
+    },
   ],
 };
 ---
@@ -243,7 +266,7 @@ const schema = {
   article={{
     publishedTime: "2026-09-08",
     modifiedTime: "2026-09-08",
-    author: "Morgan Reyes",
+    author: "Shaheer Ali Khan",
     section: "Fitness Equipment",
     tags: [
       "treadmills for heavy people",
@@ -281,7 +304,7 @@ const schema = {
           Best Treadmills for <span class="text-[#5AA9FF]">Heavy Users</span>
         </h1>
         <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The stated weight capacity tells you where the warranty stops, not where the machine struggles. We tested at 280 to 330 lbs and ranked on roller diameter, frame flex and how the deck recovered.
+          The stated weight capacity tells you where the warranty stops, not where the machine struggles. We ranked on roller diameter, motor type, frame mass and deck width — the specifications that decide how a machine copes with load.
         </p>
         <div class="mt-8 flex flex-wrap justify-center gap-4">
           <a href="#life-fitness-t3" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
@@ -298,10 +321,10 @@ const schema = {
     <!-- Author & Meta -->
     <div class="max-w-3xl mx-auto px-4 pt-12">
       <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan" width="48" height="48" class="w-12 h-12 rounded-full" />
         <div>
-          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
-          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+          <p class="font-bold text-gray-900 leading-tight"><a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="author noopener" target="_blank" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan</a></p>
+          <p class="text-gray-500 text-sm leading-tight">Author and lab tester</p>
         </div>
         <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
         <p class="text-gray-500 text-sm">
@@ -318,11 +341,46 @@ const schema = {
           diameters and motor ratings are manufacturers' published figures. Weight capacity in
           particular is a warranty term set by the manufacturer rather than a measured
           engineering limit, and it varies between model years under the same product name.
-          Confirm it for the exact unit you are buying, in writing, before ordering.
+          Confirm it for the exact unit you are buying, in writing, before ordering. We have not
+          tested these machines; what we say about how they behave under load is inferred from
+          those published specifications, not from our own measurements.
         </p>
       </div>
     </div>
 
+
+    <div class="max-w-3xl mx-auto px-4 pt-8">
+      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
+        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
+        <ul class="list-none m-0 p-0">
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
+            <a href="#life-fitness-t3" class="font-bold text-gray-900 no-underline hover:underline">Life Fitness T3</a>
+            <a href="#life-fitness-t3" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Value:</span>
+            <a href="#sole-f65" class="font-bold text-gray-900 no-underline hover:underline">Sole F65</a>
+            <a href="#sole-f65" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Console:</span>
+            <a href="#nordictrack-commercial-1750" class="font-bold text-gray-900 no-underline hover:underline">NordicTrack Commercial 1750</a>
+            <a href="#nordictrack-commercial-1750" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Cushioning:</span>
+            <a href="#matrix-t7xe" class="font-bold text-gray-900 no-underline hover:underline">Matrix Fitness T7xe</a>
+            <a href="#matrix-t7xe" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Incline:</span>
+            <a href="#nordictrack-commercial-2450" class="font-bold text-gray-900 no-underline hover:underline">NordicTrack Commercial 2450</a>
+            <a href="#nordictrack-commercial-2450" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div class="max-w-3xl mx-auto px-4 py-10">
       <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
         <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
@@ -332,7 +390,7 @@ const schema = {
         <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
           <a href="#capacity-myth" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Why the Weight Capacity Figure Misleads</a>
           <a href="#criteria" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The Five Specs That Actually Matter Here</a>
-          <a href="#how-we-tested" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Tested at Weight</a>
+          <a href="#how-we-tested" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose for Heavier Users</a>
           <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. The Six Best Treadmills for Heavy Users</a>
           <a href="#warranty" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Warranty Terms Deserve a Careful Read</a>
           <a href="#maintenance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Maintenance Matters More at Higher Loads</a>
@@ -421,28 +479,28 @@ const schema = {
         </div>
 
         <div id="how-we-tested" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Tested at Weight</h2>
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose for Heavier Users</h2>
 <p>
-            Testing this category honestly requires testers at the weights involved. Our primary
-            tester for this guide is 6'1" and 285 lbs; a second tester at 315 lbs used every
-            machine for at least two weeks. Where we needed to assess behaviour closer to a
-            machine's stated ceiling, we added plate weight in a carried vest up to 330 lbs for
-            controlled walking sessions only, never for running.
+            We have not tested these machines, and nothing on this page should be read as if we
+            had. Testing this category properly would require testers at the weights involved, and
+            we have not done that. Instead, every machine was judged on the published
+            specifications that govern how a treadmill copes with load: roller diameter, motor
+            type and continuous rating, assembled weight as a proxy for frame mass, deck width
+            and stated capacity.
           </p>
           <p>
-            Each machine ran a minimum of six weeks of mixed walking and jogging. We measured
-            deck deflection under static load at the centre of the belt, logged motor housing
-            temperature after 45 minutes of continuous walking at 3.5 mph on a 5% grade, checked
-            belt tracking every ten miles, and recorded frame movement at the console during
-            jogging.
+            Those specifications point in a consistent direction. Larger rollers, an AC motor, a
+            heavier frame and a capacity well above the user's weight all mean a machine working
+            further inside its limits, and a machine working inside its limits runs cooler, flexes
+            less and lasts longer. Where a machine's figures do not tell a consistent story — a
+            high capacity on a light frame with small rollers, for instance — we trust the
+            supporting figures over the headline.
           </p>
           <p>
-            The motor temperature test was the most revealing and produced the clearest
-            separation in the group. Two machines that felt entirely adequate to walk on were
-            running hot enough after 45 minutes that we would not have wanted to repeat the
-            session daily for a year. That is the kind of problem a showroom visit cannot
-            surface, and it is the single most common reason machines in this category fail
-            early.
+            Motor heat deserves particular attention. A DC motor under sustained heavy load, such
+            as long daily incline walks at a higher body weight, builds heat, and heat is the
+            single most common reason machines in this category fail early. That is a problem a
+            showroom visit cannot surface, which is why motor type weighs heavily in the ranking.
           </p>
         </div>
 
@@ -464,9 +522,9 @@ const schema = {
               <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
                 <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
                   <div>
-                    <p class="text-white font-black text-xl leading-tight">
+                    <h3 class="text-white font-black text-xl leading-tight m-0">
                       {index + 1}. {product.name}
-                    </p>
+                    </h3>
                     <p class="text-gray-400 text-xs">{product.category}</p>
                   </div>
                   <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
@@ -482,7 +540,7 @@ const schema = {
                   <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
                   <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                     <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <p class="text-xs font-black uppercase tracking-widest text-green-700 mb-2">What Works</p>
+                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
                       <ul class="space-y-2">
                         {product.pros.map((pro) => (
                           <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
@@ -490,7 +548,7 @@ const schema = {
                       </ul>
                     </div>
                     <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <p class="text-xs font-black uppercase tracking-widest text-red-700 mb-2">What Doesn't</p>
+                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
                       <ul class="space-y-2">
                         {product.cons.map((con) => (
                           <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
@@ -629,9 +687,9 @@ const schema = {
 <p>
             If the budget allows it, the <strong>Life Fitness T3</strong> is the right answer and
             it is not close. A commercial AC motor, a 400 lb capacity that is genuinely
-            engineered rather than nominal, and a frame that does not move are exactly what this
-            use case needs, and it is the one machine here we would put a 330 lb user on without
-            reservation.
+            engineered rather than nominal, and a commercial frame are exactly what this use case
+            needs, and on its specifications it is the machine here we would choose for a 330 lb
+            user.
           </p>
           <p>
             At half that money, the <strong>Sole F65</strong> is the value pick: 325 lbs stated,
@@ -742,8 +800,8 @@ const schema = {
           <p class="text-gray-300 leading-relaxed mb-4">
             Shop 50 to 75 lbs above your weight, check the roller diameter before anything else, and
             treat the maintenance interval as half the standard one. The
-            <strong class="text-white">Life Fitness T3</strong> is the machine we would put a
-            300 lb user on without reservation; the
+            <strong class="text-white">Life Fitness T3</strong> is the machine we would choose for a
+            300 lb user; the
             <strong class="text-white">Sole F65</strong> is the value answer up to about 260 lbs.
           </p>
           <p class="text-gray-300 leading-relaxed mb-4">
@@ -754,6 +812,22 @@ const schema = {
             is what turns a five-year machine into a ten-year one.
           </p>
         </div>
+
+        <!-- Meet the Author -->
+        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
+          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
+          <div>
+            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
+            <p class="text-sm text-gray-700 leading-relaxed m-0">
+              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="author noopener" target="_blank" class="font-bold text-gray-900">Shaheer Ali Khan</a>
+              writes and lab-tests for Treadmill Reviews USA. Every guide says what was checked, against
+              which sources and on what date, and says plainly when a product has not been tested
+              hands-on. Read our
+              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">editorial standards</a>.
+            </p>
+          </div>
+        </div>
+
       </div>
     </div>
   </article>

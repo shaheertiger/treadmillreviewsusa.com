@@ -3,14 +3,13 @@ import Layout from "../layouts/Layout.astro";
 import TrustBadge from "../components/TrustBadge.astro";
 import SocialProof from "../components/SocialProof.astro";
 
-const title = "Matrix Fitness T7xe Treadmill Review (2026): Commercial Power at a Home Price";
+const title = "Matrix Fitness T7xe Review (2026): Commercial Power at Home";
 const description =
-  "We tested the Matrix Fitness T7xe's AC commercial motor, 15.6-inch touchscreen, and subscription-free app ecosystem against the Life Fitness T3 and NordicTrack Commercial 2950. Here's our honest take.";
+  "We compared the Matrix Fitness T7xe's AC commercial motor, 15.6-inch touchscreen, and subscription-free app ecosystem against the Life Fitness T3 and NordicTrack Commercial 2950. Here's our honest take.";
 
 const PRODUCT = {
   name: "Matrix Fitness T7xe",
-  rating: 4.7,
-  reviewCount: 1942,
+  editorialScore: 4.7,
   amazonUrl:
     "https://www.amazon.com/s?k=Matrix+Fitness+T7xe+Treadmill&tag=sktiger-20",
   priceRange: "$4,999-$5,999",
@@ -117,7 +116,7 @@ const schema = {
           name: "Is the T7xe loud at higher speeds?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "We measured it in the same low-60 decibel range as other well-built AC-motor treadmills during sustained running, and the motor noise stayed flat rather than climbing as speed increased, which is typical of commercial-grade AC motors running well within their rated capacity.",
+            text: "We have not measured it ourselves. A 4.0 CHP commercial AC motor running well within its rated capacity typically stays steadier in volume as speed increases than a lighter-duty DC motor working near its limit, so it should not get dramatically louder at higher speeds.",
           },
         },
       ],
@@ -125,7 +124,7 @@ const schema = {
     {
       "@type": "Article",
       headline: title,
-      author: { "@type": "Person", name: "Morgan Reyes" },
+      author: { "@type": "Person", name: "Shaheer Ali Khan", url: "https://www.linkedin.com/in/shaheer-ali-khan-data/", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], jobTitle: "Author and lab tester", worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: "2026-05-22",
       dateModified: "2026-05-22",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
@@ -135,11 +134,6 @@ const schema = {
       name: PRODUCT.name,
       description,
       brand: { "@type": "Brand", name: "Matrix Fitness" },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: PRODUCT.rating,
-        reviewCount: PRODUCT.reviewCount,
-      },
     },
   ],
 };
@@ -152,7 +146,7 @@ const schema = {
   article={{
     publishedTime: "2026-05-22",
     modifiedTime: "2026-05-22",
-    author: "Morgan Reyes",
+    author: "Shaheer Ali Khan",
     section: "Fitness Equipment",
     tags: ["matrix fitness t7xe", "matrix fitness treadmill review", "commercial treadmill", "matrix fitness", "home gym"],
   }}
@@ -179,8 +173,8 @@ const schema = {
           Matrix Fitness <span class="text-[#5AA9FF]">T7xe</span> Review
         </h1>
         <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          We spent three weeks running on Matrix's commercial-grade AC motor
-          treadmill to find out whether it earns its price against the
+          We compared Matrix's commercial-grade AC motor treadmill on its
+          specifications to find out whether it earns its price against the
           Life Fitness T3 and NordicTrack's Commercial line.
         </p>
         <div class="mt-8 flex flex-wrap justify-center gap-4">
@@ -193,10 +187,10 @@ const schema = {
     <!-- Author & Meta -->
     <div class="max-w-3xl mx-auto px-4 pt-12">
       <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan" width="48" height="48" class="w-12 h-12 rounded-full" />
         <div>
-          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
-          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+          <p class="font-bold text-gray-900 leading-tight"><a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="author noopener" target="_blank" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan</a></p>
+          <p class="text-gray-500 text-sm leading-tight">Author and lab tester</p>
         </div>
         <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
         <p class="text-gray-500 text-sm">Last Updated: <strong class="text-gray-700">May 22, 2026</strong></p>
@@ -205,18 +199,8 @@ const schema = {
 
       <div class="not-prose my-10 bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
         <div class="flex items-center justify-between flex-wrap gap-4 mb-4">
-          <div class="flex items-center gap-2">
-            <div class="flex text-yellow-400">
-              {[...Array(5)].map((_, i) => (
-                <svg class={`w-5 h-5 ${i < Math.floor(PRODUCT.rating) ? "fill-current" : "text-gray-200"}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-              ))}
-            </div>
-            <span class="font-bold text-gray-900">{PRODUCT.rating}</span>
-            <span class="text-gray-400 text-sm">({PRODUCT.reviewCount.toLocaleString()} reviews)</span>
-          </div>
           <span class="bg-[#0F62FE]/10 text-[#0F62FE] px-3 py-1 rounded-full text-xs font-bold">Editor's Choice: Commercial-Grade Home Machine</span>
+          {PRODUCT.editorialScore && (<p class="text-sm text-gray-600 mt-1 mb-0">Our editorial score: <strong class="text-gray-900">{PRODUCT.editorialScore}</strong>/5</p>)}
         </div>
         <p class="text-gray-700 leading-relaxed mb-4">
           The T7xe is the machine we'd point serious home runners toward if
@@ -265,8 +249,8 @@ const schema = {
           equipment under Johnson Health Tech, the same parent company
           behind several major fitness brands. The T7xe is Matrix's current
           answer to home buyers who want that commercial engineering without
-          a commercial-sized budget, and after three weeks of testing, we
-          think it mostly delivers.
+          a commercial-sized budget, and on its specifications and warranty,
+          we think it mostly delivers.
         </p>
 
         <div id="overview" class="scroll-mt-24">
@@ -339,8 +323,8 @@ const schema = {
         <div id="specs" class="scroll-mt-24">
         <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Full Spec Sheet</h2>
         <p>
-          Here's every spec we verified directly against our test unit
-          rather than copying from the manufacturer's marketing page.
+          Here's every spec for the T7xe, taken from Matrix's published
+          specifications. We have not tested the machine ourselves.
         </p>
         </div>
       </div>
@@ -365,13 +349,11 @@ const schema = {
           Assembly on the T7xe is a bigger undertaking than a typical
           folding treadmill, closer in scope to assembling a piece of gym
           equipment than a consumer appliance, and Matrix is upfront about
-          that in its documentation. Our test unit arrived with the deck and
-          motor housing largely pre-assembled, but the upright console mast,
-          handrails, and side rails still required careful two-person
+          that in its documentation. Expect the deck and motor housing to
+          arrive largely pre-assembled, with the upright console mast,
+          handrails, and side rails still needing careful two-person
           assembly, and we'd strongly discourage attempting it solo given
-          the weight of the individual components. Total build time ran
-          close to two hours with two people working from the included
-          instructions.
+          the weight of the individual components.
         </p>
         <p>
           Because this is a fixed-frame commercial machine, Matrix also
@@ -396,33 +378,24 @@ const schema = {
         <h3>Motor and Deck</h3>
         <p>
           The 4.0 CHP AC commercial motor is the standout feature of this
-          machine, and it shows immediately once you start running. Even
-          during extended interval sessions well past 8 mph, the motor
-          never sounded strained, and belt speed stayed rock-steady rather
-          than surging under load the way we've felt on lighter-duty DC
-          motors pushed toward their ceiling. The 22 x 60-inch deck gave our
-          tallest tester, at 6'2", plenty of room during full-stride
-          sprints, and the deck itself felt notably more rigid underfoot
-          than folding-frame competitors at a similar price.
+          machine. A commercial AC drive at this rating is built for
+          extended interval sessions well past 8 mph with steady belt speed,
+          rather than the surging under load that lighter-duty DC motors
+          can show when pushed toward their ceiling. The 22 x 60-inch deck
+          leaves room for taller runners during full-stride sprints, and a
+          fixed frame is inherently more rigid than folding-frame
+          competitors at a similar price.
         </p>
         <p>
-          We ran the same 45-minute heat-soak test we use across every
-          review: continuous jogging at 6.5 mph with a hand check on the
-          motor housing every ten minutes. The housing barely warmed at all
-          relative to what we've measured on DC-motor machines under the
-          same conditions, which is the clearest real-world evidence of the
-          AC motor's continuous-duty design. Belt tracking held perfectly
-          centered through the entire test.
+          The AC motor's continuous-duty design is meant to handle long
+          sessions without the heat buildup that DC-motor machines tend to
+          show under the same load, which is the main practical reason to
+          pay for commercial construction.
         </p>
         <h3>Incline and Console</h3>
         <p>
-          The 0-15% incline range responds quickly and smoothly, ramping in
-          controlled steps rather than lurching, and it held its calibration
-          consistently across every session of our testing period. The
-          15.6-inch touchscreen is genuinely one of the largest and most
-          responsive we've tested on a machine in this price range, with
-          crisp text, fast touch response, and no noticeable lag when
-          switching between programs.
+          The 0-15% incline range is automatic. The 15.6-inch touchscreen
+          is genuinely one of the largest on a machine in this price range.
         </p>
         <h3>App Ecosystem and Everyday Usability</h3>
         <p>
@@ -433,39 +406,35 @@ const schema = {
           control, and interval workout is available the moment you power
           the machine on. For anyone who's grown tired of subscription
           creep on connected fitness equipment, this is a genuinely
-          meaningful differentiator, not a footnote. Bluetooth audio paired
-          reliably in every test session, and the built-in speakers were
-          loud enough to fill a mid-sized room without an external speaker.
+          meaningful differentiator, not a footnote. Built-in Bluetooth
+          speakers are included for music without an external speaker.
         </p>
         <h3>Noise and Everyday Comfort</h3>
         <p>
-          Noise stayed remarkably consistent regardless of speed, which
-          testers specifically called out as a difference from lighter-duty
-          machines that tend to get audibly louder as they approach top
-          speed. We measured the T7xe in the low-60 decibel range throughout
-          sustained running, and it didn't climb meaningfully even at its
-          12 mph top speed, which speaks to the AC motor having real
-          headroom left rather than working near its limit.
+          A motor with real headroom tends to stay more consistent in volume
+          regardless of speed, unlike lighter-duty machines that get audibly
+          louder as they approach top speed. With a 4.0 CHP AC motor and a
+          12 mph top speed, the T7xe is never working near its limit.
         </p>
 
         <h3>Cushioning and Feel Underfoot</h3>
         <p>
           Matrix uses a multi-zone deck cushioning system on the T7xe that,
           like the motor, borrows directly from the brand's commercial
-          equipment. The impact zone under the heel strike is noticeably
+          equipment. The impact zone under the heel strike is designed to be
           softer than the push-off zone toward the front of the deck, a
-          tuning approach that reduces joint impact without making the deck
-          feel mushy or unstable during faster running. Testers coming
-          straight from a lighter, folding treadmill consistently described
-          the T7xe's deck as feeling more "planted," with less of the give
-          and bounce that comes from a lighter frame flexing under load.
+          tuning approach intended to reduce joint impact without making the
+          deck feel mushy or unstable during faster running. Compared with a
+          lighter, folding treadmill, a fixed commercial frame has less of
+          the give and bounce that comes from a lighter frame flexing under
+          load.
         </p>
         <p>
-          We also spent time comparing walking-pace comfort specifically,
-          since not every household member using a machine like this will
-          be running. At 2.5-3.5 mph, the deck cushioning felt slightly
-          firmer than a dedicated walking-pad style machine, which tracks
-          with the T7xe's design priority: this is a treadmill tuned first
+          Walking-pace comfort is worth considering too, since not every
+          household member using a machine like this will be running. A
+          deck tuned like this is likely to feel firmer at walking pace than
+          a dedicated walking-focused machine, which tracks with the T7xe's
+          design priority: this is a treadmill tuned first
           for running performance and stability at higher speeds, with
           walking comfort as a secondary consideration rather than the
           primary design goal.
@@ -475,10 +444,10 @@ const schema = {
         <div id="durability" class="scroll-mt-24">
         <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Long-Term Durability Notes</h2>
         <p>
-          Three weeks of testing can't fully answer a multi-year durability
-          question on its own, so we cross-referenced our hands-on
-          impressions against Matrix's commercial-equipment track record and
-          patterns in early owner feedback on the T7xe specifically. The
+          We have not tested the T7xe, and no short review could fully
+          answer a multi-year durability question anyway, so this section
+          leans on Matrix's commercial-equipment track record and patterns
+          in early owner feedback on the T7xe specifically. The
           fixed-frame, no-fold construction removes one of the most common
           long-term failure points on home treadmills — the fold hinge and
           latch mechanism — entirely, and owners consistently reported the
@@ -518,10 +487,10 @@ const schema = {
           <p class="text-xs font-black uppercase tracking-widest text-green-700 mb-3">Pros</p>
           <ul class="space-y-2">
             {[
-              "4.0 CHP AC commercial motor stays cool and steady under heavy use",
+              "4.0 CHP AC commercial motor is built for continuous heavy use",
               "Large 22 x 60-inch deck comfortably fits taller runners",
               "No required subscription — every core feature works out of the box",
-              "15.6-inch touchscreen is fast, crisp, and genuinely large",
+              "15.6-inch touchscreen is genuinely large for this price",
               "Fixed frame eliminates the fold hinge as a long-term wear point",
             ].map((pro) => (
               <li class="flex items-start gap-2 text-sm text-green-800">
@@ -674,7 +643,7 @@ const schema = {
           minor footnotes, and this isn't the right machine for a casual
           walker or a space-constrained apartment. But judged as a piece of
           exercise equipment built to be run on hard, every single day, for
-          years, this is one of the more convincing arguments we've tested
+          years, this is one of the more convincing arguments we've seen
           for paying up into commercial-grade territory.
         </p>
         <p>
@@ -750,11 +719,11 @@ const schema = {
           <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Is the T7xe loud at higher speeds?</h3>
             <p class="text-gray-700 text-sm leading-relaxed">
-              We measured it in the same low-60 decibel range as other
-              well-built AC-motor treadmills during sustained running, and
-              the motor noise stayed flat rather than climbing as speed
-              increased, which is typical of commercial-grade AC motors
-              running well within their rated capacity.
+              We have not measured it ourselves. A 4.0 CHP commercial AC
+              motor running well within its rated capacity typically stays
+              steadier in volume as speed increases than a lighter-duty DC
+              motor working near its limit, so it should not get dramatically
+              louder at higher speeds.
             </p>
           </div>
         </div>

@@ -1,6 +1,6 @@
 export default {
   slug: 'nordictrack-t-series-treadmill',
-  title: 'NordicTrack T Series Treadmill Review (2026): T Series 10, 16 and 8 Compared',
+  title: 'NordicTrack T Series Review (2026): T 8, T 10 and T 16 Compared',
   description:
     'The NordicTrack T Series treadmill line as sold now: T Series 10 and 16 on nordictrack.com, the retail-only T Series 8, and the T Series 5. Confirmed specs, warranty and who each suits.',
   crumbLabel: 'NordicTrack T Series',

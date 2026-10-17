@@ -1,6 +1,6 @@
 export default {
   slug: 'home-treadmill-vs-gym-membership',
-  title: 'Home Treadmill vs Gym Membership (2026): Is Buying a Treadmill Worth It?',
+  title: 'Home Treadmill vs Gym Membership (2026): Is Buying Worth It?',
   description:
     'Break-even arithmetic for a home treadmill against a gym membership, with labelled example figures, the hidden costs on both sides, resale value and a clear verdict.',
   crumbLabel: 'Home Treadmill vs Gym Membership',

@@ -1,6 +1,6 @@
 export default {
   slug: 'what-speed-should-i-walk-on-a-treadmill',
-  title: 'What Speed Should I Walk on a Treadmill? (2026): Average Walking Speeds',
+  title: 'What Speed Should I Walk on a Treadmill? (2026 Guide)',
   description:
     'Easy walking is typically 2.5 to 3 mph, brisk 3 to 3.5 mph and fast 3.5 to 4.5 mph. Here is how to find your own speed with the talk test, and when to add incline instead.',
   crumbLabel: 'What Speed Should I Walk On?',

@@ -1,6 +1,6 @@
 export default {
   slug: 'walking-backwards-on-a-treadmill',
-  title: 'Walking Backwards on a Treadmill (2026): What It Does and How to Start Safely',
+  title: 'Walking Backwards on a Treadmill (2026): Benefits and Safety',
   description:
     'Backward walking shifts work to the quads and calves, is gentler on the front of the knee for many people and costs more energy per mph. Here is how to try it safely.',
   crumbLabel: 'Walking Backwards on a Treadmill',

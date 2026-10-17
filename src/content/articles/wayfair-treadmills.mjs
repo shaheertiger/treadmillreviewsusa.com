@@ -1,6 +1,6 @@
 export default {
   slug: 'wayfair-treadmills',
-  title: 'Wayfair Treadmill Buying Guide (2026): Brands, Delivery, Returns, Plans',
+  title: 'Wayfair Treadmill Buying Guide (2026): Brands and Returns',
   description:
     'Buying a Wayfair treadmill: who actually makes and ships it, house brands vs named brands, how to read a listing, delivery, the 30-day return window, warranty and protection plans.',
   crumbLabel: 'Wayfair Treadmills',

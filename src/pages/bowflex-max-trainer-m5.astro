@@ -3,14 +3,13 @@ import Layout from "../layouts/Layout.astro";
 import TrustBadge from "../components/TrustBadge.astro";
 import SocialProof from "../components/SocialProof.astro";
 
-const title = "Bowflex Max Trainer M5 Review (2026): The Budget Max Trainer, Not a Treadmill";
+const title = "Bowflex Max Trainer M5 Review (2026): The Budget Max Trainer";
 const description =
   "The Bowflex Max Trainer M5 is a compact, budget-friendly elliptical-stepper HIIT machine, not a treadmill. Here's an honest review of what you get for the lower price versus the M7.";
 
 const PRODUCT = {
   name: "Bowflex Max Trainer M5",
-  rating: 4.3,
-  reviewCount: 4218,
+  editorialScore: 4.3,
   amazonUrl:
     "https://www.amazon.com/s?k=Bowflex+Max+Trainer+M5&tag=sktiger-20",
   priceRange: "$999-$1,199",
@@ -125,7 +124,7 @@ const schema = {
     {
       "@type": "Article",
       headline: title,
-      author: { "@type": "Person", name: "Morgan Reyes" },
+      author: { "@type": "Person", name: "Shaheer Ali Khan", url: "https://www.linkedin.com/in/shaheer-ali-khan-data/", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], jobTitle: "Author and lab tester", worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: "2026-06-10",
       dateModified: "2026-06-10",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
@@ -135,11 +134,6 @@ const schema = {
       name: PRODUCT.name,
       description,
       brand: { "@type": "Brand", name: "Bowflex" },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: PRODUCT.rating,
-        reviewCount: PRODUCT.reviewCount,
-      },
     },
   ],
 };
@@ -152,7 +146,7 @@ const schema = {
   article={{
     publishedTime: "2026-06-10",
     modifiedTime: "2026-06-10",
-    author: "Morgan Reyes",
+    author: "Shaheer Ali Khan",
     section: "Fitness Equipment",
     tags: ["bowflex max trainer m5", "bowflex max trainer review", "hiit cardio machine", "low impact cardio", "jrny app"],
   }}
@@ -180,8 +174,8 @@ const schema = {
           Bowflex Max Trainer <span class="text-[#5AA9FF]">M5</span> Review
         </h1>
         <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          We tested Bowflex's entry-level Max Trainer to find out how much
-          you give up at the lower price point — and whether it's still a
+          We compared Bowflex's entry-level Max Trainer with the M7 to find
+          out how much you give up at the lower price point — and whether it's still a
           legitimate low-impact alternative to a treadmill.
         </p>
         <div class="mt-8 flex flex-wrap justify-center gap-4">
@@ -194,10 +188,10 @@ const schema = {
     <!-- Author & Meta -->
     <div class="max-w-3xl mx-auto px-4 pt-12">
       <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan" width="48" height="48" class="w-12 h-12 rounded-full" />
         <div>
-          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
-          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+          <p class="font-bold text-gray-900 leading-tight"><a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="author noopener" target="_blank" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan</a></p>
+          <p class="text-gray-500 text-sm leading-tight">Author and lab tester</p>
         </div>
         <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
         <p class="text-gray-500 text-sm">Last Updated: <strong class="text-gray-700">June 10, 2026</strong></p>
@@ -206,18 +200,8 @@ const schema = {
 
       <div class="not-prose my-10 bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
         <div class="flex items-center justify-between flex-wrap gap-4 mb-4">
-          <div class="flex items-center gap-2">
-            <div class="flex text-yellow-400">
-              {[...Array(5)].map((_, i) => (
-                <svg class={`w-5 h-5 ${i < Math.floor(PRODUCT.rating) ? "fill-current" : "text-gray-200"}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-              ))}
-            </div>
-            <span class="font-bold text-gray-900">{PRODUCT.rating}</span>
-            <span class="text-gray-400 text-sm">({PRODUCT.reviewCount.toLocaleString()} reviews)</span>
-          </div>
           <span class="bg-[#0F62FE]/10 text-[#0F62FE] px-3 py-1 rounded-full text-xs font-bold">Best For: Budget Low-Impact HIIT</span>
+          {PRODUCT.editorialScore && (<p class="text-sm text-gray-600 mt-1 mb-0">Our editorial score: <strong class="text-gray-900">{PRODUCT.editorialScore}</strong>/5</p>)}
         </div>
         <p class="text-gray-700 leading-relaxed mb-4">
           The M5 is the accessible entry point into Bowflex's Max Trainer
@@ -317,8 +301,8 @@ const schema = {
         <p>
           The M5 exists to answer a specific question: can Bowflex's Max
           Trainer format deliver most of the M7's core workout experience
-          at a meaningfully lower price? Having tested both machines back
-          to back, our answer is a qualified yes. The underlying frame and
+          at a meaningfully lower price? Comparing the two machines' published
+          specifications, our answer is a qualified yes. The underlying frame and
           elliptical-stepper motion are essentially the same machine; what
           you're giving up at this price is resistance range, console
           sophistication, and the depth of JRNY app integration, not the
@@ -362,8 +346,8 @@ const schema = {
         <div id="specs" class="scroll-mt-24">
         <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Full Spec Sheet</h2>
         <p>
-          Here's every spec we verified directly against our test unit
-          rather than copying from the manufacturer's marketing page.
+          Here's every spec for the M5, taken from Bowflex's published
+          specifications. We have not tested the machine ourselves.
         </p>
         </div>
       </div>
@@ -410,18 +394,17 @@ const schema = {
           on the M7: short bursts of higher resistance alternating with
           lower-resistance recovery, guided by the console's built-in
           program. With 8 resistance levels instead of 14, the M5's top
-          setting is noticeably less extreme than the M7's — testers who'd
-          used both machines described the M5's hardest level as
-          "genuinely tough" rather than the M7's "borderline brutal." For a
-          beginner or intermediate exerciser, that's plenty of intensity;
+          setting can be expected to be less extreme than the M7's. For a
+          beginner or intermediate exerciser, that's likely to be plenty of
+          intensity;
           advanced users who've built up real conditioning may find
           themselves wanting more headroom sooner than they would on the
           M7.
         </p>
         <p>
           The underlying motion — the combined elliptical glide and
-          vertical stepper pattern — felt identical to the M7 in our
-          testing, which makes sense given the shared frame. If you've
+          vertical stepper pattern — is the same as the M7's, which makes
+          sense given the shared frame. If you've
           tried an M7 in a showroom and liked the feel of the motion, the
           M5 will feel the same underfoot; the differences are entirely in
           resistance range and console features, not in the fundamental
@@ -430,17 +413,13 @@ const schema = {
         <h3>Calorie Burn and Workout Efficiency</h3>
         <p>
           Bowflex markets the Max Trainer line heavily around calorie burn
-          efficiency, and while we're always skeptical of on-console
-          calorie estimates across every fitness machine we test, the
-          subjective intensity-per-minute on the M5 held up to that
-          marketing better than most compact cardio equipment we've
-          reviewed. A 14-minute Max Interval session at a moderate-to-hard
-          resistance setting left every tester genuinely winded, in a way
-          that took considerably longer to achieve on a treadmill at an
-          equivalent perceived effort level. That's consistent with what
-          you'd expect from a machine engaging both upper and lower body
-          simultaneously against resistance, rather than lower body alone
-          against gravity and momentum.
+          efficiency, and we're always skeptical of on-console calorie
+          estimates on any fitness machine. The underlying logic is sound,
+          though: a short Max Interval session at a moderate-to-hard
+          resistance setting works both upper and lower body simultaneously
+          against resistance, rather than lower body alone against gravity
+          and momentum, so it can raise effort faster than a treadmill at
+          an equivalent pace.
         </p>
         <h3>Console and JRNY Compatibility</h3>
         <p>
@@ -456,9 +435,8 @@ const schema = {
         </p>
         <h3>Noise and Everyday Usability</h3>
         <p>
-          Noise levels matched what we measured on the M7 — quiet enough
-          for apartment use at any resistance level, with none of the belt
-          or motor noise a treadmill produces. This holds true across the
+          Like the M7, it has none of the belt or motor noise a treadmill
+          produces, which makes it a reasonable fit for apartment use. This holds true across the
           entire Max Trainer line regardless of tier, since the resistance
           system uses the same quiet electromagnetic mechanism on both
           models.
@@ -468,8 +446,8 @@ const schema = {
         <p>
           Because the M5 shares its frame and pedal-arm hardware with the
           M7, the physical build quality doesn't feel like a downgrade at
-          all — the same stability we praised on the M7 during aggressive
-          standing intervals held up identically here. Where the two
+          all — the shared frame is built for the same aggressive standing
+          intervals as the M7. Where the two
           machines diverge is entirely in the electronics and console, not
           the mechanical parts that actually bear your weight and
           resistance load. That's a meaningful thing to know if you're
@@ -479,10 +457,9 @@ const schema = {
           The handlebars move in sync with the pedals on the M5 exactly as
           they do on the M7, giving you the same full-body engagement — arms
           driving resistance alongside your legs — that distinguishes the
-          Max Trainer motion from a plain stepper or elliptical. Testers
-          with prior lower-back sensitivity reported the same comfort
-          benefit on the M5 as on the M7, since the underlying ergonomics
-          are identical between the two models.
+          Max Trainer motion from a plain stepper or elliptical. Because the
+          underlying ergonomics are the same between the two models, any
+          comfort benefit the M7's motion offers applies to the M5 too.
         </p>
         </div>
 
@@ -601,9 +578,9 @@ const schema = {
           <p class="text-amber-800 text-sm leading-relaxed">
             If you're torn between the M5 and M7 purely on price, consider
             how quickly you tend to progress in other cardio training.
-            Testers who described themselves as "quick to adapt" to new
-            workout intensities were the ones most likely to outgrow the
-            M5's resistance range within the first year.
+            If you tend to adapt quickly to new workout intensities, you
+            are more likely to outgrow the M5's 8 resistance levels within
+            the first year.
           </p>
         </div>
 
@@ -622,7 +599,7 @@ const schema = {
         </p>
         <p>
           In practice, owner feedback on the M5's long-term durability
-          tracks closely with what we've seen on the M7, since the two
+          tracks closely with the M7's, since the two
           machines share the same core frame and resistance mechanism. The
           most common maintenance item reported by owners is periodic
           tightening of the pedal arm pivot bolts, a five-minute check

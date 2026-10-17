@@ -1,6 +1,6 @@
 export default {
   slug: 'east-urban-home-treadmill',
-  title: 'East Urban Home Compact Foldable Electric Treadmill (2026): A Listing Check',
+  title: 'East Urban Home Foldable Treadmill (2026): A Listing Check',
   description:
     'Is there an East Urban Home compact foldable electric treadmill? Who makes Wayfair house-brand products, what the listings show, returns, warranty and what to check.',
   crumbLabel: 'East Urban Home Treadmill',

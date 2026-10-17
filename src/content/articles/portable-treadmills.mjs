@@ -1,6 +1,6 @@
 export default {
   slug: 'portable-treadmills',
-  title: 'Portable Treadmills (2026): What Portable Really Means and What It Costs',
+  title: 'Portable Treadmills (2026): What Portable Means and Costs',
   description:
     'Portable treadmills range from walking pads you can carry to folding machines on wheels. Typical weights, what portability takes away in motor, deck and stability, and storage tips.',
   crumbLabel: 'Portable Treadmills',

@@ -76,7 +76,7 @@ export default {
       products: true,
       html: `          <p>
             This list is shorter than our usual roundups, and deliberately so. Only three plug-in
-            devices met every test we set: currently sold, rated for a treadmill's current, plugging
+            devices met every requirement we set: currently sold, rated for a treadmill's current, plugging
             straight into the wall without a cord, and described consistently by the maker and by a
             seller or reviewer that does not make them. We would rather list three we can stand
             behind than pad the page with strips that should never carry a treadmill.

@@ -1,6 +1,6 @@
 export default {
   slug: 'what-incline-should-i-walk-on-a-treadmill',
-  title: 'What Incline Should I Walk On a Treadmill? (2026): A Grade-by-Goal Guide',
+  title: 'What Incline Should I Walk On a Treadmill? (2026 Guide)',
   description:
     'For most walking workouts, 3 to 6% is the useful range; 8 to 12% is hard incline walking. Here is how to choose a grade, progress safely and avoid sore calves.',
   crumbLabel: 'What Incline Should I Walk On?',

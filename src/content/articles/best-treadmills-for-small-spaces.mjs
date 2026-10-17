@@ -1,8 +1,8 @@
 export default {
   slug: 'best-treadmills-for-small-spaces',
-  title: 'Best Treadmills for Small Spaces (2026): Measured Footprints, Not Marketing',
+  title: 'Best Treadmills for Small Spaces (2026): Judge the Fold',
   description:
-    'We measured every folded footprint ourselves and timed every fold with one person. The "space-saving" label means very little — the storage geometry and the fold effort decide it.',
+    'The "space-saving" label means very little. We compared six folding treadmills on fold mechanism, storage geometry and weight — the fold effort decides it.',
   crumbLabel: 'Best Treadmills for Small Spaces',
   kicker: "Buyer's Guide",
   updated: 'September 2026',
@@ -11,7 +11,7 @@ export default {
   socialProof: '4.4k',
   h1: ['Best Treadmills for', 'Small Spaces'],
   standfirst:
-    'Every folding treadmill is sold as space-saving. We measured the folded footprint of each one and timed the fold with a single person, and the gap between the claim and the reality is large.',
+    'Every folding treadmill is sold as space-saving. What decides whether one works in a small room is how much effort the fold takes and how the machine stores, and the gap between the claim and the reality can be large.',
   ctas: [
     { label: 'See the Top Pick', href: '#sole-f63' },
     { label: 'Measure Your Room First', href: '#measure' },
@@ -21,33 +21,35 @@ export default {
   lead: `A treadmill that folds is not the same as a treadmill that gets folded. The
           specification that decides whether a machine works in a small room is not its folded
           dimensions — it is how much effort the fold takes, because a fold that is any trouble
-          at all simply stops happening by week three.`,
-  note: `<strong class="text-gray-900">On the measurements below.</strong> Folded footprints are
-          our own measurements at the widest and deepest points, including any protruding
-          console or wheels. Manufacturer figures frequently quote the deck alone and run
-          several inches under what the machine actually occupies against a wall.`,
+          at all tends to stop happening after the first few weeks.`,
+  note: `<strong class="text-gray-900">On the figures below.</strong> We have not tested or
+          measured these machines. Fold types, deck lengths and weights are the manufacturers'
+          published specifications, and what we say about fold effort is inferred from the
+          mechanism and the machine's weight. Manufacturer folded dimensions can quote the deck
+          alone, so measure against the widest and deepest points — including any protruding
+          console or wheels — before you order.`,
   sections: [
     {
       id: 'fold-effort',
       heading: 'The Fold You Will Actually Do',
       html: `          <p>
-            This is the finding that matters most from our testing, and it is not a dimension. We
-            timed every fold with one person and recorded how much effort it took, then used each
-            machine for six weeks and noted whether it was still being folded at the end.
+            This is the point that matters most on this page, and it is not a dimension. It is how
+            much effort the fold takes with one person, because that decides whether the machine
+            is still being folded a few weeks in.
           </p>
           <p>
-            The machines with a hydraulic or gas-strut assist — where you lift the deck a few
-            inches and the mechanism takes over — were folded after almost every session, six
-            weeks in. The machines with a manual latch requiring you to take the deck's weight and
-            hold it while securing a pin were folded enthusiastically for about ten days and then
-            largely left up. Nobody decided to stop; it simply became one more thing.
+            A hydraulic or gas-strut assist — where you lift the deck a few inches and the
+            mechanism takes over — makes folding close to effortless, and an effortless fold is
+            one that keeps happening. A manual latch that requires you to take the deck's weight
+            and hold it while securing a pin is the kind that tends to be done enthusiastically at
+            first and then left. Nobody decides to stop; it simply becomes one more thing.
           </p>
           <p>
             The practical consequence is that a machine with a manual fold should be judged on its
             unfolded footprint, because that is the footprint you will live with. A machine with an
             assisted fold can honestly be judged on its folded one. That single distinction
-            reorders the whole category, and it is why two machines with almost identical folded
-            dimensions sit at opposite ends of this list.
+            reorders the whole category, and it is why fold mechanism counts for more than folded
+            size in the ranking below.
           </p>`,
     },
     {
@@ -109,26 +111,26 @@ export default {
     },
     {
       id: 'how-we-tested',
-      heading: 'How We Tested',
+      heading: 'How We Chose',
       html: `          <p>
-            Each machine completed our standard protocol first. For this guide we measured folded
-            and unfolded footprints ourselves at the widest and deepest points, recorded folded
-            height, timed five folds and five unfolds with one person, and noted the swing
-            clearance each mechanism required.
+            We have not tested or measured these machines, and nothing on this page should be read
+            as if we had. They were ranked from the manufacturers' published specifications on the
+            things that decide whether a treadmill works in a small room: the fold mechanism, the
+            storage geometry, assembled weight for moving it, and deck length for what you can do
+            on it.
           </p>
           <p>
-            We then used each machine for six weeks in a genuinely small room — roughly 10 by 11
-            feet, shared with other furniture — and recorded how often it was actually folded away.
-            That behavioural measure separated the group more sharply than any dimension did, and
-            it is the basis of the ranking.
+            The fold mechanism carries the most weight. A hydraulic assist ranks above an assisted
+            fold that still needs real effort, and both rank well above a manual latch, because the
+            fold that takes least effort is the one most likely to keep being used in a small,
+            shared room. That is the basis of the ranking.
           </p>
           <p>
-            Our measured folded footprints ran between two and seven inches larger than the
-            published figures on every machine, because manufacturers commonly quote the deck
-            rather than the widest point. On a machine being fitted into an alcove, seven inches is
-            the difference between working and not. Our full
-            <a href="/treadmill-reviews-2026/" class="text-[#0F62FE] font-medium">testing methodology</a>
-            covers the standard protocol.
+            Treat published folded dimensions with care. Manufacturers can quote the deck rather
+            than the widest point including console and wheels, and on a machine being fitted into
+            an alcove a few inches is the difference between working and not. Our full
+            <a href="/treadmill-reviews-2026/" class="text-[#0F62FE] font-medium">review methodology</a>
+            explains how we assess machines from published data.
           </p>`,
     },
     {
@@ -136,8 +138,8 @@ export default {
       heading: 'The Six Best Treadmills for Small Spaces',
       products: true,
       html: `          <p>
-            Folded dimensions are our own measurements at the widest and deepest points. Fold times
-            are one-person averages over five attempts.
+            Fold types come from the manufacturers' specifications. Check the folded dimensions for
+            the exact unit at the widest and deepest points before you order.
           </p>`,
     },
     {
@@ -242,13 +244,12 @@ export default {
       heading: 'Final Recommendations',
       html: `          <p>
             The <strong>Sole F63</strong> is our pick, and it wins on the fold rather than on the
-            dimensions. Its hydraulic assist takes about thirty seconds with one person, and it was
-            still being folded after every session at the end of six weeks — which no manual-latch
-            machine here was. A machine that gets folded is smaller than a machine that folds.
+            dimensions. Its hydraulic assist makes the fold a one-person job with no strain, and that
+            is the kind of fold that keeps being done after every session. A machine that gets folded is smaller than a machine that folds.
           </p>
           <p>
             If the absolute smallest footprint is the requirement, the
-            <strong>ProForm Power 995i</strong> measured most compact and is the lightest real
+            <strong>ProForm Power 995i</strong> is the most compact here on paper and the lightest real
             treadmill here, at the cost of a short deck and a frame that moves. And if you will
             only ever walk, buy a walking pad instead — it is the only thing in this category that
             genuinely disappears.
@@ -268,11 +269,11 @@ export default {
       badge: 'Best Overall',
       reviewUrl: '/sole-f63-treadmill/',
       priceRange: '$899-$1,099',
-      specs: 'Folded ~40 x 35 in., 58 in. tall · hydraulic fold, ~30 sec · one person',
+      specs: 'Hydraulic fold · near-upright storage · no subscription',
       pros: [
-        'Hydraulic assist makes folding genuinely effortless — still done daily at week six',
+        'Hydraulic assist makes folding genuinely effortless, so it keeps getting done',
         'Stands close to fully upright, minimising floor footprint',
-        'Good front-mounted transport wheels balance the weight when tilted',
+        'Transport wheels for rolling it once folded',
         'No subscription and a legible, simple console',
       ],
       cons: [
@@ -280,32 +281,32 @@ export default {
         'Folded footprint is mid-table rather than smallest here',
       ],
       bottomLine:
-        'Not the smallest machine here, but by a distance the one most likely to actually be folded away. That is what matters.',
+        'Not the smallest machine here, but the one most likely to actually be folded away. That is what matters.',
       description:
-        'This machine won our behavioural test outright, and that is the test that matters in a small room. Six weeks in, it was still being folded after almost every session, because the hydraulic assist reduces the job to lifting the deck a few inches and letting the mechanism do the rest — about thirty seconds, one person, no strain. Every manual-latch machine we tested had quietly stopped being folded by week three. It stands close to fully upright at around 58 inches tall, which keeps the floor footprint small at the cost of needing vertical clearance, and the front-mounted transport wheels are well placed so that tilting it balances the weight rather than making you carry it. It is not the most compact machine here on paper. It is the one that will actually be small in your room.',
+        'This machine wins on the fold, and that is what matters in a small room. The hydraulic assist reduces the job to lifting the deck a few inches and letting the mechanism do the rest — one person, no strain — which is the kind of fold that keeps being done after every session, where a manual latch tends to be abandoned. It stores close to fully upright, which keeps the floor footprint small at the cost of needing vertical clearance, and it rolls on transport wheels once folded. It is not the most compact machine here on paper. It is the one that will actually be small in your room.',
     },
     {
       id: 'proform-power-995i',
       name: 'ProForm Power 995i',
-      category: 'Smallest Measured Footprint',
+      category: 'Smallest Footprint on Paper',
       badge: 'Most Compact',
       reviewUrl: '/proform-power-995i-treadmill/',
       priceRange: '$799-$999',
-      specs: 'Folded ~38 x 33 in., 55 in. tall · assisted fold, ~40 sec · lightest here',
+      specs: 'Assisted fold · lightest full treadmill here',
       pros: [
-        'Smallest folded footprint we measured, and fits behind a door',
+        'Most compact folded footprint here on paper',
         'Lightest genuine treadmill here — one person can reposition it easily',
         'Assisted fold is quick and needs no real strength',
         'Inexpensive enough to suit an uncertain or temporary situation',
       ],
       cons: [
-        'Short deck and a frame that moves noticeably at jogging pace',
-        'Light frame passes more footfall energy into the floor below',
+        'Short deck, and a frame this light is likely to move at jogging pace',
+        'Light frame typically passes more footfall energy into the floor below',
       ],
       bottomLine:
         'The right pick when square footage is the binding constraint. A walking and light-jogging machine, not a running one.',
       description:
-        'If the room genuinely cannot accommodate anything larger, this is the machine. It measured smallest folded of everything here, it fits behind a door, and at well under 200 lbs one person can move it around a room without ceremony — which in a small space is worth as much as the folded dimensions. The assisted fold is quick and undemanding, and it was still being folded at week six, second only to the Sole. The compromises are exactly what you would expect from the lightest machine on the page: the deck is short, the frame moves under you once you pass a brisk walk, and that light frame transmits more footfall energy into the floor, which matters if someone lives below. Judged as a compact walking and light-jogging machine it is very good; judged as a treadmill to run on, it is not one.',
+        'If the room genuinely cannot accommodate anything larger, this is the machine. It is the most compact folded machine here on paper, and at well under 200 lbs one person can move it around a room without ceremony — which in a small space is worth as much as the folded dimensions. The assisted fold is light work on a machine this light, second only to the Sole\'s hydraulic assist. The compromises are exactly what you would expect from the lightest machine on the page: the deck is short, a frame this light is likely to move under you once you pass a brisk walk, and that light frame transmits more footfall energy into the floor, which matters if someone lives below. Judged as a compact walking and light-jogging machine it is very good; judged as a treadmill to run on, it is not one.',
     },
     {
       id: 'nordictrack-c-700',
@@ -314,7 +315,7 @@ export default {
       badge: 'Best Budget',
       reviewUrl: '/nordictrack-c-700-treadmill/',
       priceRange: '$599-$799',
-      specs: 'Folded ~39 x 36 in., 56 in. tall · assisted fold, ~45 sec · low step-up',
+      specs: 'Assisted fold · low step-up · simple console',
       pros: [
         'Cheapest machine here and among the most compact folded',
         'Assisted fold is manageable alone',
@@ -323,12 +324,12 @@ export default {
       ],
       cons: [
         '55-inch deck is short for anyone much over 5\'8"',
-        'Requires more swing clearance than its folded size suggests',
+        'Check the swing clearance, which can exceed what the folded size suggests',
       ],
       bottomLine:
-        'Good value in a tight room for a walker. Check the swing arc — it needs more room to fold than to sit.',
+        'Good value in a tight room for a walker. Check the swing arc — a folding deck needs more room to fold than to sit.',
       description:
-        'The cheapest sensible option here and a reasonable one, with a specific warning attached. Folded it is among the more compact machines on this page, the assisted fold works alone in about forty-five seconds, and the low step-up height is genuinely useful in a cramped room where you often step on from the side rather than the back. The console is simple and there is little to navigate. The warning concerns the swing arc: this mechanism sweeps through a wider path than its folded footprint implies, and in our test room it could not be folded in its preferred position against a shelf — it had to be pulled forward first, which is exactly the kind of extra step that stops folds happening. Measure the arc, not just the footprint. The 55-inch deck also confines it to walking and light jogging.',
+        'The cheapest sensible option here and a reasonable one, with a specific warning attached. Folded it is among the more compact machines on this page, the assisted fold is manageable alone, and the low step-up height is genuinely useful in a cramped room where you often step on from the side rather than the back. The console is simple and there is little to navigate. The warning concerns the swing arc: a folding deck sweeps through a wider path than its folded footprint implies, and if it cannot fold in its storage position against a shelf it has to be pulled forward first, which is exactly the kind of extra step that stops folds happening. Measure the arc, not just the footprint. The 55-inch deck also confines it to walking and light jogging.',
     },
     {
       id: 'sole-f65',
@@ -337,21 +338,21 @@ export default {
       badge: 'Best for Runners',
       reviewUrl: '/sole-f65-treadmill/',
       priceRange: '$1,199-$1,399',
-      specs: 'Folded ~42 x 37 in., 60 in. tall · hydraulic fold, ~30 sec · 60 in. deck',
+      specs: 'Hydraulic fold · 60 in. deck · no subscription',
       pros: [
         'Full 60-inch deck in a machine that still folds properly',
         'Same effortless hydraulic assist as the F63',
-        'Heaviest frame here — steady to run on and quietest downstairs',
+        'Heaviest frame here — the mass that keeps it steady and quieter downstairs',
         'No subscription, strong resale, simple console',
       ],
       cons: [
-        'Largest folded footprint and tallest folded height on this page',
+        'A size up from the F63 when folded, and tall when stored',
         'Too heavy to reposition casually — place it once',
       ],
       bottomLine:
         'The compromise for a runner in a small room. Big for this category, and the only machine here with a proper running deck that still folds easily.',
       description:
-        'Everything about this machine is a size up from the F63, and whether that is right depends on whether you run. It carries a full 60-inch deck, which is the specification that makes running comfortable rather than cramped, and it still folds hydraulically in about thirty seconds — the combination is rare, because most machines with a proper running deck either do not fold or fold badly. The heavy frame is steady underfoot and put the least energy into the floor below of anything we measured, which matters in flats. The costs are straightforward: it has the largest folded footprint and the tallest folded height here, at around 60 inches, so it needs a wall with vertical clearance rather than an alcove. And at its weight you will place it once and leave it. For a runner short on space, it is the best available answer.',
+        'Everything about this machine is a size up from the F63, and whether that is right depends on whether you run. It carries a full 60-inch deck, which is the specification that makes running comfortable rather than cramped, and it still folds hydraulically — the combination is rare, because most machines with a proper running deck either do not fold or fold badly. The heavy frame should be steady underfoot and, as the heaviest here, puts less energy into the floor below, which matters in flats. The costs are straightforward: with a longer deck it is a size up when folded and tall when stored, so it needs a wall with vertical clearance rather than an alcove. And at its weight you will place it once and leave it. For a runner short on space, it is the best available answer.',
     },
     {
       id: 'proform-power-1295i',
@@ -360,7 +361,7 @@ export default {
       badge: 'Best Display',
       reviewUrl: '/proform-power-1295i-treadmill/',
       priceRange: '$999-$1,299',
-      specs: 'Folded ~41 x 36 in., 57 in. tall · assisted fold, ~50 sec · incline to 12%',
+      specs: 'Assisted fold · incline to 12% · larger screen',
       pros: [
         'Largest screen of the compact machines here',
         'Incline to 12% supports low-impact work in a small room',
@@ -368,13 +369,13 @@ export default {
         'Retains manual control without a subscription',
       ],
       cons: [
-        'Slowest assisted fold here — and was left up most often by week six',
-        'Console protrudes, adding depth the published figures omit',
+        'Assisted fold likely to need more effort than the Sole\'s hydraulic one',
+        'Check whether the published folded depth includes the console',
       ],
       bottomLine:
-        'Capable hardware let down by a fold slow enough that it stops happening. Good if the machine will stay up.',
+        'Capable hardware, but its fold is not the effortless kind. Good if the machine will mostly stay up.',
       description:
-        'This machine illustrates the central point of this page better than any other. On paper it is a reasonable small-space option: a mid-weight frame, a folded footprint within a couple of inches of the Sole F63, incline to 12%, and the largest screen of the compact group. In practice it was left unfolded more often than anything else here by week six, because the fold takes around fifty seconds and needs a deliberate effort — enough friction that it stopped being automatic. If your room can accommodate the machine unfolded and you simply want the option occasionally, it is good value with a good display. If you need it folded after every session to reclaim the floor, buy the Sole. Note also that the console protrudes further than the deck, adding depth the published figures leave out.',
+        'This machine illustrates the central point of this page better than any other. On paper it is a reasonable small-space option: a mid-weight frame, incline to 12%, and the largest screen of the compact group. But an assisted fold on a mid-weight machine is likely to need a deliberate effort rather than the Sole\'s lift-and-release, and that kind of friction is what stops a fold being automatic. If your room can accommodate the machine unfolded and you simply want the option occasionally, it is good value with a good display. If you need it folded after every session to reclaim the floor, buy the Sole. Check, too, whether the published folded depth includes the console, which can add depth.',
     },
     {
       id: 'nordictrack-c-990',
@@ -383,31 +384,31 @@ export default {
       badge: 'Best Classes',
       reviewUrl: '/nordictrack-c-990-treadmill/',
       priceRange: '$999-$1,299',
-      specs: 'Folded ~42 x 37 in., 58 in. tall · assisted fold, ~55 sec · 60 in. deck',
+      specs: 'Assisted fold · iFit-ready · 60 in. deck',
       pros: [
         'Full 60-inch deck in a folding machine at a mid-range price',
         'Guided incline sessions suit small-room, low-impact training',
         'Stands reasonably upright when folded',
-        'Better frame stability than the lighter compact machines',
+        'More frame mass than the lighter compact machines',
       ],
       cons: [
-        'Heaviest fold effort here — was rarely folded by the end of the test',
+        'A large machine whose assisted fold is likely to take real effort',
         'Largely inert without an iFit subscription',
       ],
       bottomLine:
-        'A 60-inch deck that folds on paper more than in practice. Only worth it if you want the classes and can live with it standing.',
+        'A 60-inch deck that folds, though not effortlessly. Only worth it if you want the classes and can live with it standing.',
       description:
-        'The appeal is a full 60-inch running deck in a folding machine at a mid-range price, with a guided content library that suits the incline-walking sessions small-room training tends toward. The frame is more stable than the lighter compact machines and it stands reasonably upright once folded. The problem is getting it there: at around fifty-five seconds and requiring genuine effort, this was the heaviest fold in the group, and by the end of six weeks it was being folded perhaps once a week rather than after each session. In a small room that means you should plan around its unfolded dimensions. Add the subscription dependency — the console does very little unpaid — and the case narrows to buyers who specifically want the classes and have room to leave it standing. Otherwise the Sole F65 offers the same deck and a fold that actually happens.',
+        'The appeal is a full 60-inch running deck in a folding machine at a mid-range price, with a guided content library that suits the incline-walking sessions small-room training tends toward. The frame has more mass than the lighter compact machines and it stands reasonably upright once folded. The problem is getting it there: a 60-inch deck on an assisted rather than hydraulic fold is likely to take genuine effort, and a fold that takes effort tends to happen less and less. In a small room that means you should plan around its unfolded dimensions. Add the subscription dependency — the console does very little unpaid — and the case narrows to buyers who specifically want the classes and have room to leave it standing. Otherwise the Sole F65 offers the same deck length and an easier hydraulic fold.',
     },
   ],
   faqs: [
     {
       q: 'What is the smallest treadmill that is still usable?',
-      a: `For walking, a walking pad at 4 to 6 inches tall and 60 to 90 lbs is the smallest thing that works, and it slides under a bed. For a full treadmill with handrails and incline, expect a folded footprint around 38 by 33 inches and a folded height of 55 to 60 inches. Manufacturer figures typically quote the deck rather than the widest point.`,
+      a: `For walking, a walking pad at 4 to 6 inches tall and 60 to 90 lbs is the smallest thing that works, and it slides under a bed. For a full treadmill with handrails and incline, expect a machine that stands folded against a wall rather than one that disappears, and check the folded height as well as the footprint. Manufacturer figures can quote the deck rather than the widest point.`,
     },
     {
       q: 'Do folding treadmills actually save space?',
-      a: `Only if you fold them, and that depends almost entirely on the mechanism. In our six-week test, machines with a hydraulic assist were still folded after nearly every session; machines needing a manual latch and real effort had largely stopped being folded by week three. Judge a manual-fold machine on its unfolded footprint, because that is what you will live with.`,
+      a: `Only if you fold them, and that depends almost entirely on the mechanism. A hydraulic assist that takes no effort is the kind that keeps being used; a manual latch needing real effort tends to stop being folded after the first few weeks. Judge a manual-fold machine on its unfolded footprint, because that is what you will live with.`,
     },
     {
       q: 'How much clearance does a treadmill need in a small room?',
@@ -432,15 +433,15 @@ export default {
   mistakes: [
     {
       title: 'Trusting the published folded dimensions',
-      body: 'Our measured footprints ran two to seven inches larger than the published figures on every machine, because manufacturers commonly quote the deck rather than the widest point including the console and wheels. On a machine being fitted into an alcove, seven inches is the difference between working and being returned. Measure at the widest and deepest points.',
+      body: 'Published figures can quote the deck rather than the widest point including the console and wheels. On a machine being fitted into an alcove, a few inches is the difference between working and being returned. Measure at the widest and deepest points.',
     },
     {
       title: 'Forgetting the swing arc',
-      body: 'The deck sweeps through an arc as it rotates upright, and it needs clear space above and in front of the pivot while it moves. One machine in our test could not be folded in its intended position against a shelf and had to be pulled forward first — which is exactly the sort of extra step that stops folds happening at all.',
+      body: 'The deck sweeps through an arc as it rotates upright, and it needs clear space above and in front of the pivot while it moves. A machine that cannot fold in its storage position against a shelf has to be pulled forward first — which is exactly the sort of extra step that stops folds happening at all.',
     },
     {
       title: 'Assuming a folding treadmill will get folded',
-      body: 'Fold effort, not folded size, decides this. Hydraulic-assist machines were still being folded after every session at six weeks; manual-latch machines had quietly stopped by week three. Nobody makes a decision to stop — it just becomes one more thing. Judge a manual-fold machine on its unfolded footprint.',
+      body: 'Fold effort, not folded size, decides this. A hydraulic assist keeps being used because it takes no effort; a manual latch tends to be quietly abandoned after the first few weeks. Nobody makes a decision to stop — it just becomes one more thing. Judge a manual-fold machine on its unfolded footprint.',
     },
     {
       title: 'Positioning for storage rather than for use',
@@ -470,10 +471,9 @@ export default {
   ],
   bottomLine: [
     `Judge the fold, not the folded dimensions. The
-            <strong class="text-white">Sole F63</strong> was still being folded after every
-            session six weeks in, which no manual-latch machine here managed — and a machine that
-            gets folded is smaller than a machine that merely folds. For the smallest measured
-            footprint, the <strong class="text-white">ProForm Power 995i</strong>.`,
+            <strong class="text-white">Sole F63</strong>'s hydraulic assist is the kind of fold
+            that keeps being done after every session — and a machine that gets folded is smaller
+            than a machine that merely folds. For the smallest footprint on paper, the <strong class="text-white">ProForm Power 995i</strong>.`,
     `Only ever going to walk? A
             <a href="/under-desk-treadmills/" class="text-[#5AA9FF] font-bold no-underline">walking pad</a>
             is the only machine here that genuinely disappears. Need to run? The

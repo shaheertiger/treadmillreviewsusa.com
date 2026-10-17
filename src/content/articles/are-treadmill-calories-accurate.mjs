@@ -1,6 +1,6 @@
 export default {
   slug: 'are-treadmill-calories-accurate',
-  title: 'Are Treadmill Calories Accurate? (2026): Usually Generous — Here Is Why',
+  title: 'Are Treadmill Calories Accurate? (2026): Usually Too Generous',
   description:
     'Treadmill calorie counts are estimates from speed, incline and weight, and they usually run high. How they work, why they overshoot, and realistic numbers per 30 minutes.',
   crumbLabel: 'Are Treadmill Calories Accurate?',

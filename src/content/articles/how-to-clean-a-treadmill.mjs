@@ -1,6 +1,6 @@
 export default {
   slug: 'how-to-clean-a-treadmill',
-  title: 'How to Clean a Treadmill (2026): Belt, Console, Rails and Disinfecting Safely',
+  title: 'How to Clean a Treadmill (2026): Belt, Console and Disinfecting',
   description:
     'How to clean a treadmill without damaging it: the belt top surface, console and screens, handrails, frame and the floor beneath, what to disinfect with, and what to avoid.',
   crumbLabel: 'How to Clean a Treadmill',

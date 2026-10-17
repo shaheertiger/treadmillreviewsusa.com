@@ -1,6 +1,6 @@
 export default {
   slug: 'livestrong-treadmill',
-  title: 'LIVESTRONG Treadmill Guide (2026): The LS10.0T, Parts, Manuals, Used Value',
+  title: 'LIVESTRONG Treadmill Guide (2026): LS10.0T, Parts and Used Value',
   description:
     'LIVESTRONG treadmills were made under licence by Johnson Health Tech and are no longer sold in the US. The LS10.0T explained: confirmed figures, parts, manuals, used value and replacements.',
   crumbLabel: 'LIVESTRONG Treadmill',

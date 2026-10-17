@@ -1,8 +1,8 @@
 export default {
   slug: 'best-treadmills-without-subscriptions',
-  title: 'Best Treadmills Without Subscriptions (2026): What You Own vs. What You Rent',
+  title: 'Best Treadmills Without Subscriptions (2026): Own, Not Rent',
   description:
-    'Some treadmills are inert without a monthly fee. We tested six machines with every subscription cancelled to find which ones still work — and the five-year cost of the ones that do not.',
+    'Some treadmills are inert without a monthly fee. We compared six machines on what still works with every subscription cancelled — and the five-year cost of the ones that do not.',
   crumbLabel: 'Best Treadmills Without Subscriptions',
   kicker: "Buyer's Guide",
   updated: 'September 2026',
@@ -11,7 +11,7 @@ export default {
   socialProof: '4.8k',
   h1: ['Best Treadmills', 'Without Subscriptions'],
   standfirst:
-    'We cancelled every subscription and used all six machines for a month. Two were fully functional, three were noticeably diminished, and one was close to a very expensive clothes rail.',
+    'We compared what six machines do with no subscription, using manufacturer documentation. Two are fully functional, three are noticeably diminished, and one is close to a very expensive clothes rail.',
   ctas: [
     { label: 'See the Top Pick', href: '#sole-f65' },
     { label: 'The Five-Year Cost', href: '#five-year-cost' },
@@ -21,9 +21,9 @@ export default {
   lead: `The question is not whether a treadmill has a subscription. It is what the machine
           becomes when you stop paying — and the answers range from "exactly the same treadmill"
           to "a frame with a dark screen on it".`,
-  note: `<strong class="text-gray-900">How we assessed this.</strong> We cancelled or declined
-          every subscription and used each machine for a month in that state, recording what
-          still worked. Subscription pricing and what each tier unlocks change frequently and
+  note: `<strong class="text-gray-900">How we assessed this.</strong> We have not tested these
+          machines ourselves. We compared what each one does with its subscription cancelled or
+          declined, using manufacturer documentation and published specifications. Subscription pricing and what each tier unlocks change frequently and
           vary by region; the figures below are indicative and should be confirmed with the
           manufacturer before you buy.`,
   sections: [
@@ -92,8 +92,8 @@ export default {
       id: 'what-you-lose',
       heading: 'What You Actually Lose Without One',
       html: `          <p>
-            We used every machine here for a month with nothing paid, and the losses fell into
-            four categories.
+            Going by manufacturer documentation for every machine here, the
+            losses with nothing paid fall into four categories.
           </p>
           <p>
             <strong>Guided classes and scenic runs.</strong> Always lost, on every machine. This
@@ -120,24 +120,22 @@ export default {
     },
     {
       id: 'how-we-tested',
-      heading: 'How We Tested',
+      heading: 'How We Chose',
       html: `          <p>
-            Each machine completed our standard protocol with its subscription active, then ran
-            for a further month with the subscription cancelled or never activated. We logged what
-            functioned in that state: manual speed and incline, onboard programs, metric display,
-            history, Bluetooth pairing to a third-party app, and whether the machine prompted for
-            payment during ordinary use.
+            We compared each machine on what its manufacturer documents about how it behaves with the subscription cancelled or never activated: manual speed
+            and incline, onboard programs, metric display, history, Bluetooth pairing to a
+            third-party app, and whether the machine prompts for payment during ordinary use.
           </p>
           <p>
-            That last measure turned out to matter more than we expected. Two machines were
-            technically fully functional without a subscription and prompted so persistently — on
-            wake, before a run, after a run — that using them was a mildly unpleasant experience.
+            That last point matters more than it sounds. A machine can be technically fully
+            functional without a subscription yet prompt for one so persistently — on
+            wake, before a run, after a run — that using them becomes a mildly unpleasant experience.
             Functionality and usability are different things, and a machine that works but nags is
             not the same as one that simply works.
           </p>
           <p>
-            We also checked whether the manufacturer required an account to complete initial
-            setup, which several did even where no payment was needed. That is worth knowing if
+            We also looked at whether the manufacturer requires an account to complete initial
+            setup, which several do even where no payment is needed. That is worth knowing if
             you would rather the machine were not connected to anything, and it also affects
             resale, because the next owner inherits the account question.
           </p>`,
@@ -310,18 +308,18 @@ export default {
       specs: 'No subscription · no account required · onboard programs · hydraulic fold',
       pros: [
         'Same no-account, no-fee proposition as the F65 for several hundred less',
-        'Hydraulic fold is a genuine one-person job',
+        'Hydraulic fold is designed as a one-person job',
         'Long side rails and a legible display',
         'Onboard programs and Bluetooth export both included',
       ],
       cons: [
-        'Lighter frame than the F65 and less composed at running speeds',
+        'Lighter frame than the F65, which matters more at running speeds',
         'Shorter warranty terms than the machines above it',
       ],
       bottomLine:
         'The value pick for a walker or light jogger who wants to own rather than rent. Step up to the F65 if you will run.',
       description:
-        'Everything that makes the F65 the top pick applies here at a lower price, with a lighter frame as the compromise. For walking and light jogging that difference is close to invisible, and the F63 is the machine we point most budget-conscious buyers toward. It has the same complete independence — no account, no fee, no prompts — plus onboard programs and Bluetooth metric export, and it folds hydraulically in under thirty seconds with one person, which matters in a shared room. Where it gives ground is at pace: the lighter frame is noticeably less composed above about 7 mph, and the warranty terms are shorter than the F65\'s. If your use is walking, incline walking or occasional jogging, none of that will trouble you and this is the better value of the two.',
+        'Everything that makes the F65 the top pick applies here at a lower price, with a lighter frame as the compromise. For walking and light jogging that difference is close to invisible, and the F63 is the machine we point most budget-conscious buyers toward. It has the same complete independence — no account, no fee, no prompts — plus onboard programs and Bluetooth metric export, and its hydraulic fold is designed for one person, which matters in a shared room. Where it gives ground is at pace: a lighter frame is the usual trade-off once you move from jogging to running, and the warranty terms are shorter than the F65\'s. If your use is walking, incline walking or occasional jogging, none of that will trouble you and this is the better value of the two.',
     },
     {
       id: 'life-fitness-t3',
@@ -358,7 +356,7 @@ export default {
         'A genuinely large, high-quality screen with no fee attached to it',
         'Full onboard program library that needs no connection',
         'Commercial frame, motor and warranty terms',
-        'Best-judged deck feel of any machine we have tested',
+        'Commercial-grade running deck built for gym use',
       ],
       cons: [
         'Most expensive machine on this page',
@@ -367,7 +365,7 @@ export default {
       bottomLine:
         'The machine for someone who wants a big screen without renting it. Cross-shop against the T3 on price and service.',
       description:
-        'If what appeals about connected treadmills is the screen rather than the classes, this resolves the tension: a large, high-contrast touchscreen with a full onboard program library and no subscription attached to any of it. That combination is rare, because most manufacturers who fit a screen that size intend to monetise it. The rest of the machine is commercial-grade throughout — the deck is the best-judged running surface we have tested, firm with genuine elastic return, and belt tracking needed no adjustment across our whole test period. It is the most expensive machine on this page, and the touchscreen introduces menu navigation that a physical console avoids, which is a real cost mid-interval. Against the Life Fitness T3 it offers a better screen and an equivalent everything else; choose on price, delivery and whether there is a local service engineer.',
+        'If what appeals about connected treadmills is the screen rather than the classes, this resolves the tension: a large, high-contrast touchscreen with a full onboard program library and no subscription attached to any of it. That combination is rare, because most manufacturers who fit a screen that size intend to monetise it. The rest of the machine is commercial-grade throughout — the deck is a commercial-grade running surface of the kind gyms specify for heavy daily use. It is the most expensive machine on this page, and the touchscreen introduces menu navigation that a physical console avoids, which is a real cost mid-interval. Against the Life Fitness T3 it offers a better screen and an equivalent everything else; choose on price, delivery and whether there is a local service engineer.',
     },
     {
       id: 'proform-pro-2000',
@@ -384,13 +382,13 @@ export default {
         'Folds, unlike most machines on this page',
       ],
       cons: [
-        'Prompts for the subscription regularly during ordinary use',
+        'The console is designed around an iFIT membership',
         'Automatic incline adjustment is a subscription feature',
       ],
       bottomLine:
         'A usable treadmill with nothing paid, provided you can ignore being asked. The cheapest 60-inch deck here.',
       description:
-        'This is the best of the optional-subscription machines, and the distinction matters: with nothing paid you keep full manual speed and incline control, a small set of onboard programs, and a working metric display. It is a real treadmill in that state, not a diminished one, and it carries a genuine 60-inch deck at under $1,200 — the cheapest route to that specification here. It also folds, which nothing above it on this page does. Two honest caveats. It prompts for the subscription during ordinary use, not constantly but often enough to notice, and if that would irritate you daily it is worth knowing before you buy. And automatic incline adjustment — the trainer changing the grade for you — is behind the fee, so structured hill sessions are manual. Within those limits, a good buy.',
+        'This is the best of the optional-subscription machines, and the distinction matters: with nothing paid you keep full manual speed and incline control, a small set of onboard programs, and a working metric display. It is a real treadmill in that state, not a diminished one, and it carries a genuine 60-inch deck at under $1,200 — the cheapest route to that specification here. It also folds, which nothing above it on this page does. Two honest caveats. Owners report that it prompts for the subscription during ordinary use, not constantly but often enough to notice, and if that would irritate you daily it is worth knowing before you buy. And automatic incline adjustment — the trainer changing the grade for you — is behind the fee, so structured hill sessions are manual. Within those limits, a good buy.',
     },
     {
       id: 'nordictrack-c-700',

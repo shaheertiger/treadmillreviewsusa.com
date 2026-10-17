@@ -17,6 +17,7 @@ const PRODUCTS = [
     amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$140–$145",
+    priceBounds: {"low":140,"high":145},
     specs: "8 mm drop · about 7.7 oz (women’s 8) · PWRRUN+ foam",
     pros: [
       "The lightest women’s shoe on this page in the sizes quoted",
@@ -41,6 +42,7 @@ const PRODUCTS = [
     amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$140–$150",
+    priceBounds: {"low":140,"high":150},
     specs: "40.5/34.5 mm stack · 6 mm drop · women’s widths 2A narrow, B, D wide and 2E extra wide",
     pros: [
       "Four women’s widths, including a narrow, which few shoes offer",
@@ -65,6 +67,7 @@ const PRODUCTS = [
     amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $170",
+    priceBounds: {"low":170,"high":170},
     specs: "42.5/34.5 mm stack (women’s) · 8 mm drop (ASICS) · about 8.5 oz (women’s 8)",
     pros: [
       "The most foam on this page, and light for its stack height",
@@ -89,6 +92,7 @@ const PRODUCTS = [
     amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "Around $150",
+    priceBounds: {"low":150,"high":150},
     specs: "8 mm drop · FF BLAST MAX foam · women’s narrow, regular, wide and extra wide",
     pros: [
       "Stability reviewers describe as unobtrusive, from a broad platform",
@@ -113,6 +117,7 @@ const PRODUCTS = [
     amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$150–$155",
+    priceBounds: {"low":150,"high":155},
     specs: "46/36 mm stack · 10 mm drop · about 9.3 oz (women’s 8) · ZoomX and ReactX foams",
     pros: [
       "Very high stack for long, easy treadmill runs",
@@ -137,6 +142,7 @@ const PRODUCTS = [
     amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$150–$155",
+    priceBounds: {"low":150,"high":155},
     specs: "8 mm drop · about 8.2 oz (women’s 8) · CMEVA foam",
     pros: [
       "Comfortable at running and walking pace, suiting run-walk sessions",
@@ -221,7 +227,7 @@ const schema = {
       "@type": "Article",
       headline: title,
       description: description,
-      author: { "@type": "Person", name: "Morgan Reyes" },
+      author: { "@type": "Person", name: "Shaheer Ali Khan", url: "https://www.linkedin.com/in/shaheer-ali-khan-data/", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], jobTitle: "Author and lab tester", worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: "2026-10-14",
       dateModified: "2026-10-14",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
@@ -231,12 +237,29 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
-      offers: {
-        "@type": "AggregateOffer",
-        priceCurrency: "USD",
-        availability: "https://schema.org/InStock",
-      },
+      ...(product.priceBounds
+        ? {
+            offers: {
+              "@type": "AggregateOffer",
+              priceCurrency: "USD",
+              lowPrice: product.priceBounds.low,
+              highPrice: product.priceBounds.high,
+              url: product.amazonUrl,
+            },
+          }
+        : {}),
     })),
+    {
+      "@type": "ItemList",
+      name: title,
+      numberOfItems: 6,
+      itemListElement: PRODUCTS.map((product, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: product.name,
+        url: `https://www.treadmillreviewsusa.com/best-womens-running-shoes-for-treadmill/#${product.id}`,
+      })),
+    },
   ],
 };
 ---
@@ -248,7 +271,7 @@ const schema = {
   article={{
     publishedTime: "2026-10-14",
     modifiedTime: "2026-10-14",
-    author: "Morgan Reyes",
+    author: "Shaheer Ali Khan",
     section: "Fitness Equipment",
     tags: [
       "best women's running shoes for treadmill",
@@ -304,10 +327,10 @@ const schema = {
     <!-- Author & Meta -->
     <div class="max-w-3xl mx-auto px-4 pt-12">
       <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan" width="48" height="48" class="w-12 h-12 rounded-full" />
         <div>
-          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
-          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+          <p class="font-bold text-gray-900 leading-tight"><a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="author noopener" target="_blank" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan</a></p>
+          <p class="text-gray-500 text-sm leading-tight">Author and lab tester</p>
         </div>
         <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
         <p class="text-gray-500 text-sm">
@@ -339,6 +362,39 @@ const schema = {
       </div>
     </div>
 
+
+    <div class="max-w-3xl mx-auto px-4 pt-8">
+      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
+        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
+        <ul class="list-none m-0 p-0">
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
+            <a href="#saucony-ride-19-womens" class="font-bold text-gray-900 no-underline hover:underline">Saucony Ride 19 (Women's)</a>
+            <a href="#saucony-ride-19-womens" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Width Range:</span>
+            <a href="#new-balance-880-v15-womens" class="font-bold text-gray-900 no-underline hover:underline">New Balance Fresh Foam X 880 v15 (Women's)</a>
+            <a href="#new-balance-880-v15-womens" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Most Cushioned:</span>
+            <a href="#asics-gel-nimbus-28-womens" class="font-bold text-gray-900 no-underline hover:underline">ASICS Gel-Nimbus 28 (Women's)</a>
+            <a href="#asics-gel-nimbus-28-womens" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Stability Shoe:</span>
+            <a href="#asics-gt-2000-15-womens" class="font-bold text-gray-900 no-underline hover:underline">ASICS GT-2000 15 (Women's)</a>
+            <a href="#asics-gt-2000-15-womens" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best High-Drop Shoe:</span>
+            <a href="#nike-vomero-18-womens" class="font-bold text-gray-900 no-underline hover:underline">Nike Vomero 18 (Women's)</a>
+            <a href="#nike-vomero-18-womens" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div class="max-w-3xl mx-auto px-4 py-10">
       <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
         <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
@@ -421,9 +477,9 @@ const schema = {
               <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
                 <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
                   <div>
-                    <p class="text-white font-black text-xl leading-tight">
+                    <h3 class="text-white font-black text-xl leading-tight m-0">
                       {index + 1}. {product.name}
-                    </p>
+                    </h3>
                     <p class="text-gray-400 text-xs">{product.category}</p>
                   </div>
                   <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
@@ -439,7 +495,7 @@ const schema = {
                   <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
                   <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                     <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <p class="text-xs font-black uppercase tracking-widest text-green-700 mb-2">What Works</p>
+                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
                       <ul class="space-y-2">
                         {product.pros.map((pro) => (
                           <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
@@ -447,7 +503,7 @@ const schema = {
                       </ul>
                     </div>
                     <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <p class="text-xs font-black uppercase tracking-widest text-red-700 mb-2">What Doesn't</p>
+                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
                       <ul class="space-y-2">
                         {product.cons.map((con) => (
                           <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
@@ -825,6 +881,22 @@ const schema = {
             <a href="/best-running-shoes-for-treadmill/" class="text-[#5AA9FF] font-bold no-underline">best running shoes for treadmill use</a>.
           </p>
         </div>
+
+        <!-- Meet the Author -->
+        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
+          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
+          <div>
+            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
+            <p class="text-sm text-gray-700 leading-relaxed m-0">
+              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="author noopener" target="_blank" class="font-bold text-gray-900">Shaheer Ali Khan</a>
+              writes and lab-tests for Treadmill Reviews USA. Every guide says what was checked, against
+              which sources and on what date, and says plainly when a product has not been tested
+              hands-on. Read our
+              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">editorial standards</a>.
+            </p>
+          </div>
+        </div>
+
       </div>
     </div>
   </article>

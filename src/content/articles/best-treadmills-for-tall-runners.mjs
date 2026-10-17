@@ -1,8 +1,8 @@
 export default {
   slug: 'best-treadmills-for-tall-runners',
-  title: 'Best Treadmills for Tall Runners (2026): Deck Length, Then Ceiling Height',
+  title: 'Best Treadmills for Tall Runners (2026): Deck Length First',
   description:
-    'Above 6 feet, most treadmills are too short and some rooms are too low. We measured usable deck length and incline headroom for runners from 6\'0" to 6\'6".',
+    'Above 6 feet, most treadmills are too short and some rooms are too low. We compared six 60-inch machines on deck width, frame mass and incline headroom.',
   crumbLabel: 'Best Treadmills for Tall Runners',
   kicker: "Buyer's Guide",
   updated: 'September 2026',
@@ -21,11 +21,12 @@ export default {
   lead: `Above six feet the treadmill market shrinks fast, and it shrinks for two reasons rather
           than one. Most decks are too short for your stride, and once you raise the front of a
           deck on incline, a surprising number of rooms are too low for your head.`,
-  note: `<strong class="text-gray-900">On the measurements below.</strong> Usable deck length is
-          our own figure — the distance from the front roller housing to the point where the rear
-          roller becomes a hazard — and it runs consistently shorter than the advertised belt
-          length, sometimes by two inches. Manufacturer belt figures are given alongside for
-          comparison. Verify against the exact model year you are buying.`,
+  note: `<strong class="text-gray-900">On the figures below.</strong> We have not tested or
+          measured these machines. Belt lengths, widths and motor ratings are the manufacturers'
+          published figures. Usable deck length — the flat surface between the front roller
+          housing and the point where the rear roller becomes a hazard — is always shorter than
+          the advertised belt length and is rarely published, so ask the retailer for it and
+          verify against the exact model year you are buying.`,
   sections: [
     {
       id: 'stride-arithmetic',
@@ -64,17 +65,17 @@ export default {
             curving surface at the edge of the deck, which is exactly where you do not want to be.
           </p>
           <p>
-            We measure usable length instead: from the front roller housing to the point where the
-            deck stops being flat and safe. Across the machines here that figure ran one to two
-            inches shorter than the advertised belt length, and the gap was not consistent between
-            brands. A 60-inch belt with 58 inches usable and a 60-inch belt with 59 inches usable
-            are meaningfully different machines for a tall runner.
+            Usable length is the number that matters instead: from the front roller housing to the
+            point where the deck stops being flat and safe. It is always shorter than the
+            advertised belt length, it is rarely published, and the gap need not be the same
+            between brands — two machines quoting the same 60-inch belt can give a tall runner
+            meaningfully different running surfaces.
           </p>
           <p>
             The second number worth having is deck width. Twenty inches is standard; 22 is
             noticeably better for a tall runner specifically, because a longer stride comes with a
             wider natural foot placement and fatigue makes that wander further. On runs past the
-            hour our 6'2" tester was clipping the rails on 20-inch belts and not on 22-inch ones.
+            hour, that is when a 20-inch belt starts to feel narrow for a tall runner.
           </p>`,
     },
     {
@@ -124,27 +125,28 @@ export default {
     },
     {
       id: 'how-we-tested',
-      heading: 'How We Tested',
+      heading: 'How We Chose',
       html: `          <p>
-            Three testers of 6'0", 6'2" and 6'5" ran every machine here, with a minimum of 40
-            miles per machine and every session logged at 7 mph or faster. We measured usable deck
-            length directly, recorded rail strikes per session as a proxy for width adequacy, and
-            logged the maximum incline each tester could run at comfortably in a room with an
-            8-foot ceiling.
+            We have not tested these machines, and nothing on this page should be read as if we
+            had. Every machine here has a 60-inch belt, the minimum we would accept above 6 feet,
+            and they were ranked from the manufacturers' published specifications on what
+            separates them for a tall runner: belt width, assembled weight as a proxy for frame
+            stability at 9 to 10 mph, motor rating, and screen adjustability.
           </p>
           <p>
-            The rail-strike count was more informative than we expected. On 20-inch belts our 6'5"
-            tester clipped a rail on average four times per 45-minute run; on 22-inch belts that
-            fell to under one. Neither is dangerous, and both are the kind of small persistent
-            annoyance that determines whether a machine gets used.
+            Width carries more weight here than in our general running guide. A longer stride
+            brings a wider natural foot placement, and fatigue widens it further, so above about
+            6'4" a 22-inch belt gives margin that a 20-inch one does not. Neither width is
+            dangerous; the difference is the kind of small persistent annoyance that determines
+            whether a machine gets used.
           </p>
           <p>
-            We also asked each tester to run 10 minutes at 9 mph on every machine and report
-            whether they felt they were shortening their stride. That subjective measure tracked
-            usable deck length almost exactly, which is the clearest evidence we have that the
-            deck figure is the specification that matters most here. Our full
-            <a href="/treadmill-reviews-2026/" class="text-[#0F62FE] font-medium">testing methodology</a>
-            covers the standard protocol.
+            Deck length is the specification that matters most, and the one where published
+            figures help least, because usable length is rarely published. Where we can only
+            compare belt figures we say so, and we would ask any retailer for the flat deck
+            measurement before buying. Our full
+            <a href="/treadmill-reviews-2026/" class="text-[#0F62FE] font-medium">review methodology</a>
+            explains how we assess machines from published data.
           </p>`,
     },
     {
@@ -152,8 +154,8 @@ export default {
       heading: 'The Six Best Treadmills for Tall Runners',
       products: true,
       html: `          <p>
-            Every machine here has a 60-inch belt; the differences are in usable length, width and
-            frame. Usable figures are our own measurements.
+            Every machine here has a 60-inch belt; the differences are in width, frame and motor.
+            Usable length is rarely published, so ask for it before you buy.
           </p>`,
     },
     {
@@ -169,8 +171,8 @@ export default {
             What matters far more is whether the machine is stable and quiet at 9 to 10 mph, which
             is the range hard sessions actually happen in. Several machines that will display 12
             mph become unpleasant well below it — frame movement, belt noise, a deck that feels
-            like it is working. We ran every machine here at 10 mph for 10-minute blocks, and that
-            is the speed the rankings reflect.
+            like it is working. Stability at 10 mph is what the rankings here reflect, judged from
+            frame mass rather than from the top speed on the console.
           </p>
           <p>
             If you genuinely run sub-6-minute miles at home, the commercial machines are the only
@@ -234,19 +236,19 @@ export default {
       heading: 'Final Recommendations',
       html: `          <p>
             For most tall runners the <strong>NordicTrack Commercial 1750</strong> is the answer:
-            60 x 22 inches, the best usable-length measurement of the mid-range machines, and a
+            60 x 22 inches, a tilting screen, and a
             frame heavy enough to stay planted at 10 mph. The console pushes a subscription and
             the hardware underneath is the right hardware.
           </p>
           <p>
             If you want the same deck without an ecosystem attached, the <strong>Sole F65</strong>
-            is the machine, with the caveat that its 20-inch belt produced more rail strikes for
-            our tallest tester than the 22-inch decks did. Above 6'4", we would pay for the width.
+            is the machine, with the caveat that its 20-inch belt leaves less margin for a tall
+            runner's foot placement than the 22-inch decks do. Above 6'4", we would pay for the width.
           </p>
           <p>
             For a runner over 6'4" doing high mileage, the <strong>Life Fitness T3</strong> and
             <strong>Matrix T7xe</strong> are the machines that stop feeling like compromises —
-            full width, the best usable length here, and frames that do not move. They cost what
+            full width, commercial decks, and frames built not to move. They cost what
             commercial hardware costs, and for this specific buyer that is easier to justify than
             for most.
           </p>`,
@@ -260,11 +262,11 @@ export default {
       badge: 'Best Overall',
       reviewUrl: '/nordictrack-commercial-1750-treadmill/',
       priceRange: '$1,799-$2,299',
-      specs: '60 in. belt / 58.5 in. usable · 22 in. wide · 3.5 CHP · -3% to 12%',
+      specs: '60 in. belt · 22 in. wide · 3.5 CHP · -3% to 12%',
       pros: [
-        'Best usable-length measurement of any mid-range machine we tested',
-        '22-inch width cut rail strikes to near zero for our 6\'5" tester',
-        'Frame stayed planted through 10 mph blocks with no perceptible flex',
+        'Full 60 x 22-inch deck at a mid-range price',
+        '22-inch width gives a tall runner margin against rail strikes',
+        'Roughly 340 lbs of frame — the mass that stays planted at 10 mph',
         'Adjustable screen tilt solves the viewing-angle problem for tall users',
       ],
       cons: [
@@ -274,7 +276,7 @@ export default {
       bottomLine:
         'The best combination of usable deck, width and frame below commercial prices. The machine we would buy at 6\'2".',
       description:
-        'This is the mid-range machine that measures best where it counts. Its 60-inch belt yielded 58.5 inches of genuinely usable deck, which was the best result outside the commercial machines and a full inch better than one competitor quoting the same belt figure. Combined with the 22-inch width, our 6\'5" tester recorded fewer than one rail strike per 45-minute run, against four on the 20-inch decks. None of the three testers reported shortening their stride at 9 mph, which is the subjective measure that tracks everything else. The frame is heavy enough to stay entirely still through 10 mph blocks. The screen tilts, which sounds trivial and solves a real irritation for anyone looking down at a fixed console. The subscription orientation of the software is the only meaningful complaint, and it does not touch the hardware.',
+        'This is the mid-range machine that lines up best where it counts. It pairs a full 60-inch belt with a 22-inch width, which gives a tall runner margin against rail strikes on long runs as foot placement wanders, and at roughly 340 lbs assembled the frame has the mass to stay still through 10 mph blocks. The screen tilts, which sounds trivial and solves a real irritation for anyone looking down at a fixed console. The subscription orientation of the software is the only meaningful complaint, and it does not touch the hardware.',
     },
     {
       id: 'sole-f65',
@@ -283,21 +285,21 @@ export default {
       badge: 'No Subscription',
       reviewUrl: '/sole-f65-treadmill/',
       priceRange: '$1,199-$1,399',
-      specs: '60 in. belt / 58 in. usable · 20 in. wide · 3.25 CHP · 0-15%',
+      specs: '60 in. belt · 20 in. wide · 3.25 CHP · 0-15%',
       pros: [
         'Full 60-inch belt at a price where 55 inches is common',
         'Runs entirely without an account, app or recurring fee',
-        'Heavier frame than the price band suggests — stable at 10 mph',
+        'Heavier frame than the price band suggests',
         'Plain console with nothing to navigate mid-session',
       ],
       cons: [
-        '20-inch width produced regular rail strikes for our 6\'5" tester',
-        'Fixed screen angle is awkward to read from above 6\'2"',
+        '20-inch width leaves little margin for runners above about 6\'4"',
+        'A fixed screen angle can be awkward to read from tall eye height',
       ],
       bottomLine:
         'The right buy up to about 6\'3". Above that, the 20-inch belt is a real limitation and the width is worth paying for.',
       description:
-        'For a tall runner who wants hardware rather than an ecosystem, this is the obvious machine, and up to a point it is an excellent one. The 60-inch belt gives 58 inches usable, which is within half an inch of the NordicTrack, and the frame is heavier than the price suggests — it was entirely stable through our 10 mph blocks. There is no account, no app and no annual fee, which for many buyers settles the question. The limitation is width. At 20 inches our 6\'0" and 6\'2" testers were comfortable and our 6\'5" tester was clipping the rails several times per run, which is not dangerous but is exactly the sort of persistent irritation that ends up mattering. The fixed screen angle is a second, smaller version of the same problem. Below about 6\'3" this is the value pick on the page; above it, buy width.',
+        'For a tall runner who wants hardware rather than an ecosystem, this is the obvious machine, and up to a point it is an excellent one. The 60-inch belt matches the NordicTrack\'s length, and the frame is heavier than the price suggests. There is no account, no app and no annual fee, which for many buyers settles the question. The limitation is width. Twenty inches is comfortable for most runners up to about 6\'3", but above that a longer stride and wider foot placement make rail strikes more likely, which is not dangerous but is exactly the sort of persistent irritation that ends up mattering. The fixed screen angle is a second, smaller version of the same problem. Below about 6\'3" this is the value pick on the page; above it, buy width.',
     },
     {
       id: 'life-fitness-t3',
@@ -306,12 +308,12 @@ export default {
       badge: 'Longest Lasting',
       reviewUrl: '/life-fitness-t3-treadmill/',
       priceRange: '$3,199-$3,999',
-      specs: '60 in. belt / 59 in. usable · 22 in. wide · commercial AC motor · 0-15%',
+      specs: '60 in. belt · 22 in. wide · commercial AC motor · 0-15%',
       pros: [
-        'Best usable-length figure in the test at 59 inches',
-        'Frame did not move at any speed any tester could run',
-        'Deck feel identical at mile one and mile forty',
-        'Commercial AC motor with no heat build-up on long sessions',
+        'Full 60 x 22-inch commercial deck',
+        'Commercial frame built not to move at any pace a home runner can hold',
+        'Commercial deck built to keep its feel over years of mileage',
+        'Commercial AC motor, without the heat build-up of DC units on long sessions',
       ],
       cons: [
         'Roughly double the NordicTrack for advantages most runners feel only over years',
@@ -320,30 +322,30 @@ export default {
       bottomLine:
         'The machine that stops feeling like a compromise above 6\'4". Justifiable on high mileage, hard to justify below it.',
       description:
-        'Commercial machines are built around users of every size, and for a tall runner that shows up immediately in the numbers: 59 inches of usable deck was the best figure we recorded, and the full 22-inch width meant no rail strikes for any tester. The frame is simply immovable — our 6\'5" tester ran 10 mph blocks on it with no detectable movement at the console, which no mid-range machine here matched. The AC motor does not build the heat that DC units develop on long sessions, and deck feel was unchanged from the first mile to the fortieth. The counterargument is straightforward: it costs roughly twice the NordicTrack, and on any single run most runners would struggle to name the difference. What they would notice is year seven. For a tall runner covering 40 miles a week, that arithmetic works.',
+        'Commercial machines are built around users of every size, and for a tall runner that shows up in the specification: a full 60 x 22-inch deck, and a commercial frame of the kind that is effectively immovable at 10 mph. The AC motor does not build the heat that DC units develop on long sessions, and a commercial deck is built to feel the same in year five as on day one. The counterargument is straightforward: it costs roughly twice the NordicTrack, and on any single run most runners would struggle to name the difference. What they would notice is year seven. For a tall runner covering 40 miles a week, that arithmetic works.',
     },
     {
       id: 'matrix-t7xe',
       name: 'Matrix Fitness T7xe',
-      category: 'Best Deck Feel',
-      badge: 'Best Cushioning',
+      category: 'Best Commercial Alternative',
+      badge: 'Gym Grade',
       reviewUrl: '/matrix-fitness-t7xe-treadmill/',
       priceRange: '$3,499-$4,299',
-      specs: '60 in. belt / 59 in. usable · 22 in. wide · commercial motor · 0-15%',
+      specs: '60 in. belt · 22 in. wide · commercial motor · 0-15%',
       pros: [
-        'The best-judged running surface on this page — firm with genuine return',
-        'Matches the T3 on usable length and width',
-        'Belt tracking needed no adjustment across the full test',
-        'High-contrast console readable from tall eye height',
+        'Commercial running deck of the firm, quick-return type',
+        'Matches the T3 on deck length and width',
+        'Commercial build tolerances, which is what keeps belt tracking true',
+        'High-contrast console designed to be readable at a glance',
       ],
       cons: [
-        'Most expensive machine here with no measurable advantage over the T3',
+        'Most expensive machine here with no clear advantage over the T3 on paper',
         'Touchscreen menus are an obstacle mid-session',
       ],
       bottomLine:
-        'Level with the T3 on every tall-specific measure. Choose between them on price, delivery and local service.',
+        'Level with the T3 on every tall-specific specification. Choose between them on price, delivery and local service.',
       description:
-        'The T7xe matches the Life Fitness T3 on the two measurements that decide this category — 59 inches usable, 22 inches wide — and beats it on deck feel, which is the most subjective judgement here and the one our testers were most consistent about. The surface is firm with a quick elastic return, which is what a runner wants and what over-cushioned decks fail to deliver. Belt tracking required no adjustment at all across the test period, unusual enough to be worth noting. The console is high-contrast and readable from above, which solves the tall-user viewing angle problem in a different way to a tilting screen. Against it: it is the most expensive machine on this page and offers a tall runner nothing the T3 does not, and the touchscreen introduces menu navigation mid-interval. Cross-shop on price and service.',
+        'The T7xe matches the Life Fitness T3 on the two specifications that decide this category — a 60-inch belt and 22 inches of width — and is built around a commercial deck of the firm, quick-return type a runner wants and over-cushioned decks fail to deliver. Commercial build tolerances are also what keep belt tracking true over high mileage. The console is high-contrast and designed to be readable at a glance, which solves the tall-user viewing angle problem in a different way to a tilting screen. Against it: it is the most expensive machine on this page and offers a tall runner nothing the T3 does not, and the touchscreen introduces menu navigation mid-interval. Cross-shop on price and service.',
     },
     {
       id: 'nordictrack-commercial-2450',
@@ -352,11 +354,11 @@ export default {
       badge: 'Best for Hills',
       reviewUrl: '/nordictrack-commercial-2450-treadmill/',
       priceRange: '$2,299-$2,799',
-      specs: '60 in. belt / 58.5 in. usable · 22 in. wide · 3.6 CHP · -3% to 12%',
+      specs: '60 in. belt · 22 in. wide · 3.6 CHP · -3% to 12%',
       pros: [
         'Same deck geometry as the 1750 with a stronger motor behind it',
-        'Holds pace on sustained steep grades where the 1750 works audibly harder',
-        'Quieter at 10 mph than the 1750 despite the larger motor',
+        'Larger 3.6 CHP motor for sustained steep grades, where the 1750 has less in reserve',
+        'Same -3% to 12% range as the 1750, with more motor behind it',
         'Tilting screen and 22-inch width both suit tall users',
       ],
       cons: [
@@ -366,7 +368,7 @@ export default {
       bottomLine:
         'Buy it over the 1750 only if you train hills seriously — and check your ceiling first, because tall plus steep is where headroom runs out.',
       description:
-        'Deck-wise this is the 1750, and for a tall runner that means it is already most of the way to being the right machine. What the extra money buys is motor: on sustained grades of 8% and above the 2450 holds its pace where the 1750 audibly labours, and incline transitions are quick enough for genuine hill intervals. It is also quieter at 10 mph, which is counter-intuitive for a larger motor and comes down to the unit operating further inside its envelope. The tall-specific warning attaches here more than anywhere else on this page: a tall runner on a steep sustained grade is the exact combination that runs out of ceiling. Do the headroom arithmetic at 10 to 12% rather than at flat before buying this specifically. If hills are not part of your training, buy the 1750 and keep the difference.',
+        'Deck-wise this is the 1750, and for a tall runner that means it is already most of the way to being the right machine. What the extra money buys is motor: on sustained grades of 8% and above the 2450\'s larger motor has more in reserve than the 1750\'s, and its incline transitions are built to be quick enough for genuine hill intervals. The tall-specific warning attaches here more than anywhere else on this page: a tall runner on a steep sustained grade is the exact combination that runs out of ceiling. Do the headroom arithmetic at 10 to 12% rather than at flat before buying this specifically. If hills are not part of your training, buy the 1750 and keep the difference.',
     },
     {
       id: 'proform-pro-2000',
@@ -375,7 +377,7 @@ export default {
       badge: 'Best Budget',
       reviewUrl: '/proform-pro-2000-treadmill/',
       priceRange: '$899-$1,199',
-      specs: '60 in. belt / 57.5 in. usable · 20 in. wide · 3.0 CHP · -3% to 12%',
+      specs: '60 in. belt · 20 in. wide · 3.0 CHP · -3% to 12%',
       pros: [
         'A genuine 60-inch belt for around a thousand dollars',
         'Folds, which nothing else on this list does',
@@ -383,23 +385,23 @@ export default {
         'Adequate for a lighter tall runner at moderate paces',
       ],
       cons: [
-        'Lowest usable length here at 57.5 inches — the belt figure flatters it',
-        'Frame moves perceptibly at 9 mph and above',
+        'Like every belt figure, the 60 inches flatters the usable running surface',
+        'Lighter frame is likely to move at 9 mph and above',
       ],
       bottomLine:
-        'The cheapest route to a 60-inch belt, with the smallest usable deck behind that figure. Best for lighter tall runners at moderate pace.',
+        'The cheapest route to a 60-inch belt, on the lightest frame here. Best for lighter tall runners at moderate pace.',
       description:
-        'The Pro 2000 is here because it answers a real question: what is the least you can spend and still get a 60-inch belt? At around a thousand dollars, this is it, and for a tall runner on a firm budget that is worth knowing. Two honest caveats follow. First, the usable-length measurement was the lowest in the test at 57.5 inches — the advertised 60 is a belt figure and this machine loses more of it to the rear roller than the others do, so it is meaningfully shorter in practice than the spec sheet implies. Second, the frame moves at 9 mph and above, which our heavier testers noticed on longer efforts. It also folds, which no other machine here does and which matters if the room has another use. For a lighter tall runner doing steady mileage rather than hard intervals, it is a defensible buy.',
+        'The Pro 2000 is here because it answers a real question: what is the least you can spend and still get a 60-inch belt? At around a thousand dollars, this is it, and for a tall runner on a firm budget that is worth knowing. Two honest caveats follow. First, the advertised 60 inches is a belt figure, and on a budget machine it is worth asking how much of it is flat, usable deck before you assume it matches the others here. Second, as the lightest frame here it is the most likely to move at 9 mph and above, which a heavier runner will notice on longer efforts. It also folds, which no other machine here does and which matters if the room has another use. For a lighter tall runner doing steady mileage rather than hard intervals, it is a defensible buy.',
     },
   ],
   faqs: [
     {
       q: 'What size treadmill deck do I need if I am over 6 feet?',
-      a: `Sixty inches of belt is the minimum and we would not recommend anything shorter at any price. Above 6'4", also look for a 22-inch width rather than 20, because a longer stride comes with wider natural foot placement and our tallest tester recorded four rail strikes per run on 20-inch belts against fewer than one on 22-inch ones.`,
+      a: `Sixty inches of belt is the minimum and we would not recommend anything shorter at any price. Above 6'4", also look for a 22-inch width rather than 20, because a longer stride comes with wider natural foot placement and fatigue makes that placement wander further on long runs.`,
     },
     {
       q: 'Is advertised belt length the same as usable deck length?',
-      a: `No, and the gap varies by brand. Belt length includes the section wrapping down onto the rear roller, which is not somewhere you want to land. Usable length ran one to two inches shorter across the machines we measured, and two treadmills quoting the same 60-inch belt differed by a full inch of usable deck.`,
+      a: `No, and the gap varies by brand. Belt length includes the section wrapping down onto the rear roller, which is not somewhere you want to land. Usable length is always shorter than the belt figure and is rarely published, and two treadmills quoting the same 60-inch belt need not give you the same usable deck.`,
     },
     {
       q: 'What ceiling height do I need for a treadmill?',
@@ -424,7 +426,7 @@ export default {
   mistakes: [
     {
       title: 'Trusting the advertised belt length',
-      body: 'Belt length includes the portion curving down onto the rear roller, which is not usable running surface. Real usable length ran one to two inches shorter across every machine we measured, and the shortfall was not consistent between brands. Ask the retailer for the flat deck measurement, or assume two inches less than advertised.',
+      body: 'Belt length includes the portion curving down onto the rear roller, which is not usable running surface. Usable length is always shorter than the advertised figure, and the shortfall need not be consistent between brands. Ask the retailer for the flat deck measurement before you order.',
     },
     {
       title: 'Never measuring ceiling height at incline',
@@ -436,7 +438,7 @@ export default {
     },
     {
       title: 'Ignoring belt width above 6\'4"',
-      body: 'A longer stride brings a wider natural foot placement, and fatigue widens it further. On 20-inch belts our 6\'5" tester clipped a rail around four times per 45-minute run; on 22-inch belts, under once. Neither is dangerous and the difference is exactly the kind of persistent annoyance that decides whether a machine keeps getting used.',
+      body: 'A longer stride brings a wider natural foot placement, and fatigue widens it further. On a 20-inch belt that means more rail strikes on long runs than on a 22-inch one. Neither is dangerous, and the difference is exactly the kind of persistent annoyance that decides whether a machine keeps getting used.',
     },
   ],
   relatedHeading: 'Related Running &amp; Sizing Guides',
@@ -463,8 +465,8 @@ export default {
   bottomLine: [
     `Sixty inches of belt is the floor, usable length is the number that matters, and above
             6'4" pay for the 22-inch width. The
-            <strong class="text-white">NordicTrack Commercial 1750</strong> measured best of the
-            mid-range machines; the <strong class="text-white">Life Fitness T3</strong> stops
+            <strong class="text-white">NordicTrack Commercial 1750</strong> is the best of the
+            mid-range machines on paper; the <strong class="text-white">Life Fitness T3</strong> stops
             feeling like a compromise entirely if the budget reaches.`,
     `Before you order, measure the ceiling at incline as well as the floor. The
             <a href="/treadmill-dimensions-space-requirements/" class="text-[#5AA9FF] font-bold no-underline">dimensions guide</a>

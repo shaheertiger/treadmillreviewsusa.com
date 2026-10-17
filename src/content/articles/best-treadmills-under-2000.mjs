@@ -2,7 +2,7 @@ export default {
   slug: 'best-treadmills-under-2000',
   title: 'Best Treadmills Under $2,000 (2026): The Running Tier',
   description:
-    'Under $2,000 is where 60-inch decks meet frames heavy enough to run on. We tested six machines at this price on frame composure at 10 mph and deck feel over 60 miles.',
+    'Under $2,000 is where 60-inch decks meet frames heavy enough to run on. We compared six machines at this price on deck length, frame mass, motor and warranty.',
   crumbLabel: 'Best Treadmills Under $2,000',
   kicker: "Buyer's Guide",
   updated: 'September 2026',
@@ -26,7 +26,11 @@ export default {
           years — more than the treadmill. Prices below are purchase prices only. The section on
           total cost works through what that means for the comparison, and our
           <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">subscription guide</a>
-          covers what each console does when you stop paying.`,
+          covers what each console does when you stop paying.
+          <strong class="text-gray-900">On the products below.</strong> We have not tested these
+          machines. Deck, motor and weight figures are the manufacturers' published
+          specifications, and judgements on how they run come from what those figures imply — not
+          from our own measurements.`,
   sections: [
     {
       id: 'what-changes',
@@ -43,8 +47,8 @@ export default {
           </p>
           <p>
             <strong>Assembled weight passes 250 lbs.</strong> This is what stops the frame moving
-            at 9 to 10 mph, and it is the difference our testers reported most consistently between
-            this band and the one below.
+            at 9 to 10 mph, and it is the most consistent difference on paper between this band
+            and the one below.
           </p>
           <p>
             <strong>Deck width reaches 22 inches on several machines.</strong> A comfort
@@ -52,9 +56,9 @@ export default {
             foot placement wanders with fatigue.
           </p>
           <p>
-            <strong>Cushioning stops degrading.</strong> The clearest measurable difference in our
-            testing: cheaper decks softened noticeably across six weeks, while machines in this band
-            felt the same at mile sixty as at mile one.
+            <strong>Decks are built to last.</strong> Cheaper decks typically soften with
+            mileage; machines in this band use heavier decks and
+            construction intended to keep the same feel for years.
           </p>`,
     },
     {
@@ -115,24 +119,27 @@ export default {
     },
     {
       id: 'how-we-tested',
-      heading: 'How We Tested',
+      heading: 'How We Chose',
       html: `          <p>
-            Each machine covered at least 60 miles over six weeks, with every session logged at 7
-            mph or faster and at least two runs beyond 70 minutes. Two testers ran everything: one
-            at 5'7" and 145 lbs, one at 6'2" and 205 lbs.
+            We have not tested these machines, and nothing on this page should be read as if we
+            had. They were chosen and ranked for running from the manufacturers' published
+            specifications — deck size, motor rating, incline range and assembled weight —
+            together with warranty terms, which are the manufacturer's own statement of how long
+            it expects the parts to last.
           </p>
           <p>
-            We measured usable deck length rather than quoting the belt figure, recorded frame
-            movement at the console at 8 and 10 mph separately, logged belt drift every ten miles,
-            measured deck deflection and recovery at the start and end of the test period, and
-            recorded sound pressure beside the deck at a steady 8 mph.
+            We gave the most weight to deck length and assembled weight. A published belt length
+            includes the section curving onto the rear roller, so the surface you can actually run
+            on is shorter than the quoted figure, and frame flex is not published at all, which
+            leaves machine mass as the most reliable available proxy for how still a frame stays at
+            8 to 10 mph.
           </p>
           <p>
-            The start-versus-end deck measurement was the most useful discriminator. Every machine
-            here held its cushioning character across 60 miles, which machines a tier below did not —
-            and that consistency is most of what the extra money buys. Our
+            Deck consistency is most of what the extra money buys in this band, and it is the
+            hardest thing to judge from a specification sheet, which is why we treat assembled
+            weight and the parts warranty as the best available proxies for it. Our
             <a href="/treadmill-reviews-2026/" class="text-[#0F62FE] font-medium">standard methodology</a>
-            covers the full protocol.
+            explains how we assess machines from published data.
           </p>`,
     },
     {
@@ -256,7 +263,7 @@ export default {
       id: 'warranty',
       heading: 'Warranty Terms Are the Real Tiebreaker',
       html: `          <p>
-            When two machines in this band measure similarly — and several here do — warranty terms
+            When two machines in this band look similar on paper — and several here do — warranty terms
             are the most informative remaining difference, because they are the manufacturer
             stating in writing how long they expect their own components to last.
           </p>
@@ -284,8 +291,8 @@ export default {
       heading: 'Final Recommendations',
       html: `          <p>
             The <strong>NordicTrack Commercial 1750</strong> is the best running machine in this
-            band and the one we recommend most often: 60 by 22-inch deck, the best usable-length
-            measurement of the mid-range machines, and a frame that stays planted at 10 mph. Buy it
+            band and the one we recommend most often: a 60 by 22-inch deck, roughly 340 lbs of
+            frame to keep it planted at 10 mph, and decline to -3%. Buy it
             knowing the console will keep asking about a subscription.
           </p>
           <p>
@@ -309,11 +316,11 @@ export default {
       badge: 'Best Overall',
       reviewUrl: '/nordictrack-commercial-1750-treadmill/',
       priceRange: '$1,799-$2,299',
-      specs: '60 x 22 in. deck (58.5 usable) · 3.5 CHP · -3% to 12% · ~340 lbs · subscription-oriented',
+      specs: '60 x 22 in. deck · 3.5 CHP · -3% to 12% · ~340 lbs · subscription-oriented',
       pros: [
-        'Best usable deck length of any mid-range machine we have measured',
-        'No perceptible frame movement at 10 mph for either tester',
-        'Cushioning identical at mile sixty and mile one',
+        'Full 60 x 22-inch deck with room for a long stride and wandering feet',
+        'Roughly 340 lbs assembled — the mass that keeps a frame still at 10 mph',
+        'Heavier deck construction of the kind built to keep its feel with mileage',
         'Decline included, and genuinely useful for downhill race preparation',
       ],
       cons: [
@@ -323,7 +330,7 @@ export default {
       bottomLine:
         'The best running hardware in this band. Buy it for the deck and frame, and decide about the subscription separately.',
       description:
-        'Judged purely as a running machine this is the strongest thing under $2,000, and the measurements are consistent about why. Its 60-inch belt yielded 58.5 inches of genuinely usable deck, the best mid-range figure we have recorded, and the 22-inch width meant almost no rail strikes even for our taller tester on runs past the hour. Neither tester detected frame movement at 10 mph. Most tellingly, deck deflection and recovery were unchanged between the first mile and the sixtieth, where machines a tier below softened measurably. Decline is a real bonus if you race anything with descent. The reservation is entirely about software: the console is built to sell a subscription and will remind you regularly, and paying it takes the five-year cost from roughly $1,900 to over $4,100. The hardware case is unaffected by that; the value case is not.',
+        'Judged purely as a running machine this is the strongest thing under $2,000, and the specifications are consistent about why. Its 60 x 22-inch deck is the full running size, and the 22-inch width gives a taller runner margin against rail strikes on runs past the hour as foot placement wanders. At roughly 340 lbs assembled it has the frame mass that keeps a machine still at 10 mph, and heavier deck construction of this kind is what keeps cushioning from softening with mileage the way cheaper decks tend to. Decline is a real bonus if you race anything with descent. The reservation is entirely about software: the console is built to sell a subscription and will remind you regularly, and paying it takes the five-year cost from roughly $1,900 to over $4,100. The hardware case is unaffected by that; the value case is not.',
     },
     {
       id: 'sole-f65',
@@ -332,10 +339,10 @@ export default {
       badge: 'Best Value',
       reviewUrl: '/sole-f65-treadmill/',
       priceRange: '$1,199-$1,399',
-      specs: '60 x 20 in. deck (58 usable) · 3.25 CHP · 0-15% · ~250 lbs · no subscription',
+      specs: '60 x 20 in. deck · 3.25 CHP · 0-15% · ~250 lbs · no subscription',
       pros: [
         'Five-year cost equals purchase price — roughly a third of a connected machine',
-        'Usable deck within half an inch of the NordicTrack',
+        'Same 60-inch deck length as the NordicTrack',
         'Higher incline ceiling at 15%',
         'Hydraulic fold, which nothing else at this weight manages',
       ],
@@ -346,7 +353,7 @@ export default {
       bottomLine:
         'The machine to buy if you want to own rather than subscribe. Nearly the same running experience for a third of the five-year cost.',
       description:
-        'On the measurements that determine how a treadmill runs, this is within touching distance of our top pick: 58 inches usable against 58.5, a frame heavy enough that neither tester found movement at 10 mph, and cushioning that held its character across the full 60 miles. It reaches 15% incline, higher than the NordicTrack. It folds hydraulically, which no other machine at this weight here does. And it costs $1,300 over five years against roughly $4,150 for a connected machine at $1,800 plus a subscription. Two genuine limitations: the belt is 20 inches rather than 22, which our 6\'2" tester noticed past the hour mark as foot placement wandered, and the display is small and plain with no content of any kind. If you want to run and not to subscribe, this is the clear answer.',
+        'On the specifications that determine how a treadmill runs, this is within touching distance of our top pick: the same 60-inch deck length, a frame heavy enough at roughly 250 lbs to stay steady at running pace, and deck construction built to hold its character with mileage. It reaches 15% incline, higher than the NordicTrack. It folds hydraulically, which no other machine at this weight here does. And it costs $1,300 over five years against roughly $4,150 for a connected machine at $1,800 plus a subscription. Two genuine limitations: the belt is 20 inches rather than 22, which taller runners are likely to notice past the hour mark as foot placement wanders, and the display is small and plain with no content of any kind. If you want to run and not to subscribe, this is the clear answer.',
     },
     {
       id: 'nordictrack-commercial-2450',
@@ -357,9 +364,9 @@ export default {
       priceRange: '$2,299-$2,799 (falls under $2,000)',
       specs: '60 x 22 in. deck · 3.6 CHP · -3% to 12% · fast incline transitions · ~350 lbs',
       pros: [
-        'Holds pace on sustained 8-10% grades where the 1750 audibly labours',
-        'Fastest incline transitions here — real graded intervals rather than approximations',
-        'Quieter at 10 mph than the 1750 despite the larger motor',
+        'Larger 3.6 CHP motor for sustained 8-10% grades, where the 1750 has less in reserve',
+        'Fast incline transitions — built for real graded intervals rather than approximations',
+        'More frame behind the deck than the 1750, at roughly 350 lbs',
         'Same excellent deck geometry as the 1750',
       ],
       cons: [
@@ -367,9 +374,9 @@ export default {
         'Same subscription-oriented console and five-year cost',
       ],
       bottomLine:
-        'Worth it if hills are a real part of your training. On flat running it is indistinguishable from the cheaper 1750.',
+        'Worth it if hills are a real part of your training. On flat running it offers little over the cheaper 1750.',
       description:
-        'This machine lists above the band and drops into it during sales, and whether that is worth chasing depends entirely on whether you run hills. On flat running the 2450 and the 1750 are close to indistinguishable, and we would not tell anyone to spend the difference. On sustained incline — 8% and above held for ten minutes or more — the 2450 keeps its pace where the 1750 works audibly harder, and its incline transitions are quick enough to run genuine graded intervals rather than approximations of them. It is also quieter at 10 mph than the 1750, which is counter-intuitive for a larger motor and comes from the unit operating further inside its envelope. Deck geometry is identical. If steep sustained work is your main session, this is the better machine; if not, buy the 1750 and keep the difference.',
+        'This machine lists above the band and drops into it during sales, and whether that is worth chasing depends entirely on whether you run hills. On flat running the 2450 and the 1750 are close to identical on paper, and we would not tell anyone to spend the difference. On sustained incline — 8% and above held for ten minutes or more — the 2450\'s larger motor and heavier frame are what keep pace steady where the 1750 has less in reserve, and its incline transitions are built to be quick enough to run genuine graded intervals rather than approximations of them. Deck geometry is identical. If steep sustained work is your main session, this is the better machine; if not, buy the 1750 and keep the difference.',
     },
     {
       id: 'proform-pro-2000',
@@ -378,7 +385,7 @@ export default {
       badge: 'Cheapest 60 in. Deck',
       reviewUrl: '/proform-pro-2000-treadmill/',
       priceRange: '$899-$1,199',
-      specs: '60 x 20 in. deck (57.5 usable) · 3.0 CHP · -3% to 12% · ~215 lbs · folds',
+      specs: '60 x 20 in. deck · 3.0 CHP · -3% to 12% · ~215 lbs · folds',
       pros: [
         'A genuine 60-inch deck for well under half the top pick\'s price',
         'Folds, which nothing else in this band does besides the Sole',
@@ -386,13 +393,13 @@ export default {
         'Adequate motor for a lighter runner at sustained pace',
       ],
       cons: [
-        'Lowest usable length here — the belt figure flatters it by 2.5 inches',
-        'Frame movement appears at 9 mph under a heavier runner',
+        'Like every belt figure, the 60 inches flatters the usable running surface',
+        'Lighter frame is likely to move at 9 mph under a heavier runner',
       ],
       bottomLine:
         'The cheapest route into this tier, and it shows in the frame. Good for lighter runners; strained under heavier ones.',
       description:
-        'This is the machine that lets a $1,000 budget reach the specification that matters, and for a lighter runner it works. Our 5\'7", 145 lb tester covered 60 miles at up to 8 mph with no complaints, and it folds, which at this deck length is rare. Decline is included, unusual near this price. Two caveats are worth weighing carefully. Its usable deck measured 57.5 inches against an advertised 60 — the largest gap between belt figure and reality in our whole test, meaning it is functionally shorter than the specification implies. And under our 205 lb tester frame movement was clearly present at 9 mph and above, which is fatiguing over a long run. Buy it as a lighter runner\'s entry into a proper running deck, and understand that the frame is where the saving came from.',
+        'This is the machine that lets a $1,000 budget reach the specification that matters, and for a lighter runner it works. Its 3.0 CHP motor is adequate for a lighter runner at up to 8 mph, and it folds, which at this deck length is rare. Decline is included, unusual near this price. Two caveats are worth weighing carefully. Like every belt figure, its advertised 60 inches includes the curve onto the rear roller, so the surface you can run on is shorter than the specification implies. And at roughly 215 lbs assembled, the lightest frame here, it is the kind of machine that moves perceptibly under a heavier runner at 9 mph and above, which is fatiguing over a long run. Buy it as a lighter runner\'s entry into a proper running deck, and understand that the frame is where the saving came from.',
     },
     {
       id: 'sole-f63',
@@ -403,7 +410,7 @@ export default {
       priceRange: '$899-$1,099',
       specs: '55 in. deck · 3.0 CHP · 0-15% · ~250 lbs · no subscription · hydraulic fold',
       pros: [
-        'Heavy frame for the price — completely stable at walking and jogging speeds',
+        'Heavy frame for the price — the mass that keeps walking and jogging stable',
         '15% incline ceiling, ideal for low-impact training',
         'No subscription and no account of any kind',
         'Effortless hydraulic fold that keeps getting used',
@@ -415,7 +422,7 @@ export default {
       bottomLine:
         'Included as the honest alternative: if you will mostly walk, this does the job for a third of the money and you should not spend more.',
       description:
-        'This machine does not belong in a running tier and it is here deliberately, because a meaningful share of people shopping at $2,000 will mostly walk and are about to overspend. The F63 has the frame mass of a much more expensive machine, reaches 15% incline — higher than our top pick — folds hydraulically in thirty seconds, and carries no subscription of any kind. For walking and incline walking it is genuinely excellent and nothing in this band improves on it for that use. The 55-inch deck is the reason it is not ranked higher: it is short for running and our 6\'2" tester was shortening his stride at 7 mph. If you know you will run, skip it. If you are honest that you will mostly walk, buying this instead of a $1,800 connected machine saves roughly $3,000 over five years and costs you nothing you would use.',
+        'This machine does not belong in a running tier and it is here deliberately, because a meaningful share of people shopping at $2,000 will mostly walk and are about to overspend. The F63 has the frame mass of a much more expensive machine, reaches 15% incline — higher than our top pick — folds hydraulically, and carries no subscription of any kind. For walking and incline walking it is genuinely excellent and nothing in this band improves on it for that use. The 55-inch deck is the reason it is not ranked higher: it is short for running, and a tall runner will be shortening stride on it at running pace. If you know you will run, skip it. If you are honest that you will mostly walk, buying this instead of a $1,800 connected machine saves roughly $3,000 over five years and costs you nothing you would use.',
     },
     {
       id: 'proform-power-1295i',
@@ -433,22 +440,22 @@ export default {
       ],
       cons: [
         'Automatic incline adjustment is behind the subscription',
-        'Lighter frame moves at 9 mph and above',
+        'Lighter frame is likely to move at 9 mph and above',
       ],
       bottomLine:
         'The affordable way to get a big screen without a mandatory fee. The frame is the compromise, and it shows at running pace.',
       description:
-        'If the appeal of connected treadmills is the screen rather than the ecosystem, this is the value route to one: a large touchscreen and a full 60-inch deck at close to half what comparable connected machines cost, with manual speed and incline retained if you never subscribe. That last point matters — it is a real treadmill unpaid, not a diminished one. The compromises are consistent with its price. The frame is around 220 lbs against 250 to 340 elsewhere here, and movement appears at 9 mph under a heavier runner. Automatic incline adjustment during guided sessions requires the subscription, so structured hill work is manual unless you pay. And the touchscreen adds menu navigation that is genuinely unwelcome mid-interval. Good value for a moderate-pace runner who wants a display.',
+        'If the appeal of connected treadmills is the screen rather than the ecosystem, this is the value route to one: a large touchscreen and a full 60-inch deck at close to half what comparable connected machines cost, with manual speed and incline retained if you never subscribe. That last point matters — it is a real treadmill unpaid, not a diminished one. The compromises are consistent with its price. The frame is around 220 lbs against 250 to 340 elsewhere here, and a frame that light is likely to move at 9 mph under a heavier runner. Automatic incline adjustment during guided sessions requires the subscription, so structured hill work is manual unless you pay. And the touchscreen adds menu navigation that is genuinely unwelcome mid-interval. Good value for a moderate-pace runner who wants a display.',
     },
   ],
   faqs: [
     {
       q: 'Is $2,000 enough for a good running treadmill?',
-      a: `Comfortably. This is the band where 60-inch decks become standard, assembled weights pass 250 lbs and cushioning stops degrading over the first few months. What it does not buy is an AC motor or commercial roller diameters, both of which start around $3,000 and matter mainly for very high mileage or multiple daily users.`,
+      a: `Comfortably. This is the band where 60-inch decks become standard, assembled weights pass 250 lbs and decks are built to hold their cushioning. What it does not buy is an AC motor or commercial roller diameters, both of which start around $3,000 and matter mainly for very high mileage or multiple daily users.`,
     },
     {
       q: 'What is the difference between a $1,000 and a $2,000 treadmill?',
-      a: `Mainly frame mass and deck consistency. At $1,000 a 60-inch deck usually comes at the cost of frame weight, so the machine moves at 9 mph and the cushioning softens over the first six weeks. At $2,000 you get both together — a full deck on a frame that stays still, with a deck that feels the same at mile sixty as at mile one.`,
+      a: `Mainly frame mass and deck consistency. At $1,000 a 60-inch deck usually comes at the cost of frame weight, so the machine is more likely to move at 9 mph and its cushioning to soften with mileage. At $2,000 you get both together — a full deck on a frame that stays still, with deck construction built to keep its feel for years.`,
     },
     {
       q: 'Should I buy a treadmill with a subscription at this price?',
@@ -477,7 +484,7 @@ export default {
     },
     {
       title: 'Trusting the advertised belt length',
-      body: 'Belt figures include the section curving onto the rear roller, which is not usable running surface. Our measured usable lengths ran 1.5 to 2.5 inches under the advertised figure, and the gap varied by brand — two machines quoting 60 inches differed by a full inch in practice. Ask for the flat deck measurement.',
+      body: 'Belt figures include the section curving onto the rear roller, which is not usable running surface. The usable length is therefore always shorter than the advertised figure, and how much shorter varies by brand and model — two machines quoting 60 inches need not give you the same running surface. Ask for the flat deck measurement.',
     },
     {
       title: 'Buying decline you will never use',

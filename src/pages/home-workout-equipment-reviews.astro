@@ -17,6 +17,7 @@ const PRODUCTS = [
     amazonLabel: "Check Price on Amazon",
     reviewUrl: "/sole-f63-treadmill/",
     priceRange: "$1,099–$1,199",
+    priceBounds: {"low":1099,"high":1199},
     specs: "3.0 HP · 0.5–12 mph · 0–15% incline · 20 x 60 in. deck · 325 lb max user · folds · lifetime frame and motor warranty",
     pros: [
       "A full 20 x 60-inch running deck, the size most runners need, on a folding frame",
@@ -41,6 +42,7 @@ const PRODUCTS = [
     amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$799–$999",
+    priceBounds: {"low":799,"high":999},
     specs: "100 magnetic resistance levels · 330 lb max user · 54.6 x 30.7 in. footprint · dual-sided SPD and toe-cage pedals · backlit LCD · 10-year frame warranty",
     pros: [
       "Quiet magnetic resistance in 100 small steps, suited to class-style riding",
@@ -64,6 +66,7 @@ const PRODUCTS = [
     amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$990–$1,155",
+    priceBounds: {"low":990,"high":1155},
     specs: "Air resistance with adjustable damper · PM5 monitor · 96 x 24 in. footprint · 500 lb max user (Concept2 rating) · 57 lb (standard legs) · separates in two",
     pros: [
       "The rower used in gyms and by rowing clubs, so results compare directly with anyone else’s",
@@ -87,6 +90,7 @@ const PRODUCTS = [
     amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$1,699–$1,799",
+    priceBounds: {"low":1699,"high":1799},
     specs: "25 lb flywheel · 20 in. stride · 20 resistance levels · 20-level power incline · 350 lb max user · 10.1 in. touchscreen · lifetime frame warranty",
     pros: [
       "Heavy 25 lb flywheel for a smooth, quiet stride",
@@ -111,6 +115,7 @@ const PRODUCTS = [
     amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "$465–$469",
+    priceBounds: {"low":465,"high":469},
     specs: "5–50 lb per dumbbell (Stage 1) · expandable to 70 and 90 lb · 2.5–5 lb increments · steel plates · magnetic selector pin",
     pros: [
       "Starts at 5 to 50 lb and grows to 70 and then 90 lb with expansion kits, so you buy weight only when you need it",
@@ -135,6 +140,7 @@ const PRODUCTS = [
     amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "About $380",
+    priceBounds: {"low":380,"high":380},
     specs: "700 lb capacity (REP rating) · 85 in. tall · 58.1 in. wide x 48.5 in. deep · 2 x 2 in. 14-gauge steel · 3 in. hole spacing · pin-pipe safeties included",
     pros: [
       "A full four-post cage with safeties and J-cups included for about $380",
@@ -159,6 +165,7 @@ const PRODUCTS = [
     amazonLabel: "Check Price on Amazon",
     reviewUrl: null,
     priceRange: "About $350",
+    priceBounds: {"low":350,"high":350},
     specs: "Flat, incline and decline · 1,000 lb capacity (REP rating) · 11-gauge steel · leg rollers with 6 positions",
     pros: [
       "Flat, incline and decline in one bench, with leg rollers to hold you in the decline",
@@ -244,7 +251,7 @@ const schema = {
       "@type": "Article",
       headline: title,
       description: description,
-      author: { "@type": "Person", name: "Morgan Reyes" },
+      author: { "@type": "Person", name: "Shaheer Ali Khan", url: "https://www.linkedin.com/in/shaheer-ali-khan-data/", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], jobTitle: "Author and lab tester", worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: "2026-10-16",
       dateModified: "2026-10-16",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
@@ -254,12 +261,29 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
-      offers: {
-        "@type": "AggregateOffer",
-        priceCurrency: "USD",
-        availability: "https://schema.org/InStock",
-      },
+      ...(product.priceBounds
+        ? {
+            offers: {
+              "@type": "AggregateOffer",
+              priceCurrency: "USD",
+              lowPrice: product.priceBounds.low,
+              highPrice: product.priceBounds.high,
+              url: product.amazonUrl,
+            },
+          }
+        : {}),
     })),
+    {
+      "@type": "ItemList",
+      name: title,
+      numberOfItems: 7,
+      itemListElement: PRODUCTS.map((product, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: product.name,
+        url: `https://www.treadmillreviewsusa.com/home-workout-equipment-reviews/#${product.id}`,
+      })),
+    },
   ],
 };
 ---
@@ -271,7 +295,7 @@ const schema = {
   article={{
     publishedTime: "2026-10-16",
     modifiedTime: "2026-10-16",
-    author: "Morgan Reyes",
+    author: "Shaheer Ali Khan",
     section: "Fitness Equipment",
     tags: [
       "home workout equipment reviews",
@@ -328,10 +352,10 @@ const schema = {
     <!-- Author & Meta -->
     <div class="max-w-3xl mx-auto px-4 pt-12">
       <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan" width="48" height="48" class="w-12 h-12 rounded-full" />
         <div>
-          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
-          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+          <p class="font-bold text-gray-900 leading-tight"><a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="author noopener" target="_blank" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan</a></p>
+          <p class="text-gray-500 text-sm leading-tight">Author and lab tester</p>
         </div>
         <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
         <p class="text-gray-500 text-sm">
@@ -365,6 +389,39 @@ const schema = {
       </div>
     </div>
 
+
+    <div class="max-w-3xl mx-auto px-4 pt-8">
+      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
+        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
+        <ul class="list-none m-0 p-0">
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Treadmill:</span>
+            <a href="#sole-f63" class="font-bold text-gray-900 no-underline hover:underline">Sole F63</a>
+            <a href="#sole-f63" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Bike:</span>
+            <a href="#schwinn-ic4" class="font-bold text-gray-900 no-underline hover:underline">Schwinn IC4</a>
+            <a href="#schwinn-ic4" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Rower:</span>
+            <a href="#concept2-rowerg" class="font-bold text-gray-900 no-underline hover:underline">Concept2 RowErg</a>
+            <a href="#concept2-rowerg" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Elliptical:</span>
+            <a href="#sole-e35" class="font-bold text-gray-900 no-underline hover:underline">Sole E35</a>
+            <a href="#sole-e35" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Dumbbells:</span>
+            <a href="#powerblock-elite-usa-90" class="font-bold text-gray-900 no-underline hover:underline">PowerBlock Elite USA 90</a>
+            <a href="#powerblock-elite-usa-90" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div class="max-w-3xl mx-auto px-4 py-10">
       <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
         <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
@@ -459,9 +516,9 @@ const schema = {
               <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
                 <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
                   <div>
-                    <p class="text-white font-black text-xl leading-tight">
+                    <h3 class="text-white font-black text-xl leading-tight m-0">
                       {index + 1}. {product.name}
-                    </p>
+                    </h3>
                     <p class="text-gray-400 text-xs">{product.category}</p>
                   </div>
                   <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
@@ -477,7 +534,7 @@ const schema = {
                   <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
                   <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                     <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-                      <p class="text-xs font-black uppercase tracking-widest text-green-700 mb-2">What Works</p>
+                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
                       <ul class="space-y-2">
                         {product.pros.map((pro) => (
                           <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
@@ -485,7 +542,7 @@ const schema = {
                       </ul>
                     </div>
                     <div class="bg-red-50 border border-red-100 rounded-xl p-4">
-                      <p class="text-xs font-black uppercase tracking-widest text-red-700 mb-2">What Doesn't</p>
+                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
                       <ul class="space-y-2">
                         {product.cons.map((con) => (
                           <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
@@ -988,6 +1045,22 @@ const schema = {
             roundup compares every machine type side by side.
           </p>
         </div>
+
+        <!-- Meet the Author -->
+        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
+          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
+          <div>
+            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
+            <p class="text-sm text-gray-700 leading-relaxed m-0">
+              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="author noopener" target="_blank" class="font-bold text-gray-900">Shaheer Ali Khan</a>
+              writes and lab-tests for Treadmill Reviews USA. Every guide says what was checked, against
+              which sources and on what date, and says plainly when a product has not been tested
+              hands-on. Read our
+              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">editorial standards</a>.
+            </p>
+          </div>
+        </div>
+
       </div>
     </div>
   </article>

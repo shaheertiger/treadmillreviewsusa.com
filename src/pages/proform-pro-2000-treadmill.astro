@@ -5,12 +5,11 @@ import SocialProof from "../components/SocialProof.astro";
 
 const title = "ProForm Pro 2000 Treadmill Review (2026): The Budget Commercial 1750?";
 const description =
-  "We spent three weeks testing the ProForm Pro 2000 against its obvious rival, the NordicTrack Commercial 1750. Here's an honest look at the motor, deck, iFit experience, and where the lower price actually comes from.";
+  "We compared the ProForm Pro 2000's published specs against its obvious rival, the NordicTrack Commercial 1750. Here's an honest look at the motor, deck, iFit experience, and where the lower price actually comes from.";
 
 const PRODUCT = {
   name: "ProForm Pro 2000",
-  rating: 4.4,
-  reviewCount: 3812,
+  editorialScore: 4.4,
   amazonUrl:
     "https://www.amazon.com/dp/B08N3NL32C?tag=sktiger-20&linkCode=ll1",
   priceRange: "$1,599-$1,799",
@@ -116,7 +115,7 @@ const schema = {
           name: "Is the ProForm Pro 2000's deck big enough for running, not just walking?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. The 22 x 60-inch deck matches the NordicTrack Commercial 1750's footprint and comfortably fit our taller testers during full-stride running. This is one of the areas where the Pro 2000 doesn't cut corners relative to its more expensive NordicTrack sibling.",
+            text: "Yes. The 22 x 60-inch deck matches the NordicTrack Commercial 1750's footprint, and 60 inches of length by 22 of width is a full-size running surface with room for most taller runners at full stride. This is one of the areas where the Pro 2000 doesn't cut corners relative to its more expensive NordicTrack sibling.",
           },
         },
         {
@@ -132,7 +131,7 @@ const schema = {
           name: "How long does assembly take on the ProForm Pro 2000?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Around 70 minutes working alone, or closer to 40 minutes with a second person helping lift the upright console mast into place, which the manual recommends. The layout and hardware are similar enough to NordicTrack's assembly process that anyone who has built a NordicTrack machine before will find the steps familiar.",
+            text: "Plan on a second person helping lift the upright console mast into place, which the manual recommends. The layout and hardware are similar enough to NordicTrack's assembly process that anyone who has built a NordicTrack machine before will find the steps familiar.",
           },
         },
       ],
@@ -140,7 +139,7 @@ const schema = {
     {
       "@type": "Article",
       headline: title,
-      author: { "@type": "Person", name: "Morgan Reyes" },
+      author: { "@type": "Person", name: "Shaheer Ali Khan", url: "https://www.linkedin.com/in/shaheer-ali-khan-data/", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], jobTitle: "Author and lab tester", worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
       datePublished: "2026-05-12",
       dateModified: "2026-05-12",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
@@ -150,11 +149,6 @@ const schema = {
       name: PRODUCT.name,
       description,
       brand: { "@type": "Brand", name: "ProForm" },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: PRODUCT.rating,
-        reviewCount: PRODUCT.reviewCount,
-      },
     },
   ],
 };
@@ -167,7 +161,7 @@ const schema = {
   article={{
     publishedTime: "2026-05-12",
     modifiedTime: "2026-05-12",
-    author: "Morgan Reyes",
+    author: "Shaheer Ali Khan",
     section: "Fitness Equipment",
     tags: [
       "proform pro 2000",
@@ -205,8 +199,7 @@ const schema = {
           ProForm <span class="text-[#5AA9FF]">Pro 2000</span> Review
         </h1>
         <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          We put ProForm's flagship "Pro" line through three weeks of walking,
-          jogging, and interval sessions to answer the question everyone
+          We compared ProForm's flagship "Pro" model spec by spec with its NordicTrack sibling to answer the question everyone
           shopping this treadmill actually has: is it a real alternative to
           the NordicTrack Commercial 1750, or a cheaper machine wearing
           similar spec numbers?
@@ -225,10 +218,10 @@ const schema = {
     <!-- Author & Meta -->
     <div class="max-w-3xl mx-auto px-4 pt-12">
       <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
-        <img src="https://i.pravatar.cc/150?img=48" alt="Morgan Reyes" class="w-12 h-12 rounded-full" />
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan" width="48" height="48" class="w-12 h-12 rounded-full" />
         <div>
-          <p class="font-bold text-gray-900 leading-tight">Morgan Reyes</p>
-          <p class="text-gray-500 text-sm leading-tight">Fitness Equipment Editor</p>
+          <p class="font-bold text-gray-900 leading-tight"><a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="author noopener" target="_blank" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan</a></p>
+          <p class="text-gray-500 text-sm leading-tight">Author and lab tester</p>
         </div>
         <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
         <p class="text-gray-500 text-sm">
@@ -242,18 +235,8 @@ const schema = {
       <!-- Quick Verdict -->
       <div class="not-prose my-10 bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
         <div class="flex items-center justify-between flex-wrap gap-4 mb-4">
-          <div class="flex items-center gap-2">
-            <div class="flex text-yellow-400">
-              {[...Array(5)].map((_, i) => (
-                <svg class={`w-5 h-5 ${i < Math.floor(PRODUCT.rating) ? "fill-current" : "text-gray-200"}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-              ))}
-            </div>
-            <span class="font-bold text-gray-900">{PRODUCT.rating}</span>
-            <span class="text-gray-400 text-sm">({PRODUCT.reviewCount.toLocaleString()} reviews)</span>
-          </div>
           <span class="bg-[#0F62FE]/10 text-[#0F62FE] px-3 py-1 rounded-full text-xs font-bold">Best Value vs. Commercial 1750</span>
+          {PRODUCT.editorialScore && (<p class="text-sm text-gray-600 mt-1 mb-0">Our editorial score: <strong class="text-gray-900">{PRODUCT.editorialScore}</strong>/5</p>)}
         </div>
         <p class="text-gray-700 leading-relaxed mb-4">
           The Pro 2000 is ProForm's flagship treadmill, and it's a genuinely
@@ -299,8 +282,7 @@ const schema = {
           Every shopper who lands on the ProForm Pro 2000 eventually asks the
           same question: what's actually different between this and the
           NordicTrack Commercial 1750, given how similar the spec sheets
-          look? We tested the Pro 2000 specifically with that comparison in
-          mind, and after three weeks on the belt, our answer is that the
+          look? We looked at the Pro 2000 specifically with that comparison in mind, and our answer is that the
           similarities are real, but so are the compromises that fund the
           lower price tag.
         </p>
@@ -328,8 +310,7 @@ const schema = {
           machine through years of hard use, the extra durability headroom
           of the Commercial 1750 is worth the roughly $200 premium. If your
           routine is three or four sessions a week of walking, jogging, and
-          the occasional interval workout, the Pro 2000 delivers nearly
-          identical day-to-day performance for meaningfully less money.
+          the occasional interval workout, the Pro 2000 offers a nearly identical day-to-day spec sheet for meaningfully less money.
         </p>
         <p>
           This is a folding treadmill, and like the Commercial 1750, it's
@@ -374,8 +355,7 @@ const schema = {
         <div id="specs" class="scroll-mt-24">
         <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Full Spec Sheet</h2>
         <p>
-          Here's every spec we verified directly against our test unit,
-          alongside where it sits relative to the NordicTrack Commercial
+          Here's the full spec sheet, taken from ProForm's published specifications, alongside where it sits relative to the NordicTrack Commercial
           1750 it's most often shopped against.
         </p>
         </div>
@@ -398,21 +378,13 @@ const schema = {
         <div id="assembly" class="scroll-mt-24">
         <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Assembly and Setup</h2>
         <p>
-          Assembly took our team roughly 70 minutes working alone, and
-          closer to 40 minutes with a second person helping lift the
-          upright console mast into place — the manual specifically
-          recommends two people for that step, and given the weight of the
-          mast, we'd second that. The overall process felt familiar to
+          A second person helping lift the upright console mast into place makes assembly much easier — the manual specifically recommends two people for that step, and given the weight of the mast, we'd second that. The overall process will be familiar to
           anyone who has assembled a NordicTrack before, right down to the
           bag-numbering system and the pre-wired console cabling that cuts
           down on fiddly cable routing.
         </p>
         <p>
-          The included tools covered the entire build without needing to
-          dig out a separate toolbox, and the printed manual's step numbers
-          lined up cleanly with the labeled hardware bags. Our one
-          complaint mirrors what we noted on the Commercial 1750: this
-          ships in a genuinely heavy box, so plan for a delivery and
+          Before you start, match the printed manual's step numbers to the labeled hardware bags and check that the included tools cover every step. One caution mirrors what we noted on the Commercial 1750: this ships in a genuinely heavy box, so plan for a delivery and
           unboxing location you can actually work in rather than trying to
           haul the full crate up a narrow staircase first.
         </p>
@@ -430,49 +402,20 @@ const schema = {
         <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Performance Deep Dive</h2>
         <h3>Motor and Deck</h3>
         <p>
-          The 3.6 CHP motor handled our full testing range without feeling
-          strained, including interval sessions that pushed past 8 mph
-          repeatedly. It's not quite as effortless under sustained load as
-          the Commercial 1750's 3.75 CHP motor — during our longest test
-          run, a 40-minute continuous jog at 6.5 mph, we noticed marginally
-          more motor noise creeping in during the final ten minutes than we
-          measured on the NordicTrack. It's a small difference, and one
-          most casual users won't notice, but it's there. The 22 x 60-inch
-          deck, on the other hand, is identical in size to the Commercial
-          1750's, and our tallest tester at 6'3" had exactly the same
-          comfortable, uncramped experience running full stride.
+          A 3.6 CHP motor is well suited to walking, jogging, and regular interval sessions. On paper it has slightly less in reserve under sustained load than the Commercial 1750's 3.75 CHP motor — a small difference, and one most casual users are unlikely to notice, but it's there. The 22 x 60-inch deck, on the other hand, is identical in size to the Commercial 1750's, so the running room at full stride is exactly the same.
         </p>
         <p>
-          We also ran the same heat-soak test we use across every
-          treadmill we review: 45 minutes of continuous jogging at 6.5 mph,
-          checking motor housing temperature by hand every ten minutes. The
-          housing warmed to a similar degree as the Commercial 1750's, and
-          belt speed stayed consistent throughout without any noticeable
-          surging. Belt tracking held steady across the full test, which is
-          a good early sign, though we'd note that our test window is
-          measured in weeks, not years, so it can't speak to how tracking
-          holds up after two or three years of regular use.
+          We have not run the Pro 2000 ourselves, so we can't report how warm its motor gets or how its belt tracks over a long session. A spec sheet can't speak to how tracking holds up after two or three years of regular use either, which is why the owner patterns in the durability section below matter more than any short session would.
         </p>
         <h3>Cushioning</h3>
         <p>
           ProShox cushioning is ProForm's version of the adjustable-deck
-          approach NordicTrack calls FlexSelect, and in practice it
-          delivers a similar noticeable softening of impact compared to a
-          flat, non-cushioned deck. It doesn't offer quite the same range of
-          adjustment as FlexSelect's three distinct settings, but testers
-          with knee sensitivity still reported a meaningfully more
-          comfortable experience during longer walking sessions than on a
-          budget machine with minimal cushioning.
+          approach NordicTrack calls FlexSelect, and it is designed to soften impact compared to a flat, non-cushioned deck. It doesn't offer quite the same range of adjustment as FlexSelect's three distinct settings, but any cushioned deck generally takes more edge off impact during longer walking sessions than a budget machine with minimal cushioning.
         </p>
         <h3>Incline, Decline, and the iFit Experience</h3>
         <p>
           Because the Pro 2000 runs the same iFit software as NordicTrack's
-          lineup, the automatic incline and decline experience during
-          trainer-led workouts felt essentially identical to what we've
-          tested on the Commercial 1750 — smooth ramping rather than
-          lurching, responsive to terrain changes every few seconds during a
-          coached outdoor run. The 14-inch touchscreen is sharp and
-          responsive, and the included first-year iFit membership gives you
+          lineup, the automatic incline and decline experience during trainer-led workouts should be essentially identical to the Commercial 1750's, following terrain changes during a coached outdoor run. The 14-inch touchscreen runs the same content, and the included first-year iFit membership gives you
           the same runway to decide whether the coached format is worth
           paying for afterward. If you've used iFit on a NordicTrack before,
           there's essentially no relearning curve here.
@@ -482,19 +425,11 @@ const schema = {
           Outside of guided workouts, the console handles the fundamentals
           well: speed and incline adjust in clean increments via physical
           buttons on the handrail, so you're not forced to reach for the
-          touchscreen mid-run to make a small adjustment. Built-in Bluetooth
-          speakers were loud enough to fill a small room, and pairing was
-          reliable across every test session. The one recurring annoyance
-          our testers flagged was a slightly longer wake-from-sleep delay on
-          the touchscreen compared to the Commercial 1750, which felt like a
-          minor but real difference in polish between the two machines.
+          touchscreen mid-run to make a small adjustment. Built-in Bluetooth speakers let you play audio from your phone, and like most built-in treadmill speakers they suit a small room.
         </p>
         <h3>Folding and Footprint</h3>
         <p>
-          The Pro 2000 folds for storage, and the mechanism felt comparable
-          in effort to what we've tested on NordicTrack's SpaceSaver
-          machines, though not effortless. Given its size and weight, we
-          wouldn't expect most households to fold this one daily — like the
+          The Pro 2000 folds for storage, though given its size and weight, don't expect it to be effortless. We wouldn't expect most households to fold this one daily — like the
           Commercial 1750, it's better suited to living semi-permanently in
           a dedicated space, with folding reserved for occasional deep
           cleaning or rearranging furniture around it.
@@ -502,17 +437,7 @@ const schema = {
 
         <h3>Noise and Everyday Vibration</h3>
         <p>
-          We measured noise in the low-to-mid 60 decibel range during
-          sustained jogging, a few decibels above what we recorded on the
-          Commercial 1750 under the same conditions, though the difference
-          was only noticeable when the two machines were tested back to
-          back in the same room. On its own, the Pro 2000 was quiet enough
-          not to interfere with a phone call in an adjacent room during our
-          testing. Vibration transfer through the frame during faster
-          intervals was slightly more noticeable than on the Commercial
-          1750, which tracks with the lighter frame gauge — a quality
-          equipment mat underneath meaningfully reduced it in our testing,
-          and it's a cheap upgrade we'd recommend regardless of which
+          We haven't measured the Pro 2000's noise ourselves. As a general tendency, a lighter frame gauge transmits a little more vibration during faster intervals than a heavier one, and a slightly smaller motor has a little less in reserve at speed, so there's no reason to expect it to be quieter than the Commercial 1750. A quality equipment mat underneath helps reduce vibration carrying into the floor, and it's a cheap upgrade we'd recommend regardless of which
           treadmill you end up buying.
         </p>
         </div>
@@ -520,9 +445,7 @@ const schema = {
         <div id="durability" class="scroll-mt-24">
         <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Long-Term Durability Notes</h2>
         <p>
-          Three weeks of hands-on testing can't fully answer a multi-year
-          durability question, so we cross-referenced our impressions
-          against patterns in verified owner reviews spanning one to two
+          We have not tested the Pro 2000 ourselves, and a spec sheet can't answer a multi-year durability question, so we looked at patterns in verified owner reviews spanning one to two
           years of ownership. The most consistent theme was exactly what
           the spec sheet implies: owners who use the Pro 2000 for moderate,
           consistent training — walking, jogging a few times a week, the
@@ -559,7 +482,7 @@ const schema = {
               "Matches the NordicTrack Commercial 1750's 22 x 60-inch deck for hundreds less",
               "14-inch touchscreen runs the full iFit ecosystem, included for the first year",
               "3.6 CHP motor comfortably handles walking, jogging, and interval training",
-              "ProShox cushioning noticeably softens impact over a flat deck",
+              "ProShox cushioning is designed to soften impact over a flat deck",
               "Warranty terms match the pricier NordicTrack Commercial 1750 on paper",
             ].map((pro) => (
               <li class="flex items-start gap-2 text-sm text-green-800">
@@ -578,7 +501,7 @@ const schema = {
               "Lighter-duty frame and motor than NordicTrack's Commercial line",
               "Most standout features still require an ongoing iFit subscription",
               "Folded footprint is large compared to true space-saving models",
-              "Slightly more touchscreen lag waking from sleep mode than the Commercial 1750",
+              "Slightly smaller 3.6 CHP motor than the Commercial 1750's 3.75 CHP",
             ].map((con) => (
               <li class="flex items-start gap-2 text-sm text-red-800">
                 <svg class="w-4 h-4 text-red-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -710,15 +633,12 @@ const schema = {
         <div id="verdict" class="scroll-mt-24">
         <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Final Verdict</h2>
         <p>
-          The ProForm Pro 2000 is one of the more honest value propositions
-          we've tested in the mid-range treadmill category. It doesn't
+          The ProForm Pro 2000 is one of the more honest value propositions we've covered in the mid-range treadmill category. It doesn't
           pretend to be the Commercial 1750, but it also doesn't need to —
           it matches the deck size, the incline range, and the iFit
           software that most home users actually interact with day to day,
           while asking for meaningfully less money. The trade-offs are real
-          and worth taking seriously: a slightly smaller motor, a
-          lighter-duty frame, and small polish differences like touchscreen
-          wake time. None of them are dealbreakers for the moderate home
+          and worth taking seriously: a slightly smaller motor and a lighter-duty frame. None of them are dealbreakers for the moderate home
           user this machine is built for.
         </p>
         <p>
@@ -775,11 +695,7 @@ const schema = {
           <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">Is the ProForm Pro 2000's deck big enough for running, not just walking?</h3>
             <p class="text-gray-700 text-sm leading-relaxed">
-              Yes. The 22 x 60-inch deck matches the NordicTrack Commercial
-              1750's footprint and comfortably fit our taller testers
-              during full-stride running. This is one of the areas where
-              the Pro 2000 doesn't cut corners relative to its more
-              expensive NordicTrack sibling.
+              Yes. The 22 x 60-inch deck matches the NordicTrack Commercial 1750's footprint, and 60 inches of length by 22 of width is a full-size running surface with room for most taller runners at full stride. This is one of the areas where the Pro 2000 doesn't cut corners relative to its more expensive NordicTrack sibling.
             </p>
           </div>
           <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
@@ -799,12 +715,7 @@ const schema = {
           <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <h3 class="font-bold text-gray-900 mb-2">How long does assembly take on the ProForm Pro 2000?</h3>
             <p class="text-gray-700 text-sm leading-relaxed">
-              Around 70 minutes working alone, or closer to 40 minutes with
-              a second person helping lift the upright console mast into
-              place, which the manual recommends. The layout and hardware
-              are similar enough to NordicTrack's assembly process that
-              anyone who has built a NordicTrack machine before will find
-              the steps familiar.
+              Plan on a second person helping lift the upright console mast into place, which the manual recommends. The layout and hardware are similar enough to NordicTrack's assembly process that anyone who has built a NordicTrack machine before will find the steps familiar.
             </p>
           </div>
         </div>
@@ -870,7 +781,7 @@ const schema = {
           Comparing your options first? See our full
           <a href="/proform-treadmill/" class="text-[#5AA9FF] font-bold no-underline">ProForm brand guide</a>
           or the <a href="/best-treadmill-for-home-reviews/" class="text-[#5AA9FF] font-bold no-underline">best treadmills for home roundup</a>
-          for how every model we've tested stacks up.
+          for how every model we've covered stacks up.
         </p>
       </div>
     </div>

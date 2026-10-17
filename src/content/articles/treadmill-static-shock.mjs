@@ -1,6 +1,6 @@
 export default {
   slug: 'treadmill-static-shock',
-  title: 'Treadmill Static Shock (2026): Why Your Treadmill Shocks You and How to Stop It',
+  title: 'Treadmill Static Shock (2026): Why It Happens and How to Stop It',
   description:
     'Why does my treadmill shock me? Usually static from belt friction, dry air and carpet. How to stop it, why grounding matters, and when a shock is not static at all.',
   crumbLabel: 'Treadmill Static Shock',

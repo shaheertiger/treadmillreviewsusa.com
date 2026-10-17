@@ -1,6 +1,6 @@
 export default {
   slug: 'treaflow-walking-pad',
-  title: 'Treaflow Walking Pad Review (2026): The 3100W, Its Incline and Its Limits',
+  title: 'Treaflow Walking Pad Review (2026): The 3100W and Its Limits',
   description:
     'The Treaflow walking pad is a $110-$160 under-desk pad sold on Amazon. What its listing confirms, the 8% peg incline, the warranty question, and who it suits.',
   crumbLabel: 'Treaflow Walking Pad',
