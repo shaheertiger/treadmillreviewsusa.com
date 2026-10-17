@@ -2443,6 +2443,13 @@ export const SECTIONS: Section[] = [
             url: '/how-to-use-a-treadmill/',
           },
           {
+            title: 'How to Run on a Treadmill',
+            description:
+              'A full session in order: warm-up, starting pace, stride, posture, run/walk intervals and cooldown.',
+            badge: 'How-to',
+            url: '/how-to-run-on-a-treadmill/',
+          },
+          {
             title: 'Warm Up and Cool Down',
             description:
               'How long to warm up and cool down, drills off the belt, and what to do if you feel dizzy.',
@@ -2584,6 +2591,20 @@ export const SECTIONS: Section[] = [
               'No exercise targets belly or thigh fat, but treadmill work helps whole-body and visceral fat loss.',
             badge: 'Myth vs. fact',
             url: '/does-treadmill-burn-belly-fat/',
+          },
+          {
+            title: 'Is a Treadmill Good for Weight Loss?',
+            description:
+              'Yes, as a tool: why diet and consistency matter more, walking vs running, incline and appetite.',
+            badge: 'Myth vs. fact',
+            url: '/is-a-treadmill-good-for-weight-loss/',
+          },
+          {
+            title: 'Can Incline Walking Help Lose Thigh Fat?',
+            description:
+              'Why spot reduction fails, what incline does to the legs, and a sensible incline progression.',
+            badge: 'Myth vs. fact',
+            url: '/can-incline-walking-help-lose-thigh-fat/',
           },
           {
             title: 'How Long Should I Walk on a Treadmill?',

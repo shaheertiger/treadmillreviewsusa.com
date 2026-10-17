@@ -349,8 +349,8 @@ export default {
   ],
   faqs: [
     {
-      q: 'Is a treadmill good for weight loss?',
-      a: `It is very good for building cardiovascular fitness and a consistent habit, and a weaker lever on body weight than most content implies — exercise is partially offset by reduced incidental movement and increased appetite. It is genuinely useful, particularly for maintaining a weight you have reached, and worth doing regardless of what the scale does.`,
+      q: 'Are treadmill workouts enough on their own for weight loss?',
+      a: `Rarely on their own. Treadmill workouts are very good for building cardiovascular fitness and a consistent habit, and a weaker lever on body weight than most content implies — exercise is partially offset by reduced incidental movement and increased appetite. It is genuinely useful, particularly for maintaining a weight you have reached, and worth doing regardless of what the scale does.`,
     },
     {
       q: 'Is walking or running better for weight loss?',

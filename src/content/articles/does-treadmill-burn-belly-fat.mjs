@@ -17,7 +17,7 @@ export default {
     { label: 'The Short Answer', href: '#short-answer' },
     { label: 'A Realistic Plan', href: '#realistic-plan' },
   ],
-  tags: ['treadmill belly fat', 'spot reduction', 'visceral fat', 'incline walking thigh fat', 'treadmill fat loss'],
+  tags: ['treadmill belly fat', 'spot reduction', 'visceral fat', 'walking stomach fat', 'treadmill fat loss'],
   stickyCta: { text: 'See a Realistic Plan', link: '#realistic-plan' },
   note: `<strong class="text-gray-900">What this page is, and is not.</strong> We review
           treadmills. This page explains how fat loss works in general terms so you can use a
@@ -196,9 +196,9 @@ export default {
     },
     {
       id: 'incline-thigh-fat',
-      heading: 'Can Incline on a Treadmill Help You Lose Thigh Fat?',
+      heading: 'What About Thigh Fat and Incline Walking?',
       html: `          <p>
-            This is the most-searched variation of the question, and the answer follows directly
+            The same question gets asked about thighs, and the answer follows directly
             from everything above: <strong>incline walking cannot target thigh fat, but it can help
             you lose fat overall — thighs included — while building the muscles of your legs and
             hips.</strong>
@@ -226,7 +226,9 @@ export default {
             A small caution: thighs are, for many women in particular, one of the last places to
             lose fat. If your legs are the area you care about most, it is worth knowing in
             advance that they may be the slowest to change, so you judge the plan on the right
-            timescale.
+            timescale. Our full guide to
+            <a href="/can-incline-walking-help-lose-thigh-fat/" class="text-[#0F62FE] font-medium">incline walking and thigh fat</a>
+            goes further into what incline does to the legs.
           </p>`,
     },
     {
@@ -443,8 +445,8 @@ export default {
       a: `Yes, in the sense that treadmill exercise uses energy and, over time and alongside your eating habits, can contribute to fat loss across the body. The fat-burning zone on the console is less important than it looks: higher intensities burn more energy overall, and long-term energy balance matters more than which fuel you used during the session.`,
     },
     {
-      q: 'Can incline on a treadmill help you lose thigh fat?',
-      a: `Not directly. Incline walking works the glutes, hamstrings and calves harder and raises the energy cost of walking considerably — a 10% grade roughly doubles it at a typical walking pace — which helps whole-body fat loss. But fat comes off the thighs on the same body-wide schedule as everywhere else, and thighs are often one of the last areas to change.`,
+      q: 'Does walking on the treadmill burn stomach fat?',
+      a: `Yes, as part of whole-body fat loss, but not selectively. Walking burns energy, and when you are in a sustained calorie deficit your body draws fat from everywhere, including the stomach and the deeper visceral fat around the organs. Brisk or incline walking most days, paired with eating habits you can keep, is a realistic route.`
     },
     {
       q: 'How long does it take to lose belly fat on a treadmill?',
