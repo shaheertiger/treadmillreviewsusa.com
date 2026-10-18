@@ -296,6 +296,9 @@ export default {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Other brands and walking pads</h3>
           <p>
+            Horizon owners have a model-by-model walkthrough taken from Horizon’s own manuals in our
+            guide to
+            <a href="/how-to-start-a-horizon-treadmill/" class="text-[#0F62FE] font-medium">how to start a Horizon treadmill</a>.
             Other treadmill brands, and the many walking-pad brands, generally follow one of the
             two patterns on this page: a base switch, a safety key and a console start
             control, or a plug-in-and-standby design with a remote or app. If in doubt, the

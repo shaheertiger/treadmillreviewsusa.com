@@ -405,6 +405,12 @@ export const SECTIONS: Section[] = [
             url: '/best-dog-treadmills/',
           },
           {
+            title: 'How to Build a Dog Treadmill',
+            description: 'Dog-powered slatmills and carpet mills: design, costs, failure modes, and why not a motor.',
+            badge: 'DIY',
+            url: '/how-to-build-a-dog-treadmill/',
+          },
+          {
             title: 'Dog Treadmill vs. Human Treadmill',
             description:
               'Belt length, side panels, speed and controls compared, and when a human machine is a poor fit for a dog.',
@@ -1562,6 +1568,12 @@ export const SECTIONS: Section[] = [
               'The power switch, the safety key, the console boot and quick start — and what to check when nothing happens.',
             badge: 'First use',
             url: '/how-to-turn-on-a-treadmill/',
+          },
+          {
+            title: 'How to Start a Horizon Treadmill',
+            description: 'Horizon’s start sequence from its manuals: switch, safety key, Start, and what to check.',
+            badge: 'First use',
+            url: '/how-to-start-a-horizon-treadmill/',
           },
           {
             title: 'How to Read Treadmill Reviews',

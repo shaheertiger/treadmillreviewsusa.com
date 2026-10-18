@@ -197,7 +197,10 @@ export default {
       heading: 'What Ownership Looks Like, Whatever You Buy',
       html: `          <p>
             The maintenance requirements of a treadmill are essentially brand-independent, and they
-            matter more to how long a machine lasts than the badge does.
+            matter more to how long a machine lasts than the badge does. The day-one details are
+            not: Horizon is strict about its power supply and safety key, and our guide to
+            <a href="/how-to-start-a-horizon-treadmill/" class="text-[#0F62FE] font-medium">how to start a Horizon treadmill</a>
+            sets out the start sequence from Horizon’s manuals.
           </p>
           <p>
             The dominant failure mode across every manufacturer is the same: belt-to-deck friction
