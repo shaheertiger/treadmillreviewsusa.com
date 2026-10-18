@@ -76,7 +76,9 @@ export default {
             If you are still deciding whether an elliptical is the right machine at all, read our
             comparison of a
             <a href="/treadmill-vs-elliptical/" class="text-[#0F62FE] font-medium">treadmill and an elliptical</a>
-            first, or the wider
+            first — or, if calorie burn is the deciding question, our breakdown of
+            <a href="/elliptical-vs-treadmill-calories/" class="text-[#0F62FE] font-medium">elliptical vs treadmill calories</a> —
+            or the wider
             <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">best cardio machines for home</a>
             guide, which sets ellipticals against bikes, rowers and treadmills.
           </p>`,

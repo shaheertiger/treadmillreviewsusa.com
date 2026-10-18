@@ -1324,6 +1324,12 @@ export const SECTIONS: Section[] = [
             url: '/treadmill-vs-elliptical/',
           },
           {
+            title: 'Elliptical vs Treadmill Calories',
+            description: '2024 Compendium MET maths for three body weights, and why both consoles run high.',
+            badge: 'Calories',
+            url: '/elliptical-vs-treadmill-calories/',
+          },
+          {
             title: 'Manual vs. Motorized Treadmill',
             description:
               'Flat manual, curved self-powered or motorized: which is worth buying, and who each one suits.',
@@ -1493,6 +1499,18 @@ export const SECTIONS: Section[] = [
               'Motor power, deck size, folding vs. fixed and budget tiers — everything to check before comparing models.',
             badge: 'Pillar guide',
             url: '/treadmill-buying-guide-2026/',
+          },
+          {
+            title: 'Should I Buy a Treadmill?',
+            description: 'Who a home treadmill pays off for, who regrets one, cost per use and a self-test.',
+            badge: 'Decision',
+            url: '/should-i-buy-a-treadmill/',
+          },
+          {
+            title: 'What Treadmill Should I Buy?',
+            description: 'A decision table: from how you’ll use it to the type, minimum specs and roundup.',
+            badge: 'Decision',
+            url: '/what-treadmill-should-i-buy/',
           },
           {
             title: 'Treadmill Buyer’s Purchase Checklist',
@@ -2441,6 +2459,12 @@ export const SECTIONS: Section[] = [
               'Safety key, straddling the belt, stepping off safely, running form and a first-week plan.',
             badge: 'Beginner',
             url: '/how-to-use-a-treadmill/',
+          },
+          {
+            title: 'How to Start Running on a Treadmill',
+            description: 'Walk-run intervals, starting speeds, form on the belt and an eight-week progression.',
+            badge: 'Beginner',
+            url: '/how-to-start-running-on-a-treadmill/',
           },
           {
             title: 'Warm Up and Cool Down',

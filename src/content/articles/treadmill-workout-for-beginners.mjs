@@ -449,7 +449,10 @@ export default {
             walk-run blocks, and it builds over about nine weeks to 30 minutes of continuous
             running. Starting it after this plan rather than from nothing makes its awkward middle
             weeks far more manageable, and the treadmill version of it has the advantage that the
-            speeds are set for you rather than guessed.
+            speeds are set for you rather than guessed. Our guide to
+            <a href="/how-to-start-running-on-a-treadmill/" class="text-[#0F62FE] font-medium">how to start running on a treadmill</a>
+            covers the running-specific basics a plan's table leaves out: form on the belt, how to
+            progress and the signs you are doing too much.
           </p>
           <p>
             <strong>If you want to keep walking,</strong> the next step is structure and gentle
