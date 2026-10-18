@@ -53,9 +53,11 @@ export default {
           </ul>
           <p>
             After those come controls, handrail or not, noise, incline and price. If you want our
-            recommendations rather than a checklist, our
+            recommendations rather than a checklist, our pick of the
+            <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">best walking pads</a>
+            names one for each common job and our
             <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmill roundup</a>
-            covers the machines; this page is about how to judge any pad you find, including ones
+            covers the machines for desks; this page is about how to judge any pad you find, including ones
             that roundup does not cover.
           </p>`,
     },

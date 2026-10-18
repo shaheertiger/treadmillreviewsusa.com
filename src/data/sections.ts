@@ -247,6 +247,12 @@ export const SECTIONS: Section[] = [
             url: '/walking-pad-buying-guide/',
           },
           {
+            title: 'Best Walking Pads',
+            description: 'Our pick for most people, plus budget, long-belt, heavy-duty, incline and jogging pads.',
+            badge: 'Walking pads',
+            url: '/best-walking-pads/',
+          },
+          {
             title: 'Best Walking Pads With Incline',
             description:
               'Walking pads that add a powered or fixed incline, and how much grade a pad can realistically give you.',
