@@ -111,7 +111,10 @@ export default {
             Two numbers to check on any spec sheet: the assembled weight, which is what you will move
             day to day, and the boxed weight, which is what arrives at the door. Our guide to
             <a href="/how-much-does-a-treadmill-weigh/" class="text-[#0F62FE] font-medium">how much a treadmill weighs</a>
-            covers both, and what different weights mean for floors and upstairs rooms.
+            covers both, and what different weights mean for floors and upstairs rooms. For
+            specific machines, our pick of the
+            <a href="/best-portable-treadmills/" class="text-[#0F62FE] font-medium">best portable treadmills</a>
+            lists six models with unit weights checked against the maker and an independent source.
           </p>
           <p>
             A useful test before buying: could the person who will move the machine most often lift

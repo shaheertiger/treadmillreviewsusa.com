@@ -200,6 +200,12 @@ export const SECTIONS: Section[] = [
             url: '/portable-treadmills/',
           },
           {
+            title: 'Best Portable Treadmills',
+            description: 'Six portable treadmills sorted by checked unit weight, from a 43 lb pad to a 182 lb folder.',
+            badge: 'Portable',
+            url: '/best-portable-treadmills/',
+          },
+          {
             title: 'Best Low-Profile Treadmills',
             description:
               'Low step-up, slim folded height and light weight: the three meanings of low profile, with picks for each.',
