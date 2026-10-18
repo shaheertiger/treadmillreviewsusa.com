@@ -648,6 +648,12 @@ export const SECTIONS: Section[] = [
         name: 'Where to buy',
         pages: [
           {
+            title: 'Where to Buy a Cheap Treadmill',
+            description: 'Used, clearance, open-box and gym surplus, ranked by what a decent treadmill really costs.',
+            badge: 'Cheap',
+            url: '/where-to-buy-a-cheap-treadmill/',
+          },
+          {
             title: 'Buying a Treadmill on Amazon',
             description:
               'Check the seller, read listings and reviews critically, and know how freight delivery and returns work.',
@@ -814,6 +820,12 @@ export const SECTIONS: Section[] = [
       {
         name: 'Commercial brands',
         pages: [
+          {
+            title: 'What Treadmills Do Gyms Use?',
+            description: 'The commercial brands in US gyms, who owns them, and how to read the badge on yours.',
+            badge: 'Question',
+            url: '/what-treadmills-do-gyms-use/',
+          },
           {
             title: 'Life Fitness Treadmills',
             description: 'Genuine commercial gym pedigree, from the T3 to the Platinum Club Series.',

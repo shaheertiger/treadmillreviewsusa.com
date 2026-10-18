@@ -199,7 +199,9 @@ export default {
           <p>
             If you want running without a big budget, two other routes are worth considering
             before a stretched $300 pad: a used or manufacturer-refurbished full-size treadmill,
-            covered in our under-$500 guide, or simply saving to the price of a machine with a
+            covered in our under-$500 guide and in
+            <a href="/where-to-buy-a-cheap-treadmill/" class="text-[#0F62FE] font-medium">where to buy a cheap treadmill</a>,
+            or simply saving to the price of a machine with a
             55-inch belt and powered incline, which in 2026 starts at roughly $420 on sale.
           </p>`,
     },
