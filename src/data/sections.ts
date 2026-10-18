@@ -673,6 +673,18 @@ export const SECTIONS: Section[] = [
             url: '/buying-a-treadmill-on-amazon/',
           },
           {
+            title: 'Walmart Treadmills',
+            description: 'Mostly online. How to tell Walmart-sold from Marketplace listings, and heavy-item returns.',
+            badge: 'Walmart',
+            url: '/walmart-treadmills/',
+          },
+          {
+            title: 'Home Depot Treadmills',
+            description: 'Online only, from little-known budget brands. What it lists, short warranties, and returns.',
+            badge: 'Home Depot',
+            url: '/home-depot-treadmills/',
+          },
+          {
             title: 'Dick’s Sporting Goods Treadmills',
             description:
               'Use the in-store test, then check delivery, assembly, returns and price matching before you pay.',
