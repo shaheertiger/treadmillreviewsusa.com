@@ -346,7 +346,9 @@ export default {
       html: `          <p>
             Amazon's strengths are selection, convenience and a large volume of reviews. Its
             weaknesses are listing accuracy, the variety of sellers and the practical difficulty of
-            returning a heavy item. For the other big online marketplace, see <a href="/wayfair-treadmills/" class="text-[#0F62FE] font-medium">buying a treadmill on Wayfair</a>.
+            returning a heavy item. For the other big online marketplaces, see <a href="/wayfair-treadmills/" class="text-[#0F62FE] font-medium">buying a treadmill on Wayfair</a>
+            and our guide to <a href="/walmart-treadmills/" class="text-[#0F62FE] font-medium">Walmart treadmills</a>,
+            where the same seller checks apply.
           </p>
           <p>
             <strong>Buying direct from the manufacturer</strong> gives you the clearest specification

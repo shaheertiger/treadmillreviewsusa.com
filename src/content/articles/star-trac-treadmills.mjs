@@ -59,7 +59,9 @@ export default {
             commercial warranty terms rather than a consumer checkout.
           </p>
           <p>
-            Used, Star Trac treadmills are common, because gyms replace them on a cycle. On the day
+            Used, Star Trac treadmills are common, because gyms replace them on a cycle; our guide to
+            <a href="/what-treadmills-do-gyms-use/" class="text-[#0F62FE] font-medium">what treadmills gyms use</a>
+            covers the other club brands you will meet alongside them. On the day
             we checked, specialist remanufacturers listed older club models such as the E-TR and
             E-TRx at roughly $3,600 to $3,900 with a one-year parts and on-site labour warranty from
             the reseller, and private sales vary far more. Read our guides to

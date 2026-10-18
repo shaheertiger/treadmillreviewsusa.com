@@ -397,7 +397,9 @@ export default {
             any maximum continuous running time in the manual. Our
             <a href="/walking-pad-buying-guide/" class="text-[#0F62FE] font-medium">walking pad buying guide</a>
             takes each of those in turn, along with warranty, parts and where to try one before
-            buying.
+            buying, and our roundup of the
+            <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">best walking pads</a>
+            applies those checks to six current models.
           </p>`,
     },
   ],

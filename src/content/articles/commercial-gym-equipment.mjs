@@ -92,7 +92,9 @@ export default {
           </p>
           <p>
             These are not the only good choices in each category — Matrix, Precor, Technogym and
-            others make excellent commercial equipment — but each pick here passed every check we
+            others make excellent commercial equipment, as our guide to
+            <a href="/what-treadmills-do-gyms-use/" class="text-[#0F62FE] font-medium">what treadmills gyms use</a>
+            sets out for cardio — but each pick here passed every check we
             set, and between them they cover what most small facilities need first.
           </p>`,
     },

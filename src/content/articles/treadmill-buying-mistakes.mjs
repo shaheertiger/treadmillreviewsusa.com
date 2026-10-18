@@ -274,7 +274,10 @@ export default {
           <p>
             The honest test is what you have done consistently over the past few months, not what
             you plan to do next. If you walk now, buy a very good walking machine, perhaps with
-            strong incline, and upgrade if running becomes a habit. The reverse mistake also
+            strong incline, and upgrade if running becomes a habit. If you are not yet sure a
+            treadmill will be used at all, our
+            <a href="/should-i-buy-a-treadmill/" class="text-[#0F62FE] font-medium">should I buy a treadmill</a>
+            self-test is the place to start. The reverse mistake also
             exists — a regular runner talked into a budget machine — and our pages on
             <a href="/how-much-should-you-spend-on-a-treadmill/" class="text-[#0F62FE] font-medium">how much to spend</a>
             and <a href="/cheap-vs-premium-treadmill/" class="text-[#0F62FE] font-medium">cheap versus premium</a>
@@ -324,7 +327,9 @@ export default {
       heading: 'Mistake 13: Buying the Wrong Format for the Job',
       html: `          <p>
             "Treadmill" now covers several different machines, and buying the wrong one is a
-            category mistake rather than a specification one.
+            category mistake rather than a specification one. Our guide to
+            <a href="/what-treadmill-should-i-buy/" class="text-[#0F62FE] font-medium">what treadmill to buy</a>
+            matches each kind of use to the right type before you look at specifications.
           </p>
           <p>
             <strong>A walking pad for running.</strong> Under-desk walking pads are built for slow,

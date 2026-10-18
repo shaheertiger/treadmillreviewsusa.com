@@ -362,7 +362,9 @@ export default {
             If the band you can afford does not buy the machine you need, a second-hand or
             manufacturer-refurbished treadmill can move you up a band for the same money. A used
             full-size treadmill that cost $1,500 new can sell for a fraction of that, and a solid frame
-            often outlasts its first owner's interest in running.
+            often outlasts its first owner's interest in running. Our guide to
+            <a href="/where-to-buy-a-cheap-treadmill/" class="text-[#0F62FE] font-medium">where to buy a cheap treadmill</a>
+            ranks those routes, and clearance and open-box, by what they really cost.
           </p>
           <p>
             The risks are real and specific: no warranty, or a short one; an unknown history of

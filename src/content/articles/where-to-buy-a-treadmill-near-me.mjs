@@ -80,7 +80,10 @@ export default {
             equipment alongside everything else. Range is often larger online than in store, and
             floor models may be few. Our
             <a href="/best-buy-treadmills/" class="text-[#0F62FE] font-medium">Best Buy guide</a>
-            covers what an electronics retailer does well and badly here.
+            covers what an electronics retailer does well and badly here, and our guides to
+            <a href="/walmart-treadmills/" class="text-[#0F62FE] font-medium">Walmart</a> and
+            <a href="/home-depot-treadmills/" class="text-[#0F62FE] font-medium">Home Depot</a>
+            cover two general retailers whose treadmill ranges are almost entirely online.
           </p>
           <p>
             <strong>Manufacturer showrooms.</strong> Some brands operate their own showrooms or

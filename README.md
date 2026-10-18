@@ -593,6 +593,63 @@ Still for the owner: verify the site in Bing Webmaster Tools (import from Google
 add the `msvalidate.01` code), write a privacy policy for the footer link, and set the apex domain
 to redirect straight to `https://www.` in Vercel (it currently takes two hops).
 
+### Keyword batch (2026-10-18): twelve pages
+
+Written against a supplied keyword list of 104 rows, stored with its page mapping in
+`research/keyword-batches/2026-10-18.csv`. 81 rows already had an owning page (cost, best
+treadmill, home use, brands, where to buy, buyer's guides, elliptical and bike comparisons,
+turning on, dismantling, Best Buy, timing, Strava, fat-loss settings) and were mapped to it
+rather than given a competing page. The other 23 rows became twelve pages:
+
+- **Roundups** (`/best/`): best walking pads (six picks) and best portable treadmills (six
+  picks sorted by checked unit weight). Products confirmed on sale and cross-checked on
+  2026-10-18; conflicting figures, mostly motor ratings, left off the cards; CPSC checked per
+  brand.
+- **Where to buy** (`/price/`): Walmart (seller types and Walmart's 90-day / Marketplace 30-day
+  return rules, read from its policy page), Home Depot (online only, budget vendors with one-
+  to three-month warranties on the day), and where to buy a cheap treadmill (eight channels
+  ranked by real cost).
+- **Decisions** (`/guides/`): should I buy a treadmill (with a self-test) and what treadmill
+  should I buy (a use-to-spec decision table consistent with the belt-size and horsepower
+  guides).
+- **Questions**: what treadmills gyms use (`/brands/`; no chain-specific brand claims, since no
+  reliable source names them), how to start a Horizon treadmill (`/guides/`; from the T101-08,
+  T202-06, 7.0AT-05 and 7.4AT-04 manuals), how to start running on a treadmill (`/training/`),
+  what burns more calories, elliptical or treadmill (`/compare/`; 2024 Compendium METs), and how
+  to build a dog treadmill (`/best/`; dog-powered slatmills and carpet mills at design level only,
+  no motorized build, vet scope note).
+
+Twenty-six existing pages gained contextual links into the batch.
+
+Found while writing and not yet changed:
+
+- Site-wide disagreements: weight-capacity margin (20–30 lb on `/treadmill-buying-guide-2026/`
+  against at least 50 lb elsewhere), jogging deck size (18 x 50 in. in that page's FAQ against
+  55 x 20 in. in the belt-size guide), the height at which runners need a 60 in. deck (5'8" on
+  `/how-much-should-you-spend-on-a-treadmill/` against 5'10"), and typical return windows
+  (30–90 days on `/treadmill-buyers-guide/` against 14–30 on `/treadmill-return-policies/`).
+- `/treadmill-calories-burned/` uses the ACSM equations and gives running figures about 10%
+  above the 2024 Compendium figures on `/elliptical-vs-treadmill-calories/`; the new page explains
+  the gap.
+- Stale walking pad details: `/best-quiet-walking-pads/` says the Z1 is on pre-order (in stock at
+  $329 on 18 October); it and `/best-walking-pads-for-tall-people/` list a 230 lb A1 Pro that is no
+  longer sold; `/best-walking-pads-with-handrail/` prices the Strol 2S Pro at $299.99 (UREVO
+  showed $549.99).
+- Remaining testing language: `/treadmill-buyers-guide/` ("We test and rank fold mechanisms"),
+  `/commercial-treadmills/` ("We compared six…"), `/best-folding-treadmill-reviews/` ("We
+  compared 7…", with unverified specs) and `/best-treadmills-for-small-spaces/` (a `how-we-tested`
+  section, "around 250 lbs" figures, and walking pads put at 60–90 lb against 43–55 lb verified).
+- `/life-fitness/` says its machines are in Equinox clubs, unsourced.
+- `/horizon-fitness/` is still a `dataPending` draft and gives an unsourced 40–50 hour
+  lubrication interval; Horizon's manuals say every 3 months or 150 miles.
+- The Dog Trotter slatmill is priced differently on `/best-dog-treadmills/` and
+  `/best-dog-treadmills-for-large-dogs/`.
+- Breadcrumbs: `couch-to-5k-treadmill.mjs` has none (falls back to `/best-of/`);
+  `/treadmill-belt-size-guide/` and `/treadmill-horsepower-guide/` point "Buying Guides" at
+  `/best-of/`; `/treadmill-buying-guide-2026/` has a two-item trail ending in a slash-less URL.
+- `scripts/build-articles.mjs <name>` matches spec names by substring, so building
+  `best-walking-pads` also rebuilds its four siblings; pass `best-walking-pads.mjs` to build one.
+
 ### Sole F80 and F85
 
 Both were shipped first as `dataPending` editorial drafts because their published figures conflict

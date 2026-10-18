@@ -200,6 +200,12 @@ export const SECTIONS: Section[] = [
             url: '/portable-treadmills/',
           },
           {
+            title: 'Best Portable Treadmills',
+            description: 'Six portable treadmills sorted by checked unit weight, from a 43 lb pad to a 182 lb folder.',
+            badge: 'Portable',
+            url: '/best-portable-treadmills/',
+          },
+          {
             title: 'Best Low-Profile Treadmills',
             description:
               'Low step-up, slim folded height and light weight: the three meanings of low profile, with picks for each.',
@@ -245,6 +251,12 @@ export const SECTIONS: Section[] = [
               'Belt length, motor rating, capacity, desk height, warranty and where to try one: what to check first.',
             badge: 'Walking pads',
             url: '/walking-pad-buying-guide/',
+          },
+          {
+            title: 'Best Walking Pads',
+            description: 'Our pick for most people, plus budget, long-belt, heavy-duty, incline and jogging pads.',
+            badge: 'Walking pads',
+            url: '/best-walking-pads/',
           },
           {
             title: 'Best Walking Pads With Incline',
@@ -391,6 +403,12 @@ export const SECTIONS: Section[] = [
               'Purpose-built dog treadmills sized by breed, with the safety rules that matter more than the machine.',
             badge: 'Dogs',
             url: '/best-dog-treadmills/',
+          },
+          {
+            title: 'How to Build a Dog Treadmill',
+            description: 'Dog-powered slatmills and carpet mills: design, costs, failure modes, and why not a motor.',
+            badge: 'DIY',
+            url: '/how-to-build-a-dog-treadmill/',
           },
           {
             title: 'Dog Treadmill vs. Human Treadmill',
@@ -642,11 +660,29 @@ export const SECTIONS: Section[] = [
         name: 'Where to buy',
         pages: [
           {
+            title: 'Where to Buy a Cheap Treadmill',
+            description: 'Used, clearance, open-box and gym surplus, ranked by what a decent treadmill really costs.',
+            badge: 'Cheap',
+            url: '/where-to-buy-a-cheap-treadmill/',
+          },
+          {
             title: 'Buying a Treadmill on Amazon',
             description:
               'Check the seller, read listings and reviews critically, and know how freight delivery and returns work.',
             badge: 'Amazon',
             url: '/buying-a-treadmill-on-amazon/',
+          },
+          {
+            title: 'Walmart Treadmills',
+            description: 'Mostly online. How to tell Walmart-sold from Marketplace listings, and heavy-item returns.',
+            badge: 'Walmart',
+            url: '/walmart-treadmills/',
+          },
+          {
+            title: 'Home Depot Treadmills',
+            description: 'Online only, from little-known budget brands. What it lists, short warranties, and returns.',
+            badge: 'Home Depot',
+            url: '/home-depot-treadmills/',
           },
           {
             title: 'Dick’s Sporting Goods Treadmills',
@@ -808,6 +844,12 @@ export const SECTIONS: Section[] = [
       {
         name: 'Commercial brands',
         pages: [
+          {
+            title: 'What Treadmills Do Gyms Use?',
+            description: 'The commercial brands in US gyms, who owns them, and how to read the badge on yours.',
+            badge: 'Question',
+            url: '/what-treadmills-do-gyms-use/',
+          },
           {
             title: 'Life Fitness Treadmills',
             description: 'Genuine commercial gym pedigree, from the T3 to the Platinum Club Series.',
@@ -1324,6 +1366,12 @@ export const SECTIONS: Section[] = [
             url: '/treadmill-vs-elliptical/',
           },
           {
+            title: 'Elliptical vs Treadmill Calories',
+            description: '2024 Compendium MET maths for three body weights, and why both consoles run high.',
+            badge: 'Calories',
+            url: '/elliptical-vs-treadmill-calories/',
+          },
+          {
             title: 'Manual vs. Motorized Treadmill',
             description:
               'Flat manual, curved self-powered or motorized: which is worth buying, and who each one suits.',
@@ -1495,6 +1543,18 @@ export const SECTIONS: Section[] = [
             url: '/treadmill-buying-guide-2026/',
           },
           {
+            title: 'Should I Buy a Treadmill?',
+            description: 'Who a home treadmill pays off for, who regrets one, cost per use and a self-test.',
+            badge: 'Decision',
+            url: '/should-i-buy-a-treadmill/',
+          },
+          {
+            title: 'What Treadmill Should I Buy?',
+            description: 'A decision table: from how you’ll use it to the type, minimum specs and roundup.',
+            badge: 'Decision',
+            url: '/what-treadmill-should-i-buy/',
+          },
+          {
             title: 'Treadmill Buyer’s Purchase Checklist',
             description: 'A step-by-step, eight-stage checklist from budget to long-term ownership.',
             badge: 'Checklist',
@@ -1520,6 +1580,12 @@ export const SECTIONS: Section[] = [
               'The power switch, the safety key, the console boot and quick start — and what to check when nothing happens.',
             badge: 'First use',
             url: '/how-to-turn-on-a-treadmill/',
+          },
+          {
+            title: 'How to Start a Horizon Treadmill',
+            description: 'Horizon’s start sequence from its manuals: switch, safety key, Start, and what to check.',
+            badge: 'First use',
+            url: '/how-to-start-a-horizon-treadmill/',
           },
           {
             title: 'How to Read Treadmill Reviews',
@@ -2441,6 +2507,12 @@ export const SECTIONS: Section[] = [
               'Safety key, straddling the belt, stepping off safely, running form and a first-week plan.',
             badge: 'Beginner',
             url: '/how-to-use-a-treadmill/',
+          },
+          {
+            title: 'How to Start Running on a Treadmill',
+            description: 'Walk-run intervals, starting speeds, form on the belt and an eight-week progression.',
+            badge: 'Beginner',
+            url: '/how-to-start-running-on-a-treadmill/',
           },
           {
             title: 'Warm Up and Cool Down',
