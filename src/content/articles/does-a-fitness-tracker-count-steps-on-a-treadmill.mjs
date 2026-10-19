@@ -395,7 +395,10 @@ export default {
             <strong>Consistency matters more than precision.</strong> For most people, the useful
             question is whether this week was more active than last week, and any device answers that
             well as long as you use it the same way each time. Pick one source for each measure and
-            stick with it, rather than switching to whichever looks best on the day.
+            stick with it, rather than switching to whichever looks best on the day. If you are
+            still choosing that device, our roundup of the
+            <a href="/best-fitness-trackers/" class="text-[#0F62FE] font-medium">best fitness trackers</a>
+            compares current bands, watches and rings on accuracy, battery and subscriptions.
           </p>`,
     },
   ],

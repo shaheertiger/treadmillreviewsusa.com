@@ -416,8 +416,9 @@ export default {
             <li><strong>A rack, barbell and plates.</strong> The big step: it is where strength
             training gets serious, and where space and floor loading start to matter. Budget for
             the barbell and plates as well as the rack; they often cost more than it does.</li>
-            <li><strong>Everything else.</strong> Cable machines, specialist machines, recovery
-            tools — once you know from experience what is missing.</li>
+            <li><strong>Everything else.</strong> Cable machines, specialist machines,
+            <a href="/best-home-gym-machines/" class="text-[#0F62FE] font-medium">all-in-one home gym machines</a>,
+            recovery tools — once you know from experience what is missing.</li>
           </ol>
           <p>
             Two money-saving notes. Strength equipment holds its value and has few parts to wear,

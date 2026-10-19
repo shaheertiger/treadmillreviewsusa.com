@@ -1,0 +1,628 @@
+export default {
+  slug: 'best-inversion-tables',
+  title: 'Best Inversion Tables (2026): 5 Picks and Who Should Not Invert',
+  description:
+    'Five inversion tables sold on Amazon, checked against maker manuals, retailers and the CPSC: limits, ankle locks, angle stops, and who should not use one.',
+  crumbLabel: 'Best Inversion Tables',
+  breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
+  kicker: 'Buying Guide',
+  updated: 'October 2026',
+  updatedLong: 'October 19, 2026',
+  published: '2026-10-19',
+  socialProof: '1.2k',
+  h1: ['Best Inversion Tables', 'and Who Should Not Use One'],
+  standfirst:
+    'An inversion table is a simple machine with a real safety job: holding you by the ankles while you hang head-down. Here are five currently sold tables, how their ankle locks and angle stops differ, what the makers say about who must not invert, and what the evidence on back pain actually shows.',
+  ctas: [
+    { label: 'See the Picks', href: '#picks' },
+    { label: 'Who Should Not Invert', href: '#who-should-not' },
+  ],
+  tags: ['best inversion table', 'inversion table', 'teeter fitspine', 'innova inversion table', 'inversion table safety'],
+  stickyCta: { text: 'See Our Top Picks', link: '#picks' },
+  lead: `Inversion tables are sold as back-pain relief, and that is the first thing to be careful about.
+          The research on traction for back pain is limited and mostly disappointing, the makers' own
+          manuals list a long run of conditions in which you must not invert at all, and the category
+          has a recall history built around one failure: ankle locks that let go. None of that means a
+          table is pointless for someone whose doctor has cleared them and who simply likes the
+          stretch. It does mean the right table is the one whose limits fit you, whose ankle lock you
+          can check every time, and whose angle stop keeps a first session gentle.`,
+  note: `<strong class="text-gray-900">Talk to a doctor before you use an inversion table.</strong>
+          This page reviews equipment; it is not medical advice, and nothing on it says an inversion
+          table treats, cures or prevents any condition. Hanging head-down raises pressure in the head
+          and eyes, and both makers carded here tell users not to invert without a licensed
+          physician's approval. If you have glaucoma or any retinal problem, high blood pressure, a
+          heart or circulation condition, a hernia, osteoporosis or other bone weakness, are pregnant,
+          have had recent surgery, a recent stroke or a fracture, take blood thinners, or have any
+          condition that affects balance or alertness, do not use one unless your doctor says it is
+          safe for you. Health claims on this page are the sellers' claims, reported as such.
+          <strong class="text-gray-900">On the products below.</strong> We have not tested these
+          tables, and no figure here is our own measurement. On 19 October 2026 we confirmed each
+          table as listed and in stock on Amazon US, and checked its user height and weight limits,
+          ankle system, angle settings and warranty against the maker's own product page or owner's
+          manual and at least one other source: a second retailer, the Amazon listing, or independent
+          coverage. A figure appears on a card only where those sources agree. Every brand was checked
+          against the US Consumer Product Safety Commission's recall database and the FDA's device
+          recall records, and recalled products are excluded. Prices are those we saw on that date and
+          change often. We earn a commission if you buy through the Amazon links on this page; it does
+          not change which products we list or what we say about them.`,
+  sections: [
+    {
+      id: 'quick-picks',
+      heading: 'Our Picks at a Glance',
+      html: `          <p>
+            <strong>The best inversion table for most people who have been cleared to use one is the
+            Teeter FitSpine X3</strong>: a 300 lb limit, a long-handled ankle lock with a second
+            gravity-activated catch, and an angle strap marked at 20, 40 and 60 degrees so a beginner
+            cannot tip further than intended. On a tight budget, the Innova ITX9600 does the same basic
+            job for well under a third of the price, with a pin that sets the angle instead of a strap.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead><tr>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Pick</th>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Best for</th>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Why</th>
+            </tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Teeter FitSpine X3</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best overall</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Long-handled ankle lock, marked angle strap, 5-year warranty</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Innova ITX9600</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best budget</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Six-hole angle pin and a 300 lb limit for about $130</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Teeter FitSpine LX9</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Easiest to get on and off</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Raised boarding platform on the X3's lock and strap</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Teeter FitSpine X2</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A Teeter for less</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Extended ankle-lock handle; sold through Woot on the day, so check the seller</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Innova ITM4800</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Built-in heat and vibration pad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The ITX9600's limits and angle pin with a padded lumbar unit</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            No table on this list is rated above 300 lb or above 6 ft 6 in. The best-known 350 lb
+            table, the Ironman Gravity 4000, was not available on Amazon when we checked; the
+            <a href="#how-we-chose" class="text-[#0F62FE] font-medium">how we chose</a> section explains
+            what happened to it and the other tables we left out. For the wider picture of recovery kit,
+            our guide to
+            <a href="/best-recovery-tools-for-weightlifters/" class="text-[#0F62FE] font-medium">recovery tools for weightlifters</a>
+            covers foam rollers, massage guns and stretch straps, and the
+            <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> collects every
+            guide in this series.
+          </p>`,
+    },
+    {
+      id: 'who-should-not',
+      heading: 'Who Should Not Use an Inversion Table',
+      html: `          <p>
+            Start here, before the product cards. Both makers on this page put the same instruction at
+            the top of their manuals: do not use the table without a licensed physician's approval.
+            Teeter's FitSpine X3 manual explains why. It says inversion is contraindicated in any
+            condition "that may be made more severe by an elevation of blood pressure, intracranial
+            pressure or mechanical stress of the inverted position," or that could affect your ability
+            to operate the equipment, including the side effects of medicines and supplements.
+          </p>
+          <p>
+            The two manuals then list specific conditions. Innova's ITX9600 manual calls its list "for
+            reference only and not a complete listing"; Teeter's says its conditions "may include, but
+            not be limited to" those named. Between them they include:
+          </p>
+          <ul>
+            <li><strong>Eyes and ears:</strong> glaucoma, retinal detachment (or a history of it), optic
+              hypertension, conjunctivitis, middle or inner ear disease or infection, motion sickness and
+              vertigo.</li>
+            <li><strong>Heart and circulation:</strong> high blood pressure or hypertension, any heart or
+              circulatory disorder, increased stroke risk, a recent stroke or transient ischemic attack,
+              and the use of anticoagulants, which both manuals say includes high doses of aspirin.</li>
+            <li><strong>Brain and nerves:</strong> head injury, a history of bleeding in the skull,
+              severe headaches, seizures, unexplained tingling or weakness, dizziness, and anything that
+              affects alertness or strength (Teeter's list).</li>
+            <li><strong>Bones and joints:</strong> osteoporosis or bone weakness, recent or unhealed
+              fractures, spinal injury, significant spinal curvature, acutely swollen joints, medullary
+              pins and surgically implanted orthopedic supports, and weak ankles or feet.</li>
+            <li><strong>Digestive and internal:</strong> hiatal or ventral hernia (Innova), and severe acid
+              reflux, hernia, gallbladder or kidney disease (Teeter).</li>
+            <li><strong>Anything where exercise is limited by a doctor</strong>, which Teeter's manual
+              says includes pregnancy, obesity and recent surgery; Innova lists pregnancy and being
+              extremely overweight separately.</li>
+          </ul>
+          <p>
+            Both manuals also exclude children (Innova says under 13; Teeter says children should not
+            use it at all) and anyone over the table's height or weight limit, and Teeter's says not to
+            use the table under the influence of alcohol or medication that causes drowsiness. If any item
+            on that list applies to you, or you are not sure, the answer is to ask your doctor first
+            and to take that conversation seriously. If you have back pain severe enough to make you
+            shop for a table, it is also worth having it assessed before you hang upside down to treat
+            it yourself.
+          </p>`,
+    },
+    {
+      id: 'picks',
+      heading: 'The 5 Best Inversion Tables',
+      products: true,
+      html: `          <p>
+            Each card gives the limits, ankle system, angle control and warranty we could confirm from
+            two sources, and the price range we saw on 19 October. Read the height and weight limits
+            first: a table that does not fit your body is unsafe however well it is built, because the
+            maker's balance settings and frame strength assume you are inside them.
+          </p>
+          <p>
+            Three of the five are Teeter models, because Teeter's FitSpine range is what most of the
+            currently sold, independently covered tables on Amazon are. The Innova tables are the
+            budget alternative, and the cards say plainly where they give up features.
+          </p>`,
+    },
+    {
+      id: 'how-we-chose',
+      heading: 'How We Chose These Tables',
+      html: `          <p>
+            We have not tested these tables. They were chosen from the makers' product pages and owner's
+            manuals, the Amazon listings themselves, recall records and independent coverage, and the
+            claims on this page are limited to what those sources support.
+          </p>
+          <p>
+            <strong>Sold now, on Amazon.</strong> We started from the brands most often sold as inversion
+            tables on Amazon US — Teeter, Innova, Ironman, Exerpeutic, Yoleo, Health Gear and others —
+            and opened each listing on 19 October 2026. A table made the list only if its listing was
+            live and in stock that day. The Teeter X3, LX9 and X1 listings were sold by Teeter's own
+            Amazon store and the X2 by Woot; the Innova listings we used were shipped by Amazon.
+          </p>
+          <p>
+            <strong>Figures checked twice.</strong> For each table we compared the user height and
+            weight limits, ankle system, angle settings and warranty on the maker's page or manual with
+            a second source: Teeter's FitSpine manual and product pages against the Amazon listings, QVC's
+            listing and Garage Gym Reviews' FitSpine review; Innova's ITX9600 manual and product page
+            against the Amazon listing and BarBend's inversion table roundup. Where they disagreed we
+            left the figure off the card. That happened with product weights for the LX9 (73 to 74 lb
+            depending on the source) and with the X3's minimum user height, which QVC gives as 4 ft 9 in.
+            against Teeter's and Amazon's 4 ft 8 in.
+          </p>
+          <p>
+            <strong>Recalls.</strong> We searched the CPSC recall database by brand and by the word
+            "inversion" in recall titles and descriptions. It returned three inversion recalls, all old
+            and none involving a brand carded here: about 22,000 NordicTrack and Reebok inversion
+            benches recalled by ICON Health &amp; Fitness in December 2007 because the ankle clamp could
+            release; about 2,000 Stamina inversion therapy tables recalled in January 2008 because a
+            centre weld could fail while inverted; and NordicTrack, Gold's Gym and Weider inversion
+            benches recalled by ICON in April 2010 because the ankle clamp could release or the strap
+            that limits rotation could break. Because inversion tables are also listed with the FDA as
+            traction devices, we searched the FDA's device recall records too. They show DICK'S
+            Sporting Goods' recall of 32,581 Fitness Gear inversion tables (styles STE00059FG and
+            STE00118FG) in December 2014 after customers fell and were injured; news reports of the
+            recall said the manual stressed engaging the ankle locks. The FDA record adds that DICK'S
+            removed medical claims from the tables' labels and advertising. We found no recalls for
+            Teeter, Innova, Ironman, Exerpeutic, Yoleo or Health Gear.
+          </p>
+          <p>
+            <strong>Left out, and why.</strong> The Ironman Gravity 4000 is the usual pick for heavier
+            users, rated by Amazon and independent reviewers at 350 lb. On 19 October Amazon's page for
+            the current "Gravity Highest Weight Capacity" table said it was currently unavailable, and
+            the older Gravity 4000, 3000 and 1000 listings no longer existed, so it is not carded. The
+            Teeter EP-560 Ltd., an older Teeter design with the same 300 lb limit, was also unavailable on
+            Amazon but on sale at $259 on Teeter's own store that day, so it remains a good buy direct.
+            Teeter's FitSpine X1 was in stock on Amazon at $369.99 — more than the X2 that day — with
+            the simpler T-pin ankle closure, so we carded the X2 instead. Exerpeutic's own website now
+            shows a single inversion table without specifications, so we could not confirm a current
+            Exerpeutic model's figures from the maker. Yoleo's Amazon listing gives a user height range of
+            4 ft 1 in. to 6 ft 2 in. but only recommends users of 265 lb or less, without a clear rated
+            maximum, and we could not find the brand outside Amazon to cross-check it. We could not
+            confirm a current Health Gear listing at all. Innova's ITX9900 was in stock, but its listing
+            gives assembled dimensions and an item weight that are plainly those of the box, so we left
+            it out rather than print figures we cannot trust.
+          </p>`,
+    },
+    {
+      id: 'evidence',
+      heading: 'Do Inversion Tables Work? What the Evidence Says',
+      html: `          <p>
+            This is the question most buyers are really asking, and the honest answer is that the
+            evidence is limited and mixed, and mostly not encouraging for long-term relief.
+          </p>
+          <p>
+            <strong>What the sellers say.</strong> Teeter's Amazon listings say its tables are "the ONLY
+            inversion tables registered with the FDA as a 510(k) medical device" and are "indicated for
+            back pain, muscle tension &amp; spasm, herniated disc, sciatica, degenerative disc disease,
+            spinal stenosis, spinal curvature due to tight muscles and facet syndrome." Those are Teeter's claims. Innova's
+            ITX9600 listing and manual make no treatment claim at all, and the manual's first instruction
+            is not to use the table without a physician's approval.
+          </p>
+          <p>
+            <strong>What FDA registration means.</strong> The FDA's 510(k) database shows a clearance
+            issued in December 2016 to STL International, the company behind Teeter, for the Teeter
+            Manual Inversion Table and four related Teeter devices, in the non-powered traction category.
+            A 510(k) clearance means the FDA accepted that the device is substantially equivalent to
+            similar devices already on the market. It is not FDA approval, and it is not evidence that the
+            device relieves back pain. The DICK'S recall above is a useful reminder of the other side of
+            that line: the FDA record for those tables describes the problem as false and misleading
+            labelling, because medical claims had been made for what was meant to be fitness equipment.
+          </p>
+          <p>
+            <strong>What the research says.</strong> The most thorough review is Cochrane's 2013 update on
+            traction for low back pain, which pooled 32 randomised trials with 2,762 participants. It
+            covered manual and machine traction rather than inversion tables alone, and concluded that
+            traction may make little or no difference to pain, function or return to work compared with
+            placebo, sham traction or no treatment, with or without sciatica. Seven of the trials
+            reported adverse effects, including increased pain and aggravated neurological signs. The
+            study inversion sellers cite most often is a small 2012 pilot trial from Newcastle, England,
+            in 24 people awaiting surgery for a single-level lumbar disc problem: more of those who added
+            intermittent inversion to physiotherapy ended up not having surgery, but the trial found no
+            significant difference between the groups in pain, disability or MRI scores, and its authors
+            presented it as a feasibility study for a larger trial.
+          </p>
+          <p>
+            <strong>So what can you reasonably expect?</strong> Some people find a few minutes at a
+            gentle angle a pleasant stretch and say their back feels looser afterwards, and independent
+            reviewers who use tables describe the relief as temporary. That is a reasonable thing to buy
+            a table for, provided your doctor agrees. It is not a reason to delay getting a back problem
+            assessed, and nothing here suggests a table treats any condition.
+          </p>`,
+    },
+    {
+      id: 'buyers-guide',
+      heading: 'Inversion Table Buying Guide: What to Check',
+      html: `          <p>
+            Five things decide whether a table is right for you. Check them in this order.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">1. Height and weight range</h3>
+          <p>
+            Every table here is rated to 300 lb and 6 ft 6 in.; the minimums are 4 ft 8 in. for the
+            Teeters and 4 ft 10 in. for the Innovas. Teeter's manual is blunt about why the maximums
+            matter: above them, "structural failure could occur or head / neck may impact the floor
+            during inversion." If you are near the top of the range, also look at the balance settings.
+            Teeter's X3 manual pairs body weight with a roller-hinge hole: at 220 to 300 lb it moves you
+            to a less responsive setting, which makes the table rotate more slowly. A table that tips
+            too readily is the commonest way to end up further over than you meant to go.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">2. The ankle system</h3>
+          <p>
+            This is the part that holds you, and the part every recall on record has involved. There are
+            two broad designs. A <strong>pin or T-pin closure</strong> slides the ankle cups together and
+            locks with a pin near your feet, so you bend forward to secure and release it. A
+            <strong>long-handled lock</strong> — Teeter's EZ-Reach on the X2, X3 and LX9, Innova's
+            extended holders on the ITM4800 — puts a lever within reach while you stand more upright,
+            which matters if bending is the very thing that hurts. Teeter's X3 and LX9 add a secondary
+            gravity-activated lock. Innova's ITX9600 uses reversible front and rear U-shaped holders that
+            can trade places. Whatever the design, the manuals ask for the same habit: Teeter's says to
+            "HEAR, FEEL, SEE and TEST" that the lock is snug every time, and both say to wear lace-up
+            shoes with a flat sole rather than boots or high-tops.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">3. How the angle is limited</h3>
+          <p>
+            A beginner should never be one arm movement away from full inversion. Tables limit the angle
+            in one of two ways. Teeter uses a <strong>tether</strong>, a strap between the bed and the
+            frame; the EZ-Angle tether on the X3 and LX9 is marked at 20, 40 and 60 degrees, and you can
+            detach it to lock out in full inversion once you are experienced. Innova uses a
+            <strong>pin</strong> through a protected bracket; the ITX9600 manual lists six holes, labelled
+            15, 30, 45, 60, 85 and 90, and says new users should start at 15 or 30. A pin can be set
+            without dismounting on some models,
+            and there is no strap to wear out — the 2010 ICON recall involved a rotation-limiting strap that
+            could break; a marked tether is quicker to read. Either is fine if you set it before you get
+            on, every time.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">4. Space, folding and the floor</h3>
+          <p>
+            An inversion table is long when it is in use. Teeter lists the X3 at up to about 81 x 29 in.
+            of floor and 86.5 in. high while inverting, and Innova's manual asks for at least 2 ft of clear
+            space on each side and 3 ft in front and behind. Measure the room with the table fully
+            inverted, not folded. All five fold for storage, but they fold upright into a tall A-frame
+            rather than flat, and Teeter's manual says not to store the table upright where children are
+            present; fold it and lay it on the floor. Set the table on a firm, level surface; a
+            rubber mat protects a wood floor and stops the feet creeping, and our
+            <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium">gym flooring guide</a>
+            covers the options.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">5. Certification, warranty and claims</h3>
+          <p>
+            Teeter says its tables are UL listed, and its X3 manual carries a statement that the product
+            "is Listed by Underwriters Laboratories Inc." and that "representative samples ... have been
+            evaluated by UL." Teeter's own articles say the listing is to UL 1647, a standard for massage
+            and exercise machines, with endurance and strength testing. We could not check that in UL's
+            certification directory, which requires an account, so treat it as Teeter's claim, repeated
+            in its manuals and listings. Neither Innova table claims a UL or ETL listing; Innova says only
+            that its products undergo "safety and compliance testing." Teeter's warranty is five years;
+            Innova's is one. Teeter also says its tables are HSA/FSA eligible; whether that applies to you
+            depends on your plan, and our guide to
+            <a href="/are-treadmills-hsa-fsa-eligible/" class="text-[#0F62FE] font-medium">HSA and FSA eligibility for fitness equipment</a>
+            explains how a letter of medical necessity works.
+          </p>`,
+    },
+    {
+      id: 'using-safely',
+      heading: 'Using an Inversion Table Safely',
+      html: `          <p>
+            These steps come from the makers' manuals. Your doctor's advice comes first; this is how the
+            equipment is meant to be used.
+          </p>
+          <ul>
+            <li><strong>Assemble it exactly as instructed</strong> and check the bolts. Innova's manual notes
+              its nylon lock nuts need two wrenches to tighten fully; Teeter offers step-by-step
+              instructions in the BILT app, and Garage Gym Reviews still found its assembly somewhat
+              complicated. A table assembled wrongly holds you wrongly.</li>
+            <li><strong>Set your height before you get on</strong>, using the scale on the main shaft.
+              Teeter's manual says improper settings "can cause rapid inversion or make returning upright
+              difficult."</li>
+            <li><strong>Set the angle limit first.</strong> Start shallow: Innova recommends 15 or 30,
+              and Teeter's user guide says to start at 20 degrees, warning that rotating too far too
+              early can cause disorientation or muscle soreness. Teeter's guide calls 60 degrees a
+              "magic angle" at which it says disc pressure is at or near zero; that is Teeter's claim,
+              not a target you need to reach.</li>
+            <li><strong>Have a spotter for the first sessions.</strong> Innova strongly recommends someone
+              with you at all times; Teeter says new users will need a spotter and to have one the first
+              time you fully invert.</li>
+            <li><strong>Check the ankle lock every time</strong>, with lace-up, flat-soled shoes.</li>
+            <li><strong>Keep sessions short.</strong> Teeter's user guide suggests starting with one- to
+              two-minute sessions and working up to three to five minutes; Innova's FAQ says most people
+              start with one to two minutes and that frequency matters more than duration.</li>
+            <li><strong>Return upright the way the manual says.</strong> Teeter's guide says to bring your
+              arms back to your sides one at a time, and if that does not bring you up, to bend your knees
+              and slide toward the foot end — never to lift your head or try to sit up. It also says to
+              pause just above horizontal so your body can readjust before you dismount.</li>
+            <li><strong>Stop if you feel pain, dizziness or light-headedness</strong>, return upright and
+              rest before you dismount.</li>
+            <li><strong>Keep children and pets away</strong>, and stop unsupervised use: Innova suggests a
+              padlock through the height tube, and Teeter says to fold and lay the table down.</li>
+            <li><strong>Inspect wear parts.</strong> Innova names the U-shaped ankle holder and the foam
+              rollers as the parts most likely to wear; replace them before using the table again.</li>
+          </ul>
+          <p>
+            If you are combining a table with other training, use it as a cool-down rather than right
+            before heavy lifting or running. Our guide to
+            <a href="/treadmill-warm-up-and-cool-down/" class="text-[#0F62FE] font-medium">warming up and cooling down</a>
+            covers the rest of that routine.
+          </p>`,
+    },
+    {
+      id: 'used-tables',
+      heading: 'Buying a Used Inversion Table',
+      html: `          <p>
+            Inversion tables are bulky, often bought on impulse and resold within a year, so the used
+            market is full of them. That is also where recalled tables turn up. Before you buy one:
+          </p>
+          <ul>
+            <li><strong>Find the model number</strong> — usually on a label under the backrest or seat,
+              or on the crossbar — and compare it with the recalls above: ICON's NordicTrack 831.14595.0
+              and Reebok RBBE1996.0 (2007); NordicTrack Revitalize 2.0 831.14895.0, Gold's Gym GGBE0867.0
+              and GGCCBE0867.0 and Weider Club WEBE0878.0 (2010); Stamina 55-1531 and 55-1536 (2008, by
+              serial range); and DICK'S Fitness Gear STE00059FG and STE00118FG (2014–2015).</li>
+            <li><strong>Walk away from a table with no label</strong> or a seller who cannot show you
+              one.</li>
+            <li><strong>Inspect the ankle system closely.</strong> Look for cracked cups, worn foam,
+              a bent pin or a lock that does not click positively. Ask whether the manual and the angle
+              strap or pin come with it.</li>
+            <li><strong>Check the frame welds and the main shaft</strong> for rust, cracks or bending.</li>
+            <li><strong>Remember the warranty.</strong> Teeter's five-year warranty runs from the original
+              retail purchase; a used table may have little or none left.</li>
+          </ul>`,
+    },
+    {
+      id: 'alternatives',
+      heading: 'Who Should Buy Something Else',
+      html: `          <p>
+            <strong>If your doctor says no</strong>, that is the answer. Ask what kind of movement or
+            stretching they would suggest instead; for many people with back pain, a physical therapist's
+            programme is the usual first step.
+          </p>
+          <p>
+            <strong>If you want a stretch without hanging upside down</strong>, floor-based mobility work
+            on a good mat, a foam roller or a stretch strap costs far less and needs no ankle lock. Our
+            guides to
+            <a href="/best-foam-rollers/" class="text-[#0F62FE] font-medium">foam rollers</a> and
+            <a href="/best-yoga-mats/" class="text-[#0F62FE] font-medium">yoga mats</a>
+            cover those.
+          </p>
+          <p>
+            <strong>If you already have a sturdy pull-up bar</strong>, gravity boots are the other way to
+            invert. They are harder to get into and out of, and there is no angle limit at all — you are
+            either upright or fully inverted — so they suit experienced users only, after the same
+            medical check. Our
+            <a href="/best-pull-up-bars/" class="text-[#0F62FE] font-medium">pull-up bar guide</a>
+            covers which bars are rated for hanging.
+          </p>
+          <p>
+            <strong>If you weigh more than 300 lb or are taller than 6 ft 6 in.</strong>, none of these
+            tables is rated for you. Do not use one outside its limits.
+          </p>
+          <p>
+            <strong>If you are building out a home gym</strong>, our
+            <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a>
+            and
+            <a href="/best-home-gym-accessories/" class="text-[#0F62FE] font-medium">home gym accessories guide</a>
+            put an inversion table in context with the equipment most people buy first.
+          </p>`,
+    },
+  ],
+  products: [
+    {
+      id: 'teeter-fitspine-x3',
+      name: 'Teeter FitSpine X3 Inversion Table',
+      category: 'Long-handled ankle lock and marked angle tether',
+      badge: 'Best Overall',
+      amazonUrl: 'https://www.amazon.com/s?k=Teeter+FitSpine+X3+Inversion+Table&tag=sktiger-20',
+      priceRange: '$449–$499',
+      specs: '300 lb max · 4 ft 8 in.–6 ft 6 in. · EZ-Reach ankle lock with secondary gravity lock · tether marked 20, 40, 60° · about 66 lb · 5-year warranty',
+      pros: [
+        'Ankle lock with an extra-long handle, so you secure it without bending far forward',
+        'Secondary gravity-activated catch on the ankle lock',
+        'Angle tether marked at 20, 40 and 60 degrees makes a gentle first session easy to set',
+        'Five-year warranty, against one year on the budget tables',
+        'Roller-hinge settings matched to body weight in the manual',
+      ],
+      cons: [
+        'More than three times the price of the Innova ITX9600',
+        'Long in use; Teeter lists it at about 81 in. long and 86.5 in. high when inverted',
+        'Its UL listing is Teeter’s claim; we could not check UL’s directory',
+      ],
+      bottomLine:
+        'The table to buy if your doctor has cleared you and you want the easiest lock to check and the clearest angle limit. Fit the tether at 20 degrees for the first sessions.',
+      description:
+        "The FitSpine X3 is the middle of Teeter's current range and the model independent reviewers most often recommend; BarBend names it its best inversion table overall. Teeter's product page and its Amazon listing agree on a user range of 4 ft 8 in. to 6 ft 6 in. and 300 lb, a product weight of about 66 lb and a five-year warranty; QVC's listing gives the same weight and limit but a 4 ft 9 in. minimum. The ankle system is what sets it apart from the cheaper tables: the Deluxe EZ-Reach lock has an extra-long stainless-steel handle so you can secure your ankles without bending far forward, a micro-adjusting closure, and a secondary gravity-activated lock. The EZ-Angle tether is marked at 20, 40 and 60 degrees, and can be removed for full inversion once you are experienced. Teeter's manual pairs your body weight with a roller-hinge setting, so heavier users get a slower, less responsive rotation. Teeter says the table is UL listed and FDA-registered; we explain what both mean, and what we could not verify, in the buying guide. On 19 October it was $449.99 on Teeter's Amazon store and $449 on sale at Teeter.com, from a $499 list price.",
+    },
+    {
+      id: 'innova-itx9600',
+      name: 'Innova ITX9600 Inversion Table',
+      category: 'Budget table with a six-hole angle pin',
+      badge: 'Best Budget',
+      amazonUrl: 'https://www.amazon.com/s?k=Innova+ITX9600+Inversion+Table&tag=sktiger-20',
+      priceRange: '$127–$131',
+      specs: '300 lb max · 4 ft 10 in.–6 ft 6 in. · six-hole angle pin (15, 30, 45, 60, 85, 90°) · reversible ankle holders · adjustable headrest · 1-year warranty',
+      pros: [
+        'A fraction of the price of any Teeter, and shipped by Amazon',
+        'Angle pin with labelled holes; nothing to stretch or fray',
+        'Adjustable headrest and a large padded backrest',
+        'Manual is unusually specific about contraindications, spotting and clearance',
+      ],
+      cons: [
+        'Ankle holders lock near your feet, so you bend forward to secure them',
+        'One-year warranty, and no UL or ETL listing claimed',
+        'Assembly takes time, and the nylon lock nuts need two wrenches',
+      ],
+      bottomLine:
+        'The budget pick for a doctor-cleared user who mostly wants a gentle stretch at 15 to 30 degrees and does not mind bending to set the ankle holders.',
+      description:
+        "Innova's ITX9600 has been on Amazon since 2010 and is the table budget roundups keep coming back to; BarBend calls it its best-value inversion table. Innova's owner's manual, its product page and the Amazon listing agree on a user range of 4 ft 10 in. to 6 ft 6 in., a 300 lb maximum and a one-year limited warranty. Instead of a strap, it limits the angle with a pin through a covered bracket: the manual lists six holes labelled 15, 30, 45, 60, 85 and 90, and says new users should start at 15 or 30. The ankle system uses front and rear U-shaped holders that Innova says can trade places; it is a simpler design than Teeter's, and you will bend forward to set it. Innova's \"True Balance\" system adjusts the headrest and height setting to find your centre of gravity. The manual asks for 2 ft of clear space on each side and 3 ft in front and behind, strongly recommends a spotter, and names the ankle holder and foam rollers as the parts that wear. Listings disagree slightly on the table's weight (52 or 54 lb), so it is not on the card. On 19 October two Amazon listings, both shipped by Amazon, were $126.66 and $131.07.",
+    },
+    {
+      id: 'teeter-fitspine-lx9',
+      name: 'Teeter FitSpine LX9 Inversion Table',
+      category: 'X3 features plus a raised boarding platform',
+      badge: 'Easiest On and Off',
+      amazonUrl: 'https://www.amazon.com/s?k=Teeter+FitSpine+LX9+Inversion+Table&tag=sktiger-20',
+      priceRange: '$479–$599',
+      specs: '300 lb max · 4 ft 8 in.–6 ft 6 in. · raised boarding platform and arched frame · EZ-Reach ankle lock · tether marked 20, 40, 60° · 5-year warranty',
+      pros: [
+        'Raised boarding platform and arched frame make getting on and off easier',
+        'Same long-handled ankle lock, secondary catch and marked tether as the X3',
+        'Storage caddy and extra-long stretch handles',
+        'Five-year warranty',
+      ],
+      cons: [
+        'The most expensive table here, for convenience features rather than safety ones',
+        'Heaviest of the Teeters; sources disagree on exactly how heavy',
+        'Garage Gym Reviews found some included extras, such as the nodes, of little use',
+      ],
+      bottomLine:
+        'Worth the extra over the X3 if stepping up into the ankle cups is awkward for you; otherwise the X3 does the same job for less.',
+      description:
+        "The LX9 is Teeter's top FitSpine model, and it is the X3 with additions aimed at easier access. Teeter's page and the Amazon listing agree on the same 4 ft 8 in. to 6 ft 6 in. and 300 lb limits as the X3 and a five-year warranty, and Garage Gym Reviews' hands-on review of the LX9 gives the same height and weight capacity. The meaningful addition is the raised boarding platform with an arched frame, which lets you step onto the foot platform rather than lift a foot into the ankle cups; Teeter also adds a storage caddy. The ankle lock — the Deluxe EZ-Reach with an extra-long handle and a secondary gravity lock — and the EZ-Angle tether marked at 20, 40 and 60 degrees are the same as the X3's. Garage Gym Reviews liked the ankle comfort and the long stretch handles, but thought the lumbar bridge and acupressure nodes added little, and suggested most people would be better served by a cheaper model. Teeter lists it at 73.6 lb, Amazon at 74.1 lb and that review at 73 lb, so we have left the weight off. On 19 October it was $479 on sale at Teeter.com and $549 on Amazon, from a $599 list price.",
+    },
+    {
+      id: 'teeter-fitspine-x2',
+      name: 'Teeter FitSpine X2 Inversion Table',
+      category: 'Extended ankle-lock handle at a lower price',
+      badge: 'Teeter for Less',
+      amazonUrl: 'https://www.amazon.com/s?k=Teeter+FitSpine+X2+Inversion+Table&tag=sktiger-20',
+      priceRange: 'About $270',
+      specs: '300 lb max · 4 ft 8 in.–6 ft 6 in. · EZ-Reach ankle lock with extended handle · adjustable angle tether · FlexTech bed',
+      pros: [
+        'Teeter frame and limits for well under the X3’s price on the day',
+        'Extended ankle-lock handle, so less bending than a pin closure',
+        'Angle tether that sets a maximum angle or detaches for full inversion',
+        'Same FlexTech backrest as the more expensive FitSpine models',
+      ],
+      cons: [
+        'Sold and shipped by Woot, not Teeter, on the listing we saw',
+        'No longer listed on Teeter’s own store, which suggests end-of-line stock',
+        'Teeter lists a secondary gravity lock for the X3’s Deluxe ankle system, not the X2’s',
+      ],
+      bottomLine:
+        'A good-value Teeter while stock lasts. Before buying, confirm the seller and that Teeter will honour the warranty for a purchase from it.',
+      description:
+        "The X2 sits between the entry X1 and the X3 in Teeter's X-series, and Teeter's X-series assembly manual shows the difference: the X1 uses a T-pin ankle lock, the X2 an EZ-Reach ankle lock with an extended handle, and the X3 the Deluxe EZ-Reach with a secondary gravity-activated lock. The X2 also gets the EZ-Angle tether that the manual lists for the X2 and X3. Teeter's manual and the Amazon listing agree on the 4 ft 8 in. to 6 ft 6 in. and 300 lb limits, and the listing gives a five-year warranty. The catch is where it is sold. On 19 October the Amazon listing was in stock at $269.99, but shipped and sold by Woot, Amazon's deals business, rather than by Teeter, and Teeter's own store no longer lists the X2. That usually means remaining stock rather than a current line. The price was so far below the X3 and X1 that it earned a card, but check who the seller is when you click through, and ask Teeter whether its warranty covers a purchase from that seller. We found no independent hands-on review of the X2 specifically.",
+    },
+    {
+      id: 'innova-itm4800',
+      name: 'Innova ITM4800 Heat and Massage Inversion Table',
+      category: 'Budget table with a heat and vibration lumbar pad',
+      badge: 'Best With Heat Pad',
+      amazonUrl: 'https://www.amazon.com/s?k=Innova+ITM4800+Heat+Massage+Inversion+Table&tag=sktiger-20',
+      priceRange: 'About $163',
+      specs: '300 lb max · 4 ft 10 in.–6 ft 6 in. · six-position angle pin · extended ankle holders · heat and vibration lumbar pad · 1-year warranty',
+      pros: [
+        'The ITX9600’s limits and angle pin with a heat and vibration lumbar pad',
+        'Longer ankle-locking handle than the ITX9600, per Innova',
+        'Three-position headrest and a thick backrest pad',
+        'Still a fraction of the price of a Teeter',
+      ],
+      cons: [
+        'Heat and vibration are comfort features; Innova’s pages make no medical claim for them',
+        'One-year warranty and no UL or ETL listing claimed',
+        'No independent hands-on review found; figures are from Innova and the Amazon listing',
+      ],
+      bottomLine:
+        'For a cleared user who likes the idea of warmth across the lower back while lying at a gentle angle. Otherwise, the ITX9600 does the same job for less.',
+      description:
+        "The ITM4800 is Innova's ITX9600 frame with a padded lumbar unit that adds heat and vibration, sold as a more comfortable way to lie on the table. Innova's product page and the Amazon listing agree on a user range of 4 ft 10 in. to 6 ft 6 in., a 300 lb maximum, a six-position adjustable angle pin and a one-year warranty, and on assembled dimensions of 46 x 28 x 63 in. Innova says the US version has a longer ankle-locking handle with front and rear U-shaped holders than the standard version sold in Canada, which reduces how far you bend to secure it, and a three-position headrest. Innova's pages describe the pad as offering multi-mode massage with auto and manual settings; they make no claim that it treats anything, and neither do we. Check how the pad is powered before you place the table, and keep any cable clear of the frame as it rotates. We found no independent hands-on review, so these figures rest on the maker and the retailer listing. On 19 October it was $162.99 on Amazon, shipped by Amazon.",
+    },
+  ],
+  faqs: [
+    {
+      q: 'Do inversion tables actually work for back pain?',
+      a: `The evidence is limited and mixed. A 2013 Cochrane review of 32 trials of traction for low back pain found it may make little or no difference to pain or function compared with sham or no treatment. A small 2012 pilot trial found fewer people awaiting disc surgery went on to have it after adding inversion, but no difference in pain or disability scores. Some users report temporary relief. Talk to your doctor first.`,
+    },
+    {
+      q: 'Who should not use an inversion table?',
+      a: `The makers' manuals list glaucoma and retinal problems, high blood pressure, heart or circulation conditions, recent stroke, blood thinners, hernias, osteoporosis, fractures or implanted orthopedic supports, ear or balance conditions, pregnancy, recent surgery and obesity, among others. Children should not use one. Both makers say not to use a table without a licensed physician's approval.`,
+    },
+    {
+      q: 'How long should you stay on an inversion table?',
+      a: `The makers suggest starting short. Teeter's user guide says to begin with one- to two-minute sessions and work up to three to five minutes, and Innova's FAQ says most people start with one to two minutes and that frequency matters more than duration. Stop at once if you feel pain or dizziness. Your doctor may advise something different, and their advice comes first.`,
+    },
+    {
+      q: 'Do you have to go fully upside down on an inversion table?',
+      a: `No. Both makers recommend starting at a shallow angle. Teeter's EZ-Angle tether is marked at 20, 40 and 60 degrees, and Innova's ITX9600 pin has holes labelled from 15 to 90, with 15 or 30 recommended for new users. Full inversion is optional and the manuals advise a spotter the first time you try it.`,
+    },
+    {
+      q: 'Is the Teeter inversion table FDA approved?',
+      a: `Not approved. The FDA's database shows a 510(k) clearance issued in December 2016 to STL International, Teeter's company, for its manual inversion table and related devices. Clearance means the FDA accepted the device as substantially equivalent to similar devices already sold; it is not approval and not proof that it relieves back pain. Teeter describes its tables as FDA-registered.`,
+    },
+    {
+      q: 'What is the weight limit on an inversion table?',
+      a: `Every table on this page is rated for 300 lb and users up to 6 ft 6 in.; the Teeters start at 4 ft 8 in. and the Innovas at 4 ft 10 in. Some tables are sold with a 350 lb rating, but the best known, the Ironman Gravity 4000, was not available on Amazon when we checked. Never use a table outside its rated limits.`,
+    },
+  ],
+  mistakesHeading: 'Common Mistakes With Inversion Tables',
+  mistakesIntro:
+    'Each of these is easy to avoid, and each one appears in the makers’ warnings for a reason.',
+  mistakes: [
+    {
+      title: 'Skipping the doctor because you feel fine',
+      body: `Several of the conditions the manuals list, such as high blood pressure, glaucoma and osteoporosis, often have no symptoms you would notice. Ask your doctor before the first session, and again if your health or medication changes.`,
+    },
+    {
+      title: 'Not checking the ankle lock every time',
+      body: `Every inversion recall on record, and the DICK'S Fitness Gear recall, involves ankles coming free. Check the lock is snug and fully engaged before you tip back, in lace-up, flat-soled shoes, every single session.`,
+    },
+    {
+      title: 'Going straight to full inversion',
+      body: `Set the tether or pin to a shallow angle before you get on, start with a minute or two, and have someone with you the first few times. A table balanced for someone else, or set too responsive, can tip you further and faster than you expect.`,
+    },
+    {
+      title: 'Buying a used table without the model number',
+      body: `Older recalled tables from NordicTrack, Reebok, Gold's Gym, Weider, Stamina and DICK'S Fitness Gear still circulate. Find the label, check it against the recall list, and walk away from a table with no label or a worn ankle system.`,
+    },
+  ],
+  relatedHeading: 'Related Home Gym Guides',
+  related: [
+    {
+      kicker: 'Recovery',
+      title: 'Best Recovery Tools for Weightlifters',
+      blurb: 'Foam rollers, massage guns and stretch straps, with what each can and cannot do.',
+      url: '/best-recovery-tools-for-weightlifters/',
+    },
+    {
+      kicker: 'Accessories',
+      title: 'Home Gym Accessories Worth Buying',
+      blurb: 'The bench, flooring and small kit that earn a place in a home gym, and what to skip.',
+      url: '/best-home-gym-accessories/',
+    },
+    {
+      kicker: 'Home Gym',
+      title: 'Home Workout Equipment Reviews',
+      blurb: 'Our best pick in every category of home equipment, and how to read an equipment review.',
+      url: '/home-workout-equipment-reviews/',
+    },
+  ],
+  bottomLine: [
+    `<strong class="text-white">If your doctor has cleared you, buy the Teeter FitSpine X3</strong>
+            and fit its tether at 20 degrees for the first weeks; its long-handled ankle lock and marked
+            angle strap are the features that matter most. On a budget, the Innova ITX9600 does the same
+            basic job for about $130 if you do not mind bending to set the ankle holders. The LX9 is for
+            people who find stepping into the ankle cups awkward, and the X2 is a bargain only while
+            stock lasts and the seller checks out.`,
+    `Keep expectations realistic: the research on traction for back pain is thin, and the relief
+            users describe tends to be temporary. Check the lock every time, stay inside the limits, and
+            stop if anything feels wrong. For other ways to look after a training body, see our
+            <a href="/best-recovery-tools-for-weightlifters/" class="text-[#5AA9FF] font-bold no-underline">recovery tools guide</a>.`,
+  ],
+};

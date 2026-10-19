@@ -270,7 +270,10 @@ export default {
             <strong>On a bike</strong>, falls are rare. The common complaints are saddle discomfort, knee
             irritation from poor setup, and lower-back or neck stiffness from a cramped or stretched
             riding position. A recumbent bike, with a backrest and a more reclined position, is often more
-            comfortable for people with back problems or balance concerns, and easier to get on and off.
+            comfortable for people with back problems or balance concerns, and easier to get on and off;
+            our guide to the
+            <a href="/best-recumbent-bikes/" class="text-[#0F62FE] font-medium">best recumbent bikes</a>
+            covers step-through frames and seat adjustment.
           </p>`,
     },
     {
@@ -287,7 +290,9 @@ export default {
             <strong>Choose an exercise bike if:</strong> knee or hip pain limits weight-bearing exercise
             and a clinician agrees cycling suits you; you have little space; you live above a neighbour;
             you want the lowest cost and maintenance; or you simply enjoy it more — which is a better
-            reason than it sounds.
+            reason than it sounds. Our
+            <a href="/best-exercise-bikes/" class="text-[#0F62FE] font-medium">best exercise bikes</a>
+            roundup names models worth considering.
           </p>
           <p>
             <strong>Consider both, or neither, if:</strong> you can only fit one machine and want variety,

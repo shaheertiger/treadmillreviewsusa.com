@@ -447,7 +447,9 @@ export default {
       heading: 'Who Should Buy Something Else',
       html: `          <p>
             <strong>If you will not train with a barbell</strong>, you do not need a rack. A pair
-            of adjustable dumbbells and a bench cover a great deal of strength training in a
+            of adjustable dumbbells and a
+            <a href="/best-weight-benches/" class="text-[#0F62FE] font-medium">good adjustable weight bench</a>
+            cover a great deal of strength training in a
             fraction of the space; see our guide to the
             <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">best adjustable dumbbells</a>.
           </p>

@@ -271,7 +271,9 @@ export default {
           <p>
             <strong>Choose a rowing machine if:</strong> you want whole-body conditioning with no impact;
             you are short of space and need to store the machine away; you have neighbours below; you want
-            lower cost and maintenance; and you are willing to learn the stroke properly.
+            lower cost and maintenance; and you are willing to learn the stroke properly. Our
+            <a href="/best-rowing-machines/" class="text-[#0F62FE] font-medium">best rowing machines</a>
+            roundup compares air, water and magnetic models and how to check the rail fits you.
           </p>
           <p>
             <strong>Consider both over time</strong> if you enjoy variety. They complement each other well:

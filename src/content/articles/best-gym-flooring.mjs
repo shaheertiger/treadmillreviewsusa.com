@@ -1,0 +1,616 @@
+export default {
+  slug: 'best-gym-flooring',
+  title: 'Best Gym Flooring (2026): Rubber, Foam and Stall Mats by Use',
+  description:
+    'Five home gym floors sold on Amazon, by use: rubber tiles, sheets and rolls for weights, EVA foam for bodyweight, plus stall mats, thickness, smell and cost.',
+  crumbLabel: 'Best Gym Flooring',
+  breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
+  kicker: 'Buying Guide',
+  updated: 'October 2026',
+  updatedLong: 'October 19, 2026',
+  published: '2026-10-19',
+  socialProof: '1.4k',
+  h1: ['Best Gym Flooring', 'for a Home Gym, by What You Do on It'],
+  standfirst:
+    'The right home gym floor depends on what lands on it: feet, a treadmill, dumbbells set down carefully, or a barbell dropped from overhead. Here are five floors sold on Amazon, the stall-mat alternative most home lifters start with, and how thickness, smell, the subfloor and damp change the answer.',
+  ctas: [
+    { label: 'See the Picks', href: '#picks' },
+    { label: 'Thickness by Use', href: '#thickness' },
+  ],
+  tags: ['best gym flooring', 'home gym flooring', 'rubber gym flooring', 'gym floor tiles', 'horse stall mats home gym'],
+  stickyCta: { text: 'See Our Top Picks', link: '#picks' },
+  lead: `Gym flooring is the purchase that protects every other purchase. It stops a set-down dumbbell
+          cracking a tile, keeps a bench from sliding, takes the edge off the noise, and gives you a
+          surface that grips when it is sweaty. It is also easy to get wrong: soft foam under heavy
+          weights, thin rubber under a barbell that gets dropped, or a beautiful rubber floor laid over
+          a damp basement slab. The picks below are sorted by the job they do, and the guide after them
+          covers thickness, smell, subfloors, moisture and what each option costs per square foot.`,
+  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
+          floors, and no figure on this page is our own measurement. On 19 October 2026 we confirmed each
+          product as listed on Amazon US, and checked its size, thickness, material and warranty against
+          the maker's own product page and at least one other source: the Amazon listing, a second
+          retailer or independent coverage. A figure appears on a card only where those sources agree;
+          where they did not, we left it out and say so. Rubber-Cal's figures rest on Rubber-Cal's site
+          and its Amazon listings, some of which Rubber-Cal sells itself, so treat them as maker
+          figures. Every brand was checked against the US Consumer Product Safety Commission's recall
+          database. Prices and costs per square foot are the listed prices we saw on that date divided by
+          the listed coverage, are approximate, and change often. We earn a commission if you buy through
+          the Amazon links on this page; it does not change which products we list or what we say about
+          them. Floor loading is general guidance only: for an upstairs room, an old or unusual
+          structure, or heavy racks and plates, ask a qualified professional.`,
+  sections: [
+    {
+      id: 'quick-picks',
+      heading: 'Our Picks at a Glance',
+      html: `          <p>
+            <strong>The best gym flooring for most home gyms is solid rubber at least 1/2 inch thick
+            wherever weights are lifted or set down</strong>, and either thinner rubber or dense foam
+            everywhere else. On Amazon, that means interlocking 3/4-inch rubber tiles or a heavy 1/2-inch
+            mat for the lifting area, a rolled rubber floor for a whole room, and EVA foam tiles only for
+            bodyweight work, stretching and light cardio.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead><tr>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Pick</th>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Best for</th>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Why</th>
+            </tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rubber-Cal Eco-Sport 3/4 in. tiles</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Free weights, modular</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Thick interlocking rubber you can lift and take with you</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rubber-Cal Maxx-Tuff mat, 4 x 6 ft</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A lifting zone on a budget</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Heavy 1/2-inch sheet, the stall-mat idea sold on Amazon</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rubber-Cal Elephant Bark roll</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Covering a whole room</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4 ft wide rolled rubber in three thicknesses</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">ProsourceFit Puzzle Mat, 1/2 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lowest cost per square foot</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $1.10 a sq ft of EVA foam for bodyweight and stretching</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">ProsourceFit Weaved Puzzle Mat, 1 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Thick cushioning, no rubber smell</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1-inch foam for floor work, kids' spaces and light cardio</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horse stall mats (Tractor Supply)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Alternative, not on Amazon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3/4-inch rubber for well under $3 a sq ft, picked up in store</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A deadlift platform</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Dropping a loaded barbell</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Plywood plus rubber spreads the impact flooring alone cannot</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            If you deadlift heavy or drop weights from overhead, flooring is only half the answer; our
+            <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">lifting platform guide</a>
+            covers the other half. If a treadmill is the main thing on the floor, a mat sized to the machine
+            is usually better than a whole floor — see our
+            <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">treadmill mat picks</a>.
+            The <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> collects every
+            guide in this series.
+          </p>`,
+    },
+    {
+      id: 'picks',
+      heading: 'The 5 Best Home Gym Flooring Options',
+      products: true,
+      html: `          <p>
+            Each card gives the size, thickness and material we could confirm from two sources, the
+            price range we saw on 19 October, and the job the floor suits. The first three are rubber,
+            for anywhere weights touch the floor; the last two are EVA foam, for everything else.
+          </p>
+          <p>
+            Rubber-Cal fills three of the five slots because it is the rubber flooring brand with the
+            widest current range on Amazon US, from tiles to sheets to rolls. Several better-known
+            flooring makers sell mainly from their own sites; the
+            <a href="#how-we-chose" class="text-[#0F62FE] font-medium">how we chose</a> section
+            names them.
+          </p>`,
+    },
+    {
+      id: 'how-we-chose',
+      heading: 'How We Chose This Flooring',
+      html: `          <p>
+            We have not tested these floors. They were chosen from makers' product pages, the Amazon
+            listings themselves, recall records and independent coverage, chiefly Garage Gym Reviews'
+            home gym flooring guide (updated August 2026) and its guide to flooring thickness, which
+            draws on an Olympic weightlifter and former gym owner.
+          </p>
+          <p>
+            <strong>One product per job.</strong> We started from what the floor has to do — take
+            set-down and dropped weights, cover a whole room, or cushion bodyweight work — and looked for
+            a product that was listed on Amazon US on 19 October 2026 and whose maker publishes enough
+            detail to cross-check. We then compared size, thickness, material and warranty between the
+            maker's page and the Amazon listing, and against independent coverage where it existed.
+            ProsourceFit's 1/2-inch puzzle mat is the one product here with a hands-on independent
+            review: Garage Gym Reviews' figures for it (1/2 inch, 24 sq ft per six tiles, about $1.12 a
+            square foot, lifetime warranty on defects) match ProsourceFit's own.
+          </p>
+          <p>
+            <strong>Recalls.</strong> We searched the CPSC database for Rubber-Cal, ProsourceFit,
+            BalanceFrom, American Floor Mats, Amazon Basics and Tractor Supply, and for flooring terms
+            such as stall mat, rubber mat, gym mat, puzzle mat and floor tiles. We found no recall of any
+            gym flooring product, from those brands or any other.
+          </p>
+          <p>
+            <strong>Left out, and why.</strong> Garage Gym Reviews' top flooring picks — Living.Fit
+            rolls and tiles, Flooring Inc rolls and Second Skin's Stomp Mat — are sold mainly from the
+            makers' own sites, so they are not carded here, but they are worth a look if you are happy to
+            buy direct; that guide put Living.Fit tiles at about $5 to $10 a square foot, Flooring Inc's
+            8 mm rolls at about $2.17 to $3, and Second Skin's mats at $4.17 to $7.50. American Floor
+            Mats' site would not load for us, so we could not confirm a current product to match an
+            Amazon listing. BalanceFrom's own store now sells its foam tiles under the Fitvids name,
+            which made it hard to match listings with confidence. Amazon Basics foam tiles are
+            similar to the ProsourceFit tiles but we found no maker specification page to check them
+            against. Rubber-Cal's Armor-Lock tiles were left out because Rubber-Cal's page gives them as
+            3/8 inch thick while describing them as 8 mm, and its own price for a 16-pack was nearly
+            three times Amazon's, so we could not tell which product the listing was. Horse stall mats
+            from Tractor Supply are covered below rather than carded, because they are not sold on
+            Amazon.
+          </p>`,
+    },
+    {
+      id: 'thickness',
+      heading: 'How Thick Should Home Gym Flooring Be?',
+      html: `          <p>
+            Thickness is the first decision, and it follows from the heaviest thing that will hit the
+            floor and how hard it will hit. These bands follow Garage Gym Reviews' thickness guidance and
+            the makers' own descriptions; they are rules of thumb, not engineering figures.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead><tr>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">What you do</th>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Typical thickness</th>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Material</th>
+            </tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Yoga, stretching, bodyweight</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1/2 to 1 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">EVA foam, or a mat</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Cardio machines</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3/16 to 3/8 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rubber roll or a machine mat</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Dumbbells and kettlebells set down</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3/8 to 1/2 in. at least</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Solid rubber</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Barbell work, occasional drops</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1/2 to 3/4 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Solid rubber tiles or sheets</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Heavy deadlifts, Olympic lifts</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3/4 in. plus a platform</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rubber over plywood</td></tr>
+            </tbody>
+          </table></div>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Cardio</h3>
+          <p>
+            A treadmill, bike, rower or elliptical does not drop anything; the floor's job is to protect
+            the surface from the machine's feet, catch sweat and dust, and take a little vibration out.
+            Thin rubber or a machine-specific mat does that, and a mat sized to the machine is usually the
+            better buy than a whole floor. Our guide to
+            <a href="/how-thick-should-a-treadmill-mat-be/" class="text-[#0F62FE] font-medium">how thick a treadmill mat should be</a>
+            goes through the bands by floor type, and if the problem is noise reaching a room below,
+            <a href="/best-treadmill-anti-vibration-pads/" class="text-[#0F62FE] font-medium">anti-vibration pads under the feet</a>
+            do more than extra thickness across the whole floor. Do not put a treadmill on soft foam:
+            the feet sink unevenly and the frame can rock.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Free weights</h3>
+          <p>
+            Once weights touch the floor, use solid rubber. Garage Gym Reviews' Caine Wilkes, an
+            Olympian and former gym owner, recommends half-inch rubber as a minimum for heavy lifting or
+            dropping from overhead and says he prefers 3/4 inch; the same guide suggests erring on the
+            thick side when unsure. For dumbbells that are lowered rather than dropped, 3/8 to 1/2 inch is
+            a common choice. If your dumbbells are adjustable, do not drop them at all, whatever the
+            floor — our
+            <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">adjustable dumbbell guide</a>
+            explains why.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Dropping weights</h3>
+          <p>
+            Flooring alone does not spread the impact of a loaded barbell dropped from the hips or from
+            overhead. A platform does: a common home build is a layer of 3/4-inch plywood under 3/4-inch
+            rubber, about 1.5 inches in all, which is the build Wilkes describes for his own. Our
+            <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">lifting platforms guide</a>
+            compares bought and DIY platforms, and covers why a platform on a suspended floor upstairs does
+            not make dropping safe.
+          </p>`,
+    },
+    {
+      id: 'materials',
+      heading: 'Rubber, Foam, Stall Mats and the Rest',
+      html: `          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Interlocking rubber tiles</h3>
+          <p>
+            Square tiles, usually 20 to 24 inches, with jigsaw edges or connecting pins. They are the
+            easiest rubber to carry upstairs, cut around a door frame or take to a new house, and you can
+            replace or rotate a damaged tile. The trade-offs are cost per square foot, which is usually the
+            highest of any rubber option, and seams, which can lift at the edges until the tiles settle.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Rubber sheets and stall mats</h3>
+          <p>
+            Big, heavy rectangles, typically 4 x 6 feet. Horse stall mats are the home lifter's classic:
+            3/4-inch recycled rubber at a low price per square foot. They are heavy — Garage Gym Reviews
+            puts Tractor Supply's at around 100 lb a sheet — have a textured surface that grips but holds
+            dust, and are the smelliest option when new. A 4 x 6 ft sheet covers a bench and the space
+            around it; two side by side make an 8 x 6 ft lifting area.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Rolled rubber</h3>
+          <p>
+            Rolls, often 4 feet wide and cut to length, give the most seamless finish over a whole room
+            and are typically thinner, from about 3/16 to 3/8 inch. They are bulky to handle and need
+            trimming, and seams are usually taped. Garage Gym Reviews' tester noted that edges may need
+            tape to lie flat through temperature swings.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">EVA foam puzzle tiles</h3>
+          <p>
+            Light, cheap and comfortable, with no rubber smell. Foam is the right floor for yoga,
+            stretching, bodyweight circuits and a children's play area, and the wrong one for weights:
+            it compresses under load, dents under machine feet, and lets a dropped dumbbell punch through
+            to the floor beneath. ProsourceFit itself notes that its foam "may compress slightly under
+            heavy objects." A bench on foam is also less stable.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Vinyl, carpet tiles and turf</h3>
+          <p>
+            Vinyl or PVC mats suit machine footprints. Carpet tiles make a warm, quiet surface for
+            bodyweight work but hold sweat and are not for weights. Artificial turf is for sled pushes and
+            agility drills in a large space, and is a luxury in most home gyms.
+          </p>`,
+    },
+    {
+      id: 'stall-mats',
+      heading: 'Horse Stall Mats: The Alternative Most Lifters Start With',
+      html: `          <p>
+            Before you buy any tile or roll, price a stall mat. Tractor Supply's 4 x 6 ft, 3/4-inch mat is
+            the one most home gym guides recommend, and it is not sold on Amazon. Garage Gym Reviews' guide
+            describes it as 100% recycled vulcanized rubber with a five-year limited warranty, at about
+            $2.38 a square foot, and gives it its top marks for durability and value. Its founder says he
+            has used stall mats in four garages and dropped weights from overhead on them without
+            problems.
+          </p>
+          <p>
+            The drawbacks are the ones every stall mat shares. They weigh around 100 lb each, so you need
+            a vehicle and a second person; they smell strongly when new; and the surface is textured
+            rather than smooth. We could not load Tractor Supply's own product page on 19 October, so
+            check the current price, stock at your local store and the warranty there. Other farm supply
+            stores sell similar mats.
+          </p>
+          <p>
+            On Amazon, the closest equivalent is a heavy rubber sheet such as the Rubber-Cal Maxx-Tuff on
+            this page. It is thinner than a 3/4-inch stall mat and usually costs more per square foot, but
+            it is delivered.
+          </p>`,
+    },
+    {
+      id: 'smell',
+      heading: 'Rubber Smell and Off-Gassing',
+      html: `          <p>
+            Most rubber gym flooring is made from recycled tyre rubber, and when new it smells — strongly,
+            in the case of stall mats. Garage Gym Reviews scored Tractor Supply's stall mats 2 out of 5 for
+            smell and Living.Fit's interlocking tiles 3 out of 5, while rating some vulcanized rolls as
+            noticeably milder. The smell fades with time and air, but it can linger for weeks indoors.
+          </p>
+          <ul>
+            <li><strong>Air it out first.</strong> Unroll or spread new rubber in a garage, on a porch or
+              outdoors for several days before it goes into a living space, as home gym reviewers
+              commonly recommend.</li>
+            <li><strong>Ventilate.</strong> Open windows and run a fan for the first weeks indoors,
+              particularly in a basement.</li>
+            <li><strong>Wash it.</strong> A mild soap and water clean removes surface residue; avoid
+              solvents and oil-based cleaners, which can damage rubber.</li>
+            <li><strong>Choose the material if smell matters.</strong> Vulcanized rubber is generally
+              described as lower-odour than bonded crumb, and EVA foam has no rubber smell at all.</li>
+            <li><strong>Ask the maker</strong> for emissions or indoor-air certification if anyone in
+              the house is sensitive to smells or has asthma. We did not find such certification claimed
+              for the products on this page.</li>
+          </ul>
+          <p>
+            Some rubber products can also discolour vinyl, laminate or pale wood underneath. If the floor
+            below matters, check a corner after a couple of weeks, or put a breathable underlay between
+            them; the maker can tell you what it recommends.
+          </p>`,
+    },
+    {
+      id: 'subfloor',
+      heading: 'Concrete, Carpet, Wood or Upstairs: Your Subfloor Matters',
+      html: `          <p>
+            <strong>Concrete</strong> in a garage or basement is the easiest base: flat, strong and
+            indifferent to weight. Rubber protects it from chips and protects your equipment from it.
+            Garage Gym Reviews notes that garage and basement slabs are often, but not always, reinforced,
+            and that an unreinforced slab is another reason to choose thicker flooring.
+          </p>
+          <p>
+            <strong>Carpet</strong> is the awkward one. Foam tiles on carpet move and feel unstable, and
+            a bench or rack on carpet rocks. For light work, a firm rubber mat over low-pile carpet is
+            workable. For a lifting area, the usual answer is a rigid layer — plywood, or a platform —
+            under the rubber, or lifting the carpet in that corner. Our guide to
+            <a href="/treadmill-on-carpet/" class="text-[#0F62FE] font-medium">putting a treadmill on carpet</a>
+            covers the machine side of the same problem.
+          </p>
+          <p>
+            <strong>Wood and laminate</strong> dent and scratch, so they need protection from weights
+            more than concrete does, and are the surfaces most at risk from rubber staining. Use solid
+            rubber where weights land, and check underneath after a few weeks.
+          </p>
+          <p>
+            <strong>Upstairs rooms.</strong> Rubber flooring reduces impact noise; it does not change how
+            much weight a floor can carry. A bench, dumbbells and a lifter are within what most domestic
+            floors handle, but a rack, loaded bar and stacks of plates concentrated in a corner are
+            different. That is general guidance, not an assessment of your house: for anything heavy
+            upstairs, ask a structural engineer or qualified builder. Our
+            <a href="/where-to-put-a-treadmill/" class="text-[#0F62FE] font-medium">guide to where to put a treadmill</a>
+            covers the same question for cardio machines.
+          </p>`,
+    },
+    {
+      id: 'moisture',
+      heading: 'Moisture: Basements and Garages',
+      html: `          <p>
+            Concrete on or below ground can carry moisture up from the soil. Laid over a damp slab, rubber
+            or foam traps that moisture, and the result is mould, mildew and a smell that is not the
+            rubber.
+          </p>
+          <ul>
+            <li><strong>Check the slab first.</strong> A simple, widely used check is to tape a square of
+              clear plastic sheet, about 2 x 2 ft, tightly to the bare concrete for a day or two. Droplets
+              or a dark patch under the plastic suggest moisture is coming through; condensation on top
+              suggests humid air instead. It is a rough guide, not a measurement.</li>
+            <li><strong>Fix the cause.</strong> A dehumidifier helps with humid air; standing water,
+              seepage or flooding is a job to sort out before any flooring goes down.</li>
+            <li><strong>Prefer flooring you can lift.</strong> Interlocking tiles and loose-laid sheets can
+              be pulled up to dry the slab; a glued-down floor cannot. Rubber-Cal says double-sided tape
+              suits a temporary installation and glue a permanent one; over a slab with any doubt about
+              damp, stay temporary.</li>
+            <li><strong>Lift and check occasionally</strong>, especially after a wet season, and dry
+              anything that is damp underneath.</li>
+          </ul>
+          <p>
+            Garages add temperature swings, which make rolls expand and contract and seams lift. Our
+            <a href="/treadmill-in-garage/" class="text-[#0F62FE] font-medium">garage treadmill guide</a>
+            covers damp, cold and heat, which affect a garage gym in the same way.
+          </p>`,
+    },
+    {
+      id: 'cost',
+      heading: 'What Gym Flooring Costs per Square Foot',
+      html: `          <p>
+            Compare flooring per square foot, not per pack. The figures below are approximate, worked out
+            from the listed prices and coverage we saw on 19 October 2026, or taken from Garage Gym
+            Reviews where noted. They change often.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead><tr>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Flooring</th>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Approx. cost per sq ft</th>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">How we got it</th>
+            </tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1/2 in. EVA foam tiles</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $1.00–$1.25</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">ProsourceFit packs, 24 to 144 sq ft</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1 in. EVA foam tiles</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2.10–$2.30</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">ProsourceFit 6- and 18-tile packs</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rolled rubber, 3/16 to 1/4 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2.25–$3.60</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rubber-Cal Elephant Bark listings</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3/4 in. stall mat</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $2.40</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Garage Gym Reviews, Tractor Supply</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1/2 in. rubber sheet</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$3.30–$5.80</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rubber-Cal Maxx-Tuff, Amazon and Rubber-Cal's store</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3/4 in. interlocking rubber tiles</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$9–$11.50</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rubber-Cal Eco-Sport, Amazon and Rubber-Cal's store</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            <strong>Working out how much you need.</strong> Measure the area, multiply length by width,
+            and add about 10% for cuts and mistakes on rolls and sheets. Remember that interlocking tiles
+            are sold by tile, not by area, and that the coverage printed on a pack sometimes rounds up:
+            five 19.5-inch tiles cover about 13.2 square feet by our arithmetic, while one Amazon listing
+            says 14. Borders, ramps and edge strips are often sold separately.
+          </p>
+          <p>
+            <strong>Example.</strong> A typical dumbbell-and-bench corner of 8 x 6 ft is 48 square feet:
+            two stall mats, or roughly $115 at Garage Gym Reviews' per-square-foot figure; about $160 to
+            $280 in 1/2-inch rubber sheets; or about $440 to $545 in 3/4-inch interlocking tiles. The same
+            area in 1/2-inch foam is about $55, but foam is the wrong floor for that job.
+          </p>`,
+    },
+    {
+      id: 'install',
+      heading: 'Installing and Looking After a Gym Floor',
+      html: `          <ul>
+            <li><strong>Let it relax.</strong> Rolls and new tiles arrive curled. Lay them flat for a day
+              or two, ideally at room temperature, before you fit them; Garage Gym Reviews' tester found
+              interlocking rubber edges sat flatter once the tiles had settled.</li>
+            <li><strong>Cut with a sharp utility knife</strong> and a straightedge, scoring several times
+              rather than forcing one cut. Thick rubber is hard work; a new blade helps.</li>
+            <li><strong>Start from the straightest wall</strong> and work out, leaving a small gap at the
+              walls for expansion in a garage.</li>
+            <li><strong>Tape, do not glue, unless it is permanent.</strong> Double-sided carpet tape along
+              roll seams keeps them flat and can be removed.</li>
+            <li><strong>Clean simply.</strong> Sweep or vacuum grit, which abrades rubber, then mop with
+              warm water and a little mild soap; ProsourceFit gives the same advice for its foam tiles.</li>
+            <li><strong>Rotate tiles</strong> under the heaviest use so wear spreads evenly, and replace
+              any tile that has split.</li>
+          </ul>
+          <p>
+            If you are kitting out the rest of the room, our guides to
+            <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat racks</a>,
+            <a href="/best-home-gym-accessories/" class="text-[#0F62FE] font-medium">home gym accessories</a>
+            and
+            <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">cardio machines for home</a>
+            cover what usually goes on top of it.
+          </p>`,
+    },
+  ],
+  products: [
+    {
+      id: 'rubber-cal-eco-sport-tiles',
+      name: 'Rubber-Cal Eco-Sport 3/4 in. Interlocking Rubber Tiles',
+      category: 'Thick interlocking rubber tiles for free weights',
+      badge: 'Best for Free Weights',
+      amazonUrl: 'https://www.amazon.com/s?k=Rubber-Cal+Eco-Sport+3%2F4+inch+Interlocking+Rubber+Tiles&tag=sktiger-20',
+      priceRange: '$121–$150 per 5 tiles',
+      specs: '19.5 x 19.5 in. tiles · 3/4 in. thick · recycled rubber · four colours · packs from 5 tiles',
+      pros: [
+        'The 3/4-inch thickness experienced lifters recommend for barbell work',
+        'Tiles lift out, so you can dry the slab, replace a damaged tile or move house with it',
+        'Small enough to carry upstairs a few tiles at a time, unlike a 100 lb stall mat',
+        'Rubber-Cal sells it in black and three colours',
+      ],
+      cons: [
+        'By far the most expensive floor here per square foot, at roughly $9 to $11.50',
+        'Recycled rubber smell when new; air the tiles out first',
+        'Coverage figures on listings round up, so count tiles rather than trusting the pack',
+      ],
+      bottomLine:
+        'For a weights area where you want thick rubber you can lift, cut and take with you. On a budget, a stall mat or the Maxx-Tuff sheet covers the same job for less.',
+      description:
+        "Eco-Sport is Rubber-Cal's thick interlocking tile, and the 3/4-inch version is the one to put where dumbbells are set down or a barbell is occasionally dropped. Rubber-Cal's product page and the Amazon listing agree on 19.5 x 19.5-inch tiles, 3/4 inch thick, in recycled rubber; Rubber-Cal gives a hardness of 60 Shore A and says the tiles join with connecting pins in drilled holes along their sides, and can be glued down for a permanent installation. The main reason to pay for tiles rather than a sheet is flexibility: a tile is light enough to carry, easy to cut around a doorway, and can be lifted to check a damp slab or replaced if it splits. The cost is the price. On 19 October a 5-tile pack was $149.63 on Amazon, sold by Rubber-Cal, and Rubber-Cal's own store listed a 25-tile pack at $605.63, about $121 per five; by our arithmetic that is roughly $9 to $11.50 a square foot. One listing gives a 5-pack's coverage as 14 sq ft, slightly more than five 19.5-inch tiles cover, so plan by tile count. Rubber-Cal's warranty page gives three years on its flooring.",
+    },
+    {
+      id: 'rubber-cal-maxx-tuff',
+      name: 'Rubber-Cal Maxx-Tuff Heavy-Duty Mat (4 x 6 ft, 1/2 in.)',
+      category: 'Heavy rubber sheet for a lifting zone',
+      badge: 'Best Value Rubber',
+      amazonUrl: 'https://www.amazon.com/s?k=Rubber-Cal+Maxx-Tuff+Heavy+Duty+Mat+4+x+6&tag=sktiger-20',
+      priceRange: '$80–$140',
+      specs: '4 x 6 ft · 12 mm (just under 1/2 in.) · SBR and reclaimed rubber · honeycomb top, diamond-pattern underside · 3-year warranty',
+      pros: [
+        'The stall-mat idea, delivered: one heavy sheet covers a bench and the space around it',
+        'Rubber-Cal says it is designed for deadlift zones where weights are dropped repeatedly',
+        'Diamond-pattern underside grips the floor beneath',
+        'Also sold in 2 x 3 and 3 x 4 ft sizes',
+      ],
+      cons: [
+        'Thinner than a 3/4-inch stall mat, and usually more per square foot',
+        'Heavy and awkward to move; Rubber-Cal lists the 4 x 6 ft sheet at 80 lb',
+        'On the day, Amazon showed it through other buying options rather than a main buy button',
+      ],
+      bottomLine:
+        'For a lifting corner when you cannot get to a farm store. Two side by side make an 8 x 6 ft area under a bench or a pair of dumbbells.',
+      description:
+        "If you want a stall mat but cannot collect one, a heavy rubber sheet delivered to the door is the alternative, and Rubber-Cal's Maxx-Tuff is the one we could confirm on Amazon. Rubber-Cal's product page and the Amazon listing agree on a 4 x 6 ft sheet, 12 mm thick (just under half an inch), in SBR and reclaimed rubber with a honeycomb-textured top and a diamond-pattern underside, and on a three-year warranty. Rubber-Cal gives the 4 x 6 ft sheet's weight as 80 lb and its hardness as 60 Shore A, and says the mat is recommended for areas such as a deadlift zone where heavy weights are dropped repeatedly; that is the maker's description, and for heavy barbell drops we would still add a platform. It is thinner than a 3/4-inch stall mat, so it gives a little less protection, and on our figures it costs more per square foot. On 19 October the Amazon listing for the 4 x 6 ft size was $79.99, with stock shown through other buying options rather than a main buy button, while Rubber-Cal's own store listed the same size at $140. Check the seller and size before ordering.",
+    },
+    {
+      id: 'rubber-cal-elephant-bark',
+      name: 'Rubber-Cal Elephant Bark Rubber Flooring Roll',
+      category: 'Rolled rubber for a whole room',
+      badge: 'Best Rolled Rubber',
+      amazonUrl: 'https://www.amazon.com/s?k=Rubber-Cal+Elephant+Bark+Rubber+Flooring+Roll&tag=sktiger-20',
+      priceRange: '$143–$179 per roll',
+      specs: '4 ft wide · 3/16, 1/4 or 3/8 in. thick · lengths cut to order · recycled rubber with EPDM · 3-year warranty',
+      pros: [
+        'A near-seamless floor over a whole room, cut to length',
+        'Three thicknesses, from a light cardio floor to a firmer weights floor',
+        'Rubber-Cal says the EPDM content gives good UV resistance, useful in a garage',
+        'Can be loose-laid, taped or glued',
+      ],
+      cons: [
+        'Too thin on its own where barbells are dropped',
+        'Bulky to handle and needs cutting and taping at the seams',
+        'Rubber smell when new, like most recycled rubber',
+      ],
+      bottomLine:
+        'For covering a whole garage or basement gym, especially around cardio machines and bodyweight areas. Add thick tiles or a sheet where the weights live.',
+      description:
+        "Elephant Bark is Rubber-Cal's rolled rubber floor, made from recycled tyre rubber with EPDM flecks. Rubber-Cal's product page and its Amazon listings agree on a 4 ft width, 3/16-inch (5 mm), 1/4-inch (6.4 mm) and 3/8-inch (9.5 mm) thicknesses, and lengths cut to order; Rubber-Cal gives rolls up to 50 ft, a hardness of 60 Shore A and 83% post-consumer recycled content, and its warranty page and the Amazon listing both give a three-year warranty. The 3/16 and 1/4-inch rolls suit a room of cardio machines and bodyweight work; for weights, add thicker rubber where they land. Rubber-Cal says double-sided tape is best for a temporary installation and glue for a permanent one, and that the roll's weight is enough to keep it flat on the surface. On 19 October Amazon listed a 3/16-inch, 4 x 20 ft roll at $179, sold by Amazon, and a 1/4-inch, 4 x 10 ft roll at $143.50, sold by Rubber-Cal — about $2.25 and $3.60 a square foot. Lengths and prices vary widely, so price the exact size you need.",
+    },
+    {
+      id: 'prosourcefit-puzzle-mat-half-inch',
+      name: 'ProsourceFit Exercise Puzzle Mat (1/2 in.)',
+      category: 'Budget EVA foam tiles for bodyweight work',
+      badge: 'Best Budget',
+      amazonUrl: 'https://www.amazon.com/s?k=ProsourceFit+Exercise+Puzzle+Mat+1%2F2+inch&tag=sktiger-20',
+      priceRange: '$27–$30 per 6 tiles',
+      specs: '24 x 24 x 1/2 in. EVA foam tiles · 6 tiles cover 24 sq ft · end borders included · limited lifetime warranty on defects',
+      pros: [
+        'About $1.10 a square foot, the cheapest floor here by a wide margin',
+        'Light, quick to fit and lift, and no rubber smell',
+        'Warm and comfortable for floor exercises, stretching and kids’ play',
+        'Packs of 6, 12 or 36 tiles, with border pieces',
+      ],
+      cons: [
+        'Not for weights: it compresses, dents and lets a dropped dumbbell through',
+        'Less slip-resistant and harder to keep clean than rubber, per Garage Gym Reviews',
+        'Shifts on carpet and under machine feet',
+      ],
+      bottomLine:
+        'The floor for a yoga, stretching or bodyweight corner, or a play area. Keep weights and machines on rubber.',
+      description:
+        "ProsourceFit's half-inch puzzle mat is the cheap, light way to cover a floor for bodyweight work, and the one product here with a hands-on independent review. ProsourceFit's product page and the Amazon listing agree on 24 x 24-inch EVA foam tiles, half an inch thick, six to a pack covering 24 square feet with end borders included, and on a limited lifetime warranty against manufacturing defects. Garage Gym Reviews, whose content director has owned a set for years, reports the same thickness and pack sizes, calls them very easy to install, and works the price out at about $1.12 a square foot. It is also clear about the limits: foam is less durable than rubber, porous and harder to clean, not very slip-resistant, and it may compress under heavy weights, so it does not recommend the tiles as a floor for lifting. ProsourceFit's own listing notes that the foam may compress slightly under heavy objects. On 19 October the six-tile pack was $26.99 on Amazon, shipped and sold by Amazon, and ProsourceFit's own store listed a six-tile, half-inch puzzle mat at $26.99 to $29.99 depending on colour.",
+    },
+    {
+      id: 'prosourcefit-weaved-puzzle-mat-1-inch',
+      name: 'ProsourceFit Weaved Pattern Extra Thick Puzzle Mat (1 in.)',
+      category: 'Thick EVA foam for floor work and kids’ spaces',
+      badge: 'Thickest Cushioning',
+      amazonUrl: 'https://www.amazon.com/s?k=ProsourceFit+Weaved+Pattern+Extra+Thick+Puzzle+Mat+1+inch&tag=sktiger-20',
+      priceRange: 'About $55 per 6 tiles',
+      specs: '24 x 24 x 1 in. EVA foam tiles · 6 tiles cover 24 sq ft · 12 end borders included',
+      pros: [
+        'Twice the thickness of the half-inch tiles, for knees and backs on the floor',
+        'No rubber smell, so it suits bedrooms and living spaces',
+        'Takes the edge off jumping and plyometric landings',
+        'Also sold in 18-tile packs covering 72 sq ft',
+      ],
+      cons: [
+        'Still foam: soft and unstable under benches, racks and heavy weights',
+        'Twice the price per square foot of the half-inch tiles',
+        'No independent hands-on review found; figures are ProsourceFit’s and Amazon’s',
+      ],
+      bottomLine:
+        'For a cushioned floor-exercise or play area where comfort matters more than durability. Not a weights floor.',
+      description:
+        "This is the thickest foam in ProsourceFit's range, and the right choice if you want real cushioning for floor work rather than just a cover for the floor. ProsourceFit's page and the Amazon listing agree on 24 x 24-inch tiles, an inch thick, six to a pack covering 24 square feet, with twelve end borders. ProsourceFit describes it as high-density EVA built for high impact and says it can withstand ultra-heavy exercise equipment; independent reviewers are consistently more cautious about foam under weights, and so are we — use it for bodyweight circuits, stretching, jump training and children's play, and keep benches, racks and dumbbells on rubber. The thicker foam also makes a floor less stable underfoot for balance work. Like the half-inch tiles, it has no rubber smell and can be cleaned with warm water and mild soap. On 19 October the six-tile pack was $54.99 on ProsourceFit's store and on Amazon, where it was in stock and sold by Amazon; an 18-tile pack covering 72 square feet was $149.99 on ProsourceFit's store.",
+    },
+  ],
+  faqs: [
+    {
+      q: 'What is the best flooring for a home gym?',
+      a: `For most home gyms, solid rubber at least 1/2 inch thick wherever weights are lifted or set down, and 3/4 inch where a barbell may be dropped. Horse stall mats are the cheapest way to get it; interlocking rubber tiles are easier to handle and move; rolled rubber covers a whole room. EVA foam tiles suit only bodyweight work and stretching.`,
+    },
+    {
+      q: 'How thick should home gym flooring be?',
+      a: `As a rule of thumb: 1/2 to 1 inch of foam for yoga and bodyweight work, 3/16 to 3/8 inch of rubber or a machine mat under cardio equipment, at least 3/8 to 1/2 inch of solid rubber where dumbbells are set down, and 3/4 inch for barbell work. For heavy deadlifts or dropped lifts, add a platform of plywood under rubber.`,
+    },
+    {
+      q: 'Are horse stall mats good for home gym flooring?',
+      a: `Yes, for weights. A 4 x 6 ft, 3/4-inch stall mat is dense, durable and among the cheapest rubber per square foot; Garage Gym Reviews puts Tractor Supply's at about $2.38 a square foot. The trade-offs are weight, around 100 lb a sheet, a strong rubber smell when new, and a textured surface. Air them out before bringing them indoors.`,
+    },
+    {
+      q: 'Can you put gym flooring over carpet?',
+      a: `For light work, a firm rubber mat over low-pile carpet is workable. Foam tiles on carpet shift and feel unstable, and benches or racks rock on carpet. For a lifting area, put a rigid layer such as plywood under the rubber, use a platform, or lift the carpet in that corner.`,
+    },
+    {
+      q: 'How do you get rid of the rubber smell from gym mats?',
+      a: `Air new rubber in a garage, on a porch or outdoors for several days before it goes indoors, then ventilate the room for the first weeks. Washing with mild soap and water removes surface residue; avoid solvents. Vulcanized rubber is generally milder than bonded crumb, and foam has no rubber smell at all.`,
+    },
+    {
+      q: 'Are foam gym mats OK for lifting weights?',
+      a: `Not as the main floor. EVA foam compresses under load, dents under equipment feet, makes benches less stable and lets a dropped dumbbell reach the floor beneath. Use solid rubber where weights are lifted or set down, and keep foam for stretching, bodyweight circuits and play areas.`,
+    },
+    {
+      q: 'How much does home gym flooring cost per square foot?',
+      a: `On the prices we saw in October 2026: about $1 to $1.25 for 1/2-inch foam tiles, $2.25 to $3.60 for thin rolled rubber, about $2.40 for 3/4-inch stall mats, $3.30 to $5.80 for 1/2-inch rubber sheets and $9 to $11.50 for 3/4-inch interlocking rubber tiles. Add about 10% for cuts. Prices change often.`,
+    },
+  ],
+  mistakesHeading: 'Common Mistakes Buying Home Gym Flooring',
+  mistakesIntro:
+    'Each of these is cheap to avoid before you order and expensive to fix once the floor is down.',
+  mistakes: [
+    {
+      title: 'Putting foam where the weights go',
+      body: `Foam puzzle tiles feel soft, and that is the problem under weights: they compress, tear and let a dropped dumbbell reach the floor beneath, and a bench on foam is less stable. Use solid rubber anywhere weights are lifted or set down.`,
+    },
+    {
+      title: 'Laying rubber over a damp slab',
+      body: `Rubber and foam trap moisture coming up through basement or garage concrete, which leads to mould and a smell that is not the rubber. Check the slab with a taped plastic sheet first, deal with any damp, and choose tiles or loose-laid sheets you can lift.`,
+    },
+    {
+      title: 'Bringing new rubber straight indoors',
+      body: `New recycled rubber can smell strongly for weeks. Spread it out in a garage or outdoors for several days before it goes into a living space, ventilate the room afterwards, and check the floor underneath for staining after a few weeks.`,
+    },
+    {
+      title: 'Buying by the pack instead of the area',
+      body: `Tiles are sold by count, rolls by length, and pack coverage sometimes rounds up. Measure the area, work out the tiles or length you need, add about 10% for cuts, and compare products per square foot rather than per box.`,
+    },
+  ],
+  relatedHeading: 'Related Home Gym Guides',
+  related: [
+    {
+      kicker: 'Strength',
+      title: 'Best Lifting Platforms',
+      blurb: 'Deadlift platforms, drop pads and DIY builds for when flooring alone is not enough.',
+      url: '/best-lifting-platforms/',
+    },
+    {
+      kicker: 'Accessories',
+      title: 'Best Treadmill Mats',
+      blurb: 'Mats sized to the machine, matched to the floor underneath, for cardio equipment.',
+      url: '/best-treadmill-mats/',
+    },
+    {
+      kicker: 'Home Gym',
+      title: 'Home Gym Accessories Worth Buying',
+      blurb: 'The bench, flooring and small kit that make a home gym work, and what to skip.',
+      url: '/best-home-gym-accessories/',
+    },
+  ],
+  bottomLine: [
+    `<strong class="text-white">Put solid rubber wherever weights touch the floor</strong>: 3/4-inch
+            Rubber-Cal Eco-Sport tiles if you want a modular floor you can take with you, a 1/2-inch
+            Maxx-Tuff sheet for a delivered lifting zone, or a Tractor Supply stall mat if you can collect
+            one and want the lowest cost. Cover the rest of the room with a rubber roll like Elephant
+            Bark, and keep ProsourceFit's foam tiles for stretching, bodyweight work and play.`,
+    `Before anything goes down, check the slab for damp, air out new rubber, and remember that
+            flooring protects a floor without making it stronger. If you drop heavy barbells, add a
+            platform — our
+            <a href="/best-lifting-platforms/" class="text-[#5AA9FF] font-bold no-underline">lifting platform guide</a>
+            covers the options.`,
+  ],
+};

@@ -1,0 +1,666 @@
+export default {
+  slug: 'best-recumbent-bikes',
+  title: 'Best Recumbent Bikes (2026): 5 Picks for Comfort and Fit',
+  description:
+    'Five recumbent exercise bikes checked against makers and independent reviews: step-through height, seat travel, back support, weight limits and footprint.',
+  crumbLabel: 'Best Recumbent Bikes',
+  breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
+  kicker: 'Buying Guide',
+  updated: 'October 2026',
+  updatedLong: 'October 19, 2026',
+  published: '2026-10-19',
+  socialProof: '1.8k',
+  h1: ['Best Recumbent Bikes', 'for Home'],
+  standfirst:
+    'A recumbent bike puts you in a supported seat with the pedals in front, which makes it the easiest exercise bike to get on, sit on and keep using. Here are five currently sold models from about $250 to $900, and the details that decide whether one suits you: how you get on, how the seat adjusts, what it holds and how much floor it takes.',
+  ctas: [
+    { label: 'See the Picks', href: '#quick-picks' },
+    { label: 'Getting On and Off', href: '#step-through' },
+  ],
+  tags: ['best recumbent bike', 'recumbent exercise bike', 'recumbent bike for seniors', 'step-through recumbent bike', 'schwinn 290 recumbent bike'],
+  stickyCta: { text: 'See Our Top Picks', link: '#quick-picks' },
+  lead: `Recumbent bikes are bought for comfort more than performance, and that changes what matters.
+          A racing position, a heavy flywheel and a hundred resistance levels count for little next
+          to a frame you can step through without lifting a leg, a seat that slides far enough for
+          your legs and supports your lower back, and a rating that comfortably covers your weight.
+          This page names five recumbents whose published figures agreed between the maker and an
+          independent source when we checked them, and explains how to judge the features that
+          listings describe loosely or not at all.`,
+  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
+          bikes, and no figure on this page is our own measurement. Each was confirmed on 19 October
+          2026 as currently sold on its maker's own store (Schwinn, Horizon, Marcy and Sunny Health
+          &amp; Fitness), and its figures were checked on that date against the maker's page and at
+          least one independent source — hands-on reviews from OutdoorGearLab, BarBend and Garage Gym
+          Reviews. Our checking tools could not load Amazon's own pages on 19 October; the Schwinn 290
+          and Marcy ME-709 were linked to Amazon listings by an independent reviewer, Garage Gym
+          Reviews notes the Schwinn 230 is sold there too, and Horizon and Sunny both sell through
+          Amazon, but confirm that the exact model and seller are on the listing before you order. A
+          figure appears in a product's specification line only where sources agree; where they
+          conflicted — on unit weights, measured footprints and rider height ranges — we left it off
+          the card and say so in the text. Prices are those we saw on 19 October 2026 and change
+          often. We earn a commission if you buy through the Amazon links on this page; it does not
+          change which products we list or what we say about them.
+          <strong class="text-gray-900">What this page is, and is not.</strong> We review equipment;
+          we are not giving medical, physiotherapy or rehabilitation advice, and nothing here says a
+          recumbent bike will treat or prevent any condition. Where a maker markets a health benefit,
+          treat it as the maker's claim. If you have a heart condition, joint or back pain, balance
+          problems or osteoporosis, have had a joint replacement or other surgery, or are returning
+          from injury, ask your doctor or physiotherapist whether a recumbent bike suits you and how
+          to set it up before you start.`,
+  sections: [
+    {
+      id: 'quick-picks',
+      heading: 'Our Picks at a Glance',
+      html: `          <p>
+            <strong>The best recumbent bike for most homes is the Schwinn 290</strong>: 25 levels of
+            magnetic resistance, a 330 lb rating, a ventilated seat with lumbar support and Bluetooth
+            that connects to a wide range of apps. The Horizon 5.0R is the alternative with the most
+            resistance range and a lifetime frame warranty, and the Marcy ME-709 does the basics for
+            about $250.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Pick</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Best for</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Why</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Schwinn 290</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most homes</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">330 lb rating, 25 magnetic levels, full Bluetooth FTMS; $899 on Schwinn</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon 5.0R</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Fine resistance control, long warranty</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">100 levels, step-through frame, lifetime frame warranty; $649 on sale</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Schwinn 230</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Schwinn build for less</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">16 magnetic levels, 300 lb rating, quick-adjust seat rail; $599</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Marcy ME-709</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The lowest price</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Step-through frame, 300 lb rating, about $210–$250</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sunny Health &amp; Fitness SF-RB422003</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Small rooms, shorter riders</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">52.4 in. long, 25.2–34.3 in. inseam; 220 lb rating</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            If you would rather lean forward and stand on the pedals, an upright indoor cycling bike is
+            the better type; our
+            <a href="/best-exercise-bikes/" class="text-[#0F62FE] font-medium">best exercise bikes</a>
+            guide covers those, including the flywheel and resistance questions that apply to both. For
+            the wider choice between a bike and other machines, see
+            <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">best cardio machines for home</a>.
+          </p>`,
+    },
+    {
+      id: 'picks',
+      heading: 'The 5 Best Recumbent Bikes',
+      products: true,
+      html: `          <p>
+            The cards give only the figures that the maker and an independent source agreed on, the
+            price we saw, and who each bike suits. All five use magnetic resistance, which is quiet and
+            needs no maintenance, and all five have a step-through frame, a seat that slides on a rail
+            or frame, and a backrest. The differences that matter are weight rating, seat travel,
+            length and the console.
+          </p>
+          <p>
+            Two are Schwinn models. That reflects the market rather than a preference: Schwinn's
+            recumbents are among the few in this price range with consistent figures across the
+            maker's page and several independent reviews.
+          </p>`,
+    },
+    {
+      id: 'how-we-chose',
+      heading: 'How We Chose These Recumbent Bikes',
+      html: `          <p>
+            We have not ridden or measured these bikes. They were chosen from published
+            specifications, maker listings, warranty terms and independent hands-on reviews, checked on
+            19 October 2026, and the claims on this page are limited to what those sources support. Each
+            pick had to be on sale new under its current name, work without a subscription, and have its
+            basic figures — weight rating, resistance, footprint and warranty — agree between the maker
+            and at least one independent source.
+          </p>
+          <p>
+            <strong>Recall checks.</strong> We searched the US Consumer Product Safety Commission's
+            recall database by brand for every maker here — Schwinn, Horizon and their owner Johnson
+            Health Tech, Marcy and Sunny Health &amp; Fitness — and for the brands we considered and
+            left out, including Nautilus, BowFlex, Exerpeutic, Sole, NordicTrack and Teeter. None of
+            the five bikes listed is under a recall. The recalls we found for these makers cover other
+            products: Horizon treadmills in 2022, older Schwinn and Horizon ellipticals, BowFlex
+            dumbbells, and commercial Matrix-brand training cycles in January 2025. In the wider
+            exercise-bike category, Peloton has recalled two upright bikes for seat posts that can
+            break; our <a href="/best-exercise-bikes/#how-we-chose" class="text-[#0F62FE] font-medium">exercise bike guide</a>
+            sets out the details.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What we left out, and why</h3>
+          <p>
+            <strong>Nautilus R618.</strong> A well-known recumbent for years, but Nautilus's home
+            products now sit under BowFlex, and BowFlex's store listed no recumbent bike on 19 October. If you find one new, check the warranty is honored.
+          </p>
+          <p>
+            <strong>Schwinn 270.</strong> Its replacement is the 290, which is on this list. Schwinn's
+            recumbent range on 19 October was the 230 and the 290.
+          </p>
+          <p>
+            <strong>Sole LCR and R92.</strong> Sole's light-commercial LCR is well regarded, but
+            Sole's own store listed two LCR versions on 19 October — one with a 10.1-inch touchscreen —
+            while a recent independent review describes an LCR with no built-in display, so we could not
+            tell which version a buyer would receive. The R92, at $1,199.99 with a 300 lb rating and a
+            lifetime frame warranty on Sole's page, had no independent coverage we could check it
+            against.
+          </p>
+          <p>
+            <strong>NordicTrack 10 Recumbent Bike.</strong> Named best overall by BarBend and Fortune,
+            with a 10-inch touchscreen and iFIT classes. We could not read its specifications on
+            NordicTrack's own page, its best features depend on an iFIT membership, and at 186 lb and
+            67.2 inches long in BarBend's figures it is heavier and longer than any bike on this list. Our
+            <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">is iFIT worth it</a>
+            page covers the subscription.
+          </p>
+          <p>
+            <strong>Exerpeutic.</strong> A familiar name in budget recumbents, but on 19 October the
+            brand's website showed the home page of another company, XPlus Outdoor, and we could not
+            find current model pages to check listing claims against.
+          </p>
+          <p>
+            <strong>Sunny's 350 lb heavy-duty recumbent (SF-RB424002).</strong> In stock on Sunny's site
+            at $499.99, and the highest weight rating we saw under $1,000, but we found no independent
+            review to confirm its figures. If you need more than 330 lb of capacity, it is worth
+            comparing, as a listing claim.
+          </p>
+          <p>
+            <strong>Teeter Power10 and other recumbent ellipticals.</strong> These move the feet in an
+            elliptical path and add moving arms, so they are a different machine from a recumbent bike,
+            with different seat, stride and footprint questions. We have not covered them here.
+          </p>`,
+    },
+    {
+      id: 'recumbent-vs-upright',
+      heading: 'Recumbent vs Upright: Who a Recumbent Suits',
+      html: `          <p>
+            A recumbent bike reclines you in a chair-like seat with a backrest and puts the pedals out
+            in front of the hips, rather than below them. Your weight is spread across the seat and back
+            instead of resting on a narrow saddle, your hands are free or resting on low side handles,
+            and you cannot stand on the pedals. That position has clear consequences.
+          </p>
+          <p>
+            <strong>What it does well.</strong> It is easy to get on and off, which matters to anyone
+            with stiff hips, limited balance or a fear of climbing onto an upright bike. The backrest
+            takes load off the lower back, and there is no pressure on the hands, wrists or neck. The
+            wide seat is more comfortable for long sessions than a saddle, and it is easy to read,
+            watch television or follow a video while riding. These are the reasons recumbents are a
+            fixture in gyms and clinics, and why BarBend's testers describe them as more
+            approachable for people with limited mobility.
+          </p>
+          <p>
+            <strong>What it does less well.</strong> You cannot stand to climb or sprint, so very hard
+            efforts feel different and many experienced cyclists find a recumbent less engaging. The
+            reclined position takes more floor space: recumbents are typically 52 to 67 inches long
+            against roughly 40 to 55 inches for an upright indoor bike. And because you sit back
+            against the seat, your core and upper body do little.
+          </p>
+          <p>
+            <strong>Who should consider an upright instead.</strong> If you want spin-style classes,
+            standing climbs or interval training, or have a small room, an upright bike is usually the
+            better buy; see our
+            <a href="/best-exercise-bikes/" class="text-[#0F62FE] font-medium">exercise bike roundup</a>.
+            If your main reason for a bike is protecting sore knees rather than your back or balance,
+            either type can work, and our
+            <a href="/treadmill-vs-exercise-bike/" class="text-[#0F62FE] font-medium">treadmill vs exercise bike</a>
+            comparison discusses knees, impact and bone loading in more depth.
+          </p>`,
+    },
+    {
+      id: 'step-through',
+      heading: 'Step-Through Height and Getting On and Off',
+      html: `          <p>
+            For many buyers, especially older riders, this is the most important feature on the bike
+            and the one listings describe least precisely. "Step-through" means there is no high bar
+            between the seat and the pedals that you must swing a leg over: you walk into the gap beside
+            the seat, sit down, then lift your feet onto the pedals.
+          </p>
+          <p>
+            <strong>Not every step-through is equally easy.</strong> What matters is how high the frame
+            is at the lowest point you step over, how wide that gap is, and whether there is something
+            solid to hold as you lower yourself. OutdoorGearLab, which reviewed both, found the Marcy
+            ME-709's step-through lower and more open than the Schwinn 290's, which has a narrower
+            channel for your foot; it still found the 290 more accommodating than any upright bike, and
+            suggested people with limited mobility study its design before buying. Makers rarely publish
+            a step-over height, so photographs taken side-on and independent reviews are the best guide.
+          </p>
+          <p>
+            <strong>Seat height matters as much as step-over.</strong> A seat close to chair height is
+            easy to sit down on and stand up from. Sunny publishes a seat height of 22.5 to 24.2 inches
+            for its SF-RB422003, which is in the range of a typical dining chair; few other makers give
+            the figure, so if it matters to you, ask the seller or measure in a store.
+          </p>
+          <p>
+            <strong>Handles help.</strong> The Horizon 5.0R has handlebars at the console and beside the
+            seat, OutdoorGearLab describes console and seat handles on the Schwinn 290, Schwinn lists
+            stationary handlebars on the 230 for getting on and off, and Marcy describes contoured,
+            foam-covered handlebars on the ME-709. Fixed side handles give you something to hold as you sit and stand, and should
+            not move when you lean on them.
+          </p>
+          <p>
+            <strong>Pedals and straps.</strong> Weighted pedals hang the right way up, so you do not
+            have to flip them with your foot as you get on. The Schwinn 290 and Marcy have weighted
+            pedals with straps; keep the straps snug so a foot cannot slide off.
+          </p>
+          <p>
+            A simple routine makes any recumbent safer to mount: stand beside the seat with the bike on
+            a level floor, hold the side handle, sit down fully, then lift one foot at a time onto the
+            pedals. Reverse it to get off, and wait until the pedals have stopped.
+          </p>`,
+    },
+    {
+      id: 'seat',
+      heading: 'Seat Adjustment and Back Support',
+      html: `          <p>
+            On a recumbent, the seat does all the fitting. It has to slide far enough for your legs to
+            reach almost full extension, and the backrest has to support you without pushing you
+            forward.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">How the seat moves</h3>
+          <p>
+            There are two common systems. <strong>Rail sliders</strong> move the seat along a track with
+            a lever, usually with fine or continuous adjustment, and you can adjust while seated. The
+            Schwinn 230 and 290 use one. <strong>Indexed frames</strong> move the seat, or the whole
+            front section, through a set of holes with a pop pin. OutdoorGearLab reports that the Marcy
+            ME-709 has seven positions two inches apart, for 12 inches of travel, against 13.2 inches of
+            continuous travel on the Schwinn 290.
+          </p>
+          <p>
+            Rail angle matters too. OutdoorGearLab notes the 290's seat rises as it slides back, so
+            taller riders sit higher, which it found counterintuitive but which also makes getting up a
+            little easier for tall riders. Check the range for your leg length: OutdoorGearLab gives about
+            4 ft 9 in. to 6 ft 4 in. for the 290 and 5 ft 2 in. to 6 ft 2 in. for the ME-709, and reports
+            that Marcy claims a 27 to 37-inch inseam. Sunny publishes 25.2 to 34.3 inches for its compact
+            SF-RB422003, which suits shorter riders and may leave taller ones short of room. Schwinn
+            and Horizon do not publish a height range for their recumbents.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Getting the position right</h3>
+          <p>
+            Sit with your back against the backrest and a pedal at its furthest point. Your leg should
+            be almost straight, with a slight bend at the knee — not locked, and not so bent that your
+            knee comes up toward your chest. If you have to slide your hips forward on the seat to reach
+            the pedals, move the seat forward instead.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Back support</h3>
+          <p>
+            Most recumbent backrests are fixed in angle. The Schwinn 230 and 290 have a large ventilated
+            backrest with lumbar support; Horizon describes an extra-large seat with lumbar support;
+            Marcy and Sunny use padded backrests. OutdoorGearLab found the 290's seat comfortable but its
+            backrest stiff and non-adjustable. If you have specific back needs, an adjustable-angle
+            backrest is a feature to look for in more expensive models, and a physiotherapist can tell
+            you which angle suits you. A ventilated back is not a gimmick: a solid foam back gets hot
+            and sticky in a long session.
+          </p>`,
+    },
+    {
+      id: 'capacity',
+      heading: 'Weight Capacity and Frame Strength',
+      html: `          <p>
+            Every recumbent lists a maximum user weight, and the figures on this page range from 220 lb
+            to 330 lb. Treat the figure as a limit, not a target: a bike used near its limit works its
+            frame, seat rail and bearings harder and is more likely to creak and wobble over time.
+          </p>
+          <ul>
+            <li><strong>220 lb:</strong> the compact Sunny SF-RB422003. Fine for lighter riders, and the reason it is cheap and light.</li>
+            <li><strong>300 lb:</strong> the Schwinn 230, Horizon 5.0R and Marcy ME-709. Enough for most adults.</li>
+            <li><strong>330 lb:</strong> the Schwinn 290, the highest rating here.</li>
+          </ul>
+          <p>
+            Our rule of thumb: choose a bike rated at least 50 lb above your weight,
+            and look at the seat and the seat rail as well as the headline figure, since they carry most
+            of the load. Above 330 lb, the choice under $1,000 narrows sharply. Sunny lists a
+            350 lb heavy-duty recumbent that we could not check independently, and light-commercial
+            models cost considerably more. Our guide to
+            <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">treadmills for heavy people</a>
+            explains how to read weight ratings on cardio machines generally, and the same logic applies
+            to bikes.
+          </p>
+          <p>
+            <strong>Warranty is a clue to frame confidence.</strong> Horizon offers a lifetime frame
+            warranty on the 5.0R and Schwinn 10 years on its recumbents; Sunny lists three years on the
+            frame and BarBend reports a two-year limited warranty on the Marcy. Parts and labor terms are
+            much shorter on all of them — 90 days of labor on the Schwinns — so register the bike and
+            keep the receipt.
+          </p>`,
+    },
+    {
+      id: 'footprint',
+      heading: 'Footprint: Where a Recumbent Fits',
+      html: `          <p>
+            Recumbents are long. The reclined position puts the seat well behind the pedals, so even a
+            compact model takes more floor than an upright bike, though far less than a treadmill. The
+            figures below are the makers' assembled dimensions, length by width.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Bike</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Length x width (maker)</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Note</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sunny SF-RB422003</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">52.4 x 26.4 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">BarBend gives the same figure, about 9.6 sq ft</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Marcy ME-709</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">58 x 20 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">OutdoorGearLab measured 46–58 in. long, depending on seat position, and 24.75 in. wide</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Schwinn 230</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">64 x 27.7 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">BarBend gives the same figure</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon 5.0R</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">66 x 25.2 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">BarBend gives the same figure</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Schwinn 290</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">66.4 x 28 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">OutdoorGearLab measured 64.5 x 28.5 in.</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Add clear space around the bike: room to walk in beside the seat on at least one side, which
+            is how you get on, and a little behind the seat so it can slide fully back. A recumbent that
+            fits only when pushed against a wall on the step-through side defeats the point of buying
+            one. Several makers' footprints change with seat position, as OutdoorGearLab's measurement of
+            the Marcy shows, so measure with the seat where you will actually use it.
+          </p>
+          <p>
+            Recumbents are heavy for their size — the Schwinn 290 is about 108 lb and the Horizon 5.0R
+            123 lb by their makers' figures — but all five have front transport wheels, so you tip and
+            roll them rather than lift. A dense rubber mat underneath protects the floor and stops the
+            bike creeping; our <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">equipment mat guide</a>
+            explains sizes. For planning space more generally, our
+            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements guide</a>
+            shows how to measure a room for a machine.
+          </p>`,
+    },
+    {
+      id: 'who-it-suits',
+      heading: 'Seniors, Joints and Back Pain: What a Recumbent Can and Cannot Do',
+      html: `          <p>
+            Recumbent bikes are often sold as the exercise bike for seniors and for people with joint
+            problems. There is good sense behind that, and some limits worth being honest about. We
+            review equipment, not health conditions, so read this as the reasoning behind the design,
+            not as advice about your own body.
+          </p>
+          <p>
+            <strong>Why recumbents suit many older riders.</strong> The step-through frame and
+            chair-height seat remove the most awkward part of using an upright bike — climbing on and
+            balancing on a saddle. The backrest supports the trunk, so you do not have to hold yourself
+            up, and the risk of a fall while riding is very low. Pedaling is non-weight-bearing and has
+            no impact. For someone who wants regular, steady cardio and feels unsteady on an upright
+            bike or a treadmill, those are real advantages.
+          </p>
+          <p>
+            <strong>Joints.</strong> Cycling moves the knees and hips through a controlled, repeated
+            range with no impact, which many people with sore knees find comfortable. Fit matters: a
+            seat too close forces a deep knee and hip bend under load, which is the most common cause of
+            knee discomfort on any bike. If you have had a hip or knee replacement, ask your surgeon or
+            physiotherapist when you can start and how far forward the seat may go, because some
+            post-operative precautions limit how far the hip should bend.
+          </p>
+          <p>
+            <strong>Backs.</strong> The backrest takes load off the lower back, which is why people with
+            back pain often prefer a recumbent to an upright. A backrest that is too upright or too
+            reclined for you can still be uncomfortable, and nothing about a bike treats back pain. A
+            physiotherapist is the right person to ask which position suits you.
+          </p>
+          <p>
+            <strong>What a recumbent does not do.</strong> It provides little of the weight-bearing load
+            that helps maintain bone density, and it does not train balance or walking, which matter a
+            great deal as we age. That is not a reason to avoid one — any regular exercise is far better
+            than none — but many people combine a recumbent with walking and strength work for that
+            reason. Our guides to
+            <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">treadmills for seniors</a>
+            and whether
+            <a href="/are-treadmills-bad-for-your-knees/" class="text-[#0F62FE] font-medium">treadmills are bad for your knees</a>
+            cover the walking side, and an
+            <a href="/best-elliptical-machines-for-home/" class="text-[#0F62FE] font-medium">elliptical</a>
+            adds weight-bearing without impact.
+          </p>
+          <p>
+            <strong>Who should get advice first.</strong> Anyone with a heart condition or who takes
+            medication that affects heart rate, anyone with dizziness, balance problems or osteoporosis,
+            and anyone recovering from surgery or injury should check with a doctor or physiotherapist
+            before starting, and start gently. Several bikes here have heart-rate grips or Bluetooth for a
+            chest strap; our <a href="/best-heart-rate-monitors-for-treadmill/" class="text-[#0F62FE] font-medium">heart-rate monitor guide</a>
+            covers straps that work with bikes too. Some recumbents can be bought with HSA or FSA funds
+            in some circumstances; our page on whether
+            <a href="/are-treadmills-hsa-fsa-eligible/" class="text-[#0F62FE] font-medium">fitness machines are HSA/FSA eligible</a>
+            explains how that usually works.
+          </p>`,
+    },
+    {
+      id: 'resistance-apps',
+      heading: 'Resistance, Consoles and Apps',
+      html: `          <p>
+            All five bikes here use magnetic resistance, which is quiet and has nothing to wear out. The
+            differences are in how it is controlled and what the console does.
+          </p>
+          <p>
+            <strong>Resistance levels.</strong> The Marcy and Sunny have eight levels set with a knob; the
+            Schwinn 230 has 16, the Schwinn 290 has 25, and the Horizon 5.0R 100, all set with buttons.
+            More levels mean finer steps, not a harder top end. For steady, comfortable riding, eight
+            levels are enough for many people; if you want to progress gradually over months, or follow
+            interval programs, 16 or more is easier to work with. Bikes with button-controlled resistance
+            need a wall outlet.
+          </p>
+          <p>
+            <strong>Flywheel weight.</strong> Recumbents use much lighter flywheels than spin bikes — OutdoorGearLab
+            lists 18 lb, perimeter-weighted, for the Schwinn 290 and 5.5 lb for the Marcy, and Horizon lists
+            15.4 lb for the 5.0R — and that is not a weakness. Our
+            <a href="/best-exercise-bikes/#flywheel" class="text-[#0F62FE] font-medium">flywheel explainer</a>
+            covers why the number says little on its own.
+          </p>
+          <p>
+            <strong>Programs.</strong> The Schwinn 230 and 290 each have 13 built-in workout programs and
+            the Horizon five; the Marcy has none. Programs change the resistance for you, which is
+            useful if you would otherwise ride at one level forever.
+          </p>
+          <p>
+            <strong>Apps.</strong> None of these bikes needs a subscription. The Schwinn 290 and Horizon
+            5.0R have full Bluetooth FTMS, the open standard, so they connect to a wide range of apps —
+            Schwinn lists JRNY and Zwift, Horizon lists Peloton, Zwift and Kinomap. The Schwinn 230 has
+            partial FTMS and connects to Schwinn's listed apps, Explore the World and Zwift. The Sunny
+            connects to Sunny's free SunnyFit app. The Marcy has no connection at all. App
+            subscriptions, where needed, are separate; check the current price. Our
+            <a href="/best-treadmill-workout-apps/" class="text-[#0F62FE] font-medium">workout apps guide</a>
+            covers several that support bikes as well as treadmills.
+          </p>
+          <p>
+            <strong>Noise.</strong> Magnetic recumbents are among the quietest cardio machines made: a soft
+            whir from the flywheel and belt, and a fan if the bike has one. There is no footfall, so very
+            little reaches a room below. If quiet is the priority, any of these is a good choice for an
+            apartment.
+          </p>`,
+    },
+  ],
+  products: [
+    {
+      id: 'schwinn-290-recumbent-bike',
+      name: 'Schwinn 290 Recumbent Bike',
+      category: 'Best Recumbent Bike Overall',
+      badge: 'Best Overall',
+      amazonUrl: 'https://www.amazon.com/s?k=Schwinn+290+Recumbent+Bike&tag=sktiger-20',
+      priceRange: '$799–$999',
+      specs: '25 magnetic resistance levels · 330 lb max user · 66.4 x 28 in. footprint · 13 programs · full Bluetooth FTMS · 10-yr frame, 2-yr parts, 1-yr electronics, 90-day labor warranty',
+      pros: [
+        'The highest weight rating here, agreed by Schwinn and OutdoorGearLab',
+        'Full Bluetooth FTMS, so it connects to a wider range of apps than most',
+        'Ventilated seat with lumbar support; OutdoorGearLab’s testers rated it highly for comfort',
+        '13.2 inches of continuous seat travel, by OutdoorGearLab’s measurement',
+        'Weighted, strapped pedals and a USB charging port',
+      ],
+      cons: [
+        'The step-through channel is narrower than the Marcy’s, according to OutdoorGearLab',
+        'The backrest does not adjust in angle',
+        'Long, at about 5.5 feet, and about 108 lb',
+      ],
+      bottomLine:
+        'The recumbent to buy for most homes: comfortable, well rated for heavier riders and open to the apps you choose.',
+      description:
+        "The 290 is Schwinn's upper recumbent and replaced the long-running 270. Schwinn's page and OutdoorGearLab, which named it its best recumbent bike, agree on 25 levels of magnetic resistance and a 330 lb maximum user weight, and Schwinn and Garage Gym Reviews agree on a 66.4 by 28-inch footprint (OutdoorGearLab measured 64.5 by 28.5). Schwinn lists 13 workout programs, a 7-inch LCD, a padded, ventilated seat with lumbar support, weighted strapped pedals, stationary handlebars for getting on and off, Bluetooth heart-rate support, a USB charging port and full Bluetooth FTMS, naming JRNY and Zwift; app subscriptions are separate. The warranty is 10 years on the frame, two years on mechanical parts, one year on electronics and 90 days of labor. OutdoorGearLab measured 13.2 inches of continuous seat travel on a rail that rises as it goes back, put the rider range at about 4 ft 9 in. to 6 ft 4 in., found the ride smooth and consistent, and noted a narrower step-through than the Marcy. On 19 October Schwinn had it at $899 against a $999 list price; OutdoorGearLab and a dealer listed it at $799, so watch for sales.",
+    },
+    {
+      id: 'horizon-5-0r-recumbent-bike',
+      name: 'Horizon 5.0R Recumbent Bike',
+      category: 'Best for Fine Resistance Control',
+      badge: 'Best Value',
+      amazonUrl: 'https://www.amazon.com/s?k=Horizon+Fitness+5.0R+Recumbent+Bike&tag=sktiger-20',
+      priceRange: '$649–$999',
+      specs: '100 magnetic resistance levels · 300 lb max user · 66 x 25.2 in. footprint · step-through frame · Bluetooth FTMS · lifetime frame warranty',
+      pros: [
+        '100 electronically controlled levels for very small steps in effort',
+        'A lifetime frame warranty, the longest here',
+        'Open step-through frame that BarBend’s testers found approachable for limited mobility',
+        'Extra-large seat with lumbar support, a fan, a tablet rack and USB charging',
+      ],
+      cons: [
+        'Parts and labor are covered for only one year',
+        'Heavier than the Schwinn 290 at 123 lb by Horizon’s figure',
+        'Only five built-in programs, and no rider height range published',
+      ],
+      bottomLine:
+        'For riders who want very fine control over effort and a frame warranty that never runs out, at a lower sale price than the Schwinn 290.',
+      description:
+        "Horizon is a Johnson Health Tech brand, like Schwinn, and the 5.0R is its home recumbent. Horizon's page and BarBend, which named it its best recumbent for beginners, agree on 100 levels of magnetic resistance, a 300 lb maximum user weight and a 66 by 25.2 by 52.2-inch footprint, and both describe a step-through frame. Horizon lists an eddy-current magnetic brake with a 15.4 lb flywheel, an extra-large seat with lumbar support that adjusts horizontally, handlebars at the console and beside the seat, five programs, a three-speed fan, a tablet rack, a USB-A charging port, Bluetooth and hand-grip heart-rate sensors, and a Bluetooth FTMS connection; it names Peloton, Zwift and Kinomap as apps that can show your data, each with its own subscription. The home warranty is lifetime on the frame and one year on parts and labor. Horizon gives the unit weight as 123 lb. On 19 October Horizon had it at $649 against a $999 list price, and BarBend says it is routinely on sale. It does not fold.",
+    },
+    {
+      id: 'schwinn-230-recumbent-bike',
+      name: 'Schwinn 230 Recumbent Bike',
+      category: 'Best Mid-Priced Recumbent',
+      badge: 'Best Under $600',
+      amazonUrl: 'https://www.amazon.com/s?k=Schwinn+230+Recumbent+Bike&tag=sktiger-20',
+      priceRange: '$499–$599',
+      specs: '16 magnetic resistance levels · 300 lb max user · 64 x 27.7 in. footprint · 13 programs · Bluetooth (partial FTMS) · 10-yr frame, 2-yr parts, 1-yr electronics, 90-day labor warranty',
+      pros: [
+        'Schwinn’s frame warranty and a 300 lb rating for $300 less than the 290',
+        'A seat-rail slider with a lever, so you can adjust while seated',
+        'Contoured seat with a large, vented back and lumbar support',
+        'Contact grips and Bluetooth heart-rate support',
+      ],
+      cons: [
+        'The console is not backlit, according to BarBend and Garage Gym Reviews',
+        'Partial FTMS: Schwinn lists only Explore the World and Zwift',
+        'Garage Gym Reviews notes plenty of plastic and that it sells out often',
+      ],
+      bottomLine:
+        'For riders who want a Schwinn frame and warranty with fewer extras; step up to the 290 if you are over about 250 lb or want more apps.',
+      description:
+        "The 230 is Schwinn's most affordable recumbent. Schwinn's page, BarBend and Garage Gym Reviews agree on 16 levels of magnetic resistance, 13 workout programs, a 300 lb maximum user weight, a footprint of about 64 by 27.7 inches, and a warranty of 10 years on the frame, two years on parts, one year on electronics and 90 days of labor. Schwinn lists an adjustable, contoured seat with a vented back and lumbar support on a seat-rail slider with an easy-adjust lever, fixed handlebars for getting on and off, contact heart-rate grips, Bluetooth heart-rate support and a media shelf; its Bluetooth is partial FTMS, connecting to Explore the World and Zwift, with subscriptions separate. BarBend and Garage Gym Reviews both praise the ventilated seat and note the console is not backlit; Garage Gym Reviews mentions a good deal of plastic and that the bike sells out frequently, adding that it may be found on Amazon. Unit weight differs slightly between sources, so it is not on the card. It was $599 on Schwinn's site on 19 October 2026; Garage Gym Reviews has seen it at $500.",
+    },
+    {
+      id: 'marcy-me-709',
+      name: 'Marcy ME-709 Recumbent Exercise Bike',
+      category: 'Best Budget Recumbent Bike',
+      badge: 'Best Budget',
+      amazonUrl: 'https://www.amazon.com/s?k=Marcy+ME-709+Recumbent+Exercise+Bike&tag=sktiger-20',
+      priceRange: '$210–$250',
+      specs: '8 magnetic resistance levels · 300 lb max user · 58 x 20 in. listed footprint · step-through frame · weighted pedals with straps · basic LCD',
+      pros: [
+        'The lowest price here, with a 300 lb rating agreed by Marcy, BarBend and OutdoorGearLab',
+        'A low, open step-through that OutdoorGearLab found easier than the Schwinn 290’s',
+        'Large padded seat, backrest and handlebars for support getting on and off',
+        'Light enough to move easily on its transport wheels',
+      ],
+      cons: [
+        'Only eight resistance levels, no programs and no connectivity',
+        'Seat adjusts in seven fixed positions two inches apart, according to OutdoorGearLab',
+        'BarBend notes a lot of plastic components',
+      ],
+      bottomLine:
+        'For steady, gentle riding on a small budget, especially if easy access matters more than features.',
+      description:
+        "The ME-709 is about as simple as a recumbent gets, and that is its appeal. Marcy's page and BarBend agree on eight levels of magnetic resistance, a 300 lb maximum user weight and assembled dimensions of 58 by 20 by 38 inches, and OutdoorGearLab agrees on the eight levels and 300 lb. Marcy describes a step-through frame, an adjustable high-density foam seat with a backrest, contoured foam handlebars, weighted pedals with adjustable straps, transport wheels and an LCD showing time, speed, distance, calories and total distance; resistance is set with a knob under the handlebars. OutdoorGearLab found the large seat comfortable on rides of up to an hour and a half, reported seven seat positions two inches apart for 12 inches of travel and a claimed inseam range of 27 to 37 inches, and measured its length as 46 to 58 inches depending on seat position, wider than Marcy's figure. BarBend reports a two-year limited warranty. It was $249.99 on Marcy's site on 19 October 2026, and OutdoorGearLab lists it at $210 on Amazon. Unit weight differs slightly between sources.",
+    },
+    {
+      id: 'sunny-health-fitness-sf-rb422003',
+      name: 'Sunny Health & Fitness SF-RB422003 Recumbent Bike',
+      category: 'Best Recumbent Bike for Small Spaces',
+      badge: 'Best Compact',
+      amazonUrl: 'https://www.amazon.com/s?k=Sunny+Health+Fitness+SF-RB422003+Recumbent+Bike&tag=sktiger-20',
+      priceRange: '$299–$359',
+      specs: '8 magnetic resistance levels · 220 lb max user · 52.4 x 26.4 in. footprint · 25.2–34.3 in. inseam · Bluetooth (SunnyFit app) · 3-yr frame, 180-day parts warranty',
+      pros: [
+        'The shortest bike here, at 52.4 inches, agreed by Sunny and BarBend',
+        'An inseam range starting at 25.2 inches, good for shorter riders',
+        'A published seat height of 22.5 to 24.2 inches, close to chair height',
+        'Connects to Sunny’s free SunnyFit app, with a device holder for streaming',
+      ],
+      cons: [
+        'A 220 lb rating, the lowest here',
+        'BarBend notes the inseam maximum of about 34 inches will not suit taller riders',
+        'A small display with basic metrics only',
+      ],
+      bottomLine:
+        'For smaller rooms, and for riders under 220 lb with an inseam of up to about 34 inches who want an easy, low seat at a low price.',
+      description:
+        "Sunny calls this its Essentials Series Magnetic Smart Recumbent Bike, and BarBend named it its best recumbent for small spaces. Sunny's page and BarBend agree on eight levels of magnetic resistance, a 220 lb maximum user weight, a 52.4 by 26.4 by 42.5-inch footprint, a weight of about 66 lb and a warranty of three years on the frame and 180 days on other parts. Sunny publishes an inseam range of 25.2 to 34.3 inches, which BarBend gives as a 34-inch maximum, and a seat height of 22.5 to 24.2 inches, a figure few makers give and a useful one for anyone who finds low seats hard to rise from. It connects over Bluetooth to Sunny's SunnyFit app, which Sunny says is free, and has a device holder and floor stabilizers. BarBend found it surprisingly stable for its weight but notes the low weight rating and the inseam limit. Sunny had it at $299.99 against $359.99 on 19 October 2026. Sunny lists several similar recumbents under close names; check the model number SF-RB422003 on the listing.",
+    },
+  ],
+  faqs: [
+    {
+      q: 'What is the best recumbent bike?',
+      a: `For most homes, the Schwinn 290: 25 levels of magnetic resistance, a 330 lb rating, a ventilated seat with lumbar support and full Bluetooth FTMS for apps. The Horizon 5.0R offers 100 levels and a lifetime frame warranty for less on sale, and the Marcy ME-709 covers the basics for about $250.`,
+    },
+    {
+      q: 'Is a recumbent bike good for seniors?',
+      a: `Often, yes. A step-through frame and chair-height seat make it easy to get on and off, the backrest supports the trunk, and the risk of a fall while riding is low. It does little for bone density or balance, so many people combine it with walking and strength work. Ask your doctor first if you have a heart, joint or balance condition.`,
+    },
+    {
+      q: 'Is a recumbent or upright bike better?',
+      a: `A recumbent is better for comfort, back support and easy access; an upright or indoor cycling bike is better for hard intervals, standing climbs, classes and small rooms. Recumbents are typically 52 to 67 inches long, uprights roughly 40 to 55. Choose the position you will be happy to sit in several times a week.`,
+    },
+    {
+      q: 'How much weight can a recumbent bike hold?',
+      a: `Most home recumbents are rated between 220 and 330 lb. On this page the Sunny SF-RB422003 is rated to 220 lb, the Schwinn 230, Horizon 5.0R and Marcy ME-709 to 300 lb, and the Schwinn 290 to 330 lb. Choose a rating well above your weight, and check the seat and seat rail as well as the headline figure.`,
+    },
+    {
+      q: 'Is a recumbent bike good for bad knees?',
+      a: `Many people with sore knees find cycling comfortable because it has no impact and moves the knee through a controlled range. Seat position matters: a seat too close forces a deep knee bend under load. If you have a diagnosed knee condition or a knee replacement, ask a physiotherapist how to set the bike up. This is not medical advice.`,
+    },
+    {
+      q: 'How much space does a recumbent bike need?',
+      a: `Most are 52 to 67 inches long and 20 to 28 inches wide by their makers' figures, plus room beside the seat to step in and behind it for the seat to slide. The Sunny SF-RB422003 is 52.4 inches long; the Schwinn 290 is 66.4 inches. Measure with the seat in your riding position.`,
+    },
+  ],
+  mistakesHeading: 'Common Mistakes Buying a Recumbent Bike',
+  mistakesIntro:
+    'Most recumbent regrets are about access and fit rather than performance. These are the four to avoid.',
+  mistakes: [
+    {
+      title: 'Trusting "step-through" without looking',
+      body: `Every recumbent is sold as step-through, but the height and width of the gap vary, and makers rarely publish them. If getting on is the reason you are buying, look at side-on photos, read reviews that describe mounting, and make sure there is a fixed handle beside the seat to hold as you sit down.`,
+    },
+    {
+      title: 'Buying a bike that is too short for your legs',
+      body: `If the seat cannot slide far enough back, your knees come up high on every stroke, which is uncomfortable and hard on the joints. Measure your inseam and check it against the published range; compact bikes like the Sunny SF-RB422003 top out at about 34 inches.`,
+    },
+    {
+      title: 'Choosing a weight rating right at your weight',
+      body: `A bike used at its limit creaks, wobbles and wears faster, starting with the seat and rail. As a rule of thumb, choose a rating at least 50 lb above your weight; the Schwinn 290's 330 lb is the highest here, so heavier riders should look at higher-rated machines rather than run a 300 lb bike at its limit.`,
+    },
+    {
+      title: 'Forgetting the space beside the seat',
+      body: `A recumbent pushed against a wall on its step-through side is no easier to get on than an upright. Plan for the bike's length with the seat where you ride, plus clear floor beside the seat to walk in, before you order.`,
+    },
+  ],
+  relatedHeading: 'Related Home Gym Guides',
+  related: [
+    {
+      kicker: 'Cardio',
+      title: 'Best Exercise Bikes',
+      blurb: 'Upright and indoor cycling bikes, magnetic vs friction, fit and apps.',
+      url: '/best-exercise-bikes/',
+    },
+    {
+      kicker: 'Home Gym',
+      title: 'Best Cardio Machines for Home',
+      blurb: 'One pick per machine type, and which gym machines work at home.',
+      url: '/best-cardio-machines-for-home/',
+    },
+    {
+      kicker: 'Low Impact',
+      title: 'Best Elliptical Machines',
+      blurb: 'Weight-bearing cardio without impact, for long, steady sessions.',
+      url: '/best-elliptical-machines-for-home/',
+    },
+  ],
+  bottomLine: [
+    `<strong class="text-white">For most homes, buy the Schwinn 290</strong>: comfortable, rated to
+            330 lb and open to the apps you choose. The Horizon 5.0R is the better buy if it is on sale
+            and you want 100 levels and a lifetime frame warranty; the Marcy ME-709 is the budget pick,
+            with the easiest step-through here, and the Sunny SF-RB422003 suits small rooms and smaller
+            riders.`,
+    `Before you order, check how you will get on, whether the seat slides far enough for your
+            legs, and that the weight rating is well above yours. If you would rather lean forward and
+            stand on the pedals, our
+            <a href="/best-exercise-bikes/" class="text-[#5AA9FF] font-bold no-underline">best exercise bikes</a>
+            guide covers upright and indoor cycling bikes.`,
+  ],
+};
