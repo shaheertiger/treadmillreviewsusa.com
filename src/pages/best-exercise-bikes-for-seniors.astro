@@ -1,0 +1,976 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "Best Exercise Bikes for Seniors (2026): 7 Easy-Access Picks";
+const description =
+  "Seven exercise bikes for older riders, checked against makers and independent sources: step-through frames, back support, readable consoles and low resistance.";
+
+const PRODUCTS = [
+  {
+    id: "schwinn-290-recumbent-bike",
+    name: "Schwinn 290 Recumbent Bike",
+    category: "Step-through recumbent bike",
+    badge: "Best Overall",
+    amazonUrl: "https://www.amazon.com/s?k=Schwinn+290+Recumbent+Bike&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    reviewUrl: null,
+    priceRange: "$799–$999",
+    priceBounds: {"low":799,"high":999},
+    specs: "25 magnetic resistance levels · 330 lb max user · 66.4 x 28 in. footprint · 13 programs · full Bluetooth FTMS · 10-yr frame, 2-yr parts, 1-yr electronics, 90-day labor warranty",
+    pros: [
+      "A 330 lb rating agreed by Schwinn and OutdoorGearLab, giving most riders a wide margin",
+      "Ventilated seat with lumbar support that OutdoorGearLab’s testers rated highly for comfort",
+      "Stationary handlebars at the seat for getting on and off, plus weighted, strapped pedals",
+      "Works fully without an app; Bluetooth is there if you want it",
+    ],
+    cons: [
+      "OutdoorGearLab found the step-through channel narrower than the Marcy’s",
+      "The backrest does not adjust in angle",
+      "About 5.5 feet long and about 108 lb, so it needs a permanent spot and two people to place",
+    ],
+    bottomLine: "The recumbent most older riders should start with: easy to sit in, comfortable, well rated for weight and simple to operate.",
+    description: "The 290 is Schwinn's upper recumbent, and it suits older riders for reasons beyond its spec sheet. Schwinn and OutdoorGearLab agree on 25 levels of magnetic resistance and a 330 lb maximum user weight, and Schwinn and Garage Gym Reviews agree on a 66.4 by 28-inch footprint. Schwinn lists a padded, ventilated seat with lumbar support, stationary handlebars for getting on and off, weighted strapped pedals, a 7-inch LCD, 13 programs, Bluetooth heart-rate support and full Bluetooth FTMS for apps, which are optional and sold separately. OutdoorGearLab measured 13.2 inches of continuous seat travel, put the rider range at about 4 ft 9 in. to 6 ft 4 in. and found the ride smooth and consistent; its one access caveat is a narrower step-through than the Marcy ME-709, so people with very limited hip movement should look closely at its design. The warranty is 10 years on the frame, two years on parts, one year on electronics and 90 days of labor. On 19 October Schwinn had it at $899 against a $999 list price, and it has been seen at $799 on sale.",
+  },
+  {
+    id: "horizon-5-0r-recumbent-bike",
+    name: "Horizon 5.0R Recumbent Bike",
+    category: "Step-through recumbent bike",
+    badge: "Gentlest Progression",
+    amazonUrl: "https://www.amazon.com/s?k=Horizon+Fitness+5.0R+Recumbent+Bike&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    reviewUrl: null,
+    priceRange: "$649–$999",
+    priceBounds: {"low":649,"high":999},
+    specs: "100 magnetic resistance levels · 300 lb max user · 66 x 25.2 in. footprint · step-through frame · Bluetooth FTMS · lifetime frame warranty",
+    pros: [
+      "100 electronically controlled levels, so effort can rise in very small steps",
+      "Open step-through frame that BarBend’s testers found approachable for limited mobility",
+      "Handlebars at the console and beside the seat, and a high-contrast display",
+      "A lifetime frame warranty, and the lowest sale price of the full-size recumbents here",
+    ],
+    cons: [
+      "Parts and labor are covered for only one year",
+      "At 123 lb by Horizon’s figure, it is heavy to move",
+      "Only five built-in programs, and no rider height range published",
+    ],
+    bottomLine: "For riders who want to start very gently and add effort a little at a time, with a frame warranty that never runs out.",
+    description: "Horizon is a Johnson Health Tech brand, like Schwinn, and the 5.0R is its home recumbent. Horizon's page and BarBend, which named it its best recumbent for beginners, agree on 100 levels of magnetic resistance, a 300 lb maximum user weight and a 66 by 25.2-inch footprint, and both describe an open step-through frame. For an older rider the 100 levels matter less as a challenge than as a gentle ramp: each step is small, so you can add effort without a noticeable jump. Horizon lists an extra-large seat with lumbar support that slides on an aluminum rail, handlebars at the console and beside the seat, a high-contrast LCD with a 60 by 127 mm window, a three-speed fan, a tablet rack, a USB-A port and Bluetooth FTMS for optional apps. The home warranty is lifetime on the frame and one year on parts and labor, and Horizon gives the unit weight as 123 lb. On 19 October Horizon had it at $649 against a $999 list price, and BarBend says it is routinely on sale. It does not fold.",
+  },
+  {
+    id: "horizon-5-0u-upright-bike",
+    name: "Horizon 5.0U Upright Bike",
+    category: "Step-through upright bike",
+    badge: "Best Upright",
+    amazonUrl: "https://www.amazon.com/s?k=Horizon+Fitness+5.0U+Upright+Bike&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    reviewUrl: null,
+    priceRange: "$499–$799",
+    priceBounds: {"low":499,"high":799},
+    specs: "300 lb max user · step-through upright frame · high-contrast LCD · Bluetooth FTMS · lifetime frame, 1-yr parts and labor warranty",
+    pros: [
+      "A step-through upright frame, described as such by Horizon and Dick’s Sporting Goods",
+      "Much shorter than any recumbent here, at 46 inches by Horizon’s figure",
+      "The same high-contrast display and fine resistance control as the 5.0R",
+      "Seat adjusts both up and down and forward and back",
+    ],
+    cons: [
+      "A saddle with no backrest, so it suits riders who are steady on a bicycle seat",
+      "Dick’s customer reviewers mention a hard seat and some app-pairing trouble",
+      "One year of cover on parts and labor",
+    ],
+    bottomLine: "For confident riders who prefer to sit upright and want a frame they can step into, in a smaller space than a recumbent needs.",
+    description: "Most upright bikes make you lift a leg over the frame; the 5.0U is one of the few home uprights whose maker describes a step-through frame, and Dick's Sporting Goods' listing says the same. Horizon and Dick's agree on a 300 lb maximum user weight and a warranty of lifetime on the frame and one year on parts and labor. Horizon lists 100 electronically controlled resistance levels, the same high-contrast 60 by 127 mm LCD as the 5.0R, five programs, Bluetooth FTMS, a fan, a tablet holder and a USB-A port, with a seat that adjusts vertically and horizontally; one overseas retailer lists 50 levels rather than 100, so we have kept the count off the card. Horizon gives its size as 46 by 22.4 by 53 inches and its weight as 87 lb. Dick's customer reviews praise easy assembly and value, while complaints include a hard seat and app syncing; a gel seat cover is a cheap fix for the first. On 19 October Horizon had it at $549 against a $799 list price, with a code taking it to $499. It has no backrest, so riders with back pain or poor balance should prefer a recumbent.",
+  },
+  {
+    id: "sole-lcr",
+    name: "SOLE LCR Recumbent Bike",
+    category: "Light-commercial recumbent bike",
+    badge: "Best Premium",
+    amazonUrl: "https://www.amazon.com/s?k=SOLE+LCR+Recumbent+Bike&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    reviewUrl: null,
+    priceRange: "$1,699–$1,999",
+    priceBounds: {"low":1699,"high":1999},
+    specs: "40 magnetic resistance levels · 350 lb max user · 56 x 29 in. footprint · 10.1 in. touchscreen · lifetime frame, 3-yr parts, 1-yr labor warranty",
+    pros: [
+      "The highest weight rating here, 350 lb, agreed by SOLE and Garage Gym Reviews",
+      "A large, heavily cushioned seat that Garage Gym Reviews’ tester singled out for comfort",
+      "SOLE offers room-of-choice delivery with assembly for an extra $350",
+      "A touchscreen with shallow menus, plus a lifetime frame warranty",
+    ],
+    cons: [
+      "Expensive, at $1,699 even on sale",
+      "Heavy, at 152 lb",
+      "SOLE warns its wireless charging may interfere with implanted medical devices",
+    ],
+    bottomLine: "For riders who want a sturdier, more comfortable recumbent and would rather pay to have it carried in and built.",
+    description: "SOLE builds the LCR as a light-commercial recumbent for clinics and multi-user homes, and Garage Gym Reviews names it its best exercise bike for seniors. SOLE and Garage Gym Reviews agree on 40 levels of magnetic resistance, a 350 lb maximum user weight, a 56 by 29 by 60-inch size, a unit weight of 152 lb and a warranty of lifetime on the frame, three years on parts and one year on labor. SOLE lists a 31 lb flywheel, a 10.1-inch touchscreen that can mirror the free SOLE+ app or streaming apps, oversized pedals, a 15-position seat adjustment, pulse grips and wireless charging. Garage Gym Reviews' tester found the seat one of the most comfortable she had used, the touchscreen easy to navigate, and the built-in programming merely adequate. For an older buyer the delivery options are the point: on 19 October SOLE listed curbside delivery at $49.99, room of choice for $200 more and room of choice with assembly for $350 more. SOLE also warns that wireless charging emits a magnetic field that may interfere with implanted medical devices. SOLE had it at $1,699.99 against $1,999.99; we did not find it listed on Amazon.",
+  },
+  {
+    id: "marcy-me-709",
+    name: "Marcy ME-709 Recumbent Exercise Bike",
+    category: "Budget step-through recumbent",
+    badge: "Best Budget",
+    amazonUrl: "https://www.amazon.com/s?k=Marcy+ME-709+Recumbent+Exercise+Bike&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    reviewUrl: null,
+    priceRange: "$210–$250",
+    priceBounds: {"low":210,"high":250},
+    specs: "8 magnetic resistance levels · 300 lb max user · 58 x 20 in. listed footprint · step-through frame · weighted pedals with straps · basic LCD",
+    pros: [
+      "A low, open step-through that OutdoorGearLab found easier than the Schwinn 290’s",
+      "A 300 lb rating agreed by Marcy, BarBend and OutdoorGearLab",
+      "Simple knob for resistance and a basic display with no menus",
+      "Light enough to move on its transport wheels",
+    ],
+    cons: [
+      "Only eight levels, so the steps between settings are larger",
+      "Seat adjusts in seven fixed positions two inches apart, according to OutdoorGearLab",
+      "BarBend notes a lot of plastic components",
+    ],
+    bottomLine: "For gentle, steady riding on a small budget, when easy access matters more than any feature.",
+    description: "The ME-709 is about as simple as a recumbent gets, which for many older riders is a recommendation. Marcy's page and BarBend agree on eight levels of magnetic resistance, a 300 lb maximum user weight and assembled dimensions of 58 by 20 by 38 inches, and OutdoorGearLab agrees on the levels and rating. Marcy describes a step-through frame, an adjustable foam seat with a backrest, contoured foam handlebars, weighted pedals with straps, transport wheels and an LCD showing time, speed, distance and calories; resistance is a knob under the handlebars. OutdoorGearLab, which reviewed it beside the Schwinn 290, found its step-through lower and more open, the large seat comfortable for long rides, and the seat adjustment coarse, at seven positions two inches apart; it also measured a length that varies from 46 to 58 inches with seat position. BarBend notes a lot of plastic and reports a two-year limited warranty. It was $249.99 on Marcy's site on 19 October 2026, and OutdoorGearLab lists it at about $210 on Amazon.",
+  },
+  {
+    id: "sunny-health-fitness-sf-rb422003",
+    name: "Sunny Health & Fitness SF-RB422003 Recumbent Bike",
+    category: "Compact recumbent with a chair-height seat",
+    badge: "Best Compact",
+    amazonUrl: "https://www.amazon.com/s?k=Sunny+Health+Fitness+SF-RB422003+Recumbent+Bike&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    reviewUrl: null,
+    priceRange: "$299–$359",
+    priceBounds: {"low":299,"high":359},
+    specs: "8 magnetic resistance levels · 220 lb max user · 52.4 x 26.4 in. footprint · 25.2–34.3 in. inseam · Bluetooth (SunnyFit app) · 3-yr frame, 180-day parts warranty",
+    pros: [
+      "A published seat height of 22.5 to 24.2 inches, close to a dining chair",
+      "The shortest recumbent here, at 52.4 inches, agreed by Sunny and BarBend",
+      "An inseam range from 25.2 inches, which suits shorter riders",
+      "Light, at about 66 lb, and stable for its weight according to BarBend",
+    ],
+    cons: [
+      "A 220 lb rating, the lowest here",
+      "Taller riders will run out of seat travel at an inseam of about 34 inches",
+      "A small display with basic metrics",
+    ],
+    bottomLine: "For smaller rooms and shorter riders under 220 lb who find low seats hard to rise from.",
+    description: "Sunny sells this as its Essentials Series Magnetic Smart Recumbent Bike, and BarBend named it its best recumbent for small spaces. Sunny and BarBend agree on eight levels of magnetic resistance, a 220 lb maximum user weight, a 52.4 by 26.4 by 42.5-inch footprint, a weight of about 66 lb and a warranty of three years on the frame and 180 days on other parts. What earns it a place on a seniors list is a figure few makers publish: a seat height of 22.5 to 24.2 inches, roughly that of a dining chair, which makes sitting down and standing up easier than on a low seat. Sunny gives an inseam range of 25.2 to 34.3 inches, which BarBend gives as a 34-inch maximum, so it suits shorter riders better than tall ones. It pairs with Sunny's free SunnyFit app over Bluetooth, though it works without it, and has floor stabilizers. Sunny had it at $299.99 against $359.99 on 19 October 2026. Sunny sells several similar recumbents under close names, so check the model number on the listing.",
+  },
+  {
+    id: "deskcycle-2",
+    name: "DeskCycle 2 Under Desk Bike Pedal Exerciser",
+    category: "Seated pedal exerciser",
+    badge: "Best Seated Pedal Option",
+    amazonUrl: "https://www.amazon.com/s?k=DeskCycle+2+Under+Desk+Bike+Pedal+Exerciser&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    reviewUrl: null,
+    priceRange: "$150–$160",
+    priceBounds: {"low":150,"high":160},
+    specs: "8 magnetic resistance levels · pedals 9 or 10 in. off the floor (adjustable-height version) · detachable LCD · 1-year warranty",
+    pros: [
+      "Nothing to climb onto: you pedal from a chair you already use",
+      "Low pedals, by its maker and in Garage Gym Reviews’ use",
+      "Eight magnetic levels and very quiet operation, per the tester",
+      "Pedals forwards and backwards; the display detaches so you can put it where you can read it",
+    ],
+    cons: [
+      "Listings give user weight limits of 270, 350 and 500 lb, so we have left it off",
+      "Light work rather than a full cardio session",
+      "The tester found the LCD hard to read and the floor stabilizer prone to detaching in transport",
+    ],
+    bottomLine: "For anyone for whom getting on any machine is a risk, or who wants to keep their legs moving while seated.",
+    description: "The DeskCycle 2 is the under-desk bike Garage Gym Reviews has used most and calls best overall, and for some older people it is the safest way to pedal at all, because there is nothing to mount. It sits on the floor in front of your chair. The reviewer used the adjustable-height version, which sets the pedals 9 or 10 inches off the floor, and found it low compared with other mini bikes. Resistance is magnetic across eight levels, which DeskCycle says reach about 39 lb, and the tester found the machine virtually silent. Use it from a heavy chair without wheels or a swivel, with the bike on a non-slip surface, because a pedal unit can creep forward and a rolling chair can move away from it. Garage Gym Reviews lists the price at $149.99 for the standard-height version and $159.99 for the adjustable one, and recommends the latter. Unit weight and user weight limits vary between listings, so we have left both off. The reported warranty is one year. Our under-desk guide compares it with seated ellipticals.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Home Gym", item: "https://www.treadmillreviewsusa.com/home-gym/" },
+        { "@type": "ListItem", position: 3, name: "Best Exercise Bikes for Seniors", item: "https://www.treadmillreviewsusa.com/best-exercise-bikes-for-seniors/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is the best exercise bike for seniors?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "For most older riders, a step-through recumbent such as the Schwinn 290: a seat with lumbar support, side handles for getting on and off, a 330 lb rating and simple controls. The Horizon 5.0R is a cheaper alternative with very fine resistance steps, and the Horizon 5.0U suits confident riders who prefer to sit upright.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is a recumbent or upright bike better for seniors?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A recumbent is usually better: the backrest supports your trunk, the seat is close to chair height, and a step-through frame makes it easy to get on and off. An upright suits riders who are steady on a bicycle seat, want a shorter machine or find reclining uncomfortable. If you choose an upright, pick a step-through frame.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the best stationary bike for seniors with balance problems?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A step-through recumbent with fixed handles beside the seat, or a seated pedal exerciser used from a sturdy chair, because neither asks you to balance on a saddle. Set it up on a level, non-slip floor with clear space on the side you get on. Ask your doctor or physiotherapist first if you have dizziness or a balance disorder.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much weight should an exercise bike hold for an older rider?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Choose a bike rated comfortably above your weight, ideally by 50 lb or more, because a higher rating usually means a steadier frame. The bikes on this page range from 220 lb for the compact Sunny to 350 lb for the SOLE LCR, with most at 300 to 330 lb.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Are pedal exercisers good for seniors?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "They are a good option for people who should not climb onto any machine, or who want to keep their legs moving while seated. They give lighter exercise than a full bike. Use one from a heavy chair without wheels, on a non-slip surface, so neither the chair nor the pedals can slide.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can someone else assemble an exercise bike for me?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Several makers sell delivery with assembly: on 19 October 2026 SOLE listed room-of-choice delivery with assembly for the LCR at $350 extra, and Schwinn listed a $299 White Glove option on the bike pages we checked. Terms change, so check at checkout. Otherwise, ask a family member or a local handyman service.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
+      datePublished: "2026-10-19",
+      dateModified: "2026-10-19",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+    ...PRODUCTS.map((product) => ({
+      "@type": "Product",
+      name: product.name,
+      description: product.description,
+      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.priceBounds
+        ? {
+            offers: {
+              "@type": "AggregateOffer",
+              priceCurrency: "USD",
+              lowPrice: product.priceBounds.low,
+              highPrice: product.priceBounds.high,
+              url: product.amazonUrl,
+            },
+          }
+        : {}),
+    })),
+    {
+      "@type": "ItemList",
+      name: title,
+      numberOfItems: 7,
+      itemListElement: PRODUCTS.map((product, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: product.name,
+        url: `https://www.treadmillreviewsusa.com/best-exercise-bikes-for-seniors/#${product.id}`,
+      })),
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-10-19",
+    modifiedTime: "2026-10-19",
+    author: "Shaheer Ali Khan",
+    section: "Fitness Equipment",
+    tags: [
+      "best exercise bike for seniors",
+      "best stationary bike for seniors",
+      "recumbent bike for seniors",
+      "step-through exercise bike",
+      "exercise bike for elderly",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "See Our Top Picks", link: "#quick-picks" }}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-bestexercisebikesforseniors" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-bestexercisebikesforseniors)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Buying Guide
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated October 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          Best Exercise Bikes <span class="text-[#5AA9FF]">for Seniors</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          The right bike for an older rider is the one that is easy to get on, comfortable to sit on and simple to start. Here are seven currently sold bikes — recumbent, step-through upright and a seated pedal exerciser — and the details that decide whether each one suits you.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#quick-picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            See the Picks
+          </a>
+          <a href="#which-type" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            Which Type Suits You
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
+          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">October 19, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="1.6k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">On the products below.</strong> We have not tested these
+          bikes, and no figure on this page is our own measurement. Each was confirmed on 19 October
+          2026 as currently sold on its maker's own US store (Schwinn, Horizon, SOLE, Marcy and Sunny
+          Health &amp; Fitness) or, for the DeskCycle 2, through an independent review that links its
+          listings, and its figures were checked on that date against at least one independent source:
+          hands-on reviews from Garage Gym Reviews, OutdoorGearLab and BarBend, or a second retailer
+          (Dick's Sporting Goods for the Horizon 5.0U). Our checking tools could not load Amazon's own
+          pages on 19 October. Independent reviewers have linked the Schwinn 290, Marcy ME-709 and
+          DeskCycle 2 to Amazon listings, and Schwinn, Horizon and Sunny sell through Amazon; we could
+          not confirm an Amazon listing for the SOLE LCR, which SOLE sells direct. Confirm the exact
+          model and seller on any listing before you order. A figure appears in a product's
+          specification line only where sources agree; where they conflicted we left it off the card
+          and say so in the text. Every brand was searched in the US Consumer Product Safety
+          Commission's recall database on 19 October 2026. Prices are those we saw on that date and
+          change often. We earn a commission if you buy through the Amazon links on this page; it does
+          not change which products we list or what we say about them.
+          <br><br>
+          <strong class="text-gray-900">What this page is, and is not.</strong> We review exercise
+          equipment; we are not giving medical, physiotherapy or rehabilitation advice, and nothing here
+          says a bike will treat or prevent any condition. If you have a heart condition or take
+          medication that affects your heart rate or blood pressure, have balance problems, dizziness,
+          osteoporosis, diabetes with foot or nerve problems, have had a joint replacement or other
+          surgery, or have an implanted medical device, ask your doctor or physiotherapist whether
+          cycling suits you and how hard to work before you buy or start.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="max-w-3xl mx-auto px-4 pt-8">
+      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
+        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
+        <ul class="list-none m-0 p-0">
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
+            <a href="#schwinn-290-recumbent-bike" class="font-bold text-gray-900 no-underline hover:underline">Schwinn 290 Recumbent Bike</a>
+            <a href="#schwinn-290-recumbent-bike" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Gentlest Progression:</span>
+            <a href="#horizon-5-0r-recumbent-bike" class="font-bold text-gray-900 no-underline hover:underline">Horizon 5.0R Recumbent Bike</a>
+            <a href="#horizon-5-0r-recumbent-bike" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Upright:</span>
+            <a href="#horizon-5-0u-upright-bike" class="font-bold text-gray-900 no-underline hover:underline">Horizon 5.0U Upright Bike</a>
+            <a href="#horizon-5-0u-upright-bike" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Premium:</span>
+            <a href="#sole-lcr" class="font-bold text-gray-900 no-underline hover:underline">SOLE LCR Recumbent Bike</a>
+            <a href="#sole-lcr" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget:</span>
+            <a href="#marcy-me-709" class="font-bold text-gray-900 no-underline hover:underline">Marcy ME-709 Recumbent Exercise Bike</a>
+            <a href="#marcy-me-709" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
+          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 7 Best Exercise Bikes for Seniors</a>
+          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Bikes</a>
+          <a href="#which-type" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Recumbent, Upright or Seated Pedal Exerciser: Which Suits You</a>
+          <a href="#getting-on" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Step-Through Height, Seat Height and Handles</a>
+          <a href="#console-resistance" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Readable Consoles and Low Starting Resistance</a>
+          <a href="#capacity-assembly" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Weight Capacity, Delivery and Assembly Help</a>
+          <a href="#starting-safely" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Starting Safely: Your Doctor, Balance and Effort</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          Most exercise bike rankings are written for people chasing harder workouts. An older rider
+          usually needs the opposite list of priorities: a frame you can walk into rather than swing a
+          leg over, a seat with a backrest at a height you can rise from, a console you can read without
+          glasses, resistance that starts genuinely easy, a weight rating with room to spare, and
+          someone to put the thing together. The seven bikes below were chosen on those terms, and the
+          guide after them explains how to judge each feature for yourself.
+        </p>
+
+        <div id="quick-picks" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+<p>
+            <strong>The best exercise bike for most seniors is a step-through recumbent such as the
+            Schwinn 290</strong>: a backrest, a chair-like seat, a 330 lb rating and a frame you walk
+            into rather than climb onto. The Horizon 5.0R does the same job for less on sale with very
+            fine resistance steps, and anyone who prefers to sit upright can have a step-through upright
+            frame in the Horizon 5.0U. The rest of the list covers a premium recumbent with paid
+            assembly, two budget recumbents and a seated pedal exerciser for people who would rather
+            stay in their own chair.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead><tr>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Pick</th>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Best for</th>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Why</th>
+            </tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Schwinn 290 Recumbent</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best overall</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Step-through frame, lumbar-support seat, 330 lb rating, side handles</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon 5.0R Recumbent</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Gentlest progression</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">100 resistance levels in small steps, lifetime frame warranty</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon 5.0U Upright</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Riders who prefer upright</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Step-through upright frame, high-contrast display, compact</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">SOLE LCR</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Premium, delivered and built</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">350 lb rating, cushioned seat, room-of-choice assembly option</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Marcy ME-709</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Tight budget</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Low, open step-through and a 300 lb rating for about $250</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sunny SF-RB422003</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Small rooms, shorter riders</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Published seat height close to a dining chair; 52 in. long</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">DeskCycle 2</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Pedaling from your own chair</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Low pedals, eight magnetic levels, nothing to climb onto</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            If you are comparing recumbents on their own, our
+            <a href="/best-recumbent-bikes/" class="text-[#0F62FE] font-medium">best recumbent bikes</a>
+            guide goes deeper on seat travel and footprint, and the
+            <a href="/best-exercise-bikes/" class="text-[#0F62FE] font-medium">best exercise bikes</a>
+            roundup covers indoor cycling bikes for harder training. Every guide in this series sits in
+            the <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a>.
+          </p>
+        </div>
+
+        <div id="picks" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 7 Best Exercise Bikes for Seniors</h2>
+<p>
+            Each card gives the figures we could confirm from two sources, the price range we saw and
+            who the bike suits. For an older rider, read three things first: how you get on, what the
+            seat supports, and the weight rating. A bike that is awkward to mount will not be used,
+            however good its console.
+          </p>
+          <p>
+            The first two are the safest recommendations for most people. The others exist because a
+            preference for sitting upright, a bigger budget, a smaller one, a small room or a wish to
+            pedal from an armchair each changes the answer.
+          </p>
+        </div>
+      </div>
+
+      <!-- Product cards -->
+      <div class="not-prose">
+        {
+          PRODUCTS.map((product, index) => (
+            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
+              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
+                  <div>
+                    <h3 class="text-white font-black text-xl leading-tight m-0">
+                      {index + 1}. {product.name}
+                    </h3>
+                    <p class="text-gray-400 text-xs">{product.category}</p>
+                  </div>
+                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                    {product.badge}
+                  </span>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center gap-2 mb-4 flex-wrap">
+                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
+                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
+                  </div>
+                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
+                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
+                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
+                      <ul class="space-y-2">
+                        {product.pros.map((pro) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
+                      <ul class="space-y-2">
+                        {product.cons.map((con) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="border-t border-gray-100 pt-4">
+                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
+                    <div class="flex flex-wrap items-center gap-3">
+                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+                        {product.amazonLabel} &rarr;
+                      </a>
+                      {product.reviewUrl && (
+                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
+                          Read our full {product.name} review &rarr;
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="how-we-chose" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Bikes</h2>
+<p>
+            We have not tested these bikes. They were chosen from manufacturer product pages and
+            specification tables, warranty terms, recall records and independent hands-on coverage, and
+            the claims on this page are limited to what those sources support. The site's
+            <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">editorial standards</a>
+            explain the process in full.
+          </p>
+          <p>
+            <strong>What we looked for.</strong> We started from the access and comfort features that
+            matter most to older riders and worked back to bikes: a step-through frame described as such
+            by the maker and by an independent source; a seat with a backrest, or for the upright and
+            the pedal exerciser a clear reason to go without; a console that is either simple or easy to
+            read; resistance that starts low and changes in small steps; a weight rating agreed between
+            sources; and a maker that offers delivery, assembly or both. Every bike also had to be on
+            sale from its maker or a major retailer on 19 October 2026.
+          </p>
+          <p>
+            <strong>Consistency with our other guides.</strong> Four of these bikes also appear in our
+            <a href="/best-recumbent-bikes/" class="text-[#0F62FE] font-medium">recumbent bike roundup</a>,
+            checked the same day, and their figures here are the same. The DeskCycle 2 figures match our
+            <a href="/best-under-desk-ellipticals/" class="text-[#0F62FE] font-medium">under-desk ellipticals and bikes</a>
+            guide.
+          </p>
+          <p>
+            <strong>Recalls.</strong> We searched the CPSC recall database for Schwinn, Horizon and its
+            parent Johnson Health Tech, SOLE, Marcy and its maker Impex, Sunny Health &amp; Fitness,
+            DeskCycle, Peloton, BowFlex and Nautilus on 19 October 2026. We found no recall of any bike
+            on this page. The older recalls we did find were for other products: Horizon treadmills in
+            2022, Schwinn-branded ellipticals sold by Nautilus in 2011, BowFlex adjustable dumbbells in
+            2025 and Impex dumbbell handles in 2021. If you are buying used, search the exact model
+            number on cpsc.gov first.
+          </p>
+          <p>
+            <strong>What we left out, and why.</strong> The original Peloton Bike+ (model PL02) was
+            recalled in November 2025 over a seat post that can break, after Peloton's 2023 recall of
+            about 2.2 million original Bikes (PL01) for the same kind of failure; neither belongs on a
+            list for riders for whom a fall is a serious matter, and the recalled units are still sold
+            second-hand. We also left out indoor cycling bikes, whose high saddles and forward-leaning
+            position are the wrong starting point for most older riders; budget folding "X-bikes", whose
+            light frames and small seats suit occasional use rather than daily riding by someone who
+            needs stability; and the Schwinn 130 upright, a good-value bike whose console Garage Gym
+            Reviews notes is not backlit and whose frame Schwinn does not describe as step-through. Air
+            bikes are excluded too: their resistance rises steeply with effort, which is the opposite of
+            a gentle start.
+          </p>
+        </div>
+
+        <div id="which-type" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Recumbent, Upright or Seated Pedal Exerciser: Which Suits You</h2>
+<p>
+            "Exercise bike" and "stationary bike" cover three quite different machines for an older
+            rider. Choose the type first; the model matters much less.
+          </p>
+          <p>
+            <strong>Recumbent bikes</strong> put you in a reclined seat with a backrest and the pedals in
+            front. A step-through recumbent is the most accessible bike you can buy: you walk into the gap
+            beside the seat, sit down as you would on a chair, and lift your feet onto the pedals. The
+            backrest supports your trunk, so you are not balancing on a saddle, and a fall while riding is
+            very unlikely. The costs are length — the recumbents here run from about 52 to 66 inches —
+            and a slightly gentler workout for the hips, because the leg angle differs from walking. For
+            most people over 65 who want regular cardio and are unsure about balance, this is the type to
+            start with.
+          </p>
+          <p>
+            <strong>Step-through uprights</strong> keep the familiar sit-up position of a bicycle, with
+            the pedals beneath you, but lower the frame so you do not need to swing a leg over a high bar.
+            They are shorter than recumbents, often by 20 inches, and the pedaling position is closer to
+            outdoor cycling. You sit on a saddle without a backrest, though, so they suit riders who are
+            steady on their feet and comfortable on a bicycle seat. The Horizon 5.0U is the example on
+            this page. Some people with back pain find the upright position harder; others find it
+            easier than reclining. Try both if you can.
+          </p>
+          <p>
+            <strong>Seated pedal exercisers</strong> are small pedal units you put on the floor in front
+            of your own chair or under a desk. There is nothing to get on at all, which makes them the
+            right answer for anyone for whom climbing onto any machine is a risk, and for keeping legs
+            moving during long periods of sitting. They are light work rather than a cardio session, the
+            unit can slide unless it is stabilized, and you need a sturdy chair without wheels. Our
+            <a href="/best-under-desk-ellipticals/" class="text-[#0F62FE] font-medium">under-desk ellipticals and bikes</a>
+            guide covers them in detail; the DeskCycle 2 is the one we list here.
+          </p>
+          <p>
+            <strong>And two alternatives.</strong> If you want your arms working too while seated, a
+            recumbent cross trainer — a seated stepper with moving handles — is often a better fit than
+            a bike; see our guide to the
+            <a href="/best-recumbent-ellipticals/" class="text-[#0F62FE] font-medium">best recumbent ellipticals</a>.
+            And if you want something weight-bearing, which a bike is not, the
+            <a href="/best-ellipticals-for-seniors/" class="text-[#0F62FE] font-medium">best ellipticals for seniors</a>
+            and
+            <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">best treadmills for seniors</a>
+            guides cover standing machines chosen on the same safety terms.
+          </p>
+        </div>
+
+        <div id="getting-on" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Step-Through Height, Seat Height and Handles</h2>
+<p>
+            Getting on and off is where most falls around exercise bikes happen, and it is the feature
+            listings describe least precisely. Almost no maker publishes a step-over height, so use the
+            evidence you can get.
+          </p>
+          <p>
+            <strong>Step-over.</strong> "Step-through" only means there is no high bar to swing a leg
+            over. How low and how wide the gap is still varies. OutdoorGearLab, which reviewed both,
+            found the Marcy ME-709's step-through lower and more open than the Schwinn 290's, which has a
+            narrower channel for your foot. Side-on photographs and independent reviews are the best guide;
+            if you can, stand beside the bike in a store and step in once before buying.
+          </p>
+          <p>
+            <strong>Seat height.</strong> A seat close to the height of a dining chair is the easiest to
+            sit on and rise from. Sunny publishes a seat height of 22.5 to 24.2 inches for its
+            SF-RB422003, which is in that range; few other makers give the figure. If rising from low
+            chairs is hard for you, ask the seller for the seat height at its lowest and highest settings,
+            or measure in a store.
+          </p>
+          <p>
+            <strong>Handles.</strong> Fixed handles beside the seat give you something to hold as you
+            lower yourself and stand up, and should not flex when you lean on them. Horizon lists
+            handlebars at the console and beside the seat on the 5.0R, Schwinn lists stationary handlebars
+            for getting on and off on the 290, and the Marcy has contoured, padded handlebars beside the
+            seat. Moving handles are a different thing: on a bike with moving arms, or a cross trainer,
+            never use them to steady yourself while mounting.
+          </p>
+          <p>
+            <strong>Pedals and straps.</strong> Weighted pedals hang the right way up, so you do not have
+            to flip them with a foot. The Schwinn 290 and Marcy ME-709 have weighted pedals with
+            straps; keep straps snug enough that a foot cannot slide off but loose enough to
+            remove quickly.
+          </p>
+          <p>
+            A simple routine makes any bike safer to mount. Put it on a level, non-slip floor — a firm
+            <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">equipment mat</a> helps on
+            hard floors — and leave clear space on the side you get on. Stand beside the seat, hold the
+            fixed handle, sit fully, then lift one foot at a time onto the pedals. Reverse it to get off,
+            and wait until the pedals have stopped. Our
+            <a href="/best-recumbent-bikes/" class="text-[#0F62FE] font-medium">recumbent bike guide</a>
+            covers seat travel and back support in more depth.
+          </p>
+        </div>
+
+        <div id="console-resistance" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Readable Consoles and Low Starting Resistance</h2>
+<p>
+            Two features rarely make the headline of a bike listing and matter a great deal to an older
+            rider: whether you can read and operate the console, and how easy the easiest setting is.
+          </p>
+          <p>
+            <strong>Consoles.</strong> Bigger is not always better. A large touchscreen is easy to read
+            but can bury the controls you need under menus, while a plain display with a few labelled
+            buttons can be simpler to use. Look for high contrast and a backlight. Horizon describes the
+            5.0R and 5.0U displays as high-contrast LCDs with a 60 by 127 mm window; the SOLE LCR has a
+            10.1-inch touchscreen whose menus Garage Gym Reviews found shallow and easy to navigate;
+            Schwinn's 290 has a 7-inch LCD. At the simple end, the Marcy shows time, speed, distance and
+            calories on a basic LCD with a resistance knob, which some people find easier than buttons.
+            Check, too, whether the bike needs an app to do anything useful. None of these does: every
+            bike here can be started with a single button or by simply pedaling.
+          </p>
+          <p>
+            <strong>Low starting resistance.</strong> Makers publish the number of levels, not how light
+            the lightest one is, so the resistance count is only a rough guide. What it does tell you is
+            the size of each step. A bike with 100 levels, like the Horizon 5.0R and 5.0U, lets you add
+            effort in very small increments, which suits anyone building up slowly; a bike with eight
+            levels, like the Marcy, jumps further between settings. All the bikes here use magnetic or
+            electronically controlled magnetic resistance, which is quiet, smooth and adjustable without
+            stopping. We would not choose a friction-pad bike for a beginner of any age, because the
+            resistance knob is harder to set consistently.
+          </p>
+          <p>
+            <strong>Programs and heart rate.</strong> Built-in programs are optional extras. A manual
+            mode, where you choose a level and pedal, is what most older riders use most. If your doctor
+            has given you a heart-rate range, a chest strap is more reliable than handle grips; several of
+            these bikes accept Bluetooth straps, and our
+            <a href="/best-heart-rate-monitors-for-treadmill/" class="text-[#0F62FE] font-medium">heart-rate monitor guide</a>
+            covers straps that work with bikes too. If you take a beta blocker or similar medication,
+            heart-rate targets may not apply to you at all; ask your doctor how to judge effort instead.
+          </p>
+        </div>
+
+        <div id="capacity-assembly" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Weight Capacity, Delivery and Assembly Help</h2>
+<p>
+            <strong>Weight capacity.</strong> The maximum user weight is a structural rating, and a
+            margin above your own weight usually means a steadier frame. The bikes here are rated from
+            220 lb (the compact Sunny) to 350 lb (the SOLE LCR); the Schwinn 290 is rated for 330 lb and
+            the Horizons and Marcy for 300 lb. If you are close to a bike's rating, choose the next one up.
+          </p>
+          <p>
+            <strong>Delivery.</strong> Most of these bikes arrive in a large box on a parcel or freight
+            service, usually to the front door or curb. Schwinn's and SOLE's sites both offer paid
+            upgrades: on 19 October SOLE listed curbside delivery for the LCR at $49.99, room-of-choice
+            delivery for $200 more and room-of-choice delivery with assembly for $350 more, figures Garage
+            Gym Reviews also gives, and Schwinn listed a $299 White Glove option, with delivery to a room
+            of choice and full assembly, on the bike pages we checked. Delivery terms change, so check the
+            current options at checkout.
+          </p>
+          <p>
+            <strong>Assembly.</strong> Even a "mostly assembled" bike usually needs the seat, handlebars,
+            pedals and console fitted. Garage Gym Reviews says the SOLE LCR arrives mostly assembled and
+            should take under 30 minutes, but heavier bikes are a two-person job to unpack and position:
+            the LCR weighs 152 lb, the Schwinn 290 about 108 lb and the Horizon 5.0R 123 lb by their
+            makers' figures. If you live alone, are recovering from surgery or simply do not want to lift
+            and kneel for an hour, pay for assembly or ask a family member to do it, and do not ride until
+            every bolt has been checked once more after the first week.
+          </p>
+          <p>
+            <strong>Returns and funding.</strong> Schwinn's and Horizon's sites both described a 30-day
+            return window on 19 October, with shipping deducted on Schwinn's; SOLE listed a 30-day
+            satisfaction guarantee. Check terms before you buy, because returning a 100 lb bike is a
+            nuisance. SOLE says the LCR is HSA/FSA eligible; whether you can use those funds depends on
+            your plan, and our page on whether
+            <a href="/are-treadmills-hsa-fsa-eligible/" class="text-[#0F62FE] font-medium">fitness machines are HSA/FSA eligible</a>
+            explains how that usually works.
+          </p>
+        </div>
+
+        <div id="starting-safely" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Starting Safely: Your Doctor, Balance and Effort</h2>
+<p>
+            This is an equipment guide, so this section is about using the machine sensibly, not about
+            what exercise is right for your body. That is a conversation for your doctor or
+            physiotherapist, and it is worth having before you buy if any of the conditions in the note
+            at the top of this page applies to you.
+          </p>
+          <p>
+            <strong>Why bikes suit many older riders.</strong> Pedaling is non-weight-bearing and has no
+            impact, the seat takes the work of balancing away, and on a recumbent the backrest supports
+            your trunk. For people who feel unsteady on a treadmill or outdoors, that combination makes
+            regular cardio realistic.
+          </p>
+          <p>
+            <strong>What a bike does not do.</strong> It provides little of the weight-bearing load that
+            helps maintain bone density, and it does not train balance or walking. Many people combine a
+            bike with walking and some strength work for that reason, and a physiotherapist can suggest
+            balance exercises that suit you. If balance is the problem you are trying to solve, a bike is
+            the safe way to do cardio while you work on it, not the cure.
+          </p>
+          <p>
+            <strong>Effort.</strong> Start at the lowest level for a few minutes, at a pace at which you
+            could hold a conversation, and build the time before you build the resistance. Stop and get
+            advice if you feel chest pain or pressure, unusual breathlessness, dizziness or
+            light-headedness, or pain in a joint that does not settle. Stand up slowly at the end, holding
+            the fixed handle, because some people feel light-headed when they rise after exercise.
+          </p>
+          <p>
+            <strong>Implanted devices.</strong> SOLE warns on its product pages that some of its machines
+            include wireless charging, which emits a magnetic field that may interfere with implanted
+            medical devices, and that anyone with such a device should consult their doctor before use.
+            The LCR lists wireless charging. If you have a pacemaker or another implant, ask your doctor
+            or the device maker about any machine with wireless charging or strong magnets.
+          </p>
+          <p>
+            <strong>Joint replacements.</strong> If you have had a hip or knee replaced, ask your surgeon
+            or physiotherapist when you can start and how far forward the seat may go, because some
+            post-operative precautions limit how far the hip should bend. Our page on whether
+            <a href="/are-treadmills-bad-for-your-knees/" class="text-[#0F62FE] font-medium">treadmills are bad for your knees</a>
+            and the
+            <a href="/treadmill-vs-exercise-bike/" class="text-[#0F62FE] font-medium">treadmill vs exercise bike</a>
+            comparison cover the wider trade-offs between walking and cycling.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What is the best exercise bike for seniors?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                For most older riders, a step-through recumbent such as the Schwinn 290: a seat with lumbar support, side handles for getting on and off, a 330 lb rating and simple controls. The Horizon 5.0R is a cheaper alternative with very fine resistance steps, and the Horizon 5.0U suits confident riders who prefer to sit upright.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is a recumbent or upright bike better for seniors?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                A recumbent is usually better: the backrest supports your trunk, the seat is close to chair height, and a step-through frame makes it easy to get on and off. An upright suits riders who are steady on a bicycle seat, want a shorter machine or find reclining uncomfortable. If you choose an upright, pick a step-through frame.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What is the best stationary bike for seniors with balance problems?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                A step-through recumbent with fixed handles beside the seat, or a seated pedal exerciser used from a sturdy chair, because neither asks you to balance on a saddle. Set it up on a level, non-slip floor with clear space on the side you get on. Ask your doctor or physiotherapist first if you have dizziness or a balance disorder.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How much weight should an exercise bike hold for an older rider?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Choose a bike rated comfortably above your weight, ideally by 50 lb or more, because a higher rating usually means a steadier frame. The bikes on this page range from 220 lb for the compact Sunny to 350 lb for the SOLE LCR, with most at 300 to 330 lb.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Are pedal exercisers good for seniors?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                They are a good option for people who should not climb onto any machine, or who want to keep their legs moving while seated. They give lighter exercise than a full bike. Use one from a heavy chair without wheels, on a non-slip surface, so neither the chair nor the pedals can slide.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Can someone else assemble an exercise bike for me?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Yes. Several makers sell delivery with assembly: on 19 October 2026 SOLE listed room-of-choice delivery with assembly for the LCR at $350 extra, and Schwinn listed a $299 White Glove option on the bike pages we checked. Terms change, so check at checkout. Otherwise, ask a family member or a local handyman service.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying an Exercise Bike for a Senior</h2>
+          <p class="text-gray-700 leading-relaxed">Each of these comes up often when a bike is bought for an older rider, often by a well-meaning relative.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a spin bike because it is the best-reviewed</h3>
+              <p class="text-gray-700 text-sm m-0">Indoor cycling bikes top most rankings, and they are the wrong machine for most older riders: a high saddle, a forward lean and no backrest. Start from how the person will get on and sit, then look at reviews. For most, that means a step-through recumbent.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Choosing on the screen instead of the console controls</h3>
+              <p class="text-gray-700 text-sm m-0">A large touchscreen looks easy and can hide basic controls behind menus, logins and app prompts. Check that the bike can be started with one button or simply by pedaling, that the display has high contrast or a backlight, and that resistance can be changed without looking for it.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Starting at a level that feels like exercise</h3>
+              <p class="text-gray-700 text-sm m-0">Many new riders pick a resistance that feels like a workout on day one and are sore or put off by day three. Start at the lowest level for a few minutes at a conversational pace, build the time over weeks, and only then add resistance in small steps.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Leaving assembly to the person who will ride it</h3>
+              <p class="text-gray-700 text-sm m-0">Unboxing and building a 100 lb bike means lifting, kneeling and tightening bolts for an hour or more. For an older buyer, pay for assembly or arrange help, and recheck the bolts, pedals and seat lock after the first week of use.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/best-recumbent-bikes/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Recumbent Bikes</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Recumbent Bikes</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Seat travel, back support, weight limits and footprint across five recumbents.</p>
+            </a>
+            <a href="/best-treadmills-for-seniors/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Walking</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills for Seniors</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Handrails, step-up height and legible consoles for older walkers.</p>
+            </a>
+            <a href="/best-exercise-bikes/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Bikes</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Exercise Bikes</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Indoor cycling bikes for harder training, with fit, flywheel and app advice.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">For most seniors, buy a step-through recumbent: the Schwinn 290</strong>,
+            or the Horizon 5.0R if you want to spend less and build up in very small steps. Choose the
+            Horizon 5.0U only if you are steady on a bicycle seat and prefer to sit upright, the SOLE LCR
+            if you want a heavier-duty bike delivered and built, and the Marcy or Sunny if budget or space
+            decides. If getting onto any machine is the problem, a pedal exerciser from your own chair is
+            the honest answer.
+          </p>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            Whatever you choose, put it on a level, non-slip floor, mount it the same careful way every
+            time, and start easier than feels necessary. And talk to your doctor first if you have a heart,
+            balance or joint condition. If you want weight-bearing exercise too, our guide to
+            <a href="/best-treadmills-for-seniors/" class="text-[#5AA9FF] font-bold no-underline">treadmills for seniors</a>
+            covers walking machines chosen on the same terms.
+          </p>
+        </div>
+
+        <!-- Meet the Author -->
+        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
+          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
+          <div>
+            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
+            <p class="text-sm font-bold text-gray-900 m-0">
+              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
+              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+            </p>
+            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
+              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
+              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
+              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
+              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
+              running ergonomics, noise and long-term durability. Every guide says what was checked and
+              when, and says plainly when a product has not been tested hands-on.
+              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
+              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </article>
+</Layout>

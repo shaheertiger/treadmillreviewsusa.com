@@ -3020,6 +3020,24 @@ export const SECTIONS: Section[] = [
             badge: 'Vibration',
             url: '/best-vibration-plates/',
           },
+          {
+            title: 'Best Exercise Bikes for Seniors',
+            description: 'Step-through recumbents, an upright and a pedal exerciser chosen for easy, safe access.',
+            badge: 'Seniors',
+            url: '/best-exercise-bikes-for-seniors/',
+          },
+          {
+            title: 'Best Ellipticals for Seniors',
+            description: 'Low step-up standing ellipticals and seated cross trainers for older users.',
+            badge: 'Seniors',
+            url: '/best-ellipticals-for-seniors/',
+          },
+          {
+            title: 'Best Recumbent Ellipticals',
+            description: 'Seated cross trainers compared: stepping motion, arm handles, swivel seats and footprint.',
+            badge: 'Seated',
+            url: '/best-recumbent-ellipticals/',
+          },
         ],
       },
       {
