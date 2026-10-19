@@ -1,0 +1,990 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "Best Trap Bar (2026): 5 Open and Closed Hex Bars Compared";
+const description =
+  "Five trap bars checked against maker specs and reviews: open vs closed hex bars, handle heights, sleeve length, bar weight, rack fit and the room they need.";
+
+const PRODUCTS = [
+  {
+    id: "rep-open-trap-bar",
+    name: "REP Fitness Open Trap Bar",
+    category: "Open trap bar with removable handles",
+    badge: "Best Overall",
+    amazonUrl: "https://www.amazon.com/s?k=open+trap+bar&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
+    reviewUrl: null,
+    priceRange: "$399.99–$439.99",
+    priceBounds: {"low":399.99,"high":439.99},
+    specs: "58.4 lb frame, 71–92 lb with handles · 84.3 in. long · 16.5 in. sleeves · 1,350 lb rating (maker) · rackable on racks up to 49 in. · 5-year warranty",
+    pros: [
+      "Open frame with a built-in jack makes loading and lunges easy",
+      "Choice of narrow, standard, wide or rotating handles, which can be removed for cambered squats",
+      "Long 16.5-inch hard-chrome sleeves take five bumper plates a side by REP’s figures",
+      "REP says it racks flush on racks up to 49 inches wide",
+    ],
+    cons: [
+      "Heavier than its 58.4 lb frame weight suggests once handles are fitted",
+      "Garage Gym Reviews found it less rigid than the most expensive open bars",
+      "REP says it is designed for home use, not commercial gyms",
+    ],
+    bottomLine: "The best all-round trap bar for most home gyms. Choose the standard handles unless you know you need narrow or wide.",
+    description: "REP's Open Trap Bar is the pick both Garage Gym Reviews and BarBend name as their best overall trap bar, and the specification is why. The frame is open at the back, with a built-in jack, and the handles bolt on: you choose narrow (23 inches apart), standard (25 inches), wide (27.3 inches) or rotating multi-grip handles (24.6 inches), and you can remove them to use the frame as a cambered squat bar, with a 6-inch knurled patch where it sits on your back. REP lists a 58.4 lb frame, an 84.3-inch overall length, 16.5-inch hard-chrome sleeves and a 1,350 lb rating, and Garage Gym Reviews' table gives the same frame weight, length, sleeves and rating. Note what the frame weight leaves out: with the standard handles REP gives a total of 74.3 lb, and 92.4 lb with the rotating handles. REP says the bar racks flush on racks up to 49 inches wide and gives it a five-year warranty, which BarBend repeats, and states it is designed for home rather than commercial use. The criticisms are a slightly less rigid feel than premium open bars and wide handles that some find too wide. On 19 October 2026 it was $399.99 with fixed handles and $439.99 with rotating handles on REP's store; we could not find it on Amazon US.",
+  },
+  {
+    id: "rogue-tb-2",
+    name: "Rogue TB-2 Trap Bar",
+    category: "Closed hex bar, made in the USA",
+    badge: "Best Closed Hex Bar",
+    amazonUrl: "https://www.amazon.com/s?k=trap+bar&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
+    reviewUrl: null,
+    priceRange: "About $415",
+    priceBounds: {"low":415,"high":415},
+    specs: "60 lb · 88.5 in. long · 16 in. sleeves (1.91 in., axle collars advised) · two knurled handle heights, 25 in. apart · no published weight rating · made in USA",
+    pros: [
+      "Rigid welded frame from 1.5-inch square tubing, made in the USA",
+      "Flip the bar to switch between raised and in-line handles",
+      "16-inch sleeves, long for a closed hex bar",
+      "Long enough to rest in a rack for rack pulls and presses",
+    ],
+    cons: [
+      "Rogue does not publish a weight rating",
+      "Powder-coated sleeves wear as plates slide on and off",
+      "Sold only through Rogue, so there is no Amazon listing",
+    ],
+    bottomLine: "The closed hex bar to buy if you want a rigid, rackable bar for deadlifts, shrugs and carries and do not need an open frame.",
+    description: "The TB-2 is Rogue's dual-handle closed trap bar: a hexagonal frame welded from 1.5-inch square steel tubing, with two sets of knurled 1.34-inch handles spaced 25 inches on centre, one raised and one in line with the sleeves. Flip the bar over to switch between them. Rogue lists it at 60 lb with an 88.5-inch length and 16 inches of loadable sleeve, and BarBend's review gives the same weight, length, sleeve length and handle spacing; BarBend measured the raised handles at about 8.25 inches off the ground. The sleeves are 1.91-inch schedule 80 pipe, so Rogue recommends axle collars rather than standard barbell collars. Rogue does not publish a weight rating, and BarBend says Rogue would not give one when asked, though both review sites found no flex in use. The whole bar, sleeves included, is powder coated, which Rogue itself warns will wear where plates slide on. Garage Gym Reviews notes that for a similar price you could buy an open bar; the TB-2 makes sense if you mostly deadlift and value a rigid, made-in-USA frame. It was $415 on Rogue's store on 19 October 2026, sold direct only.",
+  },
+  {
+    id: "titan-open-trap-bar",
+    name: "Titan Fitness Open Trap Bar",
+    category: "Heavy-duty open trap bar with built-in jack",
+    badge: "Best for Heavy Pulling",
+    amazonUrl: "https://www.amazon.com/s?k=open+trap+bar&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
+    reviewUrl: null,
+    priceRange: "About $465",
+    priceBounds: {"low":465,"high":465},
+    specs: "65 lb · 88.5 in. long · 16 in. hard-chrome sleeves · 1,500 lb rating (maker) · fixed 32 mm and 38 mm handles · built-in jack",
+    pros: [
+      "The highest weight rating on this page, from an 11-gauge steel frame",
+      "Thin and fat handles at two heights train grip as well as legs",
+      "Built-in jack with large feet for stable loading",
+      "Titan says it racks in most standard power racks",
+    ],
+    cons: [
+      "At 65 lb it is a heavy starting weight for beginners and presses",
+      "The jack raises the plates high, so tipping the loaded bar back down takes effort",
+      "Showed as backordered on Titan’s store on 19 October 2026",
+    ],
+    bottomLine: "For strong lifters who want an open bar built for heavy pulling and do not mind the weight or length.",
+    description: "Titan's Open Trap Bar is built for heavy pulls. Titan lists an 11-gauge powder-coated frame with hard-chrome sleeves, a 65 lb empty weight, an 88.5-inch length, 16 inches of loadable sleeve and a 1,500 lb rating, and Garage Gym Reviews' review and roundup give the same weight, length, sleeve length and rating; BarBend agrees on the length, sleeves and rating and names it its best trap bar for deadlifts. The handles are fixed: a 32 mm pair and a 38 mm pair at different heights, 23 inches apart by Titan's figure, so you can train grip with the fat handles or pull heavier with the thin ones. The built-in jack has large 7 by 2.5-inch feet. Garage Gym Reviews' tester liked the medium knurl and the frame's strength, but warns that the jack lifts the plates about 16 inches off the floor, so tipping a loaded bar back down feels like an extra lift, and that 65 lb is a heavy start for beginners. Titan says it fits most standard power racks. On 19 October 2026 it was $464.99 on Titan's store, available to backorder rather than in stock, which is higher than the $349 both review sites quote. We could not find it on Amazon US.",
+  },
+  {
+    id: "titan-rackable-hex",
+    name: "Titan Fitness Rackable Hex Trap Bar",
+    category: "Closed, rackable hex bar",
+    badge: "Best Value Closed Bar",
+    amazonUrl: "https://www.amazon.com/s?k=Titan+Fitness+Rackable+Hex+Trap+Bar&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    reviewUrl: null,
+    priceRange: "$350–$440",
+    priceBounds: {"low":350,"high":440},
+    specs: "800 lb rating (maker) · 16 in. sleeves · standard and raised neutral handles · racks in most power racks · 60 lb and 85 in. long (Titan figures)",
+    pros: [
+      "Long 16-inch sleeves on a closed bar for well under the price of the TB-2 when on sale",
+      "Two handle heights in one frame",
+      "Rackable, so it starts rack pulls and presses from the J-cups",
+      "BarBend’s tester rated its versatility highly",
+    ],
+    cons: [
+      "An 800 lb rating is lower than the open bars here",
+      "BarBend found the black powder coat scuffs quickly",
+      "Titan’s page gives two different handle diameters",
+    ],
+    bottomLine: "A closed, rackable bar for lifters who want the TB-2’s layout at a lower sale price and do not need a made-in-USA frame.",
+    description: "Titan's Rackable Hex Trap Bar is a closed hex frame with standard and raised neutral handles and sleeves long enough to rest in a power rack's J-hooks. Titan lists an 800 lb rating and 16 inches of loadable sleeve, and BarBend, which names an earlier listing of it its best rackable trap bar, gives the same rating and sleeve length. Titan's page also gives a 60 lb weight, an 85-inch length and a 22-inch handle spread, which we could not check against an independent source, so they are labelled as Titan's figures. Titan's description says the handles are 28 mm while its specification table says 32 mm, so we have left the diameter off the card. BarBend's tester liked the rackable length and the room to set up for rack pulls, and its main criticism was a black powder coat that scuffed and scratched with use, though without rust. On 19 October 2026 it was on sale at $349.97 on Titan's store against a $439.99 list price. Treat the 800 lb rating as Titan's claim: it is lower than the open bars on this page, though still more than most home lifters will put on a trap bar. We could not confirm an Amazon US listing.",
+  },
+  {
+    id: "bells-of-steel-open-trap-bar",
+    name: "Bells of Steel Open Trap Bar / Hex Bar",
+    category: "Compact open trap bar with jack",
+    badge: "Best for Short Rooms",
+    amazonUrl: "https://www.amazon.com/s?k=Bells+of+Steel+Open+Trap+Bar+Hex+Bar+700+lb&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    reviewUrl: null,
+    priceRange: "$299.99–$323.99",
+    priceBounds: {"low":299.99,"high":323.99},
+    specs: "About 46–47 lb · 59 in. long · 9.7 in. sleeves · 700 lb rating (maker) · 25 mm knurled handles at two heights · built-in jack · limited lifetime warranty",
+    pros: [
+      "At 59 inches, by far the shortest bar here, so it fits small rooms",
+      "Open frame, built-in jack and two handle heights at the lowest price on this page",
+      "Thin 25 mm handles are easier for smaller hands on carries",
+      "Sold on Amazon US as well as Bells of Steel’s own store",
+    ],
+    cons: [
+      "Short 9.7-inch sleeves limit how many bumper plates fit",
+      "Lowest weight rating on this page at 700 lb",
+      "Garage Gym Reviews reports some flex near its limit and inconsistent knurling",
+    ],
+    bottomLine: "The open bar for small rooms, lighter lifters and Amazon buyers. Skip it if you load bumper plates heavily.",
+    description: "Bells of Steel's Open Trap Bar puts an open frame, a built-in deadlift jack and two handle heights into a much shorter bar than its rivals. Bells of Steel lists it at 46.3 lb, 59 inches long, with 9.7-inch white-zinc sleeves, 25 mm handles and a 700 lb rating, and Garage Gym Reviews gives 47 lb, 59 inches, 25 mm handles and 700 lb; BarBend agrees on the 700 lb rating, 9.7-inch sleeves and 59-inch length. (Garage Gym Reviews' text also mentions a 17.1-inch sleeve, which contradicts its own table, so we have used 9.7 inches.) The short sleeves are the main limitation: on a simple proportion from REP's figures, they take roughly two or three bumper plates a side. Garage Gym Reviews also reports inconsistent knurling, some bending at higher weights and poor packaging, while BarBend's tester found the medium knurl comfortable. Bells of Steel gives a limited lifetime warranty and does not describe the bar as rackable. On 19 October 2026 it was $323.99 on Bells of Steel's US store and listed at $299.99 on Amazon US, where the listing title describes a rotating jack.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Home Gym", item: "https://www.treadmillreviewsusa.com/home-gym/" },
+        { "@type": "ListItem", position: 3, name: "Best Trap Bars", item: "https://www.treadmillreviewsusa.com/best-trap-bars/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is the best trap bar for a home gym?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "For most home gyms, an open trap bar with long sleeves, two handle heights and a built-in jack, such as the REP Fitness Open Trap Bar, is the most versatile choice. If you mainly deadlift and shrug, a closed hex bar such as the Rogue TB-2 or Titan's Rackable Hex Trap Bar does the job and takes less room. In a small room, check the bar's length first.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is a trap bar the same as a hex bar?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Trap bar and hex bar are two names for the same kind of bar: a frame you stand inside, with handles at your sides. Hex bar comes from the hexagonal shape of the classic closed design. Open trap bars remove the back of the frame, so they are no longer hexagons, but they are still sold as hex bars too.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is an open or closed trap bar better?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Neither is better for everyone. Open bars are easier to step in and out of, suit lunges, split squats and carries, and usually include a loading jack, but they are longer, heavier and more expensive. Closed bars are lighter, cheaper, more compact and very rigid, which is all you need if you mainly deadlift and shrug.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much does a trap bar weigh?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Usually more than a 45 lb barbell, and it varies widely. The bars on this page weigh from about 46 lb to 65 lb empty, and REP's open bar is 58.4 lb for the frame but 71 to 92 lb once its handles are fitted. Check your bar's real weight in the maker's specifications and use it when you log your lifts.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Will a trap bar fit in my squat rack?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Only if it is designed to be rackable and its sleeves reach your J-cups. REP says its open bar racks on racks up to 49 inches wide, and Titan and Rogue describe their long bars as fitting most standard racks. Short bars, such as the 59-inch Bells of Steel bar, are floor bars. Measure your rack across the outside of the uprights and compare it with the maker's figure.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is a trap bar deadlift easier on your back?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "It changes where the load goes. Because the weight sits beside you, you can stay more upright, and a 2011 biomechanics study found smaller loading at the lower back and hips and more at the knee than with a straight bar. That does not make it risk-free, and it is not medical advice; if you have a back condition, ask a qualified professional before lifting heavy.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
+      datePublished: "2026-10-19",
+      dateModified: "2026-10-19",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+    ...PRODUCTS.map((product) => ({
+      "@type": "Product",
+      name: product.name,
+      description: product.description,
+      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.priceBounds
+        ? {
+            offers: {
+              "@type": "AggregateOffer",
+              priceCurrency: "USD",
+              lowPrice: product.priceBounds.low,
+              highPrice: product.priceBounds.high,
+              url: product.amazonUrl,
+            },
+          }
+        : {}),
+    })),
+    {
+      "@type": "ItemList",
+      name: title,
+      numberOfItems: 5,
+      itemListElement: PRODUCTS.map((product, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: product.name,
+        url: `https://www.treadmillreviewsusa.com/best-trap-bars/#${product.id}`,
+      })),
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-10-19",
+    modifiedTime: "2026-10-19",
+    author: "Shaheer Ali Khan",
+    section: "Fitness Equipment",
+    tags: [
+      "best trap bar",
+      "best hex bar",
+      "open trap bar",
+      "rackable trap bar",
+      "trap bar for home gym",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "See Our Top Picks", link: "#picks" }}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-besttrapbars" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-besttrapbars)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Buying Guide
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated October 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          Best Trap Bar <span class="text-[#5AA9FF]">for a Home Gym: Open and Closed Hex Bars</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          A trap bar puts the weight beside you instead of in front of you, which makes the deadlift easier to learn and opens up carries, shrugs and jumps. The details decide whether it suits your room: open or closed frame, handle height, sleeve length, the bar’s own weight and whether it fits your rack. Here are five currently sold bars and how to choose between them.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            See the Picks
+          </a>
+          <a href="#open-vs-closed" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            Open vs Closed
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
+          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">October 19, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="1.9k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">On the products below.</strong> We have not tested these
+          bars, and no figure on this page is our own measurement. On 19 October 2026 we confirmed
+          each bar as currently sold on its maker's own store (REP Fitness, Rogue Fitness, Titan
+          Fitness and Bells of Steel) and checked its weight, length, sleeve length, handle layout and
+          weight rating against at least one independent source: Garage Gym Reviews' and BarBend's
+          trap bar guides and their individual reviews of the REP, Rogue and Titan bars. A figure appears on a card only where the maker and an independent source agree, or
+          is labelled as the maker's own; where they conflicted we left it out and say so on the card.
+          Weight ratings are the makers' figures, not load tests. On Amazon, we found the Bells of
+          Steel bar listed on Amazon US at $299.99 on that date. We could not find the REP, Rogue or
+          Titan bars on Amazon US: Rogue sells only through its own store, and REP and Titan list
+          these bars on their own stores, so their buttons run an Amazon search that may show similar
+          bars rather than the exact one. Every brand was checked against the US Consumer Product
+          Safety Commission's recall database on the same date, along with trap bars, hex bars and
+          barbells as a category. Prices are those we saw on that date and change often. We earn a
+          commission if you buy through the Amazon links on this page; it does not change which
+          products we list or what we say about them.
+          <strong class="text-gray-900">What this page is, and is not.</strong> We review home
+          exercise equipment; we are not giving medical, physiotherapy or coaching advice, and nothing
+          here is a training programme. Deadlifts and carries load the back, hips and grip heavily.
+          If you have a back, hip, knee or heart condition, are pregnant or postpartum, or are
+          returning from injury, talk to a qualified professional before starting or changing a
+          lifting programme, and treat every weight rating as the maker's claim.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="max-w-3xl mx-auto px-4 pt-8">
+      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
+        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
+        <ul class="list-none m-0 p-0">
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
+            <a href="#rep-open-trap-bar" class="font-bold text-gray-900 no-underline hover:underline">REP Fitness Open Trap Bar</a>
+            <a href="#rep-open-trap-bar" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Closed Hex Bar:</span>
+            <a href="#rogue-tb-2" class="font-bold text-gray-900 no-underline hover:underline">Rogue TB-2 Trap Bar</a>
+            <a href="#rogue-tb-2" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Heavy Pulling:</span>
+            <a href="#titan-open-trap-bar" class="font-bold text-gray-900 no-underline hover:underline">Titan Fitness Open Trap Bar</a>
+            <a href="#titan-open-trap-bar" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Value Closed Bar:</span>
+            <a href="#titan-rackable-hex" class="font-bold text-gray-900 no-underline hover:underline">Titan Fitness Rackable Hex Trap Bar</a>
+            <a href="#titan-rackable-hex" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Short Rooms:</span>
+            <a href="#bells-of-steel-open-trap-bar" class="font-bold text-gray-900 no-underline hover:underline">Bells of Steel Open Trap Bar / Hex Bar</a>
+            <a href="#bells-of-steel-open-trap-bar" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Trap Bar Picks at a Glance</a>
+          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Trap Bars</a>
+          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Trap Bars</a>
+          <a href="#open-vs-closed" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Open vs Closed Trap Bars</a>
+          <a href="#handles" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Handle Height, Width and Grip</a>
+          <a href="#sleeves-and-weight" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Sleeve Length, Bar Weight and Weight Ratings</a>
+          <a href="#rack-and-space" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Rack Compatibility, Total Length and the Space You Need</a>
+          <a href="#trap-bar-vs-barbell" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Trap Bar vs Straight Barbell: What the Evidence Says</a>
+          <a href="#safe-use" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Using a Trap Bar Safely at Home</a>
+          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Who Should Buy Something Else</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          The best trap bar for most home gyms is an open-ended bar with long sleeves and two handle
+          heights, but that is not the right answer for everyone. Open bars are longer, heavier and
+          dearer than the classic closed hexagon, and the cheapest bars have sleeves so short that a
+          strong lifter runs out of room for bumper plates long before the bar reaches its rating.
+          The five bars below cover open and closed designs from about $300 to about $465, and the
+          guide after them explains the measurements that matter: handle height, sleeve length, the
+          weight of the empty bar, whether it rests in your rack, and how much floor it needs.
+        </p>
+
+        <div id="quick-picks" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Trap Bar Picks at a Glance</h2>
+<p>
+            Five bars, chosen so that both frame styles and the main price points are covered by
+            something you can order today. Most readers should start with the first two: one open
+            bar, one closed bar. The others exist because a heavy lifter, a small budget or a short
+            room changes the answer.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead><tr>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Pick</th>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Best for</th>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Why</th>
+            </tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">REP Fitness Open Trap Bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best overall</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Open frame, 16.5 in. sleeves, choice of handle widths, rackable, 5-year warranty</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rogue TB-2 Trap Bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best closed hex bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Made in the USA, 60 lb, flips for two handle heights, 16 in. sleeves</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Titan Fitness Open Trap Bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Heavy pulling</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1,500 lb rating, thin and fat handles, built-in jack</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Titan Fitness Rackable Hex Trap Bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Closed bar on a budget</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rackable, 16 in. sleeves, about $350 on sale</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bells of Steel Open Trap Bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Short rooms and Amazon buyers</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">59 in. long, open frame and jack, sold on Amazon US</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            A trap bar is usually the second bar a home gym buys, after a straight barbell, and it
+            pairs naturally with a rack and a floor that can take a dropped deadlift. If you are still
+            planning the room, our guide to
+            <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat racks for a home gym</a>
+            covers the rack, and our
+            <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">lifting platform guide</a>
+            covers the floor under it. The
+            <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> collects every
+            guide in this series.
+          </p>
+        </div>
+
+        <div id="picks" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Trap Bars</h2>
+<p>
+            Each card gives the weight, length, sleeve length and rating we could confirm from two
+            sources, the price we saw, and who the bar suits. Read the empty weight and the overall
+            length first: the first tells you what you are actually lifting, and the second decides
+            whether the bar fits your room and your rack.
+          </p>
+          <p>
+            The cards are in no strict order after the first two. Where a maker and an independent
+            source disagreed on a figure, the card says so rather than choosing one.
+          </p>
+        </div>
+      </div>
+
+      <!-- Product cards -->
+      <div class="not-prose">
+        {
+          PRODUCTS.map((product, index) => (
+            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
+              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
+                  <div>
+                    <h3 class="text-white font-black text-xl leading-tight m-0">
+                      {index + 1}. {product.name}
+                    </h3>
+                    <p class="text-gray-400 text-xs">{product.category}</p>
+                  </div>
+                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                    {product.badge}
+                  </span>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center gap-2 mb-4 flex-wrap">
+                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
+                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
+                  </div>
+                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
+                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
+                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
+                      <ul class="space-y-2">
+                        {product.pros.map((pro) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
+                      <ul class="space-y-2">
+                        {product.cons.map((con) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="border-t border-gray-100 pt-4">
+                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
+                    <div class="flex flex-wrap items-center gap-3">
+                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+                        {product.amazonLabel} &rarr;
+                      </a>
+                      {product.reviewUrl && (
+                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
+                          Read our full {product.name} review &rarr;
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="how-we-chose" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Trap Bars</h2>
+<p>
+            We have not tested these bars. They were chosen from published specifications, maker
+            product pages, warranty terms, recall records and independent coverage, and the claims on
+            this page are limited to what those sources support.
+          </p>
+          <p>
+            We started from the two frame styles, open and closed, and the price points most home
+            buyers shop in, and looked for bars that the maker listed as on sale on 19 October 2026
+            and that at least one independent source had described in enough detail to cross-check.
+            The independent sources were Garage Gym Reviews' trap bar roundup (updated 8 October
+            2026) and its reviews of the REP and Titan open bars, and BarBend's trap bar guide and its
+            reviews of the REP Open Trap Bar and the Rogue TB-2. Both review sites disclose that they
+            earn commissions, as we do.
+          </p>
+          <p>
+            Figures went on the cards only where the maker and an independent source agreed. Handle
+            heights were the most common casualty, because makers measure them in different ways (to
+            the centre of the handle, to the top, loaded or unloaded) and reviewers rarely say which.
+            The Bells of Steel bar's sleeve length is the other example: Garage Gym Reviews gives 9.7
+            inches in its specification table and 17.1 inches in its text, while Bells of Steel and
+            BarBend both give 9.7 inches, so the card uses 9.7.
+          </p>
+          <p>
+            Every brand was checked against the CPSC recall database, by brand name in recall titles,
+            manufacturer fields and descriptions, along with trap bars, hex bars and barbells as a
+            category. We found no recalls for any trap bar or hex bar. The records that did come up
+            are unrelated to these bars: REP's 2021 recall of strap safety brackets for its PR-4000
+            and PR-5000 racks, and Rogue's 2011 recall of J-cup brackets for some older racks. Neither
+            affects a trap bar, but if you own either rack, check the notices.
+          </p>
+          <p>
+            Several well-known bars are deliberately not carded. Kabuki Strength's Trap Bar HD is
+            highly regarded by reviewers, but we could not open Kabuki's US store on the day, and the
+            prices we found elsewhere ranged from $649.99 at a US review site's listing to the
+            equivalent of more than $1,000 at a European retailer, so we could not confirm a current
+            US price. Eleiko's Öppen bar, at around $970 in both review sites' guides, is a luxury
+            option we did not check against Eleiko's own page. The CAP Barbell Olympic Trap Bar was
+            $89.99 on CAP's store, below the $100 floor for this page, and CAP lists a 500 lb rating
+            where BarBend lists 750 lb. Synergee's 20 kg Hex Trap Bar was $149.95 on Synergee's store
+            with a 750 lb rating and 10-inch sleeves, but we found no independent source that
+            described it in detail, and Synergee's open-frame bar showed as out of stock. Any of those
+            can be a reasonable buy; they are not carded because we could not check them to the same
+            standard.
+          </p>
+        </div>
+
+        <div id="open-vs-closed" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Open vs Closed Trap Bars</h2>
+<p>
+            Every trap bar puts you inside a frame with the handles at your sides, so the load sits in
+            line with your body rather than in front of your shins. The difference between the two
+            designs is the back of that frame.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Closed (hexagonal) trap bars</h3>
+          <p>
+            A closed bar is the classic hexagon or diamond: you step over the frame to get in, and the
+            frame surrounds you on all sides. Closed bars are the lighter, simpler and usually cheaper
+            option. Because the frame is a single welded loop, they are rigid, and many have handles
+            welded at two heights on opposite faces, so you flip the bar over to change height. The
+            Rogue TB-2 and Titan's Rackable Hex Trap Bar are both closed bars.
+          </p>
+          <p>
+            The limitation is the back of the frame. On deadlifts it is out of the way, but on
+            lunges, split squats and long carries your legs can strike it, and stepping in and out
+            with a heavy load on the floor is awkward. Closed bars also tend to have the handles
+            fixed at one spacing.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Open trap bars</h3>
+          <p>
+            An open bar removes the back of the frame, so you walk in, lift and walk out. That makes
+            lunges, split squats, step-ups and carries far more practical, and most open bars add a
+            built-in jack: tip the bar onto a pair of feet and the sleeves rise off the floor so plates
+            slide on and off. The REP, Titan and Bells of Steel open bars all have one.
+          </p>
+          <p>
+            The costs are length, weight and money. To keep an open frame stiff, makers use heavier
+            tubing and longer sleeves, so open bars on this page weigh 46 to more than 90 lb depending
+            on the handles fitted, and the longest is 88.5 inches. Garage Gym Reviews also notes that
+            the REP bar is not the most rigid open design it has used, which is the trade-off of a
+            frame with removable handles.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Which to choose</h3>
+          <p>
+            If you mainly want to deadlift and shrug, a closed bar does the job for less money and
+            takes less room. If you want carries, lunges and split squats too, or you train alone and
+            want the easiest possible loading, an open bar with a jack is worth the premium. If the
+            bar has to live in a small room, check the length before anything else; it is the figure
+            that most often rules a bar out.
+          </p>
+        </div>
+
+        <div id="handles" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Handle Height, Width and Grip</h2>
+<p>
+            The handles are where trap bars differ most, and they affect how the lift feels more than
+            the frame does.
+          </p>
+          <p>
+            <strong>Height.</strong> Most trap bars have two handle heights. The low, or in-line,
+            handles sit level with the sleeves; with standard 450 mm plates they put your hands at
+            roughly the same height as a barbell on the floor. For reference, a 450 mm plate has a
+            225 mm radius, so the centre of the sleeve sits about 8.9 inches above the floor. The
+            high handles are raised by about three inches, which shortens the pull. REP, for example,
+            gives 8.3 inches to the centre of its in-line handles and 11.3 inches for its high handles
+            when loaded. High handles suit tall lifters, beginners learning the hinge, people working
+            around a stiff back or hips with a professional's guidance, and anyone who simply wants to
+            move more weight through a shorter range. Low handles give more range of motion and more
+            leg work.
+          </p>
+          <p>
+            Makers measure handle height in different ways — to the centre or top of the grip, loaded
+            or empty — so we have not put handle heights on the cards, and you should not compare two
+            makers' figures directly. BarBend measured the TB-2's raised handles at 8.25 inches off
+            the ground unloaded, for example, while Rogue lists only an overall frame height.
+          </p>
+          <p>
+            <strong>Width.</strong> The distance between the handles decides whether your hands clear
+            your thighs. Most bars sit around 22 to 25 inches. REP is unusual in letting you choose:
+            its narrow, standard and wide handles are 23, 25 and 27.3 inches apart, and its rotating
+            handles 24.6 inches. Garage Gym Reviews points out that the wide option is about two
+            inches wider than most bars, which can feel awkward for people with short arms. If you are
+            broad through the hips or thighs, wider is usually more comfortable; if you are small, a
+            narrow bar keeps your arms straighter.
+          </p>
+          <p>
+            <strong>Diameter and knurl.</strong> Thicker handles are harder to hold, which is either a
+            problem or the point. Titan's open bar gives you both: 32 mm and 38 mm grips at different
+            heights. The Rogue TB-2's handles are 1.34 inches, about 34 mm. Bells of Steel's are 25
+            mm, which smaller hands find easier for heavy carries. Knurling ranges from passive to
+            sharp; Garage Gym Reviews describes REP's as on the passive side, while BarBend found it
+            sharper, which shows how personal the judgement is.
+          </p>
+        </div>
+
+        <div id="sleeves-and-weight" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Sleeve Length, Bar Weight and Weight Ratings</h2>
+<p>
+            Three numbers decide how heavy you can actually go, and they are not the same thing.
+          </p>
+          <p>
+            <strong>Sleeve length</strong> is the space for plates on each side. The bars on this page
+            run from 9.7 inches (Bells of Steel) to 16.5 inches (REP). Using REP's own arithmetic, 16.5
+            inches holds ten 45 lb iron plates or five 45 lb bumper plates a side. A 9.7-inch sleeve
+            holds a little under 60% of that, so about two or three bumpers a side, which is roughly
+            225 to 315 lb of bumper plates on the bar before you count the bar itself. That is a
+            simple proportion, not a measurement, and plate thickness varies by brand. If you own
+            bumpers rather than iron plates, sleeve length matters more than the weight rating.
+          </p>
+          <p>
+            <strong>Bar weight</strong> is what you are lifting before any plates go on, and trap bars
+            are rarely 45 lb. On this page the empty bars run from about 46 lb (Bells of Steel) to 65
+            lb (Titan's open bar), and REP's frame is 58.4 lb before the handles go on. With handles
+            fitted, REP gives 74.3 lb for the standard pair, 75.6 lb for the narrow pair, 71.2 lb for
+            the wide pair and 92.4 lb for the rotating handles. If you log your lifts, write down the
+            bar's real weight; a 30 lb difference between bars is common.
+          </p>
+          <p>
+            <strong>Weight ratings</strong> are makers' figures and are not independent load tests.
+            They range here from 700 lb (Bells of Steel) to 1,500 lb (Titan's open bar), and Rogue
+            does not publish one for the TB-2; BarBend says Rogue would not give it a figure when
+            asked. For most home lifters, sleeve length will run out first. A rating mainly tells you
+            how stiff the maker expects the frame to be, and Garage Gym Reviews reports that the
+            700 lb Bells of Steel bar bends at higher weights.
+          </p>
+          <p>
+            Two smaller points. Sleeve diameter matters for collars: Rogue's TB-2 uses 1.91-inch pipe
+            sleeves and Rogue recommends axle collars rather than standard barbell collars. And
+            finishes vary: chrome sleeves resist scratching from plates better than powder coat,
+            which both review sites note wears on the TB-2 and the Titan sleeves.
+          </p>
+        </div>
+
+        <div id="rack-and-space" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Rack Compatibility, Total Length and the Space You Need</h2>
+<p>
+            A rackable trap bar is long enough that its sleeves rest in your rack's J-cups, which lets
+            you start rack pulls, shrugs and presses from a set height instead of the floor, and gives
+            the bar somewhere to live. Whether a particular bar fits depends on two measurements: the
+            distance between the inside ends of the sleeves, and the width of your rack measured
+            across the outside of the uprights where the J-cups sit.
+          </p>
+          <ul>
+            <li><strong>REP Open Trap Bar:</strong> REP says it is rackable on its own 47-inch-wide
+              racks and on racks up to 49 inches wide, sitting flush without tilting the J-cups.</li>
+            <li><strong>Rogue TB-2:</strong> both review sites describe it as rackable; it is 88.5
+              inches long with 16-inch sleeves.</li>
+            <li><strong>Titan Open Trap Bar and Rackable Hex Trap Bar:</strong> Titan says both fit
+              most standard power racks.</li>
+            <li><strong>Bells of Steel Open Trap Bar:</strong> Bells of Steel does not describe it as
+              rackable, and at 59 inches overall it is best treated as a floor bar.</li>
+          </ul>
+          <p>
+            If your rack is unusually wide, narrow or a folding wall-mounted design, compare the
+            maker's figure with your own tape measure before ordering. Our
+            <a href="/best-folding-squat-racks/" class="text-[#0F62FE] font-medium">folding squat rack guide</a>
+            gives the outside widths of the common folding racks.
+          </p>
+          <p>
+            <strong>Total length and room size.</strong> The longest bars on this page are 88.5
+            inches, which is 7 feet 4.5 inches. To load a bar you need to stand at each end, so a
+            rough working figure is the bar's length plus about two feet at each end: around 11 feet
+            of clear width for an 88.5-inch bar, against about 9 feet for a 59-inch bar. That is
+            arithmetic, not a rule, but it is the reason short bars exist. If your lifting space is a
+            single garage bay beside a car, measure it before choosing a long open bar.
+          </p>
+          <p>
+            <strong>Storage.</strong> A trap bar is awkward to store. Open bars with a jack can stand
+            on end, which is how many people keep them; REP suggests its bar storage and horizontal
+            plate racks. Closed bars usually hang on a wall hook or lie on the floor. Plan where it
+            goes before it arrives, because a trap bar on the floor is a trip hazard.
+          </p>
+          <p>
+            <strong>Floor.</strong> Trap bar deadlifts are often lowered quickly and sometimes
+            dropped. Rubber flooring or a platform protects the floor and the bar; our guides to
+            <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium">gym flooring</a> and
+            <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">lifting platforms</a>
+            cover both, including how to keep the noise down for neighbours.
+          </p>
+        </div>
+
+        <div id="trap-bar-vs-barbell" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Trap Bar vs Straight Barbell: What the Evidence Says</h2>
+<p>
+            You can deadlift perfectly well with a straight barbell, and if you are buying one bar it
+            should be a barbell, because it does far more. The case for a trap bar is that it makes a
+            heavy pull simpler and more forgiving for many people.
+          </p>
+          <p>
+            The mechanical difference is where the weight sits. With a straight bar, the load is in
+            front of your legs, so your hips and lower back resist a larger turning force and your
+            torso leans further forward. With a trap bar, the load is beside you, so you can sit lower
+            and stay more upright, and the knees do more of the work. A widely cited 2011 study by
+            Swinton and colleagues in the Journal of Strength and Conditioning Research compared the
+            two at submaximal loads and found smaller moments at the lumbar spine and hips, and larger
+            ones at the knee, with the hexagonal bar, along with higher peak force, power and
+            velocity. That is one well-designed study in trained men, not a guarantee for your back,
+            but it fits what lifters report.
+          </p>
+          <p>
+            The practical benefits follow from that. The neutral grip avoids the mixed grip many
+            people use on heavy barbell deadlifts. The movement is easier to teach, which is one
+            reason the US Army's fitness test uses a hexagonal-bar deadlift. The high handles give a
+            shorter, more upright pull. And the same bar does shrugs, farmer's carries and, on an open
+            bar, lunges and split squats.
+          </p>
+          <p>
+            The drawbacks are just as real. A trap bar deadlift is a different lift, so it is not a
+            substitute if you compete in powerlifting. It cannot do squats, presses or rows the way a
+            barbell can, apart from the cambered squats some open bars allow with the handles removed.
+            And it takes up a lot of room for a single-purpose tool. If you do not yet own a barbell,
+            our guide to
+            <a href="/best-barbells/" class="text-[#0F62FE] font-medium">the best barbells for home</a>
+            is the better place to start; if you already have one and want a back-friendlier way to
+            pull heavy, a trap bar is the most useful specialty bar to add, alongside the
+            <a href="/best-safety-squat-bars/" class="text-[#0F62FE] font-medium">safety squat bar</a>
+            for squats.
+          </p>
+        </div>
+
+        <div id="safe-use" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Using a Trap Bar Safely at Home</h2>
+<p>
+            The trap bar is forgiving, which makes it easy to get careless with. A few habits prevent
+            most problems.
+          </p>
+          <ul>
+            <li><strong>Stand in the centre.</strong> Line the middle of your feet up with the centre
+              of the handles. If you stand too far forward or back, the bar tips as it leaves the floor,
+              which is uncomfortable on a closed bar and can pinch your shins on an open one.</li>
+            <li><strong>Collar the plates.</strong> Plates can walk along a sleeve during carries and
+              when the bar is set down unevenly. Use collars every time, and the right type for your
+              sleeve diameter.</li>
+            <li><strong>Use the jack carefully.</strong> A loaded bar standing on its jack is stable,
+              but it is still a heavy object on two small feet. Load evenly, alternating sides, and keep
+              children and pets clear.</li>
+            <li><strong>Set it down, do not throw it.</strong> Lower under control. If you need to drop
+              it, drop it onto rubber, flat, with bumper plates.</li>
+            <li><strong>Grip runs out before legs.</strong> On heavy sets, many people's grip fails
+              first. Straps are fine for top sets; just do not let them hide a bar that is too heavy for
+              your back.</li>
+            <li><strong>Check the floor.</strong> Concrete slabs are fine for heavy pulls on rubber.
+              Upstairs rooms are a different question; a heavy bar and plates concentrated in one place,
+              dropped repeatedly, is a load your floor may not be designed for. That is general guidance
+              only; ask a qualified professional about your building.</li>
+          </ul>
+          <p>
+            If you combine lifting with running, our guide to doing
+            <a href="/treadmill-before-or-after-weights/" class="text-[#0F62FE] font-medium">the treadmill before or after weights</a>
+            covers the order of a combined session, and our roundup of
+            <a href="/best-recovery-tools-for-weightlifters/" class="text-[#0F62FE] font-medium">recovery tools for weightlifters</a>
+            covers what helps after heavy pulling days.
+          </p>
+        </div>
+
+        <div id="who-should-skip" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Who Should Buy Something Else</h2>
+<p>
+            <strong>If you do not own a barbell yet</strong>, buy that first. It squats, presses, rows
+            and deadlifts; a trap bar does one family of movements very well.
+          </p>
+          <p>
+            <strong>If your room is short</strong>, a long open bar may not be loadable at all. A short
+            closed hex bar, or the 59-inch Bells of Steel bar, is the realistic choice, and you should
+            measure the clear width before ordering.
+          </p>
+          <p>
+            <strong>If you mainly want carries</strong>, a pair of farmer's carry handles or heavy
+            dumbbells may suit you better and store more easily. Our guide to the
+            <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">best adjustable dumbbells</a>
+            covers sets that go heavy enough for loaded carries.
+          </p>
+          <p>
+            <strong>If you compete in powerlifting</strong>, the straight-bar deadlift is the lift
+            that counts. A trap bar is still a useful accessory, but not a replacement.
+          </p>
+          <p>
+            <strong>If you would rather pull on a machine</strong>, plate-loaded machines can load
+            the legs and hips without a free bar; our guides to
+            <a href="/best-home-gym-machines/" class="text-[#0F62FE] font-medium">home gym machines</a>
+            and
+            <a href="/best-hip-thrust-machines/" class="text-[#0F62FE] font-medium">hip thrust machines</a>
+            look at those options. And if you are still deciding what a first home gym needs at all,
+            our
+            <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a>
+            set a trap bar alongside every other category.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What is the best trap bar for a home gym?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                For most home gyms, an open trap bar with long sleeves, two handle heights and a built-in jack, such as the REP Fitness Open Trap Bar, is the most versatile choice. If you mainly deadlift and shrug, a closed hex bar such as the Rogue TB-2 or Titan's Rackable Hex Trap Bar does the job and takes less room. In a small room, check the bar's length first.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is a trap bar the same as a hex bar?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Yes. Trap bar and hex bar are two names for the same kind of bar: a frame you stand inside, with handles at your sides. Hex bar comes from the hexagonal shape of the classic closed design. Open trap bars remove the back of the frame, so they are no longer hexagons, but they are still sold as hex bars too.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is an open or closed trap bar better?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Neither is better for everyone. Open bars are easier to step in and out of, suit lunges, split squats and carries, and usually include a loading jack, but they are longer, heavier and more expensive. Closed bars are lighter, cheaper, more compact and very rigid, which is all you need if you mainly deadlift and shrug.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How much does a trap bar weigh?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Usually more than a 45 lb barbell, and it varies widely. The bars on this page weigh from about 46 lb to 65 lb empty, and REP's open bar is 58.4 lb for the frame but 71 to 92 lb once its handles are fitted. Check your bar's real weight in the maker's specifications and use it when you log your lifts.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Will a trap bar fit in my squat rack?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Only if it is designed to be rackable and its sleeves reach your J-cups. REP says its open bar racks on racks up to 49 inches wide, and Titan and Rogue describe their long bars as fitting most standard racks. Short bars, such as the 59-inch Bells of Steel bar, are floor bars. Measure your rack across the outside of the uprights and compare it with the maker's figure.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is a trap bar deadlift easier on your back?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                It changes where the load goes. Because the weight sits beside you, you can stay more upright, and a 2011 biomechanics study found smaller loading at the lower back and hips and more at the knee than with a straight bar. That does not make it risk-free, and it is not medical advice; if you have a back condition, ask a qualified professional before lifting heavy.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Trap Bar</h2>
+          <p class="text-gray-700 leading-relaxed">Each of these is easy to avoid before you order and annoying to discover afterwards.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring the length of the bar</h3>
+              <p class="text-gray-700 text-sm m-0">An 88.5-inch bar needs roughly 11 feet of clear width to load comfortably from both ends. People measure the floor for the lift and forget they have to stand at each sleeve to change plates. Measure the space, and the route the bar has to take to get into the room, before choosing a long open bar.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying short sleeves for bumper plates</h3>
+              <p class="text-gray-700 text-sm m-0">A trap bar with 9- or 10-inch sleeves runs out of room after two or three bumper plates a side, whatever its weight rating says. If you own bumpers and expect to pull heavy, buy a bar with 16-inch sleeves. Short sleeves are fine with thin iron plates or for lighter carries and shrugs.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming every trap bar weighs 45 lb</h3>
+              <p class="text-gray-700 text-sm m-0">Most trap bars weigh more than a standard barbell, and open bars with bolt-on handles can weigh over 90 lb assembled. If you log the bar as 45 lb, your numbers will be wrong and your progress harder to judge. Weigh the bar or use the maker's figure for the frame plus the handles you fitted.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Using the wrong collars, or none</h3>
+              <p class="text-gray-700 text-sm m-0">Not every trap bar takes standard barbell collars: Rogue recommends axle collars for the TB-2's 1.91-inch sleeves. Plates also creep on carries and when the bar is tipped onto a jack. Check the sleeve diameter, buy collars that fit, and use them on every set.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/best-squat-racks-for-home-gym/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Racks</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Squat Racks for a Home Gym</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Power racks, half racks and squat stands, and how wide your rack needs to be for a trap bar.</p>
+            </a>
+            <a href="/best-lifting-platforms/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Floors</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Lifting Platforms</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Platforms, drop pads and stall mats that protect the floor under heavy deadlifts.</p>
+            </a>
+            <a href="/best-gym-flooring/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Flooring</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Gym Flooring</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Rubber tiles, rolls and stall mats for a garage or basement lifting area.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">For most home gyms, buy the REP Fitness Open Trap Bar</strong>
+            with standard handles: it is open, rackable, long-sleeved and has a five-year warranty. If you
+            mainly deadlift and want a rigid closed bar, the Rogue TB-2 is the made-in-USA choice and
+            Titan's Rackable Hex Trap Bar the cheaper one on sale. Titan's Open Trap Bar suits heavy
+            pullers, and the short Bells of Steel bar suits small rooms and Amazon buyers who load
+            lightly.
+          </p>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            Whichever you choose, check the bar's real weight, its length against your room and its
+            sleeves against your plates before you order, and give it a floor that can take a heavy pull.
+            <a href="/best-lifting-platforms/" class="text-[#5AA9FF] font-bold no-underline">Our lifting platform guide</a>
+            covers that last part.
+          </p>
+        </div>
+
+        <!-- Meet the Author -->
+        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
+          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
+          <div>
+            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
+            <p class="text-sm font-bold text-gray-900 m-0">
+              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
+              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+            </p>
+            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
+              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
+              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
+              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
+              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
+              running ergonomics, noise and long-term durability. Every guide says what was checked and
+              when, and says plainly when a product has not been tested hands-on.
+              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
+              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </article>
+</Layout>
