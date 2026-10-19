@@ -694,6 +694,42 @@ regional FAQ says about 120; `/best-home-gym-accessories/` links an REP AB-3000 
 that shows unavailable (REP's own Amazon store listing B0BSNY8STP is buyable); `/treadmill-desk-guide/`
 still carries "in our under-desk testing" claims. Fitbit Premium is now Google Health Premium.
 
+### Premium-niche roundups (2026-10-19): twenty-four of thirty pages
+
+Roundups for product niches where items usually sell for $100 or more, chosen from two Semrush US
+pulls on 2026-10-19 for volume against keyword difficulty (mostly KD 35 or under;
+`research/keyword-batches/2026-10-19-premium-niches.csv`, which also lists the high-volume terms
+skipped for difficulty or price). All sit in `/home-gym/`:
+
+- **Cardio machines**: exercise bikes for seniors, ellipticals for seniors, recumbent ellipticals,
+  air bikes, compact ellipticals, folding exercise bikes, vertical climbers
+- **Strength**: barbells, bumper plates, weight plates, trap bars, safety squat bars, folding squat
+  racks, Smith machines, leg press, hack squat, leg extension and hip thrust machines, adjustable
+  kettlebells, dumbbell sets, plyo boxes
+- **Recovery, boxing & accessories**: compression boots, zero-gravity massage chairs, punching bags
+
+Six more (smart home gyms, Peloton alternatives, smart bike trainers, home saunas, outdoor saunas,
+cold plunges) follow in a separate PR; the two links that would have pointed at them
+(`/best-smith-machines/` to smart home gyms, `/best-compression-boots/` to cold plunges) are
+repointed or unlinked until then.
+
+Same product rules as earlier roundups. Much of this category is sold direct (Rogue, REP, Kabuki,
+Bells of Steel, Force USA, Steelflex, VersaClimber, CLMBR, Nautilus commercial): those products get
+tagged category searches labelled "Shop Similar on Amazon" via `src/data/amazon-fallbacks.json`.
+`scripts/build-articles.mjs` now appends `tag=sktiger-20` to any Amazon URL a spec gives without it,
+so a generated page cannot carry an untagged Amazon link. Web searches were rationed to twelve per
+writer; the rest of the checking used maker stores and product JSON, manuals, review-site sitemaps
+and the CPSC API (which intermittently errors on short brand names; adding `RecallDateStart` or using
+the full name works).
+
+Found while writing and not yet changed: `/best-cardio-machines-for-home/` prices the AirDyne AD7 at
+$999 and the Max Trainer M6 at $999 (Schwinn showed $1,099 and BowFlex $1,299 on 19 October), and now
+could print the M6's 16 levels and 46 x 26 x 64.2 in.; `/best-squat-racks-for-home-gym/` says the PRx
+Profile PRO is BarBend's best folding rack (BarBend's current guide names the REP PR-4100);
+`/best-recovery-tools-for-weightlifters/` gives the Normatec 3 "up to 3 hr" of battery where the
+operating instructions say 2+ hours; `/best-adjustable-dumbbells/` gives the BowFlex 552/1090 recall as
+3.8 million units where the CPSC title says 3.7 million sold by Nautilus.
+
 ### Sole F80 and F85
 
 Both were shipped first as `dataPending` editorial drafts because their published figures conflict

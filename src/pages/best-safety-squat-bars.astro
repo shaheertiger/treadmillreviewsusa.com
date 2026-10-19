@@ -1,0 +1,955 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "Best Safety Squat Bar (2026): 5 SSBs by Camber and Rack Fit";
+const description =
+  "Five safety squat bars checked against maker specs and reviews: camber drop, pads, handles, bar weight and whether the bar actually rests in your rack.";
+
+const PRODUCTS = [
+  {
+    id: "rep-safety-squat-bar",
+    name: "REP Fitness Safety Squat Bar",
+    category: "Cambered safety squat bar with removable knurled handles",
+    badge: "Best Overall",
+    amazonUrl: "https://www.amazon.com/s?k=safety+squat+bar&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
+    reviewUrl: null,
+    priceRange: "About $350",
+    priceBounds: {"low":350,"high":350},
+    specs: "68 lb · 5.5 in. camber drop · 49.1 in. between cambers · 1.5 in. knurled removable handles · 15.6 in. sleeves · 1,500 lb static rating (maker)",
+    pros: [
+      "Thick 1.5-inch knurled handles that come off for presses and arm work",
+      "49.1 inches between the cambers, so it sits flush on racks up to 49 inches wide",
+      "High-density foam pad in tough vinyl, praised by Garage Gym Reviews",
+      "Hard-chrome Olympic sleeves that take standard collars",
+    ],
+    cons: [
+      "At 68 lb it is a heavy empty bar",
+      "The end caps do not show the bar’s weight",
+      "We found no warranty term on REP’s page, and Garage Gym Reviews could not find one either",
+    ],
+    bottomLine: "The SSB to buy for most home gyms: comfortable, well finished and sized for standard racks.",
+    description: "REP's Safety Squat Bar is Garage Gym Reviews' preferred bar on fit and finish; its founder says he would choose it over Titan's cheaper bar for the finish and the knurled handles. REP lists a 68 lb bar, 92.5 inches long, with a 5.5-inch camber drop, 49.1 inches between the cambers, 15.6-inch hard-chrome sleeves, 1.5-inch removable knurled handles 13 inches apart, pads 8.3 inches apart and a 1,500 lb static rating, and Garage Gym Reviews' review gives the same weight, camber drop, width between cambers, handle diameter and rating. The width is the practical strength: REP says the bar sits flush even on 49-inch-wide racks, and Garage Gym Reviews' tester used it in a Rogue rack of that width. The pad is high-density foam in vinyl, a single layer that the review found comfortable. The criticisms are small: the end caps do not show the weight, the camber may pitch some lifters slightly further forward than Titan's or EliteFTS's bars, and at 68 lb it is heavy to start with. We found no warranty term on REP's page, and Garage Gym Reviews said REP had not yet listed one. It was $349.99 on REP's store on 19 October 2026; we could not find it on Amazon US.",
+  },
+  {
+    id: "titan-safety-squat-bar",
+    name: "Titan Fitness Safety Squat Bar",
+    category: "Budget cambered SSB with rubber grips",
+    badge: "Best Budget",
+    amazonUrl: "https://www.amazon.com/s?k=Titan+Fitness+Rackable+Safety+Squat+Bar+Olympic+Sleeves+1500&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    reviewUrl: null,
+    priceRange: "$280–$400",
+    priceBounds: {"low":280,"high":400},
+    specs: "1,500 lb rating (maker) · 5 in. camber drop · 50 in. rackable width · 14.75 in. Olympic sleeves · removable 35 mm rubber grips · 58 lb (Titan figure)",
+    pros: [
+      "The cheapest well-reviewed SSB we found, at about $280 on sale",
+      "Garage Gym Reviews’ top pick for most people, praising the padding and balance",
+      "Olympic sleeves that take standard collars",
+      "Removable grips for JM presses and other movements",
+    ],
+    cons: [
+      "Titan and Garage Gym Reviews give different camber angles and warranty terms",
+      "Reviewers report the chrome can surface-rust and the handles can spin",
+      "Imported, unlike Titan’s pricier TITAN Series bar",
+    ],
+    bottomLine: "The budget SSB that reviewers trust. Check the rack width against yours and buy it on sale.",
+    description: "Titan's imported Safety Squat Bar is the bar Garage Gym Reviews names best overall for most people, calling its version two a near copy of the EliteFTS SS Yoke at less than half the price. Titan lists a 1,500 lb rating, a 5-inch camber drop, a 50-inch rackable width, 14.75-inch chrome Olympic sleeves, a one-piece high-density pad with 8 inches between the shoulder pads, and removable 35 mm rubber grips 12.75 inches apart; Garage Gym Reviews gives the same 1,500 lb rating and praises the thick, durable padding, comfortable grips, Olympic sleeves and removable handles. Two figures conflict. Titan's page gives a 20-degree camber where Garage Gym Reviews describes a 22-degree camber for the version two, and Titan includes a one-year warranty where the review says there is none. Titan gives 58 lb, which we could not check independently. The review's criticisms are handles that tend to spin and chrome that surface-rusts fairly quickly. It was $279.97 on Titan's store on 19 October 2026 against a $399.99 list price. An Amazon US listing titled 'Rackable Safety Squat Bar, Olympic Sleeves, 1,500lb Rated' appeared in a search for Titan's bar at $321.97, but we could not open it to confirm the seller.",
+  },
+  {
+    id: "rogue-sb-1",
+    name: "Rogue SB-1 Safety Squat Bar",
+    category: "Fully welded SSB, made in the USA",
+    badge: "Best Made in USA",
+    amazonUrl: "https://www.amazon.com/s?k=safety+squat+bar&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
+    reviewUrl: null,
+    priceRange: "About $465",
+    priceBounds: {"low":465,"high":465},
+    specs: "70 lb · 1.5 in. solid steel shaft · 1 in. solid steel handles · machined Olympic sleeves · black Cerakote finish · fully welded · made in USA · no published rating",
+    pros: [
+      "Solid steel shaft and handles in a fully welded frame that flexes very little",
+      "Cerakote finish, which Garage Gym Reviews says solved earlier chipping",
+      "Machined Olympic sleeves",
+      "Long handles that put the arms in a comfortable position, per Garage Gym Reviews",
+    ],
+    cons: [
+      "Garage Gym Reviews found the padding dense but thin, with reports of stitching coming undone",
+      "Rogue publishes no weight rating or rack-width figure",
+      "The most expensive conventional SSB here, and sold only through Rogue",
+    ],
+    bottomLine: "For buyers who want a traditional, made-in-USA SSB from Rogue and accept a thinner pad.",
+    description: "Rogue's SB-1 is the long-running traditional safety squat bar: a 1.5-inch formed solid steel shaft, 1-inch solid steel handles, machined Olympic sleeves, a fully welded construction, vinyl-covered closed-cell foam pads and a black Cerakote finish, at 70 lb. Garage Gym Reviews' review and roundup give the same weight, shaft and handle diameters and construction, and add a 5.5-inch camber drop, which Rogue's current page does not list. The review describes the bar as incredibly solid, balanced in the squat, easy to re-rack in a Rogue R-3, with handles long enough to hold comfortably; it names the SB-1 its best traditional SSB. Its criticisms are the padding — dense but a small amount of it — reports of pad stitching coming undone, and a finish that marks from racking and plate loading, though the Cerakote coating seems to have ended the chipping of earlier versions. Rogue does not publish a weight rating or the width between the cambers, so if your rack is not a Rogue, ask before buying. It was $465 on Rogue's store on 19 October 2026; Rogue sells direct, so there is no Amazon listing.",
+  },
+  {
+    id: "bells-of-steel-ss4",
+    name: "Bells of Steel Safety Squat Bar – The SS4",
+    category: "SSB with interchangeable handles and bearing sleeves",
+    badge: "Most Versatile",
+    amazonUrl: "https://www.amazon.com/s?k=Bells+of+Steel+Safety+Squat+Bar+4.0+1500+lb&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    reviewUrl: null,
+    priceRange: "$359.99–$371.99",
+    priceBounds: {"low":359.99,"high":371.99},
+    specs: "About 46 lb · 1,500 lb rating (maker) · 86.6 in. long · 11.8 in. needle-bearing sleeves · fits racks up to 49 in. (maker) · straight handles included, three other styles optional · limited lifetime frame warranty",
+    pros: [
+      "The lightest SSB here, which helps beginners and lighter lifters",
+      "Four handle styles, including long angled handles for limited shoulder mobility",
+      "Needle-bearing sleeves and a black titanized finish",
+      "Sold on Amazon US as well as Bells of Steel’s own store",
+    ],
+    cons: [
+      "Shorter 11.8-inch sleeves limit bumper plate loading",
+      "A new version: the independent review covers the previous SS3",
+      "Extra handle styles cost extra",
+    ],
+    bottomLine: "For lifters who want one SSB to adapt to their shoulders and to rows and good mornings, and who load iron plates.",
+    description: "The SS4 is Bells of Steel's current safety squat bar, replacing the SS3 that Garage Gym Reviews named its most versatile SSB. Bells of Steel lists a 1,500 lb capacity, a 100,000 PSI shaft, needle-bearing sleeves, a black titanized finish on shaft and sleeves, an 86.6-inch length, 11.8 inches of loadable sleeve, a high-density pad and a limited lifetime frame warranty, and says it rests correctly in racks up to 49 inches between the outer edges of the J-cups. Its Amazon US listing agrees on the 1,500 lb rating but gives 45.6 lb where Bells of Steel gives 46.3 lb, so the card says about 46 lb. The SS4 ships with straight knurled handles and accepts three optional pairs that screw onto the same posts: long angled spider handles for lifters with very limited shoulder mobility, chain handles and seal-row handles. Garage Gym Reviews' verdict on the SS3, which shared the 86.6-inch length and 1,500 lb rating, was strong value with short sleeves as the main drawback, and it found that version did not fit racks wider than 47 inches; Bells of Steel's 49-inch figure for the SS4 is the maker's claim. It was $371.99 on Bells of Steel's US store and $359.99 on Amazon US on 19 October 2026.",
+  },
+  {
+    id: "kabuki-transformer-bar",
+    name: "Kabuki Transformer Bar",
+    category: "Adjustable safety squat bar, made by Rogue",
+    badge: "Most Adjustable",
+    amazonUrl: "https://www.amazon.com/s?k=safety+squat+bar&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
+    reviewUrl: null,
+    priceRange: "About $795",
+    priceBounds: {"low":795,"high":795},
+    specs: "25 kg (about 55 lb) · 1,500 lb load capacity · six camber positions and four sleeve heights · 15.75 in. Olympic sleeves · 54 in. between brackets · made in USA (Rogue figures)",
+    pros: [
+      "Changes from a hinge bar to a traditional SSB to a front-squat feel in one bar",
+      "Garage Gym Reviews calls the design the best SSB in the world if price is no object",
+      "The widest bracket spacing here, so it suits wide racks",
+      "Ships fully assembled from Rogue, with two handle lengths included",
+    ],
+    cons: [
+      "About $795, more than twice the price of most SSBs",
+      "Changing settings takes time, so many owners leave it on one",
+      "Rogue’s version differs from the Kabuki-made bar that reviewers covered",
+    ],
+    bottomLine: "For lifters and shared home gyms that want several squat bars in one and can justify the price.",
+    description: "Kabuki Strength's Transformer Bar is an adjustable safety squat bar, now manufactured in Ohio by Rogue, which sells it. A pop-pin mechanism sets the cambered sleeve brackets at six angles 30 degrees apart, which Rogue describes as replicating a hip hinge, low-bar and high-bar back squats, a traditional SSB, a front squat and a goblet squat, and a second adjustment moves the sleeve to one of four heights to make the lift easier or harder. Rogue lists a 25 kg (about 55 lb) bar, a 1,500 lb load capacity, 1.15-inch handles spaced 12 inches, 15.75-inch machined Olympic sleeves, 54 inches between the brackets, high-density imported foam pads and short and standard handles included; its page also refers to three sleeve slots in one place and four in another. Garage Gym Reviews reviewed the earlier Kabuki-made bar, which it gives at 20 kg, and called it the most feature-rich SSB on the market, praising the knurled handles, comfortable pad and tight tolerances, while warning that changing the angle takes too long and the bracket edges were sharp. Because the bar has changed makers, the figures on this card are Rogue's. It was $795 on Rogue's store on 19 October 2026.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Home Gym", item: "https://www.treadmillreviewsusa.com/home-gym/" },
+        { "@type": "ListItem", position: 3, name: "Best Safety Squat Bars", item: "https://www.treadmillreviewsusa.com/best-safety-squat-bars/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is the best safety squat bar for a home gym?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "For most home gyms, a bar with a moderate camber, a dense pad, removable handles and a width that suits a standard rack, such as the REP Fitness Safety Squat Bar. On a tighter budget, Titan's Safety Squat Bar is the reviewers' value pick. Whatever you choose, check that its width between the cambers suits your rack before ordering.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is a safety squat bar worth it?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "It is worth it if straight-bar back squats bother your shoulders, elbows or wrists, if you want a squat variation that works the upper back hard, or if you want easier good mornings and split squats. It is not worth it as a first bar; a straight barbell does far more. Persistent pain is a reason to see a professional, not only to change bars.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much does a safety squat bar weigh?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Usually 45 to 70 lb, not 45 lb. On this page, the Bells of Steel SS4 is about 46 lb, Titan's bar 58 lb by Titan's figure, REP's 68 lb, the Kabuki Transformer about 55 lb and the Rogue SB-1 70 lb. Use your bar's real weight when you log your lifts.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Will a safety squat bar fit my squat rack?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Only if the straight section between the cambers is wider than your rack measured across the outside of the J-cups. REP gives 49.1 inches, Titan a 50-inch rackable width, Bells of Steel says up to 49 inches and the Kabuki Transformer 54 inches. Most home racks are about 47 to 49 inches wide, but measure yours.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do you squat less with a safety squat bar?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Most people do, at least at first, because the camber pitches the load forward and the upper back has to work harder to stay upright. Many lifters find the gap narrows with practice. Treat it as a different lift with its own numbers rather than comparing it directly with your straight-bar squat.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is camber on a safety squat bar?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Camber is the downward and forward bend of the sleeves outside the shoulder pads. Makers describe it as a drop in inches, typically about 5 to 5.5 inches, or as an angle, typically about 20 to 22 degrees. More camber pitches you further forward. The Kabuki Transformer Bar lets you change it.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
+      datePublished: "2026-10-19",
+      dateModified: "2026-10-19",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+    ...PRODUCTS.map((product) => ({
+      "@type": "Product",
+      name: product.name,
+      description: product.description,
+      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.priceBounds
+        ? {
+            offers: {
+              "@type": "AggregateOffer",
+              priceCurrency: "USD",
+              lowPrice: product.priceBounds.low,
+              highPrice: product.priceBounds.high,
+              url: product.amazonUrl,
+            },
+          }
+        : {}),
+    })),
+    {
+      "@type": "ItemList",
+      name: title,
+      numberOfItems: 5,
+      itemListElement: PRODUCTS.map((product, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: product.name,
+        url: `https://www.treadmillreviewsusa.com/best-safety-squat-bars/#${product.id}`,
+      })),
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-10-19",
+    modifiedTime: "2026-10-19",
+    author: "Shaheer Ali Khan",
+    section: "Fitness Equipment",
+    tags: [
+      "best safety squat bar",
+      "safety squat bar",
+      "ssb for home gym",
+      "yoke bar",
+      "specialty squat bar",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "See Our Top Picks", link: "#picks" }}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-bestsafetysquatbars" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-bestsafetysquatbars)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Buying Guide
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated October 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          Best Safety Squat Bar <span class="text-[#5AA9FF]">for a Home Gym</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          A safety squat bar lets you squat heavy with your hands in front of you, which is why lifters with cranky shoulders, elbows or wrists love it. But the camber, the pad, the handles and the width between the cambers all change how it feels and whether it fits your rack. Here are five currently sold SSBs and how to choose.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            See the Picks
+          </a>
+          <a href="#rack-fit" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            Will It Fit Your Rack?
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
+          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">October 19, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="1.9k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">On the products below.</strong> We have not tested these
+          bars, and no figure on this page is our own measurement. On 19 October 2026 we confirmed
+          each bar as currently sold on its maker's or seller's own store (REP Fitness, Titan Fitness,
+          Rogue Fitness and Bells of Steel; the Kabuki Transformer Bar is made and sold by Rogue) and
+          checked its weight, camber, sleeve length, handles, rack width and rating against at least
+          one independent source: Garage Gym Reviews' safety squat bar roundup (updated 2 June 2026)
+          and its reviews of the REP, Titan and Rogue bars, plus, for the Bells of Steel bar, its
+          Amazon US listing. A figure appears on a card only where the sources agree, or is labelled
+          as the maker's own; where they conflicted we left it out and say so on the card. Two bars
+          are newer versions than the ones reviewers covered, and their cards say so. Weight ratings
+          are the makers' figures, not load tests. On Amazon, we found the Bells of Steel bar listed
+          on Amazon US at $359.99 on that date. We could not confirm Amazon US listings for the REP,
+          Rogue and Kabuki bars, which are sold on their makers' stores, or tie an Amazon listing to
+          Titan's bar with certainty; those buttons run an Amazon search that may show similar bars
+          rather than the exact one. Every brand was checked against the US Consumer Product Safety
+          Commission's recall database on the same date, along with safety squat bars and barbells
+          as a category. Prices are those we saw on that date and change often. We earn a commission
+          if you buy through the Amazon links on this page; it does not change which products we
+          list or what we say about them.
+          <strong class="text-gray-900">What this page is, and is not.</strong> We review home
+          exercise equipment; we are not giving medical, physiotherapy or coaching advice. Safety
+          squat bars are popular with lifters working around shoulder, elbow or wrist problems, but
+          that is a reason to talk to a doctor or physiotherapist about your own case, not a claim
+          that the bar treats anything. If you have a back, hip, knee, shoulder or heart condition,
+          are pregnant or postpartum, or are returning from injury, get professional advice before
+          squatting heavy, and always squat inside a rack with safeties set.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="max-w-3xl mx-auto px-4 pt-8">
+      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
+        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
+        <ul class="list-none m-0 p-0">
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
+            <a href="#rep-safety-squat-bar" class="font-bold text-gray-900 no-underline hover:underline">REP Fitness Safety Squat Bar</a>
+            <a href="#rep-safety-squat-bar" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget:</span>
+            <a href="#titan-safety-squat-bar" class="font-bold text-gray-900 no-underline hover:underline">Titan Fitness Safety Squat Bar</a>
+            <a href="#titan-safety-squat-bar" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Made in USA:</span>
+            <a href="#rogue-sb-1" class="font-bold text-gray-900 no-underline hover:underline">Rogue SB-1 Safety Squat Bar</a>
+            <a href="#rogue-sb-1" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Most Versatile:</span>
+            <a href="#bells-of-steel-ss4" class="font-bold text-gray-900 no-underline hover:underline">Bells of Steel Safety Squat Bar – The SS4</a>
+            <a href="#bells-of-steel-ss4" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Most Adjustable:</span>
+            <a href="#kabuki-transformer-bar" class="font-bold text-gray-900 no-underline hover:underline">Kabuki Transformer Bar</a>
+            <a href="#kabuki-transformer-bar" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Safety Squat Bar Picks at a Glance</a>
+          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Safety Squat Bars</a>
+          <a href="#how-we-chose" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. How We Chose These Safety Squat Bars</a>
+          <a href="#what-it-does" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What a Safety Squat Bar Does, and Who It Suits</a>
+          <a href="#camber" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Camber Drop and Angle: How Far It Pitches You Forward</a>
+          <a href="#pads-and-handles" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Pad Thickness and Handle Design</a>
+          <a href="#rack-fit" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Rack Fit: Why Some SSBs Do Not Sit in Your J-Hooks</a>
+          <a href="#weight-and-sleeves" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Bar Weight, Sleeves and Ratings</a>
+          <a href="#safe-use" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Using a Safety Squat Bar Safely</a>
+          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Who Should Buy Something Else</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          The best safety squat bar for most home gyms is a well-padded bar with a moderate camber,
+          removable handles and a width that rests squarely in standard J-cups. Those details matter
+          more than with almost any other bar, because an SSB is a frame you wear rather than a bar
+          you hold: a camber that pitches you too far forward, a pad that is too thin or a bar that
+          is a little too narrow for your rack spoils it. The five bars below run from about $280 to
+          about $800, and the guide after them covers camber, pads, handles, weight and the rack
+          measurement most people forget to check.
+        </p>
+
+        <div id="quick-picks" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Safety Squat Bar Picks at a Glance</h2>
+<p>
+            Five bars, chosen to cover the main styles and budgets with something you can order
+            today. Most readers should start with the first two. The others suit buyers who want a
+            made-in-USA bar, a narrower bar for a narrow rack, or the most adjustable bar money can
+            buy.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead><tr>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Pick</th>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Best for</th>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Why</th>
+            </tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">REP Fitness Safety Squat Bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best overall</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Thick knurled removable handles, 49.1 in. between cambers, 1,500 lb rating</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Titan Fitness Safety Squat Bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lowest price</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $280 on sale, 1,500 lb rating, Olympic sleeves</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rogue SB-1 Safety Squat Bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Made in the USA</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Solid steel, fully welded, 70 lb</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bells of Steel SS4</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Versatility and Amazon buyers</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Four handle styles, needle-bearing sleeves, lighter bar, on Amazon US</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Kabuki Transformer Bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most adjustable</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Six camber angles and four sleeve positions in one bar</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            A safety squat bar is a specialty bar that sits beside a straight barbell, not in place
+            of one, and it only works well in a rack whose width suits it. If you are still choosing
+            the rack, our guide to
+            <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat racks for a home gym</a>
+            covers safeties and widths, and the
+            <a href="/home-gym/" class="text-[#0F62FE] font-medium">home gym hub</a> collects every
+            guide in this series.
+          </p>
+        </div>
+
+        <div id="picks" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Safety Squat Bars</h2>
+<p>
+            Each card gives the weight, camber, rack width and rating we could confirm, the price we
+            saw, and who the bar suits. Read the rack-width figure first and compare it with your rack:
+            a bar that does not sit squarely in your J-cups is the wrong bar however well it is made.
+          </p>
+          <p>
+            The cards are in no strict order after the first two. Where a maker and an independent
+            source disagreed on a figure, the card says so rather than choosing one.
+          </p>
+        </div>
+      </div>
+
+      <!-- Product cards -->
+      <div class="not-prose">
+        {
+          PRODUCTS.map((product, index) => (
+            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
+              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
+                  <div>
+                    <h3 class="text-white font-black text-xl leading-tight m-0">
+                      {index + 1}. {product.name}
+                    </h3>
+                    <p class="text-gray-400 text-xs">{product.category}</p>
+                  </div>
+                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                    {product.badge}
+                  </span>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center gap-2 mb-4 flex-wrap">
+                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
+                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
+                  </div>
+                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
+                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
+                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
+                      <ul class="space-y-2">
+                        {product.pros.map((pro) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
+                      <ul class="space-y-2">
+                        {product.cons.map((con) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="border-t border-gray-100 pt-4">
+                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
+                    <div class="flex flex-wrap items-center gap-3">
+                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+                        {product.amazonLabel} &rarr;
+                      </a>
+                      {product.reviewUrl && (
+                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
+                          Read our full {product.name} review &rarr;
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="how-we-chose" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. How We Chose These Safety Squat Bars</h2>
+<p>
+            We have not tested these bars. They were chosen from published specifications, maker
+            product pages, warranty terms, recall records and independent coverage, and the claims
+            on this page are limited to what those sources support.
+          </p>
+          <p>
+            We looked for bars that the maker listed as on sale on 19 October 2026 and that an
+            independent source had described in enough detail to cross-check. The main independent
+            source was Garage Gym Reviews, whose safety squat bar roundup and individual reviews cover
+            the REP, Titan and Rogue bars and the earlier versions of the Bells of Steel and Kabuki
+            designs. Garage Gym Reviews discloses that it earns commissions, as we do.
+          </p>
+          <p>
+            Two of the bars have changed since reviewers covered them, and we have handled that by
+            labelling. Bells of Steel now sells the SS4, which replaced the SS3 that Garage Gym
+            Reviews reviewed; we checked the SS4's figures against its Amazon US listing as a second
+            source and say where they differ. The Kabuki Transformer Bar is now manufactured in Ohio
+            by Rogue, and Rogue's figures differ from those Garage Gym Reviews gave for the earlier
+            Kabuki-made bar, so its card uses Rogue's figures and labels them. Titan's bar is a third
+            case: Titan's current page and Garage Gym Reviews' description of its version two give
+            different camber angles and warranty terms, which the card sets out.
+          </p>
+          <p>
+            Every brand was checked against the CPSC recall database, by brand name in recall titles,
+            manufacturer fields and descriptions (including Coulter Ventures, Rogue's legal name),
+            along with safety squat bars and barbells as a category. We found no recalls for any
+            safety squat bar. Unrelated records came up for two brands: REP's 2021 recall of strap
+            safety brackets for its PR-4000 and PR-5000 racks, and Rogue's 2011 recall of J-cup
+            brackets used on some older racks. If you own either rack, check those notices, because a
+            safety squat bar is only as safe as the J-cups and safeties under it.
+          </p>
+          <p>
+            Several bars are deliberately not carded. The PRx Performance Safety Squat Bar, $400 on
+            PRx's store, is made by Solid Bar Fitness; PRx lists a 1,500 lb capacity while Garage Gym
+            Reviews lists 1,200 lb, and PRx's page gave few other figures, so we could not check it
+            properly. Titan's made-in-USA TITAN Series bar, $549.99 on Titan's store, has a 22-degree
+            camber and knurled handles, but Titan gives 67 lb and Garage Gym Reviews 60 lb, and the
+            review's $300 price no longer matches. The EliteFTS SS Yoke Bar and the Marrs Bar are
+            well regarded and were not checked against their makers' pages. We found no safety squat
+            bar on CAP Barbell's store. And we left out the many unbranded Amazon SSBs at $120 to
+            $220, often rated at 700 lb: Garage Gym Reviews warns that cheap SSBs tend to whip, use
+            poor padding and get the camber wrong, and we found no independent coverage of any
+            particular one.
+          </p>
+        </div>
+
+        <div id="what-it-does" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What a Safety Squat Bar Does, and Who It Suits</h2>
+<p>
+            A safety squat bar has a padded yoke that sits on your upper back and shoulders, two
+            handles that come forward over your shoulders, and sleeves that bend down and forward of
+            the bar's centre. That bend is the camber. Because the plates hang slightly in front of
+            and below the bar, the load tries to tip you forward, and your upper back and trunk have
+            to work hard to stay upright.
+          </p>
+          <p>
+            Two things follow. First, you do not need to reach back and grip the bar, so the shoulder
+            position that a straight-bar back squat demands — arms rotated out and back, elbows behind
+            the bar — goes away. That is why lifters with stiff or sore shoulders, elbows or wrists
+            often prefer one, and why strength athletes use them to give the shoulders a break from
+            heavy straight-bar work. Second, the squat itself feels different: more like a cross
+            between a front squat and a high-bar back squat, with more demand on the upper back and
+            quads. Most people squat a little less with an SSB than with a straight bar, at least at
+            first.
+          </p>
+          <p>
+            An SSB is also useful beyond squats. Good mornings, split squats, lunges and step-ups are
+            easier to set up and to bail out of when your hands are free to hold the rack. Lifters
+            with good balance use the "Hatfield" squat, holding the rack uprights or safety arms with
+            their hands while the bar sits on their back. With the handles removed, some bars can be
+            used for JM presses and other arm work.
+          </p>
+          <p>
+            Who should not bother? If a straight-bar squat feels fine and you have one bar budget, a
+            good barbell is more useful; our guide to the
+            <a href="/best-barbells/" class="text-[#0F62FE] font-medium">best barbells for home</a>
+            starts there. If your problem is your back or knees rather than your shoulders, an SSB
+            may not help, and a professional's advice is worth more than a new bar.
+          </p>
+        </div>
+
+        <div id="camber" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Camber Drop and Angle: How Far It Pitches You Forward</h2>
+<p>
+            Makers describe the camber in two ways, and it causes confusion.
+          </p>
+          <p>
+            <strong>Camber drop</strong> is how far the centre of the sleeve sits below the bar where
+            it crosses your back. The bars on this page are close: Titan lists a 5-inch drop and REP
+            a 5.5-inch drop, and Garage Gym Reviews gives 5.5 inches for the Rogue SB-1. A bigger
+            drop moves the plates further down and, usually, further forward.
+          </p>
+          <p>
+            <strong>Camber angle</strong> is the angle of the bend. Titan quotes a 20-degree camber
+            for its imported bar and 22 degrees for its made-in-USA bar; Garage Gym Reviews calls 22
+            degrees "exactly what you want" and says Titan's first SSB got the angle wrong. The
+            Marrs Bar, at the extreme, uses a much steeper bend that pitches the lifter further
+            forward.
+          </p>
+          <p>
+            In practice, the feel depends on both figures and on where the handles are, and reviewers'
+            impressions are more useful than the numbers. Garage Gym Reviews found the REP bar feels
+            very similar to the Titan and EliteFTS bars, with the REP perhaps pitching its tester a
+            little further forward. If you are new to SSBs, a moderate camber in the 20 to 22-degree,
+            5 to 5.5-inch range is the normal starting point. The Kabuki Transformer Bar is the
+            exception that lets you change it, which is useful if you are not sure, or if several
+            people with different preferences share the bar.
+          </p>
+          <p>
+            One practical consequence of the camber: an SSB swings when you walk it out and when you
+            re-rack, because the weight hangs below the bar. Walk out slowly, and expect the first
+            few sessions to feel strange.
+          </p>
+        </div>
+
+        <div id="pads-and-handles" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Pad Thickness and Handle Design</h2>
+<p>
+            The pad and the handles are what you feel every rep, and they are where cheap bars cut
+            corners.
+          </p>
+          <p>
+            <strong>The pad.</strong> Look for dense foam that does not flatten under heavy loads,
+            covered in a tough vinyl or synthetic leather, with a gap between the shoulder pads wide
+            enough for your neck. REP gives 8.3 inches between its pads, Titan 8 inches on both its
+            bars. Makers rarely publish pad thickness, and reviewers describe it rather than measure
+            it, so we have not compared thickness numerically. Garage Gym Reviews' judgements are
+            the best guide: it found Titan's padding thick and durable, REP's single layer of
+            high-density foam comfortable, Kabuki's among the most comfortable it has used, and the
+            Rogue SB-1's dense but thin, with reports of stitching coming undone. A one-piece pad
+            that cannot slide around the bar is a plus, which Titan and Bells of Steel both claim.
+          </p>
+          <p>
+            <strong>Handle length, angle and spacing.</strong> Longer handles let you hold the bar
+            with your arms more relaxed; short handles force your hands closer to your shoulders,
+            which defeats part of the point. Spacing matters too: REP gives 13 inches between its
+            handles, Titan 12.75 inches and the Kabuki bar 12 inches. The angle at which the handles
+            come forward varies by design, and makers rarely give it as a number. Bells of Steel's
+            approach is to sell different handles: the SS4 comes with straight handles and offers
+            long angled "spider" handles for lifters with very limited shoulder mobility, chain
+            handles that let the hands find their own position, and seal-row handles.
+          </p>
+          <p>
+            <strong>Grip.</strong> Knurled steel handles, as on the REP and the TITAN Series bars,
+            give a secure grip; rubber grips, as on Titan's cheaper bar, are softer but can feel less
+            secure when sweaty. Thick handles spread the load in your hands: REP's are 1.5 inches,
+            about 38 mm, which Garage Gym Reviews calls beefy, while Rogue's are 1 inch.
+          </p>
+          <p>
+            <strong>Removable handles.</strong> REP, Titan and Bells of Steel all have removable
+            handles, which lets you use the bar for presses and arm work and makes it easier to store.
+          </p>
+        </div>
+
+        <div id="rack-fit" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Rack Fit: Why Some SSBs Do Not Sit in Your J-Hooks</h2>
+<p>
+            This is the measurement most buyers miss. A straight barbell has a long shaft, so it rests
+            in almost any rack. A safety squat bar bends down just outside the shoulder pads, and only
+            the straight section between the bends can rest in the J-cups. If your rack is wider than
+            that straight section, the bar sits on the bends instead, tilts, or does not sit at all.
+          </p>
+          <p>
+            Makers describe this figure in different terms, so compare carefully:
+          </p>
+          <ul>
+            <li><strong>REP:</strong> 49.1 inches between the cambers, which REP says sits flush even
+              on 49-inch-wide racks. Garage Gym Reviews' tester used it in a 49-inch Rogue rack without
+              trouble.</li>
+            <li><strong>Titan Safety Squat Bar:</strong> a 50-inch rackable width.</li>
+            <li><strong>Titan TITAN Series:</strong> a 49-inch rackable length, and Garage Gym Reviews
+              found it did not sit evenly in the J-cups of a wide rack.</li>
+            <li><strong>Bells of Steel SS4:</strong> rests correctly in racks up to 49 inches between
+              the outer edges of the J-cups, by Bells of Steel's figure. Garage Gym Reviews found the
+              previous SS3 did not work with racks wider than 47 inches.</li>
+            <li><strong>Kabuki Transformer Bar:</strong> 54 inches between the brackets, the widest
+              here.</li>
+            <li><strong>Rogue SB-1:</strong> Rogue does not publish the figure; Garage Gym Reviews
+              re-racked it in a Rogue R-3 without problems.</li>
+          </ul>
+          <p>
+            To check your own rack, measure across the outside of the J-cups when they are mounted,
+            not just the uprights, because J-cups add width. Most home racks are about 47 to 49
+            inches wide across the uprights; some commercial and imported racks are wider. If your
+            measurement is within an inch of the bar's figure, ask the maker before buying.
+          </p>
+          <p>
+            Narrow racks have the opposite problem only rarely: a very narrow squat stand or folding
+            rack leaves a long length of bar either side, which is fine for the bar but gives less
+            room inside the rack to walk out. Folding wall-mounted racks are generally narrow enough;
+            our
+            <a href="/best-folding-squat-racks/" class="text-[#0F62FE] font-medium">folding squat rack guide</a>
+            lists their widths.
+          </p>
+          <p>
+            Finally, set your safeties. An SSB is easy to bail out of forward, but the camber means the
+            plates sit lower than on a straight bar, so the safeties have to catch the bar's straight
+            section rather than the plates. Set them a little below the bottom of your squat and test
+            with an empty bar before loading.
+          </p>
+        </div>
+
+        <div id="weight-and-sleeves" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Bar Weight, Sleeves and Ratings</h2>
+<p>
+            Safety squat bars are heavy. On this page they run from about 46 lb (Bells of Steel) to
+            70 lb (Rogue), with REP at 68 lb and Titan's cheaper bar at 58 lb by Titan's figure. That
+            matters for two reasons. If you log your training, use the real weight; Garage Gym
+            Reviews complains that REP's end caps do not show it. And if you are light or new to
+            squatting, a 70 lb empty bar is already a working weight, so a lighter bar like the Bells
+            of Steel makes the first sessions easier.
+          </p>
+          <p>
+            Sleeve length decides how much plate you can load. REP gives 15.6 inches, Titan 14.75
+            inches on its cheaper bar and 16 inches on the TITAN Series, Rogue's Kabuki Transformer
+            15.75 inches and Bells of Steel 11.8 inches. Garage Gym Reviews flagged the earlier SS3's
+            shorter sleeves as its main weakness, because most safety squat bars offer about 16
+            inches. With iron plates, 12 inches is plenty for most lifters; with bumpers it is a real
+            limit.
+          </p>
+          <p>
+            Sleeve diameter matters for collars. Older SSBs often used axle-sized sleeves that need
+            special collars; the bars on this page use Olympic 2-inch sleeves or close to it, which
+            Garage Gym Reviews counts as a real improvement.
+          </p>
+          <p>
+            Weight ratings are makers' figures and are not independent load tests. The REP, Titan,
+            Bells of Steel and Kabuki bars are all rated at 1,500 lb; Rogue does not publish a rating
+            for the SB-1. No home lifter is likely to approach those numbers, so treat the rating as a
+            sign of how stiff the bar is meant to be rather than a target.
+          </p>
+        </div>
+
+        <div id="safe-use" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Using a Safety Squat Bar Safely</h2>
+<ul>
+            <li><strong>Always squat inside a rack with safeties.</strong> Set the safety arms or straps
+              just below the bottom of your squat, so a missed rep lands on them.</li>
+            <li><strong>Centre the bar on the pad.</strong> The pad should sit evenly on both
+              shoulders, with your neck in the gap. Off-centre, the camber twists you.</li>
+            <li><strong>Walk out short and slow.</strong> The hanging plates swing. Take two or three
+              steps back, stop, let the bar settle, then squat.</li>
+            <li><strong>Brace for the forward pull.</strong> The bar wants to tip you forward, so keep
+              your upper back tight and push your head and elbows back into the pad.</li>
+            <li><strong>Collar the plates.</strong> Plates can slide on a cambered sleeve during the
+              walk-out and when re-racking.</li>
+            <li><strong>Check the J-cups every session.</strong> Make sure the bar rests on its straight
+              section, not on the bends, before you load it.</li>
+          </ul>
+          <p>
+            For the floor under your rack, our guides to
+            <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium">gym flooring</a> and
+            <a href="/best-lifting-platforms/" class="text-[#0F62FE] font-medium">lifting platforms</a>
+            cover rubber and platforms, and our roundup of
+            <a href="/best-recovery-tools-for-weightlifters/" class="text-[#0F62FE] font-medium">recovery tools for weightlifters</a>
+            covers what helps after heavy squat days.
+          </p>
+        </div>
+
+        <div id="who-should-skip" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Who Should Buy Something Else</h2>
+<p>
+            <strong>If you do not yet own a straight barbell</strong>, buy one first. It squats,
+            presses, rows and deadlifts; an SSB is mainly a squat and good-morning bar.
+          </p>
+          <p>
+            <strong>If your rack is wider than about 49 inches</strong>, most bars here will not sit
+            squarely in it. The Kabuki Transformer Bar is the exception; otherwise, ask the maker for
+            the exact figure before buying.
+          </p>
+          <p>
+            <strong>If you want to pull heavy without loading your back the same way</strong>, a
+            trap bar may be the better specialty bar. Our guide to the
+            <a href="/best-trap-bars/" class="text-[#0F62FE] font-medium">best trap bars</a> covers
+            open and closed designs.
+          </p>
+          <p>
+            <strong>If you would rather squat on a machine</strong>, hack squats, leg presses and
+            Smith machines take the balance out of the lift. Our guides to
+            <a href="/best-hack-squat-machines/" class="text-[#0F62FE] font-medium">hack squat machines</a>,
+            <a href="/best-leg-press-machines/" class="text-[#0F62FE] font-medium">leg press machines</a> and
+            <a href="/best-smith-machines/" class="text-[#0F62FE] font-medium">Smith machines</a>
+            compare them.
+          </p>
+          <p>
+            <strong>If you are still putting a home gym together</strong>, our
+            <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment reviews</a>
+            set specialty bars alongside every other category, and our guide to
+            <a href="/best-weight-benches/" class="text-[#0F62FE] font-medium">weight benches</a>
+            covers the next purchase most racks need.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What is the best safety squat bar for a home gym?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                For most home gyms, a bar with a moderate camber, a dense pad, removable handles and a width that suits a standard rack, such as the REP Fitness Safety Squat Bar. On a tighter budget, Titan's Safety Squat Bar is the reviewers' value pick. Whatever you choose, check that its width between the cambers suits your rack before ordering.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is a safety squat bar worth it?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                It is worth it if straight-bar back squats bother your shoulders, elbows or wrists, if you want a squat variation that works the upper back hard, or if you want easier good mornings and split squats. It is not worth it as a first bar; a straight barbell does far more. Persistent pain is a reason to see a professional, not only to change bars.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How much does a safety squat bar weigh?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Usually 45 to 70 lb, not 45 lb. On this page, the Bells of Steel SS4 is about 46 lb, Titan's bar 58 lb by Titan's figure, REP's 68 lb, the Kabuki Transformer about 55 lb and the Rogue SB-1 70 lb. Use your bar's real weight when you log your lifts.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Will a safety squat bar fit my squat rack?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Only if the straight section between the cambers is wider than your rack measured across the outside of the J-cups. REP gives 49.1 inches, Titan a 50-inch rackable width, Bells of Steel says up to 49 inches and the Kabuki Transformer 54 inches. Most home racks are about 47 to 49 inches wide, but measure yours.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Do you squat less with a safety squat bar?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Most people do, at least at first, because the camber pitches the load forward and the upper back has to work harder to stay upright. Many lifters find the gap narrows with practice. Treat it as a different lift with its own numbers rather than comparing it directly with your straight-bar squat.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What is camber on a safety squat bar?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Camber is the downward and forward bend of the sleeves outside the shoulder pads. Makers describe it as a drop in inches, typically about 5 to 5.5 inches, or as an angle, typically about 20 to 22 degrees. More camber pitches you further forward. The Kabuki Transformer Bar lets you change it.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Safety Squat Bar</h2>
+          <p class="text-gray-700 leading-relaxed">Each of these is easy to avoid with a tape measure and five minutes of reading.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not measuring the rack width</h3>
+              <p class="text-gray-700 text-sm m-0">An SSB only rests on the straight section between its cambers. If your rack, measured across the outside of the J-cups, is wider than that section, the bar sits on its bends or tilts. Measure your rack with the J-cups fitted and compare it with the maker's figure before ordering, and ask the maker if you are within an inch.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying the cheapest unbranded bar</h3>
+              <p class="text-gray-700 text-sm m-0">The cheapest SSBs on Amazon are often rated at 700 lb, have no independent coverage, and, according to reviewers who have tried cheap bars, tend to whip, use thin padding and get the camber wrong. An SSB carries a heavy load on your neck and shoulders; this is not the place to save $100 on an unknown bar.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Logging it as a 45 lb bar</h3>
+              <p class="text-gray-700 text-sm m-0">Most safety squat bars weigh more than 45 lb, some up to 70 lb, and several do not show their weight on the end caps. If you log the wrong figure, your numbers will not add up. Note the maker's figure for your bar and write it on a piece of tape on the sleeve if you need to.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Squatting without safeties because it feels easy to bail</h3>
+              <p class="text-gray-700 text-sm m-0">It is true that you can dump an SSB forward more easily than a straight bar, which is why it is called a safety squat bar. That is not a reason to skip the safeties. Set safety arms or straps just below your bottom position, check they catch the bar's straight section, and test with an empty bar first.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Home Gym Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/best-squat-racks-for-home-gym/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Racks</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Squat Racks for a Home Gym</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Power racks, half racks and squat stands, rack widths and how to set safeties.</p>
+            </a>
+            <a href="/best-weight-benches/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Benches</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Weight Benches</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Flat, adjustable and folding benches that fit inside a home rack.</p>
+            </a>
+            <a href="/best-gym-flooring/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Floors</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Gym Flooring</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Rubber tiles, rolls and stall mats for the area under your rack.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">For most home gyms, buy the REP Fitness Safety Squat Bar</strong>:
+            comfortable, well finished and sized for standard racks. Titan's Safety Squat Bar is the
+            budget choice reviewers back, the Rogue SB-1 is the traditional made-in-USA bar, the Bells
+            of Steel SS4 is the most adaptable and the lightest, and the Kabuki Transformer Bar is
+            several squat bars in one for those who can justify the price.
+          </p>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            Whichever you choose, measure your rack across the J-cups before ordering, log the bar's
+            real weight, and squat inside the rack with safeties set every time.
+            <a href="/best-squat-racks-for-home-gym/" class="text-[#5AA9FF] font-bold no-underline">Our squat rack guide</a>
+            covers the rack the bar has to live in.
+          </p>
+        </div>
+
+        <!-- Meet the Author -->
+        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
+          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
+          <div>
+            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
+            <p class="text-sm font-bold text-gray-900 m-0">
+              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
+              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+            </p>
+            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
+              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
+              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
+              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
+              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
+              running ergonomics, noise and long-term durability. Every guide says what was checked and
+              when, and says plainly when a product has not been tested hands-on.
+              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
+              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </article>
+</Layout>

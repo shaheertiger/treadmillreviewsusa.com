@@ -34,7 +34,14 @@ const FALLBACK_PATH = join(ROOT, 'src', 'data', 'amazon-fallbacks.json');
 const FALLBACKS = existsSync(FALLBACK_PATH) ? JSON.parse(readFileSync(FALLBACK_PATH, 'utf8')) : {};
 const searchUrl = (q) => `https://www.amazon.com/s?k=${encodeURIComponent(q).replace(/%20/g, '+')}&tag=sktiger-20`;
 const isFallback = (p) => !ASINS[p.name] && Boolean(FALLBACKS[p.name]);
-const amazonUrl = (p) =>
+// Every Amazon link carries the Associates tag, even if a spec's hand-written URL forgot it.
+const withTag = (url) => {
+  if (!/^https:\/\/(www\.)?amazon\.com\//.test(url) || /[?&]tag=sktiger-20(&|$)/.test(url)) return url;
+  const clean = url.replace(/([?&])tag=[^&]*&?/, '$1').replace(/[?&]$/, '');
+  return `${clean}${clean.includes('?') ? '&' : '?'}tag=sktiger-20`;
+};
+const amazonUrl = (p) => withTag(rawAmazonUrl(p));
+const rawAmazonUrl = (p) =>
   ASINS[p.name]
     ? `https://www.amazon.com/dp/${ASINS[p.name].asin}?tag=sktiger-20&linkCode=ll1`
     : FALLBACKS[p.name]
