@@ -3038,6 +3038,24 @@ export const SECTIONS: Section[] = [
             badge: 'Seated',
             url: '/best-recumbent-ellipticals/',
           },
+          {
+            title: 'Best Air Bikes',
+            description: 'Seven fan bikes, from AirDyne to AssaultBike and Rogue Echo: belt vs chain, noise, size.',
+            badge: 'Air bike',
+            url: '/best-air-bikes/',
+          },
+          {
+            title: 'Best Compact Ellipticals',
+            description: 'Five ellipticals 37 to 58 in. long: the stride trade-off and ceiling sums for tall users.',
+            badge: 'Compact',
+            url: '/best-compact-ellipticals/',
+          },
+          {
+            title: 'Best Folding Exercise Bikes',
+            description: 'Five X-frame folding bikes: folded size, weight-limit claims, seats and stability.',
+            badge: 'Folding',
+            url: '/best-folding-exercise-bikes/',
+          },
         ],
       },
       {

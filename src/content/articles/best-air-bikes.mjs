@@ -1,0 +1,628 @@
+export default {
+  slug: 'best-air-bikes',
+  title: 'Best Air Bikes (2026): 7 Fan Bikes and Assault Bikes Checked',
+  description:
+    'Seven air bikes checked against makers and independent reviews: AirDyne, AssaultBike, Rogue Echo, Titan and BikeErg; belt vs chain, noise, size and consoles.',
+  crumbLabel: 'Best Air Bikes',
+  breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
+  kicker: 'Buying Guide',
+  updated: 'October 2026',
+  updatedLong: 'October 19, 2026',
+  published: '2026-10-19',
+  socialProof: '1.9k',
+  h1: ['Best Air Bikes', 'and Assault Bikes for Home'],
+  standfirst:
+    'An air bike is the hardest workout you can fit in a corner: a fan for resistance, handles for your arms and no plug. Here are seven currently sold air bikes whose figures held up when we checked them, from the $749 AssaultBike Classic to the Schwinn AirDyne AD7, and what belt drive, fan size, noise and footprint actually mean before you buy one.',
+  ctas: [
+    { label: 'See the Picks', href: '#quick-picks' },
+    { label: 'Belt vs Chain Drive', href: '#belt-vs-chain' },
+  ],
+  tags: ['best air bike', 'best assault bike', 'air bike for home', 'fan bike', 'schwinn airdyne ad7', 'assaultbike classic', 'rogue echo bike'],
+  stickyCta: { text: 'See the Air Bike Picks', link: '#quick-picks' },
+  lead: `Air bikes look simple, and they are: a big fan at the front, pedals linked to moving
+          handles, and resistance that rises the harder you push. That simplicity is why they last for
+          years in gyms and why they are such an efficient way to do hard intervals at home. It is
+          also why the differences between them are easy to miss. This page names seven air bikes that
+          are on sale now and whose basic figures agreed between the maker and an independent source
+          when we checked them, explains the few specifications that really separate one from
+          another — drive type, fan, frame, console and size — and is honest about the one thing no
+          air bike can avoid, which is noise.`,
+  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
+          bikes, and no figure on this page is our own measurement. Each was confirmed on 19 October
+          2026 as currently sold on its maker's own store (Schwinn Fitness, Assault Fitness, Rogue
+          Fitness, Titan Fitness and Concept2), and its figures were checked on that date against the
+          maker's product page and at least one independent source — hands-on reviews from Garage Gym
+          Reviews, BarBend and OutdoorGearLab. A figure appears in a product's specification line only
+          where those sources agree; where they conflicted — on dimensions, unit weights, warranty
+          terms and one weight limit — we left the figure off the card and say so in the text. Our
+          checking tools could not load Amazon's own pages on 19 October, so Amazon availability for
+          the Schwinn, Assault, Titan and Concept2 bikes rests on independent reviewers' Amazon links
+          and past listings; confirm the seller on the listing before you order. The Rogue Echo Bike
+          is sold by Rogue directly rather than on Amazon. Prices are those we saw on 19 October 2026
+          and change often. We earn a commission if you buy through the Amazon links on this page; it
+          does not change which products we list or what we say about them.
+          <strong class="text-gray-900">What this page is, and is not.</strong> We review equipment;
+          this is not medical or coaching advice. Air bikes are built for very hard efforts. If you
+          have a heart, blood pressure, joint or balance condition, are pregnant, or are new to
+          vigorous exercise, ask a doctor what intensity suits you before you buy one.`,
+  sections: [
+    {
+      id: 'quick-picks',
+      heading: 'Our Picks at a Glance',
+      html: `          <p>
+            <strong>The best air bike for most homes is the Schwinn AirDyne AD7</strong>: a belt drive
+            that reviewers found quieter and lower-maintenance than a chain, a 350 lb weight rating, a
+            10-year frame warranty and a console that runs on batteries. If you want the best assault
+            bike in the CrossFit sense, the Rogue Echo Bike and the belt-driven AssaultBike Pro X are the
+            two to compare; if you want the lowest price from an established brand, the chain-driven
+            AssaultBike Classic is $749 on sale.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Pick</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Best for</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Why</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Schwinn AirDyne AD7</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most homes</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Belt drive, 350 lb rating, 10-year frame warranty; $1,099 on Schwinn</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rogue Echo Bike V3.0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Heavy, hard use</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">123 lb steel frame and belt drive; sold direct by Rogue at $945</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">AssaultBike Pro X</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Belt drive under $900</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Assault's belt-driven bike, Bluetooth and ANT+, 7-year frame warranty</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">AssaultBike Classic</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lowest price, tight spaces</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About 96 lb, 50.95 x 23.34 in.; chain drive; $749 on sale</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Titan Fitness Fan Bike</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Narrowest frame</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20.4 in. wide, 330 lb rating, turf tires; chain drive</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Schwinn AirDyne AD6</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A Schwinn for less</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Big seat, simple RevMeter console, 300 lb rating; $799 on sale</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Concept2 BikeErg</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Cyclists, small rooms</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Air resistance without moving arms; 68 lb, 48 x 24 in.; $1,100</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            "Assault bike" has become a generic name for any fan bike with moving arms, the way people
+            say "Hoover" for a vacuum. AssaultBike is a trademark of Assault Fitness, and two of the
+            seven picks are theirs, but the Schwinn, Rogue and Titan bikes do the same job. If you are
+            still deciding between an air bike and another machine entirely, our
+            <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">best cardio machines for home</a>
+            guide picks one of each type and names the AirDyne AD7 as its air bike; this page goes
+            further into the category. For a quiet bike you can ride for an hour while watching
+            television, read our
+            <a href="/best-exercise-bikes/" class="text-[#0F62FE] font-medium">best exercise bikes</a>
+            guide instead — an air bike is the wrong tool for that.
+          </p>`,
+    },
+    {
+      id: 'picks',
+      heading: 'The 7 Best Air Bikes',
+      products: true,
+      html: `          <p>
+            Each card gives only the figures that the maker and an independent source agreed on, the
+            price range we saw, and who the bike suits. Six of the seven are classic fan bikes with
+            moving handles. The seventh, the Concept2 BikeErg, uses the same air resistance through a
+            flywheel but has fixed handlebars, so it is a different kind of machine; we have included it
+            because it is what many people actually want when they search for an air bike, and say
+            plainly where it differs.
+          </p>
+          <p>
+            The Schwinn AirDyne AD7 is the same bike we picked on our cardio machines page. We have not
+            changed our view of it, only checked it again on a later date: Schwinn's price has moved from
+            $999 to $1,099 since then, and the descriptions say where a figure was left off and why.
+          </p>`,
+    },
+    {
+      id: 'how-we-chose',
+      heading: 'How We Chose These Air Bikes',
+      html: `          <p>
+            We have not ridden or measured these bikes. They were chosen from makers' specification
+            tables, retailer listings, warranty terms and independent hands-on reviews, all checked on 19
+            October 2026, and the claims on this page are limited to what those sources support. Each pick
+            had to be on sale under its current name on the maker's own store that day; its weight limit,
+            footprint, drive type and warranty had to agree between the maker and at least one source that
+            does not sell it; and it had to work without a subscription, which every air bike here does.
+          </p>
+          <p>
+            <strong>Recall checks.</strong> We searched the US Consumer Product Safety Commission's
+            recall database by brand for every maker on this page — Schwinn, Assault Fitness, Rogue
+            Fitness (Coulter Ventures), Titan Fitness and Concept2 — and for "air bike" and "fan bike" as
+            product types. None of the seven bikes is under a recall, and we found no air bike recall of
+            any brand. Two of the brands have recalled other products: Coulter Ventures recalled Rogue
+            home timers for a fire hazard in November 2020, and Titan recalled weight-lifting safety
+            straps in September 2018. Schwinn-branded fitness equipment has been sold by more than one
+            company over the years, and the Schwinn recall on file, an elliptical in December 2011, was
+            made by Nautilus, the brand's previous owner. None of those covers an air bike. Schwinn
+            Fitness and BowFlex are now run by Johnson Health Tech, which recalled BowFlex adjustable
+            dumbbells in June 2025 and Matrix-brand training cycles in January 2025; neither is on this
+            page.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What we left out, and why</h3>
+          <p>
+            <strong>Sunny Health &amp; Fitness Tornado Smart Air Bike (SF-B223018).</strong> Sunny lists
+            it at $699.99 with a 330 lb weight limit, a belt drive and SunnyFit app tracking, which would
+            make it the cheapest belt-driven fan bike here. We found no independent review of it to check
+            those figures against, so it is a name to compare rather than a pick. Sunny's older Motion Air
+            Bike and Tornado LX showed as unavailable on its store.
+          </p>
+          <p>
+            <strong>AssaultBike Elite.</strong> Assault's premium bike is $1,499 with a 350 lb rating and
+            a 10-year frame, 3-year parts and 1-year labor warranty, and BarBend agrees on the capacity
+            and warranty. But Assault's own page gives two different sets of assembled dimensions and
+            weights for it, and at that price the AD7 offers a belt drive for less. The Elite is chain
+            driven.
+          </p>
+          <p>
+            <strong>Bells of Steel Blitz Air Bike 2.0 and Fringe Sport Raptor.</strong> Both are
+            belt-driven, rated to 350 lb and well reviewed by Garage Gym Reviews and BarBend. Both are
+            sold mainly through their makers' own stores, and this page favors bikes you can also find on
+            Amazon; if you are buying direct anyway, they are worth adding to a comparison with the Rogue
+            Echo.
+          </p>
+          <p>
+            <strong>Schwinn AirDyne AD2 and AirDyne Pro.</strong> The AD2 is still listed on Schwinn's
+            site but showed no price we could buy at, and the AirDyne Pro is no longer on Schwinn's home
+            store. Garage Gym Reviews' older coverage of the Pro is useful history but not a current buying
+            option.
+          </p>`,
+    },
+    {
+      id: 'how-air-bikes-work',
+      heading: 'How an Air Bike Works, and Why It Feels So Hard',
+      html: `          <p>
+            Every air bike works the same way. The pedals and the handles are linked to a fan through a
+            drive belt or chain. When you push, the fan spins and has to move air out of the way. Air
+            resistance rises steeply with speed — roughly with the square of the fan's speed for the drag
+            itself, and faster still for the power you need to keep it turning — so the harder you push,
+            the disproportionately harder it pushes back. That is why there are no resistance levels on
+            the six fan bikes here: your effort is the setting.
+          </p>
+          <p>
+            Two consequences follow. First, an air bike suits everyone from a beginner to an elite
+            athlete, because a gentle pace produces gentle resistance. Second, it is unusually good at
+            short, maximal intervals: you can go from easy to all-out in a couple of seconds, there is no
+            belt to step off and no gear to change, and when you stop pushing, the fan slows down on its
+            own. That is the reason air bikes are standard in functional-fitness gyms and why the
+            CrossFit Games use one. It is also why a ten-minute session on one can leave you more winded
+            than half an hour on a magnetic bike.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Arms, legs, or both</h3>
+          <p>
+            The moving handles mean you can drive the fan with your arms, your legs or both, and most of
+            the picks have foot pegs so you can rest your feet and work only the upper body. Using both
+            at once spreads the work across more muscle, which is part of why the effort climbs so fast.
+            The BikeErg has no moving handles, so it is a legs-only machine with a cycling position.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Fan size and the "feel" of the bike</h3>
+          <p>
+            Fans differ. Assault lists a 27-inch steel fan on the Classic and Pro X. OutdoorGearLab gives
+            the AD6 a 20-inch perimeter-weighted fan. Garage Gym Reviews notes that the bigger and bulkier
+            the fan blades, the harder a bike is to pedal at very high speeds — a point its reviewers made
+            comparing the Rogue Echo's large fan with the Pro X. That shows up as a difference in feel at
+            the top end, not as a better or worse workout: on any of these bikes, you set the intensity.
+            Do not try to compare calorie or watt readings between brands, because each console
+            estimates them from fan speed with its own formula.
+          </p>`,
+    },
+    {
+      id: 'belt-vs-chain',
+      heading: 'Belt vs Chain Drive',
+      html: `          <p>
+            The single most useful specification on an air bike is how the pedals drive the fan. BarBend's
+            reviewers called it the thing that most affects the experience, and every independent source
+            we read agrees on the basic trade-off.
+          </p>
+          <ul>
+            <li><strong>Chain drive</strong> — the AssaultBike Classic, the AssaultBike Elite and the Titan Fan Bike. A bicycle-style chain is cheap, strong and familiar. It also needs lubricating and its tension checking; BarBend suggests doing both on the Titan roughly monthly. Chains make a metallic rattle on top of the fan noise, and Garage Gym Reviews calls the Classic's chain louder than the Echo's belt.</li>
+            <li><strong>Belt drive</strong> — the AirDyne AD7, the Rogue Echo, the AssaultBike Pro X and the BikeErg, and OutdoorGearLab describes the AD6 as belt-driven too. A belt is quieter and needs no lubrication. Assault describes the Pro X's drive as a two-stage system, a cogged belt and then a poly-V belt; Concept2 uses polygroove belts with a self-tensioning system.</li>
+          </ul>
+          <p>
+            The trade-offs are smaller than the marketing suggests. Garage Gym Reviews found the Echo's
+            belt drive harder to push than a chain, and BarBend notes that a belt can eventually wear and
+            need replacing, whereas a well-kept chain can last a very long time. Belt-driven bikes have also
+            historically cost more, although the Pro X narrowed that gap.
+          </p>
+          <p>
+            <strong>How to choose.</strong> If the bike will live in a garage and you do not mind five
+            minutes of chain care a month, a chain drive saves money. If it will live indoors, near
+            other people, or with someone who will never lubricate anything, pay for a belt. A note on
+            Schwinn's wording: its product pages describe both AirDyne models as having a "single-stage
+            direct drive system", while BarBend's hands-on AD7 review and OutdoorGearLab's AD6 review both
+            describe them as belt-driven. A single belt stage between pedals and fan is consistent with
+            both descriptions.
+          </p>`,
+    },
+    {
+      id: 'noise',
+      heading: 'How Loud Is an Air Bike?',
+      html: `          <p>
+            Louder than any other cardio machine you are likely to buy for home, and no drive type changes
+            that. The fan has to move air to create resistance, and moving a lot of air quickly is noisy.
+            BarBend compares the sound to white noise at an easy pace and a vacuum cleaner during sprints;
+            OutdoorGearLab found the AD6 quiet at low effort but loud enough to interrupt a conversation at
+            full power. A belt drive removes the chain rattle, which matters, but the whoosh of the fan is
+            the main event.
+          </p>
+          <p>
+            We are not going to give you decibel figures. We have not measured these bikes, and readings
+            published elsewhere depend on the microphone distance, the room and how hard the rider is
+            pushing, so they cannot be compared across sources. What helps in practice:
+          </p>
+          <ul>
+            <li><strong>Choose the room first.</strong> A garage, basement or ground-floor room on a slab is the natural home for an air bike. In an upstairs flat, the airborne noise carries through doors and the low-frequency rumble of hard efforts carries through the floor.</li>
+            <li><strong>Use a mat.</strong> A dense rubber mat under the frame stops vibration traveling into a wooden floor and protects it from sweat. It does nothing for fan noise. Our <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">equipment mat guide</a> covers sizes and thicknesses.</li>
+            <li><strong>Fit the wind guard.</strong> Schwinn includes an air diverter on the AD7 and Rogue sells one for the Echo. These redirect the blast of air away from your legs and face; they are about comfort rather than quiet.</li>
+            <li><strong>Pick your hours.</strong> Intervals are short. A 15-minute session in the early evening is easier on a household than the same session at 6 a.m.</li>
+          </ul>
+          <p>
+            If noise is the deciding factor — you share walls, or someone sleeps while you train — an air
+            bike is the wrong machine, and a magnetic indoor bike from our
+            <a href="/best-exercise-bikes/" class="text-[#0F62FE] font-medium">exercise bike roundup</a>
+            or a quiet rower from our
+            <a href="/best-rowing-machines/" class="text-[#0F62FE] font-medium">rowing machine guide</a>
+            will serve you better.
+          </p>`,
+    },
+    {
+      id: 'footprint',
+      heading: 'Footprint, Weight and Moving It Around',
+      html: `          <p>
+            Air bikes are compact in floor area but heavy, and their published dimensions are less
+            consistent than you would expect — partly because makers measure different things (the base,
+            the frame, or the furthest point the handles reach). Using figures where the maker and a
+            reviewer agree:
+          </p>
+          <ul>
+            <li><strong>Concept2 BikeErg:</strong> 48 by 24 inches, 68 lb — the smallest and lightest here by a long way. Garage Gym Reviews notes it weighs about 40 lb less than the average air bike.</li>
+            <li><strong>Titan Fan Bike:</strong> 50.25 by 20.4 inches, 111 lb — the narrowest classic fan bike here.</li>
+            <li><strong>AssaultBike Classic:</strong> 50.95 by 23.34 inches, about 96 lb — the lightest of the fan bikes, which is why Garage Gym Reviews rates it highly for tight spaces.</li>
+            <li><strong>Schwinn AirDyne AD7:</strong> 53 by 26.5 inches, 113 lb.</li>
+            <li><strong>Rogue Echo Bike:</strong> Rogue gives a 44.5 by 23.75-inch footprint at the base, but 55 inches overall with the seat furthest back and 29.5 inches across the handles. BarBend calls it longer and wider than the average air bike, which is the figure to plan around.</li>
+          </ul>
+          <p>
+            Remember the handles. On a fan bike they swing forward and back through a wide arc, and the
+            rider's elbows go wider still, so leave clear space beside and in front of the bike as well as
+            the frame's own footprint. Schwinn publishes a minimum ceiling height of your height plus 17.6
+            inches for the AD7 and plus 17.9 inches for the AD6; that matters in low basements more than
+            people expect, because you sit high on an air bike.
+          </p>
+          <p>
+            <strong>Moving it.</strong> Every pick has front transport wheels, and the Titan and some
+            rivals use wider turf tires that roll better over rubber flooring and grass. You still tip a
+            95 to 125 lb bike onto its wheels rather than carry it, and on stairs it is a two-person job.
+            None of the fan bikes needs an outlet, which is the great advantage for garages and patios;
+            if yours will live in a garage, our guide to
+            <a href="/best-treadmills-for-garage/" class="text-[#0F62FE] font-medium">machines for the garage</a>
+            covers damp and temperature, which affect bearings and consoles too.
+          </p>`,
+    },
+    {
+      id: 'consoles',
+      heading: 'Consoles, Apps and Power',
+      html: `          <p>
+            Air bike consoles are deliberately basic, and on most of these bikes that is fine: the workout
+            is intervals, and what you need is a clear timer, a work/rest prompt and a number to beat.
+          </p>
+          <ul>
+            <li><strong>No Bluetooth to apps:</strong> the AssaultBike Classic (it reads a Polar wireless heart-rate strap), and both AirDyne models, which read telemetric Polar-compatible straps. BarBend notes the AD7's console is bright and among the best it has used on an air bike, but it does not connect to apps.</li>
+            <li><strong>Bluetooth and ANT+:</strong> the AssaultBike Pro X (dual-band heart rate and the Assault Fitness app), the Rogue Echo V3.0 (an LCD with Bluetooth and ANT+, and an optional M2 monitor upgrade for $155), and the Concept2 BikeErg, whose PM5 monitor connects to Concept2's own apps and to Zwift, according to BarBend.</li>
+            <li><strong>Titan:</strong> an LCD with interval programs that pairs with Polar Bluetooth heart-rate transmitters.</li>
+          </ul>
+          <p>
+            <strong>Power.</strong> None of the fan bikes needs mains power. The AD7's console takes two D
+            batteries and is AC-adapter ready; the AD6 takes two AA batteries; the BikeErg's PM5 runs on
+            two D cells and draws power from the flywheel while you ride. Battery life depends on use, so
+            keep spares.
+          </p>
+          <p>
+            <strong>Treat the numbers as yours, not universal.</strong> Watts and calories on an air bike
+            are calculated from fan speed using each maker's own model, so a "calorie" on one brand is not
+            the same as on another. They are excellent for beating your own last session on the same bike
+            and poor for comparing with a friend's machine or a gym's. For effort, a chest-strap
+            heart-rate monitor is a better guide; see our comparison of
+            <a href="/chest-strap-vs-wrist-heart-rate/" class="text-[#0F62FE] font-medium">chest straps and wrist heart rate</a>.
+          </p>`,
+    },
+    {
+      id: 'workouts',
+      heading: 'How to Use an Air Bike at Home',
+      html: `          <p>
+            Air bikes are interval machines. The same principles that structure a good
+            <a href="/treadmill-hiit-workout/" class="text-[#0F62FE] font-medium">treadmill HIIT workout</a>
+            apply, with one big practical advantage: on a bike there is no belt to jump onto or off, so
+            maximal sprints carry far less risk of a fall. A few starting points, all of them descriptions
+            of common formats rather than prescriptions:
+          </p>
+          <ul>
+            <li><strong>Short sprints with long rests:</strong> 10 to 20 seconds hard, then a minute or more of easy pedaling, repeated six to ten times. The long rest is what lets each sprint be genuinely hard.</li>
+            <li><strong>Even intervals:</strong> 30 seconds hard, 30 seconds easy, for 10 to 20 minutes. Harder than it sounds.</li>
+            <li><strong>Steady work:</strong> 20 to 30 minutes at a pace you could hold a broken conversation at. Air bikes are not only for sprints, and steady sessions build the base the hard ones rely on.</li>
+          </ul>
+          <p>
+            Always warm up for five minutes or more before hard efforts, and pedal easily for a few minutes
+            after the last one rather than stopping dead; our
+            <a href="/treadmill-warm-up-and-cool-down/" class="text-[#0F62FE] font-medium">warm-up and cool-down guide</a>
+            explains why. Two or three hard sessions a week is plenty for most people, with easier days
+            between. If you like the treadmill version of the same idea, our
+            <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">treadmill interval workouts</a>
+            and <a href="/treadmill-sprint-workout/" class="text-[#0F62FE] font-medium">sprint workout</a>
+            pages show how to structure them.
+          </p>
+          <p>
+            <strong>Set-up.</strong> Set the saddle so your knee is slightly bent at the bottom of the
+            pedal stroke, as on any bike, and check the seat's fore-aft position so you can reach the
+            handles at full extension without leaning. The AD7, Echo and Pro X adjust fore and aft; the
+            AD6's seat adjusts only for height and tilt, according to OutdoorGearLab. Tighten the pedal
+            straps for sprints, because feet slipping off is the usual way people hurt themselves on these
+            bikes.
+          </p>`,
+    },
+    {
+      id: 'buyers-guide',
+      heading: "Air Bike Buyer's Guide: Six Questions to Ask",
+      html: `          <ol>
+            <li><strong>Where will it live?</strong> If the answer is an upstairs room with neighbors, reconsider the whole category. If it is a garage, a chain drive and a basic console are fine.</li>
+            <li><strong>Belt or chain?</strong> Belt if it is indoors or you will never do maintenance; chain if price matters most and you are happy to lubricate it.</li>
+            <li><strong>What weight rating do you need?</strong> The Classic and AD6 are rated to 300 lb, the Titan, Echo and Pro X to 330 lb, and the AD7 and BikeErg to 350 lb. Choose a bike rated comfortably above your weight; a heavier frame also feels steadier during hard efforts.</li>
+            <li><strong>How much floor and ceiling do you have?</strong> Measure the space with the handles' swing in mind, and check the maker's ceiling figure if the bike will go in a basement.</li>
+            <li><strong>Do you want app data?</strong> If you want your sessions in an app, choose the Pro X, Echo or BikeErg. If a timer and a number are enough, every bike here will do.</li>
+            <li><strong>What does the warranty actually cover?</strong> Frame terms run from Rogue's two years overall to Schwinn's ten years on the frame. Parts and labor terms matter more on a machine with moving arms and pivots; read them before you buy.</li>
+          </ol>
+          <p>
+            <strong>On price.</strong> Air bikes cluster between about $700 and $1,300. BarBend's
+            buying guide puts most between $700 and $900, which matches what we saw: $749 to $945 for the
+            Classic, Titan, Pro X and Echo, with the Schwinn AD7 and the BikeErg near $1,100. Shipping
+            terms differ — Assault and Schwinn offered free standard shipping on 19 October, and Concept2
+            listed $60 ground shipping to the lower 48 states — so compare delivered prices. Our
+            <a href="/home-gym/" class="text-[#0F62FE] font-medium">Home Gym hub</a> lists the other
+            cardio and strength guides if you are building a whole room.
+          </p>`,
+    },
+  ],
+  products: [
+    {
+      id: 'schwinn-airdyne-ad7',
+      name: 'Schwinn AirDyne AD7',
+      category: 'Best Air Bike for Most Homes',
+      badge: 'Best Overall',
+      amazonUrl: 'https://www.amazon.com/s?k=Schwinn+AirDyne+AD7+Air+Bike&tag=sktiger-20',
+      priceRange: '$1,099–$1,299',
+      specs: 'Fan resistance · belt drive · 350 lb max user · 53 x 26.5 in. footprint · 113 lb · 2 D batteries, AC adapter ready · 10-yr frame warranty',
+      pros: [
+        'Belt drive that BarBend’s testers found notably quiet for an air bike',
+        'A 350 lb rating, agreed by Schwinn and BarBend',
+        'A 10-year frame warranty, the longest among the fan bikes here',
+        'Four-way adjustable seat and an air diverter included',
+        'Bright console that BarBend rated among the best it has used on an air bike',
+      ],
+      cons: [
+        'The most expensive classic fan bike here at full price',
+        'No Bluetooth to apps, and no media shelf',
+        'Electronics cover differs between Schwinn (2 years) and older review coverage (1 year)',
+      ],
+      bottomLine:
+        'For most homes: the most generous frame warranty and the quietest drive among mainstream fan bikes, with nothing to plug in.',
+      description:
+        "The AD7 is Schwinn's top AirDyne and the air bike we also picked on our cardio machines page. Schwinn's page and BarBend's hands-on review agree on a 350 lb maximum user weight, 113 lb of steel, a 53 by 26.5-inch footprint and a 10-year frame warranty; BarBend describes the drive as a belt, which its testers found quiet apart from the fan itself, while Schwinn's page describes a single-stage direct drive. The four-way adjustable seat moves fore and aft as well as up and down, the multi-position handles suit different grips, and Schwinn includes an air diverter to keep the blast of air off your legs. The console shows time, distance, calories, RPM, watts, pulse and speed, reads Polar-compatible telemetric heart-rate straps and runs on two D batteries, with an AC adapter as an option; it does not connect to apps. On 19 October Schwinn listed two years on mechanical parts and electronics and six months of labor; BarBend's 2024 review gave one year on electronics, so read the terms on the day you buy. Schwinn had it at $1,099 against a $1,299 list price, with free standard shipping. Schwinn gives a minimum ceiling height of your height plus 17.6 inches.",
+    },
+    {
+      id: 'rogue-echo-bike-v3',
+      name: 'Rogue Echo Bike V3.0',
+      category: 'Best Air Bike for Heavy Use',
+      badge: 'Most Durable',
+      amazonUrl: 'https://www.amazon.com/s?k=Rogue+Echo+Bike&tag=sktiger-20',
+      priceRange: '$895–$945',
+      specs: 'Fan resistance · belt drive · 330 lb max user · 44.5 x 23.75 in. base (55 x 29.5 in. overall) · 123 lb · Bluetooth and ANT+ LCD · 2-yr warranty',
+      pros: [
+        'A heavy steel frame that Garage Gym Reviews and BarBend both rate top marks for durability',
+        'Belt drive with no chain to lubricate',
+        'Console connects over Bluetooth and ANT+, with an optional M2 monitor upgrade',
+        'Seat adjusts for height and fore-aft, with the knob moved behind the post on V3.0',
+      ],
+      cons: [
+        'Sold by Rogue directly, not on Amazon',
+        'A short two-year warranty for the price',
+        'Longer and wider than most rivals, and Garage Gym Reviews found its belt drive harder to push than a chain',
+      ],
+      bottomLine:
+        'For a garage gym that will see hard, frequent use and a buyer who values build over extras.',
+      description:
+        "The Echo is Rogue's air bike and the official air bike of the CrossFit Games, and its case is mass and stiffness. Rogue's page, Garage Gym Reviews and BarBend agree on 123 lb, a 330 lb maximum user weight, a belt-driven steel fan and a two-year warranty. Rogue gives a footprint of 44.5 by 23.75 inches at the base, but 55 inches long with the seat furthest back and 29.5 inches across the handles; BarBend describes it as longer and wider than the average air bike, so plan around the larger figures. Version 3.0 has a 5 by 8-inch LCD with Bluetooth and ANT+, and Rogue sells an M2 monitor upgrade kit for $155 that adds programming and app connectivity. Garage Gym Reviews named it its best air bike overall in 2026, praising stability and responsiveness, while noting the belt drive feels harder to push than a chain. It was $945 on Rogue on 19 October; Garage Gym Reviews quoted $895. Rogue sells it direct rather than through Amazon, so the button below searches Amazon and may show third-party or similar listings — buy from Rogue if you want this bike.",
+    },
+    {
+      id: 'assaultbike-pro-x',
+      name: 'AssaultBike Pro X',
+      category: 'Best Belt-Drive Assault Bike',
+      badge: 'Best Belt Drive Value',
+      amazonUrl: 'https://www.amazon.com/s?k=Assault+Fitness+AssaultBike+Pro+X&tag=sktiger-20',
+      priceRange: 'About $899',
+      specs: 'Fan resistance · two-stage belt drive · 330 lb max user · Bluetooth and ANT+ heart rate · Assault Fitness app · 7-yr frame, 3-yr non-wear parts warranty',
+      pros: [
+        'Assault’s belt-driven bike: a cogged belt then a poly-V belt, with no chain to lubricate',
+        'Bluetooth and ANT+ heart-rate pairing and the Assault Fitness app',
+        'Work and rest LEDs on the console, plus seven programs and a competition mode',
+        'A 7-year frame and 3-year parts warranty, agreed by Assault and Garage Gym Reviews',
+      ],
+      cons: [
+        'Assault’s own page gives two different sets of dimensions and weights, so we have printed neither',
+        'No labor cover listed',
+        'Only $150 more than the Classic on sale, but $200 more at list',
+      ],
+      bottomLine:
+        'For anyone who wants a true AssaultBike without the chain noise and maintenance.',
+      description:
+        "The Pro X is the AssaultBike most home buyers should look at first. Assault's comparison table and Garage Gym Reviews agree on a 330 lb maximum user weight, a two-stage belt drive (a cogged belt followed by a poly-V belt), ISIS-drive crank connections, Bluetooth and ANT+ heart-rate pairing and a warranty of seven years on the frame and three years on non-wear parts. Garage Gym Reviews describes it as the brand's first belt-drive air bike and its reviewers judged it the better buy than the Rogue Echo at a similar price, noting it includes a bottle holder and a device holder that Rogue charges extra for. The console adds work and rest LEDs for intervals. One thing we could not settle: Assault's own product page gives 124 lb and 50.95 by 23.34 by 50 inches in one place and 125 lb and 51.73 by 24.52 by 52.51 inches in its comparison table, and Garage Gym Reviews uses the latter. Plan around the larger figures. It was $899 on Assault's store on 19 October with free shipping to the contiguous United States.",
+    },
+    {
+      id: 'assaultbike-classic',
+      name: 'AssaultBike Classic',
+      category: 'Best Budget Assault Bike',
+      badge: 'Best Budget',
+      amazonUrl: 'https://www.amazon.com/s?k=Assault+Fitness+AssaultBike+Classic&tag=sktiger-20',
+      priceRange: '$749–$799',
+      specs: 'Fan resistance · chain drive · 300 lb max user · 50.95 x 23.34 in. · about 96 lb · 27 in. steel fan · no Bluetooth · 5-yr frame, 2-yr non-wear parts warranty',
+      pros: [
+        'The lowest price among the established brands here',
+        'The lightest classic fan bike on the page, and among the most compact',
+        'Assault, Garage Gym Reviews and BarBend agree on capacity, size, weight and warranty',
+        'A design proven over years of commercial gym use',
+      ],
+      cons: [
+        'Chain drive: louder and needs regular lubrication',
+        'A 300 lb rating, the lowest here alongside the AD6',
+        'Basic console with no app connection',
+      ],
+      bottomLine:
+        'For a garage or basement on a budget, where a little chain noise and maintenance are a fair trade for $150 or more saved.',
+      description:
+        "The Classic is the bike that made 'assault bike' a household term. Assault's page, Garage Gym Reviews and BarBend agree on a 300 lb maximum user weight, about 96 lb (Assault gives 95.64 lb), assembled dimensions of 50.95 by 23.34 by 50 inches, a 27-inch steel fan, 20 sealed cartridge bearings and a warranty of five years on the frame and two years on non-wear parts. The drive is a chain, with metal chain guards, and both review sites say it is louder than belt-driven rivals and needs more frequent maintenance. The console is a high-contrast LCD that reads Polar wireless heart-rate straps but has no Bluetooth. Garage Gym Reviews rates it highly for portability, describing it as noticeably lighter and smaller than other air bikes, and BarBend's testers called it extremely durable. Assault had it at $749 on sale against $799 on 19 October; review sites have quoted $699 to $799 over time.",
+    },
+    {
+      id: 'titan-fitness-fan-bike',
+      name: 'Titan Fitness Fan Bike',
+      category: 'Best Value Fan Bike',
+      badge: 'Best Value',
+      amazonUrl: 'https://www.amazon.com/s?k=Titan+Fitness+Fan+Bike&tag=sktiger-20',
+      priceRange: '$760–$950',
+      specs: 'Fan resistance · enclosed chain drive · 330 lb max user · 50.25 x 20.4 in. · 111 lb · 10 in. turf tires · Polar Bluetooth heart rate',
+      pros: [
+        'The narrowest classic fan bike here at about 20 inches wide',
+        'A 330 lb rating and 111 lb frame, agreed by Titan, Garage Gym Reviews and BarBend',
+        'Turf tires and a rear handle make it easier to move than most',
+        'Fan guard, bottle holder and phone holder included',
+      ],
+      cons: [
+        'Chain drive: louder and needs monthly lubrication and tension checks, according to BarBend',
+        'Garage Gym Reviews and BarBend list a one-year warranty, short for the price',
+        'Titan’s sale prices move a lot; the list price is about $950',
+      ],
+      bottomLine:
+        'For a narrow space or a garage gym where you want a sturdy, well-equipped fan bike and can live with chain care.',
+      description:
+        "Titan's Fan Bike is a heavy, well-equipped chain-drive air bike. Titan's page, Garage Gym Reviews and BarBend agree on a 330 lb weight capacity and a product weight of 111 lb, and Titan and Garage Gym Reviews agree on a footprint of 50.25 by 20.375 inches, which makes it the narrowest fan bike on this page. Titan lists a fully enclosed metal chain drive, sealed cartridge bearings in every pivot, an integrated fan guard, knurled rotating foot pegs, 10-inch turf tires, an aluminum bottle holder and a phone holder. The LCD runs interval programs and pairs with Polar Bluetooth heart-rate transmitters; it does not connect to apps. Garage Gym Reviews names it its best value air bike and BarBend's roundup lists it as its best overall, both noting the chain needs monthly care and makes more noise than a belt. Both list a one-year warranty; we could not read Titan's own warranty terms for this product, so confirm them before you buy. Titan had it at $759.97 against $949.99 on 19 October.",
+    },
+    {
+      id: 'schwinn-airdyne-ad6',
+      name: 'Schwinn AirDyne AD6',
+      category: 'Best Simple Air Bike',
+      badge: 'Simplest Console',
+      amazonUrl: 'https://www.amazon.com/s?k=Schwinn+AirDyne+AD6+Air+Bike&tag=sktiger-20',
+      priceRange: '$799–$899',
+      specs: 'Fan resistance · 300 lb max user · 2 AA batteries · RevMeter LCD console · 10-yr frame, 2-yr mechanical parts, 1-yr electronics warranty',
+      pros: [
+        'A large, supportive seat that OutdoorGearLab found suited a wide range of riders',
+        'A simple console with an analog-style RPM gauge, easy to read mid-interval',
+        'OutdoorGearLab describes a smooth belt drive with enclosed mechanics',
+        'A 10-year frame warranty for $799 on sale',
+      ],
+      cons: [
+        'Seat adjusts for height and tilt only, not fore-aft, and the handles do not adjust',
+        'Garage Gym Reviews calls it prone to breakage, with a lot of plastic parts',
+        'Schwinn’s dimensions and an independent measurement differ, so we have printed neither',
+      ],
+      bottomLine:
+        'For someone who wants a Schwinn air bike and a no-nonsense console for less than the AD7, and accepts a lighter build.',
+      description:
+        "The AD6 is Schwinn's cheaper AirDyne, and its appeal is simplicity. Schwinn's page and OutdoorGearLab agree on a 300 lb maximum user weight, a console powered by two AA batteries and a warranty of 10 years on the frame, two years on parts and one year on electronics; Schwinn adds six months of labor. OutdoorGearLab, which reviewed it hands-on, describes a smooth belt drive with enclosed mechanics, a 20-inch perimeter-weighted fan, an oversized tractor-style seat that adjusts for height and tilt but not fore and aft, and a 5 by 2.5-inch screen with an RPM gauge plus time, speed, distance, watts, calories and pulse (with a separate Polar-compatible strap). It found the bike quiet at low effort and loud enough to interrupt conversation at full power. Garage Gym Reviews is less keen, calling it prone to breakage with a lot of plastic parts. The figures that differ: Schwinn gives 49.7 by 25.7 inches and 115 lb, while OutdoorGearLab measured 46 by 25 inches and 112 lb, so neither is on the card. Schwinn had it at $799 against $899 on 19 October.",
+    },
+    {
+      id: 'concept2-bikeerg',
+      name: 'Concept2 BikeErg',
+      category: 'Best Air-Resistance Bike Without Arms',
+      badge: 'Best Without Arms',
+      amazonUrl: 'https://www.amazon.com/s?k=Concept2+BikeErg&tag=sktiger-20',
+      priceRange: 'About $1,100',
+      specs: 'Air flywheel with damper, no moving arms · 48 x 24 in. · 68 lb · PM5 monitor, Bluetooth and ANT+ · polygroove belt drive · 5-yr frame, 2-yr parts warranty',
+      pros: [
+        'By far the lightest and smallest bike here, agreed by Concept2 and Garage Gym Reviews',
+        'A damper lets you change the feel, like gears, which a fan bike cannot do',
+        'Takes standard bike saddles, handlebars and pedals, including clipless pedals',
+        'The PM5 monitor is shared with Concept2’s rowers and connects to apps such as Zwift',
+      ],
+      cons: [
+        'Not a full-body machine: the handlebars are fixed',
+        'Seat adjusts for height only, not fore-aft, according to BarBend',
+        'BarBend lists a 300 lb limit against Concept2’s 350 lb, so check if you are near it',
+      ],
+      bottomLine:
+        'For cyclists, small rooms and anyone who wants air resistance for leg-only intervals and steady rides rather than an arms-and-legs fan bike.',
+      description:
+        "The BikeErg is not a fan bike in the usual sense: there are no moving handles, and it rides like a road bike. It uses the same air-resistance flywheel and PM5 monitor as Concept2's rowers, and a damper lever changes how much air the flywheel takes in, which feels like changing gear. Concept2's page and Garage Gym Reviews agree on a 48 by 24-inch footprint, a 68 lb machine weight, a 350 lb maximum user weight and a polygroove belt drive with automatic tensioning; Garage Gym Reviews and BarBend agree on five years of frame and two years of parts warranty. BarBend lists a 300 lb limit, which conflicts with Concept2's figure; Concept2 is the maker, but if you are near the limit, confirm with it. The bike takes standard saddles, bars and pedals, Concept2 sells a low-seat version for shorter riders, and the PM5 pairs with heart-rate monitors and apps over Bluetooth and ANT+. Concept2 says it must be stored fully assembled. It was $1,100 on Concept2's store on 19 October, plus $60 ground shipping to the lower 48 states.",
+    },
+  ],
+  faqs: [
+    {
+      q: 'What is the best air bike for home?',
+      a: `For most homes, the Schwinn AirDyne AD7: a belt drive that reviewers found quiet for an air bike, a 350 lb rating, a 10-year frame warranty and a battery console, for $1,099 on sale. The Rogue Echo and AssaultBike Pro X are the belt-driven alternatives under $950, and the AssaultBike Classic is the cheapest well-proven option.`,
+    },
+    {
+      q: 'What is the best assault bike?',
+      a: `"Assault bike" usually means any fan bike with moving arms. Of Assault Fitness's own bikes, the Pro X is the best buy for most homes because it has a quieter, lower-maintenance belt drive and Bluetooth for $899. The Classic is $150 cheaper on sale but chain-driven; the Elite costs $1,499.`,
+    },
+    {
+      q: 'Is a belt-drive or chain-drive air bike better?',
+      a: `For indoor use, belt drive. Belts are quieter and need no lubrication. Chains are cheaper, strong and easy to service, but rattle and need lubricating and tension checks roughly monthly. Neither changes the fan noise, which is the loudest part of any air bike.`,
+    },
+    {
+      q: 'Are air bikes loud?',
+      a: `Yes. The fan has to move air to create resistance, so every air bike is loud during hard efforts, with a sound reviewers compare to a vacuum cleaner. A belt drive removes chain rattle and a mat stops vibration reaching the floor, but neither silences the fan. For shared walls, a magnetic exercise bike is quieter.`,
+    },
+    {
+      q: 'Is the Concept2 BikeErg an air bike?',
+      a: `It uses air resistance from a flywheel, but it has fixed handlebars, so it is a legs-only bike rather than a fan bike with moving arms. It is lighter and smaller than any fan bike here, rides like a road bike and has a damper for changing the feel.`,
+    },
+    {
+      q: 'How much space does an air bike need?',
+      a: `Plan for roughly 4 to 4.5 feet by 2 feet of floor for the frame, plus room for the handles to swing and your elbows. The Titan is about 20 inches wide and the AssaultBike Classic about 51 by 23 inches; the Rogue Echo is 55 by 29.5 inches overall. Check the maker's ceiling figure in a low basement.`,
+    },
+  ],
+  mistakesHeading: 'Common Mistakes Buying an Air Bike',
+  mistakesIntro:
+    'Air bikes are simple machines, which makes these mistakes easy to make and annoying to live with.',
+  mistakes: [
+    {
+      title: 'Putting it in the wrong room',
+      body: `Every air bike is loud during hard efforts, and no drive type or mat changes that. Decide where it will live before you choose a model. Garages, basements and ground-floor rooms suit air bikes; upstairs flats and rooms next to a sleeping child do not.`,
+    },
+    {
+      title: 'Buying a chain drive and never servicing it',
+      body: `Chain-driven bikes such as the AssaultBike Classic and Titan Fan Bike need their chains lubricating and tension checking regularly. A neglected chain gets noisier and wears faster. If you know you will not do it, pay more for a belt drive.`,
+    },
+    {
+      title: 'Measuring the frame but not the swing',
+      body: `Published footprints describe the base or frame, not the space the moving handles and your elbows need. Leave clear space beside and in front of the bike, and check the maker's minimum ceiling height if it will go in a basement.`,
+    },
+    {
+      title: 'Comparing calories between brands',
+      body: `Air bike consoles estimate calories and watts from fan speed with their own formulas, so the figures do not transfer between brands or match a gym's machine. Use them to beat your own last session on the same bike, and use a chest-strap heart-rate monitor to judge effort.`,
+    },
+  ],
+  relatedHeading: 'Related Home Gym Guides',
+  related: [
+    {
+      kicker: 'Home Gym',
+      title: 'Best Cardio Machines for Home',
+      blurb: 'One pick per machine type, from treadmill and rower to air bike and stepper.',
+      url: '/best-cardio-machines-for-home/',
+    },
+    {
+      kicker: 'Training',
+      title: 'Treadmill HIIT Workout',
+      blurb: 'Five interval sessions and how to structure hard efforts safely.',
+      url: '/treadmill-hiit-workout/',
+    },
+    {
+      kicker: 'Cardio',
+      title: 'Best Exercise Bikes',
+      blurb: 'Quiet magnetic and friction bikes for long rides, apps and classes.',
+      url: '/best-exercise-bikes/',
+    },
+  ],
+  bottomLine: [
+    `<strong class="text-white">For most homes, buy the Schwinn AirDyne AD7</strong>: a belt drive,
+            a 350 lb rating and a 10-year frame warranty, with nothing to plug in. If you want an
+            AssaultBike, choose the belt-driven Pro X over the Classic unless every dollar counts; if the
+            bike will take a beating in a garage gym, the Rogue Echo is the heavyweight. Cyclists and
+            anyone short of space should look at the Concept2 BikeErg instead of a fan bike.`,
+    `Whatever you choose, put it where the noise will not matter, leave room for the handles, and
+            treat its calorie count as a personal benchmark rather than a fact. For one pick per machine
+            type, see our
+            <a href="/best-cardio-machines-for-home/" class="text-[#5AA9FF] font-bold no-underline">best cardio machines for home</a>
+            guide, and for sessions to use it for, our
+            <a href="/treadmill-hiit-workout/" class="text-[#5AA9FF] font-bold no-underline">HIIT workout guide</a>.`,
+  ],
+};
