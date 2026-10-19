@@ -3056,6 +3056,12 @@ export const SECTIONS: Section[] = [
             badge: 'Folding',
             url: '/best-folding-exercise-bikes/',
           },
+          {
+            title: 'Best Vertical Climbers',
+            description: 'Five vertical climbers from $170 to $6,900, with ceiling height checks explained.',
+            badge: 'Climber',
+            url: '/best-vertical-climbers/',
+          },
         ],
       },
       {
