@@ -336,7 +336,10 @@ export default {
             We did not include other brands' plates as alternatives. The Waver Mini was the only
             alternative for which we could confirm current sale and agreeing figures from independent
             sources on the day; we would rather list one verified alternative than several
-            unverified ones.
+            unverified ones. Our
+            <a href="/best-vibration-plates/" class="text-[#0F62FE] font-medium">best vibration plates</a>
+            roundup sets both Wavers beside Merach and Power Plate plates, with those makers'
+            figures labelled as their own, and explains oscillating and lineal plates.
           </p>`,
     },
     {

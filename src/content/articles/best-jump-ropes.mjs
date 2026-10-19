@@ -258,7 +258,7 @@ export default {
             into the floor, and a cable or beaded rope slaps it too. A dense rubber mat helps, landing softly on
             the balls of your feet helps more, and a ground floor, garage or the yard helps most. If noise rules
             out a rope altogether, a
-            rebounder or a quiet
+            <a href="/best-rebounders/" class="text-[#0F62FE] font-medium">rebounder</a> or a quiet
             <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">cardio machine</a>
             may suit you better.
           </p>`,
