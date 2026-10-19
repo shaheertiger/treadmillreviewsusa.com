@@ -2991,6 +2991,18 @@ export const SECTIONS: Section[] = [
             url: '/best-exercise-bikes/',
           },
           {
+            title: 'Best Peloton Alternatives',
+            description: 'Bikes that replace a Peloton, and what Peloton App+ costs on them versus All-Access.',
+            badge: 'Bikes',
+            url: '/best-peloton-alternatives/',
+          },
+          {
+            title: 'Best Smart Bike Trainers',
+            description: 'Direct-drive and wheel-on trainers for your own bike: axles, cassettes, ERG and FTMS.',
+            badge: 'Trainers',
+            url: '/best-smart-bike-trainers/',
+          },
+          {
             title: 'Best Recumbent Bikes',
             description: 'Five recumbents compared on step-through access, seat travel, capacity and footprint.',
             badge: 'Bikes',
@@ -3107,6 +3119,12 @@ export const SECTIONS: Section[] = [
             description: 'Stack, rod and bodyweight all-in-one gyms, with real resistance, ceiling and floor checks.',
             badge: 'All-in-one',
             url: '/best-home-gym-machines/',
+          },
+          {
+            title: 'Best Smart Home Gyms',
+            description: 'Tonal, Speediance, Voltra and Tempo: wall needs, digital resistance and membership costs.',
+            badge: 'Smart',
+            url: '/best-smart-home-gyms/',
           },
           {
             title: 'Best Weight Benches',
