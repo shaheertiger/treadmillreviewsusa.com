@@ -181,7 +181,10 @@ export default {
           <p>
             For a treadmill specifically, our
             <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements guide</a>
-            gives the full arithmetic, including the clearance around it. For any machine, check the
+            gives the full arithmetic, including the clearance around it. If all you have is a
+            corner, a fitness rebounder fits in about four feet of floor but needs headroom; our
+            <a href="/best-rebounders/" class="text-[#0F62FE] font-medium">rebounder guide</a>
+            works out the ceiling height for your height. For any machine, check the
             route into the room as well as the room itself.
           </p>`,
     },

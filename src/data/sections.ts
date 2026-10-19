@@ -3008,6 +3008,18 @@ export const SECTIONS: Section[] = [
             badge: 'Desk',
             url: '/best-under-desk-ellipticals/',
           },
+          {
+            title: 'Best Rebounders',
+            description: 'Six rebounders: bungee vs springs, frame size, weight limits, handlebars, ceiling height.',
+            badge: 'Rebounders',
+            url: '/best-rebounders/',
+          },
+          {
+            title: 'Best Vibration Plates',
+            description: 'Five plates by motion type: oscillating vs lineal, Hz, weight limits, who should not use one.',
+            badge: 'Vibration',
+            url: '/best-vibration-plates/',
+          },
         ],
       },
       {

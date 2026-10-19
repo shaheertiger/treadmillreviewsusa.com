@@ -650,15 +650,15 @@ Found while writing and not yet changed:
 - `scripts/build-articles.mjs <name>` matches spec names by substring, so building
   `best-walking-pads` also rebuilds its four siblings; pass `best-walking-pads.mjs` to build one.
 
-### Home Gym roundups (2026-10-19): eighteen "best" pages
+### Home Gym roundups (2026-10-19): twenty "best" pages
 
-Eighteen buyer's guides (of twenty planned) for the highest-volume home gym and fitness product terms without an owning
+Twenty buyer's guides for the highest-volume home gym and fitness product terms without an owning
 page, chosen from a Semrush US pull on 2026-10-19 (`research/keyword-batches/2026-10-19-home-gym-roundups.csv`,
 which also lists the high-volume terms deliberately skipped: supplements, general running and walking
 shoes, workout headphones, compression socks). Every page sits in `/home-gym/`:
 
 - **Cardio machines**: exercise bikes, recumbent bikes, rowing machines, under-desk ellipticals,
-  (rebounders and vibration plates were planned and are not yet written; they follow in a later PR)
+  rebounders, vibration plates (both added in a follow-up PR)
 - **Strength**: home gym machines, weight benches, power towers, pull-up bars, resistance bands
 - **Recovery, boxing & accessories**: massage guns, foam rollers, inversion tables, yoga mats,
   balance boards, jump ropes, gym flooring
@@ -668,7 +668,7 @@ Same rules as the treadmill roundups: products confirmed as currently sold, figu
 between the maker (or the Amazon listing) and an independent source with conflicting figures left
 off the cards, a CPSC check per brand and per category, no testing claims, no ratings, and the
 affiliate disclosure in each note. Products were chosen for Amazon US availability. Health-adjacent
-pages (massage guns, foam rollers, inversion tables, balance boards,
+pages (massage guns, foam rollers, inversion tables, vibration plates, rebounders, balance boards,
 smart scales, trackers, bands, jump ropes, recumbents) carry the not-medical-advice scope note, quote
 contraindications from makers' manuals, and present health claims as the sellers'.
 

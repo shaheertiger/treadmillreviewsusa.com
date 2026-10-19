@@ -379,12 +379,12 @@ export default {
           <p>
             <strong>If your goal is general fitness</strong>, a balance board is a small add-on, not
             the centre of a home gym. A
-            rebounder
+            <a href="/best-rebounders/" class="text-[#0F62FE] font-medium">rebounder</a>
             or the bigger equipment in our
             <a href="/best-home-gym-accessories/" class="text-[#0F62FE] font-medium">home gym accessories guide</a>
             will do more for most people's training, and vibration platforms, which are sometimes
             marketed for balance, are covered separately in our
-            <a href="/lifepro-waver-vibration-plate-review/" class="text-[#0F62FE] font-medium">vibration plate review</a>.
+            <a href="/best-vibration-plates/" class="text-[#0F62FE] font-medium">vibration plate guide</a>.
           </p>`,
     },
   ],
