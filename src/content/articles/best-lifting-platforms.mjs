@@ -377,7 +377,11 @@ export default {
           </p>
           <p>
             <strong>If you train mainly with dumbbells and kettlebells</strong>, rubber flooring
-            protects the floor well enough, and a platform is designed around a barbell. Our
+            protects the floor well enough, and a platform is designed around a barbell. Bodyweight
+            work needs even less: for pull-ups, what matters is how the bar is mounted, not the
+            floor, which our guide to the
+            <a href="/best-pull-up-bars/" class="text-[#0F62FE] font-medium">best pull-up bars</a>
+            covers. Our
             <a href="/home-workout-equipment-reviews/" class="text-[#0F62FE] font-medium">home workout equipment guide</a>
             helps decide where the money is best spent.
           </p>

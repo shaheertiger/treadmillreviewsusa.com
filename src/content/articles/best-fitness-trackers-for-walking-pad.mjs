@@ -326,7 +326,10 @@ export default {
       html: `          <p>
             <strong>If you can walk hands-free.</strong> If your desk walking is mostly calls,
             reading or thinking with your arms swinging, your current wrist tracker is probably
-            counting well. Do the 100-step test before buying anything.
+            counting well. Do the 100-step test before buying anything. If you are really choosing
+            a tracker for the whole day rather than the desk, our roundup of the
+            <a href="/best-fitness-trackers/" class="text-[#0F62FE] font-medium">best fitness trackers</a>
+            compares bands, watches and rings, including what each costs in subscriptions.
           </p>
           <p>
             <strong>If you mainly run.</strong> A running watch with a foot pod, or a treadmill that

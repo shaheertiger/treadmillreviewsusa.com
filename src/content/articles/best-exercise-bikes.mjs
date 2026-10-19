@@ -1,0 +1,667 @@
+export default {
+  slug: 'best-exercise-bikes',
+  title: 'Best Exercise Bikes (2026): 5 Stationary Bikes Checked',
+  description:
+    'Five exercise bikes checked against makers and independent reviews: magnetic vs friction resistance, flywheel myths, rider fit, Q-factor, apps and recalls.',
+  crumbLabel: 'Best Exercise Bikes',
+  breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
+  kicker: 'Buying Guide',
+  updated: 'October 2026',
+  updatedLong: 'October 19, 2026',
+  published: '2026-10-19',
+  socialProof: '2.0k',
+  h1: ['Best Exercise Bikes', 'and Stationary Bikes for Home'],
+  standfirst:
+    'Five upright and indoor cycling bikes whose published figures held up when we checked them, from a $300 friction bike to a studio-grade Keiser. What resistance type, flywheel weight, fit range and app support actually mean, which bikes have been recalled, and why one big brand is not on the list.',
+  ctas: [
+    { label: 'See the Picks', href: '#quick-picks' },
+    { label: 'Magnetic vs Friction', href: '#resistance' },
+  ],
+  tags: ['best exercise bike', 'best stationary bike', 'indoor cycling bike', 'magnetic exercise bike', 'spin bike for home', 'schwinn ic4'],
+  stickyCta: { text: 'See Our Top Picks', link: '#quick-picks' },
+  lead: `An exercise bike is the easiest cardio machine to live with: quiet, compact, no impact, and
+          simple enough that it rarely breaks. It is also a category where listings lean hard on
+          numbers that sound decisive and are not — the weight of the flywheel, the count of
+          resistance levels, the list of apps it "works with". This page names five bikes whose basic
+          figures agreed between the maker and an independent source when we checked them, explains
+          which specifications are worth paying for, and sets out the recalls and lock-in that shaped
+          the list.`,
+  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
+          bikes, and no figure on this page is our own measurement. Each was confirmed on 19 October
+          2026 as currently sold on its maker's own store (Schwinn, BowFlex) or, for the YOSUDA and
+          the Keiser, through Amazon and an Amazon-owned retailer, and its figures were checked on
+          that date against the maker's page or the Amazon listing and at least one independent
+          source — published hands-on reviews from Garage Gym Reviews, OutdoorGearLab and others. Our
+          checking tools could not load Amazon's own pages on 19 October, so for the Schwinn and
+          BowFlex bikes Amazon availability rests on Amazon catalogue matches from our 16 October check
+          and on independent reviewers' Amazon links; confirm the seller on the listing. A figure
+          appears in a product's specification line only where sources agree; where they conflicted
+          — on rider height ranges, unit weights and weight limits — we left the figure off the card
+          and say so in the text. Prices are those we saw on 19 October 2026 and change often, so
+          confirm the price, seller and model against the exact listing before you order. We earn a
+          commission if you buy through the Amazon links on this page; it does not change which
+          products we list or what we say about them. <strong class="text-gray-900">What this page is,
+          and is not.</strong> We review equipment; this is not medical or physiotherapy advice. If you
+          have a heart, joint, back or balance condition, or are returning from injury, ask a doctor
+          or physiotherapist what kind of exercise suits you before you buy.`,
+  sections: [
+    {
+      id: 'quick-picks',
+      heading: 'Our Picks at a Glance',
+      html: `          <p>
+            <strong>The best exercise bike for most homes is the Schwinn IC4</strong>: quiet magnetic
+            resistance, a 330 lb rating, and Bluetooth that works with apps you choose rather than one
+            you are locked into. If you want a bike that will outlast the house, the Keiser M3i is the
+            studio standard; if you want to spend as little as possible, the YOSUDA friction bike does
+            the basics for about $300.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Pick</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Best for</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Why</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Schwinn IC4</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most homes</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">100 magnetic levels, 330 lb rating, works with Zwift, Peloton and JRNY apps; $899 on Schwinn</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">BowFlex C6</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">When the IC4 is out of stock</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The IC4's twin under the BowFlex name, same published figures and price</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Keiser M3i Indoor Bike</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Shared households, very tall or short riders</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Fits 4 ft 10 in. to 7 ft, 350 lb rating, studio-grade build; about $2,985</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Schwinn IC3</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No apps, no outlet</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Friction resistance and a battery console; $699</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">YOSUDA Indoor Cycling Bike</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The lowest price, shorter riders</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Friction pad, 35 lb flywheel, 25–35 in. inseam on the listing; about $270–$340</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            All five are upright indoor cycling bikes — the kind you ride in a spin class — because
+            that is what most people mean by "best exercise bike". If you want a seat with a backrest
+            and a frame you can step through, read our separate guide to the
+            <a href="/best-recumbent-bikes/" class="text-[#0F62FE] font-medium">best recumbent bikes</a>.
+            If you are still deciding between a bike and another machine entirely, our
+            <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">best cardio machines for home</a>
+            guide picks one of each type, and
+            <a href="/treadmill-vs-exercise-bike/" class="text-[#0F62FE] font-medium">treadmill vs exercise bike</a>
+            covers calories, knees and bone loading head to head.
+          </p>`,
+    },
+    {
+      id: 'picks',
+      heading: 'The 5 Best Exercise Bikes',
+      products: true,
+      html: `          <p>
+            Each card gives only the figures that the maker and an independent source agreed on, the
+            price range we saw, and who the bike suits. The Schwinn IC4 is the same bike as the one we
+            picked on our cardio machines page; we have not changed our view of it, only checked it
+            again on a later date. The descriptions say where a figure was left off and why.
+          </p>
+          <p>
+            Two of the five use friction resistance and three use magnetic. That split is deliberate:
+            friction bikes are still the cheapest way into indoor cycling, and the difference between
+            the two systems is the most useful thing to understand before you spend money. The section
+            after the cards explains it.
+          </p>`,
+    },
+    {
+      id: 'how-we-chose',
+      heading: 'How We Chose These Bikes',
+      html: `          <p>
+            We have not ridden or measured these bikes. They were chosen from published
+            specifications, maker and retailer listings, warranty terms and independent hands-on
+            reviews, checked on 19 October 2026, and the claims on this page are limited to what those
+            sources support. Each pick had to be on sale under its current name, its basic figures had
+            to agree between at least two sources, and it had to be usable without a paid
+            subscription.
+          </p>
+          <p>
+            <strong>Recall checks.</strong> We searched the US Consumer Product Safety Commission's
+            recall database by brand for every maker on this page — Schwinn, BowFlex and their owner
+            Johnson Health Tech, Keiser and YOSUDA — and for the brands we considered and left out,
+            including Peloton, Echelon, Sunny Health &amp; Fitness, JOROTO and Horizon. None of the five
+            bikes listed is under a recall. Johnson Health Tech has recalled other products, including
+            BowFlex adjustable dumbbells in June 2025 and about 12,885 commercial Matrix-brand training
+            cycles in January 2025 because the adjustable seat could lower unexpectedly; neither
+            covers a bike on this page. In the wider category, MYX recalled about 162,000 MYX I, MYX II
+            and MYX II Plus bikes in 2022 because the pedals could loosen or detach.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What we left out, and why</h3>
+          <p>
+            <strong>Peloton.</strong> Peloton has recalled its bikes twice for the same fault. In May
+            2023 it recalled about 2.2 million original Peloton Bikes, model PL01, because the seat post
+            assembly could break during use; the CPSC listed 35 reports of breakage and 13 injuries. In
+            November 2025 it recalled about 833,000 Original Series Bike+ units in the US, model PL02
+            with serial numbers beginning with "T", for the same hazard. Both remedies are a free
+            replacement seat post that owners fit themselves, and both bikes were sold on Amazon as well
+            as by Peloton. Peloton's current Cross Training Bike ($1,695 on Peloton's site on 19 October)
+            and Cross Training Bike+ ($2,695) are not part of either recall, and the Cross Training Bike
+            has appeared on Amazon, but a price tracker showed that listing out of stock in July 2026
+            and we could not confirm a current one. We also could not get the maker and an independent
+            source to agree on its weight and rider height range, and Peloton says an All-Access
+            Membership is required to use its content. That combination keeps it off a list built on
+            open, checkable bikes; if you want Peloton's classes, the cheaper route is the Peloton app
+            on one of the bikes below.
+          </p>
+          <p>
+            <strong>Buying a used Peloton?</strong> Check the model number on the inside of the front
+            fork and the serial number. A PL01 Bike or a PL02 Bike+ with a "T" serial needs the
+            replacement seat post fitted before anyone rides it, and the seller should be able to show
+            it has been.
+          </p>
+          <p>
+            <strong>Echelon.</strong> OutdoorGearLab, which reviewed the Echelon Connect EX-5s, reports
+            that a software update limited Echelon bikes to working only when connected to Echelon's
+            servers, so the bike is effectively locked behind Echelon's membership. A bike that stops
+            being useful if a subscription lapses is exactly what this list avoids.
+          </p>
+          <p>
+            <strong>Sunny Health &amp; Fitness SF-B1002.</strong> A long-running budget bike with a 49 lb
+            flywheel and a leather friction pad, covered by Live Science and Garage Gym Reviews. On 19 October Sunny's own store showed it unavailable, so we could not confirm it as
+            currently sold new. Sunny's magnetic SF-B1805SMART was in stock at $699.99, but we found no
+            independent coverage of the current version to check its figures against.
+          </p>
+          <p>
+            <strong>YOSUDA's magnetic Pro-M.</strong> Listings disagree with each other on its weight
+            limit (300 lb on one, 350 lb in an independent review) and flywheel (40 lb against 45 lb),
+            so we listed YOSUDA's friction bike, whose figures do agree, instead.
+          </p>
+          <p>
+            <strong>Horizon 5.0 IC.</strong> Horizon lists it at $599 against a $999 list price, with
+            100 levels of magnetic resistance, full Bluetooth FTMS and a lifetime frame warranty, which
+            on paper makes it a strong rival to the IC4. We found no independent review of it to confirm
+            those figures, so it is a name to compare against rather than a pick.
+          </p>`,
+    },
+    {
+      id: 'types',
+      heading: 'Exercise Bike or Stationary Bike? The Types Explained',
+      html: `          <p>
+            "Exercise bike" and "stationary bike" mean the same thing, and both cover several quite
+            different machines. Knowing which kind you want narrows the choice faster than any spec
+            sheet.
+          </p>
+          <ul>
+            <li><strong>Indoor cycling bikes</strong> (often called spin bikes) put you in a road-bike position: a narrow saddle, handlebars you can lean onto, and a heavy flywheel driven by a belt. They suit standing climbs and instructor-led classes. Every bike on this page is one.</li>
+            <li><strong>Upright bikes</strong> look similar but sit you more upright, usually with a wider seat, a console with programs and resistance changed electronically. Schwinn's 130 and 190 are examples. They are gentler on the back and hands but less suited to standing.</li>
+            <li><strong>Recumbent bikes</strong> recline you in a seat with a backrest and put the pedals in front of you. They are the easiest to get on and off and the kindest to backs and balance, and they are longer. Our <a href="/best-recumbent-bikes/" class="text-[#0F62FE] font-medium">recumbent bike guide</a> covers them.</li>
+            <li><strong>Air bikes</strong> use a fan for resistance and moving handles for your arms. They are built for short, hard intervals and are loud. Our <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">cardio machines guide</a> picks one.</li>
+            <li><strong>Under-desk pedal exercisers and ellipticals</strong> are not really bikes; they keep your legs moving while you sit. See our <a href="/best-under-desk-ellipticals/" class="text-[#0F62FE] font-medium">under-desk ellipticals</a> guide.</li>
+          </ul>
+          <p>
+            If you are unsure whether you want a bike at all, the honest tie-breaker is which machine
+            you will actually use on a tired weekday evening. Our
+            <a href="/home-cardio-equipment-guide/" class="text-[#0F62FE] font-medium">home cardio equipment guide</a>
+            walks through that decision, and if an elliptical appeals, our
+            <a href="/best-elliptical-machines-for-home/" class="text-[#0F62FE] font-medium">best ellipticals</a>
+            roundup is the companion to this page.
+          </p>`,
+    },
+    {
+      id: 'resistance',
+      heading: 'Magnetic vs Friction Resistance',
+      html: `          <p>
+            Resistance is what makes pedaling hard, and it is the biggest difference between a
+            $300 bike and a $900 one. There are two common systems on indoor cycling bikes.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Friction: a pad pressing on the flywheel</h3>
+          <p>
+            A friction bike has a felt or leather pad above the flywheel. Turning the knob presses the
+            pad down harder, like a brake. The YOSUDA and the Schwinn IC3 work this way, as does Sunny's
+            SF-B1002. The advantages are price and range: there are no fixed steps, so you can set the
+            resistance anywhere, and a friction pad can be made to hold the wheel almost still.
+          </p>
+          <p>
+            The drawbacks are wear, feel and noise. The pad wears and eventually needs replacing;
+            Garage Gym Reviews notes that the IC3's pads need regular maintenance and that owners
+            report them wearing unevenly. And a
+            friction bike makes a faint brushing sound that magnetic bikes do not, which reviewers say
+            can grow into squeaks over months of use. None of this makes friction bad — it is how
+            studio bikes worked for decades — but it is a maintenance item that a magnetic bike does
+            not have.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Magnetic: magnets near the flywheel, never touching it</h3>
+          <p>
+            A magnetic bike moves a set of magnets closer to or further from a metal flywheel. The
+            moving wheel generates eddy currents that resist its motion, and nothing touches. The IC4,
+            the BowFlex C6 and the Keiser M3i work this way. The result is quiet, consistent resistance
+            with nothing to wear out, which is why magnetic resistance is the default on bikes above
+            about $500.
+          </p>
+          <p>
+            Magnetic systems come in two control styles. <strong>Manual</strong> magnetic bikes, like the
+            IC4 and Keiser, move the magnets with a knob or lever. <strong>Electronic</strong> ones, like
+            the Horizon 5.0 IC and most recumbents, use a small motor, which lets an app change the
+            resistance for you during a class but needs a power outlet.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Do resistance levels matter?</h3>
+          <p>
+            Less than the listings suggest. "100 levels" on the IC4 and "unlimited" on a friction bike
+            both describe how finely you can adjust, not how hard the bike can get. Two bikes with 100
+            levels can feel nothing alike at level 50, and the levels on one brand's bike do not map onto
+            another's — which is why Peloton riders using a Schwinn rely on conversion charts. What matters
+            is that the steps are small enough to make gentle changes and that the top end is hard enough
+            for your strongest efforts.
+          </p>`,
+    },
+    {
+      id: 'flywheel',
+      heading: 'Flywheel Weight: The Most Misleading Number',
+      html: `          <p>
+            Budget bike listings often lead with the flywheel: 35 lb, 40 lb, 49 lb. The implication is
+            that heavier is better. It is more complicated than that, and the most expensive bike on this
+            page has the lightest flywheel of the lot.
+          </p>
+          <p>
+            <strong>What a flywheel does.</strong> A flywheel stores momentum, carrying your pedal
+            stroke through the "dead spots" at the top and bottom where your legs push least. Without it,
+            pedaling would feel jerky. What creates that smooth feel is not the flywheel's weight on its
+            own but its <em>inertia</em>: how much mass it has, how far that mass sits from the axle, and
+            how fast the wheel spins relative to the pedals, which depends on the gearing between them.
+          </p>
+          <p>
+            <strong>Why heavy flywheels became a selling point.</strong> On a friction bike, a heavy
+            front flywheel is the simplest way to get a smooth stroke, because the bike has little
+            gearing. The Sunny SF-B1002's 49 lb flywheel and the YOSUDA's 35 lb are typical. Reviewers do
+            find these bikes smooth once moving, and Live Science described the SF-B1002's ride as smooth
+            and quiet.
+          </p>
+          <p>
+            <strong>Why the best bikes often have light ones.</strong> A light flywheel spun fast through
+            higher gearing can carry as much momentum as a heavy wheel spun slowly. The Keiser M3i puts a
+            comparatively light flywheel at the rear, where Keiser says it keeps the drivetrain out of the
+            path of sweat. Many recumbents use perimeter-weighted flywheels of under 20 lb — OutdoorGearLab
+            lists 18 lb for the Schwinn 290 — and Horizon lists 15.4 lb for its 5.0R. None of them is
+            short of smoothness for that reason.
+          </p>
+          <p>
+            <strong>What heavy flywheels do cost you.</strong> A heavy front flywheel adds to the weight
+            of the bike, which matters on stairs and if you move it. And on a fixed-gear indoor bike, a
+            heavy flywheel keeps the pedals turning when you stop pushing; this is why spin bikes have an
+            emergency brake, and why you should never take your feet off a spinning bike's pedals.
+          </p>
+          <p>
+            The practical advice: treat a flywheel figure as a tie-breaker between two similar friction
+            bikes, and otherwise ignore it. Read reviews for how the pedal stroke feels at a slow
+            cadence, which is where a poorly matched flywheel shows.
+          </p>`,
+    },
+    {
+      id: 'fit',
+      heading: 'Fit: Rider Height, Inseam and Q-Factor',
+      html: `          <p>
+            A bike that does not fit is uncomfortable, and an uncomfortable bike does not get ridden. Fit
+            is also where listings are least consistent, so it is worth checking three things.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Rider height and inseam</h3>
+          <p>
+            Your inseam — the distance from the floor to your crotch, measured in socks — matters more
+            than your height, because it decides how high the saddle must go. Two examples show how
+            much bikes differ. The YOSUDA listing gives an inseam range of 25 to 35 inches, which suits
+            shorter riders; OutdoorGearLab's six-foot tester with a 32-inch inseam had the seat post at
+            its maximum. Sunny's page for the SF-B1002 gives 31 to 42 inches, which leaves out many
+            shorter riders, though Live Science quoted 27 to 42 inches for the same bike.
+          </p>
+          <p>
+            Even a single maker can disagree with itself. On 19 October Schwinn's IC4 page gave a
+            recommended height of 5 ft 1 in. to 6 ft 4 in. with a 29 to 39-inch inseam in its
+            specification table, and 4 ft 6 in. to 6 ft 6 in. with a 30 to 39-inch inseam in its FAQ;
+            OutdoorGearLab lists the wider range. We have printed neither on the card. If you are near
+            either end, measure your inseam and ask the seller which figure applies before you order.
+            The Keiser M3i is the exception: Keiser, Amazon and independent retailers agree on 4 ft 10
+            in. to 7 ft, which is why it suits households with very different riders.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Adjustment directions</h3>
+          <p>
+            Look for a saddle that moves up, down, forward and back, and handlebars that move at least
+            up and down. The IC3 and IC4 adjust both in four directions. Fore-aft saddle travel is the one
+            budget bikes skimp on, and it decides whether your knee sits over the pedal at the front of
+            the stroke. Our
+            <a href="/treadmill-vs-exercise-bike/#knees" class="text-[#0F62FE] font-medium">treadmill vs exercise bike</a>
+            page explains why a saddle set too low is the usual cause of sore knees on a bike.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Q-factor: the width between your feet</h3>
+          <p>
+            Q-factor is the horizontal distance between the outside faces of the two crank arms where
+            the pedals attach — in effect, how far apart your feet are as you pedal. Road bikes are
+            typically narrow; many exercise bikes are wider, because the flywheel and frame sit between
+            the cranks. A wide Q-factor can feel splay-footed and, for some riders, puts the knee and hip
+            at an angle they do not like over a long ride.
+          </p>
+          <p>
+            Very few makers publish it. Sunny is an exception: it lists a 186 mm Q-factor for its
+            SF-B1805SMART, which is a maker's claim we have not checked. If you ride outdoors and are
+            used to a road bike, or have had knee trouble with wide stances, look for a published
+            figure or a review that mentions foot spacing; otherwise, do not let its absence stop you.
+            Crank length is the related figure: Schwinn gives 170 mm, non-adjustable, for the IC4.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Pedals and shoes</h3>
+          <p>
+            The IC4, C6 and IC3 have dual-sided pedals with an SPD clip on one side and a toe cage on the
+            other, so you can ride in sneakers or cycling shoes with SPD cleats. Look-Delta cleats, used
+            by Peloton, do not fit SPD pedals. BowFlex notes that the C6's pedals can be swapped for any
+            standard 9/16-inch adult bicycle pedal, which is true of most bikes in this class.
+          </p>`,
+    },
+    {
+      id: 'apps',
+      heading: 'Apps: Open Bluetooth vs Lock-In',
+      html: `          <p>
+            Most bikes now talk to an app, and the business model behind that app can matter more over
+            five years than the bike itself. There are three broad approaches.
+          </p>
+          <p>
+            <strong>No connection at all.</strong> The Schwinn IC3 and the YOSUDA have a basic console
+            and nothing else. You can still follow a class on a phone or television — you just set the
+            resistance by feel and the app cannot see your effort. These bikes cannot be broken by a
+            software update, and nothing about them depends on a company's servers.
+          </p>
+          <p>
+            <strong>Open Bluetooth.</strong> Bikes like the IC4, C6 and Keiser M3i broadcast cadence and
+            estimated power over Bluetooth to apps on your own phone, tablet or TV. The industry standard
+            for this is called FTMS (Fitness Machine Service). Schwinn's own comparison table is candid
+            that the IC4 has <em>partial</em> FTMS, meaning it connects to specific apps — Schwinn lists
+            JRNY, Peloton, Zwift, Kinomap and Explore the World — rather than anything that speaks the
+            standard, while its 290 recumbent has full FTMS. Horizon lists Bluetooth FTMS for its 5.0 bikes. If a
+            particular app matters to you, check it appears on the maker's list rather than assuming.
+          </p>
+          <p>
+            <strong>Closed platforms.</strong> Peloton, Echelon and iFIT bikes are built around their own
+            subscription. You get a large built-in screen and classes that can adjust the bike for you,
+            but the content — and on some bikes, basic function — depends on keeping the membership.
+            OutdoorGearLab reports that Echelon bikes now work only when connected to Echelon's servers.
+            Our
+            <a href="/ifit-vs-peloton/" class="text-[#0F62FE] font-medium">iFIT vs Peloton comparison</a>
+            explains the two biggest ecosystems in more depth.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Zwift and the Peloton app on a non-Peloton bike</h3>
+          <p>
+            Both work on the IC4 and similar bikes, with caveats. <strong>Zwift</strong> moves your rider
+            using the power your bike reports, and a bike like the IC4 calculates that figure from
+            cadence and resistance rather than measuring it with a power meter, so treat it as an
+            estimate; and because you set the IC4's resistance by hand, Zwift's virtual hills cannot
+            change it for you the way they can on a smart trainer.
+            OutdoorGearLab says the IC4 works with Peloton and Zwift, "though not perfectly". If accurate
+            power is important to you — for structured training or racing — that is a job for a smart
+            trainer or power-meter pedals, not a home spin bike. Our
+            <a href="/best-treadmills-for-zwift/" class="text-[#0F62FE] font-medium">Zwift treadmill guide</a>
+            covers the running side of the same app.
+          </p>
+          <p>
+            <strong>The Peloton app</strong> runs Peloton's classes on any bike, and OutdoorGearLab notes
+            that the app membership costs much less than the All-Access Membership a Peloton bike needs.
+            The trade-off is that the app cannot read or set a non-Peloton bike's resistance, and
+            depending on the bike and app version it may not record all your data, so many riders
+            follow the instructor's cues using the bike's own console. Check current membership prices,
+            which change, before you commit to any platform.
+          </p>
+          <p>
+            Whichever app you use, a chest-strap heart-rate monitor gives a better measure of effort than
+            a bike's console; see our guide to
+            <a href="/chest-strap-vs-wrist-heart-rate/" class="text-[#0F62FE] font-medium">chest straps vs wrist heart rate</a>.
+            The IC4 and C6 include a Bluetooth armband monitor.
+          </p>`,
+    },
+    {
+      id: 'noise-space',
+      heading: 'Noise, Floors and Space',
+      html: `          <p>
+            An exercise bike is the quietest cardio machine you can buy, which is why it is the usual
+            recommendation for apartments and upstairs rooms. A few things still make a difference.
+          </p>
+          <p>
+            <strong>Noise.</strong> A magnetic, belt-driven bike makes very little sound: a faint whir
+            and whatever your breathing and the fan add. Friction bikes add a soft brushing from the pad.
+            Chain-driven bikes, now uncommon at home, are the loudest. None of the five here uses a
+            chain. Unlike a treadmill, there is no footfall, so very little reaches the room below — but
+            a bike rocking on a springy floor during standing climbs can transmit a rhythmic thump. A
+            dense rubber mat helps with that and protects the floor from sweat; our
+            <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">equipment mat guide</a>
+            explains which kinds work.
+          </p>
+          <p>
+            <strong>Footprint.</strong> The IC4 and C6 take about 54.6 by 30.7 inches of floor, the width
+            set mostly by the stabilizer feet. OutdoorGearLab measured the YOSUDA at about 40.5 by 21.5
+            inches. Leave room to get on from the side and some space behind for the saddle. Schwinn
+            recommends a ceiling at least 20 inches higher than the rider, which matters in basements and
+            loft rooms if you stand to pedal.
+          </p>
+          <p>
+            <strong>Power.</strong> The IC4 and C6 plug into a wall outlet for the console. The IC3 runs
+            on two AA batteries, so it can go anywhere. Bikes with electronic resistance need an outlet.
+          </p>
+          <p>
+            <strong>Moving it.</strong> Every bike here has front transport wheels, but you tip and roll
+            a bike of roughly 70 to 115 lb rather than carry it. On stairs, it is a two-person job. If the bike
+            will live in a garage, our guide to
+            <a href="/best-treadmills-for-garage/" class="text-[#0F62FE] font-medium">machines for the garage</a>
+            covers damp and temperature, which affect bikes' bearings and consoles too.
+          </p>`,
+    },
+    {
+      id: 'setup',
+      heading: 'Setting Up and Looking After Your Bike',
+      html: `          <p>
+            Most complaints about exercise bikes — sore knees, numb hands, an aching lower back — come
+            from set-up, not the bike. Ten minutes on the first day is worth it.
+          </p>
+          <ol>
+            <li><strong>Saddle height.</strong> With your heel on the pedal at the bottom of the stroke, your leg should be almost straight. When you pedal normally on the ball of your foot, that leaves a slight bend at the knee. Rocking hips mean the saddle is too high; a deep knee bend at the bottom means it is too low.</li>
+            <li><strong>Saddle fore-aft.</strong> With the cranks level, your forward knee should sit roughly above the pedal. Move the saddle, not your posture, to get there.</li>
+            <li><strong>Handlebar height.</strong> Start with the bars level with or slightly above the saddle. Lower bars are more aggressive and harder on the back and neck; there is no prize for copying a racing position.</li>
+            <li><strong>Feet.</strong> Tighten the toe cages so your foot cannot slide, or use SPD cleats. A foot slipping off a fixed-gear pedal is the most common way to hurt yourself on a spin bike.</li>
+            <li><strong>Stop properly.</strong> Use the emergency brake (press down on the resistance knob on most bikes) rather than trying to stop the pedals with your legs.</li>
+          </ol>
+          <p>
+            <strong>Maintenance</strong> is light: wipe sweat off the frame after each ride, because it
+            corrodes steel and gets into bearings; check the pedals and crank bolts are tight every few
+            weeks; and on a friction bike, inspect the pad and replace it when it is worn or glazed.
+            Garage Gym Reviews notes that the IC3's frame needs wiping down to prevent rust. Keep the
+            manual: replacement parts are ordered by model and serial number, which is also what you
+            need to check a recall.
+          </p>`,
+    },
+  ],
+  products: [
+    {
+      id: 'schwinn-ic4',
+      name: 'Schwinn IC4',
+      category: 'Best Exercise Bike Overall',
+      badge: 'Best Overall',
+      amazonUrl: 'https://www.amazon.com/s?k=Schwinn+IC4+Indoor+Cycling+Bike&tag=sktiger-20',
+      priceRange: '$799–$999',
+      specs: '100 magnetic resistance levels · 40 lb flywheel · 330 lb max user · 54.6 x 30.7 in. footprint · dual-sided SPD and toe-cage pedals · 10-yr frame, 3-yr parts and electronics, 1-yr labor warranty',
+      pros: [
+        'Quiet magnetic resistance with nothing to wear out',
+        'Works with apps you choose: Schwinn lists JRNY, Peloton, Zwift, Kinomap and Explore the World',
+        'A 330 lb rating, agreed by Schwinn, Garage Gym Reviews and OutdoorGearLab',
+        'Works fully on its own backlit console, with no subscription',
+        'Includes 3 lb dumbbells and a Bluetooth heart-rate armband',
+      ],
+      cons: [
+        'Schwinn’s page gives two different rider height ranges, so we have not printed one',
+        'Bluetooth is partial FTMS: it connects to a listed set of apps, not every app',
+        'Reviewers found its speed and distance readings inaccurate at times',
+      ],
+      bottomLine:
+        'The bike to buy for most homes: quiet, sturdy and open to whichever app you prefer, without being tied to one.',
+      description:
+        "The IC4 is an indoor cycling bike without a built-in screen, and for most homes that is its strength. Schwinn's page and independent reviews from Garage Gym Reviews and OutdoorGearLab agree on 100 levels of magnetic resistance, a 40 lb flywheel, a 330 lb maximum user weight, a 54.6 by 30.7-inch footprint, a backlit LCD console and dual-sided pedals with SPD clips and toe cages. The warranty is 10 years on the frame, three years on parts and electronics and one year of labor. It connects over Bluetooth to apps on your own device; Schwinn describes the connection as partial FTMS and lists JRNY, Peloton, Zwift, Kinomap and Explore the World, each with its own subscription. On 19 October Schwinn had it at $899 against a $999 list price; it was $799 on 16 October, so watch for sales. Schwinn's specification table gives a recommended rider height of 5 ft 1 in. to 6 ft 4 in., but its FAQ says 4 ft 6 in. to 6 ft 6 in.; confirm before ordering if you are near either end. Reviewers find its console metrics approximate, which matters only if you train by numbers.",
+    },
+    {
+      id: 'bowflex-c6',
+      name: 'BowFlex C6 Bike',
+      category: 'The Same Bike Under Another Name',
+      badge: 'IC4 Alternative',
+      amazonUrl: 'https://www.amazon.com/s?k=BowFlex+C6+Bike&tag=sktiger-20',
+      priceRange: '$899–$999',
+      specs: '100 magnetic resistance levels · 40 lb flywheel · 330 lb max user · 54.6 x 30.7 in. footprint · dual-sided SPD and toe-cage pedals · 10-yr frame, 3-yr parts and electronics, 1-yr labor warranty',
+      pros: [
+        'Matches the IC4 on every published figure, from footprint to warranty',
+        'BowFlex lists JRNY, Peloton and Zwift compatibility over Bluetooth',
+        'Standard 9/16-inch pedal threads, so you can fit your own pedals',
+        'A useful second source when the IC4 is out of stock or a sale favors one brand',
+      ],
+      cons: [
+        'Nothing to choose between it and the IC4 except price and availability',
+        'Like the IC4, no built-in screen or workouts without an app',
+      ],
+      bottomLine:
+        'Buy whichever of the C6 and IC4 is cheaper on the day; on published figures they are the same bike.',
+      description:
+        "BowFlex and Schwinn Fitness are sister brands — their stores share a sales line, and Johnson Health Tech now runs BowFlex — and the C6 is the IC4 under the BowFlex name. On 19 October BowFlex's page gave the same 54.6 by 30.7 by 51.8-inch dimensions, the same 113.6 lb weight with dumbbells, the same 330 lb maximum user weight, a belt-driven 40 lb flywheel with 100 magnetic resistance levels, dual-sided SPD and toe-cage pedals, and the same 10-year frame, three-year parts and electronics, one-year labor warranty. OutdoorGearLab treats the two as one design ('the IC4/C6'), and Garage Gym Reviews lists the C6 with the same 100 magnetic levels, 40 lb flywheel and 330 lb rating. BowFlex lists JRNY, Peloton and Zwift compatibility, says the pedals take any standard 9/16-inch adult bicycle pedal, and gives a recommended rider height of 5 ft 1 in. to 6 ft 4 in. It was $899 against a $999 list price. It is on this list because the two bikes go in and out of stock and on and off sale at different times, and knowing they are the same machine stops you paying more for a name.",
+    },
+    {
+      id: 'keiser-m3i-indoor-bike',
+      name: 'Keiser M3i Indoor Bike',
+      reviewUrl: null,
+      category: 'Best Premium Stationary Bike',
+      badge: 'Best Premium',
+      amazonUrl: 'https://www.amazon.com/s?k=Keiser+M3i+Indoor+Bike&tag=sktiger-20',
+      priceRange: 'About $2,985',
+      specs: 'Magnetic resistance, 24 gears · fits riders 4 ft 10 in. to 7 ft · 350 lb max user · rear flywheel, Poly-V belt drive · Bluetooth M Connect display',
+      pros: [
+        'The widest fit range here, agreed by Keiser, Amazon and independent retailers',
+        'A 350 lb rating and a studio-grade frame built for heavy daily use',
+        'Rear flywheel keeps the drivetrain away from sweat, according to Keiser',
+        'Broadcasts to apps over Bluetooth, with no platform of its own to subscribe to',
+      ],
+      cons: [
+        'Three times the price of the IC4',
+        'A small display and no screen; reviewers criticize both',
+        'Machine weight differs between Keiser and the Amazon listing, so we have printed neither',
+      ],
+      bottomLine:
+        'For households with very different riders, or anyone who wants a bike built to studio standards and will pay for it.',
+      description:
+        "The M3i is a long-standing studio bike, and its case is fit and durability. Keiser says its V-shaped frame fits riders from 4 ft 10 in. to 7 ft with a 350 lb capacity, and the Amazon listing, independent reviews and retailers such as The Fitness Outlet agree. Resistance is magnetic, with 24 gears on the shifter, through a Poly-V belt; Keiser moved the flywheel to the rear to keep the drivetrain out of the sweat zone, and that comparatively light rear flywheel is a good example of why flywheel weight alone says little about ride quality. The M Connect display sends data to apps over Bluetooth, and any app subscription is separate. Reviewers praise the ride and criticize the small display. The bundle with media tray and display was $2,985 on Amazon when we checked it on 16 October 2026 for our commercial gym equipment guide, and an independent review site gave the same Amazon figure. Machine weight is 92 lb on Keiser's page and different elsewhere, so it is not on the card.",
+    },
+    {
+      id: 'schwinn-ic3',
+      name: 'Schwinn IC3',
+      category: 'Best Bike Without Apps or an Outlet',
+      badge: 'Best No-Frills',
+      amazonUrl: 'https://www.amazon.com/s?k=Schwinn+IC3+Indoor+Cycling+Bike&tag=sktiger-20',
+      priceRange: 'About $699',
+      specs: 'Friction (pad) resistance, infinitely variable · 40 lb flywheel · 300 lb max user · battery-powered LCD, no Bluetooth · 4-way adjustable seat and handlebars · 5-yr frame, 2-yr parts and electronics, 1-yr labor warranty',
+      pros: [
+        'Runs on two AA batteries, so it can go anywhere in the house',
+        'Nothing to connect, update or subscribe to',
+        'Seat and handlebars adjust in four directions',
+        'Schwinn and Garage Gym Reviews agree on the 300 lb rating and warranty',
+      ],
+      cons: [
+        'Friction pads wear and need replacing, and reviewers report squeaks developing over time',
+        'Only $200 less than the magnetic IC4 at full price, and the warranty is shorter',
+        'Garage Gym Reviews reports some taller riders found the seat would not go high enough',
+      ],
+      bottomLine:
+        'For riders who want a solid, simple bike and never plan to connect it to anything; most others should spend the extra on the IC4.',
+      description:
+        "The IC3 is Schwinn's simpler bike, and the case for it is that there is nothing to go wrong. Schwinn's page and Garage Gym Reviews agree on a 40 lb flywheel, friction resistance from a pad on the flywheel that adjusts continuously rather than in steps, a 300 lb maximum user weight, a battery-powered LCD console with no Bluetooth or app connection, and a warranty of five years on the frame, two years on parts and electronics and one year of labor. The seat and handlebars both adjust up, down, forward and back, and the pedals have SPD clips and toe cages. It was $699 on Schwinn's site on 19 October 2026. The trade-offs are the ones friction always brings: Garage Gym Reviews says the ride may not be as smooth or quiet as a magnetic bike, the pads need maintenance, and some owners report noise developing after months of use. Schwinn gives the same rider height range as the IC4, yet Garage Gym Reviews heard from taller riders who ran out of seat height, so tall buyers should check their inseam. Unit weight differs slightly between sources, so it is not on the card.",
+    },
+    {
+      id: 'yosuda-indoor-cycling-bike',
+      name: 'YOSUDA Indoor Cycling Bike',
+      category: 'Best Budget Exercise Bike',
+      badge: 'Best Budget',
+      amazonUrl: 'https://www.amazon.com/s?k=YOSUDA+Indoor+Cycling+Bike+35+lb+Flywheel&tag=sktiger-20',
+      priceRange: '$270–$340',
+      specs: 'Friction (pad) resistance · 35 lb flywheel · belt drive · basic LCD, no Bluetooth · 25–35 in. inseam range (listing claim)',
+      pros: [
+        'The lowest price of any bike here',
+        'A quiet belt drive and a 35 lb flywheel, agreed by the listing and OutdoorGearLab',
+        'An inseam range that starts at 25 inches, unusually good for shorter riders',
+        'Compact: OutdoorGearLab measured about 40.5 by 21.5 inches',
+      ],
+      cons: [
+        'No connectivity and no programs; you ride by feel or follow a video',
+        'A lower weight limit than the others; OutdoorGearLab lists 270 lb',
+        'Taller riders may run out of seat post: OutdoorGearLab’s six-foot tester had it at maximum',
+      ],
+      bottomLine:
+        'For a first bike on a tight budget, especially for riders under about six feet. Spend more if you are tall, heavy or want app data.',
+      description:
+        "YOSUDA is an Amazon-first brand, so its specifications are listing claims; we cross-checked them against OutdoorGearLab, which named this bike its best budget exercise bike in 2026, and against the Woot listing (Woot is Amazon-owned). They agree on a belt-driven 35 lb flywheel and a friction pad controlled by a knob, which gives continuous rather than stepped resistance. The listing gives a 25 to 35-inch inseam range with a four-way adjustable seat and two-way handlebar. OutdoorGearLab lists a 270 lb weight limit, measured the assembled bike at 68.8 lb and about 40.5 by 21.5 inches, and found it smooth and exceptionally quiet for the price, with a basic display, no programs and no connectivity. It also found its six-foot tester with a 32-inch inseam needed the seat post at its highest setting, so riders much over six feet should look elsewhere. OutdoorGearLab gives a $340 list price and saw it on sale on Amazon for about 20% less. YOSUDA sells several bikes under similar names, including the magnetic Pro-M, so check the listing says friction, 35 lb flywheel, before you buy. We could not find a published warranty to confirm.",
+    },
+  ],
+  faqs: [
+    {
+      q: 'What is the best exercise bike for home?',
+      a: `For most homes, the Schwinn IC4: quiet magnetic resistance, a 330 lb rating, a 10-year frame warranty, and Bluetooth that works with Zwift, Peloton, JRNY and other apps without tying you to one. The BowFlex C6 is the same bike. On a tight budget, the YOSUDA friction bike covers the basics for about $300.`,
+    },
+    {
+      q: 'What is the best stationary bike to buy?',
+      a: `"Stationary bike" and "exercise bike" mean the same thing. Decide first between an indoor cycling bike, an upright bike and a recumbent with a backrest, then choose magnetic resistance if you can afford it. Our pick is the Schwinn IC4; for back or balance concerns, a recumbent bike is the better type.`,
+    },
+    {
+      q: 'Is magnetic or friction resistance better on an exercise bike?',
+      a: `Magnetic is better for most people. Nothing touches the flywheel, so it is quieter, consistent and needs no maintenance. Friction bikes use a pad pressing on the flywheel; they are cheaper and adjust continuously, but the pad wears and needs replacing and the ride can get noisier with age.`,
+    },
+    {
+      q: 'Does a heavier flywheel make a better exercise bike?',
+      a: `Not on its own. Smoothness comes from the flywheel's inertia, which depends on its mass, where that mass sits and how fast the gearing spins it. Heavy front flywheels are a simple way to make cheap friction bikes smooth, but premium bikes such as the Keiser M3i use lighter, faster-spinning rear flywheels and ride very smoothly.`,
+    },
+    {
+      q: 'Is the Peloton bike recalled?',
+      a: `Two Peloton models have been recalled for seat posts that can break. The original Peloton Bike, model PL01, was recalled in May 2023, and the Original Series Bike+, model PL02 with serial numbers starting with T, in November 2025. Owners get a free replacement seat post. Peloton's current Cross Training Bike and Bike+ are not part of either recall.`,
+    },
+    {
+      q: 'Can I use Zwift or the Peloton app with a Schwinn IC4?',
+      a: `Yes. Schwinn lists Zwift, Peloton, JRNY, Kinomap and Explore the World. Each needs its own subscription. The bike estimates power rather than measuring it, and the Peloton app cannot read or set the IC4's resistance, so riders follow the instructor's cues using the bike's own console. It works well for classes, less well for precise training numbers.`,
+    },
+    {
+      q: 'What size exercise bike do I need for my height?',
+      a: `Check the inseam range rather than height alone. Ranges vary widely: the YOSUDA listing gives 25 to 35 inches, Sunny's SF-B1002 31 to 42 inches, and the Keiser M3i fits riders from 4 ft 10 in. to 7 ft. Some makers publish conflicting figures, so if you are very short or tall, confirm with the seller before ordering.`,
+    },
+  ],
+  mistakesHeading: 'Common Mistakes Buying an Exercise Bike',
+  mistakesIntro:
+    'Each of these is easy to avoid before you order and annoying to discover afterwards.',
+  mistakes: [
+    {
+      title: 'Buying on flywheel weight',
+      body: `A 49 lb flywheel sounds better than a 35 lb one, but flywheel weight alone does not decide how smooth a bike feels, and premium bikes often use lighter wheels. Compare resistance type, adjustability and weight rating first, and use the flywheel figure only to separate two otherwise similar friction bikes.`,
+    },
+    {
+      title: 'Ignoring the inseam range',
+      body: `A bike that does not fit is a bike that does not get ridden. Measure your inseam in socks, check it against the bike's published range, and be wary when the maker gives two different ranges, as Schwinn's IC4 page does. If two people of very different heights will share the bike, check that both fit.`,
+    },
+    {
+      title: 'Buying a used Peloton without checking the seat post',
+      body: `Millions of recalled Peloton bikes were sold, and many are resold. Before buying a used PL01 Bike or PL02 Bike+, check the model and serial number on the front fork and ask whether the free replacement seat post has been fitted. If the seller cannot say, contact Peloton before anyone rides it.`,
+    },
+    {
+      title: 'Choosing a bike that needs a subscription to work',
+      body: `Some connected bikes depend on the maker's membership for their content, and OutdoorGearLab reports that Echelon bikes now need to connect to Echelon's servers to work at all. Before buying, find out what the bike does with no membership, and add the monthly fee over three to five years to the price.`,
+    },
+  ],
+  relatedHeading: 'Related Home Gym Guides',
+  related: [
+    {
+      kicker: 'Cardio',
+      title: 'Best Recumbent Bikes',
+      blurb: 'Step-through frames, backrests and seat adjustment for riders who want support.',
+      url: '/best-recumbent-bikes/',
+    },
+    {
+      kicker: 'Comparison',
+      title: 'Treadmill vs Exercise Bike',
+      blurb: 'Calories, knees, bone loading, space and noise, compared honestly.',
+      url: '/treadmill-vs-exercise-bike/',
+    },
+    {
+      kicker: 'Home Gym',
+      title: 'Best Cardio Machines for Home',
+      blurb: 'One pick per machine type, from treadmill and rower to air bike and stepper.',
+      url: '/best-cardio-machines-for-home/',
+    },
+  ],
+  bottomLine: [
+    `<strong class="text-white">For most homes, buy the Schwinn IC4</strong>, or the identical
+            BowFlex C6 if it is cheaper on the day: quiet magnetic resistance, a 330 lb rating and apps
+            of your choosing. On a tight budget, the YOSUDA friction bike does the basics for about
+            $300 if you are under six feet; if you want a bike that fits everyone in the house and will
+            last for decades, the Keiser M3i is worth its price.`,
+    `Before you order, measure your inseam, decide whether you need an app at all, and check any
+            used bike against the recall list. If you would rather sit back than lean forward, our
+            <a href="/best-recumbent-bikes/" class="text-[#5AA9FF] font-bold no-underline">best recumbent bikes</a>
+            guide covers the more supportive alternative.`,
+  ],
+};

@@ -347,7 +347,10 @@ export default {
             your height. With a cut-to-length rope like the Rogue SR-1, follow the maker's sizing
             guidance and trim a little at a time, because you cannot add cable back. Jump on a mat or
             a forgiving floor rather than bare concrete, and remember the noise section: skipping is
-            one of the loudest things you can do in an upstairs room.
+            one of the loudest things you can do in an upstairs room. If you would rather use a weighted,
+            smart or cordless rope, our guide to the
+            <a href="/best-jump-ropes/" class="text-[#0F62FE] font-medium">best jump ropes</a> covers those
+            types, sizing and ceiling height in more detail.
           </p>
           <p>
             <strong>Structure your rounds.</strong> Boxing training is built on timed rounds with

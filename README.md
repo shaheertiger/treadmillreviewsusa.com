@@ -650,6 +650,50 @@ Found while writing and not yet changed:
 - `scripts/build-articles.mjs <name>` matches spec names by substring, so building
   `best-walking-pads` also rebuilds its four siblings; pass `best-walking-pads.mjs` to build one.
 
+### Home Gym roundups (2026-10-19): eighteen "best" pages
+
+Eighteen buyer's guides (of twenty planned) for the highest-volume home gym and fitness product terms without an owning
+page, chosen from a Semrush US pull on 2026-10-19 (`research/keyword-batches/2026-10-19-home-gym-roundups.csv`,
+which also lists the high-volume terms deliberately skipped: supplements, general running and walking
+shoes, workout headphones, compression socks). Every page sits in `/home-gym/`:
+
+- **Cardio machines**: exercise bikes, recumbent bikes, rowing machines, under-desk ellipticals,
+  (rebounders and vibration plates were planned and are not yet written; they follow in a later PR)
+- **Strength**: home gym machines, weight benches, power towers, pull-up bars, resistance bands
+- **Recovery, boxing & accessories**: massage guns, foam rollers, inversion tables, yoga mats,
+  balance boards, jump ropes, gym flooring
+- **Fitness tech** (new group): fitness trackers, smart scales
+
+Same rules as the treadmill roundups: products confirmed as currently sold, figures cross-checked
+between the maker (or the Amazon listing) and an independent source with conflicting figures left
+off the cards, a CPSC check per brand and per category, no testing claims, no ratings, and the
+affiliate disclosure in each note. Products were chosen for Amazon US availability. Health-adjacent
+pages (massage guns, foam rollers, inversion tables, balance boards,
+smart scales, trackers, bands, jump ropes, recumbents) carry the not-medical-advice scope note, quote
+contraindications from makers' manuals, and present health claims as the sellers'.
+
+Research limits on the day, stated in each affected page's note: the shared web-search allowance ran
+out partway through, after which writers fetched maker pages, manuals, review sites and the CPSC and
+openFDA APIs directly; and Amazon pages were mostly unreadable (503s and bot checks), so Amazon
+availability was often confirmed indirectly (maker links to Amazon, indexed listings, review sites'
+Amazon links) and prices come from maker stores. Where an Amazon listing could not be confirmed, the
+card says so. There are no Creators API credentials in the build environment, so buttons are tagged
+searches; `npm run amazon:asins` can upgrade them to `/dp/` links later.
+
+Exclusions on safety grounds include the Peloton Bike (PL01, May 2023) and Bike+ (PL02, November
+2025) seat-post recalls, the NordicTrack RW900 rower (October 2025, console fire risk), and older
+inversion table recalls (ICON 2007 and 2010, Stamina 2008, DICK'S Fitness Gear 2014–15). Two Sunny
+seated ellipticals on `/best-under-desk-ellipticals/` are carded on Sunny's listing figures alone,
+labelled as such, because no independent review exists.
+
+Found while writing and not yet changed: `/best-cardio-machines-for-home/` prices the Schwinn IC4 at
+$799 and the AirDyne AD7 at $999 (Schwinn showed $899 and $1,099 on 19 October);
+`/best-boxing-equipment-for-home/` says Crossrope's Get Lean set is sold out (in stock on 19 October);
+`/best-recovery-tools-for-weightlifters/` gives the Theragun Mini 150 min of battery where Therabody's
+regional FAQ says about 120; `/best-home-gym-accessories/` links an REP AB-3000 2.0 Amazon listing
+that shows unavailable (REP's own Amazon store listing B0BSNY8STP is buyable); `/treadmill-desk-guide/`
+still carries "in our under-desk testing" claims. Fitbit Premium is now Google Health Premium.
+
 ### Sole F80 and F85
 
 Both were shipped first as `dataPending` editorial drafts because their published figures conflict

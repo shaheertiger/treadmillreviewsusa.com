@@ -322,7 +322,10 @@ export default {
             improves the heart-rate input to the estimate, but the estimate is still an estimate.
             Our page on
             <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium">whether treadmill calories are accurate</a>
-            explains why.
+            explains why. The same caution applies to body-fat figures from a bathroom scale; our
+            guide to the
+            <a href="/best-smart-scales/" class="text-[#0F62FE] font-medium">best smart scales</a>
+            explains what those estimates can and cannot tell you.
           </p>
           <p>
             <strong>If you have a heart condition or take medication that affects heart rate,</strong>

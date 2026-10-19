@@ -293,7 +293,10 @@ export default {
           <p>
             A sit-stand desk has a further advantage: you can lower it and sit when you are not
             walking. That is the arrangement most people end up using — walking for suitable work,
-            sitting for the rest — and it is easier to sustain than walking all day.
+            sitting for the rest — and it is easier to sustain than walking all day. If you want to keep
+            moving during the sitting blocks too, an
+            <a href="/best-under-desk-ellipticals/" class="text-[#0F62FE] font-medium">under-desk elliptical or pedal bike</a>
+            fits beneath the lowered desk.
           </p>`,
     },
     {
