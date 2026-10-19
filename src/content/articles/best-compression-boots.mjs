@@ -417,7 +417,7 @@ export default {
             equipment, and the same caution applies to a
             <a href="/best-zero-gravity-massage-chairs/" class="text-[#0F62FE] font-medium">zero gravity massage chair</a>
             or a
-            cold plunge.
+            <a href="/best-cold-plunges/" class="text-[#0F62FE] font-medium">cold plunge</a>.
           </p>`,
     },
     {

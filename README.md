@@ -694,7 +694,7 @@ regional FAQ says about 120; `/best-home-gym-accessories/` links an REP AB-3000 
 that shows unavailable (REP's own Amazon store listing B0BSNY8STP is buyable); `/treadmill-desk-guide/`
 still carries "in our under-desk testing" claims. Fitbit Premium is now Google Health Premium.
 
-### Premium-niche roundups (2026-10-19): twenty-four of thirty pages
+### Premium-niche roundups (2026-10-19): thirty pages
 
 Roundups for product niches where items usually sell for $100 or more, chosen from two Semrush US
 pulls on 2026-10-19 for volume against keyword difficulty (mostly KD 35 or under;
@@ -708,10 +708,12 @@ skipped for difficulty or price). All sit in `/home-gym/`:
   kettlebells, dumbbell sets, plyo boxes
 - **Recovery, boxing & accessories**: compression boots, zero-gravity massage chairs, punching bags
 
-Six more (smart home gyms, Peloton alternatives, smart bike trainers, home saunas, outdoor saunas,
-cold plunges) follow in a separate PR; the two links that would have pointed at them
-(`/best-smith-machines/` to smart home gyms, `/best-compression-boots/` to cold plunges) are
-repointed or unlinked until then.
+The last six (smart home gyms in Strength; Peloton alternatives and smart bike trainers in Cardio
+machines; home saunas, outdoor saunas and cold plunges in Recovery) followed in a second PR, which also
+restored the two links repointed for the first. Sauna and cold plunge pages quote makers' manuals for
+contraindications and electrical requirements (dedicated circuits, 240V/30A heaters, GFCI chillers);
+exclusions include Amp (CPSC stop-use recall, December 2025), the Sauna360 infrared sauna recall
+(September 2026) and Edge Theory Labs (out of business).
 
 Same product rules as earlier roundups. Much of this category is sold direct (Rogue, REP, Kabuki,
 Bells of Steel, Force USA, Steelflex, VersaClimber, CLMBR, Nautilus commercial): those products get

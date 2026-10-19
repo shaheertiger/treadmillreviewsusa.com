@@ -3320,6 +3320,24 @@ export const SECTIONS: Section[] = [
             badge: 'Boxing',
             url: '/best-punching-bags/',
           },
+          {
+            title: 'Best Home Saunas',
+            description: 'Five indoor infrared saunas: 120V circuits, footprint, wood, heaters, EMF claims, safety.',
+            badge: 'Sauna',
+            url: '/best-home-saunas/',
+          },
+          {
+            title: 'Best Outdoor Saunas',
+            description: 'Barrel and cabin saunas: foundations, 240V wiring, permits, wood vs electric heat.',
+            badge: 'Sauna',
+            url: '/best-outdoor-saunas/',
+          },
+          {
+            title: 'Best Cold Plunges',
+            description: 'Ice baths and chilled tubs: GFCI power, water care, floor loads and cold-shock safety.',
+            badge: 'Cold plunge',
+            url: '/best-cold-plunges/',
+          },
         ],
       },
       {
