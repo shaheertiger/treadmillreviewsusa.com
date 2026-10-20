@@ -116,6 +116,8 @@ export default {
             update limited Echelon bikes to working only when connected to Echelon's servers, which in
             practice ties the bike to Echelon's membership. A Peloton alternative that is more locked-in
             than Peloton is not much of an alternative, so it is discussed below rather than carded.
+            Looking at Peloton's treadmill instead? See our <a href="/peloton-tread/" class="text-[#0F62FE] font-medium">Peloton treadmill buyer’s guide</a>.
+            Echelon's treadmills are covered separately in our <a href="/echelon-treadmills/" class="text-[#0F62FE] font-medium">Echelon treadmill guide</a>.
           </p>
           <p>
             <strong>NordicTrack S22i and S27i.</strong> These studio bikes were NordicTrack's long-running

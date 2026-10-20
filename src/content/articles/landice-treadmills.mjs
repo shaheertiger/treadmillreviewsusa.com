@@ -514,7 +514,9 @@ export default {
             screens, faster top speeds and decline sell for less. Our
             <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial-grade treadmill roundup</a>
             and the <a href="/spirit-treadmills/" class="text-[#0F62FE] font-medium">Spirit brand guide</a>
-            cover heavier home machines at lower prices.
+            cover heavier home machines at lower prices, and TRUE is the other family-owned,
+            dealer-sold American maker at a similar price (see our <a href="/true-fitness-treadmills/" class="text-[#0F62FE] font-medium">TRUE treadmill guide</a>).
+            For the step above Landice in price, see our <a href="/woodway-treadmills/" class="text-[#0F62FE] font-medium">Woodway treadmill guide</a>.
           </p>
           <p>
             <strong>Look elsewhere if you need guided classes built in.</strong> A Landice will run

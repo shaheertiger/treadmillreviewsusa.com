@@ -91,7 +91,7 @@ ${row('Matrix', 'Johnson Health Tech', 'T-series club treadmills')}
 ${row('Technogym', 'Technogym S.p.A., Cesena, Italy; listed in Milan', 'Club and hotel treadmills')}
 ${row('Star Trac', 'Core Health &amp; Fitness', '4TR, 6TR, 8TRx, FreeRunner 10TRx')}
 ${row('Cybex', 'A Life Fitness brand', 'Mostly older club units')}
-${row('TRUE Fitness', 'TRUE Fitness, O&rsquo;Fallon, Missouri', 'Commercial treadmills')}
+${row('TRUE Fitness', 'TRUE Fitness, St. Charles, Missouri', 'Commercial treadmills')}
 ${row('Woodway', 'Woodway, Waukesha, Wisconsin', 'Slat-belt treadmills such as the 4Front; the manual Curve')}
 ${row('Freemotion', 'iFIT, the company behind NordicTrack and ProForm', 'REFLEX treadmill and other connected cardio')}
 ${row('Landice', 'Family-run, New Jersey', 'L-Series club and rehabilitation models')}
@@ -118,7 +118,7 @@ ${row('Landice', 'Family-run, New Jersey', 'L-Series club and rehabilitation mod
             2026 it announced a Peloton Commercial Series of gym bike and treadmill, with shipments due
             to begin in late 2026. Precor's own treadmills continue: its brochure for the TRM 885 gives
             a 4 HP AC motor and a 120-volt, 20-amp individual branch circuit for the US, and retailer
-            listings agree on the motor. Listings disagree on the TRM 885's running-surface width and
+            listings agree on the motor. Our <a href="/precor-treadmills/" class="text-[#0F62FE] font-medium">Precor treadmill guide</a> covers the current TRM lines and used prices. Listings disagree on the TRM 885's running-surface width and
             maximum user weight, so we leave those out.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Matrix</h3>
@@ -137,7 +137,8 @@ ${row('Landice', 'Family-run, New Jersey', 'L-Series club and rehabilitation mod
             Technogym is an Italian company founded in 1983 by Nerio Alessandri and based in Cesena,
             near Bologna. It has been listed on the Milan stock exchange since 2016. It positions
             itself at the premium end of the market, and its treadmills are a common sight in upscale
-            clubs and hotel gyms. It sells to homes too, at premium prices.
+            clubs and hotel gyms. It sells to homes too, at premium prices; our
+            <a href="/technogym-treadmills/" class="text-[#0F62FE] font-medium">Technogym treadmill guide</a> covers the US home range.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Star Trac</h3>
           <p>
@@ -153,8 +154,8 @@ ${row('Landice', 'Family-run, New Jersey', 'L-Series club and rehabilitation mod
             <strong>Cybex</strong> is now part of Life Fitness, and Cybex treadmills turn up mostly as
             older units in clubs and on the used market. Older Cybex treadmills were recalled in 2003,
             2007 and 2008, so check any used one against the recall database.
-            <strong>TRUE Fitness</strong> is an American maker based in O'Fallon, Missouri.
-            <strong>Woodway</strong>, based in Waukesha, Wisconsin, builds treadmills with a running
+            <strong>TRUE Fitness</strong> is an American maker in the St. Louis area — its site now gives St. Charles, Missouri, where older notices said O'Fallon; our <a href="/true-fitness-treadmills/" class="text-[#0F62FE] font-medium">TRUE treadmill guide</a> covers its home range and warranty.
+            <strong>Woodway</strong> (<a href="/woodway-treadmills/" class="text-[#0F62FE] font-medium">our Woodway guide</a>), based in Waukesha, Wisconsin, builds treadmills with a running
             surface of vulcanised rubber slats instead of a conventional belt — the company says it can
             last more than 150,000 miles — and its machines are often found in performance-training
             facilities; its Curve is a manual curved treadmill, a category covered in our

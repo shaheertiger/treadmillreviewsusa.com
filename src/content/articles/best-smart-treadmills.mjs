@@ -132,13 +132,13 @@ export default {
       ],
       cons: [
         'Independent reviews report that Echelon has required a membership with the purchase, and without one only a manual mode remains',
-        'Published top speed and warranty terms differ between Echelon and independent reviewers, so confirm both',
+        'Top speed differs between Echelon and independent reviewers, and the longer warranty lasts only while the membership is active',
         'A 10-inch screen is small for a machine sold on its classes',
       ],
       bottomLine:
         'The pick for an apartment or shared room where the treadmill has to disappear after every session — and where Echelon classes are the plan.',
       description:
-        "The Stride-6s is Echelon's compact smart treadmill, and its defining feature is the auto-fold: press a button and the deck folds flat against the frame, leaving a footprint small enough to stand against a wall. Echelon's listing and independent coverage agree on a 20.5 by 60-inch deck, a 10-inch touchscreen and a 300 lb maximum user weight, and Echelon lists powered incline across twelve levels. We left the top speed out of the spec line because Echelon quotes 12.5 mph while two independent reviews list 12.4, and we left the warranty out because Echelon's current page advertises a four-year guarantee while an earlier independent review gives different frame and motor terms. The subscription point matters more here than on most machines: an independent review reports that Echelon has required at least a month of its Premier membership with the purchase, and that after cancelling only a manual FreeStyle mode remains. Ask what the current terms are before you buy.",
+        "The Stride-6s is Echelon's compact smart treadmill, and its defining feature is the auto-fold: press a button and the deck folds flat against the frame, leaving a footprint small enough to stand against a wall. Echelon's listing and independent coverage agree on a 20.5 by 60-inch deck, a 10-inch touchscreen and a 300 lb maximum user weight, and Echelon lists powered incline across twelve levels. We left the top speed out of the spec line because Echelon quotes 12.5 mph while two independent reviews list 12.4, and we left the warranty out because it depends on the membership: Echelon's published base terms are one year on equipment, five on the motor and ten on the frame, and the longer guarantee its product page advertises lasts only while Premier stays active (our Echelon treadmill guide sets this out). The subscription point matters more here than on most machines: an independent review reports that Echelon has required at least a month of its Premier membership with the purchase, and that after cancelling only a manual FreeStyle mode remains. Ask what the current terms are before you buy.",
     },
     {
       id: 'bowflex-t6',
@@ -252,7 +252,7 @@ export default {
             line if the manufacturer and at least one other source agree on it. That rule removed
             more than you might expect. The motor ratings on both NordicTrack machines are quoted
             differently by different sources and model years. Echelon and independent reviewers
-            disagree on the Stride-6s's top speed and warranty. Horizon does not state a motor
+            disagree on the Stride-6s's top speed, and its warranty depends on the membership (<a href="/echelon-treadmills/" class="text-[#0F62FE] font-medium">our Echelon guide</a> explains). Horizon does not state a motor
             rating at all. Those figures are absent rather than guessed, and each card says why.
           </p>
           <p>

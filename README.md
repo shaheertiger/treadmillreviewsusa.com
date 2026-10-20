@@ -732,6 +732,28 @@ Profile PRO is BarBend's best folding rack (BarBend's current guide names the RE
 operating instructions say 2+ hours; `/best-adjustable-dumbbells/` gives the BowFlex 552/1090 recall as
 3.8 million units where the CPSC title says 3.7 million sold by Nautilus.
 
+### Buyer's guides (2026-10-20): nine pages from a Search Console export
+
+Nine buyer's guides written against a Search Console keyword export (2026-10-20). The full
+keyword-to-page mapping, including what was skipped and why, is in
+`research/keyword-batches/2026-10-20-buyer-guides.csv`; most of the 140 terms already had a page.
+
+- `/brands/`: `/peloton-tread/` (the October 2026 Tread Flex, Tread Vision and Tread+ Vision range),
+  `/deer-run-treadmill/`, `/echelon-treadmills/` (Cross-shopped alternatives); `/precor-treadmills/`,
+  `/technogym-treadmills/`, `/true-fitness-treadmills/`, `/woodway-treadmills/` (Commercial brands)
+- `/best/`: `/wooden-walking-pad/` (Walking & low-impact)
+- `/home-gym/`: `/stepper-buying-guide/` (Cardio machines)
+
+Same rules as the roundups: figures cross-checked against the maker plus an independent source on
+20 October 2026, conflicting figures stated as conflicts and kept off cards, CPSC checked for every
+brand, no testing claims or ratings. Four guides (Deer Run, Precor, Technogym, wooden walking pads)
+carry no product cards because too few figures could be cross-checked or the machines are not sold
+on Amazon. Fixes made along the way: TRUE's headquarters (now St. Charles, MO) on
+`/what-treadmills-do-gyms-use/`, the Technogym Skillmill's US listing on `/best-curved-treadmills/`,
+and the membership-dependent Echelon warranty on `/best-smart-treadmills/`. Still flagged, not
+corrected: `/best-peloton-alternatives/` quotes All-Access at $44 and App+ at $24, which appear to
+predate Peloton's October 2025 price rise; Peloton's site showed no current price to confirm against.
+
 ### Sole F80 and F85
 
 Both were shipped first as `dataPending` editorial drafts because their published figures conflict
