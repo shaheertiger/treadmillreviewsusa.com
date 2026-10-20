@@ -334,6 +334,7 @@ export default {
     {
       id: 'walkingpad-z1',
       name: 'WalkingPad Z1',
+      reviewUrl: '/walkingpad-z1-review/',
       category: 'Budget folding walking pad',
       badge: 'Best Budget',
       amazonUrl: 'https://www.amazon.com/s?k=WalkingPad+Z1+Folding+Treadmill&tag=sktiger-20',
@@ -353,7 +354,7 @@ export default {
       bottomLine:
         'For tall walkers under about 220 lb on a budget, walking at desk pace.',
       description:
-        "If you are tall but not heavy and want the cheapest route to a long belt, the Z1 is it. WalkingPad lists a walking area of 1,210 by 400 mm, or 47.6 by 15.7 inches, a speed range of 1 to 4 mph, a 242 lb maximum user weight and a net weight of 51 lb, folding to 31.8 by 22 by 5.4 inches; Living.fit, which sells the pad, gives the same length and capacity. One independent round-up lists the Z1's belt as 47.2 by 17.3 inches instead, so the length is consistent but the width is not, and we have left width out of the specification line. The price was $299 to $329 depending on colour when we checked. The limits are capacity and support: 242 lb leaves little margin for a heavy tall walker, the standard warranty is a year, and WalkingPad's own pages quote a 2.25 HP motor in one place and 0.75 HP in another, so we have not given a figure. For an occasional or lighter user at desk speeds, it is good value.",
+        "If you are tall but not heavy and want the cheapest route to a long belt, the Z1 is it. WalkingPad lists a walking area of 1,210 by 400 mm, or 47.6 by 15.7 inches, a speed range of 1 to 4 mph, a 242 lb maximum user weight and a net weight of 51 lb, folding to 31.8 by 22 by 5.4 inches; Living.fit, which sells the pad, gives the same length and capacity. One independent round-up lists the Z1's belt as 47.2 by 17.3 inches instead, so the length is consistent but the width is not, and we have left width out of the specification line. The price was $299 to $329 depending on colour when we checked. The limits are capacity and support: 242 lb leaves little margin for a heavy tall walker, the standard warranty is a year, and the motor is quoted as 2.25 HP by WalkingPad, 2 hp on Amazon and 0.75 HP by a reseller, so we have not given a figure. For an occasional or lighter user at desk speeds, it is good value.",
     },
     {
       id: 'lifespan-tr1200pro-glowup',

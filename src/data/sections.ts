@@ -1236,6 +1236,13 @@ export const SECTIONS: Section[] = [
             url: '/treaflow-walking-pad/',
           },
           {
+            title: 'WalkingPad Z1 Review',
+            description:
+              'KingSmith’s fold-in-half pad: what WalkingPad, Amazon and an independent review agree on, the disputed motor and noise figures, and the 242 lb limit.',
+            badge: 'Walking pad',
+            url: '/walkingpad-z1-review/',
+          },
+          {
             title: 'Streamdale Folding Treadmill',
             description:
               'Who Streamdale is, what its unbranded folding treadmills claim, and the return terms to read first.',

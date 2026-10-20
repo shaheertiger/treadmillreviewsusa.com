@@ -430,6 +430,7 @@ export default {
     {
       id: 'walkingpad-z1',
       name: 'WalkingPad Z1',
+      reviewUrl: '/walkingpad-z1-review/',
       category: 'Folding Pad With the Longest Belt for the Money',
       badge: 'Longest Belt',
       amazonUrl: 'https://www.amazon.com/s?k=WalkingPad+Z1+Foldable+Walking+Treadmill&tag=sktiger-20',
