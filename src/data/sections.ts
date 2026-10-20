@@ -986,6 +986,13 @@ export const SECTIONS: Section[] = [
             url: '/deer-run-treadmill/',
           },
           {
+            title: 'UREVO Treadmills',
+            description:
+              'UREVO’s walking pads, 2-in-1s and CyberMega: checkout prices, conflicting weight limits, the app-dependent 18-month warranty and 14-day returns.',
+            badge: 'Marketplace',
+            url: '/urevo-treadmills/',
+          },
+          {
             title: 'Peloton Treadmills',
             description:
               'Tread Flex, Tread Vision and Tread+ Vision: delivered prices, All-Access, Just Run, the 2021 recalls and used buys.',
