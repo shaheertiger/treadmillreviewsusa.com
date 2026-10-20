@@ -1563,6 +1563,13 @@ export const SECTIONS: Section[] = [
             badge: 'iFIT',
             url: '/can-you-use-nordictrack-without-ifit/',
           },
+          {
+            title: 'Can You Watch Netflix on a NordicTrack?',
+            description:
+              'Which streaming apps iFIT puts on the screen, the plan they need, and why the privileged-mode hack is a bad idea.',
+            badge: 'iFIT',
+            url: '/can-you-watch-netflix-on-nordictrack/',
+          },
         ],
       },
       {
