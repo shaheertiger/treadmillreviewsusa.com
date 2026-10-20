@@ -477,6 +477,7 @@ export default {
     {
       id: 'walkingpad-z1',
       name: 'WalkingPad Z1',
+      reviewUrl: '/walkingpad-z1-review/',
       category: 'Budget folding walking pad',
       badge: 'Best Budget',
       amazonUrl: 'https://www.amazon.com/s?k=WalkingPad+Z1+Foldable+Walking+Treadmill&tag=sktiger-20',
@@ -496,7 +497,7 @@ export default {
       bottomLine:
         'The budget pick for a lighter walker who wants a long belt and a pad that folds away.',
       description:
-        "The Z1 is the cheapest pad here and one of the longest. WalkingPad lists a 47.6-inch walking area, a speed range of 1 to 4 mph, a 242 lb maximum user weight and a 51 lb net weight, folding in half; Living.fit, which sells it, gives the same length, speed, capacity and weight. The figures that do not match are the motor, which WalkingPad calls 2.25 HP and Living.fit 0.75 HP, and the noise claim: Living.fit's listing claims the Z1 runs below 40 dB, while WalkingPad's own page for the bigger A1 Pro claims under 65 dB. Neither is a figure we can check, and the gap between them is the clearest example on this page of why such claims cannot be compared. WalkingPad describes it as suited to shared apartments; we would still put it on a dense mat. On 15 October 2026 WalkingPad had the white Z1 in stock at $299, with the standard version on pre-order at $329, and Living.fit listed the white Z1 at $299 as a pre-order. WalkingPad's standard warranty is one year.",
+        "The Z1 is the cheapest pad here and one of the longest. WalkingPad lists a 47.6-inch walking area, a speed range of 1 to 4 mph, a 242 lb maximum user weight and a 51 lb net weight, folding in half; Living.fit, which sells it, gives the same length, speed, capacity and weight. The figures that do not match are the motor, which WalkingPad calls 2.25 HP and Living.fit 0.75 HP, and the noise claim: Living.fit's listing claims the Z1 runs below 40 dB, while WalkingPad's own Z1 page claims under 65 dB. Neither is a figure we can check, and the gap between them is the clearest example on this page of why such claims cannot be compared. WalkingPad describes it as suited to shared apartments; we would still put it on a dense mat. On 15 October 2026 WalkingPad had the white Z1 in stock at $299, with the standard version on pre-order at $329, and Living.fit listed the white Z1 at $299 as a pre-order. WalkingPad's standard warranty is one year.",
     },
   ],
   faqs: [

@@ -409,7 +409,7 @@ export default {
     },
     {
       q: 'Does the TKO AirRaid Runner work with Zwift?',
-      a: 'TKO lists ANT+ and Bluetooth and names Kinomap, Zwift and Aviron, and its manual gives pairing steps for Kinomap and for Zwift’s run speed device using the Bluetooth FTMS standard. The console goes to sleep after about four and a half minutes without belt movement, which turns Bluetooth off.',
+      a: 'TKO lists ANT+ and Bluetooth and names Kinomap, Zwift and Aviron, and its manual gives pairing steps for Kinomap and for Zwift’s run speed device using the Bluetooth FTMS standard. The console goes to sleep after about four and a half minutes without belt movement, which turns Bluetooth off. Aviron itself lists no third-party treadmills for its app, so treat that claim as unconfirmed; our Aviron treadmill review covers what Aviron sells.',
     },
     {
       q: 'How much does the TKO AirRaid Runner 8CTM cost?',

@@ -394,6 +394,7 @@ export default {
             return is figures we could cross-check and wider retail availability. If the price gap is small
             on the day you buy, the better-documented pad is the safer choice. If you specifically want a
             little incline for under $150, the Q2 Urban is a reasonable gamble, with the caveats above.
+            For UREVO's full range and its warranty and return terms, see our <a href="/urevo-treadmills/" class="text-[#0F62FE] font-medium">UREVO treadmill guide</a>.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Belt length, and DeerRun’s own size chart</h3>
           <p>

@@ -747,6 +747,13 @@ export const SECTIONS: Section[] = [
             badge: 'Scheels',
             url: '/scheels-treadmills/',
           },
+          {
+            title: 'Academy Sports Treadmills',
+            description:
+              'Brands and prices Academy lists, bulk delivery tiers, the 60-day returns and its beat-by-5% price match.',
+            badge: 'Academy',
+            url: '/academy-sports-treadmills/',
+          },
         ],
       },
     ],
@@ -979,6 +986,13 @@ export const SECTIONS: Section[] = [
             url: '/deer-run-treadmill/',
           },
           {
+            title: 'UREVO Treadmills',
+            description:
+              'UREVO’s walking pads, 2-in-1s and CyberMega: checkout prices, conflicting weight limits, the app-dependent 18-month warranty and 14-day returns.',
+            badge: 'Marketplace',
+            url: '/urevo-treadmills/',
+          },
+          {
             title: 'Peloton Treadmills',
             description:
               'Tread Flex, Tread Vision and Tread+ Vision: delivered prices, All-Access, Just Run, the 2021 recalls and used buys.',
@@ -1204,6 +1218,13 @@ export const SECTIONS: Section[] = [
             badge: 'Bowflex',
             url: '/bowflex-t16-treadmill/',
           },
+          {
+            title: 'Bowflex Treadmill 10',
+            description:
+              'Discontinued. The checked specs, a warranty that does not transfer, what to test on a used one, and the T9 or T16 instead.',
+            badge: 'Discontinued',
+            url: '/bowflex-treadmill-10/',
+          },
         ],
       },
       {
@@ -1234,6 +1255,13 @@ export const SECTIONS: Section[] = [
               'The 3100W peg-incline pad on what its listing and independent trackers agree, and what remains a claim.',
             badge: 'Walking pad',
             url: '/treaflow-walking-pad/',
+          },
+          {
+            title: 'WalkingPad Z1 Review',
+            description:
+              'KingSmith’s fold-in-half pad: what WalkingPad, Amazon and an independent review agree on, the disputed motor and noise figures, and the 242 lb limit.',
+            badge: 'Walking pad',
+            url: '/walkingpad-z1-review/',
           },
           {
             title: 'Streamdale Folding Treadmill',
@@ -1275,6 +1303,13 @@ export const SECTIONS: Section[] = [
       {
         name: 'Commercial & alternatives',
         pages: [
+          {
+            title: 'Aviron Treadmills',
+            description:
+              'Justice, Podium and Summit: prices, what works without the membership, and the conditions on the 20-year warranty.',
+            badge: 'Aviron',
+            url: '/aviron-treadmill/',
+          },
           {
             title: 'Life Fitness T3',
             description: 'Genuine commercial-grade AC motor durability for the home.',
@@ -1826,6 +1861,13 @@ export const SECTIONS: Section[] = [
               'Safety key habits, keeping kids and pets away, clearance, folding-deck and cord hazards, footwear.',
             badge: 'Safety',
             url: '/treadmill-safety-tips/',
+          },
+          {
+            title: 'Kids Treadmill Guide',
+            description:
+              'Age limits by brand, CDC and AAP activity advice, child injury data, toy treadmills and a home checklist.',
+            badge: 'Kids',
+            url: '/kids-treadmill/',
           },
           {
             title: 'Treadmill Warranty Explained',
@@ -2590,6 +2632,13 @@ export const SECTIONS: Section[] = [
               'A first four weeks, walking-first then walk-run, with the progression rules and the beginner errors to avoid.',
             badge: 'Beginner',
             url: '/treadmill-workout-for-beginners/',
+          },
+          {
+            title: 'Treadmill Workout Plan',
+            description:
+              'A 12-week plan in three tracks — walker, beginner runner, runner — with week-by-week speed, incline, minutes and RPE, deloads and strength days.',
+            badge: 'Plan',
+            url: '/treadmill-workout-plan/',
           },
           {
             title: 'How to Use a Manual Treadmill',

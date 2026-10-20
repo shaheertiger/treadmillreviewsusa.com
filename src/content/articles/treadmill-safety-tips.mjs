@@ -140,6 +140,10 @@ export default {
             the manufacturer’s minimum age and supervision requirements.</li>
           </ul>
           <p>
+            Our <a href="/kids-treadmill/" class="text-[#0F62FE] font-medium">kids and treadmills guide</a> quotes those age limits brand by
+            brand and sets out the injury data.
+          </p>
+          <p>
             If you have young children, these measures are worth more than any feature on the
             machine.
           </p>`,

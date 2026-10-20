@@ -754,6 +754,38 @@ and the membership-dependent Echelon warranty on `/best-smart-treadmills/`. Stil
 corrected: `/best-peloton-alternatives/` quotes All-Access at $44 and App+ at $24, which appear to
 predate Peloton's October 2025 price rise; Peloton's site showed no current price to confirm against.
 
+### Semrush keyword batch (2026-10-20): seven pages
+
+Written against a supplied Semrush export of 100 US keywords, stored with its page mapping in
+`research/keyword-batches/2026-10-20-semrush.csv`. 92 already had an owning page and were mapped to
+it; "treadmill movie" was skipped. The rest became seven pages:
+
+- `/reviews/`: `/walkingpad-z1-review/` and `/bowflex-treadmill-10/` (discontinued in the US; specs,
+  original-purchaser warranty, buying used), and `/aviron-treadmill/` (the Justice, Podium and
+  Summit, launched September 2026; the cards fall back to Shop Similar)
+- `/brands/`: `/urevo-treadmills/` (Cross-shopped alternatives)
+- `/price/`: `/academy-sports-treadmills/` (Where to buy)
+- `/guides/`: `/kids-treadmill/` (Safety, warranty & delivery)
+- `/training/`: `/treadmill-workout-plan/` (Start here), a 12-week plan in three tracks
+
+Same rules as before: figures checked against the maker plus an independent source on 20 October
+2026, conflicts stated and kept off cards, CPSC searched per brand, no testing claims or ratings.
+Fixed along the way: two WalkingPad Z1 notes (the 65 dB claim is on the Z1's own page; 0.75 HP comes
+from a reseller). Added: a dated note on `/treadmills-with-the-highest-incline/` that Aviron's
+Summit lists 42%, not yet ranked.
+
+Still flagged, not corrected:
+- `/best-folding-treadmills/` and `/best-treadmill-for-home-reviews/` present the discontinued
+  Bowflex Treadmill 22 as current, with a 20 x 60 in. deck (Bowflex: 22 x 60), an unconfirmed
+  4.0 CHP motor and dated prices; `product-asins.json` still holds its ASIN.
+- `/bowflex/` still calls Bowflex "a brand without a treadmill in its lineup"; the T9 and T16 sale
+  prices are a week out of date.
+- `/best-quiet-walking-pads/` says the UREVO CyberPad for Office has no independent coverage
+  (Popular Science reviewed it 2 July 2026); `/best-treadmills-on-amazon/` and
+  `/best-treadmills-under-300/` list the UREVO Strol 2E as in stock (sold out on 20 October);
+  `/best-portable-treadmills/`' Strol 2E Pro card may describe an earlier version; the standard
+  WalkingPad Z1 is now pre-order only.
+
 ### Sole F80 and F85
 
 Both were shipped first as `dataPending` editorial drafts because their published figures conflict

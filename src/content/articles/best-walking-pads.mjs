@@ -99,7 +99,9 @@ export default {
             Two of the six are WalkingPad models and three are UREVO's. That is not a brand
             preference. These two makers sell the widest range of pads in the US under stable model
             names, and their product pages agreed with independent coverage more often than most of
-            the marketplace brands we looked at, which is the test every pick here had to pass.
+            the marketplace brands we looked at, which is the test every pick here had to pass. Our
+            <a href="/urevo-treadmills/" class="text-[#0F62FE] font-medium">UREVO treadmill guide</a> covers the rest of UREVO's range, including the app registration its 18-month
+            warranty depends on.
           </p>`,
     },
     {
@@ -430,6 +432,7 @@ export default {
     {
       id: 'walkingpad-z1',
       name: 'WalkingPad Z1',
+      reviewUrl: '/walkingpad-z1-review/',
       category: 'Folding Pad With the Longest Belt for the Money',
       badge: 'Longest Belt',
       amazonUrl: 'https://www.amazon.com/s?k=WalkingPad+Z1+Foldable+Walking+Treadmill&tag=sktiger-20',
