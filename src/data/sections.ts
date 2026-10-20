@@ -300,6 +300,13 @@ export const SECTIONS: Section[] = [
             badge: 'Quiet',
             url: '/best-quiet-walking-pads/',
           },
+          {
+            title: 'Wooden Walking Pads',
+            description:
+              'Wood-look pads, solid-wood manual desk treadmills and wooden slat machines: what wood changes, US prices, warranties and care.',
+            badge: 'Walking pads',
+            url: '/wooden-walking-pad/',
+          },
         ],
       },
       {
@@ -876,6 +883,34 @@ export const SECTIONS: Section[] = [
             badge: 'Star Trac',
             url: '/star-trac-treadmills/',
           },
+          {
+            title: 'Precor Treadmills',
+            description:
+              'Peloton-owned and commercial-only now: the TRM lines, used prices, the 20-amp circuit and what the warranty covers.',
+            badge: 'Precor',
+            url: '/precor-treadmills/',
+          },
+          {
+            title: 'Technogym Treadmills',
+            description:
+              'The Italian club maker’s US home range: the MyRun, the slat-belt Run, the app, the two-year warranty and delivery.',
+            badge: 'Technogym',
+            url: '/technogym-treadmills/',
+          },
+          {
+            title: 'TRUE Fitness Treadmills',
+            description:
+              'Who TRUE is, the Z500 and Performance 1000, 3000 and 8000, the warranty fine print and how TRUE compares with Sole, Spirit and Landice.',
+            badge: 'Dealer-sold',
+            url: '/true-fitness-treadmills/',
+          },
+          {
+            title: 'Woodway Treadmills',
+            description:
+              'The Waukesha slat-belt maker: the 4Front, Vive, Mercury and Curve ranges, prices, warranty, home power needs and buying used.',
+            badge: 'Woodway',
+            url: '/woodway-treadmills/',
+          },
         ],
       },
       {
@@ -928,6 +963,27 @@ export const SECTIONS: Section[] = [
               'Another marketplace brand: the listings, the three warranty lengths, and the shipping terms.',
             badge: 'Marketplace',
             url: '/famistar-treadmill/',
+          },
+          {
+            title: 'Echelon Treadmills',
+            description:
+              'Fold-flat Stride treadmills, what the Premier membership adds and what works without it, and Echelon vs Peloton.',
+            badge: 'Echelon',
+            url: '/echelon-treadmills/',
+          },
+          {
+            title: 'Deer Run Treadmills',
+            description:
+              'DeerRun’s walking pads and folding treadmills: what the listings claim, where they contradict each other, and the real warranty and return terms.',
+            badge: 'Marketplace',
+            url: '/deer-run-treadmill/',
+          },
+          {
+            title: 'Peloton Treadmills',
+            description:
+              'Tread Flex, Tread Vision and Tread+ Vision: delivered prices, All-Access, Just Run, the 2021 recalls and used buys.',
+            badge: 'Peloton',
+            url: '/peloton-tread/',
           },
         ],
       },

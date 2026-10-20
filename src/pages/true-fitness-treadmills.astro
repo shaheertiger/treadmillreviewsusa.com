@@ -1,0 +1,1012 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "TRUE Treadmill Buyer’s Guide (2026): Models, Warranty, Dealers";
+const description =
+  "TRUE Fitness sells its home treadmills through dealers and its own store. The Z500 and Performance 1000, 3000 and 8000, the warranty fine print, and how TRUE compares.";
+
+const PRODUCTS = [
+  {
+    id: "true-z500",
+    name: "TRUE Z500",
+    category: "Compact Non-Folding Home Treadmill",
+    badge: "Lowest-Priced TRUE",
+    amazonUrl: "https://www.amazon.com/s?k=non+folding+treadmill+22+inch+deck&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
+    reviewUrl: null,
+    priceRange: "$3,499 at TRUE on 20 Oct 2026",
+    priceBounds: {"low":3499,"high":3499},
+    specs: "20 x 54 in. running surface · 3 HP (lab rating) · 0.5-12 mph · 0-15% incline · 350 lb max user · 8.5 in. LCD",
+    pros: [
+      "The cheapest way into a new TRUE treadmill",
+      "Compact 72 by 27-inch footprint for a non-folding machine",
+      "350 lb maximum user weight, the same as the Performance Series",
+      "25-year frame and 15-year motor cover on TRUE’s residential terms",
+    ],
+    cons: [
+      "A 54-inch running surface is short for running; it suits walking and jogging",
+      "No heart-rate chest strap in the box, and no touchscreen option",
+      "Parts cover is five years and labour one year",
+      "Still about $3,500, where many brands sell a 60-inch deck for less",
+    ],
+    bottomLine: "A sensible TRUE for walkers and joggers short on floor space; anyone who runs at pace should step up to a 60-inch Performance model.",
+    description: "The Z500 is TRUE’s compact home treadmill. TRUE’s product page and 2026 spec sheet, and The Fitness Outlet’s listing, agree on a 20 by 54-inch running surface, a 3 HP motor, 0.5 to 12 mph, 0 to 15% incline, a 350 lb maximum user weight, a 249 lb machine weight and a 72 by 27 by 57-inch footprint. It uses TRUE’s FITX deck cushioning and an 8.5-inch LCD console with contact heart-rate grips; TRUE says a Polar chest strap is not included and recommends one. TRUE footnotes its horsepower figures as laboratory dynamometer ratings rather than working horsepower at home. Both sources give the same residential warranty: 25 years on the frame, 15 on the motor, five on parts, five on the console and one year of labour. TRUE listed it at $3,499 on 20 October 2026; The Fitness Outlet showed a sale price of $3,199 the same day.",
+  },
+  {
+    id: "true-performance-1000",
+    name: "TRUE Performance 1000",
+    category: "Entry Performance Series Treadmill",
+    badge: "Entry 60-Inch Deck",
+    amazonUrl: "https://www.amazon.com/s?k=non+folding+treadmill+22+inch+deck&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
+    reviewUrl: null,
+    priceRange: "$5,199-$6,199 at TRUE on 20 Oct 2026, by console",
+    priceBounds: {"low":5199,"high":6199},
+    specs: "21 x 60 in. running surface · 3 HP (lab rating) · 0.5-12 mph · 0-15% incline · 350 lb max user · HRC with strap",
+    pros: [
+      "A 21 by 60-inch running surface on the cheapest Performance model",
+      "HRC Cruise Control and a Polar heart-rate strap included",
+      "25-year frame and 25-year motor cover",
+      "Choice of 10, 16 or 22-inch touchscreen consoles at TRUE",
+    ],
+    cons: [
+      "Sources disagree on parts cover: five years on TRUE’s page, seven on its 2025 spec sheet",
+      "Standard belt rather than the orthopedic belt on the 3000 and 8000",
+      "Price varies by more than $1,000 between sellers and consoles",
+      "Top speed of 12 mph, like most home treadmills",
+    ],
+    bottomLine: "The TRUE most home runners should start with: the full 60-inch deck and heart-rate control without paying for features they may not use.",
+    description: "The Performance 1000 is the entry model in TRUE’s Performance Series. TRUE’s product page, its 2025 spec sheet and The Fitness Outlet’s listing agree on a 21 by 60-inch running surface, a 3 HP motor (a laboratory rating, TRUE says), 0.5 to 12 mph, 0 to 15% incline, a 350 lb user rating, a 297 lb machine weight and a 79 by 33.5 by 53-inch footprint. It has FITX cushioning, a standard lubricant-infused belt, 3-inch rollers, contact grips and HRC Cruise Control with a Polar strap included. Frame and motor are covered for 25 years and labour for one. Parts cover is where the sources part company: TRUE’s current page and the retailer give five years, the 2025 spec sheet seven, and console cover is three years on the current page against five on the older sheet, which also listed different consoles. Get the terms for your configuration in writing. TRUE listed it at $5,199 to $6,199 on 20 October 2026; The Fitness Outlet showed $4,199, and we could not confirm which console that price includes.",
+  },
+  {
+    id: "true-performance-3000",
+    name: "TRUE Performance 3000",
+    category: "Mid Performance Series Treadmill",
+    badge: "Orthopedic Belt",
+    amazonUrl: "https://www.amazon.com/s?k=non+folding+treadmill+22+inch+deck&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
+    reviewUrl: null,
+    priceRange: "$5,499-$6,499 at TRUE on 20 Oct 2026, by console",
+    priceBounds: {"low":5499,"high":6499},
+    specs: "21 x 60 in. running surface · 3 HP (lab rating) · 0.5-12 mph · 0-15% incline · 350 lb max user · orthopedic belt",
+    pros: [
+      "Adds TRUE’s orthopedic belt to the Performance 1000’s frame and deck",
+      "HRC Cruise Control with a Polar strap included",
+      "Seven years of parts cover on TRUE’s page, longer than the 1000’s",
+      "25-year frame and motor cover",
+    ],
+    cons: [
+      "Same motor rating, speed, incline and user weight as the cheaper 1000",
+      "One retailer’s comparison table gives five years of parts cover, not seven",
+      "No Soft Select adjustable deck; that is reserved for the 8000",
+      "One year of labour",
+    ],
+    bottomLine: "Worth the extra $300 over the 1000 at TRUE’s prices if you want the softer belt and longer parts cover; otherwise the 1000 does the same job.",
+    description: "The Performance 3000 shares the Performance 1000’s frame. TRUE’s product page and The Fitness Outlet agree on a 21 by 60-inch running surface, a 3 HP motor, 0.5 to 12 mph, 0 to 15% incline, a 350 lb user rating, a 297 lb machine weight and a 79 by 33.5 by 53-inch footprint. The difference is the belt, which TRUE describes as a lubricant-infused orthopedic belt, used with the same FITX cushioning. HRC Cruise Control and a Polar strap come with it. TRUE gives 25 years on the frame and motor, seven on parts, three on the console and one of labour; The Fitness Outlet’s warranty section agrees on seven years of parts, though its own comparison table says five. TRUE listed it at $5,499 to $6,499 on 20 October 2026, and The Fitness Outlet at a sale price of $4,499.",
+  },
+  {
+    id: "true-performance-8000",
+    name: "TRUE Performance 8000",
+    category: "Flagship Home Treadmill With Adjustable Deck",
+    badge: "Soft Select Deck",
+    amazonUrl: "https://www.amazon.com/s?k=non+folding+treadmill+22+inch+deck&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
+    reviewUrl: null,
+    priceRange: "$5,999-$6,999 at TRUE on 20 Oct 2026, by console",
+    priceBounds: {"low":5999,"high":6999},
+    specs: "60 in. long running surface · 3 HP (lab rating) · 0.5-12 mph · 0-15% incline · 350 lb max user · Soft Select deck",
+    pros: [
+      "Soft Select lets you set the deck from softer to firmer",
+      "Ten years of parts cover, the longest in TRUE’s home range",
+      "Reversible deck and orthopedic belt",
+      "Zwift compatibility named on TRUE’s page and spec sheet",
+    ],
+    cons: [
+      "Running-surface width is 22 inches on TRUE’s page but 21 inches on its 2025 sheet and Abt’s listing",
+      "Same 3 HP rating, 12 mph top speed and 350 lb limit as the 1000",
+      "Heaviest of the four at 330 lb",
+      "One year of labour, as on every TRUE home treadmill",
+    ],
+    bottomLine: "The TRUE to buy if adjustable cushioning and the longest parts cover matter to you; it is not faster or stronger than the 1000.",
+    description: "The Performance 8000 is TRUE’s top home treadmill. TRUE’s product page, its 2025 spec sheet and The Fitness Outlet agree on a 60-inch running length, a 3 HP motor, 0.5 to 12 mph, 0 to 15% incline, a 350 lb user rating, a 330 lb machine weight and a 79 by 33.5 by 53-inch footprint. What sets it apart is Soft Select, TRUE’s adjustable deck, which TRUE says ranges from soft like a track to firm like pavement, plus a reversible deck and an orthopedic belt. HRC Cruise Control and a heart-rate strap are included. Width is the unresolved figure: TRUE’s page and the retailer say 22 inches, while the 2025 spec sheet and Abt say 21 inches, so measure or ask. TRUE, Abt and The Fitness Outlet agree on 25 years for the frame and motor, ten on parts and one of labour. TRUE listed it at $5,999 to $6,999 on 20 October 2026, The Fitness Outlet at a sale price of $4,999, and Abt at $4,600 for the base without a console, by phone or in store only.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Brands", item: "https://www.treadmillreviewsusa.com/brands/" },
+        { "@type": "ListItem", position: 3, name: "TRUE Fitness Treadmills", item: "https://www.treadmillreviewsusa.com/true-fitness-treadmills/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Who makes TRUE treadmills?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "TRUE Fitness Technology, a privately held, family-owned company in the St. Louis area of Missouri, founded by Frank Trulaske. Its site gives its headquarters as St. Charles; older releases say O’Fallon. TRUE dates its start to 1979 as TRUE Sports, bought Octane Fitness in 2020, and is not part of iFIT, Johnson Health Tech or Dyaco.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much does a TRUE treadmill cost?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "On 20 October 2026 TRUE’s store listed the Z500 at $3,499, the Performance 1000 at $5,199 to $6,199, the 3000 at $5,499 to $6,499 and the 8000 at $5,999 to $6,999, depending on console. A specialist dealer showed each model for $300 to $1,000 less the same day. Prices change, so compare quotes on the same console and delivery terms.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the difference between the TRUE Performance 1000, 3000 and 8000?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "They share a 60-inch running length, a 3 HP rating, 12 mph, 15% incline and a 350 lb limit. The 3000 adds an orthopedic belt and longer parts cover. The 8000 adds the Soft Select adjustable deck, a reversible deck and ten years of parts cover. None is more powerful than the others.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What warranty comes with a TRUE treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Current home terms are 25 years on the frame, 25 years on the motor for the Performance models and 15 for the Z500, five to ten years on parts, and one year of labour. TRUE says the warranty is valid only after first assembly by an authorised dealer or technician, must be registered within 30 days, and does not transfer.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is TRUE HRC?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "HRC is TRUE’s heart-rate control, which it patented in 1996. With HRC Cruise Control you set a target heart rate and the treadmill adjusts speed and incline to hold it. The Performance models include a Polar strap, which gives far steadier readings than hand grips. Ask your doctor what target to use if you have a heart condition.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I buy a TRUE treadmill on Amazon?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "We could not confirm a new TRUE home treadmill sold on Amazon when we checked. TRUE sells through its own store and authorised dealers, and buying from one matters, because TRUE’s warranty depends on authorised first assembly and dealers carry out warranty service.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
+      datePublished: "2026-10-20",
+      dateModified: "2026-10-20",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+    ...PRODUCTS.map((product) => ({
+      "@type": "Product",
+      name: product.name,
+      description: product.description,
+      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.priceBounds
+        ? {
+            offers: {
+              "@type": "AggregateOffer",
+              priceCurrency: "USD",
+              lowPrice: product.priceBounds.low,
+              highPrice: product.priceBounds.high,
+              url: product.amazonUrl,
+            },
+          }
+        : {}),
+    })),
+    {
+      "@type": "ItemList",
+      name: title,
+      numberOfItems: 4,
+      itemListElement: PRODUCTS.map((product, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: product.name,
+        url: `https://www.treadmillreviewsusa.com/true-fitness-treadmills/#${product.id}`,
+      })),
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-10-20",
+    modifiedTime: "2026-10-20",
+    author: "Shaheer Ali Khan",
+    section: "Fitness Equipment",
+    tags: [
+      "true treadmill",
+      "true fitness treadmill",
+      "true treadmills",
+      "true performance 8000 treadmill",
+      "true z500 treadmill",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "See the Current Range", link: "#lineup" }}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-truefitnesstreadmills" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-truefitnesstreadmills)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Buyer's Guide
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated October 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          TRUE Fitness Treadmills: <span class="text-[#5AA9FF]">What to Buy, and What to Check First</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          TRUE is a family-owned Missouri maker better known in gyms than in living rooms. This guide covers who TRUE is, the four home treadmills it sells now, what its deck and heart-rate features do, how the warranty really reads, and how a TRUE compares with Sole, Spirit and Landice.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            The Short Answer
+          </a>
+          <a href="#lineup" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            The Current Range
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
+          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">October 20, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="1.2k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
+          20 October 2026 we checked TRUE Fitness's commercial site (its Our Story page, cardio series
+          pages, the Apex and Stryker Slat treadmill pages and its FAQ) and its home store at
+          shop.truefitness.com (the treadmill collection, the Z500, Performance 1000, 3000 and 8000
+          product pages, its warranty, FAQ and shipping pages and the 2026 Z500 spec sheet). We
+          cross-checked the home models against The Fitness Outlet's listings, Abt's listing and the
+          2025 TRUE spec sheets Abt hosts, the Apex against Schellers' listing, and the company's
+          history against Treadmill Review Guru's TRUE coverage and 2020 trade-press reports of the
+          Octane Fitness acquisition. We searched the US Consumer Product Safety Commission's recall
+          database, which lists a 2023 TRUE console recall and a 1998 motor recall; both are covered
+          below. Figures on product cards are ones on which TRUE and at least one independent source
+          agree; where they disagree we say so rather than choose. We have not tested any TRUE
+          treadmill. Prices are what each seller showed on the day we checked (20 Oct 2026) and they
+          change. As an Amazon Associate we earn from qualifying purchases; TRUE home treadmills are
+          sold mainly through TRUE and its dealers, so an Amazon button may not find the exact model.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="max-w-3xl mx-auto px-4 pt-8">
+      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
+        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
+        <ul class="list-none m-0 p-0">
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Lowest-Priced TRUE:</span>
+            <a href="#true-z500" class="font-bold text-gray-900 no-underline hover:underline">TRUE Z500</a>
+            <a href="#true-z500" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Entry 60-Inch Deck:</span>
+            <a href="#true-performance-1000" class="font-bold text-gray-900 no-underline hover:underline">TRUE Performance 1000</a>
+            <a href="#true-performance-1000" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Orthopedic Belt:</span>
+            <a href="#true-performance-3000" class="font-bold text-gray-900 no-underline hover:underline">TRUE Performance 3000</a>
+            <a href="#true-performance-3000" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Soft Select Deck:</span>
+            <a href="#true-performance-8000" class="font-bold text-gray-900 no-underline hover:underline">TRUE Performance 8000</a>
+            <a href="#true-performance-8000" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Are TRUE Treadmills Good? The Short Answer</a>
+          <a href="#who-makes-true" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Who Makes TRUE Treadmills?</a>
+          <a href="#lineup" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Current TRUE Home Treadmill Range</a>
+          <a href="#which-model" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Z500 or Performance 1000, 3000 or 8000: Which One?</a>
+          <a href="#deck-and-hrc" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Soft System, FITX, Soft Select and HRC Explained</a>
+          <a href="#warranty" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. The TRUE Warranty, Read Properly</a>
+          <a href="#where-to-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Dealer-Only Buying: What It Means for Price and Service</a>
+          <a href="#commercial" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. TRUE Commercial Treadmills, and Putting One at Home</a>
+          <a href="#true-vs-rivals" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. TRUE vs Sole, Spirit and Landice</a>
+          <a href="#used-true" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Buying a Used TRUE Treadmill</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          Most people who search for a TRUE treadmill have used one already, usually in a hotel, a
+          YMCA or an apartment-block gym, and want to know whether the home version is the same
+          machine. The short version is that TRUE is a commercial-first company with a small home
+          range, sold through specialist dealers and its own online store rather than big-box
+          retailers. That makes it easy to overpay, easy to buy the wrong configuration, and easy to
+          void the warranty by assembling the machine yourself. This guide sets out what TRUE sells for
+          the home today, which figures the sources agree on and which they do not, how the
+          dealer-and-installer model affects price and service, and how a TRUE stacks up against the
+          brands it shares a showroom with.
+        </p>
+
+        <div id="short-answer" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Are TRUE Treadmills Good? The Short Answer</h2>
+<p>
+            <strong>A TRUE treadmill is a well-built, heavy, non-folding machine from a company that
+            mainly makes gym equipment, and it is a good buy if you will pay dealer prices for long
+            frame and motor cover, a 60-inch deck and heart-rate control that actually steers the
+            workout.</strong> It is a poor buy if you want the most features per dollar, a folding
+            frame, or a machine you can have dropped on the drive and assemble yourself.
+          </p>
+          <p>
+            The current home range is four treadmills. The Z500 is the compact one, with a 54-inch
+            running surface, at $3,499 at TRUE on the day we checked. The Performance 1000, 3000 and
+            8000 share a 60-inch deck, a 3 HP motor rating, a 12 mph top speed, 15% incline and a
+            350 lb user limit; they differ in the belt, the cushioning, the parts warranty and the
+            price, which ran from $5,199 to $6,999 at TRUE depending on model and console. Specialist
+            retailers were selling the same models for noticeably less on the same day.
+          </p>
+          <p>
+            Three things decide whether a TRUE is right for you. First, the Performance models are not
+            more powerful than one another; the 8000 buys you a better deck, not more motor. Second,
+            TRUE's residential warranty is valid only if a TRUE dealer or authorised technician does
+            the first assembly, unless TRUE agrees otherwise in writing. Third, prices vary by more
+            than a thousand dollars between sellers for what looks like the same machine, so the
+            console and delivery terms in a quote matter more than the headline figure. The cards
+            below give the agreed figures for each model; the sections after them explain the rest.
+          </p>
+        </div>
+      </div>
+
+      <!-- Product cards -->
+      <div class="not-prose">
+        {
+          PRODUCTS.map((product, index) => (
+            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
+              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
+                  <div>
+                    <h3 class="text-white font-black text-xl leading-tight m-0">
+                      {index + 1}. {product.name}
+                    </h3>
+                    <p class="text-gray-400 text-xs">{product.category}</p>
+                  </div>
+                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                    {product.badge}
+                  </span>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center gap-2 mb-4 flex-wrap">
+                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
+                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
+                  </div>
+                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
+                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
+                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
+                      <ul class="space-y-2">
+                        {product.pros.map((pro) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
+                      <ul class="space-y-2">
+                        {product.cons.map((con) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="border-t border-gray-100 pt-4">
+                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
+                    <div class="flex flex-wrap items-center gap-3">
+                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+                        {product.amazonLabel} &rarr;
+                      </a>
+                      {product.reviewUrl && (
+                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
+                          Read our full {product.name} review &rarr;
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="who-makes-true" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Who Makes TRUE Treadmills?</h2>
+<p>
+            TRUE makes them itself. TRUE Fitness Technology is a privately held company in the St.
+            Louis area of Missouri. Its own site gives its headquarters as 1 Glazer Way, St. Charles,
+            Missouri; earlier press releases and the CPSC's 2023 recall notice place it in nearby
+            O'Fallon, and a 2020 release said its operations would remain in St. Louis. All three
+            describe the same metro area, but if you see different towns on different pages, that is
+            why.
+          </p>
+          <p>
+            TRUE's Our Story page says the company started in 1979 as TRUE Sports with its first
+            treadmill and became TRUE Fitness Technologies in 1981; a 2015 press release gave 1981 as
+            the founding year, which is the renaming date on TRUE's own timeline. The founder is Frank
+            Trulaske, still named as chief executive in 2020 coverage. TRUE calls itself the oldest
+            family-owned and operated company in the industry and the largest privately held fitness
+            equipment maker in the US. We cannot verify the second claim, but the private, family
+            ownership is consistent across its site and trade coverage.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">TRUE, Octane and the commercial business</h3>
+          <p>
+            TRUE entered the commercial market in 1988, and that is still the larger part of what it
+            does. In October 2020 it bought Octane Fitness, the elliptical maker, from Nautilus; TRUE's
+            timeline and trade reports of the deal agree on that. Octane's products and support pages
+            now sit alongside TRUE's, which is why the TRUE store's FAQ and returns pages mention Octane.
+            TRUE is not part of iFIT, Johnson Health Tech or Dyaco, the groups behind most of the
+            brands it competes with.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Where are they made?</h3>
+          <p>
+            TRUE's site describes the 1990 move to a larger manufacturing building in Missouri, but
+            the current product pages we read do not say where today's treadmills are built. The one
+            official statement we found is the CPSC's 2023 recall notice, which lists TRUE as the
+            importer of consoles manufactured in China. That covers one console, not every treadmill,
+            so treat "American company" and "American-made" as different claims, and ask the dealer
+            where the frame and electronics of the model you are quoted are made if that matters to
+            you.
+          </p>
+          <p>
+            One naming trap: TRUE Fitness is also the name of an unrelated gym chain in Singapore and
+            Malaysia. Searches for "true fitness" mix the two, so check you are on truefitness.com or
+            shop.truefitness.com before reading prices or warranty terms.
+          </p>
+        </div>
+
+        <div id="lineup" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The Current TRUE Home Treadmill Range</h2>
+<p>
+            On 20 October 2026 TRUE's home store listed four treadmills, none marked sold out. The
+            table gives the figures on which TRUE and an independent retailer agree, with the price at
+            TRUE and at The Fitness Outlet on that day.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[560px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Model</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Running surface</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Deck and belt</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Parts cover</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">At TRUE</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">At The Fitness Outlet</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Z500</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20 x 54 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">FITX, standard belt</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5 years</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$3,499</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$3,199</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Performance 1000</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">21 x 60 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">FITX, standard belt</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5 or 7 years (sources differ)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$5,199-$6,199</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$4,199</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Performance 3000</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">21 x 60 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">FITX, orthopedic belt</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">7 years</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$5,499-$6,499</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$4,499</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Performance 8000</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">60 in. long; 21 or 22 in. wide (sources differ)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Soft Select and FITX, orthopedic belt, reversible deck</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10 years</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$5,999-$6,999</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$4,999</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            All four share a 3 HP motor rating, a speed range of 0.5 to 12 mph, incline from 0 to 15%,
+            a 350 lb maximum user weight, a 120-volt, 15-amp supply, a 25-year frame warranty and one
+            year of labour. None has decline, and TRUE does not describe any of them as folding.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Consoles, and why the prices differ</h3>
+          <p>
+            The Z500 comes with an 8.5-inch LCD. The Performance models are sold with a choice of
+            console, and this is where most of the price spread comes from. TRUE's store offered the
+            T10, T16 and T22 touchscreens, at 10, 16 and 22 inches, with a $1,000 range between the
+            cheapest and dearest configuration of each model. The Fitness Outlet also listed an 8.5-inch
+            LCD option, and its lower prices may reflect that, though its pages did not say which
+            console each price includes. TRUE's 2025 spec sheets, still hosted by Abt, describe a
+            different pair of consoles, a 9-inch touchscreen and the 8.5-inch LCD, so the console
+            line-up has changed recently. Abt also listed a Performance 8000 base at $4,600 with no
+            console at all.
+          </p>
+          <p>
+            The practical point is that a TRUE price means nothing until you know the console, the
+            delivery level and who assembles it. Ask for a quote that names all three.
+          </p>
+        </div>
+
+        <div id="which-model" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Z500 or Performance 1000, 3000 or 8000: Which One?</h2>
+<p>
+            Because the three Performance models share a motor rating, speed range, incline range and
+            user limit, the choice is about the running surface, the deck feel and the warranty, not
+            about power.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The Z500 if you walk</h3>
+          <p>
+            The Z500's 54-inch running surface is its defining number. For walking, incline walking and
+            easy jogging it is enough, and its 72-inch length fits rooms where the Performance models'
+            79 inches will not. For running, it is short: most guidance puts a running deck at 60
+            inches, because a full stride needs room in front and behind. If anyone in the house runs,
+            skip it.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The Performance 1000 for most runners</h3>
+          <p>
+            The 1000 has the full 60-inch deck, HRC Cruise Control with a strap, and 25 years on the
+            frame and motor. It is the cheapest way to get everything that matters about a TRUE, and on
+            the day we checked it was $300 less than the 3000 at TRUE's prices, and $1,000 less again at
+            one specialist retailer.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The 3000 for the softer belt</h3>
+          <p>
+            The 3000 changes the belt to TRUE's orthopedic belt and lengthens parts cover to seven years
+            on TRUE's page. If your joints prefer a softer surface and you value the extra parts cover,
+            it is a modest step up.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The 8000 for an adjustable deck</h3>
+          <p>
+            The 8000 adds Soft Select, a deck you can set softer or firmer, a reversible deck and ten
+            years of parts cover. It is the one to buy if two people with different preferences share
+            the machine, or if you want the longest warranty TRUE offers at home. Do not buy it
+            expecting more speed or strength: it has the same 3 HP rating and 12 mph top speed as the
+            1000. On that rating, TRUE footnotes every horsepower figure as a laboratory dynamometer
+            result that does not reflect working horsepower at home; our
+            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
+            explains why the motor warranty is the better signal.
+          </p>
+        </div>
+
+        <div id="deck-and-hrc" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Soft System, FITX, Soft Select and HRC Explained</h2>
+<p>
+            TRUE's reputation among home buyers rests on two features it has sold for decades: a
+            cushioned deck and heart-rate control. Both have been renamed over the years, which
+            confuses anyone comparing a new TRUE with a used one.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">From Soft System to FITX</h3>
+          <p>
+            TRUE's timeline dates its patented Soft System shock absorption to 1992, and older home
+            treadmills, such as the M30 and Performance 300, were sold on it. TRUE's November 2023 blog
+            post introducing the Performance Series still described the 1000 with Soft System cushioning; the current product
+            pages and spec sheets call the cushioning the FITX, or Foot Impact Transfer, system. TRUE
+            describes FITX as neoprene shock absorbers at the front of the deck, where the foot lands,
+            with a firmer rear for push-off. Whether FITX is a rename or a redesign of Soft System, TRUE
+            does not say; the principle described is the same, a softer landing zone and a firmer
+            take-off zone.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Soft Select</h3>
+          <p>
+            Soft Select, which TRUE dates to 1998, is an adjustable version, and in the current home
+            range only the Performance 8000 has it. TRUE says one adjustment moves the deck from soft,
+            like a track, to firm, like pavement. Abt's listing and The Fitness Outlet's agree that the
+            8000 has it. A softer deck is a matter of comfort and preference; the evidence that deck
+            cushioning prevents injury is not strong, so buy it because you like how it feels, not as a
+            treatment.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">HRC and HRC Cruise Control</h3>
+          <p>
+            TRUE patented HRC, its heart-rate control, in 1996 and introduced HRC Cruise Control in
+            2007. On the current Performance models you set a target heart rate and the treadmill
+            adjusts speed and incline to hold it, and TRUE's spec sheets say you can switch it on at any
+            point in a workout. All three Performance models come with a Polar heart-rate strap; the
+            Z500 has contact grips and lists target heart-rate workouts, and works with a Polar strap,
+            but TRUE says one is not included. Use a chest strap for heart-rate
+            control. Hand grips read the pulse only while you hold them, which you cannot do while
+            running, and a heart-rate programme driven by intermittent readings will steer erratically.
+          </p>
+          <p class="text-sm text-gray-600">
+            <strong>Scope.</strong> We are a treadmill equipment site, not clinicians, and this is
+            equipment advice, not medical advice. A treadmill's heart-rate control holds the number you
+            give it; it does not know whether that number is right for you. If you have a heart
+            condition, take medication that affects heart rate, or have been given a heart-rate limit,
+            ask your doctor what target to use before relying on an automatic programme.
+          </p>
+        </div>
+
+        <div id="warranty" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. The TRUE Warranty, Read Properly</h2>
+<p>
+            TRUE's current residential terms, from its product pages and agreed by the retailers we
+            checked, are 25 years on the frame for every home treadmill, 25 years on the motor for the
+            Performance models and 15 for the Z500, parts cover of five to ten years depending on model,
+            three years on the Performance consoles and five on the Z500's, and one year of labour.
+          </p>
+          <p>
+            Two points stand out. First, these are shorter than the terms many buyers remember: older
+            TRUE home treadmills were sold with a lifetime frame and, on some models, a 30-year motor,
+            and Treadmill Review Guru's TRUE coverage and older retailer listings still show those
+            figures. One retailer's comparison table even gave the Performance 8000 a lifetime frame and
+            motor while the warranty section on the same page said 25 years. Current terms are the 25-year
+            ones. Second, the 1000's parts cover is five years on TRUE's page and seven on its 2025 spec
+            sheet, so confirm it.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The conditions that matter</h3>
+          <ul>
+            <li><strong>Professional first assembly.</strong> TRUE's warranty page says the warranty is valid only if the product is first assembled or installed by a TRUE authorised dealer or technician, unless TRUE authorises otherwise in writing. Its shipping page warns that self-assembly after curbside delivery may void the warranty.</li>
+            <li><strong>Register within 30 days.</strong> Registration is online, or by a mailed form signed by the original purchaser and sent within 30 days of receipt, with the serial number intact.</li>
+            <li><strong>Original purchaser only.</strong> The limited warranty applies only while the treadmill stays with the original purchaser. It does not transfer.</li>
+            <li><strong>Home use.</strong> TRUE's FAQ says residential units are for home use only.</li>
+            <li><strong>Maintenance.</strong> TRUE's FAQ recommends quarterly belt and deck lubrication and only its own Silax lubricant to keep the warranty in effect.</li>
+          </ul>
+          <p>
+            Service comes from the authorised dealer you bought from, which TRUE says will carry out
+            warranty work at no cost, or from TRUE directly if you bought from its store. Our
+            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
+            covers the general questions to ask any seller, and they apply with extra force here.
+          </p>
+        </div>
+
+        <div id="where-to-buy" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Dealer-Only Buying: What It Means for Price and Service</h2>
+<p>
+            TRUE sells home treadmills in two ways: through its own online store, and through
+            authorised specialist dealers found with the locator on truefitness.com. You will not find
+            the current range in general big-box stores, and we could not confirm a new TRUE home
+            treadmill sold on Amazon when we checked, so treat any Amazon search as a starting point
+            rather than a source.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Price</h3>
+          <p>
+            TRUE's own store is not the cheapest place to buy a TRUE. On 20 October 2026 The Fitness
+            Outlet, which describes itself as a long-standing TRUE dealer, showed every model below
+            TRUE's lowest price, by $300 on the Z500 and by $1,000 on each Performance model. TRUE's
+            FAQ also says it will not refund the difference if a price falls after you buy. Dealers
+            have room to negotiate, run sales, and bundle delivery or a mat; TRUE's store mostly does
+            not. Get two dealer quotes as well as TRUE's price, and compare them on the same console.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Delivery and installation</h3>
+          <p>
+            TRUE's store offers three delivery levels: collection from St. Charles by appointment,
+            curbside delivery to the end of the drive, or delivery and installation by an authorised
+            TRUE installer, which TRUE recommends and says usually takes one to two hours. It quotes about
+            two weeks for delivery after three or four days of processing, ships only to the contiguous
+            US, and notes that some products are limited in some areas by retail-partner agreements.
+            We could not see the cost of each level on its shipping page; get it in writing. Abt, a large
+            retailer, sold the 8000 base by phone or in store only and described its scheduled delivery
+            as excluding unpacking and set-up. Given the first-assembly condition in TRUE's warranty,
+            curbside delivery is a false economy unless TRUE confirms in writing that your assembly
+            is acceptable.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Service</h3>
+          <p>
+            The dealer model's real advantage is after the sale. A local dealer that installs the
+            machine is usually the one that services it, and TRUE says authorised dealers carry out
+            warranty work free. Before buying from a dealer far away for a lower price, ask who will
+            come out when the belt or a board fails, and how long that usually takes where you live.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Returns</h3>
+          <p>
+            Returns to TRUE's store must be in new condition and original packaging within 30 days of
+            the invoice, with an authorisation number, and you pay return shipping on shipped orders
+            and lose the shipping fee. A 300 lb treadmill that has been assembled is not in its
+            original packaging, so in practice the return window is narrow. Try one at a dealer
+            first.
+          </p>
+        </div>
+
+        <div id="commercial" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. TRUE Commercial Treadmills, and Putting One at Home</h2>
+<p>
+            Most TRUE treadmills are not sold for the home. In 2024 TRUE reorganised its commercial
+            cardio into four series, and on 20 October 2026 its site listed six treadmills across
+            them: the Stryker Slat Treadmill and Alpine Runner incline trainer in the top Vapor
+            Series, the Apex Treadmill in the Apex Series for heavy-use facilities, the Gravity and
+            Gravity Plus in the Gravity Series, and the compact Launch Treadmill for facilities with
+            limited space and budgets. These are the machines you meet in clubs, colleges and
+            apartment gyms, which is why TRUE appears in our guide to
+            <a href="/what-treadmills-do-gyms-use/" class="text-[#0F62FE] font-medium">what treadmills gyms use</a>.
+          </p>
+          <p>
+            The Apex shows the step up from the home range. TRUE's page and Schellers' listing agree on
+            a 22 by 60-inch running surface, a 5 HP continuous-duty AC motor, 0.5 to 17 mph, incline from
+            -3% to 18% with the decline kit, and a 500 lb user rating, with a warranty of seven years on
+            the frame, three on parts and two of labour. Schellers listed it at $10,699 to $13,899 and as
+            currently unavailable. TRUE adds that it needs a dedicated 120-volt, 20-amp circuit, which
+            most home treadmill outlets are not. TRUE also lists the Stryker Slat at 0.5 to 12.5 mph and
+            up to 25% incline with a 500 lb user rating, figures we did not see confirmed elsewhere.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Should you buy a commercial TRUE for home?</h3>
+          <p>
+            Only with the paperwork straight. Commercial machines carry commercial warranties written
+            for facilities, often with shorter terms on parts than the home range, and TRUE's FAQ says
+            only that it may offer extended warranties for commercial cardio used in a retail setting.
+            Ask the dealer, in writing, what warranty applies to a commercial TRUE in a private home.
+            Also plan the power: the Apex's 20-amp requirement means an electrician for many buyers. For
+            most home users, a Performance model gives the TRUE build at half the price, with a
+            warranty written for the way you will use it.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The 2023 console recall</h3>
+          <p>
+            In July 2023 the CPSC announced a TRUE recall of about 600 Showrunner II consoles, fitted
+            to equipment including the TC900 treadmill, because part of the wireless charging board
+            could touch internal wiring and create a fire hazard. They were sold to clubs and gyms, and
+            through specialty stores and distributors, from September 2021 to September 2022. TRUE
+            received one report of a fire and none of injury, and the remedy was a free replacement
+            console. It did not involve the current home range, but it matters if you are offered an
+            ex-club TC900.
+          </p>
+        </div>
+
+        <div id="true-vs-rivals" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. TRUE vs Sole, Spirit and Landice</h2>
+<p>
+            TRUE shares specialist showrooms with Spirit and Landice, and buyers often arrive having
+            priced a Sole online. The four take different approaches to the same buyer.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Model</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Deck</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Frame and motor cover</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Maker's price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TRUE Performance 1000</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">21 x 60 in., non-folding</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">25 years / 25 years</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$5,199-$6,199</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sole F80</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20 x 60 in., folding</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime / lifetime</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,499.99 (sale)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Spirit XT685</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22 x 60 in., non-folding</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime / lifetime</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$3,199.99</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Landice L7</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20 x 58 in., non-folding</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime parts</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">From $5,429</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Prices are each maker's own on 20 October 2026; deck and warranty figures are from each
+            maker's current page, as cross-checked in our brand guides.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">TRUE vs Sole</h3>
+          <p>
+            Sole sells direct online at a fraction of TRUE's price, and its F80 folds and carries
+            lifetime frame and motor cover. A TRUE is heavier, does not fold, comes with a heart-rate
+            strap and automatic heart-rate control, and is installed by a dealer. If price and a folding
+            frame lead, Sole wins easily. If you want dealer installation and service and will use
+            heart-rate training, the TRUE case is stronger, but it is a case for paying several times as
+            much.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">TRUE vs Spirit</h3>
+          <p>
+            Spirit is the closest like-for-like rival: dealer-sold, non-folding XT685, 22 by 60-inch
+            deck, lifetime frame, motor and deck cover with ten years on parts, at about $2,000 less than
+            the cheapest Performance 1000 at TRUE's price. On the published warranty and the deck,
+            Spirit gives more for less. The TRUE advantages are heart-rate control with a strap in the
+            box and, on the 8000, an adjustable deck. Our
+            <a href="/spirit-treadmills/" class="text-[#0F62FE] font-medium">Spirit treadmill guide</a>
+            covers the XT range in detail.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">TRUE vs Landice</h3>
+          <p>
+            Landice is the other family-owned, dealer-sold American maker, and the price is similar. The
+            L7 offers lifetime parts cover against TRUE's five to ten years, but a shorter 58-inch running
+            length, and Landice ties its labour cover to installation by a nearby dealer, much as TRUE
+            ties its warranty to authorised first assembly. Choose on deck length, console and which
+            brand has the better dealer near you; our
+            <a href="/landice-treadmills/" class="text-[#0F62FE] font-medium">Landice guide</a>
+            sets out its range.
+          </p>
+        </div>
+
+        <div id="used-true" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Buying a Used TRUE Treadmill</h2>
+<p>
+            TRUE treadmills are common on the used market, partly because so many come out of clubs,
+            hotels and apartment gyms when they refit. A well-kept used TRUE can be a good buy. It also
+            comes with no warranty at all, because TRUE's cover belongs to the original purchaser and
+            does not transfer.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Names you will see</h3>
+          <p>
+            Older home models include the M30 and M50, the Z5.0 and Z5.4, the Performance 100, 300 and
+            800, the 950, and the Excel 900, which a 2017 TRUE release said was previously known as the ES900.
+            Commercial units include 650-series machines sold as the TC650, C650 and CS650, and the
+            TC900. We could
+            not confirm that any of these is still sold new; TRUE's current commercial pages list the
+            six treadmills above. The model and serial number on the frame label let a dealer or TRUE's
+            parts and service line decode the year.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Check the recalls</h3>
+          <p>
+            Two CPSC recalls touch TRUE treadmills. The 2023 Showrunner II console recall covers the
+            TC900 commercial treadmill; look for a product number beginning C4P on the label on the rear
+            console cover and ask whether the console was replaced. The 1998 Pacific Scientific recall
+            covered motors in TRUE's 350, 450, 500, 700 and 725 series sold from July 1997 to October
+            1998, with an electrical short that posed shock and fire hazards. Those machines are now
+            nearly 30 years old, but any very old TRUE should be checked against the CPSC database before it is plugged in.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What to inspect</h3>
+          <p>
+            Walk and run on it at your normal speed for several minutes. Listen for the motor labouring
+            when you land, watch for the belt hesitating, run the incline through its full range, and
+            test the heart-rate control with a strap if that is why you want a TRUE. Check the deck
+            under the belt for wear, and ask whether a cushioned Soft System or FITX deck has had its
+            absorbers replaced. Price a technician's visit before you pay, because there is no warranty
+            to fall back on. Our
+            <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a>
+            gives the full inspection, and the power and access questions for an ex-club unit are the
+            same as for any commercial machine moved into a home.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Who makes TRUE treadmills?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                TRUE Fitness Technology, a privately held, family-owned company in the St. Louis area of Missouri, founded by Frank Trulaske. Its site gives its headquarters as St. Charles; older releases say O’Fallon. TRUE dates its start to 1979 as TRUE Sports, bought Octane Fitness in 2020, and is not part of iFIT, Johnson Health Tech or Dyaco.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How much does a TRUE treadmill cost?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                On 20 October 2026 TRUE’s store listed the Z500 at $3,499, the Performance 1000 at $5,199 to $6,199, the 3000 at $5,499 to $6,499 and the 8000 at $5,999 to $6,999, depending on console. A specialist dealer showed each model for $300 to $1,000 less the same day. Prices change, so compare quotes on the same console and delivery terms.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What is the difference between the TRUE Performance 1000, 3000 and 8000?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                They share a 60-inch running length, a 3 HP rating, 12 mph, 15% incline and a 350 lb limit. The 3000 adds an orthopedic belt and longer parts cover. The 8000 adds the Soft Select adjustable deck, a reversible deck and ten years of parts cover. None is more powerful than the others.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What warranty comes with a TRUE treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Current home terms are 25 years on the frame, 25 years on the motor for the Performance models and 15 for the Z500, five to ten years on parts, and one year of labour. TRUE says the warranty is valid only after first assembly by an authorised dealer or technician, must be registered within 30 days, and does not transfer.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What is TRUE HRC?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                HRC is TRUE’s heart-rate control, which it patented in 1996. With HRC Cruise Control you set a target heart rate and the treadmill adjusts speed and incline to hold it. The Performance models include a Polar strap, which gives far steadier readings than hand grips. Ask your doctor what target to use if you have a heart condition.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Can I buy a TRUE treadmill on Amazon?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                We could not confirm a new TRUE home treadmill sold on Amazon when we checked. TRUE sells through its own store and authorised dealers, and buying from one matters, because TRUE’s warranty depends on authorised first assembly and dealers carry out warranty service.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a TRUE Treadmill</h2>
+          <p class="text-gray-700 leading-relaxed">TRUE treadmills are solid machines sold in a way that catches buyers out. These are the errors that cost money or warranty cover.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Choosing curbside delivery and assembling it yourself</h3>
+              <p class="text-gray-700 text-sm m-0">TRUE’s warranty is valid only if an authorised dealer or technician does the first assembly, unless TRUE agrees otherwise in writing, and its shipping page warns that self-assembly may void it. Saving the installation fee can cost the whole warranty. Pay for delivery and installation, or get TRUE’s written authorisation before you open the box.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Paying for the 8000 expecting a stronger motor</h3>
+              <p class="text-gray-700 text-sm m-0">The Performance 1000, 3000 and 8000 share a 3 HP rating, a 12 mph top speed, 15% incline and a 350 lb limit. The extra money buys the deck, the belt and longer parts cover. If you want power or speed, none of them changes; if you want the deck feel, walk on each at a dealer before choosing.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing prices without naming the console</h3>
+              <p class="text-gray-700 text-sm m-0">Each Performance model spans $1,000 at TRUE depending on console, some retailers list an LCD option TRUE’s store does not, and Abt sold an 8000 base with no console at all. A cheaper quote may simply be a smaller screen. Ask every seller for the console, delivery level and installer in writing, then compare like with like.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a used TRUE as if the warranty came with it</h3>
+              <p class="text-gray-700 text-sm m-0">TRUE’s warranty belongs to the original purchaser and does not transfer, so a two-year-old TRUE has no cover however long the frame term was. Ask for the model and serial number, check it against the CPSC recalls, run it at your own speed, and price a technician’s visit before agreeing a figure.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Brand Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/landice-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Landice Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The other family-owned, dealer-sold American maker, with lifetime parts cover.</p>
+            </a>
+            <a href="/spirit-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Spirit Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Dealer-sold XT treadmills with long warranties at lower prices than TRUE.</p>
+            </a>
+            <a href="/treadmill-warranty-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Buying Advice</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Warranty Guide</p>
+              <p class="text-sm text-gray-500 leading-relaxed">What frame, motor, parts and labour terms really cover, and what to ask.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">A TRUE treadmill is a heavy, dealer-installed machine from a
+          commercial maker, and the Performance 1000 is the one most home runners should start
+          with.</strong> The Z500 suits walkers short of space, the 3000 adds a softer belt, and the
+          8000 adds an adjustable deck and the longest parts cover, but none is faster or stronger than
+          the 1000.
+          </p>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            Buy from an authorised dealer or TRUE's store, pay for installation so the warranty stands,
+          and compare quotes on the same console, because the same model varied by $1,000 between
+          sellers on the day we checked. If you are cross-shopping, our
+          <a href="/spirit-treadmills/" class="text-[#5AA9FF] font-bold no-underline">Spirit guide</a>
+          and <a href="/landice-treadmills/" class="text-[#5AA9FF] font-bold no-underline">Landice guide</a>
+          show what the same money buys elsewhere.
+          </p>
+        </div>
+
+        <!-- Meet the Author -->
+        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
+          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
+          <div>
+            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
+            <p class="text-sm font-bold text-gray-900 m-0">
+              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
+              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+            </p>
+            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
+              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
+              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
+              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
+              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
+              running ergonomics, noise and long-term durability. Every guide says what was checked and
+              when, and says plainly when a product has not been tested hands-on.
+              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
+              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </article>
+</Layout>

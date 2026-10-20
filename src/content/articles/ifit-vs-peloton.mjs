@@ -127,7 +127,8 @@ export default {
           <p>
             We deliberately avoid specifications for the Tread on this page. Peloton has revised
             and expanded its treadmill line over time, and the right place for current details is
-            the manufacturer. The comparison here is about the ecosystem, not the deck size.
+            the manufacturer. The comparison here is about the ecosystem, not the deck size. For
+            the current models, delivered prices and recall history, see our <a href="/peloton-tread/" class="text-[#0F62FE] font-medium">Peloton treadmill buyer’s guide</a>.
           </p>`,
     },
     {
