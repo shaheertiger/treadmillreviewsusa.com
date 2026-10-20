@@ -225,7 +225,9 @@ export default {
             That filter removed more machines than it kept. <strong>Horizon</strong>'s five current
             treadmills list 0 to 15% at most, with no decline. <strong>Bowflex</strong>'s current T6,
             T9 and T16 list incline up to 15% and no decline; the older Bowflex T10 and T22, which
-            reviews describe with -5% decline, were not on Bowflex's site.
+            reviews describe with -5% decline, were not on Bowflex's site (our
+            <a href="/bowflex-treadmill-10/" class="text-[#0F62FE] font-medium">Treadmill 10 review</a>
+            covers buying one used).
             <strong>Peloton</strong>'s current Tread Vision and Tread+ Vision specifications list
             incline from 0% and no decline. <strong>Sole</strong>'s TT8 lists a -6 to 15 grade range
             but was sold out on Sole's store; Sole's own blog also describes decline on the F85, but

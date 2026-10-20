@@ -1211,6 +1211,13 @@ export const SECTIONS: Section[] = [
             badge: 'Bowflex',
             url: '/bowflex-t16-treadmill/',
           },
+          {
+            title: 'Bowflex Treadmill 10',
+            description:
+              'Discontinued. The checked specs, a warranty that does not transfer, what to test on a used one, and the T9 or T16 instead.',
+            badge: 'Discontinued',
+            url: '/bowflex-treadmill-10/',
+          },
         ],
       },
       {
