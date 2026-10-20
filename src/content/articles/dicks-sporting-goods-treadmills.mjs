@@ -269,7 +269,7 @@ export default {
       heading: 'How It Compares With Other Places to Buy',
       html: `          <p>
             A sporting goods chain sits in the middle of the market: more hands-on than an online
-            marketplace, less specialist than a dedicated fitness store. Scheels works similarly in the Midwest and West; see <a href="/scheels-treadmills/" class="text-[#0F62FE] font-medium">buying a treadmill at Scheels</a>.
+            marketplace, less specialist than a dedicated fitness store. Scheels works similarly in the Midwest and West; see <a href="/scheels-treadmills/" class="text-[#0F62FE] font-medium">buying a treadmill at Scheels</a>. In Texas and the Southeast, Academy fills the same role; see <a href="/academy-sports-treadmills/" class="text-[#0F62FE] font-medium">buying a treadmill at Academy Sports</a>.
           </p>
           <p>
             <strong>Specialty fitness stores</strong> usually carry a wider and higher-end range,

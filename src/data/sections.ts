@@ -747,6 +747,13 @@ export const SECTIONS: Section[] = [
             badge: 'Scheels',
             url: '/scheels-treadmills/',
           },
+          {
+            title: 'Academy Sports Treadmills',
+            description:
+              'Brands and prices Academy lists, bulk delivery tiers, the 60-day returns and its beat-by-5% price match.',
+            badge: 'Academy',
+            url: '/academy-sports-treadmills/',
+          },
         ],
       },
     ],
@@ -1842,6 +1849,13 @@ export const SECTIONS: Section[] = [
             url: '/treadmill-safety-tips/',
           },
           {
+            title: 'Kids Treadmill Guide',
+            description:
+              'Age limits by brand, CDC and AAP activity advice, child injury data, toy treadmills and a home checklist.',
+            badge: 'Kids',
+            url: '/kids-treadmill/',
+          },
+          {
             title: 'Treadmill Warranty Explained',
             description:
               'Frame, motor, parts and labor terms, what "lifetime" means, what voids cover, and how to claim.',
@@ -2604,6 +2618,13 @@ export const SECTIONS: Section[] = [
               'A first four weeks, walking-first then walk-run, with the progression rules and the beginner errors to avoid.',
             badge: 'Beginner',
             url: '/treadmill-workout-for-beginners/',
+          },
+          {
+            title: 'Treadmill Workout Plan',
+            description:
+              'A 12-week plan in three tracks — walker, beginner runner, runner — with week-by-week speed, incline, minutes and RPE, deloads and strength days.',
+            badge: 'Plan',
+            url: '/treadmill-workout-plan/',
           },
           {
             title: 'How to Use a Manual Treadmill',
