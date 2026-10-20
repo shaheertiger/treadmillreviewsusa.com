@@ -91,7 +91,8 @@ export default {
           <p>
             <strong>Stair climber.</strong> In its gym form, a revolving staircase; at home, also
             smaller pedal steppers. A hard, low-impact, glute- and quad-heavy workout. Tall, heavy
-            and expensive in its full-size form.
+            and expensive in its full-size form. Smaller pedal steppers, including the time limits on
+            hydraulic models, are covered in our <a href="/stepper-buying-guide/" class="text-[#0F62FE] font-medium">stepper buying guide</a>.
           </p>`,
     },
     {

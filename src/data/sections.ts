@@ -3034,6 +3034,13 @@ export const SECTIONS: Section[] = [
             url: '/best-cardio-machines-for-home/',
           },
           {
+            title: 'Stepper Buying Guide',
+            description:
+              'Mini, twist, handlebar and full-size steppers: what each costs and suits, hydraulic time limits, calories and recalls.',
+            badge: 'Steppers',
+            url: '/stepper-buying-guide/',
+          },
+          {
             title: 'Best Elliptical Machines for Home',
             description:
               'Stride length, drive position, ceiling height and noise, with picks across price points.',

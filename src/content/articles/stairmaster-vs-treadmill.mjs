@@ -77,7 +77,7 @@ export default {
           <p>
             <strong>Mini steppers</strong> are small, often under-desk or floor units with a short
             stroke. They are closer to fidgeting with resistance than to climbing stairs and are not
-            a real alternative to a treadmill.
+            a real alternative to a treadmill. Our <a href="/stepper-buying-guide/" class="text-[#0F62FE] font-medium">stepper buying guide</a> compares mini, twist and full-size steppers.
           </p>`,
     },
     {
