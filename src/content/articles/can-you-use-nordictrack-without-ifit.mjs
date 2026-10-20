@@ -399,7 +399,7 @@ export default {
     },
     {
       q: 'Can I install other apps on the NordicTrack screen?',
-      a: 'Not officially. In late 2021 a software update blocked the hidden privileged mode that some owners had used to open other apps, and the company said the block was for security and safety. Unofficial workarounds circulate online, but they are undocumented and can be undone by updates. If you want your own apps on a screen, use a tablet.',
+      a: 'Not officially. In late 2021 a software update blocked the hidden privileged mode that some owners had used to open other apps, and the company said the block was for security and safety. Unofficial workarounds circulate online, but they are undocumented and can be undone by updates. Separately, iFIT Pro now runs a short list of streaming apps, including Netflix and Prime Video, inside iFIT on touchscreen machines; our guide to watching Netflix on a NordicTrack covers which ones. For anything else, use a tablet.',
     },
     {
       q: 'Is a used NordicTrack worth buying if I do not want iFIT?',
