@@ -1283,6 +1283,13 @@ export const SECTIONS: Section[] = [
         name: 'Commercial & alternatives',
         pages: [
           {
+            title: 'Aviron Treadmills',
+            description:
+              'Justice, Podium and Summit: prices, what works without the membership, and the conditions on the 20-year warranty.',
+            badge: 'Aviron',
+            url: '/aviron-treadmill/',
+          },
+          {
             title: 'Life Fitness T3',
             description: 'Genuine commercial-grade AC motor durability for the home.',
             badge: 'Review',

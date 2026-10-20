@@ -149,7 +149,9 @@ export default {
             settle one model's numbers to our standard on the day. We did not shortlist Echelon or
             ProForm rowers this time. Ergatta and Aviron make well-reviewed connected rowers; we kept
             this page to rowers whose Amazon listings we could confirm, and did not check theirs. Those
-            are judgements about what we could verify, not about the machines.
+            are judgements about what we could verify, not about the machines. Aviron now makes
+            treadmills too, and one membership covers both; see our
+            <a href="/aviron-treadmill/" class="text-[#0F62FE] font-medium">Aviron treadmill review</a>.
           </p>`,
     },
     {
