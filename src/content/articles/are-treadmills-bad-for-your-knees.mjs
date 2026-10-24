@@ -46,7 +46,7 @@ export default {
             <strong>Is running on a treadmill bad for you?</strong> Also no, for most people. It
             is a convenient, controllable way to get the cardiovascular benefits of walking or
             running. The things that make it go wrong — increasing mileage too quickly, never
-            varying speed or incline, running in worn-out shoes, holding the handrails — are
+            varying speed or incline, running in <a href="/how-often-to-replace-running-shoes/" class="text-[#0F62FE] font-medium" data-autolink>worn-out shoes</a>, holding the handrails — are
             training habits rather than properties of the machine. The wider question is answered in
             <a href="/is-running-on-a-treadmill-bad-for-you/" class="text-[#0F62FE] font-medium">is running on a treadmill bad for you</a>.
           </p>
@@ -151,7 +151,7 @@ export default {
             is a common recommendation for runners with knee complaints, though any change in
             form should be gradual. Our guide on
             <a href="/how-to-use-a-treadmill/" class="text-[#0F62FE] font-medium">how to use a treadmill</a>
-            covers running form on a belt in more detail.
+            covers <a href="/treadmill-running-form/" class="text-[#0F62FE] font-medium" data-autolink>running form</a> on a belt in more detail.
           </p>
           <p>
             <strong>Holding the handrails.</strong> Gripping the rails, particularly on a steep
@@ -184,7 +184,7 @@ export default {
             <strong>Walking or running downhill</strong>, which some treadmills offer as a decline
             setting, is harder on the knees than it looks. Going downhill requires the thigh
             muscles to work as brakes while lengthening, which loads the front of the knee more
-            and is a well-known cause of muscle soreness. Decline training has its uses for
+            and is a well-known cause of muscle soreness. <a href="/what-is-treadmill-decline-good-for/" class="text-[#0F62FE] font-medium" data-autolink>Decline training</a> has its uses for
             runners preparing for hilly races, but it is not a gentle option. If you are new to
             training or have any knee discomfort, it is reasonable to leave decline alone.
           </p>
@@ -251,7 +251,7 @@ export default {
           </p>
           <p>
             <strong>Warm up and cool down.</strong> A few minutes of easy walking before and after
-            costs nothing and is built into the treadmill routine anyway.
+            costs nothing and is built into the <a href="/treadmill-workout-plan/" class="text-[#0F62FE] font-medium" data-autolink>treadmill routine</a> anyway.
           </p>
           <p>
             <strong>Strengthen the muscles around the knee.</strong> Strength work for the thighs
@@ -428,6 +428,12 @@ export default {
       title: 'Treadmill Workouts',
       blurb: 'How to vary sessions across a week so no single stride repeats forever.',
       url: '/treadmill-workouts/',
+    },
+    {
+      kicker: 'AlterG',
+      title: 'Anti-Gravity Treadmills',
+      blurb: 'What AlterG and other anti-gravity treadmills are, who uses them, and what a session costs.',
+      url: '/anti-gravity-treadmill/',
     },
   ],
   bottomLine: [

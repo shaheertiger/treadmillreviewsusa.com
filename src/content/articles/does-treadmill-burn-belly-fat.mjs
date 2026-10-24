@@ -492,6 +492,12 @@ export default {
       blurb: 'How to judge effort, and why the console zone labels mislead.',
       url: '/treadmill-heart-rate-zones/',
     },
+    {
+      kicker: 'Settings',
+      title: 'Best Treadmill Settings for Fat Loss',
+      blurb: 'Speed and incline starting points by fitness level, the calorie arithmetic, and how to progress.',
+      url: '/best-treadmill-settings-for-fat-loss/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">A treadmill cannot target belly or thigh fat</strong> — no

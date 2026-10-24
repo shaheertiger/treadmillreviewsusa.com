@@ -92,7 +92,7 @@ export default {
             describes nearly 600 locations on six continents, most run by franchisees. In October 2025
             Gold’s Gym appointed IMG Licensing as its exclusive global licensing agency; the
             announcement named supplements and nutrition, footwear, travel goods, sporting and leisure
-            goods and apparel as the categories, and did not mention home cardio equipment.
+            goods and apparel as the categories, and did not mention <a href="/home-cardio-equipment-guide/" class="text-[#0F62FE] font-medium" data-autolink>home cardio equipment</a>.
             Gold’s Gym’s own website, when we checked, covered gyms, franchising and an online shop
             for apparel and nutrition, with no home treadmills.
           </p>
@@ -218,7 +218,7 @@ export default {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Apps other than iFIT</h3>
           <p>
-            A treadmill without Bluetooth can still be used with Zwift or a running app if you add a
+            A treadmill without Bluetooth can still be used with <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium" data-autolink>Zwift</a> or a running app if you add a
             foot pod, which measures your pace from your shoe rather than from the treadmill. Our
             <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium">foot pod guide</a>
             explains the set-up and its limits.
@@ -276,7 +276,7 @@ export default {
       id: 'strengths-and-weaknesses',
       heading: 'What Gold’s Gym Treadmills Did Well, and Less Well',
       html: `          <p>
-            Judged as what they were — mass-market budget treadmills from one of the largest home-fitness
+            Judged as what they were — mass-market <a href="/best-budget-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>budget treadmills</a> from one of the largest home-fitness
             maker of the period — the Gold’s Gym machines had clear strengths and equally clear
             limits. These points come from the specifications above and from what more than one
             independent reviewer said; we have not used one.
@@ -369,7 +369,7 @@ export default {
             lists machines whose consoles do everything on their own.
           </p>
           <p>
-            <strong>For a tighter budget.</strong> Walking pads now take much of the price point the
+            <strong>For a tighter budget.</strong> <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>Walking pads</a> now take much of the price point the
             430i used to occupy; our
             <a href="/best-treadmills-under-300/" class="text-[#0F62FE] font-medium">under-$300 roundup</a>
             covers what that money buys and what it does not.

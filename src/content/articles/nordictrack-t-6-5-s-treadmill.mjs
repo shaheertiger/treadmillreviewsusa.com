@@ -161,7 +161,7 @@ export default {
             The vertical fold is one of the T 6.5 S's better features. The deck lifts with
             assistance and locks upright, which reclaims real floor area in a shared room and makes
             it possible to clean underneath — the latter matters more than it sounds, because dust
-            under a deck contributes directly to motor compartment heat.
+            under a deck contributes directly to <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium" data-autolink>motor compartment</a> heat.
           </p>
           <p>
             Upright, the machine is tall rather than small, which is the thing people get wrong
@@ -251,7 +251,7 @@ export default {
             covers the most common way people damage one.
           </p>
           <p>
-            Belt tension and tracking come next, and they are distinct faults. A belt that hesitates
+            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium" data-autolink>Belt tension</a> and tracking come next, and they are distinct faults. A belt that hesitates
             under a footfall is slipping; one that drifts toward a rail is mistracking, and the
             adjustments are different.
             <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">Our diagnosis order</a>
@@ -335,6 +335,12 @@ export default {
       title: 'Best Treadmills Under $800',
       blurb: 'The first tier worth buying, and what crosses a threshold at this price.',
       url: '/best-treadmills-under-800/',
+    },
+    {
+      kicker: 'Older model',
+      title: 'NordicTrack EXP 7i',
+      blurb: 'An older model no longer in the US range: what it was, buying one used, and the current equivalents.',
+      url: '/nordictrack-exp-7i-treadmill/',
     },
   ],
   bottomLine: [

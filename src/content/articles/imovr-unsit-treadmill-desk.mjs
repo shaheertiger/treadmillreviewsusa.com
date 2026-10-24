@@ -77,7 +77,7 @@ export default {
             <strong>The Unsit treadmill desk bundle is the most heavily built under-desk walking set we
             cover, and it is worth its price only if you will walk at your desk for hours almost every
             working day.</strong> The Unsit's 30-inch-wide belt is its defining feature: at desk pace,
-            with your eyes on a screen, your feet drift, and on a 16-inch walking pad that drift puts
+            with your eyes on a screen, your feet drift, and on a 16-inch <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> that drift puts
             you on the edge of the belt. On the Unsit it mostly does not matter. Add a steel frame,
             weight sensors that stop the belt when you step off, and a step-up of five inches, and it
             is the right shape of machine for long, slow office walking.
@@ -303,7 +303,7 @@ export default {
             <li><strong>Where:</strong> the lower 48 states, by freight from InMovement's warehouse in Indianapolis. Canada, Alaska, Hawaii and other destinations need a custom quote.</li>
             <li><strong>Kerbside delivery (free):</strong> the carrier delivers the pallet onto your property and is not obliged to bring it inside.</li>
             <li><strong>Inside delivery ($249):</strong> the carrier brings it to a room of your choice; in office buildings, only past the first threshold.</li>
-            <li><strong>White-glove service ($499):</strong> a local treadmill technician installs it where you want it and removes the packaging.</li>
+            <li><strong>White-glove service ($499):</strong> a local <a href="/treadmill-repair-near-me/" class="text-[#0F62FE] font-medium" data-autolink>treadmill technician</a> installs it where you want it and removes the packaging.</li>
             <li><strong>Timing:</strong> two to three business days to process and two to ten in transit, with iMovR noting that lead times are highly variable.</li>
           </ul>
           <p>

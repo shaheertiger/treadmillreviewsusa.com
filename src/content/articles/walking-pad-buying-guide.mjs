@@ -468,6 +468,12 @@ export default {
       blurb: 'Desk height, speed and building the habit.',
       url: '/treadmill-desk-guide/',
     },
+    {
+      kicker: 'Walking pads',
+      title: 'Wooden Walking Pads',
+      blurb: 'Wood-look pads, solid-wood manual desk treadmills and wooden slat machines: what wood changes, US prices, warranties and care.',
+      url: '/wooden-walking-pad/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Check belt length, continuous motor rating and weight capacity

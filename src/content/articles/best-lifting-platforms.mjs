@@ -131,7 +131,7 @@ export default {
             We searched the US Consumer Product Safety Commission's recall database for every
             brand and retailer on this page. We found no recall or warning covering any platform,
             pad or mat listed. The results for these names were unrelated products, including a
-            2015 recall of a Valor Fitness weight bench and Tractor Supply recalls of non-fitness
+            2015 recall of a Valor Fitness <a href="/best-weight-benches/" class="text-[#0F62FE] font-medium" data-autolink>weight bench</a> and Tractor Supply recalls of non-fitness
             goods.
           </p>`,
     },
@@ -272,7 +272,7 @@ export default {
             dropped and how.
           </p>
           <ul>
-            <li><strong>Drop bumper plates only.</strong> Rubber bumper plates are designed to be
+            <li><strong>Drop bumper plates only.</strong> Rubber <a href="/best-bumper-plates/" class="text-[#0F62FE] font-medium" data-autolink>bumper plates</a> are designed to be
             dropped; cast-iron and thin steel plates are not, and they damage platforms, floors
             and themselves. If you lift with iron plates, lower the bar under control.</li>
             <li><strong>Never drop an empty or lightly loaded bar.</strong> With small plates or
@@ -330,7 +330,7 @@ export default {
           </p>
           <p>
             If the answer is that heavy barbell work upstairs is not sensible, that is a useful
-            answer: dumbbells, kettlebells and controlled tempo work suit upper floors far better
+            answer: dumbbells, <a href="/best-adjustable-kettlebells/" class="text-[#0F62FE] font-medium" data-autolink>kettlebells</a> and controlled tempo work suit upper floors far better
             than heavy deadlifts.
           </p>`,
     },
@@ -338,7 +338,7 @@ export default {
       id: 'size-and-setup',
       heading: 'Size, Placement and Care',
       html: `          <p>
-            <strong>Size it to the bar and the lift.</strong> A standard Olympic barbell is a
+            <strong>Size it to the bar and the lift.</strong> A standard <a href="/best-barbells/" class="text-[#0F62FE] font-medium" data-autolink>Olympic barbell</a> is a
             little over 7 ft long, which is why platforms are usually around 8 ft in the direction
             of the bar. Width, front to back, depends on the lift: 4 ft is enough to deadlift,
             while Olympic lifts need more room to step forward and back.

@@ -352,7 +352,7 @@ export default {
       id: 'desk-walking',
       heading: 'What About Under-Desk Walking?',
       html: `          <p>
-            Walking pads and under-desk treadmills have made all-day walking popular, and the
+            <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>Walking pads</a> and under-desk treadmills have made all-day walking popular, and the
             question of how long to walk on one is slightly different.
           </p>
           <p>

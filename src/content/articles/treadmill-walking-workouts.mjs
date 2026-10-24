@@ -94,7 +94,7 @@ export default {
             the following months.
           </p>
           <p>
-            If you use a heart rate monitor, easy walking usually lands in the lower zones and the
+            If you use a <a href="/best-heart-rate-monitors-for-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>heart rate monitor</a>, easy walking usually lands in the lower zones and the
             hard blocks in the moderate-to-hard range; our
             <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">heart rate zones guide</a>
             explains how to set those up. It is not necessary, though. The talk test is free and
@@ -105,7 +105,7 @@ export default {
       id: 'the-sessions',
       heading: 'The Six Sessions',
       html: `          <p>
-            Each session below includes a warm-up and cool-down and a typical range for speed and
+            Each session below includes a <a href="/treadmill-warm-up-and-cool-down/" class="text-[#0F62FE] font-medium" data-autolink>warm-up and cool-down</a> and a typical range for speed and
             incline. Treat the ranges as a starting point, and adjust them so the effort matches
             the description rather than the number. If a session calls for a grade your treadmill
             cannot reach, use the steepest it offers and slow the speed slightly less.
@@ -418,14 +418,14 @@ export default {
       id: 'walking-pads',
       heading: 'If Your Treadmill Has No Incline',
       html: `          <p>
-            Walking pads and many under-desk treadmills have no incline at all, and some compact
+            Walking pads and many <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>under-desk treadmills</a> have no incline at all, and some compact
             models top out at a modest speed. Several of the sessions above still work with
             adjustments.
           </p>
           <p>
             The steady brisk walk and the long easy walk work unchanged, at 0%. Speed-walk
             intervals work well, as long as the machine reaches your fast pace — check the top
-            speed, as some walking pads are limited to around 4 mph. Incline intervals, the
+            speed, as some <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pads</a> are limited to around 4 mph. Incline intervals, the
             pyramid and the hill climb need a grade; substitute extra speed-walk sessions, or build
             those days around time and distance instead.
           </p>

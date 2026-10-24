@@ -71,7 +71,7 @@ export default {
             goes through it in detail.
           </p>
           <p>
-            <strong>Wear proper shoes.</strong> Running or walking shoes with a secure fit. Not
+            <strong>Wear proper shoes.</strong> Running or <a href="/best-walking-shoes-for-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>walking shoes</a> with a secure fit. Not
             socks, not bare feet, not slides. A loose shoelace caught in the gap between the belt
             and the side rail is a genuine hazard, so tie them properly.
           </p>
@@ -299,7 +299,7 @@ export default {
           </p>
           <p>
             <strong>Shorten your stride and quicken your steps.</strong> The most common
-            treadmill form fault is overstriding: reaching out in front with a long step and
+            treadmill form fault is <a href="/treadmill-running-form/" class="text-[#0F62FE] font-medium" data-autolink>overstriding</a>: reaching out in front with a long step and
             landing on a straight leg with the heel well ahead of your body. On a belt this is
             particularly awkward, because your foot lands on a surface already moving toward you.
             Aim for slightly shorter, quicker steps, with your foot landing roughly under your
@@ -325,7 +325,7 @@ export default {
           <p>
             <strong>Consider a small incline.</strong> Because there is no air resistance indoors,
             running on a level belt is slightly easier than running at the same speed outside. A
-            common rule of thumb is to set a 1% incline to roughly compensate at typical running
+            common rule of thumb is to set a <a href="/treadmill-vs-running-outside/" class="text-[#0F62FE] font-medium" data-autolink>1% incline</a> to roughly compensate at typical running
             speeds. It is an approximation rather than a law, and it matters less than simply
             being consistent. Our
             <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">pace and speed chart</a>
@@ -389,7 +389,7 @@ export default {
             the cool-down doubles as the safe stopping sequence described above.
           </p>
           <p>
-            Many consoles build warm-up and cool-down phases into their programmes
+            Many consoles build <a href="/treadmill-warm-up-and-cool-down/" class="text-[#0F62FE] font-medium" data-autolink>warm-up and cool-down</a> phases into their programmes
             automatically. That is fine, though the default durations are often short; there is
             nothing wrong with extending them yourself.
           </p>`,
@@ -490,6 +490,12 @@ export default {
       title: 'Best Treadmills for Beginners',
       blurb: 'Simple consoles, low starting speeds and sturdy frames.',
       url: '/best-treadmills-for-beginners/',
+    },
+    {
+      kicker: 'Explainer',
+      title: 'Types of Treadmills',
+      blurb: 'Every kind of treadmill explained, from walking pads to incline trainers, with who each one suits.',
+      url: '/types-of-treadmills/',
     },
   ],
   bottomLine: [

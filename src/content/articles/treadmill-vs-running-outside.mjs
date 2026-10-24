@@ -47,7 +47,7 @@ export default {
           <p>
             <strong>Is it worse training?</strong> Not in any general sense. Treadmills are better
             for some things — precise pacing, controlled hill work, running in the dark or in bad
-            weather — and worse for others, such as downhill running, turning and getting used to
+            weather — and worse for others, such as <a href="/what-is-treadmill-decline-good-for/" class="text-[#0F62FE] font-medium" data-autolink>downhill running</a>, turning and getting used to
             race-day conditions. Most runners who use both get the best of each.
           </p>
           <p>
@@ -149,7 +149,7 @@ export default {
       id: 'cushioning-impact',
       heading: 'Cushioning and Impact',
       html: `          <p>
-            Most home and commercial treadmills have some form of deck suspension, and a
+            Most home and <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>commercial treadmills</a> have some form of deck suspension, and a
             cushioned deck on a frame gives more than asphalt and much more than concrete. Many
             runners find treadmill running gentler on the legs as a result, and it is one reason
             people returning from a break, or carrying extra weight, often start indoors.
@@ -163,7 +163,7 @@ export default {
             a pothole as a risk.
           </p>
           <p>
-            Cushioning varies a great deal between machines. Budget treadmills often have firm,
+            Cushioning varies a great deal between machines. <a href="/best-budget-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Budget treadmills</a> often have firm,
             thin decks with little suspension; better ones have tuned elastomers or adjustable
             cushioning. If impact is a concern for you, the deck and suspension matter more than
             any other spec. Outdoors, the equivalent choice is surface — trails, grass and
@@ -179,7 +179,7 @@ export default {
             small for most runners once they are used to the treadmill.
           </p>
           <p>
-            The adjustment period is the key phrase. Runners new to treadmills commonly take a
+            The adjustment period is the key phrase. Runners <a href="/how-to-use-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>new to treadmills</a> commonly take a
             shorter, quicker stride for the first few sessions, often because they are wary of
             the front of the deck or the edge of the belt, and many hold the handrails or look
             down at the console. With a few sessions of familiarisation, most settle into
@@ -194,7 +194,7 @@ export default {
           <p>
             Looking straight ahead rather than down, keeping off the handrails and running near
             the middle of the deck all help your treadmill stride look like your outdoor one.
-            Holding the rails in particular changes posture and reduces the effort of the session
+            <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Holding the rails</a> in particular changes posture and reduces the effort of the session
             considerably, which skews any comparison.
           </p>`,
     },

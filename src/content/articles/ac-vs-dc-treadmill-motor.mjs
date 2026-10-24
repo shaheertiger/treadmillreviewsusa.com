@@ -133,7 +133,7 @@ export default {
             <strong>They are cheaper and lighter.</strong> The motor and its control board cost
             considerably less to make, and the whole drivetrain is smaller. That is what makes a
             folding machine under a couple of hundred pounds possible at all, and it is a large part
-            of why home treadmills cost a fraction of a gym unit.
+            of why home <a href="/how-much-does-a-treadmill-cost/" class="text-[#0F62FE] font-medium" data-autolink>treadmills cost</a> a fraction of a gym unit.
           </p>
           <p>
             <strong>They suit the duty cycle.</strong> One or two people training for an hour or
@@ -242,7 +242,7 @@ export default {
       html: `          <p>
             The everyday maintenance of a treadmill is the same whatever the motor type: keep the
             belt lubricated as the manual specifies, keep the belt correctly tensioned, and keep
-            dust and carpet fibre out of the motor compartment. Friction and heat kill motors far
+            dust and carpet fibre out of the <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium" data-autolink>motor compartment</a>. Friction and heat kill motors far
             more often than age does, and a dry belt-deck interface makes any motor draw more
             current than it should. Our
             <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a>
@@ -366,7 +366,7 @@ export default {
           <p>
             For everyone else — one or two people walking, jogging and running an hour or less a
             day — a well-rated DC treadmill is not a compromise. It is the motor designed for that
-            job, and the money saved is better spent on deck length, cushioning or a longer
+            job, and the money saved is better spent on <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium" data-autolink>deck length</a>, cushioning or a longer
             warranty.
           </p>`,
     },

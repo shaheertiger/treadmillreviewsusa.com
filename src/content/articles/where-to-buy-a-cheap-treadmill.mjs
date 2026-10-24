@@ -173,7 +173,7 @@ ${row('8. Gym closeouts and surplus auctions (GovDeals, liquidators)', 'Can be v
             <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill buying checklist</a>
             — it takes about fifteen minutes and is the only warranty a private sale has. Then
             negotiate on what you found, not on a general wish for a lower price: a dry belt, a frayed
-            belt edge or a missing safety key are concrete reasons a seller will accept.
+            belt edge or a <a href="/treadmill-safety-key-not-working/" class="text-[#0F62FE] font-medium" data-autolink>missing safety key</a> are concrete reasons a seller will accept.
           </p>`,
     },
     {
@@ -319,7 +319,7 @@ ${row('8. Gym closeouts and surplus auctions (GovDeals, liquidators)', 'Can be v
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What makes an auction bargain expensive</h3>
           <ul>
             <li><strong>Fees.</strong> Many auction platforms and sellers add a buyer's premium, tax and sometimes a handling charge on top of the winning bid. Read the terms of the lot before you bid.</li>
-            <li><strong>Removal.</strong> Lots usually have to be collected within a short window, by you, from a loading dock or a basement. A commercial treadmill commonly weighs around 400 pounds; Life Fitness lists its Integrity treadmill at 425 to 434 pounds.</li>
+            <li><strong>Removal.</strong> Lots usually have to be collected within a short window, by you, from a loading dock or a basement. A commercial treadmill commonly weighs around 400 pounds; Life Fitness lists its <a href="/life-fitness-integrity-series-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Integrity treadmill</a> at 425 to 434 pounds.</li>
             <li><strong>Power.</strong> Commercial treadmills generally need a dedicated circuit, and some need more than a household outlet supplies. Life Fitness specifies a dedicated 120-volt, 20-amp circuit for the Integrity, and some commercial machines need 208 or 240 volts. Find the electrical requirement for the exact model before you bid.</li>
             <li><strong>No testing.</strong> Surplus machines are often sold without being run, sometimes with the console missing.</li>
             <li><strong>Recalls.</strong> Johnson Health Tech has recalled Matrix T1 and T3 series commercial treadmills, in 2022 and again in an expanded recall in 2024, because the power cord can work loose from the socket and pose a fire hazard. The remedy is a power cord bracket. Check any ex-gym Matrix against the recall notices before you buy.</li>

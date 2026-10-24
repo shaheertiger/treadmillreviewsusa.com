@@ -121,7 +121,7 @@ export default {
             Every brand was searched in the CPSC recall database by recall title, manufacturer and
             recall description. We found no recall of any vibration plate, from any brand, and none
             for Merach or Power Plate. Lifepro Fitness has one recall on record: about 78,000
-            Bioremedy infrared sauna blankets in October 2025, because they could overheat. That
+            Bioremedy <a href="/best-home-saunas/" class="text-[#0F62FE] font-medium" data-autolink>infrared sauna</a> blankets in October 2025, because they could overheat. That
             product is unrelated to the plates and we have not excluded the Waver on that basis, but
             it is a good reason to register any LifePro product so the company can reach you. We also
             checked the category recalls that shaped other guides in this series — the original

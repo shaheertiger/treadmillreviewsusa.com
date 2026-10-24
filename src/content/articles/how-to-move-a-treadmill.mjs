@@ -146,7 +146,7 @@ export default {
           </p>
           <p>
             If the latch is worn, the pin is missing or the deck will not stay up on its own,
-            do not move the machine folded. Lower it, and treat it as a non-folding treadmill.
+            do not move the machine folded. Lower it, and treat it as a <a href="/best-non-folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>non-folding treadmill</a>.
           </p>`,
     },
     {
@@ -240,7 +240,7 @@ export default {
             not socks or sliders. Rest on landings rather than mid-flight.
           </p>
           <p>
-            Walking pads are the exception: at 50 to 75 lb, one person can carry one, but the
+            <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>Walking pads</a> are the exception: at 50 to 75 lb, one person can carry one, but the
             length still makes a stair turn awkward and a second person on the bottom end is a
             sensible precaution.
           </p>`,
@@ -301,11 +301,11 @@ export default {
       html: `          <p>
             A treadmill that has been moved will almost always need a few adjustments before it
             runs as it did. None takes long, and skipping them is how a successful move turns into
-            a slipping belt or a rattle a week later.
+            a <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium" data-autolink>slipping belt</a> or a rattle a week later.
           </p>
           <p>
             <strong>Let it acclimatise if it has been cold.</strong> If the machine spent a winter
-            night in a van, a garage or a storage unit, bring it indoors and leave it for several
+            night in a van, a garage or a <a href="/how-to-store-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>storage unit</a>, bring it indoors and leave it for several
             hours — longer if it was well below freezing — before plugging it in. Condensation can
             form on cold electronics when they come into a warm room, and the belt and any deck
             lubricant stiffen in the cold. Powering up a cold, damp controller board is an

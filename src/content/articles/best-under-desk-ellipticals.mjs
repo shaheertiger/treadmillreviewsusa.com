@@ -130,7 +130,7 @@ export default {
             ANCHEER and other common pedaler brands, and searched recall titles for pedal exercisers,
             ellipticals and under-desk products. We found no recall of any under-desk elliptical or
             pedal exerciser. Two brands buyers often see in this category do have CPSC recalls, of
-            different products: LifePro recalled infrared sauna blankets in October 2025, and e-bikes
+            different products: LifePro recalled <a href="/best-home-saunas/" class="text-[#0F62FE] font-medium" data-autolink>infrared sauna</a> blankets in October 2025, and e-bikes
             distributed by ANCHEER were recalled in October 2022. Neither recall concerns a pedaler,
             but we left both brands off this page because we could not load LifePro's store or find an
             ANCHEER maker page to check a current model's figures against.
@@ -595,6 +595,12 @@ export default {
       title: 'Standing Desk Height for a Walking Pad',
       blurb: 'The elbow-height formula, a chart by height, and monitor placement.',
       url: '/standing-desk-height-for-walking-pad/',
+    },
+    {
+      kicker: 'Seniors',
+      title: 'Best Ellipticals for Seniors',
+      blurb: 'Low step-up standing ellipticals and seated cross trainers for older users.',
+      url: '/best-ellipticals-for-seniors/',
     },
   ],
   bottomLine: [

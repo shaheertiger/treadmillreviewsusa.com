@@ -55,7 +55,7 @@ export default {
       html: `          <p>
             Five machines, all listed for sale by the maker or a specialist US dealer on 14 October
             2026. Two are motorised treadmills from the same maker, one is a long motorised machine
-            for giant breeds, and two are slatmills, which the dog drives itself. Match the running
+            for giant breeds, and two are <a href="/how-to-build-a-dog-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>slatmills</a>, which the dog drives itself. Match the running
             length to your dog first; everything else comes second. If you are still deciding between
             a dog treadmill and the one you already own, read our comparison of
             <a href="/dog-treadmill-vs-human-treadmill/" class="text-[#0F62FE] font-medium">dog and human treadmills</a>
@@ -210,7 +210,7 @@ export default {
           <p>
             <strong>Motor.</strong> A large dog at a trot loads the belt hard and unevenly, and a
             motor near its limit slows on each footfall. The Dog Runner machines list a 3.5 HP sealed
-            motor; the Jog A Dog DC7 lists a 1 HP industrial DC motor and makes its case on torque, a
+            motor; the Jog A Dog DC7 lists a 1 HP industrial <a href="/ac-vs-dc-treadmill-motor/" class="text-[#0F62FE] font-medium" data-autolink>DC motor</a> and makes its case on torque, a
             low-speed motor driving a large pulley, and a four-roller drive meant to stop belt slip on
             long decks. Those are different philosophies, and neither figure can be compared directly
             with a human treadmill’s rating. What matters for a big dog is that the belt does not
@@ -580,6 +580,12 @@ export default {
       title: 'Can a Dog Use a Human Treadmill?',
       blurb: 'The safety rules and how to introduce a dog to a belt.',
       url: '/treadmill-for-dogs/',
+    },
+    {
+      kicker: 'Hydrotherapy',
+      title: 'Underwater Treadmills for Dogs',
+      blurb: 'Canine hydrotherapy: what it is, who provides it, what sessions cost, and home units.',
+      url: '/underwater-treadmill-for-dogs/',
     },
   ],
   bottomLine: [

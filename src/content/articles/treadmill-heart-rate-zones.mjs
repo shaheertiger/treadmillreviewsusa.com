@@ -115,7 +115,7 @@ export default {
       id: 'zone-two',
       heading: 'Why Zone 2 Gets All the Attention',
       html: `          <p>
-            Zone 2 has become the most discussed band in amateur endurance training, and the
+            <a href="/zone-2-training-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Zone 2</a> has become the most discussed band in amateur endurance training, and the
             enthusiasm is broadly justified even if the presentation is often overheated.
           </p>
           <p>
@@ -162,7 +162,7 @@ export default {
           </p>
           <p>
             <strong>Holding the rails changes the workout.</strong> This is the serious one. To
-            use grip sensors you must hold on, and holding on transfers weight to your arms and the
+            use <a href="/treadmill-heart-rate-not-working/" class="text-[#0F62FE] font-medium" data-autolink>grip sensors</a> you must hold on, and holding on transfers weight to your arms and the
             frame — particularly on incline. So the act of measuring alters what you are
             measuring, and makes the session easier than the console reports.
           </p>
@@ -227,7 +227,7 @@ export default {
           <p>
             For most people on a treadmill, this is sufficient and arguably superior. It is
             immune to a mis-estimated maximum heart rate, unaffected by damp hands, and it does not
-            require holding the rails. If you are not training for a specific event, you can run a
+            require <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>holding the rails</a>. If you are not training for a specific event, you can run a
             well-structured week on breathing alone.
           </p>`,
     },

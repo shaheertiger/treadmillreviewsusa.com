@@ -88,7 +88,7 @@ export default {
             stop it.
           </p>
           <p>
-            Walking pads and under-desk treadmills are a separate case. Many do not fold in this
+            Walking pads and <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>under-desk treadmills</a> are a separate case. Many do not fold in this
             sense at all — they are designed to slide under furniture or, on some models, to stand
             on end against a wall. Whether yours may be stored on end is a question for its manual,
             not an assumption to make. Our

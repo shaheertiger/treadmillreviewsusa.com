@@ -191,8 +191,8 @@ export default {
           <p>
             <strong>Rowers.</strong> The Concept2 on this page is the same model you will find in many
             gyms and rowing clubs. It weighs 57 lb, splits in two and needs no outlet, so a home
-            buyer gets the gym experience without compromise. <strong>Air bikes.</strong> The air
-            bikes in functional-fitness gyms are the same class of machine as the AirDyne AD7: no
+            buyer gets the gym experience without compromise. <strong>Air bikes.</strong> The <a href="/best-air-bikes/" class="text-[#0F62FE] font-medium" data-autolink>air
+            bikes</a> in functional-fitness gyms are the same class of machine as the AirDyne AD7: no
             motor, no outlet, a fan for resistance. The home versions are effectively the gym
             versions. <strong>Indoor cycling bikes.</strong> A home bike like the IC4 is lighter than
             a club studio bike, but the riding position and magnetic resistance are close enough that
@@ -413,7 +413,7 @@ export default {
           </p>
           <p>
             <strong>Discontinued machines still for sale.</strong> Marketplace listings can carry
-            on long after a maker stops selling a model new, as the BowFlex Max Trainer M5 and M7
+            on long after a maker stops selling a model new, as the <a href="/bowflex-max-trainer-m5/" class="text-[#0F62FE] font-medium" data-autolink>BowFlex Max Trainer M5</a> and M7
             show. That is not necessarily bad — it may be a bargain — but check that parts and
             warranty support still exist before you buy.
           </p>
@@ -699,6 +699,12 @@ export default {
       title: 'Commercial Gym Equipment at Home',
       blurb: 'What changes when you buy gym-grade machines for a house or garage.',
       url: '/commercial-gym-equipment/',
+    },
+    {
+      kicker: 'Climber',
+      title: 'Best Vertical Climbers',
+      blurb: 'Five vertical climbers from $170 to $6,900, with ceiling height checks explained.',
+      url: '/best-vertical-climbers/',
     },
   ],
   bottomLine: [

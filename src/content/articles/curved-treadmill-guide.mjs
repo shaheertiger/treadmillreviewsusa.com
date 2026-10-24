@@ -46,7 +46,7 @@ export default {
             to slow down; stop running and the belt stops almost at once.
           </p>
           <p>
-            It is <strong>worth it</strong> for sprint work, interval training, athletes who want
+            It is <strong>worth it</strong> for sprint work, <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium" data-autolink>interval training</a>, athletes who want
             self-paced acceleration without a motor lagging behind them, gyms that need a machine
             with no electrical supply and little to go wrong, and people who actively want no
             electronics. On those terms it is arguably the best treadmill there is.
@@ -186,7 +186,7 @@ export default {
             sessions are entirely in your head or on a separate timer, and there is no incline
             profile, no preset workout and nothing that follows a video.</li>
             <li><strong>Heavy and non-folding.</strong> A steel frame with a slat belt is heavy —
-            typically well over what a folding home treadmill weighs — and it does not fold. Once
+            typically well over what a folding home <a href="/how-much-does-a-treadmill-weigh/" class="text-[#0F62FE] font-medium" data-autolink>treadmill weighs</a> — and it does not fold. Once
             it is in a room, that is where it lives. Moving one is a two- or three-person job, and
             the footprint is comparable to a commercial machine.</li>
             <li><strong>Pace display accuracy.</strong> The console reads belt speed, which is
@@ -304,7 +304,7 @@ export default {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Flat manual treadmills</h3>
           <p>
-            A flat manual treadmill has a conventional flat deck, no motor, and relies on a fixed
+            A flat <a href="/best-manual-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>manual treadmill</a> has a conventional flat deck, no motor, and relies on a fixed
             or adjustable incline to let gravity help you drive the belt; many have a flywheel for
             smoothness and a simple friction belt. They are the cheapest treadmills made, usually
             light and foldable, and they are walking machines: the friction of a continuous belt
@@ -351,7 +351,7 @@ export default {
             some guidance.
           </p>
           <ol>
-            <li><strong>Start with the handrails and a walk.</strong> Hold the rails, step on to
+            <li><strong>Start with the handrails and a walk.</strong> <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Hold the rails</a>, step on to
             the lowest point of the curve, and walk by stepping slightly forward. Feel how a step
             further up the curve speeds the belt and a step back slows it. Spend a few minutes here
             before letting go.</li>
@@ -401,7 +401,7 @@ export default {
             one of the few designs that offer it or accept that this is not the machine.</li>
             <li><strong>Footprint and ceiling height.</strong> Measure the room. These machines
             are long and the running surface sits higher off the floor than a motorised deck,
-            which matters under a low ceiling for a tall runner.</li>
+            which matters under a low ceiling for a <a href="/best-treadmills-for-tall-runners/" class="text-[#0F62FE] font-medium" data-autolink>tall runner</a>.</li>
             <li><strong>Weight and delivery.</strong> Confirm the machine weight, how it will get
             into the room, and whether it comes assembled. Stairs can rule a machine out on their
             own.</li>
@@ -518,6 +518,12 @@ export default {
       title: 'Treadmill Sprint Workout',
       blurb: 'Sprint sessions that suit a curved belt, and how to do them on a motorised one.',
       url: '/treadmill-sprint-workout/',
+    },
+    {
+      kicker: 'Curved',
+      title: 'SB Fitness CT550 Curved Treadmill',
+      blurb: 'A direct-sold budget curved trainer, its listing claims, the restocking fee and the sprinting caveat.',
+      url: '/sb-fitness-ct550-curved-treadmill/',
     },
   ],
   bottomLine: [

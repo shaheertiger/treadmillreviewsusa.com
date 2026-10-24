@@ -133,8 +133,8 @@ export default {
             Stride-6s, Stride-8s and Stride 50 RCX-22 — from $1,499.99 to $2,249.99, plus two
             under-desk walking pads. The Stride-6 and Stride-6s are the models that define the
             brand: a 20.5 by 60-inch deck on a frame that folds itself flat at the touch of a button,
-            at about 182 lb. Few full-size treadmills store as low, and none of the iFIT or
-            Peloton machines we have covered fold that way.
+            at about 182 lb. Few full-size treadmills store as low, and none of the <a href="/ifit-vs-peloton/" class="text-[#0F62FE] font-medium" data-autolink>iFIT or
+            Peloton</a> machines we have covered fold that way.
           </p>
           <p>
             The caveats are structural rather than cosmetic. Echelon's base warranty is one year on
@@ -153,7 +153,7 @@ export default {
       html: `          <p>
             Echelon Fitness Multimedia, trading as Echelon, is a connected-fitness company
             headquartered in Chattanooga, Tennessee. Company profiles date it to 2017, and its
-            chief executive is Lou Lentine. It sells exercise bikes, rowers, treadmills and other
+            chief executive is Lou Lentine. It sells <a href="/best-exercise-bikes/" class="text-[#0F62FE] font-medium" data-autolink>exercise bikes</a>, rowers, treadmills and other
             equipment alongside its own app and class library, and it has always positioned itself
             as a lower-priced rival to Peloton; it also runs a cheaper equipment line under the
             FitNation name.
@@ -309,7 +309,7 @@ export default {
             Echelon does not name Zwift, Kinomap or the Bluetooth FTMS fitness-machine standard on
             its Stride product pages, and owners on Zwift's forum report that the original Stride
             did not pair with Zwift directly. If open-app running is the plan, assume you will need
-            a foot pod, or buy a treadmill whose maker names the app in its listing.
+            a <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium" data-autolink>foot pod</a>, or buy a treadmill whose maker names the app in its listing.
           </p>`,
     },
     {
@@ -317,7 +317,7 @@ export default {
       heading: 'Auto-Fold, Footprint and Space',
       html: `          <p>
             The auto-fold is the reason Echelon treadmills are worth a page of their own. Most
-            folding treadmills tilt the deck up so that it stands beside the console, which saves
+            <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>folding treadmills</a> tilt the deck up so that it stands beside the console, which saves
             floor space but leaves a tall object in the room. On the Stride-6 and Stride-6s, a button
             collapses the console down onto the deck so that the whole machine lies flat, and
             transport wheels let you either roll it under furniture or stand it on end against a
@@ -389,7 +389,7 @@ export default {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Echelon vs Peloton</h3>
           <p>
-            Peloton replaced its treadmill line on 1 October 2026 with the Tread Flex from $2,195,
+            Peloton replaced its treadmill line on 1 October 2026 with the <a href="/peloton-tread/" class="text-[#0F62FE] font-medium" data-autolink>Tread Flex</a> from $2,195,
             the Tread Vision from $3,495 and the Tread+ Vision from $6,695, on its own site on 20
             October. The Tread Flex is Peloton's first folding treadmill, with a 21.5-inch screen,
             0 to 12.5 mph, 0 to 12.5% incline, a 59 by 20-inch belt and a 300 lb rating; it folds to
@@ -472,7 +472,7 @@ export default {
           </p>
           <p>
             <strong>Look elsewhere if:</strong> you run hard most days, are a tall or heavy runner
-            who needs a 22-inch deck or a rating above 300 lb, want to use Zwift or other open apps
+            who needs a 22-inch deck or a rating above 300 lb, want to use <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium" data-autolink>Zwift</a> or other open apps
             directly, or do not want an ongoing subscription. In those cases the warranty and the
             frame of a plain-console machine are worth more than the fold.
           </p>
@@ -554,6 +554,12 @@ export default {
       title: 'Treadmills Without Subscriptions',
       blurb: 'Machines that do everything on their own console, for buyers who want no platform.',
       url: '/best-treadmills-without-subscriptions/',
+    },
+    {
+      kicker: 'Legacy',
+      title: 'LIVESTRONG Treadmills',
+      blurb: 'A discontinued Johnson Health Tech line: the LS10.0T, buying used, parts and what replaced it.',
+      url: '/livestrong-treadmill/',
     },
   ],
   bottomLine: [

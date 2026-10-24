@@ -165,7 +165,7 @@ export default {
             covers that.
           </p>
           <p>
-            The rule that matters most: do not hold the rails. Leaning on the handrails transfers
+            The rule that matters most: do not <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>hold the rails</a>. Leaning on the handrails transfers
             weight to your arms and the frame, removing most of the benefit while the display
             continues to tell you how hard you are working. If you cannot walk the grade with a
             light hand or none, the grade is too high.
@@ -336,7 +336,7 @@ export default {
           </p>
           <p>
             <strong>Speed, distance and incline are reasonably accurate</strong>, since the
-            machine controls them directly. Distance can drift slightly with belt slip but is
+            machine controls them directly. Distance can drift slightly with <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium" data-autolink>belt slip</a> but is
             broadly trustworthy.
           </p>
           <p>

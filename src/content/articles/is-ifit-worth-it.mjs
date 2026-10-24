@@ -104,7 +104,7 @@ export default {
           <p>
             <strong>Automatic speed and incline.</strong> During an iFIT workout the treadmill
             changes speed and incline to match the session, without you touching the controls.
-            On incline trainers with a wide range, this is a genuinely different experience from
+            On <a href="/incline-trainer-vs-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>incline trainers</a> with a wide range, this is a genuinely different experience from
             pressing buttons, and it removes the negotiation with yourself mid-session. You can
             usually override the changes if they are too much.
           </p>
@@ -299,7 +299,7 @@ export default {
             alternatives come with caveats about compatibility.
           </p>
           <p>
-            <strong>Third-party apps.</strong> Services such as Zwift and Kinomap, and a range of
+            <strong>Third-party apps.</strong> Services such as <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium" data-autolink>Zwift</a> and Kinomap, and a range of
             class and coaching apps, offer virtual routes, structured workouts and classes on a
             phone, tablet or television. Most are subscriptions too, but they are not tied to one
             hardware brand, so they survive a change of treadmill.
@@ -314,7 +314,7 @@ export default {
           </p>
           <p>
             <strong>Footpods.</strong> Where a treadmill does not broadcast its data, a shoe-mounted
-            footpod can supply pace to an app instead. Accuracy depends on calibration, but it is
+            <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium" data-autolink>footpod</a> can supply pace to an app instead. Accuracy depends on calibration, but it is
             a widely used workaround and works on any treadmill, motorized or not.
           </p>
           <p>
@@ -394,7 +394,7 @@ export default {
             treadmill, because the answer changes which machine makes sense.
           </p>
           <p>
-            <strong>If you will subscribe,</strong> a NordicTrack or ProForm can be good value:
+            <strong>If you will subscribe,</strong> a <a href="/nordictrack-vs-proform/" class="text-[#0F62FE] font-medium" data-autolink>NordicTrack or ProForm</a> can be good value:
             the hardware is competitively specified for its price and the console is built to
             make the most of the service. Budget for the membership over the life of the machine,
             and choose the plan tier that matches your household.

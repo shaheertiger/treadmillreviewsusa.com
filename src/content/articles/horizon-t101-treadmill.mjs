@@ -113,7 +113,7 @@ export default {
             manual, the software and the recall. Horizon’s help centre keeps separate pages for the
             T101-05 (sold from 2018), the T101-06, the T101-07 and the T101-08, which it labels as the
             Connect, as well as older T101 models going back more than a decade. The version is printed
-            on the serial-number label on the frame near the power switch, and it is the first thing
+            on the serial-number label on the frame near the <a href="/how-to-turn-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>power switch</a>, and it is the first thing
             to find before downloading a manual or a software update.
           </p>
           <p>
@@ -314,7 +314,7 @@ export default {
             The T101 owner’s manual asks for a clear zone behind the treadmill at least as wide as the
             machine and at least 79 inches (2 metres) long, about two feet of access on each side, and
             one foot in front for the power cord. It also says the treadmill should not be placed in a
-            garage, covered patio or anywhere outdoors. For ceilings, Horizon’s help centre advises
+            garage, <a href="/outdoor-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>covered patio</a> or anywhere outdoors. For ceilings, Horizon’s help centre advises
             adding 12 inches to the height of the tallest user; with a 7 1/8-inch step-on height and
             10% of incline, more margin is sensible in a basement with beams or ducts.
             <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">Our dimensions guide</a>

@@ -402,7 +402,7 @@ export default {
             failure; our guide to
             <a href="/how-often-should-a-treadmill-belt-be-replaced/" class="text-[#0F62FE] font-medium">how often a belt should be replaced</a>
             covers the signs and the typical intervals. Check the deck at the same time, since a new
-            belt on a worn deck will not last.
+            belt on a <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium" data-autolink>worn deck</a> will not last.
           </p>`,
     },
     {

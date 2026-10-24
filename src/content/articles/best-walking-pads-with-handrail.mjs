@@ -45,7 +45,7 @@ export default {
       heading: 'Our Picks at a Glance',
       html: `          <p>
             Five pads, covering the main ways a pad can give you something to hold. The short
-            version: the UREVO Strol 2S Pro for most people, the Goplus SuperFit 2-in-1 if price
+            version: the UREVO Strol 2S Pro for most people, the <a href="/goplus-2-in-1-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Goplus SuperFit</a> 2-in-1 if price
             comes first, and the WalkingPad MX8 if you want a handle on each side rather than a bar
             in front. If you are not sure a pad is the right format, we compare
             <a href="/walking-pad-vs-folding-treadmill/" class="text-[#0F62FE] font-medium">walking pads and folding treadmills</a>.
@@ -89,7 +89,7 @@ export default {
       id: 'how-we-chose',
       heading: 'How We Chose These Walking Pads',
       html: `          <p>
-            We have not tested these walking pads, and nothing on this page should be read as if we
+            We have not tested these <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pads</a>, and nothing on this page should be read as if we
             had. The picks were made from published specifications, manufacturer and retailer
             listings, warranty terms and independent coverage, checked on 13 October 2026. For each
             pad we confirmed that it is currently sold, on the brand's own store, on Amazon, at a
@@ -115,7 +115,7 @@ export default {
             safe.
           </p>
           <p>
-            A few familiar names are missing on purpose. The Wellfit TM037 has a fold-up rail and
+            A few familiar names are missing on purpose. The <a href="/wellfit-tm037-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Wellfit TM037</a> has a fold-up rail and
             appears in our list of
             <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">walking pads with incline</a>,
             so we have not repeated it here. Several low-cost 2-in-1 pads sold under many brand
@@ -137,7 +137,7 @@ export default {
             moments: stepping on and off, when the belt is speeding up or slowing down, and when
             you lose your rhythm — glancing at a screen, reaching for a cup, turning to answer
             someone. A light hand on a rail at those moments is exactly what rails are for. One
-            hands-on reviewer of the UREVO Strol 2S Pro chose to walk with the rail raised for that
+            hands-on reviewer of the <a href="/urevo-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>UREVO</a> Strol 2S Pro chose to walk with the rail raised for that
             reason, wanting the upper-body support it gave.
           </p>
           <p>

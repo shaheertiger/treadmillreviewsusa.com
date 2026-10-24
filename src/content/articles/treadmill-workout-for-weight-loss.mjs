@@ -46,7 +46,7 @@ export default {
             expended in a 40-minute session is real but modest, and the body partially
             compensates — moving less during the rest of the day, and increasing appetite. This
             is not a reason to skip it. It is a reason not to be blindsided when the scale moves
-            more slowly than a calorie readout implies. The same logic applies to desk walking; see
+            more slowly than a <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium" data-autolink>calorie readout</a> implies. The same logic applies to desk walking; see
             <a href="/do-walking-pads-help-you-lose-weight/" class="text-[#0F62FE] font-medium">do walking pads help you lose weight</a>.
           </p>
           <p>
@@ -413,6 +413,12 @@ export default {
       title: 'Couch to 5K on a Treadmill',
       blurb: 'A structured walk-to-run progression if you want a running goal.',
       url: '/couch-to-5k-treadmill/',
+    },
+    {
+      kicker: 'Weight loss',
+      title: 'Best Treadmill for Weight Loss',
+      blurb: 'Incline, deck comfort, a daily-rated motor and capacity headroom, and why no machine causes weight loss.',
+      url: '/best-treadmill-for-weight-loss/',
     },
   ],
   bottomLine: [

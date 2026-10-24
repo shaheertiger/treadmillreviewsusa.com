@@ -125,7 +125,7 @@ export default {
           </p>
           <p>
             We excluded several machines. The Cybex Plate Loaded Chest Press states a converging
-            path, but several Life Fitness catalog pages list it as discontinued. Titan Fitness,
+            path, but several <a href="/life-fitness/" class="text-[#0F62FE] font-medium" data-autolink>Life Fitness</a> catalog pages list it as discontinued. Titan Fitness,
             Force USA and Prime Fitness sell home and commercial chest presses, but
             their product pages did not describe the path as converging, so they did not meet our
             rule. We could not find a current maker listing for two other home presses that
@@ -222,7 +222,7 @@ export default {
             presses are far more common, and far cheaper, than selectorized ones.
           </p>
           <p>
-            <strong>Plate-loaded</strong> machines take your own Olympic plates on horns attached
+            <strong>Plate-loaded</strong> machines take your own <a href="/best-weight-plates/" class="text-[#0F62FE] font-medium" data-autolink>Olympic plates</a> on horns attached
             to each arm. They are cheaper to build and ship, their load is limited by the arm's
             rating and your plates rather than by a stack, and they are usually lower and simpler
             than a stack machine. The costs are time and plates. Changing weight means loading
@@ -307,8 +307,8 @@ export default {
             chest press is rarely a structural concern. On a suspended timber floor, the
             concentrated weight of a commercial machine and its plates is a different matter. As
             general guidance: put the machine near a load-bearing wall, orient it across the joists
-            rather than along one, spread the load with a lifting platform or thick rubber
-            flooring, and keep plate storage on the ground floor if you can. For an older house, a
+            rather than along one, spread the load with a lifting platform or thick <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium" data-autolink>rubber
+            flooring</a>, and keep plate storage on the ground floor if you can. For an older house, a
             long joist span, or anything you are unsure of, consult a structural engineer before
             the machine arrives. That advice applies to heavy racks too, and our
             <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium">squat rack guide</a>

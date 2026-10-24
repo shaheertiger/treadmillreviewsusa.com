@@ -49,7 +49,7 @@ export default {
           </p>
           <p>
             Sole's current listings give lifetime cover on the frame and motor for every folding
-            model, incline to 15% on the F63, F65, F80 and F85, and an app Sole describes as free
+            model, incline to 15% on the F63, F65, F80 and <a href="/sole-f85-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>F85</a>, and an app Sole describes as free
             with no monthly subscription. NordicTrack's whole range runs iFIT on a built-in
             touchscreen, offers decline on the Commercial series and incline to 40% on its X Series
             trainers, and covers the motor for life only on the Commercial 1750, 2450 and X
@@ -186,7 +186,7 @@ export default {
           </p>
           <p>
             <strong>Incline on folding machines: Sole.</strong> The F63, F65, F80 and F85 all reach
-            15% incline. NordicTrack's folding T Series and Commercial series stop at 12%. For
+            15% incline. NordicTrack's folding <a href="/nordictrack-t-series-vs-commercial/" class="text-[#0F62FE] font-medium" data-autolink>T Series and Commercial</a> series stop at 12%. For
             incline walkers, three extra percentage points on a folding treadmill is a meaningful
             difference.
           </p>
@@ -222,7 +222,7 @@ export default {
             60-inch belt that every source agrees on. Sole's 2026 listings give the F65 and F80 a
             20-inch deck where older sources say 22, so confirm the width for those. On
             NordicTrack, the T Series is 20 inches, the Commercial 2450 and X Series 22 inches, and
-            the 1250 and 1750 widths are quoted inconsistently.
+            the <a href="/nordictrack-commercial-1250-vs-1750/" class="text-[#0F62FE] font-medium" data-autolink>1250 and 1750</a> widths are quoted inconsistently.
           </p>
           <p>
             <strong>User rating.</strong> Sole's folding models are rated to 350 lb at most on its
@@ -267,7 +267,7 @@ export default {
           <p>
             <strong>On NordicTrack,</strong> the motor ratings of the T Series 10 and of the
             Commercial 1250 and 1750, and the 1750's deck width and user rating, are quoted
-            differently across sources and model years. Older names — the C-Series, the X22i and
+            differently across sources and model years. Older names — the C-Series, the <a href="/nordictrack-x22i-incline-trainer-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>X22i</a> and
             X32i — have dropped off its site but still appear at retailers. Our
             <a href="/nordictrack/" class="text-[#0F62FE] font-medium">NordicTrack brand overview</a>
             explains how the brand and iFIT fit together, but describes an older lineup, so use the

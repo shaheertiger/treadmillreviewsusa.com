@@ -194,7 +194,7 @@ export default {
       heading: 'Deck, Decline, Motor and What Reviewers Reported',
       html: `          <p>
             The Treadmill 10’s running area is 22 by 60 inches, the same as Bowflex’s current T9 and T16 and
-            two inches wider than most folding treadmills near its old price. Sixty inches of length suits
+            two inches wider than most <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>folding treadmills</a> near its old price. Sixty inches of length suits
             adult runners, and the extra width helps tall and broad users and anyone whose stride wanders as
             they tire.
           </p>
@@ -202,7 +202,7 @@ export default {
           <p>
             The deck runs from -5% to 15% on a motorised lift. Incline to 15% is common in Bowflex’s range;
             the decline is not. None of the T6, T9 or T16 offers any, so a Treadmill 10 is now one of the few
-            ways to get decline in a Bowflex at all. Decline lets you rehearse downhill running, which loads
+            ways to get decline in a Bowflex at all. Decline lets you rehearse <a href="/what-is-treadmill-decline-good-for/" class="text-[#0F62FE] font-medium" data-autolink>downhill running</a>, which loads
             the quadriceps eccentrically and is useful before a hilly race; it is less useful for general
             fitness, and it loads the knees and thighs differently from flat running, so build into it gradually; if you have
             knee problems, check with a clinician before you add decline work. If decline is the reason you are
@@ -239,7 +239,7 @@ export default {
           </ul>
           <p>
             The reviewers disagree about the cushioning, so we draw no conclusion from it. Points made by only one
-            reviewer, such as occasional static shocks on carpet without a mat, sticky side-handle buttons and
+            reviewer, such as occasional <a href="/treadmill-static-shock/" class="text-[#0F62FE] font-medium" data-autolink>static shocks</a> on carpet without a mat, sticky side-handle buttons and
             a tinny speaker, are worth knowing but are not patterns.
           </p>`,
     },
@@ -318,7 +318,7 @@ export default {
           </p>
           <ul>
             <li><strong>The current range carries different terms.</strong> Bowflex’s T6, T9 and T16 come with a lifetime warranty on the frame and motor, 3 years on parts and 1 year of labour. Against the Treadmill 10’s terms, that is longer cover on the frame and motor, but two years less on parts and a year less of labour.</li>
-            <li><strong>Pre-sale warranties are uncertain.</strong> We found no published statement from Johnson Health Tech on whether it honours warranties on machines sold by Nautilus or BowFlex Inc. before the sale. The one official signal we found points the other way: in the 2025 recall of BowFlex adjustable dumbbells, the CPSC notice offers a voucher or a replacement for units sold by Johnson Health Tech, but only a prorated voucher plus a year of JRNY for units sold by BowFlex Inc. If you own a Treadmill 10 bought before April 2024, ask Bowflex about your cover in writing, quoting the serial number.</li>
+            <li><strong>Pre-sale warranties are uncertain.</strong> We found no published statement from Johnson Health Tech on whether it honours warranties on machines sold by Nautilus or BowFlex Inc. before the sale. The one official signal we found points the other way: in the 2025 recall of BowFlex <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium" data-autolink>adjustable dumbbells</a>, the CPSC notice offers a voucher or a replacement for units sold by Johnson Health Tech, but only a prorated voucher plus a year of JRNY for units sold by BowFlex Inc. If you own a Treadmill 10 bought before April 2024, ask Bowflex about your cover in writing, quoting the serial number.</li>
           </ul>
           <p>
             Bowflex kept selling the Treadmill 10 after the sale, as the February 2025 Tom’s Guide review shows,

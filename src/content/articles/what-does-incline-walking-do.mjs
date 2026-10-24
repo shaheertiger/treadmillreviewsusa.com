@@ -59,7 +59,7 @@ export default {
             What incline walking does not do is equally worth knowing. It does not burn fat from
             the legs or hips specifically, it will not build much muscle for someone who already
             trains, and it is not free of risk: steep grades load the calves and Achilles, and
-            poor posture can strain the lower back. Holding the handrails, the most common habit
+            poor posture can strain the lower back. <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Holding the handrails</a>, the most common habit
             on steep settings, quietly removes a large part of the benefit. The sections below
             take each of these in turn.
           </p>`,
@@ -90,7 +90,7 @@ export default {
           </p>
           <p>
             A heart-rate strap or watch helps you use this deliberately, though the treadmill's
-            grip sensors and many wrist devices are imperfect. Our guide to
+            <a href="/treadmill-heart-rate-not-working/" class="text-[#0F62FE] font-medium" data-autolink>grip sensors</a> and many wrist devices are imperfect. Our guide to
             <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">treadmill heart rate zones</a>
             explains how to set zones and what each one is for. Without a monitor, the talk test
             works well enough: able to speak in sentences is moderate, a few words at a time is
@@ -160,7 +160,7 @@ export default {
             </tbody>
           </table></div>
           <p>
-            <strong>How the figures are calculated.</strong> Calories equal METs multiplied by body
+            <strong>How the figures are calculated.</strong> Calories equal <a href="/what-are-mets-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>METs</a> multiplied by body
             weight in kilograms multiplied by hours. The MET values come from a widely used walking
             equation: oxygen cost rises with speed, plus a larger term for speed multiplied by
             grade. Everything is rounded to the nearest five calories. These are gross figures,
@@ -360,7 +360,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Check what your treadmill can do</h3>
           <p>
             Not every machine is suited to this. Many walking pads have no incline at all, some
-            budget treadmills top out at a few percent, and others offer only manual incline that
+            <a href="/best-budget-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>budget treadmills</a> top out at a few percent, and others offer only manual incline that
             has to be set before you start. A machine that reaches 10 to 15% under motor control,
             with a stable deck at full grade, makes incline walking much easier to progress. Check
             the specification and the weight limit before buying with incline in mind.

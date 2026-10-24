@@ -222,7 +222,7 @@ export default {
             Where everything agreed, the figure went into the spec line.
           </p>
           <p>
-            One figure never made it, on any model: motor horsepower. Horizon describes its drive
+            One figure never made it, on any model: <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium" data-autolink>motor horsepower</a>. Horizon describes its drive
             as a RapidSync motor on the Studio Series and a Johnson Drive System on the Go Series,
             and lists the thrust of the incline motor, but it does not publish a horsepower or
             continuous-duty rating for any current treadmill. Reviewers quote figures from 2.5 to
@@ -248,7 +248,7 @@ export default {
       heading: 'The No-Subscription Case, and Its Limits',
       html: `          <p>
             Horizon's whole proposition is what it leaves out. NordicTrack and ProForm build their
-            machines around iFIT, Peloton around its own membership, Echelon around its app. Each
+            machines around <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium" data-autolink>iFIT</a>, Peloton around its own membership, Echelon around its app. Each
             of those platforms is a recurring fee, and each machine is designed so that the screen
             and the automatic speed and incline control are worth much less once you stop paying.
             Horizon does not have a platform. Its consoles are data displays with built-in
@@ -261,12 +261,12 @@ export default {
             app, Kinomap and similar apps on your own phone, tablet or laptop, and you can change
             apps without changing treadmills. Horizon also lists Strava and other tracking apps.
             Only the T101 Connect lists JRNY, the adaptive-workout service that Horizon's parent
-            company, Johnson Health Tech, acquired with Bowflex in 2024 — and it is optional, like
+            company, Johnson Health Tech, acquired with <a href="/bowflex/" class="text-[#0F62FE] font-medium" data-autolink>Bowflex</a> in 2024 — and it is optional, like
             everything else here.
           </p>
           <p>
             There is a trade-off, and it is worth being clear about. Because the apps receive data
-            from a Horizon rather than control it, a class or a Zwift route cannot raise and lower
+            from a Horizon rather than control it, a class or a <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium" data-autolink>Zwift</a> route cannot raise and lower
             the incline for you. When the road climbs, you turn the QuickDial or EasyDial yourself.
             On a machine designed around dials rather than repeated button presses, that is quick,
             but it is not the same as an iFIT machine that follows the trainer automatically. If

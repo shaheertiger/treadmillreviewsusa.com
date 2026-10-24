@@ -170,7 +170,7 @@ export default {
           <p>
             <strong>Calories = METs × body weight in kilograms × hours.</strong> Sitting quietly is
             about 1 MET, which by convention costs roughly one calorie per kilogram of body weight
-            per hour. An activity rated at 4 METs costs about four times that. So a 73 kg person
+            per hour. An activity rated at 4 <a href="/what-are-mets-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>METs</a> costs about four times that. So a 73 kg person
             walking at an activity rated 3.3 METs for half an hour burns roughly 3.3 × 73 × 0.5,
             which is about 120 calories — the 3.0 mph flat-walking figure in the middle column.
           </p>
@@ -327,7 +327,7 @@ export default {
       id: 'heart-rate',
       heading: 'Heart-Rate Monitors and the Fat-Burning Zone',
       html: `          <p>
-            A chest strap or a good wrist sensor gives you something the console does not have:
+            A chest strap or a good <a href="/chest-strap-vs-wrist-heart-rate/" class="text-[#0F62FE] font-medium" data-autolink>wrist sensor</a> gives you something the console does not have:
             a live physiological signal from your body rather than a calculation about the belt.
             That is genuinely useful, but it is worth being clear about what it improves and what
             it merely replaces with a different kind of guess.

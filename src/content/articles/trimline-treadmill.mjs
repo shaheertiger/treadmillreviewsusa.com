@@ -105,7 +105,7 @@ export default {
             built Trimlines", and the Hebb manuals carry a Texas address. A review site describes the
             later T-series, such as the T335HR, as Taiwan-built. Trimline machines were also sold
             under other names: the parts catalogue notes that the Trimline 7600.1 was marketed by
-            Sears as a Free Spirit model, 122.309200. If you own a Sears Free Spirit treadmill, check
+            Sears as a Free Spirit model, 122.309200. If you own a Sears Free <a href="/spirit-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Spirit treadmill</a>, check
             whether its model number maps to a Trimline, because the parts will be the same.
           </p>`,
     },
@@ -139,7 +139,7 @@ export default {
           <p>
             Labels peel off. If yours is gone, photograph the console, the motor hood and the frame,
             measure the belt (length and width), and note the motor's own label under the hood.
-            A parts supplier or repair technician can often identify a model from that, and the
+            A parts supplier or <a href="/treadmill-repair-near-me/" class="text-[#0F62FE] font-medium" data-autolink>repair technician</a> can often identify a model from that, and the
             belt and motor labels are what you need for the commonest replacements anyway.
           </p>`,
     },

@@ -81,7 +81,7 @@ export default {
       products: true,
       html: `          <p>
             Each card says which of the four treadmill features the maker documents for that
-            model: an indoor or treadmill run mode, post-run distance calibration, foot pod pairing,
+            model: an indoor or treadmill run mode, post-run distance calibration, <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium" data-autolink>foot pod</a> pairing,
             and a direct connection to a treadmill through GymKit or Bluetooth FTMS. Where we could
             not confirm a feature from the maker's own documentation, the card says so rather than
             guessing.
@@ -267,7 +267,7 @@ export default {
             <strong>Bluetooth FTMS.</strong> FTMS is the open fitness-machine standard many
             connected home treadmills use to send speed to apps such as Zwift. None of the watch
             makers here documents receiving treadmill speed over FTMS on these models. Garmin's
-            spec pages list smart trainer control, which is aimed at indoor cycling trainers rather
+            spec pages list <a href="/best-smart-bike-trainers/" class="text-[#0F62FE] font-medium" data-autolink>smart trainer</a> control, which is aimed at indoor cycling trainers rather
             than treadmills. So an FTMS treadmill helps your app, not your watch.
           </p>
           <p>
@@ -378,7 +378,7 @@ export default {
             <strong>If you mostly walk on a treadmill or walking pad,</strong> a running watch is
             more than you need. Step counts and walking distance indoors are covered in our guide to
             <a href="/does-a-fitness-tracker-count-steps-on-a-treadmill/" class="text-[#0F62FE] font-medium">whether a fitness tracker counts steps on a treadmill</a>,
-            and a fitness tracker is usually the better buy.
+            and a <a href="/best-fitness-trackers/" class="text-[#0F62FE] font-medium" data-autolink>fitness tracker</a> is usually the better buy.
           </p>
           <p>
             <strong>If you already own a recent running watch,</strong> do not replace it for

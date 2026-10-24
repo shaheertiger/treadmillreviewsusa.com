@@ -231,6 +231,9 @@ Breadcrumb position 2 is always `/best-of/`; only the label changes — `Best Li
 - The target page must already exist in `src/pages/`. If you are writing a link to a page you
   plan to add later, add the page first or drop the link.
 - 3 Related Guides cards minimum, plus 2–4 contextual in-body links to sibling articles.
+- Add the new page to `scripts/interlink-anchors.json` (1–5 phrases specific to its topic) and
+  run `node scripts/interlink.mjs --write`, so articles that already mention the topic link to it.
+  See "Internal linking" in the README.
 
 ## 10. After the page exists
 

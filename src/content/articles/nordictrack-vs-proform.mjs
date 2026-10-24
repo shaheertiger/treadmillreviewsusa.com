@@ -106,7 +106,7 @@ export default {
           <p>
             <strong>Incline and decline range.</strong> NordicTrack's flagship lines, and in
             particular its dedicated incline trainers, reach steeper grades and decline further than
-            anything in the ProForm range. For hikers and anyone who trains on hills, that is the
+            anything in the <a href="/best-proform-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>ProForm range</a>. For hikers and anyone who trains on hills, that is the
             single biggest functional difference between the brands. Our
             <a href="/incline-trainer-vs-treadmill/" class="text-[#0F62FE] font-medium">incline trainer vs treadmill</a>
             comparison covers whether you need that range.
@@ -244,7 +244,7 @@ export default {
       id: 'warranty',
       heading: 'Reading the Warranty, Not the Headline',
       html: `          <p>
-            Treadmill warranties are written as several separate promises, and the headline figure is
+            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium" data-autolink>Treadmill warranties</a> are written as several separate promises, and the headline figure is
             almost always the longest one — usually the frame, which is the part least likely to
             fail. The terms that matter in practice are the motor, the parts and, above all, labour,
             because a free part is of limited use if you are paying for the visit to fit it.

@@ -60,7 +60,7 @@ export default {
           </p>
           <p>
             For most home buyers the choice is between two machines. The <strong>MyRun</strong> is
-            a compact, non-folding treadmill with no screen of its own: you put a tablet on it and run
+            a compact, <a href="/best-non-folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>non-folding treadmill</a> with no screen of its own: you put a tablet on it and run
             Technogym’s app. Its running surface is 56.3 by 19.7 inches and its user limit 308.6 lb,
             so it suits walkers and moderate runners with limited space. The <strong>Technogym
             Run</strong> is a heavy slat-belt machine with a 27-inch screen, a 15.5 mph top speed and
@@ -98,7 +98,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Ownership</h3>
           <p>
             Technogym is independent: it is not part of iFIT, Johnson Health Tech, Dyaco or any
-            of the groups that own most US treadmill brands. A holding company controlled by
+            of the groups that own most US <a href="/best-treadmill-brands/" class="text-[#0F62FE] font-medium" data-autolink>treadmill brands</a>. A holding company controlled by
             Alessandri has been its largest shareholder. Reported figures show that holding selling
             down from about 45% of the capital in 2019 to about 34% in 2021, while keeping a majority
             of voting rights through Italy’s loyalty-share rules. We did not find a more recent
@@ -183,7 +183,7 @@ ${row('Artis Run', 'Top club line', '60 x 23 in.*', '15.5 mph*', 'From $25,490')
             The running surface is the main compromise. At 56.3 inches it is several inches short
             of the 60 inches usually suggested for adults who run rather than walk or jog, and at
             19.7 inches it is a fraction under the common 20-inch width. For walking, incline walking
-            and steady running at moderate pace that is workable; for a tall runner or fast intervals
+            and steady running at moderate pace that is workable; for a <a href="/best-treadmills-for-tall-runners/" class="text-[#0F62FE] font-medium" data-autolink>tall runner</a> or fast intervals
             it is tight. Technogym’s page argues that the MyRun gives the best
             running surface for its footprint in its class, which may be true; it is still a short
             deck.
@@ -232,7 +232,7 @@ ${row('Artis Run', 'Top club line', '60 x 23 in.*', '15.5 mph*', 'From $25,490')
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What it connects to</h3>
           <p>
-            Technogym lists Apple Watch, Apple GymKit, Garmin, Strava, TrainingPeaks, Zwift and
+            Technogym lists <a href="/best-treadmills-for-apple-watch/" class="text-[#0F62FE] font-medium" data-autolink>Apple Watch</a>, Apple GymKit, Garmin, Strava, TrainingPeaks, Zwift and
             Kinomap, Bluetooth and ANT+ heart-rate straps, Bluetooth earphones, Wi-Fi and wired
             network, and an HDMI input. Its console reports cadence, step length and running power.
             Independent reviews were consistently positive about the running feel and the screen,
@@ -402,7 +402,7 @@ ${row('Technogym Unlimited', '$29 a month', 'Plus content on every connected dev
             quality check. The sales conditions use “14 working days” in one place and 14 days in
             another, and say you are liable for any loss in value from handling beyond what was needed
             to try the machine. Read both before ordering. Technogym also accepts HSA and FSA
-            reimbursement through Truemed, which issues a letter of medical necessity after an online
+            reimbursement through Truemed, which issues a <a href="/are-treadmills-hsa-fsa-eligible/" class="text-[#0F62FE] font-medium" data-autolink>letter of medical necessity</a> after an online
             survey; whether that is appropriate for you is a question for your plan administrator.
           </p>`,
     },
@@ -433,7 +433,7 @@ ${row('Technogym Run', '$14,350', 'Slat belt, sled mode, Plus included')}
           </table></div>
           <p>
             The MyRun is the hardest to justify on paper. For about the same money, a Landice L7
-            has a longer deck, a 400 lb rating and lifetime parts cover, and a Peloton Tread costs
+            has a longer deck, a 400 lb rating and lifetime parts cover, and a <a href="/peloton-tread/" class="text-[#0F62FE] font-medium" data-autolink>Peloton Tread</a> costs
             less with a screen built in. What the MyRun offers instead is a small, quiet, well-finished
             machine and Technogym’s software. The Technogym Run competes with commercial slat-belt
             machines rather than consumer treadmills, and its sled mode and screen are what you are

@@ -50,7 +50,7 @@ export default {
             rather than out in front on a straight leg.</li>
             <li><strong>Step rate:</strong> if you overstride, slightly shorter and quicker steps.
             There is no single correct number.</li>
-            <li><strong>Hands off:</strong> no holding the rails or console while running.</li>
+            <li><strong>Hands off:</strong> no <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>holding the rails</a> or console while running.</li>
             <li><strong>Position:</strong> in the middle of the belt, about an arm's length from the
             console.</li>
             <li><strong>Sound:</strong> footfalls that are reasonably quiet rather than heavy
@@ -455,6 +455,12 @@ export default {
       title: 'Best Treadmills for Running',
       blurb: 'Decks long enough for a running stride and motors that hold speed.',
       url: '/best-treadmills-for-running/',
+    },
+    {
+      kicker: 'Beginner',
+      title: 'How to Start Running on a Treadmill',
+      blurb: 'Walk-run intervals, starting speeds, form on the belt and an eight-week progression.',
+      url: '/how-to-start-running-on-a-treadmill/',
     },
   ],
   bottomLine: [

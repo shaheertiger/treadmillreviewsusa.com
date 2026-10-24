@@ -159,7 +159,7 @@ export default {
             grade that looks trivial on a protractor is punishing underfoot. Our
             <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#0F62FE] font-medium">grade conversion guide</a>
             covers that in full, and one caveat applies throughout: these figures assume you are
-            not holding the handrails. Leaning transfers work to your arms and the numbers stop
+            not <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>holding the handrails</a>. Leaning transfers work to your arms and the numbers stop
             meaning anything.
           </p>`,
     },
@@ -167,7 +167,7 @@ export default {
       id: 'one-percent',
       heading: 'The 1% Incline Convention',
       html: `          <p>
-            The advice to set 1% incline to "simulate outdoor running" comes from a 1996 study
+            The advice to set <a href="/treadmill-vs-running-outside/" class="text-[#0F62FE] font-medium" data-autolink>1% incline</a> to "simulate outdoor running" comes from a 1996 study
             that found the energy cost of treadmill running matched outdoor running at around 1%
             grade — but specifically at faster paces, roughly 7 mph and above, where air
             resistance outdoors becomes a meaningful factor.
@@ -210,7 +210,7 @@ export default {
           </p>
           <p>
             <strong>Console calibration drift.</strong> Belt speed is generally accurate but can
-            drift with belt wear and tension. If your treadmill pace and your GPS watch disagree
+            drift with <a href="/how-often-should-a-treadmill-belt-be-replaced/" class="text-[#0F62FE] font-medium" data-autolink>belt wear</a> and tension. If your treadmill pace and your GPS watch disagree
             consistently, the machine may need attention — our
             <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium">belt tension guide</a>
             covers the most common cause.

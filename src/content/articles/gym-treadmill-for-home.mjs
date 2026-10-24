@@ -125,7 +125,7 @@ export default {
             stair turn, the headroom under any landing, the clearance past bannisters and newel posts.
             The narrowest point decides. Some machines can be partly disassembled — the console mast
             and handrails removed, sometimes the motor hood — which helps with height but rarely
-            with length or weight. Whether disassembly affects warranty cover is a question for the
+            with length or weight. Whether <a href="/how-to-disassemble-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>disassembly</a> affects warranty cover is a question for the
             manufacturer or dealer, not a guess.
           </p>
           <p>
@@ -300,7 +300,7 @@ export default {
           <p>
             <strong>Servicing.</strong> Commercial machines need the same care as any treadmill —
             belt tension and tracking, deck lubrication where the manufacturer specifies it, keeping
-            the motor compartment clean — at intervals set by hours of use. The manual rules on
+            the <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium" data-autolink>motor compartment</a> clean — at intervals set by hours of use. The manual rules on
             procedures, which differ from home machines on some models. The harder question is who
             fixes it when something fails. Commercial service companies are set up for gym contracts;
             some will take a home call, some will not. Find one before you buy. Our

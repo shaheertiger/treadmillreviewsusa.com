@@ -147,7 +147,7 @@ export default {
             position from which you can push. Stride shortens, the push-off becomes the dominant
             part of each step, and the belt surges and stalls with each footfall rather than
             running at a constant speed. Many people find their calves and shins take the load
-            in a way that feels nothing like walking outdoors.
+            in a way that feels nothing like <a href="/is-walking-on-a-treadmill-the-same-as-walking-outside/" class="text-[#0F62FE] font-medium" data-autolink>walking outdoors</a>.
           </p>
           <p>
             Two consequences follow. The effort at any given speed is higher than it looks, which
@@ -183,7 +183,7 @@ export default {
             covers what to look for if comfort is the priority.
           </p>
           <p>
-            <strong>Flat manual treadmills</strong> usually have little or no deck cushioning and
+            <strong>Flat manual treadmills</strong> usually have little or no <a href="/treadmill-cushioning-explained/" class="text-[#0F62FE] font-medium" data-autolink>deck cushioning</a> and
             a short deck, and they add the forward lean and forceful push-off described above.
             The combination puts the load in places that a normal walking gait does not, and the
             jerky belt motion means each step is slightly different. For a frail or unsteady user
@@ -263,7 +263,7 @@ export default {
       heading: 'Maintenance and Lifespan',
       html: `          <p>
             <strong>Motorized treadmills</strong> need routine care: lubricating the deck, keeping
-            the belt tensioned and centred, and vacuuming dust out of the motor compartment.
+            the belt tensioned and centred, and vacuuming dust out of the <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium" data-autolink>motor compartment</a>.
             None of it is difficult, and our
             <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">maintenance guide</a>
             covers the full routine, but it is a commitment, and the motor and controller board
@@ -307,7 +307,7 @@ export default {
           <p>
             <strong>Curved trainers</strong> slow as you drift back, which is a natural and
             forgiving way to stop, but they take some getting used to. The first few sessions are
-            best done holding the rails, at walking pace, until the relationship between where
+            best done <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>holding the rails</a>, at walking pace, until the relationship between where
             you stand and how fast the surface moves becomes instinctive.
           </p>
           <p>

@@ -83,7 +83,7 @@ export default {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Storage</h3>
           <p>
-            A treadmill going into a storage unit, a garage or a basement for months needs
+            A treadmill going into a <a href="/how-to-store-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>storage unit</a>, a garage or a basement for months needs
             protection from damp, dust and pests more than from impact. Electronics and a
             fibreboard deck do not like humidity, and a sealed plastic wrap that traps moisture
             against the frame can do more harm than a breathable cover. The packing for storage
@@ -230,7 +230,7 @@ export default {
             box. The choice depends on how far the machine is travelling and who is handling it.
           </p>
           <p>
-            <strong>Leaving the console on.</strong> For a local move, most folding treadmills can
+            <strong>Leaving the console on.</strong> For a local move, most <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>folding treadmills</a> can
             travel with the console attached. Wrap the console in a blanket or bubble wrap, cover
             any touchscreen with a sheet of cardboard first so that pressure is spread rather than
             concentrated, and tape or stretch-wrap the padding in place without taping directly to
@@ -495,7 +495,7 @@ export default {
           <p>
             When the treadmill comes out of storage, check it before using it: look for damp or
             corrosion on the deck and the electronics, lubricate the deck if the manual calls for
-            it, check belt tension and tracking, and run it slowly with nobody on it before you
+            it, check <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a> and tracking, and run it slowly with nobody on it before you
             step on.
           </p>`,
     },
@@ -525,7 +525,7 @@ export default {
             <strong>Before the first session.</strong> Plug it into a suitable outlet, insert the
             safety key, and run the belt at the lowest speed with nobody on it. Check that it runs
             centred, that the incline moves through its range, and that pulling the safety key
-            stops the belt. Then walk on it at a slow pace, holding the rails, before using it
+            stops the belt. Then walk on it at a slow pace, <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>holding the rails</a>, before using it
             normally. Our guide on
             <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">moving a treadmill</a>
             lists the full set of after-move checks.

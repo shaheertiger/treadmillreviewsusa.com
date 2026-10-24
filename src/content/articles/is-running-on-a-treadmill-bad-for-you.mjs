@@ -388,7 +388,7 @@ export default {
           <p>
             Where knees do get sore on a treadmill, the usual causes are the same ones that cause
             sore knees anywhere: too much running added too quickly, overstriding so the foot
-            lands well ahead of the body, worn-out shoes, or an existing problem that running
+            lands well ahead of the body, <a href="/how-often-to-replace-running-shoes/" class="text-[#0F62FE] font-medium" data-autolink>worn-out shoes</a>, or an existing problem that running
             aggravates. Steep incline can load the front of the knee more for some people, and
             running downhill on a treadmill with a decline setting adds load too. That is not a
             reason to avoid incline, but it is a reason to build up to it.

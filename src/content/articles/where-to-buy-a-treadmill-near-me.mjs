@@ -248,13 +248,13 @@ export default {
       id: 'negotiating',
       heading: 'Negotiating at a Local Store',
       html: `          <p>
-            Treadmill prices at local stores are often more flexible than the ticket suggests,
+            <a href="/how-much-does-a-treadmill-cost/" class="text-[#0F62FE] font-medium" data-autolink>Treadmill prices</a> at local stores are often more flexible than the ticket suggests,
             particularly at independent specialty stores and on floor models. Negotiating is not
             rude; it is normal in this category.
           </p>
           <p>
             <strong>Ask for extras rather than only a discount.</strong> Free delivery to the room,
-            included assembly, a mat, haul-away of your old machine or a longer labour warranty can
+            included assembly, a mat, <a href="/how-to-dispose-of-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>haul-away</a> of your old machine or a longer labour warranty can
             be easier for a store to give than a lower price, and may be worth more to you.
           </p>
           <p>

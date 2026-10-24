@@ -76,11 +76,11 @@ export default {
             treadmill in a garage or covered patio, or near water." The same manual says to keep
             the treadmill out of direct sunlight to avoid damage to the console, and not to leave
             it in the folded storage position in temperatures above 85°F (30°C).</li>
-            <li><strong>Sole</strong> (2026 F65 owner's manual): "Do not use outdoors," and "NEVER
+            <li><strong>Sole</strong> (2026 <a href="/sole-f65-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>F65</a> owner's manual): "Do not use outdoors," and "NEVER
             expose this treadmill to rain or moisture. This product is NOT designed for use
             outdoors, near a pool or spa, or in any other high humidity environment." It gives a
             maximum operating temperature of 40°C (104°F) and humidity of 95% non-condensing.</li>
-            <li><strong>Sole</strong> (2026 C80 curved manual treadmill owner's manual): the same
+            <li><strong>Sole</strong> (2026 C80 curved <a href="/best-manual-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>manual treadmill</a> owner's manual): the same
             "Do not use outdoors" line and the same rain, moisture, pool and humidity warning —
             notable because the C80 has no drive motor.</li>
           </ul>
@@ -262,7 +262,7 @@ export default {
       heading: 'Which Types of Treadmill Cope Best Outside?',
       html: `          <p>
             Some types are less vulnerable than others, but none of the manuals we checked approves
-            outdoor use, including one for a non-motorised curved treadmill. Think of the list below
+            outdoor use, including one for a non-motorised <a href="/curved-treadmill-guide/" class="text-[#0F62FE] font-medium" data-autolink>curved treadmill</a>. Think of the list below
             as degrees of risk, not as permission.
           </p>
           <p>
@@ -322,7 +322,7 @@ export default {
             cold exposure.</li>
             <li><strong>Shade and shelter.</strong> Keep it out of direct sun and well back from the
             edge of any roof line.</li>
-            <li><strong>A level, solid base.</strong> A rubber treadmill mat on a level, dry surface,
+            <li><strong>A level, solid base.</strong> A rubber <a href="/do-you-need-a-treadmill-mat/" class="text-[#0F62FE] font-medium" data-autolink>treadmill mat</a> on a level, dry surface,
             with the clearances the manual specifies behind and beside the deck.</li>
             <li><strong>Correct power.</strong> A GFCI-protected, weather-resistant outdoor outlet
             with an in-use cover, close enough for the treadmill's own cord. Test the GFCI with its

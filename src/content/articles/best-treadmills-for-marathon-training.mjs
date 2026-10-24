@@ -125,7 +125,7 @@ export default {
             Some strong running treadmills are missing on purpose. Matrix's retail T30, T50 and T75
             are named in a CPSC recall announced in January 2026 over a power cord that can work
             loose and overheat — a particular concern on a machine running for hours — so Matrix is
-            not here. SOLE's long-running favourites for distance runners, the F80 and F85, were
+            not here. SOLE's long-running favourites for distance runners, the <a href="/sole-f80-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>F80</a> and F85, were
             redesigned for 2026 with different motors, decks and capacities under the same names,
             and most independent coverage still describes the earlier versions; until it catches
             up we could not cross-check enough figures to list them. Our
@@ -257,7 +257,7 @@ export default {
             The figures are arithmetic over 26.2 miles, rounded. Our
             <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">pace and speed chart</a>
             has every conversion. Twelve mph, a five-minute mile, is enough for almost every
-            marathoner's speed work. The Commercial 2450's 14 mph and the KICKR RUN's 4:00-per-mile
+            marathoner's speed work. The <a href="/nordictrack-commercial-2450-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Commercial 2450</a>'s 14 mph and the KICKR RUN's 4:00-per-mile
             top speed matter only to quite fast runners.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Pace on the console</h3>

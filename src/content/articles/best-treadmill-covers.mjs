@@ -42,7 +42,7 @@ export default {
       heading: 'Our Picks at a Glance',
       html: `          <p>
             The first decision is not the brand but the shape of your machine. A folding treadmill
-            stored upright needs a tall, short cover; a non-folding treadmill needs a long, low one;
+            stored upright needs a tall, short cover; a <a href="/best-non-folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>non-folding treadmill</a> needs a long, low one;
             and a treadmill in a damp garage or under a carport needs a heavier fabric and, ideally,
             vents. Pick the row that matches your machine and your room.
           </p>
@@ -104,7 +104,7 @@ export default {
             <strong>folding version of the Zettum cover</strong> because its listing gives
             46 x 38 x 66 inches in the bullets and 79 x 38 x 60 inches in its own table. We left out
             an <strong>XYZCTEM</strong> vented cover because its bullets and table disagree on which
-            dimension is the height, and we could not see a price. For walking pads, the
+            dimension is the height, and we could not see a price. For <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pads</a>, the
             <strong>Aidetech</strong> cover lists Oxford cloth in its bullets and polypropylene in
             its table, and another under-desk cover named 420D fabric in its title and 210D in its
             description, so neither made the list. Model-specific covers whose listings gave
@@ -262,7 +262,7 @@ export default {
           </p>
           <p>
             <strong>Never cover a running treadmill, or one that has just been used.</strong> The
-            motor and controller are cooled by air drawn through the motor compartment, and both
+            motor and controller are cooled by air drawn through the <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium" data-autolink>motor compartment</a>, and both
             stay warm for a while after a session. A cover thrown over a hot motor traps that heat.
             Switch the machine off, let it cool — longer after a long or hard session — and only
             then cover it. Our guide to
@@ -359,7 +359,7 @@ export default {
           </p>
           <p>
             <strong>If the machine is going into long-term storage</strong>, a cover is part of the
-            job but not the main part. Cleaning, drying, belt tension, the plug and the room matter
+            job but not the main part. Cleaning, drying, <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a>, the plug and the room matter
             more, and our guide to
             <a href="/how-to-store-a-treadmill/" class="text-[#0F62FE] font-medium">storing a treadmill</a>
             covers them in order.
@@ -541,6 +541,12 @@ export default {
       title: 'Best Treadmills for a Garage',
       blurb: 'Machines that cope better with the conditions a cover cannot fix.',
       url: '/best-treadmills-for-garage/',
+    },
+    {
+      kicker: 'Mounts',
+      title: 'Best Treadmill Tablet Holders',
+      blurb: 'Mounts that stay steady at running pace without blocking the stop button or safety key.',
+      url: '/best-treadmill-tablet-holders/',
     },
   ],
   bottomLine: [

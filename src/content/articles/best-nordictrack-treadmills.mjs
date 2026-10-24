@@ -248,7 +248,7 @@ export default {
       html: `          <p>
             This is the entire treadmill range on NordicTrack's own site as of 13 October 2026,
             ranked by how well each suits the buyer it is aimed at. Older names — the C-Series,
-            the T 6.5 S, the X22i and X32i, the Commercial 2950 — are no longer listed there and are
+            the T 6.5 S, the X22i and X32i, the <a href="/nordictrack-commercial-2950-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Commercial 2950</a> — are no longer listed there and are
             covered under which to skip, below. For the brand as a whole, including how iFIT and
             the parent company fit in, see our
             <a href="/nordictrack/" class="text-[#0F62FE] font-medium">NordicTrack brand guide</a>.
@@ -294,7 +294,7 @@ export default {
             immediately.
           </p>
           <p>
-            <strong>T Series: the walking and light-running tier.</strong> The T Series 10 and 16
+            <strong>T Series: the walking and light-running tier.</strong> The <a href="/nordictrack-t-series-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>T Series 10</a> and 16
             share a 20 by 60-inch belt, 0 to 12% incline with no decline, a 12 mph top speed, a
             325 lb maximum user weight, adjustable SelectFlex cushioning and the lowest step-up
             height in the range. They fold. Their motors carry two years of warranty cover. These
@@ -407,7 +407,7 @@ export default {
           </p>
           <p>
             <strong>Discontinued models sold as new.</strong> The C-Series, the T 6.5 S, the EXP
-            machines, the X22i and X32i incline trainers and the Commercial 2950 were not listed on
+            machines, the <a href="/nordictrack-x22i-incline-trainer-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>X22i</a> and X32i incline trainers and the Commercial 2950 were not listed on
             NordicTrack's own site on 13 October 2026. Some still appear at third-party retailers.
             They can be fair buys at a genuine clearance price, but check how old the stock is,
             which screen and software version it runs, and who honours the warranty. Our
@@ -492,8 +492,8 @@ export default {
           </p>
           <p>
             <strong>If you weigh more than about 300 lb.</strong> The T Series is rated to 325 lb,
-            and a rating is a ceiling rather than a comfortable operating point. The Commercial
-            1250 and X Series list 400 lb; our
+            and a rating is a ceiling rather than a comfortable operating point. The <a href="/nordictrack-commercial-1250-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Commercial
+            1250</a> and X Series list 400 lb; our
             <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">high-capacity guide</a>
             covers other options.
           </p>

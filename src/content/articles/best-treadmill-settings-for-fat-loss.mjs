@@ -51,7 +51,7 @@ export default {
           </p>
           <p>
             Those numbers are starting points, not prescriptions. The right speed is the one at which
-            you walk naturally without holding the rails, and the right incline is the one you could
+            you walk naturally without <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>holding the rails</a>, and the right incline is the one you could
             hold for the full session. If you cannot, the setting is too high, whatever a chart says.
           </p>
           <p>
@@ -488,7 +488,7 @@ export default {
           </p>
           <p>
             <strong>Powered incline to at least 10% or 12%.</strong> The "fit walker" row and the
-            interval session both need it. Many walking pads have no incline or only a small fixed
+            interval session both need it. Many <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pads</a> have no incline or only a small fixed
             one, which limits them to the first row of the table; that is a real limitation for fat
             loss, as our page on
             <a href="/do-walking-pads-help-you-lose-weight/" class="text-[#0F62FE] font-medium">whether walking pads help you lose weight</a>

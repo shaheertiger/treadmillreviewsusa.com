@@ -180,7 +180,7 @@ export default {
           <p>
             Peloton and Zwift are not on the screen. Bowflex says you run them on a phone or tablet paired
             to the console over Bluetooth, which sends speed, incline and heart rate using the FTMS
-            standard; there is a media shelf and a reading rack for the device. Apple Watch and Samsung
+            standard; there is a media shelf and a reading rack for the device. <a href="/best-treadmills-for-apple-watch/" class="text-[#0F62FE] font-medium" data-autolink>Apple Watch</a> and Samsung
             Galaxy Watch pair by holding the watch to the NFC reader on the console, and one reviewer
             called this their favourite new feature. If Zwift is the plan, our
             <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium">Zwift treadmill guide</a>
@@ -245,7 +245,7 @@ export default {
           </p>
           <ul>
             <li><strong>The screen is the highlight.</strong> Both describe it as big, sharp and genuinely good for watching while running.</li>
-            <li><strong>The speakers are weak.</strong> One reviewer found the 5-watt speakers far too quiet over the belt and switched to earbuds; the other said they do the job but are not impressive. Budget for headphones.</li>
+            <li><strong>The speakers are weak.</strong> One reviewer found the 5-watt speakers far too quiet over the belt and switched to <a href="/best-headphones-for-treadmill-running/" class="text-[#0F62FE] font-medium" data-autolink>earbuds</a>; the other said they do the job but are not impressive. Budget for headphones.</li>
             <li><strong>The screen does not adjust.</strong> Both note it is fixed in place and that taller users may wish it were higher.</li>
             <li><strong>QuickDial takes a light touch.</strong> Both found it easy to overshoot a target speed by turning the dial too fast, while liking how quickly it works once learned.</li>
             <li><strong>Sturdy, comfortable deck and quick speed changes.</strong> Both describe the deck as solid and comfortable and the speed changes as quick, which suits interval work.</li>
@@ -484,6 +484,12 @@ export default {
       title: 'Best Smart Treadmills',
       blurb: 'How the T16 compares with screen-led machines built around a single platform.',
       url: '/best-smart-treadmills/',
+    },
+    {
+      kicker: 'Discontinued',
+      title: 'Bowflex Treadmill 10',
+      blurb: 'Discontinued. The checked specs, a warranty that does not transfer, what to test on a used one, and the T9 or T16 instead.',
+      url: '/bowflex-treadmill-10/',
     },
   ],
   bottomLine: [

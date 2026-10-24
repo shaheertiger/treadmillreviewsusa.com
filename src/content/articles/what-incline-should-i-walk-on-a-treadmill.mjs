@@ -302,7 +302,7 @@ export default {
           <p>
             <strong>Shins and feet.</strong> Less common than with running, but long steep sessions
             can still irritate the front of the shin and the soles of the feet, particularly in
-            worn-out shoes.
+            <a href="/how-often-to-replace-running-shoes/" class="text-[#0F62FE] font-medium" data-autolink>worn-out shoes</a>.
           </p>
           <p>
             Persistent pain, pain that changes how you walk, or pain that worsens over consecutive
@@ -332,7 +332,7 @@ export default {
           <p>
             From there you can extend the steep sessions, push toward 12%, or keep 8 to 10% as a
             hard day and 3 to 6% as your everyday walk. Always include three to five minutes of
-            flat, easy walking to warm up and cool down.
+            flat, easy walking to <a href="/treadmill-warm-up-and-cool-down/" class="text-[#0F62FE] font-medium" data-autolink>warm up and cool down</a>.
           </p>
           <p>
             Change one variable at a time: grade, then duration, then speed. Raising all three in
@@ -370,7 +370,7 @@ export default {
           <p>
             Steep, slow walking is also gentle on the machine compared with fast running, but the
             incline motor and mechanism are extra moving parts. Keep them clean and follow the
-            manual's maintenance schedule.
+            manual's <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium" data-autolink>maintenance schedule</a>.
           </p>`,
     },
     {
@@ -378,7 +378,7 @@ export default {
       heading: 'The Verdict',
       html: `          <p>
             <strong>What incline should you walk on?</strong> For most people, 3 to 6% for everyday
-            walking workouts. Use 0 to 2% for warm-ups, recovery and the first weeks if you are new
+            <a href="/treadmill-walking-workouts/" class="text-[#0F62FE] font-medium" data-autolink>walking workouts</a>. Use 0 to 2% for warm-ups, recovery and the first weeks if you are new
             to exercise, and 8 to 12% for hard sessions once you have built up to it.
           </p>
           <p>

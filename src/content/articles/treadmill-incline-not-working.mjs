@@ -254,7 +254,7 @@ export default {
             than it used to, or that manages unloaded but not with a user aboard, is a motor losing
             strength or a mechanism gaining resistance. Clean, inspect and, if the manual allows,
             lubricate the lift screw and pivots with what the manual specifies — not deck silicone
-            and not WD-40 — before concluding the motor is at fault.
+            and not <a href="/can-you-use-wd40-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>WD-40</a> — before concluding the motor is at fault.
           </p>
           <p>
             Lift motors are usually replaceable bolt-on parts for mainstream models, and the
@@ -316,7 +316,7 @@ export default {
             has backed out, a cable that has been crushed or cut by a frame member, or insulation
             that has rubbed through. Reseating a connector that has worked loose is within reach
             of most owners. Repairing damaged wiring, and anything involving mains-voltage cables
-            or the controller board, is a job for a qualified technician.
+            or the controller board, is a job for a <a href="/treadmill-repair-near-me/" class="text-[#0F62FE] font-medium" data-autolink>qualified technician</a>.
           </p>
           <p>
             A clue that points here: incline and other console functions misbehaving together, or
@@ -375,7 +375,7 @@ export default {
           </p>
           <p>
             Incline problems that coincide with other strange behaviour — the console resetting,
-            the belt surging, the machine switching itself off — point toward the supply rather
+            the <a href="/treadmill-belt-jerking/" class="text-[#0F62FE] font-medium" data-autolink>belt surging</a>, the machine switching itself off — point toward the supply rather
             than the incline system, and those are worth investigating as a power problem first.
             Our guide to a
             <a href="/treadmill-shuts-off-by-itself/" class="text-[#0F62FE] font-medium">treadmill that shuts off by itself</a>
@@ -412,7 +412,7 @@ export default {
       id: 'when-to-call',
       heading: 'When to Call for Service, and What It Costs',
       html: `          <p>
-            <strong>Check the warranty first.</strong> Home treadmill warranties commonly cover
+            <strong>Check the warranty first.</strong> Home <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium" data-autolink>treadmill warranties</a> commonly cover
             parts for one to three years and labour for a year, with longer terms on motors and
             frames, and an incline motor or board can fall inside those terms well after the
             machine stops feeling new. Opening the electronics yourself can complicate a claim,

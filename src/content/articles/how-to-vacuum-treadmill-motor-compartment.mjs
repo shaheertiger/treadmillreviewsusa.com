@@ -318,7 +318,7 @@ export default {
           </p>
           <p>
             Ten minutes, once a year — six-monthly on carpet or in a garage. It is the most skipped
-            task in treadmill maintenance and it protects the most expensive component in the
+            task in <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium" data-autolink>treadmill maintenance</a> and it protects the most expensive component in the
             machine.
           </p>`,
     },

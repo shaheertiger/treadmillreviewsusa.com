@@ -51,7 +51,7 @@ export default {
       html: `          <p>
             Five motorised treadmills, from about $1,100 to about $7,000. The short version: the
             Horizon 7.8 AT for most people who train in intervals, the Horizon 7.0 AT if you want
-            the same control layout for half the money, and the NordicTrack Commercial 2450 if you
+            the same control layout for half the money, and the <a href="/nordictrack-commercial-2450-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>NordicTrack Commercial 2450</a> if you
             genuinely need more than 12 mph. If you are planning the sessions rather than the
             purchase, start with our
             <a href="/treadmill-hiit-workout/" class="text-[#0F62FE] font-medium">treadmill HIIT workout guide</a>.
@@ -123,7 +123,7 @@ export default {
           <p>
             Several well-known machines are missing on purpose. Matrix's retail T30, T50 and T75
             treadmills are named in a recall the CPSC announced in January 2026 over a power cord
-            that can work loose and overheat, so we left Matrix out. The Peloton Tread was the
+            that can work loose and overheat, so we left Matrix out. The <a href="/peloton-tread/" class="text-[#0F62FE] font-medium" data-autolink>Peloton Tread</a> was the
             subject of a CPSC recall in 2021 over a touchscreen that could detach; we did not
             re-verify its current specification for this page and have not ranked it. Horizon's
             T101 was recalled in 2022 because it could change speed or stop on its own — a serious

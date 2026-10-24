@@ -67,7 +67,7 @@ export default {
             Treadmills are compared on purchase price, which is the wrong basis when one of them
             carries a recurring fee. A subscription in the region of $39 a month is roughly $470 a
             year and about $2,350 over five years, which for most of the machines on this page is
-            more than the treadmill cost.
+            more than the <a href="/how-much-does-a-treadmill-cost/" class="text-[#0F62FE] font-medium" data-autolink>treadmill cost</a>.
           </p>
           <p>
             Run the comparison properly and the ranking inverts. A $1,300 subscription-free
@@ -174,7 +174,7 @@ export default {
             you bought.
           </p>
           <p>
-            Bowflex has also re-entered this part of the market: its folding treadmills are marketed as working without a subscription, with apps as an option. Our <a href="/bowflex-t6-treadmill/" class="text-[#0F62FE] font-medium">Bowflex T6 review</a> reads the entry model's specifications and warranty against the Sole F63.
+            Bowflex has also re-entered this part of the market: its folding treadmills are marketed as working without a subscription, with apps as an option. Our <a href="/bowflex-t6-treadmill/" class="text-[#0F62FE] font-medium">Bowflex T6 review</a> reads the entry model's specifications and warranty against the <a href="/sole-f63-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Sole F63</a>.
           </p>`,
     },
     {
@@ -212,7 +212,7 @@ export default {
             If you are someone who will not train without external structure — and a great many
             people are, without any shame attached — then guided content is the difference between
             a machine used four times a week and a machine used four times. At $39 a month that is
-            cheaper than a gym membership and considerably cheaper than a treadmill that sits idle.
+            cheaper than a <a href="/home-treadmill-vs-gym-membership/" class="text-[#0F62FE] font-medium" data-autolink>gym membership</a> and considerably cheaper than a treadmill that sits idle.
             The relevant comparison is not subscription versus no subscription; it is subscription
             versus not training.
           </p>
@@ -220,7 +220,7 @@ export default {
             Automatic incline control is the other genuine case. If you do structured hill work,
             having the machine change grade for you mid-interval is materially better than
             reaching for a button, and it is the one feature the tablet workaround cannot
-            replicate. For a dedicated incline trainer, that alone can justify the fee.
+            replicate. For a dedicated <a href="/incline-trainer-vs-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>incline trainer</a>, that alone can justify the fee.
           </p>
           <p>
             The buyers who should avoid subscriptions are the ones who intend to press start and

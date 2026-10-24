@@ -239,7 +239,7 @@ export default {
       id: 'generations',
       heading: 'Why Sole Specifications Conflict',
       html: `          <p>
-            Sole keeps model names for many years while the machine underneath changes. An F80
+            Sole keeps model names for many years while the machine underneath changes. An <a href="/sole-f80-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>F80</a>
             bought a few years ago, an F80 described in a review updated this spring and an F80
             ordered from Sole today can have different motors, decks and consoles, and all three
             are simply called the F80. Retailer listings make it worse, because they often carry
@@ -313,7 +313,7 @@ export default {
           </p>
           <p>
             <strong>Frame and motor: lifetime on every folding model.</strong> Sole's current
-            listings give lifetime cover on the frame and motor for the F50, F63, F65, F80, F83 and
+            listings give lifetime cover on the frame and motor for the F50, F63, <a href="/sole-f65-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>F65</a>, F80, F83 and
             F85, and every independent source we checked agrees. That is the single most important
             difference from the iFIT brands: ProForm covers its motors for two years at most, and
             NordicTrack only covers the motor for life on its more expensive machines. The C80 has
@@ -322,7 +322,7 @@ export default {
           <p>
             <strong>Deck and electronics: two or three years.</strong> Sole's current listings give
             two years on the deck and electronics for the F63 and F65, and three years for the F80
-            and F85. Independent sources quote different terms for earlier versions, so treat these
+            and <a href="/sole-f85-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>F85</a>. Independent sources quote different terms for earlier versions, so treat these
             as Sole's 2026 figures and confirm them for your unit.
           </p>
           <p>
@@ -413,7 +413,7 @@ export default {
           <p>
             <strong>Use the first weeks properly.</strong> Run the machine at the speeds and inclines
             you plan to use, not a cautious ten minutes. Listen for roller or motor noise, watch
-            whether the belt drifts, and check that the console's speed matches reality. A fault found
+            whether the <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>belt drifts</a>, and check that the console's speed matches reality. A fault found
             early is a straightforward return; the same fault found after the labour cover ends can
             cost you a service call.
           </p>`,

@@ -150,7 +150,7 @@ export default {
             75-second hill repeat it may still be climbing when the rep ends, so judge the rep by
             breathing and feel rather than chasing a number. Our
             <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">heart rate zones guide</a>
-            explains the lag, and why treadmill grip sensors are a poor tool for this kind of
+            explains the lag, and why treadmill <a href="/treadmill-heart-rate-not-working/" class="text-[#0F62FE] font-medium" data-autolink>grip sensors</a> are a poor tool for this kind of
             session.
           </p>
           <p>
@@ -212,7 +212,7 @@ export default {
             Rolling hills is the session to do when you want variety without the intensity of
             repeats. The pace stays steady and the grade goes up and down, so the effort rises and
             falls the way it would on an undulating outdoor route. It is also the best antidote to
-            treadmill boredom, because something changes every couple of minutes.
+            <a href="/how-to-make-treadmill-running-less-boring/" class="text-[#0F62FE] font-medium" data-autolink>treadmill boredom</a>, because something changes every couple of minutes.
           </p>
           <p>
             <strong>The session (about 40 minutes):</strong>
@@ -342,7 +342,7 @@ export default {
             begin at 4 to 5% rather than 7%, and with 5 or 6 reps.</li>
             <li><strong>Alternate steep and flat days.</strong> Two steep sessions back to back is
             the pattern most likely to cause trouble.</li>
-            <li><strong>Mind your shoes.</strong> Worn-out shoes and very low-drop shoes both
+            <li><strong>Mind your shoes.</strong> <a href="/how-often-to-replace-running-shoes/" class="text-[#0F62FE] font-medium" data-autolink>Worn-out shoes</a> and very low-drop shoes both
             increase the demand on the calf on a climb, especially if you are not used to
             them.</li>
           </ul>
@@ -414,7 +414,7 @@ export default {
             <a href="/treadmill-incline-not-working/" class="text-[#0F62FE] font-medium">incline troubleshooting page</a>
             covers the common causes. Frequent grade changes do use the incline mechanism more than
             steady sessions do, which is fine on a machine that is designed for it but worth knowing
-            on a budget treadmill with a basic lift motor.
+            on a <a href="/best-budget-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>budget treadmill</a> with a basic lift motor.
           </p>`,
     },
     {

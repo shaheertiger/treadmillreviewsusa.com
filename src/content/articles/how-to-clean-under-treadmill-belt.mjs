@@ -123,7 +123,7 @@ export default {
             around the roller ends, where it can interfere with tracking.
           </p>
           <p>
-            Do not use compressed air. It drives debris into the motor compartment and into the
+            Do not use compressed air. It drives debris into the <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium" data-autolink>motor compartment</a> and into the
             roller bearings — exactly the two places you least want it — rather than removing it.
           </p>`,
     },
@@ -367,6 +367,12 @@ export default {
       title: 'Treadmill Maintenance Checklist',
       blurb: 'Which tasks belong to which interval, across the whole year.',
       url: '/treadmill-maintenance-checklist/',
+    },
+    {
+      kicker: 'Cleaning',
+      title: 'Best Treadmill Cleaning Products',
+      blurb: 'Console-safe cleaners, cloths and tools for under the belt, and the products to keep away from a deck.',
+      url: '/best-treadmill-cleaning-products/',
     },
   ],
   bottomLine: [

@@ -121,7 +121,7 @@ export default {
             covers start-up current against running current in more detail.
           </p>
           <p>
-            What inrush does not explain is a breaker that trips the instant the power switch is
+            What inrush does not explain is a breaker that trips the instant the <a href="/how-to-turn-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>power switch</a> is
             turned on, or one that trips on a circuit with nothing else connected. Those need the
             test in the next section.
           </p>`,
@@ -146,7 +146,7 @@ export default {
             treadmill. Stop using it. Do not keep trying other outlets in the hope of finding one
             that holds, and do not keep resetting. A treadmill that trips breakers on more than one
             healthy circuit is drawing current it should not, and that is a job for the
-            manufacturer's support line or a treadmill technician.
+            manufacturer's support line or a <a href="/treadmill-repair-near-me/" class="text-[#0F62FE] font-medium" data-autolink>treadmill technician</a>.
           </p>
           <p>
             If you do not have a second suitable circuit to try, that is itself useful
@@ -186,7 +186,7 @@ export default {
             states what the manufacturer considers adequate. Home treadmill manuals commonly
             specify a properly grounded outlet on a 15-amp or 20-amp circuit, and many specify that
             the circuit be dedicated — meaning the treadmill is the only significant load on it.
-            Larger machines, and commercial-grade machines with AC motors, are more likely to call
+            Larger machines, and commercial-grade machines with <a href="/ac-vs-dc-treadmill-motor/" class="text-[#0F62FE] font-medium" data-autolink>AC motors</a>, are more likely to call
             for a dedicated 20-amp circuit, and some need a specific outlet type. Your rating plate
             and manual are the authority, not a general figure from the internet, including this
             page.
@@ -482,6 +482,12 @@ export default {
       title: 'Treadmill Won’t Turn On',
       blurb: 'Safety key, reset switch, outlet and fuse, checked in order.',
       url: '/treadmill-wont-turn-on/',
+    },
+    {
+      kicker: 'Electrical',
+      title: 'Best Surge Protectors for Treadmills',
+      blurb: 'Single-outlet protectors rated for the load, why a power strip is the wrong tool, and what the manual says.',
+      url: '/best-surge-protectors-for-treadmills/',
     },
   ],
   bottomLine: [

@@ -91,7 +91,7 @@ export default {
           <p>
             Two machines in one band is not indecision. In the $800 to $1,000 band the Horizon T202
             is the everyday price and the Bowflex T6 is the better machine when its frequent sale
-            brings it to the same number; in the $1,000 to $1,500 band the Horizon 7.0 AT and the SOLE
+            brings it to the same number; in the $1,000 to $1,500 band the <a href="/horizon-7-0-at-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Horizon 7.0 AT</a> and the SOLE
             F63 match each other on paper, and the choice comes down to warranty terms and controls.
           </p>`,
     },
@@ -131,7 +131,7 @@ export default {
             the $420 to $600 range, is not listed on NordicTrack's US site, and we could not confirm a
             current price on a retailer page we could read on the day. And Sperax walking pads, which
             still turn up at budget prices on marketplaces, are under a CPSC warning telling owners to
-            stop using them. We found no recall or warning covering the UREVO, BowFlex or SOLE models on this page.
+            stop using them. We found no recall or warning covering the <a href="/urevo-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>UREVO</a>, BowFlex or SOLE models on this page.
           </p>`,
     },
     {

@@ -45,7 +45,7 @@ export default {
       id: 'quick-picks',
       heading: 'Our Picks at a Glance',
       html: `          <p>
-            Five treadmills. Four are from Spirit Fitness, for a reason explained below: its current
+            Five treadmills. Four are from <a href="/spirit-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Spirit Fitness</a>, for a reason explained below: its current
             manuals were the only ones we read that publish a temperature and humidity specification
             and do not list garages as a warranty exclusion. The fifth is a premium non-folding machine
             whose garage terms we could not find, and it is labelled that way. If you have not yet
@@ -109,7 +109,7 @@ export default {
             find the maker's terms. That rule removed some excellent treadmills:
           </p>
           <ul>
-            <li><strong>Sole.</strong> The 2026 owner's manual for the Sole F80 lists among its warranty
+            <li><strong>Sole.</strong> The 2026 owner's manual for the <a href="/sole-f80-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Sole F80</a> lists among its warranty
             exclusions: "Warranty will be void if the unit is not in a climate-controlled, insulated
             environment. (Examples: Garage, outside, carport, etc)". We read only the F80's manual, but
             we would not assume other Sole models differ without seeing theirs.</li>
@@ -131,7 +131,7 @@ export default {
             January 2024. Current units may well be unaffected, but we could not confirm which serials
             are on sale, so we left Matrix off.</li>
             <li><strong>Woodway Curve LTG.</strong> A motorless curved trainer that needs no outlet, but
-            Woodway lists it as price on request, and we do not list a machine without a price we have
+            <a href="/woodway-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Woodway</a> lists it as price on request, and we do not list a machine without a price we have
             seen.</li>
           </ul>
           <p>
@@ -338,7 +338,7 @@ export default {
             non-folding machine — but only if the treadmill does not have to share the space with a car.
           </p>
           <p>
-            <strong>Non-folding</strong> machines such as the XT685 and Run CX have no hinge or lift
+            <strong>Non-folding</strong> machines such as the XT685 and <a href="/life-fitness-run-cx-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Run CX</a> have no hinge or lift
             mechanism to stiffen or corrode, usually a heavier frame, and nothing to wrestle with in a
             cold space. They need their full footprint permanently, plus clearance: the XT685 manual
             recommends at least 6 feet behind the treadmill and 20 inches at the front and sides. Our

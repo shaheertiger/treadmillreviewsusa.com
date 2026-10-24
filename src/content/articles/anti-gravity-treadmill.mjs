@@ -356,7 +356,7 @@ export default {
             <li><strong>Bikes and ellipticals.</strong> Both remove impact. Our comparison of a
             <a href="/treadmill-vs-elliptical/" class="text-[#0F62FE] font-medium">treadmill vs elliptical</a>
             sets out the trade-offs.</li>
-            <li><strong>Handrail support, sparingly.</strong> Holding the rails takes some weight
+            <li><strong>Handrail support, sparingly.</strong> <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Holding the rails</a> takes some weight
             off the legs, and in early rehabilitation a therapist may suggest it. It also changes
             posture and gait, so it is a stopgap rather than a substitute for unweighting.</li>
           </ul>
@@ -460,6 +460,12 @@ export default {
       title: 'Are Treadmills Bad for Your Knees?',
       blurb: 'Impact, incline and running form, without the myths.',
       url: '/are-treadmills-bad-for-your-knees/',
+    },
+    {
+      kicker: 'History',
+      title: 'History of the Treadmill',
+      blurb: 'From Roman treadwheels and the 1818 prison treadmill to the medical machine and the first home treadmill.',
+      url: '/history-of-the-treadmill/',
     },
   ],
   bottomLine: [

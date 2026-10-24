@@ -279,7 +279,7 @@ export default {
             covers those.
           </p>
           <p>
-            It also fits around life. An under-desk treadmill or walking pad can turn some sitting
+            It also fits around life. An under-desk treadmill or <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> can turn some sitting
             time into slow walking, which adds up across a week even if it is not a workout in its
             own right. Our
             <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmill guide</a>
@@ -380,7 +380,7 @@ export default {
             the habit is built on sessions you can repeat comfortably.</li>
             <li><strong>Use incline before speed</strong> if you want harder walks without
             running.</li>
-            <li><strong>Walk hands-free.</strong> Holding the rails takes work off your legs and
+            <li><strong>Walk hands-free.</strong> <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Holding the rails</a> takes work off your legs and
             makes the session easier than it looks.</li>
             <li><strong>Add strength training</strong> twice a week, even if it is basic bodyweight
             exercise.</li>
@@ -479,6 +479,12 @@ export default {
       title: 'Treadmill vs Running Outside',
       blurb: 'The real differences, and how to blend indoor and outdoor sessions.',
       url: '/treadmill-vs-running-outside/',
+    },
+    {
+      kicker: 'Settings',
+      title: 'Best Treadmill Settings for Fat Loss',
+      blurb: 'Speed and incline starting points by fitness level, the calorie arithmetic, and how to progress.',
+      url: '/best-treadmill-settings-for-fat-loss/',
     },
   ],
   bottomLine: [

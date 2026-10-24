@@ -158,7 +158,7 @@ export default {
           </p>
           <ul>
             <li><strong>XTERRA FB350:</strong> folds to about 20.5 by 20 inches of floor, according to Lowe's, BJ's and Garage Gym Reviews.</li>
-            <li><strong>Exerpeutic Folding Magnetic Upright:</strong> 22 by 20 inches folded and 55.5 inches tall, by Garage Gym Reviews and Costco's listing.</li>
+            <li><strong>Exerpeutic Folding Magnetic Upright:</strong> 22 by 20 inches folded and 55.5 inches tall, by Garage Gym Reviews and <a href="/buying-a-treadmill-at-costco/" class="text-[#0F62FE] font-medium" data-autolink>Costco</a>'s listing.</li>
             <li><strong>FitNation Flex Bike Ultra:</strong> 17 by 21.5 inches folded and 54 inches tall, by BarBend and Woot's listing.</li>
             <li><strong>Marcy (reviewed version):</strong> Garage Gym Reviews gives 18.5 by 18.5 inches and 51.5 inches tall folded; BarBend gives 18.25 by 18.25 by 51.5 inches. Marcy does not publish a folded size for the NS-652.</li>
             <li><strong>LEIKE X Bike:</strong> BarBend gives 13 by 16 inches and 53 inches tall folded; we found no second source for the folded size.</li>

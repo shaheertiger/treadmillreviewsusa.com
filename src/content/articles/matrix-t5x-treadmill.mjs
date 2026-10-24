@@ -116,7 +116,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Who makes it</h3>
           <p>
             Matrix is owned by Johnson Health Tech, which also owns Horizon and, since April 2024,
-            Bowflex. Matrix supplies gyms and studios and sells a premium home range alongside. The
+            <a href="/bowflex/" class="text-[#0F62FE] font-medium" data-autolink>Bowflex</a>. Matrix supplies gyms and studios and sells a premium home range alongside. The
             T5x belongs to the commercial side, which explains both its specification and the way it
             reaches home buyers: through the used and remanufactured trade rather than a home store.
           </p>`,
@@ -209,7 +209,7 @@ export default {
             There is no subscription and nothing to go out of date. The console starts, runs,
             inclines and shows your data on its own, which is exactly what you want from a machine
             you may keep for many years. There is also no Bluetooth app connection described for the
-            T5x, so if you want Zwift or a similar app, plan on a foot pod; our
+            T5x, so if you want <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium" data-autolink>Zwift</a> or a similar app, plan on a foot pod; our
             <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium">foot pod guide</a>
             covers set-up and calibration.
           </p>`,

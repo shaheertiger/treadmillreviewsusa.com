@@ -119,8 +119,8 @@ export default {
           <p>
             A humidifier in the room is the most effective single fix for most people. Keep it a
             sensible distance from the treadmill rather than pointed at it — you want the room's
-            humidity raised, not mist settling on the console or drifting toward the motor
-            compartment — and do not push humidity so high that windows stream with condensation.
+            humidity raised, not mist settling on the console or drifting toward the <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium" data-autolink>motor
+            compartment</a> — and do not push humidity so high that windows stream with condensation.
             A garage or basement gym brings its own moisture problems, which matter more for the
             electronics than static does.
           </p>`,
@@ -361,7 +361,7 @@ export default {
           </p>
           <p>
             <strong>Choose the outlet first.</strong> Put the machine within reach of a grounded
-            outlet so that it plugs straight in without an extension cord, ideally one that meets
+            outlet so that it plugs straight in without an <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium" data-autolink>extension cord</a>, ideally one that meets
             the circuit requirements in the manual. Moving the treadmill to the outlet is far
             better than bringing an extension lead to the treadmill.
           </p>

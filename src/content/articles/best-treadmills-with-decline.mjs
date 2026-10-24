@@ -230,7 +230,7 @@ export default {
             covers buying one used).
             <strong>Peloton</strong>'s current Tread Vision and Tread+ Vision specifications list
             incline from 0% and no decline. <strong>Sole</strong>'s TT8 lists a -6 to 15 grade range
-            but was sold out on Sole's store; Sole's own blog also describes decline on the F85, but
+            but was sold out on Sole's store; Sole's own blog also describes decline on the <a href="/sole-f85-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>F85</a>, but
             the F85's product page lists 0 to 15 incline levels and does not mention decline, so we
             did not list it. <strong>ProForm</strong> has sold Pro-series treadmills with -3%
             decline, but on the day we checked we could not load ProForm's own site to confirm
@@ -281,7 +281,7 @@ export default {
             downhill training tend to recover better from hilly races.
           </p>
           <p>
-            There is also a simpler fourth use: realism. Outdoor-route workouts on iFIT and Zwift
+            There is also a simpler fourth use: realism. Outdoor-route workouts on iFIT and <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium" data-autolink>Zwift</a>
             routes include descents, and a treadmill that can follow them makes those sessions feel
             more like the road. That is a nice-to-have rather than a reason to pay more. If your
             main interest is climbing, our
@@ -397,8 +397,8 @@ export default {
             NordicTrack machines it is worth confirming one detail before you buy.
           </p>
           <p>
-            <strong>NordicTrack and iFIT.</strong> Independent reviews describe NordicTrack
-            treadmills running in a manual mode without a paid iFIT membership, in which you set
+            <strong>NordicTrack and iFIT.</strong> Independent reviews describe <a href="/nordictrack/" class="text-[#0F62FE] font-medium" data-autolink>NordicTrack
+            treadmills</a> running in a manual mode without a paid iFIT membership, in which you set
             speed and incline yourself, and retailer listings describe grade controls that step in
             half-per-cent increments. What we could not find is a NordicTrack statement that the
             negative settings are available in manual mode on the current software, so if you

@@ -203,8 +203,8 @@ export default {
             <strong>For most people, the best cushioned treadmill is the Horizon 7.8 AT: a named,
             zoned deck cushioning system, a wide 22 by 60-inch deck, 15% incline for low-impact
             walking, a lifetime motor warranty and no subscription.</strong> The Bowflex T9 offers a
-            similar zoned system for less, the Horizon 7.0 AT is the budget choice, and the Life
-            Fitness Run CX is the premium option with lifetime cover on its shock absorbers.
+            similar zoned system for less, the Horizon 7.0 AT is the budget choice, and the <a href="/life-fitness-run-cx-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Life
+            Fitness Run CX</a> is the premium option with lifetime cover on its shock absorbers.
           </p>
           <p>
             Two things are worth knowing before you choose. First, cushioning is about comfort, not
@@ -264,7 +264,7 @@ export default {
           </p>
           <p>
             The first filter was documentation. "Cushioned deck" appears on almost every treadmill
-            listing, including budget walking pads, so a machine qualified only if its manufacturer
+            listing, including budget <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pads</a>, so a machine qualified only if its manufacturer
             names a specific cushioning system and says something about how it works. The second
             was the frame: cushioning only works as designed when the frame under it is stiff, so we
             limited the list to full-size machines with 60-inch decks from established brands. The
@@ -338,7 +338,7 @@ export default {
           </p>
           <p>
             <strong>Gym-derived systems (Life Fitness).</strong> FlexDeck is the shock absorption
-            system Life Fitness names on several of its treadmills, built around shock absorbers that
+            system <a href="/life-fitness/" class="text-[#0F62FE] font-medium" data-autolink>Life Fitness</a> names on several of its treadmills, built around shock absorbers that
             its warranty terms call Lifesprings. Its distinguishing feature here is the warranty: a retailer and an
             independent review both list lifetime cover on those shock absorbers, which acknowledges
             that cushioning parts are what wear.
@@ -429,14 +429,14 @@ export default {
             how soft they are.
           </p>
           <p>
-            <strong>Mostly walking, some jogging.</strong> The Horizon 7.0 AT gives you a named zoned
+            <strong>Mostly walking, some jogging.</strong> The <a href="/horizon-7-0-at-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Horizon 7.0 AT</a> gives you a named zoned
             system, 15% incline and a lifetime motor for about $1,000, and an independent review
             describes its deck as on the softer side, which most walkers like. Spend more on the 7.8
             AT only if you want the wider 22-inch deck or the higher weight limit.
           </p>
           <p>
             <strong>Regular running.</strong> A firm, responsive deck is usually less tiring over a long
-            run than a soft one. The Horizon 7.8 AT and the Bowflex T9 both use zoned systems with a
+            run than a soft one. The Horizon 7.8 AT and the <a href="/bowflex-t9-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Bowflex T9</a> both use zoned systems with a
             firmer rear section for push-off, both have 22-inch decks, and both carry lifetime motor
             cover. The T9 is cheaper; the 7.8 AT has the higher weight limit.
           </p>
@@ -475,8 +475,8 @@ export default {
       heading: 'Who Should Buy Something Else',
       html: `          <p>
             <strong>If impact is the problem rather than the surface.</strong> If even walking on level
-            ground is painful, a softer treadmill will not change the basic loading. A recumbent
-            bike or an elliptical removes the impact phase entirely; our
+            ground is painful, a softer treadmill will not change the basic loading. A <a href="/best-recumbent-bikes/" class="text-[#0F62FE] font-medium" data-autolink>recumbent
+            bike</a> or an elliptical removes the impact phase entirely; our
             <a href="/treadmill-vs-elliptical/" class="text-[#0F62FE] font-medium">treadmill vs elliptical</a>
             comparison weighs the options.
           </p>
@@ -560,6 +560,12 @@ export default {
       title: 'Are Treadmills Bad for Your Knees?',
       blurb: 'What the evidence says about treadmill walking, running and joint load.',
       url: '/are-treadmills-bad-for-your-knees/',
+    },
+    {
+      kicker: 'Model Review',
+      title: 'Reebok FR20z Floatride',
+      blurb: 'The Reebok FR20z Floatride is a non-folding home treadmill sold mainly in the UK and Australia.',
+      url: '/reebok-fr20z-floatride-treadmill/',
     },
   ],
   bottomLine: [

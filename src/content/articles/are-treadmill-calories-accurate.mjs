@@ -221,7 +221,7 @@ export default {
       id: 'heart-rate-estimates',
       heading: 'Are Heart-Rate-Based Estimates Better?',
       html: `          <p>
-            Some treadmills, and most fitness trackers, use heart rate to estimate calories
+            Some treadmills, and most <a href="/best-fitness-trackers/" class="text-[#0F62FE] font-medium" data-autolink>fitness trackers</a>, use heart rate to estimate calories
             instead of, or as well as, speed and incline. In principle that adds individual
             information: a fitter person has a lower heart rate at a given workload, and heart
             rate rises with effort in a broadly predictable way.
@@ -232,7 +232,7 @@ export default {
             relationship unless it has been calibrated against laboratory testing. Heart rate is
             also affected by heat, hydration, caffeine, sleep, stress and medication — beta
             blockers in particular make heart-rate-based estimates unreliable. And on a treadmill,
-            the grip sensors on the handrails are the least accurate way to measure heart rate,
+            the <a href="/treadmill-heart-rate-not-working/" class="text-[#0F62FE] font-medium" data-autolink>grip sensors</a> on the handrails are the least accurate way to measure heart rate,
             and using them requires holding the rails, which itself reduces the effort.
           </p>
           <p>
@@ -332,7 +332,7 @@ export default {
             same speed and gradient; the physics of moving your body is the same. What a better
             machine may offer is a more consistent belt speed under load, a more accurate incline
             reading, a console that lets you enter weight and age, and support for a chest-strap
-            heart rate monitor. Those help the estimate be a little less wrong, not right.
+            <a href="/best-heart-rate-monitors-for-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>heart rate monitor</a>. Those help the estimate be a little less wrong, not right.
           </p>
           <p>
             What genuinely changes how much energy you use is incline range and how willing you
@@ -347,7 +347,7 @@ export default {
       heading: 'The Bottom Line on Treadmill Calories',
       html: `          <p>
             <strong>Treadmill calorie counts are estimates, and they usually run high</strong> —
-            by around 10 to 20% in commonly cited comparisons, and more if you hold the rails or
+            by around 10 to 20% in commonly cited comparisons, and more if you <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>hold the rails</a> or
             have not entered your weight. They are calculated from speed, incline, time and body
             weight using standard equations that describe an average person.
           </p>

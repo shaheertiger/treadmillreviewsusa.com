@@ -34,8 +34,8 @@ export default {
       id: 'short-answer',
       heading: 'How to Connect Apple Watch to a Treadmill: The Short Answer',
       html: `          <p>
-            <strong>If the treadmill supports Apple GymKit</strong> — look for a "Connects to Apple
-            Watch" label or logo on the console — make sure gym-equipment detection is switched on in
+            <strong>If the treadmill supports Apple GymKit</strong> — look for a "Connects to <a href="/best-treadmills-for-apple-watch/" class="text-[#0F62FE] font-medium" data-autolink>Apple
+            Watch</a>" label or logo on the console — make sure gym-equipment detection is switched on in
             your watch's Workout settings, then hold the watch display close to the contactless
             reader on the console until you feel a tap and hear a confirmation tone. Press start on
             the treadmill. The watch and machine then share data for the session, and the workout is
@@ -58,7 +58,7 @@ export default {
       heading: 'What Apple GymKit Is and How It Works',
       html: `          <p>
             GymKit is Apple's system for linking an Apple Watch directly to compatible cardio
-            equipment — treadmills, ellipticals, bikes, rowers and stair climbers. It uses the same
+            equipment — treadmills, ellipticals, bikes, rowers and <a href="/stairmaster-vs-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>stair climbers</a>. It uses the same
             kind of short-range contactless technology as tapping to pay, so pairing is a tap rather
             than a Bluetooth menu.
           </p>
@@ -128,7 +128,7 @@ export default {
           <p>
             Two habits improve the result. First, start the watch workout and the treadmill at about
             the same moment, and end them together, so the totals cover the same session. Second,
-            let your arms swing naturally where you safely can. Holding the handrails, or resting a
+            let your arms swing naturally where you safely can. <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Holding the handrails</a>, or resting a
             hand on the console, removes much of the arm movement the watch relies on and can make
             the distance estimate wildly low.
           </p>
@@ -152,7 +152,7 @@ export default {
             intervals, steep incline — throw the estimate further off.
           </p>
           <p>
-            <strong>The treadmill is also estimating.</strong> Its displayed speed comes from motor
+            <strong>The treadmill is also estimating.</strong> Its <a href="/is-my-treadmill-speed-accurate/" class="text-[#0F62FE] font-medium" data-autolink>displayed speed</a> comes from motor
             and roller measurements, and the calibration of home treadmills varies. A belt reading a
             few percent fast or slow is not unusual, and a worn or slipping belt can widen the gap.
             Incline matters too: the console reports belt distance, which is not the same effort as
@@ -196,7 +196,7 @@ export default {
             explains what to do with the numbers once you have them.
           </p>
           <p>
-            Pulse grips on the handrails are a further fallback, but readings from them are
+            <a href="/treadmill-heart-rate-not-working/" class="text-[#0F62FE] font-medium" data-autolink>Pulse grips</a> on the handrails are a further fallback, but readings from them are
             intermittent and only work while you hold on, which is not how anyone wants to run.
           </p>`,
     },
@@ -259,7 +259,7 @@ export default {
             decide which one is your record and turn off syncing from the other.
           </p>
           <p>
-            For the full set-up — where the speed signal comes from, foot pods, calibration and the common connection faults — see our guide to <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium">using Zwift with a treadmill</a>.
+            For the full set-up — where the speed signal comes from, <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium" data-autolink>foot pods</a>, calibration and the common connection faults — see our guide to <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium">using Zwift with a treadmill</a>.
           </p>`,
     },
     {

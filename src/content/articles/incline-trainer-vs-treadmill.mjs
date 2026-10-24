@@ -243,7 +243,7 @@ export default {
             work.
           </p>
           <p>
-            The caveats are specifics rather than principles. Check the maximum speed, the deck length
+            The caveats are specifics rather than principles. Check the maximum speed, the <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium" data-autolink>deck length</a>
             for your height and stride, and the continuous rating of the belt motor, exactly as you
             would for any treadmill. Some steep-incline models are built with walking primarily in mind
             and may not suit fast running, and a model with a very steep range but a modest belt motor

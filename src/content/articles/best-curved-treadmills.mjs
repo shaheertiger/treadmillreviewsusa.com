@@ -92,7 +92,7 @@ export default {
             Three rules shaped the list. First, every machine had to be a current model from a
             maker that still lists it. The curved category has a lot of churn and a lot of
             short-lived budget listings, and stock is genuinely patchy at the top: on the day we
-            checked, Assault Fitness showed all three AssaultRunner models sold out on its own
+            checked, Assault Fitness showed all three <a href="/assaultrunner-pro-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>AssaultRunner</a> models sold out on its own
             store, and Woodway's shop showed the Curve LTG sold out, while specialist dealers still
             listed both. We include them because they are current products rather than
             discontinued ones, and we say on each card that availability needs checking.
@@ -209,7 +209,7 @@ export default {
       html: `          <p>
             Every machine here is long, heavy and permanent. None folds. Most are around 64 to 72
             inches long and 30 to 36 inches wide, and the deck sits higher than a motorised
-            treadmill's, so a tall runner needs to check the ceiling height as well as the floor
+            treadmill's, so a <a href="/best-treadmills-for-tall-runners/" class="text-[#0F62FE] font-medium" data-autolink>tall runner</a> needs to check the ceiling height as well as the floor
             space. Our
             <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">treadmill space guide</a>
             covers the clearance behind and beside the machine that safety guidance asks for.
@@ -620,6 +620,18 @@ export default {
       title: 'Treadmill Sprint Workout',
       blurb: 'Four sprint sessions, rest intervals and how to mount and dismount safely.',
       url: '/treadmill-sprint-workout/',
+    },
+    {
+      kicker: 'VR',
+      title: 'Best VR Treadmills',
+      blurb: 'Omnidirectional VR treadmills for home, what they cost, and why they are not fitness treadmills.',
+      url: '/best-vr-treadmills/',
+    },
+    {
+      kicker: 'Curved',
+      title: 'NOHrD Sprintbok',
+      blurb: 'The German-made wooden slat treadmill: confirmed figures, prices by finish and the warranty by market.',
+      url: '/nohrd-sprintbok/',
     },
   ],
   bottomLine: [

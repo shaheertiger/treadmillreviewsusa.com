@@ -40,7 +40,7 @@ export default {
       heading: 'Our Picks at a Glance',
       html: `          <p>
             Most readers need one of the first two. The others exist because a carpeted floor, an
-            upstairs room, a long commercial-style machine or a walking pad each changes what a mat
+            upstairs room, a long commercial-style machine or a <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> each changes what a mat
             has to do. One mat appears twice: the rubber mat we chose for big machines is also the
             one we would put on carpet. Not sure what thickness you need? See our guide to
             <a href="/how-thick-should-a-treadmill-mat-be/" class="text-[#0F62FE] font-medium">how thick a treadmill mat should be</a>.
@@ -136,7 +136,7 @@ export default {
             long or more — needs something like 36 x 90 inches at minimum, and a 48-inch-wide mat if the frame is wider than about 32 inches.
           </p>
           <p>
-            Two details catch people out. Folding treadmills should be measured unfolded, because
+            Two details catch people out. <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Folding treadmills</a> should be measured unfolded, because
             that is when the rear feet and rollers land furthest back. And if the mat you want is
             not long enough, two mats butted end to end work well, provided the join does not sit
             under a foot or a roller, where it will lift and curl over time.

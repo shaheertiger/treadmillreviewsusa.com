@@ -219,7 +219,7 @@ export default {
           </p>
           <p>
             One return-related reason to think about this early: Scheels' return policy asks for
-            items in their original packaging and condition for a full refund. Once a treadmill is
+            items in their <a href="/how-to-pack-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>original packaging</a> and condition for a full refund. Once a treadmill is
             built and the box is in the recycling, returning it becomes much harder. Keep the box and
             packing material until you are sure.
           </p>`,
@@ -314,7 +314,7 @@ export default {
           <p>
             We searched cpsc.gov for each brand listed above on 14 October 2026 and found no current
             recall or stop-use warning covering the treadmill models we saw listed. One past recall is worth
-            knowing about because the T101 is on sale at Scheels: in October 2022 Johnson Health Tech
+            knowing about because the <a href="/horizon-t101-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>T101</a> is on sale at Scheels: in October 2022 Johnson Health Tech
             recalled about 192,000 Horizon T101-05 treadmills with certain serial numbers because
             they could change speed or stop unexpectedly, and the remedy was a free software update.
             If you are offered an older or used T101, check its model and serial number against the

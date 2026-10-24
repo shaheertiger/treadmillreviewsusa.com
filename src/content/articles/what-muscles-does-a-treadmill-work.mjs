@@ -102,7 +102,7 @@ export default {
             floor, but without the small variations of outdoor ground. The stabilising muscles
             around the ankles work a little less on a perfectly even surface. It is a minor
             difference, and not a reason to avoid the treadmill, but it is part of why mixing in
-            outdoor walking has value.
+            <a href="/is-walking-on-a-treadmill-the-same-as-walking-outside/" class="text-[#0F62FE] font-medium" data-autolink>outdoor walking</a> has value.
           </p>`,
     },
     {
@@ -137,7 +137,7 @@ export default {
             The differences that matter are the absence of air resistance, the absence of
             downhills and turns, and the perfectly even surface. Our guide to
             <a href="/treadmill-running-form/" class="text-[#0F62FE] font-medium">treadmill running form</a>
-            covers the belt myth and the form habits — overstriding, holding the rails — that
+            covers the belt myth and the form habits — overstriding, <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>holding the rails</a> — that
             change how the load is shared.
           </p>`,
     },
@@ -169,7 +169,7 @@ export default {
             <a href="/what-does-incline-walking-do/" class="text-[#0F62FE] font-medium">what incline walking does</a>.
           </p>
           <p>
-            Incline running works the same muscles harder still. It is a demanding session, and
+            <a href="/treadmill-hill-workout/" class="text-[#0F62FE] font-medium" data-autolink>Incline running</a> works the same muscles harder still. It is a demanding session, and
             the calves and Achilles take a lot of the extra load, so it is best built into
             gradually and kept to a part of the week rather than every run.
           </p>`,

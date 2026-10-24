@@ -147,7 +147,7 @@ export default {
           <p>
             Above roughly 6'3", start looking at the 22-inch-wide, 60-inch decks specifically,
             and consider ceiling height as a genuine constraint rather than a formality. A
-            treadmill deck sits 6 to 10 inches off the floor, and a tall runner on an inclined
+            treadmill deck sits 6 to 10 inches off the floor, and a <a href="/best-treadmills-for-tall-runners/" class="text-[#0F62FE] font-medium" data-autolink>tall runner</a> on an inclined
             deck needs meaningfully more headroom than the room's dimensions suggest. Add your
             height to the deck height, then add a few inches of stride bounce, and compare that
             against the ceiling before ordering — our
@@ -434,6 +434,12 @@ export default {
       title: 'Best Incline Treadmills',
       blurb: 'Steep-grade trainers for hill work, from 12% to 40%.',
       url: '/best-incline-treadmills/',
+    },
+    {
+      kicker: 'HIIT',
+      title: 'Best Treadmills for HIIT',
+      blurb: 'Fast speed and incline changes, motors for hard efforts, and the curved-treadmill option.',
+      url: '/best-treadmills-for-hiit/',
     },
   ],
   bottomLine: [

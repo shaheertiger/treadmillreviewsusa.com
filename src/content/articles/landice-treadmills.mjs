@@ -169,7 +169,7 @@ export default {
             1999 — had become president and chief executive, and that he had set up an entity to
             keep the family's majority stake after interest over the years from potential buyers.
             We found nothing since to suggest that has changed. Landice is not part of any of the
-            large groups that own most treadmill brands: it has no connection with iFIT
+            large groups that own most <a href="/best-treadmill-brands/" class="text-[#0F62FE] font-medium" data-autolink>treadmill brands</a>: it has no connection with iFIT
             (NordicTrack, ProForm), Johnson Health Tech (Horizon, Matrix, Bowflex) or Dyaco (Spirit,
             Sole).
           </p>
@@ -325,7 +325,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Power and placement</h3>
           <p>
             Landice recommends a dedicated 15-amp circuit and warns that the breaker may trip
-            otherwise. Its residential FAQ asks for six feet of clear space behind the treadmill,
+            otherwise. Its residential FAQ asks for six feet of clear <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium" data-autolink>space behind the treadmill</a>,
             three feet on each side and a foot in front for the cord, and says the machine must be
             in a temperature-controlled room — garages, porches, pool rooms, bathrooms and outdoor
             areas are excluded. Read that last point before planning a garage gym. Our
@@ -590,6 +590,12 @@ export default {
       title: 'Treadmills Over $2,500',
       blurb: 'What the top price tier buys, and where a Landice fits.',
       url: '/treadmills-over-2500/',
+    },
+    {
+      kicker: 'Precor',
+      title: 'Precor Treadmills',
+      blurb: 'Peloton-owned and commercial-only now: the TRM lines, used prices, the 20-amp circuit and what the warranty covers.',
+      url: '/precor-treadmills/',
     },
   ],
   bottomLine: [

@@ -109,7 +109,7 @@ export default {
           </p>
           <p>
             <strong>Several machines on one page.</strong> When we checked Amazon for our roundup, one
-            Horizon listing offered the T101, T202, 7.0 AT and 7.4 AT from a single style selector. Those
+            Horizon listing offered the <a href="/horizon-t101-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>T101</a>, T202, 7.0 AT and 7.4 AT from a single style selector. Those
             are four different treadmills at four different prices. A glowing review of the cheapest one
             tells you little about the most expensive, and a complaint about a walking machine's short
             deck says nothing about a running machine's.
@@ -121,7 +121,7 @@ export default {
             review from four years ago may be describing a machine that no longer exists in that form.
           </p>
           <p>
-            <strong>Titles borrow from siblings.</strong> On budget walking pads in particular, listing
+            <strong>Titles borrow from siblings.</strong> On budget <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pads</a> in particular, listing
             titles sometimes describe features of a sibling model. One listing we found under a
             walking pad's name claimed an incline the pad does not have; the incline belonged to the
             "Pro" version. If the title is wrong, reviews of "this" product may be a mixture of both.
@@ -135,7 +135,7 @@ export default {
             current revision, and they tell you whether an old problem has been fixed or is still
             appearing.</li>
             <li><strong>Watch for mismatched details.</strong> A review that mentions a feature your
-            model does not have, a deck length it does not have, or a console it does not have is about
+            model does not have, a <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium" data-autolink>deck length</a> it does not have, or a console it does not have is about
             a different machine. Set it aside.</li>
             <li><strong>Confirm the model number.</strong> Find it in the listing details, then compare
             it with the manufacturer's product page. If reviewers quote a different number, they may
@@ -204,7 +204,7 @@ export default {
           <p>
             <strong>Start with the three-star reviews.</strong> They tend to be written by people who
             wanted to like the machine and are describing a specific problem with some care: "great for
-            walking, but the belt drifts left and I adjust it weekly". One-star reviews are often written
+            walking, but the <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>belt drifts</a> left and I adjust it weekly". One-star reviews are often written
             in frustration and are more likely to be about delivery or service. Read both, but the
             three-star pile usually has the highest ratio of evidence to noise.
           </p>

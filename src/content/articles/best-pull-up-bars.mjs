@@ -130,7 +130,7 @@ export default {
             Iron Gym, ALLY PEAKS, Titan or Ultimate Body Press.
           </p>
           <p>
-            <strong>Deliberate exclusions.</strong> Perfect Fitness's Multi-Gym Pro is one of the
+            <strong>Deliberate exclusions.</strong> Perfect Fitness's <a href="/best-home-gym-machines/" class="text-[#0F62FE] font-medium" data-autolink>Multi-Gym</a> Pro is one of the
             best-known doorway bars, but the maker's site no longer publishes specifications — every
             product link now goes to its Amazon store — and we could neither read the current listing
             nor find an independent source to check it against. ALLY PEAKS' site could not be reached
@@ -553,6 +553,12 @@ export default {
       title: 'Home Workout Equipment Reviews',
       blurb: 'Where a pull-up bar fits among benches, dumbbells, racks and cardio machines.',
       url: '/home-workout-equipment-reviews/',
+    },
+    {
+      kicker: 'Review',
+      title: 'GymProLuxe Review',
+      blurb: 'What we could and could not verify about the seller and its products before you buy.',
+      url: '/gymproluxe-review/',
     },
   ],
   bottomLine: [

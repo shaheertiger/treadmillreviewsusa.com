@@ -98,7 +98,7 @@ export default {
             counts. Neither is necessarily wrong; both are estimating.
           </p>
           <p>
-            If you want to know how many steps a treadmill mile should take for someone of your
+            If you want to know how many steps a <a href="/how-long-is-a-mile-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>treadmill mile</a> should take for someone of your
             height and stride — useful for sanity-checking a tracker — our guide to
             <a href="/how-many-steps-in-a-mile-on-a-treadmill/" class="text-[#0F62FE] font-medium">how many steps are in a mile on a treadmill</a>
             explains the arithmetic and how to measure your own figure.
@@ -125,7 +125,7 @@ export default {
           </p>
           <ul>
             <li><strong>Resting a hand on the console</strong> or a tablet while you walk.</li>
-            <li><strong>Typing on a desk</strong> over a walking pad or under-desk treadmill.</li>
+            <li><strong>Typing on a desk</strong> over a <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> or under-desk treadmill.</li>
             <li><strong>Holding a phone, book or drink</strong> in the hand that wears the
             tracker.</li>
             <li><strong>Pushing a pram or a trolley</strong> outdoors, for the same reason.</li>
@@ -278,7 +278,7 @@ export default {
             <li><strong>Outdoor GPS sessions.</strong> Many watches refine their stride model from
             outdoor GPS workouts. A few outdoor walks or runs at a similar pace to your treadmill
             sessions can improve indoor accuracy over time.</li>
-            <li><strong>Foot pods and shoe sensors.</strong> Some running watches can pair with a
+            <li><strong>Foot pods and shoe sensors.</strong> Some <a href="/best-running-watches-for-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>running watches</a> can pair with a
             small sensor on the shoe, which measures foot movement directly and tends to give better
             indoor distance once calibrated. It is an extra purchase and only worth it if you care
             about the number.</li>
@@ -323,7 +323,7 @@ export default {
       id: 'walking-pads',
       heading: 'What About Walking Pads and Desk Walking?',
       html: `          <p>
-            Walking pads and under-desk treadmills are the worst case for wrist trackers, because
+            Walking pads and <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>under-desk treadmills</a> are the worst case for wrist trackers, because
             your hands are usually on a keyboard or mouse, so the tracker sees little arm swing and
             may badly under-count. A phone in a pocket or a clip-on tracker at the waist usually
             does far better.
@@ -468,6 +468,12 @@ export default {
       title: 'Treadmill Calibration',
       blurb: 'Checking speed, incline and distance, and calibrating your watch to the belt.',
       url: '/treadmill-calibration/',
+    },
+    {
+      kicker: 'Steps',
+      title: 'Best Fitness Trackers for a Walking Pad',
+      blurb: 'Why wrist trackers under-count at a desk, and the trackers and placements that count properly.',
+      url: '/best-fitness-trackers-for-walking-pad/',
     },
   ],
   bottomLine: [

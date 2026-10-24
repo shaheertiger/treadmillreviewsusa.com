@@ -125,7 +125,7 @@ export default {
             box. It does not cover Amazon Basics' fixed rubber hex dumbbells, which were on sale on 19
             October as single dumbbells. Our
             <a href="/best-adjustable-dumbbells/#check-recall" class="text-[#0F62FE] font-medium">adjustable dumbbell recall checklist</a>
-            lists that recall alongside the BowFlex, FitRx, ProForm, NordicTrack and PowerBlock
+            lists that recall alongside the <a href="/bowflex/" class="text-[#0F62FE] font-medium" data-autolink>BowFlex</a>, FitRx, ProForm, NordicTrack and PowerBlock
             notices. A fixed dumbbell has no mechanism to fail in that way, which is one of the
             quiet arguments for buying one.
           </p>
@@ -306,7 +306,7 @@ export default {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Protecting the floor</h3>
           <p>
-            Put the rack and the lifting area on dense rubber, not a yoga mat or foam tiles. Our
+            Put the rack and the lifting area on dense rubber, not a <a href="/best-yoga-mats/" class="text-[#0F62FE] font-medium" data-autolink>yoga mat</a> or foam tiles. Our
             <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium">gym flooring guide</a>
             recommends at least 3/8 to 1/2 inch of solid rubber where dumbbells are set down.
           </p>`,

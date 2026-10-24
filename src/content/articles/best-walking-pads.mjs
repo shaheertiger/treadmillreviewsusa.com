@@ -51,7 +51,7 @@ export default {
             want to spend less than $200, the UREVO SpaceWalk E1L is the budget pick.</strong>
           </p>
           <p>
-            The others each do one job better than the A1 Pro. The WalkingPad Z1 gives you nearly
+            The others each do one job better than the A1 Pro. The <a href="/walkingpad-z1-review/" class="text-[#0F62FE] font-medium" data-autolink>WalkingPad Z1</a> gives you nearly
             the same belt length for a few hundred dollars less, if you are under its lower weight
             limit. The MERACH NovaWalk W50 TrekPad is rated for 400 lb. The UREVO SpaceWalk 3S adds a
             powered incline for about $250. And the UREVO Strol 2S Pro is the one to pick if you
@@ -117,7 +117,7 @@ export default {
           </p>
           <p>
             Every pick had to clear four bars. It had to be on sale today, under its current name,
-            on the maker's own US store. Its belt size, speed range and weight limit had to agree
+            on the maker's own US store. Its <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium" data-autolink>belt size</a>, speed range and weight limit had to agree
             between the maker and at least one source that is not the maker. It had to come from a
             brand with no CPSC recall on record — we searched the commission's recall database for
             WalkingPad and its parent company KingSmith, UREVO and MERACH, and for the brands we
@@ -593,6 +593,12 @@ export default {
       title: 'Best Quiet Walking Pads',
       blurb: 'Pads for flats, and why footsteps rather than motors bother the neighbours.',
       url: '/best-quiet-walking-pads/',
+    },
+    {
+      kicker: 'Walking pad',
+      title: 'Redliro Under Desk Treadmill',
+      blurb: 'What Redliro listings claim, where they disagree, and the return terms to read first.',
+      url: '/redliro-under-desk-treadmill/',
     },
   ],
   bottomLine: [

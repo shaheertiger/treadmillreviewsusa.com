@@ -155,7 +155,7 @@ export default {
           <ul>
             <li>On a concrete floor, pads mainly stop rattles and protect the floor. Little reaches neighbours anyway.</li>
             <li>On a timber floor, pads can soften the hum and the sharp edge of footfalls in the room below. The dull thud of running remains.</li>
-            <li>Walking produces far less impact than running, and pads make a proportionally bigger difference to a walking treadmill or walking pad.</li>
+            <li>Walking produces far less impact than running, and pads make a proportionally bigger difference to a walking treadmill or <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a>.</li>
             <li>A dense mat under the whole machine often helps more than pads alone, because it spreads the load as well as damping it.</li>
           </ul>
           <p>
@@ -171,7 +171,7 @@ export default {
       html: `          <p>
             Anything placed under a treadmill changes how it stands, and the first job of a pad is
             not to make that worse. A treadmill that rocks, shifts or sits off level is a safety
-            problem and a wear problem: the belt drifts to one side, the frame flexes, and a stumble
+            problem and a wear problem: the <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>belt drifts</a> to one side, the frame flexes, and a stumble
             on a moving belt is a genuinely dangerous thing.
           </p>
           <p>
@@ -215,7 +215,7 @@ export default {
           <p>
             The pad should be larger than the foot sitting on it, so the whole foot is supported
             and the pad does not roll at the edges. Look underneath your treadmill before you buy.
-            Many folding treadmills stand on two adjustable rear feet and two front points at the
+            Many <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>folding treadmills</a> stand on two adjustable rear feet and two front points at the
             motor end, often wheels or a frame rail. A 4 x 4-inch pad covers most adjustable feet
             with room to spare. Walking pads usually sit on a row of small rubber feet along the
             base, which suits smaller pads, one per foot.
@@ -298,7 +298,7 @@ export default {
             <li><strong>Check again after a week</strong>. Sorbothane and rubber settle slightly under load; re-centre any pad that has crept and re-level if needed.</li>
           </ol>
           <p>
-            Folding treadmills need one extra thought. When you fold the deck and wheel the machine
+            Folding treadmills need one extra thought. When you <a href="/how-to-fold-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>fold the deck</a> and wheel the machine
             away, loose pads stay behind and may not be in quite the right place when you set it up
             again. Either leave the pads where the feet land and check them each time, or choose a
             fabric-faced pad, which is designed to be repositioned without sticking. Some raw

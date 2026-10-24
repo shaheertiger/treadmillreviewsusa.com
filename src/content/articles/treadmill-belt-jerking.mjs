@@ -43,7 +43,7 @@ export default {
             <strong>A stutter with each footstrike</strong> is friction or tension: a dry deck or a
             slack belt letting the belt hesitate under your weight. <strong>Speed that surges or
             fluctuates on its own</strong>, independent of the belt position and your stride, is
-            electrical: the speed sensor, the controller board, worn motor brushes or a loose
+            electrical: the speed sensor, the controller board, worn <a href="/treadmill-motor-brushes/" class="text-[#0F62FE] font-medium" data-autolink>motor brushes</a> or a loose
             connection.
           </p>
           <p>
@@ -100,7 +100,7 @@ export default {
       heading: 'Surging on Its Own: Stop Using It First',
       html: `          <p>
             Our <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a>
-            names four symptoms that mean stop immediately rather than diagnose: a burning smell, a
+            names four symptoms that mean stop immediately rather than diagnose: a <a href="/treadmill-burning-smell/" class="text-[#0F62FE] font-medium" data-autolink>burning smell</a>, a
             breaker that trips on start-up, a belt that keeps moving after the safety key is pulled,
             and speed that surges on its own. This page sits on the last of those, and it is worth
             being clear about why it is on the list.
@@ -210,7 +210,7 @@ export default {
           </p>
           <p>
             This symptom has its own full guide, because the diagnosis order matters and the
-            commonest first instinct — tightening the belt — is usually wrong. In short: a dry deck
+            commonest first instinct — <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>tightening the belt</a> — is usually wrong. In short: a dry deck
             raises friction until your weight is enough to make the belt slip on the front roller;
             a genuinely slack belt does the same thing for a different reason; and a motor that is
             hot or undersized for the user loses speed under each footstrike. Lubrication comes
@@ -270,7 +270,7 @@ export default {
       heading: 'The Speed Sensor: When the Controller Is Misinformed',
       html: `          <p>
             Most home treadmills measure belt speed with a small sensor near the front roller or
-            motor — commonly a reed switch or optical sensor triggered by a magnet or a marked disc
+            motor — commonly a <a href="/treadmill-speed-sensor/" class="text-[#0F62FE] font-medium" data-autolink>reed switch</a> or optical sensor triggered by a magnet or a marked disc
             as it rotates. The controller counts those pulses and adjusts motor output to hold the
             speed you selected. It is a feedback loop, and it is only as good as the information it
             receives.

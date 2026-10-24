@@ -126,8 +126,8 @@ export default {
               so if you bought a stackable set on Amazon in that window, check the brand and the printed
               resistance on the strap.</li>
             <li><strong>SPRI ultra heavy resistance tubes (2019)</strong>, whose rubber could separate from
-              the handle and strike the user, and <strong>Fitness Gear resistance tubes</strong> sold by Dick's
-              Sporting Goods (2011 and 2017). Bollinger (2014) and Perfect Fitness (2013) also recalled
+              the handle and strike the user, and <strong>Fitness Gear resistance tubes</strong> sold by <a href="/dicks-sporting-goods-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Dick's
+              Sporting Goods</a> (2011 and 2017). Bollinger (2014) and Perfect Fitness (2013) also recalled
               resistance bands over injury hazards.</li>
             <li><strong>Rogue's MobilityWOD door anchor (2015)</strong>, whose strap could pull free under
               load, and the <strong>Ethos Pull-Up Assist (2019)</strong>, whose plastic clip could break.</li>
@@ -435,7 +435,7 @@ export default {
             choice of band and exercise is your therapist's call, not ours. For recovery work after training,
             our guide to
             <a href="/best-recovery-tools-for-weightlifters/" class="text-[#0F62FE] font-medium">recovery tools for lifters</a>
-            covers foam rollers, massage guns and similar kit.
+            covers foam rollers, <a href="/best-massage-guns/" class="text-[#0F62FE] font-medium" data-autolink>massage guns</a> and similar kit.
           </p>`,
     },
   ],
@@ -651,6 +651,12 @@ export default {
       title: 'Best Cable Machines for Home',
       blurb: 'The constant, measurable pull that tube bands imitate, and how much space a cable station really needs.',
       url: '/best-cable-machines-for-home-gym/',
+    },
+    {
+      kicker: 'Review',
+      title: 'GymProLuxe Review',
+      blurb: 'What we could and could not verify about the seller and its products before you buy.',
+      url: '/gymproluxe-review/',
     },
   ],
   bottomLine: [

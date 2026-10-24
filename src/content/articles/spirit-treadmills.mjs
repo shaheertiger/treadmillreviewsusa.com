@@ -127,8 +127,8 @@ export default {
             Spirit Fitness is owned by Dyaco International, a fitness equipment company based in
             Taipei. Dyaco's own corporate timeline records that it acquired Spirit Fitness, "a
             well-known fitness brand headquartered in Jonesboro, Arkansas", in 2008, and a trade
-            announcement at the time described Spirit as a maker of home and light commercial
-            fitness equipment since 1986. Spirit's own material elsewhere dates its first product to
+            announcement at the time described Spirit as a maker of home and light <a href="/commercial-gym-equipment/" class="text-[#0F62FE] font-medium" data-autolink>commercial
+            fitness equipment</a> since 1986. Spirit's own material elsewhere dates its first product to
             1983, so the founding year depends on whose account you read.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Where they are made</h3>
@@ -142,7 +142,7 @@ export default {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Spirit, Sole and XTERRA</h3>
           <p>
-            Dyaco's timeline also records an international distribution agreement with Sole Fitness
+            Dyaco's timeline also records an international distribution agreement with <a href="/sole-fitness/" class="text-[#0F62FE] font-medium" data-autolink>Sole Fitness</a>
             in 2010 and the acquisition of the XTERRA Fitness brand rights in 2013. In practice that
             means a Spirit and a Sole are cousins rather than strangers: they come from the same
             corporate family, are sold through overlapping dealer networks, and compete on similar
@@ -315,14 +315,14 @@ export default {
       html: `          <p>
             Decide on the delivered price, the dealer and the console, because the two brands are
             close on paper and share a parent company. Sole's own site publishes head-to-head
-            comparisons of the XT485 with its F80 and of the XT685 with its TT8, which tells you who
+            comparisons of the XT485 with its <a href="/sole-f80-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>F80</a> and of the XT685 with its TT8, which tells you who
             each brand sees as its rival, and both brands lead with long frame and motor cover and
             consoles that need no membership.
           </p>
           <p>
             The differences are in the detail. Spirit's residential parts term is ten years across
             the XT range. Sole's terms vary by model and have changed between model years, and our
-            pages on the Sole F80 and F85 are held back as drafts precisely because current Sole
+            pages on the Sole F80 and <a href="/sole-f85-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>F85</a> are held back as drafts precisely because current Sole
             figures conflict across sources, so get the specific Sole model's terms in writing.
             Sole sells direct online and through large retailers such as Dick's Sporting Goods; Spirit leans on specialist dealers,
             which can mean better advice and local service but less aggressive discounting.

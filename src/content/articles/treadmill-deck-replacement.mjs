@@ -52,7 +52,7 @@ export default {
           </p>
           <p>
             Before any of that, confirm the deck is actually the problem. The symptoms overlap with
-            a dry deck and a worn belt, and both are cheaper to fix. The next two sections explain
+            a dry deck and a <a href="/how-often-should-a-treadmill-belt-be-replaced/" class="text-[#0F62FE] font-medium" data-autolink>worn belt</a>, and both are cheaper to fix. The next two sections explain
             what the deck is and how to tell it has worn, and the rest of the page walks through
             the flip, the replacement, the cost and the decision about whether the machine is worth
             it.
@@ -149,7 +149,7 @@ export default {
             deck is load on the motor. A motor that is noticeably hotter than it used to be after a
             session, a hot-electrics smell from the hood, or a breaker that holds at walking pace
             and trips when you run, can all be a worn deck making the motor work far harder than it
-            was designed to. A burning smell is a stop-now symptom regardless of cause.
+            was designed to. A <a href="/treadmill-burning-smell/" class="text-[#0F62FE] font-medium" data-autolink>burning smell</a> is a stop-now symptom regardless of cause.
           </p>
           <p>
             <strong>Visible wear with the belt lifted.</strong> This is the confirmation. With the
@@ -251,7 +251,7 @@ export default {
       html: `          <p>
             What follows is the general shape of the job, so that you can judge whether to take it
             on and know what a technician is doing when you pay for it. It is not a substitute for
-            your manual, which sets the order of disassembly, the bolt locations and the torque for
+            your manual, which sets the order of <a href="/how-to-disassemble-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>disassembly</a>, the bolt locations and the torque for
             your model. Where this page and the manual differ, the manual wins.
           </p>
           <ol>
@@ -420,8 +420,8 @@ export default {
             deck that is looked after can outlast several belts and the motor besides.
           </p>
           <ul>
-            <li><strong>Lubricate on schedule, with the right product.</strong> Silicone treadmill
-            lubricant, at the interval in your manual, checked by hand between times. Not
+            <li><strong>Lubricate on schedule, with the right product.</strong> <a href="/best-treadmill-lubricant/" class="text-[#0F62FE] font-medium" data-autolink>Silicone treadmill
+            lubricant</a>, at the interval in your manual, checked by hand between times. Not
             household oils, not sprays not intended for treadmills. Our guide to
             <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium">how often to lubricate a treadmill</a>
             sets out a workable routine. If the manual says the deck is a lubricant-free design,

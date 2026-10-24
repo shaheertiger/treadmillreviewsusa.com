@@ -65,7 +65,7 @@ export default {
             having brushless motors, and one independent teardown of a Q2 Urban reported a brushed
             motor instead. The Z10’s own product page gives two noise figures twenty decibels apart.
             And the trial that features in every listing sits alongside a refund policy that requires
-            the machine to be unused and in its original packaging. None of that makes a DeerRun pad
+            the machine to be unused and in its <a href="/how-to-pack-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>original packaging</a>. None of that makes a DeerRun pad
             dangerous or useless. It does mean the useful way to judge one is as a set of claims with a
             price attached, which is how the rest of this page reads it.
           </p>`,
@@ -168,7 +168,7 @@ export default {
             The second is that the expensive end of the range is new. Several of the larger Apex, Rise and
             X50 machines were launched in 2026, some sold as pre-orders with promised ship dates, and we
             found no independent review of any of them. Several listings for the big treadmills give a top speed and a weight limit
-            but no belt length, which is the figure that decides whether a treadmill can be run on at all.
+            but no <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium" data-autolink>belt length</a>, which is the figure that decides whether a treadmill can be run on at all.
           </p>`,
     },
     {
@@ -333,7 +333,7 @@ export default {
             Sperax is a different company, and nothing in the CPSC’s warning concerns DeerRun. The one
             point of overlap is a name: the warning covers a Sperax model called the Q1, and DeerRun has
             also sold pads called the Q1 Classic and Q1 Urban. If you own a pad labelled Q1, check the
-            brand on the label near the power switch. The Sperax units are black with red trim and
+            brand on the label near the <a href="/how-to-turn-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>power switch</a>. The Sperax units are black with red trim and
             branded Sperax.
           </p>
           <p>
@@ -365,7 +365,7 @@ export default {
             <strong>checkout add-ons</strong> called Shipping Protection, Ship-Date Protection, Price Lock
             Guarantee and Wait &amp; Earn Credit, each with its own terms; the price and ship-date products
             apply to pre-orders and pay out in DeerRun gift cards rather than cash. And the store says
-            some equipment can be bought with HSA or FSA funds through a third-party health assessment
+            some equipment can be bought with <a href="/are-treadmills-hsa-fsa-eligible/" class="text-[#0F62FE] font-medium" data-autolink>HSA or FSA</a> funds through a third-party health assessment
             service. That eligibility depends on your own plan and circumstances, and nothing here is tax
             or medical advice.
           </p>
@@ -448,7 +448,7 @@ export default {
             <li><strong>The first week.</strong> Run the pad through its full speed and incline range, listen
             for noise you can live with, and check the belt tracks straight. Faults found early are the ones
             the policies cover most clearly.</li>
-            <li><strong>Maintenance.</strong> Like any walking pad, it needs periodic belt lubrication and
+            <li><strong>Maintenance.</strong> Like any walking pad, it needs periodic <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium" data-autolink>belt lubrication</a> and
             a centred belt; the independent hands-on review suggested every six months or 100 hours.</li>
           </ul>
           <p>
@@ -526,6 +526,12 @@ export default {
       title: 'MaxKare Treadmill Guide',
       blurb: 'Another marketplace brand, read the same way.',
       url: '/maxkare-treadmill/',
+    },
+    {
+      kicker: 'Legacy',
+      title: 'LIVESTRONG Treadmills',
+      blurb: 'A discontinued Johnson Health Tech line: the LS10.0T, buying used, parts and what replaced it.',
+      url: '/livestrong-treadmill/',
     },
   ],
   bottomLine: [

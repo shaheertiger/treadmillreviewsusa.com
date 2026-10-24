@@ -255,8 +255,8 @@ export default {
             <strong>Serviceability and longevity.</strong> A connected treadmill has more to go
             wrong than a plain one — the screen, its electronics and its software are all failure
             points a mechanical console does not have — and that is true of both platforms. Both
-            companies service their own hardware; neither is a machine you want a general repair
-            technician improvising on. Check the warranty on the frame, motor, parts and labour
+            companies service their own hardware; neither is a machine you want a general <a href="/treadmill-repair-near-me/" class="text-[#0F62FE] font-medium" data-autolink>repair
+            technician</a> improvising on. Check the warranty on the frame, motor, parts and labour
             separately, and check how long the screen and software are covered, because that is
             where connected-treadmill complaints tend to cluster. Our
             <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
@@ -294,8 +294,8 @@ export default {
             when the subscription ends? For some buyers that is fine — the deck and motor are still
             good. For others it is the moment they realise they paid a premium for the screen
             twice: once in the hardware and again every month. If you think there is any
-            realistic chance you will stop paying, weigh the machine on its merits as a manual
-            treadmill, and compare it with a non-connected machine at the same price. The
+            realistic chance you will stop paying, weigh the machine on its merits as a <a href="/best-manual-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>manual
+            treadmill</a>, and compare it with a non-connected machine at the same price. The
             comparison is rarely flattering to the screen.
           </p>`,
     },
@@ -334,7 +334,7 @@ export default {
           </p>
           <p>
             And if the content you actually want is neither, a running platform that works with
-            any treadmill and a foot pod is a third route; our
+            any treadmill and a <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium" data-autolink>foot pod</a> is a third route; our
             <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium">Zwift treadmill guide</a>
             explains how that works.
           </p>`,
@@ -349,7 +349,7 @@ export default {
           </p>
           <p>
             The case for a connected platform is real when it changes behaviour. If a class with a
-            start time gets you on the machine three times a week when a blank console would not,
+            start time gets you on the machine three times a week when a <a href="/treadmill-console-not-working/" class="text-[#0F62FE] font-medium" data-autolink>blank console</a> would not,
             the membership is cheap for what it does. If automatic incline turns a walk you tolerate
             into a hike you look forward to, likewise. The platforms are at their best for people
             who need an external structure and enjoy the content.

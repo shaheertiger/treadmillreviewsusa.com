@@ -223,8 +223,8 @@ export default {
             treadmill or brought by you. Almost everything else follows from that.
           </p>
           <p>
-            <strong>Pro Series: the built-in screen tier.</strong> The Carbon Pro 2000 and Carbon
-            Pro 9000 share a 20 by 60-inch belt, 0 to 12% incline with no decline, a 12 mph top
+            <strong>Pro Series: the built-in screen tier.</strong> The Carbon Pro 2000 and <a href="/proform-carbon-pro-9000-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Carbon
+            Pro 9000</a> share a 20 by 60-inch belt, 0 to 12% incline with no decline, a 12 mph top
             speed, a 350 lb user capacity, a 7.75-inch step-up height and a folding frame. ProForm
             lists an in-box weight of about 249 lb for both. The difference is the screen and the
             motor: a 10-inch HD touchscreen on the 2000 and a 16-inch one on the 9000, with
@@ -233,7 +233,7 @@ export default {
           </p>
           <p>
             <strong>Carbon Series: the bring-your-own-device tier.</strong> The Carbon TLX and
-            Carbon TLS have small LCD displays — 7 inches and 5 inches — with a shelf for your own
+            <a href="/proform-carbon-tls-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Carbon TLS</a> have small LCD displays — 7 inches and 5 inches — with a shelf for your own
             phone or tablet. You connect that device to the treadmill over Bluetooth, and iFIT then
             runs on the device and controls the machine's speed and incline. Both are rated to 300
             lb, both fold, and both reach 12% incline. They differ on the deck and the speed: the
@@ -387,8 +387,8 @@ export default {
             are not part of the current range.
           </p>
           <p>
-            <strong>Discontinued names sold as new or nearly new.</strong> The Pro 5000, the Power
-            995i and 1295i, the 505 CST, the Trainer series and the Sport series were not listed on
+            <strong>Discontinued names sold as new or nearly new.</strong> The Pro 5000, the <a href="/proform-power-995i-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Power
+            995i</a> and 1295i, the 505 CST, the Trainer series and the Sport series were not listed on
             ProForm's own US site on 13 October 2026, and neither was the Carbon TL, which still
             appears in a large US retailer's listings. Some of these are reasonable machines at a genuine
             clearance price, but check how old the stock is, which console and software version it
@@ -477,7 +477,7 @@ export default {
             <strong>If you want steep incline or decline.</strong> No current ProForm goes beyond 12%
             or below 0%. Our
             <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">NordicTrack roundup</a>
-            covers machines that decline and incline trainers that reach 40%.
+            covers machines that decline and <a href="/incline-trainer-vs-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>incline trainers</a> that reach 40%.
           </p>
           <p>
             <strong>If you weigh more than about 300 lb, or run fast and often.</strong> The Pro

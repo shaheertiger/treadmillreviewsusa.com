@@ -42,7 +42,7 @@ export default {
           <p>
             But three things are almost never right. An ordinary multi-outlet power strip, which is
             not designed for a load like a treadmill motor and tends to trip or run hot. An
-            extension cord, which most manufacturers prohibit outright. And plugging the treadmill
+            <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium" data-autolink>extension cord</a>, which most manufacturers prohibit outright. And plugging the treadmill
             into a circuit it shares with other heavy appliances, which causes more nuisance trips
             and electrical stress than any surge.
           </p>
@@ -198,7 +198,7 @@ export default {
       html: `          <p>
             Treadmill motors are fairly robust against brief electrical disturbances. The part that
             is not is the electronics — and above all the motor controller board, sometimes called
-            the lower board or motor control board, which sits in the motor compartment and turns
+            the lower board or motor control board, which sits in the <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium" data-autolink>motor compartment</a> and turns
             mains power into the regulated supply that drives the motor.
           </p>
           <p>
@@ -263,7 +263,7 @@ export default {
           <p>
             A treadmill under load is one of the bigger draws in a home. Share its circuit with a
             space heater, a dehumidifier, an air conditioner or a hairdryer, and the combined load
-            can trip the breaker, often at the moment the treadmill's motor demands more. Even when
+            can <a href="/treadmill-trips-breaker/" class="text-[#0F62FE] font-medium" data-autolink>trip the breaker</a>, often at the moment the treadmill's motor demands more. Even when
             it does not trip, a heavily loaded circuit can let voltage sag, and electronics dislike
             running on a sagging supply.
           </p>
@@ -337,7 +337,7 @@ export default {
             exactly what the device is there to catch.
           </p>
           <p>
-            If you are choosing where to put a treadmill and have a free choice, this is one more
+            If you are choosing <a href="/where-to-put-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>where to put a treadmill</a> and have a free choice, this is one more
             reason a finished indoor room on a dedicated circuit is easier than a garage.
           </p>`,
     },
@@ -459,6 +459,12 @@ export default {
       title: 'Treadmill Troubleshooting',
       blurb: 'Symptoms, likely causes and fixes for the common faults.',
       url: '/treadmill-troubleshooting/',
+    },
+    {
+      kicker: 'Electrical',
+      title: 'Best Surge Protectors for Treadmills',
+      blurb: 'Single-outlet protectors rated for the load, why a power strip is the wrong tool, and what the manual says.',
+      url: '/best-surge-protectors-for-treadmills/',
     },
   ],
   bottomLine: [

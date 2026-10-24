@@ -158,7 +158,7 @@ export default {
       id: 'reading-the-listings',
       heading: 'Where MaxKare Listings Contradict Themselves',
       html: `          <p>
-            Budget treadmill listings are written to sell, and figures drift as listings are copied
+            <a href="/best-budget-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Budget treadmill</a> listings are written to sell, and figures drift as listings are copied
             between models and marketplaces. MaxKare’s are a clear example. These are the
             inconsistencies we found in the brand’s own store on the day we checked.
           </p>
@@ -190,7 +190,7 @@ export default {
             kind of figure it is: “DC motor, peak power 3.0HP”. Peak ratings describe a brief maximum,
             not what the motor can sustain for an hour of walking, and they are always larger than
             the continuous (CHP) figure better-documented brands publish. A MaxKare 3.5 HP motor and a
-            3.5 CHP motor on a mid-range treadmill are not comparable numbers. Our
+            3.5 CHP motor on a <a href="/treadmills-under-1500/" class="text-[#0F62FE] font-medium" data-autolink>mid-range treadmill</a> are not comparable numbers. Our
             <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
             explains the difference.
           </p>

@@ -326,7 +326,7 @@ export default {
             A dog treadmill is built for a dog's gait and behaviour rather than a person's. Typical
             differences are a lower step-up height, side panels or walls that keep the dog centred
             and stop it stepping off, a longer belt relative to the machine's footprint for larger
-            breeds, and controls placed out of the dog's reach. Most are motorized; slatmills, used
+            breeds, and controls placed out of the dog's reach. Most are motorized; <a href="/how-to-build-a-dog-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>slatmills</a>, used
             for high-drive working and sporting dogs, are non-motorized and let the dog set the
             pace, rather like a curved manual treadmill for people.
           </p>
@@ -346,7 +346,7 @@ export default {
       id: 'vr',
       heading: 'VR and Omnidirectional Treadmills',
       html: `          <p>
-            A VR treadmill lets you walk or run in any direction inside a virtual-reality game while
+            A <a href="/best-vr-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>VR treadmill</a> lets you walk or run in any direction inside a virtual-reality game while
             staying in one place. Despite the name, most consumer models do not have a belt. The
             Virtuix Omni One and the KAT Walk C2, two of the better-known examples, both use a
             low-friction base and special overshoes: you slide your feet across the surface, sensors
@@ -488,6 +488,12 @@ export default {
       title: 'What Is a Walking Pad?',
       blurb: 'The compact walking type, explained.',
       url: '/what-is-a-walking-pad/',
+    },
+    {
+      kicker: 'History',
+      title: 'History of the Treadmill',
+      blurb: 'From Roman treadwheels and the 1818 prison treadmill to the medical machine and the first home treadmill.',
+      url: '/history-of-the-treadmill/',
     },
   ],
   bottomLine: [

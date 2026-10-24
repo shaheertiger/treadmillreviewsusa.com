@@ -242,7 +242,7 @@ export default {
           </table></div>
           <p>
             NordicTrack also lists RunFlex cushioning, an AutoBreeze fan that changes speed with the
-            workout, two 2-inch speakers, Bluetooth for headphones and heart-rate monitors, and the
+            workout, two 2-inch speakers, Bluetooth for <a href="/best-headphones-for-treadmill-running/" class="text-[#0F62FE] font-medium" data-autolink>headphones</a> and heart-rate monitors, and the
             iFIT features it calls SmartAdjust and ActivePulse. Those are features rather than
             measurements, and how useful they are depends on whether you keep an iFIT membership.
           </p>`,
@@ -572,7 +572,7 @@ export default {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Against the T Series</h3>
           <p>
-            The T Series 10 and 16 are cheaper and built for walking and lighter running: a 20 by 60-inch
+            The <a href="/nordictrack-t-series-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>T Series 10</a> and 16 are cheaper and built for walking and lighter running: a 20 by 60-inch
             belt, incline to 12% with no decline, a 325 lb rating and two years on the motor. Our
             <a href="/nordictrack-t-series-vs-commercial/" class="text-[#0F62FE] font-medium">T Series vs Commercial guide</a>
             covers that choice in full. The short version is that a walker who wants a big screen can save
@@ -732,6 +732,12 @@ export default {
       title: 'Can You Use a NordicTrack Without iFIT?',
       blurb: 'What still works without a membership, and what you give up.',
       url: '/can-you-use-nordictrack-without-ifit/',
+    },
+    {
+      kicker: 'Review',
+      title: 'NordicTrack C 700',
+      blurb: 'The budget entry point into the NordicTrack lineup.',
+      url: '/nordictrack-c-700-treadmill/',
     },
   ],
   bottomLine: [

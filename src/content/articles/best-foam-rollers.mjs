@@ -115,7 +115,7 @@ export default {
             recall description, and searched for foam rollers as a product type. We found no recall
             of any foam roller, vibrating or not. The only Implus recall on record is a 2013 recall of
             Perfect Fitness resistance bands, unrelated to TriggerPoint rollers. Amazon Basics has
-            several recalls on record, including adjustable dumbbells in May 2026, but none involving a
+            several recalls on record, including <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium" data-autolink>adjustable dumbbells</a> in May 2026, but none involving a
             roller. Vibrating rollers contain lithium-ion batteries, so the charging advice in our
             safety section applies to them.
           </p>
@@ -600,6 +600,12 @@ export default {
       title: 'Best Yoga Mats',
       blurb: 'Mats for stretching, floor work and rolling, by material and thickness.',
       url: '/best-yoga-mats/',
+    },
+    {
+      kicker: 'Sauna',
+      title: 'Best Outdoor Saunas',
+      blurb: 'Barrel and cabin saunas: foundations, 240V wiring, permits, wood vs electric heat.',
+      url: '/best-outdoor-saunas/',
     },
   ],
   bottomLine: [

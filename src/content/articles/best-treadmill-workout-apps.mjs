@@ -41,7 +41,7 @@ export default {
       id: 'quick-picks',
       heading: 'Our Picks at a Glance',
       html: `          <p>
-            The quick version: iFIT if you own or are buying a NordicTrack or ProForm treadmill and
+            The quick version: iFIT if you own or are buying a <a href="/nordictrack-vs-proform/" class="text-[#0F62FE] font-medium" data-autolink>NordicTrack or ProForm</a> treadmill and
             want the machine to follow the workout; Zwift or Kinomap if you want a virtual route on a
             machine you already own; Nike Run Club if you want a free coach in your ear; Runna if you
             are training for a race; and Strava to keep the record whatever else you use.
@@ -64,7 +64,7 @@ export default {
             </tbody>
           </table></div>
           <p>
-            If you are choosing a treadmill and an app together, read our guide to
+            If you are <a href="/what-treadmill-should-i-buy/" class="text-[#0F62FE] font-medium" data-autolink>choosing a treadmill</a> and an app together, read our guide to
             <a href="/smart-treadmill-vs-regular/" class="text-[#0F62FE] font-medium">smart versus regular treadmills</a>
             first: whether an app can control the machine is decided by the treadmill, not the app
             store.
@@ -107,7 +107,7 @@ export default {
       id: 'ifit',
       heading: 'iFIT',
       html: `          <p>
-            iFIT is the platform behind NordicTrack and ProForm treadmills, and it is the clearest
+            iFIT is the platform behind NordicTrack and <a href="/proform-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>ProForm treadmills</a>, and it is the clearest
             example of an app that drives the machine. On a compatible treadmill, a trainer-led
             workout or a filmed outdoor route changes the speed and incline for you; you run, and
             the deck rises when the trainer climbs.
@@ -186,7 +186,7 @@ export default {
           <ul>
             <li><strong>On a treadmill:</strong> filmed routes, coaching videos, structured workouts and live sessions with other users, with your activity recorded from the connected console.</li>
             <li><strong>Controls speed or incline:</strong> on compatible machines, Kinomap says it takes control of the equipment and changes the treadmill's incline to follow the route. Which treadmills it can tilt depends on the model, so check Kinomap's compatibility list for yours. Several treadmill makers, including Horizon, Sole and Spirit, name Kinomap among the apps their machines work with.</li>
-            <li><strong>Runs on:</strong> iPhone and iPad, with video on a TV through Apple TV or an HDMI adapter; it can take heart rate from an Apple Watch.</li>
+            <li><strong>Runs on:</strong> iPhone and iPad, with video on a TV through Apple TV or an HDMI adapter; it can take heart rate from an <a href="/best-treadmills-for-apple-watch/" class="text-[#0F62FE] font-medium" data-autolink>Apple Watch</a>.</li>
             <li><strong>Free tier:</strong> yes. Kinomap says its app has a free version with no time or usage limit, alongside a paid Premium version.</li>
             <li><strong>Price:</strong> check the current price for Premium in the app.</li>
           </ul>

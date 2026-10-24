@@ -253,7 +253,7 @@ export default {
           <p>
             <strong>Best for light use.</strong> Treadmill Review Guru recommends the 2-in-1 for light
             use rather than long walks and jogs, and Garage Gym Reviews describes the Redliro pad as an
-            option for walking while working in a small space rather than for intense cardio.
+            option for <a href="/treadmill-desk-guide/" class="text-[#0F62FE] font-medium" data-autolink>walking while working</a> in a small space rather than for intense cardio.
           </p>
           <p>
             <strong>Noise: the sources disagree.</strong> TODAY's tester, using the Mini Walking Pad in
@@ -357,7 +357,7 @@ export default {
           <p>
             Keep the remote somewhere fixed: on a pad with no handrail, it is how you stop the belt.
             Unplug the pad before any adjustment or cleaning. Stop using it and contact the seller if you
-            notice a burning smell, if it trips a breaker, if the speed changes on its own, or if the
+            notice a <a href="/treadmill-burning-smell/" class="text-[#0F62FE] font-medium" data-autolink>burning smell</a>, if it trips a breaker, if the speed changes on its own, or if the
             belt does not stop when told to. Keep children and pets away from it while it is plugged in.
           </p>`,
     },

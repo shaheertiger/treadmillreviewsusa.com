@@ -142,7 +142,7 @@ ${row('Landice', 'Family-run, New Jersey', 'L-Series club and rehabilitation mod
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Star Trac</h3>
           <p>
-            Star Trac belongs to Core Health &amp; Fitness, which also owns StairMaster and the
+            Star Trac belongs to Core Health &amp; Fitness, which also owns <a href="/stairmaster-vs-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>StairMaster</a> and the
             commercial Schwinn and Nautilus lines. Its current treadmills run from the 4TR, aimed at
             hotels and apartment-building gyms, through the 6TR and the 8TRx to the FreeRunner 10TRx.
             Star Trac treadmills are very common on the used market because clubs replace them on a
@@ -215,7 +215,7 @@ ${row('Landice', 'Family-run, New Jersey', 'L-Series club and rehabilitation mod
           <ul>
             <li><strong>Read the console and the motor hood.</strong> The maker's name is usually printed on the console, on the plastic cover over the motor at the front of the deck, or along the side rails. On club-branded equipment the club's logo may be the most prominent, so look for the smaller maker's name too.</li>
             <li><strong>Read the model name on the console.</strong> Names such as Integrity, TRM, 8TRx or T-series identify the line; the console may also be a separate model from the base.</li>
-            <li><strong>Find the serial label.</strong> Commercial treadmills carry a label with the model and serial number, commonly low on the front of the frame near the power switch or socket — Matrix, for example, places it on the lower front crossbar. Photograph it; it gives the exact model and often the year of manufacture.</li>
+            <li><strong>Find the serial label.</strong> Commercial treadmills carry a label with the model and serial number, commonly low on the front of the frame near the <a href="/how-to-turn-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>power switch</a> or socket — Matrix, for example, places it on the lower front crossbar. Photograph it; it gives the exact model and often the year of manufacture.</li>
             <li><strong>Search the model and the word "specifications".</strong> The maker's spec sheet tells you the motor, deck size and electrical requirement. If you want one at home, that last line matters most.</li>
             <li><strong>Ask the staff.</strong> Front-desk staff may not know, but whoever handles maintenance will, and they can usually tell you how old the machines are and when they are due to be replaced.</li>
           </ul>

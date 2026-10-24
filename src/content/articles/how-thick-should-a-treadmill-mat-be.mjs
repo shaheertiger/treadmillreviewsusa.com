@@ -184,8 +184,8 @@ export default {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What that does to the machine</h3>
           <p>
-            A frame that is not level side to side pulls the belt towards the low side, so belt
-            tracking that was set correctly drifts. A frame that moves under each step works its
+            A frame that is not level side to side pulls the belt towards the low side, so <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>belt
+            tracking</a> that was set correctly drifts. A frame that moves under each step works its
             joints and bolts, and that movement is felt as wobble through the handrails and heard
             as creaks. On a folding machine, the hinge and the lift mechanism take some of that
             movement too. None of this is dramatic on day one, which is why people do not connect
@@ -305,7 +305,7 @@ export default {
             smaller than the frame: a 20 x 60-inch belt can sit on a machine 35 inches wide and 75
             inches long or more. Use the assembled footprint from the manual, measured unfolded,
             and add a few inches on every side and more at the front and back. In practice that
-            usually means about 30 x 60 inches for a compact walking pad, 36 x 78 inches for a
+            usually means about 30 x 60 inches for a compact <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a>, 36 x 78 inches for a
             typical folding treadmill, and 36 x 90 inches or a 48-inch-wide mat for long or wide
             machines. The mat sits inside the safety clearance the manual asks for behind the
             machine; it does not replace it.
@@ -443,7 +443,7 @@ export default {
             more, accepting that it reduces the thud rather than removing it.</li>
             <li><strong>Walking pad:</strong> a compact standard mat, with the vents kept
             clear.</li>
-            <li><strong>Avoid at any thickness:</strong> soft foam tiles, yoga mats and anything
+            <li><strong>Avoid at any thickness:</strong> soft foam tiles, <a href="/best-yoga-mats/" class="text-[#0F62FE] font-medium" data-autolink>yoga mats</a> and anything
             sold as cushioning.</li>
           </ul>
           <p>

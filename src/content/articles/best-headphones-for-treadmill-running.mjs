@@ -368,7 +368,7 @@ export default {
       id: 'who-should-skip',
       heading: 'Who Should Buy Something Else',
       html: `          <p>
-            <strong>If you only walk.</strong> At walking pace on a walking pad, almost any
+            <strong>If you only walk.</strong> At walking pace on a <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a>, almost any
             comfortable wireless earbuds stay in. You do not need ear-hooks or a sport design; the
             buds you already own are probably fine, and the money is better spent elsewhere.
           </p>

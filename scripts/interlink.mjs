@@ -16,15 +16,17 @@
  * never touched, so FAQPage and Product JSON-LD stay identical.
  *
  * Rules, so pages do not turn into link farms:
- *   - only bare <p> and <li> blocks, never headings, tables, buttons, existing
- *     links or dark/hero panels;
+ *   - only bare <p> and <li> blocks, never headings, tables, buttons, bold
+ *     labels, existing links or dark/hero panels;
  *   - at most one new link per block, and none in a block that already has two;
  *   - each target at most once per page, and never if the page links to it already;
  *   - a per-page cap that shrinks as the page's existing link count grows;
  *   - when there are more candidates than the cap allows, the least-linked
  *     targets win, then targets in the same section hub.
  *
- * Idempotent: re-running only adds links for mentions that are still unlinked.
+ * Idempotent: added links carry `data-autolink`, which counts against the cap on
+ * later runs, so re-running only fills pages that have room (e.g. a new article
+ * whose topic is mentioned elsewhere) and never stacks links on a page.
  */
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join } from 'path';
@@ -38,8 +40,9 @@ const ANCHORS = JSON.parse(readFileSync(join(import.meta.dirname, 'interlink-anc
 const WRITE = process.argv.includes('--write');
 const LINK_CLASS = 'text-[#0F62FE] font-medium';
 
-// Elements whose text must never become a link.
-const NO_LINK_INSIDE = new Set(['a', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'button', 'code', 'table', 'nav', 'figure', 'script', 'style', 'svg', 'summary']);
+// Elements whose text must never become a link. Bold runs are usually lead-in
+// labels ("<strong>Holding the handrails.</strong> …"), which read badly as links.
+const NO_LINK_INSIDE = new Set(['a', 'strong', 'b', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'button', 'code', 'table', 'nav', 'figure', 'script', 'style', 'svg', 'summary']);
 // Containers whose styling a blue link would clash with.
 const DARK_CLASS = /\b(bg-gray-9\d\d|bg-black|text-white|bg-\[#0F62FE\]|bg-\[#FF5A1F\])\b/;
 
@@ -180,7 +183,7 @@ function blocksIn(source, start, end) {
       const idx = stack.map((e) => e.name).lastIndexOf(name);
       if (idx === -1) continue;
       stack.length = idx;
-      if (open && stack.length === open.depth) {
+      if (open && stack.length < open.depth) {
         open.end = m.index;
         blocks.push(open);
         open = null;
@@ -199,6 +202,8 @@ function blocksIn(source, start, end) {
   return blocks.filter((b) => {
     const html = source.slice(b.start, b.end);
     if (html.includes('${') || /[{}]/.test(html)) return false;
+    // One added link per block, across runs as well as within one.
+    if (html.includes('data-autolink')) return false;
     b.existingLinks = (html.match(/<a\s/g) ?? []).length;
     return b.existingLinks < 2;
   });
@@ -212,10 +217,16 @@ for (const page of pages) {
   const source = readFileSync(page.srcPath, 'utf-8');
   const rendered = readFileSync(join(PAGES_DIR, page.file), 'utf-8');
   const alreadyLinked = hrefsIn(rendered);
-  const bodyLinks = [...regionsOf(page, source)].reduce(
-    (n, [s, e]) => n + (source.slice(s, e).match(/<a\s/g) ?? []).length,
-    0
-  );
+  // Links this script added on an earlier run carry data-autolink, so the cap is
+  // measured against the page's own links and re-running cannot exceed it.
+  let ownLinks = 0;
+  let autoLinks = 0;
+  for (const [s, e] of regionsOf(page, source)) {
+    const region = source.slice(s, e);
+    autoLinks += (region.match(/<a [^>]*data-autolink/g) ?? []).length;
+    ownLinks += (region.match(/<a\s/g) ?? []).length;
+  }
+  ownLinks -= autoLinks;
 
   const candidates = [];
   regionsOf(page, source).forEach(([rs, re]) => {
@@ -240,7 +251,7 @@ for (const page of pages) {
       a.at - b.at
   );
 
-  const cap = capFor(bodyLinks);
+  const cap = capFor(ownLinks) - autoLinks;
   const chosen = [];
   const usedTargets = new Set();
   const usedBlocks = new Set();
@@ -268,7 +279,7 @@ const regenerate = [];
 for (const { page, source, chosen } of plans) {
   let out = source;
   for (const c of [...chosen].sort((a, b) => b.at - a.at)) {
-    const link = `<a href="/${c.target}/" class="${LINK_CLASS}">${c.text}</a>`;
+    const link = `<a href="/${c.target}/" class="${LINK_CLASS}" data-autolink>${c.text}</a>`;
     out = out.slice(0, c.at) + link + out.slice(c.at + c.text.length);
   }
   total += chosen.length;

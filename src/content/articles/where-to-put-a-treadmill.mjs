@@ -128,7 +128,7 @@ export default {
             incline and the deck's length, and it is often larger than people expect — on
             machines with steep inclines it can add a good deal more than the step-up itself. The
             manual sometimes states the maximum height of the deck at full incline; if it does not,
-            the honest approach is to allow generously. Incline trainers, with their much
+            the honest approach is to allow generously. <a href="/incline-trainer-vs-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Incline trainers</a>, with their much
             steeper maximum grades, are the machines where this figure matters most.
           </p>
           <p>
@@ -139,8 +139,8 @@ export default {
           <p>
             <strong>Then compare with the lowest point of the ceiling</strong> in the zone where you
             will stand, not the room's nominal height. Beams, boxed pipework, a pendant light, a
-            ceiling fan and the underside of a staircase are all lower than the plaster. Tall
-            runners on incline trainers in basements are the classic failure.
+            ceiling fan and the underside of a staircase are all lower than the plaster. <a href="/best-treadmills-for-tall-runners/" class="text-[#0F62FE] font-medium" data-autolink>Tall
+            runners</a> on incline trainers in basements are the classic failure.
           </p>
           <p>
             If the sum is tight, the options are a machine with a lower deck, a machine with less
@@ -249,7 +249,7 @@ export default {
             electronics, and it swells the fibreboard deck and lifts its laminate. A dehumidifier
             running in the room, a cover over the machine between sessions, and a mat that keeps
             the frame off a cold concrete floor all make a real difference. Check the underside of
-            the frame and the motor compartment for surface rust a few times a year.
+            the frame and the <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium" data-autolink>motor compartment</a> for surface rust a few times a year.
           </p>
           <p>
             <strong>Cold.</strong> A cold machine is stiffer: lubricant thickens, the belt is less
@@ -327,7 +327,7 @@ export default {
           <p>
             <strong>Noise against the television.</strong> A treadmill at running pace is loud
             enough that whoever is watching television in the same room will turn it up, and then
-            you will not hear your own headphones. Walking is fine; running needs either an empty
+            you will not hear your own <a href="/best-headphones-for-treadmill-running/" class="text-[#0F62FE] font-medium" data-autolink>headphones</a>. Walking is fine; running needs either an empty
             room or an understanding household. A quieter machine helps, and so does a thick mat
             on a hard floor, where the hum carries furthest.
           </p>
@@ -542,6 +542,12 @@ export default {
       title: 'How to Move a Treadmill',
       blurb: 'Stairs, turns and doorways without wrecking the machine or your back.',
       url: '/how-to-move-a-treadmill/',
+    },
+    {
+      kicker: 'Kids',
+      title: 'Kids Treadmill Guide',
+      blurb: 'Age limits by brand, CDC and AAP activity advice, child injury data, toy treadmills and a home checklist.',
+      url: '/kids-treadmill/',
     },
   ],
   bottomLine: [

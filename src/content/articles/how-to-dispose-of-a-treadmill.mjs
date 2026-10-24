@@ -80,7 +80,7 @@ export default {
           <p>
             The working-or-broken question decides most of this, and it is worth being sure of the
             answer. A treadmill that will not start is often suffering from something cheap — a
-            missing safety key, a tripped reset switch on the frame, or a blown fuse. Ten minutes
+            <a href="/treadmill-safety-key-not-working/" class="text-[#0F62FE] font-medium" data-autolink>missing safety key</a>, a tripped reset switch on the frame, or a blown fuse. Ten minutes
             with our <a href="/treadmill-wont-turn-on/" class="text-[#0F62FE] font-medium">treadmill won't turn on guide</a>
             can turn scrap back into something you can sell.
           </p>`,
@@ -132,7 +132,7 @@ export default {
       heading: 'Giving It Away',
       html: `          <p>
             If the machine works but the likely sale price is small — an older budget model, a
-            walking pad with a tired belt — listing it free is often the more rational choice. It
+            <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> with a tired belt — listing it free is often the more rational choice. It
             removes the haggling, it goes quickly, and the person who takes it does the carrying.
           </p>
           <p>
@@ -269,7 +269,7 @@ export default {
           </p>
           <p>
             Pricing is usually based on the volume the item takes up in the truck, with a minimum
-            charge, and sometimes extras for heavy items, stairs or disassembly. As a typical range,
+            charge, and sometimes extras for heavy items, stairs or <a href="/how-to-disassemble-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>disassembly</a>. As a typical range,
             a single treadmill tends to cost somewhere around $75 to $250, with the higher end for
             large machines, difficult access, high-cost areas, or a same-day booking. Several items
             at once is usually better value than one, so it is worth grouping the treadmill with
@@ -331,7 +331,7 @@ export default {
           </p>
           <p>
             <strong>Log out of the fitness platform.</strong> If the console is signed in to an
-            account such as iFIT or another manufacturer's app, sign out on the machine and then, in
+            account such as <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium" data-autolink>iFIT</a> or another manufacturer's app, sign out on the machine and then, in
             the app or on the website, remove the device from your account if that option exists.
           </p>
           <p>

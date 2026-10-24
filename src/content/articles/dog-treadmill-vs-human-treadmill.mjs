@@ -46,7 +46,7 @@ export default {
             area sized to a four-legged stride, side panels to keep the dog centred, nothing at nose
             height at the front, a low step-on, and controls you can reach from beside the
             machine.</strong> A human treadmill is built around a person who can see the deck edges,
-            hold the rails and pull a safety key — none of which a dog can do.
+            <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>hold the rails</a> and pull a safety key — none of which a dog can do.
           </p>
           <p>
             That does not make a human treadmill unusable for every dog. Some healthy adult dogs can
@@ -279,7 +279,7 @@ export default {
       heading: 'Noise, Vibration and Sound-Sensitive Dogs',
       html: `          <p>
             Motor whine, belt rumble and the beep of a console bother many dogs more than they bother
-            people wearing headphones. Noise is a real difference between machines, but less of a clean
+            people wearing <a href="/best-headphones-for-treadmill-running/" class="text-[#0F62FE] font-medium" data-autolink>headphones</a>. Noise is a real difference between machines, but less of a clean
             difference between the two categories than you might hope.
           </p>
           <p>
@@ -298,7 +298,7 @@ export default {
             claim of quiet operation with caution and plan for a slow introduction either way.
           </p>
           <p>
-            <strong>Slatmills.</strong> A non-motorised slatmill has no motor at all, which removes
+            <strong>Slatmills.</strong> A <a href="/manual-vs-motorized-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>non-motorised</a> slatmill has no motor at all, which removes
             the whine. It still makes rolling and slat noise, and its central appeal is different:
             the dog sets the pace and the belt stops when the dog does.
           </p>

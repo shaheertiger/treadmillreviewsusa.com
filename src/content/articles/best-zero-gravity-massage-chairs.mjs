@@ -63,7 +63,7 @@ export default {
             height and weight limits, dimensions, track and recline are confirmed by the maker, an
             independent hands-on review and the Amazon listing, and it is sold on Amazon with a
             standard return window. Spend less on the Real Relax if budget rules, more on the Osaki if
-            your room is tight and you want white-glove delivery, and look at the Human Touch if you
+            your room is tight and you want <a href="/treadmill-delivery-guide/" class="text-[#0F62FE] font-medium" data-autolink>white-glove delivery</a>, and look at the Human Touch if you
             do not need zero gravity at all.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
@@ -345,7 +345,7 @@ export default {
           </p>
           <p>
             Keep the box if you have room until the return window closes. Several sellers require the
-            original packaging for a return, and return shipping on a 200 lb freight item is rarely
+            <a href="/how-to-pack-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>original packaging</a> for a return, and return shipping on a 200 lb freight item is rarely
             free; check the current terms before you order, because they change.
           </p>`,
     },

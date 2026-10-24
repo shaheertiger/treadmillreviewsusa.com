@@ -301,7 +301,7 @@ export default {
             Commercial 1250 and 1750. The motor is covered for two years on all of them. Neither is a problem
             for a walker of average build, but both point the same way: NordicTrack specifies and warrants the
             T Series for lighter use than its running machines. Treadmill Review Guru says the T Series 10's
-            motor suits most users but not marathon training, heavy daily use or several runners sharing the
+            motor suits most users but not <a href="/treadmill-marathon-training/" class="text-[#0F62FE] font-medium" data-autolink>marathon training</a>, heavy daily use or several runners sharing the
             machine. Our guide to
             <a href="/what-happens-if-you-exceed-treadmill-weight-limit/" class="text-[#0F62FE] font-medium">treadmill weight limits</a>
             explains why margin under the rating matters.
@@ -420,7 +420,7 @@ export default {
           <p>
             We searched the US Consumer Product Safety Commission's recall listings on 14 October 2026 and
             found no recall of any T Series treadmill or any current NordicTrack treadmill. iFIT's recent
-            NordicTrack recalls covered a rowing machine and adjustable dumbbells.
+            NordicTrack recalls covered a <a href="/best-rowing-machines/" class="text-[#0F62FE] font-medium" data-autolink>rowing machine</a> and adjustable dumbbells.
           </p>`,
     },
     {
@@ -592,6 +592,12 @@ export default {
       title: 'NordicTrack T 6.5 S Review',
       blurb: 'The older entry-level model that still turns up in sales and on the used market.',
       url: '/nordictrack-t-6-5-s-treadmill/',
+    },
+    {
+      kicker: 'Older model',
+      title: 'NordicTrack EXP 7i',
+      blurb: 'An older model no longer in the US range: what it was, buying one used, and the current equivalents.',
+      url: '/nordictrack-exp-7i-treadmill/',
     },
   ],
   bottomLine: [

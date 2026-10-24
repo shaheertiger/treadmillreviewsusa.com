@@ -226,7 +226,7 @@ export default {
       id: 'durability',
       heading: 'Durability and Maintenance Under Shared Use',
       html: `          <p>
-            More users means more hours, and more hours means the maintenance schedule arrives
+            More users means more hours, and more hours means the <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium" data-autolink>maintenance schedule</a> arrives
             sooner. Most manufacturers tie belt lubrication to hours of use, typically every 40 to 50
             hours on decks that need it. One person walking half an hour a day reaches that every few
             months; a household of runners can reach it in a few weeks. Belt tension and tracking
@@ -260,8 +260,8 @@ export default {
             machines, or between a treadmill and a mix of equipment. A few principles help.
           </p>
           <p>
-            <strong>One machine sized properly beats two undersized ones.</strong> Two budget
-            treadmills cost roughly what one solid mid-range machine does, take twice the floor space
+            <strong>One machine sized properly beats two undersized ones.</strong> Two <a href="/best-budget-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>budget
+            treadmills</a> cost roughly what one solid mid-range machine does, take twice the floor space
             and twice the maintenance, and neither is likely to suit the household's most demanding
             user. Unless two people genuinely need to train at the same time every day, one machine
             is the better use of money.

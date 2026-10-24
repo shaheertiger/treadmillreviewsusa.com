@@ -48,7 +48,7 @@ export default {
             regular running.</strong>
           </p>
           <p>
-            The speed cap is the obvious limit, and it exists for good reasons. A walking pad's belt
+            The speed cap is the obvious limit, and it exists for good reasons. A <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a>'s belt
             is commonly around 40 inches long, against the 55 to 60 inches that running treadmills
             commonly use, and a running stride needs that length. The motor is small and rated for
             sustained walking rather than the repeated impact of a runner landing. And on a flat pad
@@ -194,7 +194,7 @@ export default {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Continuous versus peak ratings</h3>
           <p>
-            Many pad listings quote a peak horsepower figure. Peak is a brief maximum, not what the
+            Many pad listings quote a <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium" data-autolink>peak horsepower</a> figure. Peak is a brief maximum, not what the
             motor can sustain. A continuous rating is the honest measure of sustained work, and for
             running it matters more than for walking. A motor running near its limit for long periods
             gets hot, and heat is what shortens motor and controller life.
@@ -266,8 +266,8 @@ export default {
             your form and any existing problems — and is a question for a doctor or physical
             therapist rather than for us. What we can say is that the short belt changes how you run
             as well as what you land on. A shortened, choppy stride and the effort of staying centred
-            on a narrow belt are not how you would choose to run if you had the room. Good running
-            form on a belt needs room to land under your body and push off without thinking about
+            on a narrow belt are not how you would choose to run if you had the room. Good <a href="/treadmill-running-form/" class="text-[#0F62FE] font-medium" data-autolink>running
+            form</a> on a belt needs room to land under your body and push off without thinking about
             where the ends are, and a pad does not give you that room.
           </p>`,
     },

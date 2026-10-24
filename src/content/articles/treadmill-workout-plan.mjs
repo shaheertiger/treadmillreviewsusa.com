@@ -501,7 +501,7 @@ ${simpleTable(620, ['Track', 'Who it is for', 'Weeks 1–4', 'Where week 11 land
           </p>
           <p>
             <strong>Intensity has a definition.</strong> The guidelines classify activity of 3.0
-            to 5.9 METs (multiples of resting energy use) as moderate and 6 or more as vigorous.
+            to 5.9 <a href="/what-are-mets-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>METs</a> (multiples of resting energy use) as moderate and 6 or more as vigorous.
             Walking at 3 mph on the flat is a little over 3 METs by the ACSM walking equation, so
             it counts; a slow stroll does not. For a felt measure, the CDC offers two: on a 0 to
             10 effort scale, moderate is a 5 or 6 and vigorous begins at 7 or 8, and in the talk
@@ -842,7 +842,7 @@ ${simpleTable(640, ['Day', 'Walker', 'Beginner runner', 'Runner'], [
           </p>
           <ul>
             <li>You could not complete one or more sessions as written, or completed them only by
-              stopping, slowing well outside the speed range, or holding the rails.</li>
+              stopping, slowing well outside the speed range, or <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>holding the rails</a>.</li>
             <li>The effort ran one or two RPE points above the target for the same settings — an
               easy walk that was supposed to be RPE 4 to 5 felt like a 6 or 7.</li>
             <li>Muscle soreness was still there when the next session started, two or three days
@@ -1075,6 +1075,12 @@ ${simpleTable(640, ['Day', 'Walker', 'Beginner runner', 'Runner'], [
       title: 'Treadmill Before or After Weights?',
       blurb: 'How to order cardio and lifting on the same day, by goal.',
       url: '/treadmill-before-or-after-weights/',
+    },
+    {
+      kicker: 'Apps',
+      title: 'Best Treadmill Workout Apps',
+      blurb: 'iFIT, Peloton, Zwift, Kinomap and the free options: what each does on a treadmill and what it controls.',
+      url: '/best-treadmill-workout-apps/',
     },
   ],
   bottomLine: [

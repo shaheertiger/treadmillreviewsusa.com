@@ -294,7 +294,7 @@ export default {
       heading: 'Other Alternatives Worth Considering',
       html: `          <p>
             <strong>A walking pad.</strong> If the need is walking rather than running — common
-            for rehabilitation and for desk-based use — a walking pad costs a few hundred dollars,
+            for rehabilitation and for desk-based use — a <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> costs a few hundred dollars,
             weighs a fraction of a full treadmill, and is easy to resell or move. Our
             <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad vs treadmill</a>
             guide covers the trade-offs; check with a clinician whether one without full handrails
@@ -302,7 +302,7 @@ export default {
           </p>
           <p>
             <strong>A month-to-month gym membership.</strong> For a short need with no mobility
-            constraints, a no-contract gym gives you commercial treadmills with no delivery, no
+            constraints, a no-contract gym gives you <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>commercial treadmills</a> with no delivery, no
             collection and no damage clause.
           </p>
           <p>

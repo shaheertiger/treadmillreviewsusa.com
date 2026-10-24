@@ -145,7 +145,7 @@ export default {
             UBlives, RENPHO, CINCOM and QUINEAR, and by product type for leg massagers and air
             compression devices. We found no recall for any of them. The massager recalls the
             database does hold — HoMedics massagers in 2017 and 2024, Massimo percussion massage guns
-            sold at Costco in 2021 — involve other product types and brands not listed here.
+            sold at <a href="/buying-a-treadmill-at-costco/" class="text-[#0F62FE] font-medium" data-autolink>Costco</a> in 2021 — involve other product types and brands not listed here.
           </p>
           <p>
             <strong>What we left out, and why.</strong> The UBlives SoleFlux Relax is a popular
@@ -643,6 +643,12 @@ export default {
       title: 'Best Foam Rollers',
       blurb: 'The cheapest recovery tool worth owning, and how density and texture differ.',
       url: '/best-foam-rollers/',
+    },
+    {
+      kicker: 'Recovery',
+      title: 'Best Inversion Tables',
+      blurb: 'Five tables on Amazon, their ankle locks and angle stops, and who must not invert.',
+      url: '/best-inversion-tables/',
     },
   ],
   bottomLine: [

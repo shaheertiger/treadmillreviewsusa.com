@@ -151,7 +151,7 @@ export default {
           </p>
           <p>
             <strong>Use episodes as units.</strong> If you are watching something, a 25-minute
-            episode plus a warm-up and cool-down is a natural 35-minute session. You are not running
+            episode plus a <a href="/treadmill-warm-up-and-cool-down/" class="text-[#0F62FE] font-medium" data-autolink>warm-up and cool-down</a> is a natural 35-minute session. You are not running
             for 35 minutes; you are watching an episode and happen to be moving.
           </p>
           <p>
@@ -221,7 +221,7 @@ export default {
             monotonous as the belt. Rotating it is half the benefit.
           </p>
           <p>
-            One caution: very loud music through headphones for long periods is not good for your
+            One caution: very loud music through <a href="/best-headphones-for-treadmill-running/" class="text-[#0F62FE] font-medium" data-autolink>headphones</a> for long periods is not good for your
             hearing. Keep the volume reasonable and use a fan for the noise instead of drowning it
             out.
           </p>`,
@@ -280,7 +280,7 @@ export default {
           <p>
             <strong>Instructor-led classes.</strong> Following a coach who calls out speed and
             incline changes takes the planning off your hands and adds a human voice to the
-            session. Several treadmill brands build their machines around this, usually with a
+            session. Several <a href="/best-treadmill-brands/" class="text-[#0F62FE] font-medium" data-autolink>treadmill brands</a> build their machines around this, usually with a
             monthly subscription; our assessment of
             <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">whether iFIT is worth it</a>
             looks at one of the larger services honestly.
@@ -381,7 +381,7 @@ export default {
             the hard effort for one or two sessions a week makes all of them better.
           </p>
           <p>
-            <strong>Use the focus.</strong> The treadmill is a good place to practise running form
+            <strong>Use the focus.</strong> The treadmill is a good place to practise <a href="/treadmill-running-form/" class="text-[#0F62FE] font-medium" data-autolink>running form</a>
             — relaxed shoulders, quick light steps, a tall posture — because the surface is
             predictable. A few minutes of focused attention on one thing makes the time pass.
           </p>

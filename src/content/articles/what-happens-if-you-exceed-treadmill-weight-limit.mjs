@@ -45,7 +45,7 @@ export default {
             <strong>Usually accelerated wear rather than immediate failure: the motor and its control
             board run hotter, the belt and deck wear faster, the rollers and bearings carry more than
             they were sized for, and the frame works beyond its design margin — and many manufacturers
-            treat use above the limit as voiding the warranty.</strong> On a walking pad, which has far
+            treat use above the limit as voiding the warranty.</strong> On a <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a>, which has far
             less in reserve than a full treadmill, those effects arrive sooner.
           </p>
           <p>
@@ -110,7 +110,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The drive motor</h3>
           <p>
             A motor under higher sustained load runs hotter, and heat ages its windings and, on brushed
-            DC motors, wears the brushes faster. Low speeds are not automatically gentle: a heavy walker
+            <a href="/ac-vs-dc-treadmill-motor/" class="text-[#0F62FE] font-medium" data-autolink>DC motors</a>, wears the brushes faster. Low speeds are not automatically gentle: a heavy walker
             at 2.5 mph is asking the motor for torque, and torque is current. Incline walking adds the
             work of lifting the body as well as moving the belt. Our guide to
             <a href="/how-long-do-treadmill-motors-last/" class="text-[#0F62FE] font-medium">how long treadmill motors last</a>
@@ -253,7 +253,7 @@ export default {
           </p>
           <p>
             <strong>Many manufacturers make the maximum user weight a condition of cover.</strong> Some
-            say so explicitly. The safety instructions published for Horizon and Bowflex treadmills, for
+            say so explicitly. The safety instructions published for Horizon and <a href="/bowflex/" class="text-[#0F62FE] font-medium" data-autolink>Bowflex treadmills</a>, for
             example, as reproduced on retailer listings, state that the treadmill should not be used by
             people weighing more than the figure in the owner's manual warranty section, and that
             failure to comply will void the warranty. Others rely on a general clause requiring the
@@ -267,7 +267,7 @@ export default {
             from overload are the parts most likely to be excluded.
           </p>
           <p>
-            <strong>Claims get examined.</strong> A failed board, a cracked deck or a broken weld on a
+            <strong>Claims get examined.</strong> A failed board, a <a href="/treadmill-cracked-deck/" class="text-[#0F62FE] font-medium" data-autolink>cracked deck</a> or a broken weld on a
             machine used near or above its limit is exactly the kind of claim a service engineer asks
             questions about, and "who uses the machine?" is a reasonable question. Even where a claim is
             honoured, the process is easier when nothing about the usage is in doubt.
@@ -308,7 +308,7 @@ export default {
           </p>
           <p>
             <strong>Heat and electrics.</strong> A motor or board running hot is a fire-safety concern as
-            well as a reliability one. A smell of hot electrics, scorched plastic or burning rubber means
+            well as a reliability one. A smell of hot electrics, scorched plastic or <a href="/treadmill-burning-smell/" class="text-[#0F62FE] font-medium" data-autolink>burning rubber</a> means
             stop, unplug at the wall and do not restart until the cause is found.
           </p>
           <p>
@@ -333,7 +333,7 @@ export default {
             <li><strong>Shorten sessions and rest the machine.</strong> Several shorter sessions with
             the machine cooling between them are kinder to the motor and board than one long one.</li>
             <li><strong>Keep friction down.</strong> Lubricate the deck on the manual's schedule or a
-            little more often, and check belt tension. A dry deck under a heavy load is the fastest way
+            little more often, and check <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a>. A dry deck under a heavy load is the fastest way
             to a failed board.</li>
             <li><strong>Inspect regularly.</strong> With the machine unplugged, check for cracks in the
             deck and frame, play in the handrails and uprights, loose bolts and wear on the belt edges.

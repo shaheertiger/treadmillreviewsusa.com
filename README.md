@@ -29,6 +29,7 @@ scripts/
   format-audit.mjs         every article page must carry the 13 structural elements
   validate-ia.mjs          every article belongs to a hub; every hub matches sections.ts
   build-articles.mjs       renders article pages from the content specs in src/content/articles/
+  interlink.mjs            adds contextual links between articles from interlink-anchors.json
 ```
 
 ## Article pipeline
@@ -66,6 +67,35 @@ This exists because the site's positioning is honesty: a brand or comparison pag
 unverified motor ratings, deck dimensions or warranty terms reads as authoritative while being
 wrong, and fabricated `aggregateRating` in Product JSON-LD is a structured-data policy breach
 that risks a manual action. New pages therefore carry no `aggregateRating` at all.
+
+## Internal linking
+
+`npm run interlink` links articles to each other from their body text. Where one article
+mentions a topic another article owns, it wraps the first mention in a link to that article.
+The phrase → page map is `scripts/interlink-anchors.json`, one entry per article, curated so
+that a phrase only appears where a reader would expect the link to go to that page (longest
+phrase wins, so "nordictrack commercial 1750" beats "commercial 1750").
+
+```bash
+npm run interlink                    # dry run: lists every link it would add, with context
+node scripts/interlink.mjs --write   # apply, then regenerate the edited spec pages
+```
+
+It edits spec `html` sections and the body of hand-written pages only — never FAQ answers,
+product copy, notes or Common Mistakes cards, so the JSON-LD is untouched. It links only inside
+plain `<p>`/`<li>` text (no headings, bold labels, tables or dark panels), adds at most one link
+per paragraph and one per target per page, skips targets the page already links to, never
+links to drafts, and caps each page at 2–6 added links depending on how many it already has.
+When a page has more candidates than its cap, the least-linked targets win. Added links carry
+`data-autolink`, which counts against the cap on later runs, so re-running is safe: it only
+adds links on pages that still have room.
+
+**After adding an article:** give it an entry in `interlink-anchors.json` and run the script
+with `--write`. That links the new page from every article that already mentions its topic.
+
+Every published article has at least three inbound links from other articles. Pages whose
+topic no other article mentions (mostly niche Home Gym roundups) get theirs from Related
+Guides cards on sibling pages in the same hub group; the Related grid takes up to six cards.
 
 ## Information architecture
 

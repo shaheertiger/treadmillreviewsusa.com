@@ -83,8 +83,8 @@ export default {
             it had set up a US arm to bring Reebok’s professional equipment to American gyms. The
             regional stores and distributors then sell the home range country by country. In
             Australia, for example, the official Reebok Fitness store’s click-and-collect points are
-            in Wetherill Park, New South Wales, and Willawong, Queensland, and the retailer Lifespan
-            Fitness Australia lists Reebok as a product partner.
+            in Wetherill Park, New South Wales, and Willawong, Queensland, and the retailer <a href="/lifespan-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Lifespan
+            Fitness</a> Australia lists Reebok as a product partner.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Before: ICON Health & Fitness</h3>
           <p>
@@ -132,7 +132,7 @@ export default {
           <p>
             Reebok’s US equipment store promotes the GT40z and the FR30z on its home page but had no
             treadmills in its product list. Search results show Walmart listings for the FR30z and the
-            Jet 100z, an Academy Sports listing for a 120-volt FR30z and the Jet 100z, and a Dick’s
+            Jet 100z, an <a href="/academy-sports-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Academy Sports</a> listing for a 120-volt FR30z and the Jet 100z, and a Dick’s
             Sporting Goods category page for Reebok treadmills; all three sites blocked our checks, so
             we cannot say what was in stock. An independent review site updated in May 2026 says the
             Floatride is the only Reebok model you are likely to find in stock at Amazon, Walmart or
@@ -153,7 +153,7 @@ export default {
       html: `          <p>
             When people search for a “Reebok i treadmill”, they usually mean the i-Run, Reebok’s
             compact folding treadmill. It has been sold in several generations, and the current
-            official catalogue lists the i-Run 4.5 and i-Run 5; Costco UK has listed an i-Run 5.0.
+            official catalogue lists the i-Run 4.5 and i-Run 5; <a href="/buying-a-treadmill-at-costco/" class="text-[#0F62FE] font-medium" data-autolink>Costco</a> UK has listed an i-Run 5.0.
             Earlier i-Run versions, including the original i-Run and the i-Run 4.0, still appear on
             UK and Asian retail and resale sites.
           </p>
@@ -184,7 +184,7 @@ export default {
       html: `          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">FR20z Floatride</h3>
           <p>
             The FR20z is the compact, non-folding Floatride, with cushioning zones borrowed from
-            Reebok’s running-shoe marketing, power incline and Zwift support. Its agreed figures, its
+            Reebok’s running-shoe marketing, power incline and <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium" data-autolink>Zwift</a> support. Its agreed figures, its
             disputed warranty and the US availability problem are covered in our
             <a href="/reebok-fr20z-floatride-treadmill/" class="text-[#0F62FE] font-medium">FR20z Floatride review</a>,
             so we do not repeat them here.

@@ -73,7 +73,7 @@ export default {
           </p>
           <p>
             <strong>Connectivity.</strong> Wi-Fi for streaming and updates, and Bluetooth for heart
-            rate straps, headphones and apps on your own devices.
+            rate straps, <a href="/best-headphones-for-treadmill-running/" class="text-[#0F62FE] font-medium" data-autolink>headphones</a> and apps on your own devices.
           </p>
           <p>
             <strong>An account and a subscription.</strong> Most smart platforms require you to

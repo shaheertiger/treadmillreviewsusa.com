@@ -461,6 +461,18 @@ export default {
       blurb: 'Ceiling height, clearance behind the deck, and the delivery route.',
       url: '/treadmill-dimensions-space-requirements/',
     },
+    {
+      kicker: 'Marathon',
+      title: 'Best Treadmills for Marathon Training',
+      blurb: 'Long decks, motors and cooling for two- and three-hour runs, plus decline for hilly courses.',
+      url: '/best-treadmills-for-marathon-training/',
+    },
+    {
+      kicker: 'Wide deck',
+      title: 'Best Wide Treadmills',
+      blurb: 'Treadmills with a verified 22-inch running surface, and listed width versus usable width.',
+      url: '/best-wide-treadmills/',
+    },
   ],
   bottomLine: [
     `Sixty inches of belt is the floor, usable length is the number that matters, and above

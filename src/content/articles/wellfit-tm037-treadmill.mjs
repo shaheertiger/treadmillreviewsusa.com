@@ -80,7 +80,7 @@ export default {
             consistent with what a peak figure on a walking pad usually conceals. The warranty
             wording differs between the brand page and the Amazon listing, and the effective cover on
             the motor appears to be one year. And owner complaints about returns, belt shifting and
-            early motor failure have been documented in one independent review.
+            early <a href="/how-long-do-treadmill-motors-last/" class="text-[#0F62FE] font-medium" data-autolink>motor failure</a> have been documented in one independent review.
           </p>
           <p>
             So the honest answer is conditional. Buy it for light walking, at a street price toward
@@ -388,7 +388,7 @@ export default {
             walking slowly for long stretches while working. That use is gentle on the legs and
             surprisingly demanding on the machine, because hours of continuous running at low speed
             produce more heat and belt wear than a short brisk session does. A few habits make a
-            meaningful difference to how long a walking pad lasts.
+            meaningful difference to <a href="/how-long-do-walking-pads-last/" class="text-[#0F62FE] font-medium" data-autolink>how long a walking pad lasts</a>.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Break long sessions up</h3>
           <p>

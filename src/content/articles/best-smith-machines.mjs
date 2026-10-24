@@ -336,7 +336,7 @@ export default {
             is shorter than that, but the margin is often under a foot. Three things eat into it.
             Rubber flooring or a platform raises the frame by its thickness. Uprights are often
             stood up from lying flat during assembly, which needs more height than the finished
-            frame. And the pull-up bar sits at the top: Force USA says the G3 needs an 8 ft 4 in
+            frame. And the <a href="/best-pull-up-bars/" class="text-[#0F62FE] font-medium" data-autolink>pull-up bar</a> sits at the top: Force USA says the G3 needs an 8 ft 4 in
             ceiling for a full pull-up with your head above the bar, so on a standard ceiling you
             may get the Smith and cables but not full pull-ups. Inside the frame, the Smith bar's
             highest catch, not the ceiling, usually limits standing overhead presses; tall lifters
@@ -353,7 +353,7 @@ export default {
             done standing in front of or outside the frame. A sensible plan is the frame, plus
             three feet on each loading side and in front, marked on the floor with tape before you
             order. Our <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space-planning guide</a>
-            uses the same footprint-plus-use-zone method for cardio machines.
+            uses the same footprint-plus-use-zone method for <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium" data-autolink>cardio machines</a>.
           </p>`,
     },
     {

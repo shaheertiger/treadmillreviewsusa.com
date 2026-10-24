@@ -273,7 +273,7 @@ export default {
             height range against your ceiling before ordering.
           </p>
           <p>
-            <strong>Floor and weight.</strong> These are not as heavy as a commercial treadmill, but
+            <strong>Floor and weight.</strong> These are not as heavy as a <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>commercial treadmill</a>, but
             150 lb plus a moving user is a real load. A firm, level floor matters, and on carpet you
             may want a hard mat beneath. Our guide to
             <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">treadmill space requirements</a>

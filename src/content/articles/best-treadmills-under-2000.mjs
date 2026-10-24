@@ -69,7 +69,7 @@ export default {
             this price.
           </p>
           <p>
-            <strong>An AC motor.</strong> Every machine here uses a DC motor. AC motors — which
+            <strong>An AC motor.</strong> Every machine here uses a <a href="/ac-vs-dc-treadmill-motor/" class="text-[#0F62FE] font-medium" data-autolink>DC motor</a>. AC motors — which
             handle sustained load without the heat build-up that eventually kills DC units — start
             around $3,000. For a home user running an hour a day, a good DC motor is entirely
             adequate; for two people running high mileage daily, the difference becomes real over
@@ -108,7 +108,7 @@ export default {
           <p>
             This does not mean the connected machines are bad value. If you will genuinely use
             guided sessions several times a week, the content is often what keeps people training,
-            and the honest comparison then is against a gym membership rather than against a plain
+            and the honest comparison then is against a <a href="/home-treadmill-vs-gym-membership/" class="text-[#0F62FE] font-medium" data-autolink>gym membership</a> rather than against a plain
             treadmill. The argument here is only that the cost belongs in the comparison.
           </p>
           <p>
@@ -174,8 +174,8 @@ export default {
           </p>
           <p>
             Decline appears on several machines here and deserves a clear position: it is genuinely
-            valuable if you are preparing for a course with significant descent, because downhill
-            running loads the quadriceps eccentrically in a way nothing else replicates. For
+            valuable if you are preparing for a course with significant descent, because <a href="/what-is-treadmill-decline-good-for/" class="text-[#0F62FE] font-medium" data-autolink>downhill
+            running</a> loads the quadriceps eccentrically in a way nothing else replicates. For
             everyone else it is a mechanism you will use twice. Do not let it decide a purchase, and
             if you have knee pain, our
             <a href="/best-treadmills-for-bad-knees/" class="text-[#0F62FE] font-medium">knee guide</a>
@@ -215,7 +215,7 @@ export default {
             deck.
           </p>
           <p>
-            The routine is under an hour a year. Lubricate every 40 to 50 hours of use, wipe the
+            The routine is under an hour a year. Lubricate <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>every 40 to 50 hours</a> of use, wipe the
             belt and deck edges after sessions, vacuum around and under the machine monthly, and
             check belt tension and tracking quarterly. If two people are running daily, halve the
             lubrication interval.

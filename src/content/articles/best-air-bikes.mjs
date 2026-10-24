@@ -127,7 +127,7 @@ export default {
             straps in September 2018. Schwinn-branded fitness equipment has been sold by more than one
             company over the years, and the Schwinn recall on file, an elliptical in December 2011, was
             made by Nautilus, the brand's previous owner. None of those covers an air bike. Schwinn
-            Fitness and BowFlex are now run by Johnson Health Tech, which recalled BowFlex adjustable
+            Fitness and <a href="/bowflex/" class="text-[#0F62FE] font-medium" data-autolink>BowFlex</a> are now run by Johnson Health Tech, which recalled BowFlex adjustable
             dumbbells in June 2025 and Matrix-brand training cycles in January 2025; neither is on this
             page.
           </p>
@@ -282,7 +282,7 @@ export default {
           </p>
           <p>
             <strong>Moving it.</strong> Every pick has front transport wheels, and the Titan and some
-            rivals use wider turf tires that roll better over rubber flooring and grass. You still tip a
+            rivals use wider turf tires that roll better over <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium" data-autolink>rubber flooring</a> and grass. You still tip a
             95 to 125 lb bike onto its wheels rather than carry it, and on stairs it is a two-person job.
             None of the fan bikes needs an outlet, which is the great advantage for garages and patios;
             if yours will live in a garage, our guide to
@@ -299,7 +299,7 @@ export default {
           </p>
           <ul>
             <li><strong>No Bluetooth to apps:</strong> the AssaultBike Classic (it reads a Polar wireless heart-rate strap), and both AirDyne models, which read telemetric Polar-compatible straps. BarBend notes the AD7's console is bright and among the best it has used on an air bike, but it does not connect to apps.</li>
-            <li><strong>Bluetooth and ANT+:</strong> the AssaultBike Pro X (dual-band heart rate and the Assault Fitness app), the Rogue Echo V3.0 (an LCD with Bluetooth and ANT+, and an optional M2 monitor upgrade for $155), and the Concept2 BikeErg, whose PM5 monitor connects to Concept2's own apps and to Zwift, according to BarBend.</li>
+            <li><strong>Bluetooth and ANT+:</strong> the AssaultBike Pro X (dual-band heart rate and the Assault Fitness app), the Rogue Echo V3.0 (an LCD with Bluetooth and ANT+, and an optional M2 monitor upgrade for $155), and the Concept2 BikeErg, whose PM5 monitor connects to Concept2's own apps and to <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium" data-autolink>Zwift</a>, according to BarBend.</li>
             <li><strong>Titan:</strong> an LCD with interval programs that pairs with Polar Bluetooth heart-rate transmitters.</li>
           </ul>
           <p>
@@ -610,6 +610,12 @@ export default {
       title: 'Best Exercise Bikes',
       blurb: 'Quiet magnetic and friction bikes for long rides, apps and classes.',
       url: '/best-exercise-bikes/',
+    },
+    {
+      kicker: 'Folding',
+      title: 'Best Folding Exercise Bikes',
+      blurb: 'Five X-frame folding bikes: folded size, weight-limit claims, seats and stability.',
+      url: '/best-folding-exercise-bikes/',
     },
   ],
   bottomLine: [

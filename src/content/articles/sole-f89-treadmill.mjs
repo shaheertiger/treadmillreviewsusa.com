@@ -80,7 +80,7 @@ export default {
           </p>
           <p>
             What changed is availability. Sole's US store now lists eight treadmills — the F50,
-            F63, F65, F80, F83, F85, TT8 and C80 — and the F89 is not one of them. Its product page
+            F63, F65, F80, F83, <a href="/sole-f85-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>F85</a>, TT8 and C80 — and the F89 is not one of them. Its product page
             returns "not found". Sole's Canadian and UK sites do not list it either. Sole had not,
             as far as we could find, published a notice saying the F89 was discontinued or naming a
             replacement, so the accurate description is that it has been withdrawn from Sole's own
@@ -108,7 +108,7 @@ export default {
             Dick's Sporting Goods catalogued it as the "F89-2023", and independent reviews
             describe it as Sole's 2024 release, so it reached most buyers across 2023 and 2024.
             Sole is owned by Dyaco International, the Taiwanese equipment maker that also owns
-            Spirit Fitness and Xterra, and the F89 still has a product page on a Dyaco-run Sole site
+            <a href="/spirit-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Spirit Fitness</a> and Xterra, and the F89 still has a product page on a Dyaco-run Sole site
             listing both 110-volt and 220 to 230-volt versions — one reason it turned up with
             retailers outside the US.
           </p>
@@ -146,12 +146,12 @@ export default {
             found on 14 October 2026.
           </p>
           <ul class="list-disc pl-6 space-y-2">
-            <li>Sole's US treadmill collection lists eight machines: F50, F63, F65, F80, F83, F85,
+            <li>Sole's US treadmill collection lists eight machines: F50, F63, <a href="/sole-f65-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>F65</a>, F80, F83, F85,
             TT8 (marked sold out) and the C80 curved manual trainer. The F89 is not among them.</li>
             <li>The F89's product page on Sole's US store returns "not found", and the F89 does not
             appear in the store's product feed at all, which is different from a model that is
             simply out of stock.</li>
-            <li>Sole's Canadian site lists the F63, F65, F80, F85, S77 and TT8; Sole's UK site lists
+            <li>Sole's Canadian site lists the F63, F65, <a href="/sole-f80-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>F80</a>, F85, S77 and TT8; Sole's UK site lists
             the F63, F65, F80, F85 and TT8. Neither lists an F89.</li>
             <li>In July 2026 Sole's own blog still described the F89 as on sale at $2,599.99 against
             a $3,099.99 regular price, and an independent roundup updated at the end of August
