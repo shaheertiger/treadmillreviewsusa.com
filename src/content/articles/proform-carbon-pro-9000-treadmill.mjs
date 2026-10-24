@@ -274,7 +274,7 @@ export default {
           <p>
             For runners, it is adequate rather than ideal. The 60-inch belt and 12 mph cover most home running, and
             reviewers describe it as stable. The limits are the 20-inch width, the lack of decline for downhill
-            practice, the slow incline changes for short hill repeats, and the two-year motor term for anyone
+            practice, the slow incline changes for short <a href="/treadmill-hill-workout/" class="text-[#0F62FE] font-medium" data-autolink>hill repeats</a>, and the two-year motor term for anyone
             logging high weekly mileage. A runner doing three or four easy sessions a week will be well served; a
             runner training hard most days should weigh a machine with a wider belt and longer motor cover.
           </p>`,
@@ -302,7 +302,7 @@ export default {
           <p>
             Safety record: we searched the US Consumer Product Safety Commission's recall listings on 14 October
             2026 and found no recall of the Carbon Pro 9000, the older Pro 9000 or any current ProForm treadmill.
-            iFIT's most recent ProForm recall, in July 2024, covered adjustable dumbbells.
+            iFIT's most recent ProForm recall, in July 2024, covered <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium" data-autolink>adjustable dumbbells</a>.
           </p>`,
     },
     {
@@ -504,6 +504,12 @@ export default {
       title: 'NordicTrack T Series Review',
       blurb: 'The NordicTrack machines closest to the Carbon Pro 9000 in price and purpose.',
       url: '/nordictrack-t-series-treadmill/',
+    },
+    {
+      kicker: 'Model Review',
+      title: 'ProForm Carbon TLS Treadmill',
+      blurb: 'ProForm’s compact Carbon TLS, checked against ProForm’s listing, a retailer and independent coverage.',
+      url: '/proform-carbon-tls-treadmill/',
     },
   ],
   bottomLine: [

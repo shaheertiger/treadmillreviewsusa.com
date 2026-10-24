@@ -136,7 +136,7 @@ export default {
             was mixed in with other models' figures on the pages we read, and we could not confirm its
             numbers independently. The SOLE E25 and E20 are both sound and both currently sold;
             they appear in the text below as alternatives rather than cards. Stepper-style
-            machines such as BowFlex's Max Trainers are not ellipticals in the usual sense, so they are
+            machines such as <a href="/bowflex/" class="text-[#0F62FE] font-medium" data-autolink>BowFlex</a>'s Max Trainers are not ellipticals in the usual sense, so they are
             covered in our
             <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium">cardio machines guide</a>
             instead.
@@ -386,7 +386,7 @@ export default {
             free trial, after which it is a paid membership; the 411 links to the Explore the World
             app, which unlocks more routes with a paid subscription. Both machines work as plain
             ellipticals without either.</li>
-            <li><strong>NordicTrack X16</strong> is built around iFIT. NordicTrack's page states that
+            <li><strong>NordicTrack X16</strong> is built around <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium" data-autolink>iFIT</a>. NordicTrack's page states that
             a paid iFIT Pro subscription and Wi-Fi are needed for the full content and features on
             the machine, and one month is included with purchase. Without it you lose most of what
             the screen is for. Our page on
@@ -416,7 +416,7 @@ export default {
             <a href="/best-treadmills-for-home/" class="text-[#0F62FE] font-medium">best treadmills for home</a>.
           </p>
           <p>
-            <strong>If your ceiling is low and you are tall,</strong> an exercise bike sidesteps the
+            <strong>If your ceiling is low and you are tall,</strong> an <a href="/best-exercise-bikes/" class="text-[#0F62FE] font-medium" data-autolink>exercise bike</a> sidesteps the
             pedal-height problem entirely. Our
             <a href="/treadmill-vs-exercise-bike/" class="text-[#0F62FE] font-medium">treadmill vs exercise bike</a>
             comparison covers what a bike does and does not replace.
@@ -658,6 +658,12 @@ export default {
       title: 'Home Cardio Equipment Guide',
       blurb: 'How to choose between machine types and what to check before you buy any of them.',
       url: '/home-cardio-equipment-guide/',
+    },
+    {
+      kicker: 'Steppers',
+      title: 'Stepper Buying Guide',
+      blurb: 'Mini, twist, handlebar and full-size steppers: what each costs and suits, hydraulic time limits, calories and recalls.',
+      url: '/stepper-buying-guide/',
     },
   ],
   bottomLine: [

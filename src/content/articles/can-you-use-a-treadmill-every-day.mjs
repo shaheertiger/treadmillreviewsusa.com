@@ -91,7 +91,7 @@ export default {
             that below.</li>
             <li><strong>Walk outside sometimes.</strong> The flat belt never changes, and varied
             ground gives the ankles and hips work the treadmill cannot.</li>
-            <li><strong>Mind your feet.</strong> Daily walking in worn-out shoes is a common source
+            <li><strong>Mind your feet.</strong> Daily walking in <a href="/how-often-to-replace-running-shoes/" class="text-[#0F62FE] font-medium" data-autolink>worn-out shoes</a> is a common source
             of foot and knee aches. Replace shoes when the cushioning or tread has gone.</li>
           </ul>
           <p>
@@ -264,7 +264,7 @@ export default {
             The fix is the same as for running: vary it. Use steep incline on two or three days a
             week, moderate incline on others, and flat or near-flat walking on the rest. Build the
             gradient up over several weeks rather than starting at the steepest setting. Walk
-            without holding the rails — holding on at a high incline changes your posture and takes
+            without <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>holding the rails</a> — holding on at a high incline changes your posture and takes
             much of the work out of the legs, which defeats the point.
           </p>
           <p>
@@ -315,7 +315,7 @@ export default {
           </p>
           <p>
             The signs that a daily-use treadmill is struggling are the same as for any treadmill:
-            a hot or burning smell, the belt hesitating under foot strike, the motor sounding
+            a hot or <a href="/treadmill-burning-smell/" class="text-[#0F62FE] font-medium" data-autolink>burning smell</a>, the belt hesitating under foot strike, the motor sounding
             laboured, or the machine cutting out mid-session. Any of those is a reason to stop,
             unplug and investigate. How long a treadmill typically lasts, and what shortens it, is
             covered in
@@ -367,7 +367,7 @@ export default {
             in the motor compartment, and the interval between lubrications.
           </p>
           <p>
-            Three practical points for shared machines. First, base the maintenance schedule on the
+            Three practical points for shared machines. First, base the <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium" data-autolink>maintenance schedule</a> on the
             combined hours and the heaviest regular user, not the lightest. Second, if the manual
             suggests a rest period between long sessions, build it into the household routine
             rather than letting one person start the moment another finishes. Third, if the

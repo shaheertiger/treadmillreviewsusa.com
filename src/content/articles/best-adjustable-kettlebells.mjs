@@ -108,7 +108,7 @@ export default {
             looked for a kettlebell of each type that was listed and in stock on Amazon US and on the
             maker's own store on 19 October 2026, and that an independent source had described in
             enough detail to cross-check. Garage Gym Reviews' adjustable kettlebell roundup (updated
-            August 2026) and its individual reviews of the REP, BowFlex, PowerBlock and Bells of Steel
+            August 2026) and its individual reviews of the REP, <a href="/bowflex/" class="text-[#0F62FE] font-medium" data-autolink>BowFlex</a>, PowerBlock and Bells of Steel
             bells were the main independent sources; the Amazon listings were the second check on
             settings, prices and who sells each bell. Figures went onto the cards only where the maker
             and an independent source agreed.
@@ -170,7 +170,7 @@ export default {
             <li><strong>June 2025 — SelectTech 552 and 1090 dumbbells.</strong> Johnson Health Tech
               Trading, which now owns BowFlex, recalled the Model 552 (5 to 52.5 lb) and Model 1090
               (10 to 90 lb) adjustable dumbbells, including about 3.7 million sold by Nautilus,
-              because the weight plates can dislodge from the handle during use. The notice names
+              because the <a href="/best-weight-plates/" class="text-[#0F62FE] font-medium" data-autolink>weight plates</a> can dislodge from the handle during use. The notice names
               those two dumbbell models only.</li>
             <li><strong>February 2021 — SelectTech 2080 barbell with curl bar.</strong> A dial-selected
               barbell and curl bar, recalled for an impact injury hazard.</li>
@@ -238,7 +238,7 @@ export default {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Plate-loaded handles</h3>
           <p>
-            Not really a kettlebell: a handle above a loading pin that takes standard or Olympic barbell
+            Not really a kettlebell: a handle above a loading pin that takes standard or <a href="/best-barbells/" class="text-[#0F62FE] font-medium" data-autolink>Olympic barbell</a>
             plates, held by a collar. It is the cheapest way to go very heavy if you already own plates,
             and it suits swings and deadlift variations. The plates sit low and wide, so cleans,
             snatches and presses feel nothing like a real bell, and a loose collar is a hazard.
@@ -606,6 +606,12 @@ export default {
       title: 'Home Workout Equipment Reviews',
       blurb: 'How kettlebells compare with dumbbells, benches, bands and cardio machines for a first home gym.',
       url: '/home-workout-equipment-reviews/',
+    },
+    {
+      kicker: 'Smart',
+      title: 'Best Smart Home Gyms',
+      blurb: 'Tonal, Speediance, Voltra and Tempo: wall needs, digital resistance and membership costs.',
+      url: '/best-smart-home-gyms/',
     },
   ],
   bottomLine: [

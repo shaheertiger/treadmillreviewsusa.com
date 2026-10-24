@@ -196,7 +196,7 @@ export default {
             <li>A rubber or soft-faced mallet for persuading a tight roller.</li>
             <li>Tape measure, painter's tape and a marker for alignment marks.</li>
             <li>A phone camera, to photograph every assembly before you take it apart.</li>
-            <li>Isopropyl alcohol and lint-free cloths for cleaning the deck.</li>
+            <li>Isopropyl alcohol and lint-free cloths for <a href="/how-to-clean-under-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>cleaning the deck</a>.</li>
             <li>The lubricant your manual specifies, if the new belt is not pre-lubricated.</li>
             <li>Containers or a muffin tin for screws, labelled by location.</li>
           </ul>
@@ -343,7 +343,7 @@ export default {
           </p>
           <p>
             <strong>If it did not</strong>, apply the lubricant your manual specifies — usually 100%
-            silicone treadmill lubricant — following the quantity and method in the manual. Our
+            <a href="/best-treadmill-lubricant/" class="text-[#0F62FE] font-medium" data-autolink>silicone treadmill lubricant</a> — following the quantity and method in the manual. Our
             <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">belt lubrication guide</a>
             covers the procedure.
           </p>
@@ -351,7 +351,7 @@ export default {
             <strong>Check the deck type either way.</strong> Some decks are pre-waxed or
             self-lubricating and must not receive silicone; a replacement deck may also differ
             from the original. The manual, and the documentation that came with any new deck,
-            decides. Never use WD-40 or household oils on the belt or deck.
+            decides. Never use <a href="/can-you-use-wd40-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>WD-40</a> or household oils on the belt or deck.
           </p>`,
     },
     {
@@ -377,7 +377,7 @@ export default {
             helps tell a settling seam from a problem one.
           </p>
           <p>
-            After break-in, the belt joins the ordinary maintenance schedule: periodic cleaning
+            After break-in, the belt joins the ordinary <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium" data-autolink>maintenance schedule</a>: periodic cleaning
             under the belt, lubrication at the interval the manual gives, and a tension and
             tracking check now and then. The
             <a href="/treadmill-maintenance/" class="text-[#0F62FE] font-medium">treadmill maintenance guide</a>

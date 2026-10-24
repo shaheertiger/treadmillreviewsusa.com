@@ -197,7 +197,7 @@ export default {
             whether your recovery heart rate is coming down between reps, but it should not be used
             to decide the speed in the moment. Our
             <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium">heart rate zones guide</a>
-            covers the lag and why the console grip sensors are the worst tool of all for this.
+            covers the lag and why the console <a href="/treadmill-heart-rate-not-working/" class="text-[#0F62FE] font-medium" data-autolink>grip sensors</a> are the worst tool of all for this.
           </p>
           <p>
             <strong>Example speeds, for illustration only.</strong> For a hypothetical intermediate
@@ -398,7 +398,7 @@ export default {
             <li><strong>Know where the stop button is without looking.</strong> Before the first
             rep, put your hand on it. On most machines it is the large red control in the centre of
             the console; on some it is on a rail. Use it the moment anything feels wrong.</li>
-            <li><strong>Hands off the rails at speed.</strong> Holding the rails while running hard
+            <li><strong>Hands off the rails at speed.</strong> <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Holding the rails</a> while running hard
             shortens your stride, twists your posture and, worse, means your hands are busy when you
             need them for balance. The rails are for the mount and dismount only.</li>
             <li><strong>Do not change speed while looking down for more than a glance.</strong>

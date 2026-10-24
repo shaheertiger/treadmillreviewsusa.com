@@ -474,11 +474,11 @@ export default {
           <ul>
             <li><strong>SOLE C80.</strong> A curved slat trainer with a wider 19 by 62-inch surface and eight levels of magnetic resistance, rated to 330 lb and usually priced well below the Pro. The wider deck and the resistance are its two advantages; the Pro's longer track record and higher user rating are its own.</li>
             <li><strong>TrueForm Trainer.</strong> A shallower curve — TrueForm says the shallowest on the market, and independent reviews describe it as shallower than rivals — with a 400 lb rating, at a similar or slightly higher price. Worth a look for runners who care about a natural stride more than sprint response.</li>
-            <li><strong>Woodway Curve LTG.</strong> Woodway's home-oriented curved trainer, rated to 350 lb, with a TPE slat belt Woodway describes as softer than average. It costs about the same or a little more, when you can get one.</li>
+            <li><strong>Woodway Curve LTG.</strong> <a href="/woodway-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Woodway</a>'s home-oriented curved trainer, rated to 350 lb, with a TPE slat belt Woodway describes as softer than average. It costs about the same or a little more, when you can get one.</li>
             <li><strong>A motorised treadmill with incline.</strong> For the same $3,500, or much less, a motorised machine gives you pace control, incline and often folding. If your training is mostly steady running and walking, that is the better buy. Our <a href="/manual-vs-motorized-treadmill/" class="text-[#0F62FE] font-medium">manual vs motorised comparison</a> sets out where each wins.</li>
           </ul>
           <p>
-            Do not compare the Pro with $300 to $500 machines sold as "curved" folding treadmills; they are a
+            Do not compare the Pro with $300 to $500 machines sold as "curved" <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>folding treadmills</a>; they are a
             different product, and our roundups explain why.
           </p>
           <p>
@@ -584,6 +584,18 @@ export default {
       title: 'How to Use a Manual Treadmill',
       blurb: 'Starting, stopping and holding a pace on a belt you drive yourself.',
       url: '/how-to-use-a-manual-treadmill/',
+    },
+    {
+      kicker: 'Curved',
+      title: 'Pro 6 Arcadia Air Runner',
+      blurb: 'A curved trainer sold by Pro 6 and its dealers, on what the spec sheet claims.',
+      url: '/pro-6-arcadia-air-runner/',
+    },
+    {
+      kicker: 'Curved',
+      title: 'NOHrD Sprintbok',
+      blurb: 'The German-made wooden slat treadmill: confirmed figures, prices by finish and the warranty by market.',
+      url: '/nohrd-sprintbok/',
     },
   ],
   bottomLine: [

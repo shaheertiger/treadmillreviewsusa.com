@@ -81,7 +81,7 @@ export default {
             larger rollers, quieter and stiffer decks, more incline range (sometimes decline), and
             often a large touchscreen tied to a subscription service.</li>
             <li><strong>Commercial treadmills: about $4,000-$10,000+.</strong> Machines built for
-            hours of daily use by many different people, with AC motors, heavy steel frames and
+            hours of daily use by many different people, with <a href="/ac-vs-dc-treadmill-motor/" class="text-[#0F62FE] font-medium" data-autolink>AC motors</a>, heavy steel frames and
             service networks. Light-commercial models occupy the lower end; full gym units with
             premium consoles go well past $10,000.</li>
             <li><strong>Curved non-motorized treadmills: typically several thousand dollars.</strong>
@@ -108,7 +108,7 @@ export default {
           <p>
             What you are not buying is a running machine. Most cap out around 4 mph, some fold up
             a handrail to reach a little more, and the short deck and small motor mean that
-            treating one as a cheap treadmill for jogging tends to end badly for the machine. At
+            treating one as a <a href="/best-budget-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>cheap treadmill</a> for jogging tends to end badly for the machine. At
             the lower end of the range, warranties can be short and replacement parts hard to find,
             so the effective cost per year of use is higher than the sticker suggests.
           </p>
@@ -224,7 +224,7 @@ export default {
       id: 'peloton',
       heading: 'How Much Is a Peloton Treadmill?',
       html: `          <p>
-            The Peloton Tread sits in the premium tier described above. We are deliberately not
+            The <a href="/peloton-tread/" class="text-[#0F62FE] font-medium" data-autolink>Peloton Tread</a> sits in the premium tier described above. We are deliberately not
             quoting a figure, because Peloton has changed its treadmill pricing several times since
             launch, through permanent price changes, bundles and frequent promotions, and any
             number printed here would be wrong for some of the people reading it. Check Peloton's
@@ -273,7 +273,7 @@ export default {
           </p>
           <p>
             <strong>Maintenance.</strong> Routine upkeep — silicone lubricant, a cleaning cloth, the
-            occasional belt adjustment — is cheap, roughly $15 to $40 a year according to our
+            occasional <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>belt adjustment</a> — is cheap, roughly $15 to $40 a year according to our
             <a href="/treadmill-maintenance-cost/" class="text-[#0F62FE] font-medium">treadmill maintenance cost breakdown</a>.
             Skipping it is what makes the expensive repairs, such as motors, belts and controller
             boards, arrive sooner.

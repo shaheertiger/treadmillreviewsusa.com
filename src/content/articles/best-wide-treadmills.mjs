@@ -45,7 +45,7 @@ export default {
       heading: 'Our Picks at a Glance',
       html: `          <p>
             Six treadmills, all with a 22 by 60-inch running surface, ordered roughly by price. The
-            short version: the Horizon 7.4 AT for most people who want width, the Bowflex T9 if you
+            short version: the Horizon 7.4 AT for most people who want width, the <a href="/bowflex-t9-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Bowflex T9</a> if you
             want the cheapest 22-inch belt we could verify, and the Horizon 7.8 AT if you are a
             heavier runner who wants a higher weight rating without paying for a commercial machine.
           </p>
@@ -129,7 +129,7 @@ export default {
             folding treadmill in 2022, for unexpected speed changes, over which its parent company
             agreed in August 2026 to pay a civil penalty for late reporting; Nautilus treadmills
             with model numbers T616 and T618 in 2022; and Johnson Health Tech's Matrix and Vision
-            treadmills for a power-cord fire hazard, expanded in January 2026. Life Fitness's only
+            treadmills for a power-cord fire hazard, expanded in January 2026. <a href="/life-fitness/" class="text-[#0F62FE] font-medium" data-autolink>Life Fitness</a>'s only
             treadmill recall we found dates from 2003 and covered other models. If you are buying
             secondhand, check the model and serial number on cpsc.gov yourself.
           </p>`,
@@ -292,7 +292,7 @@ export default {
           <p>
             <strong>Ceiling height.</strong> Step-up height plus your own height plus a margin for
             the bounce of running decides whether the ceiling is close. Machines with a lower deck,
-            such as the Life Fitness Run CX, help in a basement.
+            such as the <a href="/life-fitness-run-cx-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Life Fitness Run CX</a>, help in a basement.
           </p>
           <p>
             <strong>Folding.</strong> Five of the six machines here fold, but folding a heavy

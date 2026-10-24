@@ -85,7 +85,7 @@ export default {
             3.0 CHP will hold pace for an ordinary runner, and the returns above that are small —
             our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
             explains why the figure is oversold as a buying criterion. Treat it as headroom for a
-            heavier user or a shared household rather than as speed.
+            heavier user or a <a href="/family-treadmill-guide/" class="text-[#0F62FE] font-medium" data-autolink>shared household</a> rather than as speed.
           </p>`,
     },
     {
@@ -97,7 +97,7 @@ export default {
             for everything else, so it is worth being clear about which you are.
           </p>
           <p>
-            Downhill running loads the quadriceps eccentrically — the muscle lengthens under
+            <a href="/what-is-treadmill-decline-good-for/" class="text-[#0F62FE] font-medium" data-autolink>Downhill running</a> loads the quadriceps eccentrically — the muscle lengthens under
             tension rather than shortening — and that is both the most effective way to prepare
             for a course with descent and the most effective way to make yourself extremely sore.
             If you race anything with meaningful downhill in it, training that specifically is the

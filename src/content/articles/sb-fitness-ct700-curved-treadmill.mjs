@@ -174,7 +174,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">A long deck and a tall step</h3>
           <p>
             A 66.6-inch running surface — 66 inches in the manual — is long for a curved treadmill; the
-            AssaultRunner Pro lists 62. Extra length gives a tall runner room to move forward and back on the
+            AssaultRunner Pro lists 62. Extra length gives a <a href="/best-treadmills-for-tall-runners/" class="text-[#0F62FE] font-medium" data-autolink>tall runner</a> room to move forward and back on the
             curve to change pace, which is how you control a self-powered belt. The 19-inch width is two inches
             wider than the AssaultRunner and one inch narrower than the CT550. The cost of that size is height
             and bulk: a 13.5-inch step-up, the tallest in SB Fitness's range, a 78-inch length and a 308 lb
@@ -349,7 +349,7 @@ export default {
             We searched the Consumer Product Safety Commission's recall database for SB Fitness on 14 October
             2026 and found no recall or warning. The seller describes gravity-assisted starting and stopping
             on the curve, a rear upward curve that helps stop the belt, magnetic resistance for controlled
-            slowing, anti-skid treads and full handrails. Hold the rails until you can control the belt, start
+            slowing, anti-skid treads and full handrails. <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Hold the rails</a> until you can control the belt, start
             sled pushes at moderate resistance, and keep children and pets away from moving slats.
           </p>`,
     },

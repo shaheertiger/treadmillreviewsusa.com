@@ -205,7 +205,7 @@ export default {
       heading: 'Uprights, Console and Handrail Wobble',
       html: `          <p>
             Some movement at the console is normal, and it is worth calibrating expectations before
-            hunting for a fault. On lighter folding treadmills the uprights are relatively slender
+            hunting for a fault. On lighter <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>folding treadmills</a> the uprights are relatively slender
             tubes cantilevered from the base, and a console that sways a little at running pace is a
             characteristic of the design rather than a defect. Heavier machines with thicker
             uprights and wider bases move much less. The difference is a large part of what you pay
@@ -378,7 +378,7 @@ export default {
           <p>
             <strong>A light machine at running pace.</strong> Budget and compact treadmills are
             lighter, with narrower bases and slimmer uprights, and they move more under a runner.
-            Walking pads and under-desk machines are designed for walking, and running on one
+            <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>Walking pads</a> and under-desk machines are designed for walking, and running on one
             produces movement no adjustment will cure. If you run regularly on a machine built for
             walking, the honest fix is a machine built for running; our guide to the
             <a href="/best-treadmills-for-running/" class="text-[#0F62FE] font-medium">best treadmills for running</a>
@@ -414,7 +414,7 @@ export default {
             <li>Vibration that appeared suddenly and is severe, especially after a noise.</li>
             <li>A heavy, fast throb from the motor area with the belt running empty, or a flywheel
             you can see moving on its shaft.</li>
-            <li>Vibration together with a burning smell, grinding or scraping from the front.</li>
+            <li>Vibration together with a <a href="/treadmill-burning-smell/" class="text-[#0F62FE] font-medium" data-autolink>burning smell</a>, grinding or scraping from the front.</li>
             <li>A crack in the frame, a weld that has opened, or an upright that moves at its base
             joint after tightening.</li>
             <li>A folding latch or locking pin that does not engage fully.</li>

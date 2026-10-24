@@ -283,7 +283,7 @@ export default {
             On its own, a fan is not a meaningful load on a household circuit, and it is rarely the
             reason a treadmill trips a breaker. The rule that matters is about outlets, not
             circuits: plug the fan into a different outlet from the treadmill, and never share a
-            power strip, extension cord or surge protector between them. Many treadmill manuals ask
+            power strip, extension cord or <a href="/treadmill-surge-protector/" class="text-[#0F62FE] font-medium" data-autolink>surge protector</a> between them. Many treadmill manuals ask
             for a dedicated outlet and prohibit extension cords for the treadmill, and the fan
             should never be the reason one appears.
           </p>
@@ -299,7 +299,7 @@ export default {
           <p>
             Some workshop blower fans, including the Lasko U12104 on this page, have grounded
             outlets built in for tools or a second fan. Do not plug the treadmill into a fan's
-            outlets. That turns the fan's cord into an extension cord for the treadmill, which is
+            outlets. That turns the fan's cord into an <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium" data-autolink>extension cord</a> for the treadmill, which is
             exactly what most manuals prohibit.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Fan heaters are a different story</h3>
@@ -343,7 +343,7 @@ export default {
       id: 'who-should-skip',
       heading: 'Who Should Buy Something Else',
       html: `          <p>
-            <strong>If you only walk, briefly.</strong> For a 20-minute walk on a walking pad in
+            <strong>If you only walk, briefly.</strong> For a 20-minute walk on a <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> in
             a cool room, a desk fan you already own, raised on a shelf, may be all you need.
           </p>
           <p>
@@ -556,6 +556,12 @@ export default {
       title: 'Best Treadmill Accessories',
       blurb: 'The short list of extras worth buying with a treadmill.',
       url: '/best-treadmill-accessories/',
+    },
+    {
+      kicker: 'Covers',
+      title: 'Best Treadmill Covers',
+      blurb: 'Dust and garage covers, measuring folded versus unfolded, and why breathable matters.',
+      url: '/best-treadmill-covers/',
     },
   ],
   bottomLine: [

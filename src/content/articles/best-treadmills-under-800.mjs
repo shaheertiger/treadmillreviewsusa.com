@@ -92,7 +92,7 @@ export default {
           </p>
           <p>
             <strong>The walker who wants a real treadmill.</strong> Handrails, incline, a console
-            with buttons and a frame that stays still. Everything a walking pad gives up, at a
+            with buttons and a frame that stays still. Everything a <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> gives up, at a
             price that does not require conviction about a habit you have not formed yet.
           </p>
           <p>
@@ -118,7 +118,7 @@ export default {
       heading: 'How We Chose',
       html: `          <p>
             We have not tested these machines, and nothing on this page should be read as if we
-            had. They were chosen from the manufacturers' published specifications — deck length,
+            had. They were chosen from the manufacturers' published specifications — <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium" data-autolink>deck length</a>,
             continuous-duty motor rating, incline range and assembled weight — together with
             warranty terms, which are the manufacturer's own statement of how long it expects
             the parts to last.
@@ -166,7 +166,7 @@ export default {
           </p>
           <p>
             The reliable windows are January, when new-year demand meets aggressive competition;
-            late November through Black Friday and Cyber Monday, which is usually the deepest
+            late November through <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium" data-autolink>Black Friday</a> and Cyber Monday, which is usually the deepest
             discounting of the year; and late spring into early summer, when demand falls and
             stock needs clearing before new model years arrive.
           </p>

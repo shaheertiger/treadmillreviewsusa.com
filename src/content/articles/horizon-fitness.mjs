@@ -257,7 +257,7 @@ export default {
       heading: 'How to Use This Page Today',
       html: `          <p>
             Take the <strong>seven verification points</strong> to the retailer and get the answers
-            in writing for the exact model and model year. Deck length and width, continuous-duty
+            in writing for the exact model and model year. <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium" data-autolink>Deck length</a> and width, continuous-duty
             horsepower, roller diameter, assembled weight, weight capacity, subscription position
             and warranty terms.
           </p>

@@ -46,7 +46,7 @@ export default {
       heading: 'Our Picks at a Glance',
       html: `          <p>
             Five machines, each confirmed by its maker as non-folding. The short version: the Spirit
-            XT685 is the best all-round fixed-deck treadmill for the money; the NordicTrack X16 is the
+            <a href="/spirit-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>XT685</a> is the best all-round fixed-deck treadmill for the money; the NordicTrack X16 is the
             cheapest powered one we could verify and the one to choose for steep incline walking;
             and the two Life Fitness machines are the step up in build and warranty, with the Club
             Series+ as the gym-grade option for buyers whose budget allows it.
@@ -266,7 +266,7 @@ export default {
       heading: 'Delivery, Weight and Power',
       html: `          <p>
             The practicalities of a fixed-frame treadmill start before you run on it. Every machine
-            here is heavy — 243 lb for the Life Fitness T3 and 434 lb for the Club Series+, assembled,
+            here is heavy — 243 lb for the <a href="/life-fitness-t3-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Life Fitness T3</a> and 434 lb for the Club Series+, assembled,
             with the NordicTrack X16 weighing 445 lb in its box — and that shapes delivery, the route
             into the room and the floor it stands on.
           </p>
@@ -612,6 +612,12 @@ export default {
       title: 'Treadmill Dimensions and Space Requirements',
       blurb: 'Footprints, clearances and ceiling height before you order.',
       url: '/treadmill-dimensions-space-requirements/',
+    },
+    {
+      kicker: 'Router',
+      title: 'Home Treadmills: Which Buyer Are You?',
+      blurb: 'A routing guide that sends you to the right specialised guide for your situation.',
+      url: '/home-treadmills/',
     },
   ],
   bottomLine: [

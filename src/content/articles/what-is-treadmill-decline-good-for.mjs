@@ -415,8 +415,8 @@ export default {
             hikers and trail runners. On the machines our roundup could confirm, that meant the
             NordicTrack Commercial series or the Wahoo KICKR RUN at -3%, and NordicTrack's X Series at
             -6%.</li>
-            <li><strong>The incline end too.</strong> Every decline treadmill is also an incline
-            treadmill, and the climb often matters as much as the descent.</li>
+            <li><strong>The incline end too.</strong> Every decline treadmill is also an <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>incline
+            treadmill</a>, and the climb often matters as much as the descent.</li>
             <li><strong>How decline is controlled.</strong> If you want to set it by hand without a
             subscription, confirm that the negative settings are available in manual mode on the exact
             model before ordering.</li>

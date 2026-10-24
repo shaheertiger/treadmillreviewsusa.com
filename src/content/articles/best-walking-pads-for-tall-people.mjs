@@ -77,8 +77,8 @@ export default {
       products: true,
       html: `          <p>
             Every pick has a belt or walking area of at least 47 inches by the brand's own figure,
-            confirmed by at least one other source. That rules out the large majority of walking
-            pads, and it is why four of the six come from one brand: WalkingPad makes more long-belt
+            confirmed by at least one other source. That rules out the large majority of <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking
+            pads</a>, and it is why four of the six come from one brand: WalkingPad makes more long-belt
             pads than anyone else we could verify. For the wider context, our
             <a href="/walking-pad-buying-guide/" class="text-[#0F62FE] font-medium">walking pad buying guide</a>
             covers everything other than length.
@@ -107,7 +107,7 @@ export default {
             established enough to support the machine. We checked cpsc.gov for each brand.
           </p>
           <p>
-            Two pads we looked at and left out. The iMovR ThermoTread GT had a 50-inch belt, but its
+            Two pads we looked at and left out. The <a href="/imovr-unsit-treadmill-desk/" class="text-[#0F62FE] font-medium" data-autolink>iMovR</a> ThermoTread GT had a 50-inch belt, but its
             maker has discontinued it. And a newer office treadmill sold in its place has a belt that
             is wide rather than long, by the figures we found, so it does not solve a tall walker's
             problem.

@@ -164,7 +164,7 @@ export default {
           </p>
           <p>
             <strong>What you are buying</strong> is a quiet, compact way to walk indoors: under a
-            standing desk, in front of a television, on days when walking outside is not an option.
+            standing desk, in front of a television, on days when <a href="/is-walking-on-a-treadmill-the-same-as-walking-outside/" class="text-[#0F62FE] font-medium" data-autolink>walking outside</a> is not an option.
             For that job, a well-chosen pad at this price is genuinely good, and most treadmills of
             any price spend most of their lives at 2.5 to 4 mph anyway. The
             <a href="/walking-pad-buying-guide/" class="text-[#0F62FE] font-medium">walking pad buying guide</a>
@@ -216,7 +216,7 @@ export default {
           <p>
             <strong>Warranties are one year, sometimes stretched.</strong> UREVO lists one year plus
             a 180-day extension, which independent coverage reports depends on registering the pad in
-            its app. DeerRun lists one year. Wellfit's own page and its Amazon listing describe
+            its app. <a href="/deer-run-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>DeerRun</a> lists one year. Wellfit's own page and its Amazon listing describe
             different terms, and our review of the TM037 found the motor effectively covered for one
             year. A two-year warranty is unusual at this price. When a brand is only willing to
             cover the motor for a year, plan your purchase around a machine that may need a part,

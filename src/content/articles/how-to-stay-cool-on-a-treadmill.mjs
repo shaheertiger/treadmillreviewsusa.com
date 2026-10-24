@@ -157,7 +157,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Power: its own outlet</h3>
           <p>
             Plug the fan into a different outlet from the treadmill. Never share a power strip,
-            extension cord or surge protector between them. Many treadmill manuals ask for a
+            extension cord or <a href="/treadmill-surge-protector/" class="text-[#0F62FE] font-medium" data-autolink>surge protector</a> between them. Many treadmill manuals ask for a
             dedicated outlet and prohibit extension cords for the treadmill itself, so the fan
             should never be the reason one appears.
           </p>
@@ -280,7 +280,7 @@ export default {
           </ul>
           <p>
             Keep spills off the treadmill. Water on the belt is slippery, and water in the console
-            or the motor compartment is a fault waiting to happen. If a bottle does go over the
+            or the <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium" data-autolink>motor compartment</a> is a fault waiting to happen. If a bottle does go over the
             console, unplug the machine and let it dry before using it again.
           </p>`,
     },
@@ -409,7 +409,7 @@ export default {
             <li><strong>Leave space in front of the treadmill</strong> for a fan on a stand,
             clear of the console and the step-on area.</li>
             <li><strong>Plan the outlets.</strong> The treadmill on its own wall outlet, the fan
-            and anything else on a different one. No strips, no extension cords.</li>
+            and anything else on a different one. No strips, no <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium" data-autolink>extension cords</a>.</li>
             <li><strong>Buy one good fan before anything else,</strong> and mount it at chest
             height, aimed at your torso and face.</li>
             <li><strong>Add a thermometer and hygrometer</strong> so you know what the room is
@@ -422,7 +422,7 @@ export default {
           <p>
             The last point protects the machine rather than you, and it is worth keeping
             separate in your mind. A runner overheating and a treadmill overheating have different
-            causes and different fixes; the machine's version is about lubrication, belt tension,
+            causes and different fixes; the machine's version is about lubrication, <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a>,
             dust in the motor compartment and electrical supply, and it is covered in our
             overheating guide linked at the top of this page.
           </p>`,

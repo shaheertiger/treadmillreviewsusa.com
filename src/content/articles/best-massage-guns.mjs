@@ -123,7 +123,7 @@ export default {
             Commission's recall database by brand name for Therabody, Theragun, Hyperice, Hypervolt,
             Ekrin, RENPHO, Bob and Brad and TOLOCO, in recall titles, manufacturer names and recall
             descriptions, and found no recall for any of them. Searching by product type turned up
-            three massager recalls: Massimo percussion massage guns sold at Costco, recalled in
+            three massager recalls: Massimo percussion massage guns sold at <a href="/buying-a-treadmill-at-costco/" class="text-[#0F62FE] font-medium" data-autolink>Costco</a>, recalled in
             January 2021 for a fire hazard, and two HoMedics massager recalls, in May 2017 for
             electric shock and burn hazards and in January 2024 for fire and burn hazards. We did not
             consider either brand for this page. A massage gun is a lithium-ion battery pressed
@@ -651,6 +651,12 @@ export default {
       title: 'Best Home Gym Accessories',
       blurb: 'The smaller kit that makes a home gym safer and easier to train in.',
       url: '/best-home-gym-accessories/',
+    },
+    {
+      kicker: 'Recovery',
+      title: 'Best Zero Gravity Massage Chairs',
+      blurb: 'Five chairs by track, height and weight limits, wall clearance, delivery and warranty.',
+      url: '/best-zero-gravity-massage-chairs/',
     },
   ],
   bottomLine: [

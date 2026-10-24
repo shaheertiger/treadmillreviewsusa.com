@@ -105,7 +105,7 @@ export default {
             single brand. For each job we then looked for one product that the maker or seller lists
             as on sale on 16 October 2026 and that independent coverage had described in enough detail
             to check. The main independent sources were Garage Gym Reviews' current guides to
-            benches, resistance bands, pull-up bars, flooring and jump ropes, and retailer listings
+            benches, resistance bands, pull-up bars, flooring and <a href="/best-jump-ropes/" class="text-[#0F62FE] font-medium" data-autolink>jump ropes</a>, and retailer listings
             from Powersystems and Strength Shop for the collars.
           </p>
           <p>
@@ -119,7 +119,7 @@ export default {
             against the CPSC recall database. None of the six picks is under a recall. REP's only
             record we found is a 2021 recall alert for strap safety brackets on its racks, and
             Rogue's records cover other products. The search did turn up recalls worth knowing about
-            in these categories: HomeProGym stackable resistance bands with metal D-rings (May 2026)
+            in these categories: HomeProGym stackable <a href="/best-resistance-bands/" class="text-[#0F62FE] font-medium" data-autolink>resistance bands</a> with metal D-rings (May 2026)
             and SPRI ultra-heavy resistance tubes (2019), both because the band can separate from its
             handle or ring and strike the user; the Ethos Pull-Up Assist (2019), whose plastic clip
             could break, with lacerations reported; Rogue's MobilityWOD band door anchor (2015), whose
@@ -161,7 +161,7 @@ export default {
           <p>
             If you have not yet bought dumbbells, our guide to
             <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">adjustable dumbbells</a>
-            covers the trade-offs between mechanisms and when fixed dumbbells are the better choice.
+            covers the trade-offs between mechanisms and when <a href="/best-dumbbell-sets/" class="text-[#0F62FE] font-medium" data-autolink>fixed dumbbells</a> are the better choice.
           </p>`,
     },
     {
@@ -283,7 +283,7 @@ export default {
       id: 'pull-up-bars',
       heading: 'Pull-Up Bars: Doorway, Wall, Ceiling or Rack',
       html: `          <p>
-            A pull-up bar is only as strong as what it is fixed to, which makes installation the real
+            A <a href="/best-pull-up-bars/" class="text-[#0F62FE] font-medium" data-autolink>pull-up bar</a> is only as strong as what it is fixed to, which makes installation the real
             decision.
           </p>
           <p>
@@ -594,6 +594,18 @@ export default {
       title: 'Recovery Tools for Weightlifters',
       blurb: 'Foam rollers, massage tools and what recovery kit is actually worth owning.',
       url: '/best-recovery-tools-for-weightlifters/',
+    },
+    {
+      kicker: 'Boxing',
+      title: 'Best Punching Bags',
+      blurb: 'Hanging heavy bags and freestanding bags, with mounting, base fill and noise.',
+      url: '/best-punching-bags/',
+    },
+    {
+      kicker: 'Review',
+      title: 'GymProLuxe Review',
+      blurb: 'What we could and could not verify about the seller and its products before you buy.',
+      url: '/gymproluxe-review/',
     },
   ],
   bottomLine: [

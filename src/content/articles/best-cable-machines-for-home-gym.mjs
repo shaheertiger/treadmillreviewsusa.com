@@ -114,7 +114,7 @@ export default {
           <p>
             We then compared the stack weight, pulley ratio, footprint, height and price on the
             maker's page with at least one independent source — Garage Gym Reviews for the REP and
-            Bells of Steel machines and the Tonal 2, and PCWorld for the Speediance. Where the two
+            Bells of Steel machines and the <a href="/best-smart-home-gyms/" class="text-[#0F62FE] font-medium" data-autolink>Tonal</a> 2, and PCWorld for the Speediance. Where the two
             agreed, the figure went on the card. Where they did not, we left it out: the overall
             height of the Bells of Steel Cable Tower and All-in-One Trainer differs by up to an
             inch between sources, the Arcadia's number of cable positions is given as 32 by REP and
@@ -199,7 +199,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Functional trainer (dual weight stack)</h3>
           <p>
             Two columns, each with its own stack and an adjustable pulley carriage, joined by a
-            frame and usually a pull-up bar. It is the most versatile type and the easiest to live
+            frame and usually a <a href="/best-pull-up-bars/" class="text-[#0F62FE] font-medium" data-autolink>pull-up bar</a>. It is the most versatile type and the easiest to live
             with, because weight changes are a pin and height changes are a pop-pin. The cost is
             floor space: even a compact unit like the Arcadia is more than four and a half feet
             wide at the front. Choose this if the cable machine is the main event.
@@ -253,8 +253,8 @@ export default {
             <strong>Ceiling height.</strong> Most functional trainers and towers stand somewhere
             around six and a half to seven feet tall before you add flooring. Measure your ceiling
             at the exact spot the machine will go — basements often have beams, ducts or a low
-            soffit exactly where you want the machine — and subtract the thickness of any rubber
-            flooring or platform, which raises the machine. Then add room above the frame for
+            soffit exactly where you want the machine — and subtract the thickness of any <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium" data-autolink>rubber
+            flooring</a> or platform, which raises the machine. Then add room above the frame for
             assembly: tall uprights are usually stood up from lying flat, and a frame that is only
             just shorter than the ceiling may not tip up into place. Several makers, including Bells
             of Steel, state an assembly clearance that is higher than the machine itself; check it
@@ -407,7 +407,7 @@ export default {
             accessories and modest for heavy pulling.
           </p>
           <p>
-            <strong>If your budget is under a few hundred dollars</strong>, resistance bands and a
+            <strong>If your budget is under a few hundred dollars</strong>, <a href="/best-resistance-bands/" class="text-[#0F62FE] font-medium" data-autolink>resistance bands</a> and a
             door anchor cover many cable movements for a fraction of the cost, and adjustable
             dumbbells cover most of the rest. Our guide to
             <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium">adjustable dumbbells</a>
@@ -641,6 +641,12 @@ export default {
       title: 'Commercial Gym Equipment',
       blurb: 'What changes when cable machines are built for daily shared use.',
       url: '/commercial-gym-equipment/',
+    },
+    {
+      kicker: 'Legs',
+      title: 'Best Leg Extension Machines',
+      blurb: 'Six leg extension machines and attachments, with knee alignment and fit explained.',
+      url: '/best-leg-extension-machines/',
     },
   ],
   bottomLine: [

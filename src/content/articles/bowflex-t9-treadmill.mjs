@@ -272,7 +272,7 @@ export default {
             is exactly where a continuous-duty rating would be most informative and where the T9 gives you a
             test rating and a lifetime warranty instead. And steep walking tempts people to hold the rails,
             which removes much of the benefit; if you need the rails at 15%, take the grade down until you
-            can walk freely. If you want to practise downhill running, the T9 cannot help; machines with
+            can walk freely. If you want to practise <a href="/what-is-treadmill-decline-good-for/" class="text-[#0F62FE] font-medium" data-autolink>downhill running</a>, the T9 cannot help; machines with
             decline are covered in our
             <a href="/best-treadmills-with-decline/" class="text-[#0F62FE] font-medium">treadmills with decline</a>
             roundup.
@@ -313,7 +313,7 @@ export default {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Watches</h3>
           <p>
-            An NFC reader on the console connects to Apple Watch and Samsung Galaxy Watch with a tap, so the
+            An NFC reader on the console connects to <a href="/best-treadmills-for-apple-watch/" class="text-[#0F62FE] font-medium" data-autolink>Apple Watch</a> and Samsung Galaxy Watch with a tap, so the
             watch records the treadmill's distance and speed rather than estimating them from your wrist. Our
             guide to <a href="/how-to-connect-apple-watch-to-treadmill/" class="text-[#0F62FE] font-medium">connecting an Apple Watch to a treadmill</a>
             covers how that works across brands.
@@ -668,6 +668,12 @@ export default {
       title: 'Best Smart Treadmills',
       blurb: 'Open, app-agnostic consoles against screen-led machines built around one platform.',
       url: '/best-smart-treadmills/',
+    },
+    {
+      kicker: 'Bowflex',
+      title: 'Bowflex T16 Treadmill Review',
+      blurb: 'The 16 in. touchscreen flagship checked against Bowflex and two independent reviews.',
+      url: '/bowflex-t16-treadmill/',
     },
   ],
   bottomLine: [

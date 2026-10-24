@@ -290,7 +290,7 @@ export default {
           </p>
           <p>
             <strong>A bent roller or a loose pulley.</strong> The front roller carries a pulley for
-            the motor drive belt. A pulley loose on its shaft, or a roller bent by a dropped weight
+            the <a href="/treadmill-drive-belt/" class="text-[#0F62FE] font-medium" data-autolink>motor drive belt</a>. A pulley loose on its shaft, or a roller bent by a dropped weight
             or rough transport, wobbles once per roller revolution. You may be able to see the wobble
             at the roller end with the belt running empty at low speed. Both mean a replacement
             part, and both are worth doing promptly because the wobble loads the bearings and the

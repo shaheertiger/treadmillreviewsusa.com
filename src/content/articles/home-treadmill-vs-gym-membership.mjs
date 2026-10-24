@@ -163,8 +163,8 @@ export default {
           </p>
           <p>
             <strong>The cheap test.</strong> If you are unsure, spend eight weeks doing the routine
-            you intend to do at home — on a gym treadmill, on a pay-as-you-go pass, or walking
-            outside. If you keep it up for eight weeks with the extra friction of getting there,
+            you intend to do at home — on a gym treadmill, on a pay-as-you-go pass, or <a href="/is-walking-on-a-treadmill-the-same-as-walking-outside/" class="text-[#0F62FE] font-medium" data-autolink>walking
+            outside</a>. If you keep it up for eight weeks with the extra friction of getting there,
             removing that friction is likely to help. If the routine collapses in week three, a
             treadmill in the spare room is unlikely to rescue it, and the money is better kept.
           </p>`,
@@ -178,9 +178,9 @@ export default {
           </p>
           <ul>
             <li><strong>Strength equipment.</strong> Racks, benches, a full set of dumbbells and
-            cable machines cost thousands to replicate at home and take a room. For anyone whose
+            <a href="/best-cable-machines-for-home-gym/" class="text-[#0F62FE] font-medium" data-autolink>cable machines</a> cost thousands to replicate at home and take a room. For anyone whose
             training includes lifting, this is the main reason to keep a gym.</li>
-            <li><strong>Variety of cardio.</strong> Rowers, bikes, ellipticals and stair climbers
+            <li><strong>Variety of cardio.</strong> Rowers, bikes, ellipticals and <a href="/stairmaster-vs-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>stair climbers</a>
             alongside the treadmills. If you like to rotate, one home machine is a narrower
             offering. Our <a href="/treadmill-vs-elliptical/" class="text-[#0F62FE] font-medium">treadmill vs elliptical</a>
             comparison covers the most common alternative.</li>
@@ -249,7 +249,7 @@ export default {
             <strong>Treadmill: maintenance and repairs.</strong> Routine upkeep is cheap; the
             expensive failures — motor and controller board — mostly arrive on machines that were
             never lubricated, and can cost several hundred dollars outside warranty. Budget a belt
-            and deck replacement somewhere around year seven on a machine you keep. The
+            and <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium" data-autolink>deck replacement</a> somewhere around year seven on a machine you keep. The
             <a href="/treadmill-maintenance-cost/" class="text-[#0F62FE] font-medium">maintenance cost breakdown</a>
             gives the full picture.
           </p>

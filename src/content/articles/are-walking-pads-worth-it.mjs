@@ -255,7 +255,7 @@ export default {
           <p>
             Pad warranties are commonly one to two years. That is an honest signal about what the
             manufacturer expects, and it compares with the much longer frame and motor cover common
-            on mid-range treadmills. Read what the warranty actually covers — motor, frame, belt,
+            on <a href="/treadmills-under-1500/" class="text-[#0F62FE] font-medium" data-autolink>mid-range treadmills</a>. Read what the warranty actually covers — motor, frame, belt,
             electronics — and whether it includes parts shipping or labour. Our
             <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
             explains how to read the terms, and the same reading applies to pads.
@@ -280,7 +280,7 @@ export default {
             Most of what shortens a pad's life is avoidable: a dry deck making the motor work
             harder, a belt left running off-centre, dust and carpet fibres drawn into the motor
             area, and use beyond the stated weight limit or continuous running time. Keep it on a
-            firm mat, keep the belt centred, and follow the manual's lubrication schedule — our
+            firm mat, keep the belt centred, and follow the manual's <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>lubrication schedule</a> — our
             guide to
             <a href="/how-to-lubricate-a-walking-pad/" class="text-[#0F62FE] font-medium">lubricating a walking pad</a>
             covers the method on a deck with no rail to lift against. A well-kept pad will not
@@ -348,7 +348,7 @@ export default {
             <li><strong>Lubricant.</strong> Many pads ship with a small bottle of silicone. A
             replacement is inexpensive and lasts a long time at pad quantities.</li>
             <li><strong>Shoes.</strong> If you have been walking at the desk in slippers, a pair of
-            comfortable walking shoes is a sensible addition.</li>
+            comfortable <a href="/best-walking-shoes-for-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>walking shoes</a> is a sensible addition.</li>
             <li><strong>Replacement parts.</strong> A remote, a safety clip or a belt, if they fail
             outside warranty and the brand sells them.</li>
             <li><strong>Electricity.</strong> Pennies an hour, as worked out above.</li>
@@ -418,7 +418,7 @@ export default {
             <li><strong>Is slow walking what you actually want?</strong> Not running, not steep
             incline, not a hard workout.</li>
             <li><strong>Will a short belt suit your stride at your pace?</strong> Taller walkers
-            planning to walk at 3 mph and above should check belt length first.</li>
+            planning to walk at 3 mph and above should check <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium" data-autolink>belt length</a> first.</li>
             <li><strong>Can you return it?</strong> Know the return window and who pays return
             shipping. A pad that turns out not to suit you in the first two weeks is far cheaper to
             send back than to sell.</li>

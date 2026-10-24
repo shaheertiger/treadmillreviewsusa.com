@@ -190,7 +190,7 @@ export default {
           <p>
             Dogs lick and chew. Use finishes and plastics you would be comfortable with a dog mouthing,
             sand wood to a smooth finish with no splinters, and give the running surface grip without
-            abrasion. A curved, self-powered treadmill for people faces the same surface questions; our
+            abrasion. A curved, <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>self-powered treadmill</a> for people faces the same surface questions; our
             <a href="/curved-treadmill-guide/" class="text-[#0F62FE] font-medium">curved treadmill guide</a>
             explains how slat belts are built on those machines.
           </p>`,
@@ -356,7 +356,7 @@ export default {
             sets out the stages.</li>
             <li><strong>Keep sessions short.</strong> Start with very short sessions and build over days
             or weeks. Preventive Vet suggests no more than 30 minutes at a time even once a dog has
-            mastered a treadmill. Warm up and cool down.</li>
+            mastered a treadmill. <a href="/treadmill-warm-up-and-cool-down/" class="text-[#0F62FE] font-medium" data-autolink>Warm up and cool down</a>.</li>
             <li><strong>Watch the dog, not the clock.</strong> Heavy panting, lagging to the back,
             changes in gait, pale gums, a bluish tongue, excessive drooling or trying to get off all
             mean the session is over. Keep the room cool and water available.</li>

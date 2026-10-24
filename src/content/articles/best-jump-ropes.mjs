@@ -168,7 +168,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Smart ropes</h3>
           <p>
             Ordinary ropes with a sensor and a battery in the handle that count your jumps and pass them to an
-            app, and sometimes show them on a small screen. Counting is genuinely useful for interval workouts
+            app, and sometimes show them on a small screen. Counting is genuinely useful for <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium" data-autolink>interval workouts</a>
             and for tracking progress. The calorie figures they display are estimates; see the calorie section
             below. <strong>Best for</strong> people who are motivated by numbers and do timed or counted sets.
           </p>
@@ -572,6 +572,18 @@ export default {
       title: 'Home Gym Accessories Worth Buying',
       blurb: 'Flooring, bands, a bench and the other small kit that makes a home gym work, and what to skip.',
       url: '/best-home-gym-accessories/',
+    },
+    {
+      kicker: 'Plyo',
+      title: 'Best Plyo Boxes',
+      blurb: 'Soft, wood, steel and stackable foam boxes: heights, stability and shin safety.',
+      url: '/best-plyo-boxes/',
+    },
+    {
+      kicker: 'Boxing',
+      title: 'Best Punching Bags',
+      blurb: 'Hanging heavy bags and freestanding bags, with mounting, base fill and noise.',
+      url: '/best-punching-bags/',
     },
   ],
   bottomLine: [

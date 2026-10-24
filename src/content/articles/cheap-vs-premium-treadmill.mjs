@@ -46,7 +46,7 @@ export default {
             enough mass to be planted at 10 mph, cushioning that does not degrade.
           </p>
           <p>
-            <strong>Above $3,000</strong> buys duration. AC motor, commercial rollers, a frame
+            <strong>Above $3,000</strong> buys duration. <a href="/ac-vs-dc-treadmill-motor/" class="text-[#0F62FE] font-medium" data-autolink>AC motor</a>, commercial rollers, a frame
             built for eight hours a day. A home user consumes a fraction of that capacity, which
             is exactly why these machines last so long — and exactly why most people do not need
             one.
@@ -227,7 +227,7 @@ export default {
           <p>
             <strong>You move frequently.</strong> Treadmills are miserable to relocate and lose
             value quickly in the first years. Renters moving every year or two are better served by
-            something cheap and light, or by a walking pad.
+            something cheap and light, or by a <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a>.
           </p>`,
     },
     {
@@ -294,7 +294,7 @@ export default {
       heading: 'Maintenance Is the Great Equaliser',
       html: `          <p>
             One point worth ending on, because it outweighs several hundred dollars of
-            specification difference: a maintained cheap treadmill outlasts a neglected expensive
+            specification difference: a maintained <a href="/best-budget-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>cheap treadmill</a> outlasts a neglected expensive
             one, routinely.
           </p>
           <p>

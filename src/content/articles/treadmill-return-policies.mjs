@@ -38,7 +38,7 @@ export default {
             Typical treadmill return policies allow returns for somewhere between a couple of weeks
             and a few months after delivery. Many charge a restocking fee, commonly a percentage of
             the price, and many pass on the cost of collecting the machine. Some require it to be
-            disassembled and repacked, sometimes in the original packaging.
+            disassembled and repacked, sometimes in the <a href="/how-to-pack-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>original packaging</a>.
           </p>
           <p>
             Put those together and a change-of-mind return can cost a meaningful slice of the
@@ -214,7 +214,7 @@ export default {
           <p>
             <strong>Some sellers will disassemble for you, for a fee.</strong> If the policy offers
             it, weigh that fee against your own time and the risk of damaging something on the way
-            out. A machine damaged during disassembly may be refunded at a lower amount, or not at
+            out. A machine damaged during <a href="/how-to-disassemble-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>disassembly</a> may be refunded at a lower amount, or not at
             all.
           </p>`,
     },

@@ -211,7 +211,7 @@ export default {
             <strong>The deck is the reason to buy it.</strong> Sole lists two touchscreen folding
             models with a 22-inch belt in its current US range, the F85 and the new F83, and the F85 is
             the only one of the two with independent coverage of its 2026 version. Two extra inches over the
-            20-inch decks on the F63, F65 and 2026 F80 give your stride room to wander at speed, more
+            20-inch decks on the F63, <a href="/sole-f65-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>F65</a> and 2026 F80 give your stride room to wander at speed, more
             space for a wide gait or a long arm swing, and more margin for a moment of fatigue late in a
             session. Taller and heavier runners and anyone doing fast intervals notice it most. Our
             <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
@@ -442,7 +442,7 @@ export default {
           <p>
             <strong>Look elsewhere if</strong> you need decline, which the 2026 F85 does not have; you
             need more than a 350 lb rating with a comfortable margin; you want classes that control the
-            machine; or a 20-inch deck is enough for you, in which case the F80 or F63 does the job for
+            machine; or a 20-inch deck is enough for you, in which case the F80 or <a href="/sole-f63-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>F63</a> does the job for
             less.
           </p>
           <p>

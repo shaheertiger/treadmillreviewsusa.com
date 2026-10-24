@@ -169,7 +169,7 @@ ${DECISION_TABLE}
           </p>
           <p>
             If you are wondering why the table does not name a single best treadmill, it is because
-            "which treadmill is good" has a different answer for each row. A good walking pad and a
+            "which treadmill is good" has a different answer for each row. A good <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> and a
             good running treadmill have almost nothing in common, and the best machine for a
             six-foot-three runner would be a poor buy for someone walking at 3 mph under a desk.
           </p>`,
@@ -448,13 +448,13 @@ ${DECISION_TABLE}
             failure costs.</li>
             <li><strong>What the console does without a subscription.</strong> Some machines work fully
             in manual mode; others lock features behind a monthly fee that belongs in your budget.</li>
-            <li><strong>The return terms.</strong> Restocking fees, freight pickup charges and
+            <li><strong>The return terms.</strong> <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium" data-autolink>Restocking fees</a>, freight pickup charges and
             packaging rules vary by seller and change over time; read the current policy before you
             order and keep the crate until the window closes.</li>
             <li><strong>Recalls and warnings.</strong> Check cpsc.gov for the brand and model, and
             register the machine with the manufacturer when it arrives.</li>
             <li><strong>The manual's electrical and installation requirements.</strong> Plug straight
-            into a wall outlet, avoid extension cords, and check whether a dedicated circuit is
+            into a wall outlet, avoid <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium" data-autolink>extension cords</a>, and check whether a dedicated circuit is
             required.</li>
           </ul>
           <p>

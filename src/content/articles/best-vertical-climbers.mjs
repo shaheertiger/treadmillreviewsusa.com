@@ -109,7 +109,7 @@ export default {
             database for every brand on this page — MaxiClimber, Sunny Health &amp; Fitness, Bells of
             Steel, CLMBR and VersaClimber — and for those we considered: Xebex, Relife, Doufit,
             Merach and Echelon. None had a recall. A search by product type found a 2018 recall of
-            Life Fitness PowerMill climbers for a fire hazard; that is a commercial stair-climbing
+            <a href="/life-fitness/" class="text-[#0F62FE] font-medium" data-autolink>Life Fitness</a> PowerMill climbers for a fire hazard; that is a commercial stair-climbing
             machine, not a vertical climber, and not on this page.
           </p>
           <p>
@@ -164,7 +164,7 @@ export default {
             measuring anyway. Basements and garages with low beams are where climbers most often
             fail to fit. Our guide to
             <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">treadmill dimensions and space requirements</a>
-            uses the same approach for incline treadmills.
+            uses the same approach for <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>incline treadmills</a>.
           </p>`,
     },
     {
@@ -218,7 +218,7 @@ export default {
           </p>
           <p>
             VersaClimber also sells an aerobic, fixed-resistance model, the SM-A, for less than the
-            magnetic SM-M. For interval training, adjustable resistance matters most; for steady
+            magnetic SM-M. For <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium" data-autolink>interval training</a>, adjustable resistance matters most; for steady
             climbing, bodyweight and a good pace are enough.
           </p>`,
     },

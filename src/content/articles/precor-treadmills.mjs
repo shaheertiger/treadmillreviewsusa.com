@@ -425,7 +425,7 @@ ${row('Star Trac', 'Core Health &amp; Fitness', 'No home range', 'Check the mode
             If you would rather buy new with a residential warranty, Life Fitness and Matrix both
             still sell home treadmills with published prices: on the day we checked (20 Oct 2026)
             Matrix's US home store listed five, from the T30 to the T75, and Life Fitness sells the
-            Run CX through its consumer store. Star Trac, like Precor, is a club brand that most home
+            <a href="/life-fitness-run-cx-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Run CX</a> through its consumer store. Star Trac, like Precor, is a club brand that most home
             buyers meet second-hand, and it is the closest like-for-like alternative to a used Precor.
           </p>`,
     },
@@ -453,7 +453,7 @@ ${row('Star Trac', 'Core Health &amp; Fitness', 'No home range', 'Check the mode
           <p>
             <strong>Buy something else if</strong> you need a 15-amp plug, a folding frame, a
             published price or a residential warranty that a second owner can rely on. A heavy home
-            treadmill from Life Fitness, Matrix or a specialist maker will be easier to live with, and
+            treadmill from <a href="/life-fitness/" class="text-[#0F62FE] font-medium" data-autolink>Life Fitness</a>, Matrix or a specialist maker will be easier to live with, and
             our <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial-grade roundup</a>
             lists the home-buyable options.
           </p>`,
@@ -525,6 +525,12 @@ ${row('Star Trac', 'Core Health &amp; Fitness', 'No home range', 'Check the mode
       title: 'Refurbished Treadmills',
       blurb: 'What refurbished and remanufactured really mean, and what to ask the reseller.',
       url: '/refurbished-treadmills/',
+    },
+    {
+      kicker: 'Dealer-sold',
+      title: 'TRUE Fitness Treadmills',
+      blurb: 'Who TRUE is, the Z500 and Performance 1000, 3000 and 8000, the warranty fine print and how TRUE compares with Sole, Spirit and Landice.',
+      url: '/true-fitness-treadmills/',
     },
   ],
   bottomLine: [

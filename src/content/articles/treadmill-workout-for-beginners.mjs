@@ -182,7 +182,7 @@ export default {
           <p>
             <strong>The talk test is the instrument.</strong> Full sentences during walking,
             short sentences during the harder blocks, never gasping. Heart-rate monitors and the
-            console zones are not needed at this stage, and the console grip sensors are unreliable
+            console zones are not needed at this stage, and the console <a href="/treadmill-heart-rate-not-working/" class="text-[#0F62FE] font-medium" data-autolink>grip sensors</a> are unreliable
             enough that they do more harm than good. If you can talk, you are fine. If you cannot,
             slow down.
           </p>
@@ -223,7 +223,7 @@ export default {
             the console. Put your hand on it so you know where it is without looking.</li>
             <li><strong>Press start and hold the rails.</strong> The belt begins at a very slow
             speed. Hold the side rails, step onto the belt one foot at a time, and walk slowly.
-            Keep holding the rails for the first minute while you get the feel of the moving
+            Keep <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>holding the rails</a> for the first minute while you get the feel of the moving
             surface under you.</li>
             <li><strong>Raise the speed in small steps</strong> to a comfortable easy walk — the
             next section covers how to choose it. Press the up button once or twice at a time and
@@ -378,7 +378,7 @@ export default {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The machine itself</h3>
           <p>
-            A belt that hesitates when your foot lands, a thumping noise, a burning smell, or a
+            A belt that hesitates when your foot lands, a <a href="/treadmill-thumping-noise/" class="text-[#0F62FE] font-medium" data-autolink>thumping noise</a>, a burning smell, or a
             belt that does not stop when the safety key is pulled are not beginner problems and not
             things to work around. Stop using the machine until it has been checked; our
             <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a>
@@ -495,7 +495,7 @@ export default {
             <li><strong>Some incline</strong> — a few percent is enough for this plan, and a range
             to around 10 or 12% keeps the machine useful as you progress.</li>
             <li><strong>A deck long enough for your stride</strong> once you start running, and a
-            frame that does not wobble at a brisk walk. Deck length matters more for taller people
+            frame that does not wobble at a brisk walk. <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium" data-autolink>Deck length</a> matters more for taller people
             and for running than for walking.</li>
             <li><strong>Cushioning you find comfortable</strong>, which is a personal preference
             rather than a specification.</li>

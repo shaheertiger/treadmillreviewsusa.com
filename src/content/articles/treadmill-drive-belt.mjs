@@ -127,7 +127,7 @@ export default {
           <p>
             <strong>2. Check lubrication.</strong> A dry deck makes the front roller hard to turn,
             which loads the drive belt as well as the running belt. Lubricate to the manual's
-            schedule, typically every 40 to 50 hours of use, as our
+            schedule, typically <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>every 40 to 50 hours</a> of use, as our
             <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a>
             explains.
           </p>
@@ -191,8 +191,8 @@ export default {
             <strong>How tension is set depends on the design.</strong> On many treadmills the motor
             sits on a mount with slotted holes or an adjustment bolt, and moving the motor away from
             the roller tightens the belt. On others there is a separate tensioner. Some designs use a
-            belt that is simply the right length, with no adjustment at all, so slack means a worn
-            belt.
+            belt that is simply the right length, with no adjustment at all, so slack means a <a href="/how-often-should-a-treadmill-belt-be-replaced/" class="text-[#0F62FE] font-medium" data-autolink>worn
+            belt</a>.
           </p>
           <p>
             <strong>Follow the manual for the method and the target tension.</strong> There is no

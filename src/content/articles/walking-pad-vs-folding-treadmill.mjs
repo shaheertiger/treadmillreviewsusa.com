@@ -121,14 +121,14 @@ export default {
             <strong>A walking pad stores flat.</strong> At roughly 4 to 7 inches tall, it slides
             under a sofa, a bed or a standing desk, and the floor it occupies when stored is floor
             you were not using anyway. Getting it out is a matter of tipping it onto its front
-            wheels and rolling it into place. Some pads fold the deck in half and stand upright in
+            wheels and rolling it into place. Some pads <a href="/how-to-fold-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>fold the deck</a> in half and stand upright in
             a corner instead; that takes a small square of floor rather than a gap under
             furniture. Either way, the pad is gone from the room in the sense that matters.
           </p>
           <p>
             <strong>A folding treadmill stores upright.</strong> The deck pivots up towards the
-            console and locks, and the machine stands against a wall. A folded mid-range
-            treadmill typically takes something like three feet by three feet of floor and stands
+            console and locks, and the machine stands against a wall. A folded <a href="/treadmills-under-1500/" class="text-[#0F62FE] font-medium" data-autolink>mid-range
+            treadmill</a> typically takes something like three feet by three feet of floor and stands
             five to six feet tall — closer to the footprint of a tall bookcase than to anything
             that slides out of sight. Compact folding treadmills are smaller, mostly because
             their decks are shorter. Some fold flat rather than upright, and those are usually
@@ -176,7 +176,7 @@ export default {
             Folding treadmills run from about 50 inches on compact, walking-oriented models to 60
             inches on full-length running models. The commonly quoted guide is that 50 to 55
             inches suits walking for most people, and that running wants around 60 inches, with
-            tall runners wanting the full length. Our
+            <a href="/best-treadmills-for-tall-runners/" class="text-[#0F62FE] font-medium" data-autolink>tall runners</a> wanting the full length. Our
             <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">treadmill belt size guide</a>
             sets out which lengths suit which users.
           </p>
@@ -312,7 +312,7 @@ export default {
           </ul>
           <p>
             Lifespan changes the comparison. Under heavy desk use, two to four years is a
-            realistic life for a pad. A maintained budget treadmill is commonly expected to last
+            realistic life for a pad. A maintained <a href="/best-budget-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>budget treadmill</a> is commonly expected to last
             five to eight years, and a mid-range one eight to twelve, according to the ranges in
             our guide to
             <a href="/how-long-do-treadmills-last/" class="text-[#0F62FE] font-medium">how long treadmills last</a>.

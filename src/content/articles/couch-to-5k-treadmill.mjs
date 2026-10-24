@@ -165,7 +165,7 @@ export default {
       heading: 'The Deck Length You Actually Need',
       html: `          <p>
             This is an equipment site, so one honest note about the machine. At the speeds this
-            plan uses — 4.5 to 5.5 mph — deck length is much less critical than it is for faster
+            plan uses — 4.5 to 5.5 mph — <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium" data-autolink>deck length</a> is much less critical than it is for faster
             running, and a 55-inch deck is genuinely adequate for most people through all nine
             weeks.
           </p>
@@ -311,7 +311,7 @@ export default {
       heading: 'The Short Version',
       html: `          <p>
             <strong>Three sessions a week on non-consecutive days</strong>, five minutes of walking
-            either side of every one, for nine weeks. Walking intervals at 3 to 3.5 mph, running
+            either side of every one, for nine weeks. <a href="/treadmill-walking-workouts/" class="text-[#0F62FE] font-medium" data-autolink>Walking intervals</a> at 3 to 3.5 mph, running
             intervals at 4.5 to 5.5 mph.
           </p>
           <p>

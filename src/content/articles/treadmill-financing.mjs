@@ -228,7 +228,7 @@ export default {
       html: `          <p>
             Connected-fitness treadmills are often sold on a single monthly figure that covers both
             the machine payment and the app membership. It is a clever piece of pricing, because it
-            makes a premium machine look comparable with a gym membership. It also makes the real
+            makes a premium machine look comparable with a <a href="/home-treadmill-vs-gym-membership/" class="text-[#0F62FE] font-medium" data-autolink>gym membership</a>. It also makes the real
             cost hard to see.
           </p>
           <p>

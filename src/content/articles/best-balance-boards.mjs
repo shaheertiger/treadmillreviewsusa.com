@@ -577,6 +577,12 @@ export default {
       blurb: 'The smaller kit that makes a home gym safer and easier to train in.',
       url: '/best-home-gym-accessories/',
     },
+    {
+      kicker: 'Review',
+      title: 'LifePro Waver Vibration Plate Review',
+      blurb: 'The specifications checked, the marketing claims read carefully, and who should ask a doctor first.',
+      url: '/lifepro-waver-vibration-plate-review/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Match the board to the job.</strong> For a standing desk, the

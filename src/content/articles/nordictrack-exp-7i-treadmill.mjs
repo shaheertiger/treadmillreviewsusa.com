@@ -172,7 +172,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Where it was sold</h3>
           <p>
             The EXP 7i was sold by NordicTrack directly and through sporting-goods retailers; deal coverage
-            records it at Dick's Sporting Goods, and Canadian Tire carried it in Canada, where a store listing
+            records it at <a href="/dicks-sporting-goods-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Dick's Sporting Goods</a>, and Canadian Tire carried it in Canada, where a store listing
             we found marks it as discontinued at the stores it checked. That history matters if you find one new in a box: a retailer's
             clearance unit may have been in a warehouse for some time, and the warranty, if any, runs from the
             date of sale on that retailer's terms.
@@ -214,7 +214,7 @@ export default {
           </table></div>
           <p>
             NordicTrack also lists Runner's Flex cushioning, OneTouch speed and incline buttons, Bluetooth for
-            headphones and heart-rate monitors, speakers, a device shelf, Google Maps route workouts and the
+            <a href="/best-headphones-for-treadmill-running/" class="text-[#0F62FE] font-medium" data-autolink>headphones</a> and heart-rate monitors, speakers, a device shelf, Google Maps route workouts and the
             SpaceSaver fold with EasyLift assist. OutdoorGearLab measured the folded machine at about 34 by
             35.75 by 67 inches; NordicTrack does not publish folded dimensions. NordicTrack's CHP footnote
             describes such ratings as laboratory dynamometer figures for consumer comparison that do not denote
@@ -508,6 +508,12 @@ export default {
       title: 'Best NordicTrack Treadmills',
       blurb: 'The whole current range ranked, with older models to skip.',
       url: '/best-nordictrack-treadmills/',
+    },
+    {
+      kicker: 'Incline trainer',
+      title: 'NordicTrack X9i Incline Trainer',
+      blurb: 'The value incline trainer, same incline hardware as the X22i.',
+      url: '/nordictrack-x9i-incline-trainer-treadmill/',
     },
   ],
   bottomLine: [

@@ -58,7 +58,7 @@ export default {
       html: `          <p>
             Six racks, chosen so that each of the four common types and three broad budgets is
             covered. Most people setting up a garage or basement gym will be best served by one
-            of the first three. The folding rack is for rooms that have to do another job, the
+            of the first three. The <a href="/best-folding-squat-racks/" class="text-[#0F62FE] font-medium" data-autolink>folding rack</a> is for rooms that have to do another job, the
             squat stand for low budgets or low ceilings, and the budget power rack for anyone who
             wants a full cage for under $400 and accepts its limits.
           </p>
@@ -160,7 +160,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Squat stands</h3>
           <p>
             A squat stand is two uprights on a base, joined at the bottom and sometimes at the top
-            by a pull-up bar. It is the cheapest and smallest way to hold a barbell at squat and
+            by a <a href="/best-pull-up-bars/" class="text-[#0F62FE] font-medium" data-autolink>pull-up bar</a>. It is the cheapest and smallest way to hold a barbell at squat and
             bench height, and the best fit for low ceilings, because short stands exist and there
             is no top crossmember to clear. The trade-off is the safety system: there is no cage
             to work inside, so you rely on spotter arms that project forward from the uprights.
@@ -387,7 +387,7 @@ export default {
             A few general rules apply to all of them. Anchor into a sound concrete slab with the
             fixings the maker specifies or sells, not whatever is in the toolbox. Do not anchor a
             rack into a wooden floor, a suspended floor or a tiled floor unless the maker's
-            instructions cover it. If rubber flooring or a platform sits under the rack, follow
+            instructions cover it. If <a href="/best-gym-flooring/" class="text-[#0F62FE] font-medium" data-autolink>rubber flooring</a> or a platform sits under the rack, follow
             the maker's guidance on whether to bolt through it or cut it around the feet, because
             a rack bolted down onto soft rubber can still move. For a wall-mounted rack, if the
             wall is not a standard stud wall — masonry, steel studs, an old or damaged frame — get

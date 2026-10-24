@@ -67,7 +67,7 @@ export default {
           <p>
             <strong>Magnetic keys</strong> are by far the most common on home treadmills. The key
             contains a small magnet. Behind the console, under the recess, is a magnetically
-            operated switch — commonly a reed switch, a pair of contacts in a sealed glass tube that
+            operated switch — commonly a <a href="/treadmill-speed-sensor/" class="text-[#0F62FE] font-medium" data-autolink>reed switch</a>, a pair of contacts in a sealed glass tube that
             close when a magnet is near. With the key in place, the switch is closed and the
             controller is allowed to run the motor. Remove the key and the switch opens.
           </p>
@@ -202,7 +202,7 @@ export default {
             The reed switch itself is a small, sealed component, and it can fail — a glass envelope
             cracked by an impact, contacts worn out over many thousands of cycles, or a solder joint
             broken by vibration. The wiring from the switch to the console board, and from the
-            console down the upright to the controller, can also fail; on folding treadmills the
+            console down the upright to the controller, can also fail; on <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>folding treadmills</a> the
             cable at the base of the upright flexes every time the machine is folded.
           </p>
           <p>
@@ -286,8 +286,8 @@ export default {
           <p>
             Whichever route you take, test the new key properly before relying on it: start the
             belt at a slow walking speed with nobody on it, pull the key by its cord, and confirm
-            the belt stops promptly. Then do the same while you are walking, holding the
-            handrails. A key that starts the machine but does not stop it reliably is worse than no
+            the belt stops promptly. Then do the same while you are walking, <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>holding the
+            handrails</a>. A key that starts the machine but does not stop it reliably is worse than no
             key at all.
           </p>`,
     },
@@ -337,7 +337,7 @@ export default {
       html: `          <p>
             A safety key only helps if it is attached in a way that actually pulls it out when
             something goes wrong. A surprising number of owners insert the key and leave the clip
-            dangling, or clip it to the handrail, which makes it a power switch rather than an
+            dangling, or clip it to the handrail, which makes it a <a href="/how-to-turn-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>power switch</a> rather than an
             emergency stop.
           </p>
           <ul>
@@ -375,8 +375,8 @@ export default {
           </p>
           <p>
             Our <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a>
-            lists it as one of four symptoms that mean stop immediately, alongside a burning
-            smell, a breaker that trips on start-up and speed that surges on its own. Stop the belt
+            lists it as one of four symptoms that mean stop immediately, alongside a <a href="/treadmill-burning-smell/" class="text-[#0F62FE] font-medium" data-autolink>burning
+            smell</a>, a breaker that trips on start-up and speed that surges on its own. Stop the belt
             with the console stop button or the power switch, unplug the machine, and do not let
             anyone use it until it has been repaired and the repair tested.
           </p>

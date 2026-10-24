@@ -85,14 +85,14 @@ export default {
             <strong>The Life Fitness Integrity Series treadmill is a genuine commercial machine,
             and the current Integrity+ can go in a home, but it is an expensive and awkward way to get a
             durable treadmill.</strong> New, it costs about $10,299 with the basic SL console. It needs
-            a dedicated 20-amp circuit, it weighs about 434 lb, and on 14 October 2026 Life Fitness's
+            a dedicated 20-amp circuit, it weighs about 434 lb, and on 14 October 2026 <a href="/life-fitness/" class="text-[#0F62FE] font-medium" data-autolink>Life Fitness</a>'s
             own consumer store did not list a new one: only two sold-out outlet listings for the
             previous Integrity. Life Fitness sells the Integrity+ through its business store, which
             requires a business account and directs home buyers elsewhere, and through dealers.
           </p>
           <p>
             On "free delivery and install": Life Fitness's consumer store does describe in-home
-            delivery, placement and professional assembly on its Integrity listings, but we could not
+            delivery, placement and <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>professional assembly</a> on its Integrity listings, but we could not
             find any statement on Life Fitness's US store that delivery and installation are free, and
             its return policy refers to shipping and installation charges that it does not refund.
             Some dealers advertise free delivery and set-up, usually with conditions. Treat "free
@@ -294,7 +294,7 @@ export default {
             and give a lead time of five to seven weeks, which may extend by two to three weeks
             depending on location. Its shipping pages explain that white-glove orders go from Life
             Fitness's warehouse to a delivery partner, who calls to book the visit, and its FAQ says the
-            installers assemble the equipment and clean up the packaging. Haul-away of old equipment is
+            installers assemble the equipment and clean up the packaging. <a href="/how-to-dispose-of-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Haul-away</a> of old equipment is
             a separate paid service, and remote areas such as Alaska and Hawaii can attract extra fees.
           </p>
           <p>
@@ -357,7 +357,7 @@ export default {
           <p>
             At 82 by 36 inches, the machine covers about 20.5 square feet before clearance, and it does
             not fold. With an 8-inch step-up and the deck raised by incline, ceiling height matters for
-            tall runners; follow the clearance and ceiling guidance in Life Fitness's installation
+            <a href="/best-treadmills-for-tall-runners/" class="text-[#0F62FE] font-medium" data-autolink>tall runners</a>; follow the clearance and ceiling guidance in Life Fitness's installation
             documents for the exact model. Our
             <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space requirements guide</a>
             covers typical clearances.

@@ -109,7 +109,7 @@ export default {
           </p>
           <p>
             Belt and deck are frequently replaced together, since the labour overlaps almost
-            entirely and a worn belt on a fresh deck wears it prematurely. Budget $250 to $500 all
+            entirely and a <a href="/how-often-should-a-treadmill-belt-be-replaced/" class="text-[#0F62FE] font-medium" data-autolink>worn belt</a> on a fresh deck wears it prematurely. Budget $250 to $500 all
             in for that job done properly at around year seven or eight.
           </p>`,
     },
@@ -136,7 +136,7 @@ export default {
           <p>
             <strong>Console or display: $150-$700</strong>, and this is where screen-based machines
             become expensive. A large touchscreen assembly can cost a substantial fraction of a
-            mid-range treadmill's value, which is a quiet argument for simpler consoles.
+            <a href="/treadmills-under-1500/" class="text-[#0F62FE] font-medium" data-autolink>mid-range treadmill</a>'s value, which is a quiet argument for simpler consoles.
           </p>
           <p>
             <strong>Service call-out: $80-$150</strong> before any parts or labour, and many
@@ -155,7 +155,7 @@ export default {
           </p>
           <p>
             <strong>Budget machines ($300-$800).</strong> Parts are cheap but frequently
-            unavailable, and third-party support is thin. A motor failure at $250 plus labour on a
+            unavailable, and third-party support is thin. A <a href="/how-long-do-treadmill-motors-last/" class="text-[#0F62FE] font-medium" data-autolink>motor failure</a> at $250 plus labour on a
             $500 machine is close to a total loss, so these are effectively disposable at the point
             of a major fault.
           </p>
@@ -207,10 +207,10 @@ export default {
       id: 'diy-vs-professional',
       heading: 'What to Do Yourself and What Not To',
       html: `          <p>
-            The split is reasonably clear, and it is drawn around the motor compartment.
+            The split is reasonably clear, and it is drawn around the <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium" data-autolink>motor compartment</a>.
           </p>
           <p>
-            <strong>Do yourself:</strong> lubrication, cleaning, belt tension adjustment, belt
+            <strong>Do yourself:</strong> lubrication, cleaning, <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a> adjustment, belt
             tracking and centring, vacuuming around and under the machine, and tightening frame
             fasteners. All are documented, none requires special tools, and all are done with the
             machine unplugged.
@@ -239,7 +239,7 @@ export default {
             Totalling a decade of ownership on a maintained mid-range machine:
           </p>
           <p>
-            Routine maintenance at $20 a year is <strong>$200</strong>. A belt and deck replacement
+            Routine maintenance at $20 a year is <strong>$200</strong>. A belt and <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium" data-autolink>deck replacement</a>
             around year seven is <strong>$250-$500</strong>. Electricity, at typical home use, is
             roughly <strong>$5-$15 a year</strong> or $50-$150 across the decade — our
             <a href="/treadmill-electricity-usage/" class="text-[#0F62FE] font-medium">electricity guide</a>

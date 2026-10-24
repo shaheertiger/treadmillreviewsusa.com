@@ -66,12 +66,12 @@ export default {
             specification in this category. Rollers are the cylinders the belt runs around, and
             their diameter determines how tightly the belt has to flex on every rotation and how
             much load the bearings carry. Budget machines use 1.9-inch rollers; better ones use
-            2.5 inches; commercial machines use 3 inches or more. Larger rollers mean less belt
-            wear, less bearing load and less motor strain — and under a heavier user, all three
+            2.5 inches; commercial machines use 3 inches or more. Larger rollers mean less <a href="/how-often-should-a-treadmill-belt-be-replaced/" class="text-[#0F62FE] font-medium" data-autolink>belt
+            wear</a>, less bearing load and less motor strain — and under a heavier user, all three
             matter considerably more.
           </p>
           <p>
-            <strong>Motor type and continuous rating.</strong> A DC motor under sustained heavy
+            <strong>Motor type and continuous rating.</strong> A <a href="/ac-vs-dc-treadmill-motor/" class="text-[#0F62FE] font-medium" data-autolink>DC motor</a> under sustained heavy
             load builds heat, and heat is what kills treadmill motors. AC motors, which appear on
             commercial machines, handle continuous load far better. If you are buying a DC
             machine, 3.5 CHP is a sensible floor rather than a nice extra. Our
@@ -162,13 +162,13 @@ export default {
       id: 'maintenance',
       heading: 'Maintenance Matters More at Higher Loads',
       html: `          <p>
-            Everything in our standard maintenance schedule applies here on a shorter interval.
+            Everything in our standard <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium" data-autolink>maintenance schedule</a> applies here on a shorter interval.
             Friction between the belt and the deck is the primary cause of motor and controller
             failure, and load increases friction directly — so a heavier user generates the
             failure condition faster.
           </p>
           <p>
-            Where our general advice is to lubricate every 40 to 50 hours of use, in this
+            Where our general advice is to lubricate <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>every 40 to 50 hours</a> of use, in this
             category we would treat 30 hours as the interval, and we would check belt tension and
             tracking monthly rather than quarterly. That is perhaps twenty minutes of work a year
             more than a lighter user needs, against a motor replacement that costs several
@@ -468,6 +468,12 @@ export default {
       title: 'Treadmill Maintenance',
       blurb: 'The full owner\'s schedule — and why it matters more at higher loads.',
       url: '/treadmill-maintenance/',
+    },
+    {
+      kicker: 'Wide deck',
+      title: 'Best Wide Treadmills',
+      blurb: 'Treadmills with a verified 22-inch running surface, and listed width versus usable width.',
+      url: '/best-wide-treadmills/',
     },
   ],
   bottomLine: [

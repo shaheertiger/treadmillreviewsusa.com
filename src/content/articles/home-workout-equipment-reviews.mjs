@@ -130,7 +130,7 @@ export default {
           </p>
           <p>
             <strong>NordicTrack RW900 rower.</strong> In October 2025 iFIT recalled NordicTrack
-            rowing machines with model number NTRW19147 because the screen console can overheat and
+            <a href="/best-rowing-machines/" class="text-[#0F62FE] font-medium" data-autolink>rowing machines</a> with model number NTRW19147 because the screen console can overheat and
             ignite. The remedy is a repair, but a recalled machine is not one we would point a new
             buyer towards.
           </p>
@@ -422,8 +422,8 @@ export default {
           </ol>
           <p>
             Two money-saving notes. Strength equipment holds its value and has few parts to wear,
-            so a secondhand rack, bench or set of plates is usually a safer bet than a secondhand
-            treadmill. And watch for sales: on three of the four cardio picks, the price we saw was
+            so a secondhand rack, bench or set of plates is usually a safer bet than a <a href="/where-to-buy-a-used-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>secondhand
+            treadmill</a>. And watch for sales: on three of the four cardio picks, the price we saw was
             $100 to $200 below list when we checked.
           </p>`,
     },

@@ -219,8 +219,8 @@ export default {
       id: 'for-seniors',
       heading: 'Walking Speed for Older Adults and Beginners',
       html: `          <p>
-            If you are older, returning to exercise after a long break, or simply new to
-            treadmills, start slower than you think you need to. Speeds of 1.5 to 2.5 mph are a
+            If you are older, returning to exercise after a long break, or simply <a href="/how-to-use-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>new to
+            treadmills</a>, start slower than you think you need to. Speeds of 1.5 to 2.5 mph are a
             completely reasonable starting point, and the brisk-walk ranges on this page can come
             later or not at all.
           </p>
@@ -281,7 +281,7 @@ export default {
           </p>
           <p>
             At walking speeds, the absence of air resistance makes very little difference, so you
-            do not need to add incline to match outdoor walking. The 1% convention is a running
+            do not need to add incline to match <a href="/is-walking-on-a-treadmill-the-same-as-walking-outside/" class="text-[#0F62FE] font-medium" data-autolink>outdoor walking</a>. The 1% convention is a running
             correction. Our comparison of
             <a href="/treadmill-vs-running-outside/" class="text-[#0F62FE] font-medium">treadmill and outdoor running</a>
             explains where those differences do matter.
@@ -347,7 +347,7 @@ export default {
           <p>
             What matters more for walking is the low end and the incline: a smooth, steady belt at
             slow speeds, a starting speed low enough for comfort, and a powered incline if you want
-            to make walks harder without speeding up. Walking pads are the main exception — some
+            to make walks harder without speeding up. <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>Walking pads</a> are the main exception — some
             are limited to around 4 mph or so, which is fine for desk walking and easy sessions but
             may cap your fast-walking blocks. Check the specification if fast walking matters to
             you.

@@ -91,7 +91,7 @@ export default {
       id: 'how-we-chose',
       heading: 'How We Chose These Walking Pads',
       html: `          <p>
-            We have not tested these walking pads, and nothing on this page should be read as if we
+            We have not tested these <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pads</a>, and nothing on this page should be read as if we
             had. The picks were made from published specifications, manufacturer and retailer
             listings, warranty terms and independent coverage, checked on 13 October 2026. For each
             pad we confirmed that it is currently sold, on the brand's own store, on Amazon, at a
@@ -108,7 +108,7 @@ export default {
           </p>
           <p>
             Beyond capacity, we looked for <strong>a motor rating that means something</strong> —
-            ideally a published continuous figure rather than a peak horsepower number alone —
+            ideally a published continuous figure rather than a <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium" data-autolink>peak horsepower</a> number alone —
             <strong>a belt wide enough for a broader stance</strong>, and <strong>a seller with
             written warranty terms</strong>. We also searched the US Consumer Product Safety
             Commission's notices for every brand on the shortlist. Sperax, which sells walking pads
@@ -118,7 +118,7 @@ export default {
           </p>
           <p>
             Some pads you may have seen recommended elsewhere are missing on purpose. LifeSpan's
-            TR1200 desk treadmill is quoted at 330 lb, 350 lb and 400 lb in different places,
+            <a href="/lifespan-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>TR1200</a> desk treadmill is quoted at 330 lb, 350 lb and 400 lb in different places,
             depending on which version and which listing you read, and the current model was sold
             out on LifeSpan's own store. WalkingPad's A1 Pro is sold in both 230 lb and 300 lb
             versions under the same name, and the 300 lb version was not reliably in stock. Pads
@@ -157,7 +157,7 @@ export default {
             produces a lot of it.
           </p>
           <p>
-            <strong>The rating may depend on speed.</strong> UREVO is unusually candid about this:
+            <strong>The rating may depend on speed.</strong> <a href="/urevo-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>UREVO</a> is unusually candid about this:
             its FoldiMix 5L page quotes 400 lb "for normal operation at regular speed" and 300 lb
             for its maximum-speed test. Most brands give a single number and leave you to guess.
             If a pad offers a running mode, assume the safe load at running speed is lower than the

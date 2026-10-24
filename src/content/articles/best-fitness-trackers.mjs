@@ -212,14 +212,14 @@ export default {
             and watching blood flow. That works best at rest and during steady effort. It is less
             reliable in fast intervals, when the band is loose, in the cold, and during movements
             that flex the wrist, such as lifting. A chest strap reads the heart's electrical signal
-            instead and is the better tool for interval training. Our comparison of
+            instead and is the better tool for <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium" data-autolink>interval training</a>. Our comparison of
             <a href="/chest-strap-vs-wrist-heart-rate/" class="text-[#0F62FE] font-medium">chest strap and wrist heart rate</a>
             explains where the wrist lags and how to wear it for the cleanest reading, and most of
             these trackers can pair with a strap if you need one.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Distance and pace</h3>
           <p>
-            Outdoors, a tracker with built-in GPS (the vívoactive 6, Apple Watch SE 3 and Bip 6
+            Outdoors, a tracker with built-in GPS (the vívoactive 6, <a href="/best-treadmills-for-apple-watch/" class="text-[#0F62FE] font-medium" data-autolink>Apple Watch</a> SE 3 and Bip 6
             here) measures distance itself. The Fitbit bands have no GPS of their
             own and borrow your phone's, as most screenless bands and rings do, so leave the phone at
             home and outdoor distance becomes an estimate. Indoors, every
@@ -334,7 +334,7 @@ export default {
             <li><strong>Start an indoor workout, not an outdoor one.</strong> Indoor walk and run
               modes estimate distance from motion instead of searching for GPS, which on a treadmill
               produces nonsense.</li>
-            <li><strong>Let your arms swing.</strong> Holding the rails or the console stops a wrist
+            <li><strong>Let your arms swing.</strong> <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Holding the rails</a> or the console stops a wrist
               tracker seeing your steps and lowers your effort. If you need the rails for balance,
               trust the console's distance and expect a low step count.</li>
             <li><strong>Treat the console as the record for distance and pace.</strong> Then use

@@ -45,7 +45,7 @@ export default {
       id: 'quick-picks',
       heading: 'Our Picks at a Glance',
       html: `          <p>
-            If you do not already own a walking pad and want one order, one delivery and one
+            If you do not already own a <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> and want one order, one delivery and one
             company to call, buy an integrated set. If you already own a pad, or want to choose the
             pad separately, buy one of the three desks and check the height sums below first. To work out the height range you need, see our guide to
             <a href="/standing-desk-height-for-walking-pad/" class="text-[#0F62FE] font-medium">standing desk height for a walking pad</a>.
@@ -92,7 +92,7 @@ export default {
           </p>
           <p>
             For the integrated sets, the first check was simply whether the product is sold today.
-            Several names that still dominate older treadmill-desk articles are not: iMovR
+            Several names that still dominate older treadmill-desk articles are not: <a href="/imovr-unsit-treadmill-desk/" class="text-[#0F62FE] font-medium" data-autolink>iMovR</a>
             discontinued its ThermoTread GT treadmill and now sells the Unsit in its place,
             LifeSpan's full-set treadmill desks were all marked sold out on its US site, and Rebel
             Desk had no reachable current listing. We only list a set that we could see offered,
@@ -265,7 +265,7 @@ export default {
           <p>
             <strong>Speed.</strong> Most people type and read comfortably at around 1 to 2 mph, which
             is why office treadmills such as the Unsit top out at 2 mph and why the top speed of a
-            walking pad matters less than its belt length and quietness at low speed. If you want
+            walking pad matters less than its <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium" data-autolink>belt length</a> and quietness at low speed. If you want
             brisk walking or incline sessions outside work hours as well, a pad that reaches 4 mph,
             like the one in the UPLIFT set, gives you both.
           </p>`,

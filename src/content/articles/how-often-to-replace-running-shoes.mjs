@@ -123,8 +123,8 @@ export default {
           <p>
             Two things are worth noticing. First, a recreational runner on 10 miles a week is
             looking at a pair every seven months to a year, which is longer than many people assume
-            and a reason not to replace shoes on a calendar schedule. Second, a runner training for
-            a marathon at 30 to 40 miles a week can go through a pair in a season, which is the
+            and a reason not to replace shoes on a calendar schedule. Second, a runner <a href="/treadmill-marathon-training/" class="text-[#0F62FE] font-medium" data-autolink>training for
+            a marathon</a> at 30 to 40 miles a week can go through a pair in a season, which is the
             point at which rotating two pairs, covered below, starts to make sense.
           </p>
           <p>
@@ -267,7 +267,7 @@ export default {
           <p>
             <strong>Use the treadmill console or your training app.</strong> If all your running is
             on one treadmill, the console's total distance or session history is a ready-made shoe
-            log; note the total on the day you start a new pair and subtract. Many running watches
+            log; note the total on the day you start a new pair and subtract. Many <a href="/best-running-watches-for-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>running watches</a>
             and training apps let you assign a pair of shoes to each activity and keep a running
             total, and some prompt you when a pair passes a mileage you set. Set the prompt to 300
             miles, and treat it as the point to start checking rather than a replacement date.
@@ -335,12 +335,12 @@ export default {
       heading: 'Walkers, Desk Walkers and Incline: Does the Rule Change?',
       html: `          <p>
             The 300 to 500-mile convention grew up around running, and walking is gentler on a shoe
-            per step. That does not mean walking shoes last forever, because walking can rack up
+            per step. That does not mean <a href="/best-walking-shoes-for-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>walking shoes</a> last forever, because walking can rack up
             miles faster than people expect.
           </p>
           <p>
-            <strong>Desk walkers in particular.</strong> Two hours a day on an under-desk walking
-            pad at 2 mph is 4 miles a day; across a five-day week that is 20 miles, or roughly 300
+            <strong>Desk walkers in particular.</strong> Two hours a day on an under-desk <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking
+            pad</a> at 2 mph is 4 miles a day; across a five-day week that is 20 miles, or roughly 300
             miles in about 15 weeks. That is more weekly distance than many recreational runners
             cover. The impact per step is lower, so the foam may last longer per mile, but it is
             worth tracking and checking on the same principles. If you walk at a desk, a
@@ -491,6 +491,12 @@ export default {
       title: 'Treadmill Cushioning Explained',
       blurb: 'What deck cushioning does and does not do, and why your shoes do most of the work.',
       url: '/treadmill-cushioning-explained/',
+    },
+    {
+      kicker: 'Buying Guide',
+      title: 'Best Women\'s Running Shoes for Treadmill',
+      blurb: 'Six current women\'s models, from a light daily trainer to a stability shoe in four widths.',
+      url: '/best-womens-running-shoes-for-treadmill/',
     },
   ],
   bottomLine: [

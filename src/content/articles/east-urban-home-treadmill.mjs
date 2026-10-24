@@ -50,7 +50,7 @@ export default {
             <strong>We could not confirm that an East Urban Home compact foldable electric treadmill
             exists as a distinct, specified machine.</strong> East Urban Home is a Wayfair house
             label, not a treadmill manufacturer, and on 14 October 2026 a search of Wayfair for East
-            Urban Home treadmills returned cat exercise wheels, gym mirrors and a weight bench under
+            Urban Home treadmills returned cat exercise wheels, gym mirrors and a <a href="/best-weight-benches/" class="text-[#0F62FE] font-medium" data-autolink>weight bench</a> under
             that label — but no treadmill for people.
           </p>
           <p>
@@ -255,7 +255,7 @@ export default {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Protection plans and assembly add-ons</h3>
           <p>
-            Several of the listings offered a five-year protection plan and a professional assembly
+            Several of the listings offered a five-year protection plan and a <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>professional assembly</a>
             service as checkout add-ons. Wayfair’s protection plans are administered by SquareTrade,
             an Allstate company, and for mechanical and electrical products the administrator’s
             Wayfair page says breakdown cover begins after the manufacturer’s warranty ends. Buying
@@ -332,7 +332,7 @@ export default {
           </p>
           <p>
             <strong>Decide whether you need a treadmill or a walking pad.</strong> If you mainly want
-            to walk — at a desk, while watching television, in short sessions — a walking pad is
+            to walk — at a desk, while watching television, in short sessions — a <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> is
             smaller, lighter and cheaper. If you want to jog or run, you need a longer belt, a higher
             top speed and a heavier frame, and that means a folding treadmill. Our
             <a href="/walking-pad-vs-folding-treadmill/" class="text-[#0F62FE] font-medium">walking pad versus folding treadmill comparison</a>

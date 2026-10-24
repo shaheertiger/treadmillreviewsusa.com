@@ -286,7 +286,7 @@ export default {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Points we saw only once</h3>
           <p>
-            Single sources mention an inaccurate calorie display, the 3120’s speaker quirk, and a
+            Single sources mention an inaccurate <a href="/are-treadmill-calories-accurate/" class="text-[#0F62FE] font-medium" data-autolink>calorie display</a>, the 3120’s speaker quirk, and a
             review complaining about a handle the 3100W does not have — probably a review merged from
             another variant. The last point is a useful warning in itself: reviews on a marketplace
             listing may describe more than one model. Our
@@ -323,7 +323,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Delivery and setup</h3>
           <p>
             At 37 lb the 3100W arrives as an ordinary parcel and is sold pre-assembled, so setup
-            means unboxing, placing it, and checking belt tension and tracking before first use. No
+            means unboxing, placing it, and checking <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a> and tracking before first use. No
             subscription or app is involved. Use the first days of the return window to walk on it at
             your real desk speed for your real session length; problems with budget pads tend to show
             up under sustained use, not in a five-minute trial.

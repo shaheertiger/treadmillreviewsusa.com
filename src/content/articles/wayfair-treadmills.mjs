@@ -142,7 +142,7 @@ export default {
             compares the channels.
           </p>
           <p>
-            One listing summed up the overlap neatly: an East Urban Home weight bench whose title also
+            One listing summed up the overlap neatly: an East Urban Home <a href="/best-weight-benches/" class="text-[#0F62FE] font-medium" data-autolink>weight bench</a> whose title also
             named Soozier. A supplier’s product, under a Wayfair label, with the supplier’s name still
             visible. When you see that, search the supplier’s name — it is the more useful of the two.
           </p>`,
@@ -282,7 +282,7 @@ export default {
           <p>
             Wayfair’s supplier site describes the other side of the same process: the supplier
             accepts unused items back within 30 days, inspects them and refunds Wayfair. That is one
-            reason "unused" and "original packaging" matter.
+            reason "unused" and "<a href="/how-to-pack-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>original packaging</a>" matter.
           </p>`,
     },
     {

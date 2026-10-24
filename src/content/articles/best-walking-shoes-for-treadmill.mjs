@@ -167,7 +167,7 @@ export default {
       heading: 'Shoes for Incline Walking',
       html: `          <p>
             Incline walking is where the shoe question gets most interesting, because a treadmill
-            incline changes how your foot and calf are loaded in a way outdoor walking rarely does
+            incline changes how your foot and calf are loaded in a way <a href="/is-walking-on-a-treadmill-the-same-as-walking-outside/" class="text-[#0F62FE] font-medium" data-autolink>outdoor walking</a> rarely does
             for long. Walking at 10 or 12 percent raises the front of your foot relative to your heel
             on every step, which stretches the calf and Achilles further than flat walking does, and
             you hold that gradient for the whole session. If you do the
@@ -229,7 +229,7 @@ export default {
           <p>
             <strong>Swelling.</strong> Feet swell on long, warm walks. Shop in the afternoon, leave a
             thumb's width at the toe, and walk briskly in a new pair before committing. If you use a
-            walking pad for hours at a time, you may find a half size up works, provided the heel
+            <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> for hours at a time, you may find a half size up works, provided the heel
             still holds; check that by walking up an incline, where a loose heel shows quickly.
           </p>
           <p>

@@ -107,7 +107,7 @@ export default {
           <p>
             Woodway's motorised flagship, the 4Front, started at $13,995 in Woodway's own shop on the
             day we checked, and a fully optioned one was $19,995. The only new Woodway we found below
-            $10,000 was the non-motorised Curve LTG, at $3,495 on sale. Most other models, including
+            $10,000 was the <a href="/manual-vs-motorized-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>non-motorised</a> Curve LTG, at $3,495 on sale. Most other models, including
             the full commercial Curve and the compact Mercury, carry no published price at all;
             Woodway sells them by quote.
           </p>
@@ -273,7 +273,7 @@ export default {
             a simple LED panel; Personal Trainer, an LCD console; and ProSmart, a touchscreen. Each
             can be ordered with 15, 16.5 or 18 mph top speeds, with 0-25% or -3% to 22% incline in
             place of the standard 0-15%, and with a 0-5 mph reverse option. Woodway's spec sheet says
-            the Quick Set console works with Apple GymKit and can pair with apps such as Zwift; we
+            the Quick Set console works with <a href="/how-to-connect-apple-watch-to-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Apple GymKit</a> and can pair with apps such as Zwift; we
             have not confirmed that independently. Woodway's spec sheets also mention an annual
             ProSmart Cloud Services fee for touchscreen consoles. We could not confirm the current
             amount, and these fees change, so ask for it in writing before choosing ProSmart.
@@ -351,7 +351,7 @@ export default {
             TreadmillReviews.com notes that runners often go slower on one than on a motorised
             treadmill. If your plan is daily steady running, walking or incline walking, a motorised
             machine fits better. Our <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium">curved treadmill roundup</a>
-            sets the Curve LTG against the AssaultRunner, SOLE, TrueForm and others.
+            sets the Curve LTG against the <a href="/assaultrunner-pro-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>AssaultRunner</a>, SOLE, TrueForm and others.
           </p>
           <p>
             Price is the other difference. Woodway does not publish a price for the full Curve; Garage
@@ -446,7 +446,7 @@ export default {
             <li><strong>Original purchaser only.</strong> The 4Front manual says the warranty is given only to the original purchaser. A privately bought used Woodway comes with no factory cover.</li>
             <li><strong>Maintenance records.</strong> The manual says the warranty does not apply if there is "a failure to provide maintenance procedure documentation" as the manual sets out. Keep a log from the first week.</li>
             <li><strong>Electrical codes.</strong> Damage from failing to comply with electrical codes is excluded, which makes the dedicated circuit a warranty issue as well as a practical one.</li>
-            <li><strong>Where it is used.</strong> The manual forbids operating the treadmill outdoors or outside its stated temperature and humidity range.</li>
+            <li><strong>Where it is used.</strong> The manual forbids operating the <a href="/outdoor-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>treadmill outdoors</a> or outside its stated temperature and humidity range.</li>
           </ul>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The buy-back guarantee</h3>
           <p>
@@ -496,7 +496,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Delivery</h3>
           <p>
             Woodway's FAQ says treadmills ship by van line to the exact location, and that stairs,
-            disassembly and sites a tractor-trailer cannot reach are not included in freight rates.
+            <a href="/how-to-disassemble-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>disassembly</a> and sites a tractor-trailer cannot reach are not included in freight rates.
             The manual says most Woodways arrive fully assembled. Measure every doorway, turn and
             stair on the route, tell Woodway about them when you ask for a quote, and get the
             delivered price in writing. Our guide to

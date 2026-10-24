@@ -273,7 +273,7 @@ export default {
       heading: 'Who Makes UREVO Treadmills, and Where Are They Sold?',
       html: `          <p>
             UREVO is a smart-fitness brand with roots in Shenzhen, China, that sells walking pads, treadmills, leg and body
-            massagers and a smart scale. The company behind it appears under several names, and no single
+            massagers and a <a href="/best-smart-scales/" class="text-[#0F62FE] font-medium" data-autolink>smart scale</a>. The company behind it appears under several names, and no single
             source we found ties them together, so here is what each record says.
           </p>
           <ul>
@@ -539,7 +539,7 @@ export default {
             with other apps; Notebookcheck reported the AI music feature stopping mid-run until the app was
             restarted; Tom’s Guide’s FoldiMix reviewer found the app responsive for speed changes. Some App
             Store reviewers complain that workout history does not match what the treadmill displayed. If
-            step counts matter to you, a watch or fitness tracker is likely to be a better record than any
+            step counts matter to you, a watch or <a href="/best-fitness-trackers/" class="text-[#0F62FE] font-medium" data-autolink>fitness tracker</a> is likely to be a better record than any
             pad’s app.
           </p>
           <p>
@@ -567,7 +567,7 @@ export default {
             brands are sold on the same marketplaces.
           </p>
           <p>
-            UREVO’s own FAQ is frank that a burning smell can mean the belt needs lubricating or, if it
+            UREVO’s own FAQ is frank that a <a href="/treadmill-burning-smell/" class="text-[#0F62FE] font-medium" data-autolink>burning smell</a> can mean the belt needs lubricating or, if it
             persists, that the motor needs replacing. Treat that as a reason to stop and investigate, not to
             carry on walking. Whatever brand you own, use the safety key, unplug the pad before cleaning or
             lubricating it, keep children and pets away from it, and stop using any pad that surges, smells
@@ -588,7 +588,7 @@ export default {
           <p>
             The <strong>SpaceWalk E1L</strong> at about $170 is the cheapest pad we would buy, for a walker of
             average height who is well under 242 lb. Its 35-inch belt is short, so if you are tall or walk
-            briskly, spend more on a longer belt: the WalkingPad Z1 on our best walking pads list has a
+            briskly, spend more on a longer belt: the <a href="/walkingpad-z1-review/" class="text-[#0F62FE] font-medium" data-autolink>WalkingPad Z1</a> on our best walking pads list has a
             47.6-inch walking area for about $300. Against DeerRun’s similar Q2 Urban, the E1L’s advantage is
             figures that could be checked; our
             <a href="/deer-run-treadmill/" class="text-[#0F62FE] font-medium">Deer Run treadmill guide</a>

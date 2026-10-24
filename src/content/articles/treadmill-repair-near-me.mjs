@@ -52,7 +52,7 @@ export default {
           <p>
             A technician visit in the US typically has a call-out or diagnostic fee somewhere in
             the region of $75 to $150, with labour and the part on top. Common technician repairs,
-            such as a drive belt, a speed sensor or motor brushes, often come to roughly $120 to
+            such as a drive belt, a speed sensor or <a href="/treadmill-motor-brushes/" class="text-[#0F62FE] font-medium" data-autolink>motor brushes</a>, often come to roughly $120 to
             $300 all in; a motor control board or drive motor with a visit is commonly in the region
             of $300 to $900. These are the same estimated ranges used in our
             <a href="/treadmill-repair-guide/" class="text-[#0F62FE] font-medium">treadmill repair guide</a>,
@@ -76,7 +76,7 @@ export default {
           <ul>
             <li><strong>Will not power on.</strong> Check the safety key is fully seated, the
             outlet works with another appliance, the treadmill's own reset button or circuit
-            breaker (often near the power switch) has not tripped, and the household breaker is on.
+            breaker (often near the <a href="/how-to-turn-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>power switch</a>) has not tripped, and the household breaker is on.
             Our <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">treadmill troubleshooting guide</a>
             works through this in order.</li>
             <li><strong>Belt slips or hesitates.</strong> Usually a dry deck or a loose belt, both
@@ -91,7 +91,7 @@ export default {
           </ul>
           <p>
             Book a technician when the fault is electrical or mechanical beyond adjustment: a
-            breaker that trips repeatedly, a burning smell, a motor that will not turn, a belt that
+            breaker that trips repeatedly, a <a href="/treadmill-burning-smell/" class="text-[#0F62FE] font-medium" data-autolink>burning smell</a>, a motor that will not turn, a belt that
             surges or stops at random, an incline that will not move, an error code that returns
             after a reset, or grinding from the motor or rollers. Those point to a motor, a control
             board, a sensor, an incline motor or bearings, and they are worth a professional
@@ -128,7 +128,7 @@ export default {
             to be done by their own or authorised technicians. Having an independent repairer
             replace a board on an in-warranty machine can give the manufacturer grounds to decline
             later claims on that part.</li>
-            <li><strong>Maintenance.</strong> A worn deck or failed controller on a machine that was
+            <li><strong>Maintenance.</strong> A <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium" data-autolink>worn deck</a> or failed controller on a machine that was
             never lubricated may be treated as neglect. A note of lubrication dates helps.</li>
             <li><strong>Extended plans.</strong> If you bought a protection plan from the brand or
             the retailer, it usually has its own claims route and its own in-home service network.
@@ -143,7 +143,7 @@ export default {
       id: 'manufacturer-service',
       heading: 'How Do Manufacturer Service Networks Work?',
       html: `          <p>
-            Most treadmill brands do not employ a technician in every town. They run a support team
+            Most <a href="/best-treadmill-brands/" class="text-[#0F62FE] font-medium" data-autolink>treadmill brands</a> do not employ a technician in every town. They run a support team
             that troubleshoots by phone or online, ships parts, and dispatches either their own
             technicians or contracted independent service companies for in-home work. The process
             usually starts with you, not the technician.
@@ -166,7 +166,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Sole</h3>
           <p>
             Sole's support pages direct owners to submit a service and warranty request with the
-            serial number and purchase information to hand. The serial number on Sole treadmills is
+            serial number and purchase information to hand. The serial number on <a href="/sole-fitness/" class="text-[#0F62FE] font-medium" data-autolink>Sole treadmills</a> is
             on a sticker on the front of the lower base, and Sole asks for every number and letter
             on it. Sole's own FAQ also asks buyers in rural or hard-to-service areas to contact it
             before purchasing so it can confirm that a service provider covers their area, which is

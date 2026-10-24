@@ -370,8 +370,8 @@ export default {
             motor hood, loosen the rear roller fully, slacken or remove the front roller, remove
             the side rails and foot rails, lift the belt and deck free, slide the old belt off,
             clean and lubricate the deck, slide the new belt on (seam direction matters on many
-            belts — check the manual or the supplier's note), reassemble, tension, then centre the
-            belt by running it slowly and adjusting the rear roller bolts a quarter-turn at a time.
+            belts — check the manual or the supplier's note), reassemble, tension, then <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>centre the
+            belt</a> by running it slowly and adjusting the rear roller bolts a quarter-turn at a time.
             Our step-by-step guide to
             <a href="/how-to-replace-treadmill-belt/" class="text-[#0F62FE] font-medium">how to replace a treadmill belt</a>
             covers each stage with the common snags.
@@ -425,7 +425,7 @@ export default {
             gives a sense of where a machine sits in its life.
           </p>
           <p>
-            <strong>The price tier.</strong> On a budget treadmill, a technician's belt-and-deck
+            <strong>The price tier.</strong> On a <a href="/best-budget-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>budget treadmill</a>, a technician's belt-and-deck
             job can cost most of what the machine cost new, which is an obvious no — though a DIY
             belt on the same machine, at the cost of the part and an afternoon, is often a
             reasonable yes. On a mid-range or premium machine with a strong frame and motor, a belt
@@ -473,7 +473,7 @@ export default {
             <a href="/how-to-clean-under-treadmill-belt/" class="text-[#0F62FE] font-medium">cleaning under a treadmill belt</a>
             covers it.</li>
             <li><strong>Use a mat.</strong> On carpet especially, a mat keeps fibres and dust away
-            from the belt and the motor compartment.</li>
+            from the belt and the <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium" data-autolink>motor compartment</a>.</li>
             <li><strong>Respect the machine's limits.</strong> Heavy runners on a light-duty belt
             and deck wear both quickly. If that is the mismatch, the long-term answer is a machine
             built for it rather than a cycle of belts.</li>

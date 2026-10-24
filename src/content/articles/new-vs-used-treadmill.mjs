@@ -99,8 +99,8 @@ export default {
             belt means wear is advanced and friction is already elevated.
           </p>
           <p>
-            <strong>Belt.</strong> A genuine wear item, and the cheapest of these to fix. A worn
-            belt is not a reason to walk away, only to negotiate.
+            <strong>Belt.</strong> A genuine wear item, and the cheapest of these to fix. A <a href="/how-often-should-a-treadmill-belt-be-replaced/" class="text-[#0F62FE] font-medium" data-autolink>worn
+            belt</a> is not a reason to walk away, only to negotiate.
           </p>
           <p>
             <strong>Rollers and bearings.</strong> Rarely fail outright and announce themselves
@@ -127,7 +127,7 @@ export default {
           <p>
             <strong>Stand on it and watch the belt.</strong> It should not hesitate or slow when
             you step on. A belt that lags under load means friction is already high, which is the
-            precursor to motor failure.
+            precursor to <a href="/how-long-do-treadmill-motors-last/" class="text-[#0F62FE] font-medium" data-autolink>motor failure</a>.
           </p>
           <p>
             <strong>Check belt tracking.</strong> Watch for drift toward one rail over several
@@ -210,7 +210,7 @@ export default {
       id: 'moving-it',
       heading: 'Moving It Is Your Problem, and It Is a Real One',
       html: `          <p>
-            The cost people forget is transport. A mid-range treadmill is 200 to 300 lbs, awkward
+            The cost people forget is transport. A <a href="/treadmills-under-1500/" class="text-[#0F62FE] font-medium" data-autolink>mid-range treadmill</a> is 200 to 300 lbs, awkward
             to lift and impossible to angle around a tight turn. This is not a two-friends-and-a-car
             job.
           </p>
@@ -260,7 +260,7 @@ export default {
             Lubricate the belt — after checking the manual for deck type, because some are
             pre-waxed and silicone ruins them. Check and set belt tension using the lift test, then
             check tracking and centre the belt if it drifts. Vacuum around and under the machine
-            thoroughly, and if you are comfortable doing so and it is unplugged, vacuum the motor
+            thoroughly, and if you are comfortable doing so and it is unplugged, <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium" data-autolink>vacuum the motor</a>
             compartment, which on a machine that lived on carpet is frequently full of fibre.
           </p>
           <p>
@@ -284,7 +284,7 @@ export default {
           </p>
           <p>
             <strong>You are not confident assessing mechanical condition.</strong> The inspection
-            is the entire risk control. If listening to a motor and judging whether a belt hesitates
+            is the entire risk control. If listening to a motor and judging whether a <a href="/treadmill-belt-slows-down-when-i-step-on-it/" class="text-[#0F62FE] font-medium" data-autolink>belt hesitates</a>
             under load is not something you would trust yourself to do, buy new or refurbished.
           </p>
           <p>

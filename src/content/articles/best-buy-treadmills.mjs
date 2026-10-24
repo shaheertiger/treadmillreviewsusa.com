@@ -268,7 +268,7 @@ export default {
             until you add what it would cost to arrange those yourself.
           </p>
           <p>
-            <strong>Know the calendar.</strong> Treadmill prices move through the year across the
+            <strong>Know the calendar.</strong> <a href="/how-much-does-a-treadmill-cost/" class="text-[#0F62FE] font-medium" data-autolink>Treadmill prices</a> move through the year across the
             whole market, with real reductions at predictable points and higher prices when demand
             peaks. Our guide to the
             <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy</a>
@@ -331,7 +331,7 @@ export default {
       id: 'who-suits',
       heading: 'Who Best Buy Suits',
       html: `          <p>
-            <strong>It suits</strong> buyers who want a connected treadmill with a screen and value
+            <strong>It suits</strong> buyers who want a connected <a href="/best-smart-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>treadmill with a screen</a> and value
             help with the technology; buyers who already have a membership or account and know
             what they want; and patient buyers watching for an open-box unit with a full warranty.
           </p>

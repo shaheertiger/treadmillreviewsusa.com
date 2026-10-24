@@ -523,7 +523,7 @@ ${spec.mistakes
 ${spec.related
   .map(
     (r, i) => `            <a href="${r.url}" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
-              <span class="text-xs font-black uppercase tracking-widest text-${['[#FF5A1F]', '[#0F62FE]', 'green-600'][i]}">${r.kicker}</span>
+              <span class="text-xs font-black uppercase tracking-widest text-${['[#FF5A1F]', '[#0F62FE]', 'green-600'][i % 3]}">${r.kicker}</span>
               <p class="font-bold text-gray-900 mt-2 mb-1">${r.title}</p>
               <p class="text-sm text-gray-500 leading-relaxed">${r.blurb}</p>
             </a>`

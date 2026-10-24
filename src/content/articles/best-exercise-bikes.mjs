@@ -113,7 +113,7 @@ export default {
           </p>
           <p>
             <strong>Recall checks.</strong> We searched the US Consumer Product Safety Commission's
-            recall database by brand for every maker on this page — Schwinn, BowFlex and their owner
+            recall database by brand for every maker on this page — Schwinn, <a href="/bowflex/" class="text-[#0F62FE] font-medium" data-autolink>BowFlex</a> and their owner
             Johnson Health Tech, Keiser and YOSUDA — and for the brands we considered and left out,
             including Peloton, Echelon, Sunny Health &amp; Fitness, JOROTO and Horizon. None of the five
             bikes listed is under a recall. Johnson Health Tech has recalled other products, including
@@ -357,12 +357,12 @@ export default {
             estimated power over Bluetooth to apps on your own phone, tablet or TV. The industry standard
             for this is called FTMS (Fitness Machine Service). Schwinn's own comparison table is candid
             that the IC4 has <em>partial</em> FTMS, meaning it connects to specific apps — Schwinn lists
-            JRNY, Peloton, Zwift, Kinomap and Explore the World — rather than anything that speaks the
+            JRNY, Peloton, <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium" data-autolink>Zwift</a>, Kinomap and Explore the World — rather than anything that speaks the
             standard, while its 290 recumbent has full FTMS. Horizon lists Bluetooth FTMS for its 5.0 bikes. If a
             particular app matters to you, check it appears on the maker's list rather than assuming.
           </p>
           <p>
-            <strong>Closed platforms.</strong> Peloton, Echelon and iFIT bikes are built around their own
+            <strong>Closed platforms.</strong> Peloton, Echelon and <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium" data-autolink>iFIT</a> bikes are built around their own
             subscription. You get a large built-in screen and classes that can adjust the bike for you,
             but the content — and on some bikes, basic function — depends on keeping the membership.
             OutdoorGearLab reports that Echelon bikes now work only when connected to Echelon's servers.
@@ -376,7 +376,7 @@ export default {
             using the power your bike reports, and a bike like the IC4 calculates that figure from
             cadence and resistance rather than measuring it with a power meter, so treat it as an
             estimate; and because you set the IC4's resistance by hand, Zwift's virtual hills cannot
-            change it for you the way they can on a smart trainer.
+            change it for you the way they can on a <a href="/best-smart-bike-trainers/" class="text-[#0F62FE] font-medium" data-autolink>smart trainer</a>.
             OutdoorGearLab says the IC4 works with Peloton and Zwift, "though not perfectly". If accurate
             power is important to you — for structured training or racing — that is a job for a smart
             trainer or power-meter pedals, not a home spin bike. Our
@@ -651,6 +651,12 @@ export default {
       title: 'Best Cardio Machines for Home',
       blurb: 'One pick per machine type, from treadmill and rower to air bike and stepper.',
       url: '/best-cardio-machines-for-home/',
+    },
+    {
+      kicker: 'Folding',
+      title: 'Best Folding Exercise Bikes',
+      blurb: 'Five X-frame folding bikes: folded size, weight-limit claims, seats and stability.',
+      url: '/best-folding-exercise-bikes/',
     },
   ],
   bottomLine: [

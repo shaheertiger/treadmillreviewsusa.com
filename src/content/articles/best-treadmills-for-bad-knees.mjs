@@ -67,7 +67,7 @@ export default {
       heading: 'Incline Is the Real Tool Here',
       html: `          <p>
             If there is one thing to take from this guide, it is that incline walking is the most
-            useful setting on the machine for anyone with knee pain, and it is almost never
+            useful setting on the machine for anyone with <a href="/are-treadmills-bad-for-your-knees/" class="text-[#0F62FE] font-medium" data-autolink>knee pain</a>, and it is almost never
             presented that way.
           </p>
           <p>
@@ -156,7 +156,7 @@ export default {
             is worth setting out, because the answer changes which machine to buy.
           </p>
           <p>
-            If running is off the table for now, deck length stops mattering almost entirely and
+            If running is off the table for now, <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium" data-autolink>deck length</a> stops mattering almost entirely and
             the money is better spent on cushioning quality, incline range and speed control. A
             55-inch deck is ample for walking, and that unlocks cheaper machines and easier folding.
           </p>
@@ -184,7 +184,7 @@ export default {
           <p>
             If walking on a flat surface for twenty minutes is painful, adding a moving belt does
             not change the fundamental problem — you are still weight-bearing, and the loading is
-            what hurts. A stationary or recumbent bike removes the impact entirely while allowing
+            what hurts. A stationary or <a href="/best-recumbent-bikes/" class="text-[#0F62FE] font-medium" data-autolink>recumbent bike</a> removes the impact entirely while allowing
             considerably more work to be done, and for genuinely irritable knees that is usually the
             better starting point. An elliptical sits between the two: weight-bearing but with no
             impact phase at all, which many people with knee pain tolerate well.
@@ -204,7 +204,7 @@ export default {
             cheaper to change than the machine.
           </p>
           <p>
-            Footwear is the first. Worn-out shoes have lost most of their midsole compression, and
+            Footwear is the first. <a href="/how-often-to-replace-running-shoes/" class="text-[#0F62FE] font-medium" data-autolink>Worn-out shoes</a> have lost most of their midsole compression, and
             a shoe with 600 miles on it is a materially harder surface than the same shoe new.
             Replacing shoes is the least expensive intervention available and frequently the most
             effective. Whether a particular shoe type suits you is a question for a physiotherapist
@@ -263,7 +263,7 @@ export default {
           <p>
             Whatever arrives, build slowly, change one variable at a time, and use incline rather
             than speed to make sessions harder. That last habit does more for a bad knee than any
-            cushioning system on the market.
+            <a href="/treadmill-cushioning-explained/" class="text-[#0F62FE] font-medium" data-autolink>cushioning system</a> on the market.
           </p>`,
     },
   ],
@@ -473,6 +473,12 @@ export default {
       title: 'Treadmill vs. Elliptical',
       blurb: 'Joints, impact and bone density, compared honestly.',
       url: '/treadmill-vs-elliptical/',
+    },
+    {
+      kicker: 'AlterG',
+      title: 'Anti-Gravity Treadmills',
+      blurb: 'What AlterG and other anti-gravity treadmills are, who uses them, and what a session costs.',
+      url: '/anti-gravity-treadmill/',
     },
   ],
   bottomLine: [

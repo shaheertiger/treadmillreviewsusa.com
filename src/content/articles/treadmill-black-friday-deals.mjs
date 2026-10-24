@@ -334,13 +334,13 @@ export default {
             <strong>Large items often have their own rules.</strong> Retailers that offer generous or
             extended holiday returns on most products sometimes treat fitness equipment and
             freight-delivered items differently. There may be a shorter window, a requirement for
-            original packaging, a restocking fee, or a charge for return freight. Some return
+            <a href="/how-to-pack-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>original packaging</a>, a restocking fee, or a charge for return freight. Some return
             processes require the item to be disassembled and boxed, which on a treadmill is a
             substantial job.
           </p>
           <p>
             <strong>Assembly can affect returnability.</strong> Some policies distinguish between
-            unopened, opened and assembled items. Check whether professional assembly changes what
+            unopened, opened and assembled items. Check whether <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>professional assembly</a> changes what
             happens if you want to return it.
           </p>
           <p>

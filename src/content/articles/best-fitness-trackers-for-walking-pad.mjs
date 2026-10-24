@@ -167,7 +167,7 @@ export default {
             Every fix on this page works the same way: it moves the sensor to a part of you that
             keeps moving in step. A tracker clipped to a waistband or carried in a trouser pocket
             senses the movement of your hips, which happens with every step whatever your hands are
-            doing. A foot pod on your shoe senses the foot directly. The walking pad itself knows how
+            doing. A foot pod on your shoe senses the foot directly. The <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> itself knows how
             far its belt has moved. The one thing that does not fix it is a different device on the
             same hand, which is why the ring on this page comes with a warning.
           </p>`,

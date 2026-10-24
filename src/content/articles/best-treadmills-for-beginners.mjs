@@ -40,7 +40,7 @@ export default {
           <p>
             The first reason is doing too much in week one. A new machine invites enthusiasm, and
             three hard sessions in the first week produce several days of soreness that break the
-            habit before it forms. The second is friction in the setup: a machine in a cold garage,
+            habit before it forms. The second is friction in the setup: a machine in a <a href="/treadmill-in-garage/" class="text-[#0F62FE] font-medium" data-autolink>cold garage</a>,
             behind a door, or requiring five minutes of unfolding is a machine that loses to the
             sofa most evenings. The third is a console that is confusing enough to make each
             session feel like admin.
@@ -94,7 +94,7 @@ export default {
           </p>
           <p>
             <strong>Assembly difficulty.</strong> A treadmill that takes two people and three hours
-            to build is a treadmill that sits in its box for a fortnight. Assembly time and whether
+            to build is a treadmill that sits in its box for a fortnight. <a href="/how-to-assemble-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Assembly time</a> and whether
             it genuinely needs two people are worth more attention than most specifications, and
             both are worth checking in the manual before you order.
           </p>
@@ -243,7 +243,7 @@ export default {
           <p>
             Three habits cover almost all of it. Wipe the belt and the deck edges after use, so
             dust and sweat do not build into an abrasive film. Vacuum around and under the machine
-            monthly. And lubricate the belt roughly every 40 to 50 hours of use — a ten-minute job
+            monthly. And lubricate the belt roughly <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>every 40 to 50 hours</a> of use — a ten-minute job
             most owners never do once, and the single highest-return thing you can do for the
             machine's lifespan.
           </p>

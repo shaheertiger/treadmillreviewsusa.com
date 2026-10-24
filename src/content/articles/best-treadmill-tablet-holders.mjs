@@ -47,7 +47,7 @@ export default {
       html: `          <p>
             One inexpensive clamp mount suits most treadmills with a round front crossbar or
             handrail. The others exist because a thick rail, a tablet you take off every session, a
-            phone, or a walking pad with no handrail at all each changes what the holder has to do.
+            phone, or a <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> with no handrail at all each changes what the holder has to do.
             If you are deciding whether a tablet on a basic treadmill can stand in for a built-in
             screen, our guide to
             <a href="/smart-treadmill-vs-regular/" class="text-[#0F62FE] font-medium">smart versus regular treadmills</a>
@@ -303,7 +303,7 @@ export default {
           </p>
           <p>
             <strong>Desk and C-clamp mounts</strong> grip a flat edge, such as a desk or worktop, and
-            usually carry the tablet on a longer arm. They are for walking pads and treadmill desks,
+            usually carry the tablet on a longer arm. They are for walking pads and <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium" data-autolink>treadmill desks</a>,
             where there is no bar to clamp to, not for the treadmill frame itself.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The three figures that matter</h3>
@@ -330,7 +330,7 @@ export default {
           <p>
             Be sceptical of "universal". It usually means a wide range that fits many devices, and
             fits the ones at either end of it less securely. And be sceptical of listings that name
-            the treadmill brands a holder suits without giving a bar diameter: a brand name tells you
+            the <a href="/best-treadmill-brands/" class="text-[#0F62FE] font-medium" data-autolink>treadmill brands</a> a holder suits without giving a bar diameter: a brand name tells you
             nothing about the bar on your model.
           </p>`,
     },
@@ -425,7 +425,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Sound, cables and the end of the session</h3>
           <p>
             Treadmills are noisy, and turning a tablet's speaker up to compete with the motor and
-            the belt is one more reason to lean in towards it. Wireless headphones solve that and
+            the belt is one more reason to lean in towards it. Wireless <a href="/best-headphones-for-treadmill-running/" class="text-[#0F62FE] font-medium" data-autolink>headphones</a> solve that and
             keep a cable out of the way; if you use wired ones, run the lead inside your top rather
             than across the console, where it can catch on the safety key cord or your hand.
           </p>

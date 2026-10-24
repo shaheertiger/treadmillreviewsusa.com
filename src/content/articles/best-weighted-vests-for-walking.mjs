@@ -69,7 +69,7 @@ export default {
           </table></div>
           <p>
             Before you buy, check your treadmill's maximum user weight. The vest counts towards it,
-            and on a walking pad the margin can be smaller than you expect. Our
+            and on a <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> the margin can be smaller than you expect. Our
             <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">treadmill weight capacity guide</a>
             explains how to read the rating and how much headroom to leave.
           </p>`,
@@ -120,7 +120,7 @@ export default {
             We searched the US Consumer Product Safety Commission's recall database for every
             brand on this page and read its recent warnings. We found no recall or warning covering
             any vest listed. The only result for these brands was a 2021 REP Fitness recall of
-            strap safety brackets for power racks, which is unrelated to the Strata vest.
+            strap safety brackets for <a href="/best-squat-racks-for-home-gym/" class="text-[#0F62FE] font-medium" data-autolink>power racks</a>, which is unrelated to the Strata vest.
           </p>`,
     },
     {
@@ -211,7 +211,7 @@ export default {
             180 lb walker in a 20 lb vest is a 200 lb load as far as the machine is concerned.
           </p>
           <p>
-            That matters most on walking pads and compact folding treadmills, whose ratings are
+            That matters most on walking pads and compact <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>folding treadmills</a>, whose ratings are
             often lower than those of full-size machines, and for anyone whose body weight is
             already close to the rating. Running close to or over the limit puts extra strain on
             the motor, the belt and the deck, and on a folding frame or a thin pad it can be a
@@ -347,7 +347,7 @@ export default {
             frames, and reviewers note it can leave smaller or larger users without a secure fit.
           </p>
           <p>
-            Before your first treadmill session, put the vest on, load it as you plan to use it, and
+            Before your <a href="/how-to-use-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>first treadmill session</a>, put the vest on, load it as you plan to use it, and
             walk around for ten minutes. Check for pressure points at the shoulders and collarbone,
             whether you can take a full breath, and whether anything shifts when you walk briskly.
             Adjust, then walk again.

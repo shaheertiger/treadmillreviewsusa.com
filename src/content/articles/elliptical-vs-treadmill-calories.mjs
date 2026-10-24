@@ -279,7 +279,7 @@ export default {
             <strong>A treadmill console</strong> typically applies a version of the standard walking
             and running equations to the belt speed and incline, multiplied by a body weight — often a
             default weight unless you enter yours. The equations assume you are walking or running
-            hands-free on an accurately calibrated belt. Hold the rails, or use a machine whose speed
+            hands-free on an accurately calibrated belt. <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Hold the rails</a>, or use a machine whose speed
             or incline reads a little high, and the console keeps counting calories you did not burn.
             Many consoles also report gross calories, including the energy you would have used
             sitting down. Our guide to whether

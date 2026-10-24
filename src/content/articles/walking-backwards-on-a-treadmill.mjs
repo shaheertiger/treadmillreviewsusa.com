@@ -60,8 +60,8 @@ export default {
           <p>
             It is not a magic exercise, and it is not for everyone. The speeds are low, the
             sessions are short, and the safety precautions matter more than they do on a normal
-            walk. If you can accept those terms, it is a genuinely useful addition to a treadmill
-            routine.
+            walk. If you can accept those terms, it is a genuinely useful addition to a <a href="/treadmill-workout-plan/" class="text-[#0F62FE] font-medium" data-autolink>treadmill
+            routine</a>.
           </p>`,
     },
     {
@@ -259,8 +259,8 @@ export default {
             should be on your feet and the belt.
           </p>
           <p>
-            <strong>Avoid machines without rails.</strong> Walking pads and many under-desk
-            treadmills have short decks and no handrails, which makes them a poor choice for
+            <strong>Avoid machines without rails.</strong> Walking pads and many <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>under-desk
+            treadmills</a> have short decks and no handrails, which makes them a poor choice for
             backward walking. Our
             <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad vs treadmill</a>
             comparison explains the differences.
@@ -297,7 +297,7 @@ export default {
             session, at 1.5 to 2.5 mph.
           </p>
           <p>
-            If you feel dizzy, unsteady or anxious at any point, hold the rails, step off on to the
+            If you feel dizzy, unsteady or anxious at any point, <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>hold the rails</a>, step off on to the
             side platforms and stop the belt. That is not failure; it is the correct response.
           </p>`,
     },

@@ -110,7 +110,7 @@ export default {
           <p>
             Most home treadmills offer powered incline somewhere in the range of 10 to 15 percent.
             Budget folding machines sometimes offer less, or a manual incline you set by hand before
-            you start, which in practice means you will rarely change it. Incline trainers go far
+            you start, which in practice means you will rarely change it. <a href="/incline-trainer-vs-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Incline trainers</a> go far
             steeper and some add decline, which suits people who specifically want steep hiking-style
             walks. Our
             <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">best incline treadmills</a>
@@ -317,7 +317,7 @@ export default {
       html: `          <p>
             The best treadmill for this goal is ultimately the one in a room you like being in, in
             front of something you want to watch or listen to, set up so that starting a session
-            takes seconds. Placement matters more than people expect: a machine in a cold garage or
+            takes seconds. Placement matters more than people expect: a machine in a <a href="/treadmill-in-garage/" class="text-[#0F62FE] font-medium" data-autolink>cold garage</a> or
             behind a pile of boxes gets used less than one in a corner of the living room.
           </p>
           <p>

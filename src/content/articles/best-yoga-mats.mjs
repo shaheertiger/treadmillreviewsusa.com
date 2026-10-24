@@ -116,7 +116,7 @@ export default {
             recall database by recall title and by manufacturer for every brand here — Manduka,
             Liforme, JadeYoga, Gaiam and Amazon Basics — and for the category terms "yoga mat",
             "exercise mat" and "yoga". We found no recall involving any yoga or exercise mat. Amazon
-            Basics does appear in the database, most recently for its 55 lb adjustable dumbbells in
+            Basics does appear in the database, most recently for its 55 lb <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium" data-autolink>adjustable dumbbells</a> in
             May 2026, an impact hazard, and earlier for desk chairs, mattresses and space heaters;
             none involves a mat, but it is a reminder that an own-brand label is not a guarantee. A
             mat is a low-risk product in any case. The realistic hazards are slipping on a mat that

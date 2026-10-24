@@ -47,12 +47,12 @@ export default {
             <strong>Generally no: a treadmill bought for general fitness is not an eligible FSA or
             HSA expense. It can be eligible when it is bought primarily to treat a specific
             medical condition a clinician has diagnosed, which in practice usually means a Letter
-            of Medical Necessity from that clinician.</strong> The same rule applies to walking
-            pads and other home exercise equipment.
+            of Medical Necessity from that clinician.</strong> The same rule applies to <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking
+            pads</a> and other home exercise equipment.
           </p>
           <p>
             The test comes from the federal definition of medical care that IRS Publication 502
-            explains. Expenses that are merely beneficial to general health — gym memberships,
+            explains. Expenses that are merely beneficial to general health — <a href="/home-treadmill-vs-gym-membership/" class="text-[#0F62FE] font-medium" data-autolink>gym memberships</a>,
             vitamins, a treadmill to "get in shape" — are personal expenses. Expenses for the
             diagnosis, cure, mitigation, treatment or prevention of a disease can be medical
             expenses. A treadmill sits on the personal side by default and can move to the medical
@@ -292,8 +292,8 @@ export default {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Other equipment and services</h3>
           <p>
-            The same reasoning applies across the board. Exercise bikes, ellipticals, rowing
-            machines and gym memberships are generally personal expenses unless they are for the
+            The same reasoning applies across the board. Exercise bikes, ellipticals, <a href="/best-rowing-machines/" class="text-[#0F62FE] font-medium" data-autolink>rowing
+            machines</a> and gym memberships are generally personal expenses unless they are for the
             treatment of a specific condition. Physical therapy delivered by a licensed provider
             is a different matter — the service is medical care in its own right — but that does
             not extend automatically to equipment you buy to continue exercising at home. If a
@@ -319,8 +319,8 @@ export default {
             <li><strong>A treatment plan that names the activity,</strong> how often and for how
             long, rather than general advice to be more active.</li>
             <li><strong>A reason a treadmill specifically is needed,</strong> such as a clinician
-            wanting controlled, level or gently inclined walking at a steady pace, or outdoor
-            walking being impractical for medical reasons.</li>
+            wanting controlled, level or gently inclined walking at a steady pace, or <a href="/is-walking-on-a-treadmill-the-same-as-walking-outside/" class="text-[#0F62FE] font-medium" data-autolink>outdoor
+            walking</a> being impractical for medical reasons.</li>
             <li><strong>Timing:</strong> the diagnosis and recommendation come first, the purchase
             after.</li>
             <li><strong>A modest machine suited to the prescribed use,</strong> rather than a
@@ -434,12 +434,12 @@ export default {
             <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy a treadmill</a>
             sets out when discounts are most common.</li>
             <li><strong>Buy the machine you need.</strong> A walker who will rarely exceed 4 mph does
-            not need the motor, deck length or console of a running machine. Matching the machine
+            not need the motor, <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium" data-autolink>deck length</a> or console of a running machine. Matching the machine
             to the use is usually the biggest saving available.</li>
             <li><strong>Count the whole cost.</strong> Delivery, assembly, a mat, a subscription and
             an extended warranty can add a large share to the sticker price. Compare delivered
             totals rather than headline prices.</li>
-            <li><strong>Consider used carefully.</strong> A well-kept used treadmill can be good
+            <li><strong>Consider used carefully.</strong> A well-kept <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>used treadmill</a> can be good
             value, with the caveats that warranties usually do not transfer and the motor and
             belt need checking.</li>
             <li><strong>Treat financing as a cash-flow tool, not a discount.</strong> True 0%

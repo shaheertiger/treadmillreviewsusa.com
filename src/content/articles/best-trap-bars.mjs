@@ -244,7 +244,7 @@ export default {
           <p>
             <strong>Sleeve length</strong> is the space for plates on each side. The bars on this page
             run from 9.7 inches (Bells of Steel) to 16.5 inches (REP). Using REP's own arithmetic, 16.5
-            inches holds ten 45 lb iron plates or five 45 lb bumper plates a side. A 9.7-inch sleeve
+            inches holds ten 45 lb iron plates or five 45 lb <a href="/best-bumper-plates/" class="text-[#0F62FE] font-medium" data-autolink>bumper plates</a> a side. A 9.7-inch sleeve
             holds a little under 60% of that, so about two or three bumpers a side, which is roughly
             225 to 315 lb of bumper plates on the bar before you count the bar itself. That is a
             simple proportion, not a measurement, and plate thickness varies by brand. If you own

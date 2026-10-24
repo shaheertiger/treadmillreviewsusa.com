@@ -59,7 +59,7 @@ export default {
             protection on the motor or controller, usually caused by friction and helped along by
             dust. Occasionally an idle or program timer.</li>
             <li><strong>Only with you on it, never empty</strong> — load. Deck friction, belt
-            tension, user weight against the machine's rating, or worn motor brushes.</li>
+            tension, user weight against the machine's rating, or worn <a href="/treadmill-motor-brushes/" class="text-[#0F62FE] font-medium" data-autolink>motor brushes</a>.</li>
             <li><strong>Only at high speed or steep incline</strong> — peak current demand. The
             supply, the circuit, the incline motor, or a controller near the end of its life.</li>
             <li><strong>Randomly, or when you touch the console</strong> — a connection. The safety
@@ -166,12 +166,12 @@ export default {
           <p>
             <strong>Idle and sleep timers.</strong> Many machines power the console down or end the
             session after a period of inactivity. If you paused to stretch or answer the door and
-            came back to a dead console, that is a timer, not a fault.
+            came back to a <a href="/treadmill-console-not-working/" class="text-[#0F62FE] font-medium" data-autolink>dead console</a>, that is a timer, not a fault.
           </p>
           <p>
             <strong>Heart-rate programs.</strong> On machines with heart-rate-controlled workouts,
             the console adjusts speed or incline to keep you near a target. If the chest strap or
-            grip sensors lose your signal, or the reading crosses the program's ceiling, some
+            <a href="/treadmill-heart-rate-not-working/" class="text-[#0F62FE] font-medium" data-autolink>grip sensors</a> lose your signal, or the reading crosses the program's ceiling, some
             machines slow or stop the belt rather than carry on blind. A strap that needs moistening
             or a fresh battery can look a great deal like a motor fault.
           </p>
@@ -234,7 +234,7 @@ export default {
             are owner jobs on most machines — check your manual and warranty terms first.
           </p>
           <p>
-            <strong>Lubrication.</strong> Most decks need 100% silicone treadmill lubricant at an
+            <strong>Lubrication.</strong> Most decks need 100% <a href="/best-treadmill-lubricant/" class="text-[#0F62FE] font-medium" data-autolink>silicone treadmill lubricant</a> at an
             interval the manual specifies, commonly somewhere in the region of every 40 to 50 hours
             of use or every few months, whichever arrives first. Some decks are pre-waxed or
             maintenance-free and must not be given silicone, so read the manual before buying

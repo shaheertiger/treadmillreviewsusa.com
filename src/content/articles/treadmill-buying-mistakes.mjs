@@ -81,7 +81,7 @@ export default {
           <p>
             As a broad guide, walking needs around 2.0 to 2.5 CHP, regular jogging around 2.75 to
             3.0, and daily running 3.5 or more, with a little extra for heavier users. An
-            underpowered motor does not usually fail dramatically. It runs hot, the belt hesitates
+            underpowered motor does not usually fail dramatically. It runs hot, the <a href="/treadmill-belt-slows-down-when-i-step-on-it/" class="text-[#0F62FE] font-medium" data-autolink>belt hesitates</a>
             under your footstrike, and the controller board beside it ages faster. Our
             <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
             has the full table by weight and pace.
@@ -386,7 +386,7 @@ export default {
             covers whether the saving is worth the risk.
           </p>
           <p>
-            A related timing note: treadmill pricing does move through the year, and buying in a
+            A related timing note: <a href="/how-much-does-a-treadmill-cost/" class="text-[#0F62FE] font-medium" data-autolink>treadmill pricing</a> does move through the year, and buying in a
             hurry at full price is a mild version of the same mistake. If you have flexibility,
             <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">when to buy</a>
             covers the patterns. Do not, however, let a sale talk you into a machine that fails any

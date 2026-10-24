@@ -97,7 +97,7 @@ export default {
           </table></div>
           <p>
             For a folding treadmill on a level route, folding it and locking the deck may be all you
-            need. For a non-folding treadmill, removing the console and uprights turns a tall,
+            need. For a <a href="/best-non-folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>non-folding treadmill</a>, removing the console and uprights turns a tall,
             awkward object into a long, flat one, which is what usually gets it through doorways
             and around stair landings. Separating the deck from the base, or taking the motor out,
             is for heavy machines on difficult staircases, for repairs, or for scrap.
@@ -113,7 +113,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Taking apart a NordicTrack, ProForm or other brand</h3>
           <p>
             The general sequence on this page applies to most brands, including NordicTrack and
-            ProForm, but the fastener positions, cover designs and folding mechanisms vary from
+            ProForm, but the fastener positions, cover designs and <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>folding mechanisms</a> vary from
             model to model. Find the model number, usually on a label on the frame, and download
             the manual for that model: its assembly section, read in reverse, is the most reliable
             disassembly guide you will find. Our guide on
@@ -354,7 +354,7 @@ export default {
             If you do remove it, the machine must already be unplugged and you should have waited
             for the board's capacitors to discharge. The hood is normally held by a few screws along
             its sides or front; remove them and lift the hood straight up, watching for any cable
-            attached to it, such as a power switch or indicator light.
+            attached to it, such as a <a href="/how-to-turn-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>power switch</a> or indicator light.
           </p>
           <p>
             With the hood off, look but do not touch the board. If you are only cleaning, a vacuum
@@ -438,10 +438,10 @@ export default {
             <li><strong>Test the safety key</strong> by pulling it while the belt runs slowly; the
             belt should stop.</li>
             <li><strong>Check the incline,</strong> if it has one, through its range. Some machines
-            need an incline calibration after being moved or reassembled; the manual describes
+            need an <a href="/treadmill-calibration/" class="text-[#0F62FE] font-medium" data-autolink>incline calibration</a> after being moved or reassembled; the manual describes
             how.</li>
             <li><strong>Walk on it slowly</strong> for a few minutes before using it normally, and
-            check the belt tension and tracking again afterwards.</li>
+            check the <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a> and tracking again afterwards.</li>
           </ul>
           <p>
             If the console stays dark after reassembly, the cable connection is the first suspect.

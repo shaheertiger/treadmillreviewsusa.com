@@ -50,7 +50,7 @@ export default {
             separately below.
           </p>
           <p>
-            If you are weighing a treadmill against other cardio machines too, our
+            If you are weighing a treadmill against other <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium" data-autolink>cardio machines</a> too, our
             <a href="/treadmill-vs-elliptical/" class="text-[#0F62FE] font-medium">treadmill vs elliptical comparison</a>
             covers the other half of the usual gym debate.
           </p>`,
@@ -356,6 +356,12 @@ export default {
       title: 'The 12-3-30 Treadmill Workout',
       blurb: 'Steep incline walking explained, with sensible ways to build up to it.',
       url: '/12-3-30-treadmill-workout/',
+    },
+    {
+      kicker: 'Climber',
+      title: 'Best Vertical Climbers',
+      blurb: 'Five vertical climbers from $170 to $6,900, with ceiling height checks explained.',
+      url: '/best-vertical-climbers/',
     },
   ],
   bottomLine: [

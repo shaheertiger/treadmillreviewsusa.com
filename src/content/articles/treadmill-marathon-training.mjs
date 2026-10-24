@@ -233,7 +233,7 @@ export default {
             downhill loads the front of the thighs while they lengthen to brake each step, and that
             is the kind of work that leaves legs wrecked in the final miles of a hilly marathon if
             they have not been prepared for it. Even an apparently flat course has gentle descents.
-            If your race has meaningful downhills, include outdoor downhill running in the
+            If your race has meaningful downhills, include outdoor <a href="/what-is-treadmill-decline-good-for/" class="text-[#0F62FE] font-medium" data-autolink>downhill running</a> in the
             preceding months, introduced gradually.
           </p>
           <p>
@@ -312,7 +312,7 @@ export default {
           <p>
             <strong>Heat builds with duration.</strong> Most home motors shed heat comfortably for
             the first forty minutes or so of continuous running; beyond that, temperatures in the
-            motor compartment climb, and the controller board — which is usually more
+            <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium" data-autolink>motor compartment</a> climb, and the controller board — which is usually more
             heat-sensitive than the motor — climbs with it. Long runs are exactly the sessions that
             expose an undersized drive system. Symptoms include the belt hesitating, the machine
             cutting out mid-run or an error code that clears after a rest. Our page on a
@@ -322,7 +322,7 @@ export default {
           <p>
             <strong>The belt and deck heat up too.</strong> Friction between the belt and deck
             rises over a long session, more so on a dry deck. Keep up with lubrication — typically
-            every 40 to 50 hours of use, or as your manual specifies — which marathon training will
+            <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>every 40 to 50 hours</a> of use, or as your manual specifies — which marathon training will
             reach far sooner than casual use. Our
             <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a>
             has the procedure.

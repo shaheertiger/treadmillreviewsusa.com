@@ -284,9 +284,9 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Other costs that turn up</h3>
           <ul>
             <li><strong>Hawaii and Alaska.</strong> Aviron lists a $250 shipping charge, and its return policy says returns are not available for orders shipped there.</li>
-            <li><strong>Accessories.</strong> Aviron listed the WalkDesk at $119 (regular $149) and a treadmill mat at $99. "Premium Package" bundles add accessories to the base price.</li>
+            <li><strong>Accessories.</strong> Aviron listed the WalkDesk at $119 (regular $149) and a <a href="/do-you-need-a-treadmill-mat/" class="text-[#0F62FE] font-medium" data-autolink>treadmill mat</a> at $99. "Premium Package" bundles add accessories to the base price.</li>
             <li><strong>Financing.</strong> Aviron offers 0% APR financing through Affirm, from $69 a month on the Justice; the term and approval depend on your credit. Read the terms of any 0% offer for what happens if a payment is late.</li>
-            <li><strong>HSA and FSA.</strong> Aviron advertises the treadmills as HSA/FSA eligible through a third-party service. Eligibility usually depends on a letter of medical necessity, so check with your plan administrator before counting on it.</li>
+            <li><strong>HSA and FSA.</strong> Aviron advertises the treadmills as <a href="/are-treadmills-hsa-fsa-eligible/" class="text-[#0F62FE] font-medium" data-autolink>HSA/FSA</a> eligible through a third-party service. Eligibility usually depends on a letter of medical necessity, so check with your plan administrator before counting on it.</li>
           </ul>`,
     },
     {
@@ -367,7 +367,7 @@ export default {
           </p>
           <p>
             The retail point is easy to miss. Aviron's press release says the treadmills are expected
-            at Best Buy, Dick's Sporting Goods and Amazon for the holiday season. Because the 20-year
+            <a href="/best-buy-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>at Best Buy</a>, Dick's Sporting Goods and Amazon for the holiday season. Because the 20-year
             tier needs a direct purchase, a treadmill bought from a retailer would, on Aviron's
             current terms, carry the standard 10-year and one-year cover even with a membership. Our
             <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
@@ -501,7 +501,7 @@ export default {
             when the deck is inclined, turning the treadmill into a walking workstation. It is a
             reasonable way to get a desk treadmill and a running treadmill in one, though a folding
             treadmill with a desk needs the same floor space as the treadmill alone, and a dedicated
-            walking pad under an existing standing desk costs far less if you will never run.
+            <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> under an existing standing desk costs far less if you will never run.
           </p>`,
     },
     {

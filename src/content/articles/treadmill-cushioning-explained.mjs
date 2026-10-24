@@ -104,7 +104,7 @@ export default {
             <strong>What it does not do.</strong> It does not make running into walking. The
             forces through your legs on a treadmill are still largely set by your body weight,
             speed, stride and technique, and a deck that moves a fraction of an inch can only
-            soften so much of that. It does not compensate for worn-out shoes, a sudden jump in
+            soften so much of that. It does not compensate for <a href="/how-often-to-replace-running-shoes/" class="text-[#0F62FE] font-medium" data-autolink>worn-out shoes</a>, a sudden jump in
             training volume or a pre-existing injury. And it does not, on its own, make a
             treadmill quiet for the people below you — more on that later.
           </p>
@@ -240,7 +240,7 @@ export default {
             <strong>If you mostly walk</strong>, almost any properly suspended home treadmill
             will feel comfortable, and cushioning should rarely be the deciding factor. Incline
             range, step-up height, handrails, motor quietness and belt length are likely to
-            matter more day to day. A firm walking pad with minimal suspension can still be
+            matter more day to day. A firm <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> with minimal suspension can still be
             perfectly pleasant at walking speeds, though it will feel harder than a full-size deck.
           </p>
           <p>
@@ -328,7 +328,7 @@ export default {
             <li><strong>Walk the length of the deck.</strong> Step towards the front and towards
             the rear. Many decks are zoned, and you want the part you will actually land on to feel
             right.</li>
-            <li><strong>Feel for the frame.</strong> Hold the handrails lightly while moving. If
+            <li><strong>Feel for the frame.</strong> <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Hold the handrails</a> lightly while moving. If
             the uprights or console wobble with each step, the frame is flexing, and that
             undermines whatever the deck is doing.</li>
             <li><strong>Listen.</strong> A thud, clack or creak on footstrike on a showroom

@@ -72,14 +72,14 @@ export default {
       html: `          <p>
             Johnson Health Tech North America, the US arm of the Taiwanese manufacturer Johnson
             Health Tech, made them under licence. Two trade reports from 2009 agree on the outline.
-            Johnson received exclusive rights to use the LIVESTRONG name on consumer and commercial
-            fitness equipment in the spring of 2009, under a multi-year agreement that committed a
+            Johnson received exclusive rights to use the LIVESTRONG name on consumer and <a href="/commercial-gym-equipment/" class="text-[#0F62FE] font-medium" data-autolink>commercial
+            fitness equipment</a> in the spring of 2009, under a multi-year agreement that committed a
             minimum of $4 million to the Lance Armstrong Foundation, the cancer charity behind the
             LIVESTRONG name. The first products were treadmills, ellipticals and an indoor cycle.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Where it was sold</h3>
           <p>
-            Dick's Sporting Goods was the exclusive US retailer at launch, and the machines were in
+            <a href="/dicks-sporting-goods-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Dick's Sporting Goods</a> was the exclusive US retailer at launch, and the machines were in
             its stores by October 2009, with four treadmills in the first range. In Canada, Canadian
             Tire announced a premium LIVESTRONG range in January 2012, including an LSPro2 treadmill,
             again manufactured by Johnson. That is why you will find LIVESTRONG treadmills with
@@ -163,7 +163,7 @@ export default {
             Parts catalogues list four variants under the LS10.0T name, and the code that tells them
             apart is the TM number on the serial sticker: TM406 (the main US model), TM406B, TM438
             (listed as LS10.T-02) and TM438C (listed as LS10.0T-C2, a Canadian version). The manual
-            puts the serial number on a white barcode sticker near the power switch and cord.
+            puts the serial number on a white barcode sticker near the <a href="/how-to-turn-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>power switch</a> and cord.
             Photograph it before you order anything; some parts are shared across all four, others
             are not.
           </p>`,
@@ -286,7 +286,7 @@ export default {
             knocking or a rising whine, and watch for an E1 or other code on start-up.</li>
             <li>Take it through the whole incline range and back. The incline motor is no longer
             listed, so a slow or stalling incline is a real problem, not a minor one.</li>
-            <li>Lift the belt edge and feel the deck. A dry, rough or worn deck adds load to the
+            <li>Lift the belt edge and feel the deck. A dry, rough or <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium" data-autolink>worn deck</a> adds load to the
             motor and controller.</li>
             <li>Check the console: all keys, the grip pulse sensors and the safety key. The keypad
             overlay is no longer available, so cracked or dead keys stay that way.</li>
@@ -449,6 +449,12 @@ export default {
       title: 'Trimline Treadmill',
       blurb: 'Another discontinued brand: parts, manuals and used value.',
       url: '/trimline-treadmill/',
+    },
+    {
+      kicker: 'Marketplace',
+      title: 'Famistar Treadmills',
+      blurb: 'Another marketplace brand: the listings, the three warranty lengths, and the shipping terms.',
+      url: '/famistar-treadmill/',
     },
   ],
   bottomLine: [

@@ -46,7 +46,7 @@ export default {
           </p>
           <p>
             That is also why intervals are efficient. A 28-minute interval session including
-            warm-up and cool-down can do more for cardiovascular fitness than 45 minutes of steady
+            <a href="/treadmill-warm-up-and-cool-down/" class="text-[#0F62FE] font-medium" data-autolink>warm-up and cool-down</a> can do more for cardiovascular fitness than 45 minutes of steady
             moderate work. The cost is that it is genuinely demanding and needs recovery, which is
             why our <a href="/treadmill-workouts/" class="text-[#0F62FE] font-medium">training guide</a>
             puts one such session in a week and no more than two.
@@ -163,7 +163,7 @@ export default {
           <p>
             Two cautions. Check the incline transition speed on your machine — some take fifteen
             seconds or more to reach 10%, which eats into a 90-second effort, so you may need to
-            start the change slightly early. And do not hold the rails: leaning transfers the work
+            start the change slightly early. And do not <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>hold the rails</a>: leaning transfers the work
             to your arms while the console reports the same grade. Our
             <a href="/best-treadmills-for-bad-knees/" class="text-[#0F62FE] font-medium">knee guide</a>
             covers who should build incline especially gradually.

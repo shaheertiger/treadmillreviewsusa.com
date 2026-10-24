@@ -98,7 +98,7 @@ export default {
           </p>
           <p>
             We started from the six categories lifters most often ask about — a massage gun, a foam
-            roller, a lacrosse or massage ball, compression boots, a stretching strap and a mobility
+            roller, a lacrosse or massage ball, <a href="/best-compression-boots/" class="text-[#0F62FE] font-medium" data-autolink>compression boots</a>, a stretching strap and a mobility
             tool — and looked for one product in each that is currently sold under that exact name
             by its maker or a major retailer. On 16 October 2026 we checked each against the maker's
             own product page and at least one independent source: Rogue Fitness and The Body
@@ -120,7 +120,7 @@ export default {
             recall database for every brand here and found no recall or warning covering the listed
             products. Massage guns and compression devices got the closest look, because both are
             battery or mains-powered and pressed against the body. The database does list a 2021
-            recall of Massimo percussion massage guns sold at Costco, for a battery fire hazard, and
+            recall of Massimo percussion massage guns sold at <a href="/buying-a-treadmill-at-costco/" class="text-[#0F62FE] font-medium" data-autolink>Costco</a>, for a battery fire hazard, and
             a 2024 recall of HoMedics massagers for fire and burn hazards; we did not consider
             either brand's massagers for this page. We found no CPSC recall for an air-compression
             leg device. Rogue Fitness appears in the database for a 2015 recall of its MobilityWOD
@@ -128,7 +128,7 @@ export default {
             a good reason to use only anchors designed for the purpose.
           </p>
           <p>
-            Searching by product type turned up more. Resistance bands from several other brands
+            Searching by product type turned up more. <a href="/best-resistance-bands/" class="text-[#0F62FE] font-medium" data-autolink>Resistance bands</a> from several other brands
             have been recalled for snapping or injury hazards, including HomeProGym bands in 2026,
             SPRI Ultra Heavy bands in 2019, Bollinger bands in 2014, and Perfect Fitness bands in
             2013 — the last from Implus, the company behind TriggerPoint, though the recall did
@@ -611,6 +611,18 @@ export default {
       title: 'Warming Up and Cooling Down',
       blurb: 'The general shape of a warm-up and cool-down, and where tools fit in.',
       url: '/treadmill-warm-up-and-cool-down/',
+    },
+    {
+      kicker: 'Recovery',
+      title: 'Best Zero Gravity Massage Chairs',
+      blurb: 'Five chairs by track, height and weight limits, wall clearance, delivery and warranty.',
+      url: '/best-zero-gravity-massage-chairs/',
+    },
+    {
+      kicker: 'Review',
+      title: 'LifePro Waver Vibration Plate Review',
+      blurb: 'The specifications checked, the marketing claims read carefully, and who should ask a doctor first.',
+      url: '/lifepro-waver-vibration-plate-review/',
     },
   ],
   bottomLine: [

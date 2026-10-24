@@ -73,7 +73,7 @@ export default {
       html: `          <p>
             Streamdale Furniture describes itself as an online store for "everything home, office,
             and outdoors", and says its products come from "manufacturers all around the world". Its
-            homepage also says it supplies furniture "directly to Home Depot, Wayfair, Lowe’s, and
+            homepage also says it supplies furniture "directly to <a href="/home-depot-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Home Depot</a>, Wayfair, Lowe’s, and
             all other marketplaces without any markups".
           </p>
           <p>
@@ -226,7 +226,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Returns: 30 days, unused, and not on sale items</h3>
           <p>
             Streamdale’s refund policy gives 30 days after you receive an item to request a return.
-            The item must be unused, in its original packaging, and you need proof of purchase,
+            The item must be unused, in its <a href="/how-to-pack-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>original packaging</a>, and you need proof of purchase,
             return tracking and photographs of the product and packaging. For a change-of-mind
             return you supply your own shipping label, and the policy says on-sale items are not
             returnable. Damaged or defective items are handled differently: you contact the seller

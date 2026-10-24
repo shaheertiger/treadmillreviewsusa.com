@@ -75,7 +75,7 @@ export default {
             <strong>Walking pads</strong> are deck-only machines with no upright and no handrails.
             They are 4 to 6 inches tall, 60 to 90 lbs, slide under a bed or a sofa, and top out
             around 4 mph. Because the whole product is a deck and a motor, the money goes into
-            those rather than into a frame, which is why a $400 walking pad often has a better
+            those rather than into a frame, which is why a $400 <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> often has a better
             belt and a quieter motor than a $400 folding treadmill.
           </p>
           <p>
@@ -192,7 +192,7 @@ export default {
       id: 'maintenance',
       heading: 'Maintenance Is Not Optional at This Price',
       html: `          <p>
-            Cheap treadmills are not doomed, but they have far less margin, and the difference
+            <a href="/best-budget-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Cheap treadmills</a> are not doomed, but they have far less margin, and the difference
             between one that lasts eighteen months and one that lasts five years is almost
             entirely maintenance.
           </p>
@@ -232,7 +232,7 @@ export default {
             and cannot be safely run on at 6 is quoting a number, not a capability.
           </p>
           <p>
-            <strong>Deck dimensions missing entirely.</strong> If the belt length is not stated,
+            <strong>Deck dimensions missing entirely.</strong> If the <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium" data-autolink>belt length</a> is not stated,
             it is short. This is the most reliable signal on any budget listing.
           </p>
           <p>
@@ -246,7 +246,7 @@ export default {
       html: `          <p>
             At this price the returns policy is worth more attention than the warranty, because
             the failures that matter at the budget end tend to appear immediately rather than in
-            year three. Belt tracking that will not hold, a motor that whines from the first
+            year three. <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>Belt tracking</a> that will not hold, a motor that whines from the first
             session, a console that misreads speed, a frame that arrives twisted — these are
             manufacturing faults, and they show up in the first fortnight or not at all.
           </p>

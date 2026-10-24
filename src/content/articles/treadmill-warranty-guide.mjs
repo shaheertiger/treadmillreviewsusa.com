@@ -116,7 +116,7 @@ export default {
       id: 'labour-in-home',
       heading: 'Labour and In-Home Service: The Terms That Matter Most',
       html: `          <p>
-            Labour is a large share of most treadmill repairs, and a service call-out alone
+            Labour is a large share of most <a href="/treadmill-repair-guide/" class="text-[#0F62FE] font-medium" data-autolink>treadmill repairs</a>, and a service call-out alone
             commonly costs somewhere around $80 to $150 before any parts or work. Our guide to
             <a href="/treadmill-maintenance-cost/" class="text-[#0F62FE] font-medium">treadmill maintenance costs</a>
             breaks down typical repair figures. A long parts term with a short labour term means a
@@ -213,7 +213,7 @@ export default {
             weight limit</strong>, as above.
           </p>
           <p>
-            <strong>Electrical misuse.</strong> Extension cords, power strips and outlets the manual
+            <strong>Electrical misuse.</strong> <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium" data-autolink>Extension cords</a>, power strips and outlets the manual
             prohibits, and damage from them, are commonly excluded.
           </p>
           <p>
@@ -310,7 +310,7 @@ export default {
             <li><strong>Check the basics first.</strong> Our
             <a href="/treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">troubleshooting guide</a>
             covers the checks a support agent will ask about anyway — safety key, outlet, breaker,
-            belt tension.</li>
+            <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a>.</li>
             <li><strong>Gather the paperwork:</strong> serial number, model, proof of purchase and
             date, and your maintenance notes.</li>
             <li><strong>Contact the manufacturer,</strong> not the retailer, unless you are still

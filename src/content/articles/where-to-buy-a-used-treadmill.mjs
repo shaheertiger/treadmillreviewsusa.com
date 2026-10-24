@@ -160,7 +160,7 @@ export default {
           </p>
           <p>
             <strong>Adjust for condition and hours.</strong> A lightly used, well-maintained machine
-            justifies the upper end of that range; a machine with no maintenance history, a worn belt
+            justifies the upper end of that range; a machine with no maintenance history, a <a href="/how-often-should-a-treadmill-belt-be-replaced/" class="text-[#0F62FE] font-medium" data-autolink>worn belt</a>
             or a polished deck justifies the lower end or less. A high-hour machine is worth less
             regardless of age.
           </p>
@@ -177,7 +177,7 @@ export default {
             you decide a listing is a bargain.
           </p>
           <p>
-            <strong>Negotiate on what you find.</strong> A worn belt, missing safety key or no manual
+            <strong>Negotiate on what you find.</strong> A worn belt, <a href="/treadmill-safety-key-not-working/" class="text-[#0F62FE] font-medium" data-autolink>missing safety key</a> or no manual
             are reasonable grounds for a lower price. Our
             <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill buying checklist</a>
             lists what to inspect and how to price what you find.

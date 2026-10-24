@@ -94,7 +94,7 @@ export default {
             terms for your unit in writing.
           </p>
           <p>
-            Price varies more than usual. ProForm listed it at $1,099.99 on 13 October 2026, and Scheels,
+            Price varies more than usual. ProForm listed it at $1,099.99 on 13 October 2026, and <a href="/scheels-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Scheels</a>,
             an authorised retailer, at $799.99 on 14 October. ProForm offers a price guarantee against
             authorised retailers, covered below. We have not tested the Carbon TLS; what follows is what
             ProForm’s figures, a retailer listing and independent coverage show.
@@ -237,7 +237,7 @@ export default {
           <p>
             ProForm lists ProShox cushioning, an automatic CoolAire fan that changes speed with workout
             intensity, two 2-inch Bluetooth speakers, a USB-C charging port, two water bottle holders and
-            Bluetooth for headphones and heart-rate monitors. ActivePulse needs a compatible heart-rate
+            Bluetooth for <a href="/best-headphones-for-treadmill-running/" class="text-[#0F62FE] font-medium" data-autolink>headphones</a> and heart-rate monitors. ActivePulse needs a compatible heart-rate
             monitor, sold separately.
           </p>`,
     },
@@ -272,7 +272,7 @@ export default {
           <p>
             Safety record: we searched the US Consumer Product Safety Commission’s recall database on
             14 October 2026 and found no recall of the Carbon TLS or any current ProForm treadmill. ProForm’s
-            own recalls page listed only a 2024 recall of ProForm 50 lb adjustable dumbbells.
+            own recalls page listed only a 2024 recall of ProForm 50 lb <a href="/best-adjustable-dumbbells/" class="text-[#0F62FE] font-medium" data-autolink>adjustable dumbbells</a>.
           </p>`,
     },
     {
@@ -337,7 +337,7 @@ export default {
             it. On 13 October 2026 proform.com had it at $1,299.99, $200 more than the TLS. If you will jog
             or run at all, that extra belt is the best use of the money. Our
             <a href="/best-proform-treadmills/" class="text-[#0F62FE] font-medium">ProForm roundup</a>
-            ranks all four current ProForm treadmills, and notes that the Carbon Pro 2000 with a built-in
+            ranks all four current <a href="/proform-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>ProForm treadmills</a>, and notes that the Carbon Pro 2000 with a built-in
             touchscreen was selling for the same price as the TLX.
           </p>
           <p>

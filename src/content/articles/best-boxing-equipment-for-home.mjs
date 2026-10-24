@@ -101,7 +101,7 @@ export default {
             We started from the pieces a home boxing setup actually needs — something to hit, hand
             protection and conditioning — and looked for one well-known, currently sold example of
             each. On 16 October 2026 we checked each against its maker's own product page and at
-            least one independent source: Academy Sports and Walmart listings for the Wavemaster,
+            least one independent source: <a href="/academy-sports-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Academy Sports</a> and Walmart listings for the Wavemaster,
             Garage Gym Reviews' hands-on reviews for the Hayabusa bag and gloves, retailer listings
             for the Everlast wraps and the TITLE double-end bag, Garage Gym Reviews' jump rope guide
             for the Rogue rope, and BarBend's review for FightCamp.
@@ -115,7 +115,7 @@ export default {
             we give only the equipment prices we saw on the maker's site.
           </p>
           <p>
-            We also left some well-known products out. A popular Everlast heavy bag is sold under
+            We also left some well-known products out. A popular Everlast <a href="/best-punching-bags/" class="text-[#0F62FE] font-medium" data-autolink>heavy bag</a> is sold under
             several closely related names, and listings disagree on its diameter, so we could not be
             sure which figures belonged to which bag. A leather speed rope we considered could not
             be checked against any source other than its maker. And Crossrope's standard Get Lean
@@ -197,7 +197,7 @@ export default {
             board, a light fitting or a hollow space. Many garage and basement ceilings can take a
             bag this way; many upstairs ceilings and flats should not.</li>
             <li><strong>A heavy bag stand</strong>, which needs no fixings but takes up more floor
-            space than people expect and usually needs weight plates on its pegs to stop it walking
+            space than people expect and usually needs <a href="/best-weight-plates/" class="text-[#0F62FE] font-medium" data-autolink>weight plates</a> on its pegs to stop it walking
             or tipping.</li>
             <li><strong>A wall mount</strong>, which holds the bag away from a wall on a bracket and
             must be bolted into solid masonry or framing as the maker specifies.</li>
@@ -335,7 +335,7 @@ export default {
             the floor by elastic cords, so you need a secure fixing above and below, at a height that
             puts the ball roughly at your head height. Ceiling fixings carry far less load than a
             heavy bag's, but they still need to go into something solid. Floor anchors range from a
-            weight such as a dumbbell or kettlebell to a fixed floor ring; a heavy free weight is the
+            weight such as a dumbbell or <a href="/best-adjustable-kettlebells/" class="text-[#0F62FE] font-medium" data-autolink>kettlebell</a> to a fixed floor ring; a heavy free weight is the
             renter-friendly option. Doorway hangers exist, but check the door frame and the
             instructions carefully. Start with the cords fairly tight, which makes the ball slower and
             more predictable, and loosen them as your timing improves. A free-standing reflex bag on a

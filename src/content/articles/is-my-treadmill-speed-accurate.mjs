@@ -106,7 +106,7 @@ export default {
             covers it in full.
           </p>
           <p>
-            <strong>Friction and an overworked motor.</strong> A dry or worn deck increases the
+            <strong>Friction and an overworked motor.</strong> A dry or <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium" data-autolink>worn deck</a> increases the
             drag the motor has to overcome. If it cannot hold the set speed under load, the belt
             slows while the console may keep showing the number you chose. If the belt visibly
             slows when you step on, see our page on a
@@ -288,7 +288,7 @@ export default {
           </p>
           <p>
             <strong>Check lubrication.</strong> A dry deck adds drag at every step. Lubricate to the
-            manual's schedule, typically every 40 to 50 hours of use, as our
+            manual's schedule, typically <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>every 40 to 50 hours</a> of use, as our
             <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">belt lubrication guide</a>
             explains — checking first whether your deck is pre-waxed.
           </p>
@@ -334,7 +334,7 @@ export default {
             tension issue than something a calibration fixes.
           </p>
           <p>
-            For the calibration procedure itself — the belt-speed and incline service modes, the mark-and-count check and calibrating a Garmin or Apple Watch to the machine — see our guide to <a href="/treadmill-calibration/" class="text-[#0F62FE] font-medium">treadmill calibration</a>.
+            For the calibration procedure itself — the belt-speed and incline service modes, the mark-and-count check and calibrating a Garmin or <a href="/best-treadmills-for-apple-watch/" class="text-[#0F62FE] font-medium" data-autolink>Apple Watch</a> to the machine — see our guide to <a href="/treadmill-calibration/" class="text-[#0F62FE] font-medium">treadmill calibration</a>.
           </p>`,
     },
     {
@@ -350,7 +350,7 @@ export default {
             that it calibrates on your outdoor workouts. Holding the handrails, changing stride on
             an incline or during intervals, and a watch that rarely sees an outdoor run all widen
             its error. The treadmill, as above, estimates from roller or motor revolutions and can
-            be a few percent out, more under load. A foot pod tends to be more consistent than a
+            be a few percent out, more under load. A <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium" data-autolink>foot pod</a> tends to be more consistent than a
             wrist once calibrated.
           </p>
           <p>

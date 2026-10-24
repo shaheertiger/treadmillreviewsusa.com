@@ -76,7 +76,7 @@ export default {
             <li><strong>Heart rate response and recovery.</strong> How quickly the heart rate climbs,
             whether it reaches the target, and how quickly it comes back down afterwards.</li>
             <li><strong>Exercise capacity.</strong> How long you lasted and how hard the final stage
-            was, often expressed in METs (metabolic equivalents). This is one of the more
+            was, often expressed in <a href="/what-are-mets-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>METs</a> (metabolic equivalents). This is one of the more
             informative numbers the test produces, and it is the one patients tend to overlook.</li>
             <li><strong>Symptoms.</strong> Chest discomfort, unusual breathlessness, dizziness or
             leg pain, and the point at which they appeared.</li>
@@ -132,7 +132,7 @@ export default {
       id: 'bruce-protocol',
       heading: 'The Bruce Protocol, Stage by Stage',
       html: `          <p>
-            The most widely used treadmill protocol is the Bruce protocol, named after the
+            The most widely <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>used treadmill</a> protocol is the Bruce protocol, named after the
             cardiologist Dr Robert Bruce, who developed it at the University of Washington in the
             late 1950s and early 1960s. It works in three-minute stages, and both speed and incline
             go up at every stage, so each step is a meaningful jump in effort rather than a gentle
@@ -214,7 +214,7 @@ export default {
             The common themes are these.
           </p>
           <ul>
-            <li><strong>Wear shoes you can walk briskly in.</strong> Trainers or walking shoes, not
+            <li><strong>Wear shoes you can walk briskly in.</strong> Trainers or <a href="/best-walking-shoes-for-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>walking shoes</a>, not
             sandals, heels or slip-ons. This is the one that most often goes wrong.</li>
             <li><strong>Wear comfortable clothes</strong>, ideally a separate top, since electrodes go
             on the chest. Avoid applying body lotion to the chest that morning, as it can stop the
@@ -264,7 +264,7 @@ export default {
             more detail.
           </p>
           <p>
-            Some centres use an exercise bike instead of a treadmill for any of these. The principle
+            Some centres use an <a href="/best-exercise-bikes/" class="text-[#0F62FE] font-medium" data-autolink>exercise bike</a> instead of a treadmill for any of these. The principle
             is the same.
           </p>`,
     },

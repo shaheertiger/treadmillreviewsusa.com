@@ -73,7 +73,7 @@ export default {
       id: 'manuals',
       heading: 'What Do Treadmill Manuals Say About Footwear?',
       html: `          <p>
-            Many treadmill manuals tell you to wear athletic shoes — walking or running shoes — when
+            Many treadmill manuals tell you to wear athletic shoes — walking or <a href="/best-running-shoes-for-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>running shoes</a> — when
             using the machine, and to avoid bare feet, socks, sandals and shoes with heels or
             leather soles. The wording varies from brand to brand, so the honest advice is to check
             the important safety instructions section of your own manual, which is usually near the
@@ -197,7 +197,7 @@ export default {
             <strong>Hygiene.</strong> Bare feet leave sweat and skin oils on the belt, and pick up
             whatever is already there. On a home machine used only by you, that is mostly a cleaning
             question, and wiping the belt down after barefoot sessions helps. On a shared machine at
-            a gym or in a shared household, it is a reason to wear shoes: fungal and other foot
+            a gym or in a <a href="/family-treadmill-guide/" class="text-[#0F62FE] font-medium" data-autolink>shared household</a>, it is a reason to wear shoes: fungal and other foot
             infections spread on warm, damp, shared surfaces, which is exactly what a busy treadmill
             belt is. Our guide to
             <a href="/how-to-clean-a-treadmill/" class="text-[#0F62FE] font-medium">cleaning a treadmill</a>

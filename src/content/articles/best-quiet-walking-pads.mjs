@@ -47,7 +47,7 @@ export default {
             Two heavier, non-folding office treadmills and three folding pads. The short version:
             the LifeSpan TR1200Pro Glow-Up if the people below you are the main concern and you can
             leave a machine in place; the WalkingPad A1 Pro if it has to fold away; and the
-            WalkingPad Z1 if you want a quiet-running pad on a budget and are under its weight
+            <a href="/walkingpad-z1-review/" class="text-[#0F62FE] font-medium" data-autolink>WalkingPad Z1</a> if you want a quiet-running pad on a budget and are under its weight
             limit.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
@@ -87,7 +87,7 @@ export default {
           <p>
             Three of the five are WalkingPad models. That is not a preference for the brand: its
             product pages, a long-running independent reviewer and a second retailer agreed with each
-            other more often than most walking pad brands did, and it sells pads at each of the price
+            other more often than most <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> brands did, and it sells pads at each of the price
             points that matter here.
           </p>`,
     },
@@ -114,7 +114,7 @@ export default {
             Several pads are missing on purpose. <strong>Sperax</strong> walking pads are excluded
             entirely: in April 2026 the US Consumer Product Safety Commission warned consumers to stop
             using them. We searched the CPSC recall database for every other brand on this page —
-            WalkingPad and its maker KingSmith, LifeSpan, iMovR and InMovement — and for the brands
+            WalkingPad and its maker KingSmith, LifeSpan, <a href="/imovr-unsit-treadmill-desk/" class="text-[#0F62FE] font-medium" data-autolink>iMovR</a> and InMovement — and for the brands
             we considered and left out, and found no recalls. The <strong>DeerRun Z10</strong> was
             described by one independent reviewer as quiet, but the same reviewer found its beeps
             cannot be silenced, and DeerRun sells several Z10 variants and model years under similar
@@ -226,7 +226,7 @@ export default {
             <strong>Incidental noise.</strong> In practice, many complaints are about beeps on
             every speed change, a remote that chirps, a hinge that clunks when the pad is unfolded,
             or a belt that squeaks for want of lubricant. An independent reviewer noted that the A1
-            Pro can make a loud tearing sound when unfolded if the belt sticks, and that the DeerRun
+            Pro can make a loud tearing sound when unfolded if the belt sticks, and that the <a href="/deer-run-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>DeerRun</a>
             Z10's beeps cannot be silenced. These are small things that become big things at 7 am.
           </p>
           <p>
@@ -566,6 +566,12 @@ export default {
       title: 'Best Treadmill Anti-Vibration Pads',
       blurb: 'The isolation feet and pads that go under a machine to cut vibration into the floor.',
       url: '/best-treadmill-anti-vibration-pads/',
+    },
+    {
+      kicker: 'Walking pads',
+      title: 'Wooden Walking Pads',
+      blurb: 'Wood-look pads, solid-wood manual desk treadmills and wooden slat machines: what wood changes, US prices, warranties and care.',
+      url: '/wooden-walking-pad/',
     },
   ],
   bottomLine: [

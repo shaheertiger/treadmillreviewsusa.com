@@ -105,7 +105,7 @@ export default {
           </p>
           <p>
             We began with the towers that come up most often for this search on Amazon and in
-            independent coverage — Sportsroyals, RELIFE, Marcy, Stamina, Body Champ, BowFlex,
+            independent coverage — Sportsroyals, RELIFE, Marcy, Stamina, Body Champ, <a href="/bowflex/" class="text-[#0F62FE] font-medium" data-autolink>BowFlex</a>,
             Fitness Reality and a long tail of marketplace brands — and kept only those we could
             confirm as on sale on 19 October 2026 and whose key figures appeared in a second source.
             The independent sources were FitnessVolt's hands-on review of the Sportsroyals tower
@@ -129,7 +129,7 @@ export default {
             manufacturer and recall description, and the category was searched for pull-up, chin-up
             and dip products. We found no recalls for Sportsroyals or RELIFE. Marcy's importer,
             Impex, recalled Olympic dumbbell handles in 2021, not a tower. Stamina's recalls on record
-            are for an exercise machine in 1996, mini-trampolines in 2006, inversion tables in 2008
+            are for an exercise machine in 1996, mini-trampolines in 2006, <a href="/best-inversion-tables/" class="text-[#0F62FE] font-medium" data-autolink>inversion tables</a> in 2008
             and ellipticals in 2009, none of them a power tower. In the category, the database lists
             the Nautilus F3 Chin Dip station sold to fitness centres (2009, footpads that could
             break), TRX dip and hammer bars (2014, welds that could crack), the Perfect Pullup doorway
@@ -167,7 +167,7 @@ export default {
           </p>
           <p>
             <strong>What to do with the number.</strong> Treat it as a ceiling, not a target. Count
-            everything on the tower — your body weight, a weighted vest or dip belt, and the extra
+            everything on the tower — your body weight, a <a href="/best-weighted-vests-for-walking/" class="text-[#0F62FE] font-medium" data-autolink>weighted vest</a> or dip belt, and the extra
             force of dropping into the bottom of a dip — and stay well inside the lowest rating you
             have seen for that model. If you are close to the limit, or plan weighted pull-ups and
             dips, choose a tower from a maker whose figure two sources agree on, or move up to a

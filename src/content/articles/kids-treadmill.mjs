@@ -107,7 +107,7 @@ export default {
             Three things stand out. First, <strong>the ages are higher than most parents
             expect</strong>. A 2015 ProForm manual (PFTL79515) we also read said "under age 12". The
             current iFIT manuals for NordicTrack and ProForm say 16, the same age Peloton has used
-            since 2021. The Sole 2026 F83 manual uses the same under-13 wording as the F85.
+            since 2021. The Sole 2026 F83 manual uses the same under-13 wording as the <a href="/sole-f85-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>F85</a>.
           </p>
           <p>
             Second, <strong>"away from" is not the same as "may not use"</strong>. The iFIT, Sole and
@@ -198,7 +198,7 @@ export default {
             family walk on a rainy evening once children are old enough. It means a treadmill should
             not be the plan for getting a young child active. If weather or space is the problem, there
             are other indoor options: dancing to music, an indoor obstacle course made from cushions,
-            a balance board used with an adult, or simply walking to school when the weather allows.
+            a <a href="/best-balance-boards/" class="text-[#0F62FE] font-medium" data-autolink>balance board</a> used with an adult, or simply walking to school when the weather allows.
           </p>`,
     },
     {
@@ -490,11 +490,11 @@ export default {
           </p>
           <ul>
             <li><strong>Peloton.</strong> The Tread+ (recall 21-128, entrapment) and Tread (touchscreen)
-            recalls of 5 May 2021, described above. Its other recalls are for exercise bikes and bike
+            recalls of 5 May 2021, described above. Its other recalls are for <a href="/best-exercise-bikes/" class="text-[#0F62FE] font-medium" data-autolink>exercise bikes</a> and bike
             pedals.</li>
             <li><strong>NordicTrack and ProForm (iFIT, formerly ICON Health &amp; Fitness).</strong> No
-            treadmill recall in recent years. The recent iFIT recalls are for NordicTrack rowing
-            machines (fire hazard, October 2025) and NordicTrack and ProForm 50 lb adjustable dumbbells
+            treadmill recall in recent years. The recent iFIT recalls are for NordicTrack <a href="/best-rowing-machines/" class="text-[#0F62FE] font-medium" data-autolink>rowing
+            machines</a> (fire hazard, October 2025) and NordicTrack and ProForm 50 lb adjustable dumbbells
             (2024). An older 2002 ICON recall covered NordicTrack and ProForm "hiker" machines.</li>
             <li><strong>Horizon (Johnson Health Tech).</strong> About 192,000 Horizon T101-05 folding
             treadmills were recalled in October 2022 because they could "unexpectedly accelerate, change

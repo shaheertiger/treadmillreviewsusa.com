@@ -46,7 +46,7 @@ export default {
             qualifying competitor's price by 5%, is unusually generous, but its 60-day return policy
             expects the machine back unused and in its original packaging.</strong> On 20 October 2026
             academy.com listed treadmills and walking pads from NordicTrack, ProForm, Bowflex, Echelon,
-            Sunny Health &amp; Fitness, XTERRA, UREVO, WalkingPad, CENTR, Assault Fitness, adidas and a
+            Sunny Health &amp; Fitness, XTERRA, <a href="/urevo-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>UREVO</a>, WalkingPad, CENTR, Assault Fitness, adidas and a
             handful of other brands, at listed prices from $199.99 to $4,999.99 for motorized machines.
           </p>
           <p>
@@ -297,7 +297,7 @@ export default {
             of payment. Fitness equipment is not on its list of excluded or restricted categories, which
             covers firearms, hunting equipment, fuel-powered items, boats, trading cards and some
             electronics. An independent retail guide published in 2026 gives the same 60-day window for
-            most unused items in their original packaging. For a treadmill, the conditions are what matter:
+            most unused items in their <a href="/how-to-pack-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>original packaging</a>. For a treadmill, the conditions are what matter:
           </p>
           <ul>
             <li><strong>Resalable, in the original packaging.</strong> Except where there is a product

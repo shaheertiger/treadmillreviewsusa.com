@@ -109,7 +109,7 @@ export default {
       id: 'who-sells-it',
       heading: 'What the Arcadia Air Runner Is, and Who Sells It',
       html: `          <p>
-            Pro 6 Fitness is a small brand with three product lines: infrared saunas, the Aspen
+            Pro 6 Fitness is a small brand with three product lines: <a href="/best-home-saunas/" class="text-[#0F62FE] font-medium" data-autolink>infrared saunas</a>, the Aspen
             StairMill stair climber and the Arcadia Air Runner. Its store describes itself as part of
             the Golden Designs, Inc. family of wellness products, with an address in Ontario,
             California. Golden Designs is best known as a large supplier of infrared saunas sold through
@@ -263,7 +263,7 @@ export default {
           <p>
             The listing does not mention Bluetooth, ANT+ or app connectivity, so do not assume it will
             pair with Zwift or a training app. If you want your runs logged automatically, plan on a
-            running watch or a foot pod; our
+            <a href="/best-running-watches-for-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>running watch</a> or a foot pod; our
             <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium">foot pod guide</a>
             explains how to get usable pace data from a treadmill that does not broadcast it. Nor does the
             listing say how the console is powered on a machine with no mains connection; most curved
@@ -274,7 +274,7 @@ export default {
             Pro 6 says the Arcadia is built to "burn 30% more calories than traditional motorized
             treadmills", and that it promotes a natural running stride with reduced joint stress. The
             listing gives no source or test conditions for the 30% figure. It is reasonable that pushing a
-            belt yourself costs more energy than running on a motorised belt at the same displayed speed,
+            belt yourself costs more energy than running on a motorised belt at the same <a href="/is-my-treadmill-speed-accurate/" class="text-[#0F62FE] font-medium" data-autolink>displayed speed</a>,
             and that is the direction the claim points in, but a percentage without a pace, a comparison
             condition or a citation cannot be checked and will not apply to every user. The same figure
             appears, almost word for word, on several other curved-treadmill listings. Console calorie
@@ -321,7 +321,7 @@ export default {
           <p>
             Pro 6's own terms of sale are strict. Orders must be cancelled within 24 hours of purchase, and
             returns processed within 30 days of delivery. Every return needs a return authorisation number,
-            and goods must be new, unused and in their original packaging. Cancelled orders and returns are
+            and goods must be new, unused and in their <a href="/how-to-pack-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>original packaging</a>. Cancelled orders and returns are
             charged a 20% handling and restocking fee, all shipping costs in both directions, and any
             storage and routing costs. On a $4,595 machine that is over $900 before freight, so treat a
             direct purchase as close to final.

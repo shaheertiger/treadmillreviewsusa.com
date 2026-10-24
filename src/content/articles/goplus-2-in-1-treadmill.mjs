@@ -101,7 +101,7 @@ export default {
       id: 'which-machine',
       heading: 'Which Machine Is the “2-in-1 Folding Treadmill With RC Bluetooth Speaker and LED Display”?',
       html: `          <p>
-            The long title in the heading is one of the most searched names in budget treadmills, and
+            The long title in the heading is one of the most searched names in <a href="/best-budget-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>budget treadmills</a>, and
             it is worth knowing where it comes from. It is the catalogue name Costway uses for this
             machine family. Costway is the company behind Goplus and other house brands such as
             Gymax, and Goplus uses the SuperFit name for this line; one independent reviewer describes Costway as Goplus’s parent and
@@ -197,7 +197,7 @@ export default {
           </p>
           <p>
             <strong>Rail down, walking mode.</strong> With the front upright folded flat, the pad is a
-            walking pad: about 5 inches thick, able to slide under a standing desk, and limited to
+            <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a>: about 5 inches thick, able to slide under a standing desk, and limited to
             about 2.5 mph. That cap is the most important number on the machine. A gentle 1.5 to
             2.5 mph is a comfortable typing pace for many people. A brisk walk, for most adults, is
             3 to 4 mph, which this pad cannot reach in desk mode.
@@ -274,7 +274,7 @@ export default {
             Noise is the one point on which reviewers split. One found it about as quiet as other
             models they tested, with footfall the main sound; another, testing an earlier unit,
             found it louder than their full-size treadmill. That spread is common with walking pads,
-            where floor type, belt lubrication and walking style change the result. Our
+            where floor type, <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium" data-autolink>belt lubrication</a> and walking style change the result. Our
             <a href="/quiet-treadmills/" class="text-[#0F62FE] font-medium">quiet treadmill guide</a>
             explains where the noise comes from and what reduces it.
           </p>
@@ -456,6 +456,12 @@ export default {
       title: 'Walking Pad vs Folding Treadmill',
       blurb: 'Where a 2-in-1 sits between the two formats.',
       url: '/walking-pad-vs-folding-treadmill/',
+    },
+    {
+      kicker: 'Walking pad',
+      title: 'Redliro Under Desk Treadmill',
+      blurb: 'What Redliro listings claim, where they disagree, and the return terms to read first.',
+      url: '/redliro-under-desk-treadmill/',
     },
   ],
   bottomLine: [

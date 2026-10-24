@@ -161,8 +161,8 @@ export default {
           </p>
           <p>
             <strong>On equipment:</strong> a chest strap is the most reliable consumer heart-rate
-            monitor, and a wrist-based optical monitor is a reasonable middle ground. Treadmill grip
-            sensors are poor for zone 2 work, because you have to hold the rails to use them — which
+            monitor, and a wrist-based optical monitor is a reasonable middle ground. Treadmill <a href="/treadmill-heart-rate-not-working/" class="text-[#0F62FE] font-medium" data-autolink>grip
+            sensors</a> are poor for zone 2 work, because you have to hold the rails to use them — which
             changes the session. If you want your watch and treadmill to share data, our guide to
             <a href="/how-to-connect-apple-watch-to-treadmill/" class="text-[#0F62FE] font-medium">connecting an Apple Watch to a treadmill</a>
             covers one common setup.
@@ -280,7 +280,7 @@ export default {
             Treadmill zone 2 sessions are long and unchanging, which makes them dull. That is the
             honest downside. A film, a podcast, a phone call or a walking desk all help; our
             <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk treadmill guide</a>
-            covers the format many people use for long easy walking, although most walking pads
+            covers the format many people use for long easy walking, although most <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pads</a>
             have little or no incline.
           </p>`,
     },

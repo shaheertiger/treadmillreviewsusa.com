@@ -119,7 +119,7 @@ export default {
           </p>
           <ul>
             <li><strong>The console</strong> usually infers belt speed from the motor or a roller
-            sensor. Belt slip, a dry deck, a heavy runner slowing the belt at each footstrike, and
+            sensor. <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium" data-autolink>Belt slip</a>, a dry deck, a heavy runner slowing the belt at each footstrike, and
             roller wear can all make the belt run slower than the display says, typically by a
             small percentage that grows with speed and load. Our guide to whether
             <a href="/is-my-treadmill-speed-accurate/" class="text-[#0F62FE] font-medium">your treadmill speed is accurate</a>
@@ -162,7 +162,7 @@ export default {
             <li>Plug in, set the speed you run at most, and get on. Ideally have someone else
             time how long ten revolutions of the mark take while you run, because the belt runs
             faster with nobody on it.</li>
-            <li>True speed is belt length times revolutions divided by time. With the belt length
+            <li>True speed is <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium" data-autolink>belt length</a> times revolutions divided by time. With the belt length
             in feet and time in seconds, feet per second multiplied by 0.6818 gives miles per
             hour.</li>
           </ol>
@@ -360,8 +360,8 @@ export default {
           <ul>
             <li><strong>Your watch's own estimate.</strong> In indoor-run mode, a watch estimates
             pace from arm motion and a learned stride model. Some can pass that estimate to an
-            app. It is the cheapest route to try, and generally less precise than a pod; holding
-            the handrails or keeping one arm still for a screen makes it worse. Calibrating the
+            app. It is the cheapest route to try, and generally less precise than a pod; <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>holding
+            the handrails</a> or keeping one arm still for a screen makes it worse. Calibrating the
             watch against a measured belt helps, and our calibration guide covers how.</li>
             <li><strong>A chest strap with running metrics.</strong> Some straps measure body
             movement as well as heart rate. Garmin says its HRM 600 sends treadmill pace and
@@ -479,6 +479,12 @@ export default {
       title: 'Treadmill Calibration',
       blurb: 'Check belt speed and incline, and calibrate a watch or pod to the result.',
       url: '/treadmill-calibration/',
+    },
+    {
+      kicker: 'Foot pod',
+      title: 'Best Foot Pods for Treadmill',
+      blurb: 'Foot pods for accurate treadmill pace and Zwift, with the watches and apps each one pairs with.',
+      url: '/best-foot-pods-for-treadmill/',
     },
   ],
   bottomLine: [

@@ -101,8 +101,8 @@ export default {
             more of applications.
           </p>
           <p>
-            <strong>Aerosols</strong> are quicker and worse. Spray drifts, and a treadmill's motor
-            compartment — containing the motor, controller board and mains wiring — sits directly
+            <strong>Aerosols</strong> are quicker and worse. Spray drifts, and a treadmill's <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium" data-autolink>motor
+            compartment</a> — containing the motor, controller board and mains wiring — sits directly
             under the front of the deck. Misting silicone across the deck also puts it on the belt's
             top surface, which is a running surface you do not want slippery, and on the frame and
             floor. Aerosols also use several times as much product per application.
@@ -221,7 +221,7 @@ export default {
           <p>
             Against that: a treadmill motor replacement typically runs several hundred dollars with
             labour, and a controller board is comparable. Both are commonly caused by exactly the
-            friction that lubrication prevents. On a mid-range machine, one avoided motor failure
+            friction that lubrication prevents. On a mid-range machine, one avoided <a href="/how-long-do-treadmill-motors-last/" class="text-[#0F62FE] font-medium" data-autolink>motor failure</a>
             pays for four decades of lubricant.
           </p>
           <p>

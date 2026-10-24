@@ -105,7 +105,7 @@ export default {
             <strong>Full-size decks at the price.</strong> Three of ProForm's four current
             treadmills have a 20 by 60-inch belt, the length generally recommended for running.
             At ProForm's prices that is not a given; many machines in the same bracket shorten the
-            deck to save money. Only the entry Carbon TLS has a shorter 18 by 55-inch belt, and it
+            deck to save money. Only the entry <a href="/proform-carbon-tls-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Carbon TLS</a> has a shorter 18 by 55-inch belt, and it
             is honest about being a walking machine.
           </p>
           <p>
@@ -165,7 +165,7 @@ export default {
           </p>
           <p>
             <strong>Reviewer criticisms.</strong> Independent reviews of the current Pro Series
-            mention slow incline changes, and of the Carbon Pro 9000 a firm deck and some screen
+            mention slow incline changes, and of the <a href="/proform-carbon-pro-9000-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Carbon Pro 9000</a> a firm deck and some screen
             glare. None is a deal-breaker, but they are the kind of detail that marks a value
             machine.
           </p>`,
@@ -241,7 +241,7 @@ export default {
           <p>
             <strong>Self-help first.</strong> Many treadmill faults — a console that will not
             start, a belt that will not move, an incline that stops responding — are fixed by a
-            power cycle, a reset or a belt adjustment. Our
+            power cycle, a reset or a <a href="/how-to-adjust-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>belt adjustment</a>. Our
             <a href="/proform-treadmill-troubleshooting/" class="text-[#0F62FE] font-medium">ProForm troubleshooting guide</a>
             covers the checks to try before booking a visit. Unplug the machine before any check
             beyond the console, and follow the manual for your model.
@@ -293,7 +293,7 @@ export default {
           <p>
             On 13 October 2026 ProForm's US site listed four treadmills: the Carbon Pro 2000 and
             Carbon Pro 9000, and the Carbon TLX and Carbon TLS. The names that fill older reviews —
-            the Pro 5000, the Power 995i and 1295i, the 505 CST, the Trainer and Sport machines,
+            the Pro 5000, the <a href="/proform-power-995i-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Power 995i</a> and 1295i, the 505 CST, the Trainer and Sport machines,
             and the Carbon TL — were not on that list. Some still appear at third-party retailers.
           </p>
           <p>

@@ -171,7 +171,7 @@ export default {
             rep has finished. A chest strap reads changing effort more reliably than a wrist sensor;
             our roundup of the
             <a href="/best-heart-rate-monitors-for-treadmill/" class="text-[#0F62FE] font-medium">best heart rate monitors for treadmill training</a>
-            explains why, and some curved trainer consoles, such as the AssaultRunner Pro's, pair
+            explains why, and some curved trainer consoles, such as the <a href="/assaultrunner-pro-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>AssaultRunner Pro</a>'s, pair
             with a strap directly.
           </p>`,
     },
@@ -350,7 +350,7 @@ export default {
             the forward-faster, back-slower control that every other session depends on.
           </p>
           <p>
-            <strong>A run-walk version.</strong> Once the walking intervals feel easy, swap the
+            <strong>A run-walk version.</strong> Once the <a href="/treadmill-walking-workouts/" class="text-[#0F62FE] font-medium" data-autolink>walking intervals</a> feel easy, swap the
             brisk walk for 30 to 60 seconds of easy jogging. Ten rounds of one minute jogging and
             one minute walking is a good bridge between walking sessions and continuous running.
           </p>
@@ -427,7 +427,7 @@ export default {
           <p>
             <strong>Hard sessions need space between them.</strong> Keep at least one easy day, and
             preferably two, between sprints, pushes and tempo. Do not put a sprint session the day
-            after heavy leg work or hill repeats. One sprint session a week is enough for almost
+            after heavy leg work or <a href="/treadmill-hill-workout/" class="text-[#0F62FE] font-medium" data-autolink>hill repeats</a>. One sprint session a week is enough for almost
             everyone training at home; two is a ceiling.
           </p>
           <p>
@@ -447,7 +447,7 @@ export default {
             change that.
           </p>
           <p>
-            <strong>Shoes and floor.</strong> A secure, not overly built-up running shoe suits the
+            <strong>Shoes and floor.</strong> A secure, not overly built-up <a href="/best-running-shoes-for-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>running shoe</a> suits the
             curve; very soft, high-stack shoes can feel unstable on a forefoot landing. A curved
             trainer at sprint pace also sends vibration into the floor, so a ground-floor room, a
             garage or a thick rubber mat makes sessions more pleasant for the rest of the household.

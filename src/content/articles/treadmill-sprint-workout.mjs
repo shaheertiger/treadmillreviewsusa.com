@@ -45,8 +45,8 @@ export default {
             back rather than you pushing the ground away, the machine takes several seconds to
             reach speed and to slow down, and most home treadmills cannot reach the speed a fit
             adult sprints at on the ground anyway. The result is that flat treadmill "sprints" are
-            usually fast running at the top of the machine's range, started and finished by holding
-            the rails and stepping on and off a moving belt.
+            usually fast running at the top of the machine's range, started and finished by <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>holding
+            the rails</a> and stepping on and off a moving belt.
           </p>
           <p>
             For most people on most home machines, <strong>incline sprints are the better
@@ -403,11 +403,11 @@ export default {
             specifically discussed high-intensity exercise and the fall risk.</li>
             <li><strong>Anyone on a machine that is not suited to it:</strong> narrow or absent side
             platforms, short rails, a frame that shakes at speed, a belt that slows under a hard
-            footstrike, or a deck too short for a lengthened stride. A walking pad or compact
+            footstrike, or a deck too short for a lengthened stride. A <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> or compact
             folding treadmill is not a sprint machine, whatever the speed display says.</li>
           </ul>
           <p>
-            For almost all of these people, steep incline walking intervals deliver a very hard
+            For almost all of these people, steep incline <a href="/treadmill-walking-workouts/" class="text-[#0F62FE] font-medium" data-autolink>walking intervals</a> deliver a very hard
             effort with a fraction of the risk, and most of the fitness benefit people are hoping
             to get from sprints.
           </p>`,
@@ -420,7 +420,7 @@ export default {
             tool, and it is worth knowing why.
           </p>
           <p>
-            A curved manual treadmill has no motor. The belt moves because you push it, and it goes
+            A curved <a href="/best-manual-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>manual treadmill</a> has no motor. The belt moves because you push it, and it goes
             exactly as fast as you do: accelerate and it accelerates, ease off and it slows. That
             removes every treadmill-specific problem on this page at once. There is no lag, because
             the belt follows your legs. There is no mount at speed, because the belt starts at

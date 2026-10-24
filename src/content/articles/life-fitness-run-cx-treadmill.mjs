@@ -92,8 +92,8 @@ export default {
             for one year.
           </p>
           <p>
-            Buy it if you want a quiet, heavy, no-subscription treadmill for daily walking, incline
-            walking or running at ordinary paces, and you value the warranty enough to pay for it. Look
+            Buy it if you want a quiet, heavy, no-subscription treadmill for daily walking, <a href="/incline-walking-vs-running/" class="text-[#0F62FE] font-medium" data-autolink>incline
+            walking or running</a> at ordinary paces, and you value the warranty enough to pay for it. Look
             at the Life Fitness T3 if you want the same maker for less, a folding machine if floor space
             is tight, and a cheaper machine with a similar deck if the warranty is not what you are
             paying for. We have not tested the Run CX; this review is built from Life Fitness's listing,
@@ -200,7 +200,7 @@ export default {
             the popular
             <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 workout</a>
             sits comfortably inside the range. There is no decline, so the Run CX will not simulate
-            downhill running.
+            <a href="/what-is-treadmill-decline-good-for/" class="text-[#0F62FE] font-medium" data-autolink>downhill running</a>.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Smaller figures Life Fitness publishes</h3>
           <p>

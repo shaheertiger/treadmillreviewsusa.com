@@ -192,7 +192,7 @@ export default {
             decline". NordicTrack and Nebraska Furniture Mart both give -3% to 12%, and so do every
             independent review we read, so we treat the structured field as an omission rather than a
             conflict. NordicTrack also lists RunFlex cushioning, an AutoBreeze fan that changes speed
-            with the workout, two 2-inch speakers, a USB-C charging port, Bluetooth for headphones and
+            with the workout, two 2-inch speakers, a USB-C charging port, Bluetooth for <a href="/best-headphones-for-treadmill-running/" class="text-[#0F62FE] font-medium" data-autolink>headphones</a> and
             heart-rate monitors, and the iFIT features it calls SmartAdjust and ActivePulse. Those are
             features rather than measurements, and how useful they are depends on whether you keep an
             iFIT membership.
@@ -310,7 +310,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Twelve miles an hour</h3>
           <p>
             A 12 mph ceiling is a five-minute mile. For steady running and most intervals it will never be
-            the limit. If you do fast repeats above it, the Commercial 2450 is the NordicTrack that goes to
+            the limit. If you do fast repeats above it, the <a href="/nordictrack-commercial-2450-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Commercial 2450</a> is the NordicTrack that goes to
             14 mph. Our <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium">interval workouts guide</a>
             covers how to structure sessions within a machine's range.
           </p>
@@ -642,6 +642,12 @@ export default {
       title: 'Best NordicTrack Treadmills',
       blurb: 'The whole current range ranked, from the T Series to the X Series incline trainers.',
       url: '/best-nordictrack-treadmills/',
+    },
+    {
+      kicker: 'Review',
+      title: 'NordicTrack C 700',
+      blurb: 'The budget entry point into the NordicTrack lineup.',
+      url: '/nordictrack-c-700-treadmill/',
     },
   ],
   bottomLine: [

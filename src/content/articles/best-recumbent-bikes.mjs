@@ -115,7 +115,7 @@ export default {
             <strong>Recall checks.</strong> We searched the US Consumer Product Safety Commission's
             recall database by brand for every maker here — Schwinn, Horizon and their owner Johnson
             Health Tech, Marcy and Sunny Health &amp; Fitness — and for the brands we considered and
-            left out, including Nautilus, BowFlex, Exerpeutic, Sole, NordicTrack and Teeter. None of
+            left out, including Nautilus, <a href="/bowflex/" class="text-[#0F62FE] font-medium" data-autolink>BowFlex</a>, Exerpeutic, Sole, NordicTrack and Teeter. None of
             the five bikes listed is under a recall. The recalls we found for these makers cover other
             products: Horizon treadmills in 2022, older Schwinn and Horizon ellipticals, BowFlex
             dumbbells, and commercial Matrix-brand training cycles in January 2025. In the wider
@@ -363,7 +363,7 @@ export default {
       id: 'who-it-suits',
       heading: 'Seniors, Joints and Back Pain: What a Recumbent Can and Cannot Do',
       html: `          <p>
-            Recumbent bikes are often sold as the exercise bike for seniors and for people with joint
+            Recumbent bikes are often sold as the <a href="/best-exercise-bikes-for-seniors/" class="text-[#0F62FE] font-medium" data-autolink>exercise bike for seniors</a> and for people with joint
             problems. There is good sense behind that, and some limits worth being honest about. We
             review equipment, not health conditions, so read this as the reasoning behind the design,
             not as advice about your own body.
@@ -445,7 +445,7 @@ export default {
           <p>
             <strong>Apps.</strong> None of these bikes needs a subscription. The Schwinn 290 and Horizon
             5.0R have full Bluetooth FTMS, the open standard, so they connect to a wide range of apps —
-            Schwinn lists JRNY and Zwift, Horizon lists Peloton, Zwift and Kinomap. The Schwinn 230 has
+            Schwinn lists JRNY and <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium" data-autolink>Zwift</a>, Horizon lists Peloton, Zwift and Kinomap. The Schwinn 230 has
             partial FTMS and connects to Schwinn's listed apps, Explore the World and Zwift. The Sunny
             connects to Sunny's free SunnyFit app. The Marcy has no connection at all. App
             subscriptions, where needed, are separate; check the current price. Our
@@ -649,6 +649,12 @@ export default {
       title: 'Best Elliptical Machines',
       blurb: 'Weight-bearing cardio without impact, for long, steady sessions.',
       url: '/best-elliptical-machines-for-home/',
+    },
+    {
+      kicker: 'Seated',
+      title: 'Best Recumbent Ellipticals',
+      blurb: 'Seated cross trainers compared: stepping motion, arm handles, swivel seats and footprint.',
+      url: '/best-recumbent-ellipticals/',
     },
   ],
   bottomLine: [

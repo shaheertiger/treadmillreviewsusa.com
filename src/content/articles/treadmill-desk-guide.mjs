@@ -32,7 +32,7 @@ export default {
       id: 'short-version',
       heading: 'How to Use a Treadmill Desk: The Short Version',
       html: `          <p>
-            A treadmill desk is any walking treadmill — usually a walking pad, sometimes a
+            A treadmill desk is any walking treadmill — usually a <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a>, sometimes a
             full-size machine — set under a desk high enough to work at while you walk. Using one
             well comes down to six things:
           </p>
@@ -226,7 +226,7 @@ export default {
       id: 'footwear',
       heading: 'Footwear and Flooring',
       html: `          <p>
-            Wear supportive walking or running shoes. It is tempting to walk in socks, slippers or
+            Wear supportive walking or <a href="/best-running-shoes-for-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>running shoes</a>. It is tempting to walk in socks, slippers or
             bare feet at an office pace, but hours of walking on a thin deck with no support is
             exactly what makes feet sore, and socks offer no grip if you misstep. Keep a pair of
             shoes by the desk for the purpose.
@@ -337,7 +337,7 @@ export default {
           </p>
           <p>
             <strong>Maintain the machine.</strong> Walking pads run for many hours at low speed,
-            which adds up. Check the manual for the lubrication interval and deck type — some are
+            which adds up. Check the manual for the <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>lubrication interval</a> and deck type — some are
             pre-waxed and must not receive silicone — and follow our
             <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">lubrication guide</a>
             when it is due. Vacuum underneath regularly.

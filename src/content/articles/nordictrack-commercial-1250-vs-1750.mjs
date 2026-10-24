@@ -476,8 +476,8 @@ export default {
       heading: 'How to Confirm the Specs for the Model Year You Are Buying',
       html: `          <p>
             The reason the motor ratings and deck widths conflict is that NordicTrack, like most
-            manufacturers, revises machines while keeping the name. A listing that says "Commercial
-            1250" may be describing this year's machine or one from two years ago, and third-party
+            manufacturers, revises machines while keeping the name. A listing that says "<a href="/nordictrack-commercial-1250-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Commercial
+            1250</a>" may be describing this year's machine or one from two years ago, and third-party
             retailers often carry forward older figures. The fix is to stop comparing names and
             start comparing model numbers.
           </p>
@@ -518,7 +518,7 @@ export default {
       html: `          <p>
             The 1250 and 1750 are the lower two steps of NordicTrack's Commercial series, with the
             Commercial 2450 above them. Our <a href="/nordictrack/" class="text-[#0F62FE] font-medium">NordicTrack brand guide</a>
-            walks through the full lineup, including the incline trainers, if you want to see how
+            walks through the full lineup, including the <a href="/incline-trainer-vs-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>incline trainers</a>, if you want to see how
             the series fits together.
           </p>
           <p>

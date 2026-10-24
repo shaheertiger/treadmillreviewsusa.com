@@ -181,7 +181,7 @@ export default {
           <p>
             Ask how it was stored and whether the deck was ever lubricated. The honest answer from
             most owners is no, which is not a reason to walk away but is a reason to budget for a
-            lubrication and a belt tension check in the first week —
+            lubrication and a <a href="/how-tight-should-treadmill-belt-be/" class="text-[#0F62FE] font-medium" data-autolink>belt tension</a> check in the first week —
             <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium">the maintenance checklist</a>
             is the ten minutes that decides whether you got a bargain.
           </p>
@@ -253,7 +253,7 @@ export default {
             Keep the belt correctly tensioned and tracking centrally, diagnosing those as the two
             separate faults they are —
             <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">slipping versus tracking</a>
-            walks through the order. Vacuum the motor compartment periodically, because a light
+            walks through the order. <a href="/how-to-vacuum-treadmill-motor-compartment/" class="text-[#0F62FE] font-medium" data-autolink>Vacuum the motor</a> compartment periodically, because a light
             machine has a small compartment and dust accumulates faster than you would think.
           </p>
           <p>

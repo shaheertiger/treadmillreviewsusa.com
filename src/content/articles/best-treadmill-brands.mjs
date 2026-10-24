@@ -162,8 +162,8 @@ export default {
           </p>
           <p>
             <strong>Strengths:</strong> the broadest range of interactive machines from a single
-            brand, from budget folding models to heavier non-folding machines and steep incline
-            trainers, with build quality that scales fairly predictably with price.
+            brand, from budget folding models to heavier non-folding machines and steep <a href="/incline-trainer-vs-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>incline
+            trainers</a>, with build quality that scales fairly predictably with price.
             <strong>Things to weigh:</strong> the ongoing cost of the subscription, what each
             console does without it, and owner reports of mixed support experiences. Warranties are
             competitive at frame level, with shorter parts and labour terms.
@@ -301,7 +301,7 @@ export default {
       id: 'walking-pad-brands',
       heading: 'Budget Walking-Pad Brands, as a Category',
       html: `          <p>
-            The fastest-growing part of the market is compact under-desk walking pads, sold largely
+            The fastest-growing part of the market is compact under-desk <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pads</a>, sold largely
             online under a wide and changing set of brand names. We treat them as a category rather
             than profiling each brand, because the trade-offs are shared and the names come and go. For one of the longer-established names, see our guide to <a href="/lifespan-treadmills/" class="text-[#0F62FE] font-medium">LifeSpan treadmills</a>.
           </p>

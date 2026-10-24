@@ -135,7 +135,7 @@ export default {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">3. A watch or phone</h3>
           <p>
-            Some running watches can broadcast an estimated running speed over Bluetooth from their
+            Some <a href="/best-running-watches-for-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>running watches</a> can broadcast an estimated running speed over Bluetooth from their
             own wrist-based motion sensing, and Zwift has at various points offered a route for
             Apple Watch users through its companion app. These are the cheapest options to try if
             you already own the device, and the least accurate of the three: a wrist moves in a far
@@ -378,7 +378,7 @@ export default {
             you set expectations.
           </p>
           <p>
-            <strong>No resistance control.</strong> On a smart bike trainer, Zwift sets the
+            <strong>No resistance control.</strong> On a smart <a href="/best-smart-bike-trainers/" class="text-[#0F62FE] font-medium" data-autolink>bike trainer</a>, Zwift sets the
             resistance to match the virtual road, so a climb feels like a climb and a workout block
             arrives at the right effort without you touching anything. On a treadmill, Zwift sets
             nothing. You are the control loop. The immersion is correspondingly thinner: the hill on

@@ -70,7 +70,7 @@ export default {
           </p>
           <ul>
             <li><strong>Burning rubber</strong> — friction. Either the running belt dragging on a
-            dry deck, the belt rubbing the frame, or the drive belt slipping on the motor pulley
+            dry deck, the belt rubbing the frame, or the <a href="/treadmill-drive-belt/" class="text-[#0F62FE] font-medium" data-autolink>drive belt slipping</a> on the motor pulley
             under the hood.</li>
             <li><strong>Hot plastic, acrid or fishy</strong> — electrical overheating. Motor
             windings, the controller board, wiring or a connector. This is a stop.</li>
@@ -218,14 +218,14 @@ export default {
             starts to break down the smell is distinctive. Components on the controller board can
             overheat and scorch, often after years of high current from a dry deck or after a mains
             surge. A connector that has worked loose develops resistance, heats and can melt its
-            housing. Excessive arcing at worn motor brushes produces ozone. And the cord or inlet
+            housing. Excessive arcing at worn <a href="/treadmill-motor-brushes/" class="text-[#0F62FE] font-medium" data-autolink>motor brushes</a> produces ozone. And the cord or inlet
             can overheat if a connection is poor, which you may see as discoloration on the pins.
           </p>
           <p>
             None of these is a diagnosis to attempt yourself, and some of the components involved
             can hold a charge after the machine is unplugged. On a machine under warranty, contact
             the manufacturer — and do not open the hood first, since that can void cover on some
-            machines. Out of warranty, a treadmill technician can tell you which component failed
+            machines. Out of warranty, a <a href="/treadmill-repair-near-me/" class="text-[#0F62FE] font-medium" data-autolink>treadmill technician</a> can tell you which component failed
             and what it will cost.
           </p>
           <p>

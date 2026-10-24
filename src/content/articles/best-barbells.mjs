@@ -141,7 +141,7 @@ export default {
             2020; none involves a barbell. The barbell recalls we did find are older and involve other
             brands: York Barbell recalled several 7 ft and 6½ ft Olympic bars with split sleeves in
             2006 because the sleeve mechanism could break under heavy weight, and Nautilus recalled the
-            Bowflex SelectTech 2080 adjustable barbell in 2021 because a plate could fall from the end.
+            <a href="/bowflex/" class="text-[#0F62FE] font-medium" data-autolink>Bowflex</a> SelectTech 2080 adjustable barbell in 2021 because a plate could fall from the end.
             If you are buying a used bar, check for those names before anything else.
           </p>
           <p>

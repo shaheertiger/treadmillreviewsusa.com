@@ -140,7 +140,7 @@ export default {
             it. Incline walking contributes modestly to both — some muscular work, and a higher
             energy cost than flat walking — but neither on its own is enough to change shape
             substantially. Fat loss happens across the whole body rather than from the muscles you
-            are working — spot reduction does not work — and it depends mainly on overall energy
+            are working — <a href="/does-treadmill-burn-belly-fat/" class="text-[#0F62FE] font-medium" data-autolink>spot reduction</a> does not work — and it depends mainly on overall energy
             balance, which means diet does much of the heavy lifting.
           </p>`,
     },
@@ -149,7 +149,7 @@ export default {
       heading: 'How Much Incline on a Treadmill for Glutes?',
       html: `          <p>
             The range most commonly suggested for glute emphasis is somewhere around 8 to 12%, at
-            a speed you can sustain with an upright posture and without holding the rails — often
+            a speed you can sustain with an upright posture and without <a href="/should-you-hold-the-handrails-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>holding the rails</a> — often
             around 2.5 to 3.5 mph. That is a convention widely used by trainers and in popular
             treadmill programmes, not a figure derived from research, and the right grade for you
             is the one where you can feel the hips working while your form holds.
@@ -382,7 +382,7 @@ export default {
           <p>
             One more practical point: a treadmill that only reaches a few percent of incline
             limits how much of this you can do. If glute-focused incline walking is a main reason
-            for buying, check the maximum grade and how the machine handles steep sessions before you buy, because some budget machines and most walking pads stop
+            for buying, check the maximum grade and how the machine handles steep sessions before you buy, because some budget machines and most <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pads</a> stop
             well short of the 8 to 12% range.
           </p>`,
     },

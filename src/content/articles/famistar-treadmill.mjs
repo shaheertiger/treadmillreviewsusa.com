@@ -50,7 +50,7 @@ export default {
             at a low price, with the return terms read and the warranty confirmed in writing.
           </p>
           <p>
-            The range runs from a 2.5 HP walking pad at about $166 to auto-incline folding treadmills
+            The range runs from a 2.5 HP walking pad at about $166 to auto-incline <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>folding treadmills</a>
             listed with 4 to 5.1 HP brushless motors at $380 to $620. Each is advertised against a
             “regular” price several times higher, up to about $3,300 for a machine selling at $620,
             which tells you more about the marketing than the machine. The flagship T532 lists its
@@ -93,7 +93,7 @@ export default {
           </p>
           <p>
             <strong>Walmart.com</strong> carries a Famistar store with folding treadmills and the
-            walking pad. Walmart’s marketplace includes third-party sellers, so check whether a
+            <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a>. Walmart’s marketplace includes third-party sellers, so check whether a
             listing is sold by Walmart or by Famistar, because that decides who handles a return.
           </p>
           <p>
@@ -451,6 +451,12 @@ export default {
       title: 'Walking Pad Buying Guide',
       blurb: 'Which walking pad specifications to trust.',
       url: '/walking-pad-buying-guide/',
+    },
+    {
+      kicker: 'Legacy',
+      title: 'Trimline Treadmills',
+      blurb: 'A discontinued US brand: buying one used, finding parts and manuals, and what replaced it.',
+      url: '/trimline-treadmill/',
     },
   ],
   bottomLine: [

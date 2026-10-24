@@ -268,7 +268,7 @@ export default {
             under the belt they become abrasive.
           </p>
           <p>
-            <strong>Folding treadmills</strong> make this easy: unplug, fold the deck up following the
+            <strong>Folding treadmills</strong> make this easy: unplug, <a href="/how-to-fold-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>fold the deck</a> up following the
             manual's procedure, make sure the latch is engaged, and vacuum the floor beneath.
             <strong>Non-folding treadmills</strong> are heavy and awkward, so reach underneath with a
             crevice tool rather than moving the machine for every clean. If you do need to move it,
@@ -291,7 +291,7 @@ export default {
             Most home treadmills do not need disinfecting after every session. Cleaning removes the
             grime that matters for the machine. Disinfecting makes sense when someone in the house
             has been ill, when a machine is shared by several people, or when you have bought a
-            used treadmill and want a fresh start.
+            <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>used treadmill</a> and want a fresh start.
           </p>
           <p>
             <strong>Check the manual first.</strong> Some manufacturers list cleaners and
@@ -395,7 +395,7 @@ export default {
           </p>
           <p>
             <strong>Black dust.</strong> Fine black powder around the rollers or at the front of the
-            deck is often belt or drive belt wear, and is worth investigating.
+            deck is often belt or drive <a href="/how-often-should-a-treadmill-belt-be-replaced/" class="text-[#0F62FE] font-medium" data-autolink>belt wear</a>, and is worth investigating.
           </p>
           <p>
             <strong>Loose fasteners and cracked plastic</strong> on the rails, uprights and hood.
@@ -478,6 +478,12 @@ export default {
       title: 'Treadmill Maintenance Checklist',
       blurb: 'Every task, in running hours, from one minute to one hour.',
       url: '/treadmill-maintenance-checklist/',
+    },
+    {
+      kicker: 'Cleaning',
+      title: 'Best Treadmill Cleaning Products',
+      blurb: 'Console-safe cleaners, cloths and tools for under the belt, and the products to keep away from a deck.',
+      url: '/best-treadmill-cleaning-products/',
     },
   ],
   bottomLine: [

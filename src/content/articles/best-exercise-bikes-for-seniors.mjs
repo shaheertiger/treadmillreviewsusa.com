@@ -132,7 +132,7 @@ export default {
           <p>
             <strong>Recalls.</strong> We searched the CPSC recall database for Schwinn, Horizon and its
             parent Johnson Health Tech, SOLE, Marcy and its maker Impex, Sunny Health &amp; Fitness,
-            DeskCycle, Peloton, BowFlex and Nautilus on 19 October 2026. We found no recall of any bike
+            DeskCycle, Peloton, <a href="/bowflex/" class="text-[#0F62FE] font-medium" data-autolink>BowFlex</a> and Nautilus on 19 October 2026. We found no recall of any bike
             on this page. The older recalls we did find were for other products: Horizon treadmills in
             2022, Schwinn-branded ellipticals sold by Nautilus in 2011, BowFlex adjustable dumbbells in
             2025 and Impex dumbbell handles in 2021. If you are buying used, search the exact model
@@ -147,8 +147,8 @@ export default {
             position are the wrong starting point for most older riders; budget folding "X-bikes", whose
             light frames and small seats suit occasional use rather than daily riding by someone who
             needs stability; and the Schwinn 130 upright, a good-value bike whose console Garage Gym
-            Reviews notes is not backlit and whose frame Schwinn does not describe as step-through. Air
-            bikes are excluded too: their resistance rises steeply with effort, which is the opposite of
+            Reviews notes is not backlit and whose frame Schwinn does not describe as step-through. <a href="/best-air-bikes/" class="text-[#0F62FE] font-medium" data-autolink>Air
+            bikes</a> are excluded too: their resistance rises steeply with effort, which is the opposite of
             a gentle start.
           </p>`,
     },
@@ -295,7 +295,7 @@ export default {
           <p>
             <strong>Delivery.</strong> Most of these bikes arrive in a large box on a parcel or freight
             service, usually to the front door or curb. Schwinn's and SOLE's sites both offer paid
-            upgrades: on 19 October SOLE listed curbside delivery for the LCR at $49.99, room-of-choice
+            upgrades: on 19 October SOLE listed <a href="/treadmill-delivery-guide/" class="text-[#0F62FE] font-medium" data-autolink>curbside delivery</a> for the LCR at $49.99, room-of-choice
             delivery for $200 more and room-of-choice delivery with assembly for $350 more, figures Garage
             Gym Reviews also gives, and Schwinn listed a $299 White Glove option, with delivery to a room
             of choice and full assembly, on the bike pages we checked. Delivery terms change, so check the
@@ -603,6 +603,12 @@ export default {
       title: 'Best Exercise Bikes',
       blurb: 'Indoor cycling bikes for harder training, with fit, flywheel and app advice.',
       url: '/best-exercise-bikes/',
+    },
+    {
+      kicker: 'Folding',
+      title: 'Best Folding Exercise Bikes',
+      blurb: 'Five X-frame folding bikes: folded size, weight-limit claims, seats and stability.',
+      url: '/best-folding-exercise-bikes/',
     },
   ],
   bottomLine: [

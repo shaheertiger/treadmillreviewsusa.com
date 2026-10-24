@@ -105,7 +105,7 @@ export default {
             SB Fitness Equipment is a small US fitness retailer that has, in its own words, offered
             sales and service of fitness equipment for over 20 years. Alongside equipment from
             Body-Solid, Vision, Matrix and Spirit, it sells its own range of SB Fitness curved
-            treadmills: the CT250 walking model, the CT400, the CT550, the CT700 and the wooden
+            treadmills: the CT250 walking model, the CT400, the CT550, the <a href="/sb-fitness-ct700-curved-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>CT700</a> and the wooden
             CT850 SprintMaxx. The CT550 sits in the middle of that range, and the seller describes it
             as building on the CT400 platform with harder rubber and nylon slats and eight levels of
             magnetic resistance in place of fewer.
@@ -240,7 +240,7 @@ export default {
       html: `          <p>
             The CT550 listing includes a list of benefits of curved treadmills over motorised ones:
             30% increased calorie burn, 30% increased oxygen consumption, a 16% increase in heart
-            rate, better running form, no maximum speed and greater reliability. The listing does not
+            rate, better <a href="/treadmill-running-form/" class="text-[#0F62FE] font-medium" data-autolink>running form</a>, no maximum speed and greater reliability. The listing does not
             cite the research behind those percentages or say under what conditions they were
             measured.
           </p>
@@ -304,7 +304,7 @@ export default {
           <p>
             The seller's published return policy gives 30 days from delivery. Change-of-mind returns
             carry a 20% restocking fee, based on the item price, unless you accept full-value store
-            credit instead; the item must go back in its original packaging or be packed to freight
+            credit instead; the item must go back in its <a href="/how-to-pack-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>original packaging</a> or be packed to freight
             standard by you. Damaged or defective units are handled differently: you report damage
             on delivery with photos, and the seller says it will usually ship replacement parts or
             arrange a replacement. On a $1,995 machine, a 20% restocking fee is about $400, so make
@@ -360,8 +360,8 @@ export default {
           </p>
           <p>
             <strong>Sprint specialists should look higher.</strong> The seller's own guidance points
-            serious sprinters to steel-bearing models, and curved machines such as the AssaultRunner
-            Pro in our roundup are built around that use.
+            serious sprinters to steel-bearing models, and curved machines such as the <a href="/assaultrunner-pro-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>AssaultRunner
+            Pro</a> in our roundup are built around that use.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Alternatives on this site</h3>
           <p>

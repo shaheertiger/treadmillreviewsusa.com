@@ -389,7 +389,7 @@ export default {
             guides.
           </p>
           <p>
-            <strong>If you want to train for running or walking</strong>, a treadmill or walking pad
+            <strong>If you want to train for running or walking</strong>, a treadmill or <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a>
             trains the movement itself. Our
             <a href="/home-cardio-equipment-guide/" class="text-[#0F62FE] font-medium">home cardio equipment guide</a>
             helps choose.
@@ -623,6 +623,12 @@ export default {
       title: 'Best Jump Ropes',
       blurb: 'The cheapest small-space cardio, and how it compares on impact.',
       url: '/best-jump-ropes/',
+    },
+    {
+      kicker: 'Plyo',
+      title: 'Best Plyo Boxes',
+      blurb: 'Soft, wood, steel and stackable foam boxes: heights, stability and shin safety.',
+      url: '/best-plyo-boxes/',
     },
   ],
   bottomLine: [
