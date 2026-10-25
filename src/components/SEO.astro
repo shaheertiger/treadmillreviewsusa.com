@@ -1,4 +1,5 @@
 ---
+import { CONTACT_EMAIL } from '../data/site';
 interface Props {
   title: string;
   description: string;
@@ -57,6 +58,8 @@ const organizationSchema = {
   url: `${siteUrl}/`,
   logo: abs('/logo.png'),
   publishingPrinciples: abs('/editorial-standards/'),
+  email: CONTACT_EMAIL,
+  contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', email: CONTACT_EMAIL, url: abs('/contact-us/') },
   description:
     'Independent treadmill and home gym buying guides. Product specifications are checked against published sources; we earn commissions from qualifying purchases.',
 };
@@ -95,7 +98,10 @@ function sanitize(node: unknown): unknown {
   return out;
 }
 
-const schemas: unknown[] = [organizationSchema, websiteSchema];
+// A page that supplies its own WebSite node (the home page) replaces the site-wide one.
+const pageNodes = ([] as unknown[]).concat(jsonLd ?? []) as Record<string, unknown>[];
+const schemas: unknown[] = [organizationSchema];
+if (!pageNodes.some((n) => n?.['@type'] === 'WebSite')) schemas.push(websiteSchema);
 if (jsonLd) {
   if (Array.isArray(jsonLd)) {
     schemas.push(...jsonLd.map(sanitize));
