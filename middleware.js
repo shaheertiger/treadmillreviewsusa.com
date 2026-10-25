@@ -4,17 +4,31 @@
  *
  *   GET /some-page.md                          -> Markdown of /some-page/
  *   GET /some-page/ + Accept: text/markdown    -> Markdown of /some-page/ (q-values respected)
+ *   GET /some-page/ from a known AI crawler    -> Markdown, unless its Accept ranks HTML higher
+ *   GET /some-page/ + Accept excluding both    -> 406 Not Acceptable (e.g. Accept: application/json)
  *   GET /api/md/some-page                      -> Markdown of /some-page/, always
  *   GET /api/md/_catalog                       -> JSON list of every Markdown page
  *
- * Everything else passes straight through untouched, so browsers, curl and link
- * previews (a wildcard Accept, or none) always get HTML. Uses Web APIs only.
+ * HTML pages pass through with a Link header pointing at their Markdown copy
+ * (rel="alternate"), so browsers, curl and link previews (a wildcard Accept, or
+ * none) still get HTML. Follows the AEO Spec 1.0 (dualmark.dev). Uses Web APIs only.
  */
 
 export const config = {
   runtime: 'nodejs',
   matcher: ['/((?!_astro/|_vercel/|images/).*)'],
 };
+
+// AEO Spec version advertised on every Markdown response.
+const AEO_VERSION = '1.0';
+
+// AI crawlers that get Markdown by default, matching @dualmark/core's AI_BOTS list.
+// Search engines such as Googlebot and Bingbot are not on it and always get HTML.
+const AI_BOT_UA = /GPTBot|ChatGPT-User|OAI-SearchBot|ClaudeBot|Anthropic-ai|Claude-Web|Claude-SearchBot|Claude-User|PerplexityBot|Perplexity-User|Google-Extended|Applebot-Extended|cohere-ai|CCBot|Bytespider|DeepSeekBot|Amazonbot|YouBot|Diffbot|ImagesiftBot|Omgilibot|DuckAssistBot|meta-externalagent|meta-externalfetcher/i;
+
+// Sent on every HTML page. Replaces the static Link header vercel.json used to set,
+// so the rel="describedby" entries stay alongside the new rel="alternate" one.
+const DESCRIBEDBY = '</llms.txt>; rel="describedby"; type="text/plain", </llms-full.txt>; rel="describedby"; type="text/plain", </ai.txt>; rel="describedby"; type="text/plain"';
 
 // Marks the middleware's own request for the static .md file so it isn't handled twice.
 const INTERNAL = 'x-markdown-internal';
@@ -25,25 +39,36 @@ const CORS = {
   'Access-Control-Allow-Headers': 'Accept, Content-Type',
 };
 
-/** True when the client ranks text/markdown above text/html (RFC 9110 q-values). */
-export function prefersMarkdown(accept) {
-  if (!accept) return false;
-  let markdown = 0;
-  let html = -1;
+/**
+ * Quality the client gives HTML and Markdown (RFC 9110 q-values). An exact media
+ * type beats text/* which beats the full wildcard. No Accept header means anything goes.
+ */
+export function acceptQualities(accept) {
+  if (!accept || !accept.trim()) return { markdown: 1, html: 1 };
+  const exact = { markdown: -1, html: -1 };
   let text = -1;
   let any = -1;
   for (const part of accept.split(',')) {
     const [type, ...params] = part.split(';').map((s) => s.trim().toLowerCase());
     const qParam = params.find((p) => p.startsWith('q='));
     const parsed = qParam ? Number(qParam.slice(2)) : 1;
-    const q = Number.isFinite(parsed) ? parsed : 0;
-    if (type === 'text/markdown' || type === 'text/x-markdown') markdown = Math.max(markdown, q);
-    else if (type === 'text/html') html = Math.max(html, q);
+    const q = Number.isFinite(parsed) ? Math.min(1, Math.max(0, parsed)) : 0;
+    if (type === 'text/markdown' || type === 'text/x-markdown') exact.markdown = Math.max(exact.markdown, q);
+    else if (type === 'text/html' || type === 'application/xhtml+xml') exact.html = Math.max(exact.html, q);
     else if (type === 'text/*') text = Math.max(text, q);
     else if (type === '*/*') any = Math.max(any, q);
   }
-  const htmlQ = html >= 0 ? html : text >= 0 ? text : any >= 0 ? any : 0;
-  return markdown > 0 && markdown > htmlQ;
+  const resolve = (q) => (q >= 0 ? q : text >= 0 ? text : any >= 0 ? any : 0);
+  return { markdown: resolve(exact.markdown), html: resolve(exact.html) };
+}
+
+/** Which format to send: 'markdown', 'html', or null (neither is acceptable -> 406). */
+export function negotiate(accept, userAgent) {
+  const { markdown, html } = acceptQualities(accept);
+  if (markdown <= 0 && html <= 0) return null;
+  // Known AI crawlers get Markdown on a tie, e.g. Accept: */* or no Accept at all.
+  if (AI_BOT_UA.test(userAgent ?? '')) return markdown > 0 && markdown >= html ? 'markdown' : 'html';
+  return markdown > html ? 'markdown' : 'html';
 }
 
 /** /some-page/ -> /some-page.md ; / -> /index.md */
@@ -61,6 +86,11 @@ function respond(request, body, { status = 200, contentType = 'text/markdown; ch
   const headers = new Headers({
     ...CORS,
     'Content-Type': contentType,
+    'X-Content-Type-Options': 'nosniff',
+    'X-AEO-Version': AEO_VERSION,
+    // Every Markdown response varies on Accept: the same content is also served as
+    // HTML, so shared caches must not hand one format to a client asking for the other.
+    Vary: negotiated ? 'Accept, User-Agent' : 'Accept',
     'X-Markdown-Tokens': String(Math.ceil(body.length / 4)),
     'X-Robots-Tag': 'noindex, follow',
     'Cache-Control': status === 200 ? 'public, s-maxage=3600, stale-while-revalidate=86400' : 'public, s-maxage=300',
@@ -70,7 +100,6 @@ function respond(request, body, { status = 200, contentType = 'text/markdown; ch
     headers.set('Link', `<${canonical}>; rel="canonical"`);
   }
   if (lastModified) headers.set('Last-Modified', lastModified);
-  if (negotiated) headers.set('Vary', 'Accept');
   return new Response(request.method === 'HEAD' ? null : body, { status, headers });
 }
 
@@ -82,6 +111,47 @@ function notFound(request, pathname, negotiated) {
 
 async function fetchInternal(request, path) {
   return fetch(new URL(path, request.url), { headers: { [INTERNAL]: '1' } });
+}
+
+// Paths of every page with a Markdown copy, read once per instance from md-catalog.json.
+let catalogPaths;
+function markdownPages(request) {
+  catalogPaths ??= fetchInternal(request, '/md-catalog.json')
+    .then((res) => (res.ok ? res.json() : Promise.reject(new Error(`md-catalog.json: ${res.status}`))))
+    .then((json) => new Set(json.pages.map((p) => new URL(p.markdown).pathname)))
+    .catch(() => {
+      catalogPaths = undefined; // retry on the next request
+      return new Set();
+    });
+  return catalogPaths;
+}
+
+/** Lets the HTML through, adding headers that point agents at its Markdown copy. */
+async function passHtml(request, pathname) {
+  const mdPath = markdownPath(pathname);
+  const hasMarkdown = (await markdownPages(request)).has(mdPath);
+  const link = hasMarkdown ? `<${mdPath}>; rel="alternate"; type="text/markdown", ${DESCRIBEDBY}` : DESCRIBEDBY;
+  // x-middleware-next is what @vercel/functions' next() sends: continue to the
+  // static page and merge these headers into its response.
+  return new Response(null, {
+    headers: { 'x-middleware-next': '1', Link: link, Vary: 'Accept, User-Agent' },
+  });
+}
+
+function notAcceptable(request, pathname) {
+  const mdPath = markdownPath(pathname);
+  const body = `Not Acceptable\n\nThis page is available as text/html (${pathname}) or text/markdown (${mdPath}).\n`;
+  return new Response(request.method === 'HEAD' ? null : body, {
+    status: 406,
+    headers: {
+      ...CORS,
+      'Content-Type': 'text/plain; charset=utf-8',
+      'X-Content-Type-Options': 'nosniff',
+      Vary: 'Accept, User-Agent',
+      Link: `<${mdPath}>; rel="alternate"; type="text/markdown"`,
+      'Cache-Control': 'no-store',
+    },
+  });
 }
 
 async function serveMarkdown(request, pathname, negotiated) {
@@ -103,8 +173,17 @@ export default async function middleware(request) {
 
   const direct = pathname.startsWith('/api/md/') || pathname === '/api/md';
   const suffix = !direct && pathname.endsWith('.md');
-  const negotiated = !direct && !suffix && isContentRoute(pathname) && prefersMarkdown(request.headers.get('accept'));
-  if (!direct && !suffix && !negotiated) return;
+  const page = !direct && !suffix && isContentRoute(pathname);
+  if (!direct && !suffix && !page) return;
+
+  let negotiated = false;
+  if (page) {
+    if (request.method !== 'GET' && request.method !== 'HEAD') return;
+    const format = negotiate(request.headers.get('accept'), request.headers.get('user-agent'));
+    if (format === null) return notAcceptable(request, pathname);
+    if (format === 'html') return passHtml(request, pathname);
+    negotiated = true;
+  }
 
   if (request.method === 'OPTIONS') return new Response(null, { status: 204, headers: { ...CORS, 'Access-Control-Max-Age': '86400' } });
   if (request.method !== 'GET' && request.method !== 'HEAD') {
@@ -120,5 +199,6 @@ export default async function middleware(request) {
     }
     return serveMarkdown(request, `/${rest}`, false);
   }
-  return serveMarkdown(request, pathname, negotiated);
+  // No Markdown copy (drafts, noindex hubs): fall back to the HTML page.
+  return (await serveMarkdown(request, pathname, negotiated)) ?? passHtml(request, pathname);
 }

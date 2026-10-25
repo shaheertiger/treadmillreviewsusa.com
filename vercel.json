@@ -3,19 +3,6 @@
   "trailingSlash": true,
   "headers": [
     {
-      "source": "/((?!api/)(?!.*\\.md$).*)",
-      "headers": [
-        {
-          "key": "Link",
-          "value": "</llms.txt>; rel=\"describedby\"; type=\"text/plain\", </llms-full.txt>; rel=\"describedby\"; type=\"text/plain\", </ai.txt>; rel=\"describedby\"; type=\"text/plain\""
-        },
-        {
-          "key": "Vary",
-          "value": "Accept"
-        }
-      ]
-    },
-    {
       "source": "/(.*)\\.md",
       "headers": [
         {
@@ -29,6 +16,18 @@
         {
           "key": "Access-Control-Allow-Origin",
           "value": "*"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-AEO-Version",
+          "value": "1.0"
+        },
+        {
+          "key": "Vary",
+          "value": "Accept"
         }
       ]
     },
