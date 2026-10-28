@@ -1,0 +1,634 @@
+export default {
+  slug: 'black-friday-elliptical-deals',
+  title: 'Black Friday Elliptical Deals 2026: 6 Worth Watching',
+  description:
+    'Six ellipticals sold on Amazon to watch this Black Friday, with the prices we saw on October 28, 2026, a target price for each and the specs to check first.',
+  crumbLabel: 'Black Friday Elliptical Deals',
+  breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
+  kicker: 'Black Friday 2026',
+  updated: 'October 2026',
+  updatedLong: 'October 28, 2026',
+  published: '2026-10-28',
+  socialProof: '1.8k',
+  h1: ['Black Friday', 'Elliptical Deals 2026'],
+  standfirst:
+    'Black Friday 2026 prices have not been published yet. What we can give you now is a shortlist of six ellipticals sold on Amazon, what each was selling for on October 28, the price we would wait for, and the three specifications to check before any discount gets your attention.',
+  ctas: [
+    { label: 'See the Six Picks', href: '#picks' },
+    { label: 'Check the Stride First', href: '#stride-first' },
+  ],
+  tags: ['black friday elliptical deals', 'elliptical black friday 2026', 'elliptical sale', 'cyber monday elliptical deals', 'sole e35 black friday', 'schwinn 411 deal', 'teeter freestep sale'],
+  stickyCta: { text: 'See the Six Picks', link: '#picks' },
+  note: `<strong class="text-gray-900">On the prices and products below.</strong> We have not tested
+          these machines, and no figure on this page is our own measurement. On 28 October 2026 we
+          checked each maker's own US store page — SOLE for the E35 and E25, Schwinn for the 411 and
+          490, and Teeter for the FreeStep range — for the current price, any list or "was" price,
+          sale messaging and published weights. Amazon's own pages did not show prices to our checking
+          tools that day, so Amazon prices quoted here are the ones our earlier elliptical guides
+          recorded on 16 and 19 October 2026, and are labelled with their dates; the Cubii Move price
+          is the one Garage Gym Reviews gave in its June 2026 roundup, because Cubii's site publishes
+          none. Specification lines carry only figures that our existing roundups had already
+          cross-checked between the maker or Amazon listing and at least one independent source;
+          where sources conflicted, the figure is left off the card and the conflict is explained.
+          The "good Black Friday price" for each machine is our judgement of a price worth acting
+          on, not a prediction of what any retailer will charge. Prices change often, sometimes
+          daily, and Black Friday 2026 prices had not been published when this was written. We earn
+          a commission if you buy through the Amazon links on this page; it does not change which
+          products we list or what we say about them.
+          <br><br>
+          <strong class="text-gray-900">What this page is, and is not.</strong> We review exercise
+          equipment. Nothing here is medical or physiotherapy advice. If you are buying an
+          elliptical because of a joint, heart or balance condition, or after an injury or surgery,
+          ask your doctor or physiotherapist which machine suits you before you buy.`,
+  lead: `Ellipticals are one of the categories where Black Friday can genuinely save you money,
+          and also one where a good-looking discount can hide a machine you will not enjoy using.
+          A short stride, a vague flywheel claim or a 230 lb freight box with expensive delivery
+          will cost you more than any percentage saves. So this page does the groundwork early: six
+          machines worth watching across full-size, compact, recumbent and under-desk types, the
+          prices we could actually confirm on October 28, and what a real deal on each would look
+          like.`,
+  sections: [
+    {
+      id: 'quick-picks',
+      heading: 'The Six at a Glance',
+      html: `          <p>
+            These are the six ellipticals we would watch on Amazon this November, chosen from the
+            machines our existing
+            <a href="/best-elliptical-machines-for-home/" class="text-[#0F62FE] font-medium">best home elliptical</a>
+            guides had already checked. The price column is what we saw on the date given; the last
+            column is the price at which we think each one becomes a genuinely good buy. That last
+            figure is our judgement from the prices we have seen, not a forecast.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[600px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Pick</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Type</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Price we saw</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Good Black Friday price (our view)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">SOLE E35</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Full-size, front drive, 20 in. stride</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,699.99 (SOLE, Oct 28; Amazon, Oct 16)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,599 or less</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">SOLE E25</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Full-size, front drive, 20 in. stride</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,199.99 (SOLE, Oct 28)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,099 or less</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Schwinn 490</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Compact frame, 20 in. stride, incline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,499 (Schwinn, Oct 28)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,399 or less</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Schwinn 411</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Compact, 18 in. stride</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$699 (Schwinn, Oct 28; Amazon, Oct 16)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$599 or less</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Teeter FreeStep LT7</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Recumbent (seated) cross trainer</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,249 (Teeter, Oct 28); $1,249.99 (Amazon, early Oct)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,149 or less</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Cubii Move</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Under-desk, seated</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $200 (Garage Gym Reviews, June 2026)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $150 or less</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            If you only read one thing before the sales start, read the section on
+            <a href="#stride-first" class="text-[#0F62FE] font-medium">stride length</a>. It is the
+            specification that most often separates a machine people use from one that becomes a
+            clothes rail, and it is the one cheap Black Friday listings are least keen to put in the
+            title. For the general method of judging any fitness-equipment discount — price history,
+            reference prices, bundles and delivered cost — our
+            <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">guide to judging Black Friday deals</a>
+            applies to ellipticals just as well as treadmills.
+          </p>`,
+    },
+    {
+      id: 'picks',
+      heading: 'The 6 Ellipticals Worth Watching',
+      products: true,
+      html: `          <p>
+            Two full-size front-drive machines from SOLE, two compact Schwinn models, one seated
+            cross trainer and one <a href="/best-under-desk-ellipticals/" class="text-[#0F62FE] font-medium" data-autolink>under-desk elliptical</a>. Every one is sold on Amazon, either by the
+            maker's own storefront or as a listing our earlier guides matched, and every one except
+            the Cubii, whose maker publishes no price, was listed on its maker's store when we checked
+            on October 28. The two Schwinn buttons go straight to
+            the Amazon listing we verified; the others are Amazon searches, so check that the seller
+            is the brand or Amazon itself before you order.
+          </p>`,
+    },
+    {
+      id: 'stride-first',
+      heading: 'Check the Stride Before You Check the Discount',
+      html: `          <p>
+            Stride length is the distance the pedals travel from front to back. It decides whether
+            an elliptical feels like walking or like shuffling on the spot, and it is fixed for life
+            on almost every machine at these prices: no setting, accessory or firmware update will
+            lengthen it. That makes it the first figure to check on any deal, before price, before
+            the number of resistance levels and before the screen.
+          </p>
+          <p>
+            <strong>The rough guide.</strong> There is no industry standard linking stride to height,
+            but the rule of thumb repeated by retailers and reviewers runs like this: 18 inches suits
+            most users of average height and below, 20 inches suits most adults including many taller
+            ones, and users over about six feet often prefer 21 inches or more. Our
+            <a href="/best-elliptical-machines-for-home/#stride-length" class="text-[#0F62FE] font-medium">stride length guide</a>
+            explains the reasoning. If you do not know who will use the machine, or if several people
+            will, 20 inches is the safe figure, and three of the six machines here have it.
+          </p>
+          <p>
+            <strong>Why it matters more in a sale.</strong> The cheapest ellipticals on Amazon tend
+            to cut stride first, because a shorter stride means a shorter, lighter frame and a smaller
+            box. When our compact elliptical guide checked the budget end of the market, it found a
+            popular Amazon machine with a 15.5-inch stride, and another whose stride was given as 18
+            inches by one source and 15 inches by another. Neither figure appears in the listing
+            title, which is where the discount is. A machine at half the price of a SOLE is no bargain
+            if its stride is three or four inches shorter than your legs want.
+          </p>
+          <p>
+            <strong>How to check it on a listing.</strong> Look for the stride in the specification
+            table or the product description, not the title. If it is missing, check the maker's own
+            product page or the owner's manual; a maker that does not publish stride at all is
+            telling you something. Be wary of a figure given only in centimetres on one page and
+            inches on another, and of listings where one model name covers several versions: Niceday,
+            for example, sells an 18-inch version of a machine that is otherwise 15.5 inches, so the
+            model number on the listing matters. Seated machines are different — the Teeter and the
+            Cubii here use a stepping or pedalling motion rather than a standing stride — so for
+            those, check the seat adjustment and user height range instead.
+          </p>
+          <p>
+            <strong>Then check the ceiling.</strong> Stride's companion figure is pedal height. At the
+            top of the stride your head sits at your height plus the pedal height, and a machine with
+            an incline ramp lifts the pedals further. Schwinn is one of the few makers that publishes
+            this as a minimum ceiling height: your height plus 17 inches on the 411, and your height
+            plus 28.3 inches on the 490. On the 490's figure a six-foot user needs about 100 inches,
+            more than a standard eight-foot ceiling, before any headroom. A deal on a machine that
+            will not fit in your room is not a deal.
+          </p>`,
+    },
+    {
+      id: 'flywheel-resistance',
+      heading: 'Flywheel and Resistance Claims in Sale Listings',
+      html: `          <p>
+            After stride, the specifications sale listings like to lead with are flywheel weight
+            and the number of resistance levels. Both are useful, and both are easy to overread.
+          </p>
+          <p>
+            <strong>Flywheel weight is not standardised.</strong> A heavier flywheel generally carries
+            momentum better through the weak points of each stride, which is why makers quote it. But
+            no rule says what the figure includes: some makers appear to quote the flywheel alone,
+            others the whole rotating assembly, and few say which. Design matters as much as mass. We
+            print a flywheel figure only where the maker and an independent source agree — 25 lb on
+            the SOLE E35 and 20 lb on the E25 — and our main elliptical guide left out the figure for
+            one well-known budget machine because the maker's own page gave two different numbers.
+            Treat a large flywheel figure on an unfamiliar brand as a claim to check, not a reason to
+            buy, and be particularly sceptical of a big number on a light, short machine.
+          </p>
+          <p>
+            <strong>Resistance levels are not comparable between brands.</strong> The Schwinn 411 has
+            16 levels, the Schwinn 490 has 25, the SOLE machines 20, the Teeter LT7 20 and the Cubii
+            Move six. Those numbers describe how finely each maker slices its range, not how hard the
+            hardest setting is or how easy the easiest one is. Two machines with 16 levels can feel
+            completely different at level 16. The useful questions are whether the bottom of the range
+            is gentle enough for warming up, whether the top is hard enough to keep you interested in
+            a year, and whether the steps between levels are small enough to progress smoothly.
+            Independent reviews answer those; level counts do not.
+          </p>
+          <p>
+            <strong>Magnetic resistance is the norm.</strong> Every machine on this page uses magnetic
+            or electronically controlled resistance, which is quiet and needs no adjustment as it
+            wears. That is now standard at every price above the very cheapest, so a listing that
+            makes a headline of "magnetic resistance" is describing the baseline, not an upgrade.
+            Motorised incline is a genuine extra — the E35, E25 and Schwinn 490 have it — but it adds
+            weight, height and one more motor to look after.
+          </p>
+          <p>
+            <strong>Watch for listings that borrow from sibling models.</strong> Our <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> and
+            treadmill checks repeatedly found Amazon titles quoting the figures of a more expensive
+            sibling, and elliptical listings do the same: our recumbent guide found an Amazon listing
+            for Teeter's entry FreeStep LT1 giving the 350 lb capacity of the top LT7, where Teeter
+            and a dealer both say 300 lb. Old versions linger too — our seniors guide found the SOLE
+            E25 described with a 4-inch LED console on SOLE's own page and a 7.5-inch LCD in an older
+            listing. During a sale, compare the photos and the model number with the maker's current
+            page.
+          </p>`,
+    },
+    {
+      id: 'discounts',
+      heading: 'What Elliptical Discounts Actually Look Like',
+      html: `          <p>
+            The pattern we saw on October 28, a month before Black Friday, is worth knowing, because
+            it changes what counts as a deal in November. All three makers we checked were already
+            running a sale.
+          </p>
+          <ul>
+            <li><strong>SOLE</strong> was running a "Fall Sale", with $100 off both the E35 (to
+            $1,699.99 from $1,799.99) and the E25 (to $1,199.99 from $1,299.99). Our earlier guides
+            recorded the same $1,699.99 for the E35 on both SOLE's store and Amazon on October 16,
+            and $1,199.99 for the E25 on October 19.</li>
+            <li><strong>Schwinn</strong> showed the 490 at $1,499 against $1,699, labelled "$200 off,
+            ends 11/1". Our guides had recorded the same $1,499 on October 16 and 19, so for at least
+            two weeks this has been the normal selling price. The 411 was $699 with no higher
+            reference price shown.</li>
+            <li><strong>Teeter</strong> was running a "Cardio Sales Event": the FreeStep LT7 at $1,249
+            from $1,499 and the LT1 at $689 from $799. The LT3, the middle model, was shown at $999 and
+            out of stock on Teeter's store.</li>
+          </ul>
+          <p>
+            The lesson is that the "was" price on these machines is often not the price people pay.
+            When the E35 sells at $1,699.99 for weeks, a Black Friday banner reading "save $100" from
+            $1,799.99 is not a Black Friday deal at all; it is the October price with a new label.
+            Measure every November offer against what the machine was selling for in late October,
+            which is why we have recorded those prices here with their dates. Our
+            <a href="/treadmill-black-friday-deals/#judge-the-price" class="text-[#0F62FE] font-medium">method page</a>
+            explains how to do that with price history and same-day comparisons across retailers.
+          </p>
+          <p>
+            <strong>How big is a real discount?</strong> We have not found a published dataset of
+            elliptical prices to give you a reliable average, so treat this as our judgement. On the
+            evidence above, the established brands were running standing reductions of $100 to $250
+            through the second half of October at least. A Black Friday price meaningfully below the late-October price — a
+            further $100 to $200 on a $1,200 to $1,700 machine — is a good result. Large percentage
+            claims on unfamiliar brands, measured from reference prices the machine has rarely sold
+            at, deserve the most scepticism.
+          </p>
+          <p>
+            <strong>Bundles and free extras.</strong> Elliptical sales often add a mat, a heart-rate
+            strap, an extended warranty or an app trial instead of cutting the price. Value those at
+            what you would actually pay for them, which for an app trial you would cancel is nothing.
+            An extended warranty is worth more on a machine with short labour cover — Schwinn lists
+            90 days of labour on the 411 — than on one with a long manufacturer warranty already.
+          </p>`,
+    },
+    {
+      id: 'freight',
+      heading: 'Freight Weight and the Delivered Price',
+      html: `          <p>
+            A full-size elliptical is one of the heaviest things most people order online, and the
+            delivery terms can change the real price by more than the Black Friday discount. Compare
+            delivered prices, not sticker prices.
+          </p>
+          <p>
+            <strong>How heavy is the box?</strong> On October 28 SOLE's product pages gave a gross
+            weight of 239 for the E35 and 231 for the E25, against unit weights of 220 and 209 (SOLE's
+            pages state no unit, but the E25's 209 matches the 209 lb in Garage Gym Reviews' review).
+            Schwinn gives the 490 as 187 lb assembled and the 411 as 100 lb. Teeter ships the LT7 in
+            two boxes, of 146.6 lb and 37.5 lb by its own figures. The Cubii Move, at 17.6 lb by
+            Garage Gym Reviews' figure, is an ordinary parcel. Anything over about 150 lb usually
+            travels by freight, and a 230 lb carton does not go up a flight of stairs without at least
+            two people and a plan.
+          </p>
+          <p>
+            <strong>What delivery costs.</strong> Shipping terms vary by seller, and they are part of
+            the deal. Schwinn's own store, for example, listed the 411 on October 28 with FedEx parcel
+            delivery at $199 or White Glove delivery — room of choice up one flight of stairs, with
+            assembly — at $349. On a $699 machine, that turns the delivered price into $898 or $1,048.
+            Check what SOLE's own store charges for room-of-choice delivery and assembly before
+            comparing it with another seller. On Amazon, "free
+            delivery" on a freight item frequently means kerbside or the first dry area inside the
+            door, and what you get depends on the listing. A Black Friday price that includes free
+            delivery to the room you want may beat a lower sticker price that does not.
+          </p>
+          <p>
+            <strong>Assembly.</strong> Expect an hour or two for a full-size machine and more if you
+            have not built one before; our seniors guide noted a Garage Gym Reviews tester taking two
+            frustrating hours over the SOLE E25. If you would rather pay for assembly, add it to the
+            price before you compare.
+          </p>
+          <p>
+            <strong>Returns.</strong> Return windows matter more on a freight item, because a return
+            means repacking a heavy machine and arranging collection. Teeter's page offered a 90-day
+            trial on the FreeStep, with October purchases eligible for returns through January 31.
+            Our earlier check of Schwinn's store found a 30-day return window less shipping and
+            handling on the 411. Read the terms on the exact listing, keep the packaging until you are
+            sure, and see our
+            <a href="/treadmill-delivery-guide/" class="text-[#0F62FE] font-medium">delivery guide</a>
+            for what kerbside, threshold and white-glove service actually include.
+          </p>`,
+    },
+    {
+      id: 'elliptical-or-treadmill',
+      heading: 'Elliptical or Treadmill: The Equipment Facts',
+      html: `          <p>
+            Many people shopping elliptical deals are also looking at treadmills, often because
+            they have heard an elliptical is easier on the joints. We are not the right people to
+            tell you what suits your knees or hips — that is a question for your doctor or
+            physiotherapist — but the mechanical differences are clear, and they are worth knowing
+            before Black Friday pushes you one way or the other.
+          </p>
+          <p>
+            <strong>Contact with the machine.</strong> On an elliptical your feet stay on the pedals
+            for the whole stride and follow a fixed path set by the machine's linkage. On a treadmill
+            you walk or run on a moving belt, so each step lands and pushes off as it would on the
+            ground, on a deck that most makers cushion to some degree. Seated machines such as the
+            <a href="/best-recumbent-ellipticals/" class="text-[#0F62FE] font-medium" data-autolink>Teeter FreeStep</a> remove standing altogether. Those are differences in how the equipment
+            moves, not promises about how your body will respond, and some people find a fixed
+            elliptical path suits them less well than walking. Our
+            <a href="/treadmill-vs-elliptical/" class="text-[#0F62FE] font-medium">treadmill vs elliptical comparison</a>
+            sets the two side by side.
+          </p>
+          <p>
+            <strong>Space.</strong> An elliptical usually has a shorter footprint than a running
+            treadmill and does not need the clear zone behind the deck that treadmill makers ask for.
+            It does need more height, because you stand on pedals that rise as they travel. A compact
+            machine such as the Schwinn 411, at 53.8 inches long, fits rooms where a full treadmill
+            will not, as long as the ceiling allows.
+          </p>
+          <p>
+            <strong>Noise and power.</strong> A magnetic elliptical has no motor running the belt and
+            no feet striking a deck, so it is usually the quieter of the two for a flat or an upstairs
+            room. The incline machines need a mains outlet for the ramp motor; a seated under-desk
+            unit such as the Cubii Move is the simplest of all to run.
+          </p>
+          <p>
+            <strong>Calories on the console.</strong> Both machines show calorie estimates, and both
+            are estimates from formulas, not measurements. Our
+            <a href="/elliptical-vs-treadmill-calories/" class="text-[#0F62FE] font-medium">elliptical vs treadmill calories</a>
+            guide explains why the numbers differ between machines and why comparing them across
+            brands tells you little. If you are still deciding between the two, our
+            <a href="/black-friday-treadmill-deals-2026/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals for 2026</a>
+            page covers the treadmill side of the same sales.
+          </p>`,
+    },
+    {
+      id: 'timeline',
+      heading: 'When the 2026 Elliptical Deals Start',
+      html: `          <p>
+            Thanksgiving falls on Thursday, November 26, 2026, which puts Black Friday on November 27
+            and <a href="/cyber-monday-treadmill-deals/" class="text-[#0F62FE] font-medium" data-autolink>Cyber Monday</a> on November 30. Here is how the weeks around those dates typically play
+            out for fitness equipment. None of the dates below except those three have been announced
+            for 2026; they are the usual pattern.
+          </p>
+          <ul>
+            <li><strong>Now to early November: autumn sales.</strong> As the previous section showed,
+            SOLE, Schwinn and Teeter were already discounting on October 28, and Schwinn's offer was
+            labelled as ending on November 1. Use these weeks to record prices and settle on two or
+            three acceptable machines.</li>
+            <li><strong>The week before Thanksgiving: early Black Friday.</strong> Amazon's Black Friday
+            event typically starts the week before Thanksgiving, and brand stores often launch their
+            own Black Friday pricing around the same time. If a shortlisted machine hits your target
+            then, there is usually little to gain from waiting.</li>
+            <li><strong>Thanksgiving to Cyber Monday: the main window.</strong> Prices typically settle
+            at their lowest across these five days. Stock of the most popular models can run short,
+            particularly on maker stores, so a lower price later is not guaranteed.</li>
+            <li><strong>After Cyber Monday.</strong> Some offers run into early December, and
+            January brings its own fitness sales. If none of your machines reaches a price you are
+            happy with, waiting is a perfectly good outcome.</li>
+          </ul>
+          <p>
+            One practical point for freight items: delivery lead times stretch in late November.
+            Schwinn's store quoted shipping within five days on October 28, and our earlier check
+            found a long Amazon delivery estimate on the 411. If you want the machine by a particular
+            date, check the delivery estimate before you buy, not after.
+          </p>
+          <p>
+            Planning a bigger setup? Our
+            <a href="/black-friday-home-gym-deals/" class="text-[#0F62FE] font-medium">Black Friday home gym deals</a>
+            page covers strength equipment, and the
+            <a href="/black-friday-exercise-bike-deals/" class="text-[#0F62FE] font-medium">Black Friday exercise bike deals</a>
+            page covers the other seated cardio option if a recumbent bike suits you better than a
+            cross trainer.
+          </p>`,
+    },
+    {
+      id: 'how-we-chose',
+      heading: 'How We Chose These Six',
+      html: `          <p>
+            We have not tested any of these machines. The six were drawn from the products in our
+            existing elliptical guides — the main home elliptical guide and the compact, recumbent,
+            under-desk and seniors guides — whose figures had already been cross-checked between the
+            maker or the Amazon listing and at least one independent source. From those, we kept
+            machines that met four conditions.
+          </p>
+          <p>
+            <strong>Sold on Amazon US.</strong> Each is listed on Amazon by its maker or matched to a
+            verified Amazon listing. That ruled out several strong machines: the Horizon EX-59 and SOLE
+            E95S, which our guides did not find sold new on Amazon, and the NordicTrack X16, which is
+            sold through NordicTrack.
+          </p>
+          <p>
+            <strong>Currently sold by the maker.</strong> We checked the maker's own US store on
+            October 28 for every machine where the maker publishes a price. The Teeter LT3, which
+            appears in two of our guides, was out of stock on Teeter's store that day, so we have
+            listed the LT7 instead and mention the LT3 in the card.
+          </p>
+          <p>
+            <strong>A sensible stride or a seated design.</strong> Every standing machine here has an
+            18- or 20-inch stride. We left out budget machines whose stride was short or disputed,
+            even though they are likely to carry the largest headline discounts.
+          </p>
+          <p>
+            <strong>A spread of types.</strong> Two full-size machines, two compact ones, one seated
+            cross trainer and one under-desk unit, so that whatever kind of elliptical you are looking
+            for, there is at least one machine with a known price to measure a deal against.
+          </p>`,
+    },
+  ],
+  products: [
+    {
+      id: 'sole-e35',
+      name: 'SOLE E35',
+      category: 'Best Full-Size Elliptical to Watch',
+      badge: 'Best Full-Size',
+      amazonUrl: 'https://www.amazon.com/s?k=SOLE+E35+Elliptical&tag=sktiger-20',
+      priceRange: 'About $1,700',
+      specs: '20 in. stride · 25 lb flywheel · 350 lb capacity · 20-level power incline · front drive · 70 x 31 x 70 in. · lifetime frame warranty',
+      pros: [
+        'A 20-inch stride, 25 lb flywheel and 350 lb capacity, all agreed between SOLE, its Amazon listing and independent reviews',
+        'Power incline and cushioned, articulating pedals that adjust to three positions',
+        'No membership needed; the 10.1-inch touchscreen runs SOLE’s free app and preloaded streaming apps',
+        'SOLE’s own store and Amazon had the same price when our main guide checked, so comparing is easy',
+      ],
+      cons: [
+        'SOLE gave a gross weight of 239 on October 28, so expect freight delivery and plan for help or paid assembly',
+        'A full-size footprint that needs a dedicated spot',
+        'The $1,799.99 list price is not what it usually sells for; measure deals from $1,699.99',
+      ],
+      bottomLine:
+        'The full-size elliptical to watch if you want one machine that suits most adults; we would act at $1,599 or less.',
+      description: `The E35 is the safe full-size recommendation in our main elliptical guide because it gets the fundamentals right. SOLE lists a 20-inch stride, a 25 lb flywheel, 20 levels of magnetic resistance, a 20-level power incline and a 350 lb user capacity, and its Amazon listing and independent reviews agree on each. It is a front-drive machine with a lifetime frame warranty, 70 by 31 by 70 inches by SOLE's figures and an independent review. <strong>Price we saw:</strong> on October 28 SOLE's store had it at $1,699.99 against $1,799.99 in a "Fall Sale", and our main guide recorded the same $1,699.99 on both SOLE's store and Amazon on October 16. One of SOLE's own comparison articles quotes it at $1,599.99, but the article is undated, so we cannot say when that was. <strong>Good Black Friday price, in our view:</strong> $1,599 or less; under $1,550 would be a strong price. SOLE's page gives a unit weight of 220 and a gross weight of 239, without stating the unit, so allow for freight delivery.`,
+    },
+    {
+      id: 'sole-e25',
+      name: 'SOLE E25 Elliptical',
+      category: 'Best Value Full-Size Elliptical to Watch',
+      badge: 'Best Value',
+      amazonUrl: 'https://www.amazon.com/s?k=SOLE+E25+Elliptical&tag=sktiger-20',
+      priceRange: 'About $1,200',
+      specs: '20 in. stride · 20 lb flywheel · 350 lb max user · 20 resistance and 20 power-incline levels · 70 x 24 x 70 in. · lifetime frame, 2-yr parts, 1-yr labor warranty',
+      pros: [
+        'The same 20-inch stride and 350 lb capacity as the E35 for about $500 less',
+        'Power incline, handlebar controls for resistance and incline, and pedals that run forwards and backwards',
+        'Lifetime frame and flywheel warranty, with two years on parts',
+        'Sold through SOLE’s own Amazon store, so the seller is the maker',
+      ],
+      cons: [
+        'SOLE does not describe its pedals as cushioned or articulating, the main thing the E35 adds',
+        'SOLE lists a 4-inch LED console while older listings show a 7.5-inch LCD from an earlier version; check the photos',
+        'A gross weight of 231 by SOLE’s figure, so freight delivery and a two-person carry',
+      ],
+      bottomLine:
+        'The cheapest way into a full-size 20-inch-stride SOLE; we would act at $1,099 or less.',
+      description: `The E25 is SOLE's mid-priced front-drive elliptical and the one our seniors guide picked for its simplicity. SOLE and Garage Gym Reviews agree on a 20-inch stride, a 20 lb flywheel, 20 levels of resistance and 20 of power incline, a 350 lb capacity, a 70 by 24 by 70-inch size and a warranty of lifetime on the frame and flywheel, two years on parts and one on labour; the SOLE listing on Amazon agrees on the stride, flywheel and capacity. There is a cooling fan, Bluetooth speaker, tablet holder and USB-C port. The display is the figure to check: SOLE's current page describes a 4-inch white LED console, while an older listing shows a 7.5-inch LCD from an earlier version. <strong>Price we saw:</strong> $1,199.99 against $1,299.99 on SOLE's store on October 28, in the same Fall Sale as the E35, and $1,199.99 on October 19. SOLE's page gives a unit weight of 209 lb and a gross weight of 231. <strong>Good Black Friday price, in our view:</strong> $1,099 or less; anything that only matches $1,199.99 is the October price relabelled.`,
+    },
+    {
+      id: 'schwinn-490',
+      name: 'Schwinn 490 Elliptical',
+      category: 'Best Compact Elliptical With Incline to Watch',
+      badge: 'Best With Incline',
+      amazonUrl: 'https://www.amazon.com/s?k=Schwinn+490+Elliptical&tag=sktiger-20',
+      priceRange: 'About $1,499',
+      specs: '20 in. stride · −5% to 15% motorized incline and decline · 25 resistance levels · 58.1 in. long · full FTMS Bluetooth · min. ceiling: user height + 28.3 in. (Schwinn)',
+      pros: [
+        'A full-size 20-inch stride on a frame about 58 inches long',
+        'Motorized ramp from a 5% decline to a 15% incline',
+        'Full FTMS Bluetooth by Schwinn’s description, so it works with apps beyond Schwinn’s own',
+        'Matched to a verified Amazon listing, so the button goes straight to it',
+      ],
+      cons: [
+        'Needs your height plus 28.3 inches of ceiling by Schwinn’s figure, more than a standard 8 ft room for a 6 ft user',
+        'Capacity is disputed: Schwinn says 330 lb, a dealer listing said 300 lb, so assume the lower figure',
+        'JRNY is a paid membership after the trial; the machine works without it',
+      ],
+      bottomLine:
+        'The compact machine to watch if you want incline and a 20-inch stride in a short frame, and have the ceiling for it; we would act at $1,399 or less.',
+      description: `The 490 is the compromise machine in our compact elliptical guide: nearly a full-size stride in a much shorter frame, with a motorized ramp. Schwinn lists a 20-inch stride, 25 levels of magnetic resistance and an incline from a 5% decline to a 15% incline, and an independent review and a second retailer agreed when our main guide checked them. Schwinn gives 58.1 by 33.9 by 68 inches and 187 lb. The catch is height: Schwinn's minimum ceiling height is your height plus 28.3 inches, because the ramp lifts the pedals, so measure before you buy. Capacity is unresolved — Schwinn's page said 330 lb again on October 28, while a dealer listing under the same name said 300 lb. <strong>Price we saw:</strong> $1,499 against $1,699 on Schwinn's store on October 28, labelled "$200 off, ends 11/1"; our guides recorded the same $1,499 on October 16 and 19. We could not read the Amazon price. <strong>Good Black Friday price, in our view:</strong> $1,399 or less, since $1,499 has been the going price for weeks.`,
+    },
+    {
+      id: 'schwinn-411',
+      name: 'Schwinn 411 Compact Elliptical',
+      category: 'Best Small-Space Elliptical to Watch',
+      badge: 'Best Compact',
+      amazonUrl: 'https://www.amazon.com/s?k=Schwinn+411+Compact+Elliptical&tag=sktiger-20',
+      priceRange: 'About $699',
+      specs: '18 in. stride · 300 lb capacity · 16 resistance levels · 53.8 x 24 x 62.5 in. · no incline · min. ceiling: user height + 17 in. (Schwinn)',
+      pros: [
+        'About 16 inches shorter than the SOLE E35, for rooms where a full-size machine will not fit',
+        'Schwinn publishes the ceiling height you need — your height plus 17 inches',
+        '100 lb assembled, light enough to move on its transport wheels',
+        'Matched to a verified Amazon listing, so the button goes straight to it',
+      ],
+      cons: [
+        'An 18-inch stride suits average-height users better than tall ones',
+        'No incline, and only 90 days of labour cover by Schwinn’s warranty terms',
+        'Schwinn’s own store charged $199 for parcel delivery or $349 for White Glove on October 28',
+      ],
+      bottomLine:
+        'The small-space elliptical to watch for users of average height; we would act at $599 or less, once you have checked the delivery charge.',
+      description: `The 411 exists to solve one problem: space. Schwinn's specification gives 53.8 by 24 by 62.5 inches, an 18-inch stride, 16 levels of magnetic resistance and a 300 lb user capacity, and an independent review and the Amazon listing agreed when our main guide checked them. Its minimum ceiling height of your height plus 17 inches is unusually easy to plan around. Schwinn lists 10 years on the frame, two on mechanical parts, one on electronics and 90 days of labour. <strong>Price we saw:</strong> $699 on Schwinn's store on October 28, with no higher reference price shown, and $699 against a $799 list price on Amazon on October 16. A fitness deals site has reported a $100 cut on it at Walmart in an earlier sale, so it has sold below $699 before. Delivery is the hidden cost: Schwinn's store listed FedEx parcel delivery at $199 and White Glove at $349, so compare delivered prices. <strong>Good Black Friday price, in our view:</strong> $599 or less before delivery; free or cheap delivery makes it better still.`,
+    },
+    {
+      id: 'teeter-freestep-lt7',
+      name: 'Teeter FreeStep LT7 Recumbent Cross Trainer',
+      category: 'Best Seated Cross Trainer to Watch',
+      badge: 'Best Recumbent',
+      amazonUrl: 'https://www.amazon.com/s?k=Teeter+FreeStep+LT7+Recumbent+Cross+Trainer&tag=sktiger-20',
+      priceRange: 'About $1,249',
+      specs: '20 magnetic resistance levels · 350 lb max user · 59 x 32.7 x 54.8 in. · 150 lb unit weight · 9 in. color LCD, 21 programs · Step Lock for entry and exit',
+      pros: [
+        'A seated, linear stepping motion with linked arm handles, for people who would rather not stand',
+        'Step Lock holds the pedals and handles still while you get in and out',
+        '350 lb capacity, agreed between Teeter, a dealer and Costco’s listing',
+        'A 90-day trial on Teeter’s store, with October purchases returnable through January 31',
+      ],
+      cons: [
+        'Two boxes of 146.6 lb and 37.5 lb by Teeter’s figures',
+        'Teeter publishes two different resistance ranges in pounds, so we have not used either',
+        'Already $250 below its list price in October, so a further Black Friday cut may be modest',
+      ],
+      bottomLine:
+        'The seated cross trainer to watch if standing on an elliptical does not suit you; we would act at $1,149 or less.',
+      description: `The LT7 is the newest and most complete of Teeter's FreeStep recumbent cross trainers: you sit in a reclining seat and push the pedals forward in a linear stepping motion while the linked handles push and pull. Teeter and Northern Fitness, a dealer, agree on 20 levels of magnetic resistance, a 350 lb capacity, a user height range of 4 ft 11 in. to 6 ft 6 in., a weight of about 150 lb and dimensions of 59.0 by 32.7 by 54.8 inches, and Costco's listing agrees on the capacity and 21 programs. Teeter lists a three-year structural and two-year mechanical and electrical warranty. <strong>Price we saw:</strong> $1,249 against $1,499 on Teeter's store on October 28, in a "Cardio Sales Event"; our recumbent guide noted an Amazon listing at $1,249.99 in early October. <strong>Good Black Friday price, in our view:</strong> $1,149 or less. We chose the LT7 over the cheaper LT3 because the LT3 was out of stock on Teeter's store on October 28, at $999; if it returns, $849 or less would be a good price on it. The entry LT1 was $689 against $799.`,
+    },
+    {
+      id: 'cubii-move',
+      name: 'Cubii Move Under-Desk Elliptical',
+      category: 'Best Under-Desk Elliptical to Watch',
+      badge: 'Best Under-Desk',
+      amazonUrl: 'https://www.amazon.com/s?k=Cubii+Move+Under+Desk+Elliptical&tag=sktiger-20',
+      priceRange: 'About $200',
+      specs: 'Seated elliptical, 6 resistance levels · LCD shows strides, distance, time and calories · sold through Cubii’s Amazon store',
+      pros: [
+        'A seated under-desk elliptical that Garage Gym Reviews names the best desk elliptical in its June 2026 roundup',
+        'An ordinary parcel at about 17.6 lb by Garage Gym Reviews’ figure, with no freight or assembly worries',
+        'Cubii sends buyers to its own Amazon listing, so the seller is the brand',
+        'Six resistance levels set with a simple knob on the front',
+      ],
+      cons: [
+        'Manual resistance only, with no handle and some wobble on carpet, per Garage Gym Reviews',
+        'No upper-body work; it is a leg mover for desk time, not a replacement for a full-size elliptical',
+        'Cubii publishes no price or specifications on its own site, so the figures rely on the listing and reviews',
+      ],
+      bottomLine:
+        'The under-desk elliptical to watch if you want to keep your legs moving while you work; we would act at about $150 or less.',
+      description: `The Move is Cubii's entry seated elliptical and the pick in our under-desk guide. Cubii and Garage Gym Reviews agree on six levels of resistance, set by a knob on the front, and a small LCD showing strides, distance, time and estimated calories. Garage Gym Reviews gives its size as 21.7 by 19.7 by 9.7 inches and its weight as 17.6 lb, reports a 250 lb user limit from Cubii and a one-year warranty with a second year added if you register within 90 days. It is a different kind of machine from the rest of this page: you sit at your desk and pedal in an elliptical path, so it does not need a stride check, but it does need a knee-clearance check under your desk. <strong>Price we saw:</strong> Cubii's own site carries no price, and Amazon's pages did not show prices to our checking tools on October 28, so the figure here is the roughly $200 Garage Gym Reviews gave in June 2026; check the listing. <strong>Good Black Friday price, in our view:</strong> about $150 or less. If you want wheels and a handle, Cubii's Go adds both, by Cubii's description.`,
+    },
+  ],
+  faqs: [
+    {
+      q: 'When do Black Friday elliptical deals start in 2026?',
+      a: `Black Friday is November 27, 2026 and Cyber Monday November 30. Amazon's Black Friday event typically starts the week before Thanksgiving, and brand stores often launch their own pricing around then. Several makers were already running autumn sales on October 28, so record current prices now and measure November offers against them.`,
+    },
+    {
+      q: 'What is a good Black Friday price for an elliptical?',
+      a: `One meaningfully below what the same machine sold for in late October, delivered. On the prices we saw, that means roughly $1,599 or less for a SOLE E35, $1,099 for an E25 and $599 for a Schwinn 411. Those are our judgements, not predictions. A discount measured from a list price the machine rarely sells at is not a real reduction.`,
+    },
+    {
+      q: 'What stride length should I look for on an elliptical deal?',
+      a: `As a rough guide, 18 inches suits most users of average height and below, 20 inches suits most adults, and users over about six feet often prefer 21 inches or more. If several people will use the machine, 20 inches is the safe choice. Check the stride in the specification table, not the title, before you look at the discount.`,
+    },
+    {
+      q: 'Is it better to buy an elliptical on Amazon or from the maker?',
+      a: `Either can be the better deal. On the machines we checked, SOLE's store and Amazon showed the same E35 price in October. Compare the delivered price, the delivery level, the return window and who the seller is. Buy on Amazon from the brand's storefront or Amazon itself, and check that the model number matches the maker's current page.`,
+    },
+    {
+      q: 'Does a heavier flywheel make an elliptical better?',
+      a: `A heavier flywheel generally carries momentum better through the stride, but the figure is not standardised: makers rarely say whether it is the flywheel alone or the whole rotating assembly. Use it as one clue alongside stride, build quality and independent reviews, and be sceptical of a large flywheel figure on a light, short machine.`,
+    },
+    {
+      q: 'Is an elliptical easier on the joints than a treadmill?',
+      a: `Mechanically, your feet stay on the pedals throughout an elliptical stride, while on a treadmill each step lands on the belt. How that affects your own joints is a question for your doctor or physiotherapist, not a deal page; some people find an elliptical's fixed path suits them less well than walking.`,
+    },
+  ],
+  mistakesHeading: 'Common Mistakes Buying an Elliptical on Black Friday',
+  mistakesIntro:
+    'Most of these happen in the few minutes between seeing a large percentage and pressing the buy button, which is why they are worth knowing in October.',
+  mistakes: [
+    {
+      title: 'Buying the discount instead of the stride',
+      body: 'The biggest percentage cuts tend to land on budget machines with short strides of around 15 inches. Stride is fixed for the life of the machine. Check it before the price, and if a listing does not state it, look for the figure on the maker’s page or in the manual before you buy.',
+    },
+    {
+      title: 'Measuring the saving from the list price',
+      body: 'On October 28 the SOLE E35 was already $100 below its list price and the Schwinn 490 $200 below. A Black Friday banner showing those same savings is the October price with a new label. Record what each machine sells for now, and measure November offers against that.',
+    },
+    {
+      title: 'Forgetting delivery and the ceiling',
+      body: 'A full-size elliptical ships in a box of over 200 lb, and delivery can add $199 to $349 on a maker’s store. At the top of the stride your head sits well above your standing height. Check the delivered price and the maker’s ceiling figure, or measure pedal height, before you order.',
+    },
+    {
+      title: 'Throwing the box away too early',
+      body: 'Return windows on ellipticals range from 30 days to Teeter’s 90-day trial, but almost all expect the machine back in its packaging. Keep the carton and packing material until you are sure, inspect the box before the driver leaves, and check the parts before you start building.',
+    },
+  ],
+  relatedHeading: 'Related Elliptical Guides',
+  related: [
+    {
+      kicker: 'Buying Guide',
+      title: 'Best Elliptical Machines for Home',
+      blurb: 'Six home ellipticals from $699 to $2,999, with stride, ceiling height and drive type explained.',
+      url: '/best-elliptical-machines-for-home/',
+    },
+    {
+      kicker: 'Small Spaces',
+      title: 'Best Compact Ellipticals',
+      blurb: 'Short-frame ellipticals and hybrids, and the stride and ceiling trade-offs that come with them.',
+      url: '/best-compact-ellipticals/',
+    },
+    {
+      kicker: 'Compare',
+      title: 'Treadmill vs Elliptical',
+      blurb: 'Impact, footprint, noise and long-term cost compared side by side.',
+      url: '/treadmill-vs-elliptical/',
+    },
+  ],
+  bottomLine: [
+    `For most households the elliptical to watch is the <strong class="text-white">SOLE E35</strong>:
+            a 20-inch stride, power incline and a 350 lb capacity, at $1,699.99 on October 28 and, in our
+            view, a good buy at $1,599 or less. If space is tight and you are of average height, the
+            <strong class="text-white">Schwinn 411</strong> at $599 or less, plus a delivery charge you have checked, is the small-room
+            alternative; if you would rather sit, watch the <strong class="text-white">Teeter FreeStep LT7</strong>.`,
+    `Whatever you choose, check the stride and the ceiling first, compare delivered prices rather
+            than sticker prices, and measure every Black Friday offer against the late-October prices
+            recorded here. Our
+            <a href="/treadmill-black-friday-deals/" class="text-[#5AA9FF] font-bold no-underline">guide to judging a Black Friday deal</a>
+            walks through the method, and the
+            <a href="/best-elliptical-machines-for-home/" class="text-[#5AA9FF] font-bold no-underline">best home elliptical guide</a>
+            covers fit and features in full.`,
+  ],
+};

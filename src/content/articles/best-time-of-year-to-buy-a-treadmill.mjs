@@ -303,7 +303,7 @@ export default {
       id: 'verdict',
       heading: 'Final Recommendations',
       html: `          <p>
-            <strong>Best windows:</strong> late November through Cyber Monday, weeks three and
+            <strong>Best windows:</strong> late November through <a href="/cyber-monday-treadmill-deals/" class="text-[#0F62FE] font-medium" data-autolink>Cyber Monday</a>, weeks three and
             four of January, and late spring into early summer. Any of the three is a good time to
             buy, and the differences between them are smaller than the difference between all of
             them and the worst window.

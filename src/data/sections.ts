@@ -756,6 +756,60 @@ export const SECTIONS: Section[] = [
           },
         ],
       },
+      {
+        name: 'Black Friday & Cyber Monday 2026',
+        pages: [
+          {
+            title: 'Black Friday Treadmill Deals 2026',
+            description:
+              'The treadmills worth watching this Black Friday in every tier, what each normally sells for, and the price we would wait for.',
+            badge: 'Start here',
+            url: '/black-friday-treadmill-deals-2026/',
+          },
+          {
+            title: 'Cyber Monday Treadmill Deals 2026',
+            description:
+              'What changes between Friday and Monday, Christmas delivery for freight boxes, and the machines to watch online.',
+            badge: 'Cyber Monday',
+            url: '/cyber-monday-treadmill-deals/',
+          },
+          {
+            title: 'Black Friday Walking Pad Deals 2026',
+            description:
+              'Walking pads are discounted all year, so price history matters most here. The pads worth watching and what to pay.',
+            badge: 'Walking pads',
+            url: '/black-friday-walking-pad-deals/',
+          },
+          {
+            title: 'Black Friday Treadmill Deals Under $500',
+            description:
+              'The budget tier gets the biggest badges and the most inflated list prices. What $500 really buys on sale.',
+            badge: 'Under $500',
+            url: '/black-friday-treadmill-deals-under-500/',
+          },
+          {
+            title: 'Black Friday Treadmill Deals Under $1,000',
+            description:
+              'The mid-range, where genuine reductions and model-year clearance usually land, and the running specs to check.',
+            badge: 'Under $1,000',
+            url: '/black-friday-treadmill-deals-under-1000/',
+          },
+          {
+            title: 'Black Friday Folding Treadmill Deals',
+            description:
+              'Folding treadmills worth watching for small spaces, with the folded size, weight and model checks to run first.',
+            badge: 'Folding',
+            url: '/black-friday-folding-treadmill-deals/',
+          },
+          {
+            title: 'NordicTrack Black Friday Deals 2026',
+            description:
+              'Which NordicTrack treadmills to watch, how to value a bundled iFIT membership, and Amazon versus buying direct.',
+            badge: 'NordicTrack',
+            url: '/nordictrack-black-friday-deals/',
+          },
+        ],
+      },
     ],
   },
   {
@@ -3492,6 +3546,32 @@ export const SECTIONS: Section[] = [
               'The specifications checked, the marketing claims read carefully, and who should ask a doctor first.',
             badge: 'Review',
             url: '/lifepro-waver-vibration-plate-review/',
+          },
+        ],
+      },
+      {
+        name: 'Black Friday 2026',
+        pages: [
+          {
+            title: 'Black Friday Home Gym Deals 2026',
+            description:
+              'One pick per category worth watching this Black Friday, which categories really get discounted, and the recalls to avoid.',
+            badge: 'Black Friday',
+            url: '/black-friday-home-gym-deals/',
+          },
+          {
+            title: 'Black Friday Elliptical Deals 2026',
+            description:
+              'Ellipticals worth watching across full-size, compact and seated designs, and the stride length to check before any deal.',
+            badge: 'Ellipticals',
+            url: '/black-friday-elliptical-deals/',
+          },
+          {
+            title: 'Black Friday Exercise Bike Deals 2026',
+            description:
+              'Spin, recumbent, air and folding bikes worth watching, and how to value a bundled subscription.',
+            badge: 'Bikes',
+            url: '/black-friday-exercise-bike-deals/',
           },
         ],
       },

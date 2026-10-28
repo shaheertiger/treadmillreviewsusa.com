@@ -1,0 +1,575 @@
+export default {
+  slug: 'nordictrack-black-friday-deals',
+  title: 'NordicTrack Black Friday Deals 2026: Which Treadmills to Watch',
+  description:
+    'Six NordicTrack treadmills, the prices we saw on 28 October 2026, a sensible Black Friday target for each, and the iFIT, delivery and model-number small print.',
+  crumbLabel: 'NordicTrack Black Friday Deals',
+  breadcrumb: { name: 'By Price', url: '/price/' },
+  kicker: 'Black Friday 2026',
+  updated: 'October 2026',
+  updatedLong: 'October 28, 2026',
+  published: '2026-10-28',
+  socialProof: '2.1k',
+  h1: ['NordicTrack', 'Black Friday Deals 2026'],
+  standfirst:
+    'NordicTrack has put up its "Black Friday starts early" banner, but the treadmill prices we had recorded two weeks earlier had not moved when we checked. Here are the six NordicTrack treadmills worth watching, what each was selling for on 28 October, and the price at which we would treat each one as a genuine Black Friday buy.',
+  ctas: [
+    { label: 'See the Six Treadmills', href: '#picks' },
+    { label: 'iFIT and the Deal', href: '#ifit-in-the-deal' },
+  ],
+  tags: [
+    'nordictrack black friday',
+    'nordictrack black friday deals',
+    'nordictrack commercial 1750 black friday',
+    'nordictrack treadmill black friday 2026',
+    'nordictrack commercial 1250 black friday',
+    'nordictrack t series black friday',
+  ],
+  stickyCta: { text: 'See the Six Treadmills', link: '#picks' },
+  lead: `NordicTrack discounts its treadmills for most of the year, so the question at Black Friday
+          is not whether a NordicTrack will be on sale but whether the sale price is lower than the
+          price it was already selling for. On 28 October 2026 NordicTrack's own site carried a
+          "Black Friday starts early" banner promising up to 40% off smart machines; the four
+          treadmill prices we had recorded there on 14 October had not moved. Black Friday 2026
+          prices had not been published by NordicTrack or Amazon when we wrote this. What follows is
+          the baseline to measure them against, and the price at which we would buy each machine.`,
+  note: `<strong class="text-gray-900">What we checked, and when.</strong> On 28 October 2026 we read
+          NordicTrack's US product pages for the Commercial 1250, 1750 and 2450 and the T Series 10
+          and 16, including the prices in each page's product data, the delivery options, the
+          30-day trial and return terms, the price-match terms and the iFIT membership terms shown
+          at checkout. The same day we loaded Amazon's listing for the Commercial 1250, which showed
+          its price, list price, seller and delivery date; Amazon would not load for the other
+          models, so their Amazon prices are not quoted, and the T Series 5 price comes from our
+          Amazon check on 13 October 2026. Specifications are those already cross-checked on this
+          site — NordicTrack's own pages against P.C. Richard &amp; Son, Costco or Nebraska
+          Furniture Mart listings for the same model numbers on 13 and 14 October 2026 — and figures
+          that did not agree are left off. Earlier sale prices come from NordicTrack's own Labor Day
+          2025 and Black Friday 2025 sale posts. Prices change, often daily, and Black Friday 2026
+          prices had not been published when this page was written; every "worth buying at" figure
+          is our judgement, not a prediction or a quote. We have not tested these treadmills. We earn
+          a commission if you buy through the Amazon links on this page; it does not change which
+          products we list or what we say about them.`,
+  sections: [
+    {
+      id: 'quick-picks',
+      heading: 'NordicTrack Black Friday 2026 at a Glance',
+      html: `          <p>
+            <strong>The short answer:</strong> watch the Commercial 1750 if you will run as well as
+            walk, the <a href="/nordictrack-commercial-1250-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Commercial 1250</a> if you want the same deck for less and can accept a two-year
+            motor warranty, and the T Series only if it falls well below the 1250. On the day we
+            checked, the four machines whose NordicTrack prices we had also recorded on 14 October were
+            at exactly the same prices, so nothing below is a Black Friday price yet. The table gives the
+            price we actually saw, where and when, and the price at which we would stop waiting.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[680px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Model</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Model no.</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Price we saw</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Worth buying at (our view)</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Best for</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Commercial 1750</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NTL17125</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,999.99 at NordicTrack, 28 Oct (list $2,499.99)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,699 or less</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most buyers who will run</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Commercial 1250</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NTL14125</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,599.00 at Amazon and $1,599.99 at NordicTrack, 28 Oct</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,399 or less</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The full-size deck for less</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">T Series 10</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NTL15425</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,599.99 at NordicTrack, 28 Oct; $1,299 at P.C. Richard, 14 Oct</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,199 or less</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walkers who want a 60 in. deck</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">T Series 16</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NTL16426</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,699.99 at NordicTrack, 28 Oct; $1,299 at P.C. Richard, 14 Oct</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,299 or less</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A big screen for walking</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Commercial 2450</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NTL19125</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,299.99 at NordicTrack, 28 Oct (list $2,999.99)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,999 or less</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Running above 12 mph</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">T Series 5</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NTL17624</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Offers from about $590 at Amazon, 13 Oct</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $450 or less</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walking on a small budget</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            The "worth buying at" column is our judgement. Where we have a reference, it is anchored
+            on it: NordicTrack's own Labor Day 2025 sale post priced the Commercial 1750 at $1,699,
+            the 2450 at $1,999 and the <a href="/nordictrack-t-series-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>T Series 10</a> at $1,199, a retailer had both T Series machines
+            at $1,299 in mid-October, and a price tracker recorded the T Series 5 at $418.99 earlier
+            in 2026. Where we do not, as with the 1250, the figure keeps the usual gap to the model
+            above it. If Black Friday brings a lower price, good; if it does not reach these
+            figures, the machine is selling at its ordinary discount and you lose nothing by
+            waiting for the next sale.
+          </p>
+          <p>
+            How to judge a deal in general — price history, inflated reference prices, bundles and
+            delivered cost — is covered in our
+            <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium">Black Friday treadmill method guide</a>,
+            and our
+            <a href="/black-friday-treadmill-deals-2026/" class="text-[#0F62FE] font-medium">Black Friday 2026 treadmill deals</a>
+            page covers other brands. This page is the NordicTrack-specific version.
+          </p>`,
+    },
+    {
+      id: 'picks',
+      heading: 'The 6 NordicTrack Treadmills to Watch This Black Friday',
+      products: true,
+      html: `          <p>
+            Five of these are NordicTrack's current running and walking treadmills; the sixth, the T
+            Series 5, is a retail-only walking machine that does not appear on NordicTrack's own
+            site. All six have Amazon listings, and the buttons link straight to them. The
+            specification line on each card carries only figures that NordicTrack and an independent
+            retailer listing agree on for the current model number; where they did not agree, the
+            figure is left off and the description says so. The X16 and X24 incline trainers are
+            not here because we could not confirm a current Amazon listing for either; they are
+            covered in our guide to the
+            <a href="/best-nordictrack-treadmills/" class="text-[#0F62FE] font-medium">best NordicTrack treadmills</a>.
+          </p>`,
+    },
+    {
+      id: 'starts-early',
+      heading: 'What "Black Friday Starts Early" Means at NordicTrack',
+      html: `          <p>
+            NordicTrack's site-wide banner on 28 October announced that Black Friday starts early,
+            with "up to 40% off smart machines". The treadmill category page showed savings of up to 23% on the
+            Commercial series, up to 15% on the T Series and up to 30% on the X Series incline
+            trainers. Those percentages are real in the sense that the selling price is below the
+            list price. They are not new. The Commercial 1750 was $1,999.99 against a list price of
+            $2,499.99 on 14 October and on 28 October; the 1250 was $1,599.99 against $1,999.99 on both
+            days; the T Series 10 was $1,599.99 and the T Series 16 $1,699.99 on both days. As of late
+            October, the "early" Black Friday price is the price NordicTrack had already been
+            charging.
+          </p>
+          <p>
+            <strong>The list prices have moved.</strong> In its Labor Day 2025 sale post, NordicTrack
+            gave the Commercial 1750's regular price as $1,999 and its sale price as $1,699. The 2450
+            was $2,499 reduced to $1,999, and the T Series 10 was $1,499 reduced to $1,199. In
+            October 2026 the list prices on the same product pages were $2,499.99, $2,999.99 and
+            $1,799.99. So the 20% saving shown on the 1750 today lands on what was the regular price a
+            year ago. We cannot confirm that every unit in the 2025 sale was the same model number as
+            today's, and prices can rise for honest reasons, but the point for a buyer is simple:
+            the percentage badge is measured from a list price, and the list price is the number
+            that changed. Compare selling prices, not savings.
+          </p>
+          <p>
+            <strong>The current price appears to be set to run through Black Friday.</strong> The
+            product data on each NordicTrack page we read marked the current price as valid until
+            27 November 2026. That is a technical field rather than a promise, and NordicTrack can
+            change prices whenever it likes, but it is at least a hint that the late-October prices
+            were intended as the Black Friday prices unless something replaces them.
+          </p>
+          <p>
+            <strong>The code that is new is an iFIT offer.</strong> NordicTrack was also running an
+            extra $100 off with the code IFIT100, valid from 27 to 29 October 2026, but only when you
+            buy an annual iFIT membership with the machine. Whether that is a saving depends entirely
+            on whether you would pay for the membership anyway, which the next section covers.
+          </p>
+          <p>
+            Last year NordicTrack ran a Black Friday price guarantee: buy between 1 November and
+            1 December 2025, and if the same equipment was cheaper on NordicTrack.com during that
+            window, it refunded the difference. It excluded doorbusters, lightning deals, coupon
+            stacks, bundles and free items. We had not seen a 2026 version announced when we checked.
+            Its standing "best price guarantee", which matches a lower price from a qualifying
+            authorised retailer, was live on the product pages, with the same exclusions for
+            doorbuster and lightning deals — which are exactly the kind of offer Black Friday
+            produces.
+          </p>`,
+    },
+    {
+      id: 'ifit-in-the-deal',
+      heading: 'iFIT in the Deal: Count It Only If You Would Pay for It',
+      html: `          <p>
+            Every NordicTrack treadmill is sold as an iFIT machine, and at Black Friday the
+            membership is part of how deals are packaged. Read the bundle as two purchases: a
+            treadmill, and a subscription. The treadmill deal has to stand up on its own.
+          </p>
+          <p>
+            <strong>What came with the machine.</strong> NordicTrack's product pages on 28 October
+            listed a one-month iFIT membership as included, and said that the membership auto-renews
+            unless cancelled in advance. The 30-day in-home trial text also mentions 30 days of
+            membership. NordicTrack's small print says a free account and agreement to its terms are
+            needed to activate the equipment, and a paid iFIT Pro subscription and Wi-Fi are needed
+            for the full content and features on the screen.
+          </p>
+          <p>
+            <strong>What the annual-membership offers cost after the first term.</strong> The extra
+            $100 off with code IFIT100, and a free Garmin Forerunner 165 that NordicTrack valued at
+            $249.99, both required buying an annual iFIT membership with the machine. The terms shown
+            on the product page said a one-year membership auto-renews at $396 a year, and two- and
+            three-year memberships auto-renew into a monthly plan at $39 a month, plus tax. Those are
+            the renewal terms as displayed on 28 October 2026; check the checkout page for the
+            current figures, because iFIT's pricing changes. If you would have subscribed anyway,
+            $100 off and a <a href="/best-running-watches-for-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>running watch</a> are real value. If you would not, the bundle adds a
+            subscription you did not want and the $100 does not come close to paying for it.
+          </p>
+          <p>
+            <strong>The machine works without it.</strong> Every current NordicTrack runs in manual
+            mode with no paid membership: you set the speed and incline yourself, and the belt,
+            motor and incline motor behave exactly as they do with iFIT. What you lose is the class
+            library, the automatic speed and incline control that follows a trainer, and most of what
+            the screen was sold on. Our guide to
+            <a href="/can-you-use-nordictrack-without-ifit/" class="text-[#0F62FE] font-medium">using a NordicTrack without iFIT</a>
+            sets out what still works, and
+            <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium">is iFIT worth it?</a>
+            works through the long-run cost. If you are buying mainly for the screen, price the
+            treadmill plus three years of membership; if you are buying a deck and a motor, price the
+            treadmill alone and treat the included month as a trial.
+          </p>
+          <p>
+            <strong>On Amazon,</strong> the listing titles describe the machines as "with iFIT", but
+            we could not confirm from the Amazon listing what membership period an Amazon purchase
+            includes. Do not assume the NordicTrack.com bundle, code or free watch applies there. Note
+            the date of any included membership the day the machine arrives, so a renewal does not
+            arrive unannounced.
+          </p>`,
+    },
+    {
+      id: 'where-to-buy',
+      heading: 'NordicTrack.com or Amazon: Seller, Delivery and Assembly',
+      html: `          <p>
+            The same NordicTrack can be bought from NordicTrack, from Amazon and from several US
+            retailers, and on the days we checked the prices were close. The differences that matter
+            are in delivery, returns and who you deal with afterwards.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">On Amazon</h3>
+          <p>
+            The Commercial 1250, 1750 and 2450 share one Amazon listing, and you choose between them
+            with a size selector labelled by screen: 10 inches is the 1250, 16 inches the 1750 and
+            24 inches the 2450. Check which option is highlighted before you add to cart, and be
+            aware that ratings and reviews on a shared listing may cover all three machines. On
+            28 October the 10-inch option showed $1,599.00 against an Amazon list price of
+            $1,799.00, shipped and sold by Amazon.com, with free delivery quoted for 3 November. Amazon's
+            list price is not NordicTrack's ($1,999.99), so the same machine at the same price shows
+            a different percentage saving on each site — one more reason to compare selling prices.
+          </p>
+          <p>
+            When Amazon is the seller, the warranty question is straightforward. If a listing's
+            seller is a third party, check that NordicTrack treats it as an authorised retailer
+            before you rely on the warranty. Free delivery on Amazon for a 300 lb box often means the
+            kerb or the first dry area inside the door; check the delivery level on the listing, and
+            the return terms, before you order.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">On NordicTrack.com</h3>
+          <p>
+            NordicTrack's free standard delivery, which it values at up to $249, was described on
+            28 October as curbside delivery: the box is left at the kerb, you assemble the machine,
+            and NordicTrack notes you may need at least two people to move it. The boxed weights it
+            gives are 309.3 lb for the 1250, 311.5 lb for the 1750 and 332 lb for the 2450.
+            Room-of-choice delivery with assembly, and <a href="/how-to-dispose-of-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>haul-away</a> of old equipment, cost extra. If
+            the machine is going upstairs, that upgrade is often worth more than the difference
+            between two retailers' prices.
+          </p>
+          <p>
+            NordicTrack's 30-day in-home trial is real but not free: its terms refund the purchase
+            price less a $249.99 return charge, and delivery and assembly costs are not refunded.
+            On the other side of the ledger, buying direct gets you the iFIT offers described above
+            and NordicTrack's price-match promise, within its exclusions.
+          </p>
+          <p>
+            The simple rule: if you will assemble it yourself on the ground floor, buy wherever the
+            delivered price is lowest from Amazon itself or an authorised retailer. If you need it
+            carried up and built, price the delivery upgrade at each seller before you compare.
+          </p>`,
+    },
+    {
+      id: 'model-numbers',
+      heading: 'Check the Model Number Before You Check the Price',
+      html: `          <p>
+            NordicTrack keeps model names while changing the hardware underneath, and Black Friday is
+            when older stock is most likely to turn up at a striking price. A "Commercial 1750" in a
+            clearance listing may be a perfectly good treadmill. It may also be a different machine
+            from the one described on this page.
+          </p>
+          <ul>
+            <li><strong>Commercial 1750:</strong> the current model is NTL17125, with a 16 in. pivoting screen, a 22 x 60 in. belt and a 400 lb rating. Earlier machines sold under the name had a 14 in. screen, lower motor ratings and, in at least one US listing, a 300 lb limit.</li>
+            <li><strong>Commercial 1250:</strong> the current model is NTL14125, with a 22 x 60 in. belt, a 3.6 CHP rating and a 400 lb limit. Earlier 1250s were listed with a 20 in. belt, a 3.0 CHP motor and a 300 lb limit.</li>
+            <li><strong>Commercial 2450:</strong> the current model is NTL19125, with a 24 in. screen and a 14 mph top speed. Older versions had a 22 in. screen, and older coverage describes a 12 mph machine.</li>
+            <li><strong>T Series:</strong> NTL15425 is the T Series 10, NTL16426 the T Series 16 and NTL17624 the T Series 5. The <a href="/nordictrack-t-6-5-s-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>T 6.5 S</a> is an older, different machine, not the T Series 5.</li>
+          </ul>
+          <p>
+            The quickest check on a Commercial listing is the screen size, because it changed
+            between versions and every listing states it. The thorough check is the model number,
+            which is on the listing, the box and the serial label. If a deal price looks too good,
+            compare the specification line by line with the current model before you assume you have
+            found a bargain on it. Our
+            <a href="/nordictrack/" class="text-[#0F62FE] font-medium">NordicTrack brand guide</a>
+            covers the older ranges that still appear second-hand.
+          </p>`,
+    },
+    {
+      id: 'commercial-1250-vs-1750',
+      heading: 'Commercial 1250 or 1750 at Black Friday Prices',
+      html: `          <p>
+            This is the decision most NordicTrack shoppers end up making, and the Black Friday price
+            gap is what should settle it. On NordicTrack's current listings the two machines share
+            the same 22 x 60 in. belt, the same 0 to 12 mph speed range, the same -3% to 12% incline
+            range, the same 400 lb rating and the same footprint. The 1750 adds three things: a 16 in.
+            screen that pivots towards the floor instead of a 10 in. one that only tilts, a 4.25 CHP
+            motor rating against 3.6, and a lifetime motor warranty against two years.
+          </p>
+          <p>
+            On 14 and 28 October the gap at NordicTrack was $400. Our reading of where it changes the
+            answer:
+          </p>
+          <ul>
+            <li><strong>Gap of $300 or less:</strong> buy the 1750. Lifetime motor cover alone is worth that on a machine you expect to keep for years.</li>
+            <li><strong>Gap of about $400:</strong> buy the 1750 if you will run several times a week or use the screen for floor classes; the 1250 if you mostly walk and want to keep the money.</li>
+            <li><strong>Gap of $500 or more:</strong> the 1250 is the better buy for most walkers and moderate runners, provided the model number is NTL14125.</li>
+          </ul>
+          <p>
+            The T Series sits awkwardly beside both. At NordicTrack's own prices on 28 October the
+            T Series 10 cost the same as the Commercial 1250 and the T Series 16 cost $100 more, for
+            a narrower belt, no decline and a lower weight rating. At those prices the 1250 is the
+            better machine. The T Series makes sense only where a retailer sells it well below the
+            1250, as P.C. Richard did at $1,299 in mid-October. Our
+            <a href="/nordictrack-commercial-1250-vs-1750/" class="text-[#0F62FE] font-medium">Commercial 1250 vs 1750 comparison</a>
+            covers the trade-offs in full.
+          </p>`,
+    },
+    {
+      id: 'timeline',
+      heading: 'When the NordicTrack Deals Start, and When to Buy',
+      html: `          <p>
+            Black Friday 2026 is Friday 27 November, the day after Thanksgiving, and Cyber Monday is
+            30 November. NordicTrack and Amazon had not published their Black Friday 2026 <a href="/how-much-does-a-treadmill-cost/" class="text-[#0F62FE] font-medium" data-autolink>treadmill
+            prices</a> when we wrote this, and we had not seen Amazon's 2026 Black Friday dates
+            announced. What we can say is how the season has usually run.
+          </p>
+          <ul>
+            <li><strong>Late October (now):</strong> NordicTrack's "Black Friday starts early" banner is up, at prices unchanged from mid-October. Record today's prices from the table above; they are your baseline.</li>
+            <li><strong>Early November:</strong> last year NordicTrack's Black Friday price guarantee covered purchases from 1 November. If a 2026 version appears, buying early from NordicTrack carries less risk.</li>
+            <li><strong>The week before Thanksgiving:</strong> Amazon's Black Friday week typically begins around now, and retailers typically match each other on mainstream models within days.</li>
+            <li><strong>Black Friday to Cyber Monday:</strong> treadmill prices usually hold, or move a little further, through the long weekend. Our <a href="/cyber-monday-treadmill-deals/" class="text-[#0F62FE] font-medium">Cyber Monday treadmill deals</a> page covers the end of the sale.</li>
+          </ul>
+          <p>
+            Two practical points. Delivery takes time: Amazon quoted a delivery date six days out for
+            the 1250 on 28 October, and room-of-choice or white-glove delivery is often slower, so a
+            machine bought on Black Friday may not be set up until December. And the shortlist
+            matters more than the day. Decide which model you want and what you will pay for it
+            before the sale, then buy whichever retailer reaches that price first, from a seller
+            you trust, with a delivery level that gets the box to the right room.
+          </p>`,
+    },
+  ],
+  products: [
+    {
+      id: 'nordictrack-commercial-1750',
+      name: 'NordicTrack Commercial 1750',
+      category: 'The NordicTrack to watch for most buyers',
+      badge: 'Best Overall',
+      amazonUrl: 'https://www.amazon.com/s?k=NordicTrack+Commercial+1750+Treadmill&tag=sktiger-20',
+      reviewUrl: '/nordictrack-commercial-1750-treadmill/',
+      priceRange: '$1,999.99 at NordicTrack on 28 Oct',
+      specs: '22 x 60 in. belt · 4.25 CHP (NordicTrack rating) · -3% to 12% incline · 0-12 mph · 400 lb max user · 16 in. pivoting touchscreen · lifetime motor warranty',
+      pros: [
+        'Lifetime motor warranty, which the Commercial 1250 and the T Series do not have',
+        'A 22 x 60 in. belt and 400 lb rating on the current model, NTL17125',
+        'Decline to -3% as well as 12% incline',
+        'A 16 in. screen that pivots towards the floor for off-belt classes',
+      ],
+      cons: [
+        'Its October price of $1,999.99 is the ordinary discounted price, not a Black Friday one',
+        'Parts covered for two years, and labour and the touchscreen for one',
+        'Older units sold under the same name have a smaller screen and different figures',
+        'Delivered curbside as standard, in a box NordicTrack gives as 311.5 lb',
+      ],
+      bottomLine:
+        'The NordicTrack to buy for most households that will run as well as walk. At $1,999 it is selling at its usual price; at $1,699 or less we would buy.',
+      description:
+        'The Commercial 1750 is the machine behind most "NordicTrack Black Friday" searches, and the one we would watch first. The current model, NTL17125, has a 22 by 60-inch belt, a motor NordicTrack rates at 4.25 CHP, a 0 to 12 mph speed range, incline from -3% to 12%, a 400 lb maximum user weight and a 16-inch touchscreen that pivots; NordicTrack and P.C. Richard or Costco listings for the same model number agree on those. The motor is covered for life, the frame for ten years, parts for two and labour and the screen for one. On 28 October NordicTrack listed it at $1,999.99 against a $2,499.99 list price, exactly as on 14 October, when P.C. Richard had it at $1,999. NordicTrack’s own Labor Day 2025 sale priced the 1750 at $1,699, which is the figure we would treat as a real Black Friday price; we cannot confirm that sale was on the same model number. Amazon would not load the 1750 option for us on 28 October, so check its price there on the shared Commercial-series listing, with the 16-inch screen option selected.',
+    },
+    {
+      id: 'nordictrack-commercial-1250',
+      name: 'NordicTrack Commercial 1250',
+      category: 'The same deck as the 1750 for less',
+      badge: 'Best Value',
+      amazonUrl: 'https://www.amazon.com/s?k=NordicTrack+Commercial+1250+Treadmill&tag=sktiger-20',
+      reviewUrl: '/nordictrack-commercial-1250-treadmill/',
+      priceRange: '$1,599–$1,599.99 on Amazon and NordicTrack, 28 Oct',
+      specs: '22 x 60 in. belt · 3.6 CHP (NordicTrack rating) · -3% to 12% incline · 0-12 mph · 400 lb max user · 10 in. tilting touchscreen',
+      pros: [
+        'The same belt, speed, incline range and 400 lb rating as the 1750 on current listings',
+        'Shipped and sold by Amazon.com on the listing we checked, with free delivery quoted',
+        'Typically $400 less than the 1750 on the same day',
+        'Decline as well as incline, which the T Series does not have',
+      ],
+      cons: [
+        'Motor covered for two years, against lifetime on the 1750',
+        'The 10 in. screen tilts but does not pivot',
+        'Earlier 1250s were listed with a narrower belt, a smaller motor and a 300 lb limit',
+      ],
+      bottomLine:
+        'The best-value way into NordicTrack’s running series if two years of motor cover does not worry you. We would buy at $1,399 or less.',
+      description:
+        'On the current model number, NTL14125, the Commercial 1250 is the 1750’s deck with a smaller screen and shorter motor cover. NordicTrack and P.C. Richard agree on a 22 by 60-inch belt, a 3.6 CHP motor rating, 0 to 12 mph and a 400 lb maximum user weight, and NordicTrack and Nebraska Furniture Mart agree on the 10-inch tilting touchscreen and the -3% to 12% incline range. Warranty cover is ten years on the frame, two years on the motor and parts, and one year on the touchscreen and labour. On 28 October Amazon listed it at $1,599.00, shipped and sold by Amazon.com, against an Amazon list price of $1,799.00, with free delivery quoted for 3 November. NordicTrack had it at $1,599.99 against a list price of $1,999.99, unchanged from 14 October. We have no earlier NordicTrack sale price for the 1250, so our $1,399 target is a judgement: it keeps the 1250 about $300 below a 1750 sale price of $1,699. On Amazon the 1250 is the 10-inch option on a listing shared with the 1750 and 2450.',
+    },
+    {
+      id: 'nordictrack-t-series-10',
+      name: 'NordicTrack T Series 10',
+      category: 'Only worth it well below the 1250',
+      badge: 'Best for Walking',
+      amazonUrl: 'https://www.amazon.com/s?k=NordicTrack+T+Series+10+Treadmill&tag=sktiger-20',
+      reviewUrl: '/nordictrack-t-series-treadmill/',
+      priceRange: '$1,299–$1,599.99 seen in October 2026',
+      specs: '20 x 60 in. belt · 3.0 CHP (NordicTrack rating) · 0-12% incline · 0-12 mph · 325 lb max user · 10 in. tilting touchscreen',
+      pros: [
+        'A full 60 in. belt with 12 mph and 12% incline',
+        'An 8.3 in. step-up height, lower than the Commercial series, which helps walkers',
+        'SelectFlex deck that switches between softer and firmer cushioning',
+      ],
+      cons: [
+        'At NordicTrack’s own price it cost the same as the Commercial 1250, which is the better machine',
+        'No decline, a 20 in. belt and a 325 lb rating',
+        'Two-year motor warranty and the lowest motor rating in the current range',
+      ],
+      bottomLine:
+        'A sensible walking treadmill at the right price. Buy it at $1,199 or less; at $1,599 buy the Commercial 1250 instead.',
+      description:
+        'The T Series 10 (NTL15425) is the cheapest treadmill on NordicTrack’s own site, and its Black Friday value depends almost entirely on where you buy it. NordicTrack and Treadmill Review Guru agree on a 20 by 60-inch belt, a 10-inch tilting touchscreen, 0 to 12% incline with no decline, 12 mph, a 325 lb maximum user weight and a 3.0 CHP motor rating, and P.C. Richard’s listing for the same model number repeats the belt, capacity, speed and incline. Cover is ten years on the frame, two years on the motor and parts, one year on the screen and labour. On 28 October NordicTrack listed it at $1,599.99 against $1,799.99 — the same price as the Commercial 1250, which has a wider belt, decline and a 400 lb rating. P.C. Richard had it at $1,299 on 14 October, and NordicTrack’s own Labor Day 2025 sale priced it at $1,199. That is the level at which it becomes a good buy for a walker. We did not load its Amazon price on 28 October; check the listing.',
+    },
+    {
+      id: 'nordictrack-t-series-16',
+      name: 'NordicTrack T Series 16',
+      category: 'A big screen for walking and light running',
+      badge: 'Best Big Screen',
+      amazonUrl: 'https://www.amazon.com/s?k=NordicTrack+T+Series+16+Treadmill&tag=sktiger-20',
+      reviewUrl: '/nordictrack-t-series-treadmill/',
+      priceRange: '$1,299–$1,699.99 seen in October 2026',
+      specs: '20 x 60 in. belt · 3.6 CHP (NordicTrack rating) · 0-12% incline · 0-12 mph · 325 lb max user · 16 in. tilting touchscreen',
+      pros: [
+        'A 16 in. screen for less than the Commercial 1750 at most sellers',
+        'A 3.6 CHP motor rating, against 3.0 on the T Series 10',
+        'The same 60 in. belt, SelectFlex deck and low step-up as the T Series 10',
+      ],
+      cons: [
+        'The screen tilts but does not pivot, unlike the 1750’s',
+        'No decline, a 20 in. belt and a 325 lb rating',
+        'Labour cover is given as one year by NordicTrack and two by one retailer; confirm it with the seller',
+      ],
+      bottomLine:
+        'For walkers who mainly want a large screen for iFIT classes. Worth buying at $1,299 or less; anyone who runs often should put the money towards the 1750.',
+      description:
+        'The T Series 16 (NTL16426) is the T Series 10 with a 16-inch screen and a higher motor rating. NordicTrack and Treadmill Review Guru agree on a 20 by 60-inch belt, a 16-inch tilting touchscreen, a 3.6 CHP motor rating, 0 to 12% incline with no decline, 12 mph and a 325 lb maximum user weight, and P.C. Richard’s listing repeats the belt, screen, capacity, speed and incline. NordicTrack covers the frame for ten years, the motor and parts for two and labour for one; P.C. Richard’s listing gave two years of labour, which conflicts, so ask the seller. On 28 October NordicTrack listed it at $1,699.99 against $1,999.99, unchanged from mid-October, while P.C. Richard had it at $1,299 on 14 October. At NordicTrack’s price it is $300 short of the Commercial 1750, which adds a wider belt, decline, a pivoting screen and lifetime motor cover; at P.C. Richard’s price the gap is $700, and the T Series 16 starts to make sense for a walker. We did not load its Amazon price on 28 October.',
+    },
+    {
+      id: 'nordictrack-commercial-2450',
+      name: 'NordicTrack Commercial 2450',
+      category: 'For runners who need more than 12 mph',
+      badge: 'Best for Running',
+      amazonUrl: 'https://www.amazon.com/s?k=NordicTrack+Commercial+2450+Treadmill&tag=sktiger-20',
+      priceRange: '$2,299.99 at NordicTrack on 28 Oct',
+      specs: '22 x 60 in. deck · 24 in. pivoting touchscreen · 0-14 mph · -3% to 12% incline · folding · lifetime motor warranty',
+      pros: [
+        'The only folding NordicTrack with a 14 mph top speed',
+        'A 24 in. pivoting screen, the largest in the Commercial series',
+        'Lifetime motor warranty, as on the 1750',
+      ],
+      cons: [
+        'The same 12% incline ceiling as the cheaper Commercial models',
+        'Older versions had a 22 in. screen and a 12 mph top speed; check the model number on any clearance listing',
+        'The heaviest box of the three Commercial models, at 332 lb by NordicTrack’s figure',
+      ],
+      bottomLine:
+        'Worth the premium only if you will use speeds above 12 mph. We would buy at $1,999 or less.',
+      description:
+        'The 2450 (NTL19125) adds speed and screen to the 1750 and nothing else of substance. NordicTrack’s page on 28 October confirmed a 24-inch pivoting touchscreen, a 0 to 14 mph speed range, 12% incline and -3% decline, and a lifetime motor warranty, and our 13 October cross-check against a retailer listing and independent coverage agreed on those and on a 22 by 60-inch deck. NordicTrack’s page gives a 400 lb user capacity; we have not cross-checked it for this model, so it is not on the spec line, and the page carried more than one motor figure, so we have left the motor rating off too. On 28 October NordicTrack listed the 2450 at $2,299.99 against $2,999.99. Its Labor Day 2025 sale had it at $1,999, and its Black Friday 2025 post advertised $500 off without stating a price, so $1,999 is the level we would wait for. Some older coverage describes the 12 mph version; the current model reaches 14 mph. On Amazon it is the 24-inch option on the shared Commercial-series listing.',
+    },
+    {
+      id: 'nordictrack-t-series-5',
+      name: 'NordicTrack T Series 5',
+      category: 'The cheapest NordicTrack on Amazon',
+      badge: 'Best Budget',
+      amazonUrl: 'https://www.amazon.com/s?k=NordicTrack+T+Series+5+Treadmill&tag=sktiger-20',
+      reviewUrl: '/nordictrack-t-series-treadmill/',
+      priceRange: '$418.99–$590 seen in 2026',
+      specs: '0–10 mph · 0–10% incline · 55 in. belt length · 300 lb capacity · 5 in. LCD',
+      pros: [
+        'Powered 10% incline and 10 mph for a fraction of the price of the T Series 10',
+        'Ships from Amazon.com on the listing we checked in October',
+        'Ten-year frame warranty',
+        'No screen subscription to think about; iFIT runs on your own device if you want it',
+      ],
+      cons: [
+        'A shorter 55 in. belt that retailers list as 18 in. wide: a walking machine, not a running one',
+        'One year on the motor, parts and labour',
+        'Listings disagree on whether it folds, so check before you count on it',
+      ],
+      bottomLine:
+        'A walking treadmill with incline for a small budget. Worth buying at about $450 or less, which it has reached before.',
+      description:
+        'The T Series 5 (NTL17624) is not sold on NordicTrack’s US site, which makes Amazon one of the natural places to buy it. NordicTrack’s product data and independent coverage agree on a 0 to 10 mph speed range, 0 to 10% powered incline, a 55-inch belt length, a 300 lb maximum user weight and a 5-inch LCD with a device shelf, with ten years on the frame and one year on the motor, parts and labour. It works without any membership. When we checked Amazon on 13 October the listing showed “Ships from Amazon.com” with offers from about $590, and a price tracker had recorded it as low as $418.99 earlier in 2026. Its price swings more than the larger NordicTrack machines, which is why we would wait for about $450 or less rather than buy near $590. Two cautions: retailers give the belt as 18 inches wide, which is narrow for anything faster than a brisk walk or easy jog, and listings disagree on whether it folds. It is also not the older T 6.5 S, whose figures are different.',
+    },
+  ],
+  faqs: [
+    {
+      q: 'When does NordicTrack’s Black Friday sale start in 2026?',
+      a: 'In effect it has started: on 28 October 2026 NordicTrack’s site carried a “Black Friday starts early” banner. But the four treadmill prices we had recorded there on 14 October were unchanged, so treat them as the baseline rather than the sale. Black Friday itself is 27 November and Cyber Monday 30 November.',
+    },
+    {
+      q: 'Will the NordicTrack Commercial 1750 be cheaper on Black Friday?',
+      a: 'We do not know, and nobody outside NordicTrack does yet. On 28 October it was $1,999.99 at NordicTrack against a $2,499.99 list price, the same as two weeks earlier. NordicTrack’s Labor Day 2025 sale priced it at $1,699, so that is the level at which we would call it a real Black Friday price.',
+    },
+    {
+      q: 'Is it cheaper to buy a NordicTrack on Amazon or on nordictrack.com?',
+      a: 'On the day we checked, the Commercial 1250 was $1,599.00 on Amazon and $1,599.99 at NordicTrack, so the price was effectively the same. The differences are delivery, returns and offers: NordicTrack delivers curbside as standard, charges a $249.99 return fee on its 30-day trial and has iFIT bundles and a price-match promise; Amazon has its own return terms and delivery levels.',
+    },
+    {
+      q: 'Do I need iFIT to use a NordicTrack treadmill bought on Black Friday?',
+      a: 'No. Every current NordicTrack runs in manual mode without a paid membership, though a free account is needed to activate the machine and a paid iFIT subscription is needed for classes and automatic speed and incline control. Count an included or discounted membership as savings only if you would have paid for it anyway.',
+    },
+    {
+      q: 'What is a good Black Friday price for a NordicTrack treadmill?',
+      a: 'Our judgement, not a prediction: about $1,699 or less for the Commercial 1750, $1,399 or less for the 1250, $1,999 or less for the 2450, $1,199 or less for the T Series 10, $1,299 or less for the T Series 16 and about $450 for the T Series 5. Those figures are anchored on NordicTrack’s Labor Day 2025 sale and October 2026 retailer prices.',
+    },
+    {
+      q: 'Does NordicTrack refund the difference if the price drops after I buy?',
+      a: 'Its product pages carried a best price guarantee that matches a lower price from a qualifying authorised retailer, excluding doorbusters, lightning deals, coupon stacks and bundles. In 2025 it also ran a Black Friday price guarantee for purchases from 1 November to 1 December. We had not seen a 2026 version announced, so read the terms on the day you buy.',
+    },
+  ],
+  mistakesHeading: 'Common Mistakes With NordicTrack Black Friday Deals',
+  mistakesIntro:
+    'Each of these turns an ordinary NordicTrack price into something that looks like a deal, or a real deal into an expensive one.',
+  mistakes: [
+    {
+      title: 'Counting the iFIT bundle as a saving',
+      body: 'An extra $100 off or a free watch that requires an annual iFIT membership is only a saving if you would have paid for the membership anyway. Price the treadmill on its own first, then decide on iFIT separately, and note when any included membership renews.',
+    },
+    {
+      title: 'Trusting the percentage badge',
+      body: 'NordicTrack’s list prices for the 1750, 2450 and T Series 10 were higher in October 2026 than the regular prices in its own 2025 sale posts, and Amazon’s list price for the 1250 differs from NordicTrack’s. Compare the selling price with what the machine sold for in October, not with the list price.',
+    },
+    {
+      title: 'Buying an older model at a clearance price',
+      body: 'A heavily discounted Commercial 1750 with a 14-inch screen, or a 2450 with a 22-inch screen, is an earlier machine with different figures. Check the model number — NTL17125, NTL14125, NTL19125 — against the listing before you treat the price as a bargain.',
+    },
+    {
+      title: 'Forgetting the delivery level and return fee',
+      body: 'NordicTrack’s free delivery is curbside, the boxes weigh over 300 lb, and its 30-day trial deducts a $249.99 return charge. Price room-of-choice delivery where you need it, and read the return terms of whichever seller you use, before you compare deals.',
+    },
+  ],
+  relatedHeading: 'Related NordicTrack and Deal Guides',
+  related: [
+    {
+      kicker: 'Brand Guide',
+      title: 'Best NordicTrack Treadmills',
+      blurb: 'The whole current NordicTrack range ranked, including the X16 and X24 incline trainers.',
+      url: '/best-nordictrack-treadmills/',
+    },
+    {
+      kicker: 'Method',
+      title: 'Treadmill Black Friday Deals',
+      blurb: 'How to tell a real discount from inflated list prices, bundles and delivery charges.',
+      url: '/treadmill-black-friday-deals/',
+    },
+    {
+      kicker: 'Compare',
+      title: 'Commercial 1250 vs 1750',
+      blurb: 'Screen, motor warranty and price: which of the two Commercial machines to buy.',
+      url: '/nordictrack-commercial-1250-vs-1750/',
+    },
+  ],
+  bottomLine: [
+    `For most buyers the NordicTrack to watch this Black Friday is the
+            <strong class="text-white">Commercial 1750</strong>: a 22 x 60 in. deck, decline,
+            a 400 lb rating and a lifetime motor warranty. It was $1,999.99 on 28 October, its
+            ordinary discounted price; at <strong class="text-white">$1,699 or less</strong> we would
+            buy. If the gap to the <strong class="text-white">Commercial 1250</strong> widens to $500
+            or more, the 1250 is the better buy for walkers and moderate runners.`,
+    `Whatever you choose, judge the selling price rather than the percentage, price the
+            treadmill without the iFIT bundle, and check the model number and the delivery level
+            before you pay. Our
+            <a href="/treadmill-black-friday-deals/" class="text-[#5AA9FF] font-bold no-underline">Black Friday method guide</a>
+            covers how to judge any treadmill deal, and the
+            <a href="/best-nordictrack-treadmills/" class="text-[#5AA9FF] font-bold no-underline">best NordicTrack treadmills</a>
+            guide covers the rest of the range.`,
+  ],
+};

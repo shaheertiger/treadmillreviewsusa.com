@@ -252,6 +252,8 @@ export default {
             covered under which to skip, below. For the brand as a whole, including how iFIT and
             the parent company fit in, see our
             <a href="/nordictrack/" class="text-[#0F62FE] font-medium">NordicTrack brand guide</a>.
+            For the prices to watch through the November sales, see
+            <a href="/nordictrack-black-friday-deals/" class="text-[#0F62FE] font-medium">NordicTrack Black Friday deals</a>.
           </p>`,
     },
     {

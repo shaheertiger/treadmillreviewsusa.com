@@ -816,6 +816,57 @@ Still flagged, not corrected:
   `/best-portable-treadmills/`' Strol 2E Pro card may describe an earlier version; the standard
   WalkingPad Z1 is now pre-order only.
 
+### Black Friday 2026 batch (2026-10-28): ten deal-watch pages
+
+Ten Black Friday and Cyber Monday pages written against a Semrush US pull on 2026-10-28, stored
+with its page mapping in `research/keyword-batches/2026-10-28-black-friday.csv` ("treadmill black
+friday" 4,400/mo, "black friday treadmill deals" 1,300, "walking pad black friday" 320, "cyber
+monday treadmill deals" 320, "black friday fitness deals" 320). Black Friday prices were not
+published when they were written, so each page is a **deal watch**: 5–7 products worth watching,
+what each sold for in October (dated, with its source), and a "price we would wait for" stated as
+editorial judgement, not a forecast. Black Friday is 27 November 2026; Amazon's 2026 event dates
+were unannounced, so the pages say it "typically" opens about a week before Thanksgiving.
+
+- `/price/` (new "Black Friday & Cyber Monday 2026" group): `/black-friday-treadmill-deals-2026/`
+  (pillar, links every sibling), `/cyber-monday-treadmill-deals/`, `/black-friday-walking-pad-deals/`,
+  `/black-friday-treadmill-deals-under-500/`, `/black-friday-treadmill-deals-under-1000/`,
+  `/black-friday-folding-treadmill-deals/`, `/nordictrack-black-friday-deals/`
+- `/home-gym/` (new "Black Friday 2026" group): `/black-friday-home-gym-deals/`,
+  `/black-friday-elliptical-deals/`, `/black-friday-exercise-bike-deals/`
+
+The existing `/treadmill-black-friday-deals/` stays the *method* page (how to judge a discount);
+every new page links to it, and it now links to the pillar. Its interlink phrase "cyber monday"
+moved to the Cyber Monday page.
+
+Same product rules as the roundups: figures reused from verified site specs or cross-checked, no
+testing claims or ratings, recalled products excluded (Sperax, Peloton PL01/PL02, BowFlex
+SelectTech 552/1090, NordicTrack RW900), affiliate disclosure in each note. **A card's
+`priceRange` becomes the Product offer's `lowPrice`/`highPrice` in JSON-LD**, so it carries only
+prices the item actually sold for in October — never a compare-at price, an expired code price or
+a target. 62 Amazon buttons, all tagged; 42 go straight to `/dp/` listings. Amazon product pages
+were mostly unreadable (503s, bot checks), so most Amazon prices are the dated figures from earlier
+specs; maker-store prices were read on 28 October where the stores loaded.
+
+Found while writing and not yet changed:
+- Stale stock and prices: the standard WalkingPad Z1 was $299 and buyable on 28 October (not $329
+  pre-order) on `/walkingpad-z1-review/`, `/best-quiet-walking-pads/`, `/best-walking-pads/` and
+  `/best-portable-treadmills/`; `/urevo-treadmills/` says the Strol 2E is sold out (in stock at
+  $169.99); `/best-walking-pads/` prices the Strol 2S Pro at $549.99 (UREVO showed $299.99);
+  `/best-recumbent-ellipticals/` and `/best-ellipticals-for-seniors/` price the Teeter LT3 at $899
+  (Teeter showed $999, out of stock).
+- `/best-treadmill-under-1000-reviews/` lists the ProForm Carbon T7 and NordicTrack T 6.5 S (not in
+  current ranges) and gives the T101 a 2.5 CHP motor Horizon no longer publishes;
+  `/best-folding-treadmills/` gives the T101 a "manual latch" fold (Horizon: one-step hydraulic).
+- Commercial 1750 figures still conflict across pages (`/best-treadmills-for-running/` 300 lb and
+  3.5 CHP, `/best-treadmills-under-2000/` 3.5 CHP, against the verified 400 lb / 4.25 CHP review);
+  `/best-treadmills-under-2000/` gives the Sole F63 a 55 in. deck (Sole: 60).
+- Sole's warranty table on 28 October appeared to show 90 days of labour on the F65, against the
+  one-year figure used site-wide; the F65 card here leaves labour out until it is re-checked.
+- The WalkingPad Z1's stored ASIN (B0H2YYZTL8) differs from the one a price tracker lists
+  (B0H6WN93Z7); possibly a colour variant, worth a hand check.
+- The UREVO SpaceWalk 3S appears to have a successor (SpaceWalk 5L) that older roundups do not
+  mention.
+
 ### Sole F80 and F85
 
 Both were shipped first as `dataPending` editorial drafts because their published figures conflict
