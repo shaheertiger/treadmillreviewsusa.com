@@ -122,7 +122,7 @@ export default {
           </p>
           <p>
             <strong>Remember the whole week counts.</strong> Treadmill reductions frequently begin
-            before the day itself and continue to Cyber Monday and beyond. Missing a single day
+            before the day itself and continue to <a href="/cyber-monday-treadmill-deals/" class="text-[#0F62FE] font-medium" data-autolink>Cyber Monday</a> and beyond. Missing a single day
             rarely means missing the sale.
           </p>`,
     },

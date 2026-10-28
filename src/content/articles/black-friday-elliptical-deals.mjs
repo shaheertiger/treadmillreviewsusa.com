@@ -94,7 +94,7 @@ export default {
       products: true,
       html: `          <p>
             Two full-size front-drive machines from SOLE, two compact Schwinn models, one seated
-            cross trainer and one under-desk elliptical. Every one is sold on Amazon, either by the
+            cross trainer and one <a href="/best-under-desk-ellipticals/" class="text-[#0F62FE] font-medium" data-autolink>under-desk elliptical</a>. Every one is sold on Amazon, either by the
             maker's own storefront or as a listing our earlier guides matched, and every one except
             the Cubii, whose maker publishes no price, was listed on its maker's store when we checked
             on October 28. The two Schwinn buttons go straight to
@@ -188,7 +188,7 @@ export default {
             weight, height and one more motor to look after.
           </p>
           <p>
-            <strong>Watch for listings that borrow from sibling models.</strong> Our walking pad and
+            <strong>Watch for listings that borrow from sibling models.</strong> Our <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> and
             treadmill checks repeatedly found Amazon titles quoting the figures of a more expensive
             sibling, and elliptical listings do the same: our recumbent guide found an Amazon listing
             for Teeter's entry FreeStep LT1 giving the 350 lb capacity of the top LT7, where Teeter
@@ -306,7 +306,7 @@ export default {
             for the whole stride and follow a fixed path set by the machine's linkage. On a treadmill
             you walk or run on a moving belt, so each step lands and pushes off as it would on the
             ground, on a deck that most makers cushion to some degree. Seated machines such as the
-            Teeter FreeStep remove standing altogether. Those are differences in how the equipment
+            <a href="/best-recumbent-ellipticals/" class="text-[#0F62FE] font-medium" data-autolink>Teeter FreeStep</a> remove standing altogether. Those are differences in how the equipment
             moves, not promises about how your body will respond, and some people find a fixed
             elliptical path suits them less well than walking. Our
             <a href="/treadmill-vs-elliptical/" class="text-[#0F62FE] font-medium">treadmill vs elliptical comparison</a>
@@ -340,7 +340,7 @@ export default {
       heading: 'When the 2026 Elliptical Deals Start',
       html: `          <p>
             Thanksgiving falls on Thursday, November 26, 2026, which puts Black Friday on November 27
-            and Cyber Monday on November 30. Here is how the weeks around those dates typically play
+            and <a href="/cyber-monday-treadmill-deals/" class="text-[#0F62FE] font-medium" data-autolink>Cyber Monday</a> on November 30. Here is how the weeks around those dates typically play
             out for fitness equipment. None of the dates below except those three have been announced
             for 2026; they are the usual pattern.
           </p>

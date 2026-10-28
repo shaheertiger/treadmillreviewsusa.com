@@ -131,14 +131,14 @@ export default {
             <strong>Racks and benches go on sale in brand-run windows.</strong> Specialist strength
             brands increasingly run their own month-long events rather than a single Black Friday
             price. When we read REP Fitness's Black November page on 28 October, it listed "Rack
-            Week" as the first window, starting 2 November 2026, with dumbbells, kettlebells,
+            Week" as the first window, starting 2 November 2026, with dumbbells, <a href="/best-adjustable-kettlebells/" class="text-[#0F62FE] font-medium" data-autolink>kettlebells</a>,
             benches and cable machines marked "dates coming soon" and no discounts stated. That
             page is about REP's own store; it says nothing about Amazon listings, which may or may
             not follow.
           </p>
           <p>
             <strong>Recovery gadgets and small electronics take the big percentages.</strong>
-            Massage guns, compression boots and smart scales are cheap to ship and frequently
+            Massage guns, compression boots and <a href="/best-smart-scales/" class="text-[#0F62FE] font-medium" data-autolink>smart scales</a> are cheap to ship and frequently
             promoted, so percentage discounts on them are common at sale events, and outgoing
             generations are cleared at the same time. That makes the generation and the reference
             price the things to check, not the size of the badge.
@@ -156,7 +156,7 @@ export default {
       heading: 'When the 2026 Deals Start',
       html: `          <p>
             The fixed dates are simple. Thanksgiving is Thursday 26 November 2026, Black Friday is
-            Friday 27 November and Cyber Monday is Monday 30 November. Everything else is a
+            Friday 27 November and <a href="/cyber-monday-treadmill-deals/" class="text-[#0F62FE] font-medium" data-autolink>Cyber Monday</a> is Monday 30 November. Everything else is a
             pattern rather than a schedule.
           </p>
           <p>
@@ -199,13 +199,13 @@ export default {
             carrying boxes.
           </p>
           <p>
-            <strong>Parcel items.</strong> A massage gun, a pair of light dumbbells or a foam roller
+            <strong>Parcel items.</strong> A massage gun, a pair of light dumbbells or a <a href="/best-foam-rollers/" class="text-[#0F62FE] font-medium" data-autolink>foam roller</a>
             comes with an ordinary carrier and is left at the door. These are the easiest Black
             Friday purchases: the price you see is close to the price you pay, and a return is a
             matter of printing a label.
           </p>
           <p>
-            <strong>Heavy parcels.</strong> Heavier dumbbell sets, rubber sheets and smaller cardio
+            <strong>Heavy parcels.</strong> Heavier <a href="/best-dumbbell-sets/" class="text-[#0F62FE] font-medium" data-autolink>dumbbell sets</a>, rubber sheets and smaller cardio
             machines often still ship by parcel carrier, but heavy ones. Rubber-Cal lists its 4 x 6
             ft Maxx-Tuff sheet at 80 lb; a 50 lb pair of dumbbells weighs 100 lb before the stand.
             They will usually be left at the door or the kerb, and getting them to a basement is your
@@ -239,7 +239,7 @@ export default {
           </p>
           <ul>
             <li><strong>BowFlex SelectTech 552 and 1090 dumbbells.</strong> Recalled in June 2025
-              because the weight plates can dislodge from the handle during use. Johnson Health Tech,
+              because the <a href="/best-weight-plates/" class="text-[#0F62FE] font-medium" data-autolink>weight plates</a> can dislodge from the handle during use. Johnson Health Tech,
               which now owns BowFlex, issued the recall; the notice names those two dumbbell models
               only. They are still some of the most familiar adjustable dumbbells on the second-hand
               market.</li>
