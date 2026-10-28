@@ -416,7 +416,7 @@ export default {
       category: 'Best Full-Size Elliptical to Watch',
       badge: 'Best Full-Size',
       amazonUrl: 'https://www.amazon.com/s?k=SOLE+E35+Elliptical&tag=sktiger-20',
-      priceRange: '$1,699–$1,799',
+      priceRange: 'About $1,700',
       specs: '20 in. stride · 25 lb flywheel · 350 lb capacity · 20-level power incline · front drive · 70 x 31 x 70 in. · lifetime frame warranty',
       pros: [
         'A 20-inch stride, 25 lb flywheel and 350 lb capacity, all agreed between SOLE, its Amazon listing and independent reviews',
@@ -439,7 +439,7 @@ export default {
       category: 'Best Value Full-Size Elliptical to Watch',
       badge: 'Best Value',
       amazonUrl: 'https://www.amazon.com/s?k=SOLE+E25+Elliptical&tag=sktiger-20',
-      priceRange: '$1,199–$1,299',
+      priceRange: 'About $1,200',
       specs: '20 in. stride · 20 lb flywheel · 350 lb max user · 20 resistance and 20 power-incline levels · 70 x 24 x 70 in. · lifetime frame, 2-yr parts, 1-yr labor warranty',
       pros: [
         'The same 20-inch stride and 350 lb capacity as the E35 for about $500 less',
@@ -462,7 +462,7 @@ export default {
       category: 'Best Compact Elliptical With Incline to Watch',
       badge: 'Best With Incline',
       amazonUrl: 'https://www.amazon.com/s?k=Schwinn+490+Elliptical&tag=sktiger-20',
-      priceRange: '$1,499–$1,699',
+      priceRange: 'About $1,499',
       specs: '20 in. stride · −5% to 15% motorized incline and decline · 25 resistance levels · 58.1 in. long · full FTMS Bluetooth · min. ceiling: user height + 28.3 in. (Schwinn)',
       pros: [
         'A full-size 20-inch stride on a frame about 58 inches long',
@@ -485,7 +485,7 @@ export default {
       category: 'Best Small-Space Elliptical to Watch',
       badge: 'Best Compact',
       amazonUrl: 'https://www.amazon.com/s?k=Schwinn+411+Compact+Elliptical&tag=sktiger-20',
-      priceRange: '$699–$799',
+      priceRange: 'About $699',
       specs: '18 in. stride · 300 lb capacity · 16 resistance levels · 53.8 x 24 x 62.5 in. · no incline · min. ceiling: user height + 17 in. (Schwinn)',
       pros: [
         'About 16 inches shorter than the SOLE E35, for rooms where a full-size machine will not fit',
@@ -508,7 +508,7 @@ export default {
       category: 'Best Seated Cross Trainer to Watch',
       badge: 'Best Recumbent',
       amazonUrl: 'https://www.amazon.com/s?k=Teeter+FreeStep+LT7+Recumbent+Cross+Trainer&tag=sktiger-20',
-      priceRange: '$1,249–$1,499',
+      priceRange: 'About $1,249',
       specs: '20 magnetic resistance levels · 350 lb max user · 59 x 32.7 x 54.8 in. · 150 lb unit weight · 9 in. color LCD, 21 programs · Step Lock for entry and exit',
       pros: [
         'A seated, linear stepping motion with linked arm handles, for people who would rather not stand',

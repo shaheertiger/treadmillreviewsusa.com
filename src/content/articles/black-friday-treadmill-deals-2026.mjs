@@ -499,7 +499,7 @@ export default {
       category: 'Mid-Range Folding Treadmill · Target $600 or less',
       badge: 'Best All-Rounder',
       amazonUrl: 'https://www.amazon.com/s?k=Horizon+Fitness+T101+Connect+Treadmill&tag=sktiger-20',
-      priceRange: '$600–$700',
+      priceRange: 'About $700',
       specs: '20 x 55 in. deck · 0.5–10 mph · 0–10% incline · 300 lb capacity · folds',
       pros: [
         'Lifetime frame and motor warranty, unusual at this price',
@@ -574,7 +574,7 @@ export default {
       category: 'Premium Connected Treadmill · Target $1,700 or less',
       badge: 'Premium Pick',
       amazonUrl: 'https://www.amazon.com/s?k=NordicTrack+Commercial+1750+Treadmill&tag=sktiger-20',
-      priceRange: '$1,999–$2,299',
+      priceRange: 'About $2,000',
       specs: '16 in. pivoting touchscreen · 0–12 mph · -3% to 12% incline · folds · lifetime motor warranty',
       pros: [
         'Lifetime motor warranty, the line NordicTrack draws between its mid-range and its better machines',

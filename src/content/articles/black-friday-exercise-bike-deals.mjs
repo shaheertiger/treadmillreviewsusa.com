@@ -379,7 +379,7 @@ export default {
       badge: 'Best Overall',
       amazonUrl: 'https://www.amazon.com/s?k=Schwinn+IC4+Indoor+Cycling+Bike&tag=sktiger-20',
       reviewUrl: null,
-      priceRange: '$799–$999',
+      priceRange: '$799–$899',
       specs: '100 magnetic resistance levels · 40 lb flywheel · 330 lb max user · 54.6 x 30.7 in. footprint · dual-sided SPD and toe-cage pedals · 10-yr frame, 3-yr parts and electronics, 1-yr labor warranty',
       pros: [
         'Quiet magnetic resistance with no pad to wear out',
@@ -404,7 +404,7 @@ export default {
       badge: 'Best Recumbent',
       amazonUrl: 'https://www.amazon.com/s?k=Horizon+Fitness+5.0R+Recumbent+Bike&tag=sktiger-20',
       reviewUrl: null,
-      priceRange: '$649–$999',
+      priceRange: 'About $649',
       specs: '100 magnetic resistance levels · 300 lb max user · 66 x 25.2 in. footprint · step-through frame · Bluetooth FTMS · lifetime frame warranty',
       pros: [
         'A step-through frame and large seat with lumbar support',
@@ -429,7 +429,7 @@ export default {
       badge: 'Best Air Bike',
       amazonUrl: 'https://www.amazon.com/s?k=Schwinn+AirDyne+AD7+Air+Bike&tag=sktiger-20',
       reviewUrl: null,
-      priceRange: '$1,099–$1,299',
+      priceRange: 'About $1,099',
       specs: 'Fan resistance · belt drive · 350 lb max user · 53 x 26.5 in. footprint · 113 lb · 2 D batteries, AC adapter ready · 10-yr frame warranty',
       pros: [
         'A 350 lb weight limit, agreed by Schwinn and BarBend',

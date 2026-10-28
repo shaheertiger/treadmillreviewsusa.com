@@ -7,8 +7,9 @@ export default {
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Timing',
   updated: 'October 2026',
-  updatedLong: 'October 6, 2026',
+  updatedLong: 'October 28, 2026',
   published: '2026-10-06',
+  modified: '2026-10-28',
   socialProof: '2.4k',
   h1: ['Treadmill', 'Black Friday Deals'],
   standfirst:
@@ -56,7 +57,9 @@ export default {
             Our
             <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy</a>
             guide covers why prices move across the whole year; this page is about the sale
-            itself.
+            itself. For the specific machines worth watching this year, with what each normally
+            sells for and the price we would wait for, see
+            <a href="/black-friday-treadmill-deals-2026/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals 2026</a>.
           </p>`,
     },
     {
@@ -466,10 +469,10 @@ export default {
       url: '/best-time-of-year-to-buy-a-treadmill/',
     },
     {
-      kicker: 'Where to Buy',
-      title: 'Treadmills for Sale',
-      blurb: 'Where to buy, what to pay and what each channel includes.',
-      url: '/treadmills-for-sale/',
+      kicker: 'Black Friday 2026',
+      title: 'Black Friday Treadmill Deals 2026',
+      blurb: 'The machines worth watching this year and the price we would wait for.',
+      url: '/black-friday-treadmill-deals-2026/',
     },
     {
       kicker: 'Budget',

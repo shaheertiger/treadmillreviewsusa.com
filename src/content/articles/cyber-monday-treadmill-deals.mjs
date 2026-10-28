@@ -474,7 +474,7 @@ export default {
       category: 'Best Incline Pad for Heavier Walkers',
       badge: 'Highest Capacity',
       amazonUrl: 'https://www.amazon.com/s?k=MERACH+NovaWalk+W50+TrekPad&tag=sktiger-20',
-      priceRange: '$198–$480',
+      priceRange: 'About $297–$300',
       specs: '400 lb capacity · 41.3 x 16.5 in. belt · up to 4.0 mph · 1.25 HP continuous motor · powered incline',
       pros: [
         'A 400 lb rating that MERACH, the Amazon listing title and independent coverage agree on',
@@ -524,7 +524,7 @@ export default {
       badge: 'Best Folding Treadmill',
       amazonUrl: 'https://www.amazon.com/s?k=Horizon+Fitness+T101+Connect+Treadmill&tag=sktiger-20',
       reviewUrl: '/horizon-t101-treadmill/',
-      priceRange: '$699–$999',
+      priceRange: 'About $699–$700',
       specs: '20 x 55 in. deck · 0.5–10 mph · 0–10% incline · 300 lb capacity · hydraulic folding',
       pros: [
         'Sold and shipped by Amazon on the listing we checked, so the seller and warranty are clear',
