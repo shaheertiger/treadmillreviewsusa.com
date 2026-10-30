@@ -109,11 +109,10 @@ export default {
             the Amazon links, which does not change which machines we list.
           </p>
           <p>
-            We have not included a commercial-tier pick here, because commercial machines are
-            mostly bought through dealers with delivery and service contracts rather than from a
-            shopping cart. Our guide to
+            The last pick is the entry point to the commercial tier. Heavier commercial machines
+            are often bought through dealers with delivery and service contracts, so our guide to
             <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial treadmills</a>
-            covers that tier.
+            covers that tier more widely.
           </p>`,
     },
     {
@@ -481,7 +480,32 @@ export default {
       ],
       bottomLine: "The best running hardware in this band. Buy it for the deck and frame, and decide about the subscription separately.",
       description: "Judged purely as a running machine this is the strongest thing under $2,000, and the specifications are consistent about why. Its 60 x 22-inch deck is the full running size, and the 22-inch width gives a taller runner margin against rail strikes on runs past the hour as foot placement wanders. At roughly 340 lbs assembled it has the frame mass that keeps a machine still at 10 mph, and heavier deck construction of this kind is what keeps cushioning from softening with mileage the way cheaper decks tend to. Decline is a real bonus if you race anything with descent. The reservation is entirely about software: the console is built to sell a subscription and will remind you regularly, and paying it takes the five-year cost from roughly $1,900 to over $4,100. The hardware case is unaffected by that; the value case is not."
-    }
+    },
+    {
+      id: 'life-fitness-t3',
+      name: 'Life Fitness T3',
+      category: 'Best Pick: Commercial-Grade at Home ($3,500–$4,000)',
+      badge: 'Commercial Tier',
+      amazonUrl: 'https://www.amazon.com/dp/B006BE6HW4?tag=sktiger-20',
+      reviewUrl: '/life-fitness-t3-treadmill/',
+      priceRange: '$3,499–$3,999',
+      specs: '3.0 CHP AC motor · 0.5–12 mph · 0–15% incline · 20 x 60 in. deck · 400 lb capacity · fixed frame, does not fold',
+      pros: [
+        'A commercial-style AC motor and fixed frame, the construction the commercial tier is paying for',
+        'No required subscription; the Track Connect app is optional',
+        'Lifetime frame and motor warranty for residential use',
+        'A 400 lb capacity, higher than the other picks on this page',
+      ],
+      cons: [
+        'Does not fold, so it needs a permanent spot and a delivery plan',
+        'Basic console compared with the touchscreens in the premium tier',
+        'More machine than a walker or occasional jogger needs',
+      ],
+      bottomLine:
+        'The commercial-tier machine for buyers who run often, share the treadmill and want it to last, and have the floor space for a fixed frame.',
+      description:
+        'The Life Fitness T3 is the entry point to commercial construction. It pairs a 3.0 CHP AC motor with a fixed steel frame, a 20 by 60-inch deck, 15% incline and a 400 lb capacity, and Life Fitness backs it with a lifetime warranty on the frame and motor for residential use. Our full review covers the details. At roughly $3,500 to $4,000 it sits at the bottom of this tier, so it shows what the step up from the mid-range buys: build quality and longevity rather than a bigger screen. Check the current price, seller and delivery terms on the listing before you order, since heavy machines vary a lot in what shipping includes.',
+    },
   ],
   faqs: [
     {
