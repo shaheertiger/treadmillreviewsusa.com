@@ -3206,6 +3206,12 @@ export const SECTIONS: Section[] = [
             url: '/best-vibration-plates/',
           },
           {
+            title: 'Shocking Exercise Equipment Reviews',
+            description: 'EMS ab belts, TENS/EMS stimulators and a vibration plate: what each does and who should skip them.',
+            badge: 'EMS',
+            url: '/shock-exercise-equipment-reviews/',
+          },
+          {
             title: 'Best Exercise Bikes for Seniors',
             description: 'Step-through recumbents, an upright and a pedal exerciser chosen for easy, safe access.',
             badge: 'Seniors',
