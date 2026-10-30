@@ -7,6 +7,108 @@ const title = "How Much Does a Treadmill Cost? (2026): Prices by Type and Tier";
 const description =
   "Treadmills run from about $200 for a walking pad to $10,000+ for a gym machine. Here is what each price tier buys, the hidden costs, and what used ones go for.";
 
+const PRODUCTS = [
+  {
+    id: "walkingpad-a1-pro",
+    name: "WalkingPad A1 Pro",
+    category: "Best Pick: Walking Pad ($200–$700)",
+    badge: "Walking Pad Tier",
+    amazonUrl: "https://www.amazon.com/s?k=WalkingPad+A1+Pro+Foldable+Under+Desk+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    reviewUrl: null,
+    priceRange: "$529–$699",
+    priceBounds: {"low":529,"high":699},
+    specs: "47 x 16.5 in. walking area · 0.5–3.75 mph · 300 lb capacity · 63 lb · folds in half",
+    pros: [
+      "A 47-inch walking area, long enough for a natural stride at a brisk walk and for most taller walkers",
+      "Rated for 300 lb, higher than most folding pads, on both WalkingPad’s page and independent coverage",
+      "Folds in half and arrives fully assembled, so it stores under a bed or sofa",
+      "Speed from the remote, the app or FootSense, which follows your position on the belt",
+    ],
+    cons: [
+      "WalkingPad and an independent tracker give very different motor ratings, so we have not printed one",
+      "At about $529 on sale it costs well over twice the budget pick, and the warranty is one year",
+      "Tops out at 3.75 mph and has no incline, so it will not make your walk harder as you get fitter",
+    ],
+    bottomLine: "The walking pad to buy if you want one machine that suits most people and most rooms: a long belt, a generous weight limit and a frame that folds away.",
+    description: "The A1 Pro is WalkingPad's long-running folding pad, and it earns the top spot by doing the things that matter most without a serious weakness. WalkingPad lists a 47 by 16.5-inch walking area, a speed range of 0.5 to 3.75 mph, a 300 lb maximum user weight and a 63 lb net weight, and an independent spec tracker gives the same walking area, top speed, capacity and weight. That belt is among the longest on any pad, so a normal stride fits at a brisk walk, and the 300 lb rating leaves real margin for most walkers. It folds in half to about 5 inches tall by WalkingPad's figures, and an independent reviewer who has used one in an office for a long time found it fairly quiet at desk speeds. Two things to know. WalkingPad's specification table still mentions 230 lb and 300 lb versions, though only the 300 lb version was for sale on its store when we checked; and the motor is listed by WalkingPad at 3.75 HP while the tracker gives a much lower figure, so we left horsepower out. WalkingPad listed it at $529, down from $699, on 18 October 2026, with a one-year warranty.",
+  },
+  {
+    id: "horizon-t202",
+    name: "Horizon T202",
+    category: "Best Pick: Budget Full-Size ($400–$1,000)",
+    badge: "Budget Tier",
+    amazonUrl: "https://www.amazon.com/s?k=Horizon+Fitness+T202+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    reviewUrl: null,
+    priceRange: "Around $899",
+    priceBounds: {"low":899,"high":899},
+    specs: "20 x 60 in. deck · 0.5–12 mph · 0–12% incline · 325 lb capacity · hydraulic fold",
+    pros: [
+      "A full 60-inch deck and 12 mph top speed, which most machines under $1,000 do not offer",
+      "Lifetime frame and motor warranty from Horizon",
+      "Horizon and two independent reviews agree on the deck, speed, incline, capacity and 187 lb weight",
+      "Hand-grip dial controls and Bluetooth speakers, with no subscription needed",
+    ],
+    cons: [
+      "Only one year on parts and one year on labour once the frame and motor are set aside",
+      "Horizon does not publish a motor rating; the figure reviewers quote is not the maker’s",
+      "Incline stops at 12%, and the console is a small LCD with LED windows",
+    ],
+    bottomLine: "The best everyday-price treadmill under $1,000 for walking, jogging and some running. Buy the Bowflex T6 instead if it is on sale at the same price.",
+    description: "The T202 is what a budget treadmill should be: a full-size deck, a sensible top speed and a frame warranty you will not outgrow, at a price that does not need a sale to reach. Horizon lists a 20 by 60-inch three-zone cushioned deck, 0.5 to 12 mph, 0 to 12% powered incline, a 325 lb maximum user weight, hydraulic folding and a machine weight of 187 lb, and two independent reviews agree on each. That 60-inch deck is the important figure: it is the length most runners need, where the cheaper T101 has a 55-inch deck. Horizon’s warranty is lifetime on the frame and motor and one year on parts and labour, and the short parts cover is the main reason to look at the Bowflex T6 when it is discounted. Horizon does not publish a motor rating, and its page says the machine is not compatible with GFCI outlets. Horizon had it in stock at $899 on 15 October, against a $1,299 compare-at price.",
+  },
+  {
+    id: "sole-f63",
+    name: "SOLE F63",
+    category: "Best Pick: Mid-Range ($1,000–$2,000)",
+    badge: "Mid-Range Tier",
+    amazonUrl: "https://www.amazon.com/s?k=SOLE+F63+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    reviewUrl: "/sole-f63-treadmill/",
+    priceRange: "$1,100–$1,200",
+    priceBounds: {"low":1100,"high":1200},
+    specs: "20 x 60 in. deck · 0.5–12 mph · 0–15% incline · 325 lb capacity · folds",
+    pros: [
+      "The same core figures as the Horizon 7.0 AT at a similar price",
+      "Lifetime frame and motor warranty, two years on parts",
+      "No monthly subscription; SOLE’s app is free",
+      "SOLE and an independent review agree on deck, speed, incline, capacity and warranty",
+    ],
+    cons: [
+      "Two years on parts is a year shorter than the Horizon 7.0 AT and Bowflex T6",
+      "No touchscreen, and the independent review notes it is a heavy machine",
+      "Labour and deck terms are worth confirming with SOLE for the current model year",
+    ],
+    bottomLine: "A sound alternative to the Horizon 7.0 AT for runners at the top of a budget; choose on price on the day and which controls you prefer.",
+    description: "The F63 is SOLE’s entry running treadmill and the 7.0 AT’s closest rival on paper. SOLE lists a 20 by 60-inch running surface, 0.5 to 12 mph, 0 to 15% incline, a 325 lb maximum user weight and a 3.0 HP motor, and an independent review agrees on all of them. The warranty is lifetime on frame and motor and two years on parts, as SOLE’s own comparison table and the independent review both state; the review adds two years on the deck and wear items and one year of labour. That two-year parts term is the one place it falls behind the Horizon and BowFlex machines, which offer three. It folds, and there is no subscription: SOLE’s app is free and the console works on its own. SOLE had it at $1,099.99 against a $1,199.99 regular price on 15 October, with a 30-day satisfaction guarantee and curbside delivery. If the 7.0 AT and F63 are the same price on the day you buy, either is a good choice.",
+  },
+  {
+    id: "nordictrack-commercial-1750",
+    name: "NordicTrack Commercial 1750",
+    category: "Best Pick: Upper Mid-Range ($1,800–$2,300)",
+    badge: "Premium Edge",
+    amazonUrl: "https://www.amazon.com/dp/B0D5YKF4SK?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    reviewUrl: "/nordictrack-commercial-1750-treadmill/",
+    priceRange: "$1,799-$2,299",
+    priceBounds: {"low":1799,"high":2299},
+    specs: "60 x 22 in. deck · 3.5 CHP · -3% to 12% · ~340 lbs · subscription-oriented",
+    pros: [
+      "Full 60 x 22-inch deck with room for a long stride and wandering feet",
+      "Roughly 340 lbs assembled — the mass that keeps a frame still at 10 mph",
+      "Heavier deck construction of the kind built to keep its feel with mileage",
+      "Decline included, and genuinely useful for downhill race preparation",
+    ],
+    cons: [
+      "Console built around a subscription with constant prompting",
+      "Five-year cost roughly triples if you pay for that subscription",
+    ],
+    bottomLine: "The best running hardware in this band. Buy it for the deck and frame, and decide about the subscription separately.",
+    description: "Judged purely as a running machine this is the strongest thing under $2,000, and the specifications are consistent about why. Its 60 x 22-inch deck is the full running size, and the 22-inch width gives a taller runner margin against rail strikes on runs past the hour as foot placement wanders. At roughly 340 lbs assembled it has the frame mass that keeps a machine still at 10 mph, and heavier deck construction of this kind is what keeps cushioning from softening with mileage the way cheaper decks tend to. Decline is a real bonus if you race anything with descent. The reservation is entirely about software: the console is built to sell a subscription and will remind you regularly, and paying it takes the five-year cost from roughly $1,900 to over $4,100. The hardware case is unaffected by that; the value case is not.",
+  },
+];
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -79,6 +181,34 @@ const schema = {
       datePublished: "2026-10-06",
       dateModified: "2026-10-06",
       publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+    ...PRODUCTS.map((product) => ({
+      "@type": "Product",
+      name: product.name,
+      description: product.description,
+      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.priceBounds
+        ? {
+            offers: {
+              "@type": "AggregateOffer",
+              priceCurrency: "USD",
+              lowPrice: product.priceBounds.low,
+              highPrice: product.priceBounds.high,
+              url: product.amazonUrl,
+            },
+          }
+        : {}),
+    })),
+    {
+      "@type": "ItemList",
+      name: title,
+      numberOfItems: 4,
+      itemListElement: PRODUCTS.map((product, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: product.name,
+        url: `https://www.treadmillreviewsusa.com/how-much-does-a-treadmill-cost/#${product.id}`,
+      })),
     },
   ],
 };
@@ -171,6 +301,34 @@ const schema = {
       </div>
     </div>
 
+
+    <div class="max-w-3xl mx-auto px-4 pt-8">
+      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
+        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
+        <ul class="list-none m-0 p-0">
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Walking Pad Tier:</span>
+            <a href="#walkingpad-a1-pro" class="font-bold text-gray-900 no-underline hover:underline">WalkingPad A1 Pro</a>
+            <a href="#walkingpad-a1-pro" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Budget Tier:</span>
+            <a href="#horizon-t202" class="font-bold text-gray-900 no-underline hover:underline">Horizon T202</a>
+            <a href="#horizon-t202" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Mid-Range Tier:</span>
+            <a href="#sole-f63" class="font-bold text-gray-900 no-underline hover:underline">SOLE F63</a>
+            <a href="#sole-f63" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Premium Edge:</span>
+            <a href="#nordictrack-commercial-1750" class="font-bold text-gray-900 no-underline hover:underline">NordicTrack Commercial 1750</a>
+            <a href="#nordictrack-commercial-1750" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div class="max-w-3xl mx-auto px-4 py-10">
       <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
         <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
@@ -180,17 +338,18 @@ const schema = {
         <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
           <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Short Answer: How Much Is a Treadmill?</a>
           <a href="#price-tiers" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Treadmill Prices by Tier</a>
-          <a href="#walking-pads" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Walking Pads: $200 to $600</a>
-          <a href="#budget-folding" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Budget Folding Treadmills: $400 to $900</a>
-          <a href="#mid-range" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Mid-Range Treadmills: $1,000 to $2,000</a>
-          <a href="#premium" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Premium Home Treadmills: $2,000 to $4,000</a>
-          <a href="#commercial-curved" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Commercial and Curved Treadmills: $4,000 and Up</a>
-          <a href="#peloton" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. How Much Is a Peloton Treadmill?</a>
-          <a href="#hidden-costs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. The Hidden Costs Beyond the Sticker Price</a>
-          <a href="#used-prices" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. How Much Do Used Treadmills Cost?</a>
-          <a href="#what-drives-price" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. What Actually Drives the Price</a>
-          <a href="#when-to-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. Paying Less for the Same Machine</a>
-          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Frequently Asked Questions</a>
+          <a href="#picks-by-tier" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. Our Pick at Each Price Tier</a>
+          <a href="#walking-pads" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Walking Pads: $200 to $600</a>
+          <a href="#budget-folding" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Budget Folding Treadmills: $400 to $900</a>
+          <a href="#mid-range" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Mid-Range Treadmills: $1,000 to $2,000</a>
+          <a href="#premium" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Premium Home Treadmills: $2,000 to $4,000</a>
+          <a href="#commercial-curved" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Commercial and Curved Treadmills: $4,000 and Up</a>
+          <a href="#peloton" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. How Much Is a Peloton Treadmill?</a>
+          <a href="#hidden-costs" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. The Hidden Costs Beyond the Sticker Price</a>
+          <a href="#used-prices" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. How Much Do Used Treadmills Cost?</a>
+          <a href="#what-drives-price" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">12. What Actually Drives the Price</a>
+          <a href="#when-to-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">13. Paying Less for the Same Machine</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">14. Frequently Asked Questions</a>
         </nav>
       </div>
     </div>
@@ -271,8 +430,91 @@ const schema = {
           </p>
         </div>
 
+        <div id="picks-by-tier" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Our Pick at Each Price Tier</h2>
+<p>
+            Ranges are only useful if you can put a real machine against them. Below is one pick
+            from four of the tiers above, ordered from cheapest to most expensive. Each is a
+            machine we already cover in a full guide, and the price shown is the range we last
+            recorded, not a quote: confirm the current price, seller and specification on the
+            exact Amazon listing before you order. We earn a commission on purchases made through
+            the Amazon links, which does not change which machines we list.
+          </p>
+          <p>
+            We have not included a commercial-tier pick here, because commercial machines are
+            mostly bought through dealers with delivery and service contracts rather than from a
+            shopping cart. Our guide to
+            <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial treadmills</a>
+            covers that tier.
+          </p>
+        </div>
+      </div>
+
+      <!-- Product cards -->
+      <div class="not-prose">
+        {
+          PRODUCTS.map((product, index) => (
+            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
+              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
+                  <div>
+                    <h3 class="text-white font-black text-xl leading-tight m-0">
+                      {index + 1}. {product.name}
+                    </h3>
+                    <p class="text-gray-400 text-xs">{product.category}</p>
+                  </div>
+                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                    {product.badge}
+                  </span>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center gap-2 mb-4 flex-wrap">
+                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
+                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
+                  </div>
+                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
+                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
+                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
+                      <ul class="space-y-2">
+                        {product.pros.map((pro) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
+                      <ul class="space-y-2">
+                        {product.cons.map((con) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="border-t border-gray-100 pt-4">
+                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
+                    <div class="flex flex-wrap items-center gap-3">
+                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+                        {product.amazonLabel} &rarr;
+                      </a>
+                      {product.reviewUrl && (
+                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
+                          Read our full {product.name} review &rarr;
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
         <div id="walking-pads" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Walking Pads: $200 to $600</h2>
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Walking Pads: $200 to $600</h2>
 <p>
             Walking pads are the cheapest way into a motorized belt, and for their intended job —
             steady walking, often under a standing desk — they can be good value. What you are
@@ -298,7 +540,7 @@ const schema = {
         </div>
 
         <div id="budget-folding" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Budget Folding Treadmills: $400 to $900</h2>
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Budget Folding Treadmills: $400 to $900</h2>
 <p>
             This is the tier where most first-time buyers start looking, and where expectations
             most often need adjusting. Machines here are real treadmills: handrails, a console,
@@ -321,7 +563,7 @@ const schema = {
         </div>
 
         <div id="mid-range" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Mid-Range Treadmills: $1,000 to $2,000</h2>
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Mid-Range Treadmills: $1,000 to $2,000</h2>
 <p>
             This is where a treadmill stops being a walking machine you can occasionally jog on
             and becomes something you can train on. The typical spec sheet in this band reads like
@@ -346,7 +588,7 @@ const schema = {
         </div>
 
         <div id="premium" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Premium Home Treadmills: $2,000 to $4,000</h2>
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Premium Home Treadmills: $2,000 to $4,000</h2>
 <p>
             Above about $2,000 the improvements become less about durability and more about
             refinement. You get heavier, quieter frames, wider incline ranges and sometimes decline,
@@ -368,7 +610,7 @@ const schema = {
         </div>
 
         <div id="commercial-curved" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Commercial and Curved Treadmills: $4,000 and Up</h2>
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Commercial and Curved Treadmills: $4,000 and Up</h2>
 <p>
             <strong>Commercial treadmills</strong> are designed for gyms, hotels and clinics, where
             a machine might run for many hours a day under users of every size and gait. They use
@@ -396,7 +638,7 @@ const schema = {
         </div>
 
         <div id="peloton" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. How Much Is a Peloton Treadmill?</h2>
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. How Much Is a Peloton Treadmill?</h2>
 <p>
             The <a href="/peloton-tread/" class="text-[#0F62FE] font-medium" data-autolink>Peloton Tread</a> sits in the premium tier described above. We are deliberately not
             quoting a figure, because Peloton has changed its treadmill pricing several times since
@@ -422,7 +664,7 @@ const schema = {
         </div>
 
         <div id="hidden-costs" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. The Hidden Costs Beyond the Sticker Price</h2>
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. The Hidden Costs Beyond the Sticker Price</h2>
 <p>
             The price on the product page is rarely what a treadmill costs you. These are the
             additions to budget for, as typical figures.
@@ -467,7 +709,7 @@ const schema = {
         </div>
 
         <div id="used-prices" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. How Much Do Used Treadmills Cost?</h2>
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. How Much Do Used Treadmills Cost?</h2>
 <p>
             Treadmills depreciate steeply and then level off. As a typical pattern, a well-kept
             machine sells for roughly half its original price after a couple of years and about a
@@ -494,7 +736,7 @@ const schema = {
         </div>
 
         <div id="what-drives-price" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. What Actually Drives the Price</h2>
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. What Actually Drives the Price</h2>
 <p>
             If two treadmills look similar and one costs twice as much, the difference usually
             sits in one of five places.
@@ -527,7 +769,7 @@ const schema = {
         </div>
 
         <div id="when-to-buy" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">12. Paying Less for the Same Machine</h2>
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Paying Less for the Same Machine</h2>
 <p>
             The price of a given treadmill is not fixed. Fitness equipment tends to be discounted
             around the major retail sales and is often under the most price pressure after the
@@ -546,14 +788,10 @@ const schema = {
             first: the retailer label does not decide it.
           </p>
         </div>
-      </div>
-
-
-      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
 
         <!-- FAQ -->
         <div id="faq" class="scroll-mt-24">
-          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">13. Frequently Asked Questions</h2>
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">14. Frequently Asked Questions</h2>
           <div class="space-y-6">
             <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
               <h3 class="font-bold text-gray-900 mb-2">How much is a treadmill?</h3>
