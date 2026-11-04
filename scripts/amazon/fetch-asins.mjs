@@ -30,6 +30,9 @@ let i = 0;
 for (const [name, files] of products) {
   i++;
   if (!all && asins[name]) continue;
+  // Picked by hand from the search candidates (see fetch-candidates.mjs); matchScore would
+  // reject most of them on wording alone, so --all must not undo the review.
+  if (asins[name]?.hand) continue;
   try {
     const req = new SearchItemsRequestContent();
     req.partnerTag = process.env.AMAZON_CREATORS_PARTNER_TAG;
