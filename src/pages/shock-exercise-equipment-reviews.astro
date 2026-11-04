@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Ab Belt",
     amazonUrl: "https://www.amazon.com/s?k=Slendertone+Abs+Toning+Belt&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "Check current price; varies by model",
     priceBounds: null,
@@ -39,6 +40,7 @@ const PRODUCTS = [
     badge: "Best for Recovery",
     amazonUrl: "https://www.amazon.com/s?k=Compex+Sport+Elite+2.0+Muscle+Stimulator&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "Check current price; premium tier",
     priceBounds: null,
@@ -61,8 +63,9 @@ const PRODUCTS = [
     name: "iReliev ET-1313",
     category: "TENS + EMS handheld",
     badge: "Best Combo Unit",
-    amazonUrl: "https://www.amazon.com/s?k=iReliev+ET-1313+TENS+EMS+Combination+Unit&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B00J5QHNO6?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41rKxpmOUdL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "Check current price; mid-range",
     priceBounds: null,
@@ -85,8 +88,9 @@ const PRODUCTS = [
     name: "AUVON Dual Channel TENS/EMS",
     category: "TENS + EMS handheld",
     badge: "Best Value",
-    amazonUrl: "https://www.amazon.com/s?k=AUVON+Dual+Channel+TENS+EMS+Muscle+Stimulator&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0H82ZW1F3?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/51rqJPH6u6L._SL500_.jpg","width":500,"height":491},
     reviewUrl: null,
     priceRange: "Check current price; budget",
     priceBounds: null,
@@ -111,6 +115,7 @@ const PRODUCTS = [
     badge: "Best Vibration Plate",
     amazonUrl: "https://www.amazon.com/dp/B0794BXVY4?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/51P9-jocYxL._SL500_.jpg","width":500,"height":500},
     reviewUrl: "/lifepro-waver-vibration-plate-review/",
     priceRange: "About $200",
     priceBounds: {"low":200,"high":200},
@@ -208,6 +213,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -468,6 +474,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

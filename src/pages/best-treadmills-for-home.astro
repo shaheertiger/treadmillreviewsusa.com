@@ -1,5 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import ProductImage from "../components/ProductImage.astro";
+import { productImage } from "../data/product-images";
 import TrustBadge from "../components/TrustBadge.astro";
 import SocialProof from "../components/SocialProof.astro";
 
@@ -221,6 +223,7 @@ const schema = {
     ...PRODUCTS.map((product) => ({
       "@type": "Product",
       name: product.name,
+      image: productImage(product.name)?.url,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
     })),
@@ -590,6 +593,7 @@ const schema = {
                 </span>
               </div>
               <div class="p-6">
+                <ProductImage name={product.name} href={product.amazonUrl} />
                 {product.editorialScore && (<p class="text-sm text-gray-600 mt-1 mb-0">Our editorial score: <strong class="text-gray-900">{product.editorialScore}</strong>/5</p>)}
                 <p
                   class="text-gray-700 leading-relaxed mb-6"

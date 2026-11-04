@@ -13,8 +13,9 @@ const PRODUCTS = [
     name: "Schwinn 290 Recumbent Bike",
     category: "Best Recumbent Bike Overall",
     badge: "Best Overall",
-    amazonUrl: "https://www.amazon.com/s?k=Schwinn+290+Recumbent+Bike&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0BHTR1FJ4?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41twuLY95oL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$799–$999",
     priceBounds: {"low":799,"high":999},
@@ -41,6 +42,7 @@ const PRODUCTS = [
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+Fitness+5.0R+Recumbent+Bike&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$649–$999",
     priceBounds: {"low":649,"high":999},
@@ -64,8 +66,9 @@ const PRODUCTS = [
     name: "Schwinn 230 Recumbent Bike",
     category: "Best Mid-Priced Recumbent",
     badge: "Best Under $600",
-    amazonUrl: "https://www.amazon.com/s?k=Schwinn+230+Recumbent+Bike&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B087ZJK977?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41c+y+U39sL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$499–$599",
     priceBounds: {"low":499,"high":599},
@@ -89,8 +92,9 @@ const PRODUCTS = [
     name: "Marcy ME-709 Recumbent Exercise Bike",
     category: "Best Budget Recumbent Bike",
     badge: "Best Budget",
-    amazonUrl: "https://www.amazon.com/s?k=Marcy+ME-709+Recumbent+Exercise+Bike&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B002KV1MJU?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41ujZHz9rUL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$210–$250",
     priceBounds: {"low":210,"high":250},
@@ -116,6 +120,7 @@ const PRODUCTS = [
     badge: "Best Compact",
     amazonUrl: "https://www.amazon.com/s?k=Sunny+Health+Fitness+SF-RB422003+Recumbent+Bike&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$299–$359",
     priceBounds: {"low":299,"high":359},
@@ -214,6 +219,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -481,6 +487,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

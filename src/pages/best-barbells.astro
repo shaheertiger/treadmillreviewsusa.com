@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=olympic+barbell&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "About $300",
     priceBounds: {"low":300,"high":300},
@@ -39,8 +40,9 @@ const PRODUCTS = [
     name: "Synergee Games Barbell",
     category: "Multi-purpose bar with needle bearings, 15 or 20 kg",
     badge: "Best Value",
-    amazonUrl: "https://www.amazon.com/s?k=Synergee+Games+20kg+Barbell&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B07BMBWGD9?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31e5+pCostL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$150–$240",
     priceBounds: {"low":150,"high":240},
@@ -66,6 +68,7 @@ const PRODUCTS = [
     badge: "Made in USA",
     amazonUrl: "https://www.amazon.com/s?k=olympic+barbell&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$305–$365",
     priceBounds: {"low":305,"high":365},
@@ -91,6 +94,7 @@ const PRODUCTS = [
     badge: "Bushing or Bearing",
     amazonUrl: "https://www.amazon.com/s?k=olympic+barbell&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$299–$319",
     priceBounds: {"low":299,"high":319},
@@ -116,6 +120,7 @@ const PRODUCTS = [
     badge: "Best 15 kg Bar",
     amazonUrl: "https://www.amazon.com/s?k=15kg+olympic+barbell&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "About $270",
     priceBounds: {"low":270,"high":270},
@@ -139,8 +144,9 @@ const PRODUCTS = [
     name: "Titan Fitness Performance Series Olympic Barbell",
     category: "Budget 20 kg multi-purpose bar",
     badge: "Best Budget",
-    amazonUrl: "https://www.amazon.com/s?k=olympic+barbell&tag=sktiger-20",
-    amazonLabel: "Shop Similar on Amazon",
+    amazonUrl: "https://www.amazon.com/dp/B0C8BS6L3D?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/21lOW7eJWHL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$168–$210",
     priceBounds: {"low":168,"high":210},
@@ -166,6 +172,7 @@ const PRODUCTS = [
     badge: "Cheapest on Amazon",
     amazonUrl: "https://www.amazon.com/s?k=CAP+Barbell+The+Beast+7ft+Olympic+Bar+OB-86B&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$133–$150",
     priceBounds: {"low":133,"high":150},
@@ -264,6 +271,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -535,6 +543,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

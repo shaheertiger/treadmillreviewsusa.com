@@ -13,8 +13,9 @@ const PRODUCTS = [
     name: "Manduka PRO Yoga Mat 6mm",
     category: "Dense 6 mm PVC studio mat",
     badge: "Best Overall",
-    amazonUrl: "https://www.amazon.com/s?k=Manduka+PRO+Yoga+Mat+6mm&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B01I5CFUHM?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41KVdLvudpS._SL500_.jpg","width":429,"height":500},
     reviewUrl: null,
     priceRange: "$130–$145",
     priceBounds: {"low":130,"high":145},
@@ -38,8 +39,9 @@ const PRODUCTS = [
     name: "Manduka PROlite Yoga Mat 4.7mm",
     category: "Lighter, thinner PVC mat",
     badge: "Best Lighter Premium Mat",
-    amazonUrl: "https://www.amazon.com/s?k=Manduka+PROlite+Yoga+Mat+4.7mm&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B08LNRMGVW?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/51lFxrCKVRL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$99–$110",
     priceBounds: {"low":99,"high":110},
@@ -65,6 +67,7 @@ const PRODUCTS = [
     badge: "Best Grip When Sweaty",
     amazonUrl: "https://www.amazon.com/s?k=Liforme+Classic+Yoga+Mat&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$150–$185",
     priceBounds: {"low":150,"high":185},
@@ -88,8 +91,9 @@ const PRODUCTS = [
     name: "JadeYoga Harmony Yoga Mat",
     category: "Open-cell natural rubber mat",
     badge: "Best Natural Rubber Mat",
-    amazonUrl: "https://www.amazon.com/s?k=JadeYoga+Harmony+Yoga+Mat&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B000ECDSYE?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/21XGozqX9tL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$85–$110",
     priceBounds: {"low":85,"high":110},
@@ -113,8 +117,9 @@ const PRODUCTS = [
     name: "Manduka begin Yoga Mat 5mm",
     category: "Light, reversible TPE mat",
     badge: "Best for Beginners",
-    amazonUrl: "https://www.amazon.com/s?k=Manduka+begin+Yoga+Mat+5mm&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B097CMTWV7?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41eoCZrcNBL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$40–$50",
     priceBounds: {"low":40,"high":50},
@@ -138,8 +143,9 @@ const PRODUCTS = [
     name: "Gaiam Premium 6mm Print Yoga Mat",
     category: "Budget 6 mm PVC mat",
     badge: "Best Budget Yoga Mat",
-    amazonUrl: "https://www.amazon.com/s?k=Gaiam+Premium+6mm+Print+Yoga+Mat&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0BYFFX51Z?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31ll6tWDpRL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$20–$45",
     priceBounds: {"low":20,"high":45},
@@ -163,8 +169,9 @@ const PRODUCTS = [
     name: "Amazon Basics 1/2-Inch Extra Thick Exercise Yoga Mat",
     category: "Thick NBR foam exercise mat",
     badge: "Best Exercise Mat",
-    amazonUrl: "https://www.amazon.com/s?k=Amazon+Basics+1%2F2-Inch+Extra+Thick+Exercise+Yoga+Mat&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B01LP0U5X0?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31zNCrxUlcL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$16–$22",
     priceBounds: {"low":16,"high":22},
@@ -263,6 +270,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -522,6 +530,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Cheapest Aviron",
     amazonUrl: "https://www.amazon.com/s?k=interactive+touchscreen+treadmill&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$1,999-$2,298 at Aviron on 20 Oct 2026",
     priceBounds: {"low":1999,"high":2298},
@@ -41,6 +42,7 @@ const PRODUCTS = [
     badge: "Most Buyers",
     amazonUrl: "https://www.amazon.com/s?k=interactive+touchscreen+treadmill&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$2,499-$3,097 at Aviron on 20 Oct 2026",
     priceBounds: {"low":2499,"high":3097},
@@ -67,6 +69,7 @@ const PRODUCTS = [
     badge: "Steepest Incline",
     amazonUrl: "https://www.amazon.com/s?k=interactive+touchscreen+treadmill&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$2,999-$3,597 at Aviron on 20 Oct 2026",
     priceBounds: {"low":2999,"high":3597},
@@ -174,6 +177,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -465,6 +469,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

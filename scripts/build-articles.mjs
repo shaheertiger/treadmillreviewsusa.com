@@ -41,6 +41,9 @@ const withTag = (url) => {
   return `${clean}${clean.includes('?') ? '&' : '?'}tag=sktiger-20`;
 };
 const amazonUrl = (p) => withTag(rawAmazonUrl(p));
+// The Amazon listing's own photo, only for products with a verified ASIN: a "Shop Similar"
+// fallback or an unmatched search link has no listing that is certainly this product.
+const productImage = (p) => ASINS[p.name]?.image ?? null;
 const rawAmazonUrl = (p) =>
   ASINS[p.name]
     ? `https://www.amazon.com/dp/${ASINS[p.name].asin}?tag=sktiger-20&linkCode=ll1`
@@ -79,6 +82,7 @@ ${products
     badge: ${jsStr(p.badge)},
     amazonUrl: ${jsStr(amazonUrl(p))},
     amazonLabel: ${jsStr(isFallback(p) ? 'Shop Similar on Amazon' : 'Check Price on Amazon')},
+    image: ${productImage(p) ? JSON.stringify(productImage(p)) : 'null'},
     reviewUrl: ${p.reviewUrl ? jsStr(p.reviewUrl) : 'null'},
     priceRange: ${jsStr(p.priceRange)},
     priceBounds: ${JSON.stringify(priceBounds(p.priceRange))},
@@ -127,6 +131,7 @@ function schemaBlock(spec) {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -211,6 +216,11 @@ const PRODUCT_CARDS = `      <!-- Product cards -->
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
