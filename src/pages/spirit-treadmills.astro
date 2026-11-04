@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Folding Pick",
     amazonUrl: "https://www.amazon.com/dp/B07KQ8Z8JP?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41-4F7a-pkL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$2,949.99 at Spirit on 14 Oct 2026",
     priceBounds: {"low":2949.99,"high":2949.99},
@@ -41,6 +42,7 @@ const PRODUCTS = [
     badge: "Non-Folding Pick",
     amazonUrl: "https://www.amazon.com/s?k=Spirit+Fitness+XT685+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$3,199.99 at Spirit on 14 Oct 2026",
     priceBounds: {"low":3199.99,"high":3199.99},
@@ -140,6 +142,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -342,6 +345,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

@@ -16,6 +16,12 @@ export const AMAZON_TAG = 'sktiger-20';
 
 export const dpLink = (asin) => `https://www.amazon.com/dp/${asin}?tag=${AMAZON_TAG}&linkCode=ll1`;
 
+/** The listing's primary image as { url, width, height }, or null. */
+export const imageOf = (item) => {
+  const img = item?.images?.primary?.large;
+  return img?.url ? { url: img.url, width: img.width, height: img.height } : null;
+};
+
 export function loadAsins() {
   return existsSync(ASIN_PATH) ? JSON.parse(readFileSync(ASIN_PATH, 'utf8')) : {};
 }
@@ -109,6 +115,24 @@ export const HAND_REJECTED = new Set([
   'COROS POD 2', 'Beats Powerbeats Fit', 'Theragun Mini (3rd Gen)', 'Panamax MD2', 'Wahoo KICKR Headwind',
   "Mrs. Meyer's Clean Day Liquid Dish Soap", 'Bells of Steel Cable Tower (Plate-Loaded)',
   'REP Fitness Strata Weight Vest', 'PowerBlock Elite USA 90', 'Garmin Forerunner 170', 'PowerBlock Pro 100 EXP',
+  // Checked by hand on 2026-11-04: a sibling model (Cubii GO, Body Scan, Basic Series,
+  // Endor, Thermacool 2, Vintage Oak), an EU-plug or kg listing, a bundle, rack pins,
+  // an open bar for a hex bar, or a generic listing for a named model.
+  "Bells of Steel Pandemonium Squat",
+  "Dynamic Andora 2-Person Far Infrared Sauna",
+  "Hyperice Normatec Elite Legs",
+  "Bodylastics Pro Series 5-Band Resistance Band Set",
+  "Titan Pro 4D Astro Massage Chair",
+  "Cubii Move Under-Desk Elliptical",
+  "Titan Fitness Rackable Hex Trap Bar",
+  "Withings Body Smart",
+  "RENPHO Active+ Massage Gun",
+  "Hyperice Vyper 3",
+  "REP Fitness Competition Bumper Plates (LB)",
+  "Everlast Powercore Freestanding Heavy Bag",
+  "TriggerPoint Massage Lacrosse Ball 2-Pack",
+  "WaterRower Oak or Natural Rowing Machine with S4 Monitor",
+  'CAP Barbell "The Beast" 7 ft Olympic Bar',
 ]);
 
 /**

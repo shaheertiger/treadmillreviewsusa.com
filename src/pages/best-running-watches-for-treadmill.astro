@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0FYGTNYRW?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31Xmlf0gpOL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$249",
     priceBounds: {"low":249,"high":249},
@@ -39,6 +40,7 @@ const PRODUCTS = [
     badge: "Most Runners",
     amazonUrl: "https://www.amazon.com/s?k=Garmin+Forerunner+170&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "Around $300",
     priceBounds: {"low":300,"high":300},
@@ -63,6 +65,7 @@ const PRODUCTS = [
     badge: "Premium Pick",
     amazonUrl: "https://www.amazon.com/dp/B0F8QWPVNK?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41QSY1rvKgL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "Around $750",
     priceBounds: {"low":750,"high":750},
@@ -87,6 +90,7 @@ const PRODUCTS = [
     badge: "GymKit Pick",
     amazonUrl: "https://www.amazon.com/s?k=Apple+Watch+Series+12&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "From $399",
     priceBounds: {"low":399,"high":399},
@@ -112,6 +116,7 @@ const PRODUCTS = [
     badge: "Budget Pick",
     amazonUrl: "https://www.amazon.com/s?k=Polar+Street+X&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "Around $250",
     priceBounds: {"low":250,"high":250},
@@ -136,6 +141,7 @@ const PRODUCTS = [
     badge: "Simple Pick",
     amazonUrl: "https://www.amazon.com/s?k=Suunto+Run+watch&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "Around $249",
     priceBounds: {"low":249,"high":249},
@@ -233,6 +239,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -488,6 +495,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

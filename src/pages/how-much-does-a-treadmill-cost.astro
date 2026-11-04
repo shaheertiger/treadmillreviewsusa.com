@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Walking Pad Tier",
     amazonUrl: "https://www.amazon.com/s?k=WalkingPad+A1+Pro+Foldable+Under+Desk+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$529–$699",
     priceBounds: {"low":529,"high":699},
@@ -40,6 +41,7 @@ const PRODUCTS = [
     badge: "Budget Tier",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+Fitness+T202+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "Around $899",
     priceBounds: {"low":899,"high":899},
@@ -65,6 +67,7 @@ const PRODUCTS = [
     badge: "Mid-Range Tier",
     amazonUrl: "https://www.amazon.com/s?k=SOLE+F63+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: "/sole-f63-treadmill/",
     priceRange: "$1,100–$1,200",
     priceBounds: {"low":1100,"high":1200},
@@ -90,6 +93,7 @@ const PRODUCTS = [
     badge: "Premium Edge",
     amazonUrl: "https://www.amazon.com/dp/B0D5YKF4SK?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31BAhBBSPSL._SL500_.jpg","width":500,"height":500},
     reviewUrl: "/nordictrack-commercial-1750-treadmill/",
     priceRange: "$1,799-$2,299",
     priceBounds: {"low":1799,"high":2299},
@@ -114,6 +118,7 @@ const PRODUCTS = [
     badge: "Commercial Tier",
     amazonUrl: "https://www.amazon.com/dp/B008PAS1HG?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41r7LlOB16L._SL500_.jpg","width":500,"height":457},
     reviewUrl: "/life-fitness-t3-treadmill/",
     priceRange: "$3,499–$3,999",
     priceBounds: {"low":3499,"high":3999},
@@ -212,6 +217,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -497,6 +503,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=TriggerPoint+GRID+1.0+Foam+Roller&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$29–$40",
     priceBounds: {"low":29,"high":40},
@@ -38,8 +39,9 @@ const PRODUCTS = [
     name: "TriggerPoint CORE Foam Roller",
     category: "Medium-density solid foam roller",
     badge: "Best for Beginners",
-    amazonUrl: "https://www.amazon.com/s?k=TriggerPoint+CORE+Foam+Roller&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B01BVACFAK?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41ud7qKu5XL._SL500_.jpg","width":500,"height":235},
     reviewUrl: null,
     priceRange: "$25–$70",
     priceBounds: {"low":25,"high":70},
@@ -63,8 +65,9 @@ const PRODUCTS = [
     name: "RumbleRoller Original Foam Roller",
     category: "High-profile textured roller",
     badge: "Best Textured Roller",
-    amazonUrl: "https://www.amazon.com/s?k=RumbleRoller+Original+Foam+Roller&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0716Q348W?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/3136XZ0QcqL._SL500_.jpg","width":500,"height":286},
     reviewUrl: null,
     priceRange: "$50–$75",
     priceBounds: {"low":50,"high":75},
@@ -88,8 +91,9 @@ const PRODUCTS = [
     name: "TriggerPoint GRID X Foam Roller",
     category: "Extra-firm hollow-core roller",
     badge: "Best Extra-Firm",
-    amazonUrl: "https://www.amazon.com/s?k=TriggerPoint+GRID+X+Foam+Roller&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B00K06I222?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31+nnJ7YpjL._SL500_.jpg","width":234,"height":500},
     reviewUrl: null,
     priceRange: "$58",
     priceBounds: {"low":58,"high":58},
@@ -115,6 +119,7 @@ const PRODUCTS = [
     badge: "Best Vibrating Roller",
     amazonUrl: "https://www.amazon.com/s?k=Hyperice+Vyper+3+Vibrating+Roller&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$209",
     priceBounds: {"low":209,"high":209},
@@ -140,6 +145,7 @@ const PRODUCTS = [
     badge: "Best Vibrating Value",
     amazonUrl: "https://www.amazon.com/s?k=Therabody+WaveRoller&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$180",
     priceBounds: {"low":180,"high":180},
@@ -238,6 +244,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -499,6 +506,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

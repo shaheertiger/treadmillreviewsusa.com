@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Sole%20F63+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: "/sole-f63-treadmill/",
     priceRange: "$899-$1,099",
     priceBounds: {"low":899,"high":1099},
@@ -39,6 +40,7 @@ const PRODUCTS = [
     badge: "Easiest to Move",
     amazonUrl: "https://www.amazon.com/s?k=ProForm%20Power%20995i+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: "/proform-power-995i-treadmill/",
     priceRange: "$799-$999",
     priceBounds: {"low":799,"high":999},
@@ -63,6 +65,7 @@ const PRODUCTS = [
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/s?k=NordicTrack%20C%20700+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: "/nordictrack-c-700-treadmill/",
     priceRange: "$599-$799",
     priceBounds: {"low":599,"high":799},
@@ -87,6 +90,7 @@ const PRODUCTS = [
     badge: "Best for Runners",
     amazonUrl: "https://www.amazon.com/dp/B0HFSZR19W?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31qNRVPVU1L._SL500_.jpg","width":500,"height":500},
     reviewUrl: "/sole-f65-treadmill/",
     priceRange: "$1,199-$1,399",
     priceBounds: {"low":1199,"high":1399},
@@ -111,6 +115,7 @@ const PRODUCTS = [
     badge: "Best Screen",
     amazonUrl: "https://www.amazon.com/s?k=ProForm%20Power%201295i+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: "/proform-power-1295i-treadmill/",
     priceRange: "$999-$1,299",
     priceBounds: {"low":999,"high":1299},
@@ -135,6 +140,7 @@ const PRODUCTS = [
     badge: "Best Classes",
     amazonUrl: "https://www.amazon.com/s?k=NordicTrack%20C%20990+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: "/nordictrack-c-990-treadmill/",
     priceRange: "$999-$1,299",
     priceBounds: {"low":999,"high":1299},
@@ -232,6 +238,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -527,6 +534,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

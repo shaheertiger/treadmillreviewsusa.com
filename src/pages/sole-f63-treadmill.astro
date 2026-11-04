@@ -1,5 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import ProductImage from "../components/ProductImage.astro";
+import { productImage } from "../data/product-images";
 import TrustBadge from "../components/TrustBadge.astro";
 import SocialProof from "../components/SocialProof.astro";
 
@@ -130,6 +132,7 @@ const schema = {
     {
       "@type": "Product",
       name: PRODUCT.name,
+      image: productImage(PRODUCT.name)?.url,
       description,
       brand: { "@type": "Brand", name: "Sole Fitness" },
     },
@@ -220,6 +223,7 @@ const schema = {
           great walking and light-jogging treadmill. It is not the machine
           to buy if serious daily running is the plan.
         </p>
+        <ProductImage name={PRODUCT.name} href={PRODUCT.amazonUrl} />
         <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-gray-100">
           <p class="text-2xl font-black text-gray-900">{PRODUCT.priceRange}</p>
           <a id="cta" href={PRODUCT.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
