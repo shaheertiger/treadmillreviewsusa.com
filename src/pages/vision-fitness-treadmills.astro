@@ -1,0 +1,788 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "Vision Fitness Treadmills (2026): The T600, Old T9200 and the 2026 Recall";
+const description =
+  "Vision Fitness now lists one treadmill, the light-commercial T600/T600E, sold through dealers. Its figures and price, what happened to the T9200, T40, T80 and TF20 home models, and the January 2026 power-cord recall.";
+
+const PRODUCTS = [
+  {
+    id: "vision-t600",
+    name: "Vision T600",
+    brand: "Vision",
+    category: "Vision’s Only Current Treadmill, LED Console",
+    badge: "Current Vision",
+    amazonUrl: "https://www.amazon.com/s?k=Vision+Fitness+T600+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    image: null,
+    reviewUrl: null,
+    priceRange: "Through Vision dealers; no published price",
+    priceBounds: null,
+    specs: "22 x 60 in. running surface · 4.2 HP AC drive · 0.5-12 mph (120 V) · 0-15% incline · 400 lb max user · non-folding",
+    pros: [
+      "An AC drive and a 400 lb rating, figures Vision and a US dealer agree on",
+      "A 22 by 60-inch running surface on a reversible deck with UltraZone cushioning",
+      "Built for light-commercial use, so far beyond typical home hours",
+      "Vision lists a standard NEMA 5-15 plug for 100-120 V supplies",
+    ],
+    cons: [
+      "Vision publishes no price and says availability varies by region",
+      "408 lb and 85 inches long; it does not fold",
+      "One overseas listing gives 3.0 HP and some give 392 lb, against Vision’s 4.2 HP and 408 lb",
+      "Warranty terms depend on the dealer and on home or commercial use",
+    ],
+    bottomLine: "A gym-grade treadmill for a buyer with the space and budget who can reach a Vision dealer; most home users will do as well for far less.",
+    description: "The T600 is the only treadmill on Vision Fitness’s US site. Vision lists a 4.2 HP AC drive, a 22 by 60-inch running surface, 0.5 to 12 mph on 100-120 V (13.8 mph on 220 V), 0 to 15% incline, a 400 lb maximum user weight, 85 by 36 by 65 inches and 408 lb, with a dot-matrix LED console; Fitness Supply’s US listing agrees on each figure. Vision publishes no price and asks buyers to contact a local office. Earlier dealer listings in search results put the LED model at about $5,400 in the US, but we could not confirm a live US price on 5 November 2026.",
+  },
+  {
+    id: "vision-t600e",
+    name: "Vision T600E",
+    brand: "Vision",
+    category: "The T600 with a 22-Inch Touchscreen",
+    badge: "Entertainment Console",
+    amazonUrl: "https://www.amazon.com/s?k=Vision+Fitness+T600E+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    image: null,
+    reviewUrl: null,
+    priceRange: "$8,799 at Fitness Supply on 5 Nov 2026",
+    priceBounds: {"low":8799,"high":8799},
+    specs: "22 x 60 in. running surface · 4.2 HP AC drive · 0.5-12 mph · 0-15% incline · 400 lb max user · 22 in. touchscreen",
+    pros: [
+      "The same AC drive, deck and 400 lb rating as the T600",
+      "A 22-inch capacitive touchscreen with Wi-Fi, Bluetooth and HDMI screen casting",
+      "Fitness Supply lists a commercial-use warranty of 7 years frame, 5 motor, 5 parts, 2 labour",
+    ],
+    cons: [
+      "$8,799 at the one US dealer price we could confirm",
+      "Entertainment consoles age faster than the frame they sit on",
+      "Delivery and labour cover depend on the dealer’s region",
+    ],
+    bottomLine: "Only for buyers who want a club-style touchscreen treadmill at home and will pay commercial money for it.",
+    description: "The T600E is the T600 frame with Vision’s Entertainment console. Fitness Supply, an Idaho dealer, listed it at $8,799 on 5 November 2026 with a 22-inch capacitive touchscreen, Wi-Fi, Bluetooth, USB, HDMI input and CSAFE, and the same 4.2 HP AC drive, 22 by 60-inch surface, 0.5 to 12 mph, 0 to 15% incline, 400 lb capacity and 408 lb weight that Vision lists. Its commercial-use warranty was 7 years on the frame, 5 on the motor and parts, 2 on labour and 90 days on wear items, with a typical lead time of two to three weeks.",
+  },
+  {
+    id: "horizon-7-8-at",
+    name: "Horizon 7.8 AT",
+    brand: "Horizon",
+    category: "Johnson Health Tech’s Home Treadmill in Vision’s Old Price Band",
+    badge: "Best for Most Homes",
+    amazonUrl: "https://www.amazon.com/s?k=Horizon+7.8+AT+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    image: null,
+    reviewUrl: "/horizon-7-8-at-treadmill/",
+    priceRange: "$1,999 at Horizon on 5 Nov 2026",
+    priceBounds: {"low":1999,"high":1999},
+    specs: "22 x 60 in. deck · 0.5-12 mph · 0-15% incline · 375 lb capacity · folding · Bluetooth FTMS",
+    pros: [
+      "The same company as Vision, with the same 22 by 60-inch deck and 15% incline",
+      "A 375 lb rating, close to the T600’s 400 lb",
+      "Lifetime frame and motor cover, five years on parts and two on labour",
+      "Folds, which no Vision treadmill on sale does",
+    ],
+    cons: [
+      "A home DC treadmill, not an AC light-commercial machine",
+      "No touchscreen; you bring a tablet",
+    ],
+    bottomLine: "For a home buyer who used to shop Vision, this is the current Johnson Health Tech equivalent at about a quarter of the T600E’s price.",
+    description: "The 7.8 AT is Horizon’s top home treadmill. Our review, checked on 5 November 2026 against Horizon’s US store and independent coverage, gives a 22 by 60-inch deck, 0.5 to 12 mph, 0 to 15% incline, a 375 lb maximum user weight and Bluetooth FTMS app connectivity, with a lifetime frame and motor warranty, five years on parts and two on labour. It was $1,999 at Horizon that day.",
+  },
+  {
+    id: "life-fitness-run-cx",
+    name: "Life Fitness Run CX",
+    brand: "Life Fitness",
+    category: "Premium Home Alternative from Another Club Brand",
+    badge: "Premium Home Pick",
+    amazonUrl: "https://www.amazon.com/s?k=Life+Fitness+Run+CX+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    image: null,
+    reviewUrl: "/life-fitness-run-cx-treadmill/",
+    priceRange: "$3,919 at Life Fitness on 5 Nov 2026",
+    priceBounds: {"low":3919,"high":3919},
+    specs: "22 x 60 in. running surface · 3.0 HP continuous DC (6.0 HP peak) · 0.5-12 mph · 0-15% incline · 400 lb max user",
+    pros: [
+      "The T600’s 400 lb rating and 22 by 60-inch surface at well under the T600E’s price",
+      "Lifetime frame and Lifespring cover, 10 years on the motor and 7 on parts",
+      "Delivery and installation included",
+    ],
+    cons: [
+      "A DC motor, not an AC drive",
+      "Life Fitness quoted a five-to-seven-week lead time",
+      "No touchscreen option",
+    ],
+    bottomLine: "The pick for a buyer who wants club-brand build at home without paying light-commercial prices.",
+    description: "The Run CX is Life Fitness’s premium home treadmill. Life Fitness’s US store lists a 22 by 60-inch running surface, a 3.0 HP continuous (6.0 HP peak) DC motor, 0.5 to 12 mph, 0 to 15% incline and a 400 lb maximum user weight, which our review cross-checked against an authorised dealer, with lifetime frame and Lifespring cover, 10 years on the motor, 7 on parts, 3 on the console and 1 on labour. On 5 November 2026 it was $3,919, down from $4,899, with delivery and installation.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Brands", item: "https://www.treadmillreviewsusa.com/brands/" },
+        { "@type": "ListItem", position: 3, name: "Vision Fitness Treadmills", item: "https://www.treadmillreviewsusa.com/vision-fitness-treadmills/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Does Vision Fitness still make treadmills?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, but only one on its US site on 5 November 2026: the light-commercial T600, with an LED console or as the T600E with a 22-inch touchscreen, sold through dealers. The home models such as the TF20, T40, T80 and T9200 are no longer listed; the recall notice says the recalled home models were sold until May 2025.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Who owns Vision Fitness?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Johnson Health Tech, the Taiwanese group that also owns Horizon, Matrix, Bowflex and Schwinn Fitness. Johnson Health Tech North America is the firm named on the 2026 Vision treadmill recall.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much is a Vision T600 treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Vision publishes no price. On 5 November 2026 Fitness Supply, a US dealer, listed the touchscreen T600E at $8,799. Earlier US listings put the LED T600 at about $5,400, which we could not confirm on the day. Prices vary by dealer and region.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What are the Vision T600 specs?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Vision and a US dealer agree on a 4.2 HP AC drive, a 22 by 60-inch running surface, 0.5 to 12 mph on 120 V, 0 to 15% incline, a 400 lb user limit, 85 by 36 by 65 inches and 408 lb. It does not fold.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is the Vision T9200 a good treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "It was a basic home treadmill from the 2000s, with figures that vary by version: about 2.5 HP, 12 mph, 12% incline and 325 lb for the basic model in one review, and 3.0 CHP for the Deluxe. Any T9200 is now around 20 years old; buy one only for very little and expect to source parts from third parties.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Which Vision treadmills were recalled?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "In January 2026 Johnson Health Tech recalled about 47,000 Matrix Retail and Vision treadmills, including the Vision T9800, TF20, T40 and T80 made from 2007 to January 2024, because the power cord can work loose and overheat. The remedy is a free locking power cord. A 2006 recall covered about 480 Premier consoles.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What replaced Vision home treadmills?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Johnson Health Tech’s other home brands. The Horizon 7.8 AT, $1,999 on 5 November 2026, has a 22 by 60-inch deck, 15% incline and 375 lb rating; Matrix covers the premium dealer market Vision’s top home models sold into.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
+      datePublished: "2026-11-05",
+      dateModified: "2026-11-05",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+    ...PRODUCTS.map((product) => ({
+      "@type": "Product",
+      name: product.name,
+      description: product.description,
+      brand: { "@type": "Brand", name: product.brand },
+      ...(product.image ? { image: product.image.url } : {}),
+      ...(product.priceBounds
+        ? {
+            offers: {
+              "@type": "AggregateOffer",
+              priceCurrency: "USD",
+              lowPrice: product.priceBounds.low,
+              highPrice: product.priceBounds.high,
+              url: product.amazonUrl,
+            },
+          }
+        : {}),
+    })),
+    {
+      "@type": "ItemList",
+      name: title,
+      numberOfItems: 4,
+      itemListElement: PRODUCTS.map((product, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: product.name,
+        url: `https://www.treadmillreviewsusa.com/vision-fitness-treadmills/#${product.id}`,
+      })),
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-11-05",
+    modifiedTime: "2026-11-05",
+    author: "Shaheer Ali Khan",
+    section: "Fitness Equipment",
+    tags: [
+      "vision fitness treadmill",
+      "treadmill vision fitness",
+      "vision fitness t600 treadmill",
+      "vision fitness treadmill t9200",
+      "vision t600e treadmill",
+      "vision treadmill recall",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "See the T600 and Alternatives", link: "#t600" }}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-visionfitnesstreadmills" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-visionfitnesstreadmills)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Buyer’s Guide
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated November 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          Vision Fitness Treadmills: <span class="text-[#5AA9FF]">The T600 Today, and the Home Models Before It</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          Vision Fitness, a Johnson Health Tech brand, used to sell a full line of home treadmills through specialty dealers — the T9200, T9800, TF20, T40 and T80 among them. Its US site now lists one treadmill, the light-commercial T600 with an LED or touchscreen console, and directs buyers to a local Vision office. Here is what the T600 is and costs, what the old home models were, which of them are in the January 2026 recall, and where to look instead.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            The Short Answer
+          </a>
+          <a href="#recalls" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            The 2026 Recall
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
+          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">November 5, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="1.3k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
+          5 November 2026 we checked Vision Fitness's US site (its home page, cardio catalogue and the T600/T600E
+          product page), Fitness Supply's US listing for the T600E with its warranty terms, other US, Canadian,
+          Australian and UK dealer listings for the T600 seen in search results, TreadmillReviews.com and Treadmill
+          Doctor coverage of the T9200 and manuals and parts listings for older models, the US Consumer Product Safety
+          Commission's recall database for Vision Fitness and Johnson Health Tech (recall 26-203 of January 2026 and
+          recall 06-556 of 2006), and Horizon's and Life Fitness's US stores for the alternatives, as checked for our
+          reviews of those machines the same day. Vision publishes no prices; the T600E price is one dealer's, and
+          dealer prices vary by region and change often. Conflicting figures are set out in the text and kept off the
+          cards. We have not tested any Vision treadmill. As an Amazon Associate we earn from qualifying purchases;
+          that does not change what we say.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="max-w-3xl mx-auto px-4 pt-8">
+      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
+        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
+        <ul class="list-none m-0 p-0">
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Current Vision:</span>
+            <a href="#vision-t600" class="font-bold text-gray-900 no-underline hover:underline">Vision T600</a>
+            <a href="#vision-t600" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Entertainment Console:</span>
+            <a href="#vision-t600e" class="font-bold text-gray-900 no-underline hover:underline">Vision T600E</a>
+            <a href="#vision-t600e" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Most Homes:</span>
+            <a href="#horizon-7-8-at" class="font-bold text-gray-900 no-underline hover:underline">Horizon 7.8 AT</a>
+            <a href="#horizon-7-8-at" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Premium Home Pick:</span>
+            <a href="#life-fitness-run-cx" class="font-bold text-gray-900 no-underline hover:underline">Life Fitness Run CX</a>
+            <a href="#life-fitness-run-cx" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. The Short Answer</a>
+          <a href="#who-is-vision" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Who Makes Vision Fitness Treadmills?</a>
+          <a href="#t600" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The T600</a>
+          <a href="#older-models" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Older Models</a>
+          <a href="#recalls" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. The 2026 Recall</a>
+          <a href="#alternatives" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. What to Buy Instead of a Vision Home Treadmill</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          For twenty years "Vision Fitness" meant a particular kind of treadmill: sold through specialty fitness
+          stores rather than big-box retailers, a step above department-store brands in build and warranty, and
+          made by the same company as Horizon and Matrix. Searches still reflect that, for the T9200 in particular.
+          But the line has changed. Vision's US website now presents the brand as a supplier to facilities —
+          gyms, apartment buildings, corporate fitness centres — and its catalogue lists a single treadmill, the
+          T600. The older home treadmills are no longer listed, and four of them were recalled in January 2026 for
+          a loose power cord. This guide covers the T600 as a home purchase, what the older models were, how to
+          check a used one, and the Johnson Health Tech home treadmills that now fill Vision's old role.
+        </p>
+
+        <div id="short-answer" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Does Vision Fitness Still Make Home Treadmills? The Short Answer</h2>
+<p>
+            <strong>Not as it used to. On 5 November 2026 Vision Fitness's US site listed one treadmill, the
+            light-commercial T600 (or T600E with a touchscreen), sold through dealers with no published price. The
+            older home models, including the T9200 and the T40, T80 and TF20, are no longer listed, and several are in
+            a January 2026 recall.</strong>
+          </p>
+          <p>
+            The T600 is a serious machine: a 4.2 HP AC drive, a 22 by 60-inch running surface, 15% incline and a 400 lb
+            rating, figures Vision and a US dealer agree on. It is also non-folding, weighs 408 lb and, as a T600E,
+            cost $8,799 at the one US dealer price we could confirm. That puts it in a different category from the
+            Vision home treadmills people remember.
+          </p>
+          <p>
+            For most homes, Vision's own parent company is the better place to look: the
+            <a href="/horizon-7-8-at-treadmill/" class="text-[#0F62FE] font-medium">Horizon 7.8 AT</a> has the same deck
+            size and incline with a 375 lb rating for $1,999. If you are buying a used Vision, check its model and serial
+            number against the recall before anything else. We have not tested any Vision treadmill.
+          </p>
+        </div>
+
+        <div id="who-is-vision" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Who Makes Vision Fitness Treadmills?</h2>
+<p>
+            Vision Fitness is a brand of Johnson Health Tech, the Taiwanese group that also owns Horizon, Matrix,
+            Bowflex and Schwinn Fitness. Vision's site is built on Johnson Health Tech's asset servers, and the January
+            2026 recall names Johnson Health Tech North America as the firm responsible for Vision treadmills.
+          </p>
+          <p>
+            Historically, the brands had distinct jobs. Horizon sold to general retail, Matrix covered commercial clubs
+            and, later, premium home machines, and Vision sat between them: home treadmills such as the TF20, T40 and
+            T80 sold through specialty fitness dealers, plus light-commercial equipment. The recall notice lists Vision
+            among the brands sold through dealers including G&amp;G Fitness, Fitness Expo and Treadmill Outlet, and
+            online at visionfitness.com, from 2012 until May 2025.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What Vision sells now</h3>
+          <p>
+            Vision's US site now describes treadmills built to handle high-traffic environments and addresses gyms,
+            health clubs, corporate gyms and multifamily housing. Alongside the T600 it lists ellipticals, bikes, the
+            Summit cardio series and selectorized, plate-loaded and free-weight strength equipment, and asks buyers to
+            contact a local Vision office rather than buy online. It does not mention home use. Johnson Health Tech's
+            premium home treadmills now carry the
+            <a href="/matrix-fitness/" class="text-[#0F62FE] font-medium">Matrix</a> name, and its mid-range home
+            treadmills the <a href="/horizon-fitness/" class="text-[#0F62FE] font-medium">Horizon</a> name.
+          </p>
+        </div>
+
+        <div id="t600" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The Vision T600 and T600E</h2>
+<p>
+            The T600 is one frame with two consoles. The T600 has a 10 by 14 dot-matrix LED display with a dedicated
+            heart-rate zone readout; the T600E has the Entertainment console, a 22-inch touchscreen. Vision's page
+            gives the same figures for both.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Figure</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Vision</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Fitness Supply (US dealer)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Motor</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4.2 HP AC</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4.2 HP AC</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Running surface</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22 x 60 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22 x 60 in.</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Speed (120 V)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.5-12 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.5-12 mph</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Incline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0-15%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0-15%</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Max user</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">400 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">400 lb</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Size / weight</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">85 x 36 x 65 in., 408 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">85 x 36 x 65 in., 408 lb</td></tr>
+            </tbody>
+          </table></div>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Conflicts we found</h3>
+          <p>
+            Overseas dealer listings are less consistent. One gives a 3.0 HP drive, and an Australian listing gives an
+            assembled weight of 392 lb. On 220 V supplies the top speed is 13.8 mph, which explains some listings' higher
+            figures. We have used Vision's and the US dealer's matching figures on the cards.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Price and warranty</h3>
+          <p>
+            Vision publishes no prices. Fitness Supply listed the T600E at $8,799 on 5 November 2026. A US T600ENT listing
+            seen in search results showed the same figure; earlier listings put the LED T600 at about $5,400 in the US and
+            $4,699 in Canada, but we could not confirm those on the day. Warranty depends on the dealer and on how the
+            treadmill is used: Fitness Supply's commercial-use terms were 7 years on the frame, 5 on the motor and parts,
+            2 on labour and 90 days on wear items, and another retailer page in search results showed a lifetime frame,
+            5-year motor and 2-year labour term, which may be the residential version. Ask the dealer for the warranty in
+            writing, for home use, before you buy.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Putting one in a home</h3>
+          <p>
+            Vision lists a NEMA 5-15 plug for 100-120 V supplies, the ordinary household plug shape, so a 20-amp
+            circuit may not be required; ask the dealer whether a dedicated circuit is recommended. The bigger issues are
+            size and weight: 85 inches long, 65 inches high and 408 lb, with no fold. Our guide to putting a
+            <a href="/gym-treadmill-for-home/" class="text-[#0F62FE] font-medium">gym treadmill in a home</a>
+            covers floors, stairs and access routes.
+          </p>
+        </div>
+      </div>
+
+      <!-- Product cards -->
+      <div class="not-prose">
+        {
+          PRODUCTS.map((product, index) => (
+            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
+              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
+                  <div>
+                    <h3 class="text-white font-black text-xl leading-tight m-0">
+                      {index + 1}. {product.name}
+                    </h3>
+                    <p class="text-gray-400 text-xs">{product.category}</p>
+                  </div>
+                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                    {product.badge}
+                  </span>
+                </div>
+                <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                    </a>
+                  )}
+                  <div class="flex items-center gap-2 mb-4 flex-wrap">
+                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
+                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
+                  </div>
+                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
+                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
+                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
+                      <ul class="space-y-2">
+                        {product.pros.map((pro) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
+                      <ul class="space-y-2">
+                        {product.cons.map((con) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="border-t border-gray-100 pt-4">
+                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
+                    <div class="flex flex-wrap items-center gap-3">
+                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+                        {product.amazonLabel} &rarr;
+                      </a>
+                      {product.reviewUrl && (
+                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
+                          Read our full {product.name} review &rarr;
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="older-models" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Older Vision Treadmills: T9200, T9800, TF20, T40 and T80</h2>
+<p>
+            Most Vision treadmills for sale today are older home models from specialty dealers. These are the ones you
+            are most likely to meet.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Vision T9200</h3>
+          <p>
+            The T9200 was an entry home treadmill from the 2000s; parts suppliers list 2002-2003 and 2004 versions, and
+            it was sold in Simple, Deluxe and Premier console versions. TreadmillReviews.com's coverage gives a 2.5 HP
+            motor, a 325 lb user rating, 12 mph, 12% incline and a non-folding frame for the basic version; a listing for
+            the Deluxe gives 3.0 CHP. Because the figures vary by version and year, check the manual for the exact unit.
+            Any T9200 is now around two decades old. Parts such as walking belts are still listed by third-party
+            suppliers, but it is a machine to buy for very little, not for its name.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">T9800, TF20, T40 and T80</h3>
+          <p>
+            These are the home models covered by the January 2026 recall, sold from 2012 until May 2025. The TF20 was
+            Vision's folding entry model, the T40 a non-folding home treadmill, the T80 the top home model, sold for
+            heavy home and light commercial use, and the T9800 an older premium model. The recall notice describes the
+            recalled units as having a 60 by 20-inch running platform and a 33-inch-wide console. The 2006 recall of
+            Premier consoles, below, covers some T9700-era machines.
+          </p>
+          <p>
+            A late-model T40 or T80 can still be a good used buy, because Johnson Health Tech supports the recall and the
+            frames were dealer-grade. Check that the recall power cord has been fitted, and use our
+            <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a>
+            for the rest. Our <a href="/where-to-buy-a-used-treadmill/" class="text-[#0F62FE] font-medium">where to buy a used treadmill</a>
+            guide covers dealers' trade-ins and refurbished stock, often the best source of used Vision machines.
+          </p>
+        </div>
+
+        <div id="recalls" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Vision Treadmill Recalls</h2>
+<p>
+            We searched the US Consumer Product Safety Commission's recall database for Vision Fitness and Johnson Health
+            Tech on 5 November 2026. Two recalls cover Vision treadmills.
+          </p>
+          <ul>
+            <li><strong>Recall 26-203, 22 January 2026:</strong> an expansion of an earlier Matrix commercial recall to
+            about 47,000 Matrix Retail and Vision home treadmills, including the Vision T9800, TF20, T40 and T80, made
+            from June 2007 to January 2024 and sold without a power-cord bracket. The power cord can work loose from the
+            treadmill's socket, a fire hazard; Johnson Health Tech had 27 reports of overheating at the connection and no
+            injuries. They sold from April 2012 to May 2025 for $2,100 to $8,100. The remedy is a free replacement power
+            cord with an automatic locking plug, mailed for installation without tools. Until it is fitted, owners should
+            check the cord is fully pushed into the socket before each use.</li>
+            <li><strong>Recall 06-556, 12 June 2006:</strong> about 480 Vision Fitness 2006 Premier consoles (models
+            TCPP6, TCFP6 and C9700H6, marked Premier or T9700HRT) sold on Vision treadmill frames in September and October
+            2005 for $1,700 to $3,000, which could increase speed and incline unexpectedly. One incident, no injuries.</li>
+          </ul>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">How to check a Vision treadmill</h3>
+          <p>
+            The model number and frame serial number are on the lower front crossbar near the power switch. The serial
+            begins with TM, then a three-digit model code (TM432 for the TF20, TM433 for the T40, TM445 for the T80,
+            TM87 for the T9800), then the build date. Johnson Health Tech's recall page at visionfitness.com lists the
+            exact serial ranges, and the recall line is 800-211-4590. If a cord bracket or the new locking cord is
+            already fitted, the unit has been dealt with.
+          </p>
+        </div>
+
+        <div id="alternatives" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. What to Buy Instead of a Vision Home Treadmill</h2>
+<p>
+            If you are shopping new and liked Vision's position — better than big-box quality, dealer support, a long
+            frame and motor warranty — the closest current equivalents are:
+          </p>
+          <ul>
+            <li><strong><a href="/horizon-7-8-at-treadmill/" class="text-[#0F62FE] font-medium">Horizon 7.8 AT</a>,
+            $1,999:</strong> the same parent company, a 22 by 60-inch deck, 15% incline and 375 lb, with lifetime frame and
+            motor cover. Our <a href="/best-horizon-treadmills/" class="text-[#0F62FE] font-medium">best Horizon treadmills</a>
+            guide covers the rest of the range.</li>
+            <li><strong><a href="/matrix-fitness/" class="text-[#0F62FE] font-medium">Matrix home treadmills</a>:</strong>
+            Johnson Health Tech's premium dealer line, closest to what the Vision T80 was. Some older Matrix Retail models
+            share the 2026 recall.</li>
+            <li><strong><a href="/life-fitness-run-cx-treadmill/" class="text-[#0F62FE] font-medium">Life Fitness Run CX</a>,
+            $3,919:</strong> a club brand's home treadmill with a 400 lb rating, delivered and installed.</li>
+            <li><strong><a href="/sole-fitness/" class="text-[#0F62FE] font-medium">Sole</a> and
+            <a href="/spirit-treadmills/" class="text-[#0F62FE] font-medium">Spirit</a>:</strong> both sell dealer-grade
+            home treadmills with long warranties in the price band Vision used to occupy.</li>
+          </ul>
+          <p>
+            For buyers set on light-commercial build — a home gym with several users, or a building's fitness room —
+            the T600 makes sense, and our guide to <a href="/what-treadmills-do-gyms-use/" class="text-[#0F62FE] font-medium">what treadmills gyms use</a>
+            sets it against Precor, Life Fitness and Matrix.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Is Vision on Amazon?</h3>
+          <p>
+            We found no Vision treadmill sold new by Vision or an authorised dealer on Amazon US, which fits a brand sold
+            through local offices and dealers. The Amazon buttons on the Vision cards go to tagged searches that mostly
+            return parts and similar machines; buy a T600 from a dealer who will deliver, install and honour the
+            warranty.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Does Vision Fitness still make treadmills?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Yes, but only one on its US site on 5 November 2026: the light-commercial T600, with an LED console or as the T600E with a 22-inch touchscreen, sold through dealers. The home models such as the TF20, T40, T80 and T9200 are no longer listed; the recall notice says the recalled home models were sold until May 2025.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Who owns Vision Fitness?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Johnson Health Tech, the Taiwanese group that also owns Horizon, Matrix, Bowflex and Schwinn Fitness. Johnson Health Tech North America is the firm named on the 2026 Vision treadmill recall.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How much is a Vision T600 treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Vision publishes no price. On 5 November 2026 Fitness Supply, a US dealer, listed the touchscreen T600E at $8,799. Earlier US listings put the LED T600 at about $5,400, which we could not confirm on the day. Prices vary by dealer and region.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What are the Vision T600 specs?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Vision and a US dealer agree on a 4.2 HP AC drive, a 22 by 60-inch running surface, 0.5 to 12 mph on 120 V, 0 to 15% incline, a 400 lb user limit, 85 by 36 by 65 inches and 408 lb. It does not fold.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is the Vision T9200 a good treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                It was a basic home treadmill from the 2000s, with figures that vary by version: about 2.5 HP, 12 mph, 12% incline and 325 lb for the basic model in one review, and 3.0 CHP for the Deluxe. Any T9200 is now around 20 years old; buy one only for very little and expect to source parts from third parties.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Which Vision treadmills were recalled?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                In January 2026 Johnson Health Tech recalled about 47,000 Matrix Retail and Vision treadmills, including the Vision T9800, TF20, T40 and T80 made from 2007 to January 2024, because the power cord can work loose and overheat. The remedy is a free locking power cord. A 2006 recall covered about 480 Premier consoles.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What replaced Vision home treadmills?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Johnson Health Tech’s other home brands. The Horizon 7.8 AT, $1,999 on 5 November 2026, has a 22 by 60-inch deck, 15% incline and 375 lb rating; Matrix covers the premium dealer market Vision’s top home models sold into.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Vision Treadmill</h2>
+          <p class="text-gray-700 leading-relaxed">A Vision treadmill can be a solid buy, new or used, if you avoid these mistakes.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying a used TF20, T40, T80 or T9800 without checking the recall</h3>
+              <p class="text-gray-700 text-sm m-0">Units made from 2007 to January 2024 without a power-cord bracket are in the January 2026 recall. The fix is free, but check the serial number and whether the locking cord has been fitted before you pay.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Paying commercial money for home use you do not need</h3>
+              <p class="text-gray-700 text-sm m-0">The T600E cost $8,799 at the dealer price we confirmed. A Horizon 7.8 AT from the same parent company has the same deck size and incline for $1,999. Buy the T600 for multi-user or facility use, not for the badge.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Accepting a verbal warranty</h3>
+              <p class="text-gray-700 text-sm m-0">Vision’s warranty terms vary by dealer, region and whether the treadmill is in home or commercial use. Ask for the written terms that apply to your use before you sign.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Underestimating the size</h3>
+              <p class="text-gray-700 text-sm m-0">The T600 is 85 inches long, 65 inches high and 408 lb, and does not fold. Measure the room, the doorways and the stairs, and confirm delivery and installation are included.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Treadmill Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/horizon-fitness/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Sister brand</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Horizon Fitness Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Johnson Health Tech’s mid-range home treadmill brand.</p>
+            </a>
+            <a href="/matrix-fitness/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Sister brand</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Matrix Fitness Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The premium home and commercial line, and its share of the 2026 recall.</p>
+            </a>
+            <a href="/horizon-7-8-at-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Review</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Horizon 7.8 AT</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The 22 by 60-inch, 375 lb home treadmill closest to Vision’s old role.</p>
+            </a>
+            <a href="/gym-treadmill-for-home/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">At home</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Gym Treadmill for Home</p>
+              <p class="text-sm text-gray-500 leading-relaxed">What it takes to put a light-commercial treadmill like the T600 in a house.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">Vision Fitness now lists one treadmill in the US: the light-commercial T600, or the
+          T600E with a touchscreen at $8,799 from the one dealer price we confirmed.</strong> Its figures are strong —
+          4.2 HP AC, 22 by 60 inches, 15% incline, 400 lb — but it is a facility machine. The old home models are no
+          longer listed, and the TF20, T40, T80 and T9800 are in a January 2026 power-cord recall with a free fix.
+          </p>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            For a home, Vision's parent company sells the
+          <a href="/horizon-7-8-at-treadmill/" class="text-[#5AA9FF] font-bold no-underline">Horizon 7.8 AT</a>
+          with the same deck and incline for $1,999. Buy the T600 only if you need commercial-duty build.
+          </p>
+        </div>
+
+        <!-- Meet the Author -->
+        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
+          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
+          <div>
+            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
+            <p class="text-sm font-bold text-gray-900 m-0">
+              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
+              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+            </p>
+            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
+              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
+              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
+              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
+              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
+              running ergonomics, noise and long-term durability. Every guide says what was checked and
+              when, and says plainly when a product has not been tested hands-on.
+              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
+              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </article>
+</Layout>
