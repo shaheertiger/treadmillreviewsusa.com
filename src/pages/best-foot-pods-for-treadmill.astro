@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "stryd-5",
     name: "Stryd 5.0",
+    brand: "Stryd",
     category: "Best Overall Foot Pod for Treadmill",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Stryd+5.0+Footpod&tag=sktiger-20",
@@ -36,6 +37,7 @@ const PRODUCTS = [
   {
     id: "coros-pod-2",
     name: "COROS POD 2",
+    brand: "COROS",
     category: "Best Foot Pod for COROS Watches",
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/s?k=COROS+POD+2&tag=sktiger-20",
@@ -61,6 +63,7 @@ const PRODUCTS = [
   {
     id: "garmin-hrm-600",
     name: "Garmin HRM 600",
+    brand: "Garmin",
     category: "Best Treadmill Pace Sensor for Garmin Watches",
     badge: "Garmin Pick",
     amazonUrl: "https://www.amazon.com/dp/B0F7Z6N7BR?tag=sktiger-20&linkCode=ll1",
@@ -86,6 +89,7 @@ const PRODUCTS = [
   {
     id: "npe-runn",
     name: "NPE Runn Smart Treadmill Sensor",
+    brand: "NPE",
     category: "Best Belt Sensor for a Home Treadmill",
     badge: "Measures the Belt",
     amazonUrl: "https://www.amazon.com/s?k=running+foot+pod&tag=sktiger-20",
@@ -111,6 +115,7 @@ const PRODUCTS = [
   {
     id: "stryd-duo-5",
     name: "Stryd Duo 5.0",
+    brand: "Stryd",
     category: "Two-Pod Option for Data-Led Runners",
     badge: "Premium Pick",
     amazonUrl: "https://www.amazon.com/s?k=running+foot+pod&tag=sktiger-20",
@@ -212,7 +217,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

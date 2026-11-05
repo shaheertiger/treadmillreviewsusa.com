@@ -499,6 +499,12 @@ export default {
       blurb: 'The commercial brands in US gyms and studios, and who owns them.',
       url: '/what-treadmills-do-gyms-use/',
     },
+    {
+      kicker: "Brand Guide",
+      title: "Vision Fitness Treadmills",
+      blurb: "One dealer-sold treadmill left, the light-commercial T600; the old T9200, T40 and T80 and the January.",
+      url: '/vision-fitness-treadmills/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Freemotion makes genuine commercial treadmills with iFIT: the t8.9b

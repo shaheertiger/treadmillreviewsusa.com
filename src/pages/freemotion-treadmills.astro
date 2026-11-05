@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "freemotion-t8-9b",
     name: "Freemotion t8.9b",
+    brand: "Freemotion",
     category: "Entry Commercial Treadmill, Simple Console",
     badge: "Lowest-Cost Freemotion",
     amazonUrl: "https://www.amazon.com/s?k=commercial+treadmill&tag=sktiger-20",
@@ -38,6 +39,7 @@ const PRODUCTS = [
   {
     id: "freemotion-t10-9b-reflex",
     name: "Freemotion t10.9b Reflex",
+    brand: "Freemotion",
     category: "Reflex-Deck Commercial Treadmill, No Touchscreen",
     badge: "Best Value Reflex",
     amazonUrl: "https://www.amazon.com/s?k=commercial+treadmill&tag=sktiger-20",
@@ -65,6 +67,7 @@ const PRODUCTS = [
   {
     id: "freemotion-t22-9-reflex",
     name: "Freemotion t22.9 Reflex",
+    brand: "Freemotion",
     category: "Flagship Reflex Treadmill, 22 in. Touchscreen",
     badge: "Flagship",
     amazonUrl: "https://www.amazon.com/s?k=commercial+treadmill&tag=sktiger-20",
@@ -91,6 +94,7 @@ const PRODUCTS = [
   {
     id: "freemotion-i22-9-incline-trainer",
     name: "Freemotion i22.9 Incline Trainer",
+    brand: "Freemotion",
     category: "Incline Trainer, -3% to 30%, 22 in. Touchscreen",
     badge: "Steepest Climb",
     amazonUrl: "https://www.amazon.com/s?k=incline+trainer+treadmill&tag=sktiger-20",
@@ -201,7 +205,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -825,6 +829,11 @@ const schema = {
               <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Gyms</span>
               <p class="font-bold text-gray-900 mt-2 mb-1">What Treadmills Do Gyms Use?</p>
               <p class="text-sm text-gray-500 leading-relaxed">The commercial brands in US gyms and studios, and who owns them.</p>
+            </a>
+            <a href="/vision-fitness-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Vision Fitness Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">One dealer-sold treadmill left, the light-commercial T600; the old T9200, T40 and T80 and the January.</p>
             </a>
           </div>
         </div>

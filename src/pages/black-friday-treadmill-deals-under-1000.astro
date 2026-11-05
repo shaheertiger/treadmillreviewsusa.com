@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "horizon-7-0-at",
     name: "Horizon 7.0 AT",
+    brand: "Horizon",
     category: "Best Running Treadmill to Watch Under $1,000",
     badge: "Top Watch",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+Fitness+7.0+AT+Treadmill&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-t-series-10",
     name: "NordicTrack T Series 10",
+    brand: "NordicTrack",
     category: "Best Touchscreen Treadmill to Watch Under $1,000",
     badge: "Best Touchscreen",
     amazonUrl: "https://www.amazon.com/dp/B0D7XGWMRD?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "sole-f63",
     name: "Sole F63",
+    brand: "Sole",
     category: "Best No-Subscription Running Treadmill to Watch",
     badge: "Best Without a Screen",
     amazonUrl: "https://www.amazon.com/s?k=Sole+F63+Treadmill&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "proform-carbon-tlx",
     name: "ProForm Carbon TLX",
+    brand: "ProForm",
     category: "Running Treadmill to Watch, If the Price Drops Far Enough",
     badge: "Conditional Watch",
     amazonUrl: "https://www.amazon.com/dp/B0C6DTYQ3G?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "horizon-t101-connect",
     name: "Horizon T101 Connect",
+    brand: "Horizon",
     category: "Best Walking Treadmill Under $1,000",
     badge: "Best for Walking",
     amazonUrl: "https://www.amazon.com/dp/B0F9LQY1P4?tag=sktiger-20&linkCode=ll1",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "proform-carbon-tls",
     name: "ProForm Carbon TLS",
+    brand: "ProForm",
     category: "Best Compact Walking Treadmill to Watch",
     badge: "Most Compact",
     amazonUrl: "https://www.amazon.com/dp/B0F6VVX36Z?tag=sktiger-20&linkCode=ll1",
@@ -243,7 +249,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

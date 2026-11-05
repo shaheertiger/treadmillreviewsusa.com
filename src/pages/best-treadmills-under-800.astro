@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-c-700",
     name: "NordicTrack C 700",
+    brand: "NordicTrack",
     category: "Best Overall Under $800",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=NordicTrack%20C%20700+Treadmill&tag=sktiger-20",
@@ -36,6 +37,7 @@ const PRODUCTS = [
   {
     id: "sole-f63",
     name: "Sole F63",
+    brand: "Sole",
     category: "Best If Discounted Into This Band",
     badge: "Best When On Sale",
     amazonUrl: "https://www.amazon.com/s?k=Sole%20F63+Treadmill&tag=sktiger-20",
@@ -61,6 +63,7 @@ const PRODUCTS = [
   {
     id: "proform-power-995i",
     name: "ProForm Power 995i",
+    brand: "ProForm",
     category: "Best for Small Rooms",
     badge: "Most Compact",
     amazonUrl: "https://www.amazon.com/s?k=ProForm%20Power%20995i+Treadmill&tag=sktiger-20",
@@ -86,6 +89,7 @@ const PRODUCTS = [
   {
     id: "proform-pro-2000",
     name: "ProForm Pro 2000",
+    brand: "ProForm",
     category: "Best Deck If You Catch It on Sale",
     badge: "Longest Deck",
     amazonUrl: "https://www.amazon.com/dp/B08N3NL32C?tag=sktiger-20&linkCode=ll1",
@@ -111,6 +115,7 @@ const PRODUCTS = [
   {
     id: "horizon-t101",
     name: "Horizon T101",
+    brand: "Horizon",
     category: "Best No-Nonsense Console",
     badge: "Simplest to Use",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+Fitness+folding+treadmill&tag=sktiger-20",
@@ -136,6 +141,7 @@ const PRODUCTS = [
   {
     id: "used-mid-range-800",
     name: "Used Mid-Range Treadmill",
+    brand: "Used",
     category: "Best Hardware Per Dollar",
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/s?k=renewed+treadmill&tag=sktiger-20",
@@ -237,7 +243,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

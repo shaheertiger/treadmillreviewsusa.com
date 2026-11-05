@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "woodway-4front",
     name: "Woodway 4Front",
+    brand: "Woodway",
     category: "Motorised Slat-Belt Treadmill (Flagship)",
     badge: "Flagship",
     amazonUrl: "https://www.amazon.com/s?k=Woodway+4Front+Treadmill&tag=sktiger-20",
@@ -38,6 +39,7 @@ const PRODUCTS = [
   {
     id: "woodway-curve-ltg",
     name: "Woodway Curve LTG",
+    brand: "Woodway",
     category: "Non-Motorised Curved Treadmill (Home and Light Commercial)",
     badge: "Lowest Price New",
     amazonUrl: "https://www.amazon.com/s?k=Woodway+Curve+LTG+Treadmill&tag=sktiger-20",
@@ -140,7 +142,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -953,6 +955,11 @@ const schema = {
               <span class="text-xs font-black uppercase tracking-widest text-green-600">Roundup</span>
               <p class="font-bold text-gray-900 mt-2 mb-1">Commercial-Grade Treadmills</p>
               <p class="text-sm text-gray-500 leading-relaxed">Gym-built machines for home, and what they ask of your space.</p>
+            </a>
+            <a href="/rogue-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Where to Buy</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Rogue Fitness Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The eight Woodway, TrueForm and STEPR treadmills Rogue sells, $3,495–$11,395, and how the Rogue | Woodway.</p>
             </a>
           </div>
         </div>

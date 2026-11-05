@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "teeter-fitspine-x3",
     name: "Teeter FitSpine X3 Inversion Table",
+    brand: "Teeter",
     category: "Long-handled ankle lock and marked angle tether",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Teeter+FitSpine+X3+Inversion+Table&tag=sktiger-20",
@@ -38,6 +39,7 @@ const PRODUCTS = [
   {
     id: "innova-itx9600",
     name: "Innova ITX9600 Inversion Table",
+    brand: "Innova",
     category: "Budget table with a six-hole angle pin",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/s?k=Innova+ITX9600+Inversion+Table&tag=sktiger-20",
@@ -64,6 +66,7 @@ const PRODUCTS = [
   {
     id: "teeter-fitspine-lx9",
     name: "Teeter FitSpine LX9 Inversion Table",
+    brand: "Teeter",
     category: "X3 features plus a raised boarding platform",
     badge: "Easiest On and Off",
     amazonUrl: "https://www.amazon.com/s?k=Teeter+FitSpine+LX9+Inversion+Table&tag=sktiger-20",
@@ -90,6 +93,7 @@ const PRODUCTS = [
   {
     id: "teeter-fitspine-x2",
     name: "Teeter FitSpine X2 Inversion Table",
+    brand: "Teeter",
     category: "Extended ankle-lock handle at a lower price",
     badge: "Teeter for Less",
     amazonUrl: "https://www.amazon.com/s?k=Teeter+FitSpine+X2+Inversion+Table&tag=sktiger-20",
@@ -116,6 +120,7 @@ const PRODUCTS = [
   {
     id: "innova-itm4800",
     name: "Innova ITM4800 Heat and Massage Inversion Table",
+    brand: "Innova",
     category: "Budget table with a heat and vibration lumbar pad",
     badge: "Best With Heat Pad",
     amazonUrl: "https://www.amazon.com/dp/B00F950N2G?tag=sktiger-20&linkCode=ll1",
@@ -218,7 +223,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

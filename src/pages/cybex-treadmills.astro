@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "cybex-770t",
     name: "Cybex 770T",
+    brand: "Cybex",
     category: "Discontinued Club Treadmill, Sold Used and Remanufactured",
     badge: "Most Common Used",
     amazonUrl: "https://www.amazon.com/s?k=commercial+treadmill&tag=sktiger-20",
@@ -38,6 +39,7 @@ const PRODUCTS = [
   {
     id: "cybex-r-series",
     name: "Cybex R Series Treadmill",
+    brand: "Cybex",
     category: "Cybex’s Last Treadmill, Discontinued",
     badge: "Newest Cybex",
     amazonUrl: "https://www.amazon.com/s?k=commercial+treadmill&tag=sktiger-20",
@@ -65,6 +67,7 @@ const PRODUCTS = [
   {
     id: "life-fitness-club-series-plus",
     name: "Life Fitness Club Series+",
+    brand: "Life Fitness",
     category: "The New Life Fitness Alternative for Home Use",
     badge: "Buy New Instead",
     amazonUrl: "https://www.amazon.com/s?k=Life+Fitness+treadmill&tag=sktiger-20",
@@ -91,6 +94,7 @@ const PRODUCTS = [
   {
     id: "life-fitness-run-cx",
     name: "Life Fitness Run CX",
+    brand: "Life Fitness",
     category: "New, Lower-Cost Life Fitness Home Treadmill",
     badge: "New on a Budget",
     amazonUrl: "https://www.amazon.com/s?k=Life+Fitness+Run+CX+Treadmill&tag=sktiger-20",
@@ -201,7 +205,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -776,6 +780,11 @@ const schema = {
               <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand Guide</span>
               <p class="font-bold text-gray-900 mt-2 mb-1">Freemotion Treadmills</p>
               <p class="text-sm text-gray-500 leading-relaxed">iFIT's commercial brand: the t8.9b, Reflex models and incline trainers.</p>
+            </a>
+            <a href="/vision-fitness-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Brand Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Vision Fitness Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">One dealer-sold treadmill left, the light-commercial T600; the old T9200, T40 and T80 and the January.</p>
             </a>
           </div>
         </div>

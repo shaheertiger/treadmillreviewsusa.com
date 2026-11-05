@@ -439,6 +439,12 @@ export default {
       blurb: "Members-only NordicTrack and ProForm prices, the return policy, and Costco compared.",
       url: '/sams-club-treadmills/',
     },
+    {
+      kicker: "Brand Guide",
+      title: "LifeSmart Treadmills",
+      blurb: "The self-folding PowerTouch range: TM4500 discontinued, TM4000C, TM6500 at Costco, and a 1-year warranty.",
+      url: '/lifesmart-treadmills/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Costco is worth checking, not worth starting with.</strong> Its

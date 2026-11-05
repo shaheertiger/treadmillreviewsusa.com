@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "rogue-deadlift-platform",
     name: "Rogue Deadlift Platform",
+    brand: "Rogue",
     category: "8 x 4 ft steel deadlift platform frame",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=deadlift+platform&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "titan-deadlift-platform",
     name: "Titan Fitness Deadlift Platform",
+    brand: "Titan Fitness",
     category: "Budget 8 x 4 ft deadlift platform frame",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/dp/B07B5R6NM5?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "valor-olympic-platform",
     name: "Valor Fitness Olympic Lifting Wood Platform",
+    brand: "Valor",
     category: "Complete Olympic weightlifting platform",
     badge: "Best for Olympic Lifting",
     amazonUrl: "https://www.amazon.com/s?k=Valor+Fitness+Olympic+Weightlifting+Platform&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "bells-of-steel-deadlift-pads",
     name: "Bells of Steel Deadlift Pads (Pair)",
+    brand: "Bells of Steel",
     category: "Foam drop pads for noise",
     badge: "Best Drop Pads",
     amazonUrl: "https://www.amazon.com/s?k=deadlift+drop+pads&tag=sktiger-20",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "tractor-supply-stall-mat",
     name: "Tractor Supply Rubber Stall Mat (4 x 6 ft, 3/4 in.)",
+    brand: "Tractor Supply",
     category: "DIY platform and gym floor rubber",
     badge: "Best DIY",
     amazonUrl: "https://www.amazon.com/s?k=rubber+stall+mat+4x6+3%2F4+inch&tag=sktiger-20",
@@ -217,7 +222,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

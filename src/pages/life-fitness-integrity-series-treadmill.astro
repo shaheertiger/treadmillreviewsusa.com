@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "life-fitness-integrity-plus",
     name: "Life Fitness Integrity+ Treadmill",
+    brand: "Life Fitness",
     category: "Commercial Club Treadmill Sold for Home Use",
     badge: "Commercial Grade",
     amazonUrl: "https://www.amazon.com/s?k=Life+Fitness+Integrity+Treadmill&tag=sktiger-20",
@@ -114,7 +115,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

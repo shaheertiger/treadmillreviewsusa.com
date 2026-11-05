@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "mrs-meyers-dish-soap",
     name: "Mrs. Meyer's Clean Day Liquid Dish Soap",
+    brand: "Mrs.",
     category: "Mild soap for the belt, rails and frame",
     badge: "Best Mild Cleaner",
     amazonUrl: "https://www.amazon.com/s?k=Mrs.+Meyer%27s+Clean+Day+Liquid+Dish+Soap&tag=sktiger-20",
@@ -36,6 +37,7 @@ const PRODUCTS = [
   {
     id: "e-cloth-general-purpose",
     name: "E-Cloth General Purpose Cloth (4-Pack)",
+    brand: "E-Cloth",
     category: "Microfibre cloths for every surface",
     badge: "Best Cloths",
     amazonUrl: "https://www.amazon.com/s?k=E-Cloth+General+Purpose+Cloth+4+Pack&tag=sktiger-20",
@@ -61,6 +63,7 @@ const PRODUCTS = [
   {
     id: "whoosh-screen-shine",
     name: "WHOOSH! Screen Shine",
+    brand: "WHOOSH!",
     category: "Alcohol- and ammonia-free screen cleaner",
     badge: "Best for Screens",
     amazonUrl: "https://www.amazon.com/s?k=WHOOSH%21+Screen+Shine+Screen+Cleaner&tag=sktiger-20",
@@ -86,6 +89,7 @@ const PRODUCTS = [
   {
     id: "black-decker-dustbuster-chv1410l",
     name: "BLACK+DECKER dustbuster AdvancedClean Cordless Handheld Vacuum (CHV1410L)",
+    brand: "BLACK+DECKER",
     category: "Handheld vacuum with crevice tool for dust and fibre",
     badge: "Best Vacuum",
     amazonUrl: "https://www.amazon.com/s?k=BLACK%2BDECKER+dustbuster+AdvancedClean+CHV1410L&tag=sktiger-20",
@@ -111,6 +115,7 @@ const PRODUCTS = [
   {
     id: "2xl-gymwipes-professional",
     name: "2XL GymWipes Professional Formula",
+    brand: "2XL",
     category: "Low-residue cleaning wipes for gym equipment",
     badge: "Best Gym Wipes",
     amazonUrl: "https://www.amazon.com/dp/B015QVHD4S?tag=sktiger-20&linkCode=ll1",
@@ -213,7 +218,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

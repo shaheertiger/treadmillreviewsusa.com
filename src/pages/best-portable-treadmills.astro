@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "walkingpad-z1",
     name: "WalkingPad Z1",
+    brand: "WalkingPad",
     category: "Folding walking pad that slides under a bed or sofa",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0H2YYZTL8?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "urevo-strol-2e-pro",
     name: "UREVO Strol 2E Pro",
+    brand: "UREVO",
     category: "Ultralight 2-in-1 pad with a fold-flat handle",
     badge: "Lightest to Carry",
     amazonUrl: "https://www.amazon.com/dp/B0H1H4JT4C?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "stamina-avari",
     name: "Stamina Avari Adjustable Height Treadmill",
+    brand: "Stamina",
     category: "Folding manual treadmill that needs no outlet",
     badge: "Best Manual",
     amazonUrl: "https://www.amazon.com/s?k=manual+treadmill&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "walkingpad-x21",
     name: "WalkingPad X21",
+    brand: "WalkingPad",
     category: "Double-folding walk-and-jog treadmill",
     badge: "Best for Small Apartments",
     amazonUrl: "https://www.amazon.com/s?k=WalkingPad+X21+Double+Fold+Treadmill&tag=sktiger-20",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "walkingpad-x25",
     name: "WalkingPad X25",
+    brand: "WalkingPad",
     category: "Folding running treadmill one person can roll",
     badge: "Best for Running",
     amazonUrl: "https://www.amazon.com/dp/B0FFBH6K65?tag=sktiger-20&linkCode=ll1",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "echelon-stride-6s",
     name: "Echelon Stride-6s",
+    brand: "Echelon",
     category: "Auto-folding full-size treadmill on wheels",
     badge: "Best Full-Size Folding",
     amazonUrl: "https://www.amazon.com/s?k=Echelon+Stride-6s+Treadmill&tag=sktiger-20",
@@ -243,7 +249,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

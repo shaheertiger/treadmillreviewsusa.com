@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "weslo-cadence-g-5-9",
     name: "Weslo Cadence G 5.9",
+    brand: "Weslo",
     category: "Discontinued Budget Treadmill",
     badge: "Discontinued",
     amazonUrl: "https://www.amazon.com/s?k=Weslo%20Cadence%20G%205.9+Treadmill&tag=sktiger-20",
@@ -114,7 +115,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

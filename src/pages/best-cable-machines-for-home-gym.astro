@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "rep-arcadia",
     name: "REP Fitness Arcadia Functional Trainer",
+    brand: "REP Fitness",
     category: "Dual-stack functional trainer",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0CZLZRP6G?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "rep-athena",
     name: "REP Fitness Athena Selectorized Side-Mount Functional Trainer",
+    brand: "REP Fitness",
     category: "Rack-mounted cable attachment",
     badge: "Best Rack-Mounted",
     amazonUrl: "https://www.amazon.com/s?k=REP+Fitness+Athena+Side-Mount+Functional+Trainer&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "bells-of-steel-cable-tower",
     name: "Bells of Steel Cable Tower (Plate-Loaded)",
+    brand: "Bells of Steel",
     category: "Plate-loaded pulley tower",
     badge: "Best Budget / Plate-Loaded",
     amazonUrl: "https://www.amazon.com/s?k=Bells+of+Steel+Plate+Loaded+Cable+Tower&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "bells-of-steel-all-in-one-trainer",
     name: "Bells of Steel All-in-One Trainer",
+    brand: "Bells of Steel",
     category: "Compact all-in-one cable machine and rack",
     badge: "Best Compact All-in-One",
     amazonUrl: "https://www.amazon.com/s?k=Bells+of+Steel+All-in-One+Trainer&tag=sktiger-20",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "tonal-2",
     name: "Tonal 2",
+    brand: "Tonal",
     category: "Wall-mounted digital-resistance machine",
     badge: "Best Wall-Mounted Digital",
     amazonUrl: "https://www.amazon.com/s?k=Tonal+2+Smart+Home+Gym&tag=sktiger-20",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "speediance-gym-monster-2",
     name: "Speediance Gym Monster 2",
+    brand: "Speediance",
     category: "Freestanding digital-resistance machine",
     badge: "Best Freestanding Digital",
     amazonUrl: "https://www.amazon.com/dp/B0DFH1NYR6?tag=sktiger-20&linkCode=ll1",
@@ -243,7 +249,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

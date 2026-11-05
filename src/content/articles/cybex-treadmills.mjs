@@ -455,6 +455,12 @@ export default {
       blurb: "iFIT's commercial brand: the t8.9b, Reflex models and incline trainers.",
       url: '/freemotion-treadmills/',
     },
+    {
+      kicker: "Brand Guide",
+      title: "Vision Fitness Treadmills",
+      blurb: "One dealer-sold treadmill left, the light-commercial T600; the old T9200, T40 and T80 and the January.",
+      url: '/vision-fitness-treadmills/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Cybex no longer sells treadmills: Life Fitness bought the brand in 2016

@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "life-fitness-club-series-plus",
     name: "Life Fitness Club Series+",
+    brand: "Life Fitness",
     category: "Club-Grade Home Treadmill, SL or SE4 Console",
     badge: "Club Grade at Home",
     amazonUrl: "https://www.amazon.com/s?k=Life+Fitness+treadmill&tag=sktiger-20",
@@ -39,6 +40,7 @@ const PRODUCTS = [
   {
     id: "life-fitness-run-cx",
     name: "Life Fitness Run CX",
+    brand: "Life Fitness",
     category: "The Cheaper Life Fitness With the Same Deck Size",
     badge: "Better Value",
     amazonUrl: "https://www.amazon.com/s?k=Life+Fitness+Run+CX+Treadmill&tag=sktiger-20",
@@ -149,7 +151,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -836,6 +838,16 @@ const schema = {
               <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand</span>
               <p class="font-bold text-gray-900 mt-2 mb-1">Life Fitness Treadmills</p>
               <p class="text-sm text-gray-500 leading-relaxed">The full Life Fitness home range, from the T3 to the club models.</p>
+            </a>
+            <a href="/landice-l7-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Model Review</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Landice L7 Treadmill Review</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Every L7 configuration priced, how it differs from the L8, and what the L7 RTM rehab version adds.</p>
+            </a>
+            <a href="/life-fitness-95t-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Model Review</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Life Fitness 95T / 95Ti</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The discontinued Elevation Series 95T and older 95Ti bought remanufactured: consoles, prices and the.</p>
             </a>
           </div>
         </div>

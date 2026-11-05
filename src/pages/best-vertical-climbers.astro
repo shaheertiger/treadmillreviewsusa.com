@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "maxiclimber-xl-2000",
     name: "MaxiClimber XL-2000",
+    brand: "MaxiClimber",
     category: "Folding vertical climber with hydraulic resistance",
     badge: "Best for Beginners",
     amazonUrl: "https://www.amazon.com/s?k=MaxiClimber+XL-2000+Vertical+Climber+Hydraulic+Resistance&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "sunny-total-body-vertical-climber",
     name: "Sunny Health & Fitness Total-Body Vertical Climber SF-S024835",
+    brand: "Sunny Health & Fitness",
     category: "Folding stepper-style vertical climber",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/s?k=Sunny+Health+Fitness+Foldable+Vertical+Climber+SF-S024835&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "bells-of-steel-blitz-stepper",
     name: "Bells of Steel Blitz Stepper",
+    brand: "Bells of Steel",
     category: "Freestanding magnetic stepper-climber",
     badge: "Best Magnetic Resistance",
     amazonUrl: "https://www.amazon.com/dp/B0D5DR7QPV?tag=sktiger-20&linkCode=ll1",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "clmbr",
     name: "CLMBR Connected Vertical Climber",
+    brand: "CLMBR",
     category: "Connected vertical climber with touchscreen classes",
     badge: "Best Connected",
     amazonUrl: "https://www.amazon.com/s?k=vertical+climber&tag=sktiger-20",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "versaclimber-sm-m",
     name: "VersaClimber SM-M Sport Magnetic",
+    brand: "VersaClimber",
     category: "Commercial vertical climber with magnetic resistance",
     badge: "Best Premium",
     amazonUrl: "https://www.amazon.com/s?k=vertical+climber&tag=sktiger-20",
@@ -217,7 +222,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

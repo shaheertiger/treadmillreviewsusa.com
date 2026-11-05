@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "echelon-stride-6s",
     name: "Echelon Stride-6s",
+    brand: "Echelon",
     category: "Best fold-flat treadmill with a full-length deck",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Echelon+Stride-6s+Treadmill&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "life-fitness-f3",
     name: "Life Fitness F3",
+    brand: "Life Fitness",
     category: "Lowest step-up height on a folding treadmill",
     badge: "Easiest to Step On",
     amazonUrl: "https://www.amazon.com/s?k=Life+Fitness+treadmill&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "urevo-spacewalk-3s",
     name: "UREVO SpaceWalk 3S",
+    brand: "UREVO",
     category: "Best low-profile walking pad with incline",
     badge: "Best Walking Pad",
     amazonUrl: "https://www.amazon.com/s?k=UREVO+SpaceWalk+3S+Walking+Pad&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "merach-t19",
     name: "MERACH T19",
+    brand: "MERACH",
     category: "Slimmest folded walking pad with a handrail",
     badge: "Slimmest Folded",
     amazonUrl: "https://www.amazon.com/s?k=MERACH+T19+Walking+Pad+Treadmill&tag=sktiger-20",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "goplus-superfit-2-in-1",
     name: "Goplus SuperFit 2-in-1",
+    brand: "Goplus",
     category: "Best budget lightweight folding treadmill",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/s?k=Goplus+SuperFit+2+in+1+Folding+Treadmill&tag=sktiger-20",
@@ -217,7 +222,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

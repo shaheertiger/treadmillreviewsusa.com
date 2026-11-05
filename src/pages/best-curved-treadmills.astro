@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "assaultrunner-pro",
     name: "AssaultRunner Pro",
+    brand: "AssaultRunner",
     category: "Curved Slat Trainer",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=curved+manual+treadmill&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "sole-c80",
     name: "SOLE C80 Curved Manual Treadmill",
+    brand: "SOLE",
     category: "Curved Trainer With Magnetic Resistance",
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/dp/B0H2KC6YL5?tag=sktiger-20&linkCode=ll1",
@@ -62,6 +64,7 @@ const PRODUCTS = [
   {
     id: "tru-grit-runner",
     name: "Tru Grit Runner Curved Manual Treadmill",
+    brand: "Tru Grit",
     category: "Curved Trainer With Sled-Push Resistance",
     badge: "Best for Sled Work",
     amazonUrl: "https://www.amazon.com/dp/B09NPQJFDG?tag=sktiger-20&linkCode=ll1",
@@ -88,6 +91,7 @@ const PRODUCTS = [
   {
     id: "sunny-sf-x7110",
     name: "Sunny Health & Fitness SF-X7110 Curved Treadmill",
+    brand: "Sunny Health & Fitness",
     category: "Lightweight Curved Trainer",
     badge: "Lightest",
     amazonUrl: "https://www.amazon.com/s?k=Sunny+Health+Fitness+SF-X7110+Curved+Manual+Treadmill&tag=sktiger-20",
@@ -114,6 +118,7 @@ const PRODUCTS = [
   {
     id: "trueform-trainer",
     name: "TrueForm Trainer",
+    brand: "TrueForm",
     category: "Shallow-Curve Trainer",
     badge: "Best for Heavier Users",
     amazonUrl: "https://www.amazon.com/s?k=curved+manual+treadmill&tag=sktiger-20",
@@ -140,6 +145,7 @@ const PRODUCTS = [
   {
     id: "woodway-curve-ltg",
     name: "Woodway Curve LTG",
+    brand: "Woodway",
     category: "Home Version of a Commercial Curved Trainer",
     badge: "Best Ride Engineering",
     amazonUrl: "https://www.amazon.com/s?k=Woodway+Curve+LTG+Treadmill&tag=sktiger-20",
@@ -166,6 +172,7 @@ const PRODUCTS = [
   {
     id: "trueform-runner",
     name: "TrueForm Runner",
+    brand: "TrueForm",
     category: "Premium Built-to-Order Curved Trainer",
     badge: "Best Premium",
     amazonUrl: "https://www.amazon.com/s?k=curved+manual+treadmill&tag=sktiger-20",
@@ -268,7 +275,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -676,7 +683,7 @@ const schema = {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Resistance and braking</h3>
           <p>
             Three of the seven have adjustable resistance: the SOLE C80 and Sunny SF-X7110 with
-            eight magnetic levels each, and the Tru Grit Runner with six levels that its dealers
+            eight magnetic levels each, and the <a href="/tru-grit-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Tru Grit</a> Runner with six levels that its dealers
             group as running, walking and sled-push settings. The AssaultRunner Pro, the TrueForm
             models and the Woodway have no resistance setting: effort comes entirely from how hard
             you run. Resistance matters for sled-style pushes against the handrails and for making

@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "marcy-foldable-upright-ns-652",
     name: "Marcy Foldable Upright Exercise Bike NS-652",
+    brand: "Marcy",
     category: "Best Folding Exercise Bike Overall",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0090OKG38?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "exerpeutic-folding-magnetic-upright",
     name: "Exerpeutic Folding Magnetic Upright Bike with Pulse",
+    brand: "Exerpeutic",
     category: "Best Folding Bike for Heavier Riders",
     badge: "Highest Verified Capacity",
     amazonUrl: "https://www.amazon.com/s?k=Exerpeutic+Folding+Magnetic+Upright+Exercise+Bike+with+Pulse&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "fitnation-flex-bike-ultra",
     name: "FitNation Flex Bike Ultra",
+    brand: "FitNation",
     category: "Best Folding Bike With a Reclining Seat",
     badge: "Best Upright-Recumbent",
     amazonUrl: "https://www.amazon.com/s?k=FitNation+Flex+Bike+Ultra+Folding&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "leike-x-bike",
     name: "LEIKE X Bike Ultra-Quiet Folding Exercise Bike",
+    brand: "LEIKE",
     category: "Best Folding Bike for Tall Riders",
     badge: "Best for Tall Riders",
     amazonUrl: "https://www.amazon.com/dp/B07WG1ZP75?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "xterra-fitness-fb350",
     name: "XTERRA Fitness FB350 Folding Exercise Bike",
+    brand: "XTERRA",
     category: "Best Budget Folding Bike for Shorter Riders",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/s?k=XTERRA+Fitness+FB350+Folding+Exercise+Bike&tag=sktiger-20",
@@ -217,7 +222,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

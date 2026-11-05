@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "triggerpoint-grid-foam-roller",
     name: "TriggerPoint GRID 1.0 Foam Roller",
+    brand: "TriggerPoint",
     category: "Firm 13-inch foam roller",
     badge: "Best Foam Roller",
     amazonUrl: "https://www.amazon.com/s?k=TriggerPoint+GRID+1.0+Foam+Roller&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "triggerpoint-lacrosse-balls",
     name: "TriggerPoint Massage Lacrosse Ball 2-Pack",
+    brand: "TriggerPoint",
     category: "Solid rubber massage balls",
     badge: "Best Massage Ball",
     amazonUrl: "https://www.amazon.com/s?k=lacrosse+massage+ball&tag=sktiger-20",
@@ -62,6 +64,7 @@ const PRODUCTS = [
   {
     id: "optp-stretch-out-strap",
     name: "OPTP Stretch Out Strap",
+    brand: "OPTP",
     category: "Multi-loop stretching strap",
     badge: "Best Stretching Strap",
     amazonUrl: "https://www.amazon.com/dp/B00065X222?tag=sktiger-20&linkCode=ll1",
@@ -87,6 +90,7 @@ const PRODUCTS = [
   {
     id: "rogue-monster-bands",
     name: "Rogue Monster Bands",
+    brand: "Rogue",
     category: "Latex loop bands for mobility work",
     badge: "Best Mobility Tool",
     amazonUrl: "https://www.amazon.com/s?k=pull+up+resistance+bands&tag=sktiger-20",
@@ -113,6 +117,7 @@ const PRODUCTS = [
   {
     id: "theragun-mini-3rd-gen",
     name: "Theragun Mini (3rd Gen)",
+    brand: "Theragun",
     category: "Compact massage gun",
     badge: "Best Massage Gun",
     amazonUrl: "https://www.amazon.com/s?k=Theragun+Mini+3rd+Gen&tag=sktiger-20",
@@ -139,6 +144,7 @@ const PRODUCTS = [
   {
     id: "hyperice-normatec-3-legs",
     name: "Hyperice Normatec 3 Legs",
+    brand: "Hyperice",
     category: "Air compression boots",
     badge: "Best Compression Boots",
     amazonUrl: "https://www.amazon.com/dp/B0B72QBWHC?tag=sktiger-20&linkCode=ll1",
@@ -241,7 +247,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

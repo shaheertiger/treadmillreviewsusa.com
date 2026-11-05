@@ -513,6 +513,18 @@ export default {
       blurb: 'Sprints, intervals and steady runs built for a self-powered curved belt.',
       url: '/curved-treadmill-workouts/',
     },
+    {
+      kicker: "Where to Buy",
+      title: "Rogue Fitness Treadmills",
+      blurb: "The eight Woodway, TrueForm and STEPR treadmills Rogue sells, $3,495–$11,395, and how the Rogue | Woodway.",
+      url: '/rogue-treadmills/',
+    },
+    {
+      kicker: "Brand Guide",
+      title: "Centr Treadmills",
+      blurb: "Chris Hemsworth's brand: the folding Runr and Runr-S and the $6,999 Centr x HYROX Perform Tread race.",
+      url: '/centr-treadmills/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">For most buyers, the TrueForm to consider is the Trainer: TrueForm's

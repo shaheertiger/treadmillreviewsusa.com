@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-t-6-5-s",
     name: "NordicTrack T 6.5 S",
+    brand: "NordicTrack",
     category: "Entry-Level iFit Treadmill",
     badge: "Entry Level",
     amazonUrl: "https://www.amazon.com/dp/B0193V3DJ6?tag=sktiger-20&linkCode=ll1",
@@ -113,7 +114,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

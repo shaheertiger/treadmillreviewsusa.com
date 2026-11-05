@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "force-usa-g3",
     name: "Force USA G3 All-In-One Trainer",
+    brand: "Force USA",
     category: "All-in-one: Smith machine, half rack and plate-loaded cables",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=smith+machine+functional+trainer&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "titan-smith-machine",
     name: "Titan Fitness Smith Machine",
+    brand: "Titan Fitness",
     category: "Standalone counterbalanced Smith machine",
     badge: "Best Standalone",
     amazonUrl: "https://www.amazon.com/dp/B07JZLT5G4?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "body-solid-gs348b",
     name: "Body-Solid GS348B Series 7 Smith Machine",
+    brand: "Body-Solid",
     category: "Standalone Smith machine with free-weight half rack, 7° bar path",
     badge: "Best Warranty",
     amazonUrl: "https://www.amazon.com/dp/B000JVQZKY?tag=sktiger-20&linkCode=ll1",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "major-fitness-b52",
     name: "Major Fitness B52 All-In-One Home Gym Smith Machine",
+    brand: "Major",
     category: "All-in-one Smith machine; plate-loaded or dual weight stacks",
     badge: "Best Upgrade Path",
     amazonUrl: "https://www.amazon.com/s?k=Major+Fitness+B52+All-In-One+Home+Gym+Smith+Machine&tag=sktiger-20",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "mikolo-m4-2",
     name: "Mikolo M4-2.0 All-In-One Smith Machine",
+    brand: "Mikolo",
     category: "All-in-one Smith machine with plate-loaded cables",
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/s?k=Mikolo+M4-2.0+Smith+Machine+All-In-One&tag=sktiger-20",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "bells-of-steel-smith-attachment",
     name: "Bells of Steel Smith Machine Rack Attachment",
+    brand: "Bells of Steel",
     category: "Smith machine kit for an existing power rack",
     badge: "Best for Rack Owners",
     amazonUrl: "https://www.amazon.com/s?k=smith+machine+attachment+for+power+rack&tag=sktiger-20",
@@ -167,6 +173,7 @@ const PRODUCTS = [
   {
     id: "ritfit-psr05",
     name: "RitFit PSR05 2.0 Smith Machine with Lat Pulldown",
+    brand: "RitFit",
     category: "Compact budget Smith machine with pulldown and low row",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/s?k=RitFit+PSR05+2.0+Smith+Machine+Lat+Pulldown&tag=sktiger-20",
@@ -269,7 +276,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

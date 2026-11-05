@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "xterra-trx1200",
     name: "XTERRA TRX1200",
+    brand: "XTERRA",
     category: "Compact Folder With Power Incline and Bluetooth",
     badge: "Best Compact Pick",
     amazonUrl: "https://www.amazon.com/s?k=XTERRA+Fitness+TRX1200+Folding+Smart+Treadmill&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "xterra-tr75",
     name: "XTERRA TR75",
+    brand: "XTERRA",
     category: "Sport Series Folder With a 60 in. Deck",
     badge: "Best for Running",
     amazonUrl: "https://www.amazon.com/s?k=XTERRA+TR75+Treadmill&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "xterra-tr95h-hiker",
     name: "XTERRA TR95H Hiker",
+    brand: "XTERRA",
     category: "4-in-1 Walk, Run, Climb and Desk Treadmill",
     badge: "Walking Desk Pick",
     amazonUrl: "https://www.amazon.com/s?k=XTERRA+TR95H+Hiker+Treadmill&tag=sktiger-20",
@@ -90,6 +93,7 @@ const PRODUCTS = [
   {
     id: "xterra-tr150",
     name: "XTERRA TR150",
+    brand: "XTERRA",
     category: "Older Budget Folder, Still Sold on Amazon",
     badge: "Older Model",
     amazonUrl: "https://www.amazon.com/s?k=XTERRA+Fitness+TR150+Folding+Treadmill&tag=sktiger-20",
@@ -200,7 +204,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -800,6 +804,11 @@ const schema = {
               <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Desk</span>
               <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill Desks</p>
               <p class="text-sm text-gray-500 leading-relaxed">Walking at work: desks, under-desk treadmills and what to look for.</p>
+            </a>
+            <a href="/oma-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">OMA Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The folding brand sold on Amazon behind the 7200EB: what its figures say, where they conflict, and.</p>
             </a>
           </div>
         </div>

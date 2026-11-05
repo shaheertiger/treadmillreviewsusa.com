@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "tonal-2",
     name: "Tonal 2",
+    brand: "Tonal",
     category: "Wall-mounted digital-resistance smart gym",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Tonal+2+Smart+Home+Gym&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "speediance-gym-monster-2",
     name: "Speediance Gym Monster 2",
+    brand: "Speediance",
     category: "Freestanding, folding digital-resistance smart gym",
     badge: "Best Freestanding",
     amazonUrl: "https://www.amazon.com/dp/B0DFH1NYR6?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "tonal-1-certified-refurbished",
     name: "Tonal 1 Certified Refurbished",
+    brand: "Tonal",
     category: "Refurbished wall-mounted digital-resistance smart gym",
     badge: "Best Value Tonal",
     amazonUrl: "https://www.amazon.com/s?k=Tonal+Smart+Home+Gym&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "beyond-power-voltra-i",
     name: "Beyond Power Voltra I",
+    brand: "Beyond",
     category: "Portable, rack-mounted digital cable unit",
     badge: "Best Rack Add-On",
     amazonUrl: "https://www.amazon.com/s?k=Beyond+Power+Voltra+I&tag=sktiger-20",
@@ -116,6 +120,7 @@ const PRODUCTS = [
   {
     id: "tempo-move",
     name: "Tempo Move",
+    brand: "Tempo",
     category: "Camera-tracked free-weight system",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/dp/B0G3HNFQFG?tag=sktiger-20&linkCode=ll1",
@@ -218,7 +223,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "urevo-spacewalk-e1l",
     name: "UREVO SpaceWalk E1L",
+    brand: "UREVO",
     category: "Budget Flat Walking Pad",
     badge: "Lightest Budget Pad",
     amazonUrl: "https://www.amazon.com/s?k=UREVO+SpaceWalk+E1L+Walking+Pad&tag=sktiger-20",
@@ -36,6 +37,7 @@ const PRODUCTS = [
   {
     id: "urevo-strol-2e",
     name: "UREVO Strol 2E",
+    brand: "UREVO",
     category: "Budget 2-in-1 Pad With Handle",
     badge: "Budget With Handle",
     amazonUrl: "https://www.amazon.com/dp/B0HG9D52DC?tag=sktiger-20&linkCode=ll1",
@@ -61,6 +63,7 @@ const PRODUCTS = [
   {
     id: "walkingpad-z1",
     name: "WalkingPad Z1",
+    brand: "WalkingPad",
     category: "Folding Walking Pad",
     badge: "Best Fold",
     amazonUrl: "https://www.amazon.com/dp/B0H2YYZTL8?tag=sktiger-20&linkCode=ll1",
@@ -86,6 +89,7 @@ const PRODUCTS = [
   {
     id: "merach-novawalk-w50-trekpad",
     name: "MERACH NovaWalk W50 TrekPad",
+    brand: "MERACH",
     category: "High-Capacity Pad With Incline",
     badge: "Best for Heavier Walkers",
     amazonUrl: "https://www.amazon.com/dp/B0HJTT2S6R?tag=sktiger-20&linkCode=ll1",
@@ -187,7 +191,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -758,6 +762,16 @@ const schema = {
               <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand Guide</span>
               <p class="font-bold text-gray-900 mt-2 mb-1">ANCHEER Treadmills</p>
               <p class="text-sm text-gray-500 leading-relaxed">An Amazon-only walking-pad brand: conflicting listing figures, manuals and warranty via the seller.</p>
+            </a>
+            <a href="/ajoosos-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">AJOOSOS 2-in-1 Treadmill</p>
+              <p class="text-sm text-gray-500 leading-relaxed">A scooter brand's Amazon walking pad we could not verify: what the listing says, how to check it, and.</p>
+            </a>
+            <a href="/funmily-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Brand Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">FUNMILY Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">An Amazon-led brand whose pads carry 2.5 or 3.5 HP and 300–400 lb depending on the source: models.</p>
             </a>
           </div>
         </div>

@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "reebok-fr20z",
     name: "Reebok FR20z Floatride",
+    brand: "Reebok",
     category: "Non-Folding Home Treadmill",
     badge: "Limited US Availability",
     amazonUrl: "https://www.amazon.com/s?k=Reebok+FR20z+Floatride+Treadmill&tag=sktiger-20",
@@ -114,7 +115,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

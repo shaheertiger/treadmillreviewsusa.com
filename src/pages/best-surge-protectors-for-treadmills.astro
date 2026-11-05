@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "panamax-md2",
     name: "Panamax MD2",
+    brand: "Panamax",
     category: "Two-outlet direct plug-in surge protector, 15 A",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Panamax+MD2+2+Outlet+Direct+Plug-In+Surge+Protector&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "tripp-lite-spikecube",
     name: "Tripp Lite SPIKECUBE",
+    brand: "Tripp",
     category: "Single-outlet direct plug-in surge protector, 15 A",
     badge: "Best Single-Outlet",
     amazonUrl: "https://www.amazon.com/s?k=Tripp+Lite+SPIKECUBE+1+Outlet+Surge+Protector&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "panamax-m2a20",
     name: "Panamax M2A20",
+    brand: "Panamax",
     category: "Two-outlet direct plug-in surge protector, 20 A",
     badge: "Best for 20-Amp Outlets",
     amazonUrl: "https://www.amazon.com/s?k=Panamax+M2A20+2+Outlet+Direct+Plug-In+Surge+Protector+20+Amp&tag=sktiger-20",
@@ -165,7 +168,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "lifespan-tx6-glowup",
     name: "LifeSpan TX6-GlowUp",
+    brand: "LifeSpan",
     category: "Heavy-Duty Under-Desk Treadmill",
     badge: "In Stock on LifeSpan",
     amazonUrl: "https://www.amazon.com/s?k=LifeSpan+TX6+GlowUp+Under+Desk+Treadmill&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "lifespan-tr1200pro-glowup",
     name: "LifeSpan TR1200Pro-GlowUp",
+    brand: "LifeSpan",
     category: "Office Under-Desk Treadmill",
     badge: "Pre-Order",
     amazonUrl: "https://www.amazon.com/s?k=under+desk+treadmill&tag=sktiger-20",
@@ -139,7 +141,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

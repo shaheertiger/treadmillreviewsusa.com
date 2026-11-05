@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "body-solid-exm2500s",
     name: "Body-Solid EXM2500S Home Gym",
+    brand: "Body-Solid",
     category: "Commercial-style single-stack home gym, 210 lb stack",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0C15LD9MR?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "marcy-mwm-990",
     name: "Marcy MWM-990 150 lb Stack Home Gym",
+    brand: "Marcy",
     category: "Budget single-stack home gym, 150 lb stack",
     badge: "Best Budget Stack",
     amazonUrl: "https://www.amazon.com/dp/B00JGRBSS6?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "body-solid-bfmg20",
     name: "Body-Solid Best Fitness BFMG20 Sportsman Gym",
+    brand: "Body-Solid",
     category: "Compact single-stack home gym",
     badge: "Best Compact Stack",
     amazonUrl: "https://www.amazon.com/s?k=Body-Solid+BFMG20+Multi-Station+Home+Gym&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "bowflex-xtreme-2-se",
     name: "BowFlex Xtreme 2 SE Home Gym",
+    brand: "BowFlex",
     category: "Rod-resistance home gym, 210 lb (upgradable to 410 lb)",
     badge: "Best Rod Gym",
     amazonUrl: "https://www.amazon.com/s?k=BowFlex+Xtreme+2+SE+Home+Gym&tag=sktiger-20",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "total-gym-evolve",
     name: "Total Gym EVOLVE",
+    brand: "Total",
     category: "Incline bodyweight trainer, folding",
     badge: "Best for Low Ceilings",
     amazonUrl: "https://www.amazon.com/dp/B0DZF1W6HM?tag=sktiger-20&linkCode=ll1",
@@ -217,7 +222,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

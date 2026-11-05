@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "life-fitness-integrity-plus-treadmill",
     name: "Life Fitness Integrity+ Treadmill",
+    brand: "Life Fitness",
     category: "Best Commercial Treadmill",
     badge: "Treadmill",
     amazonUrl: "https://www.amazon.com/s?k=Life+Fitness+Integrity+Treadmill&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "keiser-m3i-indoor-bike",
     name: "Keiser M3i Indoor Bike",
+    brand: "Keiser",
     category: "Best Commercial Indoor Bike",
     badge: "Bike",
     amazonUrl: "https://www.amazon.com/dp/B00LSX8AA0?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "concept2-rowerg",
     name: "Concept2 RowErg",
+    brand: "Concept2",
     category: "Best Commercial Rowing Machine",
     badge: "Rower",
     amazonUrl: "https://www.amazon.com/s?k=Concept2+RowErg+Rowing+Machine&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "rogue-rml-390c-power-rack",
     name: "Rogue RML-390C Power Rack 3.0",
+    brand: "Rogue",
     category: "Best Commercial-Standard Power Rack",
     badge: "Rack",
     amazonUrl: "https://www.amazon.com/s?k=power+rack&tag=sktiger-20",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "hammer-strength-iso-lateral-row",
     name: "Hammer Strength Plate-Loaded Iso-Lateral Row",
+    brand: "Hammer",
     category: "Best Plate-Loaded Commercial Machine",
     badge: "Machine",
     amazonUrl: "https://www.amazon.com/s?k=plate+loaded+row+machine&tag=sktiger-20",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "rogue-urethane-dumbbells",
     name: "Rogue Urethane Dumbbells",
+    brand: "Rogue",
     category: "Best Commercial Dumbbells",
     badge: "Dumbbells",
     amazonUrl: "https://www.amazon.com/s?k=urethane+dumbbells&tag=sktiger-20",
@@ -243,7 +249,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

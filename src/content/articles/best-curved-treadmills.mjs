@@ -192,7 +192,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Resistance and braking</h3>
           <p>
             Three of the seven have adjustable resistance: the SOLE C80 and Sunny SF-X7110 with
-            eight magnetic levels each, and the Tru Grit Runner with six levels that its dealers
+            eight magnetic levels each, and the <a href="/tru-grit-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Tru Grit</a> Runner with six levels that its dealers
             group as running, walking and sled-push settings. The AssaultRunner Pro, the TrueForm
             models and the Woodway have no resistance setting: effort comes entirely from how hard
             you run. Resistance matters for sled-style pushes against the handrails and for making

@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "horizon-t101-connect",
     name: "Horizon T101 Connect",
+    brand: "Horizon",
     category: "Best Overall Treadmill on Amazon",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0F9LQY1P4?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "horizon-7-0-at",
     name: "Horizon 7.0 AT",
+    brand: "Horizon",
     category: "Best Treadmill on Amazon for Running",
     badge: "Best for Running",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+Fitness+7.0+AT+Treadmill&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-t-series-5",
     name: "NordicTrack T Series 5",
+    brand: "NordicTrack",
     category: "Best Budget Full-Size Treadmill on Amazon",
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/dp/B0CJ9W38VQ?tag=sktiger-20&linkCode=ll1",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "urevo-spacewalk-3s",
     name: "UREVO SpaceWalk 3S",
+    brand: "UREVO",
     category: "Best Walking Pad on Amazon",
     badge: "Best Walking Pad",
     amazonUrl: "https://www.amazon.com/s?k=UREVO+SpaceWalk+3S+Walking+Pad&tag=sktiger-20",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "urevo-strol-2e",
     name: "UREVO Strol 2E",
+    brand: "UREVO",
     category: "Best 2-in-1 Walking Pad on Amazon",
     badge: "Best Under $250",
     amazonUrl: "https://www.amazon.com/dp/B0HG9D52DC?tag=sktiger-20&linkCode=ll1",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "sunny-sf-t1407smart",
     name: "Sunny Health & Fitness SF-T1407SMART",
+    brand: "Sunny Health & Fitness",
     category: "Best Manual Treadmill on Amazon",
     badge: "Best Without a Plug",
     amazonUrl: "https://www.amazon.com/s?k=Sunny+Health+Fitness+SF-T1407SMART+Manual+Treadmill&tag=sktiger-20",
@@ -243,7 +249,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

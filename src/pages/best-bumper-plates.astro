@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "rep-black-bumper-plates",
     name: "REP Fitness Black Bumper Plates (LB)",
+    brand: "REP Fitness",
     category: "Virgin-rubber training bumpers, pairs and sets",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B013RM1FXI?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "fringe-sport-black-bumper-plates",
     name: "Fringe Sport Black Bumper Plates",
+    brand: "Fringe Sport",
     category: "Virgin-rubber training bumpers, sets and pairs",
     badge: "Best Sets",
     amazonUrl: "https://www.amazon.com/s?k=Fringe+Sport+OneFitWonder+Black+Bumper+Plate+Set&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "fringe-sport-milspec-bumper-plates",
     name: "Fringe Sport MilSpec Bumper Plates",
+    brand: "Fringe Sport",
     category: "Virgin-rubber training bumpers, pairs to 55 lb",
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/s?k=bumper+plates&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "titan-economy-black-bumper-plates",
     name: "Titan Fitness Economy Black Bumper Plates",
+    brand: "Titan Fitness",
     category: "Budget training bumpers, 10 to 100 lb",
     badge: "Widest Range",
     amazonUrl: "https://www.amazon.com/dp/B0C4XCGN1W?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "rep-competition-bumper-plates-lb",
     name: "REP Fitness Competition Bumper Plates (LB)",
+    brand: "REP Fitness",
     category: "Competition-tolerance bumpers in pounds",
     badge: "Best Competition",
     amazonUrl: "https://www.amazon.com/s?k=competition+bumper+plates&tag=sktiger-20",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "cap-economy-bumper-plate-set",
     name: "CAP Barbell Economy Olympic Bumper Plate Set",
+    brand: "CAP Barbell",
     category: "Budget bumper sets, 100 to 370 lb",
     badge: "Lowest Price",
     amazonUrl: "https://www.amazon.com/dp/B0DHYNHYJD?tag=sktiger-20&linkCode=ll1",
@@ -251,7 +257,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

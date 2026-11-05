@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "lifepro-waver",
     name: "LifePro Waver Vibration Plate",
+    brand: "LifePro",
     category: "Full-Size Oscillating Vibration Plate",
     badge: "The Standard Waver",
     amazonUrl: "https://www.amazon.com/dp/B0794BXVY4?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "lifepro-waver-mini",
     name: "LifePro Waver Mini Vibration Plate",
+    brand: "LifePro",
     category: "Compact Oscillating Vibration Plate",
     badge: "Smaller and Cheaper",
     amazonUrl: "https://www.amazon.com/dp/B085WB14JW?tag=sktiger-20&linkCode=ll1",
@@ -139,7 +141,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

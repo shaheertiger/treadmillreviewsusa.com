@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "withings-body-smart",
     name: "Withings Body Smart",
+    brand: "Withings",
     category: "Wi-Fi body composition scale",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Withings+Body+Smart+Scale+Body+Composition&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "wyze-scale-x",
     name: "Wyze Scale X",
+    brand: "Wyze",
     category: "Budget Bluetooth body fat scale",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/dp/B09XMXMGMK?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "renpho-elis-1",
     name: "RENPHO Elis 1 Smart Scale",
+    brand: "RENPHO",
     category: "Cheapest app-connected body fat scale",
     badge: "Cheapest Body Fat Scale",
     amazonUrl: "https://www.amazon.com/dp/B01N1UX8RW?tag=sktiger-20&linkCode=ll1",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "garmin-index-s2",
     name: "Garmin Index S2 Smart Scale",
+    brand: "Garmin",
     category: "Wi-Fi smart scale for Garmin Connect",
     badge: "Best for Garmin Users",
     amazonUrl: "https://www.amazon.com/dp/B08KC5V33R?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "withings-body-scan",
     name: "Withings Body Scan",
+    brand: "Withings",
     category: "Segmental body composition scale with handle and ECG",
     badge: "Best Premium",
     amazonUrl: "https://www.amazon.com/dp/B0CZTL6Q5G?tag=sktiger-20&linkCode=ll1",
@@ -217,7 +222,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "sole-f63",
     name: "Sole F63",
+    brand: "Sole",
     category: "Best Sole for most people",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Sole+F63+Treadmill&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "sole-f80",
     name: "Sole F80",
+    brand: "Sole",
     category: "Best Sole with a touchscreen",
     badge: "Best Touchscreen",
     amazonUrl: "https://www.amazon.com/s?k=Sole+F80+Treadmill&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "sole-f85",
     name: "Sole F85",
+    brand: "Sole",
     category: "Best Sole for running",
     badge: "Best for Running",
     amazonUrl: "https://www.amazon.com/s?k=Sole+F85+Treadmill&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "sole-f65",
     name: "Sole F65",
+    brand: "Sole",
     category: "A step up from the F63",
     badge: "Step-Up Pick",
     amazonUrl: "https://www.amazon.com/dp/B0HFSZR19W?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "sole-c80",
     name: "Sole C80 Curved Manual Treadmill",
+    brand: "Sole",
     category: "Best Sole without a motor",
     badge: "Best Manual",
     amazonUrl: "https://www.amazon.com/dp/B0H2KC6YL5?tag=sktiger-20&linkCode=ll1",
@@ -217,7 +222,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

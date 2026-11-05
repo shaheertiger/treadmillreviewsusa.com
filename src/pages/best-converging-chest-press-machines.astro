@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "gmwd-v8",
     name: "GMWD FID Bench Press Shoulder Press Machine V8",
+    brand: "GMWD",
     category: "Plate-loaded home multi-press",
     badge: "Best Budget Home Multi-Press",
     amazonUrl: "https://www.amazon.com/dp/B0DWF74DMW?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "temple-of-gainz-omnipress",
     name: "Temple of Gainz The Omnipress",
+    brand: "Temple",
     category: "Plate-loaded converging Smith-style press",
     badge: "Most Adjustable Home Press",
     amazonUrl: "https://www.amazon.com/s?k=plate+loaded+chest+press+machine&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "hammer-strength-iso-lateral-wide-chest",
     name: "Hammer Strength Plate-Loaded Iso-Lateral Wide Chest",
+    brand: "Hammer",
     category: "Commercial plate-loaded converging press",
     badge: "Commercial Benchmark",
     amazonUrl: "https://www.amazon.com/s?k=plate+loaded+chest+press+machine&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "hoist-roc-it-chest-press",
     name: "HOIST ROC-IT Chest Press (RPL-5301)",
+    brand: "HOIST",
     category: "Plate-loaded converging press with moving seat",
     badge: "Best Moving-Seat Design",
     amazonUrl: "https://www.amazon.com/s?k=plate+loaded+chest+press+machine&tag=sktiger-20",
@@ -114,6 +118,7 @@ const PRODUCTS = [
   {
     id: "precor-discovery-plate-loaded-chest-press",
     name: "Precor Discovery Series Plate Loaded Chest Press (DPL0540)",
+    brand: "Precor",
     category: "Commercial plate-loaded converging press",
     badge: "Price-on-Request Commercial",
     amazonUrl: "https://www.amazon.com/s?k=plate+loaded+chest+press+machine&tag=sktiger-20",
@@ -216,7 +221,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "bowflex-t16",
     name: "Bowflex T16",
+    brand: "Bowflex",
     category: "Folding Treadmill With 16-Inch Touchscreen",
     badge: "Entertainment Pick",
     amazonUrl: "https://www.amazon.com/s?k=Bowflex+T16+Treadmill&tag=sktiger-20",
@@ -116,7 +117,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

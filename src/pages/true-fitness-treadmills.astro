@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "true-z500",
     name: "TRUE Z500",
+    brand: "TRUE",
     category: "Compact Non-Folding Home Treadmill",
     badge: "Lowest-Priced TRUE",
     amazonUrl: "https://www.amazon.com/s?k=non+folding+treadmill+22+inch+deck&tag=sktiger-20",
@@ -38,6 +39,7 @@ const PRODUCTS = [
   {
     id: "true-performance-1000",
     name: "TRUE Performance 1000",
+    brand: "TRUE",
     category: "Entry Performance Series Treadmill",
     badge: "Entry 60-Inch Deck",
     amazonUrl: "https://www.amazon.com/s?k=non+folding+treadmill+22+inch+deck&tag=sktiger-20",
@@ -65,6 +67,7 @@ const PRODUCTS = [
   {
     id: "true-performance-3000",
     name: "TRUE Performance 3000",
+    brand: "TRUE",
     category: "Mid Performance Series Treadmill",
     badge: "Orthopedic Belt",
     amazonUrl: "https://www.amazon.com/s?k=non+folding+treadmill+22+inch+deck&tag=sktiger-20",
@@ -92,6 +95,7 @@ const PRODUCTS = [
   {
     id: "true-performance-8000",
     name: "TRUE Performance 8000",
+    brand: "TRUE",
     category: "Flagship Home Treadmill With Adjustable Deck",
     badge: "Soft Select Deck",
     amazonUrl: "https://www.amazon.com/s?k=non+folding+treadmill+22+inch+deck&tag=sktiger-20",
@@ -195,7 +199,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

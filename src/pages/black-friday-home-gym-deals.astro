@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "horizon-t101-connect",
     name: "Horizon T101 Connect",
+    brand: "Horizon",
     category: "Treadmill",
     badge: "Treadmill to Watch",
     amazonUrl: "https://www.amazon.com/dp/B0F9LQY1P4?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "rep-quickdraw",
     name: "REP Fitness QuickDraw Adjustable Dumbbells",
+    brand: "REP Fitness",
     category: "Adjustable Dumbbells",
     badge: "Buy-First Strength Pick",
     amazonUrl: "https://www.amazon.com/dp/B0CQ8WCGR6?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "schwinn-ic4",
     name: "Schwinn IC4",
+    brand: "Schwinn",
     category: "Exercise Bike",
     badge: "Price Already Moving",
     amazonUrl: "https://www.amazon.com/s?k=Schwinn+IC4+Indoor+Cycling+Bike&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "concept2-rowerg",
     name: "Concept2 RowErg",
+    brand: "Concept2",
     category: "Rowing Machine",
     badge: "Do Not Wait",
     amazonUrl: "https://www.amazon.com/s?k=Concept2+RowErg+Indoor+Rowing+Machine+PM5&tag=sktiger-20",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "rep-pr-1100",
     name: "REP Fitness PR-1100 Power Rack",
+    brand: "REP Fitness",
     category: "Power Rack",
     badge: "Budget Rack to Watch",
     amazonUrl: "https://www.amazon.com/dp/B07CHR5QDQ?tag=sktiger-20&linkCode=ll1",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "theragun-prime-6th-gen",
     name: "Theragun Prime (6th Gen)",
+    brand: "Theragun",
     category: "Massage Gun",
     badge: "Recovery Pick",
     amazonUrl: "https://www.amazon.com/dp/B0FKCJNHWB?tag=sktiger-20&linkCode=ll1",
@@ -167,6 +173,7 @@ const PRODUCTS = [
   {
     id: "rubber-cal-maxx-tuff",
     name: "Rubber-Cal Maxx-Tuff Heavy-Duty Mat (4 x 6 ft, 1/2 in.)",
+    brand: "Rubber-Cal",
     category: "Gym Flooring",
     badge: "Floor to Buy With It",
     amazonUrl: "https://www.amazon.com/s?k=Rubber-Cal+Maxx-Tuff+Heavy+Duty+Mat+4+x+6&tag=sktiger-20",
@@ -269,7 +276,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

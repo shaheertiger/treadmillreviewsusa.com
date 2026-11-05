@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "vornado-660",
     name: "Vornado 660 Large Whole Room Air Circulator",
+    brand: "Vornado",
     category: "Compact air circulator with tilting head",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B00KF60O00?tag=sktiger-20&linkCode=ll1",
@@ -36,6 +37,7 @@ const PRODUCTS = [
   {
     id: "wahoo-kickr-headwind",
     name: "Wahoo KICKR Headwind",
+    brand: "Wahoo",
     category: "Smart training fan with heart-rate control",
     badge: "Best Training Fan",
     amazonUrl: "https://www.amazon.com/s?k=Wahoo+KICKR+Headwind+Smart+Fan&tag=sktiger-20",
@@ -62,6 +64,7 @@ const PRODUCTS = [
   {
     id: "vornado-683",
     name: "Vornado 683 Pedestal Air Circulator",
+    brand: "Vornado",
     category: "Air circulator on an adjustable pedestal",
     badge: "Best Pedestal",
     amazonUrl: "https://www.amazon.com/dp/B01IE8Q8N2?tag=sktiger-20&linkCode=ll1",
@@ -87,6 +90,7 @@ const PRODUCTS = [
   {
     id: "lasko-cyclone-3520",
     name: "Lasko Cyclone 20\" Air Circulator Fan (3520)",
+    brand: "Lasko",
     category: "20-inch floor or wall-mount circulator",
     badge: "Best for Garages",
     amazonUrl: "https://www.amazon.com/s?k=Lasko+3520+Cyclone+20+inch+Air+Circulator+Fan&tag=sktiger-20",
@@ -113,6 +117,7 @@ const PRODUCTS = [
   {
     id: "lasko-u12104",
     name: "Lasko 12\" Pivoting Pro High Velocity Blower Fan (U12104)",
+    brand: "Lasko",
     category: "Compact high-velocity blower fan",
     badge: "Best Compact",
     amazonUrl: "https://www.amazon.com/s?k=Lasko+U12104+Pivoting+High+Velocity+Blower+Fan&tag=sktiger-20",
@@ -215,7 +220,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

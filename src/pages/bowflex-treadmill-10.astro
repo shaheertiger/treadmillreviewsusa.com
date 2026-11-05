@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "bowflex-treadmill-10",
     name: "Bowflex Treadmill 10",
+    brand: "Bowflex",
     category: "Discontinued Touchscreen Treadmill With Decline",
     badge: "Discontinued",
     amazonUrl: "https://www.amazon.com/s?k=Bowflex+Treadmill+10&tag=sktiger-20",
@@ -116,7 +117,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "lifepro-waver",
     name: "LifePro Waver Vibration Plate",
+    brand: "LifePro",
     category: "Full-size oscillating vibration plate",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0794BXVY4?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "lifepro-waver-mini",
     name: "LifePro Waver Mini Vibration Plate",
+    brand: "LifePro",
     category: "Compact oscillating vibration plate",
     badge: "Best Compact",
     amazonUrl: "https://www.amazon.com/dp/B085WB14JW?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "merach-cv40",
     name: "Merach CV40 Vibration Plate",
+    brand: "Merach",
     category: "Large oscillating plate, maker’s figures",
     badge: "Highest Weight Rating",
     amazonUrl: "https://www.amazon.com/s?k=Merach+CV40+Vibration+Plate+440+lbs&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "merach-cv30-pro",
     name: "Merach CV30 Pro Vibration Plate",
+    brand: "Merach",
     category: "Compact oscillating plate, maker’s figures",
     badge: "Lowest Price",
     amazonUrl: "https://www.amazon.com/dp/B0DPW7JG4K?tag=sktiger-20&linkCode=ll1",
@@ -114,6 +118,7 @@ const PRODUCTS = [
   {
     id: "power-plate-move",
     name: "Power Plate MOVE",
+    brand: "Power",
     category: "Lineal (high-frequency) plate, maker’s figures",
     badge: "Best Lineal Plate",
     amazonUrl: "https://www.amazon.com/s?k=Power+Plate+MOVE+Vibration+Platform&tag=sktiger-20",
@@ -216,7 +221,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

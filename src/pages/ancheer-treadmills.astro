@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "ancheer-tr6056",
     name: "ANCHEER TR6056 Walking Pad",
+    brand: "ANCHEER",
     category: "ANCHEER’s Newest Pad: Walking, Incline and a Vibration Plate",
     badge: "Newest ANCHEER",
     amazonUrl: "https://www.amazon.com/s?k=ANCHEER+TR6056+Walking+Pad&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "ancheer-handle-pad",
     name: "ANCHEER Walking Pad with Handle Bar and 12% Incline",
+    brand: "ANCHEER",
     category: "The ANCHEER Most Often Seen Under $200",
     badge: "Cheapest ANCHEER",
     amazonUrl: "https://www.amazon.com/s?k=ANCHEER+Walking+Pad+Handle+Bar+12%25+Incline&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "urevo-spacewalk-3s",
     name: "UREVO SpaceWalk 3S",
+    brand: "UREVO",
     category: "Alternative: an Incline Pad From a Brand With a Website",
     badge: "Best Alternative Pad",
     amazonUrl: "https://www.amazon.com/s?k=UREVO+SpaceWalk+3S+Walking+Pad&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "sunny-treadpad-100",
     name: "Sunny Health & Fitness Treadpad 100 SF-T724064",
+    brand: "Sunny Health & Fitness",
     category: "Alternative: a Flat Pad With a US Support Line",
     badge: "Best Supported Alternative",
     amazonUrl: "https://www.amazon.com/s?k=Sunny+Health+Fitness+Treadpad+100+SF-T724064&tag=sktiger-20",
@@ -191,7 +195,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -772,6 +776,16 @@ const schema = {
               <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand Guide</span>
               <p class="font-bold text-gray-900 mt-2 mb-1">Zofdim Treadmills</p>
               <p class="text-sm text-gray-500 leading-relaxed">How to check a marketplace brand you cannot trace, and alternatives.</p>
+            </a>
+            <a href="/ajoosos-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">AJOOSOS 2-in-1 Treadmill</p>
+              <p class="text-sm text-gray-500 leading-relaxed">A scooter brand's Amazon walking pad we could not verify: what the listing says, how to check it, and.</p>
+            </a>
+            <a href="/umay-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Brand Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">UMAY Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">UMAY Fitness's SF20, U20F and L20: store prices, figures that disagree, a one-year warranty and possible.</p>
             </a>
           </div>
         </div>

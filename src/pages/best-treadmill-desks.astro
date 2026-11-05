@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "uplift-treadmill-desk",
     name: "UPLIFT Treadmill Desk (V3 Desk + Inclining Walking Pad)",
+    brand: "UPLIFT",
     category: "Kind: Integrated set — standing desk and walking pad sold together",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=treadmill+desk&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "imovr-lander-unsit",
     name: "iMovR Lander Treadmill Desk with Unsit Treadmill",
+    brand: "iMovR",
     category: "Kind: Integrated set — office-grade desk and treadmill",
     badge: "Best Premium",
     amazonUrl: "https://www.amazon.com/s?k=treadmill+desk&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "flexispot-e7-plus",
     name: "FlexiSpot E7 Plus Standing Desk (4-Leg)",
+    brand: "FlexiSpot",
     category: "Kind: Standing desk for a walking pad",
     badge: "Most Stable Desk",
     amazonUrl: "https://www.amazon.com/s?k=FlexiSpot+E7+Plus+4+Leg+Standing+Desk&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "vari-comfortedge",
     name: "Vari Electric Standing Desk with ComfortEdge",
+    brand: "Vari",
     category: "Kind: Standing desk for a walking pad",
     badge: "Best for Typing Comfort",
     amazonUrl: "https://www.amazon.com/dp/B0CT94PMSR?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "uplift-v3-desk-only",
     name: "UPLIFT V3 Standing Desk (Desk Only)",
+    brand: "UPLIFT",
     category: "Kind: Standing desk for a walking pad",
     badge: "Best for an Existing Pad",
     amazonUrl: "https://www.amazon.com/dp/B07RRRC295?tag=sktiger-20&linkCode=ll1",
@@ -217,7 +222,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -870,6 +875,11 @@ const schema = {
               <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand Guide</span>
               <p class="font-bold text-gray-900 mt-2 mb-1">InMovement Treadmill Desk</p>
               <p class="text-sm text-gray-500 leading-relaxed">The maker of the Unsit: buying direct, the desk bundle, and vs LifeSpan.</p>
+            </a>
+            <a href="/best-treadmill-laptop-holders/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Accessories</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill Laptop Holders</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Laptop boards, pole trays and phone clamps that strap to a treadmill, how to measure the rails, and when.</p>
             </a>
           </div>
         </div>

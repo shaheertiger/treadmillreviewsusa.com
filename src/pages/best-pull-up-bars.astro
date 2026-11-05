@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "rep-wall-mounted-multi-grip",
     name: "REP Fitness Wall-Mounted Multi-Grip Pull-Up Bar",
+    brand: "REP Fitness",
     category: "Wall- or ceiling-mounted multi-grip bar",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=wall+mounted+pull+up+bar&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "titan-wall-mounted",
     name: "Titan Fitness Wall-Mounted Pull-Up Bar",
+    brand: "Titan Fitness",
     category: "Straight wall- or ceiling-mounted bar",
     badge: "Best Value Wall Mount",
     amazonUrl: "https://www.amazon.com/dp/B09HL3FJPK?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "ultimate-body-press-ceiling",
     name: "Ultimate Body Press Ceiling Mount Pull Up Bar with Reversible Risers",
+    brand: "Ultimate Body Press",
     category: "Ceiling-joist pull-up bar",
     badge: "Best Ceiling Mount",
     amazonUrl: "https://www.amazon.com/s?k=Ultimate+Body+Press+Ceiling+Mount+Pull+Up+Bar+Reversible+Risers&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "iron-gym-total-upper-body",
     name: "Iron Gym Total Upper Body Workout Bar",
+    brand: "Iron",
     category: "Doorway leverage bar, no screws",
     badge: "Cheapest Doorway Bar",
     amazonUrl: "https://www.amazon.com/dp/B001EJMS6K?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "ultimate-body-press-xl-doorway",
     name: "Ultimate Body Press XL Doorway Pull Up Bar with Elevated Bar",
+    brand: "Ultimate Body Press",
     category: "Doorway leverage bar with raised crossbar",
     badge: "Best Doorway Headroom",
     amazonUrl: "https://www.amazon.com/dp/B01NCP3S71?tag=sktiger-20&linkCode=ll1",
@@ -217,7 +222,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

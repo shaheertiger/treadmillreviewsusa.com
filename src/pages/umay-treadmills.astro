@@ -1,0 +1,811 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "UMAY Treadmill Review (2026): SF20, U20F, L20 and What to Check";
+const description =
+  "Are UMAY Fitness treadmills and walking pads any good? The SF20, U20F and L20 checked against UMAY’s store and independent sources on 5 November 2026, with prices, conflicting figures and warranty.";
+
+const PRODUCTS = [
+  {
+    id: "umay-sf20",
+    name: "UMAY SF20 Foldable Treadmill",
+    brand: "UMAY",
+    category: "Folding Treadmill With Handrails and Incline",
+    badge: "Most Searched UMAY",
+    amazonUrl: "https://www.amazon.com/s?k=UMAY+SF20+Foldable+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    image: null,
+    reviewUrl: null,
+    priceRange: "$289.99 at UMAY (5 Nov 2026)",
+    priceBounds: {"low":289.99,"high":289.99},
+    specs: "400 lb capacity · 37.5 x 15 in. belt · 3.0 HP advertised · 3-level manual incline · side handrails",
+    pros: [
+      "UMAY’s page and its manual agree on the 400 lb capacity, belt size and 3.0 HP rating",
+      "Side handrails and a tablet holder, unlike a flat walking pad",
+      "Sold by UMAY’s own store with 30-day returns and a US phone line",
+    ],
+    cons: [
+      "UMAY gives a 15% maximum incline and one manual 16%, so no maximum is printed",
+      "Only a 37.5-inch belt, short for running despite the 7.2 mph top speed",
+      "A one-year warranty, and one buyer reports a three-month wait for a replacement",
+    ],
+    bottomLine: "For a walker who wants handrails and a steep manual incline in a folding frame for under $300, and who will mostly walk.",
+    description: "The SF20 is the UMAY model people search for by name. UMAY’s US store listed it in stock at $289.99, against a $479.99 “regular” price, on 5 November 2026, describing a three-position manual incline (0, 7 and 15%), speeds to 7.2 mph, 12 preset programs, side handrails, a wide tablet holder, a 3.0 HP motor, a 37.5 by 15-inch running area and a 400 lb capacity. UMAY’s manuals for the SF20, as indexed by a manuals site, agree on the 400 lb, the 3.0 HP brushless motor and the belt size, but one gives the incline as 15% and another 16%, which is why the card gives no maximum. We could not confirm the 7.2 mph top speed in the manuals. UMAY’s store showed 90 buyer reviews, mostly positive, including one owner who received a unit with a cut belt and was still waiting for a replacement three months later.",
+  },
+  {
+    id: "umay-u20f",
+    name: "UMAY U20F Folding 3-in-1 Walking Pad",
+    brand: "UMAY",
+    category: "2-in-1 Walking Pad With Handle and Incline",
+    badge: "Best UMAY Walking Pad",
+    amazonUrl: "https://www.amazon.com/s?k=UMAY+U20F+Walking+Pad&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    image: null,
+    reviewUrl: null,
+    priceRange: "$209.99–$219.99 at UMAY (5 Nov 2026)",
+    priceBounds: {"low":209.99,"high":219.99},
+    specs: "Handle bar · 10% manual incline, 15% with included riser · 0.6–6.5 mph (maker) · 2.5 HP advertised",
+    pros: [
+      "A fold-up handle bar and a manual incline for about $210",
+      "A 4.3-inch folded height for under-sofa storage, as UMAY lists it",
+      "UMAY’s most-reviewed pad on its own store, with 275 reviews",
+    ],
+    cons: [
+      "UMAY gives the capacity as 400 lb on this page and 265 lb on another that sells it",
+      "The 2.5 HP figure is a peak rating with no continuous rating published",
+      "No independent review we could find",
+    ],
+    bottomLine: "A sensible UMAY pad for desk walking with an incline, provided you assume the lower weight limit.",
+    description: "The U20F, which UMAY’s store address still calls the U18F, is a 2-in-1 walking pad with a fold-up handle bar. On 5 November 2026 UMAY sold the Basic version at $209.99 and the Pro, with armrests, at $219.99, describing a 10% manual incline that rises to 15% with an included red riser, 0.6 to 6.5 mph, a 2.5 HP brushless motor, a 6-layer belt and a 4.3-inch folded height. The capacity does not hold still: the U20F’s own page says 400 lb, UMAY’s “Smart Walking Pad” listing, which sells the same U20F as a variant, is titled 265 lb, and a buyer review on the U20F page mentions 300 lb. We found no independent source to settle it, so the card gives none. Plan on 265 lb until UMAY or the manual says otherwise.",
+  },
+  {
+    id: "umay-l20",
+    name: "UMAY L20 Foldable Treadmill",
+    brand: "UMAY",
+    category: "Folding Treadmill With 20% Manual Incline",
+    badge: "Best UMAY for Heavier Users",
+    amazonUrl: "https://www.amazon.com/s?k=UMAY+L20+Foldable+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    image: null,
+    reviewUrl: null,
+    priceRange: "$389.99 at UMAY (5 Nov 2026)",
+    priceBounds: {"low":389.99,"high":389.99},
+    specs: "400 lb capacity · 3.5 HP advertised · manual incline to 20% · 0–8.7 mph (maker) · folds to 4.5 in.",
+    pros: [
+      "UMAY and its Best Buy listing agree on the 400 lb capacity, 3.5 HP and 20% incline",
+      "A real treadmill console and handlebar, with a deck height that folds to 4.5 inches",
+      "The highest incline of any manual-incline UMAY",
+    ],
+    cons: [
+      "UMAY gives a 42.5-inch deck without a width on this model",
+      "Incline is set by hand at three positions (2, 16 and 20%), not motorised",
+      "A one-year warranty is short for a $390 treadmill",
+    ],
+    bottomLine: "For a heavier walker who wants a steep incline and handrails without paying for a motorised one.",
+    description: "The L20 is UMAY’s manual-incline folding treadmill. UMAY’s US store listed it in stock at $389.99, against $649.99, on 5 November 2026, with three quick-set incline positions of 2, 16 and 20%, a 3.5 HP brushless motor, 0 to 8.7 mph, a 400 lb capacity, a 42.5-inch shock-absorbing deck, a 50 by 25 by 47-inch footprint and a folded height of 4.5 inches. Its Best Buy marketplace listing is titled with the same 20% manual incline, 3.5 HP and 400 lb capacity, though Best Buy’s page would not open for us to confirm the price or seller. The L10, at $429.99 on the day, is the same frame with a motorised 20% incline and a 16.2 by 42.5-inch belt, also as UMAY lists it. We found no hands-on review of either.",
+  },
+  {
+    id: "merach-novawalk-w50-trekpad",
+    name: "MERACH NovaWalk W50 TrekPad",
+    brand: "MERACH",
+    category: "High-Capacity Walking Pad Alternative",
+    badge: "Best Checked Alternative",
+    amazonUrl: "https://www.amazon.com/dp/B0HJTT2S6R?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41N86eQUrbL._SL500_.jpg","width":500,"height":500},
+    reviewUrl: null,
+    priceRange: "$299.99 at MERACH (5 Nov 2026)",
+    priceBounds: {"low":299.99,"high":299.99},
+    specs: "41.3 x 16.5 in. belt · 0.6–4.0 mph · 400 lb capacity · 1.25 HP continuous motor · powered incline",
+    pros: [
+      "A 400 lb rating that holds up across the maker, Amazon and independent coverage",
+      "MERACH publishes a continuous motor rating, which UMAY does not",
+      "A two-year warranty, double UMAY’s",
+    ],
+    cons: [
+      "No handle bar, and walking speed only, to 4 mph",
+      "Does not fold, and at 69 lb is heavy to move",
+      "MERACH gives 12% incline and at least one roundup 10%, so no maximum is printed",
+    ],
+    bottomLine: "The walking pad to buy instead of a UMAY if you want a weight limit and a warranty you can rely on.",
+    description: "If a UMAY listing’s high weight limit is what drew you to it, this is the budget pad whose high weight limit holds up. MERACH’s product page on 5 November 2026 listed the W50 TrekPad at $299.99, against $479.99, with a 41.3 by 16.5-inch belt, 0.6 to 4.0 mph, a 400 lb maximum user weight, a 1.25 HP continuous and 3.5 HP peak motor, powered incline, a 69.2 lb unit weight, a two-year warranty and 30-day returns. The capacity and belt figures matched the Amazon listing and independent coverage when we checked them in October. MERACH gives 12% incline while a published roundup describes 10%, so the card leaves the maximum out.",
+  },
+  {
+    id: "urevo-strol-2e",
+    name: "UREVO Strol 2E",
+    brand: "UREVO",
+    category: "Budget 2-in-1 Alternative",
+    badge: "Cheapest Checked 2-in-1",
+    amazonUrl: "https://www.amazon.com/dp/B0HG9D52DC?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41ZS3Q+sfdL._SL500_.jpg","width":500,"height":500},
+    reviewUrl: null,
+    priceRange: "$169.99 at UREVO (5 Nov 2026)",
+    priceBounds: {"low":169.99,"high":169.99},
+    specs: "0.6–6.2 mph with handle up · 265 lb capacity · about 15 x 40 in. belt · no incline",
+    pros: [
+      "UREVO and two hands-on reviews agree on the 265 lb rating and 6.2 mph",
+      "A fold-down handle, like the UMAY U20F, for $40 less",
+      "A one-year plus 180-day warranty",
+    ],
+    cons: [
+      "No incline",
+      "Sources give the belt as 40.1 or 40.2 inches long",
+      "Narrow at 15 inches; walking speed is capped at 4 mph with the handle folded",
+    ],
+    bottomLine: "The cheaper, better-reviewed 2-in-1 to compare the U20F against if you do not need an incline.",
+    description: "The Strol 2E is UREVO’s budget 2-in-1 walking pad with a handle that folds flat. UREVO’s US store listed it in stock at $169.99, against $289.99, on 5 November 2026, with 0.6 to 4.0 mph with the handle down and 0.6 to 6.2 mph with it raised, a 265 lb maximum load, a 2.25 HP maximum motor rating and a one-year plus 180-day warranty. Live Science and T3, both of which reviewed it hands-on, give the same 265 lb and 6.2 mph, which is more independent confirmation than any UMAY pad has. The belt is 40.2 inches long on UREVO’s page and 40.1 in other listings, which is why the card rounds.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Brands", item: "https://www.treadmillreviewsusa.com/brands/" },
+        { "@type": "ListItem", position: 3, name: "UMAY Treadmills", item: "https://www.treadmillreviewsusa.com/umay-treadmills/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Are UMAY treadmills good?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "They are reasonable budget machines from a brand with its own US store, phone support and 30-day returns. Their figures need checking by model: the SF20 and L20 hold up against a second source, but the U20F walking pad carries 400, 300 and 265 lb weight limits across UMAY’s own pages.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the UMAY SF20?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A folding treadmill with side handrails, a tablet holder and a three-position manual incline. On 5 November 2026 UMAY sold it at $289.99. UMAY and its manuals agree on a 400 lb capacity, a 3.0 HP motor rating and a 37.5 by 15-inch belt; the incline is 15% or 16% depending on the source.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Who makes UMAY treadmills?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "UMAY Fitness sells them from umayfitness.com and on Amazon but does not say who builds them. OCDevel’s walking-pad tracker reports that at least one UMAY pad is the same machine sold on Amazon as an ANCHEER, and describes UMAY’s pads as rebadged ANCHEER hardware.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What warranty does UMAY give?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "On 5 November 2026 UMAY’s product pages gave one year on parts and one year on the structural frame for walking pads and treadmills, with a 30-day returns policy. A tracker recorded a five-year frame warranty earlier in 2026, so check the terms on the day you buy.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Has there been a UMAY treadmill recall?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "We searched the CPSC recall database for UMAY by title and manufacturer on 5 November 2026 and found no treadmill or walking-pad recall. Check your model number on the CPSC site before you buy, since marketplace products are sometimes recorded under another company’s name.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where can I find UMAY treadmill reviews?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "UMAY’s own store shows buyer reviews, mostly positive, and Amazon shows more. We found no independent hands-on review of the SF20, U20F or L20. Read the low-star reviews for delivery damage and slow replacements, which are the complaints that recur.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
+      datePublished: "2026-11-05",
+      dateModified: "2026-11-05",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+    ...PRODUCTS.map((product) => ({
+      "@type": "Product",
+      name: product.name,
+      description: product.description,
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
+      ...(product.image ? { image: product.image.url } : {}),
+      ...(product.priceBounds
+        ? {
+            offers: {
+              "@type": "AggregateOffer",
+              priceCurrency: "USD",
+              lowPrice: product.priceBounds.low,
+              highPrice: product.priceBounds.high,
+              url: product.amazonUrl,
+            },
+          }
+        : {}),
+    })),
+    {
+      "@type": "ItemList",
+      name: title,
+      numberOfItems: 5,
+      itemListElement: PRODUCTS.map((product, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: product.name,
+        url: `https://www.treadmillreviewsusa.com/umay-treadmills/#${product.id}`,
+      })),
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-11-05",
+    modifiedTime: "2026-11-05",
+    author: "Shaheer Ali Khan",
+    section: "Fitness Equipment",
+    tags: [
+      "umay treadmill",
+      "umay fitness treadmill",
+      "umay treadmill review",
+      "umay sf20 foldable treadmill",
+      "umay walking pad",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "See the UMAY Picks", link: "#models" }}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-umaytreadmills" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-umaytreadmills)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Brand Guide
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated November 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          UMAY Treadmills: <span class="text-[#5AA9FF]">What the Figures Really Say</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          UMAY Fitness sells budget walking pads and folding treadmills through its own US store and on Amazon, at sale prices that usually sit 40% below the “regular” price. We read every treadmill on UMAY’s store on 5 November 2026 and checked the main models against manuals and independent sources. Some figures hold up; others, including one weight limit, change from page to page.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            The Short Answer
+          </a>
+          <a href="#umay-sf20" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            UMAY SF20
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
+          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">November 5, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="1.5k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
+          5 November 2026 we read the full product catalogue of UMAY Fitness’s US store
+          (umayfitness.com, 44 products, including 14 walking pads and treadmills) with each model’s
+          sale and “regular” price, stock status, description, warranty and returns terms, and read the
+          SF20, U20F and Smart Walking Pad product pages and their buyer reviews in full. We
+          cross-checked the SF20 against UMAY’s published manuals as indexed by a manuals site, the L20
+          against its Best Buy marketplace listing title, and the brand against OCDevel’s walking-pad
+          tracker. Amazon and Best Buy pages returned errors when we tried to read them, so we could not
+          confirm Amazon prices or sellers. We found no hands-on review of the SF20, U20F or L20.
+          Figures that conflict are stated as conflicts and kept off the cards. We searched the CPSC
+          recall database for UMAY by title and manufacturer and found no treadmill recall. We have not
+          tested any of these machines. Prices change often, and UMAY’s sale prices especially. We earn
+          a commission if you buy through the Amazon links on this page; it does not change what we
+          say.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="max-w-3xl mx-auto px-4 pt-8">
+      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
+        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
+        <ul class="list-none m-0 p-0">
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Most Searched UMAY:</span>
+            <a href="#umay-sf20" class="font-bold text-gray-900 no-underline hover:underline">UMAY SF20 Foldable Treadmill</a>
+            <a href="#umay-sf20" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best UMAY Walking Pad:</span>
+            <a href="#umay-u20f" class="font-bold text-gray-900 no-underline hover:underline">UMAY U20F Folding 3-in-1 Walking Pad</a>
+            <a href="#umay-u20f" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best UMAY for Heavier Users:</span>
+            <a href="#umay-l20" class="font-bold text-gray-900 no-underline hover:underline">UMAY L20 Foldable Treadmill</a>
+            <a href="#umay-l20" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Checked Alternative:</span>
+            <a href="#merach-novawalk-w50-trekpad" class="font-bold text-gray-900 no-underline hover:underline">MERACH NovaWalk W50 TrekPad</a>
+            <a href="#merach-novawalk-w50-trekpad" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Cheapest Checked 2-in-1:</span>
+            <a href="#urevo-strol-2e" class="font-bold text-gray-900 no-underline hover:underline">UREVO Strol 2E</a>
+            <a href="#urevo-strol-2e" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Are UMAY Treadmills Any Good? The Short Answer</a>
+          <a href="#who-is-umay" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Who Makes UMAY Treadmills?</a>
+          <a href="#models" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. UMAY Treadmills and Walking Pads: Our Picks</a>
+          <a href="#umay-sf20" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. UMAY SF20 Foldable Treadmill: What We Could Confirm</a>
+          <a href="#conflicts" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Where UMAY’s Figures Disagree</a>
+          <a href="#warranty-returns" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. UMAY Warranty, Returns and Support</a>
+          <a href="#who-should-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Who Should Buy a UMAY Treadmill</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          UMAY is one of the newer budget names in walking pads and folding treadmills: it has its own
+          US web store with a phone number and a 30-day returns policy, sells on Amazon, and lists a
+          wide range, from a $180 vibrating walking pad to a $600 treadmill with a 20% motorised incline.
+          That is more than many marketplace brands offer. But UMAY’s own pages do not always agree with
+          each other, independent reviews are thin, and the warranty is short. This guide covers the
+          models people search for most, the SF20 above all, what we could confirm about each, and what
+          to watch for before you buy.
+        </p>
+
+        <div id="short-answer" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Are UMAY Treadmills Any Good? The Short Answer</h2>
+<p>
+            <strong>UMAY treadmills are reasonable budget machines from a brand with its own US store,
+            but their figures need checking model by model: the SF20 and L20 hold up against a second
+            source, while the U20F walking pad carries three different weight limits across UMAY’s own
+            pages.</strong> Buy one at the sale price, from UMAY’s store or a listing Amazon fulfils,
+            assume the lowest weight limit you see, and do not count on the one-year warranty for much.
+          </p>
+          <p>
+            What sets UMAY apart from most marketplace walking-pad names is that it exists outside the
+            marketplace. UMAY Fitness runs a US web store with a phone line and support email, publishes
+            a 30-day returns policy and free shipping over $49, and lists a range that runs from walking
+            pads to <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>folding treadmills</a>, ellipticals and bikes. That gives you somewhere to go if
+            something goes wrong. Brands like
+            <a href="/zofdim-treadmills/" class="text-[#0F62FE] font-medium">Zofdim</a>, which we could
+            not trace at all, give you nothing of the kind.
+          </p>
+          <p>
+            What UMAY does not give you is much independent evidence. We found no hands-on review of the
+            SF20, U20F or L20. Our cards below therefore carry only the figures we could confirm against
+            a manual or a second retailer, and say plainly where UMAY contradicts itself.
+          </p>
+        </div>
+
+        <div id="who-is-umay" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Who Makes UMAY Treadmills?</h2>
+<p>
+            UMAY sells as “Umay Fitness” from umayfitness.com, which replaced an older umayfit.com
+            address. On 5 November 2026 its US store listed 44 products: 14 walking pads and treadmills,
+            plus an elliptical, under-desk elliptical, exercise bikes, a <a href="/best-vibration-plates/" class="text-[#0F62FE] font-medium" data-autolink>vibration plate</a>, a
+            stepper, Pilates boards, a home gym and accessories. It gives a US phone number and a support
+            email, and its store prices are in US dollars with US shipping terms.
+          </p>
+          <p>
+            Like most budget walking-pad brands, UMAY does not say who builds its machines. OCDevel’s
+            walking-pad tracker, which reads Amazon listings and manuals, reports that at least one UMAY
+            walking pad, the SM3, is the same machine sold on Amazon as an ANCHEER, with identical specs,
+            and describes UMAY’s pads as rebadged ANCHEER hardware. We could not confirm that beyond the
+            one model, but it is consistent with how this part of the market works: a small number of
+            factories supply many labels. Our
+            <a href="/ancheer-treadmills/" class="text-[#0F62FE] font-medium">ANCHEER guide</a> covers that
+            brand, and our <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">guide to buying a treadmill on Amazon</a>
+            explains what it means for returns and support.
+          </p>
+          <p>
+            UMAY also sells under names on Amazon that do not always match its own store. The SM3, for
+            example, does not appear on UMAY’s site at all, and OCDevel found that the Amazon listing it
+            had tracked for that model now shows a different product. Model names on UMAY’s store also
+            shift: the U20F’s product address still reads U18F. If you are comparing a UMAY on Amazon with
+            one on UMAY’s store, compare the photos, the <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium" data-autolink>belt size</a> and the motor rating, not just the
+            name.
+          </p>
+        </div>
+
+        <div id="models" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. UMAY Treadmills and Walking Pads: Our Picks</h2>
+<p>
+            These are the three UMAY machines whose main figures we could check against a second source
+            on 5 November 2026, plus two checked alternatives from other brands. Prices are UMAY’s sale
+            prices on its own store on the day; UMAY shows every product at roughly 40% off a higher
+            “regular” price, so treat the sale price as the real one. Where UMAY’s figures disagree with
+            each other or with the manual, the figure is left off the card and the description says so.
+          </p>
+          <p>
+            For handrails and a steep incline under $300, the SF20. For an under-desk walking pad with a
+            handle and an incline, the U20F, with its weight limit treated cautiously. For a heavier user
+            who wants a fuller treadmill, the L20. And if you want a weight limit and warranty you can lean
+            on, the MERACH and UREVO cards are the comparison.
+          </p>
+        </div>
+      </div>
+
+      <!-- Product cards -->
+      <div class="not-prose">
+        {
+          PRODUCTS.map((product, index) => (
+            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
+              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
+                  <div>
+                    <h3 class="text-white font-black text-xl leading-tight m-0">
+                      {index + 1}. {product.name}
+                    </h3>
+                    <p class="text-gray-400 text-xs">{product.category}</p>
+                  </div>
+                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                    {product.badge}
+                  </span>
+                </div>
+                <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                    </a>
+                  )}
+                  <div class="flex items-center gap-2 mb-4 flex-wrap">
+                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
+                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
+                  </div>
+                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
+                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
+                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
+                      <ul class="space-y-2">
+                        {product.pros.map((pro) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
+                      <ul class="space-y-2">
+                        {product.cons.map((con) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="border-t border-gray-100 pt-4">
+                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
+                    <div class="flex flex-wrap items-center gap-3">
+                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+                        {product.amazonLabel} &rarr;
+                      </a>
+                      {product.reviewUrl && (
+                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
+                          Read our full {product.name} review &rarr;
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="umay-sf20" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. UMAY SF20 Foldable Treadmill: What We Could Confirm</h2>
+<p>
+            The SF20 is the UMAY that people search for by model number, and it sits between a walking
+            pad and a full treadmill. It has a folding frame with side handrails, a console with three
+            small displays, a wide tablet holder and a three-position manual incline. UMAY sold it at
+            $289.99 on 5 November 2026, which it presents as 40% off $479.99.
+          </p>
+          <p>
+            Three figures hold up. UMAY’s page and its manuals agree on a 400 lb capacity, a 3.0 HP
+            brushless motor rating and a 37.5 by 15-inch running area. The incline does not quite:
+            UMAY’s page gives three positions of 0, 7 and 15%, one indexed manual gives 15% and another
+            16%, which may reflect an earlier version, since UMAY labels the current one a “New
+            Upgrade”. We could not confirm the 7.2 mph top speed in the manuals, which describe jogging
+            speeds in the 2.5 to 4.5 mph range.
+          </p>
+          <p>
+            Read those figures together and the SF20 is a walking machine with a jogging mode, not a
+            running treadmill. A 37.5-inch belt is short for anyone running, and a 400 lb capacity on a
+            folding frame of this size is a rating to treat with a generous margin. Our
+            <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">treadmill weight capacity guide</a>
+            explains why. Where it makes sense is for incline walking with something to hold: the handrails
+            and steep manual incline are things most walking pads at this price lack. Our guide to
+            <a href="/what-does-incline-walking-do/" class="text-[#0F62FE] font-medium">what incline walking does</a>
+            covers the benefit.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What SF20 owners say</h3>
+          <p>
+            UMAY’s store showed 90 reviews for the SF20 on the day, 88% of them five-star. The positive
+            ones mention easy setup, quiet running and easy folding; one owner judged the plastic tablet
+            holder, cup holder and console acceptable for the price but not durable. The negative reviews
+            are the ones to read: one owner received a machine with a cut belt and, after two months of
+            promised replacements, was still waiting in the third. Reviews on a brand’s own store are
+            moderated by the brand, so treat the average with caution and the complaints seriously.
+          </p>
+        </div>
+
+        <div id="conflicts" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Where UMAY’s Figures Disagree</h2>
+<p>
+            The pattern across UMAY’s range is figures that look precise but do not match from one page
+            to the next. These are the ones we found on 5 November 2026.
+          </p>
+          <ul>
+            <li><strong>U20F weight limit.</strong> 400 lb on the U20F’s own page; 265 lb in the title
+            of UMAY’s “Smart Walking Pad” listing, which sells the U20F as one of its two variants; 300 lb
+            in a buyer review on the U20F page. We cannot tell which is right.</li>
+            <li><strong>SF20 incline.</strong> 15% on UMAY’s page and in one manual, 16% in another.</li>
+            <li><strong>Warranty.</strong> UMAY’s product pages now give one year on parts and one year
+            on the structural frame for walking pads and treadmills. OCDevel recorded a five-year frame
+            warranty on UMAY’s site earlier in 2026. Check the terms on the day you buy.</li>
+            <li><strong>Unit weight.</strong> UMAY describes the U19 vibration walking pad as weighing
+            “only 27 pound” while giving it a 350 lb capacity, a 3.0 HP motor, a 15% incline and a 36 by
+            16-inch belt. A pad with all of that would usually weigh well over 40 lb, so we have left it
+            off the cards.</li>
+            <li><strong>Horsepower.</strong> UMAY gives peak ratings of 2.5 to 4.0 HP and publishes no
+            continuous rating for any model. Our
+            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">treadmill horsepower guide</a>
+            explains why that matters less on a walking pad than the number suggests.</li>
+          </ul>
+          <p>
+            None of these is unusual for a budget brand, and none means the machines are unsafe. But they
+            mean you should take the lowest weight limit you see as the real one, and keep UMAY’s order
+            confirmation and the product page as it stood on the day you bought, in case the figures
+            change later.
+          </p>
+        </div>
+
+        <div id="warranty-returns" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. UMAY Warranty, Returns and Support</h2>
+<p>
+            On 5 November 2026 UMAY’s product pages gave a one-year warranty on parts and one year on the
+            structural frame for walking pads and treadmills, a 30-day returns policy, free shipping on
+            orders over $49 to the continental US (not Alaska, Hawaii or Puerto Rico), processing within
+            48 business hours and delivery in two to seven business days. Support is by phone and email.
+          </p>
+          <p>
+            A year is short. Several brands at the same prices, including MERACH, give two years on budget
+            pads, and the parts most likely to fail on a cheap pad, the belt, the motor controller and the
+            remote, tend to fail after the first year rather than within it. If you buy on Amazon, the
+            seller named in the buy box handles returns and the Amazon listing’s warranty terms apply,
+            which may differ from UMAY’s store.
+          </p>
+          <p>
+            Two practical steps help. Register the machine and keep your proof of purchase, and look after
+            the belt from the start: a dry belt is the commonest early failure on walking pads. Our guide
+            to <a href="/how-to-lubricate-a-walking-pad/" class="text-[#0F62FE] font-medium">lubricating a walking pad</a>
+            covers the routine, and our
+            <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies</a>
+            page compares retailers’ terms. UMAY also sells a lubricant and replacement safety keys and
+            remotes on its store.
+          </p>
+        </div>
+
+        <div id="who-should-buy" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Who Should Buy a UMAY Treadmill</h2>
+<p>
+            <strong>A UMAY is a reasonable buy</strong> if you want a budget walking pad or folding
+            treadmill with an incline, you weigh well under the lowest stated limit, you will mostly walk,
+            and you buy at the sale price from UMAY’s store or a listing Amazon fulfils. The SF20 is the
+            pick if you want handrails; the U20F if you want something that slides under a desk.
+          </p>
+          <p>
+            <strong>Look elsewhere</strong> if you need a weight limit you can rely on, want a warranty
+            longer than a year, or want to run. For heavier walkers the MERACH W50 TrekPad’s 400 lb rating
+            holds up across sources; for runners, a folding treadmill with a longer belt and a published
+            continuous motor rating is worth the extra money. Our
+            <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">best walking pads</a> and
+            <a href="/best-folding-treadmills/" class="text-[#0F62FE] font-medium">best folding treadmills</a>
+            roundups cover both, and our
+            <a href="/walking-pad-vs-folding-treadmill/" class="text-[#0F62FE] font-medium">walking pad vs. folding treadmill</a>
+            guide helps you choose between the SF20 type and the U20F type.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Are UMAY treadmills good?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                They are reasonable budget machines from a brand with its own US store, phone support and 30-day returns. Their figures need checking by model: the SF20 and L20 hold up against a second source, but the U20F walking pad carries 400, 300 and 265 lb weight limits across UMAY’s own pages.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What is the UMAY SF20?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                A folding treadmill with side handrails, a tablet holder and a three-position manual incline. On 5 November 2026 UMAY sold it at $289.99. UMAY and its manuals agree on a 400 lb capacity, a 3.0 HP motor rating and a 37.5 by 15-inch belt; the incline is 15% or 16% depending on the source.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Who makes UMAY treadmills?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                UMAY Fitness sells them from umayfitness.com and on Amazon but does not say who builds them. OCDevel’s walking-pad tracker reports that at least one UMAY pad is the same machine sold on Amazon as an ANCHEER, and describes UMAY’s pads as rebadged ANCHEER hardware.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What warranty does UMAY give?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                On 5 November 2026 UMAY’s product pages gave one year on parts and one year on the structural frame for walking pads and treadmills, with a 30-day returns policy. A tracker recorded a five-year frame warranty earlier in 2026, so check the terms on the day you buy.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Has there been a UMAY treadmill recall?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                We searched the CPSC recall database for UMAY by title and manufacturer on 5 November 2026 and found no treadmill or walking-pad recall. Check your model number on the CPSC site before you buy, since marketplace products are sometimes recorded under another company’s name.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Where can I find UMAY treadmill reviews?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                UMAY’s own store shows buyer reviews, mostly positive, and Amazon shows more. We found no independent hands-on review of the SF20, U20F or L20. Read the low-star reviews for delivery damage and slow replacements, which are the complaints that recur.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a UMAY Treadmill</h2>
+          <p class="text-gray-700 leading-relaxed">These are the errors we see most often with UMAY and similar budget brands, and each has a simple fix.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Taking the highest weight limit</h3>
+              <p class="text-gray-700 text-sm m-0">UMAY’s own pages disagree on at least one model’s capacity. Use the lowest figure you can find, and leave at least 50 lb of margin.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Paying the “regular” price</h3>
+              <p class="text-gray-700 text-sm m-0">UMAY shows almost every product at about 40% off. The sale price is the real price; if a listing asks for the regular one, buy elsewhere.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying it to run</h3>
+              <p class="text-gray-700 text-sm m-0">Even the SF20 has a 37.5-inch belt. Its top speed is a jogging allowance. Runners need a longer deck and a motor with a continuous rating.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not inspecting the delivery</h3>
+              <p class="text-gray-700 text-sm m-0">Damaged deliveries and slow replacements are the recurring complaint. Open and check the belt and frame the day it arrives, and report damage at once.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Brand &amp; Buying Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/ancheer-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">ANCHEER Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The Amazon walking-pad brand that at least one UMAY pad appears to share hardware with.</p>
+            </a>
+            <a href="/urevo-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">UREVO Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Another budget brand with a US store: prices, conflicting limits and warranty.</p>
+            </a>
+            <a href="/best-walking-pads-with-incline/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Best</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Walking Pads With Incline</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Incline walking pads compared, from manual risers to powered decks.</p>
+            </a>
+            <a href="/sunny-health-fitness-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Sunny Health &amp; Fitness Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">A long-established budget brand, for comparison with UMAY’s range.</p>
+            </a>
+            <a href="/ajoosos-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">AJOOSOS 2-in-1 Treadmill</p>
+              <p class="text-sm text-gray-500 leading-relaxed">A scooter brand's Amazon walking pad we could not verify: what the listing says, how to check it, and.</p>
+            </a>
+            <a href="/funmily-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Brand Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">FUNMILY Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">An Amazon-led brand whose pads carry 2.5 or 3.5 HP and 300–400 lb depending on the source: models.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">UMAY treadmills are reasonable budget machines from a brand you can
+            actually contact</strong>, but only some of their figures hold up. The SF20 ($289.99) and L20
+            ($389.99) agree with a second source on their capacity and motor; the U20F walking pad
+            ($209.99) does not agree with itself on its weight limit.
+          </p>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            Buy at UMAY’s sale price, assume the lowest weight limit, and remember the warranty is one year.
+            If you need more certainty, the MERACH W50 TrekPad and
+            <a href="/urevo-treadmills/" class="text-[#5AA9FF] font-bold no-underline">UREVO</a> Strol 2E
+            have figures independent reviewers have confirmed.
+          </p>
+        </div>
+
+        <!-- Meet the Author -->
+        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
+          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
+          <div>
+            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
+            <p class="text-sm font-bold text-gray-900 m-0">
+              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
+              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+            </p>
+            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
+              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
+              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
+              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
+              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
+              running ergonomics, noise and long-term durability. Every guide says what was checked and
+              when, and says plainly when a product has not been tested hands-on.
+              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
+              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </article>
+</Layout>

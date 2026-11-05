@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "walkingpad-z1",
     name: "WalkingPad Z1",
+    brand: "WalkingPad",
     category: "Best Overall Mini Treadmill",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0H2YYZTL8?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "urevo-spacewalk-e1l",
     name: "UREVO SpaceWalk E1L",
+    brand: "UREVO",
     category: "Lightest Mini Treadmill",
     badge: "Lightest",
     amazonUrl: "https://www.amazon.com/s?k=UREVO+SpaceWalk+E1L+Walking+Pad&tag=sktiger-20",
@@ -62,6 +64,7 @@ const PRODUCTS = [
   {
     id: "egofit-walker-pro-m1",
     name: "Egofit Walker Pro M1",
+    brand: "Egofit",
     category: "Smallest Flat Footprint",
     badge: "Smallest Footprint",
     amazonUrl: "https://www.amazon.com/dp/B08R37V99Q?tag=sktiger-20&linkCode=ll1",
@@ -88,6 +91,7 @@ const PRODUCTS = [
   {
     id: "walkingpad-c2",
     name: "WalkingPad C2",
+    brand: "WalkingPad",
     category: "Best Mini Treadmill for Small Flats",
     badge: "Best Folding Value",
     amazonUrl: "https://www.amazon.com/dp/B0F48MZV54?tag=sktiger-20&linkCode=ll1",
@@ -113,6 +117,7 @@ const PRODUCTS = [
   {
     id: "urevo-strol-2e",
     name: "UREVO Strol 2E",
+    brand: "UREVO",
     category: "Best Mini Treadmill With a Handle",
     badge: "Best With Handle",
     amazonUrl: "https://www.amazon.com/dp/B0HG9D52DC?tag=sktiger-20&linkCode=ll1",
@@ -214,7 +219,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

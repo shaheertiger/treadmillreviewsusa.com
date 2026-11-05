@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-commercial-1750",
     name: "NordicTrack Commercial 1750",
+    brand: "NordicTrack",
     category: "Best Overall Treadmill for Marathon Training",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0D5YKF4SK?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "horizon-7-8-at",
     name: "Horizon 7.8 AT",
+    brand: "Horizon",
     category: "Best Marathon Treadmill Without a Subscription",
     badge: "No Subscription",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+7.8+AT+Treadmill&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-x16",
     name: "NordicTrack X16",
+    brand: "NordicTrack",
     category: "Best Treadmill for Downhill Courses",
     badge: "Most Decline",
     amazonUrl: "https://www.amazon.com/s?k=NordicTrack+X16+Incline+Treadmill&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-commercial-2450",
     name: "NordicTrack Commercial 2450",
+    brand: "NordicTrack",
     category: "Best Marathon Treadmill for Speed Work",
     badge: "Most Speed",
     amazonUrl: "https://www.amazon.com/dp/B0D5YKDXDV?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "wahoo-kickr-run",
     name: "Wahoo KICKR RUN",
+    brand: "Wahoo",
     category: "Best Premium Treadmill for Course Simulation",
     badge: "Best Premium",
     amazonUrl: "https://www.amazon.com/s?k=smart+treadmill+with+incline+and+decline&tag=sktiger-20",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "horizon-7-0-at",
     name: "Horizon 7.0 AT",
+    brand: "Horizon",
     category: "Best Budget Treadmill for Marathon Training",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+7.0+AT+Treadmill&tag=sktiger-20",
@@ -243,7 +249,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

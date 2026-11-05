@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "century-original-wavemaster",
     name: "Century Original Wavemaster",
+    brand: "Century",
     category: "Free-standing punching bag",
     badge: "Best Free-Standing Bag",
     amazonUrl: "https://www.amazon.com/dp/B093JSL5GH?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "hayabusa-heavy-bag",
     name: "Hayabusa Heavy Bag (Unfilled)",
+    brand: "Hayabusa",
     category: "Hanging heavy bag",
     badge: "Best Hanging Bag",
     amazonUrl: "https://www.amazon.com/dp/B077G9WW54?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "hayabusa-t3-boxing-gloves",
     name: "Hayabusa T3 Boxing Gloves",
+    brand: "Hayabusa",
     category: "Training gloves",
     badge: "Best Gloves",
     amazonUrl: "https://www.amazon.com/dp/B07S323CF4?tag=sktiger-20&linkCode=ll1",
@@ -88,6 +91,7 @@ const PRODUCTS = [
   {
     id: "everlast-elite-hand-wraps",
     name: "Everlast Elite Hand Wraps 180in",
+    brand: "Everlast",
     category: "Stretch hand wraps",
     badge: "Best Hand Wraps",
     amazonUrl: "https://www.amazon.com/s?k=Everlast+Elite+Hand+Wraps+180&tag=sktiger-20",
@@ -113,6 +117,7 @@ const PRODUCTS = [
   {
     id: "title-classic-double-end-bag",
     name: "TITLE Classic Double End Bag 3.0",
+    brand: "TITLE",
     category: "Double-end bag",
     badge: "Best Double-End Bag",
     amazonUrl: "https://www.amazon.com/dp/B09M5BZCGH?tag=sktiger-20&linkCode=ll1",
@@ -138,6 +143,7 @@ const PRODUCTS = [
   {
     id: "rogue-sr-1-speed-rope",
     name: "Rogue SR-1 Bearing Speed Rope",
+    brand: "Rogue",
     category: "Speed jump rope",
     badge: "Best Jump Rope",
     amazonUrl: "https://www.amazon.com/s?k=speed+jump+rope&tag=sktiger-20",
@@ -164,6 +170,7 @@ const PRODUCTS = [
   {
     id: "fightcamp",
     name: "FightCamp",
+    brand: "FightCamp",
     category: "Connected boxing system",
     badge: "Best Connected System",
     amazonUrl: "https://www.amazon.com/s?k=free+standing+punching+bag&tag=sktiger-20",
@@ -266,7 +273,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

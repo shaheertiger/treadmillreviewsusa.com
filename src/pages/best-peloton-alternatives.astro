@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "schwinn-ic4",
     name: "Schwinn IC4",
+    brand: "Schwinn",
     category: "Indoor cycling bike, works with the Peloton App",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Schwinn+IC4+Indoor+Cycling+Bike&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "bowflex-c6",
     name: "BowFlex C6 Bike",
+    brand: "BowFlex",
     category: "Indoor cycling bike, the IC4 under the BowFlex name",
     badge: "Same Bike, Other Badge",
     amazonUrl: "https://www.amazon.com/s?k=BowFlex+C6+Bike&tag=sktiger-20",
@@ -61,6 +63,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-x24",
     name: "NordicTrack X24 Bike",
+    brand: "NordicTrack",
     category: "Incline/decline screen bike with iFIT",
     badge: "Best Bike+ Alternative",
     amazonUrl: "https://www.amazon.com/dp/B0DK7QZQBM?tag=sktiger-20&linkCode=ll1",
@@ -87,6 +90,7 @@ const PRODUCTS = [
   {
     id: "keiser-m3i",
     name: "Keiser M3i Indoor Bike",
+    brand: "Keiser",
     category: "Studio-grade indoor bike, no platform of its own",
     badge: "Best Premium",
     amazonUrl: "https://www.amazon.com/dp/B00LSX8AA0?tag=sktiger-20&linkCode=ll1",
@@ -113,6 +117,7 @@ const PRODUCTS = [
   {
     id: "wahoo-kickr-bike-pro",
     name: "Wahoo KICKR BIKE PRO",
+    brand: "Wahoo",
     category: "Smart bike with grade simulation and virtual shifting",
     badge: "Best for Cyclists",
     amazonUrl: "https://www.amazon.com/s?k=Wahoo+KICKR+BIKE+PRO&tag=sktiger-20",
@@ -139,6 +144,7 @@ const PRODUCTS = [
   {
     id: "wahoo-kickr-core-2",
     name: "Wahoo KICKR CORE 2",
+    brand: "Wahoo",
     category: "Direct-drive smart trainer for your own bike",
     badge: "Best If You Own a Road Bike",
     amazonUrl: "https://www.amazon.com/s?k=Wahoo+KICKR+CORE+2+Smart+Trainer&tag=sktiger-20",
@@ -240,7 +246,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

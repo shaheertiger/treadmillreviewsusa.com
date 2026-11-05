@@ -451,6 +451,18 @@ export default {
       blurb: "How to check a marketplace brand you cannot trace, and alternatives.",
       url: '/zofdim-treadmills/',
     },
+    {
+      kicker: "Brand Guide",
+      title: "AJOOSOS 2-in-1 Treadmill",
+      blurb: "A scooter brand's Amazon walking pad we could not verify: what the listing says, how to check it, and.",
+      url: '/ajoosos-treadmills/',
+    },
+    {
+      kicker: "Brand Guide",
+      title: "UMAY Treadmills",
+      blurb: "UMAY Fitness's SF20, U20F and L20: store prices, figures that disagree, a one-year warranty and possible.",
+      url: '/umay-treadmills/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">An ANCHEER walking pad can do the job for slow desk walking at a very low

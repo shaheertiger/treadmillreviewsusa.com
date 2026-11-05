@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-t-series-5",
     name: "NordicTrack T Series 5",
+    brand: "NordicTrack",
     category: "The Full-Size Treadmill That Dips Under $500",
     badge: "Best Full-Size",
     amazonUrl: "https://www.amazon.com/dp/B0CJ9W38VQ?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "urevo-strol-2e",
     name: "UREVO Strol 2E",
+    brand: "UREVO",
     category: "Best 2-in-1 Pad for Under $200",
     badge: "Best 2-in-1",
     amazonUrl: "https://www.amazon.com/dp/B0HG9D52DC?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "urevo-spacewalk-3s",
     name: "UREVO SpaceWalk 3S",
+    brand: "UREVO",
     category: "Best Walking Pad With Incline Under $300",
     badge: "Best Incline Pad",
     amazonUrl: "https://www.amazon.com/s?k=UREVO+SpaceWalk+3S+Walking+Pad&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "walkingpad-z1",
     name: "WalkingPad Z1",
+    brand: "WalkingPad",
     category: "Best Fold-in-Half Pad for Small Homes",
     badge: "Best for Storage",
     amazonUrl: "https://www.amazon.com/dp/B0H2YYZTL8?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "merach-w50-trekpad",
     name: "MERACH NovaWalk W50 TrekPad",
+    brand: "MERACH",
     category: "Best Under-$500 Pad for Heavier Walkers",
     badge: "Best High Capacity",
     amazonUrl: "https://www.amazon.com/dp/B0HJTT2S6R?tag=sktiger-20&linkCode=ll1",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "sunny-sf-t1407smart",
     name: "Sunny Health & Fitness SF-T1407SMART",
+    brand: "Sunny Health & Fitness",
     category: "Best Manual Walker Under $500",
     badge: "Best Without a Plug",
     amazonUrl: "https://www.amazon.com/s?k=Sunny+Health+Fitness+SF-T1407SMART+Manual+Treadmill&tag=sktiger-20",
@@ -243,7 +249,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

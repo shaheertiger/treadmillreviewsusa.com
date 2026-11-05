@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "nohrd-sprintbok",
     name: "NOHrD Sprintbok V2",
+    brand: "NOHrD",
     category: "Wooden Curved Manual Treadmill",
     badge: "Design-Led Premium",
     amazonUrl: "https://www.amazon.com/s?k=NOHrD+Sprintbok+Curved+Treadmill&tag=sktiger-20",
@@ -114,7 +115,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

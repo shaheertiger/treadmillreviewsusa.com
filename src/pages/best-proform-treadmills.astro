@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "proform-carbon-pro-2000",
     name: "ProForm Carbon Pro 2000",
+    brand: "ProForm",
     category: "Best ProForm for most people",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0FFDKN27H?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "proform-carbon-pro-9000",
     name: "ProForm Carbon Pro 9000",
+    brand: "ProForm",
     category: "Biggest screen and most motor ProForm sells",
     badge: "Premium Pick",
     amazonUrl: "https://www.amazon.com/dp/B0FKTTWRZW?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "proform-carbon-tls",
     name: "ProForm Carbon TLS",
+    brand: "ProForm",
     category: "Cheapest treadmill ProForm sells",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/dp/B0F6VVX36Z?tag=sktiger-20&linkCode=ll1",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "proform-carbon-tlx",
     name: "ProForm Carbon TLX",
+    brand: "ProForm",
     category: "Full-size deck without a built-in screen",
     badge: "Best Without a Screen",
     amazonUrl: "https://www.amazon.com/dp/B0C6DTYQ3G?tag=sktiger-20&linkCode=ll1",
@@ -191,7 +195,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

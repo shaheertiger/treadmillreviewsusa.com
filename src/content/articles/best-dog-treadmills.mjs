@@ -582,6 +582,12 @@ export default {
       blurb: 'Keys, clearance, and keeping children and pets safe around any treadmill.',
       url: '/treadmill-safety-tips/',
     },
+    {
+      kicker: "Roundup",
+      title: "Best Dog Treadmills for Small Dogs",
+      blurb: "Motorised machines sized for toy and small breeds, what was in stock, and the safety rules.",
+      url: '/best-dog-treadmills-for-small-dogs/',
+    },
   ],
   bottomLine: [
     `For most medium and large dogs, the <strong class="text-white">dogPACER LF 3.1</strong> is

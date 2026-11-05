@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "inmovement-unsit-treadmill",
     name: "InMovement Unsit Under Desk Treadmill",
+    brand: "InMovement",
     category: "Wide-Deck Office Treadmill",
     badge: "The Treadmill",
     amazonUrl: "https://www.amazon.com/s?k=under+desk+treadmill&tag=sktiger-20",
@@ -38,6 +39,7 @@ const PRODUCTS = [
   {
     id: "inmovement-unsit-bundle",
     name: "InMovement Unsit Treadmill + Desk Bundle",
+    brand: "InMovement",
     category: "Treadmill Desk Set, Bought Direct",
     badge: "The Bundle",
     amazonUrl: "https://www.amazon.com/s?k=treadmill+desk&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "lifespan-tx6-glowup",
     name: "LifeSpan TX6-GlowUp",
+    brand: "LifeSpan",
     category: "The LifeSpan Alternative",
     badge: "LifeSpan Pick",
     amazonUrl: "https://www.amazon.com/dp/B0CTH69X4C?tag=sktiger-20",
@@ -88,6 +91,7 @@ const PRODUCTS = [
   {
     id: "lifespan-tr1200pro-glowup",
     name: "LifeSpan TR1200Pro-GlowUp",
+    brand: "LifeSpan",
     category: "Lower-Priced LifeSpan Desk Treadmill",
     badge: "Cheaper LifeSpan",
     amazonUrl: "https://www.amazon.com/s?k=under+desk+treadmill&tag=sktiger-20",
@@ -189,7 +193,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

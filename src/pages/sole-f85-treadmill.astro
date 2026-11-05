@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "sole-f85",
     name: "Sole F85 (2026)",
+    brand: "Sole",
     category: "Folding Treadmill With a 22-Inch Deck",
     badge: "2026 Model",
     amazonUrl: "https://www.amazon.com/s?k=Sole+F85+Treadmill&tag=sktiger-20",
@@ -122,7 +123,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

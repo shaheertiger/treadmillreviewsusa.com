@@ -660,6 +660,12 @@ export default {
       blurb: 'Gym-built machines for home, and what they ask of your space.',
       url: '/commercial-treadmills/',
     },
+    {
+      kicker: "Where to Buy",
+      title: "Rogue Fitness Treadmills",
+      blurb: "The eight Woodway, TrueForm and STEPR treadmills Rogue sells, $3,495–$11,395, and how the Rogue | Woodway.",
+      url: '/rogue-treadmills/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">A Woodway is the most durable treadmill most people will ever

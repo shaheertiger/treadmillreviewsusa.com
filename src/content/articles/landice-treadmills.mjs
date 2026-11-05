@@ -399,7 +399,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Scheels</h3>
           <p>
             Scheels is the most accessible place to see one. When we checked scheels.com it listed
-            Landice L7 and M2 models, with the L7 marked available in store only, which makes a
+            <a href="/landice-l7-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Landice L7</a> and M2 models, with the L7 marked available in store only, which makes a
             Scheels store one of the few places where you can walk on a Landice next to mainstream
             brands. Our <a href="/scheels-treadmills/" class="text-[#0F62FE] font-medium">Scheels treadmill guide</a>
             covers its returns, price matching and delivery.
@@ -596,6 +596,12 @@ export default {
       title: 'Precor Treadmills',
       blurb: 'Peloton-owned and commercial-only now: the TRM lines, used prices, the 20-amp circuit and what the warranty covers.',
       url: '/precor-treadmills/',
+    },
+    {
+      kicker: "Brand Guide",
+      title: "Vision Fitness Treadmills",
+      blurb: "One dealer-sold treadmill left, the light-commercial T600; the old T9200, T40 and T80 and the January.",
+      url: '/vision-fitness-treadmills/',
     },
   ],
   bottomLine: [

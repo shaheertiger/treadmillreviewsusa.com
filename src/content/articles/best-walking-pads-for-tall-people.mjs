@@ -48,8 +48,8 @@ export default {
       id: 'quick-picks',
       heading: 'Our Picks at a Glance',
       html: `          <p>
-            Six pads, each with a different reason to exist. The short version: the WalkingPad A1
-            Pro for most tall desk walkers, the Z1 if price matters most, the LifeSpan pads if you
+            Six pads, each with a different reason to exist. The short version: the <a href="/walkingpad-a1-pro-review/" class="text-[#0F62FE] font-medium" data-autolink>WalkingPad A1
+            Pro</a> for most tall desk walkers, the Z1 if price matters most, the LifeSpan pads if you
             want a 20-inch-wide belt and long working days, and the MX10 or R3 Hybrid+ if you want
             handles or a jog. If you are over about 6 foot 4 and walk fast, read the section on
             <a href="#when-treadmill" class="text-[#0F62FE] font-medium">when a treadmill is better</a>

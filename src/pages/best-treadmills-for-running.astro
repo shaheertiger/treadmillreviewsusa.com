@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-commercial-1750",
     name: "NordicTrack Commercial 1750",
+    brand: "NordicTrack",
     category: "Best Overall for Running",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0D5YKF4SK?tag=sktiger-20&linkCode=ll1",
@@ -36,6 +37,7 @@ const PRODUCTS = [
   {
     id: "sole-f65",
     name: "Sole F65",
+    brand: "Sole",
     category: "Best Without a Subscription",
     badge: "No Subscription",
     amazonUrl: "https://www.amazon.com/dp/B0HFSZR19W?tag=sktiger-20&linkCode=ll1",
@@ -61,6 +63,7 @@ const PRODUCTS = [
   {
     id: "proform-pro-2000",
     name: "ProForm Pro 2000",
+    brand: "ProForm",
     category: "Best Budget Running Deck",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/dp/B08N3NL32C?tag=sktiger-20&linkCode=ll1",
@@ -86,6 +89,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-commercial-2450",
     name: "NordicTrack Commercial 2450",
+    brand: "NordicTrack",
     category: "Best for Hill Training",
     badge: "Best for Hills",
     amazonUrl: "https://www.amazon.com/dp/B0D5YKDXDV?tag=sktiger-20&linkCode=ll1",
@@ -111,6 +115,7 @@ const PRODUCTS = [
   {
     id: "life-fitness-t3",
     name: "Life Fitness T3",
+    brand: "Life Fitness",
     category: "Best for High Mileage",
     badge: "Longest Lasting",
     amazonUrl: "https://www.amazon.com/dp/B008PAS1HG?tag=sktiger-20&linkCode=ll1",
@@ -136,6 +141,7 @@ const PRODUCTS = [
   {
     id: "matrix-t7xe",
     name: "Matrix Fitness T7xe",
+    brand: "Matrix Fitness",
     category: "Best Commercial Alternative",
     badge: "Gym Grade",
     amazonUrl: "https://www.amazon.com/s?k=Matrix%20Fitness%20T7xe+Treadmill&tag=sktiger-20",
@@ -237,7 +243,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

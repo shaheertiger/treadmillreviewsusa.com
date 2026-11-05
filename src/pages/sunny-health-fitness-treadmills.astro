@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "sunny-sf-t4400smart",
     name: "Sunny Health & Fitness SF-T4400SMART",
+    brand: "Sunny Health & Fitness",
     category: "The Current Version of the Best-Known Sunny Treadmill",
     badge: "Best-Known Model",
     amazonUrl: "https://www.amazon.com/s?k=Sunny+Health+Fitness+SF-T4400SMART+Treadmill&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "sunny-sf-t1407smart",
     name: "Sunny Health & Fitness SF-T1407SMART",
+    brand: "Sunny Health & Fitness",
     category: "Cheapest Sunny: a Manual Walker at a Fixed Slope",
     badge: "Lowest Price",
     amazonUrl: "https://www.amazon.com/s?k=Sunny+Health+Fitness+SF-T1407SMART+Manual+Treadmill&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "sunny-treadpad-100",
     name: "Sunny Health & Fitness Treadpad 100 SF-T724064",
+    brand: "Sunny Health & Fitness",
     category: "Sunny’s Entry Walking Pad for a Desk",
     badge: "Best Sunny Walking Pad",
     amazonUrl: "https://www.amazon.com/s?k=Sunny+Health+Fitness+Treadpad+100+SF-T724064&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "sunny-sf-t723016",
     name: "Sunny Health & Fitness SF-T723016",
+    brand: "Sunny Health & Fitness",
     category: "The Sunny for Heavier Users and Faster Running",
     badge: "Widest Deck",
     amazonUrl: "https://www.amazon.com/s?k=Sunny+Health+Fitness+SF-T723016+Treadmill&tag=sktiger-20",
@@ -191,7 +195,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -872,6 +876,16 @@ const schema = {
               <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand Guide</span>
               <p class="font-bold text-gray-900 mt-2 mb-1">XTERRA Treadmills</p>
               <p class="text-sm text-gray-500 leading-relaxed">Dyaco's budget brand: the TRX1200, TR75 and TR95H Hiker.</p>
+            </a>
+            <a href="/lifesmart-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">LifeSmart Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The self-folding PowerTouch range: TM4500 discontinued, TM4000C, TM6500 at Costco, and a 1-year warranty.</p>
+            </a>
+            <a href="/oma-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Brand Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">OMA Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The folding brand sold on Amazon behind the 7200EB: what its figures say, where they conflict, and.</p>
             </a>
           </div>
         </div>

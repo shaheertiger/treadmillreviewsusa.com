@@ -439,6 +439,12 @@ export default {
       blurb: 'Curved and flat self-powered treadmills, from about $200 to $3,500.',
       url: '/best-manual-treadmills/',
     },
+    {
+      kicker: "Where to Buy",
+      title: "Rogue Fitness Treadmills",
+      blurb: "The eight Woodway, TrueForm and STEPR treadmills Rogue sells, $3,495–$11,395, and how the Rogue | Woodway.",
+      url: '/rogue-treadmills/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">The Bells of Steel Blitz is a capable curved trainer for speed and

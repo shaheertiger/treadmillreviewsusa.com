@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "matrix-t5x",
     name: "Matrix T5x",
+    brand: "Matrix",
     category: "Commercial Treadmill, Mostly Sold Remanufactured",
     badge: "Commercial, Sold Used",
     amazonUrl: "https://www.amazon.com/dp/B07YGMKD52?tag=sktiger-20&linkCode=ll1",
@@ -114,7 +115,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "trueform-trainer",
     name: "TrueForm Trainer",
+    brand: "TrueForm",
     category: "Shallow-Curve Manual Treadmill, Ships in Days",
     badge: "The TrueForm to Buy",
     amazonUrl: "https://www.amazon.com/s?k=curved+manual+treadmill&tag=sktiger-20",
@@ -38,6 +39,7 @@ const PRODUCTS = [
   {
     id: "trueform-runner",
     name: "TrueForm Runner",
+    brand: "TrueForm",
     category: "Hand-Built Flagship Curved Trainer",
     badge: "Facility Pick",
     amazonUrl: "https://www.amazon.com/s?k=curved+manual+treadmill&tag=sktiger-20",
@@ -64,6 +66,7 @@ const PRODUCTS = [
   {
     id: "assaultrunner-pro",
     name: "AssaultRunner Pro",
+    brand: "AssaultRunner",
     category: "The Best-Known Curved Trainer",
     badge: "Cheaper Rival",
     amazonUrl: "https://www.amazon.com/s?k=curved+manual+treadmill&tag=sktiger-20",
@@ -90,6 +93,7 @@ const PRODUCTS = [
   {
     id: "sole-c80",
     name: "SOLE C80 Curved Manual Treadmill",
+    brand: "SOLE",
     category: "Curved Trainer With Magnetic Resistance",
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/dp/B0H2KC6YL5?tag=sktiger-20&linkCode=ll1",
@@ -191,7 +195,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -828,6 +832,16 @@ const schema = {
               <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Training</span>
               <p class="font-bold text-gray-900 mt-2 mb-1">Curved Treadmill Workouts</p>
               <p class="text-sm text-gray-500 leading-relaxed">Sprints, intervals and steady runs built for a self-powered curved belt.</p>
+            </a>
+            <a href="/rogue-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Where to Buy</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Rogue Fitness Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The eight Woodway, TrueForm and STEPR treadmills Rogue sells, $3,495–$11,395, and how the Rogue | Woodway.</p>
+            </a>
+            <a href="/centr-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Brand Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Centr Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Chris Hemsworth's brand: the folding Runr and Runr-S and the $6,999 Centr x HYROX Perform Tread race.</p>
             </a>
           </div>
         </div>

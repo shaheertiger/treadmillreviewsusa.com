@@ -475,6 +475,12 @@ export default {
       blurb: 'Walking at work: desks, under-desk treadmills and what to look for.',
       url: '/best-treadmill-desks/',
     },
+    {
+      kicker: "Brand Guide",
+      title: "OMA Treadmills",
+      blurb: "The folding brand sold on Amazon behind the 7200EB: what its figures say, where they conflict, and.",
+      url: '/oma-treadmills/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">XTERRA makes inexpensive treadmills with a real manufacturer behind

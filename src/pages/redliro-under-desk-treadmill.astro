@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "redliro-walking-pad",
     name: "Redliro Walking Pad Under Desk Treadmill",
+    brand: "Redliro",
     category: "Budget Under-Desk Walking Pad (Marketplace Listings)",
     badge: "Listing Claims Only",
     amazonUrl: "https://www.amazon.com/s?k=under+desk+walking+pad&tag=sktiger-20",
@@ -115,7 +116,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
