@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "rhythm-fun-13-incline-walking-pad",
     name: "RHYTHM FUN 13% Incline Walking Pad with Handle Bar",
+    brand: "RHYTHM FUN",
     category: "Incline Walking Pad With Side Handlebars",
     badge: "Best RHYTHM FUN Pad",
     amazonUrl: "https://www.amazon.com/s?k=RHYTHM+FUN+13%25+Incline+Walking+Pad+Handle+Bar&tag=sktiger-20",
@@ -36,6 +37,7 @@ const PRODUCTS = [
   {
     id: "rhythm-fun-3hp-13-incline-treadmill",
     name: "RHYTHM FUN 3.0HP Treadmill with 13% Incline and Handles",
+    brand: "RHYTHM FUN",
     category: "Folding Treadmill With Handles",
     badge: "For Jogging",
     amazonUrl: "https://www.amazon.com/s?k=RHYTHM+FUN+3.0HP+Treadmill+13%25+Incline+Handles&tag=sktiger-20",
@@ -61,6 +63,7 @@ const PRODUCTS = [
   {
     id: "rhythm-fun-handle-bar-walking-pad",
     name: "RHYTHM FUN Walking Pad with Handle Bar and Incline",
+    brand: "RHYTHM FUN",
     category: "Cheapest RHYTHM FUN Pad",
     badge: "Cheapest RHYTHM FUN",
     amazonUrl: "https://www.amazon.com/s?k=RHYTHM+FUN+Walking+Pad+Handle+Bar+300lbs&tag=sktiger-20",
@@ -86,6 +89,7 @@ const PRODUCTS = [
   {
     id: "rhythm-fun-s8",
     name: "RHYTHM FUN S8 Treadmill with 8% Incline",
+    brand: "RHYTHM FUN",
     category: "Folding Treadmill With Speaker",
     badge: "Most Features",
     amazonUrl: "https://www.amazon.com/s?k=RHYTHM+FUN+S8+Treadmill&tag=sktiger-20",
@@ -111,6 +115,7 @@ const PRODUCTS = [
   {
     id: "merach-novawalk-w50-trekpad",
     name: "MERACH NovaWalk W50 TrekPad",
+    brand: "MERACH",
     category: "Checked Incline Pad Alternative",
     badge: "Best Checked Alternative",
     amazonUrl: "https://www.amazon.com/dp/B0HJTT2S6R?tag=sktiger-20&linkCode=ll1",
@@ -212,7 +217,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      brand: { "@type": "Brand", name: product.brand },
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

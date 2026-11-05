@@ -58,6 +58,20 @@ const priceBounds = (range) => {
   return nums.length ? { low: Math.min(...nums), high: Math.max(...nums) } : null;
 };
 
+// Product JSON-LD brand: a spec's own `brand`, else a known multi-word brand the name starts
+// with, else the first word ("Sunny Health & Fitness SF-T4400" is not a product of "Sunny").
+const MULTIWORD_BRANDS = [
+  'Sunny Health & Fitness', 'Life Fitness', 'REP Fitness', 'Titan Fitness', 'Matrix Fitness',
+  'Bells of Steel', 'RHYTHM FUN', 'Fringe Sport', 'Force USA', 'PRx Performance', 'Star Trac',
+  'True Fitness', 'TRUE Fitness', 'Spirit Fitness', 'Horizon Fitness', 'Sole Fitness',
+  'Vision Fitness', 'Tru Grit', 'Dog Trotter', 'Dog Runner', 'CAP Barbell', 'Tractor Supply',
+  'Ultimate Body Press', 'Bells of Steel USA',
+];
+const brandOf = (p) =>
+  p.brand ??
+  MULTIWORD_BRANDS.filter((b) => p.name === b || p.name.startsWith(b + ' ')).sort((a, b) => b.length - a.length)[0] ??
+  p.name.split(' ')[0];
+
 const esc = (s) => String(s).replace(/\\/g, '\\\\').replace(/`/g, '\\`').replace(/\$\{/g, '\\${');
 const jsStr = (s) => JSON.stringify(String(s));
 
@@ -78,6 +92,7 @@ ${products
     (p) => `  {
     id: ${jsStr(p.id)},
     name: ${jsStr(p.name)},
+    brand: ${jsStr(brandOf(p))},
     category: ${jsStr(p.category)},
     badge: ${jsStr(p.badge)},
     amazonUrl: ${jsStr(amazonUrl(p))},
@@ -130,7 +145,7 @@ function schemaBlock(spec) {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      brand: { "@type": "Brand", name: product.brand },
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
