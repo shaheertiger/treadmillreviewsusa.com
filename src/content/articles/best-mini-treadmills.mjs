@@ -1,0 +1,488 @@
+export default {
+  slug: 'best-mini-treadmills',
+  title: 'Best Mini Treadmills (2026): The Smallest and Lightest Picks',
+  description:
+    'Five mini treadmills ranked by footprint and weight, from a 37 lb flat pad to pads that fold in half. Checked sizes, what fits under a desk, and what we found on the Aibi and UREVO Foldi Mini.',
+  crumbLabel: 'Best Mini Treadmills',
+  breadcrumb: { name: 'Best Treadmills', url: '/best/' },
+  kicker: 'Buying Guide',
+  updated: 'November 2026',
+  updatedLong: 'November 5, 2026',
+  published: '2026-11-05',
+  socialProof: '1.6k',
+  h1: ['Best Mini Treadmills', 'for Small Homes and Desks'],
+  standfirst:
+    'A mini treadmill is a walking machine small and light enough to live under a desk, a bed or a sofa. These five are chosen on the two figures that decide that — footprint and weight — with every size checked against the maker and an independent source, and the trade-offs that come with going small.',
+  ctas: [
+    { label: 'See the Picks', href: '#picks' },
+    { label: 'Size Comparison', href: '#size-table' },
+  ],
+  tags: ['mini treadmill', 'mini treadmill for desk', 'mini treadmills for home', 'aibi mini treadmill', 'urevo foldi mini treadmill', 'smallest walking pad', 'lightest walking pad'],
+  stickyCta: { text: 'See Our Top Picks', link: '#picks' },
+  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
+          machines. On 5 November 2026 we read each maker’s US product page (WalkingPad, UREVO) and
+          checked footprint, folded size, unit weight, belt and capacity against at least one
+          independent source: Tom’s Guide’s hands-on Z1 review, Live Science’s and T3’s Strol 2E
+          reviews, and an independent walking-pad spec tracker that reads manuals and listings (pages
+          for the E1L, C2 and Egofit dated February to October 2026). Where sources disagree, the
+          figure is left off the card and the description gives each one. Egofit’s own site would not
+          load for us, so the Walker Pro M1’s figures come from the tracker’s record of Egofit’s
+          site and manual, and we could not confirm its price on the day; its card carries no price.
+          We searched the CPSC recall database for each brand and found no recall; Sperax pads are
+          excluded after the CPSC’s April 2026 warning. Prices are those shown on 5 November 2026 and
+          change often. We earn a commission if you buy through the Amazon links on this page; it does
+          not change which products we list or what we say about them.`,
+  lead: `“Mini treadmill” is not a category with a definition. Sellers use it for anything from a
+          16-inch walking pad to a folding running treadmill, and the word on the box tells you nothing
+          about whether it fits your room. What decides that is two numbers: how much floor the
+          machine covers, flat and folded, and how much it weighs when you move it every day. This
+          roundup ranks five machines on those numbers, all checked against more than one source,
+          and says plainly what you give up as a treadmill gets smaller. If you want the best walking
+          pad regardless of size, our main walking pad roundup is the better starting point; this page
+          is for when space is the constraint.`,
+  products: [
+    {
+      id: 'walkingpad-z1',
+      name: 'WalkingPad Z1',
+      category: 'Best Overall Mini Treadmill',
+      badge: 'Best Overall',
+      amazonUrl: 'https://www.amazon.com/s?k=WalkingPad+Z1&tag=sktiger-20',
+      priceRange: '$299 at WalkingPad (5 Nov 2026)',
+      specs: 'Folds to 31.8 x 22 x 5.4 in. · 51 lb · 47.6 x 15.7 in. walking area · 242 lb capacity · up to 6 km/h',
+      pros: [
+        'Folds in half to about 32 by 22 inches, small enough for a wardrobe floor or under most beds',
+        'Still gives a walking area nearly four feet long when open, longer than the flat pads here',
+        'WalkingPad and Tom’s Guide agree on its capacity, weight and folded size',
+        'From an established maker with a US store, a one-year warranty and a 30-day return window',
+      ],
+      cons: [
+        'A 242 lb limit, lower than the UREVO pads on this page',
+        'Walking only: WalkingPad gives 4 mph and 6 km/h, which is about 3.7',
+        'Tom’s Guide measured 57.3 dB, well above the listing’s “below 45 dB”',
+      ],
+      bottomLine:
+        'The mini treadmill to buy if you want a full-length walking deck that disappears completely between uses.',
+      description:
+        'The Z1 is the best balance of small and usable we found. WalkingPad’s US store listed it at $299, down from $329, on 5 November 2026, with a folded size of 31.8 by 22 by 5.4 inches, an unfolded size of 56.1 by 22 by 4.1 inches, a 47.6 by 15.7-inch walking area, a 242 lb maximum user weight, a 51 lb unit weight and a 2.25 HP brushless motor. Tom’s Guide’s hands-on review gives the same capacity, weight and folded size. Folding in half is what makes it a mini treadmill: open, it is as long as most walking pads, but closed it covers less floor than any flat pad here, and it stands on end in a cupboard. WalkingPad’s page gives the top speed as both 4 mph and 6 km/h, which is about 3.7 mph, and Tom’s Guide gives 3.7, so the card uses the metric figure. Tom’s Guide measured an average of 57.3 dB, so put a mat under it if anyone lives below. The warranty is one year.',
+    },
+    {
+      id: 'urevo-spacewalk-e1l',
+      name: 'UREVO SpaceWalk E1L',
+      category: 'Lightest Mini Treadmill',
+      badge: 'Lightest',
+      amazonUrl: 'https://www.amazon.com/s?k=UREVO+SpaceWalk+E1L+Walking+Pad&tag=sktiger-20',
+      priceRange: '$169.99 at UREVO (5 Nov 2026)',
+      specs: '36.6 lb · 42.1 x 19.3 in. footprint · 35.4 x 15 in. belt · 0.6–4.0 mph · no incline',
+      pros: [
+        'At 36.6 lb, the lightest machine here by more than 10 lb',
+        'UREVO and an independent tracker agree on belt, top speed and weight',
+        'The cheapest pick, in stock at $169.99 on the day',
+      ],
+      cons: [
+        'A 35.4-inch belt is short; fine for slow desk walking, not for a long stride',
+        'Capacity is 265 lb on UREVO’s page and 242 lb in the manual, by the tracker’s reading',
+        'Does not fold, so it needs about 42 by 19 inches of floor to store',
+      ],
+      bottomLine:
+        'For a lighter walker who wants the least weight to slide in and out every day, at the lowest price.',
+      description:
+        'The SpaceWalk E1L is the mini treadmill to choose if weight matters more than anything else. UREVO’s US store listed it in stock at $169.99, against $189.99, on 5 November 2026, with a 42.1 by 19.3-inch footprint, a 35.43 by 15-inch running area, 0.6 to 4.0 mph and a 36.59 lb unit weight; an independent spec tracker gives the same belt, top speed and weight. UREVO gives the height as 4.2 inches and the tracker 4.8, and UREVO gives a 265 lb maximum load where the tracker reports 242 lb in the manual, so neither height nor capacity is on the card. The tracker also estimates continuous motor output well below the advertised 2.5 HP. At under 37 lb it slides under a sofa with one hand, which is the point; the short belt is the price of that, so it suits slow walking rather than a brisk pace.',
+    },
+    {
+      id: 'egofit-walker-pro-m1',
+      name: 'Egofit Walker Pro M1',
+      category: 'Smallest Flat Footprint',
+      badge: 'Smallest Footprint',
+      amazonUrl: 'https://www.amazon.com/s?k=Egofit+Walker+Pro+M1&tag=sktiger-20',
+      priceRange: 'Price not confirmed on 5 Nov 2026',
+      specs: 'About 38 x 22 in. footprint · 48.5 lb · 34.25 x 16.54 in. walking area · fixed 5% incline · 0.62–3.11 mph',
+      pros: [
+        'The shortest footprint here, under 39 inches long, for a desk that is not deep',
+        'A fixed 5% slope, which adds a little effort without a motorised incline',
+        'Sold on Amazon US, where an independent tracker found it in stock in October 2026',
+      ],
+      cons: [
+        'The shortest walking area here at about 34 inches, and a 3.1 mph ceiling',
+        'Capacity is 220 lb on Egofit’s site and 242 lb in its manual',
+        'Its height (6.9 or 7.5 inches) makes it one of the taller pads, which matters under a desk',
+        'We could not confirm its price on the day',
+      ],
+      bottomLine:
+        'For a short walker with a shallow desk or a very small room, who walks slowly and wants the least floor taken.',
+      description:
+        'The Walker Pro M1 is the most compact flat pad we found. An independent spec tracker, recording Egofit’s site and manual and checked on 2 October 2026, gives a footprint of 38.39 by 21.85 inches on the site (37.87 by 21.46 in the manual), a 34.25 by 16.54-inch walking area, 0.62 to 3.11 mph, a fixed 5% incline, a 48.5 lb unit weight and a 2 HP advertised brushed motor; a hands-on review and a retailer listing give the same speed and weight. Capacity is 220 lb on Egofit’s site and 242 lb in the manual, and height is 6.89 or 7.48 inches, so the card leaves both out. Egofit’s own site would not load for us on 5 November 2026 and Amazon would not show a price, so we have not printed one; the tracker recorded $479 on Amazon in October and $399 on Egofit’s site in April. Check the price against the other picks, because at more than about $300 the Z1 gives more walking area for less.',
+    },
+    {
+      id: 'walkingpad-c2',
+      name: 'WalkingPad C2',
+      category: 'Best Mini Treadmill for Small Flats',
+      badge: 'Best Folding Value',
+      amazonUrl: 'https://www.amazon.com/s?k=WalkingPad+C2+Foldable+Walking+Treadmill&tag=sktiger-20',
+      priceRange: '$399 at WalkingPad (5 Nov 2026)',
+      specs: 'Folds to about 32 x 20 in. · 55 lb · 47.2 x 15.8 in. walking area · 220 lb capacity',
+      pros: [
+        'Folds in half to about 32 by 20 inches, the narrowest folded size here',
+        'A walking area over 47 inches long when open',
+        'Five colour options on WalkingPad’s store',
+      ],
+      cons: [
+        'A 220 lb limit, the joint lowest here',
+        'WalkingPad advertises a 3 HP motor; the tracker records 1 HP continuous',
+        '$100 more than the Z1 for a similar fold and a lower capacity',
+      ],
+      bottomLine:
+        'For a lighter walker who wants a fold-in-half pad and prefers the C2’s narrower folded shape or colours to the Z1.',
+      description:
+        'The C2 is WalkingPad’s other fold-in-half pad. On 5 November 2026 WalkingPad’s store listed it at $399, down from $599, with the blue version sold out and other colours available, and described a 3 HP brushless motor; its full specification tab did not load for us. An independent spec tracker gives a 47.2 by 15.8-inch walking area, 0.5 to 3.7 mph, a 220 lb maximum user weight, a 55 lb unit weight and a folded size of 32 by 20 by 5.5 inches; the walking area, capacity and weight matched Treadmill Review Guru’s hands-on review when we checked it in October. The tracker records a 1 HP continuous motor against WalkingPad’s 3 HP, and gives three different heights from different sources, so the card prints neither. Set against the Z1, it folds a couple of inches narrower and weighs 4 lb more, with a lower capacity and a higher price, which is why the Z1 ranks first.',
+    },
+    {
+      id: 'urevo-strol-2e',
+      name: 'UREVO Strol 2E',
+      category: 'Best Mini Treadmill With a Handle',
+      badge: 'Best With Handle',
+      amazonUrl: 'https://www.amazon.com/s?k=UREVO+Strol+2E&tag=sktiger-20',
+      priceRange: '$169.99 at UREVO (5 Nov 2026)',
+      specs: 'About 48 lb · 4.6 in. tall folded · 0.6–6.2 mph with handle up · 265 lb capacity · about 15 x 40 in. belt',
+      pros: [
+        'A handle that folds flat, so it stores as low as a flat pad',
+        'Up to 6.2 mph with the handle raised, by UREVO and two hands-on reviews',
+        'A 265 lb rating that UREVO, Live Science and T3 all give',
+      ],
+      cons: [
+        'UREVO’s own folded and unfolded lengths contradict each other',
+        'Belt length is given as 40.1 or 40.2 inches and weight as 47.2 or about 48 lb',
+        'Walking speed is capped at 4 mph with the handle folded',
+      ],
+      bottomLine:
+        'For a small-space buyer who wants something to hold and the option of a slow jog, at the lowest price on this page.',
+      description:
+        'The Strol 2E is the smallest 2-in-1 we could check. UREVO’s US store listed it in stock at $169.99, against $289.99, on 5 November 2026, with a 265 lb maximum load, 0.6 to 4.0 mph with the handle down and 0.6 to 6.2 mph with it up, a 2.25 HP maximum motor rating and a one-year plus 180-day warranty. Live Science and T3, which both reviewed it hands-on, give the same 265 lb and 6.2 mph, and Live Science found it quiet but its belt short and narrow for taller users. UREVO gives a 40.2 by 15-inch running area and a 47.2 lb weight; other listings give 40.1 inches and T3 about 48 lb. UREVO’s page also lists the unfolded length as 48 inches and the folded length as 51.2, which cannot both be right, so plan around the larger figure. With the handle down it is 4.6 inches tall.',
+    },
+  ],
+  sections: [
+    {
+      id: 'quick-picks',
+      heading: 'Our Picks at a Glance',
+      html: `          <p>
+            Five machines, each the smallest or lightest of its kind that we could check. The short
+            version: the WalkingPad Z1 for most people, the UREVO SpaceWalk E1L if you will lift it
+            every day, and the UREVO Strol 2E if you want a handle.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Pick</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Best for</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Why</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">WalkingPad Z1</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most people</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Folds to 32 x 22 in. with a nearly four-foot walking area, $299</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UREVO SpaceWalk E1L</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Daily lifting, lowest price</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">36.6 lb, $169.99</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Egofit Walker Pro M1</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Shallow desks, tiny rooms</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Under 39 in. long flat, fixed 5% slope</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">WalkingPad C2</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Narrow storage spaces</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Folds to about 32 x 20 in., $399</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UREVO Strol 2E</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A handle and a slow jog</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Handle folds flat, 6.2 mph, 265 lb, $169.99</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            If size is not your main constraint, our
+            <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">best walking pads</a> roundup
+            ranks pads on overall value, and our
+            <a href="/best-portable-treadmills/" class="text-[#0F62FE] font-medium">best portable treadmills</a>
+            roundup covers machines you move between rooms, up to full folding treadmills.
+          </p>`,
+    },
+    {
+      id: 'picks',
+      heading: 'The 5 Best Mini Treadmills',
+      products: true,
+      html: `          <p>
+            Ranked for a buyer whose first question is “will it fit?” and whose second is “will it do
+            the job?”. Each card gives the sizes that held up across sources, what is wrong with the
+            machine, and the figures we left off because the sources disagreed.
+          </p>`,
+    },
+    {
+      id: 'size-table',
+      heading: 'Size and Weight Compared',
+      html: `          <p>
+            This is the comparison the picks are built on. Footprint is the floor the machine covers
+            when you use it; stored size is what it takes up when you put it away. Where sources
+            differ, the table gives the maker’s figure and notes the other.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[600px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Machine</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">In use (L x W)</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Stored</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Weight</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Walking area length</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UREVO SpaceWalk E1L</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">42.1 x 19.3 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Same, 4.2 in. tall (tracker: 4.8)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">36.6 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">35.4 in.</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Egofit Walker Pro M1</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">38.4 x 21.9 in. (manual: 37.9 x 21.5)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Same, 6.9 in. tall (manual: 7.5)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">48.5 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">34.3 in.</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UREVO Strol 2E</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">48–51 in. x 22.6 in. (UREVO gives both)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Handle flat, 4.6 in. tall</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">47.2 lb (T3: about 48)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">40.1–40.2 in.</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">WalkingPad Z1</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">56.1 x 22 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Folded 31.8 x 22 x 5.4 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">51 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">47.6 in.</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">WalkingPad C2</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not confirmed</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Folded about 32 x 20 x 5.5 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">55 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">47.2 in.</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Two patterns stand out. The first is that the flat pads, the E1L and Egofit, have the
+            smallest footprint in use but the shortest belts, because a pad that does not fold can only
+            be as long as the room you are willing to give it. The fold-in-half pads, the Z1 and C2,
+            take up more floor while you walk but less when they are put away, and give you nearly a
+            foot more belt. Which is better depends on whether your problem is the space to walk or the
+            space to store.
+          </p>
+          <p>
+            The second is that weight and size do not track each other neatly. The E1L is both the
+            lightest and one of the smallest; the Egofit is shorter but 12 lb heavier, partly because of
+            the frame that gives it a fixed slope. If you will be lifting the machine onto its side or
+            carrying it to a cupboard every day, put weight first. Our guide to
+            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">treadmill dimensions and space requirements</a>
+            explains how much clearance to leave around any treadmill.
+          </p>`,
+    },
+    {
+      id: 'how-we-chose',
+      heading: 'How We Chose These Mini Treadmills',
+      html: `          <p>
+            We started from the walking pads and compact treadmills we have checked for other roundups
+            and the ones people search for under “mini treadmill”, and kept only machines that met
+            four tests on 5 November 2026.
+          </p>
+          <ul>
+            <li><strong>Small by a measurable standard.</strong> Under about 55 lb, and either a
+            footprint under about 45 inches long or a fold that brings it under about 35 inches. That
+            ruled out most full folding treadmills and heavier 2-in-1 pads.</li>
+            <li><strong>Sizes that hold up.</strong> The maker’s footprint, weight and belt figures had
+            to match at least one independent source, or the conflict had to be small enough to state
+            and plan around.</li>
+            <li><strong>Currently sold.</strong> Each machine had to be listed for sale on the maker’s
+            US store or, for the Egofit, recorded in stock on Amazon US by an independent tracker within
+            the last five weeks.</li>
+            <li><strong>No safety notices.</strong> We searched the CPSC database for each brand. Sperax
+            pads, which the CPSC told consumers to stop using in April 2026, are excluded.</li>
+          </ul>
+          <p>
+            We did not rank on motor horsepower, since every pad here quotes a peak figure and the
+            independent continuous estimates are all well below it, and we did not rank on customer
+            star ratings, which we do not print. We have not tested any of these machines. Our
+            <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">editorial standards</a>
+            explain how we check products we have not tested.
+          </p>`,
+    },
+    {
+      id: 'foldi-mini-and-aibi',
+      heading: 'The UREVO Foldi Mini and the Aibi Mini Treadmill',
+      html: `          <p>
+            Two names come up again and again in searches for mini treadmills, and neither is on our
+            list. Here is why.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">UREVO Foldi Mini</h3>
+          <p>
+            The Foldi Mini was UREVO’s compact folding treadmill, with a successor, the Foldi Mini 2.
+            On 5 November 2026 both of their product addresses on UREVO’s US store opened UREVO’s Foldi
+            3S instead, an 87.5 lb folding treadmill with incline that is not a mini treadmill by any
+            measure. The Foldi Mini did not appear in UREVO’s US product list that day. Listings for the
+            Foldi Mini and Foldi Mini 2 are still indexed at several large US retailers, but their pages
+            returned errors or bot checks when we tried to read them, so we could not confirm that either
+            is still sold new.
+          </p>
+          <p>
+            The figures in circulation also disagree. Search-indexed listings give the original Foldi
+            Mini a 2.25 HP motor and 0.6 to 6.2 mph, but a weight limit of 220 lb on UREVO’s earlier US
+            page against 265 lb at a major retailer, and a running area of 39.5 by 16 inches in one place
+            and 41.3 by 15.7 in another. The Foldi Mini 2 is a different model with a different motor.
+            If you find a Foldi Mini on sale, check which version it is, and treat the lower weight limit
+            as the real one. If you want a UREVO with a handle that folds flat, the Strol 2E on this
+            page is the current option we could check, and our
+            <a href="/urevo-treadmills/" class="text-[#0F62FE] font-medium">UREVO brand guide</a>
+            covers the rest of the range.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Aibi mini treadmill</h3>
+          <p>
+            We could not find an Aibi mini treadmill. Searches on 5 November 2026 returned no maker’s
+            site, no independent review and no readable listing carrying the name. It may be a
+            marketplace label, a seller name or a misspelling of a similar brand; we could not tell. If
+            you have an Aibi listing open, check who sells and ships it, its return window, a stated
+            warranty length, a model number and whether its weight limit and belt size agree across the
+            listing. Our guide to <a href="/zofdim-treadmills/" class="text-[#0F62FE] font-medium">checking an unfamiliar marketplace brand</a>
+            walks through those checks in detail.
+          </p>`,
+    },
+    {
+      id: 'mini-treadmill-for-desk',
+      heading: 'Choosing a Mini Treadmill for a Desk',
+      html: `          <p>
+            Most people buying a mini treadmill want to walk at a desk. Three measurements decide
+            whether a given pad works under yours.
+          </p>
+          <p>
+            <strong>Desk height.</strong> Every pad lifts you off the floor, by about 4 to 7.5 inches on
+            this page. Your standing desk has to rise by that much more than your usual standing height,
+            or your arms end up too high. The flat pads differ most here: the E1L is about 4 to 5 inches
+            tall, the Egofit about 7 to 7.5. Our guide to
+            <a href="/standing-desk-height-for-walking-pad/" class="text-[#0F62FE] font-medium">standing desk height for a walking pad</a>
+            gives the measurements.
+          </p>
+          <p>
+            <strong>Desk depth and leg spacing.</strong> A pad has to fit between the desk legs and leave
+            room for you to stand far enough back to type. A short flat pad such as the Egofit suits a
+            shallow desk best; the Z1 is 56 inches long open, so check there is room
+            behind the desk for its tail and a couple of feet beyond.
+          </p>
+          <p>
+            <strong>Pace.</strong> At a desk most people walk at 1 to 2.5 mph, well within every pad
+            here. The short belts on the E1L and Egofit are least noticeable at those speeds. If you want
+            to walk briskly between calls, the longer walking areas on the Z1 and C2 are more
+            comfortable.
+          </p>
+          <p>
+            If you will walk at a desk for several hours a day, a mini treadmill is the wrong tool: a
+            heavier desk treadmill with a wider belt and a daily-use rating will last longer and keep you
+            more comfortable. Our <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under desk treadmills</a>
+            guide and <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium">best treadmill desks</a>
+            roundup cover those machines.
+          </p>`,
+    },
+    {
+      id: 'trade-offs',
+      heading: 'What You Give Up With a Mini Treadmill',
+      html: `          <p>
+            Small and light comes at a cost, and it is worth knowing which costs matter to you before you
+            buy the smallest machine you can find.
+          </p>
+          <p>
+            <strong>Belt length.</strong> The flat pads here have belts of 34 to 40 inches. A normal
+            walking stride at a brisk pace is longer than many people expect, and on a short belt tall
+            walkers find their heel landing near the back roller. If you are over about six feet tall,
+            look at the fold-in-half pads with 47-inch walking areas, or at our
+            <a href="/best-walking-pads-for-tall-people/" class="text-[#0F62FE] font-medium">walking pads for tall people</a>.
+          </p>
+          <p>
+            <strong>Capacity.</strong> The pads here are rated for 220 to 265 lb, and several give two
+            figures. Leave a margin of at least 50 lb below the lower figure. If you are heavier, our
+            <a href="/best-walking-pads-for-heavy-people/" class="text-[#0F62FE] font-medium">walking pads for heavy people</a>
+            roundup covers pads rated up to 400 lb, all heavier and larger than these.
+          </p>
+          <p>
+            <strong>Speed.</strong> Only the Strol 2E goes beyond a brisk walk, and only with its handle
+            raised. A mini treadmill is a walking machine; if you want to run, a compact folding
+            treadmill is the smallest thing that will do it properly. Our
+            <a href="/walking-pad-vs-folding-treadmill/" class="text-[#0F62FE] font-medium">walking pad vs folding treadmill</a>
+            guide sets out the difference.
+          </p>
+          <p>
+            <strong>Noise and vibration.</strong> Light pads transmit footfall to the floor more than
+            heavy ones. Tom’s Guide measured 57.3 dB on the Z1, against a claim of under 45. In a flat
+            with neighbours below, a dense mat under the pad is worth the money; our
+            <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">treadmill mats</a>
+            roundup covers them.
+          </p>
+          <p>
+            <strong>Longevity.</strong> Budget pads have small motors and light decks, and they wear
+            faster under heavy daily use. Our guide to
+            <a href="/how-long-do-walking-pads-last/" class="text-[#0F62FE] font-medium">how long walking pads last</a>
+            explains what shortens their life and how to stretch it.
+          </p>`,
+    },
+    {
+      id: 'not-a-treadmill',
+      heading: 'If Even a Mini Treadmill Is Too Big',
+      html: `          <p>
+            Some rooms cannot take any treadmill, even folded. If what you want is to keep your legs
+            moving while you sit or stand at a desk, two smaller machines do part of the job. An
+            under-desk elliptical or pedal unit fits under a seated desk and weighs a fraction of a pad;
+            our <a href="/best-under-desk-ellipticals/" class="text-[#0F62FE] font-medium">under-desk ellipticals</a>
+            roundup covers them. A mini stepper takes up about as much floor as a pair of shoes, and our
+            <a href="/stepper-buying-guide/" class="text-[#0F62FE] font-medium">stepper buying guide</a>
+            explains what to look for.
+          </p>
+          <p>
+            Neither is a substitute for walking, and neither counts steps the way a treadmill does, but
+            both add movement to a day spent at a desk in a space where nothing else fits.
+          </p>`,
+    },
+  ],
+  faqs: [
+    {
+      q: 'What is the best mini treadmill?',
+      a: 'For most people, the WalkingPad Z1. It folds in half to 31.8 by 22 by 5.4 inches and weighs 51 lb, but gives a 47.6-inch walking area when open, and was $299 at WalkingPad on 5 November 2026. Its 242 lb limit and walking-only speed are the trade-offs.',
+    },
+    {
+      q: 'What is the lightest mini treadmill?',
+      a: 'Of the machines we could check, the UREVO SpaceWalk E1L, at 36.6 lb by UREVO’s figure and an independent tracker’s. It was $169.99 on 5 November 2026. Its 35.4-inch belt is short, so it suits slow walking rather than a long stride.',
+    },
+    {
+      q: 'Is a mini treadmill good for a desk?',
+      a: 'For an hour or two of slow walking a day, yes, provided your standing desk rises 4 to 7.5 inches higher than your usual standing height and the pad fits between its legs. For several hours a day, a heavier desk treadmill with a wider belt and a daily-use rating is a better buy.',
+    },
+    {
+      q: 'Is the UREVO Foldi Mini still sold?',
+      a: 'We could not confirm it. On 5 November 2026 the Foldi Mini and Foldi Mini 2 addresses on UREVO’s US store opened the Foldi 3S instead, and retailer listings would not load for us. Listing figures also disagree on its weight limit, giving 220 or 265 lb.',
+    },
+    {
+      q: 'What is the Aibi mini treadmill?',
+      a: 'We could not find it. On 5 November 2026 we found no maker’s site, independent review or readable listing under the name. If you have a listing, check the seller, return window, warranty length, model number and whether its figures agree before you buy.',
+    },
+    {
+      q: 'Can you run on a mini treadmill?',
+      a: 'Mostly not. Four of the five machines here top out between 3.1 and 4 mph. The UREVO Strol 2E reaches 6.2 mph with its handle raised, which is a slow jog. For running, a compact folding treadmill is the smallest machine that does it properly.',
+    },
+  ],
+  mistakesHeading: 'Common Mistakes Buying a Mini Treadmill',
+  mistakesIntro:
+    'Buying small is a good idea in a small home. These are the errors that make a mini treadmill the wrong buy.',
+  mistakes: [
+    {
+      title: 'Measuring the floor but not the desk',
+      body: 'A pad that fits under the desk can still leave the desk too low once you are standing on it. Add the pad’s height, 4 to 7.5 inches here, to your standing desk height and check the desk reaches it.',
+    },
+    {
+      title: 'Choosing on footprint when storage is the problem',
+      body: 'A flat pad has the smaller footprint in use; a fold-in-half pad takes less room stored. Decide which space you are short of, the walking space or the cupboard, before you choose a type.',
+    },
+    {
+      title: 'Ignoring belt length if you are tall',
+      body: 'Belts on the smallest pads are 34 to 40 inches. At a brisk pace a tall walker’s stride runs out of belt. Above about six feet, choose a pad with a walking area of at least 47 inches.',
+    },
+    {
+      title: 'Buying at the weight limit',
+      body: 'Several pads here give two capacity figures. Take the lower one and leave 50 lb of margin. A light pad run at its limit every day wears its belt and motor quickly.',
+    },
+  ],
+  relatedHeading: 'Related Walking Pad Guides',
+  related: [
+    {
+      kicker: 'Roundup',
+      title: 'Best Walking Pads',
+      blurb: 'The best pads on overall value, whatever their size.',
+      url: '/best-walking-pads/',
+    },
+    {
+      kicker: 'Roundup',
+      title: 'Best Portable Treadmills',
+      blurb: 'Machines you move between rooms, sorted by checked weight.',
+      url: '/best-portable-treadmills/',
+    },
+    {
+      kicker: 'Small spaces',
+      title: 'Best Treadmills for Small Spaces',
+      blurb: 'Full treadmills that fold or stay compact, for running in a small room.',
+      url: '/best-treadmills-for-small-spaces/',
+    },
+  ],
+  bottomLine: [
+    `<strong class="text-white">The WalkingPad Z1 is the best mini treadmill for most people</strong>:
+            it folds in half to about 32 by 22 inches and 51 lb, yet gives a walking area nearly four
+            feet long, for $299. If you will lift it every day, the 36.6 lb UREVO SpaceWalk E1L costs
+            $169.99; if you want a handle, the UREVO Strol 2E costs the same.`,
+    `Choose on the space you are short of, walking or storage, check your desk height against the
+            pad’s, and leave a margin below the lower capacity figure. If size is not the limit, our
+            <a href="/best-walking-pads/" class="text-[#5AA9FF] font-bold no-underline">best walking pads</a>
+            roundup is the better place to start.`,
+  ],
+};
