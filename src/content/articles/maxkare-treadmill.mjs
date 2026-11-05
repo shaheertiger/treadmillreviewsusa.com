@@ -516,6 +516,18 @@ export default {
       blurb: 'Another Walmart-led budget brand, read the same way.',
       url: '/famistar-treadmill/',
     },
+    {
+      kicker: "Brand Guide",
+      title: "ANCHEER Treadmills",
+      blurb: "An Amazon-only walking-pad brand: conflicting listing figures, manuals and warranty via the seller.",
+      url: '/ancheer-treadmills/',
+    },
+    {
+      kicker: "Brand Guide",
+      title: "Zofdim Treadmills",
+      blurb: "How to check a marketplace brand you cannot trace, and alternatives.",
+      url: '/zofdim-treadmills/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">A MaxKare treadmill is a budget folding machine whose figures are

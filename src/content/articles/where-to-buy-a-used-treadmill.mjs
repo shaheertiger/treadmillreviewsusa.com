@@ -403,6 +403,12 @@ export default {
       blurb: 'Most of the used saving with a warranty attached.',
       url: '/refurbished-treadmills/',
     },
+    {
+      kicker: "Buying Used",
+      title: "Buying a Used Peloton Treadmill",
+      blurb: "The 2021 recalls, the activation fee, and fair used prices.",
+      url: '/used-peloton-tread/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Used treadmills are easy to find and worth buying carefully.</strong>

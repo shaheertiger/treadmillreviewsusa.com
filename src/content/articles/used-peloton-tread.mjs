@@ -1,0 +1,559 @@
+export default {
+  slug: 'used-peloton-tread',
+  title: 'Used Peloton Treadmill (2026): Recalls, Fees and Fair Prices',
+  description:
+    'How to buy a used Peloton Tread or Tread+ safely: the 2021 recalls and how to confirm the fix, the $95 activation fee, the membership, what to check in person, fair prices against a new Tread Flex, and where to look.',
+  crumbLabel: 'Used Peloton Treadmill',
+  breadcrumb: { name: 'By Price', url: '/price/' },
+  kicker: 'Buying Used',
+  updated: 'November 2026',
+  updatedLong: 'November 5, 2026',
+  published: '2026-11-05',
+  socialProof: '1.3k',
+  h1: ['Buying a Used', 'Peloton Treadmill'],
+  standfirst:
+    'Peloton has sold well over 100,000 treadmills in the US, and plenty are now for sale. A used one can be a good buy, but only if three things check out first: the recall remedy, the costs Peloton adds when you activate it, and a price that still beats a new Tread Flex once you have moved it home.',
+  ctas: [
+    { label: 'The Recalls', href: '#recalls' },
+    { label: 'Fair Prices', href: '#fair-price' },
+  ],
+  tags: [
+    'used peloton treadmill',
+    'peloton treadmill for sale',
+    'peloton treadmill used',
+    'used peloton treadmill for sale',
+    'used peloton tread+',
+  ],
+  stickyCta: { text: 'What to Check', link: '#inspection' },
+  lead: `A used Peloton treadmill looks like an easy saving: the machines are expensive new, many
+          sellers bought them during 2020 and 2021 and no longer use them, and Peloton replaced its
+          whole treadmill range on 1 October 2026, which has pushed more older machines onto the
+          market. The saving is real only if the machine is safe, if you budget for what Peloton
+          charges a second owner, and if the price still makes sense next to a new Tread Flex at
+          $2,195. Both Peloton treadmill models sold before mid-2021 were recalled, one of them after
+          a child died. This guide explains how to tell which machine you are looking at, how to
+          confirm the recall remedy, what activation and the membership add, what to check in
+          person, what to pay and where to look.`,
+  note: `<strong class="text-gray-900">What we checked, and what we have not done.</strong> On
+          5 November 2026 we read the US Consumer Product Safety Commission’s two May 2021 Peloton
+          treadmill recall notices (21-128 and 21-129, the latter updated August 2021) and its May
+          2023 announcement of the Tread+ rear-guard repair, and searched its recall database for
+          later Peloton treadmill recalls. We read Peloton’s US Tread shop and Tread Flex pages for
+          current new prices and its used-bike page for its stated activation-fee terms. Peloton’s
+          own fee and membership pages did not display a figure when we looked, so the fee is taken
+          from Peloton’s 2024 announcement as reported by TechCrunch, NBC News and Pelo Buddy, whose
+          March 2026 report of a waiver to 31 March we also read, and the Repowered terms from
+          CNBC’s June 2025 report. Used prices are from Commonplace, a resale marketplace with a
+          commercial interest in the figures, dated 7 October 2026; we found no independent used-price
+          index for Peloton treadmills, so treat them as one marketplace’s asking prices. The
+          fair-price guidance is our editorial judgement, not a valuation. We have not inspected or
+          tested any used Peloton treadmill. Prices change often. We earn a commission if you buy
+          through an Amazon link on this page; it does not change what we say. This site is not
+          affiliated with Peloton or any marketplace mentioned.`,
+  products: [
+    {
+      id: 'used-peloton-tread-tr02',
+      name: 'Peloton Tread (used, model TR02)',
+      category: 'The Belt-Deck Peloton Treadmill, Bought Second-Hand',
+      badge: 'Most Common Used Peloton',
+      amazonUrl: 'https://www.amazon.com/s?k=Peloton+Tread+Treadmill&tag=sktiger-20',
+      priceRange: 'Used; asking prices vary by listing',
+      specs: 'Model TR02 · 59 in. running space · 23.8 in. touchscreen · conventional belt · All-Access needed for classes',
+      pros: [
+        'Far more common on the used market than the Tread+, so easier to find locally',
+        'A conventional belt and deck, simpler to inspect than slats',
+        'The recall affected only about 1,050 US units sold November 2020 to March 2021',
+      ],
+      cons: [
+        'Units from that window need proof the touchscreen was secured',
+        'Peloton charges new members a one-time activation fee for second-hand hardware',
+        'No warranty should be assumed to transfer',
+        'At the prices we found, it often costs as much delivered as a new Tread Flex',
+      ],
+      bottomLine:
+        'A sensible used buy when the screen fix is confirmed, the account is released and the total — price, fee and moving — sits clearly below a new Tread Flex.',
+      description:
+        'The Peloton Tread, model TR02, is the belt-deck Peloton treadmill launched in late 2020. Later belt-deck models, including the Cross Training Tread sold until the October 2026 range change, should be identified by their own model sticker. The CPSC describes it as having a 59-inch running space, a 23.8-inch HD touchscreen and a non-slatted belt, with the model number printed on a black sticker on the front end cap of the deck. About 1,050 US units sold from November 2020 to March 2021 were recalled in May 2021 because the touchscreen could detach and fall; the remedy was a refund or a free service visit to secure it. Classes need an All-Access Membership, and Peloton charges a one-time used-equipment activation fee when a new member activates second-hand hardware. One resale marketplace reported a median asking price of $2,157.50 across 38 listings on 7 October 2026.',
+    },
+    {
+      id: 'used-peloton-tread-plus-tr01',
+      name: 'Peloton Tread+ (used, model TR01)',
+      category: 'The Slat-Belt Peloton, Only With the Rear Guard',
+      badge: 'Check the Rear Guard',
+      amazonUrl: 'https://www.amazon.com/s?k=Peloton+Tread%2B+Treadmill&tag=sktiger-20',
+      priceRange: 'Used; asking prices vary by listing',
+      specs: 'Model TR01 · 67 in. running deck · 32 in. touchscreen · slatted belt · approved rear guard required',
+      pros: [
+        'A long slatted running deck that sold new for about $4,295',
+        'A CPSC-approved rear guard repair exists and was free to owners',
+        'Few listings, but asking prices well below the current Tread+ Vision',
+      ],
+      cons: [
+        'Every TR01 was recalled for a pull-under hazard; one child died',
+        'Do not buy one unless the approved rear guard is fitted and Peloton confirms it',
+        'Very heavy and awkward to move; professional movers are the norm',
+        'Few used listings, so prices are hard to judge',
+      ],
+      bottomLine:
+        'Only with the rear guard fitted and confirmed by Peloton against the serial number. Without that, walk away whatever the price.',
+      description:
+        'The Peloton Tread+, model TR01, was sold from September 2018, first as the Peloton Tread and renamed Tread+ in September 2020, for about $4,295. The CPSC describes it as having a 67-inch running deck, a 32-inch HD touchscreen and a slatted belt. All of the roughly 125,000 units were recalled on 5 May 2021 because adults, children, pets and objects could be pulled under the rear of the machine; a six-year-old child died. In May 2023 the CPSC announced an approved repair, a breakaway rear guard that cuts power and slows the belt when it touches a person or object, free and professionally installed for owners who registered. A used TR01 is only worth considering with that guard fitted. One resale marketplace reported a median asking price of $2,990 across five listings on 7 October 2026.',
+    },
+    {
+      id: 'peloton-tread-flex-new',
+      name: 'Peloton Tread Flex',
+      category: 'The New Peloton to Price Against Any Used One',
+      badge: 'The New Benchmark',
+      amazonUrl: 'https://www.amazon.com/s?k=Peloton+Tread+Flex&tag=sktiger-20',
+      priceRange: '$2,195 at Peloton (5 Nov 2026)',
+      specs: '0-12.5 mph · 0-12.5% incline · 21.5 in. swivel touchscreen · folding · new, with warranty',
+      pros: [
+        'Peloton’s cheapest treadmill, and its first that folds',
+        'New, with Peloton’s warranty and no used-equipment activation fee',
+        'Peloton was offering to match a better Tread Flex offer on its own site for purchases from 1 to 11 November',
+      ],
+      cons: [
+        'Still needs an All-Access Membership for classes',
+        'No movement-tracking camera, unlike the Tread Vision',
+      ],
+      bottomLine:
+        'The price any used Peloton treadmill has to beat once fees and moving are added. If it does not, buy this instead.',
+      description:
+        'The Tread Flex is Peloton’s folding treadmill, launched on 1 October 2026. Our Peloton Tread guide checked its figures against Peloton and independent launch coverage: 0 to 12.5 mph, 0 to 12.5% incline, a 21.5-inch swivel touchscreen and a 290 lb machine weight, folding to 37.8 inches long. On 5 November 2026 Peloton’s US shop listed it at $2,195, with the All-Access Membership sold separately and a price-match offer for purchases made from 1 to 11 November. Peloton’s shop listed the Tread Vision at $3,495 and the Tread+ Vision at $6,695 on the same day.',
+    },
+  ],
+  sections: [
+    {
+      id: 'short-answer',
+      heading: 'Is a Used Peloton Treadmill Worth Buying?',
+      products: true,
+      html: `          <p>
+            <strong>A used Peloton treadmill is worth buying only if you can confirm the recall
+            remedy, you budget for Peloton’s activation fee and membership, and the total cost —
+            asking price, fee and moving — still sits clearly below a new $2,195 Tread Flex.</strong>
+            When all three hold, it can be a good way into Peloton’s classes. When any one fails, a
+            new machine, or a cheaper non-Peloton treadmill with the Peloton App, is the better buy.
+          </p>
+          <p>
+            The recall check comes first and is not optional. Every Tread+ sold from 2018 to April
+            2021 (model TR01) was recalled because people, pets and objects could be pulled under the
+            rear of the machine; a six-year-old child died. A Tread+ without the approved rear guard
+            fitted is not a machine to bring into a home at any price. About 1,050 of the regular Tread
+            (model TR02) sold in the US from November 2020 to March 2021 were also recalled, because the
+            touchscreen could fall off.
+          </p>
+          <p>
+            The money check comes second. Peloton has charged new members a one-time $95 fee to activate
+            second-hand hardware since 2024, classes need a monthly All-Access Membership, no
+            manufacturer warranty should be assumed to transfer, and moving a 290 lb-plus treadmill is
+            rarely free. On the asking prices we found, many used Treads cost about as much delivered
+            as a new Tread Flex. Our
+            <a href="/peloton-tread/" class="text-[#0F62FE] font-medium">Peloton Tread guide</a>
+            covers the current new range in full.
+          </p>`,
+    },
+    {
+      id: 'which-model',
+      heading: 'Which Peloton Treadmill Are You Looking At?',
+      html: `          <p>
+            Peloton has sold two kinds of treadmill: a slat-belt machine (the Tread+) and a
+            conventional belt-deck machine (the Tread). Listings use the names loosely, and the names
+            changed in 2020, so identify the machine by its model number. The CPSC says the model number
+            is printed on a black sticker on the end cap at the front of the deck.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Model</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">What it is</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Recall</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR01</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Slatted belt, 67 in. deck, 32 in. screen. Sold from September 2018 as the "Peloton Tread", renamed Tread+ in September 2020</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">All units, May 2021 (pull-under hazard). Remedy: rear guard</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TR02</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Conventional belt, 59 in. running space, 23.8 in. screen. The "Peloton Tread" from late 2020</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About 1,050 US units sold Nov 2020 to Mar 2021 (screen could detach). Remedy: screen secured</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Later Tread+</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The Tread+ returned to sale in December 2023; coverage at the time said new orders came with the rear guard fitted</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Confirm the guard and the model with Peloton</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Current range</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Tread Flex, Tread Vision and Tread+ Vision, launched 1 October 2026</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">None found on cpsc.gov</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            The naming trap is real. A listing for a "2019 Peloton Tread" is almost certainly a TR01,
+            because the slat-belt machine was called the Tread until September 2020 — which means it is
+            a recalled Tread+, not a regular Tread. Ask the seller for a photo of the model sticker and
+            the serial number before you arrange a viewing, and do not rely on the year of purchase
+            alone. The previous-generation Cross Training Tread and Cross Training Tread+ will be the
+            most common recent machines on the market now that the range has changed; check their
+            model stickers the same way.
+          </p>`,
+    },
+    {
+      id: 'recalls',
+      heading: 'The 2021 Recalls, and How to Confirm the Fix',
+      html: `          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The Tread+ recall (CPSC 21-128)</h3>
+          <p>
+            On 5 May 2021 the CPSC and Peloton recalled about 125,000 Tread+ treadmills, model TR01,
+            because adult users, children, pets and objects could be pulled underneath the rear of the
+            machine. A six-year-old child had died after being pulled under, and Peloton had received 72
+            reports of people, pets or objects being pulled under, including 29 reports of injuries to
+            children such as broken bones and second- and third-degree abrasions. The original remedy
+            was a refund, or a free move to a room children and pets could not reach, plus a software
+            update that locks the treadmill after each use behind a four-digit passcode.
+          </p>
+          <p>
+            On 18 May 2023 the CPSC announced an approved repair: a rear guard with a breakaway design
+            that pivots away when it touches a person or object, cutting power to the treadmill and
+            slowing the belt. The CPSC said it eliminates the entrapment hazard near the rear roller. The
+            guard and installation were free to owners who registered through Peloton. By then Peloton
+            had received 351 pull-under reports in total, including the child’s death and 90 injury
+            reports. Full refunds ran until 6 November 2023, with prorated refunds after that.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The Tread recall (CPSC 21-129)</h3>
+          <p>
+            The same day, Peloton recalled about 1,050 Tread treadmills, model TR02, in the US and about
+            5,400 in Canada, sold by invitation from November 2020 through March 2021 for about $2,495.
+            The touchscreen could loosen and fall; Peloton knew of 18 reports of loosening and six of
+            the screen detaching, with no US injuries. The remedy, updated in August 2021, was a full
+            refund or a free service visit to secure the touchscreen to the treadmill.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">How to confirm the remedy on a used machine</h3>
+          <ol>
+            <li><strong>Get the model and serial number before you visit.</strong> A photo of the sticker on the front end cap is enough.</li>
+            <li><strong>Check with Peloton.</strong> The CPSC notices direct owners to onepeloton.com, where "Product Recalls" is linked at the foot of the page, and to Peloton’s toll-free line, 866-679-9129. Peloton’s used-equipment page says recall eligibility is defined by serial-number criteria, so give Peloton the serial and ask whether the remedy has been completed on that unit.</li>
+            <li><strong>Look for it in person.</strong> On a TR01, the rear guard should be visibly fitted across the back of the deck; ask the seller to show you how it breaks away and stops the belt. On a TR02 from the recall window, ask for the service record of the screen visit and check the screen is rigid on its mount.</li>
+            <li><strong>Check Tread Lock works.</strong> The passcode lock should engage after use. Peloton’s set-up guidance says it locks again after 45 seconds of inactivity outside a workout.</li>
+          </ol>
+          <p>
+            Federal law prohibits selling a product that is subject to a recall, so a seller who cannot
+            show the remedy has been done is a reason to walk away, not to negotiate. We searched the CPSC
+            database on 5 November 2026 and found no later Peloton treadmill recall; Peloton’s later
+            recalls were of Bike seat posts in 2023 and Bike+ seat posts in 2025. Whatever the model,
+            keep children and pets away from any running treadmill and remove the safety key after each
+            session; our <a href="/treadmill-safety-tips/" class="text-[#0F62FE] font-medium">treadmill safety guide</a>
+            and <a href="/kids-treadmill/" class="text-[#0F62FE] font-medium">guide to children and treadmills</a>
+            cover the habits that matter.
+          </p>`,
+    },
+    {
+      id: 'fees',
+      heading: 'The Activation Fee, the Membership and the Warranty',
+      html: `          <p>
+            The asking price is not what a used Peloton treadmill costs you. Three things Peloton
+            controls sit on top of it.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The used-equipment activation fee</h3>
+          <p>
+            In August 2024 Peloton introduced a one-time used-equipment activation fee of $95 in the US
+            for new members who activate pre-owned hardware — Bike, Bike+, Tread, Tread+ and Row — bought
+            from a previous owner. Peloton waived it for promotional periods in early 2026, most recently
+            until 31 March 2026, according to Pelo Buddy. We found no later waiver, and Peloton’s own
+            pages did not show the fee for a Tread when we checked, so assume $95 unless Peloton tells you
+            otherwise at activation. Peloton’s used-bike page says its own Certified Refurbished bikes are
+            exempt; on 5 November its shop showed no refurbished Tread.
+          </p>
+          <p>
+            At the June 2025 launch of Repowered, Peloton’s own resale marketplace, CNBC reported that the
+            fee for a purchase made there would fall to $45. Check the figure on the day; it changes with
+            Peloton’s promotions.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The membership</h3>
+          <p>
+            Peloton’s classes, programs and most of the screen’s features need an All-Access Membership,
+            and its shop pages list it as sold separately without giving a monthly price. Coverage of
+            Peloton’s October 2025 price change put it at $49.99 a month in the US; we could not confirm
+            that on Peloton’s site, so check at sign-up. Over three years, $49.99 a month is about
+            $1,800, which on a used Tread can be more than the machine. Without a membership, Peloton
+            says the current machines offer Just Run, a manual mode with basic metrics; check what the
+            software on the machine you are buying offers before you rely on it. Our
+            <a href="/ifit-vs-peloton/" class="text-[#0F62FE] font-medium">iFIT vs Peloton comparison</a>
+            sets the two memberships side by side.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The warranty</h3>
+          <p>
+            Sources we found describe Peloton’s limited home warranty as covering the original purchaser
+            and not transferring to a second owner, while reports from 2022 said Peloton’s paid extended
+            protection plans had been made transferable. Assume the machine comes with no manufacturer
+            warranty unless Peloton confirms otherwise for that serial number, and ask the seller whether
+            they bought a protection plan and whether it can be transferred. Our
+            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a>
+            explains what you give up buying used.
+          </p>`,
+    },
+    {
+      id: 'inspection',
+      heading: 'What to Check on a Used Peloton Tread or Tread+',
+      navLabel: 'What to Check',
+      html: `          <p>
+            Do every check with the machine running, in person, before any money changes hands. The
+            general mechanical checks in our
+            <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill buying checklist</a>
+            apply; these are the Peloton-specific ones.
+          </p>
+          <ul>
+            <li><strong>Recall remedy.</strong> As above: rear guard on any TR01, screen fix on a TR02 from the recall window, confirmed by Peloton against the serial number.</li>
+            <li><strong>The account.</strong> Peloton hardware is tied to a member account. Make sure the seller has removed the machine from theirs, or will do so before you collect, so it can be activated in yours; a machine still registered to someone else is the most common post-sale headache.</li>
+            <li><strong>Factory reset and software.</strong> Ask the seller to show the screen booting, connecting to Wi-Fi and reaching the home screen. A screen that will not boot or update is expensive to replace.</li>
+            <li><strong>Speed and incline through the full range.</strong> Run the belt from slow walking to top speed and the incline from flat to maximum and back. Listen for grinding, knocking or a motor that labours. Our guide to <a href="/treadmill-incline-not-working/" class="text-[#0F62FE] font-medium">incline faults</a> covers what each sound means.</li>
+            <li><strong>On a Tread: the belt and deck.</strong> Look for fraying edges, a belt that slips or drifts off centre, and a deck worn smooth where the feet land. Our <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">belt slipping guide</a> explains which faults are cheap to fix.</li>
+            <li><strong>On a Tread+: the slats.</strong> Walk the whole slat track. Look for cracked, loose or missing slats, damaged rubber, and any slat that clicks or catches; the slat belt is the most expensive part of the machine.</li>
+            <li><strong>Safety key and Tread Lock.</strong> Check the safety key stops the belt, and that the passcode lock engages.</li>
+            <li><strong>Environment.</strong> A machine kept in an unheated garage or damp basement may have rust or electronics problems. Ask where it has lived.</li>
+          </ul>
+          <p>
+            Ask for the original order or delivery confirmation as well. It establishes the purchase
+            date, helps Peloton identify the machine, and is a reasonable sign the seller actually owns
+            it; our guide to
+            <a href="/where-to-buy-a-used-treadmill/" class="text-[#0F62FE] font-medium">where to buy a used treadmill</a>
+            covers the scams that follow this market.
+          </p>`,
+    },
+    {
+      id: 'moving',
+      heading: 'Moving a Used Peloton Home',
+      html: `          <p>
+            A Peloton treadmill is heavy and top-heavy. The current Tread Flex weighs 290 lb and the Tread
+            Vision 316 lb, by Peloton’s figures, and resale sources describe the original Tread at about
+            290 lb with the manual calling for two people to move it. We could not confirm the original
+            Tread+’s weight, but the current Tread+ Vision is 460 lb and the slat-belt machines are the
+            hardest to move. Neither folds, except the new Flex.
+          </p>
+          <p>
+            Budget for moving before you agree a price. Commonplace, a resale marketplace, says delivery
+            through the furniture-moving service AptDeco typically costs $500 to $900 for a Peloton
+            treadmill bought on Repowered, and in-person pickup is free if you can do it yourself.
+            Specialist movers price by distance, stairs and access. Ask the seller whether the machine
+            is upstairs or in a basement, and measure every doorway and turn on both ends. Our
+            <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">guide to moving a treadmill</a>
+            covers lifting points and stairs.
+          </p>
+          <p>
+            At the other end, plan the room as for a new machine: a hard, level floor, clearance behind
+            the deck, a ceiling high enough for the tallest user plus the step-up height, and a
+            dedicated grounded circuit. Peloton specifies a dedicated 15-amp-or-more circuit for its
+            current treadmills; check the manual for the model you are buying. Our
+            <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium">circuit guide</a>
+            explains why an extension lead is not an option.
+          </p>`,
+    },
+    {
+      id: 'fair-price',
+      heading: 'What Is a Fair Price for a Used Peloton Treadmill?',
+      navLabel: 'Fair Prices',
+      html: `          <p>
+            We found no independent price index for used Peloton treadmills. The best data we found
+            comes from Commonplace, a resale marketplace that publishes its own listings data and has a
+            commercial interest in the market, so read it as one platform’s asking prices rather than
+            what machines sell for.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Figure</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Amount</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Source and date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Used Tread, median asking price</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,157.50 (38 listings)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Commonplace, 7 October 2026</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Used Tread, typical sale</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $1,800 (median $1,786)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Commonplace, August 2026</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Used Tread+, median asking price</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,990 (5 listings)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Commonplace, 7 October 2026</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">New Tread Flex</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,195</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">onepeloton.com, 5 November 2026</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">New Tread Vision</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$3,495</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">onepeloton.com, 5 November 2026</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">New Tread+ Vision</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$6,695 (plus required $299 assembly, 20 Oct 2026)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">onepeloton.com, 5 November 2026</td></tr>
+            </tbody>
+          </table></div>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">How to work out what to pay</h3>
+          <p>
+            Start from the new machine that would replace it, and subtract what you lose and what you
+            add by buying used. A used Tread’s nearest new replacement is the Tread Flex at $2,195, which
+            arrives with a warranty, needs no activation fee and costs nothing to deliver if you build
+            it yourself. Against that, a used Tread at the $1,800 typical sale price above, plus a $95
+            activation fee, plus $500 to $900 for delivery, comes to roughly $2,400 to $2,800 — more than
+            the new Flex. Even collected yourself, it is about $1,900 with no warranty.
+          </p>
+          <p>
+            That is why, in our judgement, a used Tread is a good buy only when its total cost sits
+            clearly below the new Flex: in practice, an asking price that leaves room for the fee, the
+            move and a few hundred dollars of risk. You may prefer the older Tread’s larger screen or
+            fixed frame, and that is a fair reason to pay a little more, but not to pay the same as new.
+            For a Tread+ with the rear guard confirmed, the comparison is the $6,695 Tread+ Vision plus its
+            $299 assembly; there is more room for a saving, but professional moving costs more and the
+            slat belt is expensive to repair. Our
+            <a href="/new-vs-used-treadmill/" class="text-[#0F62FE] font-medium">new vs used guide</a>
+            sets out the general case.
+          </p>
+          <p>
+            Two timing notes. The range change on 1 October 2026 has put more older Peloton treadmills on
+            the market, which should push asking prices down; the August sale figure predates it. And
+            Peloton was offering to match a better Tread Flex offer on its own site for purchases from 1
+            to 11 November, so check the new price on the day you negotiate. Our
+            <a href="/black-friday-treadmill-deals-2026/" class="text-[#0F62FE] font-medium">Black Friday treadmill deals</a>
+            page tracks the new market through November.
+          </p>`,
+    },
+    {
+      id: 'where-to-buy',
+      heading: 'Where to Find a Used Peloton Treadmill for Sale',
+      navLabel: 'Where to Buy',
+      html: `          <p>
+            <strong>Peloton Repowered.</strong> Peloton’s own resale marketplace launched in June 2025, in
+            beta in New York City, Boston and Washington, D.C., with a nationwide rollout planned. CNBC
+            reported that sellers set their price and receive 70% of the sale, buyers pay a reduced
+            activation fee and delivery costs extra. We could not read the Repowered site on the day, so
+            check whether it serves your area and which models it lists; reports at launch said it did
+            not support the Tread+, and later third-party coverage says it does.
+          </p>
+          <p>
+            <strong>Local marketplaces and classifieds.</strong> The largest supply, the lowest prices and
+            the most risk. You can see the machine running, check the sticker and the remedy, and collect
+            it yourself. Never send a deposit for a machine you have not seen.
+          </p>
+          <p>
+            <strong>Resale and moving services.</strong> Several services list used Peloton equipment
+            and handle collection and delivery for a fee. They remove the moving problem but not the
+            recall check, the account transfer or the activation fee; ask how they confirm each before
+            paying.
+          </p>
+          <p>
+            <strong>Previous-generation stock.</strong> New, unused Cross Training Treads from before the
+            range change may still turn up at retailers and on Amazon at clearance prices. A new
+            previous-generation machine comes with a manufacturer warranty, which a used one does not;
+            our <a href="/peloton-tread/" class="text-[#0F62FE] font-medium">Peloton Tread guide</a>
+            covers what it lacks against the current range.
+          </p>
+          <p>
+            <strong>Certified refurbished.</strong> Peloton’s refurbished store listed only the Bike and
+            Bike+ on 5 November 2026, not any Tread. A "refurbished Peloton Tread" elsewhere has been
+            refurbished by someone other than Peloton; ask who did the work and what warranty comes with
+            it. Our <a href="/refurbished-treadmills/" class="text-[#0F62FE] font-medium">refurbished treadmills guide</a>
+            explains what the word should mean.
+          </p>
+          <p>
+            For the sourcing side in general — collecting safely, paying, and the scams — read our guide to
+            <a href="/where-to-buy-a-used-treadmill/" class="text-[#0F62FE] font-medium">where to buy a used treadmill</a>.
+          </p>`,
+    },
+    {
+      id: 'alternatives',
+      heading: 'The Alternatives to a Used Peloton',
+      html: `          <p>
+            If the point is Peloton’s classes rather than Peloton’s hardware, there is a cheaper route.
+            The Peloton App runs on a phone, tablet or television beside any treadmill; you follow the
+            instructor’s cues on your own console, and the app costs less than All-Access. A new
+            treadmill with a 60-inch deck and Bluetooth, such as the Horizon 7.0 AT, can cost less than a
+            used Tread once fees and moving are added, and it comes with a warranty. Our
+            <a href="/best-peloton-alternatives/" class="text-[#0F62FE] font-medium">Peloton alternatives</a>
+            guide and our
+            <a href="/horizon-7-0-at-treadmill/" class="text-[#0F62FE] font-medium">Horizon 7.0 AT review</a>
+            cover that route, and our
+            <a href="/best-smart-treadmills/" class="text-[#0F62FE] font-medium">smart treadmill roundup</a>
+            covers machines whose own platforms control speed and incline.
+          </p>
+          <p>
+            If you want a used treadmill and are not tied to Peloton, a used commercial or premium home
+            machine from a brand with a simple console and no activation step is often the better
+            buy; our <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">checklist</a>
+            applies to any of them.
+          </p>`,
+    },
+    {
+      id: 'verdict',
+      heading: 'Who Should Buy a Used Peloton Treadmill',
+      html: `          <p>
+            <strong>Buy a used Tread if</strong> you want Peloton’s classes on Peloton’s screen, the
+            remedy and account are confirmed, and the price plus the $95 fee and the move sits clearly
+            below a new $2,195 Tread Flex.
+          </p>
+          <p>
+            <strong>Buy a used Tread+ only if</strong> the approved rear guard is fitted and Peloton has
+            confirmed it against the serial number, and the price leaves room for professional moving.
+          </p>
+          <p>
+            <strong>Buy new instead if</strong> the used total comes close to the Tread Flex, or if a
+            warranty matters to you.
+          </p>
+          <p>
+            <strong>Skip Peloton hardware if</strong> you do not want a membership. A treadmill without
+            one, used with the Peloton App when you want classes, costs far less over three years.
+          </p>`,
+    },
+  ],
+  faqs: [
+    {
+      q: 'Is it safe to buy a used Peloton Tread+?',
+      a: 'Only if the CPSC-approved rear guard is fitted. Every Tread+ model TR01 sold from 2018 to April 2021 was recalled in May 2021 because people, pets and objects could be pulled under the rear; a child died. The free breakaway rear guard announced in May 2023 cuts power and slows the belt on contact. Give Peloton the serial number and ask it to confirm the remedy before you buy.',
+    },
+    {
+      q: 'How much does Peloton charge to activate a used treadmill?',
+      a: 'Peloton introduced a one-time $95 used-equipment activation fee in the US in August 2024 for new members activating second-hand hardware, including the Tread and Tread+. It was waived for promotions in early 2026, most recently until 31 March 2026, and was reported at $45 for purchases on Peloton’s Repowered marketplace at its 2025 launch. Check the current figure when you activate.',
+    },
+    {
+      q: 'How much should I pay for a used Peloton treadmill?',
+      a: 'Enough below a new Tread Flex to cover the fee, the move and the lack of a warranty. The Flex was $2,195 at Peloton on 5 November 2026. One resale marketplace reported a typical used Tread sale of about $1,800 in August 2026; add $95 for activation and $500 to $900 for delivery and that exceeds the new Flex, so negotiate accordingly.',
+    },
+    {
+      q: 'Does a Peloton treadmill warranty transfer to a second owner?',
+      a: 'Assume not. Sources describe Peloton’s limited home warranty as covering the original purchaser only, while 2022 reports said paid extended protection plans became transferable. Ask the seller whether they bought a plan, and ask Peloton what, if anything, covers that serial number.',
+    },
+    {
+      q: 'Do I need a membership for a used Peloton Tread?',
+      a: 'For classes and most screen features, yes: an All-Access Membership, which coverage of Peloton’s October 2025 price change put at $49.99 a month in the US. Peloton says its current Treads offer Just Run, a manual mode, without one. Check what the software on the machine you are buying offers.',
+    },
+    {
+      q: 'How do I know which Peloton treadmill model I am buying?',
+      a: 'Check the model number on the black sticker on the front end cap of the deck. TR01 is the slat-belt Tread+, sold as the Peloton Tread until September 2020; TR02 is the belt-deck Tread. A listing for a 2019 "Peloton Tread" is almost certainly a recalled TR01.',
+    },
+  ],
+  mistakesHeading: 'Common Mistakes Buying a Used Peloton Treadmill',
+  mistakesIntro:
+    'Most expensive mistakes with a used Peloton happen before the machine is switched on.',
+  mistakes: [
+    {
+      title: 'Buying a Tread+ without proof of the rear guard',
+      body: 'Every TR01 was recalled for a pull-under hazard. Without the approved rear guard fitted and confirmed by Peloton against the serial number, walk away at any price.',
+    },
+    {
+      title: 'Trusting the name in the listing',
+      body: 'The slat-belt Tread+ was called the Peloton Tread until September 2020. Ask for a photo of the model sticker before you visit, and do not rely on the name or year.',
+    },
+    {
+      title: 'Leaving the fee and the move out of the price',
+      body: 'A $95 activation fee and several hundred dollars of moving can take a used Tread past the price of a new Tread Flex. Add both before you make an offer.',
+    },
+    {
+      title: 'Collecting a machine still on the seller’s account',
+      body: 'Peloton hardware is tied to a member account. Make sure the seller has removed it before you pay, or you may not be able to activate it in your own name.',
+    },
+  ],
+  relatedHeading: 'Related Guides',
+  related: [
+    {
+      kicker: 'Brand Guide',
+      title: 'Peloton Treadmill Buyer’s Guide',
+      blurb: 'The current Tread Flex, Tread Vision and Tread+ Vision, costs and recalls.',
+      url: '/peloton-tread/',
+    },
+    {
+      kicker: 'Checklist',
+      title: 'Used Treadmill Buying Checklist',
+      blurb: 'The mechanical checks to run on any second-hand treadmill before you pay.',
+      url: '/used-treadmill-buying-checklist/',
+    },
+    {
+      kicker: 'Alternatives',
+      title: 'Best Peloton Alternatives',
+      blurb: 'Cheaper ways to Peloton-style classes, with three-year costs compared.',
+      url: '/best-peloton-alternatives/',
+    },
+  ],
+  bottomLine: [
+    `<strong class="text-white">A used Peloton treadmill is a good buy only when three checks pass</strong>:
+            the recall remedy is confirmed by Peloton against the serial number — the rear guard on any
+            Tread+ TR01, the screen fix on a 2020-21 Tread TR02 — the seller has released the machine
+            from their account, and the price plus Peloton’s $95 activation fee and the move sits
+            clearly below a new $2,195 Tread Flex.`,
+    `If any check fails, buy new, or use the Peloton App with a treadmill that needs no
+            membership; our
+            <a href="/best-peloton-alternatives/" class="text-[#5AA9FF] font-bold no-underline">Peloton alternatives</a>
+            guide sets out that route.`,
+  ],
+};

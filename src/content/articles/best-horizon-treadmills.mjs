@@ -528,6 +528,12 @@ export default {
       blurb: 'The walking-first Horizon in detail.',
       url: '/horizon-t101-treadmill/',
     },
+    {
+      kicker: "Model Review",
+      title: "Horizon 7.8 AT Treadmill",
+      blurb: "Horizon's 375 lb flagship: confirmed specs and whether it beats the 7.4 AT.",
+      url: '/horizon-7-8-at-treadmill/',
+    },
   ],
   bottomLine: [
     `For most buyers the <strong class="text-white">Horizon 7.0 AT</strong> is the one to buy: a

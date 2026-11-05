@@ -641,6 +641,18 @@ export default {
       blurb: 'More full-size options in the band where most budgets land.',
       url: '/best-treadmill-under-1000-reviews/',
     },
+    {
+      kicker: "Brand Guide",
+      title: "Sunny Health & Fitness Treadmills",
+      blurb: "Sunny's treadmills, pads and manual walkers: prices, motors and warranty.",
+      url: '/sunny-health-fitness-treadmills/',
+    },
+    {
+      kicker: "Brand Guide",
+      title: "XTERRA Treadmills",
+      blurb: "Dyaco's budget brand: the TRX1200, TR75 and TR95H Hiker.",
+      url: '/xterra-treadmills/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">For walking, the UREVO SpaceWalk 3S is the best budget

@@ -512,6 +512,12 @@ export default {
       blurb: 'Stores where you can try a treadmill before you buy one.',
       url: '/where-to-buy-a-treadmill-near-me/',
     },
+    {
+      kicker: "Where to Buy",
+      title: "Sam's Club Treadmills",
+      blurb: "Members-only NordicTrack and ProForm prices, the return policy, and Costco compared.",
+      url: '/sams-club-treadmills/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">A Wayfair treadmill is worth considering when you can name its

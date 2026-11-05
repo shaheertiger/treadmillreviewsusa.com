@@ -433,6 +433,12 @@ export default {
       blurb: 'The annual price cycle and the weeks to avoid.',
       url: '/best-time-of-year-to-buy-a-treadmill/',
     },
+    {
+      kicker: "Where to Buy",
+      title: "Sam's Club Treadmills",
+      blurb: "Members-only NordicTrack and ProForm prices, the return policy, and Costco compared.",
+      url: '/sams-club-treadmills/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Costco is worth checking, not worth starting with.</strong> Its

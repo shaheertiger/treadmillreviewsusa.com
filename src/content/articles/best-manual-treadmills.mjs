@@ -566,6 +566,12 @@ export default {
       blurb: 'How the curve works, which benefits are real and who should not buy one.',
       url: '/curved-treadmill-guide/',
     },
+    {
+      kicker: "Model Review",
+      title: "Bells of Steel Blitz Treadmill",
+      blurb: "Steep-curve manual treadmill with six magnetic resistance levels.",
+      url: '/bells-of-steel-blitz-treadmill/',
+    },
   ],
   bottomLine: [
     `For walking, the <strong class="text-white">Sunny SF-T1407SMART</strong> is the sensible

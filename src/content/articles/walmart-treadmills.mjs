@@ -502,6 +502,12 @@ export default {
       blurb: 'Store types and the ten-minute in-store test.',
       url: '/where-to-buy-a-treadmill-near-me/',
     },
+    {
+      kicker: "Where to Buy",
+      title: "Sam's Club Treadmills",
+      blurb: "Members-only NordicTrack and ProForm prices, the return policy, and Costco compared.",
+      url: '/sams-club-treadmills/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Walmart sells treadmills, but check who is selling yours.</strong>

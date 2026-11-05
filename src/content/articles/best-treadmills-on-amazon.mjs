@@ -530,6 +530,12 @@ export default {
       blurb: 'Restocking fees, pickup charges and how to return a machine that weighs 200 lb.',
       url: '/treadmill-return-policies/',
     },
+    {
+      kicker: "Brand Guide",
+      title: "Sunny Health & Fitness Treadmills",
+      blurb: "Sunny's treadmills, pads and manual walkers: prices, motors and warranty.",
+      url: '/sunny-health-fitness-treadmills/',
+    },
   ],
   bottomLine: [
     `For most people the <strong class="text-white">Horizon T101 Connect</strong> is the

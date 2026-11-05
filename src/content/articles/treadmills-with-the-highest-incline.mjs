@@ -565,6 +565,12 @@ export default {
       blurb: 'When a 40% machine is worth it, and when a 15% one is better.',
       url: '/incline-trainer-vs-treadmill/',
     },
+    {
+      kicker: "Model Review",
+      title: "NordicTrack X24 Treadmill",
+      blurb: "The -6% to 40% incline trainer, its speed caps and ceiling height.",
+      url: '/nordictrack-x24-treadmill/',
+    },
   ],
   bottomLine: [
     `The treadmill with the highest incline you can buy for home use is the

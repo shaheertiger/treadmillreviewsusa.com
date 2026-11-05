@@ -58,7 +58,7 @@ export default {
           <p>
             Three caveats belong in the short answer. First, decline is rare: when our roundup checked
             the major home brands, powered decline was confined almost entirely to NordicTrack's
-            Commercial and X Series and the Wahoo KICKR RUN, at -3% or -6%. Second, it is not gentle.
+            Commercial and X Series and the <a href="/wahoo-kickr-run-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Wahoo KICKR RUN</a>, at -3% or -6%. Second, it is not gentle.
             Decline puts more load through the front of the knee than flat walking, so it is the
             setting most likely to aggravate knees that are already sore. Third, most people do not
             need it. If you walk or run on the flat for general fitness, incline is the more useful

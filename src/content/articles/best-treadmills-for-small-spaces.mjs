@@ -470,6 +470,12 @@ export default {
       blurb: 'Footprint, clearance, ceiling height and the delivery route.',
       url: '/treadmill-dimensions-space-requirements/',
     },
+    {
+      kicker: "Roundup",
+      title: "Best Mini Treadmills",
+      blurb: "Five walking pads ranked by checked footprint and weight.",
+      url: '/best-mini-treadmills/',
+    },
   ],
   bottomLine: [
     `Judge the fold, not the folded dimensions. The

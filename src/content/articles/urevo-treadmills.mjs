@@ -737,6 +737,12 @@ export default {
       blurb: 'Another walking-pad brand, read the same way.',
       url: '/deer-run-treadmill/',
     },
+    {
+      kicker: "Brand Guide",
+      title: "Yesoul Treadmills",
+      blurb: "The T3S Plus screen treadmill and the 30%-incline T5 range.",
+      url: '/yesoul-treadmills/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">UREVO is a sensible budget brand for walking pads, provided you choose on

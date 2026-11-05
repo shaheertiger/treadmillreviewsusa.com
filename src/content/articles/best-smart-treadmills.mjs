@@ -559,6 +559,12 @@ export default {
       blurb: 'Machines that work fully with no monthly fee at all.',
       url: '/best-treadmills-without-subscriptions/',
     },
+    {
+      kicker: "Roundup",
+      title: "Best Treadmills With Screens",
+      blurb: "10 to 23.8 in. touchscreens, and what works without a subscription.",
+      url: '/best-treadmills-with-screens/',
+    },
   ],
   bottomLine: [
     `For most people who want guided training on a built-in screen, the
