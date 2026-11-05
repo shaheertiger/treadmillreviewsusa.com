@@ -160,7 +160,7 @@ export default {
           <p>
             <strong>What ANCHEER sells now is mostly walking pads.</strong> The full-size ANCHEER folding
             treadmills that older reviews describe appear far less often in 2026 records than its under-desk pads
-            with handlebars, manual incline and, on the newest model, a vibration plate. If you are looking for
+            with handlebars, manual incline and, on the newest model, a <a href="/best-vibration-plates/" class="text-[#0F62FE] font-medium" data-autolink>vibration plate</a>. If you are looking for
             an ANCHEER folding running treadmill, you are probably looking at old stock or a used machine.
           </p>`,
     },
@@ -168,7 +168,7 @@ export default {
       id: 'what-ancheer-is',
       heading: 'What ANCHEER Is: a Marketplace Brand',
       html: `          <p>
-            Most of the treadmill brands this site covers have a website that lists their range, publishes
+            Most of the <a href="/best-treadmill-brands/" class="text-[#0F62FE] font-medium" data-autolink>treadmill brands</a> this site covers have a website that lists their range, publishes
             specifications and states their warranty. ANCHEER does not, at least for treadmills. On 5 November
             2026, ancheer.com and ancheersport.com would not open with a valid security certificate, and
             ancheer.shop, the one ANCHEER site that worked, sells only e-bikes. OCDevel’s tracker describes
@@ -179,7 +179,7 @@ export default {
             <strong>Who is behind it.</strong> The only official record we found naming a company is a 2022 CPSC
             e-bike recall, which names Shenzhen Sailvan Network Technology Ltd., doing business as ANCHEER, of
             China, as the e-bikes’ distributor. We could not confirm whether the same company sells the ANCHEER
-            treadmills on Amazon today. Brand names on marketplaces are sometimes licensed, sold or shared, so
+            <a href="/best-treadmills-on-amazon/" class="text-[#0F62FE] font-medium" data-autolink>treadmills on Amazon</a> today. Brand names on marketplaces are sometimes licensed, sold or shared, so
             we treat the treadmill seller as unidentified beyond the name on the listing.
           </p>
           <p>
@@ -299,7 +299,7 @@ export default {
           </p>
           <ol>
             <li><strong>Your Amazon order.</strong> Open the order in your Amazon account and go to the product page. Many listings carry a "Product guides and documents" section with a PDF of the user manual; if the listing has been removed, the order page still shows the product title and ASIN you need for the next steps.</li>
-            <li><strong>The label on the machine.</strong> Look under the motor cover or on the frame near the power switch for a model number (ANCHEER numbers often start TR) and, on machines with a remote or Bluetooth, an FCC ID. Write both down.</li>
+            <li><strong>The label on the machine.</strong> Look under the motor cover or on the frame near the <a href="/how-to-turn-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>power switch</a> for a model number (ANCHEER numbers often start TR) and, on machines with a remote or Bluetooth, an FCC ID. Write both down.</li>
             <li><strong>Third-party manual archives.</strong> Sites such as manuals.plus host copies of ANCHEER manuals filed under the Amazon ASIN or model number. They are not ANCHEER’s own, so check that the diagrams match your machine before following any instructions.</li>
             <li><strong>Contact the seller through Amazon.</strong> Use "Contact seller" on the order. Ask for the manual by model number; it is also the route for warranty claims.</li>
           </ol>
@@ -444,6 +444,12 @@ export default {
       title: 'Buying a Treadmill on Amazon',
       blurb: 'Sellers, returns and warranties on a marketplace.',
       url: '/buying-a-treadmill-on-amazon/',
+    },
+    {
+      kicker: "Brand Guide",
+      title: "Zofdim Treadmills",
+      blurb: "How to check a marketplace brand you cannot trace, and alternatives.",
+      url: '/zofdim-treadmills/',
     },
   ],
   bottomLine: [

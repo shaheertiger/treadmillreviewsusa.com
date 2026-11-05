@@ -216,7 +216,7 @@ export default {
           </p>
           <p>
             Delivery and setup are scheduled, in-home and included in the price in the contiguous US; Wahoo
-            requires them. Returns carry a $750 restocking fee, which Wahoo says covers return shipping and
+            requires them. Returns carry a $750 <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium" data-autolink>restocking fee</a>, which Wahoo says covers return shipping and
             packaging, so treat the purchase as close to final. Wahoo's page also says HSA and FSA payment
             can save buyers money; whether a treadmill qualifies depends on your plan and usually a letter
             of medical necessity, which our guide to
@@ -241,7 +241,7 @@ export default {
             ask, but plan on the one year Wahoo publishes.
           </p>
           <p>
-            The third is simply the price. At $6,999.99 the KICKR RUN costs more than a Peloton Tread+
+            The third is simply the price. At $6,999.99 the KICKR RUN costs more than a <a href="/peloton-tread/" class="text-[#0F62FE] font-medium" data-autolink>Peloton Tread</a>+
             Vision and more than three NordicTrack Commercial 1750s at their October prices. You are paying
             for RunFree, decline, Zwift control and a premium deck, and for nothing else; there is no screen,
             no class library and no fold. Our list of <a href="/treadmills-over-2500/" class="text-[#0F62FE] font-medium">treadmills over $2,500</a>
@@ -259,7 +259,7 @@ export default {
             <strong>The NordicTrack Commercial 1750</strong> is the mainstream treadmill closest to the
             KICKR RUN's feature list: the same -3 per cent decline, incline to 12 per cent, a 22 by 60-inch
             belt, a 400 lb rating and a 16-inch pivoting touchscreen, at $1,999.99 on NordicTrack's site on
-            28 October 2026. It reaches 12 mph rather than 15, has no RunFree mode and is built around iFIT,
+            28 October 2026. It reaches 12 mph rather than 15, has no RunFree mode and is built around <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium" data-autolink>iFIT</a>,
             whose classes can move the deck automatically; Zwift reads its speed but does not control its
             incline. For most runners who want hills and decline, it is a far better use of money. Read our
             <a href="/nordictrack-commercial-1750-treadmill/" class="text-[#0F62FE] font-medium">Commercial 1750 review</a>.
@@ -273,7 +273,7 @@ export default {
           </p>
           <p>
             If what attracts you is RunFree's self-paced feel rather than Zwift, a curved manual treadmill
-            gives you that for less — the AssaultRunner Pro was $3,499 at US dealers this month — though
+            gives you that for less — the <a href="/assaultrunner-pro-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>AssaultRunner Pro</a> was $3,499 at US dealers this month — though
             you supply all the power. Our <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium">curved treadmill roundup</a>
             compares them.
           </p>`,

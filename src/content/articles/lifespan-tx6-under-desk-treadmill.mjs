@@ -192,8 +192,8 @@ export default {
             “GlowUp” is LifeSpan’s name for its current generation of desk treadmills, not a TX6
             option. The TR1200Pro and the TR5000B Pro+ carry it too. It distinguishes the current
             machines from LifeSpan’s older TR1200-DT3 and TR5000-DT5 desk treadmills, which used the
-            same model numbers with different consoles and figures. That matters if you are reading
-            reviews or buying used: a review of a TR1200-DT3 says nothing reliable about a TX6, and
+            same model numbers with different consoles and figures. That matters if you are <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium" data-autolink>reading
+            reviews</a> or buying used: a review of a TR1200-DT3 says nothing reliable about a TX6, and
             neither does an Amazon star rating gathered across several LifeSpan models.
           </p>
           <p>
@@ -248,7 +248,7 @@ export default {
           <p>
             The belt-length disagreement is smaller than it looks. LifeSpan quotes 48 inches and the
             dealer 48.8; either is long enough for a normal walking stride at desk pace, and both are
-            several inches longer than most budget pads. The 38-inch “deck length” in Amazon’s data
+            several inches longer than most budget pads. The 38-inch “<a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium" data-autolink>deck length</a>” in Amazon’s data
             does not match any other source and is best ignored.
           </p>`,
     },
@@ -303,7 +303,7 @@ export default {
           </p>
           <p>
             Under the belt, LifeSpan specifies a 0.7-inch phenolic deck on six compression shocks.
-            Phenolic is a dense resin-impregnated board used in commercial treadmills because it
+            Phenolic is a dense resin-impregnated board used in <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>commercial treadmills</a> because it
             resists warping and wear better than the fibreboard most cheap pads use. The belt is
             self-lubricating, which LifeSpan describes as maintenance-free. That is a real advantage
             over pads that ask you to apply silicone every few weeks, although a self-lubricating belt
@@ -387,7 +387,7 @@ export default {
             explain what changes with the seller.
           </p>
           <p>
-            If you are shopping around Black Friday, use $1,299 to $1,399 as the band a real discount
+            If you are shopping around <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium" data-autolink>Black Friday</a>, use $1,299 to $1,399 as the band a real discount
             has to beat, and judge it on the delivered total, not against $1,899. Our
             <a href="/black-friday-walking-pad-deals/" class="text-[#0F62FE] font-medium">walking pad deal watch</a>
             covers the pads worth watching this season.

@@ -867,6 +867,60 @@ Found while writing and not yet changed:
 - The UREVO SpaceWalk 3S appears to have a successor (SpaceWalk 5L) that older roundups do not
   mention.
 
+### Buying guides (2026-11-05): twenty pages from a Semrush pull
+
+Twenty buyer's guides chosen from a Semrush US export of 30,003 treadmill keywords (2026-11-05)
+for volume against keyword difficulty (every head term KD 30 or under) where no existing page
+owned the intent. The keyword-to-page mapping is in
+`research/keyword-batches/2026-11-05-buying-guides.csv`. Wayfair house-brand terms (17 Stories,
+Astoria Grand, August Grove), "bowflex t6/t16", "walkingpad z1", manual/non-motorized terms and
+"heavy duty treadmill" were skipped because `/wayfair-treadmills/`, the model reviews,
+`/best-manual-treadmills/` and `/best-treadmills-for-heavy-people/` already own them.
+
+- `/reviews/`: LifeSpan TX6-GlowUp (74,000/mo), Life Fitness Club Series+ (SE4/SL consoles),
+  Bells of Steel Blitz, Wahoo KICKR RUN, Horizon 7.8 AT, Sole TT8 (sold out on Sole's store on
+  the day; no price on the card), NordicTrack X24
+- `/brands/`: TrueForm, Freemotion and Cybex (Commercial brands; Cybex sells no new treadmills,
+  so the page is written around remanufactured machines); InMovement, Zofdim, XTERRA, Sunny
+  Health & Fitness, ANCHEER and Yesoul (Cross-shopped alternatives). Zofdim could not be traced
+  beyond its search volume, and the page says so and lists checked alternatives.
+- `/best/`: best mini treadmills (Folding & small spaces), best treadmills with screens
+  (Specialty & smart)
+- `/price/` Where to buy: Sam's Club (samsclub.com blocked automated reads, so its cards carry no
+  prices and the note says so) and buying a used Peloton Tread (the 2021 recalls and the $95
+  used-equipment activation fee)
+
+Same rules as earlier batches: figures checked against the maker or an official retailer plus an
+independent source on 5 November 2026, conflicts stated and kept off cards, CPSC searched per
+brand, no testing claims or ratings, affiliate disclosure in each note. Every page carries product
+cards: 74 Amazon buttons, all tagged `sktiger-20` with `rel="sponsored nofollow noopener"`, 19 of
+them `/dp/` links. Fifteen dealer-only or direct-sold products (TrueForm, Freemotion, Cybex, Bells
+of Steel Blitz, Wahoo KICKR RUN, InMovement, the retailer-only NordicTrack Commercial LE, used
+Peloton Treads) were added to `amazon-fallbacks.json`, so their buttons say "Shop Similar". That
+also moved the TrueForm cards on `/best-curved-treadmills/` and the KICKR RUN card on
+`/best-treadmills-for-zwift/` onto category searches. Interlink phrases "tx6", "horizon 7.8 at" and
+"treadmill with a screen" moved to the new pages; pages the autolinker could not reach got Related
+Guides cards on sibling pages, so every new page has at least three inbound links.
+
+Found while writing and not yet changed:
+- Prices: `/lifespan-treadmills/` TX6 $1,499 (LifeSpan: $1,399); `/best-treadmills-for-zwift/`
+  KICKR RUN "around $6,500–$7,000" (Wahoo: $6,999.99); Sole C80 $2,399.99 against $2,200–$2,400 on
+  `/best-curved-treadmills/`; Sole F80 $1,599.99 against $1,499.99 on `/sole-f80-treadmill/`;
+  Bowflex T16 $1,999, not $1,899.
+- Stale models: the XTERRA TRX3500 and TR150 were not on XTERRA's US site but are presented as
+  current on `/best-folding-treadmill-reviews/`, `/folding-treadmills/`, `/best-treadmills-for-home/`
+  and the Bowflex Max Trainer pages; the Sunny SF-T7515SMART showed sold out but is current on
+  `/best-budget-treadmills/`, `/best-folding-treadmill-reviews/`, `/best-treadmill-under-1000-reviews/`
+  and `/folding-treadmills/`; `/life-fitness/` treats the discontinued Platinum Club Series as
+  current and omits the new Atmos Home Edition; `/nordictrack-x22i-incline-trainer-treadmill/` does
+  not say the X22i is no longer listed.
+- Specs: `/best-walking-pads-for-heavy-people/` gives the TX6 0.7 in. and 98.5 lb with no conflict
+  note (LifeSpan's dealer: 88 lb, 3 HP); `/best-curved-treadmills/` still calls the TrueForm Runner's
+  figures conflicting (sources now agree on 54 x 17 in. and 350 lb); Sunny lists the SF-T1407SMART at
+  330 lb (site says 300); Sole's site shows the F85 at 3.5 HP and 350 lb; `/imovr-unsit-treadmill-desk/`
+  says only iMovR sells the Unsit (InMovement now sells it direct; both say 400 lb).
+- The WalkingPad Z1 has three ASINs in circulation (B0H2YYZTL8, B0H6WN93Z7, B0H6WZVWCT).
+
 ### Sole F80 and F85
 
 Both were shipped first as `dataPending` editorial drafts because their published figures conflict

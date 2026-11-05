@@ -110,7 +110,7 @@ export default {
           </table></div>
           <p>
             One figure is worth reading carefully. Some listings and aggregators give the Blitz's weight
-            as 355 lb; Bells of Steel's page shows that this is the boxed shipping weight, in a 73 by 33
+            as 355 lb; Bells of Steel's page shows that this is the boxed <a href="/how-much-does-a-treadmill-weigh/" class="text-[#0F62FE] font-medium" data-autolink>shipping weight</a>, in a 73 by 33
             by 23-inch crate, and gives 325 lb for the machine, which matches the review. Use 355 lb when
             you are planning delivery and 325 lb when you are thinking about your floor.
           </p>`,
@@ -156,7 +156,7 @@ export default {
             lists time, pace, distance, speed, calories, watts, resistance level and heart rate, with heart
             rate needing a compatible ANT+ chest strap; Bells of Steel's table lists "5kHz" connectivity,
             the older wireless standard used by some gym chest straps. Neither source describes Bluetooth
-            FTMS, so do not expect the Blitz to pair with Zwift or a treadmill app the way some newer
+            FTMS, so do not expect the Blitz to pair with <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium" data-autolink>Zwift</a> or a treadmill app the way some newer
             curved trainers do. If app tracking matters, a
             <a href="/best-foot-pods-for-treadmill/" class="text-[#0F62FE] font-medium">running foot pod</a>
             will give your watch or app pace and distance on any treadmill.
@@ -257,7 +257,7 @@ export default {
           <p>
             <strong>The SOLE C80</strong> is the closest like-for-like rival: a curved deck with magnetic
             resistance, eight levels rather than six, and a belt two inches wider, for $2,350 less. It gives
-            up 70 lb of user capacity and three inches of deck length, and it has the same one-year parts
+            up 70 lb of user capacity and three inches of <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium" data-autolink>deck length</a>, and it has the same one-year parts
             term. For most home buyers who want a resisted curved trainer, it is the better buy.
           </p>
           <p>

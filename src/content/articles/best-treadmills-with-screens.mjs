@@ -111,7 +111,7 @@ export default {
           <p>
             Recalls were part of the check. The Consumer Product Safety Commission's database lists two 2021
             Peloton recalls of the original Tread and Tread+, which preceded the current models; iFIT recalls
-            of NordicTrack rowing machines (2025) and NordicTrack and ProForm adjustable dumbbells; and
+            of NordicTrack <a href="/best-rowing-machines/" class="text-[#0F62FE] font-medium" data-autolink>rowing machines</a> (2025) and NordicTrack and ProForm adjustable dumbbells; and
             Bowflex dumbbell and home-gym recalls. None covers a treadmill on this page. We found no recalls
             for Echelon or for Sole treadmills.
           </p>`,
@@ -124,15 +124,15 @@ export default {
             on what you will look at.
           </p>
           <ul>
-            <li><strong>10 inches</strong> (NordicTrack T Series 10, Echelon Stride-6s, Sole F80 at 10.1) is
+            <li><strong>10 inches</strong> (<a href="/nordictrack-t-series-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>NordicTrack T Series</a> 10, Echelon Stride-6s, Sole F80 at 10.1) is
             about the size of a standard tablet. It is enough for a class video, a route map and your metrics
             at arm's length, and it keeps the price down. It is small for watching a film from the back of the
             belt.</li>
-            <li><strong>16 inches</strong> (Bowflex T16, NordicTrack Commercial 1750) is the sweet spot for
+            <li><strong>16 inches</strong> (<a href="/bowflex-t16-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Bowflex T16</a>, NordicTrack Commercial 1750) is the sweet spot for
             most buyers who mean to use the screen every session. Video is comfortable at running distance,
             and on-screen controls are big enough to hit while moving.</li>
-            <li><strong>22 to 24 inches</strong> (Peloton Tread Vision at 23.8, and NordicTrack's Commercial
-            2450 and X24 at 24) is a small television. It matters most if you stream films or follow
+            <li><strong>22 to 24 inches</strong> (Peloton Tread Vision at 23.8, and NordicTrack's <a href="/nordictrack-commercial-2450-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Commercial
+            2450</a> and X24 at 24) is a small television. It matters most if you stream films or follow
             off-treadmill strength classes, which is why the larger screens tend to swivel or pivot.</li>
           </ul>
           <p>
@@ -483,6 +483,12 @@ export default {
       title: 'Smart vs Regular Treadmill',
       blurb: 'Whether a connected treadmill is worth the extra cost for how you train.',
       url: '/smart-treadmill-vs-regular/',
+    },
+    {
+      kicker: "Brand Guide",
+      title: "Yesoul Treadmills",
+      blurb: "The T3S Plus screen treadmill and the 30%-incline T5 range.",
+      url: '/yesoul-treadmills/',
     },
   ],
   bottomLine: [

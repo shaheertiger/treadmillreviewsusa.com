@@ -179,14 +179,14 @@ export default {
       heading: 'Who Yesoul Is, and Where It Sells',
       html: `          <p>
             Yesoul is best known for its exercise bikes, the G1M Plus and G1M Max among them, which pair a
-            budget-to-mid-price frame with a large screen. Its US store also sells a rower, a recumbent bike,
+            budget-to-mid-price frame with a large screen. Its US store also sells a rower, a <a href="/best-recumbent-bikes/" class="text-[#0F62FE] font-medium" data-autolink>recumbent bike</a>,
             treadmills and walking pads, accessories and multi-machine bundles. Yesoul’s US website does not say
             where the company is based or who owns it, and its footer gives only "Yesoul Fitness". Support runs
             through a help centre, a ticket form and email.
           </p>
           <p>
             <strong>Where Yesoul treadmills are sold.</strong> Yesoul sells direct through its own US store,
-            which offers free standard shipping on eligible orders. The T3S Plus also appears at Best Buy and on
+            which offers free standard shipping on eligible orders. The T3S Plus also appears <a href="/best-buy-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>at Best Buy</a> and on
             Walmart’s marketplace. Amazon would not load for us on 5 November 2026, so we could not confirm which
             Yesoul treadmills it carries; the Amazon buttons on this page search for each model by name. Yesoul’s store also carries
             distributor listings marked "not for customer", including one for the T3S Plus at $1,199, which is the

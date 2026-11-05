@@ -505,6 +505,12 @@ export default {
       blurb: 'Bikes, rowers, ellipticals and air bikes compared for space, noise and price.',
       url: '/best-cardio-machines-for-home/',
     },
+    {
+      kicker: "Buying Used",
+      title: "Buying a Used Peloton Treadmill",
+      blurb: "The 2021 recalls, the activation fee, and fair used prices.",
+      url: '/used-peloton-tread/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">For most people, the best Peloton alternative is a Schwinn IC4 with Peloton App+</strong>,

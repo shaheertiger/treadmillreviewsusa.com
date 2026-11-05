@@ -515,6 +515,12 @@ export default {
       blurb: 'Machines that work fully without a paid platform.',
       url: '/best-treadmills-without-subscriptions/',
     },
+    {
+      kicker: "Model Review",
+      title: "Sole TT8 Treadmill",
+      blurb: "Sole's non-folding decline model: the two versions and the current warranty.",
+      url: '/sole-tt8-treadmill/',
+    },
   ],
   bottomLine: [
     `For most buyers the <strong class="text-white">F63</strong> is the Sole to buy: a full-length

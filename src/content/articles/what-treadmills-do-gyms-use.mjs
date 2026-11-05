@@ -454,6 +454,12 @@ ${row('Machine weight', '425–434 lb', 'Not confirmed')}
       blurb: 'The club brand\'s home and commercial lines, and who they suit.',
       url: '/life-fitness/',
     },
+    {
+      kicker: "Brand Guide",
+      title: "Freemotion Treadmills",
+      blurb: "iFIT's commercial brand: the t8.9b, Reflex models and incline trainers.",
+      url: '/freemotion-treadmills/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Most US gyms use commercial treadmills from Life Fitness, Precor,

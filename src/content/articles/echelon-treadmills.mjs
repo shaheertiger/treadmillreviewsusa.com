@@ -561,6 +561,12 @@ export default {
       blurb: 'A discontinued Johnson Health Tech line: the LS10.0T, buying used, parts and what replaced it.',
       url: '/livestrong-treadmill/',
     },
+    {
+      kicker: "Brand Guide",
+      title: "Yesoul Treadmills",
+      blurb: "The T3S Plus screen treadmill and the 30%-incline T5 range.",
+      url: '/yesoul-treadmills/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">An Echelon treadmill is the right buy for a small space and a

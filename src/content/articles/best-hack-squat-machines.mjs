@@ -138,7 +138,7 @@ export default {
             Every brand on this page was checked against the CPSC recall database by recall title,
             manufacturer and recall description on 19 October 2026. There is no recall in the
             database under "hack squat". Titan had a 2018 recall alert for weight-lifting safety
-            straps, a rack accessory, and the database's one leg press recall is Cybex's 2012 recall of
+            straps, a rack accessory, and the database's one leg press recall is <a href="/cybex-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Cybex</a>'s 2012 recall of
             its commercial model 16110 plate-loaded leg press. We found no recalls for Bells of
             Steel, Body-Solid, Force USA or Steelflex.
           </p>

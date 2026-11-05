@@ -532,6 +532,12 @@ ${row('Star Trac', 'Core Health &amp; Fitness', 'No home range', 'Check the mode
       blurb: 'Who TRUE is, the Z500 and Performance 1000, 3000 and 8000, the warranty fine print and how TRUE compares with Sole, Spirit and Landice.',
       url: '/true-fitness-treadmills/',
     },
+    {
+      kicker: "Brand Guide",
+      title: "Freemotion Treadmills",
+      blurb: "iFIT's commercial brand: the t8.9b, Reflex models and incline trainers.",
+      url: '/freemotion-treadmills/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">A Precor treadmill is a club machine, and in 2026 a home buyer

@@ -165,7 +165,7 @@ export default {
       heading: 'Our Picks at a Glance',
       html: `          <p>
             Five machines, each the smallest or lightest of its kind that we could check. The short
-            version: the WalkingPad Z1 for most people, the UREVO SpaceWalk E1L if you will lift it
+            version: the <a href="/walkingpad-z1-review/" class="text-[#0F62FE] font-medium" data-autolink>WalkingPad Z1</a> for most people, the UREVO SpaceWalk E1L if you will lift it
             every day, and the UREVO Strol 2E if you want a handle.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
@@ -256,7 +256,7 @@ export default {
           <ul>
             <li><strong>Small by a measurable standard.</strong> Under about 55 lb, and either a
             footprint under about 45 inches long or a fold that brings it under about 35 inches. That
-            ruled out most full folding treadmills and heavier 2-in-1 pads.</li>
+            ruled out most full <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>folding treadmills</a> and heavier 2-in-1 pads.</li>
             <li><strong>Sizes that hold up.</strong> The maker’s footprint, weight and belt figures had
             to match at least one independent source, or the conflict had to be small enough to state
             and plan around.</li>
@@ -269,7 +269,7 @@ export default {
           <p>
             We did not rank on motor horsepower, since every pad here quotes a peak figure and the
             independent continuous estimates are all well below it, and we did not rank on customer
-            star ratings, which we do not print. We have not tested any of these machines. Our
+            <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium" data-autolink>star ratings</a>, which we do not print. We have not tested any of these machines. Our
             <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">editorial standards</a>
             explain how we check products we have not tested.
           </p>`,
@@ -308,7 +308,7 @@ export default {
             site, no independent review and no readable listing carrying the name. It may be a
             marketplace label, a seller name or a misspelling of a similar brand; we could not tell. If
             you have an Aibi listing open, check who sells and ships it, its return window, a stated
-            warranty length, a model number and whether its weight limit and belt size agree across the
+            warranty length, a model number and whether its weight limit and <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium" data-autolink>belt size</a> agree across the
             listing. Our guide to <a href="/zofdim-treadmills/" class="text-[#0F62FE] font-medium">checking an unfamiliar marketplace brand</a>
             walks through those checks in detail.
           </p>`,

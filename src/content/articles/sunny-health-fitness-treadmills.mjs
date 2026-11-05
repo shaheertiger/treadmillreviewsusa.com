@@ -154,7 +154,7 @@ export default {
             Three things set Sunny apart from the anonymous marketplace brands it shares an Amazon results page
             with. It has been selling fitness equipment since 2002 and still runs its own US store with a support
             line, a warranty registration form and published return terms. Its machines turn up at many US
-            retailers, from Academy Sports and Target to Staples and Kohl’s, so you can compare prices and read
+            retailers, from <a href="/academy-sports-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Academy Sports</a> and Target to Staples and Kohl’s, so you can compare prices and read
             listings from more than one seller. And its range is wide: on 5 November 2026 its store listed
             around thirty treadmills, from a $199.99 manual walker to a $3,999.99 curved non-motorised trainer.
           </p>
@@ -303,7 +303,7 @@ export default {
             with a 2.2 horsepower motor, 0.5 to 9 mph, three manual incline levels, a running surface given as 49
             by 16 inches and a 220 lb limit, figures on which Treadmill Doctor, Garage Gym Reviews and Woot agree.
             Its product page on Sunny’s store returned "page not found" on 5 November 2026, and it appears in
-            Sunny’s parts catalogue only as a model that spare parts fit. Dick’s Sporting Goods showed it out of
+            Sunny’s parts catalogue only as a model that spare parts fit. <a href="/dicks-sporting-goods-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Dick’s Sporting Goods</a> showed it out of
             stock. Treat it as discontinued: buy it only used or as old stock at a price that reflects a 180-day
             parts warranty that may already be running from the original sale.
           </p>
@@ -545,6 +545,12 @@ export default {
       title: 'UREVO Treadmills',
       blurb: 'Another budget marketplace brand, read the same way.',
       url: '/urevo-treadmills/',
+    },
+    {
+      kicker: "Brand Guide",
+      title: "XTERRA Treadmills",
+      blurb: "Dyaco's budget brand: the TRX1200, TR75 and TR95H Hiker.",
+      url: '/xterra-treadmills/',
     },
   ],
   bottomLine: [

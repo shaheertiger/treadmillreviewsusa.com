@@ -80,7 +80,7 @@ export default {
             the name or, on the Trainer, a resistance setting. What you are paying for is a particular
             running feel, a heavy steel build and a long frame warranty. If those matter, a TrueForm is a
             defensible buy. If you mostly want a curved deck for intervals and sprints in a garage gym, the
-            AssaultRunner Pro and SOLE C80 do that job for much less, and our
+            <a href="/assaultrunner-pro-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>AssaultRunner Pro</a> and SOLE C80 do that job for much less, and our
             <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium">best curved treadmills</a>
             roundup compares all of them on one page.
           </p>`,
@@ -198,7 +198,7 @@ export default {
           <p>
             The Trainer was redesigned recently. TrueForm calls the current one "all new" and lists
             upgraded treads and rollers rated to 400 lb at top speed, a front Power Bar for sprint starts,
-            modular mounts for future attachments, and Bluetooth that connects to FTMS apps such as Zwift
+            modular mounts for future attachments, and Bluetooth that connects to FTMS apps such as <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium" data-autolink>Zwift</a>
             and Strava. Reviews from 2023 describe the earlier version, which explains why the machine
             weight differs between sources. If you buy a Trainer second-hand, ask which version it is.
           </p>`,

@@ -600,6 +600,12 @@ export default {
       blurb: 'What Redliro listings claim, where they disagree, and the return terms to read first.',
       url: '/redliro-under-desk-treadmill/',
     },
+    {
+      kicker: "Roundup",
+      title: "Best Mini Treadmills",
+      blurb: "Five walking pads ranked by checked footprint and weight.",
+      url: '/best-mini-treadmills/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">For most people the best walking pad is the WalkingPad A1 Pro</strong>:

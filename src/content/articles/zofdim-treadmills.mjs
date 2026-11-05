@@ -171,7 +171,7 @@ export default {
           </p>
           <ul>
             <li><strong>Web searches.</strong> Searches for Zofdim on its own and with “treadmill”,
-            “walking pad”, “under desk treadmill”, “2 in 1”, “brand store” and the names of the big
+            “walking pad”, “<a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>under desk treadmill</a>”, “2 in 1”, “brand store” and the names of the big
             marketplaces returned nothing carrying the name. The results were other brands’ walking
             pads, unrelated companies with similar names, and spam pages.</li>
             <li><strong>A maker’s website.</strong> The obvious address, zofdim.com, did not resolve
@@ -265,12 +265,12 @@ export default {
             <li><strong>Safety certification.</strong> Look for a stated electrical safety listing,
             such as UL or ETL, for the machine or its power supply. Many cheap pads do not mention one.
             Its absence is not proof of a problem, but its presence is reassuring.</li>
-            <li><strong>Consistency within the listing.</strong> Check that the weight limit, belt
-            size and speed are the same in the title, the bullet points, the images and the
+            <li><strong>Consistency within the listing.</strong> Check that the weight limit, <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium" data-autolink>belt
+            size</a> and speed are the same in the title, the bullet points, the images and the
             specification table. Contradictions inside one listing are common on marketplace brands,
             and they tell you the figures have not been checked.</li>
             <li><strong>Reviews that describe your use.</strong> Sort by most recent, read the
-            one-star and three-star reviews, and look for mentions of the belt slipping, the motor
+            one-star and three-star reviews, and look for mentions of the <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium" data-autolink>belt slipping</a>, the motor
             cutting out, the remote failing or the seller not responding. Ignore the average.</li>
           </ol>
           <p>
@@ -431,6 +431,12 @@ export default {
       title: 'Buying a Treadmill on Amazon',
       blurb: 'Sellers, returns and what changes when a marketplace stands behind the machine.',
       url: '/buying-a-treadmill-on-amazon/',
+    },
+    {
+      kicker: "Brand Guide",
+      title: "ANCHEER Treadmills",
+      blurb: "An Amazon-only walking-pad brand: conflicting listing figures, manuals and warranty via the seller.",
+      url: '/ancheer-treadmills/',
     },
   ],
   bottomLine: [

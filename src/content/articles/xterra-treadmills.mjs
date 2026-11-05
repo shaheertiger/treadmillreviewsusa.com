@@ -263,7 +263,7 @@ export default {
           <p>
             XTERRA publishes two sets of figures for the TR95H. Its treadmill collection page lists a 3.5 HP
             motor and a 20 by 60-inch running surface. Its TR95H product page, and the Dick's Sporting Goods
-            listing as it appeared in search results, give a 3.0 HP motor and a 20 by 52-inch surface. The difference in deck length is
+            listing as it appeared in search results, give a 3.0 HP motor and a 20 by 52-inch surface. The difference in <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium" data-autolink>deck length</a> is
             significant: 52 inches is fine for walking and climbing, short for running. Until XTERRA
             corrects one of its pages, assume the smaller figures, and ask XTERRA's customer service to
             confirm the deck in writing before ordering.
@@ -296,7 +296,7 @@ export default {
             programmes, no Bluetooth, 103.6 lb. XTERRA's warranty is lifetime on the frame, one year on the
             motor and 90 days on the deck, parts and labour.</li>
             <li><strong>TRX1200 ($549.99):</strong> the same deck with ten levels of electronic incline, built-in
-            Bluetooth FTMS for Zwift and Kinomap, and the same warranty. For $50 more than the TRX1000, the
+            Bluetooth FTMS for <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium" data-autolink>Zwift</a> and Kinomap, and the same warranty. For $50 more than the TRX1000, the
             powered incline makes it the better buy for most people.</li>
             <li><strong>TRX1400 ($599.99):</strong> an 18-inch-wide deck, ten incline levels, Bluetooth and
             handlebar speed and incline controls, according to XTERRA's collection page.</li>
@@ -319,7 +319,7 @@ export default {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The WalkSlim models</h3>
           <p>
-            The WS200 and WS300 are walking treadmills that XTERRA sells fully assembled; the WS300 adds ten
+            The WS200 and WS300 are <a href="/best-walking-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>walking treadmills</a> that XTERRA sells fully assembled; the WS300 adds ten
             incline levels. They compete with <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">walking pads</a>
             and are for walking only.
           </p>`,

@@ -576,6 +576,12 @@ export default {
       blurb: 'Same parent company and platform — where the two actually differ.',
       url: '/nordictrack-vs-proform/',
     },
+    {
+      kicker: "Model Review",
+      title: "NordicTrack X24 Treadmill",
+      blurb: "The -6% to 40% incline trainer, its speed caps and ceiling height.",
+      url: '/nordictrack-x24-treadmill/',
+    },
   ],
   bottomLine: [
     `For most buyers the <strong class="text-white">Commercial 1750</strong> is the NordicTrack

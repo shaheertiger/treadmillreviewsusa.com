@@ -514,6 +514,12 @@ export default {
       blurb: 'How sale events work and how to tell a real discount from a reference price.',
       url: '/treadmill-black-friday-deals/',
     },
+    {
+      kicker: "Model Review",
+      title: "Horizon 7.8 AT Treadmill",
+      blurb: "Horizon's 375 lb flagship: confirmed specs and whether it beats the 7.4 AT.",
+      url: '/horizon-7-8-at-treadmill/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">The Horizon Fitness 7.0 AT is the Horizon to buy for most people</strong>:

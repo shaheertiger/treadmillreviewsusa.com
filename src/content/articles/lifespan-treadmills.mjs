@@ -466,6 +466,12 @@ export default {
       blurb: 'Integrated and build-your-own walking desks you can buy now.',
       url: '/best-treadmill-desks/',
     },
+    {
+      kicker: "Model Review",
+      title: "LifeSpan TX6-GlowUp",
+      blurb: "The 20-inch, 400 lb desk treadmill and its spec conflicts.",
+      url: '/lifespan-tx6-under-desk-treadmill/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">LifeSpan’s under-desk treadmills remain among the best-specified

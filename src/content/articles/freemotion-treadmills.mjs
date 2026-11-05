@@ -166,7 +166,7 @@ export default {
             dealer listings we read, a 20-amp circuit.
           </p>
           <p>
-            What sets Freemotion apart from other club brands is iFIT. The touchscreen models run it, and
+            What sets Freemotion apart from other club brands is <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium" data-autolink>iFIT</a>. The touchscreen models run it, and
             the others can pair with a phone or tablet. That makes Freemotion the obvious choice for
             someone who already uses iFIT on a <a href="/nordictrack/" class="text-[#0F62FE] font-medium">NordicTrack</a>
             and wants a gym-grade machine. It also means most of what you pay over a NordicTrack goes on
@@ -202,7 +202,7 @@ export default {
             We searched the CPSC recall database for Freemotion and for iFIT on 5 November 2026. The only
             Freemotion recall is from October 2006 and covered strength machines whose weights could drop
             unexpectedly; none covers a Freemotion treadmill. iFIT's recent recalls are of NordicTrack
-            rowing machines (October 2025, fire hazard) and adjustable dumbbells sold under NordicTrack and
+            <a href="/best-rowing-machines/" class="text-[#0F62FE] font-medium" data-autolink>rowing machines</a> (October 2025, fire hazard) and adjustable dumbbells sold under NordicTrack and
             ProForm, not treadmills. Freemotion's home store links to a recalls page; check it with your
             serial number after delivery.
           </p>`,
@@ -272,7 +272,7 @@ export default {
           <p>
             The other Orangetheory feature is the 1-Step key layout: rows of direct speed and incline
             buttons, so you jump from a walk to a sprint pace with one press instead of holding an arrow.
-            All three Freemotion treadmills have it. For interval training it is genuinely useful, and it is
+            All three Freemotion treadmills have it. For <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium" data-autolink>interval training</a> it is genuinely useful, and it is
             one reason studio runners like these machines.
           </p>`,
     },
@@ -412,7 +412,7 @@ export default {
           <p>
             <strong>Look elsewhere if:</strong> you are one person who mostly walks or jogs; you cannot fit a
             20-amp circuit; you need a folding treadmill; or you want iFIT at the lowest cost, in which case a
-            NordicTrack or ProForm does the same classes. If you want no subscription at all, see our
+            <a href="/nordictrack-vs-proform/" class="text-[#0F62FE] font-medium" data-autolink>NordicTrack or ProForm</a> does the same classes. If you want no subscription at all, see our
             <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a>.
           </p>
           <p class="text-sm text-gray-500">

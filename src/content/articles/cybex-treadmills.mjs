@@ -237,7 +237,7 @@ export default {
             assembled length of 84 inches, a width of 35.6 inches, a height of 62.5 inches and a product weight
             of 410 lb. Retailer listings agree on the speed and user weight, add a 5 HP peak AC drive motor and
             a 1,000 lb-thrust incline motor, and give 82.5 by 36 by 59 inches and 500 lb. The difference may
-            reflect the console fitted or a shipping weight, but we cannot tell, so neither figure is on the
+            reflect the console fitted or a <a href="/how-much-does-a-treadmill-weigh/" class="text-[#0F62FE] font-medium" data-autolink>shipping weight</a>, but we cannot tell, so neither figure is on the
             card. We found no reliable running-surface figure; measure the belt on any unit you view.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The R Series: figures and conflicts</h3>
@@ -267,7 +267,7 @@ export default {
             had already been repaired, for a fire hazard.</li>
           </ul>
           <p>
-            Cybex's other recalls cover strength equipment (weight benches, an arm curl and a leg press), and
+            Cybex's other recalls cover strength equipment (weight benches, an arm curl and a <a href="/best-leg-press-machines/" class="text-[#0F62FE] font-medium" data-autolink>leg press</a>), and
             a 2010 recall of Cybex strollers was issued by the unrelated stroller company. If you are offered a
             Cybex from the 400 or 500 series, ask for proof that the recall repair was done, or walk away; there
             is little reason to buy a recalled 20-year-old treadmill when 770Ts are plentiful.
@@ -286,7 +286,7 @@ export default {
             tested. Build A Gym's R Series listing describes exactly that: fully disassembled, deep cleaned,
             repaired or re-parted to factory specification, tested under load, with belts, cables and bearings
             rebuilt or replaced. "Refurbished" and "serviced" can mean much less. Ask what was replaced — belt,
-            deck, motor brushes or bearings, rollers — and get it in writing. Our
+            deck, <a href="/treadmill-motor-brushes/" class="text-[#0F62FE] font-medium" data-autolink>motor brushes</a> or bearings, rollers — and get it in writing. Our
             <a href="/refurbished-treadmills/" class="text-[#0F62FE] font-medium">refurbished treadmills guide</a>
             explains the grades.
           </p>
@@ -347,7 +347,7 @@ export default {
             For about $3,000, a remanufactured 770T or R Series gets you a club AC drive and a 400 lb rating,
             with typically one year of a seller's warranty. On 5 November 2026 the new
             <a href="/life-fitness-run-cx-treadmill/" class="text-[#0F62FE] font-medium">Life Fitness Run CX</a>
-            was $3,919 in Life Fitness's Black Friday sale, with a lifetime frame, a 10-year motor term,
+            was $3,919 in Life Fitness's <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium" data-autolink>Black Friday</a> sale, with a lifetime frame, a 10-year motor term,
             7 years on parts, delivery and installation, and no 20-amp circuit. For most home users that is the
             better buy. The used Cybex wins only if you specifically want a club AC treadmill, will put
             gym-level hours on it, or can buy one well under $2,500.
@@ -448,6 +448,12 @@ export default {
       title: 'Star Trac Treadmills',
       blurb: 'Another commercial brand most home buyers meet used or refurbished.',
       url: '/star-trac-treadmills/',
+    },
+    {
+      kicker: "Brand Guide",
+      title: "Freemotion Treadmills",
+      blurb: "iFIT's commercial brand: the t8.9b, Reflex models and incline trainers.",
+      url: '/freemotion-treadmills/',
     },
   ],
   bottomLine: [

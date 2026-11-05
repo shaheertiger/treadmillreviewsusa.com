@@ -347,7 +347,7 @@ export default {
           </p>
           <p>
             Neither route lets Zwift change your speed. According to Zwift's support
-            documentation, automatic incline control works on one treadmill, the Wahoo KICKR RUN;
+            documentation, automatic incline control works on one treadmill, the <a href="/wahoo-kickr-run-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Wahoo KICKR RUN</a>;
             on everything else, including with a pod, you press the buttons yourself.
           </p>`,
     },
