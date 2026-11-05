@@ -1,0 +1,810 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "Landice L7 Treadmill Review (2026): L7 vs L8 and L7 RTM";
+const description =
+  "The Landice L7 treadmill checked against Landice’s store and independent sources on 5 November 2026: 20 x 58 in. deck, 400 lb, every console price, how it differs from the L8 (and the old L890 Cardio), the L7 RTM rehab version and its mounts.";
+
+const PRODUCTS = [
+  {
+    id: "landice-l7",
+    name: "Landice L7",
+    brand: "Landice",
+    category: "Non-Folding Home and Light-Commercial Treadmill",
+    badge: "The Model Reviewed",
+    amazonUrl: "https://www.amazon.com/s?k=Landice+L7+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    image: null,
+    reviewUrl: null,
+    priceRange: "$5,429-$7,804 at Landice (5 Nov 2026)",
+    priceBounds: {"low":5429,"high":7804},
+    specs: "20 x 58 in. running area · 0.5-12 mph · 0-15% incline · 400 lb max user · 4 HP continuous-duty (lab rating)",
+    pros: [
+      "Rated for 400 lb on an aluminium frame that does not rust",
+      "Lifetime parts warranty on the residential version, per Landice",
+      "Three consoles and an orthopedic belt option, so you pay only for what you use",
+      "A 1,000 lb-thrust incline motor and a reversible 1-inch deck",
+    ],
+    cons: [
+      "From $5,429, several times the price of a good folding home treadmill",
+      "A 58-inch deck, shorter than the 60 inches usually advised for tall runners",
+      "Does not fold, and ships at 345 lb",
+      "One year of labour, and warranty terms differ between Landice and a dealer listing",
+    ],
+    bottomLine: "Worth it if you want a treadmill that lasts decades, are heavy or share it, or need clinical features; most home runners get more machine per dollar elsewhere.",
+    description: "The L7 has a 20 by 58-inch running area on a 1-inch reversible deck, a 4 HP continuous-duty drive motor that Landice footnotes as a laboratory rating limited in practice by household electrical supply, a speed range of 0.5 to 12 mph and electric incline to 15% from a 1,000 lb-thrust motor. Maximum user weight is 400 lb, the footprint is 35 by 76 inches and the shipping weight 345 lb. It runs on a standard 110 V, 15 A supply. Buyers choose the Pro Sports, Achieve or Elite console and a standard or orthopedic belt, and can add a tablet or TV mount. On 5 November 2026 Landice listed it from $5,429 (Pro Sports, standard belt) to $7,804 (Elite, orthopedic belt, TV mount), with a promotion of free delivery, installation and orthopedic belt ending that day.",
+  },
+  {
+    id: "landice-l8",
+    name: "Landice L8",
+    brand: "Landice",
+    category: "Long-Deck Version for Tall and Heavy Runners",
+    badge: "Bigger Deck",
+    amazonUrl: "https://www.amazon.com/s?k=Landice+L8+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    image: null,
+    reviewUrl: null,
+    priceRange: "$6,329-$8,904 at Landice (5 Nov 2026)",
+    priceBounds: {"low":6329,"high":8904},
+    specs: "22 x 63 in. running area · 0.5-12 mph · 0-15% incline · 500 lb max user · 4 HP continuous-duty (lab rating)",
+    pros: [
+      "A 22 by 63-inch running area, among the largest on a home treadmill",
+      "Rated for 500 lb",
+      "Same consoles, motor rating and residential warranty as the L7",
+    ],
+    cons: [
+      "$900 more than the L7 with the same console and belt",
+      "Seven inches longer, at 35 by 83 inches",
+      "A higher step-up than the L7, per one reviewer",
+    ],
+    bottomLine: "Pay the extra if you are tall, heavy or a long-striding runner; otherwise the L7 does the same job for less.",
+    description: "The L8 is the L7 with a bigger deck. Landice lists a 22 by 63-inch running area, a 500 lb maximum user weight, the same 4 HP continuous-duty laboratory motor rating, 0.5 to 12 mph and 15% incline, a 35 by 83-inch footprint and a 435 lb shipping weight. Treadmill Review Guru gives 3.5-inch rollers against the L7’s 2.5-inch. The same three consoles and belt options apply; on 5 November 2026 Landice listed it from $6,329 to $8,904.",
+  },
+  {
+    id: "landice-l7-rtm",
+    name: "Landice L7 Rehabilitation Treadmill",
+    brand: "Landice",
+    category: "Clinical Version with Medical Handrails",
+    badge: "Rehab Version",
+    amazonUrl: "https://www.amazon.com/s?k=Landice+L7+Rehabilitation+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    image: null,
+    reviewUrl: null,
+    priceRange: "$5,429-$6,829 at Landice (5 Nov 2026)",
+    priceBounds: {"low":5429,"high":6829},
+    specs: "20 x 58 in. walking area · 15% incline · 400 lb max user · extended medical handrails · reverse option",
+    pros: [
+      "Extended medical handrails and a low starting speed for rehabilitation",
+      "Optional reverse belt direction with a remote stop/start",
+      "Electrical isolation (300 micro-amp leakage kit) for clinical settings",
+    ],
+    cons: [
+      "Landice’s own page gives two different starting speeds",
+      "A simpler control centre with no programmed workouts listed",
+      "Five years of parts rather than lifetime",
+    ],
+    bottomLine: "For clinics, and for home users recovering from injury who need full-length handrails and a very slow start; others should buy the residential L7.",
+    description: "The L7 RTM is the L7 built for physical therapy. Landice lists the same 20 by 58-inch surface, 4 HP laboratory-rated motor, 15% incline and 400 lb rating, plus extended medical handrails, a \"zero starting speed\" and a 300 micro-amp isolation leakage kit, with an optional reverse-direction belt and remote stop/start and an optional 19-inch HDTV monitor and mount. Its warranty is five years on parts, three on the console, two on wear items and one on labour. On 5 November 2026 Landice listed it from $5,429 (standard) to $6,829 (reverse with HDTV).",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Reviews", item: "https://www.treadmillreviewsusa.com/reviews/" },
+        { "@type": "ListItem", position: 3, name: "Landice L7 Treadmill", item: "https://www.treadmillreviewsusa.com/landice-l7-treadmill/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "How much does a Landice L7 treadmill cost?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "On 5 November 2026 Landice listed the residential L7 from $5,429 with the Pro Sports console and standard belt to $7,804 with the Elite touchscreen, orthopedic belt and TV mount. The Achieve console version was $5,929. Dealer prices and promotions can differ.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the difference between the Landice L7 and L8?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The L8 has a 22 by 63-inch running area instead of 20 by 58, a 500 lb rating instead of 400, and a 35 by 83-inch footprint instead of 35 by 76. Motor rating, speed, incline and consoles are the same. On 5 November 2026 it cost $900 to $1,000 more than an L7 with the same console.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the Landice L7 RTM?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The rehabilitation version of the L7. It adds extended medical handrails, a very low starting speed, an optional reversing belt with remote stop/start and an electrical isolation kit. On 5 November 2026 Landice listed it from $5,429 to $6,829, with five years of parts cover.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the Landice L890CT?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "We could not find the code on any current listing. Landice’s codes combine the model and console (L890PST, L890AT), so L890CT most likely means an L8 with the older Cardio Trainer console, which Landice no longer offers. Any L890CT for sale now is used, remanufactured or old stock.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What mounts are available for the Landice L7?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Landice sells a tablet mount for 7- to 12-inch tablets ($75) and a TV or monitor mount ($250), as options on the L7 or as separate accessories, and an $800 Landice Vision System. The RTM can be ordered with a 19-inch HDTV and mount.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can you buy a Landice L7 on Amazon?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "We could not find it sold new on Amazon. Landice sells through its own online store and specialty fitness dealers, and accepts HSA and FSA payment.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
+      datePublished: "2026-11-05",
+      dateModified: "2026-11-05",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+    ...PRODUCTS.map((product) => ({
+      "@type": "Product",
+      name: product.name,
+      description: product.description,
+      brand: { "@type": "Brand", name: product.brand },
+      ...(product.image ? { image: product.image.url } : {}),
+      ...(product.priceBounds
+        ? {
+            offers: {
+              "@type": "AggregateOffer",
+              priceCurrency: "USD",
+              lowPrice: product.priceBounds.low,
+              highPrice: product.priceBounds.high,
+              url: product.amazonUrl,
+            },
+          }
+        : {}),
+    })),
+    {
+      "@type": "ItemList",
+      name: title,
+      numberOfItems: 3,
+      itemListElement: PRODUCTS.map((product, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: product.name,
+        url: `https://www.treadmillreviewsusa.com/landice-l7-treadmill/#${product.id}`,
+      })),
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-11-05",
+    modifiedTime: "2026-11-05",
+    author: "Shaheer Ali Khan",
+    section: "Fitness Equipment",
+    tags: [
+      "landice l7 treadmill",
+      "landice l8 treadmill",
+      "landice l7 rtm rehabilitation treadmill",
+      "landice l8 cardio treadmill l890ct",
+      "l7 treadmill landice mount",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "See the Verdict", link: "#who-should-buy" }}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-landicel7treadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-landicel7treadmill)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Model Review
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated November 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          Landice L7 <span class="text-[#5AA9FF]">Treadmill Review</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          The L7 is Landice’s core non-folding treadmill, the machine you find in physical therapy clinics and long-lived home gyms. This review sets out its confirmed figures and every console price, how it differs from the bigger L8, what the L7 rehabilitation version adds, and how to buy one from a company that sells direct and through dealers.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#l7-vs-l8" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            L7 vs L8
+          </a>
+          <a href="#l7-rtm" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            The L7 RTM
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
+          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">November 5, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="0.9k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
+          5 November 2026 we read Landice’s US online store: the residential L7 and L8 pages, the L7 and L8
+          Rehabilitation (RTM) pages, the L7 Club listing and the store’s live product data, which lists the
+          price and stock code of every console, belt and accessory combination. We cross-checked the L7
+          figures against a specialist retailer’s L7 listing and the L8 figures against Treadmill Review
+          Guru’s L8 Cardio review (dated January 2023) and Garage Gym Reviews’ L8 coverage. Landice and those
+          sources agree on the L7’s 20 x 58 in. running area, 0.5-12 mph, 15% incline, 400 lb rating,
+          35 x 76 in. footprint, 345 lb shipping weight and 4 HP continuous-duty motor, which Landice
+          footnotes as a laboratory rating; and on the L8’s 22 x 63 in. area, 500 lb rating, 35 x 83 in.
+          footprint and 435 lb shipping weight. Warranty terms differ between Landice and the retailer, and
+          the RTM’s starting speed differs within Landice’s own page; both are set out below. We could not
+          find "L890CT" on any current listing. We searched the US Consumer Product Safety Commission’s
+          recall database for Landice and found no recall. We have not tested any Landice treadmill. Prices
+          are those on landice.com on 5 November 2026; dealer prices can differ. Landice is sold direct and
+          through dealers, not on Amazon; the Amazon buttons on this page run a search, and we earn a
+          commission on qualifying Amazon purchases.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="max-w-3xl mx-auto px-4 pt-8">
+      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
+        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
+        <ul class="list-none m-0 p-0">
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">The Model Reviewed:</span>
+            <a href="#landice-l7" class="font-bold text-gray-900 no-underline hover:underline">Landice L7</a>
+            <a href="#landice-l7" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Bigger Deck:</span>
+            <a href="#landice-l8" class="font-bold text-gray-900 no-underline hover:underline">Landice L8</a>
+            <a href="#landice-l8" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Rehab Version:</span>
+            <a href="#landice-l7-rtm" class="font-bold text-gray-900 no-underline hover:underline">Landice L7 Rehabilitation Treadmill</a>
+            <a href="#landice-l7-rtm" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Landice L7 Treadmill: The Short Answer</a>
+          <a href="#specifications" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Landice L7 Specifications, Checked</a>
+          <a href="#consoles-prices" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. L7 Consoles, Belts, Mounts and Every Price</a>
+          <a href="#l7-vs-l8" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Landice L7 vs L8 (and the L890 Cardio)</a>
+          <a href="#l7-rtm" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. The Landice L7 RTM Rehabilitation Treadmill</a>
+          <a href="#buying" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. How to Buy a Landice L7</a>
+          <a href="#alternatives" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Alternatives to the Landice L7</a>
+          <a href="#who-should-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Who Should Buy the Landice L7</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          The Landice L7 treadmill is a heavy, non-folding machine built on an aluminium frame in New
+          Jersey, rated for 400 lb and covered by a lifetime parts warranty for home use. It costs from
+          $5,429 to $7,804 depending on the console, belt and mount you choose, which puts it alongside
+          light-commercial machines rather than home treadmills. People who search for it have usually met
+          one in a clinic or a gym and want to know whether it is worth that money at home, how it differs
+          from the larger L8, and what the L7 RTM rehabilitation version is. This page answers all three
+          from Landice’s own listings, checked on 5 November 2026, and independent sources.
+        </p>
+
+        <div id="short-answer" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Landice L7 Treadmill: The Short Answer</h2>
+<p>
+            <strong>The Landice L7 is built to outlast the people who buy it, and it is priced
+            accordingly: $5,429 to $7,804 on Landice’s store on 5 November 2026.</strong> Its case is a
+            400 lb rating on an aluminium frame, a lifetime parts warranty for home use, and the record of
+            a company whose machines are a fixture in clinics and university gyms.
+          </p>
+          <p>
+            Its limits are as clear. The 58-inch deck is short for tall runners, the machine does not fold,
+            labour is covered for one year, and nothing about the consoles justifies the price on its own.
+            The L8 fixes the deck size for about $900 more. The L7 RTM is a clinical version with medical
+            handrails and a very slow start.
+          </p>
+          <p>
+            Buy an L7 if you value durability above features, are heavy or share the machine, or want a
+            rehabilitation treadmill at home. If you mostly want a good running treadmill, our
+            <a href="/landice-treadmills/" class="text-[#0F62FE] font-medium">Landice brand guide</a>
+            and the alternatives below explain where your money goes further. We have not tested the L7.
+          </p>
+        </div>
+      </div>
+
+      <!-- Product cards -->
+      <div class="not-prose">
+        {
+          PRODUCTS.map((product, index) => (
+            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
+              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
+                  <div>
+                    <h3 class="text-white font-black text-xl leading-tight m-0">
+                      {index + 1}. {product.name}
+                    </h3>
+                    <p class="text-gray-400 text-xs">{product.category}</p>
+                  </div>
+                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                    {product.badge}
+                  </span>
+                </div>
+                <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                    </a>
+                  )}
+                  <div class="flex items-center gap-2 mb-4 flex-wrap">
+                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
+                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
+                  </div>
+                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
+                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
+                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
+                      <ul class="space-y-2">
+                        {product.pros.map((pro) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
+                      <ul class="space-y-2">
+                        {product.cons.map((con) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="border-t border-gray-100 pt-4">
+                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
+                    <div class="flex flex-wrap items-center gap-3">
+                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+                        {product.amazonLabel} &rarr;
+                      </a>
+                      {product.reviewUrl && (
+                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
+                          Read our full {product.name} review &rarr;
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="specifications" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Landice L7 Specifications, Checked</h2>
+<p>
+            The first part of the table lists figures on which Landice and at least one independent source
+            agree. The second lists what only Landice gives, or what conflicts.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Specification</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Figure</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Status</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Running area</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20 x 58 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Landice and a specialist retailer</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Speed</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.5-12 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Landice and the retailer</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Incline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0-15%, 1,000 lb-thrust elevation motor</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Landice and the retailer</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Maximum user weight</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">400 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Landice and the retailer</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Drive motor</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4 HP continuous duty (Landice footnotes it as a laboratory rating)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Landice and the retailer</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Deck</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1 in., reversible</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Landice and the retailer</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rollers</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.5 in. diameter, 14 lb steel</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Retailer and Landice’s RTM page</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Footprint</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">35 x 76 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Landice and the retailer</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Shipping weight</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">345 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Landice and the retailer</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Price seen</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$5,429-$7,804 by configuration</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">landice.com, 5 November 2026</td></tr>
+              <tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4 pt-6">Landice only, or conflicting</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4 pt-6">Figure</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4 pt-6">Status</th></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Warranty</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Landice: lifetime parts, 1 yr labour, console varies; retailer: 5 yr parts, 3 yr console, 2 yr wear items, 1 yr labour in one section and lifetime parts in another</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Conflict</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Electrical</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">110 VAC, 50/60 Hz, 15 A</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Landice only</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Frame</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rust-free aluminium, cast aluminium side rails</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Landice only</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Step-up height</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not published</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not available</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Read the motor figure with Landice’s own footnote. It calls the 4 HP a laboratory rating that shows
+            how robust the motor is, and says household electrical supply limits the horsepower actually
+            delivered. That honesty is unusual, and it means the 4 HP is not comparable with a home brand’s
+            peak figure; our <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
+            explains the difference.
+          </p>
+          <p>
+            The warranty conflict probably reflects different versions: Landice’s residential page gives
+            lifetime parts, while the retailer’s five-year figures match the terms Landice publishes for the
+            rehabilitation version. When we checked Landice’s warranty page for our brand guide in October
+            2026, it also said residential labour cover depends on dealer installation. Get the terms for the
+            exact version you are buying in writing.
+          </p>
+        </div>
+
+        <div id="consoles-prices" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. L7 Consoles, Belts, Mounts and Every Price</h2>
+<p>
+            Landice sells the L7 as a base machine plus three choices: console, belt and accessory. The
+            residential L7’s stock codes follow a pattern — L790PST for the Pro Sports console, L790AT for
+            Achieve. These were the prices on landice.com on 5 November 2026.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">L7 configuration</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Standard belt</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Orthopedic belt</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Pro Sports console</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$5,429</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$5,754</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Achieve console</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$5,929</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$6,254</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Elite console (15.6 in. touchscreen)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$7,229</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$7,554</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Add a tablet mount (7-12 in.)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">+$75</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">+$75</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Add a TV or monitor mount</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">+$250</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">+$250</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            <strong>Consoles.</strong> The specialist retailer describes the Pro Sports as a 9-inch LCD and the
+            Achieve as a 9-inch colour LCD. Landice gives detail only for the Elite: a 15.6-inch colour
+            touchscreen with 42 programs including virtual runs, HIIT and heart-rate control, user profiles,
+            Strava and MapMyFitness syncing and entertainment apps, some of which need separate subscriptions.
+            Every L7 has Landice’s control centre with speed and incline buttons, an emergency stop, a contact
+            heart-rate bar, a safety lanyard, two bottle holders and a USB trickle-charge port.
+          </p>
+          <p>
+            <strong>Orthopedic belt.</strong> A cushioned treadbelt that Landice says reduces impact on joints,
+            for $325 on the L7. Landice’s promotion from 25 September to 5 November 2026 included it free, along
+            with free shipping, delivery and installation; check whether a similar offer is running when you
+            buy. Our <a href="/treadmill-cushioning-explained/" class="text-[#0F62FE] font-medium">cushioning guide</a>
+            explains what deck and belt cushioning can do.
+          </p>
+          <p>
+            <strong>The mount.</strong> Searches for "L7 treadmill Landice mount" are about the two accessories:
+            a tablet mount for 7- to 12-inch tablets ($75) and a TV or monitor mount ($250), both sold as
+            options on the L7 and as separate accessories. Landice also sells a $800 Landice Vision System. If
+            you only want a tablet holder, our
+            <a href="/best-treadmill-tablet-holders/" class="text-[#0F62FE] font-medium">tablet holder guide</a>
+            covers cheaper options, though Landice’s fits its own console.
+          </p>
+        </div>
+
+        <div id="l7-vs-l8" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Landice L7 vs L8 (and the L890 Cardio)</h2>
+<p>
+            The L8 is the same machine with a bigger deck. Figures and prices from landice.com on 5 November
+            2026.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Published figure</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Landice L7</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Landice L8</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Running area</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20 x 58 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22 x 63 in.</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Maximum user weight</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">400 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">500 lb</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Footprint</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">35 x 76 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">35 x 83 in.</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Shipping weight</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">345 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">435 lb</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Motor / speed / incline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4 HP lab rating / 0.5-12 mph / 15%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4 HP lab rating / 0.5-12 mph / 15%</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rollers</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.5 in. (retailer)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.5 in. (one review)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Pro Sports, standard belt</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$5,429</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$6,329</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Achieve, standard belt</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$5,929</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$6,929</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Elite, standard belt</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$7,229</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$8,129</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            The difference is $900 with the Pro Sports console and $1,000 with the Achieve, for two inches of
+            width, five of length and 100 lb more capacity. Garage Gym Reviews notes that the L8’s step-up is
+            about two inches higher than the L7’s, which matters if you need a low deck. Choose the L8 if you
+            are over about six feet and run, if you weigh close to 400 lb, or if several people of different
+            sizes will share it; our <a href="/best-treadmills-for-tall-runners/" class="text-[#0F62FE] font-medium">treadmills for tall runners</a>
+            guide explains why deck length matters at speed. Otherwise, the L7 does the same work for less.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The "L8 Cardio Treadmill L890CT"</h3>
+          <p>
+            Landice used to sell its treadmills with Cardio, Executive and Pro Sports consoles. Treadmill Review
+            Guru’s January 2023 L8 review describes the Cardio Trainer console: a 9-inch display with a numeric
+            keypad and express speed and incline keys, nine built-in and five user programs, two HIIT programs,
+            three fitness tests (Balke, Firefighter and Army), heart-rate programs and Bluetooth. Landice’s
+            current store offers Pro Sports, Achieve and Elite instead, and we found no current listing using the
+            code "L890CT". Given Landice’s code pattern (L890PST, L890AT), it is a reasonable reading of an
+            L8 with a Cardio console, but we could not confirm it.
+          </p>
+          <p>
+            In practice, an L890CT today is a used, remanufactured or dealer old-stock machine. The frame and
+            drive are the same family as a new L8, so condition, the console’s state and whether any warranty
+            transfers are what to check. Our <a href="/refurbished-treadmills/" class="text-[#0F62FE] font-medium">refurbished treadmill guide</a>
+            covers what "remanufactured" should mean.
+          </p>
+        </div>
+
+        <div id="l7-rtm" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. The Landice L7 RTM Rehabilitation Treadmill</h2>
+<p>
+            The L7 RTM (stock code L7-80 RTM) is the L7 adapted for physical therapy. Landice lists the same
+            20 by 58-inch surface, motor rating, 15% incline and 400 lb capacity, and adds:
+          </p>
+          <ul>
+            <li><strong>Extended medical handrails</strong> running the length of the deck, for patients who need support on both sides.</li>
+            <li><strong>A very low starting speed.</strong> Landice’s text says "zero starting speed" and its spec list says 0.1 to 12 mph, while an icon on the same page says 0.5 mph. We cannot tell which is current; ask Landice or a dealer if a start below 0.5 mph matters for your patients.</li>
+            <li><strong>A reverse option.</strong> Belt direction can be standard, or reversible with a remote stop/start, used in gait retraining.</li>
+            <li><strong>Electrical isolation.</strong> A 300 micro-amp isolation leakage kit, a clinical safety requirement.</li>
+            <li><strong>The Landice control centre</strong> rather than a programmed console, with an optional 19-inch HDTV monitor and mount.</li>
+          </ul>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">L7 RTM configuration</th><th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Price at Landice, 5 Nov 2026</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Standard belt direction</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$5,429</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Standard, with 19 in. HDTV and mount</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$6,299</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Reverse with remote stop/start</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$6,029</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Reverse, with 19 in. HDTV and mount</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$6,829</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Its warranty is different from the residential L7’s: five years on parts, three on the console,
+            two on wear items and one on labour. The L8 RTM ($6,629 to $7,999) adds the larger deck and 500 lb
+            rating, and Landice says it is intended for less than five hours a day in a facility that does not
+            charge membership fees.
+          </p>
+          <p>
+            For home use after an injury, the RTM makes sense if you need full-length handrails or a start below
+            normal walking pace; otherwise the residential L7 and a physiotherapist’s guidance on speed and
+            incline do the same job with a longer parts warranty. Our guides on
+            <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">treadmills for seniors</a> and
+            <a href="/best-treadmills-for-bad-knees/" class="text-[#0F62FE] font-medium">treadmills for bad knees</a>
+            cover cheaper machines with low start speeds and handrails.
+          </p>
+        </div>
+
+        <div id="buying" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. How to Buy a Landice L7</h2>
+<p>
+            Landice sells direct through its online store and through a network of specialty fitness dealers;
+            its store has a dealer finder and a sales line, (973) 927-9010, and accepts HSA and FSA payment.
+            We could not find the L7 sold new on Amazon, so the Amazon buttons on this page are searches that
+            may only turn up similar machines.
+          </p>
+          <ol>
+            <li><strong>Price the configuration, not the base.</strong> The console and belt move the price by up to $2,125 on an L7.</li>
+            <li><strong>Ask a dealer and Landice for the same configuration.</strong> Dealers may include delivery, installation, a mat or a promotion, and installation can affect labour cover.</li>
+            <li><strong>Plan the delivery.</strong> At 345 lb shipping weight and 76 inches long, the L7 needs a clear route and two or more people; it does not fold. Our <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">guide to moving a treadmill</a> covers stairs and doorways.</li>
+            <li><strong>Check power.</strong> Landice specifies a 110 VAC, 15 A supply; a dedicated circuit is safest.</li>
+            <li><strong>Consider used or remanufactured.</strong> Landice machines last, so a remanufactured L7 or L8 from a reputable dealer can save thousands. One retailer listed a remanufactured L8 at $3,499 in search results we saw; check what is replaced and what warranty comes with it.</li>
+          </ol>
+          <p>
+            If you are buying for a clinic, studio or club, the L7 Club ($5,429 to $7,479 on 5 November 2026)
+            and L10 are the commercial versions, with commercial warranty terms. Our
+            <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial treadmill guide</a>
+            covers that market.
+          </p>
+        </div>
+
+        <div id="alternatives" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Alternatives to the Landice L7</h2>
+<p>
+            Few home buyers need what the L7 costs. The questions are whether you need its 400 lb rating and
+            build, and whether you can get them for less.
+          </p>
+          <ul>
+            <li><strong>Other light-commercial, non-folding machines.</strong> <a href="/woodway-treadmills/" class="text-[#0F62FE] font-medium">Woodway</a>, <a href="/precor-treadmills/" class="text-[#0F62FE] font-medium">Precor</a> and <a href="/life-fitness/" class="text-[#0F62FE] font-medium">Life Fitness</a> sell at similar or higher prices, with different warranty structures.</li>
+            <li><strong>Heavy-duty home treadmills.</strong> Our <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">treadmills for heavy people</a> guide ranks machines rated to 400 lb at a fraction of the price, mostly with shorter warranties.</li>
+            <li><strong>Running treadmills under $2,000.</strong> For a single runner of average build, a well-built folding machine such as the <a href="/sole-f80-treadmill/" class="text-[#0F62FE] font-medium">Sole F80</a> covers the same speeds and incline with a 60-inch deck.</li>
+          </ul>
+          <p>
+            Landice’s own folding M2 Genesis ($3,999 in our October check) is the cheaper way into the brand,
+            covered in our <a href="/landice-treadmills/" class="text-[#0F62FE] font-medium">Landice guide</a>.
+          </p>
+        </div>
+
+        <div id="who-should-buy" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Who Should Buy the Landice L7</h2>
+<p>
+            <strong>Buy the L7 if durability is the priority.</strong> A 400 lb rating, an aluminium frame and
+            lifetime parts cover for home use are the reasons to pay from $5,429.
+          </p>
+          <p>
+            <strong>Buy the L8 instead</strong> if you are tall, run with a long stride, weigh close to 400 lb or
+            share the machine with someone much larger.
+          </p>
+          <p>
+            <strong>Buy the L7 RTM</strong> if you or a patient need full-length handrails, a very slow start or
+            a reversing belt.
+          </p>
+          <p>
+            <strong>Look elsewhere</strong> if you need a folding machine, a 60-inch deck at L7 money, or the
+            most features per dollar; and in every case price the exact configuration from Landice and a dealer
+            before you decide.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How much does a Landice L7 treadmill cost?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                On 5 November 2026 Landice listed the residential L7 from $5,429 with the Pro Sports console and standard belt to $7,804 with the Elite touchscreen, orthopedic belt and TV mount. The Achieve console version was $5,929. Dealer prices and promotions can differ.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What is the difference between the Landice L7 and L8?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                The L8 has a 22 by 63-inch running area instead of 20 by 58, a 500 lb rating instead of 400, and a 35 by 83-inch footprint instead of 35 by 76. Motor rating, speed, incline and consoles are the same. On 5 November 2026 it cost $900 to $1,000 more than an L7 with the same console.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What is the Landice L7 RTM?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                The rehabilitation version of the L7. It adds extended medical handrails, a very low starting speed, an optional reversing belt with remote stop/start and an electrical isolation kit. On 5 November 2026 Landice listed it from $5,429 to $6,829, with five years of parts cover.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What is the Landice L890CT?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                We could not find the code on any current listing. Landice’s codes combine the model and console (L890PST, L890AT), so L890CT most likely means an L8 with the older Cardio Trainer console, which Landice no longer offers. Any L890CT for sale now is used, remanufactured or old stock.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What mounts are available for the Landice L7?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Landice sells a tablet mount for 7- to 12-inch tablets ($75) and a TV or monitor mount ($250), as options on the L7 or as separate accessories, and an $800 Landice Vision System. The RTM can be ordered with a 19-inch HDTV and mount.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Can you buy a Landice L7 on Amazon?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                We could not find it sold new on Amazon. Landice sells through its own online store and specialty fitness dealers, and accepts HSA and FSA payment.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Landice L7</h2>
+          <p class="text-gray-700 leading-relaxed">The L7 is expensive enough that small errors cost real money. These are the ones to avoid.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Comparing base prices instead of configurations</h3>
+              <p class="text-gray-700 text-sm m-0">The L7 runs from $5,429 to $7,804 depending on console, belt and mount. Compare the same configuration across Landice and dealers, and against rivals.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying the L7 when you need the L8 deck</h3>
+              <p class="text-gray-700 text-sm m-0">A 58-inch deck is short for tall runners. If you are over about six feet and run, the L8’s 63-inch deck is the reason to pay $900 more.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming every Landice warranty is lifetime</h3>
+              <p class="text-gray-700 text-sm m-0">The residential L7 lists lifetime parts, but the RTM lists five years and a dealer listing shows five years. Get the terms for your exact version and installation in writing.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Not measuring the delivery route</h3>
+              <p class="text-gray-700 text-sm m-0">The L7 does not fold, is 76 inches long and ships at 345 lb. Measure doors, stairs and turns before ordering, and confirm who installs it.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Reviews &amp; Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/landice-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Landice Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The whole Landice range, its warranty and how it sells, from the M2 Genesis to the L10.</p>
+            </a>
+            <a href="/commercial-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Commercial</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Commercial Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">What club and clinic machines offer a home buyer, and what they cost.</p>
+            </a>
+            <a href="/best-treadmills-for-heavy-people/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Heavier Users</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills for Heavy People</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Machines rated to 400 lb and beyond, at every price.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">The Landice L7 is a treadmill for buyers who want one machine for decades</strong>:
+            a 400 lb rating, an aluminium frame and lifetime parts cover for home use, from $5,429 to $7,804 on
+            5 November 2026. Its 58-inch deck is short for tall runners and it does not fold.
+          </p>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            Choose the L8 for a 63-inch deck and 500 lb rating, the L7 RTM for clinical handrails and a very slow
+            start, and price your exact configuration from Landice and a dealer. Our
+            <a href="/landice-treadmills/" class="text-[#5AA9FF] font-bold no-underline">Landice guide</a>
+            covers the rest of the range.
+          </p>
+        </div>
+
+        <!-- Meet the Author -->
+        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
+          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
+          <div>
+            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
+            <p class="text-sm font-bold text-gray-900 m-0">
+              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
+              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+            </p>
+            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
+              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
+              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
+              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
+              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
+              running ergonomics, noise and long-term durability. Every guide says what was checked and
+              when, and says plainly when a product has not been tested hands-on.
+              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
+              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </article>
+</Layout>
