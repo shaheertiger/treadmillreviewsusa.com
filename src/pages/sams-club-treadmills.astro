@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Most Listed at Sam’s",
     amazonUrl: "https://www.amazon.com/dp/B0D5YJ4YW4?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31Hhl3ePz5L._SL500_.jpg","width":460,"height":500},
     reviewUrl: "/nordictrack-commercial-1250-treadmill/",
     priceRange: "Sam’s Club price not confirmed on 5 Nov 2026",
     priceBounds: null,
@@ -40,6 +41,7 @@ const PRODUCTS = [
     badge: "Lifetime Motor Warranty",
     amazonUrl: "https://www.amazon.com/dp/B0D5YKF4SK?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31BAhBBSPSL._SL500_.jpg","width":500,"height":500},
     reviewUrl: "/nordictrack-commercial-1750-treadmill/",
     priceRange: "Sam’s Club price not confirmed on 5 Nov 2026",
     priceBounds: null,
@@ -65,6 +67,7 @@ const PRODUCTS = [
     badge: "Retailer Model",
     amazonUrl: "https://www.amazon.com/s?k=NordicTrack+folding+treadmill&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "Sam’s Club price not confirmed on 5 Nov 2026",
     priceBounds: null,
@@ -90,6 +93,7 @@ const PRODUCTS = [
     badge: "Lowest Price",
     amazonUrl: "https://www.amazon.com/dp/B0F6VVX36Z?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31+1EXxOMRL._SL500_.jpg","width":500,"height":500},
     reviewUrl: "/proform-carbon-tls-treadmill/",
     priceRange: "Sam’s Club price not confirmed on 5 Nov 2026",
     priceBounds: null,
@@ -188,6 +192,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -446,6 +451,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

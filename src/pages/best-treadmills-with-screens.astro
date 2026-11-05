@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Budget Touchscreen",
     amazonUrl: "https://www.amazon.com/dp/B0D7XGWMRD?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31zk9ulTbQL._SL500_.jpg","width":500,"height":500},
     reviewUrl: "/nordictrack-t-series-treadmill/",
     priceRange: "$1,299 (P.C. Richard, 14 Oct) to $1,599.99 (NordicTrack, 28 Oct 2026)",
     priceBounds: {"low":1299,"high":1599.99},
@@ -40,6 +41,7 @@ const PRODUCTS = [
     badge: "Best Without a Subscription",
     amazonUrl: "https://www.amazon.com/s?k=Sole+F80+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: "/sole-f80-treadmill/",
     priceRange: "$1,599.99 at Sole on 5 Nov 2026",
     priceBounds: {"low":1599.99,"high":1599.99},
@@ -65,6 +67,7 @@ const PRODUCTS = [
     badge: "Best Folding Touchscreen",
     amazonUrl: "https://www.amazon.com/s?k=Echelon+Stride-6s+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: "/echelon-treadmills/",
     priceRange: "$1,799.99 at Echelon on 5 Nov 2026",
     priceBounds: {"low":1799.99,"high":1799.99},
@@ -89,6 +92,7 @@ const PRODUCTS = [
     badge: "Best Built-In Apps",
     amazonUrl: "https://www.amazon.com/s?k=Bowflex+T16+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: "/bowflex-t16-treadmill/",
     priceRange: "$1,999 at Bowflex on 5 Nov 2026",
     priceBounds: {"low":1999,"high":1999},
@@ -113,6 +117,7 @@ const PRODUCTS = [
     badge: "Best for iFIT",
     amazonUrl: "https://www.amazon.com/dp/B0D5YKF4SK?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31BAhBBSPSL._SL500_.jpg","width":500,"height":500},
     reviewUrl: "/nordictrack-commercial-1750-treadmill/",
     priceRange: "$1,999.99 at NordicTrack on 28 Oct 2026",
     priceBounds: {"low":1999.99,"high":1999.99},
@@ -138,6 +143,7 @@ const PRODUCTS = [
     badge: "Biggest Screen",
     amazonUrl: "https://www.amazon.com/dp/B0HDRFM27D?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31jcwMrxC5L._SL500_.jpg","width":500,"height":500},
     reviewUrl: "/peloton-tread/",
     priceRange: "$3,495 at Peloton on 5 Nov 2026",
     priceBounds: {"low":3495,"high":3495},
@@ -235,6 +241,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -483,6 +490,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

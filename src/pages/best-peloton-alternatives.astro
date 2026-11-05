@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Schwinn+IC4+Indoor+Cycling+Bike&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$799–$999",
     priceBounds: {"low":799,"high":999},
@@ -40,6 +41,7 @@ const PRODUCTS = [
     badge: "Same Bike, Other Badge",
     amazonUrl: "https://www.amazon.com/s?k=BowFlex+C6+Bike&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$899–$999",
     priceBounds: {"low":899,"high":999},
@@ -61,8 +63,9 @@ const PRODUCTS = [
     name: "NordicTrack X24 Bike",
     category: "Incline/decline screen bike with iFIT",
     badge: "Best Bike+ Alternative",
-    amazonUrl: "https://www.amazon.com/s?k=NordicTrack+X24+Bike&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0DK7QZQBM?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/311CG4fIleL._SL500_.jpg","width":426,"height":500},
     reviewUrl: null,
     priceRange: "$1,999–$2,799.99",
     priceBounds: {"low":1999,"high":2799.99},
@@ -88,6 +91,7 @@ const PRODUCTS = [
     badge: "Best Premium",
     amazonUrl: "https://www.amazon.com/dp/B00LSX8AA0?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31b09AaUZOL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "About $2,985",
     priceBounds: {"low":2985,"high":2985},
@@ -113,6 +117,7 @@ const PRODUCTS = [
     badge: "Best for Cyclists",
     amazonUrl: "https://www.amazon.com/s?k=Wahoo+KICKR+BIKE+PRO&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$3,999.99",
     priceBounds: {"low":3999.99,"high":3999.99},
@@ -138,6 +143,7 @@ const PRODUCTS = [
     badge: "Best If You Own a Road Bike",
     amazonUrl: "https://www.amazon.com/s?k=Wahoo+KICKR+CORE+2+Smart+Trainer&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$549.99",
     priceBounds: {"low":549.99,"high":549.99},
@@ -235,6 +241,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -486,6 +493,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

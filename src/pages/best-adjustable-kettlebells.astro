@@ -13,8 +13,9 @@ const PRODUCTS = [
     name: "REP Fitness Adjustable Kettlebell",
     category: "Push-and-twist adjustable kettlebell, competition-style shape",
     badge: "Best Overall",
-    amazonUrl: "https://www.amazon.com/s?k=REP+Fitness+Adjustable+Kettlebell&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B07KCKBHYX?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31KHX5GVb4L._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$149.99–$219.99",
     priceBounds: {"low":149.99,"high":219.99},
@@ -38,8 +39,9 @@ const PRODUCTS = [
     name: "BowFlex SelectTech 840 Adjustable Kettlebell",
     category: "Dial-select adjustable kettlebell, 8 to 40 lb",
     badge: "Fastest to Adjust",
-    amazonUrl: "https://www.amazon.com/s?k=BowFlex+SelectTech+840+Adjustable+Kettlebell&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B07X64MXBS?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/313RkfUE2zL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$149",
     priceBounds: {"low":149,"high":149},
@@ -63,8 +65,9 @@ const PRODUCTS = [
     name: "PowerBlock Pro Adjustable Kettlebell",
     category: "Magnetic-pin adjustable kettlebell, steel shell",
     badge: "Most Compact",
-    amazonUrl: "https://www.amazon.com/s?k=PowerBlock+Pro+Adjustable+Kettlebell&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0CG6P5NSC?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/413Riv+fx9L._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$199–$349",
     priceBounds: {"low":199,"high":349},
@@ -88,8 +91,9 @@ const PRODUCTS = [
     name: "Bells of Steel Adjustable Competition Kettlebell",
     category: "Internally plate-loaded competition kettlebell, 0.5 kg steps",
     badge: "Best for Small Steps",
-    amazonUrl: "https://www.amazon.com/s?k=Bells+of+Steel+Adjustable+Competition+Kettlebell+12-20.5kg&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0D38BLJQW?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41etKpoFKgL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$199.99–$332.99",
     priceBounds: {"low":199.99,"high":332.99},
@@ -113,8 +117,9 @@ const PRODUCTS = [
     name: "Titan Fitness 12–32 kg Adjustable Competition Kettlebell",
     category: "Internally plate-loaded competition kettlebell, cast iron",
     badge: "Best Value to 32 kg",
-    amazonUrl: "https://www.amazon.com/s?k=Titan+Fitness+Adjustable+Kettlebell+12-32+KG&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0D2Z4P3T9?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31Ru7cTBmeL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$199.99–$212.97",
     priceBounds: {"low":199.99,"high":212.97},
@@ -213,6 +218,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -474,6 +480,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

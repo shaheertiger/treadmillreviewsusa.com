@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Lowest-Priced TRUE",
     amazonUrl: "https://www.amazon.com/s?k=non+folding+treadmill+22+inch+deck&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$3,499 at TRUE on 20 Oct 2026",
     priceBounds: {"low":3499,"high":3499},
@@ -41,6 +42,7 @@ const PRODUCTS = [
     badge: "Entry 60-Inch Deck",
     amazonUrl: "https://www.amazon.com/s?k=non+folding+treadmill+22+inch+deck&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$5,199-$6,199 at TRUE on 20 Oct 2026, by console",
     priceBounds: {"low":5199,"high":6199},
@@ -67,6 +69,7 @@ const PRODUCTS = [
     badge: "Orthopedic Belt",
     amazonUrl: "https://www.amazon.com/s?k=non+folding+treadmill+22+inch+deck&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$5,499-$6,499 at TRUE on 20 Oct 2026, by console",
     priceBounds: {"low":5499,"high":6499},
@@ -93,6 +96,7 @@ const PRODUCTS = [
     badge: "Soft Select Deck",
     amazonUrl: "https://www.amazon.com/s?k=non+folding+treadmill+22+inch+deck&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$5,999-$6,999 at TRUE on 20 Oct 2026, by console",
     priceBounds: {"low":5999,"high":6999},
@@ -192,6 +196,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -427,6 +432,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

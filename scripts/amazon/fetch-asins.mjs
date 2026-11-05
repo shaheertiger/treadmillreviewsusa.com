@@ -11,11 +11,12 @@
  * A product is only recorded when matchScore() accepts the Amazon title, so a
  * rejected product simply keeps its tagged search link. The full outcome, including
  * the top rejected title, goes to scripts/amazon/asin-report.json for review.
+ * The listing's primary image is stored with the ASIN; fetch-images.mjs refreshes it.
  */
 import { writeFileSync } from 'fs';
 import { join } from 'path';
 import { SearchItemsRequestContent } from 'amazon-creators-api';
-import { ASIN_PATH, allProducts, client, loadAsins, matchScore } from './lib.mjs';
+import { ASIN_PATH, allProducts, client, imageOf, loadAsins, matchScore } from './lib.mjs';
 
 const MIN_COVERAGE = 0.75;
 const all = process.argv.includes('--all');
@@ -35,15 +36,15 @@ for (const [name, files] of products) {
     req.keywords = name;
     req.itemCount = 5;
     req.searchIndex = 'All';
-    req.resources = ['itemInfo.title'];
+    req.resources = ['itemInfo.title', 'images.primary.large'];
     const res = await api.searchItems(marketplace, req);
     const items = res?.searchResult?.items ?? [];
     const scored = items
-      .map((it) => ({ asin: it.asin, title: it.itemInfo?.title?.displayValue ?? '', score: matchScore(name, it.itemInfo?.title?.displayValue) }))
+      .map((it) => ({ asin: it.asin, title: it.itemInfo?.title?.displayValue ?? '', image: imageOf(it), score: matchScore(name, it.itemInfo?.title?.displayValue) }))
       .sort((a, b) => b.score - a.score);
     const best = scored[0];
     if (best && best.score >= MIN_COVERAGE) {
-      asins[name] = { asin: best.asin, title: best.title, checked: today };
+      asins[name] = { asin: best.asin, title: best.title, ...(best.image && { image: best.image }), checked: today };
       report.push({ name, status: 'accepted', asin: best.asin, title: best.title, score: +best.score.toFixed(2), files: [...files] });
     } else {
       if (all) delete asins[name];

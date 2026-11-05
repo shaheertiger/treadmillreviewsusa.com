@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Lowest-Cost Freemotion",
     amazonUrl: "https://www.amazon.com/s?k=commercial+treadmill&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$5,999-$7,799 (dealer and Freemotion home store, 5 Nov 2026)",
     priceBounds: {"low":5999,"high":7799},
@@ -41,6 +42,7 @@ const PRODUCTS = [
     badge: "Best Value Reflex",
     amazonUrl: "https://www.amazon.com/s?k=commercial+treadmill&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$8,999-$9,400 (Freemotion home store and dealer, 5 Nov 2026)",
     priceBounds: {"low":8999,"high":9400},
@@ -67,6 +69,7 @@ const PRODUCTS = [
     badge: "Flagship",
     amazonUrl: "https://www.amazon.com/s?k=commercial+treadmill&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$11,350 at Freemotion home store on 5 Nov 2026",
     priceBounds: {"low":11350,"high":11350},
@@ -92,6 +95,7 @@ const PRODUCTS = [
     badge: "Steepest Climb",
     amazonUrl: "https://www.amazon.com/s?k=incline+trainer+treadmill&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$11,899 at Freemotion home store on 5 Nov 2026",
     priceBounds: {"low":11899,"high":11899},
@@ -198,6 +202,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -501,6 +506,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

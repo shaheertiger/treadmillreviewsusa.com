@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Bodylastics+Pro+Series+Resistance+Band+Set+5+Bands&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$36–$50",
     priceBounds: {"low":36,"high":50},
@@ -38,8 +39,9 @@ const PRODUCTS = [
     name: "Whatafit Resistance Bands Set",
     category: "Budget stackable tube bands with handles",
     badge: "Best Budget Tube Set",
-    amazonUrl: "https://www.amazon.com/s?k=Whatafit+Resistance+Bands+Set+Door+Anchor+Handles+Ankle+Straps&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B07DWSPQQY?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/51lUMWBbRFL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$25–$30",
     priceBounds: {"low":25,"high":30},
@@ -63,8 +65,9 @@ const PRODUCTS = [
     name: "Serious Steel Fitness 41\" Assisted Pull-Up Bands",
     category: "Layered latex loop power bands, sold singly or in sets",
     badge: "Best Power Bands",
-    amazonUrl: "https://www.amazon.com/s?k=Serious+Steel+Assisted+Pull-Up+Band+41+inch&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B01LY5WJZ0?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/51MvqcZ-X2L._SL500_.jpg","width":500,"height":412},
     reviewUrl: null,
     priceRange: "$12–$70 per band",
     priceBounds: {"low":12,"high":70},
@@ -88,8 +91,9 @@ const PRODUCTS = [
     name: "Fit Simplify Resistance Loop Exercise Bands, Set of 5",
     category: "Mini latex loop bands",
     badge: "Best Mini Bands",
-    amazonUrl: "https://www.amazon.com/s?k=Fit+Simplify+Resistance+Loop+Exercise+Bands+Set+of+5&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B01AVDVHTI?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41+l2xXEKjL._SL500_.jpg","width":468,"height":500},
     reviewUrl: null,
     priceRange: "$10–$16",
     priceBounds: {"low":10,"high":16},
@@ -113,8 +117,9 @@ const PRODUCTS = [
     name: "Sling Shot Hip Circle",
     category: "Fabric hip and glute band",
     badge: "Best Fabric Hip Band",
-    amazonUrl: "https://www.amazon.com/s?k=Sling+Shot+Original+Hip+Circle+Fabric+Resistance+Band&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B00T4JFQQ6?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41IfKGVjlBL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$20–$22",
     priceBounds: {"low":20,"high":22},
@@ -140,6 +145,7 @@ const PRODUCTS = [
     badge: "Best Latex-Free",
     amazonUrl: "https://www.amazon.com/s?k=THERABAND+Resistance+Bands+Set+Beginner+Yellow+Red+Green+Non-Latex&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$15–$25",
     priceBounds: {"low":15,"high":25},
@@ -238,6 +244,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -494,6 +501,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best for Beginners",
     amazonUrl: "https://www.amazon.com/s?k=MaxiClimber+XL-2000+Vertical+Climber+Hydraulic+Resistance&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$399",
     priceBounds: {"low":399,"high":399},
@@ -40,6 +41,7 @@ const PRODUCTS = [
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/s?k=Sunny+Health+Fitness+Foldable+Vertical+Climber+SF-S024835&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$169.99",
     priceBounds: {"low":169.99,"high":169.99},
@@ -63,8 +65,9 @@ const PRODUCTS = [
     name: "Bells of Steel Blitz Stepper",
     category: "Freestanding magnetic stepper-climber",
     badge: "Best Magnetic Resistance",
-    amazonUrl: "https://www.amazon.com/s?k=vertical+climber&tag=sktiger-20",
-    amazonLabel: "Shop Similar on Amazon",
+    amazonUrl: "https://www.amazon.com/dp/B0D5DR7QPV?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/315YJbGM1sL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$1,299.99",
     priceBounds: {"low":1299.99,"high":1299.99},
@@ -90,6 +93,7 @@ const PRODUCTS = [
     badge: "Best Connected",
     amazonUrl: "https://www.amazon.com/s?k=vertical+climber&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "Price on request from CLMBR",
     priceBounds: null,
@@ -115,6 +119,7 @@ const PRODUCTS = [
     badge: "Best Premium",
     amazonUrl: "https://www.amazon.com/s?k=vertical+climber&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$5,895–$6,945",
     priceBounds: {"low":5895,"high":6945},
@@ -213,6 +218,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -472,6 +478,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+7.0+AT+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: "/horizon-7-0-at-treadmill/",
     priceRange: "Around $930–$1,100",
     priceBounds: {"low":930,"high":1100},
@@ -40,6 +41,7 @@ const PRODUCTS = [
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/s?k=Bowflex+T6+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: "/bowflex-t6-treadmill/",
     priceRange: "$899–$1,299",
     priceBounds: {"low":899,"high":1299},
@@ -64,6 +66,7 @@ const PRODUCTS = [
     badge: "Heavy-Duty Pick",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+7.8+AT+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$1,899–$1,999",
     priceBounds: {"low":1899,"high":1999},
@@ -89,6 +92,7 @@ const PRODUCTS = [
     badge: "Premium Pick",
     amazonUrl: "https://www.amazon.com/s?k=smart+treadmill+with+incline+and+decline&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "Around $6,500–$7,000",
     priceBounds: {"low":6500,"high":7000},
@@ -114,6 +118,7 @@ const PRODUCTS = [
     badge: "Any Treadmill",
     amazonUrl: "https://www.amazon.com/s?k=running+foot+pod&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "Around $200",
     priceBounds: {"low":200,"high":200},
@@ -211,6 +216,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -464,6 +470,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B09BDHXJRN?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31ndpeO1SDL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$1,050–$1,100",
     priceBounds: {"low":1050,"high":1100},
@@ -40,6 +41,7 @@ const PRODUCTS = [
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/s?k=folding+squat+rack&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$499.99–$579.99",
     priceBounds: {"low":499.99,"high":579.99},
@@ -63,8 +65,9 @@ const PRODUCTS = [
     name: "Titan Fitness T-3 Series Folding Power Rack",
     category: "Fold-in wall-mounted 2x3 rack",
     badge: "Best Budget",
-    amazonUrl: "https://www.amazon.com/s?k=Titan+Fitness+T-3+Series+Wall+Mounted+Folding+Power+Rack&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B09C7JWYHQ?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31SGt-+s4gL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$400–$500",
     priceBounds: {"low":400,"high":500},
@@ -90,6 +93,7 @@ const PRODUCTS = [
     badge: "Best Made in USA",
     amazonUrl: "https://www.amazon.com/s?k=folding+squat+rack&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$605–$815",
     priceBounds: {"low":605,"high":815},
@@ -115,6 +119,7 @@ const PRODUCTS = [
     badge: "Best Folding Cage",
     amazonUrl: "https://www.amazon.com/s?k=folding+power+cage&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "About $1,600",
     priceBounds: {"low":1600,"high":1600},
@@ -140,6 +145,7 @@ const PRODUCTS = [
     badge: "Best for Lighter Lifting",
     amazonUrl: "https://www.amazon.com/s?k=folding+squat+rack&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "About $466",
     priceBounds: {"low":466,"high":466},
@@ -238,6 +244,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -510,6 +517,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

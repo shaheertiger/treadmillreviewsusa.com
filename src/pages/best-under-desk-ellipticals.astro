@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Under-Desk Elliptical",
     amazonUrl: "https://www.amazon.com/s?k=Cubii+Move+Under+Desk+Elliptical&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "About $200",
     priceBounds: {"low":200,"high":200},
@@ -40,6 +41,7 @@ const PRODUCTS = [
     badge: "Best Budget Elliptical",
     amazonUrl: "https://www.amazon.com/s?k=Sunny+Health+Fitness+SF-E323017+Under+Desk+Elliptical&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "About $170",
     priceBounds: {"low":170,"high":170},
@@ -65,6 +67,7 @@ const PRODUCTS = [
     badge: "If You Want Motorized",
     amazonUrl: "https://www.amazon.com/s?k=Sunny+Health+Fitness+SF-E3959SMART+Motorized+Under+Desk+Elliptical&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "About $270",
     priceBounds: {"low":270,"high":270},
@@ -88,8 +91,9 @@ const PRODUCTS = [
     name: "DeskCycle 2 Under Desk Bike Pedal Exerciser",
     category: "Under-desk bike, magnetic",
     badge: "Best Under-Desk Bike",
-    amazonUrl: "https://www.amazon.com/s?k=DeskCycle+2+Under+Desk+Bike+Pedal+Exerciser&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B07BDRFMZK?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41CwDei9A5L._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$150–$160",
     priceBounds: {"low":150,"high":160},
@@ -115,6 +119,7 @@ const PRODUCTS = [
     badge: "Best Budget Bike",
     amazonUrl: "https://www.amazon.com/s?k=Sunny+Health+Fitness+SF-B0891SMART+Magnetic+Mini+Exercise+Bike&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "About $140",
     priceBounds: {"low":140,"high":140},
@@ -213,6 +218,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -479,6 +485,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

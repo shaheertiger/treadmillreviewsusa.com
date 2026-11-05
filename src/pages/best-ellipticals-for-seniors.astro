@@ -13,8 +13,9 @@ const PRODUCTS = [
     name: "SOLE E25 Elliptical",
     category: "Full-size front-drive elliptical",
     badge: "Best Overall",
-    amazonUrl: "https://www.amazon.com/s?k=SOLE+E25+Elliptical&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0H5KTZ8KG?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31JBFQvn7BL._SL500_.jpg","width":500,"height":333},
     reviewUrl: null,
     priceRange: "$1,199–$1,299",
     priceBounds: {"low":1199,"high":1299},
@@ -40,6 +41,7 @@ const PRODUCTS = [
     badge: "Lowest Step-On",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+Fitness+EX-59+Elliptical&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$799–$999",
     priceBounds: {"low":799,"high":999},
@@ -65,6 +67,7 @@ const PRODUCTS = [
     badge: "Best Compact",
     amazonUrl: "https://www.amazon.com/dp/B07H1BKRQ3?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41tQXV8F9FL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$699–$799",
     priceBounds: {"low":699,"high":799},
@@ -88,8 +91,9 @@ const PRODUCTS = [
     name: "SOLE E35 Elliptical",
     category: "Full-size elliptical with adjustable pedals",
     badge: "Best Pedals",
-    amazonUrl: "https://www.amazon.com/s?k=SOLE+E35+Elliptical&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0HFSTZX3X?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31HXgp0-tML._SL500_.jpg","width":500,"height":333},
     reviewUrl: null,
     priceRange: "$1,699–$1,799",
     priceBounds: {"low":1699,"high":1799},
@@ -115,6 +119,7 @@ const PRODUCTS = [
     badge: "Best Seated",
     amazonUrl: "https://www.amazon.com/s?k=Teeter+FreeStep+LT3+Recumbent+Cross+Trainer&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$859–$999",
     priceBounds: {"low":859,"high":999},
@@ -138,8 +143,9 @@ const PRODUCTS = [
     name: "NuStep T5 Recumbent Cross Trainer",
     category: "Clinical-grade seated cross trainer",
     badge: "Best Premium",
-    amazonUrl: "https://www.amazon.com/s?k=NuStep+T5+Recumbent+Cross+Trainer&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B08NPX5GF1?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41QiBQdcPML._SL500_.jpg","width":500,"height":346},
     reviewUrl: null,
     priceRange: "From $7,295",
     priceBounds: {"low":7295,"high":7295},
@@ -238,6 +244,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -502,6 +509,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0FY3L1PTQ?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31uKIVkHI9L._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "Around $165",
     priceBounds: {"low":165,"high":165},
@@ -40,6 +41,7 @@ const PRODUCTS = [
     badge: "Best for Walking and Jogging",
     amazonUrl: "https://www.amazon.com/dp/B0FXDN22YW?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31a4VVlE4pL._SL500_.jpg","width":500,"height":267},
     reviewUrl: null,
     priceRange: "$150–$155",
     priceBounds: {"low":150,"high":155},
@@ -65,6 +67,7 @@ const PRODUCTS = [
     badge: "Best Roomy Toe Box",
     amazonUrl: "https://www.amazon.com/dp/B0FD2MR73D?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31z7YslIitL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "Around $145",
     priceBounds: {"low":145,"high":145},
@@ -90,6 +93,7 @@ const PRODUCTS = [
     badge: "Best for Short Brisk Walks",
     amazonUrl: "https://www.amazon.com/dp/B0D31T3GP7?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/211aoeD1ZVL._SL500_.jpg","width":282,"height":500},
     reviewUrl: null,
     priceRange: "$150–$160",
     priceBounds: {"low":150,"high":160},
@@ -115,6 +119,7 @@ const PRODUCTS = [
     badge: "Best for Support",
     amazonUrl: "https://www.amazon.com/dp/B07KX21HJL?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31hTbKrUS7L._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$130–$140",
     priceBounds: {"low":130,"high":140},
@@ -140,6 +145,7 @@ const PRODUCTS = [
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/dp/B0GYZ6JR5P?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31qkMKm1-8L._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$75–$80",
     priceBounds: {"low":75,"high":80},
@@ -237,6 +243,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -488,6 +495,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

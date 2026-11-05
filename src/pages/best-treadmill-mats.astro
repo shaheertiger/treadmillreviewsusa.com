@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=SuperMats+Heavy+Duty+TreadMat+Treadmill+Mat&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$50–$75",
     priceBounds: {"low":50,"high":75},
@@ -40,6 +41,7 @@ const PRODUCTS = [
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/dp/B01GSMN9WY?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/611J54drolL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$20–$45",
     priceBounds: {"low":20,"high":45},
@@ -65,6 +67,7 @@ const PRODUCTS = [
     badge: "Best for Carpet & Big Machines",
     amazonUrl: "https://www.amazon.com/dp/B001VA8NRU?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41qrwTpZTsL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$75–$90",
     priceBounds: {"low":75,"high":90},
@@ -90,6 +93,7 @@ const PRODUCTS = [
     badge: "Best for Upstairs",
     amazonUrl: "https://www.amazon.com/s?k=rubber+gym+floor+mat+4x6+3%2F8+inch&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$140–$210",
     priceBounds: {"low":140,"high":210},
@@ -115,6 +119,7 @@ const PRODUCTS = [
     badge: "Best for Walking Pads",
     amazonUrl: "https://www.amazon.com/s?k=high+density+exercise+equipment+mat&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$15–$35",
     priceBounds: {"low":15,"high":35},
@@ -212,6 +217,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -457,6 +463,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
