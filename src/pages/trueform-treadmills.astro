@@ -1,0 +1,867 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "TrueForm Treadmills (2026): Runner vs Trainer Curved Manual Treadmills";
+const description =
+  "TrueForm’s Runner and Trainer curved manual treadmills compared: November 2026 prices, which figures the sources agree on, the warranty, lead times and the cheaper rivals.";
+
+const PRODUCTS = [
+  {
+    id: "trueform-trainer",
+    name: "TrueForm Trainer",
+    category: "Shallow-Curve Manual Treadmill, Ships in Days",
+    badge: "The TrueForm to Buy",
+    amazonUrl: "https://www.amazon.com/s?k=TrueForm+Trainer+Curved+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    reviewUrl: null,
+    priceRange: "$3,495 (rubber) to $3,995 (turf) at TrueForm on 5 Nov 2026",
+    priceBounds: {"low":3495,"high":3995},
+    specs: "17 in. wide slat surface · 400 lb max user · rubber or turf tread · no motor or outlet · no resistance setting",
+    pros: [
+      "A 400 lb user rating, confirmed by TrueForm, Rogue and an independent review",
+      "TrueForm’s shallowest-in-class curve, which reviewers describe as calmer than rivals",
+      "Lifetime frame and five years on moving parts on TrueForm’s warranty page",
+      "Ships in one to three business days, against 14 weeks for the Runner",
+    ],
+    cons: [
+      "No resistance setting, and the Performance Adapter does not fit it",
+      "About $1,000 more than an AssaultRunner Pro for a similar-sized surface",
+      "Machine weight is 300 lb on Rogue’s listing but 270 lb in an older review",
+      "One year of labour and three years on electronics",
+    ],
+    bottomLine: "The TrueForm most buyers should consider: the brand’s curve and a 400 lb rating at roughly half the Runner’s price.",
+    description: "The Trainer is TrueForm’s second-generation lower-cost curved treadmill, designed in house and built at TrueForm’s facility overseas. TrueForm, Rogue Fitness and Garage Gym Lab agree on a 400 lb maximum user weight, and Rogue and Garage Gym Lab on a 17-inch-wide slatted running surface; Rogue gives the length as 54 inches, which TrueForm’s own page does not state. TrueForm lists the current model with upgraded treads and rollers, a Power Bar for sprint starts and Bluetooth to FTMS apps such as Zwift and Strava, and its warranty page gives a lifetime frame, five years on moving parts, three on electronics and one on labour. Rogue lists a 300 lb machine weight; a 2023 review of the earlier version gives 270 lb, so we left weight off the card. On 5 November 2026 TrueForm listed it at $3,495 with rubber and $3,995 with turf, and Rogue at $3,495.",
+  },
+  {
+    id: "trueform-runner",
+    name: "TrueForm Runner",
+    category: "Hand-Built Flagship Curved Trainer",
+    badge: "Facility Pick",
+    amazonUrl: "https://www.amazon.com/s?k=TrueForm+Runner+Curved+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    reviewUrl: null,
+    priceRange: "$6,195–$10,195 by configuration at TrueForm on 5 Nov 2026",
+    priceBounds: {"low":6195,"high":10195},
+    specs: "54 x 17 in. surface · about 350 lb · rubber, turf, track or Naboso tread · hand-built in Wisconsin",
+    pros: [
+      "Hand-built in the US with a heavier steel frame and belt than the Trainer",
+      "Five tread choices, including turf and track for sled and field-sport work",
+      "Lifetime frame, five years on moving parts and electronics, two years of labour",
+      "Accepts TrueForm’s Performance Adapter for tethered sprint work",
+    ],
+    cons: [
+      "Twice the Trainer’s price for the same surface size on Rogue’s listing",
+      "Built to order: 14 weeks on TrueForm’s site",
+      "User-weight figures differ between sources, so confirm yours with TrueForm",
+    ],
+    bottomLine: "For teams, clinics and facilities that will use it hard every day and want the custom options. Most home runners do not need it.",
+    description: "The Runner is TrueForm’s original machine and the one pro teams use. Rogue Fitness and TreadmillReviews.com agree on a 54 by 17-inch running surface and a 350 lb machine weight, and Rogue lists a 64 by 31 by 63-inch footprint. TrueForm says it handles users up to 700 lb walking or 450 lb running at full speed, which TreadmillReviews.com repeats, but other coverage has quoted 750 lb, so we left capacity off the card. You choose a black, white or custom frame, a Kraiburg rubber, turf, track or Naboso tread and a standard, TrueTouch or no display, and on 5 November 2026 those choices ran from $6,195 to $10,195 on TrueForm’s store, with the standard black, rubber, standard-display machine at $7,495. Rogue listed it at $6,595 and unavailable. TrueForm quotes a 14-week build.",
+  },
+  {
+    id: "assaultrunner-pro",
+    name: "AssaultRunner Pro",
+    category: "The Best-Known Curved Trainer",
+    badge: "Cheaper Rival",
+    amazonUrl: "https://www.amazon.com/s?k=curved+manual+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
+    reviewUrl: "/assaultrunner-pro-treadmill/",
+    priceRange: "$3,499 at US dealers in November 2026",
+    priceBounds: {"low":3499,"high":3499},
+    specs: "17 x 62 in. curved slat surface · 350 lb max user · 280 lb · battery console with Bluetooth and ANT+",
+    pros: [
+      "The longest surface here at 62 inches, on a lighter 280 lb frame",
+      "The most widely reviewed curved trainer, so its strengths and faults are well documented",
+      "Three years on moving parts and a 150,000-mile belt warranty from Assault",
+      "About the same price as the TrueForm Trainer with rubber",
+    ],
+    cons: [
+      "A deeper, more eager curve than a TrueForm’s, which some runners find twitchy",
+      "350 lb rating, against the Trainer’s 400 lb",
+      "Assault’s own store has shown it sold out at times this autumn",
+    ],
+    bottomLine: "The curved trainer to compare a TrueForm Trainer against: longer surface, bigger review base, similar price.",
+    description: "The AssaultRunner Pro is the machine most buyers compare with a TrueForm. Assault and independent reviews agree on a 17 by 62-inch slatted surface, a 350 lb maximum user weight and a 280 lb assembled weight, with a battery console that connects over Bluetooth and ANT+. It has no resistance setting, incline or fold. Its curve is deeper than TrueForm’s, which makes it eager to speed up when you lean in; that suits sprinting and feels busier at a steady jog. Assault’s frame term differs between its current page (7 years) and dealers and reviews (5 years), so get it in writing. US dealers listed it at $3,499 in early November 2026. See our full review for the detail.",
+  },
+  {
+    id: "sole-c80",
+    name: "SOLE C80 Curved Manual Treadmill",
+    category: "Curved Trainer With Magnetic Resistance",
+    badge: "Best Value",
+    amazonUrl: "https://www.amazon.com/dp/B0H2KC6YL5?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    reviewUrl: null,
+    priceRange: "$2,399.99 at SOLE on 5 Nov 2026",
+    priceBounds: {"low":2399.99,"high":2399.99},
+    specs: "62 x 19 in. slat belt · 8 magnetic levels · 330 lb max user · 261 lb",
+    pros: [
+      "About $1,100 less than a TrueForm Trainer",
+      "Eight magnetic resistance levels for resisted sprints and pushes, which no TrueForm has",
+      "A 19-inch belt, two inches wider than either TrueForm",
+      "Sold on Amazon as well as direct",
+    ],
+    cons: [
+      "A 330 lb rating, against the Trainer’s 400 lb",
+      "One year on deck, parts, electronics and labour",
+    ],
+    bottomLine: "The value alternative: a wider belt and real resistance for much less, if you can live with the shorter parts warranty.",
+    description: "SOLE’s C80 is the curved trainer that most undercuts TrueForm. The figures cross-checked on this site in October 2026 give it a 62 by 19-inch slat belt, eight levels of magnetic resistance, a 330 lb maximum user weight and a 261 lb machine weight, and its Bluetooth console works with SOLE’s own app and third-party platforms. The resistance is the important difference: on a TrueForm you make the belt harder only by tethering yourself with the Runner’s Performance Adapter, while on the C80 you turn a lever. The warranty is the reservation, at lifetime on the frame but one year on the deck, parts, electronics and labour. SOLE listed it at $2,399.99 on 5 November 2026.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Brands", item: "https://www.treadmillreviewsusa.com/brands/" },
+        { "@type": "ListItem", position: 3, name: "TrueForm Treadmills", item: "https://www.treadmillreviewsusa.com/trueform-treadmills/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "How much is a TrueForm treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "On 5 November 2026 TrueForm’s US store listed the Trainer at $3,495 with a rubber tread and $3,995 with turf, and the Runner at $6,195 to $10,195 depending on frame colour, tread and display, with the standard configuration at $7,495. Rogue Fitness listed the Trainer at $3,495 and the Runner at $6,595. Prices change, so confirm before ordering.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the difference between the TrueForm Runner and the Trainer?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The Runner is hand-built in Wisconsin with a heavier steel frame and belt, five tread options, a choice of displays and a 14-week build time. The Trainer is designed by TrueForm and built at its overseas facility, is lighter, ships in one to three business days and costs about half as much. On Rogue’s listings both have a 54 by 17-inch running surface.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is the TrueForm Trainer worth it?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "It is worth it if the shallow curve and the 400 lb rating matter to you, because no cheaper curved trainer we cover offers both. If you just want a curved deck for sprints and intervals, the AssaultRunner Pro is similar money with a longer surface, and the SOLE C80 is about $1,100 less with magnetic resistance. We have not tested the Trainer.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is TrueForm sold on Amazon?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. TrueForm sells through its own store and dealers such as Rogue Fitness and Sorinex. The Amazon buttons on this page go to a tagged Amazon search, which may show only similar curved manual treadmills, not a TrueForm listing.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the TrueForm Performance?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "There is no separate TrueForm Performance treadmill. Performance is one of TrueForm’s use categories, and the Performance Adapter is a $300 tethering accessory for the Runner that lets an athlete add tension for sprint and acceleration work. It does not fit the Trainer.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What warranty does TrueForm offer?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "TrueForm’s warranty page gives both machines a lifetime frame warranty and five years on moving parts. The Runner adds five years on electronics and two years of labour; the Trainer has three years on electronics and one year of labour. Older reviews quote different terms, so get the warranty for your purchase in writing.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
+      datePublished: "2026-11-05",
+      dateModified: "2026-11-05",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+    ...PRODUCTS.map((product) => ({
+      "@type": "Product",
+      name: product.name,
+      description: product.description,
+      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.priceBounds
+        ? {
+            offers: {
+              "@type": "AggregateOffer",
+              priceCurrency: "USD",
+              lowPrice: product.priceBounds.low,
+              highPrice: product.priceBounds.high,
+              url: product.amazonUrl,
+            },
+          }
+        : {}),
+    })),
+    {
+      "@type": "ItemList",
+      name: title,
+      numberOfItems: 4,
+      itemListElement: PRODUCTS.map((product, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: product.name,
+        url: `https://www.treadmillreviewsusa.com/trueform-treadmills/#${product.id}`,
+      })),
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-11-05",
+    modifiedTime: "2026-11-05",
+    author: "Shaheer Ali Khan",
+    section: "Fitness Equipment",
+    tags: [
+      "trueform treadmill",
+      "trueform runner",
+      "trueform.runner curved treadmill",
+      "trueform trainer",
+      "trueform trainer curved manual treadmill",
+      "trueform trainer treadmill",
+      "trueform curved treadmill",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "Compare the Machines", link: "#machines" }}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-trueformtreadmills" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-trueformtreadmills)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Buyer’s Guide
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated November 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          TrueForm Treadmills: <span class="text-[#5AA9FF]">Runner vs Trainer, Explained</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          TrueForm makes curved, self-powered treadmills with the shallowest curve in the category, sold direct and through gym dealers rather than on Amazon. This guide covers the current TRUEFORM.RUNNER and TRUEFORM.TRAINER, what each costs on the day we checked, the figures that independent sources confirm, the warranty, and when a cheaper curved trainer makes more sense.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            The Short Answer
+          </a>
+          <a href="#runner-vs-trainer" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            Runner vs Trainer
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
+          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">November 5, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="1.1k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
+          5 November 2026 we read TrueForm's US store (trueformrunner.com), including the product
+          data behind the TRUEFORM.RUNNER, TRUEFORM.TRAINER and TRUEFORM.ENDURO listings and every
+          price option on them, its Runner-versus-Trainer comparison page, its warranty page and its
+          Performance Adapter listing. We cross-checked the figures against Rogue Fitness's US
+          listings for the Trainer and the Runner, Sorinex's Runner listing, and independent coverage
+          from TreadmillReviews.com (Runner, updated March 2024), Garage Gym Lab (Trainer, December
+          2023) and an October 2026 curved-treadmill comparison on ocdevel.com. We searched the US
+          Consumer Product Safety Commission's recall database for TrueForm and True Form and found no
+          recall. Figures on the product cards are those on which TrueForm or an official dealer and at
+          least one independent source agree; where they disagree, we say so in the text and leave the
+          figure off the card. The AssaultRunner Pro and SOLE C80 cards use specifications already
+          cross-checked on this site in October 2026, with prices checked again on 5 November. We have
+          not tested any TrueForm treadmill, and none of these figures are our own measurements. Prices
+          and lead times are what the sellers showed on 5 November 2026 and change often, so confirm
+          them for your exact configuration before you order. TrueForm sells direct and through
+          dealers, not on Amazon, so its buttons below go to a tagged Amazon search that may show
+          only similar curved manual treadmills. As an Amazon Associate we earn from qualifying purchases; it does not change
+          which machines we list or what we say about them.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="max-w-3xl mx-auto px-4 pt-8">
+      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
+        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
+        <ul class="list-none m-0 p-0">
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">The TrueForm to Buy:</span>
+            <a href="#trueform-trainer" class="font-bold text-gray-900 no-underline hover:underline">TrueForm Trainer</a>
+            <a href="#trueform-trainer" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Facility Pick:</span>
+            <a href="#trueform-runner" class="font-bold text-gray-900 no-underline hover:underline">TrueForm Runner</a>
+            <a href="#trueform-runner" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Cheaper Rival:</span>
+            <a href="#assaultrunner-pro" class="font-bold text-gray-900 no-underline hover:underline">AssaultRunner Pro</a>
+            <a href="#assaultrunner-pro" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Value:</span>
+            <a href="#sole-c80" class="font-bold text-gray-900 no-underline hover:underline">SOLE C80 Curved Manual Treadmill</a>
+            <a href="#sole-c80" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Should You Buy a TrueForm Treadmill? The Short Answer</a>
+          <a href="#who-makes" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Who Makes TrueForm, and How It Sells</a>
+          <a href="#curve" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. What Makes a TrueForm Different: the Shallow Curve</a>
+          <a href="#runner-vs-trainer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. TrueForm Runner vs Trainer: the Figures, Checked</a>
+          <a href="#machines" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. The TrueForm Machines, and Two Cheaper Rivals</a>
+          <a href="#runner-options" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Runner Options: Treads, Displays, Enduro and the Performance Adapter</a>
+          <a href="#warranty" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. The TrueForm Warranty, Read Properly</a>
+          <a href="#space-delivery" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Space, Floors and Delivery</a>
+          <a href="#who-should-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Who a TrueForm Suits, and Who Should Buy Something Else</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          If you have searched for a TrueForm treadmill you have probably seen one in a pro team's
+          training video or a physical-therapy clinic before you saw a price. TrueForm builds curved,
+          non-motorized treadmills whose belt moves only when you push it, and it markets them on one
+          idea: that a very shallow curve rewards good running form and punishes bad form, rather than
+          pulling you along. There are two machines that matter. The Runner is hand-built in
+          Wisconsin, highly customizable and costs from about $6,200 to over $10,000. The Trainer is a
+          lighter, cheaper design built overseas, at $3,495 to $3,995 on the day we checked. This guide
+          sets out what each one is, which figures the sources actually agree on, what the warranty
+          covers, and whether either one is worth the money against the cheaper curved trainers most
+          home buyers end up choosing.
+        </p>
+
+        <div id="short-answer" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Should You Buy a TrueForm Treadmill? The Short Answer</h2>
+<p>
+            <strong>Buy a TrueForm Trainer if you want a premium curved manual treadmill with a 400 lb
+            rating and a calmer, shallower curve than most rivals, and you are happy to pay about
+            $1,000 more than an AssaultRunner Pro for it. Buy the Runner only if you are equipping a
+            facility, a team or a serious athlete, and the custom treads and heavier build matter more
+            than the price.</strong>
+          </p>
+          <p>
+            On 5 November 2026 TrueForm's US store listed the TRUEFORM.TRAINER at $3,495 with a rubber
+            tread and $3,995 with turf, against a stated compare-at price of $3,999, and said it ships in
+            one to three business days. Rogue Fitness, one of TrueForm's dealers, had the Trainer at the
+            same $3,495. The TRUEFORM.RUNNER ran from $6,195 to $10,195 across 45 combinations of frame
+            colour, tread and display, with a 14-week build time; its standard configuration, black frame
+            with Kraiburg rubber tread and the standard display, was $7,495.
+          </p>
+          <p>
+            Those are high prices for a machine without a motor, an incline, a screen of any size worth
+            the name or, on the Trainer, a resistance setting. What you are paying for is a particular
+            running feel, a heavy steel build and a long frame warranty. If those matter, a TrueForm is a
+            defensible buy. If you mostly want a curved deck for intervals and sprints in a garage gym, the
+            AssaultRunner Pro and SOLE C80 do that job for much less, and our
+            <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium">best curved treadmills</a>
+            roundup compares all of them on one page.
+          </p>
+        </div>
+
+        <div id="who-makes" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Who Makes TrueForm, and How It Sells</h2>
+<p>
+            TrueForm is a US company whose Runner is hand-built at its own facility in Wisconsin. Its
+            store, trueformrunner.com, sells three treadmill listings — the Runner, the Enduro (a
+            pared-back Runner with lower handrails and no display) and the Trainer — plus belts,
+            displays, chargers and a sprint accessory called the Performance Adapter. TrueForm's own
+            comparison page is candid about the split: the Runner is "Built in the USA", while the
+            Trainer is "Designed and Engineered in house" and "Built in our manufacturing facility
+            overseas."
+          </p>
+          <p>
+            You will not find TrueForm on Amazon. It sells direct and through strength-equipment dealers
+            such as Rogue Fitness and Sorinex, which is why most of the reviews you will read come from
+            garage-gym and coaching sites rather than general retailers. That has two practical
+            consequences. First, prices barely move: there are no lightning deals, and the discounts we
+            saw were TrueForm's own, mirrored by its dealers. Second, freight delivery, returns and
+            warranty claims run through TrueForm or the dealer you bought from, so read their terms
+            before you order rather than assuming the generous return windows of a big-box retailer.
+            Our <a href="/treadmill-delivery-guide/" class="text-[#0F62FE] font-medium">treadmill delivery guide</a>
+            covers what to ask about freight.
+          </p>
+          <p>
+            A note on names. The search terms people use — "trueform.runner", "TrueForm Trainer",
+            "TrueForm Performance" — map onto TrueForm's own branding in slightly confusing ways.
+            TRUEFORM.RUNNER is the flagship. TRUEFORM.TURF, TRUEFORM.TRACK and the Naboso model are the
+            Runner with a different tread, sold as options on the same listing. "Performance" is not a
+            separate treadmill: it is one of TrueForm's three use categories (alongside wellness and
+            functional training) and the name of a $300 tethering accessory. The Trainer is the only
+            genuinely different machine.
+          </p>
+        </div>
+
+        <div id="curve" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. What Makes a TrueForm Different: the Shallow Curve</h2>
+<p>
+            Every curved manual treadmill works the same way at heart. The running surface is a belt of
+            slats on bearings, shaped so the front rises. Step onto the front of the curve and gravity
+            and your stride push the belt backwards; drift to the back and it slows. There is no motor
+            setting a pace, so speed is whatever you produce. Our
+            <a href="/curved-treadmill-guide/" class="text-[#0F62FE] font-medium">curved treadmill guide</a>
+            explains the mechanics in more detail.
+          </p>
+          <p>
+            Where makers differ is the depth of the curve. A deep curve gives you more help: lean
+            forward and the belt runs away with you, which feels exciting in a sprint and twitchy at a
+            steady jog. TrueForm's pitch is the opposite. It describes its curve as the least steep on
+            the market, gives the Trainer's as a 2.5-inch shallow curve, and says the symmetrical curve at
+            the rear gives you control that flat-backed rivals lack. Independent reviewers broadly agree
+            that a TrueForm feels calmer and less eager than an AssaultRunner, and that holding a steady
+            pace takes more deliberate effort. TreadmillReviews.com reports that the Runner's belt is
+            heavier than the Trainer's, which makes the Runner harder to keep moving.
+          </p>
+          <p>
+            TrueForm goes further, with a feature it calls Responsive Belt Technology: in its words,
+            "poor posture and form result in the belt moving slowly, while proper posture and form move
+            the belt with ease." That is a plausible description of how a shallow, heavy curve behaves,
+            and coaches who like TrueForm use it as a form-feedback tool. TrueForm's site also cites a
+            gait study and a "33% higher calorie burn" than on a traditional treadmill. We have not seen
+            the full study or the calorie test, so treat those as the maker's claims, not established
+            findings. What is reasonably well supported is that self-powered running at a given pace is
+            harder work than on a motorized belt; our
+            <a href="/manual-vs-motorized-treadmill/" class="text-[#0F62FE] font-medium">manual vs motorized treadmill</a>
+            comparison covers why.
+          </p>
+          <p>
+            The flip side is that a shallow curve is less forgiving for slow walking. One independent
+            reviewer argues the Trainer suits running far better than desk walking, and that matches the
+            general rule that the gentler the curve, the more effort a slow pace takes to sustain. If most
+            of your use will be walking, see the section on alternatives below.
+          </p>
+        </div>
+
+        <div id="runner-vs-trainer" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. TrueForm Runner vs Trainer: the Figures, Checked</h2>
+<p>
+            The table below sets out what the sources say on 5 November 2026. TrueForm publishes
+            surprisingly little in the way of hard specifications on its own product pages, so several
+            figures come from its dealers; where an independent source disagrees, the row says so.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[560px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">&nbsp;</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">TRUEFORM.TRAINER</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">TRUEFORM.RUNNER</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Price, 5 Nov 2026</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$3,495 rubber, $3,995 turf (TrueForm); $3,495 (Rogue)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$6,195–$10,195 by configuration (TrueForm); $6,595, shown unavailable (Rogue)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Built</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Overseas, at TrueForm's own facility</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Hand-built in Wisconsin</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Lead time</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Ships in 1–3 business days (TrueForm and Rogue)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Ships in 14 weeks (TrueForm); 6–8 weeks (Rogue); up to 10–12 weeks (Sorinex)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Running surface</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">54 x 17 in. (Rogue); about 57 in. usable by one reviewer's estimate</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">54 x 17 in. (Rogue and TreadmillReviews.com)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Machine weight</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">300 lb (Rogue, current model); 270 lb (2023 review) — conflict</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">350 lb (Rogue and TreadmillReviews.com)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Max user weight</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">400 lb (TrueForm, Rogue and Garage Gym Lab)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">700 lb walking, 450 lb running (TrueForm, TreadmillReviews.com); one review lists 750 lb — conflict</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Treads</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rubber or turf</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Kraiburg rubber, green or black turf, red track, Naboso</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 font-bold text-gray-900">Display</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Basic battery monitor; Bluetooth to FTMS apps on the current model (TrueForm)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Standard battery display or TrueTouch touchscreen</td></tr>
+              <tr><td class="py-2 pr-4 font-bold text-gray-900">Warranty (TrueForm)</td><td class="py-2 pr-4 text-gray-700">Lifetime frame, 5 yr moving parts, 3 yr electronics, 1 yr labour</td><td class="py-2 pr-4 text-gray-700">Lifetime frame, 5 yr moving parts and electronics, 2 yr labour</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Two things stand out. The first is how much of the difference is about build rather than
+            dimensions: on Rogue's listings the two machines share the same 54 by 17-inch running surface
+            and the same 64 by 31 by 63-inch footprint, and the Runner's extra money buys heavier-gauge
+            steel, a heavier belt, US assembly, more tread choices and a longer warranty on labour and
+            electronics. The second is that both surfaces are 17 inches wide. That is normal for curved
+            trainers — the AssaultRunner Pro is also 17 inches — but narrow next to a 22-inch motorized
+            deck, and broad-shouldered runners notice it.
+          </p>
+          <p>
+            The Trainer was redesigned recently. TrueForm calls the current one "all new" and lists
+            upgraded treads and rollers rated to 400 lb at top speed, a front Power Bar for sprint starts,
+            modular mounts for future attachments, and Bluetooth that connects to FTMS apps such as Zwift
+            and Strava. Reviews from 2023 describe the earlier version, which explains why the machine
+            weight differs between sources. If you buy a Trainer second-hand, ask which version it is.
+          </p>
+        </div>
+
+        <div id="machines" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. The TrueForm Machines, and Two Cheaper Rivals</h2>
+<p>
+            Two TrueForm cards and two rivals that most TrueForm shoppers also look at. The specification
+            line on each card carries only figures that the maker or an official dealer and at least one
+            independent source agree on, which is why some figures you will see quoted elsewhere are
+            missing. Prices are those shown on 5 November 2026.
+          </p>
+        </div>
+      </div>
+
+      <!-- Product cards -->
+      <div class="not-prose">
+        {
+          PRODUCTS.map((product, index) => (
+            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
+              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
+                  <div>
+                    <h3 class="text-white font-black text-xl leading-tight m-0">
+                      {index + 1}. {product.name}
+                    </h3>
+                    <p class="text-gray-400 text-xs">{product.category}</p>
+                  </div>
+                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                    {product.badge}
+                  </span>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center gap-2 mb-4 flex-wrap">
+                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
+                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
+                  </div>
+                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
+                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
+                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
+                      <ul class="space-y-2">
+                        {product.pros.map((pro) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
+                      <ul class="space-y-2">
+                        {product.cons.map((con) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="border-t border-gray-100 pt-4">
+                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
+                    <div class="flex flex-wrap items-center gap-3">
+                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+                        {product.amazonLabel} &rarr;
+                      </a>
+                      {product.reviewUrl && (
+                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
+                          Read our full {product.name} review &rarr;
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="runner-options" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Runner Options: Treads, Displays, Enduro and the Performance Adapter</h2>
+<p>
+            The Runner's price spread comes almost entirely from three choices. On 5 November 2026
+            TrueForm's listing priced them as follows.
+          </p>
+          <ul>
+            <li><strong>Tread.</strong> Kraiburg rubber is the standard surface. Green or black turf,
+            red athletic track and a textured Naboso surface each added about $700 to the rubber price
+            in a black or white frame. Turf suits sled pushes and cleated athletes; Naboso is aimed at
+            barefoot training.</li>
+            <li><strong>Display.</strong> The standard display is battery-powered and shows pace,
+            distance, time and speed. TrueTouch adds a touchscreen with Bluetooth, HDMI and built-in apps;
+            Rogue and Sorinex list Netflix and Zwift among them. It added $1,000 on most configurations.
+            The cheapest option on the Runner listing, labelled "Enduro", drops the display and was
+            $1,300 below the standard display.</li>
+            <li><strong>Frame colour.</strong> Black or white powder coat, or a custom RAL colour for
+            branding a facility, which added between $700 and $1,000.</li>
+          </ul>
+          <p>
+            TrueForm also lists the TRUEFORM.ENDURO as its own product: the Runner's base with lower
+            handrails and no display, which TrueForm says is designed to let you focus on movement. Its
+            separate listing showed $5,995 in white with rubber and $6,495 to $6,995 in black, which does
+            not line up exactly with the $6,195 "Enduro" option on the Runner listing. We could not find
+            independent coverage of the Enduro to cross-check, so ask TrueForm which price applies to the
+            configuration you want before you order.
+          </p>
+          <p>
+            The Performance Adapter is a $300 accessory ($400 in a custom colour) that TrueForm describes
+            as a tethering system that "allows athletes to add tension for high-intensity workouts",
+            designed for explosive acceleration work. It fits the Runner, Turf, Track and office versions,
+            not the Trainer. Neither TrueForm machine has a built-in resistance setting in the way that
+            magnetic-brake trainers such as the SOLE C80 and the
+            <a href="/bells-of-steel-blitz-treadmill/" class="text-[#0F62FE] font-medium">Bells of Steel Blitz</a>
+            do, so if resisted sprints and sled-style pushes are central to your training, that is a real
+            difference to weigh.
+          </p>
+          <p>
+            Replacement belts are expensive, which is worth knowing before you choose a tread: TrueForm's
+            parts store listed a Runner Kraiburg belt at $2,295, turf and track belts at $2,549 and a
+            Naboso belt at $2,675. These are long-life parts and most home owners will never replace one,
+            but a facility with heavy use should budget for it.
+          </p>
+        </div>
+
+        <div id="warranty" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. The TrueForm Warranty, Read Properly</h2>
+<p>
+            TrueForm's warranty page, read on 5 November 2026, gives the Runner a lifetime frame
+            warranty, five years on moving parts, five years on electronics and the display, and two
+            years of labour. The Trainer has the same lifetime frame and five years on moving parts, but
+            three years on electronics and one year of labour. The page adds that coverage varies by
+            model, component, usage environment and purchase date, and points to a full warranty
+            document for the binding terms.
+          </p>
+          <p>
+            Two cautions. Older coverage quotes different terms: TreadmillReviews.com's 2024 review gives
+            the Runner a 20-year frame warranty, and Garage Gym Lab's 2023 review of the earlier Trainer
+            describes five years on the frame, parts and components. Those may reflect older policies or
+            older machines, but they are a reminder to get the warranty for your purchase in writing.
+            And "lifetime" frame cover is less valuable than it sounds on a machine with no motor and few
+            moving parts; the parts that wear on a curved trainer are the bearings, the slats and the belt,
+            so the five-year moving-parts term is the one that matters. On that measure TrueForm is
+            competitive: Assault lists three years on the AssaultRunner Pro's moving parts, and SOLE gives
+            the C80 one year on parts. Our
+            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
+            explains how to compare terms.
+          </p>
+          <p>
+            We searched the US Consumer Product Safety Commission's recall database for TrueForm on
+            5 November 2026 and found no recalls.
+          </p>
+        </div>
+
+        <div id="space-delivery" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Space, Floors and Delivery</h2>
+<p>
+            Rogue lists both machines at 64 inches long, 31 wide and 63 high, which is shorter than most
+            motorized running treadmills, and neither needs a power outlet. Add clearance behind the deck
+            for safety; our
+            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">treadmill space guide</a>
+            gives the usual allowances. Neither machine folds.
+          </p>
+          <p>
+            Weight is the bigger planning problem. Rogue gives the Trainer a 300 lb product weight and a
+            326 lb shipping weight in a 73 by 32 by 24-inch crate, and lists the Runner at 350 lb. Both
+            ship by freight to the 48 contiguous states with no pickup from Rogue, so plan the route from
+            the kerb to the room: doorways, stairs and whether the carrier will bring it inside. A
+            ground-floor garage or basement with a level concrete floor and a heavy rubber mat is the ideal
+            home; see our <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">treadmill mat picks</a>
+            and the notes on <a href="/treadmill-in-garage/" class="text-[#0F62FE] font-medium">running a treadmill in a garage</a>.
+          </p>
+          <p>
+            Lead time is the other difference. The Trainer was listed as shipping in one to three business
+            days by TrueForm and Rogue. The Runner is built to order: TrueForm said 14 weeks, Rogue six to
+            eight weeks and Sorinex up to ten to twelve. If you need it for a season start or a facility
+            opening, confirm the date in writing.
+          </p>
+        </div>
+
+        <div id="who-should-buy" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Who a TrueForm Suits, and Who Should Buy Something Else</h2>
+<p>
+            <strong>A TrueForm Trainer suits</strong> a heavier runner who wants a curved trainer rated to
+            400 lb, a runner or coach who values the calmer shallow curve for steady running and form
+            work, and a home gym that wants a premium machine without a 14-week wait. It is also the
+            sensible TrueForm for a family: the Power Bar gives children a low grip point, and the lighter
+            belt is easier to get moving.
+          </p>
+          <p>
+            <strong>A TrueForm Runner suits</strong> a performance facility, a team, a clinic or a very
+            committed athlete, where heavy daily use, custom branding and turf or track treads justify the
+            price. For a home runner it is far more machine than needed, and the money would buy a curved
+            trainer and a good motorized treadmill.
+          </p>
+          <p>
+            <strong>Buy something else if</strong> you mainly want to walk (a motorized treadmill or a
+            walking pad is easier; see our <a href="/best-manual-treadmills/" class="text-[#0F62FE] font-medium">manual treadmill guide</a>
+            for the flat, cheap end), if you want built-in resistance for sled pushes (the SOLE C80 and
+            the Bells of Steel Blitz have magnetic brakes), or if you simply want the curved-treadmill
+            experience at the lowest price that is still well built, which is the AssaultRunner Pro's job.
+            For workouts that suit any curved deck, see our
+            <a href="/curved-treadmill-workouts/" class="text-[#0F62FE] font-medium">curved treadmill workouts</a>.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How much is a TrueForm treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                On 5 November 2026 TrueForm’s US store listed the Trainer at $3,495 with a rubber tread and $3,995 with turf, and the Runner at $6,195 to $10,195 depending on frame colour, tread and display, with the standard configuration at $7,495. Rogue Fitness listed the Trainer at $3,495 and the Runner at $6,595. Prices change, so confirm before ordering.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What is the difference between the TrueForm Runner and the Trainer?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                The Runner is hand-built in Wisconsin with a heavier steel frame and belt, five tread options, a choice of displays and a 14-week build time. The Trainer is designed by TrueForm and built at its overseas facility, is lighter, ships in one to three business days and costs about half as much. On Rogue’s listings both have a 54 by 17-inch running surface.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is the TrueForm Trainer worth it?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                It is worth it if the shallow curve and the 400 lb rating matter to you, because no cheaper curved trainer we cover offers both. If you just want a curved deck for sprints and intervals, the AssaultRunner Pro is similar money with a longer surface, and the SOLE C80 is about $1,100 less with magnetic resistance. We have not tested the Trainer.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is TrueForm sold on Amazon?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                No. TrueForm sells through its own store and dealers such as Rogue Fitness and Sorinex. The Amazon buttons on this page go to a tagged Amazon search, which may show only similar curved manual treadmills, not a TrueForm listing.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What is the TrueForm Performance?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                There is no separate TrueForm Performance treadmill. Performance is one of TrueForm’s use categories, and the Performance Adapter is a $300 tethering accessory for the Runner that lets an athlete add tension for sprint and acceleration work. It does not fit the Trainer.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What warranty does TrueForm offer?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                TrueForm’s warranty page gives both machines a lifetime frame warranty and five years on moving parts. The Runner adds five years on electronics and two years of labour; the Trainer has three years on electronics and one year of labour. Older reviews quote different terms, so get the warranty for your purchase in writing.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a TrueForm Treadmill</h2>
+          <p class="text-gray-700 leading-relaxed">A TrueForm is a large, expensive, specialised purchase that is hard to return. These are the ways buyers end up disappointed with one.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying the Runner for home use because it is the famous one</h3>
+              <p class="text-gray-700 text-sm m-0">Most of what the Runner adds over the Trainer is build weight, US assembly, tread choice and facility branding. For one runner at home, the Trainer gives the same curve philosophy and a 400 lb rating for about half the money and ships in days rather than weeks. Decide which Runner-only feature you actually need before paying for it.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Expecting it to suit long walks</h3>
+              <p class="text-gray-700 text-sm m-0">A shallow curve with a heavy belt rewards a purposeful stride and makes a slow, relaxed walk hard work. Independent reviewers describe the TrueForm as a running and training tool rather than a desk-walking machine. If you mainly walk, a motorized treadmill or a deeper-curved trainer will be more comfortable.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming every TrueForm has resistance</h3>
+              <p class="text-gray-700 text-sm m-0">Neither the Runner nor the Trainer has a resistance dial. Extra tension on the Runner comes from the separate Performance Adapter tether, and the Trainer cannot take it. If sled-style pushes and resisted sprints are your main use, a magnetic-brake trainer such as the SOLE C80 or the Bells of Steel Blitz is the better fit.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ignoring freight and the floor</h3>
+              <p class="text-gray-700 text-sm m-0">Both machines weigh around 300 to 350 lb and arrive by freight. Buyers who have not measured the route to the room or checked whether delivery includes carrying it inside end up stuck with a crate on the drive. Plan the route, the floor and a heavy mat before ordering.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Treadmill Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/best-curved-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Roundup</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Curved Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">AssaultRunner, SOLE, Tru Grit, Sunny, TrueForm and Woodway compared on one page.</p>
+            </a>
+            <a href="/curved-treadmill-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Explainer</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Curved Treadmill Guide</p>
+              <p class="text-sm text-gray-500 leading-relaxed">How a self-powered curved deck works, who it suits, and what it costs to own.</p>
+            </a>
+            <a href="/bells-of-steel-blitz-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Rival</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Bells of Steel Blitz Treadmill</p>
+              <p class="text-sm text-gray-500 leading-relaxed">A steep-curve trainer with six magnetic resistance levels and a 400 lb rating.</p>
+            </a>
+            <a href="/curved-treadmill-workouts/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Training</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Curved Treadmill Workouts</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Sprints, intervals and steady runs built for a self-powered curved belt.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">For most buyers, the TrueForm to consider is the Trainer: TrueForm's
+          shallow curve and a 400 lb rating for $3,495 with a rubber tread on the day we checked,
+          shipping in days.</strong> The hand-built Runner, from $6,195 to over $10,000, is a facility
+          machine, worth it where heavy daily use, turf or track treads and custom branding justify the
+          price.
+          </p>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            Before you pay a TrueForm premium, compare the AssaultRunner Pro at about the same price and
+          the SOLE C80 at about $1,100 less with magnetic resistance. All of them are in our
+          <a href="/best-curved-treadmills/" class="text-[#5AA9FF] font-bold no-underline">best curved treadmills</a> roundup.
+          </p>
+        </div>
+
+        <!-- Meet the Author -->
+        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
+          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
+          <div>
+            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
+            <p class="text-sm font-bold text-gray-900 m-0">
+              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
+              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+            </p>
+            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
+              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
+              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
+              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
+              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
+              running ergonomics, noise and long-term durability. Every guide says what was checked and
+              when, and says plainly when a product has not been tested hands-on.
+              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
+              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </article>
+</Layout>
