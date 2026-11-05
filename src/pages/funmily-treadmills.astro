@@ -1,0 +1,793 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "FUNMILY Treadmill (2026): Walking Pads, Desk Treadmill and Manuals";
+const description =
+  "Is a FUNMILY treadmill or walking pad worth buying? FUNMILY’s range checked on 5 November 2026, where its figures conflict, how to find the manual, and checked alternatives.";
+
+const PRODUCTS = [
+  {
+    id: "funmily-12-incline-walking-pad",
+    name: "FUNMILY Walking Pad Treadmill with Incline and Handle Bar",
+    category: "Walking Pad With Handle and Manual Incline",
+    badge: "Most Common FUNMILY",
+    amazonUrl: "https://www.amazon.com/s?k=FUNMILY+Walking+Pad+Treadmill+with+Incline+and+Handle+Bar&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    image: null,
+    reviewUrl: null,
+    priceRange: "Price not confirmed on 5 Nov 2026",
+    priceBounds: null,
+    specs: "Handle bar · manual incline (12% per FUNMILY) · 0.6–4.0 mph per the Amazon listing · motor and capacity conflict",
+    pros: [
+      "A handle bar and a manual incline on a pad that slides under a desk",
+      "Remote control and LED display",
+      "FUNMILY states a 12-month parts and labor warranty",
+    ],
+    cons: [
+      "Motor given as 2.5 HP by FUNMILY and 3.5 HP on Amazon",
+      "Capacity given as 300, 350 and 400 lb by different sources",
+      "Amazon’s listing gives a 35 x 15-inch belt, short and narrow",
+    ],
+    bottomLine: "Only worth it at a clearly lower price than the checked pads, and only for walking, given how much its figures move.",
+    description: "This is the FUNMILY pad most often seen on deal sites: a walking pad with a short handle bar, a remote and a manual incline. FUNMILY’s website lists a “Walking Pad Treadmill with Incline (12%)” with a 2.5 HP brushless motor, a dual-position incline to 12%, a 16-inch belt width, a 300 lb capacity and a 5.9-inch profile. A Slickdeals post from 25 May 2026 quotes the Amazon listing, at $143.99 after a coupon, as a 3.5 HP brushless pad with a 350 lb capacity, a 35 by 15-inch belt, 0.6 to 4.0 mph and a one-year warranty, and a listing summary for a pink FUNMILY 12% pad gives 3.5 HP and 400 lb. Slickdeals commenters also said the review photos appeared to show a different model. With three capacities and two motor ratings, the card gives neither: assume 300 lb at most.",
+  },
+  {
+    id: "funmily-treadmill-desk",
+    name: "FUNMILY Treadmill with Desk Workstation",
+    category: "Walking Treadmill With Built-In Desk",
+    badge: "Best for Desk Work",
+    amazonUrl: "https://www.amazon.com/s?k=FUNMILY+Treadmill+with+Desk+Workstation&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    image: null,
+    reviewUrl: null,
+    priceRange: "Price not confirmed on 5 Nov 2026",
+    priceBounds: null,
+    specs: "Built-in height-adjustable desk · 0.6–7.5 mph · 3-level incline · 2.5 HP advertised",
+    pros: [
+      "A desk surface built in, so you do not need a standing desk",
+      "FUNMILY and ShopSavvy agree on 7.5 mph and three incline levels",
+      "Folds for storage, according to FUNMILY",
+    ],
+    cons: [
+      "FUNMILY’s own page gives the capacity as 300 lb and 265 lb",
+      "Buyers report it is heavy and hard to move, with timer and support complaints",
+      "ShopSavvy’s aggregated score was 5.9 out of 10",
+    ],
+    bottomLine: "For someone without a standing desk who wants an all-in-one walking workstation and accepts a budget build.",
+    description: "FUNMILY’s treadmill desk combines a walking treadmill with a desk surface on the handlebar. FUNMILY’s website lists it with a 2.5 HP motor, 0.6 to 7.5 mph, a three-level incline that it describes as up to 4%, a 7-layer belt and a desk that adjusts from 33.5 to 49.9 inches, and gives the capacity as 300 lb in one section and 265 lb in another, for what appear to be two versions. ShopSavvy’s aggregated review page, last updated in October 2024 when it saw the treadmill at $272.60, gives the same 7.5 mph, three incline levels and 300 lb, and a score of 5.9 out of 10: buyers praise easy assembly and quiet running but report weight, timer faults, units that did not work and poor customer service. Our treadmill desks roundup covers sturdier options.",
+  },
+  {
+    id: "funmily-5-incline-walking-pad",
+    name: "FUNMILY Smallest Walking Pad with 5% Incline",
+    category: "Compact Walking Pad With Fixed Incline",
+    badge: "Smallest FUNMILY",
+    amazonUrl: "https://www.amazon.com/s?k=FUNMILY+Walking+Pad+5%25+Incline&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    image: null,
+    reviewUrl: null,
+    priceRange: "Price not confirmed on 5 Nov 2026",
+    priceBounds: null,
+    specs: "Fixed 5% incline · 0.6–4.0 mph (maker) · 2.5 HP advertised · no handle",
+    pros: [
+      "A built-in gentle incline, so every walk is slightly uphill",
+      "Sold as needing no assembly",
+      "Small enough for a narrow space under a desk",
+    ],
+    cons: [
+      "FUNMILY gives 41 x 25 x 8 inches and a reseller 37 x 22.4 x 6.7, so no size is printed",
+      "The incline is fixed; it cannot be lowered to flat",
+      "No independent confirmation of its 300 lb capacity",
+    ],
+    bottomLine: "For a light walker who wants a slight, permanent incline at a desk; check the dimensions on the listing before you buy.",
+    description: "FUNMILY’s website lists a “Smallest Under Desk Treadmill with 5% Incline” with a hidden 2.5 HP motor, 0.6 to 4 mph, a fixed 5% incline, a 300 lb capacity, a 50 lb unit weight and a 41 by 25 by 8-inch size, plus a 2025 version with the same headline figures. A reseller listing for what it calls the FUNMILY F0011 “Smallest Walking Pad With Incline” gives $299.99 and 37 by 22.4 by 6.7 inches, a noticeably smaller machine, so we cannot tell whether they are the same pad. We found no independent source for the 300 lb capacity. The fixed incline is the thing to understand before buying: the deck is always slightly raised at the front, which suits steady desk walking but cannot be set flat.",
+  },
+  {
+    id: "urevo-strol-2e",
+    name: "UREVO Strol 2E",
+    category: "Checked 2-in-1 Alternative",
+    badge: "Cheapest Checked Pad",
+    amazonUrl: "https://www.amazon.com/dp/B0HG9D52DC?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41ZS3Q+sfdL._SL500_.jpg","width":500,"height":500},
+    reviewUrl: null,
+    priceRange: "$169.99 at UREVO (5 Nov 2026)",
+    priceBounds: {"low":169.99,"high":169.99},
+    specs: "0.6–6.2 mph with handle up · 265 lb capacity · about 15 x 40 in. belt · no incline",
+    pros: [
+      "UREVO and two hands-on reviews agree on the 265 lb rating and 6.2 mph",
+      "A fold-down handle, like the FUNMILY handle-bar pad",
+      "A one-year plus 180-day warranty from a brand with a US store",
+    ],
+    cons: [
+      "No incline",
+      "Sources give the belt as 40.1 or 40.2 inches long",
+      "Walking speed is capped at 4 mph with the handle folded",
+    ],
+    bottomLine: "The cheap handle-bar pad to compare any FUNMILY price against, with figures someone has checked.",
+    description: "The Strol 2E is UREVO’s budget 2-in-1 walking pad with a handle that folds flat. UREVO’s US store listed it in stock at $169.99, against $289.99, on 5 November 2026, with 0.6 to 4.0 mph with the handle down and 0.6 to 6.2 mph with it raised, a 265 lb maximum load, a 2.25 HP maximum motor rating and a one-year plus 180-day warranty. Live Science and T3, both of which reviewed it hands-on, give the same 265 lb and 6.2 mph. The belt is 40.2 inches long on UREVO’s page and 40.1 in other listings, which is why the card rounds. It has no incline, which is the main thing a FUNMILY pad offers that this does not.",
+  },
+  {
+    id: "merach-novawalk-w50-trekpad",
+    name: "MERACH NovaWalk W50 TrekPad",
+    category: "Checked Incline Pad Alternative",
+    badge: "Best for Heavier Walkers",
+    amazonUrl: "https://www.amazon.com/dp/B0HJTT2S6R?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41N86eQUrbL._SL500_.jpg","width":500,"height":500},
+    reviewUrl: null,
+    priceRange: "$299.99 at MERACH (5 Nov 2026)",
+    priceBounds: {"low":299.99,"high":299.99},
+    specs: "41.3 x 16.5 in. belt · 0.6–4.0 mph · 400 lb capacity · 1.25 HP continuous motor · powered incline",
+    pros: [
+      "A 400 lb rating that holds up across the maker, Amazon and independent coverage",
+      "A powered incline and a published continuous motor rating",
+      "A two-year warranty, double FUNMILY’s",
+    ],
+    cons: [
+      "No handle bar",
+      "Does not fold, and at 69 lb is heavy to move",
+      "MERACH gives 12% incline and at least one roundup 10%, so no maximum is printed",
+    ],
+    bottomLine: "The incline pad to buy if a FUNMILY listing’s high weight limit is what tempted you.",
+    description: "If a FUNMILY listing’s 350 or 400 lb claim is what drew you to it, this is the budget incline pad whose high weight limit holds up. MERACH’s product page on 5 November 2026 listed the W50 TrekPad at $299.99, against $479.99, with a 41.3 by 16.5-inch belt, 0.6 to 4.0 mph, a 400 lb maximum user weight, a 1.25 HP continuous and 3.5 HP peak motor, powered incline, a 69.2 lb unit weight, a two-year warranty and 30-day returns. The capacity and belt figures matched the Amazon listing and independent coverage when we checked them in October. MERACH gives 12% incline while a published roundup describes 10%, so the card leaves the maximum out.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Brands", item: "https://www.treadmillreviewsusa.com/brands/" },
+        { "@type": "ListItem", position: 3, name: "FUNMILY Treadmills", item: "https://www.treadmillreviewsusa.com/funmily-treadmills/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Is FUNMILY a good treadmill brand?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "It is a budget brand with a website, a US address and a stated 12-month warranty, which is more than many marketplace names offer. But its website and Amazon listings give the same pads different motors and weight limits, and we found no hands-on review we could rely on, so judge each listing on its own.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Where can I find a FUNMILY treadmill manual?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "FUNMILY does not host manuals on its website. Look first in the “Product guides and documents” section of the Amazon listing you bought from, then ask the seller through Your Orders using the model number on the frame. Third-party sites index FUNMILY manuals by Amazon ASIN; check the model matches.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the weight limit of a FUNMILY walking pad?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "It depends on the model and the source. For the 12% incline handle-bar pad we found 300 lb on FUNMILY’s website, 350 lb on Amazon in May 2026 and 400 lb in a listing summary, and one indexed FUNMILY manual gives 100 kg, about 220 lb. Use the lowest figure for your exact model.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What warranty does FUNMILY give?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "FUNMILY’s FAQ says all its fitness equipment comes with a 12-month warranty for parts and labor, and that warranty details are on each Amazon product page. Support runs through Amazon’s Returns & Orders page or the phone number in the product manual.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Has there been a FUNMILY treadmill recall?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "We searched the CPSC recall database for FUNMILY by title and manufacturer on 5 November 2026 and found no recall. Check your model number on the CPSC site, since marketplace products are sometimes recorded under the importer’s name.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is a good alternative to a FUNMILY walking pad?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "On 5 November 2026 the UREVO Strol 2E handle-bar pad was $169.99 at UREVO, with figures confirmed by two hands-on reviews. For an incline and a 400 lb rating that holds up, the MERACH NovaWalk W50 TrekPad was $299.99 at MERACH.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
+      datePublished: "2026-11-05",
+      dateModified: "2026-11-05",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+    ...PRODUCTS.map((product) => ({
+      "@type": "Product",
+      name: product.name,
+      description: product.description,
+      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
+      ...(product.priceBounds
+        ? {
+            offers: {
+              "@type": "AggregateOffer",
+              priceCurrency: "USD",
+              lowPrice: product.priceBounds.low,
+              highPrice: product.priceBounds.high,
+              url: product.amazonUrl,
+            },
+          }
+        : {}),
+    })),
+    {
+      "@type": "ItemList",
+      name: title,
+      numberOfItems: 5,
+      itemListElement: PRODUCTS.map((product, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: product.name,
+        url: `https://www.treadmillreviewsusa.com/funmily-treadmills/#${product.id}`,
+      })),
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-11-05",
+    modifiedTime: "2026-11-05",
+    author: "Shaheer Ali Khan",
+    section: "Fitness Equipment",
+    tags: [
+      "funmily treadmill",
+      "funmily walking pad treadmill",
+      "funmily treadmill manual",
+      "funmily treadmill with desk",
+      "funmily treadmill review",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "See the Models", link: "#models" }}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-funmilytreadmills" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-funmilytreadmills)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Brand Guide
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated November 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          FUNMILY Treadmills: <span class="text-[#5AA9FF]">What We Could Confirm</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          FUNMILY sells walking pads, a treadmill with a built-in desk and folding treadmills, almost entirely through Amazon. Its own website lists the range but no prices, and the same FUNMILY pad can carry a 2.5 or 3.5 HP motor and a 300, 350 or 400 lb limit depending on where you read it. Here is what we could confirm on 5 November 2026, where to find a FUNMILY manual, and what to check before you buy.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            The Short Answer
+          </a>
+          <a href="#manuals" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            FUNMILY Manuals
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
+          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">November 5, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="820" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
+          5 November 2026 we read FUNMILY’s official website (thefunmily.com), which lists its range
+          with specifications and links each product to Amazon but shows no prices, plus its FAQ and
+          warranty statement. We cross-checked individual models against a May 2026 Slickdeals post that
+          quotes the Amazon listing, ShopSavvy’s aggregated review page for the FUNMILY treadmill desk,
+          and listing summaries and manuals indexed by search engines. Amazon, Walmart and the manuals
+          site we tried (manuals.plus) returned errors, bot checks or security checks, so we could not
+          read a current FUNMILY listing, price or manual directly; no card carries a price. We found no
+          hands-on review we could rely on. Figures that conflict are stated as conflicts and kept off
+          the cards. We searched the CPSC recall database for FUNMILY by title and manufacturer and
+          found no recall. The UREVO and MERACH alternatives were checked against their makers’ US
+          stores the same day. We have not tested any of these machines. Prices change often. We earn
+          a commission if you buy through the Amazon links on this page; it does not change what we
+          say.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="max-w-3xl mx-auto px-4 pt-8">
+      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
+        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
+        <ul class="list-none m-0 p-0">
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Most Common FUNMILY:</span>
+            <a href="#funmily-12-incline-walking-pad" class="font-bold text-gray-900 no-underline hover:underline">FUNMILY Walking Pad Treadmill with Incline and Handle Bar</a>
+            <a href="#funmily-12-incline-walking-pad" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Desk Work:</span>
+            <a href="#funmily-treadmill-desk" class="font-bold text-gray-900 no-underline hover:underline">FUNMILY Treadmill with Desk Workstation</a>
+            <a href="#funmily-treadmill-desk" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Smallest FUNMILY:</span>
+            <a href="#funmily-5-incline-walking-pad" class="font-bold text-gray-900 no-underline hover:underline">FUNMILY Smallest Walking Pad with 5% Incline</a>
+            <a href="#funmily-5-incline-walking-pad" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Cheapest Checked Pad:</span>
+            <a href="#urevo-strol-2e" class="font-bold text-gray-900 no-underline hover:underline">UREVO Strol 2E</a>
+            <a href="#urevo-strol-2e" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Heavier Walkers:</span>
+            <a href="#merach-novawalk-w50-trekpad" class="font-bold text-gray-900 no-underline hover:underline">MERACH NovaWalk W50 TrekPad</a>
+            <a href="#merach-novawalk-w50-trekpad" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Is a FUNMILY Treadmill Any Good? The Short Answer</a>
+          <a href="#who-is-funmily" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Who Makes FUNMILY Treadmills, and Where They Are Sold</a>
+          <a href="#models" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. FUNMILY Treadmills and Walking Pads: What We Could Confirm</a>
+          <a href="#conflicts" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Where FUNMILY’s Figures Disagree</a>
+          <a href="#manuals" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. How to Find a FUNMILY Treadmill Manual</a>
+          <a href="#what-to-check" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. What to Check on a FUNMILY Listing Before You Buy</a>
+          <a href="#who-should-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Who Should Buy a FUNMILY Treadmill</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          A FUNMILY treadmill is most likely something you found on Amazon: a walking pad with an
+          incline and a handle bar, a treadmill with a desk on top, or a small folding treadmill, at a
+          price well under the brands you have heard of. FUNMILY is a little more substantial than many
+          marketplace names: it has a website, a US address and a stated 12-month warranty. But the site
+          sends every buyer to Amazon, its own pages disagree with each other, and the Amazon listings
+          disagree with the site. This guide sets out what we could confirm, how to find the manual for
+          the model you own or are considering, and which checked alternatives cost about the same.
+        </p>
+
+        <div id="short-answer" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Is a FUNMILY Treadmill Any Good? The Short Answer</h2>
+<p>
+            <strong>A FUNMILY walking pad can be a usable budget machine for walking, but we could not
+            confirm its key figures: FUNMILY’s website and its Amazon listings give the same pad
+            different motors and weight limits, and we found no hands-on review we could rely
+            on.</strong> If you buy one, buy it from a listing Amazon fulfils, at a clearly lower price
+            than the checked alternatives, and assume the lowest weight limit you see.
+          </p>
+          <p>
+            FUNMILY is better documented than the many walking-pad names that exist only as an Amazon
+            storefront. It has its own website listing about a dozen products, a business address in
+            Bakersfield, California, a FAQ and a stated warranty of 12 months on parts and labor. But the
+            website shows no prices and sends every “Check Price” button to Amazon, and support runs
+            through Amazon’s Returns &amp; Orders page or the phone number printed in the manual. In
+            practice you are buying a marketplace product, and the listing is what you are relying on.
+          </p>
+          <p>
+            The cards below cover the three FUNMILY machines people search for most, with only the
+            figures that held up, plus two checked alternatives at similar prices. If you own a FUNMILY
+            already and are looking for the manual, skip to the
+            <a href="#manuals" class="text-[#0F62FE] font-medium">manuals section</a>.
+          </p>
+        </div>
+
+        <div id="who-is-funmily" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Who Makes FUNMILY Treadmills, and Where They Are Sold</h2>
+<p>
+            FUNMILY describes itself as a home-fitness brand and lists a business address of Seven Oaks,
+            Suite 204, Bakersfield, California, on its website, though the ZIP code shown was incomplete
+            when we looked. It does not say who manufactures its machines. Like most budget walking-pad
+            brands, it almost certainly sources them from factories that supply other labels too, which is
+            why near-identical pads appear under several names on Amazon.
+          </p>
+          <p>
+            On 5 November 2026 FUNMILY’s website listed a treadmill with a desk workstation in two
+            versions, two compact walking pads with a fixed 5% incline, walking pads with 8% and 12%
+            incline, three folding treadmills with 3.25 or 3.5 HP motors and 300 or 400 lb ratings, an
+            under-desk elliptical and an archived elliptical. Every product links to Amazon. FUNMILY pads
+            also appear on Walmart’s marketplace, where Walmart showed us only a bot check, and on
+            international reseller sites that copy Amazon listings.
+          </p>
+          <p>
+            That route to market has consequences. The seller named in Amazon’s buy box handles your
+            return, the Amazon listing’s warranty terms are the ones that apply, and the listing can
+            change without FUNMILY’s website changing with it, which is one reason the two disagree. Our
+            guide to <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">buying a treadmill on Amazon</a>
+            explains what to look for in the buy box, and our
+            <a href="/walmart-treadmills/" class="text-[#0F62FE] font-medium">Walmart treadmills</a> guide
+            covers marketplace sellers there.
+          </p>
+        </div>
+
+        <div id="models" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. FUNMILY Treadmills and Walking Pads: What We Could Confirm</h2>
+<p>
+            These are the three FUNMILY machines most often searched for, followed by two checked
+            alternatives. None of the FUNMILY cards carries a price, because we could not read a current
+            Amazon listing on 5 November 2026 and FUNMILY’s site shows none. Where FUNMILY’s website, the
+            Amazon listing and other sources disagree, the figure is left off the card and the description
+            says so.
+          </p>
+          <p>
+            For desk walking with a handle and an incline, the FUNMILY handle-bar pad, with its figures
+            treated cautiously. For an all-in-one walking desk, the FUNMILY treadmill desk. For a slight,
+            permanent incline in a small pad, the 5% pad. And if you want figures you can rely on, the UREVO
+            Strol 2E and MERACH W50 TrekPad are the comparison.
+          </p>
+        </div>
+      </div>
+
+      <!-- Product cards -->
+      <div class="not-prose">
+        {
+          PRODUCTS.map((product, index) => (
+            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
+              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
+                  <div>
+                    <h3 class="text-white font-black text-xl leading-tight m-0">
+                      {index + 1}. {product.name}
+                    </h3>
+                    <p class="text-gray-400 text-xs">{product.category}</p>
+                  </div>
+                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                    {product.badge}
+                  </span>
+                </div>
+                <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                    </a>
+                  )}
+                  <div class="flex items-center gap-2 mb-4 flex-wrap">
+                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
+                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
+                  </div>
+                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
+                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
+                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
+                      <ul class="space-y-2">
+                        {product.pros.map((pro) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
+                      <ul class="space-y-2">
+                        {product.cons.map((con) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="border-t border-gray-100 pt-4">
+                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
+                    <div class="flex flex-wrap items-center gap-3">
+                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+                        {product.amazonLabel} &rarr;
+                      </a>
+                      {product.reviewUrl && (
+                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
+                          Read our full {product.name} review &rarr;
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="conflicts" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Where FUNMILY’s Figures Disagree</h2>
+<p>
+            These are the conflicts we found on 5 November 2026. They matter because the weight limit and
+            motor rating are the two figures buyers rely on most when choosing between budget pads.
+          </p>
+          <ul>
+            <li><strong>12% incline pad, motor.</strong> 2.5 HP brushless on FUNMILY’s website; 3.5 HP
+            brushless in the Amazon listing quoted by Slickdeals in May 2026 and in a listing summary for
+            the pink version. A separate FUNMILY Amazon listing indexed by search engines gives 3.5 HP in
+            its title and 2.5 HP in its own specification table.</li>
+            <li><strong>12% incline pad, capacity.</strong> 300 lb on FUNMILY’s website, 350 lb in the
+            Amazon listing quoted in May 2026, 400 lb in a listing summary.</li>
+            <li><strong>Treadmill desk, capacity.</strong> 300 lb in one section of FUNMILY’s website and
+            265 lb in another, apparently for two versions sold under similar names.</li>
+            <li><strong>5% incline pad, size.</strong> 41 by 25 by 8 inches on FUNMILY’s website; 37 by
+            22.4 by 6.7 inches on a reseller listing for the F0011.</li>
+            <li><strong>A manual’s weight limit.</strong> A search-indexed copy of one FUNMILY walking-pad
+            manual gives a maximum user weight of 100 kg, about 220 lb, well below any FUNMILY listing.
+            We could not open the manual itself to see which model it covers.</li>
+          </ul>
+          <p>
+            The practical rule is simple: take the lowest figure you can find for the exact model you are
+            buying, and treat the listing’s horsepower as a peak rating that tells you little. Our
+            <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">weight capacity guide</a>
+            and <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
+            explain why. If a listing’s photos, title and specification table do not describe the same
+            machine, which Slickdeals commenters reported for one FUNMILY pad, buy something else.
+          </p>
+        </div>
+
+        <div id="manuals" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. How to Find a FUNMILY Treadmill Manual</h2>
+<p>
+            FUNMILY does not host its manuals on its own website. Its FAQ says the support phone number is
+            printed in each product’s manual, and directs buyers to Amazon for warranty and support. If you
+            have lost the paper manual, these are the places to look, in order.
+          </p>
+          <ol>
+            <li><strong>The Amazon listing you bought from.</strong> Many Amazon product pages include a
+            “Product guides and documents” section with the user manual as a PDF. Open your order in
+            Amazon’s Your Orders page, click through to the product, and scroll to the technical details.
+            This is the manual for the listing you actually bought, which matters given how many FUNMILY
+            pads share similar names.</li>
+            <li><strong>The seller, through Amazon.</strong> From Your Orders, use “Get product support” or
+            contact the seller and ask for the manual by the model number printed on the pad’s frame or
+            box. Ask for the support phone number too.</li>
+            <li><strong>Manual-hosting sites.</strong> Third-party sites such as Manuals+ index FUNMILY
+            manuals by Amazon ASIN; search for “FUNMILY” with your pad’s ASIN or model number. Check that
+            the manual’s photos and model number match your machine before following its instructions,
+            since some of these documents are generic templates.</li>
+          </ol>
+          <p>
+            Whichever manual you find, the two sections to read are the safety limits, which may give a
+            lower weight limit than the listing, and the maintenance schedule. Most walking pads need the
+            belt checked for centring and tension every few weeks and lubricated every few months; our
+            guides to <a href="/how-to-lubricate-a-walking-pad/" class="text-[#0F62FE] font-medium">lubricating a walking pad</a>
+            and fixing a <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">slipping treadmill belt</a>
+            cover both, and work for FUNMILY pads as for any other.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Common FUNMILY error codes and faults</h3>
+          <p>
+            We could not open a FUNMILY manual to list its error codes, so we will not guess at them. On
+            budget walking pads generally, a code that appears at start-up usually relates to the safety
+            key or magnet not being seated, and one that appears under load usually points to the motor
+            or its controller, often because the belt is too dry or too tight. Turn the pad off and unplug
+            it before checking either, and contact the seller before opening the motor cover, which can
+            void the warranty.
+          </p>
+        </div>
+
+        <div id="what-to-check" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. What to Check on a FUNMILY Listing Before You Buy</h2>
+<ol>
+            <li><strong>Who sells and ships it.</strong> Check “Ships from” and “Sold by”. A listing
+            shipped by Amazon gives you Amazon’s returns process.</li>
+            <li><strong>The return window and who pays return shipping.</strong> FUNMILY’s website states
+            return terms only for its under-desk elliptical, so read the listing’s own terms.</li>
+            <li><strong>The exact product name and model number.</strong> FUNMILY sells several pads with
+            near-identical titles. Match the listing to FUNMILY’s website by incline, belt width and size,
+            and note the model number for the manual and any safety notice.</li>
+            <li><strong>Consistency within the listing.</strong> Check that the motor, weight limit, belt
+            size and incline agree between the title, bullet points, images and specification table.</li>
+            <li><strong>Review photos.</strong> Make sure the photos in reviews show the same machine as
+            the listing, since reused listings are a known problem with this brand.</li>
+          </ol>
+          <p>
+            Our <a href="/where-to-buy-a-cheap-treadmill/" class="text-[#0F62FE] font-medium">guide to where to buy a cheap treadmill</a>
+            compares retailers’ terms, and our
+            <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies</a>
+            page explains what changes with the seller.
+          </p>
+        </div>
+
+        <div id="who-should-buy" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Who Should Buy a FUNMILY Treadmill</h2>
+<p>
+            <strong>A FUNMILY pad could be a reasonable buy</strong> if you find a listing that passes the
+            checks above, Amazon fulfils it, the price is clearly below the checked alternatives, you weigh
+            well under the lowest figure you can find, and you will use it for walking. The treadmill desk
+            makes sense if you have no standing desk and want one machine for both.
+          </p>
+          <p>
+            <strong>Buy a checked alternative instead</strong> if the listing contradicts itself, costs
+            about the same as a UREVO or MERACH pad, or you are heavy, tall or want to jog. Our
+            <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium">best walking pads</a> and
+            <a href="/best-walking-pads-with-incline/" class="text-[#0F62FE] font-medium">best walking pads with incline</a>
+            roundups cover more, and our
+            <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under desk treadmills</a>
+            guide explains what to look for in a pad you will use while you work.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is FUNMILY a good treadmill brand?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                It is a budget brand with a website, a US address and a stated 12-month warranty, which is more than many marketplace names offer. But its website and Amazon listings give the same pads different motors and weight limits, and we found no hands-on review we could rely on, so judge each listing on its own.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Where can I find a FUNMILY treadmill manual?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                FUNMILY does not host manuals on its website. Look first in the “Product guides and documents” section of the Amazon listing you bought from, then ask the seller through Your Orders using the model number on the frame. Third-party sites index FUNMILY manuals by Amazon ASIN; check the model matches.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What is the weight limit of a FUNMILY walking pad?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                It depends on the model and the source. For the 12% incline handle-bar pad we found 300 lb on FUNMILY’s website, 350 lb on Amazon in May 2026 and 400 lb in a listing summary, and one indexed FUNMILY manual gives 100 kg, about 220 lb. Use the lowest figure for your exact model.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What warranty does FUNMILY give?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                FUNMILY’s FAQ says all its fitness equipment comes with a 12-month warranty for parts and labor, and that warranty details are on each Amazon product page. Support runs through Amazon’s Returns & Orders page or the phone number in the product manual.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Has there been a FUNMILY treadmill recall?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                We searched the CPSC recall database for FUNMILY by title and manufacturer on 5 November 2026 and found no recall. Check your model number on the CPSC site, since marketplace products are sometimes recorded under the importer’s name.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What is a good alternative to a FUNMILY walking pad?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                On 5 November 2026 the UREVO Strol 2E handle-bar pad was $169.99 at UREVO, with figures confirmed by two hands-on reviews. For an incline and a 400 lb rating that holds up, the MERACH NovaWalk W50 TrekPad was $299.99 at MERACH.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a FUNMILY Walking Pad</h2>
+          <p class="text-gray-700 leading-relaxed">These are the errors we see most often with FUNMILY and similar Amazon-led brands, and each has a simple fix.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Taking the highest weight limit</h3>
+              <p class="text-gray-700 text-sm m-0">One FUNMILY pad carries three different capacities across sources. Use the lowest figure for your exact model and leave at least 50 lb of margin.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Confusing near-identical models</h3>
+              <p class="text-gray-700 text-sm m-0">FUNMILY sells several pads with similar titles. Match the incline, belt width and size to the model you mean before you buy or download a manual.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Throwing away the manual</h3>
+              <p class="text-gray-700 text-sm m-0">FUNMILY’s support number is printed in the manual, not on its website. Keep it, or download it from the Amazon listing on the day it arrives.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting the horsepower badge</h3>
+              <p class="text-gray-700 text-sm m-0">A 3.5 HP claim on a walking pad is a peak figure, and FUNMILY gives the same pad as 2.5 HP elsewhere. Compare belt size, capacity and warranty instead.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Brand &amp; Buying Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/ancheer-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">ANCHEER Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">An Amazon-only walking-pad brand: conflicting listing figures, manuals and warranty via the seller.</p>
+            </a>
+            <a href="/maxkare-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Marketplace</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">MaxKare Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">A Walmart-led marketplace brand, and where its listings contradict themselves.</p>
+            </a>
+            <a href="/best-treadmill-desks/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Best</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill Desks</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Treadmill desks and walking workstations compared, including sturdier options.</p>
+            </a>
+            <a href="/buying-a-treadmill-on-amazon/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">How to</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Buying a Treadmill on Amazon</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Sellers, returns and what changes when a marketplace stands behind the machine.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">FUNMILY walking pads may be usable budget machines for walking, but
+            their key figures do not hold still</strong>: the same pad is 2.5 or 3.5 HP and 300, 350 or
+            400 lb depending on the source, and FUNMILY’s website sends every buyer to Amazon. Judge the
+            listing in front of you, and use the lowest weight limit you can find.
+          </p>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            If you own one, the manual is on the Amazon listing or from the seller. If you are still
+            choosing, the
+            <a href="/urevo-treadmills/" class="text-[#5AA9FF] font-bold no-underline">UREVO</a> Strol 2E
+            and MERACH W50 TrekPad cost $170 to $300 and have figures independent reviewers have
+            confirmed.
+          </p>
+        </div>
+
+        <!-- Meet the Author -->
+        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
+          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
+          <div>
+            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
+            <p class="text-sm font-bold text-gray-900 m-0">
+              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
+              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+            </p>
+            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
+              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
+              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
+              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
+              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
+              running ergonomics, noise and long-term durability. Every guide says what was checked and
+              when, and says plainly when a product has not been tested hands-on.
+              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
+              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </article>
+</Layout>
