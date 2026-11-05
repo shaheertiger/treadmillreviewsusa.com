@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "rep-colorado-bar-20kg",
     name: "REP Fitness Colorado Bar (20 kg)",
+    brand: "REP Fitness",
     category: "Multi-purpose 20 kg Olympic barbell",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=olympic+barbell&tag=sktiger-20",
@@ -38,6 +39,7 @@ const PRODUCTS = [
   {
     id: "synergee-games-barbell",
     name: "Synergee Games Barbell",
+    brand: "Synergee",
     category: "Multi-purpose bar with needle bearings, 15 or 20 kg",
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/dp/B07BMBWGD9?tag=sktiger-20&linkCode=ll1",
@@ -64,6 +66,7 @@ const PRODUCTS = [
   {
     id: "rogue-ohio-bar",
     name: "Rogue Ohio Bar",
+    brand: "Rogue",
     category: "Multi-purpose 20 kg bar, made in the USA",
     badge: "Made in USA",
     amazonUrl: "https://www.amazon.com/s?k=olympic+barbell&tag=sktiger-20",
@@ -90,6 +93,7 @@ const PRODUCTS = [
   {
     id: "fringe-sport-wonder-bar",
     name: "Fringe Sport Wonder Bar V2 (20 kg)",
+    brand: "Fringe Sport",
     category: "Multi-purpose bar with bushings or bearings",
     badge: "Bushing or Bearing",
     amazonUrl: "https://www.amazon.com/s?k=olympic+barbell&tag=sktiger-20",
@@ -116,6 +120,7 @@ const PRODUCTS = [
   {
     id: "rep-colorado-bar-15kg",
     name: "REP Fitness Colorado Bar (15 kg)",
+    brand: "REP Fitness",
     category: "15 kg multi-purpose bar with a 25 mm shaft",
     badge: "Best 15 kg Bar",
     amazonUrl: "https://www.amazon.com/s?k=15kg+olympic+barbell&tag=sktiger-20",
@@ -142,6 +147,7 @@ const PRODUCTS = [
   {
     id: "titan-performance-series-olympic-barbell",
     name: "Titan Fitness Performance Series Olympic Barbell",
+    brand: "Titan Fitness",
     category: "Budget 20 kg multi-purpose bar",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/dp/B0C8BS6L3D?tag=sktiger-20&linkCode=ll1",
@@ -168,6 +174,7 @@ const PRODUCTS = [
   {
     id: "cap-beast-olympic-bar",
     name: "CAP Barbell \"The Beast\" 7 ft Olympic Bar",
+    brand: "CAP Barbell",
     category: "Budget 7 ft Olympic bar sold on Amazon",
     badge: "Cheapest on Amazon",
     amazonUrl: "https://www.amazon.com/s?k=CAP+Barbell+The+Beast+7ft+Olympic+Bar+OB-86B&tag=sktiger-20",
@@ -270,7 +277,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

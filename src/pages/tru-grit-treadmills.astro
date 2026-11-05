@@ -41,8 +41,8 @@ const PRODUCTS = [
     brand: "Tru Grit",
     category: "Upgraded Curved Manual Treadmill, Magnetic Resistance",
     badge: "Connected Upgrade",
-    amazonUrl: "https://www.amazon.com/s?k=Tru+Grit+Runner+Elite+Curved+Treadmill&tag=sktiger-20",
-    amazonLabel: "Check Price on Amazon",
+    amazonUrl: "https://www.amazon.com/s?k=curved+manual+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     image: null,
     reviewUrl: null,
     priceRange: "$3,495 at US dealers on 5 Nov 2026",
@@ -230,7 +230,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.brand },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -449,7 +449,7 @@ const schema = {
             Tru Grit Fitness is a California fitness-equipment brand. A 2021 San Diego Business Journal profile
             describes it as an equipment maker headquartered in Vista, and a local directory places it in nearby
             Carlsbad. Its range, as listed by its dealers, includes the two Grit Runner treadmills, the Reaper
-            magnetic-resistance air bike, power racks, a foldable wall-mounted rack, benches, hex dumbbells and
+            magnetic-resistance air bike, power racks, a foldable <a href="/best-folding-squat-racks/" class="text-[#0F62FE] font-medium" data-autolink>wall-mounted rack</a>, benches, hex dumbbells and
             plate storage — a garage-gym range rather than a home-cardio one.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The website problem</h3>
@@ -464,7 +464,7 @@ const schema = {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Not Tru Grit, True or Grit</h3>
           <p>
-            Tru Grit is unrelated to True Fitness, the commercial treadmill maker whose machines appear next to
+            Tru Grit is unrelated to <a href="/true-fitness-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>True Fitness</a>, the commercial treadmill maker whose machines appear next to
             it in dealer searches, and to the various gyms called True Grit. If a dealer search for "Tru Grit"
             shows a True Fitness Performance or Stryker treadmill, that is a different company.
           </p>
@@ -502,7 +502,7 @@ const schema = {
           <p>
             Prices are as listed on 5 November 2026 and change often. The spread on the standard Runner, from
             $1,996 to $3,299 for the same machine, is the clearest reason to compare several dealers. Dick's
-            Sporting Goods and Scheels have also listed the Grit Runner; we could not read their current prices.
+            Sporting Goods and <a href="/scheels-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Scheels</a> have also listed the Grit Runner; we could not read their current prices.
             Our <a href="/dicks-sporting-goods-treadmills/" class="text-[#0F62FE] font-medium">Dick's Sporting Goods treadmill guide</a>
             covers its delivery and return terms.
           </p>
@@ -635,7 +635,7 @@ const schema = {
             The Elite is the more refined machine on paper. TreadmillReviews.com describes a gentler curve, a
             cushioned slat belt, a more solid build and better interval modes, and dealers list sealed bearings,
             aluminium roller guides and transport wheels. Its console connects to apps — dealers name Kinomap and
-            Zwift — which the standard Runner's cannot.
+            <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium" data-autolink>Zwift</a> — which the standard Runner's cannot.
           </p>
           <p>
             The problem is the price gap. At $3,495 the Elite is up against the AssaultRunner Pro and TrueForm
@@ -811,6 +811,11 @@ const schema = {
               <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Workouts</span>
               <p class="font-bold text-gray-900 mt-2 mb-1">Curved Treadmill Workouts</p>
               <p class="text-sm text-gray-500 leading-relaxed">Sprint, interval and sled-style sessions to use those resistance settings.</p>
+            </a>
+            <a href="/centr-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Brand Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Centr Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Chris Hemsworth's brand: the folding Runr and Runr-S and the $6,999 Centr x HYROX Perform Tread race.</p>
             </a>
           </div>
         </div>

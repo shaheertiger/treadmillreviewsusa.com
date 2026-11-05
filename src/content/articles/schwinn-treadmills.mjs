@@ -246,7 +246,7 @@ export default {
           <p>
             The 810 is the Schwinn most people know, and the one with real independent coverage. Garage Gym Reviews,
             BarBend and Best Buy's listing agree with Schwinn on a 20 by 55-inch belt, 10 mph, 10% motorized incline,
-            a 275 lb user limit and a SoftDrop fold. Reviewers describe it as a budget treadmill for walking and light
+            a 275 lb user limit and a SoftDrop fold. Reviewers describe it as a <a href="/best-budget-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>budget treadmill</a> for walking and light
             running and note that its 55-inch belt is short for taller runners. The motor is where sources part:
             Garage Gym Reviews gives 2.6 continuous horsepower, Best Buy's listing 1.5 HP, and Schwinn's own page gives
             none. That spread is too wide to resolve, so neither figure is on the card. One review we saw quoted a
@@ -257,7 +257,7 @@ export default {
             These two share a frame: Schwinn lists both at 76 by 34 by 57 inches, 48 inches long folded, 187 lb and
             325 lb maximum user. Both have a 20 by 60-inch running area, 12 mph and 12% incline, EasyDial controls and
             a 5-inch LCD. The 815 adds eight programs (against six), Bluetooth heart-rate support, USB charging and
-            listed app integrations with JRNY, Peloton and Zwift. That is $200 of extras on the same deck. One retailer
+            listed app integrations with JRNY, Peloton and <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium" data-autolink>Zwift</a>. That is $200 of extras on the same deck. One retailer
             listing gave the SFT4.3's capacity as 275 lb, conflicting with Schwinn's 325 lb, which is why we have left
             capacity off its card.
           </p>
@@ -304,7 +304,7 @@ export default {
           <p>
             None of Schwinn's four product pages gives the motor's horsepower, continuous or peak. For the 810, outside
             sources range from 1.5 HP to 2.6 CHP; for the 815, one deal listing said 3 HP. Without a manufacturer
-            figure, the best guides to what each machine is built for are the belt length, top speed and user limit,
+            figure, the best guides to what each machine is built for are the <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium" data-autolink>belt length</a>, top speed and user limit,
             and those point to walking and jogging, not daily running. Our
             <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">treadmill horsepower guide</a>
             explains why continuous ratings matter more than peak figures, if you find one.

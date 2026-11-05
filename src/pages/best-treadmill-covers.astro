@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "clawscover-folding",
     name: "ClawsCover Folding Treadmill Cover",
+    brand: "ClawsCover",
     category: "Cover for folding treadmills stored upright",
     badge: "Best for Folding Treadmills",
     amazonUrl: "https://www.amazon.com/dp/B08LW37LFK?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "clawscover-unfolding",
     name: "ClawsCover Unfolding Treadmill Cover",
+    brand: "ClawsCover",
     category: "Long, low cover for non-folding treadmills",
     badge: "Best for Non-Folding Treadmills",
     amazonUrl: "https://www.amazon.com/dp/B08F779H3M?tag=sktiger-20&linkCode=ll1",
@@ -62,6 +64,7 @@ const PRODUCTS = [
   {
     id: "zettum-600d-unfolding",
     name: "Zettum 600D Treadmill Cover (Unfolding)",
+    brand: "Zettum",
     category: "Heavier PU-coated cover for carports and patios",
     badge: "Best Weatherproof",
     amazonUrl: "https://www.amazon.com/s?k=Zettum+600D+Treadmill+Cover+Unfolding&tag=sktiger-20",
@@ -88,6 +91,7 @@ const PRODUCTS = [
   {
     id: "covers-and-all-custom",
     name: "Covers & All Custom Treadmill Cover",
+    brand: "Covers",
     category: "Made-to-measure cover with air vents",
     badge: "Best Custom Fit",
     amazonUrl: "https://www.amazon.com/s?k=treadmill+cover&tag=sktiger-20",
@@ -190,7 +194,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

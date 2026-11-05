@@ -221,8 +221,8 @@ export default {
           </p>
           <p>
             We could not find a model-by-model list. A C950i belongs to the generation the notice describes,
-            and the safe assumption when buying one is that iFIT will not work and you are buying a manual
-            treadmill with built-in programs. If a seller says iFIT works on theirs, ask to see it run an iFIT
+            and the safe assumption when buying one is that iFIT will not work and you are buying a <a href="/best-manual-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>manual
+            treadmill</a> with built-in programs. If a seller says iFIT works on theirs, ask to see it run an iFIT
             workout during your visit.
           </p>
           <p>

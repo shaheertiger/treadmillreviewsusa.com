@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "tko-airraid-runner-8ctm",
     name: "TKO AirRaid Runner 8CTM (AirRaid Force)",
+    brand: "TKO",
     category: "Curved Manual Treadmill with Magnetic Resistance",
     badge: "Commercial Build",
     amazonUrl: "https://www.amazon.com/s?k=curved+manual+treadmill&tag=sktiger-20",
@@ -114,7 +115,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

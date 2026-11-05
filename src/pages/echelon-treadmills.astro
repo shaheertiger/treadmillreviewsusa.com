@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "echelon-stride-6",
     name: "Echelon Stride-6",
+    brand: "Echelon",
     category: "Auto-Fold Treadmill, Bring Your Own Tablet",
     badge: "Lowest-Cost Stride",
     amazonUrl: "https://www.amazon.com/s?k=Echelon+Stride-6+Treadmill&tag=sktiger-20",
@@ -38,6 +39,7 @@ const PRODUCTS = [
   {
     id: "echelon-stride-6s",
     name: "Echelon Stride-6s",
+    brand: "Echelon",
     category: "Auto-Fold Treadmill With a 10 in. Touchscreen",
     badge: "Auto-Fold With Screen",
     amazonUrl: "https://www.amazon.com/s?k=Echelon+Stride-6s+Treadmill&tag=sktiger-20",
@@ -64,6 +66,7 @@ const PRODUCTS = [
   {
     id: "echelon-stride-8s",
     name: "Echelon Stride-8s",
+    brand: "Echelon",
     category: "Largest-Screen Stride, Fold-Flat With Tools",
     badge: "Big-Screen Pick",
     amazonUrl: "https://www.amazon.com/s?k=Echelon+Stride-8s+Treadmill&tag=sktiger-20",
@@ -175,7 +178,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

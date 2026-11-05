@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "walkingpad-a1-pro",
     name: "WalkingPad A1 Pro",
+    brand: "WalkingPad",
     category: "Best Overall Walking Pad",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=WalkingPad+A1+Pro+Foldable+Under+Desk+Treadmill&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "urevo-spacewalk-e1l",
     name: "UREVO SpaceWalk E1L",
+    brand: "UREVO",
     category: "Best Budget Walking Pad",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/s?k=UREVO+SpaceWalk+E1L+Walking+Pad&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "walkingpad-z1",
     name: "WalkingPad Z1",
+    brand: "WalkingPad",
     category: "Folding Pad With the Longest Belt for the Money",
     badge: "Longest Belt",
     amazonUrl: "https://www.amazon.com/dp/B0H2YYZTL8?tag=sktiger-20&linkCode=ll1",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "merach-novawalk-w50-trekpad",
     name: "MERACH NovaWalk W50 TrekPad",
+    brand: "MERACH",
     category: "Best Walking Pad for Heavier Users",
     badge: "Best for Heavier Users",
     amazonUrl: "https://www.amazon.com/dp/B0HJTT2S6R?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "urevo-spacewalk-3s",
     name: "UREVO SpaceWalk 3S",
+    brand: "UREVO",
     category: "Best Walking Pad With Incline",
     badge: "Best With Incline",
     amazonUrl: "https://www.amazon.com/s?k=UREVO+SpaceWalk+3S+Walking+Pad&tag=sktiger-20",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "urevo-strol-2s-pro",
     name: "UREVO Strol 2S Pro",
+    brand: "UREVO",
     category: "Best Walking Pad for Light Jogging",
     badge: "Best for Jogging",
     amazonUrl: "https://www.amazon.com/s?k=UREVO+Strol+2S+Pro+Treadmill&tag=sktiger-20",
@@ -243,7 +249,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

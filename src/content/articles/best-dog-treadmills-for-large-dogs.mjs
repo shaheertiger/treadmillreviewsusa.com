@@ -587,6 +587,12 @@ export default {
       blurb: 'Canine hydrotherapy: what it is, who provides it, what sessions cost, and home units.',
       url: '/underwater-treadmill-for-dogs/',
     },
+    {
+      kicker: "Roundup",
+      title: "Best Dog Treadmills for Small Dogs",
+      blurb: "Motorised machines sized for toy and small breeds, what was in stock, and the safety rules.",
+      url: '/best-dog-treadmills-for-small-dogs/',
+    },
   ],
   bottomLine: [
     `For most large dogs, the <strong class="text-white">Dog Runner Revolution Pro</strong> is the

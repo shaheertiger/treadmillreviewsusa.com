@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "urevo-spacewalk-3s",
     name: "UREVO SpaceWalk 3S",
+    brand: "UREVO",
     category: "Best Overall Walking Pad With Incline",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=UREVO+SpaceWalk+3S+Walking+Pad&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "merach-ultrawalk-w60-plus",
     name: "MERACH UltraWalk W60 Plus",
+    brand: "MERACH",
     category: "Steepest Incline in a Walking Pad",
     badge: "Most Incline",
     amazonUrl: "https://www.amazon.com/s?k=MERACH+UltraWalk+W60+Plus+Walking+Pad&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "deerrun-z10",
     name: "DeerRun Z10",
+    brand: "DeerRun",
     category: "Best Budget Powered Incline",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/dp/B0H2HV9KD5?tag=sktiger-20&linkCode=ll1",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "egofit-walker-pro-m1",
     name: "Egofit Walker Pro M1",
+    brand: "Egofit",
     category: "Best Fixed-Incline Walking Pad",
     badge: "Fixed 5% Incline",
     amazonUrl: "https://www.amazon.com/dp/B08R37V99Q?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "wellfit-tm037",
     name: "Wellfit TM037",
+    brand: "Wellfit",
     category: "Best Budget Manual Incline With a Rail",
     badge: "Lowest Price",
     amazonUrl: "https://www.amazon.com/s?k=Wellfit+TM037+Walking+Pad&tag=sktiger-20",
@@ -217,7 +222,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

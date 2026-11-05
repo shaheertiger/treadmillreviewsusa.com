@@ -587,6 +587,12 @@ export default {
       blurb: 'The walking-first field the T101 competes in.',
       url: '/best-walking-treadmills/',
     },
+    {
+      kicker: "Model Review",
+      title: "Horizon T202 Review",
+      blurb: "The cheapest 60-inch Horizon: checked specs, the unrated motor, one-year parts cover, and T101 vs 7.0 AT.",
+      url: '/horizon-t202-treadmill/',
+    },
   ],
   bottomLine: [
     `The Horizon T101, now the <strong class="text-white">T101 Connect</strong>, is a coherent

@@ -14,8 +14,8 @@ const PRODUCTS = [
     brand: "Rogue",
     category: "Rogue-Branded Curved Manual Treadmill",
     badge: "The Rogue Treadmill",
-    amazonUrl: "https://www.amazon.com/s?k=Woodway+Curve+LTG+Treadmill&tag=sktiger-20",
-    amazonLabel: "Check Price on Amazon",
+    amazonUrl: "https://www.amazon.com/s?k=curved+manual+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     image: null,
     reviewUrl: "/woodway-treadmills/",
     priceRange: "$3,495 sale ($3,995 regular) at Rogue on 5 Nov 2026",
@@ -95,8 +95,8 @@ const PRODUCTS = [
     brand: "STEPR",
     category: "Curved Manual Treadmill With Sled-Push Resistance",
     badge: "Best for HYROX-Style Pushes",
-    amazonUrl: "https://www.amazon.com/s?k=STEPR+Treadsled+XL+VPR&tag=sktiger-20",
-    amazonLabel: "Check Price on Amazon",
+    amazonUrl: "https://www.amazon.com/s?k=curved+manual+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     image: null,
     reviewUrl: null,
     priceRange: "$5,999.99 sale ($6,499 regular) at Rogue on 5 Nov 2026",
@@ -122,8 +122,8 @@ const PRODUCTS = [
     brand: "STEPR",
     category: "Motorized Performance Treadmill",
     badge: "Rogue’s Motorized Pick",
-    amazonUrl: "https://www.amazon.com/s?k=STEPR+Tread+Pro+Treadmill&tag=sktiger-20",
-    amazonLabel: "Check Price on Amazon",
+    amazonUrl: "https://www.amazon.com/s?k=running+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     image: null,
     reviewUrl: null,
     priceRange: "$3,999.99 at Rogue on 5 Nov 2026",
@@ -230,7 +230,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.brand },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -443,7 +443,7 @@ const schema = {
             same prices on Rogue, on the maker's store or at another dealer on the day. What Rogue adds is a
             single checkout for a whole gym, its own customer service and, on the Curve LTG, its badge. What it
             does not sell is the <a href="/assaultrunner-pro-treadmill/" class="text-[#0F62FE] font-medium">AssaultRunner</a>,
-            the best-known curved treadmill outside the CrossFit world: Rogue lists Assault's air bike but no
+            the best-known curved treadmill outside the CrossFit world: Rogue lists Assault's <a href="/best-air-bikes/" class="text-[#0F62FE] font-medium" data-autolink>air bike</a> but no
             AssaultRunner was in its treadmill category. We have not tested any of these machines.
           </p>
         </div>
@@ -655,8 +655,8 @@ const schema = {
             Rogue's line built for it, with a dedicated sled-push mode. A cheaper route is a curved treadmill
             with heavy magnetic resistance levels; our
             <a href="/curved-treadmill-workouts/" class="text-[#0F62FE] font-medium">curved treadmill workouts</a>
-            page covers sled-style sessions. The official HYROX race treadmill is the Centr x HYROX Perform
-            Tread, which Rogue does not sell.
+            page covers sled-style sessions. The official HYROX race treadmill is the Centr x <a href="/centr-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>HYROX Perform
+            Tread</a>, which Rogue does not sell.
           </p>
         </div>
 

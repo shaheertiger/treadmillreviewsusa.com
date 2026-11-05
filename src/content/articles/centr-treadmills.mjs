@@ -187,7 +187,7 @@ export default {
             Centr's treadmill range, as listed on its US store on 5 November 2026, is three machines. The Runr
             ($1,299) and Runr-S ($1,699) are the same folding motorized treadmill with and without a 10-inch
             streaming touchscreen. The Official HYROX Perform Tread ($6,999) is a completely different kind of
-            machine: a self-powered curved treadmill with magnetic resistance and a sled-push handlebar. Centr
+            machine: a self-powered <a href="/curved-treadmill-guide/" class="text-[#0F62FE] font-medium" data-autolink>curved treadmill</a> with magnetic resistance and a sled-push handlebar. Centr
             also sells four Inspire Series treadmills on the same store, which we cover briefly below.
           </p>
           <p>
@@ -211,7 +211,7 @@ export default {
           <p>
             In October 2023 Centr became the official equipment provider of HYROX, the fitness race that
             alternates eight 1-kilometre runs with eight workout stations such as sled pushes, sled pulls and
-            wall balls. Centr now supplies HYROX's sleds, wall balls, sandbags and kettlebells and the Perform
+            wall balls. Centr now supplies HYROX's sleds, wall balls, sandbags and <a href="/best-adjustable-kettlebells/" class="text-[#0F62FE] font-medium" data-autolink>kettlebells</a> and the Perform
             Tread, and sells the same equipment for home use. Every Centr purchase includes access to the Centr
             app; Centr's store listed the annual app subscription at $159.99 on its own.
           </p>
@@ -267,7 +267,7 @@ export default {
             <li><strong>Sled-push station.</strong> The handlebar has several positions and converts to a
             push and pull station, so you can practise the HYROX sled stations' leg drive on the belt.</li>
             <li><strong>Wider surface.</strong> At 19 inches, it is wider than the 17-inch surfaces of the
-            TrueForm and Woodway Curve LTG.</li>
+            TrueForm and <a href="/woodway-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Woodway</a> Curve LTG.</li>
             <li><strong>Long frame and belt warranty.</strong> For home use, a limited lifetime warranty on the
             frame and belt, 7 years on moving parts and 2 years on labour; for commercial use, 5 years on moving
             parts and 1 year on labour.</li>
@@ -306,8 +306,8 @@ export default {
             The Runr and Runr-S are folding motorized treadmills sharing one frame. Centr lists both with a
             3.0 HP brushless DC motor, 1 to 10 mph, 1 to 12% incline in 1% steps, a 20 by 55-inch running
             surface, a 300 lb maximum user, a 6-inch step-up, a self-lubricating belt, and 70 by 35.7 by
-            47.5 inches and 194 lb assembled. The Runr has an LED console with quick keys and a 5-colour heart
-            rate zone display; the Runr-S adds a 10-inch touchscreen with Netflix, YouTube and Disney+ apps,
+            47.5 inches and 194 lb assembled. The Runr has an LED console with quick keys and a 5-colour <a href="/treadmill-heart-rate-zones/" class="text-[#0F62FE] font-medium" data-autolink>heart
+            rate zone</a> display; the Runr-S adds a 10-inch touchscreen with Netflix, YouTube and Disney+ apps,
             Bluetooth speakers and smartphone mirroring, plus 25 programs.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">"Folding, tool-less assembly"</h3>

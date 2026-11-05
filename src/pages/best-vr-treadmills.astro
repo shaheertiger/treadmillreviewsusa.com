@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "virtuix-omni-one",
     name: "Virtuix Omni One",
+    brand: "Virtuix",
     category: "Complete standalone VR treadmill system",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=VR+treadmill&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "virtuix-omni-one-for-quest",
     name: "Virtuix Omni One for Quest",
+    brand: "Virtuix",
     category: "VR treadmill for Meta Quest headsets",
     badge: "Best for Quest Owners",
     amazonUrl: "https://www.amazon.com/s?k=VR+treadmill&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "virtuix-omni-one-core",
     name: "Virtuix Omni One Core",
+    brand: "Virtuix",
     category: "VR treadmill for PC VR and SteamVR",
     badge: "Best Omni for PC VR",
     amazonUrl: "https://www.amazon.com/s?k=VR+treadmill&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "kat-walk-c2-plus-enhanced",
     name: "KAT Walk C2 Plus Enhanced",
+    brand: "KAT",
     category: "PC VR treadmill with haptics and seat module",
     badge: "Best Value for PC VR",
     amazonUrl: "https://www.amazon.com/s?k=KAT+Walk+C2+Plus+VR+Treadmill&tag=sktiger-20",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "kat-walk-c2-core-enhanced",
     name: "KAT Walk C2 Core Enhanced",
+    brand: "KAT",
     category: "Entry-level PC VR treadmill",
     badge: "Lowest Price",
     amazonUrl: "https://www.amazon.com/s?k=KAT+Walk+C2+Core+VR+Treadmill&tag=sktiger-20",
@@ -217,7 +222,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

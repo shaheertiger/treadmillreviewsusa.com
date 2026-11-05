@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "spirit-xt485",
     name: "Spirit XT485",
+    brand: "Spirit",
     category: "Folding Treadmill With 22 in. Deck",
     badge: "Folding Pick",
     amazonUrl: "https://www.amazon.com/dp/B07KQ8Z8JP?tag=sktiger-20&linkCode=ll1",
@@ -38,6 +39,7 @@ const PRODUCTS = [
   {
     id: "spirit-xt685",
     name: "Spirit XT685",
+    brand: "Spirit",
     category: "Non-Folding Treadmill, Light Commercial Rated",
     badge: "Non-Folding Pick",
     amazonUrl: "https://www.amazon.com/s?k=Spirit+Fitness+XT685+Treadmill&tag=sktiger-20",
@@ -141,7 +143,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

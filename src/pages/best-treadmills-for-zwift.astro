@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "horizon-7-0-at",
     name: "Horizon 7.0 AT",
+    brand: "Horizon",
     category: "Best Overall Treadmill for Zwift",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+7.0+AT+Treadmill&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "bowflex-t6",
     name: "Bowflex T6",
+    brand: "Bowflex",
     category: "Best Value Treadmill for Zwift",
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/s?k=Bowflex+T6+Treadmill&tag=sktiger-20",
@@ -62,6 +64,7 @@ const PRODUCTS = [
   {
     id: "horizon-7-8-at",
     name: "Horizon 7.8 AT",
+    brand: "Horizon",
     category: "Best Zwift Treadmill for Bigger Runners",
     badge: "Heavy-Duty Pick",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+7.8+AT+Treadmill&tag=sktiger-20",
@@ -88,6 +91,7 @@ const PRODUCTS = [
   {
     id: "wahoo-kickr-run",
     name: "Wahoo KICKR RUN",
+    brand: "Wahoo",
     category: "Only Treadmill With Zwift Incline Control",
     badge: "Premium Pick",
     amazonUrl: "https://www.amazon.com/s?k=smart+treadmill+with+incline+and+decline&tag=sktiger-20",
@@ -114,6 +118,7 @@ const PRODUCTS = [
   {
     id: "stryd-5-footpod",
     name: "Stryd 5.0 Footpod",
+    brand: "Stryd",
     category: "Best Way to Add Zwift to Any Treadmill",
     badge: "Any Treadmill",
     amazonUrl: "https://www.amazon.com/s?k=running+foot+pod&tag=sktiger-20",
@@ -215,7 +220,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

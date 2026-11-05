@@ -350,7 +350,7 @@ export default {
       id: 'repair-or-replace',
       heading: 'Warranty, Parts and Repair or Replace',
       html: `          <p>
-            Before you buy a part or open anything, check warranty status. Home treadmill parts
+            Before you buy a part or open anything, check warranty status. Home <a href="/treadmill-parts/" class="text-[#0F62FE] font-medium" data-autolink>treadmill parts</a>
             warranties commonly run one to three years, sometimes longer on electronics for
             premium models, and opening the console or the motor hood can void cover. Have the
             model and serial number ready; the serial is usually on a sticker near the front of the

@@ -552,6 +552,18 @@ export default {
       blurb: "Dyaco's budget brand: the TRX1200, TR75 and TR95H Hiker.",
       url: '/xterra-treadmills/',
     },
+    {
+      kicker: "Brand Guide",
+      title: "LifeSmart Treadmills",
+      blurb: "The self-folding PowerTouch range: TM4500 discontinued, TM4000C, TM6500 at Costco, and a 1-year warranty.",
+      url: '/lifesmart-treadmills/',
+    },
+    {
+      kicker: "Brand Guide",
+      title: "OMA Treadmills",
+      blurb: "The folding brand sold on Amazon behind the 7200EB: what its figures say, where they conflict, and.",
+      url: '/oma-treadmills/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Sunny Health &amp; Fitness is a sound budget brand for walking and light

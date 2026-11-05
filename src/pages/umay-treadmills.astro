@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "umay-sf20",
     name: "UMAY SF20 Foldable Treadmill",
+    brand: "UMAY",
     category: "Folding Treadmill With Handrails and Incline",
     badge: "Most Searched UMAY",
     amazonUrl: "https://www.amazon.com/s?k=UMAY+SF20+Foldable+Treadmill&tag=sktiger-20",
@@ -36,6 +37,7 @@ const PRODUCTS = [
   {
     id: "umay-u20f",
     name: "UMAY U20F Folding 3-in-1 Walking Pad",
+    brand: "UMAY",
     category: "2-in-1 Walking Pad With Handle and Incline",
     badge: "Best UMAY Walking Pad",
     amazonUrl: "https://www.amazon.com/s?k=UMAY+U20F+Walking+Pad&tag=sktiger-20",
@@ -61,6 +63,7 @@ const PRODUCTS = [
   {
     id: "umay-l20",
     name: "UMAY L20 Foldable Treadmill",
+    brand: "UMAY",
     category: "Folding Treadmill With 20% Manual Incline",
     badge: "Best UMAY for Heavier Users",
     amazonUrl: "https://www.amazon.com/s?k=UMAY+L20+Foldable+Treadmill&tag=sktiger-20",
@@ -86,6 +89,7 @@ const PRODUCTS = [
   {
     id: "merach-novawalk-w50-trekpad",
     name: "MERACH NovaWalk W50 TrekPad",
+    brand: "MERACH",
     category: "High-Capacity Walking Pad Alternative",
     badge: "Best Checked Alternative",
     amazonUrl: "https://www.amazon.com/dp/B0HJTT2S6R?tag=sktiger-20&linkCode=ll1",
@@ -111,6 +115,7 @@ const PRODUCTS = [
   {
     id: "urevo-strol-2e",
     name: "UREVO Strol 2E",
+    brand: "UREVO",
     category: "Budget 2-in-1 Alternative",
     badge: "Cheapest Checked 2-in-1",
     amazonUrl: "https://www.amazon.com/dp/B0HG9D52DC?tag=sktiger-20&linkCode=ll1",
@@ -212,7 +217,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -414,7 +419,7 @@ const schema = {
             What sets UMAY apart from most marketplace walking-pad names is that it exists outside the
             marketplace. UMAY Fitness runs a US web store with a phone line and support email, publishes
             a 30-day returns policy and free shipping over $49, and lists a range that runs from walking
-            pads to folding treadmills, ellipticals and bikes. That gives you somewhere to go if
+            pads to <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>folding treadmills</a>, ellipticals and bikes. That gives you somewhere to go if
             something goes wrong. Brands like
             <a href="/zofdim-treadmills/" class="text-[#0F62FE] font-medium">Zofdim</a>, which we could
             not trace at all, give you nothing of the kind.
@@ -431,7 +436,7 @@ const schema = {
 <p>
             UMAY sells as “Umay Fitness” from umayfitness.com, which replaced an older umayfit.com
             address. On 5 November 2026 its US store listed 44 products: 14 walking pads and treadmills,
-            plus an elliptical, under-desk elliptical, exercise bikes, a vibration plate, a
+            plus an elliptical, under-desk elliptical, exercise bikes, a <a href="/best-vibration-plates/" class="text-[#0F62FE] font-medium" data-autolink>vibration plate</a>, a
             stepper, Pilates boards, a home gym and accessories. It gives a US phone number and a support
             email, and its store prices are in US dollars with US shipping terms.
           </p>
@@ -451,7 +456,7 @@ const schema = {
             example, does not appear on UMAY’s site at all, and OCDevel found that the Amazon listing it
             had tracked for that model now shows a different product. Model names on UMAY’s store also
             shift: the U20F’s product address still reads U18F. If you are comparing a UMAY on Amazon with
-            one on UMAY’s store, compare the photos, the belt size and the motor rating, not just the
+            one on UMAY’s store, compare the photos, the <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium" data-autolink>belt size</a> and the motor rating, not just the
             name.
           </p>
         </div>
@@ -747,6 +752,16 @@ const schema = {
               <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand Guide</span>
               <p class="font-bold text-gray-900 mt-2 mb-1">Sunny Health &amp; Fitness Treadmills</p>
               <p class="text-sm text-gray-500 leading-relaxed">A long-established budget brand, for comparison with UMAY’s range.</p>
+            </a>
+            <a href="/ajoosos-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">AJOOSOS 2-in-1 Treadmill</p>
+              <p class="text-sm text-gray-500 leading-relaxed">A scooter brand's Amazon walking pad we could not verify: what the listing says, how to check it, and.</p>
+            </a>
+            <a href="/funmily-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Brand Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">FUNMILY Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">An Amazon-led brand whose pads carry 2.5 or 3.5 HP and 300–400 lb depending on the source: models.</p>
             </a>
           </div>
         </div>

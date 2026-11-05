@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "rep-adjustable-kettlebell",
     name: "REP Fitness Adjustable Kettlebell",
+    brand: "REP Fitness",
     category: "Push-and-twist adjustable kettlebell, competition-style shape",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B07KCKBHYX?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "bowflex-selecttech-840",
     name: "BowFlex SelectTech 840 Adjustable Kettlebell",
+    brand: "BowFlex",
     category: "Dial-select adjustable kettlebell, 8 to 40 lb",
     badge: "Fastest to Adjust",
     amazonUrl: "https://www.amazon.com/dp/B07X64MXBS?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "powerblock-pro-adjustable-kettlebell",
     name: "PowerBlock Pro Adjustable Kettlebell",
+    brand: "PowerBlock",
     category: "Magnetic-pin adjustable kettlebell, steel shell",
     badge: "Most Compact",
     amazonUrl: "https://www.amazon.com/dp/B0CG6P5NSC?tag=sktiger-20&linkCode=ll1",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "bells-of-steel-adjustable-competition-kettlebell",
     name: "Bells of Steel Adjustable Competition Kettlebell",
+    brand: "Bells of Steel",
     category: "Internally plate-loaded competition kettlebell, 0.5 kg steps",
     badge: "Best for Small Steps",
     amazonUrl: "https://www.amazon.com/dp/B0D38BLJQW?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "titan-adjustable-competition-kettlebell",
     name: "Titan Fitness 12–32 kg Adjustable Competition Kettlebell",
+    brand: "Titan Fitness",
     category: "Internally plate-loaded competition kettlebell, cast iron",
     badge: "Best Value to 32 kg",
     amazonUrl: "https://www.amazon.com/dp/B0D2Z4P3T9?tag=sktiger-20&linkCode=ll1",
@@ -217,7 +222,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

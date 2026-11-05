@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "bowflex-t6",
     name: "Bowflex T6",
+    brand: "Bowflex",
     category: "Closest Current Replacement for the T616",
     badge: "Best Replacement",
     amazonUrl: "https://www.amazon.com/s?k=Bowflex+T6+Treadmill&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "bowflex-t9",
     name: "Bowflex T9",
+    brand: "Bowflex",
     category: "The Step Up, Closest to the T618",
     badge: "Best for Running",
     amazonUrl: "https://www.amazon.com/s?k=Bowflex+T9+Treadmill&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "bowflex-t16",
     name: "Bowflex T16",
+    brand: "Bowflex",
     category: "Top of the Current Bowflex Range",
     badge: "Highest Capacity",
     amazonUrl: "https://www.amazon.com/s?k=Bowflex+T16+Treadmill&tag=sktiger-20",
@@ -88,6 +91,7 @@ const PRODUCTS = [
   {
     id: "schwinn-815",
     name: "Schwinn 815",
+    brand: "Schwinn",
     category: "Budget Replacement from the Same Family",
     badge: "Best Under $1,100",
     amazonUrl: "https://www.amazon.com/s?k=Schwinn+815+Treadmill&tag=sktiger-20",
@@ -113,10 +117,11 @@ const PRODUCTS = [
   {
     id: "nautilus-t614",
     name: "Nautilus T614",
+    brand: "Nautilus",
     category: "The One Nautilus Not Recalled, Sold Used Only",
     badge: "Used Only",
-    amazonUrl: "https://www.amazon.com/s?k=Nautilus+T614+Treadmill&tag=sktiger-20",
-    amazonLabel: "Check Price on Amazon",
+    amazonUrl: "https://www.amazon.com/s?k=folding+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     image: null,
     reviewUrl: null,
     priceRange: "Used only; no reliable price data",
@@ -223,7 +228,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -421,7 +426,7 @@ const schema = {
             machine from the same family, the Bowflex T6 and T9 are the closest replacements.</strong>
           </p>
           <p>
-            On 5 November 2026 nautilus.com sold a vibration plate, amino-acid capsules and apparel, and no
+            On 5 November 2026 nautilus.com sold a <a href="/best-vibration-plates/" class="text-[#0F62FE] font-medium" data-autolink>vibration plate</a>, amino-acid capsules and apparel, and no
             treadmills. The company that made the T614, T616 and T618, Nautilus Inc., sold the Nautilus brand in
             May 2023, changed its own name to BowFlex Inc. later that year, and filed for Chapter 11 in March 2024.
             Johnson Health Tech bought BowFlex Inc.'s assets — the BowFlex, Schwinn and JRNY brands among them —
@@ -443,7 +448,7 @@ const schema = {
 <p>
             Nautilus began as the name of Arthur Jones's strength machines in the 1970s and became, through
             acquisitions, the parent company of Bowflex, Schwinn Fitness and, later, the JRNY app. For most of the
-            2010s Nautilus Inc. of Vancouver, Washington, sold home cardio equipment under both the Nautilus and
+            2010s Nautilus Inc. of Vancouver, Washington, sold <a href="/home-cardio-equipment-guide/" class="text-[#0F62FE] font-medium" data-autolink>home cardio equipment</a> under both the Nautilus and
             Schwinn names, and the T-series treadmills were its Nautilus-branded line. The commercial Nautilus
             strength business had been sold years earlier and is made under licence by Core Health &amp; Fitness,
             which is why gym-floor Nautilus machines are unrelated to the home treadmills.
@@ -538,7 +543,7 @@ const schema = {
           <ul>
             <li><strong>Recall 22-153, 9 June 2022:</strong> about 7,300 Nautilus T616 and T618 treadmills, which
             can start on their own, creating a fall hazard. Nautilus had 21 reports of self-starting and no
-            injuries. They were sold at Best Buy, Walmart, other stores, nautilus.com and Amazon from April through
+            injuries. They were sold <a href="/best-buy-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>at Best Buy</a>, Walmart, other stores, nautilus.com and Amazon from April through
             November 2021.</li>
             <li><strong>Affected serial numbers:</strong> T616 from 100672PRO21140001 to 100672PRO21171980; T618
             from 100647PRO21130111 to 100647PRO21183960. The model name is on the plastic shroud at the front of the
@@ -574,7 +579,7 @@ const schema = {
             that gave them no longer exists. Johnson Health Tech did not take on the Nautilus brand.</li>
             <li><strong>Check parts.</strong> Search results for the parts supplier Sportsmith show a support page
             listing Nautilus treadmills as discontinued and no longer supported. Belts, motors and boards may still be
-            found through third-party and appliance-parts sites, but a dead console board can end the machine.</li>
+            found through third-party and appliance-parts sites, but a <a href="/treadmill-console-not-working/" class="text-[#0F62FE] font-medium" data-autolink>dead console</a> board can end the machine.</li>
             <li><strong>Run it.</strong> Walk and jog at your normal speeds, run the incline to the top and back,
             and listen for motor and roller noise. Fold it and unfold it; the hydraulic strut weakens with age.</li>
             <li><strong>Look under the belt.</strong> Wear on the deck and frayed belt edges are signs of high mileage
@@ -836,6 +841,11 @@ const schema = {
               <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Sibling brand</span>
               <p class="font-bold text-gray-900 mt-2 mb-1">Horizon Fitness Treadmills</p>
               <p class="text-sm text-gray-500 leading-relaxed">Johnson Health Tech’s main home treadmill brand.</p>
+            </a>
+            <a href="/schwinn-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Brand Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Schwinn Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Four folding treadmills, $699 to $1,099 (810, 815, SFT4.1, SFT4.3), the old 830, missing motor figures.</p>
             </a>
           </div>
         </div>

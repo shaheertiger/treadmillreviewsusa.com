@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "dynamic-andora",
     name: "Dynamic Andora 2-Person Far Infrared Sauna",
+    brand: "Dynamic",
     category: "Two-person far infrared in Canadian hemlock",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Dynamic+Saunas+Andora+2-Person+Infrared+Sauna&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "dynamic-barcelona",
     name: "Dynamic Barcelona 1-2 Person Far Infrared Sauna (DYN-6106-01)",
+    brand: "Dynamic",
     category: "Compact far infrared for one person",
     badge: "Best for Small Spaces",
     amazonUrl: "https://www.amazon.com/s?k=Dynamic+Saunas+Barcelona+1-2+Person+Infrared+Sauna&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "dynamic-cordoba-full-spectrum",
     name: "Dynamic Cordoba 2-Person Full Spectrum Infrared Sauna (DYN-6203-02 FS)",
+    brand: "Dynamic",
     category: "Full-spectrum infrared on a 120-volt plug",
     badge: "Best Full Spectrum",
     amazonUrl: "https://www.amazon.com/s?k=Dynamic+Saunas+Cordoba+Full+Spectrum+Infrared+Sauna&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "maxxus-3-person-full-spectrum-cedar",
     name: "Maxxus 3-Person Full Spectrum Infrared Sauna, Red Cedar (MX-M306-01)",
+    brand: "Maxxus",
     category: "Three-person full spectrum in red cedar",
     badge: "Best for Three",
     amazonUrl: "https://www.amazon.com/dp/B0BHTTX965?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "almost-heaven-hinton",
     name: "Almost Heaven Hinton 2-3 Person Infrared Sauna",
+    brand: "Almost",
     category: "American-made cedar cabin with two benches",
     badge: "Made in the USA",
     amazonUrl: "https://www.amazon.com/dp/B0H3CCQV3Z?tag=sktiger-20&linkCode=ll1",
@@ -217,7 +222,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "spirit-xt685",
     name: "Spirit XT685",
+    brand: "Spirit",
     category: "Best Overall Treadmill for a Garage",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Spirit+Fitness+XT685+Treadmill&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "spirit-xt385",
     name: "Spirit XT385",
+    brand: "Spirit",
     category: "Best Folding Treadmill for a Garage",
     badge: "Best Folding",
     amazonUrl: "https://www.amazon.com/dp/B006BE8T0W?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "spirit-xt185",
     name: "Spirit XT185",
+    brand: "Spirit",
     category: "Best Garage Treadmill for Walkers",
     badge: "Lowest Price",
     amazonUrl: "https://www.amazon.com/s?k=Spirit+Fitness+XT185+Treadmill&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "spirit-xt285",
     name: "Spirit XT285",
+    brand: "Spirit",
     category: "Narrower Folding Option for Runners",
     badge: "If Discounted",
     amazonUrl: "https://www.amazon.com/dp/B07DLJ1QMH?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "life-fitness-run-cx",
     name: "Life Fitness Run CX",
+    brand: "Life Fitness",
     category: "Premium Non-Folding Pick (Garage Terms Unconfirmed)",
     badge: "Ask First",
     amazonUrl: "https://www.amazon.com/s?k=Life+Fitness+Run+CX+Treadmill&tag=sktiger-20",
@@ -217,7 +222,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

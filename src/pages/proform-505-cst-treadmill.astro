@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "proform-505-cst",
     name: "ProForm 505 CST",
+    brand: "ProForm",
     category: "Best Budget Capacity",
     badge: "Best Capacity",
     amazonUrl: "https://www.amazon.com/s?k=ProForm%20505%20CST+Treadmill&tag=sktiger-20",
@@ -113,7 +114,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

@@ -185,7 +185,7 @@ export default {
             <li><strong>eBay and other listings.</strong> Searches for AJOOSOS with “treadmill” also
             returned eBay listings and other Amazon pages carrying the name, describing folding
             treadmills and walking pads with motors from 2 to 3.5 HP, weight limits from 220 to 300 lb,
-            inclines from 3 to 10% and even a small dog treadmill. eBay blocked us from reading them,
+            inclines from 3 to 10% and even a <a href="/best-dog-treadmills-for-small-dogs/" class="text-[#0F62FE] font-medium" data-autolink>small dog treadmill</a>. eBay blocked us from reading them,
             so we cannot tell which are genuinely AJOOSOS-branded and which simply match the search.</li>
             <li><strong>Independent coverage.</strong> We found no review, no entry in the walking-pad
             trackers we use for other brands, no manual and no owner discussion we could tie to an
@@ -274,7 +274,7 @@ export default {
             handle down and one with it up. If it gives only the top speed, assume the walking mode is
             capped at about 4 mph.</li>
             <li><strong>Reviews that describe your use.</strong> Sort by most recent and read the one-
-            and three-star reviews for mentions of the belt slipping, the motor cutting out, the remote
+            and three-star reviews for mentions of the <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium" data-autolink>belt slipping</a>, the motor cutting out, the remote
             failing or the handle working loose. Make sure the photos in reviews show the same machine
             as the listing, since listings are sometimes reused for different products.</li>
           </ol>
@@ -347,7 +347,7 @@ export default {
       heading: 'Who Should Buy the AJOOSOS 2-in-1',
       html: `          <p>
             <strong>The AJOOSOS pad could be a reasonable buy</strong> if the listing passes the checks
-            above, Amazon fulfils it, the price is clearly below the UREVO and UMAY pads, you weigh well
+            above, Amazon fulfils it, the price is clearly below the UREVO and <a href="/umay-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>UMAY</a> pads, you weigh well
             under its lowest stated limit, and you will mostly walk at a desk. In that case the main risk
             is that it wears out sooner than a better-documented pad, and a good return window and a
             modest price limit that risk.
@@ -441,6 +441,12 @@ export default {
       title: 'Under Desk Treadmills',
       blurb: 'What to look for in a pad you will walk on while you work.',
       url: '/under-desk-treadmills/',
+    },
+    {
+      kicker: "Brand Guide",
+      title: "RHYTHM FUN Treadmills",
+      blurb: "Manual-incline walking pads from $199.99: the 13% handle-bar pad, the discontinued AP01/AP02 and a likely.",
+      url: '/rhythm-fun-treadmill/',
     },
   ],
   bottomLine: [

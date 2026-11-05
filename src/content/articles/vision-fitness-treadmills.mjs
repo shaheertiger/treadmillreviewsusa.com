@@ -172,7 +172,7 @@ export default {
       heading: 'Who Makes Vision Fitness Treadmills?',
       html: `          <p>
             Vision Fitness is a brand of Johnson Health Tech, the Taiwanese group that also owns Horizon, Matrix,
-            Bowflex and Schwinn Fitness. Vision's site is built on Johnson Health Tech's asset servers, and the January
+            <a href="/bowflex/" class="text-[#0F62FE] font-medium" data-autolink>Bowflex</a> and Schwinn Fitness. Vision's site is built on Johnson Health Tech's asset servers, and the January
             2026 recall names Johnson Health Tech North America as the firm responsible for Vision treadmills.
           </p>
           <p>
@@ -250,7 +250,7 @@ export default {
       heading: 'Older Vision Treadmills: T9200, T9800, TF20, T40 and T80',
       navLabel: 'Older Models',
       html: `          <p>
-            Most Vision treadmills for sale today are older home models from specialty dealers. These are the ones you
+            Most Vision <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium" data-autolink>treadmills for sale</a> today are older home models from specialty dealers. These are the ones you
             are most likely to meet.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Vision T9200</h3>
@@ -300,7 +300,7 @@ export default {
           </ul>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">How to check a Vision treadmill</h3>
           <p>
-            The model number and frame serial number are on the lower front crossbar near the power switch. The serial
+            The model number and frame serial number are on the lower front crossbar near the <a href="/how-to-turn-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>power switch</a>. The serial
             begins with TM, then a three-digit model code (TM432 for the TF20, TM433 for the T40, TM445 for the T80,
             TM87 for the T9800), then the build date. Johnson Health Tech's recall page at visionfitness.com lists the
             exact serial ranges, and the recall line is 800-211-4590. If a cord bracket or the new locking cord is
@@ -331,7 +331,7 @@ export default {
           <p>
             For buyers set on light-commercial build — a home gym with several users, or a building's fitness room —
             the T600 makes sense, and our guide to <a href="/what-treadmills-do-gyms-use/" class="text-[#0F62FE] font-medium">what treadmills gyms use</a>
-            sets it against Precor, Life Fitness and Matrix.
+            sets it against Precor, <a href="/life-fitness/" class="text-[#0F62FE] font-medium" data-autolink>Life Fitness</a> and Matrix.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Is Vision on Amazon?</h3>
           <p>

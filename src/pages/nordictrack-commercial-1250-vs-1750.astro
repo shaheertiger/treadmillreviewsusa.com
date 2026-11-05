@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-commercial-1250",
     name: "NordicTrack Commercial 1250",
+    brand: "NordicTrack",
     category: "The Default Choice for Most Buyers",
     badge: "Better Value",
     amazonUrl: "https://www.amazon.com/dp/B0D5YJ4YW4?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-commercial-1750",
     name: "NordicTrack Commercial 1750",
+    brand: "NordicTrack",
     category: "For Floor Classes and Long Ownership",
     badge: "Lifetime Motor Cover",
     amazonUrl: "https://www.amazon.com/dp/B0D5YKF4SK?tag=sktiger-20&linkCode=ll1",
@@ -138,7 +140,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

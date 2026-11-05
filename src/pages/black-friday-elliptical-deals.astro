@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "sole-e35",
     name: "SOLE E35",
+    brand: "SOLE",
     category: "Best Full-Size Elliptical to Watch",
     badge: "Best Full-Size",
     amazonUrl: "https://www.amazon.com/s?k=SOLE+E35+Elliptical&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "sole-e25",
     name: "SOLE E25 Elliptical",
+    brand: "SOLE",
     category: "Best Value Full-Size Elliptical to Watch",
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/dp/B0H5KTZ8KG?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "schwinn-490",
     name: "Schwinn 490 Elliptical",
+    brand: "Schwinn",
     category: "Best Compact Elliptical With Incline to Watch",
     badge: "Best With Incline",
     amazonUrl: "https://www.amazon.com/dp/B0CJCV9VW5?tag=sktiger-20&linkCode=ll1",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "schwinn-411",
     name: "Schwinn 411 Compact Elliptical",
+    brand: "Schwinn",
     category: "Best Small-Space Elliptical to Watch",
     badge: "Best Compact",
     amazonUrl: "https://www.amazon.com/dp/B07H1BKRQ3?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "teeter-freestep-lt7",
     name: "Teeter FreeStep LT7 Recumbent Cross Trainer",
+    brand: "Teeter",
     category: "Best Seated Cross Trainer to Watch",
     badge: "Best Recumbent",
     amazonUrl: "https://www.amazon.com/s?k=Teeter+FreeStep+LT7+Recumbent+Cross+Trainer&tag=sktiger-20",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "cubii-move",
     name: "Cubii Move Under-Desk Elliptical",
+    brand: "Cubii",
     category: "Best Under-Desk Elliptical to Watch",
     badge: "Best Under-Desk",
     amazonUrl: "https://www.amazon.com/s?k=Cubii+Move+Under+Desk+Elliptical&tag=sktiger-20",
@@ -243,7 +249,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

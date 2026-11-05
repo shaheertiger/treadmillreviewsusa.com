@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-commercial-1250",
     name: "NordicTrack Commercial 1250",
+    brand: "NordicTrack",
     category: "The NordicTrack Sam’s Club Lists Most Prominently",
     badge: "Most Listed at Sam’s",
     amazonUrl: "https://www.amazon.com/dp/B0D5YJ4YW4?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-commercial-1750",
     name: "NordicTrack Commercial 1750",
+    brand: "NordicTrack",
     category: "The Bigger-Screen NordicTrack, Often Members-Only at Sam’s",
     badge: "Lifetime Motor Warranty",
     amazonUrl: "https://www.amazon.com/dp/B0D5YKF4SK?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-commercial-le",
     name: "NordicTrack Commercial LE",
+    brand: "NordicTrack",
     category: "The Retailer Model: a 1250-Style Frame Without the Touchscreen",
     badge: "Retailer Model",
     amazonUrl: "https://www.amazon.com/s?k=NordicTrack+folding+treadmill&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "proform-carbon-tls",
     name: "ProForm Carbon TLS",
+    brand: "ProForm",
     category: "The Cheapest Treadmill Sam’s Club Has Listed From iFIT",
     badge: "Lowest Price",
     amazonUrl: "https://www.amazon.com/dp/B0F6VVX36Z?tag=sktiger-20&linkCode=ll1",
@@ -191,7 +195,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

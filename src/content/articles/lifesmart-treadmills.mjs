@@ -193,7 +193,7 @@ export default {
       html: `          <p>
             LifeSmart is a consumer-products brand rather than a fitness specialist. Its treadmill store's About page
             calls it "a trusted legacy brand" and lists its other products: space heaters sold at Walmart, Home Depot and
-            Lowe's, and massage chairs at BJ's and Menards. The same page and its support contacts point to Supply Chain
+            Lowe's, and <a href="/best-zero-gravity-massage-chairs/" class="text-[#0F62FE] font-medium" data-autolink>massage chairs</a> at BJ's and Menards. The same page and its support contacts point to Supply Chain
             Sources (SCS), which a retailer's brand guide places in Allen, Texas, and describes as LifeSmart's partner for
             fitness equipment and warranty support. LifeSmart's fitness support email is on an SCS domain.
           </p>
@@ -208,7 +208,7 @@ export default {
           <p>
             PowerTouch is LifeSmart's motorised folding system: press a button and the deck raises to its storage
             position or lowers to use, without lifting. LifeSmart says proprietary sensors detect objects under or near
-            the treadmill and stop the deck lowering if the area is not clear. Most folding treadmills use a gas strut
+            the treadmill and stop the deck lowering if the area is not clear. Most <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>folding treadmills</a> use a gas strut
             that assists you lifting the deck; PowerTouch removes the lift entirely, which matters to buyers with back
             problems or limited strength. We have not verified how the sensors perform, so keep children and pets clear
             regardless.

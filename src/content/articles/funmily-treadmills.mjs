@@ -197,7 +197,7 @@ export default {
             On 5 November 2026 FUNMILY’s website listed a treadmill with a desk workstation in two
             versions, two compact walking pads with a fixed 5% incline, walking pads with 8% and 12%
             incline, three folding treadmills with 3.25 or 3.5 HP motors and 300 or 400 lb ratings, an
-            under-desk elliptical and an archived elliptical. Every product links to Amazon. FUNMILY pads
+            <a href="/best-under-desk-ellipticals/" class="text-[#0F62FE] font-medium" data-autolink>under-desk elliptical</a> and an archived elliptical. Every product links to Amazon. FUNMILY pads
             also appear on Walmart’s marketplace, where Walmart showed us only a bot check, and on
             international reseller sites that copy Amazon listings.
           </p>
@@ -224,7 +224,7 @@ export default {
           </p>
           <p>
             For desk walking with a handle and an incline, the FUNMILY handle-bar pad, with its figures
-            treated cautiously. For an all-in-one walking desk, the FUNMILY treadmill desk. For a slight,
+            treated cautiously. For an all-in-one walking desk, the FUNMILY <a href="/treadmill-desk-guide/" class="text-[#0F62FE] font-medium" data-autolink>treadmill desk</a>. For a slight,
             permanent incline in a small pad, the 5% pad. And if you want figures you can rely on, the UREVO
             Strol 2E and MERACH W50 TrekPad are the comparison.
           </p>`,
@@ -309,7 +309,7 @@ export default {
             <li><strong>The return window and who pays return shipping.</strong> FUNMILY’s website states
             return terms only for its under-desk elliptical, so read the listing’s own terms.</li>
             <li><strong>The exact product name and model number.</strong> FUNMILY sells several pads with
-            near-identical titles. Match the listing to FUNMILY’s website by incline, belt width and size,
+            near-identical titles. Match the listing to FUNMILY’s website by incline, <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium" data-autolink>belt width</a> and size,
             and note the model number for the manual and any safety notice.</li>
             <li><strong>Consistency within the listing.</strong> Check that the motor, weight limit, belt
             size and incline agree between the title, bullet points, images and specification table.</li>
@@ -415,6 +415,18 @@ export default {
       title: 'Buying a Treadmill on Amazon',
       blurb: 'Sellers, returns and what changes when a marketplace stands behind the machine.',
       url: '/buying-a-treadmill-on-amazon/',
+    },
+    {
+      kicker: "Brand Guide",
+      title: "UMAY Treadmills",
+      blurb: "UMAY Fitness's SF20, U20F and L20: store prices, figures that disagree, a one-year warranty and possible.",
+      url: '/umay-treadmills/',
+    },
+    {
+      kicker: "Brand Guide",
+      title: "RHYTHM FUN Treadmills",
+      blurb: "Manual-incline walking pads from $199.99: the 13% handle-bar pad, the discontinued AP01/AP02 and a likely.",
+      url: '/rhythm-fun-treadmill/',
     },
   ],
   bottomLine: [

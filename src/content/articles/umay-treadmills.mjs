@@ -172,7 +172,7 @@ export default {
             What sets UMAY apart from most marketplace walking-pad names is that it exists outside the
             marketplace. UMAY Fitness runs a US web store with a phone line and support email, publishes
             a 30-day returns policy and free shipping over $49, and lists a range that runs from walking
-            pads to folding treadmills, ellipticals and bikes. That gives you somewhere to go if
+            pads to <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>folding treadmills</a>, ellipticals and bikes. That gives you somewhere to go if
             something goes wrong. Brands like
             <a href="/zofdim-treadmills/" class="text-[#0F62FE] font-medium">Zofdim</a>, which we could
             not trace at all, give you nothing of the kind.
@@ -189,7 +189,7 @@ export default {
       html: `          <p>
             UMAY sells as “Umay Fitness” from umayfitness.com, which replaced an older umayfit.com
             address. On 5 November 2026 its US store listed 44 products: 14 walking pads and treadmills,
-            plus an elliptical, under-desk elliptical, exercise bikes, a vibration plate, a
+            plus an elliptical, under-desk elliptical, exercise bikes, a <a href="/best-vibration-plates/" class="text-[#0F62FE] font-medium" data-autolink>vibration plate</a>, a
             stepper, Pilates boards, a home gym and accessories. It gives a US phone number and a support
             email, and its store prices are in US dollars with US shipping terms.
           </p>
@@ -209,7 +209,7 @@ export default {
             example, does not appear on UMAY’s site at all, and OCDevel found that the Amazon listing it
             had tracked for that model now shows a different product. Model names on UMAY’s store also
             shift: the U20F’s product address still reads U18F. If you are comparing a UMAY on Amazon with
-            one on UMAY’s store, compare the photos, the belt size and the motor rating, not just the
+            one on UMAY’s store, compare the photos, the <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium" data-autolink>belt size</a> and the motor rating, not just the
             name.
           </p>`,
     },
@@ -419,6 +419,18 @@ export default {
       title: 'Sunny Health &amp; Fitness Treadmills',
       blurb: 'A long-established budget brand, for comparison with UMAY’s range.',
       url: '/sunny-health-fitness-treadmills/',
+    },
+    {
+      kicker: "Brand Guide",
+      title: "AJOOSOS 2-in-1 Treadmill",
+      blurb: "A scooter brand's Amazon walking pad we could not verify: what the listing says, how to check it, and.",
+      url: '/ajoosos-treadmills/',
+    },
+    {
+      kicker: "Brand Guide",
+      title: "FUNMILY Treadmills",
+      blurb: "An Amazon-led brand whose pads carry 2.5 or 3.5 HP and 300–400 lb depending on the source: models.",
+      url: '/funmily-treadmills/',
     },
   ],
   bottomLine: [

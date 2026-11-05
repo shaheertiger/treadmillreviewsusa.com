@@ -14,8 +14,8 @@ const PRODUCTS = [
     brand: "NordicTrack",
     category: "Discontinued Folding iFIT-Compatible Treadmill",
     badge: "Used Only",
-    amazonUrl: "https://www.amazon.com/s?k=NordicTrack+C950i+Treadmill&tag=sktiger-20",
-    amazonLabel: "Check Price on Amazon",
+    amazonUrl: "https://www.amazon.com/s?k=NordicTrack+folding+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     image: null,
     reviewUrl: null,
     priceRange: "Discontinued: used only",
@@ -166,7 +166,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.brand },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -505,8 +505,8 @@ const schema = {
           </p>
           <p>
             We could not find a model-by-model list. A C950i belongs to the generation the notice describes,
-            and the safe assumption when buying one is that iFIT will not work and you are buying a manual
-            treadmill with built-in programs. If a seller says iFIT works on theirs, ask to see it run an iFIT
+            and the safe assumption when buying one is that iFIT will not work and you are buying a <a href="/best-manual-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>manual
+            treadmill</a> with built-in programs. If a seller says iFIT works on theirs, ask to see it run an iFIT
             workout during your visit.
           </p>
           <p>

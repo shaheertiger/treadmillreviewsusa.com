@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "supermats-treadmat",
     name: "SuperMats TreadMat",
+    brand: "SuperMats",
     category: "Heavy-duty vinyl treadmill mat",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=SuperMats+Heavy+Duty+TreadMat+Treadmill+Mat&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "sunny-floor-protector",
     name: "Sunny Health & Fitness Floor Protector Mat",
+    brand: "Sunny Health & Fitness",
     category: "Budget PVC foam mat in four sizes",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/dp/B01GSMN9WY?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "rubber-cal-treadmill-mat",
     name: "Rubber-Cal Treadmill Mat (4 x 7.5 ft)",
+    brand: "Rubber-Cal",
     category: "Recycled rubber mat for big machines and carpet",
     badge: "Best for Carpet & Big Machines",
     amazonUrl: "https://www.amazon.com/dp/B001VA8NRU?tag=sktiger-20&linkCode=ll1",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "flooringinc-premium-rubber",
     name: "FlooringInc Premium Rubber Mat (4 x 6 ft, 3/8 in.)",
+    brand: "FlooringInc",
     category: "Thick vulcanized rubber mat for upstairs rooms",
     badge: "Best for Upstairs",
     amazonUrl: "https://www.amazon.com/s?k=rubber+gym+floor+mat+4x6+3%2F8+inch&tag=sktiger-20",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "balancefrom-walking-pad-mat",
     name: "BalanceFrom High Density Equipment Mat (2.5 x 5 ft)",
+    brand: "BalanceFrom",
     category: "Compact mat sized for walking pads",
     badge: "Best for Walking Pads",
     amazonUrl: "https://www.amazon.com/s?k=high+density+exercise+equipment+mat&tag=sktiger-20",
@@ -216,7 +221,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

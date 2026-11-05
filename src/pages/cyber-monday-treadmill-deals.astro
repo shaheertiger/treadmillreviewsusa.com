@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "urevo-strol-2e",
     name: "UREVO Strol 2E",
+    brand: "UREVO",
     category: "Cheapest Pad That Can Jog",
     badge: "Under $200",
     amazonUrl: "https://www.amazon.com/dp/B0HG9D52DC?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "walkingpad-z1",
     name: "WalkingPad Z1",
+    brand: "WalkingPad",
     category: "Best Value Folding Walking Pad",
     badge: "Best Value Pad",
     amazonUrl: "https://www.amazon.com/dp/B0H2YYZTL8?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "walkingpad-c2",
     name: "WalkingPad C2",
+    brand: "WalkingPad",
     category: "Best Compact Pad for Small Spaces",
     badge: "Most Compact",
     amazonUrl: "https://www.amazon.com/dp/B0F48MZV54?tag=sktiger-20&linkCode=ll1",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "merach-w50-trekpad",
     name: "MERACH NovaWalk W50 TrekPad",
+    brand: "MERACH",
     category: "Best Incline Pad for Heavier Walkers",
     badge: "Highest Capacity",
     amazonUrl: "https://www.amazon.com/dp/B0HJTT2S6R?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-t-series-5",
     name: "NordicTrack T Series 5",
+    brand: "NordicTrack",
     category: "Cheapest Full-Size Treadmill to Watch",
     badge: "Best Budget Treadmill",
     amazonUrl: "https://www.amazon.com/dp/B0CJ9W38VQ?tag=sktiger-20&linkCode=ll1",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "horizon-t101-connect",
     name: "Horizon T101 Connect",
+    brand: "Horizon",
     category: "Best Folding Treadmill to Watch",
     badge: "Best Folding Treadmill",
     amazonUrl: "https://www.amazon.com/dp/B0F9LQY1P4?tag=sktiger-20&linkCode=ll1",
@@ -243,7 +249,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

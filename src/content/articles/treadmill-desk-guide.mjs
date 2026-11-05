@@ -416,6 +416,12 @@ export default {
       blurb: 'Daily walking volume, and how to build it sensibly.',
       url: '/how-long-should-i-walk-on-a-treadmill/',
     },
+    {
+      kicker: "Accessories",
+      title: "Best Treadmill Laptop Holders",
+      blurb: "Laptop boards, pole trays and phone clamps that strap to a treadmill, how to measure the rails, and when.",
+      url: '/best-treadmill-laptop-holders/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Set the desk on the belt, elbows at about 90 degrees, screen at

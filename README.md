@@ -921,6 +921,53 @@ Found while writing and not yet changed:
   says only iMovR sells the Unsit (InMovement now sells it direct; both say 400 lb).
 - The WalkingPad Z1 has three ASINs in circulation (B0H2YYZTL8, B0H6WN93Z7, B0H6WZVWCT).
 
+### Buying guides, second batch (2026-11-05): twenty more pages
+
+Twenty more buyer's guides from the same Semrush export, re-scanned against the site after the first
+batch merged (`research/keyword-batches/2026-11-05-buying-guides-2.csv`). Every head term is KD 30
+or under; terms already owned (treadmill desks, Wayfair house brands, used treadmills, lubricant,
+manual and curved treadmills, heavy-duty and 400 lb capacity, Woodway 4Front) were left to their
+pages.
+
+- `/reviews/`: WalkingPad A1 Pro (still sold, $499), Horizon T202, Landice L7 (with the L8 and L7
+  RTM), NordicTrack C950i (discontinued; iFIT's April 2023 cut-off), Life Fitness 95T/95Ti
+  (remanufactured only)
+- `/brands/`: Nautilus (no treadmill sold today; the T616/T618 recall has no remedy left and the
+  CPSC says to discard them, so neither is carded), Schwinn, Vision Fitness (one dealer-sold model;
+  home models in JHT's January 2026 power-cord recall), LifeSmart, Centr, Tru Grit (its site now
+  redirects to a domain sale), and five marketplace brands: AJOOSOS (a scooter brand with no
+  treadmill on its own store), UMAY, FUNMILY, RHYTHM FUN and OMA
+- `/price/` Where to buy: Rogue Fitness (eight Woodway, TrueForm and STEPR treadmills; Rogue does
+  not sell the AssaultRunner)
+- `/best/`: dog treadmills for small dogs; `/guides/` Accessories: treadmill laptop holders;
+  `/maintenance/` Repairs: treadmill parts (model and serial numbers, OEM vs aftermarket, each
+  brand's parts route)
+
+Same rules as the first batch. 105 Amazon links (buttons and product photos), all tagged
+`sktiger-20` and `rel="sponsored nofollow noopener"`, 34 of them `/dp/`. Eighteen dealer-only
+products (Landice, Rogue's Woodway and STEPR machines, Centr, Tru Grit Runner Elite, Life Fitness
+95T/95Ti, Vision T600, LifeSmart TM6500, NordicTrack C950i, Nautilus T614, Dog Runner Tracks) were
+added to `amazon-fallbacks.json`. Interlink phrases "horizon t202", "landice l7" and "landice l8"
+moved to the new model pages.
+
+**JSON-LD brand fix.** `build-articles.mjs` published the first word of a product's name as its
+brand, so RHYTHM FUN, Sunny Health & Fitness, Life Fitness, Bells of Steel and REP Fitness cards said
+"RHYTHM", "Sunny", "Life", "Bells" and "REP", and generic parts said "100%", "Universal" or
+"Treadmill". A spec can now set `brand`; otherwise a known multi-word brand prefix
+(`MULTIWORD_BRANDS`) is used, and generic names (`GENERIC_FIRST_WORDS`) publish no brand at all.
+Every spec page was regenerated.
+
+Found while writing and not yet changed:
+- `/best-treadmill-under-1000-reviews/` calls the Schwinn 810 non-folding (Schwinn says it folds).
+- `/bowflex-t9-treadmill/` gives $1,399–$1,799 (Bowflex showed $1,499 on sale).
+- `/best-quiet-walking-pads/` prices the WalkingPad A1 Pro at $529–$699 (WalkingPad: $499).
+- `/best-dog-treadmills/`: the GoPet PR720F is no longer listed at Canine Athletes;
+  `/best-dog-treadmills-for-large-dogs/`: Dog Runner Tracks is sold out there.
+- `amazon-fallbacks.json` keeps an entry for "Tru Grit Runner Curved Manual Treadmill", which also
+  has a verified ASIN; the ASIN wins, so the fallback is unused.
+- Life Fitness's US catalogue marks the Elevation Series discontinued while its business-only
+  Facility Shop lists one at $16,999.
+
 ### Sole F80 and F85
 
 Both were shipped first as `dataPending` editorial drafts because their published figures conflict

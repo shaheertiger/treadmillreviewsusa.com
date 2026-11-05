@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "horizon-7-8-at",
     name: "Horizon 7.8 AT",
+    brand: "Horizon",
     category: "Heavy-Duty Folding Running Treadmill Without a Subscription",
     badge: "Best Horizon for Heavy Use",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+7.8+AT+Treadmill&tag=sktiger-20",
@@ -38,6 +39,7 @@ const PRODUCTS = [
   {
     id: "horizon-7-4-at",
     name: "Horizon 7.4 AT",
+    brand: "Horizon",
     category: "The Same Deck and Warranty for Less",
     badge: "Better Value for Most Runners",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+7.4+AT+Treadmill&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "sole-f85-vs-horizon",
     name: "Sole F85",
+    brand: "Sole",
     category: "The Folding Rival With a Touchscreen",
     badge: "Cross-Shop",
     amazonUrl: "https://www.amazon.com/s?k=Sole+F85+Treadmill&tag=sktiger-20",
@@ -164,7 +167,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

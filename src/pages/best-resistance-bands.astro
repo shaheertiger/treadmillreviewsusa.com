@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "bodylastics-pro-series",
     name: "Bodylastics Pro Series 5-Band Resistance Band Set",
+    brand: "Bodylastics",
     category: "Stackable tube bands with handles, ankle straps and door anchor",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Bodylastics+Pro+Series+Resistance+Band+Set+5+Bands&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "whatafit-resistance-bands",
     name: "Whatafit Resistance Bands Set",
+    brand: "Whatafit",
     category: "Budget stackable tube bands with handles",
     badge: "Best Budget Tube Set",
     amazonUrl: "https://www.amazon.com/dp/B07DWSPQQY?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "serious-steel-pull-up-bands",
     name: "Serious Steel Fitness 41\" Assisted Pull-Up Bands",
+    brand: "Serious",
     category: "Layered latex loop power bands, sold singly or in sets",
     badge: "Best Power Bands",
     amazonUrl: "https://www.amazon.com/dp/B01LY5WJZ0?tag=sktiger-20&linkCode=ll1",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "fit-simplify-loop-bands",
     name: "Fit Simplify Resistance Loop Exercise Bands, Set of 5",
+    brand: "Fit",
     category: "Mini latex loop bands",
     badge: "Best Mini Bands",
     amazonUrl: "https://www.amazon.com/dp/B01AVDVHTI?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "sling-shot-hip-circle",
     name: "Sling Shot Hip Circle",
+    brand: "Sling",
     category: "Fabric hip and glute band",
     badge: "Best Fabric Hip Band",
     amazonUrl: "https://www.amazon.com/dp/B00T4JFQQ6?tag=sktiger-20&linkCode=ll1",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "theraband-non-latex-beginner",
     name: "TheraBand Non-Latex Resistance Bands Set, Beginner",
+    brand: "TheraBand",
     category: "Flat therapy bands, latex-free",
     badge: "Best Latex-Free",
     amazonUrl: "https://www.amazon.com/s?k=THERABAND+Resistance+Bands+Set+Beginner+Yellow+Red+Green+Non-Latex&tag=sktiger-20",
@@ -243,7 +249,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

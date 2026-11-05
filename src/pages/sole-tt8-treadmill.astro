@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "sole-tt8",
     name: "Sole TT8",
+    brand: "Sole",
     category: "Non-Folding Light-Commercial Treadmill With Decline",
     badge: "Sold Out at Sole",
     amazonUrl: "https://www.amazon.com/s?k=Sole+TT8+Treadmill&tag=sktiger-20",
@@ -38,6 +39,7 @@ const PRODUCTS = [
   {
     id: "sole-f85-vs-tt8",
     name: "Sole F85",
+    brand: "Sole",
     category: "Folding Sole With the Same Screen and Deck Size",
     badge: "In Stock Alternative",
     amazonUrl: "https://www.amazon.com/s?k=Sole+F85+Treadmill&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-x16-vs-tt8",
     name: "NordicTrack X16",
+    brand: "NordicTrack",
     category: "Non-Folding Treadmill With Deeper Decline",
     badge: "For Decline",
     amazonUrl: "https://www.amazon.com/s?k=NordicTrack+X16+Treadmill&tag=sktiger-20",
@@ -164,7 +167,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

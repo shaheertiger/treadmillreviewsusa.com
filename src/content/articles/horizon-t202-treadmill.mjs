@@ -192,7 +192,7 @@ export default {
             Two notes on the table. The T202 has been on sale for several years, and reviews from 2023 and
             2024 give the same figures as Horizon’s current page, which suggests the US machine has not
             changed in any way that matters. And search results for "T202 treadmill" also turn up versions
-            sold in the UK, Australia, Malaysia and the UAE — the T202-05, T202-26, a Costco UK "AtZone" and a
+            sold in the UK, Australia, Malaysia and the UAE — the T202-05, T202-26, a <a href="/buying-a-treadmill-at-costco/" class="text-[#0F62FE] font-medium" data-autolink>Costco</a> UK "AtZone" and a
             "Special Edition" — with different consoles and figures. Those are regional machines; check the
             model number if you are reading a listing from outside the US.
           </p>`,
@@ -237,7 +237,7 @@ export default {
           </p>
           <p>
             Incline is motorised, with 12 levels controlled by the right-hand EasyDial; both reviews give the
-            range as 0 to 12%. That is enough for steep walking workouts, including the
+            range as 0 to 12%. That is enough for steep <a href="/treadmill-walking-workouts/" class="text-[#0F62FE] font-medium" data-autolink>walking workouts</a>, including the
             <a href="/12-3-30-treadmill-workout/" class="text-[#0F62FE] font-medium">12-3-30 workout</a> at its
             top setting. TreadmillReviews.com found the machine less stable at the top of the range, and
             Treadmill Review Guru suggests a ceiling of at least eight feet for use at 12%, given the
@@ -256,8 +256,8 @@ export default {
             Nothing on the T202 needs a subscription. It sends live data over Bluetooth FTMS; Horizon’s page
             shows Peloton, Zwift and Kinomap among compatible apps and mentions Strava syncing. The apps read
             the treadmill’s data but do not control speed or incline. Horizon’s comparison table is clear about
-            two things the T202 lacks: JRNY adaptive workouts, which the cheaper T101 Connect has, and Apple
-            GymKit or Samsung watch pairing, which only the 7.0 AT offers in Horizon’s current range. If you
+            two things the T202 lacks: JRNY adaptive workouts, which the cheaper T101 Connect has, and <a href="/how-to-connect-apple-watch-to-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Apple
+            GymKit</a> or Samsung watch pairing, which only the 7.0 AT offers in Horizon’s current range. If you
             want a machine that changes speed and incline for you, our
             <a href="/best-smart-treadmills/" class="text-[#0F62FE] font-medium">smart treadmill roundup</a>
             covers that trade-off.
@@ -322,7 +322,7 @@ export default {
             main thing the 7.0 AT buys you, with three years of parts. Our
             <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a>
             explains how to read the split, and Horizon ties cover to home use, the right electrical supply
-            and the maintenance schedule in its manuals.
+            and the <a href="/treadmill-maintenance-checklist/" class="text-[#0F62FE] font-medium" data-autolink>maintenance schedule</a> in its manuals.
           </p>
           <p>
             We searched the US Consumer Product Safety Commission’s recall database on 5 November 2026 and

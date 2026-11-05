@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "merach-novawalk-w50-trekpad",
     name: "MERACH NovaWalk W50 TrekPad",
+    brand: "MERACH",
     category: "Best Overall Walking Pad for Heavy People",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0HJTT2S6R?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "lifespan-tx6-glowup",
     name: "LifeSpan TX6-GlowUp",
+    brand: "LifeSpan",
     category: "Best Premium Walking Pad for Heavy People",
     badge: "Best Premium",
     amazonUrl: "https://www.amazon.com/s?k=LifeSpan+TX6+GlowUp+Under+Desk+Treadmill&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "walkingpad-mx8",
     name: "WalkingPad MX8",
+    brand: "WalkingPad",
     category: "Best High-Capacity Pad With Handles",
     badge: "Best With Handles",
     amazonUrl: "https://www.amazon.com/dp/B0GR5R4QXX?tag=sktiger-20&linkCode=ll1",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "merach-w50-lite-trekpad",
     name: "MERACH W50 Lite TrekPad",
+    brand: "MERACH",
     category: "Best Low-Profile 350 lb Walking Pad",
     badge: "Best Low Profile",
     amazonUrl: "https://www.amazon.com/s?k=MERACH+W50+Lite+Walking+Pad&tag=sktiger-20",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "urevo-foldimix-5l",
     name: "UREVO FoldiMix 5L",
+    brand: "UREVO",
     category: "Best Fold-Up Handrail Model",
     badge: "Best With a Rail",
     amazonUrl: "https://www.amazon.com/s?k=UREVO+FoldiMix+5L+Treadmill&tag=sktiger-20",
@@ -217,7 +222,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "wahoo-kickr-run",
     name: "Wahoo KICKR RUN",
+    brand: "Wahoo",
     category: "Smart Treadmill With RunFree and Zwift Incline Control",
     badge: "The Model Reviewed",
     amazonUrl: "https://www.amazon.com/s?k=smart+treadmill+with+incline+and+decline&tag=sktiger-20",
@@ -38,6 +39,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-commercial-1750",
     name: "NordicTrack Commercial 1750",
+    brand: "NordicTrack",
     category: "Mainstream Treadmill With Decline and a Screen",
     badge: "Best-Value Rival",
     amazonUrl: "https://www.amazon.com/dp/B0D5YKF4SK?tag=sktiger-20&linkCode=ll1",
@@ -64,6 +66,7 @@ const PRODUCTS = [
   {
     id: "horizon-7-0-at",
     name: "Horizon 7.0 AT",
+    brand: "Horizon",
     category: "Budget Treadmill That Talks to Zwift",
     badge: "Budget Zwift Pick",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+7.0+AT+Treadmill&tag=sktiger-20",
@@ -165,7 +168,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

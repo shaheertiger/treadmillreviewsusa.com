@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "hyperice-normatec-3-legs",
     name: "Hyperice Normatec 3 Legs",
+    brand: "Hyperice",
     category: "Air compression boots with separate control unit",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0B72QBWHC?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "hyperice-normatec-elite-legs",
     name: "Hyperice Normatec Elite Legs",
+    brand: "Hyperice",
     category: "Wireless air compression boots",
     badge: "Best Wireless",
     amazonUrl: "https://www.amazon.com/s?k=Hyperice+Normatec+Elite+Wireless+Compression+Boots&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "therabody-jetboots-prime",
     name: "Therabody JetBoots Prime",
+    brand: "Therabody",
     category: "Wireless air compression boots",
     badge: "Best Value Wireless",
     amazonUrl: "https://www.amazon.com/dp/B0DGRPRYD9?tag=sktiger-20&linkCode=ll1",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "therabody-jetboots-pro-plus",
     name: "Therabody JetBoots PRO Plus",
+    brand: "Therabody",
     category: "Wireless compression boots with vibration and infrared LED",
     badge: "Most Features",
     amazonUrl: "https://www.amazon.com/dp/B0DGRT2YGH?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "fit-king-leg-air-massager",
     name: "FIT KING Leg Air Massager",
+    brand: "FIT",
     category: "Calf and foot air compression massager",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/dp/B0B62V291P?tag=sktiger-20&linkCode=ll1",
@@ -217,7 +222,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

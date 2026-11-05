@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "sportsroyals-power-tower",
     name: "Sportsroyals Power Tower (360 lb)",
+    brand: "Sportsroyals",
     category: "Adjustable power tower with pull-up, dip, knee-raise and push-up stations",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=SPORTSROYALS+Power+Tower+Free+Standing+Pull+Up+Bar+360+lb&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "relife-power-tower",
     name: "RELIFE Rebuild Your Life Power Tower",
+    brand: "RELIFE",
     category: "Compact adjustable power tower",
     badge: "Best for Low Ceilings",
     amazonUrl: "https://www.amazon.com/dp/B081JXJ9VD?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "marcy-tc-3515",
     name: "Marcy Power Tower TC-3515",
+    brand: "Marcy",
     category: "Fixed-height power tower with VKR station",
     badge: "Best Established Brand",
     amazonUrl: "https://www.amazon.com/dp/B01JUAJLBE?tag=sktiger-20&linkCode=ll1",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "stamina-full-body-power-tower-735",
     name: "Stamina Full Body Power Tower 735",
+    brand: "Stamina",
     category: "Power tower with built-in fold-down bench",
     badge: "Best With a Bench",
     amazonUrl: "https://www.amazon.com/dp/B07Y3THXY2?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "stamina-power-tower-1698",
     name: "Stamina Power Tower 1698",
+    brand: "Stamina",
     category: "Power tower with hanging ab straps",
     badge: "Best for Hanging Ab Work",
     amazonUrl: "https://www.amazon.com/s?k=Stamina+Power+Tower+1698&tag=sktiger-20",
@@ -217,7 +222,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

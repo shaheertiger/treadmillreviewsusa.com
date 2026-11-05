@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "sole-e35",
     name: "SOLE E35",
+    brand: "SOLE",
     category: "Best Elliptical for Home Overall",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=SOLE+E35+Elliptical&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "horizon-ex-59",
     name: "Horizon Fitness EX-59",
+    brand: "Horizon Fitness",
     category: "Best Budget Home Elliptical",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+Fitness+EX-59+Elliptical&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "schwinn-411",
     name: "Schwinn 411 Compact Elliptical",
+    brand: "Schwinn",
     category: "Best Elliptical for Small Spaces",
     badge: "Small Spaces",
     amazonUrl: "https://www.amazon.com/dp/B07H1BKRQ3?tag=sktiger-20&linkCode=ll1",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "schwinn-490",
     name: "Schwinn 490 Elliptical",
+    brand: "Schwinn",
     category: "Best Compact Elliptical With Incline",
     badge: "Compact Incline",
     amazonUrl: "https://www.amazon.com/dp/B0CJCV9VW5?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "sole-e95s",
     name: "SOLE E95S",
+    brand: "SOLE",
     category: "Best Elliptical for Tall Users",
     badge: "Adjustable Stride",
     amazonUrl: "https://www.amazon.com/s?k=SOLE+E95S+Elliptical&tag=sktiger-20",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-x16",
     name: "NordicTrack X16 Elliptical",
+    brand: "NordicTrack",
     category: "Best Connected Elliptical",
     badge: "Best Connected",
     amazonUrl: "https://www.amazon.com/s?k=NordicTrack+X16+Elliptical&tag=sktiger-20",
@@ -243,7 +249,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

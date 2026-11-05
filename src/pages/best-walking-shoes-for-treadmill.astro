@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "brooks-ghost-max-4",
     name: "Brooks Ghost Max 4",
+    brand: "Brooks",
     category: "High-cushion walking and easy-running shoe",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0FY3L1PTQ?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "hoka-clifton-11",
     name: "HOKA Clifton 11",
+    brand: "HOKA",
     category: "Daily running shoe that doubles as a walker",
     badge: "Best for Walking and Jogging",
     amazonUrl: "https://www.amazon.com/dp/B0FXDN22YW?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "altra-experience-flow-3",
     name: "Altra Experience Flow 3",
+    brand: "Altra",
     category: "Low-drop daily shoe with a foot-shaped toe box",
     badge: "Best Roomy Toe Box",
     amazonUrl: "https://www.amazon.com/dp/B0FD2MR73D?tag=sktiger-20&linkCode=ll1",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "on-cloud-6",
     name: "On Cloud 6",
+    brand: "On",
     category: "Lightweight everyday and gym shoe",
     badge: "Best for Short Brisk Walks",
     amazonUrl: "https://www.amazon.com/dp/B0D31T3GP7?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "brooks-addiction-walker-2",
     name: "Brooks Addiction Walker 2",
+    brand: "Brooks",
     category: "Supportive leather walking shoe",
     badge: "Best for Support",
     amazonUrl: "https://www.amazon.com/dp/B07KX21HJL?tag=sktiger-20&linkCode=ll1",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "asics-gel-contend-10",
     name: "ASICS Gel-Contend 10",
+    brand: "ASICS",
     category: "Budget neutral shoe for walking and easy running",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/dp/B0GYZ6JR5P?tag=sktiger-20&linkCode=ll1",
@@ -242,7 +248,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

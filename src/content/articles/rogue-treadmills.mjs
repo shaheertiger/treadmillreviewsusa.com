@@ -199,7 +199,7 @@ export default {
             same prices on Rogue, on the maker's store or at another dealer on the day. What Rogue adds is a
             single checkout for a whole gym, its own customer service and, on the Curve LTG, its badge. What it
             does not sell is the <a href="/assaultrunner-pro-treadmill/" class="text-[#0F62FE] font-medium">AssaultRunner</a>,
-            the best-known curved treadmill outside the CrossFit world: Rogue lists Assault's air bike but no
+            the best-known curved treadmill outside the CrossFit world: Rogue lists Assault's <a href="/best-air-bikes/" class="text-[#0F62FE] font-medium" data-autolink>air bike</a> but no
             AssaultRunner was in its treadmill category. We have not tested any of these machines.
           </p>`,
     },
@@ -343,8 +343,8 @@ export default {
             Rogue's line built for it, with a dedicated sled-push mode. A cheaper route is a curved treadmill
             with heavy magnetic resistance levels; our
             <a href="/curved-treadmill-workouts/" class="text-[#0F62FE] font-medium">curved treadmill workouts</a>
-            page covers sled-style sessions. The official HYROX race treadmill is the Centr x HYROX Perform
-            Tread, which Rogue does not sell.
+            page covers sled-style sessions. The official HYROX race treadmill is the Centr x <a href="/centr-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>HYROX Perform
+            Tread</a>, which Rogue does not sell.
           </p>`,
     },
     {

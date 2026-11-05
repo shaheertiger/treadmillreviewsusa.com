@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "imovr-unsit-lander",
     name: "iMovR Unsit Treadmill with Lander Standing Desk",
+    brand: "iMovR",
     category: "Office Treadmill Desk Set (Unsit + Lander)",
     badge: "All-Day Walking",
     amazonUrl: "https://www.amazon.com/s?k=treadmill+desk&tag=sktiger-20",
@@ -115,7 +116,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

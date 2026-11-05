@@ -260,7 +260,7 @@ export default {
             about two inches higher than the L7’s, which matters if you need a low deck. Choose the L8 if you
             are over about six feet and run, if you weigh close to 400 lb, or if several people of different
             sizes will share it; our <a href="/best-treadmills-for-tall-runners/" class="text-[#0F62FE] font-medium">treadmills for tall runners</a>
-            guide explains why deck length matters at speed. Otherwise, the L7 does the same work for less.
+            guide explains why <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium" data-autolink>deck length</a> matters at speed. Otherwise, the L7 does the same work for less.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The "L8 Cardio Treadmill L890CT"</h3>
           <p>
@@ -326,7 +326,7 @@ export default {
           <ol>
             <li><strong>Price the configuration, not the base.</strong> The console and belt move the price by up to $2,125 on an L7.</li>
             <li><strong>Ask a dealer and Landice for the same configuration.</strong> Dealers may include delivery, installation, a mat or a promotion, and installation can affect labour cover.</li>
-            <li><strong>Plan the delivery.</strong> At 345 lb shipping weight and 76 inches long, the L7 needs a clear route and two or more people; it does not fold. Our <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">guide to moving a treadmill</a> covers stairs and doorways.</li>
+            <li><strong>Plan the delivery.</strong> At 345 lb <a href="/how-much-does-a-treadmill-weigh/" class="text-[#0F62FE] font-medium" data-autolink>shipping weight</a> and 76 inches long, the L7 needs a clear route and two or more people; it does not fold. Our <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">guide to moving a treadmill</a> covers stairs and doorways.</li>
             <li><strong>Check power.</strong> Landice specifies a 110 VAC, 15 A supply; a dedicated circuit is safest.</li>
             <li><strong>Consider used or remanufactured.</strong> Landice machines last, so a remanufactured L7 or L8 from a reputable dealer can save thousands. One retailer listed a remanufactured L8 at $3,499 in search results we saw; check what is replaced and what warranty comes with it.</li>
           </ol>

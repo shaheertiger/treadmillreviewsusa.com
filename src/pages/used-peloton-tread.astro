@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "used-peloton-tread-tr02",
     name: "Peloton Tread (used, model TR02)",
+    brand: "Peloton",
     category: "The Belt-Deck Peloton Treadmill, Bought Second-Hand",
     badge: "Most Common Used Peloton",
     amazonUrl: "https://www.amazon.com/s?k=peloton+tread&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "used-peloton-tread-plus-tr01",
     name: "Peloton Tread+ (used, model TR01)",
+    brand: "Peloton",
     category: "The Slat-Belt Peloton, Only With the Rear Guard",
     badge: "Check the Rear Guard",
     amazonUrl: "https://www.amazon.com/s?k=peloton+tread&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "peloton-tread-flex-new",
     name: "Peloton Tread Flex",
+    brand: "Peloton",
     category: "The New Peloton to Price Against Any Used One",
     badge: "The New Benchmark",
     amazonUrl: "https://www.amazon.com/s?k=Peloton+Tread+Flex&tag=sktiger-20",
@@ -163,7 +166,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

@@ -14,8 +14,8 @@ const PRODUCTS = [
     brand: "Life Fitness",
     category: "Discontinued Club Treadmill, Sold Remanufactured",
     badge: "Best Used Club Treadmill",
-    amazonUrl: "https://www.amazon.com/s?k=Life+Fitness+95T+Treadmill&tag=sktiger-20",
-    amazonLabel: "Check Price on Amazon",
+    amazonUrl: "https://www.amazon.com/s?k=commercial+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     image: null,
     reviewUrl: null,
     priceRange: "$4,099-$4,999 remanufactured at Fitness Superstore on 5 Nov 2026",
@@ -41,8 +41,8 @@ const PRODUCTS = [
     brand: "Life Fitness",
     category: "Older Club Treadmill, Sold Remanufactured",
     badge: "Lowest Price",
-    amazonUrl: "https://www.amazon.com/s?k=Life+Fitness+95Ti+Treadmill&tag=sktiger-20",
-    amazonLabel: "Check Price on Amazon",
+    amazonUrl: "https://www.amazon.com/s?k=commercial+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     image: null,
     reviewUrl: null,
     priceRange: "$2,599-$3,799 remanufactured on 5 Nov 2026",
@@ -176,7 +176,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.brand },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -449,7 +449,7 @@ const schema = {
           <p>
             A 4 HP continuous AC drive is built for a gym where the treadmill runs most of the day. In a home it
             is overbuilt, which is the point: it should run quietly at any speed for years. The 60-inch deck suits
-            tall runners and fast intervals, and 400 lb is a higher rating than most home treadmills. Our
+            <a href="/best-treadmills-for-tall-runners/" class="text-[#0F62FE] font-medium" data-autolink>tall runners</a> and fast intervals, and 400 lb is a higher rating than most home treadmills. Our
             <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">treadmill horsepower guide</a>
             explains why AC and DC ratings are not directly comparable.
           </p>
@@ -597,7 +597,7 @@ const schema = {
           <p>
             A remanufactured treadmill should have been stripped down, cleaned, fitted with new wear parts and
             tested. Fitness Superstore describes a remanufacturing process on each listing; ask any seller for the
-            list of parts replaced on your unit — belt, deck, rollers, bearings, motor brushes if applicable — and
+            list of parts replaced on your unit — belt, deck, rollers, bearings, <a href="/treadmill-motor-brushes/" class="text-[#0F62FE] font-medium" data-autolink>motor brushes</a> if applicable — and
             get it in writing. "Refurbished" and "serviced" can mean much less. Our
             <a href="/refurbished-treadmills/" class="text-[#0F62FE] font-medium">refurbished treadmills guide</a>
             explains the grades.

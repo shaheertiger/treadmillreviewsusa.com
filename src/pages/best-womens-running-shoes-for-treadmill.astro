@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "saucony-ride-19-womens",
     name: "Saucony Ride 19 (Women's)",
+    brand: "Saucony",
     category: "Neutral daily trainer",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0F9LM68ZD?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "new-balance-880-v15-womens",
     name: "New Balance Fresh Foam X 880 v15 (Women's)",
+    brand: "New",
     category: "Neutral daily trainer in four widths",
     badge: "Best Width Range",
     amazonUrl: "https://www.amazon.com/dp/B0D2Y91MBF?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "asics-gel-nimbus-28-womens",
     name: "ASICS Gel-Nimbus 28 (Women's)",
+    brand: "ASICS",
     category: "Max-cushion neutral trainer",
     badge: "Most Cushioned",
     amazonUrl: "https://www.amazon.com/dp/B0FV6W4KWQ?tag=sktiger-20&linkCode=ll1",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "asics-gt-2000-15-womens",
     name: "ASICS GT-2000 15 (Women's)",
+    brand: "ASICS",
     category: "Stability daily trainer",
     badge: "Best Stability Shoe",
     amazonUrl: "https://www.amazon.com/dp/B0H6GQL9DS?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "nike-vomero-18-womens",
     name: "Nike Vomero 18 (Women's)",
+    brand: "Nike",
     category: "Max-cushion neutral trainer",
     badge: "Best High-Drop Shoe",
     amazonUrl: "https://www.amazon.com/dp/B0F2G7L5FX?tag=sktiger-20&linkCode=ll1",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "hoka-clifton-11-womens",
     name: "HOKA Clifton 11 (Women's)",
+    brand: "HOKA",
     category: "Daily trainer for running and walking",
     badge: "Best for Run-Walk",
     amazonUrl: "https://www.amazon.com/dp/B0G364Q1WK?tag=sktiger-20&linkCode=ll1",
@@ -242,7 +248,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

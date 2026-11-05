@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "horizon-7-4-at",
     name: "Horizon 7.4 AT",
+    brand: "Horizon",
     category: "Best wide treadmill for most people",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+Fitness+7.4+AT+Studio+Series+Treadmill&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "bowflex-t9",
     name: "Bowflex T9",
+    brand: "Bowflex",
     category: "Cheapest 22-inch belt we could verify",
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/s?k=Bowflex+T9+Treadmill&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "horizon-7-8-at",
     name: "Horizon 7.8 AT",
+    brand: "Horizon",
     category: "Wide belt and higher weight rating",
     badge: "Best for Heavier Runners",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+Fitness+7.8+AT+Treadmill&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "sole-f85",
     name: "Sole F85",
+    brand: "Sole",
     category: "Wide belt with a large touchscreen",
     badge: "Best Big-Screen Pick",
     amazonUrl: "https://www.amazon.com/s?k=Sole+F85+Treadmill&tag=sktiger-20",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-commercial-2450",
     name: "NordicTrack Commercial 2450",
+    brand: "NordicTrack",
     category: "Wide belt for fast runners and iFIT users",
     badge: "Best for Speed",
     amazonUrl: "https://www.amazon.com/dp/B0D5YKDXDV?tag=sktiger-20&linkCode=ll1",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "life-fitness-run-cx",
     name: "Life Fitness Run CX",
+    brand: "Life Fitness",
     category: "Non-folding, gym-style wide treadmill",
     badge: "Premium Pick",
     amazonUrl: "https://www.amazon.com/s?k=Life+Fitness+Run+CX+Treadmill&tag=sktiger-20",
@@ -243,7 +249,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

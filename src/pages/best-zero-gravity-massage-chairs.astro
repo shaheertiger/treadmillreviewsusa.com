@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "bob-and-brad-imaster-pro",
     name: "Bob and Brad iMaster Pro Massage Chair",
+    brand: "Bob",
     category: "4D zero gravity SL-track massage chair",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=BOB+AND+BRAD+iMaster+Pro+4D+Massage+Chair&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "osaki-os-3d-champ-ii",
     name: "Osaki OS-3D Champ II Massage Chair",
+    brand: "Osaki",
     category: "3D zero gravity SL-track massage chair",
     badge: "Best Space-Saving",
     amazonUrl: "https://www.amazon.com/dp/B0D7J7835Y?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "real-relax-favor-06",
     name: "Real Relax Favor-06 (2026) Zero Gravity Massage Chair",
+    brand: "Real",
     category: "3D zero gravity SL-track massage chair",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/s?k=Real+Relax+Favor-06+Zero+Gravity+Massage+Chair&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "titan-pro-4d-astro",
     name: "Titan Pro 4D Astro Massage Chair",
+    brand: "Titan",
     category: "4D zero gravity SL-track massage chair",
     badge: "Best 4D Value",
     amazonUrl: "https://www.amazon.com/s?k=Titan+Pro+4D+Astro+Massage+Chair&tag=sktiger-20",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "human-touch-wholebody-8",
     name: "Human Touch WholeBody 8.0 Massage Chair",
+    brand: "Human",
     category: "Compact 3D massage recliner (not zero gravity)",
     badge: "Best for Small Rooms",
     amazonUrl: "https://www.amazon.com/dp/B0B64WXFFM?tag=sktiger-20&linkCode=ll1",
@@ -217,7 +222,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-t-series-10",
     name: "NordicTrack T Series 10",
+    brand: "NordicTrack",
     category: "Lowest-Cost iFIT Touchscreen",
     badge: "Best Budget Touchscreen",
     amazonUrl: "https://www.amazon.com/dp/B0D7XGWMRD?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "sole-f80",
     name: "Sole F80 (2026)",
+    brand: "Sole",
     category: "Touchscreen With No Membership Needed",
     badge: "Best Without a Subscription",
     amazonUrl: "https://www.amazon.com/s?k=Sole+F80+Treadmill&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "echelon-stride-6s",
     name: "Echelon Stride-6s",
+    brand: "Echelon",
     category: "Auto-Fold Treadmill With a Screen",
     badge: "Best Folding Touchscreen",
     amazonUrl: "https://www.amazon.com/s?k=Echelon+Stride-6s+Treadmill&tag=sktiger-20",
@@ -88,6 +91,7 @@ const PRODUCTS = [
   {
     id: "bowflex-t16",
     name: "Bowflex T16",
+    brand: "Bowflex",
     category: "16 in. Screen With Streaming Apps",
     badge: "Best Built-In Apps",
     amazonUrl: "https://www.amazon.com/s?k=Bowflex+T16+Treadmill&tag=sktiger-20",
@@ -113,6 +117,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-commercial-1750",
     name: "NordicTrack Commercial 1750",
+    brand: "NordicTrack",
     category: "16 in. Pivoting Screen for iFIT Runners",
     badge: "Best for iFIT",
     amazonUrl: "https://www.amazon.com/dp/B0D5YKF4SK?tag=sktiger-20&linkCode=ll1",
@@ -139,6 +144,7 @@ const PRODUCTS = [
   {
     id: "peloton-tread-vision",
     name: "Peloton Tread Vision",
+    brand: "Peloton",
     category: "Biggest Screen, Peloton Classes",
     badge: "Biggest Screen",
     amazonUrl: "https://www.amazon.com/dp/B0HDRFM27D?tag=sktiger-20&linkCode=ll1",
@@ -240,7 +246,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

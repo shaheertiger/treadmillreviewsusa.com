@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "fitbit-inspire-3",
     name: "Fitbit Inspire 3",
+    brand: "Fitbit",
     category: "Best Overall Fitness Tracker for a Walking Pad",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0B5F9SZW7?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "3dfitbud-simple-step-counter",
     name: "3DFitBud Simple Step Counter",
+    brand: "3DFitBud",
     category: "Simplest clip-on pedometer",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/dp/B09KY5133T?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "3dtrisport-walking-pedometer",
     name: "3DTriSport Walking 3D Pedometer",
+    brand: "3DTriSport",
     category: "Clip-on pedometer with distance and calories",
     badge: "Best Pedometer With Distance",
     amazonUrl: "https://www.amazon.com/s?k=3DTriSport+Walking+3D+Pedometer+Clip+Lanyard&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "stryd-5",
     name: "Stryd 5.0",
+    brand: "Stryd",
     category: "Running foot pod that measures at the shoe",
     badge: "Best for Runners",
     amazonUrl: "https://www.amazon.com/s?k=Stryd+5.0+Running+Power+Meter+Footpod&tag=sktiger-20",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "oura-ring-4",
     name: "Oura Ring 4",
+    brand: "Oura",
     category: "Smart ring — comfortable, but still on your hand",
     badge: "Best Ring (With Caveats)",
     amazonUrl: "https://www.amazon.com/dp/B0D9WVKXLK?tag=sktiger-20&linkCode=ll1",
@@ -217,7 +222,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

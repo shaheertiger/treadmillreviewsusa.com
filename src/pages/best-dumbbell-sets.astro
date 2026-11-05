@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "rep-rubber-hex-set",
     name: "REP Fitness Rubber Hex Dumbbell Set (5–50 lb) with Rack",
+    brand: "REP Fitness",
     category: "Rubber hex dumbbells, ten pairs, with three-tier rack",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B01LXM0D3V?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "cap-rubber-hex-550",
     name: "CAP Rubber Hex Dumbbell Set with 2-Tier Rack (550 lb)",
+    brand: "CAP",
     category: "Rubber hex dumbbells, ten pairs, with two-tier rack",
     badge: "Best Value Full Set",
     amazonUrl: "https://www.amazon.com/dp/B0DNGCTN1V?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "cap-rubber-hex-150",
     name: "CAP Rubber Hex Dumbbell Set with A-Frame Rack (150 lb)",
+    brand: "CAP",
     category: "Rubber hex dumbbells, five pairs, with A-frame rack",
     badge: "Best Starter Set",
     amazonUrl: "https://www.amazon.com/dp/B09NLDZ5HM?tag=sktiger-20&linkCode=ll1",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "cap-rubber-hex-100-vertical",
     name: "CAP Rubber Hex Dumbbell Set with Vertical Rack (100 lb)",
+    brand: "CAP",
     category: "Rubber hex dumbbells, three pairs, with vertical rack",
     badge: "Best for Small Rooms",
     amazonUrl: "https://www.amazon.com/dp/B0D2Z4XYF5?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "rep-urethane-round-set",
     name: "REP Fitness Urethane Round Dumbbell Set (5–50 lb)",
+    brand: "REP Fitness",
     category: "Urethane-coated round dumbbells, ten pairs",
     badge: "Best Urethane",
     amazonUrl: "https://www.amazon.com/dp/B07H4S5J6G?tag=sktiger-20&linkCode=ll1",
@@ -217,7 +222,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

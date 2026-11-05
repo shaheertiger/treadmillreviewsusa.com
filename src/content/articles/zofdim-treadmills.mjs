@@ -438,6 +438,18 @@ export default {
       blurb: "An Amazon-only walking-pad brand: conflicting listing figures, manuals and warranty via the seller.",
       url: '/ancheer-treadmills/',
     },
+    {
+      kicker: "Brand Guide",
+      title: "AJOOSOS 2-in-1 Treadmill",
+      blurb: "A scooter brand's Amazon walking pad we could not verify: what the listing says, how to check it, and.",
+      url: '/ajoosos-treadmills/',
+    },
+    {
+      kicker: "Brand Guide",
+      title: "FUNMILY Treadmills",
+      blurb: "An Amazon-led brand whose pads carry 2.5 or 3.5 HP and 300–400 lb depending on the source: models.",
+      url: '/funmily-treadmills/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">We could not confirm anything about Zofdim treadmills beyond their

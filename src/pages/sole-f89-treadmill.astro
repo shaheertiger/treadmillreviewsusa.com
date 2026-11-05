@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "sole-f89",
     name: "Sole F89",
+    brand: "Sole",
     category: "Folding Treadmill With 21.5 in. Touchscreen",
     badge: "No Longer on Sole’s US Store",
     amazonUrl: "https://www.amazon.com/dp/B0CYR8VFR1?tag=sktiger-20&linkCode=ll1",
@@ -114,7 +115,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

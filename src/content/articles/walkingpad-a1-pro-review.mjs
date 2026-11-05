@@ -163,7 +163,7 @@ export default {
       heading: 'Is the WalkingPad A1 Pro Still Sold?',
       html: `          <p>
             Yes, by WalkingPad itself. On 5 November 2026 WalkingPad’s US store showed the A1 Pro Foldable
-            Under Desk Treadmill as in stock at $499, against a $699 reference price, with a Black Friday
+            Under Desk Treadmill as in stock at $499, against a $699 reference price, with a <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium" data-autolink>Black Friday</a>
             label. A second WalkingPad product page for the same machine, which offers a choice of 230 lb
             and 300 lb versions, also showed $499 and an add-to-cart button. The product was first
             published on WalkingPad’s store in April 2020, which makes it one of the oldest walking pads
@@ -282,7 +282,7 @@ export default {
       id: 'reviews-say',
       heading: 'What Independent Reviews Report',
       html: `          <p>
-            Search results for "WalkingPad A1 Pro foldable under desk treadmill reviews" are mostly
+            Search results for "WalkingPad A1 Pro foldable <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>under desk treadmill</a> reviews" are mostly
             retailer pages and pooled Amazon ratings. We list a point here only when it comes from an
             independent review or recurs across sources.
           </p>

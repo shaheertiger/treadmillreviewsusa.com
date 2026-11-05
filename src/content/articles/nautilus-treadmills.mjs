@@ -179,7 +179,7 @@ export default {
             machine from the same family, the Bowflex T6 and T9 are the closest replacements.</strong>
           </p>
           <p>
-            On 5 November 2026 nautilus.com sold a vibration plate, amino-acid capsules and apparel, and no
+            On 5 November 2026 nautilus.com sold a <a href="/best-vibration-plates/" class="text-[#0F62FE] font-medium" data-autolink>vibration plate</a>, amino-acid capsules and apparel, and no
             treadmills. The company that made the T614, T616 and T618, Nautilus Inc., sold the Nautilus brand in
             May 2023, changed its own name to BowFlex Inc. later that year, and filed for Chapter 11 in March 2024.
             Johnson Health Tech bought BowFlex Inc.'s assets — the BowFlex, Schwinn and JRNY brands among them —
@@ -202,7 +202,7 @@ export default {
       html: `          <p>
             Nautilus began as the name of Arthur Jones's strength machines in the 1970s and became, through
             acquisitions, the parent company of Bowflex, Schwinn Fitness and, later, the JRNY app. For most of the
-            2010s Nautilus Inc. of Vancouver, Washington, sold home cardio equipment under both the Nautilus and
+            2010s Nautilus Inc. of Vancouver, Washington, sold <a href="/home-cardio-equipment-guide/" class="text-[#0F62FE] font-medium" data-autolink>home cardio equipment</a> under both the Nautilus and
             Schwinn names, and the T-series treadmills were its Nautilus-branded line. The commercial Nautilus
             strength business had been sold years earlier and is made under licence by Core Health &amp; Fitness,
             which is why gym-floor Nautilus machines are unrelated to the home treadmills.
@@ -299,7 +299,7 @@ export default {
           <ul>
             <li><strong>Recall 22-153, 9 June 2022:</strong> about 7,300 Nautilus T616 and T618 treadmills, which
             can start on their own, creating a fall hazard. Nautilus had 21 reports of self-starting and no
-            injuries. They were sold at Best Buy, Walmart, other stores, nautilus.com and Amazon from April through
+            injuries. They were sold <a href="/best-buy-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>at Best Buy</a>, Walmart, other stores, nautilus.com and Amazon from April through
             November 2021.</li>
             <li><strong>Affected serial numbers:</strong> T616 from 100672PRO21140001 to 100672PRO21171980; T618
             from 100647PRO21130111 to 100647PRO21183960. The model name is on the plastic shroud at the front of the
@@ -335,7 +335,7 @@ export default {
             that gave them no longer exists. Johnson Health Tech did not take on the Nautilus brand.</li>
             <li><strong>Check parts.</strong> Search results for the parts supplier Sportsmith show a support page
             listing Nautilus treadmills as discontinued and no longer supported. Belts, motors and boards may still be
-            found through third-party and appliance-parts sites, but a dead console board can end the machine.</li>
+            found through third-party and appliance-parts sites, but a <a href="/treadmill-console-not-working/" class="text-[#0F62FE] font-medium" data-autolink>dead console</a> board can end the machine.</li>
             <li><strong>Run it.</strong> Walk and jog at your normal speeds, run the incline to the top and back,
             and listen for motor and roller noise. Fold it and unfold it; the hydraulic strut weakens with age.</li>
             <li><strong>Look under the belt.</strong> Wear on the deck and frayed belt edges are signs of high mileage
@@ -511,6 +511,12 @@ export default {
       title: 'Horizon Fitness Treadmills',
       blurb: 'Johnson Health Tech’s main home treadmill brand.',
       url: '/horizon-fitness/',
+    },
+    {
+      kicker: "Brand Guide",
+      title: "Schwinn Treadmills",
+      blurb: "Four folding treadmills, $699 to $1,099 (810, 815, SFT4.1, SFT4.3), the old 830, missing motor figures.",
+      url: '/schwinn-treadmills/',
     },
   ],
   bottomLine: [

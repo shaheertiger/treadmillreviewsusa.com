@@ -14,8 +14,8 @@ const PRODUCTS = [
     brand: "Vision",
     category: "Vision’s Only Current Treadmill, LED Console",
     badge: "Current Vision",
-    amazonUrl: "https://www.amazon.com/s?k=Vision+Fitness+T600+Treadmill&tag=sktiger-20",
-    amazonLabel: "Check Price on Amazon",
+    amazonUrl: "https://www.amazon.com/s?k=commercial+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     image: null,
     reviewUrl: null,
     priceRange: "Through Vision dealers; no published price",
@@ -42,8 +42,8 @@ const PRODUCTS = [
     brand: "Vision",
     category: "The T600 with a 22-Inch Touchscreen",
     badge: "Entertainment Console",
-    amazonUrl: "https://www.amazon.com/s?k=Vision+Fitness+T600E+Treadmill&tag=sktiger-20",
-    amazonLabel: "Check Price on Amazon",
+    amazonUrl: "https://www.amazon.com/s?k=commercial+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
     image: null,
     reviewUrl: null,
     priceRange: "$8,799 at Fitness Supply on 5 Nov 2026",
@@ -201,7 +201,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.brand },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -409,7 +409,7 @@ const schema = {
           <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Who Makes Vision Fitness Treadmills?</h2>
 <p>
             Vision Fitness is a brand of Johnson Health Tech, the Taiwanese group that also owns Horizon, Matrix,
-            Bowflex and Schwinn Fitness. Vision's site is built on Johnson Health Tech's asset servers, and the January
+            <a href="/bowflex/" class="text-[#0F62FE] font-medium" data-autolink>Bowflex</a> and Schwinn Fitness. Vision's site is built on Johnson Health Tech's asset servers, and the January
             2026 recall names Johnson Health Tech North America as the firm responsible for Vision treadmills.
           </p>
           <p>
@@ -553,7 +553,7 @@ const schema = {
         <div id="older-models" class="scroll-mt-24">
           <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Older Vision Treadmills: T9200, T9800, TF20, T40 and T80</h2>
 <p>
-            Most Vision treadmills for sale today are older home models from specialty dealers. These are the ones you
+            Most Vision <a href="/treadmills-for-sale/" class="text-[#0F62FE] font-medium" data-autolink>treadmills for sale</a> today are older home models from specialty dealers. These are the ones you
             are most likely to meet.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Vision T9200</h3>
@@ -602,7 +602,7 @@ const schema = {
           </ul>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">How to check a Vision treadmill</h3>
           <p>
-            The model number and frame serial number are on the lower front crossbar near the power switch. The serial
+            The model number and frame serial number are on the lower front crossbar near the <a href="/how-to-turn-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>power switch</a>. The serial
             begins with TM, then a three-digit model code (TM432 for the TF20, TM433 for the T40, TM445 for the T80,
             TM87 for the T9800), then the build date. Johnson Health Tech's recall page at visionfitness.com lists the
             exact serial ranges, and the recall line is 800-211-4590. If a cord bracket or the new locking cord is
@@ -633,7 +633,7 @@ const schema = {
           <p>
             For buyers set on light-commercial build — a home gym with several users, or a building's fitness room —
             the T600 makes sense, and our guide to <a href="/what-treadmills-do-gyms-use/" class="text-[#0F62FE] font-medium">what treadmills gyms use</a>
-            sets it against Precor, Life Fitness and Matrix.
+            sets it against Precor, <a href="/life-fitness/" class="text-[#0F62FE] font-medium" data-autolink>Life Fitness</a> and Matrix.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Is Vision on Amazon?</h3>
           <p>

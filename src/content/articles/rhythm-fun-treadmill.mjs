@@ -171,7 +171,7 @@ export default {
           <p>
             RHYTHM FUN sits in the middle of the budget walking-pad market. It has its own US web store
             with real prices, which many marketplace brands lack, and the AP01 and AP02 pads it sold until
-            early 2026 gathered well over a thousand Amazon reviews, mostly praising how quiet and compact they
+            early 2026 gathered well over a thousand <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium" data-autolink>Amazon reviews</a>, mostly praising how quiet and compact they
             were. But it publishes no motor ratings for its pads, gives some figures only in the product
             title, lists one treadmill twice at prices $130 apart, and has no independent hands-on reviews
             of its current models that we could find.
@@ -190,7 +190,7 @@ export default {
       html: `          <p>
             RHYTHM FUN sells from rhythmfunfitness.com and on Amazon. On 5 November 2026 its store listed
             six products: four treadmills and walking pads, a duplicate listing of one of them, and an
-            exercise bike. It does not say who builds its machines, and like most budget walking-pad brands
+            <a href="/best-exercise-bikes/" class="text-[#0F62FE] font-medium" data-autolink>exercise bike</a>. It does not say who builds its machines, and like most budget walking-pad brands
             it almost certainly sources them from a factory that supplies other labels.
           </p>
           <p>
@@ -286,7 +286,7 @@ export default {
       heading: 'What to Check Before Buying a RHYTHM FUN',
       html: `          <ol>
             <li><strong>Which model you are getting.</strong> RHYTHM FUN’s titles are long and similar. Match
-            the incline percentage, handlebar style, top speed and belt length to one of the cards above.</li>
+            the <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#0F62FE] font-medium" data-autolink>incline percentage</a>, handlebar style, top speed and belt length to one of the cards above.</li>
             <li><strong>Who sells and ships it.</strong> On Amazon, check “Ships from” and “Sold by”. On
             RHYTHM FUN’s store, the brand is the seller.</li>
             <li><strong>The weight limit, with a margin.</strong> RHYTHM FUN gives 300 lb for its pads.
@@ -322,7 +322,7 @@ export default {
           </p>
           <p>
             Whichever you choose, set it up so it lasts. Put the pad on a firm, level surface or a
-            treadmill mat, not deep carpet, so the motor housing can breathe and the deck does not flex.
+            <a href="/do-you-need-a-treadmill-mat/" class="text-[#0F62FE] font-medium" data-autolink>treadmill mat</a>, not deep carpet, so the motor housing can breathe and the deck does not flex.
             Check the belt is centred and not slipping after the first few hours, when new belts stretch,
             and lubricate it on the schedule in the manual. Fold the handlebars down and lift the incline
             foot only with the belt stopped. Our guide to
@@ -403,6 +403,18 @@ export default {
       title: 'Best Walking Pads With Handrails',
       blurb: 'Pads with handlebars or side rails for steadier walking.',
       url: '/best-walking-pads-with-handrail/',
+    },
+    {
+      kicker: "Brand Guide",
+      title: "FUNMILY Treadmills",
+      blurb: "An Amazon-led brand whose pads carry 2.5 or 3.5 HP and 300–400 lb depending on the source: models.",
+      url: '/funmily-treadmills/',
+    },
+    {
+      kicker: "Brand Guide",
+      title: "OMA Treadmills",
+      blurb: "The folding brand sold on Amazon behind the 7200EB: what its figures say, where they conflict, and.",
+      url: '/oma-treadmills/',
     },
   ],
   bottomLine: [

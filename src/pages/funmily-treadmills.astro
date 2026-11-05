@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "funmily-12-incline-walking-pad",
     name: "FUNMILY Walking Pad Treadmill with Incline and Handle Bar",
+    brand: "FUNMILY",
     category: "Walking Pad With Handle and Manual Incline",
     badge: "Most Common FUNMILY",
     amazonUrl: "https://www.amazon.com/s?k=FUNMILY+Walking+Pad+Treadmill+with+Incline+and+Handle+Bar&tag=sktiger-20",
@@ -36,6 +37,7 @@ const PRODUCTS = [
   {
     id: "funmily-treadmill-desk",
     name: "FUNMILY Treadmill with Desk Workstation",
+    brand: "FUNMILY",
     category: "Walking Treadmill With Built-In Desk",
     badge: "Best for Desk Work",
     amazonUrl: "https://www.amazon.com/s?k=FUNMILY+Treadmill+with+Desk+Workstation&tag=sktiger-20",
@@ -61,6 +63,7 @@ const PRODUCTS = [
   {
     id: "funmily-5-incline-walking-pad",
     name: "FUNMILY Smallest Walking Pad with 5% Incline",
+    brand: "FUNMILY",
     category: "Compact Walking Pad With Fixed Incline",
     badge: "Smallest FUNMILY",
     amazonUrl: "https://www.amazon.com/s?k=FUNMILY+Walking+Pad+5%25+Incline&tag=sktiger-20",
@@ -86,6 +89,7 @@ const PRODUCTS = [
   {
     id: "urevo-strol-2e",
     name: "UREVO Strol 2E",
+    brand: "UREVO",
     category: "Checked 2-in-1 Alternative",
     badge: "Cheapest Checked Pad",
     amazonUrl: "https://www.amazon.com/dp/B0HG9D52DC?tag=sktiger-20&linkCode=ll1",
@@ -111,6 +115,7 @@ const PRODUCTS = [
   {
     id: "merach-novawalk-w50-trekpad",
     name: "MERACH NovaWalk W50 TrekPad",
+    brand: "MERACH",
     category: "Checked Incline Pad Alternative",
     badge: "Best for Heavier Walkers",
     amazonUrl: "https://www.amazon.com/dp/B0HJTT2S6R?tag=sktiger-20&linkCode=ll1",
@@ -212,7 +217,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -439,7 +444,7 @@ const schema = {
             On 5 November 2026 FUNMILY’s website listed a treadmill with a desk workstation in two
             versions, two compact walking pads with a fixed 5% incline, walking pads with 8% and 12%
             incline, three folding treadmills with 3.25 or 3.5 HP motors and 300 or 400 lb ratings, an
-            under-desk elliptical and an archived elliptical. Every product links to Amazon. FUNMILY pads
+            <a href="/best-under-desk-ellipticals/" class="text-[#0F62FE] font-medium" data-autolink>under-desk elliptical</a> and an archived elliptical. Every product links to Amazon. FUNMILY pads
             also appear on Walmart’s marketplace, where Walmart showed us only a bot check, and on
             international reseller sites that copy Amazon listings.
           </p>
@@ -465,7 +470,7 @@ const schema = {
           </p>
           <p>
             For desk walking with a handle and an incline, the FUNMILY handle-bar pad, with its figures
-            treated cautiously. For an all-in-one walking desk, the FUNMILY treadmill desk. For a slight,
+            treated cautiously. For an all-in-one walking desk, the FUNMILY <a href="/treadmill-desk-guide/" class="text-[#0F62FE] font-medium" data-autolink>treadmill desk</a>. For a slight,
             permanent incline in a small pad, the 5% pad. And if you want figures you can rely on, the UREVO
             Strol 2E and MERACH W50 TrekPad are the comparison.
           </p>
@@ -619,7 +624,7 @@ const schema = {
             <li><strong>The return window and who pays return shipping.</strong> FUNMILY’s website states
             return terms only for its under-desk elliptical, so read the listing’s own terms.</li>
             <li><strong>The exact product name and model number.</strong> FUNMILY sells several pads with
-            near-identical titles. Match the listing to FUNMILY’s website by incline, belt width and size,
+            near-identical titles. Match the listing to FUNMILY’s website by incline, <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium" data-autolink>belt width</a> and size,
             and note the model number for the manual and any safety notice.</li>
             <li><strong>Consistency within the listing.</strong> Check that the motor, weight limit, belt
             size and incline agree between the title, bullet points, images and specification table.</li>
@@ -743,6 +748,16 @@ const schema = {
               <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">How to</span>
               <p class="font-bold text-gray-900 mt-2 mb-1">Buying a Treadmill on Amazon</p>
               <p class="text-sm text-gray-500 leading-relaxed">Sellers, returns and what changes when a marketplace stands behind the machine.</p>
+            </a>
+            <a href="/umay-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">UMAY Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">UMAY Fitness's SF20, U20F and L20: store prices, figures that disagree, a one-year warranty and possible.</p>
+            </a>
+            <a href="/rhythm-fun-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Brand Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">RHYTHM FUN Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Manual-incline walking pads from $199.99: the 13% handle-bar pad, the discontinued AP01/AP02 and a likely.</p>
             </a>
           </div>
         </div>

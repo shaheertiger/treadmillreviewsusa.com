@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "sole-f63",
     name: "Sole F63",
+    brand: "Sole",
     category: "Best Overall for Apartments",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Sole%20F63+Treadmill&tag=sktiger-20",
@@ -36,6 +37,7 @@ const PRODUCTS = [
   {
     id: "proform-power-995i",
     name: "ProForm Power 995i",
+    brand: "ProForm",
     category: "Best for Difficult Delivery",
     badge: "Easiest to Move",
     amazonUrl: "https://www.amazon.com/s?k=ProForm%20Power%20995i+Treadmill&tag=sktiger-20",
@@ -61,6 +63,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-c-700",
     name: "NordicTrack C 700",
+    brand: "NordicTrack",
     category: "Best Budget Fold",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/s?k=NordicTrack%20C%20700+Treadmill&tag=sktiger-20",
@@ -86,6 +89,7 @@ const PRODUCTS = [
   {
     id: "sole-f65",
     name: "Sole F65",
+    brand: "Sole",
     category: "Best If You Will Run",
     badge: "Best for Runners",
     amazonUrl: "https://www.amazon.com/dp/B0HFSZR19W?tag=sktiger-20&linkCode=ll1",
@@ -111,6 +115,7 @@ const PRODUCTS = [
   {
     id: "proform-power-1295i",
     name: "ProForm Power 1295i",
+    brand: "ProForm",
     category: "Best Console for the Money",
     badge: "Best Screen",
     amazonUrl: "https://www.amazon.com/s?k=ProForm%20Power%201295i+Treadmill&tag=sktiger-20",
@@ -136,6 +141,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-c-990",
     name: "NordicTrack C 990",
+    brand: "NordicTrack",
     category: "Best Guided Content",
     badge: "Best Classes",
     amazonUrl: "https://www.amazon.com/s?k=NordicTrack%20C%20990+Treadmill&tag=sktiger-20",
@@ -237,7 +243,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

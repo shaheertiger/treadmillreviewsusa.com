@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "triggerpoint-grid-foam-roller",
     name: "TriggerPoint GRID 1.0 Foam Roller",
+    brand: "TriggerPoint",
     category: "Firm 13-inch hollow-core roller",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=TriggerPoint+GRID+1.0+Foam+Roller&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "triggerpoint-core-foam-roller",
     name: "TriggerPoint CORE Foam Roller",
+    brand: "TriggerPoint",
     category: "Medium-density solid foam roller",
     badge: "Best for Beginners",
     amazonUrl: "https://www.amazon.com/dp/B01BVACFAK?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "rumbleroller-original",
     name: "RumbleRoller Original Foam Roller",
+    brand: "RumbleRoller",
     category: "High-profile textured roller",
     badge: "Best Textured Roller",
     amazonUrl: "https://www.amazon.com/dp/B0716Q348W?tag=sktiger-20&linkCode=ll1",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "triggerpoint-grid-x",
     name: "TriggerPoint GRID X Foam Roller",
+    brand: "TriggerPoint",
     category: "Extra-firm hollow-core roller",
     badge: "Best Extra-Firm",
     amazonUrl: "https://www.amazon.com/dp/B00K06I222?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "hyperice-vyper-3",
     name: "Hyperice Vyper 3",
+    brand: "Hyperice",
     category: "Vibrating roller",
     badge: "Best Vibrating Roller",
     amazonUrl: "https://www.amazon.com/s?k=Hyperice+Vyper+3+Vibrating+Roller&tag=sktiger-20",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "therabody-waveroller",
     name: "Therabody WaveRoller",
+    brand: "Therabody",
     category: "Vibrating foam roller",
     badge: "Best Vibrating Value",
     amazonUrl: "https://www.amazon.com/s?k=Therabody+WaveRoller&tag=sktiger-20",
@@ -243,7 +249,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "bowflex-t9",
     name: "Bowflex T9",
+    brand: "Bowflex",
     category: "Folding Treadmill With 22-Inch Deck",
     badge: "Runner’s Pick in the Range",
     amazonUrl: "https://www.amazon.com/s?k=Bowflex+T9+Treadmill&tag=sktiger-20",
@@ -116,7 +117,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -959,6 +960,11 @@ const schema = {
               <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Bowflex</span>
               <p class="font-bold text-gray-900 mt-2 mb-1">Bowflex T16 Treadmill Review</p>
               <p class="text-sm text-gray-500 leading-relaxed">The 16 in. touchscreen flagship checked against Bowflex and two independent reviews.</p>
+            </a>
+            <a href="/nautilus-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Nautilus Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">No longer sold: the T614, T616 and T618 figures, the 2022 recall with no remedy left, and the Bowflex.</p>
             </a>
           </div>
         </div>

@@ -206,7 +206,7 @@ export default {
             Tru Grit Fitness is a California fitness-equipment brand. A 2021 San Diego Business Journal profile
             describes it as an equipment maker headquartered in Vista, and a local directory places it in nearby
             Carlsbad. Its range, as listed by its dealers, includes the two Grit Runner treadmills, the Reaper
-            magnetic-resistance air bike, power racks, a foldable wall-mounted rack, benches, hex dumbbells and
+            magnetic-resistance air bike, power racks, a foldable <a href="/best-folding-squat-racks/" class="text-[#0F62FE] font-medium" data-autolink>wall-mounted rack</a>, benches, hex dumbbells and
             plate storage — a garage-gym range rather than a home-cardio one.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The website problem</h3>
@@ -221,7 +221,7 @@ export default {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Not Tru Grit, True or Grit</h3>
           <p>
-            Tru Grit is unrelated to True Fitness, the commercial treadmill maker whose machines appear next to
+            Tru Grit is unrelated to <a href="/true-fitness-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>True Fitness</a>, the commercial treadmill maker whose machines appear next to
             it in dealer searches, and to the various gyms called True Grit. If a dealer search for "Tru Grit"
             shows a True Fitness Performance or Stryker treadmill, that is a different company.
           </p>
@@ -260,7 +260,7 @@ export default {
           <p>
             Prices are as listed on 5 November 2026 and change often. The spread on the standard Runner, from
             $1,996 to $3,299 for the same machine, is the clearest reason to compare several dealers. Dick's
-            Sporting Goods and Scheels have also listed the Grit Runner; we could not read their current prices.
+            Sporting Goods and <a href="/scheels-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Scheels</a> have also listed the Grit Runner; we could not read their current prices.
             Our <a href="/dicks-sporting-goods-treadmills/" class="text-[#0F62FE] font-medium">Dick's Sporting Goods treadmill guide</a>
             covers its delivery and return terms.
           </p>`,
@@ -324,7 +324,7 @@ export default {
             The Elite is the more refined machine on paper. TreadmillReviews.com describes a gentler curve, a
             cushioned slat belt, a more solid build and better interval modes, and dealers list sealed bearings,
             aluminium roller guides and transport wheels. Its console connects to apps — dealers name Kinomap and
-            Zwift — which the standard Runner's cannot.
+            <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium" data-autolink>Zwift</a> — which the standard Runner's cannot.
           </p>
           <p>
             The problem is the price gap. At $3,495 the Elite is up against the AssaultRunner Pro and TrueForm
@@ -481,6 +481,12 @@ export default {
       title: 'Curved Treadmill Workouts',
       blurb: 'Sprint, interval and sled-style sessions to use those resistance settings.',
       url: '/curved-treadmill-workouts/',
+    },
+    {
+      kicker: "Brand Guide",
+      title: "Centr Treadmills",
+      blurb: "Chris Hemsworth's brand: the folding Runr and Runr-S and the $6,999 Centr x HYROX Perform Tread race.",
+      url: '/centr-treadmills/',
     },
   ],
   bottomLine: [

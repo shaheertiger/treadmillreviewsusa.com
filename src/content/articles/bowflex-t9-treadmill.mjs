@@ -675,6 +675,12 @@ export default {
       blurb: 'The 16 in. touchscreen flagship checked against Bowflex and two independent reviews.',
       url: '/bowflex-t16-treadmill/',
     },
+    {
+      kicker: "Brand Guide",
+      title: "Nautilus Treadmills",
+      blurb: "No longer sold: the T614, T616 and T618 figures, the 2022 recall with no remedy left, and the Bowflex.",
+      url: '/nautilus-treadmills/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Buy the Bowflex T9 at or near its sale price if you run, are tall or

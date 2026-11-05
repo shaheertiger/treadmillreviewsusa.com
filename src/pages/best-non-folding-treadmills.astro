@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "spirit-xt685",
     name: "Spirit XT685",
+    brand: "Spirit",
     category: "Best Non-Folding Treadmill Overall",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Spirit+Fitness+XT685+Treadmill&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-x16",
     name: "NordicTrack X16",
+    brand: "NordicTrack",
     category: "Best Non-Folding Treadmill for Incline Walking",
     badge: "Best for Incline",
     amazonUrl: "https://www.amazon.com/s?k=NordicTrack+X16+Treadmill&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "life-fitness-t3",
     name: "Life Fitness T3",
+    brand: "Life Fitness",
     category: "Best Non-Folding Treadmill From a Gym Brand",
     badge: "Best Value Gym Brand",
     amazonUrl: "https://www.amazon.com/dp/B008PAS1HG?tag=sktiger-20&linkCode=ll1",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "life-fitness-run-cx",
     name: "Life Fitness Run CX",
+    brand: "Life Fitness",
     category: "Best Non-Folding Treadmill for Heavy Daily Use",
     badge: "Built for Daily Use",
     amazonUrl: "https://www.amazon.com/s?k=Life+Fitness+Run+CX+Treadmill&tag=sktiger-20",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "life-fitness-club-series-plus",
     name: "Life Fitness Club Series+",
+    brand: "Life Fitness",
     category: "Best Gym-Grade Non-Folding Treadmill",
     badge: "Premium Pick",
     amazonUrl: "https://www.amazon.com/s?k=Life+Fitness+treadmill&tag=sktiger-20",
@@ -217,7 +222,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

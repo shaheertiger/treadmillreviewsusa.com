@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "urevo-spacewalk-3s",
     name: "UREVO SpaceWalk 3S",
+    brand: "UREVO",
     category: "Best Budget Walking Pad",
     badge: "Best Under $300",
     amazonUrl: "https://www.amazon.com/s?k=UREVO+SpaceWalk+3S+Walking+Pad&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "urevo-foldi-3s",
     name: "UREVO Foldi 3S",
+    brand: "UREVO",
     category: "Best Budget Folding Machine Under $500",
     badge: "Best Under $500",
     amazonUrl: "https://www.amazon.com/s?k=UREVO+Foldi+3S+Treadmill&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "horizon-t202",
     name: "Horizon T202",
+    brand: "Horizon",
     category: "Best Budget Full-Size Treadmill, $800–$1,000",
     badge: "Best Under $1,000",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+Fitness+T202+Treadmill&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "bowflex-t6",
     name: "Bowflex T6",
+    brand: "Bowflex",
     category: "Best Budget Treadmill on Sale, $800–$1,000",
     badge: "Best Value on Sale",
     amazonUrl: "https://www.amazon.com/s?k=Bowflex+T6+Treadmill&tag=sktiger-20",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "horizon-7-0-at",
     name: "Horizon 7.0 AT",
+    brand: "Horizon",
     category: "Best Budget Running Treadmill, $1,000–$1,500",
     badge: "Best for Running",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+Fitness+7.0+AT+Treadmill&tag=sktiger-20",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "sole-f63",
     name: "SOLE F63",
+    brand: "SOLE",
     category: "Best Budget Running Treadmill With No Subscription",
     badge: "No Subscription",
     amazonUrl: "https://www.amazon.com/s?k=SOLE+F63+Treadmill&tag=sktiger-20",
@@ -243,7 +249,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "schwinn-ic4",
     name: "Schwinn IC4",
+    brand: "Schwinn",
     category: "Indoor Cycling Bike to Watch",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Schwinn+IC4+Indoor+Cycling+Bike&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "horizon-5-0r-recumbent-bike",
     name: "Horizon 5.0R Recumbent Bike",
+    brand: "Horizon",
     category: "Recumbent Bike to Watch",
     badge: "Best Recumbent",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+Fitness+5.0R+Recumbent+Bike&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "schwinn-airdyne-ad7",
     name: "Schwinn AirDyne AD7",
+    brand: "Schwinn",
     category: "Air Bike to Watch",
     badge: "Best Air Bike",
     amazonUrl: "https://www.amazon.com/s?k=Schwinn+AirDyne+AD7+Air+Bike&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "yosuda-indoor-cycling-bike",
     name: "YOSUDA Indoor Cycling Bike",
+    brand: "YOSUDA",
     category: "Budget Spin Bike to Watch",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/s?k=YOSUDA+Indoor+Cycling+Bike+35+lb+Flywheel&tag=sktiger-20",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "marcy-foldable-upright-ns-652",
     name: "Marcy Foldable Upright Exercise Bike NS-652",
+    brand: "Marcy",
     category: "Folding Bike to Watch",
     badge: "Best Folding",
     amazonUrl: "https://www.amazon.com/dp/B0090OKG38?tag=sktiger-20&linkCode=ll1",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "keiser-m3i-indoor-bike",
     name: "Keiser M3i Indoor Bike",
+    brand: "Keiser",
     category: "Studio-Grade Bike to Watch",
     badge: "Best Premium",
     amazonUrl: "https://www.amazon.com/dp/B00LSX8AA0?tag=sktiger-20&linkCode=ll1",
@@ -243,7 +249,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

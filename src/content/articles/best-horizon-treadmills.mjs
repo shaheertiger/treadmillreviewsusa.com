@@ -534,6 +534,12 @@ export default {
       blurb: "Horizon's 375 lb flagship: confirmed specs and whether it beats the 7.4 AT.",
       url: '/horizon-7-8-at-treadmill/',
     },
+    {
+      kicker: "Model Review",
+      title: "Horizon T202 Review",
+      blurb: "The cheapest 60-inch Horizon: checked specs, the unrated motor, one-year parts cover, and T101 vs 7.0 AT.",
+      url: '/horizon-t202-treadmill/',
+    },
   ],
   bottomLine: [
     `For most buyers the <strong class="text-white">Horizon 7.0 AT</strong> is the one to buy: a

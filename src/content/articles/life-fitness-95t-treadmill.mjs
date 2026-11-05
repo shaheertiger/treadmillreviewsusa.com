@@ -219,7 +219,7 @@ export default {
           <p>
             A 4 HP continuous AC drive is built for a gym where the treadmill runs most of the day. In a home it
             is overbuilt, which is the point: it should run quietly at any speed for years. The 60-inch deck suits
-            tall runners and fast intervals, and 400 lb is a higher rating than most home treadmills. Our
+            <a href="/best-treadmills-for-tall-runners/" class="text-[#0F62FE] font-medium" data-autolink>tall runners</a> and fast intervals, and 400 lb is a higher rating than most home treadmills. Our
             <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">treadmill horsepower guide</a>
             explains why AC and DC ratings are not directly comparable.
           </p>`,
@@ -299,7 +299,7 @@ export default {
           <p>
             A remanufactured treadmill should have been stripped down, cleaned, fitted with new wear parts and
             tested. Fitness Superstore describes a remanufacturing process on each listing; ask any seller for the
-            list of parts replaced on your unit — belt, deck, rollers, bearings, motor brushes if applicable — and
+            list of parts replaced on your unit — belt, deck, rollers, bearings, <a href="/treadmill-motor-brushes/" class="text-[#0F62FE] font-medium" data-autolink>motor brushes</a> if applicable — and
             get it in writing. "Refurbished" and "serviced" can mean much less. Our
             <a href="/refurbished-treadmills/" class="text-[#0F62FE] font-medium">refurbished treadmills guide</a>
             explains the grades.

@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "walkingpad-a1-pro",
     name: "WalkingPad A1 Pro",
+    brand: "WalkingPad",
     category: "Fold-in-Half Under-Desk Walking Pad",
     badge: "The Model Reviewed",
     amazonUrl: "https://www.amazon.com/s?k=WalkingPad+A1+Pro+Treadmill&tag=sktiger-20",
@@ -38,6 +39,7 @@ const PRODUCTS = [
   {
     id: "walkingpad-z1",
     name: "WalkingPad Z1",
+    brand: "WalkingPad",
     category: "Cheaper Fold-in-Half Pad",
     badge: "Best Value Alternative",
     amazonUrl: "https://www.amazon.com/dp/B0H2YYZTL8?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "walkingpad-c2",
     name: "WalkingPad C2",
+    brand: "WalkingPad",
     category: "Fold-in-Half Pad in Colours",
     badge: "Middle Option",
     amazonUrl: "https://www.amazon.com/dp/B0F48MZV54?tag=sktiger-20&linkCode=ll1",
@@ -164,7 +167,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -441,7 +444,7 @@ const schema = {
           <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Is the WalkingPad A1 Pro Still Sold?</h2>
 <p>
             Yes, by WalkingPad itself. On 5 November 2026 WalkingPad’s US store showed the A1 Pro Foldable
-            Under Desk Treadmill as in stock at $499, against a $699 reference price, with a Black Friday
+            Under Desk Treadmill as in stock at $499, against a $699 reference price, with a <a href="/treadmill-black-friday-deals/" class="text-[#0F62FE] font-medium" data-autolink>Black Friday</a>
             label. A second WalkingPad product page for the same machine, which offers a choice of 230 lb
             and 300 lb versions, also showed $499 and an add-to-cart button. The product was first
             published on WalkingPad’s store in April 2020, which makes it one of the oldest walking pads
@@ -565,7 +568,7 @@ const schema = {
         <div id="reviews-say" class="scroll-mt-24">
           <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. What Independent Reviews Report</h2>
 <p>
-            Search results for "WalkingPad A1 Pro foldable under desk treadmill reviews" are mostly
+            Search results for "WalkingPad A1 Pro foldable <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>under desk treadmill</a> reviews" are mostly
             retailer pages and pooled Amazon ratings. We list a point here only when it comes from an
             independent review or recurs across sources.
           </p>

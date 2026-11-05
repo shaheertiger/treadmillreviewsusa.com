@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "slendertone-belt",
     name: "Slendertone Abdominal Toning Belt",
+    brand: "Slendertone",
     category: "EMS ab belt",
     badge: "Best Ab Belt",
     amazonUrl: "https://www.amazon.com/s?k=Slendertone+Abs+Toning+Belt&tag=sktiger-20",
@@ -36,6 +37,7 @@ const PRODUCTS = [
   {
     id: "compex-sport-elite",
     name: "Compex Sport Elite 2.0",
+    brand: "Compex",
     category: "Wired EMS stimulator",
     badge: "Best for Recovery",
     amazonUrl: "https://www.amazon.com/s?k=Compex+Sport+Elite+2.0+Muscle+Stimulator&tag=sktiger-20",
@@ -61,6 +63,7 @@ const PRODUCTS = [
   {
     id: "ireliev-et-1313",
     name: "iReliev ET-1313",
+    brand: "iReliev",
     category: "TENS + EMS handheld",
     badge: "Best Combo Unit",
     amazonUrl: "https://www.amazon.com/dp/B00J5QHNO6?tag=sktiger-20&linkCode=ll1",
@@ -86,6 +89,7 @@ const PRODUCTS = [
   {
     id: "auvon-dual-channel",
     name: "AUVON Dual Channel TENS/EMS",
+    brand: "AUVON",
     category: "TENS + EMS handheld",
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/dp/B0H82ZW1F3?tag=sktiger-20&linkCode=ll1",
@@ -111,6 +115,7 @@ const PRODUCTS = [
   {
     id: "lifepro-waver",
     name: "LifePro Waver Vibration Plate",
+    brand: "LifePro",
     category: "Oscillating vibration plate",
     badge: "Best Vibration Plate",
     amazonUrl: "https://www.amazon.com/dp/B0794BXVY4?tag=sktiger-20&linkCode=ll1",
@@ -212,7 +217,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

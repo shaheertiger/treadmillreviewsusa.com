@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "yesoul-t3s-plus",
     name: "Yesoul T3S Plus",
+    brand: "Yesoul",
     category: "The Folding Screen Treadmill Most Buyers Mean by \"Yesoul\"",
     badge: "Best Value Screen",
     amazonUrl: "https://www.amazon.com/s?k=Yesoul+T3S+Plus+Treadmill&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "yesoul-t5-plus",
     name: "Yesoul T5 Plus",
+    brand: "Yesoul",
     category: "The Cheapest Way Into Yesoul’s 30% Incline",
     badge: "Best for Incline Walking",
     amazonUrl: "https://www.amazon.com/s?k=Yesoul+T5+Plus+Treadmill&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "yesoul-t5-max",
     name: "Yesoul T5 Max",
+    brand: "Yesoul",
     category: "The T5 With a Touchscreen and Native Apps",
     badge: "Best Yesoul Touchscreen",
     amazonUrl: "https://www.amazon.com/s?k=Yesoul+T5+Max+Treadmill&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "yesoul-t5-ultra",
     name: "Yesoul T5 Ultra",
+    brand: "Yesoul",
     category: "The Only Yesoul With Decline and a Fan",
     badge: "Incline and Decline",
     amazonUrl: "https://www.amazon.com/s?k=Yesoul+T5+Ultra+Treadmill&tag=sktiger-20",
@@ -191,7 +195,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

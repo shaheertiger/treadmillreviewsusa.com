@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "walkingpad-a1-pro",
     name: "WalkingPad A1 Pro",
+    brand: "WalkingPad",
     category: "Best Pick: Walking Pad ($200–$700)",
     badge: "Walking Pad Tier",
     amazonUrl: "https://www.amazon.com/s?k=WalkingPad+A1+Pro+Foldable+Under+Desk+Treadmill&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "horizon-t202",
     name: "Horizon T202",
+    brand: "Horizon",
     category: "Best Pick: Budget Full-Size ($400–$1,000)",
     badge: "Budget Tier",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+Fitness+T202+Treadmill&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "sole-f63",
     name: "SOLE F63",
+    brand: "SOLE",
     category: "Best Pick: Mid-Range ($1,000–$2,000)",
     badge: "Mid-Range Tier",
     amazonUrl: "https://www.amazon.com/s?k=SOLE+F63+Treadmill&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-commercial-1750",
     name: "NordicTrack Commercial 1750",
+    brand: "NordicTrack",
     category: "Best Pick: Upper Mid-Range ($1,800–$2,300)",
     badge: "Premium Edge",
     amazonUrl: "https://www.amazon.com/dp/B0D5YKF4SK?tag=sktiger-20&linkCode=ll1",
@@ -114,6 +118,7 @@ const PRODUCTS = [
   {
     id: "life-fitness-t3",
     name: "Life Fitness T3",
+    brand: "Life Fitness",
     category: "Best Pick: Commercial-Grade at Home ($3,500–$4,000)",
     badge: "Commercial Tier",
     amazonUrl: "https://www.amazon.com/dp/B008PAS1HG?tag=sktiger-20&linkCode=ll1",
@@ -216,7 +221,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

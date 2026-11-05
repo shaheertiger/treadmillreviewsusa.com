@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "lifespan-tx6-glowup",
     name: "LifeSpan TX6-GlowUp",
+    brand: "LifeSpan",
     category: "Heavy-Duty Under Desk Treadmill",
     badge: "The Model Reviewed",
     amazonUrl: "https://www.amazon.com/dp/B0CTH69X4C?tag=sktiger-20",
@@ -38,6 +39,7 @@ const PRODUCTS = [
   {
     id: "lifespan-tr1200pro-glowup",
     name: "LifeSpan TR1200Pro-GlowUp",
+    brand: "LifeSpan",
     category: "Lower-Speed LifeSpan Desk Treadmill",
     badge: "Cheaper LifeSpan",
     amazonUrl: "https://www.amazon.com/s?k=under+desk+treadmill&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "merach-novawalk-w50-trekpad",
     name: "MERACH NovaWalk W50 TrekPad",
+    brand: "MERACH",
     category: "Budget 400 lb Walking Pad With Incline",
     badge: "Budget Alternative",
     amazonUrl: "https://www.amazon.com/dp/B0HJTT2S6R?tag=sktiger-20&linkCode=ll1",
@@ -88,6 +91,7 @@ const PRODUCTS = [
   {
     id: "imovr-unsit-desk-treadmill",
     name: "iMovR Unsit Desk Treadmill",
+    brand: "iMovR",
     category: "Wide-Deck Office Treadmill",
     badge: "Wider Still",
     amazonUrl: "https://www.amazon.com/s?k=under+desk+treadmill&tag=sktiger-20",
@@ -189,7 +193,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

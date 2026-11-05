@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "rep-quickdraw",
     name: "REP Fitness QuickDraw Adjustable Dumbbells",
+    brand: "REP Fitness",
     category: "Switch-selector adjustable dumbbells, 5 to 60 lb",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0CQ8WCGR6?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "core-home-fitness",
     name: "Core Home Fitness Adjustable Dumbbell Set",
+    brand: "Core",
     category: "Twist-handle adjustable dumbbells, 5 to 50 lb",
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/dp/B01J8S38LW?tag=sktiger-20&linkCode=ll1",
@@ -62,6 +64,7 @@ const PRODUCTS = [
   {
     id: "powerblock-pro-100-exp",
     name: "PowerBlock Pro 100 EXP",
+    brand: "PowerBlock",
     category: "Expandable pin-selector dumbbells, to 100 lb",
     badge: "Best for Heavy Lifting",
     amazonUrl: "https://www.amazon.com/s?k=PowerBlock+Pro+100+EXP+Adjustable+Dumbbells&tag=sktiger-20",
@@ -88,6 +91,7 @@ const PRODUCTS = [
   {
     id: "nuobell-80",
     name: "SMRTFT NÜOBELL 80 lb Adjustable Dumbbells",
+    brand: "SMRTFT",
     category: "Twist-lock adjustable dumbbells, 5 to 80 lb",
     badge: "Best Twist-Handle to 80 lb",
     amazonUrl: "https://www.amazon.com/s?k=adjustable+dumbbells+80+lb&tag=sktiger-20",
@@ -114,6 +118,7 @@ const PRODUCTS = [
   {
     id: "ironmaster-quick-lock",
     name: "Ironmaster Quick-Lock Adjustable Dumbbell System (75 lb Set)",
+    brand: "Ironmaster",
     category: "Plate-loaded screw-lock dumbbells, all metal",
     badge: "Most Durable",
     amazonUrl: "https://www.amazon.com/s?k=plate+loaded+adjustable+dumbbells&tag=sktiger-20",
@@ -140,6 +145,7 @@ const PRODUCTS = [
   {
     id: "cap-40-lb-cast-iron",
     name: "CAP Strength Adjustable Cast Iron Dumbbell Set, 40 lb",
+    brand: "CAP",
     category: "Classic spin-lock handles and plates",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/s?k=CAP+Barbell+40+lb+Adjustable+Cast+Iron+Dumbbell+Set&tag=sktiger-20",
@@ -166,6 +172,7 @@ const PRODUCTS = [
   {
     id: "nike-adjustable-dumbbells",
     name: "Nike Adjustable Dumbbells",
+    brand: "Nike",
     category: "Cast-iron adjustable dumbbells, 10 to 65 lb",
     badge: "If You Want Nike",
     amazonUrl: "https://www.amazon.com/s?k=adjustable+dumbbells&tag=sktiger-20",
@@ -268,7 +275,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

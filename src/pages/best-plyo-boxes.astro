@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "rep-3-in-1-soft-plyo-box",
     name: "REP Fitness 3-in-1 Soft Plyo Box",
+    brand: "REP Fitness",
     category: "Soft 3-in-1 plyo box, padded vinyl cover",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=REP+Fitness+3-in-1+Soft+Plyo+Box&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "rep-adjustable-plyo-box",
     name: "REP Fitness Adjustable Plyo Box",
+    brand: "REP Fitness",
     category: "Adjustable steel plyo box, 16 to 24 in.",
     badge: "Best Adjustable",
     amazonUrl: "https://www.amazon.com/dp/B01MYGZ9FJ?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "titan-3-in-1-wood-plyo-box",
     name: "Titan Fitness 3-in-1 Pro-Duty Wood Plyo Box",
+    brand: "Titan Fitness",
     category: "Flat-pack plywood 3-in-1 plyo box",
     badge: "Best Wood Box",
     amazonUrl: "https://www.amazon.com/dp/B0BMKL9F2R?tag=sktiger-20&linkCode=ll1",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "rep-stackable-soft-foam-plyo-box",
     name: "REP Fitness Stackable Soft Foam Plyo Boxes",
+    brand: "REP Fitness",
     category: "All-foam plyo boxes that strap together",
     badge: "Best Stackable",
     amazonUrl: "https://www.amazon.com/dp/B01MXVET72?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "yes4all-soft-padded-plyo-box",
     name: "Yes4All 3-in-1 Soft-Padded Plyo Box with Wooden Core",
+    brand: "Yes4All",
     category: "Budget soft 3-in-1 plyo box, wood core",
     badge: "Best Budget Soft Box",
     amazonUrl: "https://www.amazon.com/s?k=Yes4All+3-in-1+Soft-Padded+Plyo+Box+Wooden+Core&tag=sktiger-20",
@@ -217,7 +222,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

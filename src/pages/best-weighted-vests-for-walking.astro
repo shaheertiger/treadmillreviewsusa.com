@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "hyperwear-hyper-vest-elite",
     name: "Hyperwear Hyper Vest ELITE",
+    brand: "Hyperwear",
     category: "Best Overall Weighted Vest for Treadmill Walking",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B07JVHBKDS?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "rep-fitness-strata-weight-vest",
     name: "REP Fitness Strata Weight Vest",
+    brand: "REP Fitness",
     category: "Adjustable plate carrier, front and back",
     badge: "Best Plate Carrier",
     amazonUrl: "https://www.amazon.com/s?k=REP+Fitness+Strata+Weight+Vest&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "goruck-ruck-plate-carrier-3",
     name: "GORUCK Ruck Plate Carrier 3.0",
+    brand: "GORUCK",
     category: "Back-loaded carrier for rucking",
     badge: "Best for Rucking",
     amazonUrl: "https://www.amazon.com/dp/B0DB4424HH?tag=sktiger-20&linkCode=ll1",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "hyperwear-hyper-vest-fit",
     name: "Hyperwear Hyper Vest FIT",
+    brand: "Hyperwear",
     category: "Women-specific weighted vest",
     badge: "Best for Women",
     amazonUrl: "https://www.amazon.com/dp/B0G2CQRV9M?tag=sktiger-20&linkCode=ll1",
@@ -114,6 +118,7 @@ const PRODUCTS = [
   {
     id: "fringe-sport-wodmaster",
     name: "Fringe Sport WODmaster 20lb Weight Vest",
+    brand: "Fringe Sport",
     category: "Fixed-weight budget vest",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/s?k=20+lb+weight+vest&tag=sktiger-20",
@@ -216,7 +221,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

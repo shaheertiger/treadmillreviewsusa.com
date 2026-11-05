@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "ajoosos-2-in-1-walking-pad",
     name: "AJOOSOS Foldable Walking Pad Treadmill with Incline and Handle Bar",
+    brand: "AJOOSOS",
     category: "The Listing People Search For",
     badge: "Listing Not Verified",
     amazonUrl: "https://www.amazon.com/s?k=AJOOSOS+2+in+1+Under+Desk+Treadmill&tag=sktiger-20",
@@ -36,6 +37,7 @@ const PRODUCTS = [
   {
     id: "urevo-strol-2e",
     name: "UREVO Strol 2E",
+    brand: "UREVO",
     category: "Budget 2-in-1 Pad With Handle",
     badge: "Cheapest Checked 2-in-1",
     amazonUrl: "https://www.amazon.com/dp/B0HG9D52DC?tag=sktiger-20&linkCode=ll1",
@@ -61,6 +63,7 @@ const PRODUCTS = [
   {
     id: "umay-u20f",
     name: "UMAY U20F Folding 3-in-1 Walking Pad",
+    brand: "UMAY",
     category: "2-in-1 Pad With Handle and Incline",
     badge: "Checked Pad With Incline",
     amazonUrl: "https://www.amazon.com/s?k=UMAY+U20F+Walking+Pad&tag=sktiger-20",
@@ -86,6 +89,7 @@ const PRODUCTS = [
   {
     id: "merach-novawalk-w50-trekpad",
     name: "MERACH NovaWalk W50 TrekPad",
+    brand: "MERACH",
     category: "High-Capacity Pad With Incline",
     badge: "Best for Heavier Walkers",
     amazonUrl: "https://www.amazon.com/dp/B0HJTT2S6R?tag=sktiger-20&linkCode=ll1",
@@ -187,7 +191,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -420,7 +424,7 @@ const schema = {
             <li><strong>eBay and other listings.</strong> Searches for AJOOSOS with “treadmill” also
             returned eBay listings and other Amazon pages carrying the name, describing folding
             treadmills and walking pads with motors from 2 to 3.5 HP, weight limits from 220 to 300 lb,
-            inclines from 3 to 10% and even a small dog treadmill. eBay blocked us from reading them,
+            inclines from 3 to 10% and even a <a href="/best-dog-treadmills-for-small-dogs/" class="text-[#0F62FE] font-medium" data-autolink>small dog treadmill</a>. eBay blocked us from reading them,
             so we cannot tell which are genuinely AJOOSOS-branded and which simply match the search.</li>
             <li><strong>Independent coverage.</strong> We found no review, no entry in the walking-pad
             trackers we use for other brands, no manual and no owner discussion we could tie to an
@@ -509,7 +513,7 @@ const schema = {
             handle down and one with it up. If it gives only the top speed, assume the walking mode is
             capped at about 4 mph.</li>
             <li><strong>Reviews that describe your use.</strong> Sort by most recent and read the one-
-            and three-star reviews for mentions of the belt slipping, the motor cutting out, the remote
+            and three-star reviews for mentions of the <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium" data-autolink>belt slipping</a>, the motor cutting out, the remote
             failing or the handle working loose. Make sure the photos in reviews show the same machine
             as the listing, since listings are sometimes reused for different products.</li>
           </ol>
@@ -650,7 +654,7 @@ const schema = {
           <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Who Should Buy the AJOOSOS 2-in-1</h2>
 <p>
             <strong>The AJOOSOS pad could be a reasonable buy</strong> if the listing passes the checks
-            above, Amazon fulfils it, the price is clearly below the UREVO and UMAY pads, you weigh well
+            above, Amazon fulfils it, the price is clearly below the UREVO and <a href="/umay-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>UMAY</a> pads, you weigh well
             under its lowest stated limit, and you will mostly walk at a desk. In that case the main risk
             is that it wears out sooner than a better-documented pad, and a good return window and a
             modest price limit that risk.
@@ -762,6 +766,11 @@ const schema = {
               <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Guide</span>
               <p class="font-bold text-gray-900 mt-2 mb-1">Under Desk Treadmills</p>
               <p class="text-sm text-gray-500 leading-relaxed">What to look for in a pad you will walk on while you work.</p>
+            </a>
+            <a href="/rhythm-fun-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">RHYTHM FUN Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Manual-incline walking pads from $199.99: the 13% handle-bar pad, the discontinued AP01/AP02 and a likely.</p>
             </a>
           </div>
         </div>

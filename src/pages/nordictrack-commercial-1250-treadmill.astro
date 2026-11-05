@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-commercial-1250",
     name: "NordicTrack Commercial 1250",
+    brand: "NordicTrack",
     category: "Folding iFIT Treadmill With Decline",
     badge: "Current Model: NTL14125",
     amazonUrl: "https://www.amazon.com/dp/B0D5YJ4YW4?tag=sktiger-20&linkCode=ll1",
@@ -114,7 +115,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

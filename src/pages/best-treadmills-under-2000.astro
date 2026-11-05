@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-commercial-1750",
     name: "NordicTrack Commercial 1750",
+    brand: "NordicTrack",
     category: "Best Overall Under $2,000",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0D5YKF4SK?tag=sktiger-20&linkCode=ll1",
@@ -36,6 +37,7 @@ const PRODUCTS = [
   {
     id: "sole-f65",
     name: "Sole F65",
+    brand: "Sole",
     category: "Best Value Once You Count Five Years",
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/dp/B0HFSZR19W?tag=sktiger-20&linkCode=ll1",
@@ -61,6 +63,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-commercial-2450",
     name: "NordicTrack Commercial 2450",
+    brand: "NordicTrack",
     category: "Best for Hill Training",
     badge: "Best for Hills",
     amazonUrl: "https://www.amazon.com/dp/B0D5YKDXDV?tag=sktiger-20&linkCode=ll1",
@@ -86,6 +89,7 @@ const PRODUCTS = [
   {
     id: "proform-pro-2000",
     name: "ProForm Pro 2000",
+    brand: "ProForm",
     category: "Best Budget Entry to This Tier",
     badge: "Cheapest 60 in. Deck",
     amazonUrl: "https://www.amazon.com/dp/B08N3NL32C?tag=sktiger-20&linkCode=ll1",
@@ -111,6 +115,7 @@ const PRODUCTS = [
   {
     id: "sole-f63",
     name: "Sole F63",
+    brand: "Sole",
     category: "Best If You Mostly Walk",
     badge: "Walking Value",
     amazonUrl: "https://www.amazon.com/s?k=Sole%20F63+Treadmill&tag=sktiger-20",
@@ -136,6 +141,7 @@ const PRODUCTS = [
   {
     id: "proform-power-1295i",
     name: "ProForm Power 1295i",
+    brand: "ProForm",
     category: "Best Screen Under $2,000",
     badge: "Best Display",
     amazonUrl: "https://www.amazon.com/s?k=ProForm%20Power%201295i+Treadmill&tag=sktiger-20",
@@ -237,7 +243,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

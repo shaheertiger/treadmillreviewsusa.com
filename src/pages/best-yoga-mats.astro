@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "manduka-pro",
     name: "Manduka PRO Yoga Mat 6mm",
+    brand: "Manduka",
     category: "Dense 6 mm PVC studio mat",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B01I5CFUHM?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "manduka-prolite",
     name: "Manduka PROlite Yoga Mat 4.7mm",
+    brand: "Manduka",
     category: "Lighter, thinner PVC mat",
     badge: "Best Lighter Premium Mat",
     amazonUrl: "https://www.amazon.com/dp/B08LNRMGVW?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "liforme-classic",
     name: "Liforme Classic Yoga Mat",
+    brand: "Liforme",
     category: "PU top over natural rubber, with alignment markings",
     badge: "Best Grip When Sweaty",
     amazonUrl: "https://www.amazon.com/s?k=Liforme+Classic+Yoga+Mat&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "jadeyoga-harmony",
     name: "JadeYoga Harmony Yoga Mat",
+    brand: "JadeYoga",
     category: "Open-cell natural rubber mat",
     badge: "Best Natural Rubber Mat",
     amazonUrl: "https://www.amazon.com/dp/B000ECDSYE?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "manduka-begin",
     name: "Manduka begin Yoga Mat 5mm",
+    brand: "Manduka",
     category: "Light, reversible TPE mat",
     badge: "Best for Beginners",
     amazonUrl: "https://www.amazon.com/dp/B097CMTWV7?tag=sktiger-20&linkCode=ll1",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "gaiam-premium-6mm",
     name: "Gaiam Premium 6mm Print Yoga Mat",
+    brand: "Gaiam",
     category: "Budget 6 mm PVC mat",
     badge: "Best Budget Yoga Mat",
     amazonUrl: "https://www.amazon.com/dp/B0BYFFX51Z?tag=sktiger-20&linkCode=ll1",
@@ -167,6 +173,7 @@ const PRODUCTS = [
   {
     id: "amazon-basics-half-inch",
     name: "Amazon Basics 1/2-Inch Extra Thick Exercise Yoga Mat",
+    brand: "Amazon",
     category: "Thick NBR foam exercise mat",
     badge: "Best Exercise Mat",
     amazonUrl: "https://www.amazon.com/dp/B01LP0U5X0?tag=sktiger-20&linkCode=ll1",
@@ -269,7 +276,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

@@ -543,6 +543,18 @@ export default {
       blurb: 'The full Life Fitness home range, from the T3 to the club models.',
       url: '/life-fitness/',
     },
+    {
+      kicker: "Model Review",
+      title: "Landice L7 Treadmill Review",
+      blurb: "Every L7 configuration priced, how it differs from the L8, and what the L7 RTM rehab version adds.",
+      url: '/landice-l7-treadmill/',
+    },
+    {
+      kicker: "Model Review",
+      title: "Life Fitness 95T / 95Ti",
+      blurb: "The discontinued Elevation Series 95T and older 95Ti bought remanufactured: consoles, prices and the.",
+      url: '/life-fitness-95t-treadmill/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">The Life Fitness Club Series+ is a club-built treadmill that fits a

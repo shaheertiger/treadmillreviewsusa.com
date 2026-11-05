@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "sunny-mini-stepper-012-s",
     name: "Sunny Health & Fitness Mini Stepper NO. 012-S",
+    brand: "Sunny Health & Fitness",
     category: "Hydraulic mini stepper with resistance bands",
     badge: "Best Mini Stepper",
     amazonUrl: "https://www.amazon.com/s?k=Sunny+Health+Fitness+Mini+Stepper+NO.+012-S&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "bowflex-max-trainer-m6",
     name: "BowFlex Max Trainer M6",
+    brand: "BowFlex",
     category: "Compact stepper-elliptical with moving arms",
     badge: "Best Compact Full-Size",
     amazonUrl: "https://www.amazon.com/s?k=Bowflex+Max+Trainer&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "bells-of-steel-blitz-stepper",
     name: "Bells of Steel Blitz Stepper",
+    brand: "Bells of Steel",
     category: "Freestanding magnetic stepper",
     badge: "Best Magnetic Stepper",
     amazonUrl: "https://www.amazon.com/dp/B0D5DR7QPV?tag=sktiger-20&linkCode=ll1",
@@ -173,7 +176,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

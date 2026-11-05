@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "aviron-justice",
     name: "Aviron Justice Treadmill",
+    brand: "Aviron",
     category: "Compact Folding Treadmill",
     badge: "Cheapest Aviron",
     amazonUrl: "https://www.amazon.com/s?k=interactive+touchscreen+treadmill&tag=sktiger-20",
@@ -38,6 +39,7 @@ const PRODUCTS = [
   {
     id: "aviron-podium",
     name: "Aviron Podium Treadmill",
+    brand: "Aviron",
     category: "Folding Runner’s Treadmill",
     badge: "Most Buyers",
     amazonUrl: "https://www.amazon.com/s?k=interactive+touchscreen+treadmill&tag=sktiger-20",
@@ -65,6 +67,7 @@ const PRODUCTS = [
   {
     id: "aviron-summit",
     name: "Aviron Summit Treadmill",
+    brand: "Aviron",
     category: "Incline and Decline Trainer",
     badge: "Steepest Incline",
     amazonUrl: "https://www.amazon.com/s?k=interactive+touchscreen+treadmill&tag=sktiger-20",
@@ -176,7 +179,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

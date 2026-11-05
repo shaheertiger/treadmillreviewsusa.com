@@ -67,8 +67,11 @@ const MULTIWORD_BRANDS = [
   'Vision Fitness', 'Tru Grit', 'Dog Trotter', 'Dog Runner', 'CAP Barbell', 'Tractor Supply',
   'Ultimate Body Press', 'Bells of Steel USA',
 ];
+// Generic product names ("100% Silicone Spray", "Universal Safety Key") have no brand to publish.
+const GENERIC_FIRST_WORDS = new Set(['100%', 'Universal', 'Replacement', 'Treadmill', 'Generic', 'Silicone', 'Manufacturer-Specified', 'Isopropyl']);
 const brandOf = (p) =>
   p.brand ??
+  (GENERIC_FIRST_WORDS.has(p.name.split(' ')[0]) ? '' : null) ??
   MULTIWORD_BRANDS.filter((b) => p.name === b || p.name.startsWith(b + ' ')).sort((a, b) => b.length - a.length)[0] ??
   p.name.split(' ')[0];
 
@@ -145,7 +148,7 @@ function schemaBlock(spec) {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.brand },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {

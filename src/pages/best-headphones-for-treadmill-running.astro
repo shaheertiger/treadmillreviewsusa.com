@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "shokz-openrun-pro-2",
     name: "Shokz OpenRun Pro 2",
+    brand: "Shokz",
     category: "Open-ear bone conduction headset",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Shokz+OpenRun+Pro+2&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "shokz-openrun",
     name: "Shokz OpenRun",
+    brand: "Shokz",
     category: "Budget open-ear bone conduction headset",
     badge: "Best Budget Open-Ear",
     amazonUrl: "https://www.amazon.com/s?k=Shokz+OpenRun+Bone+Conduction+Headphones&tag=sktiger-20",
@@ -62,6 +64,7 @@ const PRODUCTS = [
   {
     id: "beats-powerbeats-pro-2",
     name: "Beats Powerbeats Pro 2",
+    brand: "Beats",
     category: "Ear-hook in-ear earbuds with ANC",
     badge: "Best With Noise Cancelling",
     amazonUrl: "https://www.amazon.com/s?k=Beats+Powerbeats+Pro+2&tag=sktiger-20",
@@ -88,6 +91,7 @@ const PRODUCTS = [
   {
     id: "beats-powerbeats-fit",
     name: "Beats Powerbeats Fit",
+    brand: "Beats",
     category: "Wingtip in-ear earbuds with ANC",
     badge: "Best Wingtip Fit",
     amazonUrl: "https://www.amazon.com/s?k=Beats+Powerbeats+Fit&tag=sktiger-20",
@@ -114,6 +118,7 @@ const PRODUCTS = [
   {
     id: "soundcore-sport-x20",
     name: "Soundcore Sport X20",
+    brand: "Soundcore",
     category: "Budget ear-hook earbuds with adaptive ANC",
     badge: "Best Budget ANC",
     amazonUrl: "https://www.amazon.com/dp/B0CRT6HQ82?tag=sktiger-20&linkCode=ll1",
@@ -140,6 +145,7 @@ const PRODUCTS = [
   {
     id: "jlab-go-sport-plus",
     name: "JLab GO Sport+",
+    brand: "JLab",
     category: "Budget ear-hook true wireless earbuds",
     badge: "Best Cheap Pair",
     amazonUrl: "https://www.amazon.com/dp/B0CYNFWD2R?tag=sktiger-20&linkCode=ll1",
@@ -242,7 +248,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
