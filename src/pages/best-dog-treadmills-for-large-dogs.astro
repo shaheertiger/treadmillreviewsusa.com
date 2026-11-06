@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "dog-runner-revolution-pro",
     name: "Dog Runner Revolution Pro",
+    brand: "Dog Runner",
     category: "Best motorised dog treadmill for large dogs",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=dog+treadmill&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "dog-runner-ortho-pro",
     name: "Dog Runner Ortho Pro",
+    brand: "Dog Runner",
     category: "Best large-dog treadmill for older dogs and vet-directed work",
     badge: "Best for Rehab",
     amazonUrl: "https://www.amazon.com/s?k=dog+treadmill+large+dogs&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "jog-a-dog-dc7",
     name: "Jog A Dog DC7",
+    brand: "Jog",
     category: "Best dog treadmill for giant breeds",
     badge: "Best for Giant Breeds",
     amazonUrl: "https://www.amazon.com/s?k=dog+treadmill+large+dogs&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "dog-trotter-usa-classic-slatmill",
     name: "Dog Trotter USA Classic Slatmill",
+    brand: "Dog Trotter",
     category: "Best slatmill for large dogs",
     badge: "Best Slatmill",
     amazonUrl: "https://www.amazon.com/s?k=Dog+Trotter+USA+Classic+Slatmill&tag=sktiger-20",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "dog-trotter-usa-evo-pro-slatmill",
     name: "Dog Trotter USA Evo Pro Slatmill",
+    brand: "Dog Trotter",
     category: "Best large-dog slatmill for working and sport dogs",
     badge: "Best for Working Dogs",
     amazonUrl: "https://www.amazon.com/s?k=dog+treadmill+large+dogs&tag=sktiger-20",
@@ -217,7 +222,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -476,8 +481,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
@@ -911,6 +916,11 @@ const schema = {
               <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Hydrotherapy</span>
               <p class="font-bold text-gray-900 mt-2 mb-1">Underwater Treadmills for Dogs</p>
               <p class="text-sm text-gray-500 leading-relaxed">Canine hydrotherapy: what it is, who provides it, what sessions cost, and home units.</p>
+            </a>
+            <a href="/best-dog-treadmills-for-small-dogs/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Roundup</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Dog Treadmills for Small Dogs</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Motorised machines sized for toy and small breeds, what was in stock, and the safety rules.</p>
             </a>
           </div>
         </div>

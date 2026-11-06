@@ -642,6 +642,12 @@ export default {
     { kicker: 'Motivation', title: 'How to Make Treadmill Running Less Boring', blurb: 'Structure, music and screens that make the time pass.', url: '/how-to-make-treadmill-running-less-boring/' },
     { kicker: 'Safety', title: 'Treadmill Safety Tips', blurb: 'The safety key, clearance, folding decks and attention.', url: '/treadmill-safety-tips/' },
     { kicker: 'Accessories', title: 'Best Treadmill Accessories', blurb: 'The mat, lubricant and other things worth buying first.', url: '/best-treadmill-accessories/' },
+    {
+      kicker: "Accessories",
+      title: "Best Treadmill Laptop Holders",
+      blurb: "Laptop boards, pole trays and phone clamps that strap to a treadmill, how to measure the rails, and when.",
+      url: '/best-treadmill-laptop-holders/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Choose the bar first, then the holder.</strong> A screw clamp on

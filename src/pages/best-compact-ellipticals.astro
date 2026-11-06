@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "schwinn-411",
     name: "Schwinn 411 Compact Elliptical",
+    brand: "Schwinn",
     category: "Best Compact Elliptical Overall",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B07H1BKRQ3?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "bowflex-max-trainer-m6",
     name: "BowFlex Max Trainer M6",
+    brand: "BowFlex",
     category: "Shortest Footprint, Hardest Workout",
     badge: "Shortest Footprint",
     amazonUrl: "https://www.amazon.com/s?k=Bowflex+Max+Trainer&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "schwinn-490",
     name: "Schwinn 490 Elliptical",
+    brand: "Schwinn",
     category: "Best Compact Elliptical With Full Stride and Incline",
     badge: "Full Stride",
     amazonUrl: "https://www.amazon.com/dp/B0CJCV9VW5?tag=sktiger-20&linkCode=ll1",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "niceday-elliptical-ct11",
     name: "Niceday Elliptical CT11",
+    brand: "Niceday",
     category: "Best Budget Compact Elliptical",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/s?k=NICEDAY+Elliptical+Machine+CT11+Magnetic&tag=sktiger-20",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "fitnation-flex-elliptical",
     name: "FitNation Flex Elliptical Trainer",
+    brand: "FitNation",
     category: "Best Elliptical for the Smallest Rooms",
     badge: "Smallest",
     amazonUrl: "https://www.amazon.com/s?k=FitNation+Flex+Elliptical+Trainer&tag=sktiger-20",
@@ -217,7 +222,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -493,8 +498,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">

@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "walkingpad-a1-pro",
     name: "WalkingPad A1 Pro",
+    brand: "WalkingPad",
     category: "Folding under-desk walking pad",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=WalkingPad+A1+Pro+Foldable+Treadmill&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "walkingpad-z1",
     name: "WalkingPad Z1",
+    brand: "WalkingPad",
     category: "Budget folding walking pad",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/dp/B0H2YYZTL8?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "lifespan-tr1200pro-glowup",
     name: "LifeSpan TR1200Pro-GlowUp",
+    brand: "LifeSpan",
     category: "Non-folding under-desk treadmill",
     badge: "Best for Long Workdays",
     amazonUrl: "https://www.amazon.com/s?k=under+desk+treadmill&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "lifespan-tx6-glowup",
     name: "LifeSpan TX6-GlowUp",
+    brand: "LifeSpan",
     category: "Heavy-duty under-desk treadmill",
     badge: "Best for Tall and Heavy",
     amazonUrl: "https://www.amazon.com/s?k=LifeSpan+TX6+GlowUp+Under+Desk+Treadmill&tag=sktiger-20",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "walkingpad-mx10",
     name: "WalkingPad MX10",
+    brand: "WalkingPad",
     category: "Vertical-fold walking treadmill with handles",
     badge: "Best With Handles",
     amazonUrl: "https://www.amazon.com/s?k=WalkingPad+MX10+Vertical+Fold+Treadmill&tag=sktiger-20",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "walkingpad-r3-hybrid-plus",
     name: "WalkingPad R3 Hybrid+",
+    brand: "WalkingPad",
     category: "Folding 2-in-1 walking and running pad",
     badge: "Best for Walking and Jogging",
     amazonUrl: "https://www.amazon.com/dp/B0F8VSLK43?tag=sktiger-20&linkCode=ll1",
@@ -243,7 +249,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -440,8 +446,8 @@ const schema = {
         <div id="quick-picks" class="scroll-mt-24">
           <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
 <p>
-            Six pads, each with a different reason to exist. The short version: the WalkingPad A1
-            Pro for most tall desk walkers, the Z1 if price matters most, the LifeSpan pads if you
+            Six pads, each with a different reason to exist. The short version: the <a href="/walkingpad-a1-pro-review/" class="text-[#0F62FE] font-medium" data-autolink>WalkingPad A1
+            Pro</a> for most tall desk walkers, the Z1 if price matters most, the LifeSpan pads if you
             want a 20-inch-wide belt and long working days, and the MX10 or R3 Hybrid+ if you want
             handles or a jog. If you are over about 6 foot 4 and walk fast, read the section on
             <a href="#when-treadmill" class="text-[#0F62FE] font-medium">when a treadmill is better</a>
@@ -496,8 +502,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
@@ -677,7 +683,7 @@ const schema = {
           <p>
             <strong>Weight capacity.</strong> Taller people are often heavier, and walking pad
             capacity ratings vary more than they should, sometimes between two listings for the same
-            pad. Of the pads here, the TX6-GlowUp has the highest rating we could confirm, at 400 lb.
+            pad. Of the pads here, the <a href="/lifespan-tx6-under-desk-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>TX6-GlowUp</a> has the highest rating we could confirm, at 400 lb.
             If you are near any pad's limit, our guide to
             <a href="/best-walking-pads-for-heavy-people/" class="text-[#0F62FE] font-medium">walking pads for heavy people</a>
             explains why the margin matters.

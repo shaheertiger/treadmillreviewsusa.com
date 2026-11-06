@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "fitbit-air",
     name: "Google Fitbit Air",
+    brand: "Google",
     category: "Screenless fitness tracker, no subscription required",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Google+Fitbit+Air+Screenless+Activity+Tracker&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "garmin-vivoactive-6",
     name: "Garmin vívoactive 6",
+    brand: "Garmin",
     category: "Fitness-first GPS watch, no subscription required",
     badge: "Best Fitness Watch",
     amazonUrl: "https://www.amazon.com/s?k=Garmin+vivoactive+6+Health+Fitness+GPS+Smartwatch&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "apple-watch-se-3",
     name: "Apple Watch SE 3",
+    brand: "Apple",
     category: "Smartwatch with fitness tracking, for iPhone",
     badge: "Best for iPhone Users",
     amazonUrl: "https://www.amazon.com/s?k=Apple+Watch+SE+3+GPS+Smartwatch&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "amazfit-bip-6",
     name: "Amazfit Bip 6",
+    brand: "Amazfit",
     category: "Budget GPS fitness watch",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/s?k=Amazfit+Bip+6+Smart+Watch+GPS&tag=sktiger-20",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "fitbit-inspire-3",
     name: "Fitbit Inspire 3",
+    brand: "Fitbit",
     category: "Slim band with a screen",
     badge: "Best Cheap Band With a Screen",
     amazonUrl: "https://www.amazon.com/dp/B0B5F9SZW7?tag=sktiger-20&linkCode=ll1",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "whoop-5",
     name: "WHOOP 5.0",
+    brand: "WHOOP",
     category: "Screenless recovery tracker, membership required",
     badge: "Best for Recovery Data",
     amazonUrl: "https://www.amazon.com/s?k=WHOOP+5.0+MG+Activity+Tracker+12+Month+Membership&tag=sktiger-20",
@@ -167,6 +173,7 @@ const PRODUCTS = [
   {
     id: "oura-ring-5",
     name: "Oura Ring 5",
+    brand: "Oura",
     category: "Smart ring for sleep and recovery",
     badge: "Best Ring",
     amazonUrl: "https://www.amazon.com/s?k=Oura+Ring+5+Smart+Ring&tag=sktiger-20",
@@ -269,7 +276,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -538,8 +545,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">

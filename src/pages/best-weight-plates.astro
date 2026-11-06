@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "rep-equalizer-urethane-plates",
     name: "REP Fitness Equalizer Urethane-Coated Plates",
+    brand: "REP Fitness",
     category: "Urethane-coated cast-iron grip plates",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=urethane+olympic+weight+plates&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "rep-old-school-iron-plates",
     name: "REP Fitness Old School Iron Plates",
+    brand: "REP Fitness",
     category: "Classic deep-lip cast-iron plates",
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/s?k=REP+Fitness+Old+School+Iron+Plates&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "rep-equalizer-iron-plates-usa",
     name: "REP Fitness Equalizer Iron Plates (USA-Made)",
+    brand: "REP Fitness",
     category: "US-made cast-iron grip plates",
     badge: "Made in USA",
     amazonUrl: "https://www.amazon.com/s?k=olympic+iron+weight+plates&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "cap-olympic-grip-plates",
     name: "CAP Barbell Olympic Cast Iron Grip Plates",
+    brand: "CAP Barbell",
     category: "Budget cast-iron grip plates, singles and packs",
     badge: "Lowest Price",
     amazonUrl: "https://www.amazon.com/dp/B01B262O54?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "titan-grip-plates-245",
     name: "Titan Fitness Black Grip Plates (245 lb Set)",
+    brand: "Titan Fitness",
     category: "Rubber-coated cast-iron grip plate set",
     badge: "Rubber-Coated Set",
     amazonUrl: "https://www.amazon.com/s?k=Titan+Fitness+Rubber+Coated+Grip+Plates+245+lb&tag=sktiger-20",
@@ -217,7 +222,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -486,8 +491,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">

@@ -547,6 +547,12 @@ export default {
       blurb: 'Power, floors, access and warranty: what running a club machine at home takes.',
       url: '/gym-treadmill-for-home/',
     },
+    {
+      kicker: "Model Review",
+      title: "Life Fitness Club Series+",
+      blurb: "The club-grade home model: SE4 vs SL consoles and the 15-amp outlet.",
+      url: '/life-fitness-club-series-plus-treadmill/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">The Life Fitness Integrity+ is a genuine club treadmill that a

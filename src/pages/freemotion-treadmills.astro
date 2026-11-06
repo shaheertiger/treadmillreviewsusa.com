@@ -1,0 +1,884 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "Freemotion Treadmills (2026): Reflex t10.9b, t8.9b and Incline Trainers";
+const description =
+  "Freemotion is iFIT’s commercial brand. The t8.9b, the Reflex t10.9b and t22.9, the incline trainers, what they cost for home buyers, the 20-amp circuit and how they compare with NordicTrack.";
+
+const PRODUCTS = [
+  {
+    id: "freemotion-t8-9b",
+    name: "Freemotion t8.9b",
+    brand: "Freemotion",
+    category: "Entry Commercial Treadmill, Simple Console",
+    badge: "Lowest-Cost Freemotion",
+    amazonUrl: "https://www.amazon.com/s?k=commercial+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
+    image: null,
+    reviewUrl: null,
+    priceRange: "$5,999-$7,799 (dealer and Freemotion home store, 5 Nov 2026)",
+    priceBounds: {"low":5999,"high":7799},
+    specs: "21.5 x 60 in. deck · 4.0 HP AC · 0-12 mph · 0-15% incline · 400 lb max user · 120 V, 20 A",
+    pros: [
+      "A 4.0 HP AC commercial drive motor, listed by two dealers and an independent review",
+      "A 400 lb user rating and a 21.5 by 60-inch deck",
+      "Military and fire-service fitness tests built into the console, useful for recruits",
+      "Runs its onboard programmes without any subscription",
+    ],
+    cons: [
+      "No Reflex deck; that is reserved for the t10.9b and t22.9",
+      "Needs a 120 V, 20 A circuit according to both dealer listings",
+      "Seven years on the frame and motor is short for a commercial machine; parts are two years",
+      "Unit weight conflicts between listings (358.7 lb and 433 lb)",
+    ],
+    bottomLine: "The Freemotion for a home buyer who wants a commercial AC treadmill with a plain console and the brand’s lowest price, and has a 20-amp circuit for it.",
+    description: "The t8.9b is Freemotion’s entry commercial treadmill. Two authorised US dealers, US MedRehab and Wellbots, agree on a 4.0 HP AC commercial drive motor, a 21.5 by 60-inch two-sided cushioned deck, 0 to 12 mph, 0 to 15% incline, a 400 lb maximum user weight and a 120 V, 20 A power requirement, and TreadmillReviewGuru gives the same motor and deck. The console has 1-Step speed and incline keys, dual-grip and Polar heart-rate support, a USB charging port and onboard programmes including Army, Navy, Marine Corps, Air Force and fire-service fitness tests. Both dealers list seven years on the frame and drive motor, two on parts and console and one of labour. The listings disagree on weight: 358.7 lb at one, 433 lb at the other. On 5 November 2026 Wellbots listed it at $5,999, US MedRehab at $7,300 and Freemotion’s home store at $7,799.",
+  },
+  {
+    id: "freemotion-t10-9b-reflex",
+    name: "Freemotion t10.9b Reflex",
+    brand: "Freemotion",
+    category: "Reflex-Deck Commercial Treadmill, No Touchscreen",
+    badge: "Best Value Reflex",
+    amazonUrl: "https://www.amazon.com/s?k=commercial+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
+    image: null,
+    reviewUrl: null,
+    priceRange: "$8,999-$9,400 (Freemotion home store and dealer, 5 Nov 2026)",
+    priceBounds: {"low":8999,"high":9400},
+    specs: "21.5 x 60 in. Reflex deck · 5.0 HP AC · 0-12 mph · 0-15% incline · 400 lb max user · 487 lb",
+    pros: [
+      "The Reflex cushioned deck used in Orangetheory-style studio treadmills",
+      "A 5.0 HP AC drive motor, the largest rating in the range alongside the t22.9",
+      "A 400 lb user rating on a heavy 487 lb frame",
+      "Non-touch console with 1-Step keys; pair a phone or tablet for iFIT if you want it",
+    ],
+    cons: [
+      "About $9,000 for a treadmill without a touchscreen",
+      "12 mph top speed, against 15 mph on the t22.9",
+      "Console warranty conflicts between sources (one year or two)",
+      "At 87.7 inches long it needs a deep room",
+    ],
+    bottomLine: "The Freemotion most home buyers should consider first: the Reflex deck and the big AC motor without paying for the t22.9’s screen.",
+    description: "The t10.9b is the cheaper of Freemotion’s two Reflex treadmills. An authorised dealer, US MedRehab, lists a 5.0 HP AC commercial drive motor, a 21.5 by 60-inch running surface on the two-sided Reflex cushioning deck, 0 to 12 mph, 0 to 15% incline, a 400 lb maximum user weight, a weight of 487 lb and a footprint of 87.7 by 34 by 66 inches; Garage Gym Reviews gives the same motor, deck, top speed, user weight, weight and footprint. The console shows speed, incline, pace, vertical feet and heart rate with EKG grips, and has a USB port, audio out and a TV input; there is no touchscreen. US MedRehab lists seven years on frame and motor, two on parts, two on the console and one of labour in the US; Garage Gym Reviews gives one year on the console, so check. Freemotion’s home store listed it at $8,999 (shown against $12,999) on 5 November 2026, and US MedRehab at $9,400.",
+  },
+  {
+    id: "freemotion-t22-9-reflex",
+    name: "Freemotion t22.9 Reflex",
+    brand: "Freemotion",
+    category: "Flagship Reflex Treadmill, 22 in. Touchscreen",
+    badge: "Flagship",
+    amazonUrl: "https://www.amazon.com/s?k=commercial+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
+    image: null,
+    reviewUrl: null,
+    priceRange: "$11,350 at Freemotion home store on 5 Nov 2026",
+    priceBounds: {"low":11350,"high":11350},
+    specs: "21.5 x 60 in. Reflex deck · 22 in. touchscreen with iFIT · 0-15 mph · 0-15% incline",
+    pros: [
+      "A 22-inch touchscreen running iFIT, with a 30-day membership included",
+      "15 mph top speed, the fastest Freemotion treadmill",
+      "The Reflex deck and 1-Step speed and incline keys",
+      "AutoBreeze fan, EKG grips and ANT+ and Polar heart-rate support",
+    ],
+    cons: [
+      "The most expensive Freemotion treadmill, at $11,350 on Freemotion’s home store",
+      "Most of the screen’s value is iFIT content, which is a paid membership after 30 days",
+      "Freemotion’s home store did not list its motor, weight or warranty on the day we checked",
+    ],
+    bottomLine: "For a buyer who wants a studio-grade treadmill with iFIT built in and will pay about $2,400 over the t10.9b for the screen and 3 mph more speed.",
+    description: "The t22.9 is Freemotion’s flagship Reflex treadmill. Freemotion’s home store lists a 22-inch capacitive touchscreen with a 30-day iFIT membership included, 1-Step speed and incline keys, a three-speed AutoBreeze fan, EKG grips, ANT+ and Polar heart-rate support and Bluetooth audio. TreadmillReviewGuru and other independent coverage agree on the 21.5 by 60-inch Reflex deck, a 15 mph top speed and 0 to 15% incline. Independent sources and an overseas dealer give a 5.0 HP AC motor (one writes it as 5.0 CHP) and a dedicated 20-amp circuit; Freemotion’s page did not state either, so we left them off the line above. TreadmillReviewGuru gives a 497 lb weight. Freemotion’s home store listed it at $11,350, shown against $15,999, on 5 November 2026; the listing also notes online sales are limited to the continental US.",
+  },
+  {
+    id: "freemotion-i22-9-incline-trainer",
+    name: "Freemotion i22.9 Incline Trainer",
+    brand: "Freemotion",
+    category: "Incline Trainer, -3% to 30%, 22 in. Touchscreen",
+    badge: "Steepest Climb",
+    amazonUrl: "https://www.amazon.com/s?k=incline+trainer+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
+    image: null,
+    reviewUrl: null,
+    priceRange: "$11,899 at Freemotion home store on 5 Nov 2026",
+    priceBounds: {"low":11899,"high":11899},
+    specs: "-3% to 30% incline · 0-15 mph · 22 in. touchscreen with iFIT",
+    pros: [
+      "A -3% to 30% incline range, twice the 15% of Freemotion’s treadmills",
+      "Keeps a 15 mph top speed, unlike most steep-incline machines",
+      "A 22-inch iFIT touchscreen like the t22.9",
+      "Steep walking is a low-impact way to raise heart rate without running",
+    ],
+    cons: [
+      "About $11,899, and TreadmillReviewGuru gives a 750 lb weight",
+      "The steep front end needs extra ceiling height",
+      "We found its user rating and motor in only one independent source, so we leave them out",
+    ],
+    bottomLine: "For a buyer who wants steep incline walking with a commercial build and will use iFIT; compare it with NordicTrack’s X-series first.",
+    description: "The i22.9 is Freemotion’s flagship incline trainer, a treadmill whose deck rises much further than a normal machine’s. TreadmillReviewGuru and Garage Gym Reviews both give the incline trainers a -3% to 30% range, and TreadmillReviewGuru lists the i22.9 at 15 mph with a 22-inch iFIT touchscreen and a 21.5 by 60-inch deck. TreadmillReviewGuru also lists a 5.0 HP AC motor, a 400 lb user rating and a weight of about 750 lb; we found those in only one independent source and could not read Freemotion’s spec sheet, so they are not on the line above. The cheaper i10.9b keeps the -3% to 30% range with a 12 mph top speed and a non-touch console. Freemotion’s home store listed the i22.9 at $11,899 (shown against $17,999) and the i10.9b at $9,999 (against $13,999) on 5 November 2026.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Brands", item: "https://www.treadmillreviewsusa.com/brands/" },
+        { "@type": "ListItem", position: 3, name: "Freemotion Treadmills", item: "https://www.treadmillreviewsusa.com/freemotion-treadmills/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Who makes Freemotion treadmills?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Freemotion Fitness is the commercial brand of iFIT Health & Fitness, formerly ICON Health & Fitness, of Logan, Utah, which also owns NordicTrack and ProForm. It builds treadmills for gyms and studios, including the Reflex treadmills used by Orangetheory Fitness, and sells them to home buyers through a separate home store and dealers.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much is a Freemotion treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "On 5 November 2026 Freemotion’s US home store listed the t8.9b at $7,799, the t10.9b Reflex at $8,999 and the t22.9 Reflex at $11,350; its incline trainers were $9,999 (i10.9b) and $11,899 (i22.9). Authorised dealers listed the t8.9b from $5,999 and the t10.9b at $9,400. Remanufactured units sell for much less.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the difference between the Freemotion t8.9b and t10.9b?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The t10.9b has Freemotion’s Reflex cushioned deck and a 5.0 HP AC motor; the t8.9b has a conventional cushioned deck and a 4.0 HP AC motor. Both have a 21.5 by 60-inch deck, 12 mph, 15% incline, a 400 lb rating and no touchscreen, according to dealers and independent reviews. The t10.9b was $1,200 more on Freemotion’s home store.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is the Freemotion Reflex treadmill the Orangetheory treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Orangetheory uses Freemotion Reflex treadmills; Athletech News reported that Freemotion developed the OTF Reflex treadmill with the chain over about 13 years. The t10.9b and t22.9 sold to the public use the Reflex deck and 1-Step controls, but a studio unit may be built to Orangetheory’s specification, so a used ex-studio machine may differ from a retail one.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do Freemotion treadmills need a 20-amp circuit?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The dealer listings we read give 120 V, 20 A for the t8.9b, and independent sources give a dedicated 20-amp circuit for the t22.9. Most household outlets are on 15-amp circuits, so plan for an electrician. Confirm the requirement for your model with the seller before delivery.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do Freemotion treadmills need an iFIT subscription?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. The t8.9b and t10.9b run their own programmes and can pair with iFIT on a phone or tablet if you choose. The t22.9 and i22.9 have iFIT touchscreens; Freemotion includes a 30-day membership with the t22.9, after which iFIT’s classes need a paid plan. Manual running does not depend on iFIT.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is a Freemotion better than a NordicTrack?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "It is built for heavier use, with AC commercial motors and heavier frames, but it costs several times as much, does not fold, may need a 20-amp circuit and, on dealer listings, carries seven years on the frame and motor. Both run iFIT. For one household, a NordicTrack is usually the better value.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
+      datePublished: "2026-11-05",
+      dateModified: "2026-11-05",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+    ...PRODUCTS.map((product) => ({
+      "@type": "Product",
+      name: product.name,
+      description: product.description,
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
+      ...(product.image ? { image: product.image.url } : {}),
+      ...(product.priceBounds
+        ? {
+            offers: {
+              "@type": "AggregateOffer",
+              priceCurrency: "USD",
+              lowPrice: product.priceBounds.low,
+              highPrice: product.priceBounds.high,
+              url: product.amazonUrl,
+            },
+          }
+        : {}),
+    })),
+    {
+      "@type": "ItemList",
+      name: title,
+      numberOfItems: 4,
+      itemListElement: PRODUCTS.map((product, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: product.name,
+        url: `https://www.treadmillreviewsusa.com/freemotion-treadmills/#${product.id}`,
+      })),
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-11-05",
+    modifiedTime: "2026-11-05",
+    author: "Shaheer Ali Khan",
+    section: "Fitness Equipment",
+    tags: [
+      "freemotion treadmill",
+      "free motion treadmills",
+      "freemotion t8.9b treadmill",
+      "freemotion reflex treadmill",
+      "freemotion t10.9b reflex treadmill",
+      "freemotion incline trainer",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "See the Current Range", link: "#lineup" }}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-freemotiontreadmills" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-freemotiontreadmills)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Buyer’s Guide
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated November 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          Freemotion Treadmills: <span class="text-[#5AA9FF]">A Buyer’s Guide to the Reflex Range</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          Freemotion is the commercial arm of iFIT, the company behind NordicTrack and ProForm, and it builds the treadmills in Orangetheory studios. It also sells them to home buyers. This guide covers the current t8.9b, the Reflex t10.9b and t22.9, the i10.9b and i22.9 incline trainers, what they cost, what a home needs to run one, and when a NordicTrack makes more sense.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            The Short Answer
+          </a>
+          <a href="#lineup" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            The Current Range
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
+          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">November 5, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="1.2k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
+          5 November 2026 we checked Freemotion's US home store (home.freemotionfitness.com: its
+          treadmill and incline-trainer listings and the t22.9 product page), authorised US dealer
+          listings for the t8.9b and t10.9b (US MedRehab and Wellbots), independent coverage from
+          TreadmillReviewGuru, Garage Gym Reviews and Athletech News, and the US Consumer Product
+          Safety Commission's recall database. Freemotion's main site (freemotionfitness.com) returned
+          "too many requests" errors all day, and its home-store product pages for the t8.9b and
+          t10.9b loaded without specifications, so the figures here come from authorised dealers and
+          independent reviews, and a figure appears on a product card only where at least two of them
+          agree. Where they disagree we say so in the text and leave it off the card. We have not
+          tested any Freemotion treadmill. Prices are what Freemotion's home store and the dealers
+          showed on 5 November 2026; they change often, so confirm price, configuration and warranty
+          before you order. As an Amazon Associate we earn from qualifying purchases; that does not
+          change what we say.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="max-w-3xl mx-auto px-4 pt-8">
+      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
+        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
+        <ul class="list-none m-0 p-0">
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Lowest-Cost Freemotion:</span>
+            <a href="#freemotion-t8-9b" class="font-bold text-gray-900 no-underline hover:underline">Freemotion t8.9b</a>
+            <a href="#freemotion-t8-9b" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Value Reflex:</span>
+            <a href="#freemotion-t10-9b-reflex" class="font-bold text-gray-900 no-underline hover:underline">Freemotion t10.9b Reflex</a>
+            <a href="#freemotion-t10-9b-reflex" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Flagship:</span>
+            <a href="#freemotion-t22-9-reflex" class="font-bold text-gray-900 no-underline hover:underline">Freemotion t22.9 Reflex</a>
+            <a href="#freemotion-t22-9-reflex" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Steepest Climb:</span>
+            <a href="#freemotion-i22-9-incline-trainer" class="font-bold text-gray-900 no-underline hover:underline">Freemotion i22.9 Incline Trainer</a>
+            <a href="#freemotion-i22-9-incline-trainer" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Should You Buy a Freemotion Treadmill? The Short Answer</a>
+          <a href="#who-is-freemotion" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Who Makes Freemotion Treadmills?</a>
+          <a href="#lineup" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. The Current Freemotion Treadmill and Incline Trainer Range</a>
+          <a href="#reflex" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. What the Reflex Deck Is, and Who Needs It</a>
+          <a href="#incline-trainers" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Freemotion Incline Trainers: The i10.9b and i22.9</a>
+          <a href="#home-buyers" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. What a Freemotion Asks of a Home</a>
+          <a href="#vs-nordictrack" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Freemotion vs NordicTrack: What the Extra Money Buys</a>
+          <a href="#used" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Buying a Used or Remanufactured Freemotion</a>
+          <a href="#who-should-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Which Freemotion Should You Buy?</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          If you have run in an Orangetheory class, you have probably run on a Freemotion: the
+          treadmills in its studios are Reflex machines Freemotion developed with the chain. Freemotion
+          is iFIT's commercial brand, the sibling of NordicTrack and ProForm, and its treadmills are
+          built for gyms, hotels and studios first. Since iFIT sells them to home buyers too, a steady
+          number of people search for a "freemotion treadmill" for a garage or basement. This guide
+          sets out the current range and what the sources agree on, what Reflex cushioning is, what
+          a commercial treadmill asks of a home, how Freemotion's prices compare with NordicTrack's
+          top models, and when buying used makes sense.
+        </p>
+
+        <div id="short-answer" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Should You Buy a Freemotion Treadmill? The Short Answer</h2>
+<p>
+            <strong>Buy a Freemotion if you want a genuine commercial treadmill with iFIT, especially the
+            Reflex deck, and you have a 20-amp circuit, a deep room and a budget of $6,000 to $12,000.
+            If you mainly want iFIT classes at home, a NordicTrack does that for a fraction of the price.</strong>
+          </p>
+          <p>
+            On 5 November 2026 Freemotion's US home store listed three treadmills and two incline trainers:
+            the t8.9b at $7,799, the t10.9b Reflex at $8,999, the t22.9 Reflex at $11,350, the i10.9b
+            incline trainer at $9,999 and the i22.9 at $11,899. Authorised dealers were selling the t8.9b
+            for as little as $5,999. These are commercial machines: AC motors of 4.0 to 5.0 HP, 400 lb user
+            ratings on the models where sources agree, frames that weigh hundreds of pounds and, on the
+            dealer listings we read, a 20-amp circuit.
+          </p>
+          <p>
+            What sets Freemotion apart from other club brands is <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium" data-autolink>iFIT</a>. The touchscreen models run it, and
+            the others can pair with a phone or tablet. That makes Freemotion the obvious choice for
+            someone who already uses iFIT on a <a href="/nordictrack/" class="text-[#0F62FE] font-medium">NordicTrack</a>
+            and wants a gym-grade machine. It also means most of what you pay over a NordicTrack goes on
+            the build, not the content: the classes are the same. We have not tested any Freemotion
+            treadmill, and Freemotion's own specification pages were unreadable on the day, so this guide
+            relies on dealer listings and independent coverage and says where they disagree.
+          </p>
+        </div>
+
+        <div id="who-is-freemotion" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Who Makes Freemotion Treadmills?</h2>
+<p>
+            Freemotion Fitness is the commercial equipment brand of iFIT Health &amp; Fitness, the Logan,
+            Utah, company formerly called ICON Health &amp; Fitness, which also owns NordicTrack and ProForm.
+            TreadmillReviewGuru dates the acquisition to 2000. Freemotion sells treadmills, incline
+            trainers, ellipticals, bikes and strength equipment to gyms, studios and hotels, and through a separate home store to individual buyers. The name
+            appears as "Freemotion", "FreeMotion" and "Free Motion" in listings; they are the same
+            brand.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Orangetheory and other gyms</h3>
+          <p>
+            Freemotion's best-known customer is Orangetheory Fitness. Athletech News reported in December
+            2023 that Freemotion had developed the OTF Reflex treadmill with Orangetheory over about 13
+            years, with 1-Step controls for fast speed and incline changes and a deck Freemotion claims
+            reduces impact force by 29%. That is a manufacturer's claim, not an independent measurement.
+            In March 2026 Crunch Fitness added Freemotion as an approved global vendor, so you may also
+            meet Freemotion cardio there. Our guide to
+            <a href="/what-treadmills-do-gyms-use/" class="text-[#0F62FE] font-medium">what treadmills gyms use</a>
+            covers the other club brands.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Recalls</h3>
+          <p>
+            We searched the CPSC recall database for Freemotion and for iFIT on 5 November 2026. The only
+            Freemotion recall is from October 2006 and covered strength machines whose weights could drop
+            unexpectedly; none covers a Freemotion treadmill. iFIT's recent recalls are of NordicTrack
+            <a href="/best-rowing-machines/" class="text-[#0F62FE] font-medium" data-autolink>rowing machines</a> (October 2025, fire hazard) and adjustable dumbbells sold under NordicTrack and
+            ProForm, not treadmills. Freemotion's home store links to a recalls page; check it with your
+            serial number after delivery.
+          </p>
+        </div>
+
+        <div id="lineup" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. The Current Freemotion Treadmill and Incline Trainer Range</h2>
+<p>
+            The table lists every treadmill and incline trainer on Freemotion's US home store on
+            5 November 2026, with its price there. The product cards below carry only figures that at
+            least two sources agree on.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Model</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Type</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Deck</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Console</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Home store price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">t8.9b</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Treadmill, 12 mph, 15%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Cushioned, not Reflex</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Non-touch console</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$7,799</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">t10.9b Reflex</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Treadmill, 12 mph, 15%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Reflex</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Non-touch console</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$8,999</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">t22.9 Reflex</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Treadmill, 15 mph, 15%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Reflex</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22 in. iFIT touchscreen</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$11,350</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">i10.9b</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Incline trainer, 12 mph, -3% to 30%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not confirmed</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Non-touch console</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$9,999</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">i22.9</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Incline trainer, 15 mph, -3% to 30%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not confirmed</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22 in. iFIT touchscreen</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$11,899</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            The store showed a second, higher price beside most models ($12,999 for the t10.9b, $15,999 for
+            the t22.9, $13,999 and $17,999 for the incline trainers) without labelling it; we read the lower
+            figure as the current price. Every listing showed both "In Stock" and "Out of Stock" labels, so
+            availability needs a phone call. The store also listed an "Ultra 1" treadmill at $22,000 with a
+            NordicTrack-style model code; we found no independent specifications for it and leave it out.
+          </p>
+          <p>
+            Model numbers are worth checking on used and dealer listings. Freemotion has revised models without renaming them:
+            US MedRehab's t8.9b carries the item code VMTL29818, while Wellbots and Freemotion's home store
+            list VMTL29822M1, so the two listings may describe different production versions, which may
+            explain their different weights.
+          </p>
+        </div>
+      </div>
+
+      <!-- Product cards -->
+      <div class="not-prose">
+        {
+          PRODUCTS.map((product, index) => (
+            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
+              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
+                  <div>
+                    <h3 class="text-white font-black text-xl leading-tight m-0">
+                      {index + 1}. {product.name}
+                    </h3>
+                    <p class="text-gray-400 text-xs">{product.category}</p>
+                  </div>
+                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                    {product.badge}
+                  </span>
+                </div>
+                <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                    </a>
+                  )}
+                  <div class="flex items-center gap-2 mb-4 flex-wrap">
+                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
+                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
+                  </div>
+                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
+                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
+                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
+                      <ul class="space-y-2">
+                        {product.pros.map((pro) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
+                      <ul class="space-y-2">
+                        {product.cons.map((con) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="border-t border-gray-100 pt-4">
+                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
+                    <div class="flex flex-wrap items-center gap-3">
+                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+                        {product.amazonLabel} &rarr;
+                      </a>
+                      {product.reviewUrl && (
+                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
+                          Read our full {product.name} review &rarr;
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="reflex" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. What the Reflex Deck Is, and Who Needs It</h2>
+<p>
+            "Reflex" is Freemotion's name for the cushioning deck on the t10.9b, the t22.9 and the
+            Orangetheory treadmill. Dealers describe it as a two-sided, proprietary cushioning deck, and
+            reviewers who have used it describe it as noticeably soft and springy compared with most
+            commercial treadmills; TreadmillReviewGuru calls it the feature it likes most. Freemotion's own
+            figure, reported by Athletech News, is a 29% reduction in impact force on the Orangetheory
+            version. We have found no independent measurement of that.
+          </p>
+          <p>
+            Cushioning is a matter of feel more than measured benefit. A softer deck can make long runs and
+            hard intervals more comfortable, and some runners with sore joints prefer it; others find a
+            very soft deck less stable for sprinting. The research does not show that deck cushioning on its
+            own prevents injury. Our
+            <a href="/treadmill-cushioning-explained/" class="text-[#0F62FE] font-medium">treadmill cushioning guide</a>
+            sets out what is known. The practical advice is simple: if you can, try a Reflex deck at an
+            Orangetheory studio or a dealer before paying about $1,200 more for the t10.9b over the t8.9b.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The 1-Step controls</h3>
+          <p>
+            The other Orangetheory feature is the 1-Step key layout: rows of direct speed and incline
+            buttons, so you jump from a walk to a sprint pace with one press instead of holding an arrow.
+            All three Freemotion treadmills have it. For <a href="/treadmill-interval-workouts/" class="text-[#0F62FE] font-medium" data-autolink>interval training</a> it is genuinely useful, and it is
+            one reason studio runners like these machines.
+          </p>
+        </div>
+
+        <div id="incline-trainers" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Freemotion Incline Trainers: The i10.9b and i22.9</h2>
+<p>
+            An <a href="/incline-trainer-vs-treadmill/" class="text-[#0F62FE] font-medium">incline trainer</a>
+            is a treadmill whose deck rises much higher than the usual 15%. Freemotion's two reach 30%, and
+            both decline to -3%, according to TreadmillReviewGuru and Garage Gym Reviews. Steep walking raises
+            heart rate quickly with far less impact than running, which is why incline trainers are popular
+            with walkers, hikers training for mountains and people who cannot run.
+          </p>
+          <p>
+            The i22.9 is the flagship, with a 22-inch iFIT touchscreen and, according to TreadmillReviewGuru, a
+            15 mph top speed. The i10.9b keeps the incline range with a 12 mph top speed and a console without a
+            touchscreen; you pair a phone or tablet for iFIT. On 5 November 2026 Freemotion's home store listed
+            the i10.9b at $9,999 and the i22.9 at $11,899.
+          </p>
+          <p>
+            The same idea is available much more cheaply from Freemotion's sister brand. NordicTrack's
+            <a href="/nordictrack-x22i-incline-trainer-treadmill/" class="text-[#0F62FE] font-medium">X22i</a>
+            and <a href="/nordictrack-x9i-incline-trainer-treadmill/" class="text-[#0F62FE] font-medium">X9i</a>
+            incline trainers run the same iFIT content with an even steeper range, at a fraction of the price,
+            with a consumer build and warranty. Choose the Freemotion for commercial construction and heavy,
+            shared use; choose a NordicTrack if you are one person walking steep hills at home. Our list of
+            <a href="/treadmills-with-the-highest-incline/" class="text-[#0F62FE] font-medium">treadmills with the highest incline</a>
+            compares the range.
+          </p>
+          <p>
+            Check the ceiling. An incline trainer's front end lifts a long way at 30%, and you stand higher
+            on it. Measure the room's height against your own plus the deck's highest point before ordering.
+          </p>
+        </div>
+
+        <div id="home-buyers" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. What a Freemotion Asks of a Home</h2>
+<p>
+            Freemotion sells to home buyers, but these are commercial machines, and they bring commercial
+            requirements. Before ordering, check four things.
+          </p>
+          <ul>
+            <li><strong>Power.</strong> Both dealer listings for the t8.9b give 120 V and 20 A, and
+            independent sources give a dedicated 20-amp circuit for the t22.9. Most household outlets are on
+            15-amp circuits. An electrician fitting a dedicated 20-amp circuit is part of the cost.</li>
+            <li><strong>Space.</strong> The t10.9b is 87.7 inches long and 34 wide on its dealer listing,
+            and the t8.9b 81 by 36. Add safety clearance behind and to the sides.</li>
+            <li><strong>Weight and access.</strong> The t10.9b weighs 487 lb and TreadmillReviewGuru gives
+            the i22.9 about 750 lb. Ask who delivers, whether installation is included and whether the crew
+            will handle stairs.</li>
+            <li><strong>Warranty for home use.</strong> The dealer listings quote seven years on the frame and
+            drive motor, two on parts and one of labour. Those are short next to consumer brands that offer
+            lifetime frame and motor cover, and terms on commercial equipment can differ between commercial
+            and residential buyers. Ask the seller which terms apply to you, in writing.</li>
+          </ul>
+          <p>
+            Our <a href="/gym-treadmill-for-home/" class="text-[#0F62FE] font-medium">guide to putting a gym treadmill in a home</a>
+            covers circuits, floors and delivery for any commercial machine.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Is Freemotion sold on Amazon?</h3>
+          <p>
+            We found no Freemotion treadmill sold new on Amazon US by Freemotion or an authorised dealer. The
+            Amazon buttons on this page are tagged searches, which may return similar commercial treadmills
+            or accessories rather than the Freemotion itself. Buy a new one from Freemotion's home store or an
+            authorised dealer so delivery and warranty are clear.
+          </p>
+        </div>
+
+        <div id="vs-nordictrack" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Freemotion vs NordicTrack: What the Extra Money Buys</h2>
+<p>
+            Because both brands run iFIT, the comparison most Freemotion shoppers make is with NordicTrack's
+            top machines, such as the
+            <a href="/nordictrack-commercial-2950-treadmill/" class="text-[#0F62FE] font-medium">Commercial 2950</a>
+            or the <a href="/nordictrack-x22i-incline-trainer-treadmill/" class="text-[#0F62FE] font-medium">X22i</a>.
+            The content is the same. The differences are the hardware and the terms.
+          </p>
+          <ul>
+            <li><strong>Motor type.</strong> Freemotion's treadmills use AC commercial drive motors rated at
+            4.0 to 5.0 HP. NordicTrack's home treadmills generally use DC motors. AC motors are built for long, continuous
+            use by many people; for one household, a good DC motor is usually enough. Our
+            <a href="/ac-vs-dc-treadmill-motor/" class="text-[#0F62FE] font-medium">AC vs DC motor guide</a>
+            explains the trade-off.</li>
+            <li><strong>Folding.</strong> Freemotion's treadmills do not fold. Several NordicTrack models do.</li>
+            <li><strong>Warranty.</strong> NordicTrack's consumer terms typically include longer frame cover,
+            while the Freemotion dealer listings quote seven years on frame and motor. Compare the exact terms.</li>
+            <li><strong>Power and weight.</strong> A Freemotion may need a 20-amp circuit and weighs far more.</li>
+            <li><strong>Price.</strong> A Freemotion costs several times as much as most NordicTrack treadmills.</li>
+          </ul>
+          <p>
+            For a single home user, the NordicTrack is usually the better buy. The Freemotion makes sense
+            where the treadmill will see gym-level hours: a family of runners, a home gym shared with
+            neighbours, a small studio or a fire station. If iFIT is not the point, other commercial brands —
+            <a href="/life-fitness/" class="text-[#0F62FE] font-medium">Life Fitness</a>,
+            <a href="/precor-treadmills/" class="text-[#0F62FE] font-medium">Precor</a> or
+            <a href="/true-fitness-treadmills/" class="text-[#0F62FE] font-medium">TRUE</a> — are worth comparing
+            in our <a href="/commercial-treadmills/" class="text-[#0F62FE] font-medium">commercial treadmills guide</a>.
+          </p>
+        </div>
+
+        <div id="used" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Buying a Used or Remanufactured Freemotion</h2>
+<p>
+            Because Freemotion sells to gyms and studios, used and remanufactured units are common, and the
+            savings are large: one reseller in search results listed a remanufactured t10.9b at $4,399, about
+            half the new price, though we did not verify that listing. Studio refits release batches of
+            Reflex treadmills from time to time.
+          </p>
+          <ul>
+            <li><strong>Know the history.</strong> A treadmill from an Orangetheory or a busy gym may have run
+            many hours a day. Ask for the hour meter or odometer reading and the service record.</li>
+            <li><strong>Check the version.</strong> Studio treadmills can be built to the chain's
+            specification. Ask whether the unit is a standard t10.9b or t22.9 or a studio-specific model, and
+            whether its console works without the studio's systems.</li>
+            <li><strong>Ask about the warranty.</strong> A remanufacturer's own warranty is what you get; ask
+            for its length and what it covers in writing.</li>
+            <li><strong>Plan for power and moving.</strong> A used commercial treadmill still needs its
+            circuit, and moving a 500 lb machine usually takes a professional crew.</li>
+          </ul>
+          <p>
+            Our <a href="/refurbished-treadmills/" class="text-[#0F62FE] font-medium">refurbished treadmills guide</a>
+            and <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a>
+            cover what to inspect.
+          </p>
+        </div>
+
+        <div id="who-should-buy" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Which Freemotion Should You Buy?</h2>
+<p>
+            <strong>Choose the t8.9b</strong> if you want a commercial AC treadmill with a simple console at
+            the brand's lowest price, and do not need the Reflex deck.
+            <strong>Choose the t10.9b Reflex</strong> if you have run on an Orangetheory treadmill and want that
+            deck and those controls at home without paying for a screen; pair a tablet for iFIT.
+            <strong>Choose the t22.9 Reflex</strong> if you want iFIT built in, 15 mph and the brand's top
+            machine. <strong>Choose an incline trainer</strong> if steep walking, not running, is the plan.
+          </p>
+          <p>
+            <strong>Look elsewhere if:</strong> you are one person who mostly walks or jogs; you cannot fit a
+            20-amp circuit; you need a folding treadmill; or you want iFIT at the lowest cost, in which case a
+            <a href="/nordictrack-vs-proform/" class="text-[#0F62FE] font-medium" data-autolink>NordicTrack or ProForm</a> does the same classes. If you want no subscription at all, see our
+            <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a>.
+          </p>
+          <p class="text-sm text-gray-500">
+            This guide is about equipment, not health. If you are buying on a doctor's or physical
+            therapist's advice, ask them what speed, incline and cushioning suit you; nothing here is medical
+            advice.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Who makes Freemotion treadmills?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Freemotion Fitness is the commercial brand of iFIT Health & Fitness, formerly ICON Health & Fitness, of Logan, Utah, which also owns NordicTrack and ProForm. It builds treadmills for gyms and studios, including the Reflex treadmills used by Orangetheory Fitness, and sells them to home buyers through a separate home store and dealers.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How much is a Freemotion treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                On 5 November 2026 Freemotion’s US home store listed the t8.9b at $7,799, the t10.9b Reflex at $8,999 and the t22.9 Reflex at $11,350; its incline trainers were $9,999 (i10.9b) and $11,899 (i22.9). Authorised dealers listed the t8.9b from $5,999 and the t10.9b at $9,400. Remanufactured units sell for much less.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What is the difference between the Freemotion t8.9b and t10.9b?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                The t10.9b has Freemotion’s Reflex cushioned deck and a 5.0 HP AC motor; the t8.9b has a conventional cushioned deck and a 4.0 HP AC motor. Both have a 21.5 by 60-inch deck, 12 mph, 15% incline, a 400 lb rating and no touchscreen, according to dealers and independent reviews. The t10.9b was $1,200 more on Freemotion’s home store.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is the Freemotion Reflex treadmill the Orangetheory treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Orangetheory uses Freemotion Reflex treadmills; Athletech News reported that Freemotion developed the OTF Reflex treadmill with the chain over about 13 years. The t10.9b and t22.9 sold to the public use the Reflex deck and 1-Step controls, but a studio unit may be built to Orangetheory’s specification, so a used ex-studio machine may differ from a retail one.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Do Freemotion treadmills need a 20-amp circuit?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                The dealer listings we read give 120 V, 20 A for the t8.9b, and independent sources give a dedicated 20-amp circuit for the t22.9. Most household outlets are on 15-amp circuits, so plan for an electrician. Confirm the requirement for your model with the seller before delivery.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Do Freemotion treadmills need an iFIT subscription?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                No. The t8.9b and t10.9b run their own programmes and can pair with iFIT on a phone or tablet if you choose. The t22.9 and i22.9 have iFIT touchscreens; Freemotion includes a 30-day membership with the t22.9, after which iFIT’s classes need a paid plan. Manual running does not depend on iFIT.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is a Freemotion better than a NordicTrack?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                It is built for heavier use, with AC commercial motors and heavier frames, but it costs several times as much, does not fold, may need a 20-amp circuit and, on dealer listings, carries seven years on the frame and motor. Both run iFIT. For one household, a NordicTrack is usually the better value.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Freemotion Treadmill</h2>
+          <p class="text-gray-700 leading-relaxed">A Freemotion is a commercial machine sold to homes. Most problems come from treating it like a home treadmill.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Forgetting the circuit until delivery day</h3>
+              <p class="text-gray-700 text-sm m-0">The dealer listings we read give a 120 V, 20 A requirement for the t8.9b, and independent sources a dedicated 20-amp circuit for the t22.9. A treadmill plugged into a shared 15-amp outlet may trip it or run poorly. Ask the seller for the requirement and have an electrician fit the circuit before the treadmill arrives.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Paying commercial prices for iFIT you could get cheaper</h3>
+              <p class="text-gray-700 text-sm m-0">Freemotion’s touchscreens run the same iFIT classes as NordicTrack and ProForm. If the classes are why you want one, a NordicTrack does that for a fraction of the price. Pay for a Freemotion for the commercial build and heavy shared use, not for the content.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming the warranty matches consumer brands</h3>
+              <p class="text-gray-700 text-sm m-0">Dealer listings quote seven years on the frame and drive motor, two on parts and one of labour, shorter than many consumer brands’ lifetime frame terms, and commercial terms can differ for residential buyers. Get the terms that apply to your purchase in writing before you pay.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying an ex-studio treadmill as if it were retail</h3>
+              <p class="text-gray-700 text-sm m-0">Ex-Orangetheory and gym treadmills are common on the used market and may have run many hours a day, sometimes in a studio-specific version. Ask for the hour reading, service record and exact model, check the console works on its own, and get the remanufacturer’s warranty in writing.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Treadmill Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/commercial-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Category</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Commercial Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Club treadmills from Life Fitness, Precor, Matrix and others, and what home buyers need.</p>
+            </a>
+            <a href="/nordictrack/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Sister brand</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">NordicTrack Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The same iFIT content on consumer treadmills and incline trainers for far less.</p>
+            </a>
+            <a href="/incline-trainer-vs-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Incline</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Incline Trainer vs Treadmill</p>
+              <p class="text-sm text-gray-500 leading-relaxed">What a 30% or 40% incline adds, and who actually needs it.</p>
+            </a>
+            <a href="/what-treadmills-do-gyms-use/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Gyms</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">What Treadmills Do Gyms Use?</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The commercial brands in US gyms and studios, and who owns them.</p>
+            </a>
+            <a href="/vision-fitness-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Vision Fitness Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">One dealer-sold treadmill left, the light-commercial T600; the old T9200, T40 and T80 and the January.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">Freemotion makes genuine commercial treadmills with iFIT: the t8.9b
+          from about $6,000, the Reflex t10.9b at about $9,000 and the touchscreen t22.9 at $11,350 on
+          Freemotion's home store on 5 November 2026.</strong> The t10.9b is the one to look at first if you
+          want the Orangetheory-style Reflex deck and controls at home.
+          </p>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            Go in knowing what a commercial machine asks of a home: a 20-amp circuit on the listings we read, a
+          deep room, a crew to deliver it and a warranty shorter than many consumer brands'. If iFIT classes
+          are what you are after, a
+          <a href="/nordictrack/" class="text-[#5AA9FF] font-bold no-underline">NordicTrack</a> delivers the
+          same content for far less.
+          </p>
+        </div>
+
+        <!-- Meet the Author -->
+        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
+          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
+          <div>
+            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
+            <p class="text-sm font-bold text-gray-900 m-0">
+              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
+              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+            </p>
+            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
+              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
+              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
+              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
+              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
+              running ergonomics, noise and long-term durability. Every guide says what was checked and
+              when, and says plainly when a product has not been tested hands-on.
+              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
+              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </article>
+</Layout>

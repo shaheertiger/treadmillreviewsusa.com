@@ -109,7 +109,7 @@ export default {
           <p>
             Third, figures had to agree. Where the manufacturer and an independent source gave the
             same running surface, capacity or weight, it appears on the card. Where they did not —
-            the TrueForm Runner's deck size and weight, the Woodway's exact weight, the Tru Grit's
+            the <a href="/trueform-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>TrueForm Runner</a>'s deck size and weight, the Woodway's exact weight, the Tru Grit's
             dimensions — we left it out. A blank in the comparison table below is deliberate.
           </p>
           <p>
@@ -192,7 +192,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Resistance and braking</h3>
           <p>
             Three of the seven have adjustable resistance: the SOLE C80 and Sunny SF-X7110 with
-            eight magnetic levels each, and the Tru Grit Runner with six levels that its dealers
+            eight magnetic levels each, and the <a href="/tru-grit-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Tru Grit</a> Runner with six levels that its dealers
             group as running, walking and sled-push settings. The AssaultRunner Pro, the TrueForm
             models and the Woodway have no resistance setting: effort comes entirely from how hard
             you run. Resistance matters for sled-style pushes against the handrails and for making
@@ -632,6 +632,12 @@ export default {
       title: 'NOHrD Sprintbok',
       blurb: 'The German-made wooden slat treadmill: confirmed figures, prices by finish and the warranty by market.',
       url: '/nohrd-sprintbok/',
+    },
+    {
+      kicker: "Model Review",
+      title: "Bells of Steel Blitz Treadmill",
+      blurb: "Steep-curve manual treadmill with six magnetic resistance levels.",
+      url: '/bells-of-steel-blitz-treadmill/',
     },
   ],
   bottomLine: [

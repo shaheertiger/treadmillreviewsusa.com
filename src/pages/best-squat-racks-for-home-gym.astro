@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "rep-pr-5000",
     name: "REP Fitness PR-5000 Power Rack",
+    brand: "REP Fitness",
     category: "Configurable 3x3 full power rack",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=REP+Fitness+PR-5000+Power+Rack&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "rogue-r-3",
     name: "Rogue Bolt-Together R-3 Power Rack",
+    brand: "Rogue",
     category: "2x3 full power rack, bolt-down",
     badge: "Best 2x3 Power Rack",
     amazonUrl: "https://www.amazon.com/s?k=power+rack&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "rogue-hr-2",
     name: "Rogue HR-2 Half Rack",
+    brand: "Rogue",
     category: "3x3 half rack, no bolting required",
     badge: "Best Half Rack",
     amazonUrl: "https://www.amazon.com/s?k=half+rack&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "prx-profile-pro",
     name: "PRx Performance Profile PRO Squat Rack",
+    brand: "PRx Performance",
     category: "Folding wall-mounted 3x3 rack",
     badge: "Best Folding Rack",
     amazonUrl: "https://www.amazon.com/dp/B09BDHXJRN?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "titan-t-3-squat-stand",
     name: "Titan Fitness T-3 Series Short Squat Stand",
+    brand: "Titan Fitness",
     category: "Budget 2x3 squat stand for low ceilings",
     badge: "Best Squat Stand",
     amazonUrl: "https://www.amazon.com/dp/B086H6Q399?tag=sktiger-20&linkCode=ll1",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "rep-pr-1100",
     name: "REP Fitness PR-1100 Power Rack",
+    brand: "REP Fitness",
     category: "Budget 2x2 full power rack",
     badge: "Best Budget Power Rack",
     amazonUrl: "https://www.amazon.com/dp/B07CHR5QDQ?tag=sktiger-20&linkCode=ll1",
@@ -242,7 +248,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -513,8 +519,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">

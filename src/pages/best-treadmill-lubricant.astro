@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "silicone-bottle",
     name: "100% Silicone Lubricant (Bottle + Applicator Tube)",
+    brand: "",
     category: "Best for Almost Every Treadmill",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=100%25+silicone+treadmill+lubricant+applicator+bottle&tag=sktiger-20",
@@ -36,6 +37,7 @@ const PRODUCTS = [
   {
     id: "silicone-spray-straw",
     name: "100% Silicone Spray With Precision Straw",
+    brand: "",
     category: "Best for Tight Belt Clearance",
     badge: "For Awkward Decks",
     amazonUrl: "https://www.amazon.com/s?k=100%25+silicone+treadmill+lubricant+spray&tag=sktiger-20",
@@ -61,6 +63,7 @@ const PRODUCTS = [
   {
     id: "proprietary-wax",
     name: "Manufacturer-Specified Wax or Proprietary Product",
+    brand: "",
     category: "For Pre-Waxed Decks Only",
     badge: "Check Your Manual",
     amazonUrl: "https://www.amazon.com/s?k=treadmill+belt+lubricant&tag=sktiger-20",
@@ -86,6 +89,7 @@ const PRODUCTS = [
   {
     id: "cleaning-kit",
     name: "Isopropyl Alcohol and Microfibre Cloths",
+    brand: "",
     category: "Buy Alongside Whatever You Choose",
     badge: "Essential Companion",
     amazonUrl: "https://www.amazon.com/s?k=isopropyl+alcohol+microfiber+cloths&tag=sktiger-20",
@@ -187,7 +191,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -477,8 +481,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">

@@ -578,6 +578,12 @@ export default {
       blurb: 'What buying Life Fitness’s commercial treadmill for home actually involves.',
       url: '/life-fitness-integrity-series-treadmill/',
     },
+    {
+      kicker: "Model Review",
+      title: "Life Fitness Club Series+",
+      blurb: "The club-grade home model: SE4 vs SL consoles and the 15-amp outlet.",
+      url: '/life-fitness-club-series-plus-treadmill/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Buy the Life Fitness Run CX if you want a heavy, quiet,

@@ -297,7 +297,7 @@ export default {
           <p>
             This version needs a machine with adjustable resistance. Of the machines in our curved
             roundup, the SOLE C80 and the Sunny SF-X7110 have eight magnetic levels each, and the
-            Tru Grit Runner has six levels with the top two set up for sled-push work. Machines
+            <a href="/tru-grit-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Tru Grit</a> Runner has six levels with the top two set up for sled-push work. Machines
             without resistance — including the AssaultRunner Pro — cannot do a true sled push,
             because the belt runs freely.
           </p>

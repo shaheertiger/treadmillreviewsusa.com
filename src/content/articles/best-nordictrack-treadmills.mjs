@@ -576,6 +576,18 @@ export default {
       blurb: 'Same parent company and platform — where the two actually differ.',
       url: '/nordictrack-vs-proform/',
     },
+    {
+      kicker: "Model Review",
+      title: "NordicTrack X24 Treadmill",
+      blurb: "The -6% to 40% incline trainer, its speed caps and ceiling height.",
+      url: '/nordictrack-x24-treadmill/',
+    },
+    {
+      kicker: "Model Review",
+      title: "NordicTrack C950i",
+      blurb: "Discontinued: what is known about it, what iFIT's 2023 cut-off means, parts, buying used, and what.",
+      url: '/nordictrack-c950i-treadmill/',
+    },
   ],
   bottomLine: [
     `For most buyers the <strong class="text-white">Commercial 1750</strong> is the NordicTrack

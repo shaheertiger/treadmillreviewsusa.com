@@ -401,6 +401,18 @@ export default {
       blurb: 'The in-person inspection to do before paying for any used machine.',
       url: '/used-treadmill-buying-checklist/',
     },
+    {
+      kicker: "Model Review",
+      title: "Landice L7 Treadmill Review",
+      blurb: "Every L7 configuration priced, how it differs from the L8, and what the L7 RTM rehab version adds.",
+      url: '/landice-l7-treadmill/',
+    },
+    {
+      kicker: "Model Review",
+      title: "Life Fitness 95T / 95Ti",
+      blurb: "The discontinued Elevation Series 95T and older 95Ti bought remanufactured: consoles, prices and the.",
+      url: '/life-fitness-95t-treadmill/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">A gym treadmill can be a superb home machine</strong> for heavy,

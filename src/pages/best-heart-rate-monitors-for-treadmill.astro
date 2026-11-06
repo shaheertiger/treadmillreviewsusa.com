@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "polar-h10",
     name: "Polar H10",
+    brand: "Polar",
     category: "Best overall chest strap for treadmill training",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B07PM54P4N?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "garmin-hrm-200",
     name: "Garmin HRM 200",
+    brand: "Garmin",
     category: "Best value strap for Garmin watch owners",
     badge: "Best for Garmin",
     amazonUrl: "https://www.amazon.com/dp/B0DQB2F5GD?tag=sktiger-20&linkCode=ll1",
@@ -62,6 +64,7 @@ const PRODUCTS = [
   {
     id: "wahoo-trackr-heart-rate",
     name: "Wahoo TRACKR Heart Rate",
+    brand: "Wahoo",
     category: "Best rechargeable chest strap",
     badge: "Best Rechargeable",
     amazonUrl: "https://www.amazon.com/dp/B0D52P8XS1?tag=sktiger-20&linkCode=ll1",
@@ -88,6 +91,7 @@ const PRODUCTS = [
   {
     id: "garmin-hrm-600",
     name: "Garmin HRM 600",
+    brand: "Garmin",
     category: "Best premium strap for Garmin runners",
     badge: "Best Premium",
     amazonUrl: "https://www.amazon.com/dp/B0F7Z6N7BR?tag=sktiger-20&linkCode=ll1",
@@ -114,6 +118,7 @@ const PRODUCTS = [
   {
     id: "polar-verity-sense",
     name: "Polar Verity Sense",
+    brand: "Polar",
     category: "Best optical arm band",
     badge: "Best Arm Band",
     amazonUrl: "https://www.amazon.com/dp/B0C5D7HW9D?tag=sktiger-20&linkCode=ll1",
@@ -140,6 +145,7 @@ const PRODUCTS = [
   {
     id: "polar-h9",
     name: "Polar H9",
+    brand: "Polar",
     category: "Best value strap for older treadmill consoles",
     badge: "Best for Older Consoles",
     amazonUrl: "https://www.amazon.com/dp/B08411DQ96?tag=sktiger-20&linkCode=ll1",
@@ -165,6 +171,7 @@ const PRODUCTS = [
   {
     id: "coospo-h808s",
     name: "COOSPO H808S",
+    brand: "COOSPO",
     category: "Best budget chest strap",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/dp/B07R8741CN?tag=sktiger-20&linkCode=ll1",
@@ -267,7 +274,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -521,8 +528,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">

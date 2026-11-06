@@ -1,0 +1,880 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "InMovement Treadmill Desk Guide (2026): Unsit, Bundle and Desk";
+const description =
+  "InMovement makes the Unsit under desk treadmill and sells it direct with its own standing desk. What it costs, buying direct vs from iMovR, conflicting specs, delivery, returns and InMovement vs LifeSpan.";
+
+const PRODUCTS = [
+  {
+    id: "inmovement-unsit-treadmill",
+    name: "InMovement Unsit Under Desk Treadmill",
+    brand: "InMovement",
+    category: "Wide-Deck Office Treadmill",
+    badge: "The Treadmill",
+    amazonUrl: "https://www.amazon.com/s?k=under+desk+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
+    image: null,
+    reviewUrl: null,
+    priceRange: "$2,595 at InMovement and iMovR (5 Nov 2026)",
+    priceBounds: {"low":2595,"high":2595},
+    specs: "30 x 40 in. walking surface · 0.3–2.0 mph · 400 lb capacity · 162 lb unit · 5 in. step-up · lifetime frame warranty",
+    pros: [
+      "A 30-inch-wide walking surface, about double a typical walking pad and ten inches wider than LifeSpan’s widest",
+      "Built for slow walking all day, with a low 5-inch step-up and a quiet published noise figure",
+      "Both its sellers give the same 400 lb rating, walking surface and warranty",
+      "HSA and FSA payment through InMovement’s Truemed partnership, which may lower the effective price for eligible buyers",
+    ],
+    cons: [
+      "Capped at 2 mph and has no incline: a desk walking machine, not exercise equipment",
+      "InMovement and iMovR give different motor figures, and older listings gave lower weight limits",
+      "162 lb and 39 by 56 inches; it needs at least 40 inches between your desk’s legs",
+      "Returns cost $250 to $500 in freight, plus $400 to $500 if you have thrown the packaging away",
+    ],
+    bottomLine: "For someone who will walk very slowly at a desk for most of the working day and wants the widest, steadiest deck available, and who has the desk and the budget for it.",
+    description: "The Unsit is InMovement’s only treadmill. InMovement and iMovR, which sells it too, both listed it at $2,595 on 5 November 2026 and both give a 30 by 40-inch walking surface, a 0.3 to 2.0 mph range, a 5-inch step-up, a 162 lb unit weight on a 39 by 56-inch footprint, a 400 lb maximum user weight, and a lifetime frame, two-year parts and one-year labour warranty. InMovement gives a noise figure of 42.9 dB at ear level at 2 mph, a 600 W electrical rating and a 2.75 HP motor; iMovR’s page gives 2.75 HP in one place and 2.0 HP in another, and the independent tracker estimates well under 1 HP of continuous output from the electrical rating, so no motor figure is printed here. It connects to the Unsit app, which syncs with Apple Health, Fitbit and Google Health. InMovement’s own listing showed it as out of stock with a notify-me option alongside an active add-to-cart button. It is not sold on Amazon; the button searches for similar wide-belt machines.",
+  },
+  {
+    id: "inmovement-unsit-bundle",
+    name: "InMovement Unsit Treadmill + Desk Bundle",
+    brand: "InMovement",
+    category: "Treadmill Desk Set, Bought Direct",
+    badge: "The Bundle",
+    amazonUrl: "https://www.amazon.com/s?k=treadmill+desk&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
+    image: null,
+    reviewUrl: null,
+    priceRange: "$3,215 at InMovement (5 Nov 2026)",
+    priceBounds: {"low":3215,"high":3215},
+    specs: "Unsit treadmill + Unsit Standing Desk · 48 x 24 or 60 x 30 in. top · 28–54 in. desk height · 220 lb desk lift capacity",
+    pros: [
+      "About $675 to $1,075 less than an Unsit with an iMovR Lander desk at the prices we saw in October",
+      "One seller, one return policy and one warehouse, rather than two deliveries from two places",
+      "A five-year frame and motor warranty on the desk",
+    ],
+    cons: [
+      "The desk reaches 54 inches; with a 5-inch step-up that leaves tall users short",
+      "The 48-inch top is narrower than the 53-inch minimum desktop iMovR specifies for the Unsit",
+      "Listed as out of stock in the configuration shown on 5 November 2026",
+    ],
+    bottomLine: "The lowest-cost way to buy an Unsit with a matching desk, as long as 54 inches of desk height is enough for you; check that first.",
+    description: "InMovement’s bundle pairs the Unsit treadmill with its own Unsit Standing Desk. On 5 November 2026 the bundle was $3,215 against a $3,420 reference price, with the desk alone at $825, and the configuration shown was marked out of stock. InMovement lists the desk with a 48 by 24 or 60 by 30-inch top, a height range of 28 to 54 inches including the top, a 220 lb lifting capacity, a three-position memory controller and a five-year frame and motor, two-year electrical warranty. Two things need checking before you order. The first is height: at 54 inches and with the treadmill’s 5-inch step-up, the desk works like a 49-inch standing desk, which suits most people of average height but not tall users. The second is width: iMovR’s Unsit page says the treadmill needs a desktop of 53 inches or wider, which the 48-inch top is not, so ask InMovement which top it recommends. Treadmill figures are as on the Unsit card.",
+  },
+  {
+    id: "lifespan-tx6-glowup",
+    name: "LifeSpan TX6-GlowUp",
+    brand: "LifeSpan",
+    category: "The LifeSpan Alternative",
+    badge: "LifeSpan Pick",
+    amazonUrl: "https://www.amazon.com/dp/B0CTH69X4C?tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    image: null,
+    reviewUrl: null,
+    priceRange: "$1,399–$1,499 at LifeSpan (5 Nov 2026)",
+    priceBounds: {"low":1399,"high":1499},
+    specs: "20 in. wide belt · 0.4–6.0 mph · 400 lb capacity · 7 hr/day rated use · no incline · 10-yr frame warranty",
+    pros: [
+      "About $1,200 less than the Unsit, with the same 400 lb rating",
+      "Three times the Unsit’s top speed, so a brisk walk or slow jog is possible",
+      "Sold on Amazon as well as direct, and in stock at LifeSpan on the day",
+    ],
+    cons: [
+      "A 20-inch belt, ten inches narrower than the Unsit",
+      "Ten years on the frame rather than lifetime",
+      "Its unit weight, step-up height and motor figure differ between sources",
+    ],
+    bottomLine: "The better buy for most people weighing up the Unsit: a full-width belt, the same rated capacity and a much lower price, unless you specifically need 30 inches of width.",
+    description: "The TX6-GlowUp is the LifeSpan most often compared with the Unsit. LifeSpan, an authorised dealer and an independent tracker agree on a 20-inch belt width, a speed range of 0.4 to 6.0 mph, a 400 lb maximum user weight, no incline and a warranty of 10 years on the frame, two on parts and one on labour, and LifeSpan rates it for seven hours of use a day. Its unit weight (98.5 or 88 lb), step-up height (5.8, 5 or 4.6 inches) and motor figure differ between sources. LifeSpan listed it at $1,399, down from $1,499, on 5 November 2026. Our full review sets out every figure.",
+  },
+  {
+    id: "lifespan-tr1200pro-glowup",
+    name: "LifeSpan TR1200Pro-GlowUp",
+    brand: "LifeSpan",
+    category: "Lower-Priced LifeSpan Desk Treadmill",
+    badge: "Cheaper LifeSpan",
+    amazonUrl: "https://www.amazon.com/s?k=under+desk+treadmill&tag=sktiger-20",
+    amazonLabel: "Shop Similar on Amazon",
+    image: null,
+    reviewUrl: null,
+    priceRange: "$1,199 at LifeSpan, pre-order (5 Nov 2026)",
+    priceBounds: {"low":1199,"high":1199},
+    specs: "20 x 48 in. belt · 0.4–4.0 mph · 6 hr/day rated use · no incline · 10-yr frame warranty",
+    pros: [
+      "Less than half the Unsit’s price, with a 20-inch belt",
+      "A low 4.6-inch step-up at the belt, by LifeSpan’s figure",
+      "Ten years on the frame, two on parts, one on labour",
+    ],
+    cons: [
+      "Sold as a pre-order on 5 November 2026",
+      "LifeSpan gives 330 lb, and its own page describes the motor two ways",
+      "Rated for six hours a day, against the TX6’s seven",
+    ],
+    bottomLine: "For a desk walker of average build who wants a full-width belt and a long frame warranty for well under half the Unsit’s price.",
+    description: "The TR1200Pro Glow-Up is LifeSpan’s long-running office treadmill in its current form. LifeSpan lists a 20 by 48-inch belt, a speed range of 0.4 to 4.0 mph that can be capped at 2 mph, a 330 lb maximum user weight, a 0.59-inch phenolic deck, a 4.6-inch step-up at the belt and six hours of recommended daily use, with 10 years on the frame, two on parts and one on labour. Its spec table and feature list give different motor descriptions, so neither is printed here. On 5 November 2026 LifeSpan listed it at $1,199, down from $1,299, as a pre-order.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Brands", item: "https://www.treadmillreviewsusa.com/brands/" },
+        { "@type": "ListItem", position: 3, name: "InMovement Treadmill Desk", item: "https://www.treadmillreviewsusa.com/inmovement-treadmill-desk/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Is InMovement the same company as iMovR?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. InMovement makes the Unsit treadmill and provides its warranty, servicing and technical support. iMovR is a separate retailer that sells the Unsit alongside its own standing desks. On 5 November 2026 InMovement also sold the Unsit direct from its own store.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much does the InMovement Unsit treadmill desk cost?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "On 5 November 2026 InMovement listed the Unsit treadmill at $2,595, its Unsit Standing Desk at $825, and the two as a bundle at $3,215 against a $3,420 reference price. iMovR listed the treadmill at $2,595 too. Curbside delivery was free from both. Prices change often.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What are the InMovement Unsit specifications?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "InMovement and iMovR agree on a 30 by 40-inch walking surface, 0.3 to 2.0 mph, a 400 lb maximum user weight, a 5-inch step-up, a 162 lb unit weight and a lifetime frame, two-year parts and one-year labour warranty. The motor is given as 2.75 HP by InMovement and as both 2.75 and 2.0 HP by iMovR.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "InMovement vs LifeSpan: which treadmill desk is better?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "It depends on width and speed. The Unsit has a 30-inch belt, a 2 mph ceiling and a lifetime frame warranty for $2,595. LifeSpan’s TX6-GlowUp has a 20-inch belt, 6 mph, the same 400 lb rating and a seven-hour daily-use figure for $1,399. For most desk walkers the LifeSpan is the better value.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Will the InMovement Unsit fit under my standing desk?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "It needs at least 40 inches between the desk legs, by InMovement’s figure, and iMovR adds a desktop of 53 inches or wider. Because it raises you 5 inches, your desk also needs to reach about 5 inches higher than your usual standing height. Measure both before ordering.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I return an InMovement Unsit?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "InMovement offers a full refund within 30 days of delivery minus return shipping, which it says typically costs $250 to $500. The treadmill must be in new condition in its original packaging on its pallet, or a $400 to $500 repackaging charge applies. Delivery and white-glove fees are not refunded.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
+      datePublished: "2026-11-05",
+      dateModified: "2026-11-05",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+    ...PRODUCTS.map((product) => ({
+      "@type": "Product",
+      name: product.name,
+      description: product.description,
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
+      ...(product.image ? { image: product.image.url } : {}),
+      ...(product.priceBounds
+        ? {
+            offers: {
+              "@type": "AggregateOffer",
+              priceCurrency: "USD",
+              lowPrice: product.priceBounds.low,
+              highPrice: product.priceBounds.high,
+              url: product.amazonUrl,
+            },
+          }
+        : {}),
+    })),
+    {
+      "@type": "ItemList",
+      name: title,
+      numberOfItems: 4,
+      itemListElement: PRODUCTS.map((product, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: product.name,
+        url: `https://www.treadmillreviewsusa.com/inmovement-treadmill-desk/#${product.id}`,
+      })),
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-11-05",
+    modifiedTime: "2026-11-05",
+    author: "Shaheer Ali Khan",
+    section: "Fitness Equipment",
+    tags: [
+      "inmovement treadmill desk",
+      "inmovement unsit under desk treadmill",
+      "inmovement vs lifespan treadmill desk",
+      "unsit standing desk",
+      "inmovement unsit bundle",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "See the Range", link: "#what-inmovement-sells" }}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-inmovementtreadmilldesk" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-inmovementtreadmilldesk)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Brand Guide
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated November 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          InMovement Treadmill Desk: <span class="text-[#5AA9FF]">A Buyer’s Guide to the Unsit</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          InMovement is the small company that makes the Unsit, the 30-inch-wide office treadmill most people know from iMovR. It also sells the Unsit direct, with a standing desk of its own and a bundle price. This guide sets out what InMovement sells, what it costs on the day, how buying direct differs from buying through iMovR, which figures conflict, and how it compares with LifeSpan.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#short-answer" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            The Short Answer
+          </a>
+          <a href="#direct-or-imovr" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            Direct or iMovR?
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
+          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">November 5, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="1.2k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
+          5 November 2026 we read InMovement’s own store (inmovement.com): the home page, the Unsit
+          Under Desk Treadmill, the Unsit Treadmill + Desk Bundle and the Unsit Standing Desk
+          listings, including each one’s price, stock status, specification table, warranty,
+          shipping and return terms. We compared those with iMovR’s Unsit listing on the same day,
+          a hands-on review by Treadmill Review Guru (July 2024), an independent walking-pad spec
+          tracker’s Unsit page (February 2026), and a June 2026 InMovement press release. InMovement
+          and iMovR agree on the 30 x 40 in. walking surface, 0.3 to 2.0 mph, 5 in. step-up, 162 lb
+          unit weight, 400 lb maximum user weight and the lifetime frame, 2-year parts and 1-year
+          labour warranty. They disagree on the motor (2.75 HP, or 2.75 and 2.0 HP on iMovR’s page)
+          and iMovR shows a three-year motor badge its warranty text does not explain; those are set
+          out as conflicts and kept off the cards. LifeSpan figures were checked on LifeSpan’s store
+          the same day. We searched the CPSC recall database for InMovement, iMovR, Unsit and LifeSpan
+          and found no recall. We have not tested any of these machines. Prices change often. The
+          Unsit is not sold on Amazon, so its buttons search Amazon for similar machines. We earn a
+          commission if you buy through the Amazon links on this page; it does not change what we
+          say.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="max-w-3xl mx-auto px-4 pt-8">
+      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
+        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
+        <ul class="list-none m-0 p-0">
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">The Treadmill:</span>
+            <a href="#inmovement-unsit-treadmill" class="font-bold text-gray-900 no-underline hover:underline">InMovement Unsit Under Desk Treadmill</a>
+            <a href="#inmovement-unsit-treadmill" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">The Bundle:</span>
+            <a href="#inmovement-unsit-bundle" class="font-bold text-gray-900 no-underline hover:underline">InMovement Unsit Treadmill + Desk Bundle</a>
+            <a href="#inmovement-unsit-bundle" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">LifeSpan Pick:</span>
+            <a href="#lifespan-tx6-glowup" class="font-bold text-gray-900 no-underline hover:underline">LifeSpan TX6-GlowUp</a>
+            <a href="#lifespan-tx6-glowup" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Cheaper LifeSpan:</span>
+            <a href="#lifespan-tr1200pro-glowup" class="font-bold text-gray-900 no-underline hover:underline">LifeSpan TR1200Pro-GlowUp</a>
+            <a href="#lifespan-tr1200pro-glowup" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. InMovement Treadmill Desk: The Short Answer</a>
+          <a href="#who-is-inmovement" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Who Is InMovement, and How Is It Related to iMovR?</a>
+          <a href="#what-inmovement-sells" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. What InMovement Sells, and What It Costs</a>
+          <a href="#unsit-figures" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. The Unsit’s Figures: Agreed and Conflicting</a>
+          <a href="#direct-or-imovr" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Buying Direct From InMovement or Through iMovR</a>
+          <a href="#desk-fit" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. The Desk: Height, Width and the 53-Inch Question</a>
+          <a href="#inmovement-vs-lifespan" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. InMovement vs LifeSpan Treadmill Desk</a>
+          <a href="#who-should-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Who Should Buy an InMovement Treadmill Desk</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          If you searched for an InMovement treadmill desk, you have probably already seen the
+          Unsit: a heavy, unusually wide office treadmill that tops out at 2 mph and sits under a
+          standing desk all day. Most coverage presents it as an iMovR product, because iMovR sells
+          it alongside its own desks. InMovement is the company that makes it, services it and,
+          since 2026, sells it direct again, with a cheaper desk of its own. Which of the two you buy
+          from changes the delivery fee, the return freight, the desk you get and who you talk to
+          when something goes wrong. This guide sets that out, along with what the Unsit costs, what
+          its sellers agree and disagree on, and whether a LifeSpan suits you better.
+        </p>
+
+        <div id="short-answer" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. InMovement Treadmill Desk: The Short Answer</h2>
+<p>
+            <strong>InMovement makes one treadmill, the Unsit, and sells it direct at $2,595 or with
+            its own standing desk for $3,215; it is the widest under desk treadmill we cover and is
+            worth its price only if you will walk very slowly at a desk for most of the day.</strong>
+            The 30-inch walking surface is the reason to buy it. The 2 mph ceiling, the 162 lb frame and
+            the price are the reasons most people should not.
+          </p>
+          <p>
+            Buying from InMovement rather than iMovR gets you the same treadmill at the same price on
+            the day we checked, a lower inside-delivery fee, a slightly lower return-freight estimate,
+            and a far cheaper desk. iMovR’s Lander is a more capable desk, with a higher reach for tall
+            users, and iMovR publishes which desks fit the Unsit. Either way, InMovement handles the
+            warranty and technical support.
+          </p>
+          <p>
+            If you are weighing InMovement against LifeSpan, the honest summary is that LifeSpan’s
+            TX6-GlowUp gives most of what the Unsit offers — a full-width belt, a 400 lb rating, a
+            published daily-use figure — for about $1,200 less, with a higher top speed. The Unsit is
+            the right choice only when the extra ten inches of width matters to you. We have not tested
+            any of these machines; everything here comes from the sellers’ own pages and independent
+            coverage, checked on 5 November 2026.
+          </p>
+        </div>
+
+        <div id="who-is-inmovement" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Who Is InMovement, and How Is It Related to iMovR?</h2>
+<p>
+            InMovement and iMovR are separate companies with similar names, and the overlap confuses
+            many buyers. InMovement describes itself on its own store as a small business run by a
+            husband-and-wife team, and gives customer-service hours of 9am to 5pm Central time on
+            weekdays. Its Unsit ships from a warehouse in Indianapolis. It makes the Unsit treadmill,
+            provides its warranty, runs its technical support and inspects returned units. In June
+            2026 it announced in a press release that it was taking the Unsit to NeoCon, the office
+            furniture trade show, for the first time, aiming it at commercial and shared workspaces.
+          </p>
+          <p>
+            iMovR is a long-established seller of standing desks and treadmill desks. It used to sell
+            its own treadmill, the ThermoTread GT, which it discontinued; the Unsit replaced it. iMovR’s
+            Unsit page says plainly that InMovement provides the warranty, the technician servicing and
+            customer technical support, gives an InMovement support address, and says returned units are
+            inspected by InMovement before iMovR issues a refund. So when you buy an Unsit from iMovR,
+            iMovR is the retailer and InMovement is the manufacturer behind it.
+          </p>
+          <p>
+            Two small details on InMovement’s own pages show how tangled the branding is. A product image
+            on the Unsit listing shows the logo as “UNiSIT by iMovement”, which matches neither company’s
+            name. And the independent tracker we read, writing in February 2026, reported that older
+            InMovement spec links were dead and that the Unsit was routed through iMovR. On 5 November
+            2026 InMovement’s own store was live and selling the treadmill, a desk, a bundle, a standing
+            stool and replacement parts. If you have read elsewhere that the Unsit is only available from
+            iMovR, that is no longer the case.
+          </p>
+          <p>
+            Our <a href="/imovr-unsit-treadmill-desk/" class="text-[#0F62FE] font-medium">review of the iMovR Unsit bundle</a>
+            covers the treadmill paired with iMovR’s Lander desk in detail. This page is about the
+            brand and the buying decision: what InMovement sells, and where to buy it.
+          </p>
+        </div>
+
+        <div id="what-inmovement-sells" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. What InMovement Sells, and What It Costs</h2>
+<p>
+            InMovement’s US store listed four products on 5 November 2026, plus replacement parts.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Product</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Price on 5 Nov 2026</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Status shown</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Unsit Under Desk Treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,595</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Out of stock with notify-me, but add-to-cart active</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Unsit Treadmill + Desk Bundle</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$3,215 (reference $3,420)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Configuration shown out of stock</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Unsit Standing Desk</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$825</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Listed</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Energy Standing Desk Stool</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$225</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Listed</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            The arithmetic on the bundle is simple: $2,595 plus $825 is $3,420, and the bundle price
+            takes $205 off that. InMovement’s page describes the desk as 25% off in the bundle, which is
+            the same saving expressed as a share of the desk price. It is a modest discount, but it buys
+            you one order, one seller and one return policy.
+          </p>
+          <p>
+            The stock status needs a word. On the day we checked, InMovement’s Unsit listing displayed
+            an out-of-stock notice and a notify-me button next to an active add-to-cart button, and the
+            bundle configuration we viewed was marked out of stock. iMovR’s page did not state stock,
+            only lead times. If you need the treadmill by a particular date, email InMovement before you
+            order and get the ship date in writing. The cards below set out what each product is and
+            how the main LifeSpan alternatives compare.
+          </p>
+        </div>
+      </div>
+
+      <!-- Product cards -->
+      <div class="not-prose">
+        {
+          PRODUCTS.map((product, index) => (
+            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
+              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
+                  <div>
+                    <h3 class="text-white font-black text-xl leading-tight m-0">
+                      {index + 1}. {product.name}
+                    </h3>
+                    <p class="text-gray-400 text-xs">{product.category}</p>
+                  </div>
+                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                    {product.badge}
+                  </span>
+                </div>
+                <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                    </a>
+                  )}
+                  <div class="flex items-center gap-2 mb-4 flex-wrap">
+                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
+                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
+                  </div>
+                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
+                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
+                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
+                      <ul class="space-y-2">
+                        {product.pros.map((pro) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
+                      <ul class="space-y-2">
+                        {product.cons.map((con) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="border-t border-gray-100 pt-4">
+                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
+                    <div class="flex flex-wrap items-center gap-3">
+                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+                        {product.amazonLabel} &rarr;
+                      </a>
+                      {product.reviewUrl && (
+                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
+                          Read our full {product.name} review &rarr;
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="unsit-figures" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. The Unsit’s Figures: Agreed and Conflicting</h2>
+<p>
+            InMovement and iMovR sell the same machine, so their figures should match. Most do. The
+            table sets out where they agree, where they do not, and what the independent sources
+            say.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[560px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Figure</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">InMovement</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">iMovR</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Independent</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walking surface</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">30 x 40 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">30 x 40 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">30 x 40 in. (review, tracker)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Speed</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.3–2.0 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Up to 2.0 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.3–2.0 mph</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Maximum user weight</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">400 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">400 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">400 lb (review); tracker recorded 300, 350 and 400 lb on earlier iMovR pages</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Motor</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.75 HP</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.75 HP and 2.0 HP on one page</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About 0.8 HP continuous, estimated from 600 W input (tracker)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Unit weight</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">162 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">162 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">162 lb</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Step-up</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5 in.</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Warranty</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime frame, 2 yr parts, 1 yr labour</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The same, plus a 3-year motor badge</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime frame, 2 yr parts, 1 yr labour</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Desk clearance</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">40 in. between legs</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">40 in. between columns, 53 in. or wider top</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About 42 in. between legs (review)</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            The weight limit has settled. Earlier versions of iMovR’s page gave three different figures,
+            which we flagged in our October review; on 5 November 2026 InMovement, iMovR and Treadmill
+            Review Guru’s hands-on review all gave 400 lb. If you weigh near that, still ask for the
+            figure in writing for the unit you are buying.
+          </p>
+          <p>
+            The motor has not settled. InMovement says 2.75 HP. iMovR says 2.75 HP in its feature list
+            and 2.0 HP at 4,000 RPM in its specification table, and shows a three-year motor warranty
+            badge that neither company’s written warranty mentions. The tracker estimates continuous
+            output well under 1 HP from the 600 W electrical rating. At 2 mph none of that is a reason
+            to doubt the motor; it is a reason not to compare it with another treadmill’s horsepower
+            figure. The motor term is worth asking about: if three years is real, get it in writing.
+          </p>
+        </div>
+
+        <div id="direct-or-imovr" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Buying Direct From InMovement or Through iMovR</h2>
+<p>
+            The treadmill was $2,595 from both sellers on 5 November 2026. What differs is everything
+            around it.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Term</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">InMovement direct</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">iMovR</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Curbside delivery</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Free</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Free</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Inside delivery</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$199</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$249</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">White glove with assembly</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$499</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$499</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lead time stated</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Leaves warehouse in 2–3 days, 8–10 days transit (bundle page: 3–5 and 2–10)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4–13 business days in total</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Return window</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">30 days from delivery, email to request</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">30 days, written authorisation first</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Return freight, paid by you</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Typically $250–$500</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$280–$500</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Missing packaging</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$400–$500 repackaging charge</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Original packaging and pallet required</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Desks offered</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Unsit Standing Desk ($825)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lander, P1, Jaxson and others</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">HSA/FSA</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Through Truemed</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not stated on the Unsit page</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            <strong>Buy direct</strong> if you want the cheapest complete setup, you are of average
+            height, and you would rather deal with one company from order to warranty. The $50 lower
+            inside-delivery fee and the bundle discount add up, and InMovement services the machine
+            either way.
+          </p>
+          <p>
+            <strong>Buy through iMovR</strong> if you are tall, want a sturdier desk with more
+            accessories, or already own an iMovR desk. iMovR publishes a compatibility table for the
+            Unsit with each of its desks and the maximum height each reaches with height extenders, and
+            its Lander reaches higher than InMovement’s desk. Expect two deliveries from different
+            places if you order a desk and treadmill together, which iMovR says on its Unsit page.
+          </p>
+          <p>
+            Whichever you choose, the return cost is the term to read twice. Sending a 162 lb treadmill
+            back on its pallet costs hundreds of dollars, and inside-delivery and white-glove fees are
+            not refunded. Keep the packaging and the pallet until you are sure. Our guide to
+            <a href="/treadmill-return-policies/" class="text-[#0F62FE] font-medium">treadmill return policies</a>
+            covers how freight returns work.
+          </p>
+        </div>
+
+        <div id="desk-fit" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. The Desk: Height, Width and the 53-Inch Question</h2>
+<p>
+            An under desk treadmill is only as good as the desk above it. Two measurements decide
+            whether the Unsit works for you: how far apart the desk’s legs are and how high the desk
+            goes.
+          </p>
+          <p>
+            <strong>Width.</strong> The Unsit is 39 inches wide. InMovement says it needs at least 40
+            inches between the desk legs; iMovR says 40 inches between the lifting columns and a
+            desktop of 53 inches or wider; Treadmill Review Guru’s reviewers found they needed about 42
+            inches between the legs. InMovement’s own desk comes with a 48-inch or a 60-inch top. We do
+            not know whether InMovement’s 48-inch desk has its legs far enough apart, since its listing
+            does not say, and iMovR’s 53-inch guidance suggests a 48-inch top is too narrow. Ask
+            InMovement which top it ships in the bundle, and choose the 60-inch top unless it confirms
+            the 48-inch one clears.
+          </p>
+          <p>
+            <strong>Height.</strong> InMovement’s desk adjusts from 28 to 54 inches including the top.
+            The Unsit lifts you 5 inches, so on the treadmill the desk behaves like a standing desk that
+            tops out at about 49 inches. That is enough for most people up to roughly average height,
+            but tall users typing on the desk surface will find it low. iMovR’s Lander, with its height
+            extenders, reaches 56.5 inches by iMovR’s figure. Our guide to
+            <a href="/standing-desk-height-for-walking-pad/" class="text-[#0F62FE] font-medium">standing desk height for a walking pad</a>
+            gives the measurements to take before you order.
+          </p>
+          <p>
+            <strong>Load.</strong> InMovement’s desk lifts 220 lb. That is plenty for monitors and a
+            computer, but heavy multi-monitor setups with arms and a desktop tower are worth adding up.
+            The desk carries a five-year frame and motor warranty and two years on electrical parts.
+          </p>
+          <p>
+            If you already have a standing desk, measure it against those three figures before you buy
+            a bundle. Our <a href="/treadmill-desk-guide/" class="text-[#0F62FE] font-medium">treadmill desk guide</a>
+            covers the rest of the setup: monitor height, keyboard position and cable management.
+          </p>
+        </div>
+
+        <div id="inmovement-vs-lifespan" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. InMovement vs LifeSpan Treadmill Desk</h2>
+<p>
+            LifeSpan is the brand most often set against InMovement, because both build desk treadmills
+            for long working days rather than exercise. They take different approaches.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[560px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Figure</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">InMovement Unsit</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">LifeSpan TX6-GlowUp</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">LifeSpan TR1200Pro</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Belt width</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">30 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20 in.</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Top speed</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2.0 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">6.0 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4.0 mph</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Capacity</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">400 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">400 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">330 lb</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rated daily use</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not stated</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">7 hr</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">6 hr</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Frame warranty</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10 years</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10 years</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Price, 5 Nov 2026</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,595</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,399</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,199 (pre-order)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">On Amazon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Yes</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Has been</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            The Unsit is built around width and slowness: a 30-inch deck for people who want to forget
+            where their feet are, a 2 mph ceiling because it is not meant for anything faster, and a
+            lifetime frame warranty. LifeSpan builds narrower machines that go faster and cost far less,
+            and publishes daily-use ratings, which InMovement does not. For most people, a LifeSpan’s
+            20-inch belt is already wide enough to stop the edge-of-belt problem that cheap 16-inch pads
+            have. The Unsit earns its premium for people who find even that too narrow, often heavier
+            or broader walkers who spend most of their day on the belt.
+          </p>
+          <p>
+            On service, both are small specialist companies and neither has a spotless record. Our
+            <a href="/lifespan-treadmills/" class="text-[#0F62FE] font-medium">LifeSpan brand guide</a>
+            covers LifeSpan’s, and our
+            <a href="/lifespan-tx6-under-desk-treadmill/" class="text-[#0F62FE] font-medium">LifeSpan TX6 review</a>
+            sets out the figures behind the TX6 card above.
+          </p>
+        </div>
+
+        <div id="who-should-buy" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Who Should Buy an InMovement Treadmill Desk</h2>
+<p>
+            <strong>Buy an InMovement Unsit</strong> if you will walk at 1 to 2 mph for several hours of
+            almost every working day, you want the widest deck available, and you have a desk with at
+            least 40 inches between its legs, or the budget for one. It also makes sense for a shared
+            office that wants one machine sturdy and simple enough for anyone to step onto, which is
+            where InMovement is now pitching it.
+          </p>
+          <p>
+            <strong>Buy the bundle direct</strong> if you are of average height and want the cheapest
+            complete set, after confirming the desk top width. <strong>Buy through iMovR</strong> if
+            you are tall or want iMovR’s desks.
+          </p>
+          <p>
+            <strong>Buy a LifeSpan instead</strong> if 20 inches of belt is enough, you want to walk
+            faster than 2 mph, or the $1,200 difference matters. <strong>Buy a walking pad</strong> if
+            you will walk an hour or less a day: our
+            <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under desk treadmills</a>
+            guide, the <a href="/best-treadmill-desks/" class="text-[#0F62FE] font-medium">best treadmill desks</a>
+            roundup and the <a href="/best-quiet-walking-pads/" class="text-[#0F62FE] font-medium">quiet walking pads</a>
+            roundup cover machines from a few hundred dollars.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is InMovement the same company as iMovR?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                No. InMovement makes the Unsit treadmill and provides its warranty, servicing and technical support. iMovR is a separate retailer that sells the Unsit alongside its own standing desks. On 5 November 2026 InMovement also sold the Unsit direct from its own store.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How much does the InMovement Unsit treadmill desk cost?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                On 5 November 2026 InMovement listed the Unsit treadmill at $2,595, its Unsit Standing Desk at $825, and the two as a bundle at $3,215 against a $3,420 reference price. iMovR listed the treadmill at $2,595 too. Curbside delivery was free from both. Prices change often.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What are the InMovement Unsit specifications?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                InMovement and iMovR agree on a 30 by 40-inch walking surface, 0.3 to 2.0 mph, a 400 lb maximum user weight, a 5-inch step-up, a 162 lb unit weight and a lifetime frame, two-year parts and one-year labour warranty. The motor is given as 2.75 HP by InMovement and as both 2.75 and 2.0 HP by iMovR.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">InMovement vs LifeSpan: which treadmill desk is better?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                It depends on width and speed. The Unsit has a 30-inch belt, a 2 mph ceiling and a lifetime frame warranty for $2,595. LifeSpan’s TX6-GlowUp has a 20-inch belt, 6 mph, the same 400 lb rating and a seven-hour daily-use figure for $1,399. For most desk walkers the LifeSpan is the better value.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Will the InMovement Unsit fit under my standing desk?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                It needs at least 40 inches between the desk legs, by InMovement’s figure, and iMovR adds a desktop of 53 inches or wider. Because it raises you 5 inches, your desk also needs to reach about 5 inches higher than your usual standing height. Measure both before ordering.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Can I return an InMovement Unsit?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                InMovement offers a full refund within 30 days of delivery minus return shipping, which it says typically costs $250 to $500. The treadmill must be in new condition in its original packaging on its pallet, or a $400 to $500 repackaging charge applies. Delivery and white-glove fees are not refunded.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying an InMovement Treadmill Desk</h2>
+          <p class="text-gray-700 leading-relaxed">The Unsit is an expensive, heavy machine that is costly to send back, so the mistakes that matter are made before the order.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Ordering the bundle without checking the desk height</h3>
+              <p class="text-gray-700 text-sm m-0">InMovement’s desk tops out at 54 inches and the treadmill adds 5. On the belt that is like a 49-inch standing desk. Measure your elbow height standing, add 5 inches, and compare before you pay.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Assuming the 48-inch desktop clears the treadmill</h3>
+              <p class="text-gray-700 text-sm m-0">The Unsit is 39 inches wide and iMovR specifies a 53-inch or wider desktop. InMovement’s compact desk is 48 inches. Ask InMovement to confirm the leg clearance, or choose the 60-inch top.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Throwing away the pallet and packaging</h3>
+              <p class="text-gray-700 text-sm m-0">Both sellers require the original packaging and pallet for a return, and InMovement charges $400 to $500 to repackage without them, on top of $250 to $500 in freight. Keep everything for 30 days.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying it for exercise</h3>
+              <p class="text-gray-700 text-sm m-0">The Unsit stops at 2 mph and has no incline. It is built for walking slowly while working. If you want a brisk walk, a jog or a workout, a LifeSpan or a folding treadmill does more for less.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Brand &amp; Desk Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/imovr-unsit-treadmill-desk/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Review</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">iMovR Unsit Treadmill Desk Bundle</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The Unsit paired with iMovR’s Lander desk, and what that set costs.</p>
+            </a>
+            <a href="/lifespan-tx6-under-desk-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Rival</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">LifeSpan TX6-GlowUp Review</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The 20-inch, 400 lb LifeSpan most often compared with the Unsit.</p>
+            </a>
+            <a href="/best-treadmill-desks/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Roundup</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill Desks</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Integrated desks and under-desk treadmills for long working days.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">InMovement makes the widest under desk treadmill we cover</strong>,
+            and since 2026 sells it direct: the Unsit at $2,595, or $3,215 with InMovement’s own
+            standing desk. Its sellers agree on the 30 by 40-inch deck, 2 mph ceiling, 400 lb rating and
+            lifetime frame warranty, and disagree on the motor. It is worth buying only if you will walk
+            slowly for most of the day and need that width.
+          </p>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            Buy direct for the cheapest set if you are of average height and the desk top clears; buy
+            through iMovR for a taller desk. Most desk walkers will be just as well served, for about
+            $1,200 less, by the
+            <a href="/lifespan-tx6-under-desk-treadmill/" class="text-[#5AA9FF] font-bold no-underline">LifeSpan TX6-GlowUp</a>.
+          </p>
+        </div>
+
+        <!-- Meet the Author -->
+        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
+          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
+          <div>
+            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
+            <p class="text-sm font-bold text-gray-900 m-0">
+              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
+              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+            </p>
+            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
+              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
+              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
+              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
+              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
+              running ergonomics, noise and long-term durability. Every guide says what was checked and
+              when, and says plainly when a product has not been tested hands-on.
+              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
+              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </article>
+</Layout>

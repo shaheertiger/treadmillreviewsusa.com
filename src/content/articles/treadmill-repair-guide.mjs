@@ -580,6 +580,12 @@ export default {
       blurb: 'Frame, motor, parts and labour cover explained.',
       url: '/treadmill-warranty-guide/',
     },
+    {
+      kicker: "Repairs",
+      title: "Treadmill Parts: Where to Buy",
+      blurb: "How to find your model and serial number, OEM against aftermarket, each brand's parts route, and when a.",
+      url: '/treadmill-parts/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Diagnose the component before anyone is paid.</strong> Lubricate

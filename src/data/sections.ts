@@ -212,6 +212,13 @@ export const SECTIONS: Section[] = [
             badge: 'Low profile',
             url: '/best-low-profile-treadmills/',
           },
+          {
+            title: 'Best Mini Treadmills',
+            description:
+              'Five walking pads ranked by checked footprint and weight, from a 37 lb flat pad to fold-in-half models.',
+            badge: 'Mini',
+            url: '/best-mini-treadmills/',
+          },
         ],
       },
       {
@@ -451,6 +458,20 @@ export const SECTIONS: Section[] = [
               'GymKit and tap-to-connect machines, and what works fine without pairing at all.',
             badge: 'Apple Watch',
             url: '/best-treadmills-for-apple-watch/',
+          },
+          {
+            title: 'Best Treadmills With Screens',
+            description:
+              '10 to 23.8 in. touchscreens: screen size, platform, and what works without a subscription.',
+            badge: 'Screens',
+            url: '/best-treadmills-with-screens/',
+          },
+          {
+            title: 'Best Dog Treadmills for Small Dogs',
+            description:
+              'Motorised machines sized for toy and small breeds, what was in stock, and the safety rules.',
+            badge: 'Small dogs',
+            url: '/best-dog-treadmills-for-small-dogs/',
           },
         ],
       },
@@ -754,6 +775,27 @@ export const SECTIONS: Section[] = [
             badge: 'Academy',
             url: '/academy-sports-treadmills/',
           },
+          {
+            title: 'Sam\'s Club Treadmills',
+            description:
+              'NordicTrack and ProForm at Sam\'s: members-only prices, the retailer-only Commercial LE, a return policy that doesn\'t name treadmills, vs Costco.',
+            badge: 'Sam\'s Club',
+            url: '/sams-club-treadmills/',
+          },
+          {
+            title: 'Buying a Used Peloton Treadmill',
+            description:
+              'The 2021 recalls and how to confirm the fix, the $95 activation fee, fair prices against a new Tread Flex, and where to look.',
+            badge: 'Used',
+            url: '/used-peloton-tread/',
+          },
+          {
+            title: 'Rogue Fitness Treadmills',
+            description:
+              'The eight Woodway, TrueForm and STEPR treadmills Rogue sells, $3,495–$11,395, and how the Rogue | Woodway Curve LTG compares.',
+            badge: 'Rogue',
+            url: '/rogue-treadmills/',
+          },
         ],
       },
       {
@@ -907,6 +949,20 @@ export const SECTIONS: Section[] = [
             badge: 'LifeSpan',
             url: '/lifespan-treadmills/',
           },
+          {
+            title: 'Nautilus Treadmills',
+            description:
+              'No longer sold: the T614, T616 and T618 figures, the 2022 recall with no remedy left, and the Bowflex models that replace them.',
+            badge: 'Discontinued',
+            url: '/nautilus-treadmills/',
+          },
+          {
+            title: 'Schwinn Treadmills',
+            description:
+              'Four folding treadmills, $699 to $1,099 (810, 815, SFT4.1, SFT4.3), the old 830, missing motor figures and a 1-year parts warranty.',
+            badge: 'From $699',
+            url: '/schwinn-treadmills/',
+          },
         ],
       },
       {
@@ -971,6 +1027,34 @@ export const SECTIONS: Section[] = [
               'The Waukesha slat-belt maker: the 4Front, Vive, Mercury and Curve ranges, prices, warranty, home power needs and buying used.',
             badge: 'Woodway',
             url: '/woodway-treadmills/',
+          },
+          {
+            title: 'TrueForm Treadmills',
+            description:
+              'Runner vs Trainer curved manual treadmills: prices, the shallow curve, warranty and cheaper rivals.',
+            badge: 'Brand guide',
+            url: '/trueform-treadmills/',
+          },
+          {
+            title: 'Freemotion Treadmills',
+            description:
+              'iFIT\'s commercial brand: the t8.9b, Reflex t10.9b and t22.9, the incline trainers, home-store prices and the 20-amp circuit.',
+            badge: 'Freemotion',
+            url: '/freemotion-treadmills/',
+          },
+          {
+            title: 'Cybex Treadmills',
+            description:
+              'Discontinued since Life Fitness absorbed the brand: the 770T and R Series, the old recalls and buying remanufactured.',
+            badge: 'Used only',
+            url: '/cybex-treadmills/',
+          },
+          {
+            title: 'Vision Fitness Treadmills',
+            description:
+              'One dealer-sold treadmill left, the light-commercial T600; the old T9200, T40 and T80 and the January 2026 recall.',
+            badge: 'Dealer only',
+            url: '/vision-fitness-treadmills/',
           },
         ],
       },
@@ -1052,6 +1136,104 @@ export const SECTIONS: Section[] = [
               'Tread Flex, Tread Vision and Tread+ Vision: delivered prices, All-Access, Just Run, the 2021 recalls and used buys.',
             badge: 'Peloton',
             url: '/peloton-tread/',
+          },
+          {
+            title: 'InMovement Treadmill Desk',
+            description:
+              'The maker of the Unsit: buying direct vs iMovR, the $3,215 bundle, and InMovement vs LifeSpan.',
+            badge: 'Desk',
+            url: '/inmovement-treadmill-desk/',
+          },
+          {
+            title: 'Zofdim Treadmills',
+            description:
+              'A brand we could not trace beyond its search volume: how to check its listings, and alternatives.',
+            badge: 'Marketplace',
+            url: '/zofdim-treadmills/',
+          },
+          {
+            title: 'XTERRA Treadmills',
+            description:
+              'Dyaco\'s budget brand: the TRX1200, TR75 and TR95H Hiker, the TR150\'s status, compare-at prices and short warranties.',
+            badge: 'XTERRA',
+            url: '/xterra-treadmills/',
+          },
+          {
+            title: 'Sunny Health & Fitness Treadmills',
+            description:
+              'Sunny\'s ~30 treadmills, pads and manual walkers: day-of prices, SF-T4400 vs SF-T4400SMART, peak-HP-only motors and a frame-heavy warranty.',
+            badge: 'Budget',
+            url: '/sunny-health-fitness-treadmills/',
+          },
+          {
+            title: 'ANCHEER Treadmills',
+            description:
+              'An Amazon-only walking-pad brand with no working treadmill site: conflicting listing figures, finding a manual, warranty via the seller.',
+            badge: 'Marketplace',
+            url: '/ancheer-treadmills/',
+          },
+          {
+            title: 'Yesoul Treadmills',
+            description:
+              'T3S Plus screen treadmill and the 30%-incline T5 Plus, Max and Ultra: day-of prices, 14/30-day trials, warranty, no required subscription.',
+            badge: 'Yesoul',
+            url: '/yesoul-treadmills/',
+          },
+          {
+            title: 'AJOOSOS 2-in-1 Treadmill',
+            description:
+              'A scooter brand\'s Amazon walking pad we could not verify: what the listing says, how to check it, and checked 2-in-1 alternatives.',
+            badge: 'Marketplace',
+            url: '/ajoosos-treadmills/',
+          },
+          {
+            title: 'UMAY Treadmills',
+            description:
+              'UMAY Fitness\'s SF20, U20F and L20: store prices, figures that disagree, a one-year warranty and possible ANCHEER hardware.',
+            badge: 'Budget',
+            url: '/umay-treadmills/',
+          },
+          {
+            title: 'FUNMILY Treadmills',
+            description:
+              'An Amazon-led brand whose pads carry 2.5 or 3.5 HP and 300–400 lb depending on the source: models, manuals and checks.',
+            badge: 'Marketplace',
+            url: '/funmily-treadmills/',
+          },
+          {
+            title: 'RHYTHM FUN Treadmills',
+            description:
+              'Manual-incline walking pads from $199.99: the 13% handle-bar pad, the discontinued AP01/AP02 and a likely YPOO link.',
+            badge: 'Marketplace',
+            url: '/rhythm-fun-treadmill/',
+          },
+          {
+            title: 'LifeSmart Treadmills',
+            description:
+              'The self-folding PowerTouch range: TM4500 discontinued, TM4000C, TM6500 at Costco, and a 1-year warranty.',
+            badge: 'PowerTouch',
+            url: '/lifesmart-treadmills/',
+          },
+          {
+            title: 'Centr Treadmills',
+            description:
+              'Chris Hemsworth\'s brand: the folding Runr and Runr-S and the $6,999 Centr x HYROX Perform Tread race treadmill.',
+            badge: 'Brand guide',
+            url: '/centr-treadmills/',
+          },
+          {
+            title: 'Tru Grit Treadmills',
+            description:
+              'The Grit Runner and Runner Elite curved manual treadmills: sled-push settings, dealer prices and what Tru Grit doesn\'t publish.',
+            badge: 'Brand guide',
+            url: '/tru-grit-treadmills/',
+          },
+          {
+            title: 'OMA Treadmills',
+            description:
+              'The folding brand sold on Amazon behind the 7200EB: what its figures say, where they conflict, and checked alternatives.',
+            badge: 'Marketplace',
+            url: '/oma-treadmills/',
           },
         ],
       },
@@ -1159,6 +1341,20 @@ export const SECTIONS: Section[] = [
             badge: 'Older model',
             url: '/nordictrack-exp-7i-treadmill/',
           },
+          {
+            title: 'NordicTrack X24 Treadmill Review',
+            description:
+              'The -6% to 40% incline trainer: speed caps at steep grades, ceiling height, iFIT cost, and X24 vs X16.',
+            badge: 'Incline',
+            url: '/nordictrack-x24-treadmill/',
+          },
+          {
+            title: 'NordicTrack C950i',
+            description:
+              'Discontinued: what is known about it, what iFIT\'s 2023 cut-off means, parts, buying used, and what replaced it.',
+            badge: 'Used only',
+            url: '/nordictrack-c950i-treadmill/',
+          },
         ],
       },
       {
@@ -1245,6 +1441,13 @@ export const SECTIONS: Section[] = [
               'The 2026 F85 on what Sole confirms, the conflicting older figures, and who should buy it.',
             badge: 'Sole',
             url: '/sole-f85-treadmill/',
+          },
+          {
+            title: 'Sole TT8 Treadmill Review',
+            description:
+              'Sole\'s non-folding decline model: the two versions, the shorter current warranty, and what to buy while it is sold out.',
+            badge: 'Sole',
+            url: '/sole-tt8-treadmill/',
           },
         ],
       },
@@ -1351,6 +1554,27 @@ export const SECTIONS: Section[] = [
               'What Redliro listings claim, where they disagree, and the return terms to read first.',
             badge: 'Walking pad',
             url: '/redliro-under-desk-treadmill/',
+          },
+          {
+            title: 'Horizon 7.8 AT Treadmill Review',
+            description:
+              'Horizon\'s 375 lb flagship: confirmed specs, the missing motor rating, and whether it beats the 7.4 AT.',
+            badge: 'Horizon',
+            url: '/horizon-7-8-at-treadmill/',
+          },
+          {
+            title: 'WalkingPad A1 Pro Review',
+            description:
+              'KingSmith\'s fold-in-half pad, still sold at $499: the 230 vs 300 lb versions, a three-way motor conflict, and whether the Z1 is the better buy.',
+            badge: 'Walking pad',
+            url: '/walkingpad-a1-pro-review/',
+          },
+          {
+            title: 'Horizon T202 Review',
+            description:
+              'The cheapest 60-inch Horizon: checked specs, the unrated motor, one-year parts cover, and T101 vs 7.0 AT.',
+            badge: 'Budget',
+            url: '/horizon-t202-treadmill/',
           },
         ],
       },
@@ -1470,6 +1694,48 @@ export const SECTIONS: Section[] = [
               "The CT550's steel-bearing sibling, and the three weight limits in the seller's own documents.",
             badge: 'Curved',
             url: '/sb-fitness-ct700-curved-treadmill/',
+          },
+          {
+            title: 'LifeSpan TX6-GlowUp Review',
+            description:
+              'The 20-inch, 400 lb desk treadmill checked against LifeSpan and independent sources, with its weight, step-up and motor conflicts.',
+            badge: 'Desk',
+            url: '/lifespan-tx6-under-desk-treadmill/',
+          },
+          {
+            title: 'Life Fitness Club Series+',
+            description:
+              'The current club-grade home model: SE4 vs SL consoles, the 15-amp outlet, and how it differs from the Platinum Club Series.',
+            badge: 'Life Fitness',
+            url: '/life-fitness-club-series-plus-treadmill/',
+          },
+          {
+            title: 'Bells of Steel Blitz Treadmill',
+            description:
+              'Steep-curve manual treadmill with six magnetic resistance levels and a 400 lb rating.',
+            badge: 'Review',
+            url: '/bells-of-steel-blitz-treadmill/',
+          },
+          {
+            title: 'Wahoo KICKR RUN',
+            description:
+              '$6,999.99 smart treadmill: RunFree, -3 to 15% grade, Zwift incline control, 250 lb limit.',
+            badge: 'Review',
+            url: '/wahoo-kickr-run-treadmill/',
+          },
+          {
+            title: 'Landice L7 Treadmill Review',
+            description:
+              'Every L7 configuration priced, how it differs from the L8, and what the L7 RTM rehab version adds.',
+            badge: 'Light commercial',
+            url: '/landice-l7-treadmill/',
+          },
+          {
+            title: 'Life Fitness 95T / 95Ti',
+            description:
+              'The discontinued Elevation Series 95T and older 95Ti bought remanufactured: consoles, prices and the 20-amp circuit.',
+            badge: 'Used only',
+            url: '/life-fitness-95t-treadmill/',
           },
         ],
       },
@@ -2134,6 +2400,13 @@ export const SECTIONS: Section[] = [
             badge: 'Vibration',
             url: '/best-treadmill-anti-vibration-pads/',
           },
+          {
+            title: 'Best Treadmill Laptop Holders',
+            description:
+              'Laptop boards, pole trays and phone clamps that strap to a treadmill, how to measure the rails, and when a standing desk is better.',
+            badge: 'Laptop holders',
+            url: '/best-treadmill-laptop-holders/',
+          },
         ],
       },
     ],
@@ -2580,6 +2853,13 @@ export const SECTIONS: Section[] = [
               'Finding a qualified technician through the manufacturer or independently, typical costs and red flags.',
             badge: 'Repair',
             url: '/treadmill-repair-near-me/',
+          },
+          {
+            title: 'Treadmill Parts: Where to Buy',
+            description:
+              'How to find your model and serial number, OEM against aftermarket, each brand\'s parts route, and when a part isn\'t worth buying.',
+            badge: 'Parts',
+            url: '/treadmill-parts/',
           },
         ],
       },

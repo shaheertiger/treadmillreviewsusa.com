@@ -625,6 +625,12 @@ export default {
       blurb: 'Machines whose consoles do everything without a monthly fee.',
       url: '/best-treadmills-without-subscriptions/',
     },
+    {
+      kicker: "Buying Used",
+      title: "Buying a Used Peloton Treadmill",
+      blurb: "The 2021 recalls, the activation fee, and fair used prices.",
+      url: '/used-peloton-tread/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">A Peloton treadmill makes sense for someone who already knows

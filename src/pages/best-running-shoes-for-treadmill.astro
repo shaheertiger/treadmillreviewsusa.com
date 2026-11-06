@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "brooks-ghost-18",
     name: "Brooks Ghost 18",
+    brand: "Brooks",
     category: "Neutral daily trainer",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0FP79W5FR?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "asics-novablast-6",
     name: "ASICS Novablast 6",
+    brand: "ASICS",
     category: "Neutral cushioned trainer",
     badge: "Best for Hot Rooms",
     amazonUrl: "https://www.amazon.com/dp/B0H2NP59W3?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "new-balance-1080-v15",
     name: "New Balance Fresh Foam X 1080 v15",
+    brand: "New",
     category: "Max-cushion neutral trainer",
     badge: "Best for Long Runs",
     amazonUrl: "https://www.amazon.com/dp/B0F4MDCB2X?tag=sktiger-20&linkCode=ll1",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "nike-pegasus-42",
     name: "Nike Pegasus 42",
+    brand: "Nike",
     category: "Neutral daily trainer",
     badge: "Best for Wider Feet",
     amazonUrl: "https://www.amazon.com/dp/B0FRN9QWPD?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "saucony-endorphin-speed-5",
     name: "Saucony Endorphin Speed 5",
+    brand: "Saucony",
     category: "Lighter tempo trainer (nylon plate)",
     badge: "Best for Tempo Runs",
     amazonUrl: "https://www.amazon.com/dp/B0DJWPPTPQ?tag=sktiger-20&linkCode=ll1",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "brooks-adrenaline-gts-25",
     name: "Brooks Adrenaline GTS 25",
+    brand: "Brooks",
     category: "Stability daily trainer",
     badge: "Best Stability Shoe",
     amazonUrl: "https://www.amazon.com/dp/B0DM3DL995?tag=sktiger-20&linkCode=ll1",
@@ -167,6 +173,7 @@ const PRODUCTS = [
   {
     id: "hoka-bondi-9",
     name: "HOKA Bondi 9",
+    brand: "HOKA",
     category: "Max-cushion shoe for walking and easy running",
     badge: "Best for Incline Walking",
     amazonUrl: "https://www.amazon.com/dp/B0D5FVDNS6?tag=sktiger-20&linkCode=ll1",
@@ -269,7 +276,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -519,8 +526,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">

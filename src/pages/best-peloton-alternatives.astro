@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "schwinn-ic4",
     name: "Schwinn IC4",
+    brand: "Schwinn",
     category: "Indoor cycling bike, works with the Peloton App",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Schwinn+IC4+Indoor+Cycling+Bike&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "bowflex-c6",
     name: "BowFlex C6 Bike",
+    brand: "BowFlex",
     category: "Indoor cycling bike, the IC4 under the BowFlex name",
     badge: "Same Bike, Other Badge",
     amazonUrl: "https://www.amazon.com/s?k=BowFlex+C6+Bike&tag=sktiger-20",
@@ -61,6 +63,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-x24",
     name: "NordicTrack X24 Bike",
+    brand: "NordicTrack",
     category: "Incline/decline screen bike with iFIT",
     badge: "Best Bike+ Alternative",
     amazonUrl: "https://www.amazon.com/dp/B0DK7QZQBM?tag=sktiger-20&linkCode=ll1",
@@ -87,6 +90,7 @@ const PRODUCTS = [
   {
     id: "keiser-m3i",
     name: "Keiser M3i Indoor Bike",
+    brand: "Keiser",
     category: "Studio-grade indoor bike, no platform of its own",
     badge: "Best Premium",
     amazonUrl: "https://www.amazon.com/dp/B00LSX8AA0?tag=sktiger-20&linkCode=ll1",
@@ -113,11 +117,12 @@ const PRODUCTS = [
   {
     id: "wahoo-kickr-bike-pro",
     name: "Wahoo KICKR BIKE PRO",
+    brand: "Wahoo",
     category: "Smart bike with grade simulation and virtual shifting",
     badge: "Best for Cyclists",
-    amazonUrl: "https://www.amazon.com/dp/B0FLQFKSDH?tag=sktiger-20&linkCode=ll1",
+    amazonUrl: "https://www.amazon.com/s?k=Wahoo+KICKR+BIKE+PRO&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
-    image: {"url":"https://m.media-amazon.com/images/I/31uknYLob8L._SL500_.jpg","width":500,"height":313},
+    image: null,
     reviewUrl: null,
     priceRange: "$3,999.99",
     priceBounds: {"low":3999.99,"high":3999.99},
@@ -139,6 +144,7 @@ const PRODUCTS = [
   {
     id: "wahoo-kickr-core-2",
     name: "Wahoo KICKR CORE 2",
+    brand: "Wahoo",
     category: "Direct-drive smart trainer for your own bike",
     badge: "Best If You Own a Road Bike",
     amazonUrl: "https://www.amazon.com/s?k=Wahoo+KICKR+CORE+2+Smart+Trainer&tag=sktiger-20",
@@ -240,7 +246,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -494,8 +500,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
@@ -837,6 +843,11 @@ const schema = {
               <span class="text-xs font-black uppercase tracking-widest text-green-600">Cardio</span>
               <p class="font-bold text-gray-900 mt-2 mb-1">Best Cardio Machines for Home</p>
               <p class="text-sm text-gray-500 leading-relaxed">Bikes, rowers, ellipticals and air bikes compared for space, noise and price.</p>
+            </a>
+            <a href="/used-peloton-tread/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Buying Used</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Buying a Used Peloton Treadmill</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The 2021 recalls, the activation fee, and fair used prices.</p>
             </a>
           </div>
         </div>

@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "schwinn-290-recumbent-bike",
     name: "Schwinn 290 Recumbent Bike",
+    brand: "Schwinn",
     category: "Best Recumbent Bike Overall",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0BHTR1FJ4?tag=sktiger-20&linkCode=ll1",
@@ -38,6 +39,7 @@ const PRODUCTS = [
   {
     id: "horizon-5-0r-recumbent-bike",
     name: "Horizon 5.0R Recumbent Bike",
+    brand: "Horizon",
     category: "Best for Fine Resistance Control",
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+Fitness+5.0R+Recumbent+Bike&tag=sktiger-20",
@@ -64,6 +66,7 @@ const PRODUCTS = [
   {
     id: "schwinn-230-recumbent-bike",
     name: "Schwinn 230 Recumbent Bike",
+    brand: "Schwinn",
     category: "Best Mid-Priced Recumbent",
     badge: "Best Under $600",
     amazonUrl: "https://www.amazon.com/dp/B087ZJK977?tag=sktiger-20&linkCode=ll1",
@@ -90,6 +93,7 @@ const PRODUCTS = [
   {
     id: "marcy-me-709",
     name: "Marcy ME-709 Recumbent Exercise Bike",
+    brand: "Marcy",
     category: "Best Budget Recumbent Bike",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/dp/B002KV1MJU?tag=sktiger-20&linkCode=ll1",
@@ -116,6 +120,7 @@ const PRODUCTS = [
   {
     id: "sunny-health-fitness-sf-rb422003",
     name: "Sunny Health & Fitness SF-RB422003 Recumbent Bike",
+    brand: "Sunny Health & Fitness",
     category: "Best Recumbent Bike for Small Spaces",
     badge: "Best Compact",
     amazonUrl: "https://www.amazon.com/s?k=Sunny+Health+Fitness+SF-RB422003+Recumbent+Bike&tag=sktiger-20",
@@ -218,7 +223,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -488,8 +493,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">

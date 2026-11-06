@@ -144,7 +144,7 @@ export default {
           <p>
             Every brand on this page was checked against the CPSC recall database by recall title,
             manufacturer and recall description on 19 October 2026. The only leg press recall in the
-            database is Cybex's December 2012 recall of its model 16110 plate-loaded leg press, a
+            database is <a href="/cybex-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Cybex</a>'s December 2012 recall of its model 16110 plate-loaded leg press, a
             commercial machine sold to gyms, worth knowing if you are shopping for used commercial
             equipment. Titan had a 2018 recall alert for weight-lifting safety straps (an accessory
             for its racks, not a leg press). We found no recalls for Body-Solid, Powerline, Bells of

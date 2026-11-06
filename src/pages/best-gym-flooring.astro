@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "rubber-cal-eco-sport-tiles",
     name: "Rubber-Cal Eco-Sport 3/4 in. Interlocking Rubber Tiles",
+    brand: "Rubber-Cal",
     category: "Thick interlocking rubber tiles for free weights",
     badge: "Best for Free Weights",
     amazonUrl: "https://www.amazon.com/dp/B0B985LV3G?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "rubber-cal-maxx-tuff",
     name: "Rubber-Cal Maxx-Tuff Heavy-Duty Mat (4 x 6 ft, 1/2 in.)",
+    brand: "Rubber-Cal",
     category: "Heavy rubber sheet for a lifting zone",
     badge: "Best Value Rubber",
     amazonUrl: "https://www.amazon.com/s?k=Rubber-Cal+Maxx-Tuff+Heavy+Duty+Mat+4+x+6&tag=sktiger-20",
@@ -63,9 +65,10 @@ const PRODUCTS = [
   {
     id: "rubber-cal-elephant-bark",
     name: "Rubber-Cal Elephant Bark Rubber Flooring Roll",
+    brand: "Rubber-Cal",
     category: "Rolled rubber for a whole room",
     badge: "Best Rolled Rubber",
-    amazonUrl: "https://www.amazon.com/dp/B004LSUS2W?tag=sktiger-20&linkCode=ll1",
+    amazonUrl: "https://www.amazon.com/dp/B004LT0E0W?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
     image: {"url":"https://m.media-amazon.com/images/I/51hQzXcV1iL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "prosourcefit-puzzle-mat-half-inch",
     name: "ProsourceFit Exercise Puzzle Mat (1/2 in.)",
+    brand: "ProsourceFit",
     category: "Budget EVA foam tiles for bodyweight work",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/dp/B07YMZZ12Q?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "prosourcefit-weaved-puzzle-mat-1-inch",
     name: "ProsourceFit Weaved Pattern Extra Thick Puzzle Mat (1 in.)",
+    brand: "ProsourceFit",
     category: "Thick EVA foam for floor work and kids’ spaces",
     badge: "Thickest Cushioning",
     amazonUrl: "https://www.amazon.com/dp/B07GZL38J3?tag=sktiger-20&linkCode=ll1",
@@ -225,7 +230,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -488,8 +493,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">

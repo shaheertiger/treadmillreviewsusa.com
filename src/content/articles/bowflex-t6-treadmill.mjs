@@ -635,6 +635,12 @@ export default {
       blurb: 'Discontinued. The checked specs, a warranty that does not transfer, what to test on a used one, and the T9 or T16 instead.',
       url: '/bowflex-treadmill-10/',
     },
+    {
+      kicker: "Brand Guide",
+      title: "Nautilus Treadmills",
+      blurb: "No longer sold: the T614, T616 and T618 figures, the 2022 recall with no remedy left, and the Bowflex.",
+      url: '/nautilus-treadmills/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Buy the Bowflex T6 at or near its sale price if you walk,

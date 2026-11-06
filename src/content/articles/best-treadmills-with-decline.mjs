@@ -307,7 +307,7 @@ export default {
             <strong>-3% is the road-runner's range.</strong> It is roughly the gradient of a gently
             falling road, and most downhill sections of road races sit around it. At -3% you can
             run at normal training pace, the change in muscle loading is clear, and it is easy to
-            build up from. The NordicTrack Commercial series and the KICKR RUN all stop here, and
+            build up from. The NordicTrack Commercial series and the <a href="/wahoo-kickr-run-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>KICKR RUN</a> all stop here, and
             for most runners preparing for a road race it is enough.
           </p>
           <p>

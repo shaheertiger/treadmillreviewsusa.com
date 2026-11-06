@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "titan-linear-hack-squat",
     name: "Titan Fitness Plate-Loaded Linear Hack Squat Machine",
+    brand: "Titan Fitness",
     category: "Dedicated 35-degree plate-loaded hack squat",
     badge: "Best Dedicated Hack Squat",
     amazonUrl: "https://www.amazon.com/s?k=Titan+Fitness+Plate-Loaded+Linear+Hack+Squat+Machine&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "titan-leg-press-hack-squat",
     name: "Titan Fitness Leg Press Hack Squat Machine",
+    brand: "Titan Fitness",
     category: "45-degree plate-loaded hack squat and leg press combo",
     badge: "Best Combo",
     amazonUrl: "https://www.amazon.com/s?k=Titan+Fitness+Leg+Press+Hack+Squat+Machine+Plate-Loaded&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "force-usa-compact-hack-squat",
     name: "Force USA Compact Leg Press & Hack Squat (2027 Model)",
+    brand: "Force USA",
     category: "Compact 30-degree hack squat, leg press and calf raise",
     badge: "Best for Small Spaces",
     amazonUrl: "https://www.amazon.com/s?k=leg+press+hack+squat+machine&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "body-solid-glph1100b-hack",
     name: "Body-Solid GLPH1100B Leg Press & Hack Squat",
+    brand: "Body-Solid",
     category: "Plate-loaded hack squat and leg press combo, light commercial",
     badge: "Best Pads",
     amazonUrl: "https://www.amazon.com/s?k=Body-Solid+GLPH1100+Leg+Press+Hack+Squat&tag=sktiger-20",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "bells-of-steel-pandemonium",
     name: "Bells of Steel Pandemonium Squat",
+    brand: "Bells of Steel",
     category: "Pendulum squat with calf press and Viking press",
     badge: "Best Pendulum",
     amazonUrl: "https://www.amazon.com/s?k=pendulum+squat+machine&tag=sktiger-20",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "steelflex-plhp",
     name: "Steelflex PLHP Plate Loaded Hack Press",
+    brand: "Steelflex",
     category: "Commercial-style plate-loaded hack press (lever)",
     badge: "Most Commercial",
     amazonUrl: "https://www.amazon.com/s?k=hack+squat+machine&tag=sktiger-20",
@@ -243,7 +249,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -515,8 +521,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
@@ -598,7 +604,7 @@ const schema = {
             Every brand on this page was checked against the CPSC recall database by recall title,
             manufacturer and recall description on 19 October 2026. There is no recall in the
             database under "hack squat". Titan had a 2018 recall alert for weight-lifting safety
-            straps, a rack accessory, and the database's one leg press recall is Cybex's 2012 recall of
+            straps, a rack accessory, and the database's one leg press recall is <a href="/cybex-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Cybex</a>'s 2012 recall of
             its commercial model 16110 plate-loaded leg press. We found no recalls for Bells of
             Steel, Body-Solid, Force USA or Steelflex.
           </p>

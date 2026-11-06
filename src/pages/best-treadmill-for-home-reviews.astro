@@ -1,5 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import ProductImage from "../components/ProductImage.astro";
+import { productImage } from "../data/product-images";
 import TrustBadge from "../components/TrustBadge.astro";
 import SocialProof from "../components/SocialProof.astro";
 
@@ -16,7 +18,6 @@ const PRODUCTS = [
     badge: "Best Overall",
     amazonUrl:
       "https://www.amazon.com/dp/B0D5YKF4SK?tag=sktiger-20",
-    image: {"url":"https://m.media-amazon.com/images/I/31BAhBBSPSL._SL500_.jpg","width":500,"height":500},
     pros: [
       "14-inch rotating HD touchscreen with crisp iFit streaming",
       "Wide -3% to 15% incline/decline range for real hill simulation",
@@ -89,7 +90,6 @@ const PRODUCTS = [
     badge: "Best Large Touchscreen",
     amazonUrl:
       "https://www.amazon.com/dp/B08FLWMWSF?tag=sktiger-20&linkCode=ll1",
-    image: {"url":"https://m.media-amazon.com/images/I/311KePCXsOL._SL500_.jpg","width":500,"height":500},
     pros: [
       "Massive 22-inch rotating touchscreen doubles as a strength-training display",
       "JRNY app adapts workouts automatically to your fitness level over time",
@@ -115,7 +115,6 @@ const PRODUCTS = [
     badge: "Best for Interactive Training",
     amazonUrl:
       "https://www.amazon.com/dp/B08N3NL32C?tag=sktiger-20&linkCode=ll1",
-    image: {"url":"https://m.media-amazon.com/images/I/31M4plx9X1L._SL500_.jpg","width":500,"height":446},
     pros: [
       "Aggressive pricing for a full-size, iFit-compatible treadmill",
       "-3% to 12% incline/decline range rivals pricier machines",
@@ -139,7 +138,6 @@ const PRODUCTS = [
     category: "Entry-Level Home Cardio",
     badge: "Best Budget-Friendly Full-Size",
     amazonUrl: "https://www.amazon.com/dp/B07WZXVP3H?tag=sktiger-20&linkCode=ll1",
-    image: {"url":"https://m.media-amazon.com/images/I/41q5bpFisiL._SL500_.jpg","width":500,"height":500},
     pros: [
       "Among the lowest prices for a full-size folding treadmill",
       "Simple, intuitive console with almost no learning curve",
@@ -273,6 +271,7 @@ const schema = {
     ...PRODUCTS.map((product) => ({
       "@type": "Product",
       name: product.name,
+      image: productImage(product.name)?.url,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
     })),
@@ -554,6 +553,7 @@ const schema = {
               </span>
             </div>
             <div class="p-6">
+              <ProductImage name={product.name} href={product.amazonUrl} />
               {product.editorialScore && (<p class="text-sm text-gray-600 mt-1 mb-0">Our editorial score: <strong class="text-gray-900">{product.editorialScore}</strong>/5</p>)}
               <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
@@ -584,12 +584,6 @@ const schema = {
                 <p class="text-xs font-black uppercase tracking-widest text-gray-500 mb-1">The Bottom Line</p>
                 <p class="text-gray-900 font-bold">{product.bottomLine}</p>
               </div>
-              {/* amazon-image */}
-              {product.image && (
-                <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white rounded-xl mb-6 no-underline">
-                  <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                </a>
-              )}
               <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="mt-6 block bg-[#FF5A1F] hover:bg-[#E64F16] text-white text-center py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
                 Check Price on Amazon &rarr;
               </a>

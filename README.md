@@ -867,6 +867,107 @@ Found while writing and not yet changed:
 - The UREVO SpaceWalk 3S appears to have a successor (SpaceWalk 5L) that older roundups do not
   mention.
 
+### Buying guides (2026-11-05): twenty pages from a Semrush pull
+
+Twenty buyer's guides chosen from a Semrush US export of 30,003 treadmill keywords (2026-11-05)
+for volume against keyword difficulty (every head term KD 30 or under) where no existing page
+owned the intent. The keyword-to-page mapping is in
+`research/keyword-batches/2026-11-05-buying-guides.csv`. Wayfair house-brand terms (17 Stories,
+Astoria Grand, August Grove), "bowflex t6/t16", "walkingpad z1", manual/non-motorized terms and
+"heavy duty treadmill" were skipped because `/wayfair-treadmills/`, the model reviews,
+`/best-manual-treadmills/` and `/best-treadmills-for-heavy-people/` already own them.
+
+- `/reviews/`: LifeSpan TX6-GlowUp (74,000/mo), Life Fitness Club Series+ (SE4/SL consoles),
+  Bells of Steel Blitz, Wahoo KICKR RUN, Horizon 7.8 AT, Sole TT8 (sold out on Sole's store on
+  the day; no price on the card), NordicTrack X24
+- `/brands/`: TrueForm, Freemotion and Cybex (Commercial brands; Cybex sells no new treadmills,
+  so the page is written around remanufactured machines); InMovement, Zofdim, XTERRA, Sunny
+  Health & Fitness, ANCHEER and Yesoul (Cross-shopped alternatives). Zofdim could not be traced
+  beyond its search volume, and the page says so and lists checked alternatives.
+- `/best/`: best mini treadmills (Folding & small spaces), best treadmills with screens
+  (Specialty & smart)
+- `/price/` Where to buy: Sam's Club (samsclub.com blocked automated reads, so its cards carry no
+  prices and the note says so) and buying a used Peloton Tread (the 2021 recalls and the $95
+  used-equipment activation fee)
+
+Same rules as earlier batches: figures checked against the maker or an official retailer plus an
+independent source on 5 November 2026, conflicts stated and kept off cards, CPSC searched per
+brand, no testing claims or ratings, affiliate disclosure in each note. Every page carries product
+cards: 74 Amazon buttons, all tagged `sktiger-20` with `rel="sponsored nofollow noopener"`, 19 of
+them `/dp/` links. Fifteen dealer-only or direct-sold products (TrueForm, Freemotion, Cybex, Bells
+of Steel Blitz, Wahoo KICKR RUN, InMovement, the retailer-only NordicTrack Commercial LE, used
+Peloton Treads) were added to `amazon-fallbacks.json`, so their buttons say "Shop Similar". That
+also moved the TrueForm cards on `/best-curved-treadmills/` and the KICKR RUN card on
+`/best-treadmills-for-zwift/` onto category searches. Interlink phrases "tx6", "horizon 7.8 at" and
+"treadmill with a screen" moved to the new pages; pages the autolinker could not reach got Related
+Guides cards on sibling pages, so every new page has at least three inbound links.
+
+Found while writing and not yet changed:
+- Prices: `/lifespan-treadmills/` TX6 $1,499 (LifeSpan: $1,399); `/best-treadmills-for-zwift/`
+  KICKR RUN "around $6,500–$7,000" (Wahoo: $6,999.99); Sole C80 $2,399.99 against $2,200–$2,400 on
+  `/best-curved-treadmills/`; Sole F80 $1,599.99 against $1,499.99 on `/sole-f80-treadmill/`;
+  Bowflex T16 $1,999, not $1,899.
+- Stale models: the XTERRA TRX3500 and TR150 were not on XTERRA's US site but are presented as
+  current on `/best-folding-treadmill-reviews/`, `/folding-treadmills/`, `/best-treadmills-for-home/`
+  and the Bowflex Max Trainer pages; the Sunny SF-T7515SMART showed sold out but is current on
+  `/best-budget-treadmills/`, `/best-folding-treadmill-reviews/`, `/best-treadmill-under-1000-reviews/`
+  and `/folding-treadmills/`; `/life-fitness/` treats the discontinued Platinum Club Series as
+  current and omits the new Atmos Home Edition; `/nordictrack-x22i-incline-trainer-treadmill/` does
+  not say the X22i is no longer listed.
+- Specs: `/best-walking-pads-for-heavy-people/` gives the TX6 0.7 in. and 98.5 lb with no conflict
+  note (LifeSpan's dealer: 88 lb, 3 HP); `/best-curved-treadmills/` still calls the TrueForm Runner's
+  figures conflicting (sources now agree on 54 x 17 in. and 350 lb); Sunny lists the SF-T1407SMART at
+  330 lb (site says 300); Sole's site shows the F85 at 3.5 HP and 350 lb; `/imovr-unsit-treadmill-desk/`
+  says only iMovR sells the Unsit (InMovement now sells it direct; both say 400 lb).
+- The WalkingPad Z1 has three ASINs in circulation (B0H2YYZTL8, B0H6WN93Z7, B0H6WZVWCT).
+
+### Buying guides, second batch (2026-11-05): twenty more pages
+
+Twenty more buyer's guides from the same Semrush export, re-scanned against the site after the first
+batch merged (`research/keyword-batches/2026-11-05-buying-guides-2.csv`). Every head term is KD 30
+or under; terms already owned (treadmill desks, Wayfair house brands, used treadmills, lubricant,
+manual and curved treadmills, heavy-duty and 400 lb capacity, Woodway 4Front) were left to their
+pages.
+
+- `/reviews/`: WalkingPad A1 Pro (still sold, $499), Horizon T202, Landice L7 (with the L8 and L7
+  RTM), NordicTrack C950i (discontinued; iFIT's April 2023 cut-off), Life Fitness 95T/95Ti
+  (remanufactured only)
+- `/brands/`: Nautilus (no treadmill sold today; the T616/T618 recall has no remedy left and the
+  CPSC says to discard them, so neither is carded), Schwinn, Vision Fitness (one dealer-sold model;
+  home models in JHT's January 2026 power-cord recall), LifeSmart, Centr, Tru Grit (its site now
+  redirects to a domain sale), and five marketplace brands: AJOOSOS (a scooter brand with no
+  treadmill on its own store), UMAY, FUNMILY, RHYTHM FUN and OMA
+- `/price/` Where to buy: Rogue Fitness (eight Woodway, TrueForm and STEPR treadmills; Rogue does
+  not sell the AssaultRunner)
+- `/best/`: dog treadmills for small dogs; `/guides/` Accessories: treadmill laptop holders;
+  `/maintenance/` Repairs: treadmill parts (model and serial numbers, OEM vs aftermarket, each
+  brand's parts route)
+
+Same rules as the first batch. 105 Amazon links (buttons and product photos), all tagged
+`sktiger-20` and `rel="sponsored nofollow noopener"`, 34 of them `/dp/`. Eighteen dealer-only
+products (Landice, Rogue's Woodway and STEPR machines, Centr, Tru Grit Runner Elite, Life Fitness
+95T/95Ti, Vision T600, LifeSmart TM6500, NordicTrack C950i, Nautilus T614, Dog Runner Tracks) were
+added to `amazon-fallbacks.json`. Interlink phrases "horizon t202", "landice l7" and "landice l8"
+moved to the new model pages.
+
+**JSON-LD brand fix.** `build-articles.mjs` published the first word of a product's name as its
+brand, so RHYTHM FUN, Sunny Health & Fitness, Life Fitness, Bells of Steel and REP Fitness cards said
+"RHYTHM", "Sunny", "Life", "Bells" and "REP", and generic parts said "100%", "Universal" or
+"Treadmill". A spec can now set `brand`; otherwise a known multi-word brand prefix
+(`MULTIWORD_BRANDS`) is used, and generic names (`GENERIC_FIRST_WORDS`) publish no brand at all.
+Every spec page was regenerated.
+
+Found while writing and not yet changed:
+- `/best-treadmill-under-1000-reviews/` calls the Schwinn 810 non-folding (Schwinn says it folds).
+- `/bowflex-t9-treadmill/` gives $1,399–$1,799 (Bowflex showed $1,499 on sale).
+- `/best-quiet-walking-pads/` prices the WalkingPad A1 Pro at $529–$699 (WalkingPad: $499).
+- `/best-dog-treadmills/`: the GoPet PR720F is no longer listed at Canine Athletes;
+  `/best-dog-treadmills-for-large-dogs/`: Dog Runner Tracks is sold out there.
+- `amazon-fallbacks.json` keeps an entry for "Tru Grit Runner Curved Manual Treadmill", which also
+  has a verified ASIN; the ASIN wins, so the fallback is unused.
+- Life Fitness's US catalogue marks the Elevation Series discontinued while its business-only
+  Facility Shop lists one at $16,999.
+
 ### Sole F80 and F85
 
 Both were shipped first as `dataPending` editorial drafts because their published figures conflict

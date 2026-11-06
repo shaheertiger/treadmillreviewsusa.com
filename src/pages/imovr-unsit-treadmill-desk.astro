@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "imovr-unsit-lander",
     name: "iMovR Unsit Treadmill with Lander Standing Desk",
+    brand: "iMovR",
     category: "Office Treadmill Desk Set (Unsit + Lander)",
     badge: "All-Day Walking",
     amazonUrl: "https://www.amazon.com/s?k=treadmill+desk&tag=sktiger-20",
@@ -115,7 +116,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -324,8 +325,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
@@ -377,7 +378,7 @@ const schema = {
           <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. What the Unsit Treadmill Desk Bundle Actually Is</h2>
 <p>
             iMovR has sold treadmill desks for more than a decade. It used to make its own treadmill,
-            the ThermoTread GT, which it has discontinued; the Unsit, made by InMovement, replaced it.
+            the ThermoTread GT, which it has discontinued; the Unsit, made by <a href="/inmovement-treadmill-desk/" class="text-[#0F62FE] font-medium" data-autolink>InMovement</a>, replaced it.
             InMovement builds the treadmill and handles its warranty service, technical support and
             returns; iMovR sells it, and sells the desks it goes under.
           </p>

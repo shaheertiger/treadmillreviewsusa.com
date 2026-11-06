@@ -1,5 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import ProductImage from "../components/ProductImage.astro";
+import { productImage } from "../data/product-images";
 import TrustBadge from "../components/TrustBadge.astro";
 import SocialProof from "../components/SocialProof.astro";
 
@@ -63,7 +65,6 @@ const PRODUCTS = [
     category: "Best for Stability and Support",
     badge: "Most Stable",
     amazonUrl: "https://www.amazon.com/dp/B006BE6HW4?tag=sktiger-20",
-    image: {"url":"https://m.media-amazon.com/images/I/41xQfD1DGZL._SL500_.jpg","width":500,"height":500},
     reviewUrl: "/life-fitness-t3-treadmill/",
     priceRange: "$3,199-$3,999",
     specs: "full-length rails · 400 lb capacity · flat handrail controls",
@@ -89,7 +90,6 @@ const PRODUCTS = [
     category: "Best for Two Walkers",
     badge: "Best for Couples",
     amazonUrl: "https://www.amazon.com/dp/B0HFSZR19W?tag=sktiger-20&linkCode=ll1",
-    image: {"url":"https://m.media-amazon.com/images/I/31qNRVPVU1L._SL500_.jpg","width":500,"height":500},
     reviewUrl: "/sole-f65-treadmill/",
     priceRange: "$1,199-$1,399",
     specs: "long side rails · 325 lb capacity · large-digit LED",
@@ -209,6 +209,7 @@ const schema = {
     ...PRODUCTS.map((product) => ({
       "@type": "Product",
       name: product.name,
+      image: productImage(product.name)?.url,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
     })),
@@ -465,6 +466,7 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  <ProductImage name={product.name} href={product.amazonUrl} />
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     {product.editorialScore && (<p class="text-sm text-gray-600 mt-1 mb-0">Our editorial score: <strong class="text-gray-900">{product.editorialScore}</strong>/5</p>)}
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
@@ -492,12 +494,6 @@ const schema = {
                   <div class="border-t border-gray-100 pt-4">
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
-                      {/* amazon-image */}
-                      {product.image && (
-                        <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white rounded-xl mb-6 no-underline">
-                          <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                        </a>
-                      )}
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
                         Check Price on Amazon &rarr;
                       </a>

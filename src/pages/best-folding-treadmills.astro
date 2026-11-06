@@ -1,5 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import ProductImage from "../components/ProductImage.astro";
+import { productImage } from "../data/product-images";
 import TrustBadge from "../components/TrustBadge.astro";
 import SocialProof from "../components/SocialProof.astro";
 
@@ -39,7 +41,6 @@ const PRODUCTS = [
     category: "Folding Interactive Treadmill",
     badge: "Best for Tall Runners",
     amazonUrl: "https://www.amazon.com/dp/B08FLWMWSF?tag=sktiger-20&linkCode=ll1",
-    image: {"url":"https://m.media-amazon.com/images/I/311KePCXsOL._SL500_.jpg","width":500,"height":500},
     pros: [
       "Full 20 x 60-inch deck gives taller runners real stride room",
       "400-lb weight capacity is among the highest of any folding treadmill",
@@ -223,6 +224,7 @@ const schema = {
     ...PRODUCTS.map((product) => ({
       "@type": "Product",
       name: product.name,
+      image: productImage(product.name)?.url,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
     })),
@@ -641,6 +643,7 @@ const schema = {
                 </span>
               </div>
               <div class="p-6">
+                <ProductImage name={product.name} href={product.amazonUrl} />
                 {product.editorialScore && (<p class="text-sm text-gray-600 mt-1 mb-0">Our editorial score: <strong class="text-gray-900">{product.editorialScore}</strong>/5</p>)}
                 <p
                   class="text-gray-700 leading-relaxed mb-6"
@@ -704,12 +707,6 @@ const schema = {
                   </p>
                   <p class="text-gray-900 font-bold">{product.bottomLine}</p>
                 </div>
-                {/* amazon-image */}
-                {product.image && (
-                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white rounded-xl mb-6 no-underline">
-                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                  </a>
-                )}
                 <a
                   href={product.amazonUrl}
                   target="_blank"

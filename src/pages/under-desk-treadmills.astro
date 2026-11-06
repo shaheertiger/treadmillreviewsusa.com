@@ -1,5 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import ProductImage from "../components/ProductImage.astro";
+import { productImage } from "../data/product-images";
 import TrustBadge from "../components/TrustBadge.astro";
 import SocialProof from "../components/SocialProof.astro";
 
@@ -15,7 +17,6 @@ const PRODUCTS = [
     category: "Best Overall Walking Pad",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0D2ZVB8DJ?tag=sktiger-20",
-    image: {"url":"https://m.media-amazon.com/images/I/31EwlWLi0KL._SL500_.jpg","width":500,"height":500},
     priceRange: "$399-$549",
     specs: "0.5-3.7 mph · 47 in. belt · folds in half · 220 lb capacity",
     pros: [
@@ -64,7 +65,6 @@ const PRODUCTS = [
     category: "Best for Small Spaces",
     badge: "Smallest Footprint",
     amazonUrl: "https://www.amazon.com/dp/B08R37V99Q?tag=sktiger-20&linkCode=ll1",
-    image: {"url":"https://m.media-amazon.com/images/I/41EBwO9lKOL._SL500_.jpg","width":500,"height":500},
     priceRange: "$449-$599",
     specs: "0.6-3.1 mph · 34 in. belt · 5% fixed incline · 220 lb capacity",
     pros: [
@@ -208,6 +208,7 @@ const schema = {
     ...PRODUCTS.map((product) => ({
       "@type": "Product",
       name: product.name,
+      image: productImage(product.name)?.url,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
     })),
@@ -440,6 +441,7 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  <ProductImage name={product.name} href={product.amazonUrl} />
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     {product.editorialScore && (<p class="text-sm text-gray-600 mt-1 mb-0">Our editorial score: <strong class="text-gray-900">{product.editorialScore}</strong>/5</p>)}
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
@@ -466,12 +468,6 @@ const schema = {
                   </div>
                   <div class="border-t border-gray-100 pt-4">
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
-                    {/* amazon-image */}
-                    {product.image && (
-                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white rounded-xl mb-6 no-underline">
-                        <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
-                      </a>
-                    )}
                     <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm inline-block">
                       Check Price on Amazon &rarr;
                     </a>

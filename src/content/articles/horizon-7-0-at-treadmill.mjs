@@ -514,6 +514,18 @@ export default {
       blurb: 'How sale events work and how to tell a real discount from a reference price.',
       url: '/treadmill-black-friday-deals/',
     },
+    {
+      kicker: "Model Review",
+      title: "Horizon 7.8 AT Treadmill",
+      blurb: "Horizon's 375 lb flagship: confirmed specs and whether it beats the 7.4 AT.",
+      url: '/horizon-7-8-at-treadmill/',
+    },
+    {
+      kicker: "Model Review",
+      title: "Horizon T202 Review",
+      blurb: "The cheapest 60-inch Horizon: checked specs, the unrated motor, one-year parts cover, and T101 vs 7.0 AT.",
+      url: '/horizon-t202-treadmill/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">The Horizon Fitness 7.0 AT is the Horizon to buy for most people</strong>:

@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "echelon-stride-6",
     name: "Echelon Stride-6",
+    brand: "Echelon",
     category: "Auto-Fold Treadmill, Bring Your Own Tablet",
     badge: "Lowest-Cost Stride",
     amazonUrl: "https://www.amazon.com/s?k=Echelon+Stride-6+Treadmill&tag=sktiger-20",
@@ -38,6 +39,7 @@ const PRODUCTS = [
   {
     id: "echelon-stride-6s",
     name: "Echelon Stride-6s",
+    brand: "Echelon",
     category: "Auto-Fold Treadmill With a 10 in. Touchscreen",
     badge: "Auto-Fold With Screen",
     amazonUrl: "https://www.amazon.com/s?k=Echelon+Stride-6s+Treadmill&tag=sktiger-20",
@@ -64,6 +66,7 @@ const PRODUCTS = [
   {
     id: "echelon-stride-8s",
     name: "Echelon Stride-8s",
+    brand: "Echelon",
     category: "Largest-Screen Stride, Fold-Flat With Tools",
     badge: "Big-Screen Pick",
     amazonUrl: "https://www.amazon.com/s?k=Echelon+Stride-8s+Treadmill&tag=sktiger-20",
@@ -175,7 +178,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -499,8 +502,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
@@ -888,6 +891,11 @@ const schema = {
               <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Legacy</span>
               <p class="font-bold text-gray-900 mt-2 mb-1">LIVESTRONG Treadmills</p>
               <p class="text-sm text-gray-500 leading-relaxed">A discontinued Johnson Health Tech line: the LS10.0T, buying used, parts and what replaced it.</p>
+            </a>
+            <a href="/yesoul-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Yesoul Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The T3S Plus screen treadmill and the 30%-incline T5 range.</p>
             </a>
           </div>
         </div>

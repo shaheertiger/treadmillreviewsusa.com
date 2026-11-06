@@ -11,17 +11,12 @@
  * A product is only recorded when matchScore() accepts the Amazon title, so a
  * rejected product simply keeps its tagged search link. The full outcome, including
  * the top rejected title, goes to scripts/amazon/asin-report.json for review.
- *
- * Every stored ASIN is then re-read with GetItems to refresh its title and primary
- * image (the image URL is Amazon's own, hotlinked from m.media-amazon.com, never
- * downloaded). An ASIN Amazon no longer returns is dropped, so its card falls back to
- * a tagged search instead of a dead listing. Amazon expects API data to be refreshed,
- * so re-run this regularly.
+ * The listing's primary image is stored with the ASIN; fetch-images.mjs refreshes it.
  */
 import { writeFileSync } from 'fs';
 import { join } from 'path';
-import { GetItemsRequestContent, SearchItemsRequestContent } from 'amazon-creators-api';
-import { ASIN_PATH, allProducts, client, loadAsins, matchScore } from './lib.mjs';
+import { SearchItemsRequestContent } from 'amazon-creators-api';
+import { ASIN_PATH, allProducts, client, imageOf, loadAsins, matchScore } from './lib.mjs';
 
 const MIN_COVERAGE = 0.75;
 const all = process.argv.includes('--all');
@@ -62,53 +57,8 @@ for (const [name, files] of products) {
   await new Promise((r) => setTimeout(r, 1100));
 }
 
-// Refresh title and image for every stored ASIN, ten per GetItems call.
-const byAsin = new Map();
-for (const [name, rec] of Object.entries(asins)) {
-  if (!byAsin.has(rec.asin)) byAsin.set(rec.asin, []);
-  byAsin.get(rec.asin).push(name);
-}
-const ids = [...byAsin.keys()];
-let gone = 0;
-for (let j = 0; j < ids.length; j += 10) {
-  const batch = ids.slice(j, j + 10);
-  try {
-    const req = new GetItemsRequestContent();
-    req.partnerTag = process.env.AMAZON_CREATORS_PARTNER_TAG;
-    req.itemIds = batch;
-    req.resources = ['itemInfo.title', 'images.primary.large'];
-    const res = await api.getItems(marketplace, req);
-    const found = new Map((res?.itemsResult?.items ?? []).map((it) => [it.asin, it]));
-    for (const asin of batch) {
-      const it = found.get(asin);
-      for (const name of byAsin.get(asin)) {
-        if (!it) {
-          delete asins[name];
-          gone++;
-          report.push({ name, status: 'gone', asin, files: [...(products.get(name) ?? [])] });
-          continue;
-        }
-        const image = imageOf(it);
-        asins[name] = { ...asins[name], title: it.itemInfo?.title?.displayValue ?? asins[name].title, checked: today };
-        if (image) asins[name].image = image;
-        else delete asins[name].image;
-      }
-    }
-  } catch (err) {
-    report.push({ status: 'error', phase: 'getItems', asins: batch, error: err?.message ?? String(err) });
-  }
-  await new Promise((r) => setTimeout(r, 1100));
-}
-console.log(`Refreshed ${ids.length} ASINs; ${gone} product(s) dropped as no longer on Amazon.`);
-
 const sorted = Object.fromEntries(Object.entries(asins).sort(([a], [b]) => a.localeCompare(b)));
 writeFileSync(ASIN_PATH, JSON.stringify(sorted, null, 2) + '\n');
 writeFileSync(join(import.meta.dirname, 'asin-report.json'), JSON.stringify(report, null, 2) + '\n');
 const count = (s) => report.filter((r) => r.status === s).length;
-console.log(`Images on ${Object.values(sorted).filter((r) => r.image).length}/${Object.keys(sorted).length} stored products.`);
-console.log(`Done. gone=${count('gone')} accepted=${count('accepted')} rejected=${count('rejected')} errors=${count('error')} stored=${Object.keys(sorted).length}/${products.size}`);
-
-function imageOf(item) {
-  const img = item?.images?.primary?.large;
-  return img?.url ? { url: img.url, width: img.width, height: img.height } : undefined;
-}
+console.log(`Done. accepted=${count('accepted')} rejected=${count('rejected')} errors=${count('error')} stored=${Object.keys(sorted).length}/${products.size}`);

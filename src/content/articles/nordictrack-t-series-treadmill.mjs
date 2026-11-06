@@ -599,6 +599,12 @@ export default {
       blurb: 'An older model no longer in the US range: what it was, buying one used, and the current equivalents.',
       url: '/nordictrack-exp-7i-treadmill/',
     },
+    {
+      kicker: "Model Review",
+      title: "NordicTrack C950i",
+      blurb: "Discontinued: what is known about it, what iFIT's 2023 cut-off means, parts, buying used, and what.",
+      url: '/nordictrack-c950i-treadmill/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">The NordicTrack T Series treadmill line is a sound choice for walkers

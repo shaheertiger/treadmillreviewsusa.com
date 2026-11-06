@@ -1,0 +1,25 @@
+---
+/**
+ * The product's Amazon listing photo, linked to its affiliate URL. Renders nothing for a
+ * product without a verified ASIN. Data: src/data/product-asins.json, written by
+ * scripts/amazon/fetch-asins.mjs and scripts/amazon/fetch-images.mjs.
+ */
+import { productImage } from '../data/product-images';
+
+interface Props {
+  name: string;
+  href: string;
+  class?: string;
+}
+
+const { name, href, class: extra = 'mb-6' } = Astro.props;
+const image = productImage(name);
+---
+
+{
+  image && (
+    <a href={href} target="_blank" rel="sponsored nofollow noopener" class={`not-prose block rounded-xl border border-gray-100 bg-white p-4 ${extra}`}>
+      <img src={image.url} alt={name} width={image.width} height={image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+    </a>
+  )
+}

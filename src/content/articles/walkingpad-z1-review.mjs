@@ -607,6 +607,12 @@ export default {
       blurb: 'Which walking pad figures to trust, and which to discount.',
       url: '/walking-pad-buying-guide/',
     },
+    {
+      kicker: "Model Review",
+      title: "WalkingPad A1 Pro Review",
+      blurb: "KingSmith's fold-in-half pad, still sold at $499: the 230 vs 300 lb versions, a three-way motor conflict.",
+      url: '/walkingpad-a1-pro-review/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">The WalkingPad Z1 is a good-value, fold-in-half walking pad for

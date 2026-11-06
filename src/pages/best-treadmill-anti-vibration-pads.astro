@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "isolate-it-sorbothane-4x4",
     name: "Isolate It! Sorbothane Vibration Isolation Square Pad (4 x 4 in.)",
+    brand: "Isolate",
     category: "Sorbothane isolation pad for treadmill feet",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0F5SRFWC1?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "isolate-it-sorbothane-fabric-pads",
     name: "Isolate It! Sorbothane Reinforced Heavy Duty Square Pad (2.5 x 2.5 in.)",
+    brand: "Isolate",
     category: "Fabric-faced Sorbothane pad that can be repositioned",
     badge: "Best for Machines You Move",
     amazonUrl: "https://www.amazon.com/dp/B00K32IGN8?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "diversitech-mp-4c",
     name: "DiversiTech MP-4C Rubber/Cork Anti-Vibration Pad",
+    brand: "DiversiTech",
     category: "Budget rubber-and-cork equipment pad",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/s?k=rubber+cork+anti+vibration+pad&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "flooringinc-premium-rubber-3-8",
     name: "FlooringInc Premium Rubber Mat (4 x 6 ft, 3/8 in.)",
+    brand: "FlooringInc",
     category: "Dense rubber mat in place of pads",
     badge: "Best Mat Alternative",
     amazonUrl: "https://www.amazon.com/s?k=rubber+gym+floor+mat+4x6+3%2F8+inch&tag=sktiger-20",
@@ -114,6 +118,7 @@ const PRODUCTS = [
   {
     id: "tractor-supply-stall-mat",
     name: "Tractor Supply Thick Rubber Stall Mat (4 x 6 ft, 3/4 in.)",
+    brand: "Tractor Supply",
     category: "Heavy rubber mat for garages and basements",
     badge: "Best Heavy Mat",
     amazonUrl: "https://www.amazon.com/s?k=rubber+stall+mat+4x6+3%2F4+inch&tag=sktiger-20",
@@ -216,7 +221,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -472,8 +477,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">

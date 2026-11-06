@@ -41,6 +41,9 @@ const withTag = (url) => {
   return `${clean}${clean.includes('?') ? '&' : '?'}tag=sktiger-20`;
 };
 const amazonUrl = (p) => withTag(rawAmazonUrl(p));
+// The Amazon listing's own photo, only for products with a verified ASIN: a "Shop Similar"
+// fallback or an unmatched search link has no listing that is certainly this product.
+const productImage = (p) => ASINS[p.name]?.image ?? null;
 const rawAmazonUrl = (p) =>
   ASINS[p.name]
     ? `https://www.amazon.com/dp/${ASINS[p.name].asin}?tag=sktiger-20&linkCode=ll1`
@@ -54,6 +57,23 @@ const priceBounds = (range) => {
   const nums = [...String(range ?? '').matchAll(/\$\s?([\d,]+(?:\.\d+)?)/g)].map((m) => Number(m[1].replace(/,/g, '')));
   return nums.length ? { low: Math.min(...nums), high: Math.max(...nums) } : null;
 };
+
+// Product JSON-LD brand: a spec's own `brand`, else a known multi-word brand the name starts
+// with, else the first word ("Sunny Health & Fitness SF-T4400" is not a product of "Sunny").
+const MULTIWORD_BRANDS = [
+  'Sunny Health & Fitness', 'Life Fitness', 'REP Fitness', 'Titan Fitness', 'Matrix Fitness',
+  'Bells of Steel', 'RHYTHM FUN', 'Fringe Sport', 'Force USA', 'PRx Performance', 'Star Trac',
+  'True Fitness', 'TRUE Fitness', 'Spirit Fitness', 'Horizon Fitness', 'Sole Fitness',
+  'Vision Fitness', 'Tru Grit', 'Dog Trotter', 'Dog Runner', 'CAP Barbell', 'Tractor Supply',
+  'Ultimate Body Press', 'Bells of Steel USA',
+];
+// Generic product names ("100% Silicone Spray", "Universal Safety Key") have no brand to publish.
+const GENERIC_FIRST_WORDS = new Set(['100%', 'Universal', 'Replacement', 'Treadmill', 'Generic', 'Silicone', 'Manufacturer-Specified', 'Isopropyl']);
+const brandOf = (p) =>
+  p.brand ??
+  (GENERIC_FIRST_WORDS.has(p.name.split(' ')[0]) ? '' : null) ??
+  MULTIWORD_BRANDS.filter((b) => p.name === b || p.name.startsWith(b + ' ')).sort((a, b) => b.length - a.length)[0] ??
+  p.name.split(' ')[0];
 
 const esc = (s) => String(s).replace(/\\/g, '\\\\').replace(/`/g, '\\`').replace(/\$\{/g, '\\${');
 const jsStr = (s) => JSON.stringify(String(s));
@@ -75,11 +95,12 @@ ${products
     (p) => `  {
     id: ${jsStr(p.id)},
     name: ${jsStr(p.name)},
+    brand: ${jsStr(brandOf(p))},
     category: ${jsStr(p.category)},
     badge: ${jsStr(p.badge)},
     amazonUrl: ${jsStr(amazonUrl(p))},
     amazonLabel: ${jsStr(isFallback(p) ? 'Shop Similar on Amazon' : 'Check Price on Amazon')},
-    image: ${ASINS[p.name]?.image ? JSON.stringify(ASINS[p.name].image) : 'null'},
+    image: ${productImage(p) ? JSON.stringify(productImage(p)) : 'null'},
     reviewUrl: ${p.reviewUrl ? jsStr(p.reviewUrl) : 'null'},
     priceRange: ${jsStr(p.priceRange)},
     priceBounds: ${JSON.stringify(priceBounds(p.priceRange))},
@@ -127,7 +148,7 @@ function schemaBlock(spec) {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -214,8 +235,8 @@ const PRODUCT_CARDS = `      <!-- Product cards -->
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">

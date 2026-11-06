@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "schwinn-ic4",
     name: "Schwinn IC4",
+    brand: "Schwinn",
     category: "Best Exercise Bike Overall",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Schwinn+IC4+Indoor+Cycling+Bike&tag=sktiger-20",
@@ -38,6 +39,7 @@ const PRODUCTS = [
   {
     id: "bowflex-c6",
     name: "BowFlex C6 Bike",
+    brand: "BowFlex",
     category: "The Same Bike Under Another Name",
     badge: "IC4 Alternative",
     amazonUrl: "https://www.amazon.com/s?k=BowFlex+C6+Bike&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "keiser-m3i-indoor-bike",
     name: "Keiser M3i Indoor Bike",
+    brand: "Keiser",
     category: "Best Premium Stationary Bike",
     badge: "Best Premium",
     amazonUrl: "https://www.amazon.com/dp/B00LSX8AA0?tag=sktiger-20&linkCode=ll1",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "schwinn-ic3",
     name: "Schwinn IC3",
+    brand: "Schwinn",
     category: "Best Bike Without Apps or an Outlet",
     badge: "Best No-Frills",
     amazonUrl: "https://www.amazon.com/s?k=Schwinn+IC3+Indoor+Cycling+Bike&tag=sktiger-20",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "yosuda-indoor-cycling-bike",
     name: "YOSUDA Indoor Cycling Bike",
+    brand: "YOSUDA",
     category: "Best Budget Exercise Bike",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/s?k=YOSUDA+Indoor+Cycling+Bike+35+lb+Flywheel&tag=sktiger-20",
@@ -225,7 +230,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -496,8 +501,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">

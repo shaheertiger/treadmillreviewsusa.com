@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "prx-profile-pro",
     name: "PRx Performance Profile PRO Squat Rack",
+    brand: "PRx Performance",
     category: "Fold-up wall-mounted 3x3 rack",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B09BDHXJRN?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "rep-pr-4100",
     name: "REP Fitness PR-4100 Folding Squat Rack",
+    brand: "REP Fitness",
     category: "Fold-in wall-mounted 3x3 rack",
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/s?k=folding+squat+rack&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "titan-t-3-folding",
     name: "Titan Fitness T-3 Series Folding Power Rack",
+    brand: "Titan Fitness",
     category: "Fold-in wall-mounted 2x3 rack",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/dp/B09C7JWYHQ?tag=sktiger-20&linkCode=ll1",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "rogue-rml-3w",
     name: "Rogue RML-3W Fold Back Wall Mount Rack",
+    brand: "Rogue",
     category: "Fold-in wall-mounted 3x3 rack, made in the USA",
     badge: "Best Made in USA",
     amazonUrl: "https://www.amazon.com/s?k=folding+squat+rack&tag=sktiger-20",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "prx-folding-full-cage",
     name: "PRx Performance Profile Folding Full Cage",
+    brand: "PRx Performance",
     category: "Folding four-post power cage, wall-mounted",
     badge: "Best Folding Cage",
     amazonUrl: "https://www.amazon.com/s?k=folding+power+cage&tag=sktiger-20",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "bells-of-steel-folding-rack",
     name: "Bells of Steel Folding Rack 2.3\" x 2.3\"",
+    brand: "Bells of Steel",
     category: "Budget fold-in wall-mounted rack",
     badge: "Best for Lighter Lifting",
     amazonUrl: "https://www.amazon.com/s?k=folding+squat+rack&tag=sktiger-20",
@@ -243,7 +249,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -518,8 +524,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">

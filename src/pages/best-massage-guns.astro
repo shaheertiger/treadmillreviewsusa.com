@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "theragun-prime-6th-gen",
     name: "Theragun Prime (6th Gen)",
+    brand: "Theragun",
     category: "Full-size 16 mm massage gun",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0FKCJNHWB?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "hyperice-hypervolt-3",
     name: "Hyperice Hypervolt 3",
+    brand: "Hyperice",
     category: "Full-size massage gun with heated head",
     badge: "Best Quiet Full-Size Gun",
     amazonUrl: "https://www.amazon.com/s?k=Hyperice+Hypervolt+3+Massage+Gun&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "ekrin-b37",
     name: "Ekrin Athletics B37",
+    brand: "Ekrin",
     category: "Full-size massage gun with lifetime warranty",
     badge: "Best Warranty",
     amazonUrl: "https://www.amazon.com/s?k=Ekrin+B37+Massage+Gun&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "theragun-mini-3rd-gen",
     name: "Theragun Mini (3rd Gen)",
+    brand: "Theragun",
     category: "Compact massage gun",
     badge: "Best Compact",
     amazonUrl: "https://www.amazon.com/s?k=Theragun+Mini+3rd+Gen&tag=sktiger-20",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "theragun-relief",
     name: "Theragun Relief",
+    brand: "Theragun",
     category: "Gentle everyday massage gun",
     badge: "Best Gentle Gun",
     amazonUrl: "https://www.amazon.com/dp/B0CNS894RH?tag=sktiger-20&linkCode=ll1",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "renpho-active-plus",
     name: "RENPHO Active+ Massage Gun",
+    brand: "RENPHO",
     category: "Budget massage gun",
     badge: "Best Under $100",
     amazonUrl: "https://www.amazon.com/s?k=RENPHO+Active+Massage+Gun&tag=sktiger-20",
@@ -243,7 +249,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -513,8 +519,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">

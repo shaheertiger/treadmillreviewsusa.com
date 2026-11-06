@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "bodylastics-pro-series",
     name: "Bodylastics Pro Series 5-Band Resistance Band Set",
+    brand: "Bodylastics",
     category: "Stackable tube bands with handles, ankle straps and door anchor",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Bodylastics+Pro+Series+Resistance+Band+Set+5+Bands&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "whatafit-resistance-bands",
     name: "Whatafit Resistance Bands Set",
+    brand: "Whatafit",
     category: "Budget stackable tube bands with handles",
     badge: "Best Budget Tube Set",
     amazonUrl: "https://www.amazon.com/dp/B07DWSPQQY?tag=sktiger-20&linkCode=ll1",
@@ -63,11 +65,12 @@ const PRODUCTS = [
   {
     id: "serious-steel-pull-up-bands",
     name: "Serious Steel Fitness 41\" Assisted Pull-Up Bands",
+    brand: "Serious",
     category: "Layered latex loop power bands, sold singly or in sets",
     badge: "Best Power Bands",
-    amazonUrl: "https://www.amazon.com/dp/B0064NSJEQ?tag=sktiger-20&linkCode=ll1",
+    amazonUrl: "https://www.amazon.com/dp/B01LY5WJZ0?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
-    image: {"url":"https://m.media-amazon.com/images/I/41AnnhT-iVL._SL500_.jpg","width":500,"height":318},
+    image: {"url":"https://m.media-amazon.com/images/I/51MvqcZ-X2L._SL500_.jpg","width":500,"height":412},
     reviewUrl: null,
     priceRange: "$12–$70 per band",
     priceBounds: {"low":12,"high":70},
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "fit-simplify-loop-bands",
     name: "Fit Simplify Resistance Loop Exercise Bands, Set of 5",
+    brand: "Fit",
     category: "Mini latex loop bands",
     badge: "Best Mini Bands",
     amazonUrl: "https://www.amazon.com/dp/B01AVDVHTI?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "sling-shot-hip-circle",
     name: "Sling Shot Hip Circle",
+    brand: "Sling",
     category: "Fabric hip and glute band",
     badge: "Best Fabric Hip Band",
     amazonUrl: "https://www.amazon.com/dp/B00T4JFQQ6?tag=sktiger-20&linkCode=ll1",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "theraband-non-latex-beginner",
     name: "TheraBand Non-Latex Resistance Bands Set, Beginner",
+    brand: "TheraBand",
     category: "Flat therapy bands, latex-free",
     badge: "Best Latex-Free",
     amazonUrl: "https://www.amazon.com/s?k=THERABAND+Resistance+Bands+Set+Beginner+Yellow+Red+Green+Non-Latex&tag=sktiger-20",
@@ -243,7 +249,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -502,8 +508,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">

@@ -403,6 +403,18 @@ export default {
       blurb: 'Most of the used saving with a warranty attached.',
       url: '/refurbished-treadmills/',
     },
+    {
+      kicker: "Buying Used",
+      title: "Buying a Used Peloton Treadmill",
+      blurb: "The 2021 recalls, the activation fee, and fair used prices.",
+      url: '/used-peloton-tread/',
+    },
+    {
+      kicker: "Model Review",
+      title: "NordicTrack C950i",
+      blurb: "Discontinued: what is known about it, what iFIT's 2023 cut-off means, parts, buying used, and what.",
+      url: '/nordictrack-c950i-treadmill/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Used treadmills are easy to find and worth buying carefully.</strong>

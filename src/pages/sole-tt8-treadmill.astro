@@ -1,0 +1,920 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "Sole TT8 Treadmill Review (2026): Specs, Decline and Stock";
+const description =
+  "The Sole TT8 treadmill checked against Sole’s US listing and independent reviews: 4.0 HP, 22 x 60 in. deck, decline, 400 lb, 15.6 in. touchscreen. Why it is sold out, the older versions, and the alternatives.";
+
+const PRODUCTS = [
+  {
+    id: "sole-tt8",
+    name: "Sole TT8",
+    brand: "Sole",
+    category: "Non-Folding Light-Commercial Treadmill With Decline",
+    badge: "Sold Out at Sole",
+    amazonUrl: "https://www.amazon.com/s?k=Sole+TT8+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    image: null,
+    reviewUrl: null,
+    priceRange: "Sold out at Sole (5 Nov 2026)",
+    priceBounds: null,
+    specs: "22 x 60 in. deck · 4.0 HP · 0.5-12 mph · 15 incline / 6 decline levels · 400 lb capacity · 15.6 in. touchscreen · non-folding",
+    pros: [
+      "The only current Sole with decline, from two incline motors",
+      "A 400 lb rating, 4.0 HP motor and 3-inch rollers on a non-folding frame",
+      "A reversible, pre-waxed deck that Sole says needs no lubrication",
+      "A 15.6-inch touchscreen with built-in Wi-Fi and the free SOLE+ app, no subscription",
+    ],
+    cons: [
+      "Sold out on Sole’s US store on 5 November 2026, as it was in October",
+      "Three years on the deck, electronics and parts and one on labour, less than older versions carried",
+      "Does not fold; 319 lb and 81 by 38 inches",
+      "Few independent reviews of the current touchscreen version",
+    ],
+    bottomLine: "A sturdy, decline-capable treadmill for heavy users and serious runners, if you can get one. Do not pay over Sole’s $2,899.99 list, and check which version a third-party or used listing describes.",
+    description: "The current TT8 has a 22 by 60-inch running surface on a 25 mm reversible wax deck that Sole says needs no lubrication, a 2-ply 1.6 mm belt, 3-inch front and rear rollers, aluminium side rails and a 4.0 HP motor, with a speed range of 0.5 to 12 mph and power incline from -6 to 15 levels driven by two motors. Maximum user weight is 400 lb. The console is a 15.6-inch 1920 by 1080 touchscreen with built-in Wi-Fi, the free SOLE+ app and Kinomap integration, Bluetooth FTMS output, Bluetooth audio and speakers, 10-watt wireless charging, cooling fans, pulse grips and quick speed and incline keys. It measures 81 by 38 by 66 inches, weighs 319 lb and does not fold. Sole’s warranty block gives lifetime on the frame and motor, three years each on the deck, electronics and wear parts and one year on labour. On 5 November 2026 Sole listed it at $2,899.99 and marked it sold out.",
+  },
+  {
+    id: "sole-f85-vs-tt8",
+    name: "Sole F85",
+    brand: "Sole",
+    category: "Folding Sole With the Same Screen and Deck Size",
+    badge: "In Stock Alternative",
+    amazonUrl: "https://www.amazon.com/s?k=Sole+F85+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    image: null,
+    reviewUrl: null,
+    priceRange: "$2,199.99 at Sole (5 Nov 2026)",
+    priceBounds: {"low":2199.99,"high":2199.99},
+    specs: "22 x 60 in. deck · 3.5 HP · 0.5-12 mph · 0-15 incline levels · 350 lb capacity · 15.6 in. touchscreen · folding",
+    pros: [
+      "The same 22 by 60-inch running surface and 15.6-inch touchscreen as the TT8",
+      "Folds, and was $700 below the TT8’s list price on the day",
+      "The same lifetime frame and motor cover and SOLE+ app",
+    ],
+    cons: [
+      "No decline, a 3.5 HP motor and a 350 lb rating",
+      "Sole’s warranty block lists 90 days on cosmetic items and one year on labour",
+      "Earlier F85 versions carried different figures",
+    ],
+    bottomLine: "The TT8 to buy if you do not need decline or the 400 lb rating, and want a machine you can order today.",
+    description: "The F85 is Sole’s top folding treadmill. On 5 November 2026 Sole’s US page listed it at $2,199.99 and in stock, with a 3.5 HP motor, a 22 by 60-inch running surface, 0.5 to 12 mph, 15 levels of power incline and no decline, a 350 lb weight capacity, a 15.6-inch touchscreen and the free SOLE+ app. Its warranty block gives lifetime on the frame and motor, three years each on the deck, electronics and wear parts, one year on labour and 90 days on cosmetic items. Our Sole F85 review sets out the versions sold under that name.",
+  },
+  {
+    id: "nordictrack-x16-vs-tt8",
+    name: "NordicTrack X16",
+    brand: "NordicTrack",
+    category: "Non-Folding Treadmill With Deeper Decline",
+    badge: "For Decline",
+    amazonUrl: "https://www.amazon.com/s?k=NordicTrack+X16+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    image: null,
+    reviewUrl: null,
+    priceRange: "$3,699 at NordicTrack (5 Nov 2026)",
+    priceBounds: {"low":3699,"high":3699},
+    specs: "22 x 60 in. deck · 4.25 CHP · 0-12 mph · -6% to 40% incline · 400 lb capacity · 16 in. touchscreen · non-folding",
+    pros: [
+      "Decline to -6% and incline to 40%, far beyond the TT8",
+      "The same 400 lb rating and deck size, with a lifetime motor warranty",
+      "In stock at NordicTrack on the day we checked",
+    ],
+    cons: [
+      "Most of the screen’s features need a paid iFIT membership",
+      "Two years on parts and one on labour",
+      "A 13.66-inch step-up height and a steep deck need a tall ceiling",
+    ],
+    bottomLine: "The non-folding alternative if decline is the reason you wanted the TT8, and you are happy to pay for iFIT.",
+    description: "The X16 is NordicTrack’s smaller-screened incline trainer. On 5 November 2026 NordicTrack’s checkout page listed it at $3,699 and in stock, with a 22 by 60-inch belt, a 4.25 CHP motor, 0 to 12 mph, incline from -6% to 40%, a 400 lb maximum user weight, a 16-inch pivoting touchscreen and a 13.66-inch step-up height. The included warranty is ten years on the frame, two on parts and one on labour, with a lifetime motor warranty. iFIT Pro is needed for full content and features. Our NordicTrack X24 review covers the same machine with a larger screen.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Reviews", item: "https://www.treadmillreviewsusa.com/reviews/" },
+        { "@type": "ListItem", position: 3, name: "Sole TT8 Treadmill", item: "https://www.treadmillreviewsusa.com/sole-tt8-treadmill/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Is the Sole TT8 treadmill good?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "On its published figures, yes, for heavy users and runners who want decline. Sole lists a 4.0 HP motor, a 22 by 60-inch deck, 12 mph, 15 incline and 6 decline levels, a 400 lb rating, 3-inch rollers and a lifetime frame and motor warranty. Independent coverage of the current touchscreen version is thin, and we have not tested it.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is the Sole TT8 discontinued?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sole has not said so. Its US store still lists the TT8 at $2,899.99, but it was marked sold out on 5 November 2026, as it was on 13 October. We do not know when stock will return. If you need a treadmill now, the in-stock Sole F85 is the closest alternative.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What warranty does the Sole TT8 have?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sole’s warranty block for the current TT8 gives lifetime on the frame and motor, three years each on the deck, electronics and wear parts, and one year on labour. Older versions carried a lifetime deck, five years of parts and two of labour, so reviews describing those terms are out of date.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does the Sole TT8 have decline?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Sole lists the grade as -6 to 15 levels, driven by two incline motors, and it is the only current Sole treadmill with decline. For deeper incline with the same -6% decline, the NordicTrack X16 and X24 go to 40%.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Sole TT8 vs F85: what is the difference?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Both have a 22 by 60-inch running surface and a 15.6-inch touchscreen. The TT8 adds decline, a 4.0 HP motor against 3.5 HP and a 400 lb rating against 350 lb, but does not fold. On 5 November 2026 the F85 was $2,199.99 and in stock; the TT8 was listed at $2,899.99 and sold out.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does the Sole TT8 fold?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. It is a non-folding treadmill measuring 81 by 38 by 66 inches and weighing 319 lb. If you need to fold the machine away, the Sole F85 and F80 fold.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
+      datePublished: "2026-11-05",
+      dateModified: "2026-11-05",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+    ...PRODUCTS.map((product) => ({
+      "@type": "Product",
+      name: product.name,
+      description: product.description,
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
+      ...(product.image ? { image: product.image.url } : {}),
+      ...(product.priceBounds
+        ? {
+            offers: {
+              "@type": "AggregateOffer",
+              priceCurrency: "USD",
+              lowPrice: product.priceBounds.low,
+              highPrice: product.priceBounds.high,
+              url: product.amazonUrl,
+            },
+          }
+        : {}),
+    })),
+    {
+      "@type": "ItemList",
+      name: title,
+      numberOfItems: 3,
+      itemListElement: PRODUCTS.map((product, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: product.name,
+        url: `https://www.treadmillreviewsusa.com/sole-tt8-treadmill/#${product.id}`,
+      })),
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-11-05",
+    modifiedTime: "2026-11-05",
+    author: "Shaheer Ali Khan",
+    section: "Fitness Equipment",
+    tags: [
+      "sole tt8 treadmill",
+      "treadmill sole tt8",
+      "tt8 treadmill",
+      "sole tt8 treadmill review",
+      "sole tt8 vs f85",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "See the Verdict", link: "#who-should-buy" }}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-solett8treadmill" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-solett8treadmill)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Model Review
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated November 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          Sole TT8 <span class="text-[#5AA9FF]">Treadmill Review</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          The TT8 is Sole’s non-folding, light-commercial treadmill and the only current Sole with decline. It is also sold out on Sole’s US store, and has been for weeks. This review sets out what Sole and independent sources agree on, the two versions sold under the name, what the warranty really covers, and what to buy if you cannot wait.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#specifications" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            The Specifications
+          </a>
+          <a href="#alternatives" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            If It Stays Sold Out
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
+          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">November 5, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="1.6k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">What we checked, and what we have not done.</strong> On
+          5 November 2026 we read Sole’s US product page for the TT8 (soletreadmills.com), including
+          its specification table, warranty block, delivery options and comparison table, and
+          Sole’s pages for the F80 and F85. We cross-checked the figures against TreadmillReviews.com’s
+          review of the current touchscreen version (updated 5 November 2023, whose reviewer says
+          they had not run on the TT8), FitRated’s review of the earlier LCD version (updated
+          October 2022), a Canadian retailer’s listing and Sole’s own 2025 comparison article. Sole
+          and the current-version review agree on the 4.0 HP motor, 22 x 60 in. deck, 12 mph top
+          speed, 15 incline and 6 decline levels, 400 lb capacity, 81 x 38 x 66 in. size, 319 lb
+          weight, 15.6 in. touchscreen and the lifetime frame and motor, 1-year labour warranty.
+          Sole’s specification table leaves the labour row blank while its warranty block says one
+          year; we give one year, consistent with the rest of this site. Older-version figures that
+          differ are set out as such, not mixed in. We searched the US Consumer Product Safety
+          Commission’s recall database for Sole and found no Sole treadmill recall. We have not
+          tested the TT8, and none of these figures are our own measurements. Prices and stock are
+          those shown on soletreadmills.com and checkout.nordictrack.com on 5 November 2026 and
+          change often. We earn a commission if you buy through an Amazon link on this page; it does
+          not change what we say about the machine.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="max-w-3xl mx-auto px-4 pt-8">
+      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
+        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
+        <ul class="list-none m-0 p-0">
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Sold Out at Sole:</span>
+            <a href="#sole-tt8" class="font-bold text-gray-900 no-underline hover:underline">Sole TT8</a>
+            <a href="#sole-tt8" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">In Stock Alternative:</span>
+            <a href="#sole-f85-vs-tt8" class="font-bold text-gray-900 no-underline hover:underline">Sole F85</a>
+            <a href="#sole-f85-vs-tt8" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">For Decline:</span>
+            <a href="#nordictrack-x16-vs-tt8" class="font-bold text-gray-900 no-underline hover:underline">NordicTrack X16</a>
+            <a href="#nordictrack-x16-vs-tt8" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#short-answer" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Sole TT8 Treadmill: The Short Answer</a>
+          <a href="#specifications" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. Sole TT8 Specifications, Checked</a>
+          <a href="#versions" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. TT8 Versions</a>
+          <a href="#motor-deck-decline" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Motor, Deck, Rollers and Decline</a>
+          <a href="#console" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Console, SOLE+ App and Connectivity</a>
+          <a href="#owner-reports" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. What Independent Coverage Reports</a>
+          <a href="#space-delivery" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. Space, Power and Delivery</a>
+          <a href="#warranty" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. The Warranty, Read Properly</a>
+          <a href="#alternatives" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Alternatives</a>
+          <a href="#who-should-buy" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Who Should Buy the Sole TT8</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">11. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          The Sole TT8 treadmill is the heavy machine in Sole’s range: a non-folding frame, a 4.0 HP
+          motor, a 22 by 60-inch deck, incline and decline driven by two motors, a 400 lb rating and,
+          on the current version, a 15.6-inch touchscreen with the free SOLE+ app. It has a long
+          reputation as one of the sturdiest home treadmills near its price. Two things complicate
+          buying one in November 2026. Sole’s US store showed it sold out on 5 November, as it was
+          when we checked the range in October. And the TT8 has been sold in at least two quite
+          different versions, with different consoles and different warranties, so much of what you
+          will read about it describes a machine Sole no longer sells. This page separates the two
+          and tells you what to do while it is out of stock.
+        </p>
+
+        <div id="short-answer" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Sole TT8 Treadmill: The Short Answer</h2>
+<p>
+            <strong>The Sole TT8 treadmill is a sturdy, non-folding light-commercial treadmill with a
+            4.0 HP motor, a 22 by 60-inch deck, a 400 lb rating and decline, and it is the Sole to buy
+            if you want a heavy machine that will not move under you.</strong> On paper it is one of
+            the most solidly specified home treadmills under $3,000, and it is the only current Sole
+            that goes downhill.
+          </p>
+          <p>
+            The catch is availability. On 5 November 2026 Sole’s US store listed the TT8 at $2,899.99
+            and marked it sold out, as it was when we checked Sole’s range on 13 October. We do not
+            know when it will be back. If you need a treadmill now, the in-stock Sole F85 gives you the
+            same deck size and screen for $700 less, without decline or the 400 lb rating. If decline
+            is the point, the NordicTrack X16 has more of it.
+          </p>
+          <p>
+            Read anything about the TT8 with its version in mind. The current model has a 15.6-inch
+            touchscreen, three years on the deck and parts and one year on labour. Earlier ones had a
+            10.1-inch LCD, a lifetime deck warranty and two years of labour. The
+            <a href="#versions" class="text-[#0F62FE] font-medium">versions section</a> below sets out
+            the differences. We have not tested the TT8; what follows is what Sole’s figures and
+            independent coverage show.
+          </p>
+        </div>
+      </div>
+
+      <!-- Product cards -->
+      <div class="not-prose">
+        {
+          PRODUCTS.map((product, index) => (
+            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
+              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
+                  <div>
+                    <h3 class="text-white font-black text-xl leading-tight m-0">
+                      {index + 1}. {product.name}
+                    </h3>
+                    <p class="text-gray-400 text-xs">{product.category}</p>
+                  </div>
+                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                    {product.badge}
+                  </span>
+                </div>
+                <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                    </a>
+                  )}
+                  <div class="flex items-center gap-2 mb-4 flex-wrap">
+                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
+                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
+                  </div>
+                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
+                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
+                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
+                      <ul class="space-y-2">
+                        {product.pros.map((pro) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
+                      <ul class="space-y-2">
+                        {product.cons.map((con) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="border-t border-gray-100 pt-4">
+                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
+                    <div class="flex flex-wrap items-center gap-3">
+                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+                        {product.amazonLabel} &rarr;
+                      </a>
+                      {product.reviewUrl && (
+                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
+                          Read our full {product.name} review &rarr;
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="specifications" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. Sole TT8 Specifications, Checked</h2>
+<p>
+            The first part of this table lists figures that appear on Sole’s current US TT8 page and
+            in TreadmillReviews.com’s review of the touchscreen version. The second part lists what
+            only Sole gives, or what conflicts.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Specification</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Figure</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Running surface</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22 x 60 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sole and review</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Motor</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4.0 HP</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sole and review</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Speed</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0.5-12 mph</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sole and review</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Incline / decline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15 levels up, 6 down (Sole: "-6 to 15 levels")</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sole and review</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Maximum user weight</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">400 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sole and review</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rollers</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3 in. front and rear</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sole and review</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Size (L x W x H)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">81 x 38 x 66 in., non-folding</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sole and review</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Weight</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">319 lb (367 lb boxed)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sole and review</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Console</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15.6 in. touchscreen, Bluetooth, wireless charging</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sole and review</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Warranty</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime frame and motor; 1 yr labour</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sole and review</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Price and stock</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,899.99 list; sold out</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">soletreadmills.com, 5 November 2026</td></tr>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4 pt-6">Sole only, or conflicting</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4 pt-6">Figure</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4 pt-6">Status</th>
+              </tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Deck and belt</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">25 mm reversible wax deck; 2-ply 1.6 mm belt</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sole only</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Parts warranty</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3 yr deck, electronics and wear parts (Sole); "3-year parts" (review)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Consistent</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Labour</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1 yr in Sole’s warranty block; blank in its specification table</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Gap on Sole’s page</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Motor type</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not stated by Sole US; "DC" in the review; an "AC" TT8 sold in the UK</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Unconfirmed for the US model</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Chest strap</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not included (Sole, current); included on the older version</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Version difference</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Delivery</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Banner: free curbside shipping; product page: $99.99 standard curbside</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Conflict on Sole’s page</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            Two notes on reading it. Sole describes the TT8’s grade as "-6 to 15 levels" rather than
+            percent, and older reviews and our own earlier pages give it as -6% to 15%; on Sole
+            treadmills the two have usually matched, but Sole’s current page does not say so. And
+            this site has found Sole’s published figures to differ between generations of the same
+            model name before — the F80, F85 and <a href="/sole-f65-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>F65</a> all had that problem — so we have kept the
+            older TT8’s figures out of this table entirely and set them out separately below.
+          </p>
+        </div>
+
+        <div id="versions" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. Which Sole TT8? The Two Versions Sold Under the Name</h2>
+<p>
+            The TT8 has been on sale for many years, and the name has covered more than one machine.
+            The frame, motor rating, deck size, speed, incline, decline and capacity have stayed the
+            same across the versions we found. The console and the warranty have not.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Figure</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Current TT8 (Sole, 5 Nov 2026)</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Earlier TT8 (FitRated, Oct 2022)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Console</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15.6 in. touchscreen, Wi-Fi, wireless charging</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10.1 in. TFT LCD, USB port, 10 programs</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Chest strap</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not included</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Included</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Size / weight</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">81 x 38 x 66 in. / 319 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">80 x 36 x 58 in. / 322 lb</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Deck warranty</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3 years</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime (residential)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Electronics / parts</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3 years</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5 years (residential)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Labour</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1 year</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2 years (residential)</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            A Canadian retailer’s listing for the older machine gives the same residential terms —
+            lifetime frame, motor and deck, five years on parts and two on labour — and FitRated gave
+            shorter light-commercial terms alongside them. The current US page lists only one set. TreadmillReviews.com, describing the touchscreen
+            version, gives lifetime frame and motor, three years of parts and one of labour for
+            residential use, and lifetime frame and motor, two years of parts and one of labour for
+            light commercial use; Sole’s current page does not mention a commercial term.
+          </p>
+          <p>
+            The practical point is simple. Old reviews praising the TT8’s "lifetime deck" or "two
+            years of in-home labour" describe a warranty you will not get on a new one bought today.
+            If you are buying from a dealer, ask which version is in the box and get the warranty in
+            writing. If you are buying second-hand, the console tells you which you are looking at,
+            and you should assume no warranty transfers until Sole confirms otherwise.
+          </p>
+        </div>
+
+        <div id="motor-deck-decline" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Motor, Deck, Rollers and Decline</h2>
+<p>
+            Sole lists a 4.0 HP motor and does not say whether that is a continuous or peak rating.
+            TreadmillReviews.com calls it 4.0 HP DC and FitRated, on the older version, 4.0 CHP. Treat
+            it as a strong figure for a home treadmill, and remember that horsepower ratings are only
+            comparable when brands rate them the same way; our
+            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
+            explains continuous, peak and test ratings. Sole’s lifetime motor warranty says more about
+            the motor than the number does.
+          </p>
+          <p>
+            The rest of the drivetrain is where the TT8 earns its light-commercial label. Its 3-inch
+            front and rear rollers are larger than those on many folding home treadmills, and a
+            larger roller bends the belt less and spreads the load on its bearings. The
+            running surface is 22 by 60 inches, the width and length most runners should look for;
+            our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
+            covers why. Sole lists a 25 mm deck that can be flipped when one side wears, pre-coated
+            with wax so that, in Sole’s words, it needs no lubrication. That is a real saving in
+            maintenance, though the belt still needs to be kept clean, centred and correctly
+            tensioned. The 400 lb rating is the highest Sole sells and one of the highest under
+            $3,000; our
+            <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">treadmills for heavy people</a>
+            guide sets out why rated capacity matters.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Decline</h3>
+          <p>
+            Sole says the TT8 uses two incline motors to move the deck from 6 levels below flat to 15
+            above it. No other current Sole declines, and among home treadmills, decline is rare
+            enough to be the reason people choose this machine. It matters if you train for hilly
+            road races or trail races with long descents, because running downhill loads the quads
+            in a way flat running does not. Our guide to
+            <a href="/what-is-treadmill-decline-good-for/" class="text-[#0F62FE] font-medium">what treadmill decline is good for</a>
+            explains how to use it, and our
+            <a href="/best-treadmills-with-decline/" class="text-[#0F62FE] font-medium">decline roundup</a>
+            compares the TT8 with the NordicTrack machines that go to -6%.
+          </p>
+        </div>
+
+        <div id="console" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Console, SOLE+ App and Connectivity</h2>
+<p>
+            The current TT8 has a 15.6-inch, 1920 by 1080 touchscreen, the same size as the F85’s. Sole
+            lists built-in Wi-Fi so workouts can stream without tethering a phone, the free SOLE+ app
+            with no monthly subscription, Kinomap integration, Bluetooth FTMS and CSCS output for
+            third-party apps, Bluetooth audio and speakers, a tablet holder, cooling fans and a
+            10-watt wireless charging pad. Quick keys take speed to 2, 3, 4, 5, 7, 9 or 12 mph and
+            incline to 1, 3, 5, 7, 9, 12 or 15, and there are speed and elevation controls in the
+            handles, <a href="/treadmill-heart-rate-not-working/" class="text-[#0F62FE] font-medium" data-autolink>pulse grips</a> and heart-rate control. Sole’s page does not include a chest strap or
+            list named programs beyond these.
+          </p>
+          <p>
+            Sole’s page carries a safety note worth repeating: the wireless charging pad emits a
+            magnetic field, and anyone with an implanted medical device such as a pacemaker,
+            defibrillator or insulin pump should consult a doctor before using the machine.
+          </p>
+          <p>
+            Two points from the one review of this version are worth knowing, with the caveat that its
+            reviewer says they had not run on the TT8: that the current console has no USB charging
+            port, only the wireless pad, and that mirroring an Android phone to the screen needs an
+            extra app. Neither is a reason not to buy, but if you charge a phone or watch by cable
+            during long runs, check the console before your return window closes. If you would rather
+            have the machine change speed and incline for you during classes, that is what iFIT on a
+            NordicTrack does; our
+            <a href="/best-smart-treadmills/" class="text-[#0F62FE] font-medium">smart treadmill roundup</a>
+            sets out the trade-off.
+          </p>
+        </div>
+
+        <div id="owner-reports" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. What Independent Coverage Reports</h2>
+<p>
+            Independent coverage of the current touchscreen TT8 is thin: the one review we found that
+            describes it says its reviewer had not used the machine, and others we found describe the
+            older LCD version. So we separate what is consistent across versions from what is not.
+          </p>
+          <ul>
+            <li><strong>Built heavily.</strong> Every source describes the TT8 as sturdy and heavy, and the 319 to 322 lb weight and non-folding frame are consistent across versions.</li>
+            <li><strong>Does not fold.</strong> Both reviews list this as a drawback, along with a large footprint.</li>
+            <li><strong>Expensive for walkers.</strong> TreadmillReviews.com calls it pricey and possibly overkill for walkers and casual runners; FitRated, on the older version, makes the same point indirectly by recommending it for runners.</li>
+            <li><strong>No subscription needed.</strong> Both versions run on Sole’s free app and onboard controls.</li>
+            <li><strong>An underwhelming fan.</strong> TreadmillReviews.com says so for the current version; we did not find it repeated elsewhere, so it is a single report.</li>
+          </ul>
+          <p>
+            We did not find independent measured data — speed-change times, noise readings or incline
+            accuracy — for the current TT8. Until there is some, the strongest evidence about how it
+            runs is the long record of the earlier versions on the same frame, and the lifetime
+            frame and motor warranty. Our guide to
+            <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium">reading treadmill reviews</a>
+            explains how to weigh single reports.
+          </p>
+        </div>
+
+        <div id="space-delivery" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. Space, Power and Delivery</h2>
+<p>
+            The TT8 is 81 inches long, 38 wide and 66 tall, about 21.4 square feet, and it stays that
+            size because it does not fold. At 319 lb (367 lb boxed, in an 83 by 37 by 17-inch carton)
+            it is a machine you place once. Leave clear space behind the deck — our
+            <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium">space guide</a>
+            gives the margins — and add the deck height and a running bounce to the tallest user’s
+            height when you measure the ceiling. Sole’s US page does not give a step-up height.
+          </p>
+          <p>
+            Sole’s US page does not list electrical requirements for the TT8, so read the manual
+            before delivery. As with any high-powered treadmill, plan on a dedicated grounded circuit
+            and no extension lead; our
+            <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium">circuit guide</a>
+            explains why. Sole’s 2026 F80 manual excludes garage use from its warranty, so if a garage
+            is your plan, check what the TT8’s manual says before you order.
+          </p>
+          <p>
+            Delivery is by LTL freight. Sole’s page lists standard curbside delivery at $99.99 in 10 to
+            14 business days, room of choice for $200 more and room of choice with assembly for $350
+            more, while a banner on the same page advertises free curbside shipping on every Sole
+            machine. Ask which applies at checkout. Sole offers a 30-day satisfaction guarantee;
+            read its returns page before you rely on it, because returning a 367 lb freight item is
+            rarely free. Our
+            <a href="/how-to-move-a-treadmill/" class="text-[#0F62FE] font-medium">moving guide</a>
+            covers getting it into a basement.
+          </p>
+        </div>
+
+        <div id="warranty" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. The Warranty, Read Properly</h2>
+<p>
+            Sole’s warranty block for the current TT8 reads: lifetime frame, lifetime motor, three
+            years on the deck, three years on electronics, three years on wear items and parts, and
+            one year on labour. The same page’s specification table leaves the labour line blank.
+            We use one year, which matches the warranty block, the current-version review and Sole’s
+            labour term on Sole’s other current treadmills. Do not confuse it with the 90 days
+            shown on some Sole warranty tables: that is the cosmetic term, as Sole’s F80 and F85 pages
+            show.
+          </p>
+          <p>
+            One year of labour against lifetime frame and motor cover is the split to plan around.
+            From year two, a covered part may arrive free while the technician’s visit to fit it does
+            not, and on a non-folding 319 lb machine some jobs are not ones you will want to do
+            yourself. Sole sells SOLE CARE+ protection plans at checkout; on 5 November its page
+            showed two different sets of plan prices and coverage descriptions, so read the plan
+            terms carefully before you buy one. Our
+            <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a>
+            explains how to judge an extended plan.
+          </p>
+          <p>
+            Safety record: we searched the US Consumer Product Safety Commission’s recall database on
+            5 November 2026 for Sole and Sole Fitness and found no Sole treadmill recall. Our
+            <a href="/sole-fitness/" class="text-[#0F62FE] font-medium">Sole Fitness guide</a>
+            covers the company and its service record, and our
+            <a href="/sole-vs-nordictrack/" class="text-[#0F62FE] font-medium">Sole vs NordicTrack</a>
+            comparison sets the two brands’ warranties side by side.
+          </p>
+        </div>
+
+        <div id="alternatives" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. If the TT8 Stays Sold Out: TT8 vs F85, F80 and NordicTrack X16</h2>
+<p>
+            Sole has shown the TT8 as sold out on at least two checks three weeks apart, on 13 October
+            and 5 November 2026. You can wait, you can look for a dealer with stock, or you can buy
+            one of these. Prices are those shown on soletreadmills.com and NordicTrack’s checkout
+            page on 5 November 2026.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Published figure</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Sole TT8</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Sole F85</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Sole F80</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">NordicTrack X16</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Running surface</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22 x 60 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22 x 60 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20 x 60 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22 x 60 in.</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Motor</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4.0 HP</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.5 HP</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.25 HP</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4.25 CHP</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Grade range</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-6 to 15 levels</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0-15 levels</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0-15 levels</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-6% to 40%</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Max user weight</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">400 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">350 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">350 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">400 lb</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Folds</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Yes</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Yes</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Price and stock</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,899.99, sold out</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,199.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,599.99</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$3,699, in stock</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            <strong>Sole F85.</strong> The closest Sole: the same running surface and 15.6-inch
+            touchscreen, a folding frame, and $700 less than the TT8’s list price. It gives up decline,
+            half a horsepower and 50 lb of rating. If you do not need decline and weigh well under
+            350 lb, it is the sensible buy today; our
+            <a href="/sole-f85-treadmill/" class="text-[#0F62FE] font-medium">Sole F85 review</a>
+            sets out its versions.
+          </p>
+          <p>
+            <strong>Sole F80.</strong> $1,300 less than the TT8, with a 20-inch belt, a 3.25 HP motor
+            and a 10.1-inch touchscreen. It suits runners of ordinary build who want Sole’s frame and
+            motor cover without the TT8’s size; our
+            <a href="/sole-f80-treadmill/" class="text-[#0F62FE] font-medium">Sole F80 review</a>
+            covers it.
+          </p>
+          <p>
+            <strong>NordicTrack X16.</strong> If decline is the reason you wanted the TT8, the X16
+            declines to -6% and climbs to 40%, with the same 400 lb rating and 22 by 60-inch belt, for
+            $800 more than the TT8’s list price. Most of its screen depends on a paid iFIT membership,
+            and its parts cover is two years; our
+            <a href="/nordictrack-x24-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack X24 review</a>
+            covers the same machine with a larger screen. The full Sole range is ranked in our
+            <a href="/best-sole-treadmills/" class="text-[#0F62FE] font-medium">best Sole treadmills</a>
+            guide, and other heavy non-folding machines in our
+            <a href="/best-non-folding-treadmills/" class="text-[#0F62FE] font-medium">non-folding roundup</a>.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">If you find one elsewhere</h3>
+          <p>
+            Dealers and second-hand sellers do have TT8s. Before you pay, ask which console it has,
+            check the price against Sole’s $2,899.99 list, and get the warranty terms in writing. A
+            dealer price above Sole’s list for a machine that Sole itself will sell you when stock
+            returns is rarely worth paying. For a used TT8, our
+            <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a>
+            covers the belt, deck and motor checks, and the incline motors are worth running through
+            their full range, decline included.
+          </p>
+        </div>
+
+        <div id="who-should-buy" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Who Should Buy the Sole TT8</h2>
+<p>
+            <strong>Buy it if you want decline from Sole.</strong> It is the only current Sole that
+            goes downhill, and it does so on a heavy, stable, non-folding frame.
+          </p>
+          <p>
+            <strong>Buy it if you are a heavy user or run high mileage.</strong> A 400 lb rating,
+            4.0 HP motor, 3-inch rollers and a reversible deck are built for hard use, and the
+            lifetime frame and motor cover backs them.
+          </p>
+          <p>
+            <strong>Buy the F85 instead</strong> if you need a treadmill now, want it to fold, or do not
+            need decline. You keep the deck size and the screen and save $700.
+          </p>
+          <p>
+            <strong>Look elsewhere</strong> if you mainly walk, where the TT8 is more machine than you
+            need, or if you want classes to control the treadmill, where iFIT-based NordicTrack
+            machines are designed for it.
+          </p>
+          <p>
+            <strong>Whatever you buy, check the version.</strong> The current TT8’s warranty is shorter
+            than the older one’s, so do not rely on a review or a listing that describes the LCD model.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">11. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is the Sole TT8 treadmill good?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                On its published figures, yes, for heavy users and runners who want decline. Sole lists a 4.0 HP motor, a 22 by 60-inch deck, 12 mph, 15 incline and 6 decline levels, a 400 lb rating, 3-inch rollers and a lifetime frame and motor warranty. Independent coverage of the current touchscreen version is thin, and we have not tested it.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is the Sole TT8 discontinued?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Sole has not said so. Its US store still lists the TT8 at $2,899.99, but it was marked sold out on 5 November 2026, as it was on 13 October. We do not know when stock will return. If you need a treadmill now, the in-stock Sole F85 is the closest alternative.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What warranty does the Sole TT8 have?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Sole’s warranty block for the current TT8 gives lifetime on the frame and motor, three years each on the deck, electronics and wear parts, and one year on labour. Older versions carried a lifetime deck, five years of parts and two of labour, so reviews describing those terms are out of date.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Does the Sole TT8 have decline?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Yes. Sole lists the grade as -6 to 15 levels, driven by two incline motors, and it is the only current Sole treadmill with decline. For deeper incline with the same -6% decline, the NordicTrack X16 and X24 go to 40%.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Sole TT8 vs F85: what is the difference?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Both have a 22 by 60-inch running surface and a 15.6-inch touchscreen. The TT8 adds decline, a 4.0 HP motor against 3.5 HP and a 400 lb rating against 350 lb, but does not fold. On 5 November 2026 the F85 was $2,199.99 and in stock; the TT8 was listed at $2,899.99 and sold out.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Does the Sole TT8 fold?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                No. It is a non-folding treadmill measuring 81 by 38 by 66 inches and weighing 319 lb. If you need to fold the machine away, the Sole F85 and F80 fold.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Sole TT8</h2>
+          <p class="text-gray-700 leading-relaxed">The TT8 is a good machine with a confusing history. These are the errors that cost buyers money or frustration.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting a review of the older version</h3>
+              <p class="text-gray-700 text-sm m-0">Many TT8 reviews describe the 10.1-inch LCD model with a lifetime deck and two years of labour. The current touchscreen model has three years on the deck and one on labour. Check which version any source describes.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Paying over list to a reseller while Sole is sold out</h3>
+              <p class="text-gray-700 text-sm m-0">Sole lists the TT8 at $2,899.99. A third-party price above that, for a machine Sole will sell when stock returns, is rarely worth paying unless you need it urgently and the warranty is confirmed in writing.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Buying it for walking</h3>
+              <p class="text-gray-700 text-sm m-0">The TT8’s motor, rollers and 400 lb frame are built for hard running. If you mainly walk, a folding Sole or a cheaper machine does the job for far less.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Forgetting it does not fold</h3>
+              <p class="text-gray-700 text-sm m-0">At 81 by 38 inches and 319 lb, the TT8 stays where it is installed. Measure the room, the doorway and the ceiling before you order, and plan the delivery route for a 367 lb box.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Reviews &amp; Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/best-sole-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Roundup</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Sole Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Sole’s current range ranked, with the conflicting figures set out.</p>
+            </a>
+            <a href="/sole-f85-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Alternative</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Sole F85 Treadmill Review</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The folding Sole with the same deck size and screen, and the versions sold under its name.</p>
+            </a>
+            <a href="/sole-fitness/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Brand</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Sole Fitness</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The company, its range, its warranty terms and its service record.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            <strong class="text-white">The Sole TT8 is Sole’s heaviest, most capable treadmill</strong>: a 4.0 HP
+            motor, a 22 by 60-inch deck, decline, a 400 lb rating and a lifetime frame and motor
+            warranty, on a non-folding frame. It was sold out on Sole’s US store on 5 November 2026,
+            and the current version’s warranty is shorter than older reviews describe.
+          </p>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            If you can wait, wait for Sole’s $2,899.99 list price. If you cannot, the
+            <a href="/sole-f85-treadmill/" class="text-[#5AA9FF] font-bold no-underline">Sole F85</a>
+            gives you the same deck and screen for $700 less without decline, and the NordicTrack X16
+            gives you more decline for more money.
+          </p>
+        </div>
+
+        <!-- Meet the Author -->
+        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
+          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
+          <div>
+            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
+            <p class="text-sm font-bold text-gray-900 m-0">
+              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
+              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+            </p>
+            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
+              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
+              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
+              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
+              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
+              running ergonomics, noise and long-term durability. Every guide says what was checked and
+              when, and says plainly when a product has not been tested hands-on.
+              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
+              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </article>
+</Layout>

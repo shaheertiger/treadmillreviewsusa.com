@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "life-fitness-integrity-plus",
     name: "Life Fitness Integrity+ Treadmill",
+    brand: "Life Fitness",
     category: "Commercial Club Treadmill Sold for Home Use",
     badge: "Commercial Grade",
     amazonUrl: "https://www.amazon.com/s?k=Life+Fitness+Integrity+Treadmill&tag=sktiger-20",
@@ -114,7 +115,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -326,8 +327,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
@@ -831,6 +832,11 @@ const schema = {
               <span class="text-xs font-black uppercase tracking-widest text-green-600">Guide</span>
               <p class="font-bold text-gray-900 mt-2 mb-1">A Gym Treadmill for Your Home</p>
               <p class="text-sm text-gray-500 leading-relaxed">Power, floors, access and warranty: what running a club machine at home takes.</p>
+            </a>
+            <a href="/life-fitness-club-series-plus-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Model Review</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Life Fitness Club Series+</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The club-grade home model: SE4 vs SL consoles and the 15-amp outlet.</p>
             </a>
           </div>
         </div>

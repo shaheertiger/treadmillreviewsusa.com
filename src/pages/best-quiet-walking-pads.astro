@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "lifespan-tr1200pro-glow-up",
     name: "LifeSpan TR1200Pro Glow-Up",
+    brand: "LifeSpan",
     category: "Heavier non-folding under-desk treadmill",
     badge: "Best for Apartments",
     amazonUrl: "https://www.amazon.com/s?k=under+desk+treadmill&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "imovr-unsit",
     name: "iMovR Unsit Desk Treadmill",
+    brand: "iMovR",
     category: "Premium walking-only office treadmill",
     badge: "Premium Pick",
     amazonUrl: "https://www.amazon.com/s?k=under+desk+treadmill&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "walkingpad-a1-pro",
     name: "WalkingPad A1 Pro",
+    brand: "WalkingPad",
     category: "Folding under-desk pad with a long belt",
     badge: "Best Folding Pad",
     amazonUrl: "https://www.amazon.com/s?k=WalkingPad+A1+Pro+Foldable+Under+Desk+Treadmill&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "walkingpad-c2",
     name: "WalkingPad C2",
+    brand: "WalkingPad",
     category: "Compact folding walking pad",
     badge: "Best for Small Rooms",
     amazonUrl: "https://www.amazon.com/dp/B0F48MZV54?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "walkingpad-z1",
     name: "WalkingPad Z1",
+    brand: "WalkingPad",
     category: "Budget folding walking pad",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/dp/B0H2YYZTL8?tag=sktiger-20&linkCode=ll1",
@@ -217,7 +222,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -479,8 +484,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">

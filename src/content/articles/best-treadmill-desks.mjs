@@ -536,6 +536,18 @@ export default {
       blurb: 'Incline pads that suit a desk, with their deck heights and belt lengths compared.',
       url: '/best-walking-pads-with-incline/',
     },
+    {
+      kicker: "Brand Guide",
+      title: "InMovement Treadmill Desk",
+      blurb: "The maker of the Unsit: buying direct, the desk bundle, and vs LifeSpan.",
+      url: '/inmovement-treadmill-desk/',
+    },
+    {
+      kicker: "Accessories",
+      title: "Best Treadmill Laptop Holders",
+      blurb: "Laptop boards, pole trays and phone clamps that strap to a treadmill, how to measure the rails, and when.",
+      url: '/best-treadmill-laptop-holders/',
+    },
   ],
   bottomLine: [
     `If you want the whole thing in one order, buy the

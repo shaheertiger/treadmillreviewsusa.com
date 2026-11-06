@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "jumpsport-39-pro",
     name: "JumpSport 39\" PRO Fitness Trampoline (350 PRO)",
+    brand: "JumpSport",
     category: "Adjustable bungee rebounder, 39-inch, arched legs",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B00AR02OKM?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "bellicon",
     name: "bellicon Rebounder (39, 44 or 49 in.)",
+    brand: "bellicon",
     category: "Premium bungee rebounder, made to order",
     badge: "Best Premium",
     amazonUrl: "https://www.amazon.com/s?k=bellicon+rebounder&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "leaps-and-rebounds",
     name: "Leaps & Rebounds Bungee Rebounder (40 or 48 in.)",
+    brand: "Leaps",
     category: "Value bungee rebounder, screw-on legs",
     badge: "Best Value Bungee",
     amazonUrl: "https://www.amazon.com/s?k=Leaps+and+Rebounds+Bungee+Rebounder&tag=sktiger-20",
@@ -89,11 +92,12 @@ const PRODUCTS = [
   {
     id: "jumpsport-39-essential",
     name: "JumpSport 39\" ESSENTIAL Fitness Trampoline",
+    brand: "JumpSport",
     category: "Soft-bounce bungee rebounder, 39-inch",
     badge: "Softest Bounce",
-    amazonUrl: "https://www.amazon.com/dp/B0030E6O30?tag=sktiger-20&linkCode=ll1",
+    amazonUrl: "https://www.amazon.com/dp/B0042H4QYS?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
-    image: {"url":"https://m.media-amazon.com/images/I/41qVzr8+zyL._SL500_.jpg","width":500,"height":500},
+    image: {"url":"https://m.media-amazon.com/images/I/31J+j-NPjXL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$279–$299",
     priceBounds: {"low":279,"high":299},
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "bcan-sp3-40",
     name: "BCAN SP3 40\" Mini Trampoline with U-Handle",
+    brand: "BCAN",
     category: "Budget spring rebounder with handle",
     badge: "Best Budget With Handle",
     amazonUrl: "https://www.amazon.com/s?k=BCAN+SP3+40+Foldable+Mini+Trampoline+U+Adjustable+Foam+Handle&tag=sktiger-20",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "marcy-asg-40",
     name: "Marcy ASG-40 Cardio Trampoline Trainer",
+    brand: "Marcy",
     category: "Budget rebounder with handlebar",
     badge: "Cheapest With a Bar",
     amazonUrl: "https://www.amazon.com/dp/B005CAIY92?tag=sktiger-20&linkCode=ll1",
@@ -242,7 +248,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -509,8 +515,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">

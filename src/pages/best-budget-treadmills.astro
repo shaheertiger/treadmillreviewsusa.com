@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "urevo-spacewalk-3s",
     name: "UREVO SpaceWalk 3S",
+    brand: "UREVO",
     category: "Best Budget Walking Pad",
     badge: "Best Under $300",
     amazonUrl: "https://www.amazon.com/s?k=UREVO+SpaceWalk+3S+Walking+Pad&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "urevo-foldi-3s",
     name: "UREVO Foldi 3S",
+    brand: "UREVO",
     category: "Best Budget Folding Machine Under $500",
     badge: "Best Under $500",
     amazonUrl: "https://www.amazon.com/s?k=UREVO+Foldi+3S+Treadmill&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "horizon-t202",
     name: "Horizon T202",
+    brand: "Horizon",
     category: "Best Budget Full-Size Treadmill, $800–$1,000",
     badge: "Best Under $1,000",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+Fitness+T202+Treadmill&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "bowflex-t6",
     name: "Bowflex T6",
+    brand: "Bowflex",
     category: "Best Budget Treadmill on Sale, $800–$1,000",
     badge: "Best Value on Sale",
     amazonUrl: "https://www.amazon.com/s?k=Bowflex+T6+Treadmill&tag=sktiger-20",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "horizon-7-0-at",
     name: "Horizon 7.0 AT",
+    brand: "Horizon",
     category: "Best Budget Running Treadmill, $1,000–$1,500",
     badge: "Best for Running",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+Fitness+7.0+AT+Treadmill&tag=sktiger-20",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "sole-f63",
     name: "SOLE F63",
+    brand: "SOLE",
     category: "Best Budget Running Treadmill With No Subscription",
     badge: "No Subscription",
     amazonUrl: "https://www.amazon.com/s?k=SOLE+F63+Treadmill&tag=sktiger-20",
@@ -243,7 +249,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -510,8 +516,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
@@ -973,6 +979,16 @@ const schema = {
               <span class="text-xs font-black uppercase tracking-widest text-green-600">By Price</span>
               <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills Under $1,000</p>
               <p class="text-sm text-gray-500 leading-relaxed">More full-size options in the band where most budgets land.</p>
+            </a>
+            <a href="/sunny-health-fitness-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Brand Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Sunny Health & Fitness Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Sunny's treadmills, pads and manual walkers: prices, motors and warranty.</p>
+            </a>
+            <a href="/xterra-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">XTERRA Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Dyaco's budget brand: the TRX1200, TR75 and TR95H Hiker.</p>
             </a>
           </div>
         </div>

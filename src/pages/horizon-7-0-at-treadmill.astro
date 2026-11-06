@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "horizon-7-0-at",
     name: "Horizon 7.0 AT",
+    brand: "Horizon",
     category: "Folding Running Treadmill Without a Subscription",
     badge: "Best Horizon for Most People",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+7.0+AT+Treadmill&tag=sktiger-20",
@@ -114,7 +115,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -322,8 +323,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
@@ -799,6 +800,16 @@ const schema = {
               <span class="text-xs font-black uppercase tracking-widest text-green-600">Timing</span>
               <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Black Friday Deals</p>
               <p class="text-sm text-gray-500 leading-relaxed">How sale events work and how to tell a real discount from a reference price.</p>
+            </a>
+            <a href="/horizon-7-8-at-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Model Review</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Horizon 7.8 AT Treadmill</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Horizon's 375 lb flagship: confirmed specs and whether it beats the 7.4 AT.</p>
+            </a>
+            <a href="/horizon-t202-treadmill/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Model Review</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Horizon T202 Review</p>
+              <p class="text-sm text-gray-500 leading-relaxed">The cheapest 60-inch Horizon: checked specs, the unrated motor, one-year parts cover, and T101 vs 7.0 AT.</p>
             </a>
           </div>
         </div>

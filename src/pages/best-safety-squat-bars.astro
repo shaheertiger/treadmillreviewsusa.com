@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "rep-safety-squat-bar",
     name: "REP Fitness Safety Squat Bar",
+    brand: "REP Fitness",
     category: "Cambered safety squat bar with removable knurled handles",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=safety+squat+bar&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "titan-safety-squat-bar",
     name: "Titan Fitness Safety Squat Bar",
+    brand: "Titan Fitness",
     category: "Budget cambered SSB with rubber grips",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/dp/B0DDM6PTRV?tag=sktiger-20&linkCode=ll1",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "rogue-sb-1",
     name: "Rogue SB-1 Safety Squat Bar",
+    brand: "Rogue",
     category: "Fully welded SSB, made in the USA",
     badge: "Best Made in USA",
     amazonUrl: "https://www.amazon.com/s?k=safety+squat+bar&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "bells-of-steel-ss4",
     name: "Bells of Steel Safety Squat Bar – The SS4",
+    brand: "Bells of Steel",
     category: "SSB with interchangeable handles and bearing sleeves",
     badge: "Most Versatile",
     amazonUrl: "https://www.amazon.com/s?k=Bells+of+Steel+Safety+Squat+Bar+4.0+1500+lb&tag=sktiger-20",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "kabuki-transformer-bar",
     name: "Kabuki Transformer Bar",
+    brand: "Kabuki",
     category: "Adjustable safety squat bar, made by Rogue",
     badge: "Most Adjustable",
     amazonUrl: "https://www.amazon.com/s?k=safety+squat+bar&tag=sktiger-20",
@@ -217,7 +222,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -487,8 +492,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">

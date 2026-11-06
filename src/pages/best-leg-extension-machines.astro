@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "ritfit-plc01",
     name: "RitFit PLC01 Leg Extension Curl Machine",
+    brand: "RitFit",
     category: "Standalone plate-loaded cable leg extension and prone curl",
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/s?k=RitFit+PLC01+Leg+Extension+Curl+Machine&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "titan-leg-extension-curl",
     name: "Titan Fitness Leg Extension & Hamstring Curl Machine",
+    brand: "Titan Fitness",
     category: "Standalone plate-loaded leg extension and seated curl",
     badge: "Best Seated Curl",
     amazonUrl: "https://www.amazon.com/s?k=leg+extension+curl+machine&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "body-solid-glce365",
     name: "Body-Solid GLCE365 Leg Extension Curl Machine",
+    brand: "Body-Solid",
     category: "Standalone plate-loaded leg extension and supine curl bench",
     badge: "Best Warranty",
     amazonUrl: "https://www.amazon.com/s?k=Body-Solid+GLCE365B+Leg+Extension+Curl+Machine&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "body-solid-gcec-stk",
     name: "Body-Solid Pro Select GCEC-STK Leg Extension Curl",
+    brand: "Body-Solid",
     category: "Selectorized cam leg extension and seated curl",
     badge: "Best Selectorized",
     amazonUrl: "https://www.amazon.com/dp/B00DNCIGBC?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "rep-leg-attachment",
     name: "REP Fitness Leg Extension & Leg Curl Bench Attachment",
+    brand: "REP Fitness",
     category: "Bench attachment for REP adjustable benches",
     badge: "Best Bench Attachment",
     amazonUrl: "https://www.amazon.com/s?k=leg+extension+curl+bench+attachment&tag=sktiger-20",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "titan-series-rack-leg-curl",
     name: "Titan Series Rack Mounted Leg Curl and Extension",
+    brand: "Titan",
     category: "Rack-mounted plate-loaded leg extension and standing curl",
     badge: "Best Rack Attachment",
     amazonUrl: "https://www.amazon.com/s?k=Titan+Fitness+Titan+Series+Rack+Mounted+Leg+Curl+and+Extension+Attachment&tag=sktiger-20",
@@ -243,7 +249,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -507,8 +513,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">

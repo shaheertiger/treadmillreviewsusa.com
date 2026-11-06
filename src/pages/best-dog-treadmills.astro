@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "dogpacer-lf-3-1",
     name: "dogPACER LF 3.1",
+    brand: "dogPACER",
     category: "Best overall dog treadmill for medium and large dogs",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=dog+treadmill&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "dogpacer-lf-4-0",
     name: "dogPACER LF 4.0",
+    brand: "dogPACER",
     category: "Best app-controlled dog treadmill",
     badge: "Best Smart Pick",
     amazonUrl: "https://www.amazon.com/s?k=dog+treadmill&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "gopet-petrun-pr700",
     name: "GoPet PetRun PR700",
+    brand: "GoPet",
     category: "Best dog treadmill for toy breeds",
     badge: "Best for Toy Breeds",
     amazonUrl: "https://www.amazon.com/s?k=dog+treadmill&tag=sktiger-20",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "gopet-petrun-pr720f",
     name: "GoPet PetRun PR720F",
+    brand: "GoPet",
     category: "Best dog treadmill for small and medium dogs",
     badge: "Best for Small–Medium Dogs",
     amazonUrl: "https://www.amazon.com/s?k=dog+treadmill&tag=sktiger-20",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "dog-runner-revolution-pro",
     name: "Dog Runner Revolution Pro",
+    brand: "Dog Runner",
     category: "Best dog treadmill for large and giant breeds",
     badge: "Best for Giant Breeds",
     amazonUrl: "https://www.amazon.com/s?k=dog+treadmill&tag=sktiger-20",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "dog-trotter-usa-classic-slatmill",
     name: "Dog Trotter USA Classic Slatmill",
+    brand: "Dog Trotter",
     category: "Best non-motorised dog treadmill",
     badge: "Best Slatmill",
     amazonUrl: "https://www.amazon.com/s?k=Dog+Trotter+USA+Classic+Slatmill&tag=sktiger-20",
@@ -243,7 +249,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -498,8 +504,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
@@ -915,6 +921,11 @@ const schema = {
               <span class="text-xs font-black uppercase tracking-widest text-green-600">Safety</span>
               <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Safety Tips</p>
               <p class="text-sm text-gray-500 leading-relaxed">Keys, clearance, and keeping children and pets safe around any treadmill.</p>
+            </a>
+            <a href="/best-dog-treadmills-for-small-dogs/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Roundup</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Dog Treadmills for Small Dogs</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Motorised machines sized for toy and small breeds, what was in stock, and the safety rules.</p>
             </a>
           </div>
         </div>

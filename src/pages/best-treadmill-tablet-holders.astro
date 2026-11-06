@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "arkon-tab131",
     name: "Arkon Slim-Grip Tablet Mount with Clamp Base (TAB131)",
+    brand: "Arkon",
     category: "Clamp-on tablet holder for round bars",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Arkon+TAB131+Slim-Grip+Tablet+Mount+Clamp&tag=sktiger-20",
@@ -36,6 +37,7 @@ const PRODUCTS = [
   {
     id: "arkon-tab134",
     name: "Arkon Handlebar Slim-Grip Tablet Strap Mount (TAB134)",
+    brand: "Arkon",
     category: "Strap-on tablet holder for thick rails",
     badge: "Best for Thick Rails",
     amazonUrl: "https://www.amazon.com/dp/B073SCFKYV?tag=sktiger-20&linkCode=ll1",
@@ -61,6 +63,7 @@ const PRODUCTS = [
   {
     id: "arkon-tabpb031",
     name: "Arkon Heavy-Duty Clamp Post Tablet Mount (TABPB031)",
+    brand: "Arkon",
     category: "Quick-release clamp holder for 9 to 12 in. tablets",
     badge: "Best for Quick Removal",
     amazonUrl: "https://www.amazon.com/s?k=Arkon+TABPB031+Clamp+Tablet+Mount&tag=sktiger-20",
@@ -86,6 +89,7 @@ const PRODUCTS = [
   {
     id: "arkon-sm634",
     name: "Arkon Slim-Grip Ultra Bike or Motorcycle Handlebar Phone Mount (SM634)",
+    brand: "Arkon",
     category: "Strap-on phone holder",
     badge: "Best Phone Holder",
     amazonUrl: "https://www.amazon.com/s?k=Arkon+SM634+Slim-Grip+Ultra+Handlebar+Phone+Mount&tag=sktiger-20",
@@ -111,6 +115,7 @@ const PRODUCTS = [
   {
     id: "arkon-tab804",
     name: "Arkon Slim-Grip Tablet Holder with Clamp Base and Extension Arm (TAB804)",
+    brand: "Arkon",
     category: "Desk-edge tablet mount for walking pads and treadmill desks",
     badge: "Best for Walking Pads",
     amazonUrl: "https://www.amazon.com/s?k=Arkon+TAB804+Tablet+Clamp+Mount+Extension+Arm&tag=sktiger-20",
@@ -213,7 +218,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -474,8 +479,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
@@ -995,6 +1000,11 @@ const schema = {
               <span class="text-xs font-black uppercase tracking-widest text-green-600">Accessories</span>
               <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill Accessories</p>
               <p class="text-sm text-gray-500 leading-relaxed">The mat, lubricant and other things worth buying first.</p>
+            </a>
+            <a href="/best-treadmill-laptop-holders/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Accessories</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmill Laptop Holders</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Laptop boards, pole trays and phone clamps that strap to a treadmill, how to measure the rails, and when.</p>
             </a>
           </div>
         </div>

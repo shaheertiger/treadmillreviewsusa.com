@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "bowflex-t6",
     name: "Bowflex T6",
+    brand: "Bowflex",
     category: "Folding Treadmill With 15% Incline",
     badge: "Mid-Range Pick",
     amazonUrl: "https://www.amazon.com/s?k=Bowflex%20T6+Treadmill&tag=sktiger-20",
@@ -114,7 +115,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -317,8 +318,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
@@ -926,6 +927,11 @@ const schema = {
               <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Discontinued</span>
               <p class="font-bold text-gray-900 mt-2 mb-1">Bowflex Treadmill 10</p>
               <p class="text-sm text-gray-500 leading-relaxed">Discontinued. The checked specs, a warranty that does not transfer, what to test on a used one, and the T9 or T16 instead.</p>
+            </a>
+            <a href="/nautilus-treadmills/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Brand Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Nautilus Treadmills</p>
+              <p class="text-sm text-gray-500 leading-relaxed">No longer sold: the T614, T616 and T618 figures, the 2022 recall with no remedy left, and the Bowflex.</p>
             </a>
           </div>
         </div>

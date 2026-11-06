@@ -526,6 +526,12 @@ export default {
       blurb: 'Machines that still offer the decline the 2026 F85 dropped.',
       url: '/best-treadmills-with-decline/',
     },
+    {
+      kicker: "Model Review",
+      title: "Sole TT8 Treadmill",
+      blurb: "Sole's non-folding decline model: the two versions and the current warranty.",
+      url: '/sole-tt8-treadmill/',
+    },
   ],
   bottomLine: [
     `The 2026 <strong class="text-white">Sole F85</strong> is the folding Sole with the 22 by

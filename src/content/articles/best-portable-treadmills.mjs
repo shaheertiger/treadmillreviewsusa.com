@@ -623,6 +623,12 @@ export default {
       blurb: 'Between rooms, up stairs and across town, without damage to the machine or you.',
       url: '/how-to-move-a-treadmill/',
     },
+    {
+      kicker: "Roundup",
+      title: "Best Mini Treadmills",
+      blurb: "Five walking pads ranked by checked footprint and weight.",
+      url: '/best-mini-treadmills/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">For most people, the best portable treadmill is the WalkingPad Z1</strong>:

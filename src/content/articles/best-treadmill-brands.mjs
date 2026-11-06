@@ -422,6 +422,12 @@ export default {
       blurb: 'Frame, motor, parts and labour — and what each actually covers.',
       url: '/treadmill-warranty-guide/',
     },
+    {
+      kicker: "Brand Guide",
+      title: "Schwinn Treadmills",
+      blurb: "Four folding treadmills, $699 to $1,099 (810, 815, SFT4.1, SFT4.3), the old 830, missing motor figures.",
+      url: '/schwinn-treadmills/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">There is no single best treadmill brand.</strong> NordicTrack

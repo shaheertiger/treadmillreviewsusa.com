@@ -422,6 +422,12 @@ export default {
       blurb: 'What to pay in each band, and when prices actually fall.',
       url: '/treadmills-for-sale/',
     },
+    {
+      kicker: "Model Review",
+      title: "Life Fitness 95T / 95Ti",
+      blurb: "The discontinued Elevation Series 95T and older 95Ti bought remanufactured: consoles, prices and the.",
+      url: '/life-fitness-95t-treadmill/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">A refurbished treadmill is worth it when the seller can show you two

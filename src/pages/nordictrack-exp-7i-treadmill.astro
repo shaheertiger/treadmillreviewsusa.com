@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-exp-7i",
     name: "NordicTrack EXP 7i",
+    brand: "NordicTrack",
     category: "Compact iFIT Treadmill (Older Model)",
     badge: "No Longer in the Lineup",
     amazonUrl: "https://www.amazon.com/s?k=NordicTrack+EXP+7i+Treadmill&tag=sktiger-20",
@@ -38,6 +39,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-t-series-8",
     name: "NordicTrack T Series 8",
+    brand: "NordicTrack",
     category: "Closest Current Equivalent: LCD and Tablet Shelf",
     badge: "Current Retail Model",
     amazonUrl: "https://www.amazon.com/s?k=NordicTrack+T+Series+8+Treadmill&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "nordictrack-t-series-10",
     name: "NordicTrack T Series 10",
+    brand: "NordicTrack",
     category: "Current Touchscreen Replacement",
     badge: "Sold on NordicTrack.com",
     amazonUrl: "https://www.amazon.com/dp/B0D7XGWMRD?tag=sktiger-20&linkCode=ll1",
@@ -156,7 +159,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -386,8 +389,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">

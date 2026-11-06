@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "concept2-rowerg",
     name: "Concept2 RowErg",
+    brand: "Concept2",
     category: "Air rower with PM5 monitor",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Concept2+RowErg+Indoor+Rowing+Machine+PM5&tag=sktiger-20",
@@ -38,6 +39,7 @@ const PRODUCTS = [
   {
     id: "waterrower-oak-s4",
     name: "WaterRower Oak or Natural Rowing Machine with S4 Monitor",
+    brand: "WaterRower",
     category: "Water rower in solid wood",
     badge: "Best Water Rower",
     amazonUrl: "https://www.amazon.com/s?k=WaterRower+Oak+Rowing+Machine+S4+Monitor&tag=sktiger-20",
@@ -64,6 +66,7 @@ const PRODUCTS = [
   {
     id: "hydrow-wave",
     name: "Hydrow Wave",
+    brand: "Hydrow",
     category: "Connected electromagnetic rower",
     badge: "Best Connected Rower",
     amazonUrl: "https://www.amazon.com/s?k=Hydrow+Wave+Rowing+Machine&tag=sktiger-20",
@@ -90,6 +93,7 @@ const PRODUCTS = [
   {
     id: "sunny-sf-rw523021",
     name: "Sunny Health & Fitness Premium Smart Quiet Dual Slide Rail Magnetic Rowing Machine (SF-RW523021)",
+    brand: "Sunny Health & Fitness",
     category: "Budget magnetic rower",
     badge: "Best Magnetic Rower",
     amazonUrl: "https://www.amazon.com/s?k=Sunny+Health+Fitness+SF-RW523021+Dual+Slide+Rail+Magnetic+Rower&tag=sktiger-20",
@@ -116,6 +120,7 @@ const PRODUCTS = [
   {
     id: "merach-950",
     name: "Merach 950 (NovaRow 950) Dual Resistance Wood Rower",
+    brand: "Merach",
     category: "Water-and-magnetic hybrid, folding",
     badge: "Best Hybrid",
     amazonUrl: "https://www.amazon.com/s?k=MERACH+950+Foldable+Wooden+Rowing+Machine+Water+Electromagnetic&tag=sktiger-20",
@@ -142,6 +147,7 @@ const PRODUCTS = [
   {
     id: "sunny-sf-rw1205smart",
     name: "Sunny Health & Fitness Smart Compact Hydraulic Rowing Machine (SF-RW1205SMART)",
+    brand: "Sunny Health & Fitness",
     category: "Compact hydraulic rower",
     badge: "Best for Small Spaces",
     amazonUrl: "https://www.amazon.com/s?k=Sunny+Health+Fitness+SF-RW1205+Hydraulic+Rowing+Machine&tag=sktiger-20",
@@ -252,7 +258,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -520,8 +526,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">

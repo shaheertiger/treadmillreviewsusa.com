@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "supermats-treadmat",
     name: "SuperMats TreadMat",
+    brand: "SuperMats",
     category: "Category: Mat",
     badge: "Best Mat",
     amazonUrl: "https://www.amazon.com/s?k=SuperMats+Heavy+Duty+TreadMat+Treadmill+Mat&tag=sktiger-20",
@@ -36,6 +37,7 @@ const PRODUCTS = [
   {
     id: "lube-n-walk",
     name: "Lube-N-Walk Treadmill Lubricating Kit",
+    brand: "Lube-N-Walk",
     category: "Category: Belt Lubricant",
     badge: "Best Lubricant",
     amazonUrl: "https://www.amazon.com/s?k=Lube-N-Walk+Treadmill+Lubricating+Kit+100%25+Silicone&tag=sktiger-20",
@@ -61,6 +63,7 @@ const PRODUCTS = [
   {
     id: "polar-h10",
     name: "Polar H10 Heart Rate Sensor",
+    brand: "Polar",
     category: "Category: Heart-Rate Monitor",
     badge: "Best HR Monitor",
     amazonUrl: "https://www.amazon.com/dp/B07PM54P4N?tag=sktiger-20&linkCode=ll1",
@@ -87,6 +90,7 @@ const PRODUCTS = [
   {
     id: "stryd-5",
     name: "Stryd 5.0 Foot Pod",
+    brand: "Stryd",
     category: "Category: Running Foot Pod",
     badge: "Best Foot Pod",
     amazonUrl: "https://www.amazon.com/s?k=running+foot+pod&tag=sktiger-20",
@@ -113,6 +117,7 @@ const PRODUCTS = [
   {
     id: "panamax-md2",
     name: "Panamax MD2 Surge Protector",
+    brand: "Panamax",
     category: "Category: Surge Protector",
     badge: "Best Surge Protector",
     amazonUrl: "https://www.amazon.com/s?k=Panamax+MD2+Surge+Protector&tag=sktiger-20",
@@ -139,6 +144,7 @@ const PRODUCTS = [
   {
     id: "vornado-630",
     name: "Vornado 630 Air Circulator",
+    brand: "Vornado",
     category: "Category: Fan",
     badge: "Best Fan",
     amazonUrl: "https://www.amazon.com/dp/B000E5WAUO?tag=sktiger-20&linkCode=ll1",
@@ -164,6 +170,7 @@ const PRODUCTS = [
   {
     id: "e-cloth-general-purpose",
     name: "E-Cloth General Purpose Cloth",
+    brand: "E-Cloth",
     category: "Category: Cleaning",
     badge: "Best Cleaning Pick",
     amazonUrl: "https://www.amazon.com/s?k=E-Cloth+General+Purpose+Cloth&tag=sktiger-20",
@@ -265,7 +272,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -510,8 +517,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">

@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "rep-adjustable-kettlebell",
     name: "REP Fitness Adjustable Kettlebell",
+    brand: "REP Fitness",
     category: "Push-and-twist adjustable kettlebell, competition-style shape",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B07KCKBHYX?tag=sktiger-20&linkCode=ll1",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "bowflex-selecttech-840",
     name: "BowFlex SelectTech 840 Adjustable Kettlebell",
+    brand: "BowFlex",
     category: "Dial-select adjustable kettlebell, 8 to 40 lb",
     badge: "Fastest to Adjust",
     amazonUrl: "https://www.amazon.com/dp/B07X64MXBS?tag=sktiger-20&linkCode=ll1",
@@ -63,11 +65,12 @@ const PRODUCTS = [
   {
     id: "powerblock-pro-adjustable-kettlebell",
     name: "PowerBlock Pro Adjustable Kettlebell",
+    brand: "PowerBlock",
     category: "Magnetic-pin adjustable kettlebell, steel shell",
     badge: "Most Compact",
-    amazonUrl: "https://www.amazon.com/dp/B0CQ15JBBN?tag=sktiger-20&linkCode=ll1",
+    amazonUrl: "https://www.amazon.com/dp/B0CG6P5NSC?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
-    image: {"url":"https://m.media-amazon.com/images/I/31kZ+58+rsL._SL500_.jpg","width":500,"height":500},
+    image: {"url":"https://m.media-amazon.com/images/I/413Riv+fx9L._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$199–$349",
     priceBounds: {"low":199,"high":349},
@@ -89,11 +92,12 @@ const PRODUCTS = [
   {
     id: "bells-of-steel-adjustable-competition-kettlebell",
     name: "Bells of Steel Adjustable Competition Kettlebell",
+    brand: "Bells of Steel",
     category: "Internally plate-loaded competition kettlebell, 0.5 kg steps",
     badge: "Best for Small Steps",
-    amazonUrl: "https://www.amazon.com/s?k=Bells+of+Steel+Adjustable+Competition+Kettlebell+12-20.5kg&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0D38BLJQW?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
-    image: null,
+    image: {"url":"https://m.media-amazon.com/images/I/41etKpoFKgL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$199.99–$332.99",
     priceBounds: {"low":199.99,"high":332.99},
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "titan-adjustable-competition-kettlebell",
     name: "Titan Fitness 12–32 kg Adjustable Competition Kettlebell",
+    brand: "Titan Fitness",
     category: "Internally plate-loaded competition kettlebell, cast iron",
     badge: "Best Value to 32 kg",
     amazonUrl: "https://www.amazon.com/dp/B0D2Z4P3T9?tag=sktiger-20&linkCode=ll1",
@@ -217,7 +222,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -481,8 +486,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">

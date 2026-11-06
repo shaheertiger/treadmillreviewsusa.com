@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "coros-pace-4",
     name: "COROS PACE 4",
+    brand: "COROS",
     category: "Best Overall Running Watch for Treadmill",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0FYGTNYRW?tag=sktiger-20&linkCode=ll1",
@@ -36,6 +37,7 @@ const PRODUCTS = [
   {
     id: "garmin-forerunner-170",
     name: "Garmin Forerunner 170",
+    brand: "Garmin",
     category: "Best Garmin Running Watch for Most Treadmill Runners",
     badge: "Most Runners",
     amazonUrl: "https://www.amazon.com/s?k=Garmin+Forerunner+170&tag=sktiger-20",
@@ -61,6 +63,7 @@ const PRODUCTS = [
   {
     id: "garmin-forerunner-970",
     name: "Garmin Forerunner 970",
+    brand: "Garmin",
     category: "Best Premium Running Watch for Treadmill Training",
     badge: "Premium Pick",
     amazonUrl: "https://www.amazon.com/dp/B0F8QWPVNK?tag=sktiger-20&linkCode=ll1",
@@ -86,6 +89,7 @@ const PRODUCTS = [
   {
     id: "apple-watch-series-12",
     name: "Apple Watch Series 12",
+    brand: "Apple",
     category: "Best for iPhone Users and Gym Treadmills",
     badge: "GymKit Pick",
     amazonUrl: "https://www.amazon.com/s?k=Apple+Watch+Series+12&tag=sktiger-20",
@@ -112,6 +116,7 @@ const PRODUCTS = [
   {
     id: "polar-street-x",
     name: "Polar Street X",
+    brand: "Polar",
     category: "Best Polar Watch for Treadmill Runners on a Budget",
     badge: "Budget Pick",
     amazonUrl: "https://www.amazon.com/s?k=Polar+Street+X&tag=sktiger-20",
@@ -137,6 +142,7 @@ const PRODUCTS = [
   {
     id: "suunto-run",
     name: "Suunto Run",
+    brand: "Suunto",
     category: "Best Lightweight Running Watch for Treadmill and Road",
     badge: "Simple Pick",
     amazonUrl: "https://www.amazon.com/s?k=Suunto+Run+watch&tag=sktiger-20",
@@ -238,7 +244,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -496,8 +502,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">

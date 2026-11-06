@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "rep-ab-3000-2",
     name: "REP Fitness AB-3000 2.0 FID Adjustable Weight Bench",
+    brand: "REP Fitness",
     category: "Flat, incline and decline bench",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=REP+Fitness+AB-3000+2.0+FID+Adjustable+Weight+Bench&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "rep-fb-5000",
     name: "REP Fitness FB-5000 Competition Flat Bench",
+    brand: "REP Fitness",
     category: "Competition-style flat bench",
     badge: "Best Flat Bench",
     amazonUrl: "https://www.amazon.com/s?k=REP+Fitness+FB-5000+Competition+Flat+Bench&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "bowflex-5-1s",
     name: "BowFlex 5.1S Stowable Bench",
+    brand: "BowFlex",
     category: "Adjustable bench that stores upright",
     badge: "Best Stowable",
     amazonUrl: "https://www.amazon.com/dp/B078HRZWHQ?tag=sktiger-20&linkCode=ll1",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "flybird-wb5",
     name: "FLYBIRD WB5 Adjustable Weight Bench",
+    brand: "FLYBIRD",
     category: "Budget folding adjustable bench",
     badge: "Best Budget Folding",
     amazonUrl: "https://www.amazon.com/dp/B07DNYSJ8W?tag=sktiger-20&linkCode=ll1",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "marcy-sb-315",
     name: "Marcy SB-315 Flat Utility Bench",
+    brand: "Marcy",
     category: "Budget flat bench",
     badge: "Cheapest Flat Bench",
     amazonUrl: "https://www.amazon.com/dp/B00G44X9D6?tag=sktiger-20&linkCode=ll1",
@@ -217,7 +222,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -484,8 +489,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
@@ -559,7 +564,7 @@ const schema = {
             same failure — a weld or bracket that cracks under load: Valor Fitness's BF-38
             flat/incline/decline Olympic bench (2015, a weld joining the front leg to the frame),
             Powertec's workbenches (2013, the backrest adjustment bracket weld), the Nautilus NT 1020
-            bench (2005, a frame weld under the seat) and Cybex's commercial decline benches (2014 and
+            bench (2005, a frame weld under the seat) and <a href="/cybex-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Cybex</a>'s commercial decline benches (2014 and
             2016). Bowflex's old Power Pro and Ultimate machines were recalled in 2004 over a seat pin
             and an incline bracket. REP's only record is a 2021 recall of strap-safety brackets for
             its racks, not a bench, and Rogue's records cover timers, door anchors and barbell

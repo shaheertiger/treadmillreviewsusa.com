@@ -11,6 +11,7 @@ const PRODUCTS = [
   {
     id: "titan-leg-press-hack-squat",
     name: "Titan Fitness Leg Press Hack Squat Machine",
+    brand: "Titan Fitness",
     category: "45-degree plate-loaded leg press and hack squat combo",
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Titan+Fitness+Leg+Press+Hack+Squat+Machine+Plate-Loaded&tag=sktiger-20",
@@ -37,6 +38,7 @@ const PRODUCTS = [
   {
     id: "body-solid-glph1100b",
     name: "Body-Solid GLPH1100B Leg Press & Hack Squat",
+    brand: "Body-Solid",
     category: "Plate-loaded leg press and hack squat combo, light commercial",
     badge: "Narrowest Combo",
     amazonUrl: "https://www.amazon.com/s?k=Body-Solid+GLPH1100+Leg+Press+Hack+Squat&tag=sktiger-20",
@@ -63,6 +65,7 @@ const PRODUCTS = [
   {
     id: "bells-of-steel-leg-press-hack-squat",
     name: "Bells of Steel Leg Press Hack Squat Machine",
+    brand: "Bells of Steel",
     category: "Plate-loaded leg press, hack squat and calf raise on linear bearings",
     badge: "Best Warranty",
     amazonUrl: "https://www.amazon.com/dp/B0CQ2YNHCN?tag=sktiger-20&linkCode=ll1",
@@ -89,6 +92,7 @@ const PRODUCTS = [
   {
     id: "force-usa-compact-leg-press",
     name: "Force USA Compact Leg Press & Hack Squat (2027 Model)",
+    brand: "Force USA",
     category: "Compact 30-degree leg press, hack squat and calf raise",
     badge: "Most Compact Combo",
     amazonUrl: "https://www.amazon.com/s?k=leg+press+hack+squat+machine&tag=sktiger-20",
@@ -115,6 +119,7 @@ const PRODUCTS = [
   {
     id: "powerline-pvlp156x",
     name: "Body-Solid Powerline PVLP156X Vertical Leg Press",
+    brand: "Body-Solid",
     category: "Compact vertical leg press, residential",
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/dp/B000UZJJMA?tag=sktiger-20&linkCode=ll1",
@@ -141,6 +146,7 @@ const PRODUCTS = [
   {
     id: "titan-vertical-leg-press",
     name: "Titan Fitness Inverted Vertical Leg Press Machine",
+    brand: "Titan Fitness",
     category: "Compact vertical leg press for Olympic plates",
     badge: "Best Vertical for Olympic Plates",
     amazonUrl: "https://www.amazon.com/dp/B07N6LK7QC?tag=sktiger-20&linkCode=ll1",
@@ -167,6 +173,7 @@ const PRODUCTS = [
   {
     id: "steelflex-pllp",
     name: "Steelflex PLLP Plate Loaded Leg Press",
+    brand: "Steelflex",
     category: "Plate-loaded lever leg press with pivoting footplate",
     badge: "Best Lever Press",
     amazonUrl: "https://www.amazon.com/s?k=plate+loaded+leg+press+machine&tag=sktiger-20",
@@ -269,7 +276,7 @@ const schema = {
       "@type": "Product",
       name: product.name,
       description: product.description,
-      brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
       ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
@@ -548,8 +555,8 @@ const schema = {
                 </div>
                 <div class="p-6">
                   {product.image && (
-                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
-                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
                     </a>
                   )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
@@ -630,7 +637,7 @@ const schema = {
           <p>
             Every brand on this page was checked against the CPSC recall database by recall title,
             manufacturer and recall description on 19 October 2026. The only leg press recall in the
-            database is Cybex's December 2012 recall of its model 16110 plate-loaded leg press, a
+            database is <a href="/cybex-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Cybex</a>'s December 2012 recall of its model 16110 plate-loaded leg press, a
             commercial machine sold to gyms, worth knowing if you are shopping for used commercial
             equipment. Titan had a 2018 recall alert for weight-lifting safety straps (an accessory
             for its racks, not a leg press). We found no recalls for Body-Solid, Powerline, Bells of

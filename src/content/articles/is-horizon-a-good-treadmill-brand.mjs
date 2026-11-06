@@ -512,6 +512,12 @@ export default {
       blurb: 'Horizon’s start sequence from its manuals: switch, safety key, Start, and what to check.',
       url: '/how-to-start-a-horizon-treadmill/',
     },
+    {
+      kicker: "Model Review",
+      title: "Horizon 7.8 AT Treadmill",
+      blurb: "Horizon's 375 lb flagship: confirmed specs and whether it beats the 7.4 AT.",
+      url: '/horizon-7-8-at-treadmill/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Horizon is a good brand for buyers who want a no-subscription
