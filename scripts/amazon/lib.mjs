@@ -133,6 +133,15 @@ export const HAND_REJECTED = new Set([
   "TriggerPoint Massage Lacrosse Ball 2-Pack",
   "WaterRower Oak or Natural Rowing Machine with S4 Monitor",
   'CAP Barbell "The Beast" 7 ft Olympic Bar',
+  // Checked by hand on 2026-11-06: an unbranded "Aerobics" listing, a generic kettlebell
+  // set, the 250 lb pop-out bar for the 500 lb wall-mounted one, a knit band accessory,
+  // the KICKR Move, and a generic furniture cover for a named treadmill cover.
+  "Tempo Move",
+  "Bells of Steel Adjustable Competition Kettlebell",
+  "Titan Fitness Wall-Mounted Pull-Up Bar",
+  "WHOOP 5.0",
+  "Wahoo KICKR Smart Trainer",
+  "Covers & All Custom Treadmill Cover",
 ]);
 
 /**
