@@ -79,6 +79,7 @@ ${products
     badge: ${jsStr(p.badge)},
     amazonUrl: ${jsStr(amazonUrl(p))},
     amazonLabel: ${jsStr(isFallback(p) ? 'Shop Similar on Amazon' : 'Check Price on Amazon')},
+    image: ${ASINS[p.name]?.image ? JSON.stringify(ASINS[p.name].image) : 'null'},
     reviewUrl: ${p.reviewUrl ? jsStr(p.reviewUrl) : 'null'},
     priceRange: ${jsStr(p.priceRange)},
     priceBounds: ${JSON.stringify(priceBounds(p.priceRange))},
@@ -127,6 +128,7 @@ function schemaBlock(spec) {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -211,6 +213,11 @@ const PRODUCT_CARDS = `      <!-- Product cards -->
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
