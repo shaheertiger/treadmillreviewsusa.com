@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=REP+Fitness+3-in-1+Soft+Plyo+Box&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$109.99–$224.99",
     priceBounds: {"low":109.99,"high":224.99},
@@ -38,8 +39,9 @@ const PRODUCTS = [
     name: "REP Fitness Adjustable Plyo Box",
     category: "Adjustable steel plyo box, 16 to 24 in.",
     badge: "Best Adjustable",
-    amazonUrl: "https://www.amazon.com/s?k=REP+Fitness+Adjustable+Plyo+Box+Steel&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B01MYGZ9FJ?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31Teaa1psuL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$159.99",
     priceBounds: {"low":159.99,"high":159.99},
@@ -63,8 +65,9 @@ const PRODUCTS = [
     name: "Titan Fitness 3-in-1 Pro-Duty Wood Plyo Box",
     category: "Flat-pack plywood 3-in-1 plyo box",
     badge: "Best Wood Box",
-    amazonUrl: "https://www.amazon.com/s?k=Titan+Fitness+3-in-1+Pro-Duty+Wood+Plyo+Jump+Box&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0BMKL9F2R?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/417+B6VrcHL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$99.97–$179.99",
     priceBounds: {"low":99.97,"high":179.99},
@@ -88,8 +91,9 @@ const PRODUCTS = [
     name: "REP Fitness Stackable Soft Foam Plyo Boxes",
     category: "All-foam plyo boxes that strap together",
     badge: "Best Stackable",
-    amazonUrl: "https://www.amazon.com/s?k=REP+Fitness+Stackable+Soft+Foam+Plyo+Box&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B01MXVET72?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41i+vWKvfvL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$79.99–$1,059.99",
     priceBounds: {"low":79.99,"high":1059.99},
@@ -115,6 +119,7 @@ const PRODUCTS = [
     badge: "Best Budget Soft Box",
     amazonUrl: "https://www.amazon.com/s?k=Yes4All+3-in-1+Soft-Padded+Plyo+Box+Wooden+Core&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$69.94–$201.29",
     priceBounds: {"low":69.94,"high":201.29},
@@ -213,6 +218,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -474,6 +480,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

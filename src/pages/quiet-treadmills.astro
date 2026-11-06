@@ -15,6 +15,7 @@ const PRODUCTS = [
     category: "Best Overall for a Quiet Home",
     badge: "Top Pick",
     amazonUrl: "https://www.amazon.com/dp/B0HFSZR19W?tag=sktiger-20&linkCode=ll1",
+    image: {"url":"https://m.media-amazon.com/images/I/31qNRVPVU1L._SL500_.jpg","width":500,"height":500},
     reviewUrl: "/sole-f65-treadmill/",
     priceRange: "$1,199-$1,399",
     specs: "heavy frame · deep cushioning · 325 lb capacity",
@@ -40,6 +41,7 @@ const PRODUCTS = [
     category: "Best Premium Machine for Quiet",
     badge: "Premium Pick",
     amazonUrl: "https://www.amazon.com/dp/B006BE6HW4?tag=sktiger-20",
+    image: {"url":"https://m.media-amazon.com/images/I/41xQfD1DGZL._SL500_.jpg","width":500,"height":500},
     reviewUrl: "/life-fitness-t3-treadmill/",
     priceRange: "$3,199-$3,999",
     specs: "commercial frame · 400 lb capacity · non-folding",
@@ -90,6 +92,7 @@ const PRODUCTS = [
     category: "Best Quiet Machine for Runners",
     badge: "Best for Running",
     amazonUrl: "https://www.amazon.com/dp/B0D5YKF4SK?tag=sktiger-20",
+    image: {"url":"https://m.media-amazon.com/images/I/31BAhBBSPSL._SL500_.jpg","width":500,"height":500},
     reviewUrl: "/nordictrack-commercial-1750-treadmill/",
     priceRange: "$1,799-$2,199",
     specs: "runner-focused cushioning · 300 lb capacity",
@@ -452,6 +455,12 @@ const schema = {
                   <div class="border-t border-gray-100 pt-4">
                     <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
                     <div class="flex flex-wrap items-center gap-3">
+                      {/* amazon-image */}
+                      {product.image && (
+                        <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white rounded-xl mb-6 no-underline">
+                          <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                        </a>
+                      )}
                       <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
                         Check Price on Amazon &rarr;
                       </a>

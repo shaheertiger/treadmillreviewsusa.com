@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Teeter+FitSpine+X3+Inversion+Table&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$449–$499",
     priceBounds: {"low":449,"high":499},
@@ -41,6 +42,7 @@ const PRODUCTS = [
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/s?k=Innova+ITX9600+Inversion+Table&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$127–$131",
     priceBounds: {"low":127,"high":131},
@@ -66,6 +68,7 @@ const PRODUCTS = [
     badge: "Easiest On and Off",
     amazonUrl: "https://www.amazon.com/s?k=Teeter+FitSpine+LX9+Inversion+Table&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$479–$599",
     priceBounds: {"low":479,"high":599},
@@ -91,6 +94,7 @@ const PRODUCTS = [
     badge: "Teeter for Less",
     amazonUrl: "https://www.amazon.com/s?k=Teeter+FitSpine+X2+Inversion+Table&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "About $270",
     priceBounds: {"low":270,"high":270},
@@ -116,6 +120,7 @@ const PRODUCTS = [
     badge: "Best With Heat Pad",
     amazonUrl: "https://www.amazon.com/s?k=Innova+ITM4800+Heat+Massage+Inversion+Table&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "About $163",
     priceBounds: {"low":163,"high":163},
@@ -214,6 +219,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -523,6 +529,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

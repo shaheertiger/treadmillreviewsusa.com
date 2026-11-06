@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0D5YKF4SK?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31BAhBBSPSL._SL500_.jpg","width":500,"height":500},
     reviewUrl: "/nordictrack-commercial-1750-treadmill/",
     priceRange: "Around $1,900–$2,300",
     priceBounds: {"low":1900,"high":2300},
@@ -40,6 +41,7 @@ const PRODUCTS = [
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/dp/B0D5YJ4YW4?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31Hhl3ePz5L._SL500_.jpg","width":460,"height":500},
     reviewUrl: "/nordictrack-commercial-1250-treadmill/",
     priceRange: "Around $1,600–$1,800",
     priceBounds: {"low":1600,"high":1800},
@@ -65,6 +67,7 @@ const PRODUCTS = [
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/dp/B0D7XGWMRD?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31zk9ulTbQL._SL500_.jpg","width":500,"height":500},
     reviewUrl: "/nordictrack-t-series-treadmill/",
     priceRange: "Around $1,200–$1,600",
     priceBounds: {"low":1200,"high":1600},
@@ -90,6 +93,7 @@ const PRODUCTS = [
     badge: "Best Big Screen",
     amazonUrl: "https://www.amazon.com/dp/B0FBYJPXQ9?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31IJMmHM8RL._SL500_.jpg","width":500,"height":491},
     reviewUrl: "/nordictrack-t-series-treadmill/",
     priceRange: "Around $1,300–$2,000",
     priceBounds: {"low":1300,"high":2000},
@@ -115,6 +119,7 @@ const PRODUCTS = [
     badge: "Best for Running",
     amazonUrl: "https://www.amazon.com/dp/B0D5YKDXDV?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31NVjoFCMQL._SL500_.jpg","width":500,"height":500},
     reviewUrl: "/nordictrack-commercial-2450-treadmill/",
     priceRange: "Around $2,500–$3,000",
     priceBounds: {"low":2500,"high":3000},
@@ -140,6 +145,7 @@ const PRODUCTS = [
     badge: "Best for Incline",
     amazonUrl: "https://www.amazon.com/s?k=NordicTrack+X16+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "Around $2,700–$3,700",
     priceBounds: {"low":2700,"high":3700},
@@ -165,6 +171,7 @@ const PRODUCTS = [
     badge: "Premium Pick",
     amazonUrl: "https://www.amazon.com/s?k=NordicTrack+X24+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "Around $3,000–$4,500",
     priceBounds: {"low":3000,"high":4500},
@@ -263,6 +270,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -510,6 +518,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

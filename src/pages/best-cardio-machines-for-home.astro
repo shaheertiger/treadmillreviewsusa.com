@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Treadmill",
     amazonUrl: "https://www.amazon.com/s?k=BowFlex+T6+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: "/bowflex-t6-treadmill/",
     priceRange: "$899–$1,299",
     priceBounds: {"low":899,"high":1299},
@@ -40,6 +41,7 @@ const PRODUCTS = [
     badge: "Best Bike",
     amazonUrl: "https://www.amazon.com/s?k=Schwinn+IC4+Indoor+Cycling+Bike&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$799–$999",
     priceBounds: {"low":799,"high":999},
@@ -64,6 +66,7 @@ const PRODUCTS = [
     badge: "Best Rower",
     amazonUrl: "https://www.amazon.com/s?k=Concept2+RowErg+Rowing+Machine&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$990–$1,155",
     priceBounds: {"low":990,"high":1155},
@@ -88,6 +91,7 @@ const PRODUCTS = [
     badge: "Best Elliptical",
     amazonUrl: "https://www.amazon.com/s?k=Sole+E35+Elliptical&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$1,699–$1,799",
     priceBounds: {"low":1699,"high":1799},
@@ -113,6 +117,7 @@ const PRODUCTS = [
     badge: "Best Air Bike",
     amazonUrl: "https://www.amazon.com/s?k=Schwinn+AirDyne+AD7+Air+Bike&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$999–$1,299",
     priceBounds: {"low":999,"high":1299},
@@ -138,6 +143,7 @@ const PRODUCTS = [
     badge: "Best Stepper",
     amazonUrl: "https://www.amazon.com/s?k=Bowflex+Max+Trainer&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$999–$1,299",
     priceBounds: {"low":999,"high":1299},
@@ -163,6 +169,7 @@ const PRODUCTS = [
     badge: "Best Walking Pad",
     amazonUrl: "https://www.amazon.com/s?k=UREVO+SpaceWalk+3S+Walking+Pad&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$250–$350",
     priceBounds: {"low":250,"high":350},
@@ -261,6 +268,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -522,6 +530,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

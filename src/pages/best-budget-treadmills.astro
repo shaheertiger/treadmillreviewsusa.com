@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Under $300",
     amazonUrl: "https://www.amazon.com/s?k=UREVO+SpaceWalk+3S+Walking+Pad&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$250–$350",
     priceBounds: {"low":250,"high":350},
@@ -40,6 +41,7 @@ const PRODUCTS = [
     badge: "Best Under $500",
     amazonUrl: "https://www.amazon.com/s?k=UREVO+Foldi+3S+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$320–$470",
     priceBounds: {"low":320,"high":470},
@@ -65,6 +67,7 @@ const PRODUCTS = [
     badge: "Best Under $1,000",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+Fitness+T202+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "Around $899",
     priceBounds: {"low":899,"high":899},
@@ -90,6 +93,7 @@ const PRODUCTS = [
     badge: "Best Value on Sale",
     amazonUrl: "https://www.amazon.com/s?k=Bowflex+T6+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: "/bowflex-t6-treadmill/",
     priceRange: "$899–$1,299",
     priceBounds: {"low":899,"high":1299},
@@ -115,6 +119,7 @@ const PRODUCTS = [
     badge: "Best for Running",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+Fitness+7.0+AT+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: "/horizon-7-0-at-treadmill/",
     priceRange: "Around $1,099",
     priceBounds: {"low":1099,"high":1099},
@@ -140,6 +145,7 @@ const PRODUCTS = [
     badge: "No Subscription",
     amazonUrl: "https://www.amazon.com/s?k=SOLE+F63+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: "/sole-f63-treadmill/",
     priceRange: "$1,100–$1,200",
     priceBounds: {"low":1100,"high":1200},
@@ -238,6 +244,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -502,6 +509,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

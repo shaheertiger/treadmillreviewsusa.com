@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Top Watch",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+Fitness+7.0+AT+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: "/horizon-7-0-at-treadmill/",
     priceRange: "$935–$1,099 (Amazon and Horizon, Oct 2026)",
     priceBounds: {"low":935,"high":1099},
@@ -40,6 +41,7 @@ const PRODUCTS = [
     badge: "Best Touchscreen",
     amazonUrl: "https://www.amazon.com/dp/B0D7XGWMRD?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31zk9ulTbQL._SL500_.jpg","width":500,"height":500},
     reviewUrl: "/nordictrack-t-series-treadmill/",
     priceRange: "$1,299–$1,600 (retailers, 14 Oct 2026)",
     priceBounds: {"low":1299,"high":1600},
@@ -65,6 +67,7 @@ const PRODUCTS = [
     badge: "Best Without a Screen",
     amazonUrl: "https://www.amazon.com/s?k=Sole+F63+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$1,099.99 at Sole (28 Oct 2026)",
     priceBounds: {"low":1099.99,"high":1099.99},
@@ -90,6 +93,7 @@ const PRODUCTS = [
     badge: "Conditional Watch",
     amazonUrl: "https://www.amazon.com/dp/B0C6DTYQ3G?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31kq3r4+jKL._SL500_.jpg","width":500,"height":498},
     reviewUrl: null,
     priceRange: "Around $1,300 at ProForm (13 Oct 2026)",
     priceBounds: {"low":1300,"high":1300},
@@ -115,6 +119,7 @@ const PRODUCTS = [
     badge: "Best for Walking",
     amazonUrl: "https://www.amazon.com/dp/B0F9LQY1P4?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31pAWKay09L._SL500_.jpg","width":500,"height":500},
     reviewUrl: "/horizon-t101-treadmill/",
     priceRange: "Around $700 (Amazon, 13 Oct 2026)",
     priceBounds: {"low":700,"high":700},
@@ -140,6 +145,7 @@ const PRODUCTS = [
     badge: "Most Compact",
     amazonUrl: "https://www.amazon.com/dp/B0F6VVX36Z?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31+1EXxOMRL._SL500_.jpg","width":500,"height":500},
     reviewUrl: "/proform-carbon-tls-treadmill/",
     priceRange: "$800–$1,100 (Scheels and ProForm, 13–14 Oct 2026)",
     priceBounds: {"low":800,"high":1100},
@@ -238,6 +244,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -498,6 +505,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

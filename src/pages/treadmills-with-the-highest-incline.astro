@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=NordicTrack+X16+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "Around $2,800–$3,500",
     priceBounds: {"low":2800,"high":3500},
@@ -40,6 +41,7 @@ const PRODUCTS = [
     badge: "Premium Pick",
     amazonUrl: "https://www.amazon.com/s?k=NordicTrack+X24+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "Around $3,000–$4,000",
     priceBounds: {"low":3000,"high":4000},
@@ -65,6 +67,7 @@ const PRODUCTS = [
     badge: "Commercial Pick",
     amazonUrl: "https://www.amazon.com/s?k=incline+treadmill&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "From about $10,300",
     priceBounds: {"low":10300,"high":10300},
@@ -90,6 +93,7 @@ const PRODUCTS = [
     badge: "Best 15% Incline",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+7.8+AT+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "Around $1,900–$2,000",
     priceBounds: {"low":1900,"high":2000},
@@ -115,6 +119,7 @@ const PRODUCTS = [
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+7.0+AT+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: "/horizon-7-0-at-treadmill/",
     priceRange: "Around $930–$1,100",
     priceBounds: {"low":930,"high":1100},
@@ -140,6 +145,7 @@ const PRODUCTS = [
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/s?k=Bowflex+T6+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: "/bowflex-t6-treadmill/",
     priceRange: "Around $900–$1,300",
     priceBounds: {"low":900,"high":1300},
@@ -238,6 +244,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -519,6 +526,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

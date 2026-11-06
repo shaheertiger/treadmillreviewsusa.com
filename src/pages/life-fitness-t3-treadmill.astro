@@ -11,6 +11,7 @@ const PRODUCT = {
   name: "Life Fitness T3",
   editorialScore: 4.8,
   amazonUrl: "https://www.amazon.com/dp/B006BE6HW4?tag=sktiger-20",
+  image: {"url":"https://m.media-amazon.com/images/I/41xQfD1DGZL._SL500_.jpg","width":500,"height":500},
   priceRange: "$3,499-$3,999",
 };
 
@@ -221,6 +222,12 @@ const schema = {
           frequent, serious runners it delivers a level of mechanical
           reliability home-tier machines simply aren't built to match.
         </p>
+        {/* amazon-image */}
+        {PRODUCT.image && (
+          <a href={PRODUCT.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white rounded-xl mb-6 no-underline">
+            <img src={PRODUCT.image.url} alt={PRODUCT.name} width={PRODUCT.image.width} height={PRODUCT.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+          </a>
+        )}
         <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-gray-100">
           <p class="text-2xl font-black text-gray-900">{PRODUCT.priceRange}</p>
           <a id="cta" href={PRODUCT.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">

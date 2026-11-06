@@ -41,6 +41,7 @@ const PRODUCTS = [
     badge: "Best Fixed-Frame Value",
     amazonUrl:
       "https://www.amazon.com/dp/B006BE6HW4?tag=sktiger-20",
+    image: {"url":"https://m.media-amazon.com/images/I/41xQfD1DGZL._SL500_.jpg","width":500,"height":500},
     pros: [
       "Trusted commercial brand found in gyms, hotels, and physical therapy clinics",
       "FlexDeck shock absorption system noticeably softens joint impact",
@@ -137,6 +138,7 @@ const PRODUCTS = [
     badge: "Best Entry Point to Commercial Performance",
     amazonUrl:
       "https://www.amazon.com/dp/B0D5YKF4SK?tag=sktiger-20",
+    image: {"url":"https://m.media-amazon.com/images/I/31BAhBBSPSL._SL500_.jpg","width":500,"height":500},
     pros: [
       "3.75 CHP continuous-duty motor punches above its price class",
       "14-inch rotating HD touchscreen with a large, active iFit content library",
@@ -709,6 +711,12 @@ const schema = {
                   </p>
                   <p class="text-gray-900 font-bold">{product.bottomLine}</p>
                 </div>
+                {/* amazon-image */}
+                {product.image && (
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white rounded-xl mb-6 no-underline">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                  </a>
+                )}
                 <a
                   href={product.amazonUrl}
                   target="_blank"

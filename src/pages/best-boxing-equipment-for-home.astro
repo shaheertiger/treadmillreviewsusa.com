@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Free-Standing Bag",
     amazonUrl: "https://www.amazon.com/dp/B093JSL5GH?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31t1+gRfHML._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$200–$220",
     priceBounds: {"low":200,"high":220},
@@ -40,6 +41,7 @@ const PRODUCTS = [
     badge: "Best Hanging Bag",
     amazonUrl: "https://www.amazon.com/dp/B077G9WW54?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/317hw3+iuSL._SL500_.jpg","width":104,"height":500},
     reviewUrl: null,
     priceRange: "$159–$179",
     priceBounds: {"low":159,"high":179},
@@ -65,6 +67,7 @@ const PRODUCTS = [
     badge: "Best Gloves",
     amazonUrl: "https://www.amazon.com/dp/B07S323CF4?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41KNfU7+3QL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$159–$169",
     priceBounds: {"low":159,"high":169},
@@ -89,6 +92,7 @@ const PRODUCTS = [
     badge: "Best Hand Wraps",
     amazonUrl: "https://www.amazon.com/s?k=Everlast+Elite+Hand+Wraps+180&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$15",
     priceBounds: {"low":15,"high":15},
@@ -113,6 +117,7 @@ const PRODUCTS = [
     badge: "Best Double-End Bag",
     amazonUrl: "https://www.amazon.com/dp/B09M5BZCGH?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31pJwKH33LL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$30–$40",
     priceBounds: {"low":30,"high":40},
@@ -137,6 +142,7 @@ const PRODUCTS = [
     badge: "Best Jump Rope",
     amazonUrl: "https://www.amazon.com/s?k=speed+jump+rope&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$35",
     priceBounds: {"low":35,"high":35},
@@ -162,6 +168,7 @@ const PRODUCTS = [
     badge: "Best Connected System",
     amazonUrl: "https://www.amazon.com/s?k=free+standing+punching+bag&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$299–$899 plus membership",
     priceBounds: {"low":299,"high":899},
@@ -260,6 +267,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -516,6 +524,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=walking+pad&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$300-$450",
     priceBounds: {"low":300,"high":450},
@@ -39,6 +40,7 @@ const PRODUCTS = [
     badge: "Best Compromise",
     amazonUrl: "https://www.amazon.com/s?k=2+in+1+walking+pad+with+handrail&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$350-$500",
     priceBounds: {"low":350,"high":500},
@@ -63,6 +65,7 @@ const PRODUCTS = [
     badge: "Has Incline",
     amazonUrl: "https://www.amazon.com/s?k=folding+treadmill&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$400-$500",
     priceBounds: {"low":400,"high":500},
@@ -87,6 +90,7 @@ const PRODUCTS = [
     badge: "No Motor to Fail",
     amazonUrl: "https://www.amazon.com/s?k=manual+treadmill&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$200-$450",
     priceBounds: {"low":200,"high":450},
@@ -111,6 +115,7 @@ const PRODUCTS = [
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/s?k=renewed+treadmill&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$300-$500 secondhand",
     priceBounds: {"low":300,"high":500},
@@ -135,6 +140,7 @@ const PRODUCTS = [
     badge: "Warranty Included",
     amazonUrl: "https://www.amazon.com/s?k=refurbished+treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$400-$500",
     priceBounds: {"low":400,"high":500},
@@ -232,6 +238,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -558,6 +565,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

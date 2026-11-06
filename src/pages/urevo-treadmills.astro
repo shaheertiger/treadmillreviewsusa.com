@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Lowest Price",
     amazonUrl: "https://www.amazon.com/s?k=UREVO+SpaceWalk+E1L+Walking+Pad&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$169.99 at UREVO on 20 Oct 2026",
     priceBounds: {"low":169.99,"high":169.99},
@@ -40,6 +41,7 @@ const PRODUCTS = [
     badge: "Best UREVO With Incline",
     amazonUrl: "https://www.amazon.com/s?k=UREVO+SpaceWalk+3S+Walking+Pad&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$249.99 at UREVO on 20 Oct 2026",
     priceBounds: {"low":249.99,"high":249.99},
@@ -63,8 +65,9 @@ const PRODUCTS = [
     name: "UREVO Strol 2E Pro",
     category: "Lightest 2-in-1: a Fold-Down Handle and a Jogging Mode",
     badge: "Lightest 2-in-1",
-    amazonUrl: "https://www.amazon.com/s?k=UREVO+Strol+2E+Pro+Treadmill&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0H1H4JT4C?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/410e3-vj4nL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$189.99 at UREVO checkout on 20 Oct 2026",
     priceBounds: {"low":189.99,"high":189.99},
@@ -90,6 +93,7 @@ const PRODUCTS = [
     badge: "Best for Light Jogging",
     amazonUrl: "https://www.amazon.com/s?k=UREVO+Strol+2S+Pro+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$299.99 at UREVO checkout on 20 Oct 2026",
     priceBounds: {"low":299.99,"high":299.99},
@@ -115,6 +119,7 @@ const PRODUCTS = [
     badge: "Compact Folding Pick",
     amazonUrl: "https://www.amazon.com/s?k=UREVO+Foldi+3S+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$319.99 at UREVO on 20 Oct 2026",
     priceBounds: {"low":319.99,"high":319.99},
@@ -140,6 +145,7 @@ const PRODUCTS = [
     badge: "Best Built-In Desk",
     amazonUrl: "https://www.amazon.com/s?k=UREVO+FoldiMix+5L+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$311.99 at UREVO checkout on 20 Oct 2026",
     priceBounds: {"low":311.99,"high":311.99},
@@ -163,8 +169,9 @@ const PRODUCTS = [
     name: "UREVO CyberPad for Office",
     category: "Steepest Incline Pad: 14% Powered",
     badge: "Most Incline",
-    amazonUrl: "https://www.amazon.com/s?k=UREVO+CyberPad+for+Office+Walking+Pad&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0F6LJGZ12?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/410+XTzfCUL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$429.99 at UREVO checkout on 20 Oct 2026",
     priceBounds: {"low":429.99,"high":429.99},
@@ -190,6 +197,7 @@ const PRODUCTS = [
     badge: "For Running",
     amazonUrl: "https://www.amazon.com/s?k=UREVO+CyberMega+Smart+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$899.99 at UREVO on 20 Oct 2026",
     priceBounds: {"low":899.99,"high":899.99},
@@ -296,6 +304,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -649,6 +658,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

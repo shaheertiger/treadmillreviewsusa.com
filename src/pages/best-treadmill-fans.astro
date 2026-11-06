@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B00KF60O00?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41RlLLvlq-L._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$120",
     priceBounds: {"low":120,"high":120},
@@ -39,6 +40,7 @@ const PRODUCTS = [
     badge: "Best Training Fan",
     amazonUrl: "https://www.amazon.com/s?k=Wahoo+KICKR+Headwind+Smart+Fan&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$270–$320",
     priceBounds: {"low":270,"high":320},
@@ -64,6 +66,7 @@ const PRODUCTS = [
     badge: "Best Pedestal",
     amazonUrl: "https://www.amazon.com/dp/B01IE8Q8N2?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/412FldapIOL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$80–$85",
     priceBounds: {"low":80,"high":85},
@@ -88,6 +91,7 @@ const PRODUCTS = [
     badge: "Best for Garages",
     amazonUrl: "https://www.amazon.com/s?k=Lasko+3520+Cyclone+20+inch+Air+Circulator+Fan&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$60–$90",
     priceBounds: {"low":60,"high":90},
@@ -113,6 +117,7 @@ const PRODUCTS = [
     badge: "Best Compact",
     amazonUrl: "https://www.amazon.com/s?k=Lasko+U12104+Pivoting+High+Velocity+Blower+Fan&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$80–$115",
     priceBounds: {"low":80,"high":115},
@@ -211,6 +216,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -466,6 +472,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

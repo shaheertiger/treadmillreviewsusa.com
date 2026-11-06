@@ -40,6 +40,7 @@ const PRODUCTS = [
     badge: "Best Club-Quality Feel",
     amazonUrl:
       "https://www.amazon.com/dp/B006BE6HW4?tag=sktiger-20",
+    image: {"url":"https://m.media-amazon.com/images/I/41xQfD1DGZL._SL500_.jpg","width":500,"height":500},
     pros: [
       "FlexDeck shock absorption system used in actual commercial gyms",
       "Commercial-derived frame built to resist flex at high speeds",
@@ -688,6 +689,12 @@ const schema = {
                   </p>
                   <p class="text-gray-900 font-bold">{product.bottomLine}</p>
                 </div>
+                {/* amazon-image */}
+                {product.image && (
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white rounded-xl mb-6 no-underline">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                  </a>
+                )}
                 <a
                   href={product.amazonUrl}
                   target="_blank"

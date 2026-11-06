@@ -13,8 +13,9 @@ const PRODUCTS = [
     name: "REP Fitness Black Bumper Plates (LB)",
     category: "Virgin-rubber training bumpers, pairs and sets",
     badge: "Best Overall",
-    amazonUrl: "https://www.amazon.com/s?k=REP+Fitness+Black+Bumper+Plates&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B013RM1FXI?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41bxU0fe6DL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$70–$200 per pair",
     priceBounds: {"low":70,"high":200},
@@ -40,6 +41,7 @@ const PRODUCTS = [
     badge: "Best Sets",
     amazonUrl: "https://www.amazon.com/s?k=Fringe+Sport+OneFitWonder+Black+Bumper+Plate+Set&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$399–$1,049 per set",
     priceBounds: {"low":399,"high":1049},
@@ -65,6 +67,7 @@ const PRODUCTS = [
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/s?k=bumper+plates&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$55–$199 per pair",
     priceBounds: {"low":55,"high":199},
@@ -88,8 +91,9 @@ const PRODUCTS = [
     name: "Titan Fitness Economy Black Bumper Plates",
     category: "Budget training bumpers, 10 to 100 lb",
     badge: "Widest Range",
-    amazonUrl: "https://www.amazon.com/s?k=Titan+Fitness+Economy+Black+Olympic+Bumper+Plates&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0C4XCGN1W?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/418J29OdNqL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$44–$465",
     priceBounds: {"low":44,"high":465},
@@ -115,6 +119,7 @@ const PRODUCTS = [
     badge: "Best Competition",
     amazonUrl: "https://www.amazon.com/s?k=competition+bumper+plates&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$190–$360 per pair",
     priceBounds: {"low":190,"high":360},
@@ -138,8 +143,9 @@ const PRODUCTS = [
     name: "CAP Barbell Economy Olympic Bumper Plate Set",
     category: "Budget bumper sets, 100 to 370 lb",
     badge: "Lowest Price",
-    amazonUrl: "https://www.amazon.com/s?k=CAP+Barbell+Economy+Olympic+Bumper+Plate+Set&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0DHYM63T6?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41Ojlgf-ZSL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$100–$370 per set",
     priceBounds: {"low":100,"high":370},
@@ -246,6 +252,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -514,6 +521,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Arkon+TAB131+Slim-Grip+Tablet+Mount+Clamp&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$31–$34",
     priceBounds: {"low":31,"high":34},
@@ -39,6 +40,7 @@ const PRODUCTS = [
     badge: "Best for Thick Rails",
     amazonUrl: "https://www.amazon.com/dp/B073SCFKYV?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41xYQPCbobL._SL500_.jpg","width":359,"height":500},
     reviewUrl: null,
     priceRange: "$25",
     priceBounds: {"low":25,"high":25},
@@ -63,6 +65,7 @@ const PRODUCTS = [
     badge: "Best for Quick Removal",
     amazonUrl: "https://www.amazon.com/s?k=Arkon+TABPB031+Clamp+Tablet+Mount&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$28",
     priceBounds: {"low":28,"high":28},
@@ -87,6 +90,7 @@ const PRODUCTS = [
     badge: "Best Phone Holder",
     amazonUrl: "https://www.amazon.com/s?k=Arkon+SM634+Slim-Grip+Ultra+Handlebar+Phone+Mount&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$25",
     priceBounds: {"low":25,"high":25},
@@ -111,6 +115,7 @@ const PRODUCTS = [
     badge: "Best for Walking Pads",
     amazonUrl: "https://www.amazon.com/s?k=Arkon+TAB804+Tablet+Clamp+Mount+Extension+Arm&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$72–$80",
     priceBounds: {"low":72,"high":80},
@@ -209,6 +214,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -467,6 +473,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

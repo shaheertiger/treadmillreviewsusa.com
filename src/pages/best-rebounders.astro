@@ -13,8 +13,9 @@ const PRODUCTS = [
     name: "JumpSport 39\" PRO Fitness Trampoline (350 PRO)",
     category: "Adjustable bungee rebounder, 39-inch, arched legs",
     badge: "Best Overall",
-    amazonUrl: "https://www.amazon.com/s?k=JumpSport+350+PRO+Fitness+Trampoline+39&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B00AR02OKM?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41-Cz-27VqL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$409–$480",
     priceBounds: {"low":409,"high":480},
@@ -40,6 +41,7 @@ const PRODUCTS = [
     badge: "Best Premium",
     amazonUrl: "https://www.amazon.com/s?k=bellicon+rebounder&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "About $880 (44 in., folding legs)",
     priceBounds: {"low":880,"high":880},
@@ -65,6 +67,7 @@ const PRODUCTS = [
     badge: "Best Value Bungee",
     amazonUrl: "https://www.amazon.com/s?k=Leaps+and+Rebounds+Bungee+Rebounder&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$220–$280",
     priceBounds: {"low":220,"high":280},
@@ -88,8 +91,9 @@ const PRODUCTS = [
     name: "JumpSport 39\" ESSENTIAL Fitness Trampoline",
     category: "Soft-bounce bungee rebounder, 39-inch",
     badge: "Softest Bounce",
-    amazonUrl: "https://www.amazon.com/s?k=JumpSport+39+Essential+Fitness+Trampoline&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0030E6O30?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41qVzr8+zyL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$279–$299",
     priceBounds: {"low":279,"high":299},
@@ -115,6 +119,7 @@ const PRODUCTS = [
     badge: "Best Budget With Handle",
     amazonUrl: "https://www.amazon.com/s?k=BCAN+SP3+40+Foldable+Mini+Trampoline+U+Adjustable+Foam+Handle&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$80–$140",
     priceBounds: {"low":80,"high":140},
@@ -138,8 +143,9 @@ const PRODUCTS = [
     name: "Marcy ASG-40 Cardio Trampoline Trainer",
     category: "Budget rebounder with handlebar",
     badge: "Cheapest With a Bar",
-    amazonUrl: "https://www.amazon.com/s?k=Marcy+Trampoline+Cardio+Trainer+with+Handle+ASG-40&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B005CAIY92?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41DDKnzA39L._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$57–$100",
     priceBounds: {"low":57,"high":100},
@@ -237,6 +243,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -501,6 +508,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

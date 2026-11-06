@@ -13,8 +13,9 @@ const PRODUCTS = [
     name: "REP Fitness Rubber Hex Dumbbell Set (5–50 lb) with Rack",
     category: "Rubber hex dumbbells, ten pairs, with three-tier rack",
     badge: "Best Overall",
-    amazonUrl: "https://www.amazon.com/s?k=REP+Fitness+Rubber+Hex+Dumbbell+Set+Rack+5-50&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B01LXM0D3V?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41Jf-iyqCvL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$1,099.99–$1,309.98",
     priceBounds: {"low":1099.99,"high":1309.98},
@@ -40,6 +41,7 @@ const PRODUCTS = [
     badge: "Best Value Full Set",
     amazonUrl: "https://www.amazon.com/s?k=CAP+550+lb+Rubber+Hex+Dumbbell+Set+2-Tier+Rack&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$699.99–$799.99",
     priceBounds: {"low":699.99,"high":799.99},
@@ -63,8 +65,9 @@ const PRODUCTS = [
     name: "CAP Rubber Hex Dumbbell Set with A-Frame Rack (150 lb)",
     category: "Rubber hex dumbbells, five pairs, with A-frame rack",
     badge: "Best Starter Set",
-    amazonUrl: "https://www.amazon.com/s?k=CAP+150+lb+Rubber+Hex+Dumbbell+Set+with+Rack&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B09NLDZ5HM?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41WnbiNDqRL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$199.99–$259.99",
     priceBounds: {"low":199.99,"high":259.99},
@@ -88,8 +91,9 @@ const PRODUCTS = [
     name: "CAP Rubber Hex Dumbbell Set with Vertical Rack (100 lb)",
     category: "Rubber hex dumbbells, three pairs, with vertical rack",
     badge: "Best for Small Rooms",
-    amazonUrl: "https://www.amazon.com/s?k=CAP+100+lb+Rubber+Hex+Dumbbell+Set+Vertical+Rack&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0D2Z4XYF5?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41qIk-n4HDL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$149.99–$169.99",
     priceBounds: {"low":149.99,"high":169.99},
@@ -113,8 +117,9 @@ const PRODUCTS = [
     name: "REP Fitness Urethane Round Dumbbell Set (5–50 lb)",
     category: "Urethane-coated round dumbbells, ten pairs",
     badge: "Best Urethane",
-    amazonUrl: "https://www.amazon.com/s?k=REP+Fitness+Urethane+Coated+Round+Dumbbells+5-50+lb+set&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B07H4S5J6G?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41pRZ-nbpgL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$1,599.99",
     priceBounds: {"low":1599.99,"high":1599.99},
@@ -213,6 +218,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -471,6 +477,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

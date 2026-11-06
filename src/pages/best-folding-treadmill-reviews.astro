@@ -64,6 +64,7 @@ const PRODUCTS = [
     badge: "Best Folding with iFit",
     amazonUrl:
       "https://www.amazon.com/dp/B0193V3DJ6?tag=sktiger-20",
+    image: {"url":"https://m.media-amazon.com/images/I/416-QGAbmaL._SL500_.jpg","width":446,"height":500},
     pros: [
       "7-inch touchscreen with iFit-powered trainer-led workouts",
       "SpaceSaver design with EasyLift assist folds smoothly",
@@ -762,6 +763,12 @@ const schema = {
                   </p>
                   <p class="text-gray-900 font-bold">{product.bottomLine}</p>
                 </div>
+                {/* amazon-image */}
+                {product.image && (
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white rounded-xl mb-6 no-underline">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                  </a>
+                )}
                 <a
                   href={product.amazonUrl}
                   target="_blank"

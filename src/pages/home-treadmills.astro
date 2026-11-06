@@ -39,6 +39,7 @@ const PRODUCTS = [
     category: "Mid-Range Home Cardio",
     badge: "Serious Runner Value Pick",
     amazonUrl: "https://www.amazon.com/dp/B0HFSZR19W?tag=sktiger-20&linkCode=ll1",
+    image: {"url":"https://m.media-amazon.com/images/I/31qNRVPVU1L._SL500_.jpg","width":500,"height":500},
     pros: [
       "20 x 60 inch deck is unusually long for its price",
       "325 lb weight capacity, high for the mid-range tier",
@@ -63,6 +64,7 @@ const PRODUCTS = [
     badge: "Family & Multi-User Pick",
     amazonUrl:
       "https://www.amazon.com/dp/B0D5YKF4SK?tag=sktiger-20",
+    image: {"url":"https://m.media-amazon.com/images/I/31BAhBBSPSL._SL500_.jpg","width":500,"height":500},
     pros: [
       "14-inch rotating HD touchscreen with iFit streaming",
       "Wide -3% to 15% incline/decline range",
@@ -642,6 +644,12 @@ const schema = {
                   </p>
                   <p class="text-gray-900 font-bold">{product.bottomLine}</p>
                 </div>
+                {/* amazon-image */}
+                {product.image && (
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white rounded-xl mb-6 no-underline">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                  </a>
+                )}
                 <a
                   href={product.amazonUrl}
                   target="_blank"

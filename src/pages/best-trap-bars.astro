@@ -13,8 +13,9 @@ const PRODUCTS = [
     name: "REP Fitness Open Trap Bar",
     category: "Open trap bar with removable handles",
     badge: "Best Overall",
-    amazonUrl: "https://www.amazon.com/s?k=open+trap+bar&tag=sktiger-20",
-    amazonLabel: "Shop Similar on Amazon",
+    amazonUrl: "https://www.amazon.com/dp/B07KY3VWD9?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/21tmn8yNq9L._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$399.99–$439.99",
     priceBounds: {"low":399.99,"high":439.99},
@@ -40,6 +41,7 @@ const PRODUCTS = [
     badge: "Best Closed Hex Bar",
     amazonUrl: "https://www.amazon.com/s?k=trap+bar&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "About $415",
     priceBounds: {"low":415,"high":415},
@@ -65,6 +67,7 @@ const PRODUCTS = [
     badge: "Best for Heavy Pulling",
     amazonUrl: "https://www.amazon.com/s?k=open+trap+bar&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "About $465",
     priceBounds: {"low":465,"high":465},
@@ -90,6 +93,7 @@ const PRODUCTS = [
     badge: "Best Value Closed Bar",
     amazonUrl: "https://www.amazon.com/s?k=Titan+Fitness+Rackable+Hex+Trap+Bar&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$350–$440",
     priceBounds: {"low":350,"high":440},
@@ -113,8 +117,9 @@ const PRODUCTS = [
     name: "Bells of Steel Open Trap Bar / Hex Bar",
     category: "Compact open trap bar with jack",
     badge: "Best for Short Rooms",
-    amazonUrl: "https://www.amazon.com/s?k=Bells+of+Steel+Open+Trap+Bar+Hex+Bar+700+lb&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0FHWZ97ZP?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41g6CJO75eL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$299.99–$323.99",
     priceBounds: {"low":299.99,"high":323.99},
@@ -213,6 +218,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -479,6 +485,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

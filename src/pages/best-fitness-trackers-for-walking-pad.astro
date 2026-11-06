@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0B5F9SZW7?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/21o5Z87UgYL._SL500_.jpg","width":500,"height":374},
     reviewUrl: null,
     priceRange: "Around $100",
     priceBounds: {"low":100,"high":100},
@@ -40,6 +41,7 @@ const PRODUCTS = [
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/dp/B09KY5133T?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/51DKoF-gEHL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "Around $25",
     priceBounds: {"low":25,"high":25},
@@ -65,6 +67,7 @@ const PRODUCTS = [
     badge: "Best Pedometer With Distance",
     amazonUrl: "https://www.amazon.com/s?k=3DTriSport+Walking+3D+Pedometer+Clip+Lanyard&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "Around $25",
     priceBounds: {"low":25,"high":25},
@@ -90,6 +93,7 @@ const PRODUCTS = [
     badge: "Best for Runners",
     amazonUrl: "https://www.amazon.com/s?k=Stryd+5.0+Running+Power+Meter+Footpod&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$199–$299",
     priceBounds: {"low":199,"high":299},
@@ -115,6 +119,7 @@ const PRODUCTS = [
     badge: "Best Ring (With Caveats)",
     amazonUrl: "https://www.amazon.com/dp/B0D9WVKXLK?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41VEw2cIuqL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$349–$499",
     priceBounds: {"low":349,"high":499},
@@ -213,6 +218,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -471,6 +477,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

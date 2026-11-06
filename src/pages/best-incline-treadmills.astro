@@ -134,7 +134,8 @@ const PRODUCTS = [
     category: "Entry Incline Treadmill",
     badge: "Best Entry-Level Incline",
     amazonUrl:
-      "https://www.amazon.com/s?k=ProForm+Pro+9000+Treadmill&tag=sktiger-20",
+      "https://www.amazon.com/dp/B09358GQ3D?tag=sktiger-20&linkCode=ll1",
+    image: {"url":"https://m.media-amazon.com/images/I/31GC9cR8D4S._SL500_.jpg","width":500,"height":449},
     pros: [
       "Most affordable machine in this roundup with genuine automatic incline",
       "-3% to 12% incline and decline range is unusual at this price tier",
@@ -755,6 +756,12 @@ const schema = {
                   </p>
                   <p class="text-gray-900 font-bold">{product.bottomLine}</p>
                 </div>
+                {/* amazon-image */}
+                {product.image && (
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white rounded-xl mb-6 no-underline">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                  </a>
+                )}
                 <a
                   href={product.amazonUrl}
                   target="_blank"

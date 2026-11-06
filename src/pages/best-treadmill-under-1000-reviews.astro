@@ -88,6 +88,7 @@ const PRODUCTS = [
     badge: "Best Bluetooth/App Integration Budget",
     amazonUrl:
       "https://www.amazon.com/dp/B08N2XSLY6?tag=sktiger-20",
+    image: {"url":"https://m.media-amazon.com/images/I/31ixa6kuw5L._SL500_.jpg","width":500,"height":452},
     pros: [
       "7-inch touchscreen with iFit compatibility at a genuinely budget price",
       "Incline range up to 10% is generous for this price tier",
@@ -111,6 +112,7 @@ const PRODUCTS = [
     category: "Entry-Level Full-Size Treadmill",
     badge: "Best Full-Size Under $1,000",
     amazonUrl: "https://www.amazon.com/dp/B07WZXVP3H?tag=sktiger-20&linkCode=ll1",
+    image: {"url":"https://m.media-amazon.com/images/I/41q5bpFisiL._SL500_.jpg","width":500,"height":500},
     pros: [
       "Non-folding frame feels noticeably more rigid and stable during use",
       "Explore app connectivity adds scenic routes and workout tracking",
@@ -159,6 +161,7 @@ const PRODUCTS = [
     badge: "Best Budget with iFit",
     amazonUrl:
       "https://www.amazon.com/dp/B0193V3DJ6?tag=sktiger-20",
+    image: {"url":"https://m.media-amazon.com/images/I/416-QGAbmaL._SL500_.jpg","width":446,"height":500},
     pros: [
       "Small touchscreen delivers a more premium feel than the price suggests",
       "SpaceSaver folding design saves real floor space when not in use",
@@ -710,6 +713,12 @@ const schema = {
                   </p>
                   <p class="text-gray-900 font-bold">{product.bottomLine}</p>
                 </div>
+                {/* amazon-image */}
+                {product.image && (
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white rounded-xl mb-6 no-underline">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                  </a>
+                )}
                 <a
                   href={product.amazonUrl}
                   target="_blank"

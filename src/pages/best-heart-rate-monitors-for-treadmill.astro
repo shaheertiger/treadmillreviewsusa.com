@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B07PM54P4N?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31ej46yR6aL._SL500_.jpg","width":500,"height":293},
     reviewUrl: null,
     priceRange: "$90–$105",
     priceBounds: {"low":90,"high":105},
@@ -40,6 +41,7 @@ const PRODUCTS = [
     badge: "Best for Garmin",
     amazonUrl: "https://www.amazon.com/dp/B0DQB2F5GD?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/415Pz-004bL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$70–$80",
     priceBounds: {"low":70,"high":80},
@@ -64,6 +66,7 @@ const PRODUCTS = [
     badge: "Best Rechargeable",
     amazonUrl: "https://www.amazon.com/dp/B0D52P8XS1?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31Co6Uv-awL._SL500_.jpg","width":500,"height":364},
     reviewUrl: null,
     priceRange: "$90–$100",
     priceBounds: {"low":90,"high":100},
@@ -89,6 +92,7 @@ const PRODUCTS = [
     badge: "Best Premium",
     amazonUrl: "https://www.amazon.com/dp/B0F7Z6N7BR?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31DLbvOQoNL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$150–$170",
     priceBounds: {"low":150,"high":170},
@@ -114,6 +118,7 @@ const PRODUCTS = [
     badge: "Best Arm Band",
     amazonUrl: "https://www.amazon.com/dp/B0C5D7HW9D?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41pZF33BRRL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$90–$105",
     priceBounds: {"low":90,"high":105},
@@ -139,6 +144,7 @@ const PRODUCTS = [
     badge: "Best for Older Consoles",
     amazonUrl: "https://www.amazon.com/dp/B08411DQ96?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31XRqk2oorL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$55–$70",
     priceBounds: {"low":55,"high":70},
@@ -163,6 +169,7 @@ const PRODUCTS = [
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/dp/B07R8741CN?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31PR6w-TDRL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$35–$50",
     priceBounds: {"low":35,"high":50},
@@ -261,6 +268,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -512,6 +520,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Concept2+RowErg+Indoor+Rowing+Machine+PM5&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$990–$1,155",
     priceBounds: {"low":990,"high":1155},
@@ -41,6 +42,7 @@ const PRODUCTS = [
     badge: "Best Water Rower",
     amazonUrl: "https://www.amazon.com/s?k=WaterRower+Oak+Rowing+Machine+S4+Monitor&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$1,199–$1,299",
     priceBounds: {"low":1199,"high":1299},
@@ -66,6 +68,7 @@ const PRODUCTS = [
     badge: "Best Connected Rower",
     amazonUrl: "https://www.amazon.com/s?k=Hydrow+Wave+Rowing+Machine&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "About $1,995",
     priceBounds: {"low":1995,"high":1995},
@@ -91,6 +94,7 @@ const PRODUCTS = [
     badge: "Best Magnetic Rower",
     amazonUrl: "https://www.amazon.com/s?k=Sunny+Health+Fitness+SF-RW523021+Dual+Slide+Rail+Magnetic+Rower&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "About $320–$400",
     priceBounds: {"low":320,"high":400},
@@ -116,6 +120,7 @@ const PRODUCTS = [
     badge: "Best Hybrid",
     amazonUrl: "https://www.amazon.com/s?k=MERACH+950+Foldable+Wooden+Rowing+Machine+Water+Electromagnetic&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$540–$820",
     priceBounds: {"low":540,"high":820},
@@ -141,6 +146,7 @@ const PRODUCTS = [
     badge: "Best for Small Spaces",
     amazonUrl: "https://www.amazon.com/s?k=Sunny+Health+Fitness+SF-RW1205+Hydraulic+Rowing+Machine&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$80–$130",
     priceBounds: {"low":80,"high":130},
@@ -247,6 +253,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -512,6 +519,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

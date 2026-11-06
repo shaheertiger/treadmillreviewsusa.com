@@ -109,6 +109,25 @@ export const HAND_REJECTED = new Set([
   'COROS POD 2', 'Beats Powerbeats Fit', 'Theragun Mini (3rd Gen)', 'Panamax MD2', 'Wahoo KICKR Headwind',
   "Mrs. Meyer's Clean Day Liquid Dish Soap", 'Bells of Steel Cable Tower (Plate-Loaded)',
   'REP Fitness Strata Weight Vest', 'PowerBlock Elite USA 90', 'Garmin Forerunner 170', 'PowerBlock Pro 100 EXP',
+  // Rejected by hand on 2026-11-06: an accessory band, a bundle, an EU unit, kg plates for
+  // an LB card, a sibling model or a generic listing in place of the named product.
+  "WHOOP 5.0",
+  "Hyperice Normatec Elite Legs",
+  "Hyperice Vyper 3",
+  "REP Fitness Competition Bumper Plates (LB)",
+  "CAP Barbell \"The Beast\" 7 ft Olympic Bar",
+  "Bells of Steel Pandemonium Squat",
+  "Titan Fitness Wall-Mounted Pull-Up Bar",
+  "Everlast Powercore Freestanding Heavy Bag",
+  "Wahoo KICKR Smart Trainer",
+  "Withings Body Smart",
+  "Cubii Move Under-Desk Elliptical",
+  "Titan Pro 4D Astro Massage Chair",
+  "WaterRower Oak or Natural Rowing Machine with S4 Monitor",
+  "RENPHO Active+ Massage Gun",
+  "Tempo Move",
+  "Covers & All Custom Treadmill Cover",
+  "Bells of Steel Adjustable Competition Kettlebell",
 ]);
 
 /**

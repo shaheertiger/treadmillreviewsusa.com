@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+Fitness+7.4+AT+Studio+Series+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$1,500–$1,800",
     priceBounds: {"low":1500,"high":1800},
@@ -40,6 +41,7 @@ const PRODUCTS = [
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/s?k=Bowflex+T9+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: "/bowflex-t9-treadmill/",
     priceRange: "$1,399–$1,799",
     priceBounds: {"low":1399,"high":1799},
@@ -65,6 +67,7 @@ const PRODUCTS = [
     badge: "Best for Heavier Runners",
     amazonUrl: "https://www.amazon.com/s?k=Horizon+Fitness+7.8+AT+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "Around $2,000",
     priceBounds: {"low":2000,"high":2000},
@@ -90,6 +93,7 @@ const PRODUCTS = [
     badge: "Best Big-Screen Pick",
     amazonUrl: "https://www.amazon.com/s?k=Sole+F85+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: "/sole-f85-treadmill/",
     priceRange: "$2,100–$2,200",
     priceBounds: {"low":2100,"high":2200},
@@ -115,6 +119,7 @@ const PRODUCTS = [
     badge: "Best for Speed",
     amazonUrl: "https://www.amazon.com/dp/B0D5YKDXDV?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31NVjoFCMQL._SL500_.jpg","width":500,"height":500},
     reviewUrl: "/nordictrack-commercial-2450-treadmill/",
     priceRange: "$2,500–$3,000",
     priceBounds: {"low":2500,"high":3000},
@@ -140,6 +145,7 @@ const PRODUCTS = [
     badge: "Premium Pick",
     amazonUrl: "https://www.amazon.com/s?k=Life+Fitness+Run+CX+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: "/life-fitness-run-cx-treadmill/",
     priceRange: "$4,799–$4,899",
     priceBounds: {"low":4799,"high":4899},
@@ -238,6 +244,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -495,6 +502,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

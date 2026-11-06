@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=urethane+olympic+weight+plates&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$26–$280 per pair",
     priceBounds: {"low":26,"high":280},
@@ -40,6 +41,7 @@ const PRODUCTS = [
     badge: "Best Value",
     amazonUrl: "https://www.amazon.com/s?k=REP+Fitness+Old+School+Iron+Plates&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$23–$170 per pair",
     priceBounds: {"low":23,"high":170},
@@ -65,6 +67,7 @@ const PRODUCTS = [
     badge: "Made in USA",
     amazonUrl: "https://www.amazon.com/s?k=olympic+iron+weight+plates&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$31–$260 per pair",
     priceBounds: {"low":31,"high":260},
@@ -88,8 +91,9 @@ const PRODUCTS = [
     name: "CAP Barbell Olympic Cast Iron Grip Plates",
     category: "Budget cast-iron grip plates, singles and packs",
     badge: "Lowest Price",
-    amazonUrl: "https://www.amazon.com/s?k=CAP+Barbell+Olympic+Cast+Iron+Grip+Plate&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B01B262O54?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/51ijp8MqYqL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$115–$360 per pack",
     priceBounds: {"low":115,"high":360},
@@ -115,6 +119,7 @@ const PRODUCTS = [
     badge: "Rubber-Coated Set",
     amazonUrl: "https://www.amazon.com/s?k=Titan+Fitness+Rubber+Coated+Grip+Plates+245+lb&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "About $432 per set",
     priceBounds: {"low":432,"high":432},
@@ -213,6 +218,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -479,6 +485,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

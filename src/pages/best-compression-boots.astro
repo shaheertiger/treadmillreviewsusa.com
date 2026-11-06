@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/dp/B0B72QBWHC?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31twvW0rxML._SL500_.jpg","width":276,"height":500},
     reviewUrl: null,
     priceRange: "$899",
     priceBounds: {"low":899,"high":899},
@@ -40,6 +41,7 @@ const PRODUCTS = [
     badge: "Best Wireless",
     amazonUrl: "https://www.amazon.com/s?k=Hyperice+Normatec+Elite+Wireless+Compression+Boots&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$1,099",
     priceBounds: {"low":1099,"high":1099},
@@ -63,8 +65,9 @@ const PRODUCTS = [
     name: "Therabody JetBoots Prime",
     category: "Wireless air compression boots",
     badge: "Best Value Wireless",
-    amazonUrl: "https://www.amazon.com/s?k=Therabody+JetBoots+Prime+Wireless+Compression+Boots&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0DGRPRYD9?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31MAxBSYXjL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$549.99",
     priceBounds: {"low":549.99,"high":549.99},
@@ -88,8 +91,9 @@ const PRODUCTS = [
     name: "Therabody JetBoots PRO Plus",
     category: "Wireless compression boots with vibration and infrared LED",
     badge: "Most Features",
-    amazonUrl: "https://www.amazon.com/s?k=Therabody+JetBoots+PRO+Plus+Wireless+Compression+Boots&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0DGRT2YGH?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41Ioz1qvKQL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$1,149.99",
     priceBounds: {"low":1149.99,"high":1149.99},
@@ -113,8 +117,9 @@ const PRODUCTS = [
     name: "FIT KING Leg Air Massager",
     category: "Calf and foot air compression massager",
     badge: "Best Budget",
-    amazonUrl: "https://www.amazon.com/s?k=FIT+KING+Leg+Air+Massager+Foot+and+Calf&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0B62V291P?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41-1oIs8hUL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$84–$110",
     priceBounds: {"low":84,"high":110},
@@ -213,6 +218,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -485,6 +491,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "No Longer in the Lineup",
     amazonUrl: "https://www.amazon.com/s?k=NordicTrack+EXP+7i+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "Used and clearance prices vary",
     priceBounds: null,
@@ -41,6 +42,7 @@ const PRODUCTS = [
     badge: "Current Retail Model",
     amazonUrl: "https://www.amazon.com/s?k=NordicTrack+T+Series+8+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: "/nordictrack-t-series-treadmill/",
     priceRange: "Around $999",
     priceBounds: {"low":999,"high":999},
@@ -65,6 +67,7 @@ const PRODUCTS = [
     badge: "Sold on NordicTrack.com",
     amazonUrl: "https://www.amazon.com/dp/B0D7XGWMRD?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31zk9ulTbQL._SL500_.jpg","width":500,"height":500},
     reviewUrl: "/nordictrack-t-series-treadmill/",
     priceRange: "$1,299-$1,799",
     priceBounds: {"low":1299,"high":1799},
@@ -154,6 +157,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -381,6 +385,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

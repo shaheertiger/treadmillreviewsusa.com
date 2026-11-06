@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=wall+mounted+pull+up+bar&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "About $140",
     priceBounds: {"low":140,"high":140},
@@ -40,6 +41,7 @@ const PRODUCTS = [
     badge: "Best Value Wall Mount",
     amazonUrl: "https://www.amazon.com/s?k=Titan+Fitness+Wall+Mounted+Pull+Up+Bar&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$88–$110",
     priceBounds: {"low":88,"high":110},
@@ -63,8 +65,9 @@ const PRODUCTS = [
     name: "Ultimate Body Press Ceiling Mount Pull Up Bar with Reversible Risers",
     category: "Ceiling-joist pull-up bar",
     badge: "Best Ceiling Mount",
-    amazonUrl: "https://www.amazon.com/s?k=Ultimate+Body+Press+Ceiling+Mount+Pull+Up+Bar+Reversible+Risers&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B00OXUWOB6?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/419AKHZskSL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "About $95",
     priceBounds: {"low":95,"high":95},
@@ -88,8 +91,9 @@ const PRODUCTS = [
     name: "Iron Gym Total Upper Body Workout Bar",
     category: "Doorway leverage bar, no screws",
     badge: "Cheapest Doorway Bar",
-    amazonUrl: "https://www.amazon.com/s?k=Iron+Gym+Total+Upper+Body+Workout+Bar&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B001EJMS6K?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31hDoCbNbGS._SL500_.jpg","width":500,"height":290},
     reviewUrl: null,
     priceRange: "Typically $30–$60 (doorway bar range)",
     priceBounds: {"low":30,"high":60},
@@ -113,8 +117,9 @@ const PRODUCTS = [
     name: "Ultimate Body Press XL Doorway Pull Up Bar with Elevated Bar",
     category: "Doorway leverage bar with raised crossbar",
     badge: "Best Doorway Headroom",
-    amazonUrl: "https://www.amazon.com/s?k=Ultimate+Body+Press+XL+Doorway+Pull+Up+Bar+Elevated&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B01NCP3S71?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31gwZSy02CL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "About $82",
     priceBounds: {"low":82,"high":82},
@@ -213,6 +218,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -477,6 +483,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

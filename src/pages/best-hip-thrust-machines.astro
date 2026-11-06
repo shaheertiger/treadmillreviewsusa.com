@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Plate-Loaded",
     amazonUrl: "https://www.amazon.com/s?k=Titan+Fitness+Standing+Hip+Thrust+Machine+Plate-Loaded+440+LB&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$999.99",
     priceBounds: {"low":999.99,"high":999.99},
@@ -38,8 +39,9 @@ const PRODUCTS = [
     name: "BootySprout Hip Thrust Machine",
     category: "Folding band-resistance hip thrust machine",
     badge: "Best Band Machine",
-    amazonUrl: "https://www.amazon.com/s?k=BootySprout+Hip+Thrust+Machine+45+90+135+Lbs&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0C5Y4X7YN?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41u4wjTfEyL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$179",
     priceBounds: {"low":179,"high":179},
@@ -65,6 +67,7 @@ const PRODUCTS = [
     badge: "Best Budget Platform",
     amazonUrl: "https://www.amazon.com/s?k=RitFit+PHM02+Hip+Thrust+Machine&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$259.99–$299.99",
     priceBounds: {"low":259.99,"high":299.99},
@@ -88,8 +91,9 @@ const PRODUCTS = [
     name: "Bells of Steel Soft Glute Bench",
     category: "Dedicated hip thrust bench",
     badge: "Best Hip Thrust Bench",
-    amazonUrl: "https://www.amazon.com/s?k=hip+thrust+bench&tag=sktiger-20",
-    amazonLabel: "Shop Similar on Amazon",
+    amazonUrl: "https://www.amazon.com/dp/B0CV1ZTQFG?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41uw4S1eg+L._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$262.99–$284.99",
     priceBounds: {"low":262.99,"high":284.99},
@@ -113,8 +117,9 @@ const PRODUCTS = [
     name: "Nautilus Glute Drive",
     category: "Commercial plate-loaded seated hip thrust machine",
     badge: "Best Commercial",
-    amazonUrl: "https://www.amazon.com/s?k=hip+thrust+machine&tag=sktiger-20",
-    amazonLabel: "Shop Similar on Amazon",
+    amazonUrl: "https://www.amazon.com/dp/B07H3CLB3Q?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31OtIK5yGXL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$4,299–$4,319",
     priceBounds: {"low":4299,"high":4319},
@@ -213,6 +218,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -471,6 +477,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

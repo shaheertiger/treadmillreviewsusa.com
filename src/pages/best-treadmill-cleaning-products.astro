@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Mild Cleaner",
     amazonUrl: "https://www.amazon.com/s?k=Mrs.+Meyer%27s+Clean+Day+Liquid+Dish+Soap&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$4.79–$5.29",
     priceBounds: {"low":4.79,"high":5.29},
@@ -39,6 +40,7 @@ const PRODUCTS = [
     badge: "Best Cloths",
     amazonUrl: "https://www.amazon.com/s?k=E-Cloth+General+Purpose+Cloth+4+Pack&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$20",
     priceBounds: {"low":20,"high":20},
@@ -61,8 +63,9 @@ const PRODUCTS = [
     name: "WHOOSH! Screen Shine",
     category: "Alcohol- and ammonia-free screen cleaner",
     badge: "Best for Screens",
-    amazonUrl: "https://www.amazon.com/s?k=WHOOSH%21+Screen+Shine+Screen+Cleaner&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0FWSJKJCD?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41YxBU0M1ZL._SL500_.jpg","width":450,"height":500},
     reviewUrl: null,
     priceRange: "$12–$20",
     priceBounds: {"low":12,"high":20},
@@ -87,6 +90,7 @@ const PRODUCTS = [
     badge: "Best Vacuum",
     amazonUrl: "https://www.amazon.com/s?k=BLACK%2BDECKER+dustbuster+AdvancedClean+CHV1410L&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$60",
     priceBounds: {"low":60,"high":60},
@@ -111,6 +115,7 @@ const PRODUCTS = [
     badge: "Best Gym Wipes",
     amazonUrl: "https://www.amazon.com/dp/B015QVHD4S?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41GvSiOulhL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$148–$214 per case of 4",
     priceBounds: {"low":148,"high":214},
@@ -209,6 +214,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -457,6 +463,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

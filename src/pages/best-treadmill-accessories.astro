@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Mat",
     amazonUrl: "https://www.amazon.com/s?k=SuperMats+Heavy+Duty+TreadMat+Treadmill+Mat&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$50–$75",
     priceBounds: {"low":50,"high":75},
@@ -39,6 +40,7 @@ const PRODUCTS = [
     badge: "Best Lubricant",
     amazonUrl: "https://www.amazon.com/s?k=Lube-N-Walk+Treadmill+Lubricating+Kit+100%25+Silicone&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$17–$25",
     priceBounds: {"low":17,"high":25},
@@ -63,6 +65,7 @@ const PRODUCTS = [
     badge: "Best HR Monitor",
     amazonUrl: "https://www.amazon.com/dp/B07PM54P4N?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31ej46yR6aL._SL500_.jpg","width":500,"height":293},
     reviewUrl: null,
     priceRange: "$90–$105",
     priceBounds: {"low":90,"high":105},
@@ -88,6 +91,7 @@ const PRODUCTS = [
     badge: "Best Foot Pod",
     amazonUrl: "https://www.amazon.com/s?k=running+foot+pod&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$199–$299",
     priceBounds: {"low":199,"high":299},
@@ -113,6 +117,7 @@ const PRODUCTS = [
     badge: "Best Surge Protector",
     amazonUrl: "https://www.amazon.com/s?k=Panamax+MD2+Surge+Protector&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$30–$70",
     priceBounds: {"low":30,"high":70},
@@ -138,6 +143,7 @@ const PRODUCTS = [
     badge: "Best Fan",
     amazonUrl: "https://www.amazon.com/dp/B000E5WAUO?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41hb7pBdd9L._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$40–$85",
     priceBounds: {"low":40,"high":85},
@@ -162,6 +168,7 @@ const PRODUCTS = [
     badge: "Best Cleaning Pick",
     amazonUrl: "https://www.amazon.com/s?k=E-Cloth+General+Purpose+Cloth&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$10–$20",
     priceBounds: {"low":10,"high":20},
@@ -259,6 +266,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -501,6 +509,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

@@ -39,6 +39,7 @@ const PRODUCTS = [
     category: "Folding Interactive Treadmill",
     badge: "Best for Tall Runners",
     amazonUrl: "https://www.amazon.com/dp/B08FLWMWSF?tag=sktiger-20&linkCode=ll1",
+    image: {"url":"https://m.media-amazon.com/images/I/311KePCXsOL._SL500_.jpg","width":500,"height":500},
     pros: [
       "Full 20 x 60-inch deck gives taller runners real stride room",
       "400-lb weight capacity is among the highest of any folding treadmill",
@@ -703,6 +704,12 @@ const schema = {
                   </p>
                   <p class="text-gray-900 font-bold">{product.bottomLine}</p>
                 </div>
+                {/* amazon-image */}
+                {product.image && (
+                  <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white rounded-xl mb-6 no-underline">
+                    <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                  </a>
+                )}
                 <a
                   href={product.amazonUrl}
                   target="_blank"

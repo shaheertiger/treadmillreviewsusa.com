@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=Spirit+Fitness+XT685+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$2,900–$3,200",
     priceBounds: {"low":2900,"high":3200},
@@ -40,6 +41,7 @@ const PRODUCTS = [
     badge: "Best for Incline",
     amazonUrl: "https://www.amazon.com/s?k=NordicTrack+X16+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$2,500–$2,700",
     priceBounds: {"low":2500,"high":2700},
@@ -63,8 +65,9 @@ const PRODUCTS = [
     name: "Life Fitness T3",
     category: "Best Non-Folding Treadmill From a Gym Brand",
     badge: "Best Value Gym Brand",
-    amazonUrl: "https://www.amazon.com/dp/B008PAS1HG?tag=sktiger-20&linkCode=ll1",
+    amazonUrl: "https://www.amazon.com/dp/B006BE6HW4?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41xQfD1DGZL._SL500_.jpg","width":500,"height":500},
     reviewUrl: "/life-fitness-t3-treadmill/",
     priceRange: "$3,499–$4,119",
     priceBounds: {"low":3499,"high":4119},
@@ -90,6 +93,7 @@ const PRODUCTS = [
     badge: "Built for Daily Use",
     amazonUrl: "https://www.amazon.com/s?k=Life+Fitness+Run+CX+Treadmill&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: "/life-fitness-run-cx-treadmill/",
     priceRange: "Around $4,899",
     priceBounds: {"low":4899,"high":4899},
@@ -115,6 +119,7 @@ const PRODUCTS = [
     badge: "Premium Pick",
     amazonUrl: "https://www.amazon.com/s?k=Life+Fitness+treadmill&tag=sktiger-20",
     amazonLabel: "Shop Similar on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$7,599–$10,999",
     priceBounds: {"low":7599,"high":10999},
@@ -213,6 +218,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -473,6 +479,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>

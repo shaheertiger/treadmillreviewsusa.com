@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Best Overall",
     amazonUrl: "https://www.amazon.com/s?k=UREVO+SpaceWalk+3S+Walking+Pad&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$250–$350",
     priceBounds: {"low":250,"high":350},
@@ -40,6 +41,7 @@ const PRODUCTS = [
     badge: "Most Incline",
     amazonUrl: "https://www.amazon.com/s?k=MERACH+UltraWalk+W60+Plus+Walking+Pad&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: null,
     priceRange: "$280–$500",
     priceBounds: {"low":280,"high":500},
@@ -65,6 +67,7 @@ const PRODUCTS = [
     badge: "Best Budget",
     amazonUrl: "https://www.amazon.com/dp/B0H2HV9KD5?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/414t0YUkaFL._SL500_.jpg","width":400,"height":500},
     reviewUrl: null,
     priceRange: "$200–$240",
     priceBounds: {"low":200,"high":240},
@@ -90,6 +93,7 @@ const PRODUCTS = [
     badge: "Fixed 5% Incline",
     amazonUrl: "https://www.amazon.com/dp/B08R37V99Q?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41EBwO9lKOL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$300–$480",
     priceBounds: {"low":300,"high":480},
@@ -115,6 +119,7 @@ const PRODUCTS = [
     badge: "Lowest Price",
     amazonUrl: "https://www.amazon.com/s?k=Wellfit+TM037+Walking+Pad&tag=sktiger-20",
     amazonLabel: "Check Price on Amazon",
+    image: null,
     reviewUrl: "/wellfit-tm037-treadmill/",
     priceRange: "$140–$260",
     priceBounds: {"low":140,"high":260},
@@ -213,6 +218,7 @@ const schema = {
       name: product.name,
       description: product.description,
       brand: { "@type": "Brand", name: product.name.split(" ")[0] },
+      ...(product.image ? { image: product.image.url } : {}),
       ...(product.priceBounds
         ? {
             offers: {
@@ -468,6 +474,11 @@ const schema = {
                   </span>
                 </div>
                 <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block bg-white mb-6 no-underline">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain m-0" />
+                    </a>
+                  )}
                   <div class="flex items-center gap-2 mb-4 flex-wrap">
                     <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
                     <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
