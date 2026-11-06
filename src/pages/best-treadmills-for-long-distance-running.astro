@@ -1,0 +1,848 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBadge from "../components/TrustBadge.astro";
+import SocialProof from "../components/SocialProof.astro";
+
+const title = "Best Treadmills for Long Distance Running (2026): Five Picks";
+const description =
+  "Five treadmills for long distance running and triathlon training, judged on what high weekly mileage asks of a machine: continuous-duty motors, 60 in. decks, cushioning, cooling and warranty.";
+
+const PRODUCTS = [
+  {
+    id: "sole-tt8",
+    name: "Sole TT8",
+    brand: "Sole",
+    category: "Non-folding light-commercial treadmill",
+    badge: "Best for High Mileage",
+    amazonUrl: "https://www.amazon.com/s?k=Sole+Fitness+TT8+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    image: null,
+    reviewUrl: null,
+    priceRange: "About $2,500 (Amazon, 6 Nov 2026)",
+    priceBounds: {"low":2500,"high":2500},
+    specs: "4.0 HP · 22 x 60 in. · 0.5–12 mph · -6% to 15% incline · 400 lb capacity · non-folding · 15.6 in. touchscreen",
+    pros: [
+      "Non-folding frame with a 400 lb capacity, per SOLE",
+      "4.0 HP motor, the largest rating on this page",
+      "22 x 60 in. running surface",
+      "Decline to -6%, useful for downhill race courses",
+      "Programs including a 10K, HIIT and heart-rate control, per the listing",
+    ],
+    cons: [
+      "Does not fold, and weighs more than 300 lb",
+      "Tops out at 12 mph",
+      "Published warranty terms differ between sources; check the current terms before buying",
+    ],
+    bottomLine: "The machine here most suited to 40 or more miles a week, if you have the space for a non-folding treadmill.",
+    description: "The TT8 is SOLE's light-commercial treadmill, and of the five machines here it is the one built most clearly for heavy, repeated use. The Amazon listing gives a 4.0 HP motor, a 22 x 60 in. running surface, a 0.5 to 12 mph speed range, an incline and decline range of -6 to 15 and a 15.6 in. touch screen, with programs including Hill, Fat Burn, HIIT, 10K and heart-rate control. SOLE's own site adds a non-folding frame and a 400 lb user capacity. For a high-mileage runner, the non-folding frame and high capacity are what matter: a frame that does not fold has no hinge to flex, and a machine rated well above your weight works less hard on every stride over thousands of miles. The decline is useful too, for runners training for downhill courses. The cons are practical. It weighs more than 300 lb, so place it once and leave it. It stops at 12 mph, which is ample for long runs and limiting for fast intervals. And published warranty terms differ: one SOLE comparison page gives lifetime frame and motor cover with two years on parts and one on labour, while other sources describe longer terms, so confirm them with SOLE. Amazon showed it at about $2,500 on 6 November 2026.",
+  },
+  {
+    id: "sole-f83",
+    name: "Sole F83",
+    brand: "Sole",
+    category: "Folding treadmill for heavy home use",
+    badge: "Best Folding",
+    amazonUrl: "https://www.amazon.com/s?k=Sole+F83+Folding+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    image: null,
+    reviewUrl: null,
+    priceRange: "About $1,800 (Amazon, 6 Nov 2026)",
+    priceBounds: {"low":1800,"high":1800},
+    specs: "3.5 HP · 22 x 60 in. · 0.5–12 mph · 0–15% incline · 350 lb capacity · lifetime frame and motor warranty",
+    pros: [
+      "A 22 x 60 in. deck on a folding frame",
+      "Lifetime frame and motor warranty, per the listing",
+      "Crossflow cooling fan and a 10.1 in. swivel touchscreen",
+      "Built-in Bluetooth heart-rate receiver",
+    ],
+    cons: [
+      "A 2026 model, so there is little long-term owner evidence yet",
+      "No decline",
+      "Parts and labour warranty terms are not given in the listing",
+    ],
+    bottomLine: "For runners who log high mileage but need a treadmill that folds, and want a long motor warranty.",
+    description: "The F83 is one of SOLE's 2026 folding treadmills, and it brings a full-width running deck to a folding frame. The Amazon listing gives a 3.5 HP motor, a 22 x 60 in. cushioned deck, a 0.5 to 12 mph speed range, a 0 to 15 percent power incline with quick keys at 0, 5, 10 and 15 percent, a 10.1 in. swivel and tilt touchscreen, a crossflow cooling fan, a built-in Bluetooth heart-rate receiver, a 350 lb user capacity and a lifetime frame and motor warranty. SOLE's site describes the motor as brushless. For long distance runners, the combination of a 22 in. belt and a lifetime motor warranty on a folding machine is the reason to choose it. The wider belt gives a tired stride more margin late in a long run, and the warranty suggests SOLE expects the motor to see heavy use. Two cautions. It is a new model, so there is little evidence yet of how it holds up after several thousand miles; buyers who want a long track record should look at the TT8 or the Horizon. And the listing does not set out parts and labour terms, so ask before buying. Amazon showed it at about $1,800 on 6 November 2026.",
+  },
+  {
+    id: "horizon-7-4-at",
+    name: "Horizon Fitness 7.4 AT",
+    brand: "Horizon Fitness",
+    category: "Folding treadmill with continuous-duty motor",
+    badge: "Best for Triathletes",
+    amazonUrl: "https://www.amazon.com/s?k=Horizon+Fitness+7.4+AT+Studio+Series+Treadmill&tag=sktiger-20",
+    amazonLabel: "Check Price on Amazon",
+    image: null,
+    reviewUrl: null,
+    priceRange: "About $1,588 (Amazon, 6 Nov 2026)",
+    priceBounds: {"low":1588,"high":1588},
+    specs: "3.5 CHP continuous-duty · 22 x 60 in. · 0.5–12 mph · 0–15% incline · 350 lb capacity",
+    pros: [
+      "The listing states a continuous-duty 3.5 CHP rating, the clearest motor rating here",
+      "Full 22 x 60 in. surface with three-zone Variable Response Cushioning",
+      "App connectivity with no subscription required, per the listing",
+      "QuickDial controls and one-touch keys for changing pace off the bike",
+      "Built-in fan, Bluetooth speakers and device holder",
+    ],
+    cons: [
+      "No decline",
+      "A folding frame, less solid than the non-folding TT8",
+      "The console is basic; most features come through your own device",
+    ],
+    bottomLine: "For triathletes and app-based runners who want a continuous-duty motor and a full-size deck without a subscription.",
+    description: "Horizon's 7.4 AT suits the long distance runner who trains with apps rather than a built-in screen. Its Amazon listing gives a RapidSync 3.5 CHP drive, described explicitly as a continuous-duty motor, a 22 x 60 in. running surface with three-zone Variable Response Cushioning, a 0.5 to 12 mph speed range, a 0 to 15 percent incline, a 350 lb maximum user weight and a one-step hydraulic folding system. It also lists Bluetooth app connectivity with no subscription required, a device holder, a fan, Bluetooth speakers and programs including 5K, distance and heart-rate options. For triathletes, that last point matters: the run sits alongside whatever you already use for the bike, rather than inside a separate platform, and QuickDial controls make it easy to start a brick run gently and build. For any long runner, the continuous-duty rating is reassuring, because many listings quote horsepower without saying what kind. The limits are a basic console, a folding frame that is less rigid than the TT8's, and no decline. Amazon showed it at about $1,588 on 6 November 2026, which makes it the value pick among the three 22 in. machines.",
+  },
+  {
+    id: "sole-f65",
+    name: "Sole F65",
+    brand: "Sole",
+    category: "Folding treadmill for moderate budgets",
+    badge: "Best Under $1,500",
+    amazonUrl: "https://www.amazon.com/dp/B0HFSZR19W?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31qNRVPVU1L._SL500_.jpg","width":500,"height":500},
+    reviewUrl: null,
+    priceRange: "About $1,400 (Amazon, 6 Nov 2026)",
+    priceBounds: {"low":1400,"high":1400},
+    specs: "3.25 HP · 20 x 60 in. cushioned deck · 0.5–12 mph · 0–15% incline · crossflow fan",
+    pros: [
+      "A 60 in. deck and 3.25 HP motor for about $1,400",
+      "0–15% power incline with Hill, Interval and Strength programs",
+      "Crossflow cooling fan and Bluetooth speakers",
+      "Kick-release folding frame with a hydraulic cylinder",
+    ],
+    cons: [
+      "A 20 in. belt leaves less margin than 22 in. late in long runs",
+      "An older F65 listing is still on Amazon at a lower price; make sure you are buying the current model",
+      "The listing does not state the user capacity",
+    ],
+    bottomLine: "For long runners on a tighter budget whose stride is steady enough for a 20 in. belt.",
+    description: "The F65 has long been SOLE's mid-priced folding treadmill, and the current version keeps the formula. The Amazon listing gives a 3.25 HP motor, a 20 x 60 in. cushioned deck, a 0.5 to 12 mph speed range via roller controls, a 0 to 15 percent power incline, Hill, Interval and Strength programs, a white LED display, dual Bluetooth speakers, a crossflow cooling fan, USB-C charging and a kick-release folding frame with a hydraulic cylinder. For long distance running, the 60 in. deck and motor rating are adequate for most runners, and the fan, though small, helps on long sessions alongside a standing fan. The main limit is width: at 20 in., the belt leaves less room for a stride that wanders as you tire, which matters more on two-hour runs than on short ones. Heavier runners, and anyone with a wide or erratic gait, should look at a 22 in. machine. Note too that an older F65 listing remains on Amazon at a lower price; the current model's listing was the one we checked. Amazon showed it at about $1,400 on 6 November 2026.",
+  },
+  {
+    id: "nordictrack-t-series-16",
+    name: "NordicTrack T Series 16",
+    brand: "NordicTrack",
+    category: "Folding treadmill with adjustable cushioning",
+    badge: "Best Adjustable Cushioning",
+    amazonUrl: "https://www.amazon.com/dp/B0FBYJPXQ9?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/31IJMmHM8RL._SL500_.jpg","width":500,"height":491},
+    reviewUrl: null,
+    priceRange: "About $1,299 (Amazon, 6 Nov 2026)",
+    priceBounds: {"low":1299,"high":1299},
+    specs: "0–12 mph · 0–12% incline · SelectFlex soft-to-firm cushioning · 20 x 60 in. · 325 lb capacity · 16 in. touchscreen",
+    pros: [
+      "SelectFlex cushioning adjusts from soft to firm, per the listing",
+      "The lowest price on this page",
+      "16 in. tilting touchscreen",
+      "Folds, with assisted lowering",
+    ],
+    cons: [
+      "Motor ratings differ between sources, so we have left the motor out",
+      "A 20 in. belt and a 325 lb capacity, the lightest-duty figures here",
+      "Many features depend on an iFIT membership at $39 a month, per the listing",
+    ],
+    bottomLine: "For runners on a budget who want to choose between a softer and a firmer deck for different long runs.",
+    description: "The T Series 16 is NordicTrack's upper-mid folding treadmill, and its reason to be on this page is cushioning you can change. The Amazon listing describes SelectFlex cushioning that adjusts from soft to firm, a 0 to 12 mph speed range, a 0 to 12 percent incline, a 16 in. tilting touchscreen, a folding frame with assisted lowering and ActivePulse heart-rate control with an iFIT membership. Retailer listings agree on a 325 lb user capacity, and NordicTrack's product data gives a belt of about 20 x 60 in. On long runs, adjustable cushioning is useful: many runners like a firmer deck for race-pace work and a softer one for easy miles. We have left the motor rating out, because NordicTrack-style listings give 3.0 CHP while several retailers and reviews give 3.6, and on a page about long runs that figure matters, so check it with the seller. With a 20 in. belt and the lowest capacity here, it is also the lightest-duty machine on the list, better suited to moderate weekly mileage than to 50-mile weeks. Many features need iFIT, which the listing prices at $39 a month. Amazon showed it at about $1,299 on 6 November 2026.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.treadmillreviewsusa.com/" },
+        { "@type": "ListItem", position: 2, name: "Best Treadmills", item: "https://www.treadmillreviewsusa.com/best/" },
+        { "@type": "ListItem", position: 3, name: "Best Treadmills for Long Distance Running", item: "https://www.treadmillreviewsusa.com/best-treadmills-for-long-distance-running/" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is the best treadmill for long distance running?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "For high weekly mileage, a non-folding machine with a strong motor and a 22 x 60 in. deck, such as the Sole TT8. If you need a folding treadmill, the Sole F83 and Horizon 7.4 AT both have 22 in. belts and 3.5 HP motors. On a tighter budget, the Sole F65 has a 60 in. deck and a 3.25 HP motor.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the best treadmill for triathlon training?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "One with a continuous-duty motor, a 60 in. deck, quick speed controls for brick runs, and app connectivity that does not depend on a subscription. The Horizon 7.4 AT meets all four. Position it next to your bike trainer so you can move from bike to run safely.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What motor do you need for long runs on a treadmill?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A continuous-duty rating of at least 3.0 CHP, and 3.5 CHP or more for heavier runners or very long sessions. A motor running near its limit for two hours runs hot, so headroom matters more for long runs than for short ones. Check that the listed figure is continuous, not peak.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can a treadmill handle marathon-length runs?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A well-built one can, provided it has a continuous-duty motor with headroom, a 60 in. deck, and space around it for airflow. Keep the motor compartment clean and the deck lubricated as the maker specifies, and stop if the machine smells hot or cuts out.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is a 20 inch treadmill belt wide enough for long distance running?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "For many runners, yes, but 22 in. is more comfortable on long runs. As you tire, your stride wanders, and a wider belt leaves more margin. Heavier runners and those with a wide or uneven gait benefit most from 22 in.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How do you stay cool on long treadmill runs?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Put a standing or wall fan in front of the treadmill, aimed at your upper body; built-in console fans help only a little. Keep the room ventilated, drink to thirst, and avoid running long in a hot garage. Indoors there is no headwind, so you heat up faster than outside.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      headline: title,
+      description: description,
+      author: { "@type": "Person", "@id": "https://www.treadmillreviewsusa.com/editorial-standards/#shaheer-ali-khan", name: "Shaheer Ali Khan", honorificSuffix: "PhD", jobTitle: "Exercise Physiology & Biomechanics Specialist", url: "https://www.treadmillreviewsusa.com/editorial-standards/#who", sameAs: ["https://www.linkedin.com/in/shaheer-ali-khan-data/"], worksFor: { "@type": "Organization", name: "Treadmill Reviews USA" } },
+      datePublished: "2026-11-06",
+      dateModified: "2026-11-06",
+      publisher: { "@type": "Organization", name: "Treadmill Reviews USA" },
+    },
+    ...PRODUCTS.map((product) => ({
+      "@type": "Product",
+      name: product.name,
+      description: product.description,
+      ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
+      ...(product.image ? { image: product.image.url } : {}),
+      ...(product.priceBounds
+        ? {
+            offers: {
+              "@type": "AggregateOffer",
+              priceCurrency: "USD",
+              lowPrice: product.priceBounds.low,
+              highPrice: product.priceBounds.high,
+              url: product.amazonUrl,
+            },
+          }
+        : {}),
+    })),
+    {
+      "@type": "ItemList",
+      name: title,
+      numberOfItems: 5,
+      itemListElement: PRODUCTS.map((product, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: product.name,
+        url: `https://www.treadmillreviewsusa.com/best-treadmills-for-long-distance-running/#${product.id}`,
+      })),
+    },
+  ],
+};
+---
+
+<Layout
+  title={`${title} | Treadmill Reviews USA`}
+  description={description}
+  ogType="article"
+  article={{
+    publishedTime: "2026-11-06",
+    modifiedTime: "2026-11-06",
+    author: "Shaheer Ali Khan",
+    section: "Fitness Equipment",
+    tags: [
+      "best treadmill for long distance running",
+      "treadmill for long distance running",
+      "best treadmill for triathlon training",
+      "treadmill for triathletes",
+      "high mileage treadmill",
+      "continuous duty treadmill motor",
+    ],
+  }}
+  jsonLd={schema}
+  stickyCta={{ text: "See Our Top Picks", link: "#picks" }}
+>
+  <article class="relative overflow-hidden">
+    <!-- Hero Section -->
+    <div class="bg-gray-900 py-16 lg:py-24 relative overflow-hidden">
+      <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <pattern id="dot-pattern-besttreadmillsforlongdistancerunning" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1.5" fill="white"></circle>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#dot-pattern-besttreadmillsforlongdistancerunning)"></rect>
+      </svg>
+      <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+        <div class="flex justify-center mb-6">
+          <TrustBadge />
+        </div>
+        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
+          <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Buying Guide
+          </span>
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+            Updated November 2026
+          </span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-8">
+          Best Treadmills for <span class="text-[#5AA9FF]">Long Distance Running</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          A treadmill that is fine for three 30-minute runs a week can struggle with 40 miles a week of long runs, brick sessions and heat. These five machines are built for volume, and this guide explains which specifications decide whether a treadmill lasts at high mileage.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#picks" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+            See the Picks
+          </a>
+          <a href="#mileage" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
+            Built for Mileage
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Author & Meta -->
+    <div class="max-w-3xl mx-auto px-4 pt-12">
+      <div class="flex flex-wrap items-center gap-4 py-8 border-b border-gray-100">
+        <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="48" height="48" class="w-12 h-12 rounded-full" />
+        <div>
+          <p class="font-bold text-gray-900 leading-tight"><a href="/editorial-standards/#who" rel="author" class="text-gray-900 no-underline hover:underline">Shaheer Ali Khan, PhD</a></p>
+          <p class="text-gray-500 text-sm leading-tight">Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS</p>
+        </div>
+        <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+        <p class="text-gray-500 text-sm">
+          Last Updated: <strong class="text-gray-700">November 6, 2026</strong>
+        </p>
+        <div class="ml-auto">
+          <SocialProof users="1.2k" />
+        </div>
+      </div>
+
+      <div class="not-prose my-10 bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-sm text-gray-700 m-0 leading-relaxed">
+          <strong class="text-gray-900">On the products below.</strong> We have not tested these
+          treadmills. Motor ratings, deck sizes, speed and incline ranges, capacities and warranty terms
+          were checked on 6 November 2026 against each machine's Amazon US listing and, where the listing
+          did not give a figure, against the maker's own site or at least two retailer listings. Where
+          sources disagreed — on one machine's motor rating, and on another's warranty terms — we left the
+          figure out or say so on the card. None of these figures are our own measurements. Prices are the
+          Amazon prices we saw on that date and change often. This page is general buying information, not
+          training or medical advice; if you have a heart condition or an injury, talk to a doctor before
+          increasing your mileage. We earn a commission if you buy through the Amazon links on this page; it
+          does not change which products we list or what we say about them.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="max-w-3xl mx-auto px-4 pt-8">
+      <div class="not-prose bg-orange-50 border border-orange-100 rounded-2xl p-6">
+        <h2 class="text-lg font-black text-gray-900 mt-0 mb-3">Our Top Picks</h2>
+        <ul class="list-none m-0 p-0">
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for High Mileage:</span>
+            <a href="#sole-tt8" class="font-bold text-gray-900 no-underline hover:underline">Sole TT8</a>
+            <a href="#sole-tt8" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Folding:</span>
+            <a href="#sole-f83" class="font-bold text-gray-900 no-underline hover:underline">Sole F83</a>
+            <a href="#sole-f83" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best for Triathletes:</span>
+            <a href="#horizon-7-4-at" class="font-bold text-gray-900 no-underline hover:underline">Horizon Fitness 7.4 AT</a>
+            <a href="#horizon-7-4-at" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Under $1,500:</span>
+            <a href="#sole-f65" class="font-bold text-gray-900 no-underline hover:underline">Sole F65</a>
+            <a href="#sole-f65" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+          <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
+            <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Adjustable Cushioning:</span>
+            <a href="#nordictrack-t-series-16" class="font-bold text-gray-900 no-underline hover:underline">NordicTrack T Series 16</a>
+            <a href="#nordictrack-t-series-16" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-3xl mx-auto px-4 py-10">
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <h2 class="flex items-center gap-2 text-lg font-black text-gray-900 mt-0 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FF5A1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          In This Guide
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <a href="#quick-picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">1. Our Picks at a Glance</a>
+          <a href="#picks" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">2. The 5 Best Treadmills for Long Distance Running</a>
+          <a href="#mileage" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">3. What High Mileage Asks of a Treadmill</a>
+          <a href="#triathlon" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">4. Treadmills for Triathlon Training</a>
+          <a href="#heat-and-cooling" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">5. Heat, Cooling and the Motor</a>
+          <a href="#cushioning" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">6. Cushioning for Long Runs</a>
+          <a href="#wear-and-lifespan" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">7. How High Mileage Wears a Treadmill</a>
+          <a href="#choosing-between" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">8. Choosing Between the Five</a>
+          <a href="#who-should-skip" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">9. Who Should Buy Something Else</a>
+          <a href="#faq" class="flex items-start gap-2 text-[#0F62FE] no-underline font-medium text-sm hover:underline">10. Frequently Asked Questions</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 pb-16 lg:pb-24">
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <p class="text-2xl font-medium text-gray-900 mb-8 italic">
+          The best treadmill for long distance running is one that will keep doing the same job, mile
+          after mile, for years: a continuous-duty motor with headroom, a 60 in. deck, cushioning you can
+          live with for two hours, a way to stay cool, and a warranty that suggests the maker expects it to
+          be used hard. This page lists five machines sold on Amazon US that meet those tests at different
+          prices, and focuses on what distinguishes a high-mileage runner's needs: weekly volume,
+          triathlon brick sessions, heat and long-term wear. If you are training for one marathon, our
+          guide to the
+          <a href="/best-treadmills-for-marathon-training/" class="text-[#0F62FE] font-medium">best treadmills for marathon training</a>
+          covers six further machines and the long-run session itself; we have not repeated its picks here.
+        </p>
+
+        <div id="quick-picks" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">1. Our Picks at a Glance</h2>
+<p>
+            If your budget allows, the Sole TT8 is the most robust machine here for high weekly mileage.
+            The Sole F83 and Horizon 7.4 AT are the best folding options, and the Sole F65 and NordicTrack T
+            Series 16 cost less but have narrower 20 in. belts.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
+            <thead><tr>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Pick</th>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Best for</th>
+              <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Why</th>
+            </tr></thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sole TT8</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Highest mileage</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Non-folding, 4.0 HP, 400 lb capacity, -6% decline</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sole F83</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Folding, for heavy use</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.5 HP, 22 x 60 in., lifetime frame and motor warranty</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon Fitness 7.4 AT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Triathletes and app users</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.5 CHP continuous, no subscription needed</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sole F65</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lower budget</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3.25 HP and a fan for about $1,400</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack T Series 16</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Adjustable cushioning</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">SelectFlex soft-to-firm deck, 16 in. screen</td></tr>
+            </tbody>
+          </table></div>
+        </div>
+
+        <div id="picks" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">2. The 5 Best Treadmills for Long Distance Running</h2>
+<p>
+            The order runs from the most heavy-duty machine to the least expensive. Each card gives the
+            figures we could confirm and says what limits the machine for long runs.
+          </p>
+        </div>
+      </div>
+
+      <!-- Product cards -->
+      <div class="not-prose">
+        {
+          PRODUCTS.map((product, index) => (
+            <div id={product.id} class="scroll-mt-24 mt-12 first:mt-8">
+              <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                <div class="bg-gray-900 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
+                  <div>
+                    <h3 class="text-white font-black text-xl leading-tight m-0">
+                      {index + 1}. {product.name}
+                    </h3>
+                    <p class="text-gray-400 text-xs">{product.category}</p>
+                  </div>
+                  <span class="bg-[#FF5A1F] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                    {product.badge}
+                  </span>
+                </div>
+                <div class="p-6">
+                  {product.image && (
+                    <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="block mb-6 rounded-xl border border-gray-100 bg-white p-4">
+                      <img src={product.image.url} alt={product.name} width={product.image.width} height={product.image.height} loading="lazy" decoding="async" class="mx-auto h-56 w-auto max-w-full object-contain" />
+                    </a>
+                  )}
+                  <div class="flex items-center gap-2 mb-4 flex-wrap">
+                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Typical street price</span>
+                    <span class="ml-auto font-black text-gray-900">{product.priceRange}</span>
+                  </div>
+                  <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{product.specs}</p>
+                  <p class="text-gray-700 leading-relaxed mb-6" set:html={product.description} />
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                    <div class="bg-green-50 border border-green-100 rounded-xl p-4">
+                      <h4 class="text-xs font-black uppercase tracking-widest text-green-700 mt-0 mb-2">What We Like</h4>
+                      <ul class="space-y-2">
+                        {product.pros.map((pro) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+                      <h4 class="text-xs font-black uppercase tracking-widest text-red-700 mt-0 mb-2">What We Don't Like</h4>
+                      <ul class="space-y-2">
+                        {product.cons.map((con) => (
+                          <li class="text-sm text-gray-700 leading-relaxed">{con}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="border-t border-gray-100 pt-4">
+                    <p class="text-gray-900 font-bold mb-4">{product.bottomLine}</p>
+                    <div class="flex flex-wrap items-center gap-3">
+                      <a href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+                        {product.amazonLabel} &rarr;
+                      </a>
+                      {product.reviewUrl && (
+                        <a href={product.reviewUrl} class="text-[#0F62FE] font-bold no-underline text-sm hover:underline">
+                          Read our full {product.name} review &rarr;
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed">
+        <div id="mileage" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">3. What High Mileage Asks of a Treadmill</h2>
+<p>
+            A long distance runner does not need a different kind of treadmill. They need one that will cope
+            with more of everything: more minutes a session, more sessions a week, and more years of both.
+            Four specifications predict that better than any feature list.
+          </p>
+          <p>
+            <strong>A continuous-duty motor with headroom.</strong> A motor rated in continuous horsepower
+            (CHP) is rated for what it can sustain, not a brief peak. For long runs at a steady pace, 3.0 CHP
+            is a sensible floor and 3.5 or more gives headroom, especially for heavier runners, because a motor
+            working near its limit for two hours runs hot. Our
+            <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">treadmill horsepower guide</a>
+            explains how to read the ratings. Listings do not always say whether a figure is continuous; where a
+            maker says so, we note it.
+          </p>
+          <p>
+            <strong>A 60 in. deck, and 22 in. wide if you can.</strong> Sixty inches is the usual minimum for
+            running. Width matters more on long runs than short ones: as you tire, your stride wanders, and a
+            20 in. belt leaves less margin. Three of the five picks have 22 in. belts.
+          </p>
+          <p>
+            <strong>A frame built for the user weight with room to spare.</strong> Maximum user weight is a
+            rough proxy for frame and roller strength. A machine rated well above your weight is working less
+            hard on every stride.
+          </p>
+          <p>
+            <strong>A warranty that covers the motor and frame for years.</strong> Makers price warranty terms
+            to their expected failure rates. A lifetime motor warranty does not guarantee a motor will not
+            fail, but a 90-day parts warranty on a running treadmill tells you something too. Read the parts and
+            labour terms, not just the headline.
+          </p>
+        </div>
+
+        <div id="triathlon" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">4. Treadmills for Triathlon Training</h2>
+<p>
+            Triathletes use a treadmill differently from marathon runners. Three habits change what to look
+            for.
+          </p>
+          <p>
+            <strong>Brick sessions.</strong> A brick is a bike ride followed straight away by a run. Indoors,
+            that usually means a smart trainer next to a treadmill, and the run starts on legs that feel heavy
+            and uncoordinated for the first few minutes. Quick, simple speed controls help, because you will want
+            to start conservatively and build. Position the treadmill so you can step from the bike to the belt
+            safely, with the safety key ready, and put a mat under both.
+          </p>
+          <p>
+            <strong>App connectivity.</strong> Many triathletes train with Zwift, TrainerRoad or similar, and want
+            their run data in the same place as their rides. A treadmill that broadcasts speed over Bluetooth, or
+            a foot pod, makes that work. Subscription-tied consoles can get in the way; the Horizon 7.4 AT's
+            listing says no subscription is required for its app connectivity. Our guide to the
+            <a href="/best-treadmills-for-zwift/" class="text-[#0F62FE] font-medium">best treadmills for Zwift</a>
+            covers the details.
+          </p>
+          <p>
+            <strong>Race-specific pace.</strong> Most age-group triathletes run their race well inside 12 mph, so
+            top speed rarely matters. What matters more is holding a steady pace off the bike, which a motorised
+            belt makes easy to practise.
+          </p>
+          <p>
+            <strong>Heat.</strong> Many triathlons are held in summer heat. Some athletes deliberately train warm
+            indoors to prepare; if you do, do it carefully and briefly, with fluids to hand, and stop if you feel
+            unwell. For most people the more important point is the opposite: a hot room on a long run raises
+            heart rate and shortens sessions, so plan to cool the room.
+          </p>
+        </div>
+
+        <div id="heat-and-cooling" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">5. Heat, Cooling and the Motor</h2>
+<p>
+            Long runs generate heat in two places: you and the motor. Both need airflow.
+          </p>
+          <p>
+            <strong>Cooling you.</strong> Indoors there is no headwind, so sweat does not evaporate as it would
+            outside, and core temperature climbs faster. The small fans built into treadmill consoles, such as
+            the crossflow fans on the Sole picks, help a little. A standing or wall fan aimed at your upper body
+            helps far more. Our guide to the
+            <a href="/best-treadmill-fans/" class="text-[#0F62FE] font-medium">best treadmill fans</a>
+            covers sizes and placement.
+          </p>
+          <p>
+            <strong>Cooling the motor.</strong> A motor that runs for two hours at a steady load gets warm, and
+            dust in the motor compartment holds heat. Keep the area under and around the machine clear, vacuum
+            the motor compartment with the machine unplugged every few months, and do not run the treadmill in
+            a cupboard or tight alcove. If a treadmill smells hot or cuts out on long runs, stop and read our
+            guide to <a href="/treadmill-overheating/" class="text-[#0F62FE] font-medium">treadmill overheating</a>.
+          </p>
+          <p>
+            <strong>Room temperature.</strong> A garage in summer can be hotter than outdoors. Measure the room
+            before you put a treadmill in it, and plan for a fan from the start.
+          </p>
+        </div>
+
+        <div id="cushioning" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">6. Cushioning for Long Runs</h2>
+<p>
+            Every treadmill deck flexes more than a road, and most add some form of cushioning on top. On a
+            20-minute run you will barely notice the difference between systems. Over two hours, more runners
+            have a preference.
+          </p>
+          <p>
+            <strong>Soft is not always better.</strong> A very soft deck absorbs energy you would otherwise get
+            back, and some runners find it tiring over long distances. A moderately cushioned, stable deck suits
+            most people. If you already run in a high-cushion shoe, a firmer deck setting often feels better.
+          </p>
+          <p>
+            <strong>Adjustable cushioning</strong> lets you choose. The NordicTrack T Series 16's SelectFlex
+            cushioning switches between softer and firmer settings, which is useful if you want a firmer feel for
+            race-pace work and a softer one for easy long runs. Our guide to
+            <a href="/treadmill-cushioning-explained/" class="text-[#0F62FE] font-medium">treadmill cushioning</a>
+            explains the systems.
+          </p>
+          <p>
+            <strong>Deck wear.</strong> High mileage wears the belt and deck. Lubricate the deck as the maker
+            specifies, check belt tension and alignment every few months, and expect to replace a belt sooner
+            than an occasional runner would. A well-maintained deck feels the same at mile 2,000 as at mile 200;
+            a dry one does not.
+          </p>
+        </div>
+
+        <div id="wear-and-lifespan" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">7. How High Mileage Wears a Treadmill</h2>
+<p>
+            A treadmill used for three short runs a week may cover a few hundred miles a year. A long
+            distance runner doing most of their training indoors can put 2,000 miles a year on a machine.
+            The parts wear in a predictable order, and knowing it helps you budget.
+          </p>
+          <p>
+            <strong>Belt and deck first.</strong> The belt slides over the deck under your full weight on every
+            stride. Without lubrication, friction rises, the motor works harder and the belt and deck wear
+            faster. Follow the maker's lubrication schedule, which is usually set by hours or miles, and
+            replace a belt that has frayed edges, a glazed underside or visible stretch.
+          </p>
+          <p>
+            <strong>Rollers and bearings next.</strong> Larger rollers turn more slowly for the same belt speed,
+            which generally means less wear on the bearings. A squeak or rumble that rises with speed is often a
+            bearing, and is cheaper to fix early.
+          </p>
+          <p>
+            <strong>The motor last, if it is looked after.</strong> A motor kept clean and cool, and not run near
+            its limit for long periods, can last many years. Dust and heat are what shorten its life. Our guide
+            to <a href="/how-long-do-treadmill-motors-last/" class="text-[#0F62FE] font-medium">how long treadmill motors last</a>
+            covers the signs of a tiring motor.
+          </p>
+          <p>
+            <strong>Electronics are the wild card.</strong> Consoles and control boards fail less predictably.
+            That is one reason to read the parts warranty as carefully as the motor warranty: a lifetime motor
+            warranty is little comfort if the board that drives it is covered for one year.
+          </p>
+        </div>
+
+        <div id="choosing-between" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">8. Choosing Between the Five</h2>
+<p>
+            <strong>You run 40 miles or more a week and have the space.</strong> The Sole TT8. It does not fold,
+            which is part of why it is the most solid machine here, and its -6 percent decline helps runners
+            training for downhill courses.
+          </p>
+          <p>
+            <strong>You run a lot but need to fold the machine.</strong> The Sole F83, for its 22 in. belt,
+            3.5 HP motor and lifetime frame and motor warranty. The Horizon 7.4 AT is the alternative if you train
+            with apps and want quick speed controls.
+          </p>
+          <p>
+            <strong>You are a triathlete with a smart trainer next to the treadmill.</strong> The Horizon 7.4 AT,
+            for subscription-free app connectivity and a continuous-duty motor.
+          </p>
+          <p>
+            <strong>Your budget is under $1,500.</strong> The Sole F65 or the NordicTrack T Series 16. Both have
+            20 in. belts, so they suit runners with a steady, narrow stride better than heavier or more erratic
+            runners.
+          </p>
+          <p>
+            <strong>You are preparing for a specific marathon.</strong> Read our
+            <a href="/best-treadmills-for-marathon-training/" class="text-[#0F62FE] font-medium">marathon treadmill guide</a>
+            as well; it covers machines with higher top speeds and more decline.
+          </p>
+        </div>
+
+        <div id="who-should-skip" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">9. Who Should Buy Something Else</h2>
+<p>
+            <strong>If you run less than about 15 miles a week,</strong> you do not need a high-mileage machine. A
+            good mid-range treadmill will last you for years and cost much less.
+          </p>
+          <p>
+            <strong>If you want to run fast intervals above 12 mph,</strong> all five picks stop at 12 mph. Look at
+            a treadmill with a higher top speed or a curved trainer.
+          </p>
+          <p>
+            <strong>If space is very tight,</strong> a 60 in. running deck is not negotiable for long runs, so do not
+            compromise with a short compact treadmill; run outside more and use a treadmill less.
+          </p>
+          <p>
+            <strong>If you have an injury that flares with mileage,</strong> a softer deck is not a treatment. See a
+            physiotherapist before you increase your volume.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faq" class="scroll-mt-24">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">10. Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What is the best treadmill for long distance running?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                For high weekly mileage, a non-folding machine with a strong motor and a 22 x 60 in. deck, such as the Sole TT8. If you need a folding treadmill, the Sole F83 and Horizon 7.4 AT both have 22 in. belts and 3.5 HP motors. On a tighter budget, the Sole F65 has a 60 in. deck and a 3.25 HP motor.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What is the best treadmill for triathlon training?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                One with a continuous-duty motor, a 60 in. deck, quick speed controls for brick runs, and app connectivity that does not depend on a subscription. The Horizon 7.4 AT meets all four. Position it next to your bike trainer so you can move from bike to run safely.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">What motor do you need for long runs on a treadmill?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                A continuous-duty rating of at least 3.0 CHP, and 3.5 CHP or more for heavier runners or very long sessions. A motor running near its limit for two hours runs hot, so headroom matters more for long runs than for short ones. Check that the listed figure is continuous, not peak.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Can a treadmill handle marathon-length runs?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                A well-built one can, provided it has a continuous-duty motor with headroom, a 60 in. deck, and space around it for airflow. Keep the motor compartment clean and the deck lubricated as the maker specifies, and stop if the machine smells hot or cuts out.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">Is a 20 inch treadmill belt wide enough for long distance running?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                For many runners, yes, but 22 in. is more comfortable on long runs. As you tire, your stride wanders, and a wider belt leaves more margin. Heavier runners and those with a wide or uneven gait benefit most from 22 in.
+              </p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+              <h3 class="font-bold text-gray-900 mb-2">How do you stay cool on long treadmill runs?</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Put a standing or wall fan in front of the treadmill, aimed at your upper body; built-in console fans help only a little. Keep the room ventilated, drink to thirst, and avoid running long in a hot garage. Indoors there is no headwind, so you heat up faster than outside.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="mt-16">
+          <h2 class="text-3xl font-black text-gray-900 mt-16 mb-6">Common Mistakes Buying a Treadmill for Long Distance Running</h2>
+          <p class="text-gray-700 leading-relaxed">Most of these come from buying for the first month of use rather than the third year.</p>
+          <div class="space-y-6 my-8">
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Trusting a peak horsepower figure</h3>
+              <p class="text-gray-700 text-sm m-0">Peak ratings describe a brief maximum. For two-hour runs, the continuous-duty (CHP) rating is what counts. If a listing does not say which it is, ask the maker or compare with its own specification sheet.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Choosing a 55 in. deck to save space</h3>
+              <p class="text-gray-700 text-sm m-0">Short decks suit walking, not running. Over a long run your stride lengthens and wanders, and a short belt leaves no margin. Buy a 60 in. deck, and 22 in. wide if you can, or keep long runs outdoors.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">No plan for cooling</h3>
+              <p class="text-gray-700 text-sm m-0">A console fan will not keep you cool over two hours indoors. Budget for a proper standing fan from the start, keep the room ventilated, and keep the area around the motor clear of dust.</p>
+            </div>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-6">
+              <h3 class="text-lg font-bold text-red-900 mt-0 mb-2">Skipping maintenance at high mileage</h3>
+              <p class="text-gray-700 text-sm m-0">A treadmill that sees 40 miles a week wears its belt and deck far faster than one used twice a week. Lubricate as specified, check belt tension and alignment every few months, and vacuum the motor compartment.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Guides -->
+        <div class="mt-16">
+          <h2 class="text-2xl font-black text-gray-900 mb-6">Related Running Treadmill Guides</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/best-treadmills-for-marathon-training/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Buying Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Best Treadmills for Marathon Training</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Six machines for marathon blocks, with speed headroom, decline and cooling.</p>
+            </a>
+            <a href="/treadmill-horsepower-guide/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-[#0F62FE]">Guide</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Horsepower Guide</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Continuous versus peak ratings, and how much motor you actually need.</p>
+            </a>
+            <a href="/treadmill-overheating/" class="block bg-white border border-gray-200 rounded-2xl p-5 no-underline hover:shadow-md transition-shadow">
+              <span class="text-xs font-black uppercase tracking-widest text-green-600">Problems</span>
+              <p class="font-bold text-gray-900 mt-2 mb-1">Treadmill Overheating</p>
+              <p class="text-sm text-gray-500 leading-relaxed">Why motors run hot on long sessions, and what to check first.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Closing CTA -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl p-8">
+          <h2 class="text-2xl font-black text-white mb-4">The Bottom Line</h2>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            For long distance running, buy for volume: a continuous-duty motor with headroom, a 60 in. deck, a
+            way to stay cool and a warranty that covers the motor. The <strong class="text-white">Sole TT8</strong>
+            is the most robust machine here; the <strong class="text-white">Sole F83</strong> and Horizon 7.4 AT are
+            the best folding options, and the Horizon suits triathletes who train with apps.
+          </p>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            On a smaller budget, the Sole F65 and NordicTrack T Series 16 will serve moderate mileage, with narrower
+            belts. Whatever you buy, add a fan and keep up with deck maintenance. If you are training for a specific
+            marathon, see our guide to the
+            <a href="/best-treadmills-for-marathon-training/" class="text-[#5AA9FF] font-bold no-underline">best treadmills for marathon training</a>.
+          </p>
+        </div>
+
+        <!-- Meet the Author -->
+        <div class="not-prose mt-12 flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-2xl p-6">
+          <img src="/authors/shaheer-ali-khan.png" alt="Shaheer Ali Khan, PhD" width="56" height="56" class="w-14 h-14 rounded-full flex-shrink-0" loading="lazy" />
+          <div>
+            <h2 class="text-lg font-black text-gray-900 mt-0 mb-1">Meet the Author</h2>
+            <p class="text-sm font-bold text-gray-900 m-0">
+              <a href="/editorial-standards/#who" rel="author" class="text-gray-900">Shaheer Ali Khan, PhD</a>
+              <span class="font-normal text-gray-500"> · Exercise Physiology &amp; Biomechanics Specialist · ACSM-EP, CSCS</span>
+            </p>
+            <p class="text-sm text-gray-700 leading-relaxed mt-2 mb-0">
+              Shaheer holds a PhD in Kinesiology (Biomechanics) from the University of Michigan and an MS in
+              Exercise Physiology from the University of Florida, and is an ACSM Certified Exercise
+              Physiologist and an NSCA Certified Strength and Conditioning Specialist. His treadmill
+              evaluations look at motor performance, belt stability, shock absorption, incline accuracy,
+              running ergonomics, noise and long-term durability. Every guide says what was checked and
+              when, and says plainly when a product has not been tested hands-on.
+              <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">Editorial standards</a> ·
+              <a href="https://www.linkedin.com/in/shaheer-ali-khan-data/" rel="noopener" target="_blank" class="text-[#0F62FE] font-medium">LinkedIn</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </article>
+</Layout>
