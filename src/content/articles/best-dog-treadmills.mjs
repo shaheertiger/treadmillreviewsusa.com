@@ -588,6 +588,12 @@ export default {
       blurb: "Motorised machines sized for toy and small breeds, what was in stock, and the safety rules.",
       url: '/best-dog-treadmills-for-small-dogs/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Dog Treadmill Harnesses",
+      blurb: "Five dog harnesses that suit treadmill training, chosen for free shoulder movement, a secure fit and…",
+      url: '/best-dog-treadmill-harnesses/',
+    },
   ],
   bottomLine: [
     `For most medium and large dogs, the <strong class="text-white">dogPACER LF 3.1</strong> is

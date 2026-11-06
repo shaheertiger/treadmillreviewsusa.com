@@ -535,6 +535,12 @@ export default {
       blurb: 'Friction burns, caught toes and slippery socks, and what to wear instead.',
       url: '/can-you-walk-barefoot-on-a-treadmill/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Men's Running Shoes for Treadmill",
+      blurb: "The best men's running shoes for treadmill running: six current men's models, from the Inov-8 F-Fly…",
+      url: '/best-mens-running-shoes-for-treadmill/',
+    },
   ],
   bottomLine: [
     `For most treadmill runners, a cushioned daily trainer is the right shoe, and the

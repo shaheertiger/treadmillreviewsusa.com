@@ -489,6 +489,12 @@ export default {
       blurb: 'Running surface sizes, loop length and measuring for a replacement.',
       url: '/treadmill-belt-size-guide/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Treadmill Replacement Belts",
+      blurb: "Six treadmill replacement belts matched by model, part number or stated size, and how to measure your old…",
+      url: '/best-treadmill-replacement-belts/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Order by the machine, not by guesswork.</strong> Use the model

@@ -567,6 +567,12 @@ export default {
       blurb: 'Mats, lubricant, mounts and the other add-ons worth having.',
       url: '/best-treadmill-accessories/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Treadmill Cup Holders and Trays",
+      blurb: "Five treadmill cup holders, bottle cages and trays with their bar and cup sizes from the listings, and…",
+      url: '/best-treadmill-cup-holders/',
+    },
   ],
   bottomLine: [
     `For most treadmills with level rails, the <strong class="text-white">VIVO 31" Laptop Tray (STAND-TDML2)</strong>

@@ -552,6 +552,12 @@ export default {
       blurb: 'What a treadmill costs to keep running over its life.',
       url: '/treadmill-maintenance-cost/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Treadmill Replacement Belts",
+      blurb: "Six treadmill replacement belts matched by model, part number or stated size, and how to measure your old…",
+      url: '/best-treadmill-replacement-belts/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Expect a belt to cost in the region of $60 to $250 as a part, and

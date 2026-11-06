@@ -524,6 +524,12 @@ export default {
       blurb: 'When a mat is enough on carpet, and when you need a rigid board as well.',
       url: '/treadmill-on-carpet/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Treadmill Mats for Carpet",
+      blurb: "Five treadmill mats for carpet checked against their Amazon listings: dense rubber and solid vinyl that…",
+      url: '/best-treadmill-mats-for-carpet/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">About 1/4 inch of firm vinyl protects a hard floor; dense rubber at

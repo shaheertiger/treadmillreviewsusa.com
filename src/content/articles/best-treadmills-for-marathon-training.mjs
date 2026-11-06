@@ -623,6 +623,12 @@ export default {
       blurb: 'The wider list for everyday runners, from mid-range to commercial.',
       url: '/best-treadmills-for-running/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Treadmills for Long Distance Running",
+      blurb: "Five treadmills for long distance running and triathlon training, judged on what high weekly mileage asks…",
+      url: '/best-treadmills-for-long-distance-running/',
+    },
   ],
   bottomLine: [
     `For most marathoners, the <strong class="text-white">NordicTrack Commercial 1750</strong>

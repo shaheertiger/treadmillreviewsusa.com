@@ -224,7 +224,7 @@ export default {
             anything else without changing the bike.</li>
           </ul>
           <p>
-            None of this makes a closed platform a bad buy; iFIT's automatic incline and resistance changes
+            None of this makes a closed platform a bad buy; iFIT's <a href="/best-auto-incline-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>automatic incline</a> and resistance changes
             are a real feature that the open bikes cannot match. It means the membership is part of the
             machine, and you should be comfortable paying for it for the bike's life. Our
             <a href="/ifit-vs-peloton/" class="text-[#0F62FE] font-medium">iFIT vs Peloton comparison</a>

@@ -549,6 +549,12 @@ export default {
       blurb: 'The safety rules and how to introduce a dog to a belt.',
       url: '/treadmill-for-dogs/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Dog Treadmill Harnesses",
+      blurb: "Five dog harnesses that suit treadmill training, chosen for free shoulder movement, a secure fit and…",
+      url: '/best-dog-treadmill-harnesses/',
+    },
   ],
   bottomLine: [
     `For a toy breed, the <strong class="text-white">GoPet PetRun PR700</strong> is the machine to buy:

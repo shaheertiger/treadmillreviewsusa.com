@@ -606,6 +606,12 @@ export default {
       blurb: "Five walking pads ranked by checked footprint and weight.",
       url: '/best-mini-treadmills/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Lightweight Treadmills",
+      blurb: "Five lightweight folding treadmills from 44 to 66 lb, each with a weight stated by the listing or the…",
+      url: '/best-lightweight-treadmills/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">For most people the best walking pad is the WalkingPad A1 Pro</strong>:

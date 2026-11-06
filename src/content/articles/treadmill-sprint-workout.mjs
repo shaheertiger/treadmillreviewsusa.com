@@ -572,6 +572,12 @@ export default {
       blurb: 'Why a self-powered belt suits sprinting, and what it is bad at.',
       url: '/curved-treadmill-guide/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Treadmills for Sprinting",
+      blurb: "Five sprint treadmills sold on Amazon, compared on what sprinting needs: top speed, how fast the belt…",
+      url: '/best-treadmills-for-sprinting/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Sprint uphill on a home treadmill.</strong> Six to ten hill

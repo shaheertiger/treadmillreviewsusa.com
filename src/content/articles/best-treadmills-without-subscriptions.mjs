@@ -160,7 +160,7 @@ export default {
           </p>
           <p>
             The experience is roughly 80% of the integrated version at a fraction of the cost.
-            You lose automatic incline and speed adjustment — the trainer tells you to raise the
+            You lose <a href="/best-auto-incline-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>automatic incline</a> and speed adjustment — the trainer tells you to raise the
             incline and you press the button — and you keep everything else, including a far wider
             choice of content than any single manufacturer's library. Third-party running apps and
             ordinary video platforms both work.

@@ -141,6 +141,12 @@ export const SECTIONS: Section[] = [
             url: '/best-treadmills-for-marathon-training/',
           },
           {
+            title: "Best Treadmills for Long Distance Running",
+            description: "Five high-mileage treadmills for distance runners and triathletes: motors, decks, cooling, warranty.",
+            badge: "Distance",
+            url: '/best-treadmills-for-long-distance-running/',
+          },
+          {
             title: 'Best Wide Treadmills',
             description:
               'Treadmills with a verified 22-inch running surface, and listed width versus usable width.',
@@ -191,6 +197,18 @@ export const SECTIONS: Section[] = [
               'Folded footprints measured at the widest point, and why fold effort decides this rather than fold size.',
             badge: 'Compact',
             url: '/best-treadmills-for-small-spaces/',
+          },
+          {
+            title: "Best Lightweight Treadmills",
+            description: "Five folding treadmills from 44 to 66 lb, each with a weight stated by the listing or maker.",
+            badge: "Lightweight",
+            url: '/best-lightweight-treadmills/',
+          },
+          {
+            title: "Best Treadmills for Low Ceilings",
+            description: "Low-deck treadmills from 2.76 in. and the step-up + height + clearance maths for basements.",
+            badge: "Low Ceilings",
+            url: '/best-treadmills-for-low-ceilings/',
           },
           {
             title: 'Portable Treadmills',
@@ -246,6 +264,12 @@ export const SECTIONS: Section[] = [
             url: '/best-treadmills-for-seniors/',
           },
           {
+            title: "Best Treadmills With Handrails",
+            description: "Five treadmills with full-length side rails for walkers, seniors and anyone wanting support.",
+            badge: "Handrails",
+            url: '/best-treadmills-with-handrails/',
+          },
+          {
             title: 'Best Treadmills for Bad Knees',
             description:
               'Deck give and rebound measured. The softest deck is not the kindest — incline is the real tool.',
@@ -264,6 +288,12 @@ export const SECTIONS: Section[] = [
             description: 'Our pick for most people, plus budget, long-belt, heavy-duty, incline and jogging pads.',
             badge: 'Walking pads',
             url: '/best-walking-pads/',
+          },
+          {
+            title: "Best 2-in-1 Folding Treadmills",
+            description: "Walking pads with a lift-up handrail and jogging mode: Goplus, UREVO, Sunny and DeerRun compared.",
+            badge: "2-in-1",
+            url: '/best-2-in-1-folding-treadmills/',
           },
           {
             title: 'Best Walking Pads With Incline',
@@ -327,6 +357,18 @@ export const SECTIONS: Section[] = [
             url: '/best-incline-treadmills/',
           },
           {
+            title: "Best Incline Trainers",
+            description: "True incline trainers that climb to 30\u201345%, and where NordicTrack's X-series fits.",
+            badge: "Incline",
+            url: '/best-incline-trainers/',
+          },
+          {
+            title: "Best Auto Incline Treadmills",
+            description: "Six treadmills and pads with powered incline, from a desk pad to a 15% folding runner.",
+            badge: "Auto Incline",
+            url: '/best-auto-incline-treadmills/',
+          },
+          {
             title: 'Best Treadmills With Decline',
             description:
               'Machines with confirmed powered decline for downhill race and hiking prep, and how much decline is useful.',
@@ -372,6 +414,12 @@ export const SECTIONS: Section[] = [
             url: '/best-treadmills-for-heavy-people/',
           },
           {
+            title: "Best Heavy Duty Treadmills",
+            description: "Five treadmills judged on frame, continuous motor rating, deck and warranty, not the label.",
+            badge: "Durability",
+            url: '/best-heavy-duty-treadmills/',
+          },
+          {
             title: 'Best Walking Pads for Heavy People',
             description:
               'High-capacity walking pads where the rating holds up across sources, and when a full treadmill is the better buy.',
@@ -391,6 +439,18 @@ export const SECTIONS: Section[] = [
             url: '/best-smart-treadmills/',
           },
           {
+            title: "Best Treadmills With Bluetooth Speakers",
+            description: "Five folding treadmills with built-in speakers, $114 to $1,200, and what Bluetooth really means.",
+            badge: "Speakers",
+            url: '/best-treadmills-with-bluetooth-speakers/',
+          },
+          {
+            title: "Best iFIT Treadmills",
+            description: "Six NordicTrack and ProForm treadmills with iFIT, and which membership each one needs.",
+            badge: "iFIT",
+            url: '/best-ifit-treadmills/',
+          },
+          {
             title: 'Best Treadmills for Zwift',
             description:
               'Machines that pair with Zwift over Bluetooth FTMS, and the foot-pod route that works with any treadmill.',
@@ -405,6 +465,12 @@ export const SECTIONS: Section[] = [
             url: '/best-curved-treadmills/',
           },
           {
+            title: "Best Treadmills for Sprinting",
+            description: "A 14 mph motorised treadmill, an interval pick and three curved trainers with no speed limit.",
+            badge: "Sprinting",
+            url: '/best-treadmills-for-sprinting/',
+          },
+          {
             title: 'Best Manual Treadmills',
             description:
               'Non-motorised walkers and runners, from budget magnetic-resistance folders to premium curved units.',
@@ -417,6 +483,12 @@ export const SECTIONS: Section[] = [
               'Purpose-built dog treadmills sized by breed, with the safety rules that matter more than the machine.',
             badge: 'Dogs',
             url: '/best-dog-treadmills/',
+          },
+          {
+            title: "Best Dog Treadmill Harnesses",
+            description: "Five harnesses for guiding a dog by hand on a treadmill, and why you never tie one to it.",
+            badge: "Dogs",
+            url: '/best-dog-treadmill-harnesses/',
           },
           {
             title: 'How to Build a Dog Treadmill',
@@ -531,6 +603,12 @@ export const SECTIONS: Section[] = [
               'What around $300 really buys — mostly walking pads and compact folders — and the picks worth having.',
             badge: 'Under $300',
             url: '/best-treadmills-under-300/',
+          },
+          {
+            title: "Best Treadmills Under $200",
+            description: "Walking pads, 2-in-1s and a manual treadmill under $200, and why nothing at this price is for running.",
+            badge: "Under $200",
+            url: '/best-treadmills-under-200/',
           },
           {
             title: 'Best Budget Treadmills',
@@ -2303,6 +2381,12 @@ export const SECTIONS: Section[] = [
             url: '/best-treadmill-mats/',
           },
           {
+            title: "Best Treadmill Mats for Carpet",
+            description: "Dense rubber and solid vinyl mats that stay flat on carpet pile, and when you need a board.",
+            badge: "Carpet",
+            url: '/best-treadmill-mats-for-carpet/',
+          },
+          {
             title: 'Best Treadmill Accessories',
             description:
               'One verified pick per category: mat, lubricant, heart-rate strap, power protection, fan and more.',
@@ -2345,6 +2429,12 @@ export const SECTIONS: Section[] = [
             url: '/best-womens-running-shoes-for-treadmill/',
           },
           {
+            title: "Best Men's Running Shoes for Treadmill",
+            description: "Six men's models, from the Inov-8 F-Fly gym shoe to stability trainers in 2E and 4E.",
+            badge: "Men's",
+            url: '/best-mens-running-shoes-for-treadmill/',
+          },
+          {
             title: 'Best Foot Pods for Treadmill',
             description:
               'Foot pods for accurate treadmill pace and Zwift, with the watches and apps each one pairs with.',
@@ -2378,6 +2468,24 @@ export const SECTIONS: Section[] = [
               'Mounts that stay steady at running pace without blocking the stop button or safety key.',
             badge: 'Mounts',
             url: '/best-treadmill-tablet-holders/',
+          },
+          {
+            title: "Best Treadmill Phone Holders",
+            description: "Clamp, strap and magnetic phone mounts with stated bar ranges, and where to mount one safely.",
+            badge: "Phone",
+            url: '/best-treadmill-phone-holders/',
+          },
+          {
+            title: "Best Treadmill TV Stands and Mounts",
+            description: "Tall stands, rolling carts and wall mounts, with eye-height and viewing-distance maths.",
+            badge: "TV",
+            url: '/best-treadmill-tv-stands/',
+          },
+          {
+            title: "Best Treadmill Cup Holders and Trays",
+            description: "Clip-on cup holders, bottle cages, strap pouches and trays, and where to put a drink safely.",
+            badge: "Cups",
+            url: '/best-treadmill-cup-holders/',
           },
           {
             title: 'Best Treadmill Covers',
@@ -2681,6 +2789,18 @@ export const SECTIONS: Section[] = [
               '100% silicone, and which applicator — plus how to tell whether your deck is pre-waxed.',
             badge: 'Products',
             url: '/best-treadmill-lubricant/',
+          },
+          {
+            title: "Best Treadmill Replacement Belts",
+            description: "Six belts matched by model, part number or size, and how to measure your old belt so it fits.",
+            badge: "Belts",
+            url: '/best-treadmill-replacement-belts/',
+          },
+          {
+            title: "Best Treadmill Safety Keys",
+            description: "Magnetic vs pin keys, matching by brand and part number, and how to test a key stops the belt.",
+            badge: "Safety Keys",
+            url: '/best-treadmill-safety-keys/',
           },
           {
             title: 'Can You Use WD-40 on a Treadmill?',

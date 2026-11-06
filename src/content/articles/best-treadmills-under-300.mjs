@@ -513,6 +513,12 @@ export default {
       blurb: 'Motorless machines from about $200, with handrails and no outlet needed.',
       url: '/best-manual-treadmills/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Treadmills Under $200",
+      blurb: "Five treadmills under $200 on Amazon, all walking pads, 2-in-1s or manual machines, plus what $100 and…",
+      url: '/best-treadmills-under-200/',
+    },
   ],
   bottomLine: [
     `For most people with $300 to spend, the <strong class="text-white">UREVO SpaceWalk 3S</strong>

@@ -567,6 +567,12 @@ export default {
       blurb: 'The Reebok FR20z Floatride is a non-folding home treadmill sold mainly in the UK and Australia.',
       url: '/reebok-fr20z-floatride-treadmill/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Treadmills for Long Distance Running",
+      blurb: "Five treadmills for long distance running and triathlon training, judged on what high weekly mileage asks…",
+      url: '/best-treadmills-for-long-distance-running/',
+    },
   ],
   bottomLine: [
     `For most people the <strong class="text-white">Horizon 7.8 AT</strong> is the cushioned

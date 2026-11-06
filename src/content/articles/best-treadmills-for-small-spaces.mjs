@@ -476,6 +476,12 @@ export default {
       blurb: "Five walking pads ranked by checked footprint and weight.",
       url: '/best-mini-treadmills/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Lightweight Treadmills",
+      blurb: "Five lightweight folding treadmills from 44 to 66 lb, each with a weight stated by the listing or the…",
+      url: '/best-lightweight-treadmills/',
+    },
   ],
   bottomLine: [
     `Judge the fold, not the folded dimensions. The

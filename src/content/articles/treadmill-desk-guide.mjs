@@ -215,7 +215,7 @@ export default {
             feet or the belt.</li>
           </ul>
           <p>
-            A full-size treadmill with handrails and a console can make it awkward to get close
+            A full-size <a href="/best-treadmills-with-handrails/" class="text-[#0F62FE] font-medium" data-autolink>treadmill with handrails</a> and a console can make it awkward to get close
             enough to the desk. Do not remove or modify the console or rails to fit; choose a
             machine and desk designed to work together, or a walking pad. Our
             <a href="/walking-pad-vs-treadmill/" class="text-[#0F62FE] font-medium">walking pad vs treadmill</a>

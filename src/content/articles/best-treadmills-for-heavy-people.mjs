@@ -475,6 +475,12 @@ export default {
       blurb: 'Treadmills with a verified 22-inch running surface, and listed width versus usable width.',
       url: '/best-wide-treadmills/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Heavy Duty Treadmills",
+      blurb: "Five heavy duty treadmills checked against Amazon listings on 6 November 2026, and how to judge frame,…",
+      url: '/best-heavy-duty-treadmills/',
+    },
   ],
   bottomLine: [
     `Shop 50 to 75 lbs above your weight, check the roller diameter before anything else, and

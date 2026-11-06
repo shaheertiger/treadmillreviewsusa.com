@@ -623,6 +623,12 @@ export default {
       blurb: 'The motor-free sprint trainers, their trade-offs and current stock notes.',
       url: '/best-curved-treadmills/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Treadmills for Sprinting",
+      blurb: "Five sprint treadmills sold on Amazon, compared on what sprinting needs: top speed, how fast the belt…",
+      url: '/best-treadmills-for-sprinting/',
+    },
   ],
   bottomLine: [
     `For most people who train in intervals, the <strong class="text-white">Horizon 7.8

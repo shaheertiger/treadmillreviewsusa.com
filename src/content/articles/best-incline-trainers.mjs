@@ -1,0 +1,534 @@
+export default {
+  slug: 'best-incline-trainers',
+  title: 'Best Incline Trainers (2026): 30–45% Incline Treadmills Compared',
+  description:
+    'True incline trainers climb to 30% or more and most add a decline. Five picks from a $200 manual model to commercial machines, plus where the NordicTrack X-series fits.',
+  crumbLabel: 'Best Incline Trainers',
+  breadcrumb: { name: 'Best Treadmills', url: '/best/' },
+  kicker: 'Buying Guide',
+  updated: 'November 2026',
+  updatedLong: 'November 6, 2026',
+  published: '2026-11-06',
+  socialProof: '1.8k',
+  h1: ['The Best', 'Incline Trainers'],
+  standfirst:
+    'An incline trainer is a treadmill built to climb: 30% or more, usually with a decline as well, where an ordinary treadmill stops at 12 to 15%. Here are five machines that reach that range, what each costs, and the trade-offs in speed, space and wiring that come with steep grades.',
+  ctas: [
+    { label: 'See the Picks', href: '#quick-picks' },
+    { label: 'What Counts as an Incline Trainer?', href: '#what-is' },
+  ],
+  tags: ['incline trainer', 'incline trainer treadmill', 'best incline trainer', 'incline trainers', 'nordictrack incline trainer', '40% incline treadmill'],
+  stickyCta: { text: 'See the Best Incline Trainers', link: '#quick-picks' },
+  lead: `Most treadmills sold as "incline treadmills" reach 12 or 15 percent. An incline trainer
+          goes much further — 30, 40, even 45 percent — and that changes what the machine is for.
+          At those grades walking becomes hard work, and you can get your heart rate up at 2 or 3
+          mph without the impact of running. The category is small, expensive and dominated by
+          machines sold directly by their makers, so this guide does two things: it names the
+          incline trainers you can order on Amazon today, plus two commercial machines worth
+          knowing, and it explains where NordicTrack's X-series, the best-known incline trainers,
+          fit in.`,
+  note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
+          machines. The three Amazon picks were confirmed on 6 November 2026 as currently sold on
+          Amazon US, and their figures come from the Amazon listing's own specification bullets.
+          The two commercial picks, from TRUE and Freemotion, are not sold under their own names on
+          Amazon US; their figures and prices come from the makers' pages as checked for our
+          earlier guides on 5 November 2026, and their buttons go to a category search on Amazon
+          rather than to the machine itself. Where sources disagreed or a figure appeared in only
+          one place, we left it off the card. Prices change often, so confirm the price,
+          specification and warranty against the exact listing before you order. We earn a
+          commission if you buy through the Amazon links on this page; it does not change which
+          products we list or what we say about them.`,
+  sections: [
+    {
+      id: 'quick-picks',
+      heading: 'The Best Incline Trainers at a Glance',
+      html: `          <p>
+            <strong>The best incline trainer you can order on Amazon is the Sunny Health &amp; Fitness
+            Versatile Treadmill: a powered incline to 45% and a decline to -3%, multi-grip handrails for
+            steep walking and a 300 lb rating, for about $2,200. It tops out at 5 mph, so it is a
+            walking and hiking machine, not a running one.</strong>
+          </p>
+          <p>
+            If you want to run as well as climb, the choice moves to commercial machines: the TRUE
+            Alpine Runner and the <a href="/freemotion-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Freemotion</a> i22.9 both reach 30% with a decline, and cost five times as
+            much. The FreeMotion i11.9 is an older 30% incline trainer still listed on Amazon. And the
+            CURSOR 40% Incline Treadmill reaches 40% for about $200, but you set the incline by hand and
+            the belt is walking-pad sized, so treat it as a cheap way to try steep walking rather than a
+            real incline trainer.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[560px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Pick</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Incline range</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Best for</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sunny Health &amp; Fitness Versatile Treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-3% to 45%, powered</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Steep walking at home</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $2,200 (Amazon)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TRUE Alpine Runner</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-3% to 30%, powered</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Commercial build</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">From about $10,300 (dealers)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Freemotion i22.9 Incline Trainer</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-3% to 30%, powered</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Climbing and running, with iFIT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$11,899 (Freemotion)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">FreeMotion i11.9 Incline Trainer</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">30% incline and decline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A 30% machine on Amazon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $2,875 (Amazon)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">CURSOR 40% Incline Treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">0–40% in five manual steps</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Trying steep walking cheaply</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $200 (Amazon)</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            The machine missing from this table is the one many readers came for: NordicTrack's
+            X-series. The X16 and X24 reach 40% with a -6% decline, but we could not find either sold
+            on Amazon US when we checked. We cover where they fit, and what they cost direct, in
+            <a href="#nordictrack-x-series" class="text-[#0F62FE] font-medium">the X-series section below</a>.
+          </p>`,
+    },
+    {
+      id: 'picks',
+      heading: 'The 5 Best Incline Trainers in 2026',
+      products: true,
+      html: `          <p>
+            Each card gives the figures stated by the Amazon listing or the maker, the price we saw and
+            who the machine suits. Two of the five are commercial machines sold through dealers; their
+            buttons say "Shop Similar on Amazon" because the link goes to a category search, not to the
+            machine itself.
+          </p>
+          <p>
+            The list is short for a reason. Very few treadmills sold for home use reach 30%, and fewer
+            still are sold on Amazon. We would rather show five machines that genuinely climb than pad
+            the list with 15% treadmills described as incline trainers. If 15% is enough for you — and
+            for most people it is — our roundup of the
+            <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">best incline treadmills</a>
+            covers those, at much lower prices.
+          </p>`,
+    },
+    {
+      id: 'how-we-chose',
+      heading: 'How We Chose These Incline Trainers',
+      html: `          <p>
+            We have not tested these machines. They were chosen from published specifications, Amazon
+            listings and the makers' pages, and the claims on this page are limited to what those
+            sources support. Our
+            <a href="/editorial-standards/" class="text-[#0F62FE] font-medium">editorial standards</a>
+            explain the process.
+          </p>
+          <p>
+            Every pick had to reach at least 30% incline, which is the line we use for a true incline
+            trainer, as opposed to an incline treadmill. Amazon picks had to be sold on Amazon US, with
+            a price, on 6 November 2026. Commercial machines that Amazon does not carry were allowed
+            only where the maker's own page gave the incline range and price, and where an earlier
+            guide on this site had already checked them against an independent source.
+          </p>
+          <p>
+            We weighed incline range first, then whether the incline is powered, then the speed the
+            machine allows at steep grades, the <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium" data-autolink>belt size</a>, the user weight rating and the support you
+            can expect from the seller. We gave little weight to screens and app features, which age
+            faster than the frame and the incline motor. Where a listing left out a figure that
+            matters — belt length on the Sunny, the weight rating on the FreeMotion i11.9 — we say so
+            on the card rather than fill the gap from a less reliable source.
+          </p>`,
+    },
+    {
+      id: 'what-is',
+      heading: 'What Counts as an Incline Trainer?',
+      html: `          <p>
+            "Incline trainer" was originally NordicTrack's name for its X-series, and it has become the
+            general name for treadmills whose main job is climbing. There is no formal definition, but
+            three features separate them from ordinary incline treadmills.
+          </p>
+          <p>
+            <strong>A much steeper maximum grade.</strong> Ordinary home treadmills stop at 10 to 15%.
+            Incline trainers reach 30% or more. That is not a small step: 15% is a stiff hill, while
+            30% is closer to a steep mountain path and 40% is steeper than most hiking trails. Steep
+            walking raises your heart rate and works the calves, hamstrings and glutes hard at a low
+            speed, which is why incline trainers appeal to hikers preparing for a trip and to people who
+            want hard cardio without running.
+          </p>
+          <p>
+            <strong>A decline.</strong> Most incline trainers also tilt downwards, typically to -3% or
+            -6%. Downhill walking works the front of the thigh in a different way and is part of
+            preparing for real hills. It also lets route-based workouts follow the descent rather than
+            running flat.
+          </p>
+          <p>
+            <strong>A different shape.</strong> To tilt that far, the deck pivots higher at the front,
+            so incline trainers are tall at steep grades, heavy, and usually non-folding. They tend to
+            have longer handrails, because people hold on more at steep angles, and many limit the top
+            speed as the grade rises.
+          </p>
+          <p>
+            Our explainer on
+            <a href="/incline-trainer-vs-treadmill/" class="text-[#0F62FE] font-medium">incline trainers vs treadmills</a>
+            goes into who needs the extra range and who is better served by a 15% treadmill and the
+            money saved. The short version: if you will mostly walk at 10 to 15% and sometimes run, buy
+            a treadmill. If steep walking is the workout, buy an incline trainer.
+          </p>`,
+    },
+    {
+      id: 'nordictrack-x-series',
+      heading: 'Where the NordicTrack X-Series Fits',
+      html: `          <p>
+            NordicTrack's X-series is the incline trainer most people have heard of, and the search
+            term "incline trainer" is still largely about it. The current models are the X16 and the
+            X24, both with a -6% to 40% range, a 22 by 60-inch belt and a 400 lb maximum user weight by
+            NordicTrack's figures. On 5 November 2026 NordicTrack's checkout pages listed the X16 at
+            $3,699 and the X24 at $4,299. Our
+            <a href="/nordictrack-x24-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack X24 review</a>
+            covers the flagship in detail, including the speed limits independent reviewers report at
+            steep grades.
+          </p>
+          <p>
+            Neither appeared on Amazon US under NordicTrack's own listing when we checked on 6 November,
+            only accessories and covers made to fit them, which is why they are not cards on this page.
+            If you want an X-series machine, buy from NordicTrack or a retailer that sells it with the
+            full warranty, and be wary of marketplace listings that cannot say which generation you will
+            receive.
+          </p>
+          <p>
+            You will also see older X-series names in searches and on the second-hand market. The X22i
+            and the X9i were earlier incline trainers in the same family, and our reviews of the
+            <a href="/nordictrack-x22i-incline-trainer-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack X22i</a>
+            and the
+            <a href="/nordictrack-x9i-incline-trainer-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack X9i</a>
+            explain what to check if you are offered one. A used incline trainer can be good value, but
+            the incline motor and the console are the parts most worth testing before you pay, and the
+            warranty rarely transfers.
+          </p>
+          <p>
+            How does the X-series compare with the picks here? On paper, it sits between the Sunny and
+            the commercial machines: steeper than the TRUE and Freemotion trainers, faster than the
+            Sunny, and with <a href="/is-ifit-worth-it/" class="text-[#0F62FE] font-medium" data-autolink>iFIT</a> built in. If you can buy direct and want one machine for steep walking
+            and occasional running, it is the obvious one to compare against the picks below.
+          </p>`,
+    },
+    {
+      id: 'grades',
+      heading: 'Reading Incline Figures: Percent, Degrees and Levels',
+      html: `          <p>
+            Incline is quoted in three ways, and listings mix them, which makes some machines look
+            steeper than they are.
+          </p>
+          <p>
+            <strong>Percent</strong> is rise over run: a 30% grade rises 30 feet for every 100 feet of
+            horizontal distance. It is the standard on treadmills from established makers.
+            <strong>Degrees</strong> is the angle of the deck, which is always a smaller number: 15% is
+            about 8.5 degrees, 30% about 16.7 degrees, 40% about 21.8 degrees and 45% about 24.2
+            degrees. <strong>Levels</strong> are the maker's own steps, and they tell you nothing about
+            the actual grade unless the listing also gives a percentage.
+          </p>
+          <div class="not-prose overflow-x-auto my-8"><table class="min-w-[420px] w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Grade</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Angle</th>
+                <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Typical machine</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">12–15%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">6.8–8.5°</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Ordinary home treadmill</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">30%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">16.7°</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TRUE and Freemotion incline trainers</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">40%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">21.8°</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack X16 and X24</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">45%</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">24.2°</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sunny Versatile Treadmill</td></tr>
+            </tbody>
+          </table></div>
+          <p>
+            A higher maximum is only useful if you will use it. Many owners of 40% machines spend most
+            of their time between 10 and 25%, and the top of the range is for short, hard intervals.
+            What matters as much is whether the incline is powered, how quickly it moves, and how fast
+            the belt is allowed to go at the grade you want. For a longer explanation of the
+            conversions, see our page on
+            <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#0F62FE] font-medium">treadmill incline in percent vs degrees</a>.
+          </p>`,
+    },
+    {
+      id: 'speed-and-space',
+      heading: 'Speed Limits, Ceiling Height and Power',
+      html: `          <p>
+            Three practical limits catch out incline trainer buyers more than any specification.
+          </p>
+          <p>
+            <strong>Speed at steep grades.</strong> Incline trainers commonly reduce the maximum speed
+            as the grade rises. Independent reviews of the NordicTrack X24 report its speed limited to
+            about 8 mph beyond roughly 16% and to about 6 mph from 25% upward, and a review of the TRUE
+            Alpine Runner reports similar limits. The Sunny stops at 5 mph at any grade. In practice
+            this rarely matters, because few people can run at 25% or more for long, but if you were
+            planning on fast running up steep grades, check the limits first.
+          </p>
+          <p>
+            <strong>Height.</strong> At full incline the front of the deck rises a long way, and the
+            front of the deck is where you stand. Add your own height, the step-up height of the deck
+            and some headroom for the bounce of each step, and a basement ceiling can rule out the top
+            of the range for a tall user. Measure before you order, and measure where the treadmill
+            will stand, not in the middle of the room.
+          </p>
+          <p>
+            <strong>Weight and wiring.</strong> Commercial incline trainers are heavy: TRUE gives a
+            weight of 592 lb for the Alpine Runner, and needs a dedicated 120-volt, 20-amp circuit.
+            Large home machines also draw a lot of current when the incline motor runs. Check your
+            floor, your stairs and your electrics before the delivery is booked, and plug the machine
+            straight into a grounded wall outlet. If a dedicated circuit is required, have an
+            electrician install it first.
+          </p>
+          <p>
+            <strong>Handrails.</strong> Steep grades make people reach for the rails, and hanging on
+            them reduces the work your legs are doing. Hold lightly for balance, especially when the
+            incline is moving, and lower the speed or grade rather than leaning back on the rails to
+            keep up.
+          </p>`,
+    },
+    {
+      id: 'who-should-buy',
+      heading: 'Who Should Buy an Incline Trainer, and Who Should Not',
+      html: `          <p>
+            <strong>Buy one if</strong> steep walking is the workout you want: training for a hiking
+            trip, building leg strength without impact, or getting hard cardio from walking because
+            running does not suit your knees or your back. Incline trainers make a 30-minute walk as
+            demanding as a run, and the decline adds downhill training that ordinary treadmills cannot.
+          </p>
+          <p>
+            <strong>Do not buy one if</strong> you mainly run. A good running treadmill with 15%
+            incline costs less, folds more often, and gives you a full speed range at every grade.
+            Do not buy one, either, if your room cannot take the height, weight or wiring: a 15%
+            treadmill on a riser is not a substitute, and propping a deck up is unsafe.
+          </p>
+          <p>
+            <strong>If you have a health condition</strong> that affects your heart, joints or
+            balance, ask your doctor or physiotherapist before starting steep incline training, and
+            build up the grade gradually. Steep walking is low impact, but it is not low effort.
+          </p>
+          <p>
+            And if the budget will not stretch to an incline trainer, the cheapest route to steep
+            walking is a 15% treadmill used well. Our guide to
+            <a href="/treadmills-with-the-highest-incline/" class="text-[#0F62FE] font-medium">treadmills with the highest incline</a>
+            ranks machines from 40% down to 15%, so you can see how much grade each price buys.
+          </p>`,
+    },
+    {
+      id: 'before-you-order',
+      heading: 'Before You Order an Incline Trainer',
+      html: `          <p>
+            Most incline trainer problems are delivery and installation problems. A short checklist:
+          </p>
+          <p>
+            <strong>Confirm the delivery terms.</strong> These are freight deliveries, often to the
+            kerb or the threshold. Find out whether the seller offers in-room delivery and assembly, and
+            what it costs, before you buy.
+          </p>
+          <p>
+            <strong>Confirm the seller and the warranty.</strong> On Amazon, check who is selling and
+            fulfilling the order. A listing sold by the maker usually carries the maker's warranty; a
+            third-party listing may not. For the FreeMotion i11.9 in particular, ask the seller what
+            warranty is included and whether the machine is new.
+          </p>
+          <p>
+            <strong>Measure three times.</strong> Floor space, ceiling height at the front of the deck
+            and the route from the door to the room. Incline trainers are long, heavy and rarely fold.
+          </p>
+          <p>
+            <strong>Plan the first month.</strong> Start lower than you think: 10 to 15% at a
+            comfortable walk is plenty for the first sessions. Steep grades load the calves and Achilles
+            tendons in a way most people are not used to, and soreness is common if you start at the top
+            of the range.
+          </p>`,
+    },
+  ],
+  products: [
+    {
+      id: 'sunny-versatile-treadmill',
+      name: 'Sunny Health & Fitness Versatile Treadmill',
+      category: 'Best Incline Trainer on Amazon',
+      badge: 'Best Overall',
+      amazonUrl: 'https://www.amazon.com/s?k=Sunny+Health+Fitness+Versatile+Treadmill+Intensive+Auto+Incline+Decline&tag=sktiger-20',
+      priceRange: 'About $2,200 (Amazon, 6 Nov 2026)',
+      specs: '-3% to 45% powered incline · 0.3–5 mph · 20 in. wide running surface · 300 lb capacity · multi-grip handrails',
+      pros: [
+        'A 45% maximum incline, the steepest grade on any machine here',
+        'A -3% decline for downhill walking',
+        'High, mid and low handrail grips for different grades, per the listing',
+        '18 built-in programs and a touchscreen console, with no subscription required',
+      ],
+      cons: [
+        'Tops out at 5 mph, so it is for walking and hiking only',
+        'The listing gives the belt width but not its length, so check it before ordering',
+        'A 300 lb rating is lower than the commercial machines',
+      ],
+      bottomLine:
+        'The steepest incline trainer you can order on Amazon, for people who want hard incline walking and do not need to run.',
+      description:
+        "The Versatile Treadmill is Sunny Health & Fitness's dedicated climbing machine, and it goes steeper than anything else we found for home use. The Amazon listing gives a powered incline to 45% and a decline to -3%, a speed range of 0.3 to 5 mph, a 20-inch-wide running surface with dual shock absorption, a 300 lb maximum user weight, 18 preset programs on a capacitive touchscreen console, and a handrail system with high, mid and low grips for different grades, with pulse sensors in the handlebars. Forty-five percent is about 24 degrees, steeper than the NordicTrack X-series' 40%. The trade-off is speed: 5 mph is a fast walk, so this is a hiking machine, not a running one, and Sunny describes it that way. For incline walking that is no real limit, because few people walk faster than 4 mph on a steep grade. What to check: the listing gives the belt's width but not its length, and we could not confirm a length from a second source, so ask the seller or check the manual before you order if you are tall. The listing title also mentions Wi-Fi smart TV connectivity. Amazon listed it at $2,199.99 on 6 November 2026.",
+    },
+    {
+      id: 'true-alpine-runner',
+      name: 'TRUE Alpine Runner',
+      category: 'Best Commercial-Grade Incline Trainer',
+      badge: 'Commercial Pick',
+      amazonUrl: 'https://www.amazon.com/s?k=TRUE+Fitness+Alpine+Runner+Incline+Trainer&tag=sktiger-20',
+      priceRange: 'From about $10,300 (dealers, 5 Nov 2026)',
+      specs: '22 x 60 in. running surface · -3% to 30% incline · 400 lb capacity · non-folding · dedicated 20-amp circuit',
+      pros: [
+        'A 30% incline and -3% decline on a gym-grade frame',
+        'A 22 by 60-inch running surface for running as well as climbing',
+        'A 400 lb maximum user weight',
+        'Several console options, from a basic LED unit to a touchscreen',
+      ],
+      cons: [
+        'Costs several times as much as NordicTrack’s 40% machines',
+        'Needs a dedicated 120-volt, 20-amp circuit, per TRUE',
+        'Not sold on Amazon US; buy through a TRUE dealer',
+      ],
+      bottomLine:
+        'For a home gym that wants commercial build quality on an incline trainer and has the budget, floor and wiring for it.',
+      description:
+        "The Alpine Runner is TRUE's incline trainer, built to commercial standards and sold to home buyers through dealers. TRUE's product page lists a -3% to 30% grade range, a 60 by 22-inch running surface, a 400 lb maximum user weight, a 71 by 40-inch footprint, a weight of 592 lb and a requirement for a dedicated 120-volt, 20-amp circuit; an independent review and a specialist retailer agree on the grade, the surface and the capacity. Thirty percent is about 16.7 degrees, so it climbs less steeply than the Sunny or the NordicTrack X-series, but it pairs that range with a running deck and a frame built for gym use. Two figures did not agree when our earlier guide checked them: TRUE's current page gives a 12.5 mph top speed while its older spec sheet and an independent review give 12 mph, and the warranty is quoted as commercial terms by TRUE and as separate in-home terms by a retailer, so confirm both with the dealer. One independent review also reports its speed is limited at the steepest grades. It is not sold on Amazon US; the button goes to an Amazon category search.",
+    },
+    {
+      id: 'freemotion-i22-9-incline-trainer',
+      name: 'Freemotion i22.9 Incline Trainer',
+      reviewUrl: '/freemotion-treadmills/',
+      category: 'Best Incline Trainer for Running and Climbing',
+      badge: 'Steepest and Fastest',
+      amazonUrl: 'https://www.amazon.com/s?k=Freemotion+i22.9+Incline+Trainer&tag=sktiger-20',
+      priceRange: '$11,899 at Freemotion’s home store (5 Nov 2026)',
+      specs: '-3% to 30% incline · 0–15 mph · 22 in. touchscreen with iFIT',
+      pros: [
+        'A 15 mph top speed alongside a 30% incline, which few climbing machines offer',
+        'A -3% decline for downhill training',
+        'A 22-inch iFIT touchscreen with trainer-controlled workouts',
+        'Built by the commercial arm of the group behind NordicTrack',
+      ],
+      cons: [
+        'About $11,899, the most expensive machine here',
+        'We found its user rating and motor in only one independent source, so they are not on the card',
+        'Not sold on Amazon US; buy from Freemotion',
+      ],
+      bottomLine:
+        'For a buyer who wants steep climbing and fast running on one commercial machine, and will use iFIT; compare it with the NordicTrack X-series first.',
+      description:
+        "The i22.9 is Freemotion's flagship incline trainer. Freemotion is the commercial brand of iFIT Health & Fitness, the group behind NordicTrack and ProForm, and its incline trainers are built for gyms and sold to home buyers through its own store. Two independent sources give the incline trainers a -3% to 30% range, and one lists the i22.9 at 15 mph with a 22-inch iFIT touchscreen and a 21.5 by 60-inch deck. That combination of a 30% climb and a 15 mph top speed is unusual: most steep-incline machines either top out at a walking pace or cut speed hard at steep grades. The same source lists a 5.0 HP AC motor, a 400 lb user rating and a weight of about 750 lb, but we found those in only one place and could not read Freemotion's own specification sheet, so they are not on the card. Freemotion's home store listed it at $11,899, shown against $17,999, on 5 November 2026, and the cheaper i10.9b keeps the same incline range with a 12 mph top speed. It is not sold on Amazon US; the button goes to an Amazon category search.",
+    },
+    {
+      id: 'freemotion-i11-9-incline-trainer',
+      name: 'FreeMotion i11.9 Incline Trainer',
+      category: 'A 30% Incline Trainer Sold on Amazon',
+      badge: 'On Amazon, Check Seller',
+      amazonUrl: 'https://www.amazon.com/s?k=FreeMotion+i11.9+Incline+Trainer&tag=sktiger-20',
+      priceRange: 'About $2,875 (Amazon, 6 Nov 2026)',
+      specs: '30% incline and decline training · 22 in. wide belt · 10 in. touchscreen console · cushioned deck',
+      pros: [
+        'A 30% incline with decline for well under the price of current commercial trainers',
+        'A 22-inch-wide belt on an extra-long cushioned deck, per the listing',
+        'A 10-inch colour touchscreen with map-based programming',
+      ],
+      cons: [
+        'An older model: the listing refers to iFit Live, an earlier name for iFIT',
+        'The listing gives no top speed, weight rating or warranty; ask the seller',
+        'Confirm the machine is new and who will honour the warranty before ordering',
+      ],
+      bottomLine:
+        'Worth a look if you want a 30% machine from Amazon for under $3,000, but only after the seller confirms condition and warranty.',
+      description:
+        "The i11.9 is an earlier Freemotion incline trainer that is still listed on Amazon US with a price. The listing is short: it describes an extra-long, cushioned deck, a 10-inch colour touchscreen, 30% incline and decline training, a 22-inch-wide running belt, and interactive iFit Live and Google Maps programming. iFit Live was the earlier name of what is now iFIT, which tells you the design dates from several years ago. That is not a reason to rule it out — incline trainers are simple machines underneath, and a 30% grade with decline for about $2,875 is far below the price of the current commercial trainers on this page — but it changes what you need to check. The listing gives no top speed, no maximum user weight, no motor rating and no warranty, and we could not confirm those for this listing from a second source, so none is on the card. Before buying, ask the seller whether the machine is new, who honours the warranty and for how long, and whether the console's connected features still work; plan on using its built-in programs if they do not. Amazon listed it at $2,875 on 6 November 2026.",
+    },
+    {
+      id: 'cursor-40-incline-treadmill',
+      name: 'CURSOR 40% Incline Treadmill',
+      category: 'Budget Way to Try Steep Walking',
+      badge: 'Best Budget',
+      amazonUrl: 'https://www.amazon.com/s?k=CURSOR+40%25+Incline+Treadmill&tag=sktiger-20',
+      priceRange: 'About $200 (Amazon, 6 Nov 2026)',
+      specs: '0–40% manual incline in five steps · 38.6 x 15.4 in. belt · 0.6–6.2 mph · 350 lb capacity · 51 in. handrails · folds',
+      pros: [
+        'Reaches 40% for about a tenth of the price of a powered incline trainer',
+        'Long 51-inch handrails, per the listing, which help on steep grades',
+        'A 350 lb rating and a fold-down frame with wheels',
+        'Light enough to move and store, unlike a full incline trainer',
+      ],
+      cons: [
+        'The incline is set by hand in 10% steps, not powered, so you stop to change it',
+        'A 38.6 by 15.4-inch belt is walking-pad sized and short for a long stride on a slope',
+        'No decline, and the brand has little track record we could check',
+      ],
+      bottomLine:
+        'A cheap way to find out whether steep walking suits you, not a substitute for a powered incline trainer.',
+      description:
+        "The CURSOR is the cheapest way we found to walk at 40%, and it is a very different machine from the others here. The Amazon listing gives five manual incline settings — 0, 10, 20, 30 and 40% — with the deck reaching 15 inches high at the top setting, a 38.6 by 15.4-inch belt, a speed range of 0.6 to 6.2 mph, a 3.0 HP brushless motor, a 350 lb maximum user weight, 51-inch dual handrails described as suited to users 5 ft 11 in. and taller, and a fold-down frame with transport wheels. The word that matters is manual: you change the incline by hand, between sessions or by stopping, so there are no hill programs and no changes mid-walk. The belt is also far shorter and narrower than a full incline trainer's, which matters more on a slope, where your stride lengthens and you drift backwards as you tire. Treat it as a low-cost way to find out whether steep walking suits you before spending thousands, and keep the speed modest at the steep settings. It has no decline. Amazon listed it at $199.99 on 6 November 2026.",
+    },
+  ],
+  faqs: [
+    {
+      q: 'What is an incline trainer?',
+      a: `An incline trainer is a treadmill built for climbing. Where an ordinary home treadmill reaches 10 to 15% incline, an incline trainer reaches 30% or more, and most also decline to -3% or -6%. They are usually heavier, taller at full incline and non-folding, and many reduce the top speed at steep grades.`,
+    },
+    {
+      q: 'What is the best incline trainer?',
+      a: `The best incline trainer you can order on Amazon is the Sunny Health & Fitness Versatile Treadmill, with a -3% to 45% powered incline and a 5 mph top speed, at about $2,200 on 6 November 2026. If you want to run as well as climb, the TRUE Alpine Runner and Freemotion i22.9 reach 30% on commercial frames, at five times the price.`,
+    },
+    {
+      q: 'Is an incline trainer better than a treadmill?',
+      a: `Only if steep walking is your main workout. An incline trainer gives you grades of 30% or more and a decline, but it costs more, takes more room and often limits speed at steep grades. If you mostly run, or 15% incline is enough, a treadmill is cheaper and more versatile.`,
+    },
+    {
+      q: 'Can you buy a NordicTrack incline trainer on Amazon?',
+      a: `We could not find NordicTrack's current X16 or X24 sold on Amazon US under NordicTrack's own listing on 6 November 2026, only covers and parts made to fit them. NordicTrack's own checkout listed the X16 at $3,699 and the X24 at $4,299 on 5 November 2026.`,
+    },
+    {
+      q: 'How steep is 40% incline in degrees?',
+      a: `About 21.8 degrees. Treadmill incline is quoted as a percentage grade, rise over run, which is always a larger number than the angle: 15% is about 8.5 degrees, 30% about 16.7 degrees and 45% about 24.2 degrees.`,
+    },
+    {
+      q: 'Do incline trainers need a special electrical circuit?',
+      a: `Some do. TRUE specifies a dedicated 120-volt, 20-amp circuit for the Alpine Runner, and commercial machines commonly require one. Check the manual for the exact model before delivery, plug the machine directly into a grounded wall outlet, and have an electrician install a dedicated circuit if the maker requires it.`,
+    },
+  ],
+  mistakesHeading: 'Common Mistakes When Buying an Incline Trainer',
+  mistakesIntro:
+    'Each of these turns an expensive climbing machine into one that cannot be used as intended.',
+  mistakes: [
+    {
+      title: 'Buying an incline trainer to run fast',
+      body: `Many incline trainers cut the top speed at steep grades, and some stop at a walking pace altogether. If running is your main workout, a 15% treadmill with a full speed range is the better machine; check the speed limits before buying a climber.`,
+    },
+    {
+      title: 'Not measuring the ceiling at full incline',
+      body: `The front of the deck rises a long way at 30 to 45%, and that is where you stand. Measure the ceiling height where the machine will go and allow for your height, the deck and some headroom, or you will never use the top of the range.`,
+    },
+    {
+      title: 'Treating a manual incline as the same thing',
+      body: `A machine whose incline you change by hand cannot run hill programs or change grade mid-walk. It can be a cheap way to try steep walking, but compare it with powered incline trainers as a different product, not a cheaper version of the same one.`,
+    },
+    {
+      title: 'Starting at the steepest grade',
+      body: `Steep walking loads the calves and Achilles tendons hard. Start at 10 to 15% for the first sessions and build up over weeks, hold the rails lightly for balance rather than hanging on them, and ask a doctor first if you have a heart, joint or balance condition.`,
+    },
+  ],
+  relatedHeading: 'Related Incline Trainer Guides',
+  related: [
+    {
+      kicker: 'Explainer',
+      title: 'Incline Trainer vs Treadmill',
+      blurb: 'Who needs 40% incline, and who is better off with a 15% treadmill.',
+      url: '/incline-trainer-vs-treadmill/',
+    },
+    {
+      kicker: 'Review',
+      title: 'NordicTrack X24',
+      blurb: 'The 40% incline trainer most people mean, and its speed limits at steep grades.',
+      url: '/nordictrack-x24-treadmill/',
+    },
+    {
+      kicker: 'Roundup',
+      title: 'Best Incline Treadmills',
+      blurb: 'Treadmills with 12 to 15% incline that also suit running.',
+      url: '/best-incline-treadmills/',
+    },
+  ],
+  bottomLine: [
+    `<strong class="text-white">The best incline trainer you can order on Amazon is the Sunny Health &amp; Fitness Versatile Treadmill</strong>,
+            with a 45% incline, a -3% decline and grips for steep walking, as long as you do not need
+            to run. For climbing and running on a commercial frame, the TRUE Alpine Runner and the
+            Freemotion i22.9 are the machines to price, and the FreeMotion i11.9 is a 30% option on
+            Amazon if the seller can confirm its condition and warranty. The CURSOR is a cheap way to
+            try steep walking first.`,
+    `If you want NordicTrack's X16 or X24, buy direct, and compare them with these picks on speed
+            at steep grades, size and price. And if 15% would do, our guide to the
+            <a href="/best-incline-treadmills/" class="text-[#5AA9FF] font-bold no-underline">best incline treadmills</a>
+            will save you a great deal of money.`,
+  ],
+};

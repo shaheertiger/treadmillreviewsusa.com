@@ -653,6 +653,12 @@ export default {
       blurb: "Dyaco's budget brand: the TRX1200, TR75 and TR95H Hiker.",
       url: '/xterra-treadmills/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Treadmills Under $200",
+      blurb: "Five treadmills under $200 on Amazon, all walking pads, 2-in-1s or manual machines, plus what $100 and…",
+      url: '/best-treadmills-under-200/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">For walking, the UREVO SpaceWalk 3S is the best budget

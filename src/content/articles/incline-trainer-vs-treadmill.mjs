@@ -378,6 +378,12 @@ export default {
       blurb: 'How climbing compares with incline walking for effort, joints and space.',
       url: '/stairmaster-vs-treadmill/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Incline Trainers",
+      blurb: "True incline trainers climb to 30% or more and most add a decline. Five picks from a $200 manual model to…",
+      url: '/best-incline-trainers/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">An incline trainer is a treadmill that climbs to around 40%.</strong>

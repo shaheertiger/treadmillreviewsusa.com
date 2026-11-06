@@ -580,6 +580,18 @@ export default {
       blurb: 'Console-safe cleaners, cloths and tools for under the belt, and the products to keep away from a deck.',
       url: '/best-treadmill-cleaning-products/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Treadmill Phone Holders",
+      blurb: "Five treadmill phone holders with their bar and phone size ranges taken from the listings, and where to…",
+      url: '/best-treadmill-phone-holders/',
+    },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Treadmill Cup Holders and Trays",
+      blurb: "Five treadmill cup holders, bottle cages and trays with their bar and cup sizes from the listings, and…",
+      url: '/best-treadmill-cup-holders/',
+    },
   ],
   bottomLine: [
     `Buy the two protective accessories first: a properly sized mat such as the
