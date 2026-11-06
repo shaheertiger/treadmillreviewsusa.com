@@ -503,6 +503,12 @@ export default {
       blurb: 'The walking pad category for desk use, flat and 2-in-1, and how they compare.',
       url: '/under-desk-treadmills/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Treadmills With Handrails",
+      blurb: "Five treadmills with full-length or extended side handrails, checked against Amazon and maker listings on…",
+      url: '/best-treadmills-with-handrails/',
+    },
   ],
   bottomLine: [
     `For most people the <strong class="text-white">UREVO Strol 2S Pro</strong> is the 2-in-1 to

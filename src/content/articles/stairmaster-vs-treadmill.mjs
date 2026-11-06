@@ -197,7 +197,7 @@ export default {
           <p>
             <strong>Height and ceilings.</strong> A revolving stair climber is tall — commonly well
             over six feet — and you stand on a step that lifts you some way off the floor, then rise
-            further with each step. In a room with a standard or low ceiling, and especially in a
+            further with each step. In a room with a standard or <a href="/best-treadmills-for-low-ceilings/" class="text-[#0F62FE] font-medium" data-autolink>low ceiling</a>, and especially in a
             basement, head clearance can rule one out. Measure your ceiling and compare it with the
             machine's height plus your own height plus the step rise before buying.
           </p>

@@ -160,7 +160,7 @@ export default {
           <p>
             <strong>4. Watch your dog move.</strong> Walk and trot your dog on the ground for a few minutes. Look for
             a shortened front stride, rubbing behind the front legs, or the harness shifting. Fix those before
-            the first treadmill session.
+            the <a href="/how-to-use-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>first treadmill session</a>.
           </p>
           <p>
             <strong>5. Check again after sessions.</strong> Look for red or bare patches under the straps, especially
@@ -204,7 +204,7 @@ export default {
           </p>
           <p>
             Some owners do use a human treadmill for a calm, medium-sized dog at walking pace, under constant
-            supervision. If you do, everything above applies with more force: belt length must suit the dog's
+            supervision. If you do, everything above applies with more force: <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium" data-autolink>belt length</a> must suit the dog's
             stride, a lead must never be attached to the frame, and the gap at the rear roller must be watched
             constantly. Our comparison of a
             <a href="/dog-treadmill-vs-human-treadmill/" class="text-[#0F62FE] font-medium">dog treadmill and a human treadmill</a>
@@ -212,7 +212,7 @@ export default {
           </p>
           <p>
             One note on search terms: "treadmill harness" also describes body-weight support harnesses used in
-            human gait rehabilitation and in canine hydrotherapy. Those are specialist clinical equipment, used by
+            human gait rehabilitation and in <a href="/underwater-treadmill-for-dogs/" class="text-[#0F62FE] font-medium" data-autolink>canine hydrotherapy</a>. Those are specialist clinical equipment, used by
             trained staff, and are not what this page covers.
           </p>`,
     },

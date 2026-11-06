@@ -539,6 +539,12 @@ export default {
       blurb: 'Why treadmill shoes look newer than they are, and the signs a pair is done.',
       url: '/how-often-to-replace-running-shoes/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Men's Running Shoes for Treadmill",
+      blurb: "The best men's running shoes for treadmill running: six current men's models, from the Inov-8 F-Fly…",
+      url: '/best-mens-running-shoes-for-treadmill/',
+    },
   ],
   bottomLine: [
     `For most women, the best treadmill running shoe is a light, comfortable neutral trainer,

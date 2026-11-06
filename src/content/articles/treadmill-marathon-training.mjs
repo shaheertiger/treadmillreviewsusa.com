@@ -495,6 +495,12 @@ export default {
       blurb: 'Continuous vs peak horsepower, and how much a runner needs.',
       url: '/treadmill-horsepower-guide/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Treadmills for Long Distance Running",
+      blurb: "Five treadmills for long distance running and triathlon training, judged on what high weekly mileage asks…",
+      url: '/best-treadmills-for-long-distance-running/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">A treadmill can carry most of a marathon build.</strong> Use

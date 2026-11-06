@@ -481,6 +481,12 @@ export default {
       blurb: 'What each price band buys, and where the money goes.',
       url: '/how-much-should-you-spend-on-a-treadmill/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best iFIT Treadmills",
+      blurb: "Six treadmills with iFIT from NordicTrack and ProForm, checked against Amazon listings on 6 November…",
+      url: '/best-ifit-treadmills/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">iFIT is worth it if you will use it often.</strong> Classes,

@@ -565,6 +565,18 @@ export default {
       blurb: "10 to 23.8 in. touchscreens, and what works without a subscription.",
       url: '/best-treadmills-with-screens/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Treadmills With Bluetooth Speakers",
+      blurb: "Five folding treadmills with built-in Bluetooth speakers, from a $114 Goplus 2-in-1 to the Sole F63, and…",
+      url: '/best-treadmills-with-bluetooth-speakers/',
+    },
+    {
+      kicker: 'Buying Guide',
+      title: "Best iFIT Treadmills",
+      blurb: "Six treadmills with iFIT from NordicTrack and ProForm, checked against Amazon listings on 6 November…",
+      url: '/best-ifit-treadmills/',
+    },
   ],
   bottomLine: [
     `For most people who want guided training on a built-in screen, the

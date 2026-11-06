@@ -41,7 +41,7 @@ export default {
       heading: 'Our Picks at a Glance',
       html: `          <p>
             Most people with a full-size treadmill on ordinary carpet need the first pick. The others
-            exist because a very long machine, a tight budget or a walking pad each changes the answer.
+            exist because a very long machine, a tight budget or a <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> each changes the answer.
             If your carpet is deep or plush, read the section on rigid boards before you order anything,
             because no mat on its own fixes deep pile.
           </p>
@@ -82,7 +82,7 @@ export default {
           <p>
             <strong>Rocking and uneven feet.</strong> A treadmill sits on four or more small feet, and each
             presses its own dent into the pile. If the dents are not equal, the frame twists slightly, and a
-            twisted frame is one of the commoner reasons a belt drifts to one side. A firm mat spreads each
+            twisted frame is one of the commoner reasons a <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium" data-autolink>belt drifts</a> to one side. A firm mat spreads each
             foot's load over a larger area of carpet, so the dents are shallower and more even.
           </p>
           <p>
@@ -228,7 +228,7 @@ export default {
             is too short for most full-size running treadmills, so do not buy one on price alone.
           </p>
           <p>
-            Leave clear space behind the treadmill as well. Most makers specify a run-off zone behind the
+            Leave clear <a href="/treadmill-dimensions-space-requirements/" class="text-[#0F62FE] font-medium" data-autolink>space behind the treadmill</a> as well. Most makers specify a run-off zone behind the
             belt, commonly about 2 m (roughly 6.5 ft), and the mat should not create a raised edge in that zone that you could
             trip on if you step off the back.
           </p>`,

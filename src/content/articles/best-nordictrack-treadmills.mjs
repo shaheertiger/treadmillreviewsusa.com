@@ -588,6 +588,12 @@ export default {
       blurb: "Discontinued: what is known about it, what iFIT's 2023 cut-off means, parts, buying used, and what.",
       url: '/nordictrack-c950i-treadmill/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best iFIT Treadmills",
+      blurb: "Six treadmills with iFIT from NordicTrack and ProForm, checked against Amazon listings on 6 November…",
+      url: '/best-ifit-treadmills/',
+    },
   ],
   bottomLine: [
     `For most buyers the <strong class="text-white">Commercial 1750</strong> is the NordicTrack

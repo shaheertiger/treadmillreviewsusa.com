@@ -50,7 +50,7 @@ export default {
       heading: 'Our Picks at a Glance',
       html: `          <p>
             Six machines, chosen to cover the realistic home budgets and the most common
-            constraints: a small room, a low ceiling, a tall user, a household of different
+            constraints: a small room, a <a href="/best-treadmills-for-low-ceilings/" class="text-[#0F62FE] font-medium" data-autolink>low ceiling</a>, a tall user, a household of different
             heights, and someone who wants guided workouts on a screen. The short version: the SOLE
             E35 for most people, the Horizon EX-59 if the budget stops under $1,000, and the
             Schwinn 411 if floor space is the problem.

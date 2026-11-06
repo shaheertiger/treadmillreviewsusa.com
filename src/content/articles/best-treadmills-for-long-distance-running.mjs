@@ -43,7 +43,7 @@ export default {
       id: 'quick-picks',
       heading: 'Our Picks at a Glance',
       html: `          <p>
-            If your budget allows, the Sole TT8 is the most robust machine here for high weekly mileage.
+            If your budget allows, the <a href="/sole-tt8-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Sole TT8</a> is the most robust machine here for high weekly mileage.
             The Sole F83 and Horizon 7.4 AT are the best folding options, and the Sole F65 and NordicTrack T
             Series 16 cost less but have narrower 20 in. belts.
           </p>
@@ -114,7 +114,7 @@ export default {
           </p>
           <p>
             <strong>Brick sessions.</strong> A brick is a bike ride followed straight away by a run. Indoors,
-            that usually means a smart trainer next to a treadmill, and the run starts on legs that feel heavy
+            that usually means a <a href="/best-smart-bike-trainers/" class="text-[#0F62FE] font-medium" data-autolink>smart trainer</a> next to a treadmill, and the run starts on legs that feel heavy
             and uncoordinated for the first few minutes. Quick, simple speed controls help, because you will want
             to start conservatively and build. Position the treadmill so you can step from the bike to the belt
             safely, with the safety key ready, and put a mat under both.
@@ -122,7 +122,7 @@ export default {
           <p>
             <strong>App connectivity.</strong> Many triathletes train with Zwift, TrainerRoad or similar, and want
             their run data in the same place as their rides. A treadmill that broadcasts speed over Bluetooth, or
-            a foot pod, makes that work. Subscription-tied consoles can get in the way; the Horizon 7.4 AT's
+            a <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium" data-autolink>foot pod</a>, makes that work. Subscription-tied consoles can get in the way; the Horizon 7.4 AT's
             listing says no subscription is required for its app connectivity. Our guide to the
             <a href="/best-treadmills-for-zwift/" class="text-[#0F62FE] font-medium">best treadmills for Zwift</a>
             covers the details.
@@ -179,7 +179,7 @@ export default {
             most people. If you already run in a high-cushion shoe, a firmer deck setting often feels better.
           </p>
           <p>
-            <strong>Adjustable cushioning</strong> lets you choose. The NordicTrack T Series 16's SelectFlex
+            <strong>Adjustable cushioning</strong> lets you choose. The <a href="/nordictrack-t-series-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>NordicTrack T Series</a> 16's SelectFlex
             cushioning switches between softer and firmer settings, which is useful if you want a firmer feel for
             race-pace work and a softer one for easy long runs. Our guide to
             <a href="/treadmill-cushioning-explained/" class="text-[#0F62FE] font-medium">treadmill cushioning</a>
@@ -241,7 +241,7 @@ export default {
             for subscription-free app connectivity and a continuous-duty motor.
           </p>
           <p>
-            <strong>Your budget is under $1,500.</strong> The Sole F65 or the NordicTrack T Series 16. Both have
+            <strong>Your budget is under $1,500.</strong> The <a href="/sole-f65-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Sole F65</a> or the NordicTrack T Series 16. Both have
             20 in. belts, so they suit runners with a steady, narrow stride better than heavier or more erratic
             runners.
           </p>
@@ -256,7 +256,7 @@ export default {
       heading: 'Who Should Buy Something Else',
       html: `          <p>
             <strong>If you run less than about 15 miles a week,</strong> you do not need a high-mileage machine. A
-            good mid-range treadmill will last you for years and cost much less.
+            good <a href="/treadmills-under-1500/" class="text-[#0F62FE] font-medium" data-autolink>mid-range treadmill</a> will last you for years and cost much less.
           </p>
           <p>
             <strong>If you want to run fast intervals above 12 mph,</strong> all five picks stop at 12 mph. Look at

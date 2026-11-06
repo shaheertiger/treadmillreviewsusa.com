@@ -648,6 +648,18 @@ export default {
       blurb: "Laptop boards, pole trays and phone clamps that strap to a treadmill, how to measure the rails, and when.",
       url: '/best-treadmill-laptop-holders/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Treadmill Phone Holders",
+      blurb: "Five treadmill phone holders with their bar and phone size ranges taken from the listings, and where to…",
+      url: '/best-treadmill-phone-holders/',
+    },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Treadmill TV Stands and Mounts",
+      blurb: "Five TV floor stands, rolling carts and wall mounts for watching from a treadmill, with the eye-height…",
+      url: '/best-treadmill-tv-stands/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Choose the bar first, then the holder.</strong> A screw clamp on

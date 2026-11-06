@@ -532,6 +532,12 @@ export default {
       blurb: 'Gradients for different goals, and how to build up without sore calves.',
       url: '/what-incline-should-i-walk-on-a-treadmill/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Men's Running Shoes for Treadmill",
+      blurb: "The best men's running shoes for treadmill running: six current men's models, from the Inov-8 F-Fly…",
+      url: '/best-mens-running-shoes-for-treadmill/',
+    },
   ],
   bottomLine: [
     `For most people, the best shoes for walking on a treadmill are cushioned, rockered and

@@ -523,6 +523,12 @@ export default {
       blurb: 'The machine side of the noise problem, which matters more than any mat.',
       url: '/quiet-treadmills/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Treadmill Mats for Carpet",
+      blurb: "Five treadmill mats for carpet checked against their Amazon listings: dense rubber and solid vinyl that…",
+      url: '/best-treadmill-mats-for-carpet/',
+    },
   ],
   bottomLine: [
     `For a treadmill on a hard ground-floor surface, buy a properly sized vinyl mat such as the

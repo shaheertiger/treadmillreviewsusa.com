@@ -298,7 +298,7 @@ export default {
           <p>
             <strong>Pull-ups need headroom above the bar.</strong> Titan gives an 80-inch maximum
             pull-up bar height on its 82-inch T-3; your head and shoulders need to clear the ceiling
-            above that. A tall rack under a low ceiling can leave the pull-up bar unusable for full
+            above that. A tall rack under a <a href="/best-treadmills-for-low-ceilings/" class="text-[#0F62FE] font-medium" data-autolink>low ceiling</a> can leave the pull-up bar unusable for full
             pull-ups. Bells of Steel's 91-inch rack is marketed as good for kipping precisely because
             the height leaves more clearance below.
           </p>

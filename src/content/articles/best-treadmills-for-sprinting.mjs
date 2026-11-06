@@ -81,7 +81,7 @@ export default {
           <p>
             <strong>Top speed.</strong> Almost every home treadmill stops at 12 mph, which is a 5:00 mile
             pace. That is fast for a distance runner and slow for a sprinter: a trained sprinter reaches well
-            over 20 mph. A 14 mph top speed, as on the Commercial 2450, gives roughly a 4:17 mile pace and some
+            over 20 mph. A 14 mph top speed, as on the <a href="/nordictrack-commercial-2450-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Commercial 2450</a>, gives roughly a 4:17 mile pace and some
             headroom for strong runners. Curved manual trainers have no electronic limit.
           </p>
           <p>
@@ -139,7 +139,7 @@ export default {
             near top speed.
           </p>
           <p>
-            For a specialist option not sold on Amazon, the NOHrD Sprintbok is a flat, non-motorised sprint
+            For a specialist option not sold on Amazon, the NOHrD Sprintbok is a flat, <a href="/manual-vs-motorized-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>non-motorised</a> sprint
             trainer with a very different design; our <a href="/nohrd-sprintbok/" class="text-[#0F62FE] font-medium">NOHrD Sprintbok review</a>
             covers it.
           </p>`,
@@ -213,7 +213,7 @@ export default {
             <strong>Power.</strong> Motorised treadmills with large motors draw a lot of current, especially
             when a heavy runner sprints. Most makers ask for a dedicated, grounded outlet and advise against
             extension leads. Check the manual for the circuit rating before choosing a room. Curved manual
-            trainers need no outlet to drive the belt; the Tru Grit Runner's console runs on batteries, and
+            trainers need no outlet to drive the belt; the <a href="/tru-grit-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Tru Grit</a> Runner's console runs on batteries, and
             for the others it is worth checking how the console is powered.
           </p>
           <p>
@@ -230,7 +230,7 @@ export default {
           </p>
           <p>
             <strong>Ceiling height.</strong> Stepping onto a deck raises you several inches, and sprinting adds
-            bounce. Tall runners in rooms with low ceilings should measure from the deck height, not the floor.
+            bounce. <a href="/best-treadmills-for-tall-runners/" class="text-[#0F62FE] font-medium" data-autolink>Tall runners</a> in rooms with low ceilings should measure from the deck height, not the floor.
           </p>`,
     },
     {

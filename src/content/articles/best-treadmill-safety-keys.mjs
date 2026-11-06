@@ -110,7 +110,7 @@ export default {
           <p>
             Most home treadmills use a magnetic key. The key contains a small permanent magnet, and
             behind the recess in the console is a switch that closes when a magnet is held close to
-            it, commonly a reed switch. Magnetic keys come in two common shapes: a round disc that
+            it, commonly a <a href="/treadmill-speed-sensor/" class="text-[#0F62FE] font-medium" data-autolink>reed switch</a>. Magnetic keys come in two common shapes: a round disc that
             sits in a circular recess, often found on ICON-built machines such as NordicTrack,
             ProForm, Weslo and Reebok, and a rectangular or shaped block that slots into a matching
             recess. Because the key only has to sit close to the switch, a magnetic key does not
@@ -154,7 +154,7 @@ export default {
             Freemotion.</strong> These are, or have been, ICON brands, and most recent home models
             use a round magnetic key. That is why so many universal keys name this list of brands.
             Some older models used a different key, which is what the TreadLife part 160695 key on
-            this page is for. If your NordicTrack or ProForm key is lost, a round universal magnet
+            this page is for. If your <a href="/nordictrack-vs-proform/" class="text-[#0F62FE] font-medium" data-autolink>NordicTrack or ProForm</a> key is lost, a round universal magnet
             is a reasonable first try, and the test below will tell you whether it works.
           </p>
           <p>
@@ -167,19 +167,19 @@ export default {
           <p>
             <strong>Sole and other Dyaco-built machines.</strong> Sole lists its keys by part
             number, and replacements are sold against that number and a list of models and years.
-            The F60, F63, F80 and F85 appear on several listings, but not every year of every model
+            The F60, F63, F80 and <a href="/sole-f85-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>F85</a> appear on several listings, but not every year of every model
             uses the same key.
           </p>
           <p>
             <strong>Peloton, Bowflex, Life Fitness, Precor, True and other premium or direct-sold
             brands.</strong> Start with the maker's own parts store or support desk. Keys for these
             machines are less often sold by third parties, and an original key is the safest
-            choice on a machine you paid this much for. TreadLife does sell a key for the Bowflex
+            choice on a machine you paid this much for. TreadLife does sell a key for the <a href="/bowflex/" class="text-[#0F62FE] font-medium" data-autolink>Bowflex</a>
             TreadClimber TC100 and TC200, which its listing says will not work on other models.
           </p>
           <p>
             <strong>Walking pads and budget folding treadmills.</strong> Many use a small magnetic
-            key, and some sellers list keys for specific walking pads. Others have no physical key
+            key, and some sellers list keys for specific <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pads</a>. Others have no physical key
             at all and rely on a remote or an app, which is a reason to keep an eye on the speed and
             to stand near the front of the belt.
           </p>`,

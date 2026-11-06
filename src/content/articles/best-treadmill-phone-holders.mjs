@@ -179,7 +179,7 @@ export default {
             <strong>Flexible silicone and gooseneck holders</strong> wrap or bend into shape. They
             are cheap and adaptable, but a long flexible arm magnifies vibration, and most of the
             ones we looked at give no bar range. We left them out for that reason; they can be fine
-            for walking pads and slow walking.
+            for <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pads</a> and slow walking.
           </p>`,
     },
     {

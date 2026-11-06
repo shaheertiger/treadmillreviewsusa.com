@@ -301,7 +301,7 @@ export default {
             tr(['iFIT', 'Support ended 2023', 'Current', 'Current']),
           ])}
           <p>
-            <strong>T Series 10.</strong> The same idea in current form: a folding 60-inch iFIT treadmill at a
+            <strong>T Series 10.</strong> The same idea in current form: a folding 60-inch <a href="/best-ifit-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>iFIT treadmill</a> at a
             mid-range price, with a bigger screen and a warranty. Our
             <a href="/nordictrack-t-series-treadmill/" class="text-[#0F62FE] font-medium">NordicTrack T Series review</a>
             covers it and the T Series 16.

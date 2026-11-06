@@ -490,6 +490,12 @@ export default {
       blurb: "The T3S Plus screen treadmill and the 30%-incline T5 range.",
       url: '/yesoul-treadmills/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Treadmill TV Stands and Mounts",
+      blurb: "Five TV floor stands, rolling carts and wall mounts for watching from a treadmill, with the eye-height…",
+      url: '/best-treadmill-tv-stands/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">The best treadmill with a screen is the one whose screen you will use

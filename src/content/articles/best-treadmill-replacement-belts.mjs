@@ -148,7 +148,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">1. Find the model and serial number</h3>
           <p>
             Most treadmills carry a label with the model and serial number on the frame, commonly
-            near the power switch or cord at the front, or on a frame rail. Write both down. Many
+            near the <a href="/how-to-turn-on-a-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>power switch</a> or cord at the front, or on a frame rail. Write both down. Many
             belt listings are matched to a model and a serial range rather than a model alone,
             because makers change belts mid-production. ICON-built machines (NordicTrack, ProForm,
             Reebok, Gold's Gym, Weslo, HealthRider and others) often have a model number that
@@ -285,7 +285,7 @@ export default {
           <p>
             Think about the cost of the whole job before you choose. A running belt is often around
             $55 to $150 on Amazon for a home treadmill, judging by the listings on this page, and
-            more for commercial machines. Paying a technician to fit it adds labour, and a worn deck
+            more for commercial machines. Paying a technician to fit it adds labour, and a <a href="/treadmill-deck-replacement/" class="text-[#0F62FE] font-medium" data-autolink>worn deck</a>
             or roller found during the job adds parts. Our guide to
             <a href="/treadmill-belt-replacement-cost/" class="text-[#0F62FE] font-medium">treadmill belt replacement cost</a>
             breaks down what a DIY job and a service call typically involve. On a cheap or very old
@@ -315,7 +315,7 @@ export default {
             quietly, with no grinding, play or flat spots, and the surface should be clean. A
             noisy roller bearing will still be noisy with a new belt.</li>
             <li><strong>The drive belt.</strong> The short belt between the motor and the front
-            roller is a separate part. If the running belt hesitates under your foot, the drive belt
+            roller is a separate part. If the running <a href="/treadmill-belt-slows-down-when-i-step-on-it/" class="text-[#0F62FE] font-medium" data-autolink>belt hesitates</a> under your foot, the drive belt
             may be the cause; our guide to the
             <a href="/treadmill-drive-belt/" class="text-[#0F62FE] font-medium">treadmill drive belt</a>
             explains how to tell.</li>

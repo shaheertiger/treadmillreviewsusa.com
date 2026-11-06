@@ -55,7 +55,7 @@ export default {
             treadmill. If you can, a wall mount is the steadiest option and puts the screen at any
             height you like. If you cannot, or you rent, or the treadmill moves, a tall floor stand
             or a rolling cart does the job, provided it reaches high enough. If you are still
-            choosing a treadmill and want the screen built in, our guide to
+            <a href="/what-treadmill-should-i-buy/" class="text-[#0F62FE] font-medium" data-autolink>choosing a treadmill</a> and want the screen built in, our guide to
             <a href="/best-treadmills-with-screens/" class="text-[#0F62FE] font-medium">treadmills with screens</a>
             covers that route.
           </p>
@@ -86,7 +86,7 @@ export default {
       html: `          <p>
             Each card gives the screen sizes, weight limit, VESA patterns and height or reach that
             the listing states, and the price we saw on 6 November 2026. Two of the five are sold
-            specifically for treadmills and other cardio machines; the other three are general
+            specifically for treadmills and other <a href="/best-cardio-machines-for-home/" class="text-[#0F62FE] font-medium" data-autolink>cardio machines</a>; the other three are general
             stands and mounts chosen because their height or reach suits a treadmill.
           </p>
           <p>
@@ -106,7 +106,7 @@ export default {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Step 1: Your eye height standing</h3>
           <p>
-            Stand barefoot or in your running shoes against a wall and have someone mark your eye
+            Stand barefoot or in your <a href="/best-running-shoes-for-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>running shoes</a> against a wall and have someone mark your eye
             level, then measure from the floor. If you cannot measure, a common rough estimate is
             your height minus about 4 to 5 inches. Running shoes add roughly an inch.
           </p>
@@ -120,8 +120,8 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Step 3: Allow for incline</h3>
           <p>
             Incline lifts the front of the deck. For small angles, the rise under your feet is
-            roughly the distance from the rear pivot to where you stand multiplied by the incline
-            percentage. If you stand about 40 inches ahead of the rear roller, 5 percent incline
+            roughly the distance from the rear pivot to where you stand multiplied by the <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#0F62FE] font-medium" data-autolink>incline
+            percentage</a>. If you stand about 40 inches ahead of the rear roller, 5 percent incline
             lifts you about 2 inches and 10 percent about 4 inches. If you walk at incline most of
             the time, set the screen for that.
           </p>
@@ -143,7 +143,7 @@ export default {
           <p>
             One more caution: do not go the other way and mount the screen above you. Looking up for
             an hour strains the neck as much as looking down, and it pulls your head back in a way
-            that changes your running posture.
+            that changes your <a href="/treadmill-running-form/" class="text-[#0F62FE] font-medium" data-autolink>running posture</a>.
           </p>`,
     },
     {
@@ -240,7 +240,7 @@ export default {
             for your television's weight, fix the structure to the wall or a heavy base so it cannot
             tip, and keep it well clear of the treadmill. Do not attach a television or a stand to
             the treadmill's frame, console or handrails: they are not designed to carry that load,
-            and the machine's vibration and folding mechanism will work against anything clamped to
+            and the machine's vibration and <a href="/folding-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>folding mechanism</a> will work against anything clamped to
             it.
           </p>`,
     },
