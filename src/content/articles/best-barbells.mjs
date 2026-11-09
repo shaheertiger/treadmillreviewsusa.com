@@ -109,7 +109,8 @@ export default {
             Several well-known home gym bars are not here because they are not sold on Amazon US:
             REP sells its Colorado bars on its own store, Rogue sells the Ohio Bar only through its
             own store, and Fringe Sport sells the Wonder Bar V2 direct. The cards show the closest bars
-            we could find on Amazon, and the sections below still compare those bars where it helps.`,
+            we could find on Amazon, and the sections below still compare those bars where it helps.
+          </p>`,
     },
     {
       id: 'how-we-chose',
