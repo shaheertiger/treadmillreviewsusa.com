@@ -28,7 +28,12 @@ export default {
           pages and at least one independent review or retailer listing; a figure appears in a
           product's specification line only where the sources agree, and where they disagreed —
           most often on motor horsepower — we left it out. The Bowflex T6 figures match our own
-          review of that machine. None of these are our own measurements. Prices are those we saw
+          review of that machine; the T6 and the Horizon 7.8 AT are not sold on Amazon US, so in November
+          2026 their cards became the Schwinn 815 and Horizon 7.4 AT, with the figures checked for our
+          Schwinn and Horizon guides. The Spirit XT485, which replaced the Wahoo KICKR RUN card in November
+          2026 because the KICKR RUN is not sold on Amazon, carries the figures checked for our heavy
+          duty treadmill guide, and its Zwift support was checked on Spirit's Zwift pages on
+          9 November 2026. None of these are our own measurements. Prices are those we saw
           on manufacturer sites on 13 October 2026, except where a description says otherwise, and
           change often; Zwift compatibility can also change with firmware on either side. Confirm
           the price, the specification and Zwift support for the exact model and production year
@@ -46,8 +51,10 @@ export default {
       heading: 'Our Picks at a Glance',
       html: `          <p>
             Four treadmills whose manufacturers state Zwift support, plus one foot pod. The short
-            version: the <a href="/horizon-7-0-at-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Horizon 7.0 AT</a> for most runners, the Bowflex T6 when it is on sale, and a
-            Stryd pod if you already own a treadmill you like. Already own a treadmill? Read our
+            version: the <a href="/horizon-7-0-at-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Horizon 7.0 AT</a> for most runners, the Bowflex T6 when it is on sale (sold direct; the Schwinn 815 is the value card on Amazon), and a
+            Stryd pod if you already own a treadmill you like. The Wahoo KICKR RUN, the one treadmill
+            whose incline Zwift controls, is sold direct by Wahoo rather than on Amazon, so it is
+            covered in the text and the premium card is the Spirit XT485. Already own a treadmill? Read our
             <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium">treadmill foot pod guide</a>.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
@@ -60,9 +67,9 @@ export default {
             </thead>
             <tbody>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon 7.0 AT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most runners</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bluetooth FTMS with Zwift named by Horizon, 60-inch deck, 15% incline, around $1,000</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bowflex T6</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best value on sale</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Same core figures as the 7.0 AT, FTMS with Zwift named by Bowflex, often under $900</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon 7.8 AT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bigger runners and heavier use</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22 x 60 in. deck, 375 lb capacity, five years on parts</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Wahoo KICKR RUN</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Automatic incline in Zwift</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The only treadmill Zwift says it can control, from -3% to 15%</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Schwinn 815</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best value on Amazon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">60-inch deck, 12 mph, Zwift named by Schwinn, about $1,099; the Bowflex T6 is the value pick sold direct</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon 7.4 AT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bigger runners and heavier use</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22 x 60 in. deck, FTMS, 350 lb capacity, five years on parts</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Spirit XT485</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Premium, heavy use</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">FTMS with Zwift named by Spirit, 22 x 60 in. deck, lifetime motor and deck warranty</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Stryd 5.0 foot pod</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Any treadmill you already own</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">On Zwift's compatible footpod list; measures you, not the machine</td></tr>
             </tbody>
           </table></div>
@@ -221,23 +228,23 @@ export default {
           </p>
           <p>
             <strong>Top speed.</strong> Most home treadmills stop at 12 mph, which is a 5:00 mile.
-            That covers virtually every training pace and all but the fastest intervals. The KICKR
-            RUN reaches a 4:00 mile, which matters only for very fast runners. A machine that stops
+            That covers virtually every training pace and all but the fastest intervals. Wahoo's
+            KICKR RUN, sold direct, reaches a 4:00 mile, which matters only for very fast runners. A machine that stops
             at 10 mph caps you at a 6:00 mile, which is enough for many people and a real limit for
             some. Our <a href="/treadmill-pace-and-speed-chart/" class="text-[#0F62FE] font-medium">pace and speed chart</a>
             converts between the two.
           </p>
           <p>
             <strong>Incline range.</strong> Zwift's controllable gradients run from -3% to +15%, and
-            that is a sensible target for a manual machine too. All four treadmills here reach 15%.
-            Only the KICKR RUN offers decline, which some runners value for downhill sections and
+            that is a sensible target for a manual machine too. The Horizon and Bowflex machines here
+            reach 15%, and Spirit lists 15 incline levels on the XT485. Only the KICKR RUN offers decline, which some runners value for downhill sections and
             which most home treadmills do not have.
           </p>
           <p>
             <strong>Motor.</strong> We have left motor horsepower off every card on this page,
             because the figures either were not published by the manufacturer or differed between
             the manufacturer and reviewers. For running, the lifetime motor warranties on the
-            Horizon and Bowflex machines are more informative than any horsepower number.
+            Horizon, Bowflex and Spirit machines are more informative than any horsepower number.
           </p>`,
     },
     {
@@ -301,7 +308,7 @@ export default {
           </p>
           <p>
             <strong>If you want no ongoing costs at all,</strong> remember that Zwift itself is a
-            separate service with its own terms, and automatic incline on the KICKR RUN requires a
+            separate service with its own terms, and automatic incline on Wahoo's KICKR RUN requires a
             paid Zwift subscription. Every treadmill here works fully without any subscription, and
             our guide to
             <a href="/best-treadmills-without-subscriptions/" class="text-[#0F62FE] font-medium">treadmills without subscriptions</a>
@@ -336,76 +343,69 @@ export default {
         'The 7.0 AT is the most sensible Zwift treadmill we found because it gets the running basics right at a reasonable price and its Zwift support comes from Horizon itself. Horizon’s product page lists Bluetooth FTMS and names Zwift among the apps it syncs with, and Horizon’s help documentation says Zwift pairs with its treadmills directly and receives speed, incline and distance. Horizon is on Zwift’s list of manufacturers with confirmed compatible models. Underneath that, Horizon lists a 20 by 60-inch three-zone cushioned deck, 0.5 to 12 mph, incline from 0 to 15%, a 325 lb maximum user weight and hydraulic folding; independent reviews agree on those figures. The warranty is lifetime on the frame and motor, three years on parts and one year of labour. Horizon was selling it at $1,099, or $934 with a promotional code, when we checked. What it cannot do is let Zwift drive it: when the road climbs, you turn the incline dial yourself, which on this machine is easy.',
     },
     {
-      id: 'bowflex-t6',
-      name: 'Bowflex T6',
-      category: 'Best Value Treadmill for Zwift',
-      badge: 'Best Value',
-      amazonUrl: 'https://www.amazon.com/s?k=Bowflex+T6+Treadmill&tag=sktiger-20',
-      reviewUrl: '/bowflex-t6-treadmill/',
-      priceRange: '$899–$1,299',
-      specs: '20 x 60 in. deck · 0.5–12 mph · 0–15% incline · 325 lb capacity · Bluetooth FTMS',
+      id: "schwinn-815",
+      name: "Schwinn 815",
+      category: "Best Value Zwift Treadmill on Amazon",
+      badge: "Best Value",
+      priceRange: "$1,099 at Schwinn Fitness on 5 Nov 2026",
+      specs: "20 x 60 in. running area · up to 12 mph · 0–12% incline · 325 lb capacity · folding · Bluetooth app links incl. Zwift (Schwinn)",
       pros: [
-        'Bowflex’s product page lists Bluetooth FTMS and names Zwift, JRNY and Peloton',
-        'Often discounted well below its regular price — $899 against $1,299 when we checked',
-        'Full 60-inch deck, 12 mph and 15% incline, matching the Horizon 7.0 AT on the core figures',
-        'Lifetime frame and motor warranty plus three years on mechanical parts',
+        "Schwinn says it links to Zwift, JRNY and Peloton over Bluetooth",
+        "A full 20 by 60-inch deck and 12 mph, the core figures of the Bowflex T6",
+        "From Johnson Health Tech, which also owns Bowflex and Horizon",
+        "About $1,099 on Schwinn’s store on 5 November 2026, and sold on Amazon",
       ],
       cons: [
-        'The 3.0 HP figure is a test rating that Bowflex says does not reflect operational horsepower',
-        'One year of in-home labour, and Zwift cannot control its speed or incline',
+        "Schwinn does not say whether the link is Bluetooth FTMS; pair it before the return window closes",
+        "Incline stops at 12%, against 15% on the Bowflex T6 and Horizon 7.0 AT",
+        "No published motor rating, one year on parts, electronics and labour, and little independent review coverage yet",
       ],
-      bottomLine:
-        'The best-value Zwift treadmill when it is on sale. If it and the Horizon 7.0 AT are the same price, buy whichever you prefer the console of.',
-      description:
-        'The T6 is the Horizon 7.0 AT’s closest rival and, at its sale price, the cheaper way to the same Zwift experience. Bowflex’s product page says it connects over Bluetooth FTMS and names Zwift, along with Bowflex’s own JRNY and the Peloton app, and Bowflex is on Zwift’s list of confirmed manufacturers. The core figures, which our own review of the T6 cross-checked against an independent spec table and a specialist retailer, are a 20 by 60-inch deck, 0.5 to 12 mph, 0 to 15% incline and a 325 lb maximum user weight. The console is a plain LCD and LED layout with no touchscreen, which is no loss for Zwift, since Zwift runs on your own screen. The warranty is lifetime on frame and motor, three years on mechanical parts and one year of labour. Bowflex quotes 3.0 HP but footnotes it as a test rating, so do not compare it with a continuous figure. On 13 October 2026 bowflex.com listed it at $899 against a $1,299 regular price.',
+      bottomLine: "The value Zwift option sold on Amazon: a full-length deck from the Bowflex and Horizon family, for runners who will check the Zwift pairing early.",
+      description: "The Bowflex T6, the value pick in our text, is sold by Bowflex and other retailers and we could not find it on Amazon US, so this card shows the closest value treadmill that Amazon does sell with a maker-stated Zwift link. The 815 is the top of Schwinn Fitness’s four current treadmills, from the Schwinn brand that Nautilus Inc. owned alongside Bowflex and that Johnson Health Tech, Horizon’s parent, now sells. Schwinn’s US store lists a 20 by 60-inch running area, speeds up to 12 mph, 0 to 12% incline, eight workouts, Bluetooth speakers and app links to JRNY, Peloton and Zwift, with a 325 lb maximum user weight, 76 by 34 by 57 inches assembled and 187 lb; a January 2026 deal listing agreed on 12 mph and 12%. Schwinn does not say whether its Zwift link uses Bluetooth FTMS, so pair it with Zwift as soon as it arrives. As with every treadmill here except the Wahoo KICKR RUN, Zwift reads speed but cannot change it or the incline. Schwinn lists 10 years on the frame and drive motor and one year on parts, electronics and labour. It was $1,099 on Schwinn’s store on 5 November 2026.",
     },
     {
-      id: 'horizon-7-8-at',
-      name: 'Horizon 7.8 AT',
-      category: 'Best Zwift Treadmill for Bigger Runners',
-      badge: 'Heavy-Duty Pick',
-      amazonUrl: 'https://www.amazon.com/s?k=Horizon+7.8+AT+Treadmill&tag=sktiger-20',
-      priceRange: '$1,899–$1,999',
-      specs: '22 x 60 in. deck · 0.5–12 mph · 0–15% incline · 375 lb capacity · Bluetooth FTMS',
+      id: "horizon-7-4-at",
+      name: "Horizon 7.4 AT",
+      category: "Best Zwift Treadmill for Bigger Runners on Amazon",
+      badge: "Heavy-Duty Pick",
+      priceRange: "Around $1,500–$1,800",
+      specs: "22 x 60 in. deck · 0.5-12 mph · 0-15% incline · 350 lb capacity · Bluetooth FTMS",
       pros: [
-        'A 22-inch-wide deck gives more lateral room while your eyes are on a Zwift screen',
-        '375 lb maximum user weight, the highest of the treadmills here',
-        'Five years on parts and two years of labour on top of the lifetime frame and motor cover',
-        'Bluetooth FTMS, with Zwift named on Horizon’s own page, and a heart rate strap included',
+        "A 22-inch-wide belt, two inches wider than the 7.0 AT, for more lateral room while your eyes are on a Zwift screen",
+        "Bluetooth FTMS, which Horizon lists for all three of its AT models",
+        "Five years on parts and two years of labour on top of the lifetime frame and motor cover",
+        "A 350 lb maximum user weight and a Bluetooth heart rate monitor in the box",
       ],
       cons: [
-        'Roughly twice the price of the 7.0 AT for a wider deck, more capacity and a longer warranty rather than more Zwift features',
-        'About 330 lb assembled, so it is not a machine you move casually despite folding',
-        'Reviewers disagree on its motor rating and Horizon does not publish one',
+        "Showing a late-October ship date on Horizon’s store on the day we checked",
+        "The same 12 mph and 15% ceilings as the cheaper 7.0 AT",
+        "The motor rating some reviewers quote is not published by Horizon",
       ],
-      bottomLine:
-        'For heavier or broader runners, and for anyone running in Zwift most days who wants a sturdier frame and longer parts cover. Overkill for occasional use.',
-      description:
-        'The 7.8 AT is the same Zwift experience as the 7.0 AT on a bigger, heavier-duty machine. Horizon’s comparison table lists Bluetooth FTMS for all three of its AT models, its product pages name Zwift among the supported apps, and Horizon is on Zwift’s list of confirmed manufacturers. The differences are physical: a 22 by 60-inch deck instead of 20 by 60, a 375 lb maximum user weight instead of 325, a thicker belt, a colour display, and a Bluetooth heart rate strap in the box. Speed and incline are unchanged at 0.5 to 12 mph and 0 to 15%. The warranty steps up meaningfully, to five years on parts and two years of labour alongside the lifetime frame and motor cover, which matters for a machine that will see daily running. Independent reviews agree on the deck, speed, incline and capacity figures, though not on the motor rating, which Horizon does not publish. It is a machine of about 330 lb assembled. Horizon listed it at $1,999, or $1,899 with a code, when we checked.',
+      bottomLine: "For heavier or broader runners who want a wider deck and longer parts cover in Zwift, without paying for the 7.8 AT’s colour screen and thicker belt.",
+      description: "The Horizon 7.8 AT, discussed in this guide, is sold by Horizon and specialist retailers and we could not find it on Amazon US, so this card shows its sibling that Amazon does sell. The 7.4 AT is the middle of Horizon’s Studio Series and gives the same Zwift experience as the 7.0 AT on a wider deck: Horizon’s comparison table lists Bluetooth FTMS for all three AT models, and Horizon is on Zwift’s list of confirmed manufacturers. Horizon lists a 22 by 60-inch deck, 0.5 to 12 mph, 0 to 15% incline, a 350 lb maximum user weight, one-step hydraulic folding and an 8.75-inch step-on height; a Johnson Fitness and Wellness listing and independent coverage agree on the deck, speed, incline and capacity. Horizon includes a Bluetooth heart rate monitor, and the warranty is five years on parts and two years of labour alongside the lifetime frame and motor cover. Against the 7.8 AT it gives up 25 lb of user rating, the colour display and the thicker belt. On 13 October 2026 Horizon’s store listed it at $1,799, or $1,499 with a promotional code. One independent review quotes a 3.5 CHP motor; Horizon does not publish a figure, so we left it out. At 318 lb it is heavy for a folding machine.",
     },
     {
-      id: 'wahoo-kickr-run',
-      name: 'Wahoo KICKR RUN',
-      category: 'Only Treadmill With Zwift Incline Control',
+      id: 'spirit-xt485',
+      name: 'Spirit XT485',
+      category: 'Heavy-Duty FTMS Treadmill, Zwift Named by Spirit',
       badge: 'Premium Pick',
-      amazonUrl: 'https://www.amazon.com/s?k=Wahoo+KICKR+RUN+Smart+Treadmill&tag=sktiger-20',
-      priceRange: 'Around $6,500–$7,000',
-      specs: '-3% to 15% grade · 4:00/mile top speed · 250 lb capacity · 1-year warranty',
+      priceRange: 'About $2,649 (Amazon, 6 Nov 2026)',
+      specs: '22 x 60 in. deck · 0.5–12 mph · 15 incline levels · Bluetooth FTMS · folds · about 289 lb',
       pros: [
-        'The only treadmill Zwift’s own documentation says it can control, raising and lowering the deck to follow the route',
-        'Decline to -3% as well as incline to 15%, so Zwift’s downhills are simulated too',
-        'RunFree mode adjusts belt speed to your position on the deck without touching a button',
-        'Top speed of a 4:00 mile, far beyond the 12 mph ceiling of most home treadmills',
+        'Spirit lists the XT485 among its treadmills with built-in Bluetooth FTMS and on its Zwift compatibility chart',
+        'Lifetime frame, motor and deck warranty plus ten years on parts on Spirit’s US residential terms',
+        'A full 22 by 60-inch deck on a heavy, rigid frame for a folding machine',
+        'Speed and incline toggles on the handlebars, so you can match Zwift’s hills without reaching',
       ],
       cons: [
-        'Around $7,000 on Wahoo’s US store when we checked, and needs a dedicated circuit and substantial clearance',
-        'A 250 lb maximum user weight and a one-year warranty are both modest at this price',
-        'Zwift incline control needs a paid Zwift subscription or trial, and is not available in Zwift workouts',
+        'Zwift cannot change its incline; only the Wahoo KICKR RUN, sold direct by Wahoo, has that',
+        'Spirit’s Zwift chart applies to machines made after 1 November 2019, so check the serial number on the unit',
+        'Spirit gives a 425 lb rating but one retailer gave 350 lb, so confirm it on the unit you buy',
       ],
       bottomLine:
-        'For dedicated Zwift runners with the budget and the space who want the route to move the deck for them. Nobody else needs to spend this much.',
+        'The premium Zwift treadmill on Amazon: a commercial-size deck and the longest warranty here, with Zwift named by its maker. You change the incline yourself.',
       description:
-        'The KICKR RUN is on this page for one reason no other treadmill can match: Zwift’s own support articles name it as the treadmill whose incline Zwift can control. With a paid subscription or a free trial, Zwift raises and lowers the deck to follow the route, between -3% and +15%, at about 1% per second; touching the incline yourself hands control back, and the feature is not available in Zwift’s structured workouts. Wahoo’s own page lists a 4:00-per-mile top speed, a maximum incline of 15% and decline of -3%, a 250 lb maximum user weight and a one-year warranty, and independent reviews agree. Wahoo gives the running surface as 60 by 22 inches; some early coverage quoted a longer belt figure, so we have kept it out of the spec line. RunFree mode, which speeds the belt up or slows it down as you move forward or back on the deck, is the other distinctive feature. It is a 429 lb machine needing a dedicated 15-amp circuit, and Wahoo listed it at $6,999.99 when we checked, well above its $4,999 launch price.',
+        'The Wahoo KICKR RUN, the only treadmill Zwift says it can tilt, is sold by Wahoo rather than on Amazon. The premium treadmill on Amazon we would buy for Zwift is the Spirit XT485. Spirit is on Zwift’s list of manufacturers with confirmed compatible models, and Spirit’s own Zwift pages list the XT485 among its treadmills with built-in Bluetooth FTMS, with US units made after 1 November 2019 compatible; check the serial number on yours against Spirit’s chart. The Amazon listing gives a 22 by 60-inch running belt, a 9-inch backlit LCD, direct speed and incline buttons, handlebar toggles and Bluetooth; Spirit’s specification, checked for an earlier guide on this site, adds 0.5 to 12 mph, 15 levels of electronic incline, a 7-inch step-up height, a 43-inch folded length and an item weight of about 289 lb. The listing quotes a 4.0 HP motor, which, like the other motors here, we have kept off the spec line. The US residential warranty is lifetime on the frame, motor and deck, ten years on parts and one year of labour. On capacity, Spirit and independent coverage give 425 lb, but one US retailer’s FAQ gave 350 lb, so check the label on the unit you receive. Unlike the KICKR RUN it has no decline, and Zwift reads its speed and incline rather than controlling them. Amazon listed it at $2,649 on 6 November 2026.',
     },
     {
       id: 'stryd-5-footpod',
@@ -503,9 +503,11 @@ export default {
     `If you are buying a treadmill and want Zwift, the <strong class="text-white">Horizon 7.0 AT</strong>
             is the one to start with: Bluetooth FTMS with Zwift named by Horizon, a 60-inch deck,
             15% incline and a lifetime motor warranty for around $1,000. The
-            <strong class="text-white">Bowflex T6</strong> matches it at a lower sale price, and the
-            <strong class="text-white">Wahoo KICKR RUN</strong> is the only machine Zwift can tilt
-            for you.`,
+            <strong class="text-white">Bowflex T6</strong> matches it at a lower sale price from Bowflex,
+            the <strong class="text-white">Schwinn 815</strong> is the value option on Amazon, the
+            <strong class="text-white">Horizon 7.4 AT</strong> adds a 22-inch deck, and the
+            <strong class="text-white">Spirit XT485</strong> is the heavy-duty option on Amazon. Wahoo's
+            KICKR RUN, sold direct, is the only machine Zwift can tilt for you.`,
     `If you already own a treadmill, keep it and buy a
             <strong class="text-white">foot pod</strong> instead — then check the belt speed with our
             <a href="/treadmill-calibration/" class="text-[#5AA9FF] font-bold no-underline">calibration guide</a>

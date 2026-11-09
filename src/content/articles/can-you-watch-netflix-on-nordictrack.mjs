@@ -585,6 +585,12 @@ export default {
       blurb: 'Clamp and strap mounts with checked fit ranges, and where to put one on a console.',
       url: '/best-treadmill-tablet-holders/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Treadmill TV Stands and Mounts",
+      blurb: "Five TV floor stands, rolling carts and wall mounts for watching from a treadmill, with the eye-height…",
+      url: '/best-treadmill-tv-stands/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">You can watch Netflix on a current NordicTrack touchscreen, but

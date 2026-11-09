@@ -33,7 +33,9 @@ export default {
           tested any Woodway treadmill. Prices are what Woodway's shop and the named retailers
           showed on the day we checked (20 Oct 2026); they change, and most Woodway models are sold
           by quote. As an Amazon Associate we earn from qualifying purchases; Woodway treadmills are
-          sold by Woodway and its distributors rather than on Amazon.`,
+          sold by Woodway and its distributors rather than on Amazon, so the two cards show the
+          nearest alternatives Amazon does sell, with the figures checked for our cushioned and
+          curved treadmill guides, while the text stays about Woodway's own machines.`,
   lead: `Most people who search for a Woodway treadmill have run on one somewhere else: a
           university weight room, a physiotherapy clinic, a professional team's training centre, or
           the curved manual treadmill in the corner of a gym. The ride is distinctive, the price is
@@ -44,53 +46,50 @@ export default {
           choice, and explains who the exceptions are.`,
   products: [
     {
-      id: 'woodway-4front',
-      name: 'Woodway 4Front',
-      category: 'Motorised Slat-Belt Treadmill (Flagship)',
-      badge: 'Flagship',
-      priceRange: '$13,995–$19,995 at Woodway on 20 Oct 2026, depending on console and options',
-      amazonUrl: 'https://www.amazon.com/s?k=Woodway+4Front+Treadmill&tag=sktiger-20',
-      specs: '0-12.5 mph standard (to 18 mph as an option) · 0-15% incline standard · 400 lb running / 800 lb walking · 445 lb unit weight',
+      id: 'life-fitness-run-cx',
+      name: 'Life Fitness Run CX',
+      category: 'Closest on Amazon to the 4Front: a gym-pedigree motorised treadmill for the home',
+      badge: 'Closest on Amazon',
+      priceRange: 'Around $4,300–$4,900',
+      specs: '22 x 60 in. deck · FlexDeck shock absorption · 0-15% incline · 0.5-12 mph · 400 lb capacity · 6 in. step-up · non-folding',
       pros: [
-        'Slat running surface that Woodway rates for about 150,000 miles, with no belt or deck to replace in normal service',
-        'High user ratings: 400 lb running and 800 lb walking at up to 4 mph',
-        'Three modes in one machine: motorised, free-wheeling (user-driven) and resistance up to 60 lb',
-        'Speed, incline and reverse options let you buy close to a performance-lab specification',
+        'Life Fitness’s FlexDeck shock absorption system, a name it uses on several of its treadmills',
+        'A low 6-inch step-up height, stated by Life Fitness and by retailers',
+        'Lifetime cover on the frame and on the deck shock absorbers, according to a retailer and an independent review',
+        'A 400 lb maximum user weight and a 10-year motor warranty',
       ],
       cons: [
-        'From $13,995 in Woodway’s shop on the day we checked, before delivery and options',
-        'Needs a dedicated 20-amp circuit, and faster options need a 208/230-volt supply',
-        'Warranty is 5 years on drive, motor and belt, 3 years on components and 1 year on labour, shorter than some cheaper home treadmills',
-        'Woodway’s own documents give conflicting running-surface figures (see below)',
+        'More than twice the price of the Horizon 7.8 AT',
+        'Does not fold',
+        'An independent review describes the deck as firm rather than soft, and the button interface as awkward',
       ],
       bottomLine:
-        'The Woodway to buy if you want the gym and lab machine itself at home, will use it daily for many years and can meet its power and delivery needs.',
+        'The 4Front is sold by Woodway and its distributors, not on Amazon. For gym-style construction and a long cushioning warranty from Amazon at a fraction of the price, this is the nearest.',
       description:
-        'The 4Front is Woodway’s main motorised treadmill and the frame most of its other motorised models are built around. Woodway lists, and TreadmillReviews.com and Front Desk Review (citing a retailer) agree on, 0-12.5 mph and 0-15% incline as standard, a 400 lb running and 800 lb walking user rating, and a 445 lb unit weight; TreadmillReviews.com also confirms the upgrade path to 18 mph. Woodway’s owner’s manual gives a 2 hp continuous (5 hp peak) brushless servo drive and a 114-bearing slat support system. The running surface is listed as 68 by 22 inches on Woodway’s spec sheet and by TreadmillReviews.com, but the same sheet’s metric figure, 157 by 55 cm, works out to about 62 inches, and European listings use the 157 cm figure; ask Woodway for the usable length before relying on either. On 20 October 2026 Woodway’s shop listed the 4Front Quick Set from $13,995, the Personal Trainer console version from $14,480 and the ProSmart touchscreen version from $16,885, rising to $19,995 fully optioned.',
+        'Woodway\'s 4Front is sold by quote through Woodway and its distributors, not on Amazon, and nothing on Amazon uses Woodway\'s slat belt, so this card shows the nearest machine Amazon does sell in spirit: a non-folding, gym-pedigree motorised treadmill from a commercial maker. The Run CX is the home version of a Life Fitness design, and its cushioning comes from the FlexDeck Shock Absorption System, which Life Fitness says reduces knee and joint stress. A specialist retailer lists lifetime cover on the frame and on the "Lifesprings" — the deck\'s shock absorbers — alongside a 10-year motor, 7 years on parts and 1 year of labour; an independent review gives the same structure. Retailers and reviewers agree on a 22 by 60-inch deck, 0 to 15% incline, a 12 mph top speed, a 400 lb maximum user weight and a non-folding frame, and Life Fitness\'s own store lists a 6-inch step-up. Against the 4Front it has a conventional belt rather than slats, a lower top speed and a much lower price; an independent review describes the deck as firm but adequate rather than plush. For buyers who wanted a Woodway for its build rather than its belt, it is the sensible Amazon alternative.',
     },
     {
-      id: 'woodway-curve-ltg',
-      name: 'Woodway Curve LTG',
-      category: 'Non-Motorised Curved Treadmill (Home and Light Commercial)',
-      badge: 'Lowest Price New',
-      priceRange: '$3,495 sale ($3,995 regular) at Woodway on 20 Oct 2026',
-      amazonUrl: 'https://www.amazon.com/s?k=Woodway+Curve+LTG+Treadmill&tag=sktiger-20',
-      specs: 'Non-motorised curved slat belt · 350 lb max running user · about 300 lb unit weight · no outlet needed',
+      id: 'sunny-sf-x7110',
+      name: 'Sunny Health & Fitness SF-X7110 Curved Treadmill',
+      category: 'Closest on Amazon to the Curve LTG: a lighter curved manual trainer',
+      badge: 'Closest on Amazon',
+      priceRange: '$2,100–$2,500',
+      specs: '59 x 17.7 in. running surface · 8 magnetic levels · 330 lb max user · 157 lb',
       pros: [
-        'The cheapest new Woodway treadmill we found, by a wide margin',
-        'Needs no electrical outlet; Woodway lists a self-contained generator for the display',
-        'Woodway positions it for home gyms and light commercial use, unlike its heavier Curve models',
-        'Same slat-belt principle as the commercial Curve',
+        'At 157 lb, roughly 100 lb lighter than most curved trainers here',
+        'Eight magnetic resistance levels on a tension lever',
+        'Bluetooth console works with the free SunnyFit app',
+        'Transport wheels and a handlebar for moving it',
       ],
       cons: [
-        'Woodway’s shop page showed a "Sold out" label beside an add-to-cart button on the day we checked, so availability needs confirming',
-        'No motor, so no set pace and no incline; you control speed with your stride',
-        'Sources disagree on its running-surface width and its overall length',
+        'Warranty is 3 years on the frame and only 180 days on other parts',
+        'Very little owner or independent review evidence so far',
+        'Slightly shorter running surface than the 62 in. decks here',
       ],
       bottomLine:
-        'The realistic way into a new Woodway for a home runner who wants a curved manual treadmill rather than a motorised one.',
+        'The Curve LTG is sold by Woodway and dealers, not on Amazon. If you want a curved manual trainer you can move and order from Amazon, this is the nearest, with a much shorter warranty.',
       description:
-        'The Curve LTG is Woodway’s lighter-duty version of its original non-motorised Curve, aimed at home gyms, boutique studios and personal training. Woodway’s spec sheet, Rogue’s listing and BarBend agree on a 350 lb running user rating, and Woodway and Treadmill Review Guru agree on a unit weight of about 297 to 300 lb. Woodway quotes about 3% curvature, against about 5% on the full Curve, and describes its TPE slat belt as softer than the industry average. Woodway, Rogue and BarBend give a 62 by 17-inch running surface, but Treadmill Review Guru lists it as 19 inches wide; and Woodway’s product page gives a length of about 68 inches while its own spec sheet gives 76, so measure your space against the larger figure. The warranty is 5 years on the frame, 3 years on the belt and moving parts and 1 year on wear items and labour. Woodway’s shop listed it at $3,495 on sale against a $3,995 regular price on 20 October 2026.',
+        'Woodway\'s Curve LTG is sold by Woodway and dealers such as Rogue, not on Amazon, so this card shows the curved manual trainer on Amazon that comes closest to its lighter-duty brief. Sunny\'s SF-X7110 is the lightest curved trainer we could verify, at 157 lb against about 300 lb for the LTG, which makes delivery, stairs and repositioning far easier; it has transport wheels and a handle. Its 59 by 17.7-inch running surface is a rubber-coated design on an aluminium-alloy core, there are eight magnetic resistance levels on a lever, which the LTG does not offer, the user rating is 330 lb, and the console connects to Sunny\'s app over Bluetooth. Walmart listed it at about $2,125 on sale against Sunny\'s $2,500. The trade-offs are the warranty — 3 years on the frame but 180 days on everything else, against the LTG\'s 5 years on the frame and 3 on the belt and moving parts — and a lack of independent long-term coverage. A lighter machine is also likely to feel less planted than a heavier one at full sprint, so it suits steady running and intervals better than all-out efforts.',
     },
   ],
   sections: [

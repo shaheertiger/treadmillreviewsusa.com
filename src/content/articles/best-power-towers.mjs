@@ -267,7 +267,7 @@ export default {
             the bar, so the top of your head rises above it by roughly the distance from your chin to
             the crown of your head. Measure that, add a few inches of margin, and add it to the bar
             height you plan to use. Then subtract the thickness of any flooring. In a basement with
-            a low ceiling, the adjustable RELIFE and Sportsroyals let you lower the bar to fit; the
+            a <a href="/best-treadmills-for-low-ceilings/" class="text-[#0F62FE] font-medium" data-autolink>low ceiling</a>, the adjustable RELIFE and Sportsroyals let you lower the bar to fit; the
             fixed towers do not.
           </p>
           <p>
@@ -422,7 +422,7 @@ export default {
       name: 'Sportsroyals Power Tower (360 lb)',
       category: 'Adjustable power tower with pull-up, dip, knee-raise and push-up stations',
       badge: 'Best Overall',
-      amazonUrl: 'https://www.amazon.com/s?k=SPORTSROYALS+Power+Tower+Free+Standing+Pull+Up+Bar+360+lb&tag=sktiger-20',
+      amazonUrl: 'https://www.amazon.com/dp/B0C9HXPF92?tag=sktiger-20',
       priceRange: '$119.99–$129.99',
       specs: 'Bar height 57.1–83.1 in. · 8 bar settings · 5 backrest positions · rated 360 lb on this listing',
       pros: [

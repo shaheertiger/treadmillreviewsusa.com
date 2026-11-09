@@ -27,7 +27,10 @@ export default {
           published specifications, and what we say about fold effort is inferred from the
           mechanism and the machine's weight. Manufacturer folded dimensions can quote the deck
           alone, so measure against the widest and deepest points — including any protruding
-          console or wheels — before you order.`,
+          console or wheels — before you order. The Sunny, Horizon, NordicTrack T Series 10 and
+          ProForm cards carry the figures checked against their Amazon listings and makers for our
+          low-ceiling, auto-incline and iFIT guides on 6 November 2026; the machines they replace
+          are not sold on Amazon US.`,
   sections: [
     {
       id: 'fold-effort',
@@ -251,8 +254,9 @@ export default {
           </p>
           <p>
             If the absolute smallest footprint is the requirement, the
-            <strong>ProForm Power 995i</strong> is the most compact here on paper and the lightest real
-            treadmill here, at the cost of a short deck and a frame that moves. And if you will
+            <strong>Sunny SF-T7718</strong> is the most compact here: Sunny gives a folded height of
+            10.5 inches, so it lies flat rather than standing up, at the cost of a 47-inch deck and
+            no incline. And if you will
             only ever walk, buy a walking pad instead — it is the only thing in this category that
             genuinely disappears.
           </p>
@@ -288,50 +292,46 @@ export default {
         'This machine wins on the fold, and that is what matters in a small room. The hydraulic assist reduces the job to lifting the deck a few inches and letting the mechanism do the rest — one person, no strain — which is the kind of fold that keeps being done after every session, where a manual latch tends to be abandoned. It stores close to fully upright, which keeps the floor footprint small at the cost of needing vertical clearance, and it rolls on transport wheels once folded. It is not the most compact machine here on paper. It is the one that will actually be small in your room.',
     },
     {
-      id: 'proform-power-995i',
-      name: 'ProForm Power 995i',
-      category: 'Smallest Footprint on Paper',
-      badge: 'Most Compact',
-      reviewUrl: '/proform-power-995i-treadmill/',
-      priceRange: '$799-$999',
-      specs: 'Assisted fold · lightest full treadmill here',
+      id: "sunny-sf-t7718",
+      name: "Sunny Health & Fitness SF-T7718",
+      category: "Smallest Folded Footprint: Folds Flat",
+      badge: "Most Compact",
+      priceRange: "About $565 (Amazon, 6 Nov 2026)",
+      specs: "2.76 in. deck-to-floor height (Sunny) · 47 x 20 in. running deck · 0.6–9 mph · 265 lb capacity · folds flat · no incline",
       pros: [
-        'Most compact folded footprint here on paper',
-        'Lightest genuine treadmill here — one person can reposition it easily',
-        'Assisted fold is quick and needs no real strength',
-        'Inexpensive enough to suit an uncertain or temporary situation',
+        "The lowest deck we could confirm: 2.76 inches off the floor by Sunny’s figure",
+        "A 20-inch-wide belt and 9 mph, more running treadmill than any pad here",
+        "Speed, belt size and 265 lb limit agree between the Amazon listing and Sunny’s store",
+        "Folds flat to 10.5 inches tall for storage, by the listing",
       ],
       cons: [
-        'Short deck, and a frame this light is likely to move at jogging pace',
-        'Light frame typically passes more footfall energy into the floor below',
+        "No incline",
+        "At 117.9 lb by Sunny’s figure, heavy to move",
+        "A 47-inch belt is short for tall runners at speed",
       ],
-      bottomLine:
-        'The right pick when square footage is the binding constraint. A walking and light-jogging machine, not a running one.',
-      description:
-        'If the room genuinely cannot accommodate anything larger, this is the machine. It is the most compact folded machine here on paper, and at well under 200 lbs one person can move it around a room without ceremony — which in a small space is worth as much as the folded dimensions. The assisted fold is light work on a machine this light, second only to the Sole\'s hydraulic assist. The compromises are exactly what you would expect from the lightest machine on the page: the deck is short, a frame this light is likely to move under you once you pass a brisk walk, and that light frame transmits more footfall energy into the floor, which matters if someone lives below. Judged as a compact walking and light-jogging machine it is very good; judged as a treadmill to run on, it is not one.',
+      bottomLine: "The pick when the machine has to lie flat out of sight. A walking and jogging treadmill with no incline, and a two-person move.",
+      description: "The SF-T7718, which Sunny calls its Strider with a LoPro deck, is the most compact machine here once folded: it lies flat rather than standing up, so it needs no vertical clearance and no swing arc beyond the deck itself. Sunny's own store gives a deck-to-floor height of 2.76 inches, a 47 by 20-inch running surface, a 0.6 to 9 mph speed range, a 2.5 HP peak motor, a 265 lb maximum user weight, a 117.9 lb product weight and a folded size of 63 by 29.25 by 10.5 inches. The Amazon listing gives the same belt, speed range and limit, describes the deck as designed lower to the floor than traditional treadmills, and adds slip-resistant rubber handrails, an LCD for speed, time, distance, calories, pulse and steps, nine programmes, a lubrication reminder every 188 miles, a speaker and USB charging. Against a conventional folding treadmill's step-up of around 7 inches, those 2.76 inches give back about four inches of headroom. The trade-offs are no incline, a belt a little short for tall runners at speed and a weight that makes it a two-person move. Sunny's store lists a three-year frame and 180-day parts warranty. Amazon showed it at $565.00 on 6 November 2026.",
     },
     {
-      id: 'nordictrack-c-700',
-      name: 'NordicTrack C 700',
-      category: 'Best Budget Compact',
-      badge: 'Best Budget',
-      reviewUrl: '/nordictrack-c-700-treadmill/',
-      priceRange: '$599-$799',
-      specs: 'Assisted fold · low step-up · simple console',
+      id: "horizon-t101-connect",
+      name: "Horizon T101 Connect",
+      category: "Best Budget Full-Size Folding Treadmill",
+      badge: "Best Budget",
+      priceRange: "About $740 (Amazon, 6 Nov 2026)",
+      specs: "20 x 55 in. deck · 0–10% power incline · 0.5–10 mph · 300 lb capacity · folds · lifetime frame & motor warranty",
       pros: [
-        'Cheapest machine here and among the most compact folded',
-        'Assisted fold is manageable alone',
-        'Low step-up suits a cramped room where you board from the side',
-        'Simple console with nothing to navigate',
+        "A powered 10% incline with dial controls and one-touch incline keys",
+        "Lifetime frame and motor warranty, per the listing",
+        "Works with apps including Zwift and Peloton, per the listing",
+        "Folds, and Horizon says it assembles in about 30 minutes",
       ],
       cons: [
-        '55-inch deck is short for anyone much over 5\'8"',
-        'Check the swing clearance, which can exceed what the folded size suggests',
+        "Incline stops at 10%, low for dedicated incline walking",
+        "A 55-inch deck is short for running at speed",
+        "10 mph top speed",
       ],
-      bottomLine:
-        'Good value in a tight room for a walker. Check the swing arc — a folding deck needs more room to fold than to sit.',
-      description:
-        'The cheapest sensible option here and a reasonable one, with a specific warning attached. Folded it is among the more compact machines on this page, the assisted fold is manageable alone, and the low step-up height is genuinely useful in a cramped room where you often step on from the side rather than the back. The console is simple and there is little to navigate. The warning concerns the swing arc: a folding deck sweeps through a wider path than its folded footprint implies, and if it cannot fold in its storage position against a shelf it has to be pulled forward first, which is exactly the kind of extra step that stops folds happening. Measure the arc, not just the footprint. The 55-inch deck also confines it to walking and light jogging.',
+      bottomLine: "Good value in a tight room for walkers and joggers who want a powered incline. Check the swing arc — a folding deck needs more room to fold than to sit.",
+      description: "The T101 Connect is Horizon's entry treadmill and the cheapest full-size folding treadmill with a powered incline that we could check on Amazon. The Amazon listing gives a 0–10% power incline and 0.5 to 10 mph, changed with Horizon's EasyDial controls or one-touch keys for intervals, a 20 by 55-inch running area with three-zone cushioning, a lifetime frame and motor warranty, a folding frame, and compatibility with apps including JRNY, Peloton and Zwift, which need their own subscriptions; Horizon's specification adds a 300 lb maximum user weight. That makes it a sound treadmill for walking and jogging with a powered incline you will actually use mid-workout, from a maker with a long warranty. The limits are in the numbers: 10% is enough for most fitness walking but short for 12-3-30-style incline sessions, and a 55-inch deck and 10 mph top speed suit jogging better than running. Amazon listed the T101 Connect at $739.99 on 6 November 2026.",
     },
     {
       id: 'sole-f65',
@@ -357,50 +357,46 @@ export default {
         'Everything about this machine is a size up from the F63, and whether that is right depends on whether you run. It carries a full 60-inch deck, which is the specification that makes running comfortable rather than cramped, and it still folds hydraulically — the combination is rare, because most machines with a proper running deck either do not fold or fold badly. The heavy frame should be steady underfoot and, as the heaviest here, puts less energy into the floor below, which matters in flats. The costs are straightforward: with a longer deck it is a size up when folded and tall when stored, so it needs a wall with vertical clearance rather than an alcove. And at its weight you will place it once and leave it. For a runner short on space, it is the best available answer.',
     },
     {
-      id: 'proform-power-1295i',
-      name: 'ProForm Power 1295i',
-      category: 'Best Compact With a Screen',
-      badge: 'Best Display',
-      reviewUrl: '/proform-power-1295i-treadmill/',
-      priceRange: '$999-$1,299',
-      specs: 'Assisted fold · incline to 12% · larger screen',
+      id: "nordictrack-t-series-10",
+      name: "NordicTrack T Series 10",
+      category: "Best Compact With a Screen",
+      badge: "Best Display",
+      priceRange: "About $999 (Amazon, 6 Nov 2026)",
+      specs: "20 x 60 in. deck · 0–12% incline · 0–12 mph · 325 lb capacity · 10 in. tilting touchscreen · folds",
       pros: [
-        'Largest screen of the compact machines here',
-        'Incline to 12% supports low-impact work in a small room',
-        'Mid-weight frame balances portability against stability',
-        'Retains manual control without a subscription',
+        "iFIT workouts change the incline and speed for you as the trainer goes",
+        "SmartAdjust and ActivePulse adapt the incline to your history and heart rate, per the listing",
+        "A 60-inch deck and 12 mph for running",
+        "Folds with an assisted lowering foot bar",
       ],
       cons: [
-        'Assisted fold likely to need more effort than the Sole\'s hydraulic one',
-        'Check whether the published folded depth includes the console',
+        "The automatic features need an iFIT membership; Pro is $39 a month",
+        "Incline stops at 12%",
+        "No decline",
       ],
-      bottomLine:
-        'Capable hardware, but its fold is not the effortless kind. Good if the machine will mostly stay up.',
-      description:
-        'This machine illustrates the central point of this page better than any other. On paper it is a reasonable small-space option: a mid-weight frame, incline to 12%, and the largest screen of the compact group. But an assisted fold on a mid-weight machine is likely to need a deliberate effort rather than the Sole\'s lift-and-release, and that kind of friction is what stops a fold being automatic. If your room can accommodate the machine unfolded and you simply want the option occasionally, it is good value with a good display. If you need it folded after every session to reclaim the floor, buy the Sole. Check, too, whether the published folded depth includes the console, which can add depth.',
+      bottomLine: "A 10-inch touchscreen and a 60-inch deck that folds with an assisted foot bar. Worth it if you will use iFIT; budget for the membership.",
+      description: "The T Series 10 is the folding machine here with a built-in touchscreen. The Amazon listing gives a 0–12% incline and 0–12 mph, a 10-inch tilting touchscreen, SelectFlex cushioning that adjusts from soft to firm and a folding frame with an assisted lowering foot bar; NordicTrack's specification adds a 20 by 60-inch deck and a 325 lb maximum user weight. With an iFIT membership, the trainer's terrain is sent to the treadmill, so a filmed hike raises and lowers the deck as the trail does, without you touching the console. SmartAdjust scales that to your history, and ActivePulse changes speed and incline to keep you in a heart-rate zone if you wear a Bluetooth strap. The catch is cost: the listing names the Pro membership, which iFIT listed at $39 a month in November 2026, and without it you set the incline yourself like any other treadmill. Our iFIT treadmill guide covers the membership question. Amazon listed it at $999 on 6 November 2026.",
     },
     {
-      id: 'nordictrack-c-990',
-      name: 'NordicTrack C 990',
-      category: 'Best Compact With Guided Content',
-      badge: 'Best Classes',
-      reviewUrl: '/nordictrack-c-990-treadmill/',
-      priceRange: '$999-$1,299',
-      specs: 'Assisted fold · iFit-ready · 60 in. deck',
+      id: "proform-carbon-tlx",
+      name: "ProForm Carbon TLX",
+      category: "Best Compact With Guided Content",
+      badge: "Best Classes",
+      priceRange: "About $999 (Amazon, 6 Nov 2026)",
+      specs: "20 x 60 in. deck · 3.0 CHP · 0–12 mph · 0–12% incline · 300 lb capacity · 7 in. LCD · folds",
       pros: [
-        'Full 60-inch deck in a folding machine at a mid-range price',
-        'Guided incline sessions suit small-room, low-impact training',
-        'Stands reasonably upright when folded',
-        'More frame mass than the lighter compact machines',
+        "A full 60-inch deck and 12 mph for the price of the NordicTrack T Series 10",
+        "Runs iFIT from your own tablet on the cheaper Train membership",
+        "ProShox cushioning and a hydraulic lowering foot bar on the fold",
+        "Heart-rate control with ActivePulse when paired with a Bluetooth strap",
       ],
       cons: [
-        'A large machine whose assisted fold is likely to take real effort',
-        'Largely inert without an iFit subscription',
+        "No touchscreen; the 7-inch LCD shows stats only",
+        "A 300 lb rating is lower than the NordicTrack models at similar prices",
+        "No decline",
       ],
-      bottomLine:
-        'A 60-inch deck that folds, though not effortlessly. Only worth it if you want the classes and can live with it standing.',
-      description:
-        'The appeal is a full 60-inch running deck in a folding machine at a mid-range price, with a guided content library that suits the incline-walking sessions small-room training tends toward. The frame has more mass than the lighter compact machines and it stands reasonably upright once folded. The problem is getting it there: a 60-inch deck on an assisted rather than hydraulic fold is likely to take genuine effort, and a fold that takes effort tends to happen less and less. In a small room that means you should plan around its unfolded dimensions. Add the subscription dependency — the console does very little unpaid — and the case narrows to buyers who specifically want the classes and have room to leave it standing. Otherwise the Sole F65 offers the same deck length and an easier hydraulic fold.',
+      bottomLine: "A 60-inch deck that folds with a hydraulic foot bar, and iFIT classes through your own tablet. Only worth it if you want the classes.",
+      description: "The Carbon TLX gives you a running-length deck and iFIT's automatic control without paying for a touchscreen. The Amazon listing gives a 7-inch LCD with a device shelf, a 0–12 mph speed range, a 0–12% incline, ProShox cushioning and a folding frame with a hydraulic foot bar for lowering, and it names the Train membership for iFIT, which runs through your own phone or tablet. ProForm's specification adds a 20 by 60-inch deck, a 3.0 CHP motor and a 300 lb maximum user weight. Against the T Series 10 at the same price, you give up the touchscreen and 25 lb of rated capacity in exchange for the cheaper membership. If you already own a tablet and you mostly care about the treadmill following the trainer, that is a good trade. Amazon listed it at $999 on 6 November 2026.",
     },
   ],
   faqs: [
@@ -476,12 +472,18 @@ export default {
       blurb: "Five walking pads ranked by checked footprint and weight.",
       url: '/best-mini-treadmills/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Lightweight Treadmills",
+      blurb: "Five lightweight folding treadmills from 44 to 66 lb, each with a weight stated by the listing or the…",
+      url: '/best-lightweight-treadmills/',
+    },
   ],
   bottomLine: [
     `Judge the fold, not the folded dimensions. The
             <strong class="text-white">Sole F63</strong>'s hydraulic assist is the kind of fold
             that keeps being done after every session — and a machine that gets folded is smaller
-            than a machine that merely folds. For the smallest footprint on paper, the <strong class="text-white">ProForm Power 995i</strong>.`,
+            than a machine that merely folds. For a machine that folds flat, the <strong class="text-white">Sunny SF-T7718</strong>.`,
     `Only ever going to walk? A
             <a href="/under-desk-treadmills/" class="text-[#5AA9FF] font-bold no-underline">walking pad</a>
             is the only machine here that genuinely disappears. Need to run? The

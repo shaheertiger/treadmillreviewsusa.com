@@ -28,7 +28,10 @@ export default {
           Amazon listing. Amazon and the international reseller pages that copy its listings returned
           errors or blocks, so we could not confirm Amazon prices or sellers. We found no hands-on review
           of any current RHYTHM FUN model. Figures that only RHYTHM FUN gives are marked as the maker’s,
-          and figures that conflict are kept off the cards. We searched the CPSC recall database for
+          and figures that conflict are kept off the cards. On 9 November 2026 we added RHYTHM FUN’s
+          Amazon listing for its side-handlebar pad, read from Amazon’s product data, and replaced two
+          RHYTHM FUN models we could not find on Amazon US with the DeerRun A6 Plus and ANCHEER’s
+          handle-bar pad, whose figures are those checked for our 2-in-1 and ANCHEER guides. We searched the CPSC recall database for
           RHYTHM FUN by title and manufacturer and found no recall. We have not tested any of these
           machines. Prices change often. We earn a commission if you buy through the Amazon links on
           this page; it does not change what we say.`,
@@ -42,73 +45,68 @@ export default {
           alternatives.`,
   products: [
     {
-      id: 'rhythm-fun-13-incline-walking-pad',
-      name: 'RHYTHM FUN 13% Incline Walking Pad with Handle Bar',
-      category: 'Incline Walking Pad With Side Handlebars',
-      badge: 'Best RHYTHM FUN Pad',
-      amazonUrl: 'https://www.amazon.com/s?k=RHYTHM+FUN+13%25+Incline+Walking+Pad+Handle+Bar&tag=sktiger-20',
-      priceRange: '$209.99 at RHYTHM FUN (5 Nov 2026)',
-      specs: '0.6–6.2 mph · 300 lb capacity · 37.5 x 15 in. belt · folds to 3.9 in. · manual incline to 13% (maker)',
+      id: "rhythm-fun-16-incline-walking-pad-handles",
+      name: "RHYTHM FUN 6.2MPH Walking Pad with Handles, 16% Incline",
+      category: "RHYTHM FUN’s Side-Handlebar Incline Pad on Amazon",
+      badge: "Closest on Amazon",
+      priceRange: "$169.99 (Amazon, 9 Nov 2026); the 13% pad was $209.99 at RHYTHM FUN on 5 Nov 2026",
+      amazonUrl: "https://www.amazon.com/dp/B0GMQXG1L3?tag=sktiger-20",
+      specs: "0.6–6.2 mph · 300 lb capacity · 37.5 x 15 in. belt · folds to 3.9 in. · 8.5 in. side handlebars · incline 16% (Amazon title) or 13% (RHYTHM FUN store)",
       pros: [
-        'RHYTHM FUN and an independent listing summary agree on the speed, capacity, belt and folded height',
-        'Two short side handlebars rather than a single upright',
-        'Three manual incline positions, which few pads at this price offer',
+        "Its Amazon title gives the same 6.2 mph, 300 lb, 37.5-inch belt, 3.9-inch fold and 8.5-inch side handlebars as RHYTHM FUN’s 13% pad",
+        "Two short side handlebars rather than a single upright",
+        "A manual incline, which few pads at this price offer",
+        "About $40 less on Amazon than the 13% pad on RHYTHM FUN’s store",
       ],
       cons: [
-        'The 13% maximum comes only from RHYTHM FUN',
-        'A 15-inch belt is narrow for a brisk walk',
-        'A one-year warranty and no published motor rating',
+        "The Amazon title says 16% incline and RHYTHM FUN’s store says 13% for the matching pad; we print neither as confirmed",
+        "A 15-inch belt is narrow for a brisk walk",
+        "A one-year warranty and no published motor rating",
       ],
-      bottomLine:
-        'The RHYTHM FUN to buy for incline desk walking with something to steady yourself on, at about $210.',
-      description:
-        'This is the current pad that best fits the “rhythm fun walking pad treadmill” search. RHYTHM FUN’s US store listed it in stock at $209.99 on 5 November 2026, with three manual incline positions (0, 10 and 13%), 8.5-inch side handlebars, 0.6 to 6.2 mph with the handlebars raised, a 300 lb capacity, a 37.5-inch six-layer belt, a 3.9-inch folded height, front transport wheels and the YPOOFIT app. An independent listing summary of its Amazon listing gives the same 0.6 to 6.2 mph, 300 lb, 37.5 by 15-inch belt and 3.9-inch folded height, plus a 40.8 lb unit weight, but no incline figure, which is why the card marks the 13% as the maker’s. RHYTHM FUN publishes no motor rating for this model. The earlier CP03, which OCDevel recorded with a 15% incline, 6.2 mph, 300 lb and a 37.4 by 15-inch belt, looks like its predecessor, but we could not confirm that.',
+      bottomLine: "The RHYTHM FUN incline pad with side handlebars that Amazon sells; check the incline positions in the listing photos before you order.",
+      description: "RHYTHM FUN’s store sells the 13% incline walking pad that this guide recommends, but we could not find an Amazon US listing under that name. The closest Amazon listing, from RHYTHM FUN itself, is titled as a 6.2 mph walking pad with handles and a 16% incline, and its title gives every other headline figure of the 13% pad: 0.6 to 6.2 mph, a 37.5-inch belt, a 3.9-inch folded height, 8.5-inch foldable side handlebars, app connection and a 300 lb capacity. RHYTHM FUN’s US store, on 5 November 2026, gave the 13% pad three manual incline positions (0, 10 and 13%), the same speed, capacity, belt and fold, front transport wheels and the YPOOFIT app, and an independent listing summary of its Amazon listing agreed on 0.6 to 6.2 mph, 300 lb, a 37.5 by 15-inch belt and a 3.9-inch fold, plus a 40.8 lb unit weight, but gave no incline figure. So the two are probably the same pad or a close revision, but the incline maximum conflicts, 16% against 13%, and we could not settle it. RHYTHM FUN publishes no motor rating. Amazon listed it at $169.99 on 9 November 2026.",
     },
     {
-      id: 'rhythm-fun-3hp-13-incline-treadmill',
-      name: 'RHYTHM FUN 3.0HP Treadmill with 13% Incline and Handles',
-      category: 'Folding Treadmill With Handles',
-      badge: 'For Jogging',
-      amazonUrl: 'https://www.amazon.com/s?k=RHYTHM+FUN+3.0HP+Treadmill+13%25+Incline+Handles&tag=sktiger-20',
-      priceRange: '$269.99–$399.99 at RHYTHM FUN (two listings, 5 Nov 2026)',
-      specs: 'Maker’s figures: 3.0 HP brushless · 7.5 mph · 350 lb · 37.5 x 15.4 in. belt · manual incline to 13%',
+      id: "deerrun-a6-plus",
+      name: "DeerRun A6 Plus",
+      category: "Closest on Amazon to RHYTHM FUN’s 3.0 HP Treadmill: a 2-in-1 for Light Jogging",
+      badge: "Closest on Amazon",
+      priceRange: "About $249 (Amazon, 6 Nov 2026)",
+      specs: "0.6–7.5 mph · 5% manual incline · 300 lb capacity (listing) · fold-flat with handrail · PitPat app and remote",
       pros: [
-        'Handles, a tablet holder, a cup holder and 12 preset programs',
-        'A 7.5 mph top speed, the highest in RHYTHM FUN’s current range',
-        'Folds with transport wheels',
+        "A 7.5 mph top speed, the same as RHYTHM FUN’s 3.0 HP treadmill, with a handrail",
+        "A 300 lb maximum weight stated plainly in the listing",
+        "A 5% manual incline for about $249",
+        "Works with the PitPat app for tracking and virtual runs",
       ],
       cons: [
-        'RHYTHM FUN’s store lists it twice with the same description at $269.99 and $399.99',
-        'Every figure comes from RHYTHM FUN alone',
-        'A 37.5-inch belt is short for running at 7.5 mph',
+        "The listing says \"longer running belt\" but gives no length",
+        "It does not separate walking-mode and running-mode speeds in the bullets",
+        "DeerRun sells many similar models with similar titles, so check the A6 Plus name in your basket",
       ],
-      bottomLine:
-        'Only at the lower $269.99 price, and only for walking and light jogging; the belt is too short for real running.',
-      description:
-        'RHYTHM FUN’s store lists this folding treadmill twice, with word-for-word identical descriptions, at $269.99 and at $399.99 on 5 November 2026; both showed as in stock. The description gives a manual incline to 13%, an LED display with app and console control, 12 preset programs, a pause function that keeps your data, a 37.5 by 15.4-inch six-layer belt, a 3.0 HP brushless motor, a 350 lb capacity on a steel frame, a folding design with wheels, and a 7.5 mph top speed in the title. We found no independent source for any of these figures, so the card labels them as the maker’s. We could not tell whether the two listings are two versions or a duplicate; if you buy, buy the cheaper one and check that the photos match. As with any short-belt treadmill, 7.5 mph is a jogging allowance, not a running deck.',
+      bottomLine: "For light jogging with a handrail, at a price close to the RHYTHM FUN’s lower listing. Confirm the belt length with DeerRun if you plan to jog.",
+      description: "RHYTHM FUN’s 3.0 HP treadmill with handles is listed twice on its own store, and we could not find an Amazon US listing that matches it, so this card shows the closest light-jogging 2-in-1 that Amazon does sell. The DeerRun A6 Plus is a walking pad and running machine with a handrail. Its Amazon listing describes 0.6 to 7.5 mph, a manual incline that the title gives as 5%, a 300 lb maximum weight, an alloy steel frame, a shock-absorbing deck, a fold-flat design, a full-screen display, a remote and the PitPat app. Two gaps are worth knowing. It calls the belt longer without saying how long, and it gives a single speed range rather than separate walking and running modes. Like the RHYTHM FUN, it is a jogging allowance on a short deck, not a running treadmill, and its incline is shallower than the RHYTHM FUN’s claimed 13%. DeerRun sells many similar models, so check the A6 Plus name in your basket. Amazon showed it at $249.00 on 6 November 2026.",
     },
     {
-      id: 'rhythm-fun-handle-bar-walking-pad',
-      name: 'RHYTHM FUN Walking Pad with Handle Bar and Incline',
-      category: 'Cheapest RHYTHM FUN Pad',
-      badge: 'Cheapest RHYTHM FUN',
-      amazonUrl: 'https://www.amazon.com/s?k=RHYTHM+FUN+Walking+Pad+Handle+Bar+300lbs&tag=sktiger-20',
-      priceRange: '$199.99 at RHYTHM FUN (5 Nov 2026)',
-      specs: 'Maker’s figures: 0.5–5.0 mph · 300 lb · about 37 x 15 in. belt · 43 lb · folds to 5 in. · manual incline',
+      id: "ancheer-walking-pad-handle-bar",
+      name: "ANCHEER Walking Pad with Handle Bar and 12% Incline",
+      category: "Closest on Amazon to RHYTHM FUN’s Cheapest Pad: a Handle-Bar Pad With Incline",
+      badge: "Closest on Amazon",
+      priceRange: "Amazon price not confirmed on 5 Nov 2026",
+      specs: "0.6–4.0 mph · 2-level manual incline to 12% · 16 in. belt width · fold-down handlebar",
       pros: [
-        'The cheapest walking pad in RHYTHM FUN’s range',
-        'A handle bar, eight silicone shock absorbers and the YPOOFIT app',
-        'At 43 lb, easy to slide under a bed',
+        "A handlebar for balance, which most flat pads lack",
+        "Manual incline to 12% for steeper walking",
+        "Price-tracked on Amazon between about $151 and $180 for most of 2026",
+        "Sold by Amazon.com on the tracked listing, so Amazon’s return terms apply",
       ],
       cons: [
-        'RHYTHM FUN gives no incline percentage for this model',
-        'Every figure comes from RHYTHM FUN alone',
-        'A 5 mph top speed is a brisk walk, not a run',
+        "The title says 320 lb and the feature list 350 lb; we print neither",
+        "The title says 3.0 HP; the feature list says 1000 W, about 1.3 HP",
+        "No independent review or brand website to check against",
       ],
-      bottomLine:
-        'For a light walker who wants a handle bar and a slight incline for under $200.',
-      description:
-        'RHYTHM FUN’s cheapest walking pad was $199.99 on its US store on 5 November 2026, in stock. RHYTHM FUN describes a manual incline without giving a percentage, a handle bar, 0.5 to 5.0 mph split into working, walking and running modes, a 43 lb unit weight, a 5-inch folded height, a belt of about 37 by 15 inches with five layers, eight silicone shock absorbers, a steel frame, a phone holder, the YPOOFIT app and a 300 lb capacity in the title. Its description reads very like OCDevel’s record of the AP02, which also had a 37 by 15-inch belt, a 300 lb rating and a modest manual incline, though OCDevel gave the AP02 a 3.7 mph top speed and a 39.7 lb weight, so we cannot say they are the same machine.',
+      bottomLine: "For a light walker who wants a handle bar and a manual incline for under $200, planning on the lower capacity and motor figures.",
+      description: "RHYTHM FUN’s cheapest handle-bar pad, $199.99 on its own store, could not be matched to an Amazon US listing, so this card shows the closest cheap handle-bar pad with incline that Amazon does sell. ANCHEER’s pad, tracked by PriceHistory on Amazon and sold by Amazon.com, has a feature list giving a 1000 W brushless motor, 0.6 to 4.0 mph, a 16-inch belt, a two-level manual incline to 12%, an 18 kg (about 40 lb) weight and a 4.2-inch folded height, about the same weight as the RHYTHM FUN and slimmer folded. The same listing contradicts itself twice: its title says 3.0 HP and 320 lb, its feature list 1000 W, about 1.3 HP, and 350 lb. Plan on 320 lb or less. Like the RHYTHM FUN, it rests on the seller’s figures alone, with no independent review. PriceHistory recorded a low of $151.99 in May 2026 and $167.99 after a price change on 21 June 2026, against a stated $329.99. Buy it from the Amazon-sold listing so that a fault in the first month is Amazon’s problem.",
     },
     {
       id: 'rhythm-fun-s8',
@@ -177,8 +175,9 @@ export default {
             of its current models that we could find.
           </p>
           <p>
-            The cards below cover all four RHYTHM FUN treadmills and walking pads on its store on
-            5 November 2026, with the maker’s figures labelled as such, and one checked alternative. If you
+            The cards below cover the RHYTHM FUN treadmills and walking pads on its store on
+            5 November 2026, or the closest Amazon listings where Amazon does not sell a model, with the
+            maker’s figures labelled as such, and one checked alternative. If you
             are looking for the AP01 or AP02, the
             <a href="#discontinued" class="text-[#0F62FE] font-medium">section on discontinued models</a>
             explains what happened to them.
@@ -217,11 +216,17 @@ export default {
             These are the four RHYTHM FUN machines on its US store on 5 November 2026, at the store’s
             prices, plus one checked alternative. Only the 13% handle-bar pad had its main figures
             confirmed by a second source; on the other cards, “maker’s figures” means exactly that.
-            Where sources disagree, the figure is left off the card and the description says so.
+            Where sources disagree, the figure is left off the card and the description says so. RHYTHM
+            FUN sells these models on its own store; on Amazon US we could match only its side-handlebar
+            incline pad, listed there with a 16% rather than 13% incline, so the 3.0 HP treadmill and the
+            cheapest handle-bar pad are shown by the closest machines Amazon does sell, and the text
+            below still describes the RHYTHM FUN models.
           </p>
           <p>
-            For incline desk walking with handlebars, the 13% pad. For light jogging, the 3.0 HP treadmill
-            with handles, at its lower listed price. For the cheapest handle-bar pad, the $199.99 model. The
+            For incline desk walking with handlebars, the 13% pad (on Amazon, its 16% listing). For light
+            jogging, the 3.0 HP treadmill with handles at its lower listed price on RHYTHM FUN’s store, or
+            the DeerRun A6 Plus on Amazon. For the cheapest handle-bar pad, the $199.99 model, or ANCHEER’s
+            handle-bar pad on Amazon. The
             S8 is hard to justify at its price. And for a longer, wider belt and checked figures, the MERACH
             W50 TrekPad.
           </p>`,

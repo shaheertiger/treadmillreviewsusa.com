@@ -2,7 +2,7 @@ export default {
   slug: 'best-budget-treadmills',
   title: 'Best Budget Treadmills (2026): The Best Pick at Every Price Band',
   description:
-    'The best budget treadmill at each realistic price, from a $250 walking pad to a $1,100 running machine, with what each band gives up and where cheap costs more.',
+    'The best budget treadmill at each realistic price, from a $300 walking pad to a $1,100 running machine, with what each band gives up and where cheap costs more.',
   crumbLabel: 'Best Budget Treadmills',
   breadcrumb: { name: 'By Price', url: '/price/' },
   kicker: 'Buying Guide',
@@ -12,7 +12,7 @@ export default {
   socialProof: '2.2k',
   h1: ['Best Budget Treadmills', 'at Every Realistic Price'],
   standfirst:
-    '"Budget" means something different at $250 and at $1,100, and the best cheap treadmill depends on which of those you can spend. Here is the machine worth buying in each band, what each band quietly gives up, and the places where a cheap treadmill ends up costing more than it should.',
+    '"Budget" means something different at $300 and at $1,100, and the best cheap treadmill depends on which of those you can spend. Here is the machine worth buying in each band, what each band quietly gives up, and the places where a cheap treadmill ends up costing more than it should.',
   ctas: [
     { label: 'See the Picks', href: '#quick-picks' },
     { label: 'What Budget Gives Up', href: '#what-budget-sacrifices' },
@@ -21,19 +21,22 @@ export default {
   stickyCta: { text: 'See the Best Pick for Your Budget', link: '#quick-picks' },
   note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
           machines. Each was confirmed on 15 October 2026 as on sale, and its specifications were
-          checked on that date against the maker's own product page (UREVO, Horizon Fitness,
-          BowFlex and SOLE) and at least one source that does not make it: a major retailer's
+          checked on that date against the maker's own product page (Horizon Fitness and
+          SOLE) and at least one source that does not make it: a major retailer's
           listing, an independent review or a walking pad tracker that reads owner's manuals. A
           figure appears on a product card only where those sources agree; where they disagreed —
           most often on motor horsepower, belt width and unit weight — we left the figure out and
           say so in the text. None of these are our own measurements. Prices are those we saw on
           maker and retailer sites on 15 October 2026; at this end of the market they move weekly
           and "compare at" prices are often inflated, so confirm the price, the specification and
-          the warranty for the exact unit before you order. We earn a commission if you buy through
+          the warranty for the exact unit before you order. The MERACH, Goplus and NordicTrack cards replace UREVO and
+          BowFlex machines that Amazon US does not sell; their figures are those checked against the
+          maker and the Amazon listing for our walking-pad, under-$500 and auto-incline guides on 5
+          and 6 November 2026. We earn a commission if you buy through
           the Amazon links on this page; it does not change which products we list or what we say
           about them.`,
   lead: `There is no single best budget treadmill, because a budget is not one number. Somebody
-          with $250 and somebody with $1,100 are both shopping cheap, and the right machine for one
+          with $300 and somebody with $1,100 are both shopping cheap, and the right machine for one
           is useless to the other. So this page does not rank six treadmills against each other.
           It names the best machine we could verify in each realistic price band — a walking pad, a
           compact folding machine, a full-size jogging treadmill and a full-size running treadmill —
@@ -45,7 +48,7 @@ export default {
       id: 'quick-picks',
       heading: 'Our Picks at a Glance',
       html: `          <p>
-            One or two machines for each budget. The short version: at about $250, buy a walking pad
+            One or two machines for each budget. The short version: at about $300, buy a walking pad
             with incline; at about $900, buy a full-size treadmill with a 60-inch deck; and if you can
             stretch to about $1,100, buy a machine with a 15% incline and a longer parts warranty.
             The middle band — a folding treadmill with side rails and a full deck for under $500 — is
@@ -60,10 +63,10 @@ export default {
               </tr>
             </thead>
             <tbody>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UREVO SpaceWalk 3S</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walking pad, around $250</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Powered 0–9% incline on a 42.5-inch belt</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UREVO Foldi 3S</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Compact folding machine, under $500</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">7.6 mph, rails and powered incline for about $320</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">MERACH NovaWalk W50 TrekPad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walking pad, around $300</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Powered incline, 400 lb rating, 1.25 HP continuous</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Goplus 3.75HP Folding Treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Compact folding machine, under $500</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rails and a 1–15% powered incline for about $430</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon T202</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Full-size jogging, $800–$1,000</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20 x 60-inch deck and 12 mph for $899</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bowflex T6</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The same band, when it is on sale</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15% incline and three years on parts at $899</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack T Series 10</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The same band, with a touchscreen</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10 in. screen and iFIT on a 60-inch deck for about $999</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon 7.0 AT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Running, $1,000–$1,500</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15% incline, quick dials, three years on parts</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">SOLE F63</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Running with no subscription</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Same core figures, about $1,100 direct from SOLE</td></tr>
             </tbody>
@@ -85,13 +88,13 @@ export default {
             each carries only figures on which the maker and at least one independent source agree.
             Motor horsepower is missing from most of them on purpose: on the walking pads the
             advertised figure is a peak that independent sources put far lower, and on the full-size
-            machines it is either unpublished by the maker or, in BowFlex's case, footnoted as a test
-            rating rather than the motor's working output.
+            machines it is either unpublished by the maker or quoted on a basis that differs between
+            sources.
           </p>
           <p>
             Two machines in one band is not indecision. In the $800 to $1,000 band the Horizon T202
-            is the everyday price and the Bowflex T6 is the better machine when its frequent sale
-            brings it to the same number; in the $1,000 to $1,500 band the <a href="/horizon-7-0-at-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Horizon 7.0 AT</a> and the SOLE
+            is the everyday price and the NordicTrack T Series 10 is the pick if you want a
+            touchscreen and iFIT classes for about $100 more; in the $1,000 to $1,500 band the <a href="/horizon-7-0-at-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Horizon 7.0 AT</a> and the SOLE
             F63 match each other on paper, and the choice comes down to warranty terms and controls.
           </p>`,
     },
@@ -101,8 +104,7 @@ export default {
       html: `          <p>
             We have not tested these machines. The picks were made from published specifications,
             maker and retailer listings, warranty terms and independent coverage, all checked on 15
-            October 2026. Three of them have their own pages on this site — our reviews of the
-            <a href="/bowflex-t6-treadmill/" class="text-[#0F62FE] font-medium">Bowflex T6</a>, the
+            October 2026. Two of them have their own pages on this site — our reviews of the
             Horizon 7.0 AT and the SOLE F63 — and those are readings of the specifications and owner
             reports, not hands-on tests either.
           </p>
@@ -131,7 +133,7 @@ export default {
             the $420 to $600 range, is not listed on NordicTrack's US site, and we could not confirm a
             current price on a retailer page we could read on the day. And Sperax walking pads, which
             still turn up at budget prices on marketplaces, are under a CPSC warning telling owners to
-            stop using them. We found no recall or warning covering the <a href="/urevo-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>UREVO</a>, BowFlex or SOLE models on this page.
+            stop using them. We found no recall or warning covering the MERACH, Goplus, NordicTrack or SOLE models on this page.
           </p>`,
     },
     {
@@ -200,7 +202,7 @@ export default {
             explains why the line falls where it does.
           </p>
           <p>
-            <strong>2. How tall are you, and how long is your stride?</strong> A 42.5-inch belt
+            <strong>2. How tall are you, and how long is your stride?</strong> A belt of about 41 inches
             suits walkers of most heights at desk pace. Taller users, and anyone who wants to move
             beyond a walk, will feel the front and back of a short belt quickly. If you are over about
             six feet, give more weight to deck length than to any other figure on the card.
@@ -239,16 +241,15 @@ export default {
             What keeps a treadmill running smoothly under a heavier runner, hour after hour, is the
             motor's continuous rating — what it can deliver all day without overheating — not the
             peak figure printed on the box. Budget machines are where the gap between the two is
-            widest. The UREVO SpaceWalk 3S is sold as 2.5 HP; an independent tracker that reads the
-            manual derives roughly 0.8 HP continuous from its 600-watt rated power. That is fine for
-            walking, which is what it is for, and it is why the same motor would struggle with daily
-            jogging.
+            widest. MERACH is unusual in publishing both for the W50 TrekPad: 3.5 HP peak and 1.25
+            HP continuous. That is fine for walking, which is what the pad is for, and it is why a
+            pad motor would struggle with daily jogging. The Goplus is sold as 3.75 HP with no word
+            on whether that is continuous, so read it as a peak figure.
           </p>
           <p>
             Full-size budget machines are better, but the figure is harder to pin down. Horizon does
             not publish a motor rating on its product pages; reviewers quote one, but it is not the
-            maker's number. BowFlex quotes 3.0 HP for the T6 and footnotes it as a test-setting rating
-            that does not reflect the motor's operational output. SOLE quotes 3.0 HP for the F63. Our
+            maker's number. SOLE quotes 3.0 HP for the F63. Our
             <a href="/treadmill-horsepower-guide/" class="text-[#0F62FE] font-medium">horsepower guide</a>
             explains the difference between the ratings, and why comparing headline figures across
             brands rarely tells you much.
@@ -257,7 +258,7 @@ export default {
           <p>
             Deck length is the sacrifice you feel on day one. Walking needs a belt of roughly 45 to 50
             inches to be comfortable for most adults; jogging wants about 55; running wants 60. The
-            walking pad and compact folder on this page both have 42.5-inch belts. Every full-size
+            walking pad and compact folder on this page have 41.3-inch and 52-inch belts. Every full-size
             machine here has a 60-inch deck, which is why the jump from $500 to $900 is the most
             important step on the page. Our
             <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
@@ -266,11 +267,12 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The warranty</h3>
           <p>
             Warranties are the most honest signal of how long a maker expects a machine to last.
-            Walking pads at this price are typically covered for about a year; UREVO's terms are one
-            year plus a 180-day extension if you register the pad in its app. The full-size machines
+            Walking pads at this price are typically covered for about a year; MERACH gives two years
+            on the W50 TrekPad. The Horizon and SOLE machines
             here all carry lifetime frame and motor cover, which sounds equal — but the parts warranty
             is where they differ, and parts are what actually fail: one year on the Horizon T202, two
-            years on the SOLE F63 and three years on the Bowflex T6 and Horizon 7.0 AT. Labour is one
+            years on the SOLE F63 and three years on the Horizon 7.0 AT. Check NordicTrack's current
+            terms for the T Series 10, which we did not confirm for this page. Labour is one
             year on most of them. Our
             <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">warranty guide</a>
             explains how to read these terms and what "lifetime" usually means in practice.
@@ -287,7 +289,7 @@ export default {
           </p>
           <p>
             <strong>Buying twice.</strong> The most expensive budget treadmill is the one that turns
-            out to be the wrong kind. A $250 walking pad bought by someone who wants to jog will be
+            out to be the wrong kind. A $300 walking pad bought by someone who wants to jog will be
             replaced within months, and the total spend is then the pad plus a real treadmill. Buy for
             the most demanding thing you will do every week, not the gentlest.
           </p>
@@ -300,9 +302,9 @@ export default {
           </p>
           <p>
             <strong>Delivery and set-up.</strong> Full-size budget treadmills weigh roughly 190 to 280
-            lb assembled and ship as freight, usually to the curb. BowFlex's page, for example, listed
-            standard delivery as a separate charge from the treadmill when we checked, with
-            room-of-choice delivery and assembly costing more. Add those charges before comparing
+            lb assembled and ship as freight, usually to the curb. Makers' own stores often list
+            standard delivery as a separate charge from the treadmill, with room-of-choice delivery
+            and assembly costing more. Add those charges before comparing
             prices, and check whether the machine will fit up your stairs.
           </p>
           <p>
@@ -328,13 +330,13 @@ export default {
           </p>
           <p>
             <strong>Ignore the compare-at price.</strong> On 15 October 2026 the Horizon 7.0 AT was
-            listed at $1,099 against a compare-at price of $2,100, and the UREVO Foldi 3S at $319.99
-            against $469.99. The second number is rarely what anyone pays. The price that matters is
+            listed at $1,099 against a compare-at price of $2,100, and on 5 November MERACH listed the
+            W50 TrekPad at $299.99 against $479.99. The second number is rarely what anyone pays. The price that matters is
             the one a machine has actually sold at more than once.
           </p>
           <p>
-            <strong>Expect discounts to come back.</strong> BowFlex had the T6 at $899 against a
-            $1,299 regular price, and machines in this band are discounted repeatedly through the
+            <strong>Expect discounts to come back.</strong> Horizon had the T202 at $899 against a
+            $1,299 compare-at price, and machines in this band are discounted repeatedly through the
             year. If a machine
             you want is at its regular price, waiting a few weeks is often worth it. Our guide to the
             <a href="/best-time-of-year-to-buy-a-treadmill/" class="text-[#0F62FE] font-medium">best time of year to buy a treadmill</a>
@@ -342,9 +344,9 @@ export default {
           </p>
           <p>
             <strong>Compare the maker's store with retailers.</strong> Prices for the same machine
-            differ between sellers on the same day. The T6 was $899 on BowFlex's store and $998 at a
-            major retailer when we checked; sometimes the gap runs the other way. Promotional prices
-            are also often limited by region — BowFlex's applied only within the 48 contiguous states.
+            differ between sellers on the same day, and promotional prices are often limited by region
+            or to the maker's own store, so compare the maker's price with Amazon and a major
+            retailer before you order.
           </p>
           <p>
             <strong>Check what the price includes.</strong> Delivery, assembly, a heart rate strap or
@@ -427,52 +429,45 @@ export default {
   ],
   products: [
     {
-      id: 'urevo-spacewalk-3s',
-      name: 'UREVO SpaceWalk 3S',
-      category: 'Best Budget Walking Pad',
-      badge: 'Best Under $300',
-      amazonUrl: 'https://www.amazon.com/s?k=UREVO+SpaceWalk+3S+Walking+Pad&tag=sktiger-20',
-      priceRange: '$250–$350',
-      specs: '0.6–4.0 mph · 0–9% powered incline · 42.5 in. belt length · 265 lb capacity · 6.5 in. tall',
+      id: "merach-w50-trekpad",
+      name: "MERACH NovaWalk W50 TrekPad",
+      category: "Best Budget Walking Pad",
+      badge: "Best Under $300",
+      priceRange: "$299.99 at MERACH (5 Nov 2026)",
+      specs: "41.3 x 16.5 in. belt · 0.6–4.0 mph · 400 lb capacity · 1.25 HP continuous motor · powered incline",
       pros: [
-        'Powered incline in nine levels, the one feature that keeps a 4 mph pad from becoming too easy',
-        'A 42.5-inch belt, long for a walking pad and comfortable for taller walkers at a desk',
-        'UREVO and an independent tracker agree on speed, belt length, incline, capacity and height',
-        'UREVO’s own store had it at $249.99 against a $349.99 list price on 15 October',
+        "A 400 lb rating that holds up across the maker, Amazon and independent coverage",
+        "MERACH publishes a continuous motor rating, which most budget pads do not",
+        "A two-year warranty, double the usual for the price",
       ],
       cons: [
-        'Walking only: 4 mph is the ceiling',
-        'Sold as 2.5 HP, but an independent tracker derives roughly 0.8 HP continuous from the manual’s rated power',
-        'The extra 180 days of warranty depend on registering the pad in UREVO’s app',
+        "Not a 2-in-1: no handle bar and no running speed",
+        "Does not fold, and at 69 lb is heavier to move",
+        "MERACH gives 12% incline and at least one roundup 10%, so no maximum is printed",
       ],
-      bottomLine:
-        'The best way to spend about $250 on a treadmill if what you want is daily walking, at a desk or in front of the television.',
-      description:
-        'If your budget is a walking pad budget, this is the one we would buy. UREVO lists a 0.6 to 4.0 mph speed range, a powered incline from 0 to 9% in nine levels, a 42.5-inch belt, a 265 lb maximum load and a height of 6.5 inches, and an independent walking pad tracker that reads owner’s manuals agrees on each of those. The belt width and the unit weight are where they differ — the two give slightly different widths and weights — so we have left both out. The incline is the reason to choose it over a cheaper flat pad: once 4 mph feels easy, raising the deck is the only way to make a walk harder. Be realistic about the motor. UREVO quotes 2.5 HP as a maximum; the tracker derives about 0.8 HP continuous from the 600-watt rating in the manual and classifies the motor as brushed. That is adequate for walking and not for jogging. The warranty is one year plus 180 days with app registration.',
+      bottomLine: "The best budget treadmill if you only walk: a powered incline, a 400 lb rating and a continuous motor figure, for about $300. It does not fold or run.",
+      description: "The W50 TrekPad is the walking pad we would buy at this price, and one of very few that publish a continuous motor rating. MERACH’s product page on 5 November 2026 listed it at $299.99, against $479.99, with a 41.3 by 16.5-inch belt, 0.6 to 4.0 mph, a 400 lb maximum user weight, a 1.25 HP continuous and 3.5 HP peak motor, powered incline, a 69.2 lb unit weight, a two-year warranty and 30-day returns. The capacity and belt figures matched the Amazon listing and independent coverage when we checked them in October. MERACH gives 12% incline while a published roundup describes 10%, so the card leaves the maximum out. It walks only, to 4 mph, which is what most people do on an under-desk pad anyway.",
     },
     {
-      id: 'urevo-foldi-3s',
-      name: 'UREVO Foldi 3S',
-      category: 'Best Budget Folding Machine Under $500',
-      badge: 'Best Under $500',
-      amazonUrl: 'https://www.amazon.com/s?k=UREVO+Foldi+3S+Treadmill&tag=sktiger-20',
-      priceRange: '$320–$470',
-      specs: '0.6–7.6 mph · 0–9% powered incline · 42.5 x 16.5 in. belt · 265 lb capacity · folds',
+      id: "goplus-3-75hp",
+      name: "Goplus 3.75HP Folding Treadmill with Incline",
+      category: "Best Budget Folding Machine Under $500",
+      badge: "Best Under $500",
+      priceRange: "About $430 (Amazon, 6 Nov 2026)",
+      specs: "52 x 17 in. belt · 1–15% automatic incline · 265 lb capacity · 12 preset and 3 custom programmes · folds",
       pros: [
-        'Reaches 7.6 mph, enough for a steady jog, where most machines at this price stop at 4 to 6 mph',
-        'Powered incline to 9% and rails to hold, which walking pads at this price lack',
-        'Folds for storage and rolls on wheels',
-        'About $320 on UREVO’s store on 15 October, against a $469.99 list price',
+        "A conventional folding treadmill with an upright, console and handrails",
+        "A 1–15% automatic incline, the best low-impact training tool at this price",
+        "A 52 by 17-inch belt, longer than the pads on this page",
+        "A soft-drop fold and four transport wheels",
       ],
       cons: [
-        'A 42.5-inch belt is short for running; this is a jogging machine at most',
-        'Motor ratings conflict — 2.5 HP on UREVO’s page, 0.75 HP on one European retailer’s — so we have printed neither',
-        'At about 87.5 lb it is heavy for a machine sold on portability',
+        "The listing does not state a top speed anywhere in its bullets",
+        "A 265 lb limit, and the 3.75 HP figure is not described as continuous",
+        "Heart rate is from grip sensors; the listing mentions no chest-strap receiver",
       ],
-      bottomLine:
-        'For a small space and a budget under $500, if you want rails, incline and a jogging pace rather than a desk pad. Not a running treadmill.',
-      description:
-        'Under $500 the choice is between a walking pad and a compact folding machine, and the Foldi 3S is the compact machine we could verify. UREVO lists a 0.6 to 7.6 mph speed range, a 42.5 by 16.5-inch belt, a 265 lb maximum load and a weight of 87.5 lb, and an independent review agrees on all four; UREVO and European retailer listings agree on a powered incline from 0 to 9% in nine levels. The independent review describes side rails that raise to unlock the higher speeds, a deck that folds away, and a desk attachment. What it is not is a full-size treadmill. The belt is the same length as a good walking pad’s, which suits walking and an easy jog but feels short at a running stride. The motor figure is disputed — UREVO says 2.5 HP, one European retailer says 0.75 HP — so treat sustained jogging as the limit. UREVO had it at $319.99 on 15 October. Check the warranty terms for this model with UREVO before ordering.',
+      bottomLine: "The way to get rails, a console and a powered 15% incline for under $500. Confirm the top speed before you buy, and read the horsepower as a peak figure.",
+      description: "The Goplus 3.75HP is the machine most people picture when they search for a cheap treadmill: an upright, a console, rails and a powered incline. Its Amazon listing describes a 52 by 17-inch belt with five layers, an automatic incline from 1 to 15%, 12 preset programmes and three user-defined ones, a 5-inch blue LCD, four built-in Bluetooth speakers, app connectivity, grip heart-rate sensors and a safety key. It states a 265 lb maximum user weight and a 3.75 HP motor, and it folds vertically with a soft-drop system and four wheels. The trade-off this page describes applies here too: the budget is buying a frame, a console and an incline motor as well as a belt and drive, and the listing does not say whether its 3.75 HP is a continuous rating, so treat it as a peak figure until Goplus says otherwise. The one important figure missing from the bullets is the top speed, so check it with Goplus or the product images before buying if you hope to jog. Buy it if incline or full rails are requirements; if they are not, a pad is the better walking machine. Amazon showed it at $429.99 on 6 November 2026.",
     },
     {
       id: 'horizon-t202',
@@ -494,34 +489,30 @@ export default {
         'Incline stops at 12%, and the console is a small LCD with LED windows',
       ],
       bottomLine:
-        'The best everyday-price treadmill under $1,000 for walking, jogging and some running. Buy the Bowflex T6 instead if it is on sale at the same price.',
+        'The best everyday-price treadmill under $1,000 for walking, jogging and some running. Pay about $100 more for the NordicTrack T Series 10 if you want a touchscreen.',
       description:
-        'The T202 is what a budget treadmill should be: a full-size deck, a sensible top speed and a frame warranty you will not outgrow, at a price that does not need a sale to reach. Horizon lists a 20 by 60-inch three-zone cushioned deck, 0.5 to 12 mph, 0 to 12% powered incline, a 325 lb maximum user weight, hydraulic folding and a machine weight of 187 lb, and two independent reviews agree on each. That 60-inch deck is the important figure: it is the length most runners need, where the cheaper T101 has a 55-inch deck. Horizon’s warranty is lifetime on the frame and motor and one year on parts and labour, and the short parts cover is the main reason to look at the Bowflex T6 when it is discounted. Horizon does not publish a motor rating, and its page says the machine is not compatible with GFCI outlets. Horizon had it in stock at $899 on 15 October, against a $1,299 compare-at price.',
+        'The T202 is what a budget treadmill should be: a full-size deck, a sensible top speed and a frame warranty you will not outgrow, at a price that does not need a sale to reach. Horizon lists a 20 by 60-inch three-zone cushioned deck, 0.5 to 12 mph, 0 to 12% powered incline, a 325 lb maximum user weight, hydraulic folding and a machine weight of 187 lb, and two independent reviews agree on each. That 60-inch deck is the important figure: it is the length most runners need, where the cheaper T101 has a 55-inch deck. Horizon’s warranty is lifetime on the frame and motor and one year on parts and labour, and the short parts cover is worth weighing against the Horizon 7.0 AT’s three years. Horizon does not publish a motor rating, and its page says the machine is not compatible with GFCI outlets. Horizon had it in stock at $899 on 15 October, against a $1,299 compare-at price.',
     },
     {
-      id: 'bowflex-t6',
-      name: 'Bowflex T6',
-      category: 'Best Budget Treadmill on Sale, $800–$1,000',
-      badge: 'Best Value on Sale',
-      amazonUrl: 'https://www.amazon.com/s?k=Bowflex+T6+Treadmill&tag=sktiger-20',
-      reviewUrl: '/bowflex-t6-treadmill/',
-      priceRange: '$899–$1,299',
-      specs: '20 x 60 in. deck · 0.5–12 mph · 0–15% incline · 325 lb capacity · folds',
+      id: "nordictrack-t-series-10",
+      name: "NordicTrack T Series 10",
+      category: "Best Budget Treadmill With a Screen, $800–$1,000",
+      badge: "Best With a Screen",
+      priceRange: "About $999 (Amazon, 6 Nov 2026)",
+      specs: "20 x 60 in. deck · 0–12% incline · 0–12 mph · 325 lb capacity · 10 in. tilting touchscreen · folds",
       pros: [
-        '15% incline and three years on parts, both better than the T202 at the same sale price',
-        'Lifetime frame and motor warranty, with one year of in-home labour',
-        'Bluetooth FTMS for JRNY, Peloton and Zwift, with no subscription needed to use the treadmill',
-        'BowFlex and a major retailer agree on the deck, speed, incline, capacity and warranty',
+        "iFIT workouts change the incline and speed for you as the trainer goes",
+        "SmartAdjust and ActivePulse adapt the incline to your history and heart rate, per the listing",
+        "A 60-inch deck and 12 mph for running",
+        "Folds with an assisted lowering foot bar",
       ],
       cons: [
-        'At its $1,299 regular price it competes with machines a band higher',
-        'The 3.0 HP figure is footnoted by BowFlex as a test rating, not the motor’s operational output',
-        'Folds on a pin with a gas shock but does not fold flat',
+        "The automatic features need an iFIT membership; Pro is $39 a month",
+        "Incline stops at 12%",
+        "No decline",
       ],
-      bottomLine:
-        'The best budget treadmill when it is on sale. At $899 it beats the T202 on incline and parts cover; at full price, compare it with the running band.',
-      description:
-        'The T6 is the better machine in the $800 to $1,000 band, but only when it is discounted, which it often is. BowFlex had it at $899 against a $1,299 regular price on 15 October, and a major retailer at $998. BowFlex and that retailer agree on a 20 by 60-inch running surface, 0.5 to 12 mph, motorised incline from 0 to 15%, a 325 lb maximum user weight and the warranty: lifetime on frame and motor, three years on parts and one year of in-home labour. Those last two figures are what separate it from the Horizon T202 at the same price — three more incline points and two more years on parts. It folds on a pin with a gas-shock assist, though not flat. The console is LCD and LED rather than a touchscreen, and it connects over Bluetooth to JRNY, Peloton or Zwift, each of which needs its own subscription; the treadmill itself needs none. BowFlex quotes 3.0 HP but footnotes it as a test rating.',
+      bottomLine: "The pick in the $800 to $1,000 band if you want a touchscreen and iFIT on a full 60-inch deck. Budget for the membership, which the automatic features need.",
+      description: "The T Series 10 is the cheapest full-size treadmill with a built-in touchscreen that we could check on Amazon. The Amazon listing gives a 0–12% incline and 0–12 mph, a 10-inch tilting touchscreen, SelectFlex cushioning that adjusts from soft to firm and a folding frame with an assisted lowering foot bar; NordicTrack's specification adds a 20 by 60-inch deck and a 325 lb maximum user weight. With an iFIT membership, the trainer's terrain is sent to the treadmill, so a filmed hike raises and lowers the deck as the trail does, without you touching the console. SmartAdjust scales that to your history, and ActivePulse changes speed and incline to keep you in a heart-rate zone if you wear a Bluetooth strap. The catch is cost: the listing names the Pro membership, which iFIT listed at $39 a month in November 2026, and without it you set the incline yourself like any other treadmill. Our iFIT treadmill guide covers the membership question. Amazon listed it at $999 on 6 November 2026.",
     },
     {
       id: 'horizon-7-0-at',
@@ -564,7 +555,7 @@ export default {
         'SOLE and an independent review agree on deck, speed, incline, capacity and warranty',
       ],
       cons: [
-        'Two years on parts is a year shorter than the Horizon 7.0 AT and Bowflex T6',
+        'Two years on parts is a year shorter than the Horizon 7.0 AT',
         'No touchscreen, and the independent review notes it is a heavy machine',
         'Labour and deck terms are worth confirming with SOLE for the current model year',
       ],
@@ -577,19 +568,19 @@ export default {
   faqs: [
     {
       q: 'What is the best budget treadmill?',
-      a: `It depends on the budget. Around $250, the best buy is a walking pad with incline such as the UREVO SpaceWalk 3S. Around $900, it is a full-size machine with a 60-inch deck, such as the Horizon T202, or the Bowflex T6 when it is on sale. Around $1,100, the Horizon 7.0 AT or SOLE F63 add 15% incline and longer parts cover.`,
+      a: `It depends on the budget. Around $300, the best buy is a walking pad with incline such as the MERACH NovaWalk W50 TrekPad. Around $900, it is a full-size machine with a 60-inch deck, such as the Horizon T202, or the NordicTrack T Series 10 at about $1,000 if you want a touchscreen. Around $1,100, the Horizon 7.0 AT or SOLE F63 add 15% incline and longer parts cover.`,
     },
     {
       q: 'What is a good cheap treadmill for running?',
-      a: `For regular running, look for a 60-inch deck, a 12 mph top speed and a parts warranty of more than one year. On the day we checked, the cheapest machines we could verify meeting those tests were the Horizon T202 at $899 and the Bowflex T6 on sale at $899. Walking pads and compact folders under $500 have belts around 42 inches long, which is too short.`,
+      a: `For regular running, look for a 60-inch deck, a 12 mph top speed and a parts warranty of more than one year. On the day we checked, the cheapest machines we could verify meeting those tests were the Horizon T202 at $899 and the NordicTrack T Series 10 at about $999. Walking pads and compact folders under $500 have belts of 41 to 52 inches, which is too short.`,
     },
     {
       q: 'How much should I spend on a budget treadmill?',
-      a: `Spend enough to buy the right kind of machine for your most demanding weekly use. For walking, about $250 buys a good pad. For jogging and some running, about $900 is the realistic floor for a full-size deck. For running most days, about $1,100 buys steeper incline and longer parts cover. Spending less than your use needs usually means buying twice.`,
+      a: `Spend enough to buy the right kind of machine for your most demanding weekly use. For walking, about $300 buys a good pad. For jogging and some running, about $900 is the realistic floor for a full-size deck. For running most days, about $1,100 buys steeper incline and longer parts cover. Spending less than your use needs usually means buying twice.`,
     },
     {
       q: 'Are cheap treadmills worth it?',
-      a: `A cheap treadmill is worth it when it matches how you will use it. A $250 walking pad used for daily walking is excellent value. The same pad bought for running is not, because its belt is short and its motor is rated for walking. The mistakes come from buying a machine for a lighter job than the one you will actually give it.`,
+      a: `A cheap treadmill is worth it when it matches how you will use it. A $300 walking pad used for daily walking is excellent value. The same pad bought for running is not, because its belt is short and its motor is rated for walking. The mistakes come from buying a machine for a lighter job than the one you will actually give it.`,
     },
     {
       q: 'What do you lose with a budget treadmill?',
@@ -653,12 +644,18 @@ export default {
       blurb: "Dyaco's budget brand: the TRX1200, TR75 and TR95H Hiker.",
       url: '/xterra-treadmills/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Treadmills Under $200",
+      blurb: "Five treadmills under $200 on Amazon, all walking pads, 2-in-1s or manual machines, plus what $100 and…",
+      url: '/best-treadmills-under-200/',
+    },
   ],
   bottomLine: [
-    `<strong class="text-white">For walking, the UREVO SpaceWalk 3S is the best budget
-            treadmill at about $250; for jogging and some running, the Horizon T202 at $899 is the
-            best everyday price, and the Bowflex T6 is better when it is on sale at the same
-            number.</strong> If you can reach about $1,100 and will run regularly, the Horizon 7.0 AT
+    `<strong class="text-white">For walking, the MERACH NovaWalk W50 TrekPad is the best budget
+            treadmill at about $300; for jogging and some running, the Horizon T202 at $899 is the
+            best everyday price, and the NordicTrack T Series 10 adds a touchscreen for about
+            $100 more.</strong> If you can reach about $1,100 and will run regularly, the Horizon 7.0 AT
             or SOLE F63 buys 15% incline and longer parts cover.`,
     `The biggest single step on this page is from a 42-inch belt to a 60-inch deck, and it
             happens between $500 and $900. Decide which side of it your use falls on before

@@ -31,7 +31,7 @@ export default {
           product pages and its returns, membership and warranty help pages as search engines had indexed them,
           and compared them with independent reporting on Sam’s Club’s 2026 membership fees and return policy, the
           makers’ specifications as this site verified them in October 2026, and retailer listings for the
-          NordicTrack Commercial LE at Abt, Best Buy and Nebraska Furniture Mart. The product cards show models
+          NordicTrack Commercial LE at Abt, Best Buy and Nebraska Furniture Mart. The T 6.5 S card’s figures are those checked for our T 6.5 S review. The product cards show models
           Sam’s Club has listed, not models confirmed in stock on the day, and carry no prices because Sam’s
           showed none we could confirm. We also searched the US Consumer Product Safety Commission’s recall
           database. We have not bought a treadmill from Sam’s Club. Prices, stock, membership terms and return
@@ -89,28 +89,28 @@ export default {
         'The Commercial 1750 is the step up from the 1250, and Sam’s Club has listed it as the "NordicTrack Commercial Series 1750" with a members-only price. The current model, NTL17125, has a 22 by 60-inch belt with RunFlex cushioning, a drive motor NordicTrack rates at 4.25 CHP in laboratory testing, 0 to 12 mph, incline from -3% to 12%, a 400 lb maximum user weight and a 16-inch pivoting HD touchscreen, figures our review confirmed against NordicTrack and independent coverage in October 2026. NordicTrack’s warranty is lifetime on the motor, ten years on the frame, two years on parts, one year on the touchscreen and one year of labour; Sam’s sells it, but NordicTrack services it. Sam’s Club’s indexed listing showed a markdown from $1,899 to $1,599 at one point, which we could not date, and we could not see a member price on 5 November 2026. Costco also lists the 1750.',
     },
     {
-      id: 'nordictrack-commercial-le',
-      name: 'NordicTrack Commercial LE',
-      category: 'The Retailer Model: a 1250-Style Frame Without the Touchscreen',
-      badge: 'Retailer Model',
+      id: 'nordictrack-t-6-5-s',
+      name: 'NordicTrack T 6.5 S',
+      category: 'Closest on Amazon to the Commercial LE: a Small-Display NordicTrack',
+      badge: 'Amazon Alternative',
       priceRange: 'Sam’s Club price not confirmed on 5 Nov 2026',
-      amazonUrl: 'https://www.amazon.com/s?k=NordicTrack+Commercial+LE+Treadmill&tag=sktiger-20',
-      specs: '7 in. display · -3% to 12% incline · 0–12 mph · folding · RunFlex cushioning',
+      reviewUrl: '/nordictrack-t-6-5-s-treadmill/',
+      specs: '55 x 20 in. deck · 2.6 CHP · 0-10% incline · 0-10 mph · 300 lb capacity',
       pros: [
-        'Same -3% to 12% grade range and 12 mph top speed as the Commercial 1250',
-        'A 7-inch display and a device holder instead of a touchscreen, for buyers who use their own tablet',
-        'Sold at several big-box retailers, so it can be compared across stores',
-        'Folds with a lift-up deck',
+        'Runs in manual mode without an active iFit membership — speed and incline set by hand',
+        'A small display rather than a touchscreen, like the Commercial LE, for buyers who use their own tablet',
+        'Vertical SpaceSaver fold with lift assist genuinely reclaims floor area',
+        'Sold on Amazon and listed by Sam’s Club, so the price can be compared in both places',
       ],
       cons: [
-        'Motor given as 3.6 CHP by some retailers and 1 HP by Best Buy; we print neither',
-        'Not listed on NordicTrack’s own US store, so its figures are harder to verify',
-        'Sam’s showed a members-only price',
+        'Five-inch display is small, and the machine is sold on content it does not show well',
+        '55-inch deck and a 10 mph ceiling rule out regular running',
+        'Closely named variants with different consoles make it easy to order the wrong one',
       ],
       bottomLine:
-        'Worth considering at Sam’s if you want a NordicTrack frame and will stream from your own tablet; get the motor rating and warranty confirmed in writing first.',
+        'The nearest Amazon-sold match to the Commercial LE’s screen-free idea, but it is a walking treadmill: buy it on discount, not at list.',
       description:
-        'The Commercial LE is the kind of model this page’s checklist is for: a retailer variant, sold at Sam’s Club with a members-only price and at Abt, Best Buy and Nebraska Furniture Mart, but not shown on NordicTrack’s own US range. Abt lists it as model NTL13125. Retailers agree that it has incline from -3% to 12%, a 12 mph top speed, a 7-inch multi-colour display that shows incline, distance, time, pace and calories, RunFlex cushioning and a folding deck, and Abt describes it as for buyers who prefer to use their own device. They disagree on the motor, which UK and European listings give as 3.6 CHP and Best Buy’s US listing as 1 HP, and only one listing gives a capacity, 400 lb. That is the figure set we would want NordicTrack to confirm before buying, along with the warranty. Sam’s indexed category page showed a markdown from $1,599 to $1,299, undated; we could not confirm a price on 5 November 2026.',
+        'The Commercial LE is a retailer model that Amazon does not sell, so this card shows the closest NordicTrack that Amazon does: the T 6.5 S, which Sam’s Club’s own pages have also listed. Like the LE, it skips the touchscreen. It runs a 2.6 CHP motor against a 20 by 55-inch belt, with motorised incline to 10%, a top speed of 10 mph and a published 300 lb capacity. The console is a five-inch backlit display with roughly twenty onboard programmes, iFit-enabled and typically shipped with a trial membership, and it folds vertically with a lift-assisted mechanism. It is a step down from the LE as retailers describe it, with less incline, no decline and a shorter belt, so it suits walking rather than running. The hardware is ordinary for the price and coherent for walking, and it is worth buying for what it does manually rather than for what the platform promises.',
     },
     {
       id: 'proform-carbon-tls',
@@ -192,8 +192,10 @@ export default {
           </p>
           <p>
             The four cards below are machines Sam’s Club has listed, with the figures this site has verified
-            against the manufacturer and independent sources. The Amazon buttons search for the same model so
-            you can compare the price there.
+            against the manufacturer and independent sources. The Amazon buttons go to the same model on Amazon
+            so you can compare the price there. The Commercial LE is a retailer model Amazon does not sell, so
+            its card is the closest NordicTrack Amazon does carry, the T 6.5 S, which also has a small display
+            instead of a touchscreen.
           </p>`,
     },
     {
@@ -396,7 +398,7 @@ export default {
     },
     {
       q: 'What is the NordicTrack Commercial LE?',
-      a: 'A retailer model sold at Sam’s Club, Abt, Best Buy and Nebraska Furniture Mart but not on NordicTrack’s own US range. It has a -3% to 12% grade range, 12 mph and a 7-inch display instead of a touchscreen. Retailers disagree on its motor rating, so confirm it with NordicTrack before buying.',
+      a: 'A retailer model sold at Sam’s Club, Abt, Best Buy and Nebraska Furniture Mart but not on NordicTrack’s own US range. It has a -3% to 12% grade range, 12 mph and a 7-inch display instead of a touchscreen. Retailers disagree on its motor rating, so confirm it with NordicTrack before buying. Amazon does not sell it; the nearest NordicTrack there without a touchscreen is the T 6.5 S, a walking treadmill with less incline.',
     },
     {
       q: 'What is Sam’s Club’s return policy on treadmills?',

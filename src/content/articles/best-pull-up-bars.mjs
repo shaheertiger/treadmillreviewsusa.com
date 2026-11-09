@@ -30,10 +30,14 @@ export default {
           bars, and no figure on this page is our own measurement. On 19 October 2026 we confirmed
           each bar as currently sold, on Amazon US or on the maker's own store, and checked the
           Amazon listings we could open: the Iron Gym doorway bar and the Ultimate Body Press
-          ceiling bar were shipped and sold by Amazon.com. REP sells its wall-mounted bar through
-          its own store and not on Amazon, so its button searches Amazon for similar bars; Titan
+          ceiling bar were shipped and sold by Amazon.com. REP sells its wall-mounted bar, our
+          favourite on paper, through its own store and not on Amazon, so the first card is the
+          closest multi-grip wall bar Amazon sells, Gronk Fitness's, whose figures we checked on
+          9 November 2026 against its maker's store and the Amazon listing; Titan
           and Ultimate Body Press list the other two bars on their own stores, and we could not
-          confirm an Amazon listing for either on the day, as their cards explain. Weight ratings,
+          confirm an Amazon listing for either on the day; the Titan wall bar's card is now Rage
+          Fitness's wall bar, the closest straight wall bar Amazon sells, checked on 9 November 2026
+          against its maker's listing and its Amazon listing. Weight ratings,
           door widths, joist spacing, dimensions and grips were checked against the maker's page or
           Amazon listing and, where one exists, an independent source (Garage Gym Reviews' and
           BarBend's 2026 pull-up bar guides). A figure appears only where the sources agree; where
@@ -66,8 +70,8 @@ export default {
               <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Why</th>
             </tr></thead>
             <tbody>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">REP Wall-Mounted Multi-Grip</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best overall</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Five grip types, 700 lb rating when installed properly, can be inverted</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Titan Wall-Mounted Pull-Up Bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Value wall mount</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">11-gauge steel, 500 lb rating, studs or concrete, under $110</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Gronk Fitness Wall-Mounted Multi-Grip</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Multi-grip wall mount on Amazon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Neutral and wide grips, 800 lb maker rating, 48 in. between mounting holes</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rage Fitness Wall Mounted Pull-Up Bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Value wall mount</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">11-gauge steel, 500 lb rating, 36 in. from the wall, about $90 on Amazon; Titan’s is the equivalent sold direct</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Ultimate Body Press Ceiling Mount</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Ceiling joists</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Reversible risers for 16- or 24-inch joists; sold by Amazon.com</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Iron Gym Total Upper Body Workout Bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Cheapest doorway bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No screws, lifts off after use; 300 lb listed</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Ultimate Body Press XL Doorway Bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Doorway, more headroom</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Elevated bar, maker lists doorways 24 to 36 in. and trim up to 3.5 in.</td></tr>
@@ -112,7 +116,9 @@ export default {
             we looked for a bar on sale on 19 October 2026, preferably on Amazon, that a second source
             described in enough detail to check. The mounted bars were easy to cross-check; doorway
             bars were not, because neither independent guide covers the best-selling Amazon doorway
-            bars in detail.
+            bars in detail. The exception among the mounted bars is Gronk Fitness's multi-grip bar, carded
+            because REP does not sell its bar on Amazon: we found no independent review of it, so its
+            figures are its maker's and the Amazon listing's, and are labelled that way.
           </p>
           <p>
             <strong>Recall check.</strong> We searched the CPSC database by maker name and in recall
@@ -127,7 +133,8 @@ export default {
             and the Ethos Pull-Up Assist band (2019, a plastic clip that could break, with
             lacerations reported). REP's only record is a 2021 recall of rack strap-safety brackets,
             and Rogue's records cover timers, door anchors and barbell brackets. We found nothing for
-            Iron Gym, ALLY PEAKS, Titan or Ultimate Body Press.
+            Iron Gym, ALLY PEAKS, Titan or Ultimate Body Press, and a search on 9 November 2026 found
+            no recall naming Gronk Fitness.
           </p>
           <p>
             <strong>Deliberate exclusions.</strong> Perfect Fitness's <a href="/best-home-gym-machines/" class="text-[#0F62FE] font-medium" data-autolink>Multi-Gym</a> Pro is one of the
@@ -237,7 +244,8 @@ export default {
               ceiling joists are usually 16 or 24 inches apart on centre. Use a stud finder, confirm
               with a small pilot hole, and mark the centre of each stud or joist. Your bar's mounting
               holes must line up with them; Ultimate Body Press's ceiling bar has reversible risers
-              for either spacing, and Titan describes its wall bar for standard 16-inch studs.</li>
+              for either spacing, Titan describes its wall bar for standard 16-inch studs, and Gronk
+              puts 48 inches between its wall bar's mounting holes.</li>
             <li><strong>Use a backing board if they do not line up.</strong> Reviewers describe
               owners fixing bars through a plywood or timber stringer screwed into the studs, which
               spreads the load and lets the bar sit where you want it. Garage Gym Reviews' tester
@@ -263,7 +271,7 @@ export default {
       heading: 'Weight Limits and What They Mean',
       html: `          <p>
             Pull-up bar ratings run from about 300 lb on doorway bars and light ceiling bars to 500 to
-            700 lb on heavy wall mounts. Three things to know about them.
+            800 lb on heavy wall mounts. Three things to know about them.
           </p>
           <p>
             <strong>They are maker figures for a static hang.</strong> No maker here publishes a
@@ -289,7 +297,8 @@ export default {
             Most bars offer an overhand grip; better ones add a neutral (palms-facing) grip and
             angled or wide handles. The neutral grip is the one many people find easiest on the
             shoulders and elbows. REP's bar offers traditional, neutral, close, wide and angled
-            grips; Ultimate Body Press spaces its ceiling bar's parallel grips 20 inches apart and
+            grips, and Gronk describes its Amazon-sold bar as a multi-grip frame for wide, neutral
+            and chin-up grips; Ultimate Body Press spaces its ceiling bar's parallel grips 20 inches apart and
             adds angled ends; Titan's wall bar is a single straight bar.
           </p>
           <p>
@@ -367,52 +376,49 @@ export default {
   ],
   products: [
     {
-      id: 'rep-wall-mounted-multi-grip',
-      name: 'REP Fitness Wall-Mounted Multi-Grip Pull-Up Bar',
-      category: 'Wall- or ceiling-mounted multi-grip bar',
-      badge: 'Best Overall',
-      amazonUrl: 'https://www.amazon.com/s?k=REP+Fitness+Wall+Mounted+Multi-Grip+Pull-Up+Bar&tag=sktiger-20',
-      priceRange: 'About $140',
-      specs: '700 lb rated capacity when installed properly · 50.75 x 21.5 x 17.5 in. · 1.25 in. bars · traditional, neutral, close, wide and angled grips · can be mounted inverted',
+      id: 'gronk-wall-mounted-multi-grip',
+      name: 'Gronk Fitness Wall Mounted Multi-Grip Pull-Up Bar',
+      category: 'Wall-mounted multi-grip bar sold on Amazon',
+      badge: 'Best Multi-Grip on Amazon',
+      amazonUrl: 'https://www.amazon.com/dp/B00MY5MOKS?tag=sktiger-20',
+      priceRange: '$159–$179',
+      specs: '800 lb maker rating · 49 x 24 x 20 in. assembled · 48 in. between mounting holes · multi-grip frame with neutral and wide grips · powder-coated',
       pros: [
-        'Five grip types on one frame, including a neutral grip',
-        'The highest rating on this page, provided it is fixed into solid structure',
-        'Mounts to a wall or ceiling, and can be inverted for low ceilings or shorter users',
-        'Takes bands, rings and suspension straps; both independent guides name it their best overall bar',
+        'Wide, neutral and chin-up grips on one frame, the closest Amazon match to REP’s multi-grip bar',
+        'The highest maker rating on this page, provided it is fixed into solid structure',
+        'Lifetime residential warranty, per its maker',
+        'Sold on Amazon, where REP’s bar is not',
       ],
       cons: [
-        'Installation needs care: studs or joists, correct fixings and some DIY skill',
-        'Powder-coated rather than knurled, so less grippy than some bars',
-        'Sold through REP’s own store, not on Amazon US',
+        'Its 800 lb rating and dimensions are the seller’s figures; we found no independent hands-on review',
+        'Mounting holes 48 inches apart need studs at that spacing or a backing board',
+        'Its maker’s own store listed it as final stock and backordered on 9 November 2026',
       ],
       bottomLine:
-        'The best pull-up bar for most homes with a suitable wall. Get it installed properly, or not at all.',
+        'The multi-grip wall bar to buy on Amazon if you can bolt it into studs. Treat the rating as the maker’s claim and install it properly.',
       description:
-        "REP's wall-mounted bar puts traditional, neutral, close, wide and angled grips on one frame that bolts to a wall or a ceiling and can be mounted inverted for lower ceilings or shorter users. REP lists it at 50.75 inches wide, 21.5 inches deep and 17.5 inches tall, with 1.25-inch bars in a non-slip powder coat, and rates it at 700 lb when installed properly. Garage Gym Reviews and BarBend both name it their best overall pull-up bar and give the same 700 lb conditional rating; Garage Gym Reviews also matches the dimensions and describes 11-gauge steel. BarBend reports no wobble once installed. That rating is the maker's figure and depends entirely on what the bar is fixed to. Garage Gym Reviews' tester notes that REP includes wall-mounting hardware, that concrete walls need suitable anchors, and recommends help if you are not used to finding studs. The criticisms are installation effort and a powder-coated rather than knurled grip. On 19 October 2026 it was $139.99 on REP's store. REP does not sell it on Amazon US, so the button below searches Amazon for similar wall-mounted bars.",
+        "The bar Garage Gym Reviews and BarBend both name best overall, REP's Wall-Mounted Multi-Grip, is sold only through REP's own store, not on Amazon, so this card shows the closest bar Amazon does sell: Gronk Fitness's wall-mounted multi-grip bar. Its maker's store describes a multi-grip 'monkey style' frame for pull-ups, chin-ups, wide-grip and neutral-grip work, a powder-coated finish, an assembled size of 49 by 24 by 20 inches, 48 inches between mounting holes for standard stud spacing and an 800 lb rating, with a lifetime residential warranty and one year on commercial use; the Amazon listing gives the same 800 lb rating and multi-grip design. We found no independent hands-on review, so those are the seller's figures, and like every mounted bar's rating it assumes the bar is fixed into solid structure. Gronk does not publish the bar diameter or say that it can be mounted inverted, both of which REP does. On 9 November 2026 Amazon listed it at $179, and its maker's store showed it at $159 as final stock, backordered. If you would rather have REP's bar, with its 700 lb conditional rating and two independent recommendations, buy it from REP at about $140.",
     },
     {
-      id: 'titan-wall-mounted',
-      name: 'Titan Fitness Wall-Mounted Pull-Up Bar',
-      category: 'Straight wall- or ceiling-mounted bar',
-      badge: 'Best Value Wall Mount',
-      amazonUrl: 'https://www.amazon.com/s?k=Titan+Fitness+Wall+Mounted+Pull+Up+Bar&tag=sktiger-20',
-      priceRange: '$88–$110',
-      specs: '500 lb rated capacity · 11-gauge steel · 32 mm powder-coated bar · wood studs or concrete',
+      id: "rage-fitness-wall-mounted",
+      name: "Rage Fitness Wall Mounted Pull Up Bar",
+      category: "Straight wall-mounted bar",
+      badge: "Best Value Wall Mount",
+      priceRange: "About $90 (Amazon, 9 Nov 2026)",
+      amazonUrl: "https://www.amazon.com/dp/B00F6N54JI?tag=sktiger-20",
+      specs: "500 lb rated capacity · 11-gauge steel · 52 in. wide · 36 in. from the wall · about 25 lb",
       pros: [
-        'A 500 lb rating and 11-gauge steel for well under the price of most multi-grip bars',
-        'Mounts to wood studs or concrete',
-        'Garage Gym Reviews names it its best wall-mounted bar and BarBend its pick for kipping, for the clearance it gives',
-        'Often on sale on Titan’s store',
+        "The same 500 lb rating and 11-gauge steel as Titan’s wall bar, sold on Amazon",
+        "Sits 36 inches out from the wall, so your feet and knees clear it on kipping or knees-up work",
+        "A 52-inch bar leaves room for wide grips",
       ],
       cons: [
-        'A single straight bar, with no neutral grip',
-        'Reviewers recommend longer bolts and a wooden stringer for a secure install',
-        'We could not confirm an Amazon listing on the day; Titan sells it directly',
+        "A single straight bar, with no neutral grip",
+        "Reviewers report the supplied anchors suit concrete; for wood studs, buy lag bolts, and consider a stringer",
+        "No stud spacing or drilling template published that we could find; check the manual first",
       ],
-      bottomLine:
-        'The value pick for a garage or spare-room wall, if you are happy with one straight grip and will install it with a stringer.',
-      description:
-        "Titan's wall bar is a straight 32 mm powder-coated bar on an 11-gauge steel frame, rated at 500 lb, that Titan says mounts to wood studs or concrete walls with standard 16-inch stud spacing. Garage Gym Reviews, which names it the best wall-mounted pull-up bar, gives the same 500 lb rating and 11-gauge construction, a one-year warranty, and describes mounting options on studs at 16, 32 or 52 inches or on concrete up to 52 inches wide; check the manual for your configuration. BarBend picks it for kipping pull-ups, citing its generous clearance. The common thread in both reviews is installation. Garage Gym Reviews' tester recommends longer bolts than those supplied and a wooden stringer across the studs, and BarBend wished more mounting hardware were included, so budget for a trip to the hardware store. It is a single straight bar, so there is no neutral grip. On 19 October 2026 Titan listed it at $87.97, down from $109.99. We could not confirm a current Amazon listing on that date; the button below searches Amazon, and Titan's own store is the dependable source.",
+      bottomLine: "The value pick for a garage or spare-room wall, if you are happy with one straight grip and will buy the right bolts for your wall.",
+      description: "Titan’s wall-mounted bar, which Garage Gym Reviews names its best wall-mounted bar, is sold on Titan’s own store and we could not find it on Amazon US, so this card shows the closest straight wall bar that Amazon does sell. Rage Fitness lists its R2 wall-mounted bar, sold on Amazon and on the maker’s own store, with a 500 lb capacity and 11-gauge steel, the same figures as the Titan, and gives its size as 52 inches wide, 36 inches deep from the wall and 22 inches high, at about 25 lb. That 36-inch depth is generous: one reviewer said it keeps the feet clear of the wall. Installation is the weak point, as it is with the Titan. Listings describe concrete expansion anchors in the box, and owners report buying 4-inch, 3/8-inch lag bolts for wood studs and adding support beams on masonry. We found no published stud spacing or template, so check the manual for your wall before drilling. It is a single straight bar, so there is no neutral grip. Amazon listed it at $89.99 on 9 November 2026.",
     },
     {
       id: 'ultimate-body-press-ceiling',
@@ -490,7 +496,7 @@ export default {
   faqs: [
     {
       q: 'What is the best pull up bar for home?',
-      a: `For most homes, a wall- or ceiling-mounted bar bolted into studs or joists, such as the REP Wall-Mounted Multi-Grip, because it does not depend on door trim and gives full range of motion. If you cannot drill, a doorway leverage bar suits a sound, trimmed doorway for strict pull-ups, and a free-standing tower suits rooms with neither.`,
+      a: `For most homes, a wall- or ceiling-mounted bar bolted into studs or joists, such as REP's Wall-Mounted Multi-Grip (sold direct by REP) or, on Amazon, Gronk Fitness's multi-grip wall bar, because it does not depend on door trim and gives full range of motion. If you cannot drill, a doorway leverage bar suits a sound, trimmed doorway for strict pull-ups, and a free-standing tower suits rooms with neither.`,
     },
     {
       q: 'Do doorway pull up bars damage door frames?',
@@ -562,8 +568,8 @@ export default {
     },
   ],
   bottomLine: [
-    `<strong class="text-white">If you can drill into a wall, buy the REP Wall-Mounted Multi-Grip</strong>
-            and install it into studs; the Titan bar does the same job with one straight grip for less.
+    `<strong class="text-white">If you can drill into a wall, buy a multi-grip wall bar</strong> — REP's
+            from REP, or Gronk Fitness's on Amazon — and install it into studs; a straight bar such as Titan's, or Rage Fitness's on Amazon, does the same job with one grip for less.
             If the ceiling is your only option, the Ultimate Body Press bar fits both common joist
             spacings. If you cannot drill, a doorway bar is a fair start for strict pull-ups — but only
             after you have measured the frame and the trim.`,

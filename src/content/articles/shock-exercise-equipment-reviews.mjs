@@ -39,7 +39,10 @@ export default {
           the seller, the pad type and the exact model on the Amazon listing before you order. Amazon
           sells many near-identical unbranded ab belts and our links to them open a search, not one
           listing. We earn a commission if you buy through the Amazon links on this page; it does not
-          change which products we list or what we say about them.
+          change which products we list or what we say about them. On 9 November 2026 we replaced the
+          Slendertone belt and Compex Sport Elite 2.0 cards, which we could not find on Amazon US, with
+          The Flex Belt and the Compex Performance 3.0, checked against the FDA's device database, a
+          Compex press release, retailer and manual listings and their Amazon listings that day.
           <br><br>
           <strong class="text-gray-900">What this page is, and is not.</strong> This site reviews
           exercise equipment. It does not give medical, physiotherapy or coaching advice, and nothing
@@ -63,8 +66,8 @@ export default {
               <th ${TH}>Best for</th>
             </tr></thead>
             <tbody>
-              <tr><td ${TD}>Slendertone Abdominal Toning Belt</td><td ${TD}>EMS ab belt</td><td ${TD}>The ab belt with the clearest regulatory record</td></tr>
-              <tr><td ${TD}>Compex Sport Elite 2.0</td><td ${TD}>EMS stimulator</td><td ${TD}>Athletes and recovery work, with a wide programme set</td></tr>
+              <tr><td ${TD}>The Flex Belt</td><td ${TD}>EMS ab belt</td><td ${TD}>From Slendertone’s maker, with the clearest regulatory record</td></tr>
+              <tr><td ${TD}>Compex Performance 3.0</td><td ${TD}>EMS and TENS stimulator</td><td ${TD}>Athletes and recovery work, with four wired channels</td></tr>
               <tr><td ${TD}>iReliev ET-1313</td><td ${TD}>TENS + EMS handheld</td><td ${TD}>One unit for pain relief and muscle work</td></tr>
               <tr><td ${TD}>AUVON Dual Channel TENS/EMS</td><td ${TD}>TENS + EMS handheld</td><td ${TD}>The lower-cost two-channel option</td></tr>
               <tr><td ${TD}>LifePro Waver</td><td ${TD}>Vibration plate</td><td ${TD}>The shaker plate whose figures we could confirm</td></tr>
@@ -299,50 +302,46 @@ export default {
   ],
   products: [
     {
-      id: 'slendertone-belt',
-      name: 'Slendertone Abdominal Toning Belt',
-      category: 'EMS ab belt',
-      badge: 'Best Ab Belt',
-      amazonUrl: 'https://www.amazon.com/s?k=Slendertone+Abs+Toning+Belt&tag=sktiger-20',
-      priceRange: 'Check current price; varies by model',
-      specs: 'EMS ab belt · cleared by the FDA for toning, strengthening and firming abdominal muscles (per secondary sources; confirm on the listing for your model)',
+      id: "flex-belt",
+      name: "The Flex Belt Abdominal Muscle Toner",
+      category: "EMS ab belt",
+      badge: "Best Ab Belt",
+      priceRange: "About $310 (Amazon, 9 Nov 2026)",
+      amazonUrl: "https://www.amazon.com/dp/B00340H2TU?tag=sktiger-20",
+      specs: "EMS ab belt · fits 24–47 in. waists (listing) · listed in the FDA device database as an over-the-counter stimulator for improving abdominal muscle tone · gel pads",
       pros: [
-        'Sold by a known brand rather than an anonymous listing',
-        'Its clearance, as reported, is for toning, strengthening and firming the abdominal muscles, a narrower and more honest claim than most belts make',
-        'Replacement gel pads are a normal part of the brand’s range',
+        "Made by Bio-Medical Research, the company behind Slendertone, rather than an anonymous seller",
+        "Its FDA device listing is for improving abdominal muscle tone, a narrower and more honest claim than most belts make",
+        "Sold on Amazon, with replacement gel pads a normal part of the range",
       ],
       cons: [
-        'Pad replacement is an ongoing cost',
-        'Not a weight-loss or fat-loss device; no regulator has cleared an ab belt for that',
-        'Slendertone sells several belt models and we could not confirm which is current or what each costs',
+        "Pad replacement is an ongoing cost",
+        "Not a weight-loss or fat-loss device; no regulator has cleared an ab belt for that",
+        "About $310, several times the price of anonymous belts with bigger promises",
       ],
-      bottomLine:
-        'The ab belt to pick if you want one at all: a recognised brand with a narrow, checkable claim. Expect a mild toning aid, not visible abs.',
-      description:
-        'Slendertone is the ab-belt brand most often cited for having a regulatory record behind it. The Slendertone Flex belt was reported as cleared by the FDA for toning, strengthening and firming abdominal muscles, and that is the claim to hold the product to. We did not test one and could not open the Amazon listings, so we cannot say which models are currently sold or what they cost; our link opens a search so you can see what is available. Whatever you choose, expect a gradual ramp of intensity, a gel pad that needs replacing, and no change to your waistline from the belt alone. If the choice is between this and an anonymous belt with a bigger promise, the narrower claim from the better-known brand is the safer purchase.',
+      bottomLine: "The ab belt to pick if you want one at all: a recognised maker with a narrow, checkable claim. Expect a mild toning aid, not visible abs.",
+      description: "Slendertone is the ab-belt brand most often cited for having a regulatory record behind it, but we could not find a current Slendertone belt on Amazon US, only its replacement gel pads. The Flex Belt is the closest belt Amazon does sell, and it comes from the same maker: the FDA’s device identification database lists The Flex Belt under Bio-Medical Research Limited, the Irish company behind Slendertone, as an over-the-counter neuromuscular electrical stimulator intended for the improvement of abdominal muscle tone, and the same company’s Slendertone Flex Abdominal Training System received a 510(k) clearance in 2003 for abdominal muscle tone, strengthening and a firmer abdomen. That is the claim to hold the product to. Clearance means the FDA found it substantially equivalent to an earlier device; it says nothing about how well it works, and retailer copy calling it clinically demonstrated is not something we could verify. The Amazon listing describes a black belt for 24- to 47-inch waists, at $310.15 on 9 November 2026. Expect a gradual ramp of intensity, gel pads that need replacing, and no change to your waistline from the belt alone.",
     },
     {
-      id: 'compex-sport-elite',
-      name: 'Compex Sport Elite 2.0',
-      category: 'Wired EMS stimulator',
-      badge: 'Best for Recovery',
-      amazonUrl: 'https://www.amazon.com/s?k=Compex+Sport+Elite+2.0+Muscle+Stimulator&tag=sktiger-20',
-      priceRange: 'Check current price; premium tier',
-      specs: 'Wired EMS stimulator · 10 programmes · progression levels · 12 stick electrodes (per a published review) · FDA cleared (per the same review)',
+      id: "compex-performance-3",
+      name: "Compex Performance 3.0 Muscle Stimulator with TENS",
+      category: "Wired EMS and TENS stimulator",
+      badge: "Best for Recovery",
+      priceRange: "$219.99–$249.99 (retailers); $244.95 on Amazon on 9 Nov 2026",
+      amazonUrl: "https://www.amazon.com/dp/B08C79TYL8?tag=sktiger-20",
+      specs: "Wired EMS and TENS stimulator · 4 independent channels · warm-up, strength, recovery and TENS programs (6 per the Amazon title and a manuals site)",
       pros: [
-        'A wide programme set aimed at athletes, with progression levels rather than one fixed pulse',
-        'Wired channels deliver a steadier output than small single-pad devices',
-        'Described by a published review as FDA cleared',
+        "Four independent wired channels, which deliver a steadier output than small single-pad devices",
+        "Combines EMS programs for strength and recovery with a TENS program for pain relief",
+        "From Compex, the sports-oriented name in muscle stimulators, and sold on Amazon",
       ],
       cons: [
-        'Long cords that the reviewer found unwieldy',
-        'The most expensive pick here, plus the ongoing cost of electrodes',
-        'More device than most casual buyers need',
+        "Compex describes the 3.0 line as FDA 510(k) cleared, but the clearance we could trace is the Sport Elite 3.0’s; check the number for this model",
+        "Fewer programs than the Sport Elite, and cords that reviewers of wired Compex units find long",
+        "The ongoing cost of electrodes, and more device than most casual buyers need",
       ],
-      bottomLine:
-        'The stimulator for athletes and for people doing recovery work who want a proper multi-channel device, not for casual buyers.',
-      description:
-        'Compex is the sports-oriented name in muscle stimulators, and the Sport Elite 2.0 is described in a published review as an FDA-cleared wired unit with ten programmes, multiple progression levels and twelve stick electrodes. The same reviewer found the cords long and awkward. We have not used it and did not verify the price or specifications on Amazon, so use these as pointers, not as confirmed facts. A wired, multi-channel unit like this is where electrical stimulation makes the most sense: used on the advice of a coach or physiotherapist, for specific muscles and specific goals, with electrodes that you replace regularly. If you want a casual ab toner, this is more than you need.',
+      bottomLine: "The stimulator for athletes and for people doing recovery work who want a proper multi-channel device, not for casual buyers.",
+      description: "The Compex Sport Elite 2.0, which this page originally carded, has been followed by Compex’s redesigned wired 3.0 models, and we could not find a Sport Elite on Amazon US, so this card shows the closest wired Compex that Amazon does sell. The Performance 3.0 is a four-channel wired unit that combines EMS for muscle conditioning with TENS for pain relief; the Amazon title and a manuals site give six programs — one warm-up, three strength, one recovery and one TENS — though Compex’s own price chart was not clear on the count. One listing gives intensity levels of 0 to 999, a 1 to 120 Hz frequency range and a 200 to 400 microsecond pulse width. Compex’s sites describe the 3.0 line as FDA 510(k) cleared; the clearance we could trace, K201653, is for the Sport Elite 3.0, a four-channel stimulator covering both muscle and nerve stimulation, so confirm the Performance 3.0’s own number before relying on that claim. Rogue listed it at $249.99 and Amazon at $244.95 on 9 November 2026. A wired, multi-channel unit like this is where electrical stimulation makes the most sense: used on the advice of a coach or physiotherapist, for specific muscles and specific goals, with electrodes that you replace regularly.",
     },
     {
       id: 'ireliev-et-1313',
@@ -485,8 +484,9 @@ export default {
   ],
   bottomLine: [
     `<strong class="text-white">Shock exercise equipment is a supplement, not a shortcut.</strong>
-            If you want an ab belt, buy a recognised brand with a narrow claim, such as Slendertone.
-            For recovery work, a multi-channel stimulator like the Compex Sport Elite 2.0 is the
+            If you want an ab belt, buy a recognised brand with a narrow claim, such as The Flex Belt
+            from Slendertone’s maker. For recovery work, a multi-channel stimulator like the Compex
+            Performance 3.0 is the
             serious option, and the iReliev and AUVON handhelds are the combination units. The LifePro
             Waver is the one product here whose figures we could confirm.`,
     `Whatever you buy, read the contraindications first, start at the lowest intensity, and keep

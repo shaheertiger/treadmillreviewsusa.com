@@ -28,7 +28,9 @@ export default {
           models, and the US Consumer Product Safety Commission's recall database, which lists no
           Spirit treadmill recall. Figures on this page are the ones on which Spirit and at least one
           independent source agree; where they disagree we say so. We have not tested any Spirit
-          treadmill. Prices are what spiritfitness.com showed on the day and change often. As an
+          treadmill. Prices are what spiritfitness.com showed on the day and change often. The XT685
+          is sold by Spirit and its dealers rather than on Amazon, so its card shows the XT385, the
+          other Spirit Amazon sells, with the figures checked for our Apple Watch treadmill guide. As an
           Amazon Associate we earn from qualifying purchases.`,
   lead: `People who search for a Spirit treadmill usually mean Spirit Fitness, the Arkansas brand
           whose XT treadmills sit in specialist fitness stores next to Sole, Horizon and True. Spirit
@@ -65,29 +67,27 @@ export default {
         'The XT485 is Spirit’s best-known folding treadmill and has been in the range in some form since at least 2014. Spirit and independent sources agree on a 22 by 60-inch running surface, a 4.0 HP motor, 0.5 to 12 mph and 15 levels of electronic incline, and Spirit, TopTenReviews and a Sole comparison all give a 425 lb maximum user weight; one US retailer’s FAQ said 350 lb and a UK listing for that market’s version gives 150 kg, so confirm the label on the unit you buy. Spirit lists a 9-inch multi-colour LCD, Bluetooth FTMS, a 7-inch step-up height, 43 inches folded length and an item weight of 288.8 lb. The US residential warranty is lifetime on the frame, motor and deck, ten years on parts and one year of labour. Spirit listed it at $2,949.99 on 14 October 2026.',
     },
     {
-      id: 'spirit-xt685',
-      name: 'Spirit XT685',
-      category: 'Non-Folding Treadmill, Light Commercial Rated',
-      badge: 'Non-Folding Pick',
-      priceRange: '$3,199.99 at Spirit on 14 Oct 2026',
-      amazonUrl: 'https://www.amazon.com/s?k=Spirit+Fitness+XT685+Treadmill&tag=sktiger-20',
-      specs: '22 x 60 in. deck · 4.0 HP · 0.5-12 mph · 15 incline levels · 425 lb max user · non-folding',
+      id: 'spirit-xt385',
+      name: 'Spirit XT385',
+      category: 'Closest on Amazon to the XT685: a Spirit with the same warranty',
+      badge: 'Closest on Amazon',
+      priceRange: '$2,399–$2,699',
+      specs: 'No GymKit · 60 in. deck length · 3.5 HP · 0.5–12 mph · 375 lb capacity · Bluetooth · folding',
       pros: [
-        'Fixed frame with 3-inch rollers, also warranted for light commercial use',
-        'Lifetime frame, motor and deck cover plus ten years on parts for home use',
-        'Spirit names Zwift and Kinomap for its Bluetooth FTMS connection',
-        '425 lb maximum user weight on Spirit’s listing and a major retailer’s',
+        'Lifetime frame, motor and deck warranty and 10 years on parts — far longer parts cover than the GymKit machines',
+        'A 375 lb maximum user weight on a 60-inch deck',
+        'Spirit lists Bluetooth connections to Zwift and Kinomap, and to Apple Health through its own Spirit+ app',
+        'Folds, with lift assist',
       ],
       cons: [
-        'Does not fold',
-        'Noise is the most repeated complaint in owner and reviewer comments',
-        'Labour is covered for one year',
-        'Top speed of 12 mph, like most home machines',
+        'No GymKit: you record an Indoor Run on the watch, or log through an app',
+        'Spirit and a retailer disagree on belt width and on how the incline range is expressed, so check both before ordering',
+        'Costs more than the Bowflex T6 and Horizon 7.0 AT',
       ],
       bottomLine:
-        'The Spirit for a dedicated space and heavy daily use; it costs only a little more than the XT485 and gives up the fold for a sturdier, non-folding frame.',
+        'The XT685 itself is sold by Spirit and its dealers, not on Amazon. The XT385 is the Spirit Amazon sells below the XT485, with the same long warranty, but it folds.',
       description:
-        'The XT685 is the non-folding version of the XT485 and the most widely reviewed Spirit treadmill. Spirit and independent sources agree on a 22 by 60-inch running surface, a 4.0 HP motor, 0.5 to 12 mph, 15 levels of electronic incline and a 425 lb maximum user weight, on a fixed frame. Spirit adds 3-inch front and rear rollers, a 9-inch colour LCD, Bluetooth FTMS with Zwift and Kinomap named, a 2-ply belt on a waxed deck and a 6.9-inch step-up height. It is the only XT treadmill Spirit also warrants for light commercial, non-dues facilities. The US residential warranty is lifetime on the frame, motor and deck, ten years on parts and one year of labour. Spirit listed it at $3,199.99 on 14 October 2026, and the XT685ENT with a 15.6-inch touchscreen at $3,899.99.',
+        'Spirit sells the non-folding XT685 on its own store and through dealers rather than on Amazon, so this card shows the other Spirit treadmill Amazon does sell, alongside the XT485 above. The XT385 is a folding machine, so it does not replace the XT685\'s fixed frame, but it carries the same residential warranty structure that makes Spirit worth considering. Spirit\'s own page and a large US retailer agree on a 60-inch deck length, a 3.5 HP motor, 0.5 to 12 mph, a 375 lb maximum user weight, a machine of about 287 lb that folds to 43 inches long, and a warranty of lifetime on frame, motor and deck, 10 years on parts and 1 year of labour. They disagree on belt width — Spirit says 22 inches, the retailer lists a 20-inch belt on a 22-inch deck — and Spirit gives incline in levels while the retailer gives a percentage that does not obviously match, so we leave both out. Spirit lists Bluetooth connections to Zwift and Kinomap. Spirit listed it at $2,699.99 and the retailer at $2,399.99 on 15 October 2026. If a non-folding frame is the point, buy the XT685 from Spirit.',
     },
   ],
   sections: [

@@ -484,7 +484,7 @@ export default {
       name: 'Arkon Slim-Grip Tablet Mount with Clamp Base (TAB131)',
       category: 'Clamp-on tablet holder for round bars',
       badge: 'Best Overall',
-      amazonUrl: 'https://www.amazon.com/s?k=Arkon+TAB131+Slim-Grip+Tablet+Mount+Clamp&tag=sktiger-20',
+      amazonUrl: 'https://www.amazon.com/dp/B07BZWYSQ1?tag=sktiger-20',
       priceRange: '$31–$34',
       specs: '7 to 18.4 in. screens · clamps bars 12 to 40 mm · 10 support legs · 360° rotation',
       pros: [
@@ -550,7 +550,7 @@ export default {
       name: 'Arkon Slim-Grip Ultra Bike or Motorcycle Handlebar Phone Mount (SM634)',
       category: 'Strap-on phone holder',
       badge: 'Best Phone Holder',
-      amazonUrl: 'https://www.amazon.com/s?k=Arkon+SM634+Slim-Grip+Ultra+Handlebar+Phone+Mount&tag=sktiger-20',
+      amazonUrl: 'https://www.amazon.com/dp/B00FQJCS14?tag=sktiger-20',
       priceRange: '$25',
       specs: 'Phones · strap fits bars 15 to 50 mm · 8 support legs · elastic securing strap',
       pros: [
@@ -647,6 +647,18 @@ export default {
       title: "Best Treadmill Laptop Holders",
       blurb: "Laptop boards, pole trays and phone clamps that strap to a treadmill, how to measure the rails, and when.",
       url: '/best-treadmill-laptop-holders/',
+    },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Treadmill Phone Holders",
+      blurb: "Five treadmill phone holders with their bar and phone size ranges taken from the listings, and where to…",
+      url: '/best-treadmill-phone-holders/',
+    },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Treadmill TV Stands and Mounts",
+      blurb: "Five TV floor stands, rolling carts and wall mounts for watching from a treadmill, with the eye-height…",
+      url: '/best-treadmill-tv-stands/',
     },
   ],
   bottomLine: [

@@ -339,11 +339,12 @@ function heroCollage(spec) {
 ${withImg
   .map((p) => {
     const img = productImage(p);
-    return `          <a href="#${p.id}"><img src=${jsStr(img.url)} alt=${jsStr(p.name)} width="${img.width}" height="${img.height}" decoding="async" /></a>`;
+    const attr = (v) => String(v).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/[{}]/g, (c) => (c === '{' ? '&#123;' : '&#125;'));
+    return `          <a href="#${p.id}"><img src="${attr(img.url)}" alt="${attr(p.name)}" width="${img.width}" height="${img.height}" decoding="async" /></a>`;
   })
   .join('\n')}
         </div>
-        <figcaption>${withImg.map((p) => p.name).join(' · ')}</figcaption>
+        <figcaption>${withImg.map((p) => p.name.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/[{}]/g, '')).join(' · ')}</figcaption>
       </figure>
 `;
 }

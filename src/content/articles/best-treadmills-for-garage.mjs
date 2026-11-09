@@ -29,7 +29,9 @@ export default {
           review as well. A figure appears in a product's specification line only where the sources
           agree; where they disagreed — on incline ranges, belt widths, chest straps, weights and
           dimensions — we left it out and say so. We quote warranty and environment language only
-          where we read it ourselves, and only for the model named. Prices are those we saw on 15
+          where we read it ourselves, and only for the model named. The Spirit XT485 card, which
+          stands in for the dealer-only XT685, carries the figures checked for our heavy-duty
+          treadmill guide on 6 November 2026. Prices are those we saw on 15
           October 2026 and change often, and manuals are revised; confirm the price, the specification
           and the current warranty terms for the exact unit — ideally in writing — before you order.
           We earn a commission if you buy through the Amazon links on this page; it does not change
@@ -61,7 +63,7 @@ export default {
               </tr>
             </thead>
             <tbody>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Spirit XT685</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most garage gyms</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Non-folding, 425 lb rating, simple LCD, no garage exclusion in its manual</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Spirit XT485</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most garage gyms, bought on Amazon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The closest Amazon machine to our pick, the XT685 (sold by dealers): 22 x 60 in. folding deck, lifetime frame and motor</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Spirit XT385</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A garage that also parks a car</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Folds to 43 inches long; same environment terms</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Spirit XT185</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walkers and lower budgets</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The cheapest Spirit; 55-inch deck and 10 mph top speed</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Spirit XT285</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Runners who can live with 20 inches</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">60-inch running surface at a little less than the XT385</td></tr>
@@ -79,8 +81,10 @@ export default {
       heading: 'The 5 Best Treadmills for a Garage',
       products: true,
       html: `          <p>
-            Four Spirit treadmills, from a non-folding machine for a dedicated garage gym down to a
-            walking-focused folder, and one premium alternative. None of them makes a cold, wet garage
+            Four Spirit treadmills and one premium alternative. Our first choice on the manuals we read,
+            the non-folding Spirit XT685, is sold through Spirit's dealers rather than on Amazon US, so
+            the first card shows the XT485, the nearest Spirit that Amazon does sell; the XT185 is also
+            sold through dealers, and its button searches Amazon for it. None of them makes a cold, wet garage
             safe for a treadmill: Spirit's manuals still rule out high humidity and condensation, and
             the Spirit, Sole and Bowflex warranties we read all exclude corrosion. What they offer is terms that do not
             automatically void your cover because the machine lives in a garage.
@@ -395,28 +399,26 @@ export default {
   ],
   products: [
     {
-      id: 'spirit-xt685',
-      name: 'Spirit XT685',
-      category: 'Best Overall Treadmill for a Garage',
-      badge: 'Best Overall',
-      amazonUrl: 'https://www.amazon.com/s?k=Spirit+Fitness+XT685+Treadmill&tag=sktiger-20',
-      priceRange: '$2,899–$3,199',
-      specs: '22 x 60 in. running surface · 4.0 HP · 0.5–12 mph · 425 lb capacity · 6.9 in. step-up · non-folding',
+      id: "spirit-xt485",
+      name: "Spirit XT485",
+      category: "Closest on Amazon to Our Garage Pick, the Spirit XT685",
+      badge: "Closest on Amazon",
+      priceRange: "About $2,649 (Amazon, 6 Nov 2026)",
+      specs: "22 x 60 in. deck · 4.0 HP · 0.5–12 mph · 15 incline levels · folds · about 289 lb",
       pros: [
-        'Its December 2025 manual gives a temperature and humidity specification and does not list garages among the warranty exclusions',
-        'Non-folding, with no hinge or lift mechanism to stiffen in the cold',
-        'A 425 lb maximum user weight and a 4.0 HP motor rating, the highest of the picks',
-        'Lifetime frame, motor and deck warranty and 10 years on parts for home use; a light-commercial warranty is also listed',
+        "Lifetime frame, motor and deck warranty plus ten years on parts on Spirit’s US residential terms",
+        "A full 22 by 60-inch deck and a 4.0 HP motor",
+        "A heavy, rigid frame for a folding machine, at about 289 lb by Spirit’s figure",
+        "Speed and incline toggles on the handlebars, and Bluetooth for apps",
       ],
       cons: [
-        'Corrosion is excluded from the warranty, so a damp garage is still your risk',
-        'Spirit gives incline as 15 levels and a retailer as a percentage; check the range you need',
-        'Spirit says the chest strap is sold separately, while one retailer lists one as included',
+        "Spirit gives a 425 lb rating but one retailer gave 350 lb, so confirm it on the unit you buy",
+        "Only one year of labour, the short part of a long warranty",
+        "A 9-inch LCD, no touchscreen, and tall when folded",
+        "Folds, so it has a hinge and lift mechanism that the non-folding XT685 avoids",
       ],
-      bottomLine:
-        'The treadmill to buy for a dedicated garage gym you can keep dry and above freezing: heavy, simple and backed by terms that do not rule out the garage.',
-      description:
-        "The XT685 is the best fit we found for a garage gym because its paperwork and its build both point the same way. The current owner's manual, revised in December 2025, says the machine is not for outdoor use or any high-humidity environment, gives a temperature specification of 40 degrees C and 95% non-condensing humidity, and its warranty exclusions do not mention garages — though, like the Sole and Bowflex warranties we read, they exclude corrosion. It is a non-folding machine with a 9-inch LCD rather than a large touchscreen, and Spirit describes a powder-coated frame. Spirit and a large US retailer agree on a 22 by 60-inch running surface, a 4.0 HP motor, 0.5 to 12 mph, a 425 lb maximum user weight, a 277.8 lb machine and a 6.9-inch step-up. The home warranty is lifetime on frame, motor and deck, 10 years on parts and 1 year of labour; Spirit also lists a light-commercial warranty. Spirit listed it at $3,199.99 on 15 October 2026, and a retailer at $2,899.99 for in-store and phone orders.",
+      bottomLine: "The Amazon route to a Spirit in the garage: a 22 by 60-inch folding frame with a long warranty. Read its current manual and warranty for garage terms before you order.",
+      description: "The Spirit XT685, our garage pick on the terms we read, is sold through Spirit's dealers rather than on Amazon US, so this card shows the XT485, the Spirit folding treadmill that Amazon does sell. We did not read a current XT485 manual for this page: a 2023 XT485 owner's manual we found carries the same environment language as the XT685's — not for outdoor or high-humidity use, humidity to 95% non-condensing — but we did not confirm its warranty wording on garages, so check it for the unit you buy. Its figures are those checked for our heavy-duty treadmill guide. The XT485 is Spirit Fitness's best-known folding treadmill and the closest machine to the XT685 that Amazon US sells. The Amazon listing gives a 22 by 60-inch running belt, a 4.0 HP motor, a 9-inch backlit LCD, direct speed and incline buttons, handlebar toggles and Bluetooth for the Spirit Fit app; Spirit's specification, checked for an earlier guide on this site, adds 0.5 to 12 mph, 15 levels of electronic incline, a 7-inch step-up height, a 43-inch folded length and an item weight of about 289 lb. The US residential warranty is lifetime on the frame, motor and deck, ten years on parts and one year of labour, which is a strong public sign of durability. On capacity, Spirit and independent coverage give 425 lb, but one US retailer's FAQ gave 350 lb and the UK version is rated lower, so we have left the figure off the card; check the label on the unit you receive. It is heavy and tall when folded, and the console is basic. Amazon listed it at $2,649 on 6 November 2026.",
     },
     {
       id: 'spirit-xt385',
@@ -531,7 +533,7 @@ export default {
     },
     {
       q: 'What is the best treadmill for a garage gym?',
-      a: `On the terms we read, the Spirit XT685: non-folding, rated to 425 lb, with a simple LCD console and a current manual that gives a temperature and humidity specification without excluding garages from the warranty. If a car shares the space, the folding Spirit XT385 is the alternative. Whatever you buy, keep the garage dry and above freezing.`,
+      a: `On the terms we read, the Spirit XT685: non-folding, rated to 425 lb, with a simple LCD console and a current manual that gives a temperature and humidity specification without excluding garages from the warranty. The XT685 is sold through Spirit's dealers rather than on Amazon; the nearest Spirit on Amazon is the folding XT485, whose garage warranty terms we have not confirmed. If a car shares the space, the folding Spirit XT385 is the alternative. Whatever you buy, keep the garage dry and above freezing.`,
     },
     {
       q: 'How do I stop my garage treadmill from rusting?',
@@ -587,7 +589,8 @@ export default {
   bottomLine: [
     `For a garage gym you can keep dry and above freezing, the <strong class="text-white">Spirit XT685</strong>
             is our pick: non-folding, rated to 425 lb, with a simple console and a current manual that
-            does not exclude garages from the warranty. The <strong class="text-white">Spirit XT385</strong>
+            does not exclude garages from the warranty. It is sold through dealers; on Amazon, the
+            nearest Spirit is the folding <strong class="text-white">XT485</strong>. The <strong class="text-white">Spirit XT385</strong>
             is the folding alternative when a car shares the space, and the
             <strong class="text-white">XT185</strong> suits walkers on a lower budget.`,
     `Whatever you buy, read the manual's environment and exclusions sections before you order, give

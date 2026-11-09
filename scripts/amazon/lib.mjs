@@ -111,6 +111,10 @@ export const VERSION_UNCLEAR = new Set(['Sole F80', 'Sole F85']);
 // a refurbished or limited-edition listing, a different size or configuration from
 // the one the page prices. They keep tagged search links until a clean listing exists.
 export const HAND_REJECTED = new Set([
+  // Checked by hand on 2026-11-09: a different Bells of Steel machine (the Dreadmill), one
+  // model's drive belt for a generic belt card, and a 16% pad for a 13% RHYTHM FUN card.
+  'Bells of Steel Blitz Manual Treadmill', 'Treadmill Motor Drive Belt (Matched by Part Number)',
+  'RHYTHM FUN Walking Pad with Handle Bar and Incline',
   'Life Fitness F3', 'Life Fitness Club Series+', 'CAP Strength Adjustable Cast Iron Dumbbell Set, 40 lb',
   'COROS POD 2', 'Beats Powerbeats Fit', 'Theragun Mini (3rd Gen)', 'Panamax MD2', 'Wahoo KICKR Headwind',
   "Mrs. Meyer's Clean Day Liquid Dish Soap", 'Bells of Steel Cable Tower (Plate-Loaded)',
@@ -133,6 +137,15 @@ export const HAND_REJECTED = new Set([
   "TriggerPoint Massage Lacrosse Ball 2-Pack",
   "WaterRower Oak or Natural Rowing Machine with S4 Monitor",
   'CAP Barbell "The Beast" 7 ft Olympic Bar',
+  // Checked by hand on 2026-11-06: an unbranded "Aerobics" listing, a generic kettlebell
+  // set, the 250 lb pop-out bar for the 500 lb wall-mounted one, a knit band accessory,
+  // the KICKR Move, and a generic furniture cover for a named treadmill cover.
+  "Tempo Move",
+  "Bells of Steel Adjustable Competition Kettlebell",
+  "Titan Fitness Wall-Mounted Pull-Up Bar",
+  "WHOOP 5.0",
+  "Wahoo KICKR Smart Trainer",
+  "Covers & All Custom Treadmill Cover",
 ]);
 
 /**

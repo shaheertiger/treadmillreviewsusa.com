@@ -1055,6 +1055,25 @@ npm run amazon:apply   # write /dp/ links into hand-written pages and regenerate
   `PRODUCT.amazonUrl` directly, and the sticky bar gets `rel="sponsored nofollow noopener"` for
   Amazon links (in-page anchors no longer open a new tab).
 
+- Fourth run (2026-11-09), with the Creators API credentials in the environment: the matcher
+  accepted 18 (three rejected by hand: a different Bells of Steel machine, one model's drive belt for
+  a generic belt card, a 16% pad for a 13% card). The 279 remaining near misses were then matched by
+  hand against the top five search results (`scripts/amazon/candidates.mjs` writes them to
+  `scripts/amazon/candidates.json`; `scripts/amazon/search.mjs "<keywords>"` re-searches): 132
+  accepted on brand, model, variant and the card's own figures; anything uncertain was rejected.
+  The same day, at the owner's request, every product card for a machine Amazon US does not sell
+  (dealer-only brands, discontinued models, variants Amazon does not list) was swapped for the
+  closest comparable product that Amazon does sell, reusing checked card copy where the site already
+  had it and verifying new products against the maker or a second source. Pages about a dealer-only
+  machine keep their prose about it; its card becomes the closest Amazon alternative, badged
+  "Closest on Amazon", with a sentence saying where the machine itself is sold.
+  `scripts/amazon/add-asins.mjs picks.txt` ("Name | ASIN" per line) records hand-chosen listings with
+  their exact titles and photos. 556 products now have a verified ASIN and photo, and 1,065 of the
+  1,101 spec product cards show an Amazon photo with a direct /dp/ link. The 36 left on search links
+  have no checkable Amazon equivalent: large-dog treadmills and slatmills, Stryd and NPE foot pods,
+  smart home gyms (Tonal 1 refurbished, Voltra I, Tempo Move), deck-specific replacement parts,
+  and a few products Amazon sells only as a bundle or under an unconfirmed variant.
+
 ## Keyword research
 
 `research/competitor-keywords/` holds the supplied competitor exports verbatim, with a README

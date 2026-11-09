@@ -13,9 +13,9 @@ const PRODUCTS = [
     brand: "Cubii",
     category: "Seated under-desk elliptical",
     badge: "Best Under-Desk Elliptical",
-    amazonUrl: "https://www.amazon.com/s?k=Cubii+Move+Under+Desk+Elliptical&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0BLFNN6JR?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
-    image: null,
+    image: {"url":"https://m.media-amazon.com/images/I/315YP-de87L._SL500_.jpg","width":500,"height":340},
     reviewUrl: null,
     priceRange: "About $200",
     priceBounds: {"low":200,"high":200},
@@ -40,9 +40,9 @@ const PRODUCTS = [
     brand: "Sunny Health & Fitness",
     category: "Magnetic seated elliptical with app",
     badge: "Best Budget Elliptical",
-    amazonUrl: "https://www.amazon.com/s?k=Sunny+Health+Fitness+SF-E323017+Under+Desk+Elliptical&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0C83MF8QZ?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
-    image: null,
+    image: {"url":"https://m.media-amazon.com/images/I/41ZYCRYT73L._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "About $170",
     priceBounds: {"low":170,"high":170},
@@ -67,9 +67,9 @@ const PRODUCTS = [
     brand: "Sunny Health & Fitness",
     category: "Motorized seated elliptical",
     badge: "If You Want Motorized",
-    amazonUrl: "https://www.amazon.com/s?k=Sunny+Health+Fitness+SF-E3959SMART+Motorized+Under+Desk+Elliptical&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0CJDDKL4V?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
-    image: null,
+    image: {"url":"https://m.media-amazon.com/images/I/41iJGrGXy-L._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "About $270",
     priceBounds: {"low":270,"high":270},
@@ -121,9 +121,9 @@ const PRODUCTS = [
     brand: "Sunny Health & Fitness",
     category: "Under-desk bike, low profile",
     badge: "Best Budget Bike",
-    amazonUrl: "https://www.amazon.com/s?k=Sunny+Health+Fitness+SF-B0891SMART+Magnetic+Mini+Exercise+Bike&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0CPGJLV1S?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
-    image: null,
+    image: {"url":"https://m.media-amazon.com/images/I/41NlhL8-vAL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "About $140",
     priceBounds: {"low":140,"high":140},
@@ -140,7 +140,7 @@ const PRODUCTS = [
       "User weight limit is listed differently by Sunny and reviewers, so we left it off",
     ],
     bottomLine: "A good-value under-desk bike for light, steady pedalling, and the most portable pick here.",
-    description: "Sunny's low-profile magnetic mini bike is the budget under-desk bike Garage Gym Reviews recommends, and the two sources agree on its eight levels of magnetic resistance, a weight of 19.1 lb and a size of about 21.3 by 16.5 by 10.4 inches; Sunny adds a 3.3 lb flywheel, belt drive and a 7.1-inch stride. That 10.4-inch overall height is low for a pedal bike, though as with any bike the pedals' highest point decides knee clearance, and Sunny does not publish it for this model. A built-in handle makes it easy to carry, and the dual-function pedals let you use it on a table for arm work. It connects over Bluetooth to SunnyFit. Garage Gym Reviews' tester liked the stability and portability, noted minor clicking with each stroke, and found the top level not very challenging. Sunny listed it at $139.99 on 19 October 2026 with a one-year frame warranty and 180 days on other parts. Sunny says it has no user weight limit, Garage Gym Reviews' product page says 300 lb and its roundup 220 lb, so we have left capacity off the card.",
+    description: "Sunny's low-profile magnetic mini bike is the budget under-desk bike Garage Gym Reviews recommends, and the two sources agree on its eight levels of magnetic resistance, a weight of 19.1 lb and a size of about 21.3 by 16.5 by 10.4 inches; Sunny adds a 3.3 lb flywheel, belt drive and a 7.1-inch stride. That 10.4-inch overall height is low for a pedal bike, though as with any bike the pedals' highest point decides knee clearance, and Sunny does not publish it for this model. A built-in handle makes it easy to carry, and the dual-function pedals let you use it on a table for arm work. It connects over Bluetooth to SunnyFit. Garage Gym Reviews' tester liked the stability and portability, noted minor clicking with each stroke, and found the top level not very challenging. Sunny listed it at $139.99 on 19 October 2026 with a one-year frame warranty and 180 days on other parts. Sunny says it has no user weight limit, Garage Gym Reviews' product page says 300 lb and its roundup 220 lb, so we have left capacity off the card. Sunny’s own page calls this model the Smart Dual Motion Mini Bike; the Amazon listing we link, sold as Sunny’s Smart Dual Function Mini Exercise Bike at the same $139.99 with 8-level magnetic resistance and two-way pedalling, does not print the model number, so check the photos match before you order.",
   },
 ];
 
@@ -305,9 +305,11 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 
       <figure class="ed-hero">
         <div class="ed-hero-collage">
-          <a href="#deskcycle-2"><img src="https://m.media-amazon.com/images/I/41CwDei9A5L._SL500_.jpg" alt="DeskCycle 2 Under Desk Bike Pedal Exerciser" width="500" height="500" decoding="async" /></a>
+          <a href="#cubii-move"><img src="https://m.media-amazon.com/images/I/315YP-de87L._SL500_.jpg" alt="Cubii Move Under-Desk Elliptical" width="500" height="340" decoding="async" /></a>
+          <a href="#sunny-sf-e323017"><img src="https://m.media-amazon.com/images/I/41ZYCRYT73L._SL500_.jpg" alt="Sunny Health &amp; Fitness Smart Under Desk Mini Elliptical (SF-E323017)" width="500" height="500" decoding="async" /></a>
+          <a href="#sunny-sf-e3959smart"><img src="https://m.media-amazon.com/images/I/41iJGrGXy-L._SL500_.jpg" alt="Sunny Health &amp; Fitness Smart Motorized Under Desk Mini Elliptical (SF-E3959SMART)" width="500" height="500" decoding="async" /></a>
         </div>
-        <figcaption>DeskCycle 2 Under Desk Bike Pedal Exerciser</figcaption>
+        <figcaption>Cubii Move Under-Desk Elliptical · Sunny Health &amp; Fitness Smart Under Desk Mini Elliptical (SF-E323017) · Sunny Health &amp; Fitness Smart Motorized Under Desk Mini Elliptical (SF-E3959SMART)</figcaption>
       </figure>
 
       <div class="ed-body prose prose-lg">

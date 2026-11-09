@@ -33,8 +33,9 @@ export default {
           hands-on reviews from Garage Gym Reviews, OutdoorGearLab and BarBend, or a second retailer
           (Dick's Sporting Goods for the Horizon 5.0U). Our checking tools could not load Amazon's own
           pages on 19 October. Independent reviewers have linked the Schwinn 290, Marcy ME-709 and
-          DeskCycle 2 to Amazon listings, and Schwinn, Horizon and Sunny sell through Amazon; we could
-          not confirm an Amazon listing for the SOLE LCR, which SOLE sells direct. Confirm the exact
+          DeskCycle 2 to Amazon listings, and Schwinn, Horizon and Sunny sell through Amazon; SOLE sells the LCR,
+          which was on this list, direct rather than on Amazon, so on 9 November 2026 we replaced it with the
+          3G Cardio Elite RB X, checked that day against 3G Cardio's store and its Amazon listing. Confirm the exact
           model and seller on any listing before you order. A figure appears in a product's
           specification line only where sources agree; where they conflicted we left it off the card
           and say so in the text. Every brand was searched in the US Consumer Product Safety
@@ -72,7 +73,7 @@ export default {
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Schwinn 290 Recumbent</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best overall</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Step-through frame, lumbar-support seat, 330 lb rating, side handles</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon 5.0R Recumbent</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Gentlest progression</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">100 resistance levels in small steps, lifetime frame warranty</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon 5.0U Upright</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Riders who prefer upright</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Step-through upright frame, high-contrast display, compact</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">SOLE LCR</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Premium, delivered and built</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">350 lb rating, cushioned seat, room-of-choice assembly option</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3G Cardio Elite RB X</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Premium, heavier-duty</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">350 lb rating, oversized adjustable seat, 7-year parts warranty</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Marcy ME-709</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Tight budget</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Low, open step-through and a 300 lb rating for about $250</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sunny SF-RB422003</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Small rooms, shorter riders</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Published seat height close to a dining chair; 52 in. long</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">DeskCycle 2</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Pedaling from your own chair</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Low pedals, eight magnetic levels, nothing to climb onto</td></tr>
@@ -256,8 +257,8 @@ export default {
             <strong>Consoles.</strong> Bigger is not always better. A large touchscreen is easy to read
             but can bury the controls you need under menus, while a plain display with a few labelled
             buttons can be simpler to use. Look for high contrast and a backlight. Horizon describes the
-            5.0R and 5.0U displays as high-contrast LCDs with a 60 by 127 mm window; the SOLE LCR has a
-            10.1-inch touchscreen whose menus Garage Gym Reviews found shallow and easy to navigate;
+            5.0R and 5.0U displays as high-contrast LCDs with a 60 by 127 mm window; the 3G Cardio Elite RB X
+            has no screen of its own and links to apps on your tablet;
             Schwinn's 290 has a 7-inch LCD. At the simple end, the Marcy shows time, speed, distance and
             calories on a basic LCD with a resistance knob, which some people find easier than buttons.
             Check, too, whether the bike needs an app to do anything useful. None of these does: every
@@ -289,32 +290,29 @@ export default {
       html: `          <p>
             <strong>Weight capacity.</strong> The maximum user weight is a structural rating, and a
             margin above your own weight usually means a steadier frame. The bikes here are rated from
-            220 lb (the compact Sunny) to 350 lb (the SOLE LCR); the Schwinn 290 is rated for 330 lb and
+            220 lb (the compact Sunny) to 350 lb (the 3G Cardio Elite RB X); the Schwinn 290 is rated for 330 lb and
             the Horizons and Marcy for 300 lb. If you are close to a bike's rating, choose the next one up.
           </p>
           <p>
             <strong>Delivery.</strong> Most of these bikes arrive in a large box on a parcel or freight
-            service, usually to the front door or curb. Schwinn's and SOLE's sites both offer paid
-            upgrades: on 19 October SOLE listed <a href="/treadmill-delivery-guide/" class="text-[#0F62FE] font-medium" data-autolink>curbside delivery</a> for the LCR at $49.99, room-of-choice
-            delivery for $200 more and room-of-choice delivery with assembly for $350 more, figures Garage
-            Gym Reviews also gives, and Schwinn listed a $299 White Glove option, with delivery to a room
-            of choice and full assembly, on the bike pages we checked. Delivery terms change, so check the
+            service, usually to the front door or <a href="/treadmill-delivery-guide/" class="text-[#0F62FE] font-medium" data-autolink>curb</a>. Some makers offer paid
+            upgrades: on 19 October Schwinn listed a $299 White Glove option, with delivery to a room
+            of choice and full assembly, on the bike pages we checked, and SOLE offered similar options on
+            its own bikes. Delivery terms change, so check the
             current options at checkout.
           </p>
           <p>
             <strong>Assembly.</strong> Even a "mostly assembled" bike usually needs the seat, handlebars,
-            pedals and console fitted. Garage Gym Reviews says the SOLE LCR arrives mostly assembled and
-            should take under 30 minutes, but heavier bikes are a two-person job to unpack and position:
-            the LCR weighs 152 lb, the Schwinn 290 about 108 lb and the Horizon 5.0R 123 lb by their
+            pedals and console fitted. Heavier bikes are a two-person job to unpack and position:
+            the 3G Cardio weighs 115 lb, the Schwinn 290 about 108 lb and the Horizon 5.0R 123 lb by their
             makers' figures. If you live alone, are recovering from surgery or simply do not want to lift
             and kneel for an hour, pay for assembly or ask a family member to do it, and do not ride until
             every bolt has been checked once more after the first week.
           </p>
           <p>
             <strong>Returns and funding.</strong> Schwinn's and Horizon's sites both described a 30-day
-            return window on 19 October, with shipping deducted on Schwinn's; SOLE listed a 30-day
-            satisfaction guarantee. Check terms before you buy, because returning a 100 lb bike is a
-            nuisance. SOLE says the LCR is HSA/FSA eligible; whether you can use those funds depends on
+            return window on 19 October, with shipping deducted on Schwinn's; check 3G Cardio's and Amazon's terms for the Elite RB X. Check terms before you buy, because returning a 100 lb bike is a
+            nuisance. If you hope to use HSA or FSA funds, whether you can depends on
             your plan, and our page on whether
             <a href="/are-treadmills-hsa-fsa-eligible/" class="text-[#0F62FE] font-medium">fitness machines are HSA/FSA eligible</a>
             explains how that usually works.
@@ -353,7 +351,7 @@ export default {
             <strong>Implanted devices.</strong> SOLE warns on its product pages that some of its machines
             include wireless charging, which emits a magnetic field that may interfere with implanted
             medical devices, and that anyone with such a device should consult their doctor before use.
-            The LCR lists wireless charging. If you have a pacemaker or another implant, ask your doctor
+            None of the bikes now on this page lists wireless charging, but if you have a pacemaker or another implant, ask your doctor
             or the device maker about any machine with wireless charging or strong magnets.
           </p>
           <p>
@@ -397,7 +395,7 @@ export default {
       name: 'Horizon 5.0R Recumbent Bike',
       category: 'Step-through recumbent bike',
       badge: 'Gentlest Progression',
-      amazonUrl: 'https://www.amazon.com/s?k=Horizon+Fitness+5.0R+Recumbent+Bike&tag=sktiger-20',
+      amazonUrl: 'https://www.amazon.com/dp/B0C6NF4CJD?tag=sktiger-20',
       priceRange: '$649–$999',
       specs: '100 magnetic resistance levels · 300 lb max user · 66 x 25.2 in. footprint · step-through frame · Bluetooth FTMS · lifetime frame warranty',
       pros: [
@@ -414,7 +412,7 @@ export default {
       bottomLine:
         'For riders who want to start very gently and add effort a little at a time, with a frame warranty that never runs out.',
       description:
-        "Horizon is a Johnson Health Tech brand, like Schwinn, and the 5.0R is its home recumbent. Horizon's page and BarBend, which named it its best recumbent for beginners, agree on 100 levels of magnetic resistance, a 300 lb maximum user weight and a 66 by 25.2-inch footprint, and both describe an open step-through frame. For an older rider the 100 levels matter less as a challenge than as a gentle ramp: each step is small, so you can add effort without a noticeable jump. Horizon lists an extra-large seat with lumbar support that slides on an aluminum rail, handlebars at the console and beside the seat, a high-contrast LCD with a 60 by 127 mm window, a three-speed fan, a tablet rack, a USB-A port and Bluetooth FTMS for optional apps. The home warranty is lifetime on the frame and one year on parts and labor, and Horizon gives the unit weight as 123 lb. On 19 October Horizon had it at $649 against a $999 list price, and BarBend says it is routinely on sale. It does not fold.",
+        "Horizon is a Johnson Health Tech brand, like Schwinn, and the 5.0R is its home recumbent. Horizon's page and BarBend, which named it its best recumbent for beginners, agree on 100 levels of magnetic resistance, a 300 lb maximum user weight and a 66 by 25.2-inch footprint, and both describe an open step-through frame. For an older rider the 100 levels matter less as a challenge than as a gentle ramp: each step is small, so you can add effort without a noticeable jump. Horizon lists an extra-large seat with lumbar support that slides on an aluminum rail, handlebars at the console and beside the seat, a high-contrast LCD with a 60 by 127 mm window, a three-speed fan, a tablet rack, a USB-A port and Bluetooth FTMS for optional apps. The home warranty is lifetime on the frame and one year on parts and labor, and Horizon gives the unit weight as 123 lb. On 19 October Horizon had it at $649 against a $999 list price, and BarBend says it is routinely on sale; the Amazon listing was $549.98 on 9 November 2026. That listing's title and bullets give a 350 lb maximum user weight, against the 300 lb on Horizon's page and in BarBend's review, so plan on 300 lb until Horizon confirms otherwise. It does not fold.",
     },
     {
       id: 'horizon-5-0u-upright-bike',
@@ -441,28 +439,26 @@ export default {
         "Most upright bikes make you lift a leg over the frame; the 5.0U is one of the few home uprights whose maker describes a step-through frame, and Dick's Sporting Goods' listing says the same. Horizon and Dick's agree on a 300 lb maximum user weight and a warranty of lifetime on the frame and one year on parts and labor. Horizon lists 100 electronically controlled resistance levels, the same high-contrast 60 by 127 mm LCD as the 5.0R, five programs, Bluetooth FTMS, a fan, a tablet holder and a USB-A port, with a seat that adjusts vertically and horizontally; one overseas retailer lists 50 levels rather than 100, so we have kept the count off the card. Horizon gives its size as 46 by 22.4 by 53 inches and its weight as 87 lb. Dick's customer reviews praise easy assembly and value, while complaints include a hard seat and app syncing; a gel seat cover is a cheap fix for the first. On 19 October Horizon had it at $549 against a $799 list price, with a code taking it to $499. It has no backrest, so riders with back pain or poor balance should prefer a recumbent.",
     },
     {
-      id: 'sole-lcr',
-      name: 'SOLE LCR Recumbent Bike',
-      category: 'Light-commercial recumbent bike',
-      badge: 'Best Premium',
-      amazonUrl: 'https://www.amazon.com/s?k=SOLE+LCR+Recumbent+Bike&tag=sktiger-20',
-      priceRange: '$1,699–$1,999',
-      specs: '40 magnetic resistance levels · 350 lb max user · 56 x 29 in. footprint · 10.1 in. touchscreen · lifetime frame, 3-yr parts, 1-yr labor warranty',
+      id: "3g-cardio-elite-rb-x",
+      name: "3G Cardio Elite RB X Recumbent Bike",
+      category: "Light-commercial recumbent bike",
+      badge: "Best Premium",
+      amazonUrl: "https://www.amazon.com/dp/B0765ZM52J?tag=sktiger-20",
+      priceRange: "$1,999 (3G Cardio and Amazon, 9 Nov 2026)",
+      specs: "16 magnetic resistance levels · 350 lb max user · 49 x 27 x 43 in. · 115 lb · fits 5 ft to 6 ft 5 in. · lifetime frame, 7-yr parts, 1-yr in-home labor warranty",
       pros: [
-        'The highest weight rating here, 350 lb, agreed by SOLE and Garage Gym Reviews',
-        'A large, heavily cushioned seat that Garage Gym Reviews’ tester singled out for comfort',
-        'SOLE offers room-of-choice delivery with assembly for an extra $350',
-        'A touchscreen with shallow menus, plus a lifetime frame warranty',
+        "The highest weight rating here, 350 lb, agreed by 3G Cardio’s store and the Amazon listing",
+        "A compact 49-inch length with a low step-through frame",
+        "An oversized seat that slides 25 positions and tilts 5, with a mesh backrest",
+        "Seven years on parts and one year of in-home labor, by 3G Cardio’s figures",
       ],
       cons: [
-        'Expensive, at $1,699 even on sale',
-        'Heavy, at 152 lb',
-        'SOLE warns its wireless charging may interfere with implanted medical devices',
+        "Expensive, at $1,999 even on sale",
+        "No built-in screen: bring a tablet for apps",
+        "Little independent hands-on coverage that we could find",
       ],
-      bottomLine:
-        'For riders who want a sturdier, more comfortable recumbent and would rather pay to have it carried in and built.',
-      description:
-        "SOLE builds the LCR as a light-commercial recumbent for clinics and multi-user homes, and Garage Gym Reviews names it its best exercise bike for seniors. SOLE and Garage Gym Reviews agree on 40 levels of magnetic resistance, a 350 lb maximum user weight, a 56 by 29 by 60-inch size, a unit weight of 152 lb and a warranty of lifetime on the frame, three years on parts and one year on labor. SOLE lists a 31 lb flywheel, a 10.1-inch touchscreen that can mirror the free SOLE+ app or streaming apps, oversized pedals, a 15-position seat adjustment, pulse grips and wireless charging. Garage Gym Reviews' tester found the seat one of the most comfortable she had used, the touchscreen easy to navigate, and the built-in programming merely adequate. For an older buyer the delivery options are the point: on 19 October SOLE listed curbside delivery at $49.99, room of choice for $200 more and room of choice with assembly for $350 more. SOLE also warns that wireless charging emits a magnetic field that may interfere with implanted medical devices. SOLE had it at $1,699.99 against $1,999.99; we did not find it listed on Amazon.",
+      bottomLine: "For riders who want a sturdier, commercial-grade recumbent with a long parts warranty, in a footprint that fits a spare room.",
+      description: "This card replaces the SOLE LCR, a light-commercial recumbent that SOLE sells direct rather than on Amazon. The 3G Cardio Elite RB X fills the same role and is listed on Amazon. 3G Cardio, an Arizona company, sells it as a commercial-grade recumbent, and its store and the Amazon listing agree on a 350 lb maximum user weight, 16 levels of magnetic resistance, a 49 by 27 by 43-inch size, a 115 lb unit weight, a user height range of 5 ft to 6 ft 5 in., and a residential warranty of lifetime on the frame, seven years on parts and one year of in-home labor. For an older rider the seat is the point: oversized and cushioned, it slides through 25 positions and tilts through five, with a mesh backrest, on a low step-through frame with handheld pulse sensors and an included wireless heart-rate strap. There are 12 preset and three heart-rate programs. There is no built-in screen; FTMS Bluetooth links it to third-party apps on your own tablet, and no membership is needed. At 115 lb with built-in wheels it rolls through a standard doorway, but unpacking it is a two-person job. 3G Cardio listed it at $1,999 against $2,299 on 9 November 2026, and Amazon showed the same $1,999.",
     },
     {
       id: 'marcy-me-709',
@@ -552,7 +548,7 @@ export default {
     },
     {
       q: 'How much weight should an exercise bike hold for an older rider?',
-      a: `Choose a bike rated comfortably above your weight, ideally by 50 lb or more, because a higher rating usually means a steadier frame. The bikes on this page range from 220 lb for the compact Sunny to 350 lb for the SOLE LCR, with most at 300 to 330 lb.`,
+      a: `Choose a bike rated comfortably above your weight, ideally by 50 lb or more, because a higher rating usually means a steadier frame. The bikes on this page range from 220 lb for the compact Sunny to 350 lb for the 3G Cardio Elite RB X, with most at 300 to 330 lb.`,
     },
     {
       q: 'Are pedal exercisers good for seniors?',
@@ -560,7 +556,7 @@ export default {
     },
     {
       q: 'Can someone else assemble an exercise bike for me?',
-      a: `Yes. Several makers sell delivery with assembly: on 19 October 2026 SOLE listed room-of-choice delivery with assembly for the LCR at $350 extra, and Schwinn listed a $299 White Glove option on the bike pages we checked. Terms change, so check at checkout. Otherwise, ask a family member or a local handyman service.`,
+      a: `Yes. Several makers sell delivery with assembly: on 19 October 2026 Schwinn listed a $299 White Glove option, with delivery to a room of choice and full assembly, on the bike pages we checked. Terms change, so check at checkout. Otherwise, ask a family member or a local handyman service.`,
     },
   ],
   mistakesHeading: 'Common Mistakes Buying an Exercise Bike for a Senior',
@@ -614,8 +610,8 @@ export default {
   bottomLine: [
     `<strong class="text-white">For most seniors, buy a step-through recumbent: the Schwinn 290</strong>,
             or the Horizon 5.0R if you want to spend less and build up in very small steps. Choose the
-            Horizon 5.0U only if you are steady on a bicycle seat and prefer to sit upright, the SOLE LCR
-            if you want a heavier-duty bike delivered and built, and the Marcy or Sunny if budget or space
+            Horizon 5.0U only if you are steady on a bicycle seat and prefer to sit upright, the 3G Cardio Elite RB X
+            if you want a heavier-duty bike with a long parts warranty, and the Marcy or Sunny if budget or space
             decides. If getting onto any machine is the problem, a pedal exerciser from your own chair is
             the honest answer.`,
     `Whatever you choose, put it on a level, non-slip floor, mount it the same careful way every

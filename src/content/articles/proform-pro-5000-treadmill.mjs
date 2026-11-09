@@ -13,11 +13,11 @@ export default {
   standfirst:
     'On hardware, the Pro 5000 undercuts machines costing considerably more: a full 22 by 60-inch deck, 3.75 CHP and decline. On ownership, it is built around a subscription, and the five-year arithmetic is the review.',
   ctas: [
-    { label: 'The Specifications', href: '#proform-pro-5000' },
+    { label: 'The Specifications', href: '#the-deck' },
     { label: 'The Subscription Maths', href: '#subscription-maths' },
   ],
   tags: ['proform pro 5000', 'proform smart pro 5000', 'proform treadmill reviews', 'ifit treadmill', 'running treadmill'],
-  stickyCta: { text: 'See the Verdict', link: '#proform-pro-5000' },
+  stickyCta: { text: 'See the Verdict', link: '#the-deck' },
   breadcrumb: { name: 'Reviews', url: '/reviews/' },
   lead: `Judged purely on the specifications that decide whether a treadmill is pleasant to run
           on, the Pro 5000 is the best-value machine ProForm makes. A 22 by 60-inch deck and a
@@ -28,30 +28,33 @@ export default {
           listing, major retailer listings and independent review coverage, which agree. They are
           not our own measurements. Warranty terms and price bands vary by retailer and model
           year, so confirm both against the exact unit you are buying — and note that ProForm
-          refreshes consoles within a model name.`,
+          refreshes consoles within a model name. The Pro 5000 is not sold on Amazon US, so the product
+          card shows the ProForm Pro 2000, whose figures are those checked for our iFIT treadmill guide
+          on 6 November 2026.`,
   products: [
     {
-      id: 'proform-pro-5000',
-      name: 'ProForm Pro 5000',
-      category: 'Best Running Deck for the Money',
-      badge: 'Best Value Deck',
-      priceRange: '$1,499-$1,999',
-      specs: '60 x 22 in. deck · 3.75 CHP · -3% to 15% incline · 0-12 mph · 300 lb capacity',
+      id: 'proform-pro-2000',
+      name: 'ProForm Pro 2000',
+      category: 'Closest ProForm With Decline on Amazon',
+      badge: 'Amazon Alternative',
+      reviewUrl: '/proform-pro-2000-treadmill/',
+      priceRange: 'About $1,253 (Amazon, 6 Nov 2026)',
+      specs: '20 x 60 in. belt · -3% to 12% incline · 0–12 mph · 300 lb capacity · 10 in. touchscreen · folds',
       pros: [
-        'Full 60 by 22-inch deck — the specification that matters most for running',
-        '3.75 CHP is more motor than a home runner will ever ask for',
-        'Decline to -3%, which is genuinely rare below $2,000',
-        'Folds, which almost nothing with this deck size does',
+        'The same 60-inch belt length, -3% decline and 12 mph top speed as the Pro 5000',
+        'The listing states a ten-year frame, two-year parts and one-year labour warranty',
+        'Folding SpaceSaver frame and Rebound Pro cushioning',
+        'Several hundred dollars less than the Pro 5000’s usual price band',
       ],
       cons: [
-        'The console is built around iFit, and does much less without an active membership',
-        '300 lb capacity is the lowest figure in its specification set',
-        'A 14-inch touchscreen is a component that dates faster than the frame it is bolted to',
+        'A 20-inch belt and a 12% incline ceiling, against the Pro 5000’s 22 inches and 15%',
+        'The listing text dates from an earlier iFIT era; confirm which trial membership is included today',
+        'Two-year parts cover is short next to some rivals',
       ],
       bottomLine:
-        'The most running treadmill you can buy for the money, provided you either want the subscription or are content to run it manually and ignore the screen.',
+        'The ProForm to buy on Amazon if you want a 60-inch folding deck with decline and can live with a narrower belt than the Pro 5000’s.',
       description:
-        'The Pro 5000 pairs a 3.75 CHP motor with a 22 by 60-inch belt, motorised incline from -3% to 15%, a top speed of 12 mph and a published 300 lb capacity, behind a 14-inch HD touchscreen running iFit. That deck and that motor are the specification set of a machine costing meaningfully more, and the decline range is close to unheard of below $2,000. It also folds, which very little with a 60-inch deck manages. The reservation is structural rather than a fault: the console is the product ProForm is actually selling, the machine is typically priced and bundled on the assumption that you will subscribe, and what the screen does without a membership is the single most important thing to establish before you buy.',
+        'The Pro 5000 is sold through ProForm and other retailers rather than on Amazon US, so this card shows the nearest ProForm that Amazon lists. The Amazon listing for the Pro 2000 gives a 10-inch HD touchscreen, a -3% to 12% incline range, a 0–12 mph speed range, a 20 by 60-inch belt that ProForm recommends for tall runners, a folding SpaceSaver frame, Rebound Pro deck cushioning and a 300 lb user capacity, with dimensions of 59.6 by 35.3 by 77.3 inches. It states the warranty plainly: ten years on the frame, two years on parts and one year on labour. Against the Pro 5000 it keeps the deck length, the decline, the top speed, the 300 lb rating and the fold, and gives up two inches of width, 3% of incline, screen size and motor. The listing’s wording about the bundled membership reflects an earlier iFIT naming scheme, so check exactly what trial comes with the order. Amazon listed it at $1,253.37 on 6 November 2026; our full Pro 2000 review goes further.',
     },
   ],
   sections: [
@@ -63,7 +66,8 @@ export default {
             Sixty inches by twenty-two is the specification a serious home runner wants, and it is
             normally the dividing line between mid-market and premium. The Pro 5000 delivers it at
             a price where 55 by 20 is the norm, and that single fact accounts for most of the
-            machine's reputation.
+            machine's reputation. The Pro 5000 is sold through ProForm and other retailers rather
+            than on Amazon, so the card below shows the closest ProForm Amazon does sell, the Pro 2000.
           </p>
           <p>
             Deck length is the constraint you meet on every stride. At 9 mph a six-foot runner is

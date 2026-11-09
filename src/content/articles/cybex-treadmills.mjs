@@ -33,7 +33,10 @@ export default {
           articles themselves refused our requests), remanufactured-equipment listings from Build A Gym
           and, through search results, Fitness Superstore, CTX Home Gyms and Progym Supply, a Cybex R
           Series sell sheet and review summarised in search results, Life Fitness's US store for the
-          Club Series+ and Run CX, and the US Consumer Product Safety Commission's recall database.
+          Club Series+ and Run CX, and the US Consumer Product Safety Commission's recall database. On
+          9 November 2026 we replaced the R Series and Club Series+ cards with the Matrix T5x and Life
+          Fitness T3, which are sold on Amazon; their figures are those checked for our Matrix T5x review
+          and non-folding treadmill guide.
           Figures on the product cards are those on which Cybex or Life Fitness documents and at least
           one independent source agree; conflicts are set out in the text and kept off the cards.
           Used and remanufactured prices come from individual listings, several of which we could only
@@ -75,54 +78,55 @@ export default {
         'The 770T was one of Cybex’s top club treadmills and is the Cybex most often for sale today, usually remanufactured with either an LED console or the E3 entertainment console. Its owner’s manual lists 0.5 to 12.4 mph (0.8 to 20 km/h) in 0.1 steps, 0 to 15% incline, a 400 lb maximum user weight, an assembled length of 84 inches, a width of 35.6 inches, a height of 62.5 inches and a product weight of 410 lb, on a 115 V or 208/230 V supply. Retailer listings agree on 400 lb and 12.4 mph and add a 5 HP peak AC drive motor and a 1,000 lb-thrust incline motor, but give 82.5 by 36 by 59 inches and 500 lb. We could not confirm the running surface. Listings in search results on 5 November 2026 ranged from about $2,795 to $3,899 for remanufactured units.',
     },
     {
-      id: 'cybex-r-series',
-      name: 'Cybex R Series Treadmill',
-      category: 'Cybex’s Last Treadmill, Discontinued',
-      badge: 'Newest Cybex',
-      priceRange: 'Used and remanufactured only; see below',
-      amazonUrl: 'https://www.amazon.com/s?k=Cybex+R+Series+Treadmill&tag=sktiger-20',
-      specs: '21 x 60 in. running surface · 4.0 HP continuous AC (8.0 HP peak) · 0-15% incline · 400 lb max user · dedicated 120 V, 20 A',
+      id: 'matrix-t5x',
+      name: "Matrix T5x",
+      category: "Club Treadmill, Mostly Sold Remanufactured",
+      badge: "Closest on Amazon to the R Series",
+      reviewUrl: '/matrix-t5x-treadmill/',
+      priceRange: "$3,999-$4,399 remanufactured (one US reseller, 14 Oct 2026)",
+      amazonUrl: 'https://www.amazon.com/dp/B07YGMKD52?tag=sktiger-20',
+      specs: "60 in. running length · 5.0 HP AC drive · 0.5-12 mph · 0-15% incline · non-folding · dedicated 20 A circuit",
       pros: [
-        'The newest Cybex treadmill, so the youngest units on the used market',
-        'A 4.0 HP continuous-duty AC motor (8.0 HP peak) on Life Fitness’s page and Cybex’s sell sheet',
-        '400 lb user rating and an 8.5-inch step-up',
-        'Two consoles: the simple 50L LED or the 70T touchscreen with TV',
+        "A 5.0 HP AC drive built for club use, agreed across Matrix’s manual and reseller listings",
+        "Incline to 15% and a full 60-inch running length",
+        "Simple LED console with no subscription or platform to go out of date",
+        "Remanufactured units come with a reseller warranty that can include on-site labour",
       ],
       cons: [
-        'Marked discontinued on Life Fitness’s US catalogue page',
-        'Life Fitness lists a 22 by 60-inch belt and a 21 by 60-inch running area on the same page',
-        'Needs a dedicated 20-amp circuit in North America',
-        'One remanufacturer’s listing described a different machine in its text; check what you are buying',
+        "Not on Matrix’s US home store, so a new one with a Matrix residential warranty is not the realistic option",
+        "Width, user-weight rating and machine weight conflict across sources and generations",
+        "Needs a dedicated 20-amp circuit with a matching outlet on a 120-volt supply",
+        "Heavy, long and non-folding; delivery and access need planning",
       ],
       bottomLine:
-        'The Cybex to look for if you want the most recent design, ideally with the simpler 50L console and a written remanufacturer’s warranty.',
+        "The nearest Amazon alternative to a remanufactured Cybex R Series: a club AC treadmill to buy with a written warranty, if your room has a 20-amp circuit.",
       description:
-        'The R Series was the last new treadmill Cybex designed before Life Fitness absorbed the brand; Life Fitness describes it as Cybex’s first new cardio line in six years when it launched. Life Fitness’s US catalogue page, which marks it discontinued, lists a 4.0 HP continuous (8.0 HP peak) AC motor, a 400 lb maximum user weight, an 8.5-inch step-up and a dedicated 120 V, 20 A circuit in North America, and offers the 50L LED console or the 70T touchscreen with integrated TV. The same page gives a 22 by 60-inch belt and a 21 by 60-inch running surface; Cybex’s sell sheet and an independent review give 21 by 60 inches, 0 to 15% incline and 14 mph. Build A Gym listed a remanufactured 70T unit at $3,095, sold out, on 5 November 2026.',
+        "The T5x is a Matrix commercial treadmill sold under the same name in at least an older and a newer style. Matrix’s owner’s manual for the MX-T5x and independent reseller listings agree on a 5.0 HP AC drive, a 60-inch running length, 0 to 15% incline, a speed range of 0.5 to 12 mph and a 20-amp electrical requirement (NEMA 5-20 on 120 volts). They disagree on the rest. The manual gives a 22-inch-wide running area, a 500 lb maximum user weight and 450 lb machine weight; one reseller’s chart gives 20 inches wide and 400 lb for both styles; another listing gives a 22-inch belt, 400 lb, 399 lb machine weight and a 15 mph top speed. A US remanufacturer listed the older style at $3,999 and the newer style at $4,399 on 14 October 2026, with a one-year parts and on-site labour warranty and extended options. We could not confirm it is sold new by Matrix in the US. It sits on this page in place of the Cybex R Series, which we could not find as a whole machine on Amazon: like the R Series, the T5x is a club AC treadmill that home buyers mostly find remanufactured, and the same buying rules apply.",
     },
     {
-      id: 'life-fitness-club-series-plus',
-      name: 'Life Fitness Club Series+',
-      category: 'The New Life Fitness Alternative for Home Use',
-      badge: 'Buy New Instead',
-      reviewUrl: '/life-fitness-club-series-plus-treadmill/',
-      priceRange: '$6,079 (SL) to $8,799 (SE4) at Life Fitness on 5 Nov 2026',
-      amazonUrl: 'https://www.amazon.com/s?k=Life+Fitness+Club+Series+Treadmill&tag=sktiger-20',
-      specs: '22 x 60 in. running surface · 4.0 HP continuous AC (8.0 HP peak) · 0.5-12 mph · 0-15% incline · 400 lb max user · 120 V, 15 A',
+      id: 'life-fitness-t3',
+      name: "Life Fitness T3",
+      category: "New Life Fitness Home Treadmill on Amazon",
+      badge: "Buy New Instead",
+      reviewUrl: '/life-fitness-t3-treadmill/',
+      priceRange: "$3,499–$4,119",
+      amazonUrl: 'https://www.amazon.com/dp/B006BE6HW4?tag=sktiger-20',
+      specs: "20 x 60 in. deck · 0.5–12 mph · 0–15% incline · 350 lb capacity · non-folding",
       pros: [
-        'A new club-grade treadmill from the company that now owns Cybex',
-        'The same 4.0 HP continuous AC rating and 400 lb capacity as the R Series',
-        'Lifetime frame and motor cover from Life Fitness, which no used Cybex has',
-        'Runs on a standard 15-amp outlet, according to Life Fitness and a dealer',
+        "Ten years on the motor and five on parts, with a lifetime frame warranty",
+        "A 60-inch deck and 15% incline from the same maker as many commercial gym treadmills",
+        "At 243 lb, the lightest machine on this page and the easiest to place",
+        "A choice of a simple Go console or the Track Connect 2.0 console",
       ],
       cons: [
-        'About twice the price of a remanufactured Cybex',
-        '12 mph top speed, below the R Series’s 14 mph',
-        'One year of labour cover',
+        "A 20-inch-wide deck, narrower than the Spirit, Run CX and Club Series+",
+        "A 350 lb capacity, the lowest here",
+        "The console is priced as part of the configuration, so compare like for like",
       ],
       bottomLine:
-        'The new machine to compare a used Cybex against: if the price gap does not bother you, the warranty and the standard outlet are worth it.',
+        "The cheapest new Life Fitness to set against a used Cybex, for walkers and runners up to 350 lb who want a long motor warranty more than a club AC drive.",
       description:
-        'The Club Series+ is Life Fitness’s club-grade home treadmill. Life Fitness’s US store and an authorised dealer agree on a 22 by 60-inch running surface, a 4.0 HP continuous (8.0 HP peak) AC motor, 0.5 to 12 mph, 0 to 15% incline, a 400 lb maximum user weight, a 434 lb weight and a 120 V, 15 A outlet. Life Fitness lists a lifetime warranty on the frame, motor and Lifesprings, 10 years on parts, 3 on the console and 1 on labour, with delivery and installation included. On 5 November 2026 it was listed at $6,079 with the SL console and $8,799 with the 24-inch SE4 touchscreen. Our full guide covers the consoles and how it compares.',
+        "The T3 is Life Fitness’s compact non-folding treadmill and its most affordable. Life Fitness and a major US retailer agree on a 20 by 60-inch running surface, 0.5 to 12 mph, incline from 0 to 15%, a 350 lb maximum user weight and a machine weight of 243 lb, and both list the warranty as lifetime on the frame, ten years on the motor, five years on parts and one year of labour; Life Fitness adds three years on the console. Life Fitness’s specification table states “Folding: No”, and it sells a separate folding model, the F3. That pairing makes the T3’s case: at the same $3,499 starting price on 15 October, Life Fitness’s own comparison table gave the folding F3 a shorter 55-inch deck, a 10 mph top speed and 12% incline. Life Fitness sells the T3 with a choice of console, at $3,499 with the Go console or $4,119 with Track Connect 2.0. The retailer sold the base and console separately, so compare total prices. Our full T3 review goes further. It takes the place of the Life Fitness Club Series+ on this page, which Life Fitness sells through its own store and dealers rather than on Amazon; the Club Series+ is the closer match to a Cybex's club build, and the alternatives section below still covers it.",
     },
     {
       id: 'life-fitness-run-cx',
@@ -212,8 +216,11 @@ export default {
       html: `          <p>
             Cybex used a number-and-letter scheme: a series number with "T" for treadmill (770T, 625T, 530T),
             and, for the R Series, a console name (50L or 70T). The table lists the models most often for sale,
-            with what we found. The product cards below cover the two most common Cybex models and two new Life
-            Fitness alternatives.
+            with what we found. The product cards below cover the Cybex 770T, the Cybex most often listed on
+            Amazon, and the nearest alternatives sold on Amazon. The Cybex R Series and the Life Fitness Club
+            Series+ are sold through remanufacturers, Life Fitness and dealers rather than on Amazon, so the
+            cards show a Matrix T5x club treadmill in the R Series's place and the new Life Fitness T3 and Run
+            CX as the buy-new options; the R Series figures are in the text below.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
             <thead>
@@ -365,10 +372,11 @@ export default {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Is Cybex on Amazon?</h3>
           <p>
-            We found no new Cybex treadmill on Amazon US, as you would expect for a discontinued brand. The
-            Amazon buttons on the Cybex cards go to tagged searches, which mostly return parts and similar
-            machines rather than a whole Cybex treadmill. Buy a whole machine from a remanufacturer you can
-            reach by phone.
+            We found no new Cybex treadmill on Amazon US, as you would expect for a discontinued brand.
+            Amazon does carry a Cybex 770T listing, which the 770T card links to; check the seller, the
+            condition and the warranty before you order, as you would with any remanufacturer, and ask for
+            the list of replaced parts. Searches for the R Series mostly return parts rather than a whole
+            machine.
           </p>`,
     },
   ],

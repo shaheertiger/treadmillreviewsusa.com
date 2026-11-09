@@ -13,7 +13,7 @@ export default {
   standfirst:
     'It sold in enormous numbers by being the cheapest folding treadmill a major brand would put its name on. It has been discontinued — so this review is about what it was, what it is worth secondhand, and what replaces it.',
   ctas: [
-    { label: 'The Specifications', href: '#weslo-cadence-g-5-9' },
+    { label: 'The Specifications', href: '#xterra-trx1000' },
     { label: 'What to Buy Instead', href: '#what-to-buy-instead' },
   ],
   tags: ['weslo cadence g 5.9', 'weslo treadmill', 'weslo cadence g 5.9 treadmill', 'budget treadmill', 'used treadmill'],
@@ -33,28 +33,25 @@ export default {
           you are looking at.`,
   products: [
     {
-      id: 'weslo-cadence-g-5-9',
-      name: 'Weslo Cadence G 5.9',
-      category: 'Discontinued Budget Treadmill',
-      badge: 'Discontinued',
-      priceRange: '$150-$300 used',
-      specs: '50 x 16 in. deck · 2.25 HP · two manual incline positions · 0-10 mph · 275 lb capacity',
+      id: "xterra-trx1000",
+      name: "Xterra Fitness TRX1000 Compact Series Treadmill",
+      category: "Closest New Treadmill on Amazon to the Cadence G 5.9",
+      badge: "Closest on Amazon",
+      priceRange: "$499.99 at XTERRA (5 Nov 2026); $445.99 on Amazon (9 Nov 2026)",
+      amazonUrl: "https://www.amazon.com/dp/B0FBKNYX52?tag=sktiger-20",
+      specs: "16 x 50 in. deck · 2.25 HP · up to 10 mph · 3 manual incline levels · 250 lb max user · folding with lift assist",
       pros: [
-        'Light enough at roughly 118 lb for one person to move and fold without help',
-        'Genuinely inexpensive, which is the entire reason it sold in the numbers it did',
-        'Simple console with no account, no platform and nothing to lapse',
-        'Widely sold, so used examples and spare parts are relatively easy to find',
+        "The Cadence G 5.9’s format bought new: a 16 by 50-inch deck, 2.25 HP, 10 mph and manual incline",
+        "Three manual incline levels, one more than the Weslo’s two",
+        "Lifetime frame warranty and 12 preset programmes, with no app or subscription",
       ],
       cons: [
-        'Discontinued — no new stock, and long-term parts availability is a real question',
-        '16-inch belt width is narrow enough to be noticeable while walking',
-        'Incline is two manual positions you set by hand, not a motorised range',
-        '118 lb machine weight means perceptible movement under anything faster than a walk',
+        "A 250 lb rating, below the Weslo’s published 275 lb",
+        "Only 90 days on deck, parts and labour and one year on the motor",
+        "At 103.6 lb it is light, so expect some movement under anything faster than a walk",
       ],
-      bottomLine:
-        'A fair machine for its price when new, and now only worth buying used, cheaply, after you have run it under power. Budget $150-$300 and no more.',
-      description:
-        'The Cadence G 5.9 paired a 2.25 HP motor with a 16 by 50-inch belt, two manually set incline positions, a 10 mph ceiling and a published 275 lb capacity, in a folding frame weighing around 118 lb with six preset programmes. Read as a set, those figures describe exactly what it was: the cheapest machine a major manufacturer was willing to attach its name to, built for walking in a spare room by one person a few times a week. It did that job adequately for a very long time and sold in numbers almost nothing else in the category has matched. It has since been discontinued, which changes the question from "should I buy one" to "what is one worth, and for how much longer will parts exist".',
+      bottomLine: "The new treadmill to buy instead of a used Cadence G 5.9: the same budget walking format, with a warranty in your name.",
+      description: "The Cadence G 5.9 is discontinued and not on Amazon US, so this card shows the closest new treadmill Amazon does sell. XTERRA lists the TRX1000 with a 2.25 HP motor, a 16 by 50-inch deck, three manual incline levels, a 10 mph top speed, a 250 lb rating, 12 programmes, no Bluetooth, a folding frame with lift assist and a weight of 103.6 lb, and TreadmillReviewGuru gives its sister model, the TR150, the same headline figures. That is the Weslo’s format almost exactly: the same motor rating, belt and top speed, one more incline position, 25 lb less rated capacity and a slightly lighter frame. XTERRA’s warranty is lifetime on the frame, one year on the motor and 90 days on the deck, parts and labour. XTERRA listed it at $499.99 on 5 November 2026, and Amazon showed $445.99 on 9 November 2026. Like the Weslo, it is a walking machine for one person a few times a week, not a runner’s treadmill.",
     },
   ],
   sections: [
@@ -63,6 +60,9 @@ export default {
       products: true,
       heading: 'Why It Sold in Those Numbers',
       html: `          <p>
+            The Cadence G 5.9 is discontinued and not sold new on Amazon US, so the product card on this page shows the closest new treadmill Amazon does sell, XTERRA’s TRX1000; the review itself is about the Weslo.
+          </p>
+          <p>
             The Cadence G 5.9 was never the best treadmill at anything. It was the cheapest one
             from a recognisable manufacturer, available everywhere, light enough to handle alone,
             and adequate for walking — and that combination turns out to be what an enormous number

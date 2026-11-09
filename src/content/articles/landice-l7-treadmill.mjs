@@ -59,79 +59,78 @@ export default {
           find "L890CT" on any current listing. We searched the US Consumer Product Safety Commission’s
           recall database for Landice and found no recall. We have not tested any Landice treadmill. Prices
           are those on landice.com on 5 November 2026; dealer prices can differ. Landice is sold direct and
-          through dealers, not on Amazon; the Amazon buttons on this page run a search, and we earn a
-          commission on qualifying Amazon purchases.`,
+          through dealers, not on Amazon, so the product cards show the nearest Amazon-sold alternatives,
+          with the figures checked for our heavy duty, long-distance running and handrail treadmill
+          guides; we earn a commission on qualifying Amazon purchases.`,
   products: [
     {
-      id: 'landice-l7',
-      name: 'Landice L7',
-      category: 'Non-Folding Home and Light-Commercial Treadmill',
-      badge: 'The Model Reviewed',
-      amazonUrl: 'https://www.amazon.com/s?k=Landice+L7+Treadmill&tag=sktiger-20',
-      priceRange: '$5,429-$7,804 at Landice (5 Nov 2026)',
-      specs: '20 x 58 in. running area · 0.5-12 mph · 0-15% incline · 400 lb max user · 4 HP continuous-duty (lab rating)',
+      id: 'sole-tt8',
+      name: 'Sole TT8',
+      category: 'Closest on Amazon to the L7: a Non-Folding, 400 lb Light-Commercial Treadmill',
+      badge: 'Amazon Alternative',
+      priceRange: 'About $2,500 (Amazon, 6 Nov 2026)',
+      specs: '4.0 HP · 22 x 60 in. · 0.5–12 mph · -6% to 15% incline · 400 lb capacity · non-folding · 15.6 in. touchscreen',
       pros: [
-        'Rated for 400 lb on an aluminium frame that does not rust',
-        'Lifetime parts warranty on the residential version, per Landice',
-        'Three consoles and an orthopedic belt option, so you pay only for what you use',
-        'A 1,000 lb-thrust incline motor and a reversible 1-inch deck',
+        'Non-folding frame with the same 400 lb capacity as the L7, per SOLE',
+        'A 22 x 60 in. running surface, wider and longer than the L7’s 20 x 58 in.',
+        'Decline to -6% as well as 15% incline',
+        'About half the L7’s starting price',
       ],
       cons: [
-        'From $5,429, several times the price of a good folding home treadmill',
-        'A 58-inch deck, shorter than the 60 inches usually advised for tall runners',
-        'Does not fold, and ships at 345 lb',
-        'One year of labour, and warranty terms differ between Landice and a dealer listing',
+        'Does not fold, and weighs more than 300 lb',
+        'Tops out at 12 mph, the same as the L7',
+        'Published warranty terms differ between sources and are not the L7’s lifetime parts cover; check them before buying',
       ],
       bottomLine:
-        'Worth it if you want a treadmill that lasts decades, are heavy or share it, or need clinical features; most home runners get more machine per dollar elsewhere.',
+        'The Amazon-sold treadmill closest to the L7’s idea — non-folding, 400 lb, built for heavy use — at about half the price, without Landice’s warranty record.',
       description:
-        'The L7 has a 20 by 58-inch running area on a 1-inch reversible deck, a 4 HP continuous-duty drive motor that Landice footnotes as a laboratory rating limited in practice by household electrical supply, a speed range of 0.5 to 12 mph and electric incline to 15% from a 1,000 lb-thrust motor. Maximum user weight is 400 lb, the footprint is 35 by 76 inches and the shipping weight 345 lb. It runs on a standard 110 V, 15 A supply. Buyers choose the Pro Sports, Achieve or Elite console and a standard or orthopedic belt, and can add a tablet or TV mount. On 5 November 2026 Landice listed it from $5,429 (Pro Sports, standard belt) to $7,804 (Elite, orthopedic belt, TV mount), with a promotion of free delivery, installation and orthopedic belt ending that day.',
+        'Landice sells the L7 direct and through dealers, not on Amazon, so the cards on this page show the nearest machines Amazon does sell. For the L7 that is SOLE’s light-commercial TT8. The Amazon listing gives a 4.0 HP motor, a 22 x 60 in. running surface, a 0.5 to 12 mph speed range, an incline and decline range of -6 to 15 and a 15.6 in. touch screen, with programs including Hill, Fat Burn, HIIT, 10K and heart-rate control. SOLE’s own site adds a non-folding frame and a 400 lb user capacity. On paper it matches the L7’s rating and top speed with a bigger deck and decline; what it does not have is the L7’s aluminium frame, its lifetime parts warranty and Landice’s clinical record. Published warranty terms differ: one SOLE comparison page gives lifetime frame and motor cover with two years on parts and one on labour, while other sources describe longer terms, so confirm them with SOLE. It weighs more than 300 lb, so place it once and leave it. Amazon showed it at about $2,500 on 6 November 2026.',
     },
     {
-      id: 'landice-l8',
-      name: 'Landice L8',
-      category: 'Long-Deck Version for Tall and Heavy Runners',
-      badge: 'Bigger Deck',
-      amazonUrl: 'https://www.amazon.com/s?k=Landice+L8+Treadmill&tag=sktiger-20',
-      priceRange: '$6,329-$8,904 at Landice (5 Nov 2026)',
-      specs: '22 x 63 in. running area · 0.5-12 mph · 0-15% incline · 500 lb max user · 4 HP continuous-duty (lab rating)',
+      id: 'spirit-xt485',
+      name: 'Spirit XT485',
+      category: 'Closest on Amazon to the L8: a 22-Inch Deck for Bigger Runners',
+      badge: 'Amazon Alternative',
+      priceRange: 'About $2,649 (Amazon, 6 Nov 2026)',
+      specs: '22 x 60 in. deck · 4.0 HP · 0.5–12 mph · 15 incline levels · folds · about 289 lb',
       pros: [
-        'A 22 by 63-inch running area, among the largest on a home treadmill',
-        'Rated for 500 lb',
-        'Same consoles, motor rating and residential warranty as the L7',
+        'The same 22-inch belt width as the L8, on a 60-inch deck',
+        'Lifetime frame, motor and deck warranty plus ten years on parts on Spirit’s US residential terms',
+        'A heavy, rigid frame for a folding machine, at about 289 lb by Spirit’s figure',
+        'Speed and incline toggles on the handlebars, and Bluetooth for apps',
       ],
       cons: [
-        '$900 more than the L7 with the same console and belt',
-        'Seven inches longer, at 35 by 83 inches',
-        'A higher step-up than the L7, per one reviewer',
+        'Three inches shorter than the L8’s 63-inch deck',
+        'Spirit gives a 425 lb rating but one retailer gave 350 lb, against the L8’s 500 lb',
+        'A 9-inch LCD, no touchscreen, and tall when folded',
       ],
       bottomLine:
-        'Pay the extra if you are tall, heavy or a long-striding runner; otherwise the L7 does the same job for less.',
+        'For a bigger runner who wants a 22-inch deck and a long warranty on Amazon, if the L8’s 500 lb rating and 63-inch deck are more than you need.',
       description:
-        'The L8 is the L7 with a bigger deck. Landice lists a 22 by 63-inch running area, a 500 lb maximum user weight, the same 4 HP continuous-duty laboratory motor rating, 0.5 to 12 mph and 15% incline, a 35 by 83-inch footprint and a 435 lb shipping weight. Treadmill Review Guru gives 3.5-inch rollers against the L7’s 2.5-inch. The same three consoles and belt options apply; on 5 November 2026 Landice listed it from $6,329 to $8,904.',
+        'The L8 is sold by Landice and its dealers, not on Amazon. The closest Amazon-sold treadmill for a tall or heavier runner is Spirit Fitness’s XT485. The Amazon listing gives a 22 by 60-inch running belt, a 4.0 HP motor, a 9-inch backlit LCD, direct speed and incline buttons, handlebar toggles and Bluetooth for the Spirit Fit app; Spirit’s specification adds 0.5 to 12 mph, 15 levels of electronic incline, a 7-inch step-up height, a 43-inch folded length and an item weight of about 289 lb. The US residential warranty is lifetime on the frame, motor and deck, ten years on parts and one year of labour. On capacity, Spirit and independent coverage give 425 lb, but one US retailer’s FAQ gave 350 lb, so we have left the figure off the card; either way it is below the L8’s 500 lb. Its deck is three inches shorter than the L8’s, and unlike the Landice it folds. Amazon listed it at $2,649 on 6 November 2026.',
     },
     {
-      id: 'landice-l7-rtm',
-      name: 'Landice L7 Rehabilitation Treadmill',
-      category: 'Clinical Version with Medical Handrails',
-      badge: 'Rehab Version',
-      amazonUrl: 'https://www.amazon.com/s?k=Landice+L7+Rehabilitation+Treadmill&tag=sktiger-20',
-      priceRange: '$5,429-$6,829 at Landice (5 Nov 2026)',
-      specs: '20 x 58 in. walking area · 15% incline · 400 lb max user · extended medical handrails · reverse option',
+      id: 'exerpeutic-senior-fitness-treadmill',
+      name: 'Exerpeutic Senior Fitness Treadmill',
+      category: 'Closest on Amazon to the L7 RTM: Full-Length Rails and a Slow Start',
+      badge: 'Amazon Alternative',
+      priceRange: 'About $399 (Amazon, 6 Nov 2026)',
+      specs: 'Full-length padded side rails plus front rail · 0.3–4 mph in 0.1 mph steps · 43.5 x 16 in. belt · 400 lb capacity · manual incline',
       pros: [
-        'Extended medical handrails and a low starting speed for rehabilitation',
-        'Optional reverse belt direction with a remote stop/start',
-        'Electrical isolation (300 micro-amp leakage kit) for clinical settings',
+        'Full-length side handrails with foam padding, plus an extra forward rail',
+        'Starts at 0.3 mph and changes in 0.1 mph steps',
+        'A 400 lb rating, the same as the L7 RTM, per the listing',
+        'A simple console: start, stop, faster, slower, with a backlit display',
       ],
       cons: [
-        'Landice’s own page gives two different starting speeds',
-        'A simpler control centre with no programmed workouts listed',
-        'Five years of parts rather than lifetime',
+        'Tops out at 4 mph, so it is for walking only',
+        'Incline is manual and the listing gives no range',
+        'No reverse belt, no electrical isolation and nothing built for clinical use',
       ],
       bottomLine:
-        'For clinics, and for home users recovering from injury who need full-length handrails and a very slow start; others should buy the residential L7.',
+        'For supported walking at home during recovery, at a fraction of the RTM’s price; clinics should still buy the Landice.',
       description:
-        'The L7 RTM is the L7 built for physical therapy. Landice lists the same 20 by 58-inch surface, 4 HP laboratory-rated motor, 15% incline and 400 lb rating, plus extended medical handrails, a "zero starting speed" and a 300 micro-amp isolation leakage kit, with an optional reverse-direction belt and remote stop/start and an optional 19-inch HDTV monitor and mount. Its warranty is five years on parts, three on the console, two on wear items and one on labour. On 5 November 2026 Landice listed it from $5,429 (standard) to $6,829 (reverse with HDTV).',
+        'The L7 RTM is sold by Landice and its dealers, not on Amazon. For a home user who wants its two main features — rails to hold the whole length of the deck and a very slow start — the closest machine Amazon sells is Exerpeutic’s Senior Fitness Treadmill. The Amazon listing describes full-length side handrails with soft foam padding and an extra forward rail, a speed range of 0.3 to 4 mph adjusted in 0.1 mph steps, a 43.5 by 16-inch belt, six shock-absorbing deck cushions, a 400 lb maximum user weight, a backlit LCD and a console reduced to start, stop and speed up or down. It also has a manual incline for a gentle slope. It is a walking treadmill for home use, with a far smaller deck than the RTM and none of its clinical features, such as the reverse belt option or the isolation kit. The listing describes a low step-up height without a figure, so measure or ask the seller if stepping up is a concern. Amazon listed it at $399 on 6 November 2026.',
     },
   ],
   sections: [
@@ -156,6 +155,12 @@ export default {
             rehabilitation treadmill at home. If you mostly want a good running treadmill, our
             <a href="/landice-treadmills/" class="text-[#0F62FE] font-medium">Landice brand guide</a>
             and the alternatives below explain where your money goes further. We have not tested the L7.
+          </p>
+          <p>
+            Landice sells its treadmills direct and through dealers, not on Amazon, so the cards below show
+            the nearest alternatives Amazon does sell: the SOLE TT8 for the L7, the Spirit XT485 for the L8
+            and Exerpeutic’s Senior Fitness Treadmill for the L7 RTM. None of them is a Landice, and the
+            L7’s own figures are in the specification table that follows.
           </p>`,
     },
     {
@@ -320,8 +325,8 @@ export default {
       html: `          <p>
             Landice sells direct through its online store and through a network of specialty fitness dealers;
             its store has a dealer finder and a sales line, (973) 927-9010, and accepts HSA and FSA payment.
-            We could not find the L7 sold new on Amazon, so the Amazon buttons on this page are searches that
-            may only turn up similar machines.
+            We could not find the L7 sold new on Amazon, so the Amazon buttons on this page go to the
+            closest alternatives Amazon does sell, not to a Landice.
           </p>
           <ol>
             <li><strong>Price the configuration, not the base.</strong> The console and belt move the price by up to $2,125 on an L7.</li>
@@ -366,7 +371,7 @@ export default {
             share the machine with someone much larger.
           </p>
           <p>
-            <strong>Buy the L7 RTM</strong> if you or a patient need full-length handrails, a very slow start or
+            <strong>Buy the L7 RTM</strong> if you or a patient need <a href="/best-treadmills-with-handrails/" class="text-[#0F62FE] font-medium" data-autolink>full-length handrails</a>, a very slow start or
             a reversing belt.
           </p>
           <p>
@@ -399,7 +404,7 @@ export default {
     },
     {
       q: 'Can you buy a Landice L7 on Amazon?',
-      a: 'We could not find it sold new on Amazon. Landice sells through its own online store and specialty fitness dealers, and accepts HSA and FSA payment.',
+      a: 'We could not find it sold new on Amazon. Landice sells through its own online store and specialty fitness dealers, and accepts HSA and FSA payment. The closest non-folding, 400 lb treadmill we found on Amazon is the SOLE TT8, which is not a Landice and has a different warranty.',
     },
   ],
   mistakesHeading: 'Common Mistakes Buying a Landice L7',

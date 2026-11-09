@@ -35,7 +35,10 @@ export default {
           bankruptcy-sale coverage), and model figures from TreadmillReviews.com, USA Home Gym, Garage Gym
           Reviews and a Schwinn-hosted Nautilus specification page seen in search results. Discontinued-model
           figures come from old listings and reviews, several of which disagree; conflicts are set out in the
-          text and kept off the cards. Prices are those shown on the day and change often. We have not tested
+          text and kept off the cards. On 9 November 2026 we replaced the used Nautilus T614 card, which
+          cannot be bought on Amazon, with the Schwinn 810, whose figures are those checked for our Schwinn
+          guide, and the Bowflex T6 and T9 cards with the Horizon 7.0 AT and 7.4 AT, whose figures are those
+          checked for our budget and heavy-duty treadmill guides. Prices are those shown on the day and change often. We have not tested
           any of these treadmills. As an Amazon Associate we earn from qualifying purchases; that does not
           change what we say.`,
   lead: `Searches for "Nautilus treadmill" are still common, and so are the machines: plenty of T614s, T616s
@@ -48,54 +51,47 @@ export default {
           recalled unit apart, and which current Bowflex and Schwinn treadmills are the closest replacements.`,
   products: [
     {
-      id: 'bowflex-t6',
-      name: 'Bowflex T6',
-      category: 'Closest Current Replacement for the T616',
-      badge: 'Best Replacement',
-      reviewUrl: '/bowflex-t6-treadmill/',
-      priceRange: '$999 sale ($1,299 list) at Bowflex on 5 Nov 2026',
-      amazonUrl: 'https://www.amazon.com/s?k=Bowflex+T6+Treadmill&tag=sktiger-20',
-      specs: '20 x 60 in. running path · 0-12 mph · 15 levels of motorized incline · 325 lb max user · folding',
+      id: "horizon-7-0-at",
+      name: "Horizon 7.0 AT",
+      category: "Closest on Amazon to the Bowflex T6 (and the T616)",
+      badge: "Closest on Amazon",
+      reviewUrl: "/horizon-7-0-at-treadmill/",
+      priceRange: "Around $1,099",
+      specs: "20 x 60 in. deck · 0.5–12 mph · 0–15% incline · 325 lb capacity · hydraulic fold",
       pros: [
-        'The same 20 by 60-inch running path the T616 and T618 had, from the company that bought Bowflex',
-        'A 325 lb user rating, above the T616’s 300 lb',
-        'Folds, like the Nautilus models it replaces',
-        'Bowflex lists a lifetime motor warranty on its treadmill page',
+        "The same 20 by 60-inch deck, 12 mph, 15% incline and 325 lb rating as the Bowflex T6",
+        "From Johnson Health Tech, the group that now owns Bowflex and Schwinn",
+        "Lifetime frame and motor warranty plus three years on parts",
+        "QuickDial speed and incline controls on the handlebars",
       ],
       cons: [
-        'Bowflex quotes no motor horsepower on its treadmill page',
-        'The sale price ran to 14 November 2026; the list price is $1,299',
-        'App features lean on a paid JRNY membership',
+        "Well over 250 lb assembled, so delivery and moving need planning",
+        "One year of labour, and Horizon says it is not compatible with GFCI outlets",
+        "A plain LCD console with no built-in classes",
       ],
-      bottomLine:
-        'The machine most T616 owners would buy today: same deck, more capacity, new warranty, at about the T616’s old price.',
-      description:
-        'The T6 is Bowflex’s entry treadmill and the nearest current equivalent to the Nautilus T616. Bowflex’s US treadmill page lists a 20 by 60-inch running path, 0 to 12 mph, 15 levels of motorized incline and a 325 lb maximum user weight; our full review cross-checked those figures against independent coverage. On 5 November 2026 Bowflex listed it at $999 on sale, down from $1,299, with the sale running to 14 November.',
+      bottomLine: "The T6’s figures in a Horizon you can buy on Amazon: the machine most T616 owners could order there today.",
+      description: "The Bowflex T6 is sold by Bowflex and its retailers rather than on Amazon, so this card shows the closest machine we could find there, and it is close: the Horizon 7.0 AT comes from the same Johnson Health Tech group and matches the T6 figure for figure on the things that mattered on the T616. Horizon lists a 20 by 60-inch three-zone cushioned deck, 0.5 to 12 mph, 0 to 15% incline driven by a 500 lb-thrust incline motor, a 325 lb maximum user weight and hydraulic folding, and an independent review agrees on each, including the warranty: lifetime on frame and motor, three years on parts and one year on labour. That is the T616's deck with 25 lb more capacity, as on the T6. The dials on the handlebars change speed and incline without reaching for the console. It is heavy, at well over 250 lb assembled. Horizon had it in stock at $1,099 on 15 October 2026, against a $2,100 compare-at price we would ignore, and Amazon listed it at the same $1,099 in early November.",
     },
     {
-      id: 'bowflex-t9',
-      name: 'Bowflex T9',
-      category: 'The Step Up, Closest to the T618',
-      badge: 'Best for Running',
-      reviewUrl: '/bowflex-t9-treadmill/',
-      priceRange: '$1,499 sale ($1,799 list) at Bowflex on 5 Nov 2026',
-      amazonUrl: 'https://www.amazon.com/s?k=Bowflex+T9+Treadmill&tag=sktiger-20',
-      specs: '22 x 60 in. running path · 0-12 mph · 15 levels of motorized incline · 350 lb max user · folding',
+      id: "horizon-fitness-7-4-at",
+      name: "Horizon Fitness 7.4 AT",
+      category: "Closest on Amazon to the Bowflex T9 (and the T618)",
+      badge: "Closest on Amazon",
+      priceRange: "About $1,588 (Amazon, 6 Nov 2026)",
+      specs: "22 x 60 in. deck · 3.5 CHP continuous-duty motor · 0.5–12 mph · 0–15% incline · 350 lb max user · folds",
       pros: [
-        'A 22-inch-wide path, two inches wider than any Nautilus treadmill',
-        'The same 350 lb rating the T618 carried',
-        'Priced on the day at about what the T618 cost new',
-        'Works with third-party apps as well as JRNY, according to independent coverage',
+        "The same 22 by 60-inch deck and 350 lb rating as the Bowflex T9, and the T618’s capacity",
+        "A continuous-duty 3.5 CHP motor and a 500 lb-thrust incline motor, per the listing",
+        "QuickDial controls and one-touch keys for fast interval changes",
+        "No subscription required; works with apps over Bluetooth",
       ],
       cons: [
-        'Bowflex’s treadmill page lists no motor rating',
-        '$500 more than the T6 at sale prices',
-        'Heavier and larger than the T6',
+        "About $90 more than the T9’s Bowflex sale price on the day we checked",
+        "A folding frame; heavy daily use favours a non-folding machine",
+        "The listing does not state the warranty; check Horizon’s current terms",
       ],
-      bottomLine:
-        'The better pick for a former T618 owner who runs: the same capacity, a wider deck and a current warranty.',
-      description:
-        'The T9 is the middle of Bowflex’s three treadmills. Bowflex’s treadmill page lists a 22 by 60-inch running path, 0 to 12 mph, 15 levels of motorized incline and a 350 lb maximum user weight; our review cross-checked the deck and capacity against independent sources and an authorised retailer. On 5 November 2026 it was $1,499 on sale at Bowflex, from $1,799; Johnson Fitness, Johnson Health Tech’s own retail chain, showed $1,799 in search results.',
+      bottomLine: "The better Amazon pick for a former T618 owner who runs: the T9’s wide deck and 350 lb rating, from the same parent group.",
+      description: "The Bowflex T9 is sold by Bowflex and its retailers rather than on Amazon. The Horizon 7.4 AT, from the same Johnson Health Tech group, is the closest match we found there. The Amazon listing gives a 22 by 60-inch deck with three-zone variable response cushioning, a 350 lb maximum user weight, assembled dimensions of 76 by 37 by 63 inches, a speed range of 0.5 to 12 mph, an incline of 0 to 15%, and a RapidSync drive system rated at 3.5 CHP that it describes as a continuous-duty motor, paired with a 500 lb-thrust incline motor; Horizon's own listing and independent coverage agree on the deck, speed, incline and capacity. Those are the T9's deck and capacity, and the T618's 350 lb, and unlike Bowflex's treadmill page this listing states a continuous motor rating. The listing does not state the warranty, so check Horizon's current terms before ordering; on Horizon's own store it carries a lifetime frame and motor warranty with five years on parts. Amazon listed it at $1,587.92 on 6 November 2026.",
     },
     {
       id: 'bowflex-t16',
@@ -145,28 +141,28 @@ export default {
         'The 815 is the top of Schwinn Fitness’s four current treadmills. Schwinn’s US store lists a 20 by 60-inch running area, speeds up to 12 mph, 0 to 12% incline, eight workouts, Bluetooth speakers and app links to JRNY, Peloton and Zwift, with a 325 lb maximum user weight, 76 by 34 by 57 inches assembled and 187 lb; a January 2026 deal listing agreed on 12 mph and 12%. Schwinn lists 10 years on the frame and drive motor and one year on parts, electronics and labour. It was $1,099 on 5 November 2026.',
     },
     {
-      id: 'nautilus-t614',
-      name: 'Nautilus T614',
-      category: 'The One Nautilus Not Recalled, Sold Used Only',
-      badge: 'Used Only',
-      priceRange: 'Used only; no reliable price data',
-      amazonUrl: 'https://www.amazon.com/s?k=Nautilus+T614+Treadmill&tag=sktiger-20',
-      specs: '20 x 55 in. running surface · 2.75 CHP · up to 12 mph · 300 lb max user · folding',
+      id: "schwinn-810",
+      name: "Schwinn 810",
+      category: "Closest New Match for the T614",
+      badge: "Closest to the T614",
+      priceRange: "$899 at Schwinn Fitness on 5 Nov 2026",
+      specs: "20 x 55 in. belt · 0-10 mph · 0-10% motorized incline · 275 lb max user · SoftDrop folding · 155 lb",
       pros: [
-        'Not covered by the 2022 recall, which named only T616 and T618 serial ranges',
-        'A 300 lb user rating, generous for its size',
-        'Often offered cheaply second-hand',
+        "The same 20 by 55-inch belt as the T614, bought new with a warranty",
+        "Schwinn and two independent reviews agree on its key figures",
+        "Folds with a SoftDrop assist and stows to 39.5 inches long",
+        "16 programs and partial FTMS app connectivity",
       ],
       cons: [
-        'Discontinued for years; the brand behind it no longer exists as a treadmill seller',
-        'A 55-inch deck, short for running',
-        'Parts must come from third-party suppliers',
-        'Sources disagree on its incline range and original warranty',
+        "A 10 mph top speed and 10% incline, both below what the T614 was listed with",
+        "275 lb user limit, below the T614’s 300 lb",
+        "Motor ratings conflict: 2.6 CHP in one review, 1.5 HP at a retailer; Schwinn gives none",
+        "One year on parts, electronics and labour",
       ],
       bottomLine:
-        'Only worth buying as a cheap walking treadmill that runs well in front of you; budget for no support.',
+        "The new treadmill to buy if you liked the T614: the same 20 by 55-inch deck from the same family, with a warranty, for a walker under 275 lb.",
       description:
-        'The T614 was Nautilus’s entry folding treadmill. TreadmillReviews.com and USA Home Gym agree on a 20 by 55-inch running surface, a 2.75 continuous horsepower motor, a 12 mph top speed and a 300 lb user rating, and that Nautilus discontinued it. Its incline is given as 0 to 12% in some listings; the original warranty is variously quoted as 10 years on frame and motor with two years mechanical, or with 90 days of labour. We found no dependable used-price data; private sales vary too much to quote.',
+        "A used T614 is not something Amazon sells, so this card shows the new machine closest to it: Schwinn's 810, from the Schwinn brand that Nautilus Inc. owned and Johnson Health Tech now sells, and the one Schwinn with the T614's 20 by 55-inch deck. Schwinn's US store lists a 20 by 55-inch belt, 0 to 10 mph, 0 to 10% motorized incline, a 275 lb maximum user weight, 69.1 by 35.6 by 56.7 inches assembled, 39.5 inches long folded and 155 lb, on a standard 110-120 V outlet; Garage Gym Reviews and Best Buy's listing agree on the belt, speed, incline and capacity. Against the T614 it gives up some top speed and user rating, and gains a current warranty and a maker that answers the phone: Schwinn lists 10 years on the frame and drive motor and one year on mechanical parts, electronics and labour. Like the T614, it is a walking and light-jogging machine, not a runner's. It was $899 on Schwinn's store on 5 November 2026; the figures are those checked for our Schwinn treadmill guide.",
     },
   ],
   sections: [
@@ -358,7 +354,11 @@ export default {
       html: `          <p>
             The current Bowflex and Schwinn treadmills come from the same lineage as the Nautilus T-series: Nautilus
             Inc. built all three brands, and Johnson Health Tech now owns Bowflex and Schwinn. The cards below set out
-            those machines with the prices on 5 November 2026, plus the T614 for anyone set on a used Nautilus.
+            those machines with the prices on 5 November 2026. A used T614 cannot be bought on Amazon, so
+            its card shows the Schwinn 810, the current machine with the T614's 20 by 55-inch deck. The Bowflex
+            T6 and T9 are sold by Bowflex and its retailers rather than on Amazon, so their cards show the
+            closest Amazon alternatives, both Horizons from the same parent group: the 7.0 AT, with the T6's deck
+            and capacity, and the 7.4 AT, with the T9's.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
             <thead>
@@ -420,8 +420,8 @@ export default {
       html: `          <p>
             The T616 and T618 were sold on Amazon until 2021, and the recall notice lists Amazon among the sellers. We
             would not buy one there now: any listing still offering a new T616 or T618 would be old stock or
-            third-party resale of a recalled product, and the T614 has long been unavailable. The Amazon buttons on
-            the Nautilus card go to a tagged search, which mostly returns replacement parts. Bowflex and Schwinn
+            third-party resale of a recalled product, and the T614 has long been unavailable. This page no longer cards
+            a Nautilus model for that reason; the Schwinn 810 card takes the T614's place. Bowflex and Schwinn
             treadmills appear on Amazon at times, but the prices above are from Bowflex's and Schwinn's own stores,
             which also handle warranty registration directly. Our guide to
             <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">buying a treadmill on Amazon</a>

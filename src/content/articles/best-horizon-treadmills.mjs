@@ -92,28 +92,25 @@ export default {
         "The 7.4 AT is the middle of the Studio Series, and what it adds over the 7.0 AT is mostly physical. Horizon lists a 22 by 60-inch deck, 0.5 to 12 mph, 0 to 15% incline, a 350 lb maximum user weight, one-step hydraulic folding and an 8.75-inch step-on height; a Johnson Fitness and Wellness listing and independent coverage agree on the deck, speed, incline and capacity. The console is an 8.25-inch LCD with a 16-digit LED message line and ten programs including Sprint 8, and Horizon includes a Bluetooth heart rate monitor. The larger change is the warranty: five years on parts and two years of labour, against three and one on the 7.0 AT, alongside the same lifetime frame and motor cover. On 13 October 2026 Horizon's store listed it at $1,799, or $1,499 with a promotional code, and expected to ship it the week of 26 October. One independent review quotes a 3.5 CHP motor; Horizon does not publish a figure, so we left it out. At 318 lb it is heavy for a folding machine.",
     },
     {
-      id: 'horizon-7-8-at',
-      name: 'Horizon 7.8 AT',
-      category: 'Best heavy-duty Horizon',
-      badge: 'Premium Pick',
-      amazonUrl: 'https://www.amazon.com/s?k=Horizon+7.8+AT+Treadmill&tag=sktiger-20',
-      priceRange: 'Around $1,900–$2,000',
-      specs: '22 x 60 in. deck · 0.5-12 mph · 0-15% incline · 375 lb capacity · Bluetooth FTMS',
+      id: "spirit-xt485",
+      name: "Spirit XT485",
+      category: "Closest on Amazon to the Horizon 7.8 AT",
+      badge: "Closest on Amazon",
+      priceRange: "About $2,649 (Amazon, 6 Nov 2026)",
+      specs: "22 x 60 in. deck · 4.0 HP · 0.5–12 mph · 15 incline levels · folds · about 289 lb",
       pros: [
-        'A 375 lb maximum user weight, the highest Horizon offers',
-        'A thicker 2.2 mm belt than the 1.6 mm belt on the 7.0 AT and 7.4 AT',
-        'A 9.3-inch colour display and a Bluetooth chest strap included',
-        'Five years on parts and two years of labour, with lifetime frame and motor cover',
+        "Lifetime frame, motor and deck warranty plus ten years on parts on Spirit’s US residential terms",
+        "A full 22 by 60-inch deck and a 4.0 HP motor",
+        "A heavy, rigid frame for a folding machine, at about 289 lb by Spirit’s figure",
+        "Speed and incline toggles on the handlebars, and Bluetooth for apps",
       ],
       cons: [
-        'Only a few hundred dollars more than the 7.4 AT on paper, but the speed and incline are unchanged',
-        'About 330 lb assembled, so the hydraulic fold does not make it portable',
-        'The colour screen is a data display, not a touchscreen; classes run on your own tablet',
+        "Spirit gives a 425 lb rating but one retailer gave 350 lb, so confirm it on the unit you buy",
+        "Only one year of labour, the short part of a long warranty",
+        "A 9-inch LCD, no touchscreen, and tall when folded",
       ],
-      bottomLine:
-        'For heavier runners and households that will use the machine every day, and want the highest weight rating and thickest belt Horizon makes.',
-      description:
-        "The 7.8 AT is the top of Horizon's range, and it is the 7.4 AT built more heavily rather than a faster or steeper machine. Horizon lists a 22 by 60-inch deck, 0.5 to 12 mph, 0 to 15% incline, a 375 lb maximum user weight, a 2.2 mm belt, aluminium side rails and one-step hydraulic folding, and independent coverage agrees on the deck, speed, incline and capacity. The console is a 9.3-inch colour TFT screen with a 16-digit LED line, the same ten programs as the 7.4 AT, and a Bluetooth chest strap in the box. It shares the 7.4 AT's warranty: lifetime frame and motor, five years on parts and two of labour. The case for paying more than the 7.4 AT is the extra 25 lb of rated capacity and the thicker belt, both of which matter for a heavy user or heavy use and neither of which matters much otherwise. On 13 October 2026 Horizon's store listed it at $1,999, or $1,899 with a code, shipping the week of 26 October. Reviewers quote a 4.0 horsepower motor, which Horizon does not publish.",
+      bottomLine: "The Amazon alternative for heavier users and daily running: a 22 by 60-inch deck, a heavy folding frame and ten years on parts. Confirm the weight rating on the unit you buy.",
+      description: "The 7.8 AT, Horizon's heavy-duty model, is sold through Horizon's own store and retailers rather than on Amazon US, so this card shows the closest heavy-duty folding treadmill that Amazon does sell, with the figures checked for our heavy-duty treadmill guide. The XT485 is Spirit Fitness's best-known folding treadmill and, like the 7.8 AT, a heavy folding machine with a simple console and no subscription. The Amazon listing gives a 22 by 60-inch running belt, a 4.0 HP motor, a 9-inch backlit LCD, direct speed and incline buttons, handlebar toggles and Bluetooth for the Spirit Fit app; Spirit's specification, checked for an earlier guide on this site, adds 0.5 to 12 mph, 15 levels of electronic incline, a 7-inch step-up height, a 43-inch folded length and an item weight of about 289 lb. The US residential warranty is lifetime on the frame, motor and deck, ten years on parts and one year of labour, which is longer than Horizon's parts cover. On capacity, Spirit and independent coverage give 425 lb, but one US retailer's FAQ gave 350 lb and the UK version is rated lower, so we have left the figure off the card; check the label on the unit you receive. It is heavy and tall when folded, and the console is basic. Amazon listed it at $2,649 on 6 November 2026.",
     },
     {
       id: 'horizon-t202',
@@ -197,7 +194,9 @@ export default {
       products: true,
       html: `          <p>
             This is every treadmill on Horizon's US store as of 13 October 2026, ranked by how well
-            each suits the buyer it is aimed at. Two of them were showing future ship dates and one
+            each suits the buyer it is aimed at. The 7.8 AT is sold by Horizon and its retailers
+            rather than on Amazon US, so its card shows the nearest heavy-duty alternative Amazon
+            sells, a Spirit XT485; the text below still covers the 7.8 AT itself. Two of them were showing future ship dates and one
             was sold out on the day we checked, and we have said so on each card rather than drop
             them, because Horizon's stock moves quickly and a ship date a fortnight away is not a
             reason to buy something worse. Names you may still see elsewhere — the T303, the 5.0 AT,

@@ -13,9 +13,9 @@ const PRODUCTS = [
     brand: "SOLE",
     category: "Best Elliptical for Home Overall",
     badge: "Best Overall",
-    amazonUrl: "https://www.amazon.com/s?k=SOLE+E35+Elliptical&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0HFSTZX3X?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
-    image: null,
+    image: {"url":"https://m.media-amazon.com/images/I/31HXgp0-tML._SL500_.jpg","width":500,"height":333},
     reviewUrl: null,
     priceRange: "$1,699–$1,799",
     priceBounds: {"low":1699,"high":1799},
@@ -40,9 +40,9 @@ const PRODUCTS = [
     brand: "Horizon Fitness",
     category: "Best Budget Home Elliptical",
     badge: "Best Budget",
-    amazonUrl: "https://www.amazon.com/s?k=Horizon+Fitness+EX-59+Elliptical&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B07QRCSBY6?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
-    image: null,
+    image: {"url":"https://m.media-amazon.com/images/I/31iHFcKjvPL._SL500_.jpg","width":500,"height":351},
     reviewUrl: null,
     priceRange: "$799–$999",
     priceBounds: {"low":799,"high":999},
@@ -121,9 +121,9 @@ const PRODUCTS = [
     brand: "SOLE",
     category: "Best Elliptical for Tall Users",
     badge: "Adjustable Stride",
-    amazonUrl: "https://www.amazon.com/s?k=SOLE+E95S+Elliptical&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B01MRWIV9Y?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
-    image: null,
+    image: {"url":"https://m.media-amazon.com/images/I/31NRPzIJvaL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "About $2,700",
     priceBounds: {"low":2700,"high":2700},
@@ -148,9 +148,9 @@ const PRODUCTS = [
     brand: "NordicTrack",
     category: "Best Connected Elliptical",
     badge: "Best Connected",
-    amazonUrl: "https://www.amazon.com/s?k=NordicTrack+X16+Elliptical&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0GW97744T?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
-    image: null,
+    image: {"url":"https://m.media-amazon.com/images/I/31hN9ZYQ53L._SL500_.jpg","width":498,"height":500},
     reviewUrl: null,
     priceRange: "$2,299–$2,999",
     priceBounds: {"low":2299,"high":2999},
@@ -331,10 +331,11 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
 
       <figure class="ed-hero">
         <div class="ed-hero-collage">
+          <a href="#sole-e35"><img src="https://m.media-amazon.com/images/I/31HXgp0-tML._SL500_.jpg" alt="SOLE E35" width="500" height="333" decoding="async" /></a>
+          <a href="#horizon-ex-59"><img src="https://m.media-amazon.com/images/I/31iHFcKjvPL._SL500_.jpg" alt="Horizon Fitness EX-59" width="500" height="351" decoding="async" /></a>
           <a href="#schwinn-411"><img src="https://m.media-amazon.com/images/I/41tQXV8F9FL._SL500_.jpg" alt="Schwinn 411 Compact Elliptical" width="500" height="500" decoding="async" /></a>
-          <a href="#schwinn-490"><img src="https://m.media-amazon.com/images/I/31Bs-DVvhML._SL500_.jpg" alt="Schwinn 490 Elliptical" width="500" height="500" decoding="async" /></a>
         </div>
-        <figcaption>Schwinn 411 Compact Elliptical · Schwinn 490 Elliptical</figcaption>
+        <figcaption>SOLE E35 · Horizon Fitness EX-59 · Schwinn 411 Compact Elliptical</figcaption>
       </figure>
 
       <div class="ed-body prose prose-lg">
@@ -420,7 +421,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
           <h2>Our Picks at a Glance</h2>
 <p>
             Six machines, chosen to cover the realistic home budgets and the most common
-            constraints: a small room, a low ceiling, a tall user, a household of different
+            constraints: a small room, a <a href="/best-treadmills-for-low-ceilings/" class="text-[#0F62FE] font-medium" data-autolink>low ceiling</a>, a tall user, a household of different
             heights, and someone who wants guided workouts on a screen. The short version: the SOLE
             E35 for most people, the Horizon EX-59 if the budget stops under $1,000, and the
             Schwinn 411 if floor space is the problem.

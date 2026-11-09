@@ -34,13 +34,14 @@ export default {
           an October 2026 manual-treadmill comparison on ocdevel.com, and the product's own shipping
           specification. We searched the US Consumer Product Safety Commission's recall database for
           Bells of Steel and found no recall. Every figure on the Blitz card is one Bells of Steel and
-          the independent review agree on; where they differ we say so in the text. The AssaultRunner
-          Pro and SOLE C80 cards use specifications already cross-checked on this site in October 2026,
-          with prices checked again on 5 November. We have not tested the Blitz or any treadmill on this
+          the independent review agree on; where they differ we say so in the text. The Blitz and the
+          AssaultRunner Pro are not sold on Amazon, so the product cards show the nearest Amazon
+          alternatives: the Tru Grit Runner, the SOLE C80 and the SB Fitness CT400, with specifications
+          already cross-checked on this site for our curved, sprinting and Blitz guides in October and
+          November 2026. The AssaultRunner Pro's figures in the text were checked on this site in
+          October 2026, with its price checked again on 5 November. We have not tested the Blitz or any treadmill on this
           page, and none of these figures are our own measurements. Prices and stock are what the
-          sellers showed on 5 November 2026 and change often. Bells of Steel sells the Blitz direct;
-          the Amazon button on its card goes to a tagged Amazon search that may show only similar
-          machines. As an Amazon Associate we earn from qualifying purchases; it does not change what
+          sellers showed on 5 November 2026 and change often. Bells of Steel sells the Blitz direct. As an Amazon Associate we earn from qualifying purchases; it does not change what
           we say.`,
   lead: `Bells of Steel is better known for power racks, barbells and plate-loaded machines than for
           cardio, so the Blitz treadmill tends to be found by people already shopping its strength
@@ -83,7 +84,10 @@ export default {
       products: true,
       html: `          <p>
             Bells of Steel's specification table and Treadmill Review Guru's review agree on every
-            figure below. Where a figure comes from only one of them, the table says so.
+            figure below. Where a figure comes from only one of them, the table says so. Bells of
+            Steel sells the Blitz direct, not on Amazon, so the product cards in this section show the
+            nearest curved trainers that Amazon does sell, starting with the Tru Grit Runner, whose
+            sled-push resistance is closest to the Blitz's.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead>
@@ -294,29 +298,27 @@ export default {
   ],
   products: [
     {
-      id: 'bells-of-steel-blitz',
-      name: 'Bells of Steel Blitz Manual Treadmill',
-      category: 'Steep-Curve Manual Treadmill With Magnetic Resistance',
-      badge: 'Sprint & Sled Trainer',
-      priceRange: '$4,749.99 at Bells of Steel on 5 Nov 2026',
-      amazonUrl: 'https://www.amazon.com/s?k=Bells+of+Steel+Blitz+Manual+Treadmill&tag=sktiger-20',
-      specs: '65 x 17 in. curved deck · 17° curve · 6 magnetic levels · 400 lb max user · 325 lb · no outlet needed',
+      id: 'tru-grit-runner',
+      name: 'Tru Grit Runner Curved Manual Treadmill',
+      category: 'Closest on Amazon: Curved Trainer With Sled-Push Resistance',
+      badge: 'Closest on Amazon',
+      priceRange: '$2,250–$2,500',
+      specs: 'Curved deck · 6 resistance levels · 330 lb max user · steel and aluminum frame',
       pros: [
-        'Six magnetic resistance levels turn it from a sprint deck into a sled-push trainer',
-        'A 400 lb user rating, higher than the AssaultRunner Pro or SOLE C80',
-        'A 65-inch deck, the longest of the curved trainers we compare',
-        '200 bearings under rubber-coated aluminium slats, by Bells of Steel’s and a reviewer’s account',
+        'Six resistance levels like the Blitz, with the top two set up for sled-push simulation',
+        'Lifetime frame warranty, with 2 years on the belt, tread and monitor',
+        'About half the Blitz’s price, from an established fitness brand',
+        'Battery LCD shows time, distance, pace, speed, calories and interval modes',
       ],
       cons: [
-        'About $1,250 more than an AssaultRunner Pro and $2,350 more than a SOLE C80',
-        'One year on parts and five on the frame',
-        'A steep curve that suits sprints better than long steady runs',
-        'No Bluetooth app pairing described by the maker or the review',
+        'A 330 lb rating, 70 lb below the Blitz’s 400 lb',
+        'Running-surface size and machine weight are not consistently published, so check before ordering',
+        'One independent review criticises slat gaps and finish; another reports it is loud during sprints',
       ],
       bottomLine:
-        'For power and speed athletes who want resisted sprints and sled pushes on one 400 lb-rated machine, and can justify the price.',
+        'The Amazon alternative for a Blitz shopper who wants resisted sprints and sled pushes on one curved deck and is under 330 lb.',
       description:
-        'The Blitz is Bells of Steel’s premium curved trainer. Bells of Steel and Treadmill Review Guru agree on a 65 by 17-inch deck of rubber-coated aluminium slats on 200 bearings, a 17-degree curve, six levels of lever-set magnetic resistance, a 400 lb maximum user weight, a 325 lb machine weight, a 70 by 30 by 62-inch footprint and a warranty of five years on the frame and one on parts. The battery console shows time, pace, distance, speed, calories, watts and level, and heart rate with an ANT+ strap, according to the review. It ships by freight in a 355 lb crate and Bells of Steel recommends a ground-floor install. On 5 November 2026 the US store listed it at $4,749.99 against a stated $4,999.99.',
+        'Bells of Steel sells the Blitz direct, not on Amazon, so this card shows the curved trainer on Amazon that comes closest to its sprint-and-sled design. The Grit Runner from Tru Grit Fitness has six resistance levels that its US dealers describe as two running settings, two walking settings and two sled-push settings: for anyone who wants to drive the belt against heavy resistance with their hands on the rails, that is the same idea as the Blitz’s magnetic brake. It is rated for 330 lb users and carries a lifetime frame warranty with two years on the belt, tread and monitor, against the Blitz’s five years on the frame and one on parts. Prices in October 2026 ran from about $2,250 on sale to $2,495. Its running-surface size and machine weight vary between sources, so we have left them out; one independent review criticises wide gaps between slats and the general finish, and another notes it is loud when sprinting. This card refers to the standard Runner, not the Elite.',
     },
     {
       id: 'sole-c80',
@@ -342,28 +344,26 @@ export default {
         'The C80 is the closest like-for-like alternative to the Blitz: a self-powered curved deck with a magnetic brake. The figures cross-checked on this site in October 2026 give it a 62 by 19-inch slat belt, eight magnetic resistance levels, a 330 lb maximum user weight and a 261 lb machine weight, and its Bluetooth console connects to SOLE’s own app and third-party platforms. Its warranty is lifetime on the frame and one year on the deck, parts, electronics and labour, so its parts cover is no better than the Blitz’s. SOLE listed it at $2,399.99 on 5 November 2026.',
     },
     {
-      id: 'assaultrunner-pro',
-      name: 'AssaultRunner Pro',
-      reviewUrl: '/assaultrunner-pro-treadmill/',
-      category: 'The Best-Known Curved Trainer',
-      badge: 'No-Resistance Rival',
-      priceRange: '$3,499 at US dealers in November 2026',
-      amazonUrl: 'https://www.amazon.com/s?k=AssaultRunner+Pro&tag=sktiger-20',
-      specs: '17 x 62 in. curved slat surface · 350 lb max user · 280 lb · battery console with Bluetooth and ANT+',
+      id: 'sb-fitness-ct400',
+      name: 'SB Fitness CT400 Curved Treadmill',
+      category: 'Lower-Priced Curved Trainer on Amazon',
+      badge: 'Budget Rival',
+      priceRange: 'About $1,595 (Amazon, 6 Nov 2026)',
+      specs: 'Self-generated curved belt · 3 resistance levels · flexible track slats · no maximum speed',
       pros: [
-        'About $1,250 less than the Blitz',
-        'Three years on moving parts and a 150,000-mile belt warranty from Assault',
-        'The most widely reviewed curved trainer',
-        'Bluetooth and ANT+ console',
+        'About a third of the Blitz’s price',
+        'No maximum speed and immediate response to speed changes, per the listing',
+        'Three resistance levels for harder efforts',
+        'Flexible track slats that the maker says add shock absorption',
       ],
       cons: [
-        'No resistance setting for sled-style pushes',
-        'A 350 lb rating, against the Blitz’s 400 lb',
-        'Assault’s own store has shown it sold out at times this autumn',
+        'Three resistance levels, against six on the Blitz and eight on the SOLE C80',
+        'The Amazon listing does not give deck dimensions or user capacity',
+        'Basic digital display',
       ],
-      bottomLine: 'The safer buy if sprinting is the goal and sled pushes are not.',
+      bottomLine: 'For buyers who mainly want to sprint on a curved deck and would rather keep $3,000 than have the Blitz’s resistance range.',
       description:
-        'The AssaultRunner Pro is the curved trainer most buyers start with. Assault and independent reviews agree on a 17 by 62-inch slatted surface, a 350 lb maximum user weight and a 280 lb assembled weight, with a battery console that connects over Bluetooth and ANT+. It has no resistance setting, no incline and no fold. Its frame term differs between Assault’s current page (7 years) and dealers and reviews (5 years); moving parts are covered for three years and the belt for 150,000 miles. US dealers listed it at $3,499 in early November 2026.',
+        'This card replaces the AssaultRunner Pro, which is sold through Assault and its dealers rather than on Amazon; our AssaultRunner Pro review covers that machine. SB Fitness Equipment makes several curved trainers, and the CT400 is the least expensive one we found on Amazon US. Its listing describes a self-generated curved treadmill designed for running, walking, sport-specific training and HIIT, with no maximum speed, three resistance levels, flexible track slats that SB Fitness says add shock absorption, quick response to speed changes and a front display showing time, distance, speed, calories and total miles. What you give up against the Blitz is resistance range and published detail: the Amazon listing does not give the running-surface size, the user capacity or the machine’s weight, so ask the seller for those before ordering, and measure your space. Amazon showed the CT400 at about $1,595 on 6 November 2026, as checked for our sprinting treadmill guide.',
     },
   ],
   faqs: [

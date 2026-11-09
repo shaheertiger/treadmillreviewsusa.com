@@ -493,7 +493,7 @@ export default {
       name: 'Ekrin Athletics B37',
       category: 'Full-size massage gun with lifetime warranty',
       badge: 'Best Warranty',
-      amazonUrl: 'https://www.amazon.com/s?k=Ekrin+B37+Massage+Gun&tag=sktiger-20',
+      amazonUrl: 'https://www.amazon.com/dp/B0DFMPNXJ3?tag=sktiger-20',
       priceRange: '$187–$250',
       specs: '5 speeds, 1,400–3,200 RPM · up to 8 hr battery · 4 locking attachments · lifetime warranty (register within 30 days if not bought direct)',
       pros: [
@@ -510,7 +510,7 @@ export default {
       bottomLine:
         'The best value full-size gun here if you buy on sale and register the warranty the day it arrives.',
       description:
-        "Ekrin is a smaller brand that sells through its own store and through Amazon, which its warranty page names as an authorized retailer. The B37 is its long-standing core model. Ekrin and Torokhtiy, a retailer, agree on five speeds from 1,400 to 3,200 RPM, a battery rated for up to eight hours and four interchangeable attachments; the current version uses locking heads and USB-PD charging. Its strongest feature is the warranty: Ekrin offers a lifetime warranty against defects, but its warranty page states in capitals that a gun received as a gift or bought from Amazon or another retailer must be registered within 30 days of receipt, or the cover is void. Independent reviews quote a 12 mm amplitude and 56 pounds of stall force, but Ekrin's product page did not list either when we checked, so they are not on the card. A retailer lists it at 2.2 pounds; we could not confirm that with Ekrin. List price is $249.99; it was on sale at about $187 on the day.",
+        "Ekrin is a smaller brand that sells through its own store and through Amazon, which its warranty page names as an authorized retailer. The B37 is its long-standing core model. Ekrin and Torokhtiy, a retailer, agree on five speeds from 1,400 to 3,200 RPM, a battery rated for up to eight hours and four interchangeable attachments; the current version uses locking heads and USB-PD charging, and Amazon lists it as the B37v2. Its strongest feature is the warranty: Ekrin offers a lifetime warranty against defects, but its warranty page states in capitals that a gun received as a gift or bought from Amazon or another retailer must be registered within 30 days of receipt, or the cover is void. Independent reviews quote a 12 mm amplitude and 56 pounds of stall force, but Ekrin's product page did not list either when we checked, so they are not on the card. A retailer lists it at 2.2 pounds; we could not confirm that with Ekrin. List price is $249.99; it was on sale at about $187 on the day.",
     },
     {
       id: 'theragun-mini-3rd-gen',

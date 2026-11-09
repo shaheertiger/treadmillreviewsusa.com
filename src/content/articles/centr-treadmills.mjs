@@ -37,9 +37,10 @@ export default {
           Garage Gym Reviews' Runr-S and Perform Tread coverage (both seen only in search results; Costco
           refused our request and Garage Gym Reviews' pages would not load), other retailer listings in
           search results, trade-press reports of Centr's ownership and its HYROX partnership, and the US
-          Consumer Product Safety Commission's recall database. Figures on the product cards are those on
-          which Centr and at least one other source agree; conflicts are set out in the text and kept off the
-          cards. Prices are Centr's own on the day unless stated, and change often. We have not tested any
+          Consumer Product Safety Commission's recall database. Figures we give for Centr's machines are
+          those on which Centr and at least one other source agree; conflicts are set out in the text. Centr's
+          treadmills are not sold on Amazon, so the product cards show the closest Amazon alternatives, and
+          their figures are the ones checked for our curved, budget and NordicTrack treadmill guides. Prices are Centr's own on the day unless stated, and change often. We have not tested any
           Centr treadmill and have no relationship with Centr or HYROX. As an Amazon Associate we earn from
           qualifying purchases; that does not change what we say.`,
   lead: `Centr is better known as an app than as an equipment brand: Chris Hemsworth launched it in 2019 as a
@@ -51,76 +52,73 @@ export default {
           treadmills sold alongside them. This guide covers each one and what to check before you buy.`,
   products: [
     {
-      id: 'centr-x-hyrox-perform-tread',
-      name: 'Centr x HYROX Perform Tread',
-      category: 'Motorless Curved Treadmill, Official HYROX Race Treadmill',
-      badge: 'Best for HYROX',
-      priceRange: '$6,999 at Centr and Perform Better on 5 Nov 2026',
-      amazonUrl: 'https://www.amazon.com/s?k=Centr+x+HYROX+Perform+Tread&tag=sktiger-20',
-      specs: 'Motorless curved slat deck · 59 x 19 in. running area · 8 magnetic resistance levels · 396.8 lb (180 kg) max user · 400 lb machine weight',
+      id: 'sole-c80',
+      name: 'SOLE C80 Curved Manual Treadmill',
+      category: 'Closest on Amazon to the HYROX Perform Tread',
+      badge: 'Closest on Amazon',
+      priceRange: '$2,399.99 at SOLE on 5 Nov 2026',
+      specs: '62 x 19 in. slat belt · 8 magnetic levels · 330 lb max user · 261 lb',
       pros: [
-        'The treadmill used at HYROX races, so the closest home match to race-day running',
-        'Eight magnetic resistance levels, and a handlebar that converts it to a sled-push and pull station',
-        'Self-powered: no outlet needed',
-        'Consumer warranty: limited lifetime frame and belt, 7 years moving parts, 2 years labour',
+        'Eight magnetic resistance levels, the same count as the Perform Tread, for about a third of its price',
+        'A 19-inch belt, as wide as the Perform Tread’s',
+        'Bluetooth console that works with SOLE’s app and third-party platforms',
+        'Sold on Amazon as well as direct',
       ],
       cons: [
-        'About twice the price of a TrueForm Trainer or AssaultRunner Pro',
-        'Heavy (400 lb) with a large footprint, and its height is listed differently by different sellers',
-        'Very little independent review coverage; Garage Gym Reviews called it expensive, heavy and large',
+        'No sled-push handlebar like the Perform Tread’s',
+        'A 330 lb rating, below the Perform Tread’s 396.8 lb',
+        'One year on deck, parts, electronics and labour',
       ],
       bottomLine:
-        'Buy it if you are training for HYROX and want the race machine itself; otherwise a cheaper curved treadmill does the same job.',
+        'The nearest Amazon match to the Perform Tread: a self-powered curved deck with eight magnetic levels, without the race-machine name or the sled handlebar.',
       description:
-        'The Perform Tread is a motorless curved treadmill with extruded-aluminium slats topped in rubber, eight levels of magnetic resistance, and a multi-position handlebar that turns it into a sled-push and sled-pull station. Centr’s store and Perform Better, a US retailer, agree on a 59 by 19-inch running area, a 396.8 lb (180 kg) maximum user weight, a 400 lb (181.6 kg) assembled weight, a 74 by 42.5-inch footprint and the warranty: for home use, a limited lifetime warranty on the frame and belt, 7 years on moving parts and 2 years on labour. They disagree on height: Centr gives 67.3 inches and Perform Better 59.2 inches, so measure for the taller figure. Its 4.8-inch backlit LED display shows resistance, time, distance, heart rate, watts, calories and speed. Both listed it at $6,999 on 5 November 2026; a Costco page in search results showed $5,999, which we could not confirm on the day.',
+        'The Perform Tread is sold by Centr and dealers, not on Amazon. The C80 is the closest like-for-like machine we found there: a self-powered curved deck with a magnetic brake. The figures cross-checked on this site in October 2026 give it a 62 by 19-inch slat belt, eight magnetic resistance levels, a 330 lb maximum user weight and a 261 lb machine weight, and its Bluetooth console connects to SOLE’s own app and third-party platforms. Against the Perform Tread, it matches the belt width and the number of resistance levels, but it has no handlebar that converts to a sled-push station and a lower user rating. Its warranty is lifetime on the frame and one year on the deck, parts, electronics and labour, much shorter on parts than the Perform Tread’s seven years for home use. SOLE listed it at $2,399.99 on 5 November 2026.',
     },
     {
-      id: 'centr-runr',
-      name: 'Centr Runr',
-      category: 'Folding Motorized Treadmill, Tool-Free Setup',
-      badge: 'Best Value Centr',
-      priceRange: '$1,299 at Centr on 5 Nov 2026',
-      amazonUrl: 'https://www.amazon.com/s?k=Centr+Runr+Treadmill&tag=sktiger-20',
-      specs: '20 x 55 in. running surface · 3.0 HP brushless DC · 1-10 mph · 300 lb max user · folding, tool-free assembly',
+      id: 'sole-f63',
+      name: 'SOLE F63',
+      category: 'Amazon Alternative to the Centr Runr',
+      badge: 'Amazon Alternative',
+      priceRange: '$1,100–$1,200',
+      specs: '20 x 60 in. deck · 0.5–12 mph · 0–15% incline · 325 lb capacity · folds',
       pros: [
-        'Tool-free assembly and a folding frame, which is what Costco’s listing name refers to',
-        'Lifetime frame and motor warranty from Centr, with 2 years on parts and 1 on labour',
-        'Quiet brushless motor and a self-lubricating belt, according to Centr',
-        'Bluetooth heart-rate pairing with a five-colour zone display',
+        'A 60-inch deck, 12 mph and 325 lb, all above the Runr’s 55 inches, 10 mph and 300 lb',
+        'Lifetime frame and motor warranty, as on the Runr, with two years on parts',
+        'No monthly subscription; SOLE’s app is free',
+        'SOLE and an independent review agree on deck, speed, incline, capacity and warranty',
       ],
       cons: [
-        'A 55-inch running surface, short for tall runners at speed',
-        'Top speed of 10 mph and a 300 lb rating, both below many treadmills at this price',
-        'Centr lists 1 to 12% incline; Costco’s listing gives 10% (see below)',
+        'No touchscreen, like the Runr',
+        'The independent review notes it is a heavy machine',
+        'Labour and deck terms are worth confirming with SOLE for the current model year',
       ],
       bottomLine:
-        'A sensible folding walking and jogging treadmill with an unusually long frame and motor warranty, not a runner’s machine.',
+        'For a folding treadmill on Amazon at the Runr’s price, with a longer deck and the same lifetime frame and motor cover.',
       description:
-        'The Runr is Centr’s folding motorized treadmill without a screen. Centr lists a 3.0 HP brushless DC motor, 1 to 10 mph in 0.1 mph steps, 1 to 12% incline, a 20 by 55-inch running surface, a 300 lb maximum user, a 6-inch step-up height, 70 by 35.7 by 47.5 inches assembled and 194 lb, with a Cloud Cushion deck and what it calls Natural Stride Technology, which adjusts belt speed to your pace. Costco’s US listing, as shown in search results, agrees on the 3.0 HP brushless motor, 300 lb and 10 mph, and gives the model number as T3-110.2, but lists a 10% maximum incline, so we have left incline off the card. The warranty is lifetime on the motor and frame, two years on parts and one year on labour. Centr listed it at $1,299 on 5 November 2026; Costco’s price did not show in the results we could see.',
+        'The Runr is sold by Centr and Costco rather than on Amazon. The SOLE F63 is the folding treadmill without a touchscreen we would compare it with there. SOLE lists a 20 by 60-inch running surface, 0.5 to 12 mph, 0 to 15% incline, a 325 lb maximum user weight and a 3.0 HP motor, and an independent review agrees on all of them. The warranty is lifetime on frame and motor and two years on parts, as SOLE’s own comparison table and the independent review both state; the review adds two years on the deck and wear items and one year of labour. That matches the Runr’s headline lifetime frame and motor cover, and the deck, speed and capacity figures are each a step above the Runr’s. It folds, and there is no subscription: SOLE’s app is free and the console works on its own. SOLE had it at $1,099.99 against a $1,199.99 regular price on 15 October, with a 30-day satisfaction guarantee and curbside delivery.',
     },
     {
-      id: 'centr-runr-s',
-      name: 'Centr Runr-S',
-      category: 'Folding Treadmill With 10-Inch Touchscreen',
-      badge: 'Best With a Screen',
-      priceRange: '$1,699 at Centr on 5 Nov 2026',
-      amazonUrl: 'https://www.amazon.com/s?k=Centr+Runr-S+Treadmill&tag=sktiger-20',
-      specs: '20 x 55 in. running surface · 3.0 HP brushless DC · 1-10 mph · 300 lb max user · 10 in. touchscreen · folding',
+      id: 'nordictrack-t-series-16',
+      name: 'NordicTrack T Series 16',
+      category: 'Amazon Alternative to the Centr Runr-S',
+      badge: 'Amazon Alternative With a Screen',
+      priceRange: 'Around $1,300–$2,000',
+      specs: '20 x 60 in. deck · 16 in. tilting touchscreen · 0-12% incline · up to 12 mph · 325 lb capacity',
       pros: [
-        'A 10-inch touchscreen with Netflix, YouTube and Disney+ apps and phone mirroring',
-        '25 built-in programs and Bluetooth audio and heart rate',
-        'The same frame, motor and lifetime frame and motor warranty as the Runr',
-        'Tool-free assembly and a folding frame',
+        'A 16-inch touchscreen, larger than the Runr-S’s 10-inch screen',
+        'A 60-inch deck and 12 mph, both above the Runr-S’s 55 inches and 10 mph',
+        'SelectFlex cushioning and a low step-up',
+        'Folds for storage',
       ],
       cons: [
-        '$400 more than the Runr for the screen alone',
-        '10 mph top speed and 300 lb rating, which Garage Gym Reviews flagged as below rivals',
-        'Too wide to pass through most doorways unfolded, according to one review',
+        'The screen is built around iFIT classes rather than the Runr-S’s Netflix, YouTube and Disney+ apps',
+        'No decline, a 20-inch belt and a 325 lb maximum user weight',
+        'Two-year motor warranty, against lifetime on the Runr-S',
       ],
       bottomLine:
-        'Worth the extra $400 over the Runr only if you will use the built-in streaming every session.',
+        'For a folding treadmill with a big screen on Amazon; the trade against the Runr-S is a longer deck and bigger screen for a much shorter motor warranty.',
       description:
-        'The Runr-S is the Runr with a 10-inch multimedia touchscreen. Centr lists the same 3.0 HP brushless DC motor, 1 to 10 mph, 1 to 12% incline, 20 by 55-inch running surface, 300 lb maximum user, 70 by 35.7 by 47.5-inch footprint and 194 lb weight, plus Bluetooth speakers, 25 programs, preloaded streaming apps and smartphone mirroring. Garage Gym Reviews, in search results, agrees on the motor, deck, 300 lb rating, 10 mph, dimensions and weight, and gives the incline as 0 to 12%; it noted that the 300 lb capacity and 10 mph top speed are lower than many rivals and that the machine is too wide for most doorways without folding and turning it. The warranty is lifetime on the motor and frame, two years on parts and one on labour. Centr listed it at $1,699 on 5 November 2026; Costco has sold it under the name "Centr Runr-S Folding Treadmill With 10” Touchscreen, Tool-less Assembly", with a $999.99 deal reported in December 2024.',
+        'The Runr-S is sold by Centr and Costco rather than on Amazon. The NordicTrack T Series 16 is the closest folding treadmill with a large screen we found there at a similar price. NordicTrack, a retailer listing and an independent review agree on a 20 by 60-inch belt, a 16-inch tilting touchscreen, 0 to 12% incline, 12 mph and a 325 lb maximum user weight. NordicTrack rates its motor at 3.6 CHP with two-year cover; one independent review lists the same 3.6 figure without saying whether it is a continuous rating, so read it as NordicTrack’s number. Against the Runr-S it has the longer deck and larger screen, but the screen is for iFIT classes, and the two-year motor warranty is far shorter than Centr’s lifetime cover. If you will walk and do iFIT walking and hiking classes, it is a reasonable way to get a big screen; if the lifetime motor warranty is what drew you to Centr, the SOLE F63 above keeps it.',
     },
     {
       id: 'tru-grit-runner',
@@ -148,29 +146,27 @@ export default {
         'If the Perform Tread’s price is the obstacle, the Tru Grit Runner is the cheapest curved treadmill we know of with dedicated sled-push settings. Its US dealers agree on six resistance levels, which they label 1 and 2 for running, 3 and 4 for walking and 5 and 6 for sled push, a 330 lb maximum user, a steel and aluminium frame, a battery-powered LCD, and a warranty of lifetime on the frame and two years on the resistance belt, tread and monitor. On 5 November 2026 dealers listed it from $1,996 (Push Pedal Pull, on sale from $2,495) to $2,699 (American Fitness), with $2,359 at Select Fitness and $2,495 at iSellFitness and The Fitness Outlet. Tru Grit’s own domain was showing a domain-sale page that day, so buy from a dealer that will handle warranty claims. Our Tru Grit guide covers it in detail.',
     },
     {
-      id: 'trueform-trainer',
-      name: 'TrueForm Trainer',
-      category: 'Curved Manual Treadmill, 400 lb Rating',
+      id: 'sb-fitness-ct400',
+      name: 'SB Fitness CT400 Curved Treadmill',
+      category: 'Lower-Priced Curved Trainer on Amazon',
       badge: 'Curved Alternative',
-      reviewUrl: '/trueform-treadmills/',
-      priceRange: '$3,495 at TrueForm and Rogue Fitness on 5 Nov 2026',
-      amazonUrl: 'https://www.amazon.com/s?k=TrueForm+Trainer+Treadmill&tag=sktiger-20',
-      specs: 'Non-motorized curved slat belt · 54 x 17 in. running surface · 400 lb max user · Bluetooth FTMS display',
+      priceRange: 'About $1,595 (Amazon, 6 Nov 2026)',
+      specs: 'Self-generated curved belt · 3 resistance levels · flexible track slats · no maximum speed',
       pros: [
-        'Half the Perform Tread’s price with a higher 400 lb user rating',
-        'Pairs with Zwift and Strava over Bluetooth FTMS',
-        'Shallow curve designed to give running-form feedback',
-        'Ships in days from TrueForm and Rogue rather than weeks',
+        'The lowest price of the curved trainers on this page, at about $1,600',
+        'No maximum speed and immediate response to speed changes, per the listing',
+        'Three resistance levels for harder efforts',
+        'Flexible track slats that the maker says add shock absorption',
       ],
       cons: [
-        'No adjustable resistance or sled-push mode',
-        'Shorter running surface than the Perform Tread',
-        'Product weight is 300 lb on Rogue’s listing but 270 lb in an older review',
+        'Only three resistance levels, against eight on the Perform Tread and the SOLE C80',
+        'The Amazon listing does not give deck dimensions or user capacity',
+        'No sled-push mode, and a basic digital display',
       ],
       bottomLine:
-        'The better curved treadmill for running at home if you do not need the Perform Tread’s resistance and sled mode.',
+        'The cheapest way on Amazon to try curved-treadmill running for HYROX-style intervals, if you can live with fewer resistance settings.',
       description:
-        'The TrueForm Trainer is the curved manual treadmill we would compare the Perform Tread against for pure running. TrueForm, Rogue Fitness and Garage Gym Lab agree on a 400 lb maximum user weight, and Rogue and Garage Gym Lab on a 17-inch-wide slatted surface; Rogue lists it as 54 inches long, 64 by 31 by 63 inches overall and 300 lb. Its updated display pairs with FTMS apps such as Zwift and Strava. It has no adjustable resistance, so it is a running machine rather than a sled trainer. On 5 November 2026 TrueForm listed it at $3,495 with a rubber tread and Rogue at $3,495, down from $3,999. Our TrueForm guide covers the warranty and the Runner model above it.',
+        'For pure curved-treadmill running at a fraction of the Perform Tread’s price, the CT400 is the least expensive SB Fitness Equipment model we found on Amazon US. Its listing describes a self-generated curved treadmill designed for running, walking, sport-specific training and HIIT, with no maximum speed, three resistance levels, flexible track slats that SB Fitness says add shock absorption, quick response to speed changes and a front display showing time, distance, speed, calories and total miles. That covers the essentials for HYROX-style run intervals: a curved belt you drive yourself, so acceleration is limited only by you, and some resistance for harder pushes. What you give up is resistance range, with three levels rather than eight, and published detail: the Amazon listing does not give the running-surface size, the user capacity or the machine’s weight, so ask the seller for those before ordering, and measure your space. Amazon showed it at about $1,595 on 6 November 2026.',
     },
   ],
   sections: [
@@ -228,9 +224,12 @@ export default {
       heading: 'The Centr Treadmills, and Two Alternatives',
       products: true,
       html: `          <p>
-            The cards cover Centr's three treadmills and, because the Perform Tread is so expensive, two curved
-            treadmills to compare it against: the cheaper Tru Grit Runner, which also has sled-push settings, and
-            the TrueForm Trainer. Every figure on a card is one the maker and at least one other source agree on.
+            Centr's treadmills are sold through Centr's own store and retailers such as Costco and Perform
+            Better, not on Amazon, so the cards show the nearest alternatives sold on Amazon: the SOLE C80, a
+            curved trainer with the same eight magnetic levels as the Perform Tread; the SOLE F63 and NordicTrack
+            T Series 16 in place of the Runr and Runr-S; the Tru Grit Runner, which also has sled-push settings;
+            and the SB Fitness CT400, the cheapest curved trainer we found there. The table below gives Centr's
+            own figures; those on the cards are the ones we checked for our curved, budget and NordicTrack guides.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
             <thead>
@@ -323,7 +322,7 @@ export default {
             Centr's specification table lists incline as 1 to 12%. Costco's listing, as shown in search
             results, gives a 10% maximum, and Garage Gym Reviews gives 0 to 12% for the Runr-S. The difference
             may be a listing error or a different production run; check the box or the console before relying
-            on 12% for incline walking. We have left incline off the cards.
+            on 12% for incline walking. We have left incline out of the comparison table.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">How they compare for the money</h3>
           <p>
@@ -395,9 +394,9 @@ export default {
             <li><strong>Specialist dealers.</strong> Perform Better listed the Perform Tread at $6,999.</li>
           </ul>
           <p>
-            We did not find Centr treadmills sold new by Centr on Amazon US. The Amazon buttons on the Centr
-            cards go to searches, which may show third-party listings; check the seller and warranty before
-            buying one there.
+            We did not find Centr treadmills sold new by Centr on Amazon US, which is why the cards on this
+            page are Amazon alternatives rather than Centr models. If a Centr treadmill does turn up there from
+            a third-party seller, check the seller and warranty before buying it.
           </p>`,
     },
     {
@@ -414,7 +413,8 @@ export default {
             Runner if it does not.</li>
             <li><strong>You want a curved treadmill for running and sprints:</strong> the TrueForm Trainer or
             <a href="/assaultrunner-pro-treadmill/" class="text-[#0F62FE] font-medium">AssaultRunner Pro</a> at about
-            half the Perform Tread's price. Our <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium">best curved treadmills</a>
+            half the Perform Tread's price, or, on Amazon, the SOLE C80 with eight magnetic levels or the cheaper
+            SB Fitness CT400. Our <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium">best curved treadmills</a>
             roundup compares them, and <a href="/curved-treadmill-workouts/" class="text-[#0F62FE] font-medium">curved treadmill workouts</a>
             has HYROX-style sessions.</li>
           </ul>
@@ -453,7 +453,7 @@ export default {
     },
     {
       q: 'Is the HYROX treadmill worth it for home use?',
-      a: 'For a serious HYROX competitor who wants the race machine, it can be. For general curved-treadmill running, the TrueForm Trainer or AssaultRunner Pro cost about half as much, and the Tru Grit Runner offers sled-push settings for about a third of the price.',
+      a: 'For a serious HYROX competitor who wants the race machine, it can be. For general curved-treadmill running, the TrueForm Trainer or AssaultRunner Pro cost about half as much, the SOLE C80, sold on Amazon, has eight magnetic resistance levels for about a third of the price, and the Tru Grit Runner offers sled-push settings for about a third of the price.',
     },
   ],
   mistakesHeading: 'Common Mistakes Buying a Centr Treadmill',

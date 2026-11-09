@@ -420,6 +420,12 @@ export default {
       blurb: 'The routine that keeps belts and frames safe as well as reliable.',
       url: '/treadmill-maintenance/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Treadmill Safety Keys",
+      blurb: "Five replacement treadmill safety keys, how magnetic and pin-style keys differ, how to match one to your…",
+      url: '/best-treadmill-safety-keys/',
+    },
   ],
   bottomLine: [
     `<strong class="text-white">Clip the safety key on every session, and remove it — with the

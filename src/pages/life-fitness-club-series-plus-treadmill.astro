@@ -8,33 +8,31 @@ const description =
 
 const PRODUCTS = [
   {
-    id: "life-fitness-club-series-plus",
-    name: "Life Fitness Club Series+",
+    id: "life-fitness-t3",
+    name: "Life Fitness T3",
     brand: "Life Fitness",
-    category: "Club-Grade Home Treadmill, SL or SE4 Console",
-    badge: "Club Grade at Home",
-    amazonUrl: "https://www.amazon.com/s?k=Life+Fitness+treadmill&tag=sktiger-20",
-    amazonLabel: "Shop Similar on Amazon",
-    image: null,
-    reviewUrl: null,
-    priceRange: "$6,079 (SL) to $8,799 (SE4) at Life Fitness on 5 Nov 2026",
-    priceBounds: {"low":6079,"high":8799},
-    specs: "22 x 60 in. running surface · 4.0 HP continuous AC (8.0 HP peak) · 0.5-12 mph · 0-15% incline · 400 lb max user · 8 in. step-up · non-folding",
+    category: "Closest Life Fitness Treadmill on Amazon",
+    badge: "Closest on Amazon",
+    amazonUrl: "https://www.amazon.com/dp/B006BE6HW4?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41xQfD1DGZL._SL500_.jpg","width":500,"height":500},
+    reviewUrl: "/life-fitness-t3-treadmill/",
+    priceRange: "$3,499–$4,119",
+    priceBounds: {"low":3499,"high":4119},
+    specs: "20 x 60 in. deck · 0.5–12 mph · 0–15% incline · 350 lb capacity · non-folding",
     pros: [
-      "A 4.0 HP continuous-duty AC motor, rated as continuous by Life Fitness and two dealers, not only as a peak figure",
-      "A full 22 by 60-inch running surface on FlexDeck shock absorption, with a 400 lb user rating",
-      "Life Fitness lists lifetime cover on the frame, motor and Lifesprings and 10 years on parts",
-      "Runs on a standard 120 V, 15 A grounded outlet, unlike the 20-amp Integrity+",
-      "Free in-home delivery and installation from Life Fitness’s own store",
+      "Ten years on the motor and five on parts, with a lifetime frame warranty",
+      "The same 60-inch deck length, 12 mph and 15% incline as the Club Series+, from the same maker",
+      "At 243 lb, far lighter than the Club Series+ and easier to place",
+      "A choice of a simple Go console or the Track Connect 2.0 console",
     ],
     cons: [
-      "About 434 lb and 82 by 36 inches; it does not fold and is hard to move once installed",
-      "Only one year of labour cover, short next to the lifetime frame and motor terms",
-      "The SE4 adds about $2,700 over the SL at Life Fitness’s sale prices",
-      "Tops out at 12 mph and offers no decline, the same as the cheaper Run CX",
+      "A 20-inch-wide deck, narrower than the Club Series+’s 22 inches",
+      "A 350 lb capacity, against the Club Series+’s 400 lb",
+      "The console is priced as part of the configuration, so compare like for like",
     ],
-    bottomLine: "For a buyer who wants a club-built treadmill at home on an ordinary outlet, has a permanent spot for it, and buys the SL unless the SE4’s screen and courses are the reason for the purchase.",
-    description: "The Club Series+ is Life Fitness’s club-grade home treadmill and the replacement for the Platinum Club Series. Life Fitness’s US store and an authorised dealer, The Fitness Outlet, agree on a 22 by 60-inch running surface, a 4.0 HP continuous (8.0 HP peak) AC motor, 0.5 to 12 mph, 0 to 15% incline, a 400 lb maximum user weight, footprint of 82.25 by 36.25 by 56 inches without the console, a 434 lb unit weight with console and a 120 V, 15 A outlet; Abt agrees on the motor, surface, speed, incline, user weight and 8-inch step-up. Life Fitness lists a lifetime warranty on the frame, motor and Lifesprings, 10 years on parts, 3 on the console and 1 on labour. The SL console is a 20.5-inch LED panel with 22 workouts; the SE4 is a 24-inch touchscreen. On 5 November 2026 Life Fitness showed $6,079 for the SL (regular $7,599) and $8,799 for the SE4 (regular $10,999); Abt listed the SE4 at $10,999.",
+    bottomLine: "The Life Fitness to look at on Amazon if you want the brand’s non-folding build, 15% incline and long motor warranty without the Club Series+’s club motor, width or price.",
+    description: "The Club Series+ is sold through Life Fitness’s own store and its dealers, not on Amazon US, so this card shows the nearest Life Fitness treadmill that Amazon does list. The T3 is Life Fitness’s compact non-folding treadmill and its most affordable. Life Fitness and a major US retailer agree on a 20 by 60-inch running surface, 0.5 to 12 mph, incline from 0 to 15%, a 350 lb maximum user weight and a machine weight of 243 lb, and both list the warranty as lifetime on the frame, ten years on the motor, five years on parts and one year of labour; Life Fitness adds three years on the console. Against the Club Series+ it gives up two inches of deck width, 50 lb of user rating and the 4.0 HP continuous AC motor, and keeps the deck length, speed and incline range. Life Fitness sells the T3 at $3,499 with the Go console or $4,119 with Track Connect 2.0; the Amazon listing is for the Go console version. Our full T3 review goes further.",
   },
   {
     id: "life-fitness-run-cx",
@@ -42,9 +40,9 @@ const PRODUCTS = [
     brand: "Life Fitness",
     category: "The Cheaper Life Fitness With the Same Deck Size",
     badge: "Better Value",
-    amazonUrl: "https://www.amazon.com/s?k=Life+Fitness+Run+CX+Treadmill&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0C6B3C6FV?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
-    image: null,
+    image: {"url":"https://m.media-amazon.com/images/I/31c6k3CSuYL._SL500_.jpg","width":500,"height":435},
     reviewUrl: "/life-fitness-run-cx-treadmill/",
     priceRange: "$3,919 at Life Fitness on 5 Nov 2026",
     priceBounds: {"low":3919,"high":3919},
@@ -204,7 +202,7 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "Club Grade at Home: Life Fitness Club Series+", link: PRODUCTS[0].amazonUrl }}
+  stickyCta={{ text: "Closest on Amazon: Life Fitness T3", link: PRODUCTS[0].amazonUrl }}
 >
   <article class="ed-article" data-template="editorial">
     <div class="ed-col">
@@ -225,12 +223,20 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
           By <a href="/editorial-standards/#who" rel="author">Shaheer Ali Khan, PhD</a><br />
           Updated November 5, 2026 · Exercise Physiology & Biomechanics Specialist · ACSM-EP, CSCS
         </div>
-        <a href="#life-fitness-club-series-plus" class="btn-ghost">View products</a>
+        <a href="#life-fitness-t3" class="btn-ghost">View products</a>
       </div>
       <p class="ed-disclosure">
         We research every product on this page independently. If you buy through our links, we may earn a
         commission at no cost to you. <a href="/editorial-standards/">Learn more about how we review.</a>
       </p>
+
+      <figure class="ed-hero">
+        <div class="ed-hero-collage">
+          <a href="#life-fitness-t3"><img src="https://m.media-amazon.com/images/I/41xQfD1DGZL._SL500_.jpg" alt="Life Fitness T3" width="500" height="500" decoding="async" /></a>
+          <a href="#life-fitness-run-cx"><img src="https://m.media-amazon.com/images/I/31c6k3CSuYL._SL500_.jpg" alt="Life Fitness Run CX" width="500" height="435" decoding="async" /></a>
+        </div>
+        <figcaption>Life Fitness T3 · Life Fitness Run CX</figcaption>
+      </figure>
 
       <div class="ed-body prose prose-lg">
         <p class="ed-lead">
@@ -253,7 +259,8 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
           Black Friday sale of up to 20% off), two authorised US dealer listings (Abt and The Fitness
           Outlet), BarBend's Club Series+ review, Life Fitness's business store listing in search
           results, the Run CX product page on Life Fitness's store, and the US Consumer Product Safety
-          Commission's recall database. Figures on the product card are those on which Life Fitness
+          Commission's recall database. The Life Fitness T3 card's figures are those checked for our
+          T3 review and non-folding treadmill guide. Figures on the product card are those on which Life Fitness
           and at least one independent source agree; where they disagree (display size on one dealer
           listing, warranty wording, older console prices) we say so in the text and leave the figure
           off the card. Independent hands-on reviews of the Club Series+ are scarce, and the one we
@@ -304,6 +311,11 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
             for anyone who wants a true commercial treadmill the <a href="/life-fitness-integrity-series-treadmill/" class="text-[#0F62FE] font-medium">Integrity+</a> is the next step up, with a 20-amp circuit and a five-figure price to match. We have not
             tested the Club Series+; this guide is built on Life Fitness's published figures, two
             dealers and one independent review.
+          </p>
+          <p>
+            The Club Series+ is sold through Life Fitness's own store and its dealers, not on Amazon, so
+            the cards below show the nearest Life Fitness alternative Amazon lists, the T3, next to the
+            Run CX.
           </p>
         </div>
       <!-- Product blocks -->
@@ -533,10 +545,11 @@ const MORE = (GROUP?.pages ?? []).filter((p) => p.url !== HERE).slice(0, 6);
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Is it on Amazon?</h3>
           <p>
-            We did not find a new Club Series+ sold by Life Fitness on Amazon US. The Amazon button on this
-            page goes to a tagged search for Life Fitness treadmills, which mainly returns other Life
-            Fitness models and accessories. Buy the Club Series+ itself from Life Fitness or an authorised
-            dealer so the warranty and installation are clear.
+            We did not find a new Club Series+ sold by Life Fitness on Amazon US: it is sold through Life
+            Fitness's own store and authorised dealers. The product cards on this page therefore show the
+            nearest Life Fitness treadmill Amazon does list, the <a href="/life-fitness-t3-treadmill/" class="text-[#0F62FE] font-medium">Life Fitness T3</a>,
+            alongside the Run CX. Buy the Club Series+ itself from Life Fitness or an authorised dealer so
+            the warranty and installation are clear.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Recalls</h3>
           <p>

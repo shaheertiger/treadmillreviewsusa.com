@@ -41,6 +41,7 @@ export default {
       category: 'Budget 2-in-1 Walking Pad',
       badge: 'Light Walking Only',
       priceRange: '$140-$260',
+      amazonUrl: 'https://www.amazon.com/dp/B0G3W39ZMG?tag=sktiger-20',
       specs: 'Listed: 36 x 16 in. belt · 0.6-6.2 mph · 0-5% manual incline · 320 lb claimed capacity',
       pros: [
         'Inexpensive at a typical street price of roughly $140-$260 on marketplaces',

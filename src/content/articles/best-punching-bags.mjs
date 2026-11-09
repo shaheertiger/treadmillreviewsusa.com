@@ -530,8 +530,8 @@ export default {
       name: 'Everlast Powercore Freestanding Heavy Bag',
       category: 'Freestanding punching bag',
       badge: 'Heaviest Freestanding Base',
-      amazonUrl: 'https://www.amazon.com/s?k=Everlast+Powercore+Freestanding+Heavy+Bag&tag=sktiger-20',
-      priceRange: 'About $230',
+      amazonUrl: 'https://www.amazon.com/dp/B0B3C2R5C7?tag=sktiger-20',
+      priceRange: 'About $230 (bag alone); $279.99 as an Amazon kit (9 Nov 2026)',
       specs: 'Base about 250 lb with water or 370 lb with sand · height adjusts up to 65 in. · foam striking surface',
       pros: [
         'Everlast and several retailers agree on a base of about 250 lb with water and 370 lb with sand',
@@ -547,7 +547,7 @@ export default {
       bottomLine:
         'The freestanding bag to choose if you want the heaviest, steadiest base and will fill it with sand.',
       description:
-        "The Powercore is Everlast's main freestanding bag. On 19 October Everlast listed it at $229.99, describing an air-foam chamber, a rounded design, a power transfer ring that it says absorbs impact and reduces base movement, and a high-density base that holds approximately 250 lb with water or 370 lb with sand. Retailers including Sport Chek and a European fitness retailer list the same capacities, and Everlast's Amazon listing describes a tri-disc foam structure and steel plate core. Everlast and the Amazon listing give a height range of 54 to 65 in., while another retailer gives 52 to 65 in., so the card gives only the top setting. The large sand capacity is its main advantage: a base approaching 370 lb moves less under hard hits than a lighter water-filled one, though it is slow to fill and very hard to empty. Everlast says it is not recommended for outdoor use. We found no hands-on independent review, so stability claims are the maker's. Use a thick rubber mat under the base.",
+        "The Powercore is Everlast's main freestanding bag. On 19 October Everlast listed it at $229.99, describing an air-foam chamber, a rounded design, a power transfer ring that it says absorbs impact and reduces base movement, and a high-density base that holds approximately 250 lb with water or 370 lb with sand. Retailers including Sport Chek and a European fitness retailer list the same capacities, and Everlast's Amazon listing describes a tri-disc foam structure and steel plate core. Everlast and the Amazon listing give a height range of 54 to 65 in., while another retailer gives 52 to 65 in., so the card gives only the top setting. The large sand capacity is its main advantage: a base approaching 370 lb moves less under hard hits than a lighter water-filled one, though it is slow to fill and very hard to empty. Everlast says it is not recommended for outdoor use. We found no hands-on independent review, so stability claims are the maker's. Use a thick rubber mat under the base. On Amazon, where we could not find the bag sold on its own, Everlast lists it as the Powercore Fitness kit with gloves, a speed rope and an ab roller, at $279.99 on 9 November 2026; that listing describes the same air-foam chamber, power transfer ring and high-density base.",
     },
   ],
   faqs: [

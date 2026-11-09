@@ -39,7 +39,13 @@ export default {
           the manufacturer itself confirms the incline figure. Spec lines carry only figures that
           agree across sources; where they did not — the TRUE Alpine Runner's top speed and
           warranty terms, the Horizon 7.0 AT's step-up height, the X24's exact step-up figure — we
-          left them out and say so in the text. We also searched cpsc.gov for recalls and warnings
+          left them out and say so in the text. The exceptions to the manufacturer rule are the cards
+          for machines sold on Amazon in place of ones that are not: the FreeMotion i11.9 stands in for
+          the dealer-only TRUE Alpine Runner, and on 9 November 2026 the Sunny Versatile Treadmill and
+          CURSOR 40% Incline Treadmill replaced the NordicTrack X16 and X24 cards, the Horizon 7.4 AT
+          replaced the 7.8 AT and Sunny's Auto Incline Treadmill replaced the Bowflex T6. Their figures
+          are those checked for our incline trainer, Horizon and auto incline treadmill guides, and each
+          card says what its listing leaves out. We also searched cpsc.gov for recalls and warnings
           on each brand and model and found none open for these treadmills. None of these figures
           are our own measurements; we have not tested these machines. Price bands are prices seen
           on 14 October 2026 and change often, so confirm the price, the specification and the
@@ -48,100 +54,89 @@ export default {
           which products we list or what we say about them.`,
   products: [
     {
-      id: 'nordictrack-x16',
-      name: 'NordicTrack X16',
-      category: 'Highest incline for the money',
-      badge: 'Best Overall',
-      amazonUrl: 'https://www.amazon.com/s?k=NordicTrack+X16+Treadmill&tag=sktiger-20',
-      priceRange: 'Around $2,800–$3,500',
-      specs: '22 x 60 in. deck · -6% to 40% incline · 0-12 mph · 400 lb capacity · non-folding',
+      id: "sunny-versatile-treadmill",
+      name: "Sunny Health & Fitness Versatile Treadmill",
+      category: "Steepest incline trainer on Amazon",
+      badge: "Closest on Amazon",
+      priceRange: "About $2,200 (Amazon, 6 Nov 2026)",
+      specs: "-3% to 45% powered incline · 0.3–5 mph · 20 in. wide running surface · 300 lb capacity · multi-grip handrails",
       pros: [
-        'A 40% maximum incline, about 21.8 degrees, the steepest grade we could confirm on a current home treadmill',
-        'Decline to -6% as well, so one machine covers both halves of a steep hill',
-        'A 22 by 60-inch deck and a 400 lb maximum user weight',
-        'Lifetime motor warranty from NordicTrack',
+        "A 45% maximum incline, the steepest grade on any machine here",
+        "A -3% decline for downhill walking",
+        "High, mid and low handrail grips for different grades, per the listing",
+        "18 built-in programs and a touchscreen console, with no subscription required",
       ],
       cons: [
-        'Does not fold, and NordicTrack lists a 13.66-inch step-up before any incline is added',
-        'Top speed falls well below 12 mph at steep grades, according to independent reviews of the X Series',
-        'Automatic incline during iFIT workouts needs a paid membership',
+        "Tops out at 5 mph, so it is for walking and hiking only",
+        "The listing gives the belt width but not its length, so check it before ordering",
+        "A 300 lb rating is lower than the commercial machines",
       ],
-      bottomLine:
-        'The machine to buy if the highest incline is the point: 40% for less than the X24, with a lifetime motor warranty.',
-      description:
-        "The X16 is the cheapest way we found to reach the highest incline currently sold for home use. NordicTrack's own incline-treadmill page lists its grade range as -6% to 40% and its top speed as 12 mph, and an independent review and retailer listings agree on that range, a 22 by 60-inch deck, a 400 lb maximum user weight and a non-folding steel frame. Forty per cent is 21.8 degrees — steeper than almost any hiking trail you would walk for long — and it turns an easy 2 mph walk into hard work. Mechanically it is the same incline trainer as the X24; the difference is a 16-inch pivoting touchscreen instead of a 24-inch one, which is why it is the better buy for anyone paying for the grade rather than the glass. Two practical points matter more than the screen. NordicTrack lists a 13.66-inch step-up height on the X Series before the deck tilts, and the front of the deck climbs a long way at 40%, so measure ceiling height first. And independent reviews describe the X Series capping belt speed at steep grades, so this is a climbing machine rather than a fast one.",
+      bottomLine: "The closest thing to the NordicTrack X Series you can order on Amazon: a steeper listed grade for walking and hiking only, with less confirmed about it.",
+      description: "The NordicTrack X16 and X24 are sold by NordicTrack and its retailers rather than on Amazon, so this card shows the nearest powered incline trainer Amazon does list. The Versatile Treadmill is Sunny Health & Fitness's dedicated climbing machine. Its Amazon listing gives a powered incline to 45% and a decline to -3%, a speed range of 0.3 to 5 mph, a 20-inch-wide running surface with dual shock absorption, a 300 lb maximum user weight, 18 preset programs on a capacitive touchscreen console, and a handrail system with high, mid and low grips for different grades, with pulse sensors in the handlebars. Forty-five percent is about 24 degrees, steeper than the X Series' 40%, but that figure comes from Sunny's own listing and we could not confirm it from an independent source, which is why the X Series still heads our ranking. The trade-off against the X Series is speed and decline: 5 mph is a fast walk, so this is a hiking machine, not a running one, and it declines to -3% rather than -6%. The listing gives the belt's width but not its length, and we could not confirm a length from a second source, so check the manual or ask the seller if you are tall. Amazon listed it at $2,199.99 on 6 November 2026, as checked for our incline trainer guide.",
     },
     {
-      id: 'nordictrack-x24',
-      name: 'NordicTrack X24',
-      category: 'Highest incline with the biggest screen',
-      badge: 'Premium Pick',
-      amazonUrl: 'https://www.amazon.com/s?k=NordicTrack+X24+Treadmill&tag=sktiger-20',
-      priceRange: 'Around $3,000–$4,000',
-      specs: '22 x 60 in. deck · -6% to 40% incline · 0-12 mph · 24 in. pivoting touchscreen · 400 lb capacity · non-folding',
+      id: "cursor-40-incline-treadmill",
+      name: "CURSOR 40% Incline Treadmill",
+      category: "Cheapest way to walk at 40%",
+      badge: "Budget 40%",
+      priceRange: "About $200 (Amazon, 6 Nov 2026)",
+      specs: "0–40% manual incline in five steps · 38.6 x 15.4 in. belt · 0.6–6.2 mph · 350 lb capacity · 51 in. handrails · folds",
       pros: [
-        'The same -6% to 40% range as the X16, the highest grade we could confirm',
-        'A 24-inch pivoting touchscreen for iFIT route and trainer workouts',
-        'Lifetime motor warranty, with 10 years on the frame according to independent reviews',
-        'Two independent reviews describe how its speed limits change with grade, so the trade-off is well documented',
+        "Reaches 40% for about a tenth of the price of a powered incline trainer",
+        "Long 51-inch handrails, per the listing, which help on steep grades",
+        "A 350 lb rating and a fold-down frame with wheels",
+        "Light enough to move and store, unlike a full incline trainer",
       ],
       cons: [
-        'Two reviews report speed capped at about 8 mph around 16% incline and 6 mph from 25% upward',
-        'Non-folding, heavy (reviewers give about 445 lb boxed) and tall at full incline',
-        'Costs several hundred dollars more than the X16 for a bigger screen',
+        "The incline is set by hand in 10% steps, not powered, so you stop to change it",
+        "A 38.6 by 15.4-inch belt is walking-pad sized and short for a long stride on a slope",
+        "No decline, and the brand has little track record we could check",
       ],
-      bottomLine:
-        'For buyers who will follow iFIT outdoor routes daily and want the biggest screen on the steepest machine; everyone else should take the X16.',
-      description:
-        "The X24 is NordicTrack's flagship incline trainer, and on grade it ties with the X16 for the highest incline we could confirm. NordicTrack's product data lists a maximum incline of 40% and a maximum decline of -6%, a 152 by 56 cm belt (60 by 22 inches), a 181 kg (400 lb) maximum user weight and a 24-inch pivoting touchscreen; two independent reviews agree on all of those, and on a lifetime motor warranty with 10 years on the frame, 2 years on parts and 1 year of labour. The most useful detail in the independent coverage is how speed and grade interact. Both reviews report that the belt is limited to about 8 mph once the deck passes roughly 15 to 16% and to 6 mph at 25% and above, with similar caps in decline. That is not a fault — nobody runs at 12 mph up a 40% slope — but it means the headline 12 mph is a flat-ground figure. NordicTrack lists the step-up height at 13.66 inches, and one review gives 14 inches, so plan on about that. Unless you want the 24-inch screen, the X16 does the same climbing for less.",
+      bottomLine: "A cheap way to find out whether 40% walking suits you before paying for an X Series, not a substitute for a powered incline trainer.",
+      description: "The CURSOR reaches the same 40% as the NordicTrack X Series for about a tenth of the price, and it is a very different machine. The Amazon listing gives five manual incline settings — 0, 10, 20, 30 and 40% — with the deck reaching 15 inches high at the top setting, a 38.6 by 15.4-inch belt, a speed range of 0.6 to 6.2 mph, a 3.0 HP brushless motor, a 350 lb maximum user weight, 51-inch dual handrails described as suited to users 5 ft 11 in. and taller, and a fold-down frame with transport wheels. The word that matters is manual: you change the incline by hand, between sessions or by stopping, so there are no hill programs and no changes mid-walk, where the X Series raises and lowers the deck for you. The belt is also far shorter and narrower than a full incline trainer's, which matters more on a slope, where your stride lengthens and you drift backwards as you tire. It has no decline. Treat it as a low-cost way to find out whether steep walking suits you before spending thousands, and keep the speed modest at the steep settings. Its 40% figure is the listing's own, so it sits outside the manufacturer-confirmed ranking. Amazon listed it at $199.99 on 6 November 2026, as checked for our incline trainer guide.",
     },
     {
-      id: 'true-alpine-runner',
-      name: 'TRUE Alpine Runner',
-      category: 'Highest incline on a commercial-grade machine',
-      badge: 'Commercial Pick',
-      amazonUrl: 'https://www.amazon.com/s?k=TRUE+Fitness+Alpine+Runner+Incline+Trainer&tag=sktiger-20',
-      priceRange: 'From about $10,300',
-      specs: '22 x 60 in. running surface · -3% to 30% incline · 400 lb capacity · non-folding · dedicated 20-amp circuit',
+      id: 'freemotion-i11-9-incline-trainer',
+      name: 'FreeMotion i11.9 Incline Trainer',
+      category: 'A 30% incline trainer sold on Amazon',
+      badge: '30% on Amazon',
+      priceRange: 'About $2,875 (Amazon, 6 Nov 2026)',
+      specs: '30% incline and decline training · 22 in. wide belt · 10 in. touchscreen console · cushioned deck',
       pros: [
-        'A 30% maximum incline, about 16.7 degrees, on a gym-grade frame',
-        'A 22 by 60-inch running surface and a 400 lb maximum user weight',
-        'Several console choices, from a basic LED unit to a 22-inch touchscreen',
-        'A specialist retailer lists separate in-home warranty terms, so it can be bought for a home gym',
+        'A 30% incline, the same maximum as TRUE’s commercial Alpine Runner, with decline',
+        'A 22-inch-wide belt on an extra-long cushioned deck, per the listing',
+        'A 10-inch colour touchscreen with map-based programming',
       ],
       cons: [
-        'Costs several times as much as a NordicTrack X Series machine with a higher maximum grade',
-        'Needs a dedicated 120-volt, 20-amp circuit according to TRUE',
-        'Its top speed and warranty terms are quoted differently by TRUE and by retailers, so confirm both',
+        'An older model: the listing refers to iFit Live, an earlier name for iFIT',
+        'The listing gives no top speed, weight rating or warranty; ask the seller',
+        'Confirm the machine is new and who will honour the warranty before ordering',
       ],
       bottomLine:
-        'For a home gym that wants commercial build quality on a steep incline trainer and has the budget, the floor and the wiring for it.',
+        'The way to get a 30% grade from Amazon for a fraction of a commercial trainer’s price, but only after the seller confirms condition and warranty.',
       description:
-        "The Alpine Runner is TRUE's incline trainer and the steepest commercial-grade treadmill we could confirm as sold to home buyers. TRUE's product page lists a -3% to 30% grade range, a 60 by 22-inch running surface, a 400 lb maximum user weight, a 71 by 40-inch footprint, a weight of 592 lb and a dedicated 120V/20A circuit; a specialist retailer and an independent review agree on the grade, the surface and the capacity. Thirty per cent is 16.7 degrees, which makes it one of the few machines that genuinely qualifies as a 15 degree incline treadmill. Its maximum grade is lower than NordicTrack's 40%, and it costs far more, so it is here for build rather than grade. Two figures did not agree. TRUE's current page gives a top speed of 12.5 mph while its older spec sheet and an independent review give 12 mph, and the warranty is quoted as commercial terms by TRUE and with separate in-home terms by a retailer — confirm both with the dealer. One independent review also reports that its speed is limited at the steepest grades, as on every incline trainer.",
+        'The commercial TRUE Alpine Runner, which reaches 30%, is sold through specialist dealers rather than on Amazon, so this card shows the 30% incline trainer Amazon does list. The i11.9 is an earlier Freemotion incline trainer that is still listed on Amazon US with a price. The listing is short: it describes an extra-long, cushioned deck, a 10-inch colour touchscreen, 30% incline and decline training, a 22-inch-wide running belt, and interactive iFit Live and Google Maps programming. iFit Live was the earlier name of what is now iFIT, which tells you the design dates from several years ago. That is not a reason to rule it out — incline trainers are simple machines underneath, and a 30% grade with decline for about $2,875 is far below the Alpine Runner’s price — but it changes what you need to check. The listing gives no top speed, no maximum user weight, no motor rating and no warranty, and we could not confirm those for this listing from a second source, so none is on the card. Before buying, ask the seller whether the machine is new, who honours the warranty and for how long, and whether the console’s connected features still work. Amazon listed it at $2,875 on 6 November 2026, as checked for our incline trainer guide.',
     },
     {
-      id: 'horizon-7-8-at',
-      name: 'Horizon 7.8 AT',
-      category: 'Best 15% treadmill without a subscription',
-      badge: 'Best 15% Incline',
-      amazonUrl: 'https://www.amazon.com/s?k=Horizon+7.8+AT+Treadmill&tag=sktiger-20',
-      priceRange: 'Around $1,900–$2,000',
-      specs: '22 x 60 in. deck · 0-15% incline · 0.5-12 mph · 375 lb capacity · folding',
+      id: "horizon-7-4-at",
+      name: "Horizon 7.4 AT",
+      category: "Best 15% treadmill without a subscription",
+      badge: "Best 15% Incline",
+      priceRange: "Around $1,500–$1,800",
+      specs: "22 x 60 in. deck · 0.5-12 mph · 0-15% incline · 350 lb capacity · Bluetooth FTMS",
       pros: [
-        'Incline to 15% and a 12 mph top speed with no platform subscription needed',
-        'A 22 by 60-inch deck and a 375 lb maximum user weight',
-        'Lifetime frame and motor warranty from Horizon',
-        'Folds with hydraulic assistance despite its size',
+        "A 22-inch-wide belt, two inches wider than the 7.0 AT, for more room at running pace",
+        "Five years on parts and two years of labour on top of the lifetime frame and motor cover",
+        "A Bluetooth heart rate monitor in the box and a Sprint 8 interval program built in",
+        "A 350 lb maximum user weight, 25 lb more than the 7.0 AT",
       ],
       cons: [
-        'Stops at 15%, which is 8.5 degrees, so it is not a high-incline trainer',
-        'No decline',
-        'Heavy at 330 lb assembled, according to Horizon',
+        "Showing a late-October ship date on Horizon’s store on the day we checked",
+        "The same 12 mph and 15% ceilings as the cheaper 7.0 AT",
+        "The motor rating some reviewers quote is not published by Horizon",
       ],
-      bottomLine:
-        'For runners and walkers who want the most useful mainstream incline, 15%, on a wide deck with no subscription attached.',
-      description:
-        "Below the incline trainers, the established brands we checked all stop at 15%, and the 7.8 AT is the strongest of those machines for a buyer who wants a full-size deck and no platform. Horizon's product page lists a 0 to 15% incline, 0.5 to 12 mph, a 22 by 60-inch deck, a 375 lb maximum user weight, a hydraulic folding frame and lifetime frame and motor cover, and an independent review agrees on all of those. Fifteen per cent is 8.5 degrees. That sounds modest next to 40%, but it is steeper than almost any road and steep enough for the 12-3-30 workout with room to spare. It works with third-party training apps over Bluetooth, and nothing on the machine requires a membership. Horizon lists a step-on height of 8 3/4 inches, a little lower than many full-size machines. It is a heavy treadmill — 330 lb assembled by Horizon's figure — and an independent review notes that its console is a plain one with no built-in screen for streaming. Our Horizon roundup covers the rest of the range.",
+      bottomLine: "For runners and walkers who want the most useful mainstream incline, 15%, on a wide deck with no subscription attached.",
+      description: "Below the incline trainers, the established brands we checked all stop at 15%, and the 7.4 AT is the strongest of those machines on Amazon for a buyer who wants a full-size, wide deck and no platform. Horizon lists a 22 by 60-inch deck, 0.5 to 12 mph, 0 to 15% incline, a 350 lb maximum user weight, one-step hydraulic folding and an 8.75-inch step-on height; a Johnson Fitness and Wellness listing and independent coverage agree on the deck, speed, incline and capacity. Twelve mph is available across the whole incline range, so you can run on a gentle grade or walk hard at 15%. The console is an 8.25-inch LCD with a 16-digit LED message line and ten programs including Sprint 8, and Horizon includes a Bluetooth heart rate monitor. The warranty is lifetime on the frame and motor, five years on parts and two years of labour, against three and one on the 7.0 AT. One independent review quotes a 3.5 CHP motor; Horizon does not publish a figure, so we left it out of the spec line. At 318 lb it is heavy for a folding machine. Horizon's store listed it at $1,799, or $1,499 with a promotional code, on 13 October 2026; its figures are those checked for our Horizon treadmill guide.",
     },
     {
       id: 'horizon-7-0-at',
@@ -159,7 +154,7 @@ export default {
         'No subscription required',
       ],
       cons: [
-        'A 20-inch deck width, narrower than the 7.8 AT',
+        'A 20-inch deck width, narrower than the 7.4 AT',
         'Horizon and an independent review give different step-up heights, measured to different points',
         'Parts and labour cover is short next to the lifetime frame and motor',
       ],
@@ -169,29 +164,25 @@ export default {
         "The 7.0 AT is the cheapest machine here that reaches 15% on a 60-inch deck. Horizon's product page lists a 0 to 15% incline, 0.5 to 12 mph, a 20 by 60-inch deck, a 325 lb maximum user weight, hydraulic folding and lifetime frame and motor cover, and an independent review agrees on those figures. At the $934 to $1,099 Horizon was asking when we checked, that is a strong price for 15% incline and a lifetime motor warranty. The step-up height is the figure that did not agree: Horizon lists 8 5/8 inches, while an independent review gives 9.5 inches measured to the side rails, so expect somewhere in that range. Like the 7.8 AT, it pairs over Bluetooth with third-party apps and needs no membership to work. One independent review describes its cushioning as on the soft side for the price and suggests it is not built for very high daily mileage. For a walker or runner whose maximum is 15%, the extra money for the 7.8 AT buys a wider deck and a higher weight limit, not a steeper grade.",
     },
     {
-      id: 'bowflex-t6',
-      name: 'Bowflex T6',
-      category: 'Cheapest 15% incline from a major brand',
-      badge: 'Best Budget',
-      amazonUrl: 'https://www.amazon.com/s?k=Bowflex+T6+Treadmill&tag=sktiger-20',
-      reviewUrl: '/bowflex-t6-treadmill/',
-      priceRange: 'Around $900–$1,300',
-      specs: '20 x 60 in. deck · 0-15% incline · 0.5-12 mph · 325 lb capacity · folding',
+      id: "sunny-auto-incline-treadmill",
+      name: "Sunny Health & Fitness Auto Incline Treadmill",
+      category: "Cheapest powered 15% incline",
+      badge: "Best Budget",
+      priceRange: "About $700 (Amazon, 6 Nov 2026)",
+      specs: "0–15% auto incline · 20 x 53 in. running surface · up to 10 mph · 2.5 HP brushless motor · 300 lb capacity · folds",
       pros: [
-        'Motorised incline to 15% at about $900 on Bowflex’s own store when we checked',
-        'Lifetime frame and motor warranty',
-        'A full 60-inch running length',
-        'No subscription needed; connects to third-party apps over Bluetooth',
+        "Arrives fully assembled; raise and lock the handlebar and it is ready",
+        "A 15% auto incline in 15 levels, with quick incline buttons",
+        "A 20-inch-wide, 53-inch-long running surface, longer than a walking pad’s",
+        "24 built-in programs and a free app",
       ],
       cons: [
-        'Bowflex quotes its motor as a test rating, not continuous horsepower',
-        'One year of in-home labour',
-        'A 20-inch deck width',
+        "A 53-inch surface and 10 mph top speed suit walking and jogging rather than running",
+        "A 2.5 HP brushless motor, smaller than the full-size picks",
+        "Sunny calls it a walking pad, but it is bulkier than one; check the folded size",
       ],
-      bottomLine:
-        'For buyers who want the most incline per dollar from an established brand and are happy with 15%.',
-      description:
-        "The T6 is the least expensive treadmill we found from a major brand that reaches 15%. Bowflex's comparison table lists up to 15% incline, a 12 mph top speed, a 20 by 60-inch running path and a 325 lb maximum user weight, at $899 when we checked against a $1,299 list price, and our own review of the T6 cross-checked those figures against an independent reviewer and a specialist retailer. It folds and carries lifetime frame and motor cover. Bowflex is careful to describe its 3.0 HP figure as a test rating that does not reflect operational horsepower, which is honest and worth reading correctly: it cannot be compared directly with a continuous-duty figure. For this page, the T6's role is to show where 15% now sits in the market — under $1,000 from an established brand — which is why paying incline-trainer money only makes sense if you need more than 15%. If you want a wider 22-inch deck, the Bowflex T9 has the same incline ceiling for more.",
+      bottomLine: "For buyers who want the most powered incline per dollar and are happy with 15%, a shorter deck and a 10 mph ceiling.",
+      description: "This is the least expensive way we found on Amazon to get a powered 15% incline. Sunny Health & Fitness sells it as a walking pad, but it is closer to a compact folding treadmill: it has a raised handlebar with a console, a running surface the Amazon listing gives as 20 inches wide and 53 inches long, and a top speed of 10 mph. The listing describes 15 auto incline levels reaching a 15% maximum, a 2.5 HP brushless motor, double-deck shock absorption, a 300 lb maximum user weight, 24 preset programs, pulse sensors, and Bluetooth connection to Sunny's free app. It arrives fully assembled: you raise and lock the handlebar and it is ready, and it folds for storage. Against the Horizon machines above, the trade is clear: the same 15% ceiling for several hundred dollars less, with a shorter surface, a smaller motor and a 10 mph top speed that suit brisk walking, incline walking and light jogging better than running, and without Horizon's lifetime frame and motor warranty. Amazon listed it at $699.99 on 6 November 2026, as checked for our auto incline treadmill guide.",
     },
   ],
   sections: [
@@ -207,7 +198,7 @@ export default {
           <p>
             For most buyers the choice is between two very different machines. An incline trainer
             such as the X16 is built to climb: steep walking and hiking at low speed, with the belt
-            speed limited as the grade rises. A conventional 15% treadmill such as the Horizon 7.8 AT
+            speed limited as the grade rises. A conventional 15% treadmill such as the Horizon 7.4 AT
             is built to run, with a 12 mph top speed available at every grade it offers. If you are not
             sure which you need, our
             <a href="/incline-trainer-vs-treadmill/" class="text-[#0F62FE] font-medium">incline trainer vs treadmill</a>
@@ -225,8 +216,10 @@ export default {
       id: 'quick-picks',
       heading: 'Our Picks at a Glance',
       html: `          <p>
-            Six machines in three tiers of maximum grade. The table gives each in one line; the cards
-            below carry the confirmed specifications and the caveats. Our guide to
+            Six machines from Amazon, in three tiers of maximum grade. The NordicTrack X Series, which
+            heads the ranking, is sold by NordicTrack and its retailers rather than on Amazon, so the
+            first two picks are the steepest machines Amazon lists. The table gives each in one line; the
+            cards below carry the specifications and the caveats. Our guide to
             <a href="/treadmill-incline-percent-vs-degrees/" class="text-[#0F62FE] font-medium">treadmill incline percent vs degrees</a>
             has the full conversion chart.
           </p>
@@ -238,12 +231,12 @@ export default {
               <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Why</th>
             </tr></thead>
             <tbody>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack X16</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">40% (21.8°)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most buyers who want maximum grade</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Highest incline for the least money</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack X24</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">40% (21.8°)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Daily iFIT route users</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Same grade, 24-inch screen</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TRUE Alpine Runner</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">30% (16.7°)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Serious home gyms</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Commercial-grade incline trainer</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon 7.8 AT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15% (8.5°)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Running and incline walking</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22-inch deck, no subscription</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sunny Health &amp; Fitness Versatile Treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">45% (24.2°), listing figure</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Steep walking from Amazon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Closest Amazon alternative to the X Series; 5 mph top speed</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">CURSOR 40% Incline Treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">40% (21.8°), manual</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Trying steep walking cheaply</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">40% for about $200; incline set by hand</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">FreeMotion i11.9 Incline Trainer</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">30% (16.7°)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A 30% machine from Amazon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">30% with decline for under $3,000; older model</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon 7.4 AT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15% (8.5°)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Running and incline walking</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22-inch deck, no subscription</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon 7.0 AT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15% (8.5°)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Value</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15% and lifetime motor near $1,000</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bowflex T6</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15% (8.5°)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lowest price</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15% from a major brand for about $900</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sunny Health &amp; Fitness Auto Incline Treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15% (8.5°)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lowest price</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Powered 15% for about $700; 53-inch deck</td></tr>
             </tbody>
           </table></div>`,
     },
@@ -252,11 +245,14 @@ export default {
       heading: 'The 6 Treadmills With the Highest Incline',
       products: true,
       html: `          <p>
-            The cards run from the steepest grade down. Every maximum incline below is confirmed on
-            the manufacturer's own product page or product data as of 14 October 2026, and every
-            machine was listed for sale that day. Within each tier the order reflects deck,
-            warranty and price. If decline matters to you as much as climbing, the two NordicTrack X
-            Series machines also lead our
+            The cards run from the steepest grade down. The NordicTrack X16 and X24, the steepest
+            machines we could confirm, are sold by NordicTrack and its retailers, not on Amazon, so the
+            first two cards show the nearest alternatives Amazon lists; their incline figures are the
+            listings' own and are not independently confirmed. The Horizon machines' maximum inclines
+            are confirmed on Horizon's own product pages, and every machine was listed for sale when we
+            checked. Within each tier the order reflects deck,
+            warranty and price. If decline matters to you as much as climbing, the NordicTrack X
+            Series also features in our
             <a href="/best-treadmills-with-decline/" class="text-[#0F62FE] font-medium">treadmills with decline</a>
             roundup.
           </p>`,
@@ -282,7 +278,9 @@ export default {
             which would make it the highest incline on this page. We could find no independent review
             of it, its own page gives two different deck lengths, and it showed a single customer
             review when we looked, so we could not confirm the figures to the standard the rest of the
-            list meets. <strong>NordicTrack's Ultra 1</strong> reaches 15% with a 15 mph top speed,
+            list meets. Sunny's Versatile Treadmill, listed on Amazon with the same -3% to 45% range, has
+            the same gap in independent confirmation; it appears in the cards only as the closest Amazon
+            alternative to the X Series. <strong>NordicTrack's Ultra 1</strong> reaches 15% with a 15 mph top speed,
             but we could not confirm a current US price. <strong>Sole's</strong> 2026 <a href="/sole-f63-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>F63</a> page lists incline
             in levels rather than per cent, and Sole's current specifications are contested across
             sources; our <a href="/best-sole-treadmills/" class="text-[#0F62FE] font-medium">Sole roundup</a>
@@ -292,7 +290,8 @@ export default {
           </p>
           <p>
             We searched the US Consumer Product Safety Commission's recall and warning databases for
-            each brand. None of the six machines here is under an open recall or warning. Horizon's
+            each brand. None of the six machines here is under an open recall or warning; FreeMotion's one CPSC
+            recall we found, in 2006, covered cable cross machines, not incline trainers. Horizon's
             2022 recall covered the T101-05 folding treadmill, not the 7-series, and TRUE's 2023 recall
             covered a console fitted to its commercial TC900 treadmill and other gym equipment, not
             the Alpine Runner.
@@ -342,14 +341,16 @@ export default {
             home treadmills we could confirm at 40%. They are a distinct design: a lift system
             strong enough to raise the whole deck a long way, a non-folding frame, a high step-up and
             belt speed that is limited at steep grades. They also decline to -6%. Prices start
-            around $2,800.
+            around $2,800, and they are sold by NordicTrack and its retailers rather than on Amazon.
           </p>
           <p>
             <strong>30%: commercial incline trainers.</strong> The TRUE Alpine Runner reaches 30% and is
             sold through specialist dealers to gyms and home buyers alike, from about $10,300. Other
             commercial brands build incline trainers in this range too, but the Alpine Runner was the
             one we could confirm against a current manufacturer page, a retailer price and
-            independent coverage.
+            independent coverage. It is not sold on Amazon, so the product card for this tier is the
+            older FreeMotion i11.9 Incline Trainer, which Amazon lists with a 30% grade and decline
+            for about $2,875.
           </p>
           <p>
             <strong>15%: the mainstream ceiling.</strong> Horizon, <a href="/bowflex/" class="text-[#0F62FE] font-medium" data-autolink>Bowflex</a>, Sole and many others stop
@@ -378,7 +379,7 @@ export default {
             happens to that speed on a hill.
           </p>
           <p>
-            On a conventional 15% treadmill, nothing much: the Horizon and Bowflex machines here list
+            On a conventional 15% treadmill, nothing much: the Horizon machines here list
             0.5 to 12 mph across their whole incline range, so you can run fast on a gentle grade or
             walk on a steep one. On an incline trainer, the speed ceiling drops as the deck climbs.
             Two independent reviews of the NordicTrack X24 report a cap of about 8 mph once the grade
@@ -501,7 +502,7 @@ export default {
   faqs: [
     {
       q: 'What treadmill has the highest incline?',
-      a: 'Among current home treadmills we could confirm on 14 October 2026, the NordicTrack X16 and X24 go highest, to 40%, which is about 21.8 degrees. The TRUE Alpine Runner, a commercial machine sold to home buyers, reaches 30%. Most other established treadmills stop at 15%. Sunny Health lists a 45% model, but we could not confirm it independently.',
+      a: 'Among current home treadmills we could confirm on 14 October 2026, the NordicTrack X16 and X24 go highest, to 40%, which is about 21.8 degrees. The TRUE Alpine Runner, a commercial machine sold to home buyers, reaches 30%. Most other established treadmills stop at 15%. Sunny Health &amp; Fitness lists 45% for its Versatile Treadmill on Amazon, but we could not confirm that figure independently.',
     },
     {
       q: 'Is there a 15 degree incline treadmill?',
@@ -513,7 +514,7 @@ export default {
     },
     {
       q: 'Can you run at 12 mph on a high-incline treadmill?',
-      a: 'Usually not at steep grades. Independent reviews of the NordicTrack X24 report its speed limited to about 8 mph beyond roughly 16% and 6 mph from 25% upward, and a review of the TRUE Alpine Runner reports similar limits. Conventional 15% treadmills such as the Horizon 7.8 AT list 12 mph across their full incline range.',
+      a: 'Usually not at steep grades. Independent reviews of the NordicTrack X24 report its speed limited to about 8 mph beyond roughly 16% and 6 mph from 25% upward, and a review of the TRUE Alpine Runner reports similar limits. Conventional 15% treadmills such as the Horizon 7.4 AT list 12 mph across their full incline range.',
     },
     {
       q: 'How much ceiling height does a 40% incline treadmill need?',
@@ -576,10 +577,11 @@ export default {
     `The treadmill with the highest incline you can buy for home use is the
             <strong class="text-white">NordicTrack X16</strong> or its big-screen twin the
             <strong class="text-white">X24</strong>: 40%, or 21.8 degrees, with -6% decline. They are
-            climbing machines, with speed limited at steep grades, a high step-up and no fold.`,
+            climbing machines, with speed limited at steep grades, a high step-up and no fold, and they
+            are not sold on Amazon; the steepest machine Amazon lists is Sunny's Versatile Treadmill.`,
     `If 15% is enough — and for most runners and walkers it is — the
-            <strong class="text-white">Horizon 7.8 AT</strong> gives you it on a wide deck with 12 mph
+            <strong class="text-white">Horizon 7.4 AT</strong> gives you it on a wide deck with 12 mph
             at every grade and no subscription, and the <strong class="text-white">Horizon 7.0 AT</strong>
-            and <strong class="text-white">Bowflex T6</strong> do it for around $1,000 or less.`,
+            Sunny's <strong class="text-white">Auto Incline Treadmill</strong> do it for around $1,000 or less.`,
   ],
 };

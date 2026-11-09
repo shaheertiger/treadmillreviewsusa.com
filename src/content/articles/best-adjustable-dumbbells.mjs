@@ -28,7 +28,9 @@ export default {
   note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
           dumbbells, and no figure on this page is our own measurement. Each set was confirmed as
           currently sold on 16 October 2026 on the maker's own store (PowerBlock, REP Fitness, Core
-          Home Fitness, SMRTFT, Ironmaster, CAP Barbell and Nike Strength), and its weight range,
+          Home Fitness, SMRTFT, CAP Barbell, and Ironmaster and Nike Strength for the sets we discuss
+          but could not card), or on 9 November 2026 on Amazon and Titan's store for the Titan
+          handles, and its weight range,
           increments, length and warranty were checked on that date against at least one independent
           source — a review site's specification table or a second retailer. A figure appears on this
           page only where the maker and an independent source agree; where they conflicted — on
@@ -64,9 +66,9 @@ export default {
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Core Home Fitness Adjustable Dumbbell Set</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best value twist-handle</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5 to 50 lb for around $380 a pair; twist the handle, lift</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">PowerBlock Pro 100 EXP</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Heavy lifting, bought in stages</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Pin selector that expands to 100 lb a hand</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NÜOBELL 80</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Fixed-dumbbell feel to 80 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Open handle, 16 settings, about 17 inches long</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Ironmaster Quick-Lock (75 lb)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Durability and dropping</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">All-metal plate-loaded design; the maker says you can drop it</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Titan Loadable Olympic Dumbbell Handles</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Durability, if you own plates</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">All-steel handles for Olympic plates, rated to 400 lb each</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">CAP 40 lb Cast Iron Set</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Tight budget</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Classic spin-lock handles and plates for about $50</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Nike Adjustable Dumbbells</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Buyers who want Nike</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10 to 65 lb in cast iron; real, on sale, and the most expensive per pound here</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">PowerBlock Elite USA 90</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A premium set, in place of Nike's</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Steel pin-selector set to 90 lb for about Nike's price</td></tr>
             </tbody>
           </table></div>
           <p>
@@ -89,7 +91,10 @@ export default {
           </p>
           <p>
             The cards are in no strict order after the first two. Where a maker and an independent
-            source disagreed on a figure, the card says so rather than choosing one.
+            source disagreed on a figure, the card says so rather than choosing one. Two sets we
+            discuss, Ironmaster's Quick-Lock and Nike's adjustable dumbbells, are sold through their
+            makers' own stores rather than on Amazon, so their cards show the nearest Amazon
+            alternatives: Titan's loadable handles and PowerBlock's Elite USA 90.
           </p>`,
     },
     {
@@ -107,7 +112,8 @@ export default {
             as on sale on 16 October 2026 and that at least one independent source had described in
             enough detail to cross-check. The independent sources were Garage Gym Reviews'
             specification tables, Science for Sport's adjustable dumbbell comparison, a detailed
-            Ironmaster review on Garage-Gyms.com, Rogue Fitness's listing for the NÜOBELL, Iron
+            Ironmaster review on Garage-Gyms.com, Titan's store, Garage Gym Reviews and Outdoor Gear
+            Lab for the Titan handles (checked 9 November), Rogue Fitness's listing for the NÜOBELL, Iron
             Company's listing for the CAP set, and Wellworthy's write-up of the Nike set.
           </p>
           <p>
@@ -136,13 +142,14 @@ export default {
             supplied with its Commercial Pro 100 set, because plates above 55 lb could slip off them.
             The notice covers only those handles, not the Pro 100 EXP carded here, and we found no
             recalls for REP's dumbbells, Core Home Fitness, SMRTFT, Ironmaster, CAP Barbell or Nike's
-            fitness equipment.
+            fitness equipment. Titan's one recall alert we found, in 2018, concerns weight-lifting
+            safety straps, not its dumbbell handles.
           </p>
           <p>
             Finally, we left out sets we could only verify from the maker. PowerBlock's Elite USA 90 is
-            a well-regarded steel-plate alternative to the Pro 100 EXP, but we could not find an
-            independent source that confirmed its figures on the day, so it is mentioned here rather
-            than carded.
+            a well-regarded steel-plate alternative to the Pro 100 EXP; we could not confirm its
+            figures independently in October, and it now appears only as the Amazon alternative to
+            the Nike pair, with its conflicting starting weight left off the card.
           </p>`,
     },
     {
@@ -379,7 +386,8 @@ export default {
             but slow and can work loose, so they need checking every set; a 2021 recall of one brand's
             Olympic dumbbell handles involved locking collars that slipped. <strong>Best for</strong>
             tight budgets (spin-lock), and for people who want an adjustable set that will survive
-            heavy, unpolished use (Ironmaster).
+            heavy, unpolished use (Ironmaster, or loadable Olympic handles such as Titan's if you
+            already own plates).
           </p>`,
     },
     {
@@ -558,7 +566,7 @@ export default {
       name: 'PowerBlock Pro 100 EXP',
       category: 'Expandable pin-selector dumbbells, to 100 lb',
       badge: 'Best for Heavy Lifting',
-      amazonUrl: 'https://www.amazon.com/s?k=PowerBlock+Pro+100+EXP+Adjustable+Dumbbells&tag=sktiger-20',
+      amazonUrl: 'https://www.amazon.com/dp/B0CTJ627VD?tag=sktiger-20',
       priceRange: '$539–$1,196',
       specs: '5–100 lb per hand with expansion kits · magnetic selector pin · about 19.2 in. long at 100 lb · 5-year residential warranty · sold as a pair',
       pros: [
@@ -575,15 +583,15 @@ export default {
       bottomLine:
         'For lifters who will outgrow 50 or 60 lb. Start with the 40 or 60 lb stage and add kits as you get stronger.',
       description:
-        "The Pro 100 EXP is the expandable pin-selector design PowerBlock is known for: the handle sits inside a nest of colour-coded plates, and a magnetic pin pushed in at the right band decides how many come with it. PowerBlock sells it as a pair in four stages, from a 40 lb maximum up to 100 lb, with each expansion kit adding 20 lb per hand. That staging is its real advantage — you buy heavier plates when you need them. Garage Gym Reviews' specification table agrees with PowerBlock's 5 to 100 lb range and roughly 19.2-inch length at full weight, and Science for Sport lists the same five-year warranty, which PowerBlock limits to residential use. PowerBlock says the included micro weights allow 2.5 lb steps; Science for Sport lists only 5 lb steps, so we have kept the smaller figure off the specification line. Reviewers' common complaints are the boxy cage, the length at full weight, and a selection system that takes a few sessions to learn. PowerBlock describes the plates as urethane-coated, and notes its Amazon listing is for a single dumbbell rather than a pair.",
+        "The Pro 100 EXP is the expandable pin-selector design PowerBlock is known for: the handle sits inside a nest of colour-coded plates, and a magnetic pin pushed in at the right band decides how many come with it. PowerBlock sells it as a pair in four stages, from a 40 lb maximum up to 100 lb, with each expansion kit adding 20 lb per hand. That staging is its real advantage — you buy heavier plates when you need them. Garage Gym Reviews' specification table agrees with PowerBlock's 5 to 100 lb range and roughly 19.2-inch length at full weight, and Science for Sport lists the same five-year warranty, which PowerBlock limits to residential use. PowerBlock says the included micro weights allow 2.5 lb steps; Science for Sport lists only 5 lb steps, so we have kept the smaller figure off the specification line. Reviewers' common complaints are the boxy cage, the length at full weight, and a selection system that takes a few sessions to learn. PowerBlock describes the plates as urethane-coated, and notes its Amazon listing is for a single dumbbell rather than a pair. That listing, titled Pro 100 EXP Single Adjustable Dumbbell, 5-100 lb, was $598 on 9 November 2026, so a pair costs twice that.",
     },
     {
       id: 'nuobell-80',
-      name: 'SMRTFT NÜOBELL 80 lb Adjustable Dumbbells',
+      name: 'NÜOBELL 80 lb Adjustable Dumbbells (Pair)',
       category: 'Twist-lock adjustable dumbbells, 5 to 80 lb',
       badge: 'Best Twist-Handle to 80 lb',
-      amazonUrl: 'https://www.amazon.com/s?k=NUOBELL+80+lb+Adjustable+Dumbbells&tag=sktiger-20',
-      priceRange: '$845–$865',
+      amazonUrl: 'https://www.amazon.com/dp/B0DCWTX87X?tag=sktiger-20',
+      priceRange: '$730–$865',
       specs: '5–80 lb per hand · 5 lb steps (16 settings) · about 17 in. long · 2-year warranty · sold as a pair',
       pros: [
         'Open handle with no cage, so it handles more like a fixed dumbbell than most adjustables',
@@ -599,31 +607,31 @@ export default {
       bottomLine:
         'For people who want a twist-handle set that goes heavy and feels like a fixed dumbbell, and who will never drop it.',
       description:
-        "The NÜOBELL, sold in the US by SMRTFT, uses a twist-lock handle: rotate it in the cradle to the weight you want, and the plates for that setting lock to it. SMRTFT lists the 80 lb version at 5 to 80 lb per hand in 5 lb steps across 16 settings, at about 17 inches long, with a two-year warranty that it offers to extend for a fee. Rogue Fitness's listing and Science for Sport's comparison table agree on the range, steps, length and two-year term. Its appeal is shape: the open handle and compact steel plates make it look and balance more like a fixed dumbbell than any cage or long-plate design. The recurring criticism is durability. Science for Sport notes that plastic parts form part of the adjustment mechanism and that the warranty does not cover drops, and owner reviews on Rogue's listing include reports of an internal plastic part breaking. On 16 October SMRTFT listed the pair in stock while Rogue showed it awaiting stock. Listings give different handle lengths, so we have left that figure out.",
+        "The NÜOBELL, sold in the US by SMRTFT, uses a twist-lock handle: rotate it in the cradle to the weight you want, and the plates for that setting lock to it. SMRTFT lists the 80 lb version at 5 to 80 lb per hand in 5 lb steps across 16 settings, at about 17 inches long, with a two-year warranty that it offers to extend for a fee. Rogue Fitness's listing and Science for Sport's comparison table agree on the range, steps, length and two-year term. Its appeal is shape: the open handle and compact steel plates make it look and balance more like a fixed dumbbell than any cage or long-plate design. The recurring criticism is durability. Science for Sport notes that plastic parts form part of the adjustment mechanism and that the warranty does not cover drops, and owner reviews on Rogue's listing include reports of an internal plastic part breaking. On 16 October SMRTFT listed the pair in stock while Rogue showed it awaiting stock, and on 9 November 2026 NÜOBELL's own Amazon listing, which gives the same 5 to 80 lb range, 5 lb steps and two-year warranty, showed the pair at $730.55. Listings give different handle lengths, so we have left that figure out.",
     },
     {
-      id: 'ironmaster-quick-lock',
-      name: 'Ironmaster Quick-Lock Adjustable Dumbbell System (75 lb Set)',
-      category: 'Plate-loaded screw-lock dumbbells, all metal',
-      badge: 'Most Durable',
-      amazonUrl: 'https://www.amazon.com/s?k=Ironmaster+Quick-Lock+Adjustable+Dumbbell+System+75&tag=sktiger-20',
-      priceRange: 'About $700',
-      specs: '10–75 lb per hand · 2.5 lb steps · 14.5 in. long at 75 lb · 1.25 in. grip · lifetime warranty',
+      id: 'titan-loadable-olympic-dumbbell-bars',
+      name: 'Titan Fitness Loadable 20 in. Olympic Dumbbell Handles (Pair)',
+      amazonUrl: 'https://www.amazon.com/dp/B0BKTQXF8K?tag=sktiger-20',
+      category: 'All-steel loadable handles for Olympic plates',
+      badge: 'Most Durable on Amazon',
+      priceRange: '$105–$125 per pair',
+      specs: '20 in. long · 28 mm knurled shaft · 50 mm sleeves with 6.5 in. loadable length · 400 lb capacity per handle (maker) · about 12 lb each · 1-year warranty',
       pros: [
-        'All-metal construction with no selector mechanism to fail',
-        'The only maker here that says outright you may drop its dumbbells',
-        'Feels and grips like a fixed dumbbell, with nothing restricting your hand',
-        'Add-on kits take it to 120 lb, and later 165 lb, per hand',
+        'All-steel, with no selector or plastic part to fail',
+        'Load any 2-inch Olympic plates you already own, to far more than any selector set',
+        'Bronze bushings let the sleeves turn, like an Olympic barbell',
+        'The cheapest way on this page to a heavy dumbbell, if you have the plates',
       ],
       cons: [
-        'Slower to change than selector designs: you remove screws and swap plates',
-        'Loose plates to store, and the stand is sold separately',
-        'Sold mainly through Ironmaster’s own store rather than major retailers',
+        'Plates and collars are not included, so the real cost depends on what you own',
+        'At 20 inches long, they can get in the way on presses and curls, as one review notes',
+        'Slowest to change of anything here: collars off, plates swapped, collars on',
       ],
       bottomLine:
-        'The set to buy if durability matters more than change speed, or if you train hard enough that the occasional drop is inevitable.',
+        'For a lifter who already owns Olympic plates and wants an adjustable dumbbell that will survive heavy, unpolished use.',
       description:
-        "Ironmaster's Quick-Lock is plate-loaded, but faster than a classic spin-lock: each end of the handle takes a locking screw that releases with a partial turn, and the plates interlock so they sit tight without rattling. The 75 lb set includes two handles, four locking screws, 24 five-pound plates and four 2.5 lb plates. Each empty handle weighs 5 lb and each screw 2.5 lb, so the starting weight is 10 lb per dumbbell, adjustable in 2.5 lb steps to 75 lb. Ironmaster and a detailed independent review on Garage-Gyms.com agree on the 2.5 lb steps, the 14.5-inch length at 75 lb and the 1.25-inch grip diameter. The warranty is lifetime; one retailer specifies in-home use. Ironmaster says there are no plastic or fragile parts and tells owners to go ahead and drop them, which no other maker on this page does. The cost is time: changing weight means removing screws and moving plates, which is fine for straight sets and slow for supersets. Ironmaster also sells a 45 lb starter set for about $500 and add-on kits to 120 and 165 lb.",
+        "Ironmaster's Quick-Lock, the all-metal plate-loaded set we would otherwise list here, is sold mainly through Ironmaster's own store and not on Amazon, so this card shows the most drop-tolerant adjustable design Amazon sells: a pair of loadable handles for Olympic plates. Titan's store and the Amazon listing agree on a 20-inch handle with a 28 mm knurled shaft, 50 mm sleeves with 6.5 inches of loadable length on bronze bushings, a 400 lb capacity per handle and a weight of about 12 lb each, in chrome-finished steel; Titan gives a one-year warranty. Garage Gym Reviews describes them as a budget option for lifters who already own Olympic plates, and Outdoor Gear Lab notes the 20-inch length can limit range of motion on some movements. Nothing in them can disengage the way a selector can, which is the Ironmaster's main virtue too, but they are longer than the Ironmaster's 14.5 inches at 75 lb and slower to change, and the plates and collars are extra. Titan listed the pair at $109.97 to $124.99 on its store, and Amazon showed $104.99 on 9 November 2026.",
     },
     {
       id: 'cap-40-lb-cast-iron',
@@ -650,28 +658,28 @@ export default {
         "Spin-lock dumbbells are the oldest adjustable design: a threaded handle, cast-iron plates and a collar that screws down to hold them. CAP's 40 lb set comes with four 5 lb and four 2.5 lb plates, two threaded handles and four spin-lock collars, and Iron Company's listing for the same CAP set agrees on the contents. The set totals 40 lb including handles and collars, which works out to about 20 lb per hand when split evenly — enough for curls, raises and lighter rows for many beginners, but not for heavy presses or lunges. It costs about $50 on CAP's own store, far less per pound than any selector design. The trade-offs are speed and attention. Changing weight means unscrewing two collars, swapping plates and retightening, and an owner review we found notes the collars gradually work loose during use, so check them before every set. The handles take standard 1-inch-hole plates, so you can add weight later. CAP's page does not state a warranty; retailers list 30 days.",
     },
     {
-      id: 'nike-adjustable-dumbbells',
-      name: 'Nike Adjustable Dumbbells',
-      category: 'Cast-iron adjustable dumbbells, 10 to 65 lb',
-      badge: 'If You Want Nike',
-      amazonUrl: 'https://www.amazon.com/s?k=Nike+Adjustable+Dumbbells+10-65+lb&tag=sktiger-20',
-      priceRange: '$899–$1,164',
-      specs: '10–65 lb per hand · 5 lb steps (12 settings) · 15.5 in. long fully loaded · 35 mm knurled handle · sold as a pair',
+      id: 'powerblock-elite-usa-90',
+      name: 'PowerBlock Elite USA 90 Adjustable Dumbbells',
+      amazonUrl: 'https://www.amazon.com/dp/B0BSR6JN85?tag=sktiger-20',
+      category: 'Premium pin-selector set, steel, to 90 lb',
+      badge: 'Premium Alternative',
+      priceRange: 'About $869 (Amazon, 9 Nov 2026)',
+      specs: 'Pin selector · up to 90 lb per hand in 2.5 lb steps (listing) · stages 1 to 3 included · knurled steel handle · sold as a pair',
       pros: [
-        'A real, currently sold Nike product, in cast iron with a powder-coated finish',
-        'Octagonal plates that resist rolling, and flat ends for resting on your thighs',
-        'Starts at 10 lb and goes to 65 lb, a useful range for most home training',
-        'Optional stand holds the dumbbells about 20 inches off the floor',
+        'A premium price close to the Nike pair’s, with a heavier 90 lb maximum',
+        '2.5 lb steps across the range, per the listing',
+        'Knurled steel handle; retailers and owners describe it as made in the USA',
+        'All three expansion stages included, so there is nothing more to buy',
       ],
       cons: [
-        'The most expensive per pound on this page',
-        'Nike’s product page does not describe the selector mechanism or a warranty',
-        'Little independent long-term reporting so far',
+        'The listing says 5 lb to start, while a retailer and owners give 10 lb; check if light weights matter',
+        'The same boxy cage and length as other PowerBlocks',
+        'The listing gives a five-year residential warranty, with no cover for commercial use',
       ],
       bottomLine:
-        'Worth it if you want the Nike set and its looks. On features alone, the QuickDraw or NÜOBELL cover similar ground for less per pound.',
+        'For a buyer drawn to the Nike pair’s premium build and price who would rather have a heavier, longer-established set they can buy on Amazon.',
       description:
-        "Yes, Nike sells adjustable dumbbells. They are listed on the Nike Strength store, which is operated under licence by Dimension 6 Fitness, as a pair adjusting from 10 to 65 lb per hand in 5 lb steps, twelve settings in all, with cast-iron plates, a 35 mm knurled chrome handle and a fully loaded length of 15.5 inches. Wellworthy's independent write-up reports the same range, steps, handle diameter, dimensions and $899 price. On 16 October the pair was $899, or $1,164 with Nike's matching stand. Nike highlights octagonal plates that stop the dumbbells rolling and flat end plates for resting the heaviest settings on your legs. What we could not confirm: Nike's product page does not say how the selector works — one write-up describes a dial — or state a warranty, and we found little independent long-term reporting. It is also the most expensive per pound here. We did not find it on Amazon; the link below is a search, so buy from Nike Strength or an authorised retailer and check the seller.",
+        "Nike's adjustable dumbbells are sold on the Nike Strength store, not on Amazon, so this card shows a premium alternative at about the same price that Amazon does sell. The Elite USA 90 is PowerBlock's US-built steel set and the one we mentioned above as a steel-plate alternative to the Pro 100 EXP. Its Amazon listing gives a range to 90 lb per hand in 2.5 lb steps, a magnetic selector pin, stages 1, 2 and 3 included, and a five-year residential warranty that does not apply to commercial use; retailer data and owner reviews describe it as made in the USA with knurled steel handles. The listing gives the lightest setting as 5 lb, while a retailer listing and an owner review give 10 lb, so we have left the minimum off the card. Against the Nike pair it goes 25 lb heavier and adds 2.5 lb steps, for slightly less money, but it has PowerBlock's boxy cage rather than Nike's round-plate look. PowerBlock's one CPSC recall, of grip handles sold with the Commercial Pro 100, does not cover this set. Amazon listed the pair at $869 on 9 November 2026.",
     },
   ],
   faqs: [
@@ -747,7 +755,9 @@ export default {
             50 lb size and expand it later; on a tighter budget the Core Home Fitness set does the job
             to 50 lb if you treat it gently. If you need to go heavy, the PowerBlock Pro 100 EXP grows
             with you, and if you are hard on equipment, the all-metal Ironmaster is the one built to
-            survive it. Nike's set is real and well specified, but you pay most per pound for the name.`,
+            survive it; on Amazon, Titan's loadable handles do the same job if you own Olympic plates.
+            Nike's set is real and well specified, but you pay most per pound for the name, and the
+            PowerBlock Elite USA 90 gives you more weight for similar money.`,
     `Whatever you buy, check the recall list for any used set, check engagement before every set,
             and lower rather than drop unless the maker says otherwise. Then give the dumbbells a proper
             place to live, with a bench and a floor that can take them —

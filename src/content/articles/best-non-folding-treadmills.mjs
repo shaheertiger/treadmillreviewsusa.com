@@ -24,11 +24,15 @@ export default {
           checked on that date against the maker's own product page (Spirit Fitness, NordicTrack and
           Life Fitness) and at least one source that does not make it: a major US retailer's listing
           and, where one exists, an independent review. For each machine we also confirmed from the
-          maker's own specification or product description that it does not fold. A figure appears
+          maker's own specification or product description that it does not fold, except the
+          FreeMotion i11.9, which stands in for the X16 and whose fold we could not confirm. The
+          Matrix T5x and FreeMotion cards carry the figures checked for our Cybex and incline trainer
+          guides in October and November 2026. A figure appears
           on a product card only where the maker and an independent source agree; where they
           disagreed, or where only the maker gave a figure, we left it out or say so in the text.
           None of these are our own measurements. Prices are those we saw on maker and retailer
-          sites on 15 October 2026 and change often, so confirm the price, the specification and the
+          sites on 15 October 2026 and change often; the Sole TT8's figures and price are those checked
+          for our long-distance running guide on 6 November 2026, so confirm the price, the specification and the
           warranty for the exact unit before you order. We earn a commission if you buy through the
           Amazon links on this page; it does not change which products we list or what we say about
           them.`,
@@ -38,18 +42,21 @@ export default {
           tends to be stiffer, the decks on fixed machines tend to be larger, and the warranties
           tend to be longer — tendencies, not rules, and you pay for them in floor space, weight
           and price. This page names five non-folding machines we could verify, from about $2,500
-          to about $7,600, explains what a fixed deck does and does not buy, and is honest about the
+          to about $4,900, explains what a fixed deck does and does not buy, and is honest about the
           buyers who should fold after all.`,
   sections: [
     {
       id: 'quick-picks',
       heading: 'Our Picks at a Glance',
       html: `          <p>
-            Five machines, each confirmed by its maker as non-folding. The short version: the Spirit
+            Five machines. Our two first choices, the Spirit XT685 and NordicTrack X16, are sold through
+            Spirit's dealers and by NordicTrack rather than on Amazon US, so their cards show the
+            nearest fixed-frame machines Amazon lists, the Matrix T5x and FreeMotion i11.9. The short version: the Spirit
             <a href="/spirit-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>XT685</a> is the best all-round fixed-deck treadmill for the money; the NordicTrack X16 is the
             cheapest powered one we could verify and the one to choose for steep incline walking;
-            and the two Life Fitness machines are the step up in build and warranty, with the Club
-            Series+ as the gym-grade option for buyers whose budget allows it.
+            the two Life Fitness machines are the step up in build and warranty; and the Sole TT8 is the
+            light-commercial option for heavy use, in place of Life Fitness's gym-grade Club Series+,
+            which is sold through dealers and Life Fitness direct rather than on Amazon.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead>
@@ -60,11 +67,11 @@ export default {
               </tr>
             </thead>
             <tbody>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Spirit XT685</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most people</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22 x 60-inch deck, 425 lb rating, lifetime motor and deck cover</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack X16</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Steep incline walking</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">40% incline and 6% decline on a 22 x 60-inch belt</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Matrix T5x</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most people, on Amazon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Our pick, the Spirit XT685, is sold by dealers; the nearest on Amazon is this club treadmill, mostly remanufactured</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">FreeMotion i11.9 Incline Trainer</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Steep incline walking</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">30% incline with decline on a 22-inch-wide belt; stands in for the NordicTrack X16</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Life Fitness T3</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A gym brand at a home price</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">60-inch deck, 15% incline, ten years on the motor</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Life Fitness Run CX</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Heavy daily use</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Wider deck, 400 lb rating, seven years on parts</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Life Fitness Club Series+</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Gym-grade at home</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4.0 HP continuous AC motor, lifetime motor, ten years on parts</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sole TT8</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Light-commercial use at home</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4.0 HP motor, -6% decline to 15% incline, 400 lb rating per SOLE</td></tr>
             </tbody>
           </table></div>
           <p>
@@ -266,7 +273,7 @@ export default {
       heading: 'Delivery, Weight and Power',
       html: `          <p>
             The practicalities of a fixed-frame treadmill start before you run on it. Every machine
-            here is heavy — 243 lb for the <a href="/life-fitness-t3-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Life Fitness T3</a> and 434 lb for the Club Series+, assembled,
+            here is heavy — 243 lb for the <a href="/life-fitness-t3-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Life Fitness T3</a>, 341 lb for the Run CX and over 300 lb for the Sole TT8, assembled,
             with the NordicTrack X16 weighing 445 lb in its box — and that shapes delivery, the route
             into the room and the floor it stands on.
           </p>
@@ -302,8 +309,9 @@ export default {
       html: `          <p>
             Heavier users are one of the groups for whom a fixed frame makes the most sense, and
             weight capacity is where the machines on this page differ most. The Spirit XT685 is
-            rated to 425 lb, the NordicTrack X16, Run CX and Club Series+ to 400 lb, and the Life
-            Fitness T3 to 350 lb, figures on which each maker and an independent source agree.
+            rated to 425 lb, the NordicTrack X16 and Run CX to 400 lb, and the Life Fitness T3 to
+            350 lb, figures on which each maker and an independent source agree; SOLE rates the TT8 to
+            400 lb.
           </p>
           <p>
             Treat any capacity as a ceiling rather than a target. A machine used every day close to
@@ -316,9 +324,8 @@ export default {
           </p>
           <p>
             Two other figures matter more for heavier runners than for most. The first is the motor's
-            continuous rating rather than its peak: the Run CX and Club Series+ are among the few
-            home treadmills whose maker states a continuous figure that an independent source
-            repeats. The second is deck width. A 22-inch belt gives more margin for a wider stance
+            continuous rating rather than its peak: the Run CX is one of the few home treadmills whose
+            maker states a continuous figure that an independent source repeats. The second is deck width. A 22-inch belt gives more margin for a wider stance
             and for drifting to one side when tired, which is one reason four of the five machines
             here use one.
           </p>
@@ -424,52 +431,46 @@ export default {
   ],
   products: [
     {
-      id: 'spirit-xt685',
-      name: 'Spirit XT685',
-      category: 'Best Non-Folding Treadmill Overall',
-      badge: 'Best Overall',
-      amazonUrl: 'https://www.amazon.com/s?k=Spirit+Fitness+XT685+Treadmill&tag=sktiger-20',
-      priceRange: '$2,900–$3,200',
-      specs: '22 x 60 in. deck · 0.5–12 mph · 15 incline levels · 425 lb capacity · 4.0 HP · non-folding',
+      id: "matrix-t5x",
+      name: "Matrix T5x",
+      category: "Closest on Amazon to Our Pick, the Spirit XT685",
+      badge: "Closest on Amazon",
+      priceRange: "$3,999-$4,399 remanufactured (one US reseller, 14 Oct 2026)",
+      specs: "60 in. running length · 5.0 HP AC drive · 0.5-12 mph · 0-15% incline · non-folding · dedicated 20 A circuit",
       pros: [
-        'Lifetime frame, motor and deck cover plus ten years on parts for home use',
-        'A 425 lb maximum user weight, the highest on this page',
-        'A 22-inch-wide deck and 3-inch rollers on a frame Spirit describes as non-folding',
-        'Spirit also lists a light-commercial warranty for non-dues facilities',
+        "A 5.0 HP AC drive built for club use, agreed across Matrix’s manual and reseller listings",
+        "Incline to 15% and a full 60-inch running length",
+        "Simple LED console with no subscription or platform to go out of date",
+        "Remanufactured units come with a reseller warranty that can include on-site labour",
       ],
       cons: [
-        'One year of labour, the same as most home treadmills',
-        'Sold mainly through Spirit and specialist dealers rather than big-box stores',
-        'A plain colour LCD console; bring your own tablet for classes or apps',
+        "Not on Matrix’s US home store, so a new one with a Matrix residential warranty is not the realistic option",
+        "Width, user-weight rating and machine weight conflict across sources and generations",
+        "Needs a dedicated 20-amp circuit with a matching outlet on a 120-volt supply",
+        "Heavy, long and non-folding; delivery and access need planning",
       ],
-      bottomLine:
-        'The non-folding treadmill to buy for most people: a big deck, a high weight rating and the longest home parts warranty on this page, for about $3,000.',
-      description:
-        'The XT685 is the machine we would point most fixed-deck buyers to first. Spirit and a major US retailer agree on a 22 by 60-inch running surface, a 4.0 HP motor, 0.5 to 12 mph, powered incline from 0 to 15, a 425 lb maximum user weight, a 6.9-inch step-up height and a machine weight of about 278 lb; the retailer’s listing describes the incline as 0 to 15%, Spirit as 15 levels in half steps. Spirit’s product description says it uses a non-folding frame, and the retailer lists “Folding Design: No”. The home warranty is the standout: lifetime on frame, motor and deck, ten years on parts and one year of labour, which both sources state. Spirit sells a folding sibling, the XT485, but only the XT685 page lists larger 3-inch rollers and a light-commercial warranty. It has a 9-inch colour LCD and Bluetooth, which Spirit says works with apps such as Zwift and Kinomap. Spirit listed it at $3,199.99 on 15 October; the retailer had it at $2,899.99.',
+      bottomLine: "A non-folding club treadmill you can find through Amazon, mostly remanufactured. Buy it only with a written warranty and a 20-amp circuit ready.",
+      description: "The Spirit XT685, our first choice among non-folding treadmills, is sold through Spirit's dealers rather than on Amazon US, so this card shows the nearest fixed-frame machine with an Amazon listing; its figures are those checked for our Cybex guide. Matrix's own manual describes it as non-folding. The T5x is a Matrix commercial treadmill sold under the same name in at least an older and a newer style. Matrix’s owner’s manual for the MX-T5x and independent reseller listings agree on a 5.0 HP AC drive, a 60-inch running length, 0 to 15% incline, a speed range of 0.5 to 12 mph and a 20-amp electrical requirement (NEMA 5-20 on 120 volts). They disagree on the rest. The manual gives a 22-inch-wide running area, a 500 lb maximum user weight and 450 lb machine weight; one reseller’s chart gives 20 inches wide and 400 lb for both styles; another listing gives a 22-inch belt, 400 lb, 399 lb machine weight and a 15 mph top speed. A US remanufacturer listed the older style at $3,999 and the newer style at $4,399 on 14 October 2026, with a one-year parts and on-site labour warranty and extended options. We could not confirm it is sold new by Matrix in the US.",
     },
     {
-      id: 'nordictrack-x16',
-      name: 'NordicTrack X16',
-      category: 'Best Non-Folding Treadmill for Incline Walking',
-      badge: 'Best for Incline',
-      amazonUrl: 'https://www.amazon.com/s?k=NordicTrack+X16+Treadmill&tag=sktiger-20',
-      priceRange: '$2,500–$2,700',
-      specs: '22 x 60 in. belt · 0–12 mph · −6% to 40% incline · 400 lb capacity · 4.25 CHP · non-folding',
+      id: "freemotion-i11-9",
+      name: "FreeMotion i11.9 Incline Trainer",
+      category: "Closest on Amazon for Steep Incline Walking",
+      badge: "Closest on Amazon",
+      priceRange: "About $2,875 (Amazon, 6 Nov 2026)",
+      specs: "30% incline and decline training · 22 in. wide belt · 10 in. touchscreen console · cushioned deck",
       pros: [
-        'Incline to 40% and decline to −6%, far beyond the 15% of most treadmills',
-        'The lowest price of any powered non-folding treadmill we could verify',
-        'Lifetime motor warranty and ten years on the frame',
-        'A 16-inch pivoting touchscreen; with iFIT, incline and decline can follow the trainer',
+        "A 30% incline with decline for well under the price of current commercial trainers",
+        "A 22-inch-wide belt on an extra-long cushioned deck, per the listing",
+        "A 10-inch colour touchscreen with map-based programming",
       ],
       cons: [
-        'Only two years on parts and one year on labour',
-        'Most of the smart features need a paid iFIT membership; check the current price',
-        'Very heavy and, at full incline, tall — an independent review notes it needs a high ceiling',
+        "An older model: the listing refers to iFit Live, an earlier name for iFIT",
+        "The listing gives no top speed, weight rating or warranty; ask the seller",
+        "Confirm the machine is new and who will honour the warranty before ordering",
       ],
-      bottomLine:
-        'For steep incline walking and hiking-style workouts in a room where it can stay. Not the pick for flat running or for anyone who wants no subscription.',
-      description:
-        'The X16 is a different kind of non-folding treadmill: an incline trainer that also runs. NordicTrack lists a 22 by 60-inch belt, 0 to 12 mph, incline from −6% to 40%, a 400 lb user capacity and a 4.25 CHP motor, and an independent review and a major retailer agree. NordicTrack’s own page says “No folding design”, and its buying advice says plainly that its X Series treadmills do not fold. The warranty is lifetime on the motor, ten years on the frame, two years on parts and one year of labour. The steep incline is the reason to buy it, and also its main practical demand: the front of the deck rises well above an ordinary treadmill’s, so measure the ceiling. It weighs 445 lb in the box. The X24 is the same platform with a 24-inch screen, at $2,999.99 on NordicTrack’s store; a hands-on review of the X24 measured about 39.4% at the top and −4.9% at the bottom. NordicTrack had the X16 at $2,699.99, and a major retailer at $2,499.99 including a rebate ending 31 October.',
+      bottomLine: "Worth a look for steep incline walking on Amazon at about $2,875, but only after the seller confirms condition, warranty and that the unit does not fold.",
+      description: "The NordicTrack X16, our pick for steep incline walking, is sold by NordicTrack rather than on Amazon US, so this card shows the incline trainer Amazon does list, with the figures checked for our incline trainer guide. We could not find a maker's statement on folding: retail listings give an assembled size of about 80 by 34.8 by 76 inches and describe casters for moving it, and none mentions a fold, so confirm with the seller. The i11.9 is an earlier Freemotion incline trainer that is still listed on Amazon US with a price. The listing is short: it describes an extra-long, cushioned deck, a 10-inch colour touchscreen, 30% incline and decline training, a 22-inch-wide running belt, and interactive iFit Live and Google Maps programming. iFit Live was the earlier name of what is now iFIT, which tells you the design dates from several years ago. That is not a reason to rule it out — incline trainers are simple machines underneath, and a 30% grade with decline for about $2,875 is well below the price of current commercial trainers — but it changes what you need to check. The listing gives no top speed, no maximum user weight, no motor rating and no warranty, and we could not confirm those for this listing from a second source, so none is on the card. Before buying, ask the seller whether the machine is new, who honours the warranty and for how long, and whether the console's connected features still work; plan on using its built-in programs if they do not. Amazon listed it at $2,875 on 6 November 2026.",
     },
     {
       id: 'life-fitness-t3',
@@ -487,7 +488,7 @@ export default {
         'A choice of a simple Go console or the Track Connect 2.0 console',
       ],
       cons: [
-        'A 20-inch-wide deck, narrower than the Spirit, Run CX and Club Series+',
+        'A 20-inch-wide deck, narrower than the Spirit, Run CX and Sole TT8',
         'A 350 lb capacity, the lowest here',
         'The console is priced as part of the configuration, so compare like for like',
       ],
@@ -522,34 +523,33 @@ export default {
         'The Run CX is the Life Fitness machine to choose if the treadmill is going to work hard. Life Fitness, an independent hands-on review and a major US retailer agree on a 22 by 60-inch running surface, a 12 mph top speed, incline from 0 to 15%, a 400 lb maximum user weight and a machine weight of 341 lb. Life Fitness and the independent review agree on the motor: 3.0 HP continuous duty, 6.0 HP peak. That is a rare thing on a treadmill page — a continuous rating stated by the maker and repeated by an independent source — and it is the figure that matters for daily running. All three sources give the warranty as lifetime on the frame, ten years on the motor, seven years on parts and one year of labour; Life Fitness and the review add lifetime cover on the deck’s shock absorbers and three years on the console. Life Fitness’s specification table states “Folding: No”, and the retailer agrees. Both listed it at $4,899 on 15 October.',
     },
     {
-      id: 'life-fitness-club-series-plus',
-      name: 'Life Fitness Club Series+',
-      category: 'Best Gym-Grade Non-Folding Treadmill',
-      badge: 'Premium Pick',
-      amazonUrl: 'https://www.amazon.com/s?k=Life+Fitness+Club+Series%2B+Treadmill&tag=sktiger-20',
-      priceRange: '$7,599–$10,999',
-      specs: '22 x 60 in. deck · 0.5–12 mph · 0–15% incline · 400 lb capacity · 4.0 HP continuous AC · non-folding',
+      id: 'sole-tt8',
+      name: 'Sole TT8',
+      category: 'Best Light-Commercial Non-Folding Treadmill on Amazon',
+      badge: 'Heavy-Use Pick',
+      priceRange: 'About $2,500 (Amazon, 6 Nov 2026)',
+      specs: '4.0 HP · 22 x 60 in. · 0.5–12 mph · -6% to 15% incline · 400 lb capacity · non-folding · 15.6 in. touchscreen',
       pros: [
-        'An AC motor rated at 4.0 HP continuous, with a lifetime motor warranty',
-        'Ten years on parts and lifetime frame cover, the strongest terms on this page',
-        'Life Fitness and a major retailer agree on every figure on the card',
-        'A choice of console, from a large LED display to a touchscreen',
+        'Non-folding frame with a 400 lb capacity, per SOLE',
+        'A 4.0 HP motor and a 22 x 60 in. running surface',
+        'Decline to -6%, which none of the Life Fitness machines here offers',
+        'Programs including a 10K, HIIT and heart-rate control, per the listing',
       ],
       cons: [
-        'About $2,700 more than the Run CX for the same deck size, speed and incline',
-        'At 434 lb, a serious delivery and floor-loading job',
-        'One year of labour, despite the price',
+        'Does not fold, and weighs more than 300 lb',
+        'Tops out at 12 mph',
+        'Published warranty terms differ between sources; check the current terms before buying',
       ],
       bottomLine:
-        'For buyers who want the closest thing to a gym treadmill in a home and can justify paying for the motor and warranty rather than more deck.',
+        'The non-folding machine to look at on Amazon for heavy, repeated use, with a light-commercial frame and decline, for less than the Life Fitness models.',
       description:
-        'The Club Series+ is Life Fitness’s gym-quality home treadmill, and it is on this page for buyers who want the top of the fixed-frame category. Life Fitness and a major US retailer agree on a 22 by 60-inch running surface, 0.5 to 12 mph, 0 to 15% incline, a 400 lb maximum user weight, a machine weight of 434 lb and an AC motor rated at 4.0 HP continuous and 8.0 HP peak. The warranty, which both list, is lifetime on the frame and motor, ten years on parts and one year of labour; Life Fitness adds lifetime cover on the shock absorbers and three years on the console. Life Fitness’s specification table states “Folding: No”, and so does the retailer’s. Be clear about what the money buys over the Run CX: the deck size, speed and incline are the same. The difference is the motor, the longer parts and motor warranty, and the console. Life Fitness listed it from $7,599 with the SL console to $10,999 with the SE4, and the retailer matched both prices on 15 October.',
+        'The TT8 is SOLE’s light-commercial treadmill, and it takes the place on this page of the gym-grade Life Fitness Club Series+, which is sold through Life Fitness and its dealers rather than on Amazon. The Amazon listing gives a 4.0 HP motor, a 22 x 60 in. running surface, a 0.5 to 12 mph speed range, an incline and decline range of -6 to 15 and a 15.6 in. touch screen, with programs including Hill, Fat Burn, HIIT, 10K and heart-rate control. SOLE’s own site adds a non-folding frame and a 400 lb user capacity. A frame that does not fold has no hinge to flex, and a machine rated well above your weight works less hard on every stride over thousands of miles. The cons are practical. It weighs more than 300 lb, so place it once and leave it. It stops at 12 mph, which is ample for long runs and limiting for fast intervals. And published warranty terms differ: one SOLE comparison page gives lifetime frame and motor cover with two years on parts and one on labour, while other sources describe longer terms, so confirm them with SOLE. Amazon showed it at about $2,500 on 6 November 2026, checked for our long-distance running guide.',
     },
   ],
   faqs: [
     {
       q: 'What is the best non-folding treadmill?',
-      a: `For most people, the Spirit XT685: a 22 by 60-inch deck, a 425 lb rating and lifetime frame, motor and deck cover with ten years on parts, for about $2,900 to $3,200. For steep incline walking, the NordicTrack X16. For heavy daily use, the Life Fitness Run CX, and for a gym-grade machine, the Life Fitness Club Series+.`,
+      a: `For most people, the Spirit XT685: a 22 by 60-inch deck, a 425 lb rating and lifetime frame, motor and deck cover with ten years on parts, for about $2,900 to $3,200, sold through Spirit's dealers rather than Amazon. For steep incline walking, the NordicTrack X16, sold by NordicTrack; on Amazon the nearest are the Matrix T5x and FreeMotion i11.9. For heavy daily use, the Life Fitness Run CX, and for a light-commercial machine with decline, the Sole TT8.`,
     },
     {
       q: 'Are non-folding treadmills better than folding ones?',
@@ -557,7 +557,7 @@ export default {
     },
     {
       q: 'How much does a non-folding treadmill cost?',
-      a: `On the day we checked, the powered non-folding treadmills we could verify started at about $2,500 for the NordicTrack X16 and ran to about $3,000 for the Spirit XT685, $3,500 to $4,900 for Life Fitness's T3 and Run CX, and $7,600 or more for the Club Series+. Used and ex-gym machines can cost much less.`,
+      a: `On the day we checked, the powered non-folding treadmills we could verify started at about $2,500 for the NordicTrack X16 and the Sole TT8 and ran to about $3,000 for the Spirit XT685 and $3,500 to $4,900 for Life Fitness's T3 and Run CX. Gym-grade models such as Life Fitness's Club Series+ cost $7,600 or more. Used and ex-gym machines can cost much less.`,
     },
     {
       q: 'How do I know if a treadmill folds?',
@@ -569,7 +569,7 @@ export default {
     },
     {
       q: 'Can you move a non-folding treadmill?',
-      a: `Yes, but not casually. The machines on this page with a published assembled weight run from 243 lb to 434 lb, and a fixed frame cannot be tipped up and rolled away like a folding one. Moving one usually means removing the console and uprights and using a dolly, and stairs make it a job for professionals. Plan its permanent spot before delivery.`,
+      a: `Yes, but not casually. The machines on this page weigh from 243 lb to well over 300 lb assembled, and a fixed frame cannot be tipped up and rolled away like a folding one. Moving one usually means removing the console and uprights and using a dolly, and stairs make it a job for professionals. Plan its permanent spot before delivery.`,
     },
   ],
   mistakesHeading: 'Common Mistakes Buying a Non-Folding Treadmill',
@@ -623,9 +623,9 @@ export default {
   bottomLine: [
     `<strong class="text-white">If your treadmill will live in one room for years, the Spirit
             XT685 is the non-folding machine to buy for most people</strong>: a 22 by 60-inch deck, a
-            425 lb rating and the longest home parts warranty on this page for about $3,000. Choose
+            425 lb rating and a ten-year parts warranty for about $3,000, from Spirit's dealers. Choose
             the NordicTrack X16 for steep incline walking, the Life Fitness Run CX for heavy daily
-            running, and the Club Series+ if you want gym grade and can pay for it.`,
+            running, and the Sole TT8 for light-commercial use with decline.`,
     `A fixed frame tends to be stiffer, roomier and better warranted, but it costs floor space,
             weight and money, and it is the wrong choice for a room with another use. Measure the
             floor, the ceiling and the route in first, and if the room has to do two jobs, start with

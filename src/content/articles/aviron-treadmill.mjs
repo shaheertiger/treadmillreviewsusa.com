@@ -37,7 +37,8 @@ export default {
           least one independent source agree; where they disagree, or where only Aviron gives a
           figure, we say so. We have not tested any Aviron treadmill, and none of the numbers here
           are our own measurements. Prices are those shown on avironactive.com on 20 October 2026
-          and change often. As an Amazon Associate we earn from qualifying purchases.`,
+          and change often. On 9 November 2026 we found all three models listed on Amazon US by
+          Aviron, at the prices on each card; the product buttons go to those listings. As an Amazon Associate we earn from qualifying purchases.`,
   lead: `People searching for an Aviron treadmill are usually in one of two places: they own or
           have read about Aviron's rowing machine and want to know whether the same games come on a
           treadmill, or they have seen the name in a list of connected treadmills and want to know
@@ -54,8 +55,8 @@ export default {
       name: 'Aviron Justice Treadmill',
       category: 'Compact Folding Treadmill',
       badge: 'Cheapest Aviron',
-      priceRange: '$1,999-$2,298 at Aviron on 20 Oct 2026',
-      amazonUrl: 'https://www.amazon.com/s?k=Aviron+Treadmill&tag=sktiger-20',
+      priceRange: '$1,999-$2,298 at Aviron on 20 Oct 2026; $1,949-$2,248 on Amazon on 9 Nov 2026',
+      amazonUrl: 'https://www.amazon.com/dp/B0HMZ7Y87Q?tag=sktiger-20',
       specs: '20 x 59 in. deck · 3.5 CHP · 0-12.5 mph · 0-15% incline · 300 lb max user · 251 lb · folds',
       pros: [
         'The cheapest way onto Aviron’s games, at $1,999 with the 16-inch screen on Aviron’s sale price',
@@ -72,15 +73,15 @@ export default {
       bottomLine:
         'The Aviron to buy if you mainly walk or jog, are under 300 lb, need it to fold, and want Aviron’s games for the least money.',
       description:
-        'The Justice is the entry model in Aviron’s September 2026 lineup. Aviron and Garage Gym Reviews agree on a 3.5 CHP brushless motor, a top speed of 12.5 mph, 0 to 15% incline (no decline), a 20 by 59-inch belt on a cushioned deck with eight shock absorbers, a 300 lb maximum user weight and a machine weight of 251 lb. Aviron gives the size as 80 by 34 by 66 inches in use and 53 by 34 by 68 inches folded, and recommends it for users up to 6 ft 6 in. It ships with a 16-inch pivoting touchscreen; a 22-inch screen is an upgrade. On 20 October 2026 Aviron listed it at $1,999 (regular $2,599) with the 16-inch screen and $2,298 with the 22-inch. Garage Gym Reviews gives the same $2,599 list price and says it is usually found on sale at about $2,000.',
+        'The Justice is the entry model in Aviron’s September 2026 lineup. Aviron and Garage Gym Reviews agree on a 3.5 CHP brushless motor, a top speed of 12.5 mph, 0 to 15% incline (no decline), a 20 by 59-inch belt on a cushioned deck with eight shock absorbers, a 300 lb maximum user weight and a machine weight of 251 lb. Aviron gives the size as 80 by 34 by 66 inches in use and 53 by 34 by 68 inches folded, and recommends it for users up to 6 ft 6 in. It ships with a 16-inch pivoting touchscreen; a 22-inch screen is an upgrade. On 20 October 2026 Aviron listed it at $1,999 (regular $2,599) with the 16-inch screen and $2,298 with the 22-inch. Garage Gym Reviews gives the same $2,599 list price and says it is usually found on sale at about $2,000. Aviron’s own Amazon listing appeared on 9 November 2026 at $1,949 with the 16-inch screen and $2,248 with the 22-inch, and agrees on the motor, speed, incline and 300 lb limit; it also mentions a 20-year warranty, which Aviron’s own terms tie to buying direct, so ask before ordering there.',
     },
     {
       id: 'aviron-podium',
       name: 'Aviron Podium Treadmill',
       category: 'Folding Runner’s Treadmill',
       badge: 'Most Buyers',
-      priceRange: '$2,499-$3,097 at Aviron on 20 Oct 2026',
-      amazonUrl: 'https://www.amazon.com/s?k=Aviron+Treadmill&tag=sktiger-20',
+      priceRange: '$2,499-$3,097 at Aviron on 20 Oct 2026; $2,449-$2,748 on Amazon on 9 Nov 2026',
+      amazonUrl: 'https://www.amazon.com/dp/B0HMZ7XWVR?tag=sktiger-20',
       specs: '22 x 60 in. deck · 4.5 CHP · 0-14 mph · 0-18% incline · 350 lb max user · 284 lb · folds',
       pros: [
         'A 22-inch-wide deck, 14 mph and 18% incline on a frame that still folds',
@@ -97,15 +98,15 @@ export default {
       bottomLine:
         'The default Aviron treadmill: buy it if you run, want the games, and need the machine to fold out of the way.',
       description:
-        'The Podium is the runner’s model in the lineup. Aviron, Garage Gym Reviews and Wellworthy agree on a 4.5 CHP brushless motor, a 14 mph top speed, 0 to 18% incline and a 22 by 60-inch belt with eight shock absorbers, and Aviron and Garage Gym Reviews agree on a 350 lb user limit, a 284 lb machine weight and dimensions of 80 by 37 by 66 inches in use and 49 by 37 by 68 inches folded. Aviron recommends it for users up to 6 ft 7 in. The screen choices are 16, 22 or 27 inches. On 20 October 2026 Aviron listed it at $2,499 (regular $3,249) with the 16-inch screen, $2,798 with the 22-inch and $3,097 with the 27-inch; Garage Gym Reviews quotes the regular prices, $3,249 to $4,049.',
+        'The Podium is the runner’s model in the lineup. Aviron, Garage Gym Reviews and Wellworthy agree on a 4.5 CHP brushless motor, a 14 mph top speed, 0 to 18% incline and a 22 by 60-inch belt with eight shock absorbers, and Aviron and Garage Gym Reviews agree on a 350 lb user limit, a 284 lb machine weight and dimensions of 80 by 37 by 66 inches in use and 49 by 37 by 68 inches folded. Aviron recommends it for users up to 6 ft 7 in. The screen choices are 16, 22 or 27 inches. On 20 October 2026 Aviron listed it at $2,499 (regular $3,249) with the 16-inch screen, $2,798 with the 22-inch and $3,097 with the 27-inch; Garage Gym Reviews quotes the regular prices, $3,249 to $4,049. On 9 November 2026 Aviron’s Amazon listing showed $2,449 with the 16-inch screen and $2,748 with the 22-inch, and agreed on the 4.5 CHP motor, 14 mph, 18% incline and 22-inch deck with eight shock absorbers.',
     },
     {
       id: 'aviron-summit',
       name: 'Aviron Summit Treadmill',
       category: 'Incline and Decline Trainer',
       badge: 'Steepest Incline',
-      priceRange: '$2,999-$3,597 at Aviron on 20 Oct 2026',
-      amazonUrl: 'https://www.amazon.com/s?k=Aviron+Treadmill&tag=sktiger-20',
+      priceRange: '$2,999-$3,597 at Aviron on 20 Oct 2026; $2,849-$3,148 on Amazon on 9 Nov 2026',
+      amazonUrl: 'https://www.amazon.com/dp/B0HGN8NNDK?tag=sktiger-20',
       specs: '22 x 61 in. deck · 4.5 CHP · -6% to 42% incline · 350 lb max user · 364 lb · does not fold',
       pros: [
         'A -6% to 42% grade range, the steepest we have seen published for a home treadmill',
@@ -122,7 +123,7 @@ export default {
       bottomLine:
         'Only for walkers and hikers who will genuinely use grades beyond 18% and have a permanent spot with an 8 ft ceiling.',
       description:
-        'The Summit is Aviron’s incline trainer. Aviron, Garage Gym Reviews and Wellworthy agree on a 4.5 CHP motor, a -6% to 42% grade range and a 22 by 61-inch belt, and Aviron and Garage Gym Reviews agree on a 350 lb user limit, a 364 lb machine weight and dimensions of 67 by 37 by 71 inches; it does not fold and moves on transport wheels. Aviron gives a 14 mph top speed but limits it by grade, and one Garage Gym Reviews specification table gives 0.5 to 14.5 mph while another gives 0 to 14, so top speed is left off the specifications line. Aviron recommends it for users up to 6 ft 8 in. On 20 October 2026 Aviron listed it at $2,999 (regular $3,999) with the 16-inch screen, $3,298 with the 22-inch and $3,597 with the 27-inch.',
+        'The Summit is Aviron’s incline trainer. Aviron, Garage Gym Reviews and Wellworthy agree on a 4.5 CHP motor, a -6% to 42% grade range and a 22 by 61-inch belt, and Aviron and Garage Gym Reviews agree on a 350 lb user limit, a 364 lb machine weight and dimensions of 67 by 37 by 71 inches; it does not fold and moves on transport wheels. Aviron gives a 14 mph top speed but limits it by grade, and one Garage Gym Reviews specification table gives 0.5 to 14.5 mph while another gives 0 to 14, so top speed is left off the specifications line. Aviron recommends it for users up to 6 ft 8 in. On 20 October 2026 Aviron listed it at $2,999 (regular $3,999) with the 16-inch screen, $3,298 with the 22-inch and $3,597 with the 27-inch. On 9 November 2026 its Amazon listing showed $2,849 with the 16-inch screen and $3,148 with the 22-inch, and gave the same 42% incline and -6% decline.',
     },
   ],
   sections: [
@@ -164,7 +165,9 @@ export default {
             post says production units began shipping in the second week of September, and its
             formal press release is dated 9 September 2026. The table gives Aviron's own figures from
             its product pages on 20 October 2026. The product cards below carry only the figures that
-            an independent source also confirms.
+            an independent source also confirms. All three are sold direct from Aviron and, since
+            November 2026, on Amazon; before buying on Amazon, read the warranty section below,
+            because Aviron's 20-year tier is tied to buying direct.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[560px] w-full text-sm border-collapse">
             <thead>
@@ -367,9 +370,12 @@ export default {
           </p>
           <p>
             The retail point is easy to miss. Aviron's press release says the treadmills are expected
-            <a href="/best-buy-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>at Best Buy</a>, Dick's Sporting Goods and Amazon for the holiday season. Because the 20-year
-            tier needs a direct purchase, a treadmill bought from a retailer would, on Aviron's
-            current terms, carry the standard 10-year and one-year cover even with a membership. Our
+            <a href="/best-buy-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>at Best Buy</a>, Dick's Sporting Goods and Amazon for the holiday season, and by 9 November 2026
+            all three were listed on Amazon US. Because the 20-year tier needs a direct purchase, a
+            treadmill bought from a retailer would, on Aviron's current terms, carry the standard
+            10-year and one-year cover even with a membership. The Justice's Amazon listing mentions
+            a 20-year warranty all the same, so the two conflict; if you buy on Amazon, ask Aviron
+            in writing which cover applies to that order. Our
             <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
             explains how to compare these terms with other brands.
           </p>

@@ -31,7 +31,11 @@ export default {
           are ones on which Peloton and at least one independent source agree; where sources, or
           Peloton's own pages, disagree we say so. We have not tested any Peloton treadmill.
           Prices are what onepeloton.com showed on the day we checked (20 Oct 2026) and change
-          often. As an Amazon Associate we earn from qualifying purchases.`,
+          often. Peloton sells the Tread Flex and Tread+ Vision on its own site rather than on Amazon,
+          so the first card shows the nearest folding class-screen treadmill Amazon sells, the
+          NordicTrack Commercial 2450, with the figures checked for our heavy-duty treadmill guide;
+          the Tread+ Vision card stays, because Amazon sells no motorised slat-belt treadmill to put
+          in its place, and its button runs an Amazon search. As an Amazon Associate we earn from qualifying purchases.`,
   lead: `Searches for a Peloton treadmill have climbed through 2026, and anyone who last looked a
           year ago will find a different lineup. On 1 October Peloton stopped selling its Cross
           Training Tread and Tread+ directly and replaced them with three machines: the folding
@@ -43,29 +47,27 @@ export default {
           treadmill is the better use of the money.`,
   products: [
     {
-      id: 'peloton-tread-flex',
-      name: 'Peloton Tread Flex',
-      category: 'Folding Peloton Treadmill, No Camera',
-      badge: 'Cheapest Peloton',
-      priceRange: '$2,195 at Peloton on 20 Oct 2026',
-      amazonUrl: 'https://www.amazon.com/s?k=Peloton+Tread+Flex&tag=sktiger-20',
-      specs: '0-12.5 mph · 0-12.5% incline · 21.5 in. swivel screen · 290 lb machine weight · folds to 37.8 in. long',
+      id: 'nordictrack-commercial-2450',
+      name: 'NordicTrack Commercial 2450',
+      category: 'Closest on Amazon to the Tread Flex: a folding treadmill with a class screen',
+      badge: 'Closest on Amazon',
+      priceRange: 'About $2,299 (Amazon, 6 Nov 2026)',
+      specs: '22 x 60 in. belt · 4.25 CHP (NordicTrack rating) · 0–14 mph · -3% to 12% incline · 400 lb max user · folds',
       pros: [
-        'Peloton’s first folding treadmill, and its cheapest at $2,195',
-        'Folds to 37.8 inches long on Peloton’s figures and rolls on casters',
-        'The same 12.5 mph and 12.5% incline ranges as the Tread Vision',
-        'No camera, for anyone who would rather not have one facing the room',
+        'A 400 lb maximum user weight and a 22-inch belt, by NordicTrack’s figures',
+        'A 4.25 CHP motor and a 14 mph top speed',
+        'A decline to -3% as well as a 12% incline',
+        'A 24-inch touchscreen for iFIT classes',
       ],
       cons: [
-        'No Run Analysis, because it has no movement-tracking camera',
-        'Peloton gives a 300 lb user limit but one retailer lists 400 lb, so confirm it before relying on either',
-        'Peloton’s page gives two different expert-assembly prices, $150 and $250',
-        'Still 290 lb and 66 inches tall folded, so folding saves floor space rather than making it portable',
+        'The touchscreen is designed around an iFIT Pro membership at $39 a month',
+        'A screen and software that will date sooner than the frame and motor',
+        'NordicTrack’s motor warranty terms vary by listing; check them before ordering',
       ],
       bottomLine:
-        'The Peloton to buy if you want Peloton classes and need the floor back afterwards, and do not need form tracking.',
+        'The Tread Flex itself is sold by Peloton, not on Amazon. If you want a folding treadmill with a big class screen from Amazon, this is the nearest, with iFIT classes instead of Peloton’s.',
       description:
-        'The Tread Flex is new for autumn 2026 and is the first Peloton treadmill that folds. Peloton and independent launch coverage agree on a $2,195 price, 0 to 12.5 mph, 0 to 12.5% incline, a 21.5-inch swivel touchscreen and a machine weight of 290 lb, and Peloton gives 70.5 by 33.6 inches in use and 37.8 inches long when folded. Peloton lists a 59 by 20-inch belt, a brushless motor that it says peaks at 70 dB at top speed with nobody on the belt, and a 105 to 300 lb user range; one US retailer lists 400 lb instead, so that figure is left off the specifications line. Peloton’s specification page calls the motor 2 HP DC. It has no movement-tracking camera, so Run Analysis is not available. Delivery is free if you assemble it yourself.',
+        'The Tread Flex is sold on Peloton\'s own site, not on Amazon, so this card shows the nearest machine Amazon does sell: a folding treadmill built around a large class screen and a paid membership, as the Flex is. The Commercial 2450 is NordicTrack\'s folding flagship. NordicTrack lists a 22 by 60-inch belt, a 4.25 CHP motor by its own continuous rating and a 400 lb maximum user weight, and the Amazon listing gives a 0–14 mph speed range, a -3% to 12% incline, RunFlex cushioning, a 24-inch touchscreen that tilts and pivots, and a folding frame with assisted lowering. Against the Flex it is faster, wider, rated for heavier users and adds decline; what it does not have is Peloton\'s instructors, because its classes come from iFIT, whose Pro membership iFIT listed at $39 a month in November 2026. The treadmill runs without the membership, in manual mode. If Peloton\'s classes are the reason you are reading this page, you can also run the Peloton App on a tablet on any treadmill, including this one. Amazon listed it at $2,299 on 6 November 2026.',
     },
     {
       id: 'peloton-tread-vision',

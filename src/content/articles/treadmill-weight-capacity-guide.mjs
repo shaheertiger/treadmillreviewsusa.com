@@ -350,7 +350,7 @@ export default {
             points at a mid-range or heavy-duty machine rather than a compromise between them.
           </p>
           <p>
-            Floors are a related question people raise. A heavy-duty treadmill plus its user is a
+            Floors are a related question people raise. A <a href="/best-heavy-duty-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>heavy-duty treadmill</a> plus its user is a
             concentrated load on four feet, and a
             <a href="/do-you-need-a-treadmill-mat/" class="text-[#0F62FE] font-medium">treadmill mat</a>
             spreads it slightly and protects the floor surface. Typical residential floors carry

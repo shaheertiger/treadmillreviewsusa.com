@@ -430,7 +430,7 @@ export default {
       name: 'MERACH W50 Lite TrekPad',
       category: 'Best Low-Profile 350 lb Walking Pad',
       badge: 'Best Low Profile',
-      amazonUrl: 'https://www.amazon.com/s?k=MERACH+W50+Lite+Walking+Pad&tag=sktiger-20',
+      amazonUrl: 'https://www.amazon.com/dp/B0HJZQGPW5?tag=sktiger-20',
       priceRange: '$280–$360',
       specs: '350 lb capacity · 0.6–4.0 mph · 10% powered incline · about 5.2 in. tall',
       pros: [
@@ -447,14 +447,14 @@ export default {
       bottomLine:
         'For a walker up to about 280 to 300 lb whose desk cannot rise far enough for a taller pad. If height is not a constraint, buy the TrekPad.',
       description:
-        'The W50 Lite is MERACH’s lower, lighter sibling to the TrekPad, and it earns a place because deck height is a real constraint for many desk walkers. MERACH lists a 350 lb maximum user weight, a speed range of 0.6 to 4.0 mph, a powered incline to 10%, a height of about 5.2 inches and a unit weight of about 53 lb, and the Amazon listing and a major US retailer agree on the capacity. That inch of height comes straight back to your desk. The trade-off is in the motor, and MERACH is open about it: the Lite is rated 0.75 HP continuous against the TrekPad’s 1.25 HP, so it has noticeably less in reserve for a heavy walker on long sessions. MERACH’s own page lists the belt two ways, as 16 by 41 inches and 16.5 by 41.3 inches, and an independent tracker gives a third figure, so we have left it out. One tracker’s reading of Amazon reviews also flagged reports of belt slipping after a few months. At $279.98 on MERACH’s site when we checked, it only makes sense where the lower profile matters.',
+        'The W50 Lite is MERACH’s lower, lighter sibling to the TrekPad, and it earns a place because deck height is a real constraint for many desk walkers. MERACH lists a 350 lb maximum user weight, a speed range of 0.6 to 4.0 mph, a powered incline to 10%, a height of about 5.2 inches and a unit weight of about 53 lb, and the Amazon listing and a major US retailer agree on the capacity. That inch of height comes straight back to your desk. The trade-off is in the motor, and MERACH is open about it: the Lite is rated 0.75 HP continuous against the TrekPad’s 1.25 HP, so it has noticeably less in reserve for a heavy walker on long sessions. MERACH’s own page lists the belt two ways, as 16 by 41 inches and 16.5 by 41.3 inches, and an independent tracker gives a third figure, so we have left it out. One tracker’s reading of Amazon reviews also flagged reports of belt slipping after a few months. At $279.98 on MERACH’s site when we checked, and $259.99 on the Amazon listing titled W50 Lite on 9 November 2026, it only makes sense where the lower profile matters.',
     },
     {
       id: 'urevo-foldimix-5l',
       name: 'UREVO FoldiMix 5L',
       category: 'Best Fold-Up Handrail Model',
       badge: 'Best With a Rail',
-      amazonUrl: 'https://www.amazon.com/s?k=UREVO+FoldiMix+5L+Treadmill&tag=sktiger-20',
+      amazonUrl: 'https://www.amazon.com/dp/B0FLJX16V2?tag=sktiger-20',
       priceRange: '$310–$500',
       specs: '39.4 x 15.8 in. running area · 0.6–4.0 mph walking, to 7.6 mph running · 0–9% powered incline · folds to 6.1 in.',
       pros: [
@@ -471,7 +471,7 @@ export default {
       bottomLine:
         'For a walker up to about 250 lb who wants a fold-up rail, a desk tray and an occasional jog. Treat it as a 300 lb machine, not a 400 lb one.',
       description:
-        'The FoldiMix 5L is the handrail pick, and it comes with an unusually honest capacity statement. UREVO’s product page lists 400 lb, then adds that this is the load for normal operation at regular speed and that 300 lb applies to its maximum-speed test. European listings for the same pad give 135 to 136 kg, which is about 300 lb, and an independent tracker also uses 300 lb. Because the sources do not agree on one number, we have left capacity out of the specification line; the figure every source supports is 300 lb, and that is the one to plan around. Otherwise the specification is consistent: a 39.4 by 15.8-inch running area, 0.6 to 4.0 mph in walking mode and up to 7.6 mph in running mode, a powered incline to 9%, and a folded height of about 6 inches. The front rail carries a desk tray with eight height settings. A hands-on reviewer found it quiet and well made, and noted that the belt is short for taller runners. At $311.99 against a $499.99 list price when we checked, it is reasonable value for a lighter heavy-user.',
+        'The FoldiMix 5L is the handrail pick, and it comes with an unusually honest capacity statement. UREVO’s product page lists 400 lb, then adds that this is the load for normal operation at regular speed and that 300 lb applies to its maximum-speed test. European listings for the same pad give 135 to 136 kg, which is about 300 lb, and an independent tracker also uses 300 lb. Because the sources do not agree on one number, we have left capacity out of the specification line; the figure every source supports is 300 lb, and that is the one to plan around. Otherwise the specification is consistent: a 39.4 by 15.8-inch running area, 0.6 to 4.0 mph in walking mode and up to 7.6 mph in running mode, a powered incline to 9%, and a folded height of about 6 inches. The front rail carries a desk tray with eight height settings. A hands-on reviewer found it quiet and well made, and noted that the belt is short for taller runners. At $311.99 against a $499.99 list price when we checked, it is reasonable value for a lighter heavy-user. On Amazon UREVO sells it without the FoldiMix name, as a foldable treadmill with an adjustable laptop desk and 9% auto incline, at $339.99 on 9 November 2026; check the 9% version, as a 12% sibling is listed alongside.',
     },
   ],
   faqs: [

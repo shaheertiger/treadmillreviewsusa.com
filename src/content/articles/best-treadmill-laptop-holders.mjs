@@ -31,8 +31,9 @@ export default {
           for every product here where one exists (VIVO, Arkon and UPLIFT), the retailer listings that
           carry them (Target, Newegg and PCLiquidations for the VIVO and Wakeman products, and a reseller
           listing for the Arkon mount), and price trackers and reseller copies of Amazon listings for the
-          wider category. Amazon’s own pages would not load for us that day, so no price on this page is
-          an Amazon price. A figure appears in a product’s specification line only where the maker and a
+          wider category. Amazon’s own pages would not load for us that day. The Qsxou card, added on 9
+          November 2026 in place of VIVO’s plain STAND-TDML2 board, which we could not find on Amazon US,
+          carries its Amazon listing’s price and figures as checked on 6 November. A figure appears in a product’s specification line only where the maker and a
           second source agree; figures we could read from one source only are in the text, labelled with
           where they came from. Where two parts of one listing disagree, as with the Wakeman board’s
           length, we left the figure out. We searched the CPSC recall database for VIVO, Arkon, Wakeman and
@@ -67,8 +68,8 @@ export default {
               </tr>
             </thead>
             <tbody>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">VIVO 31" Laptop Tray (STAND-TDML2)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most treadmills with level rails</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A simple two-piece board, $49.99, three-year warranty</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">VIVO 31" Tray with Cup Holder (STAND-TDML2A)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A phone and a drink as well</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The same board with a cup holder and a slot for a phone</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">VIVO 31" Tray with Cup Holder (STAND-TDML2A)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most treadmills with level rails</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A two-piece board with a cup holder and phone slot, three-year warranty</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Qsxou Treadmill Desk</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A tight budget</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A strap-on board with two cup holders for about $44</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">VIVO Height Adjustable 27" Desk (STAND-TDML4)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Wide-set rails and taller walkers</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A tilting tray on a pole, for a wider spread of rail spacings</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Wakeman Universal Treadmill Desk</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A solid wood board</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Pine board on hook-and-loop straps, with a high stated load rating</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Arkon RoadVise Clamp Post Mount (RV131)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A phone on a rail or upright</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Clamps to tubes 18–35 mm across; holds phones up to 4 in. wide</td></tr>
@@ -199,7 +200,7 @@ export default {
             <strong>A board across the rails.</strong> A flat shelf, usually in two pieces that bolt
             together, held on with hook-and-loop straps. It is the cheapest, the largest surface and the
             easiest to fit, and it gives room for a full-size laptop and a mouse. Its weaknesses are fixed
-            height and a dependence on level rails. VIVO’s STAND-TDML2 and the Wakeman are this type.
+            height and a dependence on level rails. VIVO’s 31-inch boards, the Qsxou and the Wakeman are this type.
           </p>
           <p>
             <strong>A tray on a pole.</strong> A smaller tray on an upright, fixed to a crossbar that straps
@@ -349,52 +350,49 @@ export default {
   ],
   products: [
     {
-      id: 'vivo-stand-tdml2',
-      name: 'VIVO 31" Laptop Tray Treadmill Attachment (STAND-TDML2)',
-      category: 'Best treadmill laptop holder for most treadmills',
-      badge: 'Best Overall',
-      amazonUrl: 'https://www.amazon.com/s?k=VIVO+STAND-TDML2+Laptop+Treadmill+Desk&tag=sktiger-20',
-      priceRange: '$49.99 at VIVO (5 Nov 2026)',
-      specs: '34.1 x 11 in. board in two pieces · fits handlebars 26.8–31.5 in. apart · strap mount · 3-year warranty',
-      pros: [
-        'A large, flat surface with room for a full-size laptop and a mouse',
-        'A stated fit range, so you can rule it in or out with a tape measure',
-        'Hook-and-loop straps: no tools to fit or remove once assembled',
-        'Three-year warranty and a 30-day return policy from VIVO',
-      ],
-      cons: [
-        'VIVO says it does not fit tilted or slanted handlebars',
-        'Fixed at rail height, which is low for some walkers’ typing posture',
-        'One reviewer reported it would not fit rails with buttons on top',
-      ],
-      bottomLine:
-        'The first laptop board to try on a treadmill with level rails 27 to 31 inches apart: cheap, large and easy to take off.',
-      description:
-        'The STAND-TDML2 is VIVO’s plain 31-inch treadmill desk: two 17 by 11-inch particle-board halves that join into a 34.1 by 11-inch shelf, 0.6 inches thick, with steel fittings and adjustable hook-and-loop straps. VIVO lists a fit for handlebars 26.8 to 31.5 inches apart and states that it is not compatible with tilted or slanted handlebars; Newegg listed it at the same $49.99 price, and PCLiquidations’ listing for VIVO’s cup-holder version gives the same board dimensions and fit range. VIVO rates it for 22 lb, far more than any laptop. VIVO listed it at $49.99, in stock, on 5 November 2026, with a three-year warranty and a 30-day return policy. Reviews on VIVO’s store are broadly positive about the size and ease of fitting; the complaints are about fit on rails that slope or carry buttons, which is why we suggest measuring first.',
-    },
-    {
       id: 'vivo-stand-tdml2a',
       name: 'VIVO 31" Laptop Tray Treadmill Attachment with Cup Holder (STAND-TDML2A)',
-      category: 'Best treadmill laptop holder with a phone slot and cup holder',
-      badge: 'Best With Cup Holder',
+      category: 'Best treadmill laptop holder for most treadmills',
+      badge: 'Best Overall',
       amazonUrl: 'https://www.amazon.com/s?k=VIVO+STAND-TDML2A+Laptop+Treadmill+Cup+Holder&tag=sktiger-20',
       priceRange: '$67.19–$69.99 (5 Nov 2026)',
       specs: '34.1 x 11 in. board · fits handlebars 26.8–31.5 in. apart · 22 lb capacity · cup holder and 13 in. accessory slot',
       pros: [
-        'The same board as the STAND-TDML2 with a cup holder and a slot for a phone or tablet',
+        'VIVO’s 31-inch board with a cup holder and a slot for a phone or tablet',
         'Cup holder adjusts for cups from about 12 to 32 oz, by VIVO’s figure',
         'Maker and an independent retailer agree on its size, fit range and load rating',
         'Three-year warranty from VIVO',
       ],
       cons: [
-        'Like the STAND-TDML2, not for tilted or slanted handlebars',
-        'About $20 more than the plain board for the cup holder and slot',
+        'VIVO says its 31-inch boards are not for tilted or slanted handlebars',
+        'About $20 more than VIVO’s plain board, which VIVO sells direct rather than on Amazon',
         'Marked low on stock at VIVO on the day we checked',
       ],
       bottomLine:
-        'Worth the extra over the plain board if you want your phone and a drink on the shelf with the laptop rather than on the console.',
+        'The first laptop board to try on a treadmill with level rails 27 to 31 inches apart, with room for your phone and a drink.',
       description:
         'The STAND-TDML2A is VIVO’s 31-inch board with two additions: a cup holder at one end and a 13-inch accessory slot along the board for a phone or a small tablet. VIVO and PCLiquidations agree on the details: a 34.1 by 11-inch platform made of two 17 by 11-inch pieces, 0.6 inches thick, a 22 lb weight capacity, a fit for handlebars 26.8 to 31.5 inches apart, and no compatibility with tilted or slanted handlebars. VIVO gives the cup holder as 2.8 by 3.6 by 3.3 inches and says it fits 12 to 32 oz cups. VIVO listed it at $69.99 with only a few left, and PCLiquidations at $67.19 new, on 5 November 2026. The warranty is three years from VIVO. It is the board to buy if your treadmill’s console has nowhere sensible for a phone and a bottle; if it already has a media shelf and cup holders, the plain STAND-TDML2 does the same job for less.',
+    },
+    {
+      id: "qsxou-treadmill-desk",
+      name: "Qsxou Treadmill Desk Attachment, 36 Inches Tread Tray Workstation",
+      category: "Budget tray with two cup holders",
+      badge: "Best Budget",
+      priceRange: "About $44 (Amazon, 6 Nov 2026)",
+      specs: "Listing’s figures: handrails 25 to 32 in. apart · 22 lb capacity · two 3.5 in. cup holes · tablet and phone holder · rubber edge guard",
+      pros: [
+        "The cheapest board here that straps across the rails",
+        "Two cup holders, 3.5 inches across, per the listing",
+        "Tablet and phone holder built into the board",
+        "Fits a slightly wider range of handrail spacings than VIVO’s 31-inch boards, by the listings",
+      ],
+      cons: [
+        "The listing’s board dimensions are hard to interpret, so we have left them out",
+        "Little-known seller; no warranty term in the listing",
+        "Its figures are the listing’s own; we found no second source",
+      ],
+      bottomLine: "A cheaper board with room for two drinks and a tablet, for walking on level handrails 25 to 32 inches apart.",
+      description: "This card replaces VIVO's plain 31-inch board, the STAND-TDML2, which VIVO sells on its own store but which we could not find on Amazon US. Its cup-holder sibling above is the VIVO to buy on Amazon; this is the cheaper alternative. Qsxou's treadmill desk straps across handrails 25 to 32 inches apart and, by its listing, supports up to 22 pounds, with two cup holders 3.5 inches in diameter, a holder for a tablet or phone, ventilation holes for a laptop and a rubber guard along the edge. It was about $44 on Amazon on 6 November 2026. The cup holes are fixed in size, so a slim bottle will sit loosely in them. The listing gives the board's size as 25.2 by 34.65 inches, which does not match the shape in its own description, so we have not repeated it: measure the board against your console when it arrives, and check it does not cover the display, safety key or stop button. Like every board here it needs level rails. There is no warranty term in the listing, and all of these figures are the listing's own, checked for our cup holder guide. As with any tray, use it for walking rather than running.",
     },
     {
       id: 'vivo-stand-tdml4',
@@ -567,11 +565,16 @@ export default {
       blurb: 'Mats, lubricant, mounts and the other add-ons worth having.',
       url: '/best-treadmill-accessories/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Treadmill Cup Holders and Trays",
+      blurb: "Five treadmill cup holders, bottle cages and trays with their bar and cup sizes from the listings, and…",
+      url: '/best-treadmill-cup-holders/',
+    },
   ],
   bottomLine: [
-    `For most treadmills with level rails, the <strong class="text-white">VIVO 31" Laptop Tray (STAND-TDML2)</strong>
-            at $49.99 is the place to start, with the cup-holder version if you want your phone and a drink on
-            the shelf too. Rails too far apart or a keyboard that needs to sit higher point to VIVO’s
+    `For most treadmills with level rails, the <strong class="text-white">VIVO 31" Tray with Cup Holder (STAND-TDML2A)</strong>
+            at about $70 is the place to start, with the Qsxou tray at about $44 if budget rules. Rails too far apart or a keyboard that needs to sit higher point to VIVO’s
             pole-mounted desk, and a phone alone needs only a clamp such as Arkon’s RV131.`,
     `Measure the rails before you order, keep the safety key and stop button clear, and walk rather than
             run. If you find you want to work this way every day, skip the attachment and put a standing desk

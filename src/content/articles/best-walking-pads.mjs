@@ -2,7 +2,7 @@ export default {
   slug: 'best-walking-pads',
   title: 'Best Walking Pad (2026): 6 Picks and Which One to Buy',
   description:
-    'What is the best walking pad? Our pick for most people, plus budget, long-belt, heavy-duty, incline and jogging picks, each checked against two sources.',
+    'What is the best walking pad? Our pick for most people, plus budget, compact-folding, heavy-duty, incline and jogging picks, with the sources behind every figure.',
   crumbLabel: 'Best Walking Pads',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
@@ -27,16 +27,19 @@ export default {
           any walking pad suits you — belt length, weight limit, the real motor rating and
           whether it folds — so you can judge a pad that is not on this list too.`,
   note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          walking pads. Each was confirmed on 18 October 2026 as currently sold on its maker's own
-          US store (WalkingPad, UREVO and MERACH), and its specifications were checked on that date
-          against the maker's product page and at least one independent source — a long-running
-          spec tracker that reads owner's manuals and motor labels, or a second retailer. A figure
+          walking pads. The WalkingPad Z1 and MERACH W50 were confirmed on 18 October 2026 as sold on
+          their makers' own US stores, and their specifications were checked on that date against
+          the maker's product page and at least one independent source — a long-running spec
+          tracker that reads owner's manuals and motor labels, or a second retailer. The other four
+          are Amazon listings whose figures are those checked for our lightweight, low-ceiling,
+          auto-incline and 2-in-1 treadmill guides, against the listing and, where it publishes
+          them, the maker's own store, in early November 2026. A figure
           appears in a product's specification line only where those sources agree; where they did
           not — most often on motor ratings, weight limits, unit weight and deck height — we left
           it off the card and say so in the text. We searched the US Consumer Product Safety
           Commission's recall database for every brand on this page and found no recalls; Sperax
           pads are excluded after the CPSC's April 2026 warning. None of the figures are our own
-          measurements. Prices are those the makers showed on 18 October 2026 and change often, as
+          measurements. Prices are those the makers or Amazon showed on the dates given on each card and change often, as
           do specifications under unchanged product names, so confirm the price, specification and
           warranty terms against the exact listing before you order. We earn a commission if you
           buy through the Amazon links on this page; it does not change which products we list or
@@ -46,16 +49,17 @@ export default {
       id: 'quick-picks',
       heading: 'The Best Walking Pad: Our Picks at a Glance',
       html: `          <p>
-            <strong>The best walking pad for most people is the WalkingPad A1 Pro: it folds in half,
-            has a 47-inch walking area that fits a normal stride, and is rated for 300 lb. If you
-            want to spend less than $200, the UREVO SpaceWalk E1L is the budget pick.</strong>
+            <strong>The best walking pad for most people is the WalkingPad Z1: it folds in half and has
+            a 47.6-inch walking area that fits a normal stride, for about $300, if you are under its
+            242 lb limit. If you want to spend less than $150, UREVO's flat Smart Walking Pad is the
+            budget pick.</strong>
           </p>
           <p>
-            The others each do one job better than the A1 Pro. The <a href="/walkingpad-z1-review/" class="text-[#0F62FE] font-medium" data-autolink>WalkingPad Z1</a> gives you nearly
-            the same belt length for a few hundred dollars less, if you are under its lower weight
-            limit. The MERACH NovaWalk W50 TrekPad is rated for 400 lb. The UREVO SpaceWalk 3S adds a
-            powered incline for about $250. And the UREVO Strol 2S Pro is the one to pick if you
-            want a fold-up handlebar and the option of a short, easy jog.
+            The others each do one job better than the <a href="/walkingpad-z1-review/" class="text-[#0F62FE] font-medium" data-autolink>WalkingPad Z1</a>. The WalkingPad C2 folds to 5.4
+            inches tall for the smallest storage. The MERACH NovaWalk W50 TrekPad is rated for 400 lb.
+            UREVO's CyberPad adds a powered incline to 14% for about $430. And Sunny's Treadpad with
+            7% auto incline is the one to pick if you want a fold-up handlebar and the option of a
+            short, easy jog.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead>
@@ -66,12 +70,12 @@ export default {
               </tr>
             </thead>
             <tbody>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">WalkingPad A1 Pro</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most people</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">47 in. walking area, 300 lb rating, folds in half; about $529</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UREVO SpaceWalk E1L</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lowest price</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A light, flat 4 mph pad for about $140–$190</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">WalkingPad Z1</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Longest belt for the money</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">47.6 in. walking area and a fold-in-half frame for about $300</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">WalkingPad Z1</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most people</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">47.6 in. walking area and a fold-in-half frame for about $300</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">WalkingPad C2</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Smallest storage</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Folds in half to 5.4 in. tall; 220 lb limit; about $399</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UREVO Smart Walking Pad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lowest price</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A flat 4 mph pad with a 35.4 in. belt for about $135</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">MERACH NovaWalk W50 TrekPad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Heavier walkers</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">400 lb rating and a published continuous motor figure</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UREVO SpaceWalk 3S</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Incline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Powered 0–9% incline on a 42.5 in. belt for about $250</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UREVO Strol 2S Pro</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Light jogging</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Fold-up handlebar unlocks 7.6 mph; incline as well</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UREVO CyberPad for Office</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Incline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Powered 0–14% incline on a 39.4 in. belt for about $430</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sunny Treadpad 7% Auto Incline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Light jogging</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Fold-up handlebar unlocks 6 mph; 7% powered incline</td></tr>
             </tbody>
           </table></div>
           <p>
@@ -155,16 +159,16 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">A flat pad</h3>
           <p>
             The simplest and cheapest kind: a low, flat deck, a top speed around 4 mph, no handlebar
-            and no incline. It slides under a desk, a bed or a sofa without folding. The UREVO
-            SpaceWalk E1L is one. A flat pad suits slow walking at a desk and short walks around the
+            and no incline. It slides under a desk, a bed or a sofa without folding. UREVO's Smart
+            Walking Pad is one. A flat pad suits slow walking at a desk and short walks around the
             house, and it is the right first pad for someone who is not sure how much they will use
             it. Its weaknesses are a shorter belt, commonly in the mid-30-inch range at the budget
             end, and nothing to make the walk harder once 4 mph feels easy.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">A folding pad</h3>
           <p>
-            A pad that folds in half across the middle of the deck, like the WalkingPad A1 Pro and
-            Z1. Folding lets a maker fit a longer belt — both of those are around 47 inches — into a
+            A pad that folds in half across the middle of the deck, like the WalkingPad Z1 and
+            C2. Folding lets a maker fit a longer belt — the Z1's is about 47.6 inches — into a
             box that stores in roughly half the floor space. It is the best general-purpose design
             for most homes, and the reason our top pick is one. The trade-offs are a hinge in the
             middle of the deck, a little more weight than a flat pad, and, for anyone with
@@ -174,7 +178,7 @@ export default {
           <p>
             A pad that tilts, usually on a small motor under the front of the deck. Because walking
             pads top out around 4 mph, incline is the only real way to make one harder as you get
-            fitter. The UREVO SpaceWalk 3S and the MERACH W50 TrekPad both have it. Incline pads are
+            fitter. UREVO's CyberPad and the MERACH W50 TrekPad both have it. Incline pads are
             heavier and taller than flat ones, which matters under a desk, and the incline figures on
             listings need reading carefully: levels are not the same as percent, percent is not the
             same as degrees, and one maker's description of our heavy-duty pick uses both. Our roundup of
@@ -184,7 +188,7 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">A 2-in-1 pad</h3>
           <p>
             A pad with a handlebar that folds up. With the bar down it is a walking pad; with the bar
-            raised, a higher top speed unlocks — 7.6 mph on the UREVO Strol 2S Pro. That makes a
+            raised, a higher top speed unlocks — 6 mph on Sunny's Treadpad with 7% auto incline. That makes a
             light jog possible, but it does not turn a pad into a running treadmill: the belt is
             still far shorter than the 55 to 60 inches running treadmills commonly use. Our answer to
             <a href="/can-you-run-on-a-walking-pad/" class="text-[#0F62FE] font-medium">whether you can run on a walking pad</a>
@@ -247,7 +251,7 @@ export default {
             <strong>Folding and storage.</strong> A pad that has to come out from under the sofa every
             time you use it needs to be light and easy to move; a pad that lives under a desk does
             not. Check the unit weight, the folded size and whether it has wheels. The figures we
-            could confirm range from about 37 lb for the E1L to about 75 lb for the Strol 2S Pro.
+            could confirm range from about 51 lb for the Z1 to about 79 lb for Sunny's 2-in-1 Treadpad.
           </p>
           <p>
             <strong>Height under a desk.</strong> The deck lifts you by a few inches, and an incline
@@ -280,11 +284,11 @@ export default {
             shuffling or of watching your feet.
           </p>
           <p>
-            As a rough guide, a belt in the mid-30-inch range — the E1L is about 35.4 inches — is
-            built for slow walking at a desk by people of average height or below. Around 40 to 43
-            inches, like the W50 TrekPad, SpaceWalk 3S and Strol 2S Pro, suits most people at a
+            As a rough guide, a belt in the mid-30-inch range — UREVO's Smart Walking Pad is about 35.4 inches — is
+            built for slow walking at a desk by people of average height or below. Around 39 to 46
+            inches, like the W50 TrekPad, the CyberPad and Sunny's Treadpad, suits most people at a
             comfortable walking pace and gives a little room for incline, where your stride changes.
-            Around 47 inches, like the A1 Pro and Z1, gives room for brisk walking and for taller
+            Around 47 inches, like the Z1, gives room for brisk walking and for taller
             walkers. None of these is long enough for running; running treadmills commonly use 55 to
             60 inches.
           </p>
@@ -346,16 +350,16 @@ export default {
             <a href="/wellfit-tm037-treadmill/" class="text-[#0F62FE] font-medium">Wellfit TM037</a>,
             the <a href="/treaflow-walking-pad/" class="text-[#0F62FE] font-medium">Treaflow 3100W</a>
             and the <a href="/goplus-2-in-1-treadmill/" class="text-[#0F62FE] font-medium">Goplus 2-in-1</a>
-            — are sold for less than our budget pick and can make sense for light, occasional use.
+            — sell for about the same as our budget pick and can make sense for light, occasional use.
             Our reviews explain the caveats: in the TM037's case, an advertised motor that an
             independent teardown report contradicted and warranty wording that differs between
-            listings; in the Goplus's, a 2.5 mph cap with the handlebar down. The E1L costs a little
-            more and its basic figures held up better.
+            listings; in the Goplus's, a 2.5 mph cap with the handlebar down. UREVO's Smart Walking Pad
+            costs about the same and its listing is more specific about its figures.
           </p>
           <p>
             <strong>The MERACH UltraWalk W60 Plus</strong> goes to 12% incline and is the steepest pad
             in our incline roundup, but its weight limit is quoted as both 330 and 400 lb in MERACH's
-            own materials. For a general pick, the SpaceWalk 3S was the more consistent choice.
+            own materials. For a general pick, UREVO's CyberPad, whose incline and speed figures agree across sources, was the more consistent choice.
           </p>`,
     },
     {
@@ -366,7 +370,7 @@ export default {
             the first month.
           </p>
           <ol>
-            <li><strong>Match the exact model.</strong> Pads are sold under near-identical names in several versions — the A1 Pro in two weight ratings, the Z1 in standard and white versions, the W50 alongside a cheaper W50 Lite. Check the model number in your basket against the specification you chose.</li>
+            <li><strong>Match the exact model.</strong> Pads are sold under near-identical names in several versions — the Z1 in standard and white versions, UREVO's flat pads under several names, the W50 alongside a cheaper W50 Lite. Check the model number in your basket against the specification you chose.</li>
             <li><strong>Measure the space and the desk.</strong> Unfolded length and width, the clearance under furniture for storage, and your desk's maximum height with the pad's deck height added.</li>
             <li><strong>Think about the floor.</strong> A mat protects the floor, stops the pad creeping and, if it is dense, reduces the thud that travels to the room below. Our <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">treadmill mat guide</a> explains the options.</li>
             <li><strong>Read the return terms.</strong> You will only know whether the belt suits your stride once you have walked on it. Know the return window, and who pays to ship a 40 to 75 lb box back.</li>
@@ -382,59 +386,11 @@ export default {
   ],
   products: [
     {
-      id: 'walkingpad-a1-pro',
-      name: 'WalkingPad A1 Pro',
-      category: 'Best Overall Walking Pad',
-      badge: 'Best Overall',
-      amazonUrl: 'https://www.amazon.com/s?k=WalkingPad+A1+Pro+Foldable+Under+Desk+Treadmill&tag=sktiger-20',
-      priceRange: '$529–$699',
-      specs: '47 x 16.5 in. walking area · 0.5–3.75 mph · 300 lb capacity · 63 lb · folds in half',
-      pros: [
-        'A 47-inch walking area, long enough for a natural stride at a brisk walk and for most taller walkers',
-        'Rated for 300 lb, higher than most folding pads, on both WalkingPad’s page and independent coverage',
-        'Folds in half and arrives fully assembled, so it stores under a bed or sofa',
-        'Speed from the remote, the app or FootSense, which follows your position on the belt',
-      ],
-      cons: [
-        'WalkingPad and an independent tracker give very different motor ratings, so we have not printed one',
-        'At about $529 on sale it costs well over twice the budget pick, and the warranty is one year',
-        'Tops out at 3.75 mph and has no incline, so it will not make your walk harder as you get fitter',
-      ],
-      bottomLine:
-        'The walking pad to buy if you want one machine that suits most people and most rooms: a long belt, a generous weight limit and a frame that folds away.',
-      description:
-        "The A1 Pro is WalkingPad's long-running folding pad, and it earns the top spot by doing the things that matter most without a serious weakness. WalkingPad lists a 47 by 16.5-inch walking area, a speed range of 0.5 to 3.75 mph, a 300 lb maximum user weight and a 63 lb net weight, and an independent spec tracker gives the same walking area, top speed, capacity and weight. That belt is among the longest on any pad, so a normal stride fits at a brisk walk, and the 300 lb rating leaves real margin for most walkers. It folds in half to about 5 inches tall by WalkingPad's figures, and an independent reviewer who has used one in an office for a long time found it fairly quiet at desk speeds. Two things to know. WalkingPad's specification table still mentions 230 lb and 300 lb versions, though only the 300 lb version was for sale on its store when we checked; and the motor is listed by WalkingPad at 3.75 HP while the tracker gives a much lower figure, so we left horsepower out. WalkingPad listed it at $529, down from $699, on 18 October 2026, with a one-year warranty.",
-    },
-    {
-      id: 'urevo-spacewalk-e1l',
-      name: 'UREVO SpaceWalk E1L',
-      category: 'Best Budget Walking Pad',
-      badge: 'Best Budget',
-      amazonUrl: 'https://www.amazon.com/s?k=UREVO+SpaceWalk+E1L+Walking+Pad&tag=sktiger-20',
-      priceRange: '$140–$190',
-      specs: '35.4 x 15 in. belt · up to 4.0 mph · 36.6 lb · flat deck, no incline',
-      pros: [
-        'Often sold for well under $200 — UREVO showed $139.99 against $189.99 when we checked',
-        'At about 37 lb, the lightest pad here and the easiest to slide under furniture every day',
-        'Belt size, top speed and unit weight agree between UREVO and an independent spec tracker',
-        'App connection and a remote, with a warranty extension on registration',
-      ],
-      cons: [
-        'A 35.4-inch belt is short; it suits slow desk walking, not a brisk pace or a long stride',
-        'UREVO rates it for 265 lb and the tracker for 242 lb, so we have not printed a capacity',
-        'The tracker reports a brushed motor well below the advertised 2.5 HP, and there is no incline',
-      ],
-      bottomLine:
-        'The cheapest pad we would buy for slow walking at a desk or around the house. If you are tall, walk briskly or weigh over about 220 lb, spend more.',
-      description:
-        "The SpaceWalk E1L is UREVO's entry-level flat pad and the budget pick here because its basic figures held up, which is rarer than it should be at this price. UREVO lists a 35.43 by 15-inch running area, a speed range of 0.6 to 4.0 mph and a 36.59 lb unit weight, and an independent spec tracker gives the same belt, top speed and weight. That makes it the lightest pad on this page and the easiest to move every day. The figures that differ are capacity — 265 lb on UREVO's page, 242 lb on the tracker's — and deck height, so neither appears on the card; if you are near either weight figure, choose a pad with more margin. The tracker also reports a brushed motor and a rated power well below the advertised 2.5 HP, which is normal for a budget pad and a reason to keep sessions to walking pace. The belt is the real limit: at about 35 inches it is fine for slow desk walking, but taller walkers and anyone walking briskly will want the Z1. UREVO's warranty is one year plus 180 days, with the extension depending on registration in its app. UREVO showed $139.99, down from $189.99, on 18 October 2026.",
-    },
-    {
       id: 'walkingpad-z1',
       name: 'WalkingPad Z1',
       reviewUrl: '/walkingpad-z1-review/',
       category: 'Folding Pad With the Longest Belt for the Money',
-      badge: 'Longest Belt',
+      badge: 'Best Overall',
       amazonUrl: 'https://www.amazon.com/s?k=WalkingPad+Z1+Foldable+Walking+Treadmill&tag=sktiger-20',
       priceRange: '$299–$329',
       specs: '47.6 in. walking area length · 1–4 mph · 242 lb capacity · about 51 lb · folds in half',
@@ -445,14 +401,60 @@ export default {
         'A walking-only speed range, which suits desks and shared floors',
       ],
       cons: [
-        'A 242 lb limit, lower than the A1 Pro’s, leaves little margin for heavier walkers',
+        'A 242 lb limit leaves little margin for heavier walkers, who should look at the MERACH W50',
         'Motor ratings differ widely between WalkingPad and the other sources',
         'No incline and no handlebar',
       ],
       bottomLine:
-        'The pad to buy if you want a long belt that folds away and you are comfortably under 242 lb. It is most of the A1 Pro for a few hundred dollars less.',
+        'The pad to buy if you want a long belt that folds away and you are comfortably under 242 lb. For most people it is the best balance of belt, storage and price here.',
       description:
-        "The Z1 is the value alternative to our top pick: nearly the same belt, a lower weight limit and a much lower price. WalkingPad lists a 47.6 by 15.7-inch walking area, a speed range of 1 to 4 mph, a 242 lb maximum user weight and a 51 lb net weight, folding in half; Living.fit, which also sells it, gives the same length, speed range and unit weight and a 110 kg capacity, and an independent spec tracker agrees on the 242 lb limit and 4 mph top speed. The width differs by a tenth of an inch between listings, so we printed the length only. The motor is where sources part company — WalkingPad says 2.25 HP brushless, Living.fit and the tracker 0.75 HP — and the noise claims conflict too: WalkingPad's Z1 page says below 65 dB while Living.fit's says below 40 dB, which shows how little such figures can be compared. On 18 October 2026 WalkingPad had the standard Z1 in stock at $329 and the white Z1 at $299. The warranty is one year.",
+        "The Z1 is our top pick because it pairs the longest walking area on this page with a fold-in-half frame and a low price. WalkingPad lists a 47.6 by 15.7-inch walking area, a speed range of 1 to 4 mph, a 242 lb maximum user weight and a 51 lb net weight, folding in half; Living.fit, which also sells it, gives the same length, speed range and unit weight and a 110 kg capacity, and an independent spec tracker agrees on the 242 lb limit and 4 mph top speed. The width differs by a tenth of an inch between listings, so we printed the length only. The motor is where sources part company — WalkingPad says 2.25 HP brushless, Living.fit and the tracker 0.75 HP — and the noise claims conflict too: WalkingPad's Z1 page says below 65 dB while Living.fit's says below 40 dB, which shows how little such figures can be compared. On 18 October 2026 WalkingPad had the standard Z1 in stock at $329 and the white Z1 at $299. The warranty is one year.",
+    },
+    {
+      id: 'walkingpad-c2',
+      name: 'WalkingPad C2',
+      category: 'Fold-in-Half Pad That Stores Smallest',
+      badge: 'Most Compact Fold',
+      priceRange: 'About $399 (Amazon, 6 Nov 2026)',
+      specs: '55 lb (listing) · 1–4 mph · 220 lb capacity · folds 180° to 5.4 in. tall · FootSense, remote and app · no assembly',
+      pros: [
+        'Folds in half to 5.4 inches tall, by the listing, for storage under a bed or sofa',
+        'At 55 lb, light enough to roll between rooms every day',
+        'Arrives assembled; unfold and plug in',
+        'Speed control by remote, app or FootSense, which follows your position on the belt',
+      ],
+      cons: [
+        'A 220 lb limit, the lowest on this page',
+        'The listing does not give the belt size',
+        'About $399, more than the Z1, which has a longer stated walking area and a higher weight limit',
+      ],
+      bottomLine:
+        'The pad to choose if folded size matters most and you are well under 220 lb. If belt length matters more, the Z1 gives more for less.',
+      description:
+        'The WalkingPad C2 is the longest-running of WalkingPad\'s fold-in-half pads, and the pick here for storage. Its Amazon listing describes a deck that folds through 180 degrees to a height of 5.4 inches, a total weight of 55 lb on two wheels, no assembly, a 2.0 HP motor rated for users up to 220 lb, a speed range of 1 to 4 mph set by remote, app or the FootSense mode, and an LED display for steps, time, speed, calories and distance. It comes in five colours. Folded in half, it is roughly half the length of a flat pad, which makes it far easier to tuck into a cupboard, under a bed or behind a door, and easier to carry for its weight. The two limits are the 220 lb capacity, the lowest here, which leaves little margin for many adults, and the missing belt size in the bullets; as a 4 mph walking pad it suits a desk or living-room walk rather than exercise at a brisk pace. At $399 on 6 November 2026 it cost more than the Z1, whose stated walking area is 47.6 inches and whose limit is 242 lb, so the C2 is mainly for those who prefer its design, its FootSense mode or its colours.',
+    },
+    {
+      id: 'urevo-smart-walking-pad',
+      name: 'UREVO Smart Walking Pad',
+      category: 'Flat Pad for the Lowest Price',
+      badge: 'Best Budget',
+      priceRange: 'About $135 (Amazon, 6 Nov 2026)',
+      specs: '4.1 in. overall height (listing) · 35.43 x 15 in. belt · 0.6–4 mph · 265 lb capacity · remote and app',
+      pros: [
+        'A 4.1-inch overall profile, so the belt sits no higher than that',
+        'About $135, by far the cheapest pick',
+        'A stated 265 lb limit',
+        'Slides under furniture when not in use',
+      ],
+      cons: [
+        'Walking only: 4 mph top speed and no handle',
+        'A short 35.4-inch belt suits slow walking more than a brisk pace',
+        'The listing gives no unit weight',
+      ],
+      bottomLine:
+        'The pad to buy if you want to walk slowly at a desk for as little as possible. Taller or brisker walkers should spend more on a longer belt.',
+      description:
+        'UREVO\'s flat Smart Walking Pad is the budget pick because it does the basic job for about $135 and its listing is specific about the figures that matter. The Amazon listing gives a 4.1-inch slim profile — the overall height including the motor cover, so the belt surface sits no higher — a 35.43 by 15-inch belt with eight silicone shock absorbers and two rubber pads, walking speeds of 0.6 to 4 mph, a 2.5 HP peak motor, a 265 lb maximum user weight, wheels, an LED display, a remote and app control with virtual routes and a MIIT interval mode. The specifications closely match UREVO\'s SpaceWalk E1L, but the listing does not use that name. The trade-offs are the ones of any small flat pad: a short belt that suits slow walking under a desk better than brisk exercise walking, no handle, no incline and no jogging mode, and the listing gives no unit weight. Amazon showed it at $134.99 on 6 November 2026.',
     },
     {
       id: 'merach-novawalk-w50-trekpad',
@@ -479,62 +481,60 @@ export default {
         "The W50 TrekPad is our pick for heavier walkers because its weight rating is unusually consistent and its motor figure unusually honest. MERACH's product page lists a 400 lb maximum user weight, a 16.5 by 41.3-inch belt and a motor rated at 1.25 HP continuous and 3.5 HP peak, and an independent spec tracker gives the same capacity, belt, continuous rating and a 4 mph top speed. A continuous rating is the figure that tells you how a motor copes with long sessions under load, and most pad makers publish only the peak. The incline is powered; MERACH's page title, the Amazon listing and the tracker give 12%, though one line of MERACH's description says 12 degrees, which would be far steeper, so treat 12% as the working figure. Two smaller cautions: one technical field on the Amazon listing gives 150 kg rather than 400 lb, and a cheaper W50 Lite with a lower rating is sold alongside it, so check the model number (MERACH lists MR-T25B2-US). The warranty is one year, with a second on registration. MERACH listed it at $299.99, down from $479.99, on 18 October 2026. Our heavy-people roundup covers four more high-capacity pads.",
     },
     {
-      id: 'urevo-spacewalk-3s',
-      name: 'UREVO SpaceWalk 3S',
-      category: 'Best Walking Pad With Incline',
+      id: 'urevo-cyberpad',
+      name: 'UREVO CyberPad for Office',
+      category: 'Walking Pad With Powered Incline',
       badge: 'Best With Incline',
-      amazonUrl: 'https://www.amazon.com/s?k=UREVO+SpaceWalk+3S+Walking+Pad&tag=sktiger-20',
-      priceRange: '$250–$350',
-      specs: '0–9% powered incline · 0.6–4.0 mph · 42.5 in. belt length · 265 lb capacity · 6.5 in. tall',
+      priceRange: 'About $432 (Amazon, 6 Nov 2026)',
+      specs: '0–14% powered incline · 39.4 x 16.5 in. running area · 0.6–4.0 mph · about 63 lb · brushless motor',
       pros: [
-        'Powered incline from 0 to 9%, changed mid-walk from the remote or the UREVO app',
-        'A 42.5-inch belt, long for an incline pad, which matters because your stride changes uphill',
-        'Incline, speed, belt, capacity and height agree between UREVO and an independent tracker',
-        'Strong value — UREVO showed $249.99 against $349.99 when we checked',
+        'A 14% powered incline on a pad that slides under a desk',
+        'Incline makes a speed-capped pad harder as you get fitter',
+        'A brushless motor, per UREVO',
+        'Speed lights and an app that logs your walks',
       ],
       cons: [
-        'Unit weight is about 57 lb on UREVO’s page and about 71 lb on the tracker’s, so plan on the heavier figure',
-        'The tracker reports a brushed motor rated well below the advertised 2.5 HP maximum',
-        'At 6.5 inches tall it sits higher than a flat pad, and UREVO now sells a newer SpaceWalk 5L at a higher price',
+        'UREVO, the US Amazon listing and the EU manual give three different weight ratings, so none is on the card',
+        'A 39.4-inch belt and 4 mph top speed suit slow and moderate walking only',
+        'The incline raises the deck, so check your standing desk’s range',
       ],
       bottomLine:
-        'The cheapest way to get a genuine, adjustable incline on a belt long enough to use it. The right pad if you want your walk to get harder as you get fitter.',
+        'The pad to buy if you want incline under a desk, if you check the weight rating on the listing first.',
       description:
-        "The SpaceWalk 3S is the pad to choose if incline is what you want, and it costs about half the price of our top pick. UREVO lists a powered incline from 0 to 9% across nine levels, a speed range of 0.6 to 4.0 mph, a 42.5 by 16.54-inch running area, a 265 lb maximum load and a 6.5-inch height, and an independent spec tracker gives the same incline, speed, belt length, capacity and height. Incline is the only way to raise the effort on a pad once 4 mph feels easy, and even a few percent at a desk pace is a noticeably harder walk; the longer-than-usual belt keeps that comfortable. The disagreements are on weight — 56.65 lb on UREVO's page, 71 lb on the tracker's — and the motor, which UREVO advertises at 2.5 HP maximum and the tracker, citing the manual, rates much lower and describes as brushed. The warranty is one year plus 180 days, with the extension requiring registration in UREVO's app. The tracker notes UREVO's SpaceWalk 5L as a newer model; the 3S was still on sale at $249.99, down from $349.99, on UREVO's store on 18 October 2026.",
+        'The CyberPad is UREVO\'s walking pad built around incline, and the pick here for anyone who wants to make a walk harder without walking faster. UREVO lists a 0–14% powered incline in 14 levels, a 39.4 by 16.5-inch running area, 0.6 to 4.0 mph, a 63.1 lb unit weight and a 6.3-inch height, and an independent review and spec tracker gave the same speed, incline and weight when an earlier guide on this site checked them. The Amazon listing adds a 2.5 HP brushless motor and an app that logs your walks. Incline matters more on a pad than on a treadmill, because the speed stops at about 4 mph; raising the grade is the only way to make the walk harder. The one figure we could not settle is capacity: UREVO\'s page and an independent review give 400 lb, the US Amazon listing gave 242 lb and the EU manual 300 lb, so check the figure on the exact listing you buy from. UREVO also advertises a 35 dB noise level from its own testing; we found no independent measurement. Amazon listed it at $431.99 on 6 November 2026.',
     },
     {
-      id: 'urevo-strol-2s-pro',
-      name: 'UREVO Strol 2S Pro',
-      category: 'Best Walking Pad for Light Jogging',
+      id: 'sunny-treadpad-auto-incline',
+      name: 'Sunny Health & Fitness Treadpad Treadmill 7% Auto Incline',
+      category: '2-in-1 Pad for an Occasional Jog',
       badge: 'Best for Jogging',
-      amazonUrl: 'https://www.amazon.com/s?k=UREVO+Strol+2S+Pro+Treadmill&tag=sktiger-20',
-      priceRange: '$300–$550',
-      specs: '42.5 x 16.5 in. belt · to 4.0 mph bar down, 7.6 mph bar up · 0–9% powered incline · 265 lb capacity',
+      priceRange: 'About $487 (Amazon, 6 Nov 2026)',
+      specs: '45.7 x 16 in. running surface · 0.5–3.7 mph handlebar down, to 6 mph handlebar up · 7% auto incline · 265 lb capacity (Sunny)',
       pros: [
-        'Raising the handlebar unlocks a running mode to 7.6 mph, enough for an easy jog for many people',
-        'Walking mode reaches 4.0 mph with the bar down, so it still works under a desk',
-        'Powered incline to 9% as well, which few 2-in-1 pads offer',
-        'Belt, speeds, incline and capacity agree between UREVO and an independent tracker',
+        'A powered incline to 7% in six preset steps, changed at the press of a button',
+        'The longest running surface here, 45.7 inches, by both the listing and Sunny’s site',
+        'Sunny publishes a weight limit (265 lb), unit weight (79.4 lb) and deck height on its own store',
+        'A US-based brand with its own support and the SunnyFit app',
       ],
       cons: [
-        'A 42.5-inch belt is long for a pad but short for running; treat jogging as an occasional extra',
-        'About 75 lb, the heaviest pad here, and the tracker reports a brushed motor below the advertised 2.5 HP',
-        'The price swings widely — $549.99 on UREVO’s store when we checked, against about $300 on sale days earlier',
+        'About $487, among the most expensive pads here',
+        'Running mode stops at 6 mph, so a jog stays easy',
+        'At 79.4 lb by Sunny’s figure, one of the heaviest pads here to move',
       ],
       bottomLine:
-        'The pad to buy if you want a handlebar and the option of a short, easy jog alongside desk walking. If you want to run regularly, buy a treadmill instead.',
+        'The pad to buy if you want a handlebar, incline and the option of a short, easy jog alongside desk walking. If you want to run regularly, buy a treadmill instead.',
       description:
-        "The Strol 2S Pro is a 2-in-1: a walking pad with a handlebar that folds up, and with the bar raised, a higher speed range. UREVO lists a 42.52 by 16.54-inch running area, a walking mode of 0.6 to 4.0 mph, a running mode to 7.6 mph, a 0 to 9% powered incline, a 265 lb maximum load and a 74.51 lb unit weight, and an independent spec tracker agrees on the belt, both speed limits, the incline, the capacity and a weight of about 75 lb. That makes it the most capable pad here for light jogging, with the important caveat that a 42.5-inch belt is far shorter than a running treadmill's, so a jog suits a compact, easy stride rather than real running. Walking mode still reaches 4 mph with the bar folded, so it works under a desk too. The tracker describes the motor as brushed and rated well below UREVO's 2.5 HP maximum, so do not plan long, fast sessions. The warranty is one year plus 180 days on app registration. The price moves a lot: UREVO's store showed $549.99 on 18 October 2026, and it was on sale near $300 earlier in the month, so it is worth waiting for a discount.",
+        'Sunny\'s Treadpad with 7% auto incline is a 2-in-1: a walking pad with a handlebar that raises to unlock a higher speed. The Amazon listing gives a 45.7 by 16-inch running surface, a walking mode of 0.5 to 3.7 mph with the handlebar folded and a running mode up to 6 mph with it fully extended, a powered incline with six preset levels up to 7%, a 6.3 by 2.4-inch display, a remote and the SunnyFit app. Sunny\'s own store lists the same running surface and speed ranges for its 2-in-1 auto-incline Treadpad and adds a 265 lb maximum user weight, a 79.4 lb product weight, a 2.0 HP peak motor and a deck that sits 4.1 inches off the floor flat and 5.7 inches at full incline. The 45.7-inch belt is the most meaningful figure for jogging, because it gives a longer stride somewhere to land, but it is still far shorter than a running treadmill\'s, so a jog suits a compact, easy stride rather than real running. The trade-offs are the price and the weight: at nearly 80 lb it is a two-handed job to move. Amazon showed it at $487.26 on 6 November 2026. Sunny\'s warranty on its own store is three years on the frame and 180 days on other parts.',
     },
   ],
   faqs: [
     {
       q: 'What is the best walking pad?',
-      a: `For most people, the WalkingPad A1 Pro: it has a 47-inch walking area that fits a normal stride, a 300 lb weight rating and a frame that folds in half. If you want to spend under $200, the UREVO SpaceWalk E1L is our budget pick; for incline, the UREVO SpaceWalk 3S; and for heavier walkers, the MERACH NovaWalk W50 TrekPad.`,
+      a: `For most people, the WalkingPad Z1: it has a 47.6-inch walking area that fits a normal stride and a frame that folds in half for about $300, with a 242 lb limit. If you want to spend under $150, UREVO's flat Smart Walking Pad is our budget pick; for incline, UREVO's CyberPad; and for heavier walkers, the MERACH NovaWalk W50 TrekPad.`,
     },
     {
       q: 'What is the best walking pad to buy on a budget?',
-      a: `The UREVO SpaceWalk E1L, which UREVO was selling for $139.99 when we checked. Its belt size, top speed and weight agree between UREVO and independent coverage. Its 35.4-inch belt suits slow desk walking rather than a brisk pace, so taller walkers and brisk walkers should look at the WalkingPad Z1 at about $300.`,
+      a: `UREVO's flat Smart Walking Pad, which Amazon showed at $134.99 on 6 November 2026. Its listing gives a 35.43 by 15-inch belt, 0.6 to 4 mph and a 265 lb limit. Its 35.4-inch belt suits slow desk walking rather than a brisk pace, so taller walkers and brisk walkers should look at the WalkingPad Z1 at about $300.`,
     },
     {
       q: 'What should I look for in a walking pad?',
@@ -546,7 +546,7 @@ export default {
     },
     {
       q: 'Can you jog on a walking pad?',
-      a: `Not on most flat pads, which stop at about 3.75 to 4 mph. A 2-in-1 pad such as the UREVO Strol 2S Pro unlocks a higher speed when the handlebar is raised, which allows a light, easy jog. Its belt is still far shorter than a running treadmill's, so treat jogging as an occasional extra and follow the manual's limits.`,
+      a: `Not on most flat pads, which stop at about 3.75 to 4 mph. A 2-in-1 pad such as Sunny's Treadpad with 7% auto incline unlocks a higher speed when the handlebar is raised, which allows a light, easy jog. Its belt is still far shorter than a running treadmill's, so treat jogging as an occasional extra and follow the manual's limits.`,
     },
     {
       q: 'How long do walking pads last?',
@@ -606,14 +606,20 @@ export default {
       blurb: "Five walking pads ranked by checked footprint and weight.",
       url: '/best-mini-treadmills/',
     },
+    {
+      kicker: 'Buying Guide',
+      title: "Best Lightweight Treadmills",
+      blurb: "Five lightweight folding treadmills from 44 to 66 lb, each with a weight stated by the listing or the…",
+      url: '/best-lightweight-treadmills/',
+    },
   ],
   bottomLine: [
-    `<strong class="text-white">For most people the best walking pad is the WalkingPad A1 Pro</strong>:
-            a long belt, a 300 lb rating and a frame that folds away. On a tight budget the UREVO
-            SpaceWalk E1L is the one we would buy for slow walking, and the WalkingPad Z1 gives you
-            nearly the A1 Pro's belt for about $300 if you are under its lower limit. For heavier
-            walkers, choose the MERACH W50 TrekPad; for incline, the UREVO SpaceWalk 3S; for an
-            occasional jog, the UREVO Strol 2S Pro.`,
+    `<strong class="text-white">For most people the best walking pad is the WalkingPad Z1</strong>:
+            a long belt and a frame that folds away for about $300, if you are under its 242 lb
+            limit. On a tight budget UREVO's flat Smart Walking Pad is the one we would buy for slow
+            walking, and the WalkingPad C2 folds smallest. For heavier walkers, choose the MERACH W50
+            TrekPad; for incline, UREVO's CyberPad; for an occasional jog, Sunny's Treadpad with 7%
+            auto incline.`,
     `Whichever you choose, match the belt to your stride, keep well under the weight limit and
             check the exact model in your basket. To judge a pad that is not on this list, use our
             <a href="/walking-pad-buying-guide/" class="text-[#5AA9FF] font-bold no-underline">walking pad buying guide</a>.`,

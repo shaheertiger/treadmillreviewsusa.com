@@ -66,8 +66,8 @@ export default {
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Hayabusa T3 Boxing Gloves</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Gloves</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Splinted wrist support, in 10 to 18 oz</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Everlast Elite Hand Wraps 180in</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Hand wraps</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Full 180-inch length, machine washable, about $15</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">TITLE Classic Double End Bag 3.0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Double-end / reflex bag</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Timing and accuracy work, cables included, under $40</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rogue SR-1 Bearing Speed Rope</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Jump rope</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bearing handles and a cable you cut to your height</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">FightCamp</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Connected boxing system</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Punch trackers and guided rounds on your TV; membership required</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Crossrope Get Lean Set</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Jump rope</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Two clip-on rope weights, sized by height, lifetime handle warranty</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Corner Boxing Tracker</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Punch trackers</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Punch counts and on-demand classes for the bag you own; a year of Premium included</td></tr>
             </tbody>
           </table></div>
           <p>
@@ -103,32 +103,34 @@ export default {
             each. On 16 October 2026 we checked each against its maker's own product page and at
             least one independent source: <a href="/academy-sports-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Academy Sports</a> and Walmart listings for the Wavemaster,
             Garage Gym Reviews' hands-on reviews for the Hayabusa bag and gloves, retailer listings
-            for the Everlast wraps and the TITLE double-end bag, Garage Gym Reviews' jump rope guide
-            for the Rogue rope, and BarBend's review for FightCamp.
+            for the Everlast wraps and the TITLE double-end bag. The rope and the punch trackers were
+            added in November 2026, when we replaced two items sold only direct (Rogue's SR-1 rope and
+            FightCamp) with ones sold on Amazon: the Crossrope set's figures are those checked for our
+            jump rope guide against Tom's Guide and Garage Gym Reviews, and the Corner trackers' come
+            from the Amazon listing and Wareable's hands-on review.
           </p>
           <p>
             Where sources disagreed, we left the figure out. The Wavemaster's filled weight is given
             as about 250 pounds by Century and about 270 pounds by another retailer, and only one
             listing gives a diameter. The Everlast wraps are described as a cotton and polyester
-            blend by Everlast and as nylon and polyester by several retailers. FightCamp's
-            independent coverage describes older package pricing than the maker's current store, so
-            we give only the equipment prices we saw on the maker's site.
+            blend by Everlast and as nylon and polyester by several retailers. Corner's membership
+            price differs between the App Store and other sources, so we do not quote it.
           </p>
           <p>
             We also left some well-known products out. A popular Everlast <a href="/best-punching-bags/" class="text-[#0F62FE] font-medium" data-autolink>heavy bag</a> is sold under
             several closely related names, and listings disagree on its diameter, so we could not be
             sure which figures belonged to which bag. A leather speed rope we considered could not
-            be checked against any source other than its maker. And Crossrope's standard Get Lean
-            set, which independent reviewers like, was listed as sold out in the US on the day we
-            checked.
+            be checked against any source other than its maker. Rogue's SR-1 bearing rope and the
+            FightCamp system are well regarded but sold direct rather than on Amazon, so we list
+            Amazon alternatives.
           </p>
           <p>
             <strong>Safety screening.</strong> We searched the US Consumer Product Safety Commission
-            recall database for every brand here — Century, Hayabusa, Everlast, TITLE Boxing, Rogue
-            and FightCamp — and found no recall or warning covering the listed products. Everlast's
-            name appears in two older recalls of Everlast-branded fitness balls and resistance tubing
-            made by a licensee, and Rogue appears for a 2015 recall of a band door anchor; none
-            involves boxing equipment or the products here. Results under the word Century relate to
+            recall database for every brand here — Century, Hayabusa, Everlast, TITLE Boxing,
+            Crossrope and Corner — and found no recall or warning covering the listed products.
+            Everlast's name appears in two older recalls of Everlast-branded fitness balls and
+            resistance tubing made by a licensee; neither involves boxing equipment or the products
+            here. Results under the word Century relate to
             unrelated companies.
           </p>`,
     },
@@ -344,8 +346,8 @@ export default {
           <p>
             <strong>A rope needs clearance.</strong> You need clear space overhead and around you;
             low ceilings, light fittings and furniture are the usual problem indoors. Size the rope to
-            your height. With a cut-to-length rope like the Rogue SR-1, follow the maker's sizing
-            guidance and trim a little at a time, because you cannot add cable back. Jump on a mat or
+            your height. With a rope sized by height, like the Crossrope set, use the maker's chart;
+            with a cut-to-length rope, trim a little at a time, because you cannot add cable back. Jump on a mat or
             a forgiving floor rather than bare concrete, and remember the noise section: skipping is
             one of the loudest things you can do in an upstairs room. If you would rather use a weighted,
             smart or cordless rope, our guide to the
@@ -503,52 +505,51 @@ export default {
         "A double-end bag is a small inflated ball held between the ceiling and the floor by elastic cords, and it trains something a heavy bag cannot: hitting a target that moves back at you. TITLE Boxing and a second retailer, Kibi Sports, describe the Classic Double End Bag 3.0 as having an engineered leather cover with steel O-rings at the top and bottom, and TITLE says it comes with two rubber cables with S-hooks; it is sold in 5 and 8-inch diameters. The larger bag is the easier one for beginners, being a bigger and slower target. Setting one up needs two anchors: a secure ceiling fixing and something at floor level, which can be as simple as a heavy dumbbell or kettlebell, set so the ball sits at about head height. The load on the ceiling is far lower than a heavy bag's, but the fixing still needs to go into something solid. Start with the cords tight and loosen them as your timing improves.",
     },
     {
-      id: 'rogue-sr-1-speed-rope',
-      name: 'Rogue SR-1 Bearing Speed Rope',
-      category: 'Speed jump rope',
+      id: 'crossrope-get-lean',
+      name: 'Crossrope Get Lean Set',
+      category: 'Weighted jump rope system',
       badge: 'Best Jump Rope',
-      amazonUrl: 'https://www.amazon.com/s?k=Rogue+SR-1+Bearing+Speed+Rope&tag=sktiger-20',
-      priceRange: '$35',
-      specs: '120 in. (10 ft) coated cable, cut to length · ball-bearing handles',
+      priceRange: 'About $129',
+      specs: 'Slim handles · ¼ lb and ½ lb coated ropes on a clip-on system · sizes XS to XL by height · limited lifetime warranty on handles; ropes not covered',
       pros: [
-        'Bearing handles spin smoothly, which helps with rhythm and footwork',
-        'Cut-to-length cable gives a precise fit for your height',
-        'Small and cheap compared with every other item on this page',
-        'Replacement cables, including a longer one, are sold separately',
+        'Two rope weights that clip on and off in seconds, for rhythm work and harder conditioning rounds',
+        'Light-weighted ropes give more feedback than a speed rope, which helps beginners find rhythm',
+        'Sized by height in five sizes, so there is nothing to cut',
+        'Handles carry a limited lifetime warranty',
       ],
       cons: [
-        'You have to size and cut the cable yourself; cut too short and you need a new cable',
-        'Sold by Rogue rather than on Amazon',
-        'A thin, fast cable stings if you catch yourself, and skipping is loud indoors',
+        'Several times the price of a basic rope',
+        'Ropes are consumables and are not covered by the warranty',
+        'Skipping is loud indoors, and the coating wears on concrete; Crossrope recommends a mat',
       ],
       bottomLine:
-        'A durable, well-made rope for boxing conditioning. Size it carefully and trim a little at a time.',
+        'A rope system for boxing conditioning that is easy to size and easy to learn on. Choose the size from Crossrope’s height chart.',
       description:
-        "Skipping is a traditional part of boxing training for conditioning, rhythm and footwork, and Rogue's SR-1 is a well-made, widely used bearing rope. Rogue lists it with ball-bearing handles and a 120-inch coated cable that you size to your height and cut, and Garage Gym Reviews' jump rope guide describes Rogue's SR series in the same way: bearing handles, a standard 10-foot cable and a size-and-cut design that needs a small screwdriver. Garage Gym Reviews also notes that bearings spin more smoothly than the bushings in Rogue's cheaper SR-3, and that taller users can buy a longer replacement cable. The cut-to-length design is a strength and a trap: it gives you a precise fit, but you cannot add cable back, so trim a little at a time. Rogue sells it directly rather than on Amazon. Indoors, check your ceiling height and light fittings first, jump on a mat or a forgiving floor, and remember that skipping is one of the loudest things you can do in an upstairs room.",
+        "Skipping is a traditional part of boxing training for conditioning, rhythm and footwork. Crossrope's system pairs one set of handles with ropes of different weights that clip on and off, and the Get Lean set is the lighter one: Crossrope lists slim handles with a quarter-pound and a half-pound rope, and Tom's Guide and Garage Gym Reviews both describe the same two ropes — Tom's Guide as 4 and 8 ounces — and the same $129 price, which Crossrope's store also showed on 19 October. The ropes are not adjustable; you pick a size from Crossrope's height chart, from XS (up to 5 feet half an inch) to XL (6 feet 2 and over). Reviewers liked the smooth bearings, the sizing and how easily the ropes switch; Garage Gym Reviews' tester found the rope itself less durable than the handles, and Crossrope's warranty bears that out: the handles have a limited lifetime warranty and the ropes are excluded as wear items. The set is sold on Amazon through Crossrope's own seller account, where sizes and stock vary. Indoors, check your ceiling height and light fittings first, jump on a mat, and remember that skipping is one of the loudest things you can do in an upstairs room.",
     },
     {
-      id: 'fightcamp',
-      name: 'FightCamp',
-      category: 'Connected boxing system',
-      badge: 'Best Connected System',
-      amazonUrl: 'https://www.amazon.com/s?k=FightCamp+Boxing+Bag+Package&tag=sktiger-20',
-      priceRange: '$299–$899 plus membership',
-      specs: 'Console connects to a TV · punch trackers · free-standing bag in the larger packages · needs about 67 in. of height',
+      id: 'corner-boxing-tracker',
+      name: 'Corner Boxing Tracker',
+      category: 'Punch trackers with an app',
+      badge: 'Best Connected Option',
+      amazonUrl: 'https://www.amazon.com/dp/B07S1XD834?tag=sktiger-20',
+      priceRange: 'About $299 with a year of Premium (Amazon, 9 Nov 2026)',
+      specs: '2 trackers worn in wraps or wristbands · punch count, speed and power · 8-hour battery (listing) · app with on-demand classes',
       pros: [
-        'Guided rounds and punch counts give structure if you do not have a coach',
-        'Larger packages include a free-standing bag, gloves and wraps, so nothing else is needed to start',
-        'A cheaper package exists for people who already own a bag',
-        'BarBend found the free-standing bag stable even in hard sessions',
+        'Counts punches and estimates speed and power in real time, with on-demand classes in the app',
+        'Works with the bag you already own; there is no console or bag to buy',
+        'The Amazon listing includes a year of Corner Premium',
+        'Wareable’s hands-on review found the trackers accurate',
       ],
       cons: [
-        'A paid membership is required on top of the equipment; check the current price',
-        'Independent reviewers report that the trackers miss some punches',
-        'Its value depends on whether you keep using the workouts',
+        'The app needs a paid membership after the included year; prices differ between sources, so check the current one',
+        'Wareable called the app very basic, and some owner reviews report missed punches',
+        'The listing describes iOS compatibility; confirm Android support before buying',
       ],
       bottomLine:
-        'For someone who wants instruction and motivation at home and will use the programme. If you only want to hit a bag, buy a bag.',
+        'For someone who wants punch counts and guided classes from a phone or TV and already has a bag. If you only want to hit a bag, buy a bag.',
       description:
-        "FightCamp is a connected boxing system: a set of punch trackers worn with your wraps, a console that connects to your TV, and a library of guided workouts built around timed rounds. FightCamp's store and BarBend's review both describe the console as connecting to a television and charging the trackers, and both describe a free-standing bag with a base filled with water or sand; FightCamp's packages now range from a console-and-trackers option for people who already own a bag to a full kit with the bag, gloves and wraps. FightCamp says you need a space about 67 inches high, matching the bag height BarBend gives. Every package requires a paid monthly membership on top of the equipment; we do not quote it, so check the current price. BarBend found the bag stable, and Garage Gym Reviews notes that the trackers miss some punches. Independent coverage describes older package pricing than the maker's store, so confirm the package and price before ordering. It is sold by FightCamp directly.",
+        "Connected boxing systems such as FightCamp, which sells its console, trackers and bag direct rather than on Amazon, add guided rounds and punch counts to bag work. The Corner Boxing Tracker is the closest thing we found on Amazon: two small sensors that slot into Corner's own wraps or wristbands and send punch count, speed and power to the Corner app over Bluetooth. Its Amazon listing gives two trackers, two wristbands and a dual USB-C charger in the box, an 8-hour battery, hit-proof and sweat-resistant cases, on-demand classes and live leaderboards, mirroring of live metrics to a TV, and a year of Corner Premium included; it showed at $299 on 9 November 2026. Wareable's hands-on review found the trackers accurate and the data useful but called the app very basic, and owner reviews collected elsewhere include reports of missed punches. Unlike FightCamp, it comes with no bag and no console, so it suits someone who already owns a bag. After the included year, the app's premium features need a paid membership; the App Store and other sources give different prices, so we do not quote one.",
     },
   ],
   faqs: [
@@ -623,8 +624,9 @@ export default {
     `<strong class="text-white">Start with Everlast Elite wraps and a pair of Hayabusa T3 gloves</strong>,
             then choose your bag by your home rather than your style: a Century Original Wavemaster
             if you cannot hang anything, a Hayabusa Heavy Bag if you have a sound joist, beam or
-            stand. Add a TITLE double-end bag and a Rogue SR-1 rope when the basics are in place, and
-            consider FightCamp only if you want guided workouts and will keep paying for them.`,
+            stand. Add a TITLE double-end bag and a Crossrope set when the basics are in place, and
+            consider Corner's punch trackers only if you want guided classes and punch counts and will
+            keep paying for the app after the first year.`,
     `Whatever you buy, check the mount or the floor before the bag arrives, protect your hands
             every session, and get professional advice on the structure if you are unsure. For the
             flooring and smaller kit that make a home boxing corner work, see our
