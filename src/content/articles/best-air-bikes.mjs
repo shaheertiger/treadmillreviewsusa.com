@@ -536,8 +536,8 @@ export default {
       name: 'Concept2 BikeErg',
       category: 'Best Air-Resistance Bike Without Arms',
       badge: 'Best Without Arms',
-      amazonUrl: 'https://www.amazon.com/s?k=Concept2+BikeErg&tag=sktiger-20',
-      priceRange: 'About $1,100 direct; $1,429.99 on Amazon (9 Nov 2026)',
+      amazonUrl: 'https://www.amazon.com/dp/B0GYRG8J32?tag=sktiger-20',
+      priceRange: 'About $1,100 direct; $1,429.99 on Amazon as a bundle with a cleaning cloth (9 Nov 2026)',
       specs: 'Air flywheel with damper, no moving arms · 48 x 24 in. · 68 lb · PM5 monitor, Bluetooth and ANT+ · polygroove belt drive · 5-yr frame, 2-yr parts warranty',
       pros: [
         'By far the lightest and smallest bike here, agreed by Concept2 and Garage Gym Reviews',

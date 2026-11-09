@@ -172,6 +172,9 @@ const schema = {
     },
   ],
 };
+// The machine reviewed here is no longer sold new on Amazon, so the buttons and photo show the
+// closest product that Amazon does sell. The JSON-LD above still describes the reviewed machine.
+const AMAZON_ALT = { name: "NordicTrack T Series 6.5 S", url: "https://www.amazon.com/dp/B0193V3DJ6?tag=sktiger-20&linkCode=ll1" };
 ---
 
 <Layout
@@ -192,7 +195,7 @@ const schema = {
     ],
   }}
   jsonLd={schema}
-  stickyCta={{ text: "Search NordicTrack Treadmills on Amazon", link: PRODUCT.amazonUrl }}
+  stickyCta={{ text: "Search NordicTrack Treadmills on Amazon", link: AMAZON_ALT.url }}
 >
   <article class="relative overflow-hidden legacy-article">
     <!-- Hero Section -->
@@ -224,7 +227,7 @@ const schema = {
           NordicTrack sells instead.
         </p>
         <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href={PRODUCT.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+          <a href={AMAZON_ALT.url} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
             Search NordicTrack Treadmills on Amazon
           </a>
           <a href="#verdict" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm border border-white/20">
@@ -264,10 +267,11 @@ const schema = {
           warranty, which covered the first owner only. Buy one for walking and jogging, and only
           at a price that reflects both of those facts.
         </p>
-        <ProductImage name={PRODUCT.name} href={PRODUCT.amazonUrl} />
+        <ProductImage name={AMAZON_ALT.name} href={AMAZON_ALT.url} />
+        <p class="text-xs text-gray-500 mt-2 mb-0">Closest on Amazon: {AMAZON_ALT.name}. The {PRODUCT.name} is no longer sold new on Amazon US.</p>
         <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-gray-100">
           <p class="text-2xl font-black text-gray-900">{PRODUCT.priceRange}</p>
-          <a id="cta" href={PRODUCT.amazonUrl} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
+          <a id="cta" href={AMAZON_ALT.url} target="_blank" rel="sponsored nofollow noopener" class="bg-[#FF5A1F] hover:bg-[#E64F16] text-white px-6 py-3 rounded-xl font-black no-underline transition-colors uppercase tracking-widest text-sm">
             Search NordicTrack Treadmills on Amazon &rarr;
           </a>
         </div>

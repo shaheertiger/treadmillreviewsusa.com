@@ -533,8 +533,8 @@ export default {
       name: 'Titan Fitness Performance Series Olympic Barbell',
       category: 'Budget 20 kg multi-purpose bar',
       badge: 'Best Budget',
-      amazonUrl: 'https://www.amazon.com/s?k=Titan+Fitness+Performance+Series+Olympic+Barbell+20kg&tag=sktiger-20',
-      priceRange: '$168–$210',
+      amazonUrl: 'https://www.amazon.com/dp/B0CCQDKNF7?tag=sktiger-20',
+      priceRange: '$168–$210 at Titan; $177.99 on Amazon (9 Nov 2026)',
       specs: '20 kg · 28 mm shaft · 165,000 PSI (maker) · bronze bushings · 700 lb capacity (maker) · medium volcano knurl, dual marks · 1-year warranty',
       pros: [
         '165,000 PSI steel, well above the cheapest bars, for under $210',
@@ -545,12 +545,12 @@ export default {
       cons: [
         'A 700 lb rating is low for heavy lifters',
         'Only a 1-year warranty, against lifetime cover on the bars above',
-        'We could not confirm a current Amazon US listing for this exact bar',
+        'Titan’s separate 29 mm Power Bar is listed beside it on Amazon, so check the title says 28 mm and 700 LB',
       ],
       bottomLine:
         'A sensible first bar on a tight budget for presses, rows, squats and moderate deadlifts. Spend more if you lift heavy or want a long warranty.',
       description:
-        "Titan's Performance Series Olympic Barbell is the budget pick for buyers who want more than the cheapest bars offer without paying for a 190,000 PSI bar. Titan lists it at 20 kg and 86.6 inches long, with a 28 mm shaft, 16.25-inch loadable sleeves, 51.5 inches between the sleeves, bronze bushings, a medium volcano knurl with dual marks and no center knurl, a chrome finish on both shaft and sleeves, a 165,000 PSI tensile strength and a 700 lb weight capacity. Torokhtiy's independent review gives the same strength, capacity, shaft and bushings, rates the grip highly and recommends it for beginner and intermediate lifters. On 19 October 2026 Titan's store showed it at $167.97, reduced from $209.99, with a one-year warranty. The weak points follow from the price: 700 lb is the lowest rating on this page apart from the unrated figures on the CAP, and a one-year warranty is short for something that should last decades. Titan's separate Performance Series Power Barbell is a different, 29 mm bar; make sure you order the Olympic version. Titan sells widely on Amazon, but we could not confirm this exact bar there on the day.",
+        "Titan's Performance Series Olympic Barbell is the budget pick for buyers who want more than the cheapest bars offer without paying for a 190,000 PSI bar. Titan lists it at 20 kg and 86.6 inches long, with a 28 mm shaft, 16.25-inch loadable sleeves, 51.5 inches between the sleeves, bronze bushings, a medium volcano knurl with dual marks and no center knurl, a chrome finish on both shaft and sleeves, a 165,000 PSI tensile strength and a 700 lb weight capacity. Torokhtiy's independent review gives the same strength, capacity, shaft and bushings, rates the grip highly and recommends it for beginner and intermediate lifters. On 19 October 2026 Titan's store showed it at $167.97, reduced from $209.99, with a one-year warranty. The weak points follow from the price: 700 lb is the lowest rating on this page apart from the unrated figures on the CAP, and a one-year warranty is short for something that should last decades. Titan's separate Performance Series Power Barbell is a different, 29 mm bar; make sure you order the Olympic version. On 9 November 2026 we found this exact bar on Amazon US, sold by Titan's own TitanBrands store at $177.99; its listing gives the same 20 kg, 700 lb, 28 mm shaft, bronze bushings, medium volcanic knurl and 165,000 PSI.",
     },
     {
       id: 'cap-beast-olympic-bar',

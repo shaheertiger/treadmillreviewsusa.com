@@ -1068,7 +1068,12 @@ npm run amazon:apply   # write /dp/ links into hand-written pages and regenerate
   machine keep their prose about it; its card becomes the closest Amazon alternative, badged
   "Closest on Amazon", with a sentence saying where the machine itself is sold.
   `scripts/amazon/add-asins.mjs picks.txt` ("Name | ASIN" per line) records hand-chosen listings with
-  their exact titles and photos. 556 products now have a verified ASIN and photo, and 1,065 of the
+  their exact titles and photos. A final pass the same day covered the 36 remaining generated cards
+  (listing-only products say their figures are the seller's claims; deck-specific parts became universal
+  accessories), the 41 non-Amazon cards on hand-written pages, and the 11 single-product reviews of
+  discontinued machines, whose photo and buttons now show a labelled "Closest on Amazon" product
+  (`AMAZON_ALT`) while their JSON-LD still describes the reviewed machine. Every one of the 1,189
+  product cards on the site now has an Amazon photo and a direct /dp/ link. 556 products now have a verified ASIN and photo, and 1,065 of the
   1,101 spec product cards show an Amazon photo with a direct /dp/ link. The 36 left on search links
   have no checkable Amazon equivalent: large-dog treadmills and slatmills, Stryd and NPE foot pods,
   smart home gyms (Tonal 1 refurbished, Voltra I, Tempo Move), deck-specific replacement parts,

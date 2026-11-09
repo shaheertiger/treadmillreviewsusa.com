@@ -36,6 +36,8 @@ export default {
           at least one independent source, chiefly FitnessVolt's hands-on review and roundups and
           SET FOR SET's comparison table. A figure appears in a product's specification line only
           where two sources agree; the ratings in particular often did not, and the cards say so.
+          Stamina's Power Tower 1698 could not be found new on Amazon US on 9 November 2026,
+          so its card shows Stamina's X Fortress, checked against its Amazon listing and BuyDig's.
           Every brand was checked against the US Consumer Product Safety Commission's recall
           database. Prices are those we saw on that date and change often. We earn a commission if
           you buy through the Amazon links on this page; it does not change which products we list
@@ -66,7 +68,7 @@ export default {
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">RELIFE Rebuild Your Life Power Tower</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Low ceilings and whole-family use</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Nine bar heights from about 58.5 to 89 in., compact base</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Marcy Power Tower TC-3515</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">An established brand with an agreed rating</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">300 lb rating and 89 in. height confirmed by two sources</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Stamina Full Body Power Tower 735</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A tower and a bench in one</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Fold-down bench with its own 400 lb rating, 300 lb on the tower</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Stamina Power Tower 1698</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Hanging ab work for lighter users</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Padded hanging ab straps; 250 lb limit</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Stamina X Fortress Power Tower</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Hanging ab work for lighter users</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Hanging ab straps and a built-in plyo box; 250 lb limit</td></tr>
             </tbody>
           </table></div>
           <p>
@@ -159,8 +161,8 @@ export default {
           <p>
             <strong>Frame weight and rating do not track each other.</strong> RELIFE lists its tower
             at a net weight of 41.4 lb with a 400 lb rating. Stamina lists its Full Body Power Tower
-            735 at 80 lb with a 300 lb rating on the tower stations, and its Power Tower 1698 at 54 lb
-            with 250 lb. A heavier frame is not automatically stronger, but a light frame with a high
+            735 at 80 lb with a 300 lb rating on the tower stations, its Power Tower 1698 at 54 lb
+            with 250 lb, and its X Fortress at about 150 lb, also with 250 lb. A heavier frame is not automatically stronger, but a light frame with a high
             rating should make you ask what the rating describes. Listings rarely say whether the
             figure is a static load hung on the bar, a tested dynamic load, or simply the heaviest
             user the seller expects; none of the listings we read named a test standard.
@@ -244,7 +246,7 @@ export default {
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">RELIFE</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About 58.5 to 89 in., 9 settings</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">RELIFE and SET FOR SET agree</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Marcy TC-3515</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">89 in. maximum frame height</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Marcy and FitnessVolt agree</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Stamina 735</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">84 or 85 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">SET FOR SET and Stamina differ by an inch</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Stamina 1698</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not confirmed</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Stamina's page only</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Stamina X Fortress</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About 85 in. frame height</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Amazon listing and BuyDig agree</td></tr>
             </tbody>
           </table></div>
           <p>
@@ -514,28 +516,28 @@ export default {
         "Stamina's Full Body Power Tower 735 adds a fold-down bench and a barbell resting rack to the usual pull-up, dip, knee-raise and push-up stations. Stamina listed it in stock at $327.99 on 19 October and gives dimensions of 75 by 39.5 by 85 inches and a product weight of 80 lb. Its weight limit is unusually specific: weight on the pull-up bar, dip station, knee raise and push-up stand is not to exceed 300 lb, and weight on the bench is not to exceed 400 lb including the user and any weights. SET FOR SET's comparison gives the same 75 by 39.5-inch footprint and 300 lb tower rating but an 84-inch height, so we have left the height off the card. The long base makes it the steadiest-looking footprint on this page, but the bench changes the safety picture: pressing a barbell on a freestanding frame has no safety arms, so keep bench loads light enough to lower without help, or use dumbbells. Stamina's product copy describes testing in the first person; that is the maker's marketing, not an independent review. Stamina gives warranty details in the owner's manual, so check them before you buy.",
     },
     {
-      id: 'stamina-power-tower-1698',
-      name: 'Stamina Power Tower 1698',
-      category: 'Power tower with hanging ab straps',
+      id: 'stamina-x-fortress-power-tower',
+      name: 'Stamina X Fortress Power Tower with Plyo Box',
+      category: 'Power tower with hanging ab straps and a plyo box',
       badge: 'Best for Hanging Ab Work',
-      amazonUrl: 'https://www.amazon.com/s?k=Stamina+Power+Tower+1698&tag=sktiger-20',
-      priceRange: 'About $287',
-      specs: '250 lb weight limit · padded hanging ab straps · adjustable-height dip station',
+      amazonUrl: 'https://www.amazon.com/dp/B00IYFNXXY?tag=sktiger-20',
+      priceRange: '$346.99 on Amazon (9 Nov 2026)',
+      specs: '250 lb weight limit · hanging ab straps · built-in adjustable plyo box · about 57 × 48.5 × 85 in. · 150 lb',
       pros: [
-        'Padded arm loops for hanging knee and leg raises without a back pad',
-        'Dip station adjusts in height and doubles for push-ups',
-        'Large back cushion for knee raises',
-        'From a long-established home fitness brand',
+        'Heavy-duty loops support your arms and back for hanging knee and leg raises',
+        'A built-in plyo box that adjusts from 16 to 24 inches, by the listing',
+        'Rock-climbing-style Boulder grips for grip and forearm work',
+        'From a long-established home fitness brand, sold on Amazon',
       ],
       cons: [
-        'Lowest rating on this page; FitnessVolt calls the 250 lb limit limiting',
-        'Dimensions confirmed only on Stamina’s page',
-        'More expensive than the budget towers with higher stated ratings',
+        'A 250 lb limit, the lowest on this page, shared with Stamina’s 1698',
+        'At about 150 lb and 57 by 48.5 inches it is the bulkiest tower here',
+        'The dearest tower on this page, sold on Amazon by a third-party seller',
       ],
       bottomLine:
-        'For lighter users who want hanging ab work alongside pull-ups and dips. Heavier users should look at the Marcy or Stamina 735.',
+        'For lighter users who want hanging ab work, pull-ups, dips and a jump box in one frame, and have the floor for it.',
       description:
-        "The Power Tower 1698 is Stamina's current mid-priced tower, with a multi-grip pull-up bar, an adjustable-height dip station that doubles for push-ups, a large back cushion for knee raises and padded arm loops that let you hang by the upper arms for knee and leg raises. Stamina listed it in stock at $286.99 on 19 October with a 250 lb weight limit, and FitnessVolt's May 2026 roundup gives the same 250 lb figure, calls it limiting, and singles the tower out for its rowing and hanging-ab options. Stamina gives the dimensions as 80.25 by 40 by 35 inches and the product weight as 54 lb; we found no second source for those, so they are not on the specification line, and Stamina's page does not say which figure is the height. Stamina's product copy is written as a first-person test; treat that as marketing. The 250 lb limit is the lowest here and has to cover you plus anything you wear, so this is a tower for lighter users. Stamina has no power tower recalls on record.",
+        "Stamina's Power Tower 1698, the hanging-ab tower we compare in the guide, is sold on Stamina's own store, and we could not find it new on Amazon US on 9 November 2026, so this card shows the Stamina tower with hanging ab straps that Amazon does list: the X Fortress, model 50-1755. Its Amazon listing and BuyDig's listing agree on a 250 lb user limit, a product weight of about 150 lb and dimensions of about 57 by 48.5 by 85 inches, and both describe the same stations: a pull-up bar, dip bars, padded ab straps that support the back and arms for knee and leg raises, grips styled like rock-climbing holds, and a plyo box built into the base, which the listing says adjusts from 16 to 24 inches. Stamina's müüv app adds guided workouts. The 250 lb limit has to cover you plus anything you wear, so, like the 1698, this is a tower for lighter users, and its footprint is large. Amazon showed it at $346.99 from Spreetail, a third-party seller, on 9 November 2026. Stamina has no power tower recalls on record.",
     },
   ],
   faqs: [
