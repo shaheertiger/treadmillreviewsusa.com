@@ -28,8 +28,7 @@ export default {
   note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
           accessories, and no figure on this page is our own measurement. Each was confirmed as
           currently listed for sale on 16 October 2026 on the maker's or seller's own site (REP
-          Fitness, Rogue Fitness and Lock-Jaw; for the Tractor Supply mat, its product listing on
-          Tractor Supply's site, whose full page we could not load), and its key figures were checked on
+          Fitness and Lock-Jaw), and its key figures were checked on
           that date against at least one independent source, usually a Garage Gym Reviews test or a
           second retailer. A figure appears on this page only where the maker and an independent
           source agree; where they conflicted — on one mat's weight and on resistance figures for
@@ -59,11 +58,11 @@ export default {
             </tr></thead>
             <tbody>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">REP AB-3000 2.0 FID Bench</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Adjustable bench</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Flat, incline and decline, eight back angles, around $350</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Tractor Supply 3/4 in. Rubber Stall Mat</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Flooring</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4 x 6 ft of thick rubber for under $60 a sheet</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rogue Monster Bands</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Resistance bands</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Thick latex loops for pull-up assistance, warm-ups and added resistance</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">REP Wall-Mounted Multi-Grip Pull-Up Bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Pull-up bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Five grip types; 700 lb rating when installed correctly</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rubber-Cal Eco-Sport 3/4 in. Tiles</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Flooring</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Stall-mat thickness in tiles you can carry and lift</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Serious Steel Fitness 41" Bands</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Resistance bands</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Latex loops sold one width at a time, for assistance, warm-ups and added resistance</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Gronk Fitness Wall Mounted Multi-Grip Pull-Up Bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Pull-up bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Wide, neutral and chin-up grips; 800 lb maker rating when fixed to studs</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lock-Jaw PRO Collars</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Barbell collars</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Fast lever collars that hold plates firmly</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rogue SR-2 Speed Rope 3.0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Jump rope</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bearing speed rope you cut to your height</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">WOD Nation Adjustable Speed Jump Rope</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Jump rope</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Coated-cable speed rope you cut to your height, under $20</td></tr>
             </tbody>
           </table></div>
           <p>
@@ -110,15 +109,19 @@ export default {
           </p>
           <p>
             Each figure was checked in two places, and went onto a card only where both agreed. Two
-            did not survive: the weight of the stall mat, which the seller and reviewers give
-            differently, and the resistance of individual Monster Bands, where an older review gives
-            different figures from Rogue's current table. Both are explained on the cards.
+            did not survive: the coverage of a pack of rubber tiles, which one listing rounds up, and
+            the contents of the rope's box, where reviewers and the Amazon listing differ. Both are
+            explained on the cards. Four products we first chose — a Tractor Supply stall mat, Rogue's
+            Monster Bands and SR-2 rope, and REP's wall-mounted bar — are not sold on Amazon, so the
+            cards show the nearest Amazon alternatives, with figures as checked for our gym flooring,
+            resistance band, pull-up bar and jump rope guides.
           </p>
           <p>
             We checked each brand, by maker name and in recall descriptions, and each product type
             against the CPSC recall database. None of the six picks is under a recall. REP's only
-            record we found is a 2021 recall alert for strap safety brackets on its racks, and
-            Rogue's records cover other products. The search did turn up recalls worth knowing about
+            record we found is a 2021 recall alert for strap safety brackets on its racks; Rogue's
+            records cover other products; and our earlier guides, plus a search on 9 November 2026 for
+            WOD Nation, found no recalls for Rubber-Cal, Serious Steel, Gronk Fitness or WOD Nation. The search did turn up recalls worth knowing about
             in these categories: HomeProGym stackable <a href="/best-resistance-bands/" class="text-[#0F62FE] font-medium" data-autolink>resistance bands</a> with metal D-rings (May 2026)
             and SPRI ultra-heavy resistance tubes (2019), both because the band can separate from its
             handle or ring and strike the user; the Ethos Pull-Up Assist (2019), whose plastic clip
@@ -302,10 +305,11 @@ export default {
           <ul>
             <li>Find and mark the studs or joists before buying; the bar's mounting holes must line up
               with them, or you will need a backing board fixed to the structure first.</li>
-            <li>Use the fixings the maker supplies or specifies. Reviewers of our pick describe
-              owners adding a plywood or timber backing plate to spread the load.</li>
+            <li>Use the fixings the maker supplies or specifies. Reviewers of wall-mounted bars
+              describe owners adding a plywood or timber backing plate to spread the load.</li>
             <li>Treat the rated capacity as a manufacturer figure that assumes correct installation —
-              REP's 700 lb rating is stated as "when installed properly".</li>
+              REP states its bar's 700 lb rating as "when installed properly", and the same applies to
+              Gronk's 800 lb figure.</li>
             <li>Check the fixings after the first few weeks and periodically after that, especially
               if you kip or swing.</li>
             <li>If the wall is masonry, the house is old, or you are not sure what is behind the
@@ -317,7 +321,7 @@ export default {
       heading: 'Bands, Collars, Ropes and Timers',
       html: `          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Resistance bands</h3>
           <p>
-            Looped latex bands like the Monster Bands do three jobs well: assisting pull-ups, warming up
+            Looped latex bands like the Serious Steel bands do three jobs well: assisting pull-ups, warming up
             shoulders and hips, and adding resistance to barbell and bodyweight movements. Buy two or
             three widths rather than a full set. Inspect bands before each use for nicks, thinning or
             surface cracks, and replace any that show them; a band that snaps under tension can strike
@@ -408,76 +412,73 @@ export default {
         "REP describes the AB-3000 2.0 as a ground-up redesign of its long-running FID bench. The back pad adjusts on a ladder to eight angles — -12, 0, 15, 30, 45, 60, 70 and 85 degrees — with the numbers laser-cut beside each position, and the seat has five angles. Built-in leg rollers lock into six positions for decline work and slide back out of the way the rest of the time. REP rates the 11-gauge steel frame at 1,000 lb and lists a 2.1-inch pad gap; Garage Gym Reviews' coverage agrees on the capacity, the eight back angles and the pad gap, which its reviewers list among the bench's few drawbacks because it is wider than some competitors. REP's updated CleanGrip pads are described as denser and grippier than before, and the seat pad is reversible. Owner reviews on REP's page mostly praise stability, with some noting that the seat angle needs tools to change and that the leg hold has slight play in decline. It is heavy, so the wheels matter. On 16 October it was about $350 on REP's own store.",
     },
     {
-      id: 'tractor-supply-stall-mat',
-      name: 'Tractor Supply Thick Rubber Stall Mat (4 x 6 ft, 3/4 in.)',
-      category: 'Recycled rubber flooring sheet',
-      badge: 'Best Flooring',
-      amazonUrl: 'https://www.amazon.com/s?k=3%2F4+inch+rubber+stall+mat+4x6&tag=sktiger-20',
-      priceRange: '$55–$60',
-      specs: '4 x 6 ft · 3/4 in. thick · recycled rubber',
+      id: 'rubber-cal-eco-sport-tiles',
+      name: 'Rubber-Cal Eco-Sport 3/4 in. Interlocking Rubber Tiles',
+      category: 'Thick interlocking rubber tiles',
+      badge: 'Best Flooring on Amazon',
+      priceRange: '$121–$150 per 5 tiles',
+      specs: '19.5 x 19.5 in. tiles · 3/4 in. thick · recycled rubber · four colours · packs from 5 tiles',
       pros: [
-        'Among the lowest cost per square foot of any rubber gym flooring',
-        'Thick and dense enough for dumbbells, benches and most barbell work',
-        'Nearly indestructible; reviewers report years of heavy use',
-        'Can be cut to fit, though it takes effort at this thickness',
+        'The same 3/4-inch thickness as a horse stall mat, which experienced lifters recommend for weights',
+        'Tiles lift out, so you can dry the slab, replace a damaged tile or move house with it',
+        'Small enough to carry upstairs a few tiles at a time, unlike a heavy stall mat',
+        'Rubber-Cal and the Amazon listing agree on size, thickness and material',
       ],
       cons: [
-        'Very heavy; listings disagree on the exact weight, so we have left it out',
-        'Strong rubber smell when new, and a textured surface that is harder to clean',
-        'Heavy and bulky to transport; many buyers collect in store',
+        'Several times the cost per square foot of a stall mat, at roughly $9 to $11.50',
+        'Recycled rubber smell when new; air the tiles out first',
+        'Coverage figures on listings round up, so count tiles rather than trusting the pack',
       ],
       bottomLine:
-        'The budget standard for a home gym floor. Two sheets make a solid 8 x 6 ft training area.',
+        'Thick rubber you can carry, cut and take with you. If budget matters more, buy horse stall mats from a farm store instead.',
       description:
-        "Horse stall mats are the flooring most experienced home lifters recommend first, and Tractor Supply's is the easiest to find in the US. It is a 4 x 6 ft sheet of recycled rubber, 3/4 inch thick, and Garage Gym Reviews' current flooring guide agrees on those dimensions and names it the best budget option, describing it as nearly indestructible and good at deadening the noise of dropped weights. Tractor Supply's listing and reviewers give different weights for the sheet, so we have left the number out; plan on needing two people to move one. The trade-offs are the ones every stall mat shares. Expect a strong rubber smell when new, so air the mats in a garage for several days before bringing them indoors. The surface is textured rather than smooth, which grips well but holds dust. And because the mats are heavy and bulky, most people pick them up in store. It is not sold by Tractor Supply on Amazon; the link below searches for comparable 3/4-inch mats.",
+        "The cheapest good gym floor is a 3/4-inch horse stall mat from a farm store such as Tractor Supply, but those are sold in store and on the retailer's own site, not on Amazon, so this card shows the thick rubber we would buy on Amazon. Eco-Sport is Rubber-Cal's interlocking tile, and Rubber-Cal's product page and the Amazon listing agree on 19.5 x 19.5-inch tiles, 3/4 inch thick, in recycled rubber; Rubber-Cal gives a hardness of 60 Shore A and says the tiles join with connecting pins in drilled holes along their sides, and can be glued down for a permanent installation. The reason to pay for tiles rather than a sheet is flexibility: a tile is light enough to carry, easy to cut around a doorway, and can be lifted to check a damp slab or replaced if it splits. The cost is the price. On 19 October a 5-tile pack was $149.63 on Amazon, sold by Rubber-Cal, and Rubber-Cal's own store listed a 25-tile pack at $605.63, about $121 per five; by our arithmetic that is roughly $9 to $11.50 a square foot, against a few dollars for a stall mat. One listing gives a 5-pack's coverage as 14 sq ft, slightly more than five 19.5-inch tiles cover, so plan by tile count. Rubber-Cal's warranty page gives three years on its flooring.",
     },
     {
-      id: 'rogue-monster-bands',
-      name: 'Rogue Monster Bands',
-      category: 'Looped latex resistance bands',
+      id: 'serious-steel-41-inch-bands',
+      name: 'Serious Steel Fitness 41" Assisted Pull-Up Bands',
+      category: 'Latex loop bands for assistance and resistance',
       badge: 'Best Resistance Bands',
-      amazonUrl: 'https://www.amazon.com/s?k=Rogue+Monster+Bands+resistance+bands&tag=sktiger-20',
-      priceRange: '$17–$75',
-      specs: '41 in. loops · natural latex · rated 9 to 225 lb across the range · sold singly, in pairs or as pull-up packages',
+      priceRange: '$12–$70 per band',
+      specs: '41 in. continuous-layer natural latex loops · nine widths, from #0 (2–15 lb) to #7 (120–300+ lb), maker figures · sold singly or as sets',
       pros: [
-        'Thick, durable latex that reviewers say resists splitting better than cheap bands',
-        'Wide enough to sit comfortably under a foot or knee for assisted pull-ups',
-        'A range from very light to very heavy, so one brand covers every use',
-        'Pull-up packages bundle several useful widths',
+        'Sold one band at a time, so you can buy exactly the two or three widths you need',
+        'Layered, continuous-loop construction rather than a molded band',
+        'The range runs from a light stretching band to a band heavy enough for strong lifters',
+        'Rated in ranges, which is more honest about how band tension works',
       ],
       cons: [
-        'Natural latex, so not for anyone with a latex allergy',
-        'Pricier than generic bands, and reviewers note a powdery coating and latex smell',
-        'Per-band resistance figures differ between sources, so we have not listed them',
+        'Natural latex; the maker sells a separate latex-free set',
+        'Long loops need a secure bar, rack or anchor, not a door',
+        'Independent detail is thinner than for the best-known gym bands, so we card only the maker’s basic figures',
       ],
-      bottomLine:
-        'Buy two or three widths for pull-up assistance and warm-ups. Start with a pull-up package if you are unsure.',
+      bottomLine: 'For pull-up assistance, warm-ups and adding resistance to barbell lifts. Start with two or three widths rather than a full set.',
       description:
-        "Rogue's Monster Bands are 41-inch latex loops, sold individually, in pairs and as pull-up packages that bundle several widths. Rogue lists the range from a 9 lb micro band to a 225 lb band, measured at full stretch, and Garage Gym Reviews' current resistance band guide agrees on the 9 to 225 lb range and the natural latex construction, naming them its premium pick for pull-ups and rating them highly for durability. An older Garage Gym Reviews review gave different resistance figures for individual colours, so we have not listed per-band numbers; treat any band resistance figure as approximate in any case, because it depends on how far the band is stretched. Reviewers' complaints are price, a white powdery coating out of the packet, a strong latex smell, and the obvious point that latex bands are not for people with a latex allergy. Inspect bands before each use and replace any that show nicks or thinning. On 16 October single bands ran from about $17 to $65 on Rogue's store, and the pull-up packages $71 to $75.",
+        "Rogue's Monster Bands, the loop bands most lifters know from commercial gyms, are sold by Rogue directly rather than on Amazon, so this card shows the same style of band that Amazon does sell. Serious Steel's 41-inch loops are the long, flat power bands you see hung over pull-up bars in most gyms. The maker's store lists nine widths, each rated as a range because tension rises with stretch: the orange #0 at 2 to 15 lb, purple #1 at 5 to 35 lb, red #2 at 10 to 50 lb, blue #3 at 25 to 80 lb, green #4 at 50 to 120 lb and black #5 at 60 to 150 lb, up to the orange #7 at 120 to more than 300 lb. A second retailer listing for the same bands gives the same 41-inch length and the same ranges for the #0 and #1 bands, and Fitness Volt names them its premium pull-up band pick. Serious Steel says each band is made from a single continuous piece of layered natural latex. On 19 October its store listed single bands from $11.90 to $69.90 and sets from $42.90. For pull-up assistance, most people start with a #2 or #3 and step down as they get stronger. Loop them over a rack or a properly mounted bar, never a door.",
     },
     {
-      id: 'rep-wall-mounted-pull-up-bar',
-      name: 'REP Fitness Wall-Mounted Multi-Grip Pull-Up Bar',
-      category: 'Wall- or ceiling-mounted pull-up station',
-      badge: 'Best Pull-Up Bar',
-      amazonUrl: 'https://www.amazon.com/s?k=REP+Fitness+Wall+Mounted+Multi-Grip+Pull-Up+Bar&tag=sktiger-20',
-      priceRange: 'About $140',
-      specs: '700 lb rated capacity when installed correctly · 50.75 x 21.5 x 17.5 in. · powder-coated steel · five grip types',
+      id: 'gronk-wall-mounted-multi-grip',
+      name: 'Gronk Fitness Wall Mounted Multi-Grip Pull-Up Bar',
+      amazonUrl: 'https://www.amazon.com/dp/B00MY5MOKS?tag=sktiger-20',
+      category: 'Wall-mounted multi-grip bar sold on Amazon',
+      badge: 'Best Pull-Up Bar on Amazon',
+      priceRange: '$159–$179',
+      specs: '800 lb maker rating · 49 x 24 x 20 in. assembled · 48 in. between mounting holes · multi-grip frame with neutral and wide grips · powder-coated',
       pros: [
-        'Traditional, neutral, close, wide and angled grips on one bar',
-        'High rated capacity, provided it is fixed into solid structure',
-        'Can be mounted inverted for low ceilings or shorter users',
-        'Takes bands, rings and suspension straps',
+        'Wide, neutral and chin-up grips on one frame, the closest Amazon match to REP’s multi-grip bar',
+        'An 800 lb maker rating, provided it is fixed into solid structure',
+        'Lifetime residential warranty, per its maker',
+        'Puts the bar on a wall, leaving doorways and ceilings free',
       ],
       cons: [
-        'Installation needs care: studs or joists, correct fixings, and some DIY skill',
-        'Powder-coated rather than knurled, so less grippy than some bars',
-        'Shallow depth limits kipping and swinging movements',
+        'Its 800 lb rating and dimensions are the seller’s figures; we found no independent hands-on review',
+        'Mounting holes 48 inches apart need studs at that spacing or a backing board',
+        'Its maker’s own store listed it as final stock and backordered on 9 November 2026',
       ],
       bottomLine:
-        'The best pull-up bar for most homes that have a suitable wall. Get it installed properly, or not at all.',
+        'The multi-grip wall bar to buy on Amazon if you can bolt it into studs. Treat the rating as the maker’s claim and install it properly.',
       description:
-        "REP's wall-mounted bar puts traditional, neutral, close, wide and angled grips on one frame that bolts to a wall, or a ceiling, and can be mounted inverted to suit lower ceilings. REP lists it at 50.75 inches wide, 21.5 inches deep and 17.5 inches tall, and rates it at 700 lb when installed properly; Garage Gym Reviews' current pull-up bar guide agrees on those dimensions and the conditional 700 lb rating and names it its best overall pull-up bar. That rating is the maker's figure and depends entirely on what the bar is fixed to. Reviewers describe owners fixing it through a plywood or timber backing plate screwed into studs to spread the load, and Garage Gym Reviews' tester notes that masonry walls need suitable anchors and more tools. REP includes wall-mounting hardware. The criticisms are installation effort, powder-coated rather than knurled handles that are less grippy, and a shallow depth that is less suited to kipping. On 16 October it was about $140 on REP's store.",
+        "REP's Wall-Mounted Multi-Grip bar, the one independent reviewers favour, is sold only through REP's own store, not on Amazon, so this card shows the closest bar Amazon does sell: Gronk Fitness's wall-mounted multi-grip bar, as checked for our pull-up bar guide. Its maker's store describes a multi-grip frame for pull-ups, chin-ups, wide-grip and neutral-grip work, a powder-coated finish, an assembled size of 49 by 24 by 20 inches, 48 inches between mounting holes for standard stud spacing and an 800 lb rating, with a lifetime residential warranty and one year on commercial use; the Amazon listing gives the same 800 lb rating and multi-grip design. We found no independent hands-on review, so those are the seller's figures, and like every mounted bar's rating it assumes the bar is fixed into solid structure. Gronk does not publish the bar diameter or say that it can be mounted inverted, both of which REP does. On 9 November 2026 Amazon listed it at $179, and its maker's store showed it at $159 as final stock, backordered. If you would rather have REP's bar, with its 700 lb conditional rating, buy it from REP at about $140.",
     },
     {
       id: 'lock-jaw-pro',
@@ -504,28 +505,28 @@ export default {
         "Lock-Jaw's PRO collars clamp onto the barbell sleeve with a lever and lock with a spring-loaded snap latch, so they go on and off in a moment and hold plates firmly against the bar. Lock-Jaw describes a resin frame with elastomer pads that protect the bar and plates, and recommends the PRO, rather than its cheaper Olympic model, for bumper plates, CrossFit-style training and any high-impact lifting. Independent retailers, including Powersystems and Strength Shop, list the PRO as a pair for 2-inch (50 mm) Olympic sleeves; Lock-Jaw's own product page does not spell out either detail, so confirm both on the listing you buy from. We found few independent reviews of this exact model, so check that the collar suits your bar before relying on it. On 16 October the PRO was $44.95 on Lock-Jaw's store and about $53 a pair at Powersystems. Lock-Jaw's store links to what it describes as its genuine Amazon listing.",
     },
     {
-      id: 'rogue-sr-2',
-      name: 'Rogue SR-2 Speed Rope 3.0',
-      category: 'Ball-bearing speed rope, cut to length',
+      id: 'wod-nation-speed-rope',
+      name: 'WOD Nation Adjustable Speed Jump Rope',
+      amazonUrl: 'https://www.amazon.com/dp/B00ZWGABB0?tag=sktiger-20',
+      category: 'Coated-cable speed rope, cut to length',
       badge: 'Best Jump Rope',
-      amazonUrl: 'https://www.amazon.com/s?k=Rogue+SR-2+Speed+Rope+3.0&tag=sktiger-20',
-      priceRange: '$45–$49',
-      specs: '120 in. coated cable, cut to length · 6.75 in. aluminium handles · ball-bearing swivel',
+      priceRange: '$16–$20',
+      specs: 'Coated alloy-steel cable, cut to fit · adjustable length · for smooth surfaces',
       pros: [
-        'Very light and fast, with a smooth ball-bearing swivel',
-        'Knurled aluminium handles that reviewers rate highly',
-        'One cable length cut to your height, so it fits anyone',
-        'A shorter-handled SR-2S version is sold for smaller hands',
+        'A thin, fast coated cable at a budget price',
+        'Garage Gym Reviews’ long-term pick, used by its editor for years',
+        'Light enough for long sets and double-unders',
+        'A fraction of the price of a premium bearing rope',
       ],
       cons: [
-        'A thin speed cable stings when you miss; reviewers do not recommend it for beginners',
-        'Cutting to length involves tiny screws and wire cutters',
-        'Best kept to rubber flooring; abrasive surfaces wear the cable coating',
+        'Sizing means cutting the cable, which cannot be undone',
+        'Reviewers describe plain plastic handles and nuts that can work loose',
+        'Rough surfaces such as concrete or asphalt wear the coating off the cable',
       ],
       bottomLine:
-        'For people who already skip and want a fast, durable rope. Beginners may find a heavier rope easier to learn on.',
+        'The rope for most people who can already jump steadily. Size it carefully, keep it off concrete, and it will last years.',
       description:
-        "The SR-2 3.0 is Rogue's lightweight bearing speed rope: a coated cable on a ball-bearing swivel between knurled aluminium handles. Rogue lists a 120-inch cable that you size and cut to your height, and 6.75-inch handles, with a shorter 5.25-inch-handle SR-2S for smaller hands; Garage Gym Reviews' current jump rope guide agrees on the 120-inch cut-to-size cable, the 6.75-inch aluminium handles and the $49 price, and names it its best rope for CrossFit-style training. The same review is clear about who it is not for: the thin cable stings when you miss, so it does not recommend the SR-2 for people still learning, and sizing involves tiny screws, wire cutters and some patience. Rogue recommends using it on rubber or another non-abrasive surface for long cable life, which pairs naturally with the flooring pick on this page. Rogue lists it as made in the USA. On 16 October it was $49 on Rogue's store, with the SR-2S at $45. It is sold mainly by Rogue rather than on Amazon.",
+        "Rogue's SR-2 bearing speed rope is sold by Rogue rather than on Amazon, so this card shows the speed rope we picked as best overall in our jump rope guide, which WOD Nation sells mainly through Amazon. The Amazon listing describes a coated alloy-steel speed rope that you adjust to your preferred length with a wire cutter, built for singles and double-unders, and asks you to use it on smooth gym surfaces rather than cement or asphalt to protect its coating. Garage Gym Reviews and BarBend describe the same cut-to-length design with ball-bearing handles, and both reviews say a second cable and a carry bag come with it; the Amazon listing mentions neither, so check what is in the box. Garage Gym Reviews' longer review says its editor used the same rope for years and names it the best jump rope overall for value, at a typical $16 to $18. Its criticisms are minor: simple plastic handles, nuts that can loosen and need a small wrench, and the need for wire cutters to size it. Amazon listed it at $17.99 on 9 November 2026.",
     },
   ],
   faqs: [
@@ -611,7 +612,7 @@ export default {
   bottomLine: [
     `<strong class="text-white">Start with the floor and a bench.</strong> Two thick rubber stall
             mats and an adjustable bench such as the REP AB-3000 2.0 make every other piece of
-            equipment more useful and protect the house while you use it. Add a few Monster Bands, a
+            equipment more useful and protect the house while you use it. Add a few loop bands, a
             properly installed pull-up bar, collars for any barbell and a rope if you have the room,
             and you have covered almost everything a home gym needs from the accessory aisle.`,
     `Skip the gadgets that need a promise rather than a use case to justify them, treat every

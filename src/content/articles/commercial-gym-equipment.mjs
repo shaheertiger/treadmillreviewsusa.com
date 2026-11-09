@@ -22,7 +22,8 @@ export default {
   note: `<strong class="text-gray-900">On the products below.</strong> We have not tested this
           equipment. Each piece was confirmed on 16 October 2026 as currently sold, and its
           specifications were checked on that date against the maker's own product page (Life
-          Fitness and Hammer Strength, Keiser, Concept2 and Rogue), the Amazon listing where one
+          Fitness, Keiser and Concept2), or on 9 November 2026 for the Titan rack, Gronk row and REP
+          dumbbells that stand in for dealer-only Rogue and Hammer Strength equipment, the Amazon listing where one
           exists, and at least one independent source — published reviews and a second retailer or
           dealer. A figure appears in a product's specification line only where the maker and an
           independent source agree; where they did not — on a machine's dimensions and weight, for
@@ -52,7 +53,10 @@ export default {
             One piece per category, each from a brand whose equipment is widely used in gyms and
             each confirmed as currently sold. Two of the six are quote-only for facilities; for both
             we say where a visible price exists, if anywhere. Cardio sits first because it is where
-            the commercial difference — duty, power and service — is largest.
+            the commercial difference — duty, power and service — is largest. Rogue's racks and
+            dumbbells and Hammer Strength's machines are sold direct or through dealers, not on
+            Amazon, so for the three strength categories the cards show the nearest Amazon
+            alternatives, which are lighter-duty than the originals.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead>
@@ -66,9 +70,9 @@ export default {
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Life Fitness Integrity+ Treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Commercial treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22 x 60 in. deck, 400 lb rating, dedicated 20 A circuit; price on request</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Keiser M3i Indoor Bike</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Indoor cycling and studios</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Fits riders 4 ft 10 in. to 7 ft, 350 lb rating, magnetic resistance</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Concept2 RowErg</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rowing, any facility</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">500 lb rating by Concept2's test, no outlet needed, $990</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rogue RML-390C Power Rack 3.0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A commercial-standard rack</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3 x 3 in. 11-gauge uprights, bolt-down, from $1,015</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Hammer Strength Plate-Loaded Iso-Lateral Row</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A plate-loaded machine</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Independent arms, no cables to service, $4,135 on Life Fitness's store</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rogue Urethane Dumbbells</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Commercial dumbbells</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5 to 150 lb pairs, steel heads with urethane coating</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Titan X-3 Series Tall Bolt-Down Power Rack</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A commercial-standard rack</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3 x 3 in. 11-gauge uprights, bolt-down, about $690 to $760</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Gronk Fitness Plate Loaded Seated Row</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A plate-loaded machine</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Chest-supported, no cables to service, around $1,300</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">REP Fitness Urethane Round Dumbbell Set</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Urethane dumbbells</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">5 to 50 lb pairs, steel heads with urethane coating</td></tr>
             </tbody>
           </table></div>
           <p>
@@ -112,8 +116,10 @@ export default {
             maker sells into gyms, teams or institutions, not only to homes. <strong>Currently
             sold:</strong> each piece was listed for sale or for quotation on the maker's own site.
             <strong>Agreement:</strong> the core figures had to match between the maker and an
-            independent source; the Hammer Strength row's dimensions did not, so they are missing
-            from its card. <strong>A published warranty</strong> or a clear route to one in the
+            independent source. For the three strength cards that stand in for dealer-only
+            equipment, we checked the replacement against its maker's own store and the Amazon
+            listing on 9 November 2026 (the REP set against REP's store, for our dumbbell set
+            guide), and say on each card where a figure rests on the maker alone. <strong>A published warranty</strong> or a clear route to one in the
             quote. <strong>No current safety action</strong> against the product.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What the recall check found</h3>
@@ -142,8 +148,9 @@ export default {
             <li><strong>NordicTrack RW900 rower.</strong> Recalled in October 2025 for a console fire
             hazard. A home machine, but it turns up in small facilities and on the used market.</li>
             <li><strong>Life Fitness</strong> recalled its PowerMill climber in 2018 for a fire
-            hazard; we found nothing against the Integrity+ or Hammer Strength row. We found no
-            recalls for Keiser or Concept2, and Rogue's appear to cover only older accessories.</li>
+            hazard; we found nothing against the Integrity+. We found no recalls for Keiser, Concept2
+            or Gronk Fitness; REP's one record (2021) concerns strap safety brackets for racks, and
+            Titan's (2018) weight-lifting safety straps, neither of them a product carded here.</li>
           </ul>
           <p>
             Recalls on commercial equipment are often handled by contacting known facility owners
@@ -218,7 +225,8 @@ export default {
             Life Fitness's home store lists the Integrity treadmill it sells there with a lifetime
             frame and motor warranty, ten years on parts and one year on labour, and lists the Hammer
             Strength Iso-Lateral Row with ten years on the frame, five on bearings and 90 days on
-            hardware, grips and upholstery. Facility buyers should expect their own terms in the quote.
+            hardware, grips and upholstery. REP's urethane dumbbells show the other side of it: a
+            lifetime warranty for home use, but one year in a commercial setting. Facility buyers should expect their own terms in the quote.
           </p>
           <p>
             <strong>Labour is where the money goes.</strong> On a commercial treadmill, a technician
@@ -248,8 +256,8 @@ export default {
             monitor runs on two D-cell batteries, so no outlet is needed.
           </p>
           <p>
-            <strong>Floors.</strong> Commercial equipment is heavy. The Hammer Strength row weighs
-            280 lb before any plates, and a loaded rack with a lifter, bar and plates puts a great
+            <strong>Floors.</strong> Commercial equipment is heavy. The Gronk row weighs 210 lb
+            before any plates, a Hammer Strength row 280 lb, and a loaded rack with a lifter, bar and plates puts a great
             deal of weight on a small footprint. On a concrete garage or ground floor that is rarely a
             problem; upstairs, in an apartment building or on a suspended office floor it can be. That
             is a question for a structural engineer or the building's management, not for a product
@@ -261,8 +269,8 @@ export default {
             <strong>Space.</strong> Plan for the machine plus its use clearance. Concept2 recommends a
             9 by 4 ft area to use the RowErg, against an 8 by 2 ft machine. Treadmills need clear space
             behind the deck so a user who falls is not trapped against a wall; the maker's installation
-            guide gives the figure. Racks need overhead clearance for pull-ups and for pressing — the
-            RML-390C's tall uprights are 90 inches, before the lifter's arms.
+            guide gives the figure. Racks need overhead clearance for pull-ups and for pressing — Titan's
+            tall X-3 rack comes in at up to 90 inches, before the lifter's arms.
           </p>`,
     },
     {
@@ -275,9 +283,10 @@ export default {
           </p>
           <ul>
             <li><strong>Rated capacities are manufacturer figures.</strong> They describe the
-            equipment under the maker's own conditions, not a guarantee for every use. Rogue does not
-            publish a load rating for the RML-390C on its product page, which is common for racks; it
-            does say the rack must be bolted to the floor. Treat any capacity as a ceiling, not a
+            equipment under the maker's own conditions, not a guarantee for every use. Titan quotes
+            1,650 lb rackable for its X-3 rack, a figure we could not confirm independently, and
+            Rogue publishes no load rating for its comparable RML-390C, which is common for racks;
+            both are bolt-down designs. Treat any capacity as a ceiling, not a
             target.</li>
             <li><strong>Anchor or bolt as the maker specifies.</strong> A rack that must be bolted
             down is not safe free-standing, especially with band pegs or spotter arms loaded off-centre.
@@ -501,76 +510,75 @@ export default {
         "The RowErg is the rowing machine most gyms already have, and for good reason. Concept2 lists a 500 lb user capacity by its own testing, a machine weight of 57 lb on standard legs, an 8 by 2 ft footprint and a recommended 9 by 4 ft space to use it; the Amazon listing agrees, and an independent review matches the weight, the 96 by 24-inch footprint and the capacity. Concept2 also gives a 300 lb figure under the European EN 20957-7 test, which is worth knowing if your insurer or policy refers to standards. The PM5 monitor runs on two D-cell batteries, topped up by the flywheel, so it needs no outlet. It separates into two pieces for storage, and a tall-legs version raises the seat for users who find a low seat difficult. Concept2 and an independent review both give a five-year frame warranty and two years on moving parts and the monitor. It was $990 with standard legs and $1,155 with tall legs on Concept2's store, and $990 on Amazon.",
     },
     {
-      id: 'rogue-rml-390c-power-rack',
-      name: 'Rogue RML-390C Power Rack 3.0',
-      category: 'Best Commercial-Standard Power Rack',
+      id: 'titan-x3-tall-bolt-down-power-rack',
+      name: 'Titan Fitness X-3 Series Tall Bolt-Down Power Rack (36 in. Depth)',
+      amazonUrl: 'https://www.amazon.com/dp/B09GXCR79J?tag=sktiger-20',
+      category: 'Closest Commercial-Standard Rack on Amazon',
       badge: 'Rack',
-      amazonUrl: 'https://www.amazon.com/s?k=Rogue+RML-390C+Power+Rack&tag=sktiger-20',
-      priceRange: '$1,015 before options',
-      specs: '3 x 3 in. 11-gauge steel uprights · 34 or 40 x 53 in. footprint · Westside hole spacing · must be bolted to the floor · made in Columbus, Ohio',
+      priceRange: '$690–$760 (Amazon and Titan, 9 Nov 2026)',
+      specs: '3 x 3 in. 11-gauge steel uprights · bolt-down · 36 in. depth · Westside hole spacing through the bench and pull zone (Titan) · 1.25 in. and 2 in. pull-up bars',
       pros: [
-        'The same 3 x 3 inch 11-gauge steel as Rogue’s Monster Lite line used in many facilities',
-        'Westside hole spacing gives 1-inch adjustment through the bench and pull zone',
-        'Bolt-together frame, easier to get into a basement or upstairs room',
-        'Works with Rogue’s Monster Lite attachments, safeties and storage',
+        'The same 3 x 3 inch 11-gauge upright size as Rogue’s Monster Lite racks',
+        'Westside hole spacing through the bench and pull zone, per Titan',
+        'Two pull-up bars, a skinny 1.25-inch and a fat 2-inch, per the Amazon listing',
+        'Well under the price of Rogue’s RML-390C',
       ],
       cons: [
-        'Must be bolted to the floor before use, according to Rogue',
-        'Rogue publishes no load rating on the product page',
-        'Spotter arms and the concrete anchor kit cost extra',
+        'A bolt-down rack: plan to anchor it to a concrete floor',
+        'Titan’s warranty is one year, short for a facility',
+        'Capacity figures are Titan’s own; Titan quotes 1,650 lb rackable, which we could not confirm independently',
       ],
       bottomLine:
-        'For a garage or studio that wants a rack built like gym equipment, on a floor it can be bolted to.',
+        'The Amazon rack for a garage or studio that wants 3 x 3-inch, 11-gauge uprights on a floor it can be bolted to, at a fraction of Rogue’s price.',
       description:
-        "The RML-390C is Rogue's colour-finish version of its bolt-together Monster Lite power rack, and it brings commercial-standard steel to a home-sized footprint. Rogue and an independent review agree on 3 x 3 inch 11-gauge steel uprights, Westside hole spacing, manufacture in Columbus, Ohio, and a 34 or 40 by 53-inch footprint depending on depth. Rogue says it must be bolted to the floor before use and sells a concrete anchor kit separately, along with spotter arms; pin-and-pipe safeties come in the base package. Like most racks, it has no published load rating on the product page, which is a reason to treat any capacity claim you see elsewhere with care. Rogue lists a lifetime warranty for its racks. The base price was $1,015 on Rogue's store when we checked, with colours, safeties and accessories adding to it. Rogue sells direct rather than on Amazon; the Amazon link searches the name, but buy from Rogue.",
+        "Rogue's RML-390C, the rack we would otherwise list here, is sold through Rogue's own store and not on Amazon, so this card shows the closest commercial-standard rack Amazon sells. Titan's X-3 Series is its 3 x 3-inch, 11-gauge steel line, and Titan's product page and the Amazon listing agree on those uprights, a bolt-down design and the 36-inch depth; Titan adds 6-inch hole spacing with Westside spacing through the bench and clean-pull zone, two J-hooks with UHMW liners, a choice of 80 or 90-inch heights and a one-year warranty. The Amazon listing for the tall version adds a 1.25-inch and a 2-inch pull-up bar, J-hooks rated at 1,000 lb, and a 1,650 lb rackable and 6,170 lb total capacity, all Titan's own figures; a Walmart listing repeats the 1,650 lb. Titan's store showed the 90-inch, 36-inch-deep rack at $759.97 on sale on 9 November 2026, and Amazon listed the tall version at $689.99. It is not Rogue steel or Rogue's finish, and a one-year warranty is thin for heavy facility use. Titan's one CPSC recall we found, in 2018, covered weight-lifting safety straps, not this rack.",
     },
     {
-      id: 'hammer-strength-iso-lateral-row',
-      name: 'Hammer Strength Plate-Loaded Iso-Lateral Row',
-      category: 'Best Plate-Loaded Commercial Machine',
+      id: 'gronk-plate-loaded-seated-row',
+      name: 'Gronk Fitness Plate Loaded Seated Row Machine',
+      amazonUrl: 'https://www.amazon.com/dp/B0CW7851MG?tag=sktiger-20',
+      category: 'Closest Plate-Loaded Row on Amazon',
       badge: 'Machine',
-      amazonUrl: 'https://www.amazon.com/s?k=Hammer+Strength+Plate-Loaded+Iso-Lateral+Row&tag=sktiger-20',
-      priceRange: '$4,135 (Life Fitness store); facility price on request',
-      specs: '280 lb machine weight · 12 lb starting resistance per arm · 11-gauge steel frame · independent arms',
+      priceRange: '$999–$1,399',
+      specs: '67 x 45 x 54 in. · 210 lb machine weight · 400 lb maximum load per horn (maker) · chest-supported · light-commercial',
       pros: [
-        'Each arm moves independently, so a weaker side cannot hide behind a stronger one',
-        'Plate-loaded: no weight stack, cables or pulleys to service',
-        'Life Fitness and an independent dealer agree on weight, starting resistance and frame steel',
-        'A classic Hammer Strength design found in many commercial gyms',
+        'A chest-supported, plate-loaded row in the Hammer Strength mould, with no stack or cables to service',
+        'Gronk’s own store and the Amazon listing agree on its size, weight and load rating',
+        'Sold for residential and light-commercial use',
+        'About a third of the Hammer Strength row’s price on Life Fitness’s store',
       ],
       cons: [
-        'Needs a plate supply and a weight tree, which the machine does not include',
-        'Dimensions differ between Life Fitness and a dealer data sheet, so we have printed neither',
-        'One movement for the price of a rack; best as a second purchase',
+        'Light-commercial, not built for a busy facility like the Hammer Strength machine',
+        'Neither source says whether the arms move independently, the Iso-Lateral’s defining feature',
+        'One review roundup gives a 440 lb rating rather than 400 lb; treat the rating as the maker’s',
       ],
       bottomLine:
-        'For a facility or serious garage gym adding its first plate-loaded machine for back training.',
+        'For a garage gym or small studio that wants a chest-supported plate-loaded row from Amazon without paying for a Hammer Strength.',
       description:
-        "Hammer Strength's Iso-Lateral machines are a fixture of commercial gyms, and the row is one of the most useful. Life Fitness, which owns Hammer Strength, and an independent dealer data sheet agree on a machine weight of 280 lb, a starting resistance of 12 lb per arm and an 11-gauge steel frame. The arms move independently, and the chest pad and adjustable seat support the user, rather than the user holding a bent-over position as with a free-weight row. Because it is plate-loaded, there is no weight stack, cable or pulley to wear, which keeps servicing simple. Life Fitness lists maximum loading by plate count per arm and a recommended plate mix; plates and a storage tree are extra. The dimensions differ between Life Fitness's page and the dealer sheet, so check the footprint against your floor plan. Life Fitness's home store had it at $4,135 when we checked, listing ten years on the frame; facilities buy through a quote. It is not sold on Amazon.",
+        "Hammer Strength's Iso-Lateral Row is sold through Life Fitness and its dealers rather than on Amazon, so this card shows the closest plate-loaded row Amazon sells. Gronk Fitness describes its seated row as a chest-supported, plate-loaded back machine for residential gyms and light-commercial facilities; its own store, LiveFit, and the Amazon listing agree on dimensions of 67 by 45 by 54 inches, a machine weight of 210 lb and a maximum load of 400 lb on each weight horn. One review roundup gives the rating as 440 lb, so take the load figure as the maker's. Against the Hammer Strength row it is lighter, cheaper and built for lighter duty, and neither source says that the arms move independently, which is what the Iso-Lateral name refers to, so check before ordering if unilateral rowing matters to you. LiveFit's prices ran from $999 to $1,399 across its listings, and Amazon showed $1,299 on 9 November 2026. As on any plate-loaded machine, you need plates and somewhere to store them.",
     },
     {
-      id: 'rogue-urethane-dumbbells',
-      name: 'Rogue Urethane Dumbbells',
-      category: 'Best Commercial Dumbbells',
+      id: 'rep-urethane-round-dumbbells',
+      name: 'REP Fitness Urethane Round Dumbbell Set (5–50 lb)',
+      category: 'Closest Commercial Dumbbells on Amazon',
       badge: 'Dumbbells',
-      amazonUrl: 'https://www.amazon.com/s?k=Rogue+Urethane+Dumbbells&tag=sktiger-20',
-      priceRange: '$54–$844 per pair',
-      specs: '5–150 lb pairs in 5 lb steps · 31 mm handle up to 45 lb, 34 mm from 50 lb · steel heads with urethane coating · medium knurl',
+      priceRange: '$1,599.99',
+      specs: 'Pairs from 5 to 50 lb in 5 lb steps (550 lb) · CPU urethane over steel heads · straight knurled handles · lifetime warranty for home use · rack sold separately or as a bundle',
       pros: [
-        'Urethane coating is tougher and less smelly than rubber, which suits shared indoor spaces',
-        'A thicker 34 mm handle on the heavier pairs, agreed by Rogue and an independent review',
-        'Sold singly by weight or as sets, so you can fill gaps over time',
-        'Made in the USA, according to Rogue',
+        'Urethane is tougher and slower to show wear than rubber, which suits shared indoor spaces',
+        'REP says it will not stink up a room, unlike many new rubber sets',
+        'Straight knurled handles and welded heads',
+        'Lifetime warranty for home use; one year commercial, per REP',
       ],
       cons: [
-        'Expensive: from $54 for a 5 lb pair to $844 for a 100 lb pair',
-        'Round heads can roll, as an independent review notes',
-        'Some owners report inconsistencies in knurling and finish between pairs, by Rogue’s own review summary',
+        'Stops at 50 lb, where a facility rack usually runs much heavier',
+        'Round heads can roll; they need a rack with a lip or saddles',
+        'We found no independent review of this exact set',
       ],
       bottomLine:
-        'For a facility or long-term home gym that wants a fixed dumbbell set built to survive years of drops and daily cleaning.',
+        'For a home gym or small studio that wants urethane dumbbells from Amazon up to 50 lb; heavier commercial pairs are bought direct.',
       description:
-        "Fixed dumbbells are the most-used strength equipment in most gyms, and urethane is the commercial choice because it outlasts rubber and does not give off the smell rubber can in a closed room. Rogue and an independent review agree on pairs from 5 to 150 lb in 5 lb steps, a 31 mm handle up to 45 lb and a 34 mm handle from 50 lb, medium knurling, and solid steel heads with a urethane coating. Rogue describes the heads as welded to a straight chrome handle to make a one-piece dumbbell. The cautions: the round heads roll on an uneven floor, and Rogue's own summary of customer reviews mentions inconsistencies in knurling and colour between sets. They are expensive — $54 for a 5 lb pair and $844 for a 100 lb pair on Rogue's store when we checked, or $8,995 for a 5 to 100 lb set — so many facilities buy the most-used weights first. Rogue sells direct; the Amazon link searches the name.",
+        "Rogue's urethane dumbbells are sold through Rogue's own store and not on Amazon, so this card shows the urethane set Amazon does sell. REP's urethane dumbbells use a CPU urethane coating over solid steel heads, which REP describes as ultra-tough and abrasion-resistant, with round heads welded to straight, knurled handles. The 5 to 50 lb set is ten pairs in 5 lb steps; REP's store and its Amazon listing agree on the contents, the $1,599.99 price on 19 October and the lifetime limited warranty for home use, which REP's warranty page confirms (one year commercial). That commercial term is the point to note for a facility: the long warranty is for home use. The Amazon listing also offers the set bundled with REP's three-tier rack. REP lists handle diameters and a weight tolerance on its own page that we could not find in an independent source, so we have left them off the card, and we found no independent hands-on review of this set. It ships by freight to the curb, so plan the move indoors.",
     },
   ],
   faqs: [
@@ -645,8 +653,9 @@ export default {
     `<strong class="text-white">Buy commercial equipment for duty, service and fit, not for the
             label.</strong> For most small facilities that means a rower such as the
             <strong class="text-white">Concept2 RowErg</strong> and a bike such as the
-            <strong class="text-white">Keiser M3i</strong> first, a bolted rack like the
-            <strong class="text-white">Rogue RML-390C</strong> with good dumbbells, and a commercial
+            <strong class="text-white">Keiser M3i</strong> first, a bolted 3 x 3-inch rack
+            such as <strong class="text-white">Titan's X-3</strong> (or Rogue's RML-390C, bought direct)
+            with good dumbbells, and a commercial
             treadmill such as the <strong class="text-white">Life Fitness Integrity+</strong> only once
             the 20-amp circuit, the space and the service contract are in place.`,
     `Before you sign anything, get the installation requirements, the warranty that applies to
