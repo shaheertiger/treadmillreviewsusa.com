@@ -166,6 +166,12 @@ export const SECTIONS: Section[] = [
             url: '/best-folding-treadmill-reviews/',
           },
           {
+            title: "Best Folding Treadmills With Incline",
+            description: "Six folding treadmills with auto or manual incline, plus how to check fold, weight and ceiling.",
+            badge: "Fold + incline",
+            url: '/best-folding-treadmills-with-incline/',
+          },
+          {
             title: 'Best Folding Treadmills by Use Case',
             description: 'Fast picks for apartments, tall runners, tight budgets and families.',
             badge: 'Roundup',
@@ -248,6 +254,18 @@ export const SECTIONS: Section[] = [
               'Six machines tested for eight weeks at 2.5–4 mph — the speeds most treadmills are actually used at.',
             badge: 'Pillar guide',
             url: '/best-walking-treadmills/',
+          },
+          {
+            title: "Best Walking Pads for Seniors",
+            description: "Six walking machines with long rails, 0.3 mph starts, low step-up and simple controls.",
+            badge: "Seniors",
+            url: '/best-walking-pads-for-seniors/',
+          },
+          {
+            title: "Best Walking Pads for Office Use",
+            description: "Six desk walking pads: noise on calls, duty cycle on long days, desk fit and workplace rules.",
+            badge: "Office",
+            url: '/best-walking-pads-for-office/',
           },
           {
             title: 'Under-Desk Treadmills Tested',
@@ -439,6 +457,24 @@ export const SECTIONS: Section[] = [
             url: '/best-smart-treadmills/',
           },
           {
+            title: "Best Dog Treadmills for Medium Dogs",
+            description: "Treadmills and slatmills for 25 to 60 lb dogs, sized by running length against stride.",
+            badge: "Medium Dogs",
+            url: '/best-dog-treadmills-for-medium-dogs/',
+          },
+          {
+            title: "Best Cat Treadmills",
+            description: "Cat exercise wheels by diameter, with noise, locks, safety and how to train a cat to run.",
+            badge: "Cats",
+            url: '/best-cat-treadmills/',
+          },
+          {
+            title: "Best Smart Walking Pads",
+            description: "Six walking pads with apps: routes, Zwift and Kinomap, Apple Health sync, and what iFit is.",
+            badge: "Smart",
+            url: '/best-smart-walking-pads/',
+          },
+          {
             title: "Best Treadmills With Bluetooth Speakers",
             description: "Five folding treadmills with built-in speakers, $114 to $1,200, and what Bluetooth really means.",
             badge: "Speakers",
@@ -576,6 +612,12 @@ export const SECTIONS: Section[] = [
               'What this budget genuinely buys — and why a walking pad is usually the better product here.',
             badge: 'Entry',
             url: '/best-treadmills-under-500/',
+          },
+          {
+            title: "Best Cheap Incline Treadmills",
+            description: "Incline treadmills from about $240 to $530, and what manual vs auto incline means at this price.",
+            badge: "Budget incline",
+            url: '/best-cheap-incline-treadmills/',
           },
           {
             title: 'Best Treadmills Under $800',
@@ -958,6 +1000,18 @@ export const SECTIONS: Section[] = [
             description: 'The full C-Series, Commercial Series and X Series lineup, explained.',
             badge: 'Brand guide',
             url: '/nordictrack/',
+          },
+          {
+            title: "Weslo Treadmills",
+            description: "Weslo is a used-market brand now: parts for owners and the Amazon treadmills that replace it.",
+            badge: "Brand",
+            url: '/weslo-treadmills/',
+          },
+          {
+            title: "Merach Treadmills",
+            description: "Merach's folding incline treadmills and walking pads on Amazon, ranked, with the warranty catch.",
+            badge: "Brand",
+            url: '/merach-treadmills/',
           },
           {
             title: 'ProForm Treadmills',
@@ -2006,6 +2060,12 @@ export const SECTIONS: Section[] = [
             badge: 'Break-even',
             url: '/home-treadmill-vs-gym-membership/',
           },
+          {
+            title: "Peloton Treadmill Cost",
+            description: "The Tread Flex, Vision and Tread+ totalled with assembly and membership over 1, 3 and 5 years.",
+            badge: "Cost",
+            url: '/peloton-tread-cost/',
+          },
         ],
       },
     ],
@@ -2379,6 +2439,24 @@ export const SECTIONS: Section[] = [
               'Mats sized for full treadmills and walking pads, for hard floors, carpet and upstairs rooms.',
             badge: 'Mats',
             url: '/best-treadmill-mats/',
+          },
+          {
+            title: "Best Treadmill Mats for Hardwood Floors",
+            description: "PVC versus rubber on wood, LVP and laminate: dents, staining, moisture and new-mat smell.",
+            badge: "Hardwood",
+            url: '/best-treadmill-mats-for-hardwood-floors/',
+          },
+          {
+            title: "Best Walking Pad Mats",
+            description: "Thin mats sized for walking pads under a desk, on hardwood or carpet, and what they do for noise.",
+            badge: "Walking Pads",
+            url: '/best-walking-pad-mats/',
+          },
+          {
+            title: "Best Standing Desks for Walking Pads",
+            description: "Six electric desks by max height, wobble, depth and leg clearance for a walking pad set-up.",
+            badge: "Desks",
+            url: '/best-standing-desks-for-walking-pads/',
           },
           {
             title: "Best Treadmill Mats for Carpet",
@@ -2776,6 +2854,12 @@ export const SECTIONS: Section[] = [
               'The ten-minute job most owners never do, step by step — and the products that destroy decks.',
             badge: 'How-to',
             url: '/treadmill-belt-lubrication/',
+          },
+          {
+            title: "How to Lubricate an XTERRA Treadmill",
+            description: "XTERRA's own method: where, how much, how often, and clearing the LUBE message.",
+            badge: "XTERRA",
+            url: '/how-to-lubricate-xterra-treadmill/',
           },
           {
             title: 'How Often to Lubricate a Treadmill',
@@ -3592,6 +3676,12 @@ export const SECTIONS: Section[] = [
             description: 'Seated ellipticals and desk bikes, knee clearance, chair rolling and what calories mean.',
             badge: 'Desk',
             url: '/best-under-desk-ellipticals/',
+          },
+          {
+            title: "Best Under Desk Bikes",
+            description: "Pedal exercisers, desk bikes and bike chairs for when a walking pad will not work at your desk.",
+            badge: "Desk",
+            url: '/best-under-desk-bikes/',
           },
           {
             title: 'Best Rebounders',

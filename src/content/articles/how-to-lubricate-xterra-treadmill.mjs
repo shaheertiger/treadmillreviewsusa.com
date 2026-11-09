@@ -1,0 +1,483 @@
+export default {
+  slug: 'how-to-lubricate-xterra-treadmill',
+  title: 'How to Lubricate an XTERRA Treadmill (2026): Steps, Timing and Lubricant',
+  description:
+    'XTERRA treadmill lubrication instructions: what XTERRA says about lubricant, how often, where and how much to apply, resetting the LUBE message, plus five 100% silicone lubricants.',
+  crumbLabel: 'How to Lubricate an XTERRA Treadmill',
+  breadcrumb: { name: 'Maintenance', url: '/maintenance/' },
+  kicker: 'Maintenance Guide',
+  updated: 'November 2026',
+  updatedLong: 'November 9, 2026',
+  published: '2026-11-09',
+  socialProof: '1.0k',
+  h1: ['How to Lubricate', 'an XTERRA Treadmill'],
+  standfirst:
+    'XTERRA publishes its own method for lubricating its treadmills: a clean, a long S-shaped line of lubricant down each side of the deck, and five minutes of walking. Here are those steps, how often XTERRA says to do it, how to clear the LUBE message, and what to buy if you run out of the tube that came in the box.',
+  ctas: [
+    { label: 'The Step-by-Step', href: '#steps' },
+    { label: 'Lubricants', href: '#picks' },
+  ],
+  tags: [
+    'xterra treadmill lubrication instructions',
+    'how to lubricate xterra treadmill',
+    'xterra treadmill lube',
+    'xterra treadmill maintenance',
+    'xterra lube message',
+  ],
+  stickyCta: { text: 'See the Steps', link: '#steps' },
+  lead: `XTERRA's treadmills, from the Compact series folders to the larger TRX models, run their belt
+          over a deck that needs a thin film of lubricant between the two. When that film dries out,
+          friction rises and the motor, drive belt and motor control board work harder on every
+          stride. XTERRA's own guidance, published on its website, says that a dry deck places undue
+          stress on exactly those parts and can lead to what it calls catastrophic failure of
+          expensive components. The job itself takes about fifteen minutes and needs no tools: you
+          clean under the belt, lift its edge, run a line of lubricant along the deck on each side,
+          and walk it in. This guide sets out XTERRA's published method step by step, the intervals
+          XTERRA gives, how to clear the console reminder, and the 100% silicone lubricants on Amazon
+          that suit the job if your manual allows them. For the general principles behind any
+          treadmill, see our guide to
+          <a href="/treadmill-belt-lubrication/" class="text-[#0F62FE] font-medium">treadmill belt lubrication</a>.`,
+  note: `<strong class="text-gray-900">Where these instructions come from, and on the products
+          below.</strong> The XTERRA-specific steps, quantities and intervals on this page come from
+          XTERRA Fitness's published article on using treadmill lubricant, which we read on 9 November
+          2026, and from an XTERRA TRX4500 owner's manual we read on ManualsLib the same day. XTERRA
+          says to use only XTERRA-approved lubricant and to check your own model's manual for its
+          interval; where your manual differs from this page, follow the manual. Unplug the treadmill
+          before touching the belt or deck. We have not tested the lubricants below. On 9 November 2026
+          we looked each one up on Amazon US and recorded the price and what the listing says; none of
+          them is sold or approved by XTERRA, and using one may matter for your warranty, so ask
+          XTERRA first if your machine is under warranty. We earn a commission if you buy through the
+          Amazon links on this page; it does not change what we list or say.`,
+  sections: [
+    {
+      id: 'short-answer',
+      heading: 'How Do You Lubricate an XTERRA Treadmill? The Short Answer',
+      html: `          <p>
+            <strong>Unplug the treadmill, drag a clean, non-fraying cloth under the belt to remove
+            debris, lift one edge of the belt, and starting about a foot from the motor cover, squeeze
+            a long S-shaped line of lubricant onto the deck about 4 to 6 inches in from the edge. Repeat
+            on the other side, plug in, and walk at a moderate speed for five minutes to spread
+            it.</strong>
+          </p>
+          <p>
+            That is XTERRA's method as it describes it on its own website. XTERRA ships one tube of
+            lubricant with each treadmill and says to use half of it on each side; it also says not to
+            use anything other than XTERRA-approved lubricant. As a general rule it suggests
+            lubricating every 40 hours of use or every three months, whichever comes first, while
+            telling owners to check their own manual for the model's interval.
+          </p>
+          <p>
+            Three things to check before you start: that your manual describes lubricating the deck at
+            all, which interval it gives for your model, and, if your treadmill is under warranty,
+            whether XTERRA will accept a lubricant other than its own.
+          </p>`,
+    },
+    {
+      id: 'before-you-start',
+      heading: 'Before You Start: The Manual, the Lubricant and the Warranty',
+      html: `          <p>
+            <strong>Find your manual.</strong> XTERRA's support pages list owner's manuals by model,
+            so have your model number to hand; it is usually printed on a label on the frame. The
+            manual is the authority on whether your deck needs lubricating, how often, and how much.
+            XTERRA's own article says intervals vary by model, and the manuals we read differ from the
+            general rule, as the next section shows.
+          </p>
+          <p>
+            <strong>Use the right lubricant.</strong> XTERRA's instruction is plain: do not lubricate
+            with anything other than XTERRA Fitness approved lubricant. Each treadmill comes with one
+            tube, and XTERRA says extra tubes can be ordered by calling XTERRA Sales. If you would
+            rather buy a lubricant elsewhere, the type that treadmill decks of this kind use is 100%
+            silicone, as on every product in this guide, and never a petroleum oil, WD-40 or a
+            household spray. Our guide to
+            <a href="/best-treadmill-lubricant/" class="text-[#0F62FE] font-medium">treadmill lubricant</a>
+            explains why.
+          </p>
+          <p>
+            <strong>Think about the warranty.</strong> XTERRA's cheaper Compact series treadmills come
+            with a short parts and labour warranty, and the deck is often covered for a shorter time
+            than the frame. If your machine is still under warranty, the safest course is to use
+            XTERRA's lubricant, or to ask XTERRA support whether a named 100% silicone product is
+            acceptable, before using anything else.
+          </p>`,
+    },
+    {
+      id: 'how-often',
+      heading: 'How Often to Lubricate an XTERRA Treadmill',
+      html: `          <p>
+            XTERRA gives three different kinds of guidance, and they fit together.
+          </p>
+          <ul>
+            <li><strong>The general rule.</strong> XTERRA's article suggests every 40 hours of use or
+            every three months, whichever comes first, as a rule of thumb, while telling owners to
+            check the manual for their model.</li>
+            <li><strong>The model interval.</strong> Some models are given longer intervals. The same
+            article says the TRX3500 calls for lubrication every 80 hours of use, or earlier if the
+            deck is dry or dirty, and the TRX4500 manual we read gives 90 hours, with a console
+            reminder at that point.</li>
+            <li><strong>The check.</strong> XTERRA recommends reaching between the belt and deck every
+            other month to confirm that lubricant is present, and lubricating if it is not, even if no
+            reminder has appeared.</li>
+          </ul>
+          <p>
+            In practice, if you use the treadmill for half an hour a day, 40 hours is roughly every
+            eleven or twelve weeks, so the three-month rule and the hours rule land in about the same
+            place. A household where two people use it daily will reach 40 hours much sooner. Heavy
+            use, a heavier runner, or a warm, dusty room all dry a deck faster. Our guide to
+            <a href="/how-often-to-lubricate-treadmill/" class="text-[#0F62FE] font-medium">how often to lubricate a treadmill</a>
+            covers usage-based timing in more detail.
+          </p>
+          <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">The LUBE message</h3>
+          <p>
+            Several XTERRA consoles track usage and show a LUBE message when lubrication is due; the
+            TRX4500 manual we read describes a reminder after 90 hours. XTERRA's article and that
+            manual give the same way to clear it: in standby mode, hold the ENTER key for three
+            seconds. Clear it only after you have actually lubricated the deck, so the next reminder
+            counts from the right point. If your console has no reminder, keep a note of the date, or
+            of the total hours or distance on the console, each time you do the job.
+          </p>`,
+    },
+    {
+      id: 'what-you-need',
+      heading: 'What You Need',
+      html: `          <ul>
+            <li><strong>Lubricant.</strong> The XTERRA tube supplied with the treadmill, a replacement
+            from XTERRA, or, if your manual and warranty allow it, a 100% silicone treadmill
+            lubricant.</li>
+            <li><strong>A clean, non-fraying cloth.</strong> XTERRA suggests a rag, an old t-shirt or
+            a light towel. Avoid anything that sheds fibres.</li>
+            <li><strong>Somewhere to kneel.</strong> You will be beside the deck at floor level for a
+            few minutes; a folded towel helps.</li>
+            <li><strong>A tape measure</strong> if your manual gives a distance from the motor cover,
+            as the TRX4500 manual does.</li>
+          </ul>
+          <p>
+            You do not need to loosen the belt. XTERRA's method lifts the belt edge by hand far enough
+            to reach under it, and several of the applicators on this page have a long tube or wand
+            for the same reason.
+          </p>`,
+    },
+    {
+      id: 'steps',
+      heading: 'Step by Step: XTERRA’s Method',
+      html: `          <ol>
+            <li><strong>Switch off and unplug.</strong> XTERRA's first step is to make sure the
+            machine is off and unplugged. Removing the safety key is not enough; take the plug out of
+            the wall. If you have just used the treadmill, give the motor a few minutes to cool.</li>
+            <li><strong>Check for lubricant.</strong> Reach between the belt and the top of the deck
+            and feel the surface. A lubricated deck feels slightly slick; a dry one feels like bare
+            board. If it is already slick and the console has not asked for lubrication, you may not
+            need to do anything yet.</li>
+            <li><strong>Clean under the belt.</strong> Slide a clean, non-fraying cloth between the
+            belt and the deck and drag it along the length of the belt, one or two times, as XTERRA
+            describes. This removes dust, fibres and old residue that would otherwise mix with the
+            new lubricant. Our guide to
+            <a href="/how-to-clean-under-treadmill-belt/" class="text-[#0F62FE] font-medium">cleaning under a treadmill belt</a>
+            covers this step in more detail.</li>
+            <li><strong>Lift one edge of the belt.</strong> Kneel beside the deck and, with one hand,
+            hold the belt up and away from the deck just enough to reach under it with the other.</li>
+            <li><strong>Apply the first line.</strong> Starting about a foot from the motor cover,
+            squeeze the lubricant onto the deck in a long S pattern, about 4 to 6 inches in from the
+            edge. XTERRA says to use half of its supplied tube on this side. The TRX4500 manual we
+            read instead says to measure 18 inches from the motor cover and squeeze a line about 1/8
+            inch wide and 15 inches long in an S pattern; if your manual gives figures, use them.</li>
+            <li><strong>Repeat on the other side</strong> with the remaining half of the tube.</li>
+            <li><strong>Plug in and walk.</strong> Plug the treadmill back in, switch it on, and walk on
+            the belt at a moderate speed for five minutes to spread the lubricant evenly between the
+            belt and the deck.</li>
+            <li><strong>Clear the reminder.</strong> If the console showed a LUBE message, clear it in
+            standby by holding ENTER for three seconds.</li>
+          </ol>
+          <p>
+            Do not run the belt with nobody on it to spread the lubricant; walking puts the weight on
+            the deck that works it in. Wipe up anything that has dripped onto the floor or the belt's
+            top surface before you walk, because silicone on the top of the belt or on your shoes is
+            slippery.
+          </p>`,
+    },
+    {
+      id: 'how-much',
+      heading: 'How Much Lubricant: The Tube Versus a Bottle',
+      html: `          <p>
+            XTERRA's instruction to use half the tube per side assumes XTERRA's own tube, which is sized
+            for one application. Most lubricants sold on Amazon come in bottles that hold several
+            applications, so emptying half a 4 ounce bottle onto each side would be far too much.
+          </p>
+          <p>
+            Go by the bottle maker's figure. Spot On, for example, says each 4 ounce bottle holds about
+            four applications, which works out at about an ounce per application, or half an ounce per
+            side. Techmotion's spray says up to eight applications per can. Lube-N-Walk's wand is
+            designed to release a measured amount as you draw it under the belt. If your XTERRA manual
+            gives a line length and width, as the TRX4500's does, that is the best measure of all.
+          </p>
+          <p>
+            Too much lubricant is not harmless. Excess silicone can make the belt slip on the rollers,
+            attract dust into a paste under the belt, and run off the deck edges onto the floor. If you
+            have overdone it, walk it in for longer and wipe any excess from the deck edges and the
+            floor. Our guide to
+            <a href="/treadmill-belt-slipping/" class="text-[#0F62FE] font-medium">a slipping treadmill belt</a>
+            covers what to do if the belt hesitates afterwards.
+          </p>`,
+    },
+    {
+      id: 'picks',
+      heading: 'Lubricants to Buy When the XTERRA Tube Runs Out',
+      products: true,
+      html: `          <p>
+            XTERRA's own lubricant, ordered from XTERRA, is the first choice, especially under
+            warranty. If you are out of warranty, or XTERRA has confirmed that another 100% silicone
+            lubricant is acceptable for your model, these five are well-established options on
+            Amazon. All five listings describe the product as 100% silicone.
+          </p>
+          <p>
+            Two use a long applicator, a wand or a tube, that reaches under the belt without lifting it
+            far; two come with both a long tube and a short spout; and one is a spray. XTERRA's own
+            method describes a liquid line squeezed onto the deck, so if you want to use the spray, ask
+            XTERRA whether an aerosol suits your machine.
+          </p>`,
+    },
+    {
+      id: 'models',
+      heading: 'Which XTERRA Models This Applies To',
+      html: `          <p>
+            XTERRA's published method is written for its treadmills in general, and the steps above
+            match the TRX4500 manual we read. The figures that differ between models are the interval
+            and, sometimes, the exact distance and quantity, so check the manual for yours.
+          </p>
+          <ul>
+            <li><strong>Compact series (TRX1000, TRX1200, TRX1400) and the older TR150.</strong> These
+            folding treadmills use a deck and belt of the kind XTERRA's method describes. Check the
+            manual for the interval; if the console has no LUBE reminder, use XTERRA's general rule
+            and the every-other-month check. Our guide to
+            <a href="/xterra-treadmills/" class="text-[#0F62FE] font-medium">XTERRA treadmills</a>
+            covers the current range.</li>
+            <li><strong>Larger TRX models.</strong> XTERRA gives the TRX3500 an 80 hour interval, and
+            the TRX4500 manual we read gives 90 hours, with a console reminder.</li>
+            <li><strong>Walking treadmills and desk models.</strong> Low walking machines leave little
+            room to reach under the belt, and some walking pads in general use maintenance-free decks.
+            Follow the manual for these; if it says not to lubricate, do not. Our guide to
+            <a href="/how-to-lubricate-a-walking-pad/" class="text-[#0F62FE] font-medium">lubricating a walking pad</a>
+            covers the low-deck method where lubrication is called for.</li>
+          </ul>`,
+    },
+    {
+      id: 'signs',
+      heading: 'Signs Your XTERRA Needs Lubricating',
+      html: `          <ul>
+            <li><strong>The LUBE message</strong> on consoles that have one.</li>
+            <li><strong>A dry deck.</strong> The every-other-month finger check finds no slickness.</li>
+            <li><strong>Belt hesitation.</strong> The belt seems to catch or slow briefly as your foot
+            lands, especially at low speed.</li>
+            <li><strong>A harder-working motor.</strong> The motor note rises, or the machine feels as
+            if it is dragging, over weeks rather than suddenly.</li>
+            <li><strong>Squeaking from under the belt.</strong> A squeak can have other causes, but a
+            dry deck is a common one; see our guide to
+            <a href="/treadmill-squeaking-noise/" class="text-[#0F62FE] font-medium">treadmill squeaking</a>.</li>
+          </ul>
+          <p>
+            A burning smell, a tripping breaker or an error code is not a lubrication job. Stop using
+            the machine and contact XTERRA support.
+          </p>`,
+    },
+    {
+      id: 'after',
+      heading: 'After Lubricating: Tension and Tracking',
+      html: `          <p>
+            XTERRA's method does not loosen the belt, so tension and tracking should be unchanged.
+            Still, watch the belt for the first few minutes of walking. If it drifts to one side, centre
+            it with small turns of the rear roller bolts as your manual describes; our guide to
+            <a href="/how-to-center-treadmill-belt/" class="text-[#0F62FE] font-medium">centring a treadmill belt</a>
+            explains the quarter-turn method. If it slips under your foot after lubricating, give the
+            lubricant longer to spread before tightening anything, because a freshly lubricated deck
+            often settles within a session or two.
+          </p>
+          <p>
+            Write down the date and the console hours. That is the simplest way to stay on XTERRA's
+            schedule on a console without a reminder.
+          </p>`,
+    },
+  ],
+  products: [
+    {
+      id: 'lube-n-walk-kit',
+      name: 'Lube-N-Walk Treadmill Lubricating Kit',
+      brand: 'Lube-N-Walk',
+      category: '100% silicone with 24 in. applicator wand',
+      badge: 'Easiest Application',
+      amazonUrl: 'https://www.amazon.com/s?k=Lube-N-Walk+Treadmill+Lubricating+Kit&tag=sktiger-20',
+      priceRange: 'About $20 (Amazon, 9 Nov 2026)',
+      specs: '100% silicone · 24 in. patented applicator wand · 1 fl oz kit, sold as a six-month supply · made in USA',
+      pros: [
+        'The 24 inch wand reaches under the belt without lifting it far',
+        'The listing says the wand releases a measured amount, reducing the risk of overdoing it',
+        'The wand also wipes dirt from between belt and deck as it goes',
+        'Made in the USA since 1998, per the listing',
+      ],
+      cons: [
+        'The kit holds a small amount; refills cost extra',
+        'A different method from XTERRA’s squeeze-line instructions',
+        'Not sold or approved by XTERRA',
+      ],
+      bottomLine: 'For owners who find lifting the belt awkward and want a measured dose each time.',
+      description:
+        "Lube-N-Walk's kit takes a different approach from a squeeze bottle. The listing describes a patented 24 inch applicator wand that you slide between the belt and the deck, which releases 100% silicone as it goes and, at the same time, wipes dirt from the surfaces. It says there is no need to loosen the belt and no messy hands, and that the wand releases the correct amount of lubricant, unlike the squeeze-bottle method, reducing the risk of applying too much. The kit is sold as a six-month supply, and the item details give it as 1 fluid ounce. The listing says it has been made in the USA since 1998 and is recommended by leading treadmill manufacturers, without naming XTERRA. It was about $20 on Amazon on 9 November 2026. On an XTERRA, it replaces steps four to six of XTERRA's method with the wand, while the unplugging, the walk-in and the reminder reset stay the same. If your treadmill is under warranty, check with XTERRA before using any lubricant other than its own.",
+    },
+    {
+      id: 'spot-on-treadmill-lubricant',
+      name: 'Spot On Premium Treadmill Belt Lubricant (4 oz)',
+      brand: 'Spot On',
+      category: '100% silicone bottle with 8 in. tube',
+      badge: 'Best Bottle',
+      amazonUrl: 'https://www.amazon.com/s?k=Spot+On+Premium+Treadmill+Belt+Lubricant+100%25+Pure+Silicone&tag=sktiger-20',
+      priceRange: 'About $10 (Amazon, 9 Nov 2026)',
+      specs: '4 oz · 100% pure silicone · 8 in. extension tube cap and twist spout · about 4 applications per bottle · made in USA',
+      pros: [
+        'States how many applications a bottle holds, about four, which makes dosing easy',
+        'Stiff 8 inch tube reaches under the belt to the deck',
+        'Second twist-spout cap included',
+        'Non-toxic and odourless, per the listing',
+      ],
+      cons: [
+        'The tube is shorter than the 11 inch tube on the Action Fitness bottle',
+        'Not sold or approved by XTERRA',
+        'Easy to over-apply if you ignore the dose',
+      ],
+      bottomLine: 'A cheap, clearly dosed 100% silicone bottle that follows XTERRA’s squeeze-line method closely.',
+      description:
+        "Spot On's bottle is the closest thing on this page to XTERRA's own method, because it is a squeeze bottle with a tube that lays a line of lubricant on the deck. The listing describes 100% pure silicone in a 4 ounce bottle with two caps: a twist spout for general use and a patented cap with a straight, stiff 8 inch tube designed to slide between the belt and the deck so you can lubricate across the belt without loosening it. Its most useful figure for an XTERRA owner is the dose: the listing says each bottle holds approximately four applications, enough for a year. That gives you about an ounce per application, or half an ounce per side, in place of XTERRA's half-a-tube instruction. The listing describes it as non-toxic and odourless, made in the USA, and suitable for treadmills that need non-petroleum silicone lubricant, naming many brands though not XTERRA. It was about $10 on Amazon on 9 November 2026. As with every product here, check with XTERRA before using it on a treadmill under warranty.",
+    },
+    {
+      id: 'action-fitness-silicone-2-pack',
+      name: 'Action Fitness 100% Silicone Treadmill Lubricant (4 oz, 2-Pack)',
+      brand: 'Action Fitness',
+      category: '100% silicone, two bottles with 11 in. tubes',
+      badge: 'Best Value',
+      amazonUrl: 'https://www.amazon.com/s?k=Action+Fitness+100%25+Silicone+Treadmill+Lubricant+2+Pack&tag=sktiger-20',
+      priceRange: 'About $15 for two bottles (Amazon, 9 Nov 2026)',
+      specs: 'Two 4 oz bottles · 100% silicone · 11 in. extension tube plus twist spout · resealable flat cap',
+      pros: [
+        'Two bottles for about $15',
+        'The longest tube of the bottles here, 11 inches',
+        'Twist spout for other equipment as well',
+        'Non-toxic and odourless, per the listing',
+      ],
+      cons: [
+        'The listing gives no applications-per-bottle figure',
+        'Two bottles is more than most single-treadmill homes need for a year or two',
+        'Not sold or approved by XTERRA',
+      ],
+      bottomLine: 'Good value for a household with more than one machine, or for a heavily used XTERRA.',
+      description:
+        "Action Fitness sells its 100% silicone lubricant in single bottles and as a pair, and the two-pack is the better value if you have more than one machine or use your XTERRA heavily enough to hit 40 hours every few weeks. The listing describes two 4 ounce bottles of non-toxic, odourless 100% silicone oil, each with dual applicators: an 11 inch extension tube for full-width lubrication under the belt and a twist spout for general maintenance on other exercise equipment. The flat resealable cap keeps the bottle from leaking in storage. The 11 inch tube is the longest of the bottle applicators on this page, which helps reach toward the centre of the deck without lifting the belt edge high. It was about $15 for the pair on Amazon on 9 November 2026. The listing gives no figure for how many applications a bottle holds, so use the guidance in the how-much section: about an ounce per application unless your XTERRA manual gives a line length, and never half a 4 ounce bottle per side. As with the others, it is not an XTERRA product.",
+    },
+    {
+      id: 'godora-silicone-4oz',
+      name: 'Godora Treadmill Lubricant 100% Silicone (4 oz, 1000 cSt)',
+      brand: 'Godora',
+      category: '100% silicone with long tube, viscosity stated',
+      badge: 'Budget Pick',
+      amazonUrl: 'https://www.amazon.com/s?k=Godora+Treadmill+Lubricant+100%25+Silicone+4+oz+1000+cSt&tag=sktiger-20',
+      priceRange: 'About $9 (Amazon, 9 Nov 2026)',
+      specs: '4 oz · 100% silicone · 1000 cSt viscosity · long applicator tube · for treadmills and walking pads',
+      pros: [
+        'States its viscosity, 1000 cSt, which few listings do',
+        'The listing tells you to follow your equipment manual for type, amount and interval',
+        'Long applicator tube',
+        'The cheapest bottle here',
+      ],
+      cons: [
+        'No applications-per-bottle figure and no tube length',
+        'Less established brand than Lube-N-Walk or Techmotion',
+        'Not sold or approved by XTERRA',
+      ],
+      bottomLine: 'A low-cost 100% silicone refill for an out-of-warranty XTERRA.',
+      description:
+        "Godora's 4 ounce bottle is the cheapest product on this page and one of the few treadmill lubricant listings to state a viscosity. The listing gives 1000 cSt silicone oil, which it says flows steadily for more controlled application under the belt, reducing drips and mess, and a long applicator tube that reaches deeper beneath the belt toward the centre of the lubrication area. It is sold for home, folding and compact treadmills and for under-desk walking pads that specify silicone lubricant. Usefully, the listing itself says to follow your equipment manual for the recommended lubricant type, amount and maintenance interval, which on an XTERRA is exactly the right advice. It was about $9 on Amazon on 9 November 2026. The listing does not give the tube's length or how many applications a bottle holds, so dose it as the how-much section describes. Viscosity matters less than people sometimes think for a home treadmill, provided the product is 100% silicone; if your XTERRA manual names a specific product or grade, use that.",
+    },
+    {
+      id: 'techmotion-silicone-spray',
+      name: 'Techmotion 100% Silicone Belt & Deck Lubricant Spray (TM-01309)',
+      brand: 'Techmotion',
+      category: '100% silicone aerosol with extension',
+      badge: 'Spray Option',
+      amazonUrl: 'https://www.amazon.com/s?k=Techmotion+100%25+Silicone+Belt+Deck+Lubricant+Spray+TM-01309&tag=sktiger-20',
+      priceRange: 'About $20 (Amazon, 9 Nov 2026)',
+      specs: '100% silicone (listing) · aerosol with spray extension · up to 8 applications per can (listing) · for treadmills and ellipticals',
+      pros: [
+        'Up to eight applications per can, per the listing',
+        'Spray extension reaches under the belt',
+        'Fast to apply and does not drip like a bottle',
+        'Techmotion is a long-established treadmill parts supplier',
+      ],
+      cons: [
+        'XTERRA’s method describes a liquid line, not a spray; ask XTERRA before using an aerosol',
+        'Overspray can reach the top of the belt or the floor',
+        'Not sold or approved by XTERRA',
+      ],
+      bottomLine: 'For an out-of-warranty XTERRA, once XTERRA has confirmed a spray suits your model.',
+      description:
+        "Techmotion is a treadmill parts supplier, and its belt and deck spray is one of the longest-selling 100% silicone sprays on Amazon. The listing describes 100% silicone in an aerosol with a spray extension that reaches under the belt, for commercial and residential treadmills and ellipticals, and says a can gives up to eight applications if used as directed. It lists several treadmill brands it is used for, without naming XTERRA. It was about $20 on Amazon on 9 November 2026. A spray is quicker than a bottle and less likely to leave a puddle, but it is a different method from the one XTERRA publishes, which describes squeezing a long S-shaped line of liquid onto the deck. Because of that, and because overspray can land on the top of the belt or the floor and make either slippery, we suggest checking with XTERRA before using an aerosol, and using it only on a machine out of warranty. If you do use it, spray under the belt in the area XTERRA describes, about a foot from the motor cover and 4 to 6 inches in from each edge, wipe any overspray, and walk it in as usual.",
+    },
+  ],
+  faqs: [
+    {
+      q: 'What lubricant does XTERRA recommend for its treadmills?',
+      a: `XTERRA says to use only XTERRA Fitness approved lubricant. Each treadmill comes with one tube, and XTERRA says extra tubes can be ordered from XTERRA Sales. If you use another product out of warranty, choose 100% silicone treadmill lubricant, never a petroleum oil or WD-40, and check your manual.`,
+    },
+    {
+      q: 'How often should I lubricate my XTERRA treadmill?',
+      a: `XTERRA's general rule is every 40 hours of use or three months, whichever comes first, but it tells owners to check the manual for their model. It gives the TRX3500 80 hours, and a TRX4500 manual we read gives 90 hours. XTERRA also suggests checking for lubricant every other month.`,
+    },
+    {
+      q: 'Where do you put lubricant on an XTERRA treadmill?',
+      a: `On the deck under the belt, on both sides. XTERRA's method starts about a foot from the motor cover and lays a long S-shaped line about 4 to 6 inches in from each edge. Some manuals give their own distance; the TRX4500 manual we read says 18 inches from the motor cover.`,
+    },
+    {
+      q: 'How do I clear the LUBE message on an XTERRA treadmill?',
+      a: `XTERRA's instructions say to hold the ENTER key for three seconds with the console in standby mode. Do it only after lubricating, so the next reminder counts from the right time.`,
+    },
+    {
+      q: 'Do I need to loosen the belt to lubricate an XTERRA treadmill?',
+      a: `No. XTERRA's method lifts the belt edge by hand far enough to reach under it. Long applicator tubes and wands make this easier. Because you do not loosen it, tension and tracking should be unchanged, but watch the belt for a few minutes afterwards.`,
+    },
+    {
+      q: 'How much lubricant should I use on an XTERRA treadmill?',
+      a: `XTERRA says half of its supplied tube on each side, which is one application. If you use a bottle that holds several applications, do not empty half the bottle; follow the bottle maker's dose, typically about half an ounce per side, or your manual's line length if it gives one.`,
+    },
+  ],
+  mistakesHeading: 'Common Mistakes Lubricating an XTERRA Treadmill',
+  mistakesIntro: 'Each of these either wastes the job or creates a new problem.',
+  mistakes: [
+    {
+      title: 'Using half a bottle instead of half a tube',
+      body: `XTERRA's instruction to use half the tube per side refers to its own single-application tube. Half of a 4 ounce bottle per side is several applications' worth and will make the belt slip. Follow the bottle maker's dose.`,
+    },
+    {
+      title: 'Skipping the clean',
+      body: `Lubricant applied over dust and old residue turns into a paste that raises friction. Drag a clean, non-fraying cloth under the belt the full length once or twice first, as XTERRA describes.`,
+    },
+    {
+      title: 'Clearing the LUBE message without lubricating',
+      body: `The reminder is there because the deck is due. Clearing it to make it go away resets the count, and the next reminder will come long after the deck has dried out.`,
+    },
+    {
+      title: 'Using the wrong product',
+      body: `WD-40, household silicone sprays with solvents, and petroleum oils can damage a belt and deck. Use XTERRA's lubricant, or 100% silicone treadmill lubricant once you have checked with XTERRA.`,
+    },
+  ],
+  relatedHeading: 'Related Maintenance Guides',
+  related: [
+    { kicker: 'Lubrication', title: 'Treadmill Belt Lubrication', blurb: 'How lubrication works on any treadmill, and what never to use.', url: '/treadmill-belt-lubrication/' },
+    { kicker: 'Buying', title: 'Best Treadmill Lubricant', blurb: '100% silicone lubricants and which applicator to choose.', url: '/best-treadmill-lubricant/' },
+    { kicker: 'Brand', title: 'XTERRA Treadmills', blurb: 'XTERRA’s current range, prices and warranties.', url: '/xterra-treadmills/' },
+  ],
+  bottomLine: [
+    `<strong class="text-white">Unplug, clean under the belt, lay an S-shaped line down each
+            side, and walk it in for five minutes.</strong> That is XTERRA's method, on XTERRA's
+            general schedule of every 40 hours or three months unless your manual says otherwise,
+            with an every-other-month check for a dry deck.`,
+    `Use XTERRA's own lubricant under warranty. Out of warranty, a 100% silicone product such as
+            Spot On's bottle or the Lube-N-Walk kit does the same job, dosed by the bottle rather than
+            by XTERRA's tube. For the general principles, see our guide to
+            <a href="/treadmill-belt-lubrication/" class="text-[#5AA9FF] font-bold no-underline">treadmill belt lubrication</a>.`,
+  ],
+};
