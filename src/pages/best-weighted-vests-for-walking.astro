@@ -41,9 +41,9 @@ const PRODUCTS = [
     brand: "REP Fitness",
     category: "Adjustable plate carrier, front and back",
     badge: "Best Plate Carrier",
-    amazonUrl: "https://www.amazon.com/s?k=REP+Fitness+Strata+Weight+Vest&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0F8K9ZNPD?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
-    image: null,
+    image: {"url":"https://m.media-amazon.com/images/I/519fQdPcE2L._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$88–$110 (vest only)",
     priceBounds: {"low":88,"high":110},
@@ -116,31 +116,31 @@ const PRODUCTS = [
     description: "Hyperwear designed the FIT for women, and its defining choice is where the weight goes: the pockets start below the sternum and wrap the abdomen and back, leaving the chest free. Garage Gym Reviews and BarBend both named it their best weighted vest for women, and both describe that layout. It adjusts with small plastic-cased weights of steel pellets, half a pound each, up to a 10 lb maximum, which Hyperwear and both reviews agree on; it comes in Small, Medium and Large. Hyperwear sells it empty for $84.99 or loaded for $114.99, so you can start with a few half-pound weights and add more. Reviewers liked the stretchy CORDURA-blend fabric and the lack of bounce, and disliked the zip, which they thought less durable than the rest of the vest. The 10 lb cap is the real limit: plenty for most walking, too little if you want a heavy ruck. Hyperwear's page also makes bone-density claims we do not repeat; ask your doctor.",
   },
   {
-    id: "fringe-sport-wodmaster",
-    name: "Fringe Sport WODmaster 20lb Weight Vest",
-    brand: "Fringe Sport",
+    id: "zelus-weighted-vest",
+    name: "ZELUS Weighted Vest (20 lb)",
+    brand: "ZELUS",
     category: "Fixed-weight budget vest",
     badge: "Best Budget",
-    amazonUrl: "https://www.amazon.com/s?k=20+lb+weight+vest&tag=sktiger-20",
-    amazonLabel: "Shop Similar on Amazon",
-    image: null,
+    amazonUrl: "https://www.amazon.com/dp/B07RPSJT7Q?tag=sktiger-20&linkCode=ll1",
+    amazonLabel: "Check Price on Amazon",
+    image: {"url":"https://m.media-amazon.com/images/I/41ZS1-N3q8L._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
-    priceRange: "Around $72",
-    priceBounds: {"low":72,"high":72},
-    specs: "Fixed 20 lb · neoprene with nylon straps · one universal size, adjustable straps · reflective details · 1-year warranty",
+    priceRange: "About $53 for 20 lb (Amazon, 9 Nov 2026)",
+    priceBounds: {"low":53,"high":53},
+    specs: "Fixed weight · 6, 8, 12, 16, 20, 25 or 30 lb versions · open front · reflective stripe · 1-year warranty",
     pros: [
-      "The cheapest vest here, at about $72 complete with its weight",
-      "Open design that leaves much of the torso uncovered, which a reviewer found comfortable on long walks",
-      "Weight stitched in place, which the reviewer said stops it flopping around",
-      "Reflective details front and back for outdoor walks",
+      "The cheapest vest here, at about $53 for the 20 lb version on Amazon",
+      "Seven fixed weights, so a beginner can buy a lighter one than a single-weight vest allows",
+      "An open front, which Garage Gym Reviews notes for airflow",
+      "A reflective stripe for outdoor walks",
     ],
     cons: [
-      "Fixed at 20 lb: you cannot start lighter or progress without buying another vest",
-      "Neoprene and hook-and-loop closures are less durable than Cordura",
-      "Universal sizing will not suit every body",
+      "Fixed weight: you cannot add or remove load, so progressing means buying another vest",
+      "Tops out at 30 lb, which Garage Gym Reviews says may not be enough for advanced trainees",
+      "Listings describe the fabric differently, so we have not printed a material",
     ],
-    bottomLine: "Only if you already know 20 lb is right for you now. If you are new to vests, buy something that can start lighter.",
-    description: "The WODmaster is a simple fixed-weight vest: 20 lb, permanently, with the load sitting across the upper back and two weighted straps over the shoulders and chest, leaving much of the torso open. Garage Gym Reviews named it its best weighted vest for walking, with its founder saying the stitched-in weight stops it flopping around on long walks and praising the reflective strips. Fringe Sport and the review agree on the 20 lb load, neoprene construction, universal sizing with adjustable straps, reflective details and one-year warranty, and Fringe Sport priced it at $72. They disagree on what is inside — Fringe Sport says sand, the review says steel shot — so we have left the fill out. The important point for this page is that 20 lb is a substantial starting load for many walkers, especially on an incline, and you cannot make it lighter. If that is the right weight for you now, it is good value; if you are unsure, an adjustable vest is the safer buy.",
+    bottomLine: "Only if you already know which weight is right for you now. If you are unsure, buy something that can start lighter and adjust.",
+    description: "Our original budget pick, Fringe Sport's WODmaster, is sold on Fringe Sport's own store rather than on Amazon, so the budget card is the fixed-weight vest Amazon does sell that an independent reviewer has covered: ZELUS's. The Amazon listing offers it in 6, 8, 12, 16, 20, 25 and 30 lb versions, each a fixed weight, with a reflective stripe; Garage Gym Reviews gives the same seven weights between 6 and 30 lb, describes it as a fixed-weight vest with an open front for airflow, and lists a limited one-year warranty. Its criticisms are that you cannot adjust the weight and that 30 lb may not be enough for advanced trainees. Listings describe the fabric and fill in different terms, so we have left them out. The card links to the 20 lb version, which Amazon listed at $52.99 on 9 November 2026; lighter versions cost less. Unlike a single-weight vest, the range lets a new walker start at 8 or 12 lb, but you still cannot make any one vest lighter or heavier, so if you are unsure what weight suits you, an adjustable vest is the safer buy.",
   },
 ];
 
@@ -330,8 +330,9 @@ const schema = {
         <p class="text-sm text-gray-700 m-0 leading-relaxed">
           <strong class="text-gray-900">On the products below.</strong> We have not tested these
           vests, and no figure on this page is our own measurement. Each was confirmed as currently
-          sold on 15 October 2026 on the maker's own store (Hyperwear, REP Fitness, GORUCK and
-          Fringe Sport), and its weight options, adjustability, materials and warranty terms were
+          sold on 15 October 2026 on the maker's own store (Hyperwear, REP Fitness and GORUCK), or,
+          for the ZELUS budget vest that replaced Fringe Sport's Amazon-less WODmaster, on its Amazon
+          listing on 9 November 2026, and its weight options, adjustability, materials and warranty terms were
           checked on that date against at least one independent hands-on review. A figure appears
           in a product's specification line only where the maker and an independent source agree;
           where they conflicted — on one vest's warranty and another's fill material — we left it out
@@ -376,8 +377,8 @@ const schema = {
           </li>
           <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
             <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Budget:</span>
-            <a href="#fringe-sport-wodmaster" class="font-bold text-gray-900 no-underline hover:underline">Fringe Sport WODmaster 20lb Weight Vest</a>
-            <a href="#fringe-sport-wodmaster" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+            <a href="#zelus-weighted-vest" class="font-bold text-gray-900 no-underline hover:underline">ZELUS Weighted Vest (20 lb)</a>
+            <a href="#zelus-weighted-vest" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
           </li>
         </ul>
       </div>
@@ -436,7 +437,7 @@ const schema = {
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">REP Fitness Strata Weight Vest</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Adjustable plate carrier</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Takes plate pairs from 5 to 20 lb, up to 40 lb, with a three-year home warranty</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">GORUCK Ruck Plate Carrier 3.0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rucking, indoors and out</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Back-loaded, so the chest stays open; lifetime guarantee</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Hyperwear Hyper Vest FIT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Women's fit</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Women-specific cut with no weight over the bust, up to 10 lb in half-pound steps</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Fringe Sport WODmaster 20 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Budget, fixed weight</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">One fixed 20 lb load for about $72 — only if 20 lb suits you now</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">ZELUS Weighted Vest</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Budget, fixed weight</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Seven fixed weights from 6 to 30 lb, about $53 for 20 lb — buy the weight that suits you now</td></tr>
             </tbody>
           </table></div>
           <p>
@@ -545,8 +546,11 @@ const schema = {
             vest that is on sale now under that name on the maker's own store, with weight options
             and materials that an independent review confirms. Where the sources disagreed we left
             the figure out of the specification line: Hyperwear lists a longer warranty on the ELITE
-            than one review does, and Fringe Sport describes the WODmaster as sand-filled while a
-            review describes steel shot.
+            than one review does, Fringe Sport describes its WODmaster as sand-filled while a
+            review describes steel shot, and ZELUS's fabric is described differently by different
+            listings. The WODmaster was our original budget pick; Fringe Sport sells it on its own
+            store rather than on Amazon, so the budget card is now the ZELUS fixed-weight vest, which
+            is sold on Amazon and covered by Garage Gym Reviews.
           </p>
           <p>
             Some popular vests fell out. A budget sandbag vest widely recommended by reviewers is
@@ -596,7 +600,8 @@ const schema = {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Fixed-weight vests</h3>
           <p>
             Weight sewn in — sand, steel shot or pellets — at one total you cannot change. The
-            Fringe Sport WODmaster is fixed at 20 lb. They are cheap and simple, but you are buying
+            ZELUS vest comes in seven fixed weights from 6 to 30 lb, and Fringe Sport's WODmaster is
+            fixed at 20 lb. They are cheap and simple, but you are buying
             a single training load, and when you outgrow it you buy another vest. They are a poor
             choice if you are new to vests and unsure what weight suits you.
           </p>
@@ -783,7 +788,7 @@ const schema = {
             and not so tightly that it restricts breathing. Sized vests like the Hyperwear models
             use chest measurements, and Hyperwear's size chart also sets a different maximum load
             for each size, so the size you order affects how heavy the vest can go. One-size vests
-            like the REP Strata and the WODmaster rely on strap adjustment instead: that suits most
+            like the REP Strata, the ZELUS and the WODmaster rely on strap adjustment instead: that suits most
             frames, and reviewers note it can leave smaller or larger users without a secure fit.
           </p>
           <p>
@@ -935,8 +940,8 @@ const schema = {
             <strong class="text-white">For most treadmill walkers, the Hyperwear Hyper Vest ELITE is the
             vest to buy</strong>: it starts light, adjusts in tiny steps and, by reviewers' accounts,
             stays put. Choose the REP Strata if you want to go heavier, the GORUCK carrier for
-            rucking, the Hyper Vest FIT for a women's cut, and the WODmaster only if a fixed 20 lb
-            suits you today.
+            rucking, the Hyper Vest FIT for a women's cut, and the ZELUS only if you already know
+            which fixed weight suits you today.
           </p>
           <p class="text-gray-300 leading-relaxed mb-4">
             Whichever you buy, add the vest to your body weight before checking the treadmill's

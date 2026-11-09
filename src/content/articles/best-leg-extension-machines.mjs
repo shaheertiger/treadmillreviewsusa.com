@@ -30,13 +30,14 @@ export default {
           machines. On 19 October 2026 we checked each one against its maker's product page and at
           least one independent source: a published hands-on review, a second retailer or the
           Amazon listing. A figure appears in a specification line only where those sources agreed;
-          where they did not — on weight capacity for one Titan machine and on dimensions for one
-          Body-Solid machine — we left the figure out and explain why in the text. Amazon
+          where they did not — on weight capacity and dimensions for the XMark and on dimensions
+          for one Body-Solid machine — we left the figure out and explain why in the text. Amazon
           listings for the Titan rack attachment and both Body-Solid machines appeared in Amazon's
           search results that day, and Garage Gym Reviews reports that the RitFit is sold on Amazon;
           Amazon pages themselves would not load for us, so check the seller and price on the
-          listing before you order. We could not confirm Amazon listings for the REP attachment or
-          Titan's standalone machine. Prices are those we saw on 19 October 2026 and change often.
+          listing before you order. REP's bench attachment and Titan's standalone machine are sold
+          direct rather than on Amazon, so in November 2026 we replaced them with the XMark machine
+          and Body-Solid's GLDA3 attachment, whose Amazon listings we checked on 9 November. Prices are those we saw on 19 October 2026 and change often.
           We earn a commission if you buy through the Amazon links on this page; it does not change
           which products we list or what we say about them. If you are recovering from a knee
           injury or surgery, ask your physiotherapist or doctor how and when to use a leg extension;
@@ -48,9 +49,11 @@ export default {
       html: `          <p>
             Three standalone machines, one selectorized machine, a rack attachment and a bench
             attachment. The short version: the <strong>RitFit PLC01</strong> for the best value in a
-            dedicated machine; the <strong>Titan Leg Extension &amp; Hamstring Curl Machine</strong>
-            if you prefer seated curls; and an attachment if you already own a compatible rack or
-            bench and floor space is tight.
+            dedicated machine; the <strong>XMark Rotary Leg Extension and Curl</strong> if you want the
+            most adjustment; and an attachment if you already own a compatible rack or bench and floor
+            space is tight. Titan's Leg Extension &amp; Hamstring Curl Machine and REP's bench
+            attachment are sold direct rather than on Amazon, so we list the closest Amazon
+            alternatives in their place.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead>
@@ -62,15 +65,15 @@ export default {
             </thead>
             <tbody>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">RitFit PLC01</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Standalone, plate-loaded cable</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Cable resistance and a 375 lb capacity for about $420</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Titan Leg Extension &amp; Hamstring Curl</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Standalone, plate-loaded lever</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Seated curl and extension with seven seat and knee pad settings</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">XMark Rotary Leg Extension and Curl</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Standalone, plate-loaded rotary arm</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">12 thigh pad and 20 press arm positions, standard or Olympic plates</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Body-Solid GLCE365</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Standalone, plate-loaded bench</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A simple plate-loaded bench design with a lifetime in-home warranty</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Body-Solid Pro Select GCEC-STK</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Selectorized cam machine</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A 210 or 310 lb weight stack and a 7-gauge cam, from $2,315</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">REP Leg Extension &amp; Leg Curl Attachment</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bench attachment</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Plates, bands or a cable kit, for three REP adjustable benches</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Body-Solid GLDA3 Leg Developer</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bench attachment</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Plate-loaded add-on for Body-Solid's GFID71 and GFID100 benches</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Titan Series Rack Mounted Leg Curl</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rack attachment</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Hangs inside a metric 3x3 rack and needs almost no extra floor</td></tr>
             </tbody>
           </table></div>
           <p>
-            Every pick sells for $100 or more. Simple leg developer attachments for budget benches
+            Every pick sells for $140 or more. Simple leg developer attachments for budget benches
             can cost less — Marcy sells one for two of its benches at $59.99 — but they fit only the
             benches they were made for, which the section on
             <a href="#compatibility" class="text-[#0F62FE] font-medium">bench and rack compatibility</a>
@@ -102,13 +105,13 @@ export default {
             maker and retailer listings, warranty terms and independent hands-on coverage, checked
             on 19 October 2026, and the claims on this page are limited to what those sources
             support. Each product had to be listed by its maker under its current name, cost $100 or
-            more, and represent a different format, so the six together cover a standalone
+            more, be sold on Amazon US, and represent a different format, so the six together cover a standalone
             plate-loaded machine with cable or lever resistance, a selectorized machine, a rack
             attachment and a bench attachment.
           </p>
           <p>
             <strong>Recalls.</strong> We searched the US Consumer Product Safety Commission recall
-            database for every brand on this page and for those we considered: RitFit, Titan
+            database for every brand on this page and for those we considered: RitFit, XMark, Titan
             Fitness, Body-Solid, REP Fitness, Bells of Steel, Force USA, Marcy, Mikolo, Gronk Fitness
             and Anything Sports. None had a recall covering a leg extension or curl machine. Titan's
             one fitness recall, in 2018, covered rack safety straps, and REP's, in 2021, covered
@@ -124,8 +127,11 @@ export default {
             selectorized machines — Titan's at $2,609.97, Bells of Steel's Basilisk at $2,899.99 and
             Force USA's Solitude at $2,299 — had no independent coverage we could find. Gronk
             Fitness's plate-loaded machine has a Garage Gym Reviews review, but we could not load its
-            full specifications. And XMark's Rotary Leg Extension Curl Machine, at $749, had only a
-            brief mention in a list article.
+            full specifications. Titan's standalone Leg Extension &amp; Hamstring Curl Machine and
+            REP's bench attachment, both well covered, are sold direct rather than on Amazon; the XMark
+            and Body-Solid GLDA3 cards replaced them in November 2026, checked against their Amazon
+            listings and US retailer listings. The XMark still has no hands-on review we could find,
+            which its card says.
           </p>`,
     },
     {
@@ -264,7 +270,7 @@ export default {
           <ul>
             <li><strong>REP's bench attachment</strong> fits the REP BlackWing, Nighthawk and AB-5000 ZeroGap adjustable benches, with standard or wide pads. REP says it does not fit the AB-5200 or the original 5200, and it cannot guarantee non-REP benches.</li>
             <li><strong>Titan's TITAN Series rack attachment</strong> fits TITAN Series racks and metric 3 by 3 inch uprights — 2.95 inches square with 26 mm holes on 50 mm spacing. Titan states plainly that it will not fit imperial 3 by 3 uprights. Titan sells a separate version for its T-3 and X-3 racks at $419.97.</li>
-            <li><strong>Body-Solid's GLDA3 leg developer</strong>, according to its Amazon listing, fits only Body-Solid's GFID71 and GFID100 benches.</li>
+            <li><strong>Body-Solid's GLDA3 leg developer</strong>, according to Body-Solid and its Amazon listing, fits only Body-Solid's GFID71 and GFID100 benches.</li>
             <li><strong>Marcy's leg developer</strong> fits its MWB-5511 and MWB-7096 benches.</li>
           </ul>
           <p>
@@ -274,7 +280,7 @@ export default {
             diameter with calipers if you are unsure, rather than trusting the nominal size.
           </p>
           <p>
-            REP's attachment also takes an optional cable kit that links it to a cable machine, so
+            REP's attachment, which is sold direct, also takes an optional cable kit that links it to a cable machine, so
             you can use a weight stack you already own. Northern Fitness lists the minimum distance from
             a cable trolley as about 43 inches. If you are weighing a cable machine purchase, our guide to
             <a href="/best-cable-machines-for-home-gym/" class="text-[#0F62FE] font-medium">cable machines for a home gym</a>
@@ -286,8 +292,8 @@ export default {
       heading: 'Seated or Lying Leg Curl?',
       html: `          <p>
             Most combination machines pair the extension with a hamstring curl, and they do it in
-            one of two ways. The Titan and the Body-Solid Pro Select offer a seated curl from the same
-            seat, and the Body-Solid GLCE365 a reclined one; the RitFit and the REP attachment use a lying, prone curl, face down
+            one of two ways. The Body-Solid Pro Select offers a seated curl from the same seat, as
+            Titan's machine (sold direct) does, and the Body-Solid GLCE365 a reclined one; the RitFit uses a lying, prone curl, face down
             on the pad; and the Titan rack attachment uses a standing curl.
           </p>
           <p>
@@ -354,28 +360,28 @@ export default {
         "RitFit's PLC01 is a standalone machine for seated leg extensions and lying leg curls that runs the load through a cable and pulleys rather than a lever. RitFit lists it at 109 lb, 50.9 inches long, 43.5 inches wide and 42.7 inches tall, with a 325 lb maximum user weight, a 375 lb overall capacity, four backrest angles, 12 range positions, a 3:2 cable ratio, a plate holder 13 inches wide that takes 2-inch or 1-inch plates, and a recommended user height of 5 feet 2 inches to 6 feet 2 inches. Garage Gym Reviews, which tested it, gives the same weight, dimensions and capacities, liked the consistent cable resistance and the stability, and noted three things to know: the 3:2 ratio makes it a plate eater, so 75 lb of plates feels like about 50; the foam pads are thin; and it offers a lying curl, not a seated one. Garage Gym Reviews lists the warranty as three years on the frame and welds, one year on bushings and bearings and six months on parts and pads, and reports some owners receiving bent parts. It was $419.99 on RitFit's store on 19 October 2026; Garage Gym Reviews quoted $399.99 and says it is also sold on Amazon.",
     },
     {
-      id: 'titan-leg-extension-curl',
-      name: 'Titan Fitness Leg Extension & Hamstring Curl Machine',
-      category: 'Standalone plate-loaded leg extension and seated curl',
-      badge: 'Best Seated Curl',
-      amazonUrl: 'https://www.amazon.com/s?k=Titan+Fitness+Leg+Extension+Hamstring+Curl+Machine+plate+loaded&tag=sktiger-20',
-      priceRange: '$646.97–$924.99',
-      specs: 'Plate-loaded lever · seated extension and seated curl · 39 in. H × 42 in. W × 36 in. D · 108 lb · 24–26.5 in. seat height · 7 seat-depth and 7 knee-pad positions · 1-yr warranty',
+      id: 'xmark-rotary-leg-extension-curl',
+      name: 'XMark Rotary Leg Extension and Curl Machine',
+      category: 'Standalone plate-loaded rotary leg extension and curl',
+      badge: 'Most Adjustment',
+      amazonUrl: 'https://www.amazon.com/dp/B0080R2HCY?tag=sktiger-20',
+      priceRange: '$720–$749',
+      specs: 'Plate-loaded rotary arm on a cam · 2 × 3 in. steel mainframe · 12-position thigh pad · 20-position press arm · adjustable backrest · 1 in. horn with Olympic adapter',
       pros: [
-        'Seated curl and extension from one seat, switched with a pin',
-        'Seven seat depth, seven knee pad and three seat angle positions for fitting your knee to the pivot',
-        'Garage Gym Reviews found the range of motion good and the welds neat',
-        'Compact for a standalone machine at 42 by 36 inches',
+        'A 12-position thigh pad, 20-position press arm and adjustable backrest, the most fitting adjustment on this page',
+        'A pull pin switches between extensions and curls, and a cam and rotary pivot shape the resistance',
+        'Takes standard plates on its 1-inch horn and Olympic plates with the included adapter sleeve',
+        'Sold on Amazon by XMark and at several US retailers',
       ],
       cons: [
-        'Titan lists 300 lb capacity; Garage Gym Reviews gives both 300 and 220 lb, so we have not printed one',
-        'Pads that Garage Gym Reviews found less comfortable under heavy loads',
-        'One-year warranty, and needs 2-inch Olympic plates',
+        'Capacity is 225 lb on Amazon and one retailer, 500 lb on another listing, so we have not printed one',
+        'Listings give 11 or 12-gauge steel and two different sets of dimensions; measure against the listing you buy from',
+        'We found no hands-on review, only brief mentions in list articles',
       ],
       bottomLine:
-        'The pick if you want a seated hamstring curl and plenty of adjustment in a compact frame. Confirm the capacity with Titan if you are a heavy user.',
+        'The Amazon pick for a standalone machine with plenty of adjustment to line your knee up with the pivot. Confirm the capacity and footprint before ordering.',
       description:
-        "Titan's Leg Extension & Hamstring Curl Machine is a plate-loaded, lever-arm machine that does seated leg extensions and seated hamstring curls from one position, switched with a pull pin, with a rotary leg clamp to lock your thighs. Titan lists it at 39 inches tall, 42 inches wide and 36 inches deep, 108 lb, with an 11-gauge steel frame, HeftyGrip vinyl, a seat height of 24 to 26.5 inches, seven seat depth positions, seven knee pad positions and seat angles of 7, 10.5 and 14 degrees, and a 10-inch, 49 mm weight post. Garage Gym Reviews reviewed what it called Titan's Seated Leg Curl/Extension Machine in 2025 and gave the same dimensions, weight, frame and seat range, so it appears to be the same machine under a new name. Its reviewer liked the adjustability, range of motion and build for the price, but found the pads less comfortable with heavy loads and noted that heavier lifters may find it less stable. The capacity is where the sources disagree: Titan lists 300 lb, while Garage Gym Reviews gives 300 lb in one place and 220 lb in its specification table, so ask Titan if it matters to you. It was $646.97, down from $924.99, on Titan's store on 19 October 2026.",
+        "XMark's rotary leg extension and curl machine is a standalone, plate-loaded machine with a rotary press arm on an oversized cam, and it takes the place here of Titan's Leg Extension & Hamstring Curl Machine, which Titan sells direct rather than on Amazon. Its Amazon listing and several US retailers agree on the parts that matter for fit: a 2 by 3-inch steel mainframe, a 12-position thigh pad, a 20-position press arm, an adjustable backrest, a pull pin to switch between extensions and curls, and a 1-inch plate horn with a chrome adapter sleeve for Olympic plates. That range of adjustment is the reason to choose it, because lining the pivot up with your knee matters more on a leg extension than any other setting. The sources do not agree on the rest. Amazon's title and one retailer give a 225 lb capacity while another listing gives 500 lb; the steel is described as 11-gauge in some listings and 12-gauge in another; and two retailers give different dimensions. We found no hands-on review. Amazon showed it at $720 on 9 November 2026, and retailers listed it at $749.",
     },
     {
       id: 'body-solid-glce365',
@@ -426,28 +432,28 @@ export default {
         "The Pro Select GCEC-STK is Body-Solid's selectorized leg extension and curl: a seat and back pad in front of a 210 lb weight stack, upgradable to 310 lb in 15 lb steps, with a pull pin to switch between extensions and seated curls. Body-Solid describes a 7-gauge steel cam shaped for the strength curve, seven back pad positions, seven leg hold-down positions, a rotary range-of-motion adjustment that changes the starting position, oversized rollers, 16 inches from seat to extension roller, and storage for the hold-down piece. It is 54 inches long, 54 inches wide and 71 inches tall and weighs 412 lb assembled. Its Amazon listing, which appeared in Amazon's search results on 19 October 2026, describes the same model with a 210 lb weight stack. Body-Solid backs it with its in-home lifetime warranty and a light commercial warranty. Body-Solid's store listed it from $2,315 with the 210 lb stack to $2,545 with the 310 lb stack, marked temporarily out of stock, on the day we checked. We found no independent hands-on review, so its feel is unverified; the cam design and adjustment range are the reasons to consider it over a plate-loaded machine.",
     },
     {
-      id: 'rep-leg-attachment',
-      name: 'REP Fitness Leg Extension & Leg Curl Bench Attachment',
-      category: 'Bench attachment for REP adjustable benches',
+      id: 'body-solid-glda3',
+      name: 'Body-Solid GLDA3 Leg Developer Attachment',
+      category: 'Bench attachment for two Body-Solid benches',
       badge: 'Best Bench Attachment',
-      amazonUrl: 'https://www.amazon.com/s?k=REP+Fitness+Leg+Extension+Leg+Curl+Bench+Attachment&tag=sktiger-20',
-      priceRange: '$549.99',
-      specs: 'Plates, bands or cable · 250 lb loadable capacity · fits REP BlackWing, Nighthawk, AB-5000 · 33.3 × 25.5 × 36.2 in. · 15° bench decline · wheeled base',
+      amazonUrl: 'https://www.amazon.com/dp/B0013Z9APC?tag=sktiger-20',
+      priceRange: '$140–$210',
+      specs: 'Bench attachment, plate-loaded · 1 in. plate post (Olympic adapter sold separately) · fits Body-Solid GFID71 and GFID100 only · about 15 lb',
       pros: [
-        'Three resistance options — plates, bands or a cable kit — usable together',
-        'A cam REP says keeps tension consistent through the rep',
-        'Stands on its own wheeled base when not attached, and pins on in two places',
-        'Doubles as a decline bench for sit-ups and decline pressing',
+        'Turns a GFID71 or GFID100 bench into a leg extension and curl station for a fraction of a standalone machine',
+        'The pivot locks to make a leg hold-down for pulldowns and crunches',
+        'Retailers describe Body-Solid’s lifetime residential warranty',
+        'Adds almost nothing to your footprint',
       ],
       cons: [
-        'Fits only three REP benches; not the AB-5200 or non-REP benches',
-        'A 250 lb total capacity and a lying curl only',
-        'Bench sold separately, so the total cost is high; no Amazon listing confirmed',
+        'Fits only Body-Solid’s GFID71 and GFID100 benches',
+        'A 1-inch post; Olympic plates need an adapter sleeve, sold separately',
+        'No load capacity published, and listed dimensions vary slightly between sellers',
       ],
       bottomLine:
-        'The best option if you own, or plan to buy, a REP BlackWing, Nighthawk or AB-5000. Otherwise a standalone machine is simpler.',
+        'The attachment to buy if you own, or plan to buy, a Body-Solid GFID71 or GFID100. Otherwise a standalone machine is simpler.',
       description:
-        "REP's attachment turns three of its adjustable benches into a leg extension and lying curl station. It pins to the bench in two places, tilts the bench to a 15-degree decline, and takes resistance three ways: plates on dual-sided horns, bands on built-in pegs, or a cable from any cable machine with an optional cable kit, with a combined limit of 250 lb and a 12.7 lb starting weight. REP's own FAQ and the Canadian dealer Northern Fitness agree on the 250 lb loadable capacity, the 15-degree decline and the fit with the BlackWing and Nighthawk benches; REP adds the AB-5000 ZeroGap, says it does not fit the AB-5200 or original 5200, and will not guarantee non-REP benches. Northern Fitness lists it at 33.3 by 25.5 by 36.2 inches, with an extension roller adjustable from 12.5 to 17.5 inches and a lifetime structural warranty. REP says installation is a one-person job taking one to two hours. It was $549.99 on REP's US store on 19 October 2026, shipping in 24 to 48 hours.",
+        "REP's leg attachment for its own benches is sold direct rather than on Amazon. The bench attachment we found there is Body-Solid's GLDA3 leg developer, which does the same job for two Body-Solid benches. Body-Solid, its Amazon listing and several retailers agree that it fits only the GFID71 flat-incline-decline bench and the GFID100 adjustable bench, and that it uses a 1-inch plate post, with an Olympic adapter sleeve sold separately. Its pivot can also be locked so the rollers work as a leg hold-down for lat pulldowns and ab crunches. Body-Solid's own page gives 22.83 by 18.90 by 4.72 inches and 15 lb; the Amazon listing gives 21.26 by 19.29 by 4.72 inches and 17.16 lb, which looks like the boxed size and shipping weight. Retailers describe Body-Solid's lifetime residential warranty, though some list its commercial warranty instead, so confirm which applies. No load capacity is published. Prices on 9 November 2026 ran from $140 at one retailer to $210 on Body-Solid's site, with Amazon at $160.",
     },
     {
       id: 'titan-series-rack-leg-curl',
@@ -477,7 +483,7 @@ export default {
   faqs: [
     {
       q: 'What is the best leg extension machine for home use?',
-      a: `For most home gyms, the RitFit PLC01 is the best value: a standalone, plate-loaded cable machine with a 375 lb capacity for about $420. If you prefer a seated hamstring curl, Titan's Leg Extension and Hamstring Curl Machine is the pick. If you already own a compatible rack or REP bench, an attachment saves floor space.`,
+      a: `For most home gyms, the RitFit PLC01 is the best value: a standalone, plate-loaded cable machine with a 375 lb capacity for about $420. If you want the most adjustment, XMark's rotary leg extension and curl machine has 12 thigh pad and 20 press arm positions. If you already own a compatible rack or Body-Solid bench, an attachment saves floor space.`,
     },
     {
       q: 'Is a plate-loaded or selectorized leg extension better?',
@@ -489,11 +495,11 @@ export default {
     },
     {
       q: 'Can you put a leg extension attachment on any bench?',
-      a: `No. Bench attachments are built for specific benches. REP's fits only its BlackWing, Nighthawk and AB-5000 benches; Body-Solid's GLDA3 fits two Body-Solid benches; Marcy's fits two Marcy benches. Makers generally will not guarantee other brands, so check the compatibility list before buying.`,
+      a: `No. Bench attachments are built for specific benches. Body-Solid's GLDA3 fits only its GFID71 and GFID100 benches; REP's fits only its BlackWing, Nighthawk and AB-5000 benches; Marcy's fits two Marcy benches. Makers generally will not guarantee other brands, so check the compatibility list before buying.`,
     },
     {
       q: 'How much space does a leg extension machine need?',
-      a: `A standalone plate-loaded machine typically needs a patch around 3.5 to 4.5 feet on each side, such as the Titan at 42 by 36 inches or the RitFit at about 51 by 44 inches, plus room to load plates. A selectorized machine is larger; Body-Solid's Pro Select is 54 by 54 inches and 71 inches tall. Rack and bench attachments add little beyond what you already own.`,
+      a: `A standalone plate-loaded machine typically needs a patch around 3.5 to 4.5 feet on each side, such as the RitFit at about 51 by 44 inches, plus room to load plates. A selectorized machine is larger; Body-Solid's Pro Select is 54 by 54 inches and 71 inches tall. Rack and bench attachments add little beyond what you already own.`,
     },
     {
       q: 'Is a seated or lying leg curl better?',
@@ -544,8 +550,8 @@ export default {
   ],
   bottomLine: [
     `<strong class="text-white">For most home gyms, the RitFit PLC01 is the best-value leg extension
-            machine</strong>, and Titan's Leg Extension and Hamstring Curl Machine is the one to choose for a
-            seated curl and more adjustment. If you already own a metric rack or a compatible REP bench, an
+            machine</strong>, and XMark's rotary leg extension and curl machine is the one to choose for more
+            adjustment. If you already own a metric rack or a compatible Body-Solid bench, an
             attachment saves floor space; if several people share the gym, Body-Solid's selectorized Pro
             Select is the convenient, expensive option.`,
     `Whichever you buy, check compatibility against your exact rack or bench, read what each capacity

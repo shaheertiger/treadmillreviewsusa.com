@@ -12,7 +12,7 @@ export default {
   socialProof: '1.9k',
   h1: ['Best Barbell', 'for a Home Gym: 7 Olympic Bars Compared'],
   standfirst:
-    'The barbell is the one piece of a home gym you touch on every lift, and most of what separates a good one from a poor one is printed on the spec sheet: tensile strength, sleeve rotation, knurl, shaft diameter and finish. Here are seven currently sold Olympic bars from about $135 to about $365, what each is honestly good for, and how to tell whether a bar will fit your rack and your room.',
+    'The barbell is the one piece of a home gym you touch on every lift, and most of what separates a good one from a poor one is printed on the spec sheet: tensile strength, sleeve rotation, knurl, shaft diameter and finish. Here are seven Olympic bars sold on Amazon from about $135 to about $240, what each is honestly good for, and how to tell whether a bar will fit your rack and your room.',
   ctas: [
     { label: 'See the Picks', href: '#picks' },
     { label: 'Will It Fit Your Rack?', href: '#rack-fit' },
@@ -23,31 +23,33 @@ export default {
           around 190,000 PSI, bushings in the sleeves, dual knurl marks and a finish that will not
           rust in a damp garage. That describes several bars at very different prices, and it also
           rules out a surprising number of cheap ones whose steel is rated at less than two-thirds
-          of that figure. The seven bars below cover the price range from a budget bar sold on
-          Amazon to a made-in-USA classic, include a 15 kg bar with a thinner shaft, and the guide
-          after them explains what the numbers on a barbell listing actually mean.`,
+          of that figure. The seven bars below are all sold on Amazon, cover the price range from a budget
+          bar to a heavy-duty power bar, include a 15 kg bar with a thinner shaft, and the guide
+          after them explains what the numbers on a barbell listing actually mean. Some of the best
+          known home gym bars, REP's Colorado, Rogue's Ohio Bar and Fringe Sport's Wonder Bar, are
+          sold on their makers' own stores rather than on Amazon, so they are discussed in the guide
+          but not carded.`,
   note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
           barbells, and no figure on this page is our own measurement. On 19 October 2026 we
-          confirmed each bar as currently listed on its maker's own store (REP Fitness, Synergee,
-          Rogue Fitness, Fringe Sport, Titan Fitness and CAP Barbell) and checked its weight, shaft
-          diameter, tensile strength, sleeve rotation, knurl and warranty against at least one
-          independent source: Garage Gym Reviews' Olympic, budget and women's barbell guides and its
-          equipment page for the CAP bar, BarBend's barbell guide, and an independent review of the
-          Titan bar. A figure appears on a card only where the maker and an independent source agree;
-          where they conflicted — on one bar's tensile strength, another's weight rating and shaft
-          diameter, and one bar's overall length — we left it out and say so on the card. Tensile
-          strength and weight ratings are the makers' own claims, not independent tests.
-          <strong class="text-gray-900">Where to buy.</strong> Amazon's pages would not load for us
-          that day, so Amazon availability was confirmed from Amazon US listings returned by search:
-          we found the Synergee Games bar and CAP's Beast bar listed there. We could not find REP's
-          Colorado bars, the Fringe Sport Wonder Bar or Titan's Performance Series bar on Amazon US;
-          REP, Fringe and Titan sell them on their own stores, and Rogue sells only through its own
-          store, so those buttons run an Amazon search that may show similar bars rather than the
-          exact one. Every brand was checked against the US Consumer Product Safety Commission's
-          recall database on the same date, along with barbells as a category. CAP's own store showed
-          the Beast as sold out that day. Prices are those we saw on that date and change often. We
-          earn a commission if you buy through the Amazon links on this page; it does not change
-          which products we list or what we say about them.
+          confirmed the Synergee Games, Titan and CAP Beast bars on their makers' own stores and
+          checked their weight, shaft diameter, tensile strength, sleeve rotation, knurl and warranty
+          against at least one independent source: Garage Gym Reviews' Olympic, budget and women's
+          barbell guides and its equipment page for the CAP bar, BarBend's barbell guide, and an
+          independent review of the Titan bar. On 9 November 2026 we replaced four bars that are not
+          sold on Amazon US (REP's 20 kg and 15 kg Colorado bars, the Rogue Ohio Bar and the Fringe
+          Sport Wonder Bar V2) with the REP Delta Basic Bar, CAP's Rebel power bar and Synergee's
+          20 kg and 15 kg Regional bars, all listed on Amazon US that day. Their figures were checked
+          against REP's own pages and GymCrafter's review (Delta), CAP's page, the Amazon listing and
+          the retailer Iron Company (Rebel), and Living.Fit's listing, the Amazon listings and Garage
+          Gym Reviews (Regional). A figure appears on a card only where two sources agree; where they
+          conflicted, or only one source gave a figure, we left it out and say so on the card.
+          Tensile strength and weight ratings are the makers' own claims, not independent tests.
+          <strong class="text-gray-900">Where to buy.</strong> Every card links to the bar's Amazon
+          listing. Every brand was checked against the US Consumer Product Safety Commission's recall
+          database, along with barbells as a category. CAP's own store showed the Beast as sold out on
+          19 October. Prices are those we saw on the dates given and change often. We earn a
+          commission if you buy through the Amazon links on this page; it does not change which
+          products we list or what we say about them.
           <strong class="text-gray-900">What this page is, and is not.</strong> We review home
           exercise equipment; we are not giving medical, physiotherapy or coaching advice, and nothing
           here is a training programme. Barbell training carries a real risk of injury: lift inside a
@@ -62,8 +64,8 @@ export default {
             Seven bars, chosen so that every common job a home gym bar does — squats, presses,
             deadlifts, cleans and conditioning work — is covered at a price you can buy today. Most
             readers will be happiest with one of the first three. The rest exist because a tight
-            budget, a lighter bar, a preference for buying on Amazon or for a particular sleeve
-            design changes the answer.
+            budget, a lighter bar, heavy powerlifting or a particular sleeve design changes the
+            answer.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead><tr>
@@ -72,11 +74,11 @@ export default {
               <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Why</th>
             </tr></thead>
             <tbody>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">REP Colorado Bar (20 kg)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best overall</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">190,000 PSI, composite bushings, dual marks, lifetime warranty, about $300</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Synergee Games Barbell</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best value, sold on Amazon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Same headline strength rating for well under $200 on Synergee's store; fast needle bearings</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rogue Ohio Bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Made in the USA</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The classic multi-purpose bar, many finishes; sold only by Rogue</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Fringe Sport Wonder Bar V2</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Choice of bushings or bearings</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Same bar with either sleeve; 1,600 lb rating; stiff whip</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">REP Colorado Bar (15 kg)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A 15 kg bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">25 mm shaft for smaller hands, shorter 79 in. length, same steel rating</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Synergee Games Barbell</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best overall</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">190,000 PSI and 1,500 lb for well under $200 on Synergee's store; fast needle bearings; 15 or 20 kg</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">REP Delta Basic Bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best bushing bar on Amazon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Brass bushings, dual marks and a center knurl for about $200; 135,000 PSI is the trade-off</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Synergee Regional (20 kg)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">190,000 PSI for less</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Same ratings as the Games bar in hard chrome or black phosphate, about $160</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">CAP "The Rebel" Power Bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Squat, bench and deadlift</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A power bar with a center knurl and a 2,000 lb rating, about $230</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Synergee Regional (15 kg)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A 15 kg bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">25 mm shaft for smaller hands, shorter 79 in. length, same 190,000 PSI rating</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Titan Performance Series Olympic Barbell</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Tight budget</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">165,000 PSI and bronze bushings for under $210</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">CAP "The Beast" Olympic Bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Cheapest on Amazon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A long-running Amazon bar; 110,000 PSI steel is the trade-off</td></tr>
             </tbody>
@@ -102,7 +104,12 @@ export default {
           <p>
             The cards are in no strict order after the first two. Where a maker and an independent
             source disagreed on a figure, the card says so rather than choosing one.
-          </p>`,
+          </p>
+          <p>
+            Several well-known home gym bars are not here because they are not sold on Amazon US:
+            REP sells its Colorado bars on its own store, Rogue sells the Ohio Bar only through its
+            own store, and Fringe Sport sells the Wonder Bar V2 direct. The cards show the closest bars
+            we could find on Amazon, and the sections below still compare those bars where it helps.`,
     },
     {
       id: 'how-we-chose',
@@ -115,18 +122,21 @@ export default {
           <p>
             We started from the job most home gym bars do, which is everything. A multi-purpose bar
             with both powerlifting and weightlifting knurl marks suits more home lifters than a
-            dedicated power bar or a weightlifting bar, so six of the seven are multi-purpose bars.
-            For each we looked for a bar that its maker listed on 19 October 2026 and that Garage Gym
-            Reviews, BarBend or another independent reviewer had described in enough detail to
+            dedicated power bar or a weightlifting bar, so six of the seven are multi-purpose bars,
+            and the seventh is a power bar for lifters who mainly squat, bench and deadlift. For each
+            we looked for a bar sold on Amazon US that its maker or a retailer listed in enough detail,
+            and that an independent reviewer or second listing described closely enough, to
             cross-check. The independent sources were Garage Gym Reviews' best Olympic barbell, best
             budget barbell and best barbell for women guides and its CAP equipment page, BarBend's
-            best barbells guide, and Torokhtiy's review of the Titan bar.
+            best barbells guide, Torokhtiy's review of the Titan bar, GymCrafter's review of the REP
+            Delta Basic Bar, and Iron Company's and Living.Fit's listings of the CAP Rebel and Synergee
+            Regional bars.
           </p>
           <p>
             Figures went onto the cards only where the maker and an independent source agreed. That
-            removed more than you might expect. Fringe Sport's own page gives the Wonder Bar V2 two
-            tensile strengths, 205,000 PSI in its specification list and 202,000 PSI in its comparison
-            table. CAP's store rates the Beast at 1,000 lb while its Amazon listing says 1,200 lb, and
+            removed more than you might expect. The 190,000 PSI and 30 mm figures for CAP's Rebel
+            appear on a retailer's page but not on CAP's own, and the Delta's 29 mm shaft appears only
+            in GymCrafter's review. CAP's store rates the Beast at 1,000 lb while its Amazon listing says 1,200 lb, and
             the two review sites give its shaft as 28.5 mm and 30 mm. Synergee and the Amazon listing
             give the Games bar slightly different overall lengths. Those figures are discussed on the
             cards rather than printed in the specification line.
@@ -147,10 +157,9 @@ export default {
           <p>
             We also left some bars out on purpose. REP's older Sabre bar no longer appears on REP's
             store — its address now redirects to the barbell collection — so it is not carded, even
-            though older reviews still recommend it. REP's Delta Basic Bar is on Amazon and costs
-            $199.99 on REP's store, but its rating (135,000 PSI and 700 lb static, by REP's figures)
-            sits well below the Colorado's for only $100 less, and we found no independent review
-            to check it against. CAP's sub-$100 Olympic bars are rated by CAP itself at 54,000 PSI and
+            though older reviews still recommend it. REP's Colorado bars, the better-rated bars in REP's
+            range, are sold only on REP's store, which is why REP's Amazon-listed Delta Basic Bar is
+            carded instead. CAP's sub-$100 Olympic bars are rated by CAP itself at 54,000 PSI and
             500 lb, which is why the cheapest bar carded here is CAP's own Beast rather than one of
             those. Specialty bars — trap bars, safety squat bars and curl bars — have their own
             guides, linked at the end of this page.
@@ -167,10 +176,11 @@ export default {
             permanent bend, which is what eventually ruins cheap bars.
           </p>
           <p>
-            The bars on this page fall into three groups. The REP Colorado, Synergee Games and Rogue
-            Ohio are all listed at 190,000 PSI, and the Fringe Wonder Bar sits just above that. The
-            Titan Performance Series is listed at 165,000 PSI, the figure Garage Gym Reviews uses as
-            its threshold for an acceptable score. CAP's Beast is listed at 110,000 PSI — still a
+            The bars on this page fall into three groups. The Synergee Games and both Synergee Regional
+            bars are listed at 190,000 PSI, the same figure as REP's Colorado and Rogue's Ohio Bar,
+            which are not sold on Amazon. The Titan Performance Series is listed at 165,000 PSI, the
+            figure Garage Gym Reviews uses as its threshold for an acceptable score, and REP's Delta
+            Basic Bar at 135,000 PSI. CAP's Beast is listed at 110,000 PSI — still a
             usable bar for moderate loads, but with much less margin, which is why Garage Gym Reviews
             stopped recommending it for most home gyms after CAP lowered the figure.
           </p>
@@ -178,8 +188,7 @@ export default {
             Three cautions apply. First, these are makers' claims; no independent lab publishes
             tensile tests of consumer barbells, and the reviewers repeat the makers' numbers.
             Second, yield strength — the stress at which steel starts to bend permanently — matters
-            as much and is rarely published; Fringe is unusual in listing it (160,000 PSI for the
-            Wonder Bar). Third, a weight rating is a different thing. A "1,500 lb static rating"
+            as much and is rarely published; few makers list it. Third, a weight rating is a different thing. A "1,500 lb static rating"
             describes a load sitting still in a rack, not a bar dropped from overhead or landing on
             the edge of a safety arm, so do not treat the rating as a target.
           </p>
@@ -203,19 +212,19 @@ export default {
           <ul>
             <li><strong>Bushings</strong> are sleeves of bronze, brass or composite material. They spin
               more slowly and steadily, need little maintenance and tolerate drops well. The REP
-              Colorado (composite), Rogue Ohio, Titan Performance Series and CAP Beast (bronze or
-              unspecified bushings) all use them.</li>
+              Delta (brass), CAP Rebel (copper alloy), Titan Performance Series and CAP Beast (bronze
+              or unspecified bushings) all use them.</li>
             <li><strong>Needle bearings</strong> are rows of small rollers. They spin faster and more
               freely, which weightlifters like, but they cost more and some lifters find them too lively
               under a heavy, slow squat. Garage Gym Reviews makes exactly that point about the
-              Synergee Games bar.</li>
+              Synergee Games bar. Both Synergee Regional bars use them too.</li>
           </ul>
           <p>
             For most home gyms, a good bushing bar is the right default: it handles everything from
             deadlifts to power cleans and has less to go wrong. Buy bearings if Olympic weightlifting
-            is the main reason you lift. The Fringe Sport Wonder Bar V2 is useful here because the
-            same bar is sold either way — $299 with bronze bushings and $319 with needle bearings on
-            the day we checked — so you can choose on the sleeve alone.
+            is the main reason you lift. On this page the REP Delta and CAP Rebel are the bushing bars
+            above $200 and the Synergee bars are the bearing bars, so you can choose on the sleeve
+            first and the price second.
           </p>
           <p>
             Whatever the system, sleeve spin should be smooth and quiet when you turn it by hand, and
@@ -232,7 +241,8 @@ export default {
             describe it as passive, medium or aggressive, and "volcano" and "diamond" refer to the
             shape of the points. A medium knurl suits most people, because high-rep work with an
             aggressive knurl tears hands and a passive knurl slips on heavy deadlifts. Every bar on
-            this page except the CAP is described by its maker and reviewers as medium or close to it.
+            this page except the CAP Beast is described by its maker, a retailer or reviewers as medium
+            or close to it.
           </p>
           <p>
             <strong>Knurl marks</strong> are the smooth rings that help you set your grip in the same
@@ -240,12 +250,13 @@ export default {
             91 cm apart; a bar with "dual" marks has both, which is what you want on a multi-purpose
             bar. A <strong>center knurl</strong> — a patch in the middle of the shaft — helps a back
             squat stay put but scrapes the neck in cleans and front squats, so multi-purpose bars
-            usually leave it off. None of the 20 kg bars carded here has one.
+            usually leave it off. The REP Delta and CAP Rebel have one; the other 20 kg bars carded here do not.
           </p>
           <p>
             <strong>Shaft diameter</strong> changes the feel more than people expect. Weightlifting
             bars use 28 mm, power bars 29 mm and many multi-purpose bars split the difference at 28.5 mm.
-            The Synergee, Fringe and Titan bars are 28 mm; the REP Colorado and Rogue Ohio are 28.5 mm.
+            The Synergee Games, Synergee Regional and Titan bars are 28 mm; REP's Colorado and Rogue's
+            Ohio, which are not carded, are 28.5 mm, and power bars such as the CAP Rebel run thicker.
             Women's 15 kg bars use 25 mm, which is easier to hold for smaller hands. If your hands are
             small and you deadlift without straps, a thinner shaft can matter more than any other
             figure.
@@ -254,8 +265,8 @@ export default {
             <strong>Whip</strong> is the way a loaded bar flexes and springs back. Weightlifters use it
             to time the second pull of a clean; powerlifters prefer a stiff bar that stays still on
             the back and in the hands. Whip only becomes noticeable with a lot of weight on the bar,
-            so for most home lifters it is a minor factor. Fringe describes the Wonder Bar as stiff and
-            REP calls the Colorado medium.
+            so for most home lifters it is a minor factor. GymCrafter describes the REP Delta's whip as
+            medium.
           </p>`,
     },
     {
@@ -270,14 +281,17 @@ export default {
               rust readily if the bar is not oiled. The CAP Beast and one version of Synergee's Regional
               bar use them.</li>
             <li><strong>Zinc</strong> (bright or black): a common, decent middle ground. Rogue's Ohio Bar
-              in black zinc and the Fringe Wonder Bar use it. BarBend notes that black zinc fades with use.</li>
-            <li><strong>Chrome</strong> (bright or hard chrome): durable and easy to wipe down. REP offers
-              hard chrome on the Colorado; Titan uses chrome on the Performance Series.</li>
+              in black zinc and the Fringe Wonder Bar, neither sold on Amazon, use it. BarBend notes
+              that black zinc fades with use. The CAP Rebel uses black oxide.</li>
+            <li><strong>Chrome</strong> (bright or hard chrome): durable and easy to wipe down. The REP Delta
+              is bright chrome, the 20 kg Synergee Regional we link is hard chrome, and Titan uses
+              chrome on the Performance Series. GymCrafter warns that bright chrome chips with time.</li>
             <li><strong>Cerakote and other ceramic coatings</strong>: thin ceramic finishes that resist
               rust well and come in colours. REP, Rogue and Synergee all use them on shafts; reviewers
               of the Synergee note that coated sleeves scuff quickly where plates slide on and off.</li>
             <li><strong>Stainless steel</strong>: the most rust resistant and the most expensive. Rogue
-              sells the Ohio Bar in stainless.</li>
+              sells the Ohio Bar in stainless on its own store; none of the Amazon bars here is
+              stainless.</li>
           </ul>
           <p>
             Whatever the finish, the care routine is the same: brush chalk out of the knurl with a
@@ -293,8 +307,8 @@ export default {
       html: `          <p>
             The standard men's bar weighs 20 kg (44.1 lb), is about 7 ft long and has a 28 to 29 mm
             shaft. The women's bar used in weightlifting competition weighs 15 kg (33.1 lb), is
-            shorter and has a 25 mm shaft. REP's 15 kg Colorado is listed at 79.1 inches long with
-            12.4-inch sleeves, against 86.6 inches and 16.1-inch sleeves for the 20 kg version.
+            shorter and has a 25 mm shaft. Synergee's 15 kg Regional is listed at 79.13 inches long with
+            13-inch sleeves, against 86.36 inches and 16.4-inch sleeves for the 20 kg version.
           </p>
           <p>
             Nothing stops anyone using either. A 15 kg bar is worth considering if you have small
@@ -320,8 +334,8 @@ export default {
             <strong>The rack.</strong> The bar rests in J-cups on the front of the uprights, so the
             smooth section between the sleeve collars has to be longer than the outside width of the
             rack at the J-cups, with a little room to spare. On a 7 ft bar that section is about 51.5
-            to 52 inches: Titan lists 51.5 inches between the sleeves on the Performance Series and
-            Rogue lists 51⅞ inches on the Ohio. Full-size power racks and squat stands are built
+            to 52 inches: Titan lists 51.5 inches between the sleeves on the Performance Series, and
+            Iron Company lists the same 51.5 inches for CAP's Rebel. Full-size power racks and squat stands are built
             around 7 ft bars, but short bars, 15 kg bars and some compact or folding racks are where
             mismatches happen. Measure the outside width of your rack across the J-cups and compare it
             with the maker's figure for the distance between the collars before ordering anything
@@ -364,18 +378,19 @@ export default {
       heading: 'Which Barbell Should You Buy?',
       html: `          <p>
             <strong>If you want one bar for everything</strong>, buy a 20 kg multi-purpose bar with
-            dual knurl marks, bushings and a tensile strength around 190,000 PSI: the REP Colorado at
-            about $300, or the Synergee Games bar if you want to spend less or buy on Amazon.
+            dual knurl marks, bushings and a tensile strength around 190,000 PSI: the Synergee Games
+            or its plainer sibling, the Synergee Regional, if you want bearings, or the REP Delta Basic
+            Bar if you prefer bushings and can accept a lower steel rating.
           </p>
           <p>
             <strong>If you mainly squat, bench and deadlift</strong>, a multi-purpose bar still works,
             but a dedicated power bar — 29 mm, stiff, with a center knurl and aggressive knurling —
-            will feel better under heavy loads. Several of these makers sell one; it is a second-bar
-            purchase for most people rather than a first.
+            will feel better under heavy loads. CAP's Rebel is the one carded here; for most people it
+            is a second-bar purchase rather than a first.
           </p>
           <p>
             <strong>If you mainly do Olympic lifts</strong>, choose a bar with needle bearings, a 28 mm
-            shaft and some whip: the bearing version of the Fringe Wonder Bar, or the Synergee Games.
+            shaft and some whip: the Synergee Games or Synergee Regional.
           </p>
           <p>
             <strong>If the bar will mostly be for general fitness</strong> — presses, rows, moderate
@@ -393,35 +408,10 @@ export default {
   ],
   products: [
     {
-      id: 'rep-colorado-bar-20kg',
-      name: 'REP Fitness Colorado Bar (20 kg)',
-      category: 'Multi-purpose 20 kg Olympic barbell',
-      badge: 'Best Overall',
-      amazonUrl: 'https://www.amazon.com/s?k=REP+Fitness+Colorado+Bar+20kg+Olympic+Barbell&tag=sktiger-20',
-      priceRange: 'About $300',
-      specs: '20 kg · 28.5 mm shaft · 190,000 PSI and 1,500 lb static rating (maker) · composite bushings · medium knurl, dual marks, no center knurl · lifetime warranty',
-      pros: [
-        'REP rates it at 190,000 PSI and 1,500 lb, figures both Garage Gym Reviews and BarBend repeat',
-        'Composite bushings give a smooth, steady spin that suits both slow lifts and cleans',
-        'Dual IPF and IWF knurl marks and a medium volcano knurl suit almost every lift',
-        'Six finishes, hard chrome or coloured Cerakote, all at the same price',
-        'Lifetime warranty against defects',
-      ],
-      cons: [
-        'No center knurl, which some squatters prefer',
-        'We could not find it on Amazon US; REP sells it on its own store',
-        'BarBend notes the knurl can feel sharp to some lifters and that the warranty covers defects only',
-      ],
-      bottomLine:
-        'The one bar to buy if you want a single 20 kg bar for every lift and can buy from REP directly.',
-      description:
-        "The Colorado is REP's flagship multi-purpose bar, and it is the pick Garage Gym Reviews and BarBend both name as their best barbell overall. REP lists it at 20 kg and 86.6 inches long, with a 28.5 mm shaft, 16.1-inch loadable sleeves, composite bushings, a medium volcano knurl with both powerlifting and weightlifting marks, no center knurl and a medium whip. REP rates the steel at 190,000 PSI and the bar at 1,500 lb static; both review sites give the same tensile strength, and BarBend the same rating. The shaft comes in hard chrome or in black, blue, green, red or white Cerakote over Duracoat sleeves, and REP charged $299.99 for every version on 19 October 2026 (BarBend's listing, from earlier in the year, gave $319.99). REP's FAQ lists a lifetime warranty, which BarBend points out covers manufacturing defects rather than wear. What it does not have is a center knurl, so lifters who back squat very heavy may prefer a dedicated power bar alongside it. We could not find the Colorado on Amazon US on the day; the button runs an Amazon search, and REP's store is the place to buy it.",
-    },
-    {
       id: 'synergee-games-barbell',
       name: 'Synergee Games Barbell',
       category: 'Multi-purpose bar with needle bearings, 15 or 20 kg',
-      badge: 'Best Value',
+      badge: 'Best Overall',
       amazonUrl: 'https://www.amazon.com/s?k=Synergee+Games+20kg+Barbell&tag=sktiger-20',
       priceRange: '$150–$240',
       specs: '15 or 20 kg · 28 mm shaft (20 kg), 25 mm (15 kg) · 190,000 PSI and 1,500 lb (maker) · needle bearings · 1.2 mm diamond knurl, dual marks, no center knurl',
@@ -442,76 +432,100 @@ export default {
         "Synergee is best known as an Amazon brand, and its Games bar is the multi-purpose bar both review sites recommend for buyers who want good specifications for less. Synergee lists the 20 kg bar with a 28 mm shaft, 16.4-inch loadable sleeves, ten sets of needle bearings, a 1.2 mm diamond knurl with dual marks, a 190,000 PSI tensile strength and a 1,500 lb capacity; BarBend gives the same strength, rating, diameter and bearings. The 15 kg version has a 25 mm shaft and 13-inch sleeves. Synergee's store showed $149.95 for the 15 kg bar and $169.95 for the 20 kg bar on 19 October 2026, while the review sites quoted $179.95 and $239.95 earlier in the year, so prices clearly move. Two details did not line up: Synergee lists the 20 kg bar at 86.36 inches and the Amazon listing at 86.75 inches, and Synergee now calls the finish a ceramic coating where older listings say Cerakote. Reviews list a lifetime warranty; Synergee's own description did not state the term when we checked, so it is not on the card. The bearings are the main thing to weigh: they spin fast and freely, which weightlifters like, and Garage Gym Reviews notes they can feel less controlled under very heavy loads.",
     },
     {
-      id: 'rogue-ohio-bar',
-      name: 'Rogue Ohio Bar',
-      category: 'Multi-purpose 20 kg bar, made in the USA',
-      badge: 'Made in USA',
-      amazonUrl: 'https://www.amazon.com/s?k=Olympic+Barbell+20kg+190000+PSI&tag=sktiger-20',
-      priceRange: '$305–$365',
-      specs: '20 kg · 28.5 mm shaft · 190,000 PSI (maker) · bronze bushings · dual marks, no center knurl · 16.4 in. loadable sleeves · lifetime warranty against defects and bending',
+      id: 'rep-delta-basic-bar',
+      name: 'REP Fitness Delta Basic Bar',
+      category: '20 kg mixed-use bar with brass bushings',
+      badge: 'Best Bushing Bar on Amazon',
+      amazonUrl: 'https://www.amazon.com/dp/B0CJH2TXR3?tag=sktiger-20',
+      priceRange: '$180–$200',
+      specs: '20 kg · 86.6 in. long · 135,000 PSI and 700 lb static rating (maker) · brass bushings · medium volcano knurl, dual marks, center knurl · bright chrome',
       pros: [
-        'Made in the USA, and one of the most widely used multi-purpose bars in the world',
-        'More finish choices than any other bar here, including Cerakote and stainless steel',
-        'Rogue\'s warranty covers bending as well as defects',
-        'Bronze bushings give a consistent spin with little maintenance',
+        'Brass bushings give the slow, steady spin that suits squats, presses and deadlifts',
+        'Dual IPF and IWF knurl marks plus a center knurl for heavy back squats',
+        'REP and GymCrafter agree on the 700 lb rating, the bushings and the knurl',
+        'Sold on Amazon by a home gym brand with its own US store',
       ],
       cons: [
-        'Sold only through Rogue\'s own store, not on Amazon',
-        'Costs more than the REP Colorado for the same headline figures',
-        'Garage Gym Reviews notes the bushings spin more slowly than an Olympic lifter may want',
+        'At 135,000 PSI its steel is rated well below the 190,000 PSI bars on this page',
+        'A 700 lb rating is low for heavy lifters',
+        'GymCrafter warns that bright chrome chips with time and that REP shipping tubes often arrive damaged',
       ],
       bottomLine:
-        'Buy it if made-in-USA steel or a stainless or Cerakote finish matters to you. Otherwise the Colorado does the same job for less.',
+        'The bushing bar to buy on Amazon for general strength training. Choose a 190,000 PSI bar if you lift heavy or drop the bar often.',
       description:
-        "The Ohio Bar is the bar many home gyms are built around, and Garage Gym Reviews names it its best Olympic barbell for home gyms. Rogue lists the black zinc version at 20 kg and 86.75 inches overall, with a 28.5 mm shaft, 16.40-inch loadable sleeves, precision-machined bronze bushings, a medium multi-purpose knurl with dual marks, no center knurl and a tensile strength of 190,000 PSI. Garage Gym Reviews gives the same strength, diameter and bushings and calls the knurl fairly passive. Rogue's lifetime warranty covers construction defects and bending, which is more than most. On 19 October 2026 Rogue charged $305 for the black zinc bar and $365 for the Cerakote version; it also sells stainless steel, E-coat and black oxide versions, and Garage Gym Reviews suggests the stainless or Cerakote finishes if your gym is damp. The case against it is price, not quality: the REP Colorado has the same tensile strength, a similar shaft and a lifetime warranty for less. Rogue does not sell through Amazon, so the button runs an Amazon search for comparable bars rather than this one; buy the Ohio Bar from Rogue's store.",
+        "REP's Delta Basic Bar is REP's basic steel bar and, unlike its Colorado bars, it is sold on Amazon. REP describes it as a 20 kg mixed-use bar with slower-rotating brass bushing sleeves, a medium-depth knurl, a center knurl, both IPF and IWF knurl marks and a bright chrome finish on shaft and sleeves, rated to 700 lb. GymCrafter's review gives the same weight, rating, bushings, knurl and finish, plus an 86.6-inch length, 16.3-inch loadable sleeves and a 135,000 PSI tensile strength, the same tensile figure REP gave when we first checked this bar in October; GymCrafter also gives a 29 mm shaft, which we did not find on REP's page, so it is not on the card. GymCrafter calls it the best sub-$200 bar it has tested. The Amazon listing showed $199.99 on 9 November 2026, against $179.99 in GymCrafter's review. Its weaknesses are the steel and the finish: 135,000 PSI and 700 lb leave less margin than the 190,000 PSI bars here, and GymCrafter warns that bright chrome chips over time. For presses, rows, squats and moderate deadlifts it is a sensible bar; for heavy pulls with regular drops, spend on more steel.",
     },
     {
-      id: 'fringe-sport-wonder-bar',
-      name: 'Fringe Sport Wonder Bar V2 (20 kg)',
-      category: 'Multi-purpose bar with bushings or bearings',
-      badge: 'Bushing or Bearing',
-      amazonUrl: 'https://www.amazon.com/s?k=Fringe+Sport+Wonder+Bar+20kg+Olympic+Barbell&tag=sktiger-20',
-      priceRange: '$299–$319',
-      specs: '20 kg · 28 mm shaft · bronze bushings or needle bearings · 1,600 lb rating (maker) · stiff whip · dual marks, no center knurl · black zinc · lifetime warranty',
+      id: 'synergee-regional-20kg',
+      name: 'Synergee Regional Olympic 20kg Barbell',
+      category: 'Lower-priced 20 kg bar with needle bearings',
+      badge: '190,000 PSI for Less',
+      amazonUrl: 'https://www.amazon.com/dp/B071S8W4WX?tag=sktiger-20',
+      priceRange: '$150–$160',
+      specs: '20 kg · 28 mm shaft · 86.36 in. long · 16.4 in. loadable sleeves · 190,000 PSI and 1,500 lb (maker) · 10 needle bearings · 1.2 mm diamond knurl, dual marks, no center knurl',
       pros: [
-        'The same bar with either bronze bushings or needle bearings, so you choose the spin',
-        'Fringe rates it at 1,600 lb, a figure BarBend repeats',
-        'Fringe is unusual in publishing a yield strength as well as a tensile strength',
-        'Lifetime warranty against manufacturer defects',
+        'The same 190,000 PSI and 1,500 lb ratings as the Games bar for a little less',
+        'Hard chrome or black phosphate, rather than the Games bar\'s coloured coating',
+        'Needle bearings spin fast for cleans, snatches and conditioning work',
+        'Also sold as a 15 kg bar with a 25 mm shaft',
       ],
       cons: [
-        'Fringe\'s own page gives two different tensile strengths, so we left the figure off',
-        'BarBend says the sleeves scar easily and the black zinc fades over time',
-        'Not found on Amazon US; sold on Fringe Sport\'s store',
+        'Garage Gym Reviews lists only a 1-year warranty',
+        'Fast bearings can feel less controlled than bushings under heavy, slow lifts',
+        'No center knurl',
       ],
       bottomLine:
-        'The bar to choose if you want to pick bushings or bearings without changing anything else. BarBend names it its best bar for CrossFit.',
+        'A 190,000 PSI bar for about $160 on Amazon. Pick hard chrome if the bar will live in a garage.',
       description:
-        "Fringe Sport's Wonder Bar V2 is a multi-purpose bar sold in two versions that differ only in the sleeves: bronze oil-impregnated bushings for a moderate spin, or four needle-bearing cartridges per sleeve for a fast one. Fringe lists it at 20 kg and 86 inches, with a 28 mm shaft, 16-inch sleeves, dual knurl marks with no center knurl, a stiff whip, a black zinc finish, a 1,600 lb weight capacity and a lifetime warranty against manufacturer defects. BarBend gives the same capacity, diameter and warranty and calls it its best barbell for CrossFit; Garage Gym Reviews gives it the same title in its own guide. The tensile strength is the problem figure. Fringe's specification list says 205,000 PSI, which both review sites repeat, but Fringe's own comparison table on the same page says 202,000 PSI, so we have not put either number on the card. Either way it sits at the top of the range on this page, and Fringe also lists a 160,000 PSI yield strength. On 19 October 2026 the bushing bar cost $299 and the bearing bar $319. BarBend's criticisms are cosmetic: sleeves that scar quickly and a black zinc finish that fades. A 15 kg version is sold too.",
+        "The Regional is Synergee's step down from the Games bar, with the same headline ratings and a plainer finish. Living.Fit's listing of the 20 kg bar gives an 86.36-inch length, a 28 mm shaft, 16.40-inch loadable sleeves, a 190,000 PSI tensile strength, a 1,500 lb capacity, ten needle bearings (five per sleeve), a 1.2 mm diamond knurl with dual marks and no center knurl, in black phosphate or hard chrome; the Amazon listing gives the same 20 kg and 1,500 lb rating, and Garage Gym Reviews and other review listings give the same tensile strength and bearings. Garage Gym Reviews also notes a price under $200, a short one-year warranty and shaft coatings that are not the most durable. The hard chrome version showed $159.95 on Amazon on 9 November 2026, and Living.Fit listed the bar at $149.95. Because it uses bearings, it suits Olympic lifting and mixed training more than very heavy squats and deadlifts, where a bushing bar feels steadier. Black phosphate gives a good grip but rusts more readily than chrome in a damp garage, so choose the finish with your room in mind.",
     },
     {
-      id: 'rep-colorado-bar-15kg',
-      name: 'REP Fitness Colorado Bar (15 kg)',
-      category: '15 kg multi-purpose bar with a 25 mm shaft',
+      id: 'cap-rebel-power-bar',
+      name: 'CAP Barbell "The Rebel" 7 ft Olympic Power Bar',
+      category: '20 kg power bar with a center knurl',
+      badge: 'Power Bar on Amazon',
+      amazonUrl: 'https://www.amazon.com/dp/B006R4EOWI?tag=sktiger-20',
+      priceRange: 'About $230',
+      specs: '20 kg · 7 ft · 2,000 lb capacity (maker) · bushings · medium diamond knurl with center knurl · black oxide',
+      pros: [
+        'A 2,000 lb rating from CAP, the highest of any bar on this page',
+        'A center knurl that helps a heavy back squat stay put',
+        'Bushing sleeves suit slow, heavy squats, presses and deadlifts',
+        'Iron Company lists a 5-year warranty against defects',
+      ],
+      cons: [
+        'A power bar: the center knurl scrapes in cleans and front squats',
+        'Black oxide rusts readily unless the bar is brushed and oiled',
+        'The 190,000 PSI and 30 mm figures come from a retailer, not CAP\'s own page, so they are not on the card',
+      ],
+      bottomLine:
+        'The bar to buy on Amazon if you mainly squat, bench and deadlift and want a center knurl. Not for Olympic lifting.',
+      description:
+        "CAP's Rebel, model OB-86PBCK2000, is a dedicated power bar rather than a multi-purpose one, and it fills the gap this page otherwise leaves for lifters who mainly squat, bench and deadlift. CAP describes it as its 7 ft heavy-duty power bar with a maximum capacity of 2,000 lb, and the Amazon listing gives the same 2,000 lb figure. Iron Company, a CAP retailer, lists it at 20 kg and 86 inches, with 51.5 inches between the collars, a medium diamond knurl with a center knurl, copper alloy bushings, ribbed sleeves and a black oxide finish on shaft and sleeves, and gives a 5-year warranty against defects that excludes bends from storing the bar loaded. Iron Company also lists a 190,000 PSI tensile strength and a 30 mm shaft; we did not find either on CAP's own page, so neither is on the card. The Amazon listing showed $229.99 on 9 November 2026. The trade-offs come with the type: the center knurl and thicker shaft that help a heavy squat get in the way of cleans and snatches, and black oxide needs brushing and oiling in a damp garage.",
+    },
+    {
+      id: 'synergee-regional-15kg',
+      name: 'Synergee Regional Olympic 15kg Women’s Barbell',
+      category: '15 kg bar with a 25 mm shaft',
       badge: 'Best 15 kg Bar',
-      amazonUrl: 'https://www.amazon.com/s?k=REP+Fitness+Colorado+Bar+15kg&tag=sktiger-20',
-      priceRange: 'About $270',
-      specs: '15 kg · 25 mm shaft · 79.1 in. long · 12.4 in. loadable sleeves · 190,000 PSI (maker) · composite bushings · dual marks · lifetime warranty',
+      amazonUrl: 'https://www.amazon.com/dp/B072LNZR5W?tag=sktiger-20',
+      priceRange: 'About $150',
+      specs: '15 kg · 25 mm shaft · 79.13 in. long · 13 in. loadable sleeves · 190,000 PSI and 1,500 lb (maker) · needle bearings · dual marks, no center knurl',
       pros: [
         'A 25 mm shaft that is easier to grip for smaller hands',
-        'The same 190,000 PSI rating and composite bushings as the 20 kg Colorado',
-        'At 79.1 inches it is shorter than a 7 ft bar, which helps in tight rooms',
-        'Lifetime warranty',
+        'The same 190,000 PSI and 1,500 lb ratings as the 20 kg Regional',
+        'At 79.13 inches it is shorter than a 7 ft bar, which helps in tight rooms',
+        'Sold on Amazon',
       ],
       cons: [
-        'Shorter 12.4-inch sleeves hold fewer bumper plates',
-        'Fewer colour choices than the 20 kg bar',
-        'Not found on Amazon US',
+        '13-inch sleeves hold fewer bumper plates than a 20 kg bar\'s 16 inches',
+        'The Amazon listing is the black phosphate finish, which needs oiling to stay rust-free',
+        'Garage Gym Reviews lists only a 1-year warranty',
       ],
       bottomLine:
-        'The 15 kg bar to buy for a thinner grip, a lighter start or a second bar for the household.',
+        'The 15 kg bar to buy on Amazon for a thinner grip, a lighter start or a second bar for the household.',
       description:
-        "REP's 15 kg Colorado is the women's-standard version of the bar above, and Garage Gym Reviews names it its best multi-purpose bar for women. REP lists it at 15 kg (33.1 lb) and 79.1 inches long, with a 25 mm shaft, 12.4-inch loadable sleeves, composite bushings, a medium volcano knurl with dual marks, no center knurl, a medium whip and a 190,000 PSI tensile strength; Garage Gym Reviews gives the same shaft, strength and bushings. REP rates it at the same 1,500 lb static load as the 20 kg bar and lists a lifetime warranty. It comes in hard chrome or in pink or black Cerakote with Duracoat sleeves, and REP charged $269.99 for all three on 19 October 2026. Garage Gym Reviews' criticisms are the limited colours and, at the time of its review, few customer reviews. The real limit is the sleeves: 12.4 inches is plenty for most training but holds fewer thick bumper plates than a 20 kg bar's 16 inches. Before ordering, check that the bar's shaft will span your rack's J-cups, as explained in the rack-fit section above. Fringe Sport's 15 kg Wonder Bar, listed at 160,000 PSI and $239 to $279, is the cheaper alternative.",
+        "The 15 kg Regional is the women's-standard version of the Synergee Regional bar above. Living.Fit lists it at 79.13 inches long, with a 25 mm shaft, 13-inch loadable sleeves, a 190,000 PSI tensile strength, a 1,500 lb capacity, ten needle bearings, a 1.2 mm diamond knurl with dual marks and no center knurl; the Amazon listing gives the same 15 kg and 1,500 lb rating, and review listings give the same 25 mm shaft, length and sleeve length. The Amazon listing we link is the black phosphate version, which showed $149.95 on 9 November 2026, the same price Living.Fit listed. The limit is the sleeves: 13 inches is plenty for most training but holds fewer thick bumper plates than a 20 kg bar. Before ordering, check that the bar's shaft will span your rack's J-cups, as explained in the rack-fit section above. If you want a coloured coating instead, the Synergee Games bar above is also sold as a 15 kg bar.",
     },
     {
       id: 'titan-performance-series-olympic-barbell',
@@ -565,7 +579,7 @@ export default {
   faqs: [
     {
       q: 'What is the best barbell for a home gym?',
-      a: `For most people, a 20 kg multi-purpose bar with dual knurl marks, bushing sleeves and a tensile strength around 190,000 PSI, such as the REP Colorado Bar at about $300. The Synergee Games bar has the same headline ratings for less and is sold on Amazon; the Rogue Ohio Bar is the made-in-USA alternative.`,
+      a: `For most people, a 20 kg multi-purpose bar with dual knurl marks, bushing sleeves and a tensile strength around 190,000 PSI, such as the Synergee Games bar, which is rated at 190,000 PSI and 1,500 lb and sold on Amazon. If you prefer bushings, REP's Delta Basic Bar is the bushing bar on Amazon, with a lower 135,000 PSI rating.`,
     },
     {
       q: 'What is a good tensile strength for a barbell?',
@@ -631,12 +645,12 @@ export default {
     },
   ],
   bottomLine: [
-    `<strong class="text-white">For most home gyms, buy the REP Colorado Bar</strong>: 190,000 PSI,
-            composite bushings, dual marks and a lifetime warranty for about $300. If you want to spend
-            less or buy on Amazon, the Synergee Games bar has the same headline ratings with faster
-            bearings; if you want made-in-USA steel or a stainless finish, the Rogue Ohio Bar is the
-            classic. The Titan Performance Series is the sensible budget bar, and CAP's Beast is for
-            light training only.`,
+    `<strong class="text-white">For most home gyms, buy the Synergee Games bar</strong>: 190,000 PSI,
+            a 1,500 lb rating, needle bearings and a choice of 15 or 20 kg for under $200. The
+            Synergee Regional has the same ratings for a little less, the REP Delta Basic Bar is the
+            bushing bar on Amazon, and CAP's Rebel is the power bar for heavy squats and deadlifts. The
+            Titan Performance Series is the sensible budget bar, and CAP's Beast is for light training
+            only.`,
     `Whatever you buy, check that it fits your rack and your room, keep it off the floor and
             out of the damp, and drop it only with bumper plates on a proper surface. Then choose the
             plates to go with it —

@@ -27,7 +27,9 @@ export default {
           manuals. A figure appears in a product's specification line only where those sources
           agree; where they conflicted — on motor type, unit weights, dimensions after a model
           refresh and some warranty terms — we left the figure out and say so in the text. None of
-          these are our own measurements. Prices are those we saw on 16 October 2026; the cardio
+          these are our own measurements. The exception to those dates is the stepper: the Bells of
+          Steel Blitz Stepper’s figures are those checked on 19 October 2026 for our vertical climber
+          guide, against Bells of Steel and Garage Gym Reviews. Prices are those we saw on 16 October 2026; the cardio
           market runs on constant sales, so confirm the price, the seller and the specification
           against the exact listing before you order. We earn a commission if you buy through the
           Amazon links on this page; it does not change which products we list or what we say about
@@ -68,7 +70,7 @@ export default {
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Concept2 RowErg</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rowing machine</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The same rower gyms use; splits in two for storage</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sole E35</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Elliptical</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">25 lb flywheel and power incline for a gym-like stride</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Schwinn AirDyne AD7</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Air bike</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Belt drive, 350 lb rating, no outlet needed</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">BowFlex Max Trainer M6</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Stepper</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Stair-climbing motion with moving arms in a small footprint</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bells of Steel Blitz Stepper</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Stepper</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15 magnetic levels, a 330 lb rating and a limited lifetime frame warranty</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UREVO SpaceWalk 3S</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walking pad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Powered 9% incline on a 42.5-inch belt for about $250</td></tr>
             </tbody>
           </table></div>
@@ -114,8 +116,9 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What we left out, and why</h3>
           <p>
             <strong>BowFlex Max Trainer M5 and M7.</strong> We have reviewed both, but on 16 October
-            2026 BowFlex's store listed only the Max Trainer M6 and the Max Total 16. A machine its
-            maker no longer sells new is not a pick; if you find an M7 secondhand, our
+            2026 BowFlex's store listed only the Max Trainer M6 and the Max Total 16, and BowFlex sells
+            those direct rather than on Amazon, so our stepper card is the Bells of Steel Blitz Stepper,
+            which Amazon does sell. A machine its maker no longer sells new is not a pick; if you find an M7 secondhand, our
             <a href="/bowflex-max-trainer-m7/" class="text-[#0F62FE] font-medium">Max Trainer M7 review</a>
             still applies.
           </p>
@@ -214,7 +217,7 @@ export default {
           <p>
             <strong>Revolving-stair climbers.</strong> The machines with a moving staircase are
             tall, very heavy and expensive, and few homes have the ceiling height or floor for one.
-            The home answer is a stepper-type machine such as the Max Trainer M6, which gives a
+            The home answer is a stepper-type machine such as the Blitz Stepper or BowFlex’s Max Trainer, which gives a
             similar climbing effort in a fraction of the space; our
             <a href="/stairmaster-vs-treadmill/" class="text-[#0F62FE] font-medium">StairMaster vs treadmill</a>
             comparison explains the difference in effort. <strong>Arc trainers and other
@@ -300,15 +303,15 @@ export default {
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$899 (T6)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sole F63 at $1,099.99; BowFlex T9 at $1,399</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rowing machine</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$990 (RowErg, standard legs)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,155 with tall legs</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Air bike</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$999 (AirDyne AD7)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">List price $1,299</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Stepper</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$999 (Max Trainer M6)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Max Total 16 at $1,999</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Stepper</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,299.99 (Blitz Stepper)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">BowFlex Max Trainer M6 at $999 direct; Max Total 16 at $1,999</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Elliptical</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,699.99 (E35)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sole E25 at $1,199.99; Schwinn 411 at $699</td></tr>
             </tbody>
           </table></div>
           <p>
             Three things stand out. First, a good walking pad costs a third of a good bike, but it
-            only does one job. Second, the five mid-priced types — bike, treadmill, rower, air bike
-            and stepper — all cluster between about $800 and $1,000 on sale, so price should not
-            decide between them; the movement should. Third, ellipticals are the most expensive type
+            only does one job. Second, the four mid-priced types — bike, treadmill, rower and air bike
+            — all cluster between about $800 and $1,000 on sale, with steppers from about $1,000 to
+            $1,300, so price should not decide between them; the movement should. Third, ellipticals are the most expensive type
             to buy well, because a smooth stride needs a heavy flywheel and a long, rigid frame.
           </p>
           <p>
@@ -327,7 +330,7 @@ export default {
             subscription. That was deliberate.
           </p>
           <p>
-            <strong>Bring-your-own-screen machines</strong> — the T6, IC4 and Max Trainer M6 —
+            <strong>Bring-your-own-screen machines</strong> — the T6 and IC4 —
             have a basic console and a holder for your phone or tablet. They connect over Bluetooth
             to apps you choose: BowFlex lists JRNY, Peloton and Zwift for the T6, and Schwinn lists
             JRNY, Peloton, Zwift and others for the IC4. Each of those apps needs its own
@@ -585,28 +588,27 @@ export default {
         'An air bike is the simplest cardio machine there is: a fan for resistance, moving handles for your arms, and resistance that rises with your effort. Schwinn’s page and an independent hands-on review agree on a 350 lb maximum user weight, a 53 by 26.5-inch footprint, a weight of 113 lb, a belt-driven fan and a 10-year frame warranty. Schwinn now lists two years on mechanical parts and electronics and six months of labour; other sources give shorter parts terms, so check before buying. The console runs on batteries, so it can go anywhere. Schwinn was selling it for $999 against a $1,299 list price. The reviewer found the belt drive smooth, quiet and low-maintenance but harder to push than a chain, and another notes the display is not backlit. It is loud by nature. For short, hard intervals in a garage or basement, it is the pick.',
     },
     {
-      id: 'bowflex-max-trainer-m6',
-      name: 'BowFlex Max Trainer M6',
+      id: 'bells-of-steel-blitz-stepper',
+      name: 'Bells of Steel Blitz Stepper',
       category: 'Best Stepper for Home',
       badge: 'Best Stepper',
-      amazonUrl: 'https://www.amazon.com/s?k=BowFlex+Max+Trainer+M6&tag=sktiger-20',
-      priceRange: '$999–$1,299',
-      specs: 'Stepper-elliptical motion with moving arms · 300 lb max user · backlit LCD, no touchscreen · JRNY compatible · 2-year frame and parts warranty',
+      priceRange: '$1,299.99',
+      specs: '15-level magnetic resistance · 330 lb max user · 58 in. L × 32 in. W × 61 in. H · 2-yr moving parts, limited lifetime frame warranty',
       pros: [
-        'A stair-climbing effort with moving arms in a much smaller footprint than a gym stair machine',
-        'Low impact: your feet stay on the pedals',
-        'Works with the JRNY app, or on its own console',
-        'Suited to short interval sessions',
+        'A stair-climbing effort in a much smaller footprint than a gym stair machine',
+        'Fifteen magnetic levels for repeatable interval work',
+        'A 330 lb user limit on a heavy, freestanding frame',
+        'Limited lifetime frame warranty, against two years on BowFlex’s Max Trainer M6',
       ],
       cons: [
-        'Short warranty: 2 years on the frame and parts and 90 days of labour, agreed by BowFlex and an independent source',
-        'No touchscreen and a basic display',
-        'At 300 lb, the lowest maximum user weight among the full-size machines here',
+        'Garage Gym Reviews says it needs at least a 96-inch ceiling for an average user',
+        'Bells of Steel and Garage Gym Reviews give different unit weights, so we have not printed one',
+        'A basic screen with no classes, and it ships unassembled',
       ],
       bottomLine:
-        'For anyone who misses the stair climber at the gym and wants that effort at home without a machine the size of a staircase.',
+        'For anyone who misses the stair climber at the gym and wants that effort at home without a subscription. Measure your ceiling first.',
       description:
-        'Gym stair climbers rarely fit in a house. The Max Trainer is BowFlex’s answer: a compact machine that combines a stepper’s climbing motion with an elliptical’s moving handles. On 16 October 2026 the M6 was the only conventional Max Trainer on BowFlex’s store, at $999 against a $1,299 list price; the M5 and M7 we reviewed earlier were no longer listed. BowFlex and an independent source agree on a 300 lb maximum user weight, a backlit LCD console without a touchscreen, JRNY compatibility, and a warranty of two years on the frame and mechanical parts with 90 days of labour. That warranty is the weak point: most machines on this page cover the frame for ten years or life. BowFlex lists resistance levels and dimensions we could not confirm independently, so they are not on the card. BowFlex gives a minimum ceiling height in its specifications; measure before you order, as a stepper lifts you as you climb.',
+        'Gym stair climbers rarely fit in a house. BowFlex’s Max Trainer M6 is the best-known home answer, but BowFlex sells it direct rather than on Amazon, so our stepper card is the closest machine Amazon sells: the Bells of Steel Blitz Stepper. You stand on large textured pedals that travel vertically while holding padded handles, with resistance from a magnetic flywheel set through 15 levels on a simple console. Bells of Steel lists it at 58 inches long, 32 inches wide and 61 inches tall, with a 330 lb maximum weight capacity and a warranty of two years on moving parts and a limited lifetime on the frame; Garage Gym Reviews gives the same dimensions, capacity and warranty. The two disagree on weight — 188.5 lb from Bells of Steel, 176 lb from Garage Gym Reviews — so we have left it off. Garage Gym Reviews warned that it needs at least a 96-inch ceiling for the average user, ships unassembled and has no entertainment screen, though there is a ledge for a tablet. It was $1,299.99 on Bells of Steel’s store on 19 October 2026.',
     },
     {
       id: 'urevo-spacewalk-3s',
@@ -712,7 +714,7 @@ export default {
             homes the <strong class="text-white">BowFlex T6</strong> is the treadmill to buy, the
             <strong class="text-white">Schwinn IC4</strong> is the quiet choice, and the
             <strong class="text-white">Concept2 RowErg</strong> gives the most complete workout for
-            its stored size. The E35, AD7, Max Trainer M6 and SpaceWalk 3S each win their own
+            its stored size. The E35, AD7, Blitz Stepper and SpaceWalk 3S each win their own
             category, for the buyers who want that kind of cardio.`,
     `If you have not settled on a type yet, do that before comparing prices: the
             <a href="/home-cardio-equipment-guide/" class="text-[#5AA9FF] font-bold no-underline">home cardio equipment guide</a>

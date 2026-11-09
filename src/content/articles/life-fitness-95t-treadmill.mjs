@@ -36,9 +36,10 @@ export default {
           the 95Ti, and GymStore's remanufactured 95Ti listing, including their prices, availability, specification
           tables and warranty options. We also used other remanufacturer and retailer listings seen in search
           results (Keystone Fitness, SGroup Fitness, Fitness Superstore UK, Life Fitness Australia), our existing
-          Life Fitness reviews, and the US Consumer Product Safety Commission's recall database. Figures on the
-          product cards are those on which Life Fitness and a seller, or two sellers, agree; conflicts are set out
-          in the text and kept off the cards. Remanufactured prices are individual sellers' asking prices, change
+          Life Fitness reviews, and the US Consumer Product Safety Commission's recall database. Figures we give for
+          the 95T and 95Ti are those on which Life Fitness and a seller, or two sellers, agree; conflicts are set
+          out in the text. Neither machine is sold on Amazon, so the product cards show the closest new machines
+          sold there, with the figures checked for our long-distance and non-folding treadmill guides. Remanufactured prices are individual sellers' asking prices, change
           constantly and exclude freight. We have not tested any 95T or 95Ti. As an Amazon Associate we earn from
           qualifying purchases; that does not change what we say.`,
   lead: `If you search for a Life Fitness 95T, you will find dozens of listings — "95T Inspire", "95T Discover SE
@@ -50,52 +51,50 @@ export default {
           matter when you buy a ten-year-old gym machine for a house.`,
   products: [
     {
-      id: 'life-fitness-95t',
-      name: 'Life Fitness 95T Elevation Series Treadmill',
-      category: 'Discontinued Club Treadmill, Sold Remanufactured',
-      badge: 'Best Used Club Treadmill',
-      priceRange: '$4,099-$4,999 remanufactured at Fitness Superstore on 5 Nov 2026',
-      amazonUrl: 'https://www.amazon.com/s?k=Life+Fitness+95T+Treadmill&tag=sktiger-20',
-      specs: '22 x 60 in. running surface · 4.0 HP AC (8.0 HP peak) · 0.5-14 mph · 0-15% incline · 400 lb max user · dedicated 120 V, 20 A circuit',
+      id: 'sole-tt8',
+      name: 'Sole TT8',
+      category: 'Closest on Amazon to the 95T: a Light-Commercial Treadmill',
+      badge: 'Closest on Amazon',
+      priceRange: 'About $2,500 (Amazon, 6 Nov 2026)',
+      specs: '4.0 HP · 22 x 60 in. · 0.5–12 mph · -6% to 15% incline · 400 lb capacity · non-folding · 15.6 in. touchscreen',
       pros: [
-        'A full club drive: 4.0 HP continuous AC motor with MagnaDrive controller',
-        'A 22 by 60-inch deck and 400 lb rating, larger than most home treadmills',
-        'Top speed of 14 mph, above the 12 mph of Life Fitness’s current home models',
-        'Plentiful on the remanufactured market with several console choices',
+        'The same 22 by 60-inch deck and 400 lb rating as the 95T, per SOLE',
+        'A non-folding frame built for heavy, repeated use',
+        'Decline to -6%, which the 95T does not have',
+        'New, with a manufacturer’s warranty, for well under a remanufactured 95T’s price',
       ],
       cons: [
-        'Discontinued; no manufacturer’s warranty for a second-hand buyer',
-        'Needs a dedicated 20-amp circuit',
-        'Weighs over 440 lb; sellers give 442 or 444 lb depending on console',
+        'A 12 mph top speed against the 95T’s 14',
+        'A DC home drive, not the 95T’s club AC motor',
+        'Published warranty terms differ between sources; check the current terms before buying',
       ],
       bottomLine:
-        'The best way to get a real club treadmill at home for about $4,000, if you have a 20-amp circuit and buy from a remanufacturer with a written warranty.',
+        'The nearest new machine on Amazon to a 95T’s deck and rating, for less than a remanufactured one; it gives up the club drive and 2 mph of top speed.',
       description:
-        'The 95T is Life Fitness’s Elevation Series treadmill, sold under several console names. Life Fitness’s US catalogue page, which marks it discontinued, lists a 4 HP (8.0 HP peak) AC motor with a MagnaDrive controller, a 22 by 60-inch running surface, 0.5 to 14 mph, 15% incline, a 400 lb maximum user and a dedicated 120 V, 20 A circuit. Fitness Superstore’s remanufactured listings agree on every one of those figures and add the DX3 belt and deck system, FlexDeck shock absorption and a footprint of 80 by 37 inches. Machine weight is 444 lb on its SE3 listing and 442 lb on its Discover SI listing. On 5 November 2026 Fitness Superstore listed remanufactured 95Ts at $4,099 (Achieve and Inspire consoles), $4,199 (Engage and Discover SI) and $4,999 (Discover SE3), each with one year of parts and on-site labour and extensions to five years.',
+        'The 95T is sold remanufactured by specialist dealers, not on Amazon. The closest new treadmill we found there is SOLE’s TT8, its light-commercial model. The Amazon listing gives a 4.0 HP motor, a 22 by 60-inch running surface, a 0.5 to 12 mph speed range, an incline and decline range of -6 to 15 and a 15.6-inch touch screen, with programs including Hill, Fat Burn, HIIT, 10K and heart-rate control, and SOLE’s own site adds a non-folding frame and a 400 lb user capacity. That matches the 95T’s deck and rating on paper, and adds decline. What it does not match is the club drive: SOLE does not describe it as an AC motor, and it stops at 12 mph. It weighs more than 300 lb, so place it once. Published warranty terms differ: one SOLE comparison page gives lifetime frame and motor cover with two years on parts and one on labour, while other sources describe longer terms, so confirm them with SOLE. Amazon showed it at about $2,500 on 6 November 2026.',
     },
     {
-      id: 'life-fitness-95ti',
-      name: 'Life Fitness 95Ti Treadmill',
-      category: 'Older Club Treadmill, Sold Remanufactured',
-      badge: 'Lowest Price',
-      priceRange: '$2,599-$3,799 remanufactured on 5 Nov 2026',
-      amazonUrl: 'https://www.amazon.com/s?k=Life+Fitness+95Ti+Treadmill&tag=sktiger-20',
-      specs: '20 x 60 in. belt · 4.0 HP AC · 0-15% incline · 400 lb max user · 431 lb · dedicated 20 A circuit',
+      id: 'life-fitness-t3',
+      name: 'Life Fitness T3',
+      category: 'Amazon Alternative to the 95Ti: Life Fitness’s Compact Home Treadmill',
+      badge: 'Amazon Alternative',
+      priceRange: '$3,499–$4,119',
+      specs: '20 x 60 in. deck · 0.5–12 mph · 0–15% incline · 350 lb capacity · non-folding',
       pros: [
-        'The cheapest way into a Life Fitness club treadmill, from $2,599 remanufactured',
-        'The same 4 HP AC drive class and 400 lb rating as the 95T',
-        'A simple LED console with little to go wrong',
-        'Remanufacturers offer warranty extensions up to five years',
+        'A new Life Fitness treadmill with the same 20 by 60-inch deck as the 95Ti',
+        'Lifetime frame, ten years on the motor and five on parts',
+        'At 243 lb, far easier to move and place than a 431 lb 95Ti',
+        'Runs on a household outlet rather than a dedicated 20-amp circuit',
       ],
       cons: [
-        'An older generation than the 95T, with a narrower 20-inch belt',
-        'Sellers disagree on its top speed: 12 mph or 14 mph',
-        'Older electronics; parts for some boards may come from third parties',
+        'A 350 lb capacity, below the 95Ti’s 400 lb',
+        'A 12 mph top speed and a home drive rather than a club AC motor',
+        'More than a remanufactured 95Ti at its lowest price, once the console is chosen',
       ],
       bottomLine:
-        'A sound budget club treadmill if the console does not matter to you and the seller confirms the speed range on the unit you are buying.',
+        'For a buyer who wants a Life Fitness name and a 60-inch deck new, with a long motor warranty, rather than a remanufactured club machine.',
       description:
-        'The 95Ti is the Life Fitness club treadmill that came before the Elevation Series 95T, and Fitness Superstore says it was nicknamed the "Silver Bullet". Fitness Superstore and GymStore agree on a 4.0 HP AC motor (GymStore adds the MagnaDrive controller), a 20 by 60-inch belt, 0 to 15% incline, a 400 lb maximum user, a 431 lb machine weight and a dedicated 20-amp circuit. They disagree on speed: Fitness Superstore lists 0.5 to 12 mph and GymStore 0.5 to 14 mph, which other listings in search results also give. Footprint is 83 by 37 inches with a height of 63.5 or 64 inches. On 5 November 2026 GymStore listed a remanufactured 95Ti at $2,599 (from $2,799) plus $699 fixed shipping, shipping in 15 to 20 business days, and Fitness Superstore at $3,799 with one year of parts and on-site labour.',
+        'The 95Ti is sold remanufactured, not on Amazon. If what draws you to it is a Life Fitness treadmill with a 60-inch deck, the T3 is the one sold on Amazon. Life Fitness and a major US retailer agree on a 20 by 60-inch running surface, the same deck size as the 95Ti, 0.5 to 12 mph, incline from 0 to 15%, a 350 lb maximum user weight and a machine weight of 243 lb, and both list the warranty as lifetime on the frame, ten years on the motor, five years on parts and one year of labour; Life Fitness adds three years on the console. Against a 95Ti it gives up 50 lb of rated capacity and the club AC drive, and gains a full new-machine warranty, a much lighter frame and no need for a dedicated circuit. Life Fitness sells it with a choice of console, at $3,499 with the Go console or $4,119 with Track Connect 2.0 on 15 October.',
     },
     {
       id: 'life-fitness-run-cx',
@@ -278,10 +277,13 @@ export default {
       heading: 'Remanufactured Prices, and the New Alternative',
       products: true,
       html: `          <p>
-            The cards below cover the 95T, the 95Ti and the new Life Fitness treadmill we would compare them with.
-            Remanufactured prices are what sellers asked on 5 November 2026, before freight. Life Fitness does not
-            sell the 95T or 95Ti on Amazon US; the Amazon buttons go to searches, which mostly return parts and
-            other treadmills.
+            Remanufactured prices are what sellers asked on 5 November 2026, before freight: Fitness Superstore
+            listed 95Ts at $4,099 (Achieve and Inspire consoles), $4,199 (Engage and Discover SI) and $4,999
+            (Discover SE3), each with a year of parts and on-site labour, and remanufactured 95Tis ran from $2,599
+            plus $699 shipping at GymStore to $3,799 at Fitness Superstore. The 95T and 95Ti are sold through
+            remanufacturers and dealers, not on Amazon US, so the cards below show the nearest new alternatives
+            sold there: the Sole TT8 for the 95T's 22 by 60-inch deck and 400 lb rating, Life Fitness's own T3 in
+            place of the 95Ti, and the Life Fitness Run CX we would compare both with.
           </p>
           <p>
             Other listings in search results suggest a similar range: Keystone Fitness in Canada showed

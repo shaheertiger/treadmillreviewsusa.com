@@ -27,7 +27,9 @@ export default {
           retailer listings at Best Buy and Costco. A figure appears on a product card only where
           those sources agree; where they disagreed, as they did on the Wahoo KICKR RUN's deck
           dimensions, or where a maker publishes no figure, as Horizon does not for motor
-          horsepower, we left it out and say so in the text. None of these are our own
+          horsepower, we left it out and say so in the text. The Sole TT8, which takes the premium
+          slot because the KICKR RUN is not sold on Amazon, carries the figures checked against
+          SOLE and its Amazon listing for our long-distance running guide. None of these are our own
           measurements. Prices are those we saw on manufacturer stores, retailers and review
           coverage on 15 October 2026; they change often and list prices are frequently far above
           selling prices, so confirm the price, the specification and the warranty for the exact
@@ -71,7 +73,7 @@ export default {
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700"><a href="#horizon-7-8-at" class="text-[#0F62FE] font-medium">Horizon 7.8 AT</a></td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No subscription</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22 x 60 in. deck, a pace readout, lifetime motor warranty, around $2,000</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700"><a href="#nordictrack-x16" class="text-[#0F62FE] font-medium">NordicTrack X16</a></td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Downhill courses</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Decline to -6% on a non-folding frame rated to 400 lb</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700"><a href="#nordictrack-commercial-2450" class="text-[#0F62FE] font-medium">NordicTrack Commercial 2450</a></td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Speed headroom</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">14 mph for speed sessions in the same block</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700"><a href="#wahoo-kickr-run" class="text-[#0F62FE] font-medium">Wahoo KICKR RUN</a></td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Course simulation</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-3% to 15% grade with route playback; no subscription required to run</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700"><a href="#sole-tt8" class="text-[#0F62FE] font-medium">Sole TT8</a></td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">High mileage, no subscription</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Non-folding, 400 lb rating, -6% to 15% incline, 22 x 60 in. deck</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700"><a href="#horizon-7-0-at" class="text-[#0F62FE] font-medium">Horizon 7.0 AT</a></td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Smaller budgets</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A 60-inch deck, 12 mph and a lifetime motor warranty for about $1,100</td></tr>
             </tbody>
           </table></div>
@@ -87,11 +89,12 @@ export default {
       heading: 'The 6 Best Treadmills for Marathon Training',
       products: true,
       html: `          <p>
-            Three NordicTracks, two Horizons and one Wahoo, each with a clear reason to choose it
+            Three NordicTracks, two Horizons and one Sole, each with a clear reason to choose it
             for long-distance work. Every card lists only figures the manufacturer and at least one
-            independent source agree on. Two gaps are deliberate: Horizon does not publish motor
-            horsepower, so neither Horizon card carries one, and the Wahoo's deck size is quoted
-            differently by Wahoo and by independent coverage, so it carries none.
+            independent source agree on. One gap is deliberate: Horizon does not publish motor
+            horsepower, so neither Horizon card carries one. The Wahoo KICKR RUN, the premium
+            course-simulation treadmill we discuss below, is sold by Wahoo and not on Amazon, so the
+            premium card is the closest machine Amazon sells for heavy mileage, the Sole TT8.
           </p>
           <p>
             All six have a 60-inch running area or longer, a top speed of at least 12 mph and a
@@ -194,9 +197,9 @@ export default {
             Sixty inches is the standard length for a running treadmill, and for marathon training
             it is a minimum rather than a luxury. Late in a long run your form changes: stride
             lengthens or shortens, you drift forward and back, and attention wanders. A short deck
-            punishes all of that. Every machine here has a 60-inch running area; the KICKR RUN's
-            exact deck size is quoted differently by different sources, but no source puts it under
-            60 inches. Our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
+            punishes all of that. Every machine on a card here has a 60-inch running area, and so
+            does the Wahoo KICKR RUN, whose exact deck size is quoted differently by different
+            sources but never under 60 inches. Our <a href="/treadmill-belt-size-guide/" class="text-[#0F62FE] font-medium">belt size guide</a>
             explains the lengths and widths for different heights and paces, and taller runners
             should also read our guide to
             <a href="/best-treadmills-for-tall-runners/" class="text-[#0F62FE] font-medium">treadmills for tall runners</a>.
@@ -289,8 +292,9 @@ export default {
             covers the reasons in detail.
           </p>
           <p>
-            Four machines here have decline. The NordicTrack Commercial 1750 and 2450 and the
-            Wahoo KICKR RUN reach -3%; the NordicTrack X16 reaches -6%. Three percent is a gentle
+            Four machines here have decline. The NordicTrack Commercial 1750 and 2450 reach -3%
+            (as does the Wahoo KICKR RUN, which Wahoo sells direct); the NordicTrack X16 and the Sole
+            TT8 reach -6%. Three percent is a gentle
             but genuine descent, enough to practise downhill running on most courses. Six percent is
             closer to the steepest stretches of the hilliest road races. The two Horizons have no
             decline at all. Our guide to the
@@ -400,8 +404,8 @@ export default {
           </p>
           <p>
             <strong>If you weigh more than about 300 lb,</strong> look closely at capacity. The
-            NordicTrack machines here are rated to 400 lb and the Horizon 7.8 AT to 375 lb, but the
-            KICKR RUN is rated to only 250 lb. Long runs put more cumulative load on the deck and
+            NordicTrack machines and the Sole TT8 here are rated to 400 lb and the Horizon 7.8 AT to
+            375 lb, but Wahoo’s KICKR RUN is rated to only 250 lb. Long runs put more cumulative load on the deck and
             motor than short ones, so a wide margin above your own weight is sensible; our
             <a href="/best-treadmills-for-heavy-people/" class="text-[#0F62FE] font-medium">high-capacity guide</a>
             covers the options.
@@ -507,28 +511,27 @@ export default {
         'The Commercial 2450 is the 1750 with more speed and a bigger screen, and for most marathoners that is not worth the extra money. For fast runners, it is. NordicTrack lists 0 to 14 mph, incline from 12% down to -3% decline, a 22 by 60-inch belt, a 4.25 CHP motor rating, a 400 lb user capacity and an AutoBreeze fan, and Treadmill Review Guru’s review agrees on each figure. That 14 mph is a 4:17-per-mile pace, which matters for strides and short intervals rather than for marathon pace itself. The 24-inch pivoting touchscreen runs iFIT, which with a paid membership plays scenic routes and adjusts speed and incline for you; it is the most immersive screen here for a long run. The warranty is lifetime on the motor, ten years on the frame, two years on parts and one year of labour. NordicTrack was selling it at $2,499.99 against a $2,999.99 list price. If your fastest sessions stay under 12 mph, buy the 1750.',
     },
     {
-      id: 'wahoo-kickr-run',
-      name: 'Wahoo KICKR RUN',
-      category: 'Best Premium Treadmill for Course Simulation',
+      id: 'sole-tt8',
+      name: 'Sole TT8',
+      category: 'Best Premium Treadmill for High Mileage',
       badge: 'Best Premium',
-      amazonUrl: 'https://www.amazon.com/s?k=Wahoo+KICKR+RUN+Smart+Treadmill&tag=sktiger-20',
-      priceRange: 'Around $7,000',
-      specs: '4:00/mile (15 mph) top speed · -3% to 15% grade · 250 lb capacity · lateral tilt · 1-year warranty',
+      priceRange: 'About $2,500 (Amazon, 6 Nov 2026)',
+      specs: '4.0 HP · 22 x 60 in. · 0.5–12 mph · -6% to 15% incline · 400 lb capacity · non-folding · 15.6 in. touchscreen',
       pros: [
-        'Wahoo says it does not require a subscription to run',
-        'With a Wahoo App membership, Route Simulation replays a race course with its grade changes',
-        'Decline to -3% and a side-to-side tilt that Wahoo says reproduces off-camber ground',
-        'RunFree mode lets the belt follow your pace without pressing anything',
+        'Non-folding frame with a 400 lb capacity, per SOLE',
+        '22 x 60 in. running surface for long runs when your stride changes late on',
+        'Decline to -6%, useful for downhill race courses',
+        'Programs including a 10K, HIIT and heart-rate control, per the listing, with no subscription needed',
       ],
       cons: [
-        'A 250 lb maximum user weight is the lowest on this page',
-        'One year of warranty cover on a machine that costs about $7,000',
-        'Deck dimensions differ between Wahoo and independent coverage, so we have printed neither',
+        'Does not fold, and weighs more than 300 lb',
+        'Tops out at 12 mph',
+        'Published warranty terms differ between sources; check the current terms before buying',
       ],
       bottomLine:
-        'For marathoners who want to rehearse a specific course indoors and can justify the price.',
+        'For marathoners logging 40 or more miles a week who have the room for a non-folding treadmill and want no subscription.',
       description:
-        'The KICKR RUN is the treadmill for runners who want to run their race before race day. Wahoo’s Route Simulation, which needs a Wahoo App membership, loads a course file and changes grade and pace as you go, using the machine’s -3% to 15% grade and a side-to-side tilt. Wahoo lists a maximum speed of 4:00 per mile, the -3% to 15% grade and a 250 lb maximum user weight; Treadmill Review Guru gives the same 15 mph, grade range and 250 lb figures. Wahoo lists a 60 by 22-inch running surface while that review lists a longer deck, so we have left the deck size off the card. Wahoo says the treadmill does not require a subscription, though apps may charge their own fees, and that it needs a dedicated circuit and a non-GFCI outlet. It was $6,999.99 on Wahoo’s store when we checked, with a one-year warranty both sources confirm. That warranty, and the 250 lb rating, are the reasons to think hard before spending this much.',
+        'The Wahoo KICKR RUN, the course-simulation treadmill this guide discusses, is sold by Wahoo and not on Amazon, so the premium card here is the machine Amazon sells that is built most clearly for heavy, repeated use: SOLE’s light-commercial TT8. The Amazon listing gives a 4.0 HP motor, a 22 x 60 in. running surface, a 0.5 to 12 mph speed range, an incline and decline range of -6 to 15 and a 15.6 in. touch screen, with programs including Hill, Fat Burn, HIIT, 10K and heart-rate control. SOLE’s own site adds a non-folding frame and a 400 lb user capacity. For a high-mileage runner, the non-folding frame and high capacity are what matter: a frame that does not fold has no hinge to flex, and a machine rated well above your weight works less hard on every stride over thousands of miles. The decline is useful too, for runners training for downhill courses. It will not replay a race course the way the KICKR RUN does, and it weighs more than 300 lb, so place it once and leave it. It stops at 12 mph, which is ample for long runs and most speed work. Amazon listed it at about $2,500 on 6 November 2026.',
     },
     {
       id: 'horizon-7-0-at',
@@ -579,7 +582,7 @@ export default {
     },
     {
       q: 'Is 12 mph fast enough for marathon training?',
-      a: `For almost everyone, yes. Twelve mph is a five-minute mile, and even a sub-three-hour marathon is run at under 9 mph. The extra speed matters for strides and short intervals, and only quite fast runners reach 12 mph in those. If you do, the NordicTrack Commercial 2450 reaches 14 mph and the Wahoo KICKR RUN a four-minute-mile pace.`,
+      a: `For almost everyone, yes. Twelve mph is a five-minute mile, and even a sub-three-hour marathon is run at under 9 mph. The extra speed matters for strides and short intervals, and only quite fast runners reach 12 mph in those. If you do, the NordicTrack Commercial 2450 reaches 14 mph, and Wahoo’s KICKR RUN, sold direct by Wahoo, a four-minute-mile pace.`,
     },
   ],
   mistakesHeading: 'Common Mistakes Buying a Treadmill for Marathon Training',

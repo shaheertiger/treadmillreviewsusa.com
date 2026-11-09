@@ -35,7 +35,8 @@ export default {
           blog coverage of the TM4500, and the US Consumer Product Safety Commission's recall database for LifeSmart.
           Several LifeSmart figures differ between LifeSmart, Costco and retailers; conflicts are set out in the text
           and kept off the cards, and where only LifeSmart publishes a figure we say so. Prices are those shown on the
-          day and change often. We have not tested any LifeSmart treadmill. As an Amazon Associate we earn from
+          day and change often. The NordicTrack T Series 16 card, which stands in for the Costco-only TM6500, carries
+          the figures checked for our NordicTrack treadmills guide. We have not tested any LifeSmart treadmill. As an Amazon Associate we earn from
           qualifying purchases; that does not change what we say.`,
   lead: `LifeSmart's pitch is one feature: PowerTouch, a motorised fold that raises and lowers the deck at the press
           of a button, with infrared sensors meant to stop it lowering onto a pet or a child. Around that it builds
@@ -117,27 +118,26 @@ export default {
         'The TM5000 is the most expensive treadmill on LifeSmart’s own store. LifeSmart lists a 4.0 HP brushless motor, 0.6 to 14 mph, -3% to 15% incline and decline, a 20 by 60-inch two-ply orthopaedic belt, a 16-inch TFT display with Bluetooth and casting, 30 programs, a 310 lb capacity, 76.4 by 34.9 by 59.1 inches unfolded and 211.6 lb. We found no independent source for these figures. It was $1,699, from $2,299, on 5 November 2026.',
     },
     {
-      id: 'lifesmart-tm6500',
-      name: 'LifeSmart TM6500',
-      category: 'Costco’s Touchscreen PowerTouch',
-      badge: 'Costco Only',
-      priceRange: 'Costco online only; price not shown to our requests',
-      amazonUrl: 'https://www.amazon.com/s?k=Lifesmart+TM6500+Treadmill&tag=sktiger-20',
-      specs: '20 x 60 in. belt · 4.0 HP brushless · up to 14 mph · 325 lb max user · 22 in. pivoting touchscreen · PowerTouch folding',
+      id: 'nordictrack-t-series-16',
+      name: 'NordicTrack T Series 16',
+      category: 'Amazon Alternative to the Costco-Only TM6500',
+      badge: 'Closest on Amazon',
+      priceRange: 'Around $1,300–$2,000',
+      specs: '20 x 60 in. deck · 16 in. tilting touchscreen · 0-12% incline · up to 12 mph · 325 lb capacity',
       pros: [
-        'A 22-inch HD touchscreen that pivots and supports casting',
-        'The highest user rating in the LifeSmart range, at 325 lb',
-        'Costco’s returns policy and delivery included in the price',
+        'A big touchscreen on a folding 20 by 60-inch deck, the same deck size and 325 lb rating as the TM6500',
+        'SelectFlex cushioning and a low step-up',
+        'Sold on Amazon, where the TM6500 is not',
       ],
       cons: [
-        'Costco’s own page gives two incline figures: 10% with -3% decline, and 15%',
-        'Costco online only, delivered within about 50 miles of a warehouse',
-        'Warranty terms not stated on Costco’s page',
+        'A 16-inch screen that tilts, against the TM6500’s 22-inch pivoting one, and it is built around iFIT classes',
+        'No decline and no self-folding PowerTouch mechanism; a 12 mph top speed against the TM6500’s 14',
+        'Two-year motor warranty',
       ],
       bottomLine:
-        'Worth a look for a Costco member who wants a big screen and PowerTouch, mostly because of Costco’s returns.',
+        'For a buyer who wants the TM6500’s big-screen idea from a machine sold on Amazon, and can live without the automatic fold and decline.',
       description:
-        'The TM6500 (Costco item 1975952) is a Costco Direct model not sold on LifeSmart’s own store. Costco’s page lists a 4.0 HP brushless motor, up to 14 mph, a 20 by 60-inch two-ply belt, a 325 lb maximum user, 231 lb, 35 by 76.4 by 64.8 inches, a 22-inch pivoting touchscreen with casting and 30 programs. Its highlights give 10% incline and -3% decline while its specification table gives 15%, so incline is not on the card. Costco did not show us a price on 5 November 2026; it ran a multi-item Costco Direct discount that week.',
+        'The TM6500 is a Costco Direct model, not sold on Amazon. The closest big-screen folding treadmill we found there is NordicTrack’s T Series 16. NordicTrack, a retailer listing and an independent review agree on a 20 by 60-inch belt, a 16-inch tilting touchscreen, 0 to 12% incline, 12 mph and a 325 lb maximum user weight, which matches the TM6500’s deck and rating. NordicTrack rates its motor at 3.6 CHP with two-year cover; one independent review lists the same 3.6 figure without saying whether it is a continuous rating, so read it as NordicTrack’s number. What you give up against a TM6500 is LifeSmart’s self-folding PowerTouch mechanism, its decline and 2 mph of top speed; what you gain is a longer motor warranty than LifeSmart’s one year on everything, and a machine you can buy on Amazon. The screen is built around iFIT walking, hiking and running classes.',
     },
     {
       id: 'lifesmart-tm4500',
@@ -391,8 +391,11 @@ export default {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Is LifeSmart on Amazon?</h3>
           <p>
-            Some LifeSmart models appear on Amazon US, including a TM2500 listing, but we could not tie a listing to each
-            model on this page, so the card buttons use tagged searches. Check the model number and the C suffix in the
+            Some LifeSmart models appear on Amazon US, including a TM2500 listing; the TM3000 and TM5000 cards link to
+            their Amazon listings. The Costco-only TM6500 is not on Amazon, so its place in the cards goes to the closest
+            big-screen folding treadmill that is, the NordicTrack T Series 16. The TM4000C and TM4500 buttons are
+            tagged searches: check the model number and the C suffix in the title, and that the seller is LifeSmart or
+            Amazon, since warranty claims go through the place of purchase. Check the model number and the C suffix in the
             title, and that the seller is LifeSmart or Amazon, since warranty claims go through the place of purchase.
           </p>`,
     },

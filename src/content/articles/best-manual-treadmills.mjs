@@ -2,7 +2,7 @@ export default {
   slug: 'best-manual-treadmills',
   title: 'Best Manual Treadmills (2026): Flat Walkers and Curved Runners',
   description:
-    'The best manual treadmills in 2026, from $200 folding flat walkers with magnetic resistance to curved non-motorised trainers, with the trade-offs each one makes.',
+    'The best manual treadmills in 2026, from a $200 folding flat walker to curved non-motorised trainers from about $1,600, with the trade-offs each one makes.',
   crumbLabel: 'Best Manual Treadmills',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
@@ -12,7 +12,7 @@ export default {
   socialProof: '2.1k',
   h1: ['Best Manual Treadmills', 'Flat Walkers and Curved Runners'],
   standfirst:
-    'A manual treadmill is either a $200 folding walker you push uphill or a $2,000-plus curved trainer you run on like a road. They solve different problems. Here are the five worth buying across both, and how to tell which kind you actually want.',
+    'A manual treadmill is either a $200 folding walker you push uphill or a $1,600-plus curved trainer you run on like a road. They solve different problems. Here are the five worth buying across both, and how to tell which kind you actually want.',
   ctas: [
     { label: 'See the Picks', href: '#picks' },
     { label: 'Flat or Curved?', href: '#flat-vs-curved' },
@@ -23,11 +23,10 @@ export default {
           cheap one is a folding walker with a short belt on a fixed slope, sold for around $200 to
           $300. The expensive one is a curved, slatted trainer built for sprinting, sold for $2,000
           to $3,500 and up. Most disappointment in this category comes from buying the first while
-          expecting the second, so this page covers both, says plainly what each does well, and
-          keeps the curved models to the two that make most sense alongside the budget walkers.`,
+          expecting the second, so this page covers both and says plainly what each does well.`,
   note: `<strong class="text-gray-900">On the numbers below.</strong> The specifications on this
           page were checked on 13 October 2026 against each manufacturer's own product page
-          (Sunny Health &amp; Fitness, Stamina, Assault Fitness and SOLE) and cross-checked against
+          (Sunny Health &amp; Fitness, SOLE, Tru Grit via its US dealers and SB Fitness) and cross-checked against
           at least one major retailer listing and independent review coverage. Where sources
           disagreed — most often on a weight capacity or an incline figure given in degrees by one
           source and percent by another — we left that figure out of the spec line rather than
@@ -41,8 +40,12 @@ export default {
       id: 'quick-picks',
       heading: 'Our Picks at a Glance',
       html: `          <p>
-            Three of the five are flat folding walkers under about $320; two are curved trainers
-            above $2,000. If your budget sits between those, read the
+            One of the five is a flat folding walker at about $200; four are curved trainers from
+            about $1,600. That balance is not what we would choose. Stamina's Avari and InMotion T900
+            flat manuals, which this page used to list, are not sold on Amazon US, and the other flat
+            manuals listed there when we checked in November 2026 came from little-known sellers with
+            claims we could not check — 500 lb ratings on $120 frames, no deck sizes — so we have not
+            carded them. If your budget sits between the flat walker and the curved trainers, read the
             <a href="#flat-vs-curved" class="text-[#0F62FE] font-medium">flat versus curved section</a>
             before deciding, because there is very little worth buying in the gap. New to pushing your own belt? See
             <a href="/how-to-use-a-manual-treadmill/" class="text-[#0F62FE] font-medium">how to use a manual treadmill</a>.
@@ -54,11 +57,11 @@ export default {
               <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Why</th>
             </tr></thead>
             <tbody>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700"><a href="#assaultrunner-pro" class="text-[#0F62FE] font-medium">AssaultRunner Pro</a></td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best overall, if you run</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Curved slat deck you can genuinely sprint on, 350 lb rating, long frame warranty</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700"><a href="#sole-c80" class="text-[#0F62FE] font-medium">SOLE C80</a></td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best overall, if you run</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Curved slat deck with eight magnetic levels, 19 in. wide, lifetime frame</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700"><a href="#sunny-sf-t1407smart" class="text-[#0F62FE] font-medium">Sunny SF-T1407SMART</a></td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best budget walker</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Around $200, folds, Bluetooth console, fixed 14% climb</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700"><a href="#stamina-avari-adjustable" class="text-[#0F62FE] font-medium">Stamina Avari Adjustable</a></td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Adjustable resistance on a budget</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Eight magnetic levels and three incline settings, 3-year frame warranty</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700"><a href="#stamina-inmotion-t900" class="text-[#0F62FE] font-medium">Stamina InMotion T900</a></td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Simplest and lightest</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">52 lb, folds to a 17 x 22 in. footprint, nothing to adjust but the slope</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700"><a href="#sole-c80" class="text-[#0F62FE] font-medium">SOLE C80</a></td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Curved with resistance</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Widest deck here, eight magnetic levels, lowest-priced curved pick</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700"><a href="#sb-fitness-ct400" class="text-[#0F62FE] font-medium">SB Fitness CT400</a></td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Cheapest curved trainer</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A slatted curved deck with three resistance levels for about $1,600</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700"><a href="#sunny-sf-x7110" class="text-[#0F62FE] font-medium">Sunny SF-X7110</a></td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lightest curved trainer</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">157 lb with wheels, eight magnetic levels, 330 lb rating</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700"><a href="#tru-grit-runner" class="text-[#0F62FE] font-medium">Tru Grit Runner</a></td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sled pushes and resisted work</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Six resistance levels with dedicated sled-push settings, lifetime frame</td></tr>
             </tbody>
           </table></div>`,
     },
@@ -67,10 +70,11 @@ export default {
       heading: 'The 5 Best Manual Treadmills',
       products: true,
       html: `          <p>
-            The list is ordered by who should buy what, not by price. The two curved trainers lead
-            and close it because they are the better machines by a wide margin; the three flat
-            walkers in between are the right buy for anyone whose budget or space rules a curved
-            trainer out. If curved is what you want, the
+            The list is ordered by who should buy what, not by price. The SOLE C80 leads because a
+            curved trainer is the better machine by a wide margin if you will run; the flat Sunny
+            walker follows because it is the right buy for anyone whose budget or space rules a curved
+            trainer out; the three other curved trainers cover a lower price, a lighter frame and
+            sled work. Every card is a machine sold on Amazon US. If curved is what you want, the
             <a href="/best-curved-treadmills/" class="text-[#0F62FE] font-medium">best curved treadmills</a>
             page covers seven of them in more depth, including the premium end.
           </p>`,
@@ -107,9 +111,10 @@ export default {
             and the cards say which you are getting.
           </p>
           <p>
-            Finally, we capped the curved models at two. Curved trainers have their own roundup
-            and their own explainer; here they appear only so that a reader who searched "manual
-            treadmill" sees that the category has a top end, and what it costs.
+            Finally, we limited the list to machines sold on Amazon US. That removed the
+            AssaultRunner Pro, which is sold direct and through dealers, and Stamina's flat manuals,
+            and it is why curved trainers outnumber flat walkers here. Curved trainers also have their
+            own roundup and their own explainer.
           </p>`,
     },
     {
@@ -128,8 +133,8 @@ export default {
             somewhere between 5 and 10 degrees — and the slope is what lets your feet drive the
             belt. It suits someone who wants to walk indoors, wants the walk to be harder than
             the same pace on level ground, has no convenient outlet, or simply has $200 to $300
-            and a cupboard to fold it into. It does not suit running. The belts on all three flat
-            picks are 41 to 42 inches long and 12 to 13 inches wide, which is shorter and
+            and a cupboard to fold it into. It does not suit running. Flat manual belts typically
+            run 41 to 42 inches long and 12 to 13 inches wide — the Sunny's is 42 by 13 — which is shorter and
             narrower than a typical <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a>, let alone a running deck.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What a curved trainer is for</h3>
@@ -196,7 +201,7 @@ export default {
             machines tend to be shorter than intended.
           </p>
           <p>
-            <strong>Light frames absorb effort.</strong> The three flat picks weigh 47 to 54
+            <strong>Light frames absorb effort.</strong> Flat manuals typically weigh 47 to 54
             pounds. That is what makes them easy to fold and move, and it is also why they can
             shift or flex under a determined push. A rubber mat underneath helps them sit still.
           </p>
@@ -220,14 +225,15 @@ export default {
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Flywheel-only versus magnetic resistance</h3>
           <p>
-            The simplest machines, like the Sunny SF-T1407SMART and the Stamina InMotion T900, have
-            no adjustable resistance at all. Weighted flywheels on the front roller smooth the
+            The simplest machines, like the Sunny SF-T1407SMART, have no adjustable resistance at
+            all. Weighted flywheels on the front roller smooth the
             belt's motion, and the only way to change the effort is to change the slope or walk
             faster. That is fine for steady walking and means there is nothing to wear out or
             misadjust.
           </p>
           <p>
-            Magnetic resistance, as on the Stamina Avari Adjustable, adds a knob that moves
+            Magnetic resistance, found on some flat manuals such as Stamina's Avari (not sold on
+            Amazon US), adds a knob that moves
             magnets closer to a metal flywheel to make the belt harder to turn. It is quiet and
             contact-free, so it does not wear the way a friction pad would. Two caveats. On a flat
             manual, the belt is already fairly heavy to push, so the useful range of extra
@@ -237,9 +243,10 @@ export default {
             number of levels as a rough guide rather than a precise scale.
           </p>
           <p>
-            Curved trainers handle this differently. The <a href="/assaultrunner-pro-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>AssaultRunner Pro</a> has no resistance
-            setting at all: effort is set by how hard you run. The SOLE C80 adds eight magnetic
-            levels, which on a curved deck is genuinely useful for sled-push style work and resisted
+            Curved trainers handle this differently. Some, like the <a href="/assaultrunner-pro-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>AssaultRunner Pro</a>, have no resistance
+            setting at all: effort is set by how hard you run. All four curved picks here add it — eight
+            magnetic levels on the SOLE C80 and Sunny SF-X7110, six on the Tru Grit and three on the
+            CT400 — which on a curved deck is genuinely useful for sled-push style work and resisted
             sprints, because the belt starts from a free-rolling baseline rather than a stiff one.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Degrees, percent and the fixed incline</h3>
@@ -265,30 +272,30 @@ export default {
       id: 'deck-and-capacity',
       heading: 'Deck Size, Capacity and Where It Will Live',
       html: `          <p>
-            <strong>Deck size.</strong> The flat picks all have belts of about 41 to 42 inches by
+            <strong>Deck size.</strong> Flat manuals have belts of about 41 to 42 inches by
             12.5 to 13 inches. That is enough for a walking stride for most adults, but it is
             narrow: a 12.5-inch belt leaves little margin for a drifting foot, which is another
             reason people hold the rails. Taller walkers with long strides will find the front
-            hood closer than they would like. The curved picks are a different scale — the
-            AssaultRunner Pro deck is 62 by 17 inches and the SOLE C80's is 62 by 19 inches —
-            because they are built for running.
+            hood closer than they would like. The curved picks are a different scale — the SOLE
+            C80's deck is 62 by 19 inches and the Sunny SF-X7110's is 59 by 17.7 inches — because
+            they are built for running.
           </p>
           <p>
-            <strong>Weight capacity.</strong> Ratings on the flat picks run from 225 to roughly
+            <strong>Weight capacity.</strong> Ratings on flat manuals run from about 225 to roughly
             300-plus pounds, and this is where listings most often disagree. Sunny's own page
             gives the SF-T1407SMART a 330 lb rating while at least one Amazon listing title says
             300 lb, so we have not put a figure on its card. If you are near any of these limits,
             choose a machine with clear headroom and confirm the rating on the manufacturer's
             page. Our
             <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">weight capacity guide</a>
-            explains why a margin matters more on a light frame. The curved picks are rated at
-            330 lb (SOLE C80) and 350 lb (AssaultRunner Pro).
+            explains why a margin matters more on a light frame. The SOLE C80, Sunny SF-X7110 and
+            Tru Grit Runner are rated at 330 lb; the CT400's Amazon listing gives no figure.
           </p>
           <p>
-            <strong>Footprint and storage.</strong> This is where flat manuals win outright. All
-            three fold upright, roll on wheels and weigh about 47 to 54 pounds; the T900 folds to
-            a 17 by 22-inch footprint. Neither curved pick folds. The AssaultRunner Pro is about
-            70 inches long and weighs 280 pounds; the SOLE C80 is 72 inches long and 261 pounds.
+            <strong>Footprint and storage.</strong> This is where flat manuals win outright. They
+            fold upright, roll on wheels and weigh about 47 to 54 pounds; Sunny gives 46.9 lb for
+            its walker. No curved pick folds. The SOLE C80 is 72 inches long and 261 pounds; even the
+            light Sunny SF-X7110 weighs 157 pounds.
             They need a permanent spot, a floor that can take them and help on the day of
             delivery.
           </p>
@@ -336,38 +343,37 @@ export default {
   ],
   products: [
     {
-      id: 'assaultrunner-pro',
-      name: 'AssaultRunner Pro',
-      reviewUrl: '/assaultrunner-pro-treadmill/',
-      category: 'Curved Non-Motorised Trainer',
+      id: 'sole-c80',
+      name: 'SOLE C80 Curved Manual Treadmill',
+      category: 'Curved Trainer With Magnetic Resistance',
       badge: 'Best Overall',
-      amazonUrl: 'https://www.amazon.com/s?k=Assault+Fitness+AssaultRunner+Pro&tag=sktiger-20',
-      priceRange: 'Around $3,200–$3,500',
-      specs: '62 x 17 in. curved slat deck · 350 lb max user · 280 lb · no motor or outlet needed',
+      priceRange: '$2,200–$2,400',
+      specs: '62 x 19 in. slat belt · 8 magnetic levels · 330 lb max user · 261 lb',
       pros: [
-        'Curved slat deck lets you run upright at any pace up to a full sprint',
-        '350 lb user rating on a 280 lb steel frame that does not shift under hard efforts',
-        'Assault currently lists a 7-year frame, 3-year moving parts and 150,000-mile belt warranty',
-        'Battery console with Bluetooth and ANT+ heart-rate pairing',
+        'Widest running surface of any machine here at 19 in.',
+        'Eight magnetic resistance levels on a curved deck, useful for resisted sprints and sled-style pushes',
+        'Lifetime frame warranty from a mainstream treadmill brand',
+        'Bluetooth console works with SOLE+, Zwift and Kinomap',
       ],
       cons: [
-        'No resistance setting, so all effort comes from running harder',
-        'Stock is patchy: Assault showed it sold out on 13 October 2026, while some specialist retailers listed it in stock',
-        'Does not fold, and at 280 lb it needs a permanent place and help on delivery',
+        'Parts, deck, electronics and labour are covered for 1 year only',
+        'Newer model with thinner independent coverage than older curved trainers such as the AssaultRunner',
+        'Does not fold, weighs 261 lb and has no incline',
       ],
       bottomLine:
         'The manual treadmill to buy if you mean to run on it, and can pay for and house a curved trainer.',
-      description: `The AssaultRunner Pro is the curved trainer most people picture when they hear the
-        phrase, and it is here as the best overall manual treadmill because it is the one that does
-        what a manual treadmill promises without the compromises of the budget end. You run upright
-        on a 62 by 17-inch curved slat deck; step forward and the belt speeds up, ease back and it
-        slows. Assault rates it for users up to 350 pounds and the assembled machine weighs 280,
-        so it stays planted during sprints. The current Assault listing gives a 7-year frame,
-        3-year moving parts and 150,000-mile belt warranty; older coverage quotes a shorter 5-year
-        frame term, so confirm which applies to the unit you buy. The limits are real: there is no
-        resistance to add for sled-style pushes, no incline, and it is a large, heavy object that
-        does not fold. It is also a running tool more than a walking one. Availability moves
-        around, so check stock before you plan around a delivery date.`,
+      description: `The C80 is SOLE's self-powered curved treadmill and our first pick for anyone who will
+        run: it comes from a mainstream treadmill brand, costs over $1,000 less than the better-known
+        AssaultRunner Pro (which is sold direct and through dealers rather than on Amazon), and adds
+        what the AssaultRunner lacks — eight levels of magnetic resistance. On a curved
+        deck that matters, because the belt starts free-rolling and the resistance gives you a
+        controlled way to make it heavier for sled-push work or resisted sprints. The 62 by 19-inch
+        slat deck is the widest here, the user rating is 330 lb, and the machine weighs 261 lb. The
+        console connects over Bluetooth to SOLE's app and third-party platforms such as Zwift. SOLE
+        lists a lifetime frame warranty but only a year on the deck, parts, electronics and
+        labour, which is short for a $2,000-plus machine. It is newer than its rivals, so long-term owner
+        evidence is still limited. Our <a href="/sole-fitness/" class="text-[#0F62FE] font-medium">SOLE brand overview</a>
+        covers the company's motorised range.`,
     },
     {
       id: 'sunny-sf-t1407smart',
@@ -402,101 +408,99 @@ export default {
         buying. Sunny's warranty page should be checked for current terms.`,
     },
     {
-      id: 'stamina-avari-adjustable',
-      name: 'Stamina Avari Adjustable Height Treadmill',
-      category: 'Flat Manual With Magnetic Resistance',
-      badge: 'Best Adjustable',
-      amazonUrl: 'https://www.amazon.com/s?k=Stamina+Avari+Adjustable+Height+Magnetic+Manual+Treadmill&tag=sktiger-20',
-      priceRange: '$200–$320',
-      specs: '41.75 x 12.5 in. belt · 8 magnetic levels · 5°, 6.5° or 8° incline · 250 lb max · 54 lb',
+      id: 'sb-fitness-ct400',
+      name: 'SB Fitness CT400 Curved Treadmill',
+      category: 'Lower-Priced Curved Manual Trainer',
+      badge: 'Cheapest Curved',
+      priceRange: 'About $1,595 (Amazon, 6 Nov 2026)',
+      specs: 'Self-generated curved belt · 3 resistance levels · flexible track slats · no maximum speed',
       pros: [
-        'Eight magnetic resistance levels plus three incline settings, the most adjustment of the flat picks',
-        'Choice of slope means you can start steep (easier belt) and progress',
-        'Stamina lists a 3-year frame warranty',
-        'Folds and needs no outlet; the console runs the müüv coaching app',
+        'The lowest price of the curved trainers here, at about $1,600',
+        'No maximum speed and immediate response to speed changes, per the listing',
+        'Three resistance levels for harder efforts',
+        'Flexible track slats that the maker says add shock absorption',
       ],
       cons: [
-        'Parts warranty is 90 days, short for the belt and rollers that actually wear',
-        '250 lb capacity is modest, and the 12.5 in. belt is narrow',
-        'Owner reports across magnetic manual treadmills suggest the difference between levels can be hard to feel',
+        'Only three resistance levels, against eight on the SOLE C80 and Sunny SF-X7110',
+        'The Amazon listing does not give deck dimensions or user capacity',
+        'Basic digital display',
       ],
       bottomLine:
-        'The flat manual to choose if you want to vary the effort rather than just walk at one fixed climb.',
-      description: `Despite the name, "adjustable height" here refers to the deck angle, and that is the
-        Avari's main selling point among budget manuals: three incline settings of 5, 6.5 and 8
-        degrees (roughly 9% to 14%) plus eight levels of magnetic resistance on dual flywheels.
-        That combination lets you start on the steepest setting, where gravity does most of the work
-        of moving the belt, and progress from there. Stamina's own listing and an identical
-        retailer-branded version sold by Sharper Image agree on the figures: a 41.75 by 12.5-inch belt,
-        a 250 lb user limit and a 54 lb machine. The frame warranty is 3 years, which is generous at
-        this price; the 90 days on parts is not. It folds and rolls away, and the console tracks
-        time, speed, distance and calories. It is still a flat manual — narrow belt, rails needed,
-        walking only — but it is the most adjustable one we could verify as currently sold.`,
+        'For a runner who wants a slatted curved trainer for about $1,600 and can live with fewer resistance settings and less published detail.',
+      description: `SB Fitness Equipment makes several curved trainers, and the CT400 is the least
+        expensive one we found on Amazon US, which narrows the gap between flat walkers and curved
+        trainers more than any other machine here. Its listing describes a self-generated curved
+        treadmill designed for running, walking, sport-specific training and HIIT, with no maximum
+        speed, three resistance levels, flexible track slats that SB Fitness says add shock absorption,
+        quick response to speed changes and a front display showing time, distance, speed, calories and
+        total miles. What you give up is resistance range, with three levels rather than eight, and
+        published detail: the Amazon listing does not give the running-surface size, the user capacity
+        or the machine's weight, so ask the seller for those before ordering, and measure your space.
+        Amazon showed it at about $1,595 on 6 November 2026.`,
     },
     {
-      id: 'stamina-inmotion-t900',
-      name: 'Stamina InMotion T900 Manual Treadmill',
-      category: 'Basic Folding Manual Walker',
-      badge: 'Simplest',
-      amazonUrl: 'https://www.amazon.com/s?k=Stamina+InMotion+T900+Manual+Treadmill&tag=sktiger-20',
-      priceRange: '$240–$300',
-      specs: '41 x 12.4 in. belt · 8° or 10° incline · dual flywheels · 225 lb max · 52 lb',
+      id: 'sunny-sf-x7110',
+      name: 'Sunny Health & Fitness SF-X7110 Curved Treadmill',
+      category: 'Lightweight Curved Trainer',
+      badge: 'Lightest Curved',
+      amazonUrl: 'https://www.amazon.com/dp/B0DGZ74FVJ?tag=sktiger-20',
+      priceRange: '$2,100–$2,500',
+      specs: '59 x 17.7 in. running surface · 8 magnetic levels · 330 lb max user · 157 lb',
       pros: [
-        'Folds to a 17 x 22 in. footprint, the smallest stored size here',
-        'Two incline settings, with the steeper 10° option making the belt easiest to drive',
-        'Nothing to adjust or wear beyond belt, rollers and flywheels',
-        'Long-established model with a published owner manual and parts support',
+        'At 157 lb, roughly 100 lb lighter than most curved trainers',
+        'Eight magnetic resistance levels on a tension lever',
+        'Bluetooth console works with the free SunnyFit app',
+        'Transport wheels and a handlebar for moving it',
       ],
       cons: [
-        'Lowest capacity here at 225 lb, and the shortest warranty: 1 year frame, 90 days parts',
-        'Amazon reviews include reports of the belt drifting to one side and needing tension adjustment',
-        'Amazon showed it unavailable on 13 October 2026; Stamina and Target listed it',
+        'Warranty is 3 years on the frame and only 180 days on other parts',
+        'Very little owner or independent review evidence so far',
+        'Does not fold, and the 59 in. surface is slightly shorter than the 62 in. decks elsewhere',
       ],
       bottomLine:
-        'For a lighter walker who wants the smallest, simplest folding manual and nothing more.',
-      description: `The T900 has been around for years and is about as simple as a treadmill gets: a
-        41 by 12.4-inch belt over dual weighted flywheels, two incline positions of 8 and 10 degrees
-        (about 14% and 18%), a basic monitor, and a frame that folds to a 17 by 22-inch footprint.
-        At 52 pounds it is the lightest machine here. Simplicity is its argument — there is no
-        resistance knob to misadjust and very little to go wrong — and for a lighter user who wants
-        to walk uphill a few times a week and fold it away, that is enough. The weaknesses are
-        worth weighing. Its 225 lb limit is the lowest here, the warranty is 1 year on the frame and
-        90 days on parts, and Amazon reviews include belt-drift complaints, so expect to check
-        tracking and tension early on. Stock varies by retailer; Stamina listed it in stock on
-        13 October 2026 at a sale price.`,
+        'The curved trainer to choose if weight and movability matter more than track record, such as a room up a flight of stairs.',
+      description: `Sunny's SF-X7110 is the lightest curved trainer we could verify at 157 lb, and that is
+        why it is here: it is the curved machine closest to the flat walkers in how easily it can be
+        moved, with transport wheels and a handle. It is not a cut-down machine otherwise. Sunny's own
+        page and the Amazon listing agree on a 59 by 17.7-inch rubber-coated running surface, eight
+        magnetic resistance levels on a lever, a 330 lb user rating and a Bluetooth console that
+        connects to the free SunnyFit app. Walmart listed it at about $2,125 on sale against Sunny's
+        $2,500. The trade-offs are the warranty — 3 years on the frame but 180 days on everything
+        else — and a lack of independent long-term coverage; one independent review gives a one-year
+        warranty instead, so confirm the terms when you buy. A lighter machine is also likely to feel
+        less planted than a heavier one at full sprint.`,
     },
     {
-      id: 'sole-c80',
-      name: 'SOLE C80 Curved Manual Treadmill',
-      category: 'Curved Trainer With Magnetic Resistance',
-      badge: 'Best Curved Value',
-      amazonUrl: 'https://www.amazon.com/s?k=SOLE+C80+Curved+Manual+Treadmill&tag=sktiger-20',
-      priceRange: '$2,200–$2,400',
-      specs: '62 x 19 in. slat belt · 8 magnetic levels · 330 lb max user · 261 lb',
+      id: 'tru-grit-runner',
+      name: 'Tru Grit Runner Curved Manual Treadmill',
+      category: 'Curved Trainer With Sled-Push Resistance',
+      badge: 'Best for Sled Work',
+      priceRange: '$2,250–$2,500',
+      specs: 'Curved deck · 6 resistance levels · 330 lb max user · steel and aluminum frame',
       pros: [
-        'Widest running surface of any machine here at 19 in.',
-        'Eight magnetic resistance levels on a curved deck, useful for resisted sprints and sled-style pushes',
-        'Lifetime frame warranty from a mainstream treadmill brand',
-        'Bluetooth console works with SOLE+, Zwift and Kinomap',
+        'Six resistance levels, with the top two set up for sled-push simulation',
+        'Lifetime frame warranty, with 2 years on the belt, tread and monitor',
+        'Among the lowest-priced curved trainers from an established fitness brand',
+        'Battery LCD shows time, distance, pace, speed, calories and interval modes',
       ],
       cons: [
-        'Parts, deck, electronics and labour are covered for 1 year only',
-        'Newer model with thinner independent coverage than the AssaultRunner',
-        'Does not fold, weighs 261 lb and has no incline',
+        'Running-surface size and machine weight are not consistently published, so check before ordering',
+        'One independent review criticises slat gaps and finish; another reports it is loud during sprints',
+        'Basic console with no app connectivity',
       ],
       bottomLine:
-        'The curved trainer to buy if you want adjustable resistance and the lowest price among established brands.',
-      description: `The C80 is SOLE's self-powered curved treadmill and the second curved pick here for two
-        reasons: it is the least expensive curved trainer from an established brand we could verify,
-        and it adds what the AssaultRunner lacks — eight levels of magnetic resistance. On a curved
-        deck that matters, because the belt starts free-rolling and the resistance gives you a
-        controlled way to make it heavier for sled-push work or resisted sprints. The 62 by 19-inch
-        slat deck is the widest here, the user rating is 330 lb, and the machine weighs 261 lb. The
-        console connects over Bluetooth to SOLE's app and third-party platforms such as Zwift. SOLE
-        lists a lifetime frame warranty but only a year on the deck, parts, electronics and
-        labour, which is short for a $2,000-plus machine. It is newer than its rivals, so long-term owner
-        evidence is still limited. Our <a href="/sole-fitness/" class="text-[#0F62FE] font-medium">SOLE brand overview</a>
-        covers the company's motorised range.`,
+        'For a garage-gym user who wants resisted pushes and conditioning work more than refinement.',
+      description: `The Grit Runner from Tru Grit Fitness is a curved trainer aimed squarely at
+        conditioning: six resistance levels that its US dealers describe as two running settings, two
+        walking settings and two sled-push settings. For anyone who wants to drive the belt against
+        heavy resistance with their hands on the rails, that is a more deliberate design than most
+        curved trainers offer, and a very different machine from a flat walker. It is rated for 330 lb
+        users and carries a lifetime frame warranty with two years on the belt, tread and monitor.
+        Prices on 13 October 2026 ran from about $2,250 on sale to $2,495. The reservations are real.
+        Its running-surface size and machine weight vary between sources, so we have left them out;
+        one independent review criticises wide gaps between slats and the general finish, and another
+        notes it is loud when sprinting. A separate Elite version with different resistance settings
+        costs more; this card refers to the standard Runner.`,
     },
   ],
   faqs: [
@@ -522,7 +526,7 @@ export default {
     },
     {
       q: 'Is a curved treadmill worth the extra money over a flat manual?',
-      a: `Only if you will run on it. A curved trainer costs roughly ten times as much as a flat manual and is a far better machine for sprints and intervals. If you mostly want to walk, the extra money buys capability you will not use, and a flat manual or a motorised walking machine is the better purchase.`,
+      a: `Only if you will run on it. A curved trainer costs roughly eight to twelve times as much as a flat manual and is a far better machine for sprints and intervals. If you mostly want to walk, the extra money buys capability you will not use, and a flat manual or a motorised walking machine is the better purchase.`,
     },
   ],
   mistakesHeading: 'Common Mistakes Buying a Manual Treadmill',
@@ -543,7 +547,7 @@ export default {
     },
     {
       title: 'Forgetting a curved trainer does not fold or move easily',
-      body: 'Curved trainers weigh roughly 260 to 280 lb here and are around 70 inches long. Measure the room, the doorways and any stairs before ordering, and plan for two or more people on delivery day. A machine that cannot reach its room is an expensive return.',
+      body: 'Most curved trainers weigh roughly 260 lb or more and are around 70 inches long; even the lightest here is 157 lb. Measure the room, the doorways and any stairs before ordering, and plan for two or more people on delivery day. A machine that cannot reach its room is an expensive return.',
     },
   ],
   relatedHeading: 'Related Manual &amp; Curved Treadmill Guides',
@@ -575,12 +579,12 @@ export default {
   ],
   bottomLine: [
     `For walking, the <strong class="text-white">Sunny SF-T1407SMART</strong> is the sensible
-            budget buy and the <strong class="text-white">Stamina Avari Adjustable</strong> is the one
-            to choose if you want to vary the effort. Both fold away, need no outlet and turn a slow
-            walk into a climb — and both are walking machines, not running ones.`,
-    `For running, the <strong class="text-white">AssaultRunner Pro</strong> is the manual
-            treadmill to buy if you can find one in stock, and the
-            <strong class="text-white">SOLE C80</strong> adds resistance for less. If you are not sure
+            budget buy: it folds away, needs no outlet and turns a slow walk into a climb — and it is
+            a walking machine, not a running one.`,
+    `For running, the <strong class="text-white">SOLE C80</strong> is the manual treadmill to buy,
+            with eight magnetic levels and a 19-inch deck; the
+            <strong class="text-white">SB Fitness CT400</strong> is the cheapest curved trainer we
+            found, and the <strong class="text-white">Sunny SF-X7110</strong> the lightest. If you are not sure
             which kind you want, read our
             <a href="/manual-vs-motorized-treadmill/" class="text-[#5AA9FF] font-bold no-underline">manual vs motorized comparison</a>
             first; for more curved options, see the

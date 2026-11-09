@@ -2,7 +2,7 @@ export default {
   slug: 'best-dog-treadmills-for-small-dogs',
   title: 'Best Dog Treadmills for Small Dogs (2026): Sized for Toy & Small Breeds',
   description:
-    'Five dog treadmills for toy and small breeds, checked on 5 November 2026: running length against your dog, speed, side panels, what was actually in stock, and the safety rules that matter most.',
+    'Four dog treadmills for toy and small breeds sold on Amazon, checked in November 2026: running length against your dog, speed, side panels, what was actually in stock, and the safety rules that matter most.',
   crumbLabel: 'Dog Treadmills for Small Dogs',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
@@ -12,7 +12,7 @@ export default {
   socialProof: '1.5k',
   h1: ['Best Dog Treadmills for Small Dogs', 'Sized for Toy and Small Breeds'],
   standfirst:
-    'A small dog needs less belt than a big one, which widens the choice, and slower, finer speed control, which narrows it again. Here are five motorised dog treadmills that suit toy and small breeds, what was really in stock on 5 November 2026, how to size one against your dog, and the rules that keep a small dog safe on a moving belt.',
+    'A small dog needs less belt than a big one, which widens the choice, and slower, finer speed control, which narrows it again. Here are four motorised dog treadmills sold on Amazon that suit toy and small breeds, what was really in stock on 5 November 2026, how to size one against your dog, and the rules that keep a small dog safe on a moving belt.',
   ctas: [
     { label: 'See the Picks', href: '#picks' },
     { label: 'Sizing a Small Dog', href: '#sizing-small-dogs' },
@@ -30,8 +30,11 @@ export default {
           could read: Canine Athletes and FactoryPure (both GoPet dealers) for the GoPet PR700, Costway’s own
           store and a second retailer listing for the Costway machine, Target’s listing and Whole Dog
           Journal’s January 2026 comparison for the Lifepro PawRunner, EntirelyPets for the GoPet PR720F, and
-          Canine Athletes for the Dog Runner Tracks. GoPet’s and dogPACER’s own websites would not load for
-          us that day, and Amazon’s pages returned errors, so no price here is an Amazon price. A figure
+          Canine Athletes for the Dog Runner Tracks; neither of the last two is sold on Amazon, so they are
+          covered in the text rather than on cards. On 9 November 2026 we added the PR700’s Amazon listing and
+          checked the GYMAX card against its Amazon listing, a Best Buy Canada listing and a PETSITE-branded
+          Amazon listing of the same machine. GoPet’s and dogPACER’s own websites would not load for
+          us that day, and Amazon’s pages returned errors; the two Amazon prices here were added on 9 November. A figure
           appears in a product’s specification line only where two sources agree; where they disagreed — on
           running length, speed or the weight a machine suits — we left it out and say so in the text. Where
           we could not confirm a machine was in stock, its card says so and carries no price. We searched the
@@ -55,9 +58,12 @@ export default {
       id: 'quick-picks',
       heading: 'Our Picks at a Glance',
       html: `          <p>
-            Five motorised machines. Two were confirmed in stock from a US seller on 5 November 2026, and
-            three are included because they are the obvious choices for a small dog but could not be
-            confirmed as in stock on the day; their cards say so. Match the running length to your dog first.
+            Four motorised machines, each with a listing on Amazon. The GoPet PR700 is the machine we would
+            buy first and is sold on Amazon as well as by specialist dealers, at a higher price there. GoPet’s
+            longer PR720F and Dog Runner’s compact Tracks are sold only through dealers, not on Amazon, and
+            neither was confirmed in stock, so we cover them in the text and the fourth card is a budget
+            machine with a longer belt that Amazon does sell. The PawRunner could not be confirmed in stock at
+            Target; its card says so. Match the running length to your dog first.
             If you are still deciding whether your dog needs its own machine at all, read our comparison of
             <a href="/dog-treadmill-vs-human-treadmill/" class="text-[#0F62FE] font-medium">dog and human treadmills</a>
             first.
@@ -71,11 +77,10 @@ export default {
               </tr>
             </thead>
             <tbody>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">GoPet PetRun PR700</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Toy breeds</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">28 x 16 in. running surface, speeds from 0.6 mph, made as a dog treadmill; $590, in stock</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">GoPet PetRun PR700</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Toy breeds</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">28 x 16 in. running surface, speeds from 0.6 mph, made as a dog treadmill; $590 at dealers, more on Amazon</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Costway Dog Treadmill for Small/Medium Dogs</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The lowest price</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">39 in. belt, removable side panels, remote; $179.99 at Costway</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifepro PawRunner</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Small dogs under about 25–30 lb</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Whole Dog Journal’s 2026 small-dog pick; out of stock at Target</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">GoPet PetRun PR720F</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Longer small dogs and small-medium breeds</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About 52 x 16 in.; stock not confirmed</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Dog Runner Tracks</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A specialist build, if it returns</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">European-made compact dog treadmill; sold out at its main US dealer</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">GYMAX Dog Treadmill (243 lb)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Longer small dogs on a budget</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">41 x 16 in. running area by one listing, speeds from 0.6 mph, remote; about $190 on Amazon</td></tr>
             </tbody>
           </table></div>
           <p>
@@ -86,10 +91,15 @@ export default {
     },
     {
       id: 'picks',
-      heading: 'The 5 Best Dog Treadmills for Small Dogs',
+      heading: 'The 4 Best Dog Treadmills for Small Dogs',
       products: true,
       html: `          <p>
-            Ordered from the machine we would buy first for a toy or small dog to the most specialised.
+            Ordered from the machine we would buy first for a toy or small dog to the budget options. Two
+            machines that a buyer will meet are not carded because they are sold through dealers rather
+            than on Amazon and could not be confirmed in stock: GoPet’s PR720F, about 52 by 16 inches for
+            longer small dogs and small-medium breeds, which EntirelyPets listed at $1,220 without showing
+            stock, and Dog Runner’s compact Tracks, which Canine Athletes listed at $1,400 and marked sold out.
+            If your dog is too long for the cards below, those are the two to ask a dealer about.
             Small-dog treadmills are cheaper than large-dog ones, but the same rules apply: measure first,
             read the delivery and returns terms, and plan the training before the machine arrives.
           </p>`,
@@ -125,9 +135,9 @@ export default {
             and our large-dog guide reported in October that an Australian dealer referred to the closure of
             dogPACER in the US, which we could not confirm with the company. GoPet’s smallest folding model,
             the <strong>PR710F</strong> (a 42 by 16-inch surface for dogs up to 88 lb, by its dealers’
-            listings), had been removed from two dealers that sold it. We included three machines that could
-            not be confirmed in stock because they are the right shape for small dogs and a buyer will meet
-            them; each says so on its card and carries no price.
+            listings), had been removed from two dealers that sold it. We kept the PawRunner, which could not
+            be confirmed in stock, because it is the right shape for small dogs and a buyer will meet it; its
+            card says so and carries no price.
           </p>
           <p>
             <strong>Searched for recalls.</strong> We searched the CPSC recall database for every brand here.
@@ -177,7 +187,7 @@ export default {
             dog fits.
           </p>
           <p>
-            <strong>Width.</strong> Sixteen inches, as on both GoPets, is plenty for a toy or small dog to move
+            <strong>Width.</strong> Sixteen inches, as on the GoPets and the GYMAX by its listing, is plenty for a toy or small dog to move
             without placing its feet in a narrow line. Narrower belts work for very small dogs but leave less
             margin for a dog that drifts.
           </p>
@@ -357,11 +367,11 @@ export default {
   products: [
     {
       id: 'gopet-petrun-pr700',
-      name: 'GoPet PetRun PR700',
+      name: 'GoPet PetRun PR700 Dog Treadmill',
       category: 'Best dog treadmill for toy breeds',
       badge: 'Best Overall',
-      amazonUrl: 'https://www.amazon.com/s?k=GoPet+PetRun+PR700+Dog+Treadmill&tag=sktiger-20',
-      priceRange: '$590 at two US dealers (5 Nov 2026)',
+      amazonUrl: 'https://www.amazon.com/dp/B006GR9FYS?tag=sktiger-20',
+      priceRange: '$590 at two US dealers (5 Nov 2026); $851.92 on Amazon (9 Nov 2026)',
       specs: '28 x 16 in. running surface · 0.6–8 mph · for dogs up to 44 lb · 1-year warranty',
       pros: [
         'Built as a dog treadmill for toy breeds, with side panels and a low starting speed',
@@ -371,13 +381,13 @@ export default {
       ],
       cons: [
         'A 28-inch running surface suits only dogs up to about 14 inches nose to base of tail',
-        'Not returnable once shipped, with a $300 cancellation fee, at Canine Athletes',
+        'Not returnable once shipped, with a $300 cancellation fee, at Canine Athletes, and much dearer on Amazon than at the dealers',
         'Only a one-year warranty',
       ],
       bottomLine:
         'The treadmill to buy for a toy breed, if your dog measures up to about 14 inches from nose to base of tail and you accept the no-returns terms.',
       description:
-        'The PR700 is GoPet’s toy-breed treadmill, and on 5 November 2026 it was the only dog treadmill at Canine Athletes, the main US specialist dealer, marked for toy breeds. Canine Athletes and FactoryPure agree on a 28 by 16-inch running surface, speeds from 0.6 to 8 mph, a one-year warranty and a $590 price; both list a maximum dog weight of 44 lb, though FactoryPure’s overview says 45 lb. Canine Athletes adds an overall size of 46 by 23 by 11 inches, a unit weight of 63 lb and an adjustable “Air Step” incline without a stated range. Canine Athletes marked it very low in stock and FactoryPure in stock, shipping direct from GoPet in five to seven business days by freight. Walmart’s listing showed it higher, at $724.24 plus shipping. GoPet treadmills are not returnable once shipped at Canine Athletes, which charges a $300 cancellation fee, so measure your dog before ordering: 28 inches is right for a Chihuahua, Yorkie or toy poodle, and short for a Dachshund.',
+        'The PR700 is GoPet’s toy-breed treadmill, and on 5 November 2026 it was the only dog treadmill at Canine Athletes, the main US specialist dealer, marked for toy breeds. Canine Athletes and FactoryPure agree on a 28 by 16-inch running surface, speeds from 0.6 to 8 mph, a one-year warranty and a $590 price; both list a maximum dog weight of 44 lb, though FactoryPure’s overview says 45 lb. Canine Athletes adds an overall size of 46 by 23 by 11 inches, a unit weight of 63 lb and an adjustable “Air Step” incline without a stated range. Canine Athletes marked it very low in stock and FactoryPure in stock, shipping direct from GoPet in five to seven business days by freight. Walmart’s listing showed it higher, at $724.24 plus shipping. GoPet treadmills are not returnable once shipped at Canine Athletes, which charges a $300 cancellation fee, so measure your dog before ordering: 28 inches is right for a Chihuahua, Yorkie or toy poodle, and short for a Dachshund. Amazon also lists the PR700, for dogs up to 44 lb by its title, at $851.92 on 9 November 2026; that is about $260 more than the dealers charged, so check who the seller is and what its returns terms are before choosing Amazon for the convenience.',
     },
     {
       id: 'costway-dog-treadmill-small-medium',
@@ -428,52 +438,27 @@ export default {
         'The PawRunner is Lifepro’s motorised pet treadmill, and Whole Dog Journal’s January 2026 comparison names it the best choice for small dogs, with a caveat we agree with: Lifepro markets it for dogs up to 130 lb, which WDJ calls a little misleading, judging it suitable for dogs under about 25 to 30 lb with short strides. WDJ gives a 42-inch deck and a list price of $400, noting it has sold for as little as $266. Target’s listing, sold by Lifepro, gave $399.99, a lifetime limited warranty, speeds up to 12 mph and an overall size of 48 by 22.8 by 42 inches, but showed it out of stock on 5 November 2026; a retailer description gives the top speed as 7.5 mph instead, and Woot’s listing was sold out. Lifepro’s own site would not load for us, so we have printed no deck size or price on the card. Lifepro Fitness’s one CPSC recall, of infrared sauna blankets in 2025, does not concern this machine.',
     },
     {
-      id: 'gopet-petrun-pr720f',
-      name: 'GoPet PetRun PR720F',
-      category: 'Best for longer small dogs and small-medium breeds',
-      badge: 'Most Room',
-      amazonUrl: 'https://www.amazon.com/s?k=GoPet+PetRun+PR720F+Dog+Treadmill&tag=sktiger-20',
-      priceRange: 'Stock not confirmed on 5 Nov 2026',
-      specs: '52 x 16 in. running area · for dogs up to 132 lb',
+      id: 'gymax-dog-treadmill-243',
+      name: 'GYMAX Dog Treadmill (243 lb)',
+      category: 'Budget dog treadmill with a longer belt',
+      badge: 'Longer Belt, Low Price',
+      amazonUrl: 'https://www.amazon.com/dp/B0H2HJVR1R?tag=sktiger-20',
+      priceRange: 'About $190 (Amazon, 9 Nov 2026)',
+      specs: '2.5 HP motor · 0.6–6 mph · 15 preset programs · 243 lb limit · remote control · adjustable incline',
       pros: [
-        'About 52 by 16 inches of running surface, long enough for Dachshunds, Corgis and Beagles',
-        'Remote control and push-button speed changes, by GoPet’s own description',
-        'The same maker and control layout as the PR700',
-        'Listed for dogs up to 132 lb by its dealers, so no question of it stalling',
+        'A 41 by 16-inch running area by one retailer’s listing, a little longer than the Costway’s 39 inches',
+        'Starts at 0.6 mph, and a remote lets you stand beside the dog',
+        'About a fifth of the price of GoPet’s dealer-only PR720F',
       ],
       cons: [
-        'Canine Athletes no longer lists it, and EntirelyPets did not show stock',
-        'Prices we saw ran from $795 to $1,220 depending on the seller and date',
-        'Sources disagree on its speed range and on whether it folds',
+        'Its running-area size comes from one retailer listing; the Amazon title does not give it',
+        'A 243 lb limit that, like Costway’s, says nothing about which dogs fit; go by length',
+        'From the same Costway family of brands as the budget card above, with no independent review we could find',
       ],
       bottomLine:
-        'The GoPet to look for if your small dog is too long for the PR700, but confirm stock and terms with the seller before you pay.',
+        'A budget option for a small dog slightly too long for the Costway, if you confirm the belt length on the listing before ordering.',
       description:
-        'The PR720F is GoPet’s treadmill for small and medium breeds. Dealer listings, including Canine Athletes’ indexed copy and our general roundup, give a running surface of about 52 by 16 inches and a rating for dogs up to 132 lb, and EntirelyPets lists GoPet’s “Small-Medium (under 132 lbs)” model at the same rating. That length suits small dogs up to about 26 inches from nose to base of tail, which covers long-backed breeds the PR700 is too short for. On 5 November 2026, Canine Athletes no longer had a product page for it, and EntirelyPets listed it at $1,220 without showing whether it was in stock; earlier dealer prices were around $795. GoPet’s own store would not load for us. Sources disagree on its speed range and on whether it folds, so confirm both. We have kept it on this page because it is the obvious step up from the PR700, and left its price off the card because we could not confirm anyone was selling it on the day.',
-    },
-    {
-      id: 'dog-runner-tracks',
-      name: 'Dog Runner Tracks',
-      category: 'A specialist compact dog treadmill, if it comes back',
-      badge: 'Sold Out',
-      amazonUrl: 'https://www.amazon.com/s?k=Dog+Runner+Tracks+Dog+Treadmill&tag=sktiger-20',
-      priceRange: 'Sold out at Canine Athletes (5 Nov 2026)',
-      specs: 'Compact motorised dog treadmill · side panels · made by Dog Runner in Belgium',
-      pros: [
-        'From Dog Runner, whose larger machines head our large-dog guide',
-        'A running surface its dealer gives as 52 by 16 inches, long enough for most small breeds',
-        'Built as a dog treadmill rather than converted from a walking pad',
-        'Listed at $1,400, well below Dog Runner’s large-dog models',
-      ],
-      cons: [
-        'Sold out at its main US dealer on the day we checked',
-        'Its running surface and 155 lb rating come from one dealer’s listing',
-        'Dog Runner’s dealer terms on its larger machines include cancellation fees and no returns once shipped',
-      ],
-      bottomLine:
-        'Worth watching for if you want a specialist-built small-dog treadmill and the GoPets do not suit; do not pay a deposit without a delivery date.',
-      description:
-        'The Tracks is the compact motorised treadmill from Dog Runner, the Belgian family business whose Revolution Pro and Ortho Pro head our large-dog guide. In October 2026 Canine Athletes, which calls itself Dog Runner’s largest US dealer, listed it with a 52 by 16-inch running surface and a 155 lb capacity; our large-dog guide left it out because that is too short for most large dogs, which is exactly what makes it right for small and small-medium ones. On 5 November 2026 Canine Athletes listed it at $1,400 and marked it sold out, and we found no other US dealer with stock. We could not confirm its figures from a second source, so the card carries features rather than numbers. Canine Athletes’ terms on Dog Runner’s larger machines include freight delivery, a cancellation fee and no returns once shipped; expect the same here.',
+        'GoPet’s PR720F, the obvious step up from the PR700 for longer small dogs, is sold through dealers rather than on Amazon and was not confirmed in stock, so this card is the longest-belt budget dog treadmill we could check on Amazon. GYMAX is one of Costway’s brands, and its 243 lb dog treadmill is a different model from the Costway machine above. The Amazon listing gives a 243 lb limit, a remote, adjustable incline and preset programs; a Best Buy Canada listing for the GYMAX dog treadmill with the same 243 lb limit gives a 2.5 HP motor, 0.6 to 6 mph, 15 preset programs and a 41 by 16-inch running area, and an Amazon listing for the same machine under Costway’s PETSITE brand gives the same motor, speeds, programs and limit. Forty-one inches suits small dogs up to about 20 inches from nose to base of tail, which is longer than the Costway allows but well short of the PR720F’s 52 inches, so a Corgi or Beagle may still need the GoPet. We found no independent review, so confirm the belt length on the listing you buy from. Amazon listed it at $189.99 on 9 November 2026.',
     },
   ],
   faqs: [
@@ -483,7 +468,7 @@ export default {
     },
     {
       q: 'What is the best doggie treadmill for small dogs?',
-      a: 'For toy breeds, the GoPet PetRun PR700, with a 28 by 16-inch running surface and speeds from 0.6 mph, was in stock at $590 from two US dealers on 5 November 2026. For longer small dogs, the GoPet PR720F, at about 52 inches, is the step up if you can find it in stock. On a budget, Costway’s 39-inch machine was $179.99.',
+      a: 'For toy breeds, the GoPet PetRun PR700, with a 28 by 16-inch running surface and speeds from 0.6 mph, was in stock at $590 from two US dealers on 5 November 2026. Amazon also lists the PR700, at a higher price. For longer small dogs, GoPet’s PR720F, at about 52 inches, is the step up if you can find it in stock at a dealer. On a budget, Costway’s 39-inch machine was $179.99, and GYMAX’s longer 243 lb model about $190 on Amazon.',
     },
     {
       q: 'Can a small dog use a human treadmill or walking pad?',
@@ -559,7 +544,8 @@ export default {
   bottomLine: [
     `For a toy breed, the <strong class="text-white">GoPet PetRun PR700</strong> is the machine to buy:
             a 28 by 16-inch running surface, speeds from 0.6 mph and side panels, in stock at $590 from two US
-            dealers. Longer small dogs need the 52-inch GoPet PR720F, if you can find it, and the
+            dealers (Amazon lists it too, for more). Longer small dogs need the 52-inch GoPet PR720F from a
+            dealer, if you can find it, or the 41-inch GYMAX on a budget, and the
             <strong class="text-white">Costway</strong> machine is the budget option at $179.99 with 30-day
             returns.`,
     `Whichever you choose, measure your dog against the running surface first, speak to your vet before the

@@ -2,7 +2,7 @@ export default {
   slug: 'best-air-bikes',
   title: 'Best Air Bikes (2026): 7 Fan Bikes and Assault Bikes Checked',
   description:
-    'Seven air bikes checked against makers and independent reviews: AirDyne, AssaultBike, Rogue Echo, Titan and BikeErg; belt vs chain, noise, size and consoles.',
+    'Seven air bikes checked against makers and independent reviews: AirDyne, AssaultBike, XMark, Titan and BikeErg; belt vs chain, noise, size and consoles.',
   crumbLabel: 'Best Air Bikes',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
@@ -38,7 +38,8 @@ export default {
           checking tools could not load Amazon's own pages on 19 October, so Amazon availability for
           the Schwinn, Assault, Titan and Concept2 bikes rests on independent reviewers' Amazon links
           and past listings; confirm the seller on the listing before you order. The Rogue Echo Bike
-          is sold by Rogue directly rather than on Amazon. Prices are those we saw on 19 October 2026
+          is sold by Rogue directly rather than on Amazon, so its card was replaced in November 2026 by
+          XMark's CAT 5 Hurricane, checked against its Amazon listing and a US retailer on 9 November. Prices are those we saw on 19 October 2026
           and change often. We earn a commission if you buy through the Amazon links on this page; it
           does not change which products we list or what we say about them.
           <strong class="text-gray-900">What this page is, and is not.</strong> We review equipment;
@@ -53,8 +54,9 @@ export default {
             <strong>The best air bike for most homes is the Schwinn AirDyne AD7</strong>: a belt drive
             that reviewers found quieter and lower-maintenance than a chain, a 350 lb weight rating, a
             10-year frame warranty and a console that runs on batteries. If you want the best assault
-            bike in the CrossFit sense, the Rogue Echo Bike and the belt-driven AssaultBike Pro X are the
-            two to compare; if you want the lowest price from an established brand, the chain-driven
+            bike in the CrossFit sense, the belt-driven AssaultBike Pro X and XMark's commercial CAT 5
+            Hurricane are the two to compare (the Rogue Echo, which many reviewers favour, is sold only by
+            Rogue); if you want the lowest price from an established brand, the chain-driven
             AssaultBike Classic is $749 on sale.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
@@ -67,7 +69,7 @@ export default {
             </thead>
             <tbody>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Schwinn AirDyne AD7</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most homes</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Belt drive, 350 lb rating, 10-year frame warranty; $1,099 on Schwinn</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rogue Echo Bike V3.0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Heavy, hard use</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">123 lb steel frame and belt drive; sold direct by Rogue at $945</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">XMark CAT 5 Hurricane</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Heavy, hard use</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Commercial steel frame, belt drive, 330 lb rating; about $1,279 on Amazon</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">AssaultBike Pro X</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Belt drive under $900</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Assault's belt-driven bike, Bluetooth and ANT+, 7-year frame warranty</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">AssaultBike Classic</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lowest price, tight spaces</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About 96 lb, 50.95 x 23.34 in.; chain drive; $749 on sale</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Titan Fitness Fan Bike</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Narrowest frame</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20.4 in. wide, 330 lb rating, turf tires; chain drive</td></tr>
@@ -119,8 +121,8 @@ export default {
           </p>
           <p>
             <strong>Recall checks.</strong> We searched the US Consumer Product Safety Commission's
-            recall database by brand for every maker on this page — Schwinn, Assault Fitness, Rogue
-            Fitness (Coulter Ventures), Titan Fitness and Concept2 — and for "air bike" and "fan bike" as
+            recall database by brand for every maker on this page — Schwinn, Assault Fitness, XMark,
+            Titan Fitness and Concept2, plus Rogue Fitness (Coulter Ventures), whose Echo we discuss — and for "air bike" and "fan bike" as
             product types. None of the seven bikes is under a recall, and we found no air bike recall of
             any brand. Two of the brands have recalled other products: Coulter Ventures recalled Rogue
             home timers for a fire hazard in November 2020, and Titan recalled weight-lifting safety
@@ -208,7 +210,7 @@ export default {
           </p>
           <ul>
             <li><strong>Chain drive</strong> — the AssaultBike Classic, the AssaultBike Elite and the Titan Fan Bike. A bicycle-style chain is cheap, strong and familiar. It also needs lubricating and its tension checking; BarBend suggests doing both on the Titan roughly monthly. Chains make a metallic rattle on top of the fan noise, and Garage Gym Reviews calls the Classic's chain louder than the Echo's belt.</li>
-            <li><strong>Belt drive</strong> — the AirDyne AD7, the Rogue Echo, the AssaultBike Pro X and the BikeErg, and OutdoorGearLab describes the AD6 as belt-driven too. A belt is quieter and needs no lubrication. Assault describes the Pro X's drive as a two-stage system, a cogged belt and then a poly-V belt; Concept2 uses polygroove belts with a self-tensioning system.</li>
+            <li><strong>Belt drive</strong> — the AirDyne AD7, the XMark CAT 5, the AssaultBike Pro X and the BikeErg (and, off Amazon, the Rogue Echo), and OutdoorGearLab describes the AD6 as belt-driven too. A belt is quieter and needs no lubrication. Assault describes the Pro X's drive as a two-stage system, a cogged belt and then a poly-V belt; Concept2 uses polygroove belts with a self-tensioning system.</li>
           </ul>
           <p>
             The trade-offs are smaller than the marketing suggests. Garage Gym Reviews found the Echo's
@@ -245,7 +247,7 @@ export default {
           <ul>
             <li><strong>Choose the room first.</strong> A garage, basement or ground-floor room on a slab is the natural home for an air bike. In an upstairs flat, the airborne noise carries through doors and the low-frequency rumble of hard efforts carries through the floor.</li>
             <li><strong>Use a mat.</strong> A dense rubber mat under the frame stops vibration traveling into a wooden floor and protects it from sweat. It does nothing for fan noise. Our <a href="/best-treadmill-mats/" class="text-[#0F62FE] font-medium">equipment mat guide</a> covers sizes and thicknesses.</li>
-            <li><strong>Fit the wind guard.</strong> Schwinn includes an air diverter on the AD7 and Rogue sells one for the Echo. These redirect the blast of air away from your legs and face; they are about comfort rather than quiet.</li>
+            <li><strong>Fit the wind guard.</strong> Schwinn includes an air diverter on the AD7 and XMark a wind guard on the CAT 5. These redirect the blast of air away from your legs and face; they are about comfort rather than quiet.</li>
             <li><strong>Pick your hours.</strong> Intervals are short. A 15-minute session in the early evening is easier on a household than the same session at 6 a.m.</li>
           </ul>
           <p>
@@ -271,7 +273,7 @@ export default {
             <li><strong>Titan Fan Bike:</strong> 50.25 by 20.4 inches, 111 lb — the narrowest classic fan bike here.</li>
             <li><strong>AssaultBike Classic:</strong> 50.95 by 23.34 inches, about 96 lb — the lightest of the fan bikes, which is why Garage Gym Reviews rates it highly for tight spaces.</li>
             <li><strong>Schwinn AirDyne AD7:</strong> 53 by 26.5 inches, 113 lb.</li>
-            <li><strong>Rogue Echo Bike:</strong> Rogue gives a 44.5 by 23.75-inch footprint at the base, but 55 inches overall with the seat furthest back and 29.5 inches across the handles. BarBend calls it longer and wider than the average air bike, which is the figure to plan around.</li>
+            <li><strong>XMark CAT 5 Hurricane:</strong> a US retailer gives 53 by 26 inches and 130 lb; XMark's Amazon listing gives no footprint, so confirm it before ordering.</li>
           </ul>
           <p>
             Remember the handles. On a fan bike they swing forward and back through a wide arc, and the
@@ -299,8 +301,9 @@ export default {
           </p>
           <ul>
             <li><strong>No Bluetooth to apps:</strong> the AssaultBike Classic (it reads a Polar wireless heart-rate strap), and both AirDyne models, which read telemetric Polar-compatible straps. BarBend notes the AD7's console is bright and among the best it has used on an air bike, but it does not connect to apps.</li>
-            <li><strong>Bluetooth and ANT+:</strong> the AssaultBike Pro X (dual-band heart rate and the Assault Fitness app), the Rogue Echo V3.0 (an LCD with Bluetooth and ANT+, and an optional M2 monitor upgrade for $155), and the Concept2 BikeErg, whose PM5 monitor connects to Concept2's own apps and to <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium" data-autolink>Zwift</a>, according to BarBend.</li>
+            <li><strong>Bluetooth and ANT+:</strong> the AssaultBike Pro X (dual-band heart rate and the Assault Fitness app), and the Concept2 BikeErg, whose PM5 monitor connects to Concept2's own apps and to <a href="/zwift-treadmill-guide/" class="text-[#0F62FE] font-medium" data-autolink>Zwift</a>, according to BarBend.</li>
             <li><strong>Titan:</strong> an LCD with interval programs that pairs with Polar Bluetooth heart-rate transmitters.</li>
+            <li><strong>XMark CAT 5:</strong> a console that tracks distance, calories, time and intervals; its listing describes no app connection.</li>
           </ul>
           <p>
             <strong>Power.</strong> None of the fan bikes needs mains power. The AD7's console takes two D
@@ -345,7 +348,7 @@ export default {
           <p>
             <strong>Set-up.</strong> Set the saddle so your knee is slightly bent at the bottom of the
             pedal stroke, as on any bike, and check the seat's fore-aft position so you can reach the
-            handles at full extension without leaning. The AD7, Echo and Pro X adjust fore and aft; the
+            handles at full extension without leaning. The AD7 and Pro X adjust fore and aft; the
             AD6's seat adjusts only for height and tilt, according to OutdoorGearLab. Tighten the pedal
             straps for sprints, because feet slipping off is the usual way people hurt themselves on these
             bikes.
@@ -357,15 +360,16 @@ export default {
       html: `          <ol>
             <li><strong>Where will it live?</strong> If the answer is an upstairs room with neighbors, reconsider the whole category. If it is a garage, a chain drive and a basic console are fine.</li>
             <li><strong>Belt or chain?</strong> Belt if it is indoors or you will never do maintenance; chain if price matters most and you are happy to lubricate it.</li>
-            <li><strong>What weight rating do you need?</strong> The Classic and AD6 are rated to 300 lb, the Titan, Echo and Pro X to 330 lb, and the AD7 and BikeErg to 350 lb. Choose a bike rated comfortably above your weight; a heavier frame also feels steadier during hard efforts.</li>
+            <li><strong>What weight rating do you need?</strong> The Classic and AD6 are rated to 300 lb, the Titan, XMark CAT 5 and Pro X to 330 lb, and the AD7 and BikeErg to 350 lb. Choose a bike rated comfortably above your weight; a heavier frame also feels steadier during hard efforts.</li>
             <li><strong>How much floor and ceiling do you have?</strong> Measure the space with the handles' swing in mind, and check the maker's ceiling figure if the bike will go in a basement.</li>
-            <li><strong>Do you want app data?</strong> If you want your sessions in an app, choose the Pro X, Echo or BikeErg. If a timer and a number are enough, every bike here will do.</li>
-            <li><strong>What does the warranty actually cover?</strong> Frame terms run from Rogue's two years overall to Schwinn's ten years on the frame. Parts and labor terms matter more on a machine with moving arms and pivots; read them before you buy.</li>
+            <li><strong>Do you want app data?</strong> If you want your sessions in an app, choose the Pro X or BikeErg. If a timer and a number are enough, every bike here will do.</li>
+            <li><strong>What does the warranty actually cover?</strong> Frame terms run from two years overall on Rogue's Echo to Schwinn's ten years on the frame, and we could not find XMark's terms for the CAT 5 at all. Parts and labor terms matter more on a machine with moving arms and pivots; read them before you buy.</li>
           </ol>
           <p>
             <strong>On price.</strong> Air bikes cluster between about $700 and $1,300. BarBend's
-            buying guide puts most between $700 and $900, which matches what we saw: $749 to $945 for the
-            Classic, Titan, Pro X and Echo, with the Schwinn AD7 and the BikeErg near $1,100. Shipping
+            buying guide puts most between $700 and $900, which matches what we saw: $749 to $899 for the
+            Classic, Titan and Pro X, with the Schwinn AD7 and the BikeErg near $1,100 and the XMark CAT 5
+            at $1,119 to $1,279. Shipping
             terms differ — Assault and Schwinn offered free standard shipping on 19 October, and Concept2
             listed $60 ground shipping to the lower 48 states — so compare delivered prices. Our
             <a href="/home-gym/" class="text-[#0F62FE] font-medium">Home Gym hub</a> lists the other
@@ -400,28 +404,28 @@ export default {
         "The AD7 is Schwinn's top AirDyne and the air bike we also picked on our cardio machines page. Schwinn's page and BarBend's hands-on review agree on a 350 lb maximum user weight, 113 lb of steel, a 53 by 26.5-inch footprint and a 10-year frame warranty; BarBend describes the drive as a belt, which its testers found quiet apart from the fan itself, while Schwinn's page describes a single-stage direct drive. The four-way adjustable seat moves fore and aft as well as up and down, the multi-position handles suit different grips, and Schwinn includes an air diverter to keep the blast of air off your legs. The console shows time, distance, calories, RPM, watts, pulse and speed, reads Polar-compatible telemetric heart-rate straps and runs on two D batteries, with an AC adapter as an option; it does not connect to apps. On 19 October Schwinn listed two years on mechanical parts and electronics and six months of labor; BarBend's 2024 review gave one year on electronics, so read the terms on the day you buy. Schwinn had it at $1,099 against a $1,299 list price, with free standard shipping. Schwinn gives a minimum ceiling height of your height plus 17.6 inches.",
     },
     {
-      id: 'rogue-echo-bike-v3',
-      name: 'Rogue Echo Bike V3.0',
-      category: 'Best Air Bike for Heavy Use',
-      badge: 'Most Durable',
-      amazonUrl: 'https://www.amazon.com/s?k=Rogue+Echo+Bike&tag=sktiger-20',
-      priceRange: '$895–$945',
-      specs: 'Fan resistance · belt drive · 330 lb max user · 44.5 x 23.75 in. base (55 x 29.5 in. overall) · 123 lb · Bluetooth and ANT+ LCD · 2-yr warranty',
+      id: 'xmark-cat-5-hurricane',
+      name: 'XMark CAT 5 Hurricane Commercial Air Bike',
+      category: 'Commercial Air Bike for Heavy Use',
+      badge: 'Built for Hard Use',
+      amazonUrl: 'https://www.amazon.com/dp/B0DJ9NL67X?tag=sktiger-20',
+      priceRange: '$1,119–$1,279',
+      specs: 'Fan resistance · belt drive · steel-bladed fan · 330 lb max user · wind guard, cup and device holders included',
       pros: [
-        'A heavy steel frame that Garage Gym Reviews and BarBend both rate top marks for durability',
+        'Sold as a commercial bike for gyms and CrossFit-style boxes, with a heavy-duty steel mainframe',
         'Belt drive with no chain to lubricate',
-        'Console connects over Bluetooth and ANT+, with an optional M2 monitor upgrade',
-        'Seat adjusts for height and fore-aft, with the knob moved behind the post on V3.0',
+        'A wind guard with directional vents comes standard, where Rogue sells one for the Echo as an extra',
+        'XMark and a US retailer agree on the 330 lb maximum user weight and the belt drive',
       ],
       cons: [
-        'Sold by Rogue directly, not on Amazon',
-        'A short two-year warranty for the price',
-        'Longer and wider than most rivals, and Garage Gym Reviews found its belt drive harder to push than a chain',
+        'Fan size is 25.5 inches on Amazon and 26 inches at a retailer, and only the retailer gives a weight (130 lb) and footprint (53 x 26 in.)',
+        'We found no published warranty terms or independent hands-on review',
+        'The console tracks distance, calories, time and intervals but no app connection is described',
       ],
       bottomLine:
-        'For a garage gym that will see hard, frequent use and a buyer who values build over extras.',
+        'The heavy, commercial-style air bike we found on Amazon for a garage gym that will see hard use. Ask XMark for the warranty in writing before you buy.',
       description:
-        "The Echo is Rogue's air bike and the official air bike of the CrossFit Games, and its case is mass and stiffness. Rogue's page, Garage Gym Reviews and BarBend agree on 123 lb, a 330 lb maximum user weight, a belt-driven steel fan and a two-year warranty. Rogue gives a footprint of 44.5 by 23.75 inches at the base, but 55 inches long with the seat furthest back and 29.5 inches across the handles; BarBend describes it as longer and wider than the average air bike, so plan around the larger figures. Version 3.0 has a 5 by 8-inch LCD with Bluetooth and ANT+, and Rogue sells an M2 monitor upgrade kit for $155 that adds programming and app connectivity. Garage Gym Reviews named it its best air bike overall in 2026, praising stability and responsiveness, while noting the belt drive feels harder to push than a chain. It was $945 on Rogue on 19 October; Garage Gym Reviews quoted $895. Rogue sells it direct rather than through Amazon, so the button below searches Amazon and may show third-party or similar listings — buy from Rogue if you want this bike.",
+        "The Rogue Echo Bike, the heavyweight many reviewers pick for a garage gym, is sold by Rogue directly rather than on Amazon. The closest bike we found there in purpose is XMark's CAT 5 Hurricane, which XMark sells as a commercial air bike for gyms and boxes running HIIT and conditioning classes. Its Amazon listing and a US retailer agree on a belt drive, a heavy-duty steel mainframe, a steel-bladed fan, a wide base, a large contoured seat and a 330 lb maximum user weight, the same rating as the Echo. The listing adds a console that tracks distance, calories, time and intervals, and a wind guard with directional vents, a cup holder and a device holder as standard. The sources differ on the fan, 25.5 inches on Amazon and 26 inches with 12 blades at the retailer, and only the retailer gives a 130 lb weight, a 53 by 26-inch footprint and a 35 to 43-inch seat height range. We could not find XMark's warranty terms or an independent review, so its durability is the maker's claim rather than a tested one. Amazon showed it at $1,279 on 9 November 2026; the retailer listed $1,119.",
     },
     {
       id: 'assaultbike-pro-x',
@@ -547,7 +551,7 @@ export default {
   faqs: [
     {
       q: 'What is the best air bike for home?',
-      a: `For most homes, the Schwinn AirDyne AD7: a belt drive that reviewers found quiet for an air bike, a 350 lb rating, a 10-year frame warranty and a battery console, for $1,099 on sale. The Rogue Echo and AssaultBike Pro X are the belt-driven alternatives under $950, and the AssaultBike Classic is the cheapest well-proven option.`,
+      a: `For most homes, the Schwinn AirDyne AD7: a belt drive that reviewers found quiet for an air bike, a 350 lb rating, a 10-year frame warranty and a battery console, for $1,099 on sale. The AssaultBike Pro X is the belt-driven alternative under $900, XMark's CAT 5 Hurricane the commercial-style one on Amazon, and the AssaultBike Classic is the cheapest well-proven option.`,
     },
     {
       q: 'What is the best assault bike?',
@@ -567,7 +571,7 @@ export default {
     },
     {
       q: 'How much space does an air bike need?',
-      a: `Plan for roughly 4 to 4.5 feet by 2 feet of floor for the frame, plus room for the handles to swing and your elbows. The Titan is about 20 inches wide and the AssaultBike Classic about 51 by 23 inches; the Rogue Echo is 55 by 29.5 inches overall. Check the maker's ceiling figure in a low basement.`,
+      a: `Plan for roughly 4 to 4.5 feet by 2 feet of floor for the frame, plus room for the handles to swing and your elbows. The Titan is about 20 inches wide and the AssaultBike Classic about 51 by 23 inches; a retailer gives the XMark CAT 5 as 53 by 26 inches. Check the maker's ceiling figure in a low basement.`,
     },
   ],
   mistakesHeading: 'Common Mistakes Buying an Air Bike',
@@ -622,7 +626,8 @@ export default {
     `<strong class="text-white">For most homes, buy the Schwinn AirDyne AD7</strong>: a belt drive,
             a 350 lb rating and a 10-year frame warranty, with nothing to plug in. If you want an
             AssaultBike, choose the belt-driven Pro X over the Classic unless every dollar counts; if the
-            bike will take a beating in a garage gym, the Rogue Echo is the heavyweight. Cyclists and
+            bike will take a beating in a garage gym, XMark's commercial CAT 5 Hurricane is the heavyweight
+            on Amazon. Cyclists and
             anyone short of space should look at the Concept2 BikeErg instead of a fan bike.`,
     `Whatever you choose, put it where the noise will not matter, leave room for the handles, and
             treat its calorie count as a personal benchmark rather than a fact. For one pick per machine

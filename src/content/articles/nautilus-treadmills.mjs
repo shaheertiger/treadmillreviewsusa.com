@@ -35,7 +35,9 @@ export default {
           bankruptcy-sale coverage), and model figures from TreadmillReviews.com, USA Home Gym, Garage Gym
           Reviews and a Schwinn-hosted Nautilus specification page seen in search results. Discontinued-model
           figures come from old listings and reviews, several of which disagree; conflicts are set out in the
-          text and kept off the cards. Prices are those shown on the day and change often. We have not tested
+          text and kept off the cards. On 9 November 2026 we replaced the used Nautilus T614 card, which
+          cannot be bought on Amazon, with the Schwinn 810, whose figures are those checked for our Schwinn
+          guide. Prices are those shown on the day and change often. We have not tested
           any of these treadmills. As an Amazon Associate we earn from qualifying purchases; that does not
           change what we say.`,
   lead: `Searches for "Nautilus treadmill" are still common, and so are the machines: plenty of T614s, T616s
@@ -145,28 +147,28 @@ export default {
         'The 815 is the top of Schwinn Fitness’s four current treadmills. Schwinn’s US store lists a 20 by 60-inch running area, speeds up to 12 mph, 0 to 12% incline, eight workouts, Bluetooth speakers and app links to JRNY, Peloton and Zwift, with a 325 lb maximum user weight, 76 by 34 by 57 inches assembled and 187 lb; a January 2026 deal listing agreed on 12 mph and 12%. Schwinn lists 10 years on the frame and drive motor and one year on parts, electronics and labour. It was $1,099 on 5 November 2026.',
     },
     {
-      id: 'nautilus-t614',
-      name: 'Nautilus T614',
-      category: 'The One Nautilus Not Recalled, Sold Used Only',
-      badge: 'Used Only',
-      priceRange: 'Used only; no reliable price data',
-      amazonUrl: 'https://www.amazon.com/s?k=Nautilus+T614+Treadmill&tag=sktiger-20',
-      specs: '20 x 55 in. running surface · 2.75 CHP · up to 12 mph · 300 lb max user · folding',
+      id: "schwinn-810",
+      name: "Schwinn 810",
+      category: "Closest New Match for the T614",
+      badge: "Closest to the T614",
+      priceRange: "$899 at Schwinn Fitness on 5 Nov 2026",
+      specs: "20 x 55 in. belt · 0-10 mph · 0-10% motorized incline · 275 lb max user · SoftDrop folding · 155 lb",
       pros: [
-        'Not covered by the 2022 recall, which named only T616 and T618 serial ranges',
-        'A 300 lb user rating, generous for its size',
-        'Often offered cheaply second-hand',
+        "The same 20 by 55-inch belt as the T614, bought new with a warranty",
+        "Schwinn and two independent reviews agree on its key figures",
+        "Folds with a SoftDrop assist and stows to 39.5 inches long",
+        "16 programs and partial FTMS app connectivity",
       ],
       cons: [
-        'Discontinued for years; the brand behind it no longer exists as a treadmill seller',
-        'A 55-inch deck, short for running',
-        'Parts must come from third-party suppliers',
-        'Sources disagree on its incline range and original warranty',
+        "A 10 mph top speed and 10% incline, both below what the T614 was listed with",
+        "275 lb user limit, below the T614’s 300 lb",
+        "Motor ratings conflict: 2.6 CHP in one review, 1.5 HP at a retailer; Schwinn gives none",
+        "One year on parts, electronics and labour",
       ],
       bottomLine:
-        'Only worth buying as a cheap walking treadmill that runs well in front of you; budget for no support.',
+        "The new treadmill to buy if you liked the T614: the same 20 by 55-inch deck from the same family, with a warranty, for a walker under 275 lb.",
       description:
-        'The T614 was Nautilus’s entry folding treadmill. TreadmillReviews.com and USA Home Gym agree on a 20 by 55-inch running surface, a 2.75 continuous horsepower motor, a 12 mph top speed and a 300 lb user rating, and that Nautilus discontinued it. Its incline is given as 0 to 12% in some listings; the original warranty is variously quoted as 10 years on frame and motor with two years mechanical, or with 90 days of labour. We found no dependable used-price data; private sales vary too much to quote.',
+        "A used T614 is not something Amazon sells, so this card shows the new machine closest to it: Schwinn's 810, from the Schwinn brand that Nautilus Inc. owned and Johnson Health Tech now sells, and the one Schwinn with the T614's 20 by 55-inch deck. Schwinn's US store lists a 20 by 55-inch belt, 0 to 10 mph, 0 to 10% motorized incline, a 275 lb maximum user weight, 69.1 by 35.6 by 56.7 inches assembled, 39.5 inches long folded and 155 lb, on a standard 110-120 V outlet; Garage Gym Reviews and Best Buy's listing agree on the belt, speed, incline and capacity. Against the T614 it gives up some top speed and user rating, and gains a current warranty and a maker that answers the phone: Schwinn lists 10 years on the frame and drive motor and one year on mechanical parts, electronics and labour. Like the T614, it is a walking and light-jogging machine, not a runner's. It was $899 on Schwinn's store on 5 November 2026; the figures are those checked for our Schwinn treadmill guide.",
     },
   ],
   sections: [
@@ -358,7 +360,8 @@ export default {
       html: `          <p>
             The current Bowflex and Schwinn treadmills come from the same lineage as the Nautilus T-series: Nautilus
             Inc. built all three brands, and Johnson Health Tech now owns Bowflex and Schwinn. The cards below set out
-            those machines with the prices on 5 November 2026, plus the T614 for anyone set on a used Nautilus.
+            those machines with the prices on 5 November 2026. A used T614 cannot be bought on Amazon, so
+            its card shows the Schwinn 810, the current machine with the T614's 20 by 55-inch deck.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
             <thead>
@@ -420,8 +423,8 @@ export default {
       html: `          <p>
             The T616 and T618 were sold on Amazon until 2021, and the recall notice lists Amazon among the sellers. We
             would not buy one there now: any listing still offering a new T616 or T618 would be old stock or
-            third-party resale of a recalled product, and the T614 has long been unavailable. The Amazon buttons on
-            the Nautilus card go to a tagged search, which mostly returns replacement parts. Bowflex and Schwinn
+            third-party resale of a recalled product, and the T614 has long been unavailable. This page no longer cards
+            a Nautilus model for that reason; the Schwinn 810 card takes the T614's place. Bowflex and Schwinn
             treadmills appear on Amazon at times, but the prices above are from Bowflex's and Schwinn's own stores,
             which also handle warranty registration directly. Our guide to
             <a href="/buying-a-treadmill-on-amazon/" class="text-[#0F62FE] font-medium">buying a treadmill on Amazon</a>

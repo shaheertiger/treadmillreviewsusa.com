@@ -27,7 +27,10 @@ export default {
           prices rather than list, and the section on buying at the right time of year explains
           when the reductions actually happen. We have not tested these machines: the
           specifications are the manufacturers' published figures, and judgements on how they run
-          come from what those figures imply, not from our own measurements.`,
+          come from what those figures imply, not from our own measurements. A used mid-range machine
+          is discussed below as an alternative, but it cannot be bought new on Amazon, so on 9 November
+          2026 the value card became Sunny's Auto Incline Treadmill, whose figures are those checked
+          for our auto incline treadmill guide.`,
   sections: [
     {
       id: 'what-changes',
@@ -426,27 +429,27 @@ export default {
         'Horizon occupies a useful position in this band: plainly specified machines with no subscription and no ecosystem, sold at prices where competitors are still attaching accounts to things. The T101 is the clearest example. The hydraulic fold is the standout feature at this price — manual latches are the norm here, and a manual fold that takes effort tends to stop being used, while an assisted one does not. The dial-style speed and incline controls are genuinely better than repeatedly pressing a button, particularly mid-session. The console is basic, with few metrics and no history, and the 2.5 CHP motor is the lowest among our picks, so this is a walking machine that will tolerate a jog rather than the reverse. For a buyer who wants no software in their life, it is the cleanest option here.',
     },
     {
-      id: 'used-mid-range-800',
-      name: 'Used Mid-Range Treadmill',
-      category: 'Best Hardware Per Dollar',
-      badge: 'Best Value',
-      amazonUrl: 'https://www.amazon.com/s?k=treadmill+lubricant+maintenance+kit&tag=sktiger-20',
-      priceRange: '$600-$800 secondhand',
-      specs: 'Typically 3-5 years old · 3.0-3.5 CHP · 60 in. deck · 250+ lbs assembled',
+      id: "sunny-auto-incline-treadmill",
+      name: "Sunny Health & Fitness Auto Incline Treadmill",
+      category: "Best New Value With Powered Incline",
+      badge: "Best Value New",
+      priceRange: "About $700 (Amazon, 6 Nov 2026)",
+      specs: "0–15% auto incline · 20 x 53 in. running surface · up to 10 mph · 2.5 HP brushless motor · 300 lb capacity · folds",
       pros: [
-        'Buys hardware that cost $1,800-$2,500 new',
-        'A genuine 60-inch running deck and a frame that does not move',
-        'Depreciation already absorbed — resale losses minimal',
-        'Frequently simpler and more repairable than current models',
+        "Arrives fully assembled; raise and lock the handlebar and it is ready",
+        "A 15% auto incline in 15 levels, more than most machines at this price",
+        "A 20-inch-wide, 53-inch-long running surface and a 300 lb capacity",
+        "About $700 new, with a warranty, rather than a used machine with none",
       ],
       cons: [
-        'No warranty and inherited maintenance neglect',
-        'Collection and moving a 250 lb machine is your problem',
+        "A 53-inch surface and 10 mph top speed suit walking and jogging rather than running",
+        "A 2.5 HP brushless motor, smaller than the full-size picks",
+        "Sunny calls it a walking pad, but it is bulkier than one; check the folded size",
       ],
       bottomLine:
-        'The best hardware at this budget by a clear margin, and the only way to get a running deck for $800. Inspect properly and service it immediately.',
+        "The new machine to buy at this price if you will walk, incline-walk and jog rather than run; if you want a 60-inch running deck for $800, look at the used market instead.",
       description:
-        'Eight hundred dollars in the used market buys a machine that sold for $1,800 to $2,500 new three to five years ago — a full 60-inch deck, a 3.0 to 3.5 CHP motor, and 250 lbs or more of frame. Nothing new at this price approaches that, and if you want to run rather than jog it is the only realistic route. The risks are real and manageable. There is no warranty, and you inherit the previous owner\'s maintenance, which on a machine that was never lubricated means the motor and controller have already spent part of their life. Inspect before paying: run the belt at several speeds, listen for bearing noise, watch for drift toward one rail, and check for a polished or grooved deck surface. Then lubricate it the day it arrives — the Amazon link here is for a kit, which should be your first purchase after the machine itself.',
+        "Sunny Health & Fitness sells this as a walking pad, but it is closer to a compact folding treadmill: it has a raised handlebar with a console, a running surface the Amazon listing gives as 20 inches wide and 53 inches long, and a top speed of 10 mph. The listing describes 15 auto incline levels reaching a 15% maximum, a 2.5 HP brushless motor, double-deck shock absorption, a 300 lb maximum user weight, 24 preset programs, pulse sensors, and Bluetooth connection to Sunny's free app. It arrives fully assembled: you raise and lock the handlebar and it is ready, and it folds for storage. It is on this page in place of a used mid-range machine, which cannot be bought new on Amazon: where a used treadmill buys more hardware for $800 with no warranty and a move to organise, this buys a new machine with powered incline for about $700 delivered to the door. Its limits are the shorter surface and smaller motor, which suit brisk walking, incline walking and light jogging better than running; the used-market section above explains why a runner may still be better served secondhand. Amazon listed it at $699.99 on 6 November 2026; its figures are those checked for our auto incline treadmill guide.",
     },
   ],
   faqs: [
