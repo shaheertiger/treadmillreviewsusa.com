@@ -37,7 +37,9 @@ export default {
           a published review or a second retailer — and a figure appears in a product's
           specification line only where the maker and an independent source agree. Where they
           conflicted, we left the number off and say so on the card. Every brand was checked
-          against the US Consumer Product Safety Commission's recall database. Prices are those we
+          against the US Consumer Product Safety Commission's recall database. On 9 November 2026 the Xtreme 2 SE
+          card became the BowFlex PR1000, checked against its Amazon listing and Walmart, Best Buy and
+          other retailer listings, which disagree on its resistance, size and warranty. Prices are those we
           saw on that date and change often. We earn a commission if you buy through the Amazon
           links on this page; it does not change which products we list or what we say about them.
           <strong class="text-gray-900">What this page is, and is not.</strong> We review home
@@ -55,7 +57,8 @@ export default {
             version: the Body-Solid EXM2500S if you want the best home gym you can keep for decades
             and can pay for it, the Marcy MWM-990 if you want a real weight stack for the least
             money, and the BowFlex Xtreme 2 SE if you want a lighter machine that is easy to start on
-            and you accept what rods feel like.
+            and you accept what rods feel like. The Xtreme 2 SE is sold on BowFlex's store rather than
+            on Amazon, so its card shows BowFlex's PR1000, a simpler rod gym that Amazon does list.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead><tr>
@@ -67,7 +70,7 @@ export default {
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Body-Solid EXM2500S</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best overall (if budget allows)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">210 lb stack, 2,200 lb-test cables, in-home lifetime warranty</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Marcy MWM-990</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best budget weight stack</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">150 lb stack, press arms, leg developer, 300 lb user limit</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Body-Solid Best Fitness BFMG20</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Compact stack from an established maker</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Five stations in 64 x 47 in., sold by Amazon</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">BowFlex Xtreme 2 SE</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best rod-resistance gym</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">210 lb of rods, upgradable to 410 lb, 174 lb machine</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">BowFlex PR1000 Home Gym</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rod-resistance gym on Amazon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About 200–210 lb of rods and a rowing station for about $800; stands in for the Xtreme 2 SE</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Total Gym EVOLVE</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Low ceilings and folding storage</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Incline bodyweight trainer, 500 lb user limit, arrives assembled</td></tr>
             </tbody>
           </table></div>
@@ -594,28 +597,27 @@ export default {
         "The BFMG20, sold under Body-Solid's Best Fitness label as the Sportsman Gym, packs five stations into a 64 by 47-inch frame 78 inches tall: a multi-press for chest and shoulder work, a lat pulldown on the high pulley, an ab crunch on a mid pulley, a leg developer and a low pulley for rows and curls. Body-Solid and Iron Company agree on those dimensions and on a 145 lb stack, and Body-Solid states 2,200 lb-test nylon-coated cables. Several other retailers list a 150 lb stack, so if the exact figure matters to you, confirm it with the seller. Body-Solid listed it at $670 on 19 October, with its page showing both in-stock and temporarily-out-of-stock messages; Iron Company listed it as available; and Amazon's listing for the 2026 all-black version showed Amazon.com as the shipper and seller, with new offers from $648. Iron Company gives a three-year frame and one-year parts warranty for residential use only, while another listing linked to the maker gives five years on the frame, so check the terms that apply to your purchase. It is the lightest stack here, which makes it a starting machine rather than a long-term one for strong lifters.",
     },
     {
-      id: 'bowflex-xtreme-2-se',
-      name: 'BowFlex Xtreme 2 SE Home Gym',
-      category: 'Rod-resistance home gym, 210 lb (upgradable to 410 lb)',
-      badge: 'Best Rod Gym',
-      amazonUrl: 'https://www.amazon.com/s?k=BowFlex+Xtreme+2+SE+Home+Gym&tag=sktiger-20',
-      priceRange: '$999–$1,499',
-      specs: '210 lb of Power Rod resistance, upgradable to 410 lb · 83.25 in. tall · 49 in. wide · 300 lb max user weight · 7-yr machine warranty',
+      id: "bowflex-pr1000",
+      name: "BowFlex PR1000 Home Gym",
+      category: "Rod-resistance home gym on Amazon",
+      badge: "Closest on Amazon",
+      amazonUrl: "https://www.amazon.com/dp/B0GT73V79P?tag=sktiger-20",
+      priceRange: "$799.99 (Amazon, 9 Nov 2026)",
+      specs: "Power Rod resistance, about 200–210 lb (retailers differ) · 25+ exercises · built-in rowing station · not upgradable, per a Best Buy answer",
       pros: [
-        'At 174 lb, far lighter than any stack gym, so it suits upstairs rooms',
-        'More than 70 exercises, with a lat tower, squat station and leg extension',
-        'Upgrade kits add 100 lb at a time without a bigger machine',
-        'BowFlex offers white-glove delivery with full assembly',
+        "BowFlex’s Power Rod system, the same idea as the Xtreme 2 SE, sold on Amazon",
+        "A built-in rowing station and more than 25 strength exercises, per retailer listings",
+        "Far lighter than a stack gym, so it suits upstairs rooms",
+        "Hundreds of dollars below the Xtreme 2 SE’s list price",
       ],
       cons: [
-        'Rods resist least at the start of each rep, which feels unlike a stack',
-        'BowFlex says rod ratings are estimates and degrade with time and use',
-        'Large working area: BowFlex recommends 112 by 150 inches',
+        "Retailers give its resistance as 200 lb or 210 lb, and its dimensions differently, so check before ordering",
+        "Best Buy’s answers say it cannot be upgraded with more rods, unlike the Xtreme 2 SE",
+        "The most detailed retailer listing gives only a 1-year frame, 5-year rod and 60-day parts warranty",
+        "Rods resist least at the start of each rep, which feels unlike a stack",
       ],
-      bottomLine:
-        'The best home gym machine for an upstairs room or a tighter budget, if you accept the rod feel. Buy it on sale; the list price is $500 higher.',
-      description:
-        "The Xtreme 2 SE is BowFlex's best-known rod gym: nylon composite Power Rods hooked to a cable system that BowFlex calls no-change, so you rarely re-route cables between exercises. It comes with 210 lb of rods — 5 to 105 lb per side in 5 lb steps — and $129 kits that add 100 lb each, to 310 and 410 lb. Stations include a lat tower with an angled bar, a four-position lower pulley and squat station, a leg extension, and an adjustable, removable seat. On 19 October BowFlex listed it at $999 against a regular $1,499, on an offer ending 25 October, alongside a clearance listing for the first-generation model. BowFlex, BarBend and Active.com agree on the 83.25-inch height, 49-inch width, the 210 to 410 lb resistance path, and, in Active's case, the 300 lb user limit. BowFlex gives the length as 63 inches; both reviews say 53, so we have left length off the card. BowFlex's current warranty is seven years on the machine and five on the rods; older coverage says lifetime on rods. We could not confirm a current Amazon offer: one Amazon listing is marked discontinued, so buy from BowFlex or check the seller carefully.",
+      bottomLine: "The rod gym to buy on Amazon if weight and price matter more than stack feel, and you will not need more than about 200 lb of resistance.",
+      description: "BowFlex's Xtreme 2 SE, the rod gym this page describes in detail, is sold on BowFlex's own store and we could not confirm a current Amazon offer for it, so this card shows the BowFlex rod gym Amazon does list: the PR1000. It uses the same Power Rod idea, bending nylon composite rods rather than lifting a weight stack, which keeps the machine light enough for an upstairs room. Retailer listings agree on more than 25 strength exercises and a built-in rowing station, but not on every figure: Walmart lists a 210 lb maximum load, another listing calls the rod system 200 lb, and the dimensions differ between listings, so none of those disputed numbers is on the specification line without its range. A Best Buy answer says it does not take extra rods, which is the main difference from the Xtreme 2 SE's 410 lb upgrade path. The most detailed warranty we found was one year on the frame, five years on the rods and 60 days on parts, much shorter than BowFlex's current Xtreme 2 SE terms, and one retailer gave two years, which we could not reconcile. Rods resist least at the start of each rep, the same feel trade-off as on any rod gym. Amazon listed it at $799.99 on 9 November 2026.",
     },
     {
       id: 'total-gym-evolve',

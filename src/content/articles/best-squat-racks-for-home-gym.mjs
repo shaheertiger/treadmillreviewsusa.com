@@ -31,7 +31,8 @@ export default {
           racks, and no figure on this page is our own measurement. Each was confirmed as
           currently sold on 16 October 2026 on the maker's own store (REP Fitness, Rogue Fitness,
           Titan Fitness and PRx Performance; the two Titan racks that replaced Rogue's on the cards were
-          checked on 9 November 2026), and its upright size, steel gauge, hole spacing,
+          checked on 9 November 2026, and the Titan X-3 Tall Bolt-Down rack that replaced REP's PR-5000 card,
+          which Amazon does not sell, carries the figures checked for our commercial gym equipment guide that day), and its upright size, steel gauge, hole spacing,
           footprint, safety system and bolting requirement were checked on that date against at
           least one independent hands-on review. A figure appears on a card only where the maker
           and an independent source agree; where they conflicted — on hole spacing, heights,
@@ -70,7 +71,7 @@ export default {
               <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Why</th>
             </tr></thead>
             <tbody>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">REP PR-5000 Power Rack</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best overall</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3x3 11-gauge, three depths, a very large attachment range</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Titan X-3 Series Tall Bolt-Down Power Rack</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best overall on Amazon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3x3 11-gauge, 36 in. deep, bolt-down, two pull-up bars; stands in for REP’s PR-5000</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Titan T-3 Series Tall Power Rack</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2x3 power rack on Amazon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">91 in. tall, 36 in. deep, 1,100 lb rating, about $630</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Titan X-3 Series Half Rack</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Half rack on Amazon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3x3 uprights, Westside spacing, no bolting needed</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">PRx Profile PRO Squat Rack</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Folding wall-mount</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3x3 uprights that fold to 4 in. from the wall</td></tr>
@@ -488,28 +489,25 @@ export default {
   ],
   products: [
     {
-      id: 'rep-pr-5000',
-      name: 'REP Fitness PR-5000 Power Rack',
-      category: 'Configurable 3x3 full power rack',
-      badge: 'Best Overall',
-      amazonUrl: 'https://www.amazon.com/s?k=REP+Fitness+PR-5000+Power+Rack&tag=sktiger-20',
-      priceRange: '$900–$1,500',
-      specs: '3x3 in. 11-gauge steel · 1 in. holes · 16, 30 or 41 in. depths · 1,000 lb rackable capacity (maker)',
+      id: "titan-x-3-tall-bolt-down-power-rack",
+      name: "Titan Fitness X-3 Series Tall Bolt-Down Power Rack (36 in. Depth)",
+      category: "3x3 full power rack on Amazon",
+      badge: "Best Overall on Amazon",
+      priceRange: "$690–$760 (Amazon and Titan, 9 Nov 2026)",
+      specs: "3 x 3 in. 11-gauge steel uprights · bolt-down · 36 in. depth · Westside hole spacing through the bench and pull zone (Titan) · 1.25 in. and 2 in. pull-up bars",
       pros: [
-        '3x3 11-gauge uprights with 1-inch holes, the heaviest-duty construction on this page',
-        'Built to order in three depths, including a 16-inch version for small rooms',
-        'A very large range of compatible attachments, so the rack can grow with you',
-        'Named the best overall squat rack by both Garage Gym Reviews and BarBend',
+        "The same 3 x 3 inch 11-gauge upright size as Rogue’s Monster Lite racks",
+        "Westside hole spacing through the bench and pull zone, per Titan",
+        "Two pull-up bars, a skinny 1.25-inch and a fat 2-inch, per the Amazon listing",
+        "Well under the price of Rogue’s RML-390C",
       ],
       cons: [
-        'The price climbs quickly once safeties, a pull-up bar and attachments are added',
-        'REP requires bolting or its Rear Base Stabilizer, and bolting with spotter arms',
-        'Sources disagree on hole spacing, heights and width, so check the builder for your build',
+        "A bolt-down rack: plan to anchor it to a concrete floor",
+        "Titan’s warranty is one year, short for a facility",
+        "Capacity figures are Titan’s own; Titan quotes 1,650 lb rackable, which we could not confirm independently",
       ],
-      bottomLine:
-        'The rack to buy if you want one 3x3 system to build a whole gym around and have the room and budget. Configure the safeties and anchoring before anything else.',
-      description:
-        "REP builds the PR-5000 from 3x3-inch 11-gauge steel with 1-inch holes and lists a 1,000 lb rackable capacity, and Garage Gym Reviews and BarBend both name it their best overall squat rack. It is a rack builder rather than a single model: you choose the depth (16, 30 or 41 inches), the height, the colour, the safeties and the pull-up bar. REP's builder started at $899.99 on 16 October 2026, and Garage Gym Reviews quotes builds from about $1,500, so the price depends heavily on what you add. Three figures are left off the card because sources disagree: REP lists 2-inch hole spacing throughout (with 1-inch adjustment via its Lowered J-Cups) while a review describes Westside spacing, REP lists two upright heights where a review lists three, and the published widths differ. Anchoring matters: REP says the rack must be bolted down or fitted with its Rear Base Stabilizer, and bolted with front foot extensions whenever you use spotter arms. Sold through REP's own store.",
+      bottomLine: "The 3x3, 11-gauge full power rack to buy on Amazon if you can bolt it to a concrete floor and want a rack to build a gym around.",
+      description: "REP's PR-5000, the configurable 3x3 rack we would otherwise put first, is sold on REP's own store rather than on Amazon, so this card shows the closest full 3x3 power rack Amazon sells. Titan's X-3 Series is its 3 x 3-inch, 11-gauge steel line, the same upright size and gauge as the PR-5000, and Titan's product page and the Amazon listing agree on those uprights, a bolt-down design and the 36-inch depth; Titan adds 6-inch hole spacing with Westside spacing through the bench and clean-pull zone, two J-hooks with UHMW liners, a choice of 80 or 90-inch heights and a one-year warranty. The Amazon listing for the tall version adds a 1.25-inch and a 2-inch pull-up bar, J-hooks rated at 1,000 lb, and a 1,650 lb rackable and 6,170 lb total capacity, all Titan's own figures that we could not confirm independently; a Walmart listing repeats the 1,650 lb. Against the PR-5000 it offers one depth rather than three, a smaller attachment range and a much shorter warranty, and it must be bolted down; in return it costs well under the PR-5000's usual price. Titan's store showed the 90-inch, 36-inch-deep rack at $759.97 on sale on 9 November 2026, and Amazon listed the tall version at $689.99; its figures are those checked for our commercial gym equipment guide.",
     },
     {
       id: 'titan-t-3-tall-power-rack',
@@ -702,7 +700,7 @@ export default {
   bottomLine: [
     `<strong class="text-white">For most home gyms with a concrete floor, buy a power rack you can
             set up exactly as the maker specifies</strong> — the REP PR-5000 if you want one 3x3
-            system to grow into, the Rogue R-3 if you want a complete 2x3 rack and can bolt it
+            system to grow into (or Titan's X-3 bolt-down rack for a 3x3 rack on Amazon), the Rogue R-3 if you want a complete 2x3 rack and can bolt it
             down, or Titan's T-3 for a 2x3 rack on Amazon. Choose the Rogue HR-2, or Titan's X-3 half
             rack on Amazon, if you cannot anchor, the PRx Profile PRO if the room has
             to fold away, the Titan stand for a low ceiling or small budget, and the REP PR-1100

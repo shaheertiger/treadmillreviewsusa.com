@@ -13,11 +13,11 @@ export default {
   standfirst:
     'This is the price band where the specifications cross the line from adequate to sufficient. The jump from $500 to $800 buys more real capability than the jump from $800 to $1,100 does.',
   ctas: [
-    { label: 'See the Top Pick', href: '#nordictrack-c-700' },
+    { label: 'See the Top Pick', href: '#nordictrack-t-series-5' },
     { label: 'What Changes at $800', href: '#what-changes' },
   ],
   tags: ['treadmills under 800', 'budget treadmill', 'affordable treadmill', 'first treadmill', 'home gym'],
-  stickyCta: { text: 'See the Top Pick', link: '#nordictrack-c-700' },
+  stickyCta: { text: 'See the Top Pick', link: '#nordictrack-t-series-5' },
   lead: `There is a threshold in the treadmill market somewhere around $700, and it is the most
           consequential one in the whole category. Below it you are buying a walking appliance.
           Above it you are buying a machine, and the difference is larger than the $300 suggests.`,
@@ -30,7 +30,10 @@ export default {
           come from what those figures imply, not from our own measurements. A used mid-range machine
           is discussed below as an alternative, but it cannot be bought new on Amazon, so on 9 November
           2026 the value card became Sunny's Auto Incline Treadmill, whose figures are those checked
-          for our auto incline treadmill guide.`,
+          for our auto incline treadmill guide. The same day the NordicTrack C 700, ProForm Power 995i
+          and Horizon T101 cards, which Amazon US does not sell, became the NordicTrack T Series 5,
+          NordicTrack T 6.5 S and Horizon T101 Connect; their figures are those checked for our iFIT,
+          NordicTrack C950i and auto incline treadmill guides.`,
   sections: [
     {
       id: 'what-changes',
@@ -293,10 +296,10 @@ export default {
       id: 'verdict',
       heading: 'Final Recommendations',
       html: `          <p>
-            The <strong>NordicTrack C 700</strong> is our pick at this price: an assisted fold,
-            a low step-up, a simple console and a frame composed enough at walking pace to
-            build confidence. It is a walking and light-jogging machine and it is honest about
-            that.
+            The <strong>NordicTrack T Series 5</strong> is our pick at this price: a powered
+            0–10% incline, a simple LCD console with iFIT optional through your own tablet, and a
+            300 lb rating, for about $600. It is a walking and light-jogging machine and it is honest
+            about that.
           </p>
           <p>
             If you can find the <strong>Sole F63</strong> discounted into this band — which happens
@@ -314,27 +317,26 @@ export default {
   ],
   products: [
     {
-      id: 'nordictrack-c-700',
-      name: 'NordicTrack C 700',
-      category: 'Best Overall Under $800',
-      badge: 'Best Overall',
-      reviewUrl: '/nordictrack-c-700-treadmill/',
-      priceRange: '$599-$799',
-      specs: '55 in. deck · 2.75 CHP · 0-10% incline · ~190 lbs assembled · assisted fold',
+      id: "nordictrack-t-series-5",
+      name: "NordicTrack T Series 5",
+      category: "Best Overall Under $800",
+      badge: "Best Overall",
+      reviewUrl: "/nordictrack-t-series-treadmill/",
+      priceRange: "About $600 (Amazon, 6 Nov 2026)",
+      specs: "55 in. belt length · 0–10 mph · 0–10% incline · 300 lb capacity · LCD; iFIT runs on your own device",
       pros: [
-        'Assisted fold that makes daily storage practical',
-        'Low step-up height makes getting on genuinely easy',
-        'Simple console with almost nothing to navigate',
-        'Enough frame mass to stay composed at walking pace',
+        "The lowest price for automatic speed and incline control from iFIT",
+        "Uses the cheaper Train membership through your own phone or tablet",
+        "A 0–10% incline is enough for steady incline walking",
+        "KeyFlex cushioning, per the listing",
       ],
       cons: [
-        'A 190 lb frame is likely to move at 6 mph — jogging is possible, not comfortable',
-        'Console is close to bare without an iFit subscription',
+        "A 55-inch belt and 10 mph top speed suit walking and jogging more than running",
+        "No touchscreen; you need a tablet you are happy to keep on the console",
+        "Lower 300 lb rating and a smaller motor than the machines above it",
       ],
-      bottomLine:
-        'The most complete package that consistently lists under $800. A genuinely good walking machine that will take light jogging.',
-      description:
-        'This is the machine that lists in this band rather than falling into it, and it does the job the band is for. Ease of assembly matters more than it sounds — a treadmill that is difficult to build often sits boxed for a fortnight, and that fortnight is when initial motivation is spent — and a machine of this weight and simplicity is among the more manageable to build alone. The step-up is among the lowest at any price, useful every single session and particularly in a cramped room. At walking pace a frame of this mass should be composed. Push to 6 mph and movement is likely to appear, which is the honest limit of a 190 lb machine and the reason we describe it as light-jogging capable rather than jogging capable. The console is bare without a subscription, though manual speed and incline both work indefinitely. For a walker, this is the right buy at this price.',
+      bottomLine: "The most complete package that consistently lists under $800: powered incline and iFIT through your own tablet, on a walking and jogging deck.",
+      description: "This is the machine that lists in this band rather than falling into it, and it does the job the band is for. The T Series 5 is NordicTrack's entry treadmill. The Amazon listing describes an LCD for your live stats and a place for your own device, a 0–10 mph speed range, a 0–10% powered incline and KeyFlex cushioning; NordicTrack's specification gives a 55-inch belt length and a 300 lb maximum user weight. That is the right shape of machine for the buyer this page is written for: walking, incline walking and jogging, with incline you can change mid-session rather than a manual setting. iFIT is optional and runs from your own phone or tablet on the Train membership, so there is no large screen funded by cutting the frame, and manual speed and incline work without paying. The honest limits are the ones every machine in this band shares: a 55-inch belt and a 10 mph ceiling suit walking and jogging rather than running, and the 300 lb rating is lower than heavier machines. For a walker, this is the right buy at this price. Amazon listed it at $599.99 on 6 November 2026.",
     },
     {
       id: 'sole-f63',
@@ -357,30 +359,29 @@ export default {
       bottomLine:
         'A materially better machine than anything that lists here. Watch for the discount and buy it the moment it appears.',
       description:
-        'This machine lists above the band and falls into it several times a year, and when it does it is the obvious choice. The frame is around 250 lbs against the 190 of our top pick, and that difference matters: it is the only new machine here with the frame mass to stay steady at 6 mph, which is what separates a light-jogging machine from a jogging one. The hydraulic fold matters too: a fold that takes no effort is one that keeps being used, where a heavy manual latch tends to be abandoned. There is no subscription and no account, so its five-year cost equals its purchase price. Warranty terms are the strongest of anything reaching this band. The only real objection is availability at the price — which is an argument for watching rather than for buying something else. Set an alert and wait for it.',
+        'This machine lists above the band and falls into it several times a year, and when it does it is the obvious choice. The frame is around 250 lbs, and that matters: it is the only new machine here with the frame mass to stay steady at 6 mph, which is what separates a light-jogging machine from a jogging one. The hydraulic fold matters too: a fold that takes no effort is one that keeps being used, where a heavy manual latch tends to be abandoned. There is no subscription and no account, so its five-year cost equals its purchase price. Warranty terms are the strongest of anything reaching this band. The only real objection is availability at the price — which is an argument for watching rather than for buying something else. Set an alert and wait for it.',
     },
     {
-      id: 'proform-power-995i',
-      name: 'ProForm Power 995i',
-      category: 'Best for Small Rooms',
-      badge: 'Most Compact',
-      reviewUrl: '/proform-power-995i-treadmill/',
-      priceRange: '$799-$999',
-      specs: '55 in. deck · 2.75 CHP · 0-12% incline · ~180 lbs assembled · compact fold',
+      id: "nordictrack-t-6-5-s",
+      name: "NordicTrack T 6.5 S",
+      category: "Best for Small Rooms",
+      badge: "Most Compact",
+      reviewUrl: "/nordictrack-t-6-5-s-treadmill/",
+      priceRange: "$649-$899",
+      specs: "55 x 20 in. deck · 2.6 CHP · 0-10% incline · 0-10 mph · 300 lb capacity",
       pros: [
-        'Smallest folded footprint at this price and light enough to reposition alone',
-        'Incline to 12% — the highest here besides the Sole',
-        'Guided content available, and manual control retained without paying',
-        'Folds quickly with an assist',
+        "Runs in manual mode without an active iFit membership — speed and incline set by hand",
+        "2.6 CHP is adequate headroom for sustained incline walking",
+        "Vertical SpaceSaver fold with lift assist genuinely reclaims floor area",
+        "Heavily and regularly discounted, which is the main reason to consider it",
       ],
       cons: [
-        'Lightest frame here, with the most movement at jogging pace',
-        'Prompts for the subscription during ordinary use',
+        "Five-inch display is small, and the machine is sold on content it does not show well",
+        "55-inch deck and a 10 mph ceiling rule out regular running",
+        "Closely named variants with different consoles make it easy to order the wrong one",
       ],
-      bottomLine:
-        'The right pick when floor space is the binding constraint. Accept that the light frame is the trade.',
-      description:
-        'If the room is the problem rather than the budget, this is the machine at this price. It has the smallest folded footprint here, folds quickly with an assist, and at around 180 lbs one person can reposition it without ceremony — which in a shared room matters as much as the folded dimensions do. Incline reaches 12%, the highest here outside the Sole, and incline is the most useful training tool for anyone wanting to raise effort without raising impact. The cost of all that portability is exactly what you would expect: as the lightest frame here it is the most likely to move at 6 mph, and a heavier user may notice it at walking pace too. It also prompts about the subscription during normal use, though manual control works without paying. Good machine, clear trade.',
+      bottomLine: "The right pick when floor space is the binding constraint and you will set speed and incline by hand. Accept the small screen and the 55-inch deck.",
+      description: "If the room is the problem rather than the budget, this is the machine to look at. The T 6.5 S runs a 2.6 CHP motor against a 20 by 55-inch belt, with motorised incline to 10%, a top speed of 10 mph and a published 300 lb capacity, and it folds vertically with a lift-assisted SpaceSaver mechanism that genuinely reclaims floor area in a shared room. The console is a five-inch backlit display with roughly twenty onboard programmes; it is iFit-enabled and typically ships with a trial membership, but it runs in manual mode without an active membership, with speed and incline set by hand. The hardware is ordinary for the price and coherent for walking, and 2.6 CHP is adequate headroom for sustained incline walking. The limits are the ones you would expect: five inches is a small screen for the content NordicTrack markets, and a 55-inch deck with a 10 mph ceiling rules out regular running. It is heavily and regularly discounted, which is the main reason to consider it, and closely named variants with different consoles make it easy to order the wrong one, so check the listing says T 6.5 S.",
     },
     {
       id: 'proform-pro-2000',
@@ -406,27 +407,25 @@ export default {
         'This is the machine to watch if you intend to run, because it is the only one that ever appears near $800 with a genuine 60-inch deck — the specification that separates jogging from running and the one that no amount of motor compensates for. It also folds, which almost nothing with a deck this long does, and it includes decline, which is rare at anything close to this money. Its 3.0 CHP motor is enough for a lighter runner at 8 mph. Two caveats. It needs a real sale to fall into this band, so this is a watch-and-wait recommendation rather than a buy-today one. And its lighter deck is more likely to soften with mileage than those on heavier machines, which is where the money was saved. For a lighter runner on a firm budget, still the best deck available at this price.',
     },
     {
-      id: 'horizon-t101',
-      name: 'Horizon T101',
-      category: 'Best No-Nonsense Console',
-      badge: 'Simplest to Use',
-      amazonUrl: 'https://www.amazon.com/s?k=Horizon+Fitness+folding+treadmill&tag=sktiger-20',
-      priceRange: '$699-$899',
-      specs: '55 x 20 in. deck · 2.5 CHP · 0-10% incline · ~180 lbs assembled · hydraulic fold',
+      id: "horizon-t101-connect",
+      name: "Horizon T101 Connect",
+      category: "Best No-Nonsense Console",
+      badge: "Simplest to Use",
+      priceRange: "About $740 (Amazon, 6 Nov 2026)",
+      specs: "20 x 55 in. deck · 0–10% power incline · 0.5–10 mph · 300 lb capacity · folds · lifetime frame & motor warranty",
       pros: [
-        'Hydraulic fold at a price where manual latches are the norm',
-        'Physical console with no account, no app and no prompts',
-        'Quick-dial speed and incline controls rather than repeated button presses',
-        'Consistently among the least expensive machines with a real warranty',
+        "A powered 10% incline with dial controls and one-touch incline keys",
+        "Lifetime frame and motor warranty, per the listing",
+        "Works with apps including Zwift and Peloton, per the listing",
+        "Folds, and Horizon says it assembles in about 30 minutes",
       ],
       cons: [
-        'Lowest motor rating of our picks at 2.5 CHP',
-        'Basic display with minimal metrics and no history',
+        "Incline stops at 10%, low for dedicated incline walking",
+        "A 55-inch deck is short for running at speed",
+        "10 mph top speed",
       ],
-      bottomLine:
-        'The straightforward choice for someone who wants to press start and walk, with a fold that will actually get used.',
-      description:
-        'Horizon occupies a useful position in this band: plainly specified machines with no subscription and no ecosystem, sold at prices where competitors are still attaching accounts to things. The T101 is the clearest example. The hydraulic fold is the standout feature at this price — manual latches are the norm here, and a manual fold that takes effort tends to stop being used, while an assisted one does not. The dial-style speed and incline controls are genuinely better than repeatedly pressing a button, particularly mid-session. The console is basic, with few metrics and no history, and the 2.5 CHP motor is the lowest among our picks, so this is a walking machine that will tolerate a jog rather than the reverse. For a buyer who wants no software in their life, it is the cleanest option here.',
+      bottomLine: "The straightforward choice for someone who wants to press start and walk, with dial controls and a lifetime frame and motor warranty.",
+      description: "Horizon occupies a useful position in this band: plainly specified machines with no subscription required and no ecosystem of its own to buy into, sold at prices where competitors are still attaching accounts to things. The T101 Connect is Horizon's entry treadmill. The Amazon listing gives a 0–10% power incline and 0.5 to 10 mph, changed with Horizon's EasyDial controls or one-touch keys for intervals, a 20 by 55-inch running area with three-zone cushioning, a lifetime frame and motor warranty, a folding frame, and compatibility with apps including JRNY, Peloton and Zwift, which need their own subscriptions; Horizon's specification adds a 300 lb maximum user weight. The dial controls are genuinely better than repeatedly pressing a button, particularly mid-session, and the warranty is the longest frame and motor cover in this band. The limits are in the numbers: a 55-inch deck and 10 mph top speed suit walking and jogging rather than running, and 10% incline is enough for most fitness walking but short for 12-3-30-style sessions. Amazon listed it at $739.99 on 6 November 2026.",
     },
     {
       id: "sunny-auto-incline-treadmill",
@@ -523,7 +522,7 @@ export default {
   bottomLine: [
     `This is the most valuable $300 in the treadmill market — deck, motor, frame and warranty
             all cross meaningful thresholds. The
-            <strong class="text-white">NordicTrack C 700</strong> is the best machine that
+            <strong class="text-white">NordicTrack T Series 5</strong> is the best machine that
             consistently lists here, and a discounted
             <strong class="text-white">Sole F63</strong> beats it outright when you can find one.`,
     `Want to run rather than jog? This tier cannot do it. Save toward

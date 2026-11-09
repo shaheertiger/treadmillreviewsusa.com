@@ -402,10 +402,10 @@ export default {
       name: 'Horizon 5.0R Recumbent Bike',
       category: 'Recumbent Bike to Watch',
       badge: 'Best Recumbent',
-      amazonUrl: 'https://www.amazon.com/s?k=Horizon+Fitness+5.0R+Recumbent+Bike&tag=sktiger-20',
+      amazonUrl: 'https://www.amazon.com/dp/B0C6NF4CJD?tag=sktiger-20',
       reviewUrl: null,
       priceRange: 'About $649',
-      specs: '100 magnetic resistance levels · 300 lb max user · 66 x 25.2 in. footprint · step-through frame · Bluetooth FTMS · lifetime frame warranty',
+      specs: '100 magnetic resistance levels · 300 lb max user (Horizon; the Amazon listing title says 350 lb) · 66 x 25.2 in. footprint · step-through frame · Bluetooth FTMS · lifetime frame warranty',
       pros: [
         'A step-through frame and large seat with lumbar support',
         '100 electronically controlled levels for small steps in effort',

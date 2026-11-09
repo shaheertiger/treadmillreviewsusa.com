@@ -422,7 +422,7 @@ export default {
       name: 'Sportsroyals Power Tower (360 lb)',
       category: 'Adjustable power tower with pull-up, dip, knee-raise and push-up stations',
       badge: 'Best Overall',
-      amazonUrl: 'https://www.amazon.com/s?k=SPORTSROYALS+Power+Tower+Free+Standing+Pull+Up+Bar+360+lb&tag=sktiger-20',
+      amazonUrl: 'https://www.amazon.com/dp/B0C9HXPF92?tag=sktiger-20',
       priceRange: '$119.99–$129.99',
       specs: 'Bar height 57.1–83.1 in. · 8 bar settings · 5 backrest positions · rated 360 lb on this listing',
       pros: [

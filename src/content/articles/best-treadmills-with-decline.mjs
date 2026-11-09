@@ -39,7 +39,9 @@ export default {
           found none open for these treadmills. The Wahoo KICKR RUN we first carded is sold by Wahoo
           and its dealers rather than on Amazon, so on 9 November 2026 we replaced its card with Sunny's
           Versatile Treadmill, whose figures are those checked for our incline trainer guide; the
-          KICKR RUN is still discussed below. None of these figures are our own measurements; we
+          KICKR RUN is still discussed below. The same day the NordicTrack X16 card, which Amazon does
+          not sell, became the Sole TT8, whose figures are also those checked for our incline trainer
+          guide; the X16 is still discussed below. None of these figures are our own measurements; we
           have not tested these machines. Price bands are prices seen on 13 October 2026 and change
           often, so confirm the price, the specification and the warranty for the exact unit
           before you order. Nothing on this page is medical advice. We earn a commission if you
@@ -72,28 +74,25 @@ export default {
         "The Commercial 1750 is the sensible default for anyone who wants decline on a conventional folding treadmill. NordicTrack lists incline from -3% to 12%, a 0 to 12 mph speed range, a 16-inch pivoting HD touchscreen, the SpaceSaver folding frame and a lifetime motor warranty, and a retailer listing and independent coverage agree on those figures. Three per cent of decline is roughly the gradient of a gently falling road, which is what most downhill race courses actually present, and it is enough to change how the quads work on each landing. With a paid iFIT membership, route and trainer-led workouts move the deck for you, including into decline, which is the main reason to choose an iFIT machine for downhill training; without one, check how much manual grade control your software version allows. We have left the motor rating, deck width and maximum user weight off the spec line because earlier 1750s were specified differently and older figures still circulate. Our review of the 1750 covers the rest of the machine; for decline, the point is that it delivers it without giving up folding or a lifetime motor.",
     },
     {
-      id: 'nordictrack-x16',
-      name: 'NordicTrack X16',
-      category: 'Most decline you can buy for home use',
-      badge: 'Most Decline',
-      amazonUrl: 'https://www.amazon.com/s?k=NordicTrack+X16+Treadmill&tag=sktiger-20',
-      priceRange: 'Around $2,700–$3,700',
-      specs: '22 x 60 in. deck · -6% to 40% incline · 0-12 mph · 400 lb capacity · non-folding',
+      id: "sole-tt8",
+      name: "Sole TT8",
+      category: "Most decline on Amazon",
+      badge: "Closest on Amazon",
+      priceRange: "About $2,500 (Amazon, 6 Nov 2026)",
+      specs: "4.0 HP · 22 x 60 in. · 0.5–12 mph · -6% to 15% incline · 400 lb capacity · non-folding · 15.6 in. touchscreen",
       pros: [
-        'Decline to -6%, twice the -3% of the Commercial series and the KICKR RUN',
-        'Incline to 40%, so it covers both halves of a steep hill',
-        'A 22 by 60-inch deck and a 400 lb maximum user weight',
-        'Lifetime motor warranty',
+        "A light-commercial, non-folding frame with a 400 lb capacity, per SOLE",
+        "Decline to -6%, deeper than the commercial trainers’ -3%",
+        "A 22 by 60-inch running surface and a 4.0 HP motor for running as well as walking",
+        "About a quarter of the price of a commercial incline trainer",
       ],
       cons: [
-        'Does not fold, and the box weighs over 400 lb',
-        'A 13.66-inch step-up height, and at full incline the front rises far higher, so check ceiling height',
-        'Top speed is 12 mph, the same as the Commercial 1750',
+        "Its incline stops at 15%: half the grade of a true incline trainer",
+        "Weighs more than 300 lb and does not fold",
+        "Published warranty terms differ between sources; check the current terms before buying",
       ],
-      bottomLine:
-        'For hikers, mountain runners and anyone training for long, steep descents — provided there is room for a non-folding machine.',
-      description:
-        "The X16 is NordicTrack's smaller-screened incline trainer, and for decline specifically it is the most capable home treadmill we found. NordicTrack's own range page lists its grade as -6% to 40%, and a retailer listing and an independent review agree on that, on a 22 by 60-inch belt, 0 to 12 mph, a 16-inch pivoting touchscreen and a 400 lb maximum user weight; it does not fold. Six per cent of decline is a meaningfully steeper descent than three: it is close to the gradient of a fast mountain road or a steady trail descent, and it loads the front of the thigh noticeably harder on every stride. That makes it the machine for people whose goal involves long descents — a hiking trip, a mountain race or a course with a big drop. The practical costs are size and height. NordicTrack lists a 13.66-inch step-up height before any incline, and the deck rises far beyond that at 40%, so measure the room. The X24 is mechanically the same machine with a 24-inch screen; for decline training, the X16 is the better value.",
+      bottomLine: "For runners and walkers who want -6% decline on a heavy, non-folding frame from Amazon, and do not need the X16’s 40% climb.",
+      description: "The NordicTrack X16, the only machine we confirmed at -6% with a 40% incline, is sold by NordicTrack and its retailers rather than on Amazon, so this card shows the closest Amazon alternative for decline: SOLE's light-commercial TT8, which matches the X16's -6% at the bottom of its range. The Amazon listing gives a 4.0 HP motor, a 22 x 60 in. running surface, a 0.5 to 12 mph speed range, an incline and decline range of -6 to 15 and a 15.6 in. touch screen, with programs including Hill, Fat Burn, HIIT, 10K and heart-rate control. SOLE's own site adds a non-folding frame and a 400 lb user capacity. That makes it a runner's machine with deep decline rather than an incline trainer: 15% is a stiff hill, not a mountain path, so a hiker who wants steep climbs as much as steep descents gives up the most against the X16, while a road or trail runner who mainly wants -6% loses little. Like the X16 it does not fold, and it weighs more than 300 lb. Published warranty terms differ: one SOLE comparison page gives lifetime frame and motor cover with two years on parts and one on labour, while other sources describe longer terms, so confirm them with SOLE. When we first checked SOLE's own store on 13 October 2026 the TT8 was sold out; Amazon showed it at about $2,500 on 6 November 2026, as checked for our incline trainer guide.",
     },
     {
       id: 'nordictrack-commercial-1250',
@@ -187,7 +186,7 @@ export default {
             </tr></thead>
             <tbody>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack Commercial 1750</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most buyers</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-3% to 12%, folds, lifetime motor</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack X16</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Steep descents and hiking</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-6% to 40%, the widest range here</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sole TT8</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Steep descents</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-6% to 15%, non-folding, 400 lb; closest Amazon alternative to the X16 (-6% to 40%)</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack Commercial 1250</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lowest price</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Same -3% to 12% as the 1750 for less</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack Commercial 2450</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Fast runners</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-3% decline with a 14 mph top speed</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sunny Health &amp; Fitness Versatile Treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Decline without iFIT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-3% to 45%, no subscription required, walking only</td></tr>
@@ -320,8 +319,9 @@ export default {
             <strong>-6% is the trail and hiking range.</strong> Double the grade and descents feel
             very different: braking forces rise, cadence tends to rise, and the session becomes a
             strength stimulus in its own right. Mountain trails, fell races and steep hiking routes
-            regularly exceed this, so even -6% is a rehearsal, not a simulation. Only the NordicTrack
-            X Series offered it among the machines we could confirm.
+            regularly exceed this, so even -6% is a rehearsal, not a simulation. Among the machines we
+            could confirm on 13 October, only the NordicTrack X Series offered it; it is not sold on
+            Amazon, and the Sole TT8, which also reaches -6%, is the card we show in its place.
           </p>
           <p>
             <strong>How to use either.</strong> Start with short decline segments inside an ordinary
@@ -385,14 +385,16 @@ export default {
             <strong>40% (NordicTrack X16).</strong> An incline trainer's range. Steep walking at
             20% and above is a very different workout from running: high effort at low speed and
             low impact. If that appeals as much as the decline does, the X16 covers both ends of a
-            mountain in one machine. If you are unsure whether you need an incline trainer, our
+            mountain in one machine, though it is sold by NordicTrack and its retailers rather than on
+            Amazon. If you are unsure whether you need an incline trainer, our
             <a href="/incline-trainer-vs-treadmill/" class="text-[#0F62FE] font-medium">incline trainer vs treadmill</a>
             guide sets out the trade-offs.
           </p>
           <p>
             A useful way to choose: work out the steepest climb and the steepest descent your goal
             involves, and pick the machine whose range covers the more demanding of the two. For a
-            road runner that is usually a Commercial-series machine; for a hiker, usually the X16.
+            road runner that is usually a Commercial-series machine; for -6% descents, the Sole TT8; for a
+            hiker who wants 40% as well, the X16 from NordicTrack.
           </p>`,
     },
     {
@@ -455,7 +457,7 @@ export default {
             machine for incline and cushioning instead.
           </p>
           <p>
-            <strong>If space is tight.</strong> The X16 does not fold and needs considerable ceiling
+            <strong>If space is tight.</strong> The X16 and the Sole TT8 do not fold, and the X16 needs considerable ceiling
             height. The Commercial-series machines fold, but they are large and heavy treadmills
             either way. In a small room, decline is usually the first feature to give up.
           </p>`,
@@ -464,7 +466,7 @@ export default {
   faqs: [
     {
       q: 'Which treadmill has the most decline?',
-      a: 'Among the home treadmills we could confirm on 13 October 2026, the NordicTrack X16 and X24 go furthest, to -6%, with incline up to 40%. The NordicTrack Commercial 1250, 1750 and 2450, Sunny’s Versatile Treadmill and the Wahoo KICKR RUN decline to -3%. Sole lists a -6 to 15 grade range on its TT8, but it was sold out on the day we checked.',
+      a: 'Among the home treadmills we could confirm on 13 October 2026, the NordicTrack X16 and X24 go furthest, to -6%, with incline up to 40%. The NordicTrack Commercial 1250, 1750 and 2450, Sunny’s Versatile Treadmill and the Wahoo KICKR RUN decline to -3%. Sole lists a -6 to 15 grade range on its TT8; it was sold out at Sole on the day we checked, and Amazon listed it in November 2026.',
     },
     {
       q: 'Is -3% decline enough?',
@@ -535,7 +537,8 @@ export default {
             <strong class="text-white">Commercial 1250</strong> gives the same range for less with
             shorter motor cover.`,
     `If your goal involves steep descents, the <strong class="text-white">NordicTrack X16</strong>
-            is the only current home machine we found that reaches -6%. Introduce decline gradually,
+            reaches -6% with a 40% climb, and the <strong class="text-white">Sole TT8</strong> reaches
+            -6% on a machine you can order on Amazon. Introduce decline gradually,
             and if your knees are already sore at the front, get them checked before you buy a
             treadmill for it.`,
   ],

@@ -41,7 +41,8 @@ export default {
           TR1200Pro Glow-Up and the iMovR Unsit, are sold mainly through their makers' own stores
           rather than on Amazon, so on 9 November 2026 we replaced them with LifeSpan's TX6 and
           TR5000B Pro+, checked against LifeSpan's store, their Amazon listings, Decathlon and
-          independent reviews of the TR5000 family. We earn a commission if you buy through the Amazon links on
+          independent reviews of the TR5000 family. The WalkingPad A1 Pro card, not sold on Amazon US, became the
+          WalkingPad Z1R the same day, with the figures checked for our lightweight treadmill guide. We earn a commission if you buy through the Amazon links on
           this page; it does not change which products we list or what we say about them.`,
   sections: [
     {
@@ -50,7 +51,8 @@ export default {
       html: `          <p>
             Two heavier, non-folding office treadmills and three folding pads. The short version:
             the LifeSpan TX6 if the people below you are the main concern and you can leave a
-            machine in place; the WalkingPad A1 Pro if it has to fold away; and the
+            machine in place; the WalkingPad Z1R if it has to fold away (it stands in for the A1 Pro, which is
+            not sold on Amazon US); and the
             <a href="/walkingpad-z1-review/" class="text-[#0F62FE] font-medium" data-autolink>WalkingPad Z1</a> if you want a quiet-running pad on a budget and are under its weight
             limit.
           </p>
@@ -65,7 +67,7 @@ export default {
             <tbody>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">LifeSpan TX6</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Apartments, all-day desk use</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A non-folding office treadmill with a 20-inch belt and 400 lb rating, about $1,100–$1,400</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">LifeSpan TR5000B Pro+ GlowUp</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A dedicated walking desk</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">LifeSpan's premium office base, capped at 4 mph; confirm its rating</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">WalkingPad A1 Pro</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A pad that folds away</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">47-inch walking area; reviewers found it fairly quiet at desk speeds</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">WalkingPad Z1R</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A pad that folds away</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">47.6-inch walking area and a removable handle; folds in half</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">WalkingPad C2</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Small rooms</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Folds in half; 220 lb limit</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">WalkingPad Z1</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The lowest price</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A long 47.6-inch walking area for about $300</td></tr>
             </tbody>
@@ -432,28 +434,25 @@ export default {
         "The TR5000B Pro+ GlowUp is the premium version of LifeSpan's TR5000 office treadmill, which LifeSpan describes as a base for demanding offices, with a 5 HP motor, an upgraded walking belt and black aluminium side rails over the standard model. Its Amazon listing and independent reviews of the TR5000 family agree on a walking-only top speed of 4.0 mph and a body of about 63 by 28.5 by 7.25 inches, and spec compilations give a belt of about 20 by 48.4 inches. Reviewers of the TR5000 family call it more supportive and sturdy than cheaper under-desk treadmills but bulkier, and one says LifeSpan recommends it for up to nine hours a day. The paperwork is inconsistent: the Amazon title gives 5.0 HP and 400 lb, the same listing's bullet points say 2.5 HP and 350 lb, and third-party data gives 4.5 HP peak, so get the weight limit and motor confirmed before you buy. LifeSpan listed it at $1,699, against $1,899, and Amazon at $1,699 on 9 November 2026. It replaces the iMovR Unsit Desk Treadmill in this slot: iMovR sells the Unsit through its own store, not on Amazon; our separate review of the Unsit covers that machine.",
     },
     {
-      id: 'walkingpad-a1-pro',
-      name: 'WalkingPad A1 Pro',
-      category: 'Folding under-desk pad with a long belt',
-      badge: 'Best Folding Pad',
-      amazonUrl: 'https://www.amazon.com/s?k=WalkingPad+A1+Pro+Foldable+Under+Desk+Treadmill&tag=sktiger-20',
-      priceRange: '$529–$699',
-      specs: '47 x 16.5 in. walking area · 0.5 mph to 6 km/h (about 3.7 mph) · 230 lb or 300 lb versions · folds in half',
+      id: "walkingpad-z1r",
+      name: "WalkingPad Z1R",
+      category: "Folding under-desk pad with a long belt",
+      badge: "Best Folding Pad",
+      priceRange: "About $359 (Amazon, 6 Nov 2026)",
+      specs: "57.7 lb net (WalkingPad) · 47.6 x 15.7 in. walking area · 1–5 mph · 242 lb capacity · removable handle · folds in half",
       pros: [
-        'A 47-inch walking area, long for a pad, so a normal stride fits',
-        'An independent reviewer found it fairly quiet at desk speeds in a shared office',
-        'Folds in half and arrives fully assembled',
-        'FootSense mode adjusts speed from your position on the belt',
+        "The longest walking area here, 47.6 inches, at under 60 lb",
+        "Folds 180 degrees, so it stores in half the length of a flat pad",
+        "A removable handle for steadier walking, and a 5 mph top speed for a brisk walk or light jog",
+        "Capacity and speed agree between the Amazon listing and WalkingPad’s site",
       ],
       cons: [
-        'The same reviewer reported a loud tearing sound when unfolding if the belt sticks',
-        'Sold in 230 lb and 300 lb versions; check which one you are buying',
-        'A folding deck with a hinge is not the first choice for the floor below',
+        "We found no independent noise report for the Z1R itself; as a fold-in-half pad, it shares the hinge that makes folding pads a weaker choice for the floor below",
+        "A 242 lb limit leaves little margin for heavier walkers",
+        "WalkingPad’s own pages give two different motor ratings, so we have not printed one",
       ],
-      bottomLine:
-        'The pad to buy if it has to fold away between uses and you want a belt long enough for a natural stride.',
-      description:
-        "The A1 Pro is WalkingPad's long-running folding pad and the best-documented folding option here. WalkingPad lists a 47 by 16.5-inch walking area, a speed range of 0.5 mph to 6 km/h, which is about 3.7 mph, and 230 lb and 300 lb versions; Treadmill Review Guru, which has used it in its office for a long time, gives the same walking area, speed range and two capacities. That reviewer found the motor fairly quiet and said it makes some noise but not excessively, rising with speed, but warned that unfolding can produce a loud tearing sound if the belt sticks, or a thud if the deck is dropped. WalkingPad's own page claims it runs under 65 dB; that is the listing's claim, not a measurement we can check. The warranty is one year. WalkingPad listed it at $529, down from $699, on 15 October 2026.",
+      bottomLine: "The pad to buy on Amazon if it has to fold away between uses and you want a belt long enough for a natural stride, with a handle when you want one.",
+      description: "The WalkingPad A1 Pro, the best-documented folding pad for noise we found, is not sold on Amazon US, so this card shows the long-belt folding WalkingPad that is: the Z1R, the Z1 with a removable handle. WalkingPad's product page gives a net weight of 57.7 lb, a 47.6 by 15.7-inch walking area and a 242 lb maximum user weight, and the Amazon listing gives the same capacity, a speed range of 1 to 5 mph from a brushless motor, an eight-layer belt, a deck described as about 1.69 inches thick, a 180-degree fold and a handle bar that installs or comes off in seconds. For noise, what matters is what this page explains: a gentle pace, a dense mat and keeping footsteps off a hollow floor do more than any motor, and a folding pad's hinge is not the first choice for the floor below. We found no independent noise report for the Z1R itself and quote no decibel figure. Its case is practical: a belt long enough for a natural stride that folds in half to slide under a desk or bed. WalkingPad's specification table lists a 0.75 HP motor while its marketing copy says 1.5 HP, so neither is printed. Amazon showed it at $359.00 on 6 November 2026, as checked for our lightweight treadmill guide.",
     },
     {
       id: 'walkingpad-c2',
@@ -583,8 +582,9 @@ export default {
     `<strong class="text-white">If the people below you are the concern, buy a heavier non-folding
             machine such as the LifeSpan TX6</strong>, put it on a dense rubber mat and
             walk at a gentle pace. If it has to fold away, the WalkingPad A1 Pro is the folding pad
-            with the best independent reports on noise, and the WalkingPad Z1 is the budget choice for
-            a lighter walker.`,
+            with the best independent reports on noise, though it is not sold on Amazon US; the
+            WalkingPad Z1R is the long-belt folding pad that is, and the WalkingPad Z1 is the budget
+            choice for a lighter walker.`,
     `Whichever you choose, ignore the decibel figure on the listing, test with someone in the room
             below, and fix placement before blaming the machine. For the full explanation of why
             footsteps, not motors, are the usual problem, read our guide to

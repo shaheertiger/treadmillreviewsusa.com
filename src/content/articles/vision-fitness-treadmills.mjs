@@ -35,7 +35,8 @@ export default {
           recall 06-556 of 2006), and Horizon's and Life Fitness's US stores for the alternatives, as checked for our
           reviews of those machines the same day. On 9 November 2026 we replaced the T600 and T600E cards with the
           Matrix T5x and NordicTrack Commercial 2450, which are sold on Amazon; their figures are those checked for our
-          Matrix T5x review and heavy-duty treadmill guide. Vision publishes no prices; the T600E price is one dealer's, and
+          Matrix T5x review and heavy-duty treadmill guide. The same day the Horizon 7.8 AT card became the Horizon 7.4 AT,
+          which Amazon sells, with the figures checked for our Horizon treadmill guide. Vision publishes no prices; the T600E price is one dealer's, and
           dealer prices vary by region and change often. Conflicting figures are set out in the text and kept off the
           cards. We have not tested any Vision treadmill. As an Amazon Associate we earn from qualifying purchases;
           that does not change what we say.`,
@@ -99,28 +100,25 @@ export default {
         "The Commercial 2450 is NordicTrack's folding flagship, and on paper it matches the T600E's 22 by 60-inch deck and 400 lb rating with a large touchscreen. NordicTrack lists a 22 by 60-inch belt, a 4.25 CHP motor by its own continuous rating and a 400 lb maximum user weight, and the Amazon listing gives a 0–14 mph speed range, a -3% to 12% incline, RunFlex cushioning, a 24-inch touchscreen that tilts and pivots, and a folding frame with assisted lowering. The 400 lb rating is the highest of the established-brand machines here, and the 14 mph top speed is the fastest. The trade-off is that much of the price goes into the screen and its software: the listing describes the full experience with an iFIT Pro membership, which iFIT listed at $39 a month in November 2026. The treadmill runs without it, in manual mode. Amazon listed it at $2,299 on 6 November 2026. It takes the place of the Vision T600E on this page, which is sold only through Vision dealers: it is a home folding treadmill rather than a light-commercial machine, so it is the alternative for the screen and the deck, not for gym-level hours.",
     },
     {
-      id: 'horizon-7-8-at',
-      name: 'Horizon 7.8 AT',
-      category: 'Johnson Health Tech’s Home Treadmill in Vision’s Old Price Band',
-      badge: 'Best for Most Homes',
-      reviewUrl: '/horizon-7-8-at-treadmill/',
-      priceRange: '$1,999 at Horizon on 5 Nov 2026',
-      amazonUrl: 'https://www.amazon.com/s?k=Horizon+7.8+AT+Treadmill&tag=sktiger-20',
-      specs: '22 x 60 in. deck · 0.5-12 mph · 0-15% incline · 375 lb capacity · folding · Bluetooth FTMS',
+      id: "horizon-7-4-at",
+      name: "Horizon 7.4 AT",
+      category: "Johnson Health Tech’s Home Treadmill in Vision’s Old Price Band",
+      badge: "Closest on Amazon",
+      priceRange: "Around $1,500–$1,800",
+      specs: "22 x 60 in. deck · 0.5-12 mph · 0-15% incline · 350 lb capacity · Bluetooth FTMS",
       pros: [
-        'The same company as Vision, with the same 22 by 60-inch deck and 15% incline',
-        'A 375 lb rating, close to the T600’s 400 lb',
-        'Lifetime frame and motor cover, five years on parts and two on labour',
-        'Folds, which no Vision treadmill on sale does',
+        "The same parent company as Vision, with the same 22 by 60-inch deck and 15% incline as the T600",
+        "A 350 lb maximum user weight",
+        "Lifetime frame and motor cover, five years on parts and two years of labour",
+        "Folds, which no Vision treadmill on sale does",
       ],
       cons: [
-        'A home DC treadmill, not an AC light-commercial machine',
-        'No touchscreen; you bring a tablet',
+        "A home treadmill, not an AC light-commercial machine like the T600",
+        "The same 12 mph and 15% ceilings as the cheaper 7.0 AT",
+        "Heavy for a folding machine, at 318 lb",
       ],
-      bottomLine:
-        'For a home buyer who used to shop Vision, this is the current Johnson Health Tech equivalent at about a quarter of the T600E’s price.',
-      description:
-        'The 7.8 AT is Horizon’s top home treadmill. Our review, checked on 5 November 2026 against Horizon’s US store and independent coverage, gives a 22 by 60-inch deck, 0.5 to 12 mph, 0 to 15% incline, a 375 lb maximum user weight and Bluetooth FTMS app connectivity, with a lifetime frame and motor warranty, five years on parts and two on labour. It was $1,999 at Horizon that day.',
+      bottomLine: "For a home buyer who used to shop Vision and wants to buy on Amazon, this is a current Johnson Health Tech equivalent at a fraction of the T600E’s price.",
+      description: "Horizon's top home treadmill, the 7.8 AT, is sold by Horizon rather than on Amazon, so this card shows its sibling the 7.4 AT, which Amazon does list and which shares the 7.8 AT's 22 by 60-inch deck, 15% incline and warranty. Horizon lists a 22 by 60-inch deck, 0.5 to 12 mph, 0 to 15% incline, a 350 lb maximum user weight, one-step hydraulic folding and an 8.75-inch step-on height; a Johnson Fitness and Wellness listing and independent coverage agree on the deck, speed, incline and capacity. The console is an 8.25-inch LCD with ten programs including Sprint 8, and Horizon includes a Bluetooth heart rate monitor. The warranty is lifetime on the frame and motor, five years on parts and two years of labour. Against the 7.8 AT you give up 25 lb of rated capacity and the colour screen. Against the T600 it is a home treadmill rather than an AC light-commercial machine, so for multi-user or facility use the T600 remains the stronger build. One independent review quotes a 3.5 CHP motor; Horizon does not publish a figure, so it is not on the card. Horizon's store listed it at $1,799, or $1,499 with a promotional code, on 13 October 2026; its figures are those checked for our Horizon treadmill guide.",
     },
     {
       id: 'life-fitness-run-cx',
@@ -208,7 +206,8 @@ export default {
             gives the same figures for both. Vision sells both only through its own offices and dealers, not on
             Amazon, so the product cards below show the nearest alternatives sold there — a Matrix T5x from the same
             parent company in the T600's place and a NordicTrack Commercial 2450 for the T600E's touchscreen — next to
-            the Horizon and Life Fitness home alternatives. The T600 figures are in the table.
+            the Horizon and Life Fitness home alternatives. Horizon's 7.8 AT is sold by Horizon rather than on Amazon,
+            so the Horizon card shows its sibling, the 7.4 AT. The T600 figures are in the table.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
             <thead>
