@@ -149,8 +149,9 @@ export default {
       products: true,
       html: `          <p>
             Two of these are walking pads rather than treadmills, and they are here because at
-            this price they are frequently the better product. Five are specific machines sold on
-            Amazon US; the sixth is a buying route rather than a model. Each entry says who it is for.
+            this price they are frequently the better product. All six are specific machines sold on
+            Amazon US. A manufacturer-refurbished machine, a buying route rather than a model, is the
+            other option worth watching; the used-market section below covers it. Each entry says who it is for.
           </p>
           <p>
             One machine that is no longer an option deserves a mention, because it is still what
@@ -182,7 +183,9 @@ export default {
             covers that next tier.
           </p>
           <p>
-            The used market is the third option and often the best value of all at this budget. A
+            The used market is the third option and often the best value of all at this budget, and
+            manufacturer-refurbished or open-box machines sit between new and private-sale used: wear
+            parts typically replaced and a shorter warranty attached, but you buy whatever is in stock. A
             three-year-old mid-range machine frequently sells for $400 to $600 and is a
             substantially better product than anything new at the same money. Our
             <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a>
@@ -411,27 +414,25 @@ export default {
         'Most machines at this price stop at 220 to 265 lbs, which is why this page tells heavier buyers to save or buy used. The WELLFIT is the exception worth knowing about. The Amazon listing gives a 400 lb maximum user weight, a 4.0 HP motor, a speed range of 0.6 to 8.8 mph, a 0–15% automatic incline, an 18 by 43-inch running belt, handlebar buttons for speed and incline, Bluetooth app connectivity, a fold-down frame with wheels, and a warranty of three years on the frame and one year on the motor and parts, with lifetime technical support. It arrives 95% assembled. Keep it in proportion: the belt is too short for running whatever the speed range says, the motor’s 4.0 HP is not described as continuous, and one year on the motor tells you how the maker sees its life. The 400 lb figure is the maker’s claim; we could not verify it independently. If you walk, want incline and need more headroom than a pad offers, it is the sensible buy here; if you want to jog, a used mid-range machine is still the better route. Amazon listed it at $399.99 on 6 November 2026.',
     },
     {
-      id: 'refurbished-treadmill',
-      name: 'Manufacturer-Refurbished Treadmill',
-      category: 'Best Compromise on Risk',
-      badge: 'Warranty Included',
-      amazonUrl: 'https://www.amazon.com/s?k=refurbished+treadmill&tag=sktiger-20',
-      priceRange: '$400-$500',
-      specs: 'Factory-checked · limited warranty · usually 1-3 years old · full-size frame',
+      id: "xterra-trx1200",
+      name: "XTERRA TRX1200",
+      category: "Best Compromise on Risk",
+      badge: "Lifetime Frame Warranty",
+      priceRange: "$549.99 at XTERRA on 5 Nov 2026",
+      specs: "16 x 50 in. deck · 2.25 HP · 0.5–10 mph · 10 power incline levels · 250 lb max user · 111 lb · Bluetooth FTMS",
       pros: [
-        'Most of the used-market value with an actual warranty attached',
-        'Wear parts are typically replaced before resale',
-        'Delivery is usually included rather than your problem',
-        'Full-size hardware at walking-pad money',
+        "A lifetime frame warranty from a maker with a US store, the recourse a cautious buyer wants",
+        "Ten levels of powered incline, changed while you walk",
+        "A 50-inch deck, longer than most machines at this price",
+        "XTERRA, Target and other retailers agree on its figures",
       ],
       cons: [
-        'Availability is unpredictable — you buy what exists, not what you chose',
-        'Warranties are shorter and more limited than on new machines',
+        "Just over this page’s budget at XTERRA’s price; watch for it under $500",
+        "One year on the motor and 90 days on the deck, parts and labour",
+        "A 250 lb limit, and still a walking-and-jogging deck rather than a running one",
       ],
-      bottomLine:
-        'The version of the used-market argument that comes with recourse. Worth watching for if you are not in a hurry.',
-      description:
-        'Manufacturer-refurbished and open-box machines sit between new and private-sale used, and for a cautious buyer at this budget they are often the best answer available. You get full-size hardware — real deck length, a proper frame, a motor with margin — at close to walking-pad prices, with wear parts typically replaced and, crucially, a warranty. Delivery is usually handled rather than being a problem you solve with a friend and a van. The catch is availability: you are buying whatever happens to be in stock, which means waiting and being flexible about the specific model. Warranty terms are also shorter and narrower than on new machines, so read them rather than assuming. If you are not in a hurry and can watch manufacturer outlet pages for a few weeks, this is a better route than any new machine at this price.',
+      bottomLine: "A new full-size folding treadmill with a lifetime frame warranty, for a buyer who wants recourse more than the lowest price.",
+      description: "This slot used to describe a buying route rather than a machine: a manufacturer-refurbished treadmill, which gives you full-size hardware with some warranty at close to walking-pad prices, if you can find one and are flexible about the model. That route is still worth watching, as this page's section on the used market explains, but it is not a product you can order on Amazon, so the card now shows the new machine closest to the same idea: full-size hardware from an established maker, with a warranty that means something. XTERRA lists a 2.25 HP motor, 0.5 to 10 mph, 10 levels of electronic incline, a 16 by 50-inch belt, a 250 lb maximum user and a 111 lb machine weight, and Target and other retailers agree on those figures. The console has 12 preset programmes and Bluetooth FTMS for apps. XTERRA's warranty is lifetime on the frame, one year on the motor and 90 days on the deck, parts and in-home labour, so read it as frame protection rather than full cover. XTERRA listed it at $549.99, and Academy at $599.99, on 5 November 2026; it is sold on Amazon too, where prices move often, and at or under $500 it is a sound buy. Figures are those checked for our XTERRA guide.",
     },
   ],
   faqs: [

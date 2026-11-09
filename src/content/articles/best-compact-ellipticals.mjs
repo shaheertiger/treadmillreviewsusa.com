@@ -32,9 +32,11 @@ export default {
           not sold on Amazon US, with Sunny's SF-E3919, checked against Sunny's page, its Amazon
           listing and two other retailers. The other machines were confirmed on 19 October
           2026 as currently sold — the Schwinn machines on Schwinn's store, the Niceday
-          and FitNation through Amazon and other retailers — and its figures were checked on that date
+          through Amazon and other retailers — and its figures were checked on that date
           against the maker's page or the retailer listing and at least one independent source:
-          hands-on reviews from Garage Gym Reviews and BarBend, and second retailers. A figure appears in
+          hands-on reviews from Garage Gym Reviews and BarBend, and second retailers. FitNation's Flex
+          Elliptical, which we could not find on Amazon US, was replaced on 9 November 2026 by Sunny's
+          SF-E905SMART, checked against its Amazon listing, Sunny's specification list and a second retailer. A figure appears in
           a product's specification line only where sources agree; where they conflicted — on stride
           length, dimensions and two user capacities — we left the figure off the card and say so in the
           text. Niceday sells mainly through Amazon, so its specifications are listing claims, labeled as
@@ -73,7 +75,7 @@ export default {
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sunny Smart Stepping Elliptical (SF-E3919)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Shortest footprint, hardest workout</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">44 in. · stepper-style path; about $450</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Schwinn 490 Elliptical</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Full stride and incline in a short frame</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">58.1 in. · 20 in.; $1,499</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Niceday Elliptical CT11</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Budget, heavier users (listing claim)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Length unconfirmed · 15.5 in.; about $400–$600</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">FitNation Flex Elliptical</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The smallest room</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">37 in. · stride disputed; about $250</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sunny SF-E905SMART</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The smallest room</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About 41 in. long, 13 in. stride (Sunny); about $300</td></tr>
             </tbody>
           </table></div>
           <p>
@@ -125,7 +127,7 @@ export default {
           <p>
             <strong>Recall checks.</strong> We searched the US Consumer Product Safety Commission's
             recall database by brand for every maker on this page — Schwinn, BowFlex and their owner
-            Johnson Health Tech, Niceday and FitNation (Echelon) — and for ellipticals as a product type.
+            Johnson Health Tech, Niceday and Sunny Health &amp; Fitness — and for ellipticals as a product type.
             Nothing current covers any machine listed here, and we found no elliptical recall of any brand
             since 2018. Older ones are worth knowing if you buy used: Nautilus, which then owned the Schwinn
             brand, recalled Schwinn elliptical equipment in December 2011; Johnson Health Tech recalled
@@ -187,7 +189,7 @@ export default {
             <li><strong>Schwinn 411:</strong> 53.8 inches long, 18-inch stride. The sweet spot for average-height users.</li>
             <li><strong>Sunny SF-E3919:</strong> 44 inches long by Sunny's and Amazon's figures, with a 9-inch climb and a 5-inch horizontal stride. BowFlex's Max Trainer M6, not carded, is about 46 inches long by reviewers' figures. On both the motion is mostly vertical, so stride length in the usual sense does not apply. You climb rather than glide.</li>
             <li><strong>Niceday CT11:</strong> a 15.5-inch stride by the listing and Garage Gym Reviews. Short.</li>
-            <li><strong>FitNation Flex:</strong> 37 inches long, with a stride given as 18 inches by BarBend and 15 inches by Academy's listing.</li>
+            <li><strong>Sunny SF-E905SMART:</strong> 40.7 inches long with a 13-inch stride, by Sunny's specification list.</li>
           </ul>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">What a short stride feels like</h3>
           <p>
@@ -249,7 +251,7 @@ export default {
             <strong>For the other picks</strong>, the makers' figures were not available to us. BowFlex says
             it gives a minimum ceiling height in its specifications for the Max Trainer, and the motion lifts
             you higher than a conventional elliptical, so read that figure before you order. For the Niceday
-            and FitNation, ask the seller for the maximum pedal height or check the manual; if no figure
+            and the Sunny SF-E905SMART, ask the seller for the maximum pedal height or check the manual; if no figure
             exists, stand on a step of similar height and reach up. Measure from the floor to the lowest point
             above where the machine will stand — beams, ducts and ceiling lights included — and leave a few
             inches of headroom. Our guide to
@@ -271,8 +273,7 @@ export default {
             is rated to 260 lb on Amazon and by a second retailer, and 250 to 300 lb on Overstock. Niceday's listing
             claims 400 lb for the CT11, which Garage Gym Reviews repeats while also reporting that its
             testers noticed some side-to-side shifting and that some heavier Amazon reviewers said the
-            machine broke near the stated limit. FitNation's Flex is listed at 260 lb by most sellers and 300
-            lb by one Canadian retailer. A high rating on a light, short machine is a claim to treat with
+            machine broke near the stated limit. Sunny lists 220 lb for the SF-E905SMART, the lowest here. A high rating on a light, short machine is a claim to treat with
             some caution; a rating backed by a heavier frame and a long warranty is more convincing.
           </p>
           <p>
@@ -290,8 +291,8 @@ export default {
       html: `          <p>
             <strong>Power.</strong> The Schwinn 411 and 490 plug into a standard 110–120V household outlet,
             by Schwinn's spec sheets. Garage Gym Reviews' reviewer liked not having to plug the Niceday into
-            the wall, and BarBend notes the FitNation Flex's console runs on batteries, which makes both
-            easy to place anywhere. The Max Trainer M6 has a backlit console; check BowFlex's power
+            the wall, which makes it easy to place anywhere; check the SF-E905SMART's listing for its
+            console's power source. The Max Trainer M6 has a backlit console; check BowFlex's power
             requirement on its spec sheet. If you do need an outlet, plug directly into the wall rather than
             a long extension; our
             <a href="/treadmill-extension-cord/" class="text-[#0F62FE] font-medium">extension cord guide</a>
@@ -299,8 +300,8 @@ export default {
           </p>
           <p>
             <strong>Noise.</strong> Every pick uses magnetic resistance, which has no contact parts and is
-            quiet; Garage Gym Reviews describes the Niceday as whisper-quiet and BarBend picks the FitNation
-            Flex as its quiet compact choice, though BarBend says it had not tested that machine itself. The
+            quiet; Garage Gym Reviews describes the Niceday as whisper-quiet and Sunny describes the
+            SF-E905SMART's belt drive and magnetic resistance as quiet, which we have not checked. The
             noise people notice from an elliptical is usually squeaks from joints and pivots, which grow with
             wear and loosened bolts; Niceday includes a bottle of lubricant for exactly that reason, according
             to Garage Gym Reviews. Ellipticals have no footfall impact, so they are among the kindest machines
@@ -322,7 +323,7 @@ export default {
             <li><strong>Match the stride to the tallest user.</strong> Short strides suit shorter users; tall users should look for 18 to 20 inches or a deliberately different motion like the Max Trainer's.</li>
             <li><strong>Treat high capacity claims on light machines with caution.</strong> Prefer ratings that the maker and an independent reviewer agree on.</li>
             <li><strong>Read the warranty in full.</strong> Schwinn lists 10 years on the 411's frame but 90 days of labor; BowFlex lists two years on the M6's frame and parts; Sunny lists three years on the SF-E3919's frame and 180 days on parts; Niceday's cover is handled through Amazon, according to Garage Gym Reviews. These are very different promises.</li>
-            <li><strong>Decide whether you want an app.</strong> The 411 connects to specific apps over Bluetooth (Schwinn calls it partial FTMS), the 490 has full FTMS, the M6 works with BowFlex's JRNY app, and the Sunny SF-E3919 with Sunny's free SunnyFit app. The Niceday and FitNation have simple consoles and nothing to subscribe to.</li>
+            <li><strong>Decide whether you want an app.</strong> The 411 connects to specific apps over Bluetooth (Schwinn calls it partial FTMS), the 490 has full FTMS, the M6 works with BowFlex's JRNY app, and the Sunny SF-E3919 and SF-E905SMART with Sunny's free SunnyFit app. The Niceday has a simple console and nothing to subscribe to.</li>
           </ol>
           <p>
             <strong>On price.</strong> Compact ellipticals run from about $250 to $1,500. The budget
@@ -433,28 +434,28 @@ export default {
         "Niceday sells mainly through Amazon, so its figures are listing claims; we checked them against Garage Gym Reviews' hands-on review and Niceday's own store listing. They agree on a 15.5-inch stride (Niceday's store gives 40 cm), 16 levels of magnetic resistance, a 16 lb flywheel (7.2 kg) and a maximum user weight of 400 lb (181 kg). Garage Gym Reviews gives its weight as 106 lb, found it quiet and easy to set up, and liked that it needs no outlet, but its testers found the stride short, noticed some shifting during use and reported a handle that felt wobbly; it suggests the light flywheel is part of the reason. It also relays Amazon reviews from heavier users who said the machine broke near its stated limit, so treat the 400 lb figure with caution. Footprint is the figure we could not settle: Garage Gym Reviews gives 42 by 21 by 61 inches in one place and 62 by 24.4 by 48 inches in another. Niceday sells an 18-inch-stride version (CT11S-18) as well; check which model the listing shows. Garage Gym Reviews quoted just under $600; Niceday's own store showed lower prices, so compare on the day.",
     },
     {
-      id: 'fitnation-flex-elliptical',
-      name: 'FitNation Flex Elliptical Trainer',
+      id: 'sunny-sf-e905smart',
+      name: 'Sunny Health & Fitness Smart Elliptical SF-E905SMART',
       category: 'Best Elliptical for the Smallest Rooms',
-      badge: 'Smallest',
-      amazonUrl: 'https://www.amazon.com/s?k=FitNation+Flex+Elliptical+Trainer&tag=sktiger-20',
-      priceRange: 'About $250',
-      specs: 'About 37 in. long · 8 magnetic resistance levels · 260 lb max user (most listings) · battery console · rear handle and front wheels',
+      badge: 'Short and Light',
+      amazonUrl: 'https://www.amazon.com/dp/B0CRM7DM2X?tag=sktiger-20',
+      priceRange: 'About $300 (Amazon, 9 Nov 2026)',
+      specs: '8 magnetic resistance levels · belt drive · Bluetooth to the free SunnyFit app · 1-year frame warranty (listing) · about 41 in. long and 13 in. stride (Sunny)',
       pros: [
-        'The shortest machine here at about 37 inches, agreed by BarBend and two retailers',
-        'Magnetic resistance and a simple console with nothing to subscribe to',
-        'Light enough to roll away, with a rear handle and front wheels',
-        'From FitNation, Echelon’s budget line, sold through several large retailers',
+        'About 41 inches long by Sunny’s figures, one of the shortest machines here',
+        'Magnetic resistance on a belt drive, with a simple tension knob',
+        'Connects to Sunny’s free SunnyFit app, with no subscription',
+        'From a US brand that publishes its own specification list',
       ],
       cons: [
-        'Stride is listed as 18 inches by BarBend and 15 inches by Academy, so we have printed neither',
-        'Capacity is 260 lb on most listings but 300 lb on one, and lower than the other picks either way',
-        'BarBend had not tested it, and reviewers note a short warranty',
+        'A 13-inch stride, by Sunny’s figure, is short for taller users',
+        'A 220 lb limit by Sunny’s figure, the lowest here',
+        'Only a one-year frame warranty, per the listing, and we found no hands-on review',
       ],
       bottomLine:
-        'For a small apartment or dorm where nothing longer than three feet will fit, and the user is of average height or shorter.',
+        'For a small apartment or dorm where space is the overriding limit, the user is of average height or shorter and well under 220 lb.',
       description:
-        "The Flex is the smallest machine on this page and the one to consider when floor space is the overriding limit. BarBend, the MileagePlus Awards catalogue and Academy Sports agree on a length of about 37 inches, width of 19 to 20 inches and height of about 56 inches, with eight levels of magnetic resistance and a 260 lb maximum user weight; one Canadian retailer lists 300 lb instead, and we have used the lower figure. Weight is 99 to 104 lb depending on the source. The stride is the problem figure: BarBend lists 18 inches, Academy's specification table 15 inches, and we could not settle it — given the frame length, assume the shorter figure until FitNation or the manual confirms otherwise. BarBend picked it as its quiet compact elliptical, while saying it had not personally tested it, and noted that replacing the console batteries can be fiddly and the warranty is short. FitNation is Echelon's budget brand, but unlike Echelon's connected bikes this machine works without any app. BarBend listed it at $249.99; check the current price, which varies by retailer.",
+        'FitNation\'s Flex Elliptical, the 37-inch machine we first carded here for the smallest rooms, could not be found on Amazon US, so this card shows the short elliptical from Sunny Health & Fitness that Amazon does sell. The Amazon listing, whose model number is SF-E905SMART, describes a compact elliptical with eight levels of magnetic resistance set by a twist knob, a belt drive, Bluetooth connection to Sunny\'s free SunnyFit app and a one-year warranty on the structural frame, and a retailer listing for the same model also gives eight magnetic levels. Sunny\'s own specification list adds the figures the listing leaves out: a 220 lb maximum user weight, a 13-inch stride and an assembled size of 40.7 by 26.4 by 59.8 inches. Those three are Sunny\'s figures only; we found no hands-on review to check them against. The short stride and modest weight limit are the price of the small frame: like any machine this size, it suits users of average height or shorter, at moderate intensity. Amazon listed it at $299.99 on 9 November 2026.',
     },
   ],
   faqs: [
@@ -464,7 +465,7 @@ export default {
     },
     {
       q: 'What is the best elliptical for small spaces?',
-      a: `Usually a short one rather than a folding one. The Schwinn 411 is the best all-round choice; the FitNation Flex is about 37 inches long for the tightest rooms, with a shorter stride and a 260 lb limit. Check the ceiling as well as the floor, because compact machines often lift the pedals higher.`,
+      a: `Usually a short one rather than a folding one. The Schwinn 411 is the best all-round choice; Sunny's SF-E905SMART is about 41 inches long for the tightest rooms, with a 13-inch stride and a 220 lb limit by Sunny's figures. Check the ceiling as well as the floor, because compact machines often lift the pedals higher.`,
     },
     {
       q: 'How much ceiling height do I need for an elliptical?',

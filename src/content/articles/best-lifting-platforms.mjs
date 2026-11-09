@@ -433,8 +433,8 @@ export default {
       name: 'Valor Fitness Olympic Lifting Wood Platform',
       category: 'Complete Olympic weightlifting platform',
       badge: 'Best for Olympic Lifting',
-      amazonUrl: 'https://www.amazon.com/s?k=Valor+Fitness+Olympic+Weightlifting+Platform&tag=sktiger-20',
-      priceRange: '$1,499',
+      amazonUrl: 'https://www.amazon.com/dp/B07MCDDK96?tag=sktiger-20',
+      priceRange: '$1,499–$1,550',
       specs: '101 x 81.5 in. · 1.25 in. high-impact rubber tiles with bamboo-lined centre boards · steel frame · transition plate',
       pros: [
         'A complete platform: frame, rubber and wood centre arrive together',
@@ -450,7 +450,7 @@ export default {
       bottomLine:
         'For lifters who snatch and clean and jerk and want a finished platform without a DIY build. Measure the room first; it is big.',
       description:
-        "Valor's Olympic Lifting Wood Platform is the only option here that arrives as a finished platform. Valor describes a 101 x 81.5-inch footprint built from sixteen 1.25-inch high-impact rubber mats and four bamboo-lined boards in a steel frame with corner plates, plus a transition plate at the front so you can roll bumper plates onto the surface; Garage Gym Reviews lists the same dimensions, thickness and materials and names it the best platform for Olympic lifting. The near 7 ft depth is what Olympic lifts need, since you move forward and back to catch a snatch or split a jerk. Be clear about the evidence: the reviewer says they have not yet tested this platform, so their pick rests on the specification and experience with similar platforms, including a warning that smooth wooden centres can wear slick over time. It cost $1,499 on Valor's site on 16 October 2026, which the review notes is far more than a DIY platform of similar size. We confirmed it on Valor's own store.",
+        "Valor's Olympic Lifting Wood Platform is the only option here that arrives as a finished platform. Valor describes a 101 x 81.5-inch footprint built from sixteen 1.25-inch high-impact rubber mats and four bamboo-lined boards in a steel frame with corner plates, plus a transition plate at the front so you can roll bumper plates onto the surface; Garage Gym Reviews lists the same dimensions, thickness and materials and names it the best platform for Olympic lifting. The near 7 ft depth is what Olympic lifts need, since you move forward and back to catch a snatch or split a jerk. Be clear about the evidence: the reviewer says they have not yet tested this platform, so their pick rests on the specification and experience with similar platforms, including a warning that smooth wooden centres can wear slick over time. It cost $1,499 on Valor's site on 16 October 2026, which the review notes is far more than a DIY platform of similar size. We confirmed it on Valor's own store. Valor's Amazon listing, titled Olympic Weightlifting Deadlift Platform Steel and Bamboo, gives the same 81.5 by 101-inch size, bamboo centre, rubber sides, steel frame and transition plate, at $1,549.98 on 9 November 2026.",
     },
     {
       id: 'titan-silencer-drop-pads',

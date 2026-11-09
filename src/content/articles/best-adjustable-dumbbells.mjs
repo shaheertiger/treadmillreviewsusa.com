@@ -566,7 +566,7 @@ export default {
       name: 'PowerBlock Pro 100 EXP',
       category: 'Expandable pin-selector dumbbells, to 100 lb',
       badge: 'Best for Heavy Lifting',
-      amazonUrl: 'https://www.amazon.com/s?k=PowerBlock+Pro+100+EXP+Adjustable+Dumbbells&tag=sktiger-20',
+      amazonUrl: 'https://www.amazon.com/dp/B0CTJ627VD?tag=sktiger-20',
       priceRange: '$539–$1,196',
       specs: '5–100 lb per hand with expansion kits · magnetic selector pin · about 19.2 in. long at 100 lb · 5-year residential warranty · sold as a pair',
       pros: [
@@ -583,7 +583,7 @@ export default {
       bottomLine:
         'For lifters who will outgrow 50 or 60 lb. Start with the 40 or 60 lb stage and add kits as you get stronger.',
       description:
-        "The Pro 100 EXP is the expandable pin-selector design PowerBlock is known for: the handle sits inside a nest of colour-coded plates, and a magnetic pin pushed in at the right band decides how many come with it. PowerBlock sells it as a pair in four stages, from a 40 lb maximum up to 100 lb, with each expansion kit adding 20 lb per hand. That staging is its real advantage — you buy heavier plates when you need them. Garage Gym Reviews' specification table agrees with PowerBlock's 5 to 100 lb range and roughly 19.2-inch length at full weight, and Science for Sport lists the same five-year warranty, which PowerBlock limits to residential use. PowerBlock says the included micro weights allow 2.5 lb steps; Science for Sport lists only 5 lb steps, so we have kept the smaller figure off the specification line. Reviewers' common complaints are the boxy cage, the length at full weight, and a selection system that takes a few sessions to learn. PowerBlock describes the plates as urethane-coated, and notes its Amazon listing is for a single dumbbell rather than a pair.",
+        "The Pro 100 EXP is the expandable pin-selector design PowerBlock is known for: the handle sits inside a nest of colour-coded plates, and a magnetic pin pushed in at the right band decides how many come with it. PowerBlock sells it as a pair in four stages, from a 40 lb maximum up to 100 lb, with each expansion kit adding 20 lb per hand. That staging is its real advantage — you buy heavier plates when you need them. Garage Gym Reviews' specification table agrees with PowerBlock's 5 to 100 lb range and roughly 19.2-inch length at full weight, and Science for Sport lists the same five-year warranty, which PowerBlock limits to residential use. PowerBlock says the included micro weights allow 2.5 lb steps; Science for Sport lists only 5 lb steps, so we have kept the smaller figure off the specification line. Reviewers' common complaints are the boxy cage, the length at full weight, and a selection system that takes a few sessions to learn. PowerBlock describes the plates as urethane-coated, and notes its Amazon listing is for a single dumbbell rather than a pair. That listing, titled Pro 100 EXP Single Adjustable Dumbbell, 5-100 lb, was $598 on 9 November 2026, so a pair costs twice that.",
     },
     {
       id: 'nuobell-80',

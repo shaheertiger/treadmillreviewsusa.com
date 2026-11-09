@@ -36,32 +36,31 @@ export default {
           and at least one independent source agree. Where they disagree — the warranty, the
           number of programmes, whether the incline levels are percentages, a continuous motor
           rating — we say so rather than choose. We have not tested the FR20z; nothing here is our
-          own measurement. Prices are those shown on the dates stated and change often.`,
+          own measurement. The product card shows the Horizon T101 Connect, with the figures and Amazon
+          price checked for our auto-incline treadmill guide on 6 November 2026. Prices are those shown
+          on the dates stated and change often.`,
   products: [
     {
-      id: 'reebok-fr20z',
-      name: 'Reebok FR20z Floatride',
-      category: 'Non-Folding Home Treadmill',
-      badge: 'Limited US Availability',
-      priceRange: 'A$1,299 in Australia; about £700-£950 in the UK',
-      amazonUrl: 'https://www.amazon.com/s?k=Reebok+FR20z+Floatride+Treadmill&tag=sktiger-20',
-      specs: '140 x 46 cm (55 x 18 in.) deck · 2.25 HP peak · up to 18 km/h (11.2 mph) · 15 power incline levels · 120 kg (264 lb) max user · does not fold',
+      id: "horizon-t101-connect",
+      name: "Horizon T101 Connect",
+      category: "Closest on Amazon to the FR20z",
+      badge: "Closest on Amazon",
+      reviewUrl: "/horizon-t101-treadmill/",
+      priceRange: "About $740 (Amazon, 6 Nov 2026)",
+      specs: "20 x 55 in. deck · 0–10% power incline · 0.5–10 mph · 300 lb capacity · folds · lifetime frame & motor warranty",
       pros: [
-        'Floatride+ cushioning with eight cushioning zones, which independent reviewers describe as comfortable underfoot',
-        'Fifteen levels of power incline and a top speed of 11.2 mph on a compact, fixed frame',
-        'Bluetooth with Zwift and Kinomap compatibility, and no subscription needed to use the treadmill',
-        'Built-in speakers, a device dock and transport wheels, at a mid-range price in its main markets',
+        "The same 55-inch deck length as the FR20z, two inches wider",
+        "A 300 lb rating, above the FR20z’s 264 lb",
+        "Works with apps including Zwift and Peloton, per the listing",
+        "A lifetime frame and motor warranty, with US stock and support",
       ],
       cons: [
-        'Hard to buy new in the US: Reebok’s US store lists no treadmills and the Amazon US listings we checked were unavailable',
-        'A 46 cm (about 18-inch) belt is narrow, and the 140 cm (55-inch) length is short for a long running stride',
-        'Does not fold, so it needs a permanent footprint of about 70 by 27 inches',
-        'Warranty terms differ by country and retailer, and only a peak motor figure is agreed',
+        "10% incline and 10 mph, against the FR20z’s 15 levels and 11.2 mph",
+        "Folds, so it lacks the FR20z’s fixed frame",
+        "Basic three-zone cushioning rather than Floatride+",
       ],
-      bottomLine:
-        'A well-cushioned, compact treadmill for walking and steady running in the markets where it is sold. For most US buyers a machine with local stock and support will be the more sensible choice.',
-      description:
-        'The FR20z Floatride is a fixed-deck home treadmill sold under licence by Reebok Fitness. The official UK and Australian listings and independent reviews agree on a 140 by 46 cm running surface (about 55 by 18 inches) with Floatride+ cushioning in eight zones, an eco-Kinetic motor with a 2.25 HP peak output, a top speed of 18 km/h (11.2 mph), 15 levels of power incline, a 120 kg (264 lb) maximum user weight, a footprint of 177 by 69 by 115 cm (about 70 by 27 by 45 inches) and a net weight of about 72 kg (159 lb). It does not fold. The console is a touch-response LED display with Bluetooth, Zwift and Kinomap compatibility, built-in speakers and a device dock. Sources disagree on the number of programmes, on whether the incline levels equal percentages, and on the warranty, which varies by market. In October 2026 it was A$1,299 on the Australian Reebok Fitness store and out of stock on the UK store; Amazon’s US listings were unavailable.',
+      bottomLine: "For a US buyer who wanted the FR20z’s compact deck and Zwift support with local stock and a long frame and motor warranty.",
+      description: "The FR20z is sold mainly in the UK, Europe and Australia, and the Amazon US listings we checked were unavailable, so this card shows the closest machine we found that Amazon US does sell, the Horizon T101 Connect, which the alternatives section below also suggests. The Amazon listing gives a 0–10% power incline and 0.5 to 10 mph, changed with Horizon's EasyDial controls or one-touch keys, a 20 by 55-inch running area with three-zone cushioning, a lifetime frame and motor warranty, a folding frame, and compatibility with apps including JRNY, Peloton and Zwift, which need their own subscriptions; Horizon's specification adds a 300 lb maximum user weight. Against the FR20z it has the same deck length, two more inches of width and a higher weight rating, but less incline and speed and a folding rather than fixed frame. Its real advantage for an American buyer is the one the FR20z lacks here: local stock, a US warranty and a service network. Amazon listed it at $739.99 on 6 November 2026, as checked for our auto-incline treadmill guide.",
     },
   ],
   sections: [
@@ -94,6 +93,8 @@ export default {
             — we suggest some in the alternatives section — and buy an FR20z only from a seller
             who can show it is a US-voltage unit with a warranty honoured in the US. We have not
             tested the FR20z; everything below is from published listings and independent reviews.
+            Because the FR20z is not currently sold on Amazon US, the product card shows the closest
+            machine we found there, the Horizon T101 Connect.
           </p>`,
     },
     {

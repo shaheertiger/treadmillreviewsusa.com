@@ -31,9 +31,9 @@ export default {
           Landice treadmill. Prices are what landice.com showed on the day and change with the
           console and options you pick. As an Amazon Associate we earn from qualifying purchases;
           Landice treadmills are mainly sold through Landice and its dealers rather than on Amazon, so
-          the first two product cards show the nearest Amazon alternatives to the L7 and L8, the Sole
-          TT8 and Spirit XT485, with figures as checked for our long-distance running and heavy duty
-          treadmill guides on 6 November 2026.`,
+          the product cards show the nearest Amazon alternatives to the L7, L8 and M2 Genesis, the Sole
+          TT8, Spirit XT485 and NordicTrack Commercial 2450, with figures as checked for our long-distance
+          running and heavy duty treadmill guides on 6 November 2026.`,
   lead: `Most people who search for a Landice treadmill have met one somewhere other than a shop:
           in a physical therapist's clinic, a university gym, a hospital rehab department, or a
           friend's basement where it has been running for years. The name is far less familiar than
@@ -91,29 +91,26 @@ export default {
         'The L8 is sold through Landice and its dealers, not on Amazon, and nothing on Amazon matches its 22 by 63-inch deck and 500 lb rating. The XT485 is the nearest in the respects we could confirm. The Amazon listing gives a 22 by 60-inch running belt, a 4.0 HP motor, a 9-inch backlit LCD, direct speed and incline buttons, handlebar toggles and Bluetooth for the Spirit Fit app; Spirit’s specification, checked for an earlier guide on this site, adds 0.5 to 12 mph, 15 levels of electronic incline, a 7-inch step-up height, a 43-inch folded length and an item weight of about 289 lb. The US residential warranty is lifetime on the frame, motor and deck, ten years on parts and one year of labour, which is as close to Landice’s lifetime parts cover as any machine on Amazon we checked. On capacity, Spirit and independent coverage give 425 lb, but one US retailer’s FAQ gave 350 lb, so we have left the figure off the card; check the label on the unit you receive. It is heavy and tall when folded, and the console is basic. Amazon listed it at $2,649 on 6 November 2026, as checked for our heavy duty treadmill guide.',
     },
     {
-      id: 'landice-m2-genesis',
-      name: 'Landice M2 Genesis',
-      category: 'Folding Treadmill With 15.6 in. Touchscreen',
-      badge: 'Only Folding Landice',
-      priceRange: '$3,999 at Landice on 14 Oct 2026',
-      amazonUrl: 'https://www.amazon.com/s?k=Landice+M2+Genesis+Treadmill&tag=sktiger-20',
-      specs: '21 x 62 in. running area · 3 HP continuous-duty (lab rating) · 0-15% incline · 300 lb max user · folds',
+      id: "nordictrack-commercial-2450",
+      name: "NordicTrack Commercial 2450",
+      category: "Closest on Amazon to the Landice M2 Genesis",
+      badge: "Closest on Amazon",
+      reviewUrl: "/nordictrack-commercial-2450-treadmill/",
+      priceRange: "About $2,299 (Amazon, 6 Nov 2026)",
+      specs: "22 x 60 in. belt · 4.25 CHP (NordicTrack rating) · 0–14 mph · -3% to 12% incline · 400 lb max user · folds",
       pros: [
-        'The only Landice that folds, and the cheapest way into the brand new',
-        'A 62-inch running length, longer than the L7’s',
-        '15.6-inch touchscreen console as standard',
-        'Lifetime frame and ten-year parts cover on Landice’s listing',
+        "A folding treadmill with a large touchscreen, like the M2 Genesis, for about $1,700 less",
+        "A 400 lb rating and 22-inch belt, both above the M2 Genesis’s figures",
+        "A 4.25 CHP motor by NordicTrack’s continuous rating and a 14 mph top speed",
+        "A -3% decline as well as a 12% incline",
       ],
       cons: [
-        '300 lb maximum user weight, well below the L-Series',
-        'Console and labour are each covered for one year',
-        'About 290 lb, and still 55 inches long and 66 inches tall when folded',
-        'A newer design with far less independent coverage than the L7 and L8',
+        "Not a Landice: no Landice frame, dealer service or warranty",
+        "The 24-inch touchscreen is designed around an iFIT Pro membership at $39 a month",
+        "A 60-inch belt, two inches shorter than the M2 Genesis’s, and 12% incline against 15%",
       ],
-      bottomLine:
-        'Worth a look if you want Landice build and dealer support but need the deck to fold; heavier users should stay with the L-Series.',
-      description:
-        'The M2 Genesis is Landice’s folding treadmill and the only model in its Move Series. Landice lists, and an independent review site and a specialist retailer agree on, a 21 by 62-inch running area, a 3 HP continuous-duty motor (again a laboratory rating), 15% electric incline and a 300 lb maximum user weight, with a 15.6-inch colour touchscreen. Landice also lists a speed range of 0.5 to 12.5 mph, which we did not see confirmed elsewhere. Unfolded it measures 80 by 37 by 64 inches and folded 55 by 37 by 66 inches, and it weighs 290 lb. It needs a dedicated 15 A, 110 V line. The residential warranty on its product page is lifetime on the frame, ten years on parts, one year on the console and one year of labour. Landice listed it at $3,999 on 14 October 2026.',
+      bottomLine: "For a buyer who wanted the M2 Genesis for a folding deck and a big screen, and will trade Landice’s build and dealer support for price.",
+      description: "The M2 Genesis is sold through Landice and its dealers rather than on Amazon, so this card shows the nearest folding treadmill with a large touchscreen that Amazon does sell. NordicTrack's Commercial 2450 is its folding flagship. NordicTrack lists a 22 by 60-inch belt, a 4.25 CHP motor by its own continuous rating and a 400 lb maximum user weight, and the Amazon listing gives a 0–14 mph speed range, a -3% to 12% incline, RunFlex cushioning, a 24-inch touchscreen that tilts and pivots, and a folding frame with assisted lowering. On paper that beats the M2 Genesis on width, capacity and speed; what it does not offer is Landice's build, its dealer service or its warranty, and much of the price goes into a screen and software designed around an iFIT Pro membership, which iFIT listed at $39 a month in November 2026. The treadmill runs without it, in manual mode. NordicTrack's motor warranty terms vary by listing, so check them before ordering. Amazon listed it at $2,299 on 6 November 2026, as checked for our heavy duty treadmill guide.",
     },
   ],
   sections: [
@@ -150,9 +147,9 @@ export default {
           </p>
           <p>
             Landice's machines are sold through its dealers and its own store, not on Amazon, so the
-            first two cards below show the nearest Amazon alternatives to the L7 and L8: the
-            non-folding Sole TT8 and the Spirit XT485, whose warranty comes closest to Landice's. Neither
-            is a Landice, and each card says what it gives up.
+            cards below show the nearest Amazon alternatives to the L7, L8 and M2 Genesis: the
+            non-folding Sole TT8, the Spirit XT485, whose warranty comes closest to Landice's, and the
+            folding NordicTrack Commercial 2450. None is a Landice, and each card says what it gives up.
           </p>`,
     },
     {

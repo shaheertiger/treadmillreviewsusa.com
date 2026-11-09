@@ -17,7 +17,7 @@ export default {
     { label: 'See the Picks', href: '#quick-picks' },
     { label: 'How Fast It Changes', href: '#speed-changes' },
   ],
-  tags: ['best treadmill for hiit', 'best treadmill for sprinting', 'best treadmill for interval training', 'hiit treadmill', 'sprint treadmill', 'horizon 7.8 at', 'nordictrack commercial 2450'],
+  tags: ['best treadmill for hiit', 'best treadmill for sprinting', 'best treadmill for interval training', 'hiit treadmill', 'sprint treadmill', 'horizon 7.4 at', 'nordictrack commercial 2450'],
   stickyCta: { text: 'See Our Top Picks', link: '#quick-picks' },
   note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
           treadmills. Each was confirmed on 15 October 2026 as currently on sale, and its
@@ -27,7 +27,10 @@ export default {
           disagreed, as they did on the motor ratings Horizon does not publish, we left the figure out
           and say so in the text. The Sole C80 replaced the Wahoo KICKR RUN in November 2026, because
           the KICKR RUN is sold by Wahoo rather than on Amazon; its figures are those checked for our
-          Sole treadmills guide. None of these are
+          Sole treadmills guide. Horizon's 7.8 AT and NordicTrack's X16 are sold by their makers rather
+          than on Amazon, so in November 2026 we replaced them with the Horizon 7.4 AT and Sunny's
+          Versatile Treadmill, whose figures are those checked for our Horizon, heavy-duty and incline
+          trainer guides. None of these are
           our own measurements. Prices are those we saw on manufacturer stores and in review
           coverage on 15 October 2026; they change often, and list prices are frequently far above
           what these machines actually sell for, so confirm the price, the specification and the
@@ -52,8 +55,8 @@ export default {
       heading: 'Our Picks at a Glance',
       html: `          <p>
             Four motorised treadmills from about $1,100 and one curved manual trainer. The short version: the
-            Horizon 7.8 AT for most people who train in intervals, the Horizon 7.0 AT if you want
-            the same control layout for half the money, and the <a href="/nordictrack-commercial-2450-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>NordicTrack Commercial 2450</a> if you
+            Horizon 7.4 AT for most people who train in intervals, the Horizon 7.0 AT if you want
+            the same control layout for less, and the <a href="/nordictrack-commercial-2450-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>NordicTrack Commercial 2450</a> if you
             genuinely need more than 12 mph. If you are planning the sessions rather than the
             purchase, start with our
             <a href="/treadmill-hiit-workout/" class="text-[#0F62FE] font-medium">treadmill HIIT workout guide</a>.
@@ -67,10 +70,10 @@ export default {
               </tr>
             </thead>
             <tbody>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700"><a href="#horizon-7-8-at" class="text-[#0F62FE] font-medium">Horizon 7.8 AT</a></td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most interval runners</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">QuickDial speed and incline rollers, interval keys, a 22 x 60 in. deck and a 375 lb rating, around $2,000</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700"><a href="#horizon-7-4-at" class="text-[#0F62FE] font-medium">Horizon 7.4 AT</a></td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most interval runners</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">QuickDial controls, Sprint 8, a 22 x 60 in. deck and a 350 lb rating, around $1,500–$1,800</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700"><a href="#horizon-7-0-at" class="text-[#0F62FE] font-medium">Horizon 7.0 AT</a></td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best value</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The same QuickDial controls and 12 mph on a 20 x 60 in. deck for about $1,100</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700"><a href="#nordictrack-commercial-2450" class="text-[#0F62FE] font-medium">NordicTrack Commercial 2450</a></td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Faster sprints</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">14 mph top speed and a 400 lb rating; trainer-led intervals with an iFIT membership</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700"><a href="#nordictrack-x16" class="text-[#0F62FE] font-medium">NordicTrack X16</a></td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Incline intervals</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Incline to 40% for hard efforts at walking speed, on a non-folding frame</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700"><a href="#sunny-versatile-treadmill" class="text-[#0F62FE] font-medium">Sunny Versatile Treadmill</a></td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Incline intervals</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Incline to 45% for hard efforts at walking speed; tops out at 5 mph</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700"><a href="#sole-c80" class="text-[#0F62FE] font-medium">Sole C80</a></td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Unstructured sprints</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A curved belt that follows your pace without buttons; eight magnetic levels</td></tr>
             </tbody>
           </table></div>
@@ -184,12 +187,12 @@ export default {
             you off the back. In practice that means the first few seconds of each sprint are spent
             catching up. One independent reviewer who timed several machines found the
             NordicTrack Commercial 2450 reached 12 mph several seconds sooner than the Horizon it
-            was compared with, and described the Horizon 7.8 AT as quick to adjust as well. Neither
+            was compared with, and described Horizon's 7.8 AT, the 7.4 AT's bigger sibling with the same controls, as quick to adjust as well. Neither
             gets there instantly, and nothing that runs on a motor does.
           </p>
           <p>
             Incline is slower still. Raising a deck from flat to its maximum takes far longer than
-            changing speed, and on a machine like the X16, which climbs to 40%, a full sweep is a
+            changing speed, and on a machine like Sunny's Versatile Treadmill, which climbs to 45%, a full sweep is a
             long wait. For incline intervals, change the grade a little before the work period
             starts, or build the session around fewer, longer climbs.
           </p>
@@ -268,8 +271,8 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Motor rating</h3>
           <p>
             Look for a continuous rating, usually written CHP, rather than a peak figure. NordicTrack
-            rates the Commercial 2450 and X16 at 4.25 CHP, and independent reviews agree. Horizon
-            does not publish a horsepower figure for the 7.0 AT or 7.8 AT; reviewers quote one, but
+            rates the Commercial 2450 at 4.25 CHP, and independent reviews agree. Horizon
+            does not publish a horsepower figure for the 7.0 AT or 7.4 AT; reviewers quote one, but
             without the maker's own figure we have left it off the cards. What Horizon does publish
             is a lifetime motor warranty, which tells you more about how long the motor is expected
             to last than any horsepower number. Our
@@ -295,7 +298,7 @@ export default {
             heavier frame than a 300 lb one, even for a lighter runner, and our
             <a href="/treadmill-weight-capacity-guide/" class="text-[#0F62FE] font-medium">weight capacity guide</a>
             explains why a margin above your own weight is wise. The second is whether the machine
-            folds. Non-folding frames, like the X16's, have fewer joints to flex; folding frames
+            folds. Non-folding frames have fewer joints to flex; folding frames
             can be very stable, but they rely on a hinge and a lock. Garage Gym Reviews' testers
             report that the Horizon 7.0 AT did not shake during runs and sprints, which is the kind
             of reporting worth looking for in any review you read. If a treadmill you own does
@@ -437,28 +440,27 @@ export default {
   ],
   products: [
     {
-      id: 'horizon-7-8-at',
-      name: 'Horizon 7.8 AT',
+      id: 'horizon-7-4-at',
+      name: 'Horizon Fitness 7.4 AT',
       category: 'Best Overall Treadmill for HIIT',
       badge: 'Best Overall',
-      amazonUrl: 'https://www.amazon.com/s?k=Horizon+7.8+AT+Treadmill&tag=sktiger-20',
-      priceRange: '$1,999–$2,699',
-      specs: '22 x 60 in. deck · 0.5–12 mph · 0–15% incline · 375 lb capacity · QuickDial controls · Sprint 8 program',
+      priceRange: 'About $1,588 (Amazon, 6 Nov 2026)',
+      specs: '22 x 60 in. deck · 3.5 CHP continuous-duty motor · 0.5–12 mph · 0–15% incline · 350 lb max user · folds',
       pros: [
-        'QuickDial rollers for speed and incline plus custom interval keys, the most flexible interval controls we found',
-        'A 22 x 60-inch deck gives a sprinting stride room in both directions',
-        'Horizon’s built-in Sprint 8 program runs a structured interval session without an app',
-        'Lifetime frame and motor warranty, five years on parts and two years of labour',
+        'QuickDial controls and one-touch keys for fast interval changes, per the listing',
+        'A 22 by 60-inch deck, two inches wider than the 7.0 AT, for more room at sprint pace',
+        'A Sprint 8 interval program built in, per Horizon',
+        'Five years on parts and two of labour, on top of lifetime frame and motor cover',
       ],
       cons: [
-        'Tops out at 12 mph and has no decline',
-        'Horizon publishes no motor horsepower rating, so there is no figure to compare',
-        'Horizon’s specification table says it is not compatible with GFCI outlets',
+        'The same 12 mph and 15% ceilings as the cheaper 7.0 AT, and no decline',
+        'A 350 lb rating, below the NordicTrack’s 400 lb',
+        'Horizon does not publish the motor rating the listing quotes',
       ],
       bottomLine:
-        'The treadmill to buy if intervals are a regular part of your training and 12 mph covers your fastest efforts.',
+        'The interval treadmill we would point most people towards: fast controls, a wide deck and long parts cover, for about $1,500 to $1,800.',
       description:
-        'The 7.8 AT is the interval treadmill we would point most people towards, because its controls are designed around exactly this kind of training. Horizon’s QuickDial rollers on the handlebars change speed and incline with a thumb, custom interval keys sit on the console, and a built-in Sprint 8 program runs a structured interval session without an app or subscription. Horizon lists a 22 by 60-inch three-zone cushioned deck, 0.5 to 12 mph, incline from 0 to 15% and a 375 lb maximum user weight; BarBend’s review agrees on each figure, and Garage Gym Reviews and Treadmill Review Guru match on the capacity and top speed. The warranty is lifetime on the frame and motor, five years on parts and two years of labour. It also has a console fan, Bluetooth FTMS for training apps, and a console that shows pace as well as speed. Horizon was selling it at $1,999 against a $2,699 list price when we checked. The limits are a 12 mph ceiling, no decline and no published horsepower figure.',
+        'Horizon\'s 7.8 AT, the top Studio Series model we first carded here, is sold by Horizon rather than on Amazon, so this card shows the 7.4 AT, the model below it, which Amazon does sell and which keeps what makes the Horizons good for HIIT. The Amazon listing describes QuickDial controls and one-touch keys for fast interval changes, a 22 by 60-inch deck with three-zone cushioning, 0.5 to 12 mph, incline from 0 to 15%, a 350 lb maximum user weight, Bluetooth for apps with no subscription required, and a 500 lb-thrust incline motor for quicker grade changes. Horizon lists the same deck, speed, incline and capacity, a Sprint 8 interval program among ten built-in programs, an included Bluetooth heart rate monitor and a warranty of lifetime frame and motor cover with five years on parts and two of labour; a Johnson Fitness and Wellness listing and independent coverage agree on the deck, speed, incline and capacity. Against the 7.8 AT it gives up 25 lb of rated capacity and the colour console, not the controls. The listing quotes a 3.5 CHP motor that Horizon does not publish, so it is not on the card. At 318 lb it is heavy for a folding machine. Horizon\'s store listed it at $1,799, or $1,499 with a code, in October, and Amazon at $1,587.92 on 6 November 2026.',
     },
     {
       id: 'horizon-7-0-at',
@@ -470,7 +472,7 @@ export default {
       priceRange: '$1,099–$2,100',
       specs: '20 x 60 in. deck · 0.5–12 mph · 0–15% incline · 325 lb capacity · QuickDial controls',
       pros: [
-        'The same QuickDial speed and incline rollers as the 7.8 AT for about half the price',
+        'The same QuickDial speed and incline controls as the 7.4 AT for several hundred dollars less',
         'A full 60-inch deck and 12 mph, enough for most people’s sprints',
         'Garage Gym Reviews’ testers report no shaking during sprints and interval changes',
         'Lifetime frame and motor warranty',
@@ -478,12 +480,12 @@ export default {
       cons: [
         'A 20-inch belt is narrower than the 22 inches on the pricier picks',
         'Horizon’s program list for the 7.0 AT does not include Sprint 8',
-        'Three years on parts and one year of labour is shorter cover than the 7.8 AT’s',
+        'Three years on parts and one year of labour is shorter cover than the 7.4 AT’s',
       ],
       bottomLine:
-        'The best interval treadmill for about $1,100. Choose the 7.8 AT only if you want the wider deck, higher rating and longer parts cover.',
+        'The best interval treadmill for about $1,100. Choose the 7.4 AT only if you want the wider deck, higher rating and longer parts cover.',
       description:
-        'The 7.0 AT is the value pick because it keeps the feature that makes the Horizons good for HIIT — QuickDial rollers for speed and incline, plus custom interval keys — at a price close to many treadmills with only arrow buttons. Horizon lists a 20 by 60-inch three-zone cushioned deck, 0.5 to 12 mph, incline from 0 to 15% and a 325 lb maximum user weight; Garage Gym Reviews’ 2026 review agrees on each, and its testers report that the machine did not shake during runs, sprints and interval changes. It has a fan, Bluetooth for apps and Apple Watch support, and folds with hydraulic assistance. The compromises against the 7.8 AT are a narrower belt, a lower weight rating, no Sprint 8 program in Horizon’s list, and shorter cover on parts and labour, though the frame and motor are covered for life. Horizon was selling it at $1,099 against a $2,100 list price when we checked, and reviewers note it is usually on sale near that figure.',
+        'The 7.0 AT is the value pick because it keeps the feature that makes the Horizons good for HIIT — QuickDial rollers for speed and incline, plus custom interval keys — at a price close to many treadmills with only arrow buttons. Horizon lists a 20 by 60-inch three-zone cushioned deck, 0.5 to 12 mph, incline from 0 to 15% and a 325 lb maximum user weight; Garage Gym Reviews’ 2026 review agrees on each, and its testers report that the machine did not shake during runs, sprints and interval changes. It has a fan, Bluetooth for apps and Apple Watch support, and folds with hydraulic assistance. The compromises against the 7.4 AT are a narrower belt, a lower weight rating, no Sprint 8 program in Horizon’s list, and shorter cover on parts and labour, though the frame and motor are covered for life. Horizon was selling it at $1,099 against a $2,100 list price when we checked, and reviewers note it is usually on sale near that figure.',
     },
     {
       id: 'nordictrack-commercial-2450',
@@ -510,28 +512,27 @@ export default {
         'The Commercial 2450 is NordicTrack’s fastest treadmill and the pick for sprinters who run out of belt speed on a 12 mph machine. NordicTrack lists 0 to 14 mph, incline from 12% down to -3% decline, a 22 by 60-inch belt, a 4.25 CHP motor rating, a 400 lb user capacity and an AutoBreeze fan, and Treadmill Review Guru’s review agrees on each figure. That reviewer also timed the belt and found it accelerated to 12 mph several seconds faster than the Horizon and Peloton machines it was compared with. The trade-off for interval work is the console: the physical numbered speed and incline keys of earlier versions are gone, replaced by quick-adjust buttons on the 24-inch touchscreen in manual mode and iFIT, alongside a small set of physical speed and incline buttons. With a paid iFIT membership, guided interval sessions adjust the machine for you. NordicTrack was selling it at $2,499.99 against a $2,999.99 list price. The warranty is lifetime on the motor, ten years on the frame, two on parts and one on labour.',
     },
     {
-      id: 'nordictrack-x16',
-      name: 'NordicTrack X16',
-      category: 'Best Treadmill for Incline Intervals',
+      id: 'sunny-versatile-treadmill',
+      name: 'Sunny Health & Fitness Versatile Treadmill',
+      category: 'Best Treadmill for Incline Intervals on Amazon',
       badge: 'Best for Incline HIIT',
-      amazonUrl: 'https://www.amazon.com/s?k=NordicTrack+X16+Incline+Treadmill&tag=sktiger-20',
-      priceRange: '$2,699–$3,699',
-      specs: '22 x 60 in. belt · 0–12 mph · -6% to 40% incline · 4.25 CHP · 400 lb capacity · non-folding',
+      priceRange: 'About $2,200 (Amazon, 6 Nov 2026)',
+      specs: '-3% to 45% powered incline · 0.3–5 mph · 20 in. wide running surface · 300 lb capacity · multi-grip handrails',
       pros: [
-        'Incline to 40% makes walking-speed intervals as hard as most sprints, with far less pounding',
-        'Decline to -6% for downhill repeats',
-        'A non-folding frame rated to 400 lb, with a 4.25 CHP motor rating',
-        'Still a full 12 mph running treadmill on a 22 x 60-inch belt',
+        'A 45% maximum incline, the steepest grade on any machine here',
+        'A -3% decline for downhill walking',
+        'High, mid and low handrail grips for different grades, per the listing',
+        '18 built-in programs and a touchscreen console, with no subscription required',
       ],
       cons: [
-        'A full sweep up to 40% takes a long time; incline intervals need planning around the lag',
-        'Large, heavy and does not fold',
-        'The console and automatic adjustments are built around a paid iFIT membership — check the current price',
+        'Tops out at 5 mph, so it is for walking and hiking only',
+        'The listing gives the belt width but not its length, so check it before ordering',
+        'A 300 lb rating is lower than the commercial machines',
       ],
       bottomLine:
-        'For interval training built on climbing rather than speed, or for runners who want both on one machine.',
+        'For hard efforts on a steep grade at walking pace, if you never need to run on it.',
       description:
-        'The X16 is here for a different kind of HIIT: hard efforts on a steep grade at walking or jogging speed. NordicTrack lists incline from -6% decline up to 40%, a 0 to 12 mph speed range, a 22 by 60-inch belt, a 4.25 CHP motor rating and a 400 lb user capacity, on a frame that does not fold; Treadmill Review Guru’s review agrees on each figure and describes the non-folding frame as a sign of solid build. Intervals at a steep incline raise the effort sharply without the speed, impact and stride length of flat sprinting, which is why some runners prefer them. It is also a complete running treadmill, so it does flat sprints at up to 12 mph and downhill repeats too. Be realistic about incline changes: the deck moves through a much larger range than a normal treadmill’s, so large changes are slow, and sessions work best with long climbs rather than rapid switches. NordicTrack was selling it at $2,699.99 against a $3,699.99 list price, with a lifetime motor warranty.',
+        'NordicTrack\'s X16, the steep incline trainer we first carded for this kind of HIIT, is sold by NordicTrack rather than on Amazon, so this card shows the steepest incline machine Amazon does sell. The Versatile Treadmill is here for a different kind of interval: hard efforts on a steep grade at walking or hiking speed, which raise the heart rate without the impact of sprinting. The Amazon listing gives a powered incline to 45% and a decline to -3%, a speed range of 0.3 to 5 mph, a 20-inch-wide running surface with dual shock absorption, a 300 lb maximum user weight, 18 preset programs on a touchscreen console, and a handrail system with high, mid and low grips for different grades, with pulse sensors in the handlebars. The trade-off is speed: 5 mph is a fast walk, so this is a climbing machine, not one for sprints, and a full sweep of a 45% range takes time, so change the grade a little before each work period. The listing gives the belt\'s width but not its length, and we could not confirm a length from a second source, so ask the seller or check the manual before ordering if you are tall. Amazon listed it at $2,199.99 on 6 November 2026.',
     },
     {
       id: 'sole-c80',
@@ -560,7 +561,7 @@ export default {
   faqs: [
     {
       q: 'What is the best treadmill for HIIT?',
-      a: `For most people, a treadmill with quick speed and incline controls, a 60-inch deck and a 12 mph top speed. Of the machines we could verify, the Horizon 7.8 AT fits best, with QuickDial rollers, interval keys and a 22 by 60-inch deck. The Horizon 7.0 AT has the same controls for about half the price. Faster sprinters should look at the NordicTrack Commercial 2450's 14 mph.`,
+      a: `For most people, a treadmill with quick speed and incline controls, a 60-inch deck and a 12 mph top speed. Of the machines we could verify, the Horizon 7.4 AT fits best, with QuickDial controls, a Sprint 8 program and a 22 by 60-inch deck. The Horizon 7.0 AT has the same controls for less. Faster sprinters should look at the NordicTrack Commercial 2450's 14 mph.`,
     },
     {
       q: 'What top speed do you need on a treadmill for sprinting?',
@@ -632,9 +633,9 @@ export default {
     },
   ],
   bottomLine: [
-    `For most people who train in intervals, the <strong class="text-white">Horizon 7.8
-            AT</strong> is the treadmill to buy: QuickDial rollers, interval keys and a 22 by 60-inch
-            deck for about $2,000. The <strong class="text-white">Horizon 7.0 AT</strong> gives you
+    `For most people who train in intervals, the <strong class="text-white">Horizon 7.4
+            AT</strong> is the treadmill to buy: QuickDial controls, a Sprint 8 program and a 22 by
+            60-inch deck for about $1,500 to $1,800. The <strong class="text-white">Horizon 7.0 AT</strong> gives you
             the same controls for about $1,100, and the <strong class="text-white">NordicTrack
             Commercial 2450</strong> is the one to stretch to if you genuinely need 14 mph.`,
     `Whatever you buy, the controls and the deck matter more than the top speed, and the

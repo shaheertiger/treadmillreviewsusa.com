@@ -95,9 +95,9 @@ const PRODUCTS = [
     brand: "Mikolo",
     category: "All-in-one Smith machine with plate-loaded cables",
     badge: "Best Value",
-    amazonUrl: "https://www.amazon.com/s?k=Mikolo+M4-2.0+Smith+Machine+All-In-One&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0G8H3HSYK?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
-    image: null,
+    image: {"url":"https://m.media-amazon.com/images/I/51Xw9ODRF0L._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$1,100–$1,400",
     priceBounds: {"low":1100,"high":1400},
@@ -114,7 +114,7 @@ const PRODUCTS = [
       "At 87.5 in. tall, the tallest frame on this page",
     ],
     bottomLine: "The most machine for the money if you have the floor and the ceiling, and train at loads well inside its ratings.",
-    description: "The M4-2.0 combines a Smith machine on linear bearings, a power rack with J-hooks and spotter arms, dual plate-loaded pulleys, a landmine, dip bars and a multi-grip pull-up bar. Mikolo's own store listed the Standard version at $1,099.99 in black and $1,199.99 in red on 19 October, and the Ultra at $1,299.99 to $1,399.99; Garage Gym Reviews lists $1,399.99. Mikolo and Garage Gym Reviews agree on the 74.8 by 71 by 87.5 inch frame, the 35 lb Smith bar and the 800 lb rating for the bar and J-hooks; Mikolo gives the cables 500 lb. Mikolo describes the bar as spring-assisted, meaning shock-absorbing springs at the ends of travel, not a counterbalance, and says the cables are 2:1 and that a weight-stack kit of 60 kg a side is available. Garage Gym Reviews notes the 14-gauge steel and large footprint, and gives the warranty as limited lifetime on frame and welds and six months on parts and attachments. Mikolo is sold largely through marketplaces; we could not open Amazon's pages to confirm the current listing, so check that it is the M4-2.0 and which version.",
+    description: "The M4-2.0 combines a Smith machine on linear bearings, a power rack with J-hooks and spotter arms, dual plate-loaded pulleys, a landmine, dip bars and a multi-grip pull-up bar. Mikolo's own store listed the Standard version at $1,099.99 in black and $1,199.99 in red on 19 October, and the Ultra at $1,299.99 to $1,399.99; Garage Gym Reviews lists $1,399.99. Mikolo and Garage Gym Reviews agree on the 74.8 by 71 by 87.5 inch frame, the 35 lb Smith bar and the 800 lb rating for the bar and J-hooks; Mikolo gives the cables 500 lb. Mikolo describes the bar as spring-assisted, meaning shock-absorbing springs at the ends of travel, not a counterbalance, and says the cables are 2:1 and that a weight-stack kit of 60 kg a side is available. Garage Gym Reviews notes the 14-gauge steel and large footprint, and gives the warranty as limited lifetime on frame and welds and six months on parts and attachments. Mikolo is sold largely through marketplaces; the Amazon listing linked here is the M4-2.0 Ultra, which Amazon showed at $999.99 on 9 November 2026, so check the version and price on the listing.",
   },
   {
     id: "marcy-md-9010g",
@@ -175,9 +175,9 @@ const PRODUCTS = [
     brand: "RitFit",
     category: "Compact budget Smith machine with pulldown and low row",
     badge: "Best Budget",
-    amazonUrl: "https://www.amazon.com/s?k=RitFit+PSR05+2.0+Smith+Machine+Lat+Pulldown&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B0CTJJC2GQ?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
-    image: null,
+    image: {"url":"https://m.media-amazon.com/images/I/41jIC15DigL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
     priceRange: "$540–$580",
     priceBounds: {"low":540,"high":580},
@@ -194,7 +194,7 @@ const PRODUCTS = [
       "Passive knurling and a short frame limit some overhead work, per one tester",
     ],
     bottomLine: "The Smith machine for a beginner or a light home routine on a tight budget, not for heavy lifting.",
-    description: "The PSR05 2.0 is a compact Smith machine with a plate-loaded lat pulldown and low row, a multi-grip pull-up bar and weight horns that double as storage. RitFit listed it at $579.99 on 19 October; Garage Gym Reviews and BarBend list $539.99. Both reviewers agree on the 440 lb Smith bar rating, the 82 inch height and the 140 lb product weight. They disagree on depth — 44 inches in one review, 70.8 inches in the other, which matches RitFit's page — and on the bar's weight (14 lb or 12.7 lb), so we have left both off the specification line; plan your space around the larger depth. BarBend gives the warranty as three years on the rack, frame and welds and one year on components. Garage Gym Reviews' founder called it a sleeper pick whose low price covers its shortcomings, and its tester found the 82-inch height limited some overhead work. RitFit is sold largely through marketplaces; we could not open Amazon's pages to confirm the current listing, so check the model name.",
+    description: "The PSR05 2.0 is a compact Smith machine with a plate-loaded lat pulldown and low row, a multi-grip pull-up bar and weight horns that double as storage. RitFit listed it at $579.99 on 19 October; Garage Gym Reviews and BarBend list $539.99. Both reviewers agree on the 440 lb Smith bar rating, the 82 inch height and the 140 lb product weight. They disagree on depth — 44 inches in one review, 70.8 inches in the other, which matches RitFit's page — and on the bar's weight (14 lb or 12.7 lb), so we have left both off the specification line; plan your space around the larger depth. BarBend gives the warranty as three years on the rack, frame and welds and one year on components. Garage Gym Reviews' founder called it a sleeper pick whose low price covers its shortcomings, and its tester found the 82-inch height limited some overhead work. RitFit is sold largely through marketplaces; the Amazon listing linked here gives the same 44 by 45.3 by 82 inch dimensions as RitFit's PSR05 2.0 page and was $574.99 on 9 November 2026, but its title does not carry the model name, so check it on the listing.",
   },
 ];
 
@@ -394,7 +394,9 @@ const schema = {
           errors), so Amazon availability was confirmed from indexed Amazon listings for the
           Body-Solid and Major Fitness machines only, and each card says where we could not confirm
           it. The Marcy MD-9010G and Titan's T-3 Smith attachment, added in November 2026 in place of
-          two direct-sold machines, were checked against their Amazon listings on 9 November. Where a
+          two direct-sold machines, were checked against their Amazon listings on 9 November, when we also matched the Mikolo
+          M4-2.0 (Ultra version) and the RitFit PSR05 2.0 to Amazon listings by model name and, for the
+          RitFit, the 44 by 45.3 by 82 inch dimensions RitFit's own page gives. Where a
           button is a search rather than a direct listing, check the model name and the seller.
           Every brand was checked against the US Consumer Product Safety Commission's recall
           database. Prices are those we saw on that date and change often. We earn a commission if

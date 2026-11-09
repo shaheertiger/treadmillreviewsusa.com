@@ -392,7 +392,7 @@ export default {
       name: 'REP Fitness AB-3000 2.0 FID Adjustable Weight Bench',
       category: 'Flat, incline and decline bench',
       badge: 'Best Bench',
-      amazonUrl: 'https://www.amazon.com/s?k=REP+Fitness+AB-3000+2.0+FID+Adjustable+Weight+Bench&tag=sktiger-20',
+      amazonUrl: 'https://www.amazon.com/dp/B0BSNY8STP?tag=sktiger-20',
       priceRange: 'About $350',
       specs: '1,000 lb rated capacity · 8 back pad angles from -12 to 85 degrees · 2.1 in. pad gap · flat, incline and decline',
       pros: [

@@ -380,7 +380,7 @@ export default {
     },
     {
       id: "lifespan-tx6",
-      name: "LifeSpan Fitness TX6 Under Desk Treadmill",
+      name: "LifeSpan TX6 Under Desk Treadmill",
       category: "Kind: Office-grade under-desk treadmill for a standing desk",
       badge: "Best Premium",
       amazonUrl: "https://www.amazon.com/dp/B0CTH69X4C?tag=sktiger-20",

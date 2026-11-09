@@ -35,8 +35,10 @@ export default {
           what we say about ordering their parts comes from their manuals and support material rather than
           a live parts store; Life Fitness’s and Sportsmith’s support pages were read through search results.
           The part prices we quote are one seller’s listed prices for one model on that day, to show the
-          scale of costs, not quotes for your machine. Amazon’s pages would not load for us, so the product
-          cards are generic parts with tagged Amazon searches and no prices. We have not fitted these parts.
+          scale of costs, not quotes for your machine. Amazon’s pages would not load for us, so most product
+          cards are generic parts with tagged Amazon searches and no prices; on 9 November 2026 the generic
+          lubricant card was replaced by the Lube-N-Walk kit, with figures and prices as checked for our
+          treadmill accessories guide, and the safety key card links a specific universal key. We have not fitted these parts.
           We searched the CPSC recall database for NordicTrack, ProForm, Sole, Life Fitness and Precor: none
           has a current treadmill recall (iFIT’s, Life Fitness’s and Precor’s recalls since 2015 are of rowers,
           dumbbells, a climber and a cable station). Repairs involve mains electricity: unplug the treadmill
@@ -411,29 +413,25 @@ export default {
   ],
   products: [
     {
-      id: 'silicone-lubricant',
-      name: '100% Silicone Lubricant (Bottle + Applicator Tube)',
-      category: 'The treadmill part you will buy most often',
-      badge: 'Buy First',
-      amazonUrl: 'https://www.amazon.com/s?k=100%25+silicone+treadmill+lubricant+applicator+bottle&tag=sktiger-20',
-      reviewUrl: '/best-treadmill-lubricant/',
-      priceRange: 'Amazon price not confirmed on 5 Nov 2026',
-      specs: '100% silicone · bottle with a long applicator tube for under the belt',
+      id: "lube-n-walk",
+      name: "Lube-N-Walk Treadmill Lubricating Kit",
+      category: "The treadmill part you will buy most often",
+      badge: "Buy First",
+      priceRange: "$17–$25",
+      specs: "100% silicone · 24 in. applicator wand · refills sold separately · made in USA",
       pros: [
-        'The lubricant most treadmill makers specify for the belt and deck',
-        'A long applicator reaches under the belt without removing it',
-        'One bottle lasts many applications on a home treadmill',
-        'Cheap insurance against the friction that wears belts, boards and motors',
+        "100% silicone, the lubricant most treadmill makers specify for the belt and deck",
+        "The 24-inch wand reaches under the belt without removing it",
+        "Refill bottles are sold separately, so the wand is a one-off purchase",
+        "Cheap insurance against the friction that wears belts, boards and motors",
       ],
       cons: [
-        'Some decks are pre-waxed and must not be lubricated; check your manual first',
-        'Must be 100% silicone: no petroleum, WD-40 or household sprays',
-        'Brand quality varies; avoid listings that do not state the formulation',
+        "Some decks are pre-waxed and must not be lubricated; check your manual first",
+        "Lube-N-Walk also sells a wax version; buy the one your manual specifies",
+        "A little more expensive than a plain bottle of silicone",
       ],
-      bottomLine:
-        'Buy this before any other part, and use it on the schedule in your manual; it prevents more failures than it fixes.',
-      description:
-        'Belt lubricant is a part in all but name: it is the consumable that keeps the walking belt sliding over the deck, and running without it raises friction that wears the belt and deck and strains the drive motor and control board. Most treadmill makers specify 100% silicone, and our lubricant guide explains why petroleum products and general-purpose sprays damage belts. A bottle with a long applicator tube lets you reach the centre of the deck by lifting the belt edge, without loosening it. For scale, FitnessRepairParts listed iFIT’s own treadbelt lubricant for a NordicTrack at $12.00 on 5 November 2026; we could not read Amazon prices that day. Check your manual first: some decks are pre-waxed and should not be lubricated at all, and some makers specify their own product. Our guide to how often to lubricate covers the schedule.',
+      bottomLine: "Buy this before any other part, and use it on the schedule in your manual; it prevents more failures than it fixes.",
+      description: "Belt lubricant is a part in all but name: it is the consumable that keeps the walking belt sliding over the deck, and running without it raises friction that wears the belt and deck and strains the drive motor and control board. Most treadmill makers specify 100% silicone, and our lubricant guide explains why petroleum products and general-purpose sprays damage belts. Lube-N-Walk's kit is 100% silicone, and its main advantage over a plain bottle is the 24-inch flexible wand, which slides under the belt and reaches the centre of the deck without loosening anything. Retailers describe the system as made in the USA since 1998, refill bottles are sold separately, and TreadmillReviewGuru lists it among its preferred treadmill lubricants. For scale, FitnessRepairParts listed iFIT’s own treadbelt lubricant for a NordicTrack at $12.00 on 5 November 2026. Check your manual first: some decks are pre-waxed and should not be lubricated at all, some makers specify their own product, and Lube-N-Walk sells a wax version for pre-waxed decks, so buy the one your manual calls for. Figures are those checked for our treadmill accessories guide; our guide to how often to lubricate covers the schedule.",
     },
     {
       id: 'universal-safety-key',

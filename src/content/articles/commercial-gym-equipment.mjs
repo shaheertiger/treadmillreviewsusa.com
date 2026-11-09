@@ -23,7 +23,9 @@ export default {
           equipment. Each piece was confirmed on 16 October 2026 as currently sold, and its
           specifications were checked on that date against the maker's own product page (Life
           Fitness, Keiser and Concept2), or on 9 November 2026 for the Titan rack, Gronk row and REP
-          dumbbells that stand in for dealer-only Rogue and Hammer Strength equipment, the Amazon listing where one
+          dumbbells that stand in for dealer-only Rogue and Hammer Strength equipment and the Life
+          Fitness T3 that stands in for the quote-only Integrity+ (figures as checked for our
+          non-folding treadmill guide), the Amazon listing where one
           exists, and at least one independent source — published reviews and a second retailer or
           dealer. A figure appears in a product's specification line only where the maker and an
           independent source agree; where they did not — on a machine's dimensions and weight, for
@@ -56,7 +58,9 @@ export default {
             the commercial difference — duty, power and service — is largest. Rogue's racks and
             dumbbells and Hammer Strength's machines are sold direct or through dealers, not on
             Amazon, so for the three strength categories the cards show the nearest Amazon
-            alternatives, which are lighter-duty than the originals.
+            alternatives, which are lighter-duty than the originals. The same applies to the
+            treadmill: Life Fitness sells the Integrity+ by quote through its dealers, so its card
+            shows the closest Life Fitness treadmill on Amazon, the home T3.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead>
@@ -67,7 +71,7 @@ export default {
               </tr>
             </thead>
             <tbody>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Life Fitness Integrity+ Treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Commercial treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22 x 60 in. deck, 400 lb rating, dedicated 20 A circuit; price on request</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Life Fitness Integrity+ Treadmill (card: Life Fitness T3)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Commercial treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22 x 60 in. deck, 400 lb rating, dedicated 20 A circuit; price on request</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Keiser M3i Indoor Bike</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Indoor cycling and studios</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Fits riders 4 ft 10 in. to 7 ft, 350 lb rating, magnetic resistance</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Concept2 RowErg</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rowing, any facility</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">500 lb rating by Concept2's test, no outlet needed, $990</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Titan X-3 Series Tall Bolt-Down Power Rack</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A commercial-standard rack</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3 x 3 in. 11-gauge uprights, bolt-down, about $690 to $760</td></tr>
@@ -438,28 +442,26 @@ export default {
   ],
   products: [
     {
-      id: 'life-fitness-integrity-plus-treadmill',
-      name: 'Life Fitness Integrity+ Treadmill',
-      category: 'Best Commercial Treadmill',
-      badge: 'Treadmill',
-      amazonUrl: 'https://www.amazon.com/s?k=Life+Fitness+Integrity+Treadmill&tag=sktiger-20',
-      priceRange: 'Price on request',
-      specs: '22 x 60 in. running surface · 0.5–14 mph · 0–15% incline · 400 lb max user · 4 HP AC motor (8 HP peak)',
+      id: "life-fitness-t3",
+      name: "Life Fitness T3",
+      category: "Closest on Amazon to the Integrity+ Treadmill",
+      badge: "Closest on Amazon",
+      reviewUrl: "/life-fitness-t3-treadmill/",
+      priceRange: "$3,499–$4,119",
+      specs: "20 x 60 in. deck · 0.5–12 mph · 0–15% incline · 350 lb capacity · non-folding",
       pros: [
-        'A 400 lb user rating and a 22 x 60 inch deck, agreed by Life Fitness and an independent retailer',
-        'Speed to 14 mph and incline to 15% cover walkers through to fast runners',
-        'Flex Deck shock absorption and speed and incline buttons on the handlebars',
-        'Built and supported for facility use, with a dealer and service network',
+        "A Life Fitness treadmill you can order on Amazon, from the maker of the Integrity+",
+        "Lifetime frame, ten years on the motor and five on parts, per Life Fitness and a US retailer",
+        "A 60-inch deck and 15% incline on a non-folding frame",
+        "At 243 lb, far easier to place than a commercial machine",
       ],
       cons: [
-        'Life Fitness specifies a dedicated 120 V, 20 A circuit, so most homes need an electrician first',
-        'Quote-only for facilities; no public price for the Integrity+ itself',
-        'Large and heavy: two shipping boxes, and it needs clear space behind the deck',
+        "A home treadmill, not rated for commercial duty: its warranty is for residential use",
+        "A 20-inch-wide deck and 350 lb rating, against the Integrity+’s 22 inches and 400 lb",
+        "The console is priced as part of the configuration, so compare like for like",
       ],
-      bottomLine:
-        'For a studio, building or office gym that needs a treadmill to run all day, and has the circuit and service arrangements to support it.',
-      description:
-        "The Integrity+ is Life Fitness's mainstream commercial treadmill, the kind of machine found in hotel and club gyms. Life Fitness lists a 22 by 60-inch running surface, a 0.5 to 14 mph speed range, incline to 15%, a 400 lb maximum user weight and a 4 HP AC motor with an 8 HP peak, and an independent UK retailer agrees on each in metric. It uses Life Fitness's Flex Deck shock absorption and comes with a choice of consoles, including a touchscreen. Life Fitness specifies a dedicated 120-volt, 20-amp circuit; retailers of the Integrity line say the same. Facilities buy it by quote through Life Fitness, so we saw no public price. For comparison, Life Fitness's home store was selling outlet units of the earlier Integrity treadmill at $5,627 to $7,183 when we checked; our review of the Integrity Series covers that machine. The Amazon link searches the Integrity name; buy the Integrity+ through Life Fitness or an authorised dealer.",
+      bottomLine: "For a home that wants Life Fitness build quality without a commercial quote and installation; a facility should still buy the Integrity+ through a dealer.",
+      description: "The Integrity+ described on this page is sold by Life Fitness and its dealers by quote rather than on Amazon, so this card shows the closest Life Fitness treadmill we found there: the T3, the brand's compact non-folding home machine. Life Fitness and a major US retailer agree on a 20 by 60-inch running surface, 0.5 to 12 mph, incline from 0 to 15%, a 350 lb maximum user weight and a machine weight of 243 lb, and both list the warranty as lifetime on the frame, ten years on the motor, five years on parts and one year of labour, with three years on the console by Life Fitness's figure. Be clear about the difference: the T3 is a residential treadmill, so it lacks the Integrity+'s 22-inch deck, 14 mph top speed and 400 lb rating, and its warranty does not cover commercial use. For a home gym that wants gym-brand construction, that is a fair trade; for a facility, it is not a substitute. Life Fitness sells the T3 with a choice of console, at $3,499 with the Go console or $4,119 with Track Connect 2.0, as checked for our non-folding treadmill guide.",
     },
     {
       id: 'keiser-m3i-indoor-bike',
