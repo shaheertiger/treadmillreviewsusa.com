@@ -1032,6 +1032,14 @@ npm run amazon:apply   # write /dp/ links into hand-written pages and regenerate
   `PRODUCT.amazonUrl` directly, and the sticky bar gets `rel="sponsored nofollow noopener"` for
   Amazon links (in-page anchors no longer open a new tab).
 
+- Fourth run (2026-11-09), with the Creators API credentials in the environment: the matcher
+  accepted 18 (three rejected by hand: a different Bells of Steel machine, one model's drive belt for
+  a generic belt card, a 16% pad for a 13% card). The 279 remaining near misses were then matched by
+  hand against the top five search results (`scripts/amazon/candidates.mjs` writes them to
+  `scripts/amazon/candidates.json`; `scripts/amazon/search.mjs "<keywords>"` re-searches): 132
+  accepted on brand, model, variant and the card's own figures; anything uncertain was rejected.
+  431 products now have a verified ASIN and an Amazon photo.
+
 ## Keyword research
 
 `research/competitor-keywords/` holds the supplied competitor exports verbatim, with a README
