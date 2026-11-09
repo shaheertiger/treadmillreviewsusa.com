@@ -491,8 +491,8 @@ export default {
       name: 'Horizon 5.0R Recumbent Bike',
       category: 'Best for Fine Resistance Control',
       badge: 'Best Value',
-      amazonUrl: 'https://www.amazon.com/s?k=Horizon+Fitness+5.0R+Recumbent+Bike&tag=sktiger-20',
-      priceRange: '$649–$999',
+      amazonUrl: 'https://www.amazon.com/dp/B0C6NF4CJD?tag=sktiger-20',
+      priceRange: '$550–$999',
       specs: '100 magnetic resistance levels · 300 lb max user · 66 x 25.2 in. footprint · step-through frame · Bluetooth FTMS · lifetime frame warranty',
       pros: [
         '100 electronically controlled levels for very small steps in effort',
@@ -508,7 +508,7 @@ export default {
       bottomLine:
         'For riders who want very fine control over effort and a frame warranty that never runs out, at a lower sale price than the Schwinn 290.',
       description:
-        "Horizon is a Johnson Health Tech brand, like Schwinn, and the 5.0R is its home recumbent. Horizon's page and BarBend, which named it its best recumbent for beginners, agree on 100 levels of magnetic resistance, a 300 lb maximum user weight and a 66 by 25.2 by 52.2-inch footprint, and both describe a step-through frame. Horizon lists an eddy-current magnetic brake with a 15.4 lb flywheel, an extra-large seat with lumbar support that adjusts horizontally, handlebars at the console and beside the seat, five programs, a three-speed fan, a tablet rack, a USB-A charging port, Bluetooth and hand-grip heart-rate sensors, and a Bluetooth FTMS connection; it names Peloton, Zwift and Kinomap as apps that can show your data, each with its own subscription. The home warranty is lifetime on the frame and one year on parts and labor. Horizon gives the unit weight as 123 lb. On 19 October Horizon had it at $649 against a $999 list price, and BarBend says it is routinely on sale. It does not fold.",
+        "Horizon is a Johnson Health Tech brand, like Schwinn, and the 5.0R is its home recumbent. Horizon's page and BarBend, which named it its best recumbent for beginners, agree on 100 levels of magnetic resistance, a 300 lb maximum user weight and a 66 by 25.2 by 52.2-inch footprint, and both describe a step-through frame. Horizon lists an eddy-current magnetic brake with a 15.4 lb flywheel, an extra-large seat with lumbar support that adjusts horizontally, handlebars at the console and beside the seat, five programs, a three-speed fan, a tablet rack, a USB-A charging port, Bluetooth and hand-grip heart-rate sensors, and a Bluetooth FTMS connection; it names Peloton, Zwift and Kinomap as apps that can show your data, each with its own subscription. The home warranty is lifetime on the frame and one year on parts and labor. Horizon gives the unit weight as 123 lb. On 19 October Horizon had it at $649 against a $999 list price, and BarBend says it is routinely on sale, and Amazon listed it at $549.98 on 9 November 2026. The Amazon listing gives a 350 lb maximum user weight against the 300 lb on Horizon’s page and in BarBend’s review; until Horizon confirms the higher figure, plan on 300 lb. It does not fold.",
     },
     {
       id: 'schwinn-230-recumbent-bike',

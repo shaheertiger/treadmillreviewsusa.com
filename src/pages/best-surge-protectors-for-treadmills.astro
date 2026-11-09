@@ -9,31 +9,31 @@ const description =
 
 const PRODUCTS = [
   {
-    id: "panamax-md2",
-    name: "Panamax MD2",
-    brand: "Panamax",
+    id: "tripp-lite-ultrablok",
+    name: "Tripp Lite ULTRABLOK Isobar 2-Outlet Surge Protector",
+    brand: "Tripp Lite",
     category: "Two-outlet direct plug-in surge protector, 15 A",
     badge: "Best Overall",
-    amazonUrl: "https://www.amazon.com/s?k=Panamax+MD2+2+Outlet+Direct+Plug-In+Surge+Protector&tag=sktiger-20",
+    amazonUrl: "https://www.amazon.com/dp/B00006B81D?tag=sktiger-20&linkCode=ll1",
     amazonLabel: "Check Price on Amazon",
-    image: null,
+    image: {"url":"https://m.media-amazon.com/images/I/410s2MzZBuL._SL500_.jpg","width":500,"height":500},
     reviewUrl: null,
-    priceRange: "$45–$75",
-    priceBounds: {"low":45,"high":75},
-    specs: "2 outlets · 15 A · 1,350 joules · UL 1449 3rd ed., 400 V VPR line to neutral · direct plug-in, no cord · 2 status lights",
+    priceRange: "About $44 (Amazon, 9 Nov 2026)",
+    priceBounds: {"low":44,"high":44},
+    specs: "2 outlets · 15 A circuit breaker · 1,410 joules · UL 1449 3rd edition · direct plug-in, no cord · 3 diagnostic lights · metal housing",
     pros: [
       "Plugs directly into the wall with no cord, so there is no strip or extension in the chain",
-      "A 400-volt line-to-neutral protection rating, at the ceiling many treadmill manuals set",
-      "At 1,350 joules, well above the 450-joule minimum some manuals specify",
-      "Cuts power entirely in a catastrophic surge, and its lights show protection and wiring faults",
+      "At 1,410 joules, well above the 450-joule minimum some manuals specify",
+      "Tripp Lite says it cuts power to its outlets permanently if the protection circuit fails, rather than passing power through unprotected",
+      "Lights for power, protection and line fault, and an all-metal housing",
     ],
     cons: [
       "Only if your manual permits a surge protector, and a two-outlet unit does not meet a manual that asks for a single-outlet one",
       "Not for treadmills with a 20-amp plug",
-      "Stock is patchy: one retailer showed it out of stock and another as no longer available",
+      "Its voltage protection rating appears only in the Amazon listing (330 V), not in the Tripp Lite datasheet we read",
     ],
     bottomLine: "The pick for a treadmill with a standard plug whose manual allows a surge protector. Use one socket, for the treadmill only.",
-    description: "Panamax still lists the MD2 on its own site, and it is our default for a treadmill with a standard 15-amp plug. It plugs straight into the wall, so there is no cord to warm up, and Panamax and an independent dealer agree on its key figures: 15 amps, 1,350 joules, and a UL 1449 third-edition voltage protection rating of 400 volts line to neutral, with 500 volts line to ground. Some listings also show a separate 330-volt UL 1449 rating alongside these; the third-edition figures above are the ones Panamax publishes. Two lights show power and protection and warn of a wiring fault, and Panamax says its circuitry disconnects power in a catastrophic surge rather than passing it through. Panamax offers a $100,000 limited connected-equipment policy, but says it does not apply to internet purchases from dealers it has not authorised. The limits: it has two sockets, so a manual that calls for a single-outlet unit points you to the Tripp Lite instead, and availability varied between retailers on the day we checked.",
+    description: "Panamax's MD2, which we listed here first, is not sold in its plain two-outlet version on Amazon US, so the two-outlet pick is Tripp Lite's ULTRABLOK, the direct plug-in Isobar unit that Amazon does sell. Tripp Lite's datasheet and the Amazon listing agree on two NEMA 5-15R outlets, a direct plug-in body with no cord, 1,410 joules, an integrated 15-amp circuit breaker, conformance to UL 1449 third edition, diagnostic lights for power, protection and line fault, and an automatic shutoff that permanently cuts power to the outlets if the protection circuit is incapacitated. Tripp Lite's datasheet adds $10,000 of connected-equipment insurance, and the listing gives a lifetime limited warranty. The Amazon listing also gives a let-through, or clamping, voltage of 330 volts, which would be under the 400-volt ceiling many treadmill manuals set; we could not find that figure in the Tripp Lite datasheet we read, so it is not on the spec line. The limits are the same as for any two-outlet unit: a manual that calls for a single-outlet protector points you to the SPIKECUBE instead, and a 20-amp treadmill needs the Panamax M2A20. Amazon listed it at $44.46 on 9 November 2026.",
   },
   {
     id: "tripp-lite-spikecube",
@@ -110,7 +110,7 @@ const schema = {
           name: "What is the best surge protector for a treadmill?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "For a treadmill with a standard plug whose manual allows one, a direct plug-in protector rated for 15 amps with a UL 1449 listing and a voltage rating of 400 volts or less, such as the Panamax MD2. If the manual asks for a single-outlet unit, choose one, such as the Tripp Lite SPIKECUBE. If it says to plug straight into the wall, use no plug-in device.",
+            text: "For a treadmill with a standard plug whose manual allows one, a direct plug-in protector rated for 15 amps with a UL 1449 listing and a voltage rating of 400 volts or less, such as the Tripp Lite ULTRABLOK (whose 330-volt figure is in its Amazon listing). If the manual asks for a single-outlet unit, choose one, such as the Tripp Lite SPIKECUBE. If it says to plug straight into the wall, use no plug-in device.",
           },
         },
         {
@@ -280,8 +280,9 @@ const schema = {
           2026 against each maker's own product page, datasheet or instructions, and against at
           least one retailer or reviewer that does not make the product. A figure appears on a
           card only where those sources agree; where they disagreed — on the Panamax M2A20's
-          outlet layout and UL rating, and on the Tripp Lite's joule figure — we left it out and
-          say so. Prices are the ranges we saw on that date and change often. This is general
+          outlet layout and UL rating, and on the Tripp Lite SPIKECUBE's joule figure — we left it out and
+          say so. The Tripp Lite ULTRABLOK, added on 9 November 2026 because the Panamax MD2 is not
+          sold on Amazon US, was checked against Tripp Lite's datasheet and its Amazon listing. Prices are the ranges we saw on that date and change often. This is general
           information, not electrical advice: <strong>your treadmill's manual is the
           authority</strong>, and if it says to plug directly into a grounded wall outlet with
           nothing in between, do that and buy nothing on this page. Any work on outlets, circuits
@@ -299,8 +300,8 @@ const schema = {
         <ul class="list-none m-0 p-0">
           <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
             <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Overall:</span>
-            <a href="#panamax-md2" class="font-bold text-gray-900 no-underline hover:underline">Panamax MD2</a>
-            <a href="#panamax-md2" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
+            <a href="#tripp-lite-ultrablok" class="font-bold text-gray-900 no-underline hover:underline">Tripp Lite ULTRABLOK Isobar 2-Outlet Surge Protector</a>
+            <a href="#tripp-lite-ultrablok" class="ml-auto text-xs font-bold text-[#0F62FE] no-underline hover:underline">Jump to review &darr;</a>
           </li>
           <li class="flex flex-wrap items-baseline gap-x-2 py-2 border-b border-orange-100 last:border-0">
             <span class="text-xs font-black uppercase tracking-widest text-[#FF5A1F]">Best Single-Outlet:</span>
@@ -367,7 +368,7 @@ const schema = {
               <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Why</th>
             </tr></thead>
             <tbody>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Panamax MD2</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best overall, standard 15-amp plug</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Direct plug-in, 15 A, 1,350 joules, 400 V line-to-neutral rating</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Tripp Lite ULTRABLOK</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best overall, standard 15-amp plug</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Direct plug-in, 15 A breaker, 1,410 joules, UL 1449 3rd edition</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Tripp Lite SPIKECUBE</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Manuals that ask for a single-outlet unit</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">One outlet, 15 A, UL 1449 let-through figures from 400 V, under $20</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Panamax M2A20</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Treadmills on a 20-amp outlet</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rated for 20 A, direct plug-in, three diagnostic lights</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Whole-home surge protection</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Manuals that say plug straight into the wall</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Fitted at the panel by an electrician; nothing between treadmill and outlet</td></tr>
@@ -591,7 +592,7 @@ const schema = {
             UL 1449 is the US safety standard for surge protective devices. You want a listing mark
             from a recognised testing laboratory that refers to surge protection specifically, not
             just to the device being an outlet or a strip. Listings also tell you which edition the
-            device was tested to; the Panamax MD2, for instance, is listed to the third edition. An
+            device was tested to; the Tripp Lite ULTRABLOK, for instance, conforms to the third edition. An
             unlisted device with a large joule number on the box is not the same product.
           </p>
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">2. The voltage protection rating</h3>
@@ -641,7 +642,7 @@ const schema = {
             outlet, which has a T-shaped slot to accept it.
           </p>
           <p>
-            Most plug-in surge protectors, including the Panamax MD2 and the Tripp Lite SPIKECUBE,
+            Most plug-in surge protectors, including the Tripp Lite ULTRABLOK and SPIKECUBE,
             are 15-amp devices. They are the wrong choice for a 20-amp treadmill even if the plug
             could be forced to fit, and it should never be adapted to fit. The Panamax M2A20 is the
             one 20-amp direct plug-in device we could verify, and Panamax's instructions say to plug
@@ -804,7 +805,7 @@ const schema = {
             <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
               <h3 class="font-bold text-gray-900 mb-2">What is the best surge protector for a treadmill?</h3>
               <p class="text-gray-700 text-sm leading-relaxed">
-                For a treadmill with a standard plug whose manual allows one, a direct plug-in protector rated for 15 amps with a UL 1449 listing and a voltage rating of 400 volts or less, such as the Panamax MD2. If the manual asks for a single-outlet unit, choose one, such as the Tripp Lite SPIKECUBE. If it says to plug straight into the wall, use no plug-in device.
+                For a treadmill with a standard plug whose manual allows one, a direct plug-in protector rated for 15 amps with a UL 1449 listing and a voltage rating of 400 volts or less, such as the Tripp Lite ULTRABLOK (whose 330-volt figure is in its Amazon listing). If the manual asks for a single-outlet unit, choose one, such as the Tripp Lite SPIKECUBE. If it says to plug straight into the wall, use no plug-in device.
               </p>
             </div>
             <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
@@ -892,7 +893,7 @@ const schema = {
           <p class="text-gray-300 leading-relaxed mb-4">
             <strong class="text-white">Let the manual decide, then buy one device for one machine.</strong>
             If your manual allows a surge protector and your treadmill has a standard plug, the
-            Panamax MD2 is our pick; if it asks for a single-outlet unit, the Tripp Lite SPIKECUBE;
+            Tripp Lite ULTRABLOK is our pick; if it asks for a single-outlet unit, the Tripp Lite SPIKECUBE;
             on a 20-amp outlet, the Panamax M2A20. Plug it straight into the wall and plug nothing
             else into it.
           </p>

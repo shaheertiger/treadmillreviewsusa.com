@@ -28,7 +28,8 @@ export default {
           figure is left off the card and the description gives each one. Egofit’s own site would not
           load for us, so the Walker Pro M1’s figures come from the tracker’s record of Egofit’s
           site and manual, and we could not confirm its price on the day; its card carries no price.
-          We searched the CPSC recall database for each brand and found no recall; Sperax pads are
+          The UREVO Smart Walking Pad card, which stands in for the E1L on Amazon, carries the
+          figures checked against its Amazon listing on 6 November 2026. We searched the CPSC recall database for each brand and found no recall; Sperax pads are
           excluded after the CPSC’s April 2026 warning. Prices are those shown on 5 November 2026 and
           change often. We earn a commission if you buy through the Amazon links on this page; it does
           not change which products we list or what we say about them.`,
@@ -66,27 +67,25 @@ export default {
         'The Z1 is the best balance of small and usable we found. WalkingPad’s US store listed it at $299, down from $329, on 5 November 2026, with a folded size of 31.8 by 22 by 5.4 inches, an unfolded size of 56.1 by 22 by 4.1 inches, a 47.6 by 15.7-inch walking area, a 242 lb maximum user weight, a 51 lb unit weight and a 2.25 HP brushless motor. Tom’s Guide’s hands-on review gives the same capacity, weight and folded size. Folding in half is what makes it a mini treadmill: open, it is as long as most walking pads, but closed it covers less floor than any flat pad here, and it stands on end in a cupboard. WalkingPad’s page gives the top speed as both 4 mph and 6 km/h, which is about 3.7 mph, and Tom’s Guide gives 3.7, so the card uses the metric figure. Tom’s Guide measured an average of 57.3 dB, so put a mat under it if anyone lives below. The warranty is one year.',
     },
     {
-      id: 'urevo-spacewalk-e1l',
-      name: 'UREVO SpaceWalk E1L',
-      category: 'Lightest Mini Treadmill',
-      badge: 'Lightest',
-      amazonUrl: 'https://www.amazon.com/s?k=UREVO+SpaceWalk+E1L+Walking+Pad&tag=sktiger-20',
-      priceRange: '$169.99 at UREVO (5 Nov 2026)',
-      specs: '36.6 lb · 42.1 x 19.3 in. footprint · 35.4 x 15 in. belt · 0.6–4.0 mph · no incline',
+      id: "urevo-smart-walking-pad",
+      name: "UREVO Smart Walking Pad",
+      category: "Closest on Amazon to the Lightest Pad, the UREVO SpaceWalk E1L",
+      badge: "Lowest Price",
+      priceRange: "About $135 (Amazon, 6 Nov 2026)",
+      specs: "4.1 in. overall height (listing) · 35.43 x 15 in. belt · 0.6–4 mph · 265 lb capacity · remote and app",
       pros: [
-        'At 36.6 lb, the lightest machine here by more than 10 lb',
-        'UREVO and an independent tracker agree on belt, top speed and weight',
-        'The cheapest pick, in stock at $169.99 on the day',
+        "A 4.1-inch overall profile, so the belt sits no higher than that",
+        "About $135, by far the cheapest pick",
+        "A stated 265 lb limit",
+        "Slides under furniture when not in use",
       ],
       cons: [
-        'A 35.4-inch belt is short; fine for slow desk walking, not for a long stride',
-        'Capacity is 265 lb on UREVO’s page and 242 lb in the manual, by the tracker’s reading',
-        'Does not fold, so it needs about 42 by 19 inches of floor to store',
+        "Walking only: 4 mph top speed and no handle",
+        "A short 35.4-inch belt suits slow walking more than a brisk pace",
+        "The listing gives no unit weight",
       ],
-      bottomLine:
-        'For a lighter walker who wants the least weight to slide in and out every day, at the lowest price.',
-      description:
-        'The SpaceWalk E1L is the mini treadmill to choose if weight matters more than anything else. UREVO’s US store listed it in stock at $169.99, against $189.99, on 5 November 2026, with a 42.1 by 19.3-inch footprint, a 35.43 by 15-inch running area, 0.6 to 4.0 mph and a 36.59 lb unit weight; an independent spec tracker gives the same belt, top speed and weight. UREVO gives the height as 4.2 inches and the tracker 4.8, and UREVO gives a 265 lb maximum load where the tracker reports 242 lb in the manual, so neither height nor capacity is on the card. The tracker also estimates continuous motor output well below the advertised 2.5 HP. At under 37 lb it slides under a sofa with one hand, which is the point; the short belt is the price of that, so it suits slow walking rather than a brisk pace.',
+      bottomLine: "The cheapest flat mini pad here, for slow walking under a desk. Its listing gives no unit weight, so if you will lift it daily, confirm the weight with UREVO.",
+      description: "The SpaceWalk E1L, the lightest machine we could check at 36.6 lb, is sold on UREVO's own store but not under that name on Amazon US. This card shows UREVO's flat Smart Walking Pad, which Amazon does sell and whose listing gives the same 35.43 by 15-inch belt and 0.6 to 4 mph range; its figures are those checked for our low-ceiling guide. UREVO's flat Smart Walking Pad is the simplest flat mini pad on Amazon. Its Amazon listing gives a 4.1-inch slim profile — the overall height including the motor cover, so the belt surface sits no higher — a 35.43 by 15-inch belt with eight silicone shock absorbers and two rubber pads, walking speeds of 0.6 to 4 mph, a 2.5 HP peak motor, a 265 lb maximum user weight, wheels, an LED display, a remote and app control with virtual routes and a MIIT interval mode. The trade-offs are the ones of any small flat pad: a short belt that suits slow walking under a desk better than brisk exercise walking, no handle, and no jogging mode. The specifications closely match UREVO's SpaceWalk E1L, but the listing does not use that name. Amazon showed it at $134.99 on 6 November 2026.",
     },
     {
       id: 'egofit-walker-pro-m1',
@@ -165,8 +164,8 @@ export default {
       heading: 'Our Picks at a Glance',
       html: `          <p>
             Five machines, each the smallest or lightest of its kind that we could check. The short
-            version: the <a href="/walkingpad-z1-review/" class="text-[#0F62FE] font-medium" data-autolink>WalkingPad Z1</a> for most people, the UREVO SpaceWalk E1L if you will lift it
-            every day, and the UREVO Strol 2E if you want a handle.
+            version: the <a href="/walkingpad-z1-review/" class="text-[#0F62FE] font-medium" data-autolink>WalkingPad Z1</a> for most people, the UREVO Smart Walking Pad if price comes
+            first (the lighter SpaceWalk E1L is sold on UREVO's store rather than on Amazon), and the UREVO Strol 2E if you want a handle.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead>
@@ -178,7 +177,7 @@ export default {
             </thead>
             <tbody>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">WalkingPad Z1</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most people</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Folds to 32 x 22 in. with a nearly four-foot walking area, $299</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UREVO SpaceWalk E1L</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Daily lifting, lowest price</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">36.6 lb, $169.99</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UREVO Smart Walking Pad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lowest price, flat pad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">35.4-inch belt, 4.1 in. tall, about $135</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Egofit Walker Pro M1</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Shallow desks, tiny rooms</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Under 39 in. long flat, fixed 5% slope</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">WalkingPad C2</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Narrow storage spaces</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Folds to about 32 x 20 in., $399</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UREVO Strol 2E</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A handle and a slow jog</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Handle folds flat, 6.2 mph, 265 lb, $169.99</td></tr>
@@ -414,7 +413,7 @@ export default {
     },
     {
       q: 'What is the lightest mini treadmill?',
-      a: 'Of the machines we could check, the UREVO SpaceWalk E1L, at 36.6 lb by UREVO’s figure and an independent tracker’s. It was $169.99 on 5 November 2026. Its 35.4-inch belt is short, so it suits slow walking rather than a long stride.',
+      a: 'Of the machines we could check, the UREVO SpaceWalk E1L, at 36.6 lb by UREVO’s figure and an independent tracker’s. It was $169.99 on UREVO’s store on 5 November 2026 but is not sold under that name on Amazon US; UREVO’s Smart Walking Pad on Amazon has the same belt and speed, but its listing gives no weight. Either way the 35.4-inch belt is short, so it suits slow walking rather than a long stride.',
     },
     {
       q: 'Is a mini treadmill good for a desk?',
@@ -478,8 +477,9 @@ export default {
   bottomLine: [
     `<strong class="text-white">The WalkingPad Z1 is the best mini treadmill for most people</strong>:
             it folds in half to about 32 by 22 inches and 51 lb, yet gives a walking area nearly four
-            feet long, for $299. If you will lift it every day, the 36.6 lb UREVO SpaceWalk E1L costs
-            $169.99; if you want a handle, the UREVO Strol 2E costs the same.`,
+            feet long, for $299. If you will lift it every day, the 36.6 lb UREVO SpaceWalk E1L is the
+            lightest, from UREVO's store; on Amazon, UREVO's flat Smart Walking Pad costs about $135,
+            and if you want a handle, the UREVO Strol 2E costs $169.99.`,
     `Choose on the space you are short of, walking or storage, check your desk height against the
             pad’s, and leave a margin below the lower capacity figure. If size is not the limit, our
             <a href="/best-walking-pads/" class="text-[#5AA9FF] font-bold no-underline">best walking pads</a>

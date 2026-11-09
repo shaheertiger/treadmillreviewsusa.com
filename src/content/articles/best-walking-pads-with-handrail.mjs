@@ -21,9 +21,9 @@ export default {
   stickyCta: { text: 'See Our Top Picks', link: '#picks' },
   note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
           walking pads. The specifications on this page were checked on 13 October 2026 against
-          each brand's own product page (UREVO, WalkingPad and MERACH), the Amazon, brand-store or
-          specialist-retailer listing, and independent coverage — published hands-on reviews for
-          the UREVO Strol 2S Pro and the Goplus SuperFit, and a long-running spec tracker that reads
+          each brand's own product page (WalkingPad and, for the Sunny, Sunny's store), the Amazon, brand-store or
+          specialist-retailer listing, and independent coverage — a published hands-on review for
+          the Goplus SuperFit, and a long-running spec tracker that reads
           owner's manuals and motor labels. A figure appears in a product's specification line
           only where those sources agree. Where they did not — most often on weight capacity and
           motor type — we left the figure out and say so in the text. None of these are our own
@@ -45,7 +45,7 @@ export default {
       heading: 'Our Picks at a Glance',
       html: `          <p>
             Five pads, covering the main ways a pad can give you something to hold. The short
-            version: the UREVO Strol 2S Pro for most people, the <a href="/goplus-2-in-1-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Goplus SuperFit</a> 2-in-1 if price
+            version: the Sunny Treadpad with 7% auto incline for most people, the <a href="/goplus-2-in-1-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Goplus SuperFit</a> 2-in-1 if price
             comes first, and the WalkingPad MX8 if you want a handle on each side rather than a bar
             in front. If you are not sure a pad is the right format, we compare
             <a href="/walking-pad-vs-folding-treadmill/" class="text-[#0F62FE] font-medium">walking pads and folding treadmills</a>.
@@ -59,10 +59,10 @@ export default {
               </tr>
             </thead>
             <tbody>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UREVO Strol 2S Pro</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most people</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">42.5-inch belt, powered incline, 7.6 mph with the rail up</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sunny Treadpad 7% Auto Incline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most people</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">45.7-inch running surface, powered 7% incline, 6 mph with the rail up</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">WalkingPad R3 Hybrid+</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Tall walkers, premium build</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">47.2 x 17.3-inch deck with folding side handrails</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Goplus SuperFit 2-in-1</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lowest price</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A fold-up rail for roughly $100–$200, with a hands-on review behind it</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">MERACH T19</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Budget with incline, slimmest fold</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Manual 6% incline and a 4.3-inch folded height</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UREVO Strol 2E Pro</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Budget with incline, lightest</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Manual 12% incline and 44 lb, for about $200</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">WalkingPad MX8</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Handles on both sides</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Removable side handles, 330 lb rating, folds upright</td></tr>
             </tbody>
           </table></div>
@@ -81,8 +81,9 @@ export default {
             Three pads with a single fold-up rail in front, and two with handles at the sides. Each
             entry says who it suits and what it gives up. The specification line on each card
             carries only figures that the brand's own listing and at least one other source agree
-            on, which is why the MERACH T19 has no capacity in its line: a reviewer covering a pad
-            sold under the same name gave a much lower figure than the current listing.
+            on, which is why the UREVO Strol 2E Pro has no capacity or belt size in its line: its
+            listing bullets give neither. The Sunny and UREVO pads replace two that Amazon US does
+            not sell; their figures are those checked for our 2-in-1 folding treadmill guide.
           </p>`,
     },
     {
@@ -136,9 +137,8 @@ export default {
             The obvious job is giving you something to hold. That is genuinely useful at three
             moments: stepping on and off, when the belt is speeding up or slowing down, and when
             you lose your rhythm — glancing at a screen, reaching for a cup, turning to answer
-            someone. A light hand on a rail at those moments is exactly what rails are for. One
-            hands-on reviewer of the <a href="/urevo-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>UREVO</a> Strol 2S Pro chose to walk with the rail raised for that
-            reason, wanting the upper-body support it gave.
+            someone. A light hand on a rail at those moments is exactly what rails are for. Many owners
+            walk with the rail raised for that reason.
           </p>
           <p>
             What a pad's rail is not is a structure to lean on. It is a single upright, or a pair of
@@ -159,10 +159,10 @@ export default {
             <li><strong>Goplus SuperFit 2-in-1:</strong> about 2.5 mph with the rail down, 7.5 mph
             with it up. A hands-on reviewer confirmed the rail has to be locked upright before the
             running mode is available.</li>
-            <li><strong>MERACH T19:</strong> up to 3.8 mph with the rail down, up to 7.6 mph with it
-            raised.</li>
-            <li><strong>UREVO Strol 2S Pro:</strong> 0.6 to 4.0 mph in walking mode, up to 7.6 mph
-            in running mode with the handlebar raised.</li>
+            <li><strong>Sunny Treadpad 7% Auto Incline:</strong> 0.5 to 3.7 mph with the handlebar
+            folded, up to 6 mph with it fully extended.</li>
+            <li><strong>UREVO Strol 2E Pro:</strong> 0.6 to 4 mph in walking mode, up to 6.2 mph in
+            running mode.</li>
             <li><strong>WalkingPad R3 Hybrid+:</strong> listed at 1 to 7.5 mph, and a retailer
             listing says lowering the rails for under-desk use limits it to 4 mph.</li>
             <li><strong>WalkingPad MX8:</strong> 1 to 5 mph, with no speed lock tied to the handles
@@ -207,15 +207,14 @@ export default {
           </p>
           <p>
             <strong>Height.</strong> A rail that is too low makes you stoop to hold it, and a rail
-            that is too high pushes your shoulders up. One reviewer of the UREVO Strol 2S Pro noted
-            that its handlebar height cannot be adjusted, which may not suit taller users. The MX8's
-            side handles are described as adjustable. If you are much taller or shorter than
+            that is too high pushes your shoulders up. Fixed-height front bars are common on 2-in-1s, while the
+            MX8's side handles are described as adjustable. If you are much taller or shorter than
             average, check the rail height against your hip height before you buy.
           </p>
           <p>
             <strong>The machine's own weight.</strong> A heavier pad gives the rail a more solid
-            base. The Strol 2S Pro weighs about 75 lb by UREVO's figure and the MX8 about 74 lb;
-            lighter 2-in-1 pads can move slightly when you pull on the rail. That is another reason
+            base. The Sunny weighs 79.4 lb by Sunny's figure and the MX8 about 74 lb;
+            lighter 2-in-1 pads, such as the 44 lb UREVO Strol 2E Pro, can move slightly when you pull on the rail. That is another reason
             not to lean on it.
           </p>
           <p>
@@ -235,8 +234,8 @@ export default {
             behind.
           </p>
           <p>
-            <strong>Folded height.</strong> With the rail folded, the pads here run from about 4.3
-            inches (MERACH T19) to about 6.7 inches (UREVO Strol 2S Pro). That figure matters twice:
+            <strong>Folded height.</strong> With the rail folded, the Sunny's deck sits 4.1 inches off
+            the floor by Sunny's figure; check the folded height of the others with the seller. That figure matters twice:
             once for the gap under the sofa or bed where you store it, and again under a standing
             desk, because every inch of deck height is an inch your desk has to rise. Our
             <a href="/treadmill-desk-guide/" class="text-[#0F62FE] font-medium">treadmill desk guide</a>
@@ -253,8 +252,9 @@ export default {
           </p>
           <p>
             <strong>Weight.</strong> 2-in-1 pads are heavier than flat ones, because the rail and its
-            mounting add metal. The Strol 2S Pro and the MX8 are both in the mid-70s of pounds, and
-            the Goplus is about 70 lb by the hands-on reviewer's estimate. All have wheels, but none
+            mounting add metal. The Sunny is 79.4 lb and the MX8 about 74 lb, the Goplus is about 70
+            lb by the hands-on reviewer's estimate, and the UREVO Strol 2E Pro is the exception at
+            44 lb by its listing. All have wheels, but none
             is a casual one-handed lift. If the pad has to go up and down stairs each day, factor
             that in.
           </p>
@@ -315,28 +315,25 @@ export default {
   ],
   products: [
     {
-      id: 'urevo-strol-2s-pro',
-      name: 'UREVO Strol 2S Pro',
-      category: 'Best Overall Walking Pad With Handrail',
-      badge: 'Best Overall',
-      amazonUrl: 'https://www.amazon.com/s?k=UREVO+Strol+2S+Pro+Treadmill&tag=sktiger-20',
-      priceRange: '$300–$550',
-      specs: '42.5 x 16.5 in. belt · 0.6–4.0 mph walking, to 7.6 mph running · 0–9% powered incline · 265 lb capacity',
+      id: "sunny-treadpad-7-auto-incline",
+      name: "Sunny Health & Fitness Treadpad Treadmill 7% Auto Incline",
+      category: "Best Overall Walking Pad With Handrail",
+      badge: "Best Overall",
+      priceRange: "About $487 (Amazon, 6 Nov 2026)",
+      specs: "45.7 x 16 in. running surface · 0.5–3.7 mph handlebar down, to 6 mph handlebar up · 7% auto incline · 265 lb capacity (Sunny)",
       pros: [
-        'A 42.5 by 16.5-inch belt, longer and wider than most 2-in-1 pads, which suits both brisk walking and a short jog',
-        'Walking mode reaches 4.0 mph with the handlebar down, so you are not forced to raise the rail to walk briskly',
-        'Powered incline to 9%, adjustable mid-walk, which few 2-in-1 pads offer',
-        'Covered by several published reviews, which were broadly positive about the build and the incline',
+        "A powered incline to 7% in six preset steps, changed at the press of a button",
+        "A 45.7-inch running surface by both the listing and Sunny’s site, second only to the WalkingPad R3 Hybrid+ here",
+        "Sunny publishes a weight limit (265 lb), unit weight (79.4 lb) and deck height on its own store",
+        "A US-based brand with its own support and the SunnyFit app",
       ],
       cons: [
-        'At about 75 lb it is heavy to move, and one reviewer noted that the handlebar height cannot be adjusted',
-        'An independent tracker reports a brushed motor, contrary to what some listings imply, and UREVO gives only a 2.5 HP maximum figure',
-        'Warranty is one year plus 180 days, with the extension dependent on registering in UREVO’s app',
+        "About $487, more than twice the UREVO Strol 2E Pro",
+        "Running mode stops at 6 mph, lower than the Goplus SuperFit",
+        "At 79.4 lb by Sunny’s figure, the heaviest pad here to move",
       ],
-      bottomLine:
-        'The 2-in-1 to buy for most people: a long belt, a rail-down walking mode that reaches 4 mph, and incline. The right choice unless price or a very tall stride decides otherwise.',
-      description:
-        'The Strol 2S Pro gets the balance right. UREVO lists a 42.5 by 16.5-inch belt, a walking mode of 0.6 to 4.0 mph and a running mode up to 7.6 mph, a powered incline to 9% and a 265 lb capacity, and hands-on reviews and an independent spec tracker agree, including on the detail that running speeds need the handlebar raised. The important thing for a handrail buyer is that the rail-down walking mode reaches 4 mph, so you can walk briskly under a desk without lifting it, and raise it only when you want to hold on or jog. One reviewer chose to walk with the rail up for the upper-body support. The belt is long enough that a short jog is realistic for many people. The compromises are weight — about 75 lb, which makes moving it a chore — a handlebar that one reviewer noted is not height-adjustable, and a motor that an independent tracker describes as brushed. The warranty is 18 months with app registration. UREVO showed $299.99 against a $549.99 list price when we checked, which is strong value for what it does.',
+      bottomLine: "The 2-in-1 to buy for most people: a fold-up rail, a powered incline you can change mid-walk and a 45.7-inch running surface. It is a walking machine first, with a jog in reserve.",
+      description: "Sunny's Treadpad with 7% auto incline is the most complete front-rail 2-in-1 we could check on Amazon. The Amazon listing gives a 45.7 by 16-inch running surface, a walking mode of 0.5 to 3.7 mph with the handlebar folded and a running mode up to 6 mph with it fully extended, a powered incline with six preset levels up to 7%, a 6.3 by 2.4-inch display, a remote and the SunnyFit app. Sunny's own store lists the same running surface and speed ranges for its 2-in-1 auto-incline Treadpad and adds a 265 lb maximum user weight, a 79.4 lb product weight, a 2.0 HP peak motor and a deck that sits 4.1 inches off the floor flat and 5.7 inches at full incline, which also makes it a reasonable choice under a low ceiling. Its running surface is about five inches longer than the Goplus SuperFit's, the most meaningful difference for jogging, because it gives a longer stride somewhere to land. The trade-offs are the price and the weight: at nearly 80 lb it is a two-handed job to move. Amazon showed it at $487.26 on 6 November 2026. Sunny's warranty on its own store is three years on the frame and 180 days on other parts.",
     },
     {
       id: 'walkingpad-r3-hybrid-plus',
@@ -353,7 +350,7 @@ export default {
         'WalkingPad is one of the longest-established walking pad brands, with an optional warranty extension',
       ],
       cons: [
-        'Roughly two to three times the price of the UREVO for a similar speed range and no incline',
+        'Costs far more than the Sunny or UREVO pads here, and has no incline',
         'WalkingPad lists different capacities for different R3 versions on the same page, so confirm you are buying the Hybrid+ and its 265 lb rating',
         'We found no independent hands-on review of the Hybrid+; the standard warranty is one year',
       ],
@@ -388,28 +385,25 @@ export default {
         'The SuperFit is the long-running budget 2-in-1, and unlike most pads at this price it has been through a published hands-on review. Retail listings and that review agree on a belt of about 40 by 16 inches, a 265 lb capacity and a folded height of about 5 inches, and the review confirmed the defining detail: with the rail folded down the pad is capped at about 2.5 mph, and once the rail is locked upright a running mode up to 7.5 mph becomes available. That makes it an honest example of the rail as a speed switch. The 2.5 mph cap is the main thing to understand before buying. It is a comfortable typing pace, but brisk walkers will want to raise the rail, which takes the pad out from under the desk. The reviewer also found the display hard to read because it sits low on the deck, the remote awkward under a desk, and the handles bolted on in a way that has to be undone to fold the rail. The belt is short and narrow for running. At the $100 to $200 it has commonly sold for, those compromises are fair.',
     },
     {
-      id: 'merach-t19',
-      name: 'MERACH T19',
-      category: 'Best Budget 2-in-1 With Incline',
-      badge: 'Slimmest Fold',
-      amazonUrl: 'https://www.amazon.com/s?k=MERACH+Walking+Pad+with+Handle+Bar+6+Incline+T19&tag=sktiger-20',
-      priceRange: '$230–$300',
-      specs: '37.4 x 16 in. belt · up to 3.8 mph rail down, 7.6 mph rail up · 6% manual incline · folds to 4.3 in.',
+      id: "urevo-strol-2e-pro",
+      name: "UREVO Strol 2E Pro",
+      category: "Best Budget 2-in-1 With Incline",
+      badge: "Lightest",
+      priceRange: "$198–$220 (Amazon, 6 Nov 2026)",
+      specs: "44 lb (listing) · 0.6–4 mph walking mode · up to 6.2 mph running mode · 12% manual incline · tool-free fold",
       pros: [
-        'Folds to about 4.3 inches tall, the slimmest pad on this page',
-        'A rail-down walking mode up to 3.8 mph, brisk enough for most desk walkers',
-        'A manual 6% incline for a harder walk, uncommon on a budget 2-in-1',
-        'Sold on Amazon and at a major US electronics retailer, with a second warranty year available on registration',
+        "A 12% manual incline, which makes a slow walk much harder without needing more speed",
+        "At 44 lb by its listing, by far the lightest pad here",
+        "A 0.6–4 mph walking mode and a 6.2 mph running mode with the handle up",
+        "App with virtual routes and an auto-speed mode, if you like that sort of thing",
       ],
       cons: [
-        'Capacity is disputed: the current listing says 300 lb, while a reviewer covering a MERACH T19 gave 220 lb',
-        'A 37.4-inch belt is short for running even with 7.6 mph available, and the incline is set by hand',
-        'MERACH’s own store showed it sold out, and the motor is not described as brushless',
+        "A manual incline means stepping off to change it, unlike the Sunny’s powered incline",
+        "The bullets give no belt size or weight limit on either listing we checked",
+        "The listing copy leans on marketing claims (\"full sprints\") that a 6.2 mph pad cannot back up",
       ],
-      bottomLine:
-        'For a desk walker who wants a rail, a slim fold and a little incline for under $300. Confirm the capacity for your exact listing before you rely on it.',
-      description:
-        'The T19 is the budget pick for someone who wants more than the Goplus offers. MERACH’s product page, the Amazon listing and an independent spec tracker agree on a 37.4 by 16-inch belt, a walking mode up to 3.8 mph with the rail folded, a running mode up to 7.6 mph with it raised, a manual 6% incline and a folded height of about 4.3 inches — the slimmest here. That rail-down speed is the useful part: you can walk briskly under a desk without lifting the rail. The capacity is less clear. The current listing and MERACH’s page say 300 lb, but a well-known review site covering a MERACH T19 lists a 220 lb capacity and a lower speed range, which suggests an earlier version sold under the same name. We have left capacity out of the specification line; check the listing in front of you and ask MERACH to confirm it. The motor is advertised at 3.0 HP with no brushless claim, and an independent tracker treats it as brushed. MERACH’s own store showed it sold out when we checked, so Amazon is the main place to buy it.',
+      bottomLine: "The cheapest 2-in-1 here with a real incline, and the lightest by its stated weight. Set the incline before you start and treat the running mode as a jog.",
+      description: "The Strol 2E Pro is the Strol 2E with an incline and a lighter frame. Its Amazon listings describe a walking mode of 0.6 to 4 mph and a running mode of 0.4 to 6.2 mph, a 12% manual incline, a fold that needs no tools and glide wheels, and a weight of 44 lb, which the title and bullets both state. Incline is the most useful feature a walking machine can add once speed stops being comfortable: a few percent at 3 mph raises the effort noticeably without lengthening your stride, which suits the short belts on 2-in-1s better than more speed does. Because the incline is manual, you set it before you start rather than changing it mid-walk. The app adds virtual routes and an automatic speed mode that follows your pace, which some people like and others switch off. What the listing does not give in its bullets is the belt size or a maximum user weight, so confirm both with UREVO if you are tall or heavy. Two listings were live on 6 November 2026, at $197.98 and $219.99, with matching descriptions; check that the one in your basket is the Pro with the incline, not the plain Strol 2E.",
     },
     {
       id: 'walkingpad-mx8',
@@ -455,7 +449,7 @@ export default {
     },
     {
       q: 'Can you run on a 2-in-1 walking pad?',
-      a: `A short, easy jog with the rail up is realistic on some, especially those with belts of 42 inches or more, such as the UREVO Strol 2S Pro or WalkingPad R3 Hybrid+. Regular running is not: the belts are still short, the motors are sized for walking, and the rail is not built for running forces. Use running mode as an occasional extra.`,
+      a: `A short, easy jog with the rail up is realistic on some, especially those with longer running surfaces, such as the Sunny Treadpad (45.7 inches) or WalkingPad R3 Hybrid+. Regular running is not: the belts are still short, the motors are sized for walking, and the rail is not built for running forces. Use running mode as an occasional extra.`,
     },
     {
       q: 'Are side handles better than a front handrail?',
@@ -511,9 +505,9 @@ export default {
     },
   ],
   bottomLine: [
-    `For most people the <strong class="text-white">UREVO Strol 2S Pro</strong> is the 2-in-1 to
-            buy: a 42.5-inch belt, a rail-down walking mode that reaches 4 mph, powered incline, and
-            a running mode with the rail up, at a price that is usually well under its list. On a
+    `For most people the <strong class="text-white">Sunny Treadpad with 7% auto incline</strong> is the 2-in-1 to
+            buy: a 45.7-inch running surface, a rail-down walking mode, a powered incline, and
+            a 6 mph running mode with the rail up, for about $487. On a
             tight budget the <strong class="text-white">Goplus SuperFit 2-in-1</strong> does the job
             for slow walkers, and if you would rather have a handle on each side, the
             <strong class="text-white">WalkingPad MX8</strong> provides one.`,

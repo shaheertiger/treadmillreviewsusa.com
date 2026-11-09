@@ -45,29 +45,25 @@ export default {
           commission if you buy through the Amazon link on this page; it does not change what we say.`,
   products: [
     {
-      id: 'nohrd-sprintbok',
-      name: 'NOHrD Sprintbok V2',
-      category: 'Wooden Curved Manual Treadmill',
-      badge: 'Design-Led Premium',
-      priceRange: '$8,199–$10,299 (V2); Pro from $8,899',
-      amazonUrl: 'https://www.amazon.com/s?k=NOHrD+Sprintbok+Curved+Treadmill&tag=sktiger-20',
-      specs: '160 x 45 cm (about 63 x 17.7 in.) curved surface · 62 linoleum-faced slats · 160 kg (about 353 lb) max user · 160 kg machine · no motor',
+      id: "sole-c80-curved",
+      name: "SOLE C80 Curved Manual Treadmill",
+      category: "Closest on Amazon: a Self-Powered Curved Trainer With Resistance",
+      badge: "Closest on Amazon",
+      priceRange: "$2,399.99 at SOLE on 5 Nov 2026",
+      specs: "62 x 19 in. slat belt · 8 magnetic levels · 330 lb max user · 261 lb",
       pros: [
-        'Solid-wood frame in six finishes, handmade in Nordhorn, Germany; it looks like furniture rather than gym equipment',
-        'Rated for users up to 160 kg (about 353 lb), with figures that agree across NOHrD and two retailers',
-        'No belt tightening, oiling or greasing, according to NOHrD',
-        'Integrated display that syncs with NOHrD’s Connect app; the Pro adds a touchscreen with programmes',
+        "A self-powered curved deck with no speed limit and no outlet needed, like the Sprintbok",
+        "Eight magnetic resistance levels for sled-style pushes",
+        "Bluetooth console that works with SOLE’s app and third-party platforms",
+        "Thousands of dollars less than the Sprintbok’s US price",
       ],
       cons: [
-        'Among the most expensive home curved treadmills: $8,199 to $10,299 for the V2 and $8,899 to $11,099 for the Pro',
-        'US warranty is one year, or two years if you register within the first year, and you pay to ship parts back on a claim',
-        'No resistance setting is listed, so it is a pure curve',
-        'At 160 kg in a single package, delivery is kerbside and moving it indoors takes several people',
+        "None of the Sprintbok’s solid-wood design, which is most of what you pay for there",
+        "A 330 lb rating",
+        "One year on deck, parts, electronics and labour; no incline and no folding",
       ],
-      bottomLine:
-        'The curved treadmill to buy if appearance, materials and quiet running in a living space matter as much as training, and the price does not. On features and warranty alone, cheaper curved machines offer more.',
-      description:
-        'The Sprintbok is a self-powered curved treadmill: the belt of 62 wooden slats, faced in linoleum and running on ball bearings, moves only when you push it, and speed follows your position on the curve. NOHrD lists a 160 by 45 cm running surface, an 8 cm solid-wood frame, a footprint of 180 by 86 by 153 cm, a machine weight of 160 kg and a maximum user weight of 160 kg. The V2 has a display built into the handlebar that syncs with the NOHrD Connect app; the Pro adds a touchscreen with interval, endurance, speed and pacer programmes and scenic routes. NOHrD’s US warranty is one year, upgradeable to two years on registration. On 14 October 2026 the V2 was $8,199 to $10,299 and the Pro $8,899 to $11,099 by wood finish.',
+      bottomLine: "The curved trainer to buy on Amazon if you want what the Sprintbok does as a training tool, plus resistance, for a fraction of its price. It is steel and plastic, not wood.",
+      description: "The NOHrD Sprintbok is sold by NOHrD and its dealers rather than on Amazon US, so this card shows the nearest self-powered curved trainer that Amazon does sell. The C80 is a curved deck, like the Sprintbok, with a magnetic brake added. The figures cross-checked on this site in October 2026 give it a 62 by 19-inch slat belt, eight magnetic resistance levels, a 330 lb maximum user weight and a 261 lb machine weight, and its Bluetooth console connects to SOLE’s own app and third-party platforms. Its warranty is lifetime on the frame and one year on the deck, parts, electronics and labour. It trains much as any good curved treadmill does; what it does not offer is the Sprintbok’s wooden build and furniture-like look. SOLE listed it at $2,399.99 on 5 November 2026; check the Amazon price on the day.",
     },
   ],
   sections: [
@@ -80,7 +76,9 @@ export default {
             solid wood, sold in the US from $8,199, and it is worth that money only if how it looks and
             feels in your home matters as much as how it trains.</strong> As a training tool it does what
             a good curved treadmill does — no speed limit, no power needed, a natural-feeling push — and
-            its core figures are consistent across NOHrD and two independent retailers.
+            its core figures are consistent across NOHrD and two independent retailers. NOHrD sells it
+            direct and through dealers rather than on Amazon US, so the card below shows the closest
+            curved trainer Amazon does sell.
           </p>
           <p>
             The trade-offs are clear. The Sprintbok costs more than twice as much as the AssaultRunner Pro,

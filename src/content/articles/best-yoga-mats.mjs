@@ -63,7 +63,7 @@ export default {
             <tbody>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Manduka PRO 6mm</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best overall for home practice</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Dense, stable 6 mm PVC with a lifetime guarantee; heavy and needs breaking in</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Manduka PROlite 4.7mm</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lighter premium mat</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The PRO's material at about half the weight</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Liforme Classic Yoga Mat</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Grip in sweaty practice</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">PU top over natural rubber, with alignment markings; expensive</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Liforme Special Yoga Mat</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Grip in sweaty practice</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">PU top over natural rubber, with alignment markings; expensive</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">JadeYoga Harmony</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Natural rubber</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Grippy open-cell rubber; contains latex and smells at first</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Manduka begin 5mm</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Beginners and carrying</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Light, reversible TPE mat with an alignment stripe</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Gaiam Premium 6mm Print</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Budget yoga mat</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Cushioned 6 mm PVC for well under $50; slippery when wet</td></tr>
@@ -456,28 +456,27 @@ export default {
         "The PROlite is Manduka's answer to the PRO's main complaint, its weight. Manduka and Live Science both give the standard mat as 4.7 mm thick and 71 by 24 inches, and Live Science and REI put it at about 4 pounds, against 7.5 for the PRO; Manduka also lists 68-inch and 79-inch lengths. REI's listing gives the thickness as 4.5 mm, which differs from Manduka's own figure, so treat the exact millimetre with some caution. Like the PRO it is a dense, latex-free PVC mat with OEKO-TEX certification and a closed-cell surface. Fit&Well found it sturdy and roomy for taller people but noted it can turn slippery in hot, sweaty sessions, and Live Science found the cushioning a little light for deep kneeling poses. That is the trade: you lose some cushioning and gain a mat you can carry to class without noticing. On a carpeted floor, the thinner mat is also more stable. Fit&Well listed it at $99.",
     },
     {
-      id: 'liforme-classic',
-      name: 'Liforme Classic Yoga Mat',
-      category: 'PU top over natural rubber, with alignment markings',
-      badge: 'Best Grip When Sweaty',
-      amazonUrl: 'https://www.amazon.com/s?k=Liforme+Classic+Yoga+Mat&tag=sktiger-20',
-      priceRange: '$150–$185',
-      specs: 'About 4.2 mm · 185 x 68 cm (about 73 x 27 in.) · about 2.5 kg (5.5 lb) · eco-polyurethane top, natural rubber base · bag included',
+      id: "liforme-special",
+      name: "Liforme Special Yoga Mat",
+      brand: "Liforme",
+      category: "PU top over natural rubber, with alignment markings",
+      badge: "Best Grip When Sweaty",
+      amazonUrl: "https://www.amazon.com/dp/B07WGMQBF4?tag=sktiger-20",
+      priceRange: "About $175 (Amazon, 9 Nov 2026)",
+      specs: "About 4.2 mm · eco-polyurethane top, rubber base · PVC-free · AlignForMe markings · bag included",
       pros: [
-        'Independent reviewers report excellent grip in both dry and sweaty conditions',
-        'Printed alignment markings help with hand and foot placement',
-        'Generous 68 cm (about 27 in.) width',
-        'PVC-free, per the maker',
+        "Independent reviewers report excellent grip in both dry and sweaty conditions on Liforme’s full-size mat",
+        "Printed alignment markings help with hand and foot placement",
+        "PVC-free, per the maker",
+        "Sold on Amazon by Liforme, with a bag in the box",
       ],
       cons: [
-        'Natural rubber base contains latex',
-        'Heavy to carry and expensive',
-        'Light colours show marks from skin oils, reviewers note',
+        "Natural rubber base contains latex",
+        "Heavy to carry and expensive",
+        "Light colours show marks from skin oils, reviewers note",
       ],
-      bottomLine:
-        'The pick for hot or sweaty practice if you can afford it and have no latex allergy.',
-      description:
-        "Liforme's mat is the best-known of the polyurethane-topped mats, and it is sold on Amazon through Liforme's own storefront. Liforme gives it as about 4.2 mm thick, 185 by 68 centimetres and about 2.5 kilograms, with a natural rubber base under an eco-polyurethane top, and independent reviews from Live Science and T3 report the same construction. Its two distinguishing features are the surface and the markings. The PU top absorbs a little moisture, and T3 found the grip excellent whether skin was dry or sweaty, with OutdoorGearLab also praising its wet grip, which makes it a strong choice for hot yoga. The printed AlignForMe markings give reference lines for hands and feet, which some people find useful and others ignore. The drawbacks are consistent across reviews: it is heavy to carry, T3 notes it can mark with skin oils, and Live Science reports a price of $149 to $185, depending on design. The rubber base contains latex. Liforme has renamed lines over the years, so check you are buying the full-size mat, not the thinner travel mat.",
+      bottomLine: "The pick for hot or sweaty practice if you can afford it and have no latex allergy.",
+      description: "Liforme's mat is the best-known of the polyurethane-topped mats. Its plain Classic colourways were not listed on Amazon US when we checked, so this card shows the full-size Liforme that Amazon does sell, the Special Yoga Mat, a limited colour run that the Amazon listing describes with the same 4.2 mm thickness, GripForMe surface, AlignForMe markers, eco-polyurethane and rubber construction, PVC-free materials and free bag. For the full-size mat, Liforme gives 185 by 68 centimetres and about 2.5 kilograms, and independent reviews from Live Science and T3 report the same construction; the Special listing does not repeat the size, so check it before ordering. Its two distinguishing features are the surface and the markings. The PU top absorbs a little moisture, and T3 found the grip excellent whether skin was dry or sweaty, with OutdoorGearLab also praising its wet grip, which makes it a strong choice for hot yoga. The printed markings give reference lines for hands and feet, which some people find useful and others ignore. The drawbacks are consistent across reviews: it is heavy to carry, T3 notes it can mark with skin oils, and the rubber base contains latex. Amazon listed the Special at $175 on 9 November 2026; Liforme also sells printed designs on Amazon at higher prices, and a thinner travel mat that is not the same product.",
     },
     {
       id: 'jadeyoga-harmony',

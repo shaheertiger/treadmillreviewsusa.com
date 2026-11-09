@@ -37,7 +37,8 @@ export default {
           Steel bar listed on Amazon US at $299.99 on that date. We could not find the REP, Rogue or
           Titan bars on Amazon US: Rogue sells only through its own store, and REP and Titan list
           these bars on their own stores, so their buttons run an Amazon search that may show similar
-          bars rather than the exact one. On 9 November 2026 we replaced the Rogue TB-2 card, because Rogue sells only through its own
+          bars rather than the exact one. On 9 November 2026 we also replaced the Titan Rackable Hex Trap Bar card with CAP's
+          combo-grip Olympic trap bar, checked against CAP's Amazon listing and retailer listings. On 9 November 2026 we replaced the Rogue TB-2 card, because Rogue sells only through its own
           store, with Marcy's HTB-6921 closed hex bar, checked against Marcy's listing, the Amazon
           listing and two US retailers. Every brand was checked against the US Consumer Product
           Safety Commission's recall database on the same date, along with trap bars, hex bars and
@@ -70,7 +71,7 @@ export default {
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">REP Fitness Open Trap Bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best overall</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Open frame, 16.5 in. sleeves, choice of handle widths, rackable, 5-year warranty</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Marcy Olympic Hex Trap Bar (HTB-6921)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Closed hex bar on Amazon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Two knurled handle heights and an 800 lb rating for about $144; short 10 in. sleeves</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Titan Fitness Open Trap Bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Heavy pulling</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1,500 lb rating, thin and fat handles, built-in jack</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Titan Fitness Rackable Hex Trap Bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Closed bar on a budget</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rackable, 16 in. sleeves, about $350 on sale</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">CAP Olympic Trap Bar, Combo Grip</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Closed bar on a budget</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Two handle heights and a 750 lb rating for about $90</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bells of Steel Open Trap Bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Short rooms and Amazon buyers</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">59 in. long, open frame and jack, sold on Amazon US</td></tr>
             </tbody>
           </table></div>
@@ -164,7 +165,8 @@ export default {
             option. Because the frame is a single welded loop, they are rigid, and many have handles
             welded at two heights on opposite faces, so you flip the bar over to change height. The
             Rogue TB-2, Titan's Rackable Hex Trap Bar and Marcy's HTB-6921 are all closed bars; the TB-2
-            is sold only through Rogue, so the Marcy is the closed bar carded for Amazon buyers.
+            is sold only through Rogue and the Titan through Titan's store, so the Marcy and a CAP
+            combo-grip bar are the closed bars carded for Amazon buyers.
           </p>
           <p>
             The limitation is the back of the frame. On deadlifts it is out of the way, but on
@@ -507,28 +509,27 @@ export default {
         "Titan's Open Trap Bar is built for heavy pulls. Titan lists an 11-gauge powder-coated frame with hard-chrome sleeves, a 65 lb empty weight, an 88.5-inch length, 16 inches of loadable sleeve and a 1,500 lb rating, and Garage Gym Reviews' review and roundup give the same weight, length, sleeve length and rating; BarBend agrees on the length, sleeves and rating and names it its best trap bar for deadlifts. The handles are fixed: a 32 mm pair and a 38 mm pair at different heights, 23 inches apart by Titan's figure, so you can train grip with the fat handles or pull heavier with the thin ones. The built-in jack has large 7 by 2.5-inch feet. Garage Gym Reviews' tester liked the medium knurl and the frame's strength, but warns that the jack lifts the plates about 16 inches off the floor, so tipping a loaded bar back down feels like an extra lift, and that 65 lb is a heavy start for beginners. Titan says it fits most standard power racks. On 19 October 2026 it was $464.99 on Titan's store, available to backorder rather than in stock, which is higher than the $349 both review sites quote. We could not find it on Amazon US.",
     },
     {
-      id: 'titan-rackable-hex',
-      name: 'Titan Fitness Rackable Hex Trap Bar',
-      category: 'Closed, rackable hex bar',
-      badge: 'Best Value Closed Bar',
-      amazonUrl: 'https://www.amazon.com/s?k=Titan+Fitness+Rackable+Hex+Trap+Bar&tag=sktiger-20',
-      priceRange: '$350–$440',
-      specs: '800 lb rating (maker) · 16 in. sleeves · standard and raised neutral handles · racks in most power racks · 60 lb and 85 in. long (Titan figures)',
+      id: "cap-olympic-trap-bar-combo",
+      name: "CAP Olympic Trap Bar, Combo Grip (750 lb)",
+      brand: "CAP Barbell",
+      category: "Budget closed hex bar with two handle heights",
+      badge: "Budget Closed Bar",
+      amazonUrl: "https://www.amazon.com/dp/B0BFYGWVTK?tag=sktiger-20",
+      priceRange: "About $90 (Amazon, 9 Nov 2026)",
+      specs: "750 lb rating (maker) · raised and flush neutral handles · 9 in. loadable sleeves · 25 in. interior · fits 2 in. Olympic plates",
       pros: [
-        'Long 16-inch sleeves on a closed bar for well under the price of the TB-2 when on sale',
-        'Two handle heights in one frame',
-        'Rackable, so it starts rack pulls and presses from the J-cups',
-        'BarBend’s tester rated its versatility highly',
+        "A closed hex frame with two handle heights for under $100",
+        "A 750 lb rating, above the Marcy’s, in CAP’s listing and retailer listings alike",
+        "Medium knurling on both handle positions",
+        "Fits standard 2-inch Olympic and bumper plates",
       ],
       cons: [
-        'An 800 lb rating is lower than the open bars here',
-        'BarBend found the black powder coat scuffs quickly',
-        'Titan’s page gives two different handle diameters',
+        "Short 9-inch sleeves limit how much you can load",
+        "Not described as rackable, unlike the Titan bar it replaces",
+        "Retailer listings disagree on sleeve length (9 or 9.5 inches) and finish, so check the exact listing",
       ],
-      bottomLine:
-        'A closed, rackable bar for lifters who want the TB-2’s layout at a lower sale price and do not need a made-in-USA frame.',
-      description:
-        "Titan's Rackable Hex Trap Bar is a closed hex frame with standard and raised neutral handles and sleeves long enough to rest in a power rack's J-hooks. Titan lists an 800 lb rating and 16 inches of loadable sleeve, and BarBend, which names an earlier listing of it its best rackable trap bar, gives the same rating and sleeve length. Titan's page also gives a 60 lb weight, an 85-inch length and a 22-inch handle spread, which we could not check against an independent source, so they are labelled as Titan's figures. Titan's description says the handles are 28 mm while its specification table says 32 mm, so we have left the diameter off the card. BarBend's tester liked the rackable length and the room to set up for rack pulls, and its main criticism was a black powder coat that scuffed and scratched with use, though without rust. On 19 October 2026 it was on sale at $349.97 on Titan's store against a $439.99 list price. Treat the 800 lb rating as Titan's claim: it is lower than the open bars on this page, though still more than most home lifters will put on a trap bar. We could not confirm an Amazon US listing.",
+      bottomLine: "The cheapest closed hex bar here with two handle heights. Fine for moderate deadlifts and shrugs; heavy pullers will run out of sleeve.",
+      description: "Titan's Rackable Hex Trap Bar, which we listed here before, is sold on Titan's own store rather than on Amazon US, so this card shows a budget closed bar that Amazon does sell. CAP's Amazon listing describes a closed hex frame with raised and flush neutral-grip handles, both with medium knurling, a 25-inch interior opening, 9-inch loadable sleeves for 2-inch Olympic and bumper plates, and a 750 lb capacity; retailer listings for CAP's combo-grip Olympic trap bar agree on the 750 lb rating and the two handle heights, though one gives 9.5-inch sleeves. The 750 lb figure is CAP's own, not a load test. What it gives up against the Titan is sleeve length and the ability to rest in a rack's J-hooks: 9 inches holds far fewer plates than Titan's 16, so it suits moderate loads, and the listing does not describe it as rackable. Amazon listed it at $89.99 on 9 November 2026; CAP sells similar trap bars in other finishes and grip styles, so check that the listing in your basket is the combo-grip bar.",
     },
     {
       id: 'bells-of-steel-open-trap-bar',
@@ -558,7 +559,7 @@ export default {
   faqs: [
     {
       q: 'What is the best trap bar for a home gym?',
-      a: `For most home gyms, an open trap bar with long sleeves, two handle heights and a built-in jack, such as the REP Fitness Open Trap Bar, is the most versatile choice. If you mainly deadlift and shrug, a closed hex bar such as the Rogue TB-2 or Titan's Rackable Hex Trap Bar does the job and takes less room; on Amazon, Marcy's HTB-6921 is a cheaper closed bar with shorter sleeves. In a small room, check the bar's length first.`,
+      a: `For most home gyms, an open trap bar with long sleeves, two handle heights and a built-in jack, such as the REP Fitness Open Trap Bar, is the most versatile choice. If you mainly deadlift and shrug, a closed hex bar such as the Rogue TB-2 or Titan's Rackable Hex Trap Bar does the job and takes less room; on Amazon, Marcy's HTB-6921 and CAP's combo-grip bar are cheaper closed bars with shorter sleeves. In a small room, check the bar's length first.`,
     },
     {
       q: 'Is a trap bar the same as a hex bar?',

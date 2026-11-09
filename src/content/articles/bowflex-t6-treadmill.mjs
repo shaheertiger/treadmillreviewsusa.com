@@ -37,28 +37,26 @@ export default {
           you are buying before you order.`,
   products: [
     {
-      id: 'bowflex-t6',
-      name: 'Bowflex T6',
-      category: 'Folding Treadmill With 15% Incline',
-      badge: 'Mid-Range Pick',
-      priceRange: '$999-$1,299',
-      specs: '20 x 60 in. deck · 3.0 HP (test rating) · 0-15% incline · 0.5-12 mph · 325 lb capacity',
+      id: "sole-f63",
+      name: "Sole F63",
+      category: "Closest on Amazon: the Folding Rival With the Same Core Figures",
+      badge: "Closest on Amazon",
+      reviewUrl: "/sole-f63-treadmill/",
+      priceRange: "Around $1,000–$1,200",
+      specs: "20 x 60 in. deck · 3.0 HP · up to 12 mph · 0-15% incline · 325 lb capacity · folding · lifetime frame & motor warranty",
       pros: [
-        'Full 60-inch running length and motorised incline to 15% at a price where 10% to 12% is common',
-        'No subscription needed to use the treadmill; connects over Bluetooth to JRNY, Peloton or Zwift if you choose to pay for one',
-        'Lifetime frame and motor warranty, plus three years on mechanical parts',
-        'Folds from 76 to 44 inches long, with a 325 lb maximum user weight',
+        "Every headline figure — deck, motor, speed, incline and user rating — agrees between Sole and independent sources",
+        "Lifetime frame and motor warranty at the lowest price of any 60-inch Sole",
+        "Incline to 15%, higher than the 12% ceiling on most rivals at this price",
+        "No subscription: the console works fully on its own, and Sole’s app is free",
       ],
       cons: [
-        'The 3.0 HP figure is a test rating that Bowflex says does not reflect operational horsepower, so it cannot be compared directly with a continuous-duty rating',
-        '20-inch width is fine for most users but leaves less lateral margin than the 22 inches on the T9',
-        'One year of in-home labour is short next to the lifetime frame and motor cover',
-        'About 234 lb assembled and 71 inches tall when folded, so it is not a machine you tuck away casually',
+        "A 20-inch belt rather than the 22 inches on the F85",
+        "No touchscreen — the 2026 version has a simple LED console with dials",
+        "Its parts, deck and labour terms are quoted differently across sources and model years",
       ],
-      bottomLine:
-        'A well-specified folding treadmill for walkers, incline walkers and most runners of average build, best bought at the sale price and with the labour term understood.',
-      description:
-        'The T6 pairs a 20 by 60-inch running area on a FlexZone deck with a drive motor Bowflex rates at 3.0 HP under test settings, a 500 lb-thrust incline motor giving 0 to 15% (no decline), and a speed range of 0.5 to 12 mph. Maximum user weight is 325 lb. The console is a dual LED and LCD layout — an 8.8 by 2-inch backlit LCD with four LED windows, no touchscreen — with Bluetooth FTMS for JRNY, Peloton and Zwift, and NFC tap-to-connect for Apple Watch and Samsung Galaxy Watch. Assembled it measures 76 by 35 by 71 inches and folds to 44 inches long. The US warranty is lifetime on the frame and motor, three years on mechanical parts and one year of in-home labour. At the time of writing bowflex.com listed it at $1,299 regular and $999 on sale.',
+      bottomLine: "The Amazon alternative to the T6: the same 20 by 60-inch deck, 15% incline, 12 mph and 325 lb rating, with a simpler console and no JRNY.",
+      description: "The Bowflex T6 is sold by Bowflex and other retailers rather than on Amazon US, so this card shows the machine this review compares it with, which Amazon does sell; its figures are those checked for our Sole treadmill guide. The F63 is the cheapest Sole with a 60-inch deck and the one most buyers should start from. Sole's 2026 listing and independent coverage agree on a 20 by 60-inch belt, a 3.0 HP motor, 0.5 to 12 mph, incline to 15%, a 325 lb maximum user weight and a folding frame, with lifetime cover on the frame and motor. That is an unusually clean set: on a brand where model names often hide changes, the F63's headline figures have stayed consistent. Two things have changed for 2026. The console is now a white LED display with dial controls rather than the LCD older reviews describe, and Sole lists a lighter machine than earlier specification sheets did, so treat older descriptions of the console and weight as out of date. Sole's current listing gives two years on the deck, electronics and parts, one year on labour and 90 days on cosmetic items; other sources quote different parts and labour terms, so confirm them for your unit. Independent coverage describes it as well built for walking and jogging, and one review notes it is less suited to sustained fast running.",
     },
   ],
   sections: [
@@ -67,7 +65,9 @@ export default {
       heading: 'The Short Answer',
       products: true,
       html: `          <p>
-            The Bowflex T6 is a sensible folding treadmill with no obvious weak point in its core
+            The Bowflex T6 is sold by Bowflex and other retailers rather than on Amazon US, so the
+            card below shows the closest machine Amazon does sell, the Sole F63 that this review
+            compares it with. The Bowflex T6 is a sensible folding treadmill with no obvious weak point in its core
             specification. A 60-inch running length is the figure most people should care about
             first, and the T6 has it. Incline to 15% is more than most machines at this price
             offer, 12 mph covers everything short of fast interval work, and a 325 lb maximum user

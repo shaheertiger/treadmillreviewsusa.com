@@ -102,26 +102,25 @@ export default {
         "A used Tread+ is not something Amazon sells, and Peloton's current slat-belt Tread+ Vision is sold through Peloton, so this card shows the premium Peloton treadmill that is on Amazon: the Tread Vision. Peloton replaced its treadmill line in autumn 2026 with three machines: the folding Tread Flex, the Tread Vision and the slat-belt Tread+ Vision. Peloton's specification page and its launch material agree on a 23.8-inch swivel touchscreen, 0 to 12.5 mph and 0 to 12.5% incline, and the machine does not fold; Peloton lists a 59 by 20-inch cushioned belt and a 300 lb maximum user weight. Its new feature is a movement-tracking camera that scores running efficiency from cadence and vertical oscillation and counts reps in strength classes. Against a used TR01 it gives up the long slatted deck, but it comes new, with no rear-guard recall to confirm and no activation fee. Peloton prices the hardware with the All-Access Membership sold separately and says the membership is required for its content and features. Because the machine has only been on sale since 1 October, we cannot point to independent reliability coverage, and the warranty is 12 months limited, with longer belt, motor and frame guarantees. Peloton's shop listed it at $3,495 on 5 November 2026; its figures are those checked for our smart treadmill guide.",
     },
     {
-      id: 'peloton-tread-flex-new',
-      name: 'Peloton Tread Flex',
-      category: 'The New Peloton to Price Against Any Used One',
-      badge: 'The New Benchmark',
-      amazonUrl: 'https://www.amazon.com/s?k=Peloton+Tread+Flex&tag=sktiger-20',
-      priceRange: '$2,195 at Peloton (5 Nov 2026)',
-      specs: '0-12.5 mph · 0-12.5% incline · 21.5 in. swivel touchscreen · folding · new, with warranty',
+      id: "nordictrack-commercial-1750",
+      name: "NordicTrack Commercial 1750",
+      category: "A New Folding Smart Treadmill to Price Against a Used Peloton",
+      badge: "Amazon Alternative",
+      priceRange: "Around $1,900–$2,300",
+      specs: "16 in. pivoting touchscreen · RunFlex cushioned deck · -3% to 12% incline · folding · lifetime motor warranty",
       pros: [
-        'Peloton’s cheapest treadmill, and its first that folds',
-        'New, with Peloton’s warranty and no used-equipment activation fee',
-        'Peloton was offering to match a better Tread Flex offer on its own site for purchases from 1 to 11 November',
+        "RunFlex cushioning, which NordicTrack says reduces joint impact whether walking, jogging or running",
+        "Incline to 12% and decline to -3%",
+        "Lifetime motor warranty and a 10-year frame warranty in NordicTrack’s published terms",
+        "A 16-inch pivoting touchscreen for iFIT classes",
       ],
       cons: [
-        'Still needs an All-Access Membership for classes',
-        'No movement-tracking camera, unlike the Tread Vision',
+        "Some retailers describe a selectable soft and firm deck; NordicTrack’s own product data does not, so confirm before relying on it",
+        "Maximum user weight is listed differently by NordicTrack and by retailers",
+        "Automatic workouts need a paid iFIT membership",
       ],
-      bottomLine:
-        'The price any used Peloton treadmill has to beat once fees and moving are added. If it does not, buy this instead.',
-      description:
-        'The Tread Flex is Peloton’s folding treadmill, launched on 1 October 2026. Our Peloton Tread guide checked its figures against Peloton and independent launch coverage: 0 to 12.5 mph, 0 to 12.5% incline, a 21.5-inch swivel touchscreen and a 290 lb machine weight, folding to 37.8 inches long. On 5 November 2026 Peloton’s US shop listed it at $2,195, with the All-Access Membership sold separately and a price-match offer for purchases made from 1 to 11 November. Peloton’s shop listed the Tread Vision at $3,495 and the Tread+ Vision at $6,695 on the same day.',
+      bottomLine: "A new, warrantied folding treadmill with a big screen and classes, for comparison with any used Tread once fees and moving are added. The classes are iFIT’s, not Peloton’s.",
+      description: "Peloton's new Tread Flex, the benchmark this guide prices a used Tread against, is sold by Peloton rather than on Amazon US, so this card shows a new folding smart treadmill that Amazon does sell, with the figures checked for our cushioned treadmill guide. It runs iFIT rather than Peloton's classes. NordicTrack's product data names the Commercial 1750's cushioning as the RunFlex cushioned deck and says it \"reduces joint impact whether walking, jogging, or running.\" Retailer listings agree on the name; some go further and describe a choice between a cushioned setting and a firmer, road-like surface. NordicTrack's own product text does not mention that choice, and NordicTrack's earlier Runners Flex system, which did have a switch, dates from 2013, so treat a selectable deck as unconfirmed and ask before you buy if it matters. The rest of the machine is well documented: NordicTrack lists -3% to 12% incline, a 16-inch tilt-and-pivot touchscreen, a folding frame, and a warranty of life on the motor, 10 years on the frame, 2 years on parts and 1 year of labour. We left maximum user weight off the spec line because NordicTrack's product data says 400 lb while a retailer listing gives 300 lb, and we left speed off because the same product data lists both 12 mph and 12 km/h.",
     },
   ],
   sections: [
@@ -135,6 +134,8 @@ export default {
             asking price, fee and moving — still sits clearly below a new $2,195 Tread Flex.</strong>
             When all three hold, it can be a good way into Peloton’s classes. When any one fails, a
             new machine, or a cheaper non-Peloton treadmill with the Peloton App, is the better buy.
+            The Tread Flex is sold by Peloton rather than on Amazon US, so the last card below is a
+            new NordicTrack folding smart treadmill that Amazon does sell, for comparison.
           </p>
           <p>
             The recall check comes first and is not optional. Every Tread+ sold from 2018 to April
