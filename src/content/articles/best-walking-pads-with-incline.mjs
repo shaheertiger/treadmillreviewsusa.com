@@ -21,10 +21,13 @@ export default {
   stickyCta: { text: 'See Our Top Picks', link: '#picks' },
   note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
           walking pads. The specifications on this page were checked on 13 October 2026 against
-          each brand's own product page or press release (UREVO, MERACH, DeerRun, Egofit and
-          Wellfit), the Amazon or brand-store listing, and independent coverage — a long-running
+          each brand's own product page or press release (MERACH, DeerRun and
+          Egofit), the Amazon or brand-store listing, and independent coverage — a long-running
           spec tracker that reads owner's manuals and motor labels, and, for the DeerRun Z10, a
-          hands-on review that measured the incline. A figure appears in a product's
+          hands-on review that measured the incline. The MERACH W50 TrekPad, UREVO Strol 2E Pro and
+          DeerRun A6 Plus replace pads Amazon US does not sell in the version we listed; their
+          figures are those checked against the maker and the Amazon listing on 5 and 6 November
+          2026 for our walking-pad and 2-in-1 guides. A figure appears in a product's
           specification line only where those sources agree. Budget walking pad listings
           disagree with each other often, and where they did — on motor horsepower, weight
           capacity, maximum incline, unit weight and warranty — we left the figure out and say
@@ -47,8 +50,8 @@ export default {
       heading: 'Our Picks at a Glance',
       html: `          <p>
             Five pads, chosen so that each kind of incline buyer has an obvious answer. The short
-            version: the UREVO SpaceWalk 3S for most people, the MERACH W60 Plus if you want the
-            steepest powered incline in a pad, and the <a href="/deer-run-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>DeerRun</a> Z10 if you want powered incline for
+            version: the MERACH NovaWalk W50 TrekPad for most people, the UREVO Strol 2E Pro if you
+            want the steepest incline in a pad, and the <a href="/deer-run-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>DeerRun</a> Z10 if you want powered incline for
             the least money and can live with a short belt. Before you buy, it is worth knowing
             <a href="/how-long-do-walking-pads-last/" class="text-[#0F62FE] font-medium">how long walking pads last</a>.
           </p>
@@ -61,11 +64,11 @@ export default {
               </tr>
             </thead>
             <tbody>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UREVO SpaceWalk 3S</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most people</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Powered 0–9% incline, the longest belt here, 265 lb capacity</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">MERACH UltraWalk W60 Plus</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The steepest pad incline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Powered 0–12% incline, 16.5 in. wide belt, two-year warranty</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">MERACH NovaWalk W50 TrekPad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most people</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Powered incline, a 41.3-inch belt, 400 lb capacity</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UREVO Strol 2E Pro</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The steepest pad incline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Manual 12% incline and a handle, about $200</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">DeerRun Z10</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Powered incline on a budget</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">12-level motorised incline and a 300 lb rating for about $200–$240</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Egofit Walker Pro M1</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Small desks, set-and-forget incline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Fixed 5% deck, nothing to adjust or break, very short footprint</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Wellfit TM037</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lowest price, with a handrail</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Manual 0–5% incline and a fold-up rail for roughly $140–$260</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">DeerRun A6 Plus</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A handrail and a 300 lb rating</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Manual 5% incline and a handrail for about $249</td></tr>
             </tbody>
           </table></div>
           <p>
@@ -93,9 +96,7 @@ export default {
       heading: 'How We Chose These Walking Pads',
       html: `          <p>
             We have not tested these <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pads</a>, and nothing on this page should be read as if
-            we had. The one exception is the Wellfit TM037, which has
-            <a href="/wellfit-tm037-treadmill/" class="text-[#0F62FE] font-medium">its own review on this site</a>
-            — and that review is a reading of the listing, not a hands-on test either. The picks
+            we had. The picks
             were made from published specifications, manufacturer and marketplace listings,
             warranty terms and independent coverage, checked on 13 October 2026. For each pad we
             confirmed that it is currently sold, on the brand's own store, on Amazon, or both.
@@ -156,7 +157,7 @@ export default {
             incline you can switch off, and it is the cheapest way to get any incline at all. It
             does not support sessions that vary, and it relies on a mechanical bracket carrying
             your weight at an angle, so it is worth checking how solid that bracket is. The
-            Wellfit TM037 works this way.
+            UREVO Strol 2E Pro and DeerRun A6 Plus work this way.
           </p>
           <p>
             The decision is straightforward. If you want incline to be part of a structured walk —
@@ -228,11 +229,12 @@ export default {
           </p>
           <p>
             <strong>Belt length.</strong> The pads on this page run from about 34 inches (Egofit)
-            to 42.5 inches (<a href="/urevo-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>UREVO</a> SpaceWalk 3S). For walking flat, 35 to 40 inches suits most
+            to 41.3 inches (MERACH W50 TrekPad), and the UREVO and DeerRun listings give no belt
+            length at all. For walking flat, 35 to 40 inches suits most
             adults at desk pace. For walking uphill, more is better, for the reason above: incline
             pulls your stride toward the front roller. Taller walkers, and anyone who plans to use
             the top third of the incline range, should treat 40 inches as a practical minimum and
-            look first at the UREVO or MERACH.
+            look first at the MERACH.
           </p>
           <p>
             <strong>Weight capacity.</strong> This is the figure budget listings disagree on most.
@@ -272,12 +274,9 @@ export default {
             month seven and the seller has to be found, persuaded and waited for.
           </p>
           <p>
-            Warranty terms here range from one year to two. UREVO's own page lists one year plus a
-            180-day extension, and an independent tracker reports that the extension depends on
-            registering the pad in UREVO's app. MERACH's product page lists two years, and the same
-            tracker reports a one-year base term that extends with registration. DeerRun lists one
-            year. Egofit lists one year. Wellfit's brand page and Amazon listing describe different
-            terms, which our review of the TM037 goes through. Register on the day the pad arrives,
+            Warranty terms here range from one year to two. MERACH's product page lists two years for
+            the W50 TrekPad. DeerRun lists one year for the Z10. Egofit lists one year. We did not
+            confirm the terms for the UREVO Strol 2E Pro or DeerRun A6 Plus, so ask the seller. Register on the day the pad arrives,
             keep the receipt and the order number, and screenshot the warranty wording as it
             stands when you buy, because terms change under the same product name.
           </p>
@@ -317,9 +316,10 @@ export default {
             <a href="/best-incline-treadmills/" class="text-[#0F62FE] font-medium">best incline treadmills</a>.
           </p>
           <p>
-            <strong>If you want to jog or run,</strong> none of these pads will do it. All of them
-            stop at around 4 mph except the Wellfit, and its 36-inch belt is too short for a
-            running stride. Our page on
+            <strong>If you want to jog or run,</strong> none of these pads will do it. The pads stop at around 4 mph; the
+            two with handrails, the UREVO Strol 2E Pro and DeerRun A6 Plus, list running modes of
+            6.2 and 7.5 mph, but neither listing gives a belt length, and a pad-length belt is too
+            short for a running stride. Our page on
             <a href="/can-you-run-on-a-walking-pad/" class="text-[#0F62FE] font-medium">whether you can run on a walking pad</a>
             explains why, and the
             <a href="/best-treadmills-for-running/" class="text-[#0F62FE] font-medium">best treadmills for running</a>
@@ -328,7 +328,7 @@ export default {
           <p>
             <strong>If you need something to hold,</strong> most incline pads have no handrail at
             all, and walking uphill without one is a different proposition from walking flat. The
-            Wellfit's fold-up rail is a steadying aid rather than a support. If balance is a
+            handles on the UREVO and DeerRun are steadying aids rather than supports. If balance is a
             concern, the <a href="/best-treadmills-for-seniors/" class="text-[#0F62FE] font-medium">treadmills for seniors guide</a>
             covers machines with proper rails and low step-up heights, and anyone with a balance,
             joint or heart condition should check with their doctor before adding incline. We
@@ -350,52 +350,45 @@ export default {
   ],
   products: [
     {
-      id: 'urevo-spacewalk-3s',
-      name: 'UREVO SpaceWalk 3S',
-      category: 'Best Overall Walking Pad With Incline',
-      badge: 'Best Overall',
-      amazonUrl: 'https://www.amazon.com/s?k=UREVO+SpaceWalk+3S+Walking+Pad&tag=sktiger-20',
-      priceRange: '$250–$350',
-      specs: '0–9% powered incline · 0.6–4.0 mph · 42.5 in. belt length · 265 lb capacity · 6.5 in. tall',
+      id: "merach-w50-trekpad",
+      name: "MERACH NovaWalk W50 TrekPad",
+      category: "Best Overall Walking Pad With Incline",
+      badge: "Best Overall",
+      priceRange: "$299.99 at MERACH (5 Nov 2026)",
+      specs: "41.3 x 16.5 in. belt · 0.6–4.0 mph · 400 lb capacity · 1.25 HP continuous motor · powered incline",
       pros: [
-        'Powered incline from 0 to 9% in nine levels, adjustable mid-walk from the remote or the UREVO app',
-        'The longest belt on this page at 42.5 inches, which matters more on an incline than on the flat',
-        '265 lb capacity is stated consistently by UREVO and independent spec coverage',
-        'Typically sold well under its list price — UREVO showed $249.99 against $349.99 when we checked',
+        "A 400 lb rating that holds up across the maker, Amazon and independent coverage",
+        "MERACH publishes a continuous motor rating, which most budget pads do not",
+        "A two-year warranty, double the usual for the price",
       ],
       cons: [
-        'Motor horsepower is disputed: UREVO advertises 2.5 HP maximum, while the manual gives a much lower rated power, so the headline figure is not a continuous rating',
-        'The extra 180 days of warranty depend on registering in UREVO’s app, according to independent coverage, and the base term is one year',
-        'Unit weight differs between UREVO (about 57 lb) and other listings (about 71 lb), so plan on it being the heavier figure when you move it',
+        "Not a 2-in-1: no handle bar and no running speed",
+        "Does not fold, and at 69 lb is heavier to move",
+        "MERACH gives 12% incline and at least one roundup 10%, so no maximum is printed",
       ],
-      bottomLine:
-        'The pad to buy if you want genuine, adjustable incline on a belt long enough to use it. The right choice for most desk and living-room walkers.',
-      description:
-        'The SpaceWalk 3S is the most balanced incline pad we found. UREVO lists a powered incline from 0 to 9% across nine levels, changed from the remote or the app while you walk, on a 42.5-inch running area — the longest on this page, and the main reason it is our top pick, because a longer belt is what makes incline comfortable rather than cramped. Speed runs from 0.6 to 4.0 mph, the stated capacity is 265 lb, and the overall height is 6.5 inches, which suits most standing desks with room to spare. UREVO’s own page and independent spec coverage agree on all of that. They do not agree on the motor: UREVO quotes 2.5 HP maximum, the manual gives a rated power well below that, and one reviewer describes the motor as brushed, so we have left horsepower out. Unit weight is also listed differently in different places. The warranty is one year plus a 180-day extension, which one tracker says requires app registration. At the $249.99 UREVO was charging when we checked, it is strong value.',
+      bottomLine: "The incline pad to buy for most people: powered incline, a 400 lb rating that every source agrees on, a published continuous motor rating and a two-year warranty. Confirm the maximum incline with MERACH.",
+      description: "The W50 TrekPad is the most balanced incline pad we could check on Amazon: a powered incline, a 41.3-inch belt and the most consistent capacity figure here. MERACH’s product page on 5 November 2026 listed it at $299.99, against $479.99, with a 41.3 by 16.5-inch belt, 0.6 to 4.0 mph, a 400 lb maximum user weight, a 1.25 HP continuous and 3.5 HP peak motor, powered incline, a 69.2 lb unit weight, a two-year warranty and 30-day returns. The capacity and belt figures matched the Amazon listing and independent coverage when we checked them in October. MERACH gives 12% incline while a published roundup describes 10%, so the card leaves the maximum out. It walks only, to 4 mph, which is what most people do on an under-desk pad anyway.",
     },
     {
-      id: 'merach-ultrawalk-w60-plus',
-      name: 'MERACH UltraWalk W60 Plus',
-      category: 'Steepest Incline in a Walking Pad',
-      badge: 'Most Incline',
-      amazonUrl: 'https://www.amazon.com/s?k=MERACH+UltraWalk+W60+Plus+Walking+Pad&tag=sktiger-20',
-      priceRange: '$280–$500',
-      specs: '0–12% powered incline · 0.6–4.0 mph · 41.3 x 16.5 in. belt',
+      id: "urevo-strol-2e-pro",
+      name: "UREVO Strol 2E Pro",
+      category: "Steepest Incline in a Walking Pad",
+      badge: "Most Incline",
+      priceRange: "$198–$220 (Amazon, 6 Nov 2026)",
+      specs: "44 lb (listing) · 0.6–4 mph walking mode · up to 6.2 mph running mode · 12% manual incline · tool-free fold",
       pros: [
-        'Powered incline to 12% across 12 levels — the highest figure here that the brand page, press release and independent coverage all agree on',
-        'A 41.3 by 16.5-inch belt, wider than most pads, which helps when you are walking uphill and typing',
-        'Two-year warranty on MERACH’s product page, longer than the other incline pads on this list',
-        'Controlled from a remote or the MERACH app, with flat or upright storage',
+        "A 12% manual incline, which makes a slow walk much harder without needing more speed",
+        "At 44 lb by its listing, the lightest machine on this page",
+        "The same 4 mph walking cap and 6.2 mph running mode as the Strol 2E",
+        "App with virtual routes and an auto-speed mode, if you like that sort of thing",
       ],
       cons: [
-        'Weight capacity is disputed — MERACH’s own materials have quoted both 330 lb and 400 lb — so we have not printed either',
-        'A new model, on sale only since mid-2026, so there is little long-term owner history yet',
-        'The Amazon listing title has referred to it as the W60 rather than the W60 Plus, so check the exact model before ordering',
+        "A manual incline means stepping off to change it, unlike the Sunny’s powered incline",
+        "The bullets give no belt size or weight limit on either listing we checked",
+        "The listing copy leans on marketing claims (\"full sprints\") that a 6.2 mph pad cannot back up",
       ],
-      bottomLine:
-        'The pad for walkers who want the steepest powered incline available without moving up to a treadmill. Confirm the capacity in writing if you are near either figure.',
-      description:
-        'If the reason you want an incline pad is incline, the W60 Plus goes further than anything else we could verify. MERACH’s product page and its September 2026 press release both describe a 12-level automatic incline to 12%, a speed range of 0.6 to 4.0 mph, and a 41.3 by 16.5-inch belt, and an independent spec tracker agrees. That belt is a sensible length for incline work and wider than most pads. MERACH lists a two-year warranty, though the same tracker reports that the second year depends on registration. Where the sources part company is weight capacity: the current product page and the press release around its third-party safety testing say 330 lb, while other MERACH pages and the earlier W60 manual say 400 lb. We have printed neither. The advertised brushless motor rating is also MERACH’s own claim with no independent check. The price moves a lot — $499.99 list, with sale and coupon prices between about $280 and $330 when we checked — so it is worth waiting for a discount.',
+      bottomLine: "The steepest pad incline we could confirm on Amazon, at 12%, for about $200. It is manual, so set it before you start, and confirm the belt size and weight limit with UREVO.",
+      description: "The Strol 2E Pro is the Strol 2E with an incline and a lighter frame. Its Amazon listings describe a walking mode of 0.6 to 4 mph and a running mode of 0.4 to 6.2 mph, a 12% manual incline, a fold that needs no tools and glide wheels, and a weight of 44 lb, which the title and bullets both state. Incline is the most useful feature a walking machine can add once speed stops being comfortable: a few percent at 3 mph raises the effort noticeably without lengthening your stride, which suits the short belts on 2-in-1s better than more speed does. Because the incline is manual, you set it before you start rather than changing it mid-walk. The app adds virtual routes and an automatic speed mode that follows your pace, which some people like and others switch off. What the listing does not give in its bullets is the belt size or a maximum user weight, so confirm both with UREVO if you are tall or heavy. Two listings were live on 6 November 2026, at $197.98 and $219.99, with matching descriptions; check that the one in your basket is the Pro with the incline, not the plain Strol 2E.",
     },
     {
       id: 'deerrun-z10',
@@ -413,7 +406,7 @@ export default {
       ],
       cons: [
         'Sold as 12 levels of incline, but a hands-on reviewer measured about 9% at the top level, so do not count on 12%',
-        'A 35-inch belt is short, and on an incline it feels shorter; taller walkers are better served by the UREVO',
+        'A 35-inch belt is short, and on an incline it feels shorter; taller walkers are better served by the MERACH',
         'One-year warranty, and the reviewer noted beeps on every speed and incline change that cannot be turned off',
       ],
       bottomLine:
@@ -446,29 +439,25 @@ export default {
         'The Walker Pro M1 is the simplest way to walk uphill at a desk: the deck is built at a fixed 5% angle, so there is no incline motor, no setting and nothing to forget. Egofit’s listing and independent reviewers agree on that 5% figure, on a speed range of about 0.6 to 3.1 mph, and on a 34 by 16.5-inch walking area. At under 40 inches long it is also the smallest pad here, which suits a compact office. The trade-offs are real. You cannot flatten the deck for a gentle day, and more than one reviewer found the permanent slope noticeable over long working sessions. The belt is short and the speed ceiling low, so this is a desk machine and nothing more. Weight capacity is marketed at 220 lb while the manual gives a slightly higher figure, and either is modest, so heavier users should look elsewhere. The price varies widely between sellers — an independent tracker recorded about $479 on Amazon in early October 2026, with lower prices on Egofit’s own site — so compare before buying.',
     },
     {
-      id: 'wellfit-tm037',
-      name: 'Wellfit TM037',
-      category: 'Best Budget Manual Incline With a Rail',
-      badge: 'Lowest Price',
-      amazonUrl: 'https://www.amazon.com/s?k=Wellfit+TM037+Walking+Pad&tag=sktiger-20',
-      reviewUrl: '/wellfit-tm037-treadmill/',
-      priceRange: '$140–$260',
-      specs: '0–5% manual incline · 0.6–6.2 mph · 36 x 16 in. belt · fold-up handrail',
+      id: "deerrun-a6-plus",
+      name: "DeerRun A6 Plus",
+      category: "Best Budget Manual Incline With a Rail",
+      badge: "With a Handrail",
+      priceRange: "About $249 (Amazon, 6 Nov 2026)",
+      specs: "0.6–7.5 mph · 5% manual incline · 300 lb capacity (listing) · fold-flat with handrail · PitPat app and remote",
       pros: [
-        'The cheapest route to any incline at all, at a typical street price of $140–$260',
-        'A fold-up handrail gives light support that none of the other pads here offer',
-        'Higher listed top speed than the other pads, useful for brisk walking with the rail up',
-        'Light and slim enough to stand against a wall or slide under furniture',
+        "A 300 lb maximum weight stated in the listing bullets, the highest on this page",
+        "A 7.5 mph top speed and a 5% incline for about $249",
+        "A reinforced handrail described for beginners and older users",
+        "Works with the PitPat app for tracking and virtual runs",
       ],
       cons: [
-        'Incline is manual: you stop, step off and change it, so it cannot vary during a walk',
-        'The advertised brushless 3.0 HP motor was contradicted by an independent teardown report, and the warranty terms differ between Wellfit’s page and the Amazon listing',
-        'A 36-inch belt is too short for running despite the 6.2 mph top speed',
+        "The listing says \"longer running belt\" but gives no length",
+        "It does not separate walking-mode and running-mode speeds in the bullets",
+        "DeerRun sells many similar models with similar titles, so check the A6 Plus name in your basket",
       ],
-      bottomLine:
-        'A sensible buy for light daily walking with a little incline and something to hold, on the smallest budget. Get the warranty terms in writing first.',
-      description:
-        'The TM037 is the budget option, and the only pad here with a handrail. Its incline is manual — the deck props up to as much as 5% when you set it before a walk — so it gives you a slightly harder walk rather than a variable one. Wellfit’s brand page and the Amazon listing agree on a 36 by 16-inch belt, a speed range of 0.6 to 6.2 mph and the 0–5% incline, and the fold-up rail lets it work both under a desk and as a small standalone walker. Our full review of the TM037 reads the listing closely, and two things in it matter here. The advertised brushless 3.0 HP motor has been contradicted by an independent teardown report describing a brushed motor with a much lower continuous rating, and the warranty wording differs between Wellfit’s page and the Amazon listing, with the motor effectively covered for one year. Neither is unusual at this price, but both mean this is a light-use machine. At $140–$260 it is a reasonable way to try incline walking before spending more.',
+      bottomLine: "The pick if you want a handrail and a little fixed incline: a 5% manual setting and a stated 300 lb limit for about $249.",
+      description: "The DeerRun A6 Plus is a dual-use walking pad and running machine with a handrail, and our pick for heavier users because its listing states a 300 lb maximum weight in plain terms, which several of the cheaper 2-in-1s do not. The listing describes an adjustable speed of 0.6 to 7.5 mph, a manual incline that the title gives as 5%, an alloy steel frame, a shock-absorbing deck, a handrail upgraded for stability, a fold-flat design, a full-screen display for speed, time, distance and calories, a remote and compatibility with the PitPat app. Two gaps in the listing are worth knowing. It calls the belt longer without saying how long, and it gives a single speed range rather than separate walking and running modes, so it is not clear from the bullets whether the speed is capped with the rail folded. DeerRun sells a large family of similar machines — we saw at least five other DeerRun pads with handlebars and incline on the same day — so the model name matters. Amazon showed the A6 Plus at $249.00 on 6 November 2026. If you weigh close to 300 lb, a full treadmill with a higher stated limit and a longer deck is the safer long-term choice.",
     },
   ],
   faqs: [
@@ -478,7 +467,7 @@ export default {
     },
     {
       q: 'What is the maximum incline on a walking pad?',
-      a: `Most powered pads stop at 9%, and the steepest we could verify is the MERACH W60 Plus at 12%. Fixed and manual pads usually sit at 3 to 5%. Be wary of listings quoting degrees rather than percent, or levels rather than percent: 12 levels does not necessarily mean 12%, and one reviewer measured about 9% at the top level of a 12-level pad.`,
+      a: `Most powered pads stop at around 9%, and MERACH gives 12% for the W50 TrekPad, though a published roundup says 10%. The steepest we could confirm on Amazon is the UREVO Strol 2E Pro's 12% manual setting; most fixed and manual pads sit at 3 to 5%. Be wary of listings quoting degrees rather than percent, or levels rather than percent: 12 levels does not necessarily mean 12%, and one reviewer measured about 9% at the top level of a 12-level pad.`,
     },
     {
       q: 'Is powered incline worth paying more for?',
@@ -490,7 +479,7 @@ export default {
     },
     {
       q: 'Can you run on a walking pad with incline?',
-      a: `No. The powered incline pads on this page stop at 3.8 to 4 mph, which is a brisk walk, and the one pad with a higher listed top speed has a 36-inch belt that is too short for a running stride. Incline does not change that. If you want to jog or run, a treadmill with a 55 to 60-inch deck is the right machine.`,
+      a: `No. The powered incline pads on this page stop at 3.8 to 4 mph, which is a brisk walk. The two with handrails list running modes, but neither gives a belt length, and a walking pad's belt is too short for a running stride. Incline does not change that. If you want to jog or run, a treadmill with a 55 to 60-inch deck is the right machine.`,
     },
     {
       q: 'Why do walking pad specs differ between listings?',
@@ -507,7 +496,7 @@ export default {
     },
     {
       title: 'Expecting a treadmill hill on a pad',
-      body: 'Most powered pads stop at 9%, and the steepest we could verify stops at 12%, on a deck around 41 inches long with no handrails. That is useful for desk walking, not for sustained steep sessions or incline programmes. If incline is the point of the workout, buy an incline treadmill rather than the steepest pad you can find.',
+      body: 'Most powered pads stop at 9%, and the steepest we could confirm stops at 12%, on a deck about 41 inches long or less. That is useful for desk walking, not for sustained steep sessions or incline programmes. If incline is the point of the workout, buy an incline treadmill rather than the steepest pad you can find.',
     },
     {
       title: 'Choosing a short belt for incline work',
@@ -540,10 +529,10 @@ export default {
     },
   ],
   bottomLine: [
-    `For most people the <strong class="text-white">UREVO SpaceWalk 3S</strong> is the incline
-            pad to buy: a powered 0–9% incline on the longest belt here, at a price that is usually
-            well under its list. If you want the steepest pad incline we could verify, the
-            <strong class="text-white">MERACH W60 Plus</strong> reaches 12%; if you want a motorised
+    `For most people the <strong class="text-white">MERACH NovaWalk W50 TrekPad</strong> is the incline
+            pad to buy: a powered incline, the longest belt here and a 400 lb rating, for about
+            $300. If you want the steepest pad incline we could confirm, the
+            <strong class="text-white">UREVO Strol 2E Pro</strong> sets to 12% by hand; if you want a motorised
             incline for the least money, the <strong class="text-white">DeerRun Z10</strong> does it
             on a shorter belt.`,
     `Be realistic about what a pad's incline is for. It makes a 4 mph walk harder; it does not

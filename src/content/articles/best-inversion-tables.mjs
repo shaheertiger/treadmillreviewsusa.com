@@ -453,7 +453,7 @@ export default {
       name: 'Innova ITX9600 Inversion Table',
       category: 'Budget table with a six-hole angle pin',
       badge: 'Best Budget',
-      amazonUrl: 'https://www.amazon.com/s?k=Innova+ITX9600+Inversion+Table&tag=sktiger-20',
+      amazonUrl: 'https://www.amazon.com/dp/B003QCI4GG?tag=sktiger-20',
       priceRange: '$127–$131',
       specs: '300 lb max · 4 ft 10 in.–6 ft 6 in. · six-hole angle pin (15, 30, 45, 60, 85, 90°) · reversible ankle holders · adjustable headrest · 1-year warranty',
       pros: [

@@ -13,21 +13,22 @@ export default {
   standfirst:
     'This budget buys a walking machine. Anything claiming otherwise is quoting peak horsepower at you. Here is what is genuinely achievable under $500, and what to spend a little more on if you can.',
   ctas: [
-    { label: 'See the Top Pick', href: '#walking-pad-flat' },
+    { label: 'See the Top Pick', href: '#walkingpad-z1' },
     { label: 'What You Cannot Get', href: '#what-you-cannot-get' },
   ],
   tags: ['cheap treadmills', 'treadmills under 500', 'budget treadmill', 'walking pad', 'affordable home gym'],
-  stickyCta: { text: 'See the Top Pick', link: '#walking-pad-flat' },
+  stickyCta: { text: 'See the Top Pick', link: '#walkingpad-z1' },
   lead: `Under $500 the useful question is not which treadmill is best. It is which compromises
           you can live with — because at this price every machine has made the same three, and
           pretending otherwise is how people end up disappointed six weeks in.`,
   note: `<strong class="text-gray-900">On the machines below.</strong> This tier changes faster
           than any other: models are discontinued, rebadged and revised constantly, and
-          specifications shift under unchanged product names. We describe categories and the
-          specifications to look for as much as individual machines, because the specific model
-          on sale when you read this may not be the one described here. We have not tested these
-          machines; what follows is drawn from published specifications and what they imply, not
-          from our own measurements. Verify the motor rating, deck size and weight capacity for
+          specifications shift under unchanged product names. We describe the specifications to
+          look for as much as individual machines, because the model on sale when you read this
+          may have been revised. The named picks are machines sold on Amazon US, and their figures
+          are the ones their listings and makers stated when we checked them in November 2026.
+          We have not tested these machines; what follows is drawn from published specifications
+          and what they imply, not from our own measurements. Verify the motor rating, deck size and weight capacity for
           the exact unit before ordering.`,
   sections: [
     {
@@ -124,8 +125,8 @@ export default {
       heading: 'How We Chose',
       html: `          <p>
             We have not tested these machines, and nothing on this page should be read as if we
-            had. Because models at this price change so often, the picks are categories as much
-            as products, chosen on the specifications that decide whether a budget machine is
+            had. Because models at this price change so often, each pick stands for a category as
+            much as a product, chosen on the specifications that decide whether a budget machine is
             worth having: continuous-duty motor rating, deck size, assembled weight, weight
             capacity and warranty terms.
           </p>
@@ -148,7 +149,9 @@ export default {
       products: true,
       html: `          <p>
             Two of these are walking pads rather than treadmills, and they are here because at
-            this price they are frequently the better product. Each entry says who it is for.
+            this price they are frequently the better product. All six are specific machines sold on
+            Amazon US. A manufacturer-refurbished machine, a buying route rather than a model, is the
+            other option worth watching; the used-market section below covers it. Each entry says who it is for.
           </p>
           <p>
             One machine that is no longer an option deserves a mention, because it is still what
@@ -180,7 +183,9 @@ export default {
             covers that next tier.
           </p>
           <p>
-            The used market is the third option and often the best value of all at this budget. A
+            The used market is the third option and often the best value of all at this budget, and
+            manufacturer-refurbished or open-box machines sit between new and private-sale used: wear
+            parts typically replaced and a shorter warranty attached, but you buy whatever is in stock. A
             three-year-old mid-range machine frequently sells for $400 to $600 and is a
             substantially better product than anything new at the same money. Our
             <a href="/used-treadmill-buying-checklist/" class="text-[#0F62FE] font-medium">used treadmill checklist</a>
@@ -271,161 +276,163 @@ export default {
       heading: 'Final Recommendations',
       html: `          <p>
             If you want to walk — which is what most treadmills are used for at every price — buy
-            a walking pad. The <strong>flat-fold walking pad</strong> category gives you a better
-            belt, a quieter motor and a machine that genuinely disappears under a sofa, because
-            none of your money went into a frame you were not going to use.
+            a walking pad. The <strong>WalkingPad Z1</strong> puts the whole budget into a deck and
+            motor, folds in half to stand in a cupboard, and leaves change from $300, because none
+            of your money went into a frame you were not going to use.
           </p>
           <p>
             If you need handrails for support or incline for low-impact work, you need a folding
             treadmill and you accept a weaker machine for the same money. The
-            <strong>2-in-1 folding pad with a rail</strong> is the best compromise we found: a
-            short handrail and a low deck, at the cost of a very small running surface.
+            <strong>UREVO Strol 2E Pro</strong> is the best compromise we found: a fold-down handle
+            and a 12% manual incline on a pad that still folds away. If you need full rails and a
+            powered incline, the <strong>Goplus 3.75HP</strong> is the conventional folding treadmill
+            to look at.
           </p>
           <p>
-            And if you might jog, want real incline, or weigh more than about 220 lbs, save for
-            the $800 tier or buy used. That is not a sales pitch for a more expensive page — it is
+            And if you might jog, or weigh more than about 220 lbs and want a sturdier machine than
+            a walking-only frame, save for the $800 tier or buy used. (A heavier walker who only
+            walks can look at the <strong>WELLFIT</strong>, whose maker rates it to 400 lbs, but read
+            that figure as this page reads every capacity rating.) That is not a sales pitch for a more expensive page — it is
             the answer that leaves you with a machine you are still using next year.
           </p>`,
     },
   ],
   products: [
     {
-      id: 'walking-pad-flat',
-      name: 'Flat-Fold Walking Pad',
+      id: 'walkingpad-z1',
+      name: 'WalkingPad Z1',
       category: 'Best Overall Under $500',
       badge: 'Best Overall',
-      amazonUrl: 'https://www.amazon.com/s?k=walking+pad+treadmill+under+500&tag=sktiger-20',
-      priceRange: '$300-$450',
-      specs: '~4-6 in. tall · 40-45 in. deck · 2.0-2.5 CHP · up to 4 mph · no handrails',
+      priceRange: '$299 at WalkingPad (5 Nov 2026)',
+      specs: 'Folds to 31.8 x 22 x 5.4 in. · 51 lb · 47.6 x 15.7 in. walking area · 242 lb capacity · up to 6 km/h',
       pros: [
-        'The money goes into the belt and motor rather than a frame you would not use',
-        'Genuinely disappears — slides under a bed or sofa in seconds',
-        'Typically the quietest category here at walking speed, with no upright to rattle',
-        'One person can carry it upstairs, which no folding treadmill here manages',
+        'The budget goes into a deck and motor rather than a frame, console and rails',
+        'Folds in half to about 32 by 22 inches, small enough for a wardrobe floor or under most beds',
+        'A walking area nearly four feet long when open, long for a pad',
+        'WalkingPad and Tom’s Guide agree on its capacity, weight and folded size',
       ],
       cons: [
-        'No handrails at all — unsuitable if you want support while walking',
-        'No incline, and a top speed that rules out jogging entirely',
+        'No handrail and no incline: a walking machine and nothing more',
+        'Walking only: WalkingPad gives 4 mph and 6 km/h, which is about 3.7',
+        'A 242 lb limit, and Tom’s Guide measured 57.3 dB, well above the listing’s “below 45 dB”',
       ],
       bottomLine:
-        'The best product at this price for anyone who simply wants to walk. Buy this unless you specifically need rails or incline.',
+        'The best product here for anyone who simply wants to walk. Buy it unless you specifically need a rail or incline.',
       description:
-        'At $500 the structural argument is decisive: a walking pad spends your entire budget on the two components that matter — the belt and the motor — where a folding treadmill spends half of it on an upright, a console and handrails. The result is that pads in this bracket consistently have better belts, quieter motors and smoother speed control than folding machines at the same money. It also solves storage completely, sliding under furniture in seconds and weighing little enough for one person to carry upstairs. The limits are absolute rather than negotiable: no handrails, no incline, and a 4 mph ceiling. If those are acceptable — and for a walker they usually are — nothing else at this price competes.',
+        'The Z1 is the walking pad we would buy at this budget, and it makes the structural argument of this page concrete: none of the money goes into an upright, a console or handrails. WalkingPad’s US store listed it at $299, down from $329, on 5 November 2026, with a folded size of 31.8 by 22 by 5.4 inches, an unfolded size of 56.1 by 22 by 4.1 inches, a 47.6 by 15.7-inch walking area, a 242 lb maximum user weight, a 51 lb unit weight and a 2.25 HP brushless motor. Tom’s Guide’s hands-on review gives the same capacity, weight and folded size. Folding in half is what sets it apart from flat pads: open, it is as long as most walking pads, but closed it stands on end in a cupboard. The limits are the ones every pad shares. WalkingPad’s page gives the top speed as both 4 mph and 6 km/h, which is about 3.7 mph, and Tom’s Guide gives 3.7, so the card uses the metric figure; there is no rail and no incline. Tom’s Guide measured an average of 57.3 dB, so put a mat under it if anyone lives below. The warranty is one year.',
     },
     {
-      id: 'walking-pad-2in1',
-      name: '2-in-1 Walking Pad With Rail',
+      id: 'urevo-strol-2e-pro',
+      name: 'UREVO Strol 2E Pro',
       category: 'Best If You Want a Handrail',
       badge: 'Best Compromise',
-      amazonUrl: 'https://www.amazon.com/s?k=2+in+1+folding+treadmill+with+handrail&tag=sktiger-20',
-      priceRange: '$350-$500',
-      specs: '~40-48 in. deck · folding upright rail · 2.0-2.5 CHP · up to 4-6 mph',
+      priceRange: '$198–$220 (Amazon, 6 Nov 2026)',
+      specs: '44 lb (listing) · 0.6–4 mph walking mode · up to 6.2 mph running mode · 12% manual incline · tool-free fold',
       pros: [
-        'Folding rail gives light support without a full treadmill frame',
-        'Still stores flat when the rail is folded down',
-        'Usually a slightly higher top speed than a bare pad',
-        'Most versatile single machine at this price',
+        'A fold-down handle for light support, and the machine still folds without tools',
+        'A 12% manual incline, which makes a slow walk much harder without needing more speed',
+        'At 44 lb by its listing, easy to move',
+        'App with virtual routes and an auto-speed mode, if you like that sort of thing',
       ],
       cons: [
-        'The rail is short and less rigid than a real treadmill handrail',
-        'Deck is still too short for genuine jogging for most adults',
+        'A manual incline means stepping off to change it',
+        'The bullets give no belt size or weight limit on either listing we checked',
+        'The listing copy leans on marketing claims (“full sprints”) that a 6.2 mph pad cannot back up',
       ],
       bottomLine:
-        'The sensible middle option. Choose it if you want something to hold while walking and still need the machine to store flat.',
+        'The sensible middle option: something to hold, some incline, and still well under budget. Set the incline before you start and treat the running mode as a jog.',
       description:
-        'These are walking pads with a fold-down upright carrying a short handrail and a small console, and they resolve the main objection to the flat-pad category without giving up much. The rail is genuinely useful for light balance support and for the first few weeks of building confidence, and it folds flat so the machine still slides away. Top speeds run a little higher than bare pads, sometimes to 6 mph, though the deck length means that number is theoretical for most adults. Two honest caveats: the rail is short and noticeably less rigid than a proper treadmill handrail, so it is a steadying aid rather than something to lean on, and adding the upright means slightly less of your money went into the belt and motor. For a cautious walker who wants something to hold, this is the right buy at this price.',
+        'The Strol 2E Pro is a walking pad with a fold-down handle, which resolves the main objection to a bare pad without giving up much. Its Amazon listings describe a walking mode of 0.6 to 4 mph and a running mode of 0.4 to 6.2 mph, a 12% manual incline, a fold that needs no tools and glide wheels, and a weight of 44 lb, which the title and bullets both state. The handle is a steadying aid rather than a full treadmill handrail, and the incline is the more useful addition: a few percent at 3 mph raises the effort noticeably without lengthening your stride, which suits a short 2-in-1 belt better than more speed does. Because the incline is manual, you set it before you start rather than changing it mid-walk. What the listing does not give in its bullets is the belt size or a maximum user weight, so confirm both with UREVO if you are tall or heavy. Two listings were live on 6 November 2026, at $197.98 and $219.99, with matching descriptions; check that the one in your basket is the Pro with the incline, not the plain Strol 2E.',
     },
     {
-      id: 'budget-folding-treadmill',
-      name: 'Budget Folding Treadmill',
-      category: 'Best If You Need Incline',
+      id: 'goplus-375hp-incline',
+      name: 'Goplus 3.75HP Folding Treadmill with Incline',
+      category: 'Best If You Need Incline and Full Rails',
       badge: 'Has Incline',
-      amazonUrl: 'https://www.amazon.com/s?k=folding+treadmill+with+incline+under+500&tag=sktiger-20',
-      priceRange: '$400-$500',
-      specs: '~45-50 in. deck · 2.0-2.25 CHP · manual or 3-level incline · full handrails',
+      priceRange: 'About $430 (Amazon, 6 Nov 2026)',
+      specs: '52 x 17 in. belt · 1–15% automatic incline · 265 lb capacity · 12 preset and 3 custom programmes · folds',
       pros: [
-        'Full-length handrails and a proper console',
-        'Some incline, which is the best low-impact training tool available',
-        'Folds upright to a small floor footprint',
-        'Feels like a conventional treadmill to use',
+        'A conventional folding treadmill with an upright, console and handrails',
+        'A 1–15% automatic incline, the best low-impact training tool at this price',
+        'A 52 by 17-inch belt, longer than the pads on this page',
+        'A soft-drop fold and four transport wheels',
       ],
       cons: [
-        'Weakest belt and motor of anything here — the budget is spread across more parts',
-        'Light frame typically moves above a brisk walk',
+        'The listing does not state a top speed anywhere in its bullets',
+        'A 265 lb limit, and the 3.75 HP figure is not described as continuous',
+        'Heart rate is from grip sensors; the listing mentions no chest-strap receiver',
       ],
       bottomLine:
-        'The only way to get incline and full handrails at this price, and you pay for both in belt and motor quality.',
+        'The way to get powered incline and a full frame under $500. Confirm the top speed with Goplus before you buy, and read the horsepower as a peak figure.',
       description:
-        'This is the machine most people picture when they search for a cheap treadmill, and it is the one we would recommend least often — not because it is bad, but because the same money buys a better walking machine elsewhere. What it uniquely offers is incline and full-length handrails, and both are genuinely valuable: incline is the most effective way to make a walk harder without adding impact, and proper rails matter if balance is a consideration. The cost is that your $500 is now buying a frame, an upright, a console, rails and an incline mechanism as well as a belt and motor, and everything is thinner for it. A 2.0 to 2.25 CHP motor carrying all of that works close to its limit, and a frame this light typically moves above a brisk walk. Buy it if incline or handrails are requirements. If they are not, buy a pad.',
+        'The Goplus 3.75HP is the machine most people picture when they search for a cheap treadmill: an upright, a console, rails and a powered incline. Its Amazon listing describes a 52 by 17-inch belt with five layers, an automatic incline from 1 to 15%, 12 preset programmes and three user-defined ones, a 5-inch blue LCD, four built-in Bluetooth speakers, app connectivity, grip heart-rate sensors and a safety key. It states a 265 lb maximum user weight and a 3.75 HP motor, and it folds vertically with a soft-drop system and four wheels. The trade-off this page describes applies here too: the budget is buying a frame, a console and an incline motor as well as a belt and drive, and the listing does not say whether its 3.75 HP is a continuous rating, so treat it as a peak figure until Goplus says otherwise. The one important figure missing from the bullets is the top speed, so check it with Goplus or the product images before buying if you hope to jog. Buy it if incline or full rails are requirements; if they are not, a pad is the better walking machine. Amazon showed it at $429.99 on 6 November 2026.',
     },
     {
-      id: 'compact-manual-treadmill',
-      name: 'Manual (Non-Motorised) Treadmill',
+      id: 'sunny-manual-walking',
+      name: 'Sunny Health & Fitness Foldable Manual Walking Treadmill',
       category: 'Most Durable Under $500',
       badge: 'No Motor to Fail',
-      amazonUrl: 'https://www.amazon.com/s?k=manual+treadmill+curved&tag=sktiger-20',
-      priceRange: '$200-$450',
-      specs: 'No motor · belt driven by your stride · usually fixed incline · handrails',
+      priceRange: 'About $200 (Amazon, 6 Nov 2026)',
+      specs: '46.9 lb (Sunny) · 42 x 13 in. deck · 14% fixed incline · non-electric · dual flywheel · Bluetooth to SunnyFit app',
       pros: [
         'No motor or controller board, so the two expensive failure modes do not exist',
-        'Nothing to plug in — it can go anywhere',
-        'Harder work at the same speed, which some people want',
-        'Typically the longest-lasting machine at this price',
+        'Needs no power, so it works in any room and makes no motor noise',
+        'A fixed 14% incline gives a hard walking workout in a short time',
+        'At 46.9 lb by Sunny’s figure, easy to fold and roll away',
       ],
       cons: [
-        'Requires noticeably more effort and a different gait to a powered belt',
-        'Flat-belt models feel awkward; the good curved ones cost far more than $500',
+        'Walking on a manual belt feels like hard uphill work and does not suit long, steady sessions',
+        'A 13-inch-wide deck, narrow by any standard',
+        'The weight limit is 300 lb in the title but 330 lb in the bullets and on Sunny’s site, so we have not printed one',
       ],
       bottomLine:
-        'A genuinely durable option with a real learning curve. Worth considering if longevity matters more than comfort.',
+        'A durable, silent option with a real learning curve. Worth it if longevity and no plug matter more than comfort.',
       description:
-        'Manual treadmills are a legitimate answer to the durability problem at this price, and they are rarely mentioned. With no motor and no controller board, the two components that kill cheap treadmills simply are not present, and a manual machine will frequently outlast a powered one at twice the price. It needs no power outlet, so placement is unconstrained. The trade-offs are real. Driving the belt with your own stride is meaningfully harder work at the same speed, which some buyers want and others find off-putting, and the gait is not identical to walking on a powered belt so there is an adjustment period. Cheap flat-belt manual machines in particular feel awkward; the curved-deck designs that feel natural start well above this budget. Consider it if you value longevity over comfort.',
+        'Manual treadmills are a legitimate answer to the durability problem at this price: with no motor and no controller board, the two components that most often end a cheap treadmill’s life are simply absent. Sunny’s foldable manual walking treadmill is the one we would look at first. The Amazon listing describes a non-electric design driven by your steps, a 14% fixed incline, a dual flywheel for smoother movement, a 42 by 13-inch non-slip deck, an LCD monitor for time, speed, distance and calories, foam hand grips, a device holder, transport wheels and a fold for storage, plus Bluetooth to the SunnyFit app. Sunny’s own store lists a matching smart manual walking treadmill with a 46.9 lb product weight, the same 42 by 13-inch running surface and a 330 lb maximum user weight. The listing’s bullets also say 330 lb, but its title says 300 lb, so we have left the limit off the card; plan on the lower figure if you are close. The trade-off is the gait. The belt moves only when you push it, which is why these machines sit at a steep incline, and a session feels more like a hill walk than a stroll. Amazon showed it at $199.99 on 6 November 2026.',
     },
     {
-      id: 'used-mid-range',
-      name: 'Used Mid-Range Treadmill',
-      category: 'Best Value at This Budget',
-      badge: 'Best Value',
-      amazonUrl: 'https://www.amazon.com/s?k=treadmill+lubricant+maintenance+kit&tag=sktiger-20',
-      priceRange: '$300-$500 secondhand',
-      specs: 'Typically 3-6 years old · 2.5-3.0 CHP · 55-60 in. deck · full frame',
+      id: 'wellfit-heavy-duty',
+      name: 'WELLFIT Heavy Duty Auto Incline Foldable Treadmill',
+      category: 'Highest Stated Capacity Under $500',
+      badge: 'Best for Heavier Walkers',
+      priceRange: 'About $400 (Amazon, 6 Nov 2026)',
+      specs: '400 lb capacity (maker claim) · 18 x 43 in. belt · 0.6–8.8 mph · 0–15% auto incline · folds',
       pros: [
-        'A far better machine than anything new at this price',
-        'Real deck length and a frame heavy enough to be stable',
-        'Depreciation has already happened — resale losses are minimal',
-        'Older machines are frequently simpler and easier to repair',
+        'A 400 lb rating and a 15% powered incline for about $400',
+        'A stated warranty: three years on the frame and one on the motor and parts',
+        'Speed and incline buttons on the handlebars',
+        'Arrives 95% assembled, per the listing',
       ],
       cons: [
-        'No warranty, and you inherit whatever maintenance the last owner skipped',
-        'Collection is your problem, and these machines are heavy',
+        'An 18 by 43-inch belt is a walking belt; it is too short for running',
+        'One year on the motor is short for a machine sold on durability',
+        'The listing does not say whether its 4.0 HP figure is continuous',
       ],
       bottomLine:
-        'The best hardware per dollar at this budget by a wide margin, if you are willing to inspect properly and move it yourself.',
+        'The pick here for a heavier walker who wants incline on a tight budget; buy it for walking, and discount the capacity figure as this page advises.',
       description:
-        'A three-to-six-year-old mid-range treadmill frequently sells for $300 to $500, and it is a substantially better machine than anything new at that price: a 55 to 60-inch deck, a 2.5 to 3.0 CHP motor and a frame heavy enough to stay still. If you can inspect and collect, this is the strongest value on this page and it is not close. The risks are manageable but real. There is no warranty, and you are inheriting whatever maintenance the previous owner did or did not do — a machine that was never lubricated has a motor and controller board already partway through their life. Run the belt at several speeds, listen for bearing noise, check for belt drift and look for deck wear before paying. Our used treadmill checklist covers the fifteen checks worth making, and the Amazon link here is for a lubrication kit, which should be the first thing you buy afterwards.',
+        'Most machines at this price stop at 220 to 265 lbs, which is why this page tells heavier buyers to save or buy used. The WELLFIT is the exception worth knowing about. The Amazon listing gives a 400 lb maximum user weight, a 4.0 HP motor, a speed range of 0.6 to 8.8 mph, a 0–15% automatic incline, an 18 by 43-inch running belt, handlebar buttons for speed and incline, Bluetooth app connectivity, a fold-down frame with wheels, and a warranty of three years on the frame and one year on the motor and parts, with lifetime technical support. It arrives 95% assembled. Keep it in proportion: the belt is too short for running whatever the speed range says, the motor’s 4.0 HP is not described as continuous, and one year on the motor tells you how the maker sees its life. The 400 lb figure is the maker’s claim; we could not verify it independently. If you walk, want incline and need more headroom than a pad offers, it is the sensible buy here; if you want to jog, a used mid-range machine is still the better route. Amazon listed it at $399.99 on 6 November 2026.',
     },
     {
-      id: 'refurbished-treadmill',
-      name: 'Manufacturer-Refurbished Treadmill',
-      category: 'Best Compromise on Risk',
-      badge: 'Warranty Included',
-      amazonUrl: 'https://www.amazon.com/s?k=refurbished+treadmill&tag=sktiger-20',
-      priceRange: '$400-$500',
-      specs: 'Factory-checked · limited warranty · usually 1-3 years old · full-size frame',
+      id: "xterra-trx1200",
+      name: "XTERRA TRX1200",
+      category: "Best Compromise on Risk",
+      badge: "Lifetime Frame Warranty",
+      priceRange: "$549.99 at XTERRA on 5 Nov 2026",
+      specs: "16 x 50 in. deck · 2.25 HP · 0.5–10 mph · 10 power incline levels · 250 lb max user · 111 lb · Bluetooth FTMS",
       pros: [
-        'Most of the used-market value with an actual warranty attached',
-        'Wear parts are typically replaced before resale',
-        'Delivery is usually included rather than your problem',
-        'Full-size hardware at walking-pad money',
+        "A lifetime frame warranty from a maker with a US store, the recourse a cautious buyer wants",
+        "Ten levels of powered incline, changed while you walk",
+        "A 50-inch deck, longer than most machines at this price",
+        "XTERRA, Target and other retailers agree on its figures",
       ],
       cons: [
-        'Availability is unpredictable — you buy what exists, not what you chose',
-        'Warranties are shorter and more limited than on new machines',
+        "Just over this page’s budget at XTERRA’s price; watch for it under $500",
+        "One year on the motor and 90 days on the deck, parts and labour",
+        "A 250 lb limit, and still a walking-and-jogging deck rather than a running one",
       ],
-      bottomLine:
-        'The version of the used-market argument that comes with recourse. Worth watching for if you are not in a hurry.',
-      description:
-        'Manufacturer-refurbished and open-box machines sit between new and private-sale used, and for a cautious buyer at this budget they are often the best answer available. You get full-size hardware — real deck length, a proper frame, a motor with margin — at close to walking-pad prices, with wear parts typically replaced and, crucially, a warranty. Delivery is usually handled rather than being a problem you solve with a friend and a van. The catch is availability: you are buying whatever happens to be in stock, which means waiting and being flexible about the specific model. Warranty terms are also shorter and narrower than on new machines, so read them rather than assuming. If you are not in a hurry and can watch manufacturer outlet pages for a few weeks, this is a better route than any new machine at this price.',
+      bottomLine: "A new full-size folding treadmill with a lifetime frame warranty, for a buyer who wants recourse more than the lowest price.",
+      description: "This slot used to describe a buying route rather than a machine: a manufacturer-refurbished treadmill, which gives you full-size hardware with some warranty at close to walking-pad prices, if you can find one and are flexible about the model. That route is still worth watching, as this page's section on the used market explains, but it is not a product you can order on Amazon, so the card now shows the new machine closest to the same idea: full-size hardware from an established maker, with a warranty that means something. XTERRA lists a 2.25 HP motor, 0.5 to 10 mph, 10 levels of electronic incline, a 16 by 50-inch belt, a 250 lb maximum user and a 111 lb machine weight, and Target and other retailers agree on those figures. The console has 12 preset programmes and Bluetooth FTMS for apps. XTERRA's warranty is lifetime on the frame, one year on the motor and 90 days on the deck, parts and in-home labour, so read it as frame protection rather than full cover. XTERRA listed it at $549.99, and Academy at $599.99, on 5 November 2026; it is sold on Amazon too, where prices move often, and at or under $500 it is a sound buy. Figures are those checked for our XTERRA guide.",
     },
   ],
   faqs: [

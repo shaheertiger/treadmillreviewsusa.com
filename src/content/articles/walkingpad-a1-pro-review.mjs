@@ -61,29 +61,25 @@ export default {
           through an Amazon link on this page; it does not change what we say about the machine.`,
   products: [
     {
-      id: 'walkingpad-a1-pro',
-      name: 'WalkingPad A1 Pro',
-      category: 'Fold-in-Half Under-Desk Walking Pad',
-      badge: 'The Model Reviewed',
-      amazonUrl: 'https://www.amazon.com/s?k=WalkingPad+A1+Pro+Treadmill&tag=sktiger-20',
-      priceRange: '$499 at WalkingPad (5 Nov 2026)',
-      specs: '47 x 16.5 in. walking area · 0.5-3.75 mph · 230 lb or 300 lb versions · about 63 lb · folds to 32.5 x 21.5 x 5 in.',
+      id: "walkingpad-z1r",
+      name: "WalkingPad Z1R",
+      category: "Closest on Amazon: a Fold-in-Half WalkingPad With a Handle",
+      badge: "Closest on Amazon",
+      priceRange: "About $359 (Amazon, 6 Nov 2026)",
+      specs: "57.7 lb net (WalkingPad) · 47.6 x 15.7 in. walking area · 1–5 mph · 242 lb capacity · removable handle · folds in half",
       pros: [
-        'Folds in half to about 32.5 inches long, so it stores under a bed or sofa as well as a desk',
-        'Arrives fully assembled; there is nothing to build',
-        'A longer walking area than most budget pads at 47 inches',
-        'Remote, app and foot-position (FootSense) speed control',
+        "The longest walking area here, 47.6 inches, at under 60 lb",
+        "Folds 180 degrees, so it stores in half the length of a flat pad",
+        "A removable handle for steadier walking, and a 5 mph top speed for a brisk walk or light jog",
+        "Capacity and speed agree between the Amazon listing and WalkingPad’s site",
       ],
       cons: [
-        'Walking only: the top speed is about 3.75 mph and there is no incline',
-        'WalkingPad, Best Buy and Amazon give three different motor ratings',
-        'Sold in 230 lb and 300 lb versions under the same name, so check which one you are buying',
-        'One-year warranty, and the fold hinge can be felt underfoot according to one long-term review',
+        "WalkingPad’s own pages give two different motor ratings, so we have not printed one",
+        "A 242 lb limit leaves little margin for heavier walkers",
+        "No incline",
       ],
-      bottomLine:
-        'A sound choice if storage is the problem you are solving and you want the fold-in-half design, bought at WalkingPad’s $499 price rather than its $699 reference. If you do not need it to fold, the cheaper Z1 or C2 does the same walking job.',
-      description:
-        'The A1 Pro is KingSmith’s fold-in-half walking pad. WalkingPad lists a 47 by 16.5-inch walking area, a speed range of 0.5 to 3.75 mph (6 km/h), a 56.5 by 21.5 by 5-inch footprint that folds to 32.5 by 21.5 by 5 inches, a net weight of 63 lb and a one-year warranty, and an independent long-term review and a spec tracker give the same figures within rounding. Speed is set by remote, by the free KS Fit app, or by FootSense, which speeds up or slows down as you move forward or back on the belt. It is sold in 230 lb and 300 lb versions; on 5 November 2026 WalkingPad’s main A1 Pro listing offered only the 300 lb version, at $499 against a $699 reference price. The motor rating is disputed between sellers, so we do not quote one.',
+      bottomLine: "The fold-in-half WalkingPad to buy on Amazon if you want what the A1 Pro does, with a removable handle and a slightly higher top speed.",
+      description: "The A1 Pro is sold through WalkingPad's own store rather than on Amazon US, and Amazon's WalkingPad listings pool several models, so this card shows the closest fold-in-half WalkingPad that Amazon sells under its own name; its figures are those checked for our lightweight treadmill guide. The Z1R is WalkingPad's Z1 with a handle, and, like the A1 Pro, it folds in half for storage. WalkingPad's product page gives a net weight of 57.7 lb, a 47.6 by 15.7-inch walking area and a 242 lb maximum user weight, and the Amazon listing gives the same capacity, a speed range of 1 to 5 mph from a brushless motor, an eight-layer belt, a deck described as about 1.69 inches thick, a 180-degree fold and a handle bar that installs or comes off in seconds. A belt of nearly 48 inches is long for a pad, enough for a natural walking stride for most people and an easy jog at the top of the speed range; the handle helps with balance when you step on or speed up. Folded in half, it is short enough to carry more comfortably than a flat pad and to slide under a bed. The figure we have not printed is the motor: WalkingPad's specification table lists 0.75 HP while its marketing copy says 1.5 HP. There is no incline. Amazon showed it at $359.00 on 6 November 2026.",
     },
     {
       id: 'walkingpad-z1',
@@ -144,6 +140,10 @@ export default {
             have checked which weight version you are getting.</strong> It walks, it does not run, and it
             has no incline. What it does well is disappear: folded, it is about 32.5 inches long and
             5 inches tall.
+          </p>
+          <p>
+            The A1 Pro is sold through WalkingPad's own store rather than on Amazon US, so the card
+            below shows the closest fold-in-half WalkingPad that Amazon does sell, the Z1R.
           </p>
           <p>
             Two things have changed since most A1 Pro reviews were written. First, it is now sold in a

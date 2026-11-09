@@ -20,8 +20,9 @@ export default {
   tags: ['best treadmill on amazon', 'amazon treadmill', 'treadmills on amazon', 'best amazon treadmill', 'horizon t101 amazon', 'nordictrack t series 5', 'urevo walking pad'],
   stickyCta: { text: 'See Our Top Picks', link: '#picks' },
   note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          machines. Each one was confirmed on 13 October 2026 as currently listed on Amazon, and
-          its specifications were checked on that date against the manufacturer's own product page
+          machines. Each one was confirmed on 13 October 2026 as currently listed on Amazon (UREVO's
+          CyberPad on 6 November 2026, its figures being those checked for our auto-incline
+          treadmill guide), and its specifications were checked on that date against the manufacturer's own product page
           or published product data (Horizon Fitness, NordicTrack, UREVO and Sunny Health &amp;
           Fitness), the Amazon listing itself, and independent coverage — specialist review sites
           and a long-running walking pad tracker that reads owner's manuals. A figure appears in a
@@ -47,7 +48,7 @@ export default {
       html: `          <p>
             Six machines, chosen so that each common Amazon search has a straight answer. The short
             version: the Horizon T101 Connect for most people who want a real folding treadmill,
-            the Horizon 7.0 AT if you intend to run, and the <a href="/urevo-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>UREVO</a> SpaceWalk 3S if what you really
+            the Horizon 7.0 AT if you intend to run, and the <a href="/urevo-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>UREVO</a> CyberPad if what you really
             want is a walking pad for a desk. Before trusting a star rating, read our guide on
             <a href="/how-to-read-treadmill-reviews/" class="text-[#0F62FE] font-medium">how to read treadmill reviews</a>.
           </p>
@@ -63,7 +64,7 @@ export default {
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon T101 Connect</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most people</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">20 x 55 in. deck, 10% incline, lifetime frame and motor cover, shipped by Amazon</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon 7.0 AT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Running</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">60-inch deck, 12 mph, 15% incline, 325 lb rating</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack T Series 5</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A full treadmill for the least money</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">10 mph and 10% powered incline, often under $500</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UREVO SpaceWalk 3S</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walking at a desk</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Powered 0–9% incline on a 42.5-inch belt, about $250</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UREVO CyberPad for Office</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walking at a desk</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Powered 0–14% incline on a 39.4-inch belt, about $430</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UREVO Strol 2E</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Under $250 with a handlebar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">2-in-1 pad that reaches 6.2 mph with the bar raised</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sunny SF-T1407SMART</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No outlet, smallest budget</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Motorless walker at a fixed 14% slope, about $200</td></tr>
             </tbody>
@@ -391,28 +392,27 @@ export default {
         'The T Series 5 is NordicTrack’s entry machine. We found it on NordicTrack’s Canadian store and at US retailers, but not as a product page on NordicTrack’s US site, which makes Amazon one of the natural places to buy it. NordicTrack’s product data lists a 0 to 10 mph speed range, 0 to 10% powered incline, a 55-inch belt and a 300 lb maximum user weight, with a 5-inch LCD and a shelf for your own device; independent coverage agrees. The warranty is ten years on the frame and one year on the motor, parts and labour. It works in manual mode without iFIT, and a one-month trial is included if you want the classes. The listing we checked showed “Ships from Amazon.com”, with offers from about $590, and a price tracker recorded it as low as $418.99 earlier in 2026, so it is worth waiting for a sale. Two cautions. Retailers list the belt as 18 inches wide, which reviewers find narrow for faster running. And listings disagree on whether it folds, so check before you plan to store it upright.',
     },
     {
-      id: 'urevo-spacewalk-3s',
-      name: 'UREVO SpaceWalk 3S',
+      id: 'urevo-cyberpad',
+      name: 'UREVO CyberPad for Office',
       category: 'Best Walking Pad on Amazon',
       badge: 'Best Walking Pad',
-      amazonUrl: 'https://www.amazon.com/s?k=UREVO+SpaceWalk+3S+Walking+Pad&tag=sktiger-20',
-      priceRange: '$250–$350',
-      specs: '0–9% powered incline · 0.6–4.0 mph · 42.5 in. belt length · 265 lb capacity · 6.5 in. tall',
+      priceRange: 'About $432 (Amazon, 6 Nov 2026)',
+      specs: '0–14% powered incline · 39.4 x 16.5 in. running area · 0.6–4.0 mph · about 63 lb · brushless motor',
       pros: [
-        'Powered incline from 0 to 9% in nine levels, which most pads at this price do not have',
-        'A 42.5-inch belt, long for a walking pad and comfortable at a desk',
-        '6.5 inches tall, so it suits most standing desks and slides under a sofa',
-        'Sold by UREVO through its own Amazon store and its own website, with app-based warranty registration',
+        'A 14% powered incline on a pad that slides under a desk',
+        'Incline makes a speed-capped pad harder as you get fitter',
+        'A brushless motor, per UREVO',
+        'Speed lights and an app that logs your walks',
       ],
       cons: [
-        'Tops out at 4 mph: a walking machine only',
-        'UREVO advertises 2.5 HP, but independent coverage reading the manual reports a much lower continuous rating',
-        'The extra 180 days of warranty depend on registering the pad in UREVO’s app',
+        'UREVO, the US Amazon listing and the EU manual give three different weight ratings, so none is on the card',
+        'A 39.4-inch belt and 4 mph top speed suit slow and moderate walking only',
+        'The incline raises the deck, so check your standing desk’s range',
       ],
       bottomLine:
-        'The walking pad to buy on Amazon if you want to walk at a desk and make it harder with incline. Not for jogging.',
+        'The walking pad to buy on Amazon if you want to walk at a desk and make it harder with incline. Check the weight rating on the listing first, and do not plan to jog on it.',
       description:
-        'Most people searching Amazon for a treadmill to use at a desk are really looking for a walking pad, and the SpaceWalk 3S is the one we would choose. UREVO lists a powered 0 to 9% incline across nine levels, a 0.6 to 4.0 mph speed range, a 42.5 by 16.5-inch running area, a 265 lb capacity and a height of 6.5 inches, and independent spec coverage agrees. The longer-than-usual belt is what makes it pleasant to walk on while typing, and the incline is what keeps a 4 mph ceiling from becoming boring. UREVO’s own store had it at $249.99 against a $349.99 list price when we checked. As with nearly every pad, the motor figure is marketing: UREVO quotes a 2.5 HP maximum, while a tracker that reads the manual derives well under 1 HP continuous. That is adequate for walking, which is all this is for. Our guide to the best walking pads with incline compares it with the alternatives.',
+        'Most people searching Amazon for a treadmill to use at a desk are really looking for a walking pad, and UREVO\'s CyberPad is the one we would choose. UREVO lists a 0–14% powered incline in 14 levels, a 39.4 by 16.5-inch running area, 0.6 to 4.0 mph, a 63.1 lb unit weight and a 6.3-inch height, and an independent review and spec tracker gave the same speed, incline and weight when an earlier guide on this site checked them. The Amazon listing adds a 2.5 HP brushless motor and an app that logs your walks. Incline matters more on a pad than on a treadmill, because the speed stops at about 4 mph; raising the grade is the only way to make the walk harder. The one figure we could not settle is capacity: UREVO\'s page and an independent review give 400 lb, the US Amazon listing gave 242 lb and the EU manual 300 lb, so check the figure on the exact listing you buy from. UREVO also advertises a 35 dB noise level from its own testing; we found no independent measurement. Amazon listed it at $431.99 on 6 November 2026.',
     },
     {
       id: 'urevo-strol-2e',
@@ -542,7 +542,7 @@ export default {
             treadmill to buy on Amazon: a 55-inch deck, 10% incline and lifetime frame and motor
             cover, sold and shipped by Amazon. If you will run, step up to the
             <strong class="text-white">Horizon 7.0 AT</strong>; if you want to walk at a desk, the
-            <strong class="text-white">UREVO SpaceWalk 3S</strong> is the better buy.`,
+            <strong class="text-white">UREVO CyberPad</strong> is the better buy.`,
     `Whichever you choose, the listing matters as much as the machine. Check who is selling it,
             compare the specification with the brand's own page, and know how delivery and returns
             work before you order. Our guide to

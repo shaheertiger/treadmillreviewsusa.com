@@ -125,7 +125,9 @@ export default {
       html: `          <p>
             Ranked on the four constraints together. Fold types and frame weights come from the
             manufacturers' specifications; check folded dimensions against the maker's current
-            figures for the exact unit before you order.
+            figures for the exact unit before you order. Every pick is sold on Amazon; the
+            figures on the NordicTrack, ProForm and Horizon cards are those checked for our iFIT
+            and auto-incline treadmill guides on 6 November 2026.
           </p>`,
     },
     {
@@ -245,9 +247,10 @@ export default {
             it is the one to buy.
           </p>
           <p>
-            If the stairwell is the binding constraint, the <strong>ProForm Power 995i</strong>
-            is the lightest real treadmill here and the only one on this list a determined pair
-            can carry up two flights. If your use is walking rather than running, stop reading
+            If the stairwell is the binding constraint, ask for the crate weight and length of
+            any machine before you order; none of the folding treadmills here is light, and the
+            <strong>NordicTrack T Series 5</strong> and <strong>Horizon T101 Connect</strong>,
+            with their shorter 55-inch decks, are the smallest. If your use is walking rather than running, stop reading
             about treadmills and buy a walking pad — the
             <a href="/under-desk-treadmills/" class="text-[#0F62FE] font-medium">under-desk guide</a>
             covers those, and for an apartment they are a genuinely better answer.
@@ -284,50 +287,48 @@ export default {
         'The F63 wins here for the reason that catches most apartment buyers out: it is one of the heavier folding machines and that is precisely why it is quieter where it counts. Beside the deck it is unlikely to be the quietest. In the room below, mass is what counts, because frame mass and deck isolation absorb footfall energy rather than passing it into the slab. The hydraulic fold is the other reason it tops this list — one person, no wrestling — which is what determines whether a machine actually gets put away in a small flat. The reservation is delivery: at roughly 250 lbs crated it needs a route that can take it, and a third-floor walk-up with a tight turn will not. Check the stairwell before you check anything else.',
     },
     {
-      id: 'proform-power-995i',
-      name: 'ProForm Power 995i',
-      category: 'Best for Difficult Delivery',
-      badge: 'Easiest to Move',
-      reviewUrl: '/proform-power-995i-treadmill/',
-      priceRange: '$799-$999',
-      specs: 'Assisted fold · lightest full treadmill here',
+      id: "horizon-t101-connect",
+      name: "Horizon T101 Connect",
+      category: "Best Simple Fold With a Long Warranty",
+      badge: "Longest Warranty",
+      reviewUrl: "/horizon-t101-treadmill/",
+      priceRange: "About $740 (Amazon, 6 Nov 2026)",
+      specs: "20 x 55 in. deck · 0–10% power incline · 0.5–10 mph · 300 lb capacity · folds · lifetime frame & motor warranty",
       pros: [
-        'Lightest genuine treadmill on this list — two people can manage stairs',
-        'Compact folded footprint for a small room',
-        'Assisted fold is quick and needs no real strength',
-        'Inexpensive enough to treat as a two-year machine if you move often',
+        "A powered 10% incline with dial controls and one-touch incline keys",
+        "Lifetime frame and motor warranty, per the listing",
+        "Works with apps including Zwift and Peloton, per the listing",
+        "Folds, and Horizon says it assembles in about 30 minutes",
       ],
       cons: [
-        'Light frame typically transmits more footfall energy to the floor below',
-        'Deck is short and a frame this light is likely to move at jogging pace',
+        "A 55-inch deck is short for running at speed",
+        "10 mph top speed",
+        "We have no weight figure for it, so check the crate weight against your stairwell",
       ],
-      bottomLine:
-        'The answer when the stairwell rules everything else out — but budget for a thick mat, because a light frame is typically loud downstairs.',
-      description:
-        'This is the machine for the third-floor walk-up. It is the lightest real treadmill here by a clear margin, it folds compactly and quickly, and two reasonably capable people can get it up two flights without a professional delivery. That is a genuinely valuable property and nothing else on this page has it. The cost is acoustic: a light frame is exactly what passes impact into the floor, so of the machines here it is the one most likely to be heard downstairs. A 3/4-inch rubber mat is the obvious counter, which is a strong argument for treating the mat as part of the purchase price rather than an accessory. The deck is also short, and a frame this light is likely to move perceptibly at jogging speed. As a walking and light-jogging machine in a flat you could not otherwise get a treadmill into, it earns its place.',
+      bottomLine: "A simple folding walker-jogger with a powered incline and a frame and motor warranty that outlasts any lease. Budget for a thick mat.",
+      description: "The T101 Connect is Horizon's entry treadmill, and for an apartment its appeal is simplicity: no subscription to run it, a folding frame and a warranty you will not outgrow. The Amazon listing gives a 0–10% power incline and 0.5 to 10 mph, changed with Horizon's EasyDial controls or one-touch keys, a 20 by 55-inch running area with three-zone cushioning, a lifetime frame and motor warranty, a folding frame, and compatibility with apps including JRNY, Peloton and Zwift, which need their own subscriptions; Horizon's specification adds a 300 lb maximum user weight. The powered incline matters on a shared floor, because incline walking gives you a hard workout at walking impact. The limits are in the numbers: a 55-inch deck and 10 mph top speed suit walking and jogging rather than running, and we do not have a weight figure we could check, so ask for the crate weight before you plan the stairs. As with any mid-weight folding frame, a 3/4-inch rubber mat should be part of the purchase. Amazon listed it at $739.99 on 6 November 2026.",
     },
     {
-      id: 'nordictrack-c-700',
-      name: 'NordicTrack C 700',
-      category: 'Best Budget Fold',
-      badge: 'Best Budget',
-      reviewUrl: '/nordictrack-c-700-treadmill/',
-      priceRange: '$599-$799',
-      specs: 'Assisted fold · low step-up · basic console',
+      id: "nordictrack-t-series-5",
+      name: "NordicTrack T Series 5",
+      category: "Best Budget Fold",
+      badge: "Best Budget",
+      reviewUrl: "/nordictrack-t-series-treadmill/",
+      priceRange: "About $600 (Amazon, 6 Nov 2026)",
+      specs: "55 in. belt length · 0–10 mph · 0–10% incline · 300 lb capacity · LCD; iFIT runs on your own device",
       pros: [
-        'Least expensive machine here by a wide margin',
-        'Assisted fold is manageable alone',
-        'Low step-up height suits a cramped room where you approach from the side',
-        'Simple console with no menus and no subscription pressure to run',
+        "The least expensive machine here by a wide margin",
+        "A 0–10% incline is enough for steady incline walking, the shared-floor workout",
+        "iFIT can run from your own phone or tablet on the cheaper Train membership",
+        "KeyFlex cushioning, per the listing",
       ],
       cons: [
-        '55-inch deck is short for anyone much over 5\'8"',
-        'Mid-weight frame, so neither the quietest downstairs nor steady at pace',
+        "A 55-inch belt and 10 mph top speed suit walking and jogging more than running",
+        "No touchscreen; you need a tablet you are happy to keep on the console",
+        "Lower 300 lb rating and a smaller motor than the machines above it",
       ],
-      bottomLine:
-        'The right pick on a tight budget for a walker in a small flat. Not the machine for a runner or a shared floor.',
-      description:
-        'The C 700 is the cheapest sensible route into this category and it does the apartment basics adequately rather than well. The fold is manageable alone, the folded footprint is reasonable, and the low step-up is genuinely useful in a cramped room where you often step on from the side rather than the back. By frame weight it sits mid-table for downstairs noise — heavier than the light ProForm, well short of the Sole — and a frame of this weight is likely to move at jogging pace in a way that discourages running on it. The 55-inch deck confirms that: this is a walking and light-jogging machine and it is priced accordingly. If your budget is the binding constraint and your use is walking, it is a reasonable buy that will not embarrass itself. If you intend to run, or you share a floor with someone sensitive to noise, spend more.',
+      bottomLine: "The right pick on a tight budget for a walker in a small flat. Not the machine for a runner or a shared floor you plan to pound.",
+      description: "The T Series 5 is NordicTrack's entry treadmill and the cheapest sensible route into this category. The Amazon listing describes an LCD for your live stats and a place for your own device, a 0–10 mph speed range, a 0–10% incline and KeyFlex cushioning, and it is explicit that iFIT runs from your phone or tablet with a Train membership: you follow the trainer in the app and the treadmill changes its speed and incline to match. NordicTrack's specification gives a 55-inch belt length and a 300 lb maximum user weight. For an apartment that makes it an incline walker more than a running machine, which is the right way round on a shared floor: incline walking keeps the energy going into the floor low. A 55-inch belt is short for a full running stride and the top speed stops at 10 mph, so if you intend to run, or you share a floor with someone sensitive to noise, spend more. Amazon listed it at $599.99 on 6 November 2026.",
     },
     {
       id: 'sole-f65',
@@ -353,50 +354,46 @@ export default {
         'If you want to run rather than walk and you live above someone, this is the machine. Of the machines here it should be the best for the room below, and the mechanism is simply mass: the heaviest frame here absorbs the most footfall energy internally. It also carries a full 60-inch deck, which is the specification that makes running comfortable rather than cramped, and it folds hydraulically as easily as the F63 does. The two objections are price and weight. It costs several hundred more than the F63 for advantages a walker will not perceive, and its weight — the source of its acoustic advantage — is the same weight that will defeat a narrow stairwell. Confirm the delivery route and consider paying for room-of-choice delivery. Within those constraints it is the strongest machine on this page.',
     },
     {
-      id: 'proform-power-1295i',
-      name: 'ProForm Power 1295i',
-      category: 'Best Console for the Money',
-      badge: 'Best Screen',
-      reviewUrl: '/proform-power-1295i-treadmill/',
-      priceRange: '$999-$1,299',
-      specs: 'Assisted fold · larger screen · incline to 12% · mid-weight frame',
+      id: "proform-pro-2000",
+      name: "ProForm Pro 2000",
+      category: "Best Console for the Money",
+      badge: "Best Screen",
+      reviewUrl: "/proform-pro-2000-treadmill/",
+      priceRange: "About $1,253 (Amazon, 6 Nov 2026)",
+      specs: "20 x 60 in. belt · -3% to 12% incline · 0–12 mph · 300 lb capacity · 10 in. touchscreen · folds",
       pros: [
-        'Largest screen here well below the NordicTrack price',
-        'Incline to 12% supports low-impact incline walking, ideal for shared floors',
-        'Folds assisted and stores reasonably compactly',
-        'Mid-weight frame is a sensible compromise between delivery and noise',
+        "A 10-inch touchscreen and a -3% decline for well under the price of the bigger NordicTracks",
+        "Incline to 12% supports low-impact incline walking, ideal for shared floors",
+        "The listing states a ten-year frame, two-year parts and one-year labour warranty",
+        "Folding SpaceSaver frame and Rebound Pro cushioning",
       ],
       cons: [
-        'Console is oriented toward a subscription you will be prompted to buy',
-        'Mid-weight frame means average downstairs noise — the mat does real work here',
+        "The console is built around an iFIT membership; confirm which trial is included today",
+        "Two-year parts cover is short next to the Sole and Horizon machines",
       ],
-      bottomLine:
-        'The compromise pick: enough weight to be acceptable downstairs, light enough to deliver, with the best screen at the price.',
-      description:
-        'The 1295i sits deliberately in the middle of every axis on this page, which in an apartment is often the right place to be. It is heavy enough that downstairs noise should be acceptable with a mat, light enough that delivery is not the ordeal the Sole F65 can be, and it folds without a struggle. The screen is the largest here outside the NordicTrack and costs considerably less. Incline to 12% is the specification we would point to for apartment use specifically: incline walking gives you most of running\'s cardiovascular benefit at close to walking\'s impact, which is exactly the trade a shared floor calls for. The reservation is the same as every iFit-ecosystem machine — the console is built to sell you a subscription and will keep reminding you. The hardware underneath is sound.',
+      bottomLine: "The compromise pick: a full running deck, a touchscreen and incline walking at a mid-range price, with a fold for when you need the floor back.",
+      description: "The Pro 2000 sits in the middle of every axis on this page, which in an apartment is often the right place to be. The Amazon listing gives a 10-inch HD touchscreen, a -3% to 12% incline range, a 0–12 mph speed range, a 20 by 60-inch belt, a folding SpaceSaver frame, Rebound Pro deck cushioning and a 300 lb user capacity, with dimensions of 59.6 by 35.3 by 77.3 inches, and it states the warranty plainly: ten years on the frame, two years on parts and one year on labour. Incline to 12% is the specification we would point to for apartment use specifically: incline walking gives you most of running's cardiovascular benefit at close to walking's impact, which is exactly the trade a shared floor calls for. The reservation is the same as every iFIT machine: the console is built to sell you a membership, and the listing's wording about the bundled trial reflects an earlier iFIT naming scheme, so check what comes with the order. Measure the route as well; the listing's 77.3-inch length is the crate you will be carrying. Amazon listed it at $1,253.37 on 6 November 2026.",
     },
     {
-      id: 'nordictrack-c-990',
-      name: 'NordicTrack C 990',
-      category: 'Best Guided Content',
-      badge: 'Best Classes',
-      reviewUrl: '/nordictrack-c-990-treadmill/',
-      priceRange: '$999-$1,299',
-      specs: 'Assisted fold · iFit-ready · 60 in. deck · mid-weight frame',
+      id: "nordictrack-t-series-10",
+      name: "NordicTrack T Series 10",
+      category: "Best Guided Content",
+      badge: "Best Classes",
+      reviewUrl: "/nordictrack-t-series-treadmill/",
+      priceRange: "About $999 (Amazon, 6 Nov 2026)",
+      specs: "20 x 60 in. deck · 0–12% incline · 0–12 mph · 325 lb capacity · 10 in. tilting touchscreen · folds",
       pros: [
-        'Full 60-inch deck at a mid-range price',
-        'Guided incline-walking content is well suited to apartment training',
-        'Folds assisted and stands reasonably upright',
-        'Heavier frame than the light ProForm, which helps downstairs',
+        "iFIT workouts change the incline and speed for you as the trainer goes",
+        "A full 60-inch deck and 12 mph at a mid-range price",
+        "Guided incline-walking content is well suited to apartment training",
+        "Folds with an assisted lowering foot bar",
       ],
       cons: [
-        'Close to unusable as intended without an iFit subscription',
-        'Assisted fold is likely to need more effort than the Sole machines\' hydraulic one',
+        "The automatic features need an iFIT membership; Pro is $39 a month",
+        "Incline stops at 12%, and there is no decline",
       ],
-      bottomLine:
-        'Worth it only if you will actually use the guided content — the subscription is doing most of the work at this price.',
-      description:
-        'The C 990 is a reasonable apartment machine wrapped around a subscription proposition, and how you feel about that determines whether it belongs on your shortlist. The hardware is fine: a full 60-inch deck at a mid-range price, a mid-weight frame that should do better downstairs than the light ProForm, and an assisted fold that works even if it is likely to be more effortful than the Sole machines\' hydraulic assist. The guided incline-walking content is genuinely well matched to apartment use, where incline walking is the training approach that keeps you on good terms with your neighbours. But without the subscription the console is largely inert, and you are then paying mid-range money for a machine the F63 beats on every apartment-relevant measure. Buy it if you want the classes; otherwise buy the Sole.',
+      bottomLine: "Worth it only if you will actually use the guided content; the membership is doing most of the work at this price.",
+      description: "The T Series 10 is a reasonable apartment machine wrapped around a subscription proposition, and how you feel about that determines whether it belongs on your shortlist. The Amazon listing gives a 0–12% incline and 0–12 mph, a 10-inch tilting touchscreen, SelectFlex cushioning that adjusts from soft to firm and a folding frame with an assisted lowering foot bar; NordicTrack's specification adds a 20 by 60-inch deck and a 325 lb maximum user weight. With an iFIT membership, the trainer's terrain is sent to the treadmill, so a filmed hike raises and lowers the deck without you touching the console, and guided incline walking is the training approach that keeps you on good terms with your neighbours. Without the membership you set the incline yourself like any other treadmill, and you are then paying mid-range money for a machine the F63 beats on the apartment-relevant measures. The listing names the Pro membership, which iFIT listed at $39 a month in November 2026. Buy it if you want the classes; otherwise buy the Sole. Amazon listed it at $999 on 6 November 2026.",
     },
   ],
   faqs: [
@@ -470,8 +467,9 @@ export default {
   bottomLine: [
     `Check the stairwell first, buy the mat second, and choose the heavier machine if you share
             a floor. The <strong class="text-white">Sole F63</strong> is the best all-round
-            apartment treadmill; the <strong class="text-white">ProForm Power 995i</strong> is
-            the answer when the delivery route rules everything else out.`,
+            apartment treadmill; the <strong class="text-white">NordicTrack T Series 5</strong> is
+            the budget answer for a walker, and a walking pad is the answer when the delivery
+            route rules everything else out.`,
     `Walking rather than running? A
             <a href="/under-desk-treadmills/" class="text-[#5AA9FF] font-bold no-underline">walking pad</a>
             solves the apartment problem almost completely. Worried specifically about noise? The

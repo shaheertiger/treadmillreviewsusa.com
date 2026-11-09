@@ -40,7 +40,11 @@ export default {
           Commission's recall database. Scheels refused our request and Dick's Sporting Goods was seen only in
           search results. Figures on the product cards are those on which at least two dealers or a dealer and
           an independent review agree; conflicts are set out in the text and kept off the cards. Prices change
-          often. We have not tested any Tru Grit treadmill and have no relationship with the company. As an
+          often. On 9 November 2026 we replaced the Grit Runner Elite, AssaultRunner Pro and TrueForm Trainer cards,
+          which are not sold on Amazon US, with Amazon-listed curved treadmills; the Sunny SF-X7110's figures were
+          checked against its Amazon listing, Sunny's store, Dick's Sporting Goods and Nebraska Furniture Mart, and
+          the SB Fitness figures are those checked for our curved treadmill guides. We have not tested any Tru Grit
+          treadmill and have no relationship with the company. As an
           Amazon Associate we earn from qualifying purchases; that does not change what we say.`,
   lead: `Tru Grit treadmills come up whenever someone shops for a curved treadmill under $2,500, because the Grit
           Runner is one of very few at that price with heavy resistance settings for sled-push work. Tru Grit
@@ -75,28 +79,28 @@ export default {
         'The Grit Runner is Tru Grit’s standard curved manual treadmill. Every US dealer listing we read agrees on six resistance levels, labelled 1 and 2 for running, 3 and 4 for walking and 5 and 6 for sled push; a 330 lb maximum user; a steel and aluminium frame; a battery-powered LCD showing time, distance, pace, speed, calories and intervals (some add watts and tempo); and a warranty of lifetime on the frame and two years each on the resistance belt, tread and monitor. Garage Gym Reviews, in search results, gives a 17 by 60-inch running surface, but no dealer we read lists one, and our curved treadmill roundup found the size and weight varying between sources, so neither is on this card. On 5 November 2026 Push Pedal Pull had it at $1,996 (from $2,495), Select Fitness at $2,359, iSellFitness and The Fitness Outlet at $2,495 and American Fitness at $2,699, all shown in stock. Total Fitness USA listed it at $3,299, so shop around.',
     },
     {
-      id: 'grit-runner-elite',
-      name: 'Tru Grit Grit Runner Elite',
-      category: 'Upgraded Curved Manual Treadmill, Magnetic Resistance',
-      badge: 'Connected Upgrade',
-      priceRange: '$3,495 at US dealers on 5 Nov 2026',
-      amazonUrl: 'https://www.amazon.com/s?k=Tru+Grit+Runner+Elite+Curved+Treadmill&tag=sktiger-20',
-      specs: 'Curved manual deck · 4 magnetic resistance levels · dual-belt transmission · Bluetooth and ANT+ console',
+      id: "sunny-smart-curved-sf-x7110",
+      name: "Sunny Health & Fitness Smart Curved Manual Treadmill (SF-X7110)",
+      category: "Curved Manual Treadmill With Magnetic Resistance and an App",
+      badge: "Closest on Amazon to the Elite",
+      amazonUrl: "https://www.amazon.com/dp/B0DGZ74FVJ?tag=sktiger-20",
+      priceRange: "$2,499.99 at Amazon and Sunny on 9 Nov 2026",
+      specs: "Curved manual deck · 59 x 17.7 in. running surface · 8 magnetic resistance levels · 330 lb max user · Bluetooth for the SunnyFit app",
       pros: [
-        'Magnetic resistance in four levels, including heavy settings for pushes',
-        'Bluetooth and ANT+ for apps such as Zwift and Kinomap, which the standard Runner lacks',
-        'Sealed bearings, aluminium roller guides, a lift handle and transport wheels',
-        'A gentler curve and cushioned slats, according to TreadmillReviews.com',
+        "Eight magnetic resistance levels, set with a tension lever, against the Elite’s four",
+        "A published 330 lb user rating, which Tru Grit does not give for the Elite",
+        "Bluetooth to Sunny’s free SunnyFit app, the connected feature that sets the Elite apart from the standard Runner",
+        "Sold on Amazon and by Sunny, a large home-fitness brand with its own US store",
       ],
       cons: [
-        'Tru Grit does not publish a user weight rating for it, as TreadmillReviews.com also notes',
-        'Running-surface and warranty figures differ between dealers (see below)',
-        '$1,000 or more above the standard Runner, close to an AssaultRunner Pro or TrueForm Trainer',
+        "No resistance levels labelled for sled pushes, unlike the Grit Runner",
+        "A 59-inch running surface, shorter than the SOLE C80’s 62 inches",
+        "Newer and less reviewed than the established curved treadmills; we found no independent long-term review",
       ],
       bottomLine:
-        'Only worth it over the standard Runner if you want app connectivity, and only once the seller confirms the weight rating and warranty in writing.',
+        "The Amazon alternative to the Grit Runner Elite: magnetic resistance and app connectivity with a published 330 lb rating, for about $1,000 less.",
       description:
-        'The Grit Runner Elite is Tru Grit’s upgraded curved treadmill. Dealers agree that it replaces the standard Runner’s six-level system with four levels of magnetic resistance through what they call a proprietary dual-belt transmission, adds a console with Bluetooth and ANT+, and has sealed bearings, aluminium roller guides, a lift handle, transport wheels and adjustable feet. TreadmillReviews.com gives its weight as 291 lb and its footprint as 66 by 31.5 by 55.5 inches, and says Tru Grit does not disclose its weight capacity or belt length. Dealers disagree on the running surface (one comparison lists 17 by 60 inches, another a 17.3-inch tread width) and on the warranty: Fitness Factory lists lifetime frame and belt, 5 years on the tread and 3 on the monitor, while another dealer lists only lifetime frame and resistance belts. On 5 November 2026 The Fitness Outlet (from $3,995), iSellFitness, Push Pedal Pull and American Fitness all listed it at $3,495.',
+        "Tru Grit's Grit Runner Elite is sold through dealers rather than on Amazon, and this Sunny curved treadmill, model SF-X7110, is the nearest Amazon-listed match for what the Elite adds: magnetic resistance and an app connection on a self-powered curved belt. The Amazon listing gives a 59 by 17.7-inch running surface, eight levels of magnetic resistance from 14 magnets set with a tension lever, Bluetooth to the free SunnyFit app, an LED monitor showing time, calories, speed, distance, pace and pulse, and a 330 lb maximum user weight; Dick's Sporting Goods gives the same 59 by 17.7-inch surface, Nebraska Furniture Mart the same 330 lb rating and model number, and Sunny's own store the same eight magnetic levels and app. Amazon and Sunny both showed $2,499.99 on 9 November 2026, about $1,000 less than the Elite at dealers. Against the Elite it has twice the resistance levels and a weight rating you can see before buying; what it lacks is the Grit Runner range's resistance settings labelled for sled pushes, so if pushing is the goal, its top levels add load but the machine was not designed around it. We have not found independent long-term coverage of it, so treat it as newer and less proven than the SOLE C80 or the AssaultRunner.",
     },
     {
       id: 'sole-c80',
@@ -124,54 +128,50 @@ export default {
         'The SOLE C80 is the closest like-for-like alternative to the Grit Runner. SOLE’s listing, a retailer listing and independent coverage, as checked for our Bells of Steel Blitz review the same day, agree on a 62 by 19-inch slat belt, eight levels of magnetic resistance, a 330 lb maximum user and a 261 lb machine weight. SOLE listed it at $2,399.99 on 5 November 2026. It matches the Grit Runner’s user rating, publishes the running-surface dimensions the Grit Runner lacks, and comes from a brand with its own customer service and a website that works. What it does not have is the Grit Runner’s explicitly labelled sled-push settings; its higher magnetic levels add resistance, but if pushing is your main goal the Grit Runner is designed for it. Our SOLE guides and curved treadmill roundup have more detail.',
     },
     {
-      id: 'assaultrunner-pro',
-      name: 'AssaultRunner Pro',
-      category: 'The Benchmark Curved Treadmill',
-      badge: 'Most Proven',
-      reviewUrl: '/assaultrunner-pro-treadmill/',
-      priceRange: '$3,499 at US dealers in November 2026',
-      amazonUrl: 'https://www.amazon.com/s?k=AssaultRunner+Pro+Treadmill&tag=sktiger-20',
-      specs: '17 x 62 in. curved slat surface · 350 lb max user · 280 lb · battery console with Bluetooth and ANT+',
+      id: "sb-fitness-ct400",
+      name: "SB Fitness CT400 Curved Treadmill",
+      category: "Lower-Priced Curved Trainer for Sprinting",
+      badge: "Amazon Alternative for Sprinting",
+      priceRange: "About $1,595 (Amazon, 6 Nov 2026)",
+      specs: "Self-generated curved belt · 3 resistance levels · flexible track slats · no maximum speed",
       pros: [
-        'The most reviewed curved manual treadmill, with years of owner feedback',
-        'A higher 350 lb rating than the Grit Runner',
-        'Bluetooth and ANT+ console at about the Grit Runner Elite’s price',
-        'Widely used in CrossFit gyms, so parts and service are easy to find',
+        "About $1,600 on Amazon, below even the standard Grit Runner",
+        "No maximum speed and immediate response to speed changes, per the listing",
+        "Three resistance levels for harder efforts",
+        "Flexible track slats that the maker says add shock absorption",
       ],
       cons: [
-        'No adjustable resistance',
-        'About $1,000 more than the standard Grit Runner',
-        'An owner review we read on Rogue’s site called Assault’s customer service poor',
+        "Only three resistance levels, and none labelled for sled pushes",
+        "The Amazon listing does not give deck dimensions or user capacity",
+        "Basic digital display, with no app connection",
       ],
       bottomLine:
-        'The safer choice at the Elite’s price if you want running and sprints more than sled pushes.',
+        "The Amazon alternative to the AssaultRunner Pro for sprint and interval work, at less than half its price; ask the seller for the deck size and user rating first.",
       description:
-        'The AssaultRunner Pro is the curved treadmill most others are measured against. Our review cross-checked a 17 by 62-inch curved slat surface, a 350 lb maximum user, a 280 lb machine weight and a battery-powered console with Bluetooth and ANT+, and US dealers listed it at about $3,499 in November 2026. Against the Grit Runner Elite at $3,495 it gives up adjustable resistance but brings a published weight rating, a long record of owner use and wide availability of parts. For a buyer whose priority is sprinting, intervals and CrossFit-style conditioning rather than sled pushes, it is the better-documented machine at the same price. Our full review covers the warranty, the console and the Elite version above it.',
+        "The AssaultRunner Pro, the benchmark curved treadmill at the Elite's price, is sold through dealers and Assault's own channels rather than as a listing we could confirm on Amazon US, so this card shows the curved trainer we would compare on Amazon for sprint and interval work. SB Fitness Equipment makes several curved trainers, and the CT400 is the least expensive one we found on Amazon US. Its listing describes a self-generated curved treadmill designed for running, walking, sport-specific training and HIIT, with no maximum speed, three resistance levels, flexible track slats that SB Fitness says add shock absorption, quick response to speed changes and a front display showing time, distance, speed, calories and total miles. For sprinting, that covers the essentials: a curved belt you drive yourself, so acceleration is limited only by you, and some resistance for harder pushes. It costs less than the standard Grit Runner. What you give up is resistance range and published detail: the Amazon listing does not give the running-surface size, the user capacity or the machine's weight, so ask the seller for those before ordering, and measure your space. Amazon showed it at about $1,595 on 6 November 2026; its figures are those checked for our treadmills-for-sprinting guide.",
     },
     {
-      id: 'trueform-trainer',
-      name: 'TrueForm Trainer',
-      category: 'Curved Manual Treadmill, 400 lb Rating',
-      badge: 'Best for Heavier Runners',
-      reviewUrl: '/trueform-treadmills/',
-      priceRange: '$3,495 at TrueForm and Rogue Fitness on 5 Nov 2026',
-      amazonUrl: 'https://www.amazon.com/s?k=TrueForm+Trainer+Treadmill&tag=sktiger-20',
-      specs: 'Non-motorized curved slat belt · 54 x 17 in. running surface · 400 lb max user · Bluetooth FTMS display',
+      id: "sb-fitness-ct700",
+      name: "SB Fitness CT700",
+      category: "Curved Treadmill With Eight Magnetic Levels and a Long Deck",
+      badge: "Amazon Alternative for Heavier Runners",
+      priceRange: "$2,595 direct (scratch-and-dent $2,245)",
+      specs: "Listed: 19 x 66.6 in. running surface · 8 magnetic resistance levels · stainless steel track bearings · 308 lb · max user 350–475 lb (seller sources conflict) · no motor",
       pros: [
-        'A 400 lb user rating, confirmed by TrueForm, Rogue and an independent review',
-        'Pairs with Zwift and Strava over Bluetooth FTMS',
-        'A shallow curve designed to give form feedback',
-        'Ships in days from TrueForm and Rogue',
+        "A 400 lb maximum user weight on the product page, above the Grit Runner’s 330 lb",
+        "Eight high-tension magnetic resistance levels for sprints, hill-style work and sled pushes",
+        "The longest deck in SB Fitness’s range, at 66.6 inches listed, and 19 inches wide",
+        "Ten-year frame and five-year parts residential warranty on the product page",
       ],
       cons: [
-        'No adjustable resistance or sled mode',
-        'A shorter 54-inch running surface',
-        'Same price as the Grit Runner Elite, well above the standard Runner',
+        "Maximum user weight is 400 lb on the product page, 475 lb in the manual and 350 lb in the seller’s own comparison article",
+        "Every figure comes from the seller; we found no independent measurement or long-term review",
+        "A 308 lb machine with a 13.5-inch step-up, delivered kerbside, with assembly that needs care",
       ],
       bottomLine:
-        'The pick over the Grit Runner Elite for heavier users or runners who want app connectivity and a documented rating.',
+        "The Amazon-listed curved treadmill to compare if user weight matters: a 400 lb rating on the product page and the longest deck here, once the seller confirms the rating in writing.",
       description:
-        'The TrueForm Trainer is the curved treadmill to choose if weight rating matters. TrueForm, Rogue Fitness and Garage Gym Lab agree on a 400 lb maximum user, and Rogue lists a 17 by 54-inch running surface, a 64 by 31 by 63-inch footprint and a 300 lb product weight. Its display pairs with FTMS apps over Bluetooth, which the standard Grit Runner cannot do. It has no resistance system, so it is a running machine rather than a sled trainer. On 5 November 2026 TrueForm listed it at $3,495 with a rubber tread and Rogue at $3,495 on sale from $3,999 — the same money as the Grit Runner Elite, with a weight rating Tru Grit does not publish for the Elite.',
+        "The TrueForm Trainer, the pick for heavier runners at the Elite's price, is sold by TrueForm and Rogue rather than on Amazon, so this card shows the curved treadmill on Amazon with the highest listed weight rating we found. The CT700 is a self-powered curved treadmill: there is no motor, and the belt of rubber-topped slats moves only when you push it. SB Fitness Equipment lists a 19 by 66.6-inch running surface, 0.75-inch rubber tank-tread slats on stainless steel track bearings, eight levels of high-tension magnetic resistance set from a handle on the rails, a 308 lb machine weight, assembled dimensions of 78 by 34 by 62 inches and a 13.5-inch step-up height. The product page lists a 400 lb maximum user weight and a residential warranty of ten years on the frame, five on parts, two on the console and one on labour, but the manual gives 475 lb and the seller's own comparison article 350 lb, so get the rating in writing before relying on it. Unlike the TrueForm it has adjustable resistance, which makes it the closer match to the Grit Runner's sled-push idea. On 14 October 2026 it was $2,595 direct against a $3,695 list price.",
     },
   ],
   sections: [
@@ -236,9 +236,14 @@ export default {
       heading: 'Tru Grit Treadmills and the Alternatives to Compare',
       products: true,
       html: `          <p>
-            The first two cards are Tru Grit's treadmills. The other three are the curved treadmills we would set
-            against them: the SOLE C80 near the standard Runner's price, and the AssaultRunner Pro and TrueForm
-            Trainer at the Elite's. Every figure on a card is one at least two sources agree on.
+            The first card is Tru Grit's standard Grit Runner, which has an Amazon listing. The Grit Runner Elite
+            is sold through dealers, not on Amazon, and so are the AssaultRunner Pro and TrueForm Trainer we would
+            set against it, so the other cards show the closest curved treadmills on Amazon: a Sunny curved
+            treadmill with magnetic resistance and an app in place of the Elite, the SOLE C80 near the standard
+            Runner's price, the SB Fitness CT400 for sprinting and the SB Fitness CT700 for heavier runners. The
+            Elite, AssaultRunner and TrueForm are compared in the text below. Figures on the Sunny card are those
+            the Amazon listing and at least one other retailer or Sunny agree on; the SOLE and SB Fitness figures
+            are those checked for our curved treadmill guides.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[560px] w-full text-sm border-collapse">
             <thead>
@@ -330,7 +335,9 @@ export default {
             The problem is the price gap. At $3,495 the Elite is up against the AssaultRunner Pro and TrueForm
             Trainer, both of which publish a weight rating (350 lb and 400 lb), have far more independent coverage
             and come from companies with working websites. Unless the Elite's magnetic resistance is what you are
-            paying for, those are the safer purchases. The standard Runner, by contrast, has no close rival at its
+            paying for, those are the safer purchases. If magnetic resistance and an app are what you want and you
+            would rather buy on Amazon, the Sunny SF-X7110 card above offers eight magnetic levels, Bluetooth and a
+            published 330 lb rating for about $2,500. The standard Runner, by contrast, has no close rival at its
             price with sled settings, which is why it is the Tru Grit we would consider.
           </p>`,
     },
@@ -499,6 +506,7 @@ export default {
           <a href="/assaultrunner-pro-treadmill/" class="text-[#5AA9FF] font-bold no-underline">AssaultRunner Pro</a>
           and <a href="/trueform-treadmills/" class="text-[#5AA9FF] font-bold no-underline">TrueForm Trainer</a>
           publish weight ratings and have far more independent coverage. Near the standard Runner's price,
-          compare the SOLE C80 first.`,
+          compare the SOLE C80 first; on Amazon, the Sunny SF-X7110 is the closest match for the Elite's magnetic
+          resistance and app.`,
   ],
 };

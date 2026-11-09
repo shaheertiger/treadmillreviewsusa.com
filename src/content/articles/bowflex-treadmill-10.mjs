@@ -51,31 +51,25 @@ export default {
           we say about the machine.`,
   products: [
     {
-      id: 'bowflex-treadmill-10',
-      name: 'Bowflex Treadmill 10',
-      category: 'Discontinued Touchscreen Treadmill With Decline',
-      badge: 'Discontinued',
-      amazonUrl: 'https://www.amazon.com/s?k=Bowflex+Treadmill+10&tag=sktiger-20',
-      priceRange: 'Discontinued; used only',
-      specs: '22 x 60 in. deck · motor rating not published · -5% to 15% · 0-12 mph · 400 lb capacity',
+      id: "bowflex-t16",
+      name: "Bowflex T16",
+      category: "Closest New Bowflex on Amazon to the Treadmill 10",
+      badge: "Closest on Amazon",
+      priceRange: "$1,999 at Bowflex on 5 Nov 2026",
+      specs: "22 x 60 in. deck · 16 in. HD touchscreen · 0-15% incline · 0.5-12 mph · 375 lb capacity",
       pros: [
-        'A 22 by 60-inch running area, as wide and long as Bowflex’s current T9 and T16',
-        'Motorised decline to -5% as well as incline to 15%, which no current Bowflex treadmill offers',
-        'A 400 lb maximum user weight, higher than any treadmill Bowflex sells now',
-        '10-inch HD touchscreen with JRNY built in, plus a Bluetooth heart-rate armband in the box',
-        'Folds, with a SoftDrop assisted lowering system',
+        "The Treadmill 10’s 22 by 60-inch running area, 0 to 15% incline and 12 mph, bought new with a warranty",
+        "A 16-inch HD touchscreen, larger than the Treadmill 10’s 10-inch screen, running JRNY and your own streaming apps",
+        "Works without a JRNY subscription; Bluetooth FTMS for Zwift or Peloton’s app",
+        "Lifetime frame and motor warranty in the US",
       ],
       cons: [
-        'Discontinued: no new stock from Bowflex, and the warranty covered the original purchaser only',
-        'Bowflex never published a motor rating, so the drive motor cannot be compared on paper',
-        'Very large and heavy: 85 x 39.6 inches assembled, 323 lb, and 70 inches tall when folded',
-        'The console had to be registered over Wi-Fi with a JRNY account before first use',
-        'A small screen for streaming, by the account of two reviewers',
+        "No decline, where the Treadmill 10 went to -5%",
+        "A 375 lb maximum user weight, against the Treadmill 10’s 400 lb",
+        "Full JRNY content needs a paid membership",
       ],
-      bottomLine:
-        'Worth buying only used, cheaply, after you have run it through its full incline and decline range. Most people are better served by a new T9 with a warranty in their own name.',
-      description:
-        'The Treadmill 10 had a 22 by 60-inch running area, a speed range of 0 to 12 mph and a motorised deck that ran from -5% decline to 15% incline. Maximum user weight was 400 lb and the machine weighed 323 lb. Assembled it measured 85 by 39.6 by 65.3 inches and folded with a SoftDrop system to 44.5 inches long and 70 inches tall. The console was a 10-inch HD touchscreen running JRNY, and a Bluetooth heart-rate armband was included. Bowflex did not publish a drive-motor rating. Bowflex’s owner’s manual gave a US and Canada warranty of 15 years on the frame and the drive motor, 5 years on mechanical parts, 1 year on electronics and 2 years of labour, for the original purchaser only. US reviews from 2024 and 2025 give a list price of $1,999. Bowflex no longer sells it, and on 20 October 2026 its Canadian store marked it discontinued and suggested the T9 instead.',
+      bottomLine: "The new Bowflex closest to a Treadmill 10: the same deck and incline with a bigger screen and a warranty in your name, minus the decline.",
+      description: "The Treadmill 10 is discontinued and not on Amazon US, so this card shows the current Bowflex closest to it that Amazon does sell. The T16 has a 22 by 60-inch deck, 0 to 15% incline with no decline, 0.5 to 12 mph and a 375 lb maximum user weight. Its 16-inch HD touchscreen runs JRNY plus Netflix, Prime Video, YouTube, Spotify and a web browser over Wi-Fi, so streaming uses your existing accounts, and Bowflex says the treadmill works without a JRNY subscription; it also pairs over Bluetooth FTMS with Zwift and Peloton’s app. Against a used Treadmill 10 it gives up the -5% decline and 25 lb of user rating, and gains a larger screen and a warranty in your own name: lifetime on the frame and motor, three years on parts and one year of labour in the US. Bowflex rates the motor at 3.5 HP under test settings, a figure we keep off the spec line because it is not a continuous rating. Bowflex listed it at $1,999 against $2,299 on 5 November 2026.",
     },
   ],
   sections: [
@@ -84,6 +78,9 @@ export default {
       heading: 'Bowflex Treadmill 10: The Short Answer',
       products: true,
       html: `          <p>
+            The Treadmill 10 is no longer sold new, and Amazon US does not list it, so the product card below shows the closest new Bowflex that Amazon does sell, the T16; everything else on this page is about the Treadmill 10.
+          </p>
+          <p>
             <strong>The Bowflex Treadmill 10 is discontinued, so the real question is whether a used
             one is worth buying, and for most people it is not, unless it is cheap and you need the
             decline or the 400 lb rating.</strong> When it was on sale it was a big, well-specified

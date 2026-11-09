@@ -30,7 +30,9 @@ export default {
           Safety Commission’s recall database. Amazon’s product pages would not load in full for us that
           day, so Amazon prices on this page are attributed to the source and date that recorded them.
           Figures on the product cards are those on which UREVO and at least one independent source
-          agree; where they disagree we say so and leave the figure off the card. We have not tested a
+          agree; where they disagree we say so and leave the figure off the card. The five cards marked
+          “Closest on Amazon” carry the figures checked for our walking-pad, 2-in-1, low-ceiling,
+          handrail and budget treadmill guides. We have not tested a
           UREVO machine. Prices change often, sometimes daily, so confirm them before you order. As an
           Amazon Associate we earn from qualifying purchases.`,
   lead: `Search for a walking pad on Amazon and a UREVO machine is likely to be among the first things
@@ -41,55 +43,54 @@ export default {
           This guide sets out who UREVO is, every machine in its US store on 20 October 2026 with the
           price you would actually have paid, the figures that agree across sources and the ones that do
           not, what the 18-month warranty and 14-day returns require of you, what the app costs, and
-          which UREVO, if any, fits the job you have in mind.`,
+          which UREVO, if any, fits the job you have in mind. Five of the UREVO models discussed here
+          (the SpaceWalk E1L and 3S, Strol 2S Pro, Foldi 3S and FoldiMix 5L) are sold through UREVO’s
+          own store and other retailers, and we could not find Amazon US listings that name them, so
+          their cards show the closest machines Amazon does sell; the prose below still covers the
+          UREVO models themselves.`,
   products: [
     {
-      id: 'urevo-spacewalk-e1l',
-      name: 'UREVO SpaceWalk E1L',
-      category: 'Cheapest UREVO: a Flat Pad for Slow Desk Walking',
-      badge: 'Lowest Price',
-      priceRange: '$169.99 at UREVO on 20 Oct 2026',
-      amazonUrl: 'https://www.amazon.com/s?k=UREVO+SpaceWalk+E1L+Walking+Pad&tag=sktiger-20',
-      specs: '35.4 x 15 in. belt · up to 4.0 mph · 36.6 lb · flat deck, no incline',
+      id: "urevo-smart-walking-pad",
+      name: "UREVO Smart Walking Pad",
+      category: "Closest on Amazon to the SpaceWalk E1L: a Flat UREVO Pad",
+      badge: "Closest on Amazon",
+      priceRange: "About $135 (Amazon, 6 Nov 2026)",
+      specs: "4.1 in. overall height (listing) · 35.43 x 15 in. belt · 0.6–4 mph · 265 lb capacity · remote and app",
       pros: [
-        'The lightest full pad UREVO sells, at about 37 lb, so it is easy to slide under a sofa or bed',
-        'Belt size, top speed and unit weight agree between UREVO and an independent tracker',
-        'Arrives assembled, with a remote and app connection',
-        'UREVO’s own FAQ says plainly that it is for walking, not incline training or jogging',
+        "UREVO’s own flat pad, sold on Amazon, with the same 35.43 by 15-inch belt and 0.6–4 mph range UREVO gives the SpaceWalk E1L",
+        "About $135 on Amazon on 6 November 2026, below the E1L’s $169.99 at UREVO",
+        "A 4.1-inch overall profile, so it slides under most sofas and beds",
+        "Remote and app control",
       ],
       cons: [
-        'A 35.4-inch belt is short; it suits slow walking at a desk, not a long stride',
-        'UREVO says 265 lb; the tracker, citing the manual, says 242 lb, so we have not printed a capacity',
-        'Advertised at 2.5 HP, but the manual figure the tracker cites is 550 W and a brushed motor',
+        "Walking only: 4 mph top speed and no handle",
+        "A short 35.4-inch belt suits slow walking more than a brisk pace",
+        "The listing says 265 lb, the figure UREVO gives the E1L, whose manual says 242 lb; plan on the lower",
+        "The listing does not use the SpaceWalk E1L name, so we cannot say it is the same machine",
       ],
-      bottomLine:
-        'The UREVO to buy for slow walking at a desk on the smallest budget, provided you are of average height and comfortably under 242 lb.',
-      description:
-        'The SpaceWalk E1L is UREVO’s entry-level flat pad and the budget pick on our best walking pads list. UREVO’s 20 October 2026 listing gives a 35.43 by 15-inch running area, a speed range of 0.6 to 4.0 mph and a 36.59 lb unit weight, and the independent tracker gives the same belt, top speed and weight. Two figures differ. UREVO lists a 265 lb maximum load, while the tracker reports 242 lb from the manual’s safety section, so plan on the lower figure. UREVO’s overall height is 4.2 inches against 4.8 inches in the manual the tracker read. UREVO advertises a 2.5 HP motor; the tracker reports a brushed motor rated at 550 W, which is about 0.74 HP continuous. That is normal for a pad at this price and a reason to keep it to walking pace. UREVO showed $169.99, against a stated $189.99, on 20 October 2026, and the warranty is one year plus a 180-day extension that requires registering the pad in UREVO’s app.',
+      bottomLine: "The nearest Amazon match to the SpaceWalk E1L: a flat UREVO pad for slow desk walking on the smallest budget, for walkers of average height comfortably under 242 lb.",
+      description: "The SpaceWalk E1L is sold in UREVO’s own US store; we could not find an Amazon US listing that names it, so this card is the closest UREVO pad that Amazon does sell. UREVO’s flat Smart Walking Pad listing gives a 4.1-inch slim profile, a 35.43 by 15-inch belt with eight silicone shock absorbers and two rubber pads, walking speeds of 0.6 to 4 mph, a 2.5 HP peak motor, a 265 lb maximum user weight, wheels, an LED display, a remote and app control with virtual routes and a MIIT interval mode. Those belt, speed and capacity figures are the ones UREVO gives the SpaceWalk E1L, but the listing does not use that name, so treat it as a close relative rather than the same machine, and apply the same caution on capacity: the E1L’s manual gives 242 lb, not 265 lb. The trade-offs are those of any small flat pad: a short belt that suits slow walking under a desk better than brisk exercise walking, no handle and no jogging mode. Amazon showed it at $134.99 on 6 November 2026.",
     },
     {
-      id: 'urevo-spacewalk-3s',
-      name: 'UREVO SpaceWalk 3S',
-      category: 'The Incline Pad Most Buyers Should Look at First',
-      badge: 'Best UREVO With Incline',
-      priceRange: '$249.99 at UREVO on 20 Oct 2026',
-      amazonUrl: 'https://www.amazon.com/s?k=UREVO+SpaceWalk+3S+Walking+Pad&tag=sktiger-20',
-      specs: '0–9% powered incline · 0.6–4.0 mph · 42.5 in. belt length · 265 lb capacity · 6.5 in. tall',
+      id: "deerrun-z10",
+      name: "DeerRun Z10",
+      category: "Closest on Amazon to the SpaceWalk 3S: a Powered-Incline Pad",
+      badge: "Closest on Amazon",
+      priceRange: "$200–$240",
+      specs: "12-level powered incline · 0.6–3.8 mph · 35 x 16 in. belt · 300 lb capacity",
       pros: [
-        'Powered incline from 0 to 9% in nine steps, changed from the remote or app mid-walk',
-        'A 42.5-inch belt, long for a pad, so incline does not cramp your stride',
-        'Incline, speed, belt length, capacity and height agree between UREVO and the tracker',
-        'Rarely sold near its stated $349.99; $249.99 on UREVO’s store on 20 October',
+        "A motorised incline for $200–$240, the feature that makes the SpaceWalk 3S our default UREVO",
+        "300 lb capacity, stated consistently by the brand, the Amazon listing and independent coverage",
+        "A hands-on reviewer found the frame stable at full incline",
+        "Under 6 inches tall level, so it suits most standing desks",
       ],
       cons: [
-        'Unit weight is 56.65 lb on UREVO’s page and about 71 lb on the tracker’s; plan on the heavier figure',
-        'The tracker reports a 600 W brushed motor against the advertised 2.5 HP',
-        'UREVO now sells the SpaceWalk 5L alongside it, which the tracker regards as its successor',
+        "Sold with 12 incline levels, but a hands-on reviewer measured about 9% at the top, so do not count on 12%",
+        "A 35-inch belt is short, and incline makes it feel shorter",
+        "One-year warranty, and an independent tracker reports a C- rating with the Better Business Bureau and polarised owner reviews",
       ],
-      bottomLine:
-        'The cheapest UREVO with a genuine, adjustable incline on a belt long enough to use it, and the pad this site recommends most often.',
-      description:
-        'The SpaceWalk 3S is the UREVO this site recommends most often, including as the incline pick on our best walking pads list. UREVO lists a 0 to 9% powered incline in nine levels, 0.6 to 4.0 mph, a 42.5 by 16.54-inch running area, a 265 lb maximum load and a 6.5-inch height, and the independent tracker agrees on the incline, speed, belt length, capacity and height. It gives the belt width as 16.9 inches, so the card prints length only. The disagreements are weight, 56.65 lb on UREVO’s page against 71 lb on the tracker’s, and the motor, which UREVO advertises at 2.5 HP and the tracker, from the manual’s 600 W rating, puts at about 0.8 HP continuous and describes as brushed. That is enough for walking, which is all this pad is for. UREVO listed it at $249.99, against a stated $349.99, on 20 October 2026. The warranty is one year plus 180 days on app registration.',
+      bottomLine: "The closest Amazon-sold alternative to the SpaceWalk 3S: a motorised incline on a desk pad for about the same money, best for shorter walkers who will check the warranty and returns terms first.",
+      description: "The SpaceWalk 3S is sold in UREVO’s own US store and we could not find an Amazon US listing that names it, so this card is the closest pad Amazon does sell: like the 3S, the DeerRun Z10 puts a powered incline under a walking pad for about $200–$240. The brand listing, the Amazon listing and independent coverage agree on 12 levels of motorised incline controlled from a remote or app, a 0.6 to 3.8 mph speed range, a 35 by 16-inch belt and a 300 lb capacity. Where they part company is the top of the incline: the listing implies 12%, and one reviewer who used the pad measured about 9% at the highest level, so we have left the percentage out. The same reviewer found the frame stable and flagged the short belt as the main drawback; at 35 inches it is more than seven inches shorter than the 3S’s 42.5-inch belt, which is the main thing you give up. The brushless motor and 3 HP figure are marketing claims we could not confirm. DeerRun is a marketplace brand with a one-year warranty and mixed feedback on support, so register the pad and keep the receipt.",
     },
     {
       id: 'urevo-strol-2e-pro',
@@ -116,76 +117,66 @@ export default {
         'The Strol 2E Pro is our pick for the lightest machine to carry on the portable treadmills roundup. UREVO’s spec table gives a 36.2 by 15.2-inch running area, 0.6 to 6.2 mph, a 43.4 lb product weight and a 2.25 HP motor, and the independent tracker, reading the Amazon listing, records about 36 by 15 inches, 4 mph with the handle down, 6.2 mph with it raised and 43 lb. The figures that disagree are kept off the card: UREVO lists a 300 lb maximum load while the Amazon listing says 265 lb, and UREVO advertises 12% incline against 11% in Amazon’s table, without saying clearly whether it is powered. On 20 October 2026 the product page showed $259.99 with a discount applied automatically at checkout that brought it to $189.99; the tracker recorded $177.98 on Amazon on 14 October. The warranty is one year plus 180 days on app registration.',
     },
     {
-      id: 'urevo-strol-2s-pro',
-      name: 'UREVO Strol 2S Pro',
-      category: 'The UREVO 2-in-1 for Light Jogging and Incline',
-      badge: 'Best for Light Jogging',
-      priceRange: '$299.99 at UREVO checkout on 20 Oct 2026',
-      amazonUrl: 'https://www.amazon.com/s?k=UREVO+Strol+2S+Pro+Treadmill&tag=sktiger-20',
-      specs: '42.5 x 16.5 in. belt · to 4.0 mph bar down, 7.6 mph bar up · 0–9% powered incline · 265 lb capacity',
+      id: "urevo-strol-2e",
+      name: "UREVO Strol 2E",
+      category: "Closest on Amazon to the Strol 2S Pro: UREVO’s Budget 2-in-1",
+      badge: "Closest on Amazon",
+      priceRange: "$169.99 at UREVO (5 Nov 2026)",
+      specs: "0.6–6.2 mph with handle up · 265 lb capacity · about 15 x 40 in. belt · no incline",
       pros: [
-        'A running mode to 7.6 mph with the bar raised, and a 4 mph walking mode under a desk',
-        'Powered incline to 9% as well, which few 2-in-1 pads combine',
-        'Belt, both speed limits, incline and capacity agree between UREVO and the tracker',
-        'A 42.5-inch belt, the longest of UREVO’s 2-in-1 machines',
+        "A fold-down handle and a 6.2 mph top speed with the handle raised",
+        "UREVO and two independent reviews agree on the 265 lb rating and 6.2 mph",
+        "A known brand with a US store and a published warranty",
       ],
       cons: [
-        'About 75 lb, heavy to move every day',
-        'The tracker reports a brushed motor rated at about 0.88 HP against the advertised 2.5 HP',
-        'Its price swings: $549.99 listed, $299.99 at checkout on 20 October, sold as a pre-order',
+        "No incline, unlike the Strol 2S Pro’s powered 0 to 9%",
+        "Sources give the belt as 40.1 or 40.2 inches long, shorter than the 2S Pro’s 42.5 inches",
+        "Narrow at 15 inches; walking speed is capped at 4 mph with the handle folded",
       ],
-      bottomLine:
-        'The UREVO to buy if you want desk walking, incline and the option of a short, easy jog in one machine. If you want to run regularly, buy a treadmill.',
-      description:
-        'The Strol 2S Pro is the jogging pick on our best walking pads list and the top pick on our handrail roundup. UREVO lists a 42.52 by 16.54-inch running area, a walking mode of 0.6 to 4.0 mph, a running mode to 7.6 mph with the bar up, a 0 to 9% powered incline, a 265 lb maximum load and a 74.51 lb unit weight, and the independent tracker agrees on all of them. A 42.5-inch belt is long for a pad but far shorter than a running treadmill’s, so the jogging mode suits a compact, easy stride. The tracker reports a nameplate rating of 0.88 HP and, from an owner teardown, a brushed drive motor; it says the “brushless” wording on an Amazon listing refers to the incline actuator. On 20 October 2026 UREVO’s page listed $549.99 and applied a discount at checkout that brought it to $299.99, as a pre-order with an estimated delivery date of 20 October. The warranty is one year plus 180 days on app registration.',
+      bottomLine: "The cheapest UREVO 2-in-1 sold on Amazon: a fold-down handle and a short jog to 6.2 mph, without the Strol 2S Pro’s incline or longer belt.",
+      description: "The Strol 2S Pro is sold in UREVO’s own US store and we could not find an Amazon US listing that names it, so this card is UREVO’s budget 2-in-1 that Amazon does sell: a walking pad with a handle that folds flat and a short jogging mode. UREVO’s US store listed the Strol 2E in stock at $169.99, against $289.99, on 5 November 2026. UREVO gives 0.6 to 4.0 mph with the handle down and 0.6 to 6.2 mph with it raised, a 265 lb maximum load, a 2.25 HP maximum motor rating and a one-year plus 180-day warranty, and Live Science and T3, both of which reviewed it hands-on, give the same 265 lb and 6.2 mph. The belt is 40.2 inches long on UREVO’s page and 40.1 in other listings, which is why the card rounds. Against the Strol 2S Pro it gives up the powered incline, about two inches of belt and over a mile an hour of top speed; if you want incline in a UREVO 2-in-1 from Amazon, the Strol 2E Pro above has it.",
     },
     {
-      id: 'urevo-foldi-3s',
-      name: 'UREVO Foldi 3S',
-      category: 'Compact Folding Treadmill With Side Rails and a Desk',
-      badge: 'Compact Folding Pick',
-      priceRange: '$319.99 at UREVO on 20 Oct 2026',
-      amazonUrl: 'https://www.amazon.com/s?k=UREVO+Foldi+3S+Treadmill&tag=sktiger-20',
-      specs: '0.6–7.6 mph · 42.5 x 16.5 in. belt · 265 lb capacity · about 87.5 lb · folds',
+      id: "lastforever-walking-treadmill",
+      name: "Lastforever Walking Treadmill",
+      category: "Closest on Amazon to the Foldi 3S: a Folding Treadmill With Side Rails",
+      badge: "Closest on Amazon",
+      priceRange: "About $400 (Amazon, 6 Nov 2026)",
+      specs: "Full-length side rails · 0.5–7.5 mph · 41.3 x 16.5 in. belt · 2.5 HP · 310 lb capacity · 12 programs",
       pros: [
-        'Side rails that raise to unlock the 7.6 mph top speed, and fold away for walking',
-        'A desk that attaches to the rails, so no standing desk is needed',
-        'Speed, belt, capacity and weight agree between UREVO and VICE’s review',
-        'Powered incline to 9% by UREVO’s listing',
+        "Extended full-length handrails on both sides",
+        "Reaches 7.5 mph, so a light jog is possible",
+        "Controls and heart-rate sensors on the handrails, so you need not bend to the console",
+        "12 preset programs and app control",
       ],
       cons: [
-        'At about 87.5 lb it is the heaviest UREVO apart from the CyberMega',
-        'The belt is a walking pad’s length, short for a running stride',
-        'UREVO lists 2.5 HP; one European retailer has listed 0.75 HP, and no continuous rating is published',
+        "No desk and no incline, both of which the Foldi 3S has",
+        "A 310 lb rating; leave a margin under it",
+        "A 41.3-inch belt is short for jogging; keep the pace modest",
       ],
-      bottomLine:
-        'For someone who wants rails to hold, a built-in desk and an occasional jog, and has the floor space for a heavier machine.',
-      description:
-        'The Foldi 3S sits between UREVO’s pads and a real treadmill: a 42.5-inch deck with side rails that fold down for walking and raise to unlock its higher speeds, plus a desk that mounts on the rails. UREVO’s listing gives 0.6 to 7.6 mph, a 42.5 by 16.5-inch running area, a 265 lb maximum load, an 87.5 lb product weight and a 0 to 9% powered incline in nine levels, and VICE’s review gives the same top speed, belt size, capacity and weight, and describes the rails that must be raised for full speed. The motor figure is disputed: UREVO advertises 2.5 HP and a European retailer has listed 0.75 HP, so treat sustained jogging as the limit. UREVO listed it at $319.99, against a stated $469.99, on 20 October 2026. It is the budget folding pick under $500 on our budget treadmill roundup.',
+      bottomLine: "For buyers drawn to the Foldi 3S for its side rails and light jog: full-length rails and 7.5 mph on Amazon, without the desk or incline.",
+      description: "The Foldi 3S is sold in UREVO’s own US store and we could not find an Amazon US listing that names it, so this card is the closest folding treadmill with side rails that Amazon does sell. The Lastforever listing describes extended full-length handrails on both sides for continuous support, a 2.5 HP motor with a speed range of 0.5 to 7.5 mph, a 41.3 by 16.5-inch five-layer belt with cushioning, a 310 lb maximum user weight on a reinforced frame, a large LED display, controls and heart-rate sensors on the handrails, 12 preset programs, app control, transport wheels, a manual lubrication system and a one-year warranty. That matches the Foldi 3S on the things most buyers choose it for: rails to hold, and a top speed in the 7.5 mph range that allows a light jog. It does not have the Foldi 3S’s desk or its powered incline, and a 41.3-inch belt is short for running, so any jog should be easy and compact. Amazon listed it at $399.99 on 6 November 2026.",
     },
     {
-      id: 'urevo-foldimix-5l',
-      name: 'UREVO FoldiMix 5L',
-      category: 'Folding 2-in-1 With a Height-Adjustable Desk',
-      badge: 'Best Built-In Desk',
-      priceRange: '$311.99 at UREVO checkout on 20 Oct 2026',
-      amazonUrl: 'https://www.amazon.com/s?k=UREVO+FoldiMix+5L+Treadmill&tag=sktiger-20',
-      specs: '39.4 x 15.8 in. running area · 0.6–4.0 mph walking, to 7.6 mph running · 0–9% powered incline · height-adjustable desk',
+      id: "sunny-treadpad-auto-incline",
+      name: "Sunny Health & Fitness Treadpad Treadmill 7% Auto Incline",
+      category: "Closest on Amazon to the FoldiMix 5L: a 2-in-1 With Powered Incline",
+      badge: "Closest on Amazon",
+      priceRange: "About $487 (Amazon, 6 Nov 2026)",
+      specs: "45.7 x 16 in. running surface · 0.5–3.7 mph handlebar down, to 6 mph handlebar up · 7% auto incline · 265 lb capacity (Sunny)",
       pros: [
-        'A front rail carrying a height-adjustable desk, so it works without a standing desk',
-        'A running mode to 7.6 mph alongside a 4 mph walking mode',
-        'Belt, speeds and incline agree across UREVO, Tom’s Guide and the tracker',
-        'Tom’s Guide found the motor quiet enough for video calls',
+        "A powered incline to 7% in six preset steps, changed at the press of a button",
+        "The longest running surface here, 45.7 inches, by both the listing and Sunny’s site",
+        "Sunny publishes a weight limit (265 lb), unit weight (79.4 lb) and deck height on its own store",
+        "A US-based brand with its own support and the SunnyFit app",
       ],
       cons: [
-        'Capacity is disputed: 400 lb at regular speed and 300 lb at top speed on UREVO’s page, 300 lb in the tracker’s',
-        'Tom’s Guide’s reviewer found her feet occasionally hit the end of the belt when running',
-        'Works best on hard floors, by UREVO’s guidance as reported by Tom’s Guide',
+        "About $487, more than twice the UREVO Strol 2E Pro and well above the FoldiMix 5L’s checkout price",
+        "No desk, unlike the FoldiMix 5L; running mode stops at 6 mph",
+        "At 79.4 lb by Sunny’s figure, heavier to move than the FoldiMix 5L",
       ],
-      bottomLine:
-        'For someone who wants walking at a desk without buying a standing desk, plus the option of an easy jog. Plan around 300 lb.',
-      description:
-        'The FoldiMix 5L is the handrail pick on our heavy-people roundup. UREVO lists a 39.4 by 15.8-inch running area, 0.6 to 7.6 mph, a 0 to 9% powered incline, a 65.3 lb product weight and a 3.0 HP maximum, and Tom’s Guide’s September 2026 review and the independent tracker agree on the belt, speed range and incline. Capacity is the figure to read carefully. UREVO’s page lists 400 lb and adds, in small print, that 400 lb is the load for normal operation at regular speed and 300 lb applies to its maximum-speed test; the tracker uses 300 lb. Plan around 300 lb. Tom’s Guide’s reviewer, of average height, found walking comfortable and running occasionally cramped at the back of the belt. The tracker reports a brushless motor rated at 650 W. On 20 October 2026 UREVO’s page showed $499.99 with a discount applied at checkout that brought it to $311.99.',
+      bottomLine: "The 2-in-1 on Amazon closest to the FoldiMix 5L: a powered incline you can change mid-walk and a long belt, but no built-in desk.",
+      description: "The FoldiMix 5L is sold in UREVO’s own US store and we could not find an Amazon US listing that names it, so this card is the closest folding 2-in-1 with a powered incline that Amazon does sell. The Amazon listing for Sunny’s Treadpad with 7% auto incline gives a 45.7 by 16-inch running surface, a walking mode of 0.5 to 3.7 mph with the handlebar folded and a running mode up to 6 mph with it fully extended, a powered incline with six preset levels up to 7%, a 6.3 by 2.4-inch display, a remote and the SunnyFit app. Sunny’s own store lists the same running surface and speed ranges and adds a 265 lb maximum user weight, a 79.4 lb product weight, a 2.0 HP peak motor and a deck that sits 4.1 inches off the floor flat and 5.7 inches at full incline. Against the FoldiMix 5L it gives up the height-adjustable desk and some top speed, but its belt is about six inches longer, and Sunny publishes one capacity figure rather than three. Amazon showed it at $487.26 on 6 November 2026. Sunny’s warranty on its own store is three years on the frame and 180 days on other parts.",
     },
     {
       id: 'urevo-cyberpad-for-office',

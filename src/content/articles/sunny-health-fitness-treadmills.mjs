@@ -30,7 +30,9 @@ export default {
           about pages. We compared those with independent sources: retailer listings at Academy Sports, Klarna,
           Staples, Kohl’s and Target; reviews and specification summaries from Garage Gym Reviews, Treadmill
           Doctor, Torokhtiy and OCDevel’s walking-pad tracker; and the US Consumer Product Safety Commission’s
-          recall database. Amazon’s pages would not load for us that day, so this page quotes no Amazon prices.
+          recall database. Amazon’s pages would not load for us that day; the two Amazon alternatives
+          added on 9 November 2026 carry the Amazon prices and figures checked on 6 November for our low-ceiling
+          and auto-incline treadmill guides.
           Figures on the product cards are those on which Sunny and at least one independent source agree; where
           they disagree, including where Sunny’s own pages disagree with each other, we say so and leave the figure
           off the card. We have not tested a Sunny treadmill. Prices change often, so confirm them before you
@@ -43,28 +45,25 @@ export default {
           which numbers to plan on.`,
   products: [
     {
-      id: 'sunny-sf-t4400smart',
-      name: 'Sunny Health & Fitness SF-T4400SMART',
-      category: 'The Current Version of the Best-Known Sunny Treadmill',
-      badge: 'Best-Known Model',
-      priceRange: '$449.99 at Sunny on 5 Nov 2026',
-      amazonUrl: 'https://www.amazon.com/s?k=Sunny+Health+Fitness+SF-T4400SMART+Treadmill&tag=sktiger-20',
-      specs: '2.2 peak HP · 0.5–9 mph · 3 manual incline levels · 285 lb capacity · folds with soft drop',
+      id: "sunny-sf-t7718",
+      name: "Sunny Health & Fitness SF-T7718",
+      category: "Closest on Amazon to the SF-T4400SMART",
+      badge: "Closest on Amazon",
+      priceRange: "About $565 (Amazon, 6 Nov 2026)",
+      specs: "47 x 20 in. running deck · 0.6–9 mph · 265 lb capacity · 2.76 in. deck height (Sunny) · folds flat · no incline",
       pros: [
-        'The current, Bluetooth version of the SF-T4400 most reviews describe, with SunnyFit app support',
-        'Capacity, speed and incline agree between Sunny, Academy Sports and Klarna',
-        'A 285 lb rating, well above the 220 lb of the older SF-T4400',
-        'Soft-drop fold and transport wheels; about 104 lb, so it can be moved by two people',
+        "A 0.6 to 9 mph range like the SF-T4400SMART’s, on a wider 20-inch belt",
+        "Speed, belt size and 265 lb limit agree between the Amazon listing and Sunny’s store",
+        "A very low 2.76-inch deck, by Sunny’s figure, for an easy step on",
+        "Folds flat to 10.5 inches tall for storage, by the listing",
       ],
       cons: [
-        'Incline is three manual settings, about 0.2 to 2.9 degrees, changed off the belt',
-        'Sunny’s page gives the deck as 49 x 16 in. and 48.4 x 15.7 in., so we have not printed one',
-        'Motor quoted as 2.2 peak HP only; no continuous rating',
+        "No incline, where the SF-T4400SMART has three manual levels",
+        "A 265 lb limit, 20 lb below the SF-T4400SMART’s",
+        "About $115 more than the SF-T4400SMART at Sunny, and heavy at 117.9 lb",
       ],
-      bottomLine:
-        'A sensible, cheap folding treadmill for walking and light jogging, provided you buy the SMART version and treat the incline as a slight tilt rather than a hill.',
-      description:
-        'The SF-T4400 is the Sunny treadmill most buyers have heard of, and the SF-T4400SMART is what Sunny sells under that number now. Sunny’s 5 November 2026 product page lists a 2.2 peak horsepower motor, speeds of 0.5 to 9 mph, three manual incline levels that its specification table gives as 0.2 to 2.9 degrees, a 285 lb maximum user weight and a 103.6 lb unit weight, and Academy Sports and Klarna list the same capacity. Two things need care. The deck appears on the same page as 49 by 16 inches in the description and 48.4 by 15.7 inches in the specification table, and Target’s listing for the older, non-SMART SF-T4400 still gives that model’s 220 lb rating. Make sure the model number on the listing ends in SMART before you rely on 285 lb. The warranty is three years on the frame and 180 days on other parts; see the warranty section for the motor. Sunny listed it at $449.99 on 5 November 2026.',
+      bottomLine: "The Sunny folding treadmill we could confirm on Amazon closest to the SF-T4400SMART: the same speed range, a wider belt, no incline.",
+      description: "We could not find the SF-T4400SMART itself listed on Amazon US under its model number, so this card shows the closest Sunny folding treadmill we could confirm there. The SF-T7718, which Sunny calls its Strider with a LoPro deck, matches the SF-T4400SMART's 9 mph walking-and-jogging brief. Sunny's own store gives a deck-to-floor height of 2.76 inches, a 47 by 20-inch running surface, a 0.6 to 9 mph speed range, a 2.5 HP peak motor, a 265 lb maximum user weight, a 117.9 lb product weight and a folded size of 63 by 29.25 by 10.5 inches, and the Amazon listing gives the same belt, speed range and limit, with slip-resistant rubber handrails, an LCD, nine programmes, a lubrication reminder every 188 miles, a speaker and USB charging. Against the SF-T4400SMART it gives up the three manual incline levels and 20 lb of rated capacity, and costs more; in return the belt is wider and the step-up very low. As with every Sunny, the motor figure is a peak rating. Sunny's store lists a three-year frame and 180-day parts warranty. Amazon showed it at $565.00 on 6 November 2026, as checked for our low-ceiling treadmill guide.",
     },
     {
       id: 'sunny-sf-t1407smart',
@@ -115,28 +114,25 @@ export default {
         'The Treadpad 100 is the cheapest powered machine in Sunny’s US store. Sunny’s 5 November 2026 page lists a 1 HP motor, 0.5 to 3.7 mph, a 245 lb maximum user weight and a 49.2 by 22 by 4.3-inch footprint, and an independent walking-pad tracker gives the same speed range and capacity; Kohl’s, Staples and Academy all carry it too. Staples’ specification table gives a 4 mph top speed, which no other source repeats, so plan on 3.7 mph. Sunny lists a 39.8 by 16.1-inch walking surface, which is about average for a pad and fine for walking at a desk, though taller walkers with a long stride may want more. It connects to the SunnyFit app over Wi-Fi or Bluetooth and comes with a remote. Sunny listed it at $299.99 on 5 November 2026; Kohl’s, Staples and Academy were within about $30 of that in search results the same week.',
     },
     {
-      id: 'sunny-sf-t723016',
-      name: 'Sunny Health & Fitness SF-T723016',
-      category: 'The Sunny for Heavier Users and Faster Running',
-      badge: 'Widest Deck',
-      priceRange: '$799.99 at Sunny on 5 Nov 2026',
-      amazonUrl: 'https://www.amazon.com/s?k=Sunny+Health+Fitness+SF-T723016+Treadmill&tag=sktiger-20',
-      specs: '20 in. wide deck · 0.6–12 mph · 15 auto incline levels · 300 lb capacity · 3.0 peak HP',
+      id: "sunny-auto-incline-treadmill",
+      name: "Sunny Health & Fitness Auto Incline Treadmill",
+      category: "Closest on Amazon to the SF-T723016",
+      badge: "Closest on Amazon",
+      priceRange: "About $700 (Amazon, 6 Nov 2026)",
+      specs: "0–15% auto incline · 20 x 53 in. running surface · up to 10 mph · 2.5 HP brushless motor · 300 lb capacity · folds (listing)",
       pros: [
-        'A 20-inch-wide deck, the width this site recommends for running',
-        'Top speed of 12 mph, capacity of 300 lb and 15 powered incline levels agree with an independent review',
-        'Folds, despite a 172 lb unit weight',
-        'Bluetooth link to SunnyFit, with pulse grips and support for a chest strap',
+        "A 15% auto incline in 15 levels and a 20 by 53-inch surface, the SF-T723016’s incline and deck size",
+        "A 300 lb rating, the same as the SF-T723016",
+        "Arrives fully assembled; raise and lock the handlebar and it is ready",
+        "About $100 less than the SF-T723016 at Sunny",
       ],
       cons: [
-        'Deck length is 53 in. on Sunny’s page and 54 in. in the independent review; neither is a 60 in. running deck',
-        'Sunny’s own page gives the incline as 2–11% and 0–12%',
-        'Motor quoted only in peak horsepower',
+        "A 10 mph top speed against the SF-T723016’s 12",
+        "A 2.5 HP brushless motor, a smaller peak figure than the SF-T723016’s 3.0",
+        "Sunny calls it a walking pad; check the folded size, as it is bulkier than one",
       ],
-      bottomLine:
-        'The Sunny to consider if you want to run rather than walk, provided you are under about 6 ft and accept a 53 to 54-inch deck.',
-      description:
-        'The SF-T723016, sold as the Advanced Heavy Duty or Elite Smart Auto Incline treadmill, is the most running-oriented machine in Sunny’s mid-range. Sunny’s 5 November 2026 page lists a 3.0 peak horsepower motor, speeds of 0.6 to 12 mph, 15 automatic incline levels, a 53 by 20.1-inch running surface and a 300 lb maximum user weight, and an independent review by Torokhtiy (updated July 2025) gives the same capacity, speed range and 20-inch width with a 172 lb unit weight. The figures that do not line up are the deck length, 53 inches in Sunny’s table against 54 inches in the review’s, and the incline, which Sunny’s own page states as 2 to 11% in one place and 0 to 12% in another. A 53-inch deck is short for running at speed if you are tall; our belt size guide explains why. Sunny listed it at $799.99 on 5 November 2026, and Staples has shown it higher.',
+      bottomLine: "The Sunny on Amazon closest to the SF-T723016’s deck, incline and capacity, at a lower top speed.",
+      description: "We could not find the SF-T723016 listed on Amazon US under its model number, so this card shows the closest Sunny we could confirm there. Sunny sells this model as a walking pad, but it is closer to a compact folding treadmill, and its figures sit close to the SF-T723016's: the Amazon listing gives a running surface 20 inches wide and 53 inches long, 15 auto incline levels reaching a 15% maximum, a top speed of 10 mph, a 2.5 HP brushless motor, double-deck shock absorption, a 300 lb maximum user weight, 24 preset programs, pulse sensors, and Bluetooth connection to Sunny's free app. It arrives fully assembled: you raise and lock the handlebar and it is ready, and it folds for storage. Against the SF-T723016 you give up 2 mph of top speed and some peak motor rating, which matters if you want to run rather than jog; for incline walking and light jogging the two do the same job. The motor figure is a peak rating, like every Sunny's. Amazon listed it at $699.99 on 6 November 2026, as checked for our auto-incline treadmill guide.",
     },
   ],
   sections: [
@@ -166,11 +162,11 @@ export default {
             that makes the machines bad. It does mean you should read a Sunny listing the way this guide does.
           </p>
           <p>
-            If you only want the recommendation: the <a href="#sunny-sf-t4400smart" class="text-[#0F62FE] font-medium">SF-T4400SMART</a>
+            If you only want the recommendation: the <a href="#t4400" class="text-[#0F62FE] font-medium">SF-T4400SMART</a>
             is the sensible default for walking and light jogging, the
             <a href="#sunny-treadpad-100" class="text-[#0F62FE] font-medium">Treadpad 100</a> suits a desk,
             the <a href="#sunny-sf-t1407smart" class="text-[#0F62FE] font-medium">SF-T1407SMART</a> is the
-            cheapest way to walk uphill, and the <a href="#sunny-sf-t723016" class="text-[#0F62FE] font-medium">SF-T723016</a>
+            cheapest way to walk uphill, and the <a href="#current-range" class="text-[#0F62FE] font-medium">SF-T723016</a>
             is the Sunny to look at if you want to run.
           </p>`,
     },
@@ -217,7 +213,9 @@ export default {
             the figures Sunny publishes and the price shown that day. Sunny showed no compare-at prices on these
             machines that day, so the price is simply what the store charged. We have left out sold-out models
             and a handful of older listings carried over from previous years. The product cards below the table
-            carry only the figures on which Sunny and at least one independent source agree.
+            carry only the figures on which Sunny and at least one independent source agree. We could not find
+            the SF-T4400SMART or the SF-T723016 on Amazon US under their model numbers, so their cards show the
+            closest Sunny models we could confirm on Amazon, the SF-T7718 and the Auto Incline Treadmill.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[620px] w-full text-sm border-collapse">
             <thead>

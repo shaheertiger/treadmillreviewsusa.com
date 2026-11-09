@@ -57,34 +57,37 @@ export default {
           that appeared in search results on 5 November 2026; we have not checked their fitment. The T Series
           10 and Commercial 1250 figures on their cards were checked for our NordicTrack reviews in October
           2026; we could not read current prices on nordictrack.com on 5 November, so their cards carry no
-          price. We searched the US Consumer Product Safety Commission’s recall database for NordicTrack and
+          price. The C950i itself is sold only used, so its figures are in the sections below rather than on a
+          product card; the first card is the NordicTrack T 6.5 S, the cheapest new NordicTrack on Amazon, with
+          figures from our T 6.5 S review. We searched the US Consumer Product Safety Commission’s recall database for NordicTrack and
           found recalls of NordicTrack rowing machines (2025) and iSelect dumbbells (2024), and none of the
           C950i. We have not tested a C950i. We earn a commission if you buy through an Amazon link on this
           page; it does not change what we say.`,
   products: [
     {
-      id: 'nordictrack-c950i',
-      name: 'NordicTrack C950i',
-      category: 'Discontinued Folding iFIT-Compatible Treadmill',
-      badge: 'Used Only',
-      amazonUrl: 'https://www.amazon.com/s?k=NordicTrack+C950i+Treadmill&tag=sktiger-20',
-      priceRange: 'Discontinued: used only',
-      specs: '20 x 60 in. belt · folding SpaceSaver frame · model no. 831.25044.x · iFIT-compatible console',
+      id: 'nordictrack-t-6-5-s',
+      name: "NordicTrack T 6.5 S",
+      category: "Cheapest New NordicTrack, Instead of a Used C950i",
+      badge: "Instead of Used",
+      reviewUrl: '/nordictrack-t-6-5-s-treadmill/',
+      priceRange: "$649-$899",
+      amazonUrl: 'https://www.amazon.com/dp/B0193V3DJ6?tag=sktiger-20',
+      specs: "55 x 20 in. deck · 2.6 CHP · 0-10% incline · 0-10 mph · 300 lb capacity",
       pros: [
-        'A full 20 by 60-inch belt on a folding frame',
-        'Built-in programs that work without iFIT',
-        'Common parts such as walking belts and drive belts are still listed by third-party sellers',
+        "Runs in manual mode without an active iFit membership — speed and incline set by hand",
+        "2.6 CHP is adequate headroom for sustained incline walking",
+        "Vertical SpaceSaver fold with lift assist genuinely reclaims floor area",
+        "Heavily and regularly discounted, which is the main reason to consider it",
       ],
       cons: [
-        'No longer made, so no new warranty',
-        'iFIT ended support for older-generation machines in April 2023',
-        'Weight capacity, incline and motor figures rest on a single review',
-        'The one full independent review found it wobbly at incline for heavier runners',
+        "Five-inch display is small, and the machine is sold on content it does not show well",
+        "55-inch deck and a 10 mph ceiling rule out regular running",
+        "Closely named variants with different consoles make it easy to order the wrong one",
       ],
       bottomLine:
-        'Worth buying only cheaply, after a full test run, and only if you are happy to use it without iFIT. Otherwise a current T Series 10 is the safer buy.',
+        "The new NordicTrack to price a used C950i against: if the used one costs close to this, buy new for the warranty, accepting a shorter deck.",
       description:
-        'The C950i is a discontinued NordicTrack folding treadmill with a 20 by 60-inch belt, a SpaceSaver fold with assisted lift, FlexSelect adjustable cushioning and an iFIT-compatible console. Manual archives give its model number as 831.25044.0, and parts catalogues list later 831.25044.2 and 831.25044.5 versions. Garage Gym Reviews lists a 3.0 CHP motor, 0 to 12 mph, 0 to 15% incline, a 350 lb capacity, 32 workout programs, a 7-inch display and a 78 by 36 by 56-inch footprint, but we found no second source for those figures. It is only available used.',
+        "The T 6.5 S runs a 2.6 CHP motor against a 20 by 55-inch belt, with motorised incline to 10%, a top speed of 10 mph and a published 300 lb capacity. The console is a five-inch backlit display with roughly twenty onboard programmes, iFit-enabled and typically shipped with a trial membership, and it folds vertically with a lift-assisted mechanism. The hardware is ordinary for the price and coherent for walking. The thing to understand before buying is that NordicTrack is a content company selling equipment, the screen is the product being marketed, and at five inches this particular screen is a poor vehicle for the content it is advertising — which is why it is worth buying for what it does manually rather than for what the platform promises. It takes the slot the C950i itself held on this page: the C950i is discontinued and sold only used, mostly on local marketplaces rather than Amazon, and the T 6.5 S is the cheapest new NordicTrack we found on Amazon. Its 55-inch deck is shorter than the C950i's 60 inches, so for running look at the T Series 10 below.",
     },
     {
       id: 'nordictrack-t-series-10',
@@ -154,7 +157,9 @@ export default {
           </p>
           <p>
             If you want the same kind of machine new, NordicTrack’s T Series 10 is the closest current
-            equivalent and the Commercial 1250 the sturdier step up. We have not tested any of them.
+            equivalent and the Commercial 1250 the sturdier step up. Because a C950i can only be bought used,
+            and mostly not on Amazon, the cards below start with the cheapest new NordicTrack on Amazon, the
+            T 6.5 S, as the price point to weigh a used C950i against. We have not tested any of them.
           </p>`,
     },
     {

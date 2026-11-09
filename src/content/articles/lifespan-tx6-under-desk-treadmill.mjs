@@ -48,7 +48,9 @@ export default {
           found no recall. We have not tested the TX6, and none of these figures are our own
           measurements. Prices are those LifeSpan showed on 5 November 2026 and change often. We earn a
           commission if you buy through the Amazon links on this page; it does not change what we
-          say about any machine.`,
+          say about any machine. On 9 November 2026 we also read LifeSpan’s TR5000B Pro+ page and the
+          same tracker’s TR5000 page for the TR5000B card; the UREVO card repeats figures checked for
+          our auto incline treadmill guide.`,
   products: [
     {
       id: 'lifespan-tx6-glowup',
@@ -76,27 +78,27 @@ export default {
         'The TX6-GlowUp is LifeSpan’s heavy-duty under desk treadmill and, on 5 November 2026, the only one of its three desk treadmills that LifeSpan was not selling as a pre-order. LifeSpan, an authorised dealer and an independent spec tracker agree on a 20-inch-wide belt, a speed range of 0.4 to 6.0 mph, a 400 lb maximum user weight, no incline and a warranty of 10 years on the frame, two years on parts and one year on labour. LifeSpan rates it for seven hours of use a day, gives it a 0.7-inch phenolic deck on six compression shocks, aluminium side rails and a self-lubricating belt, and says it must go on a dedicated 115 V outlet that is not GFCI-protected. It is controlled by a remote and LED display, connects to the LifeSpan Fit app, and is limited to 4 mph when paired with the optional Omni Hub console. Its unit weight, step-up height, belt length and motor figure differ between sources, so none appears here. LifeSpan listed it at $1,399, down from $1,499, in black or white.',
     },
     {
-      id: 'lifespan-tr1200pro-glowup',
-      name: 'LifeSpan TR1200Pro-GlowUp',
-      category: 'Lower-Speed LifeSpan Desk Treadmill',
-      badge: 'Cheaper LifeSpan',
-      amazonUrl: 'https://www.amazon.com/s?k=LifeSpan+TR1200+GlowUp+Under+Desk+Treadmill&tag=sktiger-20',
-      priceRange: '$1,199 at LifeSpan, pre-order (5 Nov 2026)',
-      specs: '20 x 48 in. belt · 0.4–4.0 mph · 6 hr/day rated use · no incline · 10-yr frame warranty',
+      id: 'lifespan-tr5000b-pro-plus-glowup',
+      name: 'LifeSpan TR5000B Pro+ GlowUp',
+      category: 'The LifeSpan Desk Treadmill Rated for the Longest Day',
+      badge: 'Longer Rated Use',
+      priceRange: '$1,699 on Amazon (9 Nov 2026)',
+      amazonUrl: 'https://www.amazon.com/dp/B0BMMC4NST?tag=sktiger-20',
+      specs: '20 x 48.43 in. belt · 0.4–4.0 mph · 400 lb capacity · 9 hr/day rated use · no incline · 10-yr frame warranty',
       pros: [
-        'The same 20-inch belt width as the TX6 for about $200 less',
-        'A lower step-up at the belt, 4.6 inches by LifeSpan’s figure',
-        'The long-running TR1200 design, with the same 10-year frame, 2-year parts and 1-year labour terms',
+        'The same 20-inch belt width and 400 lb rating as the TX6',
+        'Rated for nine hours of use a day, two more than the TX6',
+        'Sold on Amazon, where LifeSpan’s TR1200Pro Glow-Up is not',
       ],
       cons: [
-        'Sold as a pre-order on 5 November 2026, so it ships when stock returns',
-        'Tops out at 4 mph, and LifeSpan rates it for six hours a day rather than seven',
-        'LifeSpan’s own page gives two different motor descriptions, and its capacity has been listed differently elsewhere',
+        'Tops out at 4 mph, against the TX6’s 6 mph',
+        'LifeSpan gives a 5.0 HP peak motor and an independent tracker a 4.5 HP peak figure, with no continuous rating from either',
+        'Shown as sold out on LifeSpan’s own store on 9 November 2026',
       ],
       bottomLine:
-        'For a desk walker of average build who never goes above a brisk walk and is willing to wait for stock.',
+        'For a desk walker who stays under 4 mph and wants LifeSpan’s longest daily-use rating; the TX6 is the one if you want more speed.',
       description:
-        'The TR1200Pro Glow-Up is the model that made LifeSpan’s name, in its current form. LifeSpan lists a 20 by 48-inch two-ply belt, a speed range of 0.4 to 4.0 mph that can be capped at 2 mph, a 330 lb maximum user weight, a 0.59-inch phenolic deck, a step-up of 4.6 inches at the belt and 5.25 inches at the side rails, and a recommended six hours of use a day. Its spec table gives a 3.5 HP peak brushless motor while its feature list describes a 3.0 HP continuous-duty motor, so we do not print either; an Amazon listing has also given a different capacity in the past, so heavier users should treat the TX6 as the safer LifeSpan. The warranty is 10 years on the frame, two on parts and one on labour. On 5 November 2026 LifeSpan listed it at $1,199, down from $1,299, as a pre-order.',
+        'The TR1200Pro Glow-Up, LifeSpan’s cheaper desk treadmill, is not sold on Amazon, so this card shows the LifeSpan desk treadmill that is: the TR5000B Pro+ GlowUp, the model above the TX6 in LifeSpan’s range. On 9 November 2026 LifeSpan’s product page and an independent walking-pad spec tracker agreed on a 20 by 48.43-inch belt, a speed range of 0.4 to 4.0 mph that can be capped at 2 mph, a 400 lb maximum user weight, a recommended nine hours of use a day and a warranty of 10 years on the frame, two on parts and one on labour. They disagree on the motor: LifeSpan’s page gives a 5.0 HP peak brushless motor and the tracker records a 4.5 HP peak figure from an earlier LifeSpan listing, and neither gives a continuous rating, so the card prints none. Against the TX6 it trades 2 mph of top speed for two more hours of rated daily use. LifeSpan’s store showed it as sold out that day; Amazon listed it at $1,699.',
     },
     {
       id: 'merach-novawalk-w50-trekpad',
@@ -122,27 +124,27 @@ export default {
         'The W50 TrekPad is the cheapest walking pad we cover that carries the same 400 lb rating as the TX6. MERACH’s product page on 5 November 2026 listed a 41.3 by 16.5-inch belt, a speed range of 0.6 to 4.0 mph, a 400 lb maximum user weight, a 1.25 HP continuous and 3.5 HP peak motor, a 69.2 lb unit weight and powered incline, with a two-year warranty and a 30-day return window; the capacity and belt figures matched the Amazon listing and independent coverage when we checked them for our heavy-user roundup. MERACH gives the incline as 12% while at least one published roundup describes it as 10%, so the card does not print a maximum. Set against the TX6, it is narrower, shorter, lighter and much less expensive, with a far shorter warranty and no stated daily-use limit. MERACH showed $299.99 against a $479.99 list price.',
     },
     {
-      id: 'imovr-unsit-desk-treadmill',
-      name: 'iMovR Unsit Desk Treadmill',
-      category: 'Wide-Deck Office Treadmill',
-      badge: 'Wider Still',
-      amazonUrl: 'https://www.amazon.com/s?k=Unsit+Under+Desk+Treadmill&tag=sktiger-20',
-      priceRange: '$2,595 at iMovR and InMovement (5 Nov 2026)',
-      specs: '30 x 40 in. walking surface · 0.3–2.0 mph · 162 lb unit · 5 in. step-up · lifetime frame warranty',
+      id: 'urevo-cyberpad-for-office',
+      name: 'UREVO CyberPad for Office',
+      category: 'Office Walking Pad With Powered Incline',
+      badge: 'Amazon Alternative',
+      priceRange: 'About $432 (Amazon, 6 Nov 2026)',
+      specs: '0–14% powered incline · 39.4 x 16.5 in. running area · 0.6–4.0 mph · about 63 lb · brushless motor',
       pros: [
-        'A 30-inch-wide walking surface, ten inches wider than the TX6',
-        'Built for very slow all-day walking, with sensors that stop the belt when you step off',
-        'A lifetime frame warranty from its maker, InMovement',
+        'A 14% powered incline on a pad that slides under a desk',
+        'Incline makes a speed-capped pad harder as you get fitter',
+        'A brushless motor, per UREVO',
+        'Speed lights and an app that logs your walks',
       ],
       cons: [
-        'About $1,200 more than the TX6, and capped at 2 mph',
-        'Its two sellers give different motor figures, and older listings gave different weight limits',
-        'At 162 lb and 39 inches wide it needs a desk with at least 40 inches between its legs',
+        'UREVO, the US Amazon listing and the EU manual give three different weight ratings, so none is on the card',
+        'A 39.4-inch belt and 4 mph top speed suit slow and moderate walking only',
+        'Narrower than the TX6 by more than three inches',
       ],
       bottomLine:
-        'For someone who walks very slowly for most of the day and finds even a 20-inch belt too narrow.',
+        'For office walking with incline at about a third of the TX6’s price, if you check the weight rating on the listing first.',
       description:
-        'The Unsit is the under desk treadmill to compare if the TX6’s width is the reason you are looking at it. Its maker, InMovement, and its main retailer, iMovR, both listed it at $2,595 on 5 November 2026, and both give a 30 by 40-inch walking surface, a 0.3 to 2.0 mph range, a 5-inch step-up, a 162 lb unit weight, a 400 lb maximum user weight and a lifetime frame, two-year parts and one-year labour warranty. InMovement gives a 2.75 HP motor; iMovR’s page gives both 2.75 HP and 2.0 HP and shows a three-year motor badge that its warranty text does not explain, so no motor figure appears here. It is not sold on Amazon; the button is a search for similar machines. Our guides to InMovement and to the iMovR bundle cover it in detail.',
+        'The wide InMovement Unsit that this review compares in the table below is sold through iMovR and InMovement, not on Amazon, and we found no desk treadmill on Amazon as wide that we could check. This card is the office pad we would look at on Amazon instead: UREVO’s CyberPad. UREVO lists a 0–14% powered incline in 14 levels, a 39.4 by 16.5-inch running area, 0.6 to 4.0 mph, a 63.1 lb unit weight and a 6.3-inch height, and an independent review and spec tracker gave the same speed, incline and weight when an earlier guide on this site checked them. The Amazon listing adds a 2.5 HP brushless motor and an app that logs your walks. The one figure we could not settle is capacity: UREVO’s page and an independent review give 400 lb, the US Amazon listing gave 242 lb and the EU manual 300 lb, so check the figure on the exact listing you buy from. It is narrower and shorter than the TX6 and has no daily-use rating; what it adds is incline. Amazon listed it at $431.99 on 6 November 2026.',
     },
   ],
   sections: [
@@ -170,8 +172,10 @@ export default {
             Buy the TX6 if your walking sessions are long, you weigh more than most budget pads are
             built for, or you want a deck wide enough that drifting sideways while you type stops
             mattering. Buy something cheaper if you will walk an hour a day or less, weigh under
-            about 220 lb, or want to jog. The cards above put it next to LifeSpan’s cheaper TR1200, a
-            $300 pad with the same rated capacity, and the wider and much dearer Unsit. We have not
+            about 220 lb, or want to jog. The cards above put it next to LifeSpan’s TR5000B Pro+, a
+            $300 pad with the same rated capacity, and an office pad with powered incline. LifeSpan’s
+            cheaper TR1200Pro and the wider Unsit are not sold on Amazon, so they appear in the
+            comparison table further down rather than on cards. We have not
             tested the TX6; everything here comes from LifeSpan and independent sources, checked on
             5 November 2026.
           </p>`,
@@ -458,9 +462,10 @@ export default {
           <p>
             <strong>TX6 or TR5000B Pro+?</strong> The TR5000B claims the same 400 lb, nine hours a day
             and a 5.0 HP peak motor, for $300 more, but it stops at 4 mph and its own page describes the
-            deck as both 0.7 and 1 inch thick. We could not cross-check its figures against an
-            independent source, so it is not on a card here. If you need nine hours of rated use, it is
-            the one to ask LifeSpan about.
+            deck as both 0.7 and 1 inch thick. On 9 November 2026 an independent
+            spec tracker agreed with LifeSpan on its belt, speed, capacity, daily use and warranty but
+            gave a 4.5 HP peak motor, and Amazon listed it at $1,699. It is on a card above because it is the LifeSpan desk treadmill Amazon
+            sells. If you need nine hours of rated use, it is the one to buy.
           </p>
           <p>
             <strong>TX6 or Unsit?</strong> The Unsit is 30 inches wide and built for slow all-day

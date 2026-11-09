@@ -563,7 +563,7 @@ export default {
       name: 'Merach 950 (NovaRow 950) Dual Resistance Wood Rower',
       category: 'Water-and-magnetic hybrid, folding',
       badge: 'Best Hybrid',
-      amazonUrl: 'https://www.amazon.com/s?k=MERACH+950+Foldable+Wooden+Rowing+Machine+Water+Electromagnetic&tag=sktiger-20',
+      amazonUrl: 'https://www.amazon.com/dp/B0CKH8L4M4?tag=sktiger-20',
       priceRange: '$540–$820',
       specs: 'Water tank plus 16-level electromagnetic resistance · wood frame · 78.7 x 19.7 in. in use · folds and stands upright · Bluetooth, Merach app',
       pros: [

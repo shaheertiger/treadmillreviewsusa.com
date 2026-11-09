@@ -2,7 +2,7 @@ export default {
   slug: 'best-converging-chest-press-machines',
   title: 'Best Converging Chest Press Machines (2026): Home and Commercial',
   description:
-    'Five converging chest press machines, home and commercial, checked against maker pages and dealers: path type, iso-lateral arms, weight, space and safe use.',
+    'Five converging chest press machines sold on Amazon, from a $190 folding press to a commercial-style decline press: path type, iso-lateral arms, weight, space and safe use.',
   crumbLabel: 'Best Converging Chest Press',
   breadcrumb: { name: 'Home Gym', url: '/home-gym/' },
   kicker: 'Buying Guide',
@@ -12,7 +12,7 @@ export default {
   socialProof: '1.6k',
   h1: ['Best Converging', 'Chest Press Machines'],
   standfirst:
-    'A converging chest press brings your hands together as you press, rather than pushing them straight out. Here are five machines whose makers say the path converges, from a home multi-press to commercial plate-loaded presses, and what to check on space, weight and set-up before one goes in your house.',
+    'A converging chest press brings your hands together as you press, rather than pushing them straight out. Here are five machines sold on Amazon whose makers say the path converges, from a folding budget press to a commercial-style plate-loaded press, and what to check on space, weight and set-up before one goes in your house.',
   ctas: [
     { label: 'See the Picks', href: '#quick-picks' },
     { label: 'Converging vs Parallel', href: '#converging-vs-parallel' },
@@ -23,21 +23,22 @@ export default {
           the word that matters most is often the hardest to pin down. A converging press moves
           your hands inward as you push; a parallel press does not; and plenty of listings imply
           one without saying it. We only included machines whose makers state the path
-          converges. The five below run from a budget home multi-press to commercial plate-loaded
-          machines, several of which are sold by quote, and the guide after them covers path
+          converges. The five below are all sold on Amazon and run from a folding budget press to
+          a commercial-style plate-loaded decline press, and the guide after them covers path
           types, adjustment, plate-loaded versus selectorized, and the space, weight and floor
           questions a 300-plus-pound machine raises in a home.`,
   note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          machines, and no figure on this page is our own measurement. Each was confirmed as
-          currently sold on 16 October 2026 on the maker's own store or product page (Life
-          Fitness for Hammer Strength, Hoist, Precor, Temple of Gainz and GMWD), and its press
-          path, machine weight, footprint and price were checked on that date against at least
-          one independent source — a dealer listing or an independent write-up. A machine is
-          described as converging only where its maker says so. A figure appears in a product's
-          specification line only where the maker and an independent source agree; where they
-          conflicted — on dimensions and weight for two machines and load capacity for another —
-          we left it out and say so on the card. Several commercial machines are sold by quote,
-          and prices we saw change often. We earn a commission if you buy through the Amazon links
+          machines, and no figure on this page is our own measurement. The GMWD V8 was checked on
+          16 October 2026 against GMWD and BoxRox. The other four replaced commercial and
+          direct-sold presses (Temple of Gainz, Hammer Strength, Hoist and Precor) that are not
+          sold on Amazon; they were checked on 9 November 2026 against the maker's own store or
+          Amazon listing and at least one independent source — a dealer listing or an independent
+          write-up. A machine is described as converging only where its maker or its maker's
+          listing says so, and where the maker's own pages disagree on that, the card says so. A
+          figure appears in a product's specification line only where the maker and an
+          independent source agree; where they conflicted — on weight, footprint and load
+          capacity for several machines — we left it out and say so on the card. Prices we saw
+          change often. We earn a commission if you buy through the Amazon links
           on this page; it does not change which products we list or what we say about them.
           <strong class="text-gray-900">What this page is, and is not.</strong> We review home
           fitness equipment; we are not giving medical, physiotherapy, coaching or nutrition
@@ -50,11 +51,14 @@ export default {
       id: 'quick-picks',
       heading: 'Our Picks at a Glance',
       html: `          <p>
-            Five machines, two built for homes and three from commercial lines that some home
-            owners buy. The short version: the GMWD V8 if you want converging presses at several
-            angles for the least money, the Temple of Gainz Omnipress if you have the room and want
-            the most adjustable home press, and the Hammer Strength Iso-Lateral Wide Chest if you
-            want a commercial benchmark with a published price. If you have not settled on a
+            Five machines, all sold on Amazon: three home presses and two commercial-grade
+            machines that home owners buy. The short version: the GMWD V8 if you want converging
+            presses at four angles from one machine, the Titan Fitness press if you want flat,
+            incline and decline from an adjustable bench for about $800, and the French Fitness
+            Tahoe if you want a commercial-style converging decline press. Commercial presses from
+            Hammer Strength, Hoist and Precor, and the Temple of Gainz Omnipress, are sold through
+            dealers or direct rather than on Amazon, so they are discussed in the guide but not
+            carded. If you have not settled on a
             machine yet, our guide to
             <a href="/commercial-gym-equipment/" class="text-[#0F62FE] font-medium">commercial gym equipment</a>
             explains what changes between home and commercial grades.
@@ -67,10 +71,10 @@ export default {
             </tr></thead>
             <tbody>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">GMWD FID Bench Press Shoulder Press Machine V8</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Budget home multi-press</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Converging scissor arms for flat, incline, decline and shoulder press, around $1,200</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Temple of Gainz The Omnipress</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most adjustable home press</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Converging Smith-style arms at 13 angles from -15 to 75 degrees</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Hammer Strength Plate-Loaded Iso-Lateral Wide Chest</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Commercial benchmark</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Iso-lateral converging arms, published price, 305 lb machine</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">HOIST ROC-IT Chest Press (RPL-5301)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Moving-seat design</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Independent converging arms with a seat that rocks with the press</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Precor Discovery Series Plate Loaded Chest Press (DPL0540)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Price-on-request commercial</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Converging pushing angles; footprint and weight confirmed by maker and dealer</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Titan Fitness Plate-Loaded Chest Press Machine</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most adjustable home press</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Flat, incline and decline FID bench, 1,000 lb capacity, about $800</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">French Fitness Tahoe P/L Decline Chest Press</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Commercial-style pick on Amazon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Iso-lateral converging arms on an 11-gauge decline press</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Body-Solid Pro ClubLine Leverage Bench Press (LVBP)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Easiest to adjust</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Maker-stated converging path with gas-assisted start positions</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">GMWD Chest Press Machine with Independent Converging Arms</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Cheapest converging press</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Folding press under $200; plan on the lowest listed capacity</td></tr>
             </tbody>
           </table></div>
           <p>
@@ -86,15 +90,15 @@ export default {
       products: true,
       html: `          <p>
             Each card gives the press path as its maker describes it, the figures we could confirm
-            from two sources, the price we saw on 16 October 2026 or a note that the machine is
-            sold by quote, and who it suits. Read the weight and footprint notes as carefully as
+            from two sources, the price we saw when we checked it, and who it suits. Read the weight and footprint notes as carefully as
             the path: these are heavy machines, and the commercial ones are built for gym floors.
           </p>
           <p>
-            The two home machines come first in the quick picks because they are what most readers
-            will actually buy. The three commercial machines are here because some home owners do
-            buy them, often used or remanufactured, and because they are the reference point every
-            home converging press is compared with.
+            Every machine here is sold on Amazon. The best-known converging presses — Hammer
+            Strength, Hoist, Precor and the Temple of Gainz Omnipress — are sold through dealers or
+            direct, not on Amazon, so the cards show the nearest Amazon alternatives, and the guide
+            below still uses those commercial machines as the reference point a home press is
+            compared with.
           </p>`,
     },
     {
@@ -107,39 +111,39 @@ export default {
           </p>
           <p>
             The first filter was the path. We included a machine only if its maker states that
-            the press converges: Hammer Strength describes converging arms on the Wide Chest,
-            Hoist describes independent, converging press arms, Precor describes converging
-            pushing angles, Temple of Gainz calls the Omnipress a converging Smith press, and GMWD
-            says the V8's scissor arms follow a converging path. We then confirmed each was on sale
-            on 16 October 2026 and compared its figures with an independent source: dealer
-            listings for the commercial machines, BoxRox for the GMWD V8, and Knurled News for the
-            Omnipress.
+            the press converges: GMWD says the V8's scissor arms follow a converging path and its
+            entry press has converging arms, Body-Solid describes converging unilateral movement
+            on the LVBP, and French Fitness's listing describes iso-lateral converging arms on the
+            Tahoe. Titan is the exception we flag: its Amazon listing says converging lever arms,
+            but its own store says only that the arms follow a natural arc. We then confirmed each
+            was on sale and compared its figures with an independent source: BoxRox for the GMWD
+            V8, Garage Gym Reviews for the Titan, a dealer for the French Fitness, and retailer
+            listings for the Body-Solid and the GMWD entry press.
           </p>
           <p>
             Where figures agreed, they went on the card. Where they did not, we left them out.
-            Hammer Strength's own pages give two different sets of dimensions for the Wide Chest,
-            and a dealer gives a third. Hoist and a dealer list dimensions and weights for the
-            RPL-5301 that differ by a few inches and a few pounds. GMWD and BoxRox agree on the V8's
-            load capacity, but several roundups give a figure twice as high, so we left capacity
-            out. We also left out per-arm load limits that only the maker publishes.
+            Body-Solid gives two different weights for the LVBP. Listings for the GMWD entry press
+            give capacities from 450 to 1,250 lb. French Fitness's weight and dimensions appear only
+            on its Amazon listing. GMWD and BoxRox agree on the V8's load capacity, but several
+            roundups give a figure twice as high, so we left capacity out. We also left out per-arm
+            load limits that only the maker publishes.
           </p>
           <p>
-            We excluded several machines. The Cybex Plate Loaded Chest Press states a converging
-            path, but several <a href="/life-fitness/" class="text-[#0F62FE] font-medium" data-autolink>Life Fitness</a> catalog pages list it as discontinued. Titan Fitness,
-            Force USA and Prime Fitness sell home and commercial chest presses, but
-            their product pages did not describe the path as converging, so they did not meet our
-            rule. We could not find a current maker listing for two other home presses that
-            hands-on coverage describes as converging, and we found no independent source to
-            cross-check a Temple of Gainz iso-lateral incline press that its maker does call
-            converging.
+            We excluded several machines. The Temple of Gainz Omnipress, the Hammer Strength
+            Iso-Lateral Wide Chest, the Hoist ROC-IT Chest Press and the Precor Discovery Series
+            plate-loaded chest press all have maker-stated converging paths, but none is sold on
+            Amazon: Temple of Gainz sells direct, and the commercial brands sell through their own
+            stores and dealers. The Cybex Plate Loaded Chest Press states a converging path, but
+            several <a href="/life-fitness/" class="text-[#0F62FE] font-medium" data-autolink>Life Fitness</a> catalog pages list it as discontinued. The Gronk Fitness seated
+            chest press is sold on Amazon, but we found no maker or dealer description of its path
+            as converging, so it did not meet our rule.
           </p>
           <p>
             We checked every brand against the US Consumer Product Safety Commission's recall
-            database on 16 October 2026. We found no recalls for Hammer Strength, Temple of Gainz
-            or GMWD. The database lists a 2006 recall of Hoist exercise benches and a December 2024
-            recall of Precor's Resolute cable multi-station; neither involves the machines on this
-            page. It also lists a 2018 recall of a <a href="/cybex-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Cybex</a> plate-loaded Smith press, a different
-            product from the discontinued chest press we excluded. If you are buying used
+            database, on 16 October 2026 for GMWD and on 9 November 2026 for Titan Fitness,
+            Body-Solid and French Fitness, and found no recalls of any of the five machines. Among
+            the brands we excluded, the database lists a 2006 recall of Hoist exercise benches, a
+            December 2024 recall of Precor's Resolute cable multi-station and a 2018 recall of a <a href="/cybex-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Cybex</a> plate-loaded Smith press; none is a chest press discussed here. If you are buying used
             commercial equipment, check the exact model against the recall database before you pay.
           </p>`,
     },
@@ -169,8 +173,9 @@ export default {
             Some machines also <strong>diverge</strong>, with the hands moving apart, usually on
             incline or shoulder-press paths, and Hammer Strength describes its iso-lateral bench
             press as having both diverging and converging motion. How much a path converges varies
-            a great deal between machines. Temple of Gainz publishes a convergence angle for the
-            Omnipress; most makers simply say the arms converge.
+            a great deal between machines. A few makers, such as Temple of Gainz, publish a
+            convergence angle; most, including every maker on this page, simply say the arms
+            converge.
           </p>
           <p>
             Makers often claim converging paths are more natural for the shoulder joint or give a
@@ -229,7 +234,7 @@ export default {
             horns on both sides, and you need enough plates to load the machine plus somewhere to
             keep them; most of the machines here have storage horns built in. You also need to
             know the starting resistance — the weight of the empty arm — because on some machines
-            it is significant. Hoist counter-balances the RPL-5301's arms specifically to lower it.
+            it is significant. Some commercial makers, Hoist among them, counter-balance the arms specifically to lower it.
           </p>
           <p>
             <strong>Selectorized</strong> machines carry a weight stack and a pin. Weight changes
@@ -261,14 +266,13 @@ export default {
             start, and so how deep a stretch you get at the bottom. A starting position that is
             too deep for your shoulders is a common source of discomfort; start shallow and work
             out from there.</li>
-            <li><strong>Handle width and grip.</strong> Multi-width handles, such as the three
-            width settings on the Omnipress, and rotating or multi-position grips, such as the
-            V8's dial-grips, let you match the press to your shoulder width and a comfortable wrist
-            angle.</li>
+            <li><strong>Handle width and grip.</strong> Multiple grip positions, such as those on
+            the Body-Solid LVBP, and rotating grips, such as the V8's dial-grips, let you match the
+            press to your shoulder width and a comfortable wrist angle.</li>
             <li><strong>Bench angle and travel on multi-presses.</strong> Machines that press at
             several angles need to move the bench as well as tilt it, or the handles end up in the
-            wrong place. The Omnipress and V8 both slide the bench forward and back as well as
-            changing its angle.</li>
+            wrong place. The V8 slides the bench forward and back as well as changing its angle,
+            and the Titan's FID bench has 13 depth positions.</li>
           </ul>
           <p>
             Two warnings. Very tall and very short lifters are the most likely to find a machine
@@ -286,8 +290,9 @@ export default {
             wrong.
           </p>
           <p>
-            <strong>Footprint.</strong> The machines on this page range from a home multi-press
-            about 67 inches long and wide to commercial presses that are well over six feet long.
+            <strong>Footprint.</strong> The machines on this page run from a folding press under
+            65 inches long to a 77-inch-long FID press, and commercial presses can be well over six
+            feet long.
             Add room to sit down and stand up, room to load plates on both sides — a 45 lb plate
             needs clear space beside the horn to slide on — and room for any plate storage that is
             not on the machine. Our guide to
@@ -296,8 +301,9 @@ export default {
           </p>
           <p>
             <strong>Machine weight.</strong> Commercial plate-loaded presses typically weigh
-            somewhere between 300 and well over 400 lb empty; the Hammer Strength Wide Chest is
-            305 lb and the Precor 353 lb. Add plates and a lifter and the total in one spot is far
+            somewhere between 300 and well over 400 lb empty; Hammer Strength gives 305 lb for its
+            Wide Chest and Precor 353 lb for its Discovery chest press. The home machines here are
+            lighter: the Titan is 155 lb and the V8 260 lb. Add plates and a lifter and the total in one spot is far
             more than a typical home treadmill puts on the floor. Freight is usually delivered to the kerb or the
             garage, not the room, so plan how the crate or parts will travel and whether you need
             help or a local fitness technician for assembly.
@@ -329,14 +335,14 @@ export default {
             its appeal. It still needs a few habits.
           </p>
           <ul>
-            <li><strong>Anchor it if the maker says to.</strong> Hammer Strength says its
-            plate-loaded machines have holes in the feet for anchoring to the floor. A loaded
+            <li><strong>Anchor it if the maker says to.</strong> Commercial makers such as Hammer
+            Strength drill the feet of plate-loaded machines for anchoring to the floor. A loaded
             machine can shift or rock on a smooth floor, especially when it is loaded unevenly.
             Follow the manual.</li>
-            <li><strong>Use the safety stops.</strong> The Omnipress has a safety stop system and
-            re-rack points through its travel, and Temple of Gainz says it is designed for training
-            without a spotter when used properly. Set stops and know where the re-rack points are
-            before you go heavy.</li>
+            <li><strong>Use the safety stops.</strong> Titan's listing says its press has safety
+            stops so you can push to failure without a spotter, and multi-angle presses such as the
+            Temple of Gainz Omnipress have re-rack points through their travel. Set stops and know
+            where the re-rack points are before you go heavy.</li>
             <li><strong>Load and unload evenly.</strong> Alternate sides so the machine is never
             heavily loaded on one arm, and never step away from a machine with plates on only one
             side.</li>
@@ -415,99 +421,99 @@ export default {
         "The V8 is a plate-loaded multi-press with independent scissor arms. GMWD says they mimic the converging path of a dumbbell press, and BoxRox describes the handles moving inward as you press. It covers flat, incline and decline chest press and seated shoulder press. GMWD and BoxRox agree it measures 67.3 in long, about 67 in wide and 59.6 in high, weighs 260 lb, uses a 3 x 3 in, 14-gauge steel frame and takes 2 in Olympic plates. Both list a per-arm capacity, but several roundups give a total twice as high, so we have left capacity out; confirm it with GMWD. Adjustment is the selling point: a sliding bench, adjustable arm height, rotating grips and an adjustable back and seat. A HypertroFit reviewer who tried it at a trade show called it one of the closest budget platforms to what home gyms need, with a good converging finish on incline but limited range on flat, decline and shoulder press. We saw it at $1,199.99, more in some colours. It is sold direct from GMWD.",
     },
     {
-      id: 'temple-of-gainz-omnipress',
-      name: 'Temple of Gainz The Omnipress',
-      category: 'Plate-loaded converging Smith-style press',
+      id: 'titan-plate-loaded-chest-press',
+      name: 'Titan Fitness Plate-Loaded Chest Press Machine',
+      category: 'Plate-loaded lever press with FID bench',
       badge: 'Most Adjustable Home Press',
-      amazonUrl: 'https://www.amazon.com/s?k=Temple+of+Gainz+Omnipress+Converging+Smith+Machine&tag=sktiger-20',
-      priceRange: '$2,799.99–$3,199.99',
-      specs: 'Converging Smith-style arms · 13 angles from -15 to 75 degrees · 30 mm carriage and 40 mm bench guide rods · 3 handle widths · 6 storage horns · 12 in pads',
+      amazonUrl: 'https://www.amazon.com/dp/B07N6KCHCQ?tag=sktiger-20',
+      priceRange: '$799.97–$799.99',
+      specs: 'Independent lever arms · flat, incline and decline FID bench · 13 bench depth positions · 5 lifting-arm positions · 64 in wide, 63–77 in long · 155 lb · 1,000 lb capacity · Olympic plates',
       pros: [
-        'Decline, flat, incline and steep incline pressing in one machine, with laser-marked angles',
-        'Three handle widths so grip width can be matched to the angle and the user',
-        'Safety stop system and re-rack points through the range of travel',
-        'Ranked third of the home chest presses one hands-on reviewer tried, praised for its feel',
+        'Flat, incline and decline pressing from one adjustable FID bench',
+        'Titan’s store and its Amazon listing agree on a 1,000 lb capacity and a 155 lb machine weight',
+        'Safety stops for pressing without a spotter, per Titan’s Amazon listing',
+        'The bench stores on the frame when you are not using it',
       ],
       cons: [
-        'Large; the same reviewer named size as its main drawback',
-        'Ships crated and disassembled; Temple of Gainz recommends a technician if you are inexperienced',
-        'The higher-priced versions add brackets for a separate digital resistance unit, which is not included',
+        "Titan’s Amazon title says converging lever arms, but its own store says only that the independent arms follow a natural arc",
+        'At 64 in wide and up to 77 in long, it needs a lot of floor, and Titan advises extra clearance around its machines',
+        'One-year warranty, per Titan’s store',
       ],
       bottomLine:
-        'For a dedicated home gym with room to spare and a lifter who presses at many angles. Measure carefully before ordering.',
+        'For a home lifter who wants flat, incline and decline presses on one plate-loaded machine for about $800. Sit on one first if you can, since Titan’s own page does not call the path converging.',
       description:
-        "Temple of Gainz calls the Omnipress a ground-up reworking of the converging Smith press: two guided arms that converge as you press, on a bench that tilts and slides. Temple of Gainz and Knurled News agree on the key figures for this version: 13 pressing angles from -15 degrees decline to 75 degrees incline, 30 mm guide rods on the carriage and 40 mm on the sliding bench, three handle widths, six storage horns and 12 in pads. The maker also publishes a convergence angle and a movement-arm capacity; we found no second source for either, so they are not on the card. It has a safety stop system and re-rack points through the range, and Temple of Gainz says it is designed for training without a spotter when used properly. A HypertroFit reviewer ranked it third of the home chest presses he tried, loved the feel, and called size the problem. We saw it from $2,799.99, and up to $3,199.99 with brackets for a Beyond Power Voltra unit, which is sold separately. It is sold direct from Temple of Gainz and ships by freight.",
+        "Titan’s plate-loaded chest press pairs two independent lever arms with an adjustable FID bench, so one machine covers flat, incline and decline pressing. Titan’s Amazon listing calls them converging lever arms; Titan’s own store says the independent arms follow a natural arc that mimics free weights, and does not use the word converging, so treat the path as something to try rather than a promise. Titan’s store and its Amazon listing agree on a 1,000 lb total capacity (the listing adds 500 lb per arm) and a 155 lb machine weight, and Titan’s store gives a footprint of 64 in wide by 63 to 77 in long, which Garage Gym Reviews repeats. The bench has 13 depth positions and the arms five positions, and Titan’s listing describes an 11-gauge steel frame, sealed bearings and safety stops. We saw it at $799.97 on Titan’s store, against $949.99, and $799.99 on Amazon on 9 November 2026. It replaces the Temple of Gainz Omnipress in this slot: the Omnipress is sold direct by Temple of Gainz, not on Amazon.",
     },
     {
-      id: 'hammer-strength-iso-lateral-wide-chest',
-      name: 'Hammer Strength Plate-Loaded Iso-Lateral Wide Chest',
-      category: 'Commercial plate-loaded converging press',
-      badge: 'Commercial Benchmark',
-      amazonUrl: 'https://www.amazon.com/s?k=Hammer+Strength+Plate-Loaded+Iso-Lateral+Wide+Chest&tag=sktiger-20',
-      priceRange: '$4,135',
-      specs: 'Iso-lateral converging arms · upright seated, decline-style press · plate-loaded with integrated plate storage · 305 lb machine',
+      id: 'french-fitness-tahoe-decline-chest-press',
+      name: 'French Fitness Tahoe P/L Decline Chest Press',
+      category: 'Commercial-style plate-loaded decline press',
+      badge: 'Commercial-Style Pick on Amazon',
+      amazonUrl: 'https://www.amazon.com/dp/B0B5738QXN?tag=sktiger-20',
+      priceRange: '$2,619–$2,899',
+      specs: 'Iso-lateral converging arms · seated decline-style press · spring-assisted seat height adjustment · 11-gauge steel frame · plate-loaded',
       pros: [
-        'A wide starting position and converging arms, which Hammer Strength says suit larger lifters',
-        'Iso-lateral arms, the design the brand is known for in commercial gyms',
-        'Published price at the Life Fitness online store, which is unusual for commercial strength',
-        'Feet are drilled for anchoring to the floor, per Hammer Strength',
+        'French Fitness’s Amazon listing states iso-lateral, converging arms, and a dealer describes the same machine’s handles starting wide and moving to the middle',
+        'A seated decline-style press, the role the Hammer Strength Wide Chest fills in commercial gyms',
+        'Spring-assisted seat height adjustment between users',
+        '11-gauge steel frame, per the listing and the dealer',
       ],
       cons: [
-        'At 305 lb before plates, it is a heavy machine for a home floor',
-        'Dimensions differ between sources, so measure against the dealer spec for your unit',
-        'A decline-style press; buyers who want flat or incline should look at other Hammer Strength models',
+        'Weight and dimensions appear only on the Amazon listing, so we left them out; get the spec sheet before ordering',
+        'A decline-style press only; for flat or incline work you need a different machine',
+        'Commercial-weight freight; plan the delivery route and assembly',
       ],
       bottomLine:
-        'For a serious home gym on a ground floor that wants a commercial press with a published price. Get the dimensions confirmed in writing.',
+        'For a ground-floor home gym or small studio that wants a commercial-style converging decline press it can order on Amazon. Confirm the footprint in writing.',
       description:
-        "Hammer Strength, part of Life Fitness, describes the Iso-Lateral Wide Chest as an upright seated press with a wide start whose converging arms follow a natural pressing path, and says it is designed to replicate a decline barbell press. A dealer selling remanufactured units agrees on the converging motion and describes it as suiting larger exercisers. Both put the machine at 305 lb. The arms are iso-lateral, with independent horns, and the frame has integrated plate storage. Hammer Strength's own pages give two different sets of dimensions and the dealer a third, so we have left the footprint out; get it confirmed for the unit you buy. Hammer Strength also publishes a per-arm plate limit we could not cross-check. We saw it at $4,135 on the Life Fitness online store, and Life Fitness also sells some units through an outlet. Hammer Strength says its plate-loaded machines have holes in the feet for anchoring. It is sold through Life Fitness and commercial dealers; if you see it elsewhere, check the seller is authorised.",
+        "French Fitness sells its Tahoe line of plate-loaded machines through fitness dealers and on Amazon. The decline chest press’s Amazon listing describes iso-lateral, independent arms that converge, an 11-gauge steel frame, spring-assisted seat height adjustment, molded foam pads and urethane grips. Fitness Superstore, a dealer, lists the same 11-gauge frame and says its silver Diablo decline press is the same machine, with handles that start wide and move toward the middle as you press. The Amazon listing also gives a machine weight and dimensions that we found nowhere else, so they are not on the card; ask for the spec sheet for your unit. We saw it at $2,619 on Amazon on 9 November 2026, against a $2,899 retail price at the dealer. It takes the slot the Hammer Strength Iso-Lateral Wide Chest held on this page: Hammer Strength is sold through Life Fitness and commercial dealers, not on Amazon, and this is the closest converging decline press we found there.",
     },
     {
-      id: 'hoist-roc-it-chest-press',
-      name: 'HOIST ROC-IT Chest Press (RPL-5301)',
-      category: 'Plate-loaded converging press with moving seat',
-      badge: 'Best Moving-Seat Design',
-      amazonUrl: 'https://www.amazon.com/s?k=Hoist+ROC-IT+Plate+Loaded+Chest+Press+RPL-5301&tag=sktiger-20',
-      priceRange: '$3,432–$3,815',
-      specs: 'Independent, converging press arms · ROC-IT moving seat · counter-balanced arms · plate-loaded with built-in storage',
+      id: 'body-solid-lvbp',
+      name: 'Body-Solid Pro ClubLine Leverage Bench Press (LVBP)',
+      category: 'Plate-loaded converging leverage bench',
+      badge: 'Easiest to Adjust',
+      amazonUrl: 'https://www.amazon.com/dp/B001BEZ99Q?tag=sktiger-20',
+      priceRange: '$1,095–$1,385',
+      specs: 'Converging, independent press arms · gas-assisted start positions · 2 x 3 in, 11-gauge steel mainframe · sealed-bearing pivots · Olympic plate storage horns',
       pros: [
-        'Hoist states the arms are independent and converging, and a dealer agrees',
-        'The seat rocks with the press, so the start and finish positions change with you',
-        'Counter-balanced arms for a low starting weight, per Hoist',
-        'Sold direct by Hoist with a published price, and discounted by some dealers',
+        'Body-Solid states a converging, unilateral path that mimics a barbell bench press',
+        'Gas-assisted start positions make seat and arm changes quick between users',
+        'Sealed-bearing pivots and built-in plate storage',
+        'At 30 in high, per Body-Solid, it suits low basement ceilings',
       ],
       cons: [
-        'Hoist and a dealer give slightly different dimensions and weight; both put it over 430 lb and more than 6.5 ft long',
-        'The moving seat is a distinctive feel that not everyone likes; try one if you can',
+        'Body-Solid gives the weight as 154 lb on its product page and 169 lb in its listing copy, so we left it out',
+        'A lying bench press rather than a seated press',
+        'Shown out of stock on Body-Solid’s own store when we checked, though Amazon listed it',
       ],
       bottomLine:
-        'For a ground-floor home gym or a small studio that wants a converging press with an unusual, guided feel. Confirm the footprint before ordering.',
+        'For a home gym that wants a commercial-grade converging bench press with quick adjustments and a published price.',
       description:
-        "Hoist builds its ROC-IT line around a seat that moves with you: on this chest press, Hoist says the handles start at chest level and the seat rocks so they finish level with the chin, keeping you aligned with the press arms. Hoist describes the arms as independent, converging and counter-balanced, for a low starting weight, and a dealer listing describes a synchronized converging motion that replicates dumbbell presses. It is plate-loaded with built-in plate storage. Hoist and the dealer give dimensions a few inches apart and machine weights a few pounds apart, so we have left both out of the specification; both sources put it at more than 6.5 ft long and over 430 lb, which is what matters for planning. Hoist also publishes exercise and storage capacities that we could not cross-check, and the dealer refers buyers to the manual. We saw it at $3,815 on Hoist's store and $3,432 at a dealer. Hoist sells it direct and through dealers.",
+        "Body-Solid’s Pro ClubLine LVBP is a plate-loaded leverage bench: you lie on the bench and press two independent arms that, in Body-Solid’s words, give converging unilateral movement and mimic the natural arc of a barbell bench press. Gas-assisted start positions set the seat and arms for different users, the pivots run on sealed bearings, and the 2 x 3 in, 11-gauge steel mainframe carries storage horns for Olympic plates, which are sold separately. Body-Solid gives the footprint as 69 x 53 x 30 in (L x W x H) on its product page and in its Amazon copy; we found no independent source for it, so it is not in the specification line. Body-Solid’s product page gives the weight as 154 lb and its listing copy as 169 lb, so we have left weight out too. We saw it at $1,095 on Amazon and as a $1,095 sale price against a $1,385 list price on Body-Solid’s store, where it showed as temporarily out of stock, on 9 November 2026. It replaces the Hoist ROC-IT Chest Press here: Hoist sells direct and through dealers, not on Amazon, and no moving-seat press is listed there.",
     },
     {
-      id: 'precor-discovery-plate-loaded-chest-press',
-      name: 'Precor Discovery Series Plate Loaded Chest Press (DPL0540)',
-      category: 'Commercial plate-loaded converging press',
-      badge: 'Price-on-Request Commercial',
-      amazonUrl: 'https://www.amazon.com/s?k=Precor+Discovery+Series+Plate+Loaded+Chest+Press&tag=sktiger-20',
-      priceRange: 'Price on request',
-      specs: '43 x 67 x 70 in (L x W x H) · 353 lb · independent arms with converging pushing angles · 6 weight horns storing over 800 lb of plates',
+      id: 'gmwd-folding-chest-press',
+      name: 'GMWD Chest Press Machine with Independent Converging Arms',
+      category: 'Folding budget converging press',
+      badge: 'Cheapest Converging Press',
+      amazonUrl: 'https://www.amazon.com/dp/B0C4L4CN2Y?tag=sktiger-20',
+      priceRange: '$189.99',
+      specs: 'Independent converging arms · 11 arm positions · upright, incline and flat bench · folds with a locking pin · detachable sleeves for 1 in and 2 in plates',
       pros: [
-        'The only commercial pick here with footprint and weight confirmed by both maker and dealer',
-        'Precor states independent arms and converging pushing angles',
-        'Six weight horns keep a full set of plates on the machine',
-        'At 43 in long, a relatively short footprint for a commercial plate-loaded press',
+        'The cheapest converging press we found, under $200 on Amazon',
+        'Folds with a locking pin; GMWD says folding saves over half the floor space',
+        'Takes standard 1 in and Olympic 2 in plates',
       ],
       cons: [
-        'Sold through Precor sales and dealers by quote; no published price',
-        'At 353 lb empty, plus up to 800 lb of stored plates, it needs a solid floor',
-        'Precor names the line Discovery Series on older sheets and Discovery Strength on newer ones, which can confuse searches',
+        'Listings give capacities from 450 lb to 1,250 lb; GMWD’s own listing says 450 lb total and 200 lb per arm, so plan on the lowest',
+        'A light 2 x 2 in, 14-gauge frame, nothing like the commercial machines discussed here',
+        'Near-identical machines are sold under other brand names; buy the GMWD listing if you want GMWD’s support',
       ],
       bottomLine:
-        'For a home gym or studio buying through a dealer, especially used or remanufactured, that wants a well-documented commercial press.',
+        'For a beginner or a small room that wants to try a converging press before spending four figures. Respect the lowest capacity figure.',
       description:
-        "Precor describes this Discovery Series machine as having independent movement arms and converging pushing angles to increase range of motion, with a strength curve that increases resistance towards the end of the press. Precor's product page and sell sheet and an independent dealer's listing agree that it measures 43 x 67 x 70 in and weighs 353 lb, and that six weight horns store over 800 lb of plates. That is the best-documented footprint of the commercial machines on this page, and its relatively short length is an advantage in a home. Precor publishes a maximum lift load that we could not cross-check, so it is not on the card. There is no published price: Precor's page directs buyers to its sales team, and dealers list it as well. Precor's December 2024 recall of its Resolute cable multi-station does not involve this machine. It is sold through Precor sales and commercial dealers; check that any other seller is authorised.",
+        "This is GMWD’s entry chest press, a folding bench with two independent arms that GMWD’s Amazon listing says converge. GMWD lists 11 leverage positions for the arms, three bench positions (upright, incline and flat) plus a leg attachment, precision bearings and detachable sleeves for 1 in and 2 in plates, and says it folds with a locking pin. Its listing gives 450 lb total, 200 lb per arm and 200 lb per weight holder, while other listings and roundups of what appears to be the same machine give 1,050, 1,200 or 1,250 lb, so we treat 450 lb as the working limit and leave capacity off the specification line. GMWD gives the footprint as 64.8 x 55.8 x 26.8 in; another retailer gives the same 64.8 in length with the other two figures arranged differently, so confirm it with GMWD. The frame is 2 x 2 in, 14-gauge steel. We saw it at $189.99 on Amazon on 9 November 2026. It takes the place the Precor Discovery Series chest press held on this page: Precor’s plate-loaded line is sold by quote through Precor and dealers, not on Amazon.",
     },
   ],
   faqs: [
@@ -521,7 +527,7 @@ export default {
     },
     {
       q: 'What is the best plate loaded chest press for a home gym?',
-      a: `For most home gyms, a plate-loaded multi-press with converging arms, such as the GMWD V8, gives the most pressing angles for the money. With more room and budget, the Temple of Gainz Omnipress is more adjustable. Commercial presses from Hammer Strength, Hoist or Precor are heavier and costlier but built for daily gym use.`,
+      a: `For most home gyms, a plate-loaded multi-press with converging arms, such as the GMWD V8, gives the most pressing angles from one machine. The Titan Fitness plate-loaded chest press covers flat, incline and decline for about $800, though Titan's own page does not call its path converging. Commercial-style presses such as the French Fitness Tahoe are heavier and costlier but built for daily gym use.`,
     },
     {
       q: 'What does iso-lateral mean on a chest press?',
@@ -580,10 +586,10 @@ export default {
   ],
   bottomLine: [
     `<strong class="text-white">For most home gyms, the GMWD V8 is the sensible converging press</strong>:
-            four pressing angles with a maker-stated converging path for around $1,200. With more
-            room and budget, the Temple of Gainz Omnipress is the most adjustable home option, and
-            a commercial press from Hammer Strength, Hoist or Precor makes sense mainly on a
-            ground floor, often bought used or remanufactured.`,
+            four pressing angles with a maker-stated converging path. The Titan Fitness press is
+            the cheaper way to get flat, incline and decline, the GMWD entry press the cheapest way
+            to try a converging path at all, and the French Fitness Tahoe or Body-Solid LVBP makes
+            sense for a ground-floor gym that wants commercial-grade steel.`,
     `Whichever you choose, confirm the maker calls the path converging, get the dimensions
             for your exact unit in writing, price in plates, and think about the floor before a
             300-plus-pound machine arrives. If you are not yet sure a dedicated press is the right

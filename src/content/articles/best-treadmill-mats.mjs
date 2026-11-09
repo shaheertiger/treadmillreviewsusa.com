@@ -2,7 +2,7 @@ export default {
   slug: 'best-treadmill-mats',
   title: 'Best Treadmill Mats (2026): Five Picks by Floor and Machine',
   description:
-    'Five treadmill mats checked against maker and retailer listings: the best overall, a budget mat, a 4 x 7.5 ft rubber mat for carpet and big machines, a 3/8 in. mat for upstairs, and a walking-pad size.',
+    'Five treadmill mats checked against maker and retailer listings: the best overall, a budget mat, a 4 x 7.5 ft rubber mat for carpet and big machines, 3/4 in. rubber tiles for upstairs, and a walking-pad size.',
   crumbLabel: 'Best Treadmill Mats',
   kicker: 'Buying Guide',
   updated: 'October 2026',
@@ -33,7 +33,9 @@ export default {
           are the ranges we saw on that date and change often, so confirm the size, thickness and
           price against the exact listing before ordering. We earn a commission if you buy through
           the Amazon links on this page; it does not change which products we list or what we say
-          about them.`,
+          about them. The Rubber-Cal tiles and the SuperMats 30GS replace two mats we could not link on
+          Amazon; their figures are those checked for our gym flooring and carpet mat guides in October
+          and November 2026.`,
   sections: [
     {
       id: 'quick-picks',
@@ -55,8 +57,8 @@ export default {
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">SuperMats TreadMat</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best overall</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Treadmill-specific vinyl mat in three lengths, US-made, around $50 to $75</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sunny Health &amp; Fitness Floor Protector Mat</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Budget</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Four sizes from about $20; the Large is 90.5 x 39.5 in.</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rubber-Cal Treadmill Mat (4 x 7.5 ft)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Extra-large and folding machines</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">48 in. wide and 90 in. long, in recycled rubber</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">FlooringInc Premium Rubber Mat (3/8 in.)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Upstairs rooms and noise</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Thickest and densest here, with a five-year warranty</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">BalanceFrom High Density Mat (2.5 x 5 ft)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walking pads</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">30 x 60 in. suits most compact pads, for well under $35</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rubber-Cal Eco-Sport 3/4 in. Rubber Tiles</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Upstairs rooms and noise</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3/4 in. recycled rubber, the thickest here, carried up a tile at a time</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">SuperMats 30GS (30 x 72 in.)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walking pads</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">30 x 72 in. firm vinyl covers most pads with a margin, for about $37</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rubber-Cal Treadmill Mat</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Carpet</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Heavy rubber that stays put and does not compress like foam</td></tr>
             </tbody>
           </table></div>
@@ -97,7 +99,7 @@ export default {
           <p>
             We then checked each figure against at least two sources. Where they agreed, the figure
             went into the specification line on the card. Where they did not — thickness on the
-            SuperMats and BalanceFrom mats, weight on the FlooringInc mat — we left the number out
+            SuperMats TreadMat, coverage on the Rubber-Cal tile packs — we left the number out
             and say so in the description. Mat listings are unusually inconsistent on these
             figures, which is a useful thing to know before you buy: if a specific thickness
             matters to you, check it on the exact listing and measure the mat when it arrives.
@@ -193,9 +195,8 @@ export default {
             <strong>Rubber</strong> mats — usually recycled tyre rubber — are heavier, denser and
             better at damping vibration. They grip both the floor and the machine, which is why we
             prefer them on carpet, and they resist indentation better than vinyl. The cost is
-            weight, price and, very often, a strong rubber smell when new. Vulcanized rubber, as
-            used in the FlooringInc mat, is generally sold as lower-odour than loose-bound crumb
-            rubber, but plan to air any rubber mat in a garage or outside for several days before
+            weight, price and, very often, a strong rubber smell when new. Vulcanized rubber is
+            generally sold as lower-odour than loose-bound crumb rubber, but plan to air any rubber mat in a garage or outside for several days before
             it goes into a bedroom or a closed room.
           </p>
           <p>
@@ -409,51 +410,50 @@ export default {
         "Rubber-Cal sells this mat specifically for treadmills in 4 x 6.5 ft and 4 x 7.5 ft sizes, and we chose the longer one for big machines because its 48-inch width is the real advantage. Most treadmill mats are 36 inches wide, which leaves almost no border under a wide commercial-style frame; this one leaves several inches on each side of a typical treadmill and still covers a long one. It is recycled tyre rubber, listed by retailers at 3/16 inch thick, and heavy enough that Lowe's says it generally stays in place under a treadmill without adhesive. Those same qualities make it our carpet pick: rubber grips the pile, does not compress the way foam does, and the extra width keeps fibre away from the motor's intake. Two caveats. One retailer's specification table gives a different thickness from its own title, which we read as a typo but mention anyway. And like most recycled rubber, it is likely to smell when new, so give it a few days in a garage first.",
     },
     {
-      id: 'flooringinc-premium-rubber',
-      name: 'FlooringInc Premium Rubber Mat (4 x 6 ft, 3/8 in.)',
-      category: 'Thick vulcanized rubber mat for upstairs rooms',
+      id: 'rubber-cal-eco-sport-tiles',
+      name: 'Rubber-Cal Eco-Sport 3/4 in. Interlocking Rubber Tiles',
+      category: 'Thick interlocking rubber tiles for upstairs rooms',
       badge: 'Best for Upstairs',
-      amazonUrl: 'https://www.amazon.com/s?k=FlooringInc+Premium+Rubber+Mat+4x6+3%2F8&tag=sktiger-20',
-      priceRange: '$140–$210',
-      specs: '48 x 72 in. · 3/8 in. thick · 100% recycled vulcanized rubber · 5-year warranty',
+      priceRange: '$121–$150 per 5 tiles',
+      specs: '19.5 x 19.5 in. tiles · 3/4 in. thick · recycled rubber · packs from 5 tiles',
       pros: [
-        'The thickest and densest mat here, which is what does real vibration work',
-        'Vulcanized rubber, sold as tougher and lower-odour than loose crumb rubber',
-        'Five-year warranty, the longest on this page',
-        'Independent treadmill coverage names it a top treadmill mat',
+        'At 3/4 inch, the thickest rubber on this page, which is what does real vibration work',
+        'Tiles can be carried upstairs a few at a time, unlike a single heavy rubber sheet',
+        'Lay as many as your treadmill’s footprint needs, and lift or replace one if it is damaged',
+        'Rubber-Cal and the Amazon listing agree on size, thickness and material',
       ],
       cons: [
-        'Expensive next to vinyl, and heavy to carry upstairs',
-        'At 72 inches long it is shorter than many full-size treadmills, so measure first',
-        'Reduces the thud below; it will not silence a running treadmill on a light floor',
+        'Expensive: roughly $9 to $11.50 a square foot by our arithmetic',
+        'Recycled rubber smell when new; air the tiles out before they go into a bedroom',
+        'Raises the deck by 3/4 inch, which matters under a low ceiling',
       ],
       bottomLine:
-        'For a treadmill in an upstairs room or a flat, where the people below are the concern. Check the length against your footprint before ordering.',
+        'For a treadmill in an upstairs room or a flat, where the people below are the concern; lay enough tiles to put the whole machine on rubber.',
       description:
-        "FlooringInc's Premium mat is a 4 x 6 ft sheet of 100% recycled vulcanized rubber, sold in several thicknesses, and the 3/8-inch version is the one we would put under a treadmill in an upstairs room. Thickness and density are what reduce the structure-borne thud that people below hear, and this is the thickest, densest mat on the page. The maker describes vulcanized rubber as tough, non-porous and low-odour, and backs the mat with a five-year warranty. TreadmillReviewGuru names it its top treadmill mat, noting that either thickness helps protect the floor and reduce sound. Two practical cautions. At 72 inches it is shorter than many full-size treadmills, so check the machine's overall length first; two mats butted together are the fix if it is too short. And it is heavy — listings disagree on exactly how heavy, so we have left the figure out — which matters on a staircase. Expect it to soften footfall noise below, not remove it.",
+        'Our earlier pick for upstairs rooms, a 3/8-inch FlooringInc rubber sheet, is sold by FlooringInc direct rather than on Amazon, so this card shows the thick rubber we would choose on Amazon instead. Eco-Sport is Rubber-Cal’s interlocking tile, and Rubber-Cal’s product page and the Amazon listing agree on 19.5 x 19.5-inch tiles, 3/4 inch thick, in recycled rubber; Rubber-Cal gives a hardness of 60 Shore A and says the tiles join with connecting pins along their sides. Thickness and density are what reduce the structure-borne thud that people below hear, and at 3/4 inch these are twice as thick as the sheet they replace. Tiles also solve the staircase problem: a large thick rubber sheet is a two-person carry, while a tile goes up under one arm. A typical folding treadmill’s footprint of about 36 x 78 inches takes two tiles across and four or five along, so count tiles rather than trusting a pack’s stated coverage. On 19 October a 5-tile pack was $149.63 on Amazon, sold by Rubber-Cal, and Rubber-Cal’s own store listed a 25-tile pack at $605.63, about $121 per five. Rubber-Cal’s warranty page gives three years on its flooring. Expect it to soften the noise below rather than remove it.',
     },
     {
-      id: 'balancefrom-walking-pad-mat',
-      name: 'BalanceFrom High Density Equipment Mat (2.5 x 5 ft)',
-      category: 'Compact mat sized for walking pads',
+      id: 'supermats-30gs',
+      name: 'SuperMats 30GS Heavy Duty Equipment Mat (30 x 72 in.)',
+      category: 'Compact firm mat for walking pads',
       badge: 'Best for Walking Pads',
-      amazonUrl: 'https://www.amazon.com/s?k=BalanceFrom+High+Density+Treadmill+Exercise+Bike+Equipment+Mat+2.5+x+5&tag=sktiger-20',
-      priceRange: '$15–$35',
-      specs: '30 x 60 in. (also 24 x 48 in. and 36 x 78 in.) · high-density mat',
+      priceRange: 'About $37 (Amazon, 6 Nov 2026)',
+      specs: '30 x 72 in. · about 1/4 in. thick · heavy-duty vinyl/PVC',
       pros: [
-        'The 30 x 60-inch size covers most compact walking pads with a margin',
-        'Small and light enough to slide away with the pad, or leave down under a desk',
-        'Among the cheapest mats from an established fitness brand',
-        'Also sold in a 3 x 6.5 ft size if you later move to a full treadmill',
+        'A 30 x 72-inch size that covers compact walking pads, including longer ones, with a margin',
+        'Firm vinyl that does not compress like soft foam',
+        'Under $40 from a maker that specialises in equipment mats',
+        'Light enough to slide away with the pad or leave under a desk',
       ],
       cons: [
-        'Too short for longer walking pads; measure yours first',
-        'BalanceFrom does not publish a thickness, and some owners report durability problems',
+        'At 72 in., too short for most full-size running treadmills',
+        'At 30 in. wide, too narrow for many folding machines',
+        'The Amazon listing gives little detail beyond size and intended machines',
       ],
       bottomLine:
-        'The right size and price for a walking pad on a hard floor. If your pad is longer than about 54 inches, buy a 30 x 72-inch mat instead.',
+        'The right size and price for a walking pad on a hard floor or low carpet, with room for the longer pads that a 60-inch mat would not cover.',
       description:
-        "Walking pads are much smaller than treadmills — usually 20 to 24 inches wide and 50 to 58 inches long — so a full-size mat wastes floor and money, and a 2.5 x 5 ft mat is about right. BalanceFrom sells this one in that 30 x 60-inch size, as well as 24 x 48 inches and 3 x 6.5 ft, for well under $35. Retail listings describe it as 1/4 inch thick, but Garage Gym Reviews notes that BalanceFrom does not publish the thickness itself and flags durability complaints, so we have left the figure out of the specification line. Listings also disagree on whether it is PVC or rubber. What it does reliably is protect a hard floor under a light machine and catch the dust a pad's belt sheds. The important check is length: a 60-inch mat suits a compact pad up to about 54 inches long. For a longer pad, such as one around 57 inches, step up to a 30 x 72-inch mat — the SuperMats TreadMat is sold in that size.",
+        'Walking pads are much smaller than treadmills — usually 20 to 24 inches wide and 50 to 58 inches long — so a full-size mat wastes floor and money. Our earlier walking-pad pick, a 2.5 x 5 ft BalanceFrom mat, could not be matched to a current Amazon listing, so this card shows the compact mat we would buy there instead. The 30GS is SuperMats’ mid-size heavy-duty equipment mat. The Amazon listing gives 30 x 72 in. and says it fits treadmills, ellipticals, rowers, exercise bikes, steppers and cross-country trainers, and distributors describe it as heavy-duty PVC; retailer listings give about 0.25 in. of thickness, with one quoting 0.27 in., so about 1/4 in. is a fair description. At 72 inches it covers even a longer pad of around 57 inches with a margin at each end, and its firmness spreads each foot’s load rather than letting the pad sink. The catch is that it is too short and narrow for most full-size treadmills, so treat it as a mat for pads and compact machines. Amazon showed it at about $37 on 6 November 2026, as checked for our treadmill mats for carpet guide.',
     },
   ],
   faqs: [

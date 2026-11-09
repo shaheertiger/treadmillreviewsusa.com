@@ -2,7 +2,7 @@ export default {
   slug: 'best-treadmill-accessories',
   title: 'Best Treadmill Accessories (2026): Seven Worth Buying',
   description:
-    'Seven treadmill accessories, one per category: a mat, 100% silicone lubricant, a chest strap, a foot pod, a surge protector (with the caveats), a fan and a cleaning cloth.',
+    'Seven treadmill accessories, one per category: a mat, 100% silicone lubricant, a chest strap, a pace sensor, a surge protector (with the caveats), a fan and a cleaning cloth.',
   crumbLabel: 'Best Treadmill Accessories',
   kicker: 'Buying Guide',
   updated: 'October 2026',
@@ -31,7 +31,11 @@ export default {
           sources disagreed on a figure, we left it out of the specification line. None of these
           figures are our own measurements; we have not tested these products. Prices are the
           ranges we saw on that date and change often, so confirm the price and specification
-          against the exact listing before ordering. The heart-rate monitor is a training tool, not
+          against the exact listing before ordering. The Stryd 5.0 foot pod we first carded is sold on
+          Stryd's own store rather than on Amazon, so on 9 November 2026 we replaced it with the Garmin
+          HRM 600, whose figures are those checked for our treadmill foot pod guide. The Panamax MD2
+          surge protector we first carded could not be found on Amazon US, so we replaced it with the
+          Tripp Lite SPIKECUBE, whose figures are those checked for our guide to the best surge protectors for treadmills. The heart-rate monitor is a training tool, not
           a medical device, and nothing here is medical advice. The surge protector section is
           general information, not electrical advice: your treadmill's manual takes precedence,
           and wiring questions are for a licensed electrician. We earn a commission if you buy
@@ -57,8 +61,8 @@ export default {
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Mat</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">SuperMats TreadMat</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Treadmill-length vinyl mat, protects the floor and the motor</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lubricant</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lube-N-Walk Lubricating Kit</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">100% silicone with a 24 in. wand that reaches under the belt</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Heart-rate monitor</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Polar H10</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Chest strap with Bluetooth and ANT+, and a replaceable coin cell</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Foot pod</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Stryd 5.0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Pace from your foot, for Zwift and watches, on any treadmill</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Surge protector</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Panamax MD2</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15 A, UL 1449 listed, plugs straight into the wall — only if your manual allows one</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Pace sensor</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Garmin HRM 600</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Treadmill pace and distance for compatible Garmin watches; Zwift runners need a foot pod</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Surge protector</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Tripp Lite SPIKECUBE</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">One outlet, 15 A, UL 1449 listed, plugs straight into the wall — only if your manual allows one</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Fan</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Vornado 630</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Compact, tilting, three speeds and a five-year warranty</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Cleaning</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">E-Cloth General Purpose Cloth</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Cleans with water, so nothing slippery or harsh goes on the belt</td></tr>
             </tbody>
@@ -169,9 +173,9 @@ export default {
             adapter to fit a 20-amp plug into a 15-amp device.
           </p>
           <p>
-            Our pick, the Panamax MD2, has two outlets, so if your manual specifies a single-outlet
-            device, leave the second outlet empty or choose a single-outlet unit that meets the same
-            ratings. Our full guide to
+            Our pick, the Tripp Lite SPIKECUBE, has a single outlet, which matches manuals that
+            specify one, and its own 15-amp breaker; if that breaker trips under the treadmill's
+            load, take the protector out and plug the treadmill straight into the wall. Our full guide to
             <a href="/treadmill-surge-protector/" class="text-[#0F62FE] font-medium">treadmill surge protectors</a>
             covers joule ratings, clamping voltage, when protectors wear out, and when whole-house
             protection or a dedicated circuit is the better answer. Anything involving wiring, a new
@@ -413,52 +417,50 @@ export default {
         "Treadmill grip sensors only read while you hold the rails, and holding the rails changes how you move, so if you train to heart-rate zones they are the weakest number on the console. A chest strap fixes that, and the Polar H10 is the long-standing reference choice. Polar lists it with Bluetooth and ANT+, a replaceable CR2025 coin cell rated at up to 400 hours, and water resistance to 30 metres; retailer spec sheets also list the older 5 kHz transmission some gym equipment uses. Because it speaks both main wireless standards, it pairs with most treadmill consoles, watches and apps, and Polar lists dual Bluetooth connections. TechRadar and other reviewers describe it as comfortable and very accurate. The common complaints are connection problems as the battery runs down and a strap that takes some adjustment to sit right. It is a training tool, not a medical device. Our heart-rate monitor guide compares it with optical armbands and cheaper straps.",
     },
     {
-      id: 'stryd-5',
-      name: 'Stryd 5.0 Foot Pod',
-      category: 'Category: Running Foot Pod',
-      badge: 'Best Foot Pod',
-      amazonUrl: 'https://www.amazon.com/s?k=Stryd+5.0+Running+Power+Meter+Foot+Pod&tag=sktiger-20',
-      priceRange: '$199–$299',
-      specs: 'Clips to the shoe · Bluetooth and ANT+ · USB-C magnetic charger · membership optional',
+      id: 'garmin-hrm-600',
+      name: "Garmin HRM 600",
+      category: "Category: Treadmill Pace Sensor",
+      badge: "Best Pace Sensor on Amazon",
+      priceRange: "Around $170",
+      amazonUrl: 'https://www.amazon.com/dp/B0F7Z6N7BR?tag=sktiger-20',
+      specs: "Chest strap · ANT+ + Bluetooth · rechargeable, up to 2 months at 1 hr/day · 5 ATM",
       pros: [
-        'Measures pace from your stride, so it works on any treadmill, connected or not',
-        'Bluetooth and ANT+, for watches, phones and Zwift',
-        'Membership is optional; the pod and free training plans work without one',
-        'Adds running power and form metrics for runners who want them',
+        "Garmin says it sends pace and distance from treadmill runs to compatible Garmin watches",
+        "Nothing to clip on a shoe, and it is a full heart rate strap too",
+        "Rechargeable, rated at up to two months at an hour a day",
+        "Garmin’s own suggested replacement for its discontinued foot pod",
       ],
       cons: [
-        'Expensive for a pace sensor; the lower price has been tied to promotions',
-        'Battery life is short next to a coin-cell sensor, so it needs regular charging',
-        'Overkill for walking or easy running',
+        "Pace and distance work only with compatible Garmin watches, and Garmin says not every watch supports every feature",
+        "Not a speed source for Zwift or other brands’ watches, and a lot to pay if you only want pace",
       ],
       bottomLine:
-        'For runners who train to pace or run in Zwift on a treadmill that does not broadcast its own speed.',
+        "For Garmin runners who want better treadmill pace from a sensor, not just the watch. Check your watch model first; Zwift runners need a foot pod instead.",
       description:
-        "A treadmill's displayed speed comes from the motor and can drift from the belt's real speed, and many machines cannot send their speed to apps at all. A foot pod sidesteps both problems by measuring pace from your shoe. The Stryd 5.0, launched in late 2025, is the current version of the pod most often recommended for this. It broadcasts over Bluetooth and ANT+, charges from a magnetic USB-C keychain charger, and Stryd says its paid membership is optional — the pod and its free training plans work without it. Zwift has long published guidance on using Stryd pods as a speed source in Zwift Run. The trade-offs are cost and battery. Stryd's US store has shown it at $199 against a $299 regular price, and independent coverage reports battery life of around 20 hours, which means charging it every week or two for a regular runner. It is for runners who train to pace; walkers do not need one.",
+        "Garmin no longer sells a foot pod, and when a runner asked on Garmin’s forum where to find one, a Garmin staff member pointed to this strap. Garmin’s product page and launch announcement say the HRM 600 sends pace and distance data from indoor track and treadmill runs to compatible Garmin smartwatches, and independent retail listings repeat that it needs a compatible watch for those metrics. It is also a capable heart rate strap: it transmits over ANT+ and Bluetooth, records on its own and syncs later, is rated 5 ATM, and is rechargeable with up to two months of battery at an hour a day. Garmin listed it at $169.99 on 15 October 2026, matching the launch price. The catch is scope: this is not a general-purpose foot pod. It feeds Garmin watches, not Zwift as a speed source and not other brands. Garmin also notes that some watches do not support every advanced feature, so confirm treadmill pace for your exact model before buying. It takes this slot because the universal foot pod most often recommended, the Stryd 5.0, is sold on Stryd's own store rather than on Amazon. If you run in Zwift or wear another brand's watch, that is still the device to look at; this strap is the pace sensor to buy on Amazon if you wear a Garmin.",
     },
     {
-      id: 'panamax-md2',
-      name: 'Panamax MD2 Surge Protector',
+      id: 'tripp-lite-spikecube',
+      name: 'Tripp Lite SPIKECUBE',
       category: 'Category: Surge Protector',
       badge: 'Best Surge Protector',
-      amazonUrl: 'https://www.amazon.com/s?k=Panamax+MD2+Surge+Protector&tag=sktiger-20',
-      priceRange: '$30–$70',
-      specs: '2 outlets · 15 A · 1,350 joules · UL 1449 3rd ed., 400 V VPR (line to neutral) · direct plug-in',
+      priceRange: '$12–$18',
+      specs: '1 outlet · 120 V, 15 A, 1,800 W · UL 1449 let-through 400 / 500 / 500 V · green protected and red grounded lights · direct plug-in',
       pros: [
-        'Plugs directly into the wall with no cord, so there is no strip or extension in the chain',
-        'Rated for 15 amps, with a 400-volt line-to-neutral protection rating',
-        'Disconnects power in a catastrophic surge rather than passing it through',
-        'Two status lights show protection and wiring faults; lifetime limited product warranty',
+        'A true single-outlet unit, matching the wording of manuals that ask for one',
+        'Plugs straight into the wall, with nothing else able to share it',
+        'Lights show both that protection is active and whether the outlet is grounded',
+        'Lifetime limited warranty and $5,000 of connected-equipment insurance in the US, Canada and Puerto Rico',
       ],
       cons: [
-        'Many treadmill makers say to plug directly into the wall — check your manual first',
-        'Two outlets; where a manual calls for single-outlet, leave the second empty or choose a single-outlet unit',
-        'Not for treadmills with a 20-amp plug',
+        'Only if your manual permits a surge protector; listings do not say which protection mode the 400 V figure belongs to',
+        'Has its own 15-amp circuit breaker, which could trip under a heavy treadmill load before the wall breaker does',
+        'Joule rating is listed inconsistently, so we left it off this line; check the exact listing',
       ],
       bottomLine:
-        'Only for treadmills whose manual permits or recommends a surge protector, with a standard 15-amp plug, and with nothing else plugged in.',
+        'Only for treadmills whose manual permits or recommends a surge protector, with a standard 15-amp plug. If its breaker ever trips, take it out and plug the treadmill straight in.',
       description:
-        "Start with the caveat, because it decides whether you need this at all: many treadmill manufacturers tell owners to plug the treadmill directly into a grounded wall outlet with nothing in between, and if yours does, follow it. Where a manual permits or recommends a surge protector, the requirement is usually specific — a UL 1449 listing, a suppressed voltage rating of 400 volts or less, a 15-amp rating and a status light. The Panamax MD2 meets those on paper. Panamax lists it at 15 amps, 1,350 joules and a UL 1449 3rd edition voltage protection rating of 400 volts line to neutral, with two status lights and circuitry that disconnects power in a catastrophic surge. It plugs straight into the wall, so there is no cord to overheat. It has two outlets: use one, for the treadmill only. It is not for treadmills with a 20-amp plug. Our surge protector guide covers every caveat in detail.",
+        'Start with the caveat, because it decides whether you need this at all: many treadmill manufacturers tell owners to plug the treadmill directly into a grounded wall outlet with nothing in between, and if yours does, follow it. Where a manual permits or recommends a surge protector, the requirement is usually specific — a UL 1449 listing, a suppressed voltage rating of 400 volts or less, a 15-amp rating and a status light, sometimes a single outlet. Tripp Lite, now part of Eaton, sells the SPIKECUBE as a one-outlet personal surge protector, and it is the single-outlet device we could verify most fully. Tripp Lite\'s listing and independent retailers agree that it plugs directly into the wall, has one socket, is rated 120 volts, 15 amps and 1,800 watts, and carries UL 1449 let-through figures of 400, 500 and 500 volts, with a green light for protection and a red one for grounding. The listings do not label which figure applies to which protection mode, so if your manual sets a 400-volt limit, it is worth a call to Tripp Lite to confirm. Tripp Lite and most retailers give it 600 joules, but one distributor lists a lower figure, so we have left joules out of the specification line. It contains its own 15-amp breaker, which could trip on a big motor load. It is not for treadmills with a 20-amp plug. Our surge protector guide covers every caveat in detail.',
     },
     {
       id: 'vornado-630',

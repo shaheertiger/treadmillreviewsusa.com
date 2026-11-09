@@ -496,7 +496,7 @@ export default {
       name: 'Bells of Steel Adjustable Competition Kettlebell',
       category: 'Internally plate-loaded competition kettlebell, 0.5 kg steps',
       badge: 'Best for Small Steps',
-      amazonUrl: 'https://www.amazon.com/s?k=Bells+of+Steel+Adjustable+Competition+Kettlebell+12-20.5kg&tag=sktiger-20',
+      amazonUrl: 'https://www.amazon.com/dp/B0D38BLJQW?tag=sktiger-20',
       priceRange: '$199.99–$332.99',
       specs: '12–20.5 kg in 0.5 kg steps (18 settings); 12–32 kg with the expansion pack · steel shell, iron plates · 35 mm handle · plates bolted in with the supplied key and wrench',
       pros: [

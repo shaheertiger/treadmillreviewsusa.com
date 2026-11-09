@@ -37,7 +37,9 @@ export default {
           and on independent reviewers' Amazon links; confirm the seller on the listing. A figure
           appears in a product's specification line only where sources agree; where they conflicted
           — on rider height ranges, unit weights and weight limits — we left the figure off the card
-          and say so in the text. Prices are those we saw on 19 October 2026 and change often, so
+          and say so in the text. BowFlex's C6, the IC4's twin, is sold on BowFlex's store rather than
+          on Amazon, so on 9 November 2026 its card became Horizon's 5.0U upright, whose figures are
+          those checked for our exercise bikes for seniors guide; the C6 is still discussed below. Prices are those we saw on 19 October 2026 and change often, so
           confirm the price, seller and model against the exact listing before you order. We earn a
           commission if you buy through the Amazon links on this page; it does not change which
           products we list or what we say about them. <strong class="text-gray-900">What this page is,
@@ -65,7 +67,7 @@ export default {
             </thead>
             <tbody>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Schwinn IC4</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most homes</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">100 magnetic levels, 330 lb rating, works with Zwift, Peloton and JRNY apps; $899 on Schwinn</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">BowFlex C6</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">When the IC4 is out of stock</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The IC4's twin under the BowFlex name, same published figures and price</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon 5.0U Upright Bike</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Riders who prefer to sit upright</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A step-through upright from the IC4’s parent company, 300 lb rating, about $549</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Keiser M3i Indoor Bike</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Shared households, very tall or short riders</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Fits 4 ft 10 in. to 7 ft, 350 lb rating, studio-grade build; about $2,985</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Schwinn IC3</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">No apps, no outlet</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Friction resistance and a battery console; $699</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">YOSUDA Indoor Cycling Bike</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The lowest price, shorter riders</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Friction pad, 35 lb flywheel, 25–35 in. inseam on the listing; about $270–$340</td></tr>
@@ -485,27 +487,25 @@ export default {
         "The IC4 is an indoor cycling bike without a built-in screen, and for most homes that is its strength. Schwinn's page and independent reviews from Garage Gym Reviews and OutdoorGearLab agree on 100 levels of magnetic resistance, a 40 lb flywheel, a 330 lb maximum user weight, a 54.6 by 30.7-inch footprint, a backlit LCD console and dual-sided pedals with SPD clips and toe cages. The warranty is 10 years on the frame, three years on parts and electronics and one year of labor. It connects over Bluetooth to apps on your own device; Schwinn describes the connection as partial FTMS and lists JRNY, Peloton, Zwift, Kinomap and Explore the World, each with its own subscription. On 19 October Schwinn had it at $899 against a $999 list price; it was $799 on 16 October, so watch for sales. Schwinn's specification table gives a recommended rider height of 5 ft 1 in. to 6 ft 4 in., but its FAQ says 4 ft 6 in. to 6 ft 6 in.; confirm before ordering if you are near either end. Reviewers find its console metrics approximate, which matters only if you train by numbers.",
     },
     {
-      id: 'bowflex-c6',
-      name: 'BowFlex C6 Bike',
-      category: 'The Same Bike Under Another Name',
-      badge: 'IC4 Alternative',
-      amazonUrl: 'https://www.amazon.com/s?k=BowFlex+C6+Bike&tag=sktiger-20',
-      priceRange: '$899–$999',
-      specs: '100 magnetic resistance levels · 40 lb flywheel · 330 lb max user · 54.6 x 30.7 in. footprint · dual-sided SPD and toe-cage pedals · 10-yr frame, 3-yr parts and electronics, 1-yr labor warranty',
+      id: "horizon-5-0u-upright-bike",
+      name: "Horizon 5.0U Upright Bike",
+      category: "Best Upright Bike From the Same Parent Company",
+      badge: "Upright Alternative",
+      priceRange: "$499–$799",
+      specs: "300 lb max user · step-through upright frame · high-contrast LCD · Bluetooth FTMS · lifetime frame, 1-yr parts and labor warranty",
       pros: [
-        'Matches the IC4 on every published figure, from footprint to warranty',
-        'BowFlex lists JRNY, Peloton and Zwift compatibility over Bluetooth',
-        'Standard 9/16-inch pedal threads, so you can fit your own pedals',
-        'A useful second source when the IC4 is out of stock or a sale favors one brand',
+        "A step-through upright frame, described as such by Horizon and Dick’s Sporting Goods",
+        "Much shorter than any recumbent here, at 46 inches by Horizon’s figure",
+        "The same high-contrast display and fine resistance control as the 5.0R",
+        "Seat adjusts both up and down and forward and back",
       ],
       cons: [
-        'Nothing to choose between it and the IC4 except price and availability',
-        'Like the IC4, no built-in screen or workouts without an app',
+        "A saddle with no backrest, so it suits riders who are steady on a bicycle seat",
+        "Dick’s customer reviewers mention a hard seat and some app-pairing trouble",
+        "One year of cover on parts and labor",
       ],
-      bottomLine:
-        'Buy whichever of the C6 and IC4 is cheaper on the day; on published figures they are the same bike.',
-      description:
-        "BowFlex and Schwinn Fitness are sister brands — their stores share a sales line, and Johnson Health Tech now runs BowFlex — and the C6 is the IC4 under the BowFlex name. On 19 October BowFlex's page gave the same 54.6 by 30.7 by 51.8-inch dimensions, the same 113.6 lb weight with dumbbells, the same 330 lb maximum user weight, a belt-driven 40 lb flywheel with 100 magnetic resistance levels, dual-sided SPD and toe-cage pedals, and the same 10-year frame, three-year parts and electronics, one-year labor warranty. OutdoorGearLab treats the two as one design ('the IC4/C6'), and Garage Gym Reviews lists the C6 with the same 100 magnetic levels, 40 lb flywheel and 330 lb rating. BowFlex lists JRNY, Peloton and Zwift compatibility, says the pedals take any standard 9/16-inch adult bicycle pedal, and gives a recommended rider height of 5 ft 1 in. to 6 ft 4 in. It was $899 against a $999 list price. It is on this list because the two bikes go in and out of stock and on and off sale at different times, and knowing they are the same machine stops you paying more for a name.",
+      bottomLine: "For riders who would rather sit upright on a step-through frame than lean over a studio bike, from the same parent company as the IC4, in less floor space.",
+      description: "BowFlex's C6, which is the Schwinn IC4 under another name, is sold on BowFlex's store rather than on Amazon, so this card shows a different bike from the same parent company, Johnson Health Tech, that Amazon does sell: Horizon's 5.0U upright. It suits riders who find a studio bike's forward lean uncomfortable. Most upright bikes make you lift a leg over the frame; the 5.0U is one of the few home uprights whose maker describes a step-through frame, and Dick's Sporting Goods' listing says the same. Horizon and Dick's agree on a 300 lb maximum user weight and a warranty of lifetime on the frame and one year on parts and labor. Horizon lists electronically controlled magnetic resistance, a high-contrast LCD, five programs, Bluetooth FTMS for apps, a fan, a tablet holder and a USB-A port, with a seat that adjusts vertically and horizontally; one overseas retailer lists 50 resistance levels where Horizon lists 100, so we have kept the count off the card. Horizon gives its size as 46 by 22.4 by 53 inches and its weight as 87 lb, a smaller footprint than the IC4. Against the IC4 it gives up the 40 lb flywheel, SPD pedals and a 330 lb rating; Dick's customer reviews mention a hard seat and some app-pairing trouble. On 19 October 2026 Horizon had it at $549 against a $799 list price; its figures are those checked for our exercise bikes for seniors guide.",
     },
     {
       id: 'keiser-m3i-indoor-bike',

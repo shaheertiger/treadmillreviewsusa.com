@@ -23,7 +23,8 @@ export default {
           to "a frame with a dark screen on it".`,
   note: `<strong class="text-gray-900">How we assessed this.</strong> We have not tested these
           machines ourselves. We compared what each one does with its subscription cancelled or
-          declined, using manufacturer documentation and published specifications. Subscription pricing and what each tier unlocks change frequently and
+          declined, using manufacturer documentation and published specifications; the NordicTrack T Series 5's
+          figures are those checked for our iFIT treadmill guide against its Amazon listing and NordicTrack's specification. Subscription pricing and what each tier unlocks change frequently and
           vary by region; the figures below are indicative and should be confirmed with the
           manufacturer before you buy.`,
   sections: [
@@ -391,27 +392,27 @@ export default {
         'This is the best of the optional-subscription machines, and the distinction matters: with nothing paid you keep full manual speed and incline control, a small set of onboard programs, and a working metric display. It is a real treadmill in that state, not a diminished one, and it carries a genuine 60-inch deck at under $1,200 — the cheapest route to that specification here. It also folds, which nothing above it on this page does. Two honest caveats. Owners report that it prompts for the subscription during ordinary use, not constantly but often enough to notice, and if that would irritate you daily it is worth knowing before you buy. And automatic incline adjustment — the trainer changing the grade for you — is behind the fee, so structured hill sessions are manual. Within those limits, a good buy.',
     },
     {
-      id: 'nordictrack-c-700',
-      name: 'NordicTrack C 700',
+      id: 'nordictrack-t-series-5',
+      name: 'NordicTrack T Series 5',
       category: 'Cheapest Machine That Still Works Unpaid',
       badge: 'Budget Option',
-      reviewUrl: '/nordictrack-c-700-treadmill/',
-      priceRange: '$599-$799',
-      specs: 'Subscription optional · basic manual mode · minimal onboard programs · 55 in. deck',
+      priceRange: 'About $600 (Amazon, 6 Nov 2026)',
+      specs: '55 in. belt length · 0–10 mph · 0–10% incline · 300 lb capacity · LCD; iFIT runs on your own device',
       pros: [
-        'Least expensive machine here by a wide margin',
-        'Manual speed and incline work with nothing paid',
-        'Simple console with little to navigate',
-        'Assisted fold is manageable alone',
+        'The least expensive machine here by a wide margin',
+        'With no membership it runs from its own LCD console as a plain treadmill',
+        'A 0–10% incline is enough for steady incline walking',
+        'If you later want iFIT, it uses the cheaper Train membership through your own phone or tablet',
       ],
       cons: [
-        'Console is close to bare without a subscription — few programs, minimal history',
-        '55-inch deck limits it to walking and light jogging',
+        'A 55-inch belt and 10 mph top speed suit walking and jogging more than running',
+        'No touchscreen and no built-in workouts worth the name without iFIT',
+        'Lower 300 lb rating and a smaller motor than the machines above it',
       ],
       bottomLine:
-        'Functional unpaid but visibly diminished. Buy it as a cheap walking machine, not as a subscription-free alternative to the Sole.',
+        'Functional unpaid but basic. Buy it as a cheap walking and jogging machine, not as a subscription-free alternative to the Sole.',
       description:
-        'Included as the honest bottom of the range. The C 700 does run without a subscription — manual speed and incline both work, and you can walk or jog on it indefinitely without paying anyone. But this is the machine that most clearly shows what "subscription-optional" can mean in practice: the console is nearly bare in that state, with very few onboard programs and minimal history, and much of what the display is for simply is not there. The 55-inch deck also confines it to walking and light jogging regardless. Our view is that it is a reasonable cheap walking treadmill that happens to work unpaid, rather than a genuine member of this category. If subscription independence is your actual priority, the Sole F63 costs a few hundred more and is a materially better machine on every measure that matters here.',
+        'Included as the honest bottom of the range, and as the closest Amazon equivalent to NordicTrack\'s C 700, which NordicTrack sells on its own store rather than on Amazon. The T Series 5 is NordicTrack\'s entry treadmill. The Amazon listing describes an LCD for your live stats and a place for your own device, a 0–10 mph speed range, a 0–10% incline and KeyFlex cushioning, and it is explicit that iFIT runs from your phone or tablet with a Train membership, in which case the treadmill changes its speed and incline to follow the trainer. NordicTrack\'s specification gives a 55-inch belt length and a 300 lb maximum user weight. With nothing paid, you are left with what the console does on its own: set the speed and incline and walk or jog. That is a perfectly usable treadmill, but it shows what subscription-optional means at this price: the automatic control that makes the machine appealing is the part that needs the membership, and the 55-inch belt confines it to walking and jogging either way. Our view is that it is a reasonable cheap walking treadmill that happens to accept a subscription, not a no-subscription machine in the Sole sense. Amazon listed it at $599.99 on 6 November 2026.',
     },
   ],
   faqs: [

@@ -26,8 +26,9 @@ export default {
           independent review or retailer listing. A figure appears in a card's specification line
           only where those sources agree; where they disagreed — battery hours on the COROS POD 2,
           for example — we left the figure out and say so in the text. None of these figures are
-          our own measurements. Prices are those we saw on the makers' stores on 15 October 2026
-          and change often, and compatibility lists change with firmware, so confirm the price and
+          our own measurements. Prices are those we saw on the makers' stores on 15 October 2026,
+          or on Amazon on 9 November 2026 for the Garmin HRM-Fit, which we checked against Garmin's
+          manual and independent reviews on that date, and change often, and compatibility lists change with firmware, so confirm the price and
           that the sensor pairs with your exact watch or app before you order. We earn a commission
           if you buy through the Amazon links on this page; it does not change which products we
           list or what we say about them.`,
@@ -61,7 +62,7 @@ export default {
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">COROS POD 2</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">COROS watch owners</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$99, self-calibrating, but works only with COROS watches</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Garmin HRM 600</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Garmin owners who want nothing on the shoe</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Chest strap that Garmin says sends treadmill pace and distance to compatible watches</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NPE Runn</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">One home treadmill, several runners</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Reads the belt rather than your stride; Zwift lists it as a treadmill sensor</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Stryd Duo 5.0</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Data-led runners only</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Two pods for left-right metrics; more than treadmill pace needs</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Garmin HRM-Fit</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Garmin runners who train in a sports bra</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Clips to a sports bra; Garmin says it sends treadmill pace and distance to compatible watches</td></tr>
             </tbody>
           </table></div>
           <p>
@@ -129,8 +130,10 @@ export default {
           <p>
             That left Stryd and the COROS POD 2 from the original list. To give readers a real
             choice we added three currently sold alternatives that do the same job in a different
-            way: Stryd's two-pod Duo, Garmin's HRM 600 chest strap, and the Runn sensor from North
-            Pole Engineering, which Zwift lists as its compatible treadmill sensor.
+            way: Garmin's HRM 600 chest strap and HRM-Fit clip-on sensor, and the Runn sensor from North
+            Pole Engineering, which Zwift lists as its compatible treadmill sensor. Stryd's two-pod Duo,
+            which an earlier version of this page carded, is sold direct by Stryd rather than on Amazon,
+            so the Garmin HRM-Fit, which is sold on Amazon, took its place.
           </p>
           <p>
             <strong>Safety check.</strong> We searched the US Consumer Product Safety Commission's
@@ -490,27 +493,28 @@ export default {
         'Runn takes the opposite approach to a foot pod. It fixes to the rear of the treadmill frame and times marks on the belt as they pass under its sensor, so it reports the belt’s actual speed whoever is running. North Pole Engineering says it works on virtually any treadmill, provides ANT+ and Bluetooth connectivity and tracks speed, incline and cadence; Zwift’s support page lists it as the treadmill sensor that adds Bluetooth speed transmission to compatible treadmills by reading belt speed. An independent review describes the details: a cradle stuck to the frame, the sensor set a fraction of an inch above the belt, and white stickers on the belt that wear and may need replacing. The same review reports that it ships factory-calibrated, that a Garmin watch pairs with it as an ANT+ foot pod, and that it charges over USB. NPE listed it at $124.99 and in stock on 15 October 2026. It is a home-treadmill device: it stays on one machine.',
     },
     {
-      id: 'stryd-duo-5',
-      name: 'Stryd Duo 5.0',
-      category: 'Two-Pod Option for Data-Led Runners',
-      badge: 'Premium Pick',
-      amazonUrl: 'https://www.amazon.com/s?k=Stryd+Duo+5.0&tag=sktiger-20',
-      priceRange: 'Around $599',
-      specs: 'Two 8 g shoe pods · ANT+ + Bluetooth · dual-sided metrics · magnetic keychain charging',
+      id: "garmin-hrm-fit",
+      name: "Garmin HRM-Fit",
+      category: "Clip-On Treadmill Pace Sensor for Garmin Watches",
+      badge: "Garmin Clip-On Pick",
+      amazonUrl: "https://www.amazon.com/dp/B0CP9CY6RK?tag=sktiger-20",
+      priceRange: "$114–$150",
+      specs: "Clips to a sports bra · replaceable coin cell, about a year at 1 hr/day (Garmin) · treadmill pace and distance to compatible Garmin watches",
       pros: [
-        'Everything the single Stryd 5.0 does, with a pod on each shoe',
-        'Stryd says the second pod adds stability to power, pace and distance',
-        'Left-right balance metrics for runners who track asymmetry',
-        'Same ANT+ and Bluetooth compatibility and Zwift support as the single pod',
+        "Garmin’s manual lists it with the HRM 600 as a sensor that gives treadmill pace and distance to compatible watches",
+        "Clips straight onto a medium- or high-support sports bra, so there is no strap and nothing on the shoe",
+        "A replaceable coin cell that Garmin rates at about a year at an hour a day",
+        "A heart rate sensor as well, which reviewers say stays put during treadmill sprints",
       ],
       cons: [
-        'Twice the price of the single pod for extra metrics treadmill pace does not need',
-        'Two batteries to keep charged instead of one',
+        "Pace and distance work only with compatible Garmin watches; not a speed source for Zwift or other brands",
+        "Designed for sports bras, so it does not suit every runner",
+        "Reviewers note it costs more than plain heart rate straps",
       ],
       bottomLine:
-        'Only for runners who already train with Stryd data and want left-right metrics. Everyone else should buy the single pod.',
+        "For Garmin runners who train in a sports bra and want treadmill pace without a shoe pod or a chest strap. Check your watch model first.",
       description:
-        'The Duo is two Stryd 5.0 pods sold as a pair, one for each shoe. Stryd’s store says the second pod adds stability to power, pace and distance and enables dual-sided metrics such as left-right balance. Stryd listed the Duo 5.0 at $599 on its product page on 15 October 2026, which matches the regular price independent coverage reported at launch; Stryd also offers it at a lower upfront price with a membership commitment. A long-term independent reviewer of the Duo said its upgrades over the previous Stryd generation were not, on their own, a compelling reason to upgrade. For treadmill pace on its own, one pod is enough, and we would not pay twice as much for the second. It is on this page because some readers asking for the best Stryd for treadmill running will see it on Stryd’s store, and the honest answer is that the single 5.0 is the better buy for that job.',
+        "Stryd's two-pod Duo is sold direct by Stryd rather than on Amazon, so this card shows a different Amazon-listed way to get treadmill pace into a watch without a single shoe pod. Garmin designed the HRM-Fit to clip directly onto a medium- or high-support sports bra rather than sit on a strap, and Garmin's Forerunner 970 manual names the HRM 600, HRM-Fit and HRM-Pro series as the accessories that calculate running pace and distance from the motion they measure on each stride, and that supply them during treadmill running when GPS is not available; reviews of the HRM-Fit by DC Rainmaker and Tom's Guide describe the same feature, which depends on a compatible Garmin watch. Garmin rates its replaceable coin cell at about a year at an hour a day. DC Rainmaker gave its launch price as $149, and Amazon showed it at $113.90 on 9 November 2026. As with the HRM 600, the limits are scope and fit: it feeds Garmin watches, not Zwift as a speed source and not other brands, and it is built for runners who wear a sports bra. After a treadmill run, Garmin's manual suggests using Calibrate & Save on the watch to improve the distance figure. It is not a substitute for the Duo's left-right running-power metrics; for treadmill pace alone, it does the job.",
     },
   ],
   faqs: [

@@ -38,7 +38,11 @@ export default {
           for the exact desktop you choose and the warranty terms before ordering. Two well-known
           integrated lines are not listed: LifeSpan's full-set treadmill desks were all marked sold
           out on its US site when we checked, and we could not reach Rebel Desk's site or find a
-          current US listing. We earn a commission if you buy through the Amazon links on this
+          current US listing. Integrated sets are sold by their makers rather than on Amazon,
+          so on 9 November 2026 we replaced the UPLIFT Treadmill Desk and iMovR Lander cards with the
+          closest Amazon products: UREVO's CyberPad, whose figures are those checked for our auto
+          incline guide, and LifeSpan's TX6, checked against LifeSpan's page and manual, the Amazon
+          listing and independent reviews. We earn a commission if you buy through the Amazon links on this
           page; it does not change which products we list or what we say about them.`,
   sections: [
     {
@@ -46,8 +50,11 @@ export default {
       heading: 'Our Picks at a Glance',
       html: `          <p>
             If you do not already own a <a href="/best-walking-pads/" class="text-[#0F62FE] font-medium" data-autolink>walking pad</a> and want one order, one delivery and one
-            company to call, buy an integrated set. If you already own a pad, or want to choose the
-            pad separately, buy one of the three desks and check the height sums below first. To work out the height range you need, see our guide to
+            company to call, an integrated set such as UPLIFT's Treadmill Desk or iMovR's Lander and
+            Unsit is the simplest route, but those sets are sold by their makers, not on Amazon, so they
+            are discussed below rather than carded. The cards show the closest route on Amazon: a pad or
+            an office-grade under-desk treadmill, and three desks to put over it. Check the height sums
+            below first. To work out the height range you need, see our guide to
             <a href="/standing-desk-height-for-walking-pad/" class="text-[#0F62FE] font-medium">standing desk height for a walking pad</a>.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
@@ -58,11 +65,11 @@ export default {
               <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Why</th>
             </tr></thead>
             <tbody>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UPLIFT Treadmill Desk</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Integrated set</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most home offices</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A well-reviewed desk frame and an incline pad in one order, at a sensible price</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">iMovR Lander + Unsit</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Integrated set</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">All-day, office-grade use</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A 30-inch-wide belt and a very rigid desk; expensive</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UREVO CyberPad for Office</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walking pad for a desk</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most home offices buying both halves on Amazon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A 14% powered incline on a pad that slides under a standing desk</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">LifeSpan TX6</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Under-desk treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">All-day, office-grade use</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A 400 lb rating, a 20-inch-wide deck and 6 mph; expensive</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">FlexiSpot E7 Plus</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Desk for a pad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Stability and taller users</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Four legs and a 51.6 in. top height</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Vari Electric Standing Desk with ComfortEdge</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Desk for a pad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Simple set-up and typing comfort</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">50.5 in. top height and a contoured front edge for the wrists</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UPLIFT V3 (desk only)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Desk for a pad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Owners of an existing pad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The same frame as our top pick, without the pad</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UPLIFT V3 (desk only)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Desk for a pad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Owners of an existing pad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The frame from UPLIFT's treadmill desk set, without the pad</td></tr>
             </tbody>
           </table></div>`,
     },
@@ -71,8 +78,9 @@ export default {
       heading: 'The 5 Best Treadmill Desks',
       products: true,
       html: `          <p>
-            Each card says first which kind of treadmill desk it is: an integrated set, where the
-            desk and treadmill come together, or a standing desk that suits a walking pad you supply.
+            Each card says first which kind of product it is: a walking pad or under-desk treadmill to
+            go under a desk, or a standing desk that suits a pad you supply. The integrated sets we
+            describe below, from UPLIFT and iMovR, are not sold on Amazon, so they are not carded.
             For the desks, the number that matters most is the top of the height range, so every card
             states it where the sources agree and flags it where they do not. If you have not chosen
             a pad yet, our guides to
@@ -348,53 +356,51 @@ export default {
   ],
   products: [
     {
-      id: 'uplift-treadmill-desk',
-      name: 'UPLIFT Treadmill Desk (V3 Desk + Inclining Walking Pad)',
-      category: 'Kind: Integrated set — standing desk and walking pad sold together',
-      badge: 'Best Overall',
-      amazonUrl: 'https://www.amazon.com/s?k=UPLIFT+V3+Standing+Desk+Inclining+Walking+Pad&tag=sktiger-20',
-      priceRange: 'Around $940–$1,300',
-      specs: 'V3 desk, 355 lb lift, 15-year warranty · pad: 4 mph, 7% incline, 39.4 x 15.4 in. belt, 243 lb limit',
+      id: "urevo-cyberpad-office",
+      name: "UREVO CyberPad for Office",
+      category: "Kind: Walking pad to pair with a standing desk",
+      badge: "Best Pad for a Desk",
+      priceRange: "About $432 (Amazon, 6 Nov 2026)",
+      specs: "0–14% powered incline · 39.4 x 16.5 in. running area · 0.6–4.0 mph · about 63 lb · brushless motor",
       pros: [
-        'Desk and pad come from one company, in one order, with one place to go for support',
-        'The V3 frame is built to do without a low crossbar, leaving the space under the desk clear for the pad',
-        'Fifteen-year warranty on the desk, and a cable manager and cable wraps included',
-        'The pad adds a powered incline to 7% and reaches 4 mph for brisk walks outside working hours',
+        "A 14% powered incline on a pad that slides under a desk",
+        "Incline makes a speed-capped pad harder as you get fitter",
+        "A brushless motor, per UREVO, and a 6.3-inch height to add to the desk sums",
+        "Speed lights and an app that logs your walks",
       ],
       cons: [
-        'UPLIFT lists the top height as 48.7 in. and one independent review as 48.2 in., so taller users should check the sums',
-        'The pad’s 39.4 x 15.4 in. belt and 243 lb limit are modest, and its warranty is one year',
-        'Reviewers still report a slight tremor at full height, as with most two-leg desks',
+        "UREVO, the US Amazon listing and the EU manual give three different weight ratings, so none is on the card",
+        "A 39.4-inch belt and 4 mph top speed suit slow and moderate walking only",
+        "The incline raises the deck, so check your standing desk’s range",
       ],
       bottomLine:
-        'The set to buy if you want a treadmill desk in one order and are of average height or below. Taller users should check the height sums or choose a desk with a higher maximum.',
+        "The walking pad to put under one of the desks below if you want incline and are buying both halves on Amazon; check the weight rating on the listing first.",
       description:
-        "This is an integrated set: UPLIFT's V3 standing desk and its Inclining Walking Pad, sold together as the UPLIFT Treadmill Desk from $938 with a choice of desktop sizes. The V3 is widely recommended by independent reviewers, and on the points that matter for a treadmill it is well suited: UPLIFT says the frame is stable without a low crossbar, it meets the ANSI/BIFMA X5.5 standard, it lifts 355 lb, and it carries a 15-year warranty on the desktop, frame, motors and electronics. The pad adds a motorised incline to a 7% grade, a top speed of 4 mph and a 39.4 by 15.4-inch walking surface; an independent review lists a 243 lb user limit and a one-year warranty. The catch is height. UPLIFT gives a range of 22.6 to 48.7 inches, an independent review lists 48.2, and both are on the low side once you are standing on a pad, so measure first.",
+        "UPLIFT's integrated treadmill desk set is sold by UPLIFT rather than on Amazon, so this card shows the other half of the route most people take: a walking pad bought on its own to go under a standing desk, such as the three desks below. The CyberPad is UREVO's walking pad built around incline. UREVO lists a 0–14% powered incline in 14 levels, a 39.4 by 16.5-inch running area, 0.6 to 4.0 mph, a 63.1 lb unit weight and a 6.3-inch height, and an independent review and spec tracker gave the same speed, incline and weight when an earlier guide on this site checked them. The Amazon listing adds a 2.5 HP brushless motor and an app that logs your walks. For a treadmill desk the height is the figure to use: add the pad's deck height, and more at full incline, to your elbow height before choosing a desk. Incline also matters more on a pad than on a treadmill, because the speed stops at about 4 mph. The one figure we could not settle is capacity: UREVO's page and an independent review give 400 lb, the US Amazon listing gave 242 lb and the EU manual 300 lb, so check the figure on the exact listing you buy from. Amazon listed it at $431.99 on 6 November 2026.",
     },
     {
-      id: 'imovr-lander-unsit',
-      name: 'iMovR Lander Treadmill Desk with Unsit Treadmill',
-      reviewUrl: '/imovr-unsit-treadmill-desk/',
-      category: 'Kind: Integrated set — office-grade desk and treadmill',
-      badge: 'Best Premium',
-      amazonUrl: 'https://www.amazon.com/s?k=iMovR+Lander+Unsit+Treadmill+Desk&tag=sktiger-20',
-      priceRange: 'Around $3,800–$4,500',
-      specs: 'Unsit belt 30 x 40 in. · top speed 2.0 mph · lifetime frame warranty',
+      id: "lifespan-tx6",
+      name: "LifeSpan TX6 Under Desk Treadmill",
+      category: "Kind: Office-grade under-desk treadmill for a standing desk",
+      badge: "Best Premium",
+      amazonUrl: "https://www.amazon.com/dp/B0CTH69X4C?tag=sktiger-20",
+      priceRange: "$1,099–$1,399",
+      specs: "0.4–6.0 mph · 400 lb max user · 4.5 HP peak brushless motor · remote and LED display · no handrail",
       pros: [
-        'A 30-inch-wide belt, far wider than a walking pad, so drifting sideways while typing matters less',
-        'iMovR quotes 42.9 dB for the Unsit at top speed, which would be quiet enough for calls',
-        'A sturdy frame-mounted desk sold to go with the treadmill, with iMovR height extenders available',
-        'Lifetime frame warranties, iMovR height extenders and a walking-specific keyboard tray',
+        "A 400 lb rating, well above most walking pads",
+        "LifeSpan lists a 20-inch-wide deck, wider than the 15 to 16.5 inches of most pads",
+        "Reaches 6 mph, so it is not limited to slow walking",
+        "From LifeSpan, a long-standing maker of office treadmills; Treadmill Reviews names it its top under-desk pick",
       ],
       cons: [
-        'Expensive: the treadmill alone is listed at about $2,500 to $2,600',
-        'iMovR’s own Unsit listing gives three different user weight limits and two motor ratings, so get the figure in writing',
-        'At 162 lb and about 38–39 in. wide, the treadmill is hard to move and needs a wide desk',
+        "Costs about three times as much as a good walking pad",
+        "Belt length is given as 48 in. by LifeSpan and 48.8 in. elsewhere, and we found no warranty terms for it",
+        "A retailer notes the top speed is capped at 4 mph when it is used with LifeSpan’s Omni-Hub desk console",
       ],
       bottomLine:
-        'For someone who will walk for hours every working day and wants an office-grade treadmill under a very stable desk, and can justify the price.',
+        "For someone who will walk for hours every working day and wants a wider, heavier-rated under-desk treadmill than a walking pad, under a desk that reaches the extra height.",
       description:
-        "This is an integrated set: iMovR's Lander standing desk paired with the Unsit office treadmill, made by InMovement, which replaced iMovR's discontinued ThermoTread GT. It is built for long days rather than occasional walks. The Unsit has a 30 by 40-inch belt — very wide and fairly short — a top speed of 2.0 mph, and a lifetime frame warranty, and iMovR quotes a noise level of 42.9 dB at top speed. The Lander's height range is quoted differently on iMovR's own pages and on WorkWhileWalking — a review site founded by iMovR's chief executive, so not an independent source — and we have not printed either; check the range against your height (see our desk-height guide). Optional height extenders are available. The weaknesses are price and paperwork. The treadmill alone is listed at $2,495 to $2,595 depending on the page, and iMovR's own Unsit listing quotes 300, 350 and 400 lb user limits and two motor ratings in different places, so we have printed none of them. Ask for the current figure and warranty in writing.",
+        "iMovR's Lander and Unsit treadmill desk is sold by iMovR rather than on Amazon, so this card shows the office-grade under-desk treadmill we found on Amazon for the same buyer: someone who will walk for hours each working day. LifeSpan has made office treadmills for years, and the TX6 is its current under-desk base, built to go under a standing desk you supply. LifeSpan's product page and the Amazon listing agree on a speed range of 0.4 to 6.0 mph, and the Amazon listing and an independent walking-pad roundup on a 400 lb user rating; LifeSpan's owner's manual and the Amazon listing both give a 4.5 HP peak brushless motor, and the manual describes a self-lubricating belt and an expanded size of 60.6 by 28 by 5.8 inches. LifeSpan lists a 20 by 48-inch deck, and one review site gives 48.8 inches long, so we have left the belt off the specification line. Treadmill Reviews names it its top under-desk treadmill, and notes it is not the cheapest. It is wider and heavier-rated than a walking pad, but it is not the 30-inch-wide belt of iMovR's Unsit, and we did not find its warranty terms published, so ask before buying. Amazon showed it at $1,399 on 9 November 2026, and LifeSpan's own store showed its TX6-GlowUp version on sale at $1,099.",
     },
     {
       id: 'flexispot-e7-plus',
@@ -453,7 +459,7 @@ export default {
       priceRange: 'Around $600–$900',
       specs: 'From 22.6 in. · 355 lb lift · no low crossbar · 15-year warranty',
       pros: [
-        'The same frame as our top pick, for anyone who already owns a walking pad',
+        'The same frame as UPLIFT’s treadmill desk set, for anyone who already owns a walking pad',
         'No low crossbar, so the space under the desk stays clear for the pad',
         'Fifteen-year warranty covering the desktop, frame, motors and electronics',
         'Cable manager and cable wraps included, and a wide choice of desktop sizes and depths',
@@ -472,7 +478,7 @@ export default {
   faqs: [
     {
       q: 'What is the best treadmill desk?',
-      a: `For most home offices, the UPLIFT Treadmill Desk, which pairs a well-reviewed standing desk with an incline walking pad in one order. If you already own a pad, buy a standing desk that reaches your elbow height plus the pad's deck height; the four-leg FlexiSpot E7 Plus is the steadiest and one of the tallest we found.`,
+      a: `If you want one order from one company, the UPLIFT Treadmill Desk, which pairs a well-reviewed standing desk with an incline walking pad and is sold by UPLIFT. On Amazon, pair a pad such as UREVO's CyberPad with a standing desk. If you already own a pad, buy a standing desk that reaches your elbow height plus the pad's deck height; the four-leg FlexiSpot E7 Plus is the steadiest and one of the tallest we found.`,
     },
     {
       q: 'How tall does a standing desk need to be for a walking pad?',
@@ -550,9 +556,10 @@ export default {
     },
   ],
   bottomLine: [
-    `If you want the whole thing in one order, buy the
-            <strong class="text-white">UPLIFT Treadmill Desk</strong>, provided your elbow height plus
-            the pad's deck height comes in comfortably under its top height. If you already own a pad
+    `If you want the whole thing in one order, UPLIFT's Treadmill Desk set, sold by UPLIFT, is
+            the simplest route. On Amazon, pair a pad such as the
+            <strong class="text-white">UREVO CyberPad for Office</strong> with a desk whose top height
+            clears your elbow height plus the pad's deck height. If you already own a pad
             or are tall, buy the four-leg <strong class="text-white">FlexiSpot E7 Plus</strong>, which
             is the steadiest desk we found and one of the tallest.`,
     `Whichever you choose, do the height sum before anything else, measure between the legs

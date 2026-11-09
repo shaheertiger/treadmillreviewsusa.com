@@ -46,58 +46,54 @@ export default {
           69.9 x 38.1 x 73.3 in. footprint and the 10-year frame, 2-year parts and 1-year labour
           terms. The list price differs between sources ($4,299, $4,299.99 and $4,499) and search
           results showed lower promotional prices on NordicTrack’s site that we could not confirm,
-          so the card carries only the checkout price we saw. We searched the US Consumer Product
+          so this review quotes only the checkout price we saw. The X24 and X16 are not sold on
+          Amazon US; the Freemotion and Commercial 2450 cards carry the figures checked for our
+          incline trainer and heavy-duty guides on 6 November 2026. We searched the US Consumer Product
           Safety Commission’s recall database for NordicTrack and its parent, iFIT, and found no
           treadmill recall. We have not tested the X24, and none of these figures are our own
           measurements. Prices change often. We earn a commission if you buy through an Amazon link
           on this page; it does not change what we say about the machine.`,
   products: [
     {
-      id: 'nordictrack-x24',
-      name: 'NordicTrack X24',
-      category: 'Incline Trainer With Decline and a 24-Inch Screen',
-      badge: 'Steepest Home Treadmill We Can Confirm',
-      amazonUrl: 'https://www.amazon.com/s?k=NordicTrack+X24+Treadmill&tag=sktiger-20',
-      priceRange: '$4,299 at NordicTrack checkout (5 Nov 2026)',
-      specs: '22 x 60 in. belt · 4.25 CHP · 0-12 mph · -6% to 40% grade · 400 lb capacity · 24 in. pivoting touchscreen · non-folding',
+      id: "freemotion-i11-9",
+      name: "FreeMotion i11.9 Incline Trainer",
+      category: "Closest on Amazon: an Older iFIT-Family Incline Trainer With Decline",
+      badge: "Closest on Amazon",
+      priceRange: "About $2,875 (Amazon, 6 Nov 2026)",
+      specs: "30% incline and decline training · 22 in. wide belt · 10 in. touchscreen console · cushioned deck",
       pros: [
-        'Incline to 40% and decline to -6%, the widest grade range NordicTrack sells',
-        'A 4.25 CHP motor with a lifetime warranty and a 400 lb rating',
-        'A 24-inch pivoting screen for iFIT classes on and off the belt',
-        'Reviewers describe the deck as stable even at steep grades',
+        "A 30% incline with decline for well under the price of current commercial trainers",
+        "A 22-inch-wide belt on an extra-long cushioned deck, per the listing",
+        "A 10-inch colour touchscreen with map-based programming",
       ],
       cons: [
-        'Top speed falls to 8 mph above 16% and 6 mph from 25%, in one review’s testing',
-        'Most screen features need iFIT Pro, which auto-renews at $39 a month',
-        'Does not fold; 445 lb boxed, with a 13.66-inch step-up height',
-        'Two years on parts and one on labour',
+        "An older model: the listing refers to iFit Live, an earlier name for iFIT",
+        "The listing gives no top speed, weight rating or warranty; ask the seller",
+        "Confirm the machine is new and who will honour the warranty before ordering",
       ],
-      bottomLine:
-        'The machine to buy if steep incline walking is your main training and you will use iFIT. If the 16-inch screen of the X16 is enough, it is the same treadmill for $600 less.',
-      description:
-        'The X24 is a non-folding incline trainer with a 22 by 60-inch belt and SpringFlex cushioning, a 4.25 CHP drive motor, a speed range of 0 to 12 mph and a grade range from -6% to 40%. Maximum user weight is 400 lb. The 24-inch touchscreen pivots so you can follow floor classes, and it runs iFIT, which NordicTrack says is required for full content and features; iFIT Pro auto-renews at $39 a month. In use the X24 measures 69.9 by 38.1 by 73.3 inches, with a 13.66-inch step-up height; boxed it weighs 445 lb. The included warranty is ten years on the frame, two on parts and one on labour, with a lifetime motor warranty. On 5 November 2026 NordicTrack’s checkout page listed it at $4,299, in stock, with delivery estimated at 10 to 14 business days.',
+      bottomLine: "The nearest thing to an X24 on Amazon: a 30% incline trainer with decline from the same parent company, for about $2,875. Have the seller confirm condition and warranty first.",
+      description: "The X24 is sold by NordicTrack rather than on Amazon US, so this card shows the nearest incline trainer Amazon does list: Freemotion is, like NordicTrack, an iFIT brand, and the i11.9 is an earlier incline trainer with incline and decline. It reaches 30% rather than the X24's 40%. Its figures are those checked for our incline trainer guide. The i11.9 is an earlier Freemotion incline trainer that is still listed on Amazon US with a price. The listing is short: it describes an extra-long, cushioned deck, a 10-inch colour touchscreen, 30% incline and decline training, a 22-inch-wide running belt, and interactive iFit Live and Google Maps programming. iFit Live was the earlier name of what is now iFIT, which tells you the design dates from several years ago. That is not a reason to rule it out — incline trainers are simple machines underneath, and a 30% grade with decline for about $2,875 is well below the X24's price — but it changes what you need to check. The listing gives no top speed, no maximum user weight, no motor rating and no warranty, and we could not confirm those for this listing from a second source, so none is on the card. Before buying, ask the seller whether the machine is new, who honours the warranty and for how long, and whether the console's connected features still work; plan on using its built-in programs if they do not. Amazon listed it at $2,875 on 6 November 2026.",
     },
     {
-      id: 'nordictrack-x16',
-      name: 'NordicTrack X16',
-      category: 'The Same Incline Trainer With a Smaller Screen',
-      badge: 'Better Value',
-      amazonUrl: 'https://www.amazon.com/s?k=NordicTrack+X16+Treadmill&tag=sktiger-20',
-      priceRange: '$3,699 at NordicTrack checkout (5 Nov 2026)',
-      specs: '22 x 60 in. belt · 4.25 CHP · 0-12 mph · -6% to 40% grade · 400 lb capacity · 16 in. pivoting touchscreen · non-folding',
+      id: "nordictrack-commercial-2450",
+      name: "NordicTrack Commercial 2450",
+      category: "The NordicTrack With a 24-Inch Screen That Amazon Sells",
+      badge: "Amazon Alternative",
+      priceRange: "About $2,299 (Amazon, 6 Nov 2026)",
+      specs: "22 x 60 in. belt · 4.25 CHP (NordicTrack rating) · 0–14 mph · -3% to 12% incline · 400 lb max user · folds",
       pros: [
-        'The same belt, motor, grade range, capacity and footprint as the X24',
-        'The same warranty, including the lifetime motor',
-        '$600 less than the X24 at the checkout prices we saw',
+        "A 400 lb maximum user weight and a 22-inch belt, by NordicTrack’s figures",
+        "A 4.25 CHP motor and a 14 mph top speed",
+        "A decline to -3% as well as a 12% incline",
+        "A 24-inch touchscreen for iFIT classes",
       ],
       cons: [
-        'A 16-inch screen instead of 24 inches',
-        'The same iFIT dependence, height and weight as the X24',
+        "The touchscreen is designed around an iFIT Pro membership at $39 a month",
+        "A screen and software that will date sooner than the frame and motor",
+        "NordicTrack’s motor warranty terms vary by listing; check them before ordering",
       ],
-      bottomLine:
-        'For nearly everyone who wants a 40% incline trainer, this is the one to buy; the X24’s extra money buys screen.',
-      description:
-        'The X16 is the X24 with a smaller screen. On 5 November 2026 NordicTrack’s checkout page listed it at $3,699 and in stock, with a 22 by 60-inch SpringFlex belt, a 4.25 CHP motor, -6% to 40% grade, a 400 lb maximum user weight, a 16-inch pivoting touchscreen, a 69.9 by 38.1 by 73.3-inch footprint and a 13.66-inch step-up height, under the same ten-year frame, two-year parts, one-year labour and lifetime motor warranty. Our best NordicTrack treadmills guide ranks it against the rest of the range.',
+      bottomLine: "For someone who wants the X24’s screen, 400 lb rating and decline on a folding running treadmill, and does not need more than 12% incline.",
+      description: "Neither the X24 nor the X16 is sold on Amazon US. The Commercial 2450 is the NordicTrack that Amazon does sell with the same 24-inch screen size, the same 4.25 CHP motor rating and the same 400 lb maximum user weight as the X24, but it is a running treadmill rather than an incline trainer: its incline stops at 12% and its decline at -3%. Its figures are those checked for our heavy-duty treadmill guide. The Commercial 2450 is NordicTrack's folding flagship, and its folding frame is the main structural difference from the X24. NordicTrack lists a 22 by 60-inch belt, a 4.25 CHP motor by its own continuous rating and a 400 lb maximum user weight, and the Amazon listing gives a 0–14 mph speed range, a -3% to 12% incline, RunFlex cushioning, a 24-inch touchscreen that tilts and pivots, and a folding frame with assisted lowering. The 14 mph top speed is 2 mph faster than the X24's. The trade-off is that much of the price goes into the screen and its software: the listing describes the full experience with an iFIT Pro membership, which iFIT listed at $39 a month in November 2026. The treadmill runs without it, in manual mode. Amazon listed it at $2,299 on 6 November 2026.",
     },
   ],
   sections: [
@@ -120,7 +116,10 @@ export default {
             Pro, which NordicTrack says auto-renews at $39 a month.
           </p>
           <p>
-            For most buyers the decision is not X24 or something else but X24 or X16. They share every
+            The X24 and X16 are sold by NordicTrack rather than on Amazon US, so the two cards
+            below show the nearest machines Amazon does sell: an older 30% incline trainer from
+            NordicTrack's sister brand Freemotion, and NordicTrack's own Commercial 2450 with the
+            same screen size. For most buyers the decision is not X24 or something else but X24 or X16. They share every
             mechanical figure and the warranty; the X16 has a 16-inch screen and was $600 cheaper on
             NordicTrack’s checkout page on 5 November 2026. We have not tested the X24; what follows is
             what NordicTrack’s figures and independent coverage show.

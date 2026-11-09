@@ -33,15 +33,15 @@ export default {
           Run to the Finish's hands-on review (updated August 2025), Treadmill Review Guru's pre-release
           overview (August 2024), TechRadar's review and Zwift Insider's article on Zwift's incline
           control (updated February 2025). We searched the US Consumer Product Safety Commission's recall
-          database for Wahoo and found no recall. Figures on the KICKR RUN card are those on which Wahoo
-          and at least one independent source agree; where sources disagree, the text says so and the
-          figure is left off the card. The NordicTrack Commercial 1750 and Horizon 7.0 AT cards use
+          database for Wahoo and found no recall. Figures we give for the KICKR RUN are those on which Wahoo
+          and at least one independent source agree; where sources disagree, the text says so. The
+          NordicTrack Commercial 2450, 1750 and Horizon 7.0 AT cards use
           specifications already cross-checked on this site in October 2026; Horizon's price was read on
           5 November, while NordicTrack's site refused our requests that day, so its price is the one
           NordicTrack showed on 28 October 2026. We have not tested the KICKR RUN or any treadmill on this
           page. Prices change often, so confirm them before you order. Wahoo sells the KICKR RUN direct
-          with mandatory in-home setup; the Amazon button on its card goes to a tagged search that may
-          not show it. As an Amazon Associate we earn from qualifying purchases; it does not change what
+          with mandatory in-home setup, not on Amazon, so the first card shows the closest treadmill sold
+          there, the NordicTrack Commercial 2450. As an Amazon Associate we earn from qualifying purchases; it does not change what
           we say.`,
   lead: `Wahoo made its name with smart bike trainers, and the KICKR RUN is what happens when that
           company builds a treadmill. It is not a connected-fitness treadmill in the Peloton or iFIT mould:
@@ -111,11 +111,17 @@ export default {
           </table></div>
           <p>
             Two figures need care. Wahoo does not publish a motor rating, so the 3.0 HP figure in reviews
-            is theirs, not Wahoo's, and it is left off our card. And the warranty: Wahoo's page lists one
+            is theirs, not Wahoo's, and we do not rely on it. And the warranty: Wahoo's page lists one
             year, while one independent review describes five years on the frame. Get the terms for your
             purchase in writing before paying; our
             <a href="/treadmill-warranty-guide/" class="text-[#0F62FE] font-medium">treadmill warranty guide</a>
             explains what to ask.
+          </p>
+          <p>
+            Wahoo sells the KICKR RUN direct, with in-home setup, and not on Amazon, so the cards below show
+            the closest treadmills sold there instead: the NordicTrack Commercial 2450, which shares its
+            -3 per cent decline and 22 by 60-inch belt, and the Commercial 1750 and Horizon 7.0 AT compared
+            further down.
           </p>`,
     },
     {
@@ -256,6 +262,11 @@ export default {
       id: 'alternatives',
       heading: 'KICKR RUN vs NordicTrack Commercial 1750 and Horizon 7.0 AT',
       html: `          <p>
+            <strong>The NordicTrack Commercial 2450</strong>, carded above, is the step up from the 1750:
+            14 mph instead of 12, a 24-inch screen and the same -3 per cent decline, for about $2,299 on
+            Amazon on 6 November 2026.
+          </p>
+          <p>
             <strong>The NordicTrack Commercial 1750</strong> is the mainstream treadmill closest to the
             KICKR RUN's feature list: the same -3 per cent decline, incline to 12 per cent, a 22 by 60-inch
             belt, a 400 lb rating and a 16-inch pivoting touchscreen, at $1,999.99 on NordicTrack's site on
@@ -298,29 +309,27 @@ export default {
   ],
   products: [
     {
-      id: 'wahoo-kickr-run',
-      name: 'Wahoo KICKR RUN',
-      category: 'Smart Treadmill With RunFree and Zwift Incline Control',
-      badge: 'The Model Reviewed',
-      priceRange: '$6,999.99 at Wahoo on 5 Nov 2026',
-      amazonUrl: 'https://www.amazon.com/s?k=Wahoo+KICKR+RUN+Smart+Treadmill&tag=sktiger-20',
-      specs: '60 x 22 in. belt · 4:00/mile (15 mph) top speed · -3% to 15% grade · 250 lb max user · dedicated 120 V circuit',
+      id: 'nordictrack-commercial-2450',
+      name: 'NordicTrack Commercial 2450',
+      category: 'Closest on Amazon to the KICKR RUN: Decline, 14 mph and Auto-Adjusting Classes',
+      badge: 'Closest on Amazon',
+      priceRange: 'About $2,299 (Amazon, 6 Nov 2026)',
+      specs: '22 x 60 in. belt · 4.25 CHP (NordicTrack rating) · 0–14 mph · -3% to 12% incline · 400 lb max user · folds',
       pros: [
-        'RunFree mode changes belt speed as you move on the deck, without pressing a button',
-        'Decline to -3% as well as incline to 15%, so routes’ downhills are simulated',
-        'The only treadmill Zwift’s incline control supports, by Zwift Insider’s account',
-        'A 4:00-mile top speed, far beyond the 12 mph of most home treadmills',
+        'The same -3% decline and 22 by 60-inch belt as the KICKR RUN, and 14 mph against its 15',
+        'A 400 lb maximum user weight, against the KICKR RUN’s 250 lb',
+        'iFIT classes can raise and lower the deck and change the speed for you',
+        'A 24-inch touchscreen and a folding frame, neither of which the KICKR RUN has',
       ],
       cons: [
-        'A 250 lb maximum user weight is low at any price',
-        'Wahoo lists a one-year warranty',
-        'Needs a dedicated 15 or 20 A circuit, does not fold and weighs 429 lb by Wahoo’s figure',
-        'No screen; Peloton and Strava receive data but do not control it',
+        'No RunFree-style mode, and Zwift reads its speed but does not control its incline',
+        'The touchscreen is designed around an iFIT Pro membership at $39 a month',
+        'NordicTrack’s motor warranty terms vary by listing; check them before ordering',
       ],
       bottomLine:
-        'For Zwift-first runners with the budget, the space and the wiring, who want the machine to follow the route. Few others need to spend this much.',
+        'For a runner who wants decline, a fast top speed and a deck that changes on its own for about a third of the KICKR RUN’s price, and is happy for iFIT rather than Zwift to drive it.',
       description:
-        'The KICKR RUN is Wahoo’s only treadmill. Wahoo and independent reviews agree on a 60 by 22-inch belt, a top speed of a 4:00 mile (15 mph), grade from -3% to 15%, and a 250 lb maximum user weight; Wahoo adds 0.5% of side tilt. Wahoo lists 429 lb and a 72 by 38 by 58-inch footprint, and Run to the Finish agrees on the weight, but a pre-release overview gave lower figures, so we left them off the spec line. Reviews quote a 3.0 HP motor that Wahoo does not publish. It needs a dedicated 120 V circuit with a 15 or 20 A non-GFCI breaker. There is no screen; a device shelf holds a laptop. Wahoo lists a one-year warranty, includes 12 months of Wahoo Pro and in-home setup, and charges a $750 restocking fee on returns. It was $6,999.99 at Wahoo on 5 November 2026.',
+        'The KICKR RUN is sold by Wahoo direct, with in-home setup, not on Amazon. The treadmill on Amazon closest to its feature list is NordicTrack’s Commercial 2450. NordicTrack lists a 22 by 60-inch belt, a 4.25 CHP motor by its own continuous rating and a 400 lb maximum user weight, and the Amazon listing gives a 0–14 mph speed range, a -3% to 12% incline, RunFlex cushioning, a 24-inch touchscreen that tilts and pivots, and a folding frame with assisted lowering. Against the KICKR RUN it matches the decline and the belt size, comes within 1 mph of the top speed, carries 150 lb more and folds; iFIT classes can move its deck and speed automatically, as Zwift moves the KICKR RUN’s. What it lacks is RunFree’s hands-free pacing and Zwift incline control, and much of its price goes into a screen built around iFIT Pro, which iFIT listed at $39 a month in November 2026. It runs without the membership in manual mode. Amazon listed it at $2,299 on 6 November 2026.',
     },
     {
       id: 'nordictrack-commercial-1750',
