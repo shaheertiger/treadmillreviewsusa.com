@@ -20,7 +20,7 @@ export default {
   tags: ['best treadmill for zwift', 'zwift compatible treadmill', 'ftms treadmill', 'treadmill for zwift running', 'zwift treadmill incline', 'wahoo kickr run', 'stryd footpod zwift'],
   stickyCta: { text: 'See Our Top Picks', link: '#picks' },
   note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
-          treadmills or the foot pod with Zwift. Compatibility claims on this page come only from
+          treadmills or the sensor with Zwift. Compatibility claims on this page come only from
           the manufacturer or from Zwift's own support documentation: Zwift's "Compatible Running
           Hardware" list (which names manufacturers rather than models), its "Connecting Your
           Treadmill" and "Treadmill Incline Control" articles, and each maker's product page or
@@ -30,7 +30,9 @@ export default {
           most often on motor horsepower — we left it out. The Bowflex T6 figures match our own
           review of that machine; the T6 and the Horizon 7.8 AT are not sold on Amazon US, so in November
           2026 their cards became the Schwinn 815 and Horizon 7.4 AT, with the figures checked for our
-          Schwinn and Horizon guides. The Spirit XT485, which replaced the Wahoo KICKR RUN card in November
+          Schwinn and Horizon guides. The Stryd 5.0 Footpod is sold direct rather than on Amazon, and no pod on Zwift's list was on
+          Amazon, so its card became the Garmin HRM 600 with the figures checked for our foot pod guide;
+          it is not a Zwift speed source, and its card says so. The Spirit XT485, which replaced the Wahoo KICKR RUN card in November
           2026 because the KICKR RUN is not sold on Amazon, carries the figures checked for our heavy
           duty treadmill guide, and its Zwift support was checked on Spirit's Zwift pages on
           9 November 2026. None of these are our own measurements. Prices are those we saw
@@ -52,7 +54,10 @@ export default {
       html: `          <p>
             Four treadmills whose manufacturers state Zwift support, plus one foot pod. The short
             version: the <a href="/horizon-7-0-at-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Horizon 7.0 AT</a> for most runners, the Bowflex T6 when it is on sale (sold direct; the Schwinn 815 is the value card on Amazon), and a
-            Stryd pod if you already own a treadmill you like. The Wahoo KICKR RUN, the one treadmill
+            foot pod from Zwift's list, such as a Stryd (sold direct), if you already own a treadmill you
+            like. No pod on Zwift's list was sold on Amazon when we checked, so the sensor card is
+            Garmin's HRM 600, which serves Garmin watches rather than Zwift; its card explains the
+            limits. The Wahoo KICKR RUN, the one treadmill
             whose incline Zwift controls, is sold direct by Wahoo rather than on Amazon, so it is
             covered in the text and the premium card is the Spirit XT485. Already own a treadmill? Read our
             <a href="/treadmill-foot-pod-guide/" class="text-[#0F62FE] font-medium">treadmill foot pod guide</a>.
@@ -70,7 +75,7 @@ export default {
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Schwinn 815</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best value on Amazon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">60-inch deck, 12 mph, Zwift named by Schwinn, about $1,099; the Bowflex T6 is the value pick sold direct</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon 7.4 AT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bigger runners and heavier use</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22 x 60 in. deck, FTMS, 350 lb capacity, five years on parts</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Spirit XT485</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Premium, heavy use</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">FTMS with Zwift named by Spirit, 22 x 60 in. deck, lifetime motor and deck warranty</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Stryd 5.0 foot pod</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Any treadmill you already own</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">On Zwift's compatible footpod list; measures you, not the machine</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Garmin HRM 600</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Garmin watch owners on any treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Treadmill pace to Garmin watches; not a Zwift speed source (a Stryd pod, sold direct, is)</td></tr>
             </tbody>
           </table></div>
           <p>
@@ -85,7 +90,7 @@ export default {
       heading: 'The 5 Best Treadmills (and Sensor) for Zwift',
       products: true,
       html: `          <p>
-            Four treadmills and one foot pod. Every treadmill here comes from a manufacturer on
+            Four treadmills and one sensor. Every treadmill here comes from a manufacturer on
             Zwift's list of brands with confirmed compatible models, and in each case the
             manufacturer's own page names Zwift for that model. Each entry says who it suits and
             what it gives up. If you are setting up rather than buying, our
@@ -408,27 +413,27 @@ export default {
         'The Wahoo KICKR RUN, the only treadmill Zwift says it can tilt, is sold by Wahoo rather than on Amazon. The premium treadmill on Amazon we would buy for Zwift is the Spirit XT485. Spirit is on Zwift’s list of manufacturers with confirmed compatible models, and Spirit’s own Zwift pages list the XT485 among its treadmills with built-in Bluetooth FTMS, with US units made after 1 November 2019 compatible; check the serial number on yours against Spirit’s chart. The Amazon listing gives a 22 by 60-inch running belt, a 9-inch backlit LCD, direct speed and incline buttons, handlebar toggles and Bluetooth; Spirit’s specification, checked for an earlier guide on this site, adds 0.5 to 12 mph, 15 levels of electronic incline, a 7-inch step-up height, a 43-inch folded length and an item weight of about 289 lb. The listing quotes a 4.0 HP motor, which, like the other motors here, we have kept off the spec line. The US residential warranty is lifetime on the frame, motor and deck, ten years on parts and one year of labour. On capacity, Spirit and independent coverage give 425 lb, but one US retailer’s FAQ gave 350 lb, so check the label on the unit you receive. Unlike the KICKR RUN it has no decline, and Zwift reads its speed and incline rather than controlling them. Amazon listed it at $2,649 on 6 November 2026.',
     },
     {
-      id: 'stryd-5-footpod',
-      name: 'Stryd 5.0 Footpod',
-      category: 'Best Way to Add Zwift to Any Treadmill',
-      badge: 'Any Treadmill',
-      amazonUrl: 'https://www.amazon.com/s?k=Stryd+Footpod&tag=sktiger-20',
-      priceRange: 'Around $200',
-      specs: 'Clip-on shoe pod · rechargeable · Stryd footpods on Zwift’s compatible list',
+      id: 'garmin-hrm-600',
+      name: 'Garmin HRM 600',
+      category: 'Closest Amazon Sensor to a Zwift Foot Pod (Garmin Watches Only)',
+      badge: 'Garmin Route, Not a Zwift Pod',
+      amazonUrl: 'https://www.amazon.com/dp/B0F7Z6N7BR?tag=sktiger-20',
+      priceRange: 'Around $155–$170',
+      specs: 'Chest strap · ANT+ + Bluetooth · treadmill pace and distance to compatible Garmin watches · rechargeable, up to 2 months at 1 hr/day · not on Zwift\u2019s compatible footpod list',
       pros: [
-        'Works on any treadmill, including brands that are not on Zwift’s manufacturer list',
-        'Zwift lists Stryd footpods among its compatible footpods',
-        'Independent reviewers report steadier pace readings across a range of speeds than cheaper pods',
-        'Moves with you — the same pod works outdoors and on other treadmills',
+        'Garmin says it sends pace and distance from treadmill runs to compatible Garmin watches, on any treadmill',
+        'Nothing to clip on a shoe, and it is a full heart rate strap too, which Zwift can use for heart rate',
+        'Garmin\u2019s own suggested replacement for its discontinued foot pod, the one Garmin pod on Zwift\u2019s list',
       ],
       cons: [
-        'Still needs calibrating against a belt speed you have checked, and it has to be on the shoe you are wearing',
-        'Typically sold direct by Stryd in the US, and the analysis features beyond pace and power sit behind an optional paid membership',
+        'Not a speed source for Zwift: Zwift lists the Zwift RunPod, Stryd, Polar Stride Sensor and Garmin\u2019s old foot pod, and none of them was sold on Amazon when we checked',
+        'Getting its pace into Zwift needs a compatible Garmin watch relaying it, which we have not confirmed works with this strap',
+        'A lot to pay if you only want pace, and Garmin says not every watch supports every feature',
       ],
       bottomLine:
-        'The right buy for anyone who already owns a treadmill they like. A fraction of the cost of a new machine for the same speed signal in Zwift.',
+        'Only for Garmin watch owners who want better treadmill pace and a heart rate strap. If your goal is Zwift on a treadmill you own, buy a Stryd pod direct from Stryd instead.',
       description:
-        'If you already own a treadmill, this is very likely the best Zwift purchase on the page. A foot pod measures your stride rather than the belt, so it works on any treadmill — including NordicTrack, ProForm and Peloton machines that do not appear on Zwift’s manufacturer list — and Zwift names Stryd footpods among its compatible footpods. The Stryd 5.0 is the current model: Stryd describes it as 15% smaller than its predecessor, with upgraded sensors, improved pace and distance accuracy and a magnetic keychain charger. Independent reviewers have consistently found Stryd pods give steadier pace across different speeds than cheaper pods that need recalibrating at each pace, though like any pod it should be calibrated against a belt speed you have checked. Stryd also measures running power, which some runners train by. Reviewers put the US price of the 5.0 at about $199, usually bought direct from Stryd; Stryd’s training platform is an optional subscription, and the pod works with Zwift without it.',
+        "This card replaces the Stryd 5.0 Footpod, our pick for adding Zwift to any treadmill, which Stryd sells direct rather than on Amazon. We could not find any footpod on Zwift's compatible list for sale on Amazon US: not Stryd, not the Zwift RunPod, not the Polar Stride Sensor and not Garmin's discontinued foot pod. Garmin no longer sells a foot pod, and a Garmin staff member pointed a forum user to this strap instead. Garmin's product page and launch announcement say the HRM 600 sends pace and distance from indoor track and treadmill runs to compatible Garmin smartwatches; it also transmits heart rate over ANT+ and Bluetooth, is rated 5 ATM, and is rechargeable with up to two months at an hour a day. Here is the honest limit: it is not a Zwift speed sensor. Zwift reads its heart rate, but for speed Zwift needs a listed pod or an FTMS treadmill. Zwift Insider describes some Garmin watches re-broadcasting sensor data to Zwift through their Virtual Run profile, but we have not confirmed that a watch passes this strap's treadmill pace on that way, so do not buy it on that assumption. Garmin listed it at $169.99 on 15 October 2026, and Amazon showed about $154 to $158 by size on 9 November 2026. For Zwift on a treadmill you already own, the Stryd 5.0 (about $199 direct from Stryd) remains the better purchase.",
     },
   ],
   faqs: [
@@ -450,7 +455,7 @@ export default {
     },
     {
       q: 'Can I use Zwift on a NordicTrack treadmill?',
-      a: `NordicTrack and ProForm do not appear on Zwift's list of manufacturers with confirmed compatible treadmills, because their machines are built around iFIT. The reliable route is a foot pod from Zwift's compatible list, such as a Stryd, which works on any treadmill regardless of brand. Check belt speed first so you calibrate the pod against an accurate figure.`,
+      a: `NordicTrack and ProForm do not appear on Zwift's list of manufacturers with confirmed compatible treadmills, because their machines are built around iFIT. The reliable route is a foot pod from Zwift's compatible list, such as a Stryd (sold direct by Stryd rather than on Amazon), which works on any treadmill regardless of brand. Check belt speed first so you calibrate the pod against an accurate figure.`,
     },
     {
       q: 'What deck size do I need for Zwift running?',
@@ -509,7 +514,8 @@ export default {
             <strong class="text-white">Spirit XT485</strong> is the heavy-duty option on Amazon. Wahoo's
             KICKR RUN, sold direct, is the only machine Zwift can tilt for you.`,
     `If you already own a treadmill, keep it and buy a
-            <strong class="text-white">foot pod</strong> instead — then check the belt speed with our
+            <strong class="text-white">foot pod</strong> from Zwift's list, such as a Stryd from Stryd's
+            own store, instead — then check the belt speed with our
             <a href="/treadmill-calibration/" class="text-[#5AA9FF] font-bold no-underline">calibration guide</a>
             and pair it using the
             <a href="/zwift-treadmill-guide/" class="text-[#5AA9FF] font-bold no-underline">Zwift treadmill guide</a>.`,

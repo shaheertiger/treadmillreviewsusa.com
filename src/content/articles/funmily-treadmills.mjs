@@ -26,11 +26,13 @@ export default {
           quotes the Amazon listing, ShopSavvy’s aggregated review page for the FUNMILY treadmill desk,
           and listing summaries and manuals indexed by search engines. Amazon, Walmart and the manuals
           site we tried (manuals.plus) returned errors, bot checks or security checks, so we could not
-          read a current FUNMILY listing, price or manual directly; no card carries a price. We found no
+          read a current FUNMILY listing, price or manual directly on 5 November; only the treadmill desk card, updated on 9 November, carries a price. We found no
           hands-on review we could rely on. Figures that conflict are stated as conflicts and kept off
           the cards. We searched the CPSC recall database for FUNMILY by title and manufacturer and
           found no recall. The UREVO and MERACH alternatives were checked against their makers’ US
-          stores the same day. We have not tested any of these machines. Prices change often. We earn
+          stores the same day. On 9 November 2026 the treadmill desk card was changed to the
+          desk-equipped FUNMILY treadmill that Amazon lists; its price and figures are the seller's
+          listing claims, which we could not confirm independently. We have not tested any of these machines. Prices change often. We earn
           a commission if you buy through the Amazon links on this page; it does not change what we
           say.`,
   lead: `A FUNMILY treadmill is most likely something you found on Amazon: a walking pad with an
@@ -66,26 +68,26 @@ export default {
     },
     {
       id: 'funmily-treadmill-desk',
-      name: 'FUNMILY Treadmill with Desk Workstation',
+      name: 'FUNMILY 3.5HP Walking Pad with Incline - Treadmill with Desk & Handle Bar',
       category: 'Walking Treadmill With Built-In Desk',
       badge: 'Best for Desk Work',
-      amazonUrl: 'https://www.amazon.com/s?k=FUNMILY+Treadmill+with+Desk+Workstation&tag=sktiger-20',
-      priceRange: 'Price not confirmed on 5 Nov 2026',
-      specs: 'Built-in height-adjustable desk · 0.6–7.5 mph · 3-level incline · 2.5 HP advertised',
+      amazonUrl: 'https://www.amazon.com/dp/B0H14Q57LD?tag=sktiger-20',
+      priceRange: 'About $200 (Amazon, 9 Nov 2026)',
+      specs: "Seller's listing claims only: desk and handle bar · incline · 3.5 HP · 350 lb capacity · remote and LED display · 90% pre-assembled",
       pros: [
         'A desk surface built in, so you do not need a standing desk',
-        'FUNMILY and ShopSavvy agree on 7.5 mph and three incline levels',
-        'Folds for storage, according to FUNMILY',
+        'FUNMILY\u2019s own desk-equipped treadmill that we could find on Amazon, at about $200',
+        'Sold on Amazon, so Amazon\u2019s returns process applies if Amazon fulfils it',
       ],
       cons: [
-        'FUNMILY’s own page gives the capacity as 300 lb and 265 lb',
-        'Buyers report it is heavy and hard to move, with timer and support complaints',
-        'ShopSavvy’s aggregated score was 5.9 out of 10',
+        "Figures are the seller's listing claims; we could not confirm them independently",
+        'Not the same machine as the Treadmill with Desk Workstation on FUNMILY\u2019s website, whose figures differ',
+        'Buyers of FUNMILY\u2019s earlier desk model reported weight, timer and support problems',
       ],
       bottomLine:
-        'For someone without a standing desk who wants an all-in-one walking workstation and accepts a budget build.',
+        'For someone without a standing desk who wants an all-in-one walking workstation for little money, bought on the listing\u2019s claims and a good returns policy.',
       description:
-        'FUNMILY’s treadmill desk combines a walking treadmill with a desk surface on the handlebar. FUNMILY’s website lists it with a 2.5 HP motor, 0.6 to 7.5 mph, a three-level incline that it describes as up to 4%, a 7-layer belt and a desk that adjusts from 33.5 to 49.9 inches, and gives the capacity as 300 lb in one section and 265 lb in another, for what appear to be two versions. ShopSavvy’s aggregated review page, last updated in October 2024 when it saw the treadmill at $272.60, gives the same 7.5 mph, three incline levels and 300 lb, and a score of 5.9 out of 10: buyers praise easy assembly and quiet running but report weight, timer faults, units that did not work and poor customer service. Our treadmill desks roundup covers sturdier options.',
+        "FUNMILY’s website lists a Treadmill with Desk Workstation (2.5 HP, 0.6 to 7.5 mph, three incline levels, a desk adjusting from 33.5 to 49.9 inches and a capacity given as both 300 lb and 265 lb), but we could not match it to a current Amazon listing, so this card links the desk-equipped FUNMILY treadmill Amazon does sell. Its listing describes a walking pad with an incline, a desk and a handle bar, a 3.5 HP motor, a 350 lb capacity, an LED display and remote, and arrives 90% pre-assembled; Amazon showed it at $199.99 on 9 November 2026. Figures are the seller's listing claims; we could not confirm them independently, and they do not match the website model, so read the listing’s speed range, incline, desk height range and warranty before buying. ShopSavvy’s aggregated page for FUNMILY’s earlier treadmill desk scored it 5.9 out of 10, with buyers praising easy assembly and quiet running but reporting weight, timer faults, units that did not work and poor customer service. We found no CPSC recall for FUNMILY. Our treadmill desks roundup covers sturdier options.",
     },
     {
       id: 'funmily-5-incline-walking-pad',
@@ -217,14 +219,14 @@ export default {
       products: true,
       html: `          <p>
             These are the three FUNMILY machines most often searched for, followed by two checked
-            alternatives. None of the FUNMILY cards carries a price, because we could not read a current
+            alternatives. Only the treadmill desk card carries a price (added on 9 November); the other FUNMILY cards do not, because we could not read a current
             Amazon listing on 5 November 2026 and FUNMILY’s site shows none. Where FUNMILY’s website, the
             Amazon listing and other sources disagree, the figure is left off the card and the description
             says so.
           </p>
           <p>
             For desk walking with a handle and an incline, the FUNMILY handle-bar pad, with its figures
-            treated cautiously. For an all-in-one walking desk, the FUNMILY <a href="/treadmill-desk-guide/" class="text-[#0F62FE] font-medium" data-autolink>treadmill desk</a>. For a slight,
+            treated cautiously. For an all-in-one walking desk, the FUNMILY <a href="/treadmill-desk-guide/" class="text-[#0F62FE] font-medium" data-autolink>treadmill desk</a>; the website’s Desk Workstation was not matched to an Amazon listing, so the card shows the desk-equipped FUNMILY listing Amazon sells, on its listing’s claims. For a slight,
             permanent incline in a small pad, the 5% pad. And if you want figures you can rely on, the UREVO
             Strol 2E and MERACH W50 TrekPad are the comparison.
           </p>`,

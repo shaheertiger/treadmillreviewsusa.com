@@ -42,7 +42,9 @@ export default {
           so on 9 November 2026 we replaced the UPLIFT Treadmill Desk and iMovR Lander cards with the
           closest Amazon products: UREVO's CyberPad, whose figures are those checked for our auto
           incline guide, and LifeSpan's TX6, checked against LifeSpan's page and manual, the Amazon
-          listing and independent reviews. We earn a commission if you buy through the Amazon links on this
+          listing and independent reviews. FlexiSpot's E7 Plus was not listed under that name on
+          Amazon, so its card now shows FlexiSpot's Heavy Duty 4-Leg frame, whose Amazon listing gives
+          the same height range and capacities; the listing does not name the model. We earn a commission if you buy through the Amazon links on this
           page; it does not change which products we list or what we say about them.`,
   sections: [
     {
@@ -67,7 +69,7 @@ export default {
             <tbody>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UREVO CyberPad for Office</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walking pad for a desk</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most home offices buying both halves on Amazon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A 14% powered incline on a pad that slides under a standing desk</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">LifeSpan TX6</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Under-desk treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">All-day, office-grade use</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A 400 lb rating, a 20-inch-wide deck and 6 mph; expensive</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">FlexiSpot E7 Plus</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Desk for a pad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Stability and taller users</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Four legs and a 51.6 in. top height</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">FlexiSpot Heavy Duty 4-Leg Frame</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Desk for a pad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Stability and taller users</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Four legs and a 51.6 in. top height</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Vari Electric Standing Desk with ComfortEdge</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Desk for a pad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Simple set-up and typing comfort</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">50.5 in. top height and a contoured front edge for the wrists</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UPLIFT V3 (desk only)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Desk for a pad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Owners of an existing pad</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The frame from UPLIFT's treadmill desk set, without the pad</td></tr>
             </tbody>
@@ -218,8 +220,8 @@ export default {
             can set a monitor nodding when you walk.
           </p>
           <p>
-            Three design features help most. <strong>Four legs</strong>, as on the FlexiSpot E7
-            Plus, resist side-to-side sway far better than two; independent reviewers of that desk
+            Three design features help most. <strong>Four legs</strong>, as on FlexiSpot's E7
+            Plus and its Heavy Duty 4-Leg frame, resist side-to-side sway far better than two; independent reviewers of that desk
             report essentially no wobble, and a reviewer of FlexiSpot's two-leg E7 Pro suggested
             four legs for anyone who prioritises stability. <strong>Three-stage legs with
             well-fitted stages</strong> both reach higher and, on good frames, wobble less at a given
@@ -403,28 +405,28 @@ export default {
         "iMovR's Lander and Unsit treadmill desk is sold by iMovR rather than on Amazon, so this card shows the office-grade under-desk treadmill we found on Amazon for the same buyer: someone who will walk for hours each working day. LifeSpan has made office treadmills for years, and the TX6 is its current under-desk base, built to go under a standing desk you supply. LifeSpan's product page and the Amazon listing agree on a speed range of 0.4 to 6.0 mph, and the Amazon listing and an independent walking-pad roundup on a 400 lb user rating; LifeSpan's owner's manual and the Amazon listing both give a 4.5 HP peak brushless motor, and the manual describes a self-lubricating belt and an expanded size of 60.6 by 28 by 5.8 inches. LifeSpan lists a 20 by 48-inch deck, and one review site gives 48.8 inches long, so we have left the belt off the specification line. Treadmill Reviews names it its top under-desk treadmill, and notes it is not the cheapest. It is wider and heavier-rated than a walking pad, but it is not the 30-inch-wide belt of iMovR's Unsit, and we did not find its warranty terms published, so ask before buying. Amazon showed it at $1,399 on 9 November 2026, and LifeSpan's own store showed its TX6-GlowUp version on sale at $1,099.",
     },
     {
-      id: 'flexispot-e7-plus',
-      name: 'FlexiSpot E7 Plus Standing Desk (4-Leg)',
-      category: 'Kind: Standing desk for a walking pad',
+      id: 'flexispot-heavy-duty-4-leg-frame',
+      name: 'FlexiSpot Heavy Duty 4-Leg Electric Standing Desk Frame',
+      category: 'Kind: Standing desk frame for a walking pad',
       badge: 'Most Stable Desk',
-      amazonUrl: 'https://www.amazon.com/s?k=FlexiSpot+E7+Plus+4+Leg+Standing+Desk&tag=sktiger-20',
-      priceRange: 'Around $550–$700',
-      specs: '4 legs, 3-stage · 26–51.6 in. · 15-year warranty',
+      amazonUrl: 'https://www.amazon.com/dp/B0HPB63BGT?tag=sktiger-20',
+      priceRange: 'About $530, frame only (Amazon, 9 Nov 2026)',
+      specs: '4 legs, dual motors · 26–51.6 in. · 540 lb static, 440 lb lift (listing) · fits desktops up to 35.4 x 78.7 in. · frame only',
       pros: [
-        'Four legs, and independent reviewers report essentially no wobble',
-        'Tops out at 51.6 in., one of the highest maximums at this price, which leaves room for a pad',
-        'Fifteen-year warranty from FlexiSpot',
-        'Frame fits desktops from about 47 to 80 in. long, so it can be wide enough for most pads',
+        'Four legs, the design independent reviewers of FlexiSpot\u2019s four-leg E7 Plus found essentially wobble-free',
+        'Tops out at 51.6 in., which leaves room for most adults on a pad',
+        'The listing gives both figures that sources split on for the E7 Plus: 540 lb static and 440 lb lifting',
+        'Takes desktops up to 78.7 in. long, wide enough to clear most pads',
       ],
       cons: [
-        'Heavy, and hard to move once assembled',
-        'Lift capacity is listed as 540 lb by FlexiSpot and as 440 lb lifting in one review',
+        'Frame only: the desktop is a separate purchase',
+        'The listing does not name the model, so confirm with FlexiSpot that it is the E7 Plus frame and which warranty applies',
         'Measure the clear width between the front legs before choosing a desktop size',
       ],
       bottomLine:
-        'The desk to put over a walking pad if stability is your priority or you are tall. Choose a desktop wide enough to clear the pad between the front legs.',
+        'The desk frame to put over a walking pad if stability is your priority or you are tall. Choose a desktop wide enough to clear the pad between the front legs.',
       description:
-        "This is a standing desk for a walking pad you supply, and it is the one we would choose if the movement of the screen is what worries you. Most standing desks have two legs; the E7 Plus has four, each with three stages, and that is the single most effective design feature against the side-to-side sway walking puts into a desk. A reviewer who used it for 3D printing reported zero wobble, and a reviewer of FlexiSpot's two-leg E7 Pro recommended four-leg designs for exactly this reason. The height range of 26 to 51.6 inches, given by FlexiSpot and independent reviewers alike, is among the highest at this price and leaves room for most adults on a pad. FlexiSpot gives a 15-year warranty. The lift capacity is described differently — 540 lb by FlexiSpot, 440 lb lifting in one review — so we have left it out. Four legs need one extra check: the pad must fit between the front pair.",
+        "This card replaced FlexiSpot's E7 Plus (4-Leg), which we could not find listed under that name on Amazon. FlexiSpot's own Amazon listing for its Heavy Duty 4-Leg Electric Standing Desk Frame gives the same figures FlexiSpot and independent reviewers gave the E7 Plus: four legs on dual motors, a height range of 26 to 51.6 inches, 540 lb static and 440 lb lifting capacity (the two numbers our sources had split on), and desktops up to 35.4 by 78.7 inches. Because the listing does not use the E7 Plus name, we cannot confirm it is the identical product, so treat the figures as the listing's and check the model with FlexiSpot. Four legs are the single most effective design feature against the side-to-side sway walking puts into a desk: a reviewer of the E7 Plus reported zero wobble, and a reviewer of FlexiSpot's two-leg E7 Pro recommended four-leg designs for exactly this reason. FlexiSpot gives the E7 Plus a 15-year warranty; confirm the term for this listing before buying. It is a frame only, at about $530 on Amazon on 9 November 2026, so add a desktop wide enough for the pad to fit between the front legs.",
     },
     {
       id: 'vari-comfortedge',
@@ -466,7 +468,7 @@ export default {
       ],
       cons: [
         'UPLIFT and an independent review differ on the top height (48.7 in. against 48.2 in.)',
-        'Less height in reserve than the FlexiSpot E7 Plus or the Vari for tall users',
+        'Less height in reserve than the FlexiSpot four-leg frame or the Vari for tall users',
         'Two legs; reviewers note a slight tremor at full height',
       ],
       bottomLine:
@@ -560,8 +562,9 @@ export default {
             the simplest route. On Amazon, pair a pad such as the
             <strong class="text-white">UREVO CyberPad for Office</strong> with a desk whose top height
             clears your elbow height plus the pad's deck height. If you already own a pad
-            or are tall, buy the four-leg <strong class="text-white">FlexiSpot E7 Plus</strong>, which
-            is the steadiest desk we found and one of the tallest.`,
+            or are tall, buy the <strong class="text-white">FlexiSpot Heavy Duty 4-Leg</strong> frame,
+            which shares the four-leg design and 51.6-inch top height of FlexiSpot's E7 Plus, the
+            steadiest desk we found.`,
     `Whichever you choose, do the height sum before anything else, measure between the legs
             rather than across the desktop, and plan the cables before the pad goes under. Then read
             our
