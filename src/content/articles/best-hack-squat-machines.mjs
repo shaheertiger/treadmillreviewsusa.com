@@ -29,19 +29,19 @@ export default {
           safety stops, storage and space in plain terms.`,
   note: `<strong class="text-gray-900">On the products below.</strong> We have not tested these
           machines, and no figure on this page is our own measurement. Each was confirmed as
-          currently sold on 19 October 2026 on the maker's own store (Titan Fitness, Bells of Steel,
-          Body-Solid and Force USA) or, for the Steelflex, at a US dealer. Angle, capacity,
+          currently sold on 19 October 2026 on the maker's own store (Titan Fitness, Bells of Steel
+          and Body-Solid). On 9 November 2026 we replaced three machines we first carded, the Force
+          USA Compact, the Bells of Steel Pandemonium and the Steelflex PLHP, which are sold direct
+          or through dealers but not on Amazon, with the nearest machines sold on Amazon US, checked
+          against the maker's store or Amazon listing and at least one other source. Angle, capacity,
           dimensions and price were checked on that date against at least one independent source
           where one existed — Garage Gym Reviews, Iron Company, indexed Amazon listings and a UK
           retailer. A figure appears in a product's specification line only where the maker and an
           independent source agree; where they conflicted, we left it out and say so on the card.
-          Three machines (Titan's dedicated hack squat, the Bells of Steel Pandemonium and the
-          Steelflex) have little or no independent coverage, so their figures are the maker's and
-          are labelled as such. We chose machines sold on Amazon US where we could find them.
-          Amazon's own pages would not load for us, so Amazon availability was confirmed from
-          indexed listings for the Titan combo and the Body-Solid only, and each card says where we
-          could not confirm it. The buttons are tagged Amazon searches, so check the model name and
-          seller. Every brand was checked against the US Consumer Product Safety Commission's recall
+          Two machines (Titan's dedicated hack squat and the Bells of Steel combo) have little or
+          no independent coverage, so their figures are the maker's and are labelled as such. Every
+          machine on this page is sold on Amazon US; check the model name and seller before you
+          order. Every brand was checked against the US Consumer Product Safety Commission's recall
           database. Prices are those we saw on that date and change often. We earn a commission if
           you buy through the Amazon links on this page; it does not change which products we list
           or what we say about them.
@@ -59,8 +59,11 @@ export default {
       html: `          <p>
             Six machines across four designs. The short version: Titan's Plate-Loaded Linear Hack
             Squat if you want a dedicated hack squat for under $1,000; Titan's Leg Press Hack Squat
-            combo if you want the best-documented machine that does both lifts; and the Force USA
-            Compact if your room is short and you want the lightest starting weight.
+            combo if you want the best-documented machine that does both lifts; and the GMWD PS01 if
+            you want a pendulum squat for under $1,000. All six are sold on Amazon. Force USA's
+            Compact, Bells of Steel's Pandemonium and Steelflex's PLHP, which the guide below still
+            uses as reference points, are sold direct or through dealers rather than on Amazon, so
+            the cards show the nearest Amazon alternatives.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead><tr>
@@ -71,10 +74,10 @@ export default {
             <tbody>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Titan Fitness Plate-Loaded Linear Hack Squat</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best dedicated hack squat</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">35° sled on linear bearings, about $975 (maker figures)</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Titan Fitness Leg Press Hack Squat Machine</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best combo</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">45° combo whose size and weight three sources agree on</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Force USA Compact Leg Press &amp; Hack Squat</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Short rooms, light start</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">30° sled, 38 lb start, pads adjust two ways</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bells of Steel Leg Press Hack Squat Machine</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best warranty</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Linear bearings, 55 lb sled, lifetime frame (maker figures)</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Body-Solid GLPH1100B Leg Press &amp; Hack Squat</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Thick pads, narrow frame</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4 in. contoured shoulder pads, 1,000 lb capacity</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bells of Steel Pandemonium Squat</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Pendulum squat at home</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Counterbalanced lever, also calf and Viking press (maker figures)</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Steelflex PLHP Plate Loaded Hack Press</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Commercial-style hack press</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">15-year frame warranty, home and commercial use (maker)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">GMWD Pendulum Squat Machine PS01</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Pendulum squat at home</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Spring-counterbalanced lever with bottom safety stops, under $900</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Body-Solid Leverage Squat/Calf Machine</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Commercial-style lever squat</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">3 x 3 in. 12-gauge frame, 170 lb, squat and calf raise</td></tr>
             </tbody>
           </table></div>
           <p>
@@ -120,19 +123,17 @@ export default {
             models the maker listed as on sale on 19 October 2026, preferably sold on Amazon US too.
             The independent sources were Garage Gym Reviews' review of the Titan combo, Iron
             Company's listing for the Body-Solid, indexed Amazon listings for the Titan combo and
-            the Body-Solid, a UK retailer's listing for the Force USA Compact, and an industry
-            newsletter's notice of the Pandemonium's release.
+            the Body-Solid, and, for the machines added on 9 November 2026, Body-Solid's data sheet,
+            GMWD's store and retailer listings.
           </p>
           <p>
             Independent coverage of dedicated home hack squats is thin, and that shows on the cards.
-            Titan's dedicated machine, the Pandemonium and the Steelflex carry the makers' figures,
+            Titan's dedicated machine and the Bells of Steel combo carry the makers' figures,
             labelled as such. Where sources did disagree, we left the figure off: the Titan combo's
             capacity (1,000 lb from Titan and the reviewer, 875 lb in an Amazon spec table), the
-            Body-Solid's carriage weight (60 lb from Body-Solid, 80 lb from Iron Company), and the
-            Force USA Compact's footplate size, which Force USA's own page gives two ways. Bells of
-            Steel's page for the Pandemonium gives three years on moving parts in its specification
-            table and 90 days on pins, handles and moving parts in its warranty section, so check
-            the terms before buying.
+            Body-Solid's carriage weight (60 lb from Body-Solid, 80 lb from Iron Company), the
+            Body-Solid lever squat's width (43 or 47 inches), and the GMWD PS01's capacity and parts
+            warranty, which retailers and GMWD give differently.
           </p>
           <p>
             Every brand on this page was checked against the CPSC recall database by recall title,
@@ -140,13 +141,15 @@ export default {
             database under "hack squat". Titan had a 2018 recall alert for weight-lifting safety
             straps, a rack accessory, and the database's one leg press recall is <a href="/cybex-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Cybex</a>'s 2012 recall of
             its commercial model 16110 plate-loaded leg press. We found no recalls for Bells of
-            Steel, Body-Solid, Force USA or Steelflex.
+            Steel, Body-Solid, GMWD, Force USA or Steelflex.
           </p>
           <p>
-            We deliberately left several machines out. Bells of Steel's standard Leg Press Hack
-            Squat ($2,053.99) is carded on our leg press page with the maker's figures; its Iso
-            version, which Garage Gym Reviews lists at $2,999, was judged not worth the premium by
-            that reviewer. Force USA's Ultimate 45 Degree combo ($1,899) and Major Fitness's AH1
+            We deliberately left several machines out. The Force USA Compact Leg Press &amp; Hack
+            Squat (about $999, a 30-degree sled with a 38 lb start), the Bells of Steel Pandemonium
+            (about $1,750) and the Steelflex PLHP (about $3,380) are sold on their makers' stores or
+            through dealers, not on Amazon, so they are discussed below but not carded. Bells of
+            Steel's Iso Leg Press and Hack Squat, which Garage Gym Reviews lists at $2,999, was
+            judged not worth the premium by that reviewer. Force USA's Ultimate 45 Degree combo ($1,899) and Major Fitness's AH1
             ($1,399.99) are on sale but we could not check the makers' figures beyond capacity.
             RitFit sells a rack-mounted hack squat attachment and a 45-degree combo, and Mikolo's
             combos were out of stock on its store on the day. Bolt Fitness's Outlaw combo, which
@@ -231,7 +234,7 @@ export default {
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">45°</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Titan combo (and most combos)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About 71%</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">35°</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Titan Linear Hack Squat</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About 57%</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">30°</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Force USA Compact</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">50%</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Arc</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Pandemonium, Steelflex PLHP</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Changes through the rep</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Arc</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">GMWD PS01, Body-Solid lever squat, Pandemonium, Steelflex PLHP</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Changes through the rep</td></tr>
             </tbody>
           </table></div>
           <p>
@@ -333,11 +336,14 @@ export default {
             </tr></thead>
             <tbody>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Titan Linear Hack Squat</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">46.75 x 60.5 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">190 lb</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Force USA Compact</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">52 x 65 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not published</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Force USA Compact (not carded)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">52 x 65 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Not published</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Titan combo</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">84 x 40 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">325 lb</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Body-Solid GLPH1100B</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">96 x 34 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">317 lb</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bells of Steel Pandemonium</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About 88 x 48.5 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">380 lb</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Steelflex PLHP</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About 99 x 59 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About 377 lb</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bells of Steel combo</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">87 x 37.5 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">322 lb</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">GMWD PS01</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About 63 x 43 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">287 lb</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Body-Solid GSCL360</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">62 x 43 or 47 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">170 lb</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bells of Steel Pandemonium (not carded)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About 88 x 48.5 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">380 lb</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Steelflex PLHP (not carded)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About 99 x 59 in.</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About 377 lb</td></tr>
             </tbody>
           </table></div>
           <p>
@@ -464,28 +470,28 @@ export default {
         "Titan's combo switches between hack squat and leg press by folding the leg press footplate down to reveal the hack squat back pad and lifting the leg press back pad off its hinge, according to Garage Gym Reviews, with three lockout positions on the side handles. Titan listed it on 19 October at $1,529.97, down from $2,549.99. Titan, Garage Gym Reviews and an indexed Amazon listing agree on the 45-degree carriage, the 84 by 40 by 53 inch frame and the 325 lb weight; Titan and the reviewer agree on the 26 by 22 inch hack squat footplate. Titan gives a 7.5 inch shoulder-pad spread, 4.5 by 8 inch shoulder pads, a 20 by 15 inch hack squat back pad, four footplate positions and an 80 lb carriage. Titan and the reviewer give a 1,000 lb capacity, but the Amazon listing's specification table gives 875 lb, so we have left capacity off. Garage Gym Reviews found the hack squat heavier than most commercial machines, thought it would not suit lifters 6 ft 3 in or taller, and reported a one-year warranty; check Titan's current terms.",
     },
     {
-      id: 'force-usa-compact-hack-squat',
-      name: 'Force USA Compact Leg Press & Hack Squat (2027 Model)',
-      category: 'Compact 30-degree hack squat, leg press and calf raise',
-      badge: 'Best for Small Spaces',
-      amazonUrl: 'https://www.amazon.com/s?k=Force+USA+Compact+Leg+Press+Hack+Squat&tag=sktiger-20',
-      priceRange: 'About $999',
-      specs: '30° incline · 38 lb starting sled · 700 lb of plates plus a 320 lb user · 52 x 65 in. footprint (maker)',
+      id: 'bells-of-steel-leg-press-hack-squat',
+      name: 'Bells of Steel Leg Press Hack Squat Machine',
+      category: 'Plate-loaded leg press, hack squat and calf raise on linear bearings',
+      badge: 'Best Warranty',
+      amazonUrl: 'https://www.amazon.com/dp/B0CQ2YNHCN?tag=sktiger-20',
+      priceRange: 'About $2,054',
+      specs: 'Maker figures: 55 lb sled · 1,000 lb sled capacity · 87 x 37.5 x 58 in. · linear ball bearings · lifetime frame warranty',
       pros: [
-        'Hack squat pad adjusts horizontally and vertically, per Force USA',
-        'Lightest starting weight here, at 38 lb',
-        'Eight lockout positions and built-in bottom stops',
-        'Stated 5 ft 0 in to 6 ft 8 in user range',
+        'Linear ball bearings on steel shafts, usually the smoothest sled guidance',
+        'Limited lifetime frame, three-year moving parts and one-year pad warranty',
+        'Light 55 lb starting sled and five racking positions',
+        'A 28 by 25 inch hack squat platform, per Bells of Steel',
       ],
       cons: [
-        'The shallow angle needs more plates for the same effort',
-        'Earlier generations had different ratings; check it is the 2027 model',
-        'Force USA’s page gives two footplate sizes',
+        'We found no independent review of this version to check figures against',
+        'At 87 inches long it needs a longer room than Titan’s dedicated sled',
+        'Bells of Steel’s stated fit tops out at 6 ft 2 in',
       ],
       bottomLine:
-        'The hack squat for a short room, a beginner or a lifter who wants a gentler angle and a light start.',
+        'The combo to buy for the warranty and the bearings, if you are comfortable relying on the maker’s figures.',
       description:
-        "Force USA's Compact is a 3-in-1 hack squat, leg press and calf raise on a 30-degree incline, and the updated 2027 model was listed at $999 on 19 October. Force USA and a UK retailer's listing agree on the 30-degree angle, the 38 lb starting sled and the 700 lb plate rating; Force USA says that rating excludes body weight and the machine takes a user of up to 320 lb on top. For the hack squat, Force USA says the pad adjusts independently on horizontal and vertical axes and that shoulder-pad positioning covers users from 5 ft 0 in to 6 ft 8 in. It gives eight lockout positions with safety stops in the sled's travel path, a 52 by 65 inch footprint, a 57 inch height and about 90 minutes to assemble, and says its manual recommends 3 to 5 feet of clearance. Its page gives the footplate as 35 by 29.5 inches in one place and 30 by 29.5 in another, so we have left that off. We could not confirm an Amazon listing; Force USA sells it direct.",
+        "Bells of Steel's combo does hack squats, leg presses and calf raises on a sled that rides linear ball bearings. Every figure here is Bells of Steel's: a 55 lb starting sled, a 1,000 lb capacity in every mode, an 87 by 37.5 by 58 inch frame, a 322 lb machine, five racking positions, multiple footplate angles, band pegs, a 28 by 25 inch hack squat platform and a 26 by 13.75 inch leg press footplate. Bells of Steel says it has fitted lifters from 5 ft 0 in to 6 ft 2 in and 265 lb. The warranty is a limited lifetime on the frame, three years on moving parts and one year on the back pad. Independent coverage we found was of Bells of Steel's separate, larger Iso Leg Press and Hack Squat, which Garage Gym Reviews describes as smooth on its guide rods but expensive. Bells of Steel listed it at $2,053.99 on its own store on 19 October 2026, and by November 2026 it was also listed on Amazon US. It takes the slot the Force USA Compact Leg Press & Hack Squat held on this page; Force USA sells the Compact on its own store, not on Amazon, and this is the closest combo we could check that is.",
     },
     {
       id: 'body-solid-glph1100b-hack',
@@ -512,52 +518,52 @@ export default {
         "The GLPH1100B is a plate-loaded hack squat and leg press on a quad-track roller system, with flip-and-lock back pads, diamond-plate footplates for both positions, under-carriage plate loading, three lockout positions and a 2 by 4 inch 11-gauge steel mainframe. For hack squats, Body-Solid gives the back and shoulder pads as 4 inches thick, double-stitched and contoured, the most detailed pad description of the combos here. Body-Solid listed it in stock at $2,200 on 19 October and Iron Company at $1,735, and an Amazon listing was indexed. Body-Solid, Iron Company and the Amazon listing agree on the 1,000 lb capacity and three lockouts, and Body-Solid and Iron Company on the 96 by 34 inch footprint; Body-Solid gives a 56 inch height and 317 lb weight. Body-Solid gives the empty carriage as 60 lb and Iron Company as 80 lb, so we have left it off. It ships in five boxes. Body-Solid lists both in-home and commercial warranties for it; check which applies to you.",
     },
     {
-      id: 'bells-of-steel-pandemonium',
-      name: 'Bells of Steel Pandemonium Squat',
-      category: 'Pendulum squat with calf press and Viking press',
+      id: 'gmwd-pendulum-squat',
+      name: 'GMWD Pendulum Squat Machine PS01',
+      category: 'Spring-counterbalanced pendulum squat',
       badge: 'Best Pendulum',
-      amazonUrl: 'https://www.amazon.com/s?k=Bells+of+Steel+Pandemonium+Pendulum+Squat&tag=sktiger-20',
-      priceRange: 'About $1,750',
-      specs: 'Maker figures: counterbalanced pendulum arm · 450 lb max capacity · 88 x 48.5 in. footprint · 88 in. tall extended · 380 lb',
+      amazonUrl: 'https://www.amazon.com/dp/B0CVTYVN24?tag=sktiger-20',
+      priceRange: '$799.99–$899.99',
+      specs: 'Pendulum lever with removable spring counterbalance · 5 bottom safety-stop positions, 18 to 23.7 in. · about 63 x 43 in. footprint · 287 lb · Olympic plates',
       pros: [
-        'A pendulum squat, rare in home ranges, with a counterbalance arm',
-        'Also does calf raises, Viking presses, dips and pull-ups, per Bells of Steel',
-        'Three peg levels for lifters up to about 6 ft 5 in',
-        'Removable back pad and spotter arm included',
+        'A pendulum squat for well under $1,000',
+        'A removable spring counterbalance that GMWD says makes the bottom easier and the top harder',
+        'Five bottom safety-stop positions, so a failed rep lands on the stopper',
+        'Listings and GMWD agree on about a 63 x 43 inch footprint and 287 lb',
       ],
       cons: [
-        'No independent review yet; figures are Bells of Steel’s',
-        'Bells of Steel’s own page gives two different moving-parts warranties',
-        'Tall, at about 88 in. extended',
+        'GMWD gives a lifetime frame but only six months on parts; one retailer lists two years',
+        'Capacity is given as 800 lb by retailers; we found no GMWD figure to match it, so it is not on the card',
+        'No in-depth independent review we could find',
       ],
       bottomLine:
-        'The machine for lifters who specifically want a pendulum squat at home and accept relying on the maker’s figures.',
+        'For a home lifter who wants the pendulum feel without commercial money, and who will read the warranty terms first.',
       description:
-        "The Pandemonium is a pendulum squat: the back pad, shoulder pads and footplate sit on a lever that swings in an arc, with a counterbalance arm that offsets the lever's weight, a single tall upright with three peg levels, and set-ups for calf raises, Viking presses, dips, pull-ups and rows. Bells of Steel listed it at $1,749.99 on 19 October, and an industry newsletter reported its release, but we found no hands-on review. The figures are Bells of Steel's: a 450 lb maximum capacity, 380 lb machine weight, about 88 inches deep with the arm and 88 inches tall fully extended, 48.5 inches wide, a 21.6 inch square footplate, 11.3 inch loadable sleeves and two storage horns for extra 45 lb plates. Bells of Steel says it suits lifters up to about 6 ft 5 in and takes 2.3 inch rack attachments. Its specification table gives a lifetime frame, three-year moving parts and one-year pad warranty, while its warranty section gives 90 days on pins, handles and moving parts; ask before buying. We could not find it on Amazon.",
+        "GMWD's PS01 is a plate-loaded pendulum squat: the shoulder pads and back pad ride a lever that swings in an arc, rather than a sled on rails. GMWD's Amazon listing describes a removable spring counterbalance that makes the movement easier at the bottom, where you are weakest, and harder at the top, and a bottom safety stopper with five positions from 18 to 23.7 inches, and gives a 63 by 42 inch footprint and a 287 lb weight; Amazon's own product data and retailer listings give about 63 by 43 by 62 inches and the same 287 lb. Retailer listings give an 800 lb capacity, which we could not match to a GMWD figure. GMWD's store gives a lifetime warranty on the frame and six months on parts, while one retailer lists two years, so get the terms in writing. We saw it at $799.99 on Amazon on 9 November 2026 and at $899.99, against $1,199.99, on GMWD's store, which showed a pre-order note. It takes the slot the Bells of Steel Pandemonium held on this page; Bells of Steel sells the Pandemonium on its own store, not on Amazon.",
     },
     {
-      id: 'steelflex-plhp',
-      name: 'Steelflex PLHP Plate Loaded Hack Press',
-      category: 'Commercial-style plate-loaded hack press (lever)',
+      id: 'body-solid-leverage-squat-calf',
+      name: 'Body-Solid Leverage Squat/Calf Machine (GSCL360)',
+      category: 'Plate-loaded lever squat and calf raise',
       badge: 'Most Commercial',
-      amazonUrl: 'https://www.amazon.com/s?k=Steelflex+PLHP+Plate+Loaded+Hack+Press&tag=sktiger-20',
-      priceRange: 'About $3,380',
-      specs: 'Maker figures: plate-loaded lever · 99 x 59 x 52 in. · about 377 lb (171 kg) · 265 lb (120 kg) max user · 15-yr frame warranty',
+      amazonUrl: 'https://www.amazon.com/dp/B000M0H268?tag=sktiger-20',
+      priceRange: '$999.88–$1,155',
+      specs: '3 x 3 in., 12-gauge steel mainframe · 170 lb · spring-loaded lockout handle · round calf-raise block · contoured shoulder and back pads · Olympic plates',
       pros: [
-        'Built and warranted for commercial as well as home use',
-        '15-year frame warranty on Steelflex’s data sheet',
-        'Sealed bearings at all pivot points and continuous welds',
-        'Adjustable for different heights and sizes, per Steelflex',
+        'A lever squat on a 3 x 3 in., 12-gauge commercial-style frame',
+        'Body-Solid and retailers agree on the 170 lb weight and the frame',
+        'A spring-loaded lockout handle within reach, and a calf-raise mode',
+        'Sold by home and commercial retailers, and on Amazon',
       ],
       cons: [
-        '265 lb maximum user weight, a real limit for a squat machine',
-        'The most expensive and largest machine here',
-        'No independent review; we could not confirm an Amazon listing',
+        'Body-Solid’s data sheet gives 43 in. wide and its newer listing 47 in., so we left the footprint off the specification line',
+        'A lever arc rather than a sled, so it feels different from a classic hack squat',
+        'No published user weight limit that we found',
       ],
       bottomLine:
-        'The hack squat for a well-funded garage gym that wants commercial build and warranty, for lifters inside its user limit.',
+        'For a home gym that wants commercial-style lever squats and calf raises for about $1,000 to $1,155, after confirming the width.',
       description:
-        "The PLHP is a commercial-style plate-loaded hack press: a lever machine with sealed bearings at all pivots, Olympic weight posts, 50 mm high-density upholstery, continuous welds and adjustment for different heights and sizes, according to Steelflex's data sheet. Select Fitness listed it at $3,380 with free shipping on 19 October; we found no independent review. The figures are Steelflex's: 251 by 149 by 133.2 cm (about 99 by 59 by 52 inches), 171 kg (about 377 lb) and a 120 kg (about 265 lb) maximum user weight. Because your body weight is part of the load in a hack squat, that user limit matters more than on a leg press. Steelflex gives a 12-gauge steel frame in 5 by 10 cm oval tubing, and a warranty of 15 years on the frame, two years on bearings, one year on other parts and six months on upholstery and grips, for commercial and residential use. We could not confirm an Amazon listing; it is sold through fitness dealers.",
+        "Body-Solid's GSCL360 is a plate-loaded lever machine: shoulder pads on a pivoting arm guide a squat or a standing calf raise in an arc, the way commercial-gym lever squats do. Body-Solid's Amazon listing and its data sheet describe a 3 x 3 inch, 12-gauge high-tensile steel mainframe welded on all four sides, extra-thick contoured shoulder and back pads, a round calf-raise block and a spring-loaded lockout handle, and Body-Solid and several retailers agree on a 170 lb machine weight. The footprint is the one conflict: Body-Solid's data sheet gives 62 x 43 x 56 inches and its current GSCL360B listing 62 x 47 x 56, so measure for 47 inches. One retailer gives a 35 lb carriage weight, which we could not match to a Body-Solid figure. We saw it at $1,155 on Amazon on 9 November 2026, and retailers list it from about $1,000. It takes the slot the Steelflex PLHP Plate Loaded Hack Press held on this page; Steelflex sells through dealers, not on Amazon, and this is the closest commercial-style lever squat we could check that is.",
     },
   ],
   faqs: [
@@ -579,7 +585,7 @@ export default {
     },
     {
       q: 'How much space does a home hack squat machine need?',
-      a: `Titan lists its dedicated hack squat at 46.75 by 60.5 inches, the Force USA Compact is 52 by 65, and the leg press combos are 84 to 96 inches long. Allow about three feet around the frame to step in, load plates and swap pads. The Pandemonium is about 88 inches tall, so check the ceiling for that one.`,
+      a: `Titan lists its dedicated hack squat at 46.75 by 60.5 inches, the GMWD PS01 pendulum is about 63 by 43, and the leg press combos are 84 to 96 inches long. Allow about three feet around the frame to step in, load plates and swap pads. Pendulum and lever machines swing upward as you stand, so check the ceiling too.`,
     },
     {
       q: 'Is a hack squat machine safe to use alone?',
@@ -632,9 +638,9 @@ export default {
     `<strong class="text-white">If you want a dedicated hack squat, Titan's Plate-Loaded Linear
             Hack Squat is the pick here</strong>, at about $975, with the caveat that its figures are
             Titan's. If you want both lifts, Titan's Leg Press Hack Squat combo is the
-            best-documented machine; choose the Force USA Compact for a short room and a light start,
-            the Body-Solid GLPH1100B for thick pads, the Bells of Steel Pandemonium for a pendulum
-            squat, and the Steelflex PLHP for commercial build within its user limit.`,
+            best-documented machine; choose the Bells of Steel combo for its bearings and warranty,
+            the Body-Solid GLPH1100B for thick pads, the GMWD PS01 for a pendulum squat, and the
+            Body-Solid lever squat for a commercial-style frame.`,
     `Whichever you choose, compare machines of the same angle, check the shoulder pads and
             user limit against your body, plan the room around the frame and set the bottom stop
             every session. If you have not yet bought a rack, start with our

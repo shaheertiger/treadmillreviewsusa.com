@@ -1,8 +1,8 @@
 export default {
   slug: 'best-vr-treadmills',
-  title: 'Best VR Treadmill (2026): Five Home Options, Honestly Compared',
+  title: 'Best VR Treadmill (2026): Home Options on Amazon, Honestly Compared',
   description:
-    'The best VR treadmill for home use in 2026: the Virtuix Omni One range and KAT Walk C2 series compared on price, headset support, space and limits, and why none is a fitness treadmill in the usual sense.',
+    'The best VR treadmill for home use in 2026: KAT Walk C3 and C2 models on Amazon, compared with the Virtuix Omni One on price, headset support, space and limits, and why none is a fitness treadmill.',
   crumbLabel: 'Best VR Treadmills',
   breadcrumb: { name: 'Best Treadmills', url: '/best/' },
   kicker: 'Buying Guide',
@@ -10,7 +10,7 @@ export default {
   updatedLong: 'October 14, 2026',
   published: '2026-10-14',
   socialProof: '1.5k',
-  h1: ['Best VR Treadmill', 'Five Home Options, Honestly Compared'],
+  h1: ['Best VR Treadmill', 'Home Options, Honestly Compared'],
   standfirst:
     'A VR treadmill lets you walk, run and turn inside a virtual world while staying in one spot. The home models we could confirm on sale in the US come from two companies, in five main configurations. Here is what each costs, which headsets it works with, how much room it needs — and why none of them is a fitness treadmill in the sense the rest of this site means.',
   ctas: [
@@ -28,8 +28,11 @@ export default {
           university lab's equipment page. Where sources disagreed, as they do on KAT's supported
           height range, the figure is left out and the description says so. Prices for these
           machines move a lot with promotions and bundles, so we give dated bands rather than a
-          single figure; confirm the price, what is in the box and the warranty before ordering. We
-          searched cpsc.gov for Virtuix and KAT VR and found no recall or warning. These are gaming
+          single figure; confirm the price, what is in the box and the warranty before ordering. On
+          9 November 2026 we replaced the three Virtuix Omni One cards with KAT's C3 Core, because
+          Virtuix sells direct and through Meta's store rather than on Amazon; the C3 Core was
+          checked against its Amazon listing, KAT's store and Knoxlabs. We searched cpsc.gov for
+          Virtuix and KAT VR and found no recall or warning. These are gaming
           and VR locomotion devices, not exercise equipment in the usual sense, and nothing here is
           fitness or medical advice. We earn a commission if you buy through the Amazon links on
           this page; it does not change which products we list or what we say about them.`,
@@ -39,8 +42,9 @@ export default {
           omnidirectional platforms: you stand in a harness or ring on a low-friction base, wear
           special shoes or overshoes, and slide your feet in a walking or running motion while
           sensors turn that into movement in a game. That is very different from a motorised belt,
-          and it is worth understanding before spending $1,000 to $3,000. This page lists the five
-          main home configurations from those two makers, what each costs as of October 2026, the
+          and it is worth understanding before spending $1,000 to $3,000. This page cards the three
+          home models sold on Amazon, all from KAT VR, compares them with Virtuix's Omni One range,
+          which is sold direct, and covers what each costs, the
           headsets each supports, and an honest account of what these machines are and are not
           good for.`,
   sections: [
@@ -48,10 +52,12 @@ export default {
       id: 'quick-picks',
       heading: 'Our Picks at a Glance',
       html: `          <p>
-            If you want a complete system that works out of the box, choose the Omni One. If you
-            already own a Meta Quest, the Omni One for Quest saves you buying a second headset. If
-            you already own a PC VR setup and want to spend less, the KAT Walk C2 Core is the
-            cheapest serious option. If what you actually want is exercise, read
+            The three picks below are KAT VR models sold on Amazon. If you own a Meta Quest, the
+            KATVR Walk C3 Core comes on Amazon bundled with the Quest adapter. If you play on a PC
+            and want haptics, the KAT Walk C2 Plus Enhanced; if you want the cheapest C2, the C2 Core.
+            Virtuix's Omni One range, including the only complete system with its own headset, is
+            sold direct from Virtuix and through Meta's store rather than on Amazon, so it is
+            covered in the guide below but not carded. If what you actually want is exercise, read
             <a href="#not-a-treadmill" class="text-[#0F62FE] font-medium">why these are not fitness treadmills</a>
             first.
           </p>
@@ -62,9 +68,7 @@ export default {
               <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Price seen, Oct 2026</th>
             </tr></thead>
             <tbody>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Virtuix Omni One</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A complete system, no PC</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,500–$3,000</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Virtuix Omni One for Quest</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Meta Quest owners</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Around $2,600</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Virtuix Omni One Core</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">PC VR and SteamVR owners</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$2,500–$2,600</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">KATVR Walk C3 Core</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Meta Quest owners, newest KAT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$899–$999 (Amazon, Nov 2026)</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">KAT Walk C2 Plus Enhanced</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">PC VR on a mid budget, with haptics</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$1,200–$1,700</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">KAT Walk C2 Core Enhanced</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The lowest price</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$800–$1,500</td></tr>
             </tbody>
@@ -72,13 +76,14 @@ export default {
     },
     {
       id: 'picks',
-      heading: 'The 5 Best VR Treadmills for Home Use',
+      heading: 'The 3 Best VR Treadmills for Home Use on Amazon',
       products: true,
       html: `          <p>
-            These are the five consumer configurations we could confirm as currently sold in the US.
-            Three are versions of Virtuix's Omni One, differing mainly in which headset they work
-            with; two are KAT VR's C2 series. Price bands reflect the list prices, bundles and
-            promotion codes we saw on 14 October 2026, and these move often.
+            These are the home VR treadmills we could confirm on Amazon US: KAT VR's new C3 Core and
+            its two C2 models. Virtuix's three Omni One configurations are sold direct from Virtuix
+            and through Meta's store, not on Amazon, so the cards show KAT's nearest equivalents;
+            the comparison section below still covers the Omni One. Price bands reflect the list
+            prices, bundles and promotion codes we saw, and these move often.
           </p>`,
     },
     {
@@ -321,76 +326,28 @@ export default {
   ],
   products: [
     {
-      id: 'virtuix-omni-one',
-      name: 'Virtuix Omni One',
-      category: 'Complete standalone VR treadmill system',
-      badge: 'Best Overall',
-      amazonUrl: 'https://www.amazon.com/s?k=Virtuix+Omni+One+VR+Treadmill&tag=sktiger-20',
-      priceRange: '$2,500–$3,000',
-      specs: 'Includes customised Pico 4 Ultra headset · users 4 ft 4 in to 6 ft 4 in, up to 250 lb · 48 x 60 x 48 in., 150 lb',
-      pros: [
-        'The only complete system here: treadmill, headset, controllers and trackers in one box',
-        'No gaming PC needed',
-        'Compact, about four feet across, with built-in wheels',
-        '30-day refund guarantee and 12-month home warranty by Virtuix’s listing',
-      ],
-      cons: [
-        'The most expensive option here',
-        'Games come from Virtuix’s own store; the bundled headset is not your choice',
-        'A 250 lb user limit and a 6 ft 4 in maximum height',
-      ],
-      bottomLine:
-        'For people who want the most finished, least fiddly VR treadmill experience and do not already own a headset or gaming PC.',
-      description:
-        "The Omni One is Virtuix's consumer treadmill, and in its full form it is the only option here that needs nothing else. Virtuix's store lists it at $2,995, or $104 a month, with a customised Pico 4 Ultra headset, controllers, overshoes, foot trackers and a cleaning kit, a 30-day refund guarantee and a 12-month home warranty; it launched at $2,595 with a Pico headset, according to 2024 coverage, and Virtuix has run $500-off codes since, so our band runs from $2,500 to $3,000. Virtuix lists users from 4 feet 4 inches to 6 feet 4 inches and up to 250 lb, and gives the unit as 48 by 60 by 48 inches and 150 lb. One hands-on reviewer was walking, jogging and running comfortably after about 15 minutes; others found the first hour awkward and compared the feel to walking on ice. Games come from Virtuix's Omni One store. It is a gaming device, not a fitness treadmill, and it ships to the US and Canada only.",
-    },
-    {
-      id: 'virtuix-omni-one-for-quest',
-      name: 'Virtuix Omni One for Quest',
-      category: 'VR treadmill for Meta Quest headsets',
+      id: 'katvr-walk-c3-core',
+      name: 'KATVR Walk C3 Core',
+      category: 'Newest KAT home VR treadmill, Quest bundle',
       badge: 'Best for Quest Owners',
-      amazonUrl: 'https://www.amazon.com/s?k=Virtuix+Omni+One+for+Quest&tag=sktiger-20',
-      priceRange: 'Around $2,600',
-      specs: 'Works with Meta Quest 2, 3 and 3S · users up to 250 lb · no headset included',
+      amazonUrl: 'https://www.amazon.com/dp/B0HP9NWT71?tag=sktiger-20',
+      priceRange: '$899–$999 on Amazon (9 Nov 2026)',
+      specs: 'Amazon bundle includes C3 shoes and a Quest adapter · SteamVR headsets and Meta Quest · about 1.2 sq m footprint (maker) · user limits not yet published',
       pros: [
-        'Uses the Quest you already own instead of a second headset',
-        'Official Meta support, and sold through Meta’s accessory store as well as Virtuix',
-        'Cheaper than the full Omni One, by about $400 at list',
-        'Launched with a bundle of compatible Quest games',
+        'KAT’s newest home model, and the cheapest VR treadmill we found on Amazon',
+        'The Amazon bundle includes KAT’s C3 shoes and the Quest adapter, per the listing',
+        'Works with SteamVR headsets and Meta Quest, per KAT',
+        'KAT gives a footprint of about 1.2 square metres',
       ],
       cons: [
-        'Not every Quest game supports it yet',
-        'Still a large outlay for a VR accessory',
-        'The same 250 lb limit and sliding gait as the full Omni One',
+        'Knoxlabs, an authorised retailer, says final technical details are still pending',
+        'No published user weight or height limit that we could find',
+        'Listings are split by shoe size, and some sizes are priced $100 higher',
       ],
       bottomLine:
-        'For Meta Quest owners who play free-movement games and want to walk and run in them rather than use a thumbstick.',
+        'For a Meta Quest or PC VR owner who wants the newest KAT platform at the lowest price, and is comfortable buying before full specifications are published.',
       description:
-        "Omni One for Quest launched in June 2026 as the first VR treadmill with official Meta Quest support. Road to VR, TechSpot and Virtuix all give the price as $2,595, and Virtuix's store listed it at that figure when we checked, with a monthly plan also offered. Virtuix's listing says it works with Quest 2, Quest 3 and Quest 3S headsets; Road to VR reported Quest 2 and 3 support at launch and named optimised games including VAIL, Forefront and Star Trek: Infection, with four titles bundled free for a limited time. It uses the same treadmill as the full Omni One, so the same 250 lb user limit and the same learning curve apply, but you supply the headset. Road to VR's one real caveat was that not all Quest games are supported, so check the titles you care about first. Launch coverage also pointed out the obvious: at $2,595 it costs several times as much as the headset it works with. Virtuix ships it to the US, Canada, the EU and the UK.",
-    },
-    {
-      id: 'virtuix-omni-one-core',
-      name: 'Virtuix Omni One Core',
-      category: 'VR treadmill for PC VR and SteamVR',
-      badge: 'Best Omni for PC VR',
-      amazonUrl: 'https://www.amazon.com/s?k=Virtuix+Omni+One+Core&tag=sktiger-20',
-      priceRange: '$2,500–$2,600',
-      specs: 'Treadmill only, for PC VR headsets and SteamVR games · users up to 250 lb · overshoes and foot trackers included',
-      pros: [
-        'Works with a wide range of PC VR headsets you may already own',
-        'Access to compatible SteamVR games rather than one store',
-        'Same compact Omni One base with built-in wheels',
-        'Sold in the US, Canada, the EU and the UK',
-      ],
-      cons: [
-        'Needs a VR-ready gaming PC as well as a headset',
-        'Costs much more than the KAT Walk C2 series, which also targets PC VR',
-        'Games must support free movement; PSVR2 is not supported',
-      ],
-      bottomLine:
-        'For PC VR players who want the Omni One platform and already own a capable headset and PC.',
-      description:
-        "The Omni One Core is the Omni One treadmill without a headset, for people who already play on PC. Virtuix's store listed it at $2,495, or $87 a month, when we checked; Yanko Design and TweakTown gave $2,595 at its December 2024 launch, and in Europe it sells for €2,995 or £2,795 through Unbound XR, according to Auganix and Virtuix's own announcement. Coverage of the launch lists the treadmill, overshoes, foot trackers and a Bluetooth adapter in the box, with no headset. Virtuix's Omni Connect app links it to a PC and translates your movement into game input for supported SteamVR titles, and Virtuix lists a wide range of PC VR headsets as compatible, but not PSVR2. The user limits are the same as the full Omni One. The question with the Core is value: it costs well over the KAT Walk C2 Plus, which targets the same PC VR buyer. You are paying for Virtuix's platform, its compact design and its software rather than for extra hardware.",
+        "The C3 Core is the entry model of KAT VR's C3 generation, which followed the C2 in 2026. KAT's Amazon listing describes a 360-degree omnidirectional platform with a footprint of about 1.2 square metres, says the bundle includes KAT's proprietary C3 shoes and a Quest adapter, and says the adapter supports SteamVR headsets and Meta Quest; KAT's own store was offering the same shoes-and-adapter bundle as a promotion. Knoxlabs, an authorised retailer, lists the C3 Core with shoes at $1,473.53, with the Quest adapter and seat module sold separately, and says the final technical details are still pending; it does not give a platform diameter, and we found no published user weight or height limit, so none is on the card. Ask KAT before ordering if you are near the C2's 286 lb limit. Listings are sold by shoe size: we saw $899 for most sizes and $999 for some on Amazon on 9 November 2026. It takes the slot the Virtuix Omni One range held on this page; Virtuix sells the Omni One direct and through Meta's store, not on Amazon. Like every machine here, it is a gaming device rather than a fitness treadmill.",
     },
     {
       id: 'kat-walk-c2-plus-enhanced',
@@ -444,7 +401,7 @@ export default {
   faqs: [
     {
       q: 'What is the best VR treadmill?',
-      a: `For a complete system that needs no PC, the Virtuix Omni One, which comes with its own headset. For Meta Quest owners, the Omni One for Quest. For PC VR players on a budget, the KAT Walk C2 Plus Enhanced or the cheaper C2 Core. All are gaming devices rather than fitness treadmills, and prices move a lot with promotions.`,
+      a: `On Amazon, the KATVR Walk C3 Core is the newest and cheapest, bundled with a Quest adapter; the KAT Walk C2 Plus Enhanced adds haptics for PC VR, and the C2 Core is the cheapest C2. The Virtuix Omni One, the only complete system with its own headset, is sold direct rather than on Amazon. All are gaming devices rather than fitness treadmills.`,
     },
     {
       q: 'How much does a VR treadmill cost?',
@@ -456,7 +413,7 @@ export default {
     },
     {
       q: 'Do VR treadmills work with Meta Quest?',
-      a: `Some do. Virtuix's Omni One for Quest has official Meta support for Quest 2, 3 and 3S by Virtuix's listing, though not every Quest game supports it. The KAT Walk C2 series can work with a Quest through KAT's optional Nexus adapter or through a PC link. PlayStation VR2 is not supported by either maker's current models.`,
+      a: `Some do. Virtuix's Omni One for Quest has official Meta support for Quest 2, 3 and 3S by Virtuix's listing, though not every Quest game supports it. KAT's C3 Core is sold on Amazon bundled with a Quest adapter, and the C2 series can work with a Quest through KAT's optional Nexus adapter or through a PC link. PlayStation VR2 is not supported by either maker's current models.`,
     },
     {
       q: 'Can you buy an Infinadeck for home use?',
@@ -510,11 +467,12 @@ export default {
     },
   ],
   bottomLine: [
-    `The best VR treadmill for most people is the
-            <strong class="text-white">Virtuix Omni One</strong>, the only complete system that needs
-            no PC, or its Quest version if you already own a Meta headset. If you play on a PC and
-            want to spend less, the <strong class="text-white">KAT Walk C2 Plus Enhanced</strong>
-            costs roughly half as much as the Omni One Core, and the C2 Core is the cheapest way in.`,
+    `On Amazon, the <strong class="text-white">KATVR Walk C3 Core</strong> is the one to start
+            with: KAT's newest platform, bundled with a Quest adapter, for under $1,000, though its
+            full specifications are not yet published. The
+            <strong class="text-white">KAT Walk C2 Plus Enhanced</strong> adds haptics for PC VR, and
+            the C2 Core is the cheapest C2. If you want a complete system with its own headset, the
+            Virtuix Omni One is sold direct from Virtuix.`,
     `Be clear about what you are buying: a locomotion device for VR games, not a fitness
             treadmill. If what you want is training, a conventional machine does more for less, and
             our guide to

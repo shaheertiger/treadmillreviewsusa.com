@@ -33,7 +33,9 @@ export default {
           Doctor coverage of the T9200 and manuals and parts listings for older models, the US Consumer Product Safety
           Commission's recall database for Vision Fitness and Johnson Health Tech (recall 26-203 of January 2026 and
           recall 06-556 of 2006), and Horizon's and Life Fitness's US stores for the alternatives, as checked for our
-          reviews of those machines the same day. Vision publishes no prices; the T600E price is one dealer's, and
+          reviews of those machines the same day. On 9 November 2026 we replaced the T600 and T600E cards with the
+          Matrix T5x and NordicTrack Commercial 2450, which are sold on Amazon; their figures are those checked for our
+          Matrix T5x review and heavy-duty treadmill guide. Vision publishes no prices; the T600E price is one dealer's, and
           dealer prices vary by region and change often. Conflicting figures are set out in the text and kept off the
           cards. We have not tested any Vision treadmill. As an Amazon Associate we earn from qualifying purchases;
           that does not change what we say.`,
@@ -47,52 +49,54 @@ export default {
           check a used one, and the Johnson Health Tech home treadmills that now fill Vision's old role.`,
   products: [
     {
-      id: 'vision-t600',
-      name: 'Vision T600',
-      category: 'Vision’s Only Current Treadmill, LED Console',
-      badge: 'Current Vision',
-      priceRange: 'Through Vision dealers; no published price',
-      amazonUrl: 'https://www.amazon.com/s?k=Vision+Fitness+T600+Treadmill&tag=sktiger-20',
-      specs: '22 x 60 in. running surface · 4.2 HP AC drive · 0.5-12 mph (120 V) · 0-15% incline · 400 lb max user · non-folding',
+      id: 'matrix-t5x',
+      name: "Matrix T5x",
+      category: "Commercial AC Treadmill From Vision’s Parent Company",
+      badge: "Closest on Amazon to the T600",
+      reviewUrl: '/matrix-t5x-treadmill/',
+      priceRange: "$3,999-$4,399 remanufactured (one US reseller, 14 Oct 2026)",
+      amazonUrl: 'https://www.amazon.com/dp/B07YGMKD52?tag=sktiger-20',
+      specs: "60 in. running length · 5.0 HP AC drive · 0.5-12 mph · 0-15% incline · non-folding · dedicated 20 A circuit",
       pros: [
-        'An AC drive and a 400 lb rating, figures Vision and a US dealer agree on',
-        'A 22 by 60-inch running surface on a reversible deck with UltraZone cushioning',
-        'Built for light-commercial use, so far beyond typical home hours',
-        'Vision lists a standard NEMA 5-15 plug for 100-120 V supplies',
+        "A 5.0 HP AC drive built for club use, agreed across Matrix’s manual and reseller listings",
+        "Incline to 15% and a full 60-inch running length",
+        "Simple LED console with no subscription or platform to go out of date",
+        "Remanufactured units come with a reseller warranty that can include on-site labour",
       ],
       cons: [
-        'Vision publishes no price and says availability varies by region',
-        '408 lb and 85 inches long; it does not fold',
-        'One overseas listing gives 3.0 HP and some give 392 lb, against Vision’s 4.2 HP and 408 lb',
-        'Warranty terms depend on the dealer and on home or commercial use',
+        "Not on Matrix’s US home store, so a new one with a Matrix residential warranty is not the realistic option",
+        "Width, user-weight rating and machine weight conflict across sources and generations",
+        "Needs a dedicated 20-amp circuit with a matching outlet on a 120-volt supply",
+        "Heavy, long and non-folding; delivery and access need planning",
       ],
       bottomLine:
-        'A gym-grade treadmill for a buyer with the space and budget who can reach a Vision dealer; most home users will do as well for far less.',
+        "The nearest Amazon alternative to a T600: a Johnson Health Tech club AC treadmill, bought remanufactured with a written warranty, if your room has a 20-amp circuit.",
       description:
-        'The T600 is the only treadmill on Vision Fitness’s US site. Vision lists a 4.2 HP AC drive, a 22 by 60-inch running surface, 0.5 to 12 mph on 100-120 V (13.8 mph on 220 V), 0 to 15% incline, a 400 lb maximum user weight, 85 by 36 by 65 inches and 408 lb, with a dot-matrix LED console; Fitness Supply’s US listing agrees on each figure. Vision publishes no price and asks buyers to contact a local office. Earlier dealer listings in search results put the LED model at about $5,400 in the US, but we could not confirm a live US price on 5 November 2026.',
+        "The T5x is a Matrix commercial treadmill sold under the same name in at least an older and a newer style. Matrix’s owner’s manual for the MX-T5x and independent reseller listings agree on a 5.0 HP AC drive, a 60-inch running length, 0 to 15% incline, a speed range of 0.5 to 12 mph and a 20-amp electrical requirement (NEMA 5-20 on 120 volts). They disagree on the rest. The manual gives a 22-inch-wide running area, a 500 lb maximum user weight and 450 lb machine weight; one reseller’s chart gives 20 inches wide and 400 lb for both styles; another listing gives a 22-inch belt, 400 lb, 399 lb machine weight and a 15 mph top speed. A US remanufacturer listed the older style at $3,999 and the newer style at $4,399 on 14 October 2026, with a one-year parts and on-site labour warranty and extended options. We could not confirm it is sold new by Matrix in the US. It sits on this page in place of the Vision T600, which Vision sells only through its own offices and dealers. Matrix and Vision are both Johnson Health Tech brands, and the T5x is the closest light-commercial AC treadmill from that family we could find on Amazon US.",
     },
     {
-      id: 'vision-t600e',
-      name: 'Vision T600E',
-      category: 'The T600 with a 22-Inch Touchscreen',
-      badge: 'Entertainment Console',
-      priceRange: '$8,799 at Fitness Supply on 5 Nov 2026',
-      amazonUrl: 'https://www.amazon.com/s?k=Vision+Fitness+T600E+Treadmill&tag=sktiger-20',
-      specs: '22 x 60 in. running surface · 4.2 HP AC drive · 0.5-12 mph · 0-15% incline · 400 lb max user · 22 in. touchscreen',
+      id: 'nordictrack-commercial-2450',
+      name: "NordicTrack Commercial 2450",
+      category: "Touchscreen Treadmill With a 400 lb Rating",
+      badge: "Touchscreen Alternative on Amazon",
+      priceRange: "About $2,299 (Amazon, 6 Nov 2026)",
+      amazonUrl: 'https://www.amazon.com/dp/B0D5YKDXDV?tag=sktiger-20',
+      specs: "22 x 60 in. belt · 4.25 CHP (NordicTrack rating) · 0–14 mph · -3% to 12% incline · 400 lb max user · folds",
       pros: [
-        'The same AC drive, deck and 400 lb rating as the T600',
-        'A 22-inch capacitive touchscreen with Wi-Fi, Bluetooth and HDMI screen casting',
-        'Fitness Supply lists a commercial-use warranty of 7 years frame, 5 motor, 5 parts, 2 labour',
+        "A 400 lb maximum user weight and a 22-inch belt, by NordicTrack’s figures",
+        "A 4.25 CHP motor and a 14 mph top speed",
+        "A decline to -3% as well as a 12% incline",
+        "A 24-inch touchscreen for iFIT classes",
       ],
       cons: [
-        '$8,799 at the one US dealer price we could confirm',
-        'Entertainment consoles age faster than the frame they sit on',
-        'Delivery and labour cover depend on the dealer’s region',
+        "The touchscreen is designed around an iFIT Pro membership at $39 a month",
+        "A screen and software that will date sooner than the frame and motor",
+        "NordicTrack’s motor warranty terms vary by listing; check them before ordering",
       ],
       bottomLine:
-        'Only for buyers who want a club-style touchscreen treadmill at home and will pay commercial money for it.',
+        "For a buyer drawn to the T600E's touchscreen who wants a 22-inch deck and 400 lb rating for a fraction of the price, and will use iFIT.",
       description:
-        'The T600E is the T600 frame with Vision’s Entertainment console. Fitness Supply, an Idaho dealer, listed it at $8,799 on 5 November 2026 with a 22-inch capacitive touchscreen, Wi-Fi, Bluetooth, USB, HDMI input and CSAFE, and the same 4.2 HP AC drive, 22 by 60-inch surface, 0.5 to 12 mph, 0 to 15% incline, 400 lb capacity and 408 lb weight that Vision lists. Its commercial-use warranty was 7 years on the frame, 5 on the motor and parts, 2 on labour and 90 days on wear items, with a typical lead time of two to three weeks.',
+        "The Commercial 2450 is NordicTrack's folding flagship, and on paper it matches the T600E's 22 by 60-inch deck and 400 lb rating with a large touchscreen. NordicTrack lists a 22 by 60-inch belt, a 4.25 CHP motor by its own continuous rating and a 400 lb maximum user weight, and the Amazon listing gives a 0–14 mph speed range, a -3% to 12% incline, RunFlex cushioning, a 24-inch touchscreen that tilts and pivots, and a folding frame with assisted lowering. The 400 lb rating is the highest of the established-brand machines here, and the 14 mph top speed is the fastest. The trade-off is that much of the price goes into the screen and its software: the listing describes the full experience with an iFIT Pro membership, which iFIT listed at $39 a month in November 2026. The treadmill runs without it, in manual mode. Amazon listed it at $2,299 on 6 November 2026. It takes the place of the Vision T600E on this page, which is sold only through Vision dealers: it is a home folding treadmill rather than a light-commercial machine, so it is the alternative for the screen and the deck, not for gym-level hours.",
     },
     {
       id: 'horizon-7-8-at',
@@ -201,7 +205,10 @@ export default {
       html: `          <p>
             The T600 is one frame with two consoles. The T600 has a 10 by 14 dot-matrix LED display with a dedicated
             heart-rate zone readout; the T600E has the Entertainment console, a 22-inch touchscreen. Vision's page
-            gives the same figures for both.
+            gives the same figures for both. Vision sells both only through its own offices and dealers, not on
+            Amazon, so the product cards below show the nearest alternatives sold there — a Matrix T5x from the same
+            parent company in the T600's place and a NordicTrack Commercial 2450 for the T600E's touchscreen — next to
+            the Horizon and Life Fitness home alternatives. The T600 figures are in the table.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
             <thead>
@@ -336,9 +343,9 @@ export default {
           <h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">Is Vision on Amazon?</h3>
           <p>
             We found no Vision treadmill sold new by Vision or an authorised dealer on Amazon US, which fits a brand sold
-            through local offices and dealers. The Amazon buttons on the Vision cards go to tagged searches that mostly
-            return parts and similar machines; buy a T600 from a dealer who will deliver, install and honour the
-            warranty.
+            through local offices and dealers; Amazon searches for Vision mostly return parts. The product cards on this
+            page therefore go to the nearest alternatives that are on Amazon. If you want a T600 itself, buy from a dealer
+            who will deliver, install and honour the warranty.
           </p>`,
     },
   ],

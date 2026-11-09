@@ -25,7 +25,8 @@ export default {
           hikers preparing for long descents, and anyone following outdoor-route workouts that
           include them. It is also rarer than incline. When we checked the major home brands on 13
           October 2026, decline was confined almost entirely to NordicTrack's Commercial and X
-          Series and to the Wahoo KICKR RUN — and the cheapest of them still costs around $1,600.`,
+          Series and to the Wahoo KICKR RUN — and the cheapest of them still costs around $1,600.
+          On Amazon, Sunny Health &amp; Fitness's Versatile Treadmill adds a walking-only option.`,
   note: `<strong class="text-gray-900">What we checked, and what we left out.</strong> On 13 October
           2026 we checked the current treadmill ranges of NordicTrack, ProForm, Sole, Bowflex,
           Horizon, Peloton and Wahoo for machines with powered decline, using each manufacturer's
@@ -35,7 +36,10 @@ export default {
           across sources; NordicTrack's motor ratings, the Commercial 1250's deck width and maximum
           user weight, and the KICKR RUN's warranty term are quoted differently in different places,
           so we left them out. We also searched cpsc.gov for recalls on each brand and model and
-          found none open for these treadmills. None of these figures are our own measurements; we
+          found none open for these treadmills. The Wahoo KICKR RUN we first carded is sold by Wahoo
+          and its dealers rather than on Amazon, so on 9 November 2026 we replaced its card with Sunny's
+          Versatile Treadmill, whose figures are those checked for our incline trainer guide; the
+          KICKR RUN is still discussed below. None of these figures are our own measurements; we
           have not tested these machines. Price bands are prices seen on 13 October 2026 and change
           often, so confirm the price, the specification and the warranty for the exact unit
           before you order. Nothing on this page is medical advice. We earn a commission if you
@@ -142,28 +146,28 @@ export default {
         "The 2450 is the top of NordicTrack's Commercial series, and it earns a place here for speed rather than for decline. NordicTrack lists the same -3% to 12% grade as the 1250 and 1750, with a 0 to 14 mph speed range, a 24-inch pivoting touchscreen, a folding frame and a lifetime motor warranty; a retailer listing and independent coverage agree, and give a 22 by 60-inch running deck. The combination matters for one kind of session. Downhill running naturally pushes pace up, and runners who use decline to rehearse fast, controlled descents — for a downhill marathon or a hilly road race — can find a 12 mph ceiling limiting. Everyone else gets nothing from the 2450 for decline that the 1750 does not already provide. Two cautions from the wider coverage: earlier 2450s shipped with a 22-inch screen, so check a heavily discounted listing, and reviewers describe the machine as heavy and hard to move despite the fold. Our 2450 review covers the rest of the specification and the conflicts within it.",
     },
     {
-      id: 'wahoo-kickr-run',
-      name: 'Wahoo KICKR RUN',
-      category: 'Decline without iFIT',
-      badge: 'Premium Pick',
-      amazonUrl: 'https://www.amazon.com/s?k=Wahoo+KICKR+RUN+Smart+Treadmill&tag=sktiger-20',
-      priceRange: 'Around $6,500–$7,000',
-      specs: '60 x 22 in. running surface · -3% to 15% grade · 4:00/mile top speed · 250 lb capacity',
+      id: 'sunny-versatile-treadmill',
+      name: "Sunny Health & Fitness Versatile Treadmill",
+      category: "Decline without iFIT",
+      badge: "Decline Without a Subscription",
+      priceRange: "About $2,200 (Amazon, 6 Nov 2026)",
+      amazonUrl: 'https://www.amazon.com/dp/B0DSR39SKR?tag=sktiger-20',
+      specs: "-3% to 45% powered incline · 0.3–5 mph · 20 in. wide running surface · 300 lb capacity · multi-grip handrails",
       pros: [
-        'Decline to -3% and incline to 15% with no subscription required, according to Wahoo',
-        'Zwift can follow a route’s descents and climbs automatically with a Zwift membership',
-        'A 4:00-per-mile top speed, about 15 mph, well beyond most home treadmills',
-        'RunFree mode changes belt speed as you move forward or back on the deck',
+        "A 45% maximum incline, the steepest grade on any machine here",
+        "A -3% decline for downhill walking",
+        "High, mid and low handrail grips for different grades, per the listing",
+        "18 built-in programs and a touchscreen console, with no subscription required",
       ],
       cons: [
-        'Several times the price of the NordicTrack machines here',
-        'A 250 lb maximum user weight, the lowest on this list',
-        'Warranty terms are reported differently across sources, so confirm them before ordering',
+        "Tops out at 5 mph, so it is for walking and hiking only",
+        "The listing gives the belt width but not its length, so check it before ordering",
+        "A 300 lb rating is lower than the commercial machines",
       ],
       bottomLine:
-        'For serious runners who want decline outside the iFIT ecosystem, especially Zwift users, and have the budget and the space.',
+        "For walkers and hikers who want decline and very steep incline outside the iFIT ecosystem, and do not need to run.",
       description:
-        "The KICKR RUN is the only treadmill we found with powered decline that is not built around iFIT. Wahoo's product page lists a maximum incline of 15% and a maximum decline of -3%, a 60 by 22-inch running surface, a 4:00-per-mile top speed and a 250 lb maximum user weight, and independent reviews agree on those figures. Wahoo's FAQ says the treadmill does not require a subscription, that the grade can be set manually, and that automatic adjustment can be switched off; apps such as Zwift may charge their own fees. Zwift's documentation names the KICKR RUN as the treadmill whose incline it can control, so on Zwift routes the deck follows the road down as well as up. RunFree mode, which speeds the belt up or slows it down as you move on the deck, is its other distinctive feature. It is a large, heavy machine that needs a dedicated circuit, and it costs several times as much as a NordicTrack with the same -3% decline. Warranty terms are quoted differently by different sources, so we left them out. Our Zwift treadmill guide covers how it works with Zwift in detail.",
+        "The Versatile Treadmill is Sunny Health & Fitness's dedicated climbing machine, and it goes steeper than anything else we found for home use. The Amazon listing gives a powered incline to 45% and a decline to -3%, a speed range of 0.3 to 5 mph, a 20-inch-wide running surface with dual shock absorption, a 300 lb maximum user weight, 18 preset programs on a capacitive touchscreen console, and a handrail system with high, mid and low grips for different grades, with pulse sensors in the handlebars. Forty-five percent is about 24 degrees, steeper than the NordicTrack X-series' 40%. The trade-off is speed: 5 mph is a fast walk, so this is a hiking machine, not a running one, and Sunny describes it that way. For incline walking that is no real limit, because few people walk faster than 4 mph on a steep grade. What to check: the listing gives the belt's width but not its length, and we could not confirm a length from a second source, so ask the seller or check the manual before you order if you are tall. The listing title also mentions Wi-Fi smart TV connectivity. Amazon listed it at $2,199.99 on 6 November 2026. It takes the slot the Wahoo KICKR RUN held on this page: the KICKR RUN, the runner's choice for decline without iFIT, is sold by Wahoo and its dealers rather than on Amazon, while this Sunny gives the same -3% decline with no subscription, for walking only.",
     },
   ],
   sections: [
@@ -186,7 +190,7 @@ export default {
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack X16</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Steep descents and hiking</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-6% to 40%, the widest range here</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack Commercial 1250</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lowest price</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Same -3% to 12% as the 1750 for less</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack Commercial 2450</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Fast runners</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-3% decline with a 14 mph top speed</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Wahoo KICKR RUN</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Decline without iFIT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-3% to 15%, no subscription required</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sunny Health &amp; Fitness Versatile Treadmill</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Decline without iFIT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">-3% to 45%, no subscription required, walking only</td></tr>
             </tbody>
           </table></div>`,
     },
@@ -195,8 +199,10 @@ export default {
       heading: 'The 5 Best Treadmills With Decline',
       products: true,
       html: `          <p>
-            Every machine below has powered decline confirmed on its manufacturer's own page as of
-            13 October 2026, and all were listed for sale that day. The list is shorter and less
+            Every machine below has powered decline confirmed by its manufacturer, and all are sold
+            on Amazon. The Wahoo KICKR RUN, the only running treadmill with decline outside iFIT, is
+            sold by Wahoo and its dealers rather than on Amazon, so its slot goes to Sunny's
+            walking-only Versatile Treadmill. The list is shorter and less
             varied than most roundups on this site, and that is the honest finding rather than a
             gap: decline needs a lift mechanism that tilts the deck both ways, and few brands build
             one into their home machines. Four of the five are NordicTrack, because NordicTrack is
@@ -307,7 +313,7 @@ export default {
             <strong>-3% is the road-runner's range.</strong> It is roughly the gradient of a gently
             falling road, and most downhill sections of road races sit around it. At -3% you can
             run at normal training pace, the change in muscle loading is clear, and it is easy to
-            build up from. The NordicTrack Commercial series and the <a href="/wahoo-kickr-run-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>KICKR RUN</a> all stop here, and
+            build up from. The NordicTrack Commercial series, Sunny's Versatile Treadmill and the <a href="/wahoo-kickr-run-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>KICKR RUN</a> all stop here, and
             for most runners preparing for a road race it is enough.
           </p>
           <p>
@@ -372,8 +378,8 @@ export default {
             Commercial models, so paying more within the series buys screen and speed, not climbing.
           </p>
           <p>
-            <strong>15% (Wahoo KICKR RUN).</strong> A little more headroom for steep walking and
-            hill intervals, and the range Zwift uses when it controls the deck.
+            <strong>15% (Wahoo KICKR RUN, not carded).</strong> A little more headroom for steep
+            walking and hill intervals, and the range Zwift uses when it controls the deck.
           </p>
           <p>
             <strong>40% (NordicTrack X16).</strong> An incline trainer's range. Steep walking at
@@ -412,7 +418,9 @@ export default {
             what the membership includes.
           </p>
           <p>
-            <strong>Wahoo and open apps.</strong> Wahoo says the KICKR RUN needs no subscription, that
+            <strong>No subscription.</strong> Sunny's Versatile Treadmill runs 18 built-in programmes
+            from its own console with no membership. <strong>Wahoo and open apps.</strong> Wahoo, which
+            sells direct rather than on Amazon, says the KICKR RUN needs no subscription, that
             you can set the grade manually and that automatic adjustment can be switched off. Zwift
             can control its grade, including decline, on routes; Zwift is a separate service with
             its own fee. Our
@@ -456,7 +464,7 @@ export default {
   faqs: [
     {
       q: 'Which treadmill has the most decline?',
-      a: 'Among the home treadmills we could confirm on 13 October 2026, the NordicTrack X16 and X24 go furthest, to -6%, with incline up to 40%. The NordicTrack Commercial 1250, 1750 and 2450 and the Wahoo KICKR RUN decline to -3%. Sole lists a -6 to 15 grade range on its TT8, but it was sold out on the day we checked.',
+      a: 'Among the home treadmills we could confirm on 13 October 2026, the NordicTrack X16 and X24 go furthest, to -6%, with incline up to 40%. The NordicTrack Commercial 1250, 1750 and 2450, Sunny’s Versatile Treadmill and the Wahoo KICKR RUN decline to -3%. Sole lists a -6 to 15 grade range on its TT8, but it was sold out on the day we checked.',
     },
     {
       q: 'Is -3% decline enough?',

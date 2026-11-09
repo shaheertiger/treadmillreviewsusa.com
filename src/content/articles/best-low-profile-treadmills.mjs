@@ -32,12 +32,14 @@ export default {
           long-running specification tracker that reads owner's manuals. Step-up heights, folded
           heights and unit weights are the figures most often quoted inconsistently, so a height or
           weight appears in a spec line only where the manufacturer and at least one other source
-          agree; where they did not — the Life Fitness F3's step-up height, the Echelon Stride-6s's
+          agree; where they did not — the Echelon Stride-6s's
           folded height, the UREVO SpaceWalk 3S's and Goplus SuperFit's weights, the MERACH T19's
           capacity — we left the figure out and give both in the text. We searched cpsc.gov for
           recalls and warnings on each brand and found none open for these products; Sperax walking
           pads, which are under a CPSC stop-use warning, are not listed. None of these figures are
-          our own measurements; we have not tested these machines. Price bands are prices seen on 14
+          our own measurements; we have not tested these machines. On 9 November 2026 we replaced the
+          Life Fitness F3, which is not sold on Amazon, with Sunny's low-deck treadmill, whose figures are
+          those checked for our low-ceiling treadmill guide. Price bands are prices seen on 14
           October 2026 and change often, so confirm the price, the specification and the warranty
           for the exact unit before you order. We earn a commission if you buy through the Amazon
           links on this page; it does not change which products we list or what we say about them.`,
@@ -67,28 +69,28 @@ export default {
         "The Stride-6s is the most practical fold-flat treadmill we found with a full 60-inch deck. Most folding treadmills tilt the deck up to stand vertically, which saves floor space but leaves a five-to-six-foot-tall object in the room. Echelon's Auto-Fold system instead collapses the treadmill at the touch of a button so that it lies flat, so it can slide against a wall or under high furniture. Echelon lists a 20.5 by 60-inch deck, a 300 lb maximum user weight, 12 incline levels and a weight of 182.35 lb, and an independent review agrees on the deck, the capacity, the incline levels and a weight of about 182 lb. Echelon also lists a 7-inch step-up height, low for a full-size machine, though we found no second source for it. Echelon does not publish a folded height; the independent review gives the folded deck at about 8.5 inches with the console about 12 inches, so measure the gap under any furniture against the higher figure. The membership is the catch: Echelon sells it separately and the review regards it as required for the classes.",
     },
     {
-      id: 'life-fitness-f3',
-      name: 'Life Fitness F3',
-      category: 'Lowest step-up height on a folding treadmill',
-      badge: 'Easiest to Step On',
-      amazonUrl: 'https://www.amazon.com/s?k=Life+Fitness+F3+Folding+Treadmill&tag=sktiger-20',
-      priceRange: 'Around $3,500',
-      specs: '20 x 55 in. deck · 0-12% incline · 0.5-10 mph · 350 lb capacity · folds upright · 264 lb',
+      id: 'sunny-low-deck-handrails',
+      name: "Sunny Health & Fitness Low Deck Treadmill with Extended Safety Handrails",
+      category: "Low-Deck Treadmill With Full Handrails",
+      badge: "Easiest to Step On",
+      priceRange: "About $680 (Amazon, 6 Nov 2026)",
+      amazonUrl: 'https://www.amazon.com/dp/B0BV5FMX74?tag=sktiger-20',
+      specs: "4 in. floor-to-deck height (listing and Sunny) · 47.2 x 18.9 in. running surface (Sunny) · up to 8.5 mph · 245 lb capacity (Sunny)",
       pros: [
-        'Life Fitness lists a 6-inch step-up height, among the lowest on any folding treadmill',
-        'FlexDeck shock absorption with lifetime cover on the frame and shock absorbers',
-        'A 350 lb maximum user weight and a 10-year motor warranty',
-        'Speed in 0.1 mph steps and incline in 0.5% steps, according to Life Fitness',
+        "A 4-inch step-up stated in both the Amazon listing and on Sunny’s store",
+        "Extended side rails along the deck plus a front rail, for support getting on and off",
+        "Speeds to 8.5 mph on an 18.9-inch-wide belt",
+        "Pulse sensors and Bluetooth to the SunnyFit app",
       ],
       cons: [
-        'A consumer testing organisation lists an 8-inch step-up, likely for an earlier version; confirm before buying',
-        'Folds upright to about 75 inches tall, so it is low to step onto but not low in storage',
-        'A 55-inch deck and 10 mph top speed suit walking and jogging more than running',
+        "A 245 lb limit, lower than the SF-T7718’s",
+        "About $680, the most expensive pick here",
+        "The listing does not say whether or how it folds",
       ],
       bottomLine:
-        'For walkers who want the lowest, steadiest step onto a full-width deck that still folds, and value a long warranty over a low price.',
+        "The low profile treadmill to choose if an easy, steady step onto the deck matters most: a 4-inch step-up with rails to hold, and enough speed for a jog.",
       description:
-        "If low profile means a deck you can step onto easily, the F3 is the strongest folding option we found. Life Fitness's own store lists a step-up height of 6 inches, against the 8 to 9 inches typical of folding treadmills and more than 13 inches on incline trainers, and its UK store gives the same figure in centimetres. One older consumer-testing listing gives 8 inches and describes a different console, which suggests an earlier version, so confirm the figure for the unit you buy. The rest of the specification is consistent: Life Fitness and an independent review agree on a 20 by 55-inch deck, 0.5 to 10 mph, 0 to 12% incline, a 350 lb maximum user weight, a weight of 264 lb, and a warranty of life on the frame and the FlexDeck shock absorbers, 10 years on the motor, 5 years on parts and 1 year of labour. The trade-off is in storage: it folds upright to about 75 inches tall. It is low to step on, not low to store, and the 55-inch deck is best for walking and jogging.",
+        "This Sunny treadmill is built around easy access, which is what low profile means to many buyers. The Amazon listing describes a floor-to-deck height of only 4 inches, extended safety railings, a safety clip, a non-slip deck 18.9 inches wide, speeds up to 8.5 mph, a shock absorption system, pulse sensors, a console with large buttons and Bluetooth to the SunnyFit app. Sunny's own store lists a matching running treadmill with handrails (SF-T722062) with the same 4-inch deck height and 8.5 mph top speed, a 47.2 by 18.9-inch running surface, a 2.5 HP peak motor, a 245 lb maximum user weight and a 115.5 lb product weight. The long side rails are the reason to choose it over the SF-T7718: they give support all the way along the deck, which helps older users, anyone recovering from injury and anyone nervous about stepping on and off a moving belt. The cost is about 1.2 inches more step-up height than the SF-T7718, a lower weight limit and a higher price. Amazon showed it at $679.96 on 6 November 2026. It takes the slot the Life Fitness F3 held on this page; the F3, which Life Fitness lists with a 6-inch step-up, is sold through Life Fitness and dealers rather than on Amazon, and this Sunny's 4-inch deck is lower still, though on a much lighter, shorter-decked machine.",
     },
     {
       id: 'urevo-spacewalk-3s',
@@ -173,8 +175,8 @@ export default {
             60-inch running deck that folds flat at the touch of a button, a 7-inch step-up by
             Echelon's figure, and a weight of about 182 lb.</strong> If you only need to walk, the
             <a href="/urevo-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>UREVO</a> SpaceWalk 3S is 6.5 inches tall with powered incline, and the MERACH T19 folds to
-            4.3 inches with a handrail. If an easy step onto the deck matters most, the Life Fitness
-            F3 has the lowest step-up we found on a folding treadmill.
+            4.3 inches with a handrail. If an easy step onto the deck matters most, Sunny's low-deck
+            treadmill has a 4-inch step-up and long side rails to hold.
           </p>
           <p>
             Which one is right depends on what "low profile" means to you, and the next section sorts
@@ -201,7 +203,7 @@ export default {
             </tr></thead>
             <tbody>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Echelon Stride-6s</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Folds flat</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Running at home, hidden away</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">60-inch deck that auto-folds flat</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Life Fitness F3</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Low step-up</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Easy, steady access</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">6-inch step-up by Life Fitness's figure</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sunny Low Deck Treadmill with Handrails</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Low step-up</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Easy, steady access</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4-inch step-up with extended side rails</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UREVO SpaceWalk 3S</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">6.5 in. tall</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walking with incline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Slides under furniture, 9% incline</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">MERACH T19</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4.3 in. folded</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Tightest storage</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Slimmest fold, with a handrail</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Goplus SuperFit 2-in-1</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About 5 in. folded</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lowest price</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Slim, light and cheap</td></tr>
@@ -236,8 +238,8 @@ export default {
             get wrong most often — they are measured to different points, carried over from earlier
             versions, or simply rounded — so we required a second source before putting one in a spec
             line, and where the second source disagreed we give both figures in the text instead.
-            That is why the F3's 6-inch step-up and the <a href="/echelon-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Stride-6s</a>'s folded height appear in the
-            descriptions rather than the spec lines.
+            That is why the <a href="/echelon-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>Stride-6s</a>'s folded height appears in its
+            description rather than its spec line.
           </p>
           <p>
             Some machines were considered and left out. Older or discontinued compact folders whose
@@ -279,7 +281,7 @@ export default {
           <p>
             <strong>Light weight.</strong> How easily one person can move it. The walking pads here
             weigh roughly 55 to 74 lb. Running-length treadmills weigh far more: about 182 lb for the
-            Stride-6s, 264 lb for the F3, and 277 lb for the <a href="/horizon-7-0-at-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Horizon 7.0 AT</a> by Horizon's figure. A light
+            Stride-6s, 264 lb for a Life Fitness F3, and 277 lb for the <a href="/horizon-7-0-at-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Horizon 7.0 AT</a> by Horizon's figure. A light
             weight treadmill is easier to move and to get upstairs, but lightness comes from a shorter,
             narrower belt, a smaller motor and a lighter frame.
           </p>
@@ -472,7 +474,7 @@ export default {
     },
     {
       q: 'What is the lowest step-up height on a treadmill?',
-      a: 'Among folding treadmills we checked, the Life Fitness F3 is listed by Life Fitness at 6 inches, though an older testing listing gives 8 inches. Echelon lists 7 inches for the Stride-6s. Most full-size folding treadmills sit around 8 to 9 inches, and incline trainers such as the NordicTrack X Series are over 13 inches.',
+      a: 'Among treadmills we checked, Sunny’s low-deck treadmill with extended handrails is listed at 4 inches by both Sunny and its Amazon listing, and Sunny’s SF-T7718 at 2.76 inches. Among gym-brand folding treadmills, Life Fitness lists 6 inches for the F3, and Echelon lists 7 inches for the Stride-6s. Most full-size folding treadmills sit around 8 to 9 inches, and incline trainers such as the NordicTrack X Series are over 13 inches.',
     },
     {
       q: 'Is there a full-size treadmill that folds flat?',
@@ -484,11 +486,11 @@ export default {
     },
     {
       q: 'How much does a light weight treadmill weigh?',
-      a: 'Walking pads on this page weigh roughly 55 to 74 lb, depending on model and listing. Full-size treadmills are much heavier: about 182 lb for the Echelon Stride-6s, 264 lb for the Life Fitness F3 and 277 lb for the Horizon 7.0 AT. Lighter machines are easier to move but have shorter belts and less stable frames.',
+      a: 'Walking pads on this page weigh roughly 55 to 74 lb, depending on model and listing. Low-deck treadmills such as Sunny’s are about 115 lb, and full-size treadmills are much heavier: about 182 lb for the Echelon Stride-6s and 277 lb for the Horizon 7.0 AT. Lighter machines are easier to move but have shorter belts and less stable frames.',
     },
     {
       q: 'Can you run on a low profile treadmill?',
-      a: 'On the full-size ones, yes: the Echelon Stride-6s has a 60-inch deck, and the Life Fitness F3 suits jogging on its 55-inch deck. The 2-in-1 walking pads reach about 7.5 mph with the rail up but have short belts, and flat walking pads stop around 4 mph. For regular running, choose a full-length deck.',
+      a: 'On the full-size ones, yes: the Echelon Stride-6s has a 60-inch deck, and Sunny’s low-deck treadmill reaches 8.5 mph, though its 47-inch belt suits jogging more than running. The 2-in-1 walking pads reach about 7.5 mph with the rail up but have short belts, and flat walking pads stop around 4 mph. For regular running, choose a full-length deck.',
     },
   ],
   mistakesHeading: 'Common Mistakes Buying a Low Profile Treadmill',
@@ -536,9 +538,9 @@ export default {
   bottomLine: [
     `For most people the <strong class="text-white">Echelon Stride-6s</strong> is the low profile
             treadmill to buy: a full 60-inch deck that folds flat on its own, a low step-up and about
-            182 lb. If an easy step onto the deck matters most, the
-            <strong class="text-white">Life Fitness F3</strong> has the lowest step-up we found on a
-            folding machine.`,
+            182 lb. If an easy step onto the deck matters most,
+            <strong class="text-white">Sunny's low-deck treadmill</strong> has a 4-inch step-up and
+            long side rails to hold.`,
     `If you only walk, the <strong class="text-white">UREVO SpaceWalk 3S</strong> is 6.5 inches
             tall with incline, the <strong class="text-white">MERACH T19</strong> folds to 4.3 inches
             with a rail, and the <strong class="text-white">Goplus SuperFit</strong> does it for the
