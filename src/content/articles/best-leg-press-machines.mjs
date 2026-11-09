@@ -43,8 +43,11 @@ export default {
           confirm it. Force USA's Compact and the Steelflex PLLP are not sold on Amazon US, so on
           9 November 2026 we replaced their cards with the closest machines Amazon does sell,
           Powertec's leg press and hack squat combo and Body-Solid's stack-loaded GLPB-STK, checked
-          against the makers' pages and retailer listings; both remain in the guide's text. Check
-          the model name and seller on any listing.
+          against the makers' pages and retailer listings; both remain in the guide's text. Titan's leg press and
+          hack squat combo is sold on Titan's own store and could not be matched to a current Amazon
+          US listing, so its card shows Titan's linear hack squat, which Amazon does sell, on Titan's
+          own figures; the combo remains our top pick in the text. Check the model name and seller on
+          any listing.
           Every brand was checked against the US Consumer Product Safety Commission's recall
           database. Prices are those we saw on that date and change often. We earn a commission if
           you buy through the Amazon links on this page; it does not change which products we list
@@ -62,7 +65,8 @@ export default {
       heading: 'Our Picks at a Glance',
       html: `          <p>
             Seven machines across the four common home designs. The short version: the Titan Leg
-            Press Hack Squat if you want the best-documented 45-degree combo for the money; the
+            Press Hack Squat, from Titan's own store, if you want the best-documented 45-degree combo
+            for the money (Amazon carries Titan's linear hack squat, not the combo); the
             Body-Solid GLPH1100B if you want the same format with a longer track record and
             dealer support; and a vertical press such as the Powerline PVLP156X if floor space and
             budget decide everything.
@@ -74,7 +78,7 @@ export default {
               <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Why</th>
             </tr></thead>
             <tbody>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Titan Fitness Leg Press Hack Squat Machine</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best overall 45° combo</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Maker, reviewer and Amazon listing agree on its size and weight</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Titan Fitness Leg Press Hack Squat Machine (Titan store)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Best overall 45° combo</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Maker and reviewer agree on its size and weight; on Amazon, Titan sells its linear hack squat instead</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Body-Solid GLPH1100B Leg Press &amp; Hack Squat</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Narrowest 45° combo, dealer support</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">1,000 lb capacity in a 34 in. wide frame</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bells of Steel Leg Press Hack Squat Machine</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Warranty and linear bearings</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lifetime frame warranty, 55 lb starting sled (maker)</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Powertec Leg Press Hack Squat Combo</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Full-size combo on Amazon</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Leg press and hack squat, 1,000 lb capacity, about $1,583 on Amazon</td></tr>
@@ -449,28 +453,25 @@ export default {
   ],
   products: [
     {
-      id: 'titan-leg-press-hack-squat',
-      name: 'Titan Fitness Leg Press Hack Squat Machine',
-      category: '45-degree plate-loaded leg press and hack squat combo',
-      badge: 'Best Overall',
-      amazonUrl: 'https://www.amazon.com/s?k=Titan+Fitness+Leg+Press+Hack+Squat+Machine+Plate-Loaded&tag=sktiger-20',
-      priceRange: '$1,530–$2,550',
-      specs: '45° carriage · 84 x 40 x 53 in. (L x W x H) · 325 lb · three lockout positions · Olympic plates',
+      id: "titan-linear-hack-squat",
+      name: "Titan Fitness Plate-Loaded Linear Hack Squat Machine",
+      category: "Titan’s plate-loaded sled on Amazon: a dedicated hack squat",
+      badge: "Closest on Amazon",
+      priceRange: "About $975 at Titan (19 Oct 2026); $773.99 on Amazon (9 Nov 2026)",
+      specs: "Maker figures: 35° carriage · 700 lb capacity · linear bearings · 46.75 x 60.5 in. footprint · 190 lb",
       pros: [
-        'Titan, a hands-on review and an Amazon listing agree on its size, weight and angle',
-        'Smallest footprint of the full 45-degree combos here',
-        'Quick flip-and-lock switch between leg press and hack squat',
-        'Bronze bushings and plastic inserts at wear points, per Garage Gym Reviews',
+        "A dedicated hack squat for under $1,000",
+        "Linear bearings on steel guide rods, per Titan",
+        "Flip-up racking handles you work without leaving the machine",
+        "Compact and light for a plate-loaded sled, by Titan’s figures",
       ],
       cons: [
-        'Capacity given as 1,000 lb by Titan but 875 lb in an Amazon spec table',
-        'Leg press footplate is narrow for wide stances, per Garage Gym Reviews',
-        'Hack squat may not suit lifters 6 ft 3 in or taller, per the same review',
+        "No leg press mode, unlike Titan’s combo",
+        "Little independent coverage; figures are Titan’s",
+        "Warranty terms need checking on Titan’s site",
       ],
-      bottomLine:
-        'The best-documented 45-degree combo for the money, and the one to buy unless you are very tall or press with a wide stance.',
-      description:
-        "Titan's combo is a 45-degree plate-loaded sled that switches between leg press and hack squat by flipping the footplate and back pad, with three lockout positions, safety handrails, an adjustable back pad and footplate angle, and two plate storage posts. Titan listed it on 19 October at $1,529.97, down from $2,549.99; Garage Gym Reviews' review gives $1,899. Titan, Garage Gym Reviews and an indexed Amazon listing agree on the 84 by 40 by 53 inch size, the 325 lb weight and the 45-degree carriage. Titan gives the carriage as 80 lb, the leg press footplate as 21 by 15 inches and the hack squat footplate as 26 by 22 inches. Titan and Garage Gym Reviews give a 1,000 lb capacity; the Amazon listing's title says the same but its specification table gives a maximum recommendation of 875 lb, so we have left capacity off the specification line. Garage Gym Reviews describes urethane wheels on rollers rather than linear bearings, smooth in use if greased, and reports a one-year warranty; Titan's page carries only a general disclaimer, so check Titan's terms. It is sold on Amazon as well as Titan's store.",
+      bottomLine: "The Titan sled Amazon sells: worth it if you want the squat more than the press. If you want both on one machine, the Body-Solid GLPH1100B and Powertec combos below are on Amazon.",
+      description: "Titan’s Leg Press Hack Squat combo, the best overall machine in our text, is sold on Titan’s own store and we could not find it on Amazon US, so this card shows the Titan sled that Amazon does sell. Titan’s dedicated hack squat runs a plate-loaded carriage on linear bearings and steel guide rods at 35 degrees, with flip-in and flip-out racking handles, an adjustable backrest, high-density padding, dual 9.75-inch Olympic weight sleeves and a large diamond-plated footplate that also suits standing calf raises. We found no hands-on review, so the figures are Titan’s: a 700 lb carriage capacity, a 46.75 by 60.5 inch footprint, 45.5 inches tall, a 25.25 by 23.25 inch footplate, a 20 by 11.5 inch back pad and a 190 lb bolt-together frame. It has no leg press mode, so it is the right buy only if the hack squat is what you want; for both movements on one frame from Amazon, the Body-Solid GLPH1100B and Powertec combos are the alternatives. Titan listed it at $974.99 on 19 October, and Amazon at $773.99 on 9 November 2026. Titan’s product page carries only a general disclaimer, so check its warranty terms.",
     },
     {
       id: 'body-solid-glph1100b',
@@ -619,7 +620,7 @@ export default {
   faqs: [
     {
       q: 'What is the best leg press machine for a home gym?',
-      a: `For most people with the floor space, a 45-degree leg press and hack squat combo such as the Titan Fitness Leg Press Hack Squat Machine, whose size, weight and angle are confirmed by Titan, a hands-on review and an Amazon listing. For a small room or tight budget, a vertical press such as the Body-Solid Powerline PVLP156X costs about a third as much.`,
+      a: `For most people with the floor space, a 45-degree leg press and hack squat combo such as the Titan Fitness Leg Press Hack Squat Machine, whose size, weight and angle are confirmed by Titan and a hands-on review; it is sold on Titan's own store, and on Amazon the Body-Solid GLPH1100B and Powertec combos are the alternatives. For a small room or tight budget, a vertical press such as the Body-Solid Powerline PVLP156X costs about a third as much.`,
     },
     {
       q: 'Is a vertical or 45-degree leg press better?',
@@ -687,7 +688,7 @@ export default {
   bottomLine: [
     `<strong class="text-white">For most home gyms, the Titan Fitness Leg Press Hack Squat
             Machine is the best leg press here</strong>: a 45-degree combo whose key figures three
-            sources agree on, at about $1,530 to $2,550 depending on Titan's sale price. Choose the
+            sources agree on, at about $1,530 to $2,550 depending on Titan's sale price, from Titan's own store. Choose the
             Body-Solid GLPH1100B for a narrow frame and dealer support, the Bells of Steel for
             linear bearings and a lifetime frame warranty, the Force USA Compact (sold direct) for a
             short room or Powertec's combo on Amazon if you have the space, Body-Solid's stack-loaded

@@ -60,7 +60,7 @@ export default {
             E25</strong>: a 20-inch stride, a 350 lb rating, simple controls on the handlebars and a
             plain display, for about $1,200. If stepping up is the worry, the Horizon EX-59 publishes a
             10-inch step-on height, and if balance is the worry, a seated cross trainer such as the
-            Teeter FreeStep LT3 removes the step altogether.
+            Teeter FreeStep removes the step altogether (the LT3 from Teeter, or the LT1 on Amazon).
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[520px] w-full text-sm border-collapse">
             <thead><tr>
@@ -73,7 +73,7 @@ export default {
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon EX-59</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Low step-on height</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Published 10 in. step-on height, 18 in. stride, $799 on sale</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Schwinn 411</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Small rooms, shorter users</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Under 54 in. long, 18 in. stride, high-contrast LCD</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">SOLE E35</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Cushioned, adjustable pedals</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Pedals adjust to three positions, touchscreen, 350 lb</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Teeter FreeStep LT3</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Balance concerns</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Seated stepping with moving arms; nothing to step up onto</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Teeter FreeStep LT1</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Balance concerns</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Seated stepping with moving arms; nothing to step up onto</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NuStep T5</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Limited mobility, premium</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">360° swivel seat, 500 lb rating, the clinic standard</td></tr>
             </tbody>
           </table></div>
@@ -452,28 +452,25 @@ export default {
         "The E35 is the step up from the E25, and the main reason an older user might pay for it is the pedals. SOLE describes them as cushioned and articulating, adjustable to three positions, which helps people of different sizes find a stance that suits their feet and knees; the E25's current pedals are neither. SOLE lists a 20-inch stride, a 25 lb flywheel, 20 levels of magnetic resistance, a 20-level power incline and a 350 lb user capacity, and its Amazon listing and independent reviews agree. It is a front-drive machine on a steel frame, 70 by 31 by 70 inches by SOLE's figures and an independent review, with a lifetime frame warranty; one Garage Gym Reviews comparison table gives its length as 74 inches, so allow for that when you plan the room. The 10.1-inch touchscreen runs SOLE's free app and preloaded streaming apps, and is large and clear, though it has more menus than the E25's display. SOLE's store had it at $1,699.99 against a $1,799.99 list price, the same price our main guide found on 16 October.",
     },
     {
-      id: 'teeter-freestep-lt3',
-      name: 'Teeter FreeStep LT3 Recumbent Cross Trainer',
-      category: 'Seated recumbent cross trainer',
-      badge: 'Best Seated',
-      amazonUrl: 'https://www.amazon.com/s?k=Teeter+FreeStep+LT3+Recumbent+Cross+Trainer&tag=sktiger-20',
-      priceRange: '$859–$999',
-      specs: '13 magnetic resistance levels · 300 lb max user · 110 lb unit weight · seat adjusts for depth and height, 3-position recline · moving arm handles',
+      id: "teeter-freestep-lt1",
+      name: "Teeter FreeStep LT1 Recumbent Cross Trainer",
+      category: "Seated recumbent cross trainer",
+      badge: "Best Seated",
+      priceRange: "$699–$799",
+      specs: "13 magnetic resistance levels · seat adjusts for height, 3-position recline · 4-position foam handles · battery-powered console",
       pros: [
-        'You sit down to use it, so there is no step up and no balancing on pedals',
-        'Arms and legs work together, unlike a recumbent bike',
-        'A 300 lb rating agreed by Teeter and a dealer',
-        'Teeter sells it through its own Amazon store as well as direct',
+        "You sit down to use it, so there is no step up and no balancing on pedals",
+        "Arms and legs work together, unlike a recumbent bike, with the same FreeStep motion and 13 resistance levels as the LT3",
+        "A battery-powered console, so it can sit anywhere",
+        "Widely sold, including in Teeter’s Amazon store",
       ],
       cons: [
-        'Not weight-bearing, so it does less for bones than a standing elliptical',
-        'Teeter does not list a swivel seat, so you step in beside it',
-        'Teeter and a dealer give different footprints and warranty terms, so we print neither',
+        "Not weight-bearing, so it does less for bones than a standing elliptical",
+        "A simpler seat than the LT3, with no depth adjustment, and no swivel seat, so you step in beside it",
+        "Teeter and a dealer list 300 lb, but one Amazon listing says 350 lb, so capacity is left off the card",
       ],
-      bottomLine:
-        'For older users who want an elliptical-style full-body workout but should not be stepping up onto moving pedals.',
-      description:
-        "The FreeStep LT3 is a recumbent cross trainer: you sit in a reclining seat and push the pedals forward in a linear stepping motion while pushing and pulling the arm handles, which are linked to the legs. Teeter says the FreeStep stride is licensed from commercial physiotherapy steppers. Teeter and Northern Fitness, a dealer, agree on 13 levels of magnetic resistance, a 300 lb user capacity and a product weight of about 110 lb. Teeter describes the seat as adjustable for depth and height with a three-position recline, four-position handles, SoftStep pedals, and a console showing time, distance, speed and calories that runs on two AA batteries. Two figures conflict: Teeter gives assembled dimensions of 62.1 by 32.7 by 55.4 inches while the dealer gives 54 by 38 by 52.5, and Teeter lists a three-year structural and two-year parts warranty while the dealer lists two years. User height ranges also differ slightly between listings. On 19 October Teeter had it from $899 against $999, and an Amazon snapshot showed it from about $859. Our recumbent elliptical guide compares it with the LT1 and LT7.",
+      bottomLine: "For older users who want an elliptical-style full-body workout but should not be stepping up onto moving pedals, at the lowest FreeStep price.",
+      description: "The FreeStep LT3, discussed in the text, is sold by Teeter and dealers and we could not confirm a current Amazon US listing for it, so this card shows the entry FreeStep that Teeter does sell on Amazon. The LT1 is a recumbent cross trainer: you sit in a reclining seat and push the pedals forward in a linear stepping motion while pushing and pulling arm handles linked to the legs, a stride Teeter says is licensed from commercial physiotherapy steppers. By Teeter’s page it has the same 13 levels of magnetic resistance as the LT3 and a user height range of 4 ft 11 in. to 6 ft 6 in., which Northern Fitness, a dealer, also gives. The differences are in the touch points: a large cushioned seat that adjusts for height and reclines in three positions but does not move for depth, four-position foam grip handles, and a battery-powered console showing time, distance, speed and calories. Teeter and Northern Fitness both give a 300 lb user capacity, but one Amazon listing says up to 350 lb, so assume 300 lb. Footprint, unit weight and warranty differ between Teeter’s page (62.1 by 32.5 inches, 106.9 lb, two years structural and one year parts) and the dealer’s. Teeter had it at $699 against $799 on 19 October; an Amazon snapshot showed $779.",
     },
     {
       id: 'nustep-t5',
@@ -573,7 +570,7 @@ export default {
             assembly; choose the Horizon EX-59 if a low, published step-on height matters most, the Schwinn
             411 for a small room or a shorter stride, and the SOLE E35 if your feet want cushioned,
             adjustable pedals. If balance is the concern, skip the standing machines and choose a seated
-            cross trainer: the Teeter FreeStep LT3 for most homes, the NuStep T5 if mobility is limited and
+            cross trainer: the Teeter FreeStep LT3 for most homes (or the LT1, its entry model, on Amazon), the NuStep T5 if mobility is limited and
             the budget allows.`,
     `Whatever you buy, mount it from the side holding the fixed bars, start with no incline and the
             lowest resistance, and talk to your doctor first if you have a heart, balance or joint

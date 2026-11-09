@@ -37,7 +37,10 @@ export default {
           specification line and say so in the text. None of these figures are our own
           measurements. Prices are the ranges we saw on that date; treadmill makers discount
           constantly, so confirm the price and the specification against the exact model and model
-          year before you order. We earn a commission if you buy through the Amazon links on this
+          year before you order. The Bowflex T9 and Horizon 7.8 AT
+          cards became the Sole F83 and Bowflex T16 in November 2026, because neither is sold on Amazon
+          US; their figures are those checked for our long-distance running and screen treadmill guides.
+          We earn a commission if you buy through the Amazon links on this
           page; it does not change which products we list or what we say about them.`,
   sections: [
     {
@@ -48,6 +51,8 @@ export default {
             short version: the Horizon 7.4 AT for most people who want width, the <a href="/bowflex-t9-treadmill/" class="text-[#0F62FE] font-medium" data-autolink>Bowflex T9</a> if you
             want the cheapest 22-inch belt we could verify, and the Horizon 7.8 AT if you are a
             heavier runner who wants a higher weight rating without paying for a commercial machine.
+            The T9 and 7.8 AT are sold by their makers and other retailers, not on Amazon US, so their
+            cards show the Sole F83 and Bowflex T16, the closest wide-belt machines Amazon sells.
           </p>
           <div class="not-prose overflow-x-auto my-8"><table class="min-w-[480px] w-full text-sm border-collapse">
             <thead>
@@ -59,8 +64,8 @@ export default {
             </thead>
             <tbody>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon 7.4 AT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Most people</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22 x 60 in. deck an independent reviewer measured at full width, 350 lb rating, about $1,500–$1,800</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bowflex T9</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lowest price</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">The cheapest 22-inch belt we could verify, $1,399 on sale</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Horizon 7.8 AT</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Heavier runners</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">375 lb rating and a 22-inch belt for about $2,000</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sole F83</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Folding value</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22-inch belt, touchscreen and lifetime motor cover, about $1,800 on Amazon (the Bowflex T9, sold direct, was $1,399 on sale)</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Bowflex T16</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Heavier runners</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">375 lb rating and a 22-inch belt for about $2,000, the same rating as the Horizon 7.8 AT</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sole F85</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A big built-in screen</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22-inch belt and a 15.6-inch touchscreen with no required subscription</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">NordicTrack Commercial 2450</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Fast runners and iFIT users</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22-inch belt, decline to -3% and a 14 mph top speed on the current model</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Life Fitness Run CX</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">A non-folding, gym-style machine</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">22-inch belt, 400 lb rating and a long warranty from a commercial maker</td></tr>
@@ -411,53 +416,46 @@ export default {
         "The 7.4 AT is the most straightforward way to get a 22-inch belt, and it has the best width evidence on this page. Horizon's specification table gives a 22 by 60-inch XL deck, 0.5 to 12 mph, 0 to 15% incline and a 350 lb maximum user weight, and Horizon's Amazon listing gives the same deck and capacity. OutdoorGearLab measured the belt and reported that it matched the 22-inch claim, which matters on a page where width figures so often disagree. It is the step up from the 7.0 AT, which has a 20-inch deck: the extra width comes with a higher weight rating and, on Horizon's own comparison table, longer parts and labour cover, while both share lifetime frame and motor warranties. It folds, connects to apps such as Zwift and Peloton over Bluetooth, and has dial controls for speed and incline. We saw it at $1,499.99 on Amazon and $1,799 on Horizon's own store on 15 October 2026, so compare before you buy.",
     },
     {
-      id: 'bowflex-t9',
-      name: 'Bowflex T9',
-      reviewUrl: '/bowflex-t9-treadmill/',
-      category: 'Cheapest 22-inch belt we could verify',
-      badge: 'Best Value',
-      amazonUrl: 'https://www.amazon.com/s?k=Bowflex+T9+Treadmill&tag=sktiger-20',
-      priceRange: '$1,399–$1,799',
-      specs: '22 x 60 in. running area · up to 12 mph · 0–15% incline · 350 lb capacity · folding · lifetime frame & motor warranty',
+      id: "sole-f83",
+      name: "Sole F83",
+      category: "A second 22-inch folding deck under $2,000",
+      badge: "Folding Value Pick",
+      priceRange: "About $1,800 (Amazon, 6 Nov 2026)",
+      specs: "3.5 HP · 22 x 60 in. · 0.5–12 mph · 0–15% incline · 350 lb capacity · lifetime frame and motor warranty",
       pros: [
-        'The lowest price we found for a 22-inch belt we could confirm, at its $1,399 sale price',
-        'Bowflex and an independent hands-on review agree on the 22 by 60-inch running area and 350 lb rating',
-        'Works with JRNY, Peloton and Zwift apps; no subscription needed to run it',
-        'Three years on mechanical parts and one year of in-home labour on top of lifetime frame and motor cover',
+        "A 22 x 60 in. deck on a folding frame",
+        "Lifetime frame and motor warranty, per the listing",
+        "Crossflow cooling fan and a 10.1 in. swivel touchscreen",
+        "Built-in Bluetooth heart-rate receiver",
       ],
       cons: [
-        'Bowflex footnotes its motor rating as a test figure rather than an operating rating',
-        'No touchscreen — the T16 adds one, at a higher price',
-        'The sale price is a promotion; the regular price is $1,799',
+        "A 2026 model, so there is little long-term owner evidence yet",
+        "No decline",
+        "Parts and labour warranty terms are not given in the listing",
       ],
-      bottomLine:
-        'For the runner who wants width on the smallest budget we could verify. Buy it on sale; at full price, compare it with the Horizon 7.4 AT.',
-      description:
-        "The T9 is the cheapest treadmill we could confirm with a 22-inch belt. Bowflex's specification gives a 22 by 60-inch running area, a 350 lb maximum user weight, speeds to 12 mph and incline to 15%, and Treadmill Review Guru's hands-on review gives the same deck size, capacity, top speed and incline range. The deck uses Bowflex's FlexZone cushioning and folds for storage. The warranty is lifetime on the frame and motor, three years on mechanical parts and one year on labour, which Bowflex and the same review agree on. Bowflex's own page quotes a 3.5 HP motor with a footnote saying the figure comes from test settings and does not reflect operating horsepower, so we have not printed it as a motor rating. On 15 October 2026 Bowflex was selling it for $1,399 against a regular price of $1,799. The sibling T6 has a 20-inch belt; the T16 shares the T9's 22-inch running path and adds a touchscreen and a higher listed capacity for more money.",
+      bottomLine: "For runners who want a 22-inch belt on a folding frame with a lifetime motor warranty and a touchscreen, at a price close to the Horizon 7.4 AT.",
+      description: "The Bowflex T9, which the text below names as the cheapest 22-inch belt we could verify, is sold by Bowflex and other retailers rather than on Amazon US, so this card shows the closest wide-belt folding treadmill under $2,000 that Amazon does sell. The F83 is one of SOLE’s 2026 folding treadmills. The Amazon listing gives a 22 by 60-inch cushioned deck, a 3.5 HP motor that SOLE’s site describes as brushless, 0.5 to 12 mph, a 0 to 15% power incline with quick keys at 0, 5, 10 and 15%, a 10.1-inch swivel and tilt touchscreen, a crossflow cooling fan, a built-in Bluetooth heart-rate receiver, a 350 lb user capacity and a lifetime frame and motor warranty. Against the T9 it costs more, about $1,800 against the T9’s $1,399 sale price, but adds a touchscreen and the same 350 lb rating. Two cautions. It is a new model, so there is little evidence yet of how it holds up; buyers who want a long track record should look at the Horizon 7.4 AT. And the listing does not set out parts and labour terms, so ask before buying. Amazon showed it at about $1,800 on 6 November 2026.",
     },
     {
-      id: 'horizon-7-8-at',
-      name: 'Horizon 7.8 AT',
-      category: 'Wide belt and higher weight rating',
-      badge: 'Best for Heavier Runners',
-      amazonUrl: 'https://www.amazon.com/s?k=Horizon+Fitness+7.8+AT+Treadmill&tag=sktiger-20',
-      priceRange: 'Around $2,000',
-      specs: '22 x 60 in. deck · up to 12 mph · 0–15% incline · 375 lb capacity · folding · lifetime frame & motor warranty',
+      id: "bowflex-t16",
+      name: "Bowflex T16",
+      category: "Wide belt and higher weight rating",
+      badge: "Best for Heavier Runners",
+      priceRange: "$1,999 at Bowflex on 5 Nov 2026",
+      specs: "22 x 60 in. deck · 16 in. HD touchscreen · 0-15% incline · 0.5-12 mph · 375 lb capacity",
       pros: [
-        'A 375 lb rating, the highest of the folding machines here where sources agree',
-        'The same 22 by 60-inch deck and dial controls as the 7.4 AT',
-        'Aluminium side rails and a colour display',
-        'Lifetime frame and motor cover with no subscription needed',
+        "A 375 lb maximum user weight on a 22 by 60-inch deck, the same rating as the Horizon 7.8 AT",
+        "Works without a JRNY subscription, with nine built-in programs and your own streaming apps on the 16-inch screen",
+        "Bluetooth FTMS for Zwift or Peloton’s app on a phone or tablet",
+        "Lifetime frame and motor warranty in the US",
       ],
       cons: [
-        'Motor ratings differ between independent sources, so we have not printed one',
-        'We did not find it on Amazon on the day we checked; Horizon sells it direct',
-        'About $200 more than the 7.4 AT for a higher rating and a better display',
+        "Full JRNY content needs a paid membership",
+        "Bowflex’s 3.5 HP figure is a test rating, not a continuous one",
+        "About $2,000, at the top of the folding mid-range",
       ],
-      bottomLine:
-        'The folding wide treadmill for a heavier runner who wants more headroom on the weight rating without paying commercial prices.',
-      description:
-        "The 7.8 AT is the 7.4 AT with a higher weight rating and a better console, and for a heavier runner that rating is the reason to buy it. Horizon's specification table gives a 22 by 60-inch deck, 0.5 to 12 mph, incline to 15% and a 375 lb maximum user weight; BarBend's review gives the same 60 by 22-inch running surface, top speed, incline range and 375 lb capacity, and Treadmill Review Guru agrees on the deck and capacity. It folds, has aluminium side rails and a colour display, and shares the 7.4 AT's lifetime frame and motor warranty. Independent sources give different motor ratings, so we have left the motor out. Horizon's store showed it at $1,999 against a $2,699 regular price on 15 October 2026, and we did not find a current Amazon listing for it that day. If you are buying it because of your weight, our heavy-people guide explains why the frame and warranty matter as much as the number.",
+      bottomLine: "For heavier runners who want a 22-inch belt and a 375 lb rating without paying for a commercial machine, with a screen thrown in.",
+      description: "The Horizon 7.8 AT, discussed in the text, is sold by Horizon and specialist retailers rather than on Amazon US, so this card shows the closest wide-belt machine with the same 375 lb rating that Amazon does sell. Bowflex gives the T16 a 22 by 60-inch deck, 0 to 15% incline with no decline, 0.5 to 12 mph and a 375 lb maximum user weight. Its 16-inch HD touchscreen runs JRNY plus Netflix, Prime Video, YouTube, Spotify and a web browser over Wi-Fi, so streaming uses your existing accounts, and Bowflex says the treadmill works without a JRNY subscription; it also pairs over Bluetooth FTMS with Zwift and Peloton’s app. Bowflex rates the motor at 3.5 HP under test settings, a figure we keep off the spec line because it is not a continuous rating. The US warranty is lifetime on the frame and motor, three years on parts and one year of labour. Bowflex listed it at $1,999 against $2,299 on 5 November 2026.",
     },
     {
       id: 'sole-f85',
@@ -538,7 +536,7 @@ export default {
   faqs: [
     {
       q: 'What is the best wide treadmill?',
-      a: `For most people, the Horizon 7.4 AT: a 22 by 60-inch deck that an independent reviewer measured at full width, a 350 lb rating, 15% incline and lifetime frame and motor cover, for about $1,500 to $1,800. The Bowflex T9 is the cheapest 22-inch belt we could verify, and the Horizon 7.8 AT suits heavier runners.`,
+      a: `For most people, the Horizon 7.4 AT: a 22 by 60-inch deck that an independent reviewer measured at full width, a 350 lb rating, 15% incline and lifetime frame and motor cover, for about $1,500 to $1,800. The Bowflex T9 is the cheapest 22-inch belt we could verify, and the Horizon 7.8 AT suits heavier runners; both are sold off Amazon, where the Sole F83 and Bowflex T16 fill those roles.`,
     },
     {
       q: 'Is a 22 inch wide treadmill worth it?',
@@ -607,7 +605,7 @@ export default {
     `<strong class="text-white">For most runners who want a wider belt, buy the Horizon 7.4 AT</strong>:
             its 22-inch deck has been measured independently, and it pairs that width with a 350 lb
             rating and a lifetime motor warranty at a mid-range price. Choose the Bowflex T9 on sale
-            if budget is tight, the Horizon 7.8 AT for a higher weight rating, and the Life Fitness
+            if budget is tight, the Horizon 7.8 AT or, on Amazon, the Bowflex T16 for a higher weight rating, and the Life Fitness
             Run CX if you want a commercial-style machine that stays put.`,
     `Whichever you choose, confirm the width on the maker's current specification for the model
             year you are buying, measure your room against the assembled size, and remember that a

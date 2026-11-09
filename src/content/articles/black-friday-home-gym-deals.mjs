@@ -32,7 +32,9 @@ export default {
           Black Friday price" on each card is our own judgement of a price worth acting on, not a
           prediction of what any retailer will charge. Prices change often, sometimes daily, so
           confirm the price, the seller and the model against the exact listing before you order.
-          We earn a commission if you buy through the Amazon links on this page; it does not change
+          On 9 November 2026 the Rubber-Cal Maxx-Tuff sheet, which we could not match to a current
+          Amazon US listing, was replaced by Rubber-Cal's Eco-Sport tiles from the same gym flooring
+          guide. We earn a commission if you buy through the Amazon links on this page; it does not change
           which products we list or what we say about them.`,
   lead: `"Black Friday fitness deals" covers everything from a $20 foam roller to a $3,000
           bike, and the discounts behave differently in each corner of that range. Dumbbells and
@@ -69,7 +71,7 @@ export default {
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Concept2 RowErg</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rowing machine</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$990 on Amazon, mid-Oct</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$990 is the price; do not wait</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">REP Fitness PR-1100</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Power rack</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$379.99 on REP, 16 Oct</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $340, or free extras</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Theragun Prime (6th Gen)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Massage gun</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About $330, 19 Oct</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$280 or less</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rubber-Cal Maxx-Tuff 4 x 6 ft</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Flooring</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$79.99 on Amazon, 19 Oct</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$80 or less from a named seller</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Rubber-Cal Eco-Sport 3/4 in. tiles</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Flooring</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">$149.63 per 5 tiles on Amazon, 19 Oct</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Below about $120 per 5 tiles, sold by Rubber-Cal</td></tr>
             </tbody>
           </table></div>
           <p>
@@ -489,28 +491,25 @@ export default {
         "Massage guns are the kind of product that takes large percentage discounts in sale periods, which makes them easy to overpay for in a hurry and easy to buy well with a little patience. Our massage gun guide recorded the 6th Gen Prime at about $330 on 19 October 2026, when it was listed on Amazon through Therabody's own listings. Therabody and an independent review agree on a 16 mm amplitude, five speeds from 1,750 to 2,400 percussions per minute, a 120-minute battery at the lowest speed, a weight of 907 grams and two attachments, with a one-year limited warranty. The 6th Gen's main change is a tougher rubber body that Therabody says survives drops of up to 10 feet. Our target of $280 or less is a judgement of the point at which it becomes an easy purchase rather than a considered one. The thing to check in a sale is the generation: the outgoing 5th Gen shares the core hardware and comes with four attachments, and clearance prices on it can be genuinely good, but a listing should say which one you are getting. The Hyperice Hypervolt 3, about $249 in October, is the quieter alternative with more heads. Buy the equipment it supports first.",
     },
     {
-      id: 'rubber-cal-maxx-tuff',
-      name: 'Rubber-Cal Maxx-Tuff Heavy-Duty Mat (4 x 6 ft, 1/2 in.)',
-      category: 'Gym Flooring',
-      badge: 'Floor to Buy With It',
-      amazonUrl: 'https://www.amazon.com/s?k=Rubber-Cal+Maxx-Tuff+Heavy+Duty+Mat+4+x+6&tag=sktiger-20',
-      priceRange: '$79.99 (Amazon, 19 Oct 2026)',
-      specs: '4 x 6 ft · 12 mm (just under 1/2 in.) · SBR and reclaimed rubber · honeycomb top, diamond-pattern underside · 3-year warranty',
+      id: "rubber-cal-eco-sport-tiles",
+      name: "Rubber-Cal Eco-Sport 3/4 in. Interlocking Rubber Tiles",
+      category: "Gym Flooring",
+      badge: "Floor to Buy With It",
+      priceRange: "$121–$150 per 5 tiles",
+      specs: "19.5 x 19.5 in. tiles · 3/4 in. thick · recycled rubber · four colours · packs from 5 tiles",
       pros: [
-        'One heavy sheet covers a bench and the space around it',
-        'Diamond-pattern underside grips the floor beneath',
-        'Delivered to the door, unlike a farm-store stall mat you have to collect',
-        'Already $79.99 on Amazon in October, against $140 on Rubber-Cal’s own store',
+        "The 3/4-inch thickness experienced lifters recommend for barbell work",
+        "Tiles lift out, so you can dry the slab, replace a damaged tile or move house with it",
+        "Small enough to carry upstairs a few tiles at a time, unlike a 100 lb stall mat",
+        "Rubber-Cal sells it in black and three colours",
       ],
       cons: [
-        'An 80 lb sheet, by Rubber-Cal’s figure, left at the door and awkward to move',
-        'Thinner than a 3/4-inch stall mat, and usually more per square foot',
-        'On 19 October the Amazon stock came through other buying options, so check the seller',
+        "By far the most expensive floor here per square foot, at roughly $9 to $11.50",
+        "Recycled rubber smell when new; air the tiles out first",
+        "Coverage figures on listings round up, so count tiles rather than trusting the pack",
       ],
-      bottomLine:
-        'The floor to buy alongside your first dumbbells or rack. At $80 or less it is already a fair price; do not let it wait on a sale.',
-      description:
-        "Flooring is the least exciting purchase on this page and one of the most useful, because it protects both the floor and the equipment from the first session. Our gym flooring guide chose the Maxx-Tuff as the heavy rubber sheet it could confirm on Amazon. Rubber-Cal and the Amazon listing agree on a 4 by 6-foot sheet, 12 mm thick, in SBR and reclaimed rubber with a honeycomb top and a diamond-pattern underside, and on a three-year warranty; Rubber-Cal gives the weight as 80 lb. On 19 October 2026 the Amazon listing for this size was $79.99, with stock offered through other buying options rather than a main buy button, while Rubber-Cal's own store listed it at $140. That gap is the reason to check the seller carefully: a listing that is suddenly much cheaper, or sold by an unfamiliar name, deserves a second look. Our target is simply $80 or less from Rubber-Cal or a seller you recognise. Rubber is a commodity, and a 3/4-inch stall mat from a farm store is often cheaper per square foot still, so do not wait on Black Friday for this one. Two sheets side by side make an 8 by 6-foot area under a bench and a pair of dumbbells.",
+      bottomLine: "The floor to buy alongside your first dumbbells or rack. Thick rubber you can carry upstairs a few tiles at a time; watch it for a Black Friday price rather than waiting on one.",
+      description: "Flooring is the least exciting purchase on this page and one of the most useful, because it protects both the floor and the equipment from the first session. The Rubber-Cal Maxx-Tuff sheet our gym flooring guide chose could not be matched to a current Amazon US listing, so this card shows Rubber-Cal’s thick interlocking tiles, which Rubber-Cal sells on Amazon. Rubber-Cal’s product page and the Amazon listing agree on 19.5 by 19.5-inch tiles, 3/4 inch thick, in recycled rubber; Rubber-Cal gives a hardness of 60 Shore A, says the tiles join with connecting pins and can be glued down, and gives three years’ warranty on its flooring. Tiles cost more than a sheet but are easier to live with: a tile is light enough to carry, easy to cut around a doorway, and can be lifted to check a damp slab or replaced if it splits. On 19 October a 5-tile pack was $149.63 on Amazon, sold by Rubber-Cal, and Rubber-Cal’s own store listed a 25-tile pack at $605.63, roughly $9 to $11.50 a square foot by our arithmetic. Plan by tile count rather than a listing’s coverage figure, and air new tiles out, since recycled rubber smells at first.",
     },
   ],
   faqs: [

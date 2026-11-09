@@ -13,11 +13,11 @@ export default {
   standfirst:
     'One of the best-selling treadmills in the budget tier, and for a defensible reason: a 325 lb capacity at a price where 300 is the ceiling and 250 is common. The compromises are elsewhere, and they are real.',
   ctas: [
-    { label: 'The Specifications', href: '#proform-505-cst' },
+    { label: 'The Specifications', href: '#nordictrack-t-series-5' },
     { label: 'Where the Money Went', href: '#where-the-money-went' },
   ],
   tags: ['proform 505 cst', 'proform 505 cst treadmill', 'proform treadmill reviews', 'budget treadmill', 'folding treadmill'],
-  stickyCta: { text: 'See the Verdict', link: '#proform-505-cst' },
+  stickyCta: { text: 'See the Verdict', link: '#nordictrack-t-series-5' },
   breadcrumb: { name: 'Reviews', url: '/reviews/' },
   lead: `The 505 CST sells in volume because it hits a price point with one specification that
           genuinely outperforms its tier. A published 325 lb weight capacity is higher than
@@ -32,27 +32,25 @@ export default {
           number against the exact unit you are ordering.`,
   products: [
     {
-      id: 'proform-505-cst',
-      name: 'ProForm 505 CST',
-      category: 'Best Budget Capacity',
-      badge: 'Best Capacity',
-      priceRange: '$549-$799',
-      specs: '55 x 20 in. deck · 2.5 CHP · 0-10% incline · 0-10 mph · 325 lb capacity',
+      id: "nordictrack-t-series-5",
+      name: "NordicTrack T Series 5",
+      category: "Closest on Amazon to the 505 CST: an iFIT Budget Treadmill",
+      badge: "Closest on Amazon",
+      priceRange: "About $600 (Amazon, 6 Nov 2026)",
+      specs: "55 in. belt length · 0–10 mph · 0–10% incline · 300 lb capacity · LCD; iFIT runs on your own device",
       pros: [
-        '325 lb published capacity, higher than most machines in the tier above',
-        '2.5 CHP handles sustained incline walking, the genuinely demanding budget use case',
-        'Runs manually — speed and incline can be set by hand without a membership',
-        'Ten-year frame warranty at a price where two or three years is common',
+        "The lowest price for automatic speed and incline control from iFIT",
+        "Uses the cheaper Train membership through your own phone or tablet",
+        "A 0–10% incline is enough for steady incline walking",
+        "KeyFlex cushioning, per the listing",
       ],
       cons: [
-        'One year of parts and labour, which is when the wear items become your cost',
-        'Five-inch display is basic, and the machine is marketed on content it shows poorly',
-        '55-inch deck and a 10 mph ceiling make it a walking machine, not a running one',
+        "A 300 lb rating, below the 505 CST’s published 325 lb",
+        "A 55-inch belt and 10 mph top speed suit walking and jogging more than running",
+        "No touchscreen; you need a tablet you are happy to keep on the console",
       ],
-      bottomLine:
-        'The budget machine to buy if capacity matters to you. Treat the console as incidental and the ten-year frame warranty as the reason.',
-      description:
-        'The 505 CST runs a 2.5 CHP motor against a 20 by 55-inch belt, with motorised incline to 10%, a top speed of 10 mph and a published 325 lb capacity, behind a five-inch backlit display carrying roughly eighteen onboard programmes. ProForm publishes a ten-year frame warranty with one year on parts and labour, and the deck folds vertically. The capacity figure is the standout and it is not a marketing number: manufacturers derive capacity from frame construction, deck thickness and roller diameter together, so a 325 lb rating at this price implies more frame than the tier usually carries. The compromises are the short parts term, the basic console and the deck length, none of which is hidden.',
+      bottomLine: "The Amazon-sold machine closest to the 505 CST: the same 55-inch belt, 10 mph and 10% incline from ProForm’s sister brand, with slightly less rated capacity.",
+      description: "The ProForm 505 CST, the subject of this review, is not sold on Amazon US, so this card shows the closest machine Amazon does sell: NordicTrack is ProForm’s sister brand under iFIT, and the T Series 5 is its entry treadmill. The Amazon listing describes an LCD for your live stats and a place for your own device, a 0–10 mph speed range, a 0–10% incline and KeyFlex cushioning, and NordicTrack’s specification gives a 55-inch belt length and a 300 lb maximum user weight. That is the 505 CST’s format almost figure for figure, with 25 lb less rated capacity. Speed and incline can be set by hand; with an iFIT Train membership, run from your own phone or tablet, the trainer changes them for you. It is a sound machine for walking, incline walking and jogging, and less suited to running, since 55 inches is short for a full stride at speed. Amazon listed it at $599.99 on 6 November 2026.",
     },
   ],
   sections: [
@@ -61,6 +59,9 @@ export default {
       products: true,
       heading: 'Why 325 lb Is the Headline',
       html: `          <p>
+            The 505 CST is sold by ProForm and other retailers rather than on Amazon US, so the product card on this page shows the closest machine Amazon does sell, NordicTrack’s T Series 5 from ProForm’s sister brand; the review itself is about the 505 CST.
+          </p>
+          <p>
             Weight capacity is the most misread specification in this category. People treat it as
             a safety limit — a line you must stay under — when it is better read as an engineering
             summary. A manufacturer arrives at the figure from frame construction, deck thickness,

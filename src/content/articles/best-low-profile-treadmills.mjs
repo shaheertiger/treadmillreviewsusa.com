@@ -37,7 +37,11 @@ export default {
           capacity — we left the figure out and give both in the text. We searched cpsc.gov for
           recalls and warnings on each brand and found none open for these products; Sperax walking
           pads, which are under a CPSC stop-use warning, are not listed. None of these figures are
-          our own measurements; we have not tested these machines. On 9 November 2026 we replaced the
+          our own measurements; we have not tested these machines. The Echelon Stride-6s, UREVO SpaceWalk 3S
+          and MERACH T19 could not be found on Amazon US, so on 9 November 2026 their cards became the
+          original Echelon Stride (checked against independent reviews and spec listings), and Sunny's
+          auto-incline Treadpad and ANCHEER's handlebar pad, whose figures are those checked for our
+          2-in-1 and ANCHEER guides; the text still discusses the original three. On 9 November 2026 we replaced the
           Life Fitness F3, which is not sold on Amazon, with Sunny's low-deck treadmill, whose figures are
           those checked for our low-ceiling treadmill guide. Price bands are prices seen on 14
           October 2026 and change often, so confirm the price, the specification and the warranty
@@ -45,28 +49,26 @@ export default {
           links on this page; it does not change which products we list or what we say about them.`,
   products: [
     {
-      id: 'echelon-stride-6s',
-      name: 'Echelon Stride-6s',
-      category: 'Best fold-flat treadmill with a full-length deck',
-      badge: 'Best Overall',
-      amazonUrl: 'https://www.amazon.com/s?k=Echelon+Stride-6s+Treadmill&tag=sktiger-20',
-      priceRange: 'Around $1,800–$1,900',
-      specs: '20.5 x 60 in. deck · auto-fold, folds flat · 12 incline levels · 300 lb capacity · about 182 lb',
+      id: "echelon-stride",
+      name: "Echelon Stride Auto-Fold Treadmill",
+      category: "Best fold-flat treadmill on Amazon",
+      badge: "Best Overall on Amazon",
+      priceRange: "About $1,250 (Amazon, 9 Nov 2026)",
+      amazonUrl: "https://www.amazon.com/dp/B08BQS61MR?tag=sktiger-20",
+      specs: "55 x 20 in. belt · auto-fold, folds flat to about 10 in. · up to 12 mph · powered incline · 300 lb capacity",
       pros: [
-        'Folds flat at the touch of a button, rather than standing upright like most folding treadmills',
-        'A full 60-inch deck, unusual on a machine that stores this low',
-        'Echelon lists a 7-inch step-up height, lower than most full-size treadmills',
-        'About 182 lb, light for a running-length treadmill',
+        "Folds flat on its own, rather than standing upright like most folding treadmills",
+        "Folded depth of about 10 inches in independent reviews, low enough to slide against a wall or under high furniture",
+        "A 300 lb capacity and a top speed of 12 mph",
+        "Sold on Amazon, at about $1,250 on 9 November 2026",
       ],
       cons: [
-        'Echelon sells its membership separately, and an independent review treats it as required for the full experience',
-        'Echelon does not publish a folded height; an independent review gives about 8.5 inches at the deck',
-        'The same review describes the console as a little shaky',
+        "A 55-inch belt, five inches shorter than the Stride-6s, suits walking and jogging more than fast running",
+        "Reviewers rate the 1.75 CHP motor as weak for hard running, and the warranty is short",
+        "Echelon’s classes need a separate membership; sources disagree on incline levels (10% top grade, given as 10 or 12 levels)",
       ],
-      bottomLine:
-        'For anyone who wants a real running-length treadmill that folds flat and slides out of the way, rather than standing in a corner.',
-      description:
-        "The Stride-6s is the most practical fold-flat treadmill we found with a full 60-inch deck. Most folding treadmills tilt the deck up to stand vertically, which saves floor space but leaves a five-to-six-foot-tall object in the room. Echelon's Auto-Fold system instead collapses the treadmill at the touch of a button so that it lies flat, so it can slide against a wall or under high furniture. Echelon lists a 20.5 by 60-inch deck, a 300 lb maximum user weight, 12 incline levels and a weight of 182.35 lb, and an independent review agrees on the deck, the capacity, the incline levels and a weight of about 182 lb. Echelon also lists a 7-inch step-up height, low for a full-size machine, though we found no second source for it. Echelon does not publish a folded height; the independent review gives the folded deck at about 8.5 inches with the console about 12 inches, so measure the gap under any furniture against the higher figure. The membership is the catch: Echelon sells it separately and the review regards it as required for the classes.",
+      bottomLine: "The Amazon-sold way to get Echelon’s fold-flat design: a treadmill that lies down rather than standing in a corner, for walkers and joggers more than fast runners.",
+      description: "The Echelon Stride-6s, discussed in this guide, is sold through Echelon’s own store and other retailers and we could not find it on Amazon US, so this card shows the original Echelon Stride, which Amazon does sell and which uses the same Auto-Fold idea. Most folding treadmills tilt the deck up to stand vertically; the Stride collapses so that it lies flat. Independent reviews and spec listings agree on a 55 by 20-inch belt, a top speed of 12 mph, a 300 lb maximum user weight and a motor rated at 1.75 CHP, and give a folded depth of about 10 to 10.25 inches; one spec list gives a product weight of 156 lb. The incline tops out at 10%, which one review describes as 12 levels rather than one per grade. Against the Stride-6s it gives up five inches of belt and some motor, and reviewers treat it as a machine for walking and light jogging rather than serious running; the warranty is short, and Echelon’s classes need a separate membership. Amazon listed it at $1,249.87 on 9 November 2026.",
     },
     {
       id: 'sunny-low-deck-handrails',
@@ -93,52 +95,46 @@ export default {
         "This Sunny treadmill is built around easy access, which is what low profile means to many buyers. The Amazon listing describes a floor-to-deck height of only 4 inches, extended safety railings, a safety clip, a non-slip deck 18.9 inches wide, speeds up to 8.5 mph, a shock absorption system, pulse sensors, a console with large buttons and Bluetooth to the SunnyFit app. Sunny's own store lists a matching running treadmill with handrails (SF-T722062) with the same 4-inch deck height and 8.5 mph top speed, a 47.2 by 18.9-inch running surface, a 2.5 HP peak motor, a 245 lb maximum user weight and a 115.5 lb product weight. The long side rails are the reason to choose it over the SF-T7718: they give support all the way along the deck, which helps older users, anyone recovering from injury and anyone nervous about stepping on and off a moving belt. The cost is about 1.2 inches more step-up height than the SF-T7718, a lower weight limit and a higher price. Amazon showed it at $679.96 on 6 November 2026. It takes the slot the Life Fitness F3 held on this page; the F3, which Life Fitness lists with a 6-inch step-up, is sold through Life Fitness and dealers rather than on Amazon, and this Sunny's 4-inch deck is lower still, though on a much lighter, shorter-decked machine.",
     },
     {
-      id: 'urevo-spacewalk-3s',
-      name: 'UREVO SpaceWalk 3S',
-      category: 'Best low-profile walking pad with incline',
-      badge: 'Best Walking Pad',
-      amazonUrl: 'https://www.amazon.com/s?k=UREVO+SpaceWalk+3S+Walking+Pad&tag=sktiger-20',
-      priceRange: 'Around $250–$350',
-      specs: '42.5 in. belt length · 0-9% powered incline · 0.6-4.0 mph · 265 lb capacity · 6.5 in. tall',
+      id: "sunny-treadpad-auto-incline",
+      name: "Sunny Health & Fitness Treadpad Treadmill 7% Auto Incline",
+      category: "Best low-profile walking pad with powered incline",
+      badge: "Best Walking Pad",
+      priceRange: "About $487 (Amazon, 6 Nov 2026)",
+      specs: "45.7 x 16 in. running surface · 0.5–3.7 mph handlebar down, to 6 mph handlebar up · 7% auto incline · 265 lb capacity (Sunny)",
       pros: [
-        'Only 6.5 inches tall, low enough to slide under most sofas and beds and to sit under a standing desk',
-        'Powered incline to 9%, unusual on a pad this slim',
-        'A 42.5-inch belt, long for a walking pad',
-        'About $250 on UREVO’s own store when we checked',
+        "A powered incline to 7% in six preset steps, changed at the press of a button",
+        "The longest running surface here, 45.7 inches, by both the listing and Sunny’s site",
+        "Sunny publishes a weight limit (265 lb), unit weight (79.4 lb) and deck height on its own store",
+        "A US-based brand with its own support and the SunnyFit app",
       ],
       cons: [
-        'Unit weight is listed as about 57 lb by UREVO and 71 lb elsewhere',
-        'Walking only, to 4.0 mph, with no handrail',
-        'The advertised 2.5 HP is a peak figure; independent coverage gives a much lower rated power',
+        "About $487, well above most walking pads",
+        "Running mode stops at 6 mph, and the belt is only 16 inches wide",
+        "At 79.4 lb by Sunny’s figure, heavier to move than most pads",
       ],
-      bottomLine:
-        'For a walker who wants a flat, low machine that hides under furniture and still offers incline.',
-      description:
-        "The SpaceWalk 3S is the lowest machine here that still gives you powered incline. UREVO lists an overall height of 6.5 inches, a 42.5-inch running area, 0.6 to 4.0 mph, a 0 to 9% incline across nine levels and a 265 lb maximum user weight, and an independent specification tracker agrees on all of those. At 6.5 inches it slides under most sofas and many beds, and it raises you only slightly at a standing desk. It does not fold; it is low profile because it is already flat. The figure that did not agree is weight: UREVO's page gives about 57 lb and other listings about 71 lb, so plan for the heavier figure when you move it. Its 2.5 HP is a peak figure, and the tracker gives a rated power well below that. UREVO's warranty changed in March 2026 to one year plus a 180-day extension that requires registering in UREVO's app. It was $249.99 on UREVO's US store when we checked. Our incline walking pad roundup compares it with other incline pads.",
+      bottomLine: "For walkers who want a powered incline on a deck that stays about 4 inches off the floor, with a handlebar for a short jog.",
+      description: "Sunny’s Treadpad with 7% auto incline is the lowest machine we could check on Amazon that still gives you powered incline. Sunny’s own store gives a deck that sits 4.1 inches off the floor flat and 5.7 inches at full incline, a 265 lb maximum user weight, a 79.4 lb product weight and a 2.0 HP peak motor, and the Amazon listing agrees on a 45.7 by 16-inch running surface, a walking mode of 0.5 to 3.7 mph with the handlebar folded, a running mode to 6 mph with it raised and a powered incline with six preset levels up to 7%, plus a remote and the SunnyFit app. That makes it lower than the UREVO SpaceWalk 3S’s 6.5 inches, which we could not find on Amazon US, though the 3S climbs further, to 9%. The handlebar folds for desk walking and raises for a short jog. The trade-offs are the price and the weight: at nearly 80 lb it is a two-handed job to move. Amazon showed it at $487.26 on 6 November 2026, and Sunny’s warranty on its own store is three years on the frame and 180 days on other parts.",
     },
     {
-      id: 'merach-t19',
-      name: 'MERACH T19',
-      category: 'Slimmest folded walking pad with a handrail',
-      badge: 'Slimmest Folded',
-      amazonUrl: 'https://www.amazon.com/s?k=MERACH+T19+Walking+Pad+Treadmill&tag=sktiger-20',
-      priceRange: 'Around $230–$300',
-      specs: '37.4 x 16 in. belt · folds to 4.3 in. · 3.8 mph rail down, 7.6 mph rail up · 6% manual incline',
+      id: "ancheer-walking-pad-handle-bar",
+      name: "ANCHEER Walking Pad with Handle Bar and 12% Incline",
+      category: "Slimmest folded walking pad with a handlebar on Amazon",
+      badge: "Slimmest Folded",
+      priceRange: "Amazon price not confirmed on 5 Nov 2026",
+      specs: "Folds to 4.2 in. (listing) · 0.6–4.0 mph · 2-level manual incline to 12% · 16 in. belt width · fold-down handlebar",
       pros: [
-        'Folds to 4.3 inches with the handrail down, the slimmest machine we found',
-        'A handrail that raises for a 7.6 mph running mode',
-        'Brisk walking to 3.8 mph with the rail folded, so it works under a desk',
-        'About 55 lb, according to an independent tracker',
+        "A 4.2-inch folded height on the listing’s feature list, about the same as the MERACH T19",
+        "A handlebar for balance, which most flat pads lack",
+        "Manual incline to 12% for steeper walking",
+        "Price-tracked on Amazon between about $151 and $180 for most of 2026",
       ],
       cons: [
-        'Capacity is listed as 300 lb now, but a reviewer covering an earlier T19 gave 220 lb',
-        'A 37.4-inch belt is short for running',
-        'MERACH’s own store showed it sold out; Amazon is the main place to buy it',
+        "The title says 320 lb and the feature list 350 lb; we print neither",
+        "The title says 3.0 HP; the feature list says 1000 W, about 1.3 HP",
+        "No independent review or brand website to check against",
       ],
-      bottomLine:
-        'For anyone whose storage space is measured in inches, who wants a rail for balance and the option of a short jog.',
-      description:
-        "If the test is how thin a treadmill gets when you put it away, the T19 wins. MERACH's own product page gives folded dimensions of 50.7 by 23 by 4.3 inches with the handrail down, and an independent specification tracker agrees on 4.3 inches. MERACH and the tracker also agree on a 37.4 by 16-inch belt, a walking mode to 3.8 mph with the rail folded, a running mode to 7.6 mph with it raised, and a 6% incline set by hand. That makes it a genuine 2-in-1: a slim pad under a desk, and a short jog with something to hold. The tracker gives a unit weight of about 55 lb, light enough for most people to tip and roll. Capacity is the figure we could not settle. The current listing and MERACH's page say 300 lb, while a review site covering a T19 gave 220 lb and a lower speed range, which suggests an earlier version under the same name; check the listing in front of you. MERACH's store showed it sold out on the day we checked, and it was about $230 on Amazon.",
+      bottomLine: "For anyone whose storage space is measured in inches and who wants a handlebar for balance while walking.",
+      description: "The MERACH T19 folds thinnest of the machines in this guide, but we could not find it on Amazon US, so this card shows the closest slim-folding pad with a handlebar that Amazon does sell. ANCHEER’s pad, tracked by PriceHistory on Amazon and sold by Amazon.com, has a feature list giving a 4.2-inch folded height, a 1000 W brushless motor, 0.6 to 4.0 mph, a 16-inch belt, a two-level manual incline to 12% and an 18 kg (about 40 lb) weight. The same listing contradicts itself twice: its title says 3.0 HP and 320 lb, its feature list 1000 W, about 1.3 HP, and 350 lb. Plan on 320 lb or less, and treat it as a walking pad: unlike the T19, it has no running mode. We found no independent review or brand website to check the folded height against, so measure the gap you have with a margin. PriceHistory recorded a low of $151.99 in May 2026 and $167.99 after a price change on 21 June 2026, against a stated $329.99. Buy it from the Amazon-sold listing so that a fault in the first month is Amazon’s problem.",
     },
     {
       id: 'goplus-superfit-2-in-1',
@@ -171,11 +167,14 @@ export default {
       id: 'short-answer',
       heading: 'What Is the Best Low Profile Treadmill? The Short Answer',
       html: `          <p>
-            <strong>The best low profile treadmill for most people is the Echelon Stride-6s: a full
-            60-inch running deck that folds flat at the touch of a button, a 7-inch step-up by
-            Echelon's figure, and a weight of about 182 lb.</strong> If you only need to walk, the
-            <a href="/urevo-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>UREVO</a> SpaceWalk 3S is 6.5 inches tall with powered incline, and the MERACH T19 folds to
-            4.3 inches with a handrail. If an easy step onto the deck matters most, Sunny's low-deck
+            <strong>The best low profile treadmill for most people is a fold-flat Echelon: the Stride-6s
+            has a full 60-inch running deck that folds flat at the touch of a button, a 7-inch step-up by
+            Echelon's figure, and a weight of about 182 lb, and on Amazon the original Echelon Stride
+            folds flat the same way to about 10 inches.</strong> If you only need to walk, the
+            <a href="/urevo-treadmills/" class="text-[#0F62FE] font-medium" data-autolink>UREVO</a> SpaceWalk 3S is 6.5 inches tall with powered incline (Sunny's 7% auto-incline Treadpad
+            is lower, about 4 inches, and sold on Amazon), and the MERACH T19 folds to 4.3 inches with a
+            handrail (ANCHEER's handlebar pad lists 4.2 inches on Amazon). The Stride-6s, SpaceWalk 3S and
+            T19 are not sold on Amazon US, so their cards below show those Amazon alternatives. If an easy step onto the deck matters most, Sunny's low-deck
             treadmill has a 4-inch step-up and long side rails to hold.
           </p>
           <p>
@@ -202,10 +201,10 @@ export default {
               <th class="text-left font-black text-gray-900 border-b border-gray-200 py-2 pr-4">Why</th>
             </tr></thead>
             <tbody>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Echelon Stride-6s</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Folds flat</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Running at home, hidden away</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">60-inch deck that auto-folds flat</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Echelon Stride (Amazon)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Folds flat</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walking and jogging, hidden away</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Auto-folds flat to about 10 in.; the Stride-6s adds a 60-inch deck, sold direct</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sunny Low Deck Treadmill with Handrails</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Low step-up</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Easy, steady access</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4-inch step-up with extended side rails</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">UREVO SpaceWalk 3S</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">6.5 in. tall</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walking with incline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Slides under furniture, 9% incline</td></tr>
-              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">MERACH T19</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4.3 in. folded</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Tightest storage</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Slimmest fold, with a handrail</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Sunny Treadpad 7% Auto Incline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4.1 in. deck height</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Walking with incline</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Low deck, powered 7% incline, handlebar</td></tr>
+              <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">ANCHEER Walking Pad with Handle Bar</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">4.2 in. folded (listing)</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Tightest storage</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Slim fold, with a handlebar</td></tr>
               <tr><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Goplus SuperFit 2-in-1</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">About 5 in. folded</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Lowest price</td><td class="border-b border-gray-100 py-2 pr-4 text-gray-700">Slim, light and cheap</td></tr>
             </tbody>
           </table></div>`,
@@ -478,11 +477,11 @@ export default {
     },
     {
       q: 'Is there a full-size treadmill that folds flat?',
-      a: 'Yes. The Echelon Stride-6s has a 60-inch deck and an automatic fold that collapses the console so the machine lies flat. Echelon does not publish a folded height; an independent review gives about 8.5 inches at the deck and about 12 inches at the console. Most other full-size treadmills fold upright instead.',
+      a: 'Yes. The Echelon Stride-6s has a 60-inch deck and an automatic fold that collapses the console so the machine lies flat. Echelon does not publish a folded height; an independent review gives about 8.5 inches at the deck and about 12 inches at the console. The Stride-6s is sold direct rather than on Amazon; the original Echelon Stride, which Amazon sells, folds flat the same way to about 10 inches but has a shorter 55-inch belt. Most other full-size treadmills fold upright instead.',
     },
     {
       q: 'What is the thinnest treadmill?',
-      a: 'Of the machines we could confirm, the MERACH T19 folds thinnest, to 4.3 inches with its handrail down according to MERACH and an independent tracker. The Goplus SuperFit folds to about 5 inches and the UREVO SpaceWalk 3S is 6.5 inches tall without folding. All three are walking pads, best for walking and light jogging.',
+      a: 'Of the machines we could confirm, the MERACH T19 folds thinnest, to 4.3 inches with its handrail down according to MERACH and an independent tracker, but we could not find it on Amazon US. On Amazon, ANCHEER’s handlebar pad lists a 4.2-inch folded height on its feature list, with no second source, and the Goplus SuperFit folds to about 5 inches. Flat pads such as the UREVO SpaceWalk 3S are 6.5 inches tall without folding. All are walking pads, best for walking and light jogging.',
     },
     {
       q: 'How much does a light weight treadmill weigh?',
@@ -536,14 +535,14 @@ export default {
     },
   ],
   bottomLine: [
-    `For most people the <strong class="text-white">Echelon Stride-6s</strong> is the low profile
-            treadmill to buy: a full 60-inch deck that folds flat on its own, a low step-up and about
-            182 lb. If an easy step onto the deck matters most,
+    `For most people a fold-flat <strong class="text-white">Echelon</strong> is the low profile
+            treadmill to buy: the Stride-6s has a full 60-inch deck that folds flat on its own, a low
+            step-up and about 182 lb, and the original Stride does the same on Amazon with a shorter belt. If an easy step onto the deck matters most,
             <strong class="text-white">Sunny's low-deck treadmill</strong> has a 4-inch step-up and
             long side rails to hold.`,
-    `If you only walk, the <strong class="text-white">UREVO SpaceWalk 3S</strong> is 6.5 inches
-            tall with incline, the <strong class="text-white">MERACH T19</strong> folds to 4.3 inches
-            with a rail, and the <strong class="text-white">Goplus SuperFit</strong> does it for the
+    `If you only walk, <strong class="text-white">Sunny's 7% auto-incline Treadpad</strong>
+            sits about 4 inches high with powered incline, <strong class="text-white">ANCHEER's handlebar
+            pad</strong> lists a 4.2-inch fold, and the <strong class="text-white">Goplus SuperFit</strong> does it for the
             least money. Whichever you choose, measure the gap and trust the higher published figure.`,
   ],
 };

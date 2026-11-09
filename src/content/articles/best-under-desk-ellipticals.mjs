@@ -509,7 +509,7 @@ export default {
       name: 'Sunny Health & Fitness Smart Low-profile Magnetic Mini Exercise Bike (SF-B0891SMART)',
       category: 'Under-desk bike, low profile',
       badge: 'Best Budget Bike',
-      amazonUrl: 'https://www.amazon.com/s?k=Sunny+Health+Fitness+SF-B0891SMART+Magnetic+Mini+Exercise+Bike&tag=sktiger-20',
+      amazonUrl: 'https://www.amazon.com/dp/B0CPGJLV1S?tag=sktiger-20',
       priceRange: 'About $140',
       specs: '8 magnetic levels · 3.3 lb flywheel · 21.3 x 16.5 x 10.4 in. · 19.1 lb · carry handle · arms or legs · Bluetooth, SunnyFit app · 1-year frame warranty',
       pros: [
@@ -526,7 +526,7 @@ export default {
       bottomLine:
         'A good-value under-desk bike for light, steady pedalling, and the most portable pick here.',
       description:
-        "Sunny's low-profile magnetic mini bike is the budget under-desk bike Garage Gym Reviews recommends, and the two sources agree on its eight levels of magnetic resistance, a weight of 19.1 lb and a size of about 21.3 by 16.5 by 10.4 inches; Sunny adds a 3.3 lb flywheel, belt drive and a 7.1-inch stride. That 10.4-inch overall height is low for a pedal bike, though as with any bike the pedals' highest point decides knee clearance, and Sunny does not publish it for this model. A built-in handle makes it easy to carry, and the dual-function pedals let you use it on a table for arm work. It connects over Bluetooth to SunnyFit. Garage Gym Reviews' tester liked the stability and portability, noted minor clicking with each stroke, and found the top level not very challenging. Sunny listed it at $139.99 on 19 October 2026 with a one-year frame warranty and 180 days on other parts. Sunny says it has no user weight limit, Garage Gym Reviews' product page says 300 lb and its roundup 220 lb, so we have left capacity off the card.",
+        "Sunny's low-profile magnetic mini bike is the budget under-desk bike Garage Gym Reviews recommends, and the two sources agree on its eight levels of magnetic resistance, a weight of 19.1 lb and a size of about 21.3 by 16.5 by 10.4 inches; Sunny adds a 3.3 lb flywheel, belt drive and a 7.1-inch stride. That 10.4-inch overall height is low for a pedal bike, though as with any bike the pedals' highest point decides knee clearance, and Sunny does not publish it for this model. A built-in handle makes it easy to carry, and the dual-function pedals let you use it on a table for arm work. It connects over Bluetooth to SunnyFit. Garage Gym Reviews' tester liked the stability and portability, noted minor clicking with each stroke, and found the top level not very challenging. Sunny listed it at $139.99 on 19 October 2026 with a one-year frame warranty and 180 days on other parts. Sunny says it has no user weight limit, Garage Gym Reviews' product page says 300 lb and its roundup 220 lb, so we have left capacity off the card. Sunny’s own page calls this model the Smart Dual Motion Mini Bike; the Amazon listing we link, sold as Sunny’s Smart Dual Function Mini Exercise Bike at the same $139.99 with 8-level magnetic resistance and two-way pedalling, does not print the model number, so check the photos match before you order.",
     },
   ],
   faqs: [
